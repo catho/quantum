@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderBar component Should match the snapshot 1`] = `
+<div
+  className="HeaderBar__HeaderContainer-g597n1-0 iMaMTJ Container-s163g650-0 jvPZlp"
+>
+  <div
+    className="HeaderBar__StyledContainer-g597n1-1 fvoTHs Container-s163g650-0 VziTO"
+  >
+    <ul
+      className="HeaderBar__LinkList-g597n1-2 gPKZfo"
+    >
+      <li
+        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+      >
+        <a
+          className="selected HeaderBar__Link-g597n1-4 iGfGjw"
+          href="/"
+        >
+          candidatos
+        </a>
+      </li>
+      <li
+        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+      >
+        <a
+          className="HeaderBar__Link-g597n1-4 iGfGjw"
+          href="https://www.catho.com.br/empresa/"
+        >
+          empresas
+        </a>
+      </li>
+      <li
+        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+      >
+        <a
+          className="HeaderBar__Link-g597n1-4 iGfGjw"
+          href="https://www.catho.com.br/educacao/"
+        >
+          cursos
+        </a>
+      </li>
+      <li
+        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+      >
+        <a
+          className="HeaderBar__Link-g597n1-4 iGfGjw"
+          href="https://www.catho.com.br/help/"
+        >
+          <img
+            alt={null}
+            height="16px"
+            src="/ms/fragments-header/static/header-info.svg"
+            width="16px"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

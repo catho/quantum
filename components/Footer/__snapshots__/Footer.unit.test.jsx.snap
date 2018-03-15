@@ -1,0 +1,996 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component Should match the snapshot 1`] = `
+Array [
+  <div
+    className="Container-v8sf5n-0 oCQPB"
+  >
+    <div
+      className="NavigateToTop__TopButtonHolder-s1in9y0c-0 dRdHng Col-bi16rv-0 cygcwq"
+    >
+      <a
+        href="#top"
+      >
+        Topo
+      </a>
+    </div>
+  </div>,
+  <div
+    className="Footer__FooterContainer-pmu52a-0 cFwNCf Container-v8sf5n-0 eZdmDA"
+  >
+    <div
+      className="Footer__FooterContainer-pmu52a-0 cFwNCf Container-v8sf5n-0 gUDuIj"
+    >
+      <div
+        className="Row-s1166su-0 gYiQGp"
+      >
+        <div
+          className="Col-bi16rv-0 iPdKzp"
+        >
+          <div
+            className="Row-s1166su-0 nMSYG"
+          >
+            <div
+              className="Col-bi16rv-0 cygcwq"
+            >
+              <div
+                className="FooterSection__SectionTitle-k2tayx-0 ilsuES"
+              >
+                Candidatos
+              </div>
+              <div
+                className="Row-s1166su-0 nMSYG"
+              >
+                <div
+                  className="Col-bi16rv-0 ggiJSh"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Buscar vagas
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/vagas/"
+                    >
+                      <a
+                        href="/vagas/"
+                      >
+                        Por palavra-chave
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/vagas/por-area/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/vagas/por-area/"
+                      >
+                        Por área/cargo
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www3.catho.com.br/vag/empregos-maiores-empresas/"
+                    >
+                      <a
+                        href="https://www3.catho.com.br/vag/empregos-maiores-empresas/"
+                      >
+                        Melhores e maiores empresas do Brasil
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 ggiJSh"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Produtos Gratuitos
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/aviso-vagas/listagem/"
+                    >
+                      <a
+                        href="/aviso-vagas/listagem/"
+                      >
+                        Aviso de vagas e buscas salvas
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/vagas/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/vagas/"
+                      >
+                        Buscar vagas
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/profissoes/"
+                    >
+                      <a
+                        href="/profissoes/"
+                      >
+                        Guia de Profissões e Salários
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/por-dentro/"
+                    >
+                      <a
+                        href="/por-dentro/"
+                      >
+                        Por dentro das empresas
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 ggiJSh"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 dXtdLq"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Apoio ao candidato
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/https://parceiros.catho.com.br/gop.php?origem=cat&a=6515&p=12&url1=1&url=servicoscatho%2Fcarreira%2Felaboracao-de-curriculo%2F"
+                    >
+                      <a
+                        href="/https://parceiros.catho.com.br/gop.php?origem=cat&a=6515&p=12&url1=1&url=servicoscatho%2Fcarreira%2Felaboracao-de-curriculo%2F"
+                      >
+                        Elaboração de Currículo
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6523&p=4&url1=1&url=servicoscatho%2Fcarreira%2Fanalise-de-curriculo%2F"
+                    >
+                      <a
+                        href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6523&p=4&url1=1&url=servicoscatho%2Fcarreira%2Fanalise-de-curriculo%2F"
+                      >
+                        Análise de Currículo
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6527&p=16&url1=1&url=servicoscatho%2Fcarreira%2Fsimulacao-de-entrevista%2F"
+                    >
+                      <a
+                        href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6527&p=16&url1=1&url=servicoscatho%2Fcarreira%2Fsimulacao-de-entrevista%2F"
+                      >
+                        Simulação de Entrevista
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6519&p=13&url1=1&url=servicoscatho%2Fcarreira%2Fcarta-de-apresentacao%2F"
+                    >
+                      <a
+                        href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6519&p=13&url1=1&url=servicoscatho%2Fcarreira%2Fcarta-de-apresentacao%2F"
+                      >
+                        Elaboração de Carta de Apresentação
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/servicoscandidatos/"
+                    >
+                      <a
+                        href="/servicoscandidatos/"
+                      >
+                        Conheça Todas as Soluções
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 ggiJSh"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/carreira-sucesso/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/carreira-sucesso/"
+                      >
+                        Carreira e sucesso
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 ggiJSh"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Exclusivo para assinantes
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/cursos-rapidos/"
+                    >
+                      <a
+                        href="/cursos-rapidos/"
+                      >
+                        Cursos Rápidos
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://cadastro.catho.com.br/"
+                    >
+                      <a
+                        href="https://cadastro.catho.com.br/"
+                      >
+                        Cadastro Catho
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="/consvirtual/"
+                    >
+                      <a
+                        href="/consvirtual/"
+                      >
+                        Consultor Virtual
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 ggiJSh"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 dXtdLq"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Ajuda
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/sac/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/sac/"
+                      >
+                        Central de Relacionamento
+                      </a>
+                    </li>
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Promoção 7 dias grátis
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/help/usr/faq_promocao.phtml?home=1&width=650px&height=600px&iframe=true"
+                    >
+                      <a
+                        href="https://www.catho.com.br/help/usr/faq_promocao.phtml?home=1&width=650px&height=600px&iframe=true"
+                      >
+                        Entenda a promoção
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Col-bi16rv-0 fsOuKR"
+        >
+          <div
+            className="Row-s1166su-0 nMSYG"
+          >
+            <div
+              className="Col-bi16rv-0 cygcwq"
+            >
+              <div
+                className="FooterSection__SectionTitle-k2tayx-0 evUhry"
+              >
+                Empresas
+              </div>
+              <div
+                className="Row-s1166su-0 nMSYG"
+              >
+                <div
+                  className="Col-bi16rv-0 cygcwq"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                  >
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://seguro.catho.com.br/inc/novaInclusao/FormPrincipal.php?tipoProd=Vag&c=13006"
+                    >
+                      <a
+                        href="https://seguro.catho.com.br/inc/novaInclusao/FormPrincipal.php?tipoProd=Vag&c=13006"
+                      >
+                        Solução Atração dos Melhores
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/empresas/produtos/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/empresas/produtos/"
+                      >
+                        Solução Recrutamento Perfeito
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/empresas/produtos/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/empresas/produtos/"
+                      >
+                        Produtos para Empresa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="Row-s1166su-0 nMSYG"
+          >
+            <div
+              className="Col-bi16rv-0 cygcwq"
+            >
+              <div
+                className="FooterSection__SectionTitle-k2tayx-0 PLWUe"
+              >
+                Cursos
+              </div>
+              <div
+                className="Row-s1166su-0 nMSYG"
+              >
+                <div
+                  className="Col-bi16rv-0 cygcwq"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                  >
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/educacao/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/educacao/"
+                      >
+                        Buscar cursos
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Col-bi16rv-0 fsOuKR"
+        >
+          <div
+            className="Row-s1166su-0 nMSYG"
+          >
+            <div
+              className="Col-bi16rv-0 cygcwq"
+            >
+              <div
+                className="FooterSection__SectionTitle-k2tayx-0 cljqre"
+              >
+                Institucional
+              </div>
+              <div
+                className="Row-s1166su-0 nMSYG"
+              >
+                <div
+                  className="Col-bi16rv-0 cygcwq"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                  >
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/institucional/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/institucional/"
+                      >
+                        Sobre a Catho
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="http://blog.catho.com.br/"
+                    >
+                      <a
+                        href="http://blog.catho.com.br/"
+                      >
+                        Blog Catho
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/institucional/category/imprensa/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/institucional/category/imprensa/"
+                      >
+                        Catho na Imprensa
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/home2009/lib/templates/numerosSite.php?width=700px&height=500px&iframe=true"
+                    >
+                      <a
+                        href="https://www.catho.com.br/home2009/lib/templates/numerosSite.php?width=700px&height=500px&iframe=true"
+                      >
+                        Entenda nossos números
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/home2009/lib/templates/layer-contrato.php?width=700px&height=350px&iframe=true&siteNovoIframe=1"
+                    >
+                      <a
+                        href="https://www.catho.com.br/home2009/lib/templates/layer-contrato.php?width=700px&height=350px&iframe=true&siteNovoIframe=1"
+                      >
+                        Nossos contratos
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/empregos/catho_online"
+                    >
+                      <a
+                        href="https://www.catho.com.br/empregos/catho_online"
+                      >
+                        Trabalhe na Catho
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/publicidade/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/publicidade/"
+                      >
+                        Publicidade na Catho
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/7dias/indique.php?home=1?width=700px&height=500px%&iframe=true"
+                    >
+                      <a
+                        href="https://www.catho.com.br/7dias/indique.php?home=1?width=700px&height=500px%&iframe=true"
+                      >
+                        Indique a Catho
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/home2009/layer-opine.php?width=600px&height=350px&iframe=true&url=/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/home2009/layer-opine.php?width=600px&height=350px&iframe=true&url=/"
+                      >
+                        Opine sobre esta página
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/mapa/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/mapa/"
+                      >
+                        Mapa do Site
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.catho.com.br/catho-fipe/"
+                    >
+                      <a
+                        href="https://www.catho.com.br/catho-fipe/"
+                      >
+                        Indicadores do Mercado de Trabalho Catho-Fipe
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Footer__StampsHolder-pmu52a-1 fkCQwt Col-bi16rv-0 cygcwq"
+        >
+          <div
+            className="Row-s1166su-0 nMSYG"
+          >
+            <div
+              className="Col-bi16rv-0 cygcwq"
+            >
+              <div
+                className="Row-s1166su-0 nMSYG"
+              >
+                <div
+                  className="Col-bi16rv-0 fVDuxN"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Prêmios
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 brGLIK"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/selos.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 fVDuxN"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Segurança e Qualidade
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="http://www.websiteprotegido.com.br/9d73e1e78a9300b3924c7ad1c33aea5fa89b8b29"
+                    >
+                      <a
+                        href="http://www.websiteprotegido.com.br/9d73e1e78a9300b3924c7ad1c33aea5fa89b8b29"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/website-protegido.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 brGLIK"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/verisign.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 brGLIK"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/certisign.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 fVDuxN"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Mídias Sociais
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="https://www.facebook.com/catho.com.br"
+                    >
+                      <a
+                        href="https://www.facebook.com/catho.com.br"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/facebook.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="https://twitter.com/Catho"
+                    >
+                      <a
+                        href="https://twitter.com/Catho"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/twitter.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="http://www.youtube.com/user/Cathonoticias"
+                    >
+                      <a
+                        href="http://www.youtube.com/user/Cathonoticias"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/linkedin.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="http://www.youtube.com/user/Cathonoticias"
+                    >
+                      <a
+                        href="http://www.youtube.com/user/Cathonoticias"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/youtube.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="https://plus.google.com/+catho"
+                    >
+                      <a
+                        href="https://plus.google.com/+catho"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/googlePlus.png"
+                          width={null}
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Baixe nosso aplicativo
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="https://play.google.com/store/apps/details?id=br.com.appfactory.catho&hl=pt_BR"
+                    >
+                      <a
+                        href="https://play.google.com/store/apps/details?id=br.com.appfactory.catho&hl=pt_BR"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/playStore.png"
+                          width="90px"
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      href="https://itunes.apple.com/br/app/vagas-de-emprego-catho/id549669768?mt=8"
+                    >
+                      <a
+                        href="https://itunes.apple.com/br/app/vagas-de-emprego-catho/id549669768?mt=8"
+                      >
+                        <img
+                          alt={null}
+                          src="/ms/fragments-footer/static/appStore.png"
+                          width="100px"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="Col-bi16rv-0 fVDuxN"
+                >
+                  <ul
+                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 dXtdLq"
+                  >
+                    <li
+                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      href={null}
+                    >
+                      <a
+                        href={null}
+                      >
+                        Parceiros Internacionais
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="http://www.babajob.com"
+                    >
+                      <a
+                        href="http://www.babajob.com"
+                      >
+                        BabaJob (Índia)
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="http://www.bdjobs.com"
+                    >
+                      <a
+                        href="http://www.bdjobs.com"
+                      >
+                        BdJobs (Bangladesh)
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="https://www.brightermonday.com"
+                    >
+                      <a
+                        href="https://www.brightermonday.com"
+                      >
+                        Brighter Monday (Leste da África)
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="http://www.jobberman.com"
+                    >
+                      <a
+                        href="http://www.jobberman.com"
+                      >
+                        Jobberman (Oeste da África)
+                      </a>
+                    </li>
+                    <li
+                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      href="#"
+                    >
+                      <ul
+                        className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                      >
+                        <li
+                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          href="http://www.jobsdb.com"
+                        >
+                          <a
+                            href="http://www.jobsdb.com"
+                            target="_self"
+                          >
+                            jobsDB (Sudeste da África)
+                          </a>
+                        </li>
+                        <li
+                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          href="http://www.jobstreet.com"
+                        >
+                          <a
+                            href="http://www.jobstreet.com"
+                            target="_self"
+                          >
+                            JobStreet (Sudeste da África)
+                          </a>
+                        </li>
+                        <li
+                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          href="https://br.jora.com/"
+                        >
+                          <a
+                            href="https://br.jora.com/"
+                            target="_self"
+                          >
+                            Jora (Brasil)
+                          </a>
+                        </li>
+                        <li
+                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          href="https://www.jora.com"
+                        >
+                          <a
+                            href="https://www.jora.com"
+                            target="_self"
+                          >
+                            Jora (Global)
+                          </a>
+                        </li>
+                        <li
+                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          href="https://www.occ.com.mx"
+                        >
+                          <a
+                            href="https://www.occ.com.mx"
+                            target="_self"
+                          >
+                            OCC Mundial (México)
+                          </a>
+                        </li>
+                        <li
+                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          href="https://www.workana.com"
+                        >
+                          <a
+                            href="https://www.workana.com"
+                            target="_self"
+                          >
+                            Workana
+                          </a>
+                        </li>
+                        <li
+                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          href="http://www.zhaopin.com"
+                        >
+                          <a
+                            href="http://www.zhaopin.com"
+                            target="_self"
+                          >
+                            Zhaopin (China)
+                          </a>
+                        </li>
+                      </ul>
+                      <button
+                        onClick={[Function]}
+                      >
+                        Ver mais
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="FooterBar__FooterBarContainer-s17byu91-1 eJjuco Container-v8sf5n-0 fmnGah"
+  >
+    <div
+      className="Row-s1166su-0 gYiQGp"
+    >
+      <div
+        className="Col-bi16rv-0 cygcwq"
+      >
+        <div
+          className="FooterBar__FooterBarContainer-s17byu91-1 ceWCwv Container-v8sf5n-0 gUDuIj"
+        >
+          <div
+            className="Row-s1166su-0 gYiQGp"
+          >
+            <div
+              className="FooterBar__ColFlex-s17byu91-2 guzMgG Col-bi16rv-0 cygcwq"
+            >
+              <img
+                alt="Catho logo"
+                src="/ms/fragments-footer/static/cathoFooter.png"
+              />
+              <div
+                className="FooterBar__CathoFooterInfo-s17byu91-0 gKBNxD"
+              >
+                Catho Online Ltda. CNPJ: 03.753.088/0001-00 Alameda Juari, 262a - Barueri, SP - 06460-090
+                <a
+                  href="https://www.catho.com.br/institucional/privacidade-relacionamento/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Política de Privacidade
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

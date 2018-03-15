@@ -1,0 +1,562 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu component Should match the snapshot 1`] = `
+<section>
+  <div
+    className="MenuMobile__MenuMobileContainer-dztz2f-0 cDxolp Container-s163g650-0 jvPZlp"
+  >
+    <div
+      className="Row-k9527m-0 kvCkwg"
+    >
+      <div
+        className="Col-s1jhptn4-0 fgbnAC"
+      >
+        <div
+          className="MenuMobile__FeaturedListItem-dztz2f-4 gXyags"
+        >
+          <a
+            className="MenuMobile__FeaturedLink-dztz2f-5 fHwgtd"
+            href="/vagas/"
+            icon="search"
+            title="Buscar vagas"
+          >
+            Buscar vagas
+          </a>
+        </div>
+      </div>
+      <div
+        className="Col-s1jhptn4-0 fgbnAC"
+      >
+        <div
+          className="MenuMobile__FeaturedListItem-dztz2f-4 gXyags"
+        >
+          <a
+            className="MenuMobile__FeaturedLink-dztz2f-5 kZNqVj"
+            href="/por-dentro/"
+            icon="enterprise"
+            title="Por dentro das empresas"
+          >
+            Por dentro das empresas
+          </a>
+        </div>
+      </div>
+      <div
+        className="Col-s1jhptn4-0 fgbnAC"
+      >
+        <div
+          className="MenuMobile__FeaturedListItem-dztz2f-4 gXyags"
+        >
+          <a
+            className="MenuMobile__FeaturedLink-dztz2f-5 cTNrFd"
+            href="/aviso-vagas/listagem/"
+            icon="alert"
+            title="Aviso de vagas"
+          >
+            Aviso de vagas
+          </a>
+        </div>
+      </div>
+      <ul
+        className="MenuMobile__LinkList-dztz2f-1 cgZdXB"
+      >
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr[plano_id]=1&cur[perfil_id]=1&cur[use_personalizado]=0&a=0&ppd=0&tipoinclusao=807"
+            target="_self"
+            title="Envie seu Currículo por 7 dias grátis"
+          >
+            Envie seu Currículo por 7 dias grátis
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="/profissoes/"
+            target="_self"
+            title="Guia de profissões"
+          >
+            Guia de profissões
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="/por-dentro/"
+            target="_self"
+            title="Por dentro das empresas"
+          >
+            Por dentro das empresas
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://www.catho.com.br/portaldocurriculo/"
+            target="_self"
+            title="Portal do currículo"
+          >
+            Portal do currículo
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://www.catho.com.br/estagio/"
+            target="_self"
+            title="Vagas de estágio"
+          >
+            Vagas de estágio
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 ilBnDi"
+        >
+          Exclusivo para assinantes
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="/cursos-rapidos/"
+            target="_self"
+            title="Cursos rápidos"
+          >
+            Cursos rápidos
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://cadastro.catho.com.br/"
+            target="_self"
+            title="Cadastro Catho"
+          >
+            Cadastro Catho
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="/consvirtual/"
+            target="_self"
+            title="Consultor virtual"
+          >
+            Consultor virtual
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="/cadastrar-curriculo/"
+            target="_self"
+            title="Vantagens de assinar a Catho"
+          >
+            Vantagens de assinar a Catho
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 ilBnDi"
+        >
+          Apoio ao candidato
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6503&p=12&url1=1&url=servicoscatho/carreira/elaboracao-de-curriculo/"
+            target="_self"
+            title="Elaboração de currículo"
+          >
+            Elaboração de currículo
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6507&p=4&url1=1&url=servicoscatho/carreira/analise-de-curriculo/"
+            target="_self"
+            title="Análise de currículo"
+          >
+            Análise de currículo
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6509&p=16&url1=1&url=servicoscatho/carreira/simulacao-de-entrevista/"
+            target="_self"
+            title="Simulação de entrevista"
+          >
+            Simulação de entrevista
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6505&p=13&url1=1&url=servicoscatho/carreira/carta-de-apresentacao/"
+            target="_self"
+            title="Elaboração de carta de apresentação"
+          >
+            Elaboração de carta de apresentação
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="/curso/"
+            target="_self"
+            title="Cursos"
+          >
+            Cursos
+          </a>
+        </li>
+        <li
+          className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        >
+          <a
+            className="MenuMobile__Link-dztz2f-3 ceVGrD"
+            href="/servicoscandidatos/"
+            target="_self"
+            title="Todas as soluções"
+          >
+            Todas as soluções
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MenuDesktop__MenuDesktopContainer-s1xnd3dn-0 dnPXqP Container-s163g650-0 jvPZlp"
+  >
+    <div
+      className="Container-s163g650-0 VziTO"
+    >
+      <div
+        className="Row-k9527m-0 gKphLh"
+      >
+        <div
+          className="MenuDesktop__StyledCol-s1xnd3dn-3 dnOJIb Col-s1jhptn4-0 gaTaBJ"
+        >
+          <div
+            className="MenuDesktop__MenuNavigation-s1xnd3dn-4 ljJuGV"
+          >
+            <div
+              className="Hide-s1pywwyr-0 cnRMmH"
+            >
+              <div
+                className="MenuButton__Hamburger-qwwwlp-0 hhEvgD"
+                onClick={[Function]}
+              >
+                <span
+                  className="MenuButton__TopBread-qwwwlp-1 ggFiGA"
+                />
+                <span
+                  className="MenuButton__Meat-qwwwlp-2 fSveOY"
+                />
+                <span
+                  className="MenuButton__BottomBread-qwwwlp-3 cxgZPF"
+                />
+              </div>
+            </div>
+            <a
+              href="https://www.catho.com.br/"
+            >
+              <img
+                alt="A gente trabalha pelo seu trabalho"
+                className="MenuDesktop__LogoCatho-s1xnd3dn-1 cDGNZP"
+                src="https://static.catho.com.br/svg/site/logoCathoB2c.svg"
+              />
+            </a>
+            <div
+              className="MenuDesktop__StyledHide-s1xnd3dn-2 hYYQv Hide-s1pywwyr-0 jOgZNl"
+            >
+              <ul
+                className="MenuDesktop__LinkList-s1xnd3dn-5 ldVNbb"
+              >
+                <li
+                  className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                >
+                  <a
+                    className="MenuDesktop__Link-s1xnd3dn-7 iqrhBS"
+                    href="/vagas/"
+                  >
+                    Buscar vagas
+                  </a>
+                </li>
+                <li
+                  className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                >
+                  <a
+                    className="MenuDesktop__Link-s1xnd3dn-7 iqrhBS"
+                    href="/profissoes/"
+                  >
+                    Guia de profissões
+                  </a>
+                </li>
+                <li
+                  className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                >
+                  <a
+                    className="MenuDesktop__Link-s1xnd3dn-7 iqrhBS"
+                    href="/por-dentro/"
+                  >
+                    Por dentro das empresas
+                  </a>
+                </li>
+                <li
+                  className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                >
+                  Soluções para candidatos
+                  <ul
+                    className="MenuDesktop__PopOverLinkList-s1xnd3dn-8 kgmWSr"
+                  >
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/aviso-vagas/listagem/"
+                      >
+                        Aviso de vagas
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr[plano_id]=1&cur[perfil_id]=1&cur[use_personalizado]=0&a=0&ppd=0&tipoinclusao=807"
+                      >
+                        Envie seu Currículo por 7 dias grátis
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/profissoes/"
+                      >
+                        Guia de profissões
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/por-dentro/"
+                      >
+                        Por dentro das empresas
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://www.catho.com.br/portaldocurriculo/"
+                      >
+                        Portal do currículo
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://www.catho.com.br/estagio/"
+                      >
+                        Vagas de estágio
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <span
+                        className="MenuDesktop__PopOverTitle-s1xnd3dn-10 gZwjJ"
+                      >
+                        Exclusivo para assinantes
+                      </span>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/cursos-rapidos/"
+                      >
+                        Cursos rápidos
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://cadastro.catho.com.br/"
+                      >
+                        Cadastro Catho
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/consvirtual/"
+                      >
+                        Consultor virtual
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/cadastrar-curriculo/"
+                      >
+                        Vantagens de assinar a Catho
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <span
+                        className="MenuDesktop__PopOverTitle-s1xnd3dn-10 gZwjJ"
+                      >
+                        Apoio ao candidato
+                      </span>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6503&p=12&url1=1&url=servicoscatho/carreira/elaboracao-de-curriculo/"
+                      >
+                        Elaboração de currículo
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6507&p=4&url1=1&url=servicoscatho/carreira/analise-de-curriculo/"
+                      >
+                        Análise de currículo
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6509&p=16&url1=1&url=servicoscatho/carreira/simulacao-de-entrevista/"
+                      >
+                        Simulação de entrevista
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6505&p=13&url1=1&url=servicoscatho/carreira/carta-de-apresentacao/"
+                      >
+                        Elaboração de carta de apresentação
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/curso/"
+                      >
+                        Cursos
+                      </a>
+                    </li>
+                    <li
+                      className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    >
+                      <a
+                        className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                        href="/servicoscandidatos/"
+                      >
+                        Todas as soluções
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul
+            className="LoginBox__LinkList-v6shrb-0 dFtQbH"
+          >
+            <li
+              className="LoginBox__ListItem-v6shrb-1 ccvYWg"
+            >
+              <a
+                className="LoginBox__Link-v6shrb-2 jFulmx"
+                href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr%5Bplano_id%5D=1&cur%5Bperfil_id%5D=1&cur%5Buse_personalizado%5D=0&a=0&ppd=0&tipoinclusao=903"
+              >
+                Assine
+              </a>
+            </li>
+            <li
+              className="LoginBox__ListItem-v6shrb-1 ccvYWg"
+            >
+              <button
+                className="LoginBox__Button-v6shrb-3 hltamn"
+                onClick={[Function]}
+              >
+                Login
+              </button>
+              <div
+                className="LoginBox__LoginFrame-v6shrb-4 hwNUsp"
+              >
+                <iframe
+                  frameBorder="0"
+                  scrolling="no"
+                  src="https://safe.catho.com.br/login/tipo/tooltip/"
+                  title="LoginBox"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

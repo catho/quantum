@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default props Should match the snapshot 1`] = `
+<div
+  className="Row-s1166su-0 nMSYG"
+>
+  <div
+    className="Col-bi16rv-0 cygcwq"
+  >
+    <div
+      className="FooterSection__SectionTitle-k2tayx-0 djKMMD"
+    >
+      Candidatos
+    </div>
+    <div
+      className="Row-s1166su-0 nMSYG"
+    >
+      <div
+        className="Col-bi16rv-0 ggiJSh"
+      >
+        <ul
+          className="FooterLinkGroup__LinkGroup-s2tx9sw-0 ccSfWN"
+        >
+          <li
+            className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jCTQSx"
+            href={null}
+          >
+            <a
+              href={null}
+            >
+              Buscar vagas
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`When do not have title Should match the snapshot 1`] = `
+<div
+  className="Row-s1166su-0 nMSYG"
+>
+  <div
+    className="Col-bi16rv-0 cygcwq"
+  >
+    <div
+      className="Row-s1166su-0 nMSYG"
+    >
+      <div
+        className="Col-bi16rv-0 ggiJSh"
+      >
+        <ul
+          className="FooterLinkGroup__LinkGroup-s2tx9sw-0 ccSfWN"
+        >
+          <li
+            className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jCTQSx"
+            href={null}
+          >
+            <a
+              href={null}
+            >
+              Buscar vagas
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

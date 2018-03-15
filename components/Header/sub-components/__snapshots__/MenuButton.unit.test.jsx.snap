@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuButton component Should match the snapshot 1`] = `
+<div
+  className="MenuButton__Hamburger-qwwwlp-0 hhEvgD"
+  onClick={[Function]}
+>
+  <span
+    className="MenuButton__TopBread-qwwwlp-1 ggFiGA"
+  />
+  <span
+    className="MenuButton__Meat-qwwwlp-2 fSveOY"
+  />
+  <span
+    className="MenuButton__BottomBread-qwwwlp-3 cxgZPF"
+  />
+</div>
+`;

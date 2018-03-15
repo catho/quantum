@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component Should match the snapshot 1`] = `
+<div
+  className="FooterBar__FooterBarContainer-s17byu91-1 jrtWCQ Container-v8sf5n-0 fmnGah"
+>
+  <div
+    className="Row-s1166su-0 gYiQGp"
+  >
+    <div
+      className="Col-bi16rv-0 cygcwq"
+    >
+      <div
+        className="FooterBar__FooterBarContainer-s17byu91-1 lcQbr Container-v8sf5n-0 gUDuIj"
+      >
+        <div
+          className="Row-s1166su-0 gYiQGp"
+        >
+          <div
+            className="FooterBar__ColFlex-s17byu91-2 guzMgG Col-bi16rv-0 cygcwq"
+          >
+            <img
+              alt="Catho logo"
+              src="/ms/fragments-footer/static/cathoFooter.png"
+            />
+            <div
+              className="FooterBar__CathoFooterInfo-s17byu91-0 fRtWfd"
+            >
+              Catho Online Ltda. CNPJ: 03.753.088/0001-00 Alameda Juari, 262a - Barueri, SP - 06460-090
+              <a
+                href="https://www.catho.com.br/institucional/privacidade-relacionamento/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Política de Privacidade
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

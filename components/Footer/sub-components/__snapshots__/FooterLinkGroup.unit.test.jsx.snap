@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default props Should match the snapshot 1`] = `
+<ul
+  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+>
+  <li
+    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    href="http://foo.bar"
+  >
+    <a
+      href="http://foo.bar"
+    >
+      Link text
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`IsLinking is false Should match the snapshot 1`] = `
+<ul
+  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+>
+  <li
+    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    href="http://foo.bar"
+  >
+    <a
+      href="http://foo.bar"
+    >
+      Link text
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`IsTitle is false Should match the snapshot 1`] = `
+<ul
+  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+>
+  <li
+    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    href="http://foo.bar"
+  >
+    <a
+      href="http://foo.bar"
+    >
+      Link text
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`hasSideSeparator is false Should match the snapshot 1`] = `
+<ul
+  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+>
+  <li
+    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    href="http://foo.bar"
+  >
+    <a
+      href="http://foo.bar"
+    >
+      Link text
+    </a>
+  </li>
+</ul>
+`;
