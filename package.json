@@ -30,6 +30,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-polyfill": "^6.26.0",
+    "dotenv-webpack": "^1.5.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^3.2.3",

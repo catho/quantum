@@ -74,7 +74,7 @@ class Header extends React.Component {
 
   async fetchPromotion() {
     try {
-      const { data } = await axios(`${process.env.APPLICATION_PATH}/api/trials`);
+      const { data } = await axios(`${process.env.DOMAIN}${process.env.APPLICATION_PATH}/api/trials`);
       this.setState({ showPromotion: data });
     } catch (error) {
       process.stderr.write(error);

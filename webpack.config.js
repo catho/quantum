@@ -1,3 +1,4 @@
+const Dotenv = require('dotenv-webpack');
 const path = require('path');
 require('webpack');
 
@@ -17,8 +18,11 @@ module.exports = {
       query: {
         presets: ["env", "stage-1", "react"]
       }
-    }]
+    }],
   },
+  plugins: [
+    new Dotenv(),
+  ],
   resolve: {
     extensions: [".jsx", ".js"]
   }
