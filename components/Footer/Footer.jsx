@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import FooterSection from './sub-components/FooterSection';
 import { Container, Row, Col } from '../Grid';
 import FooterBar from './sub-components/FooterBar';
 import NavigateToTop from './sub-components/NavigateToTop';
-import Data from './data';
+import dataSource from './data';
 
 const FooterContainer = styled(Container)`{
   background-color: ${props => props.theme.backgroundColor};
@@ -17,8 +18,8 @@ const StampsHolder = styled(Col)`{
   padding-top: ${props => props.theme.StampsHolderPadding};
 }`;
 
-export default () => (
-  <ThemeProvider theme={Data.theme}>
+const Footer = ({ data }) => (
+  <ThemeProvider theme={data.theme}>
     <React.Fragment>
       <NavigateToTop />
 
@@ -26,18 +27,18 @@ export default () => (
         <FooterContainer>
           <Row>
             <Col desktop={8}>
-              <FooterSection data={Data.candidates} />
+              <FooterSection data={data.candidates} />
             </Col>
             <Col desktop={2}>
-              <FooterSection data={Data.companies} />
-              <FooterSection data={Data.courses} />
+              <FooterSection data={data.companies} />
+              <FooterSection data={data.courses} />
             </Col>
             <Col desktop={2}>
-              <FooterSection data={Data.institutional} />
+              <FooterSection data={data.institutional} />
             </Col>
 
             <StampsHolder desktop={12}>
-              <FooterSection data={Data.stamps} />
+              <FooterSection data={data.stamps} />
             </StampsHolder>
           </Row>
         </FooterContainer>
@@ -47,3 +48,13 @@ export default () => (
     </React.Fragment>
   </ThemeProvider>
 );
+
+Footer.propTypes = {
+  data: PropTypes.instanceOf(Object),
+};
+
+Footer.defaultProps = {
+  data: dataSource,
+};
+
+export default Footer;

@@ -2,10 +2,10 @@
 
 exports[`NavigateToTop component Should match the snapshot 1`] = `
 <div
-  className="Container-v8sf5n-0 oCQPB"
+  className="sc-bdVaJa dTrXBa"
 >
   <div
-    className="NavigateToTop__TopButtonHolder-s1in9y0c-0 cYrZSa Col-bi16rv-0 cygcwq"
+    className="sc-ifAKCX vsVjH sc-htpNat cNhtKB"
   >
     <a
       href="#top"

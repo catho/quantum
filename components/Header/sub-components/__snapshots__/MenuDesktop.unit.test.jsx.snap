@@ -2,35 +2,35 @@
 
 exports[`MenuDesktop component Should match the snapshot 1`] = `
 <div
-  className="MenuDesktop__MenuDesktopContainer-s1xnd3dn-0 dnPXqP Container-s163g650-0 jvPZlp"
+  className="sc-VigVT fLlHKj sc-bdVaJa OkJiS"
 >
   <div
-    className="Container-s163g650-0 VziTO"
+    className="sc-bdVaJa cSQWIE"
   >
     <div
-      className="Row-k9527m-0 gKphLh"
+      className="sc-bwzfXH dKHdhw"
     >
       <div
-        className="MenuDesktop__StyledCol-s1xnd3dn-3 dnOJIb Col-s1jhptn4-0 gaTaBJ"
+        className="sc-jzJRlG jfmbzt sc-htpNat bLNipZ"
       >
         <div
-          className="MenuDesktop__MenuNavigation-s1xnd3dn-4 ljJuGV"
+          className="sc-cSHVUG hDNPdi"
         >
           <div
-            className="Hide-s1pywwyr-0 cnRMmH"
+            className="sc-bxivhb jXYxts"
           >
             <div
-              className="MenuButton__Hamburger-qwwwlp-0 hhEvgD"
+              className="sc-ifAKCX bSVAvB"
               onClick={[Function]}
             >
               <span
-                className="MenuButton__TopBread-qwwwlp-1 ggFiGA"
+                className="sc-EHOje iMdrmK"
               />
               <span
-                className="MenuButton__Meat-qwwwlp-2 fSveOY"
+                className="sc-bZQynM ijIEHh"
               />
               <span
-                className="MenuButton__BottomBread-qwwwlp-3 cxgZPF"
+                className="sc-gzVnrw erHGXT"
               />
             </div>
           </div>
@@ -39,226 +39,226 @@ exports[`MenuDesktop component Should match the snapshot 1`] = `
           >
             <img
               alt="A gente trabalha pelo seu trabalho"
-              className="MenuDesktop__LogoCatho-s1xnd3dn-1 cDGNZP"
+              className="sc-jTzLTM iTDoST"
               src="https://static.catho.com.br/svg/site/logoCathoB2c.svg"
             />
           </a>
           <div
-            className="MenuDesktop__StyledHide-s1xnd3dn-2 hYYQv Hide-s1pywwyr-0 jOgZNl"
+            className="sc-fjdhpX jiIyNK sc-bxivhb XNLln"
           >
             <ul
-              className="MenuDesktop__LinkList-s1xnd3dn-5 ldVNbb"
+              className="sc-kAzzGY geykMb"
             >
               <li
-                className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                className="sc-chPdSV dzwkXp"
               >
                 <a
-                  className="MenuDesktop__Link-s1xnd3dn-7 iqrhBS"
+                  className="sc-kgoBCf eteDkT"
                   href="/vagas/"
                 >
                   Buscar vagas
                 </a>
               </li>
               <li
-                className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                className="sc-chPdSV dzwkXp"
               >
                 <a
-                  className="MenuDesktop__Link-s1xnd3dn-7 iqrhBS"
+                  className="sc-kgoBCf eteDkT"
                   href="/profissoes/"
                 >
                   Guia de profissões
                 </a>
               </li>
               <li
-                className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                className="sc-chPdSV dzwkXp"
               >
                 <a
-                  className="MenuDesktop__Link-s1xnd3dn-7 iqrhBS"
+                  className="sc-kgoBCf eteDkT"
                   href="/por-dentro/"
                 >
                   Por dentro das empresas
                 </a>
               </li>
               <li
-                className="MenuDesktop__LinkListItem-s1xnd3dn-6 cgbGWR"
+                className="sc-chPdSV dzwkXp"
               >
                 Soluções para candidatos
                 <ul
-                  className="MenuDesktop__PopOverLinkList-s1xnd3dn-8 kgmWSr"
+                  className="sc-kGXeez jimJLB"
                 >
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/aviso-vagas/listagem/"
                     >
                       Aviso de vagas
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr[plano_id]=1&cur[perfil_id]=1&cur[use_personalizado]=0&a=0&ppd=0&tipoinclusao=807"
                     >
                       Envie seu Currículo por 7 dias grátis
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/profissoes/"
                     >
                       Guia de profissões
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/por-dentro/"
                     >
                       Por dentro das empresas
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://www.catho.com.br/portaldocurriculo/"
                     >
                       Portal do currículo
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://www.catho.com.br/estagio/"
                     >
                       Vagas de estágio
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <span
-                      className="MenuDesktop__PopOverTitle-s1xnd3dn-10 gZwjJ"
+                      className="sc-dxgOiQ icpgaR"
                     >
                       Exclusivo para assinantes
                     </span>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/cursos-rapidos/"
                     >
                       Cursos rápidos
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://cadastro.catho.com.br/"
                     >
                       Cadastro Catho
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/consvirtual/"
                     >
                       Consultor virtual
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/cadastrar-curriculo/"
                     >
                       Vantagens de assinar a Catho
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <span
-                      className="MenuDesktop__PopOverTitle-s1xnd3dn-10 gZwjJ"
+                      className="sc-dxgOiQ icpgaR"
                     >
                       Apoio ao candidato
                     </span>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6503&p=12&url1=1&url=servicoscatho/carreira/elaboracao-de-curriculo/"
                     >
                       Elaboração de currículo
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6507&p=4&url1=1&url=servicoscatho/carreira/analise-de-curriculo/"
                     >
                       Análise de currículo
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6509&p=16&url1=1&url=servicoscatho/carreira/simulacao-de-entrevista/"
                     >
                       Simulação de entrevista
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6505&p=13&url1=1&url=servicoscatho/carreira/carta-de-apresentacao/"
                     >
                       Elaboração de carta de apresentação
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/curso/"
                     >
                       Cursos
                     </a>
                   </li>
                   <li
-                    className="MenuDesktop__PopOverLinkListItem-s1xnd3dn-9 bjZTlf"
+                    className="sc-kpOJdX hCRoSg"
                   >
                     <a
-                      className="MenuDesktop__PopOverLink-s1xnd3dn-11 DBdHB"
+                      className="sc-ckVGcZ fbQkxY"
                       href="/servicoscandidatos/"
                     >
                       Todas as soluções
@@ -270,29 +270,29 @@ exports[`MenuDesktop component Should match the snapshot 1`] = `
           </div>
         </div>
         <ul
-          className="LoginBox__LinkList-v6shrb-0 dFtQbH"
+          className="sc-htoDjs kkROuE"
         >
           <li
-            className="LoginBox__ListItem-v6shrb-1 ccvYWg"
+            className="sc-dnqmqq igIpdT"
           >
             <a
-              className="LoginBox__Link-v6shrb-2 jFulmx"
+              className="sc-iwsKbI ggKTXP"
               href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr%5Bplano_id%5D=1&cur%5Bperfil_id%5D=1&cur%5Buse_personalizado%5D=0&a=0&ppd=0&tipoinclusao=903"
             >
               Assine
             </a>
           </li>
           <li
-            className="LoginBox__ListItem-v6shrb-1 ccvYWg"
+            className="sc-dnqmqq igIpdT"
           >
             <button
-              className="LoginBox__Button-v6shrb-3 hltamn"
+              className="sc-gZMcBi dvYuZS"
               onClick={[Function]}
             >
               Login
             </button>
             <div
-              className="LoginBox__LoginFrame-v6shrb-4 hwNUsp"
+              className="sc-gqjmRU hAFoso"
             >
               <iframe
                 frameBorder="0"

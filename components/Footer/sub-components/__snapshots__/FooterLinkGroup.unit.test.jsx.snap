@@ -2,10 +2,10 @@
 
 exports[`Default props Should match the snapshot 1`] = `
 <ul
-  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+  className="sc-bdVaJa bDPZVs"
 >
   <li
-    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    className="sc-bwzfXH hMCfcz"
     href="http://foo.bar"
   >
     <a
@@ -19,10 +19,10 @@ exports[`Default props Should match the snapshot 1`] = `
 
 exports[`IsLinking is false Should match the snapshot 1`] = `
 <ul
-  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+  className="sc-bdVaJa bDPZVs"
 >
   <li
-    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    className="sc-bwzfXH hMCfcz"
     href="http://foo.bar"
   >
     <a
@@ -36,10 +36,10 @@ exports[`IsLinking is false Should match the snapshot 1`] = `
 
 exports[`IsTitle is false Should match the snapshot 1`] = `
 <ul
-  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+  className="sc-bdVaJa bDPZVs"
 >
   <li
-    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    className="sc-bwzfXH hMCfcz"
     href="http://foo.bar"
   >
     <a
@@ -53,10 +53,10 @@ exports[`IsTitle is false Should match the snapshot 1`] = `
 
 exports[`hasSideSeparator is false Should match the snapshot 1`] = `
 <ul
-  className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+  className="sc-bdVaJa bDPZVs"
 >
   <li
-    className="FooterLinkGroup__LinkItem-s2tx9sw-1 kvUcmz"
+    className="sc-bwzfXH hMCfcz"
     href="http://foo.bar"
   >
     <a

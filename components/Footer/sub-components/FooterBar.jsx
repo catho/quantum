@@ -41,7 +41,7 @@ export default () => (
         <FooterBarContainer>
           <Row>
             <ColFlex desktop={12}>
-              <img alt="Catho logo" src={`${process.env.APPLICATION_PATH}/static/cathoFooter.png`} />
+              <img alt="Catho logo" src={`${process.env.DOMAIN}/ms/fragments-footer/static/cathoFooter.png`} />
               <Catho />
             </ColFlex>
           </Row>

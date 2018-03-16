@@ -4,8 +4,9 @@
   "description": "Catho react components style guide",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "test": "jest",
+    "build": "webpack",
+    "prepush": "yarn lint"
   },
   "repository": {
     "type": "git",
@@ -21,16 +22,23 @@
   "author": "Watchmen",
   "license": "ISC",
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1"
+    "babel-preset-stage-1": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.2",
+    "react-test-renderer": "^16.2.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-polyfill": "^6.26.0",
+    "dotenv-webpack": "^1.5.5",
     "react": "^16.2.0",
+    "react-cookies": "^0.1.0",
     "react-dom": "^16.2.0",
     "styled-components": "^3.2.3",
     "webpack": "^4.1.1",

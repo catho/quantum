@@ -2,19 +2,19 @@
 
 exports[`MenuMobile component Should match the snapshot 1`] = `
 <div
-  className="MenuMobile__MenuMobileContainer-dztz2f-0 cDxolp Container-s163g650-0 jvPZlp"
+  className="sc-ifAKCX kULZqa sc-bdVaJa OkJiS"
 >
   <div
-    className="Row-k9527m-0 kvCkwg"
+    className="sc-bwzfXH hnDOSg"
   >
     <div
-      className="Col-s1jhptn4-0 fgbnAC"
+      className="sc-htpNat hsrGhS"
     >
       <div
-        className="MenuMobile__FeaturedListItem-dztz2f-4 gXyags"
+        className="sc-htoDjs RZnJw"
       >
         <a
-          className="MenuMobile__FeaturedLink-dztz2f-5 fHwgtd"
+          className="sc-dnqmqq cvhdim"
           href="/vagas/"
           icon="search"
           title="Buscar vagas"
@@ -24,13 +24,13 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Col-s1jhptn4-0 fgbnAC"
+      className="sc-htpNat hsrGhS"
     >
       <div
-        className="MenuMobile__FeaturedListItem-dztz2f-4 gXyags"
+        className="sc-htoDjs RZnJw"
       >
         <a
-          className="MenuMobile__FeaturedLink-dztz2f-5 kZNqVj"
+          className="sc-dnqmqq jYooTm"
           href="/por-dentro/"
           icon="enterprise"
           title="Por dentro das empresas"
@@ -40,13 +40,13 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Col-s1jhptn4-0 fgbnAC"
+      className="sc-htpNat hsrGhS"
     >
       <div
-        className="MenuMobile__FeaturedListItem-dztz2f-4 gXyags"
+        className="sc-htoDjs RZnJw"
       >
         <a
-          className="MenuMobile__FeaturedLink-dztz2f-5 cTNrFd"
+          className="sc-dnqmqq CjmeH"
           href="/aviso-vagas/listagem/"
           icon="alert"
           title="Aviso de vagas"
@@ -56,13 +56,13 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
       </div>
     </div>
     <ul
-      className="MenuMobile__LinkList-dztz2f-1 cgZdXB"
+      className="sc-EHOje ZUQmC"
     >
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr[plano_id]=1&cur[perfil_id]=1&cur[use_personalizado]=0&a=0&ppd=0&tipoinclusao=807"
           target="_self"
           title="Envie seu Currículo por 7 dias grátis"
@@ -71,10 +71,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="/profissoes/"
           target="_self"
           title="Guia de profissões"
@@ -83,10 +83,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="/por-dentro/"
           target="_self"
           title="Por dentro das empresas"
@@ -95,10 +95,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://www.catho.com.br/portaldocurriculo/"
           target="_self"
           title="Portal do currículo"
@@ -107,10 +107,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://www.catho.com.br/estagio/"
           target="_self"
           title="Vagas de estágio"
@@ -119,15 +119,15 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 ilBnDi"
+        className="sc-bZQynM kBLwuG"
       >
         Exclusivo para assinantes
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="/cursos-rapidos/"
           target="_self"
           title="Cursos rápidos"
@@ -136,10 +136,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://cadastro.catho.com.br/"
           target="_self"
           title="Cadastro Catho"
@@ -148,10 +148,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="/consvirtual/"
           target="_self"
           title="Consultor virtual"
@@ -160,10 +160,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="/cadastrar-curriculo/"
           target="_self"
           title="Vantagens de assinar a Catho"
@@ -172,15 +172,15 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 ilBnDi"
+        className="sc-bZQynM kBLwuG"
       >
         Apoio ao candidato
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6503&p=12&url1=1&url=servicoscatho/carreira/elaboracao-de-curriculo/"
           target="_self"
           title="Elaboração de currículo"
@@ -189,10 +189,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6507&p=4&url1=1&url=servicoscatho/carreira/analise-de-curriculo/"
           target="_self"
           title="Análise de currículo"
@@ -201,10 +201,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6509&p=16&url1=1&url=servicoscatho/carreira/simulacao-de-entrevista/"
           target="_self"
           title="Simulação de entrevista"
@@ -213,10 +213,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6505&p=13&url1=1&url=servicoscatho/carreira/carta-de-apresentacao/"
           target="_self"
           title="Elaboração de carta de apresentação"
@@ -225,10 +225,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="/curso/"
           target="_self"
           title="Cursos"
@@ -237,10 +237,10 @@ exports[`MenuMobile component Should match the snapshot 1`] = `
         </a>
       </li>
       <li
-        className="MenuMobile__LinkListItem-dztz2f-2 djBawj"
+        className="sc-bZQynM jpfThj"
       >
         <a
-          className="MenuMobile__Link-dztz2f-3 ceVGrD"
+          className="sc-gzVnrw cDChpl"
           href="/servicoscandidatos/"
           target="_self"
           title="Todas as soluções"

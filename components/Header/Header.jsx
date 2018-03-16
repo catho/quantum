@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider, injectGlobal } from 'styled-components';
+import cookie from 'react-cookies'
 import axios from 'axios';
-
 import HeaderBar from './sub-components/HeaderBar';
 import PromotionBar from './sub-components/PromotionBar';
 import Menu from './sub-components/Menu';
+import { BREAKPOINTS } from '../../components/Grid';
+import dataSource from '../../components/Header/data';
 
 /* eslint no-unused-expressions: ["error", { "allowTaggedTemplates": true }] */
 injectGlobal`
@@ -24,21 +26,64 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
 
+    this.menuState = {
+      OPENED: 'opened',
+      CLOSED: 'closed',
+    };
+
     this.state = {
+      menuOpened: null,
+      loginOpened: false,
       showPromotion: false,
     };
   }
 
   componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions.bind(this));
     this.fetchPromotion();
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions.bind(this));
+  }
+
+  handleMenuOpen = () => {
+    this.setState({
+      menuOpened: this.state.menuOpened !== this.menuState.OPENED ?
+        this.menuState.OPENED : this.menuState.CLOSED,
+      loginOpened: false,
+    }, function hideScrollBar() {
+      document.body.style.overflow = (this.state.menuOpened) ? 'hidden' : 'auto';
+    });
+  }
+
+  handleLoginOpen = () => {
+    this.setState({
+      loginOpened: !this.state.loginOpened,
+      menuOpened: this.state.menuOpened === this.menuState.OPENED ? this.menuState.CLOSED : null,
+    });
+  }
+
+  updateDimensions() {
+    if (window.innerWidth > BREAKPOINTS.tablet) {
+      this.setState({
+        menuOpened: null,
+      });
+    }
+  }
+
   async fetchPromotion() {
-    try {
-      const { data } = await axios(`${process.env.APPLICATION_PATH}/api/trials`);
-      this.setState({ showPromotion: data });
-    } catch (error) {
-      process.stderr.write(error);
+    const regionalizacao = cookie.load('regionalizacao');
+
+    if (regionalizacao) {
+      const [ city, state ] = regionalizacao.split("_");
+
+      try {
+        const { data } = await axios(`http://home.vs/proxy-trials/?city=${city}&state=${state}`);
+        this.setState({ showPromotion: data });
+      } catch (error) {
+        process.stderr.write(error);
+      }
     }
   }
 
@@ -47,10 +92,6 @@ class Header extends React.Component {
       data,
       path,
       promotionUrl,
-      handleMenuOpen,
-      handleLoginOpen,
-      menuOpened,
-      loginOpened,
     } = this.props;
 
     return (
@@ -62,10 +103,10 @@ class Header extends React.Component {
           />
           <Menu
             data={data}
-            handleMenuOpen={handleMenuOpen}
-            handleLoginOpen={handleLoginOpen}
-            menuOpened={menuOpened}
-            loginOpened={loginOpened}
+            handleMenuOpen={this.handleMenuOpen}
+            handleLoginOpen={this.handleLoginOpen}
+            menuOpened={this.state.menuOpened}
+            loginOpened={this.state.loginOpened}
           />
           {
             this.state.showPromotion &&
@@ -83,17 +124,11 @@ Header.propTypes = {
   data: PropTypes.instanceOf(Object),
   path: PropTypes.string.isRequired,
   promotionUrl: PropTypes.string,
-  handleMenuOpen: PropTypes.func.isRequired,
-  handleLoginOpen: PropTypes.func.isRequired,
-  menuOpened: PropTypes.string,
-  loginOpened: PropTypes.bool,
 };
 
 Header.defaultProps = {
-  data: null,
+  data: dataSource,
   promotionUrl: 'https://seguro.catho.com.br/cadastro-candidato',
-  menuOpened: null,
-  loginOpened: false,
 };
 
 export default Header;

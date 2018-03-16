@@ -2,29 +2,29 @@
 
 exports[`LoginBox component Should match the snapshot 1`] = `
 <ul
-  className="LoginBox__LinkList-v6shrb-0 kxoLrf"
+  className="sc-ifAKCX bwZZvL"
 >
   <li
-    className="LoginBox__ListItem-v6shrb-1 ccvYWg"
+    className="sc-EHOje gcVvUt"
   >
     <a
-      className="LoginBox__Link-v6shrb-2 jFulmx"
+      className="sc-bZQynM hsNvzI"
       href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr%5Bplano_id%5D=1&cur%5Bperfil_id%5D=1&cur%5Buse_personalizado%5D=0&a=0&ppd=0&tipoinclusao=903"
     >
       Assine
     </a>
   </li>
   <li
-    className="LoginBox__ListItem-v6shrb-1 ccvYWg"
+    className="sc-EHOje gcVvUt"
   >
     <button
-      className="LoginBox__Button-v6shrb-3 hltamn"
+      className="sc-gzVnrw efkVtj"
       onClick={[Function]}
     >
       Login
     </button>
     <div
-      className="LoginBox__LoginFrame-v6shrb-4 hwNUsp"
+      className="sc-htoDjs dbURhi"
     >
       <iframe
         frameBorder="0"

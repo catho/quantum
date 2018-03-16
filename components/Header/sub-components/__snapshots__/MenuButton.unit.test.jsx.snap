@@ -2,17 +2,17 @@
 
 exports[`MenuButton component Should match the snapshot 1`] = `
 <div
-  className="MenuButton__Hamburger-qwwwlp-0 hhEvgD"
+  className="sc-bdVaJa gsLnOD"
   onClick={[Function]}
 >
   <span
-    className="MenuButton__TopBread-qwwwlp-1 ggFiGA"
+    className="sc-bwzfXH jnIJPr"
   />
   <span
-    className="MenuButton__Meat-qwwwlp-2 fSveOY"
+    className="sc-htpNat iZiaIC"
   />
   <span
-    className="MenuButton__BottomBread-qwwwlp-3 cxgZPF"
+    className="sc-bxivhb cWPiPL"
   />
 </div>
 `;
