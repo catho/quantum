@@ -23,6 +23,10 @@ const SectionTitle = styled.div`
  }
 `;
 
+const StyledCol = styled(Col)`
+  overflow: hidden;
+`;
+
 class FooterSection extends React.Component {
   constructor(props) {
     super(props);
@@ -33,7 +37,7 @@ class FooterSection extends React.Component {
     return (
       <ThemeProvider theme={this.data.theme}>
         <Row no-gutters>
-          <Col desktop={12}>
+          <StyledCol desktop={12}>
             {
               this.data.title != null &&
               <SectionTitle>
@@ -51,7 +55,7 @@ class FooterSection extends React.Component {
                 ))
               }
             </Row>
-          </Col>
+          </StyledCol>
         </Row>
       </ThemeProvider>
     );

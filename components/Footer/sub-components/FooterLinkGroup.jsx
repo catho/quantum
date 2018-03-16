@@ -100,7 +100,7 @@ class FooterLinkGroup extends React.Component {
                     (link.img) != null &&
                     <img
                       alt={link.text}
-                      src={`${process.env.APPLICATION_PATH}/static/${link.img.src}`}
+                      src={`${process.env.DOMAIN}/ms/fragments-footer/static/${link.img.src}`}
                       width={link.img.width}
                     />
                   }

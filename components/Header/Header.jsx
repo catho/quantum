@@ -35,10 +35,6 @@ class Header extends React.Component {
       menuOpened: null,
       loginOpened: false,
       showPromotion: false,
-      promotion: {
-        city: null,
-        state: null,
-      },
     };
   }
 
@@ -78,12 +74,12 @@ class Header extends React.Component {
 
   async fetchPromotion() {
     const regionalizacao = cookie.load('regionalizacao');
-    
+
     if (regionalizacao) {
-      const [city, state] = regionalizacao.split("_");
+      const [ city, state ] = regionalizacao.split("_");
 
       try {
-        const {data} = await axios.get(`http://home.vs/proxy-trials/?city=${city}&state=${state}`);
+        const { data } = await axios.get(`http://home.vs/proxy-trials/?city=${city}&state=${state}`);
         this.setState({ showPromotion: data });
       } catch (error) {
         process.stderr.write(error);
