@@ -2,27 +2,27 @@
 
 exports[`Default props Should match the snapshot 1`] = `
 <div
-  className="Row-s1166su-0 nMSYG"
+  className="sc-bwzfXH hnDOSg"
 >
   <div
-    className="Col-bi16rv-0 cygcwq"
+    className="sc-gzVnrw eWSoAv sc-htpNat cNhtKB"
   >
     <div
-      className="FooterSection__SectionTitle-k2tayx-0 djKMMD"
+      className="sc-bZQynM ecjQcB"
     >
       Candidatos
     </div>
     <div
-      className="Row-s1166su-0 nMSYG"
+      className="sc-bwzfXH hnDOSg"
     >
       <div
-        className="Col-bi16rv-0 ggiJSh"
+        className="sc-htpNat imFLbK"
       >
         <ul
-          className="FooterLinkGroup__LinkGroup-s2tx9sw-0 ccSfWN"
+          className="sc-ifAKCX bWcRRH"
         >
           <li
-            className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jCTQSx"
+            className="title sc-EHOje kBbCrQ"
             href={null}
           >
             <a
@@ -40,22 +40,22 @@ exports[`Default props Should match the snapshot 1`] = `
 
 exports[`When do not have title Should match the snapshot 1`] = `
 <div
-  className="Row-s1166su-0 nMSYG"
+  className="sc-bwzfXH hnDOSg"
 >
   <div
-    className="Col-bi16rv-0 cygcwq"
+    className="sc-gzVnrw eWSoAv sc-htpNat cNhtKB"
   >
     <div
-      className="Row-s1166su-0 nMSYG"
+      className="sc-bwzfXH hnDOSg"
     >
       <div
-        className="Col-bi16rv-0 ggiJSh"
+        className="sc-htpNat imFLbK"
       >
         <ul
-          className="FooterLinkGroup__LinkGroup-s2tx9sw-0 ccSfWN"
+          className="sc-ifAKCX bWcRRH"
         >
           <li
-            className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jCTQSx"
+            className="title sc-EHOje kBbCrQ"
             href={null}
           >
             <a

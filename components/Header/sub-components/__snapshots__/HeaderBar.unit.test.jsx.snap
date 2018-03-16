@@ -2,55 +2,55 @@
 
 exports[`HeaderBar component Should match the snapshot 1`] = `
 <div
-  className="HeaderBar__HeaderContainer-g597n1-0 iMaMTJ Container-s163g650-0 jvPZlp"
+  className="sc-ifAKCX fKVinI sc-bdVaJa OkJiS"
 >
   <div
-    className="HeaderBar__StyledContainer-g597n1-1 fvoTHs Container-s163g650-0 VziTO"
+    className="sc-EHOje eHQBuR sc-bdVaJa cSQWIE"
   >
     <ul
-      className="HeaderBar__LinkList-g597n1-2 gPKZfo"
+      className="sc-bZQynM cXedio"
     >
       <li
-        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+        className="sc-gzVnrw dHPSlY"
       >
         <a
-          className="selected HeaderBar__Link-g597n1-4 iGfGjw"
+          className="selected sc-htoDjs bhCKaH"
           href="/"
         >
           candidatos
         </a>
       </li>
       <li
-        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+        className="sc-gzVnrw dHPSlY"
       >
         <a
-          className="HeaderBar__Link-g597n1-4 iGfGjw"
+          className="sc-htoDjs bhCKaH"
           href="https://www.catho.com.br/empresa/"
         >
           empresas
         </a>
       </li>
       <li
-        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+        className="sc-gzVnrw dHPSlY"
       >
         <a
-          className="HeaderBar__Link-g597n1-4 iGfGjw"
+          className="sc-htoDjs bhCKaH"
           href="https://www.catho.com.br/educacao/"
         >
           cursos
         </a>
       </li>
       <li
-        className="HeaderBar__LinkListItem-g597n1-3 eQVzoH"
+        className="sc-gzVnrw dHPSlY"
       >
         <a
-          className="HeaderBar__Link-g597n1-4 iGfGjw"
+          className="sc-htoDjs bhCKaH"
           href="https://www.catho.com.br/help/"
         >
           <img
             alt={null}
             height="16px"
-            src="/ms/fragments-header/static/header-info.svg"
+            src="undefined/static/header-info.svg"
             width="16px"
           />
         </a>

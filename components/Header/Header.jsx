@@ -79,7 +79,7 @@ class Header extends React.Component {
       const [ city, state ] = regionalizacao.split("_");
 
       try {
-        const { data } = await axios.get(`http://home.vs/proxy-trials/?city=${city}&state=${state}`);
+        const { data } = await axios(`http://home.vs/proxy-trials/?city=${city}&state=${state}`);
         this.setState({ showPromotion: data });
       } catch (error) {
         process.stderr.write(error);

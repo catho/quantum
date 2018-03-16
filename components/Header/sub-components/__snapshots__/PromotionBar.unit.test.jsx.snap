@@ -2,14 +2,14 @@
 
 exports[`PromotionBar component Should match the snapshot 1`] = `
 <a
-  className="PromotionBar__Link-s1y9lwpc-1 dbLvfF"
+  className="sc-EHOje ekcisJ"
   href="#"
 >
   <div
-    className="PromotionBar__PromotionContainer-s1y9lwpc-0 fthgiY Container-s163g650-0 jvPZlp"
+    className="sc-ifAKCX jpAMXh sc-bdVaJa OkJiS"
   >
     <div
-      className="Container-s163g650-0 VziTO"
+      className="sc-bdVaJa cSQWIE"
     >
       foo
     </div>

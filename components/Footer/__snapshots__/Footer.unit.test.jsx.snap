@@ -3,10 +3,10 @@
 exports[`Footer component Should match the snapshot 1`] = `
 Array [
   <div
-    className="Container-v8sf5n-0 oCQPB"
+    className="sc-bdVaJa dTrXBa"
   >
     <div
-      className="NavigateToTop__TopButtonHolder-s1in9y0c-0 dRdHng Col-bi16rv-0 cygcwq"
+      className="sc-gZMcBi fLblhb sc-htpNat cNhtKB"
     >
       <a
         href="#top"
@@ -16,39 +16,39 @@ Array [
     </div>
   </div>,
   <div
-    className="Footer__FooterContainer-pmu52a-0 cFwNCf Container-v8sf5n-0 eZdmDA"
+    className="sc-gqjmRU foiuWn sc-bdVaJa fsyknc"
   >
     <div
-      className="Footer__FooterContainer-pmu52a-0 cFwNCf Container-v8sf5n-0 gUDuIj"
+      className="sc-gqjmRU foiuWn sc-bdVaJa cSQWIE"
     >
       <div
-        className="Row-s1166su-0 gYiQGp"
+        className="sc-bwzfXH dKHdhw"
       >
         <div
-          className="Col-bi16rv-0 iPdKzp"
+          className="sc-htpNat hvOOpz"
         >
           <div
-            className="Row-s1166su-0 nMSYG"
+            className="sc-bwzfXH hnDOSg"
           >
             <div
-              className="Col-bi16rv-0 cygcwq"
+              className="sc-gzVnrw eWSoAv sc-htpNat cNhtKB"
             >
               <div
-                className="FooterSection__SectionTitle-k2tayx-0 ilsuES"
+                className="sc-bZQynM deEvZT"
               >
                 Candidatos
               </div>
               <div
-                className="Row-s1166su-0 nMSYG"
+                className="sc-bwzfXH hnDOSg"
               >
                 <div
-                  className="Col-bi16rv-0 ggiJSh"
+                  className="sc-htpNat imFLbK"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                    className="sc-ifAKCX jNueRP"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -58,7 +58,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/vagas/"
                     >
                       <a
@@ -68,7 +68,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/vagas/por-area/"
                     >
                       <a
@@ -78,7 +78,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www3.catho.com.br/vag/empregos-maiores-empresas/"
                     >
                       <a
@@ -90,13 +90,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 ggiJSh"
+                  className="sc-htpNat imFLbK"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                    className="sc-ifAKCX jNueRP"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -106,7 +106,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/aviso-vagas/listagem/"
                     >
                       <a
@@ -116,7 +116,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/vagas/"
                     >
                       <a
@@ -126,7 +126,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/profissoes/"
                     >
                       <a
@@ -136,7 +136,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/por-dentro/"
                     >
                       <a
@@ -148,13 +148,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 ggiJSh"
+                  className="sc-htpNat imFLbK"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 dXtdLq"
+                    className="sc-ifAKCX eEypVh"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -164,7 +164,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/https://parceiros.catho.com.br/gop.php?origem=cat&a=6515&p=12&url1=1&url=servicoscatho%2Fcarreira%2Felaboracao-de-curriculo%2F"
                     >
                       <a
@@ -174,7 +174,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6523&p=4&url1=1&url=servicoscatho%2Fcarreira%2Fanalise-de-curriculo%2F"
                     >
                       <a
@@ -184,7 +184,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6527&p=16&url1=1&url=servicoscatho%2Fcarreira%2Fsimulacao-de-entrevista%2F"
                     >
                       <a
@@ -194,7 +194,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://parceiros.catho.com.br/gop.php?origem=cat&a=6519&p=13&url1=1&url=servicoscatho%2Fcarreira%2Fcarta-de-apresentacao%2F"
                     >
                       <a
@@ -204,7 +204,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/servicoscandidatos/"
                     >
                       <a
@@ -216,13 +216,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 ggiJSh"
+                  className="sc-htpNat imFLbK"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                    className="sc-ifAKCX jNueRP"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="title sc-EHOje fflJuh"
                       href="https://www.catho.com.br/carreira-sucesso/"
                     >
                       <a
@@ -234,13 +234,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 ggiJSh"
+                  className="sc-htpNat imFLbK"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                    className="sc-ifAKCX jNueRP"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -250,7 +250,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/cursos-rapidos/"
                     >
                       <a
@@ -260,7 +260,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://cadastro.catho.com.br/"
                     >
                       <a
@@ -270,7 +270,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="/consvirtual/"
                     >
                       <a
@@ -282,13 +282,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 ggiJSh"
+                  className="sc-htpNat imFLbK"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 dXtdLq"
+                    className="sc-ifAKCX eEypVh"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -298,7 +298,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/sac/"
                     >
                       <a
@@ -308,7 +308,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -318,7 +318,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/help/usr/faq_promocao.phtml?home=1&width=650px&height=600px&iframe=true"
                     >
                       <a
@@ -334,30 +334,30 @@ Array [
           </div>
         </div>
         <div
-          className="Col-bi16rv-0 fsOuKR"
+          className="sc-htpNat blblIm"
         >
           <div
-            className="Row-s1166su-0 nMSYG"
+            className="sc-bwzfXH hnDOSg"
           >
             <div
-              className="Col-bi16rv-0 cygcwq"
+              className="sc-gzVnrw eWSoAv sc-htpNat cNhtKB"
             >
               <div
-                className="FooterSection__SectionTitle-k2tayx-0 evUhry"
+                className="sc-bZQynM hqSBDK"
               >
                 Empresas
               </div>
               <div
-                className="Row-s1166su-0 nMSYG"
+                className="sc-bwzfXH hnDOSg"
               >
                 <div
-                  className="Col-bi16rv-0 cygcwq"
+                  className="sc-htpNat cNhtKB"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                    className="sc-ifAKCX kfwupB"
                   >
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://seguro.catho.com.br/inc/novaInclusao/FormPrincipal.php?tipoProd=Vag&c=13006"
                     >
                       <a
@@ -367,7 +367,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/empresas/produtos/"
                     >
                       <a
@@ -377,7 +377,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/empresas/produtos/"
                     >
                       <a
@@ -392,27 +392,27 @@ Array [
             </div>
           </div>
           <div
-            className="Row-s1166su-0 nMSYG"
+            className="sc-bwzfXH hnDOSg"
           >
             <div
-              className="Col-bi16rv-0 cygcwq"
+              className="sc-gzVnrw eWSoAv sc-htpNat cNhtKB"
             >
               <div
-                className="FooterSection__SectionTitle-k2tayx-0 PLWUe"
+                className="sc-bZQynM kfuutU"
               >
                 Cursos
               </div>
               <div
-                className="Row-s1166su-0 nMSYG"
+                className="sc-bwzfXH hnDOSg"
               >
                 <div
-                  className="Col-bi16rv-0 cygcwq"
+                  className="sc-htpNat cNhtKB"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                    className="sc-ifAKCX kfwupB"
                   >
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/educacao/"
                     >
                       <a
@@ -428,30 +428,30 @@ Array [
           </div>
         </div>
         <div
-          className="Col-bi16rv-0 fsOuKR"
+          className="sc-htpNat blblIm"
         >
           <div
-            className="Row-s1166su-0 nMSYG"
+            className="sc-bwzfXH hnDOSg"
           >
             <div
-              className="Col-bi16rv-0 cygcwq"
+              className="sc-gzVnrw eWSoAv sc-htpNat cNhtKB"
             >
               <div
-                className="FooterSection__SectionTitle-k2tayx-0 cljqre"
+                className="sc-bZQynM dlwVDl"
               >
                 Institucional
               </div>
               <div
-                className="Row-s1166su-0 nMSYG"
+                className="sc-bwzfXH hnDOSg"
               >
                 <div
-                  className="Col-bi16rv-0 cygcwq"
+                  className="sc-htpNat cNhtKB"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                    className="sc-ifAKCX kfwupB"
                   >
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/institucional/"
                     >
                       <a
@@ -461,7 +461,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="http://blog.catho.com.br/"
                     >
                       <a
@@ -471,7 +471,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/institucional/category/imprensa/"
                     >
                       <a
@@ -481,7 +481,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/home2009/lib/templates/numerosSite.php?width=700px&height=500px&iframe=true"
                     >
                       <a
@@ -491,7 +491,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/home2009/lib/templates/layer-contrato.php?width=700px&height=350px&iframe=true&siteNovoIframe=1"
                     >
                       <a
@@ -501,7 +501,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/empregos/catho_online"
                     >
                       <a
@@ -511,7 +511,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/publicidade/"
                     >
                       <a
@@ -521,7 +521,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/7dias/indique.php?home=1?width=700px&height=500px%&iframe=true"
                     >
                       <a
@@ -531,7 +531,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/home2009/layer-opine.php?width=600px&height=350px&iframe=true&url=/"
                     >
                       <a
@@ -541,7 +541,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/mapa/"
                     >
                       <a
@@ -551,7 +551,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.catho.com.br/catho-fipe/"
                     >
                       <a
@@ -567,25 +567,25 @@ Array [
           </div>
         </div>
         <div
-          className="Footer__StampsHolder-pmu52a-1 fkCQwt Col-bi16rv-0 cygcwq"
+          className="sc-VigVT dKJjzF sc-htpNat cNhtKB"
         >
           <div
-            className="Row-s1166su-0 nMSYG"
+            className="sc-bwzfXH hnDOSg"
           >
             <div
-              className="Col-bi16rv-0 cygcwq"
+              className="sc-gzVnrw eWSoAv sc-htpNat cNhtKB"
             >
               <div
-                className="Row-s1166su-0 nMSYG"
+                className="sc-bwzfXH hnDOSg"
               >
                 <div
-                  className="Col-bi16rv-0 fVDuxN"
+                  className="sc-htpNat cLwSsx"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                    className="sc-ifAKCX jNueRP"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -595,7 +595,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 brGLIK"
+                      className="sc-EHOje kIXNNC"
                       href={null}
                     >
                       <a
@@ -603,7 +603,7 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/selos.png"
+                          src="undefined/ms/fragments-footer/static/selos.png"
                           width={null}
                         />
                       </a>
@@ -611,13 +611,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 fVDuxN"
+                  className="sc-htpNat cLwSsx"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                    className="sc-ifAKCX jNueRP"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -627,7 +627,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="http://www.websiteprotegido.com.br/9d73e1e78a9300b3924c7ad1c33aea5fa89b8b29"
                     >
                       <a
@@ -635,13 +635,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/website-protegido.png"
+                          src="undefined/ms/fragments-footer/static/website-protegido.png"
                           width={null}
                         />
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 brGLIK"
+                      className="sc-EHOje kIXNNC"
                       href={null}
                     >
                       <a
@@ -649,13 +649,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/verisign.png"
+                          src="undefined/ms/fragments-footer/static/verisign.png"
                           width={null}
                         />
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 brGLIK"
+                      className="sc-EHOje kIXNNC"
                       href={null}
                     >
                       <a
@@ -663,7 +663,7 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/certisign.png"
+                          src="undefined/ms/fragments-footer/static/certisign.png"
                           width={null}
                         />
                       </a>
@@ -671,13 +671,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 fVDuxN"
+                  className="sc-htpNat cLwSsx"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 hlSXJ"
+                    className="sc-ifAKCX jNueRP"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -687,7 +687,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="https://www.facebook.com/catho.com.br"
                     >
                       <a
@@ -695,13 +695,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/facebook.png"
+                          src="undefined/ms/fragments-footer/static/facebook.png"
                           width={null}
                         />
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="https://twitter.com/Catho"
                     >
                       <a
@@ -709,13 +709,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/twitter.png"
+                          src="undefined/ms/fragments-footer/static/twitter.png"
                           width={null}
                         />
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="http://www.youtube.com/user/Cathonoticias"
                     >
                       <a
@@ -723,13 +723,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/linkedin.png"
+                          src="undefined/ms/fragments-footer/static/linkedin.png"
                           width={null}
                         />
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="http://www.youtube.com/user/Cathonoticias"
                     >
                       <a
@@ -737,13 +737,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/youtube.png"
+                          src="undefined/ms/fragments-footer/static/youtube.png"
                           width={null}
                         />
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="https://plus.google.com/+catho"
                     >
                       <a
@@ -751,13 +751,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/googlePlus.png"
+                          src="undefined/ms/fragments-footer/static/googlePlus.png"
                           width={null}
                         />
                       </a>
                     </li>
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -767,7 +767,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="https://play.google.com/store/apps/details?id=br.com.appfactory.catho&hl=pt_BR"
                     >
                       <a
@@ -775,13 +775,13 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/playStore.png"
+                          src="undefined/ms/fragments-footer/static/playStore.png"
                           width="90px"
                         />
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kHTwOt"
+                      className="sc-EHOje cOPeQL"
                       href="https://itunes.apple.com/br/app/vagas-de-emprego-catho/id549669768?mt=8"
                     >
                       <a
@@ -789,7 +789,7 @@ Array [
                       >
                         <img
                           alt={null}
-                          src="/ms/fragments-footer/static/appStore.png"
+                          src="undefined/ms/fragments-footer/static/appStore.png"
                           width="100px"
                         />
                       </a>
@@ -797,13 +797,13 @@ Array [
                   </ul>
                 </div>
                 <div
-                  className="Col-bi16rv-0 fVDuxN"
+                  className="sc-htpNat cLwSsx"
                 >
                   <ul
-                    className="FooterLinkGroup__LinkGroup-s2tx9sw-0 dXtdLq"
+                    className="sc-ifAKCX eEypVh"
                   >
                     <li
-                      className="title FooterLinkGroup__LinkItem-s2tx9sw-1 jQiaDe"
+                      className="title sc-EHOje ifSsrj"
                       href={null}
                     >
                       <a
@@ -813,7 +813,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="http://www.babajob.com"
                     >
                       <a
@@ -823,7 +823,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="http://www.bdjobs.com"
                     >
                       <a
@@ -833,7 +833,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="https://www.brightermonday.com"
                     >
                       <a
@@ -843,7 +843,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="http://www.jobberman.com"
                     >
                       <a
@@ -853,14 +853,14 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                      className="sc-EHOje fflJuh"
                       href="#"
                     >
                       <ul
-                        className="FooterLinkGroup__LinkGroup-s2tx9sw-0 iDWEUp"
+                        className="sc-ifAKCX kfwupB"
                       >
                         <li
-                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          className="hidden sc-EHOje fflJuh"
                           href="http://www.jobsdb.com"
                         >
                           <a
@@ -871,7 +871,7 @@ Array [
                           </a>
                         </li>
                         <li
-                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          className="hidden sc-EHOje fflJuh"
                           href="http://www.jobstreet.com"
                         >
                           <a
@@ -882,7 +882,7 @@ Array [
                           </a>
                         </li>
                         <li
-                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          className="hidden sc-EHOje fflJuh"
                           href="https://br.jora.com/"
                         >
                           <a
@@ -893,7 +893,7 @@ Array [
                           </a>
                         </li>
                         <li
-                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          className="hidden sc-EHOje fflJuh"
                           href="https://www.jora.com"
                         >
                           <a
@@ -904,7 +904,7 @@ Array [
                           </a>
                         </li>
                         <li
-                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          className="hidden sc-EHOje fflJuh"
                           href="https://www.occ.com.mx"
                         >
                           <a
@@ -915,7 +915,7 @@ Array [
                           </a>
                         </li>
                         <li
-                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          className="hidden sc-EHOje fflJuh"
                           href="https://www.workana.com"
                         >
                           <a
@@ -926,7 +926,7 @@ Array [
                           </a>
                         </li>
                         <li
-                          className="hidden FooterLinkGroup__LinkItem-s2tx9sw-1 kfzyiC"
+                          className="hidden sc-EHOje fflJuh"
                           href="http://www.zhaopin.com"
                         >
                           <a
@@ -953,29 +953,29 @@ Array [
     </div>
   </div>,
   <div
-    className="FooterBar__FooterBarContainer-s17byu91-1 eJjuco Container-v8sf5n-0 fmnGah"
+    className="sc-dnqmqq kZBygo sc-bdVaJa OkJiS"
   >
     <div
-      className="Row-s1166su-0 gYiQGp"
+      className="sc-bwzfXH dKHdhw"
     >
       <div
-        className="Col-bi16rv-0 cygcwq"
+        className="sc-htpNat cNhtKB"
       >
         <div
-          className="FooterBar__FooterBarContainer-s17byu91-1 ceWCwv Container-v8sf5n-0 gUDuIj"
+          className="sc-dnqmqq fxeYlP sc-bdVaJa cSQWIE"
         >
           <div
-            className="Row-s1166su-0 gYiQGp"
+            className="sc-bwzfXH dKHdhw"
           >
             <div
-              className="FooterBar__ColFlex-s17byu91-2 guzMgG Col-bi16rv-0 cygcwq"
+              className="sc-iwsKbI jLaKUM sc-htpNat cNhtKB"
             >
               <img
                 alt="Catho logo"
-                src="/ms/fragments-footer/static/cathoFooter.png"
+                src="undefined/ms/fragments-footer/static/cathoFooter.png"
               />
               <div
-                className="FooterBar__CathoFooterInfo-s17byu91-0 gKBNxD"
+                className="sc-htoDjs fLMGMw"
               >
                 Catho Online Ltda. CNPJ: 03.753.088/0001-00 Alameda Juari, 262a - Barueri, SP - 06460-090
                 <a
