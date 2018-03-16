@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider, injectGlobal } from 'styled-components';
+import cookie from 'react-cookies'
 import axios from 'axios';
 import HeaderBar from './sub-components/HeaderBar';
 import PromotionBar from './sub-components/PromotionBar';
 import Menu from './sub-components/Menu';
 import { BREAKPOINTS } from '../../components/Grid';
 import dataSource from '../../components/Header/data';
-
 
 /* eslint no-unused-expressions: ["error", { "allowTaggedTemplates": true }] */
 injectGlobal`
@@ -35,6 +35,10 @@ class Header extends React.Component {
       menuOpened: null,
       loginOpened: false,
       showPromotion: false,
+      promotion: {
+        city: null,
+        state: null,
+      },
     };
   }
 
@@ -73,11 +77,17 @@ class Header extends React.Component {
   }
 
   async fetchPromotion() {
-    try {
-      const { data } = await axios(`${process.env.DOMAIN}${process.env.APPLICATION_PATH}/api/trials`);
-      this.setState({ showPromotion: data });
-    } catch (error) {
-      process.stderr.write(error);
+    const regionalizacao = cookie.load('regionalizacao');
+    
+    if (regionalizacao) {
+      const [city, state] = regionalizacao.split("_");
+
+      try {
+        const {data} = await axios.get(`http://home.vs/proxy-trials/?city=${city}&state=${state}`);
+        this.setState({ showPromotion: data });
+      } catch (error) {
+        process.stderr.write(error);
+      }
     }
   }
 
