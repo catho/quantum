@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
+    "lint": "eslint ./components/** --ext .js --ext .jsx",
     "prepush": "yarn lint"
   },
   "repository": {
@@ -22,21 +23,33 @@
   "author": "Watchmen",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.2",
     "react-test-renderer": "^16.2.0"
   },
   "dependencies": {
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-info": "^3.3.15",
+    "@storybook/addon-links": "^3.3.15",
+    "@storybook/addons": "^3.3.15",
+    "@storybook/react": "^3.3.15",
     "axios": "^0.18.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-polyfill": "^6.26.0",
     "dotenv-webpack": "^1.5.5",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-cookies": "^0.1.0",
     "react-dom": "^16.2.0",

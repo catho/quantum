@@ -6,7 +6,6 @@ import cookie from 'react-cookies';
 
 import Header from './Header';
 import PromotionBar from './sub-components/PromotionBar';
-import data from './data';
 
 Enzyme.configure({ adapter: new Adapter() });
 jest.mock('axios', () => jest.fn(() => Promise.resolve({ data: true })));

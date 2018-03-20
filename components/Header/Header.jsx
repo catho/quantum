@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider, injectGlobal } from 'styled-components';
-import cookie from 'react-cookies'
+import cookie from 'react-cookies';
 import axios from 'axios';
 import HeaderBar from './sub-components/HeaderBar';
 import PromotionBar from './sub-components/PromotionBar';
@@ -76,7 +76,7 @@ class Header extends React.Component {
     const regionalizacao = cookie.load('regionalizacao');
 
     if (regionalizacao) {
-      const [ city, state ] = regionalizacao.split("_");
+      const [city, state] = regionalizacao.split('_');
 
       try {
         const { data } = await axios(`http://home.vs/proxy-trials/?city=${city}&state=${state}`);
