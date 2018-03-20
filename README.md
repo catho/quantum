@@ -18,7 +18,7 @@ npm install @cathodevel/style-guide
 To use a component, it need to be imported in your project:
 
 ```js
-import Header from 'style-guide/Header';
+import { Header } from '@cathodevel/style-guide';
 ```
 
 ## Component creation
