@@ -24,6 +24,12 @@ import { Header } from '@cathodevel/style-guide';
 ## Component creation
 To start create a component, you should use the [component cli](http://gitlab.devel/frontend-platform/component-cli) tool, wich apply a default file structure defined by frontend platform team.
 
+## Generate a build version
+After create a component, it's necessary to generate a build version to be published on the registry. To do that, run the following command:
+
+```
+yarn build
+```
 
 ## Contributing
 

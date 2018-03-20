@@ -4,6 +4,7 @@ require('webpack');
 
 module.exports = {
   entry: ['babel-polyfill', path.join(__dirname, 'index.js')],
+  target: 'node',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'index.js',
