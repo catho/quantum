@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'index.js',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
   },
   module: {
     rules: [{
@@ -17,14 +17,15 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ["env", "stage-1", "react"]
-      }
+        presets: ['env', 'stage-1', 'react'],
+      },
     }],
   },
   plugins: [
     new Dotenv(),
   ],
   resolve: {
-    extensions: [".jsx", ".js"]
-  }
+    extensions: ['.jsx', '.js'],
+  },
 };
+
