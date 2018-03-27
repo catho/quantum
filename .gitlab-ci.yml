@@ -1,5 +1,6 @@
 before_script:
   - cp .env.example .env
+  - whoami
   - yarn install
 
 cache:
