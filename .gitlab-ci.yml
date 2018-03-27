@@ -11,21 +11,21 @@ storybook:
   script:
     - yarn build-storybook
   tags:
-    - sh
+    - style
 
 jest:
   stage: test
   script:
     - yarn coverage
   tags:
-    - sh
+    - style
 
 eslint:
   stage: test
   script:
     - yarn lint
   tags:
-    - sh
+    - style
 
 pages:
   stage: deploy
