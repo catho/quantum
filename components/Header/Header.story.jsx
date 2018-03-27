@@ -8,7 +8,6 @@ import { withKnobs, select } from '@storybook/addon-knobs/react';
 const stories = storiesOf('Header', module);
 stories.addDecorator(withKnobs);
 
-const label = 'Path';
 const options = {
   '/': 'candidatos',
   'https://www.catho.com.br/empresa/': 'empresas',
@@ -22,7 +21,7 @@ stories.add(
   withInfo('This is a basic usage of the Header component')(() => (
     <Header
       data={data}
-      path={select(label, options, defaultValue, groupId)}
+      path={select('Path', options, defaultValue, groupId)}
     />)),
 );
 
