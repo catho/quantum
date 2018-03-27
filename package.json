@@ -26,7 +26,9 @@
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-knobs": "^3.3.15",
     "@storybook/addon-links": "^3.3.15",
+    "@storybook/addon-options": "^3.3.15",
     "@storybook/addons": "^3.3.15",
     "@storybook/react": "^3.3.15",
     "babel-eslint": "^8.2.2",
@@ -42,7 +44,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.2",
-    "react-test-renderer": "^16.2.0"
+    "react-test-renderer": "^16.2.0",
+    "storybook-readme": "^3.3.0"
   },
   "dependencies": {
     "@storybook/addon-actions": "^3.3.15",
