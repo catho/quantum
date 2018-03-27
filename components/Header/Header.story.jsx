@@ -5,7 +5,7 @@ import Header from './Header';
 import data from './data';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
 
-const stories = storiesOf('Header', module);
+const stories = storiesOf('2. SmartComponents', module);
 stories.addDecorator(withKnobs);
 
 const label = 'Path';

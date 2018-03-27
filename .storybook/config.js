@@ -1,10 +1,18 @@
 import { configure } from '@storybook/react';
+import { setOptions } from '@storybook/addon-options';
 import 'babel-polyfill';
 
-// automatically import all files ending in *.stories.js
-const req = require.context('../components', true, /.story.jsx?$/);
+setOptions({
+  name: 'Catho Style-Guide',
+  sortStoriesByKind: true
+});
+
+const reqComponents = require.context('../stories', true, /.story.jsx?$/);
+const reqStories = require.context('../components', true, /.story.jsx?$/);
+
 function loadStories() {
-  req.keys().forEach((filename) => req(filename));
+  reqComponents.keys().forEach((filename) => reqComponents(filename));
+  reqStories.keys().forEach((filename) => reqStories(filename));
 }
 
 configure(loadStories, module);
