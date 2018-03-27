@@ -2,6 +2,9 @@
 
 This is the default pack of components and layout principles that dictates Catho Frontend applications.
 
+[![build status](http://gitlab.devel/frontend-platform/style-guide/badges/master/build.svg)](http://gitlab.devel/frontend-platform/style-guide/commits/master)
+[![coverage report](http://gitlab.devel/frontend-platform/style-guide/badges/master/coverage.svg)](http://gitlab.devel/frontend-platform/style-guide/commits/master)
+
 ## Instalation & Usage
 
 To install the style guide, you must add a .npmrc file at project root with this content:
