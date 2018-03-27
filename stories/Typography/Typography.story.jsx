@@ -1,14 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
+import Typography from './Example';
+import Frame from '../Frame';
 
-setOptions({
-  showAddonPanel: true,
-});
-
-storiesOf(' Introduction', module)
-  .add('Default', () => (
-    <div>
+storiesOf('1. Layout', module)
+  .add('Typography', () => (
+    <Frame>
       { setOptions({ showAddonPanel: false }) }
-      Hello Button
-    </div>));
+      <Typography/>
+    </Frame>
+));

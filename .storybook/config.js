@@ -4,7 +4,9 @@ import 'babel-polyfill';
 
 setOptions({
   name: 'Catho Style-Guide',
-  sortStoriesByKind: true
+  sortStoriesByKind: true,
+  addonPanelInRight: false,
+  selectedAddonPanel: '@storybook/addon-knobs'
 });
 
 const reqComponents = require.context('../stories', true, /.story.jsx?$/);
