@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
 
+import HowToImport from '../../.storybook/HowToImport';
 import RightPanel from '../../.storybook/RightPanel';
 import Header from './Header';
 import data from './data';
@@ -16,10 +17,11 @@ const defaultValue = '/';
 const groupId = 'GROUP-ID1';
 
 storiesOf('2. SmartComponents', module)
+  .addDecorator(HowToImport)
   .addDecorator(RightPanel)
   .addDecorator(withKnobs)
   .add(
-    'Header component',
+    'Header',
     withInfo('This is a basic usage of the Header component')(() => (
       <Header
         data={data}
