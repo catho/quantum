@@ -1,15 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import ColorPallete from '../components/Colors';
+
 import 'highlight.js/styles/default.css';
 
-const HowToImport = (storyFn, { story }) => (
+const Button = styled.button`
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: ${ColorPallete.PRIMARY.BLUE.WINDOWS};
+
+  &:hover {
+    color: ${ColorPallete.PRIMARY.BLUE.CORNFLOWER};
+  }
+`
+
+const HowToImport = (storyFn, { story }) => {
+
+  const msg = `import ${'{'} ${ story.replace(' ', '') } ${'}'} from '@cathodevel/style-guide';`;
+
+  return (
   <React.Fragment>
+    <CopyToClipboard text={msg}>
+      <Button>Copy to clipboard</Button>
+    </CopyToClipboard>
     <Highlight language="javascript" className="highlight">
-      import {'{'} { story.replace(' ', '') } {'}'} from '@cathodevel/style-guide';
+      { msg }
     </Highlight>
     { storyFn() }
   </React.Fragment>
-);
+  )
+};
 
 export default HowToImport;

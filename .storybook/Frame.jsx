@@ -20,6 +20,14 @@ injectGlobal`
     font-family: Introbook;
   }
 
+  *:focus {
+    outline: none;
+  }
+
+  pre {
+    margin-bottom: 0;
+  }
+
   .highlight {
     padding: 20px !important;
   }
