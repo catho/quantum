@@ -23,12 +23,12 @@ const HowToImport = (storyFn, { story }) => {
 
   return (
   <React.Fragment>
-    <CopyToClipboard text={msg}>
-      <Button>Copy to clipboard</Button>
-    </CopyToClipboard>
     <Highlight language="javascript" className="highlight">
       { msg }
     </Highlight>
+    <CopyToClipboard text={msg}>
+      <Button>Copy to clipboard</Button>
+    </CopyToClipboard>
     { storyFn() }
   </React.Fragment>
   )
