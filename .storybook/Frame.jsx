@@ -1,8 +1,12 @@
 import React from 'react';
-import { injectGlobal } from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 import { setOptions } from '@storybook/addon-options';
 
 import Heading from './Heading';
+
+const Container = styled.div`
+  padding: 10px 20px;
+`;
 
 injectGlobal`
   @font-face {
@@ -15,6 +19,10 @@ injectGlobal`
     padding: 0;
     font-family: Introbook;
   }
+
+  .highlight {
+    padding: 20px !important;
+  }
 `;
 
 const options = {
@@ -26,7 +34,9 @@ const Frame = (storyFn, { story }) => (
   <React.Fragment>
     <Heading title={story} />
     { setOptions(options) }
-    { storyFn() }
+    <Container>
+      { storyFn() }
+    </Container>
   </React.Fragment>
 );
 

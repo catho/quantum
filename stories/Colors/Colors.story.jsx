@@ -5,4 +5,4 @@ import ColorsExample from './Example';
 
 storiesOf('1. Layout', module)
   .addDecorator(HowToImport)
-  .add('Color palette', () => <ColorsExample />);
+  .add('Color Palette', () => <ColorsExample />);
