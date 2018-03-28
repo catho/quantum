@@ -9,6 +9,5 @@ setOptions({
 storiesOf(' Introduction', module)
   .add('Default', () => (
     <div>
-      { setOptions({ showAddonPanel: false }) }
       Hello Button
     </div>));

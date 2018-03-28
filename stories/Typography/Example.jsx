@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading, Container } from '../CommonStyled';
+import { Container } from '../CommonStyled';
 
 const colors = {
   'peacock-blue': '#005da4',
@@ -60,7 +60,6 @@ const Li = styled.li`
 
 const Typography = () => (
   <React.Fragment>
-    <Heading>Typography</Heading>
     <Container>
       <p><strong>Introbook</strong> is the standard typeface for Catho on the web</p>
 

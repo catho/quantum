@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Colors from '../../components/Colors';
-import { Heading, Container } from '../CommonStyled';
+import { Container } from '../CommonStyled';
 
 export default () => (
   <React.Fragment>
-    <Heading>Color palette</Heading>
     <Container>
       <p>You are seing <strong>Candidates</strong> standard color palette for Catho on the web</p>
 
@@ -20,7 +19,7 @@ export default () => (
                     <ColorBox key={hex} colorGroup={child} colorHex={hex}>
                       <CopyToClipboard text={hex}>
                         <ColorMessage colorHex={hex}>
-                          Copy to hex
+                          Copy hex
                         </ColorMessage>
                       </CopyToClipboard>
 
@@ -89,7 +88,7 @@ const ColorBox = styled.li`
   cursor: pointer;
   width: 100%;
   height: 85px;
-  color: ${props => (props.colorGroup === 'gray' ? '#333333' : '#FFFFFF')};
+  color: ${props => (props.colorGroup === 'GRAY' ? '#333333' : '#FFFFFF')};
   position:relative;
 
   &:first-child {

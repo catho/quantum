@@ -1,7 +1,9 @@
 import React from 'react';
 import { injectGlobal } from 'styled-components';
+import { setOptions } from '@storybook/addon-options';
 
-/* eslint no-unused-expressions: ["error", { "allowTaggedTemplates": true }] */
+import Heading from './Heading';
+
 injectGlobal`
   @font-face {
     font-family: Introbook;
@@ -15,9 +17,16 @@ injectGlobal`
   }
 `;
 
-const Frame = ({ children }) => (
+const options = {
+  showAddonPanel: false,
+  addonPanelInRight: false,
+};
+
+const Frame = (storyFn, { story }) => (
   <React.Fragment>
-    {children}
+    <Heading title={story} />
+    { setOptions(options) }
+    { storyFn() }
   </React.Fragment>
 );
 
