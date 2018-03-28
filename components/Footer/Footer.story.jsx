@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import HowToImport from '../../.storybook/HowToImport';
+import HowToImport from '../../.storybook/decorators/HowToImport';
 import Footer from './Footer';
 
 const stories = storiesOf('2. SmartComponents', module);

@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
 
-import HowToImport from '../../.storybook/HowToImport';
-import RightPanel from '../../.storybook/RightPanel';
+import HowToImport from '../../.storybook/decorators/HowToImport';
+import RightPanel from '../../.storybook/decorators/RightPanel';
 import Header from './Header';
 import data from './data';
 

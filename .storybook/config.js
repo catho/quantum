@@ -1,8 +1,8 @@
+import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
-import 'babel-polyfill';
 
-import Frame from './Frame';
+import Frame from './decorators/Frame';
 
 setOptions({
   name: 'Catho Style-Guide',

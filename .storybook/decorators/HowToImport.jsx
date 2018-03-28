@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import ColorPallete from '../components/Colors';
+import ColorPallete from '../../components/Colors';
 
 import 'highlight.js/styles/default.css';
 
