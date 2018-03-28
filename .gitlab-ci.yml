@@ -1,7 +1,7 @@
 before_script:
   - cp .env.example .env
   - whoami
-  - sudo yarn install
+  - yarn install
 
 cache:
   paths:
@@ -10,21 +10,21 @@ cache:
 storybook:
   stage: build
   script:
-    - sudo yarn build-storybook
+    - yarn build-storybook
   tags:
     - style
 
 jest:
   stage: test
   script:
-    - sudo yarn coverage
+    - yarn coverage
   tags:
     - style
 
 eslint:
   stage: test
   script:
-    - sudo yarn lint
+    - yarn lint
   tags:
     - style
 
