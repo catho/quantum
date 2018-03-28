@@ -28,6 +28,12 @@ injectGlobal`
     margin-bottom: 0;
   }
 
+  code {
+    background-color: #f9f2f4;
+    color: #c7254e;
+    padding: 5px;
+  }
+
   .highlight {
     padding: 20px !important;
   }

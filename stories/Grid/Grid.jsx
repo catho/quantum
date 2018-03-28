@@ -1,12 +1,37 @@
 import React from 'react';
 import Highlight from 'react-highlight';
 import styled, { css } from 'styled-components';
-import { Row, Col } from '../../components/Grid';
+import ColorPalette from '../../components/Colors';
+import { Container, Row, Col } from '../../components/Grid';
 
 import 'highlight.js/styles/default.css';
 
-const SharedTableStyles = css`
-  
+const StyledTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+  }
+`;
+
+const StyledRow = styled(Row)`
+  margin-bottom: 10px;
+`;
+
+const StyledCol = styled(Col)`
+  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+  border: 1px solid ${ColorPalette.NEUTRAL.GRAY.GREYISH};
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 `;
 
 const Grid = () => (
@@ -15,7 +40,7 @@ const Grid = () => (
       If you are familiar with bootstrap 3, you can easily understand ours.
     </p>
     <p>
-      <table>
+      <StyledTable>
         <thead>
           <tr>
             <th>Grid</th>
@@ -44,14 +69,14 @@ const Grid = () => (
             <td> - </td>
           </tr>
         </tbody>
-      </table>
+      </StyledTable>
 
     </p>
     <h2>How it works</h2>
     <hr />
     <h3>Containers</h3>
     <p>You may choose one of two containers or both to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
-    <p>Use {`<Container></Container>`} for a responsive fixed width container.</p>
+    <p>Use <code>{`<Container></Container>`}</code> for a responsive fixed width container.</p>
     <Highlight language="javascript" className="highlight">
       {
 `
@@ -61,7 +86,7 @@ const Grid = () => (
 `
       }
     </Highlight>
-    <p>Use {`<Container fluid></Container>`} for a full width container, spanning the entire width of your viewport.</p>
+    <p>Use <code>{`<Container fluid></Container>`}</code> for a full width container, spanning the entire width of your viewport.</p>
     <Highlight language="javascript" className="highlight">
       {
 `
@@ -77,15 +102,15 @@ const Grid = () => (
       The grid system appropriately scales up to 12 columns as the device or viewport size increases.
       It includes predefined viewports, they are:
     </p>
-    <table>
+    <StyledTable>
       <thead>
         <tr>
           <th></th>
-          <th>Phone <small>(&lt;320px)</small> </th>
-          <th>Tablet <small>{`(>=321px <=768px)`}</small> </th>
-          <th>Desktop <small>{`(>=769px <=980px)`}</small> </th>
-          <th>Large <small>{`(>=981px <=1280px)`}</small> </th>
-          <th>HD <small>{`(>=1281px <=1440px)`}</small> </th>
+          <th>Phone <small>{`(<768px)`}</small> </th>
+          <th>Tablet <small>{`(>=768px)`}</small> </th>
+          <th>Desktop <small>{`(>=980px)`}</small> </th>
+          <th>Large <small>{`(>=1280px)`}</small> </th>
+          <th>HD <small>{`(>=1440px)`}</small> </th>
         </tr>
       </thead>
       <tbody>
@@ -107,88 +132,131 @@ const Grid = () => (
         </tr>
         <tr>
           <th scope="row">Nestable</th>
-          <td colspan="4">Yes</td>
+          <td colspan="5">Yes</td>
         </tr>
         <tr>
           <th scope="row">Offsets</th>
-          <td colspan="4">Soon...</td>
+          <td colspan="5">Soon...</td>
         </tr>
         <tr>
           <th scope="row">Column ordering</th>
-          <td colspan="4">Soon...</td>
+          <td colspan="5">Soon...</td>
         </tr>
       </tbody>
-    </table>
+    </StyledTable>
     <h2>Example: Stacked-to-horizontal</h2>
     <hr/>
-    <p>You can create a basic grid system that starts out stacked on mobile devices and tablet devices before becoming horizontal on desktop devices. Place grid columns in any {`<Row>`}</p>
+    <p>You can create a basic grid system that starts out stacked on mobile devices and tablet devices before becoming horizontal on desktop devices. Place grid columns in any <code>{`<Row>`}</code></p>
 
-    <Row>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
-    </Row>
+    <Container fluid>
+      <StyledRow>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+        <StyledCol tablet={1}>{`<Col tablet={1}>`}</StyledCol>
+      </StyledRow>
 
-    <Row>
-      <Col phone={8}>phone 8</Col>
-      <Col phone={4}>phone 4</Col>
-    </Row>
+      <StyledRow>
+        <StyledCol tablet={8}>{`<Col tablet={8}>`}</StyledCol>
+        <StyledCol tablet={4}>{`<Col tablet={4}>`}</StyledCol>
+      </StyledRow>
 
-    <Row>
-      <Col phone={4}>phone 4</Col>
-      <Col phone={4}>phone 4</Col>
-      <Col phone={4}>phone 4</Col>
-    </Row>
+      <StyledRow>
+        <StyledCol tablet={4}>{`<Col tablet={4}>`}</StyledCol>
+        <StyledCol tablet={4}>{`<Col tablet={4}>`}</StyledCol>
+        <StyledCol tablet={4}>{`<Col tablet={4}>`}</StyledCol>
+      </StyledRow>
 
-    <Row>
-      <Col phone={6}>phone 6</Col>
-      <Col phone={6}>phone 6</Col>
-    </Row>
+      <StyledRow>
+        <StyledCol tablet={6}>{`<Col tablet={6}>`}</StyledCol>
+        <StyledCol tablet={6}>{`<Col tablet={6}>`}</StyledCol>
+      </StyledRow>
+    </Container>
 
     <Highlight language="javascript" className="highlight">
       {`
 <Row>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
-  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col></Col>
 </Row>
 
 <Row>
-  <Col phone={8}>phone 8</Col>
-  <Col phone={4}>phone 4</Col>
+  <Col tablet={8}>...</Col>
+  <Col tablet={4}>...</Col>
 </Row>
 
 <Row>
-  <Col phone={4}>phone 4</Col>
-  <Col phone={4}>phone 4</Col>
-  <Col phone={4}>phone 4</Col>
+  <Col tablet={4}>...</Col>
+  <Col tablet={4}>...</Col>
+  <Col tablet={4}>...</Col>
 </Row>
 
 <Row>
-  <Col phone={6}>phone 6</Col>
-  <Col phone={6}>phone 6</Col>
+  <Col tablet={6}>...</Col>
+  <Col tablet={6}>...</Col>
 </Row>
       `}
     </Highlight>
 
+    <h2>Example: Mobile and desktop</h2>
+    <hr/>
+    <p>Don't want your columns to simply stack in smaller devices? Use the phone and tablet device grid props by adding <code>{'phone={*}'}</code> <code>{'tablet={*}'}</code> to your columns. See the example below for a better idea of how it all works.</p>
+
+    <Container fluid>
+      <StyledRow>
+        <StyledCol phone={12} tablet={8}>{`<Col phone={12} tablet={8}>`}</StyledCol>
+        <StyledCol phone={6} tablet={4}>{`<Col phone={6} tablet={4}>`}</StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol phone={6} tablet={4}>{`<Col phone={6} tablet={4}>`}</StyledCol>
+        <StyledCol phone={6} tablet={4}>{`<Col phone={6} tablet={4}>`}</StyledCol>
+        <StyledCol phone={6} tablet={4}>{`<Col phone={6} tablet={4}>`}</StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol phone={6}>{`<Col phone={6}>`}</StyledCol>
+        <StyledCol phone={6}>{`<Col phone={6}>`}</StyledCol>
+      </StyledRow>
+    </Container>
+
+    <Highlight language="javascript" className="highlight">
+      {`
+<Row>
+  <Col phone={12} tablet={8}>...</Col>
+  <Col phone={6} tablet={4}>...</Col>
+</Row>
+
+<Row>
+  <Col phone={6} tablet={4}>...</Col>
+  <Col phone={6} tablet={4}>...</Col>
+  <Col phone={6} tablet={4}>...</Col>
+</Row>
+
+<Row>
+  <Col phone={6}>...</Col>
+  <Col phone={6}>...</Col>
+</Row>
+      `}
+    </Highlight>
 
   </React.Fragment>
 );
