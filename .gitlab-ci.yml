@@ -10,21 +10,21 @@ cache:
 storybook:
   stage: build
   script:
-    - yarn build-storybook
+    - sudo yarn build-storybook
   tags:
     - style
 
 jest:
   stage: test
   script:
-    - yarn coverage
+    - sudo yarn coverage
   tags:
     - style
 
 eslint:
   stage: test
   script:
-    - yarn lint
+    - sudo yarn lint
   tags:
     - style
 
