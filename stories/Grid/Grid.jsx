@@ -1,5 +1,13 @@
 import React from 'react';
+import Highlight from 'react-highlight';
+import styled, { css } from 'styled-components';
 import { Row, Col } from '../../components/Grid';
+
+import 'highlight.js/styles/default.css';
+
+const SharedTableStyles = css`
+  
+`;
 
 const Grid = () => (
   <React.Fragment>
@@ -41,13 +49,38 @@ const Grid = () => (
     </p>
     <h2>How it works</h2>
     <hr />
+    <h3>Containers</h3>
+    <p>You may choose one of two containers or both to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
+    <p>Use {`<Container></Container>`} for a responsive fixed width container.</p>
+    <Highlight language="javascript" className="highlight">
+      {
+`
+  <Container>
+    ...
+  </Container>
+`
+      }
+    </Highlight>
+    <p>Use {`<Container fluid></Container>`} for a full width container, spanning the entire width of your viewport.</p>
+    <Highlight language="javascript" className="highlight">
+      {
+`
+<Container fluid>
+...
+</Container>
+`
+      }
+    </Highlight>
+    <h3>Breakpoints</h3>
+    <hr/>
     <p>
       The grid system appropriately scales up to 12 columns as the device or viewport size increases.
       It includes predefined viewports, they are:
     </p>
-    <table class="table table-bordered table-striped">
+    <table>
       <thead>
         <tr>
+          <th></th>
           <th>Phone <small>(&lt;320px)</small> </th>
           <th>Tablet <small>{`(>=321px <=768px)`}</small> </th>
           <th>Desktop <small>{`(>=769px <=980px)`}</small> </th>
@@ -89,6 +122,72 @@ const Grid = () => (
     <h2>Example: Stacked-to-horizontal</h2>
     <hr/>
     <p>You can create a basic grid system that starts out stacked on mobile devices and tablet devices before becoming horizontal on desktop devices. Place grid columns in any {`<Row>`}</p>
+
+    <Row>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+      <Col phone={1}>{`<Col phone={1}></Col>`}</Col>
+    </Row>
+
+    <Row>
+      <Col phone={8}>phone 8</Col>
+      <Col phone={4}>phone 4</Col>
+    </Row>
+
+    <Row>
+      <Col phone={4}>phone 4</Col>
+      <Col phone={4}>phone 4</Col>
+      <Col phone={4}>phone 4</Col>
+    </Row>
+
+    <Row>
+      <Col phone={6}>phone 6</Col>
+      <Col phone={6}>phone 6</Col>
+    </Row>
+
+    <Highlight language="javascript" className="highlight">
+      {`
+<Row>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+  <Col phone={1}><Col phone={1}></Col></Col>
+</Row>
+
+<Row>
+  <Col phone={8}>phone 8</Col>
+  <Col phone={4}>phone 4</Col>
+</Row>
+
+<Row>
+  <Col phone={4}>phone 4</Col>
+  <Col phone={4}>phone 4</Col>
+  <Col phone={4}>phone 4</Col>
+</Row>
+
+<Row>
+  <Col phone={6}>phone 6</Col>
+  <Col phone={6}>phone 6</Col>
+</Row>
+      `}
+    </Highlight>
 
 
   </React.Fragment>
