@@ -1,13 +1,46 @@
-# This file is a template, and might need editing before it works on your project.
-# Full project: https://gitlab.com/pages/plain-html
+before_script:
+  - cp .env.example .env
+  - yarn install
+
+cache:
+  paths:
+  - node_modules/
+
+storybook:
+  stage: build
+  script:
+    - yarn build-storybook
+    - ls -la
+  artifacts:
+    paths:
+      - storybook-static
+  tags:
+    - style
+  only:
+    - master
+
+jest:
+  stage: test
+  script:
+    - yarn coverage
+  tags:
+    - style
+
+eslint:
+  stage: test
+  script:
+    - yarn lint
+  tags:
+    - style
+
 pages:
   stage: deploy
   script:
-  - mkdir .public
-  - cp -r static/* .public
-  - mv .public public
+    - mkdir .public
+    - cp -r storybook-static/* .public
+    - mv .public public
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
