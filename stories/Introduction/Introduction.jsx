@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Highlight from 'react-highlight';
 import logo from '../static/logo.png';
 import ColorPalette from '../../components/Colors';
 
@@ -28,6 +29,25 @@ const Introduction = () => (
       Styleguide
       <TitleText>The oficial Catho Component Library</TitleText>
     </Title>
+
+    <h2>Usage</h2>
+
+    <p>Create a <code>.npmrc</code> file, with the following content:</p>
+    <Highlight language="javascript" className="highlight">
+      {`@kadira:registry=https://registry.npmjs.org
+registry="http://armazem.devel:4873/`}
+    </Highlight>
+
+    <p>Add as a dependency:</p>
+    <Highlight language="javascript" className="highlight">
+      yarn add @cathodevel/style-guide
+    </Highlight>
+
+    <p>Use in your react project:</p>
+    <Highlight language="javascript" className="highlight">
+      {`import Header from '@cathodevel/style-guide';
+export default () => <Header />;`}
+    </Highlight>
   </React.Fragment>
 );
 
