@@ -14,7 +14,6 @@ storybook:
   artifacts:
     paths:
       - storybook-static
-    expire_in: 1 hour
   tags:
     - style
 
@@ -41,3 +40,5 @@ pages:
   artifacts:
     paths:
       - public
+  only:
+    - master
