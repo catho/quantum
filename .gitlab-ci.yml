@@ -1,16 +1,16 @@
 before_script:
   - cp .env.example .env
-  - whoami
   - yarn install
 
 cache:
   paths:
   - node_modules/
 
-build-storybook:
+storybook:
   stage: build
   script:
     - yarn build-storybook
+    - ls -la
   tags:
     - style
 
@@ -28,7 +28,7 @@ eslint:
   tags:
     - style
 
-deploy-styleguide:
+pages:
   stage: deploy
   script:
     - mkdir .public
