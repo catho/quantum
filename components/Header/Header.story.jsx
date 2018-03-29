@@ -2,11 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
+
+import HowToImport from '../../.storybook/decorators/HowToImport';
+import RightPanel from '../../.storybook/decorators/RightPanel';
 import Header from './Header';
 import data from './data';
-
-const stories = storiesOf('2. SmartComponents', module);
-stories.addDecorator(withKnobs);
 
 const options = {
   '/': 'candidatos',
@@ -16,13 +16,15 @@ const options = {
 const defaultValue = '/';
 const groupId = 'GROUP-ID1';
 
-stories.add(
-  'Header component',
-  withInfo('This is a basic usage of the Header component')(() => (
-    <Header
-      data={data}
-      path={select('Path', options, defaultValue, groupId)}
-    />)),
-);
-
-Header.displayName = 'Header';
+storiesOf('2. SmartComponents', module)
+  .addDecorator(HowToImport)
+  .addDecorator(RightPanel)
+  .addDecorator(withKnobs)
+  .add(
+    'Header',
+    withInfo('This is a basic usage of the Header component')(() => (
+      <Header
+        data={data}
+        path={select('Path', options, defaultValue, groupId)}
+      />)),
+  );
