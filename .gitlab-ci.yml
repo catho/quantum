@@ -10,7 +10,6 @@ storybook:
   stage: build
   script:
     - yarn build-storybook
-    - ls -la
   artifacts:
     paths:
       - storybook-static
