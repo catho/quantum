@@ -16,6 +16,8 @@ storybook:
       - storybook-static
   tags:
     - style
+  only:
+    - master
 
 jest:
   stage: test
