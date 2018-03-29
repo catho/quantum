@@ -1,9 +1,9 @@
 import React from 'react';
-import { storiesOf, action } from '@storybook/react';
+import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
+import { withKnobs, select } from '@storybook/addon-knobs/react';
 import Header from './Header';
 import data from './data';
-import { withKnobs, select } from '@storybook/addon-knobs/react';
 
 const stories = storiesOf('2. SmartComponents', module);
 stories.addDecorator(withKnobs);
