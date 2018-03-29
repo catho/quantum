@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import { setOptions } from '@storybook/addon-options';
+import ColorPalette from '../../components/Colors';
 
 import Heading from './Heading';
 
@@ -36,6 +37,15 @@ injectGlobal`
 
   .highlight {
     padding: 20px !important;
+  }
+
+  h2 {
+    border-bottom: 1px solid ${ColorPalette.NEUTRAL.DARKEYGRAY.WARMGREY};
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    margin-top: 40px;
   }
 `;
 

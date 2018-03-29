@@ -6,7 +6,6 @@ import Colors from '../../components/Colors';
 export default () => (
   <React.Fragment>
     <h2>Candidates Colors</h2>
-    <hr/>
     <ColorPallete>
       {
         Object.keys(Colors).map(item => (
@@ -33,7 +32,7 @@ export default () => (
     </ColorPallete>
 
     <h2>A bit more about Catho colors</h2>
-    <hr />
+
     <p>A sub-divisão das cores da paleta da <strong>Catho</strong> são: primária, secundária, cinzas e social</p>
 
     <h3>Blue</h3>

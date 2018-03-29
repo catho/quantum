@@ -2,7 +2,7 @@ import React from 'react';
 import Highlight from 'react-highlight';
 import styled, { css } from 'styled-components';
 import ColorPalette from '../../components/Colors';
-import { Container, Row, Col } from '../../components/Grid';
+import { Container, Row, Col, Hide } from '../../components/Grid';
 
 import 'highlight.js/styles/default.css';
 
@@ -36,8 +36,11 @@ const StyledCol = styled(Col)`
 
 const Grid = () => (
   <React.Fragment>
+    <Highlight language="javascript" className="highlight">
+      import {'{'} Container, Row, Col, Hide {'}'} from '@cathodevel/style-guide';
+    </Highlight>
     <p>
-      If you are familiar with bootstrap 3, you can easily understand ours.
+      If you are familiar with bootstrap, you can easily understand ours.
     </p>
     <p>
       <StyledTable>
@@ -66,14 +69,13 @@ const Grid = () => (
           </tr>
           <tr>
             <td>hd</td>
-            <td> - </td>
+            <td>xl</td>
           </tr>
         </tbody>
       </StyledTable>
 
     </p>
     <h2>How it works</h2>
-    <hr />
     <h3>Containers</h3>
     <p>You may choose one of two containers or both to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
     <p>Use <code>{`<Container></Container>`}</code> for a responsive fixed width container.</p>
@@ -96,8 +98,13 @@ const Grid = () => (
 `
       }
     </Highlight>
+    <h3>Row</h3>
+    <p>Rows are wrappers for columns. Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.</p>
+
+    <h3>No Gutters</h3>
+    <p>The gutters between columns in our predefined grid styles can be removed with no-gutters prop <code>{'<Row no-gutters>'}</code>. This removes the negative margins from <code>{'<Col>'}</code> and the horizontal padding from all immediate children columns.</p>
+
     <h3>Breakpoints</h3>
-    <hr/>
     <p>
       The grid system appropriately scales up to 12 columns as the device or viewport size increases.
       It includes predefined viewports, they are:
@@ -107,7 +114,7 @@ const Grid = () => (
         <tr>
           <th></th>
           <th>Phone <small>{`(<768px)`}</small> </th>
-          <th>Tablet <small>{`(>=768px)`}</small> </th>
+          <th>Tablet <small>{`(>768px)`}</small> </th>
           <th>Desktop <small>{`(>=980px)`}</small> </th>
           <th>Large <small>{`(>=1280px)`}</small> </th>
           <th>HD <small>{`(>=1440px)`}</small> </th>
@@ -144,8 +151,7 @@ const Grid = () => (
         </tr>
       </tbody>
     </StyledTable>
-    <h2>Example: Stacked-to-horizontal</h2>
-    <hr/>
+    <h3>Example: Stacked-to-horizontal</h3>
     <p>You can create a basic grid system that starts out stacked on mobile devices and tablet devices before becoming horizontal on desktop devices. Place grid columns in any <code>{`<Row>`}</code></p>
 
     <Container fluid>
@@ -216,8 +222,7 @@ const Grid = () => (
       `}
     </Highlight>
 
-    <h2>Example: Mobile and desktop</h2>
-    <hr/>
+    <h3>Example: Mobile and desktop</h3>
     <p>Don't want your columns to simply stack in smaller devices? Use the phone and tablet device grid props by adding <code>{'phone={*}'}</code> <code>{'tablet={*}'}</code> to your columns. See the example below for a better idea of how it all works.</p>
 
     <Container fluid>
@@ -256,6 +261,39 @@ const Grid = () => (
   <Col phone={6}>...</Col>
 </Row>
       `}
+    </Highlight>
+
+    <h3>Hide Component</h3>
+    <p>If you need to hide some elements in your UI, you can use the <code>{'<Hide>'}</code> component.</p>
+    <p><code>{'<Hide>'}</code> receives the same props as the <code>{'<Col>'}</code> component, they are:</p>
+    <ul>
+      <li>phone</li>
+      <li>tablet</li>
+      <li>desktop</li>
+      <li>large</li>
+      <li>hd</li>
+    </ul>
+
+    <h3>Example: Hiding elements in phone devices</h3>
+
+    <Container fluid>
+      <Hide phone>
+        <StyledRow>
+          <StyledCol phone={12} tablet={8}>...</StyledCol>
+          <StyledCol phone={6} tablet={4}>...</StyledCol>
+        </StyledRow>
+      </Hide>
+    </Container>
+
+    <Highlight language="javascript" className="highlight">
+    {`
+<Hide phone>
+  <Row>
+    <Col>...</Col>
+    <Col>...</Col>
+  </Row>
+</Hide>
+    `}
     </Highlight>
 
   </React.Fragment>

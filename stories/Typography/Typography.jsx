@@ -62,7 +62,7 @@ const Typography = () => (
     <p><strong>Introbook</strong> is the standard typeface for Catho on the web</p>
 
     <h2>Headings</h2>
-    <hr />
+
     <table>
       <Tr>
         <Td>h1 <Small>24px</Small></Td>
@@ -87,7 +87,7 @@ const Typography = () => (
     </table>
 
     <h2>Texts</h2>
-    <hr />
+
     <table>
       <Tr>
         <Td>a <Small>inherit</Small></Td>
@@ -104,7 +104,7 @@ const Typography = () => (
     </table>
 
     <h2>Lists</h2>
-    <hr />
+
     <table>
       <Caption>Lists have line-height of 24 pixels.</Caption>
       <Tr>
