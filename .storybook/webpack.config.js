@@ -5,21 +5,22 @@ module.exports = {
     // your custom plugins
   ],
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-        ],
-      },
-    ],
+    rules: [{
+      test: /\.css$/,
+      use: [{
+        loader: 'style-loader',
+      },{
+        loader: 'css-loader',
+        options: {
+          sourceMap: true,
+        },
+      }],
+    }, {
+      test: /\.(png|jpg|gif)$/,
+      use: [{
+        loader: 'file-loader',
+        options: {}
+      }]
+    }],
   },
 };
