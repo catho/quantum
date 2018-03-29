@@ -7,6 +7,13 @@ cache:
   paths:
   - node_modules/
 
+build-storybook:
+  stage: build
+  script:
+    - yarn build-storybook
+  tags:
+    - style
+
 jest:
   stage: test
   script:
@@ -18,13 +25,6 @@ eslint:
   stage: test
   script:
     - yarn lint
-  tags:
-    - style
-
-build-storybook:
-  stage: deploy
-  script:
-    - yarn build-storybook
   tags:
     - style
 
