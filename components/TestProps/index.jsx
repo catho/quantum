@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 /** Componente de Teste */
 class TestProps extends React.Component {
   render() {
-    const {testBool, testString, testNumber} = this.props;
+    const {testBool, testString, testNumber, testOneOf} = this.props;
     return (
-      <button>{testBool} - {testString} - {testNumber}</button>
+      <button>{testBool} - {testString} - {testNumber} - {testOneOf}</button>
     );
   }
 };
 
 TestProps.propTypes = {
-  testArray: PropTypes.arrayOf(PropTypes.any).isRequired,
+  testArray: PropTypes.arrayOf(PropTypes.string).isRequired,
 
   /** Essa merlim aqui, é um bool */
   testBool: PropTypes.bool.isRequired,
