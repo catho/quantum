@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 /** Componente de Teste */
 class TestProps extends React.Component {
   render() {
-    const {testString} = this.props;
+    const {testBool, testString, testNumber} = this.props;
     return (
-      <button>- {testString}</button>
+      <button>{testBool} - {testString} - {testNumber}</button>
     );
   }
 };

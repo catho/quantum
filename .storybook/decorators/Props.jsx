@@ -71,6 +71,7 @@ const Preview = styled.div`
 class Props extends React.Component {
   constructor(props){
     super();
+    
     this.state = {};
     Object.entries(props.component.defaultProps).map(([name, value], i) => {
       this.state[name] = value;
@@ -80,6 +81,22 @@ class Props extends React.Component {
   handleChange = (name, e) => {
     this.setState({ [name]: e.target.value });
   }
+
+  renderComponentByType = (propName, typeName) => {
+    switch(typeName){
+      case 'array':
+        return <select />
+      case 'bool':
+        return <input type="checkbox" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
+      case 'number':
+        return <input type="number" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
+      case 'string':
+        return <input type="text" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
+      
+      default:
+        return 'Not implemented'
+    }
+  };
 
   render() {
     const { component: Component } = this.props;
@@ -113,11 +130,7 @@ class Props extends React.Component {
                 <tr key={i}>
                   <td>{ name }</td>
                   <td>{ renderPropType(value.type) }</td>
-                  <td>
-                    { 
-                      value.type.name === 'string' ? <input type="text" value={this.state[name]} onChange={(e) => this.handleChange(name, e)}/> : renderPropType(value.type)
-                    }
-                  </td>
+                  <td>{ this.renderComponentByType(name, value.type.name) }</td>
                   <td>{ value.defaultValue && value.defaultValue.value }</td>
                   <td>{ value.required && 'Required' }</td>
                   <td>{ value.description }</td>
