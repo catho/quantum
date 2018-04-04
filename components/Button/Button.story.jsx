@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import HowToImport from '../../.storybook/decorators/HowToImport';
 import Button from './Button';
 
-const stories = storiesOf('Button', module);
+const stories = storiesOf('3. Buttons', module);
 stories
   .addDecorator(HowToImport)
   .add('Button', () => (
