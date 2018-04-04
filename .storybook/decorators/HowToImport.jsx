@@ -11,6 +11,7 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   color: ${ColorPallete.PRIMARY.BLUE.WINDOWS};
+  display: block;
 
   &:hover {
     color: ${ColorPallete.PRIMARY.BLUE.CORNFLOWER};

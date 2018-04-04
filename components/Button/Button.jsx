@@ -1,16 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { darken } from 'polished';
+
+import Colors from '../Colors';
+import { SIZES } from '../Grid/sub-components/shared/grid-config';
+import theme from '../../theme';
 
 const Button = styled.button`
-  border-radius: 4px;
+  border-radius: ${theme.sizes.radius};
+  cursor: pointer;
   font-size: inherit;
   font-weight: 500;
-  height: 40px;
+  height: ${theme.sizes.fieldHeight};
   padding: 0 30px;
   text-align: center;
   text-decoration: none;
-  -webkit-user-drag: none;
+  ${theme.mixins.transition()};
+
+  &:not(button) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   ${props => props.full && `
     width: 100%;
@@ -22,26 +34,40 @@ const Button = styled.button`
     margin-right: auto;
   `}
 
-  &:not(button) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  ${props => props.disabled && `
+    background: ${Colors.NEUTRAL.GRAY.WHITETWO};
+    border: 1px solid ${Colors.NEUTRAL.DARKEYGRAY.WARMGREY};
+    box-shadow: none;
+    color: ${Colors.NEUTRAL.DARKEYGRAY.BROWNISHGREY};
+    cursor: not-allowed;
+  `}
+
+  ${props => {
+    const skin = theme.buttons.skins[props.skin];
+
+    return props.skin && !props.disabled && `
+      border: 1px solid ${skin.backgroundColor};
+
+      &:active {
+        color: ${darken(0.05, skin.textColor)};
+        background: ${darken(0.05, skin.backgroundColor)};
+        border-color: ${darken(0.05, skin.backgroundColor)};
+      }
+
+      ${skin.bordered ? `
+        color: ${skin.backgroundColor};
+        background: ${skin.textColor};
+      ` : `
+        color: ${skin.textColor};
+        background: ${skin.backgroundColor};
+      `}
+    `}
   }
 
-  &.disabled,
-  &[disabled] {
-    &:active,
-    &.active,
-    &:hover,
-    &.hover,
-    &:focus,
-    &.focus {
-      background: #F0F0F0;
-      border-color: #999;
-      box-shadow: none;
-      color: $gray;
-      cursor: not-allowed;
-    }
+  @media (max-width: ${SIZES.phone}px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 `;
 
@@ -52,17 +78,23 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
+  center: PropTypes.bool,
   children: PropTypes.node.isRequired,
-  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  full: PropTypes.bool,
   skin: PropTypes.oneOf([
     'border-alpha',
     'solid-alpha',
     'solid-beta',
     'solid-white',
-    'link'
+    'link',
   ]),
   onClick: PropTypes.func,
-  type: PropTypes.string
+  type: PropTypes.oneOf([
+    'button',
+    'reset',
+    'submit',
+  ]),
 };
 
 export default Button;
