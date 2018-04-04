@@ -47,6 +47,22 @@ injectGlobal`
   h3 {
     margin-top: 40px;
   }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+    }
+  }
 `;
 
 const options = {

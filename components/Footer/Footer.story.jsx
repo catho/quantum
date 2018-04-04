@@ -1,16 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import HowToImport from '../../.storybook/decorators/HowToImport';
 import Footer from './Footer';
 
 const stories = storiesOf('2. SmartComponents', module);
 
 stories
-  .addDecorator(HowToImport)
-  .add(
-    'Footer',
-    withInfo('This is a basic usage of the footer component')(() => <Footer />),
-  );
+  .add('Footer', () => <Footer />);
 
-Footer.displayName = 'Footer';

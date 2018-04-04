@@ -1,14 +1,27 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
-const TestProps = () => (null);
+/** Componente de Teste */
+class TestProps extends React.Component {
+  bar = true;
+
+  render() {
+    return (
+      <h2>FOOOOOOOOOOOOOOOOOO!!!!!</h2>
+    );
+  }
+};
 
 TestProps.propTypes = {
-  testArray: PropTypes.arrayOf(PropTypes.any),
-  testBool: PropTypes.bool,
-  testFunc: PropTypes.func,
-  testNumber: PropTypes.number,
-  testObject: PropTypes.objectOf(PropTypes.any),
-  testString: PropTypes.string,
+  testArray: PropTypes.arrayOf(PropTypes.any).isRequired,
+
+  /** Essa merlim aqui, é um bool */
+  testBool: PropTypes.bool.isRequired,
+  testFunc: PropTypes.func.isRequired,
+  testNumber: PropTypes.number.isRequired,
+  testObject: PropTypes.objectOf(PropTypes.any).isRequired,
+  testString: PropTypes.string.isRequired,
+  testOneOf: PropTypes.oneOf(['one', 'two', 'three'])
 };
 
 TestProps.defaultProps = {
@@ -18,6 +31,7 @@ TestProps.defaultProps = {
   testNumber: 0,
   testObject: {},
   testString: '',
+  testOneOf: 'one'
 };
 
 export default TestProps;

@@ -1,10 +1,8 @@
 import React from 'react';
 import Highlight from 'react-highlight';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import ColorPalette from '../../components/Colors';
 import { Container, Row, Col, Hide } from '../../components/Grid';
-
-import 'highlight.js/styles/default.css';
 
 const StyledTable = styled.table`
   width: 100%;
