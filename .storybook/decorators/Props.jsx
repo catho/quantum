@@ -71,13 +71,14 @@ const Preview = styled.div`
 class Props extends React.Component {
   constructor(props){
     super();
-    this.state = {
-      teste : 'pei'
-    }
+    this.state = {};
+    Object.entries(props.component.defaultProps).map(([name, value], i) => {
+      this.state[name] = value;
+    })
   }
 
-  handleChange = (e) => {
-    this.setState({ teste: e.target.value });
+  handleChange = (name, e) => {
+    this.setState({ [name]: e.target.value });
   }
 
   render() {
@@ -114,7 +115,7 @@ class Props extends React.Component {
                   <td>{ renderPropType(value.type) }</td>
                   <td>
                     { 
-                      value.type.name === 'string' ? <input type="text" value={this.state.teste} onChange={ this.handleChange }  /> : renderPropType(value.type)
+                      value.type.name === 'string' ? <input type="text" value={this.state[name]} onChange={(e) => this.handleChange(name, e)}/> : renderPropType(value.type)
                     }
                   </td>
                   <td>{ value.defaultValue && value.defaultValue.value }</td>
@@ -129,7 +130,7 @@ class Props extends React.Component {
           <Col desktop="6">
             <h2>Preview</h2>
             <Preview>
-              <Component testString={this.state.teste}/>
+              <Component {...this.state}/>
             </Preview>
           </Col>
         </Row>

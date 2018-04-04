@@ -29,7 +29,7 @@ TestProps.defaultProps = {
   testFunc: () => null,
   testNumber: 0,
   testObject: {},
-  testString: '',
+  testString: 'teste',
   testOneOf: 'one'
 };
 
