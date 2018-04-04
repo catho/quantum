@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 
 /** Componente de Teste */
 class TestProps extends React.Component {
-  bar = true;
-
   render() {
+    const {testString} = this.props;
     return (
-      <h2>FOOOOOOOOOOOOOOOOOO!!!!!</h2>
+      <button>- {testString}</button>
     );
   }
 };
