@@ -7,5 +7,13 @@ const stories = storiesOf('3. Buttons', module);
 stories
   .addDecorator(HowToImport)
   .add('Button', () => (
-    <Button>Click me!</Button>
+    <React.Fragment>
+      <Button>Click me!</Button>
+      <Button skin="solid-alpha">Click me!</Button>
+      <Button skin="solid-alpha">Click me!</Button>
+      <Button skin="solid-beta">Click me!</Button>
+      <Button skin="solid-white">Click me!</Button>
+      <Button skin="link">Click me!</Button>
+      <Button disabled>Click me!</Button>
+    </React.Fragment>
   ));

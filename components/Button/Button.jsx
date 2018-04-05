@@ -14,7 +14,9 @@ const Button = styled.button`
   height: ${theme.sizes.fieldHeight};
   padding: 0 30px;
   text-align: center;
-  text-decoration: none;
+  ${props => `
+    text-decoration: ${props.skin === 'link' ? 'underline' : 'none'};
+  `}
   ${theme.mixins.transition()};
 
   ${props => props.full && `

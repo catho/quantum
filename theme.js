@@ -20,6 +20,10 @@ const theme = {
         backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
         textColor: Colors.PRIMARY.BLUE.PEACOCK,
       },
+      link: {
+        backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
+        textColor: Colors.PRIMARY.BLUE.PEACOCK,
+      },
     },
   },
   sizes: {
