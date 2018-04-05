@@ -1,6 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { darken } from 'polished';
 
 import Colors from '../Colors';
@@ -17,12 +16,6 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   ${theme.mixins.transition()};
-
-  &:not(button) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   ${props => props.full && `
     width: 100%;
@@ -42,27 +35,22 @@ const Button = styled.button`
     cursor: not-allowed;
   `}
 
-  ${props => {
+  ${(props) => {
     const skin = theme.buttons.skins[props.skin];
+    const borderColor = skin.borderColor || skin.backgroundColor;
 
     return props.skin && !props.disabled && `
-      border: 1px solid ${skin.backgroundColor};
+      background: ${skin.backgroundColor};
+      border: 1px solid ${borderColor};
+      color: ${skin.textColor};
 
       &:active {
-        color: ${darken(0.05, skin.textColor)};
         background: ${darken(0.05, skin.backgroundColor)};
-        border-color: ${darken(0.05, skin.backgroundColor)};
+        border-color: ${darken(0.05, borderColor)};
+        color: ${darken(0.05, skin.textColor)};
       }
-
-      ${skin.bordered ? `
-        color: ${skin.backgroundColor};
-        background: ${skin.textColor};
-      ` : `
-        color: ${skin.textColor};
-        background: ${skin.backgroundColor};
-      `}
-    `}
-  }
+    `;
+  }}
 
   @media (max-width: ${SIZES.phone}px) {
     width: 100%;
@@ -74,7 +62,7 @@ const Button = styled.button`
 Button.defaultProps = {
   skin: 'border-alpha',
   onClick: null,
-  type: 'button'
+  type: 'button',
 };
 
 Button.propTypes = {

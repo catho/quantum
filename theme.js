@@ -4,26 +4,23 @@ const theme = {
   buttons: {
     skins: {
       'border-alpha': {
-        backgroundColor: Colors.PRIMARY.BLUE.PEACOCK,
-        bordered: true,
-        textColor: '#FFF',
+        backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
+        borderColor: Colors.PRIMARY.BLUE.PEACOCK,
+        textColor: Colors.PRIMARY.BLUE.PEACOCK,
       },
       'solid-alpha': {
         backgroundColor: Colors.PRIMARY.BLUE.PEACOCK,
-        bordered: false,
-        textColor: '#FFF',
+        textColor: Colors.NEUTRAL.GRAY.WHITE,
       },
       'solid-beta': {
         backgroundColor: Colors.SECONDARY.YELLOW.TANGERINE,
-        bordered: false,
-        textColor: '#FFF',
+        textColor: Colors.NEUTRAL.GRAY.WHITE,
       },
       'solid-white': {
-        backgroundColor: '#FFF',
-        bordered: false,
+        backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
         textColor: Colors.PRIMARY.BLUE.PEACOCK,
       },
-    }
+    },
   },
   sizes: {
     radius: '4px',
