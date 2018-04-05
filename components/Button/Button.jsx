@@ -33,9 +33,9 @@ const Button = styled.button`
     const borderColor = skin.borderColor || skin.backgroundColor;
 
     return `
-      color: ${skin.textColor};
       background-color: ${skin.backgroundColor};
       border: 1px solid ${borderColor};
+      color: ${skin.textColor};
 
       ${props.disabled ? `
         box-shadow: none;
@@ -50,32 +50,23 @@ const Button = styled.button`
     `;
   }}
 
-
   @media (max-width: ${SIZES.phone}px) {
-    width: 100%;
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
   }
 `;
-
-Button.defaultProps = {
-  skin: 'border-alpha',
-  onClick: null,
-  type: 'button',
-};
 
 Button.propTypes = {
   center: PropTypes.bool,
   children: PropTypes.node.isRequired,
   disabled: PropTypes.bool,
   full: PropTypes.bool,
-  skin: PropTypes.oneOf([
-    'border-alpha',
-    'solid-alpha',
-    'solid-beta',
-    'solid-white',
-    'link',
-  ]),
+  primary: PropTypes.bool,
+  secondary: PropTypes.bool,
+  hollow: PropTypes.bool,
+  light: PropTypes.bool,
+  link: PropTypes.bool,
   onClick: PropTypes.func,
   type: PropTypes.oneOf([
     'button',
