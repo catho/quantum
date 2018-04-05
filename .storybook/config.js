@@ -8,6 +8,8 @@ setOptions({
   name: 'Catho Style-Guide',
   sortStoriesByKind: true,
   selectedAddonPanel: '@storybook/addon-knobs',
+  showAddonPanel: false,
+  addonPanelInRight: false,
 });
 
 addDecorator(Frame);

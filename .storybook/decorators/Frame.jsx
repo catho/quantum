@@ -30,9 +30,8 @@ injectGlobal`
   }
 
   code {
-    background-color: #f9f2f4;
-    color: #c7254e;
-    padding: 5px;
+    background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+    padding: 2px 5px;
   }
 
   .highlight {
@@ -40,7 +39,7 @@ injectGlobal`
   }
 
   h2 {
-    border-bottom: 1px solid ${ColorPalette.NEUTRAL.DARKEYGRAY.WARMGREY};
+    border-bottom: 1px solid ${ColorPalette.NEUTRAL.GRAY.WHITETHREE};
     padding-bottom: 8px;
   }
 
@@ -65,15 +64,8 @@ injectGlobal`
   }
 `;
 
-const options = {
-  showAddonPanel: false,
-  addonPanelInRight: false,
-};
-
 const Frame = (storyFn, { story }) => (
   <React.Fragment>
-    <Heading title={story} />
-    { setOptions(options) }
     <Container>
       { storyFn() }
     </Container>

@@ -1,7 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/** Componente de Teste */
+/** Componente de Teste
+ * aqui você pode escrever um MD, se preferir
+ *
+ * Um teste que podemos fazer, é uma lista:
+ *  - 1
+ *  - 2
+ *  - 3
+ *
+ * E assim vamos nós!
+ */
 class TestProps extends React.Component {
   render() {
     const {testBool, testString, testNumber, testOneOf} = this.props;
