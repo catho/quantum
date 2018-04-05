@@ -13,6 +13,6 @@ stories
       <Button hollow>Hollow</Button>
       <Button light>Light</Button>
       <Button link>Link</Button>
-      <Button disabled type="submit">Disabled</Button>
+      <Button disabled>Disabled</Button>
     </React.Fragment>
   ));

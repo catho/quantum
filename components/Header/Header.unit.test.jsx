@@ -1,13 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Enzyme, { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme';
 import cookie from 'react-cookies';
 
 import Header from './Header';
 import PromotionBar from './sub-components/PromotionBar';
 
-Enzyme.configure({ adapter: new Adapter() });
 jest.mock('axios', () => jest.fn(() => Promise.resolve({ data: true })));
 cookie.load = jest.fn(() => 'foo_bar');
 

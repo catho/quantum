@@ -74,6 +74,7 @@
       "lcov",
       "text",
       "text-summary"
-    ]
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jest-config.js"
   }
 }
