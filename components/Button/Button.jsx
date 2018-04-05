@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-import Colors from '../Colors';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../../theme';
+import skins from './skins';
 
 const Button = styled.button`
   border-radius: ${theme.sizes.radius};
@@ -14,10 +14,7 @@ const Button = styled.button`
   height: ${theme.sizes.fieldHeight};
   padding: 0 30px;
   text-align: center;
-
-  ${props => `
-    text-decoration: ${props.skin === 'link' ? 'underline' : 'none'};
-  `}
+  text-decoration: ${props => (props.link ? 'underline' : 'none')};
 
   ${theme.mixins.transition()};
 
@@ -31,30 +28,28 @@ const Button = styled.button`
     margin-right: auto;
   `}
 
-  ${props => props.disabled && `
-    background: ${Colors.NEUTRAL.GRAY.WHITETWO};
-    border: 1px solid ${Colors.NEUTRAL.DARKEYGRAY.WARMGREY};
-    box-shadow: none;
-    color: ${Colors.NEUTRAL.DARKEYGRAY.BROWNISHGREY};
-    cursor: not-allowed;
-  `}
-
   ${(props) => {
-    const skin = theme.buttons.skins[props.skin];
+    const skin = skins(props);
     const borderColor = skin.borderColor || skin.backgroundColor;
 
-    return props.skin && !props.disabled && `
-      background: ${skin.backgroundColor};
-      border: 1px solid ${borderColor};
+    return `
       color: ${skin.textColor};
+      background-color: ${skin.backgroundColor};
+      border: 1px solid ${borderColor};
 
-      ${props.skin !== 'link' ? `&:active {
+      ${props.disabled ? `
+        box-shadow: none;
+        cursor: not-allowed;
+      ` : ''}
+
+      ${!props.link ? `&:active {
         background: ${darken(0.05, skin.backgroundColor)};
         border-color: ${darken(0.05, borderColor)};
         color: ${darken(0.05, skin.textColor)};
       }` : ''}
     `;
   }}
+
 
   @media (max-width: ${SIZES.phone}px) {
     width: 100%;

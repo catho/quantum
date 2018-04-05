@@ -8,11 +8,11 @@ stories
   .addDecorator(HowToImport)
   .add('Button', () => (
     <React.Fragment>
-      <Button>Click me!</Button>
-      <Button skin="solid-alpha">Click me!</Button>
-      <Button skin="solid-beta">Click me!</Button>
-      <Button skin="solid-white">Click me!</Button>
-      <Button skin="link">Click me!</Button>
-      <Button disabled>Click me!</Button>
+      <Button primary>Primary</Button>
+      <Button secondary>Secondary</Button>
+      <Button hollow>Hollow</Button>
+      <Button light>Light</Button>
+      <Button link>Link</Button>
+      <Button disabled>Disabled</Button>
     </React.Fragment>
   ));
