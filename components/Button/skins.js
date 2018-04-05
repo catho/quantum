@@ -1,46 +1,38 @@
 import Colors from '../Colors';
 
-export default (props) => {
-  let skin = {
-    backgroundColor: Colors.SECONDARY.YELLOW.TANGERINE,
-    textColor: Colors.NEUTRAL.GRAY.WHITE,
-  };
-
-  if (props.secondary) {
-    skin = {
+export default ({
+  secondary, hollow, light, link, disabled,
+}) => {
+  if (secondary) {
+    return {
       backgroundColor: Colors.PRIMARY.BLUE.PEACOCK,
       textColor: Colors.NEUTRAL.GRAY.WHITE,
     };
-  }
-
-  if (props.hollow) {
-    skin = {
+  } else if (hollow) {
+    return {
       backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
       borderColor: Colors.PRIMARY.BLUE.PEACOCK,
       textColor: Colors.PRIMARY.BLUE.PEACOCK,
     };
-  }
-
-  if (props.light) {
-    skin = {
+  } else if (light) {
+    return {
       backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
       textColor: Colors.PRIMARY.BLUE.PEACOCK,
     };
-  }
-
-  if (props.link) {
-    skin = {
+  } else if (link) {
+    return {
       backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
       textColor: Colors.PRIMARY.BLUE.PEACOCK,
     };
-  }
-
-  if (props.disabled) {
-    skin = {
+  } else if (disabled) {
+    return {
       backgroundColor: Colors.NEUTRAL.GRAY.WHITETWO,
       textColor: Colors.NEUTRAL.DARKEYGRAY.WARMGREY,
     };
   }
 
-  return skin;
+  return {
+    backgroundColor: Colors.SECONDARY.YELLOW.TANGERINE,
+    textColor: Colors.NEUTRAL.GRAY.WHITE,
+  };
 };
