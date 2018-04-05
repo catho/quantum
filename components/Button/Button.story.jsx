@@ -10,7 +10,6 @@ stories
     <React.Fragment>
       <Button>Click me!</Button>
       <Button skin="solid-alpha">Click me!</Button>
-      <Button skin="solid-alpha">Click me!</Button>
       <Button skin="solid-beta">Click me!</Button>
       <Button skin="solid-white">Click me!</Button>
       <Button skin="link">Click me!</Button>

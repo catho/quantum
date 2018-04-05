@@ -14,9 +14,11 @@ const Button = styled.button`
   height: ${theme.sizes.fieldHeight};
   padding: 0 30px;
   text-align: center;
+
   ${props => `
     text-decoration: ${props.skin === 'link' ? 'underline' : 'none'};
   `}
+
   ${theme.mixins.transition()};
 
   ${props => props.full && `
@@ -46,11 +48,11 @@ const Button = styled.button`
       border: 1px solid ${borderColor};
       color: ${skin.textColor};
 
-      &:active {
+      ${props.skin !== 'link' ? `&:active {
         background: ${darken(0.05, skin.backgroundColor)};
         border-color: ${darken(0.05, borderColor)};
         color: ${darken(0.05, skin.textColor)};
-      }
+      }` : ''}
     `;
   }}
 
