@@ -2,8 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
-import Label from '../shared/Label';
-import ErrorMessage from '../shared/ErrorMessage';
+import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 import theme from '../../theme';
 
@@ -26,7 +25,7 @@ const StyledInput = styled.input`
 const Input = ({
   id, label, error, pattern, mask, ...props
 }) => (
-  <React.Fragment>
+  <FieldGroup>
     { label && <Label htmlFor={id}> {label} </Label> }
 
     <StyledInput
@@ -38,7 +37,7 @@ const Input = ({
     />
 
     {error && <ErrorMessage>{error}</ErrorMessage>}
-  </React.Fragment>
+  </FieldGroup>
 );
 
 Input.defaultProps = {
