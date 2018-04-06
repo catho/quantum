@@ -16,16 +16,16 @@ module.exports = {
         },
       }],
     }, {
-      test: /\.(png|jpg|gif)$/,
+      test: /\.(png|jpg|gif|svg)$/,
       use: [{
         loader: 'file-loader',
         options: {}
       }]
     },
     {
-      test: /\.(woff|woff2|ttf|svg|eot)$/,
-      loader: 'url?limit=10240&name=fonts/[name]-[hash:7].[ext]',
-      include: [/[\/\\]node_modules[\/\\]semantic-ui-less[\/\\]/]
+      loader: 'url-loader?limit=100000',
+      test: /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+      include: path.resolve (__dirname, '../')
     }],
   },
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ColorPalette from '../../components/Colors'
-import { Checkbox } from 'semantic-ui-react'
+import { Input, Checkbox, Select } from 'semantic-ui-react'
 
 const removeQuotes = str => str.replace(/'/g, '');
 
@@ -12,53 +12,35 @@ class AutoProps extends React.Component {
     this.state = props.component.defaultProps;
   }
 
-  handleChange = (name, e) => {
-    const { target } = e;
-    const { value, type } = target;
+  handleChange = (e, props) => {
+    console.log(  props.value);
 
-    let newValue;
+    //const value = ternario de value or checked
+    //ternario de parse Number String Bool
 
-    switch(type){
-      case 'checkbox':
-        newValue = Boolean(target.checked);
-        break;
-      case 'number':
-        newValue = Number(value);
-        break;
-
-      case 'text':
-        newValue = value;
-        break;
-
-      case 'select-one':
-        newValue = isNaN(value) ? value : Number(value);
-        break;
-
-      default:
-        newValue = undefined;
-    }
-
-    this.setState({ [name]: newValue }, () => {
+    this.setState({ [props.name]: props.value ? props.value : props.checked }, () => {
       this.props.changeState(this.state);
     });
   }
 
-  renderComponentByType = (propName, { name, value }) => {
+  testFn = () =>{
+    this.setState({test: Math.random});
+  }
 
+  renderComponentByType = (propName, { name, value }) => {
     switch(name){
       case 'enum':
-        return (<select value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}>
-          { value.map(v => {
-            const str = removeQuotes(v.value);
-            return <option value={str}>{str}</option>
-          })}
-        </select>)
+        return (<Select placeholder='teste' options={} />)
+        // { value.map((v,i) => {
+        //   const str = removeQuotes(v.value);
+        //   return <option key={i} value={str}>{str}</option>
+        // })}
       case 'bool':
-        return <Checkbox toggle checked={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
+        return <Checkbox toggle checked={this.state[propName]} onChange={this.handleChange} name={propName} />
       case 'number':
-        return <input type="number" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
+        return <Input type="number" placeholder='Number' onChange={this.handleChange} name={propName} />
       case 'string':
-        return <input type="text" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
+        return <Input placeholder='String' onChange={this.handleChange} name={propName} />
 
       default:
         return 'Not implemented'
@@ -78,7 +60,7 @@ class AutoProps extends React.Component {
               Object
                 .entries(Component.__docgenInfo.props)
                 .map(([name, value], i) => (
-                  <PropsTableRow>
+                  <PropsTableRow key={i}>
                     <PropsTableData>
                     <CodeBlock>
                       {name}
