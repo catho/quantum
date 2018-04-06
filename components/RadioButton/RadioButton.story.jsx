@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import HowToImport from '../../.storybook/decorators/HowToImport';
 import RadioButton from './RadioButton';
 
-const stories = storiesOf('4. RadioButton', module);
+const stories = storiesOf('4. Forms', module);
 stories
   .addDecorator(HowToImport)
   .add('RadioButton', () => (
