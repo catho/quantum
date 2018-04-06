@@ -1,12 +1,9 @@
-import React from 'react';
-import { createContext } from "react-broadcast";
+import React from 'react'
 
 import { Container, Row, Col } from '../../components/Grid';
 import AutoProps from './AutoProps';
 import LivePreview from './LivePreview';
 import CodeExample from './CodeExample';
-
-const { Provider, Consumer } = createContext('light');
 
 class ComponentPanel extends React.Component {
 

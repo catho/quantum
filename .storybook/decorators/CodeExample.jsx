@@ -51,19 +51,19 @@ class CodeExample extends React.Component {
     const name =  component.type.displayName || component.type.name || component.type;
 
     const indentation = new Array(3).join(' ');
-
+    const code = `<${name} ${Object
+                          .entries(component.props)
+                          .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
+                          .join(`\n${indentation}`)}/>`
     return (
       <React.Fragment>
         <h2>Code</h2>
 
-        <CopyToClipboard text={jsxToString(<Component />)}>
+        <CopyToClipboard text={code}>
           <Button>Copy to clipboard</Button>
         </CopyToClipboard>
         <CodeBlock>
-          { `<${name} ${Object
-                          .entries(component.props)
-                          .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
-                          .join(`\n${indentation}`)}/>` }
+          {code}
         </CodeBlock>
       </React.Fragment>
     )
