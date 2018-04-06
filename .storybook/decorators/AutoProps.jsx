@@ -37,8 +37,9 @@ class AutoProps extends React.Component {
     }
 
     this.setState({ [name]: newValue }, () => {
-      this.props.onChange(this.state);
+      this.props.changeState(this.state);
     });
+
 
   }
 

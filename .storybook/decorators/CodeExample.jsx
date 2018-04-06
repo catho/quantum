@@ -1,6 +1,6 @@
 import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 import styled from 'styled-components';
-import jsxToString from 'jsx-to-string';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import ColorPalette from '../../components/Colors';
 
@@ -25,19 +25,49 @@ const CodeBlock = styled.pre`
   margin-top: 0;
 `
 
-const CodeExample = ({ component: Component }) => (
-  <React.Fragment>
-    <h2>Code</h2>
+const renderPropValue = prop => {
+  console.log(typeof prop)
+  switch(typeof prop) {
+    case 'function':
+      return '{() => ...}';
+    case 'string':
+      return `"${prop}"`
+    case 'number':
+      return `{${prop}}`
+    case 'boolean':
+      return `{${prop}}`
+    case 'object':
+      return `{${JSON.stringify(prop)}}`
+    default:
+      return prop;
+  }
+}
 
-    <CopyToClipboard text={jsxToString(<Component />)}>
-      <Button>Copy to clipboard</Button>
-    </CopyToClipboard>
-    <CodeBlock>
-      {
-        jsxToString(<Component />)
-      }
-    </CodeBlock>
-  </React.Fragment>
-);
+class CodeExample extends React.Component {
+  render() {
+    const { component: Component } = this.props;
+
+    const component = <Component />;
+    const name =  component.type.displayName || component.type.name || component.type;
+
+    const indentation = new Array(3).join(' ');
+
+    return (
+      <React.Fragment>
+        <h2>Code</h2>
+
+        <CopyToClipboard text={jsxToString(<Component />)}>
+          <Button>Copy to clipboard</Button>
+        </CopyToClipboard>
+        <CodeBlock>
+          { `<${name} ${Object
+                          .entries(component.props)
+                          .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
+                          .join(`\n${indentation}`)}/>` }
+        </CodeBlock>
+      </React.Fragment>
+    )
+  }
+};
 
 export default CodeExample;

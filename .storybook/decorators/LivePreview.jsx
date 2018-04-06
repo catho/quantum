@@ -16,76 +16,13 @@ const Preview = styled.div`
   background-origin: padding-box;
 `;
 
-class LivePreview extends React.Component {
-  constructor(props){
-    super();
-
-    this.state = props.component.defaultProps;
-  }
-
-  handleChange = (name, e) => {
-    const { target } = e;
-    const { value, type } = target;
-
-    let newValue;
-
-    switch(type){
-      case 'checkbox':
-        newValue = Boolean(target.checked);
-        break;
-      case 'number':
-        newValue = Number(value);
-        break;
-
-      case 'text':
-        newValue = value;
-        break;
-
-      case 'select-one':
-        newValue = isNaN(value) ? value : Number(value);
-        break;
-
-      default:
-        newValue = undefined;
-    }
-
-    this.setState({ [name]: newValue });
-  }
-
-  renderComponentByType = (propName, { name, value }) => {
-
-    switch(name){
-      case 'enum':
-      console.log(name, value)
-        return (<select value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}>
-          { value.map(v => {
-            const str = removeQuotes(v.value);
-            return <option value={str}>{str}</option>
-          })}
-        </select>)
-      case 'bool':
-        return <input type="checkbox" checked={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
-      case 'number':
-        return <input type="number" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
-      case 'string':
-        return <input type="text" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
-
-      default:
-        return 'Not implemented'
-    }
-  };
-
-  render() {
-    const { component: Component } = this.props;
-    return (
-      <React.Fragment>
-        <h2>Preview</h2>
-        <Preview>
-          <Component {...this.state}/>
-        </Preview>
-      </React.Fragment>
-    )
-  }
-}
+const LivePreview = ({ component: Component }) => (
+  <React.Fragment>
+    <h2>Preview</h2>
+    <Preview>
+      <Component {...Component.defaultProps}/>
+    </Preview>
+  </React.Fragment>
+)
 
 export default LivePreview;
