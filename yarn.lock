@@ -5221,6 +5221,10 @@ jest@^22.4.2:
     import-local "^1.0.0"
     jest-cli "^22.4.3"
 
+jquery@x.*:
+  version "3.3.1"
+  resolved "http://armazem.devel:4873/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 js-base64@^2.1.9:
   version "2.4.3"
   resolved "http://armazem.devel:4873/js-base64/-/js-base64-2.4.3.tgz#2e545ec2b0f2957f41356510205214e98fad6582"
@@ -7858,6 +7862,12 @@ schema-utils@^0.4.0, schema-utils@^0.4.5:
 scoped-regex@^1.0.0:
   version "1.0.0"
   resolved "http://armazem.devel:4873/scoped-regex/-/scoped-regex-1.0.0.tgz#a346bb1acd4207ae70bd7c0c7ca9e566b6baddb8"
+
+semantic-ui-css@^2.3.1:
+  version "2.3.1"
+  resolved "http://armazem.devel:4873/semantic-ui-css/-/semantic-ui-css-2.3.1.tgz#a5485c640c98cce29d8ddde3eff3434566a068e0"
+  dependencies:
+    jquery x.*
 
 semantic-ui-react@^0.79.1:
   version "0.79.1"

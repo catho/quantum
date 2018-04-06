@@ -21,6 +21,11 @@ module.exports = {
         loader: 'file-loader',
         options: {}
       }]
+    },
+    {
+      test: /\.(woff|woff2|ttf|svg|eot)$/,
+      loader: 'url?limit=10240&name=fonts/[name]-[hash:7].[ext]',
+      include: [/[\/\\]node_modules[\/\\]semantic-ui-less[\/\\]/]
     }],
   },
 };

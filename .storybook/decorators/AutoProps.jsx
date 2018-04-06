@@ -1,10 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import styled from 'styled-components';
 import ColorPalette from '../../components/Colors'
 import { Checkbox } from 'semantic-ui-react'
-=======
->>>>>>> 33b0b51e478b8c118aa00e19e8447ee1c1ceae0f
 
 const removeQuotes = str => str.replace(/'/g, '');
 

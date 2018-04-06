@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import ColorPalette from '../../components/Colors';
+import 'semantic-ui-css/semantic.min.css';
 
 const Container = styled.div`
   padding: 10px 20px;
