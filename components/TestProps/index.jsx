@@ -27,7 +27,6 @@ TestProps.propTypes = {
   testBool: PropTypes.bool.isRequired,
   testFunc: PropTypes.func.isRequired,
   testNumber: PropTypes.number.isRequired,
-  testObject: PropTypes.objectOf(PropTypes.any).isRequired,
   testString: PropTypes.string.isRequired,
   testOneOf: PropTypes.oneOf(['one', 'two', 'three'])
 };
@@ -37,7 +36,6 @@ TestProps.defaultProps = {
   testBool: true,
   testFunc: () => null,
   testNumber: 0,
-  testObject: {},
   testString: 'teste',
   testOneOf: 'one'
 };

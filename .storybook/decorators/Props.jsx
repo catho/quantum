@@ -42,9 +42,7 @@ const renderPropType = (type = {}) => {
       </ul>
     ),
 
-    arrayOf: value => wrap('arrayOf')(renderPropType(value)),
-
-    objectOf: value => wrap('objectOf')(renderPropType(value))
+    arrayOf: value => wrap('arrayOf')(renderPropType(value))
   };
 
   if (type.value) {
