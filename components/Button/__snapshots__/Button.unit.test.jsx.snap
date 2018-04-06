@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Should match the snapshot 1`] = `
+<button
+  className="sc-bdVaJa iuunLv"
+>
+  Text
+</button>
+`;
+
+exports[`Button component Should match the snapshot when passed disabled prop 1`] = `
+<button
+  className="sc-bdVaJa cjyIbx"
+  disabled={true}
+>
+  Disabled
+</button>
+`;
+
+exports[`Button component Should match the snapshot when passed type prop equals button 1`] = `
+<button
+  className="sc-bdVaJa iuunLv"
+  type="button"
+>
+  Text
+</button>
+`;
+
+exports[`Button component Should match the snapshot when passed type prop equals reset 1`] = `
+<button
+  className="sc-bdVaJa iuunLv"
+  type="reset"
+>
+  Text
+</button>
+`;
+
+exports[`Button component Should match the snapshot when passed type prop equals submit 1`] = `
+<button
+  className="sc-bdVaJa iuunLv"
+  type="submit"
+>
+  Text
+</button>
+`;
