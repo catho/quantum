@@ -29,28 +29,28 @@ const Wrapper = styled.span`
     cursor: pointer;
     position: relative;
   }
+`;
 
-  input {
-    appearance: none;
-    background-color: ${Colors.NEUTRAL.GRAY.WHITE};
-    cursor: pointer;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+const StyledInput = styled.input`
+  appearance: none;
+  background-color: ${Colors.NEUTRAL.GRAY.WHITE};
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  ${theme.mixins.transition()};
+
+  &:checked {
+    background-color: ${Colors.PRIMARY.BLUE.PEACOCK};
     ${theme.mixins.transition()};
 
-    &:checked {
-      background-color: ${Colors.PRIMARY.BLUE.PEACOCK};
+    ~ label {
+      color: ${Colors.NEUTRAL.GRAY.WHITE};
       ${theme.mixins.transition()};
-
-      ~ label {
-        color: ${Colors.NEUTRAL.GRAY.WHITE};
-        ${theme.mixins.transition()};
-      }
-  }
+    }
 `;
 
 const RadioButton = ({
@@ -61,7 +61,7 @@ const RadioButton = ({
   onChange,
 }) => (
   <Wrapper>
-    <input
+    <StyledInput
       type="radio"
       id={id}
       value={value}
