@@ -41,6 +41,8 @@ injectGlobal`
   h2 {
     border-bottom: 1px solid ${ColorPalette.NEUTRAL.GRAY.WHITETHREE};
     padding-bottom: 8px;
+    font-weight: normal;
+    margin:10 0;
   }
 
   h3 {

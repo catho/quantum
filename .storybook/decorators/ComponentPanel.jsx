@@ -26,11 +26,11 @@ class ComponentPanel extends React.Component {
     return (
       <React.Fragment>
         <Row>
-          <Col desktop={5} tablet={6}>
+          <Col desktop={6} tablet={6}>
             <AutoProps component={this.component} changeState={this.handleChange} />
           </Col>
 
-          <Col desktop={5} tablet={6}>
+          <Col desktop={6} tablet={6}>
             <LivePreview component={this.component} />
           </Col>
         </Row>

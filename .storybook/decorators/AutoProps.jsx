@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import ColorPalette from '../../components/Colors'
+import { Checkbox } from 'semantic-ui-react'
 
 const removeQuotes = str => str.replace(/\'/g, '');
 
@@ -54,7 +56,7 @@ class AutoProps extends React.Component {
           })}
         </select>)
       case 'bool':
-        return <input type="checkbox" checked={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
+        return <Checkbox toggle checked={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
       case 'number':
         return <input type="number" value={this.state[propName]} onChange={(e) => this.handleChange(propName, e)}/>
       case 'string':
@@ -71,24 +73,58 @@ class AutoProps extends React.Component {
     return (
       <React.Fragment>
         <h2>Props</h2>
-        <table>
-          <tbody>
+        <PropsTable>
+          <PropsTbody>
             {
               Component.__docgenInfo &&
               Object
                 .entries(Component.__docgenInfo.props)
                 .map(([name, value], i) => (
-                  <tr>
-                    <td>{name}</td>
-                    <td>{this.renderComponentByType(name, value.type)}</td>
-                  </tr>
+                  <PropsTableRow>
+                    <PropsTableData>
+                    <CodeBlock>
+                      {name}
+                    </CodeBlock>
+                    </PropsTableData>
+                    <PropsTableData>{this.renderComponentByType(name, value.type)}</PropsTableData>
+                  </PropsTableRow>
                 ))
             }
-          </tbody>
-        </table>
+          </PropsTbody>
+        </PropsTable>
       </React.Fragment>
     )
   }
 }
+
+const CodeBlock = styled.pre`
+  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 85%;
+  margin-top: 0;
+  padding:2px 5px;
+`
+
+const PropsTable = styled.table`
+`
+
+const PropsTbody = styled.tbody`
+`
+
+const PropsTableRow = styled.tr`
+  padding: 15px;
+  &:nth-child(even) {
+    background: #f6f8fa
+  }
+  &:nth-child(odd) {
+    background: #FFF
+  }
+`
+
+const PropsTableData = styled.td`
+  padding: 15px;
+  border: 0;
+`
 
 export default AutoProps;

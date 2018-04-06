@@ -104,7 +104,7 @@ class TabbedView extends React.Component {
 
         {
           componentName &&
-            <h2><code>{`<${componentName}/>`}</code></h2>
+            <h1><code>{`<${componentName}/>`}</code></h1>
         }
 
         {children.map(
