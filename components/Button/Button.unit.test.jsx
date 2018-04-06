@@ -1,38 +1,39 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
 import Button from './Button';
 
 describe('Button component', () => {
-  const stub = jest.fn();
-
   it('Should match the snapshot', () => {
-    const tree = renderer.create(<Button>Text</Button>).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(renderer.create(<Button>Text</Button>).toJSON()).toMatchSnapshot();
   });
 
-  it('Should match the snapshot when passed disabled prop', () => {
-    const tree = renderer.create(<Button disabled>Disabled</Button>).toJSON();
-    expect(tree).toMatchSnapshot();
+  it('Should match snapshot when full prop is set', () => {
+    expect(renderer.create(<Button full>Full</Button>).toJSON()).toMatchSnapshot();
   });
 
-  it('Should match the snapshot when passed type prop equals button', () => {
-    const tree = renderer.create(<Button type="button">Text</Button>).toJSON();
-    expect(tree).toMatchSnapshot();
+  it('Should match snapshot when center prop is set', () => {
+    expect(renderer.create(<Button center>Center</Button>).toJSON()).toMatchSnapshot();
   });
 
-  it('Should match the snapshot when passed type prop equals submit', () => {
-    const tree = renderer.create(<Button type="submit">Text</Button>).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  describe('when there is a skin set', () => {
+    it('should match secondary snapshot', () => {
+      const secondary = <Button secondary>Secondary</Button>;
+      expect(renderer.create(secondary).toJSON()).toMatchSnapshot();
+    });
 
-  it('Should match the snapshot when passed type prop equals reset', () => {
-    const tree = renderer.create(<Button type="reset">Text</Button>).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+    it('should match light snapshot', () => {
+      const light = <Button light>Light</Button>;
+      expect(renderer.create(light).toJSON()).toMatchSnapshot();
+    });
 
-  it('Should execute callback function when click on Button', () => {
-    shallow(<Button onClick={stub}>Text</Button>).simulate('click');
-    expect(stub).toHaveBeenCalledTimes(1);
+    it('should match link snapshot', () => {
+      const link = <Button link>Link</Button>;
+      expect(renderer.create(link).toJSON()).toMatchSnapshot();
+    });
+
+    it('should match disabled snapshot', () => {
+      const disabled = <Button disabled>Disabled</Button>;
+      expect(renderer.create(disabled).toJSON()).toMatchSnapshot();
+    });
   });
 });

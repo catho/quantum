@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button component Should match snapshot when center prop is set 1`] = `
+<button
+  className="sc-bdVaJa iraJCc"
+>
+  Center
+</button>
+`;
+
+exports[`Button component Should match snapshot when full prop is set 1`] = `
+<button
+  className="sc-bdVaJa hAzxHX"
+>
+  Full
+</button>
+`;
+
 exports[`Button component Should match the snapshot 1`] = `
 <button
   className="sc-bdVaJa iuunLv"
@@ -8,7 +24,7 @@ exports[`Button component Should match the snapshot 1`] = `
 </button>
 `;
 
-exports[`Button component Should match the snapshot when passed disabled prop 1`] = `
+exports[`Button component when there is a skin set should match disabled snapshot 1`] = `
 <button
   className="sc-bdVaJa cjyIbx"
   disabled={true}
@@ -17,29 +33,26 @@ exports[`Button component Should match the snapshot when passed disabled prop 1`
 </button>
 `;
 
-exports[`Button component Should match the snapshot when passed type prop equals button 1`] = `
+exports[`Button component when there is a skin set should match light snapshot 1`] = `
 <button
-  className="sc-bdVaJa iuunLv"
-  type="button"
+  className="sc-bdVaJa blLVBt"
 >
-  Text
+  Light
 </button>
 `;
 
-exports[`Button component Should match the snapshot when passed type prop equals reset 1`] = `
+exports[`Button component when there is a skin set should match link snapshot 1`] = `
 <button
-  className="sc-bdVaJa iuunLv"
-  type="reset"
+  className="sc-bdVaJa dkNCVL"
 >
-  Text
+  Link
 </button>
 `;
 
-exports[`Button component Should match the snapshot when passed type prop equals submit 1`] = `
+exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
 <button
-  className="sc-bdVaJa iuunLv"
-  type="submit"
+  className="sc-bdVaJa kvqYzg"
 >
-  Text
+  Secondary
 </button>
 `;
