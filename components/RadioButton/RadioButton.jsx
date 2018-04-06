@@ -53,6 +53,9 @@ const StyledInput = styled.input`
     }
 `;
 
+/**
+ * Radio button component that renders a input type radio and a label.
+ */
 const RadioButton = ({
   id,
   value,
@@ -79,10 +82,15 @@ RadioButton.defaultProps = {
 };
 
 RadioButton.propTypes = {
+  /** A id to associate with label */
   id: PropTypes.string.isRequired,
+  /** Radio button value */
   value: PropTypes.string.isRequired,
+  /** Radio button name */
   name: PropTypes.string.isRequired,
+  /** Radio button label that will be displayed on browser */
   label: PropTypes.string.isRequired,
+  /** On change event handle function */
   onChange: PropTypes.func,
 };
 
