@@ -16,7 +16,7 @@ module.exports = {
         },
       }],
     }, {
-      test: /\.(png|jpg|gif|svg)$/,
+      test: /\.(png|jpg|gif)$/,
       use: [{
         loader: 'file-loader',
         options: {}
@@ -24,7 +24,7 @@ module.exports = {
     },
     {
       loader: 'url-loader?limit=100000',
-      test: /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+      test: /\.(ttf|svg|eot|woff(2)?)(\?[a-z0-9]+)?$/,
       include: path.resolve (__dirname, '../')
     }],
   },

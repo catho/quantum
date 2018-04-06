@@ -15,26 +15,25 @@ class AutoProps extends React.Component {
   handleChange = (e, props) => {
     console.log(  props.value);
 
-    //const value = ternario de value or checked
+    const value = props.value ? props.value : props.checked;
     //ternario de parse Number String Bool
 
-    this.setState({ [props.name]: props.value ? props.value : props.checked }, () => {
+    this.setState({ [props.name]: value }, () => {
       this.props.changeState(this.state);
     });
-  }
-
-  testFn = () =>{
-    this.setState({test: Math.random});
   }
 
   renderComponentByType = (propName, { name, value }) => {
     switch(name){
       case 'enum':
-        return (<Select placeholder='teste' options={} />)
-        // { value.map((v,i) => {
-        //   const str = removeQuotes(v.value);
-        //   return <option key={i} value={str}>{str}</option>
-        // })}
+        {
+          var options = [];
+          value.map((v,i) => {
+            const str = removeQuotes(v.value);
+            options.push({key:i, value:str});
+            return options
+        })}
+        return (<Select placeholder='teste' options={options} />)
       case 'bool':
         return <Checkbox toggle checked={this.state[propName]} onChange={this.handleChange} name={propName} />
       case 'number':

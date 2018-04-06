@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import ColorPalette from '../../components/Colors';
+import atomImage from '../../stories/static/atom.svg';
 
 const Tab = ({ children }) => (
   <React.Fragment>
@@ -23,7 +24,7 @@ const Navbar = styled.ul`
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
-  margin: 0;
+  margin: 0 0 25px 0;
   padding: 0;
   list-style: none;
 `;
@@ -65,6 +66,21 @@ const NavItem = styled.li`
   `}
 `;
 
+const TabbedViewTitle = styled.h1`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  font-weight: normal;
+  padding: 15px 0;
+  margin: 0;
+  font-size: 32px;
+
+  img {
+    margin-right: 10px;
+  }
+`
+
 class TabbedView extends React.Component {
   constructor(props) {
     super(props);
@@ -84,6 +100,14 @@ class TabbedView extends React.Component {
 
     return (
       <React.Fragment>
+        {
+          componentName &&
+          <TabbedViewTitle>
+            <img src={atomImage} width="60" height="60"/>
+            {`<${componentName}/>`}
+          </TabbedViewTitle>
+        }
+
         <Navbar>
           {
             children
@@ -96,11 +120,6 @@ class TabbedView extends React.Component {
                   </NavItem>)
           }
         </Navbar>
-
-        {
-          componentName &&
-            <h1><code>{`<${componentName}/>`}</code></h1>
-        }
 
         {
           children

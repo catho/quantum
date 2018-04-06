@@ -32,10 +32,6 @@ class ComponentPanel extends React.Component {
 
           <Col desktop={6} tablet={6}>
             <LivePreview component={this.component} />
-          </Col>
-        </Row>
-        <Row>
-          <Col desktop={12} tablet={12}>
             <CodeExample component={this.component} />
           </Col>
         </Row>
