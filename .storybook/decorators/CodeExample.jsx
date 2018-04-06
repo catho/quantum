@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import ColorPalette from '../../components/Colors';
@@ -26,21 +25,15 @@ const CodeBlock = styled.pre`
 `
 
 const renderPropValue = prop => {
-  console.log(typeof prop)
-  switch(typeof prop) {
-    case 'function':
-      return '{() => ...}';
-    case 'string':
-      return `"${prop}"`
-    case 'number':
-      return `{${prop}}`
-    case 'boolean':
-      return `{${prop}}`
-    case 'object':
-      return `{${JSON.stringify(prop)}}`
-    default:
-      return prop;
-  }
+  const types = {
+    function: '{() => ...}',
+    string: `"${prop}"`,
+    number: `{${prop}}`,
+    boolean: `{${prop}}`,
+    object: `{${JSON.stringify(prop)}}`,
+  };
+
+  return types[typeof prop] || prop;
 }
 
 class CodeExample extends React.Component {
@@ -51,10 +44,11 @@ class CodeExample extends React.Component {
     const name =  component.type.displayName || component.type.name || component.type;
 
     const indentation = new Array(3).join(' ');
+
     const code = `<${name} ${Object
-                          .entries(component.props)
-                          .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
-                          .join(`\n${indentation}`)}/>`
+                              .entries(component.props)
+                              .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
+                              .join(`\n${indentation}`)} />`;
     return (
       <React.Fragment>
         <h2>Code</h2>

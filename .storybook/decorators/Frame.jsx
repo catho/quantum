@@ -1,9 +1,6 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import { setOptions } from '@storybook/addon-options';
 import ColorPalette from '../../components/Colors';
-
-import Heading from './Heading';
 
 const Container = styled.div`
   padding: 10px 20px;
@@ -64,7 +61,7 @@ injectGlobal`
   }
 `;
 
-const Frame = (storyFn, { story }) => (
+const Frame = (storyFn) => (
   <React.Fragment>
     <Container>
       { storyFn() }

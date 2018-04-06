@@ -1,11 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const removeQuotes = str => str.replace(/\'/g, '');
+const removeQuotes = str => str.replace(/'/g, '');
 
 class AutoProps extends React.Component {
-  constructor(props){
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = props.component.defaultProps;
   }
@@ -39,8 +38,6 @@ class AutoProps extends React.Component {
     this.setState({ [name]: newValue }, () => {
       this.props.changeState(this.state);
     });
-
-
   }
 
   renderComponentByType = (propName, { name, value }) => {

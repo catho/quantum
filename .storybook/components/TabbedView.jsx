@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import ColorPalette from '../../components/Colors';
 
-const TabStyle = styled.div`
-  background-color: tomato;
-`
-
 const Tab = ({ children }) => (
   <React.Fragment>
     { children }
@@ -17,13 +13,11 @@ Tab.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
+    PropTypes.node,
   ]).isRequired,
-}
+};
 
-const renderIf = (conditional, renderFn) => {
-  return conditional ? renderFn() : null;
-}
+const renderIf = (conditional, renderFn) => conditional ? renderFn() : null;
 
 const Navbar = styled.ul`
   display: flex;
@@ -32,7 +26,7 @@ const Navbar = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
-`
+`;
 
 const NavItem = styled.li`
   padding: 18px 18px 16px;
@@ -69,21 +63,20 @@ const NavItem = styled.li`
       border-bottom-color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
     }
   `}
-`
+`;
 
 class TabbedView extends React.Component {
-
   constructor(props) {
     super(props);
 
     this.state = {
-      activeTabId: 0
+      activeTab: 0,
     };
   }
 
   onTabClick = tab => {
     const { children } = this.props;
-    this.setState({activeTabId: children.indexOf(tab)})
+    this.setState({activeTab: children.indexOf(tab)})
   };
 
   render() {
@@ -92,27 +85,39 @@ class TabbedView extends React.Component {
     return (
       <React.Fragment>
         <Navbar>
-          {children.map(
-            (tab, index) => (
-              <NavItem
-                key={tab.props.title}
-                onClick={() => this.onTabClick(tab)}
-                active={children.indexOf(tab) === this.state.activeTabId}>{tab.props.title}</NavItem>
-            )
-          )}
+          {
+            children
+              .map(tab =>
+                  <NavItem
+                    key={tab.props.title}
+                    onClick={() => this.onTabClick(tab)}
+                    active={children.indexOf(tab) == this.state.activeTab}>
+                      {tab.props.title}
+                  </NavItem>)
+          }
         </Navbar>
 
         {
           componentName &&
-            <h2><code>{`<${componentName}/>`}</code></h2>
+            <h2><code>{ `<${componentName}/>` }</code></h2>
         }
 
-        {children.map(
-          (child, index) => renderIf(this.props.children.indexOf(child) == this.state.activeTabId, () => child)
-        )}
+        {
+          children
+            .map(child =>
+              renderIf(this.props.children.indexOf(child) == this.state.activeTab, () => child))
+        }
       </React.Fragment>
     );
   }
 }
+
+TabbedView.propTypes = {
+  componentName: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.instanceOf(Tab)),
+    PropTypes.instanceOf(Tab),
+  ]),
+};
 
 export { Tab, TabbedView };
