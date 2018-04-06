@@ -8,7 +8,7 @@ stories
   .addDecorator(HowToImport)
   .add('RadioButton', () => (
     <div>
-      <RadioButton id="radio" value="radio" name="radio">Radio Button</RadioButton>
-      <RadioButton id="radioTwo" value="radioTwo" name="radio">Radio Button 2</RadioButton>
+      <RadioButton id="radio" value="radio" name="radio" label="RadioButton" />
+      <RadioButton id="radioTwo" value="radioTwo" name="radio" label="Radio Button 2" />
     </div>
   ));

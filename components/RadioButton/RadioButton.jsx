@@ -54,22 +54,36 @@ const Wrapper = styled.span`
 `;
 
 const RadioButton = ({
-  children,
   id,
   value,
   name,
+  label,
+  onChange,
 }) => (
   <Wrapper>
-    <input type="radio" id={id} value={value} name={name} />
-    <label htmlFor={id}>{children}</label>
+    <input
+      type="radio"
+      id={id}
+      value={value}
+      name={name}
+      onChange={onChange}
+    />
+    <label htmlFor={id}>
+      {label}
+    </label>
   </Wrapper>
 );
 
+RadioButton.defaultProps = {
+  onChange: null,
+};
+
 RadioButton.propTypes = {
-  children: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
 };
 
 export default RadioButton;

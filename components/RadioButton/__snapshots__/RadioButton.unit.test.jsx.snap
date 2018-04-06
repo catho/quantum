@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Should match the snapshot 1`] = `
+<span
+  className="sc-bdVaJa cUDvsX"
+>
+  <input
+    id="radio"
+    name="radio"
+    onChange={[MockFunction]}
+    type="radio"
+    value="1"
+  />
+  <label
+    htmlFor="radio"
+  >
+    Hello
+  </label>
+</span>
+`;
