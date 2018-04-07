@@ -2,6 +2,7 @@ import React from 'react';
 import Highlight from 'react-highlight';
 import styled from 'styled-components';
 import ColorPalette from '../../components/Colors';
+import HowToImport from '../../.storybook/components/HowToImport'
 import { Container, Row, Col, Hide } from '../../components/Grid';
 
 const StyledTable = styled.table`
@@ -34,11 +35,10 @@ const StyledCol = styled(Col)`
 
 const Grid = () => (
   <React.Fragment>
-    <Highlight language="javascript" className="highlight">
-      import {'{'} Container, Row, Col, Hide {'}'} from '@cathodevel/style-guide';
-    </Highlight>
+    <p>If you are familiar with <strong>Boostrap</strong>, you can easily understand ours.</p>
+    <HowToImport importModules={'Container, Row, Col'} />
     <p>
-      If you are familiar with bootstrap, you can easily understand ours.
+      Here's a comparison table of viewports. Ours on left - Bootstrap's on right.
     </p>
     <p>
       <StyledTable>

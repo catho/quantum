@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import ColorPalette from '../../components/Colors';
-import atomImage from '../../stories/static/atom.svg';
+import ColorPalette from '../../../components/Colors';
 
 const Tab = ({ children }) => (
   <React.Fragment>
@@ -19,6 +18,57 @@ Tab.propTypes = {
 };
 
 const renderIf = (conditional, renderFn) => conditional ? renderFn() : null;
+
+class TabbedView extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      activeTab: 0,
+    };
+  }
+
+  onTabClick = tab => {
+    const { children } = this.props;
+    this.setState({activeTab: children.indexOf(tab)})
+  };
+
+  render() {
+    const { children, componentName } = this.props;
+
+    return (
+      <React.Fragment>
+        <Navbar>
+          {
+            children
+              .map(tab =>
+                  <NavItem
+                    key={tab.props.title}
+                    onClick={() => this.onTabClick(tab)}
+                    active={children.indexOf(tab) == this.state.activeTab}>
+                      {tab.props.title}
+                  </NavItem>)
+          }
+        </Navbar>
+
+        {
+          children
+            .map(child =>
+              renderIf(this.props.children.indexOf(child) == this.state.activeTab, () => child))
+        }
+      </React.Fragment>
+    );
+  }
+}
+
+TabbedView.propTypes = {
+  componentName: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.instanceOf(Tab)),
+    PropTypes.instanceOf(Tab),
+  ]),
+};
+
 
 const Navbar = styled.ul`
   display: flex;
@@ -65,78 +115,5 @@ const NavItem = styled.li`
     }
   `}
 `;
-
-const TabbedViewTitle = styled.h1`
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: left;
-  font-weight: normal;
-  padding: 15px 0;
-  margin: 0;
-  font-size: 32px;
-
-  img {
-    margin-right: 10px;
-  }
-`
-
-class TabbedView extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      activeTab: 0,
-    };
-  }
-
-  onTabClick = tab => {
-    const { children } = this.props;
-    this.setState({activeTab: children.indexOf(tab)})
-  };
-
-  render() {
-    const { children, componentName } = this.props;
-
-    return (
-      <React.Fragment>
-        {
-          componentName &&
-          <TabbedViewTitle>
-            <img src={atomImage} width="60" height="60"/>
-            {`<${componentName}/>`}
-          </TabbedViewTitle>
-        }
-
-        <Navbar>
-          {
-            children
-              .map(tab =>
-                  <NavItem
-                    key={tab.props.title}
-                    onClick={() => this.onTabClick(tab)}
-                    active={children.indexOf(tab) == this.state.activeTab}>
-                      {tab.props.title}
-                  </NavItem>)
-          }
-        </Navbar>
-
-        {
-          children
-            .map(child =>
-              renderIf(this.props.children.indexOf(child) == this.state.activeTab, () => child))
-        }
-      </React.Fragment>
-    );
-  }
-}
-
-TabbedView.propTypes = {
-  componentName: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.instanceOf(Tab)),
-    PropTypes.instanceOf(Tab),
-  ]),
-};
 
 export { Tab, TabbedView };

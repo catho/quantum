@@ -32,7 +32,7 @@ export default {
       WHITEFOUR: '#d5d5d5',
       GREYISH: '#b7b7b7',
     },
-    DARKEYGRAY: {
+    DARKERGRAY: {
       WARMGREY: '#999999',
       BROWNISHGREY: '#666666',
       BLACK: '#333333',

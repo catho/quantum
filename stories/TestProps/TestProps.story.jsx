@@ -1,19 +1,22 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import ComponentPanel from '../../.storybook/decorators/ComponentPanel';
-import Props from '../../.storybook/decorators/Props';
-import TestProps from '../../components/TestProps';
-
+import Heading from '../../.storybook/components/Heading';
+import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
+import TestProps from '../../components/TestProps'
 
 storiesOf('3. TestProps', module)
   .add('Testing dynamic props', () => (
-    <TabbedView componentName="TestProps">
+    <Heading atom title="TestProps">
+      <TabbedView>
       <Tab title="Usage">
-        <ComponentPanel component={TestProps} />
+        <ComponentPanel component={TestProps} importModules={'TestProps'}/>
       </Tab>
+      
       <Tab title="API">
-        <Props component={TestProps} />
+        <AutoPropsApi component={TestProps} />
       </Tab>
     </TabbedView>
+    </Heading>
   ));

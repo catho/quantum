@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-import ColorPalette from '../../components/Colors';
+import ColorPalette from '../../../components/Colors';
+import CodeToClipboard from '../CodeToClipboard';
 
 const Button = styled.button`
   background-color: inherit;
@@ -15,11 +15,12 @@ const Button = styled.button`
 `;
 
 const CodeBlock = styled.pre`
+  position:relative;
   padding: 16px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
+  background-color: #f6f8fa;
   border-radius: 3px;
   margin-top: 0;
 `
@@ -52,12 +53,10 @@ class CodeExample extends React.Component {
     return (
       <React.Fragment>
         <h2>Code</h2>
-
-        <CopyToClipboard text={code}>
-          <Button>Copy to clipboard</Button>
-        </CopyToClipboard>
         <CodeBlock>
           {code}
+
+          <CodeToClipboard code={code} />
         </CodeBlock>
       </React.Fragment>
     )

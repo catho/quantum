@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import CodeExample from './CodeExample';
+import CodeExample from '../CodeExample';
 
 const wrap = name => children =>
   <span>{name} [{children}]</span>;
@@ -52,7 +52,7 @@ const renderPropType = (type = {}) => {
   return <span>{type.name}</span>;
 };
 
-const Props = ({ component: Component }) => (
+const AutoPropsApi = ({ component: Component }) => (
   <React.Fragment>
     { Component.__docgenInfo &&
       <ReactMarkdown source={Component.__docgenInfo.description} />
@@ -86,4 +86,4 @@ const Props = ({ component: Component }) => (
   </React.Fragment>
 )
 
-export default Props;
+export default AutoPropsApi;

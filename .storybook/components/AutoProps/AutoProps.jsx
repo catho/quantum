@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ColorPalette from '../../components/Colors'
+import ColorPalette from '../../../components/Colors'
 import { Input, Checkbox, Select } from 'semantic-ui-react'
 
 const removeQuotes = str => str.replace(/'/g, '');

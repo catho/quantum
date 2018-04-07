@@ -1,9 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Heading from '../../.storybook/decorators/Heading';
-
+import Heading from '../../.storybook/components/Heading';
 import Colors from './Colors';
 
 storiesOf('1. Layout', module)
-  .addDecorator(Heading)
-  .add('Color Palette', () => <Colors />);
+  .add('Color Palette', () => (
+    <Heading title="Color Palette">
+      <Colors />
+    </Heading>
+  ));
