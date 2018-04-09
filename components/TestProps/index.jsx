@@ -13,9 +13,13 @@ import PropTypes from 'prop-types';
  */
 class TestProps extends React.Component {
   render() {
-    const {testBool, testString, testNumber, testOneOf} = this.props;
+    const {testBool, testString, testNumber, testOneOf, children} = this.props;
     return (
-      <button>{testBool} - {testString} - {testNumber} - {testOneOf}</button>
+      <button>{testBool} - {testString} - {testNumber} - {testOneOf}
+
+
+      { children }
+      </button>
     );
   }
 };

@@ -9,14 +9,29 @@ class AutoProps extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = props.component.defaultProps;
+    this.state = props.component.type.defaultProps;
   }
 
   handleChange = (e, props) => {
-    console.log(  props.value);
+    const { type } = props;
 
-    const value = props.value ? props.value : props.checked;
+    let value = props.value ? props.value : props.checked;
     //ternario de parse Number String Bool
+
+    switch (type) {
+      case 'number':
+        value = isNaN(value) ? 0 : Number(value);
+        break;
+      case 'text':
+        value = value ? String(value) : '';
+        break;
+      case 'checkbox':
+        value = Boolean(value);
+        break;
+      default:
+        value = value;
+        break;
+    }
 
     this.setState({ [props.name]: value }, () => {
       this.props.changeState(this.state);
@@ -30,10 +45,10 @@ class AutoProps extends React.Component {
           var options = [];
           value.map((v,i) => {
             const str = removeQuotes(v.value);
-            options.push({key:i, value:str});
+            options.push({key:i, value:str, text:str});
             return options
         })}
-        return (<Select placeholder='teste' options={options} />)
+        return <Select placeholder='teste' options={options} onChange={this.handleChange} name={propName}/>
       case 'bool':
         return <Checkbox toggle checked={this.state[propName]} onChange={this.handleChange} name={propName} />
       case 'number':
@@ -47,7 +62,7 @@ class AutoProps extends React.Component {
   };
 
   render() {
-    const { component: Component } = this.props;
+    const { component: { type: Component} } = this.props;
 
     return (
       <React.Fragment>

@@ -3,17 +3,6 @@ import styled from 'styled-components';
 import ColorPalette from '../../../components/Colors';
 import CodeToClipboard from '../CodeToClipboard';
 
-const Button = styled.button`
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-  color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
-
-  &:hover {
-    color: ${ColorPalette.PRIMARY.BLUE.CORNFLOWER};
-  }
-`;
-
 const CodeBlock = styled.pre`
   position:relative;
   padding: 16px;
@@ -23,7 +12,7 @@ const CodeBlock = styled.pre`
   background-color: #f6f8fa;
   border-radius: 3px;
   margin-top: 0;
-`
+`;
 
 const renderPropValue = prop => {
   const types = {
@@ -37,30 +26,46 @@ const renderPropValue = prop => {
   return types[typeof prop] || prop;
 }
 
-class CodeExample extends React.Component {
-  render() {
-    const { component: Component } = this.props;
+const getProps = props => {
+  const indentation = new Array(3).join(' ');
 
-    const component = <Component />;
-    const name =  component.type.displayName || component.type.name || component.type;
+  return Object
+    .entries(props)
+    .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
+    .join(`\n${indentation}`);
+}
 
-    const indentation = new Array(3).join(' ');
+const componentToString = (component, level = 0) => {
+  const indentation = new Array(3 * level).join(' ');
 
-    const code = `<${name} ${Object
-                              .entries(component.props)
-                              .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
-                              .join(`\n${indentation}`)} />`;
-    return (
-      <React.Fragment>
-        <h2>Code</h2>
-        <CodeBlock>
-          {code}
+  let content;
 
-          <CodeToClipboard code={code} />
-        </CodeBlock>
-      </React.Fragment>
-    )
+  if (typeof component === 'object') {
+    const { type } = component;
+    const { defaultProps } = type;
+    const name = type.displayName || type.name || type;
+    const children = component.props ? component.props.children : null;
+
+    content = `${indentation}<${name}${defaultProps ? `\n  ${getProps(defaultProps)}` : ''}`;
+    content += children ? `>\n${componentToString(children, level + 1)}\n${indentation}</${name}>` : ` />`;
+
+  } else {
+    content = component ? `${indentation}${component}` : '';
   }
-};
+
+  return `${content}`;
+}
+
+const CodeExample = ({ component, code = componentToString(component) }) => (
+  <React.Fragment>
+    <h2>Code</h2>
+    <CodeBlock>
+      {code}
+
+      <CodeToClipboard code={code} />
+    </CodeBlock>
+  </React.Fragment>
+);
+
 
 export default CodeExample;

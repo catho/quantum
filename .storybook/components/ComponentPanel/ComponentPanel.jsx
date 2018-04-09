@@ -12,12 +12,12 @@ class ComponentPanel extends React.Component {
     const { component: Component } = props;
 
     this.component = Component;
-    this.state = this.component.defaultProps;
+    this.state = this.component.type.defaultProps;
   }
 
   handleChange = state => {
     this.setState(state);
-    this.component.defaultProps = state;
+    this.component.type.defaultProps = state;
   };
 
   render () {
@@ -34,6 +34,7 @@ class ComponentPanel extends React.Component {
           </Col>
 
           <Col desktop={6} tablet={6}>
+            <LivePreview component={this.component} />
             <CodeExample component={this.component} />
           </Col>
         </Row>

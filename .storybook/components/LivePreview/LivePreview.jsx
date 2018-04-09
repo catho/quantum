@@ -16,13 +16,21 @@ const Preview = styled.div`
   background-origin: padding-box;
 `;
 
-const LivePreview = ({ component: Component }) => (
-  <React.Fragment>
-    <h2>Preview</h2>
-    <Preview>
-      <Component {...Component.defaultProps}/>
-    </Preview>
-  </React.Fragment>
-)
+class LivePreview extends React.Component {
+
+  render() {
+    const { component } = this.props;
+    const Component = component.type;
+
+    return (
+      <React.Fragment>
+        <h2>Preview</h2>
+        <Preview>
+          <Component {...component.type.defaultProps}/>
+        </Preview>
+      </React.Fragment>
+    )
+  }
+}
 
 export default LivePreview;
