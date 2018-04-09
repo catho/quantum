@@ -56,7 +56,7 @@ const StyledInput = styled.input`
 /**
  * Radio button component that renders a input type radio and a label.
  */
-const RadioButton = ({
+const Radio = ({
   id,
   value,
   name,
@@ -77,11 +77,11 @@ const RadioButton = ({
   </Wrapper>
 );
 
-RadioButton.defaultProps = {
+Radio.defaultProps = {
   onChange: null,
 };
 
-RadioButton.propTypes = {
+Radio.propTypes = {
   /** Id to associate with label */
   id: PropTypes.string.isRequired,
   /** Radio button value */
@@ -94,4 +94,4 @@ RadioButton.propTypes = {
   onChange: PropTypes.func,
 };
 
-export default RadioButton;
+export default Radio;
