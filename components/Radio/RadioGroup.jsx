@@ -20,9 +20,11 @@ const RadioGroup = styled.div`
 
 RadioGroup.propTypes = {
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.instanceOf(Radio)).isRequired,
-    PropTypes.instanceOf(Radio).isRequired,
-  ]),
+    PropTypes.shape({
+      type: Radio,
+    }),
+    PropTypes.arrayOf(PropTypes.shape({ type: Radio })),
+  ]).isRequired,
 };
 
 export default RadioGroup;
