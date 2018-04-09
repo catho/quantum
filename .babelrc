@@ -4,5 +4,11 @@
     "stage-1",
     "env"
   ],
-  "plugins": ["transform-class-properties", "react-docgen"]
+  "plugins": ["transform-class-properties", [
+    "react-docgen",
+    {
+      "includeMethods": true,
+      "resolver": "findAllExportedComponentDefinitions"
+    }
+  ]]
 }

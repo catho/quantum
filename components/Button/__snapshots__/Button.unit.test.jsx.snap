@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Should match snapshot when center prop is set 1`] = `
+<button
+  className="sc-bdVaJa iraJCc"
+>
+  Center
+</button>
+`;
+
+exports[`Button component Should match snapshot when full prop is set 1`] = `
+<button
+  className="sc-bdVaJa hAzxHX"
+>
+  Full
+</button>
+`;
+
+exports[`Button component Should match the snapshot 1`] = `
+<button
+  className="sc-bdVaJa iuunLv"
+>
+  Text
+</button>
+`;
+
+exports[`Button component when there is a skin set should match disabled snapshot 1`] = `
+<button
+  className="sc-bdVaJa cjyIbx"
+  disabled={true}
+>
+  Disabled
+</button>
+`;
+
+exports[`Button component when there is a skin set should match light snapshot 1`] = `
+<button
+  className="sc-bdVaJa blLVBt"
+>
+  Light
+</button>
+`;
+
+exports[`Button component when there is a skin set should match link snapshot 1`] = `
+<button
+  className="sc-bdVaJa dkNCVL"
+>
+  Link
+</button>
+`;
+
+exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
+<button
+  className="sc-bdVaJa kvqYzg"
+>
+  Secondary
+</button>
+`;
