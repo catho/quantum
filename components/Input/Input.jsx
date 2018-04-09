@@ -6,6 +6,7 @@ import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 import theme from '../../theme';
 
+/** A text field component to get user text data */
 const StyledInput = styled.input`
   ${theme.mixins.transition()};
 
@@ -42,7 +43,6 @@ const Input = ({
 
 Input.defaultProps = {
   error: null,
-  hasError: null,
   id: null,
   label: null,
   mask: null,
@@ -57,10 +57,13 @@ Input.defaultProps = {
 };
 
 Input.propTypes = {
+  /** Display an error message and changes border color to error color */
   error: PropTypes.string,
-  hasError: PropTypes.bool,
+  /** An html identification */
   id: PropTypes.string,
+  /** Display a label text that describe the field */
   label: PropTypes.string,
+  /** Set a text mask that filter user input */
   mask: PropTypes.string,
   maxLength: PropTypes.string,
   onBlur: PropTypes.func,
