@@ -82,7 +82,7 @@ RadioButton.defaultProps = {
 };
 
 RadioButton.propTypes = {
-  /** A id to associate with label */
+  /** Id to associate with label */
   id: PropTypes.string.isRequired,
   /** Radio button value */
   value: PropTypes.string.isRequired,
