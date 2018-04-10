@@ -9,8 +9,8 @@ const Heading = ({ atom, title, children }) => (
       <TabbedViewTitle>
         <img src={atom ? atomImage : formulaImage} width="60" height="60"/>
         {
-          atom &&         
-          `<${title}/>`
+          atom &&
+          `<${title} />`
         }
         {
           !atom &&

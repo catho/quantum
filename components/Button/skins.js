@@ -28,8 +28,4 @@ const skins = {
   },
 };
 
-export default (prop) => {
-  const skin = Object.keys(prop).filter(p => Object.keys(skins).includes(p)).shift();
-
-  return skins[skin] || skins.default;
-};
+export default ({ skin }) => skins[skin] || skins.default;

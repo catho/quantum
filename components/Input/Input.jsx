@@ -10,7 +10,7 @@ import theme from '../../theme';
 const StyledInput = styled.input`
   ${theme.mixins.transition()};
 
-  border: 1px solid ${Colors.NEUTRAL.DARKEYGRAY.WARMGREY};
+  border: 1px solid ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
   border-radius: ${theme.sizes.radius};
   height: ${theme.sizes.fieldHeight};
   width: 100%;
@@ -42,16 +42,16 @@ const Input = ({
 );
 
 Input.defaultProps = {
-  error: null,
-  id: null,
-  label: null,
-  mask: null,
-  maxLength: null,
-  onBlur: null,
-  onChange: null,
-  onFocus: null,
-  pattern: null,
-  placeholder: null,
+  error: '',
+  id: '',
+  label: '',
+  mask: '',
+  maxLength: '',
+  onBlur: () => {},
+  onChange: () => {},
+  onFocus: () => {},
+  pattern: '',
+  placeholder: '',
   type: 'text',
   value: null,
 };

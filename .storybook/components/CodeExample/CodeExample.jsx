@@ -61,7 +61,6 @@ const CodeExample = ({ component, code = componentToString(component) }) => (
     <h2>Code</h2>
     <CodeBlock>
       {code}
-
       <CodeToClipboard code={code} />
     </CodeBlock>
   </React.Fragment>

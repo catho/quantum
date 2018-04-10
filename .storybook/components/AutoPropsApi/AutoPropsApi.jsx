@@ -11,7 +11,15 @@ const failSafe = type => () =>
     <pre>{JSON.stringify(type, null, 2)}</pre>
   </span>;
 
-const removeQuotes = str => str.replace(/\'/g, '');
+const removeQuotes = str => {
+  let withoutQuotes = str.replace(/\'/g, '');
+
+  if (withoutQuotes) {
+    withoutQuotes = <code>{ withoutQuotes }</code>
+  }
+
+  return withoutQuotes;
+};
 
 const renderPropType = (type = {}) => {
   const typeHandlers = {
@@ -76,7 +84,7 @@ const AutoPropsApi = ({ component: Component }) => (
             <td>{ name }</td>
             <td>{ renderPropType(value.type) }</td>
             <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
-            <td>{ value.required && 'Required' }</td>
+            <td>{ value.required ? 'Yes' : 'No' }</td>
             <td>{ value.description }</td>
           </tr>
         ))

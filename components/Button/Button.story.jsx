@@ -6,21 +6,16 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Button from './Button';
 
-const button = <Button />;
-
-console.log(button);
-
-const stories = storiesOf('3. Buttons', module);
-stories
+storiesOf('3. Buttons', module)
   .add('Button', () => (
     <Heading atom title="Button">
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel component={button} importModules="Button" />
+          <ComponentPanel component={<Button />} importModules="Button" />
         </Tab>
 
         <Tab title="API">
-          <AutoPropsApi component={button} />
+          <AutoPropsApi component={Button} />
         </Tab>
       </TabbedView>
     </Heading>
