@@ -30,7 +30,7 @@ const Input = ({
     { label && <Label htmlFor={id}> {label} </Label> }
 
     <StyledInput
-      id={id && id}
+      id={id}
       pattern={pattern && pattern.source}
       data-mask={mask}
       error={error}
