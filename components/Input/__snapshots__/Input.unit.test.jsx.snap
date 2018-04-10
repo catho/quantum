@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component  should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  <input
+    className="sc-bxivhb iOkALr"
+    data-mask={null}
+    id={null}
+    maxLength={null}
+    onBlur={null}
+    onChange={null}
+    onFocus={null}
+    pattern={null}
+    placeholder={null}
+    type="text"
+    value={null}
+  />
+</div>
+`;
+
+exports[`Input component  with a label should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  <label
+    className="sc-bwzfXH eQhPVJ"
+    htmlFor="input-with-label"
+  >
+     
+    Text label
+     
+  </label>
+  <input
+    className="sc-bxivhb iOkALr"
+    data-mask={null}
+    id="input-with-label"
+    maxLength={null}
+    onBlur={null}
+    onChange={null}
+    onFocus={null}
+    pattern={null}
+    placeholder={null}
+    type="text"
+    value={null}
+  />
+</div>
+`;
+
+exports[`Input component  with a regexp as pattern prop should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  <input
+    className="sc-bxivhb iOkALr"
+    data-mask={null}
+    id={null}
+    maxLength={null}
+    onBlur={null}
+    onChange={null}
+    onFocus={null}
+    pattern="\\\\d"
+    placeholder={null}
+    type="text"
+    value={null}
+  />
+</div>
+`;
+
+exports[`Input component  with an error message should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  <input
+    className="sc-bxivhb bAMeUn"
+    data-mask={null}
+    id={null}
+    maxLength={null}
+    onBlur={null}
+    onChange={null}
+    onFocus={null}
+    pattern={null}
+    placeholder={null}
+    type="text"
+    value={null}
+  />
+  <div
+    className="sc-bdVaJa fIlZBq"
+  >
+    Error message
+  </div>
+</div>
+`;
