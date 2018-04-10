@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio component Should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  <label
+    className="sc-bwzfXH eQhPVJ"
+    htmlFor="maxLength"
+  >
+     
+    maxLength
+     
+  </label>
+  <textarea
+    className="sc-bxivhb eVcrkt"
+    id="maxLength"
+    maxLength="50"
+    name="maxLength"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder={null}
+  />
+  <div
+    className="sc-ifAKCX WOpjk"
+  >
+    <span
+      className="sc-EHOje iiwpkQ"
+    >
+      50
+    </span>
+  </div>
+</div>
+`;
