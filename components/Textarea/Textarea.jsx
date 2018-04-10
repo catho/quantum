@@ -27,8 +27,6 @@ const Textfield = styled.textarea`
   `}
 `;
 
-Textfield.displayName = 'Textfield';
-
 const Infos = styled.div`
   display: flex;
 `;
@@ -87,8 +85,6 @@ class Textarea extends React.Component {
     );
   }
 }
-
-Countdown.displayName = 'Countdown';
 
 Textarea.defaultProps = {
   errorMessage: null,
