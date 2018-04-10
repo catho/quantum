@@ -38,4 +38,5 @@ export default {
       BLACK: '#333333',
     },
   },
+  ERROR: '#DA1D5D',
 };
