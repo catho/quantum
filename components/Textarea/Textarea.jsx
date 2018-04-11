@@ -6,7 +6,7 @@ import theme from '../../theme';
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 
 const Textfield = styled.textarea`
-  border: 1px solid ${Colors.NEUTRAL.DARKEYGRAY.WARMGREY};
+  border: 1px solid ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
   border-radius: ${theme.sizes.radius};
   box-sizing: border-box;
   color: inherit;
@@ -90,11 +90,11 @@ class Textarea extends React.Component {
 }
 
 Textarea.defaultProps = {
-  errorMessage: null,
-  maxLength: null,
+  errorMessage: '',
+  maxLength: 300,
   onBlur: () => {},
   onFocus: () => {},
-  placeholder: null,
+  placeholder: '',
 };
 
 Textarea.propTypes = {
@@ -105,7 +105,7 @@ Textarea.propTypes = {
   /** Textarea label that will be displayed on browser */
   label: PropTypes.string.isRequired,
   /** Textarea max-length */
-  maxLength: PropTypes.string,
+  maxLength: PropTypes.number,
   /** Textarea name */
   name: PropTypes.string.isRequired,
   /** Blur event handle function */
