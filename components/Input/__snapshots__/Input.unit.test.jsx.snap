@@ -13,10 +13,10 @@ exports[`Input component  should match the snapshot 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    pattern=""
+    pattern=".*"
     placeholder=""
     type="text"
-    value={null}
+    value=""
   />
   
 </div>
@@ -42,10 +42,10 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    pattern=""
+    pattern=".*"
     placeholder=""
     type="text"
-    value={null}
+    value=""
   />
   
 </div>
@@ -67,7 +67,7 @@ exports[`Input component  with a regexp as pattern prop should match the snapsho
     pattern="\\\\d"
     placeholder=""
     type="text"
-    value={null}
+    value=""
   />
   
 </div>
@@ -86,10 +86,10 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    pattern=""
+    pattern=".*"
     placeholder=""
     type="text"
-    value={null}
+    value=""
   />
   <div
     className="sc-bdVaJa fIlZBq"
