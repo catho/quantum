@@ -38,7 +38,7 @@ const Countdown = styled.span`
 `;
 
 /**
- * Renders a textarea with a optional prop that shows characters remaining countdown
+ * Renders a textarea with an optional prop that shows characters remaining countdown
  */
 class Textarea extends React.Component {
   constructor(props) {
