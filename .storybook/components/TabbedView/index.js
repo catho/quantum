@@ -1,3 +1,3 @@
-import {TabbedView, Tab} from './TabbedView';
+import { TabbedView, Tab } from './TabbedView';
 
-export {TabbedView, Tab}
+export { TabbedView, Tab };
