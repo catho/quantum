@@ -1,5 +1,6 @@
-import React from 'react'
-import { Container, Row, Col } from '../../../components/Grid';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Row, Col } from '../../../components/Grid';
 import AutoProps from '../AutoProps';
 import LivePreview from '../LivePreview';
 import CodeExample from '../CodeExample';
@@ -15,13 +16,12 @@ class ComponentPanel extends React.Component {
     this.state = this.component.type.defaultProps;
   }
 
-  handleChange = state => {
+  handleChange = (state) => {
     this.setState(state);
     this.component.type.defaultProps = state;
   };
 
-  render () {
-
+  render() {
     return (
       <React.Fragment>
         <Row>
@@ -39,8 +39,13 @@ class ComponentPanel extends React.Component {
           </Col>
         </Row>
       </React.Fragment>
-    )
+    );
   }
+}
+
+ComponentPanel.propTypes = {
+  importModules: PropTypes.string.isRequired,
+  component: PropTypes.func.isRequired,
 };
 
 export default ComponentPanel;
