@@ -2,7 +2,8 @@ import React from 'react';
 import Highlight from 'react-highlight';
 import styled from 'styled-components';
 import ColorPalette from '../../components/Colors';
-import HowToImport from '../../.storybook/components/HowToImport'
+import HowToImport from '../../.storybook/components/HowToImport';
+import Title from '../../.storybook/components/Title';
 import { Container, Row, Col, Hide } from '../../components/Grid';
 
 const StyledTable = styled.table`
@@ -40,40 +41,37 @@ const Grid = () => (
     <p>
       Here's a comparison table of viewports. Ours on left - Bootstrap's on right.
     </p>
-    <p>
-      <StyledTable>
-        <thead>
-          <tr>
-            <th>Grid</th>
-            <th><a href="https://getbootstrap.com/docs/3.3/css/#grid">Bootstrap</a></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>phone</td>
-            <td>xs</td>
-          </tr>
-          <tr>
-            <td>tablet</td>
-            <td>sm</td>
-          </tr>
-          <tr>
-            <td>desktop</td>
-            <td>md</td>
-          </tr>
-          <tr>
-            <td>large</td>
-            <td>lg</td>
-          </tr>
-          <tr>
-            <td>hd</td>
-            <td>xl</td>
-          </tr>
-        </tbody>
-      </StyledTable>
-
-    </p>
-    <h2>How it works</h2>
+    <StyledTable>
+      <thead>
+        <tr>
+          <th>Grid</th>
+          <th><a href="https://getbootstrap.com/docs/3.3/css/#grid">Bootstrap</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>phone</td>
+          <td>xs</td>
+        </tr>
+        <tr>
+          <td>tablet</td>
+          <td>sm</td>
+        </tr>
+        <tr>
+          <td>desktop</td>
+          <td>md</td>
+        </tr>
+        <tr>
+          <td>large</td>
+          <td>lg</td>
+        </tr>
+        <tr>
+          <td>hd</td>
+          <td>xl</td>
+        </tr>
+      </tbody>
+    </StyledTable>
+    <Title>How it works</Title>
     <h3>Containers</h3>
     <p>You may choose one of two containers or both to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
     <p>Use <code>{`<Container></Container>`}</code> for a responsive fixed width container.</p>
@@ -129,23 +127,23 @@ const Grid = () => (
         </tr>
         <tr>
           <th scope="row"># of columns</th>
-          <td colspan="5">12</td>
+          <td colSpan="5">12</td>
         </tr>
         <tr>
-          <th  scope="row">Gutter width</th>
-          <td colspan="5">30px (15px on each side of a column)</td>
+          <th scope="row">Gutter width</th>
+          <td colSpan="5">30px (15px on each side of a column)</td>
         </tr>
         <tr>
           <th scope="row">Nestable</th>
-          <td colspan="5">Yes</td>
+          <td colSpan="5">Yes</td>
         </tr>
         <tr>
           <th scope="row">Offsets</th>
-          <td colspan="5">Soon...</td>
+          <td colSpan="5">Soon...</td>
         </tr>
         <tr>
           <th scope="row">Column ordering</th>
-          <td colspan="5">Soon...</td>
+          <td colSpan="5">Soon...</td>
         </tr>
       </tbody>
     </StyledTable>

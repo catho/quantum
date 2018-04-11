@@ -26,7 +26,6 @@ const ModalContent = styled.section`
   background-color: white;
   box-shadow: ${theme.shadow};
   box-sizing: border-box;
-  height: 25%;
   min-width: 455px;
   min-height: 200px;
   padding: 20px;
@@ -35,15 +34,23 @@ const ModalContent = styled.section`
 
   @media (max-width: ${SIZES.tablet}px) {
     min-width: 100%;
-    height: auto;
     width: 100%;
   }
 `;
 
+const ModalClose = styled.span`
+  color: ${Colors.NEUTRAL.DARKERGRAY.BLACK};
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+`;
+
 const ModalTitle = styled.h2`
-  color: ${Colors.NEUTRAL.DARKEYGRAY.BLACK};
+  color: ${Colors.NEUTRAL.DARKERGRAY.BLACK};
   font-size: 18px;
-  margin-bottom: 0;
+  margin: 0;
 `;
 
 const ModalText = styled.p`
@@ -51,15 +58,25 @@ const ModalText = styled.p`
 `;
 
 class Modal extends React.Component {
-  componentDidMount() {
+  constructor({ show }) {
+    super();
+    this.state = {
+      show,
+    };
+  }
 
+  handleClose = () => {
+    this.setState({
+      show: false,
+    });
   }
 
   render() {
     const { title, children } = this.props;
-    return (
+    return this.state.show && (
       <ModalOverlay>
         <ModalContent>
+          <ModalClose onClick={this.handleClose}>x</ModalClose>
           {title && (<ModalTitle>{title}</ModalTitle>)}
           <ModalText>
             {children}
@@ -71,11 +88,14 @@ class Modal extends React.Component {
 }
 
 Modal.defaultProps = {
-  title: '',
+  title: 'Generic title',
+  show: true,
+  children: 'Generic message',
 };
 
 Modal.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+  show: PropTypes.bool,
   title: PropTypes.string,
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
+import StorybookTitle from '../../.storybook/components/Title';
 import logo from '../static/logo.png';
 import ColorPalette from '../../components/Colors';
 
@@ -30,7 +31,7 @@ const Introduction = () => (
       <TitleText>The oficial Catho Component Library</TitleText>
     </Title>
 
-    <h2>Usage</h2>
+    <StorybookTitle>Usage</StorybookTitle>
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>
     <Highlight language="javascript" className="highlight">

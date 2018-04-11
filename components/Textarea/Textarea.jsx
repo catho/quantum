@@ -6,7 +6,7 @@ import theme from '../../theme';
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 
 const Textfield = styled.textarea`
-  border: 1px solid ${Colors.NEUTRAL.DARKEYGRAY.WARMGREY};
+  border: 1px solid ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
   border-radius: ${theme.sizes.radius};
   box-sizing: border-box;
   color: inherit;
