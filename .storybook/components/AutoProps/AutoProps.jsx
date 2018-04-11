@@ -103,27 +103,27 @@ class AutoProps extends React.Component {
     return (
       <React.Fragment>
         <h2>Props</h2>
-        <PropsTable>
-          <PropsTbody>
+        <table>
+          <tbody>
             {
               Component.__docgenInfo &&
                 Object
                   .entries(Component.__docgenInfo.props)
                   .map(([name, value]) => (
-                    <PropsTableRow key={`${name}=${value}`}>
-                      <PropsTableData>
+                    <PropsRow key={`${name}=${value}`}>
+                      <PropsData>
                         <CodeBlock>
                           {name}
                         </CodeBlock>
-                      </PropsTableData>
-                      <PropsTableData>
+                      </PropsData>
+                      <PropsData>
                         {this.renderComponentByType(name, value.type)}
-                      </PropsTableData>
-                    </PropsTableRow>
+                      </PropsData>
+                    </PropsRow>
                   ))
             }
-          </PropsTbody>
-        </PropsTable>
+          </tbody>
+        </table>
       </React.Fragment>
     );
   }
@@ -138,13 +138,7 @@ const CodeBlock = styled.pre`
   padding:2px 5px;
 `;
 
-const PropsTable = styled.table`
-`;
-
-const PropsTbody = styled.tbody`
-`;
-
-const PropsTableRow = styled.tr`
+const PropsRow = styled.tr`
   padding: 15px;
   &:nth-child(even) {
     background: #f6f8fa
@@ -154,7 +148,7 @@ const PropsTableRow = styled.tr`
   }
 `;
 
-const PropsTableData = styled.td`
+const PropsData = styled.td`
   padding: 15px;
   border: 0;
 `;
