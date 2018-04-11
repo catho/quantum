@@ -21,6 +21,34 @@ const Overlay = styled.div`
   // opacity: 0;
   animation-duration: ${animationDuration};
   animation-fill-mode: forwards;
+
+  ${props => props.in && `
+    animation-name: overlay-in;
+  `}
+
+  ${props => props.out && `
+    animation-name: overlay-out;
+  `}
+
+  @keyframes overlay-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes overlay-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
 `;
 
 const LoadingWrapper = styled.div`
@@ -119,7 +147,7 @@ Loading.defaultProps = {
   cx: '50',
   cy: '50',
   r: '12',
-  active: true,
+  // active: true,
 };
 
 Loading.propTypes = {
@@ -127,7 +155,7 @@ Loading.propTypes = {
   cx: PropTypes.string,
   cy: PropTypes.string,
   r: PropTypes.string,
-  active: PropTypes.bool,
+  // active: PropTypes.bool,
 };
 
 export default Loading;
