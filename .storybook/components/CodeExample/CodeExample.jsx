@@ -55,6 +55,7 @@ const componentToString = (component, level = 0) => {
   return `${content}`;
 };
 
+/* eslint-disable */
 const CodeExample = ({ component, code = componentToString(component) }) => (
   <React.Fragment>
     <h2>Code</h2>
@@ -69,5 +70,6 @@ CodeExample.propTypes = {
   component: PropTypes.func.isRequired,
   code: PropTypes.string,
 };
+/* eslint-enable */
 
 export default CodeExample;
