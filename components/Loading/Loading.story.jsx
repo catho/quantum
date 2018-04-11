@@ -1,17 +1,22 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
-import HowToImport from '../../.storybook/decorators/HowToImport';
+import Heading from '../../.storybook/components/Heading';
+import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import ComponentPanel from '../../.storybook/components/ComponentPanel';
+import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Loading from './Loading';
 
-const StyledContainer = styled.div`
-  // background-color: yellow;
-`;
-
 storiesOf('6. Loading', module)
-  .addDecorator(HowToImport)
   .add('Loading', () => (
-    <StyledContainer>
-      <Loading />
-    </StyledContainer>
+    <Heading atom title="Loading">
+      <TabbedView>
+        <Tab title="Usage">
+          <ComponentPanel component={<Loading />} importModules="Loading" />
+        </Tab>
+
+        <Tab title="API">
+          <AutoPropsApi component={Loading} />
+        </Tab>
+      </TabbedView>
+    </Heading>
   ));
