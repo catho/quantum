@@ -1,11 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import HowToImport from '../../.storybook/decorators/HowToImport';
 import Textarea from './Textarea';
 
 const stories = storiesOf('4. Forms', module);
 stories
-  .addDecorator(HowToImport)
   .add('Textarea', () => (
     <React.Fragment>
       <Textarea id="default" name="default" label="Default" placeholder="Default" />
