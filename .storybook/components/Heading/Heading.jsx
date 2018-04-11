@@ -1,37 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import atomImage from '../../../stories/static/atom.svg';
 import formulaImage from '../../../stories/static/formula.svg';
 
-const Heading = ({ atom, title, children }) => (
-  <React.Fragment>
-    {
-      <TabbedViewTitle>
-        <img src={atom ? atomImage : formulaImage} width="60" height="60"/>
-        {
-          atom &&
-          `<${title} />`
-        }
-        {
-          !atom &&
-          `${title}`
-        }
-      </TabbedViewTitle>
-    }
-    { children }
-  </React.Fragment>
-);
-
 const Title = styled.h1`
-  position:relative;
-  padding: 60px 20px;
-  top: -10px;
-  left:-20px;
-  width:120%;
-  background-color: #f8f7f7;
-`;
-
-const TabbedViewTitle = styled.h1`
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -44,6 +17,38 @@ const TabbedViewTitle = styled.h1`
   img {
     margin-right: 10px;
   }
-`
+`;
+
+const Heading = ({ atom, title, children }) => (
+  <React.Fragment>
+    {
+      <Title>
+        <img
+          alt={title}
+          src={atom ? atomImage : formulaImage}
+          width="60"
+          height="60"
+        />
+        {
+          `${atom ? `<${title}/>` : title}`
+        }
+      </Title>
+    }
+    { children }
+  </React.Fragment>
+);
+
+Heading.defaultProps = {
+  atom: false,
+};
+
+Heading.propTypes = {
+  atom: PropTypes.bool,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
 
 export default Heading;
