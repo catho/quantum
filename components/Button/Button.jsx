@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { darken } from 'polished';
@@ -6,7 +7,7 @@ import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../../theme';
 import skins from './skins';
 
-const Button = styled.button`
+const StyledButton = styled.button`
   border-radius: ${theme.sizes.radius};
   cursor: pointer;
   font-size: inherit;
@@ -57,17 +58,33 @@ const Button = styled.button`
   }
 `;
 
+const Button = ({ children, ...rest }) => <StyledButton {...rest}> { children } </StyledButton>;
+
+Button.defaultProps = {
+  center: false,
+  children: 'Catho',
+  disabled: false,
+  full: false,
+  onClick: () => {},
+  skin: 'default',
+  type: 'button',
+};
+
 Button.propTypes = {
   center: PropTypes.bool,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   disabled: PropTypes.bool,
   full: PropTypes.bool,
-  primary: PropTypes.bool,
-  secondary: PropTypes.bool,
-  hollow: PropTypes.bool,
-  light: PropTypes.bool,
-  link: PropTypes.bool,
   onClick: PropTypes.func,
+  skin: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'hollow',
+    'light',
+    'link',
+    'disabled',
+    'default',
+  ]),
   type: PropTypes.oneOf([
     'button',
     'reset',
