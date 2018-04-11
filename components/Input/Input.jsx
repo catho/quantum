@@ -50,10 +50,10 @@ Input.defaultProps = {
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
-  pattern: '',
+  pattern: /.*/,
   placeholder: '',
   type: 'text',
-  value: null,
+  value: '',
 };
 
 Input.propTypes = {

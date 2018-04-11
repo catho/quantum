@@ -12,7 +12,7 @@ const failSafe = type => () => (
   </span>
 );
 
-const removeQuotes = (str) => {
+const removeQuotes = (str) => { // "''"
   let withoutQuotes = str.replace(/'/g, '');
 
   if (withoutQuotes) {
@@ -98,7 +98,7 @@ const AutoPropsApi = ({ component: Component }) => (
 );
 
 AutoPropsApi.propTypes = {
-  component: PropTypes.func.isRequired,
+  component: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default AutoPropsApi;

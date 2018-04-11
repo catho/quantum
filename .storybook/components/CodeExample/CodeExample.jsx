@@ -15,12 +15,17 @@ const CodeBlock = styled.pre`
 `;
 
 const renderPropValue = (prop) => {
+  if (typeof prop === 'object' && prop instanceof RegExp) {
+    return `{${prop}}`;
+  }
+
   const types = {
     function: '{() => ...}',
     string: `"${prop}"`,
     number: `{${prop}}`,
     boolean: `{${prop}}`,
     object: `{${JSON.stringify(prop)}}`,
+    instanceOf: `{${prop}}`,
   };
 
   return types[typeof prop] || prop;
@@ -31,6 +36,7 @@ const getProps = (props) => {
 
   return Object
     .entries(props)
+    .filter(([, value]) => value)
     .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
     .join(`\n${indentation}`);
 };
@@ -67,7 +73,7 @@ const CodeExample = ({ component, code = componentToString(component) }) => (
 );
 
 CodeExample.propTypes = {
-  component: PropTypes.func.isRequired,
+  component: PropTypes.instanceOf(Object).isRequired,
   code: PropTypes.string,
 };
 /* eslint-enable */

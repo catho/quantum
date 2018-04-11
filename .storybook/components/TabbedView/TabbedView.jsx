@@ -111,8 +111,8 @@ class TabbedView extends React.Component {
 
 TabbedView.propTypes = {
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.instanceOf(Tab)),
-    PropTypes.instanceOf(Tab),
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]).isRequired,
 };
 

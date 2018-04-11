@@ -45,7 +45,7 @@ class ComponentPanel extends React.Component {
 
 ComponentPanel.propTypes = {
   importModules: PropTypes.string.isRequired,
-  component: PropTypes.func.isRequired,
+  component: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default ComponentPanel;

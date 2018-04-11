@@ -28,7 +28,7 @@ const LivePreview = ({ component: { type: Component } }) => (
 );
 
 LivePreview.propTypes = {
-  component: PropTypes.func.isRequired,
+  component: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default LivePreview;

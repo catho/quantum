@@ -154,7 +154,7 @@ const PropsData = styled.td`
 `;
 
 AutoProps.propTypes = {
-  component: PropTypes.func.isRequired,
+  component: PropTypes.instanceOf(Object).isRequired,
   changeState: PropTypes.func.isRequired,
 };
 
