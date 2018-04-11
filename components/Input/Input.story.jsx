@@ -1,13 +1,23 @@
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import HowToImport from '../../.storybook/decorators/HowToImport';
+import Heading from '../../.storybook/components/Heading';
+import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import ComponentPanel from '../../.storybook/components/ComponentPanel';
+import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Input from './Input';
 
-storiesOf('4. Input', module)
-  .addDecorator(HowToImport)
+storiesOf('5. Input', module)
   .add('Input', () => (
-    <React.Fragment>
-      <Input label="Default" id="default-input" />
-      <Input label="With error" error="Error message" id="error-input" />
-    </React.Fragment>
+    <Heading atom title="Input">
+      <TabbedView>
+        <Tab title="Usage">
+          <ComponentPanel component={<Input />} importModules="Input" />
+        </Tab>
+
+        <Tab title="API">
+          <AutoPropsApi component={Input} />
+        </Tab>
+      </TabbedView>
+    </Heading>
   ));
