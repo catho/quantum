@@ -13,7 +13,8 @@
                 "some": [ "nesting", "id" ]
             },
             "allowChildren": false
-        }]
+        }],
+        "no-underscore-dangle": 0
     },
     "globals": {
         "window": true,

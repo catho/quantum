@@ -3,56 +3,90 @@
 exports[`Button component Should match snapshot when center prop is set 1`] = `
 <button
   className="sc-bdVaJa iraJCc"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
 >
+   
   Center
+   
 </button>
 `;
 
 exports[`Button component Should match snapshot when full prop is set 1`] = `
 <button
   className="sc-bdVaJa hAzxHX"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
 >
+   
   Full
+   
 </button>
 `;
 
 exports[`Button component Should match the snapshot 1`] = `
 <button
   className="sc-bdVaJa iuunLv"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
 >
+   
   Text
+   
 </button>
 `;
 
 exports[`Button component when there is a skin set should match disabled snapshot 1`] = `
 <button
-  className="sc-bdVaJa cjyIbx"
+  className="sc-bdVaJa eynJFl"
   disabled={true}
+  onClick={[Function]}
+  type="button"
 >
+   
   Disabled
+   
 </button>
 `;
 
 exports[`Button component when there is a skin set should match light snapshot 1`] = `
 <button
-  className="sc-bdVaJa blLVBt"
+  className="sc-bdVaJa iuunLv"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
 >
+   
   Light
+   
 </button>
 `;
 
 exports[`Button component when there is a skin set should match link snapshot 1`] = `
 <button
-  className="sc-bdVaJa dkNCVL"
+  className="sc-bdVaJa eUPObL"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
 >
+   
   Link
+   
 </button>
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
 <button
-  className="sc-bdVaJa kvqYzg"
+  className="sc-bdVaJa iuunLv"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
 >
+   
   Secondary
+   
 </button>
 `;

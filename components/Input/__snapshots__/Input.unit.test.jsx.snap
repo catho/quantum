@@ -4,19 +4,21 @@ exports[`Input component  should match the snapshot 1`] = `
 <div
   className="sc-htpNat QOKog"
 >
+  
   <input
     className="sc-bxivhb iOkALr"
-    data-mask={null}
-    id={null}
-    maxLength={null}
-    onBlur={null}
-    onChange={null}
-    onFocus={null}
-    pattern={null}
-    placeholder={null}
+    data-mask=""
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    pattern=""
+    placeholder=""
     type="text"
     value={null}
   />
+  
 </div>
 `;
 
@@ -34,17 +36,18 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   </label>
   <input
     className="sc-bxivhb iOkALr"
-    data-mask={null}
+    data-mask=""
     id="input-with-label"
-    maxLength={null}
-    onBlur={null}
-    onChange={null}
-    onFocus={null}
-    pattern={null}
-    placeholder={null}
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    pattern=""
+    placeholder=""
     type="text"
     value={null}
   />
+  
 </div>
 `;
 
@@ -52,19 +55,21 @@ exports[`Input component  with a regexp as pattern prop should match the snapsho
 <div
   className="sc-htpNat QOKog"
 >
+  
   <input
     className="sc-bxivhb iOkALr"
-    data-mask={null}
-    id={null}
-    maxLength={null}
-    onBlur={null}
-    onChange={null}
-    onFocus={null}
+    data-mask=""
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
     pattern="\\\\d"
-    placeholder={null}
+    placeholder=""
     type="text"
     value={null}
   />
+  
 </div>
 `;
 
@@ -72,16 +77,17 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 <div
   className="sc-htpNat QOKog"
 >
+  
   <input
     className="sc-bxivhb bAMeUn"
-    data-mask={null}
-    id={null}
-    maxLength={null}
-    onBlur={null}
-    onChange={null}
-    onFocus={null}
-    pattern={null}
-    placeholder={null}
+    data-mask=""
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    pattern=""
+    placeholder=""
     type="text"
     value={null}
   />

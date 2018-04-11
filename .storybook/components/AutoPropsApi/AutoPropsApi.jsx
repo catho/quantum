@@ -1,21 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
-import CodeExample from '../CodeExample';
 
 const wrap = name => children =>
   <span>{name} [{children}]</span>;
 
-const failSafe = type => () =>
+const failSafe = type => () => (
   <span>
     Sorry, unable to parse this propType:
     <pre>{JSON.stringify(type, null, 2)}</pre>
-  </span>;
+  </span>
+);
 
-const removeQuotes = str => {
-  let withoutQuotes = str.replace(/\'/g, '');
+const removeQuotes = (str) => {
+  let withoutQuotes = str.replace(/'/g, '');
 
   if (withoutQuotes) {
-    withoutQuotes = <code>{ withoutQuotes }</code>
+    withoutQuotes = <code>{ withoutQuotes }</code>;
   }
 
   return withoutQuotes;
@@ -26,31 +27,32 @@ const renderPropType = (type = {}) => {
     custom: () => wrap('custom')(),
 
     enum: value => wrap('oneOf')(value.map((v, i, allValues) =>
-      <span key={i}><code>{removeQuotes(v.value)}</code>{allValues[i + 1] && ', '}</span>)),
+      <span key={v.value}><code>{removeQuotes(v.value)}</code>{allValues[i + 1] && ', '}</span>)),
 
-    union: value => wrap('oneOfType')(value.map((v, i, allValues) =>
-      <span key={i}>
+    union: value => wrap('oneOfType')(value.map((v, i, allValues) => (
+      <span key={v.value}>
         {renderPropType(v)}
         {allValues[i + 1] && ', '}
       </span>
-    )),
+    ))),
 
-    shape: value => wrap('shape')(
+    shape: value => wrap('shape')((
       <ul>
         { Object
           .keys(value)
-          .map(key => ({...value[key], key}))
-          .map((v, i) =>
-            <li key={i}>
+          .map(key => ({ ...value[key], key }))
+          .map(v => (
+            <li key={v.key}>
               {v.key}:&nbsp;
               {renderPropType(v)}
               {v.required && <small><strong>&nbsp;required</strong></small>}
-            </li>)
+            </li>
+          ))
         }
       </ul>
-    ),
+    )),
 
-    arrayOf: value => wrap('arrayOf')(renderPropType(value))
+    arrayOf: value => wrap('arrayOf')(renderPropType(value)),
   };
 
   if (type.value) {
@@ -77,21 +79,26 @@ const AutoPropsApi = ({ component: Component }) => (
         </tr>
       </thead>
       <tbody>
-      { Component.__docgenInfo &&
+        {
+          Component.__docgenInfo &&
 
-        Object.entries(Component.__docgenInfo.props).map(([name, value], i) => (
-          <tr key={i}>
-            <td>{ name }</td>
-            <td>{ renderPropType(value.type) }</td>
-            <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
-            <td>{ value.required ? 'Yes' : 'No' }</td>
-            <td>{ value.description }</td>
-          </tr>
-        ))
-      }
+          Object.entries(Component.__docgenInfo.props).map(([name, value]) => (
+            <tr key={name}>
+              <td>{ name }</td>
+              <td>{ renderPropType(value.type) }</td>
+              <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
+              <td>{ value.required ? 'Yes' : 'No' }</td>
+              <td>{ value.description }</td>
+            </tr>
+          ))
+        }
       </tbody>
     </table>
   </React.Fragment>
-)
+);
+
+AutoPropsApi.propTypes = {
+  component: PropTypes.func.isRequired,
+};
 
 export default AutoPropsApi;

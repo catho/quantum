@@ -36,15 +36,11 @@ injectGlobal`
     padding: 20px !important;
   }
 
-  h1{
-    background-color
-  }
-
   h2 {
     border-bottom: 1px solid ${ColorPalette.NEUTRAL.GRAY.WHITETHREE};
     padding-bottom: 8px;
     font-weight: normal;
-    margin:10 0;
+    margin: 10px 0;
   }
 
   h3 {

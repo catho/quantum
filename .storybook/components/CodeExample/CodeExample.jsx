@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ColorPalette from '../../../components/Colors';
 import CodeToClipboard from '../CodeToClipboard';
@@ -9,12 +10,11 @@ const CodeBlock = styled.pre`
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
-  border-radius: 3px;
+  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
   margin-top: 0;
 `;
 
-const renderPropValue = prop => {
+const renderPropValue = (prop) => {
   const types = {
     function: '{() => ...}',
     string: `"${prop}"`,
@@ -24,16 +24,16 @@ const renderPropValue = prop => {
   };
 
   return types[typeof prop] || prop;
-}
+};
 
-const getProps = props => {
+const getProps = (props) => {
   const indentation = new Array(3).join(' ');
 
   return Object
     .entries(props)
     .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
     .join(`\n${indentation}`);
-}
+};
 
 const componentToString = (component, level = 0) => {
   const indentation = new Array(3 * level).join(' ');
@@ -47,14 +47,13 @@ const componentToString = (component, level = 0) => {
     const children = component.props ? component.props.children : null;
 
     content = `${indentation}<${name}${defaultProps ? `\n  ${getProps(defaultProps)}` : ''}`;
-    content += children ? `>\n${componentToString(children, level + 1)}\n${indentation}</${name}>` : ` />`;
-
+    content += children ? `>\n${componentToString(children, level + 1)}\n${indentation}</${name}>` : ' />';
   } else {
     content = component ? `${indentation}${component}` : '';
   }
 
   return `${content}`;
-}
+};
 
 const CodeExample = ({ component, code = componentToString(component) }) => (
   <React.Fragment>
@@ -66,5 +65,9 @@ const CodeExample = ({ component, code = componentToString(component) }) => (
   </React.Fragment>
 );
 
+CodeExample.propTypes = {
+  component: PropTypes.func.isRequired,
+  code: PropTypes.string,
+};
 
 export default CodeExample;
