@@ -1,13 +1,13 @@
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
-
-import Frame from './decorators/Frame';
+import Frame from './decorators/Frame'
 
 setOptions({
   name: 'Catho Style-Guide',
   sortStoriesByKind: true,
-  selectedAddonPanel: '@storybook/addon-knobs',
+  showAddonPanel: false,
+  addonPanelInRight: false,
 });
 
 addDecorator(Frame);

@@ -2,10 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Colors from '../../components/Colors';
+import Highlight from 'react-highlight';
+import HowToImport from '../../.storybook/components/HowToImport'
 
 export default () => (
   <React.Fragment>
-    <h2>Candidates Colors</h2>
+    <p>Catho has some segments, below you can see the <strong>Candidates</strong> default color palette.</p>
+    
+    <HowToImport importModules={'Colors'} />
+    
     <ColorPallete>
       {
         Object.keys(Colors).map(item => (
@@ -31,9 +36,18 @@ export default () => (
       }
     </ColorPallete>
 
-    <h2>A bit more about Catho colors</h2>
+    <h2>Code</h2>
+    <p>Some samples on how the Color object are structured</p>
+    <Highlight language="javascript" className="highlight">
+      {"console.log(Colors.PRIMARY.BLUE.CORNFLOWER);\n/*returns: #6EA5D6;*/"}
+      {"\n\nconsole.log(Colors.SECONDARY.YELLOW.APRICOT)\n/*returns: #FCBF62/*"}
+      {"\n\nconsole.log(Colors.SECONDARY.PINK.PIG)\n/*returns: #E76E97/*"}
+      {"\n\nconsole.log(Colors.NEUTRAL.GRAY.WHITE)\n/*returns: #f9f9f9/*"}
+      {"\n\nconsole.log(Colors.NEUTRAL.DARKERGRAY.WARMGREY)\n/*returns: #999999/*"}
+    </Highlight>
 
-    <p>A sub-divisão das cores da paleta da <strong>Catho</strong> são: primária, secundária, cinzas e social</p>
+    <h2>A bit more about Catho colors</h2>
+    <p>Here's how the <strong>colors</strong> are segmented</p>
 
     <h3>Blue</h3>
     <p>It is the predominant color of the logo and this reflects in the main pages of the site, being present in the titles and sub-titles and prominent spaces.</p>

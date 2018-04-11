@@ -1,9 +1,7 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import { setOptions } from '@storybook/addon-options';
-import ColorPalette from '../../components/Colors';
-
-import Heading from './Heading';
+import 'semantic-ui-css/semantic.min.css';
+import ColorPalette from '../../../components/Colors';
 
 const Container = styled.div`
   padding: 10px 20px;
@@ -30,9 +28,8 @@ injectGlobal`
   }
 
   code {
-    background-color: #f9f2f4;
-    color: #c7254e;
-    padding: 5px;
+    background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+    padding: 2px 5px;
   }
 
   .highlight {
@@ -40,24 +37,35 @@ injectGlobal`
   }
 
   h2 {
-    border-bottom: 1px solid ${ColorPalette.NEUTRAL.DARKEYGRAY.WARMGREY};
+    border-bottom: 1px solid ${ColorPalette.NEUTRAL.GRAY.WHITETHREE};
     padding-bottom: 8px;
+    font-weight: normal;
+    margin: 10px 0;
   }
 
   h3 {
     margin-top: 40px;
   }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+    }
+  }
 `;
 
-const options = {
-  showAddonPanel: false,
-  addonPanelInRight: false,
-};
-
-const Frame = (storyFn, { story }) => (
+const Frame = storyFn => (
   <React.Fragment>
-    <Heading title={story} />
-    { setOptions(options) }
     <Container>
       { storyFn() }
     </Container>
