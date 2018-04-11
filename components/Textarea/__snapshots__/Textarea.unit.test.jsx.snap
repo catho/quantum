@@ -15,16 +15,17 @@ exports[`Radio component Should match the snapshot 1`] = `
   <textarea
     className="sc-bxivhb eVcrkt"
     id="maxLength"
-    maxLength="50"
+    maxLength={50}
     name="maxLength"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder={null}
+    placeholder=""
   />
   <div
     className="sc-ifAKCX WOpjk"
   >
+    
     <span
       className="sc-EHOje iiwpkQ"
     >
