@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import ColorPalette from '../../../components/Colors';
 import 'semantic-ui-css/semantic.min.css';
+import ColorPalette from '../../../components/Colors';
 
 const Container = styled.div`
   padding: 10px 20px;
@@ -64,7 +64,7 @@ injectGlobal`
   }
 `;
 
-const Frame = (storyFn) => (
+const Frame = storyFn => (
   <React.Fragment>
     <Container>
       { storyFn() }

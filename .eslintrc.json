@@ -14,7 +14,12 @@
             },
             "allowChildren": false
         }],
-        "no-underscore-dangle": 0
+        "no-underscore-dangle": 0,
+        "no-unused-expressions": [
+            "error", {
+                "allowTaggedTemplates": true
+            }
+        ]
     },
     "globals": {
         "window": true,
