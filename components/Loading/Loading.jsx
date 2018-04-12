@@ -5,26 +5,17 @@ import PropTypes from 'prop-types';
 import theme from '../../theme';
 import Colors from '../Colors';
 
-const animationDuration = '0.4s';
-
 const Wrapper = styled.div`
   ${theme.mixins.transition()};
 
   width: ${theme.sizes.loading};
   height: ${theme.sizes.loading};
   border-radius: ${theme.sizes.loading};
-  animation-duration: ${animationDuration};
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
+  animation-name: ${props => (props.visible ? 'show;' : 'hide;')}
 
-  ${props => props.in && `
-    animation-name: loader-in;
-  `}
-
-  ${props => props.out && `
-    animation-name: loader-out;
-  `}
-
-  @keyframes loader-in {
+  @keyframes show {
     0% {
       transform: scale(0);
     }
@@ -34,7 +25,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @keyframes loader-out {
+  @keyframes hide {
     from {
       transform: scale(1);
     }
@@ -87,9 +78,9 @@ const Circle = styled.circle`
  * to be used in fixed overflows and request dependent user inputs
  */
 const Loading = ({
-  viewBox, cx, cy, r,
+  viewBox, cx, cy, r, ...rest
 }) => (
-  <Wrapper>
+  <Wrapper {...rest}>
     <Svg viewBox={viewBox}>
       <Circle cx={cx} cy={cy} r={r} />
     </Svg>
@@ -97,6 +88,7 @@ const Loading = ({
 );
 
 Loading.defaultProps = {
+  visible: true,
   viewBox: '25 25 50 50',
   cx: 50,
   cy: 50,
@@ -104,6 +96,8 @@ Loading.defaultProps = {
 };
 
 Loading.propTypes = {
+  /** Toggles the visibilitty */
+  visible: PropTypes.bool,
   /**
    * For the svg html tag, it allows you to specify that a given set of graphics
    * stretch to fit a particular container element.
