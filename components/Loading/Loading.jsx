@@ -7,51 +7,7 @@ import Colors from '../Colors';
 
 const animationDuration = '0.4s';
 
-const Overlay = styled.div`
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background: rgba(${Colors.NEUTRAL.GRAY.WHITE}, .8);
-  z-index: 10;
-  // opacity: 0;
-  animation-duration: ${animationDuration};
-  animation-fill-mode: forwards;
-
-  ${props => props.in && `
-    animation-name: overlay-in;
-  `}
-
-  ${props => props.out && `
-    animation-name: overlay-out;
-  `}
-
-  @keyframes overlay-in {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes overlay-out {
-    from {
-      opacity: 1;
-    }
-
-    to {
-      opacity: 0;
-    }
-  }
-`;
-
-const LoadingWrapper = styled.div`
+const Wrapper = styled.div`
   ${theme.mixins.transition()};
 
   width: ${theme.sizes.loading};
@@ -90,7 +46,7 @@ const LoadingWrapper = styled.div`
   }
 `;
 
-const StyledSvg = styled.svg`
+const Svg = styled.svg`
   animation: rotate 2s linear infinite;
 
   @keyframes rotate {
@@ -100,7 +56,7 @@ const StyledSvg = styled.svg`
   }
 `;
 
-const StyledCircle = styled.circle`
+const Circle = styled.circle`
   fill: none;
   stroke: ${Colors.PRIMARY.BLUE.PEACOCK};
   stroke-width: 3;
@@ -127,35 +83,42 @@ const StyledCircle = styled.circle`
   }
 `;
 
+/** An svg stand alone loading element,
+ * to be used in fixed overflows and request dependent user inputs
+ */
 const Loading = ({
-  viewBox,
-  cx,
-  cy,
-  r,
+  viewBox, cx, cy, r,
 }) => (
-  <Overlay>
-    <LoadingWrapper>
-      <StyledSvg viewBox={viewBox} >
-        <StyledCircle cx={cx} cy={cy} r={r} />
-      </StyledSvg>
-    </LoadingWrapper>
-  </Overlay>
+  <Wrapper>
+    <Svg viewBox={viewBox}>
+      <Circle cx={cx} cy={cy} r={r} />
+    </Svg>
+  </Wrapper>
 );
 
 Loading.defaultProps = {
   viewBox: '25 25 50 50',
-  cx: '50',
-  cy: '50',
-  r: '12',
-  // active: true,
+  cx: 50,
+  cy: 50,
+  r: 12,
 };
 
 Loading.propTypes = {
+  /**
+   * For the svg html tag, it allows you to specify that a given set of graphics
+   * stretch to fit a particular container element.
+   * The value of the viewBox attribute is a list of four numbers min-x, min-y, width and height,
+   * separated by whitespace and/or a comma, which specify a rectangle in user space which
+   * should be mapped to the bounds of the viewport established by the given element.
+   *
+   */
   viewBox: PropTypes.string,
-  cx: PropTypes.string,
-  cy: PropTypes.string,
-  r: PropTypes.string,
-  // active: PropTypes.bool,
+  /** For the circle html tag, it defines the x-axis coordinate of the center element */
+  cx: PropTypes.number,
+  /** For the circle html tag, it defines the y-axis coordinate of the center element */
+  cy: PropTypes.number,
+  /** For the circle html tag, it defines the radius of the element */
+  r: PropTypes.number,
 };
 
 export default Loading;
