@@ -83,6 +83,7 @@ Modal.defaultProps = {
 
 Modal.propTypes = {
   children: PropTypes.node,
+  /** function to close the modal */
   closeModal: PropTypes.func.isRequired,
   title: PropTypes.string,
   opened: PropTypes.bool,
