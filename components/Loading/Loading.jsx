@@ -5,15 +5,16 @@ import PropTypes from 'prop-types';
 import theme from '../../theme';
 import Colors from '../Colors';
 
-const Wrapper = styled.div`
-  ${props => props.theme.mixins.transition()};
+const sizeStr = ({ size }) => `${size}px`;
 
-  width: ${props => props.theme.sizes.loading};
-  height: ${props => props.theme.sizes.loading};
-  border-radius: ${props => props.theme.sizes.loading};
+const Wrapper = styled.div`
+  ${({ theme: t }) => t.mixins.transition()};
+  width: ${sizeStr};
+  height: ${sizeStr};
+  border-radius: ${sizeStr};
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  animation-name: ${props => (props.visible ? 'show;' : 'hide;')}
+  animation-name: ${({ visible }) => (visible ? 'show;' : 'hide;')}
 
   @keyframes show {
     0% {
@@ -75,15 +76,14 @@ const Circle = styled.circle`
 `;
 
 /** An svg stand alone loading element,
- * to be used in fixed overflows and request dependent user inputs
  */
 const Loading = ({
-  viewBox, cx, cy, r, ...rest
+  ...props
 }) => (
   <ThemeProvider theme={theme}>
-    <Wrapper {...rest}>
-      <Svg viewBox={viewBox}>
-        <Circle cx={cx} cy={cy} r={r} />
+    <Wrapper {...props} >
+      <Svg viewBox="25 25 50 50">
+        <Circle cx="50" cy="50" r="12" />
       </Svg>
     </Wrapper>
   </ThemeProvider>
@@ -91,30 +91,14 @@ const Loading = ({
 
 Loading.defaultProps = {
   visible: true,
-  viewBox: '25 25 50 50',
-  cx: 50,
-  cy: 50,
-  r: 12,
+  size: Number(theme.sizes.loading.replace('px', '')),
 };
 
 Loading.propTypes = {
   /** Toggles the visibilitty */
   visible: PropTypes.bool,
-  /**
-   * For the svg html tag, it allows you to specify that a given set of graphics
-   * stretch to fit a particular container element.
-   * The value of the viewBox attribute is a list of four numbers min-x, min-y, width and height,
-   * separated by whitespace and/or a comma, which specify a rectangle in user space which
-   * should be mapped to the bounds of the viewport established by the given element.
-   *
-   */
-  viewBox: PropTypes.string,
-  /** For the circle html tag, it defines the x-axis coordinate of the center element */
-  cx: PropTypes.number,
-  /** For the circle html tag, it defines the y-axis coordinate of the center element */
-  cy: PropTypes.number,
-  /** For the circle html tag, it defines the radius of the element */
-  r: PropTypes.number,
+  /** SVG canvas size, in px */
+  size: PropTypes.number,
 };
 
 export default Loading;
