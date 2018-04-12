@@ -57,46 +57,35 @@ const ModalText = styled.p`
   margin: 5px 0;
 `;
 
-class Modal extends React.Component {
-  constructor({ show }) {
-    super();
-    this.state = {
-      show,
-    };
-  }
+const Modal = ({
+  title,
+  children,
+  closeModal,
+  opened,
+}) => opened && (
+  <ModalOverlay>
+    <ModalContent>
+      <ModalClose onClick={closeModal}>x</ModalClose>
+      {title && (<ModalTitle>{title}</ModalTitle>)}
+      <ModalText>
+        {children}
+      </ModalText>
+    </ModalContent>
+  </ModalOverlay>
+);
 
-  handleClose = () => {
-    this.setState({
-      show: false,
-    });
-  }
-
-  render() {
-    const { title, children } = this.props;
-    return this.state.show && (
-      <ModalOverlay>
-        <ModalContent>
-          <ModalClose onClick={this.handleClose}>x</ModalClose>
-          {title && (<ModalTitle>{title}</ModalTitle>)}
-          <ModalText>
-            {children}
-          </ModalText>
-        </ModalContent>
-      </ModalOverlay>
-    );
-  }
-}
 
 Modal.defaultProps = {
   title: 'Generic title',
-  show: true,
   children: 'Generic message',
+  opened: false,
 };
 
 Modal.propTypes = {
   children: PropTypes.node,
-  show: PropTypes.bool,
+  closeModal: PropTypes.func.isRequired,
   title: PropTypes.string,
+  opened: PropTypes.bool,
 };
 
 export default Modal;
