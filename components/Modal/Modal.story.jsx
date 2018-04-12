@@ -41,7 +41,6 @@ class ModalStory extends React.Component {
           </Tab>
         </TabbedView>
       </Heading>
-
     );
   }
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { rgba } from 'polished';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import Colors from '../Colors';
 import theme from '../../theme';
 
 const ModalOverlay = styled.div`
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: ${rgba(Colors.NEUTRAL.GRAY.WHITE, 0.8)};
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -73,7 +74,6 @@ const Modal = ({
     </ModalContent>
   </ModalOverlay>
 );
-
 
 Modal.defaultProps = {
   title: 'Generic title',
