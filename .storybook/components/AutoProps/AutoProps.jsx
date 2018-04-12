@@ -35,8 +35,6 @@ class AutoProps extends React.Component {
     this.state = props.component.type.defaultProps;
   }
 
-  shouldComponentUpdate = () => false;
-
   handleChange = (e, props) => {
     const { type } = props;
     let value = props.value || props.checked;
