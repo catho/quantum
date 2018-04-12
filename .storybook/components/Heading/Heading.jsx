@@ -30,7 +30,7 @@ const Heading = ({ atom, title, children }) => (
           height="60"
         />
         {
-          `${atom ? `<${title}/>` : title}`
+          `${atom ? `<${title} />` : title}`
         }
       </Title>
     }
