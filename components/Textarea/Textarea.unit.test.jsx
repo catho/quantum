@@ -8,7 +8,7 @@ describe('Radio component', () => {
     id="maxLength"
     name="maxLength"
     label="maxLength"
-    maxLength="50"
+    maxLength={50}
   />);
   const wrapper = shallow(<div>{textarea}</div>);
 
@@ -17,7 +17,7 @@ describe('Radio component', () => {
     expect(wrapper.find('Textarea').prop('id')).toEqual('maxLength');
     expect(wrapper.find('Textarea').prop('name')).toEqual('maxLength');
     expect(wrapper.find('Textarea').prop('label')).toEqual('maxLength');
-    expect(wrapper.find('Textarea').prop('maxLength')).toEqual('50');
+    expect(wrapper.find('Textarea').prop('maxLength')).toEqual(50);
   });
 
   it('Should match the snapshot', () => {

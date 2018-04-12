@@ -1,13 +1,23 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import Heading from '../../.storybook/components/Heading';
+import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import ComponentPanel from '../../.storybook/components/ComponentPanel';
+import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Textarea from './Textarea';
 
 const stories = storiesOf('4. Forms', module);
 stories
   .add('Textarea', () => (
-    <React.Fragment>
-      <Textarea id="default" name="default" label="Default" placeholder="Default" />
-      <Textarea id="maxlength" name="maxlength" label="With maxLength" placeholder="With maxLength" maxLength="50" />
-      <Textarea id="error" name="error" label="With error" placeholder="With error" errorMessage="Error message" maxLength="50" />
-    </React.Fragment>
+    <Heading atom title="Textarea">
+      <TabbedView>
+        <Tab title="Usage">
+          <ComponentPanel component={<Textarea />} importModules="Textarea" />
+        </Tab>
+
+        <Tab title="API">
+          <AutoPropsApi component={Textarea} />
+        </Tab>
+      </TabbedView>
+    </Heading>
   ));
