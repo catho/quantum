@@ -6,6 +6,7 @@ export default {
     radius: '4px',
     fieldHeight: '40px',
     spacing: '20px',
+    loading: '60px',
   },
   shadow: `0 2px 2px ${rgba(Colors.NEUTRAL.DARKERGRAY.BLACK, 0.1)}`,
   mixins: {

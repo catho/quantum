@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading component  should match the snapshot 1`] = `
+<div
+  className="sc-bdVaJa ebxWEN"
+  size={60}
+>
+  <svg
+    className="sc-bwzfXH byytOD"
+    viewBox="25 25 50 50"
+  >
+    <circle
+      className="sc-htpNat hoVDeK"
+      cx="50"
+      cy="50"
+      r="12"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Loading component  should match the snapshot when it's not visible 1`] = `
+<div
+  className="sc-bdVaJa kRkIcC"
+  size={60}
+>
+  <svg
+    className="sc-bwzfXH byytOD"
+    viewBox="25 25 50 50"
+  >
+    <circle
+      className="sc-htpNat hoVDeK"
+      cx="50"
+      cy="50"
+      r="12"
+    />
+  </svg>
+</div>
+`;
