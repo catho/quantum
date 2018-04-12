@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio component Should match the snapshot 1`] = `
+<div
+  className="sc-bdVaJa cWaSLh"
+>
+  <section
+    className="sc-bwzfXH jskcIb"
+  >
+    <span
+      className="sc-htpNat dHQVFX"
+      onClick={[Function]}
+    >
+      x
+    </span>
+    <h2
+      className="sc-bxivhb kIGVRW"
+    >
+      Modal Example
+    </h2>
+    <p
+      className="sc-ifAKCX cAJaE"
+    >
+      Example Message
+    </p>
+  </section>
+</div>
+`;

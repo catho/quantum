@@ -13,7 +13,7 @@ exports[`Radio component Should match the snapshot 1`] = `
      
   </label>
   <textarea
-    className="sc-bxivhb eVcrkt"
+    className="sc-bxivhb PpMSG"
     id="maxLength"
     maxLength={50}
     name="maxLength"

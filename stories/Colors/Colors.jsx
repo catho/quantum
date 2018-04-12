@@ -3,14 +3,15 @@ import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Colors from '../../components/Colors';
 import Highlight from 'react-highlight';
+import Title from '../../.storybook/components/Title';
 import HowToImport from '../../.storybook/components/HowToImport'
 
 export default () => (
   <React.Fragment>
     <p>Catho has some segments, below you can see the <strong>Candidates</strong> default color palette.</p>
-    
+
     <HowToImport importModules={'Colors'} />
-    
+
     <ColorPallete>
       {
         Object.keys(Colors).map(item => (
@@ -36,7 +37,7 @@ export default () => (
       }
     </ColorPallete>
 
-    <h2>Code</h2>
+    <Title>Code</Title>
     <p>Some samples on how the Color object are structured</p>
     <Highlight language="javascript" className="highlight">
       {"console.log(Colors.PRIMARY.BLUE.CORNFLOWER);\n/*returns: #6EA5D6;*/"}
@@ -46,7 +47,7 @@ export default () => (
       {"\n\nconsole.log(Colors.NEUTRAL.DARKERGRAY.WARMGREY)\n/*returns: #999999/*"}
     </Highlight>
 
-    <h2>A bit more about Catho colors</h2>
+    <Title>A bit more about Catho colors</Title>
     <p>Here's how the <strong>colors</strong> are segmented</p>
 
     <h3>Blue</h3>

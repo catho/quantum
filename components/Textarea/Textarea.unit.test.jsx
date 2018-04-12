@@ -12,7 +12,7 @@ describe('Radio component', () => {
   />);
   const wrapper = shallow(<div>{textarea}</div>);
 
-  it('Should verify if Radio contains the required properties', () => {
+  it('Should verify if Textarea contains the required properties', () => {
     expect(wrapper.find('Textarea')).toHaveLength(1);
     expect(wrapper.find('Textarea').prop('id')).toEqual('maxLength');
     expect(wrapper.find('Textarea').prop('name')).toEqual('maxLength');
