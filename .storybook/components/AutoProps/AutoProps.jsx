@@ -1,22 +1,44 @@
+/* eslint-disable */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Input, Checkbox, Select } from 'semantic-ui-react';
-
 import ColorPalette from '../../../components/Colors';
 
 const removeQuotes = str => str.replace(/'/g, '');
 
+function changePropValue(obj, path, value) {
+  let prop;
+
+  if (!path.length) {
+    return obj;
+  }
+
+  for (var i = 0, iLen = path.length - 1; i < iLen; i+=1) {
+    prop = path[i];
+
+    const candidate = obj[prop];
+    if (candidate !== undefined) {
+      obj = candidate;
+    } else {
+      break;
+    }
+  }
+
+  return obj[path[i]] = value;
+}
+
 class AutoProps extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = props.component.type.defaultProps;
   }
 
+  shouldComponentUpdate = () => false;
+
   handleChange = (e, props) => {
     const { type } = props;
-
     let value = props.value || props.checked;
 
     switch (type) {
@@ -33,12 +55,23 @@ class AutoProps extends React.Component {
         break;
     }
 
-    this.setState({ [props.name]: value }, () => {
-      this.props.changeState(this.state);
-    });
+    if (props.path && props.path.length > 0) {
+      let message = Object.assign({}, this.state[props.path[0]]);
+      let paths = props.path.slice(1);
+      paths.push(props.name);
+
+      changePropValue(message, paths, value);
+      this.setState({ message }, () => {
+        this.props.changeState(this.state);
+      });
+    }else {
+      this.setState({ [props.name]: value }, () => {
+        this.props.changeState(this.state);
+      });
+    }
   }
 
-  renderComponentByType = (propName, { name, value }) => {
+  renderComponentByType = (propPath, propName, { name, value }) => {
     let component;
 
     switch (name) {
@@ -84,12 +117,21 @@ class AutoProps extends React.Component {
           <Input
             onChange={this.handleChange}
             name={propName}
+            path={propPath}
           />
         );
         break;
       }
+      case 'shape': {
+        component = `{ `;
+        Object.entries(value).map( ([name, value]) => {
+          component += `${name}: ${value.name}, \n`;
+        });
+        component = component.substring(0, component.length-2) + ` }`;
+        break;
+      }
       default: {
-        component = 'Not implemented';
+        component = `Type not yet implemented (${name})`;
         break;
       }
     }
@@ -97,31 +139,70 @@ class AutoProps extends React.Component {
     return component;
   };
 
+  getPropRowTemplate = (propPath, propName, propObject, level) => {
+    const indentation = new Array(3 * propPath.length).join(' ');
+
+    return (
+      <PropsRow key={`${propName}=${propObject}`}>
+        <PropsData>
+          <IndentSpan>
+            {indentation}
+            { propPath.length > 0 ? `└` : `` }
+          </IndentSpan>
+
+          <CodeBlock>{propName}</CodeBlock>
+        </PropsData>
+
+        <PropsData>
+          {this.renderComponentByType(propPath, propName, propObject)}
+        </PropsData>
+      </PropsRow>
+    )
+  }
+
+  parseShapes = (propPath, propName, { name: propType, value = null }) => {
+    let propRows = [];
+
+    if(propType == 'shape') {
+      const path = Array.from(propPath);
+      path.push(propName);
+
+      Object.entries(value)
+      .map(([name, value]) => {
+        propRows.push(this.getPropRowTemplate(path, name, value));
+        propRows.push(this.parseShapes(path, name, value));
+      })
+    }
+    else {
+      return;
+    }
+
+    return propRows;
+  }
+
+  generateRows = (props) => {
+    const propRows = [];
+
+    Object.entries(props)
+    .map(([name, value]) => {
+      propRows.push(this.getPropRowTemplate([], name, value.type));
+      propRows.push(this.parseShapes([], name, value.type));
+    });
+
+    return propRows;
+  }
+
   render() {
     const { component: { type: Component } } = this.props;
+    const propRows = this.generateRows(Component.__docgenInfo.props);
 
     return (
       <React.Fragment>
         <h2>Props</h2>
+
         <table>
           <tbody>
-            {
-              Component.__docgenInfo &&
-                Object
-                  .entries(Component.__docgenInfo.props)
-                  .map(([name, value]) => (
-                    <PropsRow key={`${name}=${value}`}>
-                      <PropsData>
-                        <CodeBlock>
-                          {name}
-                        </CodeBlock>
-                      </PropsData>
-                      <PropsData>
-                        {this.renderComponentByType(name, value.type)}
-                      </PropsData>
-                    </PropsRow>
-                  ))
-            }
+            { propRows.map( row => { return row }) }
           </tbody>
         </table>
       </React.Fragment>
@@ -137,6 +218,10 @@ const CodeBlock = styled.pre`
   margin-top: 0;
   padding:2px 5px;
 `;
+
+const IndentSpan = styled.span`
+  white-space:pre;
+`
 
 const PropsRow = styled.tr`
   padding: 15px;
