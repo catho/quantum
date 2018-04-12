@@ -9,7 +9,7 @@ exports[`Loading component  should match the snapshot 1`] = `
     viewBox="25 25 50 50"
   >
     <circle
-      className="sc-htpNat jIdEjQ"
+      className="sc-htpNat hoVDeK"
       cx={50}
       cy={50}
       r={12}
@@ -27,7 +27,7 @@ exports[`Loading component  should match the snapshot when it's not visible 1`] 
     viewBox="25 25 50 50"
   >
     <circle
-      className="sc-htpNat jIdEjQ"
+      className="sc-htpNat hoVDeK"
       cx={50}
       cy={50}
       r={12}

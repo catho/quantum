@@ -1,16 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import theme from '../../theme';
 import Colors from '../Colors';
 
 const Wrapper = styled.div`
-  ${theme.mixins.transition()};
+  ${props => props.theme.mixins.transition()};
 
-  width: ${theme.sizes.loading};
-  height: ${theme.sizes.loading};
-  border-radius: ${theme.sizes.loading};
+  width: ${props => props.theme.sizes.loading};
+  height: ${props => props.theme.sizes.loading};
+  border-radius: ${props => props.theme.sizes.loading};
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
   animation-name: ${props => (props.visible ? 'show;' : 'hide;')}
@@ -53,8 +53,8 @@ const Circle = styled.circle`
   stroke-width: 3;
   stroke-dasharray: 110, 200;
   stroke-dashoffset: -10;
-  animation: dash 2s ease-in-out infinite;
   stroke-linecap: round;
+  animation: dash 2s ease-in-out infinite;
 
   @keyframes dash {
     0% {
@@ -80,11 +80,13 @@ const Circle = styled.circle`
 const Loading = ({
   viewBox, cx, cy, r, ...rest
 }) => (
-  <Wrapper {...rest}>
-    <Svg viewBox={viewBox}>
-      <Circle cx={cx} cy={cy} r={r} />
-    </Svg>
-  </Wrapper>
+  <ThemeProvider theme={theme}>
+    <Wrapper {...rest}>
+      <Svg viewBox={viewBox}>
+        <Circle cx={cx} cy={cy} r={r} />
+      </Svg>
+    </Wrapper>
+  </ThemeProvider>
 );
 
 Loading.defaultProps = {
