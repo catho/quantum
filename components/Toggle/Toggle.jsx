@@ -61,24 +61,13 @@ const StyledLabel = styled(Label)`
 `;
 
 class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      checked: props.checked,
-    };
-  }
-
-  handleChange = (event) => {
-    this.setState({
-      checked: event.target.checked,
-    }, () => this.props.onChange({
-      checked: this.state.checked,
-    }));
+  handleClick = () => {
+    this.props.onChange({ checked: !this.props.checked });
   }
 
   render() {
     const {
+      checked,
       id,
       label,
       onBlur,
@@ -88,11 +77,11 @@ class Toggle extends React.Component {
     return (
       <div>
         <StyledInput
-          checked={this.state.checked}
+          checked={checked}
           id={id}
           type="checkbox"
           onBlur={onBlur}
-          onChange={this.handleChange}
+          onClick={this.handleClick}
           onFocus={onFocus}
         />
         <StyledLabel htmlFor={id}>{label}</StyledLabel>

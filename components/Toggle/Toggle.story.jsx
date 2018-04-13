@@ -12,7 +12,7 @@ stories
     <Heading atom title="Toggle">
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel component={<Toggle />} importModules="Toggle" />
+          <ComponentPanel component={<Toggle id="toggle" />} importModules="Toggle" />
         </Tab>
 
         <Tab title="API">
