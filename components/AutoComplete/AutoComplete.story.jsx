@@ -7,12 +7,25 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import AutoComplete from './AutoComplete';
 
-storiesOf('5. AutoComplete', module)
+const autoComplete = (
+  <AutoComplete dataSource={[
+      'Brazil',
+      'Germany',
+      'Mexico',
+      'Usa',
+    ]}
+  />
+);
+
+storiesOf('3. Forms', module)
   .add('AutoComplete', () => (
     <Heading atom title="AutoComplete">
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel component={<AutoComplete />} importModules="AutoComplete" />
+          <ComponentPanel
+            component={autoComplete}
+            importModules="AutoComplete"
+          />
         </Tab>
 
         <Tab title="API">
