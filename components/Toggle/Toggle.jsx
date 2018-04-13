@@ -25,7 +25,7 @@ const StyledInput = styled.input`
 const StyledLabel = styled(Label)`
   cursor: pointer;
   display: inline-block;
-  padding-right: 4em;
+  padding-right: 54px;
   position: relative;
 
 
@@ -36,11 +36,11 @@ const StyledLabel = styled(Label)`
 
   &:before {
     background: ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
-    border-radius: .6em;
+    border-radius: 10px;
     content: '';
     height: 16px;
     position: absolute;
-    right: .1em;
+    right: 0;
     transform: translateY(-50%);
     top: 50%;
     width: 42px;
