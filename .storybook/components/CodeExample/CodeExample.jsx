@@ -41,19 +41,18 @@ const getProps = (props) => {
     .join(`\n${indentation}`);
 };
 
-const componentToString = (component, level = 0) => {
+const componentToString = (component, state, level = 0) => {
   const indentation = new Array(3 * level).join(' ');
 
   let content;
 
   if (typeof component === 'object') {
-    const { type } = component;
-    const { defaultProps } = type;
+    const { type, props } = component;
     const name = type.displayName || type.name || type;
-    const children = component.props ? component.props.children : null;
+    const children = props ? props.children : null;
 
-    content = `${indentation}<${name}${defaultProps ? `\n  ${getProps(defaultProps)}` : ''}`;
-    content += children ? `>\n${componentToString(children, level + 1)}\n${indentation}</${name}>` : ' />';
+    content = `${indentation}<${name}${state ? `\n  ${getProps(state)}` : ''}`;
+    content += children ? `>\n${componentToString(children, state, level + 1)}\n${indentation}</${name}>` : ' />';
   } else {
     content = component ? `${indentation}${component}` : '';
   }
@@ -62,7 +61,7 @@ const componentToString = (component, level = 0) => {
 };
 
 /* eslint-disable */
-const CodeExample = ({ component, code = componentToString(component) }) => (
+const CodeExample = ({ component, state, code = componentToString(component, state) }) => (
   <React.Fragment>
     <h2>Code</h2>
     <CodeBlock>
@@ -74,6 +73,7 @@ const CodeExample = ({ component, code = componentToString(component) }) => (
 
 CodeExample.propTypes = {
   component: PropTypes.instanceOf(Object).isRequired,
+  state: PropTypes.instanceOf(Object).isRequired,
   code: PropTypes.string,
 };
 /* eslint-enable */

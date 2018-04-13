@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component  should match the snapshot 1`] = `
+<div
+  className="sc-bdVaJa lnUsxa"
+  type="info"
+>
+  <div
+    className="sc-bwzfXH bFHdpU"
+  />
+  <div
+    className="sc-htpNat ecwypm"
+  >
+    <strong>
+      Sample
+    </strong>
+    This is a dummy
+  </div>
+  <button
+    className="sc-bxivhb fRngHK"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+    >
+      ×
+    </span>
+  </button>
+</div>
+`;
