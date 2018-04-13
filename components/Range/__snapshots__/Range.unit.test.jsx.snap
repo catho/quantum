@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component  should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  
+  <input
+    id=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    type="range"
+    value={0}
+  />
+  
+</div>
+`;
+
+exports[`Input component  with a label should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  <label
+    className="sc-bwzfXH eQhPVJ"
+    htmlFor="range-with-label"
+  >
+     
+    Text label
+     
+  </label>
+  <input
+    id="range-with-label"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    type="range"
+    value={0}
+  />
+  
+</div>
+`;
+
+exports[`Input component  with an error message should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  
+  <input
+    id=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    type="range"
+    value={0}
+  />
+  <div
+    className="sc-bdVaJa fIlZBq"
+  >
+    Error message
+  </div>
+</div>
+`;
