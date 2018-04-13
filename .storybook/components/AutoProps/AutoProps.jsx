@@ -71,6 +71,7 @@ class AutoProps extends React.Component {
 
   renderComponentByType = (propPath, propName, { name, value }) => {
     let component;
+    console.log(name, value);
 
     switch (name) {
       case 'enum': {
