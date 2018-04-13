@@ -26,14 +26,14 @@ function changePropValue(obj, path, value)  {
     }
   }
 
-  return obj[path[i]] = value;
+  return value ? obj[path[i]] = value : obj[path[i]];
 }
 
 class AutoProps extends React.Component {
   constructor(props) {
     super(props);
 
-    const { state, changeState } = props;
+    const { state } = props;
 
     this.state = state;
   }
@@ -74,7 +74,7 @@ class AutoProps extends React.Component {
 
   renderComponentByType = (propPath, propName, { name, value }) => {
     let component;
-    let propValue = propPath.length > 0 ? this.props.state[propPath][propName] : this.props.state[propName];
+    const { [propName] : propValue } = changePropValue(this.props.state, propPath);
 
     switch (name) {
       case 'enum': {
@@ -198,8 +198,8 @@ class AutoProps extends React.Component {
   }
 
   render() {
-    const { component: { type : { __docgenInfo : { props : docGenProps} } } } = this.props;
-    const propRows = this.generateRows(docGenProps);
+    const { component: { type : { __docgenInfo : { props } } } } = this.props;
+    const propRows = this.generateRows(props);
 
     return (
       <React.Fragment>

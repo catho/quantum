@@ -10,12 +10,8 @@ class ComponentPanel extends React.Component {
   constructor(props) {
     super(props);
 
-    // const { component: { type: { defaultProps: componentProps } } } = props;
-
     const { component: { props: componentProps } } = props;
-
-
-    this.state = componentProps
+    this.state = componentProps;
   }
 
   handleChange = (state) => {
@@ -37,7 +33,7 @@ class ComponentPanel extends React.Component {
           </Col>
 
           <Col desktop={6} tablet={6}>
-            <LivePreview component={Component} state={this.state} onChange={this.handleChange}/>
+            <LivePreview component={Component} state={this.state} onChange={this.handleChange} />
             <CodeExample component={Component} state={this.state} />
           </Col>
         </Row>
