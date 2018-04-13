@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle component Should match the snapshot 1`] = `
+<div>
+  <input
+    checked={false}
+    className="sc-bwzfXH fIhLDt"
+    id="toggle"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="sc-htpNat cYwJZm sc-bdVaJa bMhKJi"
+    htmlFor="toggle"
+  >
+    Simple toggle
+  </label>
+</div>
+`;
