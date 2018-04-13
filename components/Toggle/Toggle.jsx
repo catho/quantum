@@ -70,7 +70,6 @@ class Toggle extends React.Component {
   }
 
   handleChange = (event) => {
-    console.log(event);
     this.setState({
       checked: event.target.checked,
     }, () => this.props.onChange({
