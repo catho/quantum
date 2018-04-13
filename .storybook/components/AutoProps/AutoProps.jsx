@@ -8,7 +8,7 @@ import ColorPalette from '../../../components/Colors';
 
 const removeQuotes = str => str.replace(/'/g, '');
 
-function changePropValue(obj, path, value) {
+function changePropValue(obj, path, value)  {
   let prop;
 
   if (!path.length) {
@@ -32,7 +32,10 @@ function changePropValue(obj, path, value) {
 class AutoProps extends React.Component {
   constructor(props) {
     super(props);
-    this.state = props.component.type.defaultProps;
+
+    const { state, changeState } = props;
+
+    this.state = state;
   }
 
   handleChange = (e, props) => {
@@ -71,7 +74,7 @@ class AutoProps extends React.Component {
 
   renderComponentByType = (propPath, propName, { name, value }) => {
     let component;
-    console.log(name, value);
+    let propValue = propPath.length > 0 ? this.props.state[propPath][propName] : this.props.state[propName];
 
     switch (name) {
       case 'enum': {
@@ -86,6 +89,7 @@ class AutoProps extends React.Component {
             options={options}
             onChange={this.handleChange}
             name={propName}
+            defaultValue={propValue}
           />
         );
         break;
@@ -94,7 +98,7 @@ class AutoProps extends React.Component {
         component = (
           <Checkbox
             toggle
-            checked={this.state[propName]}
+            checked={propValue}
             onChange={this.handleChange}
             name={propName}
           />
@@ -107,6 +111,7 @@ class AutoProps extends React.Component {
             type="number"
             onChange={this.handleChange}
             name={propName}
+            value={propValue}
           />
         );
         break;
@@ -117,6 +122,7 @@ class AutoProps extends React.Component {
             onChange={this.handleChange}
             name={propName}
             path={propPath}
+            value={propValue}
           />
         );
         break;
@@ -192,8 +198,8 @@ class AutoProps extends React.Component {
   }
 
   render() {
-    const { component: { type: Component } } = this.props;
-    const propRows = this.generateRows(Component.__docgenInfo.props);
+    const { component: { type : { __docgenInfo : { props : docGenProps} } } } = this.props;
+    const propRows = this.generateRows(docGenProps);
 
     return (
       <React.Fragment>

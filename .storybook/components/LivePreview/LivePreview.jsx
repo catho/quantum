@@ -18,16 +18,17 @@ const Preview = styled.div`
   background-origin: padding-box;
 `;
 
-const LivePreview = ({ component: { type: Component } }) => (
+const LivePreview = ({ component: { type: Component }, state, onChange }) => (
   <React.Fragment>
     <h2>Preview</h2>
     <Preview>
-      <Component {...Component.defaultProps} />
+      <Component {...state} onChange={onChange}/>
     </Preview>
   </React.Fragment>
 );
 
 LivePreview.propTypes = {
+  state: PropTypes.instanceOf(Object).isRequired,
   component: PropTypes.instanceOf(Object).isRequired,
 };
 

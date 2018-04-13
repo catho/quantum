@@ -10,18 +10,21 @@ class ComponentPanel extends React.Component {
   constructor(props) {
     super(props);
 
-    const { component: Component } = props;
+    // const { component: { type: { defaultProps: componentProps } } } = props;
 
-    this.component = Component;
-    this.state = this.component.type.defaultProps;
+    const { component: { props: componentProps } } = props;
+
+
+    this.state = componentProps
   }
 
   handleChange = (state) => {
     this.setState(state);
-    this.component.type.defaultProps = state;
   };
 
   render() {
+    const { component: Component } = this.props;
+
     return (
       <React.Fragment>
         <Row>
@@ -30,12 +33,12 @@ class ComponentPanel extends React.Component {
           </Col>
 
           <Col desktop={6} tablet={6}>
-            <AutoProps component={this.component} changeState={this.handleChange} />
+            <AutoProps component={Component} state={this.state} changeState={this.handleChange} />
           </Col>
 
           <Col desktop={6} tablet={6}>
-            <LivePreview component={this.component} />
-            <CodeExample component={this.component} />
+            <LivePreview component={Component} state={this.state} onChange={this.handleChange}/>
+            <CodeExample component={Component} state={this.state} />
           </Col>
         </Row>
       </React.Fragment>
