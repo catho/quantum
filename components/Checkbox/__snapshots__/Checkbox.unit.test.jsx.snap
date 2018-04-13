@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component  should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+  onClick={[Function]}
+>
+  <input
+    checked={false}
+    id=""
+    type="checkbox"
+  />
+  <label
+    className="sc-bxivhb duvTlY sc-bwzfXH eQhPVJ"
+    htmlFor=""
+  >
+     
+    Checkbox
+     
+  </label>
+</div>
+`;
