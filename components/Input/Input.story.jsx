@@ -7,7 +7,7 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Input from './Input';
 
-storiesOf('5. Input', module)
+storiesOf('3. Forms', module)
   .add('Input', () => (
     <Heading atom title="Input">
       <TabbedView>

@@ -9,10 +9,10 @@ const Title = styled.h1`
   align-items: center;
   flex-direction: row;
   text-align: left;
-  font-weight: normal;
   padding: 15px 0;
   margin: 0;
-  font-size: 32px;
+  font-size: 46px;
+  font-weight: 300;
 
   img {
     margin-right: 10px;
