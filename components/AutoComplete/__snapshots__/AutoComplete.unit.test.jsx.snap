@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoComplete component  should match the snapshot 1`] = `
+<div
+  className="sc-htpNat QOKog"
+>
+  
+  <input
+    className="sc-bxivhb ejPcYv"
+    data-mask=""
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    pattern=".*"
+    placeholder=""
+    type="text"
+    value=""
+  />
+  
+</div>
+`;
