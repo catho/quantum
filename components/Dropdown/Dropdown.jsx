@@ -13,14 +13,26 @@ const Select = styled.select`
   height: ${theme.sizes.fieldHeight};
   padding: 10px 28px 10px 10px;
   background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
-  border: solid 1px ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+  border: solid 1px ${ColorPalette.NEUTRAL.DARKERGRAY.WARMGREY};
   border-radius: ${theme.sizes.radius};
   appearance: none;
   cursor: pointer;
 
   ${props => props.error && `
-    border-color: ${ColorPalette.SECONDARY.PINK.LIPSTICK};
+    border-color: ${ColorPalette.PRIMARY.PINK.LIPSTICK};
   `}
+
+  &:focus {
+    border-color: ${ColorPalette.PRIMARY.BLUE.PEACOCK};
+    outline: 0;
+  }
+`;
+
+const Icon = styled(IconArrowDown)`
+  color: ${ColorPalette.NEUTRAL.DARKERGRAY.WARMGREY};
+  font-size: 1.5em;
+  pointer-events: none;
+  margin-left: -30px;
 `;
 
 class Dropdown extends React.Component {
@@ -74,7 +86,7 @@ class Dropdown extends React.Component {
           }
         </Select>
 
-        <IconArrowDown />
+        <Icon />
 
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </FieldGroup>
