@@ -1,23 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AutoComplete component  should match the snapshot 1`] = `
-<div
-  className="sc-htpNat QOKog"
->
-  
-  <input
-    className="sc-bxivhb ejPcYv"
-    data-mask=""
-    id=""
-    maxLength=""
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    pattern=".*"
-    placeholder=""
-    type="text"
-    value=""
-  />
-  
-</div>
+Array [
+  <div
+    className="sc-htpNat QOKog"
+  >
+    
+    <input
+      className="sc-bxivhb KpfJT"
+      data-mask=""
+      id=""
+      list="_datalist"
+      maxLength=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      pattern=".*"
+      placeholder=""
+      type="text"
+      value=""
+    />
+    
+  </div>,
+  <datalist
+    id="_datalist"
+  >
+    <option
+      value="Brazil"
+    />
+    <option
+      value="Germany"
+    />
+    <option
+      value="Mexico"
+    />
+    <option
+      value="Usa"
+    />
+  </datalist>,
+]
 `;

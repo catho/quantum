@@ -4,6 +4,14 @@ import React from 'react';
 import Input from '../Input';
 
 class AutoComplete extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      value: props.value,
+    };
+  }
+
   handleChange = (event) => {
     this.setState({
       value: event.target.value,
