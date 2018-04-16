@@ -6,7 +6,7 @@ exports[`Input component  should match the snapshot 1`] = `
 >
   
   <input
-    className="sc-bxivhb ejPcYv"
+    className="sc-bxivhb KpfJT"
     data-mask=""
     id=""
     maxLength=""
@@ -35,7 +35,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
      
   </label>
   <input
-    className="sc-bxivhb ejPcYv"
+    className="sc-bxivhb KpfJT"
     data-mask=""
     id="input-with-label"
     maxLength=""
@@ -57,7 +57,7 @@ exports[`Input component  with a regexp as pattern prop should match the snapsho
 >
   
   <input
-    className="sc-bxivhb ejPcYv"
+    className="sc-bxivhb KpfJT"
     data-mask=""
     id=""
     maxLength=""
@@ -79,7 +79,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 >
   
   <input
-    className="sc-bxivhb gLZZvn"
+    className="sc-bxivhb kdHaub"
     data-mask=""
     id=""
     maxLength=""
