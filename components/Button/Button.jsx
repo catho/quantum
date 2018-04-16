@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { darken } from 'polished';
 
+import Colors from '../Colors';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../../theme';
 import skins from './skins';
@@ -29,19 +30,22 @@ const StyledButton = styled.button`
     margin-right: auto;
   `}
 
+  ${props => props.disabled && `
+    background-color: ${Colors.NEUTRAL.GRAY.WHITETWO};
+    border: 1px solid ${Colors.NEUTRAL.GRAY.WHITETWO};
+    box-shadow: none;
+    cursor: not-allowed;
+    text-color: ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
+  `}
+
   ${(props) => {
     const skin = skins(props);
     const borderColor = skin.borderColor || skin.backgroundColor;
 
-    return `
+    return !props.disabled && `
       background-color: ${skin.backgroundColor};
       border: 1px solid ${borderColor};
       color: ${skin.textColor};
-
-      ${props.disabled ? `
-        box-shadow: none;
-        cursor: not-allowed;
-      ` : ''}
 
       ${!props.link ? `&:active {
         background: ${darken(0.05, skin.backgroundColor)};
@@ -82,7 +86,6 @@ Button.propTypes = {
     'hollow',
     'light',
     'link',
-    'disabled',
     'default',
   ]),
   type: PropTypes.oneOf([

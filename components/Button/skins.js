@@ -18,10 +18,6 @@ const skins = {
     backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
     textColor: Colors.PRIMARY.BLUE.PEACOCK,
   },
-  disabled: {
-    backgroundColor: Colors.NEUTRAL.GRAY.WHITETWO,
-    textColor: Colors.NEUTRAL.DARKERGRAY.WARMGREY,
-  },
   default: {
     backgroundColor: Colors.SECONDARY.YELLOW.TANGERINE,
     textColor: Colors.NEUTRAL.GRAY.WHITE,
