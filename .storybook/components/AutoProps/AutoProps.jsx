@@ -140,7 +140,7 @@ class AutoProps extends React.Component {
           });
           component = component.substring(0, component.length-2) + ` }`;
 
-          return 'shape';
+          return component;
         }
       },
       {
