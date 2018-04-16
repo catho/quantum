@@ -1,12 +1,12 @@
+import 'semantic-ui-css/components/reset.css';
+import 'semantic-ui-css/components/form.css';
+import 'semantic-ui-css/components/checkbox.css';
+import 'semantic-ui-css/components/dropdown.css';
+import 'semantic-ui-css/components/input.css';
+import 'semantic-ui-css/components/transition.css';
+
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import ColorPalette from '../../../components/Colors';
-
-//import 'semantic-ui-css/semantic.min.css';
-//semantic
-import 'semantic-ui-css/components/checkbox.css';
-import 'semantic-ui-css/components/input.css';
-import 'semantic-ui-css/components/dropdown.css';
 
 const Container = styled.div`
   padding: 10px 20px;
