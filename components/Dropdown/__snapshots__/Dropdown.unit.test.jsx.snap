@@ -2,29 +2,59 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="sc-bdVaJa lnUsxa"
-  type="info"
+  className="sc-htpNat QOKog"
 >
-  <div
-    className="sc-bwzfXH bFHdpU"
-  />
-  <div
-    className="sc-htpNat ecwypm"
+  
+  <select
+    className="sc-bxivhb dYfIk"
+    name="Dropdown"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    value={null}
   >
-    <strong>
-      Sample
-    </strong>
-    This is a dummy
-  </div>
-  <button
-    className="sc-bxivhb fRngHK"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden="true"
+    <option
+      disabled={true}
+      value=""
     >
-      ×
-    </span>
-  </button>
+      Select...
+    </option>
+    <option
+      value="foo"
+    >
+      foo
+    </option>
+    <option
+      value="bar"
+    >
+      bar
+    </option>
+    <option
+      value="baz"
+    >
+      baz
+    </option>
+  </select>
+  <svg
+    className="sc-ifAKCX fKaxbb"
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    style={
+      Object {
+        "color": undefined,
+        "verticalAlign": "middle",
+      }
+    }
+    viewBox="0 0 40 40"
+    width="1em"
+  >
+    <g>
+      <path
+        d="m12.3 13l7.7 7.7 7.7-7.7 2.3 2.4-10 10-10-10z"
+      />
+    </g>
+  </svg>
+  
 </div>
 `;

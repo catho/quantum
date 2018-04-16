@@ -1,123 +1,128 @@
-import PropTypes from 'prop-types';
-import styled, { ThemeProvider } from 'styled-components';
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down';
+import ColorPalette from '../Colors';
+import theme from '../../theme';
+import { FieldGroup, Label, ErrorMessage } from '../shared';
 
-import GlobalTheme from '../../theme';
-import ComponentTheme from './ComponentTheme';
+const Select = styled.select`
+  ${theme.mixins.transition()};
 
-/** A Dropdown component that alerts user of something */
+  width: 100%;
+  height: ${theme.sizes.fieldHeight};
+  padding: 10px 28px 10px 10px;
+  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
+  border: solid 1px ${ColorPalette.NEUTRAL.DARKERGRAY.WARMGREY};
+  border-radius: ${theme.sizes.radius};
+  appearance: none;
+  cursor: pointer;
+
+  ${props => props.error && `
+    border-color: ${ColorPalette.PRIMARY.PINK.LIPSTICK};
+  `}
+
+  &:focus {
+    border-color: ${ColorPalette.PRIMARY.BLUE.PEACOCK};
+    outline: 0;
+  }
+`;
+
+const Icon = styled(IconArrowDown)`
+  color: ${ColorPalette.NEUTRAL.DARKERGRAY.WARMGREY};
+  font-size: 1.5em;
+  pointer-events: none;
+  margin-left: -30px;
+`;
+
 class Dropdown extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      show: this.props.show,
+      selectedItem: null,
     };
-
-    if (this.props.duration) {
-      this.handleAutoDestruction();
-    }
   }
 
-  hideModal = () => {
-    this.setState({ show: false }, this.props.onClose ? this.props.onClose() : null);
-  }
+  handleChange = (e) => {
+    const { value: selectedItem } = e.target;
 
-  handleAutoDestruction = () => {
-    setTimeout(() => {
-      this.hideModal();
-    }, this.props.duration * 1000);
+    this.setState({ selectedItem }, () => {
+      this.props.onSelectItem({ selectedItem: this.state.selectedItem });
+    });
   }
 
   render() {
-    const { message: { title, text, type } } = this.props;
+    const {
+      name,
+      items,
+      label,
+      id,
+      error,
+      placeholder,
+      ...rest
+    } = this.props;
 
-    const drop = this.state.show ? (
-      <ThemeProvider theme={GlobalTheme}>
-        <DropdownWrapper type={type}>
-          <DropdownIcon />
+    const { selectedItem } = this.state;
+    const value = selectedItem;
 
-          <DropdownMessage>
-            <strong>
-              {title}
-            </strong>
+    return (
+      <FieldGroup>
+        { label && <Label htmlFor={id}> {label} </Label> }
 
-            {text}
-          </DropdownMessage>
+        <Select
+          name={name}
+          value={value}
+          onChange={this.handleChange}
+          {...rest}
+        >
+          {placeholder && <option value="" disabled>{placeholder}</option>}
 
-          <DropdownClose onClick={this.hideModal}><span aria-hidden="true">×</span></DropdownClose>
-        </DropdownWrapper>
-      </ThemeProvider>
-    ) : null;
+          {
+            items &&
+            items.map(({ key, value: itemValue }) => (
+              <option key={key} value={key}>{itemValue}</option>
+            ))
+          }
+        </Select>
 
-    return drop;
+        <Icon />
+
+        {error && <ErrorMessage>{error}</ErrorMessage>}
+      </FieldGroup>
+    );
   }
 }
 
-const DropdownWrapper = styled.div`
-  ${props => ComponentTheme[props.type]}
-  padding: ${props => props.theme.sizes.spacing};
-  border-radius: ${props => props.theme.sizes.radius};
-  position: relative;
-`;
-
-const DropdownIcon = styled.div`
-`;
-
-const DropdownMessage = styled.div`
-  strong {
-    display: ${props => (props.inline ? 'block' : 'inline-block')};
-    margin-right: 5px;
-  }
-  margin-right: 15px;
-`;
-
-const DropdownClose = styled.button`
-    position: absolute;
-    cursor: pointer;
-    top: 12px;
-    right: 0;
-    padding: .75rem 1.25rem;
-    color: inherit;
-    background-color: transparent;
-    border: 0;
-    -webkit-appearance: none;
-`;
-
 Dropdown.defaultProps = {
-  show: true,
-  duration: 0,
-  message: {
-    title: 'Sample', text: 'This is a dummy', type: 'info',
-  },
-  inline: true,
-  onClose: () => {},
+  name: 'Dropdown',
+  id: 'dropdown',
+  placeholder: 'Select...',
+  label: '',
+  error: '',
+  items: [
+    { key: 'foo', value: 'foo' },
+    { key: 'bar', value: 'bar' },
+    { key: 'baz', value: 'baz' },
+  ],
+  onSelectItem: () => {},
+  onBlur: () => {},
+  onFocus: () => {},
 };
 
 Dropdown.propTypes = {
-  /** it says to component if it should appear or not */
-  show: PropTypes.bool,
-  /** time in seconds that Dropdown is visible */
-  duration: PropTypes.number,
-  /** object with message details */
-  message: PropTypes.shape({
-    /** message title */
-    title: PropTypes.string,
-    /** message text */
-    text: PropTypes.string,
-    /** message type */
-    type: PropTypes.oneOf([
-      'default',
-      'success',
-      'warning',
-      'error',
-      'info',
-    ]),
-  }),
-  /** it says if the title should stay in the same line of the message itself */
-  inline: PropTypes.bool, // eslint-disable-line react/no-unused-prop-types
-  /** callback function */
-  onClose: PropTypes.func,
+  name: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  id: PropTypes.string,
+  error: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    key: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    value: PropTypes.node,
+  })),
+  onSelectItem: PropTypes.func,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
 };
 
 export default Dropdown;

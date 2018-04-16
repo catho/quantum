@@ -18,6 +18,10 @@ const StyledInput = styled.input`
   font-size: 14px;
   box-sizing: border-box;
 
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
   ${props => props.error && `
     border-color: ${Colors.ERROR};
   `}

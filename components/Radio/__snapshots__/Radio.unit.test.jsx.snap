@@ -2,10 +2,10 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <span
-  className="sc-bdVaJa dtcrmB"
+  className="sc-bwzfXH ktIcDK"
 >
   <input
-    className="sc-bwzfXH ljQUeQ"
+    className="sc-htpNat eYsVPI"
     id="radio"
     name="radio"
     onChange={[MockFunction]}
