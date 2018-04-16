@@ -39,22 +39,17 @@ class AutoProps extends React.Component {
   }
 
   handleChange = (e, props) => {
-    const { type } = props;
+    const { type = 'default' } = props;
     let value = props.value || props.checked;
 
-    switch (type) {
-      case 'number':
-        value = Number.isNaN(value) ? 0 : Number(value);
-        break;
-      case 'text':
-        value = value ? String(value) : '';
-        break;
-      case 'checkbox':
-        value = Boolean(value);
-        break;
-      default:
-        break;
+    const parsedValue = {
+      number: value => (Number.isNaN(value) ? 0 : Number(value)),
+      text: value => (value ? String(value) : ''),
+      checkbox: value => Boolean(value),
+      default: value => value,
     }
+
+    value = parsedValue[type](value);
 
     if (props.path && props.path.length > 0) {
       let message = Object.assign({}, this.state[props.path[0]]);
@@ -72,79 +67,101 @@ class AutoProps extends React.Component {
     }
   }
 
-  renderComponentByType = (propPath, propName, { name, value }) => {
-    let component;
-    const { [propName]: propValue } = changePropValue(this.props.state, propPath);
+  getPropController = (propPath, propName, propValue, propKey) => {
+    const propControllers = [
+      {
+        type: 'enum',
+        controller: (propPath, propName, { name, value }) => {
+          let options = [];
 
-    switch (name) {
-      case 'enum': {
-        const options = [];
-        value.map((v, i) => {
-          const str = removeQuotes(v.value);
-          options.push({ key: i, value: str, text: str });
-          return options;
-        });
-        component = (
-          <Select
-            options={options}
-            onChange={this.handleChange}
-            name={propName}
-            defaultValue={propValue}
-            path={propPath}
-          />
-        );
-        break;
-      }
-      case 'bool': {
-        component = (
-          <Checkbox
+          value.map((v, i) => {
+            const str = removeQuotes(v.value);
+            options.push({ key: i, value: str, text: str });
+            return options;
+          });
+
+          return (
+            <Select
+             options={options}
+             onChange={this.handleChange}
+             name={propName}
+             defaultValue={propValue}
+             path={propPath}
+            />
+          )
+        }
+      },
+      {
+        type: 'bool',
+        controller: (propPath, propName, { name, value }) => {
+          return (
+            <Checkbox
             toggle
             checked={propValue}
             onChange={this.handleChange}
             name={propName}
             path={propPath}
-          />
-        );
-        break;
-      }
-      case 'number': {
-        component = (
-          <Input
-            type="number"
+            />
+          )
+        }
+      },
+      {
+        type: 'number',
+        controller: (propPath, propName, { name, value }) => {
+          return (
+            <Input type="number"
             onChange={this.handleChange}
             name={propName}
             value={propValue}
             path={propPath}
-          />
-        );
-        break;
-      }
-      case 'string': {
-        component = (
-          <Input
+            />
+          )
+        }
+      },
+      {
+        type: 'string',
+        controller: (propPath, propName, { name, value }) => {
+          return (
+            <Input
             onChange={this.handleChange}
             name={propName}
             path={propPath}
             value={propValue}
-          />
-        );
-        break;
-      }
-      case 'shape': {
-        component = `{ `;
-        Object.entries(value).map( ([name, value]) => {
-          component += `${name}: ${value.name}, \n`;
-        });
-        component = component.substring(0, component.length-2) + ` }`;
-        break;
-      }
-      default: {
-        component = `Type not yet implemented (${name})`;
-        break;
-      }
-    }
+            />
+          )
+        }
+      },
+      {
+        type: 'shape',
+        controller: (propPath, propName, { name, value }) => {
+          let component = `{ `;
+          Object.entries(value).map( ([name, value]) => {
+            component += `${name}: ${value.name}, \n`;
+          });
+          component = component.substring(0, component.length-2) + ` }`;
 
-    return component;
+          return 'shape';
+        }
+      },
+      {
+        type: 'default',
+        controller: (propPath, propName, { name, value }) => {
+          return `Type not yet implemented (${name})`;
+        }
+      },
+    ];
+
+    const componentType = propControllers.find(item => {
+      return (item.type == propKey.name ? item.type : item.type == 'default')
+    }).controller(propPath, propName, propKey);
+
+    return componentType;
+  }
+
+  renderComponentByType = (propPath, propName, propKey) => {
+    const { [propName]: propValue } = changePropValue(this.props.state, propPath);
+
+    return this.getPropController(propPath, propName, propValue, propKey);
   };
 
   getPropRowTemplate = (propPath, propName, propObject, level) => {
