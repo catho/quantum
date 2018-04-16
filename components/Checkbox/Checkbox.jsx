@@ -9,17 +9,8 @@ const CheckBoxLabel = styled(Label)`
 `;
 
 class Checkbox extends React.Component {
-  constructor(props) {
-    super(props);
-
-    const { checked } = props;
-    this.state = { checked };
-  }
-
   onClick = () => {
-    this.setState({ checked: !this.state.checked }, () => {
-      this.props.onChange({ checked: this.state.checked });
-    });
+    this.props.onChange({ checked: !this.props.checked });
   }
 
   render() {
