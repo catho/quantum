@@ -2,6 +2,7 @@
 ### Added
 - Add storybook ui components
 - Add components:
+  - Auto complete
   - Button
   - Colors
   - Grid
@@ -9,7 +10,6 @@
   - Loading
   - Modal
   - Radio
-  - shared
   - Textarea
   - Toggle
 
