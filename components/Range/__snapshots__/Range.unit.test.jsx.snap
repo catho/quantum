@@ -55,7 +55,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     value={0}
   />
   <div
-    className="sc-bdVaJa fIlZBq"
+    className="sc-bdVaJa iPBACg"
   >
     Error message
   </div>

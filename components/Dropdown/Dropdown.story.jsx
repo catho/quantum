@@ -6,7 +6,7 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Dropdown from './Dropdown';
 
-storiesOf('5. Dropdown', module)
+storiesOf('3. Forms', module)
   .add('Dropdown', () => (
     <Heading atom title="Dropdown">
       <TabbedView>

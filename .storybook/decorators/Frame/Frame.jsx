@@ -1,7 +1,12 @@
+import 'semantic-ui-css/components/reset.css';
+import 'semantic-ui-css/components/form.css';
+import 'semantic-ui-css/components/checkbox.css';
+import 'semantic-ui-css/components/dropdown.css';
+import 'semantic-ui-css/components/input.css';
+import 'semantic-ui-css/components/transition.css';
+
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import 'semantic-ui-css/semantic.min.css';
-import ColorPalette from '../../../components/Colors';
 
 const Container = styled.div`
   padding: 10px 20px;
@@ -13,10 +18,15 @@ injectGlobal`
     src: url('https://static.catho.com.br/vendor/webcomponents-font/intro/book/introBook.woff');
   }
 
+  @font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
+  }
+
   body {
     margin: 0;
     padding: 0;
-    font-family: Introbook;
+    font-family: 'Montserrat';
   }
 
   *:focus {
@@ -28,7 +38,7 @@ injectGlobal`
   }
 
   code {
-    background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+    background-color: #f6f8fa;
     padding: 2px 5px;
   }
 
@@ -36,23 +46,41 @@ injectGlobal`
     padding: 20px !important;
   }
 
-  h3 {
+  h1, h2, h3, h4 {
+    font-weight: 300;
     margin-top: 40px;
+  }
+
+  h2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  p {
+    font-weight: 300;
+    strong {
+      font-weight: 400;
+    }
   }
 
   table {
     width: 100%;
     border-collapse: collapse;
 
+    &.bordered {
+      th, td {
+        border: 1px solid #ccc;
+      }
+    }
+
     th, td {
-      border: 1px solid #ccc;
       padding: 8px;
       font-size: 14px;
       text-align: left;
     }
 
     tr:nth-child(even) {
-      background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
+      background-color: #f6f8fa;
     }
   }
 `;

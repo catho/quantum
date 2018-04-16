@@ -79,7 +79,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 >
   
   <input
-    className="sc-bxivhb kdHaub"
+    className="sc-bxivhb dmigLk"
     data-mask=""
     id=""
     maxLength=""
@@ -92,7 +92,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     value=""
   />
   <div
-    className="sc-bdVaJa fIlZBq"
+    className="sc-bdVaJa iPBACg"
   >
     Error message
   </div>

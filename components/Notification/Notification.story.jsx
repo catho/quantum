@@ -6,8 +6,8 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Notification from './Notification';
 
-storiesOf('5. Notification', module)
-  .add('Notification', () => (
+storiesOf('4. Notifications', module)
+  .add('Basic', () => (
     <Heading atom title="Notification">
       <TabbedView>
         <Tab title="Usage">

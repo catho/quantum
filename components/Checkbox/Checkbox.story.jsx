@@ -6,7 +6,7 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Checkbox from './Checkbox';
 
-storiesOf('5. Input', module)
+storiesOf('3. Forms', module)
   .add('Checkbox', () => (
     <Heading atom title="Checkbox">
       <TabbedView>
