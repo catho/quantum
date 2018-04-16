@@ -3,7 +3,6 @@ import Highlight from 'react-highlight';
 import styled from 'styled-components';
 import ColorPalette from '../../components/Colors';
 import HowToImport from '../../.storybook/components/HowToImport';
-import Title from '../../.storybook/components/Title';
 import { Container, Row, Col, Hide } from '../../components/Grid';
 
 const StyledTable = styled.table`
@@ -15,10 +14,6 @@ const StyledTable = styled.table`
     padding: 8px;
     font-size: 14px;
     text-align: left;
-  }
-
-  tr:nth-child(even) {
-    background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
   }
 `;
 
@@ -38,9 +33,11 @@ const Grid = () => (
   <React.Fragment>
     <p>If you are familiar with <strong>Boostrap</strong>, you can easily understand ours.</p>
     <HowToImport importModules={'Container, Row, Col'} />
+
     <p>
       Here's a comparison table of viewports. Ours on left - Bootstrap's on right.
     </p>
+
     <StyledTable>
       <thead>
         <tr>
@@ -71,7 +68,7 @@ const Grid = () => (
         </tr>
       </tbody>
     </StyledTable>
-    <Title>How it works</Title>
+    <h2>How it works</h2>
     <h3>Containers</h3>
     <p>You may choose one of two containers or both to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
     <p>Use <code>{`<Container></Container>`}</code> for a responsive fixed width container.</p>

@@ -2,34 +2,46 @@ import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import StorybookTitle from '../../.storybook/components/Title';
-import logo from '../static/logo.png';
-import ColorPalette from '../../components/Colors';
+import logo from '../static/logo.svg';
+
+const IntroWrapper = styled.div`
+  display:flex;
+  flex-direction: row;
+`;
 
 const Logo = styled.img`
   display: block;
-  margin: 0 auto 20px;
-  width: 120px;
+  width: 100px;
+  margin-right:20px;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
+  font-size: 68px;
   border: none;
-  text-align: center;
+  font-weight: 300;
 `;
 
-const TitleText = styled.span`
-  color: ${ColorPalette.NEUTRAL.GRAY.GREYISH};
+const TitleText = styled.div`
   display: block;
-  font-size: 14px;
+  font-size: 22px;
   margin-top: 5px;
+  width:100%
+  font-weight: 400;
 `;
 
 const Introduction = () => (
   <React.Fragment>
-    <Title>
+    <IntroWrapper>
       <Logo src={logo} alt="Logo" />
-      Styleguide
-      <TitleText>The oficial Catho Component Library</TitleText>
-    </Title>
+
+      <Title>
+        Styleguide
+
+        <TitleText>
+          The oficial Catho Component Library
+        </TitleText>
+      </Title>
+    </IntroWrapper>
 
     <StorybookTitle>Usage</StorybookTitle>
 

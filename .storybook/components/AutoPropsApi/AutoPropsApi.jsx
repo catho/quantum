@@ -68,7 +68,7 @@ const AutoPropsApi = ({ component: Component }) => (
       <ReactMarkdown source={Component.__docgenInfo.description} />
     }
     <h2>Available <code>props</code></h2>
-    <table>
+    <table className="bordered">
       <thead>
         <tr>
           <th>Name</th>

@@ -6,7 +6,7 @@ import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Button from '../Button';
 import Modal from './Modal';
 
-const stories = storiesOf('5. Modal', module);
+const stories = storiesOf('5. Modals', module);
 
 class ModalStory extends React.Component {
   constructor(props) {
@@ -46,6 +46,6 @@ class ModalStory extends React.Component {
 }
 
 stories
-  .add('Modal', () => (
+  .add('Basic', () => (
     <ModalStory />
   ));

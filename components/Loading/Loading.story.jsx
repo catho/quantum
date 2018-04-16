@@ -6,7 +6,7 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Loading from './Loading';
 
-storiesOf('6. Loading', module)
+storiesOf('6. Others', module)
   .add('Loading', () => (
     <Heading atom title="Loading">
       <TabbedView>

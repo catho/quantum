@@ -7,7 +7,7 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Range from './Range';
 
-storiesOf('7. Range', module)
+storiesOf('3. Forms', module)
   .add('Range', () => (
     <Heading atom title="Range">
       <TabbedView>

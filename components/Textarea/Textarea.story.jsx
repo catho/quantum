@@ -6,8 +6,7 @@ import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Textarea from './Textarea';
 
-const stories = storiesOf('4. Forms', module);
-stories
+storiesOf('3. Forms', module)
   .add('Textarea', () => (
     <Heading atom title="Textarea">
       <TabbedView>

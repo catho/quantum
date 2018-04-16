@@ -90,6 +90,7 @@ class AutoProps extends React.Component {
             onChange={this.handleChange}
             name={propName}
             defaultValue={propValue}
+            path={propPath}
           />
         );
         break;
@@ -101,6 +102,7 @@ class AutoProps extends React.Component {
             checked={propValue}
             onChange={this.handleChange}
             name={propName}
+            path={propPath}
           />
         );
         break;
@@ -112,6 +114,7 @@ class AutoProps extends React.Component {
             onChange={this.handleChange}
             name={propName}
             value={propValue}
+            path={propPath}
           />
         );
         break;
