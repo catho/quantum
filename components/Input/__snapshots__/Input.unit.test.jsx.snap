@@ -4,7 +4,7 @@ exports[`Input component  should match the snapshot 1`] = `
 <div
   className="sc-htpNat QOKog"
 >
-
+  
   <input
     className="sc-bxivhb KpfJT"
     data-mask=""
@@ -18,7 +18,7 @@ exports[`Input component  should match the snapshot 1`] = `
     type="text"
     value=""
   />
-
+  
 </div>
 `;
 
@@ -30,9 +30,9 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     className="sc-bwzfXH eQhPVJ"
     htmlFor="input-with-label"
   >
-
+     
     Text label
-
+     
   </label>
   <input
     className="sc-bxivhb KpfJT"
@@ -47,7 +47,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     type="text"
     value=""
   />
-
+  
 </div>
 `;
 
@@ -55,7 +55,7 @@ exports[`Input component  with a regexp as pattern prop should match the snapsho
 <div
   className="sc-htpNat QOKog"
 >
-
+  
   <input
     className="sc-bxivhb KpfJT"
     data-mask=""
@@ -69,7 +69,7 @@ exports[`Input component  with a regexp as pattern prop should match the snapsho
     type="text"
     value=""
   />
-
+  
 </div>
 `;
 
@@ -77,9 +77,9 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 <div
   className="sc-htpNat QOKog"
 >
-
+  
   <input
-    className="sc-bxivhb kdHaub"
+    className="sc-bxivhb dmigLk"
     data-mask=""
     id=""
     maxLength=""
