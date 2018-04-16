@@ -9,9 +9,9 @@ const dataSource = [
   'Mexico',
   'Usa',
 ];
-
+const value = 'test';
 const defaultAutoComplete = (
-  <AutoComplete dataSource={dataSource} />
+  <AutoComplete dataSource={dataSource} value={value} />
 );
 
 describe('AutoComplete component ', () => {
@@ -20,17 +20,13 @@ describe('AutoComplete component ', () => {
   });
 
   it('should have value set in the state', () => {
-    const value = 'test';
-    const wrapper = shallow(<AutoComplete value={value} />);
-
-    expect(wrapper.state('value')).toEqual(value);
+    expect(shallow(defaultAutoComplete).state('value')).toEqual(value);
   });
 
   describe('with an "onChange" callback set', () => {
     const mockFn = jest.fn();
     const wrapper = shallow(<AutoComplete onChange={mockFn} />);
     const input = wrapper.childAt(0);
-    const value = 'test';
     const valueOb = { value };
 
     it('should call the callback and set a new value', () => {
@@ -42,7 +38,7 @@ describe('AutoComplete component ', () => {
     });
   });
 
-  describe('Datalist', () => {
+  describe('with a data source', () => {
     const wrapper = shallow(defaultAutoComplete);
     const datalist = wrapper.childAt(1);
 
