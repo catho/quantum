@@ -2,7 +2,7 @@
 
 exports[`Button component Should match snapshot when center prop is set 1`] = `
 <button
-  className="sc-bdVaJa dVhOKD"
+  className="sc-bdVaJa ktstQA"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -15,7 +15,7 @@ exports[`Button component Should match snapshot when center prop is set 1`] = `
 
 exports[`Button component Should match snapshot when full prop is set 1`] = `
 <button
-  className="sc-bdVaJa dyoaHj"
+  className="sc-bdVaJa eyzQnp"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -28,7 +28,7 @@ exports[`Button component Should match snapshot when full prop is set 1`] = `
 
 exports[`Button component Should match the snapshot 1`] = `
 <button
-  className="sc-bdVaJa dmceHX"
+  className="sc-bdVaJa kjwzud"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -41,7 +41,7 @@ exports[`Button component Should match the snapshot 1`] = `
 
 exports[`Button component when there is a skin set should match disabled snapshot 1`] = `
 <button
-  className="sc-bdVaJa iWydNx"
+  className="sc-bdVaJa hPnLJe"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -54,7 +54,7 @@ exports[`Button component when there is a skin set should match disabled snapsho
 
 exports[`Button component when there is a skin set should match light snapshot 1`] = `
 <button
-  className="sc-bdVaJa dmceHX"
+  className="sc-bdVaJa kjwzud"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -67,7 +67,7 @@ exports[`Button component when there is a skin set should match light snapshot 1
 
 exports[`Button component when there is a skin set should match link snapshot 1`] = `
 <button
-  className="sc-bdVaJa bVtzLJ"
+  className="sc-bdVaJa cqtbGK"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -80,7 +80,7 @@ exports[`Button component when there is a skin set should match link snapshot 1`
 
 exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
 <button
-  className="sc-bdVaJa dmceHX"
+  className="sc-bdVaJa kjwzud"
   disabled={false}
   onClick={[Function]}
   type="button"
