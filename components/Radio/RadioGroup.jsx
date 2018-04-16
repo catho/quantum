@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Radio from './Radio';
 
 const RadioGroup = styled.div`
   align-items: flex-start;
