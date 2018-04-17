@@ -3,6 +3,8 @@ import Highlight from 'react-highlight';
 import styled from 'styled-components';
 import ColorPalette from '../../components/Colors';
 import HowToImport from '../../.storybook/components/HowToImport';
+import Title from '../../.storybook/components/Title';
+import Subtitle from '../../.storybook/components/Subtitle';
 import { Container, Row, Col, Hide } from '../../components/Grid';
 
 const StyledTable = styled.table`
@@ -68,8 +70,8 @@ const Grid = () => (
         </tr>
       </tbody>
     </StyledTable>
-    <h2>How it works</h2>
-    <h3>Containers</h3>
+    <Title>How it works</Title>
+    <Subtitle>Containers</Subtitle>
     <p>You may choose one of two containers or both to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
     <p>Use <code>{`<Container></Container>`}</code> for a responsive fixed width container.</p>
     <Highlight language="javascript" className="highlight">
@@ -91,13 +93,13 @@ const Grid = () => (
 `
       }
     </Highlight>
-    <h3>Row</h3>
+    <Subtitle>Row</Subtitle>
     <p>Rows are wrappers for columns. Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.</p>
 
-    <h3>No Gutters</h3>
+    <Subtitle>No Gutters</Subtitle>
     <p>The gutters between columns in our predefined grid styles can be removed with no-gutters prop <code>{'<Row no-gutters>'}</code>. This removes the negative margins from <code>{'<Col>'}</code> and the horizontal padding from all immediate children columns.</p>
 
-    <h3>Breakpoints</h3>
+    <Subtitle>Breakpoints</Subtitle>
     <p>
       The grid system appropriately scales up to 12 columns as the device or viewport size increases.
       It includes predefined viewports, they are:
@@ -144,7 +146,7 @@ const Grid = () => (
         </tr>
       </tbody>
     </StyledTable>
-    <h3>Example: Stacked-to-horizontal</h3>
+    <Subtitle>Example: Stacked-to-horizontal</Subtitle>
     <p>You can create a basic grid system that starts out stacked on mobile devices and tablet devices before becoming horizontal on desktop devices. Place grid columns in any <code>{`<Row>`}</code></p>
 
     <Container fluid>
@@ -215,7 +217,7 @@ const Grid = () => (
       `}
     </Highlight>
 
-    <h3>Example: Mobile and desktop</h3>
+    <Subtitle>Example: Mobile and desktop</Subtitle>
     <p>Don't want your columns to simply stack in smaller devices? Use the phone and tablet device grid props by adding <code>{'phone={*}'}</code> <code>{'tablet={*}'}</code> to your columns. See the example below for a better idea of how it all works.</p>
 
     <Container fluid>
@@ -256,7 +258,7 @@ const Grid = () => (
       `}
     </Highlight>
 
-    <h3>Hide Component</h3>
+    <Subtitle>Hide Component</Subtitle>
     <p>If you need to hide some elements in your UI, you can use the <code>{'<Hide>'}</code> component.</p>
     <p><code>{'<Hide>'}</code> receives the same props as the <code>{'<Col>'}</code> component, they are:</p>
     <ul>
@@ -267,7 +269,7 @@ const Grid = () => (
       <li>hd</li>
     </ul>
 
-    <h3>Example: Hiding elements in phone devices</h3>
+    <Subtitle>Example: Hiding elements in phone devices</Subtitle>
 
     <Container fluid>
       <Hide phone>

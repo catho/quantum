@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Title from '../../.storybook/components/Title';
 
 const colors = {
   'peacock-blue': '#005da4',
@@ -61,7 +62,7 @@ const Typography = () => (
   <React.Fragment>
     <p><strong>Introbook</strong> is the standard typeface for Catho on the web</p>
 
-    <h2>Headings</h2>
+    <Title>Headings</Title>
 
     <table>
       <tbody>
@@ -88,7 +89,7 @@ const Typography = () => (
       </tbody>
     </table>
 
-    <h2>Texts</h2>
+    <Title>Texts</Title>
 
     <table>
       <tbody>
@@ -107,7 +108,7 @@ const Typography = () => (
       </tbody>
     </table>
 
-    <h2>Lists</h2>
+    <Title>Lists</Title>
 
     <table>
       <Caption>Lists have line-height of 24 pixels.</Caption>

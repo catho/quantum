@@ -46,14 +46,9 @@ injectGlobal`
     padding: 20px !important;
   }
 
-  h1, h2, h3, h4 {
+  h1, h4 {
     font-weight: 300;
     margin-top: 40px;
-  }
-
-  h2{
-    padding-bottom: 5px;
-    border-bottom: 1px solid #e6e6e6;
   }
 
   p {

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
+import Title from '../Title';
 
 const wrap = name => children =>
   <span>{name} [{children}]</span>;
@@ -67,7 +68,7 @@ const AutoPropsApi = ({ component: Component }) => (
     { Component.__docgenInfo &&
       <ReactMarkdown source={Component.__docgenInfo.description} />
     }
-    <h2>Available <code>props</code></h2>
+    <Title>Available <code>props</code></Title>
     <table className="bordered">
       <thead>
         <tr>

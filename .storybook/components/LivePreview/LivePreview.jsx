@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Title from '../Title';
 
 const Preview = styled.div`
   padding: 60px 20px;
@@ -20,7 +21,7 @@ const Preview = styled.div`
 
 const LivePreview = ({ component: { type: Component }, state, onChange }) => (
   <React.Fragment>
-    <h2>Preview</h2>
+    <Title>Preview</Title>
     <Preview>
       <Component {...state} onChange={onChange} />
     </Preview>
