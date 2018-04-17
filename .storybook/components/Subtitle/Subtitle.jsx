@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import ColorPalette from '../../../components/Colors';
 
 const StyledSubtitle = styled.h3`
   font-weight: 300;
