@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import StorybookTitle from '../../.storybook/components/Title';
-import logo from '../static/logo.svg';
 
 const IntroWrapper = styled.div`
   display:flex;
@@ -31,18 +30,6 @@ const TitleText = styled.div`
 
 const Introduction = () => (
   <React.Fragment>
-    <IntroWrapper>
-      <Logo src={logo} alt="Logo" />
-
-      <Title>
-        Styleguide
-
-        <TitleText>
-          The oficial Catho Component Library
-        </TitleText>
-      </Title>
-    </IntroWrapper>
-
     <StorybookTitle>Usage</StorybookTitle>
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>
