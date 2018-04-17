@@ -70,7 +70,7 @@ class AutoProps extends React.Component {
   getPropController = (propPath, propName, propValue, propKey) => {
     const propControllers = [
       {
-        type: 'enum',
+        type: ['enum'],
         controller: (propPath, propName, { name, value }) => {
           let options = [];
 
@@ -92,8 +92,8 @@ class AutoProps extends React.Component {
         }
       },
       {
-        type: 'bool',
-        controller: (propPath, propName, { name, value }) => {
+        type: ['bool'],
+        controller: (propPath, propName, { name }) => {
           return (
             <Checkbox
             toggle
@@ -106,45 +106,33 @@ class AutoProps extends React.Component {
         }
       },
       {
-        type: 'number',
-        controller: (propPath, propName, { name, value }) => {
-          return (
-            <Input type="number"
-            onChange={this.handleChange}
-            name={propName}
-            value={propValue}
-            path={propPath}
-            />
-          )
-        }
-      },
-      {
-        type: 'string',
-        controller: (propPath, propName, { name, value }) => {
+        type: ['string', 'number'],
+        controller: (propPath, propName, { name }) => {
           return (
             <Input
-            onChange={this.handleChange}
-            name={propName}
-            path={propPath}
-            value={propValue}
+              type={name == 'string' ? 'text' : name}
+              onChange={this.handleChange}
+              name={propName}
+              path={propPath}
+              value={propValue}
             />
           )
         }
       },
       {
-        type: 'shape',
+        type: ['shape'],
         controller: (propPath, propName, { name, value }) => {
           let component = `{ `;
-          Object.entries(value).map( ([name, value]) => {
+          Object.entries(value).map(([name, value]) => {
             component += `${name}: ${value.name}, \n`;
           });
-          component = component.substring(0, component.length-2) + ` }`;
+          component = component.substring(0, component.length - 2) + ` }`;
 
           return component;
         }
       },
       {
-        type: 'default',
+        type: ['default'],
         controller: (propPath, propName, { name, value }) => {
           return `Type not yet implemented (${name})`;
         }
@@ -152,7 +140,7 @@ class AutoProps extends React.Component {
     ];
 
     const componentType = propControllers.find(item => {
-      return (item.type == propKey.name ? item.type : item.type == 'default')
+      return (item.type.some(t=>t === propKey.name) ? item.type : item.type == 'default')
     }).controller(propPath, propName, propKey);
 
     return componentType;
