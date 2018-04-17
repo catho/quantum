@@ -7318,6 +7318,12 @@ react-test-renderer@^16.0.0-0, react-test-renderer@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-text-mask@^5.3.0:
+  version "5.3.0"
+  resolved "http://armazem.devel:4873/react-text-mask/-/react-text-mask-5.3.0.tgz#cf1e144f3b96b87edab54a6811fe43934d4f5014"
+  dependencies:
+    prop-types "^15.5.6"
+
 react-transition-group@^1.1.2:
   version "1.2.1"
   resolved "http://armazem.devel:4873/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"

@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
+import Masked from 'react-text-mask';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 import theme from '../../theme';
+import masks from './masks';
 
 /** A text field component to get user text data */
 const StyledInput = styled.input`
@@ -28,28 +30,42 @@ const StyledInput = styled.input`
 `;
 
 const Input = ({
-  id, label, error, pattern, mask, ...props
-}) => (
-  <FieldGroup>
-    { label && <Label htmlFor={id}> {label} </Label> }
+  id, label, error, pattern, mask, ...rest
+}) => {
+  let inputMask = mask;
 
-    <StyledInput
-      id={id}
-      pattern={pattern && pattern.source}
-      data-mask={mask}
-      error={error}
-      {...props}
-    />
+  if (typeof mask === 'string') {
+    inputMask = masks[mask];
+  }
 
-    {error && <ErrorMessage>{error}</ErrorMessage>}
-  </FieldGroup>
-);
+  return (
+    <FieldGroup>
+      { label && <Label htmlFor={id}> {label} </Label> }
+
+      <Masked
+        {...rest}
+        mask={inputMask}
+        render={
+          (ref, props) => (
+            <StyledInput
+              error={error}
+              innerRef={ref}
+              {...props}
+            />
+          )
+        }
+      />
+
+      {error && <ErrorMessage>{error}</ErrorMessage>}
+    </FieldGroup>
+  );
+};
 
 Input.defaultProps = {
   error: '',
   id: '',
   label: '',
-  mask: '',
+  mask: 'phone',
   maxLength: '',
   onBlur: () => {},
   onChange: () => {},
@@ -57,7 +73,6 @@ Input.defaultProps = {
   pattern: /.*/,
   placeholder: '',
   type: 'text',
-  value: '',
 };
 
 Input.propTypes = {
@@ -82,7 +97,6 @@ Input.propTypes = {
     'number',
     'link',
   ]),
-  value: PropTypes.string,
 };
 
 export default Input;
