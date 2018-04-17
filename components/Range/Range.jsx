@@ -22,7 +22,7 @@ class Range extends React.Component {
 
   render() {
     const {
-      id, label, error, onBlur, onFocus,
+      id, label, error, onBlur, onFocus, value,
     } = this.props;
 
     return (
@@ -31,7 +31,7 @@ class Range extends React.Component {
         <input
           id={id}
           type="range"
-          value={this.state.value}
+          value={value}
           onBlur={onBlur}
           onFocus={onFocus}
           onChange={this.handleChange}
