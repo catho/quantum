@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import CodeExample from '../../.storybook/components/CodeExample';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Button from '../Button';
 import Modal from './Modal';
@@ -27,13 +28,18 @@ class ModalStory extends React.Component {
               {this.state.showModal ? 'Close' : 'Open'} Modal
             </Button>
 
-            <Modal
-              title="Example Title"
-              opened={this.state.showModal}
-              closeModal={this.handleOpen}
-            >
-              Example Message
-            </Modal>
+            { this.state.showModal &&
+              (
+                <Modal
+                  title="Example Title"
+                  closeModal={this.handleOpen}
+                >
+                  Example Message
+                </Modal>
+              )
+            }
+
+            <CodeExample component={<Modal />} />
           </Tab>
 
           <Tab title="API">

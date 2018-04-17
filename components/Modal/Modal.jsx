@@ -62,8 +62,7 @@ const Modal = ({
   title,
   children,
   closeModal,
-  opened,
-}) => opened && (
+}) => (
   <ModalOverlay>
     <ModalContent>
       <ModalClose onClick={closeModal}>x</ModalClose>
@@ -78,7 +77,6 @@ const Modal = ({
 Modal.defaultProps = {
   title: 'Generic title',
   children: 'Generic message',
-  opened: false,
 };
 
 Modal.propTypes = {
@@ -86,7 +84,6 @@ Modal.propTypes = {
   /** function to close the modal */
   closeModal: PropTypes.func.isRequired,
   title: PropTypes.string,
-  opened: PropTypes.bool,
 };
 
 export default Modal;

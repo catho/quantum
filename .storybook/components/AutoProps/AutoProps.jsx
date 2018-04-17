@@ -3,6 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Title from '../Title';
 import { Input, Checkbox, Select } from 'semantic-ui-react';
 import ColorPalette from '../../../components/Colors';
 
@@ -206,7 +207,7 @@ class AutoProps extends React.Component {
 
     return (
       <React.Fragment>
-        <h2>Props</h2>
+        <Title>Props</Title>
 
         <table>
           <tbody>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ColorPalette from '../../../components/Colors';
 import CodeToClipboard from '../CodeToClipboard';
+import Title from '../Title';
 
 const CodeBlock = styled.pre`
   position:relative;
@@ -63,7 +64,7 @@ const componentToString = (component, state, level = 0) => {
 /* eslint-disable */
 const CodeExample = ({ component, state, code = componentToString(component, state) }) => (
   <React.Fragment>
-    <h2>Code</h2>
+    <Title>Code</Title>
     <CodeBlock>
       {code}
       <CodeToClipboard code={code} />
