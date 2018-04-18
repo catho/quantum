@@ -20,7 +20,7 @@ const autoComplete = (
 
 storiesOf('3. Forms', module)
   .add('Auto Complete', () => (
-    <Heading image={Atom} title="Auto Complete">
+    <Heading image={Atom} title="<AutoComplete />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel

@@ -9,7 +9,7 @@ import Atom from '../static/atom.svg';
 
 storiesOf('4. Notifications', module)
   .add('Basic', () => (
-    <Heading image={Atom} title="Notification">
+    <Heading image={Atom} title="<Notification />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel component={<Notification />} importModules="Notification" />

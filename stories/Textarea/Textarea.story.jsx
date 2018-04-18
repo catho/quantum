@@ -9,7 +9,7 @@ import Atom from '../static/atom.svg';
 
 storiesOf('3. Forms', module)
   .add('Textarea', () => (
-    <Heading image={Atom} title="Textarea">
+    <Heading image={Atom} title="<Textarea />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel component={<Textarea />} importModules="Textarea" />

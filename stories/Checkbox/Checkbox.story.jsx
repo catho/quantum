@@ -9,7 +9,7 @@ import Atom from '../static/atom.svg';
 
 storiesOf('3. Forms', module)
   .add('Checkbox', () => (
-    <Heading image={Atom} title="Checkbox">
+    <Heading image={Atom} title="<Checkbox />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel

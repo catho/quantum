@@ -4,6 +4,7 @@ import Highlight from 'react-highlight';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Colors from '../../components/Colors';
 import Title from '../../.storybook/components/Title';
+import Subtitle from '../../.storybook/components/Subtitle';
 import HowToImport from '../../.storybook/components/HowToImport';
 
 export default () => (

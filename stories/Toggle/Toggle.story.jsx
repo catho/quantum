@@ -10,7 +10,7 @@ import Atom from '../static/atom.svg';
 const stories = storiesOf('7. Toggle', module);
 stories
   .add('Toggle', () => (
-    <Heading image={Atom} title="Toggle">
+    <Heading image={Atom} title="<Toggle />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel component={<Toggle id="toggle" />} importModules="Toggle" />

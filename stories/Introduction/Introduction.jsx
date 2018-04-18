@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import StorybookTitle from '../../.storybook/components/Title';
+import Title from '../../.storybook/components/Title';
 
 const IntroWrapper = styled.div`
   display:flex;
@@ -14,11 +15,10 @@ const Logo = styled.img`
   margin-right:20px;
 `;
 
-
 const Introduction = () => (
   <React.Fragment>
     <p>The official <strong>Catho</strong> style-guide</p>
-    <h2>Usage</h2>
+    <Title>Usage</Title>
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>
     <Highlight language="javascript" className="highlight">

@@ -22,7 +22,7 @@ class ModalStory extends React.Component {
 
   render() {
     return (
-      <Heading image={Atom} title="Modal">
+      <Heading image={Atom} title="<Modal />">
         <TabbedView>
           <Tab title="Usage">
             <Button skin="primary" onClick={this.handleOpen}>

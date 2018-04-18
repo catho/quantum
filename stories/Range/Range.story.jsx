@@ -10,7 +10,7 @@ import Atom from '../static/atom.svg';
 
 storiesOf('3. Forms', module)
   .add('Range', () => (
-    <Heading image={Atom} title="Range">
+    <Heading image={Atom} title="<Range />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel component={<Range />} importModules="Range" />

@@ -9,7 +9,7 @@ import Atom from '../static/atom.svg';
 
 storiesOf('3. Forms', module)
   .add('Dropdown', () => (
-    <Heading image={Atom} title="Dropdown">
+    <Heading image={Atom} title="<Dropdown />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel component={<Dropdown />} importModules="Dropdown" />
