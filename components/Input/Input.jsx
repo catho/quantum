@@ -32,11 +32,7 @@ const StyledInput = styled.input`
 const Input = ({
   id, label, error, pattern, mask, ...rest
 }) => {
-  let inputMask = mask;
-
-  if (typeof mask === 'string') {
-    inputMask = masks[mask];
-  }
+  const inputMask = typeof mask === 'string' ? masks[mask] : mask;
 
   return (
     <FieldGroup>
