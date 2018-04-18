@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ColorPalette from '../../../components/Colors';
 import CodeExample from '../CodeExample';
-import HowToImport from '../HowToImport';
 
 const Small = styled.small`
   color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
@@ -11,7 +10,7 @@ const Small = styled.small`
   text-transform: lowercase;
 `;
 
-const Wrapper = styled.div`
+const Code = styled.div`
   margin-bottom: 20px;
 `;
 
@@ -37,13 +36,26 @@ class Example extends React.Component {
       <React.Fragment>
         <h3>{title} <Small onClick={this.handleClick}>{show ? 'Hide' : 'Show'} code</Small></h3>
 
-        <Wrapper>
-          {show && <CodeExample withImport={importModules} showTitle={false} component={Component} />}
-        </Wrapper>
+        <Code>
+          {show && (
+            <CodeExample
+              withImport={importModules}
+              showTitle={false}
+              component={Component}
+            />
+          )}
+        </Code>
 
         {Component}
       </React.Fragment>
-    )
+    );
   }
 }
+
+Example.propTypes = {
+  component: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  importModules: PropTypes.string.isRequired,
+};
+
 export default Example;

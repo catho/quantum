@@ -61,7 +61,7 @@ const componentToString = (component, state, level = 0) => {
   return `${content}`;
 };
 
-const msg = (importModules) => `import ${'{'} ${importModules} ${'}'} from '@cathodevel/style-guide';\n\n`;
+const msg = importModules => `import ${'{'} ${importModules} ${'}'} from '@cathodevel/style-guide';\n\n`;
 
 /* eslint-disable */
 const CodeExample = ({ component, state = component.props, code = componentToString(component, state), showTitle = true, withImport }) => (
