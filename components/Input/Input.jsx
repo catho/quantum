@@ -17,13 +17,14 @@ const StyledInput = styled.input`
   padding: 0 10px;
   font-size: 14px;
   box-sizing: border-box;
+  outline: none;
 
   &::-webkit-calendar-picker-indicator {
     display: none;
   }
 
   ${props => props.error && `
-    border-color: ${Colors.ERROR};
+    border-color: ${Colors.SECONDARY.PINK.LIPSTICK};
   `}
 `;
 

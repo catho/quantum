@@ -18487,7 +18487,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _templateObject = _taggedTemplateLiteral(['\n  ', ';\n\n  border: 1px solid ', ';\n  border-radius: ', ';\n  height: ', ';\n  width: 100%;\n  padding: 0 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n\n  &::-webkit-calendar-picker-indicator {\n    display: none;\n  }\n\n  ', '\n'], ['\n  ', ';\n\n  border: 1px solid ', ';\n  border-radius: ', ';\n  height: ', ';\n  width: 100%;\n  padding: 0 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n\n  &::-webkit-calendar-picker-indicator {\n    display: none;\n  }\n\n  ', '\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  ', ';\n\n  border: 1px solid ', ';\n  border-radius: ', ';\n  height: ', ';\n  width: 100%;\n  padding: 0 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n  outline: none;\n\n  &::-webkit-calendar-picker-indicator {\n    display: none;\n  }\n\n  ', '\n'], ['\n  ', ';\n\n  border: 1px solid ', ';\n  border-radius: ', ';\n  height: ', ';\n  width: 100%;\n  padding: 0 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n  outline: none;\n\n  &::-webkit-calendar-picker-indicator {\n    display: none;\n  }\n\n  ', '\n']);
 
 var _propTypes = __webpack_require__(4);
 
@@ -18519,7 +18519,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 /** A text field component to get user text data */
 var StyledInput = _styledComponents2.default.input(_templateObject, _theme2.default.mixins.transition(), _Colors2.default.NEUTRAL.DARKERGRAY.WARMGREY, _theme2.default.sizes.radius, _theme2.default.sizes.fieldHeight, function (props) {
-  return props.error && '\n    border-color: ' + _Colors2.default.ERROR + ';\n  ';
+  return props.error && '\n    border-color: ' + _Colors2.default.SECONDARY.PINK.LIPSTICK + ';\n  ';
 });
 
 var Input = function Input(_ref) {
@@ -20603,7 +20603,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-exports.default = _styledComponents2.default.div(_templateObject, _Colors2.default.ERROR);
+exports.default = _styledComponents2.default.div(_templateObject, _Colors2.default.SECONDARY.PINK.LIPSTICK);
 
 /***/ }),
 /* 376 */
