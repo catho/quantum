@@ -53,7 +53,7 @@ class Example extends React.Component {
 }
 
 Example.propTypes = {
-  component: PropTypes.func.isRequired,
+  component: PropTypes.instanceOf(Object).isRequired,
   title: PropTypes.string.isRequired,
   importModules: PropTypes.string.isRequired,
 };
