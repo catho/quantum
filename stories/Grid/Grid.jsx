@@ -185,18 +185,18 @@ const Grid = () => (
     <Highlight language="javascript" className="highlight">
       {`
 <Row>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
-  <Col tablet={1}>...</Col></Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
+  <Col tablet={1}>...</Col>
 </Row>
 
 <Row>
