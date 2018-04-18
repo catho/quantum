@@ -28,7 +28,6 @@ const StyledLabel = styled(Label)`
   padding-right: 54px;
   position: relative;
 
-
   &:before,
   &:after {
     ${theme.mixins.transition()}

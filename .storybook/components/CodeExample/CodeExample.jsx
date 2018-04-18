@@ -37,7 +37,7 @@ const getProps = (props) => {
 
   return Object
     .entries(props)
-    .filter(([, value]) => value)
+    .filter(([name, value]) => value && !['style', 'children'].includes(name))
     .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
     .join(`\n${indentation}`);
 };
@@ -52,7 +52,7 @@ const componentToString = (component, state, level = 0) => {
     const name = type.displayName || type.name || type;
     const children = props ? props.children : null;
 
-    content = `${indentation}<${name}${state ? `\n  ${getProps(state)}` : ''}`;
+    content = `${indentation}<${name}${Object.keys(state).length ? ` ${getProps(state)}` : ''}`;
     content += children ? `>\n${componentToString(children, state, level + 1)}\n${indentation}</${name}>` : ' />';
   } else {
     content = component ? `${indentation}${component}` : '';
@@ -61,11 +61,14 @@ const componentToString = (component, state, level = 0) => {
   return `${content}`;
 };
 
+const msg = (importModules) => `import ${'{'} ${importModules} ${'}'} from '@cathodevel/style-guide';\n\n`;
+
 /* eslint-disable */
-const CodeExample = ({ component, state, code = componentToString(component, state) }) => (
+const CodeExample = ({ component, state = component.props, code = componentToString(component, state), showTitle = true, withImport }) => (
   <React.Fragment>
-    <Title>Code</Title>
+    {showTitle && <Title>Code</Title>}
     <CodeBlock>
+      {withImport && msg(withImport)}
       {code}
       <CodeToClipboard code={code} />
     </CodeBlock>
@@ -76,6 +79,7 @@ CodeExample.propTypes = {
   component: PropTypes.instanceOf(Object).isRequired,
   state: PropTypes.instanceOf(Object).isRequired,
   code: PropTypes.string,
+  showTitle: PropTypes.bool,
 };
 /* eslint-enable */
 

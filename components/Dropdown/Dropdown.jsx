@@ -71,10 +71,10 @@ class Dropdown extends React.Component {
         { label && <Label htmlFor={id}> {label} </Label> }
 
         <Select
+          {...rest}
           name={name}
           value={value}
           onChange={this.handleChange}
-          {...rest}
         >
           {placeholder && <option value="" disabled>{placeholder}</option>}
 
