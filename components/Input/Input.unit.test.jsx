@@ -5,15 +5,15 @@ import Input from './Input';
 
 describe('Input component ', () => {
   it('should match the snapshot', () => {
-    expect(renderer.create(<Input />).toJSON()).toMatchSnapshot();
+    expect(renderer.create(<Input value="foo" />).toJSON()).toMatchSnapshot();
   });
 
   it('with an error message should match the snapshot', () => {
-    expect(renderer.create(<Input error="Error message" />).toJSON()).toMatchSnapshot();
+    expect(renderer.create(<Input value="foo" error="Error message" />).toJSON()).toMatchSnapshot();
   });
 
   describe('with a label', () => {
-    const input = <Input label="Text label" id="input-with-label" />;
+    const input = <Input label="Text label" id="input-with-label" value="foo" />;
 
     it('should match the snapshot', () => {
       expect(renderer.create(input).toJSON()).toMatchSnapshot();
@@ -25,19 +25,6 @@ describe('Input component ', () => {
       const styledInput = wrapper.childAt(1);
 
       expect(label.prop('htmlFor')).toEqual(styledInput.prop('id'));
-    });
-  });
-
-  describe('with a regexp as pattern prop', () => {
-    const pattern = /\d/;
-    const input = <Input pattern={pattern} />;
-
-    it('should match the snapshot', () => {
-      expect(renderer.create(input).toJSON()).toMatchSnapshot();
-    });
-
-    it('should use patter.source as prop', () => {
-      expect(shallow(input).childAt(0).prop('pattern')).toEqual(pattern.source);
     });
   });
 });

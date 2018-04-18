@@ -56,17 +56,17 @@ class Input extends React.Component {
     return (
       <FieldGroup>
         { label && <Label htmlFor={id}> {label} </Label> }
-
         <Masked
           {...rest}
+          id={id}
           mask={mask}
+          onChange={this.onChange}
           render={
             (ref, props) => (
               <StyledInput
                 {...props}
                 error={error}
                 innerRef={ref}
-                onChange={this.onChange}
               />
             )
           }

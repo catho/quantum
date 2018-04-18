@@ -7,18 +7,16 @@ Array [
   >
     
     <input
-      className="sc-bxivhb KpfJT"
-      data-mask=""
+      className="sc-bxivhb fCtETK"
+      defaultValue="test"
       id=""
       list="_datalist"
       maxLength=""
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      pattern=".*"
       placeholder=""
       type="text"
-      value="test"
     />
     
   </div>,
