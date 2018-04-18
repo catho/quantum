@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import CodeToClipboard from '../CodeToClipboard';
 import '../../../stories/static/styleguide-highlight.css';
+import Title from '../Title';
 
 const HighlightWrapper = styled.div`
   position:relative;
@@ -14,7 +15,7 @@ const HowToImport = ({ importModules }) => {
 
   return (
     <React.Fragment>
-      <h2>Import</h2>
+      <Title>Import</Title>
 
       <HighlightWrapper>
         <Highlight language="javascript" className="highlight">

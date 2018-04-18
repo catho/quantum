@@ -13,14 +13,11 @@ const Container = styled.div`
 `;
 
 injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
+
   @font-face {
     font-family: Introbook;
     src: url('https://static.catho.com.br/vendor/webcomponents-font/intro/book/introBook.woff');
-  }
-
-  @font-face {
-    font-family: Montserrat;
-    src: url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
   }
 
   body {
@@ -46,14 +43,9 @@ injectGlobal`
     padding: 20px !important;
   }
 
-  h1, h2, h3, h4 {
+  h1, h4 {
     font-weight: 300;
     margin-top: 40px;
-  }
-
-  h2{
-    padding-bottom: 5px;
-    border-bottom: 1px solid #e6e6e6;
   }
 
   p {
