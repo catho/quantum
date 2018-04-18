@@ -1,21 +1,36 @@
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import Textarea from './Textarea';
+import AutoComplete from '../../components/AutoComplete';
+import Atom from '../static/atom.svg';
+
+const autoComplete = (
+  <AutoComplete dataSource={[
+      'Brazil',
+      'Germany',
+      'Mexico',
+      'Usa',
+    ]}
+  />
+);
 
 storiesOf('3. Forms', module)
-  .add('Textarea', () => (
-    <Heading atom title="Textarea">
+  .add('Auto Complete', () => (
+    <Heading image={Atom} title="<AutoComplete />">
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel component={<Textarea />} importModules="Textarea" />
+          <ComponentPanel
+            component={autoComplete}
+            importModules="AutoComplete"
+          />
         </Tab>
 
         <Tab title="API">
-          <AutoPropsApi component={Textarea} />
+          <AutoPropsApi component={AutoComplete} />
         </Tab>
       </TabbedView>
     </Heading>

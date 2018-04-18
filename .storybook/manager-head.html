@@ -1,17 +1,36 @@
 <style>
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
 
+  .SplitPane.vertical  {
+    border-left: 16px solid #005ca4;
+  }
+
   #root>div>div{
     background-color: rgb(244, 245, 247) !important;
   }
 
   .Pane.vertical.Pane1 {
+    width: 212px !important;
     background-color: rgb(244, 245, 247) !important;
   }
 
   .Pane.vertical.Pane1 ul li{
     font-family: 'Montserrat' !important;
     padding:3px 0;
+  }
+
+  .Pane.vertical.Pane1 ul li > ul > li > div > div > div:nth-child(1) {
+    display: none !important;
+  }
+
+  .Pane.vertical.Pane1 ul li > ul > li > div > div > div:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .Pane.vertical.Pane1 ul li > ul > li > ul {
+    display: block !important;
+    padding-left: 8px !important;
   }
 
   .Pane.vertical.Pane1 ul li a[class*='css-glamorous-routedlink']{
@@ -23,13 +42,14 @@
   }
 
   .Pane.vertical.Pane1>div>div>div>div>a {
-    background-image: url('https://image.flaticon.com/icons/svg/730/730654.svg');
+    background-image: url(//static.catho.com.br/svg/site/logoCathoB2c.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 40px 40px;
+    background-position: 62px;
+    background-size: 78px;
     border: none !important;
     text-indent: -9999px;
     padding: 20px;
+    background-color: #f4f5f7;
   }
 
   .Pane.vertical.Pane1>div>div>div>div:nth-child(2) {
