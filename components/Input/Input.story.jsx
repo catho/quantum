@@ -28,6 +28,5 @@ storiesOf('3. Forms', module)
           <AutoPropsApi component={Input} />
         </Tab>
       </TabbedView>
-      <Input.CEP />
     </Heading>
   ));
