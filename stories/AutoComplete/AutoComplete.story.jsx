@@ -19,8 +19,8 @@ const autoComplete = (
 );
 
 storiesOf('3. Forms', module)
-  .add('AutoComplete', () => (
-    <Heading image={Atom} title="AutoComplete">
+  .add('Auto Complete', () => (
+    <Heading image={Atom} title="Auto Complete">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel

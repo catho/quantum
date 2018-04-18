@@ -17,19 +17,23 @@ const Title = styled.h1`
   }
 `;
 
-const Heading = ({ atom, title, image, children }) => (
+const Heading = ({
+  title,
+  image,
+  children,
+}) => (
   <React.Fragment>
     {
       <Title>
-        <img
-          alt={title}
-          src={image}
-          width="60"
-          height="60"
-        />
-        {
-          `${atom ? `<${title} />` : title}`
+        { image &&
+          <img
+            alt={title}
+            src={image}
+            width="60"
+            height="60"
+          />
         }
+        {title}
       </Title>
     }
     { children }
@@ -37,11 +41,11 @@ const Heading = ({ atom, title, image, children }) => (
 );
 
 Heading.defaultProps = {
-  atom: false,
+  image: null,
 };
 
 Heading.propTypes = {
-  atom: PropTypes.bool,
+  image: PropTypes.string,
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),

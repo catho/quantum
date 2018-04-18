@@ -5,8 +5,8 @@ import Heading from '../../.storybook/components/Heading';
 import Logo from '../static/logo.svg';
 
 storiesOf(' Introduction', module)
-.add('Grid System', () => (
-  <Heading image={Logo} title="Style-guide">
+.add('Getting started', () => (
+  <Heading image={Logo} title="StyleGuide">
     <Introduction />
   </Heading>
 ));

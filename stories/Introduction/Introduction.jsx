@@ -14,24 +14,11 @@ const Logo = styled.img`
   margin-right:20px;
 `;
 
-const Title = styled.h1`
-  font-size: 68px;
-  border: none;
-  font-weight: 300;
-`;
-
-const TitleText = styled.div`
-  display: block;
-  font-size: 22px;
-  margin-top: 5px;
-  width:100%
-  font-weight: 400;
-`;
 
 const Introduction = () => (
   <React.Fragment>
     <p>The official <strong>Catho</strong> style-guide</p>
-    <StorybookTitle>Usage</StorybookTitle>
+    <h2>Usage</h2>
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>
     <Highlight language="javascript" className="highlight">
