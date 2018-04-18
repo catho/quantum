@@ -30,6 +30,7 @@ const TitleText = styled.div`
 
 const Introduction = () => (
   <React.Fragment>
+    <p>The official <strong>Catho</strong> style-guide</p>
     <StorybookTitle>Usage</StorybookTitle>
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>

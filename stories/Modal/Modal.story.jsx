@@ -3,8 +3,9 @@ import { storiesOf } from '@storybook/react';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import Button from '../Button';
-import Modal from './Modal';
+import Button from '../../components/Button';
+import Modal from '../../components/Modal';
+import Atom from '../static/atom.svg';
 
 const stories = storiesOf('5. Modals', module);
 
@@ -20,7 +21,7 @@ class ModalStory extends React.Component {
 
   render() {
     return (
-      <Heading atom title="Modal">
+      <Heading image={Atom} title="Modal">
         <TabbedView>
           <Tab title="Usage">
             <Button skin="primary" onClick={this.handleOpen}>

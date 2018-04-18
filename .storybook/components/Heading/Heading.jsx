@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import atomImage from '../../../stories/static/atom.svg';
-import formulaImage from '../../../stories/static/formula.svg';
 
 const Title = styled.h1`
   display: flex;
@@ -19,13 +17,13 @@ const Title = styled.h1`
   }
 `;
 
-const Heading = ({ atom, title, children }) => (
+const Heading = ({ atom, title, image, children }) => (
   <React.Fragment>
     {
       <Title>
         <img
           alt={title}
-          src={atom ? atomImage : formulaImage}
+          src={image}
           width="60"
           height="60"
         />

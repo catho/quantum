@@ -4,18 +4,19 @@ import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import Loading from './Loading';
+import Button from '../../components/Button';
+import Atom from '../static/atom.svg';
 
-storiesOf('6. Others', module)
-  .add('Loading', () => (
-    <Heading atom title="Loading">
+storiesOf('2. Buttons', module)
+  .add('Button', () => (
+    <Heading image={Atom} title="Button">
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel component={<Loading />} importModules="Loading" />
+          <ComponentPanel component={<Button />} importModules="Button" />
         </Tab>
 
         <Tab title="API">
-          <AutoPropsApi component={Loading} />
+          <AutoPropsApi component={Button} />
         </Tab>
       </TabbedView>
     </Heading>

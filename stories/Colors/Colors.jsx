@@ -4,7 +4,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Colors from '../../components/Colors';
 import Highlight from 'react-highlight';
 import Title from '../../.storybook/components/Title';
-import HowToImport from '../../.storybook/components/HowToImport'
+import HowToImport from '../../.storybook/components/HowToImport';
 
 export default () => (
   <React.Fragment>
