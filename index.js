@@ -1,39 +1,16 @@
-import AutoComplete from './components/AutoComplete';
-import Button from './components/Button';
-import Checkbox from './components/Checkbox';
-import Colors from './components/Colors';
-import Dropdown from './components/Dropdown';
-import Footer from './components/Footer';
-import { Container, Row, Col, Hide } from './components/Grid';
-import Header from './components/Header';
-import Input from './components/Input';
-import Loading from './components/Loading';
-import Modal from './components/Modal';
-import Notification from './components/Notification';
-import { Radio, RadioGroup } from './components/Radio';
-import Range from './components/Range';
-import Textarea from './components/Textarea';
-import Toggle from './components/Toggle';
-
-export {
-  AutoComplete,
-  Button,
-  Checkbox,
-  Colors,
-  Dropdown,
-  Footer,
-  Container,
-  Row,
-  Col,
-  Hide,
-  Header,
-  Input,
-  Loading,
-  Modal,
-  Notification,
-  Radio,
-  RadioGroup,
-  Range,
-  Textarea,
-  Toggle,
-};
+export { default as AutoComplete } from './components/AutoComplete';
+export { default as Button } from './components/Button';
+export { default as Checkbox } from './components/Checkbox';
+export { default as Colors } from './components/Colors';
+export { default as Dropdown } from './components/Dropdown';
+export { default as Footer } from './components/Footer';
+export { Container, Row, Col, Hide } from './components/Grid';
+export { default as Header } from './components/Header';
+export { default as Input } from './components/Input';
+export { default as Loading } from './components/Loading';
+export { default as Modal } from './components/Modal';
+export { default as Notification } from './components/Notification';
+export { Radio, RadioGroup } from './components/Radio';
+export { default as Range } from './components/Range';
+export { default as Textarea } from './components/Textarea';
+export { default as Toggle } from './components/Toggle';

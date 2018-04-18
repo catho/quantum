@@ -1,13 +1,5 @@
-import Container from './Container';
-import Row from './Row';
-import Col from './Col';
-import Hide from './Hide';
-import { BREAKPOINTS } from './shared/grid-config';
-
-export {
-  Container,
-  Row,
-  Col,
-  Hide,
-  BREAKPOINTS,
-};
+export { default as Container } from './Container';
+export { default as Row } from './Row';
+export { default as Col } from './Col';
+export { default as Hide } from './Hide';
+export { BREAKPOINTS } from './shared/grid-config';
