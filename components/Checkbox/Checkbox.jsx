@@ -19,16 +19,16 @@ class Checkbox extends React.Component {
       label,
       onChange,
       checked,
-      ...props
+      ...rest
     } = this.props;
 
     return (
       <FieldGroup key={label} onClick={this.onClick}>
         <input
+          {...rest}
           id={id}
           type="checkbox"
           checked={checked}
-          {...props}
         />
         {label && <CheckBoxLabel htmlFor={id}> {label} </CheckBoxLabel>}
       </FieldGroup>

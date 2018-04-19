@@ -78,10 +78,10 @@ const Circle = styled.circle`
 /** An svg stand alone loading element,
  */
 const Loading = ({
-  ...props
+  ...rest
 }) => (
   <ThemeProvider theme={theme}>
-    <Wrapper {...props} >
+    <Wrapper {...rest} >
       <Svg viewBox="25 25 50 50">
         <Circle cx="50" cy="50" r="12" />
       </Svg>

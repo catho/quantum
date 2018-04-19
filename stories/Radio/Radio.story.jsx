@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import RadioGroup from './RadioGroup';
-import Radio from './Radio';
+import { Radio, RadioGroup } from '../../components/Radio';
 
 const stories = storiesOf('3. Forms', module);
 stories

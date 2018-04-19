@@ -1,24 +1,36 @@
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import Checkbox from './Checkbox';
+import AutoComplete from '../../components/AutoComplete';
+import Atom from '../static/atom.svg';
+
+const autoComplete = (
+  <AutoComplete dataSource={[
+      'Brazil',
+      'Germany',
+      'Mexico',
+      'Usa',
+    ]}
+  />
+);
 
 storiesOf('3. Forms', module)
-  .add('Checkbox', () => (
-    <Heading atom title="Checkbox">
+  .add('Auto Complete', () => (
+    <Heading image={Atom} title="<AutoComplete />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel
-            component={<Checkbox />}
-            importModules="Checkbox"
+            component={autoComplete}
+            importModules="AutoComplete"
           />
         </Tab>
 
         <Tab title="API">
-          <AutoPropsApi component={Checkbox} />
+          <AutoPropsApi component={AutoComplete} />
         </Tab>
       </TabbedView>
     </Heading>
