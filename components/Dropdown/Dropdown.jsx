@@ -40,7 +40,7 @@ class Dropdown extends React.Component {
     super(props);
 
     this.state = {
-      selectedItem: null,
+      selectedItem: '',
     };
   }
 

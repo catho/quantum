@@ -11,7 +11,7 @@ exports[`Input component  should match the snapshot 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    value={null}
+    value=""
   >
     <option
       disabled={true}

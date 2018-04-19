@@ -23,7 +23,7 @@ const Textfield = styled.textarea`
   }
 
   ${props => props.errorMessage && `
-    border-color: ${Colors.ERROR};
+    border-color: ${Colors.SECONDARY.PINK.LIPSTICK};
   `}
 `;
 

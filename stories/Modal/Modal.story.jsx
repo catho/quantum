@@ -40,7 +40,7 @@ class ModalStory extends React.Component {
               )
             }
 
-            <CodeExample component={<Modal />} />
+            <CodeExample component={<Modal closeModal={this.handleOpen} />} />
           </Tab>
 
           <Tab title="API">
