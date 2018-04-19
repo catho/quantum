@@ -42,7 +42,7 @@ class Input extends React.Component {
   static Phone = InputTypes.Phone;
 
   onChange = (e) => {
-    this.props.onChange({ value: e.target.value });
+    this.props.onChange(e, { value: e.target.value });
   }
 
   render() {
