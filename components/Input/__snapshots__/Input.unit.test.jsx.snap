@@ -6,17 +6,15 @@ exports[`Input component  should match the snapshot 1`] = `
 >
   
   <input
-    className="sc-bxivhb KpfJT"
-    data-mask=""
+    className="sc-bxivhb fCtETK"
+    defaultValue="foo"
     id=""
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    pattern=".*"
     placeholder=""
     type="text"
-    value=""
   />
   
 </div>
@@ -35,39 +33,15 @@ exports[`Input component  with a label should match the snapshot 1`] = `
      
   </label>
   <input
-    className="sc-bxivhb KpfJT"
-    data-mask=""
+    className="sc-bxivhb fCtETK"
+    defaultValue="foo"
     id="input-with-label"
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    pattern=".*"
     placeholder=""
     type="text"
-    value=""
-  />
-  
-</div>
-`;
-
-exports[`Input component  with a regexp as pattern prop should match the snapshot 1`] = `
-<div
-  className="sc-htpNat QOKog"
->
-  
-  <input
-    className="sc-bxivhb KpfJT"
-    data-mask=""
-    id=""
-    maxLength=""
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    pattern="\\\\d"
-    placeholder=""
-    type="text"
-    value=""
   />
   
 </div>
@@ -79,20 +53,18 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 >
   
   <input
-    className="sc-bxivhb dmigLk"
-    data-mask=""
+    className="sc-bxivhb icqWjb"
+    defaultValue="foo"
     id=""
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    pattern=".*"
     placeholder=""
     type="text"
-    value=""
   />
   <div
-    className="sc-bdVaJa iPBACg"
+    className="sc-bdVaJa fIlZBq"
   >
     Error message
   </div>

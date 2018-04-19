@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
+import Masked from 'react-text-mask';
+import InputTypes from './InputTypes';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
@@ -22,42 +24,71 @@ const StyledInput = styled.input`
     display: none;
   }
 
+  &:focus {
+    border-color: ${Colors.PRIMARY.BLUE.PEACOCK};
+  }
+
   ${props => props.error && `
-    border-color: ${Colors.ERROR};
+    border-color: ${Colors.SECONDARY.PINK.LIPSTICK};
   `}
 `;
 
-const Input = ({
-  id, label, error, pattern, mask, ...props
-}) => (
-  <FieldGroup>
-    { label && <Label htmlFor={id}> {label} </Label> }
+class Input extends React.Component {
+  static CEP = InputTypes.CEP;
+  static CNPJ = InputTypes.CNPJ;
+  static CPF = InputTypes.CPF;
+  static Date = InputTypes.Date;
+  static Phone = InputTypes.Phone;
 
-    <StyledInput
-      id={id}
-      pattern={pattern && pattern.source}
-      data-mask={mask}
-      error={error}
-      {...props}
-    />
+  onChange = (e) => {
+    this.props.onChange({ value: e.target.value });
+  }
 
-    {error && <ErrorMessage>{error}</ErrorMessage>}
-  </FieldGroup>
-);
+  render() {
+    const {
+      id,
+      label,
+      error,
+      mask,
+      ...rest
+    } = this.props;
+
+    return (
+      <FieldGroup>
+        { label && <Label htmlFor={id}> {label} </Label> }
+        <Masked
+          {...rest}
+          id={id}
+          mask={mask}
+          onChange={this.onChange}
+          render={
+            (ref, props) => (
+              <StyledInput
+                {...props}
+                error={error}
+                innerRef={ref}
+              />
+            )
+          }
+        />
+
+        {error && <ErrorMessage>{error}</ErrorMessage>}
+      </FieldGroup>
+    );
+  }
+}
 
 Input.defaultProps = {
   error: '',
   id: '',
   label: '',
-  mask: '',
+  mask: false,
   maxLength: '',
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
-  pattern: /.*/,
   placeholder: '',
   type: 'text',
-  value: '',
 };
 
 Input.propTypes = {
@@ -68,12 +99,7 @@ Input.propTypes = {
   /** Display a label text that describe the field */
   label: PropTypes.string,
   /** Set a text mask that filter user input */
-  mask: PropTypes.string,
   maxLength: PropTypes.string,
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
-  pattern: PropTypes.instanceOf(RegExp),
   placeholder: PropTypes.string,
   type: PropTypes.oneOf([
     'email',
@@ -82,7 +108,19 @@ Input.propTypes = {
     'number',
     'link',
   ]),
-  value: PropTypes.string,
+  onBlur: PropTypes.func,
+  onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  /**
+   * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
+   */
+  mask: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.bool,
+    PropTypes.instanceOf(RegExp),
+    PropTypes.func,
+    PropTypes.string,
+  ]),
 };
 
 export default Input;
