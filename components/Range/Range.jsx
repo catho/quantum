@@ -14,9 +14,9 @@ class Range extends React.Component {
 
   handleChange = (event) => {
     this.setState({
-      value: event.target.value,
+      value: Number(event.target.value),
     }, () => this.props.onChange({
-      value: this.state.value,
+      value: Number(this.state.value),
     }));
   }
 

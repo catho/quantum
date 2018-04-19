@@ -12,7 +12,7 @@ storiesOf('3. Forms', module)
     <Heading image={Atom} title="<Textarea />">
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel component={<Textarea />} importModules="Textarea" />
+          <ComponentPanel component={<Textarea id="example" label="Example" name="Textarea" />} importModules="Textarea" />
         </Tab>
 
         <Tab title="API">

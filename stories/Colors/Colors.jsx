@@ -17,7 +17,7 @@ export default () => (
       {
         Object.keys(Colors).map(item => (
           Object.keys(Colors[item]).map(child => (
-            <ColorList>
+            <ColorList key={child}>
               {
                 Object.entries(Colors[item][child]).map(([name, hex]) => (
                   <ColorBox key={hex} colorGroup={child} colorHex={hex}>
