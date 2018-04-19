@@ -6,11 +6,12 @@ import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import Example from '../../.storybook/components/Example';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import Input from './Input';
+import Input from '../../components/Input';
+import Atom from '../static/atom.svg';
 
 storiesOf('3. Forms', module)
   .add('Input', () => (
-    <Heading atom title="Input">
+    <Heading image={Atom} title="<Input />">
       <TabbedView>
         <Tab title="Usage">
           <ComponentPanel component={<Input />} importModules="Input" />

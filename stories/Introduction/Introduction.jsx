@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import StorybookTitle from '../../.storybook/components/Title';
-import logo from '../static/logo.svg';
+import Title from '../../.storybook/components/Title';
 
 const IntroWrapper = styled.div`
   display:flex;
@@ -15,35 +15,10 @@ const Logo = styled.img`
   margin-right:20px;
 `;
 
-const Title = styled.h1`
-  font-size: 68px;
-  border: none;
-  font-weight: 300;
-`;
-
-const TitleText = styled.div`
-  display: block;
-  font-size: 22px;
-  margin-top: 5px;
-  width:100%
-  font-weight: 400;
-`;
-
 const Introduction = () => (
   <React.Fragment>
-    <IntroWrapper>
-      <Logo src={logo} alt="Logo" />
-
-      <Title>
-        Styleguide
-
-        <TitleText>
-          The oficial Catho Component Library
-        </TitleText>
-      </Title>
-    </IntroWrapper>
-
-    <StorybookTitle>Usage</StorybookTitle>
+    <p>The official <strong>Catho</strong> style-guide</p>
+    <Title>Usage</Title>
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>
     <Highlight language="javascript" className="highlight">

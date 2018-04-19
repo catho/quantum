@@ -4,18 +4,19 @@ import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import Loading from './Loading';
+import Dropdown from '../../components/Dropdown';
+import Atom from '../static/atom.svg';
 
-storiesOf('6. Others', module)
-  .add('Loading', () => (
-    <Heading atom title="Loading">
+storiesOf('3. Forms', module)
+  .add('Dropdown', () => (
+    <Heading image={Atom} title="<Dropdown />">
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel component={<Loading />} importModules="Loading" />
+          <ComponentPanel component={<Dropdown />} importModules="Dropdown" />
         </Tab>
 
         <Tab title="API">
-          <AutoPropsApi component={Loading} />
+          <AutoPropsApi component={Dropdown} />
         </Tab>
       </TabbedView>
     </Heading>
