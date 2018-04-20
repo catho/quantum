@@ -56,11 +56,13 @@ class Form extends React.Component {
     .map(
       children,
       (child) => {
-        const { props: { validate = () => {}, value } } = child;
+        const { props } = child;
+        const { validate = () => {} } = props;
+
         return React.cloneElement(
           child,
           {
-            error: validate(value),
+            error: validate(props),
           },
         );
       },
@@ -88,7 +90,7 @@ class Form extends React.Component {
     const { clones } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} noValidate>
         { clones }
       </form>
     );
