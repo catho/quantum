@@ -3,37 +3,7 @@ import { withFormsy } from 'formsy-react';
 
 import DefaultInput from '../Input';
 
-class InputClass extends React.Component {
-  changeValue = (event) => {
-    console.log(event.target.value);
-
-    const { onChange, setValue } = this.props;
-
-    onChange(event);
-    setValue(event.target.value);
-  }
-
-  render() {
-    const {
-      getValue,
-      isPristine,
-      getErrorMessage,
-      ...rest
-    } = this.props;
-
-    return (
-      <DefaultInput
-        {...rest}
-        onChange={this.changeValue}
-        value={getValue() || ''}
-        error={
-          !isPristine() ?
-          getErrorMessage() :
-          ''
-        }
-      />
-    );
-  }
+class InputClass extends DefaultInput {
 }
 
 const WithFormsyInput = withFormsy(InputClass);

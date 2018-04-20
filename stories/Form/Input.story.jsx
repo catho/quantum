@@ -5,15 +5,34 @@ import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import ComponentPanel from '../../.storybook/components/ComponentPanel';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Form from '../../components/Form/Form';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 import Atom from '../static/atom.svg';
+
+import Validate from '../../components/Form/validate';
 
 storiesOf('8. Form validation', module)
   .add('Input', () => (
     <Form>
-      <Form.Input
-        name="test"
-        label="Test"
-        onChange={(event) => console.log('veio')}
+      <Input.CPF
+        name="valid"
+        label="CPF"
+        value={385167298}
+        validate={Validate.CPF}
       />
+
+      <Input
+        name="invalid"
+        label="CPF"
+        value={38516729842}
+      />
+
+      <Button
+        skin="default"
+        type="submit"
+        name="submit"
+      >
+        ENVIA ESSA MERDA
+      </Button>
     </Form>
   ));
