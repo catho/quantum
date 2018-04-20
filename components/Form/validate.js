@@ -1,6 +1,13 @@
 
 const trimString = str => (str ? str.replace(/\D+/g, '') : '');
 
+const msg = {
+  REQUIRED: 'Campo obrigatório',
+  CPF: 'Deu milho no CEP',
+  MIN: min => `Minimo de ${min} caracteres requerido`,
+  MAX: max => `Maximo de ${max} caracteres excedido`,
+};
+
 const validate = {
   CPF: (value) => {
     const val = trimString(value);
@@ -65,16 +72,18 @@ const validate = {
   },
   MIN: ({ value, trimmed = trimString(value), min }) => {
     if (!!min && String(trimmed).length < min) {
-      return `Minimo de ${min} caracteres requerido`;
+      return msg.MIN(min);
     }
     return '';
   },
   MAX: ({ value, trimmed = trimString(value), max }) => {
     if (!!max && String(trimmed).length > max) {
-      return `Maximo de ${max} caracteres excedido`;
+      return msg.MAX(max);
     }
     return '';
   },
+  REQUIRED: ({ value }) => (!value ? msg.REQUIRED : ''),
+
 };
 
 export default validate;

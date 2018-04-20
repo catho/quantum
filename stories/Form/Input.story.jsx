@@ -10,8 +10,13 @@ storiesOf('8. Form validation', module)
       <Form.Input.CPF
         name="valid"
         label="CPF"
-        required
-        validate={Validate.MIN}
+        validate={[
+          {
+            validate: Validate.REQUIRED,
+            error: 'CARALEO',
+          },
+          Validate.MIN,
+        ]}
         min={3}
       />
 

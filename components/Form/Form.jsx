@@ -21,8 +21,6 @@ class Form extends React.Component {
   static Input = FormInput;
   static Submit = Submit;
 
-  static REQUIRED = 'Campo obrigatório';
-
   constructor(props) {
     super(props);
 
@@ -54,17 +52,29 @@ class Form extends React.Component {
     );
 
   findError = (child) => {
-    //const { props: { validate = () => {}, value, required } } = child;
     const { props } = child;
-    const { validate = () => {}, value, required } = props;
+    const { validate = () => {} } = props;
 
-    const isRequired = required && !value ? Form.REQUIRED : '';
+    if (Array.isArray(validate)) {
+      let invalid;
+      for (let i = 0; i < validate.length; i += 1) {
+        const v = validate[i];
 
-    if (isRequired) return isRequired;
+        if (typeof v === 'function') {
+          invalid = v(props);
+        } else {
+          const { validate: fn, error } = v;
+          const msg = fn(props);
 
-    const valid = validate(props);
+          invalid = msg ? error || msg : '';
+        }
 
-    return valid;
+        if (invalid) break;
+      }
+      return invalid;
+    }
+
+    return validate(props);
   }
 
   validateError = children => React
