@@ -11,6 +11,7 @@ storiesOf('8. Form validation', module)
         name="valid"
         label="CPF"
         validate={Validate.CPF}
+        required
       />
 
       <Form.Input.CEP

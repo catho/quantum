@@ -21,6 +21,8 @@ class Form extends React.Component {
   static Input = FormInput;
   static Submit = Submit;
 
+  static REQUIRED = 'Campo obrigatório';
+
   constructor(props) {
     super(props);
 
@@ -51,19 +53,28 @@ class Form extends React.Component {
       ),
     );
 
+  findError = (child) => {
+    const { props: { validate = () => {}, value, required } } = child;
+
+    const isRequired = required && !value ? Form.REQUIRED : '';
+
+    if (isRequired) return isRequired;
+
+    const valid = validate(value);
+
+    return valid;
+  }
+
   validateError = children => React
     .Children
     .map(
       children,
-      (child) => {
-        const { props: { validate = () => {}, value } } = child;
-        return React.cloneElement(
-          child,
-          {
-            error: validate(value),
-          },
-        );
-      },
+      child => React.cloneElement(
+        child,
+        {
+          error: this.findError(child),
+        },
+      ),
     );
 
   handleChange = ({ target: { name } }, { value }) => {
@@ -88,7 +99,7 @@ class Form extends React.Component {
     const { clones } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} noValidate>
         { clones }
       </form>
     );
