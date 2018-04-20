@@ -1,7 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Input from '../Input';
+import Button from '../Button';
+
+class FormInput extends Input {
+
+}
+
+FormInput.defaultProps = {
+  validate: () => '',
+};
+
+FormInput.propTypes = {
+  validate: PropTypes.func,
+};
+
+const Submit = ({ children, ...rest }) => <Button {...rest} type="submit"> {children} </Button>
 
 class Form extends React.Component {
+  static Input = FormInput;
+  static Submit = Submit;
+
   constructor(props) {
     super(props);
 
@@ -21,34 +40,55 @@ class Form extends React.Component {
 
   createClones = () => React
     .Children
-    .map(this.allChildren, (child) => {
-      console.log(child);
-      const { props: { name } } = child;
-      return React.cloneElement(
+    .map(
+      this.allChildren,
+      child => React.cloneElement(
         child,
         {
-          onChange: e => this.handleChange(e, name),
-          value: this.state.cloneValues[name],
+          onChange: this.handleChange,
+          value: this.state.cloneValues[child.props.name],
         },
-      );
-    });
+      ),
+    );
 
-  handleChange = (e, name) => {
-    this.setState({ cloneValues: { [name]: e.target.value } }, () => {
-      this.setState({ clones: this.createClones() }, () => {
-        console.log(this.state.cloneValues, this.state.clones);
-      });
+  validateError = children => React
+    .Children
+    .map(
+      children,
+      (child) => {
+        const { props: { validate = () => {}, value } } = child;
+        return React.cloneElement(
+          child,
+          {
+            error: validate(value),
+          },
+        );
+      },
+    );
+
+  handleChange = ({ target: { name } }, { value }) => {
+    const cloneValues = {
+      ...this.state.cloneValues,
+      [name]: value,
+    };
+
+    this.setState({ cloneValues }, () => {
+      this.setState({ clones: this.createClones() });
     });
   }
 
   handleSubmit = (event) => {
+    event.preventDefault();
+    const clones = this.validateError(this.state.clones);
+
+    this.setState({ clones });
   }
 
   render() {
     const { clones } = this.state;
 
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         { clones }
       </form>
     );
