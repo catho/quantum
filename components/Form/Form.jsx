@@ -1,40 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-let allChildren = {};
-
 class Form extends React.Component {
   constructor(props) {
     super(props);
 
     const { children } = this.props;
-    allChildren = children;
+    this.allChildren = children;
 
-    this.state = {};
-    this.state.cloneValues = {};
-     
-    allChildren.map(({props: { name, value }}) => {
+    this.state = {
+      cloneValues: {},
+    };
+
+    this.allChildren.forEach(({ props: { name, value } }) => {
       this.state.cloneValues[name] = value;
     });
 
     this.state.clones = this.createClones();
   }
 
-  createClones = () => {
-    const clones = (
-      React
-      .Children
-      .map(allChildren, (input) => {
-        return React.cloneElement(input,
-        { 
-          onChange: e => this.handleChange(e, input.props.name),
-          value: this.state.cloneValues[input.props.name],
-        });
-      })
-    );
-
-    return clones;
-  }
+  createClones = () => React
+    .Children
+    .map(this.allChildren, (child) => {
+      console.log(child);
+      const { props: { name } } = child;
+      return React.cloneElement(
+        child,
+        {
+          onChange: e => this.handleChange(e, name),
+          value: this.state.cloneValues[name],
+        },
+      );
+    });
 
   handleChange = (e, name) => {
     this.setState({ cloneValues: { [name]: e.target.value } }, () => {
@@ -49,9 +46,11 @@ class Form extends React.Component {
 
   render() {
     const { clones } = this.state;
-    
+
     return (
-      clones.map( clone => { return clone })
+      <form>
+        { clones }
+      </form>
     );
   }
 }
