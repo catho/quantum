@@ -17,14 +17,11 @@ storiesOf('8. Form validation', module)
       <Input.CPF
         name="valid"
         label="CPF"
-        value={385167298}
-        validate={Validate.CPF}
       />
 
       <Input
         name="invalid"
         label="CPF"
-        value={38516729842}
       />
 
       <Button
