@@ -12,52 +12,33 @@ const validate = {
   CPF: (value) => {
     const val = trimString(value);
     const errorMsg = 'Deu milho no CPF';
+    const cpfSize = 11;
 
-    if (!val ||
-      val.length !== 11 ||
-      val === '00000000000' ||
-      val === '11111111111' ||
-      val === '22222222222' ||
-      val === '33333333333' ||
-      val === '44444444444' ||
-      val === '55555555555' ||
-      val === '66666666666' ||
-      val === '77777777777' ||
-      val === '88888888888' ||
-      val === '99999999999') {
+    if (!val || val.length !== cpfSize) {
       return errorMsg;
     }
 
-    // Valida 1o digito
-    let sum = 0;
-
-    for (let i = 0; i < 9; i += 1) {
-      sum += Number(val.charAt(i)) * (10 - i);
+    for (let i = 0; i < 10; i += 1) {
+      if (val === String(i).repeat(cpfSize)) {
+        return errorMsg;
+      }
     }
 
-    let rev = 11 - (sum % 11);
+    const validPosition = (position) => {
+      let sum = 0;
+      let rev;
 
-    if (rev === 10 || rev === 11) {
-      rev = 0;
-    }
+      for (let i = 0; i < position; i += 1) {
+        sum += Number(val.charAt(i)) * ((position + 1) - i);
+      }
 
-    if (rev !== Number(val.charAt(9))) {
-      return errorMsg;
-    }
+      rev = cpfSize - (sum % cpfSize);
+      rev = (rev === 10 || rev === cpfSize) ? 0 : rev;
 
-    // Valida 2o digito
-    sum = 0;
-    for (let i = 0; i < 10; i += 1 ) {
-      sum += Number(val.charAt(i)) * (11 - i);
-    }
+      return rev === Number(val.charAt(position));
+    };
 
-    rev = 11 - (sum % 11);
-
-    if (rev === 10 || rev === 11) {
-      rev = 0;
-    }
-
-    if (rev !== Number(val.charAt(10))) {
+    if (!validPosition(9) || !validPosition(10)) {
       return errorMsg;
     }
 
