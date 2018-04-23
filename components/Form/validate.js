@@ -6,6 +6,7 @@ const msg = {
   REQUIRED: 'Campo obrigatório',
   CPF: 'Deu milho no CEP',
   DATE: 'Deu milho na data',
+  EMAIL: 'E-mail inválido',
   MIN: min => `Minimo de ${min} caracteres requerido`,
   MAX: max => `Maximo de ${max} caracteres excedido`,
 };
@@ -70,7 +71,10 @@ const validate = {
     return '';
   },
   REQUIRED: ({ value }) => (!value ? msg.REQUIRED : ''),
-
+  EMAIL: ({ value }) => {
+    const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return pattern.test(value) ? '' : msg.EMAIL;
+  },
 };
 
 export default validate;

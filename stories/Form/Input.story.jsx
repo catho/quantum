@@ -33,11 +33,16 @@ storiesOf('8. Form validation', module)
         min={8}
       />
 
+      <Form.Input
+        name="email"
+        label="E-mail"
+        validate={[Validate.EMAIL]}
+      />
 
       <Form.Submit
         skin="default"
       >
-        ENVIA ESSA MERDA
+        ENVIA ESSA porcaria
       </Form.Submit>
     </Form>
   ));
