@@ -1,18 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import InputTypes from '../Input/InputTypes';
-// import FormInput from './sub-components/FormInput';
+import FormInput from './sub-components/FormInput';
 import Submit from './sub-components/Submit';
-
-import Input from '../Input';
-
-class FormInput extends Input {}
-
-FormInput.defaultProps.validate = () => '';
-FormInput.propTypes.validate = PropTypes.oneOfType([
-  PropTypes.array,
-  PropTypes.func,
-]);
 
 class Form extends React.Component {
   static Input = FormInput;
@@ -115,6 +105,13 @@ class Form extends React.Component {
   }
 }
 
+Form.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
+
 function changeInputNames(type) {
   Form.Input[type].displayName = `Form.Input.${type}`;
 }
@@ -122,12 +119,5 @@ function changeInputNames(type) {
 Object
   .keys(InputTypes)
   .map(changeInputNames);
-
-Form.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export default Form;

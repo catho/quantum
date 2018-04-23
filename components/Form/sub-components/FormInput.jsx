@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Input from '../Input';
+import Input from '../../Input';
 
 class FormInput extends Input {}
 FormInput.defaultProps.validate = () => '';
