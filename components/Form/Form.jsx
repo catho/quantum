@@ -1,24 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import InputTypes from '../Input/InputTypes';
+// import FormInput from './sub-components/FormInput';
+import Submit from './sub-components/Submit';
+
 import Input from '../Input';
-import Button from '../Button';
 
 class FormInput extends Input {}
+
 FormInput.defaultProps.validate = () => '';
 FormInput.propTypes.validate = PropTypes.oneOfType([
   PropTypes.array,
   PropTypes.func,
 ]);
-
-const Submit = ({ children, ...rest }) => <Button {...rest} type="submit"> {children} </Button>;
-
-Submit.defaultProps = {
-  children: 'Enviar',
-};
-
-Submit.propTypes = {
-  children: PropTypes.node,
-};
 
 class Form extends React.Component {
   static Input = FormInput;
@@ -34,9 +28,9 @@ class Form extends React.Component {
       cloneValues: {},
     };
 
-    this.allChildren.forEach(({ props: { name, value } }) => {
+    React.Children.forEach(this.allChildren, (({ props: { name, value } }) => {
       this.state.cloneValues[name] = value;
-    });
+    }));
 
     this.state.clones = this.createClones();
   }
@@ -120,6 +114,14 @@ class Form extends React.Component {
     );
   }
 }
+
+function changeInputNames(type) {
+  Form.Input[type].displayName = `Form.Input.${type}`;
+}
+
+Object
+  .keys(InputTypes)
+  .map(changeInputNames);
 
 Form.propTypes = {
   children: PropTypes.oneOfType([

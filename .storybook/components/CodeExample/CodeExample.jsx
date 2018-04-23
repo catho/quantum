@@ -49,11 +49,16 @@ const componentToString = (component, state, level = 0) => {
 
   if (typeof component === 'object') {
     const { type, props } = component;
+
     const name = type.displayName || type.name || type;
     const children = props ? props.children : null;
 
     content = `${indentation}<${name}${Object.keys(state).length ? ` ${getProps(state)}` : ''}`;
-    content += children ? `>\n${componentToString(children, state, level + 1)}\n${indentation}</${name}>` : ' />';
+    content += children
+      ? Array.isArray(children)
+        ? `>\n${children.map(child => componentToString(child, state, level + 1)).join('\n')}\n${indentation}</${name}>`
+        : `>\n${componentToString(children, state, level + 1)}\n${indentation}</${name}>`
+      : ' />';
   } else {
     content = component ? `${indentation}${component}` : '';
   }

@@ -6,8 +6,8 @@ const msg = {
   REQUIRED: 'Campo obrigatório',
   CPF: 'Deu milho no CEP',
   DATE: 'Deu milho na data',
-  MIN: min => `Minimo de ${min} caracteres requerido`,
-  MAX: max => `Maximo de ${max} caracteres excedido`,
+  MIN: min => `Minimo de ${min} caracteres`,
+  MAX: max => `Maximo de ${max} caracteres`,
 };
 
 const validate = {
