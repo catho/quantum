@@ -54,7 +54,7 @@ const validate = {
     return '';
   },
   DATE: ({ value }) => {
-    const date = moment(value.split('/').reverse().join('-'));
+    const date = moment(value, 'DD/MM/YYYY');
     return date.isValid() ? '' : msg.DATE;
   },
   MIN: ({ value, trimmed = trimString(value), min }) => {
