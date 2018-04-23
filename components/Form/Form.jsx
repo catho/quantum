@@ -10,7 +10,7 @@ FormInput.propTypes.validate = PropTypes.oneOfType([
   PropTypes.func,
 ]);
 
-const Submit = ({ children, ...rest }) => <Button {...rest} type="submit"> {children} </Button>
+const Submit = ({ children, ...rest }) => <Button {...rest} type="submit"> {children} </Button>;
 
 Submit.defaultProps = {
   children: 'Enviar',
