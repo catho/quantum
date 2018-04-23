@@ -3,19 +3,22 @@ import PropTypes from 'prop-types';
 import Input from '../Input';
 import Button from '../Button';
 
-class FormInput extends Input {
-
-}
-
-FormInput.defaultProps = {
-  validate: () => '',
-};
-
-FormInput.propTypes = {
-  validate: PropTypes.func,
-};
+class FormInput extends Input {}
+FormInput.defaultProps.validate = () => '';
+FormInput.propTypes.validate = PropTypes.oneOfType([
+  PropTypes.array,
+  PropTypes.func,
+]);
 
 const Submit = ({ children, ...rest }) => <Button {...rest} type="submit"> {children} </Button>
+
+Submit.defaultProps = {
+  children: 'Enviar',
+};
+
+Submit.propTypes = {
+  children: PropTypes.node,
+};
 
 class Form extends React.Component {
   static Input = FormInput;
