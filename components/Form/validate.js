@@ -1,9 +1,11 @@
+import moment from 'moment';
 
 const trimString = str => (str ? str.replace(/\D+/g, '') : '');
 
 const msg = {
   REQUIRED: 'Campo obrigatório',
   CPF: 'Deu milho no CEP',
+  DATE: 'Deu milho na data',
   MIN: min => `Minimo de ${min} caracteres requerido`,
   MAX: max => `Maximo de ${max} caracteres excedido`,
 };
@@ -50,6 +52,10 @@ const validate = {
     }
 
     return '';
+  },
+  DATE: ({ value }) => {
+    const date = moment(value.split('/').reverse().join('-'));
+    return date.isValid() ? '' : msg.DATE;
   },
   MIN: ({ value, trimmed = trimString(value), min }) => {
     if (!!min && String(trimmed).length < min) {

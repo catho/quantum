@@ -20,6 +20,19 @@ storiesOf('8. Form validation', module)
         min={3}
       />
 
+      <Form.Input.Date
+        name="date"
+        label="Date"
+        validate={[
+          Validate.MIN,
+          {
+            validate: Validate.DATE,
+            error: 'DATA ERRADA',
+          },
+        ]}
+        min={8}
+      />
+
 
       <Form.Submit
         skin="default"
