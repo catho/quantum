@@ -12,7 +12,7 @@ const msg = {
   MAX: max => `Maximo de ${max} caracteres excedido`,
 };
 
-const validate = {
+export default {
   REQUIRED: ({ value }) => (value ? '' : msg.REQUIRED),
   CPF: ({ value }, cpf = removeNonDigit(value)) => {
     const CPF_SIZE = 11;
@@ -69,5 +69,3 @@ const validate = {
     return pattern.test(value) ? '' : msg.EMAIL;
   },
 };
-
-export default validate;

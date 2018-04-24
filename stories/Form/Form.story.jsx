@@ -5,8 +5,7 @@ import Example from '../../.storybook/components/Example';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Atom from '../static/atom.svg';
 
-import Form from '../../components/Form/Form';
-import Validate from '../../components/Form/validate';
+import { Form, VALIDATIONS } from '../../components/Form';
 
 const FormExample = (
   <Form style={{ width: '200px' }}>
@@ -15,10 +14,10 @@ const FormExample = (
       label="CPF"
       validate={[
         {
-          validate: Validate.REQUIRED,
+          validate: VALIDATIONS.REQUIRED,
           error: 'CARALEO',
         },
-        Validate.MIN,
+        VALIDATIONS.MIN,
       ]}
       min={3}
     />
@@ -27,9 +26,9 @@ const FormExample = (
       name="date"
       label="Date"
       validate={[
-        Validate.MIN,
+        VALIDATIONS.MIN,
         {
-          validate: Validate.DATE,
+          validate: VALIDATIONS.DATE,
           error: 'DATA ERRADA',
         },
       ]}
