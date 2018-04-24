@@ -37,7 +37,7 @@ describe('Form component ', () => {
     expect(renderer.create(FormWithValidations()).toJSON()).toMatchSnapshot();
   });
 
-  describe('Submit without validations', () => {
+  describe('Without validations', () => {
     it('Should call "onValidSubmit" and "onSubmit" callback on a valid submit', () => {
       const wrapper = shallow(FormWithoutValidations());
       wrapper.simulate('submit', mockEvent);
@@ -47,7 +47,7 @@ describe('Form component ', () => {
     });
   });
 
-  describe('Submit With validations', () => {
+  describe('With validations', () => {
     it('Shouldn\'t call "onValidSubmit" and "onSubmit" callback on a invalid submit', () => {
       const wrapper = shallow(FormWithValidations());
       wrapper.simulate('submit', mockEvent);
@@ -58,20 +58,20 @@ describe('Form component ', () => {
 
     it('Should validate fields', () => {
       const execTest = ({
+        invalid,
+        valid,
         validationName,
         errorMsg,
-        newValue,
-        defaultValue,
       }) => {
         const wrapper = shallow(FormWithValidations());
         const getField = () => wrapper.find({ validate: validations[validationName] });
 
-        if (defaultValue) {
+        if (invalid) {
           const initalField = getField();
           initalField.simulate(
             'change',
             { target: { name: initalField.prop('name') } },
-            { value: defaultValue },
+            { value: invalid },
           );
         }
 
@@ -83,7 +83,7 @@ describe('Form component ', () => {
         beforeChange.simulate(
           'change',
           { target: { name: beforeChange.prop('name') } },
-          { value: newValue },
+          { value: valid },
         );
 
         const afterChange = getField();
@@ -94,43 +94,82 @@ describe('Form component ', () => {
         {
           validationName: 'REQUIRED',
           errorMsg: 'Campo obrigatório',
-          newValue: 'foo',
+          valid: 'foo',
         },
         {
           validationName: 'CPF',
           errorMsg: 'CPF inválido',
-          newValue: '35841429892',
+          valid: '321.970.213-97',
+          invalid: '123.456.212-34',
         },
         {
           validationName: 'CEP',
           errorMsg: 'CEP inválido',
-          newValue: '06826510',
+          valid: '02354128',
         },
         {
           validationName: 'DATE',
           errorMsg: 'Data inválida',
-          newValue: '15/10/1988',
+          valid: '20/11/1981',
+          invalid: '30/02/1950',
         },
         {
           validationName: 'EMAIL',
           errorMsg: 'E-mail inválido',
-          newValue: 'foo@baz.com',
+          valid: 'foo@baz.com',
+          invalid: 'foo@baz',
         },
         {
           validationName: 'MAXLENGTH',
           errorMsg: 'Maximo de 3 caracteres excedido',
-          newValue: '123',
-          defaultValue: '123456789',
+          valid: '123',
+          invalid: '123456789',
         },
         {
           validationName: 'MINLENGTH',
           errorMsg: 'Mínimo de 8 caracteres requerido',
-          newValue: '12345678',
-          defaultValue: '12345',
+          valid: '12345678',
+          invalid: '12345',
         },
       ];
 
       validationTests.forEach(params => execTest(params));
+    });
+
+    it('Should exec validations in diferent formats', () => {
+      const form = (
+        <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
+          <Form.Input
+            name="name"
+            label="Name"
+            minLength="8"
+            validate={[
+              validations.REQUIRED,
+              {
+                validate: validations.MINLENGTH,
+                error: 'Valor mínimo de caracteres não alcançado',
+              },
+            ]}
+          />
+        </Form>
+      );
+
+      const wrapper = shallow(form);
+      wrapper.simulate('submit', mockEvent);
+
+      expect(onSubmitCallback).toHaveBeenCalled();
+
+      const input = wrapper.find(Form.Input);
+
+      input.simulate(
+        'change',
+        { target: { name: input.prop('name') } },
+        { value: 'Some value' },
+      );
+
+      wrapper.simulate('submit', mockEvent);
+
+      expect(onValidSubmitCallback).toHaveBeenCalled();
     });
   });
 });
