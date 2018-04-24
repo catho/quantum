@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component  should match the snapshot 1`] = `
+<form
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="sc-htpNat QOKog"
+  >
+    <label
+      className="sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+       
+      Name
+       
+    </label>
+    <input
+      id=""
+      mask={false}
+      maxLength=""
+      name="name"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      render={[Function]}
+      type="text"
+      validate={[Function]}
+      value=""
+    />
+    
+  </div>
+  <div
+    className="sc-htpNat QOKog"
+  >
+    <label
+      className="sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+       
+      CPF
+       
+    </label>
+    <input
+      id=""
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      maxLength=""
+      name="cpf"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      render={[Function]}
+      type="text"
+      validate={[Function]}
+      value=""
+    />
+    
+  </div>
+  <div
+    className="sc-htpNat QOKog"
+  >
+    <label
+      className="sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+       
+      CEP
+       
+    </label>
+    <input
+      id=""
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      maxLength=""
+      name="cep"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      render={[Function]}
+      type="text"
+      validate={[Function]}
+      value=""
+    />
+    
+  </div>
+  <div
+    className="sc-htpNat QOKog"
+  >
+    <label
+      className="sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+       
+      Birthday
+       
+    </label>
+    <input
+      id=""
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      maxLength=""
+      name="birthday"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      render={[Function]}
+      type="text"
+      validate={[Function]}
+      value=""
+    />
+    
+  </div>
+  <div
+    className="sc-htpNat QOKog"
+  >
+    <label
+      className="sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+       
+      E-mail
+       
+    </label>
+    <input
+      id=""
+      mask={false}
+      maxLength=""
+      name="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      render={[Function]}
+      type="text"
+      validate={[Function]}
+      value=""
+    />
+    
+  </div>
+  <div
+    className="sc-htpNat QOKog"
+  >
+    <label
+      className="sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+       
+      Address
+       
+    </label>
+    <input
+      id=""
+      mask={false}
+      maxLength=""
+      minLength={8}
+      name="address"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      render={[Function]}
+      type="text"
+      validate={[Function]}
+      value=""
+    />
+    
+  </div>
+  <div
+    className="sc-htpNat QOKog"
+  >
+    <label
+      className="sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+       
+      Country
+       
+    </label>
+    <input
+      id=""
+      mask={false}
+      maxLength=""
+      minLength={3}
+      name="country"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      render={[Function]}
+      type="text"
+      validate={[Function]}
+      value=""
+    />
+    
+  </div>
+  <button
+    className="sc-ifAKCX cjPEal"
+    disabled={false}
+    onChange={[Function]}
+    onClick={[Function]}
+    type="submit"
+    value={undefined}
+  >
+     
+     
+    Enviar
+     
+     
+  </button>
+</form>
+`;
