@@ -52,15 +52,15 @@ export default {
     const date = moment(value, 'DD/MM/YYYY');
     return date.isValid() ? '' : msg.DATE;
   },
-  MIN: ({ value, val = removeNonDigit(value), min }) => {
-    if (!!min && String(val).length < min) {
-      return msg.MIN(min);
+  MINLENGTH: ({ value = '', minLength }) => {
+    if (!!minLength && String(value).length < minLength) {
+      return msg.MIN(minLength);
     }
     return '';
   },
-  MAX: ({ value, val = removeNonDigit(value), max }) => {
-    if (!!max && String(val).length > max) {
-      return msg.MAX(max);
+  MAXLENGTH: ({ value = '', maxLength }) => {
+    if (!!maxLength && String(value).length > maxLength) {
+      return msg.MAX(maxLength);
     }
     return '';
   },

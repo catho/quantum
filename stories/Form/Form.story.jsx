@@ -17,22 +17,22 @@ const FormExample = (
           validate: VALIDATIONS.REQUIRED,
           error: 'CARALEO',
         },
-        VALIDATIONS.MIN,
+        VALIDATIONS.MINLENGTH,
       ]}
-      min={3}
+      minLength={3}
     />
 
     <Form.Input.Date
       name="date"
       label="Date"
       validate={[
-        VALIDATIONS.MIN,
+        VALIDATIONS.MINLENGTH,
         {
           validate: VALIDATIONS.DATE,
           error: 'DATA ERRADA',
         },
       ]}
-      min={8}
+      minLength={8}
     />
 
     <Form.Submit />
@@ -60,7 +60,3 @@ storiesOf('8. Form validation', module)
     </Heading>
 
   ));
-
-  /**
-   *
-   */
