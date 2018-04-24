@@ -6,10 +6,10 @@ const msg = {
   REQUIRED: 'Campo obrigatório',
   CPF: 'CPF inválido',
   CEP: 'CEP inválido',
-  DATE: 'Deu milho na data',
+  DATE: 'Data inválida',
   EMAIL: 'E-mail inválido',
-  MIN: min => `Minimo de ${min} caracteres requerido`,
-  MAX: max => `Maximo de ${max} caracteres excedido`,
+  MINLENGTH: min => `Mínimo de ${min} caracteres requerido`,
+  MAXLENGTH: max => `Maximo de ${max} caracteres excedido`,
 };
 
 export default {
@@ -53,14 +53,14 @@ export default {
     return date.isValid() ? '' : msg.DATE;
   },
   MINLENGTH: ({ value = '', minLength }) => {
-    if (!!minLength && String(value).length < minLength) {
-      return msg.MIN(minLength);
+    if (!!minLength && String(value).length < Number(minLength)) {
+      return msg.MINLENGTH(minLength);
     }
     return '';
   },
-  MAXLENGTH: ({ value = '', maxLength }) => {
-    if (!!maxLength && String(value).length > maxLength) {
-      return msg.MAX(maxLength);
+  MAXLENGTH: ({ value, maxLength }) => {
+    if (!!maxLength && String(value).length > Number(maxLength)) {
+      return msg.MAXLENGTH(maxLength);
     }
     return '';
   },

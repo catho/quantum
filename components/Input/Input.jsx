@@ -54,9 +54,6 @@ class Input extends React.Component {
       ...rest
     } = this.props;
 
-    console.log('-----------');
-    console.log(this.props);
-
     return (
       <FieldGroup>
         { label && <Label htmlFor={id}> {label} </Label> }
