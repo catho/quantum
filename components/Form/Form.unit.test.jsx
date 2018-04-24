@@ -90,48 +90,47 @@ describe('Form component ', () => {
         expect(afterChange.prop('error')).toBe('');
       };
 
-      execTest({
-        validationName: 'REQUIRED',
-        errorMsg: 'Campo obrigatório',
-        newValue: 'foo',
-      });
+      const validationTests = [
+        {
+          validationName: 'REQUIRED',
+          errorMsg: 'Campo obrigatório',
+          newValue: 'foo',
+        },
+        {
+          validationName: 'CPF',
+          errorMsg: 'CPF inválido',
+          newValue: '35841429892',
+        },
+        {
+          validationName: 'CEP',
+          errorMsg: 'CEP inválido',
+          newValue: '06826510',
+        },
+        {
+          validationName: 'DATE',
+          errorMsg: 'Data inválida',
+          newValue: '15/10/1988',
+        },
+        {
+          validationName: 'EMAIL',
+          errorMsg: 'E-mail inválido',
+          newValue: 'foo@baz.com',
+        },
+        {
+          validationName: 'MAXLENGTH',
+          errorMsg: 'Maximo de 3 caracteres excedido',
+          newValue: '123',
+          defaultValue: '123456789',
+        },
+        {
+          validationName: 'MINLENGTH',
+          errorMsg: 'Mínimo de 8 caracteres requerido',
+          newValue: '12345678',
+          defaultValue: '12345',
+        },
+      ];
 
-      execTest({
-        validationName: 'CPF',
-        errorMsg: 'CPF inválido',
-        newValue: '35841429892',
-      });
-
-      execTest({
-        validationName: 'CEP',
-        errorMsg: 'CEP inválido',
-        newValue: '06826510',
-      });
-
-      execTest({
-        validationName: 'DATE',
-        errorMsg: 'Data inválida',
-        newValue: '15/10/1988',
-      });
-
-      execTest({
-        validationName: 'EMAIL',
-        errorMsg: 'E-mail inválido',
-        newValue: 'foo@baz.com',
-      });
-      execTest({
-        validationName: 'MAXLENGTH',
-        errorMsg: 'Maximo de 3 caracteres excedido',
-        newValue: '123',
-        defaultValue: '123456789',
-      });
-
-      execTest({
-        validationName: 'MINLENGTH',
-        errorMsg: 'Mínimo de 8 caracteres requerido',
-        newValue: '12345678',
-        defaultValue: '12345',
-      });
+      validationTests.forEach(params => execTest(params));
     });
   });
 });
