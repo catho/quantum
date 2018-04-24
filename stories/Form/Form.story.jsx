@@ -9,18 +9,7 @@ import { Form, VALIDATIONS } from '../../components/Form';
 
 const FormExample = (
   <Form style={{ width: '200px' }}>
-    <Form.Input.CPF
-      name="valid"
-      label="CPF"
-      validate={[
-        {
-          validate: VALIDATIONS.REQUIRED,
-          error: 'CARALEO',
-        },
-        VALIDATIONS.MINLENGTH,
-      ]}
-      minLength={3}
-    />
+    <Form.Input.CPF name="cpf" label="CPF" validate={VALIDATIONS.CPF} />
 
     <Form.Input.Date
       name="date"

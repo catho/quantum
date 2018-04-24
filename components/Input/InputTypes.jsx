@@ -5,7 +5,13 @@ import masks from './masks';
 const types = {
   CEP: props => (<Input mask={masks.cep} {...props} />),
   CNPJ: props => (<Input mask={masks.cnpj} {...props} />),
-  CPF: props => (<Input mask={masks.cpf} {...props} />),
+  CPF: (props) => {
+    console.log('-----------');
+    console.log(props);
+
+    // return <Input mask={masks.cpf} {...props} />;
+    return <p>Socorro</p>;
+  },
   Date: props => (<Input mask={masks.date} {...props} />),
   Phone: props => (<Input mask={masks.phone} {...props} />),
 };
