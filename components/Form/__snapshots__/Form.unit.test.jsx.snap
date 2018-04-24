@@ -13,14 +13,14 @@ exports[`Form component  should match the snapshot 1`] = `
       htmlFor=""
     >
        
-      Name
+      required
        
     </label>
     <input
       id=""
       mask={false}
       maxLength=""
-      name="name"
+      name="required"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
