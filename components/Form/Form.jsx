@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import InputTypes from '../Input/InputTypes';
 import FormInput from './sub-components/FormInput';
+import InputTypes from '../Input/InputTypes';
 import Submit from './sub-components/Submit';
 
 class Form extends React.Component {
@@ -90,8 +90,15 @@ class Form extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const clones = this.validateError(this.state.clones);
+    const { onSubmit, onValidSubmit } = this.props;
 
-    this.setState({ clones });
+    const valid = !clones.find(({ props: { error } }) => error);
+
+    this.setState({ clones }, () => {
+      onSubmit();
+
+      if (valid) onValidSubmit();
+    });
   }
 
   render() {
@@ -105,11 +112,18 @@ class Form extends React.Component {
   }
 }
 
+Form.defaultProps = {
+  onSubmit: () => {},
+  onValidSubmit: () => {},
+};
+
 Form.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  onSubmit: PropTypes.func,
+  onValidSubmit: PropTypes.func,
 };
 
 function changeInputNames(type) {

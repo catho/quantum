@@ -90,6 +90,7 @@ Input.defaultProps = {
   onFocus: () => {},
   placeholder: '',
   type: 'text',
+  value: '',
 };
 
 Input.propTypes = {
@@ -122,6 +123,7 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
+  value: PropTypes.string,
 };
 
 export default Input;
