@@ -57,7 +57,12 @@ describe('Form component ', () => {
     });
 
     it('Should validate fields', () => {
-      const execTest = (validationName, errorMsg, newValue, defaultValue) => {
+      const execTest = ({
+        validationName,
+        errorMsg,
+        newValue,
+        defaultValue,
+      }) => {
         const wrapper = shallow(FormWithValidations());
         const getField = () => wrapper.find({ validate: validations[validationName] });
 
@@ -85,13 +90,48 @@ describe('Form component ', () => {
         expect(afterChange.prop('error')).toBe('');
       };
 
-      execTest('REQUIRED', 'Campo obrigatório', 'foo');
-      execTest('CPF', 'CPF inválido', '35841429892');
-      execTest('CEP', 'CEP inválido', '06826510');
-      execTest('DATE', 'Data inválida', '15/10/1988');
-      execTest('EMAIL', 'E-mail inválido', 'foo@baz.com');
-      execTest('MAXLENGTH', 'Maximo de 3 caracteres excedido', '123', '123456789');
-      execTest('MINLENGTH', 'Mínimo de 8 caracteres requerido', '12345678', '12345');
+      execTest({
+        validationName: 'REQUIRED',
+        errorMsg: 'Campo obrigatório',
+        newValue: 'foo',
+      });
+
+      execTest({
+        validationName: 'CPF',
+        errorMsg: 'CPF inválido',
+        newValue: '35841429892',
+      });
+
+      execTest({
+        validationName: 'CEP',
+        errorMsg: 'CEP inválido',
+        newValue: '06826510',
+      });
+
+      execTest({
+        validationName: 'DATE',
+        errorMsg: 'Data inválida',
+        newValue: '15/10/1988',
+      });
+
+      execTest({
+        validationName: 'EMAIL',
+        errorMsg: 'E-mail inválido',
+        newValue: 'foo@baz.com',
+      });
+      execTest({
+        validationName: 'MAXLENGTH',
+        errorMsg: 'Maximo de 3 caracteres excedido',
+        newValue: '123',
+        defaultValue: '123456789',
+      });
+
+      execTest({
+        validationName: 'MINLENGTH',
+        errorMsg: 'Mínimo de 8 caracteres requerido',
+        newValue: '12345678',
+        defaultValue: '12345',
+      });
     });
   });
 });
