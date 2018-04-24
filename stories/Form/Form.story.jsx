@@ -13,7 +13,6 @@ import * as SimpleForm from './SimpleForm';
 import * as SimpleValidation from './SimpleValidation';
 import * as AdvancedValidation from './AdvancedValidation';
 
-
 const FormExample = (
   <Form style={{ width: '200px' }}>
     <Form.Input.CPF
