@@ -54,13 +54,11 @@ const componentToString = (component, state, level = 0) => {
     const children = props ? props.children : null;
 
     content = `${indentation}<${name}${Object.keys(state).length ? ` ${getProps(state)}` : ''}`;
-    /* eslint-disable no-nested-ternary */
     content += children
       ? Array.isArray(children)
         ? `>\n${children.map(child => componentToString(child, child.props, level + 1)).join('\n')}\n${indentation}</${name}>`
         : `>\n${componentToString(children, children.props, level + 1)}\n${indentation}</${name}>`
       : ' />';
-    /* eslint-enable */
   } else {
     content = component ? `${indentation}${component}` : '';
   }
