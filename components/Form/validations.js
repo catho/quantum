@@ -8,13 +8,14 @@ const msg = {
   CEP: 'CEP inválido',
   DATE: 'Deu milho na data',
   EMAIL: 'E-mail inválido',
-  MIN: min => `Minimo de ${min} caracteres requerido`,
-  MAX: max => `Maximo de ${max} caracteres excedido`,
+  MIN: min => `Minimo de ${min} caracteres`,
+  MAX: max => `Maximo de ${max} caracteres`,
 };
 
-export default {
-  REQUIRED: ({ value }) => (value ? '' : msg.REQUIRED),
-  CPF: ({ value }, cpf = removeNonDigit(value)) => {
+class Validations {
+  static Required({ value }) { return value ? '' : msg.REQUIRED; }
+
+  static CPF({ value }, cpf = removeNonDigit(value)) {
     const CPF_SIZE = 11;
 
     if (!cpf || cpf.length !== CPF_SIZE) {
@@ -42,30 +43,32 @@ export default {
     };
 
     return validPosition(9) && validPosition(10) ? '' : msg.CPF;
-  },
-  CEP: ({ value }) => {
+  }
+  static CEP({ value }) {
     const filtered = String(removeNonDigit(value));
 
     return filtered.length !== 8 ? msg.CEP : '';
-  },
-  DATE: ({ value }) => {
+  }
+  static Date({ value }) {
     const date = moment(value, 'DD/MM/YYYY');
     return date.isValid() ? '' : msg.DATE;
-  },
-  MINLENGTH: ({ value = '', minLength }) => {
+  }
+  static MinLength({ value = '', minLength }) {
     if (!!minLength && String(value).length < minLength) {
       return msg.MIN(minLength);
     }
     return '';
-  },
-  MAXLENGTH: ({ value = '', maxLength }) => {
+  }
+  static MaxLength({ value = '', maxLength }) {
     if (!!maxLength && String(value).length > maxLength) {
       return msg.MAX(maxLength);
     }
     return '';
-  },
-  EMAIL: ({ value }) => {
+  }
+  static Email({ value }) {
     const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return pattern.test(value) ? '' : msg.EMAIL;
-  },
-};
+  }
+}
+
+export default Validations;
