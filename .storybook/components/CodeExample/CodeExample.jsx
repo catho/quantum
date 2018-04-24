@@ -56,8 +56,8 @@ const componentToString = (component, state, level = 0) => {
     content = `${indentation}<${name}${Object.keys(state).length ? ` ${getProps(state)}` : ''}`;
     content += children
       ? Array.isArray(children)
-        ? `>\n${children.map(child => componentToString(child, state, level + 1)).join('\n')}\n${indentation}</${name}>`
-        : `>\n${componentToString(children, state, level + 1)}\n${indentation}</${name}>`
+        ? `>\n${children.map(child => componentToString(child, child.props, level + 1)).join('\n')}\n${indentation}</${name}>`
+        : `>\n${componentToString(children, children.props, level + 1)}\n${indentation}</${name}>`
       : ' />';
   } else {
     content = component ? `${indentation}${component}` : '';

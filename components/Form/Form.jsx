@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FormInput from './sub-components/FormInput';
-import InputTypes from '../Input/InputTypes';
 import Submit from './sub-components/Submit';
 
 class Form extends React.Component {
@@ -12,13 +11,12 @@ class Form extends React.Component {
     super(props);
 
     const { children } = this.props;
-    this.allChildren = children;
 
     this.state = {
       cloneValues: {},
     };
 
-    React.Children.forEach(this.allChildren, (({ props: { name, value } }) => {
+    React.Children.forEach(children, (({ props: { name, value } }) => {
       this.state.cloneValues[name] = value;
     }));
 
@@ -28,7 +26,7 @@ class Form extends React.Component {
   createClones = () => React
     .Children
     .map(
-      this.allChildren,
+      this.props.children,
       child => React.cloneElement(
         child,
         {
@@ -125,13 +123,5 @@ Form.propTypes = {
   onSubmit: PropTypes.func,
   onValidSubmit: PropTypes.func,
 };
-
-function changeInputNames(type) {
-  Form.Input[type].displayName = `Form.Input.${type}`;
-}
-
-Object
-  .keys(InputTypes)
-  .map(changeInputNames);
 
 export default Form;
