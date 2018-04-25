@@ -14,7 +14,8 @@ const INDENTATION_SIZE = 2;
 const spaces = size => ' '.repeat(size);
 
 const jsonStr = (json, indentation) => (
-  JSON.stringify(json, null, INDENTATION_SIZE)
+  JSON
+    .stringify(json, null, INDENTATION_SIZE)
     .replace(/\n/g, `\n${indentation}${spaces(INDENTATION_SIZE)}`)
 );
 
