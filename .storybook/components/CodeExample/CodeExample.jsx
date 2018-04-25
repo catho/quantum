@@ -78,18 +78,22 @@ const CodeExample = ({
   code,
   showTitle,
   withImport,
-}) => (
-  <React.Fragment>
-    {showTitle && <Title>Code</Title>}
-    <CodeBlock>
-      <Highlight language="javascript" className="highlight">
-        {withImport && msg(withImport)}
-        { code || componentToString(component, state || component.props)}
-        <CodeToClipboard code={code} />
-      </Highlight>
-    </CodeBlock>
-  </React.Fragment>
-);
+}) => {
+  const codeStr = code || componentToString(component, state || component.props);
+
+  return (
+    <React.Fragment>
+      {showTitle && <Title>Code</Title>}
+      <CodeBlock>
+        <Highlight language="javascript" className="highlight">
+          {withImport && msg(withImport)}
+          { codeStr }
+          <CodeToClipboard code={codeStr} />
+        </Highlight>
+      </CodeBlock>
+    </React.Fragment>
+  );
+}
 
 CodeExample.defaultProps = {
   code: '',
