@@ -4,15 +4,10 @@ import styled from 'styled-components';
 import ColorPalette from '../../../components/Colors';
 import CodeToClipboard from '../CodeToClipboard';
 import Title from '../Title';
+import Highlight from 'react-highlight';
 
 const CodeBlock = styled.pre`
   position:relative;
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
-  margin-top: 0;
 `;
 
 const renderPropValue = (prop) => {
@@ -25,21 +20,20 @@ const renderPropValue = (prop) => {
     string: `"${prop}"`,
     number: `{${prop}}`,
     boolean: `{${prop}}`,
-    object: `{${JSON.stringify(prop, null, 2)}}`,
+    object: `{${JSON.stringify(prop)}}`,
     instanceOf: `{${prop}}`,
   };
 
   return types[typeof prop] || prop;
 };
 
-const getProps = (props) => {
-  const indentation = new Array(3).join(' ');
+const getProps = (props, indentation = new Array(3).join(' ')) => {
 
   return Object
     .entries(props)
     .filter(([name, value]) => value && !['style', 'children'].includes(name))
     .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
-    .join(`\n${indentation}`);
+    .join(`\n  ${indentation}`);
 };
 
 const componentToString = (component, state, level = 0) => {
@@ -53,7 +47,7 @@ const componentToString = (component, state, level = 0) => {
     const name = type.displayName || type.name || type;
     const children = props ? props.children : null;
 
-    content = `${indentation}<${name}${Object.keys(state).length ? ` ${getProps(state)}` : ''}`;
+    content = `${indentation}<${name}${Object.keys(state).length ? ` ${getProps(state, indentation)}` : ''}`;
     content += children
       ? Array.isArray(children)
         ? `>\n${children.map(child => componentToString(child, child.props, level + 1)).join('\n')}\n${indentation}</${name}>`
@@ -73,9 +67,11 @@ const CodeExample = ({ component, state = component.props, code = componentToStr
   <React.Fragment>
     {showTitle && <Title>Code</Title>}
     <CodeBlock>
-      {withImport && msg(withImport)}
-      {code}
-      <CodeToClipboard code={code} />
+      <Highlight language="javascript" className="highlight">
+        {withImport && msg(withImport)}
+        {code}
+        <CodeToClipboard code={code} />
+      </Highlight>
     </CodeBlock>
   </React.Fragment>
 );

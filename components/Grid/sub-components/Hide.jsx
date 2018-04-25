@@ -18,4 +18,6 @@ Hide.propTypes = {
   hd: PropTypes.bool,
 };
 
+Hide.displayName = 'Hide';
+
 export default Hide;

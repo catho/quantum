@@ -38,4 +38,6 @@ Row.defaultProps = {
   'no-gutters': false,
 };
 
+Row.displayName = 'Row';
+
 export default Row;

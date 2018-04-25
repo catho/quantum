@@ -103,7 +103,7 @@ class Form extends React.Component {
     const { clones } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit} noValidate>
+      <form {...this.props} onSubmit={this.handleSubmit} noValidate>
         { clones }
       </form>
     );

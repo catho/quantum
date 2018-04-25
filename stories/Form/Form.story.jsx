@@ -8,16 +8,17 @@ import { Col, Row } from '../../components/Grid';
 import Atom from '../static/atom.svg';
 
 import { Form, Validations } from '../../components/Form';
+import Input from '../../components/Input';
 
 import * as SimpleForm from './SimpleForm';
 import * as SimpleValidation from './SimpleValidation';
 import * as AdvancedValidation from './AdvancedValidation';
 
 const FormExample = (
-  <Form style={{ width: '200px' }}>
-    <Form.Input.CPF
-      name="valid"
-      label="CPF"
+  <Form style={{ width: '400px' }}>
+    <Input
+      name="first"
+      label="First Name"
       validate={[
         {
           validate: Validations.Required,
@@ -26,14 +27,25 @@ const FormExample = (
       ]}
       minLength={3}
     />
-    <Form.Input.Date
+    <Input
+      name="last"
+      label="Last Name"
+      validate={[
+        {
+          validate: Validations.Required,
+        },
+        Validations.MinLength,
+      ]}
+      minLength={3}
+    />
+    <Input.Date
       name="date"
       label="Date"
       validate={[
         Validations.MinLength,
         {
           validate: Validations.Date,
-          error: 'DATA ERRADA',
+          error: 'Plese, insert a valid date (dd/mm/aaaa)',
         },
       ]}
       minLength={8}

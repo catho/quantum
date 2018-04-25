@@ -18,7 +18,7 @@ const AdvancedValidation = () => (
     />
     <Input
       name="catho"
-      placeholder="This field only accepts catho as a value"
+      placeholder="This field only accepts Catho as a value"
       validate={
         ({ value }) => (value === 'Catho' ? '' : 'Catho, please')
       }
@@ -35,20 +35,19 @@ const AdvancedValidation = () => (
 const AdvancedValidationCode = `
 <Form>
   <Input
-    name="sixrequired"
-    placeholder="Required and maximun of 6"
+    name="email"
+    placeholder="Required"
     validate={[
       Validations.Required,
       {
-        validate: Validations.MaxLength,
-        erro: 'Max of 6 characters!',
+        validate: Validations.Email,
+        error: 'We need a valid e-mail',
       },
     ]}
-    maxLength={6}
   />
   <Input
     name="catho"
-    placeholder="This field only accepts catho as a value"
+    placeholder="This field only accepts Catho as a value"
     validate={
       ({ value }) => (value === 'Catho' ? '' : 'Catho, please')
     }
@@ -59,8 +58,7 @@ const AdvancedValidationCode = `
   >
     Enviar
   </Button>
-</Form>
-`;
+</Form>`;
 
 export {
   AdvancedValidation as Form,
