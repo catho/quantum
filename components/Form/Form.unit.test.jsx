@@ -16,13 +16,13 @@ const FormWithoutValidations = () => (
 
 const FormWithValidations = () => (
   <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-    <Form.Input name="required" label="required" validate={validations.REQUIRED} />
+    <Form.Input name="required" label="required" validate={validations.Required} />
     <Form.Input name="cpf" label="CPF" validate={validations.CPF} />
     <Form.Input name="cep" label="CEP" validate={validations.CEP} />
-    <Form.Input name="birthday" label="Birthday" validate={validations.DATE} />
-    <Form.Input name="email" label="E-mail" validate={validations.EMAIL} />
-    <Form.Input name="address" label="Address" validate={validations.MINLENGTH} minLength="8" />
-    <Form.Input name="country" label="Country" validate={validations.MAXLENGTH} maxLength="3" />
+    <Form.Input name="birthday" label="Birthday" validate={validations.Date} />
+    <Form.Input name="email" label="E-mail" validate={validations.Email} />
+    <Form.Input name="address" label="Address" validate={validations.MinLength} minLength="8" />
+    <Form.Input name="country" label="Country" validate={validations.MaxLength} maxLength="3" />
     <Form.Submit />
   </Form>
 );
@@ -92,7 +92,7 @@ describe('Form component ', () => {
 
       const validationTests = [
         {
-          validationName: 'REQUIRED',
+          validationName: 'Required',
           errorMsg: 'Campo obrigatório',
           valid: 'foo',
         },
@@ -108,26 +108,26 @@ describe('Form component ', () => {
           valid: '02354128',
         },
         {
-          validationName: 'DATE',
+          validationName: 'Date',
           errorMsg: 'Data inválida',
           valid: '20/11/1981',
           invalid: '30/02/1950',
         },
         {
-          validationName: 'EMAIL',
+          validationName: 'Email',
           errorMsg: 'E-mail inválido',
           valid: 'foo@baz.com',
           invalid: 'foo@baz',
         },
         {
-          validationName: 'MAXLENGTH',
-          errorMsg: 'Maximo de 3 caracteres excedido',
+          validationName: 'MaxLength',
+          errorMsg: 'Maximo de 3 caracteres',
           valid: '123',
           invalid: '123456789',
         },
         {
-          validationName: 'MINLENGTH',
-          errorMsg: 'Mínimo de 8 caracteres requerido',
+          validationName: 'MinLength',
+          errorMsg: 'Mínimo de 8 caracteres',
           valid: '12345678',
           invalid: '12345',
         },
@@ -144,9 +144,9 @@ describe('Form component ', () => {
             label="Name"
             minLength="8"
             validate={[
-              validations.REQUIRED,
+              validations.Required,
               {
-                validate: validations.MINLENGTH,
+                validate: validations.MinLength,
                 error: 'Valor mínimo de caracteres não alcançado',
               },
             ]}
