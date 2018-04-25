@@ -20,7 +20,7 @@ const renderPropValue = (prop) => {
     string: `"${prop}"`,
     number: `{${prop}}`,
     boolean: `{${prop}}`,
-    object: `{${JSON.stringify(prop)}}`,
+    object: `{${JSON.stringify(prop, null, 2)}}`,
     instanceOf: `{${prop}}`,
   };
 
