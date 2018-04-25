@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import ColorPalette from '../../../components/Colors';
+import Highlight from 'react-highlight';
 import CodeToClipboard from '../CodeToClipboard';
 import Title from '../Title';
-import Highlight from 'react-highlight';
 
+/* eslint-disable */
 const CodeBlock = styled.pre`
   position:relative;
 `;
@@ -27,14 +27,13 @@ const renderPropValue = (prop) => {
   return types[typeof prop] || prop;
 };
 
-const getProps = (props, indentation = new Array(3).join(' ')) => {
-
+function getProps(props, indentation = new Array(3).join(' ')) {
   return Object
     .entries(props)
     .filter(([name, value]) => value && !['style', 'children'].includes(name))
     .map(([prop, value]) => `${prop}=${renderPropValue(value)}`)
     .join(`\n  ${indentation}`);
-};
+}
 
 const componentToString = (component, state, level = 0) => {
   const indentation = new Array(3 * level).join(' ');
@@ -62,7 +61,7 @@ const componentToString = (component, state, level = 0) => {
 
 const msg = importModules => `import ${'{'} ${importModules} ${'}'} from '@cathodevel/style-guide';\n\n`;
 
-/* eslint-disable */
+
 const CodeExample = ({ component, state = component.props, code = componentToString(component, state), showTitle = true, withImport }) => (
   <React.Fragment>
     {showTitle && <Title>Code</Title>}
