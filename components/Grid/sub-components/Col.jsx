@@ -30,4 +30,6 @@ Col.propTypes = {
   ]),
 };
 
+Col.displayName = 'Col';
+
 export default Col;

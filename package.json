@@ -57,6 +57,7 @@
     "babel-plugin-react-docgen": "^1.9.0",
     "babel-polyfill": "^6.26.0",
     "dotenv-webpack": "^1.5.5",
+    "moment": "^2.22.1",
     "polished": "^1.9.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",

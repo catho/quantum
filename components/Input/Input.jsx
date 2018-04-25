@@ -19,6 +19,7 @@ const StyledInput = styled.input`
   padding: 0 10px;
   font-size: 14px;
   box-sizing: border-box;
+  outline: none;
 
   &::-webkit-calendar-picker-indicator {
     display: none;
@@ -41,7 +42,7 @@ class Input extends React.Component {
   static Phone = InputTypes.Phone;
 
   onChange = (e) => {
-    this.props.onChange({ value: e.target.value });
+    this.props.onChange(e, { value: e.target.value });
   }
 
   render() {
@@ -89,6 +90,7 @@ Input.defaultProps = {
   onFocus: () => {},
   placeholder: '',
   type: 'text',
+  value: '',
 };
 
 Input.propTypes = {
@@ -121,6 +123,7 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
+  value: PropTypes.string,
 };
 
 export default Input;

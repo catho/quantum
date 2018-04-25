@@ -33,4 +33,6 @@ Container.defaultProps = {
   fluid: false,
 };
 
+Container.displayName = 'Container';
+
 export default Container;
