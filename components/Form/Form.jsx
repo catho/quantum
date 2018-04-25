@@ -3,6 +3,17 @@ import PropTypes from 'prop-types';
 import FormInput from './sub-components/FormInput';
 import Submit from './sub-components/Submit';
 
+function execValidate(validate, props) {
+  if (typeof validate === 'function') {
+    return validate(props);
+  }
+
+  const { validate: fn, error } = validate;
+  const msg = fn(props);
+
+  return msg ? error || msg : '';
+}
+
 class Form extends React.Component {
   static Input = FormInput;
   static Submit = Submit;
@@ -14,6 +25,7 @@ class Form extends React.Component {
 
     this.state = {
       cloneValues: {},
+      valid: true,
     };
 
     React.Children.forEach(children, (({ props: { name, value } }) => {
@@ -40,26 +52,22 @@ class Form extends React.Component {
     const { props } = child;
     const { validate = () => {} } = props;
 
+    let invalid;
     if (Array.isArray(validate)) {
-      let invalid;
       for (let i = 0; i < validate.length; i += 1) {
-        const v = validate[i];
-
-        if (typeof v === 'function') {
-          invalid = v(props);
-        } else {
-          const { validate: fn, error } = v;
-          const msg = fn(props);
-
-          invalid = msg ? error || msg : '';
-        }
+        invalid = execValidate(validate[i], props);
 
         if (invalid) break;
       }
-      return invalid;
+    } else {
+      invalid = execValidate(validate, props);
     }
 
-    return validate(props);
+    if (invalid) {
+      this.setState({ valid: false });
+    }
+
+    return invalid;
   }
 
   validateError = children => React
@@ -87,15 +95,19 @@ class Form extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+
+    // Start validation process assuming form valid.
+    this.setState({ valid: true });
     const clones = this.validateError(this.state.clones);
+
     const { onSubmit, onValidSubmit } = this.props;
 
-    const valid = !clones.find(({ props: { error } }) => error);
-
     this.setState({ clones }, () => {
-      onSubmit();
+      const { valid } = this.state;
 
-      if (valid) onValidSubmit();
+      onSubmit({ valid });
+
+      if (valid) onValidSubmit({ data: this.state.cloneValues });
     });
   }
 
