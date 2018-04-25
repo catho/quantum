@@ -94,6 +94,7 @@ CodeExample.defaultProps = {
   code: '',
   showTitle: true,
   withImport: false,
+  state: null,
 };
 
 CodeExample.propTypes = {
