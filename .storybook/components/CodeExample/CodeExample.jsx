@@ -88,12 +88,12 @@ const CodeExample = ({
         <Highlight language="javascript" className="highlight">
           {withImport && msg(withImport)}
           { codeStr }
-          <CodeToClipboard code={codeStr} />
         </Highlight>
+        <CodeToClipboard code={codeStr} />
       </CodeBlock>
     </React.Fragment>
   );
-}
+};
 
 CodeExample.defaultProps = {
   code: '',

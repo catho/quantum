@@ -56,8 +56,6 @@ class CodeToClipboard extends React.Component {
   loveCallback = () => {
     this.setState({ hasJustCopied: true });
 
-    console.log('loveCallback');
-
     setTimeout(() => {
       this.setState({ hasJustCopied: false });
     }, 1000);
