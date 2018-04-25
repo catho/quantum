@@ -1,7 +1,8 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const RadioGroup = styled.div`
+const Group = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,9 @@ const RadioGroup = styled.div`
   `}
 `;
 
-RadioGroup.propTypes = {
+const RadioGroup = props => <Group {...props} />;
+
+Group.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),
