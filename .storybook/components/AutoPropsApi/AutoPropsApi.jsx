@@ -89,7 +89,7 @@ const AutoPropsApi = ({ component: Component }) => (
               <td>{ renderPropType(value.type) }</td>
               <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
               <td>{ value.required ? 'Yes' : 'No' }</td>
-              <td>{ value.description }</td>
+              <td><ReactMarkdown source={value.description} /></td>
             </tr>
           ))
         }
