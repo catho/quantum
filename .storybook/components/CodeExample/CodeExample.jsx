@@ -6,52 +6,50 @@ import CodeToClipboard from '../CodeToClipboard';
 import Title from '../Title';
 
 const CodeBlock = styled.pre`
-  position:relative;
+  position: relative;
 `;
 
-const INDENTATION_LEVEL = 2;
+const INDENTATION_SIZE = 2;
 
-const indentJSON = (json, parentIndent) => {
-  if (typeof json === 'object') {
-    return JSON.stringify(json, null, INDENTATION_LEVEL)
-      .split('\n')
-      .join(`\n${parentIndent}${' '.repeat(INDENTATION_LEVEL)}`);
+const spaces = size => ' '.repeat(size);
+
+const jsonStr = (json, indentation) => (
+  JSON.stringify(json, null, INDENTATION_SIZE)
+    .replace(/\n/g, `\n${indentation}${spaces(INDENTATION_SIZE)}`)
+);
+
+const renderPropValue = (propValue, indentation) => {
+  if (typeof propValue === 'object' && propValue instanceof RegExp) {
+    return `{${propValue}}`;
   }
-
-  return '';
-};
-
-const renderPropValue = (prop, parentIndent) => {
-  if (typeof prop === 'object' && prop instanceof RegExp) {
-    return `{${prop}}`;
-  }
-
 
   const types = {
-    function: '{() => ...}',
-    string: `"${prop}"`,
-    number: `{${prop}}`,
-    boolean: `{${prop}}`,
-    object: `{${indentJSON(prop, parentIndent)}}`,
-    instanceOf: `{${prop}}`,
+    function: () => '{() => ...}',
+    string: prop => `"${prop}"`,
+    number: prop => `{${prop}}`,
+    boolean: prop => `{${prop}}`,
+    object: prop => `{${jsonStr(prop, indentation)}}`,
+    instanceOf: prop => `{${prop}}`,
   };
 
-  return types[typeof prop] || prop;
+  const fn = types[typeof propValue];
+
+  return fn ? fn(propValue) : propValue;
 };
 
-function getProps(props, indentation = ' '.repeat(INDENTATION_LEVEL)) {
-  const spaces = `\n  ${indentation}`;
+function getProps(props, indentation) {
+  const breakline = `\n${indentation}${spaces(INDENTATION_SIZE)}`;
+
   return Object
     .entries(props)
     .filter(([name, value]) => value && !['style', 'children'].includes(name))
-    .map(([prop, value], index) => `${index === 0 && spaces}${prop}=${renderPropValue(value, indentation)}`)
-    .join(spaces);
+    .map(([prop, value], index) => `${index === 0 ? breakline : ''}${prop}=${renderPropValue(value, indentation)}`)
+    .join(breakline);
 }
 
 const componentToString = (component, state, level = 0) => {
-  const indentation = ' '.repeat(level);
-
   let content;
+  const indentation = spaces(level);
 
   if (typeof component === 'object') {
     const { type, props } = component;
@@ -60,41 +58,37 @@ const componentToString = (component, state, level = 0) => {
     const children = props ? props.children : null;
     const childList = Array.isArray(children) ? children : [children];
 
-    content = `${indentation}<${name}${Object.keys(state).length ? `${getProps(state, indentation)}` : ''}`;
+    content = `${indentation}<${name}${Object.keys(state).length ? getProps(state, indentation) : ''}`;
     content += children
-      ? `>\n${childList.map(child => componentToString(child, child.props, level + INDENTATION_LEVEL)).join('\n')}\n${indentation}</${name}>`
+      ? `>\n${childList.map(child => componentToString(child, child.props, level + INDENTATION_SIZE)).join('\n')}\n${indentation}</${name}>`
       : `\n${indentation}/>`;
   } else {
     content = component ? `${indentation}${component}` : '';
   }
 
-  return `${content}`;
+  return content;
 };
 
 const msg = importModules => `import ${'{'} ${importModules} ${'}'} from '@cathodevel/style-guide';\n\n`;
 
-
 const CodeExample = ({
   component,
-  state = component.props,
+  state,
   code,
   showTitle,
   withImport,
-}) => {
-  return (
-    <React.Fragment>
-      {showTitle && <Title>Code</Title>}
-      <CodeBlock>
-        <Highlight language="javascript" className="highlight">
-          {withImport && msg(withImport)}
-          { code || componentToString(component, state)}
-          <CodeToClipboard code={code} />
-        </Highlight>
-      </CodeBlock>
-    </React.Fragment>
-  );
-};
-
+}) => (
+  <React.Fragment>
+    {showTitle && <Title>Code</Title>}
+    <CodeBlock>
+      <Highlight language="javascript" className="highlight">
+        {withImport && msg(withImport)}
+        { code || componentToString(component, state || component.props)}
+        <CodeToClipboard code={code} />
+      </Highlight>
+    </CodeBlock>
+  </React.Fragment>
+);
 
 CodeExample.defaultProps = {
   code: '',
@@ -104,7 +98,7 @@ CodeExample.defaultProps = {
 
 CodeExample.propTypes = {
   component: PropTypes.instanceOf(Object).isRequired,
-  state: PropTypes.instanceOf(Object).isRequired,
+  state: PropTypes.instanceOf(Object),
   code: PropTypes.string,
   showTitle: PropTypes.bool,
   withImport: PropTypes.string,

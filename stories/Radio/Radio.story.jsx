@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Radio, RadioGroup } from '../../components/Radio';
 import CodeExample from '../../.storybook/components/CodeExample';
+import { Validations } from '../../components/Form';
 
 const radio = (
   <RadioGroup>
@@ -10,13 +11,18 @@ const radio = (
     <div>
       <Radio id="radioThree" value="radioThree" name="radio" label="Click me!" />
       Eiiiiita
-      <span>
+      <span
+        hello="mundo"
+        ola="mundo"
+        tchau="mundo"
+      >
         <span
           test={{
             a: 'a',
             b: 'b',
           }}
           hello="world"
+          fn={Validations.MaxLength}
         >
           123
         </span>
