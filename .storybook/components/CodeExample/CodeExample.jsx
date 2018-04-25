@@ -15,7 +15,7 @@ const spaces = size => ' '.repeat(size);
 
 const jsonStr = (json, indentation) => (
   JSON
-    .stringify(json, (key, value) => (typeof value === 'function' ? '() => ...' : value), INDENTATION_SIZE)
+    .stringify(json, (key, value) => (typeof value === 'function' ? '() => {}' : value), INDENTATION_SIZE)
     .replace(/\n/g, `\n${indentation}${spaces(INDENTATION_SIZE)}`)
 );
 
@@ -25,7 +25,7 @@ const renderPropValue = (propValue, indentation) => {
   }
 
   const types = {
-    function: () => '{() => ...}',
+    function: () => '{() => {}}',
     string: prop => `"${prop}"`,
     number: prop => `{${prop}}`,
     boolean: prop => `{${prop}}`,
@@ -98,7 +98,7 @@ const CodeExample = ({
 CodeExample.defaultProps = {
   code: '',
   showTitle: true,
-  withImport: false,
+  withImport: '',
   state: null,
 };
 
