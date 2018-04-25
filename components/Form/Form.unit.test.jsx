@@ -172,4 +172,47 @@ describe('Form component ', () => {
       expect(onValidSubmitCallback).toHaveBeenCalled();
     });
   });
+
+  describe('Valid state', () => {
+    it('Shouldn\'t be false when an error occurred', () => {
+      const form = (
+        <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
+          <Form.Input
+            name="foo"
+            validate={validations.Required}
+          />
+        </Form>
+      );
+
+      const wrapper = shallow(form);
+      expect(wrapper.state('valid')).toBe(true);
+
+      wrapper.simulate('submit', mockEvent);
+
+      expect(onSubmitCallback).toHaveBeenCalled();
+      expect(onValidSubmitCallback).not.toHaveBeenCalled();
+      expect(wrapper.state('valid')).toBe(false);
+    });
+
+    it('Shouldn\'t be true when everything is ok', () => {
+      const form = (
+        <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
+          <Form.Input
+            name="foo"
+            validate={validations.Required}
+            value="foo"
+          />
+        </Form>
+      );
+
+      const wrapper = shallow(form);
+      expect(wrapper.state('valid')).toBe(true);
+
+      wrapper.simulate('submit', mockEvent);
+
+      expect(onSubmitCallback).toHaveBeenCalledWith({ valid: true });
+      expect(onValidSubmitCallback).toHaveBeenCalledWith({ foo: 'foo' });
+      expect(wrapper.state('valid')).toBe(true);
+    });
+  });
 });

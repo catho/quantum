@@ -107,7 +107,7 @@ class Form extends React.Component {
 
       onSubmit({ valid });
 
-      if (valid) onValidSubmit({ data: this.state.cloneValues });
+      if (valid) onValidSubmit(this.state.cloneValues);
     });
   }
 
