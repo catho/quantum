@@ -77,8 +77,8 @@ stories
           </Row>
         </Tab>
         <Tab title="API">
-          <AutoPropsApi component={Radio} title="Radio Component" />
-          <AutoPropsApi component={RadioGroup} title="RadioGroup Component" />
+          <AutoPropsApi component={Radio} title="Radio" />
+          <AutoPropsApi component={RadioGroup} title="RadioGroup" />
         </Tab>
       </TabbedView>
     </Heading>

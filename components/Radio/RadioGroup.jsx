@@ -19,7 +19,7 @@ const Group = styled.div`
 `;
 
 /**
- * RadioGroup component that needs Radio components as a childs
+ * Group for Radio components.
  */
 const RadioGroup = props => <Group {...props} />;
 
