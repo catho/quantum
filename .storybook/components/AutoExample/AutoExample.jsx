@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Heading from '../Heading';
@@ -6,49 +7,48 @@ import ComponentPanel from '../ComponentPanel';
 import { TabbedView, Tab } from '../TabbedView';
 import Atom from '../../static/atom.svg';
 
-class AutoExample extends React.Component {
-  render() {
-    const {
-      component: Component,
-      componentProps: props,
-      element = <Component {...props}/>,
-      name = element.type.displayName || element.type.name || element.type,
-      importModules = name,
-      aditionalTabs,
-    } = this.props;
+const AutoExample = ({
+  component: Component,
+  componentProps: props,
+  element = <Component {...props} />,
+  name = element.type.displayName || element.type.name || element.type,
+  importModules = name,
+  aditionalTabs,
+}) => (
+  <Heading image={Atom} title={`<${name} />`}>
+    <TabbedView>
+      <Tab title="Usage">
+        <ComponentPanel
+          component={element}
+          importModules={importModules}
+        />
+      </Tab>
 
-    console.log('AutoExample do ', name);
+      <Tab title="API">
+        <AutoPropsApi component={element.type} />
+      </Tab>
 
-    return (
-      <Heading image={Atom} title={`<${name} />`}>
-        <TabbedView>
-          <Tab title="Usage">
-            <ComponentPanel
-              component={element}
-              importModules={importModules}
-            />
-          </Tab>
+      { aditionalTabs }
+    </TabbedView>
+  </Heading>
+);
 
-          <Tab title="API">
-            <AutoPropsApi component={element.type} />
-          </Tab>
-
-          { aditionalTabs }
-        </TabbedView>
-      </Heading>
-    )
-  }
-}
+AutoExample.defaultProps = {
+  componentProps: {},
+  aditionalTabs: null,
+};
 
 AutoExample.propTypes = {
   component: PropTypes.instanceOf(Object).isRequired,
+  componentProps: PropTypes.instanceOf(Object),
+  element: PropTypes.instanceOf(Object),
   name: PropTypes.string,
   importModules: PropTypes.string,
   aditionalTabs: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-  ])
-}
+  ]),
+};
 
 AutoExample.displayName = 'AutoExample';
 
