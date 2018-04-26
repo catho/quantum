@@ -1,19 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import Highlight from 'react-highlight';
-import StorybookTitle from '../../.storybook/components/Title';
 import Title from '../../.storybook/components/Title';
-
-const IntroWrapper = styled.div`
-  display:flex;
-  flex-direction: row;
-`;
-
-const Logo = styled.img`
-  display: block;
-  width: 100px;
-  margin-right:20px;
-`;
 
 const Introduction = () => (
   <React.Fragment>
@@ -22,8 +9,7 @@ const Introduction = () => (
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>
     <Highlight language="javascript" className="highlight">
-      {`@kadira:registry=https://registry.npmjs.org
-registry="http://armazem.devel:4873/`}
+      {'registry="http://armazem.devel:4873/'}
     </Highlight>
 
     <p>Add as a dependency:</p>
