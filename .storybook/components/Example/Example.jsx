@@ -5,7 +5,7 @@ import ColorPalette from '../../../components/Colors';
 import CodeExample from '../CodeExample';
 
 const Small = styled.small`
-  color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
+  color: ${ColorPalette.PRIMARY['300']};
   cursor: pointer;
   text-transform: lowercase;
 `;

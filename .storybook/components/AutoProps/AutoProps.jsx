@@ -225,7 +225,7 @@ class AutoProps extends React.Component {
 }
 
 const CodeBlock = styled.pre`
-  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
+  background-color: ${ColorPalette.GREY["50"]};
   border-radius: 3px;
   display: inline-block;
   font-size: 85%;

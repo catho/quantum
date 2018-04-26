@@ -34,17 +34,17 @@ const NavItem = styled.li`
   }
 
   &:hover {
-    color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
+    color: ${ColorPalette.PRIMARY['300']};
   }
 
   ${props => props.active && css`
-    color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
-    border-color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
+    color: ${ColorPalette.PRIMARY['300']};
+    border-color: ${ColorPalette.PRIMARY['300']};
 
     &::before {
       width: 100%;
       height: 100%;
-      border-bottom-color: ${ColorPalette.PRIMARY.BLUE.WINDOWS};
+      border-bottom-color: ${ColorPalette.PRIMARY['300']};
     }
   `}
 `;

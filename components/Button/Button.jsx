@@ -31,11 +31,11 @@ const StyledButton = styled.button`
   `}
 
   ${props => props.disabled && `
-    background-color: ${Colors.NEUTRAL.GRAY.WHITETWO};
-    border: 1px solid ${Colors.NEUTRAL.GRAY.WHITETWO};
+    background-color: ${Colors.GREY['50']};
+    border: 1px solid ${Colors.GREY['50']};
     box-shadow: none;
     cursor: not-allowed;
-    text-color: ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
+    text-color: ${Colors.GREY['900']};
   `}
 
   ${(props) => {

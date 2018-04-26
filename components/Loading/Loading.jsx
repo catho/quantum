@@ -50,7 +50,7 @@ const Svg = styled.svg`
 
 const Circle = styled.circle`
   fill: none;
-  stroke: ${Colors.PRIMARY.BLUE.PEACOCK};
+  stroke: ${Colors.PRIMARY['500']};
   stroke-width: 3;
   stroke-dasharray: 110, 200;
   stroke-dashoffset: -10;

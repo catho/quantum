@@ -5,8 +5,8 @@ import Colors from '../Colors';
 import theme from '../../theme';
 
 const Wrapper = styled.span`
-  background-color: ${Colors.NEUTRAL.GRAY.WHITE};
-  border: 1px solid ${Colors.PRIMARY.BLUE.PEACOCK};
+  background-color: ${Colors.WHITE};
+  border: 1px solid ${Colors.PRIMARY['500']};
   border-radius: ${theme.sizes.radius};
   box-sizing: border-box;
   cursor: pointer;
@@ -25,7 +25,7 @@ const Wrapper = styled.span`
   }
 
   label {
-    color: ${Colors.PRIMARY.BLUE.PEACOCK};
+    color: ${Colors.PRIMARY['500']};
     cursor: pointer;
     position: relative;
   }
@@ -33,7 +33,7 @@ const Wrapper = styled.span`
 
 const StyledInput = styled.input`
   appearance: none;
-  background-color: ${Colors.NEUTRAL.GRAY.WHITE};
+  background-color: ${Colors.WHITE};
   cursor: pointer;
   height: 100%;
   left: 0;
@@ -44,11 +44,11 @@ const StyledInput = styled.input`
   ${theme.mixins.transition()};
 
   &:checked {
-    background-color: ${Colors.PRIMARY.BLUE.PEACOCK};
+    background-color: ${Colors.PRIMARY['500']};
     ${theme.mixins.transition()};
 
     ~ label {
-      color: ${Colors.NEUTRAL.GRAY.WHITE};
+      color: ${Colors.WHITE};
       ${theme.mixins.transition()};
     }
 `;

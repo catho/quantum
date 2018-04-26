@@ -12,7 +12,7 @@ import theme from '../../theme';
 const StyledInput = styled.input`
   ${theme.mixins.transition()};
 
-  border: 1px solid ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
+  border: 1px solid ${Colors.GREY['900']};
   border-radius: ${theme.sizes.radius};
   height: ${theme.sizes.fieldHeight};
   width: 100%;
@@ -26,11 +26,11 @@ const StyledInput = styled.input`
   }
 
   &:focus {
-    border-color: ${Colors.PRIMARY.BLUE.PEACOCK};
+    border-color: ${Colors.PRIMARY['500']};
   }
 
   ${props => props.error && `
-    border-color: ${Colors.SECONDARY.PINK.LIPSTICK};
+    border-color: ${Colors.DANGER['400'].LIPSTICK};
   `}
 `;
 

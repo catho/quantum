@@ -41,11 +41,11 @@ export default () => (
     <Title>Code</Title>
     <p>Some samples on how the Color object are structured</p>
     <Highlight language="javascript" className="highlight">
-      {"console.log(Colors.PRIMARY.BLUE.CORNFLOWER);\n/*returns: #6EA5D6;*/"}
-      {"\n\nconsole.log(Colors.SECONDARY.YELLOW.APRICOT)\n/*returns: #FCBF62/*"}
-      {"\n\nconsole.log(Colors.SECONDARY.PINK.PIG)\n/*returns: #E76E97/*"}
+      {"console.log(Colors.PRIMARY['200']);\n/*returns: #6EA5D6;*/"}
+      {"\n\nconsole.log(Colors.SECONDARY['600'].APRICOT)\n/*returns: #FCBF62/*"}
+      {"\n\nconsole.log(Colors.DANGER['400'].PIG)\n/*returns: #E76E97/*"}
       {"\n\nconsole.log(Colors.NEUTRAL.GRAY.WHITE)\n/*returns: #f9f9f9/*"}
-      {"\n\nconsole.log(Colors.NEUTRAL.DARKERGRAY.WARMGREY)\n/*returns: #999999/*"}
+      {"\n\nconsole.log(Colors.GREY['900'])\n/*returns: #999999/*"}
     </Highlight>
 
     <Title>A bit more about Catho colors</Title>

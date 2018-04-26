@@ -8,7 +8,7 @@ import theme from '../../theme';
 
 const Overlay = styled.div`
   align-items: center;
-  background-color: ${rgba(Colors.NEUTRAL.GRAY.WHITE, 0.8)};
+  background-color: ${rgba(Colors.WHITE, 0.8)};
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ const Content = styled.section`
 `;
 
 const Close = styled.span`
-  color: ${Colors.NEUTRAL.DARKERGRAY.BLACK};
+  color: ${Colors.BLACK};
   cursor: pointer;
   font-size: 12px;
   position: absolute;
@@ -49,7 +49,7 @@ const Close = styled.span`
 `;
 
 const Title = styled.h2`
-  color: ${Colors.NEUTRAL.DARKERGRAY.BLACK};
+  color: ${Colors.BLACK};
   font-size: 18px;
   margin: 0;
 `;

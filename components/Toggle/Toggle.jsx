@@ -11,11 +11,11 @@ const StyledInput = styled.input`
   &:checked {
     & + ${Label} {
       &:before {
-        background: ${Colors.PRIMARY.BLUE.WINDOWS};
+        background: ${Colors.PRIMARY['300']};
       }
 
       &:after {
-        background-color: ${Colors.PRIMARY.BLUE.PEACOCK};
+        background-color: ${Colors.PRIMARY['500']};
         transform: translateX(20px) translateY(-50%);
       }
     }
@@ -34,7 +34,7 @@ const StyledLabel = styled(Label)`
   }
 
   &:before {
-    background: ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
+    background: ${Colors.GREY['900']};
     border-radius: 10px;
     content: '';
     height: 16px;
@@ -46,7 +46,7 @@ const StyledLabel = styled(Label)`
   }
 
   &:after {
-    background-color: ${Colors.NEUTRAL.DARKERGRAY.BROWNISHGREY};
+    background-color: ${Colors.GREY['800']};
     border-radius: 50%;
     box-sizing: border-box;
     content: '';
