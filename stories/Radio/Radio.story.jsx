@@ -1,100 +1,85 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-// import { Radio, RadioGroup } from '../../components/Radio';
+import styled from 'styled-components';
+import Heading from '../../.storybook/components/Heading';
+import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import { Radio, RadioGroup } from '../../components/Radio';
+import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
+import { Col, Row } from '../../components/Grid';
 import CodeExample from '../../.storybook/components/CodeExample';
-import { Validations, Form } from '../../components/Form';
-import Input from '../../components/Input';
+import Atom from '../static/atom.svg';
 
-const FormExample = (
-  <Form style={{ width: '400px' }}>
-    <Input
-      name="first"
-      label="First Name"
-      validate={[
-        {
-          validate: Validations.Required,
-        },
-        Validations.MinLength,
-      ]}
-      minLength={4}
-      obj={[
-        {
-          validate: 'test',
-          method1: () => {},
-          method2: function () {},
-          person: {
-            name: 'daniel',
-            surname: 'silva',
-            person: {
-              name: 'daniel',
-              surname: 'silva',
-            },
-          },
-        },
-        ['a', 'b', () => {}],
-      ]}
-    />
-    <Input
-      name="last"
-      label="Last Name"
-      validate={[
-        {
-          validate: Validations.Required,
-        },
-        Validations.MinLength,
-      ]}
-      minLength={3}
-    />
-    <Input.Date
-      name="date"
-      label="Date"
-      validate={[
-        Validations.MinLength,
-        {
-          validate: Validations.Date,
-          error: 'Plese, insert a valid date (dd/mm/aaaa)',
-        },
-      ]}
-      minLength={8}
-    />
-    <Form.Submit />
-  </Form>
+const RadioGroupWrapper = styled.div`
+  padding: 15px;
+`;
+
+const StyledDiv = styled.div`
+  margin-bottom: 40px;
+`;
+
+const RadioBlock = (
+  <RadioGroup>
+    <Radio id="radio" value="radio" name="radio" label="Click me!" />
+    <Radio id="radioTwo" value="radioTwo" name="radio" label="Click me!" />
+  </RadioGroup>
 );
 
-// const radio = (
-  // <RadioGroup>
-  //   <Radio id="radio" value="radio" name="radio" label="Click me!" />
-  //   <Radio id="radioTwo" value="radioTwo" name="radio" label="Click me!" />
-  //   <div>
-  //     <Radio id="radioThree" value="radioThree" name="radio" label="Click me!" />
-  //     Eiiiiita
-  //     <span
-  //       hello="mundo"
-  //       ola="mundo"
-  //       tchau="mundo"
-  //     >
-  //       <span
-  //         test={{
-  //           a: 'a',
-  //           b: 'b',
-  //         }}
-  //         hello="world"
-  //         fn={Validations.MaxLength}
-  //       >
-  //         123
-  //       </span>
-  //       456
-  //     </span>
-  //   </div>
-  //   <span>Hellow</span>
-  // </RadioGroup>
-// );
+const RadioInline = (
+  <RadioGroup inline>
+    <Radio id="radioInline" value="radio" name="radioInline" label="Click me!" />
+    <Radio id="radioTwoInline" value="radioTwo" name="radioInline" label="Click me!" />
+  </RadioGroup>
+);
 
 const stories = storiesOf('3. Forms', module);
 stories
   .add('Radio Button', () => (
-    <CodeExample
-      component={FormExample}
-      withImport="RadioGroup, Radio"
-    />
+    <Heading image={Atom} title="<RadioGroup />">
+      <TabbedView>
+        <Tab title="Usage">
+          <StyledDiv>
+            <p>We provide two components to use Radio Buttons.</p>
+            <p><code>{'<RadioGroup>'}</code> and <code>{'<Radio>'}</code> must be used together and can be displayed inlined or blocked</p>
+          </StyledDiv>
+
+          <h4>RadioGroup with block display</h4>
+          <Row>
+            <Col phone={6}>
+              <CodeExample
+                component={RadioBlock}
+                withImport="RadioGroup, Radio"
+                showTitle={false}
+              />
+            </Col>
+
+            <Col phone={6}>
+              <RadioGroupWrapper>
+                {RadioBlock}
+              </RadioGroupWrapper>
+            </Col>
+          </Row>
+
+          <h4>RadioGroup with inline display</h4>
+          <Row>
+            <Col phone={6}>
+              <CodeExample
+                component={RadioInline}
+                withImport="RadioGroup, Radio"
+                showTitle={false}
+              />
+            </Col>
+
+            <Col phone={6}>
+              <RadioGroupWrapper>
+                {RadioInline}
+              </RadioGroupWrapper>
+            </Col>
+          </Row>
+        </Tab>
+        <Tab title="API">
+          <AutoPropsApi component={Radio} title="Radio Component" />
+          <AutoPropsApi component={RadioGroup} title="RadioGroup Component" />
+        </Tab>
+      </TabbedView>
+    </Heading>
   ));

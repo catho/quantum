@@ -18,9 +18,12 @@ const Group = styled.div`
   `}
 `;
 
+/**
+ * RadioGroup component that needs Radio components as a childs
+ */
 const RadioGroup = props => <Group {...props} />;
 
-Group.propTypes = {
+RadioGroup.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),

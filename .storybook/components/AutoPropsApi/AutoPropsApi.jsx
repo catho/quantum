@@ -63,12 +63,12 @@ const renderPropType = (type = {}) => {
   return <span>{type.name}</span>;
 };
 
-const AutoPropsApi = ({ component: Component }) => (
+const AutoPropsApi = ({ component: Component, title }) => (
   <React.Fragment>
+    <Title>{title || 'Available props'}</Title>
     { Component.__docgenInfo &&
       <ReactMarkdown source={Component.__docgenInfo.description} />
     }
-    <Title>Available <code>props</code></Title>
     <table className="bordered">
       <thead>
         <tr>
@@ -98,8 +98,13 @@ const AutoPropsApi = ({ component: Component }) => (
   </React.Fragment>
 );
 
+AutoPropsApi.defaultProps = {
+  title: '',
+};
+
 AutoPropsApi.propTypes = {
   component: PropTypes.instanceOf(Object).isRequired,
+  title: PropTypes.string,
 };
 
 export default AutoPropsApi;
