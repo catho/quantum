@@ -6,7 +6,7 @@ import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import Colors from '../Colors';
 import theme from '../../theme';
 
-const ModalOverlay = styled.div`
+const Overlay = styled.div`
   align-items: center;
   background-color: ${rgba(Colors.NEUTRAL.GRAY.WHITE, 0.8)};
   bottom: 0;
@@ -23,7 +23,7 @@ const ModalOverlay = styled.div`
   }
 `;
 
-const ModalContent = styled.section`
+const Content = styled.section`
   background-color: white;
   box-shadow: ${theme.shadow};
   box-sizing: border-box;
@@ -39,7 +39,7 @@ const ModalContent = styled.section`
   }
 `;
 
-const ModalClose = styled.span`
+const Close = styled.span`
   color: ${Colors.NEUTRAL.DARKERGRAY.BLACK};
   cursor: pointer;
   font-size: 12px;
@@ -48,13 +48,13 @@ const ModalClose = styled.span`
   right: 20px;
 `;
 
-const ModalTitle = styled.h2`
+const Title = styled.h2`
   color: ${Colors.NEUTRAL.DARKERGRAY.BLACK};
   font-size: 18px;
   margin: 0;
 `;
 
-const ModalText = styled.p`
+const Text = styled.p`
   margin: 5px 0;
 `;
 
@@ -63,24 +63,23 @@ const Modal = ({
   children,
   closeModal,
 }) => (
-  <ModalOverlay>
-    <ModalContent>
-      <ModalClose onClick={closeModal}>x</ModalClose>
-      {title && (<ModalTitle>{title}</ModalTitle>)}
-      <ModalText>
+  <Overlay>
+    <Content>
+      <Close onClick={closeModal}>x</Close>
+      {title && (<Title>{title}</Title>)}
+      <Text>
         {children}
-      </ModalText>
-    </ModalContent>
-  </ModalOverlay>
+      </Text>
+    </Content>
+  </Overlay>
 );
 
 Modal.defaultProps = {
   title: 'Generic title',
-  children: 'Generic message',
 };
 
 Modal.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   /** function to close the modal */
   closeModal: PropTypes.func.isRequired,
   title: PropTypes.string,
