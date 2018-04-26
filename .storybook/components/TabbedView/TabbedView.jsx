@@ -63,6 +63,8 @@ Tab.propTypes = {
   ]).isRequired,
 };
 
+Tab.displayName = 'Tab';
+
 const renderIf = (conditional, renderFn) => conditional && renderFn();
 
 class TabbedView extends React.Component {
@@ -86,8 +88,10 @@ class TabbedView extends React.Component {
       <React.Fragment>
         <Navbar>
           {
-            children
-              .map(tab => (
+            React
+              .Children
+              .map(children, tab => (
+                tab &&
                 <NavItem
                   key={tab.props.title}
                   onClick={() => this.onTabClick(tab)}
@@ -100,8 +104,9 @@ class TabbedView extends React.Component {
         </Navbar>
 
         {
-          children
-            .map(child =>
+          React
+            .Children
+            .map(children, child =>
               renderIf(this.props.children.indexOf(child) === this.state.activeTab, () => child))
         }
       </React.Fragment>
@@ -115,5 +120,7 @@ TabbedView.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+TabbedView.displayName = 'TabbedView';
 
 export { Tab, TabbedView };

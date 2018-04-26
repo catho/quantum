@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import CopyIco from '../../../stories/static/copy-to.svg';
-import CopyLoveIco from '../../../stories/static/copy-love.svg';
+import CopyIco from '../../static/copy-to.svg';
+import CopyLoveIco from '../../static/copy-love.svg';
 
 const AsideCopyToClipboard = styled(CopyToClipboard)`
   position: absolute;
