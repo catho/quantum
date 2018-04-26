@@ -12,9 +12,7 @@ const CodeBlock = styled.pre`
 `;
 
 const INDENTATION_SIZE = 2;
-
 const spaces = size => ' '.repeat(size);
-
 const jsonStr = (json, indentation) => (
   JSON
     .stringify(json, (key, value) => (typeof value === 'function' ? '() => {}' : value), INDENTATION_SIZE)
@@ -56,7 +54,6 @@ const componentToString = (component, state, level = 0) => {
 
   if (typeof component === 'object') {
     const { type, props } = component;
-
     const name = type.displayName || type.name || type;
     const children = props ? props.children : null;
 
