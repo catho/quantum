@@ -11,12 +11,20 @@ const CodeBlock = styled.pre`
   font-size: 14px;
 `;
 
+const validateJson = (key, value) => {
+  if (typeof value === 'function') return '() => {}';
+  if (typeof value === 'string') return `'${value}'`;
+
+  return value;
+}
+
 const INDENTATION_SIZE = 2;
 const spaces = size => ' '.repeat(size);
 const jsonStr = (json, indentation) => (
   JSON
-    .stringify(json, (key, value) => (typeof value === 'function' ? '() => {}' : value), INDENTATION_SIZE)
+    .stringify(json, validateJson, INDENTATION_SIZE)
     .replace(/\n/g, `\n${indentation}${spaces(INDENTATION_SIZE)}`)
+    .replace(/"/g, '')
 );
 
 const renderPropValue = (propValue, indentation) => {
