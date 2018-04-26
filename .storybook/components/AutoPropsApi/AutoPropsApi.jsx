@@ -28,10 +28,10 @@ const renderPropType = (type = {}) => {
     custom: () => wrap('custom')(),
 
     enum: value => wrap('oneOf')(value.map((v, i, allValues) =>
-      <span key={v.value}><code>{removeQuotes(v.value)}</code>{allValues[i + 1] && ', '}</span>)),
+      <span key={v.name}><code>{removeQuotes(v.value)}</code>{allValues[i + 1] && ', '}</span>)),
 
     union: value => wrap('oneOfType')(value.map((v, i, allValues) => (
-      <span key={v.value}>
+      <span key={v.name}>
         {renderPropType(v)}
         {allValues[i + 1] && ', '}
       </span>
