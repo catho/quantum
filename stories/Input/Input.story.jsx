@@ -20,6 +20,6 @@ storiesOf('3. Forms', module)
   .add('Input', () => (
     <AutoExample
       component={Input}
-      aditionalTabs={tabExample}
+      additionalTabs={tabExample}
     />
   ));

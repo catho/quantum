@@ -13,7 +13,7 @@ const AutoExample = ({
   element = <Component {...props} />,
   name = element.type.displayName || element.type.name || element.type,
   importModules = name,
-  aditionalTabs,
+  additionalTabs,
 }) => (
   <Heading image={Atom} title={`<${name} />`}>
     <TabbedView>
@@ -28,14 +28,14 @@ const AutoExample = ({
         <AutoPropsApi component={element.type} />
       </Tab>
 
-      { aditionalTabs }
+      { additionalTabs }
     </TabbedView>
   </Heading>
 );
 
 AutoExample.defaultProps = {
   componentProps: {},
-  aditionalTabs: null,
+  additionalTabs: null,
 };
 
 AutoExample.propTypes = {
@@ -44,7 +44,7 @@ AutoExample.propTypes = {
   element: PropTypes.instanceOf(Object),
   name: PropTypes.string,
   importModules: PropTypes.string,
-  aditionalTabs: PropTypes.oneOfType([
+  additionalTabs: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
