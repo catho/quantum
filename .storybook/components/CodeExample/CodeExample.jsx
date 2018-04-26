@@ -16,7 +16,7 @@ const validateJson = (key, value) => {
   if (typeof value === 'string') return `'${value}'`;
 
   return value;
-}
+};
 
 const INDENTATION_SIZE = 2;
 const spaces = size => ' '.repeat(size);
