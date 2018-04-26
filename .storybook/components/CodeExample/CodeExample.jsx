@@ -7,6 +7,9 @@ import Title from '../Title';
 
 const CodeBlock = styled.pre`
   position: relative;
+  background-color: #f6f8fa;
+  padding: 10px;
+  font-size: 14px;
 `;
 
 const INDENTATION_SIZE = 2;
@@ -84,10 +87,8 @@ const CodeExample = ({
     <React.Fragment>
       {showTitle && <Title>Code</Title>}
       <CodeBlock>
-        <Highlight language="javascript" className="highlight">
-          {withImport && msg(withImport)}
-          { codeStr }
-        </Highlight>
+        {withImport && msg(withImport)}
+        { codeStr }
         <CodeToClipboard code={codeStr} />
       </CodeBlock>
     </React.Fragment>
