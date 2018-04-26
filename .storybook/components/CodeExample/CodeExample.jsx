@@ -57,11 +57,10 @@ const componentToString = (component, state, level = 0) => {
 
     const name = type.displayName || type.name || type;
     const children = props ? props.children : null;
-    const childList = Array.isArray(children) ? children : [children];
 
     content = `${indentation}<${name}${Object.keys(state).length ? getProps(state, indentation) : ''}`;
     content += children
-      ? `>\n${childList.map(child => componentToString(child, child.props, level + INDENTATION_SIZE)).join('\n')}\n${indentation}</${name}>`
+      ? `>\n${React.Children.map(children, (child => componentToString(child, child.props, level + INDENTATION_SIZE))).join('\n')}\n${indentation}</${name}>`
       : `\n${indentation}/>`;
   } else {
     content = component ? `${indentation}${component}` : '';
