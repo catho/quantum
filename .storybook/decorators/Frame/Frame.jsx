@@ -58,6 +58,7 @@ injectGlobal`
   table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 40px;
 
     &.bordered {
       th, td {

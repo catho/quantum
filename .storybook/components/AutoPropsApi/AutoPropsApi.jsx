@@ -28,10 +28,10 @@ const renderPropType = (type = {}) => {
     custom: () => wrap('custom')(),
 
     enum: value => wrap('oneOf')(value.map((v, i, allValues) =>
-      <span key={v.value}><code>{removeQuotes(v.value)}</code>{allValues[i + 1] && ', '}</span>)),
+      <span key={v.name}><code>{removeQuotes(v.value)}</code>{allValues[i + 1] && ', '}</span>)),
 
     union: value => wrap('oneOfType')(value.map((v, i, allValues) => (
-      <span key={v.value}>
+      <span key={v.name}>
         {renderPropType(v)}
         {allValues[i + 1] && ', '}
       </span>
@@ -63,12 +63,12 @@ const renderPropType = (type = {}) => {
   return <span>{type.name}</span>;
 };
 
-const AutoPropsApi = ({ component: Component }) => (
+const AutoPropsApi = ({ component: Component, title }) => (
   <React.Fragment>
+    <Title>{title || 'Available props'}</Title>
     { Component.__docgenInfo &&
       <ReactMarkdown source={Component.__docgenInfo.description} />
     }
-    <Title>Available <code>props</code></Title>
     <table className="bordered">
       <thead>
         <tr>
@@ -89,7 +89,7 @@ const AutoPropsApi = ({ component: Component }) => (
               <td>{ renderPropType(value.type) }</td>
               <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
               <td>{ value.required ? 'Yes' : 'No' }</td>
-              <td>{ value.description }</td>
+              <td><ReactMarkdown source={value.description} /></td>
             </tr>
           ))
         }
@@ -98,8 +98,13 @@ const AutoPropsApi = ({ component: Component }) => (
   </React.Fragment>
 );
 
+AutoPropsApi.defaultProps = {
+  title: '',
+};
+
 AutoPropsApi.propTypes = {
   component: PropTypes.instanceOf(Object).isRequired,
+  title: PropTypes.string,
 };
 
 export default AutoPropsApi;
