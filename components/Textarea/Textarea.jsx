@@ -6,7 +6,7 @@ import theme from '../../theme';
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 
 const Textfield = styled.textarea`
-  border: 1px solid ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
+  border: 1px solid ${Colors.GREY['900']};
   border-radius: ${theme.sizes.radius};
   box-sizing: border-box;
   color: inherit;
@@ -19,11 +19,11 @@ const Textfield = styled.textarea`
   ${theme.mixins.transition()};
 
   &:focus {
-    border-color: ${Colors.PRIMARY.BLUE.PEACOCK};
+    border-color: ${Colors.PRIMARY['500']};
   }
 
   ${props => props.errorMessage && `
-    border-color: ${Colors.SECONDARY.PINK.LIPSTICK};
+    border-color: ${Colors.DANGER['400'].LIPSTICK};
   `}
 `;
 

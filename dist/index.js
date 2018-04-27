@@ -4812,7 +4812,7 @@ function hyphenateStyleName(string) {
 
 var hyphenateStyleName_1 = hyphenateStyleName;
 
-// 
+//
 var objToCss = function objToCss(obj, prevKey) {
   var css = Object.keys(obj).filter(function (key) {
     var chunk = obj[key];
@@ -4853,7 +4853,7 @@ var flatten = function flatten(chunks, executionContext) {
   }, []);
 };
 
-// 
+//
 var stylis = new __WEBPACK_IMPORTED_MODULE_1_stylis___default.a({
   global: false,
   cascade: true,
@@ -4891,13 +4891,13 @@ var stringifyRules = function stringifyRules(rules, selector, prefix) {
   return stylis(prefix || !selector ? '' : selector, cssStr);
 };
 
-// 
+//
 
 function isStyledComponent(target) /* : %checks */{
   return typeof target === 'function' && typeof target.styledComponentId === 'string';
 }
 
-// 
+//
 /**
  * When using streaming rendering, style blocks are emitted in chunks directly
  * next to the HTML they reference. In order to prevent errors during rehydration
@@ -4922,7 +4922,7 @@ function consolidateStreamedStyles() {
   }
 }
 
-// 
+//
 var chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 var charsLength = chars.length;
 
@@ -4938,7 +4938,7 @@ var generateAlphabeticName = function generateAlphabeticName(code) {
   return chars[x % charsLength] + name;
 };
 
-// 
+//
 
 var interleave = (function (strings, interpolations) {
   return interpolations.reduce(function (array, interp, i) {
@@ -4946,7 +4946,7 @@ var interleave = (function (strings, interpolations) {
   }, [strings[0]]);
 });
 
-// 
+//
 var css = (function (strings) {
   for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     interpolations[_key - 1] = arguments[_key];
@@ -4955,7 +4955,7 @@ var css = (function (strings) {
   return flatten(interleave(strings, interpolations));
 });
 
-// 
+//
 var SC_COMPONENT_ID = /^[^\S\n]*?\/\* sc-component-id:\s*(\S+)\s+\*\//gm;
 
 var extractCompsFromCSS = (function (maybeCSS) {
@@ -4975,7 +4975,7 @@ var extractCompsFromCSS = (function (maybeCSS) {
   });
 });
 
-// 
+//
 /* eslint-disable camelcase, no-undef */
 
 var getNonce = (function () {
@@ -5072,7 +5072,7 @@ var possibleConstructorReturn = function (self, call) {
   return call && (typeof call === "object" || typeof call === "function") ? call : self;
 };
 
-// 
+//
 /* eslint-disable no-underscore-dangle */
 /*
  * Browser Style Sheet with Rehydration
@@ -5458,7 +5458,7 @@ var BrowserStyleSheet = {
   }
 };
 
-// 
+//
 var SC_ATTR = 'data-styled-components';
 var LOCAL_ATTR = 'data-styled-components-is-local';
 var CONTEXT_KEY = '__styled-components-stylesheet__';
@@ -5640,7 +5640,7 @@ var StyleSheet = function () {
 
 var _StyleSheetManager$ch;
 
-// 
+//
 var StyleSheetManager = function (_Component) {
   inherits(StyleSheetManager, _Component);
 
@@ -5672,7 +5672,7 @@ process.env.NODE_ENV !== "production" ? StyleSheetManager.propTypes = {
   sheet: __WEBPACK_IMPORTED_MODULE_5_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_5_prop_types___default.a.instanceOf(StyleSheet), __WEBPACK_IMPORTED_MODULE_5_prop_types___default.a.instanceOf(ServerStyleSheet)]).isRequired
 } : void 0;
 
-// 
+//
 /* eslint-disable no-underscore-dangle */
 var ServerTag = function () {
   function ServerTag(isLocal) {
@@ -5863,7 +5863,7 @@ var ServerStyleSheet = function () {
   return ServerStyleSheet;
 }();
 
-// 
+//
 
 var LIMIT = 200;
 
@@ -5885,7 +5885,7 @@ var createWarnTooManyClasses = (function (displayName) {
   };
 });
 
-// 
+//
 /* eslint-disable max-len */
 /**
  * Trying to avoid the unknown-prop errors on styled components by filtering by
@@ -5914,20 +5914,20 @@ var validAttr = (function (name) {
   return ATTRIBUTE_REGEX.test(name) || isCustomAttribute(name.toLowerCase());
 });
 
-// 
+//
 
 function isTag(target) /* : %checks */{
   return typeof target === 'string';
 }
 
-// 
+//
 
 /* eslint-disable no-undef */
 function getComponentName(target) {
   return target.displayName || target.name || 'Component';
 }
 
-// 
+//
 
 var determineTheme = (function (props, fallbackTheme, defaultProps) {
   // Props should take precedence over ThemeProvider, which should take precedence over
@@ -5941,7 +5941,7 @@ var determineTheme = (function (props, fallbackTheme, defaultProps) {
   return theme;
 });
 
-// 
+//
 var escapeRegex = /[[\].#*$><+~=|^:(),"'`-]+/g;
 var dashesAtEnds = /(^-|-$)/g;
 
@@ -5958,7 +5958,7 @@ function escape(str) {
   .replace(dashesAtEnds, '');
 }
 
-// 
+//
 /**
  * Creates a broadcast that can be listened to, i.e. simple event emitter
  *
@@ -6000,7 +6000,7 @@ var createBroadcast = function createBroadcast(initialState) {
   return { publish: publish, subscribe: subscribe, unsubscribe: unsubscribe };
 };
 
-// 
+//
 // Helper to call a given function, only once
 var once = (function (cb) {
   var called = false;
@@ -6016,7 +6016,7 @@ var once = (function (cb) {
 var _ThemeProvider$childC;
 var _ThemeProvider$contex;
 
-// 
+//
 /* globals React$Element */
 // NOTE: DO NOT CHANGE, changing this is a semver major change!
 var CHANNEL = '__styled-components__';
@@ -6146,7 +6146,7 @@ var ThemeProvider = function (_Component) {
 ThemeProvider.childContextTypes = (_ThemeProvider$childC = {}, _ThemeProvider$childC[CHANNEL] = __WEBPACK_IMPORTED_MODULE_5_prop_types___default.a.func, _ThemeProvider$childC[CHANNEL_NEXT] = CONTEXT_CHANNEL_SHAPE, _ThemeProvider$childC);
 ThemeProvider.contextTypes = (_ThemeProvider$contex = {}, _ThemeProvider$contex[CHANNEL_NEXT] = CONTEXT_CHANNEL_SHAPE, _ThemeProvider$contex);
 
-// 
+//
 
 // HACK for generating all static styles without needing to allocate
 // an empty execution context every single time...
@@ -6488,7 +6488,7 @@ function Umul32(n, m) {
   return res;
 }
 
-// 
+//
 var isStaticRules = function isStaticRules(rules, attrs) {
   for (var i = 0; i < rules.length; i += 1) {
     var rule = rules[i];
@@ -6591,7 +6591,7 @@ var _ComponentStyle = (function (nameGenerator, flatten, stringifyRules) {
   return ComponentStyle;
 });
 
-// 
+//
 // Thanks to ReactDOMFactories for this handy list!
 
 var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi', 'bdo', 'big', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'marquee', 'menu', 'menuitem', 'meta', 'meter', 'nav', 'noscript', 'object', 'ol', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr',
@@ -6599,7 +6599,7 @@ var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 
 // SVG
 'circle', 'clipPath', 'defs', 'ellipse', 'g', 'image', 'line', 'linearGradient', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan'];
 
-// 
+//
 var _styled = (function (styledComponent, constructWithOptions) {
   var styled = function styled(tag) {
     return constructWithOptions(styledComponent, tag);
@@ -6613,7 +6613,7 @@ var _styled = (function (styledComponent, constructWithOptions) {
   return styled;
 });
 
-// 
+//
 var replaceWhitespace = function replaceWhitespace(str) {
   return str.replace(/\s|\\n/g, '');
 };
@@ -6639,7 +6639,7 @@ var _keyframes = (function (nameGenerator, stringifyRules, css) {
   };
 });
 
-// 
+//
 var _injectGlobal = (function (stringifyRules, css) {
   var injectGlobal = function injectGlobal(strings) {
     for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -6658,7 +6658,7 @@ var _injectGlobal = (function (stringifyRules, css) {
   return injectGlobal;
 });
 
-// 
+//
 
 var _constructWithOptions = (function (css) {
   var constructWithOptions = function constructWithOptions(componentConstructor, tag) {
@@ -6693,7 +6693,7 @@ var _constructWithOptions = (function (css) {
   return constructWithOptions;
 });
 
-// 
+//
 /* globals ReactClass */
 
 var wrapWithTheme = function wrapWithTheme(Component$$1) {
@@ -6785,14 +6785,14 @@ var wrapWithTheme = function wrapWithTheme(Component$$1) {
   return __WEBPACK_IMPORTED_MODULE_6_hoist_non_react_statics___default()(WithTheme, Component$$1);
 };
 
-// 
+//
 
 /* eslint-disable */
 var __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = {
   StyleSheet: StyleSheet
 };
 
-// 
+//
 
 /* Import singletons */
 /* Import singleton constructors */
@@ -8620,7 +8620,7 @@ module.exports = function (it) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 function makeEmptyFunction(arg) {
@@ -9266,14 +9266,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "transparentize", function() { return curriedTransparentize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "triangle", function() { return triangle; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wordWrap", function() { return wordWrap; });
-//      
+//
 
 // @private
 function capitalizeString(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-//      
+//
 var positionMap = ['Top', 'Right', 'Bottom', 'Left'];
 
 function generateProperty(property, position) {
@@ -9340,13 +9340,13 @@ function directionalProperty(property) {
   return generateStyles(property, valuesWithDefaults);
 }
 
-//      
+//
 
 function endsWith (string, suffix) {
   return string.substr(-suffix.length) === suffix;
 }
 
-//      
+//
 
 /**
  * Strip the unit from a given CSS value, returning just the number. (or the original value if an invalid string was passed)
@@ -9375,7 +9375,7 @@ function stripUnit(value) {
   return unitlessValue;
 }
 
-//      
+//
 
 /**
  * Factory function that creates pixel-to-x converters
@@ -9413,7 +9413,7 @@ var pxtoFactory = function pxtoFactory(to) {
   };
 };
 
-//      
+//
 /**
  * Convert pixel value to ems. The default base value is 16px, but can be changed by passing a
  * second argument to the function.
@@ -9440,7 +9440,7 @@ var pxtoFactory = function pxtoFactory(to) {
 
 var em = /*#__PURE__*/pxtoFactory('em');
 
-//      
+//
 
 var ratioNames = {
   minorSecond: 1.067,
@@ -9505,7 +9505,7 @@ var ratioNames = {
   return realBase * Math.pow(realRatio, steps) + 'em';
 }
 
-//      
+//
 
 /**
  * Convert pixel value to rems. The default base value is 16px, but can be changed by passing a
@@ -9533,7 +9533,7 @@ var ratioNames = {
 
 var rem = /*#__PURE__*/pxtoFactory('rem');
 
-//      
+//
 
 /**
  * CSS to contain a float (credit to CSSMojo).
@@ -9571,7 +9571,7 @@ function clearFix() {
   }, _ref;
 }
 
-//      
+//
 
 /**
  * CSS to represent truncated text with an ellipsis.
@@ -9612,7 +9612,7 @@ function ellipsis() {
   };
 }
 
-//      
+//
 
 /** */
 
@@ -9706,7 +9706,7 @@ function fontFace(_ref) {
   };return JSON.parse(JSON.stringify(fontFaceDeclaration));
 }
 
-//      
+//
 
 /**
  * CSS to hide text to show a background image in a SEO-friendly way.
@@ -9742,7 +9742,7 @@ function hideText() {
   };
 }
 
-//      
+//
 
 /**
  * CSS to hide content visually but remain accessible to screen readers.
@@ -9790,7 +9790,7 @@ function hideVisually() {
   };
 }
 
-//      
+//
 
 /**
  * Generates a media query to target HiDPI devices.
@@ -9876,7 +9876,7 @@ var _opinionatedRules;
 var _abbrTitle;
 var _unopinionatedRules;
 
-//      
+//
 var opinionatedRules = (_opinionatedRules = {
   html: {
     fontFamily: 'sans-serif'
@@ -10043,7 +10043,7 @@ function normalize(excludeOpinionated) {
   return mergeRules(unopinionatedRules, opinionatedRules);
 }
 
-//      
+//
 
 /**
  * CSS to style the placeholder pseudo-element.
@@ -10087,7 +10087,7 @@ function placeholder(styles) {
 
 var _templateObject = /*#__PURE__*/ taggedTemplateLiteralLoose(['radial-gradient(', '', '', '', ')'], ['radial-gradient(', '', '', '', ')']);
 
-//      
+//
 
 /** */
 
@@ -10162,7 +10162,7 @@ function radialGradient(_ref) {
   };
 }
 
-//      
+//
 
 /**
  * A helper to generate a retina background image and non-retina
@@ -10215,7 +10215,7 @@ function retinaImage(filename, backgroundSize) {
   }, _ref;
 }
 
-//      
+//
 
 /**
  * CSS to style the selection pseudo-element.
@@ -10253,7 +10253,7 @@ function selection(styles) {
   return _ref = {}, _ref[parent + '::-moz-selection'] = _extends({}, styles), _ref[parent + '::selection'] = _extends({}, styles), _ref;
 }
 
-//      
+//
 
 /* eslint-disable key-spacing */
 var functionsMap = {
@@ -10312,7 +10312,7 @@ var functionsMap = {
   return functionsMap[timingFunction];
 }
 
-//      
+//
 
 /** */
 
@@ -10392,7 +10392,7 @@ var reverseDirection = {
   }, _ref2['border' + reverseDirection[pointingDirection] + 'Color'] = foregroundColor + ' !important', _ref2;
 }
 
-//      
+//
 
 /**
  * Provides an easy way to change the `wordWrap` property.
@@ -10428,7 +10428,7 @@ function wordWrap() {
   };
 }
 
-//      
+//
 
 
 function colorToInt(color) {
@@ -10483,7 +10483,7 @@ function hslToRgb(hue, saturation, lightness) {
   return convert(finalRed, finalGreen, finalBlue);
 }
 
-//      
+//
 var namedColorMap = {
   aliceblue: 'f0f8ff',
   antiquewhite: 'faebd7',
@@ -10644,7 +10644,7 @@ var namedColorMap = {
   return namedColorMap[normalizedColorName] ? '#' + namedColorMap[normalizedColorName] : color;
 }
 
-//      
+//
 var hexRegex = /^#[a-fA-F0-9]{6}$/;
 var reducedHexRegex = /^#[a-fA-F0-9]{3}$/;
 var rgbRegex = /^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/;
@@ -10729,7 +10729,7 @@ function parseToRgb(color) {
   throw new Error("Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation.");
 }
 
-//      
+//
 
 
 function rgbToHsl(color) {
@@ -10784,7 +10784,7 @@ function rgbToHsl(color) {
   return { hue: hue, saturation: saturation, lightness: lightness };
 }
 
-//      
+//
 
 /**
  * Returns an HslColor or HslaColor object. This utility function is only useful
@@ -10803,7 +10803,7 @@ function parseToHsl(color) {
   return rgbToHsl(parseToRgb(color));
 }
 
-//      
+//
 
 /**
  * Reduces hex values if possible e.g. #ff8866 to #f86
@@ -10816,13 +10816,13 @@ var reduceHexValue = function reduceHexValue(value) {
   return value;
 };
 
-//      
+//
 function numberToHex(value) {
   var hex = value.toString(16);
   return hex.length === 1 ? "0" + hex : hex;
 }
 
-//      
+//
 
 /**
  * Returns a string value for the color. The returned result is the smallest possible hex notation.
@@ -10857,7 +10857,7 @@ function rgb(value, green, blue) {
   throw new Error('Passed invalid arguments to rgb, please pass multiple numbers e.g. rgb(255, 205, 100) or an object e.g. rgb({ red: 255, green: 205, blue: 100 }).');
 }
 
-//      
+//
 
 /**
  * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
@@ -10906,7 +10906,7 @@ function rgba(firstValue, secondValue, thirdValue, fourthValue) {
   throw new Error('Passed invalid arguments to rgba, please pass multiple numbers e.g. rgb(255, 205, 100, 0.75) or an object e.g. rgb({ red: 255, green: 205, blue: 100, alpha: 0.75 }).');
 }
 
-//      
+//
 function colorToHex(color) {
   return numberToHex(Math.round(color * 255));
 }
@@ -10919,7 +10919,7 @@ function hslToHex(hue, saturation, lightness) {
   return hslToRgb(hue, saturation, lightness, convertToHex);
 }
 
-//      
+//
 
 /**
  * Returns a string value for the color. The returned result is the smallest possible hex notation.
@@ -10954,7 +10954,7 @@ function hsl(value, saturation, lightness) {
   throw new Error('Passed invalid arguments to hsl, please pass multiple numbers e.g. hsl(360, 0.75, 0.4) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75 }).');
 }
 
-//      
+//
 
 /**
  * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
@@ -10992,7 +10992,7 @@ function hsla(value, saturation, lightness, alpha) {
   throw new Error('Passed invalid arguments to hsla, please pass multiple numbers e.g. hsl(360, 0.75, 0.4, 0.7) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75, alpha: 0.7 }).');
 }
 
-//      
+//
 var isRgb = function isRgb(color) {
   return typeof color.red === 'number' && typeof color.green === 'number' && typeof color.blue === 'number' && (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined');
 };
@@ -11052,7 +11052,7 @@ function toColorString(color) {
   throw new Error(errMsg);
 }
 
-//      
+//
 
 // Type definitions taken from https://github.com/gcanti/flow-static-land/blob/master/src/Fun.js
 
@@ -11079,7 +11079,7 @@ function curry(f) {
   return curried(f, f.length, []);
 }
 
-//      
+//
 
 /**
  * Changes the hue of the color. Hue is a number between 0 to 360. The first
@@ -11114,7 +11114,7 @@ function adjustHue(degree, color) {
 
 var curriedAdjustHue = /*#__PURE__*/curry(adjustHue);
 
-//      
+//
 
 /**
  * Returns the complement of the provided color. This is identical to adjustHue(180, <color>).
@@ -11145,13 +11145,13 @@ function complement(color) {
   }));
 }
 
-//      
+//
 
 function guard(lowerBoundary, upperBoundary, value) {
   return Math.max(lowerBoundary, Math.min(upperBoundary, value));
 }
 
-//      
+//
 
 /**
  * Returns a string value for the darkened color.
@@ -11185,7 +11185,7 @@ function darken(amount, color) {
 
 var curriedDarken = /*#__PURE__*/curry(darken);
 
-//      
+//
 
 /**
  * Decreases the intensity of a color. Its range is between 0 to 1. The first
@@ -11220,7 +11220,7 @@ function desaturate(amount, color) {
 
 var curriedDesaturate = /*#__PURE__*/curry(desaturate);
 
-//      
+//
 /**
  * Returns a number (float) representing the luminance of a color.
  *
@@ -11261,7 +11261,7 @@ function getLuminance(color) {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }
 
-//      
+//
 
 /**
  * Converts the color to a grayscale, by reducing its saturation to 0.
@@ -11291,7 +11291,7 @@ function grayscale(color) {
   }));
 }
 
-//      
+//
 
 /**
  * Inverts the red, green and blue values of a color.
@@ -11326,7 +11326,7 @@ function invert(color) {
   }));
 }
 
-//      
+//
 
 /**
  * Returns a string value for the lightened color.
@@ -11360,7 +11360,7 @@ function lighten(amount, color) {
 
 var curriedLighten = /*#__PURE__*/curry(lighten);
 
-//      
+//
 
 /**
  * Mixes two colors together by calculating the average of each of the RGB components.
@@ -11428,7 +11428,7 @@ function mix() {
 
 var curriedMix = /*#__PURE__*/curry(mix);
 
-//      
+//
 /**
  * Increases the opacity of a color. Its range for the amount is between 0 to 1.
  *
@@ -11467,7 +11467,7 @@ function opacify(amount, color) {
 
 var curriedOpacify = /*#__PURE__*/curry(opacify);
 
-//      
+//
 /**
  * Selects black or white for best contrast depending on the luminosity of the given color.
  * Follows W3C specs for readability at https://www.w3.org/TR/WCAG20-TECHS/G18.html
@@ -11502,7 +11502,7 @@ function readableColor(color) {
 
 var curriedReadableColor = /*#__PURE__*/curry(readableColor);
 
-//      
+//
 
 /**
  * Increases the intensity of a color. Its range is between 0 to 1. The first
@@ -11538,7 +11538,7 @@ function saturate(amount, color) {
 
 var curriedSaturate = /*#__PURE__*/curry(saturate);
 
-//      
+//
 
 /**
  * Sets the hue of a color to the provided value. The hue range can be
@@ -11571,7 +11571,7 @@ function setHue(hue, color) {
 
 var curriedSetHue = /*#__PURE__*/curry(setHue);
 
-//      
+//
 
 /**
  * Sets the lightness of a color to the provided value. The lightness range can be
@@ -11604,7 +11604,7 @@ function setLightness(lightness, color) {
 
 var curriedSetLightness = /*#__PURE__*/curry(setLightness);
 
-//      
+//
 
 /**
  * Sets the saturation of a color to the provided value. The lightness range can be
@@ -11637,7 +11637,7 @@ function setSaturation(saturation, color) {
 
 var curriedSetSaturation = /*#__PURE__*/curry(setSaturation);
 
-//      
+//
 
 /**
  * Shades a color by mixing it with black. `shade` can produce
@@ -11674,7 +11674,7 @@ function shade(percentage, color) {
 
 var curriedShade = /*#__PURE__*/curry(shade);
 
-//      
+//
 
 /**
  * Tints a color by mixing it with white. `tint` can produce
@@ -11711,7 +11711,7 @@ function tint(percentage, color) {
 
 var curriedTint = /*#__PURE__*/curry(tint);
 
-//      
+//
 /**
  * Decreases the opacity of a color. Its range for the amount is between 0 to 1.
  *
@@ -11750,7 +11750,7 @@ function transparentize(amount, color) {
 
 var curriedTransparentize = /*#__PURE__*/curry(transparentize);
 
-//      
+//
 
 /** */
 
@@ -11816,7 +11816,7 @@ function animation() {
   };
 }
 
-//      
+//
 
 /**
  * Shorthand that accepts any number of backgroundImage values as parameters for creating a single background statement.
@@ -11848,7 +11848,7 @@ function backgroundImages() {
   };
 }
 
-//      
+//
 
 /**
  * Shorthand that accepts any number of background values as parameters for creating a single background statement.
@@ -11879,7 +11879,7 @@ function backgrounds() {
   };
 }
 
-//      
+//
 /**
  * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
  * @example
@@ -11911,7 +11911,7 @@ function borderColor() {
   return directionalProperty.apply(undefined, ['borderColor'].concat(values));
 }
 
-//      
+//
 /**
  * Shorthand that accepts a value for side and a value for radius and applies the radius value to both corners of the side.
  * @example
@@ -11953,7 +11953,7 @@ function borderRadius(side, radius) {
   throw new Error('borderRadius expects one of "top", "bottom", "left" or "right" as the first argument.');
 }
 
-//      
+//
 /**
  * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
  * @example
@@ -11985,7 +11985,7 @@ function borderStyle() {
   return directionalProperty.apply(undefined, ['borderStyle'].concat(values));
 }
 
-//      
+//
 /**
  * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
  * @example
@@ -12016,7 +12016,7 @@ function borderWidth() {
   return directionalProperty.apply(undefined, ['borderWidth'].concat(values));
 }
 
-//      
+//
 
 
 function generateSelectors(template, state) {
@@ -12042,7 +12042,7 @@ function statefulSelectors(states, template, stateMap) {
   return selectors;
 }
 
-//      
+//
 var stateMap = [undefined, null, 'active', 'focus', 'hover'];
 
 function template(state) {
@@ -12084,7 +12084,7 @@ function buttons() {
   return statefulSelectors(states, template, stateMap);
 }
 
-//      
+//
 /**
  * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
  * @example
@@ -12116,7 +12116,7 @@ function margin() {
   return directionalProperty.apply(undefined, ['margin'].concat(values));
 }
 
-//      
+//
 /**
  * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
  * @example
@@ -12148,7 +12148,7 @@ function padding() {
   return directionalProperty.apply(undefined, ['padding'].concat(values));
 }
 
-//      
+//
 var positionMap$1 = ['absolute', 'fixed', 'relative', 'static', 'sticky'];
 
 /**
@@ -12209,7 +12209,7 @@ function position(positionKeyword) {
   }
 }
 
-//      
+//
 
 /**
  * Shorthand to set the height and width properties in a single statement.
@@ -12241,7 +12241,7 @@ function size(height) {
   };
 }
 
-//      
+//
 var stateMap$1 = [undefined, null, 'active', 'focus', 'hover'];
 
 function template$1(state) {
@@ -12295,7 +12295,7 @@ function textInputs() {
   return statefulSelectors(states, template$1, stateMap$1);
 }
 
-//      
+//
 
 /**
  * Shorthand that accepts any number of transition values as parameters for creating a single transition statement.
@@ -12327,7 +12327,7 @@ function transitions() {
   };
 }
 
-//      
+//
 // Helpers
 // Mixins
 // Color
@@ -14610,8 +14610,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 /** A text field component to get user text data */
-var StyledInput = _styledComponents2.default.input(_templateObject, _theme2.default.mixins.transition(), _Colors2.default.NEUTRAL.DARKERGRAY.WARMGREY, _theme2.default.sizes.radius, _theme2.default.sizes.fieldHeight, _Colors2.default.PRIMARY.BLUE.PEACOCK, function (props) {
-  return props.error && '\n    border-color: ' + _Colors2.default.SECONDARY.PINK.LIPSTICK + ';\n  ';
+var StyledInput = _styledComponents2.default.input(_templateObject, _theme2.default.mixins.transition(), _Colors2.default.GREY['900'], _theme2.default.sizes.radius, _theme2.default.sizes.fieldHeight, _Colors2.default.PRIMARY.BLUE.PEACOCK, function (props) {
+  return props.error && '\n    border-color: ' + _Colors2.default.DANGER['400'].LIPSTICK + ';\n  ';
 });
 
 var Input = function (_React$Component) {
@@ -37132,7 +37132,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-exports.default = _styledComponents2.default.div(_templateObject, _Colors2.default.SECONDARY.PINK.LIPSTICK);
+exports.default = _styledComponents2.default.div(_templateObject, _Colors2.default.DANGER['400'].LIPSTICK);
 
 /***/ }),
 /* 504 */
@@ -37215,7 +37215,7 @@ var StyledButton = _styledComponents2.default.button(_templateObject, _theme2.de
 }, function (props) {
   return props.center && '\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n  ';
 }, function (props) {
-  return props.disabled && '\n    background-color: ' + _Colors2.default.NEUTRAL.GRAY.WHITETWO + ';\n    border: 1px solid ' + _Colors2.default.NEUTRAL.GRAY.WHITETWO + ';\n    box-shadow: none;\n    cursor: not-allowed;\n    text-color: ' + _Colors2.default.NEUTRAL.DARKERGRAY.WARMGREY + ';\n  ';
+  return props.disabled && '\n    background-color: ' + _Colors2.default.GREY['50'] + ';\n    border: 1px solid ' + _Colors2.default.GREY['50'] + ';\n    box-shadow: none;\n    cursor: not-allowed;\n    text-color: ' + _Colors2.default.GREY['900'] + ';\n  ';
 }, function (props) {
   var skin = (0, _skins2.default)(props);
   var borderColor = skin.borderColor || skin.backgroundColor;
@@ -37405,7 +37405,7 @@ var skins = {
     textColor: _Colors2.default.PRIMARY.BLUE.PEACOCK
   },
   default: {
-    backgroundColor: _Colors2.default.SECONDARY.YELLOW.TANGERINE,
+    backgroundColor: _Colors2.default.SECONDARY['600'].TANGERINE,
     textColor: _Colors2.default.NEUTRAL.GRAY.WHITE
   }
 };
@@ -37672,11 +37672,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Select = _styledComponents2.default.select(_templateObject, _theme2.default.mixins.transition(), _theme2.default.sizes.fieldHeight, _Colors2.default.NEUTRAL.GRAY.WHITE, _Colors2.default.NEUTRAL.DARKERGRAY.WARMGREY, _theme2.default.sizes.radius, function (props) {
+var Select = _styledComponents2.default.select(_templateObject, _theme2.default.mixins.transition(), _theme2.default.sizes.fieldHeight, _Colors2.default.NEUTRAL.GRAY.WHITE, _Colors2.default.GREY['900'], _theme2.default.sizes.radius, function (props) {
   return props.error && '\n    border-color: ' + _Colors2.default.PRIMARY.PINK.LIPSTICK + ';\n  ';
 }, _Colors2.default.PRIMARY.BLUE.PEACOCK);
 
-var Icon = (0, _styledComponents2.default)(_keyboardArrowDown2.default)(_templateObject2, _Colors2.default.NEUTRAL.DARKERGRAY.WARMGREY);
+var Icon = (0, _styledComponents2.default)(_keyboardArrowDown2.default)(_templateObject2, _Colors2.default.GREY['900']);
 
 var Dropdown = function (_React$Component) {
   _inherits(Dropdown, _React$Component);
@@ -44642,8 +44642,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Textfield = _styledComponents2.default.textarea(_templateObject, _Colors2.default.NEUTRAL.DARKERGRAY.WARMGREY, _theme2.default.sizes.radius, _theme2.default.mixins.transition(), _Colors2.default.PRIMARY.BLUE.PEACOCK, function (props) {
-  return props.errorMessage && '\n    border-color: ' + _Colors2.default.SECONDARY.PINK.LIPSTICK + ';\n  ';
+var Textfield = _styledComponents2.default.textarea(_templateObject, _Colors2.default.GREY['900'], _theme2.default.sizes.radius, _theme2.default.mixins.transition(), _Colors2.default.PRIMARY.BLUE.PEACOCK, function (props) {
+  return props.errorMessage && '\n    border-color: ' + _Colors2.default.DANGER['400'].LIPSTICK + ';\n  ';
 });
 
 var Infos = _styledComponents2.default.div(_templateObject2);
@@ -44911,7 +44911,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var StyledInput = _styledComponents2.default.input(_templateObject, _Label2.default, _Colors2.default.PRIMARY.BLUE.WINDOWS, _Colors2.default.PRIMARY.BLUE.PEACOCK);
 
-var StyledLabel = (0, _styledComponents2.default)(_Label2.default)(_templateObject2, _theme2.default.mixins.transition(), _Colors2.default.NEUTRAL.DARKERGRAY.WARMGREY, _Colors2.default.NEUTRAL.DARKERGRAY.BROWNISHGREY);
+var StyledLabel = (0, _styledComponents2.default)(_Label2.default)(_templateObject2, _theme2.default.mixins.transition(), _Colors2.default.GREY['900'], _Colors2.default.NEUTRAL.DARKERGRAY.BROWNISHGREY);
 
 var Toggle = function (_React$Component) {
   _inherits(Toggle, _React$Component);

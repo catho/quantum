@@ -1,106 +1,54 @@
 import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import CodeToClipboard from '../../.storybook/components/CodeToClipboard';
 import Colors from '../../components/Colors';
 import Title from '../../.storybook/components/Title';
-import Subtitle from '../../.storybook/components/Subtitle';
 import HowToImport from '../../.storybook/components/HowToImport';
 
-export default () => (
-  <React.Fragment>
-    <p>Catho has some segments, below you can see the <strong>Candidates</strong> default color palette.</p>
-
-    <HowToImport importModules={'Colors'} />
-
-    <ColorPallete>
-      {
-        Object.keys(Colors).map(item => (
-          Object.keys(Colors[item]).map(child => (
-            <ColorList key={child}>
-              {
-                Object.entries(Colors[item][child]).map(([name, hex]) => (
-                  <ColorBox key={hex} colorGroup={child} colorHex={hex}>
-                    <CopyToClipboard text={hex}>
-                      <ColorMessage colorHex={hex}>
-                        Copy hex
-                      </ColorMessage>
-                    </CopyToClipboard>
-
-                    <ColorName>{name}</ColorName>
-                    <ColorHex>{hex}</ColorHex>
-                  </ColorBox>
-                ))
-              }
-            </ColorList>
-          ))
-        ))
-      }
-    </ColorPallete>
-
-    <Title>Code</Title>
-    <p>Some samples on how the Color object are structured</p>
-    <Highlight language="javascript" className="highlight">
-      {"console.log(Colors.PRIMARY.BLUE.CORNFLOWER);\n/*returns: #6EA5D6;*/"}
-      {"\n\nconsole.log(Colors.SECONDARY.YELLOW.APRICOT)\n/*returns: #FCBF62/*"}
-      {"\n\nconsole.log(Colors.SECONDARY.PINK.PIG)\n/*returns: #E76E97/*"}
-      {"\n\nconsole.log(Colors.NEUTRAL.GRAY.WHITE)\n/*returns: #f9f9f9/*"}
-      {"\n\nconsole.log(Colors.NEUTRAL.DARKERGRAY.WARMGREY)\n/*returns: #999999/*"}
-    </Highlight>
-
-    <Title>A bit more about Catho colors</Title>
-    <p>Here's how the <strong>colors</strong> are segmented</p>
-
-    <Subtitle>Blue</Subtitle>
-    <p>It is the predominant color of the logo and this reflects in the main pages of the site, being present in the titles and sub-titles and prominent spaces.</p>
-
-    <Subtitle>Yellow</Subtitle>
-    <p>The color chosen for the screen's primary actions is yellow, we find it in most buttons and in action calls. There are situations where it is used to create contrast with blue.</p>
-
-    <Subtitle>Pink</Subtitle>
-    <p>Pink has been tested in some situations to create a point of immediate attention need of the user. The idea is to use it in lesser quantity and create the impact by the flashy color. it can be seen in notifications and toasters.</p>
-
-    <Subtitle>Grey</Subtitle>
-    <p>The gray palette is very complete and goes from background colors to the ashes used in the texts, currently we do not encourage the use of black even in the fonts.</p>
-  </React.Fragment>
-);
-
 const ColorPallete = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin:40px 0;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(5, 1fr);
+
+  margin-top: 40px;
+  margin-bottom: 40px;
 `;
 
 const ColorList = styled.ul`
-  width: 185px;
   padding: 0;
-  margin: 0 15px 0 0;
+  margin: 0;
   list-style-type: none;
 `;
 
-const ColorMessage = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+const CopyToClipboard = styled.div`
   background-color: ${props => props.colorHex};
-  position:absolute;
-  width:100%;
-  height:100%;
-  text-align: left ;
-  text-indent: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
   opacity: 0;
-  transition: all .20s ease;
 `;
 
 const radius = '3px';
 const ColorBox = styled.li`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: ${props => props.colorHex};
   cursor: pointer;
   width: 100%;
-  height: 85px;
-  color: ${props => (props.colorGroup === 'GRAY' ? '#333333' : '#FFFFFF')};
-  position:relative;
+  height: 48px;
+  color: ${props => (props.grey ? '#333333' : '#FFFFFF')};
+  position: relative;
 
   &:first-child {
     border-top-left-radius: ${radius};
@@ -112,20 +60,110 @@ const ColorBox = styled.li`
     border-bottom-right-radius: ${radius};
   }
 
-  &:hover ${ColorMessage} {
+  &:hover ${CopyToClipboard} {
     opacity: 1;
   }
 `;
 
-
-const ColorName = styled.span`
-  padding:10px 0 0 10px;
-  display:block;
-  font-size:16px;
+const ColorNumber = styled.span`
+  font-size: 12px;
 `;
 
 const ColorHex = styled.span`
-  padding:10px;
-  display:block;
-  font-size:12px;
+  font-size: 10px;
+  font-weight: bold;
 `;
+
+const ColorTitle = styled(ColorBox)`
+  height: 100px;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const PrimaryNumber = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30px;
+`;
+
+export default () => (
+  <React.Fragment>
+    <p>Catho has some segments, below you can see the <strong>Candidates</strong> default color palette.</p>
+
+    <HowToImport importModules="Colors" />
+
+    <ColorPallete>
+      {
+        Object.entries(Colors)
+        .filter(([name]) => !['BLACK', 'WHITE'].includes(name))
+        .map(([name, value]) => (
+          <ColorList key={name}>
+            <ColorTitle colorHex={Colors[name]['500']}>
+              <p style={{ fontVariant: 'all-small-caps', fontWeight: 'bold' }}>{name}</p>
+
+              <PrimaryNumber>
+                <ColorNumber>500</ColorNumber>
+                <ColorHex>{Colors[name]['500']}</ColorHex>
+              </PrimaryNumber>
+            </ColorTitle>
+            {
+              Object.entries(value).map(([number, hex], index) => (
+                <ColorBox key={hex} grey={index < 4} colorHex={hex}>
+                  <ColorNumber>{number}</ColorNumber>
+                  <ColorHex>{hex}</ColorHex>
+
+                  <CopyToClipboard colorHex={hex}>
+                    <CodeToClipboard code={`Colors.${name}['${number}']`} color={index < 4 ? '#333333' : '#FFFFFF'} />
+                  </CopyToClipboard>
+                </ColorBox>
+              ))
+            }
+          </ColorList>
+        ))
+      }
+      <ColorList>
+        <ColorBox colorHex={Colors.BLACK}>
+          <ColorNumber>BLACK</ColorNumber>
+          <ColorHex>{Colors.BLACK}</ColorHex>
+
+          <CopyToClipboard colorHex={Colors.BLACK}>
+            <CodeToClipboard code="Colors.BLACK" color="#FFFFFF" />
+          </CopyToClipboard>
+        </ColorBox>
+        <ColorBox colorHex={Colors.WHITE} grey>
+          <ColorNumber>WHITE</ColorNumber>
+          <ColorHex>{Colors.WHITE}</ColorHex>
+
+          <CopyToClipboard colorHex={Colors.WHITE}>
+            <CodeToClipboard code="Colors.WHITE" color="#000000" />
+          </CopyToClipboard>
+        </ColorBox>
+      </ColorList>
+    </ColorPallete>
+
+    <Title>Code</Title>
+    <p>Some samples on how the Color object are structured</p>
+    <Highlight language="javascript" className="highlight">
+      {
+        [
+          'console.log(Colors.PRIMARY[\'200\']);',
+          '/*returns: #80ADD1;*/',
+          '\n',
+          'console.log(Colors.SECONDARY[\'600\'])',
+          '/*returns: #039BE5/*',
+          '\n',
+          'console.log(Colors.DANGER[\'400\'])',
+          '/*returns: #EF5350/*',
+          '\n',
+          'console.log(Colors.BLACK)',
+          '/*returns: #000000/*',
+          '\n',
+          'console.log(Colors.GREY[\'900\'])',
+          '/*returns: #263238/*',
+        ].join('\n')
+      }
+    </Highlight>
+  </React.Fragment>
+);

@@ -2,25 +2,25 @@ import Colors from '../Colors';
 
 const skins = {
   secondary: {
-    backgroundColor: Colors.PRIMARY.BLUE.PEACOCK,
-    textColor: Colors.NEUTRAL.GRAY.WHITE,
+    backgroundColor: Colors.PRIMARY['500'],
+    textColor: Colors.WHITE,
   },
   hollow: {
-    backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
-    borderColor: Colors.PRIMARY.BLUE.PEACOCK,
-    textColor: Colors.PRIMARY.BLUE.PEACOCK,
+    backgroundColor: Colors.WHITE,
+    borderColor: Colors.PRIMARY['500'],
+    textColor: Colors.PRIMARY['500'],
   },
   light: {
-    backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
-    textColor: Colors.PRIMARY.BLUE.PEACOCK,
+    backgroundColor: Colors.WHITE,
+    textColor: Colors.PRIMARY['500'],
   },
   link: {
-    backgroundColor: Colors.NEUTRAL.GRAY.WHITE,
-    textColor: Colors.PRIMARY.BLUE.PEACOCK,
+    backgroundColor: Colors.WHITE,
+    textColor: Colors.PRIMARY['500'],
   },
   default: {
-    backgroundColor: Colors.SECONDARY.YELLOW.TANGERINE,
-    textColor: Colors.NEUTRAL.GRAY.WHITE,
+    backgroundColor: Colors.SECONDARY['600'],
+    textColor: Colors.WHITE,
   },
 };
 

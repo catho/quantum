@@ -8,7 +8,7 @@ export default {
     spacing: '20px',
     loading: '60px',
   },
-  shadow: `0 2px 2px ${rgba(Colors.NEUTRAL.DARKERGRAY.BLACK, 0.1)}`,
+  shadow: `0 2px 2px ${rgba(Colors.BLACK, 0.1)}`,
   mixins: {
     transition: (property = 'all', timing = '0.2s', type = 'ease-in-out') =>
       `transition: ${property} ${timing} ${type}`,

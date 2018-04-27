@@ -12,24 +12,24 @@ const Select = styled.select`
   width: 100%;
   height: ${theme.sizes.fieldHeight};
   padding: 10px 28px 10px 10px;
-  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITE};
-  border: solid 1px ${ColorPalette.NEUTRAL.DARKERGRAY.WARMGREY};
+  background-color: ${ColorPalette.WHITE};
+  border: solid 1px ${ColorPalette.GREY['900']};
   border-radius: ${theme.sizes.radius};
   appearance: none;
   cursor: pointer;
 
   ${props => props.error && `
-    border-color: ${ColorPalette.PRIMARY.PINK.LIPSTICK};
+    border-color: ${ColorPalette.DANGER['400']};
   `}
 
   &:focus {
-    border-color: ${ColorPalette.PRIMARY.BLUE.PEACOCK};
+    border-color: ${ColorPalette.PRIMARY['500']};
     outline: 0;
   }
 `;
 
 const Icon = styled(IconArrowDown)`
-  color: ${ColorPalette.NEUTRAL.DARKERGRAY.WARMGREY};
+  color: ${ColorPalette.GREY['900']};
   font-size: 1.5em;
   pointer-events: none;
   margin-left: -30px;
