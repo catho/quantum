@@ -6,11 +6,11 @@ class ButtonColor {
     unselected,
     unselectedBorder = unselected,
     unselectedTextColor,
-    unselectedFontWeight,
+    unselectedFontWeight = theme.font.weight,
     selected,
     selectedBorder = selected,
     selectedTextColor,
-    selectedFontWeight,
+    selectedFontWeight = theme.font.weight,
     disabled,
     disabledBorder = disabled,
     disabledTextColor,
@@ -58,6 +58,29 @@ class ButtonColor {
   }
 }
 
+class DefaultButton extends ButtonColor {
+  constructor({
+    unselected,
+    unselectedBorder = unselected,
+    selected,
+    selectedBorder = selected,
+    disabled,
+    disabledBorder = disabled,
+  }) {
+    super({
+      unselected,
+      unselectedBorder,
+      unselectedTextColor: Colors.WHITE,
+      selected,
+      selectedBorder,
+      selectedTextColor: Colors.WHITE,
+      disabled,
+      disabledBorder,
+      disabledTextColor: Colors.WHITE,
+    });
+  }
+}
+
 const skins = {
   secondary: {
     backgroundColor: Colors.PRIMARY['500'],
@@ -76,16 +99,10 @@ const skins = {
     backgroundColor: Colors.WHITE,
     textColor: Colors.PRIMARY['500'],
   },
-  default: new ButtonColor({
+  default: new DefaultButton({
     unselected: Colors.SECONDARY['500'],
-    unselectedTextColor: Colors.WHITE,
-    unselectedFontWeight: 'bold',
     selected: Colors.SECONDARY['600'],
-    selectedTextColor: Colors.WHITE,
-    selectedFontWeight: 'bold',
     disabled: Colors.SECONDARY['200'],
-    disabledTextColor: Colors.WHITE,
-    disabledFontWeight: 'bold',
   }),
 };
 
