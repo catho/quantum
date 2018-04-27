@@ -12,12 +12,12 @@ const StyledButton = styled.button`
   border-radius: ${theme.sizes.radius};
   cursor: pointer;
   font-size: inherit;
-  font-weight: 500;
-  height: ${theme.sizes.fieldHeight};
-  padding: 0 30px;
+  font-weight: bold;
+  padding: 17px 30px;
   text-align: center;
   text-decoration: ${props => (props.link ? 'underline' : 'none')};
 
+  ${theme.mixins.shadow()};
   ${theme.mixins.transition()};
 
   ${props => props.full && `
@@ -66,20 +66,18 @@ const Button = ({ children, ...rest }) => <StyledButton {...rest}> { children } 
 
 Button.defaultProps = {
   center: false,
-  children: 'Catho',
   disabled: false,
   full: false,
-  onClick: () => {},
   skin: 'default',
   type: 'button',
+  children: 'Catho',
+  onClick: () => {},
 };
 
 Button.propTypes = {
   center: PropTypes.bool,
-  children: PropTypes.node,
   disabled: PropTypes.bool,
   full: PropTypes.bool,
-  onClick: PropTypes.func,
   skin: PropTypes.oneOf([
     'primary',
     'secondary',
@@ -93,6 +91,8 @@ Button.propTypes = {
     'reset',
     'submit',
   ]),
+  children: PropTypes.node,
+  onClick: PropTypes.func,
 };
 
 export default Button;
