@@ -2,19 +2,19 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <div
-  className="sc-bdVaJa cWaSLh"
+  className="sc-bdVaJa iBOKBB"
 >
   <section
-    className="sc-bwzfXH jskcIb"
+    className="sc-bwzfXH cWijVe"
   >
     <span
-      className="sc-htpNat dHQVFX"
+      className="sc-htpNat vKfUr"
       onClick={[Function]}
     >
       x
     </span>
     <h2
-      className="sc-bxivhb kIGVRW"
+      className="sc-bxivhb klYylt"
     >
       Modal Example
     </h2>

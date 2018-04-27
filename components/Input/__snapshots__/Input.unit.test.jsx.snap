@@ -6,7 +6,7 @@ exports[`Input component  should match the snapshot 1`] = `
 >
   
   <input
-    className="sc-bxivhb cDkyWh"
+    className="sc-bxivhb gOAfWE"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -33,7 +33,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
      
   </label>
   <input
-    className="sc-bxivhb cDkyWh"
+    className="sc-bxivhb gOAfWE"
     defaultValue="foo"
     id="input-with-label"
     maxLength=""
@@ -53,7 +53,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 >
   
   <input
-    className="sc-bxivhb ezFnNS"
+    className="sc-bxivhb hKqvQD"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -64,7 +64,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     type="text"
   />
   <div
-    className="sc-bdVaJa fIlZBq"
+    className="sc-bdVaJa bhyWYM"
   >
     Error message
   </div>
