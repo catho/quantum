@@ -1,8 +1,8 @@
 before_script:
   - cp .env.example .env
-  - yarn install
   - whoami
   - which yarn
+  - yarn install
 
 cache:
   paths:
