@@ -2,6 +2,9 @@ import { rgba } from 'polished';
 import Colors from './components/Colors';
 
 export default {
+  font: {
+    weight: 500,
+  },
   sizes: {
     radius: '1px',
     fieldHeight: '40px',

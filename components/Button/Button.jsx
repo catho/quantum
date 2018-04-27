@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { darken } from 'polished';
 
-import Colors from '../Colors';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../../theme';
 import skins from './skins';
@@ -30,28 +28,29 @@ const StyledButton = styled.button`
     margin-right: auto;
   `}
 
-  ${props => props.disabled && `
-    background-color: ${Colors.GREY['50']};
-    border: 1px solid ${Colors.GREY['50']};
-    box-shadow: none;
-    cursor: not-allowed;
-    text-color: ${Colors.GREY['900']};
-  `}
-
   ${(props) => {
     const skin = skins(props);
-    const borderColor = skin.borderColor || skin.backgroundColor;
 
-    return !props.disabled && `
-      background-color: ${skin.backgroundColor};
-      border: 1px solid ${borderColor};
-      color: ${skin.textColor};
+    const {
+      unselected,
+      selected,
+      disabled,
+    } = skin;
 
-      ${!props.link ? `&:active {
-        background: ${darken(0.05, skin.backgroundColor)};
-        border-color: ${darken(0.05, borderColor)};
-        color: ${darken(0.05, skin.textColor)};
-      }` : ''}
+    return `
+      background-color: ${props.disabled ? disabled.background : unselected.background};
+      border: 1px solid ${props.disabled ? disabled.border : unselected.border};
+      color: ${props.disabled ? disabled.color : unselected.color};
+      font-weight: ${props.disabled ? disabled.fontWeight : unselected.fontWeight};
+
+      ${props.disabled && 'opacity: 0.8;'}
+
+      ${!props.link && `&:active {
+
+        ${theme.mixins.shadow(2)};
+        background-color: ${selected.background};
+        border-color: ${selected.border};
+      }`}
     `;
   }}
 
