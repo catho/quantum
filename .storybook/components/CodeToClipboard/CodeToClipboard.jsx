@@ -26,8 +26,8 @@ const CopyCodeIco = styled.div`
 
 const IcoTooltip = styled.div`
   display: none;
-  margin:18px 10px 0 0;
-  color: #CCC;
+  margin: 18px 10px 0 0;
+  color: ${props => `${props.color}`};
 
   &:before {
     content: "${props => `${props.hasJustCopied ? props.success : props.tip[Math.floor(Math.random() * (props.tip.length - 0)) + 0]}`}";
@@ -62,7 +62,7 @@ class CodeToClipboard extends React.Component {
   }
 
   render() {
-    const { code } = this.props;
+    const { code, color } = this.props;
     const tips = [
       'I\'m lazy.',
       'Loved it, copy.',
@@ -80,6 +80,7 @@ class CodeToClipboard extends React.Component {
             tip={tips}
             hasJustCopied={this.state.hasJustCopied}
             success="Copied!"
+            color={color}
           />
         </Button>
       </AsideCopyToClipboard>
@@ -87,8 +88,13 @@ class CodeToClipboard extends React.Component {
   }
 }
 
+CodeToClipboard.defaultProps = {
+  color: '#CCC',
+};
+
 CodeToClipboard.propTypes = {
   code: PropTypes.string.isRequired,
+  color: PropTypes.string,
 };
 
 export default CodeToClipboard;
