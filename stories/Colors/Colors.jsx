@@ -11,29 +11,27 @@ export default () => (
   <React.Fragment>
     <p>Catho has some segments, below you can see the <strong>Candidates</strong> default color palette.</p>
 
-    <HowToImport importModules={'Colors'} />
+    <HowToImport importModules="Colors" />
 
     <ColorPallete>
       {
-        Object.keys(Colors).map(item => (
-          Object.keys(Colors[item]).map(child => (
-            <ColorList key={child}>
-              {
-                Object.entries(Colors[item][child]).map(([name, hex]) => (
-                  <ColorBox key={hex} colorGroup={child} colorHex={hex}>
-                    <CopyToClipboard text={hex}>
-                      <ColorMessage colorHex={hex}>
-                        Copy hex
-                      </ColorMessage>
-                    </CopyToClipboard>
+        Object.entries(Colors).map(([name, value]) => (
+          <ColorList key={name}>
+            {
+              Object.entries(value).map(([, hex]) => (
+                <ColorBox key={hex} colorHex={hex}>
+                  <CopyToClipboard text={hex}>
+                    <ColorMessage colorHex={hex}>
+                      Copy hex
+                    </ColorMessage>
+                  </CopyToClipboard>
 
-                    <ColorName>{name}</ColorName>
-                    <ColorHex>{hex}</ColorHex>
-                  </ColorBox>
-                ))
-              }
-            </ColorList>
-          ))
+                  <ColorName>{name}</ColorName>
+                  <ColorHex>{hex}</ColorHex>
+                </ColorBox>
+              ))
+            }
+          </ColorList>
         ))
       }
     </ColorPallete>
