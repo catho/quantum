@@ -18,7 +18,7 @@ exports[`Form component  should match the snapshot 1`] = `
        
     </label>
     <input
-      className="sc-bxivhb gOAfWE"
+      className="sc-bxivhb gFqLdh"
       defaultValue=""
       id=""
       maxLength=""
@@ -43,7 +43,7 @@ exports[`Form component  should match the snapshot 1`] = `
        
     </label>
     <input
-      className="sc-bxivhb gOAfWE"
+      className="sc-bxivhb gFqLdh"
       defaultValue=""
       id=""
       maxLength=""
@@ -68,7 +68,7 @@ exports[`Form component  should match the snapshot 1`] = `
        
     </label>
     <input
-      className="sc-bxivhb gOAfWE"
+      className="sc-bxivhb gFqLdh"
       defaultValue=""
       id=""
       maxLength=""
@@ -93,7 +93,7 @@ exports[`Form component  should match the snapshot 1`] = `
        
     </label>
     <input
-      className="sc-bxivhb gOAfWE"
+      className="sc-bxivhb gFqLdh"
       defaultValue=""
       id=""
       maxLength=""
@@ -118,7 +118,7 @@ exports[`Form component  should match the snapshot 1`] = `
        
     </label>
     <input
-      className="sc-bxivhb gOAfWE"
+      className="sc-bxivhb gFqLdh"
       defaultValue=""
       id=""
       maxLength=""
@@ -143,7 +143,7 @@ exports[`Form component  should match the snapshot 1`] = `
        
     </label>
     <input
-      className="sc-bxivhb gOAfWE"
+      className="sc-bxivhb gFqLdh"
       defaultValue=""
       id=""
       maxLength=""
@@ -169,7 +169,7 @@ exports[`Form component  should match the snapshot 1`] = `
        
     </label>
     <input
-      className="sc-bxivhb gOAfWE"
+      className="sc-bxivhb gFqLdh"
       defaultValue=""
       id=""
       maxLength="3"
@@ -183,7 +183,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="sc-ifAKCX tniiW"
+    className="sc-ifAKCX jSNXPi"
     disabled={false}
     onChange={[Function]}
     onClick={[Function]}
