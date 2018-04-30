@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from '../../.storybook/components/Title';
+import Colors from '../../components/Colors';
 
-const colors = {
-  'peacock-blue': '#005da4',
-  black: '#333',
-};
+const Font = styled.div`
+  font-family: Oxygen;
+`;
 
 const H = styled.span`
   font-size: ${props => props.size}px;
-  color: ${props => colors[props.color]};
+  color: ${Colors.GREY['900']};
 `;
 
 const Link = styled.a`
-  color: ${colors['peacock-blue']};
+  color: ${Colors.SECONDARY['500']};
 `;
 
 const P = styled.p`
@@ -59,8 +59,8 @@ const Li = styled.li`
 `;
 
 const Typography = () => (
-  <React.Fragment>
-    <p><strong>Introbook</strong> is the standard typeface for Catho on the web</p>
+  <Font>
+    <p><strong>Oxygen</strong> is the standard typeface for Catho on the web</p>
 
     <Title>Headings</Title>
 
@@ -68,23 +68,23 @@ const Typography = () => (
       <tbody>
         <Tr>
           <Td>h1 <Small>24px</Small></Td>
-          <td><H size="24" color="peacock-blue">Heading One</H></td>
+          <td><H size="24">Heading One</H></td>
         </Tr>
         <Tr>
           <Td>h2 <Small>22px</Small></Td>
-          <td><H size="22" color="peacock-blue">Heading Two</H></td>
+          <td><H size="22">Heading Two</H></td>
         </Tr>
         <Tr>
           <Td>h3 <Small>20px</Small></Td>
-          <td><H size="20" color="peacock-blue">Heading Three</H></td>
+          <td><H size="20">Heading Three</H></td>
         </Tr>
         <Tr>
           <Td>h4 <Small>18px</Small></Td>
-          <td><H size="18" color="peacock-blue">Heading Four</H></td>
+          <td><H size="18">Heading Four</H></td>
         </Tr>
         <Tr>
           <Td>h5 <Small>18px</Small></Td>
-          <td><H size="18" color="black">Heading Five</H></td>
+          <td><H size="18">Heading Five</H></td>
         </Tr>
       </tbody>
     </table>
@@ -135,7 +135,7 @@ const Typography = () => (
         </Tr>
       </tbody>
     </table>
-  </React.Fragment>
+  </Font>
 );
 
 export default Typography;
