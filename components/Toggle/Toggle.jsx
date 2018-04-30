@@ -21,7 +21,7 @@ const StyledLabel = styled(Label)`
   }
 
   &:before {
-    background: ${props => props.checked ? Colors.SECONDARY[100] : Colors.GREY['200']};
+    background: ${props => (props.checked ? Colors.SECONDARY[100] : Colors.GREY['200'])};
     border-radius: 10px;
     content: '';
     height: 16px;
@@ -33,9 +33,9 @@ const StyledLabel = styled(Label)`
   }
 
   &:after {
-    transform: ${props => props.checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)'};
-    background-color: ${props => props.checked ? Colors.SECONDARY[500] : Colors.WHITE};
-    border: 1px solid ${props => props.checked ? 'transparent' : Colors.GREY['300']};
+    transform: ${props => (props.checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)')};
+    background-color: ${props => (props.checked ? Colors.SECONDARY[500] : Colors.WHITE)};
+    border: 1px solid ${props => (props.checked ? 'transparent' : Colors.GREY['300'])};
     border-radius: 50%;
     box-sizing: border-box;
     content: '';

@@ -4,56 +4,52 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import theme from '../../theme';
 
-const Wrapper = styled.span`
-  background-color: ${Colors.WHITE};
-  border: 1px solid ${Colors.GREY[300]};
-  border-radius: 50%;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 500;
-  margin-right: 20px;
-  padding: 12px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  ${theme.mixins.transition()};
+const commonAttr = {
+  borderWidth: '3px',
+  width: '24px',
+  height: '24px',
+};
 
-  &:hover {
-    border: 1px solid ${Colors.SECONDARY[500]};
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  label {
-    cursor: pointer;
-    position: relative;
-  }
+const Wrapper = styled.div`
+  margin-right: 10px;
 `;
 
 const StyledInput = styled.input`
+  position: relative;
+  top: 6px;
+  width: ${commonAttr.width};
+  height: ${commonAttr.height};
   border-radius: 50%;
-  appearance: none;
-  background-color: ${Colors.WHITE};
   cursor: pointer;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  appearance: none;
+  border: ${commonAttr.borderWidth} solid ${Colors.WHITE};
+  margin-right: 5px;
+
   ${theme.mixins.transition()};
 
+  &:before {
+    display: inline-block;
+    border: 1px solid ${Colors.GREY[300]};
+    content: ' ';
+    width: ${commonAttr.width};
+    height: ${commonAttr.height};
+    border-radius: 50%;
+    margin-left: -${commonAttr.borderWidth};
+    margin-top: -${commonAttr.borderWidth};
+  }
+
+  &:hover:before {
+    border: 1px solid ${Colors.SECONDARY[500]};
+  }
+
   &:checked {
-    border: 3px solid ${Colors.WHITE};
     background-color: ${Colors.SECONDARY[500]};
     ${theme.mixins.transition()};
+  }
 
-    ~ label {
-      color: ${Colors.WHITE};
-      ${theme.mixins.transition()};
-    }
+  &:checked:before {
+    border: 1px solid ${Colors.SECONDARY[500]};
+  }
 `;
 
 const Radio = ({
@@ -71,6 +67,7 @@ const Radio = ({
       name={name}
       onChange={onChange}
     />
+    <label htmlFor={id}>{label}</label>
   </Wrapper>
 );
 

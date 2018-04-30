@@ -13,7 +13,6 @@ const Group = styled.div`
 
   ${props => props.inline && `
     align-items: unset;
-    display: inline-block;
     flex-direction: unset;
   `}
 `;
