@@ -20,6 +20,11 @@ storiesOf('3. Forms', module)
   .add('Input', () => (
     <AutoExample
       component={Input}
+      componentProps={{
+        id: 'example',
+        name: 'example',
+        label: 'Example',
+      }}
       additionalTabs={tabExample}
     />
   ));
