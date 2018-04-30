@@ -10,7 +10,7 @@ import theme from '../../theme';
 
 const sharedStyle = css`
   font-size: 12px;
-  transform: translateY(-20px);
+  transform: translateY(-30px);
 `;
 
 const StyledLabel = styled(Label)`
@@ -18,7 +18,7 @@ const StyledLabel = styled(Label)`
   font-size: 16px;
   left: 0;
   position: absolute;
-  top: 0;
+  bottom: 20px;
   ${theme.mixins.transition()};
 
   ${props => props.withValue && `
@@ -36,13 +36,14 @@ const StyledInput = styled.input`
   background-color: transparent;
   border: none;
   border-bottom: 1px solid ${Colors.GREY['300']};
-  color: ${Colors.GREY['900']};
-  height: 20px;
-  width: 100%;
-  padding: 0px 3px 5px;
-  font-size: 16px;
   box-sizing: border-box;
+  color: ${Colors.GREY['900']};
+  font-size: 16px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 0px 3px;
   outline: none;
+  width: 100%;
 
   &::-webkit-calendar-picker-indicator {
     display: none;
