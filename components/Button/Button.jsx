@@ -41,14 +41,12 @@ const StyledButton = styled.button`
       color: ${props.disabled ? disabled.color : unselected.color};
       font-weight: ${props.disabled ? disabled.fontWeight : unselected.fontWeight};
 
-      ${props.disabled && 'opacity: 0.8;'}
-
-      ${!props.link && `&:active {
-
+      &:active {
         ${theme.mixins.shadow(2)};
         background-color: ${selected.background};
         border-color: ${selected.border};
-      }`}
+        color: ${selected.color};
+      }
     `;
   }}
 
@@ -76,12 +74,12 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   full: PropTypes.bool,
   skin: PropTypes.oneOf([
+    'default',
     'primary',
     'secondary',
-    'hollow',
-    'light',
-    'link',
-    'default',
+    'action',
+    'cancel',
+    'modal',
   ]),
   type: PropTypes.oneOf([
     'button',
