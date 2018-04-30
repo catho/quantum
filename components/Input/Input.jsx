@@ -111,7 +111,15 @@ class Input extends React.Component {
             )
           }
         />
-        { label && <StyledLabel htmlFor={id} error={error} withValue={this.state.withValue}> {label} </StyledLabel> }
+        { label &&
+          <StyledLabel
+            htmlFor={id}
+            error={error}
+            withValue={this.state.withValue}
+          >
+            {label}
+          </StyledLabel>
+        }
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </FieldGroup>
     );
