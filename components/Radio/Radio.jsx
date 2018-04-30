@@ -59,27 +59,34 @@ const StyledLabel = styled(Label)`
   cursor: inherit;
 `;
 
-const Radio = ({
-  id,
-  value,
-  name,
-  label,
-  onChange,
-}) => (
-  <Wrapper>
-    <StyledInput
-      type="radio"
-      id={id}
-      value={value}
-      name={name}
-      onChange={onChange}
-    />
-    <StyledLabel htmlFor={id}>{label}</StyledLabel>
-  </Wrapper>
-);
+class Radio extends React.Component {
+  handleChange = (e) => {
+    const {onChange} = this.props;
+
+    onChange(e, {checked: e.target.value});
+  }
+
+  render(){
+    const {id, checked, disabled, value, name, label, onChange} = this.props;
+    return (
+      <Wrapper>
+        <StyledInput
+          id={id}
+          name={name}
+          type="radio"
+          value={value}
+          onChange={this.handleChange}
+        />
+        <StyledLabel htmlFor={id}>{label}</StyledLabel>
+      </Wrapper>
+    )
+  }  
+};
 
 Radio.defaultProps = {
-  onChange: null,
+  onChange: () => {},
+  checked: false,
+  disabled: false,
 };
 
 Radio.propTypes = {
@@ -87,6 +94,8 @@ Radio.propTypes = {
   id: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  checked: PropTypes.bool,
+  disabled: PropTypes.bool,
   /** Label that will be displayed on browser */
   label: PropTypes.string.isRequired,
   /** On change event handle function */

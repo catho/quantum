@@ -18,10 +18,33 @@ const Group = styled(FieldGroup)`
   `}
 `;
 
+class RadioGroup extends React.Component {
+  constructor(props){
+    super();
+    this.state = {}
+  }
+
+  handleChange = (e,  value) => this.setState(value);
+
+  render(){
+    const {children} = this.props;
+    return (
+      <Group>
+        {
+          children.map(({ type: Component, props }, index) => {
+            return(
+              <Component key={index} {...props} onChange={this.handleChange}/>
+            )
+          })
+        }
+      </Group>
+    )
+  }
+}
+
 /**
  * Group for Radio components.
  */
-const RadioGroup = props => <Group {...props} />;
 
 RadioGroup.propTypes = {
   children: PropTypes.oneOfType([
