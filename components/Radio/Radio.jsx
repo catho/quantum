@@ -3,54 +3,60 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import theme from '../../theme';
+import { Label } from '../shared';
 
-const Wrapper = styled.span`
-  background-color: ${Colors.NEUTRAL.GRAY.WHITE};
-  border: 1px solid ${Colors.PRIMARY.BLUE.PEACOCK};
-  border-radius: ${theme.sizes.radius};
-  box-sizing: border-box;
+const commonAttr = {
+  borderWidth: '3px',
+  width: '24px',
+  height: '24px',
+};
+
+const Wrapper = styled.div`
+  margin-right: 10px;
   cursor: pointer;
-  display: inline-block;
-  font-weight: 500;
-  height: ${theme.sizes.fieldHeight};
-  margin-right: 20px;
-  padding: 10px 30px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  ${theme.mixins.transition()};
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  label {
-    color: ${Colors.PRIMARY.BLUE.PEACOCK};
-    cursor: pointer;
-    position: relative;
-  }
 `;
 
 const StyledInput = styled.input`
+  position: relative;
+  top: 6px;
+  width: ${commonAttr.width};
+  height: ${commonAttr.height};
+  border-radius: 50%;
+  cursor: inherit;
   appearance: none;
-  background-color: ${Colors.NEUTRAL.GRAY.WHITE};
-  cursor: pointer;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  border: ${commonAttr.borderWidth} solid ${Colors.WHITE};
+  margin-right: 5px;
+
   ${theme.mixins.transition()};
 
-  &:checked {
-    background-color: ${Colors.PRIMARY.BLUE.PEACOCK};
-    ${theme.mixins.transition()};
+  &:before {
+    display: inline-block;
+    border: 1px solid ${Colors.GREY[300]};
+    content: ' ';
+    width: ${commonAttr.width};
+    height: ${commonAttr.height};
+    border-radius: 50%;
+    margin-left: -${commonAttr.borderWidth};
+    margin-top: -${commonAttr.borderWidth};
+  }
 
-    ~ label {
-      color: ${Colors.NEUTRAL.GRAY.WHITE};
-      ${theme.mixins.transition()};
-    }
+  &:hover:before {
+    border: 1px solid ${Colors.SECONDARY[500]};
+  }
+
+  &:checked {
+    background-color: ${Colors.SECONDARY[500]};
+    ${theme.mixins.transition()};
+  }
+
+  &:checked:before {
+    border: 1px solid ${Colors.SECONDARY[500]};
+  }
+`;
+
+const StyledLabel = styled(Label)`
+  display: inline-block;
+  cursor: inherit;
 `;
 
 const Radio = ({
@@ -68,9 +74,7 @@ const Radio = ({
       name={name}
       onChange={onChange}
     />
-    <label htmlFor={id}>
-      {label}
-    </label>
+    <StyledLabel htmlFor={id}>{label}</StyledLabel>
   </Wrapper>
 );
 

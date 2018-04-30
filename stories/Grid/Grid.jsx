@@ -24,8 +24,8 @@ const StyledRow = styled(Row)`
 `;
 
 const StyledCol = styled(Col)`
-  background-color: ${ColorPalette.NEUTRAL.GRAY.WHITETWO};
-  border: 1px solid ${ColorPalette.NEUTRAL.GRAY.GREYISH};
+  background-color: ${ColorPalette.GREY['100']};
+  border: 1px solid ${ColorPalette.GREY['200']};
   font-size: 14px;
   padding-bottom: 10px;
   padding-top: 10px;

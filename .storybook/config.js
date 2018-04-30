@@ -13,11 +13,9 @@ setOptions({
 
 addDecorator(Frame);
 
-const reqComponents = require.context('../stories', true, /.story.jsx?$/);
-const reqStories = require.context('../components', true, /.story.jsx?$/);
+const reqStories = require.context('../stories', true, /.story.jsx?$/);
 
 function loadStories() {
-  reqComponents.keys().forEach((filename) => reqComponents(filename));
   reqStories.keys().forEach((filename) => reqStories(filename));
 }
 

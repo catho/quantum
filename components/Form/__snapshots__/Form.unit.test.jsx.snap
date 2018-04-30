@@ -7,18 +7,10 @@ exports[`Form component  should match the snapshot 1`] = `
   onValidSubmit={[MockFunction]}
 >
   <div
-    className="sc-htpNat QOKog"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
-    <label
-      className="sc-bwzfXH eQhPVJ"
-      htmlFor=""
-    >
-       
-      required
-       
-    </label>
     <input
-      className="sc-bxivhb cDkyWh"
+      className="sc-ifAKCX lhnZnG"
       defaultValue=""
       id=""
       maxLength=""
@@ -26,24 +18,21 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      placeholder=""
       type="text"
     />
+    <label
+      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+      required
+    </label>
     
   </div>
   <div
-    className="sc-htpNat QOKog"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
-    <label
-      className="sc-bwzfXH eQhPVJ"
-      htmlFor=""
-    >
-       
-      CPF
-       
-    </label>
     <input
-      className="sc-bxivhb cDkyWh"
+      className="sc-ifAKCX lhnZnG"
       defaultValue=""
       id=""
       maxLength=""
@@ -51,24 +40,21 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      placeholder=""
       type="text"
     />
+    <label
+      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+      CPF
+    </label>
     
   </div>
   <div
-    className="sc-htpNat QOKog"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
-    <label
-      className="sc-bwzfXH eQhPVJ"
-      htmlFor=""
-    >
-       
-      CEP
-       
-    </label>
     <input
-      className="sc-bxivhb cDkyWh"
+      className="sc-ifAKCX lhnZnG"
       defaultValue=""
       id=""
       maxLength=""
@@ -76,24 +62,21 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      placeholder=""
       type="text"
     />
+    <label
+      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+      CEP
+    </label>
     
   </div>
   <div
-    className="sc-htpNat QOKog"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
-    <label
-      className="sc-bwzfXH eQhPVJ"
-      htmlFor=""
-    >
-       
-      Birthday
-       
-    </label>
     <input
-      className="sc-bxivhb cDkyWh"
+      className="sc-ifAKCX lhnZnG"
       defaultValue=""
       id=""
       maxLength=""
@@ -101,24 +84,21 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      placeholder=""
       type="text"
     />
+    <label
+      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+      Birthday
+    </label>
     
   </div>
   <div
-    className="sc-htpNat QOKog"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
-    <label
-      className="sc-bwzfXH eQhPVJ"
-      htmlFor=""
-    >
-       
-      E-mail
-       
-    </label>
     <input
-      className="sc-bxivhb cDkyWh"
+      className="sc-ifAKCX lhnZnG"
       defaultValue=""
       id=""
       maxLength=""
@@ -126,24 +106,21 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      placeholder=""
       type="text"
     />
+    <label
+      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+      E-mail
+    </label>
     
   </div>
   <div
-    className="sc-htpNat QOKog"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
-    <label
-      className="sc-bwzfXH eQhPVJ"
-      htmlFor=""
-    >
-       
-      Address
-       
-    </label>
     <input
-      className="sc-bxivhb cDkyWh"
+      className="sc-ifAKCX lhnZnG"
       defaultValue=""
       id=""
       maxLength=""
@@ -152,24 +129,21 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      placeholder=""
       type="text"
     />
+    <label
+      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+      Address
+    </label>
     
   </div>
   <div
-    className="sc-htpNat QOKog"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
-    <label
-      className="sc-bwzfXH eQhPVJ"
-      htmlFor=""
-    >
-       
-      Country
-       
-    </label>
     <input
-      className="sc-bxivhb cDkyWh"
+      className="sc-ifAKCX lhnZnG"
       defaultValue=""
       id=""
       maxLength="3"
@@ -177,13 +151,18 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      placeholder=""
       type="text"
     />
+    <label
+      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      htmlFor=""
+    >
+      Country
+    </label>
     
   </div>
   <button
-    className="sc-ifAKCX cjPEal"
+    className="sc-bZQynM jdyafo"
     disabled={false}
     onChange={[Function]}
     onClick={[Function]}

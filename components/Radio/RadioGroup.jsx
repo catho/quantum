@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { FieldGroup } from '../shared';
 
-const Group = styled.div`
+const Group = styled(FieldGroup)`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,6 @@ const Group = styled.div`
 
   ${props => props.inline && `
     align-items: unset;
-    display: inline-block;
     flex-direction: unset;
   `}
 `;

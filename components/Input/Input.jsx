@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import React from 'react';
 import Masked from 'react-text-mask';
 import InputTypes from './InputTypes';
@@ -8,16 +8,38 @@ import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 import theme from '../../theme';
 
-/** A text field component to get user text data */
-const StyledInput = styled.input`
+const sharedStyle = css`
+  font-size: 12px;
+  transform: translateY(-20px);
+`;
+
+const StyledLabel = styled(Label)`
+  cursor: text;
+  font-size: 16px;
+  left: 0;
+  position: absolute;
+  top: 0;
   ${theme.mixins.transition()};
 
-  border: 1px solid ${Colors.NEUTRAL.DARKERGRAY.WARMGREY};
-  border-radius: ${theme.sizes.radius};
-  height: ${theme.sizes.fieldHeight};
+  ${props => props.withValue && `
+    ${sharedStyle}
+  `}
+
+  ${props => props.error && `
+    color: ${Colors.DANGER['500']};
+  `}
+`;
+
+const StyledInput = styled.input`
+  ${theme.mixins.transition()};
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid ${Colors.GREY['300']};
+  color: ${Colors.GREY['900']};
+  height: 20px;
   width: 100%;
-  padding: 0 10px;
-  font-size: 14px;
+  padding: 0px 3px 5px;
+  font-size: 16px;
   box-sizing: border-box;
   outline: none;
 
@@ -26,14 +48,24 @@ const StyledInput = styled.input`
   }
 
   &:focus {
-    border-color: ${Colors.PRIMARY.BLUE.PEACOCK};
+    border-color: ${Colors.SECONDARY['500']};
   }
 
   ${props => props.error && `
-    border-color: ${Colors.SECONDARY.PINK.LIPSTICK};
+    border-color: ${Colors.DANGER['500']};
   `}
+
+  &:focus + ${StyledLabel} {
+    color: ${Colors.SECONDARY['500']};
+    ${sharedStyle}
+  }
 `;
 
+const StyledFieldGroup = styled(FieldGroup)`
+  margin-top: 40px;
+`;
+
+/** A text field component to get user text data */
 class Input extends React.Component {
   static CEP = InputTypes.CEP;
   static CNPJ = InputTypes.CNPJ;
@@ -41,7 +73,19 @@ class Input extends React.Component {
   static Date = InputTypes.Date;
   static Phone = InputTypes.Phone;
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      withValue: false,
+    };
+  }
+
   onChange = (e) => {
+    this.setState({
+      withValue: !!e.target.value,
+    });
+
     this.props.onChange(e, { value: e.target.value });
   }
 
@@ -55,8 +99,7 @@ class Input extends React.Component {
     } = this.props;
 
     return (
-      <FieldGroup>
-        { label && <Label htmlFor={id}> {label} </Label> }
+      <StyledFieldGroup>
         <Masked
           {...rest}
           id={id}
@@ -72,9 +115,17 @@ class Input extends React.Component {
             )
           }
         />
-
+        { label &&
+          <StyledLabel
+            htmlFor={id}
+            error={error}
+            withValue={this.state.withValue}
+          >
+            {label}
+          </StyledLabel>
+        }
         {error && <ErrorMessage>{error}</ErrorMessage>}
-      </FieldGroup>
+      </StyledFieldGroup>
     );
   }
 }
@@ -88,7 +139,6 @@ Input.defaultProps = {
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
-  placeholder: '',
   type: 'text',
   value: '',
 };
@@ -102,7 +152,6 @@ Input.propTypes = {
   label: PropTypes.string,
   /** Set a text mask that filter user input */
   maxLength: PropTypes.string,
-  placeholder: PropTypes.string,
   type: PropTypes.oneOf([
     'email',
     'text',

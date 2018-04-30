@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio component Should match the snapshot 1`] = `
-<span
-  className="sc-bwzfXH ktIcDK"
+<div
+  className="sc-ifAKCX gEELtZ"
 >
   <input
-    className="sc-htpNat eYsVPI"
+    className="sc-EHOje buYNkI"
     id="radio"
     name="radio"
     onChange={[MockFunction]}
@@ -13,9 +13,10 @@ exports[`Radio component Should match the snapshot 1`] = `
     value="1"
   />
   <label
+    className="sc-bZQynM gHbqLI sc-bwzfXH eQhPVJ"
     htmlFor="radio"
   >
     Hello
   </label>
-</span>
+</div>
 `;

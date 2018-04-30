@@ -2,7 +2,7 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="sc-htpNat QOKog"
+  className="sc-htpNat jDKbhD"
 >
   
   <input
@@ -19,7 +19,7 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="sc-htpNat QOKog"
+  className="sc-htpNat jDKbhD"
 >
   <label
     className="sc-bwzfXH eQhPVJ"
@@ -43,7 +43,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="sc-htpNat QOKog"
+  className="sc-htpNat jDKbhD"
 >
   
   <input
@@ -55,7 +55,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     value={0}
   />
   <div
-    className="sc-bdVaJa fIlZBq"
+    className="sc-bdVaJa kKTvpA"
   >
     Error message
   </div>
