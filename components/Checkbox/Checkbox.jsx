@@ -7,12 +7,12 @@ import { Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 
 const getColors = ({ disabled, checked }) => {
-  let bgColor = checked ? Colors.SECONDARY['500'] : 'none';
+  let bgColor = checked ? Colors.SECONDARY['500'] : Colors.WHITE;
   let borderColor = checked ? Colors.SECONDARY['500'] : Colors.GREY['300'];
 
   if (disabled) {
     borderColor = Colors.GREY['100'];
-    bgColor = 'none';
+    bgColor = Colors.WHITE;
   }
 
   return `
