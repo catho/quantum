@@ -7,19 +7,6 @@ import theme from '../../theme';
 
 const StyledInput = styled.input`
   display: none;
-
-  &:checked {
-    & + ${Label} {
-      &:before {
-        background: ${Colors.PRIMARY['300']};
-      }
-
-      &:after {
-        background-color: ${Colors.PRIMARY['500']};
-        transform: translateX(20px) translateY(-50%);
-      }
-    }
-  }
 `;
 
 const StyledLabel = styled(Label)`
@@ -34,7 +21,7 @@ const StyledLabel = styled(Label)`
   }
 
   &:before {
-    background: ${Colors.GREY['900']};
+    background: ${props => props.checked ? Colors.SECONDARY[100] : Colors.GREY['200']};
     border-radius: 10px;
     content: '';
     height: 16px;
@@ -46,17 +33,24 @@ const StyledLabel = styled(Label)`
   }
 
   &:after {
-    background-color: ${Colors.GREY['800']};
+    transform: ${props => props.checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)'};
+    background-color: ${props => props.checked ? Colors.SECONDARY[500] : Colors.WHITE};
+    border: 1px solid ${props => props.checked ? 'transparent' : Colors.GREY['300']};
     border-radius: 50%;
     box-sizing: border-box;
     content: '';
     height: 24px;
     position: absolute;
     right: 20px;
-    transform: translateY(-50%);
     top: 50%;
     width: 24px;
   }
+
+  &:hover:after{
+    background-color: ${Colors.SECONDARY[500]};
+    border: 1px solid transparent;
+  }
+
 `;
 
 class Toggle extends React.Component {
@@ -83,7 +77,7 @@ class Toggle extends React.Component {
           onClick={this.handleClick}
           onFocus={onFocus}
         />
-        <StyledLabel htmlFor={id}>{label}</StyledLabel>
+        <StyledLabel htmlFor={id} checked={checked}>{label}</StyledLabel>
       </div>
     );
   }
