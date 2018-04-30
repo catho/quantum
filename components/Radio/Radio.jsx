@@ -6,45 +6,48 @@ import theme from '../../theme';
 
 const Wrapper = styled.span`
   background-color: ${Colors.WHITE};
-  border: 1px solid ${Colors.PRIMARY['500']};
-  border-radius: ${theme.sizes.radius};
+  border: 1px solid ${Colors.GREY[300]};
+  border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  height: ${theme.sizes.fieldHeight};
   margin-right: 20px;
-  padding: 10px 30px;
+  padding: 12px;
   position: relative;
   overflow: hidden;
   text-align: center;
   ${theme.mixins.transition()};
+
+  &:hover {
+    border: 1px solid ${Colors.SECONDARY[500]};
+  }
 
   &:last-child {
     margin-right: 0;
   }
 
   label {
-    color: ${Colors.PRIMARY['500']};
     cursor: pointer;
     position: relative;
   }
 `;
 
 const StyledInput = styled.input`
+  border-radius: 50%;
   appearance: none;
   background-color: ${Colors.WHITE};
   cursor: pointer;
   height: 100%;
-  left: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   ${theme.mixins.transition()};
 
   &:checked {
-    background-color: ${Colors.PRIMARY['500']};
+    border: 3px solid ${Colors.WHITE};
+    background-color: ${Colors.SECONDARY[500]};
     ${theme.mixins.transition()};
 
     ~ label {
@@ -68,9 +71,6 @@ const Radio = ({
       name={name}
       onChange={onChange}
     />
-    <label htmlFor={id}>
-      {label}
-    </label>
   </Wrapper>
 );
 
