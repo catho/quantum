@@ -10,7 +10,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="sc-htpNat jDKbhD"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
+      className="sc-ifAKCX biAHY"
       defaultValue=""
       id=""
       maxLength=""
@@ -21,7 +21,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       required
@@ -32,7 +32,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="sc-htpNat jDKbhD"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
+      className="sc-ifAKCX biAHY"
       defaultValue=""
       id=""
       maxLength=""
@@ -43,7 +43,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       CPF
@@ -54,7 +54,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="sc-htpNat jDKbhD"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
+      className="sc-ifAKCX biAHY"
       defaultValue=""
       id=""
       maxLength=""
@@ -65,7 +65,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       CEP
@@ -76,7 +76,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="sc-htpNat jDKbhD"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
+      className="sc-ifAKCX biAHY"
       defaultValue=""
       id=""
       maxLength=""
@@ -87,7 +87,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Birthday
@@ -98,7 +98,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="sc-htpNat jDKbhD"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
+      className="sc-ifAKCX biAHY"
       defaultValue=""
       id=""
       maxLength=""
@@ -109,7 +109,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       E-mail
@@ -120,7 +120,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="sc-htpNat jDKbhD"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
+      className="sc-ifAKCX biAHY"
       defaultValue=""
       id=""
       maxLength=""
@@ -132,7 +132,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Address
@@ -143,7 +143,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="sc-htpNat jDKbhD"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
+      className="sc-ifAKCX biAHY"
       defaultValue=""
       id=""
       maxLength="3"
@@ -154,7 +154,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Country
