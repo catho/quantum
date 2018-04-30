@@ -6,7 +6,7 @@ exports[`Input component  should match the snapshot 1`] = `
 >
   
   <select
-    className="sc-bxivhb erTdKJ"
+    className="sc-bxivhb SQhGe"
     name="Dropdown"
     onBlur={[Function]}
     onChange={[Function]}

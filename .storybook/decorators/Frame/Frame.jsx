@@ -14,11 +14,7 @@ const Container = styled.div`
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
-
-  @font-face {
-    font-family: Introbook;
-    src: url('https://static.catho.com.br/vendor/webcomponents-font/intro/book/introBook.woff');
-  }
+  @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
   body {
     margin: 0;
