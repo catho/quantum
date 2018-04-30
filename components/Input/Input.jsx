@@ -30,7 +30,6 @@ const StyledLabel = styled(Label)`
   `}
 `;
 
-/** A text field component to get user text data */
 const StyledInput = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
@@ -62,6 +61,11 @@ const StyledInput = styled.input`
   }
 `;
 
+const StyledFieldGroup = styled(FieldGroup)`
+  margin-top: 40px;
+`;
+
+/** A text field component to get user text data */
 class Input extends React.Component {
   static CEP = InputTypes.CEP;
   static CNPJ = InputTypes.CNPJ;
@@ -95,7 +99,7 @@ class Input extends React.Component {
     } = this.props;
 
     return (
-      <FieldGroup>
+      <StyledFieldGroup>
         <Masked
           {...rest}
           id={id}
@@ -121,7 +125,7 @@ class Input extends React.Component {
           </StyledLabel>
         }
         {error && <ErrorMessage>{error}</ErrorMessage>}
-      </FieldGroup>
+      </StyledFieldGroup>
     );
   }
 }

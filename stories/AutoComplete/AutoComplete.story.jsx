@@ -15,6 +15,7 @@ storiesOf('3. Forms', module)
           'Mexico',
           'Usa',
         ],
+        label: 'Example',
       }}
     />
   ));
