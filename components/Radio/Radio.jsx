@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import theme from '../../theme';
+import { Label } from '../shared';
 
 const commonAttr = {
   borderWidth: '3px',
@@ -12,6 +13,7 @@ const commonAttr = {
 
 const Wrapper = styled.div`
   margin-right: 10px;
+  cursor: pointer;
 `;
 
 const StyledInput = styled.input`
@@ -20,7 +22,7 @@ const StyledInput = styled.input`
   width: ${commonAttr.width};
   height: ${commonAttr.height};
   border-radius: 50%;
-  cursor: pointer;
+  cursor: inherit;
   appearance: none;
   border: ${commonAttr.borderWidth} solid ${Colors.WHITE};
   margin-right: 5px;
@@ -52,6 +54,11 @@ const StyledInput = styled.input`
   }
 `;
 
+const StyledLabel = styled(Label)`
+  display: inline-block;
+  cursor: inherit;
+`;
+
 const Radio = ({
   id,
   value,
@@ -67,7 +74,7 @@ const Radio = ({
       name={name}
       onChange={onChange}
     />
-    <label htmlFor={id}>{label}</label>
+    <StyledLabel htmlFor={id}>{label}</StyledLabel>
   </Wrapper>
 );
 
