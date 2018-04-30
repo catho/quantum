@@ -4,7 +4,7 @@ exports[`Toggle component Should match the snapshot 1`] = `
 <div>
   <input
     checked={false}
-    className="sc-bwzfXH bpCXHK"
+    className="sc-bwzfXH eKeXgs"
     id="toggle"
     onBlur={[Function]}
     onClick={[Function]}
@@ -12,7 +12,8 @@ exports[`Toggle component Should match the snapshot 1`] = `
     type="checkbox"
   />
   <label
-    className="sc-htpNat hGjkYs sc-bdVaJa bMhKJi"
+    checked={false}
+    className="sc-htpNat hrGmOQ sc-bdVaJa bMhKJi"
     htmlFor="toggle"
   >
     Simple toggle
