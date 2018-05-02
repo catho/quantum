@@ -87,22 +87,6 @@ class Input extends React.Component {
   static Phone = InputTypes.Phone;
   static Password = InputTypes.Password;
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      withValue: !!props.value,
-    };
-  }
-
-  onChange = (e) => {
-    this.setState({
-      withValue: !!e.target.value,
-    });
-
-    this.props.onChange(e, { value: e.target.value });
-  }
-
   render() {
     const {
       id,
@@ -120,12 +104,13 @@ class Input extends React.Component {
           {...rest}
           id={id}
           mask={mask}
-          onChange={this.onChange}
+          onChange={e => onChange(e, { value: e.target.value })}
           passwordLink={passwordLink}
           render={
             (ref, props) => (
               <StyledInput
                 {...props}
+                value={props.defaultValue}
                 error={error}
                 innerRef={ref}
               />
@@ -136,7 +121,7 @@ class Input extends React.Component {
           <StyledLabel
             htmlFor={id}
             error={error}
-            withValue={this.state.withValue}
+            withValue={!!this.props.value}
           >
             {label}
           </StyledLabel>
