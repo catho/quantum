@@ -4,41 +4,29 @@ import styled from 'styled-components';
 import { FieldGroup } from '../shared';
 
 const Group = styled(FieldGroup)`
-  align-items: flex-start;
   display: flex;
-  flex-direction: column;
-
-  span {
-    margin-bottom: 20px;
-  }
-
-  ${props => props.inline && `
-    align-items: unset;
-    flex-direction: unset;
-  `}
+  flex-direction: ${props => (props.inline ? 'row' : 'column')};
 `;
 
 class RadioGroup extends React.Component {
-  constructor(props){
+  constructor() {
     super();
-    this.state = {}
+    this.state = {};
   }
 
-  handleChange = (e,  value) => this.setState(value);
+  handleChange = (e, value) => this.setState(value);
 
-  render(){
-    const {children} = this.props;
+  render() {
+    const { children, ...rest } = this.props;
+
     return (
-      <Group>
+      <Group {...rest}>
         {
-          children.map(({ type: Component, props }, index) => {
-            return(
-              <Component key={index} {...props} onChange={this.handleChange}/>
-            )
-          })
+          children.map(({ type: Component, props }) => (
+            <Component key={Component.displayName} {...props} onChange={this.handleChange} />))
         }
       </Group>
-    )
+    );
   }
 }
 
