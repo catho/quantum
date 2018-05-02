@@ -7,7 +7,7 @@ exports[`Form component  should match the snapshot 1`] = `
   onValidSubmit={[MockFunction]}
 >
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"
@@ -29,7 +29,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"
@@ -51,7 +51,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"
@@ -73,7 +73,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"
@@ -95,7 +95,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"
@@ -117,7 +117,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"
@@ -140,7 +140,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"
@@ -162,7 +162,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="sc-EHOje dfYIFf"
+    className="sc-bZQynM jdyafo"
     disabled={false}
     onChange={[Function]}
     onClick={[Function]}

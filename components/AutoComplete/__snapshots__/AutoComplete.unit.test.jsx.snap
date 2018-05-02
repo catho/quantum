@@ -3,7 +3,7 @@
 exports[`AutoComplete component  should match the snapshot 1`] = `
 Array [
   <div
-    className="sc-htpNat jDKbhD"
+    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
     <input
       className="sc-ifAKCX biAHY"

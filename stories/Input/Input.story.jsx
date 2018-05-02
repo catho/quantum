@@ -8,11 +8,11 @@ import Input from '../../components/Input';
 
 const tabExample = (
   <Tab title="Example">
-    <Example title="CEP" component={<Input.CEP style={{ width: '200px' }} placeholder="CEP" />} importModules="Input" />
-    <Example title="CNPJ" component={<Input.CNPJ style={{ width: '200px' }} />} importModules="Input" />
-    <Example title="CPF" component={<Input.CPF style={{ width: '200px' }} />} importModules="Input" />
-    <Example title="Date" component={<Input.Date style={{ width: '200px' }} />} importModules="Input" />
-    <Example title="Phone" component={<Input.Phone style={{ width: '200px' }} />} importModules="Input" />
+    <Example component={<Input.CEP label="CEP" style={{ width: '200px' }} />} />
+    <Example component={<Input.CNPJ label="CNPJ" style={{ width: '200px' }} />} />
+    <Example component={<Input.CPF label="CPF" style={{ width: '200px' }} />} />
+    <Example component={<Input.Date label="Date" style={{ width: '200px' }} />} />
+    <Example component={<Input.Phone label="Phone" style={{ width: '200px' }} />} />
   </Tab>
 );
 
