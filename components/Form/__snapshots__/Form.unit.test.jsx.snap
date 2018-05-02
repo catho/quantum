@@ -19,6 +19,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -42,6 +43,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -65,6 +67,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -88,6 +91,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -111,6 +115,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -135,6 +140,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -158,6 +164,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"

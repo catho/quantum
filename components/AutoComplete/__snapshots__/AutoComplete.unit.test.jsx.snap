@@ -15,6 +15,7 @@ Array [
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value="test"
     />
     
     
