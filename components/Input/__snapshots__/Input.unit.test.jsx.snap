@@ -47,6 +47,33 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 </div>
 `;
 
+exports[`Input component  with a passwordLink prop should match the snapshot 1`] = `
+<div
+  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
+>
+  <input
+    className="sc-EHOje jDVffv"
+    defaultValue="foo"
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    type="text"
+    value="foo"
+  />
+  
+  <a
+    className="sc-ifAKCX jOWiLq"
+    href="http://www.catho.com.br/"
+    title="Esqueceu a senha?"
+  >
+    Esqueceu a senha?
+  </a>
+  
+</div>
+`;
+
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
   className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
