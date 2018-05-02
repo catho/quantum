@@ -14,7 +14,9 @@ class RadioGroup extends React.Component {
     this.state = {};
   }
 
-  handleChange = (e, value) => this.setState(value);
+  handleChange = (e, value) => {
+    this.setState(value);
+  }
 
   render() {
     const { children, ...rest } = this.props;
@@ -22,8 +24,8 @@ class RadioGroup extends React.Component {
     return (
       <Group {...rest}>
         {
-          children.map(({ type: Component, props }) => (
-            <Component key={Component.displayName} {...props} onChange={this.handleChange} />))
+          React.Children.map(children, ({ type: Component, props }) => (
+            <Component key={Component.displayName} {...props} />))
         }
       </Group>
     );
