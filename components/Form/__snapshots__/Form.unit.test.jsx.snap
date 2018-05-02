@@ -7,10 +7,10 @@ exports[`Form component  should match the snapshot 1`] = `
   onValidSubmit={[MockFunction]}
 >
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX biAHY"
+      className="sc-EHOje bWoZqg"
       defaultValue=""
       id=""
       maxLength=""
@@ -21,18 +21,19 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       required
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX biAHY"
+      className="sc-EHOje bWoZqg"
       defaultValue=""
       id=""
       maxLength=""
@@ -43,18 +44,19 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       CPF
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX biAHY"
+      className="sc-EHOje bWoZqg"
       defaultValue=""
       id=""
       maxLength=""
@@ -65,18 +67,19 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       CEP
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX biAHY"
+      className="sc-EHOje bWoZqg"
       defaultValue=""
       id=""
       maxLength=""
@@ -87,18 +90,19 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Birthday
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX biAHY"
+      className="sc-EHOje bWoZqg"
       defaultValue=""
       id=""
       maxLength=""
@@ -109,18 +113,19 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       E-mail
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX biAHY"
+      className="sc-EHOje bWoZqg"
       defaultValue=""
       id=""
       maxLength=""
@@ -132,18 +137,19 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Address
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX biAHY"
+      className="sc-EHOje bWoZqg"
       defaultValue=""
       id=""
       maxLength="3"
@@ -154,15 +160,16 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Country
     </label>
     
+    
   </div>
   <button
-    className="sc-bZQynM jdyafo"
+    className="sc-gzVnrw bulXRb"
     disabled={false}
     onChange={[Function]}
     onClick={[Function]}

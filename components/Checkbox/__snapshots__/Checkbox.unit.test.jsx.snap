@@ -3,7 +3,7 @@
 exports[`Input component  should match the snapshot 1`] = `
 <div
   checked={false}
-  className="sc-ifAKCX kdLyCF sc-htpNat jDKbhD"
+  className="sc-ifAKCX kdLyCF sc-htpNat hxsEuH"
   disabled={false}
   onClick={[Function]}
 >

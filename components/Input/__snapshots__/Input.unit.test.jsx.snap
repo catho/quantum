@@ -2,10 +2,10 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
 >
   <input
-    className="sc-ifAKCX biAHY"
+    className="sc-EHOje bWoZqg"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -16,15 +16,16 @@ exports[`Input component  should match the snapshot 1`] = `
   />
   
   
+  
 </div>
 `;
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
 >
   <input
-    className="sc-ifAKCX biAHY"
+    className="sc-EHOje bWoZqg"
     defaultValue="foo"
     id="input-with-label"
     maxLength=""
@@ -34,21 +35,22 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     type="text"
   />
   <label
-    className="sc-bxivhb bZuARY sc-bwzfXH eQhPVJ"
+    className="sc-bxivhb iYvfZD sc-bwzfXH eQhPVJ"
     htmlFor="input-with-label"
   >
     Text label
   </label>
+  
   
 </div>
 `;
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
 >
   <input
-    className="sc-ifAKCX cRiTFM"
+    className="sc-EHOje dHkhVo"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -57,6 +59,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     onFocus={[Function]}
     type="text"
   />
+  
   
   <div
     className="sc-bdVaJa kKTvpA"
