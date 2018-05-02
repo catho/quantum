@@ -73,12 +73,13 @@ class Input extends React.Component {
   static CPF = InputTypes.CPF;
   static Date = InputTypes.Date;
   static Phone = InputTypes.Phone;
+  // static Password = InputTypes.Password;
 
   constructor(props) {
     super(props);
 
     this.state = {
-      withValue: false,
+      withValue: !!props.value,
     };
   }
 
@@ -96,6 +97,7 @@ class Input extends React.Component {
       label,
       error,
       mask,
+      onChange,
       ...rest
     } = this.props;
 
