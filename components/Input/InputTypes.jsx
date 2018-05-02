@@ -8,6 +8,7 @@ const types = {
   CPF: props => (<Input mask={masks.cpf} {...props} />),
   Date: props => (<Input mask={masks.date} {...props} />),
   Phone: props => (<Input mask={masks.phone} {...props} />),
+  Password: props => (<Input type="password" {...props} />),
 };
 
 types.CEP.displayName = 'Input.CEP';

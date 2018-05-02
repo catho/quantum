@@ -10,7 +10,7 @@ import theme from '../../theme';
 
 const sharedStyle = css`
   font-size: 12px;
-  transform: translateY(-30px);
+  transform: translateY(-22px);
 `;
 
 const StyledLabel = styled(Label)`
@@ -18,7 +18,7 @@ const StyledLabel = styled(Label)`
   font-size: 16px;
   left: 0;
   position: absolute;
-  bottom: 20px;
+  top: 6px;
   ${theme.mixins.transition()};
 
   ${props => props.withValue && `
@@ -30,6 +30,15 @@ const StyledLabel = styled(Label)`
   `}
 `;
 
+const StyledLink = styled.a`
+  color: ${Colors.SECONDARY['500']};
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 8px;
+`;
+
 const StyledInput = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
@@ -39,7 +48,6 @@ const StyledInput = styled.input`
   color: ${Colors.GREY['900']};
   font-size: 16px;
   height: 30px;
-  margin-bottom: 20px;
   padding: 0px 3px;
   outline: none;
   width: 100%;
@@ -73,7 +81,7 @@ class Input extends React.Component {
   static CPF = InputTypes.CPF;
   static Date = InputTypes.Date;
   static Phone = InputTypes.Phone;
-  // static Password = InputTypes.Password;
+  static Password = InputTypes.Password;
 
   constructor(props) {
     super(props);
@@ -98,6 +106,7 @@ class Input extends React.Component {
       error,
       mask,
       onChange,
+      passwordLink,
       ...rest
     } = this.props;
 
@@ -127,6 +136,10 @@ class Input extends React.Component {
             {label}
           </StyledLabel>
         }
+        {
+          passwordLink &&
+          <StyledLink href={passwordLink}>Esqueceu a senha?</StyledLink>
+        }
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </StyledFieldGroup>
     );
@@ -142,6 +155,7 @@ Input.defaultProps = {
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
+  passwordLink: '',
   type: 'text',
   value: '',
 };
@@ -161,6 +175,7 @@ Input.propTypes = {
     'tel',
     'number',
     'link',
+    'password',
   ]),
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
@@ -175,6 +190,7 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
+  passwordLink: PropTypes.string,
   value: PropTypes.string,
 };
 
