@@ -34,7 +34,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     type="text"
   />
   <label
-    className="sc-bxivhb hPVdPP sc-bwzfXH eQhPVJ"
+    className="sc-bxivhb bZuARY sc-bwzfXH eQhPVJ"
     htmlFor="input-with-label"
   >
     Text label
