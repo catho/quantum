@@ -52,6 +52,10 @@ const StyledInput = styled.input`
   outline: none;
   width: 100%;
 
+  ${props => props.passwordLink && `
+    padding-right: 140px;
+  `}
+
   &::-webkit-calendar-picker-indicator {
     display: none;
   }
@@ -117,6 +121,7 @@ class Input extends React.Component {
           id={id}
           mask={mask}
           onChange={this.onChange}
+          passwordLink={passwordLink}
           render={
             (ref, props) => (
               <StyledInput
@@ -138,7 +143,7 @@ class Input extends React.Component {
         }
         {
           passwordLink &&
-          <StyledLink href={passwordLink}>Esqueceu a senha?</StyledLink>
+          <StyledLink href={passwordLink} title="Esqueceu a senha?">Esqueceu a senha?</StyledLink>
         }
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </StyledFieldGroup>

@@ -13,7 +13,9 @@ const tabExample = (
     <Example component={<Input.CPF label="CPF" style={{ width: '200px' }} />} />
     <Example component={<Input.Date label="Date" style={{ width: '200px' }} />} />
     <Example component={<Input.Phone label="Phone" style={{ width: '200px' }} />} />
-    <Example component={<Input.Password label="Password" style={{ width: '200px' }} />} />
+    <div style={{ width: '200px' }}>
+      <Example component={<Input.Password id="password" label="Password" passwordLink="http://www.catho.com.br/" />} />
+    </div>
   </Tab>
 );
 
