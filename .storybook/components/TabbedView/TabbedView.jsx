@@ -72,7 +72,7 @@ class TabbedView extends React.Component {
     super(props);
 
     this.state = {
-      activeTab: 0,
+      activeTab: 1,
     };
   }
 

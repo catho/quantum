@@ -25,27 +25,44 @@ class Form extends React.Component {
 
     this.state = {
       cloneValues: {},
+      errors: {},
       valid: true,
     };
 
-    React.Children.forEach(children, (({ props: { name, value } }) => {
-      this.state.cloneValues[name] = value;
-    }));
+    React
+      .Children
+      .map(
+        children,
+        (child) => {
+          const { name, value } = child.props;
 
-    this.state.clones = this.createClones();
+          this.state.cloneValues[name] = value;
+          this.state.errors[name] = '';
+        },
+      );
+
+    // this.state.clones = this.createClones();
   }
 
   createClones = () => React
     .Children
     .map(
       this.props.children,
-      child => React.cloneElement(
-        child,
-        {
-          onChange: this.handleChange,
-          value: this.state.cloneValues[child.props.name],
-        },
-      ),
+      (child) => {
+        const { name, value } = child.props;
+
+        this.state.cloneValues[name] = value;
+
+        // const { [name]: stateValue } = this.state.cloneValues;
+
+        // return React.cloneElement(
+        //   child,
+        //   {
+        //     onChange: this.handleChange,
+        //     value: stateValue,
+        //   },
+        // );
+      },
     );
 
   findError = (child) => {
@@ -74,12 +91,17 @@ class Form extends React.Component {
     .Children
     .map(
       children,
-      child => React.cloneElement(
-        child,
-        {
-          error: this.findError(child),
-        },
-      ),
+      (child) => {
+        const { name } = child.props;
+
+        const _error = this.findError(child);
+
+        const newError = this.state.errors;
+
+        newError[name] = _error;
+
+        this.setState({ errors: newError });
+      },
     );
 
   handleChange = ({ target: { name } }, { value }) => {
@@ -88,9 +110,7 @@ class Form extends React.Component {
       [name]: value,
     };
 
-    this.setState({ cloneValues }, () => {
-      this.setState({ clones: this.createClones() });
-    });
+    this.setState({ cloneValues });
   }
 
   handleSubmit = (event) => {
@@ -98,7 +118,7 @@ class Form extends React.Component {
 
     // Start validation process assuming form valid.
     this.setState({ valid: true });
-    const clones = this.validateError(this.state.clones);
+    const clones = this.validateError(this.props.children);
 
     const { onSubmit, onValidSubmit } = this.props;
 
@@ -112,11 +132,32 @@ class Form extends React.Component {
   }
 
   render() {
-    const { clones } = this.state;
+    const { children } = this.props;
 
     return (
       <form {...this.props} onSubmit={this.handleSubmit} noValidate>
-        { clones }
+        <pre>{ JSON.stringify(this.state, null, 2)}</pre>
+        {
+          React
+            .Children
+            .map(
+              children,
+              (child) => {
+                const { name } = child.props;
+                return (
+                  React
+                    .cloneElement(
+                      child,
+                      {
+                        value: this.state.cloneValues[name],
+                        error: this.state.errors[name],
+                        onChange: this.handleChange,
+                      },
+                    )
+                )
+              },
+            )
+        }
       </form>
     );
   }
