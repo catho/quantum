@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FormInput from './sub-components/FormInput';
 import Submit from './sub-components/Submit';
-import Input from '../Input';
 
 function execValidate(validate, props) {
   if (typeof validate === 'function') {
