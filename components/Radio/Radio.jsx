@@ -74,6 +74,8 @@ const Radio = ({
   </Wrapper>
 );
 
+Radio.displayName = 'Radio';
+
 Radio.defaultProps = {
   onChange: () => {},
 };
