@@ -92,7 +92,6 @@ class Input extends React.Component {
       id,
       label,
       error,
-      mask,
       onChange,
       passwordLink,
       ...rest
@@ -103,14 +102,12 @@ class Input extends React.Component {
         <Masked
           {...rest}
           id={id}
-          mask={mask}
           onChange={e => onChange(e, { value: e.target.value })}
           passwordLink={passwordLink}
           render={
             (ref, props) => (
               <StyledInput
                 {...props}
-                value={props.defaultValue}
                 error={error}
                 innerRef={ref}
               />
