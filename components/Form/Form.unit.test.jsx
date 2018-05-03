@@ -186,7 +186,6 @@ describe('Form component ', () => {
 
       const wrapper = shallow(form);
       expect(wrapper.state('valid')).toBe(true);
-
       wrapper.simulate('submit', mockEvent);
 
       expect(onSubmitCallback).toHaveBeenCalled();

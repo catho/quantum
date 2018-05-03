@@ -7,41 +7,42 @@ import { Label } from '../shared';
 
 const commonAttr = {
   borderWidth: '3px',
-  width: '24px',
   height: '24px',
+  width: '24px',
 };
 
 const Wrapper = styled.div`
-  margin-right: 10px;
   cursor: pointer;
+  margin-right: 10px;
 `;
 
 const StyledInput = styled.input`
+  appearance: none;
+  border: ${commonAttr.borderWidth} solid ${Colors.WHITE};
+  border-radius: 50%;
+  background-color: ${props => (props.disabled ? Colors.GREY[100] : Colors.WHITE)};
+  cursor: inherit;
+  height: ${commonAttr.height};
+  margin-right: 5px;
   position: relative;
   top: 6px;
   width: ${commonAttr.width};
-  height: ${commonAttr.height};
-  border-radius: 50%;
-  cursor: inherit;
-  appearance: none;
-  border: ${commonAttr.borderWidth} solid ${Colors.WHITE};
-  margin-right: 5px;
 
   ${theme.mixins.transition()};
 
   &:before {
-    display: inline-block;
-    border: 1px solid ${Colors.GREY[300]};
     content: ' ';
-    width: ${commonAttr.width};
-    height: ${commonAttr.height};
+    border: 1px solid ${Colors.GREY[300]};
     border-radius: 50%;
+    display: inline-block;
+    height: ${commonAttr.height};
     margin-left: -${commonAttr.borderWidth};
     margin-top: -${commonAttr.borderWidth};
+    width: ${commonAttr.width};
   }
 
   &:hover:before {
-    border: 1px solid ${Colors.SECONDARY[500]};
+    border: 1px solid ${props => (props.disabled ? Colors.GREY[300] : Colors.SECONDARY[500])};
   }
 
   &:checked {
@@ -55,31 +56,28 @@ const StyledInput = styled.input`
 `;
 
 const StyledLabel = styled(Label)`
-  display: inline-block;
   cursor: inherit;
+  display: inline-block;
 `;
 
 const Radio = ({
-  id,
-  value,
-  name,
-  label,
-  onChange,
+  id, label, onChange, ...rest
 }) => (
   <Wrapper>
     <StyledInput
-      type="radio"
       id={id}
-      value={value}
-      name={name}
-      onChange={onChange}
+      type="radio"
+      onChange={e => onChange(e, { checked: e.target.value })}
+      {...rest}
     />
     <StyledLabel htmlFor={id}>{label}</StyledLabel>
   </Wrapper>
 );
 
+Radio.displayName = 'Radio';
+
 Radio.defaultProps = {
-  onChange: null,
+  onChange: () => {},
 };
 
 Radio.propTypes = {
