@@ -60,33 +60,19 @@ const StyledLabel = styled(Label)`
   display: inline-block;
 `;
 
-class Radio extends React.Component {
-  handleChange = (e) => {
-    const { onChange } = this.props;
-
-    onChange(e, { checked: e.target.value });
-  }
-
-  render() {
-    const {
-      id,
-      label,
-      ...rest
-    } = this.props;
-
-    return (
-      <Wrapper>
-        <StyledInput
-          id={id}
-          type="radio"
-          onChange={this.handleChange}
-          {...rest}
-        />
-        <StyledLabel htmlFor={id}>{label}</StyledLabel>
-      </Wrapper>
-    );
-  }
-}
+const Radio = ({
+  id, label, onChange, ...rest
+}) => (
+  <Wrapper>
+    <StyledInput
+      id={id}
+      type="radio"
+      onChange={e => onChange(e, { checked: e.target.value })}
+      {...rest}
+    />
+    <StyledLabel htmlFor={id}>{label}</StyledLabel>
+  </Wrapper>
+);
 
 Radio.defaultProps = {
   onChange: () => {},
