@@ -87,6 +87,23 @@ class Input extends React.Component {
   static Phone = InputTypes.Phone;
   static Password = InputTypes.Password;
 
+  constructor(props) {
+    super(props);
+
+    const { value } = props;
+
+    this.state = { value };
+  }
+
+  onChange = (e) => {
+    const { onChange } = this.props;
+    const { target: { value } } = e;
+
+    this.setState({ value });
+
+    onChange(e, { value });
+  }
+
   render() {
     const {
       id,
@@ -96,14 +113,16 @@ class Input extends React.Component {
       passwordLink,
       ...rest
     } = this.props;
+    const { value } = this.state;
 
     return (
       <StyledFieldGroup>
         <Masked
           {...rest}
           id={id}
-          onChange={e => onChange(e, { value: e.target.value })}
+          onChange={this.onChange}
           passwordLink={passwordLink}
+          value={value}
           render={
             (ref, props) => (
               <StyledInput
@@ -118,7 +137,7 @@ class Input extends React.Component {
           <StyledLabel
             htmlFor={id}
             error={error}
-            withValue={!!this.props.value}
+            withValue={!!value}
           >
             {label}
           </StyledLabel>

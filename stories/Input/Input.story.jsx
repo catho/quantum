@@ -8,7 +8,7 @@ import Input from '../../components/Input';
 
 const tabExample = (
   <Tab title="Example">
-    <Example component={<Input.CEP id="CEP" label="CEP" style={{ width: '200px' }} />} />
+    <Example component={<Input.CEP value="06826510" id="CEP" label="CEP" style={{ width: '200px' }} />} />
     <Example component={<Input.CNPJ id="CNPJ" label="CNPJ" style={{ width: '200px' }} />} />
     <Example component={<Input.CPF id="CPF" label="CPF" style={{ width: '200px' }} />} />
     <Example component={<Input.Date id="Date" label="Date" style={{ width: '200px' }} />} />
