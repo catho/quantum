@@ -65,10 +65,10 @@ const Radio = ({
 }) => (
   <Wrapper>
     <StyledInput
+      {...rest}
       id={id}
       type="radio"
       onChange={e => onChange(e, { checked: e.target.value })}
-      {...rest}
     />
     <StyledLabel htmlFor={id}>{label}</StyledLabel>
   </Wrapper>
