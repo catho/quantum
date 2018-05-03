@@ -12,6 +12,8 @@ const Navbar = styled.ul`
   list-style: none;
 `;
 
+Navbar.displayName = 'Navbar';
+
 const NavItem = styled.li`
   padding: 18px 18px 16px;
   white-space: nowrap;
@@ -49,6 +51,8 @@ const NavItem = styled.li`
   `}
 `;
 
+NavItem.displayName = 'NavItem';
+
 const Tab = ({ children, title }) => (
   <React.Fragment>
     { title && children }
@@ -72,7 +76,7 @@ class TabbedView extends React.Component {
     super(props);
 
     this.state = {
-      activeTab: 1,
+      activeTab: 0,
     };
   }
 

@@ -132,7 +132,7 @@ class Form extends React.Component {
     const valid = !Object.values(this.state.errors).find(e => e);
 
     this.setState({ valid }, () => {
-      onSubmit({ valid });
+      onSubmit({ valid: this.state.valid });
 
       if (valid) onValidSubmit(this.state.values);
     });
@@ -141,7 +141,6 @@ class Form extends React.Component {
   render() {
     return (
       <form {...this.props} onSubmit={this.handleSubmit} noValidate>
-        <pre>{ JSON.stringify(this.state, null, 2)}</pre>
         {
           this._createClones(this.props.children)
         }
