@@ -87,6 +87,7 @@ describe('Form component ', () => {
         );
 
         const afterChange = getField();
+
         expect(afterChange.prop('error')).toBe('');
       };
 
@@ -174,7 +175,7 @@ describe('Form component ', () => {
   });
 
   describe('Valid state', () => {
-    it('Shouldn\'t be false when an error occurred', () => {
+    it('Should be false when an error occurred', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
           <Form.Input
@@ -185,7 +186,7 @@ describe('Form component ', () => {
       );
 
       const wrapper = shallow(form);
-      expect(wrapper.state('valid')).toBe(true);
+      expect(wrapper.state('valid')).toBe(false);
 
       wrapper.simulate('submit', mockEvent);
 
@@ -194,7 +195,7 @@ describe('Form component ', () => {
       expect(wrapper.state('valid')).toBe(false);
     });
 
-    it('Shouldn\'t be true when everything is ok', () => {
+    it('Should be true when everything is ok', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
           <Form.Input
@@ -206,7 +207,7 @@ describe('Form component ', () => {
       );
 
       const wrapper = shallow(form);
-      expect(wrapper.state('valid')).toBe(true);
+      expect(wrapper.state('valid')).toBe(false);
 
       wrapper.simulate('submit', mockEvent);
 

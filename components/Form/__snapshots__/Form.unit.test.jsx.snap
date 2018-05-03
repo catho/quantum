@@ -6,6 +6,29 @@ exports[`Form component  should match the snapshot 1`] = `
   onSubmit={[Function]}
   onValidSubmit={[MockFunction]}
 >
+  <pre>
+    {
+  "values": {
+    "required": "",
+    "cpf": "",
+    "cep": "",
+    "birthday": "",
+    "email": "",
+    "address": "",
+    "country": ""
+  },
+  "errors": {
+    "required": "",
+    "cpf": "",
+    "cep": "",
+    "birthday": "",
+    "email": "",
+    "address": "",
+    "country": ""
+  },
+  "valid": false
+}
+  </pre>
   <div
     className="sc-EHOje bofIsN sc-htpNat jDKbhD"
   >
