@@ -38,6 +38,11 @@ const FormExample = (
       ]}
       minLength={3}
     />
+    <Input.Date
+      name="date"
+      placeholder="Birthday"
+      validate={Validations.Required}
+    />
     <Form.Submit />
   </Form>
 );
