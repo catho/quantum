@@ -2,18 +2,18 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <div
-  className="sc-ifAKCX gEELtZ"
+  className="sc-ifAKCX hCVZm"
 >
   <input
-    className="sc-EHOje buYNkI"
+    className="sc-EHOje flxxMC"
     id="radio"
     name="radio"
-    onChange={[MockFunction]}
+    onChange={[Function]}
     type="radio"
     value="1"
   />
   <label
-    className="sc-bZQynM gHbqLI sc-bwzfXH eQhPVJ"
+    className="sc-bZQynM cilpEH sc-bwzfXH eQhPVJ"
     htmlFor="radio"
   >
     Hello

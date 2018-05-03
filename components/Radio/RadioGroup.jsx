@@ -4,24 +4,37 @@ import styled from 'styled-components';
 import { FieldGroup } from '../shared';
 
 const Group = styled(FieldGroup)`
-  align-items: flex-start;
   display: flex;
-  flex-direction: column;
+  flex-direction: ${props => (props.inline ? 'row' : 'column')};
+`;
 
-  span {
-    margin-bottom: 20px;
+class RadioGroup extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
   }
 
-  ${props => props.inline && `
-    align-items: unset;
-    flex-direction: unset;
-  `}
-`;
+  handleChange = (e, value) => {
+    this.setState(value);
+  }
+
+  render() {
+    const { children, ...rest } = this.props;
+
+    return (
+      <Group {...rest}>
+        {
+          React.Children.map(children, ({ type: Component, props }) => (
+            <Component key={Component.displayName} {...props} />))
+        }
+      </Group>
+    );
+  }
+}
 
 /**
  * Group for Radio components.
  */
-const RadioGroup = props => <Group {...props} />;
 
 RadioGroup.propTypes = {
   children: PropTypes.oneOfType([
