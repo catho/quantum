@@ -12,6 +12,8 @@ const Navbar = styled.ul`
   list-style: none;
 `;
 
+Navbar.displayName = 'Navbar';
+
 const NavItem = styled.li`
   padding: 18px 18px 16px;
   white-space: nowrap;
@@ -48,6 +50,8 @@ const NavItem = styled.li`
     }
   `}
 `;
+
+NavItem.displayName = 'NavItem';
 
 const Tab = ({ children, title }) => (
   <React.Fragment>
