@@ -18,7 +18,7 @@ const FormExample = (
   <Form style={{ width: '400px' }}>
     <Input
       name="first"
-      label="First Name"
+      placeholder="First Name"
       validate={[
         {
           validate: Validations.Required,
@@ -29,7 +29,7 @@ const FormExample = (
     />
     <Input
       name="last"
-      label="Last Name"
+      placeholder="Last Name"
       validate={[
         {
           validate: Validations.Required,
@@ -40,15 +40,8 @@ const FormExample = (
     />
     <Input.Date
       name="date"
-      label="Date"
-      validate={[
-        Validations.MinLength,
-        {
-          validate: Validations.Date,
-          error: 'Plese, insert a valid date (dd/mm/aaaa)',
-        },
-      ]}
-      minLength={8}
+      placeholder="Birthday"
+      validate={Validations.Required}
     />
     <Form.Submit />
   </Form>

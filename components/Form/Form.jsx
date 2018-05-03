@@ -24,43 +24,66 @@ class Form extends React.Component {
     const { children } = this.props;
 
     this.state = {
-      cloneValues: {},
-      valid: true,
+      values: {},
+      errors: {},
+      valid: false,
     };
 
-    React.Children.forEach(children, (({ props: { name, value } }) => {
-      this.state.cloneValues[name] = value;
-    }));
+    React
+      .Children
+      .map(
+        children,
+        (child) => {
+          const { name, value } = child.props;
 
-    this.state.clones = this.createClones();
+          if (name) {
+            this.state.values[name] = value;
+            this.state.errors[name] = '';
+          }
+        },
+      );
   }
 
-  createClones = () => React
+  _createClones = children => React
     .Children
     .map(
-      this.props.children,
-      child => React.cloneElement(
-        child,
-        {
-          onChange: this.handleChange,
-          value: this.state.cloneValues[child.props.name],
-        },
-      ),
+      children,
+      (child) => {
+        const { name } = child.props;
+        return (
+          React
+            .cloneElement(
+              child,
+              {
+                value: this.state.values[name],
+                error: this.state.errors[name],
+                onChange: this._handleChange,
+              },
+            )
+        );
+      },
     );
 
-  findError = (child) => {
+  _findError = (child) => {
     const { props } = child;
     const { validate = () => {} } = props;
 
     let invalid;
+
+    const _props = {
+      ...props,
+      value: this.state.values[props.name],
+    };
+
     if (Array.isArray(validate)) {
       for (let i = 0; i < validate.length; i += 1) {
-        invalid = execValidate(validate[i], props);
+        invalid = execValidate(validate[i], _props);
 
+        // Stop validation when the first occurs
         if (invalid) break;
       }
     } else {
-      invalid = execValidate(validate, props);
+      invalid = execValidate(validate, _props);
     }
 
     if (invalid) {
@@ -70,53 +93,57 @@ class Form extends React.Component {
     return invalid;
   }
 
-  validateError = children => React
+  _validateError = children => React
     .Children
     .map(
       children,
-      child => React.cloneElement(
-        child,
-        {
-          error: this.findError(child),
-        },
-      ),
+      (child) => {
+        const { name } = child.props;
+
+        const _error = this._findError(child);
+
+        const newError = this.state.errors;
+        newError[name] = _error;
+
+        this.setState({ errors: newError });
+      },
     );
 
-  handleChange = ({ target: { name } }, { value }) => {
-    const cloneValues = {
-      ...this.state.cloneValues,
+  _handleChange = ({ target: { name } }, { value }) => {
+    const values = {
+      ...this.state.values,
       [name]: value,
     };
 
-    this.setState({ cloneValues }, () => {
-      this.setState({ clones: this.createClones() });
-    });
+    const newErrors = this.state.errors;
+    newErrors[name] = '';
+
+    this.setState({ errors: newErrors });
+    this.setState({ values });
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
 
-    // Start validation process assuming form valid.
-    this.setState({ valid: true });
-    const clones = this.validateError(this.state.clones);
+    this._validateError(this.props.children);
 
     const { onSubmit, onValidSubmit } = this.props;
 
-    this.setState({ clones }, () => {
-      const { valid } = this.state;
+    const valid = !Object.values(this.state.errors).find(e => e);
 
-      onSubmit({ valid });
+    this.setState({ valid }, () => {
+      onSubmit({ valid: this.state.valid });
 
-      if (valid) onValidSubmit(this.state.cloneValues);
+      if (valid) onValidSubmit(this.state.values);
     });
   }
 
   render() {
-    const { clones } = this.state;
-
     return (
       <form {...this.props} onSubmit={this.handleSubmit} noValidate>
-        { clones }
+        {
+          this._createClones(this.props.children)
+        }
       </form>
     );
   }
