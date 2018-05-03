@@ -33,11 +33,13 @@ describe('Radio component', () => {
 
   it('Should call "onChange" when the radio changes', () => {
     const event = { target: { name: 'radio', value: '1' } };
+    const value = { checked: '1' };
+
     const component = shallow(radioButton);
 
     component.find('#radio').simulate('change', event);
     component.update();
 
-    expect(onChangeMock).toBeCalledWith(event);
+    expect(onChangeMock).toBeCalledWith(event, value);
   });
 });

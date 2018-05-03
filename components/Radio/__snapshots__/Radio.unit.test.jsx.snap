@@ -8,7 +8,7 @@ exports[`Radio component Should match the snapshot 1`] = `
     className="sc-EHOje flxxMC"
     id="radio"
     name="radio"
-    onChange={[MockFunction]}
+    onChange={[Function]}
     type="radio"
     value="1"
   />
