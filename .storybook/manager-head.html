@@ -96,3 +96,18 @@
     border: none !important;
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    var verticalPane = document.getElementsByClassName("Pane vertical Pane1")[0];
+
+    var lateralMenu = document.createElement("UL");
+    var lateralMenuItem = document.createElement("LI");
+    lateralMenuItem.innerHTML = "como que pod";
+
+    lateralMenu.appendChild(lateralMenuItem);
+
+    verticalPane.appendChild(lateralMenu);
+    console.log(verticalPane);
+  });
+</script>
