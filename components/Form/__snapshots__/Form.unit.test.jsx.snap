@@ -7,122 +7,132 @@ exports[`Form component  should match the snapshot 1`] = `
   onValidSubmit={[MockFunction]}
 >
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue=""
+      className="sc-EHOje hjysc"
       id=""
+      mask={false}
       maxLength=""
       name="required"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       required
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue=""
+      className="sc-EHOje hjysc"
       id=""
+      mask={false}
       maxLength=""
       name="cpf"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       CPF
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue=""
+      className="sc-EHOje hjysc"
       id=""
+      mask={false}
       maxLength=""
       name="cep"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       CEP
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue=""
+      className="sc-EHOje hjysc"
       id=""
+      mask={false}
       maxLength=""
       name="birthday"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Birthday
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue=""
+      className="sc-EHOje hjysc"
       id=""
+      mask={false}
       maxLength=""
       name="email"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       E-mail
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue=""
+      className="sc-EHOje hjysc"
       id=""
+      mask={false}
       maxLength=""
       minLength="8"
       name="address"
@@ -130,39 +140,43 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Address
     </label>
     
+    
   </div>
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue=""
+      className="sc-EHOje hjysc"
       id=""
+      mask={false}
       maxLength="3"
       name="country"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value=""
     />
     <label
-      className="sc-bxivhb dNQvGb sc-bwzfXH eQhPVJ"
+      className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
       htmlFor=""
     >
       Country
     </label>
     
+    
   </div>
   <button
-    className="sc-bZQynM jdyafo"
+    className="sc-gzVnrw bulXRb"
     disabled={false}
     onChange={[Function]}
     onClick={[Function]}

@@ -3,46 +3,27 @@ import React from 'react';
 
 import Input from '../Input';
 
-class AutoComplete extends React.Component {
-  constructor(props) {
-    super(props);
+const AutoComplete = (props) => {
+  const { id } = props;
+  const dataListId = `${id}_datalist`;
 
-    this.state = {
-      value: props.value,
-    };
-  }
+  return (
+    <React.Fragment>
+      <Input
+        {...props}
+        list={dataListId}
+      />
 
-  handleChange = (event) => {
-    this.setState({
-      value: event.target.value,
-    }, () => this.props.onChange({
-      value: this.state.value,
-    }));
-  }
-
-  render() {
-    const { id } = this.props;
-    const dataListId = `${id}_datalist`;
-
-    return (
-      <React.Fragment>
-        <Input
-          {...this.props}
-          list={dataListId}
-          onChange={this.handleChange}
-        />
-
-        <datalist id={dataListId}>
-          {
-            this.props.dataSource.map(item => (
-              <option value={item} key={`${item}`} />
-            ))
-          }
-        </datalist>
-      </React.Fragment>
-    );
-  }
-}
+      <datalist id={dataListId}>
+        {
+          props.dataSource.map(item => (
+            <option value={item} key={`${item}`} />
+          ))
+        }
+      </datalist>
+    </React.Fragment>
+  );
+};
 
 AutoComplete.defaultProps = {
   error: '',

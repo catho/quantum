@@ -19,22 +19,17 @@ describe('AutoComplete component ', () => {
     expect(renderer.create(defaultAutoComplete).toJSON()).toMatchSnapshot();
   });
 
-  it('should have value set in the state', () => {
-    expect(shallow(defaultAutoComplete).state('value')).toEqual(value);
-  });
-
   describe('with an "onChange" callback set', () => {
     const mockFn = jest.fn();
     const wrapper = shallow(<AutoComplete onChange={mockFn} />);
     const input = wrapper.childAt(0);
-    const valueOb = { value };
+    const mockEvent = { target: { value } };
 
     it('should call the callback and set a new value', () => {
-      input.simulate('change', { target: valueOb });
+      input.simulate('change', mockEvent);
 
-      expect(wrapper.state('value')).toEqual(value);
       expect(mockFn).toHaveBeenCalledTimes(1);
-      expect(mockFn).toHaveBeenCalledWith(valueOb);
+      expect(mockFn).toHaveBeenCalledWith(mockEvent);
     });
   });
 

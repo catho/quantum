@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import React from 'react';
-import Masked from 'react-text-mask';
 import InputTypes from './InputTypes';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
@@ -10,15 +9,15 @@ import theme from '../../theme';
 
 const sharedStyle = css`
   font-size: 12px;
-  transform: translateY(-20px);
+  transform: translateY(-22px);
 `;
 
-const StyledLabel = styled(Label)`
+const InputLabel = styled(Label)`
   cursor: text;
   font-size: 16px;
   left: 0;
   position: absolute;
-  top: 0;
+  top: 6px;
   ${theme.mixins.transition()};
 
   ${props => props.withValue && `
@@ -30,18 +29,31 @@ const StyledLabel = styled(Label)`
   `}
 `;
 
-const StyledInput = styled.input`
+const Link = styled.a`
+  color: ${Colors.SECONDARY['500']};
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 8px;
+`;
+
+const InputTag = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
   border: none;
   border-bottom: 1px solid ${Colors.GREY['300']};
-  color: ${Colors.GREY['900']};
-  height: 20px;
-  width: 100%;
-  padding: 0px 3px 5px;
-  font-size: 16px;
   box-sizing: border-box;
+  color: ${Colors.GREY['900']};
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 3px;
   outline: none;
+  width: 100%;
+
+  ${props => props.passwordLink && `
+    padding-right: 140px;
+  `}
 
   &::-webkit-calendar-picker-indicator {
     display: none;
@@ -55,13 +67,13 @@ const StyledInput = styled.input`
     border-color: ${Colors.DANGER['500']};
   `}
 
-  &:focus + ${StyledLabel} {
+  &:focus + ${InputLabel} {
     color: ${Colors.SECONDARY['500']};
     ${sharedStyle}
   }
 `;
 
-const StyledFieldGroup = styled(FieldGroup)`
+const InputFieldGroup = styled(FieldGroup)`
   margin-top: 40px;
 `;
 
@@ -72,21 +84,29 @@ class Input extends React.Component {
   static CPF = InputTypes.CPF;
   static Date = InputTypes.Date;
   static Phone = InputTypes.Phone;
+  static Password = InputTypes.Password;
 
   constructor(props) {
     super(props);
 
-    this.state = {
-      withValue: false,
-    };
+    const { value } = props;
+
+    this.state = { value };
+  }
+
+  componentWillUpdate(nextProps) {
+    if (nextProps.value !== this.state.value) {
+      this.state.value = nextProps.value;
+    }
   }
 
   onChange = (e) => {
-    this.setState({
-      withValue: !!e.target.value,
-    });
+    const { onChange } = this.props;
+    const { target: { value } } = e;
 
-    this.props.onChange(e, { value: e.target.value });
+    this.setState({ value });
+
+    onChange(e, { value });
   }
 
   render() {
@@ -94,38 +114,38 @@ class Input extends React.Component {
       id,
       label,
       error,
-      mask,
+      onChange,
+      passwordLink,
       ...rest
     } = this.props;
+    const { value } = this.state;
 
     return (
-      <StyledFieldGroup>
-        <Masked
+      <InputFieldGroup>
+        <InputTag
           {...rest}
           id={id}
-          mask={mask}
+          passwordLink={passwordLink}
           onChange={this.onChange}
-          render={
-            (ref, props) => (
-              <StyledInput
-                {...props}
-                error={error}
-                innerRef={ref}
-              />
-            )
-          }
+          value={value}
+          error={error}
         />
+
         { label &&
-          <StyledLabel
+          <InputLabel
             htmlFor={id}
             error={error}
-            withValue={this.state.withValue}
+            withValue={!!value}
           >
             {label}
-          </StyledLabel>
+          </InputLabel>
+        }
+        {
+          passwordLink &&
+          <Link href={passwordLink} title="Esqueceu a senha?">Esqueceu a senha?</Link>
         }
         {error && <ErrorMessage>{error}</ErrorMessage>}
-      </StyledFieldGroup>
+      </InputFieldGroup>
     );
   }
 }
@@ -139,6 +159,7 @@ Input.defaultProps = {
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
+  passwordLink: '',
   type: 'text',
   value: '',
 };
@@ -158,6 +179,7 @@ Input.propTypes = {
     'tel',
     'number',
     'link',
+    'password',
   ]),
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
@@ -172,6 +194,7 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
+  passwordLink: PropTypes.string,
   value: PropTypes.string,
 };
 

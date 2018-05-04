@@ -3,19 +3,21 @@
 exports[`AutoComplete component  should match the snapshot 1`] = `
 Array [
   <div
-    className="sc-EHOje bofIsN sc-htpNat jDKbhD"
+    className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-ifAKCX lhnZnG"
-      defaultValue="test"
+      className="sc-EHOje hjysc"
       id=""
       list="_datalist"
+      mask={false}
       maxLength=""
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value="test"
     />
+    
     
     
   </div>,
