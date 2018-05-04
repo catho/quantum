@@ -6,7 +6,9 @@ exports[`Input component  should match the snapshot 1`] = `
 >
   
   <input
+    error=""
     id=""
+    label=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -30,7 +32,9 @@ exports[`Input component  with a label should match the snapshot 1`] = `
      
   </label>
   <input
+    error=""
     id="range-with-label"
+    label="Text label"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -47,7 +51,9 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 >
   
   <input
+    error="Error message"
     id=""
+    label=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
