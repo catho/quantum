@@ -12,7 +12,7 @@ const sharedStyle = css`
   transform: translateY(-22px);
 `;
 
-const StyledLabel = styled(Label)`
+const InputLabel = styled(Label)`
   cursor: text;
   font-size: 16px;
   left: 0;
@@ -29,7 +29,7 @@ const StyledLabel = styled(Label)`
   `}
 `;
 
-const StyledLink = styled.a`
+const Link = styled.a`
   color: ${Colors.SECONDARY['500']};
   font-size: 14px;
   position: absolute;
@@ -38,7 +38,7 @@ const StyledLink = styled.a`
   top: 8px;
 `;
 
-const StyledInput = styled.input`
+const InputTag = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
   border: none;
@@ -67,13 +67,13 @@ const StyledInput = styled.input`
     border-color: ${Colors.DANGER['500']};
   `}
 
-  &:focus + ${StyledLabel} {
+  &:focus + ${InputLabel} {
     color: ${Colors.SECONDARY['500']};
     ${sharedStyle}
   }
 `;
 
-const StyledFieldGroup = styled(FieldGroup)`
+const InputFieldGroup = styled(FieldGroup)`
   margin-top: 40px;
 `;
 
@@ -121,8 +121,8 @@ class Input extends React.Component {
     const { value } = this.state;
 
     return (
-      <StyledFieldGroup>
-        <StyledInput
+      <InputFieldGroup>
+        <InputTag
           {...rest}
           id={id}
           passwordLink={passwordLink}
@@ -132,20 +132,20 @@ class Input extends React.Component {
         />
 
         { label &&
-          <StyledLabel
+          <InputLabel
             htmlFor={id}
             error={error}
             withValue={!!value}
           >
             {label}
-          </StyledLabel>
+          </InputLabel>
         }
         {
           passwordLink &&
-          <StyledLink href={passwordLink} title="Esqueceu a senha?">Esqueceu a senha?</StyledLink>
+          <Link href={passwordLink} title="Esqueceu a senha?">Esqueceu a senha?</Link>
         }
         {error && <ErrorMessage>{error}</ErrorMessage>}
-      </StyledFieldGroup>
+      </InputFieldGroup>
     );
   }
 }
