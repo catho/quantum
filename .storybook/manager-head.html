@@ -10,7 +10,7 @@
   }
 
   .Pane.vertical.Pane1 {
-    background-color: rgb(244, 245, 247) !important; 
+    background-color: rgb(244, 245, 247) !important;
     overflow: hidden !important;
   }
 
@@ -36,6 +36,23 @@
 
   .Pane.vertical.Pane1 ul li a[class*='css-glamorous-routedlink']{
     font-weight: normal;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3) div {
+    overflow-x: hidden;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
   }
 
   .Resizer.vertical {
@@ -99,12 +116,12 @@
   }
 
   .lateral-menu {
-    list-style-type: none; 
-    position:absolute; 
-    top:0; 
-    left:0; 
-    z-index: 1000; 
-    padding: 12px; 
+    list-style-type: none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+    padding: 12px;
     margin: 0;
   }
 
@@ -155,7 +172,13 @@
     menu.style.display = (menu.style.display == 'none') ? 'block' : 'none';
   }
 
-  document.addEventListener("DOMContentLoaded", function(event) { 
+  window.addEventListener('keydown', function(e) {
+    if (e.keyCode === 84) {
+      openSearch();
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function(event) {
     const verticalPane = document.getElementById("root");
     const verticalPaneDiv = verticalPane.querySelector('div');
 
