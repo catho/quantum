@@ -7,14 +7,15 @@ Array [
   >
     <input
       className="sc-EHOje hjysc"
-      defaultValue="test"
       id=""
       list="_datalist"
+      mask={false}
       maxLength=""
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value="test"
     />
     
     
