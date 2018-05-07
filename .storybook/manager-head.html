@@ -42,6 +42,14 @@
     overflow-x: hidden;
   }
 
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3) {
+    overflow: hidden !important;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3):hover {
+    overflow: auto !important;
+  }
+
   .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar {
     width: 6px;
   }
@@ -51,7 +59,7 @@
   }
 
   .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar-thumb {
-    background-color: #ccc;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
   }
 
@@ -62,8 +70,8 @@
   .Pane.vertical.Pane1>div>div>div>div>a {
     background-image: url(//static.catho.com.br/svg/site/logoCathoB2c.svg);
     background-repeat: no-repeat;
-    background-position: 11px;
-    background-size: 67px;
+    background-position: center;
+    background-size: 100px;
     border: none !important;
     text-indent: -9999px;
     padding: 20px;
@@ -170,19 +178,13 @@
   const hideMenu = () => {
     const menu = document.querySelector('.Pane.vertical.Pane1');
     menu.style.display = (menu.style.display == 'none') ? 'block' : 'none';
-  }
-
-  window.addEventListener('keydown', function(e) {
-    if (e.keyCode === 84) {
-      openSearch();
-    }
-  });
+  };
 
   document.addEventListener("DOMContentLoaded", function(event) {
     const verticalPane = document.getElementById("root");
     const verticalPaneDiv = verticalPane.querySelector('div');
 
-    var lateralMenu = document.createElement("UL");
+    var lateralMenu = document.createElement("ul");
     lateralMenu.className = 'lateral-menu';
 
     lateralMenu.innerHTML = `

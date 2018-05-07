@@ -9,6 +9,7 @@ setOptions({
   showAddonPanel: false,
   addonPanelInRight: false,
   sidebarAnimations: false,
+  url: 'http://gitlab.devel/frontend-platform/style-guide',
 });
 
 addDecorator(Frame);
