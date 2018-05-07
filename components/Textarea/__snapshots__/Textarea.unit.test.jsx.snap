@@ -4,23 +4,17 @@ exports[`Radio component Should match the snapshot 1`] = `
 <div
   className="sc-htpNat hxsEuH"
 >
-  <label
-    className="sc-bwzfXH eQhPVJ"
-    htmlFor="maxLength"
-  >
-     
-    maxLength
-     
-  </label>
+  
   <textarea
     className="sc-bxivhb edNAKz"
-    id="maxLength"
-    maxLength={50}
-    name="maxLength"
+    id=""
+    maxLength={300}
+    name=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder=""
+    value=""
   />
   <div
     className="sc-ifAKCX WOpjk"
@@ -29,7 +23,76 @@ exports[`Radio component Should match the snapshot 1`] = `
     <span
       className="sc-EHOje iiwpkQ"
     >
-      50
+      300
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Radio component with a label should match the snapshot 1`] = `
+<div
+  className="sc-htpNat hxsEuH"
+>
+  <label
+    className="sc-bwzfXH eQhPVJ"
+    htmlFor="textarea"
+  >
+     
+    Text label
+     
+  </label>
+  <textarea
+    className="sc-bxivhb edNAKz"
+    id="textarea"
+    maxLength={300}
+    name=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder=""
+    value=""
+  />
+  <div
+    className="sc-ifAKCX WOpjk"
+  >
+    
+    <span
+      className="sc-EHOje iiwpkQ"
+    >
+      300
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Radio component with an error message should match the snapshot 1`] = `
+<div
+  className="sc-htpNat hxsEuH"
+>
+  
+  <textarea
+    className="sc-bxivhb dFJAkL"
+    id=""
+    maxLength={300}
+    name=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder=""
+    value=""
+  />
+  <div
+    className="sc-ifAKCX WOpjk"
+  >
+    <div
+      className="sc-bdVaJa kKTvpA"
+    >
+      Error message
+    </div>
+    <span
+      className="sc-EHOje iiwpkQ"
+    >
+      300
     </span>
   </div>
 </div>

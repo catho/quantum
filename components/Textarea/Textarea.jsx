@@ -22,7 +22,7 @@ const Textfield = styled.textarea`
     border-color: ${Colors.PRIMARY['500']};
   }
 
-  ${props => props.errorMessage && `
+  ${props => props.error && `
     border-color: ${Colors.DANGER['400'].LIPSTICK};
   `}
 `;
@@ -44,45 +44,56 @@ class Textarea extends React.Component {
   constructor(props) {
     super(props);
 
+    const { value } = props;
+
     this.state = {
+      value,
       charsLeft: this.props.maxLength,
     };
   }
 
-  handleOnChange = (e) => {
+  componentWillUpdate(nextProps) {
+    if (nextProps.value !== this.state.value) {
+      this.state.value = nextProps.value;
+    }
+  }
+
+  onChange = (e) => {
+    const { onChange } = this.props;
+    const { target: { value } } = e;
+
     this.setState({
+      value,
       charsLeft: this.props.maxLength - e.target.value.length,
     });
+
+    onChange(e, { value });
   }
 
   render() {
     const {
-      errorMessage,
+      error,
       id,
       label,
       maxLength,
-      name,
-      onBlur,
-      onFocus,
-      placeholder,
+      ...rest
     } = this.props;
+    const { value, charsLeft } = this.state;
 
     return (
       <FieldGroup>
         { label && <Label htmlFor={id}> {label} </Label> }
         <Textfield
-          errorMessage={errorMessage}
+          {...rest}
+          error={error}
           id={id}
           maxLength={maxLength}
-          name={name}
-          onBlur={onBlur}
-          onChange={this.handleOnChange}
-          onFocus={onFocus}
-          placeholder={placeholder}
+          onChange={this.onChange}
+          value={value}
         />
         <Infos>
-          {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
-          {maxLength && <Countdown>{this.state.charsLeft}</Countdown>}
+          {error && <ErrorMessage>{error}</ErrorMessage>}
+          {maxLength && <Countdown>{charsLeft}</Countdown>}
         </Infos>
       </FieldGroup>
     );
@@ -90,30 +101,38 @@ class Textarea extends React.Component {
 }
 
 Textarea.defaultProps = {
-  errorMessage: '',
+  error: '',
   maxLength: 300,
   onBlur: () => {},
   onFocus: () => {},
+  onChange: () => {},
   placeholder: '',
+  value: '',
+  id: '',
+  label: '',
+  name: '',
 };
 
 Textarea.propTypes = {
   /** Error message */
-  errorMessage: PropTypes.string,
+  error: PropTypes.string,
   /** Id to associate with label */
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   /** Textarea label that will be displayed on browser */
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   /** Textarea max-length */
   maxLength: PropTypes.number,
   /** Textarea name */
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   /** Blur event handle function */
   onBlur: PropTypes.func,
   /** Focus event handle function */
   onFocus: PropTypes.func,
+  /** Change event handle function */
+  onChange: PropTypes.func,
   /** Placeholder to show a text inside textarea */
   placeholder: PropTypes.string,
+  value: PropTypes.string,
 };
 
 export default Textarea;
