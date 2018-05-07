@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
 
   .SplitPane.vertical  {
-    border-left: 16px solid #005ca4;
+    border-left: 64px solid rgb(7, 71, 166);
   }
 
   #root>div>div{
@@ -10,8 +10,8 @@
   }
 
   .Pane.vertical.Pane1 {
-    width: 212px !important;
     background-color: rgb(244, 245, 247) !important;
+    overflow: hidden !important;
   }
 
   .Pane.vertical.Pane1 ul li{
@@ -24,8 +24,9 @@
   }
 
   .Pane.vertical.Pane1 ul li > ul > li > div > div > div:nth-child(2) {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 12px;
+    display: none;
   }
 
   .Pane.vertical.Pane1 ul li > ul > li > ul {
@@ -37,6 +38,31 @@
     font-weight: normal;
   }
 
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3) div {
+    overflow-x: hidden;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3) {
+    overflow: hidden !important;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3):hover {
+    overflow: auto !important;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+
   .Resizer.vertical {
     background-color: rgb(244, 245, 247);
   }
@@ -44,8 +70,8 @@
   .Pane.vertical.Pane1>div>div>div>div>a {
     background-image: url(//static.catho.com.br/svg/site/logoCathoB2c.svg);
     background-repeat: no-repeat;
-    background-position: 62px;
-    background-size: 78px;
+    background-position: center;
+    background-size: 100px;
     border: none !important;
     text-indent: -9999px;
     padding: 20px;
@@ -57,6 +83,7 @@
     position: absolute !important;
     bottom: 10px !important;
     width: 100% !important;
+    display: none !important;
   }
 
   .Pane.vertical.Pane1>div>div>div>div:nth-child(2) input {
@@ -95,4 +122,86 @@
   .Pane.horizontal.Pane1>div>div {
     border: none !important;
   }
+
+  .lateral-menu {
+    list-style-type: none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+    padding: 12px;
+    margin: 0;
+  }
+
+  .lateral-menu-item {
+    margin-top: 15px;
+    border-radius: 50%;
+    padding: 7px 7px 3px 7px;
+    transition: all linear 0.2s;
+    cursor: pointer;
+  }
+
+  .lateral-menu-item:hover {
+    background-color: rgb(19, 62, 124);
+  }
 </style>
+
+<script>
+  const openSearch = () => {
+    window.onkeydown({
+      target: {
+        getAttribute: () => null,
+        tagName: 'body',
+      },
+      keyCode: 79,
+      ctrlKey: true,
+      shiftKey: true,
+      preventDefault: () => {},
+    });
+
+    const searchOverlay = document.querySelector('.ReactModal__Overlay.ReactModal__Overlay--after-open');
+    searchOverlay.style.backgroundColor = "#0000009c";
+    searchOverlay.style.zIndex = "1001";
+
+    const inputSearchWrapper = document.querySelector('.react-fuzzy-search');
+    inputSearchWrapper.style.padding = 0;
+    inputSearchWrapper.style.fontFamily = 'Montserrat';
+
+    const inputSearch = inputSearchWrapper.querySelector('div input');
+    inputSearch.style.border = 'none';
+    inputSearch.style.fontFamily = 'Montserrat';
+    inputSearch.style.fontSize = '36px';
+    inputSearch.style.fontWeight = '200';
+    inputSearch.style.padding = '10px 15px';
+  }
+
+  const hideMenu = () => {
+    const menu = document.querySelector('.Pane.vertical.Pane1');
+    menu.style.display = (menu.style.display == 'none') ? 'block' : 'none';
+  };
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    const verticalPane = document.getElementById("root");
+    const verticalPaneDiv = verticalPane.querySelector('div');
+
+    var lateralMenu = document.createElement("ul");
+    lateralMenu.className = 'lateral-menu';
+
+    lateralMenu.innerHTML = `
+      <li class="lateral-menu-item" onClick="openSearch()";>
+        <span class="sc-bwzfXH iQjDgX" aria-label="search">
+          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+            <path d="M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z" fill="#FFFFFF" fill-rule="evenodd"></path></svg>
+        </span>
+      </li>
+
+      <li class="lateral-menu-item" onClick="hideMenu();">
+        <span class="sc-bwzfXH iQjDgX" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation"><path d="M5 15h14v2H5zm0-8h14v2H5zm0 4h14v2H5z" fill="#FFFFFF" fill-rule="evenodd"></path></svg>
+        </span>
+      </li>
+    `;
+
+    verticalPane.insertBefore(lateralMenu, verticalPaneDiv);
+  });
+</script>
