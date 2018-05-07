@@ -3,25 +3,22 @@
 exports[`Input component  should match the snapshot 1`] = `
 <div
   checked={false}
-  className="sc-ifAKCX kdLyCF sc-htpNat hxsEuH"
+  className="sc-ifAKCX dCxOBT sc-htpNat hxsEuH"
   disabled={false}
-  onClick={[Function]}
 >
-  <input
-    checked={false}
-    className="sc-EHOje vChbq"
-    id=""
-    type="checkbox"
-  />
   <label
     checked={false}
-    className="sc-bxivhb hlAbFM sc-bwzfXH eQhPVJ"
+    className="sc-bxivhb bfHqnw sc-bwzfXH eQhPVJ"
     disabled={false}
-    htmlFor=""
   >
-     
+    <input
+      checked={false}
+      className="sc-EHOje vChbq"
+      id=""
+      onChange={[Function]}
+      type="checkbox"
+    />
     Label
-     
   </label>
 </div>
 `;
