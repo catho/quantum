@@ -36,7 +36,6 @@ const renderPropValue = (propValue, indentation) => {
     function: () => '{() => {}}',
     string: prop => `"${prop}"`,
     number: prop => `{${prop}}`,
-    boolean: prop => `{${prop}}`,
     object: prop => `{${jsonStr(prop, indentation)}}`,
     instanceOf: prop => `{${prop}}`,
   };
@@ -49,11 +48,13 @@ const renderPropValue = (propValue, indentation) => {
 function getProps(props, indentation) {
   const breakline = `\n${indentation}${spaces(INDENTATION_SIZE)}`;
 
-  return Object
-    .entries(props)
+  return Object.entries(props)
     .filter(([name, value]) => value && !['style', 'children'].includes(name))
-    .map(([prop, value], index) => `${index === 0 ? breakline : ''}${prop}=${renderPropValue(value, indentation)}`)
-    .join(breakline);
+    .map(([prop, value], index) => {
+      const propText = (typeof value === 'boolean') ? prop : `${prop}=${renderPropValue(value, indentation)}`;
+
+      return `${index === 0 ? breakline : ''}${propText}`;
+    }).join(breakline);
 }
 
 const componentToString = (component, state, level = 0) => {
