@@ -1,22 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Toggle component Should match the snapshot 1`] = `
-<div>
-  <input
-    checked={false}
-    className="sc-bwzfXH eKeXgs"
-    id="toggle"
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    type="checkbox"
-  />
+exports[`Input component  should match the snapshot 1`] = `
+<div
+  className="sc-htpNat hxsEuH"
+>
   <label
     checked={false}
-    className="sc-htpNat hrGmOQ sc-bdVaJa bMhKJi"
-    htmlFor="toggle"
+    className="sc-ifAKCX kSsJiV sc-bwzfXH eQhPVJ"
+    disabled={false}
   >
-    Simple toggle
+    <input
+      checked={false}
+      className="sc-bxivhb cRvGhf"
+      disabled={false}
+      id=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="checkbox"
+    />
+    
   </label>
 </div>
 `;

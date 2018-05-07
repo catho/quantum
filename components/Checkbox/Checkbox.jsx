@@ -110,26 +110,15 @@ class Checkbox extends React.Component {
   }
 
   render() {
-    const {
-      id,
-      label,
-      onChange,
-      disabled,
-      ...rest
-    } = this.props;
-
+    const { label, disabled, ...rest } = this.props;
     const { checked } = this.state;
 
     return (
-      <StyledFieldGroup
-        key={label}
-        checked={checked}
-        disabled={disabled}
-      >
+      <StyledFieldGroup checked={checked} disabled={disabled}>
         <StyledLabel checked={checked} disabled={disabled}>
           <StyledCheckbox
             {...rest}
-            id={id}
+            disabled={disabled}
             type="checkbox"
             checked={checked}
             onChange={this.onChange}
