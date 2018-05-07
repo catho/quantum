@@ -102,8 +102,6 @@ class Checkbox extends React.Component {
 
     if (disabled) return;
 
-    console.log('chamou')
-
     const { checked } = this.state;
 
     this.setState({ checked: !checked });
