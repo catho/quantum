@@ -39,17 +39,24 @@ class Dropdown extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      selectedItem: '',
-    };
+    const { value } = props;
+
+    this.state = { value };
   }
 
-  handleChange = (e) => {
-    const { value: selectedItem } = e.target;
+  componentWillUpdate(nextProps) {
+    if (nextProps.value !== this.state.value) {
+      this.state.value = nextProps.value;
+    }
+  }
 
-    this.setState({ selectedItem }, () => {
-      this.props.onSelectItem({ selectedItem: this.state.selectedItem });
-    });
+  onChange = (e) => {
+    const { onChange } = this.props;
+    const { target: { value } } = e;
+
+    this.setState({ value });
+
+    onChange(e, { value });
   }
 
   render() {
@@ -63,8 +70,7 @@ class Dropdown extends React.Component {
       ...rest
     } = this.props;
 
-    const { selectedItem } = this.state;
-    const value = selectedItem;
+    const { value } = this.state;
 
     return (
       <FieldGroup>
@@ -72,9 +78,10 @@ class Dropdown extends React.Component {
 
         <Select
           {...rest}
+          id={id}
           name={name}
           value={value}
-          onChange={this.handleChange}
+          onChange={this.onChange}
         >
           {placeholder && <option value="" disabled>{placeholder}</option>}
 
@@ -100,12 +107,9 @@ Dropdown.defaultProps = {
   placeholder: 'Select...',
   label: '',
   error: '',
-  items: [
-    { key: 'foo', value: 'foo' },
-    { key: 'bar', value: 'bar' },
-    { key: 'baz', value: 'baz' },
-  ],
-  onSelectItem: () => {},
+  items: [],
+  value: '',
+  onChange: () => {},
   onBlur: () => {},
   onFocus: () => {},
 };
@@ -120,7 +124,8 @@ Dropdown.propTypes = {
     key: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     value: PropTypes.node,
   })),
-  onSelectItem: PropTypes.func,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
 };

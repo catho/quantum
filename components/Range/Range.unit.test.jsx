@@ -22,20 +22,21 @@ describe('Input component ', () => {
   describe('with an "onChange" callback set', () => {
     const mockFn = jest.fn();
     const wrapper = shallow(<Range onChange={mockFn} />);
-    const range = wrapper.childAt(0);
+    const range = wrapper.find('input');
     const value = 30;
-    const valueOb = { value };
+    const valueObj = { value };
+    const mockEvent = { target: valueObj };
 
     it('should initialize with default value', () => {
       expect(wrapper.state('value')).toEqual(0);
     });
 
     it('should call the callback and set a new value', () => {
-      range.simulate('change', { target: valueOb });
+      range.simulate('change', mockEvent);
 
       expect(wrapper.state('value')).toEqual(value);
       expect(mockFn).toHaveBeenCalledTimes(1);
-      expect(mockFn).toHaveBeenCalledWith(valueOb);
+      expect(mockFn).toHaveBeenCalledWith(mockEvent, valueObj);
     });
   });
 

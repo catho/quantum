@@ -46,4 +46,20 @@ describe('Input component ', () => {
       expect(label.prop('htmlFor')).toEqual(styledInput.prop('id'));
     });
   });
+
+  describe('with an "onChange" callback set', () => {
+    const mockFn = jest.fn();
+    const wrapper = shallow(<Input onChange={mockFn} id="input" />);
+    const value = 'test';
+    const valueObj = { value };
+    const mockEvent = { target: valueObj };
+
+    it('should call the callback and set a new value', () => {
+      wrapper.find('#input').simulate('change', mockEvent);
+
+      expect(wrapper.state('value')).toEqual(value);
+      expect(mockFn).toHaveBeenCalledTimes(1);
+      expect(mockFn).toBeCalledWith(mockEvent, valueObj);
+    });
+  });
 });

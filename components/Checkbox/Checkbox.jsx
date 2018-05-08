@@ -24,10 +24,11 @@ const getColors = ({ disabled, checked }) => {
 const StyledLabel = styled(Label)`
   ${theme.mixins.transition()};
 
-  bottom: 7px;
   cursor: inherit;
   display: initial;
   position: relative;
+  padding-left: 30px;
+  top: 3px;
 
   ${({ disabled }) => disabled && `
     color: ${Colors.GREY['300']};
@@ -41,7 +42,7 @@ const StyledLabel = styled(Label)`
       content: ' ';
       display: inline-block;
       height: 14px;
-      left: -15px;
+      left: 9px;
       position: absolute;
       top: 1px;
       transform: rotate(45deg);
@@ -66,6 +67,8 @@ const StyledFieldGroup = styled(FieldGroup)`
     display: inline-block;
     height: 24px;
     width: 24px;
+    margin-right: 5px;
+    position: absolute;
   }
 
   &:hover:before {
@@ -80,42 +83,48 @@ const StyledCheckbox = styled.input`
 `;
 
 class Checkbox extends React.Component {
-  onClick = () => {
+  constructor(props) {
+    super(props);
+
+    const { checked } = props;
+
+    this.state = { checked };
+  }
+
+  componentWillUpdate(nextProps) {
+    if (nextProps.checked !== this.state.checked) {
+      this.state.checked = nextProps.checked;
+    }
+  }
+
+  onChange = (e) => {
     const { onChange, disabled } = this.props;
 
     if (disabled) return;
 
-    onChange({ checked: !this.props.checked });
+    const { checked } = this.state;
+
+    this.setState({ checked: !checked });
+
+    onChange(e, { checked: !checked });
   }
 
   render() {
-    const {
-      id,
-      label,
-      onChange,
-      checked,
-      disabled,
-      ...rest
-    } = this.props;
+    const { label, disabled, ...rest } = this.props;
+    const { checked } = this.state;
 
     return (
-      <StyledFieldGroup
-        key={label}
-        onClick={this.onClick}
-        checked={checked}
-        disabled={disabled}
-      >
-        <StyledCheckbox
-          {...rest}
-          id={id}
-          type="checkbox"
-          checked={checked}
-        />
-        {label && <StyledLabel
-          htmlFor={id}
-          checked={checked}
-          disabled={disabled}
-        > {label} </StyledLabel>}
+      <StyledFieldGroup checked={checked} disabled={disabled}>
+        <StyledLabel checked={checked} disabled={disabled}>
+          <StyledCheckbox
+            {...rest}
+            disabled={disabled}
+            type="checkbox"
+            checked={checked}
+            onChange={this.onChange}
+          />
+          {label}
+        </StyledLabel>
       </StyledFieldGroup>
     );
   }

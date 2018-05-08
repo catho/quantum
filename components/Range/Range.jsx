@@ -7,33 +7,38 @@ class Range extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      value: props.value,
-    };
+    const { value } = props;
+
+    this.state = { value };
   }
 
-  handleChange = (event) => {
-    this.setState({
-      value: Number(event.target.value),
-    }, () => this.props.onChange({
-      value: Number(this.state.value),
-    }));
+  componentWillUpdate(nextProps) {
+    if (nextProps.value !== this.state.value) {
+      this.state.value = nextProps.value;
+    }
+  }
+
+  handleChange = (e) => {
+    const { onChange } = this.props;
+    const { target: { value } } = e;
+
+    this.setState({ value: Number(value) });
+
+    onChange(e, { value: Number(value) });
   }
 
   render() {
-    const {
-      id, label, error, onBlur, onFocus, value,
-    } = this.props;
+    const { id, label, error } = this.props;
+    const { value } = this.state;
 
     return (
       <FieldGroup>
         { label && <Label htmlFor={id}> {label} </Label> }
         <input
+          {...this.props}
           id={id}
-          type="range"
           value={value}
-          onBlur={onBlur}
-          onFocus={onFocus}
+          type="range"
           onChange={this.handleChange}
         />
         {error && <ErrorMessage>{error}</ErrorMessage>}

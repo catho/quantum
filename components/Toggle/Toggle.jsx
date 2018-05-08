@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Label from '../shared/Label';
+import { Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 import theme from '../../theme';
 
-const StyledInput = styled.input`
+const Checkbox = styled.input`
   display: none;
 `;
 
 const StyledLabel = styled(Label)`
-  cursor: pointer;
+  ${({ disabled }) => `
+    cursor: ${disabled ? 'not-allowed' : 'pointer'};
+  `}
   display: inline-block;
   padding-right: 54px;
   position: relative;
@@ -21,7 +23,7 @@ const StyledLabel = styled(Label)`
   }
 
   &:before {
-    background: ${props => (props.checked ? Colors.SECONDARY[100] : Colors.GREY['200'])};
+    background: ${({ checked }) => (checked ? Colors.SECONDARY[100] : Colors.GREY[200])};
     border-radius: 10px;
     content: '';
     height: 16px;
@@ -33,9 +35,9 @@ const StyledLabel = styled(Label)`
   }
 
   &:after {
-    transform: ${props => (props.checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)')};
-    background-color: ${props => (props.checked ? Colors.SECONDARY[500] : Colors.WHITE)};
-    border: 1px solid ${props => (props.checked ? 'transparent' : Colors.GREY['300'])};
+    transform: ${({ checked }) => (checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)')};
+    background-color: ${({ checked, disabled }) => { if (disabled) return Colors.GREY[300]; return (checked ? Colors.SECONDARY[500] : Colors.WHITE); }};
+    border: 1px solid ${({ checked }) => (checked ? 'transparent' : Colors.GREY['300'])};
     border-radius: 50%;
     box-sizing: border-box;
     content: '';
@@ -47,44 +49,66 @@ const StyledLabel = styled(Label)`
   }
 
   &:hover:after{
-    background-color: ${Colors.SECONDARY[500]};
+    background-color: ${({ disabled }) => !disabled && Colors.SECONDARY[500]};
     border: 1px solid transparent;
   }
-
 `;
 
 class Toggle extends React.Component {
-  handleClick = () => {
-    this.props.onChange({ checked: !this.props.checked });
+  constructor(props) {
+    super(props);
+
+    const { checked } = props;
+
+    this.state = { checked };
+  }
+
+  componentWillUpdate({ checked }) {
+    if (checked !== this.state.checked) {
+      this.state.checked = checked;
+    }
+  }
+
+  onChange = (e) => {
+    const { onChange, disabled } = this.props;
+
+    if (disabled) return;
+
+    const { checked } = this.state;
+
+    this.setState({ checked: !checked });
+
+    onChange(e, { checked: !checked });
   }
 
   render() {
     const {
-      checked,
-      id,
-      label,
-      onBlur,
-      onFocus,
+      id, label, disabled, ...rest
     } = this.props;
+    const { checked } = this.state;
 
     return (
-      <div>
-        <StyledInput
-          checked={checked}
-          id={id}
-          type="checkbox"
-          onBlur={onBlur}
-          onClick={this.handleClick}
-          onFocus={onFocus}
-        />
-        <StyledLabel htmlFor={id} checked={checked}>{label}</StyledLabel>
-      </div>
+      <FieldGroup>
+        <StyledLabel checked={checked} disabled={disabled}>
+          <Checkbox
+            {...rest}
+            disabled={disabled}
+            checked={checked}
+            id={id}
+            type="checkbox"
+            onChange={this.onChange}
+          />
+          {label}
+        </StyledLabel>
+      </FieldGroup>
     );
   }
 }
 
 Toggle.defaultProps = {
+  id: '',
   checked: false,
+  disabled: false,
   label: '',
   onBlur: () => {},
   onChange: () => {},
@@ -92,12 +116,13 @@ Toggle.defaultProps = {
 };
 
 Toggle.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   checked: PropTypes.bool,
   label: PropTypes.string,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  disabled: PropTypes.bool,
 };
 
 export default Toggle;

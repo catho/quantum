@@ -7,6 +7,153 @@ exports[`Input component  should match the snapshot 1`] = `
   
   <select
     className="sc-bxivhb SQhGe"
+    id="dropdown"
+    name="Dropdown"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    value=""
+  >
+    <option
+      disabled={true}
+      value=""
+    >
+      Select...
+    </option>
+  </select>
+  <svg
+    className="sc-ifAKCX iUygZf"
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    style={
+      Object {
+        "color": undefined,
+        "verticalAlign": "middle",
+      }
+    }
+    viewBox="0 0 40 40"
+    width="1em"
+  >
+    <g>
+      <path
+        d="m12.3 13l7.7 7.7 7.7-7.7 2.3 2.4-10 10-10-10z"
+      />
+    </g>
+  </svg>
+  
+</div>
+`;
+
+exports[`Input component  with a label should match the snapshot 1`] = `
+<div
+  className="sc-htpNat hxsEuH"
+>
+  <label
+    className="sc-bwzfXH eQhPVJ"
+    htmlFor="dropdown"
+  >
+     
+    Text label
+     
+  </label>
+  <select
+    className="sc-bxivhb SQhGe"
+    id="dropdown"
+    name="Dropdown"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    value=""
+  >
+    <option
+      disabled={true}
+      value=""
+    >
+      Select...
+    </option>
+  </select>
+  <svg
+    className="sc-ifAKCX iUygZf"
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    style={
+      Object {
+        "color": undefined,
+        "verticalAlign": "middle",
+      }
+    }
+    viewBox="0 0 40 40"
+    width="1em"
+  >
+    <g>
+      <path
+        d="m12.3 13l7.7 7.7 7.7-7.7 2.3 2.4-10 10-10-10z"
+      />
+    </g>
+  </svg>
+  
+</div>
+`;
+
+exports[`Input component  with an error message should match the snapshot 1`] = `
+<div
+  className="sc-htpNat hxsEuH"
+>
+  
+  <select
+    className="sc-bxivhb SQhGe"
+    id="dropdown"
+    name="Dropdown"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    value=""
+  >
+    <option
+      disabled={true}
+      value=""
+    >
+      Select...
+    </option>
+  </select>
+  <svg
+    className="sc-ifAKCX iUygZf"
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    style={
+      Object {
+        "color": undefined,
+        "verticalAlign": "middle",
+      }
+    }
+    viewBox="0 0 40 40"
+    width="1em"
+  >
+    <g>
+      <path
+        d="m12.3 13l7.7 7.7 7.7-7.7 2.3 2.4-10 10-10-10z"
+      />
+    </g>
+  </svg>
+  <div
+    className="sc-bdVaJa kKTvpA"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`Input component  with items should match the snapshot 1`] = `
+<div
+  className="sc-htpNat hxsEuH"
+>
+  
+  <select
+    className="sc-bxivhb SQhGe"
+    id="dropdown"
     name="Dropdown"
     onBlur={[Function]}
     onChange={[Function]}
@@ -20,17 +167,17 @@ exports[`Input component  should match the snapshot 1`] = `
       Select...
     </option>
     <option
-      value="foo"
+      value="fooKey"
     >
       foo
     </option>
     <option
-      value="bar"
+      value="barKey"
     >
       bar
     </option>
     <option
-      value="baz"
+      value="bazKey"
     >
       baz
     </option>
