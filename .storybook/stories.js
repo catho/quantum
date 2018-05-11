@@ -1,4 +1,4 @@
-const path = './'
+const path = './';
 
 export default [
   'Introduction',
@@ -18,4 +18,4 @@ export default [
   'Loading',
   'Toggle',
   'Form',
-].map(s => `./${s}/${s}.story.jsx`)
+].map(s => `./${s}/${s}.story.jsx`);
