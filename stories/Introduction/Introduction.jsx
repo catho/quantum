@@ -10,7 +10,7 @@ const importHeader = `import Header from '@cathodevel/style-guide';
 export default () => <Header />;`;
 
 const HighlightWrapper = styled.div`
-  position:relative;
+  position: relative;
 `;
 
 const Introduction = () => (
@@ -41,7 +41,7 @@ const Introduction = () => (
       <Highlight language="javascript" className="highlight">
         {importHeader}
       </Highlight>
-      
+
       <CodeToClipboard code={importHeader} />
     </HighlightWrapper>
   </React.Fragment>
