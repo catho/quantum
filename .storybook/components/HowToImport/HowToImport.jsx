@@ -7,7 +7,7 @@ import '../../../stories/static/styleguide-highlight.css';
 import Title from '../Title';
 
 const HighlightWrapper = styled.div`
-  position:relative;
+  position: relative;
 `;
 
 const HowToImport = ({ importModules }) => {
