@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component  Should match snapshot 1`] = `
+<img
+  alt="Example image"
+  src="test-file-stub"
+/>
+`;
