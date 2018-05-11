@@ -51,6 +51,10 @@ injectGlobal`
     }
   }
 
+  pre {
+    margin: 0;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;

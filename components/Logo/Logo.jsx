@@ -8,6 +8,8 @@ class Logo extends Component {
   static B2B = LogoTypes.B2B;
   static B2C = LogoTypes.B2C;
   static Educacao = LogoTypes.Educacao;
+  static Google = LogoTypes.Google;
+  static Facebook = LogoTypes.Facebook;
 
   render() {
     const { src, ...props } = this.props;
@@ -19,8 +21,8 @@ class Logo extends Component {
 
 Logo.defaultProps = {
   src: LogoB2C,
-  width: 200,
-  height: 200,
+  width: 100,
+  height: 50,
 };
 
 Logo.propTypes = {
