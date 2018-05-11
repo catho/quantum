@@ -20,7 +20,8 @@ Image.propTypes = {
    */
   loader: PropTypes.node,
   /**
-   * Show a fallback element if non of the images could be loaded. This accepts any valid react element.
+   * Show a fallback element if non of the images could be loaded.
+   * This accepts any valid react element.
    */
   unloader: PropTypes.node,
 };
