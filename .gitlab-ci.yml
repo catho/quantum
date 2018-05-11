@@ -43,3 +43,5 @@ pages:
       - public
   only:
     - master
+  tags:
+  - style
