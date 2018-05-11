@@ -44,4 +44,4 @@ pages:
   only:
     - master
   tags:
-  - style
+    - style
