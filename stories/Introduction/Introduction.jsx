@@ -1,6 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import Title from '../../.storybook/components/Title';
+import CodeToClipboard from '../../.storybook/components/CodeToClipboard';
+
+const registry = 'registry="http://armazem.devel:4873/"';
+const yarnAdd = 'yarn add @cathodevel/style-guide';
+const importHeader = `import Header from '@cathodevel/style-guide';
+export default () => <Header />;`;
+
+const HighlightWrapper = styled.div`
+  position:relative;
+`;
 
 const Introduction = () => (
   <React.Fragment>
@@ -8,20 +19,31 @@ const Introduction = () => (
     <Title>Usage</Title>
 
     <p>Create a <code>.npmrc</code> file, with the following content:</p>
-    <Highlight language="javascript" className="highlight">
-      {'registry="http://armazem.devel:4873/'}
-    </Highlight>
+    <HighlightWrapper>
+      <Highlight language="javascript" className="highlight">
+        { registry }
+      </Highlight>
+
+      <CodeToClipboard code={registry} />
+    </HighlightWrapper>
 
     <p>Add as a dependency:</p>
-    <Highlight language="javascript" className="highlight">
-      yarn add @cathodevel/style-guide
-    </Highlight>
+    <HighlightWrapper>
+      <Highlight language="javascript" className="highlight">
+        { yarnAdd }
+      </Highlight>
+
+      <CodeToClipboard code={yarnAdd} />
+    </HighlightWrapper>
 
     <p>Use in your react project:</p>
-    <Highlight language="javascript" className="highlight">
-      {`import Header from '@cathodevel/style-guide';
-export default () => <Header />;`}
-    </Highlight>
+    <HighlightWrapper>
+      <Highlight language="javascript" className="highlight">
+        {importHeader}
+      </Highlight>
+      
+      <CodeToClipboard code={importHeader} />
+    </HighlightWrapper>
   </React.Fragment>
 );
 
