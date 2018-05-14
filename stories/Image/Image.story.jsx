@@ -38,6 +38,7 @@ const fallBackimages = (
       'http://notfound/404.jpg',
       'https://static.catho.com.br/images/site/avatarM.jpg',
     ]}
+    alt="Male Avatar"
   />
 );
 

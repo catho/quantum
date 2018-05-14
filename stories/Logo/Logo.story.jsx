@@ -36,7 +36,7 @@ storiesOf('7. Image', module)
           {logos.map((name) => {
             const Component = LogoTypes[name];
             return (
-              <StyledRow>
+              <StyledRow key={`row-${name}`}>
                 <Col phone={4}>
                   <CodeExample
                     code={`<Logo.${name} />`}
