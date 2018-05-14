@@ -34,23 +34,26 @@ const LogoExample = ({ name }) => {
 };
 
 storiesOf('7. Image', module)
-  .add('Logo', () => (
-    <Heading image={Atom} title="<Logo />">
-      <TabbedView>
-        <Tab title="Usage">
-          <HowToImport importModules="Logo" />
-          <p>You can use these logos:</p>
-          <ul>
-            {Object.keys(LogoTypes).map(name => <li key={name}>{name}</li>)}
-          </ul>
-          {Object.keys(LogoTypes).map(name => (<LogoExample key={`example-${name}`} name={name} />))}
-        </Tab>
-        <Tab title="API">
-          <AutoPropsApi component={Logo} ignoredProps={['src']} />
-        </Tab>
-      </TabbedView>
-    </Heading>
-  ));
+  .add('Logo', () => {
+    const logoList = Object.keys(LogoTypes);
+    return (
+      <Heading image={Atom} title="<Logo />">
+        <TabbedView>
+          <Tab title="Usage">
+            <HowToImport importModules="Logo" />
+            <p>You can use these logos:</p>
+            <ul>
+              {logoList.map(name => <li key={name}>{name}</li>)}
+            </ul>
+            {logoList.map(name => (<LogoExample key={`example-${name}`} name={name} />))}
+          </Tab>
+          <Tab title="API">
+            <AutoPropsApi component={Logo} ignoredProps={['src']} />
+          </Tab>
+        </TabbedView>
+      </Heading>
+    );
+  });
 
 LogoExample.propTypes = {
   name: PropTypes.string.isRequired,
