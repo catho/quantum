@@ -1,3 +1,10 @@
+## v0.3.0 - May/2018
+### Changed
+New components:
+- Image
+- Logo
+- Loader
+
 ## v0.2.1 - May/2018
 ### Changed
 - Doc improvements
