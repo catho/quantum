@@ -1,3 +1,7 @@
+## v0.2.1 - May/2018
+### Changed
+- Doc improvements
+
 ## v0.2.0 - April/2018
 ### Changed
 - export statements

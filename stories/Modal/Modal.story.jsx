@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
@@ -31,6 +32,8 @@ class ModalStory extends React.Component {
       <Heading image={Atom} title="<Modal />">
         <TabbedView>
           <Tab title="Usage">
+            <HowToImport importModules="RadioGroup, Radio" />
+
             <p>Use Modal component to add dialogs to your UI for lightboxes, user notifications, or completely custom content.</p>
             <p>A modal displays content that temporarily blocks interactions with the main view of a site.</p>
             <Row>

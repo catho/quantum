@@ -47,8 +47,8 @@ const FormExample = (
   </Form>
 );
 
-storiesOf('7. Form validation', module)
-  .add('Input', () => (
+storiesOf('3. Forms', module)
+  .add('Validation', () => (
     <Heading image={Atom} title="<Form />">
       <TabbedView>
         <Tab title="Usage">

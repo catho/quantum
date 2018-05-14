@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+import HowToImport from '../../.storybook/components/HowToImport';
 import { Radio, RadioGroup } from '../../components/Radio';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
@@ -37,6 +38,8 @@ stories
     <Heading image={Atom} title="<RadioGroup />">
       <TabbedView>
         <Tab title="Usage">
+          <HowToImport importModules="RadioGroup, Radio" />
+
           <StyledDiv>
             <p>We provide two components to use Radio Buttons.</p>
             <p><code>{'<RadioGroup>'}</code> and <code>{'<Radio>'}</code> must be used together and can be displayed inlined or blocked</p>
@@ -47,7 +50,6 @@ stories
             <Col phone={6}>
               <CodeExample
                 component={RadioBlock}
-                withImport="RadioGroup, Radio"
                 showTitle={false}
               />
             </Col>
@@ -64,7 +66,6 @@ stories
             <Col phone={6}>
               <CodeExample
                 component={RadioInline}
-                withImport="RadioGroup, Radio"
                 showTitle={false}
               />
             </Col>

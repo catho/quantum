@@ -9,6 +9,7 @@ const CodeBlock = styled.pre`
   background-color: #f6f8fa;
   padding: 10px;
   font-size: 14px;
+  min-height: 48px;
 `;
 
 const formatJSON = (key, value) => {

@@ -1,7 +1,8 @@
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
-import Frame from './decorators/Frame'
+import Frame from './decorators/Frame';
+import stories from './stories';
 
 setOptions({
   name: 'Catho Style-Guide',
@@ -17,7 +18,7 @@ addDecorator(Frame);
 const reqStories = require.context('../stories', true, /.story.jsx?$/);
 
 function loadStories() {
-  reqStories.keys().forEach((filename) => reqStories(filename));
+  stories.forEach((filename) => reqStories(filename));
 }
 
 configure(loadStories, module);
