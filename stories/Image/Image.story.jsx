@@ -112,7 +112,7 @@ storiesOf('7. Image', module)
           </StyledRow>
           <StyledRow>
             <Col desktop={12}>
-              <h3>Showing a loader</h3>
+              <h3>Custom loader</h3>
               <p>You can display a loader component until the image is completely downloaded.<br />Just pass a component inside <code>loader</code> prop.</p>
             </Col>
             <Col desktop={7}>
@@ -127,7 +127,7 @@ storiesOf('7. Image', module)
           </StyledRow>
           <StyledRow>
             <Col desktop={12}>
-              <h3>Show a fallback element if non of the images could be loaded:</h3>
+              <h3>Fallback element if non of the images could be loaded:</h3>
               <p>If all images from <code>src</code> prop fail, you can use a <code>unloader</code> prop to render a component as fallback.</p>
             </Col>
             <Col desktop={7}>

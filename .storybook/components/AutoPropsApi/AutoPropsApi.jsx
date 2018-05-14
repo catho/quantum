@@ -14,6 +14,10 @@ const failSafe = type => () => (
 );
 
 const filterIgnoredProps = (prop, ignoreds) => {
+  if (!ignoreds) {
+    return true;
+  }
+
   return !ignoreds.includes(prop);
 };
 

@@ -1,21 +1,23 @@
 import React from 'react';
 import Logo from './Logo';
-import LogoB2C from '../../static/logoB2c.svg';
-import LogoB2B from '../../static/logoB2b.svg';
-import LogoCourse from '../../static/logoEducacao.svg';
+import LogoCandidate from '../../static/logoB2c.svg';
+import LogoBusiness from '../../static/logoB2b.svg';
+import LogoEducation from '../../static/logoEducacao.svg';
 import LogoGoogle from '../../static/logoGoogle.svg';
 import LogoFacebook from '../../static/logoFacebook.svg';
 
 const types = {
-  B2B: props => (<Logo src={LogoB2B} {...props} />),
-  B2C: props => (<Logo src={LogoB2C} {...props} />),
-  Course: props => (<Logo src={LogoCourse} {...props} />),
+  Business: props => (<Logo src={LogoBusiness} {...props} />),
+  Candidate: props => (<Logo src={LogoCandidate} {...props} />),
+  Education: props => (<Logo src={LogoEducation} {...props} />),
   Facebook: props => (<Logo src={LogoFacebook} {...props} />),
   Google: props => (<Logo src={LogoGoogle} {...props} />),
 };
 
-types.B2B.displayName = 'Logo.B2B';
-types.B2C.displayName = 'Logo.B2C';
-types.Course.displayName = 'Logo.Course';
+types.Business.displayName = 'Logo.Business';
+types.Candidate.displayName = 'Logo.Candidate';
+types.Education.displayName = 'Logo.Education';
+types.Facebook.displayName = 'Logo.Facebook';
+types.Google.displayName = 'Logo.Google';
 
 export default types;

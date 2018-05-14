@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Image from '../Image';
-import LogoB2C from '../../static/logoB2c.svg';
+import LogoCandidate from '../../static/logoB2c.svg';
 import LogoTypes from './LogoTypes';
 
 class Logo extends Component {
-  static B2B = LogoTypes.B2B;
-  static B2C = LogoTypes.B2C;
-  static Course = LogoTypes.Course;
+  static Business = LogoTypes.Business;
+  static Candidate = LogoTypes.Candidate;
+  static Education = LogoTypes.Education;
   static Google = LogoTypes.Google;
   static Facebook = LogoTypes.Facebook;
 
@@ -20,7 +20,7 @@ class Logo extends Component {
 }
 
 Logo.defaultProps = {
-  src: LogoB2C,
+  src: LogoCandidate,
   width: 100,
   height: 50,
 };
