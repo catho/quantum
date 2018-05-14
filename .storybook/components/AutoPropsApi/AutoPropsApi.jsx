@@ -110,6 +110,7 @@ const AutoPropsApi = ({ component: Component, title, ignoredProps }) => (
 
 AutoPropsApi.defaultProps = {
   title: '',
+  ignoredProps: [],
 };
 
 AutoPropsApi.propTypes = {
