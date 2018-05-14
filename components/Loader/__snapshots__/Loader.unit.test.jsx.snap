@@ -9,11 +9,11 @@ exports[`Loader component should match the snapshot Default 1`] = `
   viewBox="0 0 400 130"
 >
   <rect
-    clipPath="url(#msyeep4zlxj)"
+    clipPath="url(#d610y4dv8hk)"
     height={130}
     style={
       Object {
-        "fill": "url(#k9rjf5vum5)",
+        "fill": "url(#s56j8gryi4)",
       }
     }
     width={400}
@@ -22,7 +22,7 @@ exports[`Loader component should match the snapshot Default 1`] = `
   />
   <defs>
     <clipPath
-      id="msyeep4zlxj"
+      id="d610y4dv8hk"
     >
       <rect
         height={130}
@@ -34,7 +34,7 @@ exports[`Loader component should match the snapshot Default 1`] = `
       />
     </clipPath>
     <linearGradient
-      id="k9rjf5vum5"
+      id="s56j8gryi4"
     >
       <stop
         offset="0%"
@@ -86,11 +86,11 @@ exports[`Loader component should match the snapshot IconList 1`] = `
   viewBox="0 0 400 130"
 >
   <rect
-    clipPath="url(#b3rn319ccng)"
+    clipPath="url(#izz5dj2jgal)"
     height={130}
     style={
       Object {
-        "fill": "url(#8n9i44nl3el)",
+        "fill": "url(#oi7bek6yndc)",
       }
     }
     width={400}
@@ -99,7 +99,7 @@ exports[`Loader component should match the snapshot IconList 1`] = `
   />
   <defs>
     <clipPath
-      id="b3rn319ccng"
+      id="izz5dj2jgal"
     >
       <circle
         cx="15"
@@ -166,7 +166,7 @@ exports[`Loader component should match the snapshot IconList 1`] = `
       />
     </clipPath>
     <linearGradient
-      id="8n9i44nl3el"
+      id="oi7bek6yndc"
     >
       <stop
         offset="0%"
@@ -218,11 +218,11 @@ exports[`Loader component should match the snapshot Image 1`] = `
   viewBox="0 0 400 130"
 >
   <rect
-    clipPath="url(#y8wlkfw6cpb)"
+    clipPath="url(#9x2d98d0ph)"
     height={130}
     style={
       Object {
-        "fill": "url(#wzxzrc80qrg)",
+        "fill": "url(#ap62y21m2n7)",
       }
     }
     width={400}
@@ -231,7 +231,7 @@ exports[`Loader component should match the snapshot Image 1`] = `
   />
   <defs>
     <clipPath
-      id="y8wlkfw6cpb"
+      id="9x2d98d0ph"
     >
       <rect
         height={130}
@@ -243,7 +243,7 @@ exports[`Loader component should match the snapshot Image 1`] = `
       />
     </clipPath>
     <linearGradient
-      id="wzxzrc80qrg"
+      id="ap62y21m2n7"
     >
       <stop
         offset="0%"
@@ -295,11 +295,11 @@ exports[`Loader component should match the snapshot List 1`] = `
   viewBox="0 0 400 130"
 >
   <rect
-    clipPath="url(#rg25924ydyl)"
+    clipPath="url(#1s94d0cfrrqj)"
     height={130}
     style={
       Object {
-        "fill": "url(#o7b8bq9nn5j)",
+        "fill": "url(#izfoo3fttf)",
       }
     }
     width={400}
@@ -308,7 +308,7 @@ exports[`Loader component should match the snapshot List 1`] = `
   />
   <defs>
     <clipPath
-      id="rg25924ydyl"
+      id="1s94d0cfrrqj"
     >
       <circle
         cx="10"
@@ -377,7 +377,7 @@ exports[`Loader component should match the snapshot List 1`] = `
       />
     </clipPath>
     <linearGradient
-      id="o7b8bq9nn5j"
+      id="izfoo3fttf"
     >
       <stop
         offset="0%"
@@ -429,11 +429,11 @@ exports[`Loader component should match the snapshot Text 1`] = `
   viewBox="0 0 400 130"
 >
   <rect
-    clipPath="url(#wnttq6jlb1g)"
+    clipPath="url(#jf3ylks5tj)"
     height={130}
     style={
       Object {
-        "fill": "url(#kqhd9r6osb)",
+        "fill": "url(#x7te71xk1l8)",
       }
     }
     width={400}
@@ -442,7 +442,7 @@ exports[`Loader component should match the snapshot Text 1`] = `
   />
   <defs>
     <clipPath
-      id="wnttq6jlb1g"
+      id="jf3ylks5tj"
     >
       <rect
         height="4"
@@ -502,7 +502,7 @@ exports[`Loader component should match the snapshot Text 1`] = `
       />
     </clipPath>
     <linearGradient
-      id="kqhd9r6osb"
+      id="x7te71xk1l8"
     >
       <stop
         offset="0%"
