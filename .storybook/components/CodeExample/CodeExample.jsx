@@ -7,9 +7,8 @@ import Title from '../Title';
 const CodeBlock = styled.pre`
   position: relative;
   background-color: #f6f8fa;
-  padding: 10px;
+  padding: 16px;
   font-size: 14px;
-  min-height: 48px;
 `;
 
 const formatJSON = (key, value) => {

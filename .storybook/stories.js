@@ -20,4 +20,5 @@ export default [
   'Form',
   'Image',
   'Logo',
+  'Loader',
 ].map(s => `./${s}/${s}.story.jsx`);
