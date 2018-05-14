@@ -13,6 +13,10 @@ const failSafe = type => () => (
   </span>
 );
 
+const filterIgnoredProps = (prop, ignoreds) => {
+  return !ignoreds.includes(prop);
+};
+
 const removeQuotes = (str) => { // "''"
   let withoutQuotes = str.replace(/'/g, '');
 
@@ -63,7 +67,7 @@ const renderPropType = (type = {}) => {
   return <span>{type.name}</span>;
 };
 
-const AutoPropsApi = ({ component: Component, title }) => (
+const AutoPropsApi = ({ component: Component, title, ignoredProps }) => (
   <React.Fragment>
     <Title>{title || 'Available props'}</Title>
     { Component.__docgenInfo &&
@@ -83,15 +87,17 @@ const AutoPropsApi = ({ component: Component, title }) => (
         {
           Component.__docgenInfo &&
 
-          Object.entries(Component.__docgenInfo.props).map(([name, value]) => (
-            <tr key={name}>
-              <td>{ name }</td>
-              <td>{ renderPropType(value.type) }</td>
-              <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
-              <td>{ value.required ? 'Yes' : 'No' }</td>
-              <td><ReactMarkdown source={value.description} /></td>
-            </tr>
-          ))
+          Object.entries(Component.__docgenInfo.props)
+            .filter(([name]) => filterIgnoredProps(name, ignoredProps))
+            .map(([name, value]) => (
+              <tr key={name}>
+                <td>{ name }</td>
+                <td>{ renderPropType(value.type) }</td>
+                <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
+                <td>{ value.required ? 'Yes' : 'No' }</td>
+                <td><ReactMarkdown source={value.description} /></td>
+              </tr>
+            ))
         }
       </tbody>
     </table>

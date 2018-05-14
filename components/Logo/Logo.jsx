@@ -7,7 +7,7 @@ import LogoTypes from './LogoTypes';
 class Logo extends Component {
   static B2B = LogoTypes.B2B;
   static B2C = LogoTypes.B2C;
-  static Educacao = LogoTypes.Educacao;
+  static Course = LogoTypes.Course;
   static Google = LogoTypes.Google;
   static Facebook = LogoTypes.Facebook;
 
