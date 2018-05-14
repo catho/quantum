@@ -3,7 +3,7 @@ import ContentLoader from 'react-content-loader';
 import PropTypes from 'prop-types';
 import LoaderTypes from './LoaderTypes';
 
-/** Placholder loader element
+/** Placeholder loader element
  */
 class Loader extends React.Component {
   static Image = LoaderTypes.Image;
