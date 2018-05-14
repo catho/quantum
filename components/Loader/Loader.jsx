@@ -48,6 +48,7 @@ Loader.defaultProps = {
 Loader.propTypes = {
   primaryColor: PropTypes.string,
   secondaryColor: PropTypes.string,
+  /** SVG to be rendered as a Loader */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
