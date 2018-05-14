@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import Logo from '../../components/Logo';
@@ -15,13 +16,22 @@ const StyledRow = styled(Row)`
   margin-bottom: 30px;
 `;
 
-const logos = [
-  'Business',
-  'Candidate',
-  'Education',
-  'Facebook',
-  'Google',
-];
+const LogoExample = ({ name }) => {
+  const Component = LogoTypes[name];
+  return (
+    <StyledRow key={`row-${name}`}>
+      <Col phone={4}>
+        <CodeExample
+          code={`<Logo.${name} />`}
+          showTitle={false}
+        />
+      </Col>
+      <Col phone={4}>
+        <Component />
+      </Col>
+    </StyledRow>
+  );
+};
 
 storiesOf('7. Image', module)
   .add('Logo', () => (
@@ -31,24 +41,9 @@ storiesOf('7. Image', module)
           <HowToImport importModules="Logo" />
           <p>You can use these logos:</p>
           <ul>
-            {logos.map(name => <li key={name}>{name}</li>)}
+            {Object.keys(LogoTypes).map(name => <li key={name}>{name}</li>)}
           </ul>
-          {logos.map((name) => {
-            const Component = LogoTypes[name];
-            return (
-              <StyledRow key={`row-${name}`}>
-                <Col phone={4}>
-                  <CodeExample
-                    code={`<Logo.${name} />`}
-                    showTitle={false}
-                  />
-                </Col>
-                <Col phone={4}>
-                  <Component />
-                </Col>
-              </StyledRow>
-            );
-          })}
+          {Object.keys(LogoTypes).map(name => (<LogoExample key={`example-${name}`} name={name} />))}
         </Tab>
         <Tab title="API">
           <AutoPropsApi component={Logo} ignoredProps={['src']} />
@@ -56,3 +51,7 @@ storiesOf('7. Image', module)
       </TabbedView>
     </Heading>
   ));
+
+LogoExample.propTypes = {
+  name: PropTypes.string.isRequired,
+};
