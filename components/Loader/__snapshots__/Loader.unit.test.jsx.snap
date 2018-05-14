@@ -1,0 +1,546 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader component should match the snapshot Default 1`] = `
+<svg
+  className={undefined}
+  preserveAspectRatio="xMidYMid meet"
+  style={undefined}
+  version="1.1"
+  viewBox="0 0 400 130"
+>
+  <rect
+    clipPath="url(#msyeep4zlxj)"
+    height={130}
+    style={
+      Object {
+        "fill": "url(#k9rjf5vum5)",
+      }
+    }
+    width={400}
+    x="0"
+    y="0"
+  />
+  <defs>
+    <clipPath
+      id="msyeep4zlxj"
+    >
+      <rect
+        height={130}
+        rx="5"
+        ry="5"
+        width={400}
+        x="0"
+        y="0"
+      />
+    </clipPath>
+    <linearGradient
+      id="k9rjf5vum5"
+    >
+      <stop
+        offset="0%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-2; 1"
+        />
+      </stop>
+      <stop
+        offset="50%"
+        stopColor="#CFD8DC"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1.5; 1.5"
+        />
+      </stop>
+      <stop
+        offset="100%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1; 2"
+        />
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>
+`;
+
+exports[`Loader component should match the snapshot IconList 1`] = `
+<svg
+  className={undefined}
+  preserveAspectRatio="xMidYMid meet"
+  style={undefined}
+  version="1.1"
+  viewBox="0 0 400 130"
+>
+  <rect
+    clipPath="url(#b3rn319ccng)"
+    height={130}
+    style={
+      Object {
+        "fill": "url(#8n9i44nl3el)",
+      }
+    }
+    width={400}
+    x="0"
+    y="0"
+  />
+  <defs>
+    <clipPath
+      id="b3rn319ccng"
+    >
+      <circle
+        cx="15"
+        cy="25"
+        r="14"
+      />
+      <rect
+        height="4"
+        rx="4"
+        ry="4"
+        width="100"
+        x="35"
+        y="18"
+      />
+      <rect
+        height="2"
+        rx="4"
+        ry="4"
+        width="50"
+        x="35"
+        y="30"
+      />
+      <circle
+        cx="15"
+        cy="65"
+        r="14"
+      />
+      <rect
+        height="4"
+        rx="4"
+        ry="4"
+        width="100"
+        x="35"
+        y="58"
+      />
+      <rect
+        height="2"
+        rx="4"
+        ry="4"
+        width="50"
+        x="35"
+        y="70"
+      />
+      <circle
+        cx="15"
+        cy="105"
+        r="14"
+      />
+      <rect
+        height="4"
+        rx="4"
+        ry="4"
+        width="100"
+        x="35"
+        y="98"
+      />
+      <rect
+        height="2"
+        rx="4"
+        ry="4"
+        width="50"
+        x="35"
+        y="110"
+      />
+    </clipPath>
+    <linearGradient
+      id="8n9i44nl3el"
+    >
+      <stop
+        offset="0%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-2; 1"
+        />
+      </stop>
+      <stop
+        offset="50%"
+        stopColor="#CFD8DC"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1.5; 1.5"
+        />
+      </stop>
+      <stop
+        offset="100%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1; 2"
+        />
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>
+`;
+
+exports[`Loader component should match the snapshot Image 1`] = `
+<svg
+  className={undefined}
+  preserveAspectRatio="xMidYMid meet"
+  style={undefined}
+  version="1.1"
+  viewBox="0 0 400 130"
+>
+  <rect
+    clipPath="url(#y8wlkfw6cpb)"
+    height={130}
+    style={
+      Object {
+        "fill": "url(#wzxzrc80qrg)",
+      }
+    }
+    width={400}
+    x="0"
+    y="0"
+  />
+  <defs>
+    <clipPath
+      id="y8wlkfw6cpb"
+    >
+      <rect
+        height={130}
+        rx="5"
+        ry="5"
+        width={400}
+        x="0"
+        y="0"
+      />
+    </clipPath>
+    <linearGradient
+      id="wzxzrc80qrg"
+    >
+      <stop
+        offset="0%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-2; 1"
+        />
+      </stop>
+      <stop
+        offset="50%"
+        stopColor="#CFD8DC"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1.5; 1.5"
+        />
+      </stop>
+      <stop
+        offset="100%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1; 2"
+        />
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>
+`;
+
+exports[`Loader component should match the snapshot List 1`] = `
+<svg
+  className={undefined}
+  preserveAspectRatio="xMidYMid meet"
+  style={undefined}
+  version="1.1"
+  viewBox="0 0 400 130"
+>
+  <rect
+    clipPath="url(#rg25924ydyl)"
+    height={130}
+    style={
+      Object {
+        "fill": "url(#o7b8bq9nn5j)",
+      }
+    }
+    width={400}
+    x="0"
+    y="0"
+  />
+  <defs>
+    <clipPath
+      id="rg25924ydyl"
+    >
+      <circle
+        cx="10"
+        cy="15"
+        r="4"
+      />
+      <rect
+        height="4"
+        rx="5"
+        ry="5"
+        width="220"
+        x="25"
+        y="13"
+      />
+      <circle
+        cx="10"
+        cy="40"
+        r="4"
+      />
+      <rect
+        height="4"
+        rx="5"
+        ry="5"
+        width="220"
+        x="25"
+        y="38"
+      />
+      <circle
+        cx="10"
+        cy="65"
+        r="4"
+      />
+      <rect
+        height="4"
+        rx="5"
+        ry="5"
+        width="220"
+        x="25"
+        y="63"
+      />
+      <circle
+        cx="10"
+        cy="90"
+        r="4"
+      />
+      <rect
+        height="4"
+        rx="5"
+        ry="5"
+        width="220"
+        x="25"
+        y="88"
+      />
+      <circle
+        cx="10"
+        cy="115"
+        r="4"
+      />
+      <rect
+        height="4"
+        rx="5"
+        ry="5"
+        width="220"
+        x="25"
+        y="113"
+      />
+    </clipPath>
+    <linearGradient
+      id="o7b8bq9nn5j"
+    >
+      <stop
+        offset="0%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-2; 1"
+        />
+      </stop>
+      <stop
+        offset="50%"
+        stopColor="#CFD8DC"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1.5; 1.5"
+        />
+      </stop>
+      <stop
+        offset="100%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1; 2"
+        />
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>
+`;
+
+exports[`Loader component should match the snapshot Text 1`] = `
+<svg
+  className={undefined}
+  preserveAspectRatio="xMidYMid meet"
+  style={undefined}
+  version="1.1"
+  viewBox="0 0 400 130"
+>
+  <rect
+    clipPath="url(#wnttq6jlb1g)"
+    height={130}
+    style={
+      Object {
+        "fill": "url(#kqhd9r6osb)",
+      }
+    }
+    width={400}
+    x="0"
+    y="0"
+  />
+  <defs>
+    <clipPath
+      id="wnttq6jlb1g"
+    >
+      <rect
+        height="4"
+        rx="3"
+        ry="3"
+        width="250"
+        x="0"
+        y="15"
+      />
+      <rect
+        height="4"
+        rx="3"
+        ry="3"
+        width="220"
+        x="0"
+        y="30"
+      />
+      <rect
+        height="4"
+        rx="3"
+        ry="3"
+        width="170"
+        x="0"
+        y="45"
+      />
+      <rect
+        height="4"
+        rx="3"
+        ry="3"
+        width="250"
+        x="0"
+        y="60"
+      />
+      <rect
+        height="4"
+        rx="3"
+        ry="3"
+        width="200"
+        x="0"
+        y="75"
+      />
+      <rect
+        height="4"
+        rx="3"
+        ry="3"
+        width="140"
+        x="0"
+        y="90"
+      />
+      <rect
+        height="4"
+        rx="3"
+        ry="3"
+        width="80"
+        x="0"
+        y="105"
+      />
+    </clipPath>
+    <linearGradient
+      id="kqhd9r6osb"
+    >
+      <stop
+        offset="0%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-2; 1"
+        />
+      </stop>
+      <stop
+        offset="50%"
+        stopColor="#CFD8DC"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1.5; 1.5"
+        />
+      </stop>
+      <stop
+        offset="100%"
+        stopColor="#ECEFF1"
+        stopOpacity={1}
+      >
+        <animate
+          attributeName="offset"
+          dur="2s"
+          repeatCount="indefinite"
+          values="-1; 2"
+        />
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>
+`;

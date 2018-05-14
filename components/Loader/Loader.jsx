@@ -6,7 +6,6 @@ import LoaderTypes from './LoaderTypes';
 /** Placholder loader element
  */
 class Loader extends React.Component {
-  static Card = LoaderTypes.Card;
   static Image = LoaderTypes.Image;
   static Text = LoaderTypes.Text;
   static List = LoaderTypes.List;
