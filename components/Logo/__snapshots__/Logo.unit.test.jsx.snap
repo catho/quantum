@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component  Should match snapshot with Business logo 1`] = `null`;
+
+exports[`Logo component  Should match snapshot with Candidate logo 1`] = `null`;
+
+exports[`Logo component  Should match snapshot with Education logo 1`] = `null`;
+
+exports[`Logo component  Should match snapshot with Facebook logo 1`] = `null`;
+
+exports[`Logo component  Should match snapshot with Google logo 1`] = `null`;
+
+exports[`Logo component  Should match snapshot with default logo 1`] = `null`;

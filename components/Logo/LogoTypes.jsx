@@ -7,11 +7,11 @@ import LogoGoogle from '../../static/logoGoogle.svg';
 import LogoFacebook from '../../static/logoFacebook.svg';
 
 const types = {
-  Business: props => (<Logo src={LogoBusiness} {...props} />),
-  Candidate: props => (<Logo src={LogoCandidate} {...props} />),
-  Education: props => (<Logo src={LogoEducation} {...props} />),
-  Facebook: props => (<Logo src={LogoFacebook} {...props} />),
-  Google: props => (<Logo src={LogoGoogle} {...props} />),
+  Business: props => (<Logo src={LogoBusiness} alt="Catho Empresas" {...props} />),
+  Candidate: props => (<Logo src={LogoCandidate} alt="Catho" {...props} />),
+  Education: props => (<Logo src={LogoEducation} alt="Catho Educação" {...props} />),
+  Facebook: props => (<Logo src={LogoFacebook} alt="Facebook" {...props} />),
+  Google: props => (<Logo src={LogoGoogle} alt="Google" {...props} />),
 };
 
 types.Business.displayName = 'Logo.Business';
