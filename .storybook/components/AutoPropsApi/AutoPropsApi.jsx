@@ -115,6 +115,7 @@ AutoPropsApi.defaultProps = {
 AutoPropsApi.propTypes = {
   component: PropTypes.instanceOf(Object).isRequired,
   title: PropTypes.string,
+  ignoredProps: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default AutoPropsApi;
