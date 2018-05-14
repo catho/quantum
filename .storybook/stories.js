@@ -18,4 +18,6 @@ export default [
   'Loading',
   'Toggle',
   'Form',
+  'Image',
+  'Logo',
 ].map(s => `./${s}/${s}.story.jsx`);
