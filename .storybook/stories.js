@@ -1,5 +1,3 @@
-const path = './';
-
 export default [
   'Introduction',
   'Colors',
@@ -21,4 +19,5 @@ export default [
   'Image',
   'Logo',
   'Loader',
+  'CLI',
 ].map(s => `./${s}/${s}.story.jsx`);
