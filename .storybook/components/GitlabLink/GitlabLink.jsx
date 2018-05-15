@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../../../components/Colors';
 import GitlabLogo from '../../static/logoGitlab.svg';
 
 const baseUrl = 'http://gitlab.devel/frontend-platform/style-guide/blob/master/components/';
@@ -24,13 +23,11 @@ const Logo = styled.img`
   height: 30px;
 `;
 
-const GitlabLink = ({ name }) => {
-  return (
-    <Link href={`${baseUrl}${name}`} target="_blank">
-      <Logo src={GitlabLogo} title="View Source" alt="View Source" />
-    </Link>
-  )
-};
+const GitlabLink = ({ name }) => (
+  <Link href={`${baseUrl}${name}`} target="_blank">
+    <Logo src={GitlabLogo} title="View Source" alt="View Source" />
+  </Link>
+);
 
 GitlabLink.propTypes = {
   name: PropTypes.string.isRequired,
