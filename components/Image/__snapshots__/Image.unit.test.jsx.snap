@@ -6,7 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Image
     alt="Example image"
-    loader={null}
+    loader={<Loader.Image />}
     src="example.png"
     unloader={null}
   />,
@@ -24,7 +24,7 @@ ShallowWrapper {
     "props": Object {
       "alt": "Example image",
       "decode": true,
-      "loader": null,
+      "loader": <Loader.Image />,
       "src": "example.png",
       "unloader": null,
     },
@@ -40,7 +40,7 @@ ShallowWrapper {
       "props": Object {
         "alt": "Example image",
         "decode": true,
-        "loader": null,
+        "loader": <Loader.Image />,
         "src": "example.png",
         "unloader": null,
       },

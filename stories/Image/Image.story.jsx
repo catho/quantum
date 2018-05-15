@@ -26,55 +26,73 @@ const FallbackComponent = styled.div`
   flex-direction: column;
   text-align: center;
 `;
-const basicUsage = (
-  <Image
-    src="https://static.catho.com.br/images/site/avatarF.jpg"
-    alt="Female Avatar"
-  />
-);
 
-const fallBackimages = (
-  <Image
-    src={[
-      'http://notfound/404.jpg',
-      'https://static.catho.com.br/images/site/avatarM.jpg',
-    ]}
-    alt="Male Avatar"
-  />
-);
-
-const withLoader = (
-  <Image
-    src="https://static.catho.com.br/images/candidato/home/banner-responsive/banner_062015.jpg"
-    width={430}
-    height={200}
-    alt="Example"
-    loader={<Loading visible size={60} />}
-  />
-);
-const withUnloader = (
-  <Image
-    src="http://notfound/404.jpg"
-    alt="Example"
-    unloader={<FallbackComponent>Failed</FallbackComponent>}
-  />
-);
-const withUnloaderCode = `<Image
-  src="http://notfound/404.jpg"
-  alt="Example"
-  unloader={<FallbackComponent>Failed</FallbackComponent>}
-/>
-`;
-const withLoaderCode = `// First import your loading component
+const examples = {
+  basicUsage: {
+    component: (
+      <Image
+        src="https://static.catho.com.br/images/site/avatarF.jpg"
+        alt="Female Avatar"
+      />
+    ),
+    code: `<Image
+  src="https://static.catho.com.br/images/site/avatarF.jpg"
+  alt="Female Avatar"
+/>`,
+  },
+  fallBackimages: {
+    component: (
+      <Image
+        src={[
+          'http://notfound/404.jpg',
+          'https://static.catho.com.br/images/site/avatarM.jpg',
+        ]}
+        alt="Male Avatar"
+      />
+    ),
+    code: `<Image
+  src={[
+    'http://notfound/404.jpg',
+    'https://static.catho.com.br/images/site/avatarM.jpg',
+  ]}
+  alt="Male Avatar"
+/>`,
+  },
+  withLoader: {
+    component: (
+      <Image
+        src="https://static.catho.com.br/images/candidato/home/banner-responsive/banner_062015.jpg"
+        width={430}
+        height={200}
+        alt="Example"
+        loader={<Loading visible size={50} />}
+      />
+    ),
+    code: `// First import your loading component
 import { Loading } from '@cathodevel/style-guide';
 
 // Then use with 'loader' prop
 <Image
   src="https://static.catho.com.br/images/candidato/home/banner-responsive/banner_062015.jpg"
   alt="Female Avatar"
-  loader={<Loading size={60} visible />}
-/>;
-`;
+  loader={<Loading visible size={50} />}
+/>`,
+  },
+  withUnloader: {
+    component: (
+      <Image
+        src="http://notfound/404.jpg"
+        alt="Example"
+        unloader={<FallbackComponent>Failed</FallbackComponent>}
+      />
+    ),
+    code: `<Image
+  src="http://notfound/404.jpg"
+  alt="Example"
+  unloader={<FallbackComponent>Failed</FallbackComponent>}
+/>`,
+  },
+};
 
 storiesOf('7. Image', module)
   .add('Image', () => (
@@ -89,12 +107,13 @@ storiesOf('7. Image', module)
             </Col>
             <Col desktop={7}>
               <CodeExample
-                component={basicUsage}
+                component={examples.basicUsage.component}
+                code={examples.basicUsage.code}
                 showTitle={false}
               />
             </Col>
             <Col desktop={5}>
-              {basicUsage}
+              {examples.basicUsage.component}
             </Col>
           </StyledRow>
           <StyledRow>
@@ -104,12 +123,13 @@ storiesOf('7. Image', module)
             </Col>
             <Col desktop={7}>
               <CodeExample
-                component={fallBackimages}
+                component={examples.fallBackimages.component}
+                code={examples.fallBackimages.code}
                 showTitle={false}
               />
             </Col>
             <Col desktop={5}>
-              {fallBackimages}
+              {examples.fallBackimages.component}
             </Col>
           </StyledRow>
           <StyledRow>
@@ -119,12 +139,13 @@ storiesOf('7. Image', module)
             </Col>
             <Col desktop={7}>
               <CodeExample
+                component={examples.withLoader.component}
+                code={examples.withLoader.code}
                 showTitle={false}
-                component={withLoaderCode}
               />
             </Col>
             <Col desktop={5}>
-              {withLoader}
+              {examples.withLoader.component}
             </Col>
           </StyledRow>
           <StyledRow>
@@ -134,12 +155,13 @@ storiesOf('7. Image', module)
             </Col>
             <Col desktop={7}>
               <CodeExample
+                component={examples.withUnloader.component}
+                code={examples.withUnloader.code}
                 showTitle={false}
-                code={withUnloaderCode}
               />
             </Col>
             <Col desktop={5}>
-              {withUnloader}
+              {examples.withUnloader.component}
             </Col>
           </StyledRow>
         </Tab>
