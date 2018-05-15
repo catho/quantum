@@ -9,7 +9,7 @@ import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import { Col, Row } from '../../components/Grid';
-import Loading from '../../components/Loading';
+import Loader from '../../components/Loader';
 
 const StyledRow = styled(Row)`
   margin-bottom: 30px;
@@ -48,7 +48,7 @@ const withLoader = (
     width={430}
     height={200}
     alt="Example"
-    loader={<Loading visible size={60} />}
+    loader={<Loader.Image width={430} height={200} />}
   />
 );
 const withUnloader = (
@@ -71,7 +71,7 @@ import { Loading } from '@cathodevel/style-guide';
 <Image
   src="https://static.catho.com.br/images/candidato/home/banner-responsive/banner_062015.jpg"
   alt="Female Avatar"
-  loader={<Loading size={60} visible />}
+  loader={<Loader.Image />}
 />;
 `;
 
