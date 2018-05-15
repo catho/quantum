@@ -4,11 +4,31 @@ import styled from 'styled-components';
 import CodeToClipboard from '../CodeToClipboard';
 import Title from '../Title';
 
+const ScrollWrapper = styled.div`
+  position: relative;
+`;
+
 const CodeBlock = styled.pre`
   position: relative;
   background-color: #f6f8fa;
-  padding: 16px;
+  padding: 15px 50px 15px 15px;
   font-size: 14px;
+
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+
 `;
 
 const formatJSON = (key, value) => {
@@ -91,11 +111,13 @@ const CodeExample = ({
   return (
     <React.Fragment>
       {showTitle && <Title>Code</Title>}
-      <CodeBlock>
-        {withImport && msg(withImport)}
-        { codeStr }
-        <CodeToClipboard code={codeStr} />
-      </CodeBlock>
+      <ScrollWrapper>
+        <CodeBlock>
+          {withImport && msg(withImport)}
+          { codeStr }
+        </CodeBlock>
+        <CodeToClipboard code={codeStr} backgroundColor={"#f6f8fa"}/>
+      </ScrollWrapper>
     </React.Fragment>
   );
 };
