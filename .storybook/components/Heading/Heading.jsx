@@ -34,7 +34,7 @@ const Heading = ({
           height="60"
         />
       }
-      {title ? title : `<${name} />`}
+      {title || `<${name} />`}
       {
         name &&
         <GitlabLink name={name} />
