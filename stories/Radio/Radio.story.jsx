@@ -9,6 +9,7 @@ import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
 import CodeExample from '../../.storybook/components/CodeExample';
 import Atom from '../static/atom.svg';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const RadioGroupWrapper = styled.div`
   padding: 15px;
@@ -38,7 +39,8 @@ stories
     <Heading image={Atom} title="<RadioGroup />">
       <TabbedView>
         <Tab title="Usage">
-          <HowToImport importModules="RadioGroup, Radio" />
+          <GitlabLink name="Radio" />
+          <HowToImport importModules="RadioGroup, Radio" componentName="RadioGroup" />
 
           <StyledDiv>
             <p>We provide two components to use Radio Buttons.</p>

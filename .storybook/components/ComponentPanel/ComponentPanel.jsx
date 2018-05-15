@@ -5,6 +5,7 @@ import AutoProps from '../AutoProps';
 import LivePreview from '../LivePreview';
 import CodeExample from '../CodeExample';
 import HowToImport from '../HowToImport';
+import GitlabLink from '../GitlabLink';
 
 class ComponentPanel extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class ComponentPanel extends React.Component {
       <React.Fragment>
         <Row>
           <Col desktop={12} tablet={12}>
+            <GitlabLink name={this.props.importModules} />
             <HowToImport importModules={this.props.importModules} />
           </Col>
 

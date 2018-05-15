@@ -10,6 +10,7 @@ import CodeExample from '../../.storybook/components/CodeExample';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import { Col, Row } from '../../components/Grid';
 import Loading from '../../components/Loading';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const StyledRow = styled(Row)`
   margin-bottom: 30px;
@@ -80,6 +81,7 @@ storiesOf('7. Image', module)
     <Heading image={Atom} title="<Image />">
       <TabbedView>
         <Tab title="Usage">
+          <GitlabLink name="Image" />
           <HowToImport importModules="Image" />
           <StyledRow>
             <Col desktop={12}>

@@ -10,6 +10,7 @@ import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
 import Modal from '../../components/Modal';
 import Atom from '../static/atom.svg';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const StyledButton = styled(Button)`
   margin-top: 16px;
@@ -32,7 +33,8 @@ class ModalStory extends React.Component {
       <Heading image={Atom} title="<Modal />">
         <TabbedView>
           <Tab title="Usage">
-            <HowToImport importModules="RadioGroup, Radio" />
+            <GitlabLink name="Modal" />
+            <HowToImport importModules="Modal" />
 
             <p>Use Modal component to add dialogs to your UI for lightboxes, user notifications, or completely custom content.</p>
             <p>A modal displays content that temporarily blocks interactions with the main view of a site.</p>

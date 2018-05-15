@@ -6,6 +6,7 @@ import HowToImport from '../../.storybook/components/HowToImport';
 import Title from '../../.storybook/components/Title';
 import Subtitle from '../../.storybook/components/Subtitle';
 import { Container, Row, Col, Hide } from '../../components/Grid';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const StyledTable = styled.table`
   width: 100%;
@@ -34,6 +35,7 @@ const StyledCol = styled(Col)`
 const Grid = () => (
   <React.Fragment>
     <p>If you are familiar with <strong>Boostrap</strong>, you can easily understand ours.</p>
+    <GitlabLink name="Grid" />
     <HowToImport importModules={'Container, Row, Col, Hide'} />
 
     <p>

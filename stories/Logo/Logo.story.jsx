@@ -11,6 +11,7 @@ import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import { Col, Row } from '../../components/Grid';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const StyledRow = styled(Row)`
   margin-bottom: 30px;
@@ -40,6 +41,7 @@ storiesOf('7. Image', module)
       <Heading image={Atom} title="<Logo />">
         <TabbedView>
           <Tab title="Usage">
+            <GitlabLink name="Logo" />
             <HowToImport importModules="Logo" />
             <p>You can use these logos:</p>
             <ul>

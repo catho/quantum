@@ -5,6 +5,7 @@ import CodeToClipboard from '../../.storybook/components/CodeToClipboard';
 import Colors from '../../components/Colors';
 import Title from '../../.storybook/components/Title';
 import HowToImport from '../../.storybook/components/HowToImport';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const ColorPallete = styled.div`
   display: grid;
@@ -92,6 +93,7 @@ export default () => (
   <React.Fragment>
     <p>Catho has some segments, below you can see the <strong>Candidates</strong> default color palette.</p>
 
+    <GitlabLink name="Colors" />
     <HowToImport importModules="Colors" />
 
     <ColorPallete>
