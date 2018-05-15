@@ -29,8 +29,8 @@ const gifUrls = {
   component: 'http://gitlab.devel/frontend-platform/create-catho-app/raw/48e095202aeddf47099b9e64d78e58b77320b090/examples/component-stateful.gif',
 }
 
-storiesOf('8. CLI', module)
-  .add('Create Catho App', () => (
+storiesOf('1. Foundation', module)
+  .add('CLI', () => (
     <React.Fragment>
       <Heading image={Formula} title="Create Catho App" />
 
