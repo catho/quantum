@@ -46,9 +46,11 @@ const Heading = ({
 
 Heading.defaultProps = {
   image: null,
+  name: null,
 };
 
 Heading.propTypes = {
+  name: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([

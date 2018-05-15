@@ -5,7 +5,6 @@ import AutoProps from '../AutoProps';
 import LivePreview from '../LivePreview';
 import CodeExample from '../CodeExample';
 import HowToImport from '../HowToImport';
-import GitlabLink from '../GitlabLink';
 
 class ComponentPanel extends React.Component {
   constructor(props) {
