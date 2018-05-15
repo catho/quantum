@@ -42,7 +42,7 @@ const loaderTypes = Object.keys(LoaderTypes);
 
 storiesOf('6. Others', module)
   .add('Loader', () => (
-    <Heading name="Loader" image={Atom} title="<Loader />">
+    <Heading name="Loader" image={Atom}>
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Loader" />

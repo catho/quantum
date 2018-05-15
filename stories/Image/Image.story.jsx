@@ -78,7 +78,7 @@ import { Loading } from '@cathodevel/style-guide';
 
 storiesOf('7. Image', module)
   .add('Image', () => (
-    <Heading name="Image" image={Atom} title="<Image />">
+    <Heading name="Image" image={Atom}>
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Image" />

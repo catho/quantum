@@ -38,7 +38,7 @@ storiesOf('7. Image', module)
   .add('Logo', () => {
     const logoList = Object.keys(LogoTypes);
     return (
-      <Heading name="Logo" image={Atom} title="<Logo />">
+      <Heading name="Logo" image={Atom}>
         <TabbedView>
           <Tab title="Usage">
             <HowToImport importModules="Logo" />

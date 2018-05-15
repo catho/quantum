@@ -30,7 +30,7 @@ class ModalStory extends React.Component {
 
   render() {
     return (
-      <Heading name="Modal" image={Atom} title="<Modal />">
+      <Heading name="Modal" image={Atom}>
         <TabbedView>
           <Tab title="Usage">
             <HowToImport importModules="Modal" />
