@@ -116,7 +116,7 @@ const CodeExample = ({
           {withImport && msg(withImport)}
           { codeStr }
         </CodeBlock>
-        <CodeToClipboard code={codeStr} backgroundColor={"#f6f8fa"}/>
+        <CodeToClipboard code={codeStr} backgroundColor="#f6f8fa" />
       </ScrollWrapper>
     </React.Fragment>
   );

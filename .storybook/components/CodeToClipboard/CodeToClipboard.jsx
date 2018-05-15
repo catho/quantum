@@ -35,7 +35,7 @@ const IcoTooltip = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: ${props => props.backgroundColor ? props.backgroundColor : 'inherit'} !important;
+  background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'inherit')};
   border: none;
   cursor: pointer;
 
@@ -90,11 +90,13 @@ class CodeToClipboard extends React.Component {
 
 CodeToClipboard.defaultProps = {
   color: '#CCC',
+  backgroundColor: 'inherit',
 };
 
 CodeToClipboard.propTypes = {
   code: PropTypes.string.isRequired,
   color: PropTypes.string,
+  backgroundColor: PropTypes.string,
 };
 
 export default CodeToClipboard;
