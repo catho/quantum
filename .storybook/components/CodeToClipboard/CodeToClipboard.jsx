@@ -35,7 +35,7 @@ const IcoTooltip = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: inherit;
+  background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'inherit')};
   border: none;
   cursor: pointer;
 
@@ -62,7 +62,7 @@ class CodeToClipboard extends React.Component {
   }
 
   render() {
-    const { code, color } = this.props;
+    const { code, color, backgroundColor } = this.props;
     const tips = [
       'I\'m lazy.',
       'Loved it, copy.',
@@ -74,7 +74,7 @@ class CodeToClipboard extends React.Component {
 
     return (
       <AsideCopyToClipboard text={code}>
-        <Button onClick={this.loveCallback}>
+        <Button onClick={this.loveCallback} backgroundColor={backgroundColor}>
           <CopyCodeIco hasJustCopied={this.state.hasJustCopied} />
           <IcoTooltip
             tip={tips}
@@ -90,11 +90,13 @@ class CodeToClipboard extends React.Component {
 
 CodeToClipboard.defaultProps = {
   color: '#CCC',
+  backgroundColor: 'inherit',
 };
 
 CodeToClipboard.propTypes = {
   code: PropTypes.string.isRequired,
   color: PropTypes.string,
+  backgroundColor: PropTypes.string,
 };
 
 export default CodeToClipboard;
