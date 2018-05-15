@@ -30,10 +30,9 @@ class ModalStory extends React.Component {
 
   render() {
     return (
-      <Heading image={Atom} title="<Modal />">
+      <Heading name="Modal" image={Atom} title="<Modal />">
         <TabbedView>
           <Tab title="Usage">
-            <GitlabLink name="Modal" />
             <HowToImport importModules="Modal" />
 
             <p>Use Modal component to add dialogs to your UI for lightboxes, user notifications, or completely custom content.</p>

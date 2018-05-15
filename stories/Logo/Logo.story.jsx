@@ -38,10 +38,9 @@ storiesOf('7. Image', module)
   .add('Logo', () => {
     const logoList = Object.keys(LogoTypes);
     return (
-      <Heading image={Atom} title="<Logo />">
+      <Heading name="Logo" image={Atom} title="<Logo />">
         <TabbedView>
           <Tab title="Usage">
-            <GitlabLink name="Logo" />
             <HowToImport importModules="Logo" />
             <p>You can use these logos:</p>
             <ul>

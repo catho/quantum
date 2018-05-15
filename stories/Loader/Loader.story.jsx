@@ -42,10 +42,9 @@ const loaderTypes = Object.keys(LoaderTypes);
 
 storiesOf('6. Others', module)
   .add('Loader', () => (
-    <Heading image={Atom} title="<Loader />">
+    <Heading name="Loader" image={Atom} title="<Loader />">
       <TabbedView>
         <Tab title="Usage">
-          <GitlabLink name="Loader" />
           <HowToImport importModules="Loader" />
           <p>You can use these Loaders:</p>
           <ul>

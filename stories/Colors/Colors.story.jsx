@@ -6,7 +6,7 @@ import Formula from '../static/formula.svg';
 
 storiesOf('1. Foundation', module)
   .add('Color Palette', () => (
-    <Heading image={Formula} title="Color Palette">
+    <Heading name="Colors" image={Formula} title="Color Palette">
       <Colors />
     </Heading>
   ));

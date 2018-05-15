@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import GitlabLink from '../GitlabLink';
 
 const Title = styled.h1`
   display: flex;
@@ -18,24 +19,27 @@ const Title = styled.h1`
 `;
 
 const Heading = ({
+  name,
   title,
   image,
   children,
 }) => (
   <React.Fragment>
-    {
-      <Title>
-        { image &&
-          <img
-            alt={title}
-            src={image}
-            width="60"
-            height="60"
-          />
-        }
-        {title}
-      </Title>
-    }
+    <Title>
+      { image &&
+        <img
+          alt={title}
+          src={image}
+          width="60"
+          height="60"
+        />
+      }
+      {title}
+      {
+        name &&
+        <GitlabLink name={name} />
+      }
+    </Title>
     { children }
   </React.Fragment>
 );

@@ -15,7 +15,7 @@ const AutoExample = ({
   importModules = name,
   additionalTabs,
 }) => (
-  <Heading image={Atom} title={`<${name} />`}>
+  <Heading name={name} image={Atom} title={`<${name} />`}>
     <TabbedView>
       <Tab title="Usage">
         <ComponentPanel

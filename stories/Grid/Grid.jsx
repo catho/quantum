@@ -35,7 +35,6 @@ const StyledCol = styled(Col)`
 const Grid = () => (
   <React.Fragment>
     <p>If you are familiar with <strong>Boostrap</strong>, you can easily understand ours.</p>
-    <GitlabLink name="Grid" />
     <HowToImport importModules={'Container, Row, Col, Hide'} />
 
     <p>

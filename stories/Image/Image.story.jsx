@@ -78,10 +78,9 @@ import { Loading } from '@cathodevel/style-guide';
 
 storiesOf('7. Image', module)
   .add('Image', () => (
-    <Heading image={Atom} title="<Image />">
+    <Heading name="Image" image={Atom} title="<Image />">
       <TabbedView>
         <Tab title="Usage">
-          <GitlabLink name="Image" />
           <HowToImport importModules="Image" />
           <StyledRow>
             <Col desktop={12}>

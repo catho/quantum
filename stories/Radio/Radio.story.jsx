@@ -36,10 +36,9 @@ const RadioInline = (
 const stories = storiesOf('3. Forms', module);
 stories
   .add('Radio Button', () => (
-    <Heading image={Atom} title="<RadioGroup />">
+    <Heading name="Radio" image={Atom} title="<RadioGroup />">
       <TabbedView>
         <Tab title="Usage">
-          <GitlabLink name="Radio" />
           <HowToImport importModules="RadioGroup, Radio" componentName="RadioGroup" />
 
           <StyledDiv>

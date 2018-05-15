@@ -26,7 +26,6 @@ class ComponentPanel extends React.Component {
       <React.Fragment>
         <Row>
           <Col desktop={12} tablet={12}>
-            <GitlabLink name={this.props.importModules} />
             <HowToImport importModules={this.props.importModules} />
           </Col>
 
