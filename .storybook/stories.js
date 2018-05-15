@@ -20,4 +20,5 @@ export default [
   'Logo',
   'Loader',
   'CLI',
+  'Mask',
 ].map(s => `./${s}/${s}.story.jsx`);
