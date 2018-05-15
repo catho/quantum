@@ -7,7 +7,7 @@ const baseUrl = 'http://gitlab.devel/frontend-platform/style-guide/blob/master/c
 
 const Link = styled.a`
   position: absolute;
-  right: 0px;
+  right: 20px;
   filter: grayscale(100%);
   opacity: 0.6;
   transition: all 0.3s;
