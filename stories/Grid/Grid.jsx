@@ -6,6 +6,7 @@ import HowToImport from '../../.storybook/components/HowToImport';
 import Title from '../../.storybook/components/Title';
 import Subtitle from '../../.storybook/components/Subtitle';
 import { Container, Row, Col, Hide } from '../../components/Grid';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const StyledTable = styled.table`
   width: 100%;

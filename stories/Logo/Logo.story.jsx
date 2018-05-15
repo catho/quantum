@@ -11,6 +11,7 @@ import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import { Col, Row } from '../../components/Grid';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const StyledRow = styled(Row)`
   margin-bottom: 30px;
@@ -37,7 +38,7 @@ storiesOf('7. Image', module)
   .add('Logo', () => {
     const logoList = Object.keys(LogoTypes);
     return (
-      <Heading image={Atom} title="<Logo />">
+      <Heading name="Logo" image={Atom}>
         <TabbedView>
           <Tab title="Usage">
             <HowToImport importModules="Logo" />

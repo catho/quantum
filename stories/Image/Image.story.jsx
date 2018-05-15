@@ -10,6 +10,7 @@ import CodeExample from '../../.storybook/components/CodeExample';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import { Col, Row } from '../../components/Grid';
 import Loading from '../../components/Loading';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const StyledRow = styled(Row)`
   margin-bottom: 30px;
@@ -77,7 +78,7 @@ import { Loading } from '@cathodevel/style-guide';
 
 storiesOf('7. Image', module)
   .add('Image', () => (
-    <Heading image={Atom} title="<Image />">
+    <Heading name="Image" image={Atom}>
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Image" />
