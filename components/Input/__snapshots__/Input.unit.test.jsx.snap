@@ -7,7 +7,6 @@ exports[`Input component  should match the snapshot 1`] = `
   <input
     className="sc-EHOje hjysc"
     id=""
-    mask={false}
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
@@ -28,7 +27,6 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   <input
     className="sc-EHOje hjysc"
     id="input-with-label"
-    mask={false}
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
@@ -54,7 +52,6 @@ exports[`Input component  with a passwordLink prop should match the snapshot 1`]
   <input
     className="sc-EHOje jDVffv"
     id=""
-    mask={false}
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
@@ -81,7 +78,6 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   <input
     className="sc-EHOje gSRaIc"
     id=""
-    mask={false}
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}

@@ -9,7 +9,6 @@ Array [
       className="sc-EHOje hjysc"
       id=""
       list="_datalist"
-      mask={false}
       maxLength=""
       onBlur={[Function]}
       onChange={[Function]}
