@@ -139,7 +139,7 @@ class Input extends React.Component {
           <InputLabel
             htmlFor={id}
             error={error}
-            withValue={!!value}
+            withValue={!!parsed}
           >
             {label}
           </InputLabel>
@@ -160,12 +160,12 @@ Input.defaultProps = {
   label: '',
   mask: '',
   maxLength: '',
-  onBlur: () => {},
-  onChange: () => {},
-  onFocus: () => {},
   passwordLink: '',
   type: 'text',
   value: '',
+  onBlur: () => {},
+  onChange: () => {},
+  onFocus: () => {},
 };
 
 Input.propTypes = {
@@ -185,13 +185,13 @@ Input.propTypes = {
     'link',
     'password',
   ]),
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
   // TODO: documentation
   mask: PropTypes.string,
   passwordLink: PropTypes.string,
   value: PropTypes.string,
+  onBlur: PropTypes.func,
+  onChange: PropTypes.func,
+  onFocus: PropTypes.func,
 };
 
 export default Input;
