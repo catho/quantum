@@ -1,35 +1,39 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const PLACEHOLDERS = {
-  9: /\d/
-};
+const PLACEHOLDERS = { 9: /\d/ };
+const ALLOWED_CHARS = /[\s()./-]/;
 
-const Mask = (props) => {
-  const { value, pattern } = props;
+const Mask = ({ value, pattern }) => {
+  if (!pattern) return value;
+
   let parsed = '';
+  let valueIndex = 0;
+  let patternIndex = 0;
 
-  for (let i = 0; i < pattern.length; i += 1) {
-    const char = value[i];
-    const regex = PLACEHOLDERS[pattern[i]];
-    const passed = regex ? regex.test(char) : true;
+  while (patternIndex < pattern.length && valueIndex < value.length) {
+    const valueChar = value[valueIndex];
+    const patternChar = pattern[patternIndex];
+    const regex = PLACEHOLDERS[patternChar];
 
-    if (!passed) break;
-
-    parsed = parsed.concat(char);
-
-    console.log({
-      i, regex, char, passed,
-    });
+    if (regex && regex.test(valueChar)) {
+      parsed = parsed.concat(valueChar);
+      valueIndex += 1;
+      patternIndex += 1;
+    } else if (ALLOWED_CHARS.test(patternChar)) {
+      parsed = parsed.concat(patternChar);
+      patternIndex += 1;
+      valueIndex += ALLOWED_CHARS.test(valueChar) ? 1 : 0;
+    } else {
+      break;
+    }
   }
-
-  console.log({ pattern, value, parsed });
 
   return parsed;
 };
 
 Mask.propTypes = {
   value: PropTypes.string.isRequired,
+  pattern: PropTypes.string.isRequired,
 };
 
 export default Mask;

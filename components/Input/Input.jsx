@@ -6,6 +6,7 @@ import InputTypes from './InputTypes';
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 import theme from '../../theme';
+import maskFn from '../Mask';
 
 const sharedStyle = css`
   font-size: 12px;
@@ -116,9 +117,12 @@ class Input extends React.Component {
       error,
       onChange,
       passwordLink,
+      mask,
       ...rest
     } = this.props;
     const { value } = this.state;
+
+    const parsed = mask ? maskFn({ value, pattern: mask }) : value;
 
     return (
       <InputFieldGroup>
@@ -127,7 +131,7 @@ class Input extends React.Component {
           id={id}
           passwordLink={passwordLink}
           onChange={this.onChange}
-          value={value}
+          value={parsed}
           error={error}
         />
 
@@ -154,7 +158,7 @@ Input.defaultProps = {
   error: '',
   id: '',
   label: '',
-  mask: false,
+  mask: '',
   maxLength: '',
   onBlur: () => {},
   onChange: () => {},
@@ -184,16 +188,8 @@ Input.propTypes = {
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  /**
-   * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
-   */
-  mask: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.bool,
-    PropTypes.instanceOf(RegExp),
-    PropTypes.func,
-    PropTypes.string,
-  ]),
+  // TODO: documentation
+  mask: PropTypes.string,
   passwordLink: PropTypes.string,
   value: PropTypes.string,
 };
