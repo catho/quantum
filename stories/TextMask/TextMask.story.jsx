@@ -59,7 +59,7 @@ const TextMaskCode = `<TextMask text="06460090" mask={[[/\\d/, /\\d/, /\\d/, /\\
 storiesOf('8. Mask', module)
   .add('Text', () => (
     <React.Fragment>
-      <Heading image={Atom} title={'<TextMask />'} />
+      <Heading image={Atom} name="TextMask" />
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="TextMask" />
