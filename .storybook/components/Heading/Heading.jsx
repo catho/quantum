@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Atom from '../../static/atom.svg';
 
 const Title = styled.h1`
   display: flex;
@@ -41,7 +42,7 @@ const Heading = ({
 );
 
 Heading.defaultProps = {
-  image: null,
+  image: Atom,
 };
 
 Heading.propTypes = {
