@@ -10,8 +10,8 @@ const HighlightWrapper = styled.div`
   position: relative;
 `;
 
-const HowToImport = ({ importModules }) => {
-  const msg = `import ${'{'} ${importModules} ${'}'} from '@cathodevel/style-guide';`;
+const HowToImport = ({ importModules, from }) => {
+  const msg = `import ${importModules ? `{ ${importModules} } from ` : ''}'${from}';`;
 
   return (
     <React.Fragment>
@@ -28,8 +28,15 @@ const HowToImport = ({ importModules }) => {
   );
 };
 
+HowToImport.defaultProps = {
+  importModules: null,
+  from: '@cathodevel/style-guide',
+};
+
+
 HowToImport.propTypes = {
-  importModules: PropTypes.string.isRequired,
+  importModules: PropTypes.string,
+  from: PropTypes.string,
 };
 
 export default HowToImport;

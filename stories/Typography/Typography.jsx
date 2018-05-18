@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from '../../.storybook/components/Title';
+import HowToImport from '../../.storybook/components/HowToImport';
 import Colors from '../../components/Colors';
 
 const Font = styled.div`
@@ -61,6 +62,10 @@ const Li = styled.li`
 const Typography = () => (
   <Font>
     <p><strong>Oxygen</strong> is the standard typeface for Catho on the web</p>
+
+    <p>In order to use the default Catho Typography, just import the font css:</p>
+
+    <HowToImport from="@cathodevel/style-guide/static/typography.css" />
 
     <Title>Headings</Title>
 
