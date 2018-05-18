@@ -1,3 +1,7 @@
+## v0.3.3 - May/2018
+### Changed
+Add default font-family (typography)
+
 ## v0.3.2 - May/2018
 ### Changed
 Add CLI documentation
