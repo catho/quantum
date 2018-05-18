@@ -163,12 +163,12 @@ Input.defaultProps = {
   label: '',
   mask: false,
   maxLength: '',
-  onBlur: () => {},
-  onChange: () => {},
-  onFocus: () => {},
   passwordLink: '',
   type: 'text',
   value: '',
+  onBlur: () => {},
+  onChange: () => {},
+  onFocus: () => {},
 };
 
 Input.propTypes = {
@@ -188,9 +188,6 @@ Input.propTypes = {
     'link',
     'password',
   ]),
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
   /**
    * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
    */
@@ -203,6 +200,9 @@ Input.propTypes = {
   ]),
   passwordLink: PropTypes.string,
   value: PropTypes.string,
+  onBlur: PropTypes.func,
+  onChange: PropTypes.func,
+  onFocus: PropTypes.func,
 };
 
 export default Input;
