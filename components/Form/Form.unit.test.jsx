@@ -3,6 +3,8 @@ import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import validations from './validations';
 import Form from './Form';
+import Input from '../Input';
+import Button from '../Button';
 
 const onValidSubmitCallback = jest.fn();
 const onSubmitCallback = jest.fn();
@@ -10,20 +12,21 @@ const mockEvent = { preventDefault: jest.fn() };
 
 const FormWithoutValidations = () => (
   <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-    <Form.Input name="name" label="Name" />
+    <Input name="name" label="Name" />
   </Form>
 );
 
 const FormWithValidations = () => (
   <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-    <Form.Input name="required" label="required" validate={validations.Required} />
-    <Form.Input name="cpf" label="CPF" validate={validations.CPF} />
-    <Form.Input name="cep" label="CEP" validate={validations.CEP} />
-    <Form.Input name="birthday" label="Birthday" validate={validations.Date} />
-    <Form.Input name="email" label="E-mail" validate={validations.Email} />
-    <Form.Input name="address" label="Address" validate={validations.MinLength} minLength="8" />
-    <Form.Input name="country" label="Country" validate={validations.MaxLength} maxLength="3" />
-    <Form.Submit />
+    <Input name="required" label="required" validate={validations.Required} />
+    <Input name="cpf" label="CPF" validate={validations.CPF} />
+    <Input name="cep" label="CEP" validate={validations.CEP} />
+    <Input name="birthday" label="Birthday" validate={validations.Date} />
+    <Input name="email" label="E-mail" validate={validations.Email} />
+    <Input name="address" label="Address" validate={validations.MinLength} minLength="8" />
+    <Input name="country" label="Country" validate={validations.MaxLength} maxLength="3" />
+
+    <Button type="submit"> Enviar </Button>
   </Form>
 );
 
@@ -140,7 +143,7 @@ describe('Form component ', () => {
     it('Should exec validations in diferent formats', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-          <Form.Input
+          <Input
             name="name"
             label="Name"
             minLength="8"
@@ -160,7 +163,7 @@ describe('Form component ', () => {
 
       expect(onSubmitCallback).toHaveBeenCalled();
 
-      const input = wrapper.find(Form.Input);
+      const input = wrapper.find(Input);
 
       input.simulate(
         'change',
@@ -178,7 +181,7 @@ describe('Form component ', () => {
     it('Should be false when an error occurred', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-          <Form.Input
+          <Input
             name="foo"
             validate={validations.Required}
           />
@@ -195,10 +198,10 @@ describe('Form component ', () => {
       expect(wrapper.state('valid')).toBe(false);
     });
 
-    it('Should be true when everything is ok', () => {
+    it.only('Should be true when everything is ok', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-          <Form.Input
+          <Input
             name="foo"
             validate={validations.Required}
             value="foo"

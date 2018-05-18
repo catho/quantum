@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import React from 'react';
+import MaskedInput from 'react-text-mask';
 import InputTypes from './InputTypes';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
@@ -116,19 +117,25 @@ class Input extends React.Component {
       error,
       onChange,
       passwordLink,
+      mask,
       ...rest
     } = this.props;
     const { value } = this.state;
 
     return (
       <InputFieldGroup>
-        <InputTag
+        <MaskedInput
           {...rest}
           id={id}
-          passwordLink={passwordLink}
-          onChange={this.onChange}
+          mask={mask}
           value={value}
-          error={error}
+          onChange={this.onChange}
+          render={(ref, props) => (
+            <InputTag
+              innerRef={ref}
+              {...props}
+            />
+          )}
         />
 
         { label &&
