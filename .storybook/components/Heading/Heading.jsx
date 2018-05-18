@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Atom from '../../static/atom.svg';
+import GitlabLink from '../GitlabLink';
 
 const Title = styled.h1`
   display: flex;
@@ -19,33 +20,38 @@ const Title = styled.h1`
 `;
 
 const Heading = ({
+  name,
   title,
   image,
   children,
 }) => (
   <React.Fragment>
-    {
-      <Title>
-        { image &&
-          <img
-            alt={title}
-            src={image}
-            width="60"
-            height="60"
-          />
-        }
-        {title}
-      </Title>
-    }
+    <Title>
+      { image &&
+        <img
+          alt={title}
+          src={image}
+          width="60"
+          height="60"
+        />
+      }
+      {title || `<${name} />`}
+      {
+        name &&
+        <GitlabLink name={name} />
+      }
+    </Title>
     { children }
   </React.Fragment>
 );
 
 Heading.defaultProps = {
   image: Atom,
+  name: null,
 };
 
 Heading.propTypes = {
+  name: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([

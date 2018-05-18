@@ -1,6 +1,10 @@
-## v0.3.3 - May/2018
+## v0.3.4 - May/2018
 ### Changed
 Add TextMask Component
+
+## v0.3.3 - May/2018
+### Changed
+Add default font-family (typography)
 
 ## v0.3.2 - May/2018
 ### Changed

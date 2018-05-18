@@ -6,7 +6,7 @@ import Formula from '../static/formula.svg';
 
 storiesOf('1. Foundation', module)
   .add('Grid System', () => (
-    <Heading image={Formula} title="Grid">
+    <Heading name="Grid" image={Formula} title="Grid">
       <Grid />
     </Heading>
   ));

@@ -16,7 +16,7 @@ const AutoExample = ({
   additionalTabs,
 }) => (
   <React.Fragment>
-    <Heading image={Atom} title={`<${name} />`} />
+    <Heading name={name} image={Atom} />
     <TabbedView>
       <Tab title="Usage">
         <ComponentPanel

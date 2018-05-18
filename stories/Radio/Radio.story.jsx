@@ -9,6 +9,7 @@ import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
 import CodeExample from '../../.storybook/components/CodeExample';
 import Atom from '../static/atom.svg';
+import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const RadioGroupWrapper = styled.div`
   padding: 15px;
@@ -35,10 +36,10 @@ const RadioInline = (
 const stories = storiesOf('3. Forms', module);
 stories
   .add('Radio Button', () => (
-    <Heading image={Atom} title="<RadioGroup />">
+    <Heading name="Radio" image={Atom} title="<RadioGroup />">
       <TabbedView>
         <Tab title="Usage">
-          <HowToImport importModules="RadioGroup, Radio" />
+          <HowToImport importModules="RadioGroup, Radio" componentName="RadioGroup" />
 
           <StyledDiv>
             <p>We provide two components to use Radio Buttons.</p>
