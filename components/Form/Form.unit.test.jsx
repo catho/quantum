@@ -198,7 +198,7 @@ describe('Form component ', () => {
       expect(wrapper.state('valid')).toBe(false);
     });
 
-    it.only('Should be true when everything is ok', () => {
+    it('Should be true when everything is ok', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
           <Input

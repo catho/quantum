@@ -21,6 +21,14 @@ class Form extends React.Component {
       errors: {},
       valid: false,
     };
+
+    const { children } = this.props;
+
+    React
+      .Children
+      .map(children, ({ props: { name, value } }) => {
+        if (value) this.state.values[name] = value;
+      });
   }
 
   _createClones = children => React
