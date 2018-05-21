@@ -9,7 +9,6 @@ class TextMask extends React.Component {
   static CPF = TextMaskTypes.CPF;
   static Date = TextMaskTypes.Date;
   static Phone = TextMaskTypes.Phone;
-  static Password = TextMaskTypes.Password;
 
   render() {
     const { children, text, mask } = this.props;
@@ -17,7 +16,7 @@ class TextMask extends React.Component {
 
     return mask
       ? conformToMask(input, mask).conformedValue
-      : <React.Fragment>{input}</React.Fragment>;
+      : input;
   }
 }
 
@@ -36,10 +35,12 @@ TextMask.propTypes = {
    */
   mask: PropTypes.oneOfType([
     PropTypes.array,
-    PropTypes.bool,
-    PropTypes.instanceOf(RegExp),
     PropTypes.func,
-    PropTypes.string,
+    PropTypes.bool,
+    PropTypes.shape({
+      mask: PropTypes.oneOfType([PropTypes.array, PropTypes.func]),
+      pipe: PropTypes.func,
+    }),
   ]),
 };
 
