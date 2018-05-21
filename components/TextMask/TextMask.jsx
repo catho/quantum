@@ -23,17 +23,14 @@ class TextMask extends React.Component {
 
 TextMask.defaultProps = {
   text: '',
-  children: null,
+  children: '',
   mask: false,
 };
 
 TextMask.propTypes = {
   /** Value to be masked. If ommited, it will be the children prop. */
   text: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  children: PropTypes.string,
   /**
    * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
    */

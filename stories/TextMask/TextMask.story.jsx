@@ -16,18 +16,18 @@ import {
 
 const examples = {
   CEP: {
-    code: 'Alameda Juari, 262 - Barueri, SP - <TextMask.CEP>06460-090</TextMask.CEP>',
+    code: 'Alameda Juari, 262 - Barueri, SP - <TextMask.CEP>06460090</TextMask.CEP>',
     component: (
       <React.Fragment>
-        Alameda Juari, 262 - Barueri, SP - <TextMask.CEP>06460-090</TextMask.CEP>
+        Alameda Juari, 262 - Barueri, SP - <TextMask.CEP>06460090</TextMask.CEP>
       </React.Fragment>
     ),
   },
   CPNJ: {
-    code: 'CNPJ: <TextMask.CNPJ text="03.753.088/0001-00" />',
+    code: 'CNPJ: <TextMask.CNPJ text="03753088000100" />',
     component: (
       <React.Fragment>
-        CNPJ: <TextMask.CNPJ text="03.753.088/0001-00" />
+        CNPJ: <TextMask.CNPJ text="03753088000100" />
       </React.Fragment>
     ),
   },
@@ -78,15 +78,12 @@ storiesOf('8. Mask', module)
             <br />
           </p>
           <p>
-            Like Input, you can provide your own mask using <code>mask</code> property,
-            or use the available:
+            Like Input, you can provide your own mask using <code>mask</code> property
+            or use one of the availables:
             <ul>
               { Object.keys(TextMaskTypes).map(type => <li key={type}>{type}: <code>{`<TextMast.${type} />`}</code> </li>) }
             </ul>
 
-          </p>
-          <p>
-            You can also provide your custom mask using the <code>mask</code> property.
           </p>
           <br />
         </Tab>
