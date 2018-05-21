@@ -70,7 +70,7 @@ describe('TextMask component', () => {
       });
     });
 
-    it('Custom maks', () => {
+    it('Custom mask', () => {
       const original = '5102341298321293';
       const expected = '5102 3412 9832 1293';
       const mask = [/\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/];
