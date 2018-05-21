@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Atom from '../../static/atom.svg';
 import GitlabLink from '../GitlabLink';
 
 const Title = styled.h1`
@@ -45,7 +46,7 @@ const Heading = ({
 );
 
 Heading.defaultProps = {
-  image: null,
+  image: Atom,
   name: null,
 };
 

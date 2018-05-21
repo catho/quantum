@@ -19,4 +19,5 @@ export default [
   'Image',
   'Logo',
   'Loader',
+  'TextMask',
 ].map(s => `./${s}/${s}.story.jsx`);

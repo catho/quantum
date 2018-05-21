@@ -5,6 +5,7 @@ import CodeExample from '../../.storybook/components/CodeExample';
 import Example from '../../.storybook/components/Example';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
+import Button from '../../components/Button';
 import Atom from '../static/atom.svg';
 
 import { Form, Validations } from '../../components/Form';
@@ -41,9 +42,9 @@ const FormExample = (
     <Input.Date
       name="date"
       placeholder="Birthday"
-      validate={Validations.Required}
+      validate={Validations.Date}
     />
-    <Form.Submit />
+    <Button type="submit"> Enviar </Button>
   </Form>
 );
 
