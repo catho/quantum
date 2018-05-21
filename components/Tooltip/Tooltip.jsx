@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
-import Button from '../Button';
 import { skins, placement } from './options';
 
 const Tip = styled.div`
+  opacity: ${props => (props.show === true ? '1' : '0')};
   background-color: ${props => skins[props.skin]};
   border-color: ${props => skins[props.skin]};
   border-radius: 2px;
@@ -14,9 +14,13 @@ const Tip = styled.div`
   font-weight: bold;
   padding: 5px 20px;
   position: absolute;
-  margin-left: -${props => props.width / 2}px;
-  left: 50%;
-  top: -50px;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+
+  ${props => props.place === 'top' && `top: -35px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
+  ${props => props.place === 'right' && `right: calc(-${props.width}px - 15px);top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
+  ${props => props.place === 'bottom' && `bottom: -35px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
+  ${props => props.place === 'left' && `left: calc(-${props.width}px - 15px);top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
 
   &:before {
     content: '';
@@ -28,41 +32,51 @@ const Tip = styled.div`
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
+  cursor: help;
 `;
 
 class Tooltip extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      show: false,
-      width: 0,
-    };
-  }
 
-  shouldComponentUpdate = false;
+    this.state = { show: false, width: null, height: null };
+  }
 
   componentDidMount() {
-    this._setwidth();
+    this.measure();
   }
 
-  _setwidth() {
-    this.setState({ width: this.tip && this.tip.clientWidth });
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      this.props.text !== nextProps.text ||
+      this.state.show !== nextState.show ||
+      this.state.width !== nextState.width ||
+      this.state.height !== nextState.height
+    );
   }
 
-  handleEnter = (e) => {
-    this.setState({
-      show: true,
-    });
+  componentDidUpdate() {
+    this.measure();
+  }
+
+  measure() {
+    const {
+      clientWidth,
+      clientHeight,
+    } = this.tip;
+
+    this.setState({ width: clientWidth, height: clientHeight });
+  }
+
+  handleEnter = () => {
+    this.setState({ show: true });
   }
 
   handleLeave = () => {
-    this.setState({
-      show: false,
-    });
+    this.setState({ show: false });
   }
 
   render() {
-
     const {
       children,
       skin,
@@ -70,25 +84,11 @@ class Tooltip extends Component {
       text,
     } = this.props;
 
-    const InnerTip = styled.div`
-      background-color: ${props => skins[props.skin]};
-      border-color: ${props => skins[props.skin]};
-      border-radius: 2px;
-      color: ${Colors.WHITE};
-      font-size: 14px;
-      font-weight: bold;
-      padding: 5px 20px;
-      position: absolute;
-      margin-left: -${props => this.state.width / 2}px;
-      left: 50%;
-      top: -50px;
-
-      &:before {
-        content: '';
-        position: absolute;
-        ${props => placement.arrowPosition[props.place]};
-      }
-    `;
+    const {
+      width,
+      height,
+      show,
+    } = this.state;
 
     return (
       <Wrapper
@@ -96,14 +96,16 @@ class Tooltip extends Component {
         onMouseLeave={this.handleLeave}
         innerRef={(parent) => { this.parent = parent; }}
       >
-        <InnerTip
+        <Tip
           skin={skin}
           innerRef={(tip) => { this.tip = tip; }}
           place={place}
-          width={ this._setwidth() & this.state.width}
+          width={width}
+          height={height}
+          show={show}
         >
           {text}
-        </InnerTip>
+        </Tip>
         {children}
       </Wrapper>
     );
@@ -131,7 +133,7 @@ Tooltip.defaultProps = {
   skin: 'info',
   children: 'Message',
   place: 'top',
-  text: 'asdasdasdsda',
+  text: 'Tooltip',
 };
 
 export default Tooltip;
