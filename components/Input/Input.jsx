@@ -2,11 +2,12 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
-import InputTypes from './InputTypes';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
+import Icon from '../Icon';
 import theme from '../../theme';
+import InputTypes from './InputTypes';
 
 const sharedStyle = css`
   font-size: 12px;
@@ -30,15 +31,6 @@ const InputLabel = styled(Label)`
   `}
 `;
 
-const Link = styled.a`
-  color: ${Colors.SECONDARY['500']};
-  font-size: 14px;
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  top: 8px;
-`;
-
 const InputTag = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
@@ -52,8 +44,8 @@ const InputTag = styled.input`
   outline: none;
   width: 100%;
 
-  ${props => props.passwordLink && `
-    padding-right: 140px;
+  ${props => props.password && `
+    padding-right: 28px;
   `}
 
   &::-webkit-calendar-picker-indicator {
@@ -90,18 +82,26 @@ class Input extends React.Component {
   constructor(props) {
     super(props);
 
-    const { value } = props;
+    const {
+      value,
+      type,
+    } = props;
 
-    this.state = { value };
+    this.state = {
+      value,
+      type,
+    };
   }
 
   componentWillUpdate(nextProps) {
-    if (nextProps.value !== this.state.value) {
+    if ((nextProps.value !== this.state.value) ||
+        (nextProps.type !== this.state.type)) {
       this.state.value = nextProps.value;
+      this.state.type = nextProps.type;
     }
   }
 
-  onChange = (e) => {
+  _onChange = (e) => {
     const { onChange } = this.props;
     const { target: { value } } = e;
 
@@ -110,30 +110,47 @@ class Input extends React.Component {
     onChange(e, { value });
   }
 
+  _changeType = (type) => {
+    this.setState({ type });
+  }
+
+  _showPassword = () => {
+    const { type } = this.state;
+
+    if (type === 'text') {
+      this._changeType('password');
+    } else {
+      this._changeType('text');
+    }
+  }
+
   render() {
     const {
       id,
       label,
       error,
       onChange,
-      passwordLink,
+      password,
       mask,
       ...rest
     } = this.props;
-    const { value } = this.state;
+    const { value, type } = this.state;
 
     return (
       <InputFieldGroup>
         <MaskedInput
           {...rest}
           id={id}
+          type={type}
           mask={mask}
           value={value}
-          onChange={this.onChange}
+          password={password}
+          onChange={this._onChange}
           render={(ref, props) => (
             <InputTag
               innerRef={ref}
               {...props}
+              value={props.defaultValue}
             />
           )}
         />
@@ -148,8 +165,12 @@ class Input extends React.Component {
           </InputLabel>
         }
         {
-          passwordLink &&
-          <Link href={passwordLink} title="Esqueceu a senha?">Esqueceu a senha?</Link>
+          password &&
+          <Icon
+            name={type === 'password' ? 'visibility' : 'visibility_off'}
+            onClick={this._showPassword}
+            style={{ position: 'absolute', right: '2px', cursor: 'pointer' }}
+          />
         }
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </InputFieldGroup>
@@ -163,7 +184,7 @@ Input.defaultProps = {
   label: '',
   mask: false,
   maxLength: '',
-  passwordLink: '',
+  password: false,
   type: 'text',
   value: '',
   onBlur: () => {},
@@ -172,22 +193,23 @@ Input.defaultProps = {
 };
 
 Input.propTypes = {
-  /** Display an error message and changes border color to error color */
-  error: PropTypes.string,
-  /** An html identification */
-  id: PropTypes.string,
+  value: PropTypes.string,
   /** Display a label text that describe the field */
   label: PropTypes.string,
-  /** Set a text mask that filter user input */
-  maxLength: PropTypes.string,
   type: PropTypes.oneOf([
     'email',
     'text',
     'tel',
     'number',
-    'link',
     'password',
   ]),
+  password: PropTypes.bool,
+  /** Display an error message and changes border color to error color */
+  error: PropTypes.string,
+  /** Set a text mask that filter user input */
+  maxLength: PropTypes.string,
+  /** A html identification */
+  id: PropTypes.string,
   /**
    * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
    */
@@ -198,8 +220,6 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
-  passwordLink: PropTypes.string,
-  value: PropTypes.string,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
