@@ -20,4 +20,5 @@ export default [
   'Logo',
   'Loader',
   'Tooltip',
+  'TextMask',
 ].map(s => `./${s}/${s}.story.jsx`);

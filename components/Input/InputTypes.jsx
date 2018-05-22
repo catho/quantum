@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from './Input';
-import masks from './masks';
+import masks from '../shared/masks';
 
 const types = {
   CEP: props => (<Input mask={masks.cep} {...props} />),

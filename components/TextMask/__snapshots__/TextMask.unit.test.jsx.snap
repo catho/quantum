@@ -1,0 +1,392 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextMask component Should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextMask
+    mask={false}
+    text=""
+  >
+    
+  </TextMask>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): "",
+  Symbol(enzyme.__nodes__): Array [
+    "",
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`TextMask component Should match the snapshot 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextMask.CEP />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": "",
+      "mask": Array [
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        "-",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+      ],
+      "text": "",
+    },
+    "ref": null,
+    "rendered": "",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "",
+        "mask": Array [
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+        ],
+        "text": "",
+      },
+      "ref": null,
+      "rendered": "",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`TextMask component Should match the snapshot 3`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextMask.CNPJ />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": "",
+      "mask": Array [
+        /\\\\d/,
+        /\\\\d/,
+        ".",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        ".",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        "/",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        "-",
+        /\\\\d/,
+        /\\\\d/,
+      ],
+      "text": "",
+    },
+    "ref": null,
+    "rendered": "",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "",
+        "mask": Array [
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+        ],
+        "text": "",
+      },
+      "ref": null,
+      "rendered": "",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`TextMask component Should match the snapshot 4`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextMask.CPF />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": "",
+      "mask": Array [
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        ".",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        ".",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        "-",
+        /\\\\d/,
+        /\\\\d/,
+      ],
+      "text": "",
+    },
+    "ref": null,
+    "rendered": "",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "",
+        "mask": Array [
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+        ],
+        "text": "",
+      },
+      "ref": null,
+      "rendered": "",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`TextMask component Should match the snapshot 5`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextMask.Date />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": "",
+      "mask": Array [
+        /\\\\d/,
+        /\\\\d/,
+        "/",
+        /\\\\d/,
+        /\\\\d/,
+        "/",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+      ],
+      "text": "",
+    },
+    "ref": null,
+    "rendered": "",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "",
+        "mask": Array [
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+        ],
+        "text": "",
+      },
+      "ref": null,
+      "rendered": "",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`TextMask component Should match the snapshot 6`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextMask.Phone />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": "",
+      "mask": [Function],
+      "text": "",
+    },
+    "ref": null,
+    "rendered": "",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "",
+        "mask": [Function],
+        "text": "",
+      },
+      "ref": null,
+      "rendered": "",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

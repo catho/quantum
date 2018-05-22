@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FormInput from './sub-components/FormInput';
-import Submit from './sub-components/Submit';
 
 function execValidate(validate, props) {
   if (typeof validate === 'function') {
@@ -15,13 +13,8 @@ function execValidate(validate, props) {
 }
 
 class Form extends React.Component {
-  static Input = FormInput;
-  static Submit = Submit;
-
   constructor(props) {
     super(props);
-
-    const { children } = this.props;
 
     this.state = {
       values: {},
@@ -29,19 +22,13 @@ class Form extends React.Component {
       valid: false,
     };
 
+    const { children } = this.props;
+
     React
       .Children
-      .map(
-        children,
-        (child) => {
-          const { name, value } = child.props;
-
-          if (name) {
-            this.state.values[name] = value;
-            this.state.errors[name] = '';
-          }
-        },
-      );
+      .map(children, ({ props: { name, value } }) => {
+        if (value) this.state.values[name] = value;
+      });
   }
 
   _createClones = children => React
