@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   display: inline-block;
   position: relative;
   cursor: default;
+  white-space: nowrap;
 `;
 
 class Tooltip extends Component {
@@ -95,7 +96,6 @@ class Tooltip extends Component {
       <Wrapper
         onMouseEnter={this.handleEnter}
         onMouseLeave={this.handleLeave}
-        innerRef={(parent) => { this.parent = parent; }}
       >
         <Tip
           skin={skin}
