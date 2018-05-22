@@ -10,11 +10,11 @@ const formatIconName = (name) => {
     .join('');
 };
 
-const Icon = ({ name }) => {
+const Icon = ({ name, ...props }) => {
   /* eslint-disable import/no-dynamic-require, global-require */
   const IconClass = require(`@material-ui/icons/${formatIconName(name) || 'Error'}`).default;
 
-  return <IconClass />;
+  return <IconClass {...props} />;
 };
 
 Icon.propTypes = { name: PropTypes.string.isRequired };
