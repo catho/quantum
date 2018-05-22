@@ -14,7 +14,12 @@ class ComponentPanel extends React.Component {
     this.state = componentProps;
   }
 
-  handleChange = (state) => {
+  handleChange = (newState) => {
+    const state = {
+      ...this.state,
+      ...newState,
+    };
+
     this.setState(state);
   };
 

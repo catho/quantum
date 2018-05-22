@@ -70,6 +70,7 @@ function getProps(props, indentation) {
 
   return Object.entries(props)
     .filter(([name, value]) => value && !['style', 'children'].includes(name))
+    .sort(([name, value], [, value2]) => Number(value) - Number(value2))
     .map(([prop, value], index) => {
       const propText = (typeof value === 'boolean') ? prop : `${prop}=${renderPropValue(value, indentation)}`;
 
