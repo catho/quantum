@@ -1,27 +1,63 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 import AutoExample from '../../.storybook/components/AutoExample';
-import Example from '../../.storybook/components/Example';
 import { Tab } from '../../.storybook/components/TabbedView';
 import Tooltip from '../../components/Tooltip';
+import Logo from '../../components/Logo';
+
+const TipGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 110px);
+  margin: 0 15px;
+`;
 
 const tabExample = (
   <Tab title="Example">
     <h3>Skins</h3>
-    <div>
-      <Example component={<Tooltip skin="info">Info</Tooltip>} />
-      <Example component={<Tooltip skin="danger">Danger</Tooltip>} />
-      <Example component={<Tooltip skin="success">Success</Tooltip>} />
-      <Example component={<Tooltip skin="warning">Warning</Tooltip>} />
-    </div>
+    <TipGrid>
+      <div>
+        <Tooltip skin="info">Info</Tooltip>
+      </div>
+      <div>
+        <Tooltip skin="danger">Danger</Tooltip>
+      </div>
+      <div>
+        <Tooltip skin="success">Success</Tooltip>
+      </div>
+      <div>
+        <Tooltip skin="warning">Warning</Tooltip>
+      </div>
+    </TipGrid>
 
     <h3>Placement</h3>
-    <div>
-      <Example component={<Tooltip place="top">Top</Tooltip>} />
-      <Example component={<Tooltip place="right">Right</Tooltip>} />
-      <Example component={<Tooltip place="bottom">Bottom</Tooltip>} />
-      <Example component={<Tooltip place="left">Left</Tooltip>} />
-    </div>
+    <TipGrid>
+      <div>
+        <Tooltip place="top">Top</Tooltip>
+      </div>
+      <div>
+        <Tooltip place="right">Right</Tooltip>
+      </div>
+      <div>
+        <Tooltip place="bottom">Bottom</Tooltip>
+      </div>
+      <div>
+        <Tooltip place="left">Left</Tooltip>
+      </div>
+    </TipGrid>
+
+    <h3>Others</h3>
+    <TipGrid>
+      <div>
+        <Tooltip text="Catho Empresas"><Logo.Business /></Tooltip>
+      </div>
+      <div>
+        <Tooltip place="right" text="Catho"><Logo /></Tooltip>
+      </div>
+      <div>
+        <Tooltip place="bottom" text="Catho Educação"><Logo.Education /></Tooltip>
+      </div>
+    </TipGrid>
   </Tab>
 );
 
