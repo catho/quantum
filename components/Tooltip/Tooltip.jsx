@@ -4,24 +4,23 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import { skins, placement } from './options';
 
+const tipSkin = ({ skin }) => skins[skin] || skins.info;
+
 const Tip = styled.div`
-  background-color: ${props => skins[props.skin]};
-  border-color: ${props => skins[props.skin]};
+  background-color: ${tipSkin};
+  border-color: ${tipSkin};
   border-radius: 2px;
   color: ${Colors.WHITE};
   font-size: 14px;
   font-weight: bold;
-  padding: 5px 20px;
   opacity: ${props => (props.show ? '1' : '0')};
+  padding: 5px 20px;
   position: absolute;
   text-align: center;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   visibility: ${props => (props.show ? 'visible' : 'hidden')};
 
-  ${props => props.place === 'top' && `top: -${props.height + 10}px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
-  ${props => props.place === 'right' && `right: -${props.width + 15}px;top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
-  ${props => props.place === 'bottom' && `bottom: -${props.height + 10}px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
-  ${props => props.place === 'left' && `left: -${props.width + 15}px;top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
+  ${placement.tipPosition}
 
   &:before {
     content: '';
@@ -132,7 +131,7 @@ Tooltip.propTypes = {
 
 Tooltip.defaultProps = {
   skin: 'info',
-  children: 'Message',
+  children: 'Hover me',
   place: 'top',
   text: 'Tooltip',
 };
