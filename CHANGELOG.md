@@ -1,18 +1,22 @@
+## v0.4.0 - May/2018
+### Added
+New component:
+- Tooltip component
+
 ## v0.3.3 - May/2018
-### Changed
+### Added
 Add default font-family (typography)
 
 ## v0.3.2 - May/2018
-### Changed
+### Added
 Add CLI documentation
 
 ## v0.3.1 - May/2018
 ### Changed
-New components:
 - Version fix
 
 ## v0.3.0 - May/2018
-### Changed
+### Added
 New components:
 - Image
 - Logo

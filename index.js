@@ -15,3 +15,4 @@ export { default as Range } from './components/Range';
 export { default as Textarea } from './components/Textarea';
 export { default as Toggle } from './components/Toggle';
 export { Form, Validations } from './components/Form';
+export { default as Tooltip } from './components/Tooltip';
