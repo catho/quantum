@@ -184,7 +184,7 @@ Input.defaultProps = {
   label: '',
   mask: false,
   maxLength: '',
-  password: true,
+  password: false,
   type: 'text',
   value: '',
   onBlur: () => {},
