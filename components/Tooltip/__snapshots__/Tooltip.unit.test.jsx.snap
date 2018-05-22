@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip component  All positions Should match the snapshot when place is bottom 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa hyReEQ\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is bottom 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa jSPlmi\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is left 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa gAPjCx\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is left 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa eZxQk\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa hhPsLM\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa iljMPD\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa xdnfG\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa hKFUWj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
 
-exports[`Tooltip component  All skins Should match the snapshot skin is info 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa xdnfG\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All skins Should match the snapshot skin is info 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa hKFUWj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
 
-exports[`Tooltip component  All skins Should match the snapshot when skin is danger 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa fiLifq\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All skins Should match the snapshot when skin is danger 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa bvPVeO\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
 
-exports[`Tooltip component  All skins Should match the snapshot when skin is success 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa llPyeU\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All skins Should match the snapshot when skin is success 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa hSbXch\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
 
-exports[`Tooltip component  All skins Should match the snapshot when skin is warning 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa ifLibR\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
+exports[`Tooltip component  All skins Should match the snapshot when skin is warning 1`] = `"<div class=\\"sc-bwzfXH jrJrVm\\"><div class=\\"sc-bdVaJa kKoKWe\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover me</div>"`;
