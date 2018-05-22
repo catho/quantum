@@ -5,7 +5,6 @@ import Colors from '../Colors';
 import { skins, placement } from './options';
 
 const Tip = styled.div`
-  opacity: ${props => (props.show === true ? '1' : '0')};
   background-color: ${props => skins[props.skin]};
   border-color: ${props => skins[props.skin]};
   border-radius: 2px;
@@ -13,14 +12,16 @@ const Tip = styled.div`
   font-size: 14px;
   font-weight: bold;
   padding: 5px 20px;
+  opacity: ${props => (props.show ? '1' : '0')};
   position: absolute;
   text-align: center;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
 
-  ${props => props.place === 'top' && `top: -35px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
-  ${props => props.place === 'right' && `right: calc(-${props.width}px - 15px);top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
-  ${props => props.place === 'bottom' && `bottom: -35px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
-  ${props => props.place === 'left' && `left: calc(-${props.width}px - 15px);top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
+  ${props => props.place === 'top' && `top: -${props.height + 10}px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
+  ${props => props.place === 'right' && `right: -${props.width + 15}px;top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
+  ${props => props.place === 'bottom' && `bottom: -${props.height + 10}px; left: 50%; margin-left: -${Math.floor(props.width / 2)}px;`}
+  ${props => props.place === 'left' && `left: -${props.width + 15}px;top: 50%; margin-top: -${Math.floor(props.height / 2)}px;`}
 
   &:before {
     content: '';
@@ -32,7 +33,7 @@ const Tip = styled.div`
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
-  cursor: help;
+  cursor: default;
 `;
 
 class Tooltip extends Component {
