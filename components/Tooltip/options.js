@@ -50,7 +50,7 @@ const placement = {
       bottom: `bottom: -${height + 10}px; left: 50%; margin-left: -${Math.floor(width / 2)}px;`,
       left: `left: -${width + 15}px;top: 50%; margin-top: -${Math.floor(height / 2)}px;`,
     };
-  
+
     return position[place] || position.top;
   },
 };
