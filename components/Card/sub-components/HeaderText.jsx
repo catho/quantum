@@ -1,7 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Image from '../../Image';
 
 const TextWrapper = styled.h1`
   display: flex;
@@ -32,5 +30,11 @@ const Title = props => <TitleWrapper {...props} />;
 const SupportText = props => <SuportWrapper {...props} />;
 
 const HeaderText = props => <TextWrapper {...props} />;
+
+Title.displayName = 'Card.Title';
+
+SupportText.displayName = 'Card.SupportText';
+
+HeaderText.displayName = 'Card.HeaderText';
 
 export { HeaderText, Title, SupportText };

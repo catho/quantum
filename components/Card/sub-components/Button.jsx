@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {default as OriginalButton} from '../../Button';
+import OriginalButton from '../../Button';
 
 const ButtonWrapper = styled(OriginalButton)`
   background-color: transparent;
@@ -21,4 +20,7 @@ const ButtonWrapper = styled(OriginalButton)`
 
 const Button = props => <ButtonWrapper {...props} />;
 
+Button.displayName = 'Card.Button';
+
 export default Button;
+

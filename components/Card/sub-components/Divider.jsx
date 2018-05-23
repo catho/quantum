@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Line = styled.hr`
@@ -10,5 +9,7 @@ const Line = styled.hr`
 `;
 
 const Divider = () => <Line />;
+
+Divider.displayName = 'Card.Divider';
 
 export default Divider;
