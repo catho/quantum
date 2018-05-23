@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component Should match the snapshot 1`] = `
+<div
+  className="sc-dnqmqq cnVjlT"
+  elevation={1}
+/>
+`;
