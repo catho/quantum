@@ -79,7 +79,7 @@ const simpleCardSample = (
 
 storiesOf('8. Card', module)
   .add('Card', () => (
-    <Heading image={Atom} name="Card">
+    <Heading name="Card">
       <TabbedView>
         <Tab title="Anatomy">
           <Row>

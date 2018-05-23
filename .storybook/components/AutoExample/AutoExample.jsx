@@ -15,7 +15,8 @@ const AutoExample = ({
   importModules = name,
   additionalTabs,
 }) => (
-  <Heading name={name} image={Atom}>
+  <React.Fragment>
+    <Heading name={name} image={Atom} />
     <TabbedView>
       <Tab title="Usage">
         <ComponentPanel
@@ -30,7 +31,7 @@ const AutoExample = ({
 
       { additionalTabs }
     </TabbedView>
-  </Heading>
+  </React.Fragment>
 );
 
 AutoExample.defaultProps = {

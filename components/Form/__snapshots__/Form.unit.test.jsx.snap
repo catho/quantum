@@ -11,15 +11,14 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <input
       className="sc-EHOje hjysc"
+      defaultValue=""
       id=""
-      mask={false}
       maxLength=""
       name="required"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -35,15 +34,14 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <input
       className="sc-EHOje hjysc"
+      defaultValue=""
       id=""
-      mask={false}
       maxLength=""
       name="cpf"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -59,15 +57,14 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <input
       className="sc-EHOje hjysc"
+      defaultValue=""
       id=""
-      mask={false}
       maxLength=""
       name="cep"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -83,15 +80,14 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <input
       className="sc-EHOje hjysc"
+      defaultValue=""
       id=""
-      mask={false}
       maxLength=""
       name="birthday"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -107,15 +103,14 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <input
       className="sc-EHOje hjysc"
+      defaultValue=""
       id=""
-      mask={false}
       maxLength=""
       name="email"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -131,8 +126,8 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <input
       className="sc-EHOje hjysc"
+      defaultValue=""
       id=""
-      mask={false}
       maxLength=""
       minLength="8"
       name="address"
@@ -140,7 +135,6 @@ exports[`Form component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -156,15 +150,14 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <input
       className="sc-EHOje hjysc"
+      defaultValue=""
       id=""
-      mask={false}
       maxLength="3"
       name="country"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value=""
     />
     <label
       className="sc-bxivhb iGfXOk sc-bwzfXH eQhPVJ"
@@ -184,9 +177,7 @@ exports[`Form component  should match the snapshot 1`] = `
     value={undefined}
   >
      
-     
-    Enviar
-     
+     Enviar 
      
   </button>
 </form>

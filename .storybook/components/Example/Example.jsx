@@ -29,7 +29,12 @@ class Example extends React.Component {
   }
 
   render() {
-    const { component: Component, title, importModules } = this.props;
+    const {
+      component: Component,
+      title,
+      importModules,
+      code,
+    } = this.props;
     const { show } = this.state;
 
     return (
@@ -39,6 +44,7 @@ class Example extends React.Component {
         <Code>
           {show && (
             <CodeExample
+              code={code}
               withImport={importModules}
               showTitle={false}
               component={Component}
@@ -52,7 +58,12 @@ class Example extends React.Component {
   }
 }
 
+Example.defaultProps = {
+  code: '',
+};
+
 Example.propTypes = {
+  code: PropTypes.string,
   component: PropTypes.instanceOf(Object).isRequired,
   title: PropTypes.string.isRequired,
   importModules: PropTypes.string.isRequired,
