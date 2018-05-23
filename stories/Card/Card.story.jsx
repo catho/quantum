@@ -71,7 +71,8 @@ const simpleCardSample = (
     <Card.Container>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Aliquam viverra porttitor placerat.
-        Vivamus nec purus sit amet elit condimentum malesuada.</p>
+        Vivamus nec purus sit amet elit condimentum malesuada.
+      </p>
     </Card.Container>
   </Card>
 );
