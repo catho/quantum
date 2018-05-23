@@ -8,7 +8,8 @@ const RoundedImage = styled(Image)`
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  margin: 5px 15px 0px 0px;
+  margin-top: 5px;
+  margin-right: 15px;
 `;
 
 const Thumbnail = props => <RoundedImage {...props} />;

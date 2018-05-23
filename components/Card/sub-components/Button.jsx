@@ -5,11 +5,11 @@ import OriginalButton from '../../Button';
 const ButtonWrapper = styled(OriginalButton)`
   background-color: transparent;
   padding: 0;
-  margin: 0 10px 0 0;
   box-shadow: none;
   font-family: oxygen;
   text-transform: uppercase;
   font-size: 12px;
+  margin-right: 10px;
 
   &:active {
     box-shadow: none;

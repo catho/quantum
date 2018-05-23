@@ -21,7 +21,7 @@ const TitleWrapper = styled.h1`
 
 const SupportWrapper = styled.p`
   font-size: 14px;
-  margin: 5px 0 0 0;
+  margin-top: 5px;
   padding: 0;
 `;
 

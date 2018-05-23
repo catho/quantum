@@ -5,7 +5,6 @@ import Heading from '../../.storybook/components/Heading';
 import CodeExample from '../../.storybook/components/CodeExample';
 import { Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
-import Atom from '../static/atom.svg';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Title from '../../.storybook/components/Title';
 
@@ -77,7 +76,7 @@ const simpleCardSample = (
   </Card>
 );
 
-storiesOf('8. Card', module)
+storiesOf('10. Card', module)
   .add('Card', () => (
     <Heading name="Card">
       <TabbedView>

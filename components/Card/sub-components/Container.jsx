@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const ContainerWrapper = styled.div`
   display: flex;
   margin: 0 auto;
-  padding: ${props => (props.noGutter ? '0px' : '15px')};
   flex-direction: ${props => (props.horizontal ? 'row' : 'column')};
+  padding: ${props => (props.noGutter ? '0' : '15px')};
 `;
 
 const Container = props => <ContainerWrapper {...props} />;
