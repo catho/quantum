@@ -5,8 +5,6 @@ import Input from '../../components/Input';
 import { Title } from '../../.storybook/components';
 import IconToClipboard from './IconToClipboard';
 
-console.log(MaterialIcons)
-
 /* eslint-disable react/no-multi-comp */
 class Catalogue extends Component {
   constructor(props) {
