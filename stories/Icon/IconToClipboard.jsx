@@ -6,13 +6,13 @@ import { Col } from '../../components/Grid';
 import Colors from '../../components/Colors';
 import Icon from '../../components/Icon';
 
-const NameWrapper = styled.div`
+const IconName = styled.div`
   display: block;
 `;
 
 const IconWrapper = styled(Col)`
   font-size: 12px;
-  padding: 15px;
+  padding: 10px;
   position: relative;
   text-align: center;
   cursor: pointer;
@@ -48,9 +48,9 @@ class IconToClipboard extends Component {
         key={name}
         onCopy={this.showFeedback}
       >
-        <IconWrapper tablet={2}>
+        <IconWrapper tablet={1}>
           <Icon name={name} />
-          <NameWrapper>{hasJustCopied ? 'Copied!!' : name}</NameWrapper>
+          <IconName>{hasJustCopied ? 'Copied!!' : name}</IconName>
         </IconWrapper>
       </CopyToClipboard>
     );

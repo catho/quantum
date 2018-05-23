@@ -35,7 +35,7 @@ const exampleIcons = [
   <Icon name="event" />,
 ];
 
-const exampĺeCode = exampleIcons.map(icon => (
+const exampleCode = exampleIcons.map(icon => (
   `<Icon name="${icon.props.name}" />\n`
 ));
 
@@ -46,18 +46,18 @@ storiesOf('1. Foundation', module)
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Icon" />
-          <p>
+          <small>
             We are using <a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">Material Design icons</a> as default icon library.
-          </p>
+          </small>
           <Title>Usage</Title>
-          <p>
+          <small>
             {
               exampleIcons.map(icon => (
                 <IconWrapper key={icon.props.name}>{icon}</IconWrapper>
               ))
             }
-          </p>
-          <CodeExample showTitle={false} code={exampĺeCode} />
+          </small>
+          <CodeExample showTitle={false} code={exampleCode} />
         </Tab>
         <Tab title="Catalogue">
           <Catalogue />

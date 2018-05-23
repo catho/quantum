@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import * as MaterialIcons from '@material-ui/icons';
 import { Container, Row, Col } from '../../components/Grid';
+import ColorPalette from '../../components/Colors';
 import Input from '../../components/Input';
-import { Title } from '../../.storybook/components';
 import IconToClipboard from './IconToClipboard';
 
-/* eslint-disable react/no-multi-comp */
 class Catalogue extends Component {
   constructor(props) {
     super(props);
@@ -33,10 +32,14 @@ class Catalogue extends Component {
 
     return (
       <React.Fragment>
-        <Title>Search and click to copy icon codes</Title>
         <Container fluid>
-          <Row>
-            <Col tablet={4}>
+          <Row style={{ marginTop: '-40px' }}>
+            <Col tablet={10}>
+              <h3 style={{ marginTop: '50px' }}>
+                Available Icons <small style={{ color: ColorPalette.GREY['100'] }}>click to copy</small>
+              </h3>
+            </Col>
+            <Col tablet={2}>
               <Input label="Search" onChange={this.filterIcons} />
             </Col>
           </Row>
@@ -44,7 +47,7 @@ class Catalogue extends Component {
 
         <Container fluid>
           <Row>
-            { filtered.map(name => <IconToClipboard name={name} key={name}/>) }
+            { filtered.map(name => <IconToClipboard name={name} key={name} />) }
           </Row>
         </Container>
       </React.Fragment>
