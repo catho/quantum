@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
+import Icon from '../../components/Icon';
 import {
   Heading,
   Atom,
@@ -11,9 +13,31 @@ import {
 } from '../../.storybook/components';
 import Catalogue from './Catalogue';
 
-const IconCode = `<Icon name="check-circle" />
-<Icon name="android" />
-<Icon name="thumb-up" />`;
+const IconWrapper = styled.div`
+  padding: 10px;
+  display: inline-block;
+`;
+
+const exampleIcons = [
+  <Icon name="insert-emoticon" />,
+  <Icon name="thumb-up" />,
+  <Icon name="info" />,
+  <Icon name="motorcycle" />,
+  <Icon name="directions-car" />,
+  <Icon name="airplanemode-active" />,
+  <Icon name="access-alarm" />,
+  <Icon name="audiotrack" />,
+  <Icon name="attach-money" />,
+  <Icon name="autorenew" />,
+  <Icon name="check-circle" />,
+  <Icon name="clear" />,
+  <Icon name="directions-bike" />,
+  <Icon name="event" />,
+];
+
+const exampĺeCode = exampleIcons.map(icon => (
+  `<Icon name="${icon.props.name}" />\n`
+));
 
 storiesOf('1. Foundation', module)
   .add('Icons', () => (
@@ -22,8 +46,18 @@ storiesOf('1. Foundation', module)
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Icon" />
+          <p>
+            We are using <a href="https://material.io/tools/icons/?style=baseline">Material Design icons</a> as default icon library.
+          </p>
           <Title>Usage</Title>
-          <CodeExample showTitle={false} code={IconCode} />
+          <p>
+            {
+              exampleIcons.map(icon => (
+                <IconWrapper key={icon.props.name}>{icon}</IconWrapper>
+              ))
+            }
+          </p>
+          <CodeExample showTitle={false} code={exampĺeCode} />
         </Tab>
         <Tab title="Catalogue">
           <Catalogue />

@@ -17,8 +17,6 @@ class Catalogue extends Component {
         .toLowerCase()
     ));
 
-    delete iconNames.LICENCE;
-
     this.state = { iconNames, filtered: iconNames };
   }
 
