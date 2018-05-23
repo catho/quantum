@@ -1,3 +1,8 @@
+## v0.5.0 - May/2018
+### Added
+New component:
+- Card component
+
 ## v0.4.0 - May/2018
 ### Added
 New component:
