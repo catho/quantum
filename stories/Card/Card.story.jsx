@@ -7,7 +7,7 @@ import { Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
 import Atom from '../static/atom.svg';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import SharedTitle from '../../.storybook/components/Title';
+import Title from '../../.storybook/components/Title';
 
 const StyledTable = styled.table`
   width: 100%;
@@ -67,9 +67,19 @@ const cardSample = (
     </Card.Container>
   </Card>);
 
+const simpleCardSample = (
+  <Card elevation={1} hoverElevation={5}>
+    <Card.Container>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aliquam viverra porttitor placerat.
+        Vivamus nec purus sit amet elit condimentum malesuada.</p>
+    </Card.Container>
+  </Card>
+);
+
 storiesOf('8. Card', module)
   .add('Card', () => (
-    <Heading image={Atom} title="<Card />">
+    <Heading image={Atom} name="Card">
       <TabbedView>
         <Tab title="Anatomy">
           <Row>
@@ -156,15 +166,26 @@ storiesOf('8. Card', module)
           </Row>
         </Tab>
 
-        <Tab title="Usage">
+        <Tab title="Example">
           <Row>
             <Col desktop={8} tablet={8}>
               <CodeExample component={cardSample} />
             </Col>
 
             <Col desktop={4} tablet={4}>
-              <SharedTitle>Preview</SharedTitle>
+              <Title>Preview</Title>
               {cardSample}
+            </Col>
+          </Row>
+          <h2>Simple card</h2>
+          <Row>
+            <Col desktop={8} tablet={8}>
+              <CodeExample component={simpleCardSample} />
+            </Col>
+
+            <Col desktop={4} tablet={4}>
+              <Title>Preview</Title>
+              {simpleCardSample}
             </Col>
           </Row>
         </Tab>

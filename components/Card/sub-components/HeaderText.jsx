@@ -19,7 +19,7 @@ const TitleWrapper = styled.h1`
   padding: 0;
 `;
 
-const SuportWrapper = styled.p`
+const SupportWrapper = styled.p`
   font-size: 14px;
   margin: 5px 0 0 0;
   padding: 0;
@@ -27,7 +27,7 @@ const SuportWrapper = styled.p`
 
 const Title = props => <TitleWrapper {...props} />;
 
-const SupportText = props => <SuportWrapper {...props} />;
+const SupportText = props => <SupportWrapper {...props} />;
 
 const HeaderText = props => <TextWrapper {...props} />;
 
