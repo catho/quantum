@@ -17,11 +17,11 @@ const elevation = ({ elevation: level, hoverElevation: hoverLevel }) => {
 };
 
 const CardWrapper = styled.div`
-  background: #fff;
+  background-color: #fff;
   border-radius: 2px;
   display: inline-block;
   position: relative;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
   width: 300px;
 

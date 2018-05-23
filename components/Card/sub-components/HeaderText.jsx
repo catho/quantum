@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const TextWrapper = styled.h1`
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 0;
 
   p {
