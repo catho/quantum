@@ -127,7 +127,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   full: PropTypes.bool,
   /** Icon name. The full catalogue can be found
-   * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons") */
+   * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
   size: PropTypes.oneOf([
     'normal',
