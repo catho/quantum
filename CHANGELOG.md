@@ -1,3 +1,7 @@
+## v0.5.3 - May/2018
+### Added
+Url loader
+
 ## v0.5.2 - May/2018
 ### Changed
 Exporting components
