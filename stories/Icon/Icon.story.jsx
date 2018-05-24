@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import * as MaterialIcons from '@material-ui/icons';
 import styled from 'styled-components';
 import Icon from '../../components/Icon';
-import { Container, Row, Col, Hide } from '../../components/Grid';
+import icons from '../../components/shared/icons';
+import { Container, Row, Col } from '../../components/Grid';
 import {
   Heading,
   Atom,
@@ -27,7 +27,6 @@ const IconWrapper = styled(Col)`
     }
   }
 
-
   button {
     display: none;
     position: absolute;
@@ -45,28 +44,21 @@ const IconWrapper = styled(Col)`
   }
 `;
 
-const getIcon = (text) => {
-  const name = text
-    .replace(/([a-zA-Z0-9](?=[A-Z]))/g, '$1 ')
-    .replace(/\s/g, '-')
-    .toLowerCase();
+const getIcon = name => (
+  <div>
+    <Icon name={name} />
+  </div>
+);
 
-  return (
-    <IconWrapper tablet={1} key={name}>
-      <StyledIcon name={name} />
-      <CodeToClipboard code={`<Icon name="${name}" />`} />
-    </IconWrapper>
-  );
-};
 
 storiesOf('1. Foundation', module)
   .add('Icons', () => (
     <React.Fragment>
-      <Heading image={Atom} name="Icon" />
+      <Heading name="Icon" />
       <HowToImport importModules="Icon" />
       <Container fluid>
         <Row>
-          { Object.keys(MaterialIcons).map(getIcon) }
+          { Object.values(icons).map(getIcon) }
         </Row>
       </Container>
     </React.Fragment>

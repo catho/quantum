@@ -15,6 +15,7 @@ const Container = styled.div`
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
   @import url('https://fonts.googleapis.com/css?family=Oxygen');
+  @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
   body {
     margin: 0;
