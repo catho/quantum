@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-import * as MaterialIcons from '@material-ui/icons';
 import { Container, Row, Col } from '../../components/Grid';
 import ColorPalette from '../../components/Colors';
 import Input from '../../components/Input';
 import IconToClipboard from './IconToClipboard';
+import icons from '../../components/shared/icons';
 
 class Catalogue extends Component {
   constructor(props) {
     super(props);
 
-    const iconNames = Object.keys(MaterialIcons).map(name => (
-      name
-        .replace(/([a-zA-Z0-9](?=[A-Z]))/g, '$1 ')
-        .replace(/\s/g, '-')
-        .toLowerCase()
-    ));
+    const iconNames = Object.values(icons);
 
     this.state = { iconNames, filtered: iconNames };
   }

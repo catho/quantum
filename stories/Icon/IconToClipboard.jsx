@@ -8,6 +8,9 @@ import Icon from '../../components/Icon';
 
 const IconName = styled.div`
   display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 const IconWrapper = styled(Col)`
@@ -48,14 +51,14 @@ class IconToClipboard extends Component {
         key={name}
         onCopy={this.showFeedback}
       >
-        <IconWrapper tablet={1}>
+        <IconWrapper tablet={1} title={name}>
           <Icon name={name} />
           <IconName>{hasJustCopied ? 'Copied!!' : name}</IconName>
         </IconWrapper>
       </CopyToClipboard>
     );
   }
-};
+}
 
 IconToClipboard.propTypes = { name: PropTypes.string.isRequired };
 

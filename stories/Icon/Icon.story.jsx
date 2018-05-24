@@ -2,6 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import Icon from '../../components/Icon';
+import ColorPalette from '../../components/Colors';
+
 import {
   Heading,
   HowToImport,
@@ -27,16 +29,18 @@ const exampleIcons = [
   <Icon name="access_alarm" />,
   <Icon name="audiotrack" />,
   <Icon name="attach_money" />,
-  <Icon name="autorenew" />,
-  <Icon name="check_circle" />,
-  <Icon name="clear" />,
-  <Icon name="directions_bike" />,
-  <Icon name="event" />,
+  <Icon name="autorenew" skin={ColorPalette.ACTION['500']} color="skin={ColorPalette.ACTION['500']}" />,
+  <Icon name="check_circle" skin={ColorPalette.SECONDARY['700']} color="skin={ColorPalette.SECONDARY['700']}" />,
+  <Icon name="clear" skin={ColorPalette.COMPLEMENTARY['400']} color="skin={ColorPalette.COMPLEMENTARY['400']}" />,
+  <Icon name="directions_bike" skin={ColorPalette.WARMING['900']} color="skin={ColorPalette.WARMING['900']}" />,
+  <Icon name="event" skin={ColorPalette.DANGER['300']} color="skin={ColorPalette.DANGER['300']}" />,
 ];
 
-const exampleCode = exampleIcons.map(icon => (
-  `<Icon name="${icon.props.name}" />\n`
+const exampleCode = exampleIcons.map(({ props: { name, color = '' } }) => (
+  `<Icon name="${name}"${color && ` ${color}`} />\n`
 ));
+
+exampleCode.unshift('import { Icon, ColorPalette } from \'@cathodevel/style-guide\';\n\n');
 
 storiesOf('1. Foundation', module)
   .add('Icons', () => (
