@@ -35,7 +35,7 @@ export {
   Hide,
   Input,
   Loading,
-  Logo,  
+  Logo,
   Modal,
   Notification,
   Radio,

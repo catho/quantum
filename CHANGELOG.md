@@ -1,3 +1,7 @@
+## v0.5.2 - May/2018
+### Changed
+Exporting components
+
 ## v0.5.0 - May/2018
 ### Added
 New component:
