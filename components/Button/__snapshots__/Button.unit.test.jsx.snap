@@ -1,92 +1,240 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component Should match snapshot when center prop is set 1`] = `
-<button
-  className="sc-bdVaJa eNqgxS"
-  disabled={false}
-  onClick={[Function]}
-  type="button"
->
-   
-  Center
-   
-</button>
-`;
-
-exports[`Button component Should match snapshot when full prop is set 1`] = `
-<button
-  className="sc-bdVaJa gpwVYr"
-  disabled={false}
-  onClick={[Function]}
-  type="button"
->
-   
-  Full
-   
-</button>
-`;
-
 exports[`Button component Should match the snapshot 1`] = `
 <button
-  className="sc-bdVaJa hjGKqd"
+  className="sc-bwzfXH fvRwvM"
   disabled={false}
   onClick={[Function]}
+  size="normal"
   type="button"
 >
-   
+  
   Text
-   
 </button>
 `;
 
-exports[`Button component when there is a skin set should match disabled snapshot 1`] = `
+exports[`Button component when center prop is set 1`] = `
 <button
-  className="sc-bdVaJa HTjCd"
-  disabled={true}
-  onClick={[Function]}
-  type="button"
->
-   
-  Disabled
-   
-</button>
-`;
-
-exports[`Button component when there is a skin set should match light snapshot 1`] = `
-<button
-  className="sc-bdVaJa hjGKqd"
+  className="sc-bwzfXH gmbHzD"
   disabled={false}
   onClick={[Function]}
+  size="normal"
   type="button"
 >
-   
-  Light
-   
+  
+  Center
 </button>
 `;
 
-exports[`Button component when there is a skin set should match link snapshot 1`] = `
+exports[`Button component when full prop is set 1`] = `
 <button
-  className="sc-bdVaJa lyuiu"
+  className="sc-bwzfXH ckZTBw"
   disabled={false}
   onClick={[Function]}
+  size="normal"
   type="button"
 >
-   
-  Link
-   
+  
+  Full
 </button>
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
 <button
-  className="sc-bdVaJa hjGKqd"
+  className="sc-bwzfXH fvRwvM"
   disabled={false}
   onClick={[Function]}
+  size="normal"
   type="button"
 >
-   
-  Secondary
-   
+  
+  primary
+</button>
+`;
+
+exports[`Button component when there is a skin set should match secondary snapshot 2`] = `
+<button
+  className="sc-bwzfXH gPpxSp"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  
+  secondary
+</button>
+`;
+
+exports[`Button component when there is a skin set should match secondary snapshot 3`] = `
+<button
+  className="sc-bwzfXH fGCkuk"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  
+  action
+</button>
+`;
+
+exports[`Button component when there is a skin set should match secondary snapshot 4`] = `
+<button
+  className="sc-bwzfXH knClQw"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  
+  cancel
+</button>
+`;
+
+exports[`Button component when there is a skin set should match secondary snapshot 5`] = `
+<button
+  className="sc-bwzfXH MUenH"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  
+  modal
+</button>
+`;
+
+exports[`Button component when there is a type set should match secondary snapshot 1`] = `
+<button
+  className="sc-bwzfXH fvRwvM"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  
+  button
+</button>
+`;
+
+exports[`Button component when there is a type set should match secondary snapshot 2`] = `
+<button
+  className="sc-bwzfXH fvRwvM"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="reset"
+>
+  
+  reset
+</button>
+`;
+
+exports[`Button component when there is a type set should match secondary snapshot 3`] = `
+<button
+  className="sc-bwzfXH fvRwvM"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="submit"
+>
+  
+  submit
+</button>
+`;
+
+exports[`Button component with an icon should match secondary snapshot 1`] = `
+<button
+  className="sc-bwzfXH fvRwvM"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 sc-bdVaJa dXTapf"
+    size="normal"
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    search
+  </span>
+  Search
+</button>
+`;
+
+exports[`Button component with an icon should match secondary snapshot 2`] = `
+<button
+  className="sc-bwzfXH fvRwvM"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 sc-bdVaJa dXTapf"
+    size="normal"
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    sync
+  </span>
+  Sync
+</button>
+`;
+
+exports[`Button component with an icon should match secondary snapshot 3`] = `
+<button
+  className="sc-bwzfXH fvRwvM"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 sc-bdVaJa dXTapf"
+    size="normal"
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    sms
+  </span>
+  Message
+</button>
+`;
+
+exports[`Button component with an icon should match secondary snapshot 4`] = `
+<button
+  className="sc-bwzfXH fvRwvM"
+  disabled={false}
+  onClick={[Function]}
+  size="normal"
+  type="button"
+>
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 sc-bdVaJa dXTapf"
+    size="normal"
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    camera
+  </span>
+  Screenshot
 </button>
 `;
