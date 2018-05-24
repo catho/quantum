@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 // For components used only in the Steps Component,
 // use the folder 'sub-components' to store them
-import StepsSubComponent from './sub-components/StepsSubComponent';
+import Step from './sub-components/Step';
 
 class Steps extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class Steps extends React.Component {
         <h1>Hello, {this.props.name}{'!'.repeat(this.state.counter)} </h1>
         <button onClick={this.incrementCount}>Increment</button>
 
-        <StepsSubComponent />
+        <Step />
       </React.Fragment>
     );
   }
