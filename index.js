@@ -17,3 +17,5 @@ export { default as Toggle } from './components/Toggle';
 export { default as TextMask } from './components/TextMask';
 export { Form, Validations } from './components/Form';
 export { default as Tooltip } from './components/Tooltip';
+export { default as Logo } from './components/Logo';
+export { default as Card } from './components/Card';
