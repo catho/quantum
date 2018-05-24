@@ -19,6 +19,15 @@ module.exports = {
       query: {
         presets: ['env', 'stage-1', 'react'],
       },
+    },
+    {
+      test: /\.(png|jpg|gif|svg)$/,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {},
+        },
+      ],
     }],
   },
   plugins: [
