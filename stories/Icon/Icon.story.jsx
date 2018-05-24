@@ -20,7 +20,7 @@ const IconWrapper = styled.div`
 `;
 
 const exampleIcons = [
-  <Icon name="insert_emoticon" />,
+  <Icon name="daniel" />,
   <Icon name="thumb_up" />,
   <Icon name="info" />,
   <Icon name="motorcycle" />,

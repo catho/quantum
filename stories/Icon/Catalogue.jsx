@@ -9,15 +9,13 @@ class Catalogue extends Component {
   constructor(props) {
     super(props);
 
-    const iconNames = Object.values(icons);
-
-    this.state = { iconNames, filtered: iconNames };
+    this.state = { icons, filtered: icons };
   }
 
   filterIcons = (e, { value }) => {
     const filtered = value
-      ? this.state.iconNames.filter(name => name.indexOf(value) >= 0)
-      : this.state.iconNames;
+      ? this.state.icons.filter(name => name.indexOf(value) >= 0)
+      : this.state.icons;
 
     this.setState({ filtered });
   }
