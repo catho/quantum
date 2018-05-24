@@ -66,11 +66,12 @@ const StyledButton = styled.button`
   `}
 
   ${(props) => {
+    const skin = skins(props);
     const {
       unselected,
       selected,
       disabled,
-    } = skins(props);
+    } = skin;
 
     return `
       background-color: ${props.disabled ? disabled.background : unselected.background};
@@ -110,11 +111,11 @@ Button.defaultProps = {
   center: false,
   disabled: false,
   full: false,
-  icon: 'add',
+  icon: '',
   size: 'normal',
   skin: 'primary',
   type: 'button',
-  children: 'NORMAL',
+  children: 'Catho',
   onClick: () => {},
 };
 
