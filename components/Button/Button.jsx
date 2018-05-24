@@ -41,7 +41,6 @@ const ButtonIcon = styled(Icon)`
 
 const StyledButton = styled.button`
   border-radius: ${theme.sizes.radius};
-  cursor: pointer;
   font-weight: bold;
   text-align: center;
   text-decoration: ${props => (props.link ? 'underline' : 'none')};
@@ -63,6 +62,10 @@ const StyledButton = styled.button`
     display: block;
     margin-left: auto;
     margin-right: auto;
+  `}
+
+  ${props => `
+    cursor: ${props.disabled ? 'not-allowed' : 'pointer'};
   `}
 
   ${(props) => {

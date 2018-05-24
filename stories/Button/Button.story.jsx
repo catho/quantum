@@ -6,10 +6,8 @@ import { Tab, Example, AutoExample } from '../../.storybook/components';
 
 const exampleTab = (
   <Tab title="Examples">
-    <p>
-      Some examples with icons. Available icons can be found <a href="/?selectedKind=1.%20Foundation&selectedStory=Icons">here</a>
-    </p>
     <Container fluid>
+      <p>The full catalogue of icons can be found <a target="_blank" href="/?selectedKind=1.%20Foundation&selectedStory=Icons">here</a>.</p>
       <Row>
         <Col tablet={3}>
           <Example component={<Button icon="search">Search</Button>} />
@@ -33,12 +31,17 @@ const exampleTab = (
           <Example component={<Button size="big" skin="modal" icon="business_center">Apply</Button>} />
         </Col>
         <Col tablet={3}>
-          <Example component={<Button size="big" skin="cancel" icon="crop">Crop</Button>} />
+          <Example component={<Button size="big" skin="secondary" icon="block" disabled>Not allowed</Button>} />
         </Col>
         <Col tablet={3}>
           <Example component={<Button size="big" skin="action" icon="play_arrow">Play</Button>} />
         </Col>
       </Row>
+    </Container>
+
+    <Container fluid>
+      <Example component={<Button full>Full Width</Button>} code="<Button full>Full Width</Button>" />
+      <Example component={<Button center skin="action">Centered</Button>} code={'<Button center skin="action">Centered</Button>'} />
     </Container>
   </Tab>
 );
