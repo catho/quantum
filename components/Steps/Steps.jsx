@@ -1,55 +1,89 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-// For components used only in the Steps Component,
-// use the folder 'sub-components' to store them
-import Step from './sub-components/Step';
+import Item from './sub-components/Item';
+
+const Container = styled.div`
+  padding: 10px;
+`;
+
+const ProgressBar = styled.ul`
+  li {
+      list-style-type: none;
+      width: 25%;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      color: #7d7d7d;
+  }
+  li:before {
+      width: 30px;
+      height: 30px;
+      content: '';
+      line-height: 30px;
+      border: 2px solid #7d7d7d;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color: white;
+  }
+   li:after {
+      width: 100%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: #7d7d7d;
+      top: 15px;
+      left: -50%;
+      z-index: -1;
+  }
+  li:first-child:after {
+      content: none;
+  }
+  li.active {
+      color: #404040;
+  }
+  li.active:before {
+      border-color: #55b776;
+  }
+  li.active + li:after {
+      background-color: #55b776;
+  }
+  li p {
+    position: relative;
+    top: -60px;
+  }
+`;
 
 class Steps extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: props.counter,
-    };
-
-    // To avoid this ...
-    // this.incrementCount = this.incrementCount.bind(this);
-  }
-
-  // ... we use public class fields
-  incrementCount = () => {
-    this.setState({
-      counter: this.state.counter + 1,
-    });
-  }
-
   render() {
-    return (
-      // To render more than one element, use React.Fragment.
-      // This will prevent the render method to create additional
-      // DOM element
-      <React.Fragment>
-        <h1>Hello, {this.props.name}{'!'.repeat(this.state.counter)} </h1>
-        <button onClick={this.incrementCount}>Increment</button>
+    const stepList = [
+      { title: 'Step 1', active: true, icon: '1' },
+      { title: 'Step 2', active: true, icon: '2' },
+      { title: 'Step 3', active: false, icon: '3' }
+    ];
 
-        <Step />
+    return (
+      <React.Fragment>
+        <Container>
+          <ProgressBar>
+          {stepList.map(step => <Item {...step} />)}
+          </ProgressBar>
+        </Container>
       </React.Fragment>
     );
   }
 }
 
-// To set a default property, we recommend the use of PropTypes.
-// You can find more details here: https://reactjs.org/docs/typechecking-with-proptypes.html
-Steps.propTypes = {
-  name: PropTypes.string,
-  counter: PropTypes.number,
-};
-
-// To keep consistency, we set the default props
-// using the same way we set the props
-Steps.defaultProps = {
-  name: 'Steps',
-  counter: 0,
-};
+// Steps.propTypes = {
+//   name: PropTypes.string,
+// };
+//
+// Steps.defaultProps = {
+//   name: 'Steps',
+// };
 
 export default Steps;
