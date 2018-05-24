@@ -49,7 +49,7 @@ storiesOf('1. Foundation', module)
         <Tab title="Usage">
           <HowToImport importModules="Icon" />
           <small>
-            We are using <a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">Material Design icons</a> as default icon library.
+            We are using <a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">Material Design icons</a> as default library.
           </small>
           <Title>Usage</Title>
           <small>
