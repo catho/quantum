@@ -19,6 +19,8 @@ export default [
   'Image',
   'Logo',
   'Loader',
+  'Card',
+  'Tooltip',
   'TextMask',
   'Icon',
 ].map(s => `./${s}/${s}.story.jsx`);

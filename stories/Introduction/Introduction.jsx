@@ -19,8 +19,8 @@ const HighlightWrapper = styled.div`
   position: relative;
 `;
 
-const registryCmd = 'npm set registry http://armazem.devel:4873';
-const installCmd = 'sudo npm i -g create-catho-app';
+const registryCmd = 'sudo npm set registry http://armazem.devel:4873';
+const installCmd = 'sudo npm i -g @cathodevel/create-catho-app';
 
 const Terminal = styled.div`
   background-color: #092c36;
