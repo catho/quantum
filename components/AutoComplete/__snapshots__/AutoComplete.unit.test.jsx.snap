@@ -6,7 +6,7 @@ Array [
     className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
   >
     <input
-      className="sc-EHOje hjysc"
+      className="sc-ifAKCX gqQPWP"
       defaultValue="test"
       id=""
       list="_datalist"
@@ -15,8 +15,8 @@ Array [
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
+      value="test"
     />
-    
     
     
   </div>,

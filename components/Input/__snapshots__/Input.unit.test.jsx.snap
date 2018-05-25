@@ -5,7 +5,7 @@ exports[`Input component  should match the snapshot 1`] = `
   className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
 >
   <input
-    className="sc-EHOje hjysc"
+    className="sc-ifAKCX gqQPWP"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -13,8 +13,8 @@ exports[`Input component  should match the snapshot 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     type="text"
+    value="foo"
   />
-  
   
   
 </div>
@@ -25,7 +25,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
 >
   <input
-    className="sc-EHOje hjysc"
+    className="sc-ifAKCX gqQPWP"
     defaultValue="foo"
     id="input-with-label"
     maxLength=""
@@ -33,6 +33,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     type="text"
+    value="foo"
   />
   <label
     className="sc-bxivhb iYvfZD sc-bwzfXH eQhPVJ"
@@ -40,33 +41,6 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   >
     Text label
   </label>
-  
-  
-</div>
-`;
-
-exports[`Input component  with a passwordLink prop should match the snapshot 1`] = `
-<div
-  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
->
-  <input
-    className="sc-EHOje hjysc"
-    defaultValue="foo"
-    id=""
-    maxLength=""
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    type="text"
-  />
-  
-  <a
-    className="sc-ifAKCX jOWiLq"
-    href="http://www.catho.com.br/"
-    title="Esqueceu a senha?"
-  >
-    Esqueceu a senha?
-  </a>
   
 </div>
 `;
@@ -76,7 +50,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
 >
   <input
-    className="sc-EHOje hjysc"
+    className="sc-ifAKCX gqQPWP"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -84,8 +58,8 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     onChange={[Function]}
     onFocus={[Function]}
     type="text"
+    value="foo"
   />
-  
   
   <div
     className="sc-bdVaJa kKTvpA"
