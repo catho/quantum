@@ -6,10 +6,9 @@ import icons from '../shared/icons';
 const FontIcon = ({
   name,
   skin,
-  style,
   ...props
 }) => (
-  <Icon {...props} style={{ ...style, color: skin }}>{name}</Icon>
+  <Icon {...props} style={{ color: skin }}>{name}</Icon>
 );
 
 FontIcon.defaultProps = {
