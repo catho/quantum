@@ -130,7 +130,6 @@ class Input extends React.Component {
       label,
       error,
       onChange,
-      password,
       mask,
       ...rest
     } = this.props;
@@ -144,7 +143,6 @@ class Input extends React.Component {
           type={type}
           mask={mask}
           value={value}
-          password={password}
           onChange={this._onChange}
           render={(ref, props) => (
             <InputTag
@@ -165,7 +163,7 @@ class Input extends React.Component {
           </InputLabel>
         }
         {
-          password &&
+          this.props.type === 'password' &&
           <Icon
             name={type === 'password' ? 'visibility' : 'visibility_off'}
             onClick={this._showPassword}
@@ -184,7 +182,6 @@ Input.defaultProps = {
   label: '',
   mask: false,
   maxLength: '',
-  password: false,
   type: 'text',
   value: '',
   onBlur: () => {},
@@ -203,7 +200,6 @@ Input.propTypes = {
     'number',
     'password',
   ]),
-  password: PropTypes.bool,
   /** Display an error message and changes border color to error color */
   error: PropTypes.string,
   /** Set a text mask that filter user input */
