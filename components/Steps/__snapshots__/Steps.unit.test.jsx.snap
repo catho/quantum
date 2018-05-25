@@ -5,27 +5,27 @@ exports[`<Steps /> Should match the snapshot 1`] = `
   className="sc-bdVaJa juTEnT"
 >
   <ul
-    className="sc-bwzfXH jBuPkm"
+    className="sc-bwzfXH cbKDCX"
   >
     <li
       className="active"
     >
       <p>
-        Step 1
+        Criação de conta
       </p>
     </li>
     <li
       className="active"
     >
       <p>
-        Step 2
+        Plano e forma de pagamento
       </p>
     </li>
     <li
       className=""
     >
       <p>
-        Step 3
+        Preencher o currículo
       </p>
     </li>
   </ul>
