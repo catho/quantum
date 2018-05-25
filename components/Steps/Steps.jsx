@@ -5,7 +5,8 @@ import styled from 'styled-components';
 import Item from './sub-components/Item';
 
 const Container = styled.div`
-  padding: 10px;
+  padding: 0;
+  margin: 0;
 `;
 
 const ProgressBar = styled.ul`
@@ -19,11 +20,11 @@ const ProgressBar = styled.ul`
       color: #7d7d7d;
   }
   li:before {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
       content: '';
       line-height: 30px;
-      border: 2px solid #7d7d7d;
+      border: 2px solid #a0a0a0;
       display: block;
       text-align: center;
       margin: 0 auto 10px auto;
@@ -32,10 +33,10 @@ const ProgressBar = styled.ul`
   }
    li:after {
       width: 100%;
-      height: 2px;
+      height: 1px;
       content: '';
       position: absolute;
-      background-color: #7d7d7d;
+      background-color: #a0a0a0;
       top: 15px;
       left: -50%;
       z-index: -1;
@@ -47,10 +48,10 @@ const ProgressBar = styled.ul`
       color: #404040;
   }
   li.active:before {
-      border-color: #55b776;
+      border-color: #165ea3;
   }
   li.active + li:after {
-      background-color: #55b776;
+      background-color: #165ea3;
   }
   li p {
     position: relative;
