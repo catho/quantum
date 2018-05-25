@@ -1,3 +1,16 @@
+## v0.5.3 - May/2018
+### Added
+Url loader
+
+## v0.5.2 - May/2018
+### Changed
+Exporting components
+
+## v0.5.0 - May/2018
+### Added
+New component:
+- Card component
+
 ## v0.4.0 - May/2018
 ### Added
 New component:

@@ -1,6 +1,6 @@
 {
   "name": "@cathodevel/style-guide",
-  "version": "0.4.0",
+  "version": "0.5.3",
   "description": "Catho react components style guide",
   "main": "./dist/index.js",
   "scripts": {
@@ -44,11 +44,11 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "file-loader": "^1.1.11",
     "husky": "^0.14.3",
     "jest": "^22.4.2",
     "react-test-renderer": "^16.2.0",
-    "style-loader": "^0.20.3"
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1"
   },
   "dependencies": {
     "@material-ui/core": "^1.0.0",
