@@ -1,3 +1,9 @@
+## v0.6.0 - May/2018
+### Added
+- Icon Component
+- Buttons with icons
+- Visibility icon on input fields
+
 ## v0.5.3 - May/2018
 ### Added
 Url loader
