@@ -66,6 +66,12 @@ const InputTag = styled.input`
   }
 `;
 
+const InputIcon = styled(Icon)`
+  position: absolute;
+  right: 2px;
+  cursor: pointer;
+`;
+
 const InputFieldGroup = styled(FieldGroup)`
   margin-top: 40px;
 `;
@@ -164,10 +170,9 @@ class Input extends React.Component {
         }
         {
           this.props.type === 'password' &&
-          <Icon
+          <InputIcon
             name={type === 'password' ? 'visibility' : 'visibility_off'}
             onClick={this._showPassword}
-            style={{ position: 'absolute', right: '2px', cursor: 'pointer' }}
           />
         }
         {error && <ErrorMessage>{error}</ErrorMessage>}
