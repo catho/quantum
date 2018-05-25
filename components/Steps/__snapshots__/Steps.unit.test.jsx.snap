@@ -1,18 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Steps /> Should match the snapshot 1`] = `
-Array [
-  <h1>
-    Hello, 
-    Steps
-    
-     
-  </h1>,
-  <button
-    onClick={[Function]}
+<div
+  className="sc-bdVaJa juTEnT"
+>
+  <ul
+    className="sc-bwzfXH jBuPkm"
   >
-    Increment
-  </button>,
-  "Sub component here!",
-]
+    <li
+      className="active"
+    >
+      <p>
+        Step 1
+      </p>
+    </li>
+    <li
+      className="active"
+    >
+      <p>
+        Step 2
+      </p>
+    </li>
+    <li
+      className=""
+    >
+      <p>
+        Step 3
+      </p>
+    </li>
+  </ul>
+</div>
 `;

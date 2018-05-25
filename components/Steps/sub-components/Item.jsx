@@ -8,7 +8,6 @@ const Item = ({ title, active }) => {
     <React.Fragment>
       <li className={isActive}>
         <p>{title}</p>
-        <div style={{ position: 'relative', top: -60 }}>s</div>
       </li>
     </React.Fragment>
   );
