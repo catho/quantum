@@ -69,12 +69,11 @@ const StyledButton = styled.button`
   `}
 
   ${(props) => {
-    const skin = skins(props);
     const {
       unselected,
       selected,
       disabled,
-    } = skin;
+    } = skins(props);
 
     return `
       background-color: ${props.disabled ? disabled.background : unselected.background};
