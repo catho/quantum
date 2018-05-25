@@ -94,7 +94,7 @@ import { Loading } from '@cathodevel/style-guide';
   },
 };
 
-storiesOf('7. Image', module)
+storiesOf('6. Images', module)
   .add('Image', () => (
     <Heading name="Image" image={Atom}>
       <TabbedView>
