@@ -2,11 +2,6 @@ import Colors from '../Colors';
 import DefaultButton from './models/DefaultButton';
 
 const skins = {
-  default: new DefaultButton({
-    unselected: Colors.SECONDARY['500'],
-    selected: Colors.SECONDARY['600'],
-    disabled: Colors.SECONDARY['200'],
-  }),
   primary: new DefaultButton({
     unselected: Colors.SECONDARY['500'],
     selected: Colors.SECONDARY['600'],
@@ -40,4 +35,4 @@ const skins = {
   }),
 };
 
-export default ({ skin }) => skins[skin] || skins.default;
+export default ({ skin }) => skins[skin] || skins.primary;

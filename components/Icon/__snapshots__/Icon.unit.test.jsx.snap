@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> Should match the snapshot 1`] = `
+<span
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
+  style={
+    Object {
+      "color": "",
+    }
+  }
+>
+  3d_rotation
+</span>
+`;
+
+exports[`<Icon /> Should match the snapshot 2`] = `
+<span
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
+  style={
+    Object {
+      "color": "",
+    }
+  }
+>
+  filter_4
+</span>
+`;
+
+exports[`<Icon /> Should match the snapshot 3`] = `
+<span
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
+  style={
+    Object {
+      "color": "",
+    }
+  }
+>
+  arrow_forward
+</span>
+`;
+
+exports[`<Icon /> Should match the snapshot 4`] = `
+<span
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
+  style={
+    Object {
+      "color": "tomato",
+    }
+  }
+>
+  face
+</span>
+`;

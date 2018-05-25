@@ -74,7 +74,8 @@ function getProps(props, indentation) {
       const propText = (typeof value === 'boolean') ? prop : `${prop}=${renderPropValue(value, indentation)}`;
 
       return `${index === 0 ? breakline : ''}${propText}`;
-    }).join(breakline);
+    })
+    .join(breakline);
 }
 
 const componentToString = (component, state, level = 0) => {

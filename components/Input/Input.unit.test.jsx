@@ -12,10 +12,6 @@ describe('Input component ', () => {
     expect(renderer.create(<Input value="foo" error="Error message" />).toJSON()).toMatchSnapshot();
   });
 
-  it('with a passwordLink prop should match the snapshot', () => {
-    expect(renderer.create(<Input value="foo" passwordLink="http://www.catho.com.br/" />).toJSON()).toMatchSnapshot();
-  });
-
   describe('with a label', () => {
     const input = <Input label="Text label" id="input-with-label" value="foo" />;
 
@@ -60,6 +56,31 @@ describe('Input component ', () => {
       expect(wrapper.state('value')).toEqual(value);
       expect(mockFn).toHaveBeenCalledTimes(1);
       expect(mockFn).toBeCalledWith(mockEvent, valueObj);
+    });
+  });
+
+  describe('with password type', () => {
+    const wrapper = shallow(<Input type="password" />);
+
+    const icon = () => wrapper.childAt(1);
+    const visibilityIcon = () => icon().html().includes('visibility');
+    const visibilityOffIcon = () => icon().html().includes('visibility_off');
+
+    it('should has "password", as default input type', () => {
+      expect(visibilityIcon()).toBeTruthy();
+      expect(wrapper.state('type')).toEqual('password');
+    });
+
+    it('should toggle input type, when password icon is clicked', () => {
+      icon().simulate('click');
+
+      expect(visibilityOffIcon()).toBeTruthy();
+      expect(wrapper.state('type')).toEqual('text');
+
+      icon().simulate('click');
+
+      expect(visibilityIcon()).toBeTruthy();
+      expect(wrapper.state('type')).toEqual('password');
     });
   });
 });

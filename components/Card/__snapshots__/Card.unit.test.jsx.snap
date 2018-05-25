@@ -2,7 +2,7 @@
 
 exports[`Card component Should match the snapshot 1`] = `
 <div
-  className="sc-dnqmqq eZFOSl"
+  className="sc-iwsKbI cSCLuq"
   elevation={1}
 />
 `;

@@ -1,3 +1,11 @@
+## v0.6.0 - May/2018
+### Added
+New Components:
+ - Icon
+### Changed
+- Button with icons
+- Visibility icon on input password fields
+
 ## v0.5.3 - May/2018
 ### Added
 Url loader

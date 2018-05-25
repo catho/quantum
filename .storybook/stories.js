@@ -22,4 +22,5 @@ export default [
   'Card',
   'Tooltip',
   'TextMask',
+  'Icon',
 ].map(s => `./${s}/${s}.story.jsx`);
