@@ -59,25 +59,21 @@ const ProgressBar = styled.ul`
   }
 `;
 
-class Steps extends React.Component {
-  render() {
-    const stepList = [
-      { title: 'Step 1', active: true, icon: '1' },
-      { title: 'Step 2', active: true, icon: '2' },
-      { title: 'Step 3', active: false, icon: '3' }
-    ];
+const stepList = [
+  { title: 'Step 1', active: true, icon: '1' },
+  { title: 'Step 2', active: true, icon: '2' },
+  { title: 'Step 3', active: false, icon: '3' },
+];
 
-    return (
-      <React.Fragment>
-        <Container>
-          <ProgressBar>
-          {stepList.map(step => <Item {...step} />)}
-          </ProgressBar>
-        </Container>
-      </React.Fragment>
-    );
-  }
-}
+const Steps = () => (
+  <React.Fragment>
+    <Container>
+      <ProgressBar>
+        {stepList.map(step => <Item {...step} />)}
+      </ProgressBar>
+    </Container>
+  </React.Fragment>
+);
 
 // Steps.propTypes = {
 //   name: PropTypes.string,
