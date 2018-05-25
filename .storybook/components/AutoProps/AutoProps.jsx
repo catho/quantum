@@ -83,11 +83,12 @@ class AutoProps extends React.Component {
 
           return (
             <Select
-             options={options}
-             onChange={this.handleChange}
-             name={propName}
-             defaultValue={propValue}
-             path={propPath}
+              search
+              options={options}
+              onChange={this.handleChange}
+              name={propName}
+              defaultValue={propValue}
+              path={propPath}
             />
           )
         }
@@ -97,11 +98,11 @@ class AutoProps extends React.Component {
         controller: (propPath, propName, { name }) => {
           return (
             <Checkbox
-            toggle
-            checked={propValue}
-            onChange={this.handleChange}
-            name={propName}
-            path={propPath}
+              toggle
+              checked={propValue}
+              onChange={this.handleChange}
+              name={propName}
+              path={propPath}
             />
           )
         }

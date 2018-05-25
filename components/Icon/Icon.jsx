@@ -1,23 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Icon from '@material-ui/core/Icon';
+import icons from '../shared/icons';
 
-const formatIconName = (name) => {
-  if (['3d_rotation', '3d-rotation'].includes(name)) return 'ThreeDRotation';
+const FontIcon = ({ name, skin, ...props }) => (
+  <Icon {...props} style={{ color: skin }}>{name}</Icon>
+);
 
-  return name && name
-    .split(/[_-]/)
-    .map(s => s.replace(/^./, s[0].toUpperCase()))
-    .join('');
+FontIcon.defaultProps = {
+  skin: '',
 };
 
-const Icon = ({ name, ...props }) => {
-  /* eslint-disable import/no-dynamic-require, global-require */
-  const IconClass = require(`@material-ui/icons/${formatIconName(name) || 'Error'}`).default;
-
-  return <IconClass {...props} />;
+FontIcon.propTypes = {
+  name: PropTypes.oneOf(icons).isRequired,
+  skin: PropTypes.string,
 };
 
-Icon.propTypes = { name: PropTypes.string.isRequired };
-
-export default Icon;
-
+export default FontIcon;

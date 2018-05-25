@@ -4,6 +4,8 @@ import Colors from './components/Colors';
 export default {
   font: {
     weight: 500,
+    normal: '12px',
+    big: '16px',
   },
   sizes: {
     radius: '1px',

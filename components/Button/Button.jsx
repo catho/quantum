@@ -5,18 +5,54 @@ import styled from 'styled-components';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../../theme';
 import skins from './skins';
+import Icon from '../Icon/Icon';
+
+const fontSize = ({ size }) => `font-size: ${theme.font[size] || theme.font.normal};`;
+const iconSize = ({ size }) => {
+  const sizes = {
+    normal: '24px',
+    big: '32px',
+  };
+
+  return `font-size: ${sizes[size] || sizes.normal};`;
+};
+
+const iconMargin = ({ size }) => {
+  const margins = {
+    normal: '-5px 5px -7px -5px',
+    big: '-5px 5px -10px -10px',
+  };
+
+  return `margin: ${margins[size] || margins.normal};`;
+};
+
+const padding = ({ size }) => {
+  const paddings = {
+    normal: '8px 10px',
+    big: '15px 27px',
+  };
+
+  return `padding: ${paddings[size] || paddings.normal};`;
+};
+
+const ButtonIcon = styled(Icon)`
+  ${iconMargin}
+`;
 
 const StyledButton = styled.button`
   border-radius: ${theme.sizes.radius};
-  cursor: pointer;
-  font-size: inherit;
   font-weight: bold;
-  padding: 17px 30px;
   text-align: center;
   text-decoration: ${props => (props.link ? 'underline' : 'none')};
 
+  ${fontSize}
+  ${padding}
   ${theme.mixins.shadow()};
   ${theme.mixins.transition()};
+
+  ${ButtonIcon} {
+    ${iconSize}
+  }
 
   ${props => props.full && `
     width: 100%;
@@ -26,6 +62,10 @@ const StyledButton = styled.button`
     display: block;
     margin-left: auto;
     margin-right: auto;
+  `}
+
+  ${props => `
+    cursor: ${props.disabled ? 'not-allowed' : 'pointer'};
   `}
 
   ${(props) => {
@@ -57,13 +97,25 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ children, ...rest }) => <StyledButton {...rest}> { children } </StyledButton>;
+const Button = ({
+  children,
+  icon,
+  size,
+  ...rest
+}) => (
+  <StyledButton {...rest} size={size}>
+    { icon && <ButtonIcon size={size} name={icon} /> }
+    { children }
+  </StyledButton>
+);
 
 Button.defaultProps = {
   center: false,
   disabled: false,
   full: false,
-  skin: 'default',
+  icon: '',
+  size: 'normal',
+  skin: 'primary',
   type: 'button',
   children: 'Catho',
   onClick: () => {},
@@ -73,8 +125,14 @@ Button.propTypes = {
   center: PropTypes.bool,
   disabled: PropTypes.bool,
   full: PropTypes.bool,
+  /** Icon name. The full catalogue can be found
+   * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
+  icon: PropTypes.string,
+  size: PropTypes.oneOf([
+    'normal',
+    'big',
+  ]),
   skin: PropTypes.oneOf([
-    'default',
     'primary',
     'secondary',
     'action',

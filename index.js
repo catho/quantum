@@ -19,6 +19,7 @@ import { Form, Validations } from './components/Form';
 import Tooltip from './components/Tooltip';
 import Logo from './components/Logo';
 import Card from './components/Card';
+import Icon from './components/Icon';
 
 export {
   AutoComplete,
@@ -47,4 +48,5 @@ export {
   TextMask,
   Tooltip,
   Validations,
+  Icon,
 };
