@@ -5,7 +5,7 @@ import { Container, Row, Col } from '../../components/Grid';
 import { Tab, Example, AutoExample } from '../../.storybook/components';
 
 const exampleTab = (
-  <Tab title="Examples">
+  <Tab title="Example">
     <Container fluid>
       <p>The full catalogue of icons can be found <a target="_blank" href="/?selectedKind=1.%20Foundation&selectedStory=Icons">here</a>.</p>
       <Row>
