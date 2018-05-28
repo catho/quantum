@@ -4,15 +4,19 @@ import styled from 'styled-components';
 
 import Step from './sub-components/Step';
 
+
 const Container = styled.div`
-  padding: 0;
-  margin: 0;
+  clear: both;
+  display: table;
+  width: 100%;
 `;
 
 const ProgressBar = styled.ul`
+  padding: 0;
+
   li {
       list-style-type: none;
-      width: 25%;
+      width: calc(100% / ${props => props.steps});
       float: left;
       font-size: 12px;
       position: relative;
@@ -36,10 +40,10 @@ const ProgressBar = styled.ul`
 
    li:after {
       width: 100%;
-      height: 1px;
+      height: 0.6px;
       content: '';
       position: absolute;
-      background-color: #a0a0a0;
+      background-color: #cccccc;
       top: 15px;
       left: -50%;
       z-index: -1;
@@ -59,7 +63,11 @@ const ProgressBar = styled.ul`
   }
 
   li.active + li:after {
-      background-color: #165ea3;
+      background-color: #cccccc;
+  }
+  
+  li.done + li:after {
+      background-color: #cccccc;
   }
 
   li p {
@@ -71,16 +79,29 @@ const ProgressBar = styled.ul`
 `;
 
 const stepList = [
-  { title: 'Criação de conta', active: true, icon: '1' },
-  { title: 'Plano e forma de pagamento', active: true, icon: '2' },
-  { title: 'Preencher o currículo', active: false, icon: '3' },
+  {
+    title: 'Criação de conta',
+    active: false,
+    done: true,
+    icon: '1',
+  },
+  {
+    title: 'Plano e forma de pagamento',
+    active: true,
+    icon: '2',
+  },
+  {
+    title: 'Preencher o currículo',
+    active: false,
+    icon: '3',
+  },
 ];
 
 const Steps = () => (
   <React.Fragment>
     <Container>
-      <ProgressBar>
-        {stepList.map(step => <Step {...step} />)}
+      <ProgressBar steps={stepList.length}>
+        {stepList.map((step, index) => <Step {...step} key={index} />)}
       </ProgressBar>
     </Container>
   </React.Fragment>
