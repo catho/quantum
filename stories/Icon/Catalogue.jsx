@@ -26,6 +26,13 @@ class Catalogue extends Component {
     return (
       <React.Fragment>
         <Container fluid>
+          <Row>
+            <Col tablet={12}>
+              <p>
+                We are using <a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">Material Design icons</a> as default library.
+              </p>
+            </Col>
+          </Row>
           <Row style={{ marginTop: '-40px' }}>
             <Col tablet={10}>
               <h3 style={{ marginTop: '50px' }}>
