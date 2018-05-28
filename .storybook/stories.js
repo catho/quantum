@@ -1,9 +1,22 @@
+/**
+  * Storybook list of stories
+  *
+  * order is reflected in storybook sidebar
+  */
+
 export default [
   'Introduction',
+
+  // 1. Foundations
   'Colors',
   'Grid',
   'Typography',
+  'Icon',
+
+  // 2. Buttons
   'Button',
+
+  // 3. Forms
   'AutoComplete',
   'Checkbox',
   'Dropdown',
@@ -11,16 +24,29 @@ export default [
   'Radio',
   'Range',
   'Textarea',
-  'Notification',
-  'Modal',
-  'Loading',
   'Toggle',
   'Form',
+
+  // 4. Notifications
+  'Notification',
+
+  // 5. Modals
+  'Modal',
+
+  // 6. Images
   'Image',
   'Logo',
-  'Loader',
-  'Card',
-  'Tooltip',
+
+  // 7. Mask
   'TextMask',
-  'Icon',
+
+  // 8. Tooltip
+  'Tooltip',
+
+  // 9. Card
+  'Card',
+
+  // 10. Other
+  'Loading',
+  'Loader',
 ].map(s => `./${s}/${s}.story.jsx`);

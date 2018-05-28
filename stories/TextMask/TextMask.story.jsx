@@ -56,7 +56,7 @@ const TextMaskCode = `<TextMask text="06460090" mask={[[/\\d/, /\\d/, /\\d/, /\\
 
 <TextMask.CEP text="06460090" />`;
 
-storiesOf('8. Mask', module)
+storiesOf('7. Mask', module)
   .add('Text', () => (
     <React.Fragment>
       <Heading image={Atom} name="TextMask" />

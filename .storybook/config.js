@@ -6,7 +6,6 @@ import stories from './stories';
 
 setOptions({
   name: 'Catho Style-Guide',
-  sortStoriesByKind: true,
   showAddonPanel: false,
   addonPanelInRight: false,
   sidebarAnimations: false,

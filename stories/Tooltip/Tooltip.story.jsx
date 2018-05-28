@@ -61,7 +61,7 @@ const tabExample = (
   </Tab>
 );
 
-storiesOf('9. Tooltip', module)
+storiesOf('8. Tooltip', module)
   .add('Basic', () => (
     <AutoExample
       component={Tooltip}
