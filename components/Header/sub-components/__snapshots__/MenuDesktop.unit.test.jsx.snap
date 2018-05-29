@@ -273,7 +273,7 @@ exports[`MenuDesktop component Should match the snapshot 1`] = `
           className="sc-htoDjs kkROuE"
         >
           <li
-            className="sc-dnqmqq igIpdT"
+            className="sc-dnqmqq ceNyGy"
           >
             <a
               className="sc-iwsKbI ggKTXP"
@@ -283,7 +283,7 @@ exports[`MenuDesktop component Should match the snapshot 1`] = `
             </a>
           </li>
           <li
-            className="sc-dnqmqq igIpdT"
+            className="sc-dnqmqq ceNyGy"
           >
             <button
               className="sc-gZMcBi dvYuZS"
