@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import IconArrowDown from 'react-icons/lib/md/keyboard-arrow-down';
+import Icon from '../Icon/Icon';
 import ColorPalette from '../Colors';
 import theme from '../../theme';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
@@ -28,11 +28,11 @@ const Select = styled.select`
   }
 `;
 
-const Icon = styled(IconArrowDown)`
-  color: ${ColorPalette.GREY['900']};
+const ArrowDown = styled(Icon)`
   font-size: 1.5em;
   pointer-events: none;
   margin-left: -30px;
+  padding-top: 6px;
 `;
 
 class Dropdown extends React.Component {
@@ -93,7 +93,7 @@ class Dropdown extends React.Component {
           }
         </Select>
 
-        <Icon />
+        <ArrowDown name="keyboard_arrow_down" skin={ColorPalette.GREY['900']}/>
 
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </FieldGroup>
