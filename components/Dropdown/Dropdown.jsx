@@ -93,7 +93,7 @@ class Dropdown extends React.Component {
           }
         </Select>
 
-        <ArrowDown name="keyboard_arrow_down" skin={ColorPalette.GREY['900']}/>
+        <ArrowDown name="keyboard_arrow_down" skin={ColorPalette.GREY['900']} />
 
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </FieldGroup>
