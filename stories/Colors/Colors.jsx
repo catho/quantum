@@ -90,7 +90,10 @@ const PrimaryNumber = styled.div`
 
 export default () => (
   <React.Fragment>
-    <p>Catho has some segments, below you can see the <strong>Candidates</strong> default color palette.</p>
+    <p>
+      Catho has some segments, below you can see the
+      <strong>Candidates</strong> default color palette.
+    </p>
 
     <HowToImport importModules="Colors" />
 

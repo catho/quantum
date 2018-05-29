@@ -3,61 +3,6 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider, css } from 'styled-components';
 import { Container, Row, Col } from '../../Grid';
 
-const MenuMobile = ({ data, menuOpened }) => (
-  <ThemeProvider theme={data.theme}>
-    <MenuMobileContainer fluid className={menuOpened}>
-      <Row no-gutters>
-        {
-          data.menu.phone.links.map(link =>
-            link.icon && (
-              <Col phone={4} key={link.id}>
-                <FeaturedListItem>
-                  <FeaturedLink icon={link.icon} href={link.href} title={link.text}>
-                    {link.text}
-                  </FeaturedLink>
-                </FeaturedListItem>
-              </Col>
-            ))
-        }
-        <LinkList>
-          {
-            data.menu.phone.links.map(link =>
-              !link.icon && (
-                <LinkListItem
-                  key={link.id}
-                  linkTitle={!!link.title}
-                >
-                  { link.text &&
-                    <Link
-                      href={link.href}
-                      title={link.text}
-                      target={link.target}
-                    >
-                      {link.text}
-                    </Link>
-                  }
-                  {
-                    link.title &&
-                    link.title
-                  }
-                </LinkListItem>
-            ))
-          }
-        </LinkList>
-      </Row>
-    </MenuMobileContainer>
-  </ThemeProvider>
-);
-
-MenuMobile.propTypes = {
-  data: PropTypes.instanceOf(Object),
-  menuOpened: PropTypes.string,
-};
-MenuMobile.defaultProps = {
-  data: null,
-  menuOpened: null,
-};
-
 const MenuMobileContainer = styled(Container)`
   background-color: #FFF;
   box-sizing: border-box;
@@ -184,5 +129,59 @@ const FeaturedLink = styled.a`
     }
   `}
 `;
+
+const MenuMobile = ({ data, menuOpened }) => (
+  <ThemeProvider theme={data.theme}>
+    <MenuMobileContainer fluid className={menuOpened}>
+      <Row no-gutters>
+        {
+          data.menu.phone.links.map(link =>
+            link.icon && (
+              <Col phone={4} key={link.id}>
+                <FeaturedListItem>
+                  <FeaturedLink icon={link.icon} href={link.href} title={link.text}>
+                    {link.text}
+                  </FeaturedLink>
+                </FeaturedListItem>
+              </Col>
+            ))
+        }
+        <LinkList>
+          {
+            data.menu.phone.links.map(link =>
+              !link.icon && (
+                <LinkListItem
+                  key={link.id}
+                  linkTitle={!!link.title}
+                >
+                  { link.text &&
+                    <Link
+                      href={link.href}
+                      title={link.text}
+                      target={link.target}
+                    >
+                      {link.text}
+                    </Link>
+                  }
+                  {
+                    link.title
+                  }
+                </LinkListItem>
+            ))
+          }
+        </LinkList>
+      </Row>
+    </MenuMobileContainer>
+  </ThemeProvider>
+);
+
+MenuMobile.propTypes = {
+  data: PropTypes.instanceOf(Object),
+  menuOpened: PropTypes.string,
+};
+MenuMobile.defaultProps = {
+  data: null,
+  menuOpened: null,
+};
 
 export default MenuMobile;

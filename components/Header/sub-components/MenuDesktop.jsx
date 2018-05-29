@@ -5,88 +5,6 @@ import { Container, Row, Col, Hide, BREAKPOINTS } from '../../Grid';
 import MenuButton from './MenuButton';
 import LoginBox from './LoginBox';
 
-const MenuDesktop = ({
-  data, handleMenuOpen, handleLoginOpen, menuOpened, loginOpened,
-}) => (
-  <ThemeProvider theme={data.menu.desktop.theme}>
-    <MenuDesktopContainer fluid className={menuOpened}>
-      <Container>
-        <Row>
-          <StyledCol phone={12} tablet={12} desktop={12} className={menuOpened}>
-            <MenuNavigation>
-              <Hide desktop large hd>
-                <MenuButton handleMenuOpen={handleMenuOpen} menuOpened={menuOpened} />
-              </Hide>
-
-              <a href="https://www.catho.com.br/">
-                <LogoCatho src="https://static.catho.com.br/svg/site/logoCathoB2c.svg" alt="A gente trabalha pelo seu trabalho" />
-              </a>
-
-              <StyledHide tablet phone>
-                <LinkList>
-                  {
-                    data.menu.desktop.links.map(link => (
-                      <LinkListItem key={link.id}>
-                        { !link.collapsedLinkGroup &&
-                          <Link href={link.href}>
-                            {link.text}
-                          </Link>
-                        }
-
-                        { link.collapsedLinkGroup &&
-                          link.text
-                        }
-
-                        { link.collapsedLinkGroup &&
-                          <PopOverLinkList>
-                            {
-                              link.collapsedLinkGroup.map(collapsedlink => (
-                                <PopOverLinkListItem key={collapsedlink.id}>
-                                  { collapsedlink.text &&
-                                    <PopOverLink href={collapsedlink.href}>
-                                      { collapsedlink.text }
-                                    </PopOverLink>
-                                  }
-                                  {
-                                    collapsedlink.title &&
-                                    <PopOverTitle>
-                                      { collapsedlink.title }
-                                    </PopOverTitle>
-                                  }
-                                </PopOverLinkListItem>
-                              ))
-                            }
-                          </PopOverLinkList>
-                       }
-
-                      </LinkListItem>
-                    ))
-                  }
-                </LinkList>
-              </StyledHide>
-            </MenuNavigation>
-            <LoginBox handleLoginOpen={handleLoginOpen} loginOpened={loginOpened} />
-          </StyledCol>
-        </Row>
-      </Container>
-    </MenuDesktopContainer>
-  </ThemeProvider>
-);
-
-MenuDesktop.propTypes = {
-  data: PropTypes.instanceOf(Object),
-  handleMenuOpen: PropTypes.func.isRequired,
-  handleLoginOpen: PropTypes.func.isRequired,
-  menuOpened: PropTypes.string,
-  loginOpened: PropTypes.bool,
-};
-
-MenuDesktop.defaultProps = {
-  data: null,
-  menuOpened: null,
-  loginOpened: false,
-};
-
 const MenuDesktopContainer = styled(Container)`
   border-bottom: 1px solid #f4f4f4;
   position: relative;
@@ -258,5 +176,87 @@ const PopOverLink = styled.a`
   text-decoration: none;
   width: 100%;
 `;
+
+const MenuDesktop = ({
+  data, handleMenuOpen, handleLoginOpen, menuOpened, loginOpened,
+}) => (
+  <ThemeProvider theme={data.menu.desktop.theme}>
+    <MenuDesktopContainer fluid className={menuOpened}>
+      <Container>
+        <Row>
+          <StyledCol phone={12} tablet={12} desktop={12} className={menuOpened}>
+            <MenuNavigation>
+              <Hide desktop large hd>
+                <MenuButton handleMenuOpen={handleMenuOpen} menuOpened={menuOpened} />
+              </Hide>
+
+              <a href="https://www.catho.com.br/">
+                <LogoCatho src="https://static.catho.com.br/svg/site/logoCathoB2c.svg" alt="A gente trabalha pelo seu trabalho" />
+              </a>
+
+              <StyledHide tablet phone>
+                <LinkList>
+                  {
+                    data.menu.desktop.links.map(link => (
+                      <LinkListItem key={link.id}>
+                        { !link.collapsedLinkGroup &&
+                          <Link href={link.href}>
+                            {link.text}
+                          </Link>
+                        }
+
+                        { link.collapsedLinkGroup &&
+                          link.text
+                        }
+
+                        { link.collapsedLinkGroup &&
+                          <PopOverLinkList>
+                            {
+                              link.collapsedLinkGroup.map(collapsedlink => (
+                                <PopOverLinkListItem key={collapsedlink.id}>
+                                  { collapsedlink.text &&
+                                    <PopOverLink href={collapsedlink.href}>
+                                      { collapsedlink.text }
+                                    </PopOverLink>
+                                  }
+                                  {
+                                    collapsedlink.title &&
+                                    <PopOverTitle>
+                                      { collapsedlink.title }
+                                    </PopOverTitle>
+                                  }
+                                </PopOverLinkListItem>
+                              ))
+                            }
+                          </PopOverLinkList>
+                       }
+
+                      </LinkListItem>
+                    ))
+                  }
+                </LinkList>
+              </StyledHide>
+            </MenuNavigation>
+            <LoginBox handleLoginOpen={handleLoginOpen} loginOpened={loginOpened} />
+          </StyledCol>
+        </Row>
+      </Container>
+    </MenuDesktopContainer>
+  </ThemeProvider>
+);
+
+MenuDesktop.propTypes = {
+  data: PropTypes.instanceOf(Object),
+  handleMenuOpen: PropTypes.func.isRequired,
+  handleLoginOpen: PropTypes.func.isRequired,
+  menuOpened: PropTypes.string,
+  loginOpened: PropTypes.bool,
+};
+
+MenuDesktop.defaultProps = {
+  data: null,
+  menuOpened: null,
+  loginOpened: false,
+};
 
 export default MenuDesktop;

@@ -7,7 +7,7 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "build": "webpack",
-    "lint": "eslint ./components/**/* ./.storybook/**/* ./*.js --ext .js --ext .jsx",
+    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx",
     "prepush": "yarn lint && yarn test",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

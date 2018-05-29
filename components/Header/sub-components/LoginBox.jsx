@@ -3,35 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { BREAKPOINTS } from '../../Grid';
 
-const LoginBox = ({ handleLoginOpen, loginOpened }) => (
-  <LinkList>
-    <ListItem>
-      <Link href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr%5Bplano_id%5D=1&cur%5Bperfil_id%5D=1&cur%5Buse_personalizado%5D=0&a=0&ppd=0&tipoinclusao=903">
-        Assine
-      </Link>
-    </ListItem>
-
-    <ListItem>
-      <Button onClick={handleLoginOpen} loginOpened={loginOpened}>
-        Login
-      </Button>
-
-      <LoginFrame loginOpened={loginOpened}>
-        <iframe src="https://safe.catho.com.br/login/tipo/tooltip/" frameBorder="0" scrolling="no" title="LoginBox" />
-      </LoginFrame>
-    </ListItem>
-  </LinkList>
-);
-
-LoginBox.propTypes = {
-  handleLoginOpen: PropTypes.func.isRequired,
-  loginOpened: PropTypes.bool,
-};
-
-LoginBox.defaultProps = {
-  loginOpened: false,
-};
-
 const LinkList = styled.ul`
   display: flex;
   justify-content: flex-start;
@@ -54,6 +25,7 @@ const ListItem = styled.li`
 
   &:hover {
     border-bottom: ${props => props.theme.menuHover.borderSize} solid ${props => props.theme.menuHover.borderColor};
+
     ul {
       visibility: visible;
       opacity: 1;
@@ -62,6 +34,7 @@ const ListItem = styled.li`
 
   &:last-child {
     margin-left: 10px;
+
     &:hover {
       border-bottom:${props => props.theme.menuHover.borderSize} solid transparent;
     }
@@ -124,5 +97,34 @@ const LoginFrame = styled.div`
     height: 190px;
   }
 `;
+
+const LoginBox = ({ handleLoginOpen, loginOpened }) => (
+  <LinkList>
+    <ListItem>
+      <Link href="https://seguro.catho.com.br/inclusao/curriculo.php?nova_inclusao=1&usr%5Bplano_id%5D=1&cur%5Bperfil_id%5D=1&cur%5Buse_personalizado%5D=0&a=0&ppd=0&tipoinclusao=903">
+        Assine
+      </Link>
+    </ListItem>
+
+    <ListItem>
+      <Button onClick={handleLoginOpen} loginOpened={loginOpened}>
+        Login
+      </Button>
+
+      <LoginFrame loginOpened={loginOpened}>
+        <iframe src="https://safe.catho.com.br/login/tipo/tooltip/" frameBorder="0" scrolling="no" title="LoginBox" />
+      </LoginFrame>
+    </ListItem>
+  </LinkList>
+);
+
+LoginBox.propTypes = {
+  handleLoginOpen: PropTypes.func.isRequired,
+  loginOpened: PropTypes.bool,
+};
+
+LoginBox.defaultProps = {
+  loginOpened: false,
+};
 
 export default LoginBox;

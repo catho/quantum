@@ -46,6 +46,14 @@ const PromotionContainer = styled(Container)`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
 const PromotionBar = ({ data, children, href }) => (
   <ThemeProvider theme={data.theme}>
     <Link href={href}>
@@ -67,13 +75,5 @@ PromotionBar.propTypes = {
   href: PropTypes.string.isRequired,
 };
 PromotionBar.defaultProps = { data: null };
-
-const Link = styled.a`
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
-`;
 
 export default PromotionBar;

@@ -1,24 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
 import Heading from '../../.storybook/components/Heading';
 import CodeExample from '../../.storybook/components/CodeExample';
+import Table from '../../.storybook/components/Table';
 import { Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Title from '../../.storybook/components/Title';
-
-const StyledTable = styled.table`
-  width: 100%;
-  border-collapse: collapse;
-
-  th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    font-size: 14px;
-    text-align: left;
-  }
-`;
 
 const cardSample = (
   <Card elevation={1} hoverElevation={5}>
@@ -84,8 +72,14 @@ storiesOf('9. Card', module)
         <Tab title="Anatomy">
           <Row>
             <Col desktop={12} tablet={12}>
-              <p>The card container is the only required element in a card. All other elements shown here are optional. </p>
-              <p>Card layouts can vary to support the types of content they contain. The following elements are commonly found among that variety.</p>
+              <p>
+                The card container is the only required element in a card.
+                All other elements shown here are optional.
+              </p>
+              <p>
+                Card layouts can vary to support the types of content they contain.
+                The following elements are commonly found among that variety.
+              </p>
 
               <h1>The anatomy</h1>
 
@@ -95,7 +89,7 @@ storiesOf('9. Card', module)
 
               <h2>Card sub-components</h2>
 
-              <StyledTable>
+              <Table>
                 <thead>
                   <tr>
                     <th>Component</th>
@@ -108,7 +102,11 @@ storiesOf('9. Card', module)
                   <tr>
                     <td>Container</td>
                     <td><code>{'<Card.Container />'}</code></td>
-                    <td>Card containers hold all card elements, and their size is determined by the space those elements occupy. Card elevation is expressed by the container.</td>
+                    <td>
+                      Card containers hold all card elements, and their size is
+                      determined by the space those elements occupy.
+                      Card elevation is expressed by the container.
+                    </td>
                   </tr>
 
                   <tr>
@@ -120,19 +118,27 @@ storiesOf('9. Card', module)
                   <tr>
                     <td>Header text [optional]</td>
                     <td><code>{'<Card.HeaderText />'}</code></td>
-                    <td>Header text can include things like the name of a photo album or article.</td>
+                    <td>
+                      Header text can include things like the name of a photo album or article.
+                    </td>
                   </tr>
 
                   <tr>
                     <td>Media [optional]</td>
                     <td><code>{'<Card.Media />'}</code></td>
-                    <td>Cards can include a variety of media, including photos, and graphics, such as weather icons.</td>
+                    <td>
+                      Cards can include a variety of media, including photos,
+                      and graphics, such as weather icons.
+                    </td>
                   </tr>
 
                   <tr>
                     <td>Supporting text [optional]</td>
                     <td><code>{'<Card.SupportText />'}</code></td>
-                    <td>Supporting text include text like an article summary or a restaurant description.</td>
+                    <td>
+                      Supporting text include text like an article summary
+                      or a restaurant description.
+                    </td>
                   </tr>
 
                   <tr>
@@ -148,9 +154,14 @@ storiesOf('9. Card', module)
                   </tr>
 
                 </tbody>
-              </StyledTable>
+              </Table>
 
-              <p>Each card is made up of content blocks. All of the blocks, as a whole, are related to a single subject or destination. Content can receive different levels of emphasis, depending on its level of hierarchy.</p>
+              <p>
+                Each card is made up of content blocks.
+                All of the blocks, as a whole, are related to a single subject or destination.
+                Content can receive different levels of emphasis,
+                depending on its level of hierarchy.
+              </p>
 
               <Col desktop={12} tablet={12} style={{ backgroundColor: '#e5e5e5', textAlign: 'center' }}>
                 <img src="https://material.io/design/assets/0B6xUSjjSulxca3J1cWoxa003amc/cards-elements-1.png" alt="" width="900" />

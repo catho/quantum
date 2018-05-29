@@ -5,55 +5,6 @@ import React from 'react';
 import GlobalTheme from '../../theme';
 import ComponentTheme from './ComponentTheme';
 
-/** A notification component that alerts user of something */
-class Notification extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      show: this.props.show,
-    };
-
-    if (this.props.duration) {
-      this.handleAutoDestruction();
-    }
-  }
-
-  hideModal = () => {
-    this.setState({ show: false }, this.props.onClose ? this.props.onClose() : null);
-  }
-
-  handleAutoDestruction = () => {
-    setTimeout(() => {
-      this.hideModal();
-    }, this.props.duration * 1000);
-  }
-
-  render() {
-    const { message: { title, text, type } } = this.props;
-
-    const notification = this.state.show ? (
-      <ThemeProvider theme={GlobalTheme}>
-        <NotificationWrapper type={type}>
-          <NotificationIcon />
-
-          <NotificationMessage>
-            <strong>
-              {title}
-            </strong>
-
-            {text}
-          </NotificationMessage>
-
-          <NotificationClose onClick={this.hideModal}><span aria-hidden="true">×</span></NotificationClose>
-        </NotificationWrapper>
-      </ThemeProvider>
-    ) : null;
-
-    return notification;
-  }
-}
-
 const NotificationWrapper = styled.div`
   ${props => ComponentTheme[props.type]}
   padding: ${props => props.theme.sizes.spacing};
@@ -83,6 +34,53 @@ const NotificationClose = styled.button`
     border: 0;
     -webkit-appearance: none;
 `;
+
+/** A notification component that alerts user of something */
+class Notification extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      show: this.props.show,
+    };
+
+    if (this.props.duration) {
+      this.handleAutoDestruction();
+    }
+  }
+
+  hideModal = () => {
+    this.setState({ show: false }, this.props.onClose ? this.props.onClose() : null);
+  }
+
+  handleAutoDestruction = () => {
+    setTimeout(() => {
+      this.hideModal();
+    }, this.props.duration * 1000);
+  }
+
+  render() {
+    const { message: { title, text, type } } = this.props;
+
+    return this.state.show ? (
+      <ThemeProvider theme={GlobalTheme}>
+        <NotificationWrapper type={type}>
+          <NotificationIcon />
+
+          <NotificationMessage>
+            <strong>
+              {title}
+            </strong>
+
+            {text}
+          </NotificationMessage>
+
+          <NotificationClose onClick={this.hideModal}><span aria-hidden="true">×</span></NotificationClose>
+        </NotificationWrapper>
+      </ThemeProvider>
+    ) : null;
+  }
+}
 
 Notification.defaultProps = {
   show: true,

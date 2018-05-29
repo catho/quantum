@@ -9,7 +9,6 @@ import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
 import CodeExample from '../../.storybook/components/CodeExample';
 import Atom from '../static/atom.svg';
-import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const RadioGroupWrapper = styled.div`
   padding: 15px;

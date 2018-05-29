@@ -3,38 +3,6 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Container, BREAKPOINTS } from '../../Grid';
 
-const HeaderBar = ({ data, path }) => (
-  <ThemeProvider theme={data.theme}>
-    <HeaderContainer fluid>
-      <StyledContainer>
-        <LinkList>
-          {
-            data.links.map(link => (
-              <LinkListItem key={link.id}>
-                <Link href={link.href} className={path === link.href ? 'selected' : ''}>
-                  { link.text && link.text }
-                  {
-                    (link.img) &&
-                    <img
-                      alt={link.text}
-                      src={`${process.env.APPLICATION_PATH}/static/${link.img.src}`}
-                      width={link.img.width}
-                      height={link.img.height}
-                    />
-                  }
-                </Link>
-              </LinkListItem>
-            ))
-          }
-        </LinkList>
-      </StyledContainer>
-    </HeaderContainer>
-  </ThemeProvider>
-);
-
-HeaderBar.propTypes = { data: PropTypes.instanceOf(Object), path: PropTypes.string.isRequired };
-HeaderBar.defaultProps = { data: null };
-
 const HeaderContainer = styled(Container)`
   background-color: ${props => props.theme.backgroundColor};
   padding-top: ${props => props.theme.paddingTop};
@@ -101,5 +69,37 @@ const Link = styled.a`
   @media (max-width: ${BREAKPOINTS.desktop}px) {
     color: ${props => props.theme.secondaryColor};
 `;
+
+const HeaderBar = ({ data, path }) => (
+  <ThemeProvider theme={data.theme}>
+    <HeaderContainer fluid>
+      <StyledContainer>
+        <LinkList>
+          {
+            data.links.map(link => (
+              <LinkListItem key={link.id}>
+                <Link href={link.href} className={path === link.href ? 'selected' : ''}>
+                  { link.text }
+                  {
+                    (link.img) &&
+                    <img
+                      alt={link.text}
+                      src={`${process.env.APPLICATION_PATH}/static/${link.img.src}`}
+                      width={link.img.width}
+                      height={link.img.height}
+                    />
+                  }
+                </Link>
+              </LinkListItem>
+            ))
+          }
+        </LinkList>
+      </StyledContainer>
+    </HeaderContainer>
+  </ThemeProvider>
+);
+
+HeaderBar.propTypes = { data: PropTypes.instanceOf(Object), path: PropTypes.string.isRequired };
+HeaderBar.defaultProps = { data: null };
 
 export default HeaderBar;

@@ -83,7 +83,8 @@ storiesOf('3. Forms', module)
             Each child of <code>Form</code> has an property <code>validate</code>.
           </p>
           <p>
-            It is not required but you can provide validations on it to be fired when your form is submitted.
+            It is not required but you can provide validations on it to be
+            fired when your form is submitted.
           </p>
 
           <h4>Validate Example</h4>

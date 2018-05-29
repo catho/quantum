@@ -2,23 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-const MenuButton = ({ handleMenuOpen, menuOpened }) => (
-  <Hamburger onClick={handleMenuOpen} className={menuOpened}>
-    <TopBread />
-    <Meat />
-    <BottomBread />
-  </Hamburger>
-);
-
-MenuButton.propTypes = {
-  handleMenuOpen: PropTypes.func.isRequired,
-  menuOpened: PropTypes.string,
-};
-
-MenuButton.defaultProps = {
-  menuOpened: null,
-};
-
 const Hamburger = styled.div`
   cursor: pointer;
   height: 20px;
@@ -69,5 +52,23 @@ const BottomBread = styled.span`
     transform: rotate(-135deg);
   }
 `;
+
+
+const MenuButton = ({ handleMenuOpen, menuOpened }) => (
+  <Hamburger onClick={handleMenuOpen} className={menuOpened}>
+    <TopBread />
+    <Meat />
+    <BottomBread />
+  </Hamburger>
+);
+
+MenuButton.propTypes = {
+  handleMenuOpen: PropTypes.func.isRequired,
+  menuOpened: PropTypes.string,
+};
+
+MenuButton.defaultProps = {
+  menuOpened: null,
+};
 
 export default MenuButton;

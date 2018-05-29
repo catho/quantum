@@ -34,6 +34,15 @@ const ColFlex = styled(Col)`{
   align-items: center;
 }`;
 
+const Catho = () => (
+  <CathoFooterInfo>
+    Catho Online Ltda. CNPJ: 03.753.088/0001-00 Alameda Juari, 262a - Barueri, SP - 06460-090
+    <a target="_blank" rel="noopener noreferrer" href="https://www.catho.com.br/institucional/privacidade-relacionamento/" >
+         Política de Privacidade
+    </a>
+  </CathoFooterInfo>
+);
+
 export default () => (
   <FooterBarContainer fluid>
     <Row>
@@ -49,13 +58,4 @@ export default () => (
       </Col>
     </Row>
   </FooterBarContainer>
-);
-
-const Catho = () => (
-  <CathoFooterInfo>
-    Catho Online Ltda. CNPJ: 03.753.088/0001-00 Alameda Juari, 262a - Barueri, SP - 06460-090
-    <a target="_blank" rel="noopener noreferrer" href="https://www.catho.com.br/institucional/privacidade-relacionamento/" >
-         Política de Privacidade
-    </a>
-  </CathoFooterInfo>
 );
