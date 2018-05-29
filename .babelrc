@@ -5,7 +5,13 @@
     "env"
   ],
   "plugins": [
-    "transform-class-properties",
-    "react-docgen"
-  ]
+    "transform-class-properties"
+  ],
+  "env": {
+    "storybook": {
+      "plugins": [
+        "react-docgen"
+      ]
+    }
+  }
 }

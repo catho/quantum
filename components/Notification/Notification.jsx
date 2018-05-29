@@ -77,7 +77,7 @@ const NotificationClose = styled.button`
     cursor: pointer;
     top: 12px;
     right: 0;
-    padding: .75rem 1.25rem;
+    padding: 0.75rem 1.25rem;
     color: inherit;
     background-color: transparent;
     border: 0;

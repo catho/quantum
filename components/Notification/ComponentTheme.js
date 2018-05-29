@@ -1,38 +1,30 @@
-import { darken } from 'polished';
-
-const ComponentColors = {
-  DEFAULT: '#cce5ff',
-  SUCCESS: '#d4edda',
-  WARNING: '#fff3cd',
-  ERROR: '#f8d7da',
-  INFO: '#d1ecf1',
-};
+import Colors from '../Colors';
 
 const ComponentTheme = {
   default: {
-    backgroundColor: ComponentColors.DEFAULT,
-    borderColor: darken(0.05, ComponentColors.DEFAULT),
-    color: darken(0.5, ComponentColors.DEFAULT),
+    backgroundColor: Colors.GREY['500'],
+    borderColor: Colors.GREY['600'],
+    color: Colors.WHITE,
   },
   success: {
-    backgroundColor: ComponentColors.SUCCESS,
-    borderColor: darken(0.05, ComponentColors.SUCCESS),
-    color: darken(0.5, ComponentColors.SUCCESS),
+    backgroundColor: Colors.ACTION['400'],
+    borderColor: Colors.ACTION['600'],
+    color: Colors.WHITE,
   },
   warning: {
-    backgroundColor: ComponentColors.WARNING,
-    borderColor: darken(0.05, ComponentColors.WARNING),
-    color: darken(0.5, ComponentColors.WARNING),
+    backgroundColor: Colors.WARMING['400'],
+    borderColor: Colors.WARMING['600'],
+    color: Colors.WHITE,
   },
   error: {
-    backgroundColor: ComponentColors.ERROR,
-    borderColor: darken(0.05, ComponentColors.ERROR),
-    color: darken(0.5, ComponentColors.ERROR),
+    backgroundColor: Colors.DANGER['400'],
+    borderColor: Colors.DANGER['600'],
+    color: Colors.WHITE,
   },
   info: {
-    backgroundColor: ComponentColors.INFO,
-    borderColor: darken(0.05, ComponentColors.INFO),
-    color: darken(0.5, ComponentColors.INFO),
+    backgroundColor: Colors.INFO['100'],
+    borderColor: Colors.INFO['300'],
+    color: Colors.WHITE,
   },
 };
 

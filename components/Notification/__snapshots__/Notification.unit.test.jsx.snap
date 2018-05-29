@@ -2,7 +2,7 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="sc-bdVaJa cyXkMr"
+  className="sc-bdVaJa fRinFw"
   type="info"
 >
   <div
@@ -17,7 +17,7 @@ exports[`Input component  should match the snapshot 1`] = `
     This is a dummy
   </div>
   <button
-    className="sc-bxivhb fRngHK"
+    className="sc-bxivhb lksRtd"
     onClick={[Function]}
   >
     <span
