@@ -5,11 +5,12 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "jest",
+    "analyze-bundle": "webpack --json | webpack-bundle-size-analyzer",
     "coverage": "jest --coverage",
-    "build": "webpack",
+    "build": "BABEL_ENV=production webpack",
     "lint": "eslint ./components/**/* ./.storybook/**/* ./*.js --ext .js --ext .jsx",
     "prepush": "yarn lint && yarn test",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "BABEL_ENV=storybook start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -36,6 +37,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -48,7 +50,9 @@
     "jest": "^22.4.2",
     "react-test-renderer": "^16.2.0",
     "style-loader": "^0.20.3",
-    "url-loader": "^1.0.1"
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^1.0.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
     "@material-ui/core": "^1.0.0",
@@ -59,7 +63,6 @@
     "babel-plugin-react-docgen": "^1.9.0",
     "babel-polyfill": "^6.26.0",
     "dotenv-webpack": "^1.5.5",
-    "moment": "^2.22.1",
     "polished": "^1.9.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",

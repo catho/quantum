@@ -1,5 +1,3 @@
-import moment from 'moment';
-
 const msg = {
   REQUIRED: 'Campo obrigatório',
   CPF: 'CPF inválido',
@@ -53,9 +51,12 @@ class Validations {
     return filtered.length !== 8 ? msg.CEP : '';
   }
 
-  static Date({ value }) {
-    const date = moment(value, 'DD/MM/YYYY');
-    return date.isValid() ? '' : msg.DATE;
+  static Date({ value = '' }) {
+    const [day, month, year] = value.split('/');
+    const date = new Date(year, month - 1, day);
+    const isValidDate = date && (date.getMonth() + 1) == month;
+
+    return isValidDate ? '' : msg.DATE;
   }
 
   static MinLength({ value = '', minLength }) {

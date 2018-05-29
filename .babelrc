@@ -4,8 +4,17 @@
     "stage-1",
     "env"
   ],
-  "plugins": [
-    "transform-class-properties",
-    "react-docgen"
-  ]
+  "env": {
+    "storybook" : {
+      "plugins": [
+        "transform-class-properties",
+        "react-docgen"
+      ]
+    }, 
+    "production" : {
+      "plugins": [
+        "transform-class-properties"
+      ]
+    }
+  }
 }
