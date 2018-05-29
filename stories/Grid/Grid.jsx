@@ -98,6 +98,150 @@ const SizesTable = () => (
   </Table>
 );
 
+const HorizontalExample = () => (
+  <React.Fragment>
+    <Container fluid>
+      <StyledRow>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol tablet={8}>{'<Col tablet={8}>'}</StyledCol>
+        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
+        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
+        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
+        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
+      </StyledRow>
+    </Container>
+
+    <Highlight language="javascript" className="highlight">
+      {
+`
+  <Row>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+    <Col tablet={1}>...</Col>
+  </Row>
+
+  <Row>
+    <Col tablet={8}>...</Col>
+    <Col tablet={4}>...</Col>
+  </Row>
+
+  <Row>
+    <Col tablet={4}>...</Col>
+    <Col tablet={4}>...</Col>
+    <Col tablet={4}>...</Col>
+  </Row>
+
+  <Row>
+    <Col tablet={6}>...</Col>
+    <Col tablet={6}>...</Col>
+  </Row>
+`
+      }
+    </Highlight>
+  </React.Fragment>
+);
+
+const MobileDesktopExample = () => (
+  <React.Fragment>
+    <Container fluid>
+      <StyledRow>
+        <StyledCol phone={12} tablet={8}>{'<Col phone={12} tablet={8}>'}</StyledCol>
+        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
+        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
+        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
+        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
+      </StyledRow>
+    </Container>
+
+    <Highlight language="javascript" className="highlight">
+      {
+  `
+  <Row>
+    <Col phone={12} tablet={8}>...</Col>
+    <Col phone={6} tablet={4}>...</Col>
+  </Row>
+
+  <Row>
+    <Col phone={6} tablet={4}>...</Col>
+    <Col phone={6} tablet={4}>...</Col>
+    <Col phone={6} tablet={4}>...</Col>
+  </Row>
+
+  <Row>
+    <Col phone={6}>...</Col>
+    <Col phone={6}>...</Col>
+  </Row>
+  `
+      }
+    </Highlight>
+  </React.Fragment>
+);
+
+const HideExample = () => (
+  <React.Fragment>
+    <Container fluid>
+      <Hide phone>
+        <StyledRow>
+          <StyledCol phone={12} tablet={8}>...</StyledCol>
+          <StyledCol phone={6} tablet={4}>...</StyledCol>
+        </StyledRow>
+      </Hide>
+    </Container>
+
+    <Highlight language="javascript" className="highlight">
+      {
+  `
+  <Hide phone>
+    <Row>
+      <Col>...</Col>
+      <Col>...</Col>
+    </Row>
+  </Hide>
+  `
+      }
+    </Highlight>
+  </React.Fragment>
+);
+
 const Grid = () => (
   <React.Fragment>
     <p>If you are familiar with <strong>Boostrap</strong>, you can easily understand ours.</p>
@@ -146,7 +290,10 @@ const Grid = () => (
 
     <Subtitle>No Gutters</Subtitle>
     <p>
-      The gutters between columns in our predefined grid styles can be removed with no-gutters prop <code>{'<Row no-gutters>'}</code>. This removes the negative margins from <code>{'<Col>'}</code> and the horizontal padding from all immediate children columns.
+      The gutters between columns in our predefined grid styles can be removed
+      with no-gutters prop <code>{'<Row no-gutters>'}</code>. This removes the
+      negative margins from <code>{'<Col>'}</code> and the horizontal padding
+      from all immediate children columns.
     </p>
 
     <Subtitle>Breakpoints</Subtitle>
@@ -160,121 +307,32 @@ const Grid = () => (
 
     <Subtitle>Example: Stacked-to-horizontal</Subtitle>
     <p>
-      You can create a basic grid system that starts out stacked on mobile devices and tablet devices before becoming horizontal on desktop devices. Place grid columns in any <code>{'<Row>'}</code>
+      You can create a basic grid system that starts out stacked on mobile
+      devices and tablet devices before becoming horizontal on desktop devices.
+      Place grid columns in any <code>{'<Row>'}</code>
     </p>
 
-    <Container fluid>
-      <StyledRow>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-      </StyledRow>
-
-      <StyledRow>
-        <StyledCol tablet={8}>{'<Col tablet={8}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-      </StyledRow>
-
-      <StyledRow>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-      </StyledRow>
-
-      <StyledRow>
-        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
-        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
-      </StyledRow>
-    </Container>
-
-    <Highlight language="javascript" className="highlight">
-      {`
-<Row>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-  <Col tablet={1}>...</Col>
-</Row>
-
-<Row>
-  <Col tablet={8}>...</Col>
-  <Col tablet={4}>...</Col>
-</Row>
-
-<Row>
-  <Col tablet={4}>...</Col>
-  <Col tablet={4}>...</Col>
-  <Col tablet={4}>...</Col>
-</Row>
-
-<Row>
-  <Col tablet={6}>...</Col>
-  <Col tablet={6}>...</Col>
-</Row>
-      `}
-    </Highlight>
+    <HorizontalExample />
 
     <Subtitle>Example: Mobile and desktop</Subtitle>
-    <p>Don’t want your columns to simply stack in smaller devices? Use the phone and tablet device grid props by adding <code>{'phone={*}'}</code> <code>{'tablet={*}'}</code> to your columns. See the example below for a better idea of how it all works.</p>
+    <p>
+      Don’t want your columns to simply stack in smaller devices? Use the phone
+      and tablet device grid props by adding <code>{'phone={*}'}</code>
+      <code>{'tablet={*}'}</code> to your columns. See the example below for a
+      better idea of how it all works.
+    </p>
 
-    <Container fluid>
-      <StyledRow>
-        <StyledCol phone={12} tablet={8}>{'<Col phone={12} tablet={8}>'}</StyledCol>
-        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
-      </StyledRow>
-
-      <StyledRow>
-        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
-        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
-        <StyledCol phone={6} tablet={4}>{'<Col phone={6} tablet={4}>'}</StyledCol>
-      </StyledRow>
-
-      <StyledRow>
-        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
-        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
-      </StyledRow>
-    </Container>
-
-    <Highlight language="javascript" className="highlight">
-      {`
-<Row>
-  <Col phone={12} tablet={8}>...</Col>
-  <Col phone={6} tablet={4}>...</Col>
-</Row>
-
-<Row>
-  <Col phone={6} tablet={4}>...</Col>
-  <Col phone={6} tablet={4}>...</Col>
-  <Col phone={6} tablet={4}>...</Col>
-</Row>
-
-<Row>
-  <Col phone={6}>...</Col>
-  <Col phone={6}>...</Col>
-</Row>
-      `}
-    </Highlight>
+    <MobileDesktopExample />
 
     <Subtitle>Hide Component</Subtitle>
-    <p>If you need to hide some elements in your UI, you can use the <code>{'<Hide>'}</code> component.</p>
-    <p><code>{'<Hide>'}</code> receives the same props as the <code>{'<Col>'}</code> component, they are:</p>
+    <p>
+      If you need to hide some elements in your UI, you can use the
+      <code>{'<Hide>'}</code> component.
+    </p>
+    <p>
+      <code>{'<Hide>'}</code> receives the same props as the
+      <code>{'<Col>'}</code> component, they are:
+    </p>
     <ul>
       <li>phone</li>
       <li>tablet</li>
@@ -285,27 +343,7 @@ const Grid = () => (
 
     <Subtitle>Example: Hiding elements in phone devices</Subtitle>
 
-    <Container fluid>
-      <Hide phone>
-        <StyledRow>
-          <StyledCol phone={12} tablet={8}>...</StyledCol>
-          <StyledCol phone={6} tablet={4}>...</StyledCol>
-        </StyledRow>
-      </Hide>
-    </Container>
-
-    <Highlight language="javascript" className="highlight">
-      {
-        `
-<Hide phone>
-  <Row>
-    <Col>...</Col>
-    <Col>...</Col>
-  </Row>
-</Hide>
-      `
-      }
-    </Highlight>
+    <HideExample />
 
   </React.Fragment>
 );
