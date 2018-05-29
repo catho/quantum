@@ -1,4 +1,3 @@
-import { rgba } from 'polished';
 import Colors from './components/Colors';
 
 export default {
@@ -19,8 +18,8 @@ export default {
     shadow: (size = 1) => {
       const shadows = [
         'box-shadow: none;',
-        `box-shadow: 0 2px 5px ${rgba(Colors.GREY['600'], 0.3)}`,
-        `box-shadow: 0 2px 6px ${rgba(Colors.GREY['600'], 0.6)}`,
+        `box-shadow: 0 2px 5px ${Colors.GREY['600']}4D`,
+        `box-shadow: 0 2px 6px ${Colors.GREY['600']}99`,
       ];
 
       return shadows[size] || shadows[1];
