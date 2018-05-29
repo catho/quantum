@@ -53,7 +53,6 @@ const placement = {
     const position = {
       top: `top: -${height + 20}px; left: 50%; margin-left: -${Math.floor(width / 2)}px;`,
       right: `right: -${width + 25}px;top: 50%; margin-top: -${Math.floor(height / 2)}px;`,
-      bottom: `bottom: -${height + 20}px; left: 50%; margin-left: -${Math.floor(width / 2)}px;`,
       left: `left: -${width + 25}px;top: 50%; margin-top: -${Math.floor(height / 2)}px;`,
     };
 
@@ -65,7 +64,7 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const PopoverWrapper = styled.div`
+const PopoverContainer = styled.div`
   background-color: ${Colors.WHITE};
   border-color: ${Colors.WHITE};
   border-radius: 8px;
@@ -74,12 +73,10 @@ const PopoverWrapper = styled.div`
               0 8px 10px 1px rgba(0, 0, 0, 0.14);
 
   cursor: default;
-  height: 300px;
   position: absolute;
-  width: 300px;
   z-index: 100;
   opacity: ${({ show }) => (show ? '1' : '0')};
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 
   ${placement.tipPosition}
 
@@ -106,7 +103,7 @@ const CloseIcon = styled(Icon)`
   cursor: pointer;
 `;
 
-const ChildrenWrapper = styled.div`
+const ChildrenContainer = styled.div`
   cursor: pointer;
 `;
 
@@ -154,24 +151,20 @@ class Popover extends Component {
     this.setState({ show: !show });
   }
 
-  show = () => {
-    this.setState({ show: true });
-  }
-
   hide = () => {
     this.setState({ show: false });
   }
 
   render() {
     const {
-      title, content, children, place,
+      title, content, children, place, closeTitle,
     } = this.props;
 
     const { width, height, show } = this.state;
 
     return (
       <Wrapper>
-        <PopoverWrapper
+        <PopoverContainer
           place={place}
           width={width}
           height={height}
@@ -180,15 +173,16 @@ class Popover extends Component {
         >
           <Title>
             <span>{ title }</span>
-            <CloseIcon name="close" onClick={this.hide} />
+            <CloseIcon name="close" onClick={this.hide} title={closeTitle} />
           </Title>
           <Content>
             { content }
           </Content>
-        </PopoverWrapper>
-        <ChildrenWrapper onClick={this.toggleVisibility}>
+        </PopoverContainer>
+
+        <ChildrenContainer onClick={this.toggleVisibility}>
           { children }
-        </ChildrenWrapper>
+        </ChildrenContainer>
       </Wrapper>
     );
   }
@@ -198,10 +192,10 @@ Popover.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
   children: PropTypes.node,
+  closeTitle: PropTypes.string,
   place: PropTypes.oneOf([
     'top',
     'right',
-    'bottom',
     'left',
   ]),
 };
@@ -211,6 +205,7 @@ Popover.defaultProps = {
   content: 'Content',
   children: 'Click me',
   place: 'top',
+  closeTitle: 'Fechar'
 };
 
 export default Popover;
