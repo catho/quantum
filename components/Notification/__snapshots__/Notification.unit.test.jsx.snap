@@ -17,7 +17,7 @@ exports[`Input component  should match the snapshot 1`] = `
     This is a dummy
   </div>
   <button
-    className="sc-bxivhb lksRtd"
+    className="sc-bxivhb fRngHK"
     onClick={[Function]}
   >
     <span
