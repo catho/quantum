@@ -2,8 +2,11 @@
 
 exports[`<Step /> Should match the snapshot 1`] = `
 <li
-  className=""
+  className="sc-bwzfXH cphTCl"
 >
-  <p />
+  <p>
+    Step 1
+  </p>
+  
 </li>
 `;

@@ -4,7 +4,7 @@ import Step from './Step';
 
 describe('<Step />', () => {
   it('Should match the snapshot', () => {
-    const tree = renderer.create(<Step />).toJSON();
+    const tree = renderer.create(<Step title="Step 1" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

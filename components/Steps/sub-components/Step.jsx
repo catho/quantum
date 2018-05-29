@@ -103,11 +103,11 @@ const Step = ({ title, status, icon }) => (
 Step.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.string,
-  status: PropTypes.string,
+  status: PropTypes.oneOf(['', 'active', 'done']),
 };
 
 Step.defaultProps = {
-  status: PropTypes.oneOf(['', 'active', 'done']),
+  status: '',
   icon: '',
 };
 

@@ -2,31 +2,67 @@
 
 exports[`<Steps /> Should match the snapshot 1`] = `
 <div
-  className="sc-bdVaJa juTEnT"
+  className="sc-bdVaJa cOVzqF"
 >
   <ul
-    className="sc-bwzfXH cbKDCX"
+    className="sc-bwzfXH ceHnQp"
   >
     <li
-      className="active"
+      className="sc-bxivhb jtfdvt"
     >
       <p>
         Criação de conta
       </p>
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 sc-htpNat iuNYUu"
+        status="done"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        person
+      </span>
     </li>
     <li
-      className="active"
+      className="sc-bxivhb kOHDdl"
     >
       <p>
-        Plano e forma de pagamento
+        Plano Forma de pagamento
       </p>
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 sc-htpNat iTQnuI"
+        status="active"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        credit_card
+      </span>
     </li>
     <li
-      className=""
+      className="sc-bxivhb grGLhb"
     >
       <p>
         Preencher o currículo
       </p>
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 sc-htpNat cfEzL"
+        status=""
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        description
+      </span>
     </li>
   </ul>
 </div>
