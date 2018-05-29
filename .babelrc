@@ -5,13 +5,13 @@
     "env"
   ],
   "env": {
-    "storybook" : {
+    "storybook": {
       "plugins": [
         "transform-class-properties",
         "react-docgen"
       ]
-    }, 
-    "production" : {
+    },
+    "production": {
       "plugins": [
         "transform-class-properties"
       ]

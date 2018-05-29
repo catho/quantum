@@ -7,10 +7,10 @@
     "test": "jest",
     "analyze-bundle": "webpack --json | webpack-bundle-size-analyzer",
     "coverage": "jest --coverage",
-    "build": "BABEL_ENV=production webpack",
+    "build": "NODE_ENV=production webpack",
     "lint": "eslint ./components/**/* ./.storybook/**/* ./*.js --ext .js --ext .jsx",
     "prepush": "yarn lint && yarn test",
-    "storybook": "BABEL_ENV=storybook start-storybook -p 6006",
+    "storybook": "NODE_ENV=storybook start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "repository": {
