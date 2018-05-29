@@ -3,9 +3,7 @@ import Button from './components/Button';
 import Checkbox from './components/Checkbox';
 import Colors from './components/Colors';
 import Dropdown from './components/Dropdown';
-import Footer from './components/Footer';
 import { Container, Row, Col, Hide } from './components/Grid';
-import Header from './components/Header';
 import Input from './components/Input';
 import Loading from './components/Loading';
 import Modal from './components/Modal';
@@ -31,8 +29,6 @@ export {
   Colors,
   Dropdown,
   Form,
-  Footer,
-  Header,
   Hide,
   Input,
   Loading,
