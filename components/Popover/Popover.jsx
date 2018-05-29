@@ -205,7 +205,7 @@ Popover.defaultProps = {
   content: 'Content',
   children: 'Click me',
   place: 'top',
-  closeTitle: 'Fechar'
+  closeTitle: 'Fechar',
 };
 
 export default Popover;
