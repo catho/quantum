@@ -1,9 +1,9 @@
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
-const CompressionPlugin = require("compression-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const webpack = require('webpack');
+require('webpack');
 
 module.exports = {
   entry: ['babel-polyfill', path.join(__dirname, 'index.js')],
@@ -37,11 +37,11 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new CompressionPlugin({
-      asset: "[path].gz[query]",
-      algorithm: "gzip",
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
       test: /\.js$|\.css$|\.html$/,
       threshold: 10240,
-      minRatio: 0
+      minRatio: 0,
     }),
     new UglifyJsPlugin({
       parallel: true,
