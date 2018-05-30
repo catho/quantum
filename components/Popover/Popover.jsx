@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import Icon from '../Icon';
+import Button from '../Button';
 
 const padding = '18px 24px';
 
 const arrowSize = '8px';
+const cornerArrowDistance = 25;
 const upDownBorders = `
   border-left: ${arrowSize} solid transparent;
   border-right: ${arrowSize} solid transparent;
@@ -47,13 +49,36 @@ const placement = {
       border-right-color: inherit;
       left: -${arrowSize};
     `,
+    'top-left': `
+      ${upDownBorders}
+      border-top: ${arrowSize} solid;
+      border-top-color: inherit;
+      bottom: -${arrowSize};
+
+      right: ${cornerArrowDistance}px;
+      transform: translateX(50%);
+      left: auto;
+    `,
+    'top-right': `
+      ${upDownBorders}
+      border-top: ${arrowSize} solid;
+      border-top-color: inherit;
+      bottom: -${arrowSize};
+
+      left: ${cornerArrowDistance}px;
+      transform: translateX(-50%);
+    `,
   },
 
-  tipPosition: ({ place, height, width }) => {
+  popoverPosition: ({
+    place, popoverHeight, popoverWidth, childrenWidth,
+  }) => {
     const position = {
-      top: `top: -${height + 20}px; left: 50%; margin-left: -${Math.floor(width / 2)}px;`,
-      right: `right: -${width + 25}px;top: 50%; margin-top: -${Math.floor(height / 2)}px;`,
-      left: `left: -${width + 25}px;top: 50%; margin-top: -${Math.floor(height / 2)}px;`,
+      top: `top: -${popoverHeight + 20}px; left: 50%; margin-left: -${Math.floor(popoverWidth / 2)}px;`,
+      right: `right: -${popoverWidth + 25}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
+      left: `left: -${popoverWidth + 25}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
+      'top-left': `top: -${popoverHeight + 20}px; left: ${Math.floor(childrenWidth / 2) + cornerArrowDistance}px; margin-left: -${popoverWidth}px;`,
+      'top-right': `top: -${popoverHeight + 20}px; left: -${Math.floor(childrenWidth / 2) + cornerArrowDistance}px; margin-left: 100%;`,
     };
 
     return position[place] || position.top;
@@ -78,7 +103,7 @@ const PopoverContainer = styled.div`
   opacity: ${({ show }) => (show ? '1' : '0')};
   transition: opacity 0.2s ease-in-out;
 
-  ${placement.tipPosition}
+  ${placement.popoverPosition}
 
   &:before {
     content: '';
@@ -89,10 +114,14 @@ const PopoverContainer = styled.div`
 
 const Title = styled.div`
   align-items: center;
-  border-bottom: 1px solid ${Colors.GREY['50']};
   display: flex;
-  justify-content: space-between;
+  justify-content: ${({ title }) => (title ? 'space-between' : 'flex-end')};
   padding: ${padding};
+
+  ${({ title }) => (title
+    ? `border-bottom: 1px solid ${Colors.GREY['50']};`
+    : 'padding-bottom: 0;'
+  )};
 `;
 
 const Content = styled.div`
@@ -113,8 +142,14 @@ class Popover extends Component {
 
     this.state = {
       show: false,
-      width: null,
-      height: null,
+      popoverMeasures: {
+        width: null,
+        height: null,
+      },
+      childrenMeasures: {
+        width: null,
+        height: null,
+      },
     };
   }
 
@@ -128,8 +163,10 @@ class Popover extends Component {
       this.props.content !== nextProps.content ||
       this.props.place !== nextProps.place ||
       this.state.show !== nextState.show ||
-      this.state.width !== nextState.width ||
-      this.state.height !== nextState.height
+      this.state.popoverMeasures.width !== nextState.popoverMeasures.width ||
+      this.state.popoverMeasures.height !== nextState.popoverMeasures.height ||
+      this.state.childrenMeasures.width !== nextState.childrenMeasures.width ||
+      this.state.childrenMeasures.height !== nextState.childrenMeasures.height
     );
   }
 
@@ -138,9 +175,19 @@ class Popover extends Component {
   }
 
   measure() {
-    const { clientWidth: width, clientHeight: height } = this.popover;
+    const { clientWidth: popoverWidth, clientHeight: popoverHeight } = this.popoverRef;
+    const { clientWidth: childrenWidth, clientHeight: childrenHeight } = this.childrenRef;
 
-    this.setState({ width, height });
+    this.setState({
+      popoverMeasures: {
+        width: popoverWidth,
+        height: popoverHeight,
+      },
+      childrenMeasures: {
+        width: childrenWidth,
+        height: childrenHeight,
+      },
+    });
   }
 
   toggleVisibility = (event) => {
@@ -160,27 +207,41 @@ class Popover extends Component {
       title, content, children, place, closeTitle,
     } = this.props;
 
-    const { width, height, show } = this.state;
+    const {
+      show,
+      popoverMeasures: {
+        width: popoverWidth,
+        height: popoverHeight,
+      },
+      childrenMeasures: {
+        width: childrenWidth,
+        height: childrenHeight,
+      },
+    } = this.state;
 
     return (
       <Wrapper>
         <PopoverContainer
           place={place}
-          width={width}
-          height={height}
+          popoverWidth={popoverWidth}
+          popoverHeight={popoverHeight}
+          childrenWidth={childrenWidth}
+          childrenHeight={childrenHeight}
           show={show}
-          innerRef={(domElement) => { this.popover = domElement; }}
+          innerRef={(domElement) => { this.popoverRef = domElement; }}
         >
-          <Title>
-            <span>{ title }</span>
+          <Title title={title}>
+            { title && <span>{ title }</span> }
             <CloseIcon name="close" onClick={this.hide} title={closeTitle} />
           </Title>
-          <Content>
-            { content }
-          </Content>
+
+          <Content>{ content }</Content>
         </PopoverContainer>
 
-        <ChildrenContainer onClick={this.toggleVisibility}>
+        <ChildrenContainer
+          onClick={this.toggleVisibility}
+          innerRef={(domElement) => { this.childrenRef = domElement; }}
+        >
           { children }
         </ChildrenContainer>
       </Wrapper>
@@ -190,11 +251,13 @@ class Popover extends Component {
 
 Popover.propTypes = {
   title: PropTypes.string,
-  content: PropTypes.string,
+  content: PropTypes.node,
   children: PropTypes.node,
   closeTitle: PropTypes.string,
   place: PropTypes.oneOf([
     'top',
+    'top-right',
+    'top-left',
     'right',
     'left',
   ]),
@@ -202,8 +265,17 @@ Popover.propTypes = {
 
 Popover.defaultProps = {
   title: 'Title',
-  content: 'Content',
-  children: 'Click me',
+  content: (
+    <React.Fragment>
+      <div style={{ width: '300px' }}>Content</div>
+      <div style={{ width: '300px' }}>Content</div>
+      <div style={{ width: '300px' }}>Content</div>
+      <div style={{ width: '300px' }}>Content</div>
+      <div style={{ width: '300px' }}>Content</div>
+      <div style={{ width: '300px' }}>Content</div>
+    </React.Fragment>
+  ),
+  children: <Button size="big">123456789</Button>,
   place: 'top',
   closeTitle: 'Fechar',
 };
