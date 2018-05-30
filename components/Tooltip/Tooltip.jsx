@@ -98,8 +98,8 @@ class Tooltip extends Component {
 
     return (
       <Wrapper
-        onMouseEnter={!slider && this.handleEnter}
-        onMouseLeave={!slider && this.handleLeave}
+        onMouseEnter={!slider ? this.handleEnter : () => {}}
+        onMouseLeave={!slider ? this.handleLeave : () => {}}
         slider={slider}
       >
         <Tip
