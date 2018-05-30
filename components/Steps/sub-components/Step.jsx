@@ -104,12 +104,10 @@ const ProgressStep = styled.li`
 `;
 
 const Step = ({ title, status, icon }) => (
-  <React.Fragment>
-    <ProgressStep status={status}>
-      <p>{ title }</p>
-      { icon && <StepIcon status={status} name={icon} /> }
-    </ProgressStep>
-  </React.Fragment>
+  <ProgressStep status={status}>
+    <p>{ title }</p>
+    { icon && <StepIcon status={status} name={icon} /> }
+  </ProgressStep>
 );
 
 Step.propTypes = {

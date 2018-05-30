@@ -15,13 +15,11 @@ const ProgressBar = styled.ul`
 `;
 
 const Steps = ({ children }) => (
-  <React.Fragment>
-    <Wrapper>
-      <ProgressBar>
-        { children }
-      </ProgressBar>
-    </Wrapper>
-  </React.Fragment>
+  <Wrapper>
+    <ProgressBar>
+      { children }
+    </ProgressBar>
+  </Wrapper>
 );
 
 Steps.propTypes = {

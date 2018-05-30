@@ -1,8 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Step /> Should match the snapshot 1`] = `
+exports[`Step Component Should match the snapshot 1`] = `
 <li
   className="sc-EHOje hnYRfF"
+>
+  <p>
+    Step 1
+  </p>
+  
+</li>
+`;
+
+exports[`Step Component Should match the snapshot with icon 1`] = `
+<li
+  className="sc-EHOje hnYRfF"
+>
+  <p>
+    Step 1
+  </p>
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 sc-ifAKCX bhjTDR"
+    status=""
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    person
+  </span>
+</li>
+`;
+
+exports[`Step Component Should match the snapshot with status active 1`] = `
+<li
+  className="sc-EHOje eyfMkp"
+>
+  <p>
+    Step 1
+  </p>
+  
+</li>
+`;
+
+exports[`Step Component Should match the snapshot with status done 1`] = `
+<li
+  className="sc-EHOje fDNnJp"
 >
   <p>
     Step 1

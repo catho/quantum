@@ -14,8 +14,8 @@ storiesOf('Introduction', module)
   ))
   .add('Steps', () => (
     <Steps>
-      <Step title="Criação de conta" icon="person" status="done" />
-      <Step title="Plano e forma de pagamento" icon="credit_card" status="active" />
+      <Step title="Criação de conta" icon="person" status="active" />
+      <Step title="Plano e forma de pagamento" icon="credit_card" />
       <Step title="Preencher o currículo" icon="description" />
     </Steps>
   ));
