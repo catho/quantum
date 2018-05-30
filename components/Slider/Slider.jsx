@@ -92,12 +92,14 @@ const Slider = ({
   max,
   step,
   disabled,
+  ...rest
 }) => {
   const sliderProps = {
     min,
     max,
     step,
     disabled,
+    ...rest,
   };
 
   if (tooltip) {
@@ -140,7 +142,7 @@ Slider.propTypes = {
   max: PropTypes.number.isRequired,
   /** Value on how much increment the value on drag event */
   step: PropTypes.number,
-  /** Triggers a function on OnChange event */
+  /** Triggers a function on OnChange event, it returns the current value */
   onChange: PropTypes.func,
   /** Triggers a function before OnChange event */
   onBeforeChange: PropTypes.func,
