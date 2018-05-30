@@ -6,9 +6,13 @@ import Icon from '../Icon';
 import Button from '../Button';
 
 const padding = '18px 24px';
-
 const arrowSize = '8px';
 const cornerArrowDistance = 25;
+
+const skins = {
+  p2p: Colors.P2P['500'],
+};
+
 const upDownBorders = `
   border-left: ${arrowSize} solid transparent;
   border-right: ${arrowSize} solid transparent;
@@ -74,11 +78,11 @@ const placement = {
     place, popoverHeight, popoverWidth, childrenWidth,
   }) => {
     const position = {
-      top: `top: -${popoverHeight + 20}px; left: 50%; margin-left: -${Math.floor(popoverWidth / 2)}px;`,
-      right: `right: -${popoverWidth + 25}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
-      left: `left: -${popoverWidth + 25}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
-      'top-left': `top: -${popoverHeight + 20}px; left: ${Math.floor(childrenWidth / 2) + cornerArrowDistance}px; margin-left: -${popoverWidth}px;`,
-      'top-right': `top: -${popoverHeight + 20}px; left: -${Math.floor(childrenWidth / 2) + cornerArrowDistance}px; margin-left: 100%;`,
+      top: `top: -${popoverHeight + 15}px; left: 50%; margin-left: -${Math.floor(popoverWidth / 2)}px;`,
+      right: `right: -${popoverWidth + 15}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
+      left: `left: -${popoverWidth + 15}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
+      'top-left': `top: -${popoverHeight + 15}px; left: ${Math.floor(childrenWidth / 2) + cornerArrowDistance}px; margin-left: -${popoverWidth}px;`,
+      'top-right': `top: -${popoverHeight + 15}px; left: -${Math.floor(childrenWidth / 2) + cornerArrowDistance}px; margin-left: 100%;`,
     };
 
     return position[place] || position.top;
@@ -90,12 +94,38 @@ const Wrapper = styled.div`
 `;
 
 const PopoverContainer = styled.div`
-  background-color: ${Colors.WHITE};
-  border-color: ${Colors.WHITE};
   border-radius: 8px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2),
+
+  ${({ skin }) => (
+    skins[skin]
+      ? `
+        border-color: ${skins[skin]};
+        background-color: ${skins[skin]};
+        color: ${Colors.WHITE};
+      `
+      : `
+        border-color: ${Colors.WHITE};
+        background-color: ${Colors.WHITE};
+      `
+  )}
+
+  ${({ place }) => {
+    if (place.indexOf('top') > -1) {
+      return `box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2),
               0 8px 14px 3px rgba(0, 0, 0, 0.12),
-              0 8px 10px 1px rgba(0, 0, 0, 0.14);
+              0 8px 10px 1px rgba(0, 0, 0, 0.14);`;
+    }
+
+    if (place === 'right') {
+      return `box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2),
+              -6px 0 14px 3px rgba(0, 0, 0, 0.12),
+              -6px 0 10px 1px rgba(0, 0, 0, 0.14);`;
+    }
+
+    return `box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2),
+            6px 0 14px 3px rgba(0, 0, 0, 0.12),
+            6px 0 10px 1px rgba(0, 0, 0, 0.14);`;
+  }}
 
   cursor: default;
   position: absolute;
@@ -105,7 +135,7 @@ const PopoverContainer = styled.div`
 
   ${placement.popoverPosition}
 
-  &:before {
+  &:after {
     content: '';
     position: absolute;
     ${({ place }) => placement.arrowPosition[place]};
@@ -132,9 +162,7 @@ const CloseIcon = styled(Icon)`
   cursor: pointer;
 `;
 
-const ChildrenContainer = styled.div`
-  cursor: pointer;
-`;
+const ChildrenContainer = styled.div``;
 
 class Popover extends Component {
   constructor(props) {
@@ -164,6 +192,7 @@ class Popover extends Component {
       this.props.title !== nextProps.title ||
       this.props.content !== nextProps.content ||
       this.props.place !== nextProps.place ||
+      this.props.trigger !== nextProps.trigger ||
       this.state.show !== nextState.show ||
       this.state.popoverMeasures.width !== nextState.popoverMeasures.width ||
       this.state.popoverMeasures.height !== nextState.popoverMeasures.height ||
@@ -204,6 +233,10 @@ class Popover extends Component {
     this.setState({ show: !show });
   }
 
+  show = () => {
+    this.setState({ show: true });
+  }
+
   hide = () => {
     this.setState({ show: false });
   }
@@ -212,7 +245,7 @@ class Popover extends Component {
 
   render() {
     const {
-      title, content, children, place, closeTitle,
+      title, content, children, place, closeTitle, trigger, skin,
     } = this.props;
 
     const {
@@ -237,6 +270,7 @@ class Popover extends Component {
           childrenHeight={childrenHeight}
           show={show}
           innerRef={(domElement) => { this.popoverRef = domElement; }}
+          skin={skin}
         >
           <Title title={title}>
             { title && <span>{ title }</span> }
@@ -247,7 +281,9 @@ class Popover extends Component {
         </PopoverContainer>
 
         <ChildrenContainer
-          onClick={this.toggleVisibility}
+          onClick={trigger === 'click' ? this.toggleVisibility : () => {}}
+          onMouseEnter={trigger === 'hover' ? this.show : () => {}}
+          onMouseLeave={trigger === 'hover' ? this.hide : () => {}}
           innerRef={(domElement) => { this.childrenRef = domElement; }}
         >
           { children }
@@ -269,10 +305,12 @@ Popover.propTypes = {
     'right',
     'left',
   ]),
+  trigger: PropTypes.oneOf(['click', 'hover']),
+  skin: PropTypes.oneOf(['default', 'p2p']),
 };
 
 Popover.defaultProps = {
-  title: 'Title',
+  title: '',
   content: (
     <React.Fragment>
       <div style={{ width: '300px' }}>Content</div>
@@ -286,6 +324,8 @@ Popover.defaultProps = {
   children: <Button size="big">123456789</Button>,
   place: 'top',
   closeTitle: 'Fechar',
+  trigger: 'click',
+  skin: 'default',
 };
 
 export default Popover;
