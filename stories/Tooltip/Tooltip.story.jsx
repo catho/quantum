@@ -66,5 +66,8 @@ storiesOf('8. Tooltip', module)
     <AutoExample
       component={Tooltip}
       additionalTabs={tabExample}
+      componentProps={{
+        children: 'Hover me',
+      }}
     />
   ));
