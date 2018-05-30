@@ -2,10 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import SliderComponent from 'rc-slider';
+import 'rc-slider/assets/index.css';
 import Colors from '../Colors';
 import Tooltip from '../Tooltip';
-import theme from '../../theme';
-import 'rc-slider/assets/index.css';
 
 const StyledSlider = styled(SliderComponent)`
   &.rc-slider {
@@ -23,8 +22,8 @@ const StyledSlider = styled(SliderComponent)`
     border: none;
     box-shadow: 0 0 5px ${Colors.GREY['600']}4D;
     margin-left: -10px;
-    width: ${props => !props.disabled ? '20px' : '15px'};
-    height: ${props => !props.disabled ? '20px' : '15px'};
+    width: ${props => (!props.disabled ? '20px' : '15px')};
+    height: ${props => (!props.disabled ? '20px' : '15px')};
     transition: border 0.1s, box-shadow 0.1s;
 
     ${props => !props.disabled &&
@@ -37,8 +36,8 @@ const StyledSlider = styled(SliderComponent)`
         box-shadow: none;
       }
       `
-    }
-  }
+}
+}
 
   .rc-slider-rail,
   .rc-slider-track {
@@ -59,50 +58,90 @@ const StyledSlider = styled(SliderComponent)`
 }
 `;
 
-const Handle = SliderComponent.Handle;
+const { Handle: OriginalHandle } = SliderComponent;
 
-const handle = ({ value, dragging, index, offset, ...restProps }) => (
+const Handle = ({
+  value,
+  offset,
+  dragging,
+  ...restProps
+}) => (
   <Tooltip slider offset={offset} text={value.toString()}>
-    <Handle value={value} offset={offset} {...restProps} />
+    <OriginalHandle value={value} offset={offset} {...restProps} />
   </Tooltip>
 );
 
-const Slider = ({tooltip, marks, min, max, step}) => {
+Handle.defaultProps = {
+  value: 0,
+  offset: 0,
+  dragging: false,
+};
+
+Handle.propTypes = {
+  value: PropTypes.number,
+  offset: PropTypes.number,
+  dragging: PropTypes.bool,
+};
+
+/** Sliders allow users to make selections from a range of values. */
+
+const Slider = ({
+  tooltip,
+  marks,
+  min,
+  max,
+  step,
+}) => {
   const sliderProps = {
-    min: min,
-    max: max,
-    step: step,
+    min,
+    max,
+    step,
+  };
+
+  if (tooltip) {
+    sliderProps.handle = Handle;
   }
 
-  if(tooltip) {
-    sliderProps.handle = handle;
-  }
-
-  if(marks) {
+  if (marks) {
     sliderProps.marks = marks;
   }
 
   return (
     <StyledSlider
-    {...sliderProps}
+      {...sliderProps}
     />
-  )
-}
+  );
+};
 
 Slider.defaultProps = {
   tooltip: false,
-};
-
-Slider.propTypes = {
-  tooltip: PropTypes.bool,
-  marks: PropTypes.object,
-  min: PropTypes.number,
-  max: PropTypes.number,
-  step: PropTypes.number,
+  marks: {},
+  step: 1,
   onChange: () => {},
   onBeforeChange: () => {},
   onAfterChange: () => {},
   onClick: () => {},
+};
+
+Slider.propTypes = {
+  /** Shows the value while dragging a tooltip above the slider */
+  tooltip: PropTypes.bool,
+  /** Dots on specified values to snap the drag on Slider */
+  marks: PropTypes.shape,
+  /** Minimum value allowed */
+  min: PropTypes.number.isRequired,
+  /** Maximum value allowed */
+  max: PropTypes.number.isRequired,
+  /** Value on how much increment the value on drag event */
+  step: PropTypes.number,
+  /** Triggers a function on OnChange event */
+  onChange: PropTypes.func,
+  /** Triggers a function before OnChange event */
+  onBeforeChange: PropTypes.func,
+  /** Triggers a function after OnChange event */
+  onAfterChange: PropTypes.func,
+  /** Triggers a function on Onclick event */
+  onClick: PropTypes.func,
 };
 
 export default Slider;

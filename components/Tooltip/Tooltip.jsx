@@ -136,6 +136,7 @@ Tooltip.propTypes = {
     'left',
   ]),
   text: PropTypes.string,
+  offset: PropTypes.number,
 };
 
 Tooltip.defaultProps = {
@@ -144,6 +145,7 @@ Tooltip.defaultProps = {
   place: 'top',
   text: 'Tooltip',
   slider: false,
+  offset: 0,
 };
 
 export default Tooltip;
