@@ -8,14 +8,14 @@ exports[`<Steps /> Should match the snapshot 1`] = `
     className="sc-bwzfXH ceHnQp"
   >
     <li
-      className="sc-bxivhb jtfdvt"
+      className="sc-gzVnrw ideYlH"
     >
       <p>
         Criação de conta
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 sc-htpNat iuNYUu"
+        className="material-icons MuiIcon-root-1 sc-bZQynM eJOqQW"
         status="done"
         style={
           Object {
@@ -27,14 +27,14 @@ exports[`<Steps /> Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="sc-bxivhb kOHDdl"
+      className="sc-gzVnrw GPMNN"
     >
       <p>
         Plano Forma de pagamento
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 sc-htpNat iTQnuI"
+        className="material-icons MuiIcon-root-1 sc-bZQynM crTbuC"
         status="active"
         style={
           Object {
@@ -46,14 +46,14 @@ exports[`<Steps /> Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="sc-bxivhb grGLhb"
+      className="sc-gzVnrw euApTs"
     >
       <p>
         Preencher o currículo
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 sc-htpNat cfEzL"
+        className="material-icons MuiIcon-root-1 sc-bZQynM imfiKq"
         status=""
         style={
           Object {

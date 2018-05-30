@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from '../../Icon';
 import Colors from '../../Colors';
+import { BREAKPOINTS } from '../../Grid/sub-components';
 
 const StepIcon = styled(Icon)`
   position: relative;
-  top: -53px;
+  top: -40px;
   color: ${Colors.GREY['100']};
   
   ${({ status }) => status === 'active' && `
@@ -21,11 +22,16 @@ const StepIcon = styled(Icon)`
 const ProgressStep = styled.li`
   list-style-type: none;
   flex-grow: 1;
+  flex: 1;
   font-size: 12px;
   position: relative;
   text-align: center;
   color: ${Colors.GREY['400']};
   margin-top: 50px;
+  
+  @media (max-width: ${BREAKPOINTS.phone}px) {
+    font-size: 10px;
+  }
 
   &:before {
     width: 36px;
@@ -56,14 +62,20 @@ const ProgressStep = styled.li`
   }
   
   p {
-    position: relative;
-    top: -80px;
+    position: absolute;
+    top: -24px;
     margin: 0 auto;
-    padding: 0;
-    white-space: nowrap;
-    overflow: hidden;  
-    text-overflow: ellipsis;
-    width: 200px;
+    padding: 4px;
+    overflow: hidden;
+    width: 100%;
+    word-wrap: break-word;
+    
+    @media (min-width: ${BREAKPOINTS.phone + 1}px) and (max-width: ${BREAKPOINTS.tablet}px) {
+      top: -32px;
+    }
+    @media (max-width: ${BREAKPOINTS.phone}px) {
+      top: -30px;
+    }
   }
   
   ${({ status }) => status === 'active' && `
