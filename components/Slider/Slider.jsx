@@ -43,7 +43,7 @@ const StyledSlider = styled(SliderComponent)`
   .rc-slider-track {
     height: 8px;
   }
-  
+
   .rc-slider-track {
     background-color: ${Colors.SECONDARY['500']};
   }
@@ -91,11 +91,13 @@ const Slider = ({
   min,
   max,
   step,
+  disabled,
 }) => {
   const sliderProps = {
     min,
     max,
     step,
+    disabled,
   };
 
   if (tooltip) {
@@ -114,6 +116,7 @@ const Slider = ({
 };
 
 Slider.defaultProps = {
+  disabled: false,
   tooltip: false,
   marks: {},
   step: 1,
@@ -124,7 +127,9 @@ Slider.defaultProps = {
 };
 
 Slider.propTypes = {
-  /** Shows the value while dragging a tooltip above the slider */
+  /** Disable slider */
+  disabled: PropTypes.bool,
+  /** Shows the value while dragging on a tooltip above the slider */
   tooltip: PropTypes.bool,
   /** Dots on specified values to snap the drag on Slider */
   // eslint-disable-next-line react/forbid-prop-types
