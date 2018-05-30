@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { rgba } from 'polished';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import Colors from '../Colors';
 import theme from '../../theme';
 
 const Overlay = styled.div`
   align-items: center;
-  background-color: ${rgba(Colors.WHITE, 0.8)};
   bottom: 0;
   display: flex;
   justify-content: center;
