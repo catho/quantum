@@ -155,6 +155,8 @@ class Popover extends Component {
 
   componentDidMount() {
     this.measure();
+
+    document.addEventListener('mousedown', this.handleClickOutside);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -172,6 +174,10 @@ class Popover extends Component {
 
   componentDidUpdate() {
     this.measure();
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
   }
 
   measure() {
@@ -202,6 +208,8 @@ class Popover extends Component {
     this.setState({ show: false });
   }
 
+  handleClickOutside = ({ target }) => (!this.wrapperRef.contains(target) && this.hide())
+
   render() {
     const {
       title, content, children, place, closeTitle,
@@ -220,7 +228,7 @@ class Popover extends Component {
     } = this.state;
 
     return (
-      <Wrapper>
+      <Wrapper innerRef={(domElement) => { this.wrapperRef = domElement; }}>
         <PopoverContainer
           place={place}
           popoverWidth={popoverWidth}
