@@ -127,7 +127,8 @@ Slider.propTypes = {
   /** Shows the value while dragging a tooltip above the slider */
   tooltip: PropTypes.bool,
   /** Dots on specified values to snap the drag on Slider */
-  marks: PropTypes.shape,
+  // eslint-disable-next-line react/forbid-prop-types
+  marks: PropTypes.object,
   /** Minimum value allowed */
   min: PropTypes.number.isRequired,
   /** Maximum value allowed */
