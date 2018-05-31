@@ -95,6 +95,17 @@ const Wrapper = styled.div`
 
 const PopoverContainer = styled.div`
   border-radius: 8px;
+  cursor: default;
+  opacity: ${({ show }) => (show ? '1' : '0')};
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 100;
+
+  &:after {
+    content: '';
+    position: absolute;
+    ${({ place }) => placement.arrowPosition[place]};
+  }
 
   ${({ skin }) => (
     skins[skin]
@@ -127,22 +138,10 @@ const PopoverContainer = styled.div`
             6px 0 10px 1px rgba(0, 0, 0, 0.14);`;
   }}
 
-  cursor: default;
-  position: absolute;
-  z-index: 100;
-  opacity: ${({ show }) => (show ? '1' : '0')};
-  transition: opacity 0.2s ease-in-out;
-
   ${placement.popoverPosition}
-
-  &:after {
-    content: '';
-    position: absolute;
-    ${({ place }) => placement.arrowPosition[place]};
-  }
 `;
 
-const Title = styled.div`
+const Header = styled.div`
   align-items: center;
   display: flex;
   justify-content: ${({ title }) => (title ? 'space-between' : 'flex-end')};
@@ -182,9 +181,13 @@ class Popover extends Component {
   }
 
   componentDidMount() {
+    const { trigger } = this.props;
+
     this.measure();
 
-    document.addEventListener('mousedown', this.handleClickOutside);
+    if (trigger === 'click') {
+      document.addEventListener('mousedown', this.handleClickOutside);
+    }
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -241,11 +244,13 @@ class Popover extends Component {
     this.setState({ show: false });
   }
 
-  handleClickOutside = ({ target }) => (!this.wrapperRef.contains(target) && this.hide())
+  handleClickOutside = ({ target }) => {
+    if (!this.wrapperRef.contains(target)) this.hide();
+  }
 
   render() {
     const {
-      title, content, children, place, closeTitle, trigger, skin,
+      title, content, children, closeTitle, trigger,
     } = this.props;
 
     const {
@@ -260,22 +265,22 @@ class Popover extends Component {
       },
     } = this.state;
 
+    const measures = {
+      popoverWidth, popoverHeight, childrenWidth, childrenHeight,
+    };
+
     return (
-      <Wrapper innerRef={(domElement) => { this.wrapperRef = domElement; }}>
+      <Wrapper innerRef={(ref) => { this.wrapperRef = ref; }}>
         <PopoverContainer
-          place={place}
-          popoverWidth={popoverWidth}
-          popoverHeight={popoverHeight}
-          childrenWidth={childrenWidth}
-          childrenHeight={childrenHeight}
+          {...this.props}
+          {...measures}
           show={show}
-          innerRef={(domElement) => { this.popoverRef = domElement; }}
-          skin={skin}
+          innerRef={(ref) => { this.popoverRef = ref; }}
         >
-          <Title title={title}>
+          <Header title={title}>
             { title && <span>{ title }</span> }
             <CloseIcon name="close" onClick={this.hide} title={closeTitle} />
-          </Title>
+          </Header>
 
           <Content>{ content }</Content>
         </PopoverContainer>
@@ -284,7 +289,7 @@ class Popover extends Component {
           onClick={trigger === 'click' ? this.toggleVisibility : () => {}}
           onMouseEnter={trigger === 'hover' ? this.show : () => {}}
           onMouseLeave={trigger === 'hover' ? this.hide : () => {}}
-          innerRef={(domElement) => { this.childrenRef = domElement; }}
+          innerRef={(ref) => { this.childrenRef = ref; }}
         >
           { children }
         </ChildrenContainer>
@@ -295,6 +300,7 @@ class Popover extends Component {
 
 Popover.propTypes = {
   title: PropTypes.string,
+  stamp: PropTypes.string,
   content: PropTypes.node,
   children: PropTypes.node,
   closeTitle: PropTypes.string,
@@ -311,6 +317,7 @@ Popover.propTypes = {
 
 Popover.defaultProps = {
   title: '',
+  stamp: '',
   content: (
     <React.Fragment>
       <div style={{ width: '300px' }}>Content</div>
