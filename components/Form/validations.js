@@ -54,7 +54,7 @@ class Validations {
   static Date({ value = '' }) {
     const [day, month, year] = value.split('/');
     const date = new Date(year, month - 1, day);
-    const isValidDate = date && (date.getMonth() + 1) === month;
+    const isValidDate = (date.getMonth() + 1) === Number(month);
 
     return isValidDate ? '' : msg.DATE;
   }
