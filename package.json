@@ -7,23 +7,18 @@
     "test": "jest",
     "analyze-bundle": "webpack --json | webpack-bundle-size-analyzer",
     "coverage": "jest --coverage",
-    "build": "NODE_ENV=production webpack",
-    "lint": "eslint ./components/**/* ./.storybook/**/* ./*.js --ext .js --ext .jsx",
+    "build": "SET NODE_ENV=production webpack",
+    "lint":
+      "eslint ./components/**/* ./.storybook/**/* ./*.js --ext .js --ext .jsx",
     "prepush": "yarn lint && yarn test",
-    "storybook": "NODE_ENV=storybook start-storybook -p 6006",
+    "storybook": "SET NODE_ENV=storybook && start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
     "url": "git@gitlab.devel:frontend-platform/style-guide.git"
   },
-  "keywords": [
-    "catho",
-    "react",
-    "components",
-    "style",
-    "guide"
-  ],
+  "keywords": ["catho", "react", "components", "style", "guide"],
   "author": "Watchmen",
   "license": "ISC",
   "devDependencies": {
@@ -79,14 +74,11 @@
     "prop-types": "^15.6.1"
   },
   "jest": {
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "text-summary"
-    ],
+    "coverageReporters": ["lcov", "text", "text-summary"],
     "setupTestFrameworkScriptFile": "<rootDir>/jest-config.js",
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileMock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/fileMock.js"
     }
   }
 }

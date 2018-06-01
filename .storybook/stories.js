@@ -1,8 +1,8 @@
 /**
-  * Storybook list of stories
-  *
-  * order is reflected in storybook sidebar
-  */
+ * Storybook list of stories
+ *
+ * order is reflected in storybook sidebar
+ */
 
 export default [
   'Introduction',
@@ -49,4 +49,5 @@ export default [
   // 10. Other
   'Loading',
   'Loader',
+  'List',
 ].map(s => `./${s}/${s}.story.jsx`);
