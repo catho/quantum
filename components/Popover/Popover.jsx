@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import Icon from '../Icon';
-import Button from '../Button';
 import Stamp from '../Stamp';
 
 const PADDING = '18px 24px';
@@ -312,11 +311,9 @@ class Popover extends Component {
 }
 
 Popover.propTypes = {
-  title: PropTypes.string,
-  stamp: PropTypes.string,
-  content: PropTypes.node,
   children: PropTypes.node,
   closeTitle: PropTypes.string,
+  content: PropTypes.node,
   place: PropTypes.oneOf([
     'top',
     'top-right',
@@ -324,30 +321,23 @@ Popover.propTypes = {
     'right',
     'left',
   ]),
-  trigger: PropTypes.oneOf(['click', 'hover']),
-  skin: PropTypes.oneOf(['default', 'p2p']),
   show: PropTypes.bool,
+  skin: PropTypes.oneOf(['default', 'p2p']),
+  stamp: PropTypes.string,
+  title: PropTypes.string,
+  trigger: PropTypes.oneOf(['click', 'hover']),
 };
 
 Popover.defaultProps = {
-  title: '',
-  stamp: '',
-  content: (
-    <React.Fragment>
-      <div style={{ width: '300px' }}>Content</div>
-      <div style={{ width: '300px' }}>Content</div>
-      <div style={{ width: '300px' }}>Content</div>
-      <div style={{ width: '300px' }}>Content</div>
-      <div style={{ width: '300px' }}>Content</div>
-      <div style={{ width: '300px' }}>Content</div>
-    </React.Fragment>
-  ),
-  children: <Button size="big">123456789</Button>,
+  children: '',
+  closeTitle: '',
+  content: '',
   place: 'top',
-  closeTitle: 'Fechar',
-  trigger: 'click',
+  show: false,
   skin: 'default',
-  show: true,
+  stamp: '',
+  title: '',
+  trigger: 'click',
 };
 
 export default Popover;
