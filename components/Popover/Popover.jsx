@@ -4,90 +4,9 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import Stamp from '../Stamp';
+import options from './options';
 
 const PADDING = '18px 24px';
-const ARROW_SIZE = '8px';
-const CORNER_ARROW_DISTANCE = 25;
-
-const skins = {
-  p2p: Colors.P2P['500'],
-};
-
-const upDownBorders = `
-  border-left: ${ARROW_SIZE} solid transparent;
-  border-right: ${ARROW_SIZE} solid transparent;
-  left: 50%;
-  transform: translateX(-50%);
-`;
-
-const sideBorders = `
-  border-top: ${ARROW_SIZE} solid transparent;
-  border-bottom: ${ARROW_SIZE} solid transparent;
-  top: 50%;
-  transform: translateY(-50%);
-`;
-
-const placement = {
-  arrowPosition: {
-    bottom: `
-      ${upDownBorders}
-      border-bottom: ${ARROW_SIZE} solid;
-      border-bottom-color: inherit;
-      top: -${ARROW_SIZE};
-    `,
-    top: `
-      ${upDownBorders}
-      border-top: ${ARROW_SIZE} solid;
-      border-top-color: inherit;
-      bottom: -${ARROW_SIZE};
-    `,
-    left: `
-      ${sideBorders}
-      border-left: ${ARROW_SIZE} solid;
-      border-left-color: inherit;
-      right: -${ARROW_SIZE};
-    `,
-    right: `
-      ${sideBorders}
-      border-right: ${ARROW_SIZE} solid;
-      border-right-color: inherit;
-      left: -${ARROW_SIZE};
-    `,
-    'top-left': `
-      ${upDownBorders}
-      border-top: ${ARROW_SIZE} solid;
-      border-top-color: inherit;
-      bottom: -${ARROW_SIZE};
-
-      right: ${CORNER_ARROW_DISTANCE}px;
-      transform: translateX(50%);
-      left: auto;
-    `,
-    'top-right': `
-      ${upDownBorders}
-      border-top: ${ARROW_SIZE} solid;
-      border-top-color: inherit;
-      bottom: -${ARROW_SIZE};
-
-      left: ${CORNER_ARROW_DISTANCE}px;
-      transform: translateX(-50%);
-    `,
-  },
-
-  popoverPosition: ({
-    place, popoverHeight, popoverWidth, childrenWidth,
-  }) => {
-    const position = {
-      top: `top: -${popoverHeight + 15}px; left: 50%; margin-left: -${Math.floor(popoverWidth / 2)}px;`,
-      right: `right: -${popoverWidth + 15}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
-      left: `left: -${popoverWidth + 15}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
-      'top-left': `top: -${popoverHeight + 15}px; left: ${Math.floor(childrenWidth / 2) + CORNER_ARROW_DISTANCE}px; margin-left: -${popoverWidth}px;`,
-      'top-right': `top: -${popoverHeight + 15}px; left: -${Math.floor(childrenWidth / 2) + CORNER_ARROW_DISTANCE}px; margin-left: 100%;`,
-    };
-
-    return position[place] || position.top;
-  },
-};
 
 const Wrapper = styled.div`
   position: relative;
@@ -105,14 +24,14 @@ const PopoverContainer = styled.div`
   &:after {
     content: '';
     position: absolute;
-    ${({ place }) => placement.arrowPosition[place]};
+    ${({ place }) => options.arrowPosition(place)};
   }
 
   ${({ skin }) => (
-    skins[skin]
+    options.skins[skin]
       ? `
-        border-color: ${skins[skin]};
-        background-color: ${skins[skin]};
+        border-color: ${options.skins[skin]};
+        background-color: ${options.skins[skin]};
         color: ${Colors.WHITE};
       `
       : `
@@ -139,7 +58,7 @@ const PopoverContainer = styled.div`
             6px 0 10px 1px rgba(0, 0, 0, 0.14);`;
   }}
 
-  ${placement.popoverPosition}
+  ${options.popoverPosition}
 `;
 
 const Header = styled.div`
@@ -157,11 +76,7 @@ const Header = styled.div`
 const Content = styled.div`
   padding: ${PADDING};
 
-
-  ${({ stamp }) => (stamp && `
-    padding-top: 30px;
-  `
-  )}
+  ${({ stamp }) => stamp && 'padding-top: 30px;'}
 `;
 
 const CloseIcon = styled(Icon)`
