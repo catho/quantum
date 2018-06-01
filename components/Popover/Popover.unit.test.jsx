@@ -6,14 +6,14 @@ import Icon from './../Icon';
 
 describe('Popover', () => {
   it('should match the snapshot', () => {
-    const examples = {
-      default: <Popover>Interact</Popover>,
-      withTitle: (
+    const examples = [
+      (
+        <Popover>Interact</Popover>
+      ), (
         <Popover title="Title" closeTitle="Close">
           Interact
         </Popover>
-      ),
-      withRichContent: (
+      ), (
         <Popover
           content={(
             <div>
@@ -32,35 +32,30 @@ describe('Popover', () => {
         >
           Interact
         </Popover>
-      ),
-      topRight: (
+      ), (
         <Popover place="top-right">
           Interact
         </Popover>
-      ),
-      topLeft: (
+      ), (
         <Popover place="top-left">
           Interact
         </Popover>
-      ),
-      left: (
+      ), (
         <Popover place="left">
           Interact
         </Popover>
-      ),
-      p2pSkin: (
+      ), (
         <Popover skin="p2p">
           Interact
         </Popover>
-      ),
-      withStamp: (
+      ), (
         <Popover stamp="Limited edition">
           Interact
         </Popover>
       ),
-    };
+    ];
 
-    Object.values(examples).forEach((component) => {
+    examples.forEach((component) => {
       expect(mount(component).html()).toMatchSnapshot();
     });
   });

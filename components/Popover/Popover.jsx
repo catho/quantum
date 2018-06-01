@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
 import Icon from '../Icon';
 import Stamp from '../Stamp';
 import options from './options';
@@ -15,8 +14,10 @@ const Wrapper = styled.div`
 
 const PopoverContainer = styled.div`
   border-radius: 8px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2),
+              0 8px 14px 3px rgba(0, 0, 0, 0.12),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14);
   cursor: default;
-  opacity: ${({ show }) => (show ? '1' : '0')};
   position: absolute;
   transition: opacity 0.2s ease-in-out;
   z-index: 100;
@@ -24,59 +25,28 @@ const PopoverContainer = styled.div`
   &:after {
     content: '';
     position: absolute;
-    ${({ place }) => options.arrowPosition(place)};
+    ${options.arrow};
   }
 
-  ${({ skin }) => (
-    options.skins[skin]
-      ? `
-        border-color: ${options.skins[skin]};
-        background-color: ${options.skins[skin]};
-        color: ${Colors.WHITE};
-      `
-      : `
-        border-color: ${Colors.WHITE};
-        background-color: ${Colors.WHITE};
-      `
-  )}
-
-  ${({ place }) => {
-    if (place.indexOf('top') > -1) {
-      return `box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2),
-              0 8px 14px 3px rgba(0, 0, 0, 0.12),
-              0 8px 10px 1px rgba(0, 0, 0, 0.14);`;
-    }
-
-    if (place === 'right') {
-      return `box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2),
-              -6px 0 14px 3px rgba(0, 0, 0, 0.12),
-              -6px 0 10px 1px rgba(0, 0, 0, 0.14);`;
-    }
-
-    return `box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2),
-            6px 0 14px 3px rgba(0, 0, 0, 0.12),
-            6px 0 10px 1px rgba(0, 0, 0, 0.14);`;
-  }}
-
-  ${options.popoverPosition}
+  ${options.position}
+  ${options.visibility}
+  ${options.skin}
+  ${options.shadow}
 `;
 
 const Header = styled.div`
   align-items: center;
   display: flex;
-  justify-content: ${({ title }) => (title ? 'space-between' : 'flex-end')};
+  justify-content: ${options.justifyTitle};
   padding: ${PADDING};
 
-  ${({ title }) => (title
-    ? `border-bottom: 1px solid ${Colors.GREY['50']};`
-    : 'padding-bottom: 0;'
-  )};
+  ${options.title};
 `;
 
 const Content = styled.div`
   padding: ${PADDING};
 
-  ${({ stamp }) => stamp && 'padding-top: 30px;'}
+  ${options.stampPadding}
 `;
 
 const CloseIcon = styled(Icon)`
