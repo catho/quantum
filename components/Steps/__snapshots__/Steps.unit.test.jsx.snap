@@ -2,13 +2,13 @@
 
 exports[`Steps Component Should match the snapshot 1`] = `
 <div
-  className="sc-bdVaJa cOVzqF"
+  className="sc-bdVaJa iiHXbJ"
 >
   <ul
     className="sc-bwzfXH ceHnQp"
   >
     <li
-      className="sc-gzVnrw ideYlH"
+      className="sc-gzVnrw epWdzG"
     >
       <p>
         Criação de conta
@@ -27,7 +27,7 @@ exports[`Steps Component Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="sc-gzVnrw GPMNN"
+      className="sc-gzVnrw iMqGLJ"
     >
       <p>
         Plano Forma de pagamento
