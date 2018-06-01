@@ -32,6 +32,13 @@ eslint:
   tags:
     - style
 
+sonar:
+  stage: sonar
+  script:
+    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD
+  tags:
+    - style
+
 pages:
   stage: deploy
   script:
