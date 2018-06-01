@@ -15,7 +15,7 @@ const StyledSlider = styled(SliderComponent)`
     .rc-slider-handle {
       background-color: ${Colors.GREY[500]};
     }
-    background-color: ${Colors.WHITE};
+    background-color: transparent;
   }
 
   .rc-slider-handle {

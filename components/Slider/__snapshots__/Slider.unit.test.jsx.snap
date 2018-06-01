@@ -2,7 +2,7 @@
 
 exports[`Slider component  should match the snapshot 1`] = `
 <div
-  className="rc-slider sc-htpNat iOnxYq"
+  className="rc-slider sc-htpNat izDPxB"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}

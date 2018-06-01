@@ -121,7 +121,7 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   skin: PropTypes.oneOf([
     'info',
     'danger',
@@ -141,7 +141,6 @@ Tooltip.propTypes = {
 
 Tooltip.defaultProps = {
   skin: 'info',
-  children: null,
   place: 'top',
   text: 'Tooltip',
   slider: false,
