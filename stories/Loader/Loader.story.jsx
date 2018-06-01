@@ -11,7 +11,6 @@ import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import { Col, Row } from '../../components/Grid';
-import GitlabLink from '../../.storybook/components/GitlabLink';
 
 const LoaderExample = ({ name }) => {
   const Component = Loader[name] || Loader;

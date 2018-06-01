@@ -2,7 +2,7 @@ import React from 'react';
 import TextMask from './TextMask';
 import masks from '../shared/masks';
 
-const types = {
+const TextMaskTypes = {
   CEP: props => (<TextMask mask={masks.cep} {...props} />),
   CNPJ: props => (<TextMask mask={masks.cnpj} {...props} />),
   CPF: props => (<TextMask mask={masks.cpf} {...props} />),
@@ -11,11 +11,11 @@ const types = {
 };
 
 function setDisplayName(name) {
-  types[name].displayName = `TextMask.${name}`;
+  TextMaskTypes[name].displayName = `TextMask.${name}`;
 }
 
 Object
-  .keys(types)
+  .keys(TextMaskTypes)
   .map(setDisplayName);
 
-export default types;
+export default TextMaskTypes;

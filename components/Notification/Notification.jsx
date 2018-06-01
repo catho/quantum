@@ -5,6 +5,36 @@ import React from 'react';
 import GlobalTheme from '../../theme';
 import ComponentTheme from './ComponentTheme';
 
+const NotificationWrapper = styled.div`
+  ${props => ComponentTheme[props.type]}
+  padding: ${props => props.theme.sizes.spacing};
+  border-radius: ${props => props.theme.sizes.radius};
+  position: relative;
+`;
+
+const NotificationIcon = styled.div`
+`;
+
+const NotificationMessage = styled.div`
+  strong {
+    display: ${props => (props.inline ? 'block' : 'inline-block')};
+    margin-right: 5px;
+  }
+  margin-right: 15px;
+`;
+
+const NotificationClose = styled.button`
+    position: absolute;
+    cursor: pointer;
+    top: 12px;
+    right: 0;
+    padding: .75rem 1.25rem;
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+`;
+
 /** A notification component that alerts user of something */
 class Notification extends React.Component {
   constructor(props) {
@@ -32,7 +62,7 @@ class Notification extends React.Component {
   render() {
     const { message: { title, text, type } } = this.props;
 
-    const notification = this.state.show ? (
+    return this.state.show ? (
       <ThemeProvider theme={GlobalTheme}>
         <NotificationWrapper type={type}>
           <NotificationIcon />
@@ -49,40 +79,8 @@ class Notification extends React.Component {
         </NotificationWrapper>
       </ThemeProvider>
     ) : null;
-
-    return notification;
   }
 }
-
-const NotificationWrapper = styled.div`
-  ${props => ComponentTheme[props.type]}
-  padding: ${props => props.theme.sizes.spacing};
-  border-radius: ${props => props.theme.sizes.radius};
-  position: relative;
-`;
-
-const NotificationIcon = styled.div`
-`;
-
-const NotificationMessage = styled.div`
-  strong {
-    display: ${props => (props.inline ? 'block' : 'inline-block')};
-    margin-right: 5px;
-  }
-  margin-right: 15px;
-`;
-
-const NotificationClose = styled.button`
-    position: absolute;
-    cursor: pointer;
-    top: 12px;
-    right: 0;
-    padding: 0.75rem 1.25rem;
-    color: inherit;
-    background-color: transparent;
-    border: 0;
-    -webkit-appearance: none;
-`;
 
 Notification.defaultProps = {
   show: true,

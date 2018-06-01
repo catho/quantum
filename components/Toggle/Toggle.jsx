@@ -36,7 +36,6 @@ const StyledLabel = styled(Label)`
 
   &:after {
     transform: ${({ checked }) => (checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)')};
-    background-color: ${({ checked, disabled }) => { if (disabled) return Colors.GREY[300]; return (checked ? Colors.SECONDARY[500] : Colors.WHITE); }};
     border: 1px solid ${({ checked }) => (checked ? 'transparent' : Colors.GREY['300'])};
     border-radius: 50%;
     box-sizing: border-box;
@@ -46,6 +45,10 @@ const StyledLabel = styled(Label)`
     right: 20px;
     top: 50%;
     width: 24px;
+    background-color: ${({ checked, disabled }) => {
+    if (disabled) return Colors.GREY[300];
+    return (checked ? Colors.SECONDARY[500] : Colors.WHITE);
+  }};
   }
 
   &:hover:after{

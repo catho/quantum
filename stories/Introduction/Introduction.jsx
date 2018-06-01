@@ -38,7 +38,7 @@ const Introduction = () => (
   <React.Fragment>
     <p>The official <strong>Catho</strong> style-guide</p>
 
-    <Title style={{ marginTop: '40px'}}>Starting from scratch</Title>
+    <Title style={{ marginTop: '40px' }}>Starting from scratch</Title>
 
     <p>
       In order to easily creating new apps or components,

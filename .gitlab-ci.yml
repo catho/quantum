@@ -32,6 +32,13 @@ eslint:
   tags:
     - style
 
+sonar:
+  stage: test
+  script:
+    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**
+  tags:
+    - style
+
 pages:
   stage: deploy
   script:
@@ -45,3 +52,6 @@ pages:
     - master
   tags:
     - style
+
+after_script:
+  - yarn cache clean
