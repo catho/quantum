@@ -49,4 +49,7 @@ export default [
   // 10. Other
   'Loading',
   'Loader',
+
+  // 11. Slider
+  'Slider',
 ].map(s => `./${s}/${s}.story.jsx`);
