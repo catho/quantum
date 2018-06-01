@@ -35,7 +35,7 @@ eslint:
 sonar:
   stage: test
   script:
-    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD
+    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=node_modules
   tags:
     - style
 
