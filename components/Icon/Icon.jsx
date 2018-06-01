@@ -1,25 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from '@material-ui/core/Icon';
+import MaterialIcon from '@material-ui/core/Icon';
 import icons from '../shared/icons';
 
-const FontIcon = ({
+const Icon = ({
   name,
   skin,
   ...props
 }) => (
-  <Icon {...props} style={{ color: skin }}>{name}</Icon>
+  <MaterialIcon {...props} style={{ color: skin }}>{name}</MaterialIcon>
 );
 
-FontIcon.defaultProps = {
+Icon.defaultProps = {
   style: {},
   skin: '',
 };
 
-FontIcon.propTypes = {
+Icon.propTypes = {
   name: PropTypes.oneOf(icons).isRequired,
   style: PropTypes.instanceOf(Object),
   skin: PropTypes.string,
 };
 
-export default FontIcon;
+export default Icon;

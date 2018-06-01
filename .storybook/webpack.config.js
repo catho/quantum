@@ -9,7 +9,7 @@ module.exports = {
       test: /\.css$/,
       use: [{
         loader: 'style-loader',
-      },{
+      }, {
         loader: 'css-loader',
         options: {
           sourceMap: true,
@@ -19,12 +19,12 @@ module.exports = {
       test: /\.(png|jpg|gif)$/,
       use: [{
         loader: 'file-loader',
-        options: {}
-      }]
+        options: {},
+      }],
     }, {
       loader: 'url-loader?limit=100000',
       test: /\.(ttf|svg|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-      include: path.resolve (__dirname, '../')
-    }]
+      include: path.resolve(__dirname, '../'),
+    }],
   },
 };

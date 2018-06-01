@@ -32,7 +32,8 @@ const examples = {
     ),
   },
   'Card Number': {
-    code: 'CNPJ: <TextMask mask={[/\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/]}>4024007113535149</TextMask>',
+    code: `Card Number:
+<TextMask mask={[/\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/]}>4024007113535149</TextMask>`,
     component: (
       <React.Fragment>
         <TextMask mask={[/\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/]}>4024007113535149</TextMask>

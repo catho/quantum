@@ -135,7 +135,6 @@ class Input extends React.Component {
       id,
       label,
       error,
-      onChange,
       mask,
       ...rest
     } = this.props;

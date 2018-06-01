@@ -1,7 +1,7 @@
 import React from 'react';
 import Loader from './Loader';
 
-const types = {
+const LoaderTypes = {
   Image: props => (<Loader {...props} />),
   Text: props => (
     <Loader {...props}>
@@ -46,11 +46,11 @@ const types = {
 };
 
 function setDisplayName(name) {
-  types[name].displayName = `Loader.${name}`;
+  LoaderTypes[name].displayName = `Loader.${name}`;
 }
 
 Object
-  .keys(types)
+  .keys(LoaderTypes)
   .map(setDisplayName);
 
-export default types;
+export default LoaderTypes;

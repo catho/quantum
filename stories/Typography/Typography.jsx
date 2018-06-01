@@ -100,15 +100,37 @@ const Typography = () => (
       <tbody>
         <Tr>
           <Td>a <Small>inherit</Small></Td>
-          <td><Link href="#">Lorem ipsum dolor sit amet.</Link></td>
+          <td><Link href="/">Lorem ipsum dolor sit amet.</Link></td>
         </Tr>
         <Tr>
           <Td>p <Small>16px</Small></Td>
-          <td><P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lorem magna, molestie at pretium non, consequat sit amet ante. Aenean et ultrices elit. Suspendisse quis urna consequat, condimentum tortor ut, laoreet magna. Praesent accumsan massa pellentesque felis tempus, at semper lacus ullamcorper. Vestibulum maximus est est, sed ullamcorper mi pellentesque at. Nunc facilisis blandit felis sed sollicitudin. Proin rutrum consectetur gravida.</P></td>
+          <td>
+            <P>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur lorem magna, molestie at pretium non, consequat
+              sit amet ante. Aenean et ultrices elit. Suspendisse quis urna
+              consequat, condimentum tortor ut, laoreet magna. Praesent
+              accumsan massa pellentesque felis tempus, at semper lacus
+              ullamcorper. Vestibulum maximus est est, sed ullamcorper mi
+              pellentesque at. Nunc facilisis blandit felis sed sollicitudin.
+              Proin rutrum consectetur gravida.
+            </P>
+          </td>
         </Tr>
         <Tr>
           <Td>blockquote <Small>12px</Small></Td>
-          <td><Blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lorem magna, molestie at pretium non, consequat sit amet ante. Aenean et ultrices elit. Suspendisse quis urna consequat, condimentum tortor ut, laoreet magna. Praesent accumsan massa pellentesque felis tempus, at semper lacus ullamcorper. Vestibulum maximus est est, sed ullamcorper mi pellentesque at. Nunc facilisis blandit felis sed sollicitudin. Proin rutrum consectetur gravida.</Blockquote></td>
+          <td>
+            <Blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              lorem magna, molestie at pretium non, consequat sit amet ante.
+              Aenean et ultrices elit. Suspendisse quis urna consequat,
+              condimentum tortor ut, laoreet magna. Praesent accumsan massa
+              pellentesque felis tempus, at semper lacus ullamcorper. Vestibulum
+              maximus est est, sed ullamcorper mi pellentesque at. Nunc
+              facilisis blandit felis sed sollicitudin. Proin rutrum
+              consectetur gravida.
+            </Blockquote>
+          </td>
         </Tr>
       </tbody>
     </table>
@@ -119,7 +141,7 @@ const Typography = () => (
       <Caption>Lists have line-height of 24 pixels.</Caption>
       <tbody>
         <Tr>
-          <Td>ul > li <Small>16px</Small></Td>
+          <Td>ul {'>'} li <Small>16px</Small></Td>
           <td>
             <Ul style={{ marginBottom: '20px' }}>
               <Li>Lorem ipsum dolor sit amet</Li>
@@ -129,7 +151,7 @@ const Typography = () => (
           </td>
         </Tr>
         <Tr>
-          <Td>ol > li <Small>16px</Small></Td>
+          <Td>ol {'>'} li <Small>16px</Small></Td>
           <td>
             <Ol>
               <Li>Lorem ipsum dolor sit amet</Li>
