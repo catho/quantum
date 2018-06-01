@@ -46,8 +46,8 @@ export default [
   // 9. Card
   'Card',
 
-  // 10. Steps
-  'Steps',
+  // 10. Wizard
+  'Wizard',
 
   // 11. Slider
   'Slider',

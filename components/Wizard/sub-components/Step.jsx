@@ -5,18 +5,22 @@ import Icon from '../../Icon';
 import Colors from '../../Colors';
 import { BREAKPOINTS } from '../../Grid/sub-components';
 
+const statusFontColor = ({ status }) => {
+  switch (status) {
+    case 'active':
+      return `color: ${Colors.WHITE};`;
+    case 'done':
+      return `color: ${Colors.PRIMARY['500']};`;
+    default:
+      return `color: ${Colors.GREY['100']};`;
+  }
+};
+
 const StepIcon = styled(Icon)`
   position: relative;
   top: -40px;
-  color: ${Colors.GREY['100']};
   
-  ${({ status }) => status === 'active' && `
-    color: ${Colors.WHITE};
-  `}
-  
-  ${({ status }) => status === 'done' && `
-    color: ${Colors.PRIMARY['500']};
-  `}
+  ${statusFontColor}
 `;
 
 const ProgressStep = styled.li`

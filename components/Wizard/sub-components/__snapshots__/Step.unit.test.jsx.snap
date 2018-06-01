@@ -20,7 +20,7 @@ exports[`Step Component Should match the snapshot with icon 1`] = `
   </p>
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 sc-ifAKCX bhjTDR"
+    className="material-icons MuiIcon-root-1 sc-ifAKCX QJcNB"
     status=""
     style={
       Object {

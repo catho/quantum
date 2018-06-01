@@ -13,7 +13,7 @@ const ProgressBar = styled.ul`
   justify-content: space-between;
 `;
 
-const Steps = ({ children }) => (
+const Wizard = ({ children }) => (
   <Wrapper>
     <ProgressBar>
       { children }
@@ -21,7 +21,7 @@ const Steps = ({ children }) => (
   </Wrapper>
 );
 
-Steps.propTypes = {
+Wizard.propTypes = {
   /** Step Component list */
   children: PropTypes.oneOfType([
     PropTypes.element,
@@ -29,4 +29,4 @@ Steps.propTypes = {
   ]).isRequired,
 };
 
-export default Steps;
+export default Wizard;

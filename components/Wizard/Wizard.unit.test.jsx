@@ -1,15 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import Steps from './Steps';
-import Step from '../../components/Steps/sub-components/Step';
+import { Wizard, Step } from './';
 
-describe('Steps Component', () => {
+describe('Wizard Component', () => {
   const component = (
-    <Steps>
+    <Wizard>
       <Step title="Criação de conta" icon="person" status="done" />
       <Step title="Plano Forma de pagamento" icon="credit_card" status="active" />
-    </Steps>
+    </Wizard>
   );
   const wrapper = shallow(component);
 
@@ -18,7 +17,7 @@ describe('Steps Component', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('Should verify if Steps contains children', () => {
+  it('Should verify if Wizard contains children', () => {
     expect(wrapper.find('Step')).toHaveLength(2);
   });
 });

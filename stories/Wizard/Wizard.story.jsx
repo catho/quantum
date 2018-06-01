@@ -10,25 +10,25 @@ import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
 import CodeExample from '../../.storybook/components/CodeExample';
 import Atom from '../static/atom.svg';
-import { Steps, Step } from '../../components/Steps';
+import { Wizard, Step } from '../../components/Wizard';
 
 const StepExample = (
-  <Steps>
+  <Wizard>
     <Step title="Criação de conta" icon="person" status="active" />
     <Step title="Plano e forma de pagamento" icon="credit_card" />
     <Step title="Preencher o currículo" icon="description" />
-  </Steps>
+  </Wizard>
 );
 
-const stories = storiesOf('10. Steps', module);
+const stories = storiesOf('10. Wizard', module);
 
 stories
-  .add('Steps', () => (
-    <Heading name="Steps" image={Atom}>
+  .add('Wizard', () => (
+    <Heading name="Wizard" image={Atom}>
       <TabbedView>
         <Tab title="Usage">
-          <HowToImport importModules="Steps, Step" />
-          <p>We provide two components to use steps: <code>{ '<Steps>' }</code> and <code>{ '<Step title="Example">' }</code> must be used together.</p>
+          <HowToImport importModules="Wizard, Step" />
+          <p>We provide two components to use Wizard: <code>{ '<Wizard>' }</code> and <code>{ '<Step title="Example">' }</code> must be used together.</p>
           <p>The <code>{ '<Step>' }</code> must have a required title prop and his current status prop, that can be one of:</p>
 
           <ul>
@@ -52,43 +52,43 @@ stories
         </Tab>
         <Tab title="API">
           <AutoPropsApi component={Step} title="Step" />
-          <AutoPropsApi component={Steps} title="Steps" />
+          <AutoPropsApi component={Wizard} title="Wizard" />
         </Tab>
         <Tab title="Examples">
           <h3>First step active</h3>
           <Example component={
-            <Steps>
+            <Wizard>
               <Step title="Criação de conta" icon="person" status="active" />
               <Step title="Plano e forma de pagamento" icon="credit_card" />
               <Step title="Preencher o currículo" icon="description" />
-            </Steps>
+            </Wizard>
             }
           />
           <h3>First step done, second step active</h3>
           <Example component={
-            <Steps>
+            <Wizard>
               <Step title="Criação de conta" icon="person" status="done" />
               <Step title="Plano e forma de pagamento" status="active" icon="credit_card" />
               <Step title="Preencher o currículo" icon="description" />
-            </Steps>
+            </Wizard>
             }
           />
           <h3>First and second steps done, third step active</h3>
           <Example component={
-            <Steps>
+            <Wizard>
               <Step title="Criação de conta" icon="person" status="done" />
               <Step title="Plano e forma de pagamento" status="done" icon="credit_card" />
               <Step title="Preencher o currículo" status="active" icon="description" />
-            </Steps>
+            </Wizard>
             }
           />
           <h3>All steps done</h3>
           <Example component={
-            <Steps>
+            <Wizard>
               <Step title="Criação de conta" icon="person" status="done" />
               <Step title="Plano e forma de pagamento" status="done" icon="credit_card" />
               <Step title="Preencher o currículo" status="done" icon="description" />
-            </Steps>
+            </Wizard>
             }
           />
         </Tab>

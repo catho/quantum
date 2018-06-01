@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Steps Component Should match the snapshot 1`] = `
+exports[`Wizard Component Should match the snapshot 1`] = `
 <div
   className="sc-bdVaJa iiHXbJ"
 >
@@ -15,7 +15,7 @@ exports[`Steps Component Should match the snapshot 1`] = `
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 sc-bZQynM eJOqQW"
+        className="material-icons MuiIcon-root-1 sc-bZQynM hOmbFu"
         status="done"
         style={
           Object {
@@ -34,7 +34,7 @@ exports[`Steps Component Should match the snapshot 1`] = `
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 sc-bZQynM crTbuC"
+        className="material-icons MuiIcon-root-1 sc-bZQynM ikmKaa"
         status="active"
         style={
           Object {
