@@ -4,7 +4,7 @@ import Stamp from './Stamp';
 
 describe('<Stamp />', () => {
   it('Should match the snapshot', () => {
-    const tree = renderer.create(<Stamp />).toJSON();
+    const tree = renderer.create(<Stamp text="example" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
