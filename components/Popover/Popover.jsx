@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import Button from '../Button';
+import Stamp from '../Stamp';
 
 const PADDING = '18px 24px';
 const ARROW_SIZE = '8px';
@@ -97,7 +98,6 @@ const PopoverContainer = styled.div`
   border-radius: 8px;
   cursor: default;
   opacity: ${({ show }) => (show ? '1' : '0')};
-  overflow: hidden;
   position: absolute;
   transition: opacity 0.2s ease-in-out;
   z-index: 100;
@@ -107,26 +107,6 @@ const PopoverContainer = styled.div`
     position: absolute;
     ${({ place }) => placement.arrowPosition[place]};
   }
-
-  ${({ stamp }) => (stamp && `
-    &:before {
-      background-color: ${Colors.SECONDARY['500']};
-      color: ${Colors.WHITE};
-      content: '${stamp}';
-      font-size: 8px;
-      font-weight: bold;
-      height: 29px;
-      left: -31px;
-      padding: 10px 26px 0;
-      position: absolute;
-      text-align: center;
-      text-transform: uppercase;
-      top: 18px;
-      transform: rotate(-35deg);
-      width: 150px;
-    }
-  `
-  )}
 
   ${({ skin }) => (
     skins[skin]
@@ -303,10 +283,11 @@ class Popover extends Component {
         <PopoverContainer
           {...rest}
           {...measures}
-          stamp={stamp}
           show={show}
           innerRef={(ref) => { this.popoverRef = ref; }}
         >
+          {stamp && <Stamp text={stamp} />}
+
           <Header title={title}>
             { title && <span>{ title }</span> }
             <CloseIcon name="close" onClick={this.hide} title={closeTitle} />
