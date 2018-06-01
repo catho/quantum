@@ -41,7 +41,7 @@ const ProgressStep = styled.li`
     border: 2px solid ${Colors.GREY['100']};
     display: block;
     text-align: center;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px;
     border-radius: 50%;
     background-color: white;
   }
