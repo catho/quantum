@@ -91,6 +91,7 @@ const placement = {
 
 const Wrapper = styled.div`
   position: relative;
+  display: inline-block;
 `;
 
 const PopoverContainer = styled.div`
@@ -187,13 +188,8 @@ class Popover extends Component {
   }
 
   componentDidMount() {
-    const { trigger } = this.props;
-
     this.measure();
-
-    if (trigger === 'click') {
-      document.addEventListener('mousedown', this.handleClickOutside);
-    }
+    document.addEventListener('mousedown', this.handleClickOutside);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -201,7 +197,6 @@ class Popover extends Component {
       this.props.title !== nextProps.title ||
       this.props.content !== nextProps.content ||
       this.props.place !== nextProps.place ||
-      this.props.trigger !== nextProps.trigger ||
       this.props.show !== nextProps.show ||
       this.state.stamp !== nextState.stamp ||
       this.state.show !== nextState.show ||
@@ -244,10 +239,6 @@ class Popover extends Component {
     this.setState({ show: !show });
   }
 
-  show = () => {
-    this.setState({ show: true });
-  }
-
   hide = () => {
     this.setState({ show: false });
   }
@@ -258,7 +249,7 @@ class Popover extends Component {
 
   render() {
     const {
-      title, content, children, closeTitle, trigger, stamp, ...rest
+      title, content, children, closeTitle, stamp, ...rest
     } = this.props;
 
     const {
@@ -298,9 +289,7 @@ class Popover extends Component {
         </PopoverContainer>
 
         <ChildrenContainer
-          onClick={trigger === 'click' ? this.toggleVisibility : () => {}}
-          onMouseEnter={trigger === 'hover' ? this.show : () => {}}
-          onMouseLeave={trigger === 'hover' ? this.hide : () => {}}
+          onClick={this.toggleVisibility}
           innerRef={(ref) => { this.childrenRef = ref; }}
         >
           { children }
@@ -325,7 +314,6 @@ Popover.propTypes = {
   skin: PropTypes.oneOf(['default', 'p2p']),
   stamp: PropTypes.string,
   title: PropTypes.string,
-  trigger: PropTypes.oneOf(['click', 'hover']),
 };
 
 Popover.defaultProps = {
@@ -337,7 +325,6 @@ Popover.defaultProps = {
   skin: 'default',
   stamp: '',
   title: '',
-  trigger: 'click',
 };
 
 export default Popover;
