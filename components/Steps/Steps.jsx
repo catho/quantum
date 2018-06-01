@@ -23,6 +23,7 @@ const Steps = ({ children }) => (
 );
 
 Steps.propTypes = {
+  /** Step Component list */
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),
