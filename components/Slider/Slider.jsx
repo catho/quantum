@@ -39,6 +39,19 @@ const StyledSlider = styled(SliderComponent)`
 }
 }
 
+  .rc-slider-mark {
+    width: 100%;
+    height: 18px;
+    overflow: hidden;
+
+    .rc-slider-mark-text:first-child {
+      left: 1% !important;
+    }
+    .rc-slider-mark-text:last-child {
+      left: 99% !important;
+    }
+  }
+
   .rc-slider-rail,
   .rc-slider-track {
     height: 8px;
@@ -84,7 +97,6 @@ Handle.propTypes = {
 };
 
 /** Sliders allow users to make selections from a range of values. */
-
 const Slider = ({
   tooltip,
   marks,
