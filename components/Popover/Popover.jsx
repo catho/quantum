@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from '../Icon';
 import Stamp from '../Stamp';
-import options from './options';
+import mixins from './mixins';
 
 const PADDING = '18px 24px';
 
@@ -25,28 +25,28 @@ const PopoverContainer = styled.div`
   &:after {
     content: '';
     position: absolute;
-    ${options.arrow};
+    ${mixins.arrow};
   }
 
-  ${options.position}
-  ${options.visibility}
-  ${options.skin}
-  ${options.shadow}
+  ${mixins.position}
+  ${mixins.visibility}
+  ${mixins.skin}
+  ${mixins.shadow}
 `;
 
 const Header = styled.div`
   align-items: center;
   display: flex;
-  justify-content: ${options.justifyTitle};
+  justify-content: ${mixins.justifyTitle};
   padding: ${PADDING};
 
-  ${options.title};
+  ${mixins.title};
 `;
 
 const Content = styled.div`
   padding: ${PADDING};
 
-  ${options.stampPadding}
+  ${mixins.stampPadding}
 `;
 
 const CloseIcon = styled(Icon)`
