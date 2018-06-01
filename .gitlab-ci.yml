@@ -52,3 +52,6 @@ pages:
     - master
   tags:
     - style
+
+after_script:
+  - yarn cache clean
