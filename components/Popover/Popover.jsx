@@ -19,7 +19,7 @@ const PopoverContainer = styled.div`
               0 8px 10px 1px rgba(0, 0, 0, 0.14);
   cursor: default;
   position: absolute;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   z-index: 100;
 
   &:after {
@@ -119,9 +119,9 @@ class Popover extends Component {
   toggleVisibility = (event) => {
     event.preventDefault();
 
-    const { show } = this.state;
-
-    this.setState({ show: !show });
+    this.setState(({ show }) => ({
+      show: !show,
+    }));
   }
 
   hide = () => {
