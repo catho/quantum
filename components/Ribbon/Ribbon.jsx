@@ -27,10 +27,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Stamp = ({ text }) => <Wrapper text={text} />;
+const Ribbon = ({ text }) => <Wrapper text={text} />;
 
-Stamp.propTypes = {
+Ribbon.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-export default Stamp;
+export default Ribbon;

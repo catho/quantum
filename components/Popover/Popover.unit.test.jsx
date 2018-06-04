@@ -49,7 +49,7 @@ describe('Popover', () => {
           Interact
         </Popover>
       ), (
-        <Popover stamp="Limited edition">
+        <Popover ribbon="Limited edition">
           Interact
         </Popover>
       ),

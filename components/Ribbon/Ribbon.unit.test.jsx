@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Stamp from './Stamp';
+import Ribbon from './Ribbon';
 
-describe('<Stamp />', () => {
+describe('<Ribbon />', () => {
   it('Should match the snapshot', () => {
-    const tree = renderer.create(<Stamp text="example" />).toJSON();
+    const tree = renderer.create(<Ribbon text="example" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

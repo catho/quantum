@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from '../Icon';
-import Stamp from '../Stamp';
+import Ribbon from '../Ribbon';
 import mixins from './mixins';
 
 const PADDING = '18px 24px';
@@ -46,7 +46,7 @@ const Header = styled.div`
 const Content = styled.div`
   padding: ${PADDING};
 
-  ${mixins.stampPadding}
+  ${mixins.ribbonPadding}
 `;
 
 const CloseIcon = styled(Icon)`
@@ -83,7 +83,7 @@ class Popover extends Component {
       this.props.content !== nextProps.content ||
       this.props.place !== nextProps.place ||
       this.props.show !== nextProps.show ||
-      this.state.stamp !== nextState.stamp ||
+      this.state.ribbon !== nextState.ribbon ||
       this.state.show !== nextState.show ||
       this.state.popoverMeasures.width !== nextState.popoverMeasures.width ||
       this.state.popoverMeasures.height !== nextState.popoverMeasures.height ||
@@ -134,7 +134,7 @@ class Popover extends Component {
 
   render() {
     const {
-      title, content, children, closeTitle, stamp, ...rest
+      title, content, children, closeTitle, ribbon, ...rest
     } = this.props;
 
     const {
@@ -161,14 +161,14 @@ class Popover extends Component {
           show={show}
           innerRef={(ref) => { this.popoverRef = ref; }}
         >
-          {stamp && <Stamp text={stamp} />}
+          {ribbon && <Ribbon text={ribbon} />}
 
           <Header title={title}>
             { title && <span>{ title }</span> }
             <CloseIcon name="close" onClick={this.hide} title={closeTitle} />
           </Header>
 
-          <Content stamp={stamp}>
+          <Content ribbon={ribbon}>
             { content }
           </Content>
         </PopoverContainer>
@@ -197,7 +197,7 @@ Popover.propTypes = {
   ]),
   show: PropTypes.bool,
   skin: PropTypes.oneOf(['default', 'p2p']),
-  stamp: PropTypes.string,
+  ribbon: PropTypes.string,
   title: PropTypes.string,
 };
 
@@ -208,7 +208,7 @@ Popover.defaultProps = {
   place: 'top',
   show: false,
   skin: 'default',
-  stamp: '',
+  ribbon: '',
   title: '',
 };
 

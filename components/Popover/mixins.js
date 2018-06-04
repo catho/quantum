@@ -124,7 +124,7 @@ export default {
     return text ? 'space-between' : 'flex-end';
   },
 
-  stampPadding({ stamp }) {
-    return stamp && 'padding-top: 30px;';
+  ribbonPadding({ ribbon }) {
+    return ribbon && 'padding-top: 30px;';
   },
 };

@@ -74,11 +74,11 @@ const examples = [{
     skin: 'p2p',
   },
 }, {
-  label: 'With Stamp',
+  label: 'With ribbon',
   props: {
     content: 'Content',
     skin: 'p2p',
-    stamp: 'Limited edition',
+    ribbon: 'Limited edition',
   },
 }, {
   label: 'With rich content',
