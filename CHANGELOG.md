@@ -1,3 +1,8 @@
+## v0.6.1 - May/2018
+### Added
+New Components:
+ - Steps
+
 ## v0.6.0 - May/2018
 ### Added
 New Components:
