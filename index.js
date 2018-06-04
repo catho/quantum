@@ -20,6 +20,7 @@ import Card from './components/Card';
 import Icon from './components/Icon';
 import Slider from './components/Slider';
 import { Wizard, Step } from './components/Wizard';
+import Popover from './components/Popover';
 
 export {
   AutoComplete,
@@ -50,4 +51,5 @@ export {
   Wizard,
   Step,
   Slider,
+  Popover,
 };

@@ -55,4 +55,7 @@ export default [
   // 12. Other
   'Loading',
   'Loader',
+
+  // 13. Popover
+  'Popover',
 ].map(s => `./${s}/${s}.story.jsx`);
