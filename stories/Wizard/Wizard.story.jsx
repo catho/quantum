@@ -37,7 +37,10 @@ stories
             <li>done</li>
           </ul>
 
-          <p>You can pass an icon to be displayed with the step component, see the example below:</p>
+          <p>
+            You can pass an icon to be displayed with the step component,
+            see the example below:
+          </p>
           <small>You can see the list of enable icons <Button onClick={linkTo('1. Foundation', 'Icons')}>here</Button></small>
 
           <h3>A simple 3 steps component</h3>
