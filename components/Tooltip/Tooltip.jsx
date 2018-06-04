@@ -23,13 +23,20 @@ const Tip = styled.div`
 
   ${placement.tipPosition}
 
-  left: ${props => props.offset}%;
-
   &:before {
     content: '';
     position: absolute;
     ${props => placement.arrowPosition[props.place]};
   }
+
+
+  ${(props) => {
+    if (props.offset || props.offset === 0) {
+      return `left: ${props.offset}%;`;
+    }
+
+    return false;
+  }}
 `;
 
 const Wrapper = styled.div`
@@ -144,7 +151,7 @@ Tooltip.defaultProps = {
   place: 'top',
   text: 'Tooltip',
   slider: false,
-  offset: 0,
+  offset: null,
 };
 
 export default Tooltip;

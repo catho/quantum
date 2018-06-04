@@ -18,6 +18,8 @@ import Tooltip from './components/Tooltip';
 import Logo from './components/Logo';
 import Card from './components/Card';
 import Icon from './components/Icon';
+import Slider from './components/Slider';
+import { Wizard, Step } from './components/Wizard';
 import Popover from './components/Popover';
 
 export {
@@ -46,5 +48,8 @@ export {
   Tooltip,
   Validations,
   Icon,
+  Wizard,
+  Step,
+  Slider,
   Popover,
 };

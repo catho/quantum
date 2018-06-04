@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import AutoExample from '../../.storybook/components/AutoExample';
 import Loading from '../../components/Loading';
 
-storiesOf('10. Others', module)
+storiesOf('12. Others', module)
   .add('Loading', () => (
     <AutoExample component={Loading} />
   ));
