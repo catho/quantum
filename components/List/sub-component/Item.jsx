@@ -20,34 +20,30 @@ const bulletValue = ({ bullet }) =>
     }
   `;
 
-const ListItem = styled.li`
+const ListItem = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  padding: 4px;
+  padding: 4px 8px 8px 4px;
 
   margin-bottom: 4px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   ${bulletValue};
 `;
 
 class Item extends React.Component {
-  static create = item => {
+  static create = (item) => {
     if (typeof item === 'string') {
-      return <Item content={item} />;
+      return <Item content={item} key={item} />;
     }
 
     const { icon, content } = item;
 
-    return <Item icon={icon} content={content} />;
+    return <Item icon={icon} content={content} key={content} />;
   };
 
-  _renderContent = content => {
+  _renderContent = (content) => {
     if (typeof content === 'string') {
       return <Content header={content} />;
     }
@@ -56,13 +52,21 @@ class Item extends React.Component {
   };
 
   render() {
-    const { icon, children, content, bullet } = this.props;
+    const {
+      icon,
+      children,
+      content,
+      bullet,
+      ...rest
+    } = this.props;
 
     return (
-      <ListItem bullet={bullet}>
-        {icon && <ItemIcon name={icon} />}
-        {children ? children : this._renderContent(content)}
-      </ListItem>
+      <li {...rest}>
+        <ListItem bullet={bullet} >
+          {icon && <ItemIcon name={icon} />}
+          {children || this._renderContent(content)}
+        </ListItem>
+      </li>
     );
   }
 }
@@ -70,6 +74,7 @@ class Item extends React.Component {
 Item.defaultProps = {
   icon: '',
   bullet: '',
+  children: null,
 };
 
 Item.propTypes = {
@@ -82,6 +87,10 @@ Item.propTypes = {
   ).isRequired,
   icon: PropTypes.string,
   bullet: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
 };
 
 export default Item;
