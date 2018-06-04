@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wizard Component Should match the snapshot 1`] = `
+<div
+  className="sc-bdVaJa UoSJW"
+>
+  <ul
+    className="sc-bwzfXH ceHnQp"
+  >
+    <li
+      className="sc-gzVnrw gkwnRV"
+    >
+      <p
+        className="sc-htoDjs byeBSL"
+      >
+        Criação de conta
+      </p>
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 sc-bZQynM hOmbFu"
+        status="done"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        person
+      </span>
+    </li>
+    <li
+      className="sc-gzVnrw gZJkfa"
+    >
+      <p
+        className="sc-htoDjs byeBSL"
+      >
+        Plano Forma de pagamento
+      </p>
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 sc-bZQynM ikmKaa"
+        status="active"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        credit_card
+      </span>
+    </li>
+  </ul>
+</div>
+`;

@@ -39,7 +39,7 @@ LoaderExample.propTypes = { name: PropTypes.string };
 
 const loaderTypes = Object.keys(LoaderTypes);
 
-storiesOf('10. Others', module)
+storiesOf('12. Others', module)
   .add('Loader', () => (
     <Heading name="Loader" image={Atom}>
       <TabbedView>
