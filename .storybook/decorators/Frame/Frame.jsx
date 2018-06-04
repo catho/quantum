@@ -79,7 +79,7 @@ injectGlobal`
 
   .ui.selection.dropdown {
     min-width: 11em;
-    min-height: 1em;Z
+    min-height: 1em;
   }
 `;
 
