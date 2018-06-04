@@ -17,7 +17,6 @@ const PopoverContainer = styled.div`
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2),
               0 8px 14px 3px rgba(0, 0, 0, 0.12),
               0 8px 10px 1px rgba(0, 0, 0, 0.14);
-  cursor: default;
   position: absolute;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   z-index: 100;
