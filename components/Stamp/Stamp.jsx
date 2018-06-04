@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 
 const Wrapper = styled.div`
+  height: 81px;
   overflow: hidden;
   position: absolute;
   width: 114px;
-  height: 81px;
 
   &:before {
     background-color: ${Colors.SECONDARY['500']};
