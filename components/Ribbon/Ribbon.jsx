@@ -3,11 +3,29 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 
+const wrapperMeasures = ({ wrapperHeight, wrapperWidth }) => `
+  height: ${wrapperHeight}px;
+  width: ${wrapperWidth}px;
+`;
+
+const ribbonMeasures = ({
+  ribbonHeight,
+  ribbonWidth,
+  degrees,
+  top,
+  left,
+}) => `
+  height: ${ribbonHeight}px;
+  left: ${left}px;
+  top: ${top}px;
+  transform: rotate(${degrees}deg);
+  width: ${ribbonWidth}px;
+`;
+
 const Wrapper = styled.div`
-  height: 81px;
   overflow: hidden;
   position: absolute;
-  width: 114px;
+  ${wrapperMeasures}
 
   &:before {
     background-color: ${Colors.SECONDARY['500']};
@@ -15,22 +33,35 @@ const Wrapper = styled.div`
     content: '${({ text }) => text}';
     font-size: 8px;
     font-weight: bold;
-    height: 29px;
-    left: -31px;
     padding: 10px 26px 0;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 17px;
-    transform: rotate(-35deg);
-    width: 150px;
+    ${ribbonMeasures}
   }
 `;
 
-const Ribbon = ({ text }) => <Wrapper text={text} />;
+const Ribbon = props => <Wrapper {...props} />;
+
+Ribbon.defaultProps = {
+  wrapperHeight: 81,
+  wrapperWidth: 114,
+  ribbonHeight: 29,
+  ribbonWidth: 150,
+  degrees: -35,
+  top: 17,
+  left: -31,
+};
 
 Ribbon.propTypes = {
+  degrees: PropTypes.number,
+  left: PropTypes.number,
+  ribbonHeight: PropTypes.number,
+  ribbonWidth: PropTypes.number,
   text: PropTypes.string.isRequired,
+  top: PropTypes.number,
+  wrapperHeight: PropTypes.number,
+  wrapperWidth: PropTypes.number,
 };
 
 export default Ribbon;
