@@ -2,9 +2,11 @@
 
 exports[`Step Component Should match the snapshot 1`] = `
 <li
-  className="sc-EHOje gokMVr"
+  className="sc-EHOje hnJFwe"
 >
-  <p>
+  <p
+    className="sc-bZQynM yLsQe"
+  >
     Step 1
   </p>
   
@@ -13,9 +15,11 @@ exports[`Step Component Should match the snapshot 1`] = `
 
 exports[`Step Component Should match the snapshot with icon 1`] = `
 <li
-  className="sc-EHOje gokMVr"
+  className="sc-EHOje hnJFwe"
 >
-  <p>
+  <p
+    className="sc-bZQynM yLsQe"
+  >
     Step 1
   </p>
   <span
@@ -35,9 +39,11 @@ exports[`Step Component Should match the snapshot with icon 1`] = `
 
 exports[`Step Component Should match the snapshot with status active 1`] = `
 <li
-  className="sc-EHOje fRNQHB"
+  className="sc-EHOje iKfSfj"
 >
-  <p>
+  <p
+    className="sc-bZQynM yLsQe"
+  >
     Step 1
   </p>
   
@@ -46,9 +52,11 @@ exports[`Step Component Should match the snapshot with status active 1`] = `
 
 exports[`Step Component Should match the snapshot with status done 1`] = `
 <li
-  className="sc-EHOje fZnZpP"
+  className="sc-EHOje kgVnMr"
 >
-  <p>
+  <p
+    className="sc-bZQynM yLsQe"
+  >
     Step 1
   </p>
   

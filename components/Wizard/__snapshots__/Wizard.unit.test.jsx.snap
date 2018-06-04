@@ -8,9 +8,11 @@ exports[`Wizard Component Should match the snapshot 1`] = `
     className="sc-bwzfXH ceHnQp"
   >
     <li
-      className="sc-gzVnrw epWdzG"
+      className="sc-gzVnrw gkwnRV"
     >
-      <p>
+      <p
+        className="sc-htoDjs byeBSL"
+      >
         Criação de conta
       </p>
       <span
@@ -27,9 +29,11 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="sc-gzVnrw iMqGLJ"
+      className="sc-gzVnrw gZJkfa"
     >
-      <p>
+      <p
+        className="sc-htoDjs byeBSL"
+      >
         Plano Forma de pagamento
       </p>
       <span
