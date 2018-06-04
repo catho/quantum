@@ -1,4 +1,3 @@
-import 'semantic-ui-css/components/reset.css';
 import 'semantic-ui-css/components/form.css';
 import 'semantic-ui-css/components/checkbox.css';
 import 'semantic-ui-css/components/dropdown.css';
@@ -76,6 +75,11 @@ injectGlobal`
     tr:nth-child(even) {
       background-color: #f6f8fa;
     }
+  }
+
+  .ui.selection.dropdown {
+    min-width: 11em;
+    min-height: 1em;
   }
 `;
 
