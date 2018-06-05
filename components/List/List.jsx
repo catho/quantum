@@ -22,7 +22,7 @@ const inlineList = ({ inline }) => css`
 
 const dividedList = ({ divided, inline }) => divided && css`
   li {
-    border-${inline ? 'right' : 'bottom'}: 1px solid ${Colors.GREY['50']};
+    border-${inline ? 'border-right' : 'border-bottom'}: 1px solid ${Colors.GREY['50']};
 
     &:last-child {
       border: none;
@@ -85,13 +85,20 @@ class List extends React.Component {
   _listType = ordered => (ordered ? this.types.ol : this.types.ul);
 
   render() {
-    const { ordered, items, children } = this.props;
+    const {
+      ordered, items, children, inline, divided, bullet,
+    } = this.props;
 
     const listItems = children || items.map(Item.create);
 
     return React.createElement(
       this._listType(ordered),
-      { ...this.props },
+      {
+        inline,
+        divided,
+        bullet,
+        ...this.props,
+      },
       listItems,
     );
   }
