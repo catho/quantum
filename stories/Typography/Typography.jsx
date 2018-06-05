@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { linkTo } from '@storybook/addon-links';
+import LinkTo from '@storybook/addon-links/react';
 import Title from '../../.storybook/components/Title';
 import HowToImport from '../../.storybook/components/HowToImport';
 import Colors from '../../components/Colors';
-import Button from '../../components/Button';
 
 const Font = styled.div`
   font-family: Oxygen;
@@ -69,7 +68,7 @@ const Typography = () => (
 
     <HowToImport from="@cathodevel/style-guide/static/typography.css" />
 
-    <p>This font also provides all the available <Button onClick={linkTo('1. Foundation', 'Icons')}>Icons</Button></p>
+    <p>This font also provides all the available <LinkTo kind="1. Foundation" story="Icons">Icons</LinkTo></p>
 
     <Title>Headings</Title>
 

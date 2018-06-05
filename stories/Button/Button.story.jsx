@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { linkTo } from '@storybook/addon-links';
+import LinkTo from '@storybook/addon-links/react';
 import Button from '../../components/Button';
 import { Container, Row, Col } from '../../components/Grid';
 import { Tab, Example, AutoExample } from '../../.storybook/components';
@@ -8,7 +8,7 @@ import { Tab, Example, AutoExample } from '../../.storybook/components';
 const exampleTab = (
   <Tab title="Example">
     <Container fluid>
-      <p>The full catalogue of icons can be found <Button onClick={linkTo('1. Foundation', 'Icons')}>here</Button>.</p>
+      <p>The full catalogue of icons can be found <LinkTo kind="1. Foundation" story="Icons">here</LinkTo>.</p>
       <Row>
         <Col tablet={3}>
           <Example component={<Button icon="search">Search</Button>} />
