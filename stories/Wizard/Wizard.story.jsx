@@ -20,7 +20,7 @@ const StepExample = (
   </Wizard>
 );
 
-const stories = storiesOf('10. Wizard', module);
+const stories = storiesOf('11. Wizard', module);
 
 stories
   .add('Wizard', () => (

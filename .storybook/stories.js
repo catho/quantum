@@ -46,17 +46,19 @@ export default [
   // 9. Card
   'Card',
 
-  // 10. Wizard
-  'Wizard',
-
-  // 11. Slider
-  'Slider',
-
-  // 12. Other
-  'Loading',
-  'Loader',
+  // 10. List
   'List',
 
-  // 13. Popover
+  // 11. Wizard
+  'Wizard',
+
+  // 12. Slider
+  'Slider',
+
+  // 13. Other
+  'Loading',
+  'Loader',
+
+  // 14. Popover
   'Popover',
 ].map(s => `./${s}/${s}.story.jsx`);

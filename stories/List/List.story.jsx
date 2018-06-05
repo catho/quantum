@@ -38,7 +38,7 @@ ListExample.propTypes = {
   component: PropTypes.string.isRequired,
 };
 
-storiesOf('List', module).add('List', () => (
+storiesOf('10. List', module).add('List', () => (
   <Heading name="List">
     <TabbedView>
       <Tab title="Usage">
