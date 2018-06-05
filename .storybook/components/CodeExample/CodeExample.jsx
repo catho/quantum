@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import CodeToClipboard from '../CodeToClipboard';
 import Title from '../Title';
+import ComponentHighlight from '../ComponentHighlight';
 
 const ScrollWrapper = styled.div`
   position: relative;
@@ -117,6 +118,9 @@ const CodeExample = ({
           {withImport && msg(withImport)}
           { codeStr }
         </CodeBlock>
+
+        <ComponentHighlight code={codeStr} />
+
         <CodeToClipboard code={codeStr} backgroundColor="#f6f8fa" />
       </ScrollWrapper>
     </React.Fragment>
@@ -139,3 +143,4 @@ CodeExample.propTypes = {
 };
 
 export default CodeExample;
+
