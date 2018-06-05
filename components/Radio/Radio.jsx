@@ -36,8 +36,8 @@ const StyledInput = styled.input`
     border-radius: 50%;
     display: inline-block;
     height: ${commonAttr.height};
-    margin-left: -${commonAttr.borderWidth};
-    margin-top: -${commonAttr.borderWidth};
+    margin-left: -4px;
+    margin-top: -4px;
     width: ${commonAttr.width};
   }
 

@@ -17,7 +17,7 @@ addDecorator(Frame);
 const reqStories = require.context('../stories', true, /.story.jsx?$/);
 
 function loadStories() {
-  stories.forEach((filename) => reqStories(filename));
+  stories.forEach(filename => reqStories(filename));
 }
 
 configure(loadStories, module);

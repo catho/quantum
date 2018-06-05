@@ -76,6 +76,11 @@ injectGlobal`
       background-color: #f6f8fa;
     }
   }
+
+  .ui.selection.dropdown {
+    min-width: 11em;
+    min-height: 1em;
+  }
 `;
 
 const Frame = storyFn => (

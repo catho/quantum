@@ -42,9 +42,9 @@ const StyledLabel = styled(Label)`
       content: ' ';
       display: inline-block;
       height: 14px;
-      left: 9px;
+      left: 8px;
       position: absolute;
-      top: 1px;
+      top: -1px;
       transform: rotate(45deg);
       width: 7px;
     }

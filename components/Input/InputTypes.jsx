@@ -2,7 +2,7 @@ import React from 'react';
 import Input from './Input';
 import masks from '../shared/masks';
 
-const types = {
+const InputTypes = {
   CEP: props => (<Input mask={masks.cep} {...props} />),
   CNPJ: props => (<Input mask={masks.cnpj} {...props} />),
   CPF: props => (<Input mask={masks.cpf} {...props} />),
@@ -11,10 +11,10 @@ const types = {
   Password: props => (<Input type="password" {...props} />),
 };
 
-types.CEP.displayName = 'Input.CEP';
-types.CNPJ.displayName = 'Input.CNPJ';
-types.CPF.displayName = 'Input.CPF';
-types.Date.displayName = 'Input.Date';
-types.Phone.displayName = 'Input.Phone';
+InputTypes.CEP.displayName = 'Input.CEP';
+InputTypes.CNPJ.displayName = 'Input.CNPJ';
+InputTypes.CPF.displayName = 'Input.CPF';
+InputTypes.Date.displayName = 'Input.Date';
+InputTypes.Phone.displayName = 'Input.Phone';
 
-export default types;
+export default InputTypes;

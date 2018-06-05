@@ -28,11 +28,20 @@ const Tip = styled.div`
     position: absolute;
     ${props => placement.arrowPosition[props.place]};
   }
+
+
+  ${(props) => {
+    if (props.offset || props.offset === 0) {
+      return `left: ${props.offset}%;`;
+    }
+
+    return false;
+  }}
 `;
 
 const Wrapper = styled.div`
-  display: inline-block;
-  position: relative;
+  display: ${props => (props.slider ? 'block' : 'inline-block')};
+  position: ${props => (props.slider ? 'initial' : 'relative')};
   cursor: default;
   white-space: nowrap;
 `;
@@ -84,6 +93,8 @@ class Tooltip extends Component {
       skin,
       place,
       text,
+      slider,
+      offset,
     } = this.props;
 
     const {
@@ -94,8 +105,9 @@ class Tooltip extends Component {
 
     return (
       <Wrapper
-        onMouseEnter={this.handleEnter}
-        onMouseLeave={this.handleLeave}
+        onMouseEnter={!slider ? this.handleEnter : () => {}}
+        onMouseLeave={!slider ? this.handleLeave : () => {}}
+        slider={slider}
       >
         <Tip
           skin={skin}
@@ -103,7 +115,9 @@ class Tooltip extends Component {
           place={place}
           width={width}
           height={height}
-          show={show}
+          show={slider ? true : show}
+          slider={slider}
+          offset={offset}
         >
           {text}
         </Tip>
@@ -114,13 +128,14 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   skin: PropTypes.oneOf([
     'info',
     'danger',
     'success',
     'warning',
   ]),
+  slider: PropTypes.bool,
   place: PropTypes.oneOf([
     'top',
     'right',
@@ -128,13 +143,15 @@ Tooltip.propTypes = {
     'left',
   ]),
   text: PropTypes.string,
+  offset: PropTypes.number,
 };
 
 Tooltip.defaultProps = {
   skin: 'info',
-  children: 'Hover me',
   place: 'top',
   text: 'Tooltip',
+  slider: false,
+  offset: null,
 };
 
 export default Tooltip;
