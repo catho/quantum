@@ -116,12 +116,11 @@ const CodeExample = ({
       <ScrollWrapper>
         <CodeBlock>
           {withImport && msg(withImport)}
-          { codeStr }
+          <ComponentHighlight code={codeStr} />
         </CodeBlock>
 
-        <ComponentHighlight code={codeStr} />
-
         <CodeToClipboard code={codeStr} backgroundColor="#f6f8fa" />
+
       </ScrollWrapper>
     </React.Fragment>
   );
