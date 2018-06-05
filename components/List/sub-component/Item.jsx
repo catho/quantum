@@ -76,13 +76,13 @@ Item.defaultProps = {
 };
 
 Item.propTypes = {
-  content: PropTypes.oneOf(
+  content: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
-      subheader: PropTypes.string.isRequired,
       header: PropTypes.string,
+      subheader: PropTypes.string,
     }),
-  ).isRequired,
+  ]).isRequired,
   icon: PropTypes.string,
   bullet: PropTypes.string,
   children: PropTypes.oneOfType([

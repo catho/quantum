@@ -45,17 +45,22 @@ Content.defaultProps = {
   subheader: '',
   header: '',
   content: {},
+  children: null,
 };
 
 Content.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
-  content: PropTypes.oneOf([
+  content: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
       header: PropTypes.string,
       subheader: PropTypes.string,
-    })
+    }),
+  ]),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]),
 };
 

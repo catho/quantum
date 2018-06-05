@@ -14,12 +14,12 @@ const simpleList = {
 /* or */
 
 <List>
-  <List.Item content="Tomato sauce" />
-  <List.Item content="Mustard" />
-  <List.Item content="Barbecue sauce" />
-  <List.Item content="Red-wine vinegar" />
-  <List.Item content="Salsa" />
-  <List.Item content="Hot pepper sauce" />
+  <List.Item> Tomato sauce </List.Item>
+  <List.Item> Mustard </List.Item>
+  <List.Item> Barbecue sauce </List.Item>
+  <List.Item> Red-wine vinegar </List.Item>
+  <List.Item> Salsa </List.Item>
+  <List.Item> Hot pepper sauce </List.Item>
 </List>`,
   component: (
     <List items={[

@@ -107,7 +107,19 @@ List.defaultProps = {
 };
 
 List.propTypes = {
-  items: PropTypes.instanceOf(Array),
+  items: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.arrayOf(PropTypes.shape({
+      icon: PropTypes.string,
+      content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          header: PropTypes.string,
+          subheader: PropTypes.string,
+        }),
+      ]),
+    })),
+  ]),
   ordered: PropTypes.bool,
   inline: PropTypes.bool,
   divided: PropTypes.bool,

@@ -10,7 +10,10 @@ const Title = styled.span`
 const Header = ({ children }) => <Title>{children}</Title>;
 
 Header.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 export default Header;

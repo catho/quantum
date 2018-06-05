@@ -2,11 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import Heading from '../../.storybook/components/Heading';
+import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
 import { Col, Row } from '../../components/Grid';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import List from '../../components/List';
+import Item from '../../components/List/sub-component/Item';
+import Content from '../../components/List/sub-component/Content';
+import Header from '../../components/List/sub-component/Header';
+import SubHeader from '../../components/List/sub-component/SubHeader';
 
 import simpleList from './sub-components/simpleList';
 import simpleListItemAlternatives from './sub-components/simpleListItemAlternatives';
@@ -132,7 +137,11 @@ storiesOf('List', module).add('List', () => (
         </Row>
       </Tab>
       <Tab title="API">
-          API
+        <AutoPropsApi component={List} title="List" />
+        <AutoPropsApi component={Item} title="List.Item" />
+        <AutoPropsApi component={Content} title="List.Content" />
+        <AutoPropsApi component={Header} title="List.Header" />
+        <AutoPropsApi component={SubHeader} title="List.SubHeader" />
       </Tab>
     </TabbedView>
 

@@ -9,7 +9,10 @@ const Description = styled.span`
 const SubHeader = ({ children }) => <Description>{children}</Description>;
 
 SubHeader.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 export default SubHeader;
