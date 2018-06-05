@@ -1,6 +1,6 @@
 {
   "name": "@cathodevel/style-guide",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Catho react components style guide",
   "main": "./dist/index.js",
   "scripts": {

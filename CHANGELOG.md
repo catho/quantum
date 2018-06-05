@@ -1,3 +1,10 @@
+## v0.6.2 - May/2018
+### Added
+New Components:
+ - Popover
+ - Ribbon
+Remamed component Steps to Wizard
+
 ## v0.6.1 - May/2018
 ### Added
 New Components:
