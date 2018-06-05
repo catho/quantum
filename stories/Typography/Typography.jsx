@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { linkTo } from '@storybook/addon-links';
 import Title from '../../.storybook/components/Title';
 import HowToImport from '../../.storybook/components/HowToImport';
 import Colors from '../../components/Colors';
+import Button from '../../components/Button';
 
 const Font = styled.div`
   font-family: Oxygen;
@@ -66,6 +68,8 @@ const Typography = () => (
     <p>In order to use the default Catho Typography, just import the font css:</p>
 
     <HowToImport from="@cathodevel/style-guide/static/typography.css" />
+
+    <p>This font also provides all the available <Button onClick={linkTo('1. Foundation', 'Icons')}>Icons</Button></p>
 
     <Title>Headings</Title>
 
