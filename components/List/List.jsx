@@ -22,7 +22,7 @@ const inlineList = ({ inline }) => css`
 
 const dividedList = ({ divided, inline }) => divided && css`
   li {
-    border-${inline ? 'right' : 'bottom'}: 1px solid ${Colors.GREY['100']};
+    border-${inline ? 'right' : 'bottom'}: 1px solid ${Colors.GREY['50']};
 
     &:last-child {
       border: none;
@@ -34,6 +34,7 @@ const Unordered = styled.ul`
   display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
 
   ${inlineList} ${bullets} ${dividedList}
 `;
@@ -41,11 +42,15 @@ const Unordered = styled.ul`
 const Ordered = styled.ol`
   display: flex;
   margin: 0;
+  padding: 0;
+  list-style: none;
+
   counter-reset: count;
 
   li {
     margin-left: 24px;
     position: relative;
+
 
     &:before {
       content: counter(count) '.';
@@ -53,6 +58,8 @@ const Ordered = styled.ol`
       position: absolute;
 
       right: 100%;
+
+      margin-top: 8px;
       margin-right: 8px;
     }
   }

@@ -1,32 +1,140 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
+import Heading from '../../.storybook/components/Heading';
+import HowToImport from '../../.storybook/components/HowToImport';
+import CodeExample from '../../.storybook/components/CodeExample';
+import { Col, Row } from '../../components/Grid';
+import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import List from '../../components/List';
 
-const options = [
-  { icon: 'thumb_up', content: { header: 'Tomato sauce', subheader: 'Tomato sauce subheader' } },
-  { icon: 'info', content: { header: 'Mustard', subheader: 'Mustard subheader' } },
-  { icon: 'motorcycle', content: { header: 'Barbecue sauce', subheader: 'Barbecue sauce subheader' } },
-  { icon: 'directions_car', content: { header: 'Red-wine vinegar', subheader: 'Red-wine vinegar subheader' } },
-  { icon: 'airplanemode_active', content: { header: 'Salsa', subheader: 'Salsa subheader' } },
-  { icon: 'access_alarm', content: { header: 'Extra virgin olive oil, canola oil, nonfat cooking spray', subheader: 'Extra virgin olive oil, canola oil, nonfat cooking spray subheader' } },
-  { icon: 'autorenew', content: { header: 'Jarred capers and olives', subheader: 'Jarred capers and olives subheader' } },
-  { icon: 'directions_bike', content: { header: 'Hot pepper sauce', subheader: 'Hot pepper sauce subheader' } },
-];
+import simpleList from './sub-components/simpleList';
+import simpleListItemAlternatives from './sub-components/simpleListItemAlternatives';
+import simpleListContent from './sub-components/simpleListContent';
+
+const ListExample = ({ code, component }) => (
+  <React.Fragment>
+    <Col tablet={4}>
+      {
+        <CodeExample
+          code={code}
+          showTitle={false}
+        />
+      }
+    </Col>
+    <Col tablet={4}>
+      { component }
+    </Col>
+  </React.Fragment>
+);
+
+ListExample.propTypes = {
+  code: PropTypes.string.isRequired,
+  component: PropTypes.string.isRequired,
+};
 
 storiesOf('List', module).add('List', () => (
-  <React.Fragment>
-    <List>
-      { options.map(({ icon, content: { header, subheader } }) => (
+  <Heading name="List">
+    <TabbedView>
+      <Tab title="Usage">
+        <HowToImport importModules="List" />
+        <Row>
 
-        <List.Item icon={icon}>
-          <List.Content>
-            <List.Header>{header}</List.Header>
-            <List.SubHeader>{subheader}</List.SubHeader>
-          </List.Content>
-        </List.Item>
-    )) }
-    </List>
+          <Col desktop={12} tablet={12}>
+            <p>The List component was build to be as simple and flexible as you want.</p>
 
+            <p>It works with just a string array or with <code>List.Item</code> </p>
+          </Col>
 
-  </React.Fragment>
+          <ListExample {...simpleList} />
+        </Row>
+        <Row>
+          <Col desktop={12} tablet={12}>
+            <p>Also, you can add some properties to the list such as <code>ordered</code>, <code>divided</code>, <code>bullet</code>, and <code>inline</code></p>
+          </Col>
+
+          <Col tablet={4}>
+            {
+              <CodeExample
+                code={`
+<List inline> ... </List>
+<List divided inline> ... </List>
+<List ordered> ... </List>
+<List divided bullet="circle"> ... </List>
+                `}
+                showTitle={false}
+              />
+            }
+          </Col>
+          <Col tablet={3}>
+            <List
+              inline
+              items={[
+                'Tomato sauce',
+                'Mustard',
+                'Barbecue sauce',
+              ]}
+            />
+            <List
+              divided
+              inline
+              items={[
+                'Tomato sauce',
+                'Mustard',
+                'Barbecue sauce',
+              ]}
+            />
+          </Col>
+          <Col tablet={2}>
+            <List
+              ordered
+              items={[
+                'Tomato sauce',
+                'Mustard',
+                'Barbecue sauce',
+              ]}
+            />
+          </Col>
+          <Col tablet={2}>
+            <List
+              divided
+              bullet="circle"
+              items={[
+                'Tomato sauce',
+                'Mustard',
+                'Barbecue sauce',
+              ]}
+            />
+          </Col>
+
+        </Row>
+        <Row>
+          <Col desktop={12} tablet={12}>
+            <h3>Item</h3>
+
+            <p>
+              You have some alternatives to write an item.
+            </p>
+          </Col>
+
+          <ListExample {...simpleListItemAlternatives} />
+        </Row>
+        <Row>
+          <Col desktop={12} tablet={12}>
+            <h3>Content</h3>
+
+            <p>
+              Like <code>List.Item</code>, you have some alternatives to write an content too.
+            </p>
+          </Col>
+
+          <ListExample {...simpleListContent} />
+        </Row>
+      </Tab>
+      <Tab title="API">
+          API
+      </Tab>
+    </TabbedView>
+
+  </Heading>
 ));

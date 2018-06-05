@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -16,7 +16,10 @@ class Content extends React.Component {
       return <Header>{content}</Header>;
     }
 
-    const { header, subheader } = content;
+    const {
+      header = this.props.header,
+      subheader = this.props.subheader,
+    } = content;
 
     return (
       <React.Fragment>
@@ -40,11 +43,20 @@ class Content extends React.Component {
 
 Content.defaultProps = {
   subheader: '',
+  header: '',
+  content: {},
 };
 
 Content.propTypes = {
-  header: PropTypes.string.isRequired,
+  header: PropTypes.string,
   subheader: PropTypes.string,
+  content: PropTypes.oneOf([
+    PropTypes.string,
+    PropTypes.shape({
+      header: PropTypes.string,
+      subheader: PropTypes.string,
+    })
+  ]),
 };
 
 export default Content;

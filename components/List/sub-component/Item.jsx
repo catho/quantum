@@ -38,18 +38,16 @@ class Item extends React.Component {
       return <Item content={item} key={item} />;
     }
 
-    const { icon, content } = item;
-
-    return <Item icon={icon} content={content} key={content} />;
+    return <Item {...item} key={item.content} />;
   };
 
-  _renderContent = (content) => {
-    if (typeof content === 'string') {
-      return <Content header={content} />;
+  _renderIcon = (icon) => {
+    if (typeof icon === 'string') {
+      return <ItemIcon name={icon} />;
     }
 
-    return <Content {...content} />;
-  };
+    return <ItemIcon {...icon} />;
+  }
 
   render() {
     const {
@@ -63,8 +61,8 @@ class Item extends React.Component {
     return (
       <li {...rest}>
         <ListItem bullet={bullet} >
-          {icon && <ItemIcon name={icon} />}
-          {children || this._renderContent(content)}
+          {icon && this._renderIcon(icon)}
+          {children || <Content content={content} />}
         </ListItem>
       </li>
     );
