@@ -18,6 +18,7 @@ import Tooltip from './components/Tooltip';
 import Logo from './components/Logo';
 import Card from './components/Card';
 import Icon from './components/Icon';
+import List from './components/List';
 
 export {
   AutoComplete,
@@ -45,4 +46,5 @@ export {
   Tooltip,
   Validations,
   Icon,
+  List,
 };
