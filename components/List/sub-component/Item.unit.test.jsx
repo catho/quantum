@@ -1,9 +1,7 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Item from './Item';
 import Content from './Content';
-import Header from './Header';
-import SubHeader from './SubHeader';
 
 const content = 'content';
 const icon = 'icon';
@@ -28,7 +26,7 @@ describe('Item component', () => {
     expect(wrapper.find(Content)).toHaveLength(1);
   });
 
-  it('accept a children as a content', () => {
+  it('accept any children as a content', () => {
     const wrapper = shallow(<Item>{content}</Item>);
 
     expect(wrapper.render().text()).toBe(content);
