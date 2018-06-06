@@ -5,7 +5,8 @@
     "env"
   ],
   "plugins": [
-    "transform-class-properties"
+    "transform-class-properties",
+    "transform-modern-regexp"
   ],
   "env": {
     "storybook": {

@@ -1429,6 +1429,12 @@ babel-plugin-transform-minify-booleans@^6.9.0:
   version "6.9.0"
   resolved "http://armazem.devel:4873/babel-plugin-transform-minify-booleans/-/babel-plugin-transform-minify-booleans-6.9.0.tgz#e36ceaa49aadcae70ec98bd9dbccb660719a667a"
 
+babel-plugin-transform-modern-regexp@^0.0.5:
+  version "0.0.5"
+  resolved "http://armazem.devel:4873/babel-plugin-transform-modern-regexp/-/babel-plugin-transform-modern-regexp-0.0.5.tgz#53cfa38db0c5a81c4ffe3bacf24bd9c13e9d8995"
+  dependencies:
+    regexp-tree "^0.0.43"
+
 babel-plugin-transform-object-rest-spread@^6.22.0:
   version "6.26.0"
   resolved "http://armazem.devel:4873/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.26.0.tgz#0f36692d50fef6b7e2d4b3ac1478137a963b7b06"
@@ -7896,6 +7902,12 @@ regex-not@^1.0.0, regex-not@^1.0.2:
   dependencies:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
+
+regexp-tree@^0.0.43:
+  version "0.0.43"
+  resolved "http://armazem.devel:4873/regexp-tree/-/regexp-tree-0.0.43.tgz#da89f4eb5d3f0c33473f2fce38622ad88090af90"
+  dependencies:
+    nomnom "^1.8.1"
 
 regexpp@^1.0.1:
   version "1.0.1"
