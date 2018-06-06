@@ -130,7 +130,7 @@ List.propTypes = {
   ordered: PropTypes.bool,
   inline: PropTypes.bool,
   divided: PropTypes.bool,
-  bullet: PropTypes.oneOfType([PropTypes.bool, 'circle', 'square']),
+  bullet: PropTypes.oneOf([PropTypes.bool, 'circle', 'square']),
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
