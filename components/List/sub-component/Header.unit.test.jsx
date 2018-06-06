@@ -4,6 +4,6 @@ import Header from './Header';
 
 describe('Header component', () => {
   it('Should match the snapshot', () => {
-    expect(shallow(<Header />)).toMatchSnapshot();
+    expect(shallow(<Header>Header</Header>)).toMatchSnapshot();
   });
 });

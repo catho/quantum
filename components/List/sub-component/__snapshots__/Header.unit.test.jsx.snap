@@ -4,7 +4,9 @@ exports[`Header component Should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__unrendered__): <Header>
+    Header
+  </Header>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,10 +19,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": undefined,
+      "children": "Header",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": "Header",
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +31,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": undefined,
+        "children": "Header",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": "Header",
       "type": [Function],
     },
   ],
