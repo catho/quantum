@@ -9,20 +9,24 @@ import SubHeader from './sub-component/SubHeader';
 import Colors from '../Colors';
 
 const bullets = ({ bullet }) =>
-  (bullet ?
-    css`
-      list-style: ${bullet || 'initial'};
-    ` :
-    'padding: 0;');
+  bullet
+    ? css`
+        list-style: ${bullet || 'initial'};
+      `
+    : 'padding: 0;';
 
 const inlineList = ({ inline }) => css`
   flex-direction: ${inline ? 'row' : 'column'};
   flex-wrap: wrap;
 `;
 
-const dividedList = ({ divided, inline }) => divided && css`
+const dividedList = ({ divided, inline }) =>
+  divided &&
+  css`
   li {
-    border-${inline ? 'border-right' : 'border-bottom'}: 1px solid ${Colors.GREY['50']};
+    border-${inline ? 'border-right' : 'border-bottom'}: 1px solid ${
+    Colors.GREY['50']
+    };
 
     &:last-child {
       border: none;
@@ -39,6 +43,8 @@ const Unordered = styled.ul`
   ${inlineList} ${bullets} ${dividedList}
 `;
 
+Unordered.displayName = 'UnorderedList';
+
 const Ordered = styled.ol`
   display: flex;
   margin: 0;
@@ -50,7 +56,6 @@ const Ordered = styled.ol`
   li {
     margin-left: 24px;
     position: relative;
-
 
     &:before {
       content: counter(count) '.';
@@ -64,8 +69,10 @@ const Ordered = styled.ol`
     }
   }
 
-  ${inlineList} ${dividedList}
+  ${inlineList} ${dividedList};
 `;
+
+Ordered.displayName = 'OrderedList'
 
 class List extends React.Component {
   static Item = Item;
@@ -85,9 +92,7 @@ class List extends React.Component {
   _listType = ordered => (ordered ? this.types.ol : this.types.ul);
 
   render() {
-    const {
-      ordered, items, children, inline, divided, bullet,
-    } = this.props;
+    const { ordered, items, children, inline, divided, bullet } = this.props;
 
     const listItems = children || items.map(Item.create);
 
@@ -116,21 +121,26 @@ List.defaultProps = {
 List.propTypes = {
   items: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
-    PropTypes.arrayOf(PropTypes.shape({
-      icon: PropTypes.string,
-      content: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.shape({
-          header: PropTypes.string,
-          subheader: PropTypes.string,
-        }),
-      ]),
-    })),
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        icon: PropTypes.string,
+        content: PropTypes.oneOfType([
+          PropTypes.string,
+          PropTypes.shape({
+            header: PropTypes.string,
+            subheader: PropTypes.string,
+          }),
+        ]),
+      }),
+    ),
   ]),
   ordered: PropTypes.bool,
   inline: PropTypes.bool,
   divided: PropTypes.bool,
-  bullet: PropTypes.oneOf([PropTypes.bool, 'circle', 'square']),
+  bullet: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.oneOf(['circle', 'square']),
+  ]),
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,

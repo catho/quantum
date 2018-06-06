@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 import Icon from '../../Icon';
 import Content from './Content';
 
-const ItemIcon = styled(Icon)`
+const ItemIcon = styled(Icon) `
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@ const ListItem = styled.div`
 class Item extends React.Component {
   static create = (item) => {
     if (typeof item === 'string') {
-      return <Item content={item} key={item} />;
+      return <Item key={item}>{item}</Item>;
     }
 
     return <Item {...item} key={item.content} />;
@@ -73,6 +73,7 @@ Item.defaultProps = {
   icon: '',
   bullet: '',
   children: null,
+  content: null,
 };
 
 Item.propTypes = {
@@ -82,7 +83,7 @@ Item.propTypes = {
       header: PropTypes.string,
       subheader: PropTypes.string,
     }),
-  ]).isRequired,
+  ]),
   icon: PropTypes.string,
   bullet: PropTypes.string,
   children: PropTypes.oneOfType([
