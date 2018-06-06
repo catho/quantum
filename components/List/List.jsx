@@ -24,9 +24,7 @@ const dividedList = ({ divided, inline }) =>
   divided &&
   css`
   li {
-    border-${inline ? 'border-right' : 'border-bottom'}: 1px solid ${
-    Colors.GREY['50']
-    };
+    ${inline ? 'border-right' : 'border-bottom'}: 1px solid ${Colors.GREY['50']};
 
     &:last-child {
       border: none;

@@ -4,8 +4,9 @@ exports[`Item component Should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Item
+  Symbol(enzyme.__unrendered__): <List.Item
     bullet=""
+    content={null}
     icon=""
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -25,7 +26,7 @@ ShallowWrapper {
       >
         
         <Content
-          content={Object {}}
+          content={null}
           header=""
           subheader=""
         />
@@ -41,7 +42,7 @@ ShallowWrapper {
         "children": Array [
           "",
           <Content
-            content={Object {}}
+            content={null}
             header=""
             subheader=""
           />,
@@ -56,7 +57,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": null,
-            "content": Object {},
+            "content": null,
             "header": "",
             "subheader": "",
           },
@@ -80,7 +81,7 @@ ShallowWrapper {
         >
           
           <Content
-            content={Object {}}
+            content={null}
             header=""
             subheader=""
           />
@@ -96,7 +97,7 @@ ShallowWrapper {
           "children": Array [
             "",
             <Content
-              content={Object {}}
+              content={null}
               header=""
               subheader=""
             />,
@@ -111,7 +112,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": null,
-              "content": Object {},
+              "content": null,
               "header": "",
               "subheader": "",
             },

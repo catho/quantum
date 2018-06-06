@@ -12,6 +12,8 @@ const ItemIcon = styled(Icon) `
   margin-right: 8px;
 `;
 
+ItemIcon.displayName = 'ItemIcon';
+
 const bulletValue = ({ bullet }) =>
   bullet &&
   css`
@@ -32,10 +34,12 @@ const ListItem = styled.div`
   ${bulletValue};
 `;
 
+ListItem.displayName = 'ListItem';
+
 class Item extends React.Component {
   static create = (item) => {
     if (typeof item === 'string') {
-      return <Item key={item}>{item}</Item>;
+      return <Item content={item} key={item} />;
     }
 
     return <Item {...item} key={item.content} />;
@@ -91,5 +95,7 @@ Item.propTypes = {
     PropTypes.node,
   ]),
 };
+
+Item.displayName = 'List.Item';
 
 export default Item;
