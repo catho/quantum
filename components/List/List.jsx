@@ -9,11 +9,11 @@ import SubHeader from './sub-components/SubHeader';
 import Colors from '../Colors';
 
 const bullets = ({ bullet }) =>
-  bullet
+  (bullet
     ? css`
         list-style: ${bullet || 'initial'};
       `
-    : 'padding: 0;';
+    : 'padding: 0;');
 
 const inlineList = ({ inline }) => css`
   flex-direction: ${inline ? 'row' : 'column'};
@@ -70,7 +70,7 @@ const Ordered = styled.ol`
   ${inlineList} ${dividedList};
 `;
 
-Ordered.displayName = 'OrderedList'
+Ordered.displayName = 'OrderedList';
 
 class List extends React.Component {
   static Item = Item;
@@ -90,7 +90,9 @@ class List extends React.Component {
   _listType = ordered => (ordered ? this.types.ol : this.types.ul);
 
   render() {
-    const { ordered, items, children, inline, divided, bullet } = this.props;
+    const {
+      ordered, items, children, inline, divided, bullet,
+    } = this.props;
 
     const listItems = children || items.map(Item.create);
 
@@ -119,18 +121,16 @@ List.defaultProps = {
 List.propTypes = {
   items: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
-    PropTypes.arrayOf(
-      PropTypes.shape({
-        icon: PropTypes.string,
-        content: PropTypes.oneOfType([
-          PropTypes.string,
-          PropTypes.shape({
-            header: PropTypes.string,
-            subheader: PropTypes.string,
-          }),
-        ]),
-      }),
-    ),
+    PropTypes.arrayOf(PropTypes.shape({
+      icon: PropTypes.string,
+      content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          header: PropTypes.string,
+          subheader: PropTypes.string,
+        }),
+      ]),
+    })),
   ]),
   ordered: PropTypes.bool,
   inline: PropTypes.bool,

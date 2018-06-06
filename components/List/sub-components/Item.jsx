@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 import Icon from '../../Icon';
 import Content from './Content';
 
-const ItemIcon = styled(Icon) `
+const ItemIcon = styled(Icon)`
   display: flex;
   justify-content: center;
   align-items: center;

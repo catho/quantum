@@ -47,7 +47,8 @@ const Heading = ({
 
 Heading.defaultProps = {
   image: Atom,
-  name: null,
+  name: '',
+  title: '',
 };
 
 Heading.propTypes = {
