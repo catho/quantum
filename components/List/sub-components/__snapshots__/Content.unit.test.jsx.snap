@@ -4,7 +4,7 @@ exports[`<Content /> Should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Content
+  Symbol(enzyme.__unrendered__): <List.Content
     content={Object {}}
     header=""
     subheader=""
@@ -22,9 +22,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <UNDEFINED>
-        <Header>
+        <List.Header>
           
-        </Header>
+        </List.Header>
         
       </UNDEFINED>,
     },
@@ -35,9 +35,9 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <Header>
+          <List.Header>
             
-          </Header>,
+          </List.Header>,
           "",
         ],
       },
@@ -67,9 +67,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <UNDEFINED>
-          <Header>
+          <List.Header>
             
-          </Header>
+          </List.Header>
           
         </UNDEFINED>,
       },
@@ -80,9 +80,9 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <Header>
+            <List.Header>
               
-            </Header>,
+            </List.Header>,
             "",
           ],
         },

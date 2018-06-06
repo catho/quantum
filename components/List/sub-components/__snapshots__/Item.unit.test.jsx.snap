@@ -25,7 +25,7 @@ ShallowWrapper {
         bullet=""
       >
         
-        <Content
+        <List.Content
           content={null}
           header=""
           subheader=""
@@ -41,7 +41,7 @@ ShallowWrapper {
         "bullet": "",
         "children": Array [
           "",
-          <Content
+          <List.Content
             content={null}
             header=""
             subheader=""
@@ -80,7 +80,7 @@ ShallowWrapper {
           bullet=""
         >
           
-          <Content
+          <List.Content
             content={null}
             header=""
             subheader=""
@@ -96,7 +96,7 @@ ShallowWrapper {
           "bullet": "",
           "children": Array [
             "",
-            <Content
+            <List.Content
               content={null}
               header=""
               subheader=""
