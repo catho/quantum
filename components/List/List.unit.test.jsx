@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import List from './List';
-import Item from './sub-component/Item';
+import Item from './sub-components/Item';
 
 const items = [
   'Tomato sauce',

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import Item from './sub-component/Item';
-import Content from './sub-component/Content';
-import Header from './sub-component/Header';
-import SubHeader from './sub-component/SubHeader';
+import Item from './sub-components/Item';
+import Content from './sub-components/Content';
+import Header from './sub-components/Header';
+import SubHeader from './sub-components/SubHeader';
 
 import Colors from '../Colors';
 
