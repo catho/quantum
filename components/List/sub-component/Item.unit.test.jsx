@@ -8,7 +8,7 @@ const icon = 'icon';
 const header = 'header';
 const subheader = 'subheader';
 
-describe('Item component', () => {
+describe('<Item />', () => {
   it('Should match the snapshot', () => {
     expect(shallow(<Item />)).toMatchSnapshot();
   });

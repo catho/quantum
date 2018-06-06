@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Item component Should match the snapshot 1`] = `
+exports[`<Item /> Should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -21,7 +21,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <styled.div
+      "children": <ListItem
         bullet=""
       >
         
@@ -30,7 +30,7 @@ ShallowWrapper {
           header=""
           subheader=""
         />
-      </styled.div>,
+      </ListItem>,
     },
     "ref": null,
     "rendered": Object {
@@ -76,7 +76,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <styled.div
+        "children": <ListItem
           bullet=""
         >
           
@@ -85,7 +85,7 @@ ShallowWrapper {
             header=""
             subheader=""
           />
-        </styled.div>,
+        </ListItem>,
       },
       "ref": null,
       "rendered": Object {

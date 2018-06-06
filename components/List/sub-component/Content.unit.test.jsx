@@ -8,7 +8,7 @@ const content = 'content';
 const header = 'header';
 const subheader = 'subheader';
 
-describe('Content component', () => {
+describe('<Content />', () => {
   it('Should match the snapshot', () => {
     expect(shallow(<Content />)).toMatchSnapshot();
   });

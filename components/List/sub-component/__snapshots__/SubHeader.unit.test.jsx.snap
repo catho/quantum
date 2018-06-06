@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SubHeader component Should match the snapshot 1`] = `
+exports[`<SubHeader /> Should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SubHeader />,
+  Symbol(enzyme.__unrendered__): <SubHeader>
+    SubHeader
+  </SubHeader>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,10 +19,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": undefined,
+      "children": "SubHeader",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": "SubHeader",
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +31,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": undefined,
+        "children": "SubHeader",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": "SubHeader",
       "type": [Function],
     },
   ],

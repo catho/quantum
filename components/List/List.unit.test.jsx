@@ -25,7 +25,7 @@ describe('<List />', () => {
     expect(shallow(<List ordered items={items} />)).toMatchSnapshot();
   });
 
-  it('render six <Item /> components', () => {
+  it('render six Item components', () => {
     const wrapper = shallow(<List items={items} />);
 
     expect(wrapper.find(Item)).toHaveLength(6);

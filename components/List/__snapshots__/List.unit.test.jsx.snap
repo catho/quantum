@@ -34,48 +34,36 @@ ShallowWrapper {
     "props": Object {
       "bullet": false,
       "children": Array [
-        <Item
+        <List.Item
           bullet=""
-          content={null}
+          content="Tomato sauce"
           icon=""
-        >
-          Tomato sauce
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Mustard"
           icon=""
-        >
-          Mustard
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Barbecue sauce"
           icon=""
-        >
-          Barbecue sauce
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Red-wine vinegar"
           icon=""
-        >
-          Red-wine vinegar
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Salsa"
           icon=""
-        >
-          Salsa
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Hot pepper sauce"
           icon=""
-        >
-          Hot pepper sauce
-        </Item>,
+        />,
       ],
       "divided": false,
       "inline": false,
@@ -97,12 +85,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Tomato sauce",
-          "content": null,
+          "children": null,
+          "content": "Tomato sauce",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Tomato sauce",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -111,12 +99,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Mustard",
-          "content": null,
+          "children": null,
+          "content": "Mustard",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Mustard",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -125,12 +113,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Barbecue sauce",
-          "content": null,
+          "children": null,
+          "content": "Barbecue sauce",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Barbecue sauce",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -139,12 +127,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Red-wine vinegar",
-          "content": null,
+          "children": null,
+          "content": "Red-wine vinegar",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Red-wine vinegar",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -153,12 +141,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Salsa",
-          "content": null,
+          "children": null,
+          "content": "Salsa",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Salsa",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -167,12 +155,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Hot pepper sauce",
-          "content": null,
+          "children": null,
+          "content": "Hot pepper sauce",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Hot pepper sauce",
+        "rendered": null,
         "type": [Function],
       },
     ],
@@ -186,48 +174,36 @@ ShallowWrapper {
       "props": Object {
         "bullet": false,
         "children": Array [
-          <Item
+          <List.Item
             bullet=""
-            content={null}
+            content="Tomato sauce"
             icon=""
-          >
-            Tomato sauce
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Mustard"
             icon=""
-          >
-            Mustard
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Barbecue sauce"
             icon=""
-          >
-            Barbecue sauce
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Red-wine vinegar"
             icon=""
-          >
-            Red-wine vinegar
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Salsa"
             icon=""
-          >
-            Salsa
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Hot pepper sauce"
             icon=""
-          >
-            Hot pepper sauce
-          </Item>,
+          />,
         ],
         "divided": false,
         "inline": false,
@@ -249,12 +225,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Tomato sauce",
-            "content": null,
+            "children": null,
+            "content": "Tomato sauce",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Tomato sauce",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -263,12 +239,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Mustard",
-            "content": null,
+            "children": null,
+            "content": "Mustard",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Mustard",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -277,12 +253,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Barbecue sauce",
-            "content": null,
+            "children": null,
+            "content": "Barbecue sauce",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Barbecue sauce",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -291,12 +267,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Red-wine vinegar",
-            "content": null,
+            "children": null,
+            "content": "Red-wine vinegar",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Red-wine vinegar",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -305,12 +281,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Salsa",
-            "content": null,
+            "children": null,
+            "content": "Salsa",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Salsa",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -319,12 +295,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Hot pepper sauce",
-            "content": null,
+            "children": null,
+            "content": "Hot pepper sauce",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Hot pepper sauce",
+          "rendered": null,
           "type": [Function],
         },
       ],
@@ -437,48 +413,36 @@ ShallowWrapper {
     "props": Object {
       "bullet": false,
       "children": Array [
-        <Item
+        <List.Item
           bullet=""
-          content={null}
+          content="Tomato sauce"
           icon=""
-        >
-          Tomato sauce
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Mustard"
           icon=""
-        >
-          Mustard
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Barbecue sauce"
           icon=""
-        >
-          Barbecue sauce
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Red-wine vinegar"
           icon=""
-        >
-          Red-wine vinegar
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Salsa"
           icon=""
-        >
-          Salsa
-        </Item>,
-        <Item
+        />,
+        <List.Item
           bullet=""
-          content={null}
+          content="Hot pepper sauce"
           icon=""
-        >
-          Hot pepper sauce
-        </Item>,
+        />,
       ],
       "divided": true,
       "inline": false,
@@ -500,12 +464,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Tomato sauce",
-          "content": null,
+          "children": null,
+          "content": "Tomato sauce",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Tomato sauce",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -514,12 +478,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Mustard",
-          "content": null,
+          "children": null,
+          "content": "Mustard",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Mustard",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -528,12 +492,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Barbecue sauce",
-          "content": null,
+          "children": null,
+          "content": "Barbecue sauce",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Barbecue sauce",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -542,12 +506,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Red-wine vinegar",
-          "content": null,
+          "children": null,
+          "content": "Red-wine vinegar",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Red-wine vinegar",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -556,12 +520,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Salsa",
-          "content": null,
+          "children": null,
+          "content": "Salsa",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Salsa",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -570,12 +534,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bullet": "",
-          "children": "Hot pepper sauce",
-          "content": null,
+          "children": null,
+          "content": "Hot pepper sauce",
           "icon": "",
         },
         "ref": null,
-        "rendered": "Hot pepper sauce",
+        "rendered": null,
         "type": [Function],
       },
     ],
@@ -589,48 +553,36 @@ ShallowWrapper {
       "props": Object {
         "bullet": false,
         "children": Array [
-          <Item
+          <List.Item
             bullet=""
-            content={null}
+            content="Tomato sauce"
             icon=""
-          >
-            Tomato sauce
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Mustard"
             icon=""
-          >
-            Mustard
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Barbecue sauce"
             icon=""
-          >
-            Barbecue sauce
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Red-wine vinegar"
             icon=""
-          >
-            Red-wine vinegar
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Salsa"
             icon=""
-          >
-            Salsa
-          </Item>,
-          <Item
+          />,
+          <List.Item
             bullet=""
-            content={null}
+            content="Hot pepper sauce"
             icon=""
-          >
-            Hot pepper sauce
-          </Item>,
+          />,
         ],
         "divided": true,
         "inline": false,
@@ -652,12 +604,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Tomato sauce",
-            "content": null,
+            "children": null,
+            "content": "Tomato sauce",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Tomato sauce",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -666,12 +618,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Mustard",
-            "content": null,
+            "children": null,
+            "content": "Mustard",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Mustard",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -680,12 +632,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Barbecue sauce",
-            "content": null,
+            "children": null,
+            "content": "Barbecue sauce",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Barbecue sauce",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -694,12 +646,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Red-wine vinegar",
-            "content": null,
+            "children": null,
+            "content": "Red-wine vinegar",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Red-wine vinegar",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -708,12 +660,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Salsa",
-            "content": null,
+            "children": null,
+            "content": "Salsa",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Salsa",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -722,12 +674,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bullet": "",
-            "children": "Hot pepper sauce",
-            "content": null,
+            "children": null,
+            "content": "Hot pepper sauce",
             "icon": "",
           },
           "ref": null,
-          "rendered": "Hot pepper sauce",
+          "rendered": null,
           "type": [Function],
         },
       ],

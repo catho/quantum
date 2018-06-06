@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import SubHeader from './SubHeader';
 
-describe('SubHeader component', () => {
+describe('<SubHeader />', () => {
   it('Should match the snapshot', () => {
-    expect(shallow(<SubHeader />)).toMatchSnapshot();
+    expect(shallow(<SubHeader>SubHeader</SubHeader>)).toMatchSnapshot();
   });
 });
