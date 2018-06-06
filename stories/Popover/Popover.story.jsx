@@ -106,7 +106,7 @@ const exampleTab = (
   </Tab>
 );
 
-storiesOf('12. Popover', module).add('Popover', () => (
+storiesOf('14. Popover', module).add('Popover', () => (
   <AutoExample
     component={Popover}
     componentProps={{

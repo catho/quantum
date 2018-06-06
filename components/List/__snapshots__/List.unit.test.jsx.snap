@@ -1,0 +1,697 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> Should match the bullet list snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <List
+    bullet={false}
+    divided={false}
+    inline={false}
+    items={
+      Array [
+        "Tomato sauce",
+        "Mustard",
+        "Barbecue sauce",
+        "Red-wine vinegar",
+        "Salsa",
+        "Hot pepper sauce",
+      ]
+    }
+    ordered={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "bullet": false,
+      "children": Array [
+        <List.Item
+          bullet=""
+          content="Tomato sauce"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Mustard"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Barbecue sauce"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Red-wine vinegar"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Salsa"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Hot pepper sauce"
+          icon=""
+        />,
+      ],
+      "divided": false,
+      "inline": false,
+      "items": Array [
+        "Tomato sauce",
+        "Mustard",
+        "Barbecue sauce",
+        "Red-wine vinegar",
+        "Salsa",
+        "Hot pepper sauce",
+      ],
+      "ordered": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "Tomato sauce",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Tomato sauce",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Mustard",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Mustard",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Barbecue sauce",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Barbecue sauce",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Red-wine vinegar",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Red-wine vinegar",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Salsa",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Salsa",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Hot pepper sauce",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Hot pepper sauce",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "bullet": false,
+        "children": Array [
+          <List.Item
+            bullet=""
+            content="Tomato sauce"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Mustard"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Barbecue sauce"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Red-wine vinegar"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Salsa"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Hot pepper sauce"
+            icon=""
+          />,
+        ],
+        "divided": false,
+        "inline": false,
+        "items": Array [
+          "Tomato sauce",
+          "Mustard",
+          "Barbecue sauce",
+          "Red-wine vinegar",
+          "Salsa",
+          "Hot pepper sauce",
+        ],
+        "ordered": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Tomato sauce",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Tomato sauce",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Mustard",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Mustard",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Barbecue sauce",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Barbecue sauce",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Red-wine vinegar",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Red-wine vinegar",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Salsa",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Salsa",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Hot pepper sauce",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Hot pepper sauce",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<List /> Should match the default snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <List
+    bullet={false}
+    divided={false}
+    inline={false}
+    items={Array []}
+    ordered={false}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "bullet": false,
+      "children": Array [],
+      "divided": false,
+      "inline": false,
+      "items": Array [],
+      "ordered": false,
+    },
+    "ref": null,
+    "rendered": Array [],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "bullet": false,
+        "children": Array [],
+        "divided": false,
+        "inline": false,
+        "items": Array [],
+        "ordered": false,
+      },
+      "ref": null,
+      "rendered": Array [],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<List /> Should match the divided list snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <List
+    bullet={false}
+    divided={true}
+    inline={false}
+    items={
+      Array [
+        "Tomato sauce",
+        "Mustard",
+        "Barbecue sauce",
+        "Red-wine vinegar",
+        "Salsa",
+        "Hot pepper sauce",
+      ]
+    }
+    ordered={false}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "bullet": false,
+      "children": Array [
+        <List.Item
+          bullet=""
+          content="Tomato sauce"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Mustard"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Barbecue sauce"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Red-wine vinegar"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Salsa"
+          icon=""
+        />,
+        <List.Item
+          bullet=""
+          content="Hot pepper sauce"
+          icon=""
+        />,
+      ],
+      "divided": true,
+      "inline": false,
+      "items": Array [
+        "Tomato sauce",
+        "Mustard",
+        "Barbecue sauce",
+        "Red-wine vinegar",
+        "Salsa",
+        "Hot pepper sauce",
+      ],
+      "ordered": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "Tomato sauce",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Tomato sauce",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Mustard",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Mustard",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Barbecue sauce",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Barbecue sauce",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Red-wine vinegar",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Red-wine vinegar",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Salsa",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Salsa",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Hot pepper sauce",
+        "nodeType": "class",
+        "props": Object {
+          "bullet": "",
+          "children": null,
+          "content": "Hot pepper sauce",
+          "icon": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "bullet": false,
+        "children": Array [
+          <List.Item
+            bullet=""
+            content="Tomato sauce"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Mustard"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Barbecue sauce"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Red-wine vinegar"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Salsa"
+            icon=""
+          />,
+          <List.Item
+            bullet=""
+            content="Hot pepper sauce"
+            icon=""
+          />,
+        ],
+        "divided": true,
+        "inline": false,
+        "items": Array [
+          "Tomato sauce",
+          "Mustard",
+          "Barbecue sauce",
+          "Red-wine vinegar",
+          "Salsa",
+          "Hot pepper sauce",
+        ],
+        "ordered": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Tomato sauce",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Tomato sauce",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Mustard",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Mustard",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Barbecue sauce",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Barbecue sauce",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Red-wine vinegar",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Red-wine vinegar",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Salsa",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Salsa",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Hot pepper sauce",
+          "nodeType": "class",
+          "props": Object {
+            "bullet": "",
+            "children": null,
+            "content": "Hot pepper sauce",
+            "icon": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

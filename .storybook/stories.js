@@ -1,8 +1,8 @@
 /**
-  * Storybook list of stories
-  *
-  * order is reflected in storybook sidebar
-  */
+ * Storybook list of stories
+ *
+ * order is reflected in storybook sidebar
+ */
 
 export default [
   'Introduction',
@@ -46,16 +46,19 @@ export default [
   // 9. Card
   'Card',
 
-  // 10. Wizard
+  // 10. List
+  'List',
+
+  // 11. Wizard
   'Wizard',
 
-  // 11. Slider
+  // 12. Slider
   'Slider',
 
-  // 12. Other
+  // 13. Other
   'Loading',
   'Loader',
 
-  // 13. Popover
+  // 14. Popover
   'Popover',
 ].map(s => `./${s}/${s}.story.jsx`);

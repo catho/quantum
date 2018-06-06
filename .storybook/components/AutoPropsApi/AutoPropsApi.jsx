@@ -40,7 +40,7 @@ const renderPropType = (type = {}) => {
 
     union: value => wrap('oneOfType')(value.map((v, i, allValues) => (
       <span key={v.name}>
-        {renderPropType(v)}
+        <code>{renderPropType(v)}</code>
         {allValues[i + 1] && ', '}
       </span>
     ))),
