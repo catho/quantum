@@ -113,7 +113,7 @@ storiesOf('12. Popover', module).add('Popover', () => (
       content: 'Content',
       title: 'Title',
       closeTitle: 'Close',
-      children: <Button>Teste</Button>,
+      children: 'Click me',
     }}
     additionalTabs={exampleTab}
   />
