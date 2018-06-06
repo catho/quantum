@@ -8,10 +8,10 @@ import CodeExample from '../../.storybook/components/CodeExample';
 import { Col, Row } from '../../components/Grid';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import List from '../../components/List';
-import Item from '../../components/List/sub-component/Item';
-import Content from '../../components/List/sub-component/Content';
-import Header from '../../components/List/sub-component/Header';
-import SubHeader from '../../components/List/sub-component/SubHeader';
+import Item from '../../components/List/sub-components/Item';
+import Content from '../../components/List/sub-components/Content';
+import Header from '../../components/List/sub-components/Header';
+import SubHeader from '../../components/List/sub-components/SubHeader';
 
 import simpleList from './sub-components/simpleList';
 import simpleListItemAlternatives from './sub-components/simpleListItemAlternatives';
@@ -22,6 +22,7 @@ const ListExample = ({ code, component }) => (
     <Col tablet={4}>
       {
         <CodeExample
+          component={{}}
           code={code}
           showTitle={false}
         />
@@ -35,7 +36,7 @@ const ListExample = ({ code, component }) => (
 
 ListExample.propTypes = {
   code: PropTypes.string.isRequired,
-  component: PropTypes.string.isRequired,
+  component: PropTypes.node.isRequired,
 };
 
 storiesOf('10. List', module).add('List', () => (
@@ -66,6 +67,7 @@ storiesOf('10. List', module).add('List', () => (
           <Col tablet={4}>
             {
               <CodeExample
+                component={{}}
                 code={`
 <List inline> ... </List>
 <List divided inline> ... </List>

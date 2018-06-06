@@ -88,7 +88,10 @@ Item.propTypes = {
       subheader: PropTypes.string,
     }),
   ]),
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Object),
+  ]),
   bullet: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),

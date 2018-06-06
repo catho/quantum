@@ -6,6 +6,8 @@ const Description = styled.span`
   font-size: 12px;
 `;
 
+Description.displayName = 'SubHeader';
+
 const SubHeader = ({ children }) => <Description>{children}</Description>;
 
 SubHeader.propTypes = {
@@ -14,5 +16,7 @@ SubHeader.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+SubHeader.displayName = 'List.SubHeader';
 
 export default SubHeader;

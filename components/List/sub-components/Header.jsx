@@ -7,6 +7,8 @@ const Title = styled.span`
   margin-bottom: 4px;
 `;
 
+Title.displayName = 'Header';
+
 const Header = ({ children }) => <Title>{children}</Title>;
 
 Header.propTypes = {
@@ -15,5 +17,7 @@ Header.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+Header.displayName = 'List.Header';
 
 export default Header;

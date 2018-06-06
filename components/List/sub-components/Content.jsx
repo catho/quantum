@@ -10,6 +10,8 @@ const ContentBox = styled.div`
   flex-direction: column;
 `;
 
+ContentBox.displayName = 'Content';
+
 class Content extends React.Component {
   _renderContent = (content) => {
     if (typeof content === 'string') {
@@ -63,5 +65,7 @@ Content.propTypes = {
     PropTypes.node,
   ]),
 };
+
+Content.displayName = 'List.Content';
 
 export default Content;
