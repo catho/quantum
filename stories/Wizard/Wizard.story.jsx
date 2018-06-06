@@ -1,13 +1,12 @@
 import React from 'react';
-import { linkTo } from '@storybook/addon-links';
 import { storiesOf } from '@storybook/react';
+import LinkTo from '@storybook/addon-links/react';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import HowToImport from '../../.storybook/components/HowToImport';
 import Example from '../../.storybook/components/Example';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
-import Button from '../../components/Button';
 import CodeExample from '../../.storybook/components/CodeExample';
 import Atom from '../static/atom.svg';
 import { Wizard, Step } from '../../components/Wizard';
@@ -41,7 +40,8 @@ stories
             You can pass an icon to be displayed with the step component,
             see the example below:
           </p>
-          <small>You can see the list of enable icons <Button onClick={linkTo('1. Foundation', 'Icons')}>here</Button></small>
+          <p>If you use icon you need to import the <LinkTo kind="1. Foundation" story="Typography">Typography</LinkTo> css file.</p>
+          <small>You can see the list of enable icons <LinkTo kind="1. Foundation" story="Icons">here</LinkTo></small>
 
           <h3>A simple 3 steps component</h3>
           <Row>

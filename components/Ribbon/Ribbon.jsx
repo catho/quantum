@@ -29,6 +29,7 @@ const Wrapper = styled.div`
 
   &:before {
     background-color: ${Colors.SECONDARY['500']};
+    box-sizing: border-box;
     color: ${Colors.WHITE};
     content: '${({ text }) => text}';
     font-size: 8px;

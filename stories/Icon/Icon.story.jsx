@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import LinkTo from '@storybook/addon-links/react';
 import styled from 'styled-components';
 import Icon from '../../components/Icon';
 import ColorPalette from '../../components/Colors';
@@ -49,6 +50,7 @@ storiesOf('1. Foundation', module)
         <Tab title="Usage">
           <HowToImport importModules="Icon" />
           <Title>Usage</Title>
+          <p>You need to import the <LinkTo kind="1. Foundation" story="Typography">typography</LinkTo> to include icon fonts.</p>
           <small>
             {
               exampleIcons.map(icon => (
