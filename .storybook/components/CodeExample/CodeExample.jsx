@@ -3,21 +3,25 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import CodeToClipboard from '../CodeToClipboard';
 import Title from '../Title';
+import ComponentHighlight from '../ComponentHighlight';
 
 const ScrollWrapper = styled.div`
   position: relative;
+  padding-top: 30px;
+  background-color: #f6f8fa;
+  box-shadow: 5px 7px 4px -2px rgba(0, 0, 0, 0.3);
 `;
 
 const CodeBlock = styled.pre`
   position: relative;
-  background-color: #f6f8fa;
   padding: 15px 50px 15px 15px;
   font-size: 14px;
 
   overflow-x: auto;
 
   &::-webkit-scrollbar {
-    width: 6px;
+    width: 10px;
+    height: 10px;
   }
 
   &::-webkit-scrollbar-track {
@@ -28,7 +32,23 @@ const CodeBlock = styled.pre`
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
   }
+`;
 
+const WindowControlsWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 15px;
+`;
+
+const WindowControl = styled.div`
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  ${({ color }) => color && `background-color: ${color};`}
 `;
 
 const formatJSON = (key, value) => {
@@ -113,11 +133,18 @@ const CodeExample = ({
     <React.Fragment>
       {showTitle && <Title>Code</Title>}
       <ScrollWrapper>
+        <WindowControlsWrapper>
+          <WindowControl color="#FF5F56" />
+          <WindowControl color="#FFBD2E" />
+          <WindowControl color="#27C93F" />
+        </WindowControlsWrapper>
         <CodeBlock>
           {withImport && msg(withImport)}
-          { codeStr }
+          <ComponentHighlight code={codeStr} />
         </CodeBlock>
+
         <CodeToClipboard code={codeStr} backgroundColor="#f6f8fa" />
+
       </ScrollWrapper>
     </React.Fragment>
   );
@@ -139,3 +166,4 @@ CodeExample.propTypes = {
 };
 
 export default CodeExample;
+
