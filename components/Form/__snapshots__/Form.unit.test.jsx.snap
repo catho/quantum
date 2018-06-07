@@ -2,9 +2,7 @@
 
 exports[`Form component  should match the snapshot 1`] = `
 <form
-  noValidate={true}
   onSubmit={[Function]}
-  onValidSubmit={[MockFunction]}
 >
   <div
     className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
