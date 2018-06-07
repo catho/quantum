@@ -155,7 +155,7 @@ CodeExample.defaultProps = {
   showTitle: true,
   withImport: '',
   state: null,
-  components: {},
+  component: {},
 };
 
 CodeExample.propTypes = {
