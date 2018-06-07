@@ -2,16 +2,16 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="sc-htpNat hxsEuH"
+  className="FieldGroup-iFQzIc dToppz"
 >
   <label
     checked={false}
-    className="sc-ifAKCX cSrAET sc-bwzfXH eQhPVJ"
+    className="Toggle__StyledLabel-dceZWz bCijpS Label-bxMjsr iZhmvb"
     disabled={false}
   >
     <input
       checked={false}
-      className="sc-bxivhb cRvGhf"
+      className="Toggle__Checkbox-fOgXpZ cydAtg"
       disabled={false}
       id=""
       onBlur={[Function]}

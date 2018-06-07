@@ -2,7 +2,7 @@
 
 exports[`Card component Should match the snapshot 1`] = `
 <article
-  className="sc-iwsKbI cSCLuq"
+  className="Card__CardWrapper-ddyYyI ffPQoR"
   elevation={1}
 />
 `;

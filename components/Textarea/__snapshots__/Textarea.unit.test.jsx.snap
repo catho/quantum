@@ -2,11 +2,11 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <div
-  className="sc-htpNat hxsEuH"
+  className="FieldGroup-iFQzIc dToppz"
 >
   
   <textarea
-    className="sc-bxivhb edNAKz"
+    className="Textarea__Textfield-iRGmWe fobMgc"
     id=""
     maxLength={300}
     name=""
@@ -17,11 +17,11 @@ exports[`Radio component Should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="sc-ifAKCX WOpjk"
+    className="Textarea__Infos-iMOYiF kMVOQt"
   >
     
     <span
-      className="sc-EHOje iiwpkQ"
+      className="Textarea__Countdown-hnGDxP iENyId"
     >
       300
     </span>
@@ -31,10 +31,10 @@ exports[`Radio component Should match the snapshot 1`] = `
 
 exports[`Radio component with a label should match the snapshot 1`] = `
 <div
-  className="sc-htpNat hxsEuH"
+  className="FieldGroup-iFQzIc dToppz"
 >
   <label
-    className="sc-bwzfXH eQhPVJ"
+    className="Label-bxMjsr iZhmvb"
     htmlFor="textarea"
   >
      
@@ -42,7 +42,7 @@ exports[`Radio component with a label should match the snapshot 1`] = `
      
   </label>
   <textarea
-    className="sc-bxivhb edNAKz"
+    className="Textarea__Textfield-iRGmWe fobMgc"
     id="textarea"
     maxLength={300}
     name=""
@@ -53,11 +53,11 @@ exports[`Radio component with a label should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="sc-ifAKCX WOpjk"
+    className="Textarea__Infos-iMOYiF kMVOQt"
   >
     
     <span
-      className="sc-EHOje iiwpkQ"
+      className="Textarea__Countdown-hnGDxP iENyId"
     >
       300
     </span>
@@ -67,11 +67,11 @@ exports[`Radio component with a label should match the snapshot 1`] = `
 
 exports[`Radio component with an error message should match the snapshot 1`] = `
 <div
-  className="sc-htpNat hxsEuH"
+  className="FieldGroup-iFQzIc dToppz"
 >
   
   <textarea
-    className="sc-bxivhb dFJAkL"
+    className="Textarea__Textfield-iRGmWe lhxROC"
     id=""
     maxLength={300}
     name=""
@@ -82,15 +82,15 @@ exports[`Radio component with an error message should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="sc-ifAKCX WOpjk"
+    className="Textarea__Infos-iMOYiF kMVOQt"
   >
     <div
-      className="sc-bdVaJa kKTvpA"
+      className="ErrorMessage-eJhZpN bzMSZo"
     >
       Error message
     </div>
     <span
-      className="sc-EHOje iiwpkQ"
+      className="Textarea__Countdown-hnGDxP iENyId"
     >
       300
     </span>
