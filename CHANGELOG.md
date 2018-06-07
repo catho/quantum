@@ -1,3 +1,9 @@
+## v0.7.0 - May/2018
+### Added
+New Components:
+ - List
+ - Highlight (Storybook UI)
+
 ## v0.6.2 - May/2018
 ### Added
 New Components:
