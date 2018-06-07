@@ -30,8 +30,8 @@ const Terminal = styled.div`
 `;
 
 const gifUrls = {
-  app: 'http://gitlab.devel/frontend-platform/create-catho-app/raw/cf0a27af453efcfa084d21936d6cee461e964c20/examples/application-react.gif',
-  component: 'http://gitlab.devel/frontend-platform/create-catho-app/raw/cf0a27af453efcfa084d21936d6cee461e964c20/examples/component-stateful.gif',
+  app: 'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/application-react.gif',
+  component: 'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/component-stateful.gif',
 };
 
 const Introduction = () => (

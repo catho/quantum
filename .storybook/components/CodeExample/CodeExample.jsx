@@ -9,7 +9,7 @@ const ScrollWrapper = styled.div`
   position: relative;
   padding-top: 30px;
   background-color: #f6f8fa;
-  box-shadow: 5px 7px 4px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.3);
 `;
 
 const CodeBlock = styled.pre`
@@ -155,10 +155,11 @@ CodeExample.defaultProps = {
   showTitle: true,
   withImport: '',
   state: null,
+  components: {},
 };
 
 CodeExample.propTypes = {
-  component: PropTypes.instanceOf(Object).isRequired,
+  component: PropTypes.instanceOf(Object),
   state: PropTypes.instanceOf(Object),
   code: PropTypes.string,
   showTitle: PropTypes.bool,

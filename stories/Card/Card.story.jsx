@@ -92,6 +92,7 @@ storiesOf('9. Card', module)
               <Table>
                 <thead>
                   <tr>
+                    <th>#</th>
                     <th>Component</th>
                     <th>Code</th>
                     <th>Description</th>
@@ -100,6 +101,7 @@ storiesOf('9. Card', module)
 
                 <tbody>
                   <tr>
+                    <td>1</td>
                     <td>Container</td>
                     <td><code>{'<Card.Container />'}</code></td>
                     <td>
@@ -110,12 +112,14 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>2</td>
                     <td>Thumbnail [optional]</td>
                     <td><code>{'<Card.Thumbnail />'}</code></td>
                     <td>Cards can include thumbnails to display an avatar, logo, or icon.</td>
                   </tr>
 
                   <tr>
+                    <td>3, 4</td>
                     <td>Header text [optional]</td>
                     <td><code>{'<Card.HeaderText />'}</code></td>
                     <td>
@@ -124,6 +128,7 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>5</td>
                     <td>Media [optional]</td>
                     <td><code>{'<Card.Media />'}</code></td>
                     <td>
@@ -133,6 +138,7 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>6</td>
                     <td>Supporting text [optional]</td>
                     <td><code>{'<Card.SupportText />'}</code></td>
                     <td>
@@ -142,12 +148,14 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>7</td>
                     <td>Button [optional]</td>
                     <td><code>{'<Card.Button />'}</code></td>
                     <td>Cards can include buttons for actions.</td>
                   </tr>
 
                   <tr>
+                    <td>8</td>
                     <td>Icons [optional]</td>
                     <td><code>{'<Card.Icon />'}</code></td>
                     <td>Cards can include icons for actions.</td>

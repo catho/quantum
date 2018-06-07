@@ -52,60 +52,57 @@ const examples = {
 };
 
 const TextMaskCode = `<TextMask text="06460090" mask={[[/\\d/, /\\d/, /\\d/, /\\d/, /\\d/, '-', /\\d/, /\\d/, /\\d/]]} />
-
 <TextMask.CEP>06460090</TextMask.CEP>
-
 <TextMask.CEP text="06460090" />`;
 
 storiesOf('7. Mask', module)
   .add('Text', () => (
     <React.Fragment>
-      <Heading image={Atom} name="TextMask" />
-      <TabbedView>
-        <Tab title="Usage">
-          <HowToImport importModules="TextMask" />
+      <Heading image={Atom} name="TextMask">
+        <TabbedView>
+          <Tab title="Usage">
+            <HowToImport importModules="TextMask" />
 
-          <p>
-            <br />
-            This is a component to render properly the given text:
+            <p>
+              <br />
+              This is a component to render properly the given text:
+            </p>
 
             <CodeExample showTitle={false} code={TextMaskCode} />
+            <br />
 
-            <br />
-            <br />
-            All examples above will renders this output: <TextMask.CEP>06460090</TextMask.CEP>
+            <p>
+              All examples above will renders this output: <TextMask.CEP>06460090</TextMask.CEP>
+            </p>
 
-            <br />
-            <br />
-          </p>
-          <p>
-            Like Input, you can provide your own mask using <code>mask</code> property
-            or use one of the availables:
+            <p>
+              Like Input, you can provide your own mask using <code>mask</code> property
+              or use one of the availables:
+            </p>
+
             <ul>
               { Object.keys(TextMaskTypes).map(type => <li key={type}>{type}: <code>{`<TextMast.${type} />`}</code> </li>) }
             </ul>
-
-          </p>
-          <br />
-        </Tab>
-        <Tab title="API">
-          <AutoPropsApi component={TextMask} />
-        </Tab>
-        <Tab title="Examples">
-          { Object
-              .keys(examples)
-              .map((example) => {
-                const { code, component } = examples[example];
-                return (
-                  <Example
-                    title={example}
-                    key={example}
-                    code={code}
-                    component={component}
-                  />
-                );
-              }) }
-        </Tab>
-      </TabbedView>
+          </Tab>
+          <Tab title="API">
+            <AutoPropsApi component={TextMask} />
+          </Tab>
+          <Tab title="Examples">
+            { Object
+                .keys(examples)
+                .map((example) => {
+                  const { code, component } = examples[example];
+                  return (
+                    <Example
+                      title={example}
+                      key={example}
+                      code={code}
+                      component={component}
+                    />
+                  );
+                }) }
+          </Tab>
+        </TabbedView>
+      </Heading>
     </React.Fragment>
   ));

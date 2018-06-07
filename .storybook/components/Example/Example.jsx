@@ -60,13 +60,16 @@ class Example extends React.Component {
 
 Example.defaultProps = {
   code: '',
+  title: '',
+  importModules: '',
+  component: {},
 };
 
 Example.propTypes = {
   code: PropTypes.string,
-  component: PropTypes.instanceOf(Object).isRequired,
-  title: PropTypes.string.isRequired,
-  importModules: PropTypes.string.isRequired,
+  component: PropTypes.instanceOf(Object),
+  title: PropTypes.string,
+  importModules: PropTypes.string,
 };
 
 export default Example;

@@ -16,7 +16,7 @@ const elevation = ({ elevation: level, hoverElevation: hoverLevel }) => {
   `;
 };
 
-const CardWrapper = styled.div`
+const CardWrapper = styled.article`
   background-color: #fff;
   border-radius: 2px;
   display: inline-block;
