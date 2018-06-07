@@ -9,7 +9,7 @@ const ScrollWrapper = styled.div`
   position: relative;
   padding-top: 30px;
   background-color: #f6f8fa;
-  box-shadow: 5px 7px 4px -2px rgba(0,0,0, 0.3);
+  box-shadow: 5px 7px 4px -2px rgba(0, 0, 0, 0.3);
 `;
 
 const CodeBlock = styled.pre`
