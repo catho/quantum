@@ -126,8 +126,10 @@ class Form extends React.Component {
   }
 
   render() {
+    const { onValidSubmit, ...rest } = this.props;
+
     return (
-      <form {...this.props} onSubmit={this.handleSubmit} noValidate>
+      <form {...rest} onSubmit={this.handleSubmit}>
         {
           this._createClones(this.props.children)
         }
