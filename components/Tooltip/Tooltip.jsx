@@ -128,30 +128,30 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
+  text: PropTypes.string,
   skin: PropTypes.oneOf([
     'info',
     'danger',
     'success',
     'warning',
   ]),
-  slider: PropTypes.bool,
   place: PropTypes.oneOf([
     'top',
     'right',
     'bottom',
     'left',
   ]),
-  text: PropTypes.string,
   offset: PropTypes.string,
+  slider: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 
 Tooltip.defaultProps = {
+  text: 'Tooltip',
   skin: 'info',
   place: 'top',
-  text: 'Tooltip',
-  slider: false,
   offset: '',
+  slider: false,
 };
 
 export default Tooltip;

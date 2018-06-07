@@ -184,9 +184,10 @@ class Popover extends Component {
 }
 
 Popover.propTypes = {
-  children: PropTypes.node,
+  title: PropTypes.string,
   closeTitle: PropTypes.string,
-  content: PropTypes.node,
+  ribbon: PropTypes.string,
+  skin: PropTypes.oneOf(['default', 'p2p']),
   place: PropTypes.oneOf([
     'top',
     'top-right',
@@ -195,20 +196,19 @@ Popover.propTypes = {
     'left',
   ]),
   show: PropTypes.bool,
-  skin: PropTypes.oneOf(['default', 'p2p']),
-  ribbon: PropTypes.string,
-  title: PropTypes.string,
+  content: PropTypes.node,
+  children: PropTypes.node,
 };
 
 Popover.defaultProps = {
-  children: '',
+  title: '',
   closeTitle: '',
-  content: '',
+  ribbon: '',
+  skin: 'default',
   place: 'top',
   show: false,
-  skin: 'default',
-  ribbon: '',
-  title: '',
+  content: '',
+  children: '',
 };
 
 export default Popover;

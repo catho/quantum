@@ -17,7 +17,7 @@ const NotificationIcon = styled.div`
 
 const NotificationMessage = styled.div`
   strong {
-    display: ${props => (props.inline ? 'block' : 'inline-block')};
+    display: ${props => (props.inline ? 'inline-block' : 'block')};
     margin-right: 5px;
   }
   margin-right: 15px;
@@ -60,14 +60,14 @@ class Notification extends React.Component {
   }
 
   render() {
-    const { message: { title, text, type } } = this.props;
+    const { message: { title, text, type }, inline } = this.props;
 
     return this.state.show ? (
       <ThemeProvider theme={GlobalTheme}>
         <NotificationWrapper type={type}>
           <NotificationIcon />
 
-          <NotificationMessage>
+          <NotificationMessage inline={inline}>
             <strong>
               {title}
             </strong>
@@ -83,20 +83,16 @@ class Notification extends React.Component {
 }
 
 Notification.defaultProps = {
-  show: true,
-  duration: 0,
   message: {
     title: 'Sample', text: 'This is a dummy', type: 'info',
   },
+  duration: 0,
+  show: true,
   inline: true,
   onClose: () => {},
 };
 
 Notification.propTypes = {
-  /** it says to component if it should appear or not */
-  show: PropTypes.bool,
-  /** time in seconds that notification is visible */
-  duration: PropTypes.number,
   /** object with message details */
   message: PropTypes.shape({
     /** message title */
@@ -112,8 +108,12 @@ Notification.propTypes = {
       'info',
     ]),
   }),
+  /** time in seconds that notification is visible */
+  duration: PropTypes.number,
+  /** it says to component if it should appear or not */
+  show: PropTypes.bool,
   /** it says if the title should stay in the same line of the message itself */
-  inline: PropTypes.bool, // eslint-disable-line react/no-unused-prop-types
+  inline: PropTypes.bool,
   /** callback function */
   onClose: PropTypes.func,
 };

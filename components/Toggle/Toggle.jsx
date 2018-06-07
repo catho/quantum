@@ -109,23 +109,23 @@ class Toggle extends React.Component {
 }
 
 Toggle.defaultProps = {
+  label: '',
   id: '',
   checked: false,
   disabled: false,
-  label: '',
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
 };
 
 Toggle.propTypes = {
+  label: PropTypes.string,
   id: PropTypes.string,
   checked: PropTypes.bool,
-  label: PropTypes.string,
+  disabled: PropTypes.bool,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  disabled: PropTypes.bool,
 };
 
 export default Toggle;

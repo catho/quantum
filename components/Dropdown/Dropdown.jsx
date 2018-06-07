@@ -102,29 +102,29 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.defaultProps = {
-  name: 'Dropdown',
-  id: 'dropdown',
+  value: '',
   placeholder: 'Select...',
   label: '',
   error: '',
+  name: 'Dropdown',
+  id: 'dropdown',
   items: [],
-  value: '',
   onChange: () => {},
   onBlur: () => {},
   onFocus: () => {},
 };
 
 Dropdown.propTypes = {
-  name: PropTypes.string,
-  label: PropTypes.string,
+  value: PropTypes.string,
   placeholder: PropTypes.string,
-  id: PropTypes.string,
+  label: PropTypes.string,
   error: PropTypes.string,
+  name: PropTypes.string,
+  id: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.shape({
     key: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     value: PropTypes.node,
   })),
-  value: PropTypes.string,
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
