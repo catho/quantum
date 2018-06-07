@@ -8,7 +8,7 @@ import HowToImport from '../../.storybook/components/HowToImport';
 
 const ColorPallete = styled.div`
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 10px;
   grid-template-columns: repeat(5, 1fr);
 
   margin-top: 40px;
@@ -45,7 +45,6 @@ const ColorBox = styled.li`
   padding-right: 10px;
   background-color: ${props => props.colorHex};
   cursor: pointer;
-  width: 100%;
   height: 48px;
   color: ${props => (props.grey ? '#333333' : '#FFFFFF')};
   position: relative;
@@ -92,7 +91,7 @@ export default () => (
   <React.Fragment>
     <p>
       Catho has some segments, below you can see the
-      <strong>Candidates</strong> default color palette.
+      <strong> Candidates</strong> default color palette.
     </p>
 
     <HowToImport importModules="Colors" />

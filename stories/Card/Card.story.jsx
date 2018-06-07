@@ -5,6 +5,7 @@ import CodeExample from '../../.storybook/components/CodeExample';
 import Table from '../../.storybook/components/Table';
 import { Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
+import Image from '../../components/Image';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Title from '../../.storybook/components/Title';
 
@@ -84,7 +85,7 @@ storiesOf('9. Card', module)
               <h1>The anatomy</h1>
 
               <Col desktop={12} tablet={12} style={{ backgroundColor: '#e5e5e5', textAlign: 'center' }}>
-                <img src="https://material.io/design/assets/1eZNTdj8h1J0BFkbl23LyzEwjjvMzY_uV/cards-elements-2b.png" alt="" width="900" />
+                <Image src="https://material.io/design/assets/1eZNTdj8h1J0BFkbl23LyzEwjjvMzY_uV/cards-elements-2b.png" alt="" width="900" />
               </Col>
 
               <h2>Card sub-components</h2>

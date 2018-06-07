@@ -28,7 +28,7 @@ const ComponentHighlight = ({ code }) => {
   return (
     <pre
       style={{ color: COLORS.PROP_NAME }}
-      dangerouslySetInnerHTML={{
+      dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
       __html: formatted,
     }}
     />

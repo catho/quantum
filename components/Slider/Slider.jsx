@@ -79,20 +79,20 @@ const Handle = ({
   dragging,
   ...restProps
 }) => (
-  <Tooltip slider offset={offset} text={value.toString()}>
+  <Tooltip slider offset={offset.toString()} text={value.toString()}>
     <OriginalHandle value={value} offset={offset} {...restProps} />
   </Tooltip>
 );
 
 Handle.defaultProps = {
   value: 0,
-  offset: 0,
+  offset: '',
   dragging: false,
 };
 
 Handle.propTypes = {
   value: PropTypes.number,
-  offset: PropTypes.number,
+  offset: PropTypes.string,
   dragging: PropTypes.bool,
 };
 

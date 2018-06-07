@@ -21,12 +21,14 @@ class Logo extends Component {
 
 Logo.defaultProps = {
   src: LogoCandidate,
+  alt: 'Logo da Catho',
   width: 100,
   height: 50,
 };
 
 Logo.propTypes = {
   src: PropTypes.string,
+  alt: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
 };

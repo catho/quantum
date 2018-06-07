@@ -128,7 +128,6 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
-  children: PropTypes.node.isRequired,
   skin: PropTypes.oneOf([
     'info',
     'danger',
@@ -143,7 +142,8 @@ Tooltip.propTypes = {
     'left',
   ]),
   text: PropTypes.string,
-  offset: PropTypes.number,
+  offset: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
 
 Tooltip.defaultProps = {
@@ -151,7 +151,7 @@ Tooltip.defaultProps = {
   place: 'top',
   text: 'Tooltip',
   slider: false,
-  offset: null,
+  offset: '',
 };
 
 export default Tooltip;
