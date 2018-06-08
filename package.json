@@ -1,7 +1,7 @@
 {
-  "name": "@cathodevel/style-guide",
+  "name": "quantum",
   "version": "0.7.0",
-  "description": "Catho react components style guide",
+  "description": "Catho react components",
   "main": "./dist/index.js",
   "scripts": {
     "test": "jest",
@@ -15,16 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.devel:frontend-platform/style-guide.git"
+    "url": "git@gitlab.devel:frontend-platform/quantum.git"
   },
   "keywords": [
     "catho",
     "react",
     "components",
     "style",
-    "guide"
+    "guide",
+    "quantum"
   ],
-  "author": "Watchmen",
+  "author": "Catho",
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.0",
