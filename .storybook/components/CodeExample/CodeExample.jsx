@@ -118,7 +118,7 @@ const componentToString = (component, state, level = 0) => {
   return content;
 };
 
-const msg = importModules => `import ${'{'} ${importModules} ${'}'} from '@cathodevel/style-guide';\n\n`;
+const msg = importModules => `import ${'{'} ${importModules} ${'}'} from 'quantum';\n\n`;
 
 const CodeExample = ({
   component,

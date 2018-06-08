@@ -9,7 +9,6 @@ import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
 import Modal from '../../components/Modal';
-import Atom from '../static/atom.svg';
 
 const StyledButton = styled(Button)`
   margin-top: 16px;
@@ -29,7 +28,7 @@ class ModalStory extends React.Component {
 
   render() {
     return (
-      <Heading name="Modal" image={Atom}>
+      <Heading name="Modal">
         <TabbedView>
           <Tab title="Usage">
             <HowToImport importModules="Modal" />

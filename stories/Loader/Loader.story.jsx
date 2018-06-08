@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import Loader from '../../components/Loader';
 import LoaderTypes from '../../components/Loader/LoaderTypes';
 import Heading from '../../.storybook/components/Heading';
-import Atom from '../static/atom.svg';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
@@ -41,7 +40,7 @@ const loaderTypes = Object.keys(LoaderTypes);
 
 storiesOf('13. Others', module)
   .add('Loader', () => (
-    <Heading name="Loader" image={Atom}>
+    <Heading name="Loader">
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Loader" />

@@ -8,7 +8,6 @@ import { Radio, RadioGroup } from '../../components/Radio';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
 import CodeExample from '../../.storybook/components/CodeExample';
-import Atom from '../static/atom.svg';
 
 const RadioGroupWrapper = styled.div`
   padding: 15px;
@@ -35,7 +34,7 @@ const RadioInline = (
 const stories = storiesOf('3. Forms', module);
 stories
   .add('Radio Button', () => (
-    <Heading name="Radio" image={Atom} title="<RadioGroup />">
+    <Heading name="Radio" title="<RadioGroup />">
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="RadioGroup, Radio" componentName="RadioGroup" />

@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import Logo from '../../components/Logo';
 import LogoTypes from '../../components/Logo/LogoTypes';
 import Heading from '../../.storybook/components/Heading';
-import Atom from '../static/atom.svg';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
@@ -37,7 +36,7 @@ storiesOf('6. Images', module)
   .add('Logo', () => {
     const logoList = Object.keys(LogoTypes);
     return (
-      <Heading name="Logo" image={Atom}>
+      <Heading name="Logo">
         <TabbedView>
           <Tab title="Usage">
             <HowToImport importModules="Logo" />

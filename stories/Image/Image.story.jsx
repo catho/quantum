@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import Image from '../../components/Image';
 import Heading from '../../.storybook/components/Heading';
-import Atom from '../static/atom.svg';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import HowToImport from '../../.storybook/components/HowToImport';
 import CodeExample from '../../.storybook/components/CodeExample';
@@ -95,7 +94,7 @@ import { Loading } from '@cathodevel/style-guide';
 
 storiesOf('6. Images', module)
   .add('Image', () => (
-    <Heading name="Image" image={Atom}>
+    <Heading name="Image">
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Image" />

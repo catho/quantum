@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import CodeToClipboard from '../CodeToClipboard';
-import '../../../stories/static/styleguide-highlight.css';
+import '../../static/styleguide-highlight.css';
 import Title from '../Title';
 
 const HighlightWrapper = styled.div`
@@ -30,7 +30,7 @@ const HowToImport = ({ importModules, from }) => {
 
 HowToImport.defaultProps = {
   importModules: null,
-  from: '@cathodevel/style-guide',
+  from: 'quantum',
 };
 
 
