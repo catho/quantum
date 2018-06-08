@@ -15,7 +15,7 @@ registry="http://armazem.devel:4873/"
 
 Then, it can be installed via npm or yarn.
 ```sh
-npm install quantum
+yarn add quantum
 ```
 
 To use a component, it need to be imported in your project:
