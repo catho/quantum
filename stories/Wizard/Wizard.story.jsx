@@ -8,7 +8,6 @@ import Example from '../../.storybook/components/Example';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
 import CodeExample from '../../.storybook/components/CodeExample';
-import Atom from '../static/atom.svg';
 import { Wizard, Step } from '../../components/Wizard';
 
 const StepExample = (
@@ -23,7 +22,7 @@ const stories = storiesOf('11. Wizard', module);
 
 stories
   .add('Wizard', () => (
-    <Heading name="Wizard" image={Atom}>
+    <Heading name="Wizard">
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="Wizard, Step" />

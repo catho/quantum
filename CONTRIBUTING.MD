@@ -44,5 +44,5 @@ Open your pull request, if you don't know how do it, check this [tutorial](https
 ## Code Style
 
 For the good manutance of the project, follow all the code styles:
-- [Editorconfig](http://gitlab.devel/frontend-platform/style-guide/blob/master/.editorconfig)
-- [Eslint Airbnb](http://gitlab.devel/frontend-platform/style-guide/blob/master/.eslintrc.js)
+- [Editorconfig](http://gitlab.devel/frontend-platform/quantum/blob/master/.editorconfig)
+- [Eslint Airbnb](http://gitlab.devel/frontend-platform/quantum/blob/master/.eslintrc.js)

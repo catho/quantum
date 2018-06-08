@@ -6,7 +6,6 @@ import Example from '../../.storybook/components/Example';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
-import Atom from '../static/atom.svg';
 
 import { Form, Validations } from '../../components/Form';
 import Input from '../../components/Input';
@@ -50,7 +49,7 @@ const FormExample = (
 
 storiesOf('3. Forms', module)
   .add('Validation', () => (
-    <Heading image={Atom} title="<Form />">
+    <Heading title="<Form />">
       <TabbedView>
         <Tab title="Usage">
           <p>We provide a bunch of components to use in your form.</p>

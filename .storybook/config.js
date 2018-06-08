@@ -5,11 +5,11 @@ import Frame from './decorators/Frame';
 import stories from './stories';
 
 setOptions({
-  name: 'Catho Style-Guide',
+  name: 'Quantum',
   showAddonPanel: false,
   addonPanelInRight: false,
   sidebarAnimations: false,
-  url: 'http://gitlab.devel/frontend-platform/style-guide',
+  url: 'http://gitlab.devel/frontend-platform/quantum',
 });
 
 addDecorator(Frame);
