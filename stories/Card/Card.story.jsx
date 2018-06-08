@@ -5,6 +5,7 @@ import CodeExample from '../../.storybook/components/CodeExample';
 import Table from '../../.storybook/components/Table';
 import { Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
+import Image from '../../components/Image';
 import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import Title from '../../.storybook/components/Title';
 
@@ -84,7 +85,7 @@ storiesOf('9. Card', module)
               <h1>The anatomy</h1>
 
               <Col desktop={12} tablet={12} style={{ backgroundColor: '#e5e5e5', textAlign: 'center' }}>
-                <img src="https://material.io/design/assets/1eZNTdj8h1J0BFkbl23LyzEwjjvMzY_uV/cards-elements-2b.png" alt="" width="900" />
+                <Image src="https://material.io/design/assets/1eZNTdj8h1J0BFkbl23LyzEwjjvMzY_uV/cards-elements-2b.png" alt="" width="900" />
               </Col>
 
               <h2>Card sub-components</h2>
@@ -92,6 +93,7 @@ storiesOf('9. Card', module)
               <Table>
                 <thead>
                   <tr>
+                    <th>#</th>
                     <th>Component</th>
                     <th>Code</th>
                     <th>Description</th>
@@ -100,6 +102,7 @@ storiesOf('9. Card', module)
 
                 <tbody>
                   <tr>
+                    <td>1</td>
                     <td>Container</td>
                     <td><code>{'<Card.Container />'}</code></td>
                     <td>
@@ -110,12 +113,14 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>2</td>
                     <td>Thumbnail [optional]</td>
                     <td><code>{'<Card.Thumbnail />'}</code></td>
                     <td>Cards can include thumbnails to display an avatar, logo, or icon.</td>
                   </tr>
 
                   <tr>
+                    <td>3, 4</td>
                     <td>Header text [optional]</td>
                     <td><code>{'<Card.HeaderText />'}</code></td>
                     <td>
@@ -124,6 +129,7 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>5</td>
                     <td>Media [optional]</td>
                     <td><code>{'<Card.Media />'}</code></td>
                     <td>
@@ -133,6 +139,7 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>6</td>
                     <td>Supporting text [optional]</td>
                     <td><code>{'<Card.SupportText />'}</code></td>
                     <td>
@@ -142,12 +149,14 @@ storiesOf('9. Card', module)
                   </tr>
 
                   <tr>
+                    <td>7</td>
                     <td>Button [optional]</td>
                     <td><code>{'<Card.Button />'}</code></td>
                     <td>Cards can include buttons for actions.</td>
                   </tr>
 
                   <tr>
+                    <td>8</td>
                     <td>Icons [optional]</td>
                     <td><code>{'<Card.Icon />'}</code></td>
                     <td>Cards can include icons for actions.</td>

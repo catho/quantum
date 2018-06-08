@@ -149,11 +149,11 @@ class Input extends React.Component {
           mask={mask}
           value={value}
           onChange={this._onChange}
-          render={(ref, props) => (
+          render={(ref, { defaultValue, ...props }) => (
             <InputTag
               innerRef={ref}
               {...props}
-              value={props.defaultValue}
+              value={defaultValue}
             />
           )}
         />

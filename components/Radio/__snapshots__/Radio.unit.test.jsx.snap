@@ -2,10 +2,10 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <div
-  className="sc-ifAKCX hCVZm"
+  className="Radio__Wrapper-jvWSnc gQqThV"
 >
   <input
-    className="sc-EHOje ieZIWT"
+    className="Radio__StyledInput-gVYFuB dbfJlZ"
     id="radio"
     name="radio"
     onChange={[Function]}
@@ -13,7 +13,7 @@ exports[`Radio component Should match the snapshot 1`] = `
     value="1"
   />
   <label
-    className="sc-bZQynM cilpEH sc-bwzfXH eQhPVJ"
+    className="Radio__StyledLabel-kKyuTI iCYscL Label-bxMjsr iZhmvb"
     htmlFor="radio"
   >
     Hello

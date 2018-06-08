@@ -79,20 +79,20 @@ const Handle = ({
   dragging,
   ...restProps
 }) => (
-  <Tooltip slider offset={offset} text={value.toString()}>
+  <Tooltip slider offset={offset.toString()} text={value.toString()}>
     <OriginalHandle value={value} offset={offset} {...restProps} />
   </Tooltip>
 );
 
 Handle.defaultProps = {
   value: 0,
-  offset: 0,
+  offset: '',
   dragging: false,
 };
 
 Handle.propTypes = {
   value: PropTypes.number,
-  offset: PropTypes.number,
+  offset: PropTypes.string,
   dragging: PropTypes.bool,
 };
 
@@ -130,10 +130,10 @@ const Slider = ({
 };
 
 Slider.defaultProps = {
+  step: 1,
   disabled: false,
   tooltip: false,
   marks: {},
-  step: 1,
   onChange: () => {},
   onBeforeChange: () => {},
   onAfterChange: () => {},
@@ -141,6 +141,12 @@ Slider.defaultProps = {
 };
 
 Slider.propTypes = {
+  /** Minimum value allowed */
+  min: PropTypes.number.isRequired,
+  /** Maximum value allowed */
+  max: PropTypes.number.isRequired,
+  /** Value on how much increment the value on drag event */
+  step: PropTypes.number,
   /** Disable slider */
   disabled: PropTypes.bool,
   /** Shows the value while dragging on a tooltip above the slider */
@@ -148,12 +154,6 @@ Slider.propTypes = {
   /** Dots on specified values to snap the drag on Slider */
   // eslint-disable-next-line react/forbid-prop-types
   marks: PropTypes.object,
-  /** Minimum value allowed */
-  min: PropTypes.number.isRequired,
-  /** Maximum value allowed */
-  max: PropTypes.number.isRequired,
-  /** Value on how much increment the value on drag event */
-  step: PropTypes.number,
   /** Triggers a function on OnChange event, it returns the current value */
   onChange: PropTypes.func,
   /** Triggers a function before OnChange event */

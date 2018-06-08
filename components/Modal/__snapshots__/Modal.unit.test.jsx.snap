@@ -2,24 +2,24 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <div
-  className="sc-bdVaJa kxFGXR"
+  className="Modal__Overlay-CMmtm hIYvWP"
 >
   <section
-    className="sc-bwzfXH cmyMqk"
+    className="Modal__Content-hxQUPc gasryC"
   >
     <span
-      className="sc-htpNat vKfUr"
+      className="Modal__Close-jhAPJx eyBqsa"
       onClick={[Function]}
     >
       x
     </span>
     <h2
-      className="sc-bxivhb klYylt"
+      className="Modal__Title-jJNJVj GovaN"
     >
       Modal Example
     </h2>
     <p
-      className="sc-ifAKCX cAJaE"
+      className="Modal__Text-cGzIlh kqZZBM"
     >
       Example Message
     </p>

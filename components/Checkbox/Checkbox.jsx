@@ -131,19 +131,19 @@ class Checkbox extends React.Component {
 }
 
 Checkbox.defaultProps = {
+  label: 'Label',
   id: '',
   checked: false,
   disabled: false,
-  label: 'Label',
   onChange: () => {},
 };
 
 Checkbox.propTypes = {
   /** An html identification */
+  label: PropTypes.string,
   id: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  label: PropTypes.string,
   onChange: PropTypes.func,
 };
 

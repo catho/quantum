@@ -90,15 +90,15 @@ const Loading = ({
 );
 
 Loading.defaultProps = {
-  visible: true,
   size: Number(theme.sizes.loading.replace('px', '')),
+  visible: true,
 };
 
 Loading.propTypes = {
-  /** Toggles the visibilitty */
-  visible: PropTypes.bool,
   /** SVG canvas size, in px */
   size: PropTypes.number,
+  /** Toggles the visibilitty */
+  visible: PropTypes.bool,
 };
 
 export default Loading;

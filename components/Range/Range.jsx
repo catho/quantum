@@ -48,26 +48,26 @@ class Range extends React.Component {
 }
 
 Range.defaultProps = {
+  value: 0,
+  label: '',
   error: '',
   id: '',
-  label: '',
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
-  value: 0,
 };
 
 Range.propTypes = {
+  value: PropTypes.number,
+  /** Display a label text that describe the field */
+  label: PropTypes.string,
   /** Display an error message */
   error: PropTypes.string,
   /** HTML identification */
   id: PropTypes.string,
-  /** Display a label text that describe the field */
-  label: PropTypes.string,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  value: PropTypes.number,
 };
 
 export default Range;

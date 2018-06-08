@@ -2,11 +2,10 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
+  className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
 >
   <input
-    className="sc-ifAKCX gqQPWP"
-    defaultValue="foo"
+    className="Input__InputTag-INLdc kVbghW"
     id=""
     maxLength=""
     onBlur={[Function]}
@@ -22,11 +21,10 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
+  className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
 >
   <input
-    className="sc-ifAKCX gqQPWP"
-    defaultValue="foo"
+    className="Input__InputTag-INLdc kVbghW"
     id="input-with-label"
     maxLength=""
     onBlur={[Function]}
@@ -36,7 +34,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     value="foo"
   />
   <label
-    className="sc-bxivhb iYvfZD sc-bwzfXH eQhPVJ"
+    className="Input__InputLabel-jrPAft bcXeFq Label-bxMjsr iZhmvb"
     htmlFor="input-with-label"
   >
     Text label
@@ -47,11 +45,10 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="sc-bZQynM bwEwCs sc-htpNat hxsEuH"
+  className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
 >
   <input
-    className="sc-ifAKCX gqQPWP"
-    defaultValue="foo"
+    className="Input__InputTag-INLdc kVbghW"
     id=""
     maxLength=""
     onBlur={[Function]}
@@ -62,7 +59,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   />
   
   <div
-    className="sc-bdVaJa kKTvpA"
+    className="ErrorMessage-eJhZpN bzMSZo"
   >
     Error message
   </div>

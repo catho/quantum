@@ -86,8 +86,8 @@ const examples = [{
     content: form,
     title: 'Register',
   },
-}].map(({ label, props: { content, ...rest } }, index) => (
-  <Col tablet={3} index={`example-${index}`}>
+}].map(({ label, props: { content, ...rest } }) => (
+  <Col tablet={3} key={`example-${label}`}>
     <Example
       component={(
         <Popover content={<Content>{content}</Content>} {...rest}>

@@ -101,38 +101,38 @@ class Textarea extends React.Component {
 }
 
 Textarea.defaultProps = {
+  value: '',
+  label: '',
+  placeholder: '',
   error: '',
+  id: '',
+  name: '',
   maxLength: 300,
   onBlur: () => {},
   onFocus: () => {},
   onChange: () => {},
-  placeholder: '',
-  value: '',
-  id: '',
-  label: '',
-  name: '',
 };
 
 Textarea.propTypes = {
+  value: PropTypes.string,
+  /** Textarea label that will be displayed on browser */
+  label: PropTypes.string,
+  /** Placeholder to show a text inside textarea */
+  placeholder: PropTypes.string,
   /** Error message */
   error: PropTypes.string,
   /** Id to associate with label */
   id: PropTypes.string,
-  /** Textarea label that will be displayed on browser */
-  label: PropTypes.string,
-  /** Textarea max-length */
-  maxLength: PropTypes.number,
   /** Textarea name */
   name: PropTypes.string,
+  /** Textarea max-length */
+  maxLength: PropTypes.number,
   /** Blur event handle function */
   onBlur: PropTypes.func,
   /** Focus event handle function */
   onFocus: PropTypes.func,
   /** Change event handle function */
   onChange: PropTypes.func,
-  /** Placeholder to show a text inside textarea */
-  placeholder: PropTypes.string,
-  value: PropTypes.string,
 };
 
 export default Textarea;

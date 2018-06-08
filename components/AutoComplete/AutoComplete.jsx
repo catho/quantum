@@ -26,30 +26,30 @@ const AutoComplete = (props) => {
 };
 
 AutoComplete.defaultProps = {
-  error: '',
-  id: '',
+  value: '',
   label: '',
+  error: '',
   maxLength: '',
+  id: '',
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
-  value: '',
   dataSource: [],
 };
 
 AutoComplete.propTypes = {
-  /** Display an error message and changes border color to error color */
-  error: PropTypes.string,
-  /** An html identification */
-  id: PropTypes.string,
+  value: PropTypes.string,
   /** Display a label text that describe the field */
   label: PropTypes.string,
+  /** Display an error message and changes border color to error color */
+  error: PropTypes.string,
   /** Set a text mask that filter user input */
   maxLength: PropTypes.string,
+  /** An html identification */
+  id: PropTypes.string,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  value: PropTypes.string,
   dataSource: PropTypes.arrayOf(String),
 };
 

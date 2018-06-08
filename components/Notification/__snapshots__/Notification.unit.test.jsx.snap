@@ -2,14 +2,14 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="sc-bdVaJa fRinFw"
+  className="Notification__NotificationWrapper-iPzUAf fUoRog"
   type="info"
 >
   <div
-    className="sc-bwzfXH bFHdpU"
+    className="Notification__NotificationIcon-cFgPaT ePZYWv"
   />
   <div
-    className="sc-htpNat ecwypm"
+    className="Notification__NotificationMessage-hTOlze fEzbWn"
   >
     <strong>
       Sample
@@ -17,7 +17,7 @@ exports[`Input component  should match the snapshot 1`] = `
     This is a dummy
   </div>
   <button
-    className="sc-bxivhb fRngHK"
+    className="Notification__NotificationClose-hGmWzw gbJgND"
     onClick={[Function]}
   >
     <span

@@ -12,7 +12,7 @@ const TextWrapper = styled.h1`
   }
 `;
 
-const TitleWrapper = styled.h1`
+const TitleWrapper = styled.header`
   font-size: 18px;
   font-weight: bold;
   margin: 0;
