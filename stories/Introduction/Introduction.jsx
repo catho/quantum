@@ -36,7 +36,7 @@ const gifUrls = {
 
 const Introduction = () => (
   <React.Fragment>
-    <p>The official <strong>Catho</strong> quantum</p>
+    <p>The official <strong>Catho</strong> style guide</p>
 
     <Title style={{ marginTop: '40px' }}>Starting from scratch</Title>
 
