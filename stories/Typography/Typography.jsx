@@ -66,7 +66,7 @@ const Typography = () => (
 
     <p>In order to use the default Catho Typography, just import the font css:</p>
 
-    <HowToImport from="@cathodevel/style-guide/static/typography.css" />
+    <HowToImport from="@cathodevel/quantum/static/typography.css" />
 
     <p>This font also provides all the available <LinkTo kind="1. Foundation" story="Icons">Icons</LinkTo></p>
 

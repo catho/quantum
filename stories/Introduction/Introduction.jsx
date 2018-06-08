@@ -11,8 +11,8 @@ import {
 import Image from '../../components/Image';
 
 const registry = 'registry="http://armazem.devel:4873/"';
-const yarnAdd = 'yarn add @cathodevel/style-guide';
-const importHeader = `import Header from '@cathodevel/style-guide';
+const yarnAdd = 'yarn add @cathodevel/quantum';
+const importHeader = `import Header from '@cathodevel/quantum';
 export default () => <Header />;`;
 
 const HighlightWrapper = styled.div`
@@ -36,7 +36,7 @@ const gifUrls = {
 
 const Introduction = () => (
   <React.Fragment>
-    <p>The official <strong>Catho</strong> style-guide</p>
+    <p>The official <strong>Catho</strong> quantum</p>
 
     <Title style={{ marginTop: '40px' }}>Starting from scratch</Title>
 

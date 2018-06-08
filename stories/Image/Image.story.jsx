@@ -67,7 +67,7 @@ const examples = {
       />
     ),
     code: `// First import your loading component
-import { Loading } from '@cathodevel/style-guide';
+import { Loading } from '@cathodevel/quantum';
 
 // Then use with 'loader' prop
 <Image

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
 import CodeToClipboard from '../CodeToClipboard';
-import '../../static/styleguide-highlight.css';
+import '../../static/quantum-highlight.css';
 import Title from '../Title';
 
 const HighlightWrapper = styled.div`
