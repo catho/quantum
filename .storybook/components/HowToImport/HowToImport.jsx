@@ -30,7 +30,7 @@ const HowToImport = ({ importModules, from }) => {
 
 HowToImport.defaultProps = {
   importModules: null,
-  from: 'quantum',
+  from: '@cathodevel/quantum',
 };
 
 
