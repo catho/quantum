@@ -11,13 +11,13 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       className="Step__ProgressStep-jVQefS eFFxfk"
     >
       <p
-        className="Step__Title-kjpidS hUXwUe"
+        className="Step__Title-kjpidS khCQIZ"
       >
         Criação de conta
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE frEuzg"
+        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE krXGGQ"
         status="done"
         style={
           Object {
@@ -32,13 +32,13 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       className="Step__ProgressStep-jVQefS jKjzCP"
     >
       <p
-        className="Step__Title-kjpidS hUXwUe"
+        className="Step__Title-kjpidS khCQIZ"
       >
         Plano Forma de pagamento
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE jaDvfr"
+        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE hgaaBU"
         status="active"
         style={
           Object {
