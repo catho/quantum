@@ -1,11 +1,11 @@
 <style>
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
 
-  .SplitPane.vertical  {
+  .SplitPane.vertical {
     border-left: 64px solid rgb(7, 71, 166);
   }
 
-  #root>div>div{
+  #root>div>div {
     background-color: rgb(244, 245, 247) !important;
   }
 
@@ -14,27 +14,27 @@
     overflow: hidden !important;
   }
 
-  .Pane.vertical.Pane1 ul li{
+  .Pane.vertical.Pane1 ul li {
     font-family: 'Montserrat' !important;
-    padding:3px 0;
+    padding: 3px 0;
   }
 
-  .Pane.vertical.Pane1 ul li > ul > li > div > div > div:nth-child(1) {
+  .Pane.vertical.Pane1 ul li>ul>li>div>div>div:nth-child(1) {
     display: none !important;
   }
 
-  .Pane.vertical.Pane1 ul li > ul > li > div > div > div:nth-child(2) {
+  .Pane.vertical.Pane1 ul li>ul>li>div>div>div:nth-child(2) {
     /* text-transform: uppercase; */
     font-size: 12px;
     display: none;
   }
 
-  .Pane.vertical.Pane1 ul li > ul > li > ul {
+  .Pane.vertical.Pane1 ul li>ul>li>ul {
     display: block !important;
     padding-left: 8px !important;
   }
 
-  .Pane.vertical.Pane1 ul li a[class*='css-glamorous-routedlink']{
+  .Pane.vertical.Pane1 ul li a[class*='css-glamorous-routedlink'] {
     font-weight: normal;
   }
 
@@ -119,15 +119,16 @@
   .Pane.horizontal.Pane1>div {
     padding: 0 !important;
   }
+
   .Pane.horizontal.Pane1>div>div {
     border: none !important;
   }
 
   .lateral-menu {
     list-style-type: none;
-    position:absolute;
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1000;
     padding: 12px;
     margin: 0;
@@ -147,16 +148,16 @@
 </style>
 
 <script>
-  const openSearch = () => {
+  function openSearch() {
     window.onkeydown({
       target: {
-        getAttribute: () => null,
+        getAttribute: function () { },
         tagName: 'body',
       },
       keyCode: 79,
       ctrlKey: true,
       shiftKey: true,
-      preventDefault: () => {},
+      preventDefault: function () { },
     });
 
     const searchOverlay = document.querySelector('.ReactModal__Overlay.ReactModal__Overlay--after-open');
@@ -175,32 +176,30 @@
     inputSearch.style.padding = '10px 15px';
   }
 
-  const hideMenu = () => {
+  function hideMenu() {
     const menu = document.querySelector('.Pane.vertical.Pane1');
     menu.style.display = (menu.style.display == 'none') ? 'block' : 'none';
   };
 
-  document.addEventListener("DOMContentLoaded", function(event) {
+  document.addEventListener("DOMContentLoaded", function (event) {
     const verticalPane = document.getElementById("root");
     const verticalPaneDiv = verticalPane.querySelector('div');
 
     var lateralMenu = document.createElement("ul");
     lateralMenu.className = 'lateral-menu';
 
-    lateralMenu.innerHTML = `
-      <li class="lateral-menu-item" onClick="openSearch()";>
-        <span class="sc-bwzfXH iQjDgX" aria-label="search">
-          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
-            <path d="M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z" fill="#FFFFFF" fill-rule="evenodd"></path></svg>
-        </span>
-      </li>
-
-      <li class="lateral-menu-item" onClick="hideMenu();">
-        <span class="sc-bwzfXH iQjDgX" aria-label="Menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation"><path d="M5 15h14v2H5zm0-8h14v2H5zm0 4h14v2H5z" fill="#FFFFFF" fill-rule="evenodd"></path></svg>
-        </span>
-      </li>
-    `;
+    lateralMenu.innerHTML =
+      "<li class=\"lateral-menu-item\" onClick=\"openSearch()\";>" +
+      "  <span class=\"sc-bwzfXH iQjDgX\" aria-label=\"search\">" +
+      "    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"presentation\">" +
+      "      <path d=\"M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"></path></svg>" +
+      "  </span>" +
+      "</li>" +
+      "<li class=\"lateral-menu-item\" onClick=\"hideMenu();\">" +
+      "  <span class=\"sc-bwzfXH iQjDgX\" aria-label=\"Menu\">" +
+      "    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"presentation\"><path d=\"M5 15h14v2H5zm0-8h14v2H5zm0 4h14v2H5z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"></path></svg>" +
+      "  </span>" +
+      "</li>";
 
     verticalPane.insertBefore(lateralMenu, verticalPaneDiv);
   });
