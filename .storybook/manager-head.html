@@ -160,15 +160,15 @@
       preventDefault: function () { },
     });
 
-    const searchOverlay = document.querySelector('.ReactModal__Overlay.ReactModal__Overlay--after-open');
+    var searchOverlay = document.querySelector('.ReactModal__Overlay.ReactModal__Overlay--after-open');
     searchOverlay.style.backgroundColor = "#0000009c";
     searchOverlay.style.zIndex = "1001";
 
-    const inputSearchWrapper = document.querySelector('.react-fuzzy-search');
+    var inputSearchWrapper = document.querySelector('.react-fuzzy-search');
     inputSearchWrapper.style.padding = 0;
     inputSearchWrapper.style.fontFamily = 'Montserrat';
 
-    const inputSearch = inputSearchWrapper.querySelector('div input');
+    var inputSearch = inputSearchWrapper.querySelector('div input');
     inputSearch.style.border = 'none';
     inputSearch.style.fontFamily = 'Montserrat';
     inputSearch.style.fontSize = '36px';
@@ -177,13 +177,13 @@
   }
 
   function hideMenu() {
-    const menu = document.querySelector('.Pane.vertical.Pane1');
+    var menu = document.querySelector('.Pane.vertical.Pane1');
     menu.style.display = (menu.style.display == 'none') ? 'block' : 'none';
   };
 
   document.addEventListener("DOMContentLoaded", function (event) {
-    const verticalPane = document.getElementById("root");
-    const verticalPaneDiv = verticalPane.querySelector('div');
+    var verticalPane = document.getElementById("root");
+    var verticalPaneDiv = verticalPane.querySelector('div');
 
     var lateralMenu = document.createElement("ul");
     lateralMenu.className = 'lateral-menu';
