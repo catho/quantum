@@ -26,6 +26,11 @@ const Select = styled.select`
     border-color: ${ColorPalette.PRIMARY['500']};
     outline: 0;
   }
+
+  /* IE >= 10 */
+  &::-ms-expand {
+    display: none;
+  }
 `;
 
 const ArrowDown = styled(Icon)`
@@ -74,7 +79,7 @@ class Dropdown extends React.Component {
 
     return (
       <FieldGroup>
-        { label && <Label htmlFor={id}> {label} </Label> }
+        {label && <Label htmlFor={id}> {label} </Label>}
 
         <Select
           {...rest}
@@ -109,9 +114,9 @@ Dropdown.defaultProps = {
   name: 'Dropdown',
   id: 'dropdown',
   items: [],
-  onChange: () => {},
-  onBlur: () => {},
-  onFocus: () => {},
+  onChange: () => { },
+  onBlur: () => { },
+  onFocus: () => { },
 };
 
 Dropdown.propTypes = {
