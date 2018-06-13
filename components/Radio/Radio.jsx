@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
-import theme from '../../theme';
 import { Label } from '../shared';
 
 const commonAttr = {
@@ -17,67 +16,74 @@ const Wrapper = styled.div`
 `;
 
 const StyledInput = styled.input`
-  appearance: none;
-  border: ${commonAttr.borderWidth} solid ${Colors.WHITE};
-  border-radius: 50%;
-  background-color: ${props => (props.disabled ? Colors.GREY[100] : Colors.WHITE)};
-  cursor: inherit;
-  height: ${commonAttr.height};
-  margin-right: 5px;
-  position: relative;
-  top: 6px;
-  width: ${commonAttr.width};
+  display: none;
 
-  ${theme.mixins.transition()};
-
-  &:before {
-    content: ' ';
-    border: 1px solid ${Colors.GREY[300]};
-    border-radius: 50%;
-    display: inline-block;
-    height: ${commonAttr.height};
-    margin-left: -4px;
-    margin-top: -4px;
-    width: ${commonAttr.width};
-  }
-
-  &:hover:before {
-    border: 1px solid ${props => (props.disabled ? Colors.GREY[300] : Colors.SECONDARY[500])};
-  }
-
-  &:checked {
+  &:checked + ${StyledLabel}:before {
     background-color: ${Colors.SECONDARY[500]};
-    ${theme.mixins.transition()};
+    box-shadow: inset 0 0 0 3px ${Colors.WHITE};
   }
 
-  &:checked:before {
-    border: 1px solid ${Colors.SECONDARY[500]};
+  &:disabled:checked + ${StyledLabel}:before {
+    background-color: ${Colors.GREY[100]};
+    box-shadow: inset 0 0 0 3px ${Colors.WHITE};
   }
 `;
 
 const StyledLabel = styled(Label)`
   cursor: inherit;
   display: inline-block;
+
+  &:before {
+    content: ' ';
+    border: 1px solid ${({ disabled }) => disabled ? Colors.GREY[100] : Colors.GREY[300]};
+    border-radius: 50%;
+    display: inline-block;
+    height: ${commonAttr.height};
+    width: ${commonAttr.width};
+    margin-left: -4px;
+    margin-top: -4px;
+    margin-right: 5px;
+
+    ${({ checked }) => checked && `
+      box-shadow: inset 0px 0px 0 3px white;
+    `}
+    cursor: inherit;
+    position: relative;
+    top: 6px;
+  }
+
+  &:hover:before {
+    border: 1px solid ${({ disabled }) => disabled ? Colors.GREY[100] : Colors.SECONDARY[500]};
+    box-shadow: inset 0 0 0 3px ${Colors.WHITE};
+  }
 `;
 
 const Radio = ({
-  id, label, onChange, ...rest
+  id, label, onChange, disabled, ...rest
 }) => (
-  <Wrapper>
-    <StyledInput
-      {...rest}
-      id={id}
-      type="radio"
-      onChange={e => onChange(e, { checked: e.target.value })}
-    />
-    <StyledLabel htmlFor={id}>{label}</StyledLabel>
-  </Wrapper>
-);
+    <Wrapper>
+      <StyledInput
+        {...rest}
+        id={id}
+        type="radio"
+        disabled={disabled}
+        onChange={e => onChange(e, { checked: e.target.value })}
+      />
+      <StyledLabel
+        {...rest}
+        disabled={disabled}
+        htmlFor={id}
+      >
+        {label}
+      </StyledLabel>
+    </Wrapper>
+  );
 
 Radio.displayName = 'Radio';
 
 Radio.defaultProps = {
-  onChange: () => {},
+  onChange: () => { },
+  disabled: false,
 };
 
 Radio.propTypes = {
@@ -85,6 +91,7 @@ Radio.propTypes = {
   id: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
   /** Label that will be displayed on browser */
   label: PropTypes.string.isRequired,
   /** On change event handle function */
