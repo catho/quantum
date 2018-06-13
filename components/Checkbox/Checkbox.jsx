@@ -27,8 +27,7 @@ const StyledLabel = styled(Label)`
   cursor: inherit;
   display: initial;
   position: relative;
-  padding-left: 30px;
-  top: 3px;
+  margin-bottom: 0;
 
   ${({ disabled }) => disabled && `
     color: ${Colors.GREY['300']};
@@ -42,7 +41,7 @@ const StyledLabel = styled(Label)`
       content: ' ';
       display: inline-block;
       height: 14px;
-      left: 8px;
+      left: -23px;
       position: absolute;
       top: -1px;
       transform: rotate(45deg);
@@ -53,6 +52,10 @@ const StyledLabel = styled(Label)`
 
 const StyledFieldGroup = styled(FieldGroup)`
   height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   ${({ disabled }) => `
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
@@ -68,7 +71,6 @@ const StyledFieldGroup = styled(FieldGroup)`
     height: 24px;
     width: 24px;
     margin-right: 5px;
-    position: absolute;
   }
 
   &:hover:before {
@@ -135,7 +137,7 @@ Checkbox.defaultProps = {
   id: '',
   checked: false,
   disabled: false,
-  onChange: () => {},
+  onChange: () => { },
 };
 
 Checkbox.propTypes = {
