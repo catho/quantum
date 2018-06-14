@@ -13,11 +13,20 @@ const DropdownButton = styled.button`
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   width: 100%;
   height: ${theme.sizes.fieldHeight};
-  padding: 10px;
+
   background-color: ${ColorPalette.WHITE};
-  border: solid 1px ${ColorPalette.GREY['900']};
+  border: solid 1px ${ColorPalette.GREY['300']};
+
+  ${({ isOpen }) => isOpen && `
+    border-top-color: ${ColorPalette.SECONDARY['500']};
+    border-right-color: ${ColorPalette.SECONDARY['500']};
+    border-left-color: ${ColorPalette.SECONDARY['500']};
+  `}
+
   border-radius: ${theme.sizes.radius};
   appearance: none;
   cursor: pointer;
@@ -27,19 +36,30 @@ const DropdownButton = styled.button`
   `}
 
   &:focus {
-    border-color: ${ColorPalette.PRIMARY['500']};
     outline: 0;
+  }
+
+  & ~ ul {
+    background-color: ${ColorPalette.WHITE};
+    border-width: 1px;
+    border-style: solid;
+    border-color: ${ColorPalette.SECONDARY['500']};
+    border-top: none;
   }
 `;
 
 const ArrowDown = styled(Icon)`
   font-size: 1.5em;
   pointer-events: none;
-  margin-left: -30px;
-  padding-top: 6px;
 `;
 
-const Select = ({ items, selectedItem, onChange, placeholder = 'Selecione' }) => (
+const Select = ({
+  items,
+  selectedItem,
+  onChange,
+  name,
+  placeholder,
+}) => (
   <Downshift
     selectedItem={selectedItem}
     onChange={onChange}
@@ -51,9 +71,9 @@ const Select = ({ items, selectedItem, onChange, placeholder = 'Selecione' }) =>
       selectedItem: dsSelectedItem,
     }) => (
       <div>
-        <DropdownButton {...getToggleButtonProps()}>
+        <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
           {selectedItem || placeholder}
-          <ArrowDown name="keyboard_arrow_down" skin={ColorPalette.GREY['900']} />
+          <ArrowDown name="arrow_drop_down" skin={ColorPalette.GREY['300']} />
         </DropdownButton>
         {isOpen &&
           <List divided>
@@ -77,6 +97,59 @@ const Select = ({ items, selectedItem, onChange, placeholder = 'Selecione' }) =>
     )}
   />
 );
+
+//{ items, selectedItem, onChange, name, placeholder = 'Selecione' }
+Select.propTypes = {
+  items: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.arrayOf(PropTypes.shape({
+      icon: PropTypes.string,
+      content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          header: PropTypes.string,
+          subheader: PropTypes.string,
+        }),
+      ]),
+    })),
+  ]),
+  selectedItem: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.arrayOf(PropTypes.shape({
+      icon: PropTypes.string,
+      content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          header: PropTypes.string,
+          subheader: PropTypes.string,
+        }),
+      ]),
+    })),
+  ]),
+  onChange: PropTypes.func,
+  name: PropTypes.string,
+  placeholder: PropTypes.string,
+}
+
+Select.defaultProps = {
+  items: [],
+  selectedItem: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.arrayOf(PropTypes.shape({
+      icon: PropTypes.string,
+      content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          header: PropTypes.string,
+          subheader: PropTypes.string,
+        }),
+      ]),
+    })),
+  ]),
+  onChange: PropTypes.func,
+  name: PropTypes.string,
+  placeholder: PropTypes.string,
+}
 
 class Dropdown extends React.Component {
   constructor(props) {
@@ -107,6 +180,8 @@ class Dropdown extends React.Component {
       label,
       id,
       error,
+      placeholder,
+      name,
     } = this.props;
 
     const { selectedItem } = this.state;
@@ -119,6 +194,8 @@ class Dropdown extends React.Component {
           items={items}
           onChange={this.onChange}
           selectedItem={selectedItem}
+          placeholder={placeholder}
+          name={name}
         />
 
         {error && <ErrorMessage>{error}</ErrorMessage>}
