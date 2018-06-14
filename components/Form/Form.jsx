@@ -36,7 +36,7 @@ class Form extends React.Component {
     .map(
       children,
       (child) => {
-        const { name, error } = child.props;
+        const { name, error, onChange } = child.props;
         return (
           React
             .cloneElement(
@@ -44,7 +44,10 @@ class Form extends React.Component {
               {
                 value: this.state.values[name],
                 error: this.state.errors[name] || error,
-                onChange: this._handleChange,
+                onChange: (e, data) => {
+                  this._handleChange(e, data);
+                  onChange(e, data);
+                },
               },
             )
         );
