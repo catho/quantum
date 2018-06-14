@@ -1,3 +1,8 @@
+## v0.7.1 - May/2018
+### Added
+Fixes:
+ - Form state error
+
 ## v0.7.0 - May/2018
 ### Added
 New Components:
