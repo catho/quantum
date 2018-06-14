@@ -8,9 +8,9 @@ storiesOf('3. Forms', module).add('Dropdown', () => (
     component={Dropdown}
     componentProps={{
       items: [
-        { key: 'fooKey', value: 'foo' },
-        { key: 'barKey', value: 'bar' },
-        { key: 'bazKey', value: 'baz' },
+        'Tomato sauce',
+        'Mustard',
+        'Barbecue sauce',
       ],
     }}
   />

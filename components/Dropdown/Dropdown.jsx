@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
+import List from '../List/List';
 import ColorPalette from '../Colors';
 import theme from '../../theme';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
-const Select = styled.select`
+const DropdownButton = styled.button`
   ${theme.mixins.transition()};
 
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: ${theme.sizes.fieldHeight};
-  padding: 10px 28px 10px 10px;
+  padding: 10px;
   background-color: ${ColorPalette.WHITE};
   border: solid 1px ${ColorPalette.GREY['900']};
   border-radius: ${theme.sizes.radius};
@@ -35,65 +39,87 @@ const ArrowDown = styled(Icon)`
   padding-top: 6px;
 `;
 
+const Select = ({ items, selectedItem, onChange, placeholder = 'Selecione' }) => (
+  <Downshift
+    selectedItem={selectedItem}
+    onChange={onChange}
+    render={({
+      isOpen,
+      getToggleButtonProps,
+      getItemProps,
+      highlightedIndex,
+      selectedItem: dsSelectedItem,
+    }) => (
+      <div>
+        <DropdownButton {...getToggleButtonProps()}>
+          {selectedItem || placeholder}
+          <ArrowDown name="keyboard_arrow_down" skin={ColorPalette.GREY['900']} />
+        </DropdownButton>
+        {isOpen &&
+          <List divided>
+            { items
+                .map((item, index) => (
+                  <List.Item
+                    {
+                    ...getItemProps({
+                      item,
+                      isActive: highlightedIndex === index,
+                      isSelected: dsSelectedItem === item,
+                    })}
+                    key={item}
+                    icon={item.icon}
+                    content={item.content || item}
+                  />
+                ))
+            }
+          </List>}
+      </div>
+    )}
+  />
+);
+
 class Dropdown extends React.Component {
   constructor(props) {
     super(props);
 
-    const { value } = props;
+    const { selectedItem = null } = props;
 
-    this.state = { value };
+    this.state = { selectedItem };
   }
 
   componentWillUpdate(nextProps) {
-    if (nextProps.value !== this.state.value) {
-      this.state.value = nextProps.value;
+    if (nextProps.selectedItem !== this.state.selectedItem) {
+      this.state.selectedItem = nextProps.selectedItem;
     }
   }
 
-  onChange = (e) => {
+  onChange = (item) => {
     const { onChange } = this.props;
-    const { target: { value } } = e;
 
-    this.setState({ value });
+    this.setState({ selectedItem: item });
 
-    onChange(e, { value });
+    onChange(null, { selectedItem: item });
   }
 
   render() {
     const {
-      name,
       items,
       label,
       id,
       error,
-      placeholder,
-      ...rest
     } = this.props;
 
-    const { value } = this.state;
+    const { selectedItem } = this.state;
 
     return (
       <FieldGroup>
         { label && <Label htmlFor={id}> {label} </Label> }
 
         <Select
-          {...rest}
-          id={id}
-          name={name}
-          value={value}
+          items={items}
           onChange={this.onChange}
-        >
-          {placeholder && <option value="" disabled>{placeholder}</option>}
-
-          {
-            items &&
-            items.map(({ key, value: itemValue }) => (
-              <option key={key} value={key}>{itemValue}</option>
-            ))
-          }
-        </Select>
-
-        <ArrowDown name="keyboard_arrow_down" skin={ColorPalette.GREY['900']} />
+          selectedItem={selectedItem}
+        />
 
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </FieldGroup>
@@ -102,7 +128,7 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.defaultProps = {
-  value: '',
+  selectedItem: '',
   placeholder: 'Select...',
   label: '',
   error: '',
@@ -115,7 +141,7 @@ Dropdown.defaultProps = {
 };
 
 Dropdown.propTypes = {
-  value: PropTypes.string,
+  selectedItem: PropTypes.string,
   placeholder: PropTypes.string,
   label: PropTypes.string,
   error: PropTypes.string,
