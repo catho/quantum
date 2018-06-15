@@ -36,15 +36,18 @@ class Form extends React.Component {
     .map(
       children,
       (child) => {
-        const { name } = child.props;
+        const { name, error, onChange } = child.props;
         return (
           React
             .cloneElement(
               child,
               {
                 value: this.state.values[name],
-                error: this.state.errors[name],
-                onChange: this._handleChange,
+                error: this.state.errors[name] || error,
+                onChange: (e, data) => {
+                  this._handleChange(e, data);
+                  onChange(e, data);
+                },
               },
             )
         );
@@ -126,10 +129,12 @@ class Form extends React.Component {
   }
 
   render() {
-    const { onValidSubmit, ...rest } = this.props;
+    // Removing invalid form props, to avoid warnings
+    const _props = { ...this.props };
+    delete _props.onValidSubmit;
 
     return (
-      <form {...rest} onSubmit={this.handleSubmit}>
+      <form {..._props} onSubmit={this.handleSubmit}>
         {
           this._createClones(this.props.children)
         }
@@ -141,6 +146,7 @@ class Form extends React.Component {
 Form.defaultProps = {
   onSubmit: () => {},
   onValidSubmit: () => {},
+  noValidate: true,
 };
 
 Form.propTypes = {
@@ -150,6 +156,8 @@ Form.propTypes = {
   ]).isRequired,
   onSubmit: PropTypes.func,
   onValidSubmit: PropTypes.func,
+  /** Default html attribute, that prevents default browser validations */
+  noValidate: PropTypes.bool,
 };
 
 export default Form;

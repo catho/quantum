@@ -116,12 +116,14 @@ const Title = styled.p`
   word-wrap: break-word;
 
   @media (min-width: ${BREAKPOINTS.phone + 1}px) and (max-width: ${BREAKPOINTS.tablet}px) {
-    top: -32px;
+    top: -34px;
   }
   @media (max-width: ${BREAKPOINTS.phone}px) {
     top: -30px;
   }
 `;
+
+const statusTypes = ['', 'active', 'done'];
 
 const Step = ({ title, status, icon }) => (
   <ProgressStep status={status}>
@@ -131,14 +133,18 @@ const Step = ({ title, status, icon }) => (
 );
 
 Step.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   icon: PropTypes.string,
-  status: PropTypes.oneOf(['', 'active', 'done']),
+  status: PropTypes.oneOf(statusTypes),
 };
 
 Step.defaultProps = {
   status: '',
   icon: '',
+};
+
+StepIcon.propTypes = {
+  status: PropTypes.oneOf(statusTypes),
 };
 
 export default Step;

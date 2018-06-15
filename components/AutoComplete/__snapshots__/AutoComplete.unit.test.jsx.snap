@@ -8,7 +8,7 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       list="_datalist"
       maxLength=""

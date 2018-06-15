@@ -2,13 +2,14 @@
 
 exports[`Form component  should match the snapshot 1`] = `
 <form
+  noValidate={true}
   onSubmit={[Function]}
 >
   <div
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       maxLength=""
       name="required"
@@ -30,7 +31,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       maxLength=""
       name="cpf"
@@ -52,7 +53,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       maxLength=""
       name="cep"
@@ -74,7 +75,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       maxLength=""
       name="birthday"
@@ -96,7 +97,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       maxLength=""
       name="email"
@@ -118,7 +119,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       maxLength=""
       minLength="8"
@@ -141,7 +142,7 @@ exports[`Form component  should match the snapshot 1`] = `
     className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
-      className="Input__InputTag-INLdc kVbghW"
+      className="Input__InputTag-INLdc jYXMrh"
       id=""
       maxLength="3"
       name="country"

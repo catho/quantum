@@ -5,7 +5,7 @@ exports[`Step Component Should match the snapshot 1`] = `
   className="Step__ProgressStep-jVQefS looJRz"
 >
   <p
-    className="Step__Title-kjpidS hUXwUe"
+    className="Step__Title-kjpidS khCQIZ"
   >
     Step 1
   </p>
@@ -18,7 +18,7 @@ exports[`Step Component Should match the snapshot with icon 1`] = `
   className="Step__ProgressStep-jVQefS looJRz"
 >
   <p
-    className="Step__Title-kjpidS hUXwUe"
+    className="Step__Title-kjpidS khCQIZ"
   >
     Step 1
   </p>
@@ -42,7 +42,7 @@ exports[`Step Component Should match the snapshot with status active 1`] = `
   className="Step__ProgressStep-jVQefS donhdm"
 >
   <p
-    className="Step__Title-kjpidS hUXwUe"
+    className="Step__Title-kjpidS khCQIZ"
   >
     Step 1
   </p>
@@ -55,7 +55,7 @@ exports[`Step Component Should match the snapshot with status done 1`] = `
   className="Step__ProgressStep-jVQefS OUROv"
 >
   <p
-    className="Step__Title-kjpidS hUXwUe"
+    className="Step__Title-kjpidS khCQIZ"
   >
     Step 1
   </p>
