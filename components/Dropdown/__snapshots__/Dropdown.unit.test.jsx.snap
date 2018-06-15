@@ -6,7 +6,7 @@ exports[`Input component  should match the snapshot 1`] = `
 >
   
   <select
-    className="Dropdown__Select-kLQAl fRjOyV"
+    className="Dropdown__Select-kLQAl TvOMx"
     id="dropdown"
     name="Dropdown"
     onBlur={[Function]}
@@ -49,7 +49,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
      
   </label>
   <select
-    className="Dropdown__Select-kLQAl fRjOyV"
+    className="Dropdown__Select-kLQAl TvOMx"
     id="dropdown"
     name="Dropdown"
     onBlur={[Function]}
@@ -85,7 +85,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 >
   
   <select
-    className="Dropdown__Select-kLQAl fRjOyV"
+    className="Dropdown__Select-kLQAl TvOMx"
     id="dropdown"
     name="Dropdown"
     onBlur={[Function]}
@@ -125,7 +125,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
 >
   
   <select
-    className="Dropdown__Select-kLQAl fRjOyV"
+    className="Dropdown__Select-kLQAl TvOMx"
     id="dropdown"
     name="Dropdown"
     onBlur={[Function]}

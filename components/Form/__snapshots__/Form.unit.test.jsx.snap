@@ -6,7 +6,7 @@ exports[`Form component  should match the snapshot 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc jYXMrh"
@@ -28,7 +28,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc jYXMrh"
@@ -50,7 +50,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc jYXMrh"
@@ -72,7 +72,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc jYXMrh"
@@ -94,7 +94,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc jYXMrh"
@@ -116,7 +116,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc jYXMrh"
@@ -139,7 +139,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc jYXMrh"

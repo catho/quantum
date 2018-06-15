@@ -73,7 +73,11 @@ const InputIcon = styled(Icon)`
 `;
 
 const InputFieldGroup = styled(FieldGroup)`
-  margin-top: 40px;
+  margin: 40px 0 20px;
+
+  &:first-child {
+    margin-top: 20px;
+  }
 `;
 
 /** A text field component to get user text data */

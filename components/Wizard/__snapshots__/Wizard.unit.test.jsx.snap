@@ -8,7 +8,7 @@ exports[`Wizard Component Should match the snapshot 1`] = `
     className="Wizard__ProgressBar-bZMfKu jvTztC"
   >
     <li
-      className="Step__ProgressStep-jVQefS eFFxfk"
+      className="Step__ProgressStep-jVQefS OUROv"
     >
       <p
         className="Step__Title-kjpidS khCQIZ"
@@ -29,7 +29,7 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="Step__ProgressStep-jVQefS jKjzCP"
+      className="Step__ProgressStep-jVQefS donhdm"
     >
       <p
         className="Step__Title-kjpidS khCQIZ"
