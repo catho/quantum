@@ -1,3 +1,9 @@
+## v0.7.2 - May/2018
+### Added
+Social Buttons:
+  - Google
+  - Facebook
+
 ## v0.7.1 - May/2018
 ### Added
 Fixes:
