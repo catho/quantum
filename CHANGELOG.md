@@ -1,4 +1,9 @@
-## v0.7.3 - May/2018
+## v0.8.0 - Jun/2018
+### Changed
+Component reworked:
+ - Dropdown
+
+## v0.7.3 - Jun/2018
 ### Added
 Social Buttons:
   - Google
