@@ -156,6 +156,7 @@ Form.propTypes = {
   ]).isRequired,
   onSubmit: PropTypes.func,
   onValidSubmit: PropTypes.func,
+  /** Default html attribute, that prevents default browser validations */
   noValidate: PropTypes.bool,
 };
 
