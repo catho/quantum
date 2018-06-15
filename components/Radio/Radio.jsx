@@ -61,23 +61,23 @@ const StyledInput = styled.input`
 const Radio = ({
   id, label, onChange, disabled, ...rest
 }) => (
-    <Wrapper>
-      <StyledInput
-        {...rest}
-        id={id}
-        type="radio"
-        disabled={disabled}
-        onChange={e => onChange(e, { checked: e.target.value })}
-      />
-      <StyledLabel
-        {...rest}
-        disabled={disabled}
-        htmlFor={id}
-      >
-        {label}
-      </StyledLabel>
-    </Wrapper>
-  );
+  <Wrapper>
+    <StyledInput
+      {...rest}
+      id={id}
+      type="radio"
+      disabled={disabled}
+      onChange={e => onChange(e, { checked: e.target.value })}
+    />
+    <StyledLabel
+      {...rest}
+      disabled={disabled}
+      htmlFor={id}
+    >
+      {label}
+    </StyledLabel>
+  </Wrapper>
+);
 
 Radio.displayName = 'Radio';
 
