@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import Colors from '../Colors';
 import googleLogo from '../../static/googleSocialLogo.svg';
 import facebookLogo from '../../static/facebookSocialLogo.svg';
 
 const sharedStyles = `
   border: none;
   border-radius: 2px;
-  color: #fff;
+  color: ${Colors.WHITE};
   cursor: pointer;
   font-family: 'Oxygen', sans-serif;
   font-size: 14px;
@@ -29,7 +30,7 @@ const Facebook = styled.button`
 
 const Google = styled.button`
   &:before {
-    background-color: #fff;
+    background-color: ${Colors.WHITE};
     background-image: url(${googleLogo});
     background-repeat: no-repeat;
     background-position: center;
