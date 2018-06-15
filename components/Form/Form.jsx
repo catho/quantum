@@ -129,10 +129,12 @@ class Form extends React.Component {
   }
 
   render() {
-    const { onValidSubmit, ...rest } = this.props;
+    // Removing invalid form props, to avoid warnings
+    const _props = { ...this.props };
+    delete _props.onValidSubmit;
 
     return (
-      <form {...rest} onSubmit={this.handleSubmit}>
+      <form {..._props} onSubmit={this.handleSubmit}>
         {
           this._createClones(this.props.children)
         }
@@ -144,6 +146,7 @@ class Form extends React.Component {
 Form.defaultProps = {
   onSubmit: () => {},
   onValidSubmit: () => {},
+  noValidate: true,
 };
 
 Form.propTypes = {
@@ -153,6 +156,7 @@ Form.propTypes = {
   ]).isRequired,
   onSubmit: PropTypes.func,
   onValidSubmit: PropTypes.func,
+  noValidate: PropTypes.bool,
 };
 
 export default Form;
