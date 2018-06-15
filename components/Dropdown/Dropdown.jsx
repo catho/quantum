@@ -90,6 +90,8 @@ function itemToString(item = '') {
   return header;
 }
 
+const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
+
 const Select = ({
   items,
   selectedItem,
@@ -105,24 +107,25 @@ const Select = ({
         isOpen,
         getToggleButtonProps,
         getItemProps,
-        highlightedIndex,
         selectedItem: dsSelectedItem,
       }) => (
           <div>
             <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
-              {itemToString(selectedItem.item) || placeholder}
-              <ArrowDown name={!isOpen ? "arrow_drop_down" : "arrow_drop_up"} skin={Colors.GREY['300']} />
+              {itemToString(dsSelectedItem.item) || placeholder}
+              <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.GREY['300']} />
             </DropdownButton>
             {isOpen &&
               <List>
                 {items
-                  .map((item, index) => (
+                  .map(item => (
                     <DropDownItem
                       {
                       ...getItemProps({
                         item,
-                        isSelected: selectedItem === item,
-                      })}>
+                        isSelected: dsSelectedItem === item,
+                      })}
+                      key={itemToString(item.item)}
+                    >
                       <List.Item
                         key={item.value}
                         icon={item.item.icon}
@@ -151,7 +154,7 @@ const ListItemPropType = PropTypes.oneOfType([
         subheader: PropTypes.string,
       }),
     ]),
-  })
+  }),
 ]);
 
 const itemPropType = PropTypes.shape({
@@ -159,15 +162,13 @@ const itemPropType = PropTypes.shape({
   item: ListItemPropType,
 });
 
-const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
-
 Select.propTypes = {
   items: PropTypes.arrayOf(itemPropType),
   selectedItem: itemPropType,
   onChange: PropTypes.func,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-}
+};
 
 Select.defaultProps = {
   items: [],
@@ -175,7 +176,7 @@ Select.defaultProps = {
   onChange: PropTypes.func,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-}
+};
 
 class Dropdown extends React.Component {
   constructor(props) {
@@ -208,6 +209,7 @@ class Dropdown extends React.Component {
       error,
       placeholder,
       name,
+      ...rest
     } = this.props;
 
     const { selectedItem } = this.state;
@@ -217,6 +219,7 @@ class Dropdown extends React.Component {
         {label && <Label htmlFor={id}> {label} </Label>}
 
         <Select
+          {...rest}
           items={items}
           onChange={this.onChange}
           selectedItem={selectedItem}
