@@ -2818,6 +2818,10 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.0.0"
     whatwg-url "^6.4.0"
 
+datalist-polyfill@^1.14.0:
+  version "1.14.0"
+  resolved "http://armazem.devel:4873/datalist-polyfill/-/datalist-polyfill-1.14.0.tgz#cb0da0be9975f957f0669385514c91f2eb9a0ff9"
+
 date-fns@^1.27.2:
   version "1.29.0"
   resolved "http://armazem.devel:4873/date-fns/-/date-fns-1.29.0.tgz#12e609cdcb935127311d04d33334e2960a2a54e6"
