@@ -24,5 +24,12 @@ export default {
 
       return shadows[size] || shadows[1];
     },
+    hexToRgba: (color, opacity) => {
+      const R = parseInt(color.substring(1, 3), 16);
+      const G = parseInt(color.substring(3, 5), 16);
+      const B = parseInt(color.substring(5, 7), 16);
+
+      return `rgba(${R}, ${G}, ${B}, ${opacity})`;
+    }
   },
 };
