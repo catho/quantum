@@ -157,12 +157,12 @@ const ListItemPropType = PropTypes.oneOfType([
   }),
 ]);
 
+const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
+
 const itemPropType = PropTypes.shape({
   value: stringOrNumber,
   item: ListItemPropType,
 });
-
-const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
 
 Select.propTypes = {
   items: PropTypes.arrayOf(itemPropType),
