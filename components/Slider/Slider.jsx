@@ -5,6 +5,7 @@ import SliderComponent from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Colors from '../Colors';
 import Tooltip from '../Tooltip';
+import theme from '../../theme';
 
 const StyledSlider = styled(SliderComponent)`
   &.rc-slider {
@@ -20,15 +21,15 @@ const StyledSlider = styled(SliderComponent)`
 
   .rc-slider-handle {
     border: none;
-    box-shadow: 0 0 5px ${Colors.GREY['600']}4D;
+    box-shadow: 0 0 5px ${theme.mixins.hexToRgba(Colors.GREY['600'], 0.3)};
     margin-left: -10px;
-    width: ${props => (!props.disabled ? '20px' : '15px')};
-    height: ${props => (!props.disabled ? '20px' : '15px')};
+    width: ${({ disabled }) => (!disabled ? '20px' : '15px')};
+    height: ${({ disabled }) => (!disabled ? '20px' : '15px')};
     transition: border 0.1s, box-shadow 0.1s;
 
-    ${props => !props.disabled &&
-      `&:hover {
-        box-shadow: 0 0 1px 5px ${Colors.SECONDARY['500']}80;
+    ${({ disabled }) => !disabled &&
+    `&:hover {
+        box-shadow: 0 0 1px 5px ${theme.mixins.hexToRgba(Colors.SECONDARY['500'], 0.5)};
       }
 
       &:active {
@@ -134,10 +135,10 @@ Slider.defaultProps = {
   disabled: false,
   tooltip: false,
   marks: {},
-  onChange: () => {},
-  onBeforeChange: () => {},
-  onAfterChange: () => {},
-  onClick: () => {},
+  onChange: () => { },
+  onBeforeChange: () => { },
+  onAfterChange: () => { },
+  onClick: () => { },
 };
 
 Slider.propTypes = {

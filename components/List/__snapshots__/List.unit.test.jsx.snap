@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <List
-    bullet={false}
+    bullet=""
     divided={false}
     inline={false}
     items={
@@ -32,7 +32,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "bullet": false,
+      "bullet": "",
       "children": Array [
         <List.Item
           bullet=""
@@ -172,7 +172,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "bullet": false,
+        "bullet": "",
         "children": Array [
           <List.Item
             bullet=""
@@ -322,7 +322,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <List
-    bullet={false}
+    bullet=""
     divided={false}
     inline={false}
     items={Array []}
@@ -340,7 +340,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "bullet": false,
+      "bullet": "",
       "children": Array [],
       "divided": false,
       "inline": false,
@@ -357,7 +357,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "bullet": false,
+        "bullet": "",
         "children": Array [],
         "divided": false,
         "inline": false,
@@ -384,7 +384,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <List
-    bullet={false}
+    bullet=""
     divided={true}
     inline={false}
     items={
@@ -411,7 +411,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "bullet": false,
+      "bullet": "",
       "children": Array [
         <List.Item
           bullet=""
@@ -551,7 +551,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "bullet": false,
+        "bullet": "",
         "children": Array [
           <List.Item
             bullet=""

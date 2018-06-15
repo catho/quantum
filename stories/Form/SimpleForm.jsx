@@ -7,7 +7,7 @@ const SimpleForm = () => (
   <Form >
     <Input
       name="firstName"
-      placeholder="name"
+      label="name"
     />
     <Button
       name="submit"

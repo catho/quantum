@@ -24,7 +24,7 @@ describe('AutoComplete component ', () => {
     const datalist = wrapper.childAt(1);
 
     it('should create a datalist element', () => {
-      expect(datalist.name()).toBe('datalist');
+      expect(datalist.name()).toBe('AutoComplete__Datalist');
       expect(datalist.children().length).toEqual(dataSource.length);
     });
   });

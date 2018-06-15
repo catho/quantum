@@ -1,3 +1,21 @@
+## v0.7.3 - May/2018
+### Added
+Social Buttons:
+  - Google
+  - Facebook
+
+## v0.7.2 - May/2018
+### Changed
+Fixes:
+ - Call onChange input prop, when it is inside a form
+ - Fix input border, changing its width to 2px, as specified in Zeplin and changing its color to red, when there's an error
+ - Add noValidate to Form propTypes and set its default value to true, to not calling default browser validations
+
+## v0.7.1 - May/2018
+### Added
+Fixes:
+ - Form state error
+
 ## v0.7.0 - May/2018
 ### Added
 New Components:

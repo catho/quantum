@@ -1,27 +1,45 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styled from 'styled-components';
+import 'datalist-polyfill';
 
 import Input from '../Input';
 
+const Datalist = styled.datalist`
+  position: relative;
+  top: ${props => (props.error ? '-40px' : '-20px')};
+  left: -2px;
+
+  select {
+    margin-top: initial !important;
+    margin-left: initial !important;
+  }
+`;
+
+const Wrapper = styled.div`
+  position: relative;
+  width: 100%;
+`;
+
 const AutoComplete = (props) => {
-  const { id } = props;
+  const { id, error } = props;
   const dataListId = `${id}_datalist`;
 
   return (
-    <React.Fragment>
+    <Wrapper>
       <Input
         {...props}
         list={dataListId}
       />
 
-      <datalist id={dataListId}>
+      <Datalist id={dataListId} error={error}>
         {
           props.dataSource.map(item => (
             <option value={item} key={`${item}`} />
           ))
         }
-      </datalist>
-    </React.Fragment>
+      </Datalist>
+    </Wrapper>
   );
 };
 

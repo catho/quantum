@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import SocialButtons from './SocialButtons';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../../theme';
 import skins from './skins';
@@ -97,17 +98,26 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({
-  children,
-  icon,
-  size,
-  ...rest
-}) => (
-  <StyledButton {...rest} size={size}>
-    { icon && <ButtonIcon size={size} name={icon} /> }
-    { children }
-  </StyledButton>
-);
+class Button extends React.Component {
+  static Facebook = SocialButtons.Facebook;
+  static Google = SocialButtons.Google;
+
+  render() {
+    const {
+      children,
+      icon,
+      size,
+      ...rest
+    } = this.props;
+
+    return (
+      <StyledButton {...rest} size={size}>
+        { icon && <ButtonIcon size={size} name={icon} /> }
+        { children }
+      </StyledButton>
+    );
+  }
+}
 
 Button.defaultProps = {
   center: false,
