@@ -57,6 +57,7 @@ const exampleTab = (
 
     <Container fluid>
       <ExampleTitle>Social login buttons</ExampleTitle>
+      <p>We provide Google and Facebook login buttons: <code>{'<Button.Facebook'} /></code> and <code>{'<Button.Google />'}</code></p>
       <p>
         The social buttons do not allow any prop that change style, so, props
         like <code>skin</code> or <code>full</code> will not be accepted.
