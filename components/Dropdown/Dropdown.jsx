@@ -98,25 +98,27 @@ const Select = ({
   onChange,
   name,
   placeholder,
+  ...rest
 }) => (
-    <Downshift
-      selectedItem={selectedItem}
-      onChange={onChange}
-      itemToString={({ item }) => itemToString(item)}
-      render={({
+  <Downshift
+    {...rest}
+    selectedItem={selectedItem}
+    onChange={onChange}
+    itemToString={({ item }) => itemToString(item)}
+    render={({
         isOpen,
         getToggleButtonProps,
         getItemProps,
         selectedItem: dsSelectedItem,
       }) => (
-          <div>
-            <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
-              {itemToString(dsSelectedItem.item) || placeholder}
-              <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.GREY['300']} />
-            </DropdownButton>
-            {isOpen &&
-              <List>
-                {items
+        <div>
+          <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
+            {itemToString(dsSelectedItem.item) || placeholder}
+            <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.GREY['300']} />
+          </DropdownButton>
+          {isOpen &&
+          <List>
+            {items
                   .map(item => (
                     <DropDownItem
                       {
@@ -134,11 +136,11 @@ const Select = ({
                     </DropDownItem>
                   ))
                 }
-              </List>}
-          </div>
+          </List>}
+        </div>
         )}
-    />
-  );
+  />
+);
 
 const ListItemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -193,7 +195,7 @@ class Dropdown extends React.Component {
     }
   }
 
-  onChange = (item) => {
+  _onChange = (item) => {
     const { onChange } = this.props;
 
     this.setState({ selectedItem: item });
@@ -221,10 +223,11 @@ class Dropdown extends React.Component {
         <Select
           {...rest}
           items={items}
-          onChange={this.onChange}
+          onChange={this._onChange}
           selectedItem={selectedItem}
           placeholder={placeholder}
           name={name}
+          id={id}
         />
 
         {error && <ErrorMessage>{error}</ErrorMessage>}
