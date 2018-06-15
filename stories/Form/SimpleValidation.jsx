@@ -7,7 +7,7 @@ const SimpleValidation = () => (
   <Form >
     <Input
       name="min"
-      placeholder="Digit at least 5 characters"
+      label="Digit at least 5 characters"
       validate={Validations.MinLength}
       minLength={5}
     />

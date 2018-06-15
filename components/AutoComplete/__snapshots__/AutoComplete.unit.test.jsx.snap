@@ -5,7 +5,7 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
   className="AutoComplete__Wrapper-TpPgp bKfnlE"
 >
   <div
-    className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
   >
     <input
       className="Input__InputTag-INLdc kVbghW"
