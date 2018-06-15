@@ -1,13 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
 import Button from '../../components/Button';
 import { Container, Row, Col } from '../../components/Grid';
-import { Tab, Example, AutoExample } from '../../.storybook/components';
+import { Tab, Example, AutoExample, Title } from '../../.storybook/components';
+
+const ExampleTitle = styled(Title)`
+  margin-top: 60px;
+`;
 
 const exampleTab = (
   <Tab title="Example">
     <Container fluid>
+      <ExampleTitle>Full width button</ExampleTitle>
+      <Example component={<Button full>Full Width</Button>} code="<Button full>Full Width</Button>" />
+
+      <ExampleTitle>Centered button</ExampleTitle>
+      <Example component={<Button center skin="action">Centered</Button>} code={'<Button center skin="action">Centered</Button>'} />
+    </Container>
+
+
+    <Container fluid>
+      <ExampleTitle>Button with icons</ExampleTitle>
       <p>The full catalogue of icons can be found <LinkTo kind="1. Foundation" story="Icons">here</LinkTo>.</p>
       <Row>
         <Col tablet={3}>
@@ -41,8 +56,19 @@ const exampleTab = (
     </Container>
 
     <Container fluid>
-      <Example component={<Button full>Full Width</Button>} code="<Button full>Full Width</Button>" />
-      <Example component={<Button center skin="action">Centered</Button>} code={'<Button center skin="action">Centered</Button>'} />
+      <ExampleTitle>Social login buttons</ExampleTitle>
+      <p>
+        The social buttons do not allow any prop that change style, so, props
+        like <code>skin</code> or <code>full</code> will not be accepted.
+      </p>
+      <Row>
+        <Col tablet={4}>
+          <Example component={<Button.Facebook />} code="<Button.Facebook />" />
+        </Col>
+        <Col tablet={4}>
+          <Example component={<Button.Google />} code="<Button.Google />" />
+        </Col>
+      </Row>
     </Container>
   </Tab>
 );
