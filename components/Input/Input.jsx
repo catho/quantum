@@ -35,7 +35,7 @@ const InputTag = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid ${Colors.GREY['300']};
+  border-bottom: 2px solid ${Colors.GREY['300']};
   box-sizing: border-box;
   color: ${Colors.GREY['900']};
   font-size: 16px;
@@ -152,6 +152,7 @@ class Input extends React.Component {
           render={(ref, { defaultValue, ...props }) => (
             <InputTag
               innerRef={ref}
+              error={error}
               {...props}
               value={defaultValue}
             />
