@@ -98,25 +98,25 @@ const Select = ({
   placeholder,
   ...rest
 }) => (
-    <Downshift
-      {...rest}
-      selectedItem={selectedItem}
-      onChange={onChange}
-      itemToString={({ item }) => itemToString(item)}
-      render={({
+  <Downshift
+    {...rest}
+    selectedItem={selectedItem}
+    onChange={onChange}
+    itemToString={({ item }) => itemToString(item)}
+    render={({
         isOpen,
         getToggleButtonProps,
         getItemProps,
         selectedItem: dsSelectedItem,
       }) => (
-          <div>
-            <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
-              {itemToString(dsSelectedItem.item) || placeholder}
-              <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.GREY['300']} />
-            </DropdownButton>
-            {isOpen &&
-              <List>
-                {items
+        <div>
+          <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
+            {itemToString(dsSelectedItem.item) || placeholder}
+            <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.GREY['300']} />
+          </DropdownButton>
+          {isOpen &&
+          <List>
+            {items
                   .map(item => (
                     <DropDownItem
                       {
@@ -134,11 +134,11 @@ const Select = ({
                     </DropDownItem>
                   ))
                 }
-              </List>}
-          </div>
+          </List>}
+        </div>
         )}
-    />
-  );
+  />
+);
 
 const ListItemPropType = PropTypes.oneOfType([
   PropTypes.string,
