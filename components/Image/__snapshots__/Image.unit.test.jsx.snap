@@ -23,7 +23,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "alt": "Example image",
-      "decode": true,
+      "decode": false,
       "loader": <Loader.Image />,
       "src": "example.png",
       "unloader": null,
@@ -39,7 +39,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "alt": "Example image",
-        "decode": true,
+        "decode": false,
         "loader": <Loader.Image />,
         "src": "example.png",
         "unloader": null,

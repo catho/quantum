@@ -19,23 +19,23 @@ const statusStepColor = ({ status }) => {
   const stepColors = {
     normal: `
       color: ${Colors.GREY['400']};
-    
+
       &:after {
         background-color: ${Colors.GREY['100']};
       }
-    
+
       &:before {
         background-color: ${Colors.WHITE};
-        border: 2px solid ${Colors.GREY['100']};     
+        border: 2px solid ${Colors.GREY['100']};
       }
     `,
     active: `
       color: ${Colors.PRIMARY['500']};
-  
+
       &:after {
         background-color: ${Colors.PRIMARY['500']};
       }
-    
+
       &:before {
         background-color: ${Colors.PRIMARY['500']};
         border: 2px solid ${Colors.PRIMARY['500']};
@@ -43,11 +43,11 @@ const statusStepColor = ({ status }) => {
     `,
     done: `
       color: ${Colors.GREY['400']};
-      
+
       &:after {
         background-color: ${Colors.PRIMARY['500']};
       }
-      
+
       &:before {
         background-color: ${Colors.WHITE};
         border: 2px solid ${Colors.PRIMARY['500']};
@@ -61,7 +61,7 @@ const statusStepColor = ({ status }) => {
 const StepIcon = styled(Icon)`
   position: relative;
   top: -42px;
-  
+
   ${statusFontColor}
 `;
 
@@ -73,11 +73,11 @@ const ProgressStep = styled.li`
   position: relative;
   text-align: center;
   margin-top: 50px;
-  
+
   @media (max-width: ${BREAKPOINTS.phone}px) {
     font-size: 10px;
   }
-  
+
   &:after {
     position: absolute;
     top: 15px;
@@ -102,7 +102,7 @@ const ProgressStep = styled.li`
   &:first-child:after {
     content: none;
   }
-  
+
   ${statusStepColor}
 `;
 
@@ -114,7 +114,7 @@ const Title = styled.p`
   overflow: hidden;
   width: 100%;
   word-wrap: break-word;
-  
+
   @media (min-width: ${BREAKPOINTS.phone + 1}px) and (max-width: ${BREAKPOINTS.tablet}px) {
     top: -34px;
   }

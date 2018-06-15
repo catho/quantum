@@ -7,7 +7,7 @@ const AdvancedValidation = () => (
   <Form>
     <Input
       name="email"
-      placeholder="Required"
+      label="Required"
       validate={[
         Validations.Required,
         {
@@ -18,7 +18,7 @@ const AdvancedValidation = () => (
     />
     <Input
       name="catho"
-      placeholder="This field only accepts Catho as a value"
+      label="This field only accepts Catho as a value"
       validate={
         ({ value }) => (value === 'Catho' ? '' : 'Catho, please')
       }
@@ -36,7 +36,7 @@ const AdvancedValidationCode = `
 <Form>
   <Input
     name="email"
-    placeholder="Required"
+    label="Required"
     validate={[
       Validations.Required,
       {
@@ -47,7 +47,7 @@ const AdvancedValidationCode = `
   />
   <Input
     name="catho"
-    placeholder="This field only accepts Catho as a value"
+    label="This field only accepts Catho as a value"
     validate={
       ({ value }) => (value === 'Catho' ? '' : 'Catho, please')
     }

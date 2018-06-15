@@ -11,13 +11,23 @@ import Colors from '../Colors';
 const bullets = ({ bullet }) =>
   (bullet
     ? css`
-        list-style: ${bullet || 'initial'};
+        li {
+          position: relative;
+        }
+        li:before {
+          content: '${bullet}';
+          position: absolute;
+          top: 12%;
+          right: 102%;
+        }
+        padding-left: 26px;
       `
-    : 'padding: 0;');
+    : 'padding-left: 0;');
 
 const inlineList = ({ inline }) => css`
-  flex-direction: ${inline ? 'row' : 'column'};
-  flex-wrap: wrap;
+  li {
+    ${inline && 'display: inline-block;'};
+  }
 `;
 
 const dividedList = ({ divided, inline }) =>
@@ -33,10 +43,8 @@ const dividedList = ({ divided, inline }) =>
 `;
 
 const Unordered = styled.ul`
-  display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
 
   ${inlineList} ${bullets} ${dividedList}
 `;
@@ -44,7 +52,6 @@ const Unordered = styled.ul`
 Unordered.displayName = 'UnorderedList';
 
 const Ordered = styled.ol`
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -112,7 +119,7 @@ class List extends React.Component {
 List.defaultProps = {
   items: [],
   ordered: false,
-  bullet: false,
+  bullet: '',
   inline: false,
   divided: false,
   children: null,
@@ -135,10 +142,7 @@ List.propTypes = {
   ordered: PropTypes.bool,
   inline: PropTypes.bool,
   divided: PropTypes.bool,
-  bullet: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.oneOf(['circle', 'square']),
-  ]),
+  bullet: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,

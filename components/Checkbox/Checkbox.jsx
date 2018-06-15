@@ -27,32 +27,30 @@ const StyledLabel = styled(Label)`
   cursor: inherit;
   display: initial;
   position: relative;
-  padding-left: 30px;
-  top: 3px;
+  margin-bottom: 0;
+  padding-left: 24px;
 
   ${({ disabled }) => disabled && `
     color: ${Colors.GREY['300']};
   `}
 
   ${({ checked, disabled }) => checked && `
-    &:before {
+    &:after {
+      content: ' ';
+      display: inline-block;
+      width: 7px;
+      position: absolute;
+      height: 14px;
+      top: -2px;
+      left: 0;
+
       border: solid ${disabled ? Colors.GREY['300'] : Colors.WHITE};
       border-radius: 3px;
       border-width: 0 4px 4px 0;
-      content: ' ';
-      display: inline-block;
-      height: 14px;
-      left: 8px;
-      position: absolute;
-      top: -1px;
+
       transform: rotate(45deg);
-      width: 7px;
     }
   `}
-`;
-
-const StyledFieldGroup = styled(FieldGroup)`
-  height: 24px;
 
   ${({ disabled }) => `
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
@@ -62,13 +60,14 @@ const StyledFieldGroup = styled(FieldGroup)`
     ${theme.mixins.transition()};
     ${props => getColors(props)};
 
+    position: absolute;
     border-radius: 4px;
     content: ' ';
     display: inline-block;
+    left: -8px;
+    top: -4px;
     height: 24px;
     width: 24px;
-    margin-right: 5px;
-    position: absolute;
   }
 
   &:hover:before {
@@ -76,6 +75,16 @@ const StyledFieldGroup = styled(FieldGroup)`
       border: 1px solid ${Colors.SECONDARY['500']};
     `}
   }
+`;
+
+const StyledFieldGroup = styled(FieldGroup)`
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
 `;
 
 const StyledCheckbox = styled.input`
@@ -114,7 +123,7 @@ class Checkbox extends React.Component {
     const { checked } = this.state;
 
     return (
-      <StyledFieldGroup checked={checked} disabled={disabled}>
+      <StyledFieldGroup>
         <StyledLabel checked={checked} disabled={disabled}>
           <StyledCheckbox
             {...rest}
@@ -135,7 +144,7 @@ Checkbox.defaultProps = {
   id: '',
   checked: false,
   disabled: false,
-  onChange: () => {},
+  onChange: () => { },
 };
 
 Checkbox.propTypes = {
