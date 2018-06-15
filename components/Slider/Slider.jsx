@@ -37,7 +37,7 @@ const StyledSlider = styled(SliderComponent)`
         box-shadow: none;
       }
       `
-  }
+}
 }
 
   .rc-slider-mark {
@@ -80,10 +80,10 @@ const Handle = ({
   dragging,
   ...restProps
 }) => (
-    <Tooltip slider offset={offset.toString()} text={value.toString()}>
-      <OriginalHandle value={value} offset={offset} {...restProps} />
-    </Tooltip>
-  );
+  <Tooltip slider offset={offset.toString()} text={value.toString()}>
+    <OriginalHandle value={value} offset={offset} {...restProps} />
+  </Tooltip>
+);
 
 Handle.defaultProps = {
   value: 0,

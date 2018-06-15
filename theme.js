@@ -30,6 +30,6 @@ export default {
       const B = parseInt(color.substring(5, 7), 16);
 
       return `rgba(${R}, ${G}, ${B}, ${opacity})`;
-    }
+    },
   },
 };

@@ -15,27 +15,13 @@ const Wrapper = styled.div`
   margin-right: 10px;
 `;
 
-const StyledInput = styled.input`
-  display: none;
-
-  &:checked + ${StyledLabel}:before {
-    background-color: ${Colors.SECONDARY[500]};
-    box-shadow: inset 0 0 0 3px ${Colors.WHITE};
-  }
-
-  &:disabled:checked + ${StyledLabel}:before {
-    background-color: ${Colors.GREY[100]};
-    box-shadow: inset 0 0 0 3px ${Colors.WHITE};
-  }
-`;
-
 const StyledLabel = styled(Label)`
   cursor: inherit;
   display: inline-block;
 
   &:before {
     content: ' ';
-    border: 1px solid ${({ disabled }) => disabled ? Colors.GREY[100] : Colors.GREY[300]};
+    border: 1px solid ${({ disabled }) => (disabled ? Colors.GREY[100] : Colors.GREY[300])};
     border-radius: 50%;
     display: inline-block;
     height: ${commonAttr.height};
@@ -53,7 +39,21 @@ const StyledLabel = styled(Label)`
   }
 
   &:hover:before {
-    border: 1px solid ${({ disabled }) => disabled ? Colors.GREY[100] : Colors.SECONDARY[500]};
+    border: 1px solid ${({ disabled }) => (disabled ? Colors.GREY[100] : Colors.SECONDARY[500])};
+    box-shadow: inset 0 0 0 3px ${Colors.WHITE};
+  }
+`;
+
+const StyledInput = styled.input`
+  display: none;
+
+  &:checked + ${StyledLabel}:before {
+    background-color: ${Colors.SECONDARY[500]};
+    box-shadow: inset 0 0 0 3px ${Colors.WHITE};
+  }
+
+  &:disabled:checked + ${StyledLabel}:before {
+    background-color: ${Colors.GREY[100]};
     box-shadow: inset 0 0 0 3px ${Colors.WHITE};
   }
 `;
