@@ -5,33 +5,34 @@ exports[`Input component  should match the snapshot 1`] = `
   className="FieldGroup-iFQzIc dToppz"
 >
   
-  <select
-    className="Dropdown__Select-kLQAl fRjOyV"
-    id="dropdown"
-    name="Dropdown"
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    value=""
-  >
-    <option
-      disabled={true}
-      value=""
+  <div>
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      data-toggle={true}
+      name="Dropdown"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      type="button"
     >
-      Select...
-    </option>
-  </select>
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE kfWEYF"
-    style={
-      Object {
-        "color": "#263238",
-      }
-    }
-  >
-    keyboard_arrow_down
-  </span>
+      Selecione
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        style={
+          Object {
+            "color": "#90A4AE",
+          }
+        }
+      >
+        arrow_drop_down
+      </span>
+    </button>
+  </div>
   
 </div>
 `;
@@ -48,33 +49,34 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     Text label
      
   </label>
-  <select
-    className="Dropdown__Select-kLQAl fRjOyV"
-    id="dropdown"
-    name="Dropdown"
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    value=""
-  >
-    <option
-      disabled={true}
-      value=""
+  <div>
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      data-toggle={true}
+      name="Dropdown"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      type="button"
     >
-      Select...
-    </option>
-  </select>
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE kfWEYF"
-    style={
-      Object {
-        "color": "#263238",
-      }
-    }
-  >
-    keyboard_arrow_down
-  </span>
+      Selecione
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        style={
+          Object {
+            "color": "#90A4AE",
+          }
+        }
+      >
+        arrow_drop_down
+      </span>
+    </button>
+  </div>
   
 </div>
 `;
@@ -84,33 +86,34 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   className="FieldGroup-iFQzIc dToppz"
 >
   
-  <select
-    className="Dropdown__Select-kLQAl fRjOyV"
-    id="dropdown"
-    name="Dropdown"
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    value=""
-  >
-    <option
-      disabled={true}
-      value=""
+  <div>
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      data-toggle={true}
+      name="Dropdown"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      type="button"
     >
-      Select...
-    </option>
-  </select>
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE kfWEYF"
-    style={
-      Object {
-        "color": "#263238",
-      }
-    }
-  >
-    keyboard_arrow_down
-  </span>
+      Selecione
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        style={
+          Object {
+            "color": "#90A4AE",
+          }
+        }
+      >
+        arrow_drop_down
+      </span>
+    </button>
+  </div>
   <div
     className="ErrorMessage-eJhZpN bzMSZo"
   >
@@ -124,48 +127,34 @@ exports[`Input component  with items should match the snapshot 1`] = `
   className="FieldGroup-iFQzIc dToppz"
 >
   
-  <select
-    className="Dropdown__Select-kLQAl fRjOyV"
-    id="dropdown"
-    name="Dropdown"
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    value=""
-  >
-    <option
-      disabled={true}
-      value=""
+  <div>
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      data-toggle={true}
+      name="Dropdown"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      type="button"
     >
-      Select...
-    </option>
-    <option
-      value="fooKey"
-    >
-      foo
-    </option>
-    <option
-      value="barKey"
-    >
-      bar
-    </option>
-    <option
-      value="bazKey"
-    >
-      baz
-    </option>
-  </select>
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE kfWEYF"
-    style={
-      Object {
-        "color": "#263238",
-      }
-    }
-  >
-    keyboard_arrow_down
-  </span>
+      Selecione
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        style={
+          Object {
+            "color": "#90A4AE",
+          }
+        }
+      >
+        arrow_drop_down
+      </span>
+    </button>
+  </div>
   
 </div>
 `;
