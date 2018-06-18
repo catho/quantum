@@ -19,6 +19,9 @@ injectGlobal`
   body {
     margin: 0;
     padding: 0;
+  }
+
+  * {
     font-family: 'Montserrat';
   }
 
@@ -86,7 +89,7 @@ injectGlobal`
 const Frame = storyFn => (
   <React.Fragment>
     <Container>
-      { storyFn() }
+      {storyFn()}
     </Container>
   </React.Fragment>
 );
