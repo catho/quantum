@@ -3105,6 +3105,10 @@ dotenv@^5.0.1:
   version "5.0.1"
   resolved "http://armazem.devel:4873/dotenv/-/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
 
+downshift@^1.31.16:
+  version "1.31.16"
+  resolved "http://armazem.devel:4873/downshift/-/downshift-1.31.16.tgz#acd81631539502d4112d01bd573654419fd9f640"
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "http://armazem.devel:4873/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"

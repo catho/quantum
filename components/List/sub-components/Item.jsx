@@ -27,9 +27,7 @@ const ListItem = styled.div`
   flex-direction: row;
   align-items: center;
 
-  padding: 4px 8px 8px 4px;
-
-  margin-bottom: 4px;
+  padding: 10px 16px;
 
   ${bulletValue};
 `;

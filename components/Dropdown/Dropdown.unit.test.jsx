@@ -17,9 +17,9 @@ describe('Input component ', () => {
     const dropdown = (
       <Dropdown
         items={[
-          { key: 'fooKey', value: 'foo' },
-          { key: 'barKey', value: 'bar' },
-          { key: 'bazKey', value: 'baz' },
+          { value: 'fooKey', item: 'foo' },
+          { value: 'barKey', item: 'bar' },
+          { value: 'bazKey', item: 'baz' },
         ]}
       />
     );
@@ -49,11 +49,11 @@ describe('Input component ', () => {
     const mockFn = jest.fn();
 
     const items = [{
-      key: 'fooKey',
-      value: 'foo',
+      value: 'fooKey',
+      item: 'foo',
     }, {
-      key: 'barKey',
-      value: 'bar',
+      value: 'barKey',
+      item: 'bar',
     }];
 
     const dropdown = (
@@ -67,20 +67,17 @@ describe('Input component ', () => {
     const wrapper = shallow(dropdown);
 
     it('should init value with an empty label', () => {
-      expect(wrapper.state('value')).toEqual('');
+      expect(wrapper.state('selectedItem')).toEqual({});
     });
 
     it('should call the callback and set a new value', () => {
       const [selectedItem] = items;
-      const { key: value } = selectedItem;
-      const valueObj = { value };
-      const mockEvent = { target: valueObj };
 
-      wrapper.find('#dropdown').simulate('change', mockEvent);
+      wrapper.find('#dropdown').simulate('change', selectedItem);
 
-      expect(wrapper.state('value')).toEqual(value);
+      expect(wrapper.state('selectedItem')).toEqual(selectedItem);
       expect(mockFn).toHaveBeenCalledTimes(1);
-      expect(mockFn).toBeCalledWith(mockEvent, valueObj);
+      expect(mockFn).toBeCalledWith(null, { selectedItem });
     });
   });
 });
