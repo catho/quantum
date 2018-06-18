@@ -1,3 +1,7 @@
+## v0.7.4 - May/2018
+### Removed
+AutoComplete
+
 ## v0.7.3 - May/2018
 ### Added
 Social Buttons:
