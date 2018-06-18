@@ -35,7 +35,7 @@ const InputTag = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid ${Colors.GREY['300']};
+  border-bottom: 2px solid ${Colors.GREY['300']};
   box-sizing: border-box;
   color: ${Colors.GREY['900']};
   font-size: 16px;
@@ -73,7 +73,11 @@ const InputIcon = styled(Icon)`
 `;
 
 const InputFieldGroup = styled(FieldGroup)`
-  margin-top: 40px;
+  margin: 40px 0 20px;
+
+  &:first-child {
+    margin-top: 20px;
+  }
 `;
 
 /** A text field component to get user text data */
@@ -152,6 +156,7 @@ class Input extends React.Component {
           render={(ref, { defaultValue, ...props }) => (
             <InputTag
               innerRef={ref}
+              error={error}
               {...props}
               value={defaultValue}
             />

@@ -1,4 +1,3 @@
-import AutoComplete from './components/AutoComplete';
 import Button from './components/Button';
 import Checkbox from './components/Checkbox';
 import Colors from './components/Colors';
@@ -23,7 +22,6 @@ import { Wizard, Step } from './components/Wizard';
 import Popover from './components/Popover';
 
 export {
-  AutoComplete,
   Button,
   Card,
   Checkbox,

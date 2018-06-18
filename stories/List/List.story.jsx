@@ -29,7 +29,7 @@ const ListExample = ({ code, component }) => (
       }
     </Col>
     <Col tablet={4}>
-      { component }
+      {component}
     </Col>
   </React.Fragment>
 );
@@ -72,7 +72,7 @@ storiesOf('10. List', module).add('List', () => (
 <List inline> ... </List>
 <List divided inline> ... </List>
 <List ordered> ... </List>
-<List divided bullet="circle"> ... </List>
+<List divided bullet="»"> ... </List>
                 `}
                 showTitle={false}
               />
@@ -110,7 +110,7 @@ storiesOf('10. List', module).add('List', () => (
           <Col tablet={2}>
             <List
               divided
-              bullet="circle"
+              bullet="»"
               items={[
                 'Tomato sauce',
                 'Mustard',

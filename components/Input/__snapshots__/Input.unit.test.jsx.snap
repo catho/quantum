@@ -2,10 +2,10 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+  className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
 >
   <input
-    className="Input__InputTag-INLdc kVbghW"
+    className="Input__InputTag-INLdc jYXMrh"
     id=""
     maxLength=""
     onBlur={[Function]}
@@ -21,10 +21,10 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+  className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
 >
   <input
-    className="Input__InputTag-INLdc kVbghW"
+    className="Input__InputTag-INLdc jYXMrh"
     id="input-with-label"
     maxLength=""
     onBlur={[Function]}
@@ -45,10 +45,10 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="Input__InputFieldGroup-bdQEwu cHZNqw FieldGroup-iFQzIc dToppz"
+  className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
 >
   <input
-    className="Input__InputTag-INLdc kVbghW"
+    className="Input__InputTag-INLdc bQKsHu"
     id=""
     maxLength=""
     onBlur={[Function]}

@@ -98,7 +98,6 @@ const Select = ({
   />
 );
 
-//{ items, selectedItem, onChange, name, placeholder = 'Selecione' }
 Select.propTypes = {
   items: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
@@ -129,7 +128,7 @@ Select.propTypes = {
   onChange: PropTypes.func,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-}
+};
 
 Select.defaultProps = {
   items: [],
@@ -149,7 +148,7 @@ Select.defaultProps = {
   onChange: PropTypes.func,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-}
+};
 
 class Dropdown extends React.Component {
   constructor(props) {
@@ -188,7 +187,7 @@ class Dropdown extends React.Component {
 
     return (
       <FieldGroup>
-        { label && <Label htmlFor={id}> {label} </Label> }
+        {label && <Label htmlFor={id}> {label} </Label>}
 
         <Select
           items={items}
@@ -212,9 +211,7 @@ Dropdown.defaultProps = {
   name: 'Dropdown',
   id: 'dropdown',
   items: [],
-  onChange: () => {},
-  onBlur: () => {},
-  onFocus: () => {},
+  onChange: () => { },
 };
 
 Dropdown.propTypes = {
@@ -229,8 +226,6 @@ Dropdown.propTypes = {
     value: PropTypes.node,
   })),
   onChange: PropTypes.func,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
 };
 
 export default Dropdown;
