@@ -7,11 +7,11 @@ import { Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 
 const getColors = ({ disabled, checked }) => {
-  let bgColor = checked ? Colors.SECONDARY['500'] : Colors.WHITE;
-  let borderColor = checked ? Colors.SECONDARY['500'] : Colors.GREY['300'];
+  let bgColor = checked ? Colors.PRIMARY['500'] : Colors.WHITE;
+  let borderColor = checked ? Colors.PRIMARY['500'] : Colors.SECONDARY['300'];
 
   if (disabled) {
-    borderColor = Colors.GREY['100'];
+    borderColor = Colors.SECONDARY['100'];
     bgColor = Colors.WHITE;
   }
 
@@ -31,7 +31,7 @@ const StyledLabel = styled(Label)`
   padding-left: 24px;
 
   ${({ disabled }) => disabled && `
-    color: ${Colors.GREY['300']};
+    color: ${Colors.SECONDARY['300']};
   `}
 
   ${({ checked, disabled }) => checked && `
@@ -44,7 +44,7 @@ const StyledLabel = styled(Label)`
       top: -2px;
       left: 0;
 
-      border: solid ${disabled ? Colors.GREY['300'] : Colors.WHITE};
+      border: solid ${disabled ? Colors.SECONDARY['300'] : Colors.WHITE};
       border-radius: 3px;
       border-width: 0 4px 4px 0;
 
@@ -72,7 +72,7 @@ const StyledLabel = styled(Label)`
 
   &:hover:before {
     ${({ disabled }) => !disabled && `
-      border: 1px solid ${Colors.SECONDARY['500']};
+      border: 1px solid ${Colors.PRIMARY['500']};
     `}
   }
 `;

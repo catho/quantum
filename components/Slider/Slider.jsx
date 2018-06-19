@@ -14,14 +14,14 @@ const StyledSlider = styled(SliderComponent)`
 
   &.rc-slider-disabled {
     .rc-slider-handle {
-      background-color: ${Colors.GREY[500]};
+      background-color: ${Colors.SECONDARY[500]};
     }
     background-color: transparent;
   }
 
   .rc-slider-handle {
     border: none;
-    box-shadow: 0 0 5px ${theme.mixins.hexToRgba(Colors.GREY['600'], 0.3)};
+    box-shadow: 0 0 5px ${theme.mixins.hexToRgba(Colors.SECONDARY['600'], 0.3)};
     margin-left: -10px;
     width: ${({ disabled }) => (!disabled ? '20px' : '15px')};
     height: ${({ disabled }) => (!disabled ? '20px' : '15px')};
@@ -29,11 +29,11 @@ const StyledSlider = styled(SliderComponent)`
 
     ${({ disabled }) => !disabled &&
     `&:hover {
-        box-shadow: 0 0 1px 5px ${theme.mixins.hexToRgba(Colors.SECONDARY['500'], 0.5)};
+        box-shadow: 0 0 1px 5px ${theme.mixins.hexToRgba(Colors.PRIMARY['500'], 0.5)};
       }
 
       &:active {
-        border: 1px solid ${Colors.SECONDARY['500']};
+        border: 1px solid ${Colors.PRIMARY['500']};
         box-shadow: none;
       }
       `
@@ -59,7 +59,7 @@ const StyledSlider = styled(SliderComponent)`
   }
 
   .rc-slider-track {
-    background-color: ${Colors.SECONDARY['500']};
+    background-color: ${Colors.PRIMARY['500']};
   }
 
   .rc-slider-mark {

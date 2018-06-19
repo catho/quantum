@@ -18,8 +18,8 @@ export default {
     shadow: (size = 1) => {
       const shadows = [
         'box-shadow: none;',
-        `box-shadow: 0 2px 5px ${Colors.GREY['600']}4D`,
-        `box-shadow: 0 2px 6px ${Colors.GREY['600']}99`,
+        `box-shadow: 0 2px 5px ${Colors.SECONDARY['600']}4D`,
+        `box-shadow: 0 2px 6px ${Colors.SECONDARY['600']}99`,
       ];
 
       return shadows[size] || shadows[1];

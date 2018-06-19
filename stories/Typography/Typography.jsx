@@ -11,11 +11,11 @@ const Font = styled.div`
 
 const H = styled.span`
   font-size: ${props => props.size}px;
-  color: ${Colors.GREY['900']};
+  color: ${Colors.SECONDARY['900']};
 `;
 
 const Link = styled.a`
-  color: ${Colors.SECONDARY['500']};
+  color: ${Colors.PRIMARY['500']};
 `;
 
 const P = styled.p`

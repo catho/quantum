@@ -130,6 +130,7 @@ class Tooltip extends Component {
 Tooltip.propTypes = {
   text: PropTypes.string,
   skin: PropTypes.oneOf([
+    'primary',
     'info',
     'danger',
     'success',
@@ -148,7 +149,7 @@ Tooltip.propTypes = {
 
 Tooltip.defaultProps = {
   text: 'Tooltip',
-  skin: 'info',
+  skin: 'primary',
   place: 'top',
   offset: '',
   slider: false,

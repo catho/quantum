@@ -7,9 +7,9 @@ import { BREAKPOINTS } from '../../Grid/sub-components';
 
 const statusFontColor = ({ status }) => {
   const statusColors = {
-    normal: Colors.GREY['100'],
+    normal: Colors.SECONDARY['100'],
     active: Colors.WHITE,
-    done: Colors.PRIMARY['500'],
+    done: Colors.BRAND1['500'],
   };
 
   return `color: ${statusColors[status] || statusColors.normal};`;
@@ -18,39 +18,39 @@ const statusFontColor = ({ status }) => {
 const statusStepColor = ({ status }) => {
   const stepColors = {
     normal: `
-      color: ${Colors.GREY['400']};
+      color: ${Colors.SECONDARY['400']};
 
       &:after {
-        background-color: ${Colors.GREY['100']};
+        background-color: ${Colors.SECONDARY['100']};
       }
 
       &:before {
         background-color: ${Colors.WHITE};
-        border: 2px solid ${Colors.GREY['100']};
+        border: 2px solid ${Colors.SECONDARY['100']};
       }
     `,
     active: `
-      color: ${Colors.PRIMARY['500']};
+      color: ${Colors.BRAND1['500']};
 
       &:after {
-        background-color: ${Colors.PRIMARY['500']};
+        background-color: ${Colors.BRAND1['500']};
       }
 
       &:before {
-        background-color: ${Colors.PRIMARY['500']};
-        border: 2px solid ${Colors.PRIMARY['500']};
+        background-color: ${Colors.BRAND1['500']};
+        border: 2px solid ${Colors.BRAND1['500']};
       }
     `,
     done: `
-      color: ${Colors.GREY['400']};
+      color: ${Colors.SECONDARY['400']};
 
       &:after {
-        background-color: ${Colors.PRIMARY['500']};
+        background-color: ${Colors.BRAND1['500']};
       }
 
       &:before {
         background-color: ${Colors.WHITE};
-        border: 2px solid ${Colors.PRIMARY['500']};
+        border: 2px solid ${Colors.BRAND1['500']};
       }
     `,
   };

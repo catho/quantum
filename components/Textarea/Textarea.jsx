@@ -6,7 +6,7 @@ import theme from '../../theme';
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 
 const Textfield = styled.textarea`
-  border: 1px solid ${Colors.GREY['900']};
+  border: 1px solid ${Colors.SECONDARY['900']};
   border-radius: ${theme.sizes.radius};
   box-sizing: border-box;
   color: inherit;
@@ -23,7 +23,7 @@ const Textfield = styled.textarea`
   }
 
   ${props => props.error && `
-    border-color: ${Colors.DANGER['400'].LIPSTICK};
+    border-color: ${Colors.DANGER['500']};
   `}
 `;
 

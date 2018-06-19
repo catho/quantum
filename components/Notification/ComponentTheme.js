@@ -2,8 +2,8 @@ import Colors from '../Colors';
 
 const ComponentTheme = {
   default: {
-    backgroundColor: Colors.GREY['500'],
-    borderColor: Colors.GREY['600'],
+    backgroundColor: Colors.SECONDARY['500'],
+    borderColor: Colors.SECONDARY['600'],
     color: Colors.WHITE,
   },
   success: {
@@ -12,8 +12,8 @@ const ComponentTheme = {
     color: Colors.WHITE,
   },
   warning: {
-    backgroundColor: Colors.WARMING['400'],
-    borderColor: Colors.WARMING['600'],
+    backgroundColor: Colors.WARNING['400'],
+    borderColor: Colors.WARNING['600'],
     color: Colors.WHITE,
   },
   error: {

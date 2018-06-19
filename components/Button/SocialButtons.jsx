@@ -20,7 +20,7 @@ const sharedStyles = `
 `;
 
 const Facebook = styled.button`
-  background-color: #3c5193;
+  background-color: ${Colors.FACEBOOK};
   background-image: url(${facebookLogo});
   background-repeat: no-repeat;
   background-size: 8px 15px;
@@ -44,7 +44,7 @@ const Google = styled.button`
     left: 1px;
     top: 1px;
   }
-  background-color: #4285f4;
+  background-color: ${Colors.GOOGLE};
   ${sharedStyles}
 `;
 

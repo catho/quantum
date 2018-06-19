@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Colors from '../Colors';
 import { Button, Container, Thumbnail, HeaderText, Title, SupportText, Media, Divider } from '../Card/sub-components/';
 
 const elevation = ({ elevation: level, hoverElevation: hoverLevel }) => {
@@ -17,7 +18,7 @@ const elevation = ({ elevation: level, hoverElevation: hoverLevel }) => {
 };
 
 const CardWrapper = styled.article`
-  background-color: #fff;
+  background-color: ${Colors.WHITE};
   border-radius: 2px;
   display: inline-block;
   position: relative;

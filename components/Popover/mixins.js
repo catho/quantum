@@ -115,7 +115,7 @@ export default {
 
   title({ title: text }) {
     return (text
-      ? `border-bottom: 1px solid ${Colors.GREY['50']};`
+      ? `border-bottom: 1px solid ${Colors.SECONDARY['50']};`
       : 'padding-bottom: 0;'
     );
   },

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
 import styled from 'styled-components';
 import Icon from '../../components/Icon';
-import ColorPalette from '../../components/Colors';
+import Colors from '../../components/Colors';
 
 import {
   Heading,
@@ -29,11 +29,11 @@ const exampleIcons = [
   <Icon name="access_alarm" />,
   <Icon name="audiotrack" />,
   <Icon name="attach_money" />,
-  <Icon name="autorenew" skin={ColorPalette.ACTION['500']} />,
-  <Icon name="check_circle" skin={ColorPalette.SECONDARY['700']} />,
-  <Icon name="clear" skin={ColorPalette.COMPLEMENTARY['400']} />,
-  <Icon name="directions_bike" skin={ColorPalette.WARMING['900']} />,
-  <Icon name="event" skin={ColorPalette.DANGER['300']} />,
+  <Icon name="autorenew" skin={Colors.ACTION['500']} />,
+  <Icon name="check_circle" skin={Colors.SECONDARY['700']} />,
+  <Icon name="clear" skin={Colors.INFO['400']} />,
+  <Icon name="directions_bike" skin={Colors.WARNING['900']} />,
+  <Icon name="event" skin={Colors.DANGER['300']} />,
 ];
 
 const exampleCode = `<Icon name="thumb_up" />
@@ -44,11 +44,11 @@ const exampleCode = `<Icon name="thumb_up" />
 <Icon name="access_alarm" />
 <Icon name="audiotrack" />
 <Icon name="attach_money" />
-<Icon name="autorenew" skin={ColorPalette.ACTION['500']} />
-<Icon name="check_circle" skin={ColorPalette.SECONDARY['700']} />
-<Icon name="clear" skin={ColorPalette.COMPLEMENTARY['400']} />
-<Icon name="directions_bike" skin={ColorPalette.WARMING['900']} />
-<Icon name="event" skin={ColorPalette.DANGER['300']} />
+<Icon name="autorenew" skin={Colors.ACTION['500']} />
+<Icon name="check_circle" skin={Colors.SECONDARY['700']} />
+<Icon name="clear" skin={Colors.INFO['400']} />
+<Icon name="directions_bike" skin={Colors.WARNING['900']} />
+<Icon name="event" skin={Colors.DANGER['300']} />
 `;
 
 storiesOf('1. Foundation', module)

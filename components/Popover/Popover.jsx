@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Icon from '../Icon';
 import Ribbon from '../Ribbon';
 import mixins from './mixins';
+import Colors from '../Colors';
+import theme from '../../theme';
 
 const PADDING = '18px 24px';
 
@@ -14,9 +16,9 @@ const Wrapper = styled.div`
 
 const PopoverContainer = styled.div`
   border-radius: 8px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2),
-              0 8px 14px 3px rgba(0, 0, 0, 0.12),
-              0 8px 10px 1px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 3px 3px 0 ${theme.mixins.hexToRgba(Colors.BLACK, 0.2)},
+              0 8px 14px 3px ${theme.mixins.hexToRgba(Colors.BLACK, 0.12)},
+              0 8px 10px 1px ${theme.mixins.hexToRgba(Colors.BLACK, 0.14)};
   position: absolute;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   z-index: 100;

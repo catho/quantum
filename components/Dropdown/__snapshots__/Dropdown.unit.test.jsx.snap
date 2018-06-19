@@ -10,7 +10,7 @@ exports[`Input component  should match the snapshot 1`] = `
       aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -25,7 +25,7 @@ exports[`Input component  should match the snapshot 1`] = `
         className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
         style={
           Object {
-            "color": "#90A4AE",
+            "color": "#93a3ad",
           }
         }
       >
@@ -54,7 +54,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
       aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -69,7 +69,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
         className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
         style={
           Object {
-            "color": "#90A4AE",
+            "color": "#93a3ad",
           }
         }
       >
@@ -91,7 +91,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
       aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -106,7 +106,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
         className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
         style={
           Object {
-            "color": "#90A4AE",
+            "color": "#93a3ad",
           }
         }
       >
@@ -115,7 +115,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     </button>
   </div>
   <div
-    className="ErrorMessage-eJhZpN bzMSZo"
+    className="ErrorMessage-eJhZpN jUpnFq"
   >
     Error message
   </div>
@@ -132,7 +132,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
       aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw fsOTvL"
+      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -147,7 +147,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
         className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
         style={
           Object {
-            "color": "#90A4AE",
+            "color": "#93a3ad",
           }
         }
       >

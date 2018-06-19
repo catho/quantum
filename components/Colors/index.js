@@ -121,4 +121,6 @@ export default {
   },
   BLACK: '#000000',
   WHITE: '#FFFFFF',
+  FACEBOOK: '#3c5193',
+  GOOGLE: '#4285f4',
 };

@@ -99,7 +99,7 @@ export default () => (
     <ColorPallete>
       {
         Object.entries(Colors)
-        .filter(([name]) => !['BLACK', 'WHITE'].includes(name))
+        .filter(([name]) => !['BLACK', 'WHITE', 'FACEBOOK', 'GOOGLE'].includes(name))
         .map(([name, value]) => (
           <ColorList key={name}>
             <ColorTitle colorHex={Colors[name]['500']}>
@@ -140,6 +140,22 @@ export default () => (
 
           <CopyToClipboard colorHex={Colors.WHITE}>
             <CodeToClipboard code="Colors.WHITE" color="#000000" />
+          </CopyToClipboard>
+        </ColorBox>
+        <ColorBox colorHex={Colors.FACEBOOK}>
+          <ColorNumber>FACEBOOK</ColorNumber>
+          <ColorHex>{Colors.FACEBOOK}</ColorHex>
+
+          <CopyToClipboard colorHex={Colors.FACEBOOK}>
+            <CodeToClipboard code="Colors.FACEBOOK" color="#ffffff" />
+          </CopyToClipboard>
+        </ColorBox>
+        <ColorBox colorHex={Colors.GOOGLE}>
+          <ColorNumber>GOOGLE</ColorNumber>
+          <ColorHex>{Colors.GOOGLE}</ColorHex>
+
+          <CopyToClipboard colorHex={Colors.GOOGLE}>
+            <CodeToClipboard code="Colors.GOOGLE" color="#ffffff" />
           </CopyToClipboard>
         </ColorBox>
       </ColorList>

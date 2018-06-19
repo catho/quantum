@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import ColorPalette from '../../../components/Colors';
+import Colors from '../../../components/Colors';
 import CodeExample from '../CodeExample';
 
 const Small = styled.small`
-  color: ${ColorPalette.PRIMARY['300']};
+  color: ${Colors.SECONDARY['700']};
   cursor: pointer;
   text-transform: lowercase;
 `;

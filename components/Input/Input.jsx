@@ -35,9 +35,9 @@ const InputTag = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid ${Colors.GREY['300']};
+  border-bottom: 2px solid ${Colors.SECONDARY['300']};
   box-sizing: border-box;
-  color: ${Colors.GREY['900']};
+  color: ${Colors.SECONDARY['900']};
   font-size: 16px;
   height: 30px;
   padding: 0px 3px;
@@ -53,7 +53,7 @@ const InputTag = styled.input`
   }
 
   &:focus {
-    border-color: ${Colors.SECONDARY['500']};
+    border-color: ${Colors.PRIMARY['500']};
   }
 
   ${props => props.error && `
@@ -61,7 +61,7 @@ const InputTag = styled.input`
   `}
 
   &:focus + ${InputLabel} {
-    color: ${Colors.SECONDARY['500']};
+    color: ${Colors.PRIMARY['500']};
     ${sharedStyle}
   }
 `;

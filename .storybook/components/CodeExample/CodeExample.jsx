@@ -4,12 +4,14 @@ import styled from 'styled-components';
 import CodeToClipboard from '../CodeToClipboard';
 import Title from '../Title';
 import ComponentHighlight from '../ComponentHighlight';
+import Colors from '../../../components/Colors';
+import theme from '../../../theme';
 
 const ScrollWrapper = styled.div`
   position: relative;
   padding-top: 30px;
-  background-color: #f6f8fa;
-  box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.3);
+  background-color: ${Colors.SECONDARY["50"]};
+  box-shadow: 0px 6px 25px 0px ${theme.mixins.hexToRgba(Colors.BLACK, 0.3)};
 `;
 
 const CodeBlock = styled.pre`
@@ -29,7 +31,7 @@ const CodeBlock = styled.pre`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: ${theme.mixins.hexToRgba(Colors.BLACK, 0.3)};
     border-radius: 5px;
   }
 `;
@@ -143,7 +145,7 @@ const CodeExample = ({
           <ComponentHighlight code={codeStr} />
         </CodeBlock>
 
-        <CodeToClipboard code={codeStr} backgroundColor="#f6f8fa" />
+        <CodeToClipboard code={codeStr} backgroundColor={Colors.SECONDARY["50"]} />
 
       </ScrollWrapper>
     </React.Fragment>

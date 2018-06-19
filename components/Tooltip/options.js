@@ -56,10 +56,11 @@ const placement = {
 };
 
 const skins = {
-  info: Colors.SECONDARY['500'],
+  primary: Colors.PRIMARY['500'],
+  info: Colors.INFO['500'],
   danger: Colors.DANGER['500'],
-  success: Colors.ACTION['400'],
-  warning: Colors.WARMING['400'],
+  success: Colors.SUCCESS['500'],
+  warning: Colors.WARNING['500'],
 };
 
 export {
