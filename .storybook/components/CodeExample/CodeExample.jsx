@@ -10,7 +10,7 @@ import theme from '../../../theme';
 const ScrollWrapper = styled.div`
   position: relative;
   padding-top: 30px;
-  background-color: ${Colors.SECONDARY["50"]};
+  background-color: ${Colors.SECONDARY['50']};
   box-shadow: 0px 6px 25px 0px ${theme.mixins.hexToRgba(Colors.BLACK, 0.3)};
 `;
 
@@ -145,7 +145,7 @@ const CodeExample = ({
           <ComponentHighlight code={codeStr} />
         </CodeBlock>
 
-        <CodeToClipboard code={codeStr} backgroundColor={Colors.SECONDARY["50"]} />
+        <CodeToClipboard code={codeStr} backgroundColor={Colors.SECONDARY['50']} />
 
       </ScrollWrapper>
     </React.Fragment>

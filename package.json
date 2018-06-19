@@ -1,6 +1,6 @@
 {
   "name": "@cathodevel/quantum",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Catho react components",
   "main": "./dist/index.js",
   "scripts": {

@@ -1,3 +1,7 @@
+## v0.8.1 - Jun/2018
+### Changed
+Update Color Palette
+
 ## v0.8.0 - Jun/2018
 ### Changed
 Component reworked:
