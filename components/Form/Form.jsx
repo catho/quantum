@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Input from '../Input';
+import InputTypes from '../Input/InputTypes';
 
 function execValidate(validate, props) {
   if (typeof validate === 'function') {
@@ -13,6 +15,9 @@ function execValidate(validate, props) {
 }
 
 class Form extends React.Component {
+  static _isValidElement = element => React.isValidElement(element)
+    && [Input, ...Object.values(InputTypes).includes(element.type)]
+
   constructor(props) {
     super(props);
 
@@ -26,7 +31,10 @@ class Form extends React.Component {
 
     React
       .Children
-      .map(children, ({ props: { name, value } }) => {
+      .map(children, (child) => {
+        if (!Form._isValidElement(child)) return;
+
+        const { props: { name, value } } = child;
         if (value) this.state.values[name] = value;
       });
   }
@@ -36,6 +44,10 @@ class Form extends React.Component {
     .map(
       children,
       (child) => {
+        if (!Form._isValidElement(child)) {
+          return child;
+        }
+
         const { name, error, onChange } = child.props;
         return (
           React
