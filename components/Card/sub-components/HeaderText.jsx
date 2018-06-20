@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Colors from '../../Colors';
 
 const TextWrapper = styled.h1`
   display: flex;
@@ -8,7 +9,7 @@ const TextWrapper = styled.h1`
   padding: 0;
 
   p {
-    color: #666;
+    color: ${Colors.SECONDARY['200']};
   }
 `;
 

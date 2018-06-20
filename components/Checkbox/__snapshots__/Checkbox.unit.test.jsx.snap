@@ -6,7 +6,7 @@ exports[`Input component  should match the snapshot 1`] = `
 >
   <label
     checked={false}
-    className="Checkbox__StyledLabel-jIiNTF eUqPhm Label-bxMjsr iZhmvb"
+    className="Checkbox__StyledLabel-jIiNTF kHXpjC Label-bxMjsr iZhmvb"
     disabled={false}
   >
     <input

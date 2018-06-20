@@ -3,14 +3,14 @@ import DefaultButton from './models/DefaultButton';
 
 const skins = {
   primary: new DefaultButton({
+    unselected: Colors.PRIMARY['500'],
+    selected: Colors.PRIMARY['600'],
+    disabled: Colors.PRIMARY['200'],
+  }),
+  secondary: new DefaultButton({
     unselected: Colors.SECONDARY['500'],
     selected: Colors.SECONDARY['600'],
     disabled: Colors.SECONDARY['200'],
-  }),
-  secondary: new DefaultButton({
-    unselected: Colors.GREY['500'],
-    selected: Colors.GREY['600'],
-    disabled: Colors.GREY['200'],
   }),
   action: new DefaultButton({
     unselected: Colors.ACTION['500'],
@@ -19,19 +19,19 @@ const skins = {
   }),
   cancel: new DefaultButton({
     unselected: Colors.WHITE,
-    unselectedBorder: Colors.SECONDARY['400'],
-    unselectedTextColor: Colors.SECONDARY['400'],
+    unselectedBorder: Colors.PRIMARY['300'],
+    unselectedTextColor: Colors.PRIMARY['300'],
     selected: Colors.WHITE,
-    selectedBorder: Colors.SECONDARY['600'],
-    selectedTextColor: Colors.SECONDARY['600'],
-    disabled: Colors.GREY['50'],
+    selectedBorder: Colors.PRIMARY['500'],
+    selectedTextColor: Colors.PRIMARY['500'],
+    disabled: Colors.SECONDARY['50'],
   }),
   modal: new DefaultButton({
     unselected: Colors.WHITE,
-    unselectedTextColor: Colors.SECONDARY['400'],
-    selected: Colors.GREY['50'],
+    unselectedTextColor: Colors.PRIMARY['500'],
+    selected: Colors.SECONDARY['50'],
     disabled: Colors.WHITE,
-    disabledTextColor: Colors.SECONDARY['200'],
+    disabledTextColor: Colors.PRIMARY['300'],
   }),
 };
 

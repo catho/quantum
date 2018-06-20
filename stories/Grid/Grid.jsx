@@ -1,7 +1,7 @@
 import React from 'react';
 import Highlight from 'react-highlight';
 import styled from 'styled-components';
-import ColorPalette from '../../components/Colors';
+import Colors from '../../components/Colors';
 import HowToImport from '../../.storybook/components/HowToImport';
 import Title from '../../.storybook/components/Title';
 import Subtitle from '../../.storybook/components/Subtitle';
@@ -13,8 +13,8 @@ const StyledRow = styled(Row)`
 `;
 
 const StyledCol = styled(Col)`
-  background-color: ${ColorPalette.GREY['100']};
-  border: 1px solid ${ColorPalette.GREY['200']};
+  background-color: ${Colors.SECONDARY['100']};
+  border: 1px solid ${Colors.SECONDARY['200']};
   font-size: 14px;
   padding-bottom: 10px;
   padding-top: 10px;

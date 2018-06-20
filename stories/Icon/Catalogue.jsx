@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from '../../components/Grid';
-import ColorPalette from '../../components/Colors';
+import Colors from '../../components/Colors';
 import Input from '../../components/Input';
 import IconToClipboard from './IconToClipboard';
 import icons from '../../components/shared/icons';
@@ -36,7 +36,7 @@ class Catalogue extends Component {
           <Row style={{ marginTop: '-40px' }}>
             <Col tablet={10}>
               <h3 style={{ marginTop: '50px' }}>
-                Available Icons <small style={{ color: ColorPalette.GREY['100'] }}>click to copy</small>
+                Available Icons <small style={{ color: Colors.SECONDARY['100'] }}>click to copy</small>
               </h3>
             </Col>
             <Col tablet={2}>

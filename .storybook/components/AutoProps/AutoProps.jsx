@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Title from '../Title';
 import { Input, Checkbox, Select } from 'semantic-ui-react';
-import ColorPalette from '../../../components/Colors';
+import Colors from '../../../components/Colors';
 
 const removeQuotes = str => str.replace(/'/g, '');
 
@@ -226,7 +226,7 @@ class AutoProps extends React.Component {
 }
 
 const CodeBlock = styled.pre`
-  background-color: ${ColorPalette.GREY["50"]};
+  background-color: ${Colors.SECONDARY["50"]};
   border-radius: 3px;
   display: inline-block;
   font-size: 85%;
@@ -241,10 +241,10 @@ const IndentSpan = styled.span`
 const PropsRow = styled.tr`
   padding: 15px;
   &:nth-child(even) {
-    background: #f6f8fa
+    background: ${Colors.SECONDARY["50"]};
   }
   &:nth-child(odd) {
-    background: #FFF
+    background: ${Colors.WHITE};
   }
 `;
 

@@ -8,7 +8,7 @@ exports[`Wizard Component Should match the snapshot 1`] = `
     className="Wizard__ProgressBar-bZMfKu jvTztC"
   >
     <li
-      className="Step__ProgressStep-jVQefS OUROv"
+      className="Step__ProgressStep-jVQefS fyCKhy"
     >
       <p
         className="Step__Title-kjpidS khCQIZ"

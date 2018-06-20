@@ -2,7 +2,7 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="Notification__NotificationWrapper-iPzUAf fUoRog"
+  className="Notification__NotificationWrapper-iPzUAf gWjVLC"
   type="info"
 >
   <div

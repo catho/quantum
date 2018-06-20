@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from '../../Image';
+import Colors from '../../Colors';
 
 const RoundedImage = styled(Image)`
-  background-color: #e2e1e0;
+  background-color: ${Colors.SECONDARY['50']};
   padding: 5px;
   width: 32px;
   height: 32px;

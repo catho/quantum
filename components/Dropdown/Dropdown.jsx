@@ -23,12 +23,12 @@ const DropdownButton = styled.button`
   font-weight: bold;
 
   background-color: ${Colors.WHITE};
-  border: solid 1px ${Colors.GREY['300']};
+  border: solid 1px ${Colors.SECONDARY['300']};
 
   ${({ isOpen }) => isOpen && `
-    border-top-color: ${Colors.SECONDARY['500']};
-    border-right-color: ${Colors.SECONDARY['500']};
-    border-left-color: ${Colors.SECONDARY['500']};
+    border-top-color: ${Colors.PRIMARY['500']};
+    border-right-color: ${Colors.PRIMARY['500']};
+    border-left-color: ${Colors.PRIMARY['500']};
   `}
 
   border-radius: ${theme.sizes.radius};
@@ -46,7 +46,7 @@ const DropdownButton = styled.button`
     background-color: ${Colors.WHITE};
     border-width: 1px;
     border-style: solid;
-    border-color: ${Colors.SECONDARY['500']};
+    border-color: ${Colors.PRIMARY['500']};
     border-top: none;
   }
 `;
@@ -58,20 +58,20 @@ const ArrowDown = styled(Icon)`
 
 const DropDownItem = styled.div`
   cursor: pointer;
-  border-bottom: 1px solid ${Colors.GREY['50']};
+  border-bottom: 1px solid ${Colors.SECONDARY['50']};
 
   &:last-child {
     border: none;
   }
 
   &:hover {
-    background-color: ${Colors.SECONDARY['500']};
+    background-color: ${Colors.PRIMARY['500']};
     font-weight: bold;
     color: ${Colors.WHITE};
   }
 
   ${({ isSelected }) => isSelected && `
-    color: ${Colors.SECONDARY['500']};
+    color: ${Colors.PRIMARY['500']};
   `}
 `;
 
@@ -112,7 +112,7 @@ const Select = ({
         <div>
           <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
             {itemToString(dsSelectedItem.item) || placeholder}
-            <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.GREY['300']} />
+            <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.SECONDARY['300']} />
           </DropdownButton>
           {isOpen &&
           <List>

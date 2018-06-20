@@ -6,7 +6,6 @@ const ButtonWrapper = styled(OriginalButton)`
   background-color: transparent;
   padding: 0;
   box-shadow: none;
-  font-family: oxygen;
   text-transform: uppercase;
   font-size: 12px;
   margin-right: 10px;
