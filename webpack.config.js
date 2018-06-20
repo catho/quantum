@@ -6,7 +6,12 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 require('webpack');
 
 module.exports = {
-  entry: ['babel-polyfill', path.join(__dirname, 'index.js')],
+  entry: [
+    'react',
+    'react-dom',
+    'babel-polyfill',
+    path.join(__dirname, 'index.js'),
+  ],
   target: 'node',
   externals: [nodeExternals()],
   output: {
@@ -15,24 +20,26 @@ module.exports = {
     libraryTarget: 'umd',
   },
   module: {
-    rules: [{
-      test: /\.jsx?$/,
-      include: /components/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['env', 'stage-1', 'react'],
-      },
-    },
-    {
-      test: /\.(png|jpg|gif|svg)$/,
-      use: [
-        {
-          loader: 'url-loader',
-          options: {},
+    rules: [
+      {
+        test: /\.jsx?$/,
+        include: /components/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['env', 'stage-1', 'react'],
         },
-      ],
-    }],
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {},
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new Dotenv(),
@@ -51,4 +58,3 @@ module.exports = {
     extensions: ['.jsx', '.js'],
   },
 };
-
