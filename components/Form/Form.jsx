@@ -16,7 +16,7 @@ function execValidate(validate, props) {
 
 class Form extends React.Component {
   static _isValidElement = element => React.isValidElement(element)
-    && [Input, ...Object.values(InputTypes).includes(element.type)]
+    && [Input, ...Object.values(InputTypes)].includes(element.type)
 
   constructor(props) {
     super(props);
