@@ -1,3 +1,7 @@
+## v0.8.2 - Jun/2018
+### Fixed
+Form checks if a child is valid
+
 ## v0.8.1 - Jun/2018
 ### Changed
 Update Color Palette

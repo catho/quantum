@@ -163,11 +163,9 @@ exports[`Form component  should match the snapshot 1`] = `
   <button
     className="Button__StyledButton-jJDkJK kgfKCl"
     disabled={false}
-    onChange={[Function]}
     onClick={[Function]}
     size="normal"
     type="submit"
-    value={undefined}
   >
     
      Enviar 
