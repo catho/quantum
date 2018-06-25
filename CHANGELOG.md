@@ -1,3 +1,7 @@
+## v0.8.3 - Jun/2018
+### Changed
+Update Notification component, now it's Alert component
+
 ## v0.8.2 - Jun/2018
 ### Fixed
 Form checks if a child is valid
