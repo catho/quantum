@@ -118,10 +118,10 @@ Alert.propTypes = {
     text: PropTypes.string,
     /** message type */
     type: PropTypes.oneOf([
+      'info',
       'success',
       'warning',
       'error',
-      'info',
     ]),
   }),
   /** time in seconds that Alert is visible */
