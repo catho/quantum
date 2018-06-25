@@ -6,7 +6,7 @@ import { Container, Row, Col, Hide } from './components/Grid';
 import Input from './components/Input';
 import Loading from './components/Loading';
 import Modal from './components/Modal';
-import Notification from './components/Notification';
+import Alert from './components/Alert';
 import { Radio, RadioGroup } from './components/Radio';
 import Range from './components/Range';
 import Textarea from './components/Textarea';
@@ -35,7 +35,7 @@ export {
   Loading,
   Logo,
   Modal,
-  Notification,
+  Alert,
   Radio,
   RadioGroup,
   Range,
