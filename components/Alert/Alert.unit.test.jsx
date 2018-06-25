@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Notification from './Notification';
+import Alert from './Alert';
 
 describe('Input component ', () => {
   it('should match the snapshot', () => {
-    expect(renderer.create(<Notification />).toJSON()).toMatchSnapshot();
+    expect(renderer.create(<Alert />).toJSON()).toMatchSnapshot();
   });
 });
