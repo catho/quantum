@@ -16,5 +16,6 @@ InputTypes.CNPJ.displayName = 'Input.CNPJ';
 InputTypes.CPF.displayName = 'Input.CPF';
 InputTypes.Date.displayName = 'Input.Date';
 InputTypes.Phone.displayName = 'Input.Phone';
+InputTypes.Password.displayName = 'Input.Password';
 
 export default InputTypes;
