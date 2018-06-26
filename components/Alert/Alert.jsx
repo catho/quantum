@@ -111,7 +111,7 @@ Alert.defaultProps = {
 };
 
 Alert.propTypes = {
-  /** message type */
+  /** alert type */
   type: PropTypes.oneOf([
     'info',
     'success',
