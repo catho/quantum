@@ -99,7 +99,6 @@ class Alert extends Component {
 }
 
 AlertClose.displayName = 'AlertClose';
-
 Alert.defaultProps = {
   type: 'info',
   message: {
