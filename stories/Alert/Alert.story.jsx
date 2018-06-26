@@ -10,13 +10,13 @@ const exampleTab = (
     <Title>With 5 seconds of duration</Title>
     <Example component={
       <Alert
+        show
+        type="error"
+        duration={5}
         message={{
           title: 'Simple',
           text: 'This is error alert',
-          type: 'error',
         }}
-        show
-        duration={5}
       />}
     />
     <p>We have 4 type of alerts:</p>
@@ -29,45 +29,45 @@ const exampleTab = (
     <Title>Info</Title>
     <Example component={
       <Alert
+        show
+        type="info"
         message={{
           title: 'Info',
           text: 'This is info alert',
-          type: 'info',
         }}
-        show
       />}
     />
     <Title>Success</Title>
     <Example component={
       <Alert
+        show
+        type="success"
         message={{
           title: 'Success',
           text: 'This is success alert',
-          type: 'success',
         }}
-        show
       />}
     />
     <Title>Warning</Title>
     <Example component={
       <Alert
+        show
+        type="warning"
         message={{
           title: 'Warning',
           text: 'This is warning alert',
-          type: 'warning',
         }}
-        show
       />}
     />
     <Title>Error</Title>
     <Example component={
       <Alert
+        show
+        type="error"
         message={{
           title: 'Error',
           text: 'This is error alert',
-          type: 'error',
         }}
-        show
       />}
     />
   </Tab>

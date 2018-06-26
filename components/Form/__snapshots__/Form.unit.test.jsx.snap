@@ -161,7 +161,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="Button__StyledButton-jJDkJK doNOeg"
+    className="Button__StyledButton-jJDkJK lnoYaS"
     disabled={false}
     onClick={[Function]}
     size="normal"

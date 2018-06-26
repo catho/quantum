@@ -76,7 +76,7 @@ class Alert extends Component {
   }
 
   render() {
-    const { message: { title, text, type } } = this.props;
+    const { type, message: { title, text } } = this.props;
 
     return this.state.show ? (
       <ThemeProvider theme={GlobalTheme}>
@@ -98,11 +98,13 @@ class Alert extends Component {
   }
 }
 
+AlertClose.displayName = 'AlertClose';
+
 Alert.defaultProps = {
+  type: 'info',
   message: {
     title: 'Simple',
     text: 'This is a dummy',
-    type: 'info',
   },
   duration: 0,
   show: true,
@@ -110,24 +112,24 @@ Alert.defaultProps = {
 };
 
 Alert.propTypes = {
+  /** message type */
+  type: PropTypes.oneOf([
+    'info',
+    'success',
+    'warning',
+    'error',
+  ]),
+  /** time in seconds that Alert is visible */
+  duration: PropTypes.number,
+  /** it says to component if it should appear or not */
+  show: PropTypes.bool,
   /** object with message details */
   message: PropTypes.shape({
     /** message title */
     title: PropTypes.string,
     /** message text */
     text: PropTypes.string,
-    /** message type */
-    type: PropTypes.oneOf([
-      'info',
-      'success',
-      'warning',
-      'error',
-    ]),
   }),
-  /** time in seconds that Alert is visible */
-  duration: PropTypes.number,
-  /** it says to component if it should appear or not */
-  show: PropTypes.bool,
   /** it says if the title should stay in the same line of the message itself */
   /** callback function */
   onClose: PropTypes.func,
