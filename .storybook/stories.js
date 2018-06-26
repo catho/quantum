@@ -27,8 +27,8 @@ export default [
   'Toggle',
   'Form',
 
-  // 4. Notifications
-  'Notification',
+  // 4. Alerts
+  'Alert',
 
   // 5. Modals
   'Modal',
