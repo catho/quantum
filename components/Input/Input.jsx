@@ -230,4 +230,6 @@ Input.propTypes = {
   onFocus: PropTypes.func,
 };
 
+Input.displayName = 'Input';
+
 export default Input;

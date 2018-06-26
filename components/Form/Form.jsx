@@ -14,9 +14,11 @@ function execValidate(validate, props) {
   return msg ? error || msg : '';
 }
 
+const typeNames = Object.values(InputTypes).map(InputType => InputType.displayName);
+
 class Form extends React.Component {
   static _isValidElement = element => React.isValidElement(element)
-    && [Input, ...Object.values(InputTypes)].includes(element.type)
+    && [Input.displayName, ...typeNames].includes(element.type.displayName);
 
   constructor(props) {
     super(props);
