@@ -1,4 +1,4 @@
-## v0.8.3 - Jun/2018
+## v0.9.0 - Jun/2018
 ### Changed
 Update Notification component, now it's Alert component
 
