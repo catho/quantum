@@ -25,13 +25,6 @@ jest:
   tags:
     - style
 
-eslint:
-  stage: test
-  script:
-    - yarn lint
-  tags:
-    - style
-
 sonar:
   stage: test
   script:
