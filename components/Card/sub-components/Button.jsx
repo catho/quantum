@@ -22,4 +22,3 @@ const Button = props => <ButtonWrapper {...props} />;
 Button.displayName = 'Card.Button';
 
 export default Button;
-

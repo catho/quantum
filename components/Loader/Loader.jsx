@@ -31,8 +31,9 @@ class Loader extends React.Component {
         speed={speed}
         {...rest}
       >
-        { children }
-      </ContentLoader>);
+        {children}
+      </ContentLoader>
+    );
   }
 }
 

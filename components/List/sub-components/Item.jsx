@@ -35,7 +35,7 @@ const ListItem = styled.div`
 ListItem.displayName = 'ListItem';
 
 class Item extends React.Component {
-  static create = (item) => {
+  static create = item => {
     if (typeof item === 'string') {
       return <Item content={item} key={item} />;
     }
@@ -43,26 +43,20 @@ class Item extends React.Component {
     return <Item {...item} key={item.content} />;
   };
 
-  _renderIcon = (icon) => {
+  _renderIcon = icon => {
     if (typeof icon === 'string') {
       return <ItemIcon name={icon} />;
     }
 
     return <ItemIcon {...icon} />;
-  }
+  };
 
   render() {
-    const {
-      icon,
-      children,
-      content,
-      bullet,
-      ...rest
-    } = this.props;
+    const { icon, children, content, bullet, ...rest } = this.props;
 
     return (
       <li {...rest}>
-        <ListItem bullet={bullet} >
+        <ListItem bullet={bullet}>
           {icon && this._renderIcon(icon)}
           {children || <Content content={content} />}
         </ListItem>
@@ -86,10 +80,7 @@ Item.propTypes = {
       subheader: PropTypes.string,
     }),
   ]),
-  icon: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.instanceOf(Object),
-  ]),
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Object)]),
   bullet: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),

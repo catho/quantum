@@ -47,7 +47,7 @@ const Header = styled.div`
 const Content = styled.div`
   padding: ${PADDING};
 
-  ${mixins.ribbonPadding}
+  ${mixins.ribbonPadding};
 `;
 
 const CloseIcon = styled(Icon)`
@@ -102,8 +102,14 @@ class Popover extends Component {
   }
 
   measure() {
-    const { clientWidth: popoverWidth, clientHeight: popoverHeight } = this.popoverRef;
-    const { clientWidth: childrenWidth, clientHeight: childrenHeight } = this.childrenRef;
+    const {
+      clientWidth: popoverWidth,
+      clientHeight: popoverHeight,
+    } = this.popoverRef;
+    const {
+      clientWidth: childrenWidth,
+      clientHeight: childrenHeight,
+    } = this.childrenRef;
 
     this.setState({
       popoverMeasures: {
@@ -117,68 +123,76 @@ class Popover extends Component {
     });
   }
 
-  toggleVisibility = (event) => {
+  toggleVisibility = event => {
     event.preventDefault();
 
     this.setState(({ show }) => ({
       show: !show,
     }));
-  }
+  };
 
   hide = () => {
     this.setState({ show: false });
-  }
+  };
 
   handleClickOutside = ({ target }) => {
     if (!this.wrapperRef.contains(target)) this.hide();
-  }
+  };
 
   render() {
     const {
-      title, content, children, closeTitle, ribbon, ...rest
+      title,
+      content,
+      children,
+      closeTitle,
+      ribbon,
+      ...rest
     } = this.props;
 
     const {
       show,
-      popoverMeasures: {
-        width: popoverWidth,
-        height: popoverHeight,
-      },
-      childrenMeasures: {
-        width: childrenWidth,
-        height: childrenHeight,
-      },
+      popoverMeasures: { width: popoverWidth, height: popoverHeight },
+      childrenMeasures: { width: childrenWidth, height: childrenHeight },
     } = this.state;
 
     const measures = {
-      popoverWidth, popoverHeight, childrenWidth, childrenHeight,
+      popoverWidth,
+      popoverHeight,
+      childrenWidth,
+      childrenHeight,
     };
 
     return (
-      <Wrapper innerRef={(ref) => { this.wrapperRef = ref; }}>
+      <Wrapper
+        innerRef={ref => {
+          this.wrapperRef = ref;
+        }}
+      >
         <PopoverContainer
           {...rest}
           {...measures}
           show={show}
-          innerRef={(ref) => { this.popoverRef = ref; }}
+          innerRef={ref => {
+            this.popoverRef = ref;
+          }}
         >
           {ribbon && <Ribbon text={ribbon} />}
 
           <Header title={title}>
-            { title && <span>{ title }</span> }
+            {title && <span>{title}</span>}
             <CloseIcon name="close" onClick={this.hide} title={closeTitle} />
           </Header>
 
-          <Content ribbon={ribbon}>
-            { content }
-          </Content>
+          <Content ribbon={ribbon}>{content}</Content>
         </PopoverContainer>
 
         <ChildrenContainer
           onClick={this.toggleVisibility}
-          innerRef={(ref) => { this.childrenRef = ref; }}
+          innerRef={ref => {
+            this.childrenRef = ref;
+          }}
         >
-          { children }
+          {children}
         </ChildrenContainer>
       </Wrapper>
     );
@@ -190,13 +204,7 @@ Popover.propTypes = {
   closeTitle: PropTypes.string,
   ribbon: PropTypes.string,
   skin: PropTypes.oneOf(['default', 'p2p']),
-  place: PropTypes.oneOf([
-    'top',
-    'top-right',
-    'top-left',
-    'right',
-    'left',
-  ]),
+  place: PropTypes.oneOf(['top', 'top-right', 'top-left', 'right', 'left']),
   show: PropTypes.bool,
   content: PropTypes.node,
   children: PropTypes.node,

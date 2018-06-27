@@ -25,7 +25,9 @@ const DropdownButton = styled.button`
   background-color: ${Colors.WHITE};
   border: solid 1px ${Colors.SECONDARY['300']};
 
-  ${({ isOpen }) => isOpen && `
+  ${({ isOpen }) =>
+    isOpen &&
+    `
     border-top-color: ${Colors.PRIMARY['500']};
     border-right-color: ${Colors.PRIMARY['500']};
     border-left-color: ${Colors.PRIMARY['500']};
@@ -34,7 +36,9 @@ const DropdownButton = styled.button`
   border-radius: ${theme.sizes.radius};
   cursor: pointer;
 
-  ${props => props.error && `
+  ${props =>
+    props.error &&
+    `
     border-color: ${Colors.DANGER['400']};
   `}
 
@@ -70,9 +74,11 @@ const DropDownItem = styled.div`
     color: ${Colors.WHITE};
   }
 
-  ${({ isSelected }) => isSelected && `
+  ${({ isSelected }) =>
+    isSelected &&
+    `
     color: ${Colors.PRIMARY['500']};
-  `}
+  `};
 `;
 
 function itemToString(item = '') {
@@ -104,49 +110,47 @@ const Select = ({
     onChange={onChange}
     itemToString={({ item }) => itemToString(item)}
     render={({
-        isOpen,
-        getToggleButtonProps,
-        getItemProps,
-        selectedItem: dsSelectedItem,
-      }) => (
-        <div>
-          <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
-            {itemToString(dsSelectedItem.item) || placeholder}
-            <ArrowDown name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'} skin={Colors.SECONDARY['300']} />
-          </DropdownButton>
-          {isOpen &&
+      isOpen,
+      getToggleButtonProps,
+      getItemProps,
+      selectedItem: dsSelectedItem,
+    }) => (
+      <div>
+        <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
+          {itemToString(dsSelectedItem.item) || placeholder}
+          <ArrowDown
+            name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'}
+            skin={Colors.SECONDARY['300']}
+          />
+        </DropdownButton>
+        {isOpen && (
           <List>
-            {items
-                  .map(item => (
-                    <DropDownItem
-                      {
-                      ...getItemProps({
-                        item,
-                        isSelected: dsSelectedItem === item,
-                      })}
-                      key={itemToString(item.item)}
-                    >
-                      <List.Item
-                        key={item.value}
-                        icon={item.item.icon}
-                        content={item.item.content || item.item}
-                      />
-                    </DropDownItem>
-                  ))
-                }
-          </List>}
-        </div>
+            {items.map(item => (
+              <DropDownItem
+                {...getItemProps({
+                  item,
+                  isSelected: dsSelectedItem === item,
+                })}
+                key={itemToString(item.item)}
+              >
+                <List.Item
+                  key={item.value}
+                  icon={item.item.icon}
+                  content={item.item.content || item.item}
+                />
+              </DropDownItem>
+            ))}
+          </List>
         )}
+      </div>
+    )}
   />
 );
 
 const ListItemPropType = PropTypes.oneOfType([
   PropTypes.string,
   PropTypes.shape({
-    icon: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.instanceOf(Object),
-    ]),
+    icon: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Object)]),
     content: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.shape({
@@ -157,7 +161,10 @@ const ListItemPropType = PropTypes.oneOfType([
   }),
 ]);
 
-const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
+const stringOrNumber = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number,
+]);
 
 const itemPropType = PropTypes.shape({
   value: stringOrNumber,
@@ -195,24 +202,16 @@ class Dropdown extends React.Component {
     }
   }
 
-  _onChange = (item) => {
+  _onChange = item => {
     const { onChange } = this.props;
 
     this.setState({ selectedItem: item });
 
     onChange(null, { selectedItem: item });
-  }
+  };
 
   render() {
-    const {
-      items,
-      label,
-      id,
-      error,
-      placeholder,
-      name,
-      ...rest
-    } = this.props;
+    const { items, label, id, error, placeholder, name, ...rest } = this.props;
 
     const { selectedItem } = this.state;
 
@@ -244,7 +243,7 @@ Dropdown.defaultProps = {
   id: 'dropdown',
   items: [],
   selectedItem: {},
-  onChange: () => { },
+  onChange: () => {},
 };
 
 Dropdown.propTypes = {

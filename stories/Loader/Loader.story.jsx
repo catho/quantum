@@ -38,26 +38,21 @@ LoaderExample.propTypes = { name: PropTypes.string };
 
 const loaderTypes = Object.keys(LoaderTypes);
 
-storiesOf('13. Others', module)
-  .add('Loader', () => (
-    <Heading name="Loader">
-      <TabbedView>
-        <Tab title="Usage">
-          <HowToImport importModules="Loader" />
-          <p>You can use these Loaders:</p>
-          <ul>
-            {loaderTypes.map(name => <li key={name}>{name}</li>)}
-          </ul>
+storiesOf('13. Others', module).add('Loader', () => (
+  <Heading name="Loader">
+    <TabbedView>
+      <Tab title="Usage">
+        <HowToImport importModules="Loader" />
+        <p>You can use these Loaders:</p>
+        <ul>{loaderTypes.map(name => <li key={name}>{name}</li>)}</ul>
 
-          <LoaderExample />
+        <LoaderExample />
 
-          {loaderTypes
-            .map(type => <LoaderExample name={type} key={type} />)}
-
-        </Tab>
-        <Tab title="API">
-          <AutoPropsApi component={Loader} />
-        </Tab>
-      </TabbedView>
-    </Heading>
-  ));
+        {loaderTypes.map(type => <LoaderExample name={type} key={type} />)}
+      </Tab>
+      <Tab title="API">
+        <AutoPropsApi component={Loader} />
+      </Tab>
+    </TabbedView>
+  </Heading>
+));

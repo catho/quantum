@@ -12,18 +12,18 @@ const Checkbox = styled.input`
 const StyledLabel = styled(Label)`
   ${({ disabled }) => `
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
-  `}
-  display: inline-block;
+  `} display: inline-block;
   padding-right: 54px;
   position: relative;
 
   &:before,
   &:after {
-    ${theme.mixins.transition()}
+    ${theme.mixins.transition()};
   }
 
   &:before {
-    background: ${({ checked }) => (checked ? Colors.PRIMARY[100] : Colors.SECONDARY[200])};
+    background: ${({ checked }) =>
+      checked ? Colors.PRIMARY[100] : Colors.SECONDARY[200]};
     border-radius: 10px;
     content: '';
     height: 16px;
@@ -35,8 +35,10 @@ const StyledLabel = styled(Label)`
   }
 
   &:after {
-    transform: ${({ checked }) => (checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)')};
-    border: 1px solid ${({ checked }) => (checked ? 'transparent' : Colors.SECONDARY['300'])};
+    transform: ${({ checked }) =>
+      checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)'};
+    border: 1px solid
+      ${({ checked }) => (checked ? 'transparent' : Colors.SECONDARY['300'])};
     border-radius: 50%;
     box-sizing: border-box;
     content: '';
@@ -46,12 +48,12 @@ const StyledLabel = styled(Label)`
     top: 50%;
     width: 24px;
     background-color: ${({ checked, disabled }) => {
-    if (disabled) return Colors.SECONDARY[300];
-    return (checked ? Colors.PRIMARY[500] : Colors.WHITE);
-  }};
+      if (disabled) return Colors.SECONDARY[300];
+      return checked ? Colors.PRIMARY[500] : Colors.WHITE;
+    }};
   }
 
-  &:hover:after{
+  &:hover:after {
     background-color: ${({ disabled }) => !disabled && Colors.PRIMARY[500]};
     border: 1px solid transparent;
   }
@@ -72,7 +74,7 @@ class Toggle extends React.Component {
     }
   }
 
-  onChange = (e) => {
+  onChange = e => {
     const { onChange, disabled } = this.props;
 
     if (disabled) return;
@@ -82,12 +84,10 @@ class Toggle extends React.Component {
     this.setState({ checked: !checked });
 
     onChange(e, { checked: !checked });
-  }
+  };
 
   render() {
-    const {
-      id, label, disabled, ...rest
-    } = this.props;
+    const { id, label, disabled, ...rest } = this.props;
     const { checked } = this.state;
 
     return (

@@ -16,7 +16,9 @@ describe('Input component ', () => {
   });
 
   it('with an error message should match the snapshot', () => {
-    expect(renderer.create(<Range error="Error message" />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Range error="Error message" />).toJSON(),
+    ).toMatchSnapshot();
   });
 
   describe('with an "onChange" callback set', () => {

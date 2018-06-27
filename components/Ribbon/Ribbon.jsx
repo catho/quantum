@@ -8,13 +8,7 @@ const wrapperMeasures = ({ wrapperHeight, wrapperWidth }) => `
   width: ${wrapperWidth}px;
 `;
 
-const ribbonMeasures = ({
-  ribbonHeight,
-  ribbonWidth,
-  degrees,
-  top,
-  left,
-}) => `
+const ribbonMeasures = ({ ribbonHeight, ribbonWidth, degrees, top, left }) => `
   height: ${ribbonHeight}px;
   left: ${left}px;
   top: ${top}px;

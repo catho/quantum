@@ -4,10 +4,4 @@ import FieldGroup from './FieldGroup';
 import icons from './icons';
 import masks from './masks';
 
-export {
-  ErrorMessage,
-  Label,
-  FieldGroup,
-  icons,
-  masks,
-};
+export { ErrorMessage, Label, FieldGroup, icons, masks };

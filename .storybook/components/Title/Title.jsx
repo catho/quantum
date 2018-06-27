@@ -10,7 +10,9 @@ const StyledTitle = styled.h2`
   margin: 10px 0;
 `;
 
-const Title = ({ children, ...rest }) => (<StyledTitle {...rest}>{children}</StyledTitle>);
+const Title = ({ children, ...rest }) => (
+  <StyledTitle {...rest}>{children}</StyledTitle>
+);
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,

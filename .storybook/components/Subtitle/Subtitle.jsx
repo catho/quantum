@@ -7,7 +7,9 @@ const StyledSubtitle = styled.h3`
   margin-top: 40px;
 `;
 
-const Subtitle = ({ children, ...rest }) => (<StyledSubtitle {...rest}>{children}</StyledSubtitle>);
+const Subtitle = ({ children, ...rest }) => (
+  <StyledSubtitle {...rest}>{children}</StyledSubtitle>
+);
 
 Subtitle.propTypes = {
   children: PropTypes.node.isRequired,

@@ -50,7 +50,7 @@ const WindowControl = styled.div`
   display: inline-block;
   border-radius: 50%;
   margin-right: 10px;
-  ${({ color }) => color && `background-color: ${color};`}
+  ${({ color }) => color && `background-color: ${color};`};
 `;
 
 const formatJSON = (key, value) => {
@@ -62,12 +62,10 @@ const formatJSON = (key, value) => {
 
 const INDENTATION_SIZE = 2;
 const spaces = size => ' '.repeat(size);
-const jsonStr = (json, indentation) => (
-  JSON
-    .stringify(json, formatJSON, INDENTATION_SIZE)
+const jsonStr = (json, indentation) =>
+  JSON.stringify(json, formatJSON, INDENTATION_SIZE)
     .replace(/\n/g, `\n${indentation}${spaces(INDENTATION_SIZE)}`)
-    .replace(/"/g, '')
-);
+    .replace(/"/g, '');
 
 const renderPropValue = (propValue, indentation) => {
   if (typeof propValue === 'object' && propValue instanceof RegExp) {
@@ -93,7 +91,10 @@ function getProps(props, indentation) {
   return Object.entries(props)
     .filter(([name, value]) => value && !['style', 'children'].includes(name))
     .map(([prop, value], index) => {
-      const propText = (typeof value === 'boolean') ? prop : `${prop}=${renderPropValue(value, indentation)}`;
+      const propText =
+        typeof value === 'boolean'
+          ? prop
+          : `${prop}=${renderPropValue(value, indentation)}`;
 
       return `${index === 0 ? breakline : ''}${propText}`;
     })
@@ -109,9 +110,13 @@ const componentToString = (component, state, level = 0) => {
     const name = type.displayName || type.name || type;
     const children = props ? props.children : null;
 
-    content = `${indentation}<${name}${Object.keys(state).length ? getProps(state, indentation) : ''}`;
+    content = `${indentation}<${name}${
+      Object.keys(state).length ? getProps(state, indentation) : ''
+    }`;
     content += children
-      ? `>\n${React.Children.map(children, (child => componentToString(child, child.props, level + INDENTATION_SIZE))).join('\n')}\n${indentation}</${name}>`
+      ? `>\n${React.Children.map(children, child =>
+          componentToString(child, child.props, level + INDENTATION_SIZE),
+        ).join('\n')}\n${indentation}</${name}>`
       : `\n${indentation}/>`;
   } else {
     content = component ? `${indentation}${component}` : '';
@@ -120,16 +125,12 @@ const componentToString = (component, state, level = 0) => {
   return content;
 };
 
-const msg = importModules => `import ${'{'} ${importModules} ${'}'} from '@cathodevel/quantum';\n\n`;
+const msg = importModules =>
+  `import ${'{'} ${importModules} ${'}'} from '@cathodevel/quantum';\n\n`;
 
-const CodeExample = ({
-  component,
-  state,
-  code,
-  showTitle,
-  withImport,
-}) => {
-  const codeStr = code || componentToString(component, state || component.props);
+const CodeExample = ({ component, state, code, showTitle, withImport }) => {
+  const codeStr =
+    code || componentToString(component, state || component.props);
 
   return (
     <React.Fragment>
@@ -145,8 +146,10 @@ const CodeExample = ({
           <ComponentHighlight code={codeStr} />
         </CodeBlock>
 
-        <CodeToClipboard code={codeStr} backgroundColor={Colors.SECONDARY['50']} />
-
+        <CodeToClipboard
+          code={codeStr}
+          backgroundColor={Colors.SECONDARY['50']}
+        />
       </ScrollWrapper>
     </React.Fragment>
   );
@@ -169,4 +172,3 @@ CodeExample.propTypes = {
 };
 
 export default CodeExample;
-

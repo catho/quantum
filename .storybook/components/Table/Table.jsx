@@ -7,7 +7,8 @@ const StyledTable = styled.table`
   width: 100%;
   border-collapse: collapse;
 
-  th, td {
+  th,
+  td {
     border: 1px solid ${Colors.SECONDARY['400']};
     padding: 8px;
     font-size: 14px;
@@ -15,7 +16,9 @@ const StyledTable = styled.table`
   }
 `;
 
-const Table = ({ children, ...rest }) => <StyledTable {...rest}>{children}</StyledTable>;
+const Table = ({ children, ...rest }) => (
+  <StyledTable {...rest}>{children}</StyledTable>
+);
 
 Table.propTypes = {
   children: PropTypes.node.isRequired,

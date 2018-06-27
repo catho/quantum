@@ -39,24 +39,24 @@ const NavItem = styled.li`
     color: ${Colors.PRIMARY['500']};
   }
 
-  ${props => props.active && css`
-    color: ${Colors.PRIMARY['500']};
-    border-color: ${Colors.PRIMARY['500']};
+  ${props =>
+    props.active &&
+    css`
+      color: ${Colors.PRIMARY['500']};
+      border-color: ${Colors.PRIMARY['500']};
 
-    &::before {
-      width: 100%;
-      height: 100%;
-      border-bottom-color: ${Colors.PRIMARY['500']};
-    }
-  `}
+      &::before {
+        width: 100%;
+        height: 100%;
+        border-bottom-color: ${Colors.PRIMARY['500']};
+      }
+    `};
 `;
 
 NavItem.displayName = 'NavItem';
 
 const Tab = ({ children, title }) => (
-  <React.Fragment>
-    { title && children }
-  </React.Fragment>
+  <React.Fragment>{title && children}</React.Fragment>
 );
 
 Tab.propTypes = {
@@ -80,7 +80,7 @@ class TabbedView extends React.Component {
     };
   }
 
-  onTabClick = (tab) => {
+  onTabClick = tab => {
     const { children } = this.props;
     this.setState({ activeTab: children.indexOf(tab) });
   };
@@ -91,11 +91,10 @@ class TabbedView extends React.Component {
     return (
       <React.Fragment>
         <Navbar>
-          {
-            React
-              .Children
-              .map(children, tab => (
-                tab &&
+          {React.Children.map(
+            children,
+            tab =>
+              tab && (
                 <NavItem
                   key={tab.props.title}
                   onClick={() => this.onTabClick(tab)}
@@ -103,16 +102,16 @@ class TabbedView extends React.Component {
                 >
                   {tab.props.title}
                 </NavItem>
-              ))
-          }
+              ),
+          )}
         </Navbar>
 
-        {
-          React
-            .Children
-            .map(children, child =>
-              renderIf(this.props.children.indexOf(child) === this.state.activeTab, () => child))
-        }
+        {React.Children.map(children, child =>
+          renderIf(
+            this.props.children.indexOf(child) === this.state.activeTab,
+            () => child,
+          ),
+        )}
       </React.Fragment>
     );
   }

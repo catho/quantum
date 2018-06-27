@@ -8,12 +8,11 @@
     "analyze-bundle": "webpack --json | webpack-bundle-size-analyzer",
     "coverage": "jest --coverage",
     "build": "cross-env NODE_ENV=production webpack",
-    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx",
     "precommit": "lint-staged",
     "prepush": "yarn test",
     "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006 -s static",
     "build-storybook": "build-storybook",
-    "format": "prettier --trailing-comma es5 --single-quote --write"
+    "format": "prettier --write ./**/*.{js,jsx,json}"
   },
   "repository": {
     "type": "git",
@@ -53,8 +52,10 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.0",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.1",
     "eslint-plugin-react": "^7.7.0",
     "husky": "^0.14.3",
     "jest": "^22.4.2",
@@ -102,7 +103,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{js,jsx,json}": [
       "yarn format",
       "git add"
     ]

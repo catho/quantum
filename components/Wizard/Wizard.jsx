@@ -14,9 +14,7 @@ const ProgressBar = styled.ul`
 
 const Wizard = ({ children }) => (
   <Wrapper>
-    <ProgressBar>
-      { children }
-    </ProgressBar>
+    <ProgressBar>{children}</ProgressBar>
   </Wrapper>
 );
 

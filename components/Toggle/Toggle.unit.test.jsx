@@ -27,7 +27,9 @@ describe('Input component ', () => {
     });
 
     it('should not call the callback when disabled prop is set', () => {
-      const wrapper = shallow(<Toggle onChange={mockFn} id="toggle" disabled />);
+      const wrapper = shallow(
+        <Toggle onChange={mockFn} id="toggle" disabled />,
+      );
       const toggle = wrapper.find('#toggle');
       const checked = toggle.prop('checked');
 

@@ -13,7 +13,9 @@ function removeNonDigit(str) {
 }
 
 class Validations {
-  static Required({ value }) { return value ? '' : msg.REQUIRED; }
+  static Required({ value }) {
+    return value ? '' : msg.REQUIRED;
+  }
 
   static CPF({ value }, cpf = removeNonDigit(value)) {
     const CPF_SIZE = 11;
@@ -28,16 +30,16 @@ class Validations {
       }
     }
 
-    const validPosition = (position) => {
+    const validPosition = position => {
       let sum = 0;
       let rev;
 
       for (let i = 0; i < position; i += 1) {
-        sum += Number(cpf.charAt(i)) * ((position + 1) - i);
+        sum += Number(cpf.charAt(i)) * (position + 1 - i);
       }
 
       rev = CPF_SIZE - (sum % CPF_SIZE);
-      rev = (rev === 10 || rev === CPF_SIZE) ? 0 : rev;
+      rev = rev === 10 || rev === CPF_SIZE ? 0 : rev;
 
       return rev === Number(cpf.charAt(position));
     };
@@ -54,7 +56,7 @@ class Validations {
   static Date({ value = '' }) {
     const [day, month, year] = value.split('/');
     const date = new Date(year, month - 1, day);
-    const isValidDate = (date.getMonth() + 1) === Number(month);
+    const isValidDate = date.getMonth() + 1 === Number(month);
 
     return isValidDate ? '' : msg.DATE;
   }

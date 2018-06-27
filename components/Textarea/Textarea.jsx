@@ -22,9 +22,11 @@ const Textfield = styled.textarea`
     border-color: ${Colors.PRIMARY['500']};
   }
 
-  ${props => props.error && `
+  ${props =>
+    props.error &&
+    `
     border-color: ${Colors.DANGER['500']};
-  `}
+  `};
 `;
 
 const Infos = styled.div`
@@ -58,9 +60,11 @@ class Textarea extends React.Component {
     }
   }
 
-  onChange = (e) => {
+  onChange = e => {
     const { onChange } = this.props;
-    const { target: { value } } = e;
+    const {
+      target: { value },
+    } = e;
 
     this.setState({
       value,
@@ -68,21 +72,15 @@ class Textarea extends React.Component {
     });
 
     onChange(e, { value });
-  }
+  };
 
   render() {
-    const {
-      error,
-      id,
-      label,
-      maxLength,
-      ...rest
-    } = this.props;
+    const { error, id, label, maxLength, ...rest } = this.props;
     const { value, charsLeft } = this.state;
 
     return (
       <FieldGroup>
-        { label && <Label htmlFor={id}> {label} </Label> }
+        {label && <Label htmlFor={id}> {label} </Label>}
         <Textfield
           {...rest}
           error={error}

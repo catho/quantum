@@ -26,60 +26,65 @@ const RadioBlock = (
 
 const RadioInline = (
   <RadioGroup inline>
-    <Radio id="radioInline" value="radio" name="radioInline" label="Click me!" />
-    <Radio id="radioTwoInline" value="radioTwo" name="radioInline" label="Click me!" />
+    <Radio
+      id="radioInline"
+      value="radio"
+      name="radioInline"
+      label="Click me!"
+    />
+    <Radio
+      id="radioTwoInline"
+      value="radioTwo"
+      name="radioInline"
+      label="Click me!"
+    />
   </RadioGroup>
 );
 
 const stories = storiesOf('3. Forms', module);
-stories
-  .add('Radio Button', () => (
-    <Heading name="Radio" title="<RadioGroup />">
-      <TabbedView>
-        <Tab title="Usage">
-          <HowToImport importModules="RadioGroup, Radio" componentName="RadioGroup" />
+stories.add('Radio Button', () => (
+  <Heading name="Radio" title="<RadioGroup />">
+    <TabbedView>
+      <Tab title="Usage">
+        <HowToImport
+          importModules="RadioGroup, Radio"
+          componentName="RadioGroup"
+        />
 
-          <StyledDiv>
-            <p>We provide two components to use Radio Buttons.</p>
-            <p><code>{'<RadioGroup>'}</code> and <code>{'<Radio>'}</code> must be used together and can be displayed inlined or blocked</p>
-          </StyledDiv>
+        <StyledDiv>
+          <p>We provide two components to use Radio Buttons.</p>
+          <p>
+            <code>{'<RadioGroup>'}</code> and <code>{'<Radio>'}</code> must be
+            used together and can be displayed inlined or blocked
+          </p>
+        </StyledDiv>
 
-          <h4>RadioGroup with block display</h4>
-          <Row>
-            <Col phone={6}>
-              <CodeExample
-                component={RadioBlock}
-                showTitle={false}
-              />
-            </Col>
+        <h4>RadioGroup with block display</h4>
+        <Row>
+          <Col phone={6}>
+            <CodeExample component={RadioBlock} showTitle={false} />
+          </Col>
 
-            <Col phone={6}>
-              <RadioGroupWrapper>
-                {RadioBlock}
-              </RadioGroupWrapper>
-            </Col>
-          </Row>
+          <Col phone={6}>
+            <RadioGroupWrapper>{RadioBlock}</RadioGroupWrapper>
+          </Col>
+        </Row>
 
-          <h4>RadioGroup with inline display</h4>
-          <Row>
-            <Col phone={6}>
-              <CodeExample
-                component={RadioInline}
-                showTitle={false}
-              />
-            </Col>
+        <h4>RadioGroup with inline display</h4>
+        <Row>
+          <Col phone={6}>
+            <CodeExample component={RadioInline} showTitle={false} />
+          </Col>
 
-            <Col phone={6}>
-              <RadioGroupWrapper>
-                {RadioInline}
-              </RadioGroupWrapper>
-            </Col>
-          </Row>
-        </Tab>
-        <Tab title="API">
-          <AutoPropsApi component={Radio} title="Radio" />
-          <AutoPropsApi component={RadioGroup} title="RadioGroup" />
-        </Tab>
-      </TabbedView>
-    </Heading>
-  ));
+          <Col phone={6}>
+            <RadioGroupWrapper>{RadioInline}</RadioGroupWrapper>
+          </Col>
+        </Row>
+      </Tab>
+      <Tab title="API">
+        <AutoPropsApi component={Radio} title="Radio" />
+        <AutoPropsApi component={RadioGroup} title="RadioGroup" />
+      </Tab>
+    </TabbedView>
+  </Heading>
+));

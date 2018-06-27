@@ -30,16 +30,22 @@ const IcoTooltip = styled.div`
   color: ${props => `${props.color}`};
 
   &:before {
-    content: "${props => `${props.hasJustCopied ? props.success : props.tip[Math.floor(Math.random() * (props.tip.length - 0)) + 0]}`}";
+    content: "${props =>
+      `${
+        props.hasJustCopied
+          ? props.success
+          : props.tip[Math.floor(Math.random() * (props.tip.length - 0)) + 0]
+      }`}";
   }
 `;
 
 const Button = styled.button`
-  background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'inherit')};
+  background-color: ${props =>
+    props.backgroundColor ? props.backgroundColor : 'inherit'};
   border: none;
   cursor: pointer;
 
-  &:hover ${IcoTooltip}{
+  &:hover ${IcoTooltip} {
     display: block;
   }
 `;
@@ -59,12 +65,12 @@ class CodeToClipboard extends React.Component {
     setTimeout(() => {
       this.setState({ hasJustCopied: false });
     }, 1000);
-  }
+  };
 
   render() {
     const { code, color, backgroundColor } = this.props;
     const tips = [
-      'I\'m lazy.',
+      "I'm lazy.",
       'Loved it, copy.',
       'Wow! copy now!',
       'My precious!',

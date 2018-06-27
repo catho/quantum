@@ -9,14 +9,14 @@ import Colors from '../../../components/Colors';
 
 const removeQuotes = str => str.replace(/'/g, '');
 
-function changePropValue(obj, path, value)  {
+function changePropValue(obj, path, value) {
   let prop;
 
   if (!path.length) {
     return obj;
   }
 
-  for (var i = 0, iLen = path.length - 1; i < iLen; i+=1) {
+  for (var i = 0, iLen = path.length - 1; i < iLen; i += 1) {
     prop = path[i];
 
     const candidate = obj[prop];
@@ -27,7 +27,7 @@ function changePropValue(obj, path, value)  {
     }
   }
 
-  return value ? obj[path[i]] = value : obj[path[i]];
+  return value ? (obj[path[i]] = value) : obj[path[i]];
 }
 
 class AutoProps extends React.Component {
@@ -48,7 +48,7 @@ class AutoProps extends React.Component {
       text: value => (value ? String(value) : ''),
       checkbox: value => Boolean(value),
       default: value => value,
-    }
+    };
 
     value = parsedValue[type](value);
 
@@ -61,12 +61,12 @@ class AutoProps extends React.Component {
       this.setState({ message }, () => {
         this.props.changeState(this.state);
       });
-    }else {
+    } else {
       this.setState({ [props.name]: value }, () => {
         this.props.changeState({ [props.name]: value });
       });
     }
-  }
+  };
 
   getPropController = (propPath, propName, propValue, propKey) => {
     const propControllers = [
@@ -90,8 +90,8 @@ class AutoProps extends React.Component {
               defaultValue={propValue}
               path={propPath}
             />
-          )
-        }
+          );
+        },
       },
       {
         type: ['bool'],
@@ -104,8 +104,8 @@ class AutoProps extends React.Component {
               name={propName}
               path={propPath}
             />
-          )
-        }
+          );
+        },
       },
       {
         type: ['string', 'number'],
@@ -118,8 +118,8 @@ class AutoProps extends React.Component {
               path={propPath}
               value={propValue}
             />
-          )
-        }
+          );
+        },
       },
       {
         type: ['shape'],
@@ -131,25 +131,32 @@ class AutoProps extends React.Component {
           component = component.substring(0, component.length - 2) + ` }`;
 
           return component;
-        }
+        },
       },
       {
         type: ['default'],
         controller: (propPath, propName, { name, value }) => {
           return `Type not yet implemented (${name})`;
-        }
+        },
       },
     ];
 
-    const componentType = propControllers.find(item => {
-      return (item.type.some(t=>t === propKey.name) ? item.type : item.type == 'default')
-    }).controller(propPath, propName, propKey);
+    const componentType = propControllers
+      .find(item => {
+        return item.type.some(t => t === propKey.name)
+          ? item.type
+          : item.type == 'default';
+      })
+      .controller(propPath, propName, propKey);
 
     return componentType;
-  }
+  };
 
   renderComponentByType = (propPath, propName, propKey) => {
-    const { [propName]: propValue } = changePropValue(this.props.state, propPath);
+    const { [propName]: propValue } = changePropValue(
+      this.props.state,
+      propPath,
+    );
 
     return this.getPropController(propPath, propName, propValue, propKey);
   };
@@ -162,7 +169,7 @@ class AutoProps extends React.Component {
         <PropsData>
           <IndentSpan>
             {indentation}
-            { propPath.length > 0 ? `└` : `` }
+            {propPath.length > 0 ? `└` : ``}
           </IndentSpan>
 
           <CodeBlock>{propName}</CodeBlock>
@@ -172,43 +179,46 @@ class AutoProps extends React.Component {
           {this.renderComponentByType(propPath, propName, propObject)}
         </PropsData>
       </PropsRow>
-    )
-  }
+    );
+  };
 
   parseShapes = (propPath, propName, { name: propType, value = null }) => {
     let propRows = [];
 
-    if(propType == 'shape') {
+    if (propType == 'shape') {
       const path = Array.from(propPath);
       path.push(propName);
 
-      Object.entries(value)
-      .map(([name, value]) => {
+      Object.entries(value).map(([name, value]) => {
         propRows.push(this.getPropRowTemplate(path, name, value));
         propRows.push(this.parseShapes(path, name, value));
-      })
-    }
-    else {
+      });
+    } else {
       return;
     }
 
     return propRows;
-  }
+  };
 
-  generateRows = (props) => {
+  generateRows = props => {
     const propRows = [];
 
-    Object.entries(props)
-    .map(([name, value]) => {
+    Object.entries(props).map(([name, value]) => {
       propRows.push(this.getPropRowTemplate([], name, value.type));
       propRows.push(this.parseShapes([], name, value.type));
     });
 
     return propRows;
-  }
+  };
 
   render() {
-    const { component: { type : { __docgenInfo : { props } } } } = this.props;
+    const {
+      component: {
+        type: {
+          __docgenInfo: { props },
+        },
+      },
+    } = this.props;
     const propRows = this.generateRows(props);
 
     return (
@@ -217,7 +227,9 @@ class AutoProps extends React.Component {
 
         <table>
           <tbody>
-            { propRows.map( row => { return row }) }
+            {propRows.map(row => {
+              return row;
+            })}
           </tbody>
         </table>
       </React.Fragment>
@@ -226,22 +238,22 @@ class AutoProps extends React.Component {
 }
 
 const CodeBlock = styled.pre`
-  background-color: ${Colors.SECONDARY["50"]};
+  background-color: ${Colors.SECONDARY['50']};
   border-radius: 3px;
   display: inline-block;
   font-size: 85%;
   margin-top: 0;
-  padding:2px 5px;
+  padding: 2px 5px;
 `;
 
 const IndentSpan = styled.span`
-  white-space:pre;
-`
+  white-space: pre;
+`;
 
 const PropsRow = styled.tr`
   padding: 15px;
   &:nth-child(even) {
-    background: ${Colors.SECONDARY["50"]};
+    background: ${Colors.SECONDARY['50']};
   }
   &:nth-child(odd) {
     background: ${Colors.WHITE};
