@@ -9,7 +9,8 @@
     "coverage": "jest --coverage",
     "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx",
-    "prepush": "yarn lint && yarn test",
+    "precommit": "lint-staged",
+    "prepush": "yarn test",
     "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006 -s static",
     "build-storybook": "build-storybook"
   },
@@ -56,6 +57,7 @@
     "eslint-plugin-react": "^7.7.0",
     "husky": "^0.14.3",
     "jest": "^22.4.2",
+    "lint-staged": "^7.2.0",
     "react": "^16.3.1",
     "react-cookies": "^0.1.0",
     "react-copy-to-clipboard": "^5.0.1",
@@ -96,5 +98,11 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileMock.js",
       "\\.(css|less)$": "<rootDir>/styleMock.js"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
