@@ -8,7 +8,8 @@ import theme from '../../theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
 
-const fontSize = ({ size }) => `font-size: ${theme.font[size] || theme.font.normal};`;
+const fontSize = ({ size }) =>
+  `font-size: ${theme.font[size] || theme.font.normal};`;
 const iconSize = ({ size }) => {
   const sizes = {
     normal: '24px',
@@ -37,7 +38,7 @@ const padding = ({ size }) => {
 };
 
 const ButtonIcon = styled(Icon)`
-  ${iconMargin}
+  ${iconMargin};
 `;
 
 const StyledButton = styled.button`
@@ -55,11 +56,15 @@ const StyledButton = styled.button`
     ${iconSize}
   }
 
-  ${props => props.full && `
+  ${props =>
+    props.full &&
+    `
     width: 100%;
   `}
 
-  ${props => props.center && `
+  ${props =>
+    props.center &&
+    `
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -69,18 +74,18 @@ const StyledButton = styled.button`
     cursor: ${props.disabled ? 'not-allowed' : 'pointer'};
   `}
 
-  ${(props) => {
-    const {
-      unselected,
-      selected,
-      disabled,
-    } = skins(props);
+  ${props => {
+    const { unselected, selected, disabled } = skins(props);
 
     return `
-      background-color: ${props.disabled ? disabled.background : unselected.background};
+      background-color: ${
+        props.disabled ? disabled.background : unselected.background
+      };
       border: 1px solid ${props.disabled ? disabled.border : unselected.border};
       color: ${props.disabled ? disabled.color : unselected.color};
-      font-weight: ${props.disabled ? disabled.fontWeight : unselected.fontWeight};
+      font-weight: ${
+        props.disabled ? disabled.fontWeight : unselected.fontWeight
+      };
 
       &:active {
         ${theme.mixins.shadow(2)};
@@ -103,17 +108,12 @@ class Button extends React.Component {
   static Google = SocialButtons.Google;
 
   render() {
-    const {
-      children,
-      icon,
-      size,
-      ...rest
-    } = this.props;
+    const { children, icon, size, ...rest } = this.props;
 
     return (
       <StyledButton {...rest} size={size}>
-        { icon && <ButtonIcon size={size} name={icon} /> }
-        { children }
+        {icon && <ButtonIcon size={size} name={icon} />}
+        {children}
       </StyledButton>
     );
   }
@@ -138,22 +138,9 @@ Button.propTypes = {
   /** Icon name. The full catalogue can be found
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
-  size: PropTypes.oneOf([
-    'normal',
-    'big',
-  ]),
-  skin: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'action',
-    'cancel',
-    'modal',
-  ]),
-  type: PropTypes.oneOf([
-    'button',
-    'reset',
-    'submit',
-  ]),
+  size: PropTypes.oneOf(['normal', 'big']),
+  skin: PropTypes.oneOf(['primary', 'secondary', 'action', 'cancel', 'modal']),
+  type: PropTypes.oneOf(['button', 'reset', 'submit']),
   children: PropTypes.node,
   onClick: PropTypes.func,
 };

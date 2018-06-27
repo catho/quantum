@@ -7312,6 +7312,10 @@ prettier@^1.12.1:
   version "1.13.5"
   resolved "http://armazem.devel:4873/prettier/-/prettier-1.13.5.tgz#7ae2076998c8edce79d63834e9b7b09fead6bfd0"
 
+prettier@^1.13.6:
+  version "1.13.6"
+  resolved "http://armazem.devel:4873/prettier/-/prettier-1.13.6.tgz#00ae0b777ad92f81a9e7a1df2f0470b6dab0cb44"
+
 pretty-bytes@^4.0.2:
   version "4.0.2"
   resolved "http://armazem.devel:4873/pretty-bytes/-/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
