@@ -29,7 +29,9 @@ describe('<Content />', () => {
 
   it('render Header and SubHeader components', () => {
     const contentWrapper = shallow(<Content content={{ header, subheader }} />);
-    const propWrapper = shallow(<Content header={header} subheader={subheader} />);
+    const propWrapper = shallow(
+      <Content header={header} subheader={subheader} />,
+    );
 
     expect(contentWrapper.find(Header)).toHaveLength(1);
     expect(contentWrapper.render().text()).toContain(header);

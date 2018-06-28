@@ -7,13 +7,17 @@ describe('Wizard Component', () => {
   const component = (
     <Wizard>
       <Step title="Criação de conta" icon="person" status="done" />
-      <Step title="Plano Forma de pagamento" icon="credit_card" status="active" />
+      <Step
+        title="Plano Forma de pagamento"
+        icon="credit_card"
+        status="active"
+      />
     </Wizard>
   );
   const wrapper = shallow(component);
 
   it('Should match the snapshot', () => {
-    const tree = renderer.create((component)).toJSON();
+    const tree = renderer.create(component).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

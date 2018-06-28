@@ -11,7 +11,9 @@ const HighlightWrapper = styled.div`
 `;
 
 const HowToImport = ({ importModules, from }) => {
-  const msg = `import ${importModules ? `{ ${importModules} } from ` : ''}'${from}';`;
+  const msg = `import ${
+    importModules ? `{ ${importModules} } from ` : ''
+  }'${from}';`;
 
   return (
     <React.Fragment>
@@ -32,7 +34,6 @@ HowToImport.defaultProps = {
   importModules: null,
   from: '@cathodevel/quantum',
 };
-
 
 HowToImport.propTypes = {
   importModules: PropTypes.string,

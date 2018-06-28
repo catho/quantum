@@ -9,11 +9,15 @@ describe('Input component ', () => {
   });
 
   it('with an error message should match the snapshot', () => {
-    expect(renderer.create(<Input value="foo" error="Error message" />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Input value="foo" error="Error message" />).toJSON(),
+    ).toMatchSnapshot();
   });
 
   describe('with a label', () => {
-    const input = <Input label="Text label" id="input-with-label" value="foo" />;
+    const input = (
+      <Input label="Text label" id="input-with-label" value="foo" />
+    );
 
     it('should match the snapshot', () => {
       expect(renderer.create(input).toJSON()).toMatchSnapshot();
@@ -26,7 +30,7 @@ describe('Input component ', () => {
       expect(label.prop('withValue')).toEqual(true);
     });
 
-    it('should have withValue prop set to false when input doesn\'t have value', () => {
+    it("should have withValue prop set to false when input doesn't have value", () => {
       const inputWithoutValue = <Input label="Text label" id="withoutValue" />;
       const wrapper = shallow(inputWithoutValue);
       const label = wrapper.childAt(1);
@@ -63,8 +67,14 @@ describe('Input component ', () => {
     const wrapper = shallow(<Input type="password" />);
 
     const icon = () => wrapper.childAt(1);
-    const visibilityIcon = () => icon().html().includes('visibility');
-    const visibilityOffIcon = () => icon().html().includes('visibility_off');
+    const visibilityIcon = () =>
+      icon()
+        .html()
+        .includes('visibility');
+    const visibilityOffIcon = () =>
+      icon()
+        .html()
+        .includes('visibility_off');
 
     it('should has "password", as default input type', () => {
       expect(visibilityIcon()).toBeTruthy();

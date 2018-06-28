@@ -21,22 +21,19 @@ const Tip = styled.div`
   visibility: ${props => (props.show ? 'visible' : 'hidden')};
   z-index: 100;
 
-  ${placement.tipPosition}
-
-  &:before {
+  ${placement.tipPosition} &:before {
     content: '';
     position: absolute;
     ${props => placement.arrowPosition[props.place]};
   }
 
-
-  ${(props) => {
+  ${props => {
     if (props.offset || props.offset === 0) {
       return `left: ${props.offset}%;`;
     }
 
     return false;
-  }}
+  }};
 `;
 
 const Wrapper = styled.div`
@@ -71,37 +68,23 @@ class Tooltip extends Component {
   }
 
   measure() {
-    const {
-      clientWidth,
-      clientHeight,
-    } = this.tip;
+    const { clientWidth, clientHeight } = this.tip;
 
     this.setState({ width: clientWidth, height: clientHeight });
   }
 
   handleEnter = () => {
     this.setState({ show: true });
-  }
+  };
 
   handleLeave = () => {
     this.setState({ show: false });
-  }
+  };
 
   render() {
-    const {
-      children,
-      skin,
-      place,
-      text,
-      slider,
-      offset,
-    } = this.props;
+    const { children, skin, place, text, slider, offset } = this.props;
 
-    const {
-      width,
-      height,
-      show,
-    } = this.state;
+    const { width, height, show } = this.state;
 
     return (
       <Wrapper
@@ -111,7 +94,9 @@ class Tooltip extends Component {
       >
         <Tip
           skin={skin}
-          innerRef={(tip) => { this.tip = tip; }}
+          innerRef={tip => {
+            this.tip = tip;
+          }}
           place={place}
           width={width}
           height={height}
@@ -129,19 +114,8 @@ class Tooltip extends Component {
 
 Tooltip.propTypes = {
   text: PropTypes.string,
-  skin: PropTypes.oneOf([
-    'primary',
-    'info',
-    'danger',
-    'success',
-    'warning',
-  ]),
-  place: PropTypes.oneOf([
-    'top',
-    'right',
-    'bottom',
-    'left',
-  ]),
+  skin: PropTypes.oneOf(['primary', 'info', 'danger', 'success', 'warning']),
+  place: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   offset: PropTypes.string,
   slider: PropTypes.bool,
   children: PropTypes.node.isRequired,

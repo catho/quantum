@@ -22,13 +22,14 @@ const simpleList = {
   <List.Item> Hot pepper sauce </List.Item>
 </List>`,
   component: (
-    <List items={[
-      'Tomato sauce',
-      'Mustard',
-      'Barbecue sauce',
-      'Red-wine vinegar',
-      'Salsa',
-      'Hot pepper sauce',
+    <List
+      items={[
+        'Tomato sauce',
+        'Mustard',
+        'Barbecue sauce',
+        'Red-wine vinegar',
+        'Salsa',
+        'Hot pepper sauce',
       ]}
     />
   ),

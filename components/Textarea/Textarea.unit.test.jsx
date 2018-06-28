@@ -10,7 +10,9 @@ describe('Radio component', () => {
   });
 
   it('with an error message should match the snapshot', () => {
-    expect(renderer.create(<Textarea error="Error message" />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Textarea error="Error message" />).toJSON(),
+    ).toMatchSnapshot();
   });
 
   describe('with a label', () => {
@@ -36,11 +38,7 @@ describe('Radio component', () => {
     const id = 'textarea';
 
     const textarea = (
-      <Textarea
-        onChange={mockFn}
-        id={id}
-        maxLength={maxLength}
-      />
+      <Textarea onChange={mockFn} id={id} maxLength={maxLength} />
     );
 
     const wrapper = shallow(textarea);

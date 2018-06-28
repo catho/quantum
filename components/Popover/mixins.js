@@ -72,22 +72,28 @@ export default {
     return positions[place];
   },
 
-  position({
-    place, popoverHeight, popoverWidth, childrenWidth,
-  }) {
+  position({ place, popoverHeight, popoverWidth, childrenWidth }) {
     const positions = {
-      top: `top: -${popoverHeight + 15}px; left: 50%; margin-left: -${Math.floor(popoverWidth / 2)}px;`,
-      right: `right: -${popoverWidth + 15}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
-      left: `left: -${popoverWidth + 15}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
-      'top-left': `top: -${popoverHeight + 15}px; left: ${Math.floor(childrenWidth / 2) + CORNER_ARROW_DISTANCE}px; margin-left: -${popoverWidth}px;`,
-      'top-right': `top: -${popoverHeight + 15}px; left: -${Math.floor(childrenWidth / 2) + CORNER_ARROW_DISTANCE}px; margin-left: 100%;`,
+      top: `top: -${popoverHeight +
+        15}px; left: 50%; margin-left: -${Math.floor(popoverWidth / 2)}px;`,
+      right: `right: -${popoverWidth +
+        15}px; top: 50%; margin-top: -${Math.floor(popoverHeight / 2)}px;`,
+      left: `left: -${popoverWidth + 15}px; top: 50%; margin-top: -${Math.floor(
+        popoverHeight / 2,
+      )}px;`,
+      'top-left': `top: -${popoverHeight + 15}px; left: ${Math.floor(
+        childrenWidth / 2,
+      ) + CORNER_ARROW_DISTANCE}px; margin-left: -${popoverWidth}px;`,
+      'top-right': `top: -${popoverHeight + 15}px; left: -${Math.floor(
+        childrenWidth / 2,
+      ) + CORNER_ARROW_DISTANCE}px; margin-left: 100%;`,
     };
 
     return positions[place] || positions.top;
   },
 
   visibility({ show }) {
-    return (show
+    return show
       ? `
         opacity: 1;
         visibility: visible;
@@ -95,12 +101,11 @@ export default {
       : `
         opacity: 0;
         visibility: hidden;
-      `
-    );
+      `;
   },
 
   skin({ skin: name }) {
-    return (skins[name]
+    return skins[name]
       ? `
         border-color: ${skins[name]};
         background-color: ${skins[name]};
@@ -109,15 +114,13 @@ export default {
       : `
         border-color: ${Colors.WHITE};
         background-color: ${Colors.WHITE};
-      `
-    );
+      `;
   },
 
   title({ title: text }) {
-    return (text
+    return text
       ? `border-bottom: 1px solid ${Colors.SECONDARY['50']};`
-      : 'padding-bottom: 0;'
-    );
+      : 'padding-bottom: 0;';
   },
 
   justifyTitle({ title: text }) {

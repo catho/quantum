@@ -97,34 +97,37 @@ export default () => (
     <HowToImport importModules="Colors" />
 
     <ColorPallete>
-      {
-        Object.entries(Colors)
-        .filter(([name]) => !['BLACK', 'WHITE', 'FACEBOOK', 'GOOGLE'].includes(name))
+      {Object.entries(Colors)
+        .filter(
+          ([name]) => !['BLACK', 'WHITE', 'FACEBOOK', 'GOOGLE'].includes(name),
+        )
         .map(([name, value]) => (
           <ColorList key={name}>
             <ColorTitle colorHex={Colors[name]['500']}>
-              <p style={{ fontVariant: 'all-small-caps', fontWeight: 'bold' }}>{name}</p>
+              <p style={{ fontVariant: 'all-small-caps', fontWeight: 'bold' }}>
+                {name}
+              </p>
 
               <PrimaryNumber>
                 <ColorNumber>500</ColorNumber>
                 <ColorHex>{Colors[name]['500']}</ColorHex>
               </PrimaryNumber>
             </ColorTitle>
-            {
-              Object.entries(value).map(([number, hex], index) => (
-                <ColorBox key={hex} grey={index < 4} colorHex={hex}>
-                  <ColorNumber>{number}</ColorNumber>
-                  <ColorHex>{hex}</ColorHex>
+            {Object.entries(value).map(([number, hex], index) => (
+              <ColorBox key={hex} grey={index < 4} colorHex={hex}>
+                <ColorNumber>{number}</ColorNumber>
+                <ColorHex>{hex}</ColorHex>
 
-                  <CopyToClipboard colorHex={hex}>
-                    <CodeToClipboard code={`Colors.${name}['${number}']`} color={index < 4 ? '#333333' : '#FFFFFF'} />
-                  </CopyToClipboard>
-                </ColorBox>
-              ))
-            }
+                <CopyToClipboard colorHex={hex}>
+                  <CodeToClipboard
+                    code={`Colors.${name}['${number}']`}
+                    color={index < 4 ? '#333333' : '#FFFFFF'}
+                  />
+                </CopyToClipboard>
+              </ColorBox>
+            ))}
           </ColorList>
-        ))
-      }
+        ))}
       <ColorList>
         <ColorBox colorHex={Colors.BLACK}>
           <ColorNumber>BLACK</ColorNumber>
@@ -164,24 +167,22 @@ export default () => (
     <Title>Code</Title>
     <p>Some samples on how the Color object are structured</p>
     <Highlight language="javascript" className="highlight">
-      {
-        [
-          'console.log(Colors.PRIMARY[\'200\']);',
-          '/*returns: #80ADD1;*/',
-          '\n',
-          'console.log(Colors.SECONDARY[\'600\'])',
-          '/*returns: #039BE5/*',
-          '\n',
-          'console.log(Colors.DANGER[\'400\'])',
-          '/*returns: #EF5350/*',
-          '\n',
-          'console.log(Colors.BLACK)',
-          '/*returns: #000000/*',
-          '\n',
-          'console.log(Colors.GREY[\'900\'])',
-          '/*returns: #263238/*',
-        ].join('\n')
-      }
+      {[
+        "console.log(Colors.PRIMARY['200']);",
+        '/*returns: #80ADD1;*/',
+        '\n',
+        "console.log(Colors.SECONDARY['600'])",
+        '/*returns: #039BE5/*',
+        '\n',
+        "console.log(Colors.DANGER['400'])",
+        '/*returns: #EF5350/*',
+        '\n',
+        'console.log(Colors.BLACK)',
+        '/*returns: #000000/*',
+        '\n',
+        "console.log(Colors.GREY['900'])",
+        '/*returns: #263238/*',
+      ].join('\n')}
     </Highlight>
   </React.Fragment>
 );

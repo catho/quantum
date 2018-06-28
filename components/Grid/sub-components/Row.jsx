@@ -19,8 +19,10 @@ const Row = styled.div`
   margin-right: -15px;
   margin-left: -15px;
 
-  ${props => props.hide && [].concat([], props.hide).map(prop => hide[prop]())}
-  ${props => props['no-gutters'] && noGutters}
+  ${props =>
+    props.hide &&
+    [].concat([], props.hide).map(prop => hide[prop]())} ${props =>
+    props['no-gutters'] && noGutters};
 `;
 
 Row.propTypes = {

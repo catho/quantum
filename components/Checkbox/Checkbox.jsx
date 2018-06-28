@@ -30,11 +30,15 @@ const StyledLabel = styled(Label)`
   margin-bottom: 0;
   padding-left: 24px;
 
-  ${({ disabled }) => disabled && `
+  ${({ disabled }) =>
+    disabled &&
+    `
     color: ${Colors.SECONDARY['300']};
   `}
 
-  ${({ checked, disabled }) => checked && `
+  ${({ checked, disabled }) =>
+    checked &&
+    `
     &:after {
       content: ' ';
       display: inline-block;
@@ -71,7 +75,9 @@ const StyledLabel = styled(Label)`
   }
 
   &:hover:before {
-    ${({ disabled }) => !disabled && `
+    ${({ disabled }) =>
+      !disabled &&
+      `
       border: 1px solid ${Colors.PRIMARY['500']};
     `}
   }
@@ -83,8 +89,6 @@ const StyledFieldGroup = styled(FieldGroup)`
   display: flex;
   flex-direction: row;
   align-items: center;
-
-
 `;
 
 const StyledCheckbox = styled.input`
@@ -106,7 +110,7 @@ class Checkbox extends React.Component {
     }
   }
 
-  onChange = (e) => {
+  onChange = e => {
     const { onChange, disabled } = this.props;
 
     if (disabled) return;
@@ -116,7 +120,7 @@ class Checkbox extends React.Component {
     this.setState({ checked: !checked });
 
     onChange(e, { checked: !checked });
-  }
+  };
 
   render() {
     const { label, disabled, ...rest } = this.props;
@@ -144,7 +148,7 @@ Checkbox.defaultProps = {
   id: '',
   checked: false,
   disabled: false,
-  onChange: () => { },
+  onChange: () => {},
 };
 
 Checkbox.propTypes = {

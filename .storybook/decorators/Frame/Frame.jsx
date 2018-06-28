@@ -88,9 +88,7 @@ injectGlobal`
 
 const Frame = storyFn => (
   <React.Fragment>
-    <Container>
-      {storyFn()}
-    </Container>
+    <Container>{storyFn()}</Container>
   </React.Fragment>
 );
 

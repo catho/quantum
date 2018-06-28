@@ -48,28 +48,30 @@ class Modal extends Component {
     this.setState({
       opened: false,
     });
-  }
+  };
 
   openModal = () => {
     this.setState({
       opened: true,
     });
-  }
+  };
 
-  handleOverlayClick = ({ target }) => this.overlayRef === target && this.closeModal();
+  handleOverlayClick = ({ target }) =>
+    this.overlayRef === target && this.closeModal();
 
-  handleTriggerClick = (e) => {
-    const { trigger: { props: { onClick } } } = this.props;
+  handleTriggerClick = e => {
+    const {
+      trigger: {
+        props: { onClick },
+      },
+    } = this.props;
     this.openModal();
 
     return typeof onClick === 'function' && onClick(e);
-  }
+  };
 
   render() {
-    const {
-      children,
-      trigger,
-    } = this.props;
+    const { children, trigger } = this.props;
 
     const triggerProps = trigger.props;
 
@@ -81,10 +83,13 @@ class Modal extends Component {
         })}
 
         {this.state.opened && (
-          <Overlay innerRef={(ref) => { this.overlayRef = ref; }} onClick={this.handleOverlayClick}>
-            <Wrapper>
-              {children}
-            </Wrapper>
+          <Overlay
+            innerRef={ref => {
+              this.overlayRef = ref;
+            }}
+            onClick={this.handleOverlayClick}
+          >
+            <Wrapper>{children}</Wrapper>
           </Overlay>
         )}
       </React.Fragment>

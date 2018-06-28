@@ -8,11 +8,15 @@ describe('Button component', () => {
   });
 
   it('when full prop is set', () => {
-    expect(renderer.create(<Button full>Full</Button>).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Button full>Full</Button>).toJSON(),
+    ).toMatchSnapshot();
   });
 
   it('when center prop is set', () => {
-    expect(renderer.create(<Button center>Center</Button>).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Button center>Center</Button>).toJSON(),
+    ).toMatchSnapshot();
   });
 
   describe('when there is a skin set', () => {

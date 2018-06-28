@@ -45,10 +45,18 @@ const placement = {
 
   tipPosition: ({ place, height, width }) => {
     const position = {
-      top: `top: -${height + 5}px; left: 50%; margin-left: -${Math.floor(width / 2)}px;`,
-      right: `right: -${width + 15}px;top: 50%; margin-top: -${Math.floor(height / 2)}px;`,
-      bottom: `bottom: -${height + 10}px; left: 50%; margin-left: -${Math.floor(width / 2)}px;`,
-      left: `left: -${width + 15}px;top: 50%; margin-top: -${Math.floor(height / 2)}px;`,
+      top: `top: -${height + 5}px; left: 50%; margin-left: -${Math.floor(
+        width / 2,
+      )}px;`,
+      right: `right: -${width + 15}px;top: 50%; margin-top: -${Math.floor(
+        height / 2,
+      )}px;`,
+      bottom: `bottom: -${height + 10}px; left: 50%; margin-left: -${Math.floor(
+        width / 2,
+      )}px;`,
+      left: `left: -${width + 15}px;top: 50%; margin-top: -${Math.floor(
+        height / 2,
+      )}px;`,
     };
 
     return position[place] || position.top;
@@ -63,7 +71,4 @@ const skins = {
   warning: Colors.WARNING['500'],
 };
 
-export {
-  skins,
-  placement,
-};
+export { skins, placement };

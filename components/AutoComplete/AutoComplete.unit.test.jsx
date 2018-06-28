@@ -3,12 +3,7 @@ import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import AutoComplete from './AutoComplete';
 
-const dataSource = [
-  'Brazil',
-  'Germany',
-  'Mexico',
-  'Usa',
-];
+const dataSource = ['Brazil', 'Germany', 'Mexico', 'Usa'];
 const value = 'test';
 const defaultAutoComplete = (
   <AutoComplete dataSource={dataSource} value={value} />

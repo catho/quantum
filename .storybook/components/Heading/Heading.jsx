@@ -19,29 +19,14 @@ const Title = styled.h1`
   }
 `;
 
-const Heading = ({
-  name,
-  title,
-  image,
-  children,
-}) => (
+const Heading = ({ name, title, image, children }) => (
   <React.Fragment>
     <Title>
-      { image &&
-        <img
-          alt={title}
-          src={image}
-          width="60"
-          height="60"
-        />
-      }
+      {image && <img alt={title} src={image} width="60" height="60" />}
       {title || `<${name} />`}
-      {
-        name &&
-        <GitlabLink name={name} />
-      }
+      {name && <GitlabLink name={name} />}
     </Title>
-    { children }
+    {children}
   </React.Fragment>
 );
 

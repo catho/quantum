@@ -27,17 +27,20 @@ const StyledSlider = styled(SliderComponent)`
     height: ${({ disabled }) => (!disabled ? '20px' : '15px')};
     transition: border 0.1s, box-shadow 0.1s;
 
-    ${({ disabled }) => !disabled &&
-    `&:hover {
-        box-shadow: 0 0 1px 5px ${theme.mixins.hexToRgba(Colors.PRIMARY['500'], 0.5)};
+    ${({ disabled }) =>
+      !disabled &&
+      `&:hover {
+        box-shadow: 0 0 1px 5px ${theme.mixins.hexToRgba(
+          Colors.PRIMARY['500'],
+          0.5,
+        )};
       }
 
       &:active {
         border: 1px solid ${Colors.PRIMARY['500']};
         box-shadow: none;
       }
-      `
-}
+      `}
 }
 
   .rc-slider-mark {
@@ -74,12 +77,7 @@ const StyledSlider = styled(SliderComponent)`
 
 const { Handle: OriginalHandle } = SliderComponent;
 
-const Handle = ({
-  value,
-  offset,
-  dragging,
-  ...restProps
-}) => (
+const Handle = ({ value, offset, dragging, ...restProps }) => (
   <Tooltip slider offset={offset.toString()} text={value.toString()}>
     <OriginalHandle value={value} offset={offset} {...restProps} />
   </Tooltip>
@@ -98,15 +96,7 @@ Handle.propTypes = {
 };
 
 /** Sliders allow users to make selections from a range of values. */
-const Slider = ({
-  tooltip,
-  marks,
-  min,
-  max,
-  step,
-  disabled,
-  ...rest
-}) => {
+const Slider = ({ tooltip, marks, min, max, step, disabled, ...rest }) => {
   const sliderProps = {
     min,
     max,
@@ -123,11 +113,7 @@ const Slider = ({
     sliderProps.marks = marks;
   }
 
-  return (
-    <StyledSlider
-      {...sliderProps}
-    />
-  );
+  return <StyledSlider {...sliderProps} />;
 };
 
 Slider.defaultProps = {
@@ -135,10 +121,10 @@ Slider.defaultProps = {
   disabled: false,
   tooltip: false,
   marks: {},
-  onChange: () => { },
-  onBeforeChange: () => { },
-  onAfterChange: () => { },
-  onClick: () => { },
+  onChange: () => {},
+  onBeforeChange: () => {},
+  onAfterChange: () => {},
+  onClick: () => {},
 };
 
 Slider.propTypes = {

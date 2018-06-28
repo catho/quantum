@@ -14,9 +14,14 @@ function execValidate(validate, props) {
   return msg ? error || msg : '';
 }
 
+const typeNames = Object.values(InputTypes).map(
+  InputType => InputType.displayName,
+);
+
 class Form extends React.Component {
-  static _isValidElement = element => React.isValidElement(element)
-    && [Input, ...Object.values(InputTypes)].includes(element.type)
+  static _isValidElement = element =>
+    React.isValidElement(element) &&
+    [Input.displayName, ...typeNames].includes(element.type.displayName);
 
   constructor(props) {
     super(props);
@@ -29,44 +34,34 @@ class Form extends React.Component {
 
     const { children } = this.props;
 
-    React
-      .Children
-      .map(children, (child) => {
-        if (!Form._isValidElement(child)) return;
+    React.Children.map(children, child => {
+      if (!Form._isValidElement(child)) return;
 
-        const { props: { name, value } } = child;
-        if (value) this.state.values[name] = value;
-      });
+      const {
+        props: { name, value },
+      } = child;
+      if (value) this.state.values[name] = value;
+    });
   }
 
-  _createClones = children => React
-    .Children
-    .map(
-      children,
-      (child) => {
-        if (!Form._isValidElement(child)) {
-          return child;
-        }
+  _createClones = children =>
+    React.Children.map(children, child => {
+      if (!Form._isValidElement(child)) {
+        return child;
+      }
 
-        const { name, error, onChange } = child.props;
-        return (
-          React
-            .cloneElement(
-              child,
-              {
-                value: this.state.values[name],
-                error: this.state.errors[name] || error,
-                onChange: (e, data) => {
-                  this._handleChange(e, data);
-                  onChange(e, data);
-                },
-              },
-            )
-        );
-      },
-    );
+      const { name, error, onChange } = child.props;
+      return React.cloneElement(child, {
+        value: this.state.values[name],
+        error: this.state.errors[name] || error,
+        onChange: (e, data) => {
+          this._handleChange(e, data);
+          onChange(e, data);
+        },
+      });
+    });
 
-  _findError = (child) => {
+  _findError = child => {
     const { props } = child;
     const { validate = () => {} } = props;
 
@@ -93,23 +88,19 @@ class Form extends React.Component {
     }
 
     return invalid;
-  }
+  };
 
-  _validateError = children => React
-    .Children
-    .map(
-      children,
-      (child) => {
-        const { name } = child.props;
+  _validateError = children =>
+    React.Children.map(children, child => {
+      const { name } = child.props;
 
-        const _error = this._findError(child);
+      const _error = this._findError(child);
 
-        const newError = this.state.errors;
-        newError[name] = _error;
+      const newError = this.state.errors;
+      newError[name] = _error;
 
-        this.setState({ errors: newError });
-      },
-    );
+      this.setState({ errors: newError });
+    });
 
   _handleChange = ({ target: { name } }, { value }) => {
     const values = {
@@ -122,9 +113,9 @@ class Form extends React.Component {
 
     this.setState({ errors: newErrors });
     this.setState({ values });
-  }
+  };
 
-  handleSubmit = (event) => {
+  handleSubmit = event => {
     event.preventDefault();
 
     this._validateError(this.props.children);
@@ -138,7 +129,7 @@ class Form extends React.Component {
 
       if (valid) onValidSubmit(this.state.values);
     });
-  }
+  };
 
   render() {
     // Removing invalid form props, to avoid warnings
@@ -147,9 +138,7 @@ class Form extends React.Component {
 
     return (
       <form {..._props} onSubmit={this.handleSubmit}>
-        {
-          this._createClones(this.props.children)
-        }
+        {this._createClones(this.props.children)}
       </form>
     );
   }

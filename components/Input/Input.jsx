@@ -22,13 +22,15 @@ const InputLabel = styled(Label)`
   top: 6px;
   ${theme.mixins.transition()};
 
-  ${props => props.withValue && `
+  ${props =>
+    props.withValue &&
+    `
     ${sharedStyle}
-  `}
-
-  ${props => props.error && `
+  `} ${props =>
+    props.error &&
+    `
     color: ${Colors.DANGER['500']};
-  `}
+  `};
 `;
 
 const InputTag = styled.input`
@@ -44,7 +46,9 @@ const InputTag = styled.input`
   outline: none;
   width: 100%;
 
-  ${props => props.password && `
+  ${props =>
+    props.password &&
+    `
     padding-right: 28px;
   `}
 
@@ -56,7 +60,9 @@ const InputTag = styled.input`
     border-color: ${Colors.PRIMARY['500']};
   }
 
-  ${props => props.error && `
+  ${props =>
+    props.error &&
+    `
     border-color: ${Colors.DANGER['500']};
   `}
 
@@ -92,10 +98,7 @@ class Input extends React.Component {
   constructor(props) {
     super(props);
 
-    const {
-      value,
-      type,
-    } = props;
+    const { value, type } = props;
 
     this.state = {
       value,
@@ -104,25 +107,29 @@ class Input extends React.Component {
   }
 
   componentWillUpdate(nextProps) {
-    if ((nextProps.value !== this.state.value) ||
-        (nextProps.type !== this.state.type)) {
+    if (
+      nextProps.value !== this.state.value ||
+      nextProps.type !== this.state.type
+    ) {
       this.state.value = nextProps.value;
       this.state.type = nextProps.type;
     }
   }
 
-  _onChange = (e) => {
+  _onChange = e => {
     const { onChange } = this.props;
-    const { target: { value } } = e;
+    const {
+      target: { value },
+    } = e;
 
     this.setState({ value });
 
     onChange(e, { value });
-  }
+  };
 
-  _changeType = (type) => {
+  _changeType = type => {
     this.setState({ type });
-  }
+  };
 
   _showPassword = () => {
     const { type } = this.state;
@@ -132,16 +139,10 @@ class Input extends React.Component {
     } else {
       this._changeType('text');
     }
-  }
+  };
 
   render() {
-    const {
-      id,
-      label,
-      error,
-      mask,
-      ...rest
-    } = this.props;
+    const { id, label, error, mask, ...rest } = this.props;
     const { value, type } = this.state;
 
     return (
@@ -163,22 +164,17 @@ class Input extends React.Component {
           )}
         />
 
-        { label &&
-          <InputLabel
-            htmlFor={id}
-            error={error}
-            withValue={!!value}
-          >
+        {label && (
+          <InputLabel htmlFor={id} error={error} withValue={!!value}>
             {label}
           </InputLabel>
-        }
-        {
-          this.props.type === 'password' &&
+        )}
+        {this.props.type === 'password' && (
           <InputIcon
             name={type === 'password' ? 'visibility' : 'visibility_off'}
             onClick={this._showPassword}
           />
-        }
+        )}
         {error && <ErrorMessage>{error}</ErrorMessage>}
       </InputFieldGroup>
     );
@@ -202,13 +198,7 @@ Input.propTypes = {
   value: PropTypes.string,
   /** Display a label text that describe the field */
   label: PropTypes.string,
-  type: PropTypes.oneOf([
-    'email',
-    'text',
-    'tel',
-    'number',
-    'password',
-  ]),
+  type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
   /** Display an error message and changes border color to error color */
   error: PropTypes.string,
   /** Set a text mask that filter user input */
@@ -229,5 +219,7 @@ Input.propTypes = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
 };
+
+Input.displayName = 'Input';
 
 export default Input;

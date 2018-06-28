@@ -49,25 +49,30 @@ const tabExample = (
     <h3>Others</h3>
     <TipGrid>
       <div>
-        <Tooltip text="Catho Empresas"><Logo.Business /></Tooltip>
+        <Tooltip text="Catho Empresas">
+          <Logo.Business />
+        </Tooltip>
       </div>
       <div>
-        <Tooltip place="right" text="Catho"><Logo /></Tooltip>
+        <Tooltip place="right" text="Catho">
+          <Logo />
+        </Tooltip>
       </div>
       <div>
-        <Tooltip place="bottom" text="Catho Educação"><Logo.Education /></Tooltip>
+        <Tooltip place="bottom" text="Catho Educação">
+          <Logo.Education />
+        </Tooltip>
       </div>
     </TipGrid>
   </Tab>
 );
 
-storiesOf('8. Tooltip', module)
-  .add('Basic', () => (
-    <AutoExample
-      component={Tooltip}
-      additionalTabs={tabExample}
-      componentProps={{
-        children: 'Hover me',
-      }}
-    />
-  ));
+storiesOf('8. Tooltip', module).add('Basic', () => (
+  <AutoExample
+    component={Tooltip}
+    additionalTabs={tabExample}
+    componentProps={{
+      children: 'Hover me',
+    }}
+  />
+));

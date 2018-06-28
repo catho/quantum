@@ -1,3 +1,13 @@
+## v0.9.2 - Jun/2018
+### Added
+Prettier setup
+### Removed
+Lint task
+
+## v0.9.1 - Jun/2018
+### Fixed
+Form child validation
+
 ## v0.9.0 - Jun/2018
 ### Changed
 Update Notification component, now it's Alert component

@@ -30,19 +30,29 @@ const Terminal = styled.div`
 `;
 
 const gifUrls = {
-  app: 'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/application-react.gif',
-  component: 'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/component-stateful.gif',
+  app:
+    'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/application-react.gif',
+  component:
+    'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/component-stateful.gif',
 };
 
 const Introduction = () => (
   <React.Fragment>
-    <p>The official <strong>Catho</strong> style guide</p>
+    <p>
+      The official <strong>Catho</strong> style guide
+    </p>
 
     <Title style={{ marginTop: '40px' }}>Starting from scratch</Title>
 
     <p>
-      In order to easily creating new apps or components,
-      we present our <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank" rel="noopener noreferrer">CLI</a>.
+      In order to easily creating new apps or components, we present our{' '}
+      <a
+        href="https://en.wikipedia.org/wiki/Command-line_interface"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CLI
+      </a>.
     </p>
 
     <h3>How to install</h3>
@@ -68,22 +78,30 @@ const Introduction = () => (
     <TabbedView>
       <Tab title="Application">
         <Terminal>
-          <Image src={gifUrls.app} alt="Creating a react application with few commands" />
+          <Image
+            src={gifUrls.app}
+            alt="Creating a react application with few commands"
+          />
         </Terminal>
       </Tab>
       <Tab title="Component">
         <Terminal>
-          <Image src={gifUrls.component} alt="Creating a react component with few commands" />
+          <Image
+            src={gifUrls.component}
+            alt="Creating a react component with few commands"
+          />
         </Terminal>
       </Tab>
     </TabbedView>
 
     <Title>Using with an existing project</Title>
 
-    <p>Create a <code>.npmrc</code> file, with the following content:</p>
+    <p>
+      Create a <code>.npmrc</code> file, with the following content:
+    </p>
     <HighlightWrapper>
       <Highlight language="javascript" className="highlight">
-        { registry }
+        {registry}
       </Highlight>
 
       <CodeToClipboard code={registry} />
@@ -92,7 +110,7 @@ const Introduction = () => (
     <p>Add as a dependency:</p>
     <HighlightWrapper>
       <Highlight language="javascript" className="highlight">
-        { yarnAdd }
+        {yarnAdd}
       </Highlight>
 
       <CodeToClipboard code={yarnAdd} />

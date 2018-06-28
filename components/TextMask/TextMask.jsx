@@ -14,9 +14,7 @@ class TextMask extends React.Component {
     const { children, text, mask } = this.props;
     const input = text || children;
 
-    return mask
-      ? conformToMask(input, mask).conformedValue
-      : input;
+    return mask ? conformToMask(input, mask).conformedValue : input;
   }
 }
 

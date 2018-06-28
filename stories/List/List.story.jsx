@@ -20,17 +20,9 @@ import simpleListContent from './sub-components/simpleListContent';
 const ListExample = ({ code, component }) => (
   <React.Fragment>
     <Col tablet={4}>
-      {
-        <CodeExample
-          component={{}}
-          code={code}
-          showTitle={false}
-        />
-      }
+      {<CodeExample component={{}} code={code} showTitle={false} />}
     </Col>
-    <Col tablet={4}>
-      {component}
-    </Col>
+    <Col tablet={4}>{component}</Col>
   </React.Fragment>
 );
 
@@ -45,22 +37,26 @@ storiesOf('10. List', module).add('List', () => (
       <Tab title="Usage">
         <HowToImport importModules="List" />
         <Row>
-
           <Col desktop={12} tablet={12}>
-            <p>The List component was build to be as simple and flexible as you want.</p>
+            <p>
+              The List component was build to be as simple and flexible as you
+              want.
+            </p>
 
-            <p>It works with just a string array or with <code>List.Item</code> </p>
+            <p>
+              It works with just a string array or with <code>List.Item</code>{' '}
+            </p>
           </Col>
 
           <ListExample {...simpleList} />
         </Row>
         <Row>
           <Col desktop={12} tablet={12}>
-            <p>Also, you can add some properties to the list such as
+            <p>
+              Also, you can add some properties to the list such as
               <code>ordered</code>,
               <code>divided</code>,
-              <code>bullet</code>,
-              and <code>inline</code>
+              <code>bullet</code>, and <code>inline</code>
             </p>
           </Col>
 
@@ -81,52 +77,33 @@ storiesOf('10. List', module).add('List', () => (
           <Col tablet={3}>
             <List
               inline
-              items={[
-                'Tomato sauce',
-                'Mustard',
-                'Barbecue sauce',
-              ]}
+              items={['Tomato sauce', 'Mustard', 'Barbecue sauce']}
             />
             <List
               divided
               inline
-              items={[
-                'Tomato sauce',
-                'Mustard',
-                'Barbecue sauce',
-              ]}
+              items={['Tomato sauce', 'Mustard', 'Barbecue sauce']}
             />
           </Col>
           <Col tablet={2}>
             <List
               ordered
-              items={[
-                'Tomato sauce',
-                'Mustard',
-                'Barbecue sauce',
-              ]}
+              items={['Tomato sauce', 'Mustard', 'Barbecue sauce']}
             />
           </Col>
           <Col tablet={2}>
             <List
               divided
               bullet="»"
-              items={[
-                'Tomato sauce',
-                'Mustard',
-                'Barbecue sauce',
-              ]}
+              items={['Tomato sauce', 'Mustard', 'Barbecue sauce']}
             />
           </Col>
-
         </Row>
         <Row>
           <Col desktop={12} tablet={12}>
             <h3>Item</h3>
 
-            <p>
-              You have some alternatives to write an item.
-            </p>
+            <p>You have some alternatives to write an item.</p>
           </Col>
 
           <ListExample {...simpleListItemAlternatives} />
@@ -136,7 +113,8 @@ storiesOf('10. List', module).add('List', () => (
             <h3>Content</h3>
 
             <p>
-              Like <code>List.Item</code>, you have some alternatives to write an content too.
+              Like <code>List.Item</code>, you have some alternatives to write
+              an content too.
             </p>
           </Col>
 
@@ -151,6 +129,5 @@ storiesOf('10. List', module).add('List', () => (
         <AutoPropsApi component={SubHeader} title="List.SubHeader" />
       </Tab>
     </TabbedView>
-
   </Heading>
 ));

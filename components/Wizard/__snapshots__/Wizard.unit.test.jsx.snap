@@ -8,7 +8,7 @@ exports[`Wizard Component Should match the snapshot 1`] = `
     className="Wizard__ProgressBar-bZMfKu jvTztC"
   >
     <li
-      className="Step__ProgressStep-jVQefS fyCKhy"
+      className="Step__ProgressStep-jVQefS hupESk"
     >
       <p
         className="Step__Title-kjpidS khCQIZ"
@@ -17,7 +17,7 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE krXGGQ"
+        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE jkXcmV"
         status="done"
         style={
           Object {
@@ -29,7 +29,7 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="Step__ProgressStep-jVQefS donhdm"
+      className="Step__ProgressStep-jVQefS hdqgYm"
     >
       <p
         className="Step__Title-kjpidS khCQIZ"
@@ -38,7 +38,7 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE hgaaBU"
+        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE jyVmuJ"
         status="active"
         style={
           Object {

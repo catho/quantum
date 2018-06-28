@@ -1,28 +1,33 @@
 {
-    "extends": "airbnb",
-    "env": {
-        "jest": true
-    },
-    "parser": "babel-eslint",
-    "rules": {
-        "strict": 0,
-        "import/no-extraneous-dependencies": 0,
-        "jsx-a11y/label-has-for": [ 2, {
-            "components": [ "Label" ],
-            "required": {
-                "some": [ "nesting", "id" ]
-            },
-            "allowChildren": false
-        }],
-        "no-underscore-dangle": 0,
-        "no-unused-expressions": [
-            "error", {
-                "allowTaggedTemplates": true
-            }
-        ]
-    },
-    "globals": {
-        "window": true,
-        "document": true
-    }
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "env": {
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "import/no-extraneous-dependencies": 0,
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": ["Label"],
+        "required": {
+          "some": ["nesting", "id"]
+        },
+        "allowChildren": false
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTaggedTemplates": true
+      }
+    ]
+  },
+  "globals": {
+    "window": true,
+    "document": true
+  }
 }

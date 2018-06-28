@@ -7,65 +7,46 @@ import Icon from './../Icon';
 describe('Popover', () => {
   it('should match the snapshot', () => {
     const examples = [
-      (
-        <Popover>Interact</Popover>
-      ), (
-        <Popover title="Title" closeTitle="Close">
-          Interact
-        </Popover>
-      ), (
-        <Popover
-          content={(
-            <div>
-              <h1>My title</h1>
-              <ul>
-                <li>Content</li>
-                <li>Content</li>
-                <li>Content</li>
-              </ul>
+      <Popover>Interact</Popover>,
+      <Popover title="Title" closeTitle="Close">
+        Interact
+      </Popover>,
+      <Popover
+        content={
+          <div>
+            <h1>My title</h1>
+            <ul>
+              <li>Content</li>
+              <li>Content</li>
+              <li>Content</li>
+            </ul>
 
-              <hr />
+            <hr />
 
-              <Button>Click me</Button>
-            </div>
-          )}
-        >
-          Interact
-        </Popover>
-      ), (
-        <Popover place="top-right">
-          Interact
-        </Popover>
-      ), (
-        <Popover place="top-left">
-          Interact
-        </Popover>
-      ), (
-        <Popover place="left">
-          Interact
-        </Popover>
-      ), (
-        <Popover skin="p2p">
-          Interact
-        </Popover>
-      ), (
-        <Popover ribbon="Limited edition">
-          Interact
-        </Popover>
-      ),
+            <Button>Click me</Button>
+          </div>
+        }
+      >
+        Interact
+      </Popover>,
+      <Popover place="top-right">Interact</Popover>,
+      <Popover place="top-left">Interact</Popover>,
+      <Popover place="left">Interact</Popover>,
+      <Popover skin="p2p">Interact</Popover>,
+      <Popover ribbon="Limited edition">Interact</Popover>,
     ];
 
-    examples.forEach((component) => {
+    examples.forEach(component => {
       expect(mount(component).html()).toMatchSnapshot();
     });
   });
 
   it('should appear when children is clicked', () => {
-    const wrapper = mount((
+    const wrapper = mount(
       <Popover>
         <Button>Interact</Button>
-      </Popover>
-    ));
+      </Popover>,
+    );
 
     expect(wrapper.state('show')).toBe(false);
 
@@ -75,11 +56,11 @@ describe('Popover', () => {
   });
 
   describe('should disappear according matched trigger', () => {
-    const wrapper = mount((
+    const wrapper = mount(
       <Popover>
         <Button>Interact</Button>
-      </Popover>
-    ));
+      </Popover>,
+    );
 
     beforeEach(() => {
       wrapper.find(Button).simulate('click', {});

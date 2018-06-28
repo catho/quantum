@@ -27,7 +27,9 @@ describe('Input component ', () => {
     });
 
     it('should not call the callback when disabled prop is set', () => {
-      const wrapper = shallow(<Checkbox onChange={mockFn} id="checkbox" disabled />);
+      const wrapper = shallow(
+        <Checkbox onChange={mockFn} id="checkbox" disabled />,
+      );
       const checkbox = wrapper.find('#checkbox');
       const checked = checkbox.prop('checked');
 

@@ -7,13 +7,15 @@ import Radio from './Radio';
 describe('Radio component', () => {
   const onChangeMock = jest.fn();
 
-  const radioButton = (<Radio
-    id="radio"
-    name="radio"
-    value="1"
-    label="Hello"
-    onChange={onChangeMock}
-  />);
+  const radioButton = (
+    <Radio
+      id="radio"
+      name="radio"
+      value="1"
+      label="Hello"
+      onChange={onChangeMock}
+    />
+  );
 
   const wrapper = shallow(<RadioGroup>{radioButton}</RadioGroup>);
 

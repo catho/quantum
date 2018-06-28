@@ -13,7 +13,7 @@ const ContentBox = styled.div`
 ContentBox.displayName = 'Content';
 
 class Content extends React.Component {
-  _renderContent = (content) => {
+  _renderContent = content => {
     if (typeof content === 'string') {
       return <Header>{content}</Header>;
     }
@@ -35,11 +35,7 @@ class Content extends React.Component {
   render() {
     const { content, children } = this.props;
 
-    return (
-      <ContentBox>
-        {children || this._renderContent(content)}
-      </ContentBox>
-    );
+    return <ContentBox>{children || this._renderContent(content)}</ContentBox>;
   }
 }
 

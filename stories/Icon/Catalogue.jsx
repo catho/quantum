@@ -18,7 +18,7 @@ class Catalogue extends Component {
       : this.state.icons;
 
     this.setState({ filtered });
-  }
+  };
 
   render() {
     const { filtered } = this.state;
@@ -29,14 +29,25 @@ class Catalogue extends Component {
           <Row>
             <Col tablet={12}>
               <p>
-                We are using <a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">Material Design icons</a> as default library.
+                We are using{' '}
+                <a
+                  href="https://material.io/tools/icons/?style=baseline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Material Design icons
+                </a>{' '}
+                as default library.
               </p>
             </Col>
           </Row>
           <Row style={{ marginTop: '-40px' }}>
             <Col tablet={10}>
               <h3 style={{ marginTop: '50px' }}>
-                Available Icons <small style={{ color: Colors.SECONDARY['100'] }}>click to copy</small>
+                Available Icons{' '}
+                <small style={{ color: Colors.SECONDARY['100'] }}>
+                  click to copy
+                </small>
               </h3>
             </Col>
             <Col tablet={2}>
@@ -47,13 +58,12 @@ class Catalogue extends Component {
 
         <Container fluid>
           <Row>
-            { filtered.map(name => <IconToClipboard name={name} key={name} />) }
+            {filtered.map(name => <IconToClipboard name={name} key={name} />)}
           </Row>
         </Container>
       </React.Fragment>
     );
   }
 }
-
 
 export default Catalogue;

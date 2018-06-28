@@ -6,11 +6,7 @@ import Modal from './Modal';
 describe('Radio component', () => {
   const closeModal = () => {};
   const modal = (
-    <Modal
-      closeModal={closeModal}
-      title="Modal Example"
-      opened
-    >
+    <Modal closeModal={closeModal} title="Modal Example" opened>
       Example Message
     </Modal>
   );

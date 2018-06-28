@@ -19,14 +19,9 @@ const AdvancedValidation = () => (
     <Input
       name="catho"
       label="This field only accepts Catho as a value"
-      validate={
-        ({ value }) => (value === 'Catho' ? '' : 'Catho, please')
-      }
+      validate={({ value }) => (value === 'Catho' ? '' : 'Catho, please')}
     />
-    <Button
-      name="submit"
-      type="submit"
-    >
+    <Button name="submit" type="submit">
       Enviar
     </Button>
   </Form>
@@ -60,7 +55,4 @@ const AdvancedValidationCode = `
   </Button>
 </Form>`;
 
-export {
-  AdvancedValidation as Form,
-  AdvancedValidationCode as Code,
-};
+export { AdvancedValidation as Form, AdvancedValidationCode as Code };
