@@ -18,10 +18,7 @@ const form = (
       name="email"
       id="email"
       label="E-mail"
-      validate={[
-        Validations.Required,
-        Validations.Email,
-      ]}
+      validate={[Validations.Required, Validations.Email]}
     />
 
     <Input.Password
@@ -36,64 +33,73 @@ const form = (
   </Form>
 );
 
-const examples = [{
-  label: 'Top Right',
-  props: {
-    content: 'Content',
-    place: 'top-right',
+const examples = [
+  {
+    label: 'Top Right',
+    props: {
+      content: 'Content',
+      place: 'top-right',
+    },
   },
-}, {
-  label: 'Left',
-  props: {
-    content: 'Content',
-    place: 'left',
+  {
+    label: 'Left',
+    props: {
+      content: 'Content',
+      place: 'left',
+    },
   },
-}, {
-  label: 'Right',
-  props: {
-    content: 'Content',
-    place: 'right',
+  {
+    label: 'Right',
+    props: {
+      content: 'Content',
+      place: 'right',
+    },
   },
-}, {
-  label: 'Top-Left',
-  props: {
-    content: 'Content',
-    place: 'top-left',
+  {
+    label: 'Top-Left',
+    props: {
+      content: 'Content',
+      place: 'top-left',
+    },
   },
-}, {
-  label: 'With Title',
-  props: {
-    content: 'Content',
-    title: 'Great Popover',
-    place: 'top-right',
+  {
+    label: 'With Title',
+    props: {
+      content: 'Content',
+      title: 'Great Popover',
+      place: 'top-right',
+    },
   },
-}, {
-  label: 'With p2p skin',
-  props: {
-    content: 'Content',
-    skin: 'p2p',
+  {
+    label: 'With p2p skin',
+    props: {
+      content: 'Content',
+      skin: 'p2p',
+    },
   },
-}, {
-  label: 'With ribbon',
-  props: {
-    content: 'Content',
-    skin: 'p2p',
-    ribbon: 'Limited edition',
+  {
+    label: 'With ribbon',
+    props: {
+      content: 'Content',
+      skin: 'p2p',
+      ribbon: 'Limited edition',
+    },
   },
-}, {
-  label: 'With rich content',
-  props: {
-    content: form,
-    title: 'Register',
+  {
+    label: 'With rich content',
+    props: {
+      content: form,
+      title: 'Register',
+    },
   },
-}].map(({ label, props: { content, ...rest } }) => (
+].map(({ label, props: { content, ...rest } }) => (
   <Col tablet={3} key={`example-${label}`}>
     <Example
-      component={(
+      component={
         <Popover content={<Content>{content}</Content>} {...rest}>
-          <Button size="big">{ label }</Button>
+          <Button size="big">{label}</Button>
         </Popover>
-      )}
+      }
     />
   </Col>
 ));
@@ -101,7 +107,7 @@ const examples = [{
 const exampleTab = (
   <Tab title="Example">
     <Container fluid>
-      <Row>{ examples }</Row>
+      <Row>{examples}</Row>
     </Container>
   </Tab>
 );

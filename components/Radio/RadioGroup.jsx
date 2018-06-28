@@ -16,17 +16,16 @@ class RadioGroup extends React.Component {
 
   handleChange = (e, value) => {
     this.setState(value);
-  }
+  };
 
   render() {
     const { children, ...rest } = this.props;
 
     return (
       <Group {...rest}>
-        {
-          React.Children.map(children, ({ type: Component, props }) => (
-            <Component key={Component.displayName} {...props} />))
-        }
+        {React.Children.map(children, ({ type: Component, props }) => (
+          <Component key={Component.displayName} {...props} />
+        ))}
       </Group>
     );
   }

@@ -13,9 +13,7 @@ class Logo extends Component {
 
   render() {
     const { src, ...props } = this.props;
-    return (
-      <Image src={src} {...props} />
-    );
+    return <Image src={src} {...props} />;
   }
 }
 

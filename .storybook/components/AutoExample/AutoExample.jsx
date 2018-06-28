@@ -19,17 +19,14 @@ const AutoExample = ({
     <Heading name={name} image={Atom}>
       <TabbedView>
         <Tab title="Usage">
-          <ComponentPanel
-            component={element}
-            importModules={importModules}
-          />
+          <ComponentPanel component={element} importModules={importModules} />
         </Tab>
 
         <Tab title="API">
           <AutoPropsApi component={element.type} />
         </Tab>
 
-        { additionalTabs }
+        {additionalTabs}
       </TabbedView>
     </Heading>
   </React.Fragment>

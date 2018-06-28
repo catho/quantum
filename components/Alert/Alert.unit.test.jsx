@@ -5,54 +5,6 @@ import Alert from './Alert';
 describe('Input component ', () => {
   it('should match the snapshot', () => {
     const examples = [
-      (
-        <Alert
-          show
-          type="info"
-          message={{
-            title: 'Simple',
-            text: 'This is a dummy',
-          }}
-        />
-      ),
-      (
-        <Alert
-          show
-          type="success"
-          message={{
-            title: 'Simple',
-            text: 'This is a dummy',
-          }}
-        />
-      ),
-      (
-        <Alert
-          show
-          type="warning"
-          message={{
-            title: 'Simple',
-            text: 'This is a dummy',
-          }}
-        />
-      ),
-      (
-        <Alert
-          show
-          type="error"
-          message={{
-            title: 'Simple',
-            text: 'This is a dummy',
-          }}
-        />
-      ),
-    ];
-    examples.forEach((component) => {
-      expect(mount(component).html()).toMatchSnapshot();
-    });
-  });
-
-  it('should close when click the close button', () => {
-    const alert = mount((
       <Alert
         show
         type="info"
@@ -60,8 +12,48 @@ describe('Input component ', () => {
           title: 'Simple',
           text: 'This is a dummy',
         }}
-      />
-    ));
+      />,
+      <Alert
+        show
+        type="success"
+        message={{
+          title: 'Simple',
+          text: 'This is a dummy',
+        }}
+      />,
+      <Alert
+        show
+        type="warning"
+        message={{
+          title: 'Simple',
+          text: 'This is a dummy',
+        }}
+      />,
+      <Alert
+        show
+        type="error"
+        message={{
+          title: 'Simple',
+          text: 'This is a dummy',
+        }}
+      />,
+    ];
+    examples.forEach(component => {
+      expect(mount(component).html()).toMatchSnapshot();
+    });
+  });
+
+  it('should close when click the close button', () => {
+    const alert = mount(
+      <Alert
+        show
+        type="info"
+        message={{
+          title: 'Simple',
+          text: 'This is a dummy',
+        }}
+      />,
+    );
 
     alert.find('AlertClose').simulate('click', {});
 
@@ -71,7 +63,7 @@ describe('Input component ', () => {
   it('should close when duration time ends', () => {
     jest.useFakeTimers();
 
-    const alert = mount((
+    const alert = mount(
       <Alert
         show
         duration={5}
@@ -80,8 +72,8 @@ describe('Input component ', () => {
           title: 'Simple',
           text: 'This is a dummy',
         }}
-      />
-    ));
+      />,
+    );
 
     expect(alert.state('show')).toBe(true);
     jest.runAllTimers();
@@ -90,7 +82,7 @@ describe('Input component ', () => {
 
   it('should call onClose callback when click the close button', () => {
     const closeCallback = jest.fn();
-    const alert = mount((
+    const alert = mount(
       <Alert
         show
         onClose={closeCallback}
@@ -99,8 +91,8 @@ describe('Input component ', () => {
           title: 'Simple',
           text: 'This is a dummy',
         }}
-      />
-    ));
+      />,
+    );
 
     alert.find('AlertClose').simulate('click', {});
     expect(closeCallback).toHaveBeenCalledTimes(1);
@@ -109,7 +101,7 @@ describe('Input component ', () => {
   it('should call onClose callback when alert duration ends', () => {
     jest.useFakeTimers();
     const closeCallback = jest.fn();
-    mount((
+    mount(
       <Alert
         show
         duration={5}
@@ -119,8 +111,8 @@ describe('Input component ', () => {
           title: 'Simple',
           text: 'This is a dummy',
         }}
-      />
-    ));
+      />,
+    );
 
     jest.runAllTimers();
     expect(closeCallback).toHaveBeenCalledTimes(1);

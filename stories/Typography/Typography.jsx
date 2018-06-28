@@ -62,37 +62,66 @@ const Li = styled.li`
 
 const Typography = () => (
   <Font>
-    <p><strong>Oxygen</strong> is the standard typeface for Catho on the web</p>
+    <p>
+      <strong>Oxygen</strong> is the standard typeface for Catho on the web
+    </p>
 
-    <p>In order to use the default Catho Typography, just import the font css:</p>
+    <p>
+      In order to use the default Catho Typography, just import the font css:
+    </p>
 
     <HowToImport from="@cathodevel/quantum/static/typography.css" />
 
-    <p>This font also provides all the available <LinkTo kind="1. Foundation" story="Icons">Icons</LinkTo></p>
+    <p>
+      This font also provides all the available{' '}
+      <LinkTo kind="1. Foundation" story="Icons">
+        Icons
+      </LinkTo>
+    </p>
 
     <Title>Headings</Title>
 
     <table>
       <tbody>
         <Tr>
-          <Td>h1 <Small>24px</Small></Td>
-          <td><H size="24">Heading One</H></td>
+          <Td>
+            h1 <Small>24px</Small>
+          </Td>
+          <td>
+            <H size="24">Heading One</H>
+          </td>
         </Tr>
         <Tr>
-          <Td>h2 <Small>22px</Small></Td>
-          <td><H size="22">Heading Two</H></td>
+          <Td>
+            h2 <Small>22px</Small>
+          </Td>
+          <td>
+            <H size="22">Heading Two</H>
+          </td>
         </Tr>
         <Tr>
-          <Td>h3 <Small>20px</Small></Td>
-          <td><H size="20">Heading Three</H></td>
+          <Td>
+            h3 <Small>20px</Small>
+          </Td>
+          <td>
+            <H size="20">Heading Three</H>
+          </td>
         </Tr>
         <Tr>
-          <Td>h4 <Small>18px</Small></Td>
-          <td><H size="18">Heading Four</H></td>
+          <Td>
+            h4 <Small>18px</Small>
+          </Td>
+          <td>
+            <H size="18">Heading Four</H>
+          </td>
         </Tr>
         <Tr>
-          <Td>h5 <Small>18px</Small></Td>
-          <td><H size="18">Heading Five</H></td>
+          <Td>
+            h5 <Small>18px</Small>
+          </Td>
+          <td>
+            <H size="18">Heading Five</H>
+          </td>
         </Tr>
       </tbody>
     </table>
@@ -102,26 +131,34 @@ const Typography = () => (
     <table>
       <tbody>
         <Tr>
-          <Td>a <Small>inherit</Small></Td>
-          <td><Link href="/">Lorem ipsum dolor sit amet.</Link></td>
+          <Td>
+            a <Small>inherit</Small>
+          </Td>
+          <td>
+            <Link href="/">Lorem ipsum dolor sit amet.</Link>
+          </td>
         </Tr>
         <Tr>
-          <Td>p <Small>16px</Small></Td>
+          <Td>
+            p <Small>16px</Small>
+          </Td>
           <td>
             <P>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Curabitur lorem magna, molestie at pretium non, consequat
-              sit amet ante. Aenean et ultrices elit. Suspendisse quis urna
-              consequat, condimentum tortor ut, laoreet magna. Praesent
-              accumsan massa pellentesque felis tempus, at semper lacus
-              ullamcorper. Vestibulum maximus est est, sed ullamcorper mi
-              pellentesque at. Nunc facilisis blandit felis sed sollicitudin.
-              Proin rutrum consectetur gravida.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              lorem magna, molestie at pretium non, consequat sit amet ante.
+              Aenean et ultrices elit. Suspendisse quis urna consequat,
+              condimentum tortor ut, laoreet magna. Praesent accumsan massa
+              pellentesque felis tempus, at semper lacus ullamcorper. Vestibulum
+              maximus est est, sed ullamcorper mi pellentesque at. Nunc
+              facilisis blandit felis sed sollicitudin. Proin rutrum consectetur
+              gravida.
             </P>
           </td>
         </Tr>
         <Tr>
-          <Td>blockquote <Small>12px</Small></Td>
+          <Td>
+            blockquote <Small>12px</Small>
+          </Td>
           <td>
             <Blockquote>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -130,8 +167,8 @@ const Typography = () => (
               condimentum tortor ut, laoreet magna. Praesent accumsan massa
               pellentesque felis tempus, at semper lacus ullamcorper. Vestibulum
               maximus est est, sed ullamcorper mi pellentesque at. Nunc
-              facilisis blandit felis sed sollicitudin. Proin rutrum
-              consectetur gravida.
+              facilisis blandit felis sed sollicitudin. Proin rutrum consectetur
+              gravida.
             </Blockquote>
           </td>
         </Tr>
@@ -144,21 +181,31 @@ const Typography = () => (
       <Caption>Lists have line-height of 24 pixels.</Caption>
       <tbody>
         <Tr>
-          <Td>ul {'>'} li <Small>16px</Small></Td>
+          <Td>
+            ul {'>'} li <Small>16px</Small>
+          </Td>
           <td>
             <Ul style={{ marginBottom: '20px' }}>
               <Li>Lorem ipsum dolor sit amet</Li>
-              <Li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Li>
+              <Li>
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua
+              </Li>
               <Li>Consectetur adipiscing elit</Li>
             </Ul>
           </td>
         </Tr>
         <Tr>
-          <Td>ol {'>'} li <Small>16px</Small></Td>
+          <Td>
+            ol {'>'} li <Small>16px</Small>
+          </Td>
           <td>
             <Ol>
               <Li>Lorem ipsum dolor sit amet</Li>
-              <Li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Li>
+              <Li>
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua
+              </Li>
               <Li>Consectetur adipiscing elit</Li>
             </Ol>
           </td>

@@ -56,18 +56,12 @@ const Text = styled.p`
   margin: 5px 0;
 `;
 
-const Modal = ({
-  title,
-  children,
-  closeModal,
-}) => (
+const Modal = ({ title, children, closeModal }) => (
   <Overlay>
     <Content>
       <Close onClick={closeModal}>x</Close>
-      {title && (<Title>{title}</Title>)}
-      <Text>
-        {children}
-      </Text>
+      {title && <Title>{title}</Title>}
+      <Text>{children}</Text>
     </Content>
   </Overlay>
 );

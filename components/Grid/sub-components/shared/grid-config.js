@@ -1,10 +1,4 @@
-const DEVICES = [
-  'hd',
-  'large',
-  'desktop',
-  'tablet',
-  'phone',
-];
+const DEVICES = ['hd', 'large', 'desktop', 'tablet', 'phone'];
 
 const BREAKPOINTS = {
   hd: 1440,

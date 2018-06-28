@@ -16,7 +16,8 @@ import {
 
 const examples = {
   CEP: {
-    code: 'Alameda Juari, 262 - Barueri, SP - <TextMask.CEP>06460090</TextMask.CEP>',
+    code:
+      'Alameda Juari, 262 - Barueri, SP - <TextMask.CEP>06460090</TextMask.CEP>',
     component: (
       <React.Fragment>
         Alameda Juari, 262 - Barueri, SP - <TextMask.CEP>06460090</TextMask.CEP>
@@ -36,7 +37,31 @@ const examples = {
 <TextMask mask={[/\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/, " ", /\\d/, /\\d/, /\\d/, /\\d/]}>4024007113535149</TextMask>`,
     component: (
       <React.Fragment>
-        <TextMask mask={[/\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/]}>4024007113535149</TextMask>
+        <TextMask
+          mask={[
+            /\d/,
+            /\d/,
+            /\d/,
+            /\d/,
+            ' ',
+            /\d/,
+            /\d/,
+            /\d/,
+            /\d/,
+            ' ',
+            /\d/,
+            /\d/,
+            /\d/,
+            /\d/,
+            ' ',
+            /\d/,
+            /\d/,
+            /\d/,
+            /\d/,
+          ]}
+        >
+          4024007113535149
+        </TextMask>
       </React.Fragment>
     ),
   },
@@ -55,54 +80,56 @@ const TextMaskCode = `<TextMask text="06460090" mask={[[/\\d/, /\\d/, /\\d/, /\\
 <TextMask.CEP>06460090</TextMask.CEP>
 <TextMask.CEP text="06460090" />`;
 
-storiesOf('7. Mask', module)
-  .add('Text', () => (
-    <React.Fragment>
-      <Heading image={Atom} name="TextMask">
-        <TabbedView>
-          <Tab title="Usage">
-            <HowToImport importModules="TextMask" />
+storiesOf('7. Mask', module).add('Text', () => (
+  <React.Fragment>
+    <Heading image={Atom} name="TextMask">
+      <TabbedView>
+        <Tab title="Usage">
+          <HowToImport importModules="TextMask" />
 
-            <p>
-              <br />
-              This is a component to render properly the given text:
-            </p>
-
-            <CodeExample showTitle={false} code={TextMaskCode} />
+          <p>
             <br />
+            This is a component to render properly the given text:
+          </p>
 
-            <p>
-              All examples above will renders this output: <TextMask.CEP>06460090</TextMask.CEP>
-            </p>
+          <CodeExample showTitle={false} code={TextMaskCode} />
+          <br />
 
-            <p>
-              Like Input, you can provide your own mask using <code>mask</code> property
-              or use one of the availables:
-            </p>
+          <p>
+            All examples above will renders this output:{' '}
+            <TextMask.CEP>06460090</TextMask.CEP>
+          </p>
 
-            <ul>
-              { Object.keys(TextMaskTypes).map(type => <li key={type}>{type}: <code>{`<TextMast.${type} />`}</code> </li>) }
-            </ul>
-          </Tab>
-          <Tab title="API">
-            <AutoPropsApi component={TextMask} />
-          </Tab>
-          <Tab title="Examples">
-            { Object
-                .keys(examples)
-                .map((example) => {
-                  const { code, component } = examples[example];
-                  return (
-                    <Example
-                      title={example}
-                      key={example}
-                      code={code}
-                      component={component}
-                    />
-                  );
-                }) }
-          </Tab>
-        </TabbedView>
-      </Heading>
-    </React.Fragment>
-  ));
+          <p>
+            Like Input, you can provide your own mask using <code>mask</code>{' '}
+            property or use one of the availables:
+          </p>
+
+          <ul>
+            {Object.keys(TextMaskTypes).map(type => (
+              <li key={type}>
+                {type}: <code>{`<TextMast.${type} />`}</code>{' '}
+              </li>
+            ))}
+          </ul>
+        </Tab>
+        <Tab title="API">
+          <AutoPropsApi component={TextMask} />
+        </Tab>
+        <Tab title="Examples">
+          {Object.keys(examples).map(example => {
+            const { code, component } = examples[example];
+            return (
+              <Example
+                title={example}
+                key={example}
+                code={code}
+                component={component}
+              />
+            );
+          })}
+        </Tab>
+      </TabbedView>
+    </Heading>
+  </React.Fragment>
+));

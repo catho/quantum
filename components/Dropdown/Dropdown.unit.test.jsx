@@ -10,7 +10,9 @@ describe('Input component ', () => {
   });
 
   it('with an error message should match the snapshot', () => {
-    expect(renderer.create(<Dropdown error="Error message" />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown error="Error message" />).toJSON(),
+    ).toMatchSnapshot();
   });
 
   describe('with items', () => {
@@ -48,21 +50,18 @@ describe('Input component ', () => {
   describe('with an "onChange" callback set', () => {
     const mockFn = jest.fn();
 
-    const items = [{
-      value: 'fooKey',
-      item: 'foo',
-    }, {
-      value: 'barKey',
-      item: 'bar',
-    }];
+    const items = [
+      {
+        value: 'fooKey',
+        item: 'foo',
+      },
+      {
+        value: 'barKey',
+        item: 'bar',
+      },
+    ];
 
-    const dropdown = (
-      <Dropdown
-        onChange={mockFn}
-        id="dropdown"
-        items={items}
-      />
-    );
+    const dropdown = <Dropdown onChange={mockFn} id="dropdown" items={items} />;
 
     const wrapper = shallow(dropdown);
 

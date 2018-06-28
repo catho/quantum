@@ -11,12 +11,20 @@ const Col = styled.div`
   padding-right: 15px;
   box-sizing: border-box;
 
-  ${props => props.hide && [].concat([], props.hide).map(prop => hide[prop] && hide[prop]())}
+  ${props =>
+    props.hide &&
+    [].concat([], props.hide).map(prop => hide[prop] && hide[prop]())}
 
-  ${props => props.phone && query.phone`width: ${(props.phone / GRID_COLUMNS) * 100}%;`}
-  ${props => props.tablet && query.tablet`width: ${(props.tablet / GRID_COLUMNS) * 100}%;`}
-  ${props => props.desktop && query.desktop`width: ${(props.desktop / GRID_COLUMNS) * 100}%;`}
-  ${props => props.large && query.large`width: ${(props.large / GRID_COLUMNS) * 100}%;`}
+  ${props =>
+    props.phone && query.phone`width: ${(props.phone / GRID_COLUMNS) * 100}%;`}
+  ${props =>
+    props.tablet &&
+    query.tablet`width: ${(props.tablet / GRID_COLUMNS) * 100}%;`}
+  ${props =>
+    props.desktop &&
+    query.desktop`width: ${(props.desktop / GRID_COLUMNS) * 100}%;`}
+  ${props =>
+    props.large && query.large`width: ${(props.large / GRID_COLUMNS) * 100}%;`}
   ${props => props.hd && query.hd`width: ${(props.hd / GRID_COLUMNS) * 100}%;`}
 `;
 

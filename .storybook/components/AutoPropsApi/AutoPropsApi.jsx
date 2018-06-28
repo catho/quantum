@@ -3,8 +3,11 @@ import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Title from '../Title';
 
-const wrap = name => children =>
-  <span>{name} [{children}]</span>;
+const wrap = name => children => (
+  <span>
+    {name} [{children}]
+  </span>
+);
 
 const failSafe = type => () => (
   <span>
@@ -21,11 +24,12 @@ const filterIgnoredProps = (prop, ignoreds) => {
   return !ignoreds.includes(prop);
 };
 
-const removeQuotes = (str) => { // "''"
+const removeQuotes = str => {
+  // "''"
   let withoutQuotes = str.replace(/'/g, '');
 
   if (withoutQuotes) {
-    withoutQuotes = <code>{ withoutQuotes }</code>;
+    withoutQuotes = <code>{withoutQuotes}</code>;
   }
 
   return withoutQuotes;
@@ -35,31 +39,44 @@ const renderPropType = (type = {}) => {
   const typeHandlers = {
     custom: () => wrap('custom')(),
 
-    enum: value => wrap('oneOf')(value.map((v, i, allValues) =>
-      <span key={v.value}><code>{removeQuotes(v.value)}</code>{allValues[i + 1] && ', '}</span>)),
+    enum: value =>
+      wrap('oneOf')(
+        value.map((v, i, allValues) => (
+          <span key={v.value}>
+            <code>{removeQuotes(v.value)}</code>
+            {allValues[i + 1] && ', '}
+          </span>
+        )),
+      ),
 
-    union: value => wrap('oneOfType')(value.map((v, i, allValues) => (
-      <span key={v.name.repeat(i)}>
-        <code>{renderPropType(v)}</code>
-        {allValues[i + 1] && ', '}
-      </span>
-    ))),
+    union: value =>
+      wrap('oneOfType')(
+        value.map((v, i, allValues) => (
+          <span key={v.name.repeat(i)}>
+            <code>{renderPropType(v)}</code>
+            {allValues[i + 1] && ', '}
+          </span>
+        )),
+      ),
 
-    shape: value => wrap('shape')((
-      <ul>
-        { Object
-          .keys(value)
-          .map(key => ({ ...value[key], key }))
-          .map(v => (
-            <li key={v.key}>
-              {v.key}:&nbsp;
-              {renderPropType(v)}
-              {v.required && <small><strong>&nbsp;required</strong></small>}
-            </li>
-          ))
-        }
-      </ul>
-    )),
+    shape: value =>
+      wrap('shape')(
+        <ul>
+          {Object.keys(value)
+            .map(key => ({ ...value[key], key }))
+            .map(v => (
+              <li key={v.key}>
+                {v.key}:&nbsp;
+                {renderPropType(v)}
+                {v.required && (
+                  <small>
+                    <strong>&nbsp;required</strong>
+                  </small>
+                )}
+              </li>
+            ))}
+        </ul>,
+      ),
 
     arrayOf: value => wrap('arrayOf')(renderPropType(value)),
   };
@@ -74,9 +91,9 @@ const renderPropType = (type = {}) => {
 const AutoPropsApi = ({ component: Component, title, ignoredProps }) => (
   <React.Fragment>
     <Title>{title || 'Available props'}</Title>
-    { Component.__docgenInfo &&
+    {Component.__docgenInfo && (
       <ReactMarkdown source={Component.__docgenInfo.description} />
-    }
+    )}
     <table className="bordered">
       <thead>
         <tr>
@@ -88,21 +105,22 @@ const AutoPropsApi = ({ component: Component, title, ignoredProps }) => (
         </tr>
       </thead>
       <tbody>
-        {
-          Component.__docgenInfo &&
-
+        {Component.__docgenInfo &&
           Object.entries(Component.__docgenInfo.props)
             .filter(([name]) => filterIgnoredProps(name, ignoredProps))
             .map(([name, value]) => (
               <tr key={name}>
-                <td>{ name }</td>
-                <td>{ renderPropType(value.type) }</td>
-                <td>{ value.defaultValue && removeQuotes(value.defaultValue.value) }</td>
-                <td>{ value.required ? 'Yes' : 'No' }</td>
-                <td><ReactMarkdown source={value.description} /></td>
+                <td>{name}</td>
+                <td>{renderPropType(value.type)}</td>
+                <td>
+                  {value.defaultValue && removeQuotes(value.defaultValue.value)}
+                </td>
+                <td>{value.required ? 'Yes' : 'No'}</td>
+                <td>
+                  <ReactMarkdown source={value.description} />
+                </td>
               </tr>
-            ))
-        }
+            ))}
       </tbody>
     </table>
   </React.Fragment>

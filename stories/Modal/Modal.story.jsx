@@ -34,32 +34,35 @@ class ModalStory extends React.Component {
             <HowToImport importModules="Modal" />
 
             <p>
-              Use Modal component to add dialogs to your UI for lightboxes,
-              user notifications, or completely custom content.
+              Use Modal component to add dialogs to your UI for lightboxes, user
+              notifications, or completely custom content.
             </p>
             <p>
-              A modal displays content that temporarily blocks interactions
-              with the main view of a site.
+              A modal displays content that temporarily blocks interactions with
+              the main view of a site.
             </p>
             <Row>
               <Col phone={6}>
-                <CodeExample showTitle={false} component={<Modal title="Example Title" closeModal={this.handleOpen}> Example Content</Modal>} />
+                <CodeExample
+                  showTitle={false}
+                  component={
+                    <Modal title="Example Title" closeModal={this.handleOpen}>
+                      {' '}
+                      Example Content
+                    </Modal>
+                  }
+                />
               </Col>
               <Col phone={6}>
                 <StyledButton skin="primary" onClick={this.handleOpen}>
                   {this.state.showModal ? 'Close' : 'Open'} Modal
                 </StyledButton>
 
-                { this.state.showModal &&
-                  (
-                    <Modal
-                      title="Example Title"
-                      closeModal={this.handleOpen}
-                    >
-                      Example Content
-                    </Modal>
-                  )
-                }
+                {this.state.showModal && (
+                  <Modal title="Example Title" closeModal={this.handleOpen}>
+                    Example Content
+                  </Modal>
+                )}
               </Col>
             </Row>
           </Tab>
@@ -73,7 +76,4 @@ class ModalStory extends React.Component {
   }
 }
 
-stories
-  .add('Basic', () => (
-    <ModalStory />
-  ));
+stories.add('Basic', () => <ModalStory />);

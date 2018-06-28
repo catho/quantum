@@ -51,28 +51,31 @@ const exampleCode = `<Icon name="thumb_up" />
 <Icon name="event" skin={Colors.DANGER['300']} />
 `;
 
-storiesOf('1. Foundation', module)
-  .add('Icons', () => (
-    <React.Fragment>
-      <Heading name="Icon">
-        <TabbedView>
-          <Tab title="Usage">
-            <HowToImport importModules="Icon" />
-            <Title>Usage</Title>
-            <p>You need to import the <LinkTo kind="1. Foundation" story="Typography">typography</LinkTo> to include icon fonts.</p>
-            <small>
-              {
-                exampleIcons.map(icon => (
-                  <IconWrapper key={icon.props.name}>{icon}</IconWrapper>
-                ))
-              }
-            </small>
-            <CodeExample showTitle={false} code={exampleCode} />
-          </Tab>
-          <Tab title="Catalogue">
-            <Catalogue />
-          </Tab>
-        </TabbedView>
-      </Heading>
-    </React.Fragment>
-  ));
+storiesOf('1. Foundation', module).add('Icons', () => (
+  <React.Fragment>
+    <Heading name="Icon">
+      <TabbedView>
+        <Tab title="Usage">
+          <HowToImport importModules="Icon" />
+          <Title>Usage</Title>
+          <p>
+            You need to import the{' '}
+            <LinkTo kind="1. Foundation" story="Typography">
+              typography
+            </LinkTo>{' '}
+            to include icon fonts.
+          </p>
+          <small>
+            {exampleIcons.map(icon => (
+              <IconWrapper key={icon.props.name}>{icon}</IconWrapper>
+            ))}
+          </small>
+          <CodeExample showTitle={false} code={exampleCode} />
+        </Tab>
+        <Tab title="Catalogue">
+          <Catalogue />
+        </Tab>
+      </TabbedView>
+    </Heading>
+  </React.Fragment>
+));

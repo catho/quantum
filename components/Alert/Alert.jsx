@@ -19,12 +19,11 @@ const AlertWrapper = styled.div`
   color: ${props => ComponentTheme[props.type].color};
   padding: 12px;
   position: relative;
-  ${GlobalTheme.mixins.shadow(2)}
+  ${GlobalTheme.mixins.shadow(2)};
 `;
 
 const AlertIcon = styled(Icon)`
-  ${sharedStyles}
-  left: 12px;
+  ${sharedStyles} left: 12px;
 `;
 
 const AlertMessage = styled.div`
@@ -66,17 +65,23 @@ class Alert extends Component {
   }
 
   hideModal = () => {
-    this.setState({ show: false }, this.props.onClose ? this.props.onClose() : null);
-  }
+    this.setState(
+      { show: false },
+      this.props.onClose ? this.props.onClose() : null,
+    );
+  };
 
   handleAutoDestruction = () => {
     setTimeout(() => {
       this.hideModal();
     }, this.props.duration * 1000);
-  }
+  };
 
   render() {
-    const { type, message: { title, text } } = this.props;
+    const {
+      type,
+      message: { title, text },
+    } = this.props;
 
     return this.state.show ? (
       <ThemeProvider theme={GlobalTheme}>
@@ -84,14 +89,17 @@ class Alert extends Component {
           <AlertIcon name={ComponentTheme[type].icon} />
 
           <AlertMessage>
-            <AlertTitle>
-              {title}
-            </AlertTitle>
+            <AlertTitle>{title}</AlertTitle>
 
             {text}
           </AlertMessage>
 
-          <AlertClose title="Fechar" skin={ComponentTheme[type].backgroundColor} name="close" onClick={this.hideModal} />
+          <AlertClose
+            title="Fechar"
+            skin={ComponentTheme[type].backgroundColor}
+            name="close"
+            onClick={this.hideModal}
+          />
         </AlertWrapper>
       </ThemeProvider>
     ) : null;
@@ -112,12 +120,7 @@ Alert.defaultProps = {
 
 Alert.propTypes = {
   /** alert type */
-  type: PropTypes.oneOf([
-    'info',
-    'success',
-    'warning',
-    'error',
-  ]),
+  type: PropTypes.oneOf(['info', 'success', 'warning', 'error']),
   /** time in seconds that Alert is visible */
   duration: PropTypes.number,
   /** it says to component if it should appear or not */

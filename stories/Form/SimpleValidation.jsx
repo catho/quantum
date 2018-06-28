@@ -4,7 +4,7 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 const SimpleValidation = () => (
-  <Form >
+  <Form>
     <Input
       name="min"
       label="Digit at least 5 characters"
@@ -12,10 +12,7 @@ const SimpleValidation = () => (
       minLength={5}
     />
 
-    <Button
-      name="submit"
-      type="submit"
-    >
+    <Button name="submit" type="submit">
       Enviar
     </Button>
   </Form>
@@ -38,7 +35,4 @@ const SimpleValidationCode = `
   </Button>
 </Form>`;
 
-export {
-  SimpleValidation as Form,
-  SimpleValidationCode as Code,
-};
+export { SimpleValidation as Form, SimpleValidationCode as Code };

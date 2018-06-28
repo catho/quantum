@@ -4,15 +4,9 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 const SimpleForm = () => (
-  <Form >
-    <Input
-      name="firstName"
-      label="name"
-    />
-    <Button
-      name="submit"
-      type="submit"
-    >
+  <Form>
+    <Input name="firstName" label="name" />
+    <Button name="submit" type="submit">
       Enviar
     </Button>
   </Form>
@@ -32,7 +26,4 @@ const SimpleFormCode = `
   </Button>
 </Form>`;
 
-export {
-  SimpleForm as Form,
-  SimpleFormCode as Code,
-};
+export { SimpleForm as Form, SimpleFormCode as Code };

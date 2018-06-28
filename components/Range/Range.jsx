@@ -18,14 +18,16 @@ class Range extends React.Component {
     }
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     const { onChange } = this.props;
-    const { target: { value } } = e;
+    const {
+      target: { value },
+    } = e;
 
     this.setState({ value: Number(value) });
 
     onChange(e, { value: Number(value) });
-  }
+  };
 
   render() {
     const { id, label, error } = this.props;
@@ -33,7 +35,7 @@ class Range extends React.Component {
 
     return (
       <FieldGroup>
-        { label && <Label htmlFor={id}> {label} </Label> }
+        {label && <Label htmlFor={id}> {label} </Label>}
         <input
           {...this.props}
           id={id}

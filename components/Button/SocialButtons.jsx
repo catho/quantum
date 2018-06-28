@@ -25,7 +25,7 @@ const Facebook = styled.button`
   background-repeat: no-repeat;
   background-size: 8px 15px;
   background-position: 15px 12px;
-  ${sharedStyles}
+  ${sharedStyles};
 `;
 
 const Google = styled.button`
@@ -45,12 +45,14 @@ const Google = styled.button`
     top: 1px;
   }
   background-color: ${Colors.GOOGLE};
-  ${sharedStyles}
+  ${sharedStyles};
 `;
 
 const SocialButtons = {
-  Facebook: ({ ...props }) => (<Facebook {...props}>Entrar com Facebook</Facebook>),
-  Google: ({ ...props }) => (<Google {...props}>Entrar com Google</Google>),
+  Facebook: ({ ...props }) => (
+    <Facebook {...props}>Entrar com Facebook</Facebook>
+  ),
+  Google: ({ ...props }) => <Google {...props}>Entrar com Google</Google>,
 };
 
 SocialButtons.Facebook.displayName = 'Button.Facebook';

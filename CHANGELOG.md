@@ -1,3 +1,9 @@
+## v0.9.2 - Jun/2018
+### Added
+Prettier setup
+### Removed
+Lint task
+
 ## v0.9.1 - Jun/2018
 ### Fixed
 Form child validation

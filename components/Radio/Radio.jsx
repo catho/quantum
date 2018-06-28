@@ -21,7 +21,9 @@ const StyledLabel = styled(Label)`
 
   &:before {
     content: ' ';
-    border: 1px solid ${({ disabled }) => (disabled ? Colors.SECONDARY[100] : Colors.SECONDARY[300])};
+    border: 1px solid
+      ${({ disabled }) =>
+        disabled ? Colors.SECONDARY[100] : Colors.SECONDARY[300]};
     border-radius: 50%;
     display: inline-block;
     height: ${commonAttr.height};
@@ -30,16 +32,19 @@ const StyledLabel = styled(Label)`
     margin-top: -4px;
     margin-right: 5px;
 
-    ${({ checked }) => checked && `
+    ${({ checked }) =>
+      checked &&
+      `
       box-shadow: inset 0px 0px 0 3px white;
-    `}
-    cursor: inherit;
+    `} cursor: inherit;
     position: relative;
     top: 6px;
   }
 
   &:hover:before {
-    border: 1px solid ${({ disabled }) => (disabled ? Colors.SECONDARY[100] : Colors.PRIMARY[500])};
+    border: 1px solid
+      ${({ disabled }) =>
+        disabled ? Colors.SECONDARY[100] : Colors.PRIMARY[500]};
     box-shadow: inset 0 0 0 3px ${Colors.WHITE};
   }
 `;
@@ -58,9 +63,7 @@ const StyledInput = styled.input`
   }
 `;
 
-const Radio = ({
-  id, label, onChange, disabled, ...rest
-}) => (
+const Radio = ({ id, label, onChange, disabled, ...rest }) => (
   <Wrapper>
     <StyledInput
       {...rest}
@@ -69,11 +72,7 @@ const Radio = ({
       disabled={disabled}
       onChange={e => onChange(e, { checked: e.target.value })}
     />
-    <StyledLabel
-      {...rest}
-      disabled={disabled}
-      htmlFor={id}
-    >
+    <StyledLabel {...rest} disabled={disabled} htmlFor={id}>
       {label}
     </StyledLabel>
   </Wrapper>
@@ -82,7 +81,7 @@ const Radio = ({
 Radio.displayName = 'Radio';
 
 Radio.defaultProps = {
-  onChange: () => { },
+  onChange: () => {},
   disabled: false,
 };
 

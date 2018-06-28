@@ -6,7 +6,7 @@ exports[`Radio component Should match the snapshot 1`] = `
 >
   
   <textarea
-    className="Textarea__Textfield-iRGmWe hiJEId"
+    className="Textarea__Textfield-iRGmWe guuUBm"
     id=""
     maxLength={300}
     name=""
@@ -42,7 +42,7 @@ exports[`Radio component with a label should match the snapshot 1`] = `
      
   </label>
   <textarea
-    className="Textarea__Textfield-iRGmWe hiJEId"
+    className="Textarea__Textfield-iRGmWe guuUBm"
     id="textarea"
     maxLength={300}
     name=""
@@ -71,7 +71,7 @@ exports[`Radio component with an error message should match the snapshot 1`] = `
 >
   
   <textarea
-    className="Textarea__Textfield-iRGmWe jKRvpF"
+    className="Textarea__Textfield-iRGmWe bMrnKe"
     id=""
     maxLength={300}
     name=""

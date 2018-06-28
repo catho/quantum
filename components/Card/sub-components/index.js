@@ -5,4 +5,13 @@ import Media from './Media';
 import Button from './Button';
 import Divider from './Divider';
 
-export { Container, Thumbnail, HeaderText, Title, SupportText, Media, Button, Divider };
+export {
+  Container,
+  Thumbnail,
+  HeaderText,
+  Title,
+  SupportText,
+  Media,
+  Button,
+  Divider,
+};

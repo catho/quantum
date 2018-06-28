@@ -14,9 +14,8 @@ const Wrapper = styled.div`
   border-radius: ${sizeStr};
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  animation-name: ${({ visible }) => (visible ? 'show;' : 'hide;')}
-
-  @keyframes show {
+  animation-name: ${({ visible }) => (visible ? 'show;' : 'hide;')} @keyframes
+    show {
     0% {
       transform: scale(0);
     }
@@ -77,11 +76,9 @@ const Circle = styled.circle`
 
 /** An svg stand alone loading element,
  */
-const Loading = ({
-  ...rest
-}) => (
+const Loading = ({ ...rest }) => (
   <ThemeProvider theme={theme}>
-    <Wrapper {...rest} >
+    <Wrapper {...rest}>
       <Svg viewBox="25 25 50 50">
         <Circle cx="50" cy="50" r="12" />
       </Svg>

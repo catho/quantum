@@ -26,20 +26,20 @@ class Example extends React.Component {
     this.setState({
       show: !this.state.show,
     });
-  }
+  };
 
   render() {
-    const {
-      component: Component,
-      title,
-      importModules,
-      code,
-    } = this.props;
+    const { component: Component, title, importModules, code } = this.props;
     const { show } = this.state;
 
     return (
       <React.Fragment>
-        <h3>{title} <Small onClick={this.handleClick}>{show ? 'Hide' : 'Show'} code</Small></h3>
+        <h3>
+          {title}{' '}
+          <Small onClick={this.handleClick}>
+            {show ? 'Hide' : 'Show'} code
+          </Small>
+        </h3>
 
         <Code>
           {show && (

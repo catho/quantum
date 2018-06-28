@@ -2,7 +2,7 @@ import React from 'react';
 import Loader from './Loader';
 
 const LoaderTypes = {
-  Image: props => (<Loader {...props} />),
+  Image: props => <Loader {...props} />,
   Text: props => (
     <Loader {...props}>
       <rect x="0" y="15" rx="3" ry="3" width="250" height="4" />
@@ -49,8 +49,6 @@ function setDisplayName(name) {
   LoaderTypes[name].displayName = `Loader.${name}`;
 }
 
-Object
-  .keys(LoaderTypes)
-  .map(setDisplayName);
+Object.keys(LoaderTypes).map(setDisplayName);
 
 export default LoaderTypes;

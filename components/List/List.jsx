@@ -9,7 +9,7 @@ import SubHeader from './sub-components/SubHeader';
 import Colors from '../Colors';
 
 const bullets = ({ bullet }) =>
-  (bullet
+  bullet
     ? css`
         li {
           position: relative;
@@ -22,7 +22,7 @@ const bullets = ({ bullet }) =>
         }
         padding-left: 26px;
       `
-    : 'padding-left: 0;');
+    : 'padding-left: 0;';
 
 const inlineList = ({ inline }) => css`
   li {
@@ -33,14 +33,15 @@ const inlineList = ({ inline }) => css`
 const dividedList = ({ divided, inline }) =>
   divided &&
   css`
-  li {
-    ${inline ? 'border-right' : 'border-bottom'}: 1px solid ${Colors.SECONDARY['50']};
+    li {
+      ${inline ? 'border-right' : 'border-bottom'}: 1px solid
+        ${Colors.SECONDARY['50']};
 
-    &:last-child {
-      border: none;
+      &:last-child {
+        border: none;
+      }
     }
-  }
-`;
+  `;
 
 const Unordered = styled.ul`
   list-style: none;
@@ -97,9 +98,7 @@ class List extends React.Component {
   _listType = ordered => (ordered ? this.types.ol : this.types.ul);
 
   render() {
-    const {
-      ordered, items, children, inline, divided, bullet,
-    } = this.props;
+    const { ordered, items, children, inline, divided, bullet } = this.props;
 
     const listItems = children || items.map(Item.create);
 
@@ -128,16 +127,18 @@ List.defaultProps = {
 List.propTypes = {
   items: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
-    PropTypes.arrayOf(PropTypes.shape({
-      icon: PropTypes.string,
-      content: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.shape({
-          header: PropTypes.string,
-          subheader: PropTypes.string,
-        }),
-      ]),
-    })),
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        icon: PropTypes.string,
+        content: PropTypes.oneOfType([
+          PropTypes.string,
+          PropTypes.shape({
+            header: PropTypes.string,
+            subheader: PropTypes.string,
+          }),
+        ]),
+      }),
+    ),
   ]),
   ordered: PropTypes.bool,
   inline: PropTypes.bool,

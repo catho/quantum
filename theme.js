@@ -26,8 +26,14 @@ export default {
     shadow(size = 1) {
       const shadows = [
         'box-shadow: none;',
-        `box-shadow: 0 2px 5px ${this.hexToRgba(Colors.SECONDARY['600'], 0.3)};`,
-        `box-shadow: 0 2px 6px ${this.hexToRgba(Colors.SECONDARY['600'], 0.6)};`,
+        `box-shadow: 0 2px 5px ${this.hexToRgba(
+          Colors.SECONDARY['600'],
+          0.3,
+        )};`,
+        `box-shadow: 0 2px 6px ${this.hexToRgba(
+          Colors.SECONDARY['600'],
+          0.6,
+        )};`,
       ];
 
       return shadows[size] || shadows[1];

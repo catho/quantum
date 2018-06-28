@@ -39,7 +39,7 @@ class IconToClipboard extends Component {
     setTimeout(() => {
       this.setState({ hasJustCopied: false });
     }, 3000);
-  }
+  };
 
   render() {
     const { hasJustCopied } = this.state;

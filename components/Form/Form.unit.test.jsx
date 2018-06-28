@@ -23,8 +23,18 @@ const FormWithValidations = () => (
     <Input name="cep" label="CEP" validate={validations.CEP} />
     <Input name="birthday" label="Birthday" validate={validations.Date} />
     <Input name="email" label="E-mail" validate={validations.Email} />
-    <Input name="address" label="Address" validate={validations.MinLength} minLength="8" />
-    <Input name="country" label="Country" validate={validations.MaxLength} maxLength="3" />
+    <Input
+      name="address"
+      label="Address"
+      validate={validations.MinLength}
+      minLength="8"
+    />
+    <Input
+      name="country"
+      label="Country"
+      validate={validations.MaxLength}
+      maxLength="3"
+    />
 
     <Button type="submit"> Enviar </Button>
   </Form>
@@ -60,14 +70,10 @@ describe('Form component ', () => {
     });
 
     it('Should validate fields', () => {
-      const execTest = ({
-        invalid,
-        valid,
-        validationName,
-        errorMsg,
-      }) => {
+      const execTest = ({ invalid, valid, validationName, errorMsg }) => {
         const wrapper = shallow(FormWithValidations());
-        const getField = () => wrapper.find({ validate: validations[validationName] });
+        const getField = () =>
+          wrapper.find({ validate: validations[validationName] });
 
         if (invalid) {
           const initalField = getField();
@@ -181,10 +187,7 @@ describe('Form component ', () => {
     it('Should be false when an error occurred', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-          <Input
-            name="foo"
-            validate={validations.Required}
-          />
+          <Input name="foo" validate={validations.Required} />
         </Form>
       );
 
@@ -201,11 +204,7 @@ describe('Form component ', () => {
     it('Should be true when everything is ok', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
-          <Input
-            name="foo"
-            validate={validations.Required}
-            value="foo"
-          />
+          <Input name="foo" validate={validations.Required} value="foo" />
         </Form>
       );
 

@@ -62,7 +62,7 @@ const StepIcon = styled(Icon)`
   position: relative;
   top: -42px;
 
-  ${statusFontColor}
+  ${statusFontColor};
 `;
 
 const ProgressStep = styled.li`
@@ -103,7 +103,7 @@ const ProgressStep = styled.li`
     content: none;
   }
 
-  ${statusStepColor}
+  ${statusStepColor};
 `;
 
 const Title = styled.p`
@@ -115,7 +115,8 @@ const Title = styled.p`
   width: 100%;
   word-wrap: break-word;
 
-  @media (min-width: ${BREAKPOINTS.phone + 1}px) and (max-width: ${BREAKPOINTS.tablet}px) {
+  @media (min-width: ${BREAKPOINTS.phone +
+      1}px) and (max-width: ${BREAKPOINTS.tablet}px) {
     top: -34px;
   }
   @media (max-width: ${BREAKPOINTS.phone}px) {
@@ -127,8 +128,8 @@ const statusTypes = ['', 'active', 'done'];
 
 const Step = ({ title, status, icon }) => (
   <ProgressStep status={status}>
-    <Title>{ title }</Title>
-    { icon && <StepIcon status={status} name={icon} /> }
+    <Title>{title}</Title>
+    {icon && <StepIcon status={status} name={icon} />}
   </ProgressStep>
 );
 
