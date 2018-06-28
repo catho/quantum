@@ -1,6 +1,9 @@
 ## v0.9.2 - Jun/2018
-### Fixed
+### Added
 Prettier setup
+
+### Removed
+Lint task
 
 ## v0.9.1 - Jun/2018
 ### Fixed
