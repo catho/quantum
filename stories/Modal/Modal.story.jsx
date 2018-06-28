@@ -9,17 +9,58 @@ import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
 import Modal from '../../components/Modal';
 
-const ModalExample = (
-  <Modal trigger={<Button>Open modal</Button>}>
-    <Modal.Header>Title</Modal.Header>
-    <Modal.Content>Example Content</Modal.Content>
-    <Modal.Footer>
-      <Button /> <Button />
-    </Modal.Footer>
-  </Modal>
-);
-
 const stories = storiesOf('5. Modals', module);
+
+class ModalStory extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      opened: false,
+    };
+  }
+
+  handleClose = () =>
+    this.setState({
+      opened: false,
+    });
+
+  render() {
+    return (
+      <Modal
+        opened={this.state.opened}
+        closeOnOverlayClick
+        trigger={<Button>Open modal</Button>}
+      >
+        <Modal.Header>Title</Modal.Header>
+        <Modal.Content>Example Content</Modal.Content>
+        <Modal.Footer>
+          <Button skin="modal" onClick={this.handleClose}>
+            Cancel
+          </Button>
+          <Button onClick={this.handleClose}>OK</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+}
+
+const ModalExample = {
+  component: <ModalStory />,
+  code: `
+<Modal
+  opened
+  closeOnOverlayClick
+  trigger={<Button>Open modal</Button>}>
+  <Modal.Header>Title</Modal.Header>
+  <Modal.Content>Example Content</Modal.Content>
+  <Modal.Footer>
+    <Button skin="modal" onClick={this.handleClose}>
+      Cancel
+    </Button>
+    <Button onClick={this.handleClose}>OK</Button>
+  </Modal.Footer>
+</Modal>`,
+};
 
 stories.add('Basic', () => (
   <Heading name="Modal">
@@ -37,9 +78,13 @@ stories.add('Basic', () => (
         </p>
         <Row>
           <Col phone={6}>
-            <CodeExample showTitle={false} component={ModalExample} />
+            <CodeExample
+              showTitle={false}
+              component={ModalExample.component}
+              code={ModalExample.code}
+            />
           </Col>
-          <Col phone={6}>{ModalExample}</Col>
+          <Col phone={6}>{ModalExample.component}</Col>
         </Row>
       </Tab>
 

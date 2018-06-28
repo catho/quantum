@@ -14,6 +14,7 @@ class ButtonColor {
     disabledBorder = disabled,
     disabledTextColor,
     disabledFontWeight = theme.font.weight,
+    shadow,
   }) {
     this._unselected = unselected;
     this._unselectedBorder = unselectedBorder;
@@ -27,6 +28,7 @@ class ButtonColor {
     this._disabledBorder = disabledBorder;
     this._disabledTextColor = disabledTextColor;
     this._disabledFontWeight = disabledFontWeight;
+    this._shadow = shadow;
   }
 
   get unselected() {
@@ -54,6 +56,10 @@ class ButtonColor {
       color: this._disabledTextColor,
       fontWeight: this._disabledFontWeight,
     };
+  }
+
+  get shadow() {
+    return this._shadow;
   }
 }
 
