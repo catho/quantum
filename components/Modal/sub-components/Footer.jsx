@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import Colors from '../../Colors';
 
@@ -6,8 +7,9 @@ const Footer = styled.div`
   border-top: 2px solid ${Colors.SECONDARY['50']};
   display: flex;
   font-size: 14px;
-  justify-content: space-between;
   padding: 10px;
+  justify-content: ${({ children }) =>
+    React.Children.toArray(children).length > 1 ? 'space-between' : 'flex-end'};
 `;
 
 Footer.displayName = 'Modal.Footer';

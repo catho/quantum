@@ -19,6 +19,8 @@ const Overlay = styled.div`
   z-index: 100;
 `;
 
+Overlay.displayName = 'Overlay';
+
 const Wrapper = styled.section`
   background-color: ${Colors.WHITE};
   border-radius: 8px;
@@ -80,12 +82,9 @@ class Modal extends Component {
   render() {
     const { children, trigger, closeOnOverlayClick } = this.props;
 
-    const triggerProps = trigger.props;
-
     return (
       <React.Fragment>
         {cloneElement(trigger, {
-          ...triggerProps,
           onClick: this.handleTriggerClick,
         })}
 
@@ -106,7 +105,7 @@ class Modal extends Component {
 
 Modal.defaultProps = {
   opened: false,
-  trigger: <Button />,
+  trigger: '',
   closeOnOverlayClick: false,
 };
 
