@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import Colors from '../Colors';
 import theme from '../../theme';
+import { Header, Content, Footer } from './sub-components';
 
 const Overlay = styled.div`
   align-items: center;
+  background-color: ${theme.mixins.hexToRgba(Colors.BLACK, 0.5)};
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -14,73 +15,91 @@ const Overlay = styled.div`
   right: 0;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 100;
+`;
 
-  @media (max-width: ${SIZES.tablet}px) {
-    align-items: flex-start;
+const Wrapper = styled.section`
+  background-color: ${Colors.WHITE};
+  border-radius: 8px;
+  color: ${Colors.SECONDARY['800']};
+  overflow: hidden;
+`;
+
+class Modal extends Component {
+  static Header = Header;
+  static Content = Content;
+  static Footer = Footer;
+
+  constructor(props) {
+    super(props);
+
+    const { open } = this.props;
+
+    this.state = {
+      opened: open,
+    };
   }
-`;
 
-const Content = styled.section`
-  background-color: white;
-  box-shadow: ${theme.shadow};
-  box-sizing: border-box;
-  min-width: 455px;
-  min-height: 200px;
-  padding: 20px;
-  position: relative;
-  width: 50%;
-
-  @media (max-width: ${SIZES.tablet}px) {
-    min-width: 100%;
-    width: 100%;
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
   }
-`;
 
-const Close = styled.span`
-  color: ${Colors.BLACK};
-  cursor: pointer;
-  font-size: 12px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-`;
+  closeModal = () => {
+    this.setState({
+      opened: false,
+    });
+  }
 
-const Title = styled.h2`
-  color: ${Colors.BLACK};
-  font-size: 18px;
-  margin: 0;
-`;
+  openModal = () => {
+    this.setState({
+      opened: true,
+    });
+  }
 
-const Text = styled.p`
-  margin: 5px 0;
-`;
+  handleOverlayClick = ({ target }) => this.overlayRef === target && this.closeModal();
 
-const Modal = ({
-  title,
-  children,
-  closeModal,
-}) => (
-  <Overlay>
-    <Content>
-      <Close onClick={closeModal}>x</Close>
-      {title && (<Title>{title}</Title>)}
-      <Text>
-        {children}
-      </Text>
-    </Content>
-  </Overlay>
-);
+  handleTriggerClick = (e) => {
+    const { trigger: { props: { onClick } } } = this.props;
+    this.openModal();
+
+    return typeof onClick === 'function' && onClick(e);
+  }
+
+  render() {
+    const {
+      children,
+      trigger,
+    } = this.props;
+
+    const triggerProps = trigger.props;
+
+    return (
+      <React.Fragment>
+        {cloneElement(trigger, {
+          ...triggerProps,
+          onClick: this.handleTriggerClick,
+        })}
+
+        {this.state.opened && (
+          <Overlay innerRef={(ref) => { this.overlayRef = ref; }} onClick={this.handleOverlayClick}>
+            <Wrapper>
+              {children}
+            </Wrapper>
+          </Overlay>
+        )}
+      </React.Fragment>
+    );
+  }
+}
 
 Modal.defaultProps = {
-  title: 'Generic title',
+  open: false,
 };
 
 Modal.propTypes = {
   children: PropTypes.node.isRequired,
-  /** function to close the modal */
-  closeModal: PropTypes.func.isRequired,
-  title: PropTypes.string,
+  trigger: PropTypes.node.isRequired,
+  open: PropTypes.bool,
 };
 
 export default Modal;
