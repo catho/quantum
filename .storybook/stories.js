@@ -61,4 +61,7 @@ export default [
 
   // 14. Popover
   'Popover',
+
+  // 15. Badge
+  'Badge',
 ].map(s => `./${s}/${s}.story.jsx`);
