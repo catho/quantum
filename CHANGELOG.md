@@ -1,6 +1,12 @@
-## v0.10.0 - Jun/2018
+## v0.11.0 - Jun/2018
 ### Added
-Modal component
+New component:
+  - Badge
+
+## v0.10.0 - Jun/2018
+### Changed
+Component reworked:
+  - Modal
 
 ## v0.9.2 - Jun/2018
 ### Added

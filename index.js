@@ -20,6 +20,7 @@ import Icon from './components/Icon';
 import List from './components/List';
 import { Wizard, Step } from './components/Wizard';
 import Popover from './components/Popover';
+import Badge from './components/Badge';
 
 export {
   Button,
@@ -50,4 +51,5 @@ export {
   Wizard,
   Step,
   Popover,
+  Badge,
 };
