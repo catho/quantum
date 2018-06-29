@@ -12,6 +12,7 @@ class DefaultButton extends ButtonColor {
     disabled,
     disabledBorder = disabled,
     disabledTextColor = unselectedTextColor,
+    shadow = true,
   }) {
     super({
       unselected,
@@ -23,6 +24,7 @@ class DefaultButton extends ButtonColor {
       disabled,
       disabledBorder,
       disabledTextColor,
+      shadow,
     });
   }
 }

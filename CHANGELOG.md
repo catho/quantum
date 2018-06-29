@@ -1,3 +1,7 @@
+## v0.10.0 - Jun/2018
+### Added
+Modal component
+
 ## v0.9.2 - Jun/2018
 ### Added
 Prettier setup
