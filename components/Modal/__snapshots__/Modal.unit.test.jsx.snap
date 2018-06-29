@@ -120,6 +120,9 @@ ShallowWrapper {
           </Modal__Wrapper>
         </Overlay>,
       ],
+      "value": Object {
+        "closeModal": [Function],
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -330,7 +333,22 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": Symbol(react.fragment),
+    "type": Object {
+      "$$typeof": Symbol(react.provider),
+      "_context": Object {
+        "$$typeof": Symbol(react.context),
+        "Consumer": [Circular],
+        "Provider": [Circular],
+        "_calculateChangedBits": null,
+        "_changedBits": 0,
+        "_changedBits2": 0,
+        "_currentRenderer": null,
+        "_currentRenderer2": null,
+        "_currentValue": undefined,
+        "_currentValue2": undefined,
+        "_defaultValue": undefined,
+      },
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -391,6 +409,9 @@ ShallowWrapper {
             </Modal__Wrapper>
           </Overlay>,
         ],
+        "value": Object {
+          "closeModal": [Function],
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -601,7 +622,22 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": Symbol(react.fragment),
+      "type": Object {
+        "$$typeof": Symbol(react.provider),
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": [Circular],
+          "Provider": [Circular],
+          "_calculateChangedBits": null,
+          "_changedBits": 0,
+          "_changedBits2": 0,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": undefined,
+          "_currentValue2": undefined,
+          "_defaultValue": undefined,
+        },
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
