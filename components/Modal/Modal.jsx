@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import theme from '../../theme';
 import { Header, Content, Footer } from './sub-components';
-import Button from '../Button';
 
 const Overlay = styled.div`
   align-items: center;
