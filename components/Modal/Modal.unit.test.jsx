@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Modal from './Modal';
 import Button from '../Button';
 
@@ -16,11 +16,11 @@ describe('Radio component', () => {
   );
 
   it('Should match the snapshot', () => {
-    expect(mount(component).html()).toMatchSnapshot();
+    expect(shallow(component)).toMatchSnapshot();
   });
 
   it('should open when click trigger element', () => {
-    const modal = mount(
+    const modal = shallow(
       <Modal trigger={<Button>Open modal</Button>}>
         <Modal.Header>Title</Modal.Header>
         <Modal.Content>Example Content</Modal.Content>
