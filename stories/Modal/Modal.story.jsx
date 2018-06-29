@@ -11,41 +11,17 @@ import Modal from '../../components/Modal';
 
 const stories = storiesOf('5. Modals', module);
 
-class ModalStory extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      opened: false,
-    };
-  }
-
-  handleClose = () =>
-    this.setState({
-      opened: false,
-    });
-
-  render() {
-    return (
-      <Modal
-        opened={this.state.opened}
-        closeOnOverlayClick
-        trigger={<Button>Open modal</Button>}
-      >
-        <Modal.Header>Title</Modal.Header>
-        <Modal.Content>Example Content</Modal.Content>
-        <Modal.Footer>
-          <Button skin="modal" onClick={this.handleClose}>
-            Cancel
-          </Button>
-          <Button onClick={this.handleClose}>OK</Button>
-        </Modal.Footer>
-      </Modal>
-    );
-  }
-}
-
 const ModalExample = {
-  component: <ModalStory />,
+  component: (
+    <Modal closeOnOverlayClick trigger={<Button>Open modal</Button>}>
+      <Modal.Header>Title</Modal.Header>
+      <Modal.Content>Example Content</Modal.Content>
+      <Modal.Footer>
+        <Modal.Action>Cancelar</Modal.Action>
+        <Modal.Action skin="primary">OK</Modal.Action>
+      </Modal.Footer>
+    </Modal>
+  ),
   code: `
 <Modal
   opened
