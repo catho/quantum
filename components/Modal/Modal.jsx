@@ -2,9 +2,9 @@ import React, { Component, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
+import Button from '../Button';
 import theme from '../../theme';
 import { Header, Content, Footer } from './sub-components';
-import Button from '../Button';
 
 const Overlay = styled.div`
   align-items: center;
@@ -31,10 +31,27 @@ const Wrapper = styled.section`
   overflow: hidden;
 `;
 
+const ModalContext = React.createContext();
+
 class Modal extends Component {
   static Header = Header;
   static Content = Content;
   static Footer = Footer;
+  static Action = ({ children, onClick, skin }) => (
+    <ModalContext.Consumer>
+      {({ closeModal }) => (
+        <Button
+          skin={skin || 'modal'}
+          onClick={() => {
+            closeModal();
+            onClick();
+          }}
+        >
+          {children}
+        </Button>
+      )}
+    </ModalContext.Consumer>
+  );
 
   constructor(props) {
     super(props);
@@ -83,7 +100,11 @@ class Modal extends Component {
     const { children, trigger, closeOnOverlayClick } = this.props;
 
     return (
-      <React.Fragment>
+      <ModalContext.Provider
+        value={{
+          closeModal: this.closeModal,
+        }}
+      >
         {cloneElement(trigger, {
           onClick: this.handleTriggerClick,
         })}
@@ -98,7 +119,7 @@ class Modal extends Component {
             <Wrapper>{children}</Wrapper>
           </Overlay>
         )}
-      </React.Fragment>
+      </ModalContext.Provider>
     );
   }
 }
