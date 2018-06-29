@@ -1,3 +1,8 @@
+## v0.11.0 - Jun/2018
+### Added
+New component:
+  - Badge
+
 ## v0.10.0 - Jun/2018
 ### Changed
 Component reworked:
