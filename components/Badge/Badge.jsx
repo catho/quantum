@@ -20,8 +20,8 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
-const Badge = ({ children, skin }) => (
-  <Wrapper skin={skin}> {children} </Wrapper>
+const Badge = ({ children, skin, text }) => (
+  <Wrapper skin={skin}> {children || text} </Wrapper>
 );
 
 Badge.propTypes = {
@@ -40,11 +40,13 @@ Badge.propTypes = {
     'white',
   ]),
   children: PropTypes.string,
+  text: PropTypes.string,
 };
 
 Badge.defaultProps = {
   skin: 'primary',
-  children: 'Badge',
+  children: '',
+  text: 'Badge',
 };
 
 export default Badge;

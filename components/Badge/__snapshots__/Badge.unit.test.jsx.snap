@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component Should match snapshot with different skins 1`] = `
+<div
+  className="Badge__Wrapper-dPhihi cFuOCg"
+>
+   
+   Brand1 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 2`] = `
+<div
+  className="Badge__Wrapper-dPhihi DCBsT"
+>
+   
+   Brand2 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 3`] = `
+<div
+  className="Badge__Wrapper-dPhihi ekDhya"
+>
+   
+   Primary 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 4`] = `
+<div
+  className="Badge__Wrapper-dPhihi jEtrpZ"
+>
+   
+   Secondary 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 5`] = `
+<div
+  className="Badge__Wrapper-dPhihi kHrvzc"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 6`] = `
+<div
+  className="Badge__Wrapper-dPhihi lnIDyW"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 7`] = `
+<div
+  className="Badge__Wrapper-dPhihi dxYHYf"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 8`] = `
+<div
+  className="Badge__Wrapper-dPhihi imJDPe"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 9`] = `
+<div
+  className="Badge__Wrapper-dPhihi kyfwlm"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different text props 1`] = `
+<div
+  className="Badge__Wrapper-dPhihi ekDhya"
+>
+   
+  Default with text prop
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different text props 2`] = `
+<div
+  className="Badge__Wrapper-dPhihi ekDhya"
+>
+   
+   Default with children 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different text props 3`] = `
+<div
+  className="Badge__Wrapper-dPhihi ekDhya"
+>
+   
+   Default 
+   
+</div>
+`;
