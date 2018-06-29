@@ -40,7 +40,6 @@ const WindowControlsWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
   padding: 15px;
 `;
 

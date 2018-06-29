@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
 import Heading from '../../.storybook/components/Heading';
 import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
 import HowToImport from '../../.storybook/components/HowToImport';
@@ -10,70 +9,88 @@ import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
 import Modal from '../../components/Modal';
 
-const StyledButton = styled(Button)`
-  margin-top: 16px;
-`;
-
 const stories = storiesOf('5. Modals', module);
 
 class ModalStory extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false,
+      opened: false,
     };
   }
 
-  handleOpen = () => this.setState({ showModal: !this.state.showModal });
+  handleClose = () =>
+    this.setState({
+      opened: false,
+    });
 
   render() {
     return (
-      <Heading name="Modal">
-        <TabbedView>
-          <Tab title="Usage">
-            <HowToImport importModules="Modal" />
-
-            <p>
-              Use Modal component to add dialogs to your UI for lightboxes, user
-              notifications, or completely custom content.
-            </p>
-            <p>
-              A modal displays content that temporarily blocks interactions with
-              the main view of a site.
-            </p>
-            <Row>
-              <Col phone={6}>
-                <CodeExample
-                  showTitle={false}
-                  component={
-                    <Modal title="Example Title" closeModal={this.handleOpen}>
-                      {' '}
-                      Example Content
-                    </Modal>
-                  }
-                />
-              </Col>
-              <Col phone={6}>
-                <StyledButton skin="primary" onClick={this.handleOpen}>
-                  {this.state.showModal ? 'Close' : 'Open'} Modal
-                </StyledButton>
-
-                {this.state.showModal && (
-                  <Modal title="Example Title" closeModal={this.handleOpen}>
-                    Example Content
-                  </Modal>
-                )}
-              </Col>
-            </Row>
-          </Tab>
-
-          <Tab title="API">
-            <AutoPropsApi component={Modal} />
-          </Tab>
-        </TabbedView>
-      </Heading>
+      <Modal
+        opened={this.state.opened}
+        closeOnOverlayClick
+        trigger={<Button>Open modal</Button>}
+      >
+        <Modal.Header>Title</Modal.Header>
+        <Modal.Content>Example Content</Modal.Content>
+        <Modal.Footer>
+          <Button skin="modal" onClick={this.handleClose}>
+            Cancel
+          </Button>
+          <Button onClick={this.handleClose}>OK</Button>
+        </Modal.Footer>
+      </Modal>
     );
   }
 }
 
-stories.add('Basic', () => <ModalStory />);
+const ModalExample = {
+  component: <ModalStory />,
+  code: `
+<Modal
+  opened
+  closeOnOverlayClick
+  trigger={<Button>Open modal</Button>}>
+  <Modal.Header>Title</Modal.Header>
+  <Modal.Content>Example Content</Modal.Content>
+  <Modal.Footer>
+    <Button skin="modal" onClick={this.handleClose}>
+      Cancel
+    </Button>
+    <Button onClick={this.handleClose}>OK</Button>
+  </Modal.Footer>
+</Modal>`,
+};
+
+stories.add('Basic', () => (
+  <Heading name="Modal">
+    <TabbedView>
+      <Tab title="Usage">
+        <HowToImport importModules="Modal" />
+
+        <p>
+          Use Modal component to add dialogs to your UI for lightboxes, user
+          notifications, or completely custom content.
+        </p>
+        <p>
+          A modal displays content that temporarily blocks interactions with the
+          main view of a site.
+        </p>
+        <Row>
+          <Col phone={6}>
+            <CodeExample
+              showTitle={false}
+              component={ModalExample.component}
+              code={ModalExample.code}
+            />
+          </Col>
+          <Col phone={6}>{ModalExample.component}</Col>
+        </Row>
+      </Tab>
+
+      <Tab title="API">
+        <AutoPropsApi component={Modal} />
+      </Tab>
+    </TabbedView>
+  </Heading>
+));
