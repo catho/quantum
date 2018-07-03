@@ -29,9 +29,11 @@ jest:
     - style
 
 sonar:
-  stage: test
+  stage: analysis
+  dependencies:
+    - jest
   script:
-    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info -Dsonar.tests=coverage/
+    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
   tags:
     - style
 
