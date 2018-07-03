@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   background-color: ${getBgColor};
   border-radius: 2px;
   color: ${getFontColor};
-  font-size: 10px;
+  font-size: 12px;
   padding: 2px 4px;
   text-align: center;
 `;
