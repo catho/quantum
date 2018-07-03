@@ -28,7 +28,7 @@ sonar:
   dependencies:
     - jest
   script:
-    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info -Dsonar.coverage.exclusions=stories/**/*,components/**/*.test.jsx
+    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info -Dsonar.coverage.exclusions=stories/**/*,components/**/*.test.jsx,webpack.config.js
   tags:
     - style
 
