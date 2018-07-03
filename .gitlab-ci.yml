@@ -31,10 +31,7 @@ jest:
 sonar:
   stage: test
   script:
-    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage -Dsonar.tests=coverage
-  artifacts:
-    paths:
-      - coverage
+    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info -Dsonar.tests=coverage/
   tags:
     - style
 
