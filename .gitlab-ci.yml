@@ -32,6 +32,9 @@ sonar:
   stage: test
   script:
     - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+  artifacts:
+    paths:
+      - coverage
   tags:
     - style
 
