@@ -20,6 +20,8 @@ jest:
     paths:
       - coverage/lcov.info
   when: on_success
+  tags:
+    - style
 
 sonar:
   stage: analysis
