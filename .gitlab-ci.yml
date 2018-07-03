@@ -6,6 +6,30 @@ cache:
   paths:
   - node_modules/
 
+stages:
+  - build
+  - test
+  - deploy
+  - analysis
+
+jest:
+  stage: test
+  script:
+    - yarn coverage
+  artifacts:
+    paths:
+      - coverage
+  when: on_success
+
+sonar:
+  stage: analysis
+  dependencies:
+    - jest
+  script:
+    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+  tags:
+    - style
+
 storybook:
   stage: build
   script:
@@ -17,25 +41,6 @@ storybook:
     - style
   only:
     - master
-
-jest:
-  stage: test
-  script:
-    - yarn coverage
-  artifacts:
-    paths:
-      - coverage
-  tags:
-    - style
-
-sonar:
-  stage: test
-  dependencies:
-    - jest
-  script:
-    - sonar-scanner -Dsonar.projectKey=style-guide -Dsonar.sources=$PWD -Dsonar.exclusions=**/node_modules/**,dist/**/* -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
-  tags:
-    - style
 
 pages:
   stage: deploy
