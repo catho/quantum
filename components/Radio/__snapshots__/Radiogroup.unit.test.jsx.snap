@@ -1,0 +1,529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio Group component Should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RadioGroup
+    boxed={false}
+    inline={false}
+  >
+    <Radio
+      disabled={false}
+      id="op1"
+      label="Hello 1"
+      name="op1"
+      onChange={[Function]}
+      value="1"
+    />
+    <Radio
+      disabled={false}
+      id="op2"
+      label="Hello 2"
+      name="op2"
+      onChange={[Function]}
+      value="2"
+    />
+  </RadioGroup>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Radio
+          boxed={false}
+          disabled={false}
+          id="op1"
+          label="Hello 1"
+          name="op1"
+          onChange={[Function]}
+          value="1"
+        />,
+        <Radio
+          boxed={false}
+          disabled={false}
+          id="op2"
+          label="Hello 2"
+          name="op2"
+          onChange={[Function]}
+          value="2"
+        />,
+      ],
+      "inline": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "Radio/.0",
+        "nodeType": "function",
+        "props": Object {
+          "boxed": false,
+          "disabled": false,
+          "id": "op1",
+          "label": "Hello 1",
+          "name": "op1",
+          "onChange": [Function],
+          "value": "1",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Radio/.1",
+        "nodeType": "function",
+        "props": Object {
+          "boxed": false,
+          "disabled": false,
+          "id": "op2",
+          "label": "Hello 2",
+          "name": "op2",
+          "onChange": [Function],
+          "value": "2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Radio
+            boxed={false}
+            disabled={false}
+            id="op1"
+            label="Hello 1"
+            name="op1"
+            onChange={[Function]}
+            value="1"
+          />,
+          <Radio
+            boxed={false}
+            disabled={false}
+            id="op2"
+            label="Hello 2"
+            name="op2"
+            onChange={[Function]}
+            value="2"
+          />,
+        ],
+        "inline": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Radio/.0",
+          "nodeType": "function",
+          "props": Object {
+            "boxed": false,
+            "disabled": false,
+            "id": "op1",
+            "label": "Hello 1",
+            "name": "op1",
+            "onChange": [Function],
+            "value": "1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Radio/.1",
+          "nodeType": "function",
+          "props": Object {
+            "boxed": false,
+            "disabled": false,
+            "id": "op2",
+            "label": "Hello 2",
+            "name": "op2",
+            "onChange": [Function],
+            "value": "2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Radio Group component Should match the snapshot 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RadioGroup
+    boxed={true}
+    inline={false}
+  >
+    <Radio
+      disabled={false}
+      id="op1"
+      label="Hello 1"
+      name="op1"
+      onChange={[Function]}
+      value="1"
+    />
+    <Radio
+      disabled={false}
+      id="op2"
+      label="Hello 2"
+      name="op2"
+      onChange={[Function]}
+      value="2"
+    />
+  </RadioGroup>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Radio
+          boxed={true}
+          disabled={false}
+          id="op1"
+          label="Hello 1"
+          name="op1"
+          onChange={[Function]}
+          value="1"
+        />,
+        <Radio
+          boxed={true}
+          disabled={false}
+          id="op2"
+          label="Hello 2"
+          name="op2"
+          onChange={[Function]}
+          value="2"
+        />,
+      ],
+      "inline": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "Radio/.0",
+        "nodeType": "function",
+        "props": Object {
+          "boxed": true,
+          "disabled": false,
+          "id": "op1",
+          "label": "Hello 1",
+          "name": "op1",
+          "onChange": [Function],
+          "value": "1",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Radio/.1",
+        "nodeType": "function",
+        "props": Object {
+          "boxed": true,
+          "disabled": false,
+          "id": "op2",
+          "label": "Hello 2",
+          "name": "op2",
+          "onChange": [Function],
+          "value": "2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Radio
+            boxed={true}
+            disabled={false}
+            id="op1"
+            label="Hello 1"
+            name="op1"
+            onChange={[Function]}
+            value="1"
+          />,
+          <Radio
+            boxed={true}
+            disabled={false}
+            id="op2"
+            label="Hello 2"
+            name="op2"
+            onChange={[Function]}
+            value="2"
+          />,
+        ],
+        "inline": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Radio/.0",
+          "nodeType": "function",
+          "props": Object {
+            "boxed": true,
+            "disabled": false,
+            "id": "op1",
+            "label": "Hello 1",
+            "name": "op1",
+            "onChange": [Function],
+            "value": "1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Radio/.1",
+          "nodeType": "function",
+          "props": Object {
+            "boxed": true,
+            "disabled": false,
+            "id": "op2",
+            "label": "Hello 2",
+            "name": "op2",
+            "onChange": [Function],
+            "value": "2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Radio Group component Should match the snapshot 3`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RadioGroup
+    boxed={false}
+    inline={true}
+  >
+    <Radio
+      disabled={false}
+      id="op1"
+      label="Hello 1"
+      name="op1"
+      onChange={[Function]}
+      value="1"
+    />
+    <Radio
+      disabled={false}
+      id="op2"
+      label="Hello 2"
+      name="op2"
+      onChange={[Function]}
+      value="2"
+    />
+  </RadioGroup>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Radio
+          boxed={false}
+          disabled={false}
+          id="op1"
+          label="Hello 1"
+          name="op1"
+          onChange={[Function]}
+          value="1"
+        />,
+        <Radio
+          boxed={false}
+          disabled={false}
+          id="op2"
+          label="Hello 2"
+          name="op2"
+          onChange={[Function]}
+          value="2"
+        />,
+      ],
+      "inline": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "Radio/.0",
+        "nodeType": "function",
+        "props": Object {
+          "boxed": false,
+          "disabled": false,
+          "id": "op1",
+          "label": "Hello 1",
+          "name": "op1",
+          "onChange": [Function],
+          "value": "1",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Radio/.1",
+        "nodeType": "function",
+        "props": Object {
+          "boxed": false,
+          "disabled": false,
+          "id": "op2",
+          "label": "Hello 2",
+          "name": "op2",
+          "onChange": [Function],
+          "value": "2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Radio
+            boxed={false}
+            disabled={false}
+            id="op1"
+            label="Hello 1"
+            name="op1"
+            onChange={[Function]}
+            value="1"
+          />,
+          <Radio
+            boxed={false}
+            disabled={false}
+            id="op2"
+            label="Hello 2"
+            name="op2"
+            onChange={[Function]}
+            value="2"
+          />,
+        ],
+        "inline": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Radio/.0",
+          "nodeType": "function",
+          "props": Object {
+            "boxed": false,
+            "disabled": false,
+            "id": "op1",
+            "label": "Hello 1",
+            "name": "op1",
+            "onChange": [Function],
+            "value": "1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Radio/.1",
+          "nodeType": "function",
+          "props": Object {
+            "boxed": false,
+            "disabled": false,
+            "id": "op2",
+            "label": "Hello 2",
+            "name": "op2",
+            "onChange": [Function],
+            "value": "2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
