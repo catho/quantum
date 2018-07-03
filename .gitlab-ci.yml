@@ -22,6 +22,9 @@ jest:
   stage: test
   script:
     - yarn coverage
+  artifacts:
+    paths:
+      - coverage
   tags:
     - style
 
