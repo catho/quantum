@@ -31,8 +31,6 @@ const Tip = styled.div`
     if (props.offset || props.offset === 0) {
       return `left: ${props.offset}%;`;
     }
-
-    return false;
   }};
 `;
 
