@@ -18,7 +18,7 @@ jest:
     - yarn coverage
   artifacts:
     paths:
-      - coverage
+      - coverage/lcov.info
   when: on_success
 
 sonar:
