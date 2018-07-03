@@ -29,7 +29,7 @@ jest:
     - style
 
 sonar:
-  stage: analysis
+  stage: test
   dependencies:
     - jest
   script:
