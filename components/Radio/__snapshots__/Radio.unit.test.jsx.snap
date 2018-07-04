@@ -2,10 +2,12 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <div
-  className="Radio__Wrapper-jvWSnc gQqThV"
+  className="Radio__Wrapper-jvWSnc hyUVID"
+  name="radio"
+  value="1"
 >
   <input
-    className="Radio__StyledInput-gVYFuB jPxCpj"
+    className="Radio__StyledInput-gVYFuB ldGcdd"
     disabled={false}
     id="radio"
     name="radio"
@@ -14,7 +16,7 @@ exports[`Radio component Should match the snapshot 1`] = `
     value="1"
   />
   <label
-    className="Radio__StyledLabel-kKyuTI cCJkSp Label-bxMjsr iZhmvb"
+    className="Radio__StyledLabel-kKyuTI hDfHAj Label-bxMjsr iZhmvb"
     disabled={false}
     htmlFor="radio"
     name="radio"

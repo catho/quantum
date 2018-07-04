@@ -41,6 +41,13 @@ const RadioInline = (
   </RadioGroup>
 );
 
+const BoxedRadio = (
+  <RadioGroup boxed inline>
+    <Radio id="radioBoxed" value="radio" name="radioInline" label="Yes" />
+    <Radio id="radioTwoBoxed" value="radioTwo" name="radioInline" label="No" />
+  </RadioGroup>
+);
+
 const stories = storiesOf('3. Forms', module);
 stories.add('Radio Button', () => (
   <Heading name="Radio" title="<RadioGroup />">
@@ -78,6 +85,17 @@ stories.add('Radio Button', () => (
 
           <Col phone={6}>
             <RadioGroupWrapper>{RadioInline}</RadioGroupWrapper>
+          </Col>
+        </Row>
+
+        <h4>Boxed RadioGroup</h4>
+        <Row>
+          <Col phone={6}>
+            <CodeExample component={BoxedRadio} showTitle={false} />
+          </Col>
+
+          <Col phone={6}>
+            <RadioGroupWrapper>{BoxedRadio}</RadioGroupWrapper>
           </Col>
         </Row>
       </Tab>
