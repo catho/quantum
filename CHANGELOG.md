@@ -1,3 +1,7 @@
+## v0.12.0 - Jun/2018
+### Added
+- Squared Radio Button
+
 ## v0.11.0 - Jun/2018
 ### Added
 New component:
