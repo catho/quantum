@@ -118,22 +118,20 @@ const StyledInput = styled.input`
   ${boxedInput};
 `;
 
-const Radio = ({ id, label, onChange, disabled, ...rest }) => {
-  return (
-    <Wrapper {...rest}>
-      <StyledInput
-        {...rest}
-        id={id}
-        type="radio"
-        disabled={disabled}
-        onChange={e => onChange(e, { checked: e.target.value })}
-      />
-      <StyledLabel {...rest} disabled={disabled} htmlFor={id}>
-        {label}
-      </StyledLabel>
-    </Wrapper>
-  );
-};
+const Radio = ({ id, label, onChange, disabled, ...rest }) => (
+  <Wrapper {...rest}>
+    <StyledInput
+      {...rest}
+      id={id}
+      type="radio"
+      disabled={disabled}
+      onChange={e => onChange(e, { checked: e.target.value })}
+    />
+    <StyledLabel {...rest} disabled={disabled} htmlFor={id}>
+      {label}
+    </StyledLabel>
+  </Wrapper>
+);
 
 Radio.displayName = 'Radio';
 
