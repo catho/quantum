@@ -27,13 +27,7 @@ const Tip = styled.div`
     ${props => placement.arrowPosition[props.place]};
   }
 
-  ${props => {
-    if (props.offset || props.offset === 0) {
-      return `left: ${props.offset}%;`;
-    }
-
-    return false;
-  }};
+  ${({ offset }) => (offset || offset === 0 ? `left: ${offset}%;` : '')};
 `;
 
 const Wrapper = styled.div`

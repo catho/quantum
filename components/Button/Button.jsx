@@ -51,7 +51,6 @@ const StyledButton = styled.button`
 
   ${fontSize}
   ${padding}
-  ${theme.mixins.shadow()};
   ${theme.mixins.transition()};
 
   ${ButtonIcon} {
@@ -77,7 +76,7 @@ const StyledButton = styled.button`
   `}
 
   ${props => {
-    const { unselected, selected, disabled } = skins(props);
+    const { unselected, selected, disabled, shadow } = skins(props);
 
     return `
       background-color: ${
@@ -89,8 +88,10 @@ const StyledButton = styled.button`
         props.disabled ? disabled.fontWeight : unselected.fontWeight
       };
 
+      ${shadow ? theme.mixins.shadow() : undefined};
+
       &:active {
-        ${theme.mixins.shadow(2)};
+        ${shadow && theme.mixins.shadow(2)};
         background-color: ${selected.background};
         border-color: ${selected.border};
         color: ${selected.color};

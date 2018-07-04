@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component Should match snapshot with different skins 1`] = `
+<div
+  className="Badge__Wrapper-dPhihi bJYdbJ"
+>
+   
+   Brand1 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 2`] = `
+<div
+  className="Badge__Wrapper-dPhihi grEsqc"
+>
+   
+   Brand2 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 3`] = `
+<div
+  className="Badge__Wrapper-dPhihi aJXrV"
+>
+   
+   Primary 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 4`] = `
+<div
+  className="Badge__Wrapper-dPhihi fqoIJK"
+>
+   
+   Secondary 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 5`] = `
+<div
+  className="Badge__Wrapper-dPhihi cCdoWl"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 6`] = `
+<div
+  className="Badge__Wrapper-dPhihi eowpEc"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 7`] = `
+<div
+  className="Badge__Wrapper-dPhihi dvFPaI"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 8`] = `
+<div
+  className="Badge__Wrapper-dPhihi cxuvYs"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different skins 9`] = `
+<div
+  className="Badge__Wrapper-dPhihi bpBzsr"
+>
+   
+   Text 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different text props 1`] = `
+<div
+  className="Badge__Wrapper-dPhihi aJXrV"
+>
+   
+  Default with text prop
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different text props 2`] = `
+<div
+  className="Badge__Wrapper-dPhihi aJXrV"
+>
+   
+   Default with children 
+   
+</div>
+`;
+
+exports[`Badge component Should match snapshot with different text props 3`] = `
+<div
+  className="Badge__Wrapper-dPhihi aJXrV"
+>
+   
+   Default 
+   
+</div>
+`;

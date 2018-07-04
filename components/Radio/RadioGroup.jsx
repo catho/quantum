@@ -19,12 +19,12 @@ class RadioGroup extends React.Component {
   };
 
   render() {
-    const { children, ...rest } = this.props;
+    const { children, boxed, ...rest } = this.props;
 
     return (
       <Group {...rest}>
         {React.Children.map(children, ({ type: Component, props }) => (
-          <Component key={Component.displayName} {...props} />
+          <Component key={Component.displayName} {...props} boxed={boxed} />
         ))}
       </Group>
     );
@@ -35,11 +35,18 @@ class RadioGroup extends React.Component {
  * Group for Radio components.
  */
 
+RadioGroup.defaultProps = {
+  boxed: false,
+  inline: false,
+};
+
 RadioGroup.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),
   ]).isRequired,
+  boxed: PropTypes.bool,
+  inline: PropTypes.bool,
 };
 
 export default RadioGroup;

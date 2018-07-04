@@ -1,3 +1,17 @@
+## v0.12.0 - Jun/2018
+### Added
+- Squared Radio Button
+
+## v0.11.0 - Jun/2018
+### Added
+New component:
+  - Badge
+
+## v0.10.0 - Jun/2018
+### Changed
+Component reworked:
+  - Modal
+
 ## v0.9.2 - Jun/2018
 ### Added
 Prettier setup

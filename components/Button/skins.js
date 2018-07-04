@@ -32,6 +32,7 @@ const skins = {
     selected: Colors.SECONDARY['50'],
     disabled: Colors.WHITE,
     disabledTextColor: Colors.PRIMARY['300'],
+    shadow: false,
   }),
 };
 
