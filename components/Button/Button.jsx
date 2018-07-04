@@ -8,6 +8,8 @@ import theme from '../../theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
 
+let test;
+
 const fontSize = ({ size }) =>
   `font-size: ${theme.font[size] || theme.font.normal};`;
 const iconSize = ({ size }) => {
