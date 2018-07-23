@@ -9,10 +9,11 @@
     "coverage": "jest --coverage",
     "build": "cross-env NODE_ENV=production webpack",
     "precommit": "lint-staged",
-    "prepush": "yarn test",
+    "prepush": "yarn lint && yarn test",
     "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006 -s static",
     "build-storybook": "build-storybook",
-    "format": "prettier --write ./**/*.{js,jsx,json}"
+    "format": "prettier --write ./**/*.{js,jsx,json}",
+    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx --quiet"
   },
   "repository": {
     "type": "git",
