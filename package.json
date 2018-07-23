@@ -13,7 +13,7 @@
     "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006 -s static",
     "build-storybook": "build-storybook",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx"
+    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx --quiet"
   },
   "repository": {
     "type": "git",
