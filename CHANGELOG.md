@@ -1,4 +1,4 @@
-## v0.13.0 - Jul/2018
+## v0.12.1 - Jul/2018
 ### Fixed
 - Correcting error when try to minify the code when we use quantum as external dependence
 
