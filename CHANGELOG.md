@@ -1,3 +1,7 @@
+## v0.12.1 - Jul/2018
+### Fixed
+- Correcting error when try to minify the code when we use quantum as external dependence
+
 ## v0.12.0 - Jun/2018
 ### Added
 - Squared Radio Button
