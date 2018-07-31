@@ -23,7 +23,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: /components/,
+        include: '/',
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
