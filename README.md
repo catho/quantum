@@ -37,19 +37,27 @@ yarn build
 ## Publish NPM
 
 To publish a new version in NPM, follow these steps:
+
+First you need to set the registry:
 ```sh
-npm get registry
+npm set registry http://armazem.devel:4873
 ```
 
-To log in to npm, after entering the name, email and password you will be logged in http://armazem.devel:4873/ 
+If you do not have a user in npm, you need to create:
 ```sh
 npm adduser
+```
+
+If you already have a user in npm, please log in:
+```sh
+npm login
 ```
 
 After logging in, just publish on npm
 ```sh
 npm publish
 ```
+
 To check that everything is ok, you can check this link http://armazem.devel:4873/
 
 ## Contributing
