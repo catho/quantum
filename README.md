@@ -34,6 +34,32 @@ After create a component, it's necessary to generate a build version to be publi
 yarn build
 ```
 
+## Publish NPM
+
+To publish a new version in NPM, follow these steps:
+
+First you need to set the registry:
+```sh
+npm set registry http://armazem.devel:4873
+```
+
+If you do not have a user in npm, you need to create:
+```sh
+npm adduser
+```
+
+If you already have a user in npm, please log in:
+```sh
+npm login
+```
+
+After logging in, just publish on npm
+```sh
+npm publish
+```
+
+To check that everything is ok, you can check this link http://armazem.devel:4873/
+
 ## Contributing
 
 - Check the [issues](http://gitlab.devel/frontend-platform/quantum/issues) to ensure that there is not someone already working on it
