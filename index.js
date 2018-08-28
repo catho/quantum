@@ -3,6 +3,7 @@ import Checkbox from './components/Checkbox';
 import Colors from './components/Colors';
 import Dropdown from './components/Dropdown';
 import { Container, Row, Col, Hide } from './components/Grid';
+import Image from './components/Image';
 import Input from './components/Input';
 import Loading from './components/Loading';
 import Modal from './components/Modal';
@@ -32,6 +33,7 @@ export {
   Dropdown,
   Form,
   Hide,
+  Image,
   Input,
   Loading,
   Logo,
