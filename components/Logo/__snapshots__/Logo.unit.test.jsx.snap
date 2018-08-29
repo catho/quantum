@@ -24,7 +24,7 @@ ShallowWrapper {
     "props": Object {
       "alt": "Example",
       "height": 50,
-      "loader": <Loader.Image />,
+      "loader": null,
       "src": "test-file-stub",
       "unloader": null,
       "width": 100,
@@ -41,7 +41,7 @@ ShallowWrapper {
       "props": Object {
         "alt": "Example",
         "height": 50,
-        "loader": <Loader.Image />,
+        "loader": null,
         "src": "test-file-stub",
         "unloader": null,
         "width": 100,
