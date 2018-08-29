@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'react-image';
-import Loader from '../Loader';
 
 const Image = ({ src, alt, ...props }) => (
   <Img src={src} alt={alt} decode={false} {...props} />
 );
 
 Image.defaultProps = {
-  loader: <Loader.Image />,
+  loader: null,
   unloader: null,
 };
 
