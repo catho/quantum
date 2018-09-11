@@ -12,7 +12,7 @@ import Image from '../../components/Image';
 
 const registry = 'registry="http://armazem.devel:4873/"';
 const yarnAdd = 'yarn add @cathodevel/quantum';
-const importHeader = `import Header from '@cathodevel/quantum';
+const importHeader = `import { Header } from '@cathodevel/quantum';
 export default () => <Header />;`;
 
 const HighlightWrapper = styled.div`
@@ -52,7 +52,8 @@ const Introduction = () => (
         rel="noopener noreferrer"
       >
         CLI
-      </a>.
+      </a>
+      .
     </p>
 
     <h3>How to install</h3>
