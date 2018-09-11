@@ -2,7 +2,7 @@ import Button from './components/Button';
 import Checkbox from './components/Checkbox';
 import Colors from './components/Colors';
 import Dropdown from './components/Dropdown';
-import { Container, Row, Col, Hide } from './components/Grid';
+import { Container, Row, Col, Hide, BREAKPOINTS } from './components/Grid';
 import Image from './components/Image';
 import Input from './components/Input';
 import Loading from './components/Loading';
@@ -24,6 +24,7 @@ import Popover from './components/Popover';
 import Badge from './components/Badge';
 
 export {
+  BREAKPOINTS,
   Button,
   Card,
   Checkbox,
