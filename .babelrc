@@ -1,9 +1,4 @@
 {
-  "presets": [
-    "react",
-    "stage-1",
-    "env"
-  ],
   "plugins": [
     "transform-class-properties",
     "transform-modern-regexp",
