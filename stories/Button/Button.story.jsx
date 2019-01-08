@@ -36,7 +36,8 @@ const exampleTab = (
         The full catalogue of icons can be found{' '}
         <LinkTo kind="1. Foundation" story="Icons">
           here
-        </LinkTo>.
+        </LinkTo>
+        .
       </p>
       <Row>
         <Col tablet={3}>
