@@ -5,13 +5,13 @@ import 'semantic-ui-css/components/input.css';
 import 'semantic-ui-css/components/transition.css';
 
 import React from 'react';
-import styled, { injectGlobal } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const Container = styled.div`
   padding: 10px 20px;
 `;
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
   @import url('https://fonts.googleapis.com/css?family=Oxygen');
   @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
@@ -88,6 +88,7 @@ injectGlobal`
 
 const Frame = storyFn => (
   <React.Fragment>
+    <GlobalStyle />
     <Container>{storyFn()}</Container>
   </React.Fragment>
 );
