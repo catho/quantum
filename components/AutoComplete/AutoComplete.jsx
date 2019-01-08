@@ -30,7 +30,9 @@ const AutoComplete = props => {
       <Input {...props} list={dataListId} />
 
       <Datalist id={dataListId} error={error}>
-        {props.dataSource.map(item => <option value={item} key={`${item}`} />)}
+        {props.dataSource.map(item => (
+          <option value={item} key={`${item}`} />
+        ))}
       </Datalist>
     </Wrapper>
   );

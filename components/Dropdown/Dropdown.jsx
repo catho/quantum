@@ -109,7 +109,8 @@ const Select = ({
     selectedItem={selectedItem}
     onChange={onChange}
     itemToString={({ item }) => itemToString(item)}
-    render={({
+  >
+    {({
       isOpen,
       getToggleButtonProps,
       getItemProps,
@@ -144,7 +145,7 @@ const Select = ({
         )}
       </div>
     )}
-  />
+  </Downshift>
 );
 
 const ListItemPropType = PropTypes.oneOfType([

@@ -37,7 +37,11 @@ storiesOf('6. Images', module).add('Logo', () => {
         <Tab title="Usage">
           <HowToImport importModules="Logo" />
           <p>You can use these logos:</p>
-          <ul>{logoList.map(name => <li key={name}>{name}</li>)}</ul>
+          <ul>
+            {logoList.map(name => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
           {logoList.map(name => (
             <LogoExample key={`example-${name}`} name={name} />
           ))}

@@ -58,7 +58,9 @@ class Catalogue extends Component {
 
         <Container fluid>
           <Row>
-            {filtered.map(name => <IconToClipboard name={name} key={name} />)}
+            {filtered.map(name => (
+              <IconToClipboard name={name} key={name} />
+            ))}
           </Row>
         </Container>
       </React.Fragment>

@@ -54,9 +54,8 @@ storiesOf('10. List', module).add('List', () => (
           <Col desktop={12} tablet={12}>
             <p>
               Also, you can add some properties to the list such as
-              <code>ordered</code>,
-              <code>divided</code>,
-              <code>bullet</code>, and <code>inline</code>
+              <code>ordered</code>,<code>divided</code>,<code>bullet</code>, and{' '}
+              <code>inline</code>
             </p>
           </Col>
 

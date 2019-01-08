@@ -1,16 +1,17 @@
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import { withOptions } from '@storybook/addon-options';
 import Frame from './decorators/Frame';
 import stories from './stories';
 
-setOptions({
-  name: 'Quantum',
-  showAddonPanel: false,
-  addonPanelInRight: false,
-  sidebarAnimations: false,
-  url: 'http://gitlab.devel/frontend-platform/quantum',
-});
+addDecorator(
+  withOptions({
+    name: 'Quantum',
+    showAddonPanel: false,
+    addonPanelInRight: false,
+    url: 'https://github.com/catho/quantum/',
+  }),
+);
 
 addDecorator(Frame);
 
