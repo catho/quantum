@@ -55,26 +55,27 @@ class Alert extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      show: this.props.show,
-    };
+    const { show, duration } = this.props;
 
-    if (this.props.duration) {
+    this.state = { show };
+
+    if (duration) {
       this.handleAutoDestruction();
     }
   }
 
   hideModal = () => {
-    this.setState(
-      { show: false },
-      this.props.onClose ? this.props.onClose() : null,
-    );
+    const { onClose } = this.props;
+
+    this.setState({ show: false }, onClose ? onClose() : null);
   };
 
   handleAutoDestruction = () => {
+    const { duration } = this.props;
+
     setTimeout(() => {
       this.hideModal();
-    }, this.props.duration * 1000);
+    }, duration * 1000);
   };
 
   render() {
@@ -83,7 +84,9 @@ class Alert extends Component {
       message: { title, text },
     } = this.props;
 
-    return this.state.show ? (
+    const { show } = this.state;
+
+    return show ? (
       <ThemeProvider theme={GlobalTheme}>
         <AlertWrapper type={type}>
           <AlertIcon name={ComponentTheme[type].icon} />

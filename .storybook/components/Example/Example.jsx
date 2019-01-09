@@ -23,9 +23,8 @@ class Example extends React.Component {
   }
 
   handleClick = () => {
-    this.setState({
-      show: !this.state.show,
-    });
+    const { show } = this.state;
+    this.setState({ show: !show });
   };
 
   render() {

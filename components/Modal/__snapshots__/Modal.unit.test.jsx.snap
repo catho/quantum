@@ -2,7 +2,6 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Modal
     closeOnOverlayClick={false}
@@ -22,13 +21,13 @@ ShallowWrapper {
       </Button>
     }
   >
-    <Modal.Header>
+    <ForwardRef>
       Title
-    </Modal.Header>
-    <Modal.Content>
+    </ForwardRef>
+    <ForwardRef>
       Example Content
-    </Modal.Content>
-    <Modal.Footer>
+    </ForwardRef>
+    <ForwardRef>
       <Button
         center={false}
         disabled={false}
@@ -53,12 +52,13 @@ ShallowWrapper {
       >
         OK
       </Button>
-    </Modal.Footer>
+    </ForwardRef>
   </Modal>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -80,18 +80,15 @@ ShallowWrapper {
         >
           Open modal
         </Button>,
-        <Overlay
-          innerRef={[Function]}
-          onClick={undefined}
-        >
-          <Modal__Wrapper>
-            <Modal.Header>
+        <ForwardRef>
+          <ForwardRef>
+            <ForwardRef>
               Title
-            </Modal.Header>
-            <Modal.Content>
+            </ForwardRef>
+            <ForwardRef>
               Example Content
-            </Modal.Content>
-            <Modal.Footer>
+            </ForwardRef>
+            <ForwardRef>
               <Button
                 center={false}
                 disabled={false}
@@ -116,9 +113,9 @@ ShallowWrapper {
               >
                 OK
               </Button>
-            </Modal.Footer>
-          </Modal__Wrapper>
-        </Overlay>,
+            </ForwardRef>
+          </ForwardRef>
+        </ForwardRef>,
       ],
       "value": Object {
         "closeModal": [Function],
@@ -148,16 +145,16 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
-          "children": <Modal__Wrapper>
-            <Modal.Header>
+          "children": <ForwardRef>
+            <ForwardRef>
               Title
-            </Modal.Header>
-            <Modal.Content>
+            </ForwardRef>
+            <ForwardRef>
               Example Content
-            </Modal.Content>
-            <Modal.Footer>
+            </ForwardRef>
+            <ForwardRef>
               <Button
                 center={false}
                 disabled={false}
@@ -182,25 +179,24 @@ ShallowWrapper {
               >
                 OK
               </Button>
-            </Modal.Footer>
-          </Modal__Wrapper>,
-          "innerRef": [Function],
+            </ForwardRef>
+          </ForwardRef>,
           "onClick": undefined,
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "children": Array [
-              <Modal.Header>
+              <ForwardRef>
                 Title
-              </Modal.Header>,
-              <Modal.Content>
+              </ForwardRef>,
+              <ForwardRef>
                 Example Content
-              </Modal.Content>,
-              <Modal.Footer>
+              </ForwardRef>,
+              <ForwardRef>
                 <Button
                   center={false}
                   disabled={false}
@@ -225,7 +221,7 @@ ShallowWrapper {
                 >
                   OK
                 </Button>
-              </Modal.Footer>,
+              </ForwardRef>,
             ],
           },
           "ref": null,
@@ -233,29 +229,67 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "children": "Title",
               },
               "ref": null,
               "rendered": "Title",
-              "type": [Function],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Header-sc-1fgygl7-0",
+                  "isStatic": true,
+                  "rules": Array [
+                    "border-bottom:2px solid ",
+                    "#eceff1",
+                    ";font-size:20px;font-weight:bold;margin:0;padding:18px 24px;",
+                  ],
+                },
+                "displayName": "Modal.Header",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Header-sc-1fgygl7-0",
+                "target": "h2",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "children": "Example Content",
               },
               "ref": null,
               "rendered": "Example Content",
-              "type": [Function],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Content-g4e9ct-0",
+                  "isStatic": true,
+                  "rules": Array [
+                    "font-size:14px;padding:18px 24px;",
+                  ],
+                },
+                "displayName": "Modal.Content",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Content-g4e9ct-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "children": Array [
                   <Button
@@ -325,28 +359,100 @@ ShallowWrapper {
                   "type": [Function],
                 },
               ],
-              "type": [Function],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Footer-sc-2irees-0",
+                  "isStatic": false,
+                  "rules": Array [
+                    "background-color:#f4f4f4;border-top:2px solid ",
+                    "#eceff1",
+                    ";display:flex;font-size:14px;padding:10px;justify-content:",
+                    [Function],
+                    ";",
+                  ],
+                },
+                "displayName": "Modal.Footer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Footer-sc-2irees-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
             },
           ],
-          "type": [Function],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Modal__Wrapper-pn37qy-1",
+              "isStatic": true,
+              "rules": Array [
+                "background-color:",
+                "#FFFFFF",
+                ";border-radius:8px;box-shadow:0 3px 3px 0 ",
+                "rgba(0, 0, 0, 0.2)",
+                ",0 8px 14px 3px ",
+                "rgba(0, 0, 0, 0.12)",
+                ",0 8px 10px 1px ",
+                "rgba(0, 0, 0, 0.14)",
+                ";color:",
+                "#485f6d",
+                ";overflow:hidden;",
+              ],
+            },
+            "displayName": "Modal__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Modal__Wrapper-pn37qy-1",
+            "target": "section",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
         },
-        "type": [Function],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Modal__Overlay-pn37qy-0",
+            "isStatic": true,
+            "rules": Array [
+              "align-items:center;background-color:",
+              "rgba(0, 0, 0, 0.5)",
+              ";bottom:0;display:flex;justify-content:center;left:0;right:0;position:fixed;top:0;z-index:100;",
+            ],
+          },
+          "displayName": "Overlay",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Modal__Overlay-pn37qy-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
       },
     ],
     "type": Object {
       "$$typeof": Symbol(react.provider),
       "_context": Object {
         "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
+        "Consumer": Object {
+          "$$typeof": Symbol(react.context),
+          "_calculateChangedBits": null,
+          "_context": [Circular],
+        },
         "Provider": [Circular],
         "_calculateChangedBits": null,
-        "_changedBits": 0,
-        "_changedBits2": 0,
         "_currentRenderer": null,
         "_currentRenderer2": null,
         "_currentValue": undefined,
         "_currentValue2": undefined,
-        "_defaultValue": undefined,
+        "_threadCount": 0,
       },
     },
   },
@@ -369,18 +475,15 @@ ShallowWrapper {
           >
             Open modal
           </Button>,
-          <Overlay
-            innerRef={[Function]}
-            onClick={undefined}
-          >
-            <Modal__Wrapper>
-              <Modal.Header>
+          <ForwardRef>
+            <ForwardRef>
+              <ForwardRef>
                 Title
-              </Modal.Header>
-              <Modal.Content>
+              </ForwardRef>
+              <ForwardRef>
                 Example Content
-              </Modal.Content>
-              <Modal.Footer>
+              </ForwardRef>
+              <ForwardRef>
                 <Button
                   center={false}
                   disabled={false}
@@ -405,9 +508,9 @@ ShallowWrapper {
                 >
                   OK
                 </Button>
-              </Modal.Footer>
-            </Modal__Wrapper>
-          </Overlay>,
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef>,
         ],
         "value": Object {
           "closeModal": [Function],
@@ -437,16 +540,16 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "children": <Modal__Wrapper>
-              <Modal.Header>
+            "children": <ForwardRef>
+              <ForwardRef>
                 Title
-              </Modal.Header>
-              <Modal.Content>
+              </ForwardRef>
+              <ForwardRef>
                 Example Content
-              </Modal.Content>
-              <Modal.Footer>
+              </ForwardRef>
+              <ForwardRef>
                 <Button
                   center={false}
                   disabled={false}
@@ -471,25 +574,24 @@ ShallowWrapper {
                 >
                   OK
                 </Button>
-              </Modal.Footer>
-            </Modal__Wrapper>,
-            "innerRef": [Function],
+              </ForwardRef>
+            </ForwardRef>,
             "onClick": undefined,
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "children": Array [
-                <Modal.Header>
+                <ForwardRef>
                   Title
-                </Modal.Header>,
-                <Modal.Content>
+                </ForwardRef>,
+                <ForwardRef>
                   Example Content
-                </Modal.Content>,
-                <Modal.Footer>
+                </ForwardRef>,
+                <ForwardRef>
                   <Button
                     center={false}
                     disabled={false}
@@ -514,7 +616,7 @@ ShallowWrapper {
                   >
                     OK
                   </Button>
-                </Modal.Footer>,
+                </ForwardRef>,
               ],
             },
             "ref": null,
@@ -522,29 +624,67 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "children": "Title",
                 },
                 "ref": null,
                 "rendered": "Title",
-                "type": [Function],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Header-sc-1fgygl7-0",
+                    "isStatic": true,
+                    "rules": Array [
+                      "border-bottom:2px solid ",
+                      "#eceff1",
+                      ";font-size:20px;font-weight:bold;margin:0;padding:18px 24px;",
+                    ],
+                  },
+                  "displayName": "Modal.Header",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Header-sc-1fgygl7-0",
+                  "target": "h2",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
               },
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "children": "Example Content",
                 },
                 "ref": null,
                 "rendered": "Example Content",
-                "type": [Function],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Content-g4e9ct-0",
+                    "isStatic": true,
+                    "rules": Array [
+                      "font-size:14px;padding:18px 24px;",
+                    ],
+                  },
+                  "displayName": "Modal.Content",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Content-g4e9ct-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
               },
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "children": Array [
                     <Button
@@ -614,28 +754,100 @@ ShallowWrapper {
                     "type": [Function],
                   },
                 ],
-                "type": [Function],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Footer-sc-2irees-0",
+                    "isStatic": false,
+                    "rules": Array [
+                      "background-color:#f4f4f4;border-top:2px solid ",
+                      "#eceff1",
+                      ";display:flex;font-size:14px;padding:10px;justify-content:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "Modal.Footer",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Footer-sc-2irees-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
               },
             ],
-            "type": [Function],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Modal__Wrapper-pn37qy-1",
+                "isStatic": true,
+                "rules": Array [
+                  "background-color:",
+                  "#FFFFFF",
+                  ";border-radius:8px;box-shadow:0 3px 3px 0 ",
+                  "rgba(0, 0, 0, 0.2)",
+                  ",0 8px 14px 3px ",
+                  "rgba(0, 0, 0, 0.12)",
+                  ",0 8px 10px 1px ",
+                  "rgba(0, 0, 0, 0.14)",
+                  ";color:",
+                  "#485f6d",
+                  ";overflow:hidden;",
+                ],
+              },
+              "displayName": "Modal__Wrapper",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Modal__Wrapper-pn37qy-1",
+              "target": "section",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
           },
-          "type": [Function],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Modal__Overlay-pn37qy-0",
+              "isStatic": true,
+              "rules": Array [
+                "align-items:center;background-color:",
+                "rgba(0, 0, 0, 0.5)",
+                ";bottom:0;display:flex;justify-content:center;left:0;right:0;position:fixed;top:0;z-index:100;",
+              ],
+            },
+            "displayName": "Overlay",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Modal__Overlay-pn37qy-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
         },
       ],
       "type": Object {
         "$$typeof": Symbol(react.provider),
         "_context": Object {
           "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
+          "Consumer": Object {
+            "$$typeof": Symbol(react.context),
+            "_calculateChangedBits": null,
+            "_context": [Circular],
+          },
           "Provider": [Circular],
           "_calculateChangedBits": null,
-          "_changedBits": 0,
-          "_changedBits2": 0,
           "_currentRenderer": null,
           "_currentRenderer2": null,
           "_currentValue": undefined,
           "_currentValue2": undefined,
-          "_defaultValue": undefined,
+          "_threadCount": 0,
         },
       },
     },
@@ -644,6 +856,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },

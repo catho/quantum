@@ -6,9 +6,13 @@ import LogoTypes from './LogoTypes';
 
 class Logo extends Component {
   static Business = LogoTypes.Business;
+
   static Candidate = LogoTypes.Candidate;
+
   static Education = LogoTypes.Education;
+
   static Google = LogoTypes.Google;
+
   static Facebook = LogoTypes.Facebook;
 
   render() {

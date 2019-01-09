@@ -101,7 +101,9 @@ storiesOf('3. Forms', module).add('Validation', () => (
         <ul>
           {Object.getOwnPropertyNames(Validations)
             .filter(name => !['name', 'length', 'prototype'].includes(name))
-            .map(validate => <li key={validate}>{validate}</li>)}
+            .map(validate => (
+              <li key={validate}>{validate}</li>
+            ))}
         </ul>
 
         <p>You can add as many validations as you want!</p>

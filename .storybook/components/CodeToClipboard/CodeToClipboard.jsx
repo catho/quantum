@@ -69,6 +69,7 @@ class CodeToClipboard extends React.Component {
 
   render() {
     const { code, color, backgroundColor } = this.props;
+    const { hasJustCopied } = this.state;
     const tips = [
       "I'm lazy.",
       'Loved it, copy.',
@@ -81,10 +82,10 @@ class CodeToClipboard extends React.Component {
     return (
       <AsideCopyToClipboard text={code}>
         <Button onClick={this.loveCallback} backgroundColor={backgroundColor}>
-          <CopyCodeIco hasJustCopied={this.state.hasJustCopied} />
+          <CopyCodeIco hasJustCopied={hasJustCopied} />
           <IcoTooltip
             tip={tips}
-            hasJustCopied={this.state.hasJustCopied}
+            hasJustCopied={hasJustCopied}
             success="Copied!"
             color={color}
           />

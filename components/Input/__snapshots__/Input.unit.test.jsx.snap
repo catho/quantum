@@ -2,17 +2,17 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
 >
   <input
-    className="Input__InputTag-INLdc eQvqsJ"
+    className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+    defaultValue="foo"
     id=""
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     type="text"
-    value="foo"
   />
   
   
@@ -21,20 +21,20 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
 >
   <input
-    className="Input__InputTag-INLdc eQvqsJ"
+    className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+    defaultValue="foo"
     id="input-with-label"
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     type="text"
-    value="foo"
   />
   <label
-    className="Input__InputLabel-jrPAft gBUYoA Label-bxMjsr iZhmvb"
+    className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 eJPpGs"
     htmlFor="input-with-label"
   >
     Text label
@@ -45,21 +45,21 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
 >
   <input
-    className="Input__InputTag-INLdc flIBdF"
+    className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+    defaultValue="foo"
     id=""
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     type="text"
-    value="foo"
   />
   
   <div
-    className="ErrorMessage-eJhZpN jUpnFq"
+    className="ErrorMessage-o8xm0w-0 cMosjL"
   >
     Error message
   </div>

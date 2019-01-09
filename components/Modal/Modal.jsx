@@ -35,8 +35,11 @@ const ModalContext = React.createContext();
 
 class Modal extends Component {
   static Header = Header;
+
   static Content = Content;
+
   static Footer = Footer;
+
   static Action = ({ children, onClick, skin }) => (
     <ModalContext.Consumer>
       {({ closeModal }) => (
@@ -98,6 +101,7 @@ class Modal extends Component {
 
   render() {
     const { children, trigger, closeOnOverlayClick } = this.props;
+    const { opened } = this.state;
 
     return (
       <ModalContext.Provider
@@ -109,9 +113,9 @@ class Modal extends Component {
           onClick: this.handleTriggerClick,
         })}
 
-        {this.state.opened && (
+        {opened && (
           <Overlay
-            innerRef={ref => {
+            ref={ref => {
               this.overlayRef = ref;
             }}
             onClick={closeOnOverlayClick ? this.handleOverlayClick : undefined}

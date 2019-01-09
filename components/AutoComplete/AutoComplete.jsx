@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const AutoComplete = props => {
-  const { id, error } = props;
+  const { id, error, dataSource } = props;
   const dataListId = `${id}_datalist`;
 
   return (
@@ -30,7 +30,9 @@ const AutoComplete = props => {
       <Input {...props} list={dataListId} />
 
       <Datalist id={dataListId} error={error}>
-        {props.dataSource.map(item => <option value={item} key={`${item}`} />)}
+        {dataSource.map(item => (
+          <option value={item} key={`${item}`} />
+        ))}
       </Datalist>
     </Wrapper>
   );

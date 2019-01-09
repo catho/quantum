@@ -5,7 +5,6 @@ import TextMaskTypes from '../../components/TextMask/TextMaskTypes';
 
 import {
   Heading,
-  Atom,
   TabbedView,
   Tab,
   AutoPropsApi,
@@ -82,7 +81,7 @@ const TextMaskCode = `<TextMask text="06460090" mask={[[/\\d/, /\\d/, /\\d/, /\\
 
 storiesOf('7. Mask', module).add('Text', () => (
   <React.Fragment>
-    <Heading image={Atom} name="TextMask">
+    <Heading name="TextMask">
       <TabbedView>
         <Tab title="Usage">
           <HowToImport importModules="TextMask" />

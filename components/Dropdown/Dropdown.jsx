@@ -109,7 +109,8 @@ const Select = ({
     selectedItem={selectedItem}
     onChange={onChange}
     itemToString={({ item }) => itemToString(item)}
-    render={({
+  >
+    {({
       isOpen,
       getToggleButtonProps,
       getItemProps,
@@ -144,7 +145,7 @@ const Select = ({
         )}
       </div>
     )}
-  />
+  </Downshift>
 );
 
 const ListItemPropType = PropTypes.oneOfType([
@@ -197,7 +198,9 @@ class Dropdown extends React.Component {
   }
 
   componentWillUpdate(nextProps) {
-    if (nextProps.selectedItem !== this.state.selectedItem) {
+    const { selectedItem } = this.state;
+
+    if (nextProps.selectedItem !== selectedItem) {
       this.state.selectedItem = nextProps.selectedItem;
     }
   }

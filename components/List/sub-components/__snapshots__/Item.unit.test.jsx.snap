@@ -2,7 +2,6 @@
 
 exports[`<Item /> Should match the snapshot 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <List.Item
     bullet=""
@@ -13,6 +12,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -21,7 +21,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <ListItem
+      "children": <ForwardRef
         bullet=""
       >
         
@@ -30,13 +30,13 @@ ShallowWrapper {
           header=""
           subheader=""
         />
-      </ListItem>,
+      </ForwardRef>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "bullet": "",
         "children": Array [
@@ -66,7 +66,27 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Item__ListItem-sc-9jtdcv-1",
+          "isStatic": false,
+          "rules": Array [
+            "display:flex;flex-direction:row;align-items:center;padding:10px 16px;",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "ListItem",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Item__ListItem-sc-9jtdcv-1",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
     "type": "li",
   },
@@ -76,7 +96,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <ListItem
+        "children": <ForwardRef
           bullet=""
         >
           
@@ -85,13 +105,13 @@ ShallowWrapper {
             header=""
             subheader=""
           />
-        </ListItem>,
+        </ForwardRef>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "bullet": "",
           "children": Array [
@@ -121,7 +141,27 @@ ShallowWrapper {
             "type": [Function],
           },
         ],
-        "type": [Function],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Item__ListItem-sc-9jtdcv-1",
+            "isStatic": false,
+            "rules": Array [
+              "display:flex;flex-direction:row;align-items:center;padding:10px 16px;",
+              [Function],
+              ";",
+            ],
+          },
+          "displayName": "ListItem",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Item__ListItem-sc-9jtdcv-1",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
       },
       "type": "li",
     },
@@ -130,6 +170,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },

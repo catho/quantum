@@ -46,29 +46,31 @@ class Textarea extends React.Component {
   constructor(props) {
     super(props);
 
-    const { value } = props;
+    const { value, maxLength } = props;
 
     this.state = {
       value,
-      charsLeft: this.props.maxLength,
+      charsLeft: maxLength,
     };
   }
 
   componentWillUpdate(nextProps) {
-    if (nextProps.value !== this.state.value) {
+    const { value } = this.state;
+
+    if (nextProps.value !== value) {
       this.state.value = nextProps.value;
     }
   }
 
   onChange = e => {
-    const { onChange } = this.props;
+    const { onChange, maxLength } = this.props;
     const {
       target: { value },
     } = e;
 
     this.setState({
       value,
-      charsLeft: this.props.maxLength - e.target.value.length,
+      charsLeft: maxLength - e.target.value.length,
     });
 
     onChange(e, { value });

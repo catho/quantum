@@ -14,14 +14,13 @@ ContentBox.displayName = 'Content';
 
 class Content extends React.Component {
   _renderContent = content => {
+    const { header: propsHeader, subheader: propsSubHeader } = this.props;
+
     if (typeof content === 'string') {
       return <Header>{content}</Header>;
     }
 
-    const {
-      header = this.props.header,
-      subheader = this.props.subheader,
-    } = content;
+    const { header = propsHeader, subheader = propsSubHeader } = content;
 
     return (
       <React.Fragment>

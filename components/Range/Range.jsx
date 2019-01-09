@@ -13,7 +13,9 @@ class Range extends React.Component {
   }
 
   componentWillUpdate(nextProps) {
-    if (nextProps.value !== this.state.value) {
+    const { value } = this.state;
+
+    if (nextProps.value !== value) {
       this.state.value = nextProps.value;
     }
   }

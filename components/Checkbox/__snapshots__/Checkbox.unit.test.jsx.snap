@@ -2,16 +2,16 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="Checkbox__StyledFieldGroup-hkqerU jpXHyP FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 Checkbox__StyledFieldGroup-f29b4j-1 jvLDvf"
 >
   <label
     checked={false}
-    className="Checkbox__StyledLabel-jIiNTF kHXpjC Label-bxMjsr iZhmvb"
+    className="Label-inke2y-0 Checkbox__StyledLabel-f29b4j-0 fuImqf"
     disabled={false}
   >
     <input
       checked={false}
-      className="Checkbox__StyledCheckbox-pbZAg khKNXr"
+      className="Checkbox__StyledCheckbox-f29b4j-2 djTkbN"
       disabled={false}
       id=""
       onChange={[Function]}

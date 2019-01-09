@@ -49,22 +49,18 @@ class Tooltip extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    const { text } = this.props;
+    const { show, width, height } = this.state;
     return (
-      this.props.text !== nextProps.text ||
-      this.state.show !== nextState.show ||
-      this.state.width !== nextState.width ||
-      this.state.height !== nextState.height
+      text !== nextProps.text ||
+      show !== nextState.show ||
+      width !== nextState.width ||
+      height !== nextState.height
     );
   }
 
   componentDidUpdate() {
     this.measure();
-  }
-
-  measure() {
-    const { clientWidth, clientHeight } = this.tip;
-
-    this.setState({ width: clientWidth, height: clientHeight });
   }
 
   handleEnter = () => {
@@ -74,6 +70,12 @@ class Tooltip extends Component {
   handleLeave = () => {
     this.setState({ show: false });
   };
+
+  measure() {
+    const { clientWidth, clientHeight } = this.tip;
+
+    this.setState({ width: clientWidth, height: clientHeight });
+  }
 
   render() {
     const { children, skin, place, text, slider, offset } = this.props;
@@ -88,7 +90,7 @@ class Tooltip extends Component {
       >
         <Tip
           skin={skin}
-          innerRef={tip => {
+          ref={tip => {
             this.tip = tip;
           }}
           place={place}

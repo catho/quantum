@@ -138,8 +138,9 @@ storiesOf('6. Images', module).add('Image', () => (
             <h3>Custom loader</h3>
             <p>
               You can display a loader component until the image is completely
-              downloaded.<br />Just pass a component inside <code>loader</code>{' '}
-              prop.
+              downloaded.
+              <br />
+              Just pass a component inside <code>loader</code> prop.
             </p>
           </Col>
           <Col desktop={7}>

@@ -17,8 +17,12 @@ const ModalExample = {
       <Modal.Header>Title</Modal.Header>
       <Modal.Content>Example Content</Modal.Content>
       <Modal.Footer>
-        <Modal.Action>Cancelar</Modal.Action>
-        <Modal.Action skin="primary">OK</Modal.Action>
+        <Modal.Action onClick={() => console.log('Cancelar')}>
+          Cancelar
+        </Modal.Action>
+        <Modal.Action onClick={() => console.log('OK')} skin="primary">
+          OK
+        </Modal.Action>
       </Modal.Footer>
     </Modal>
   ),

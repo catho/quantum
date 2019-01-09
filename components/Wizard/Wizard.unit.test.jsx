@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import { Wizard, Step } from './';
+import { Wizard, Step } from '.';
 
 describe('Wizard Component', () => {
   const component = (

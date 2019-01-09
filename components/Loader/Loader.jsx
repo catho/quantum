@@ -7,8 +7,11 @@ import LoaderTypes from './LoaderTypes';
  */
 class Loader extends React.Component {
   static Image = LoaderTypes.Image;
+
   static Text = LoaderTypes.Text;
+
   static List = LoaderTypes.List;
+
   static IconList = LoaderTypes.IconList;
 
   render() {

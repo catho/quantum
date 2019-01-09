@@ -69,7 +69,9 @@ class Toggle extends React.Component {
   }
 
   componentWillUpdate({ checked }) {
-    if (checked !== this.state.checked) {
+    const { checked: stateChecked } = this.state;
+
+    if (checked !== stateChecked) {
       this.state.checked = checked;
     }
   }
