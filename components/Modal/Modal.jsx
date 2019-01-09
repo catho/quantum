@@ -115,7 +115,7 @@ class Modal extends Component {
 
         {opened && (
           <Overlay
-            innerRef={ref => {
+            ref={ref => {
               this.overlayRef = ref;
             }}
             onClick={closeOnOverlayClick ? this.handleOverlayClick : undefined}
