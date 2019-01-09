@@ -80,9 +80,7 @@ ShallowWrapper {
         >
           Open modal
         </Button>,
-        <ForwardRef
-          innerRef={[Function]}
-        >
+        <ForwardRef>
           <ForwardRef>
             <ForwardRef>
               Title
@@ -183,10 +181,9 @@ ShallowWrapper {
               </Button>
             </ForwardRef>
           </ForwardRef>,
-          "innerRef": [Function],
           "onClick": undefined,
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": Object {
           "instance": null,
           "key": undefined,
@@ -478,9 +475,7 @@ ShallowWrapper {
           >
             Open modal
           </Button>,
-          <ForwardRef
-            innerRef={[Function]}
-          >
+          <ForwardRef>
             <ForwardRef>
               <ForwardRef>
                 Title
@@ -581,10 +576,9 @@ ShallowWrapper {
                 </Button>
               </ForwardRef>
             </ForwardRef>,
-            "innerRef": [Function],
             "onClick": undefined,
           },
-          "ref": null,
+          "ref": [Function],
           "rendered": Object {
             "instance": null,
             "key": undefined,
