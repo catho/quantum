@@ -198,7 +198,9 @@ class Dropdown extends React.Component {
   }
 
   componentWillUpdate(nextProps) {
-    if (nextProps.selectedItem !== this.state.selectedItem) {
+    const { selectedItem } = this.state;
+
+    if (nextProps.selectedItem !== selectedItem) {
       this.state.selectedItem = nextProps.selectedItem;
     }
   }

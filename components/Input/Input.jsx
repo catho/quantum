@@ -22,15 +22,8 @@ const InputLabel = styled(Label)`
   top: 6px;
   ${theme.mixins.transition()};
 
-  ${props =>
-    props.withValue &&
-    `
-    ${sharedStyle}
-  `} ${props =>
-    props.error &&
-    `
-    color: ${Colors.DANGER['500']};
-  `};
+  ${props => props.withValue && `${sharedStyle}`}
+  ${props => props.error && `color: ${Colors.DANGER['500']};`}
 `;
 
 const InputTag = styled.input`
@@ -89,10 +82,15 @@ const InputFieldGroup = styled(FieldGroup)`
 /** A text field component to get user text data */
 class Input extends React.Component {
   static CEP = InputTypes.CEP;
+
   static CNPJ = InputTypes.CNPJ;
+
   static CPF = InputTypes.CPF;
+
   static Date = InputTypes.Date;
+
   static Phone = InputTypes.Phone;
+
   static Password = InputTypes.Password;
 
   constructor(props) {
@@ -107,10 +105,8 @@ class Input extends React.Component {
   }
 
   componentWillUpdate(nextProps) {
-    if (
-      nextProps.value !== this.state.value ||
-      nextProps.type !== this.state.type
-    ) {
+    const { value, type } = this.state;
+    if (nextProps.value !== value || nextProps.type !== type) {
       this.state.value = nextProps.value;
       this.state.type = nextProps.type;
     }
@@ -142,7 +138,7 @@ class Input extends React.Component {
   };
 
   render() {
-    const { id, label, error, mask, ...rest } = this.props;
+    const { id, label, error, mask, type: inputType, ...rest } = this.props;
     const { value, type } = this.state;
 
     return (
@@ -154,14 +150,7 @@ class Input extends React.Component {
           mask={mask}
           value={value}
           onChange={this._onChange}
-          render={(ref, { defaultValue, ...props }) => (
-            <InputTag
-              innerRef={ref}
-              error={error}
-              {...props}
-              value={defaultValue}
-            />
-          )}
+          render={(ref, props) => <InputTag ref={ref} {...props} />}
         />
 
         {label && (
@@ -169,7 +158,7 @@ class Input extends React.Component {
             {label}
           </InputLabel>
         )}
-        {this.props.type === 'password' && (
+        {inputType === 'password' && (
           <InputIcon
             name={type === 'password' ? 'visibility' : 'visibility_off'}
             onClick={this._showPassword}

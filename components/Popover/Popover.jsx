@@ -79,17 +79,25 @@ class Popover extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    const { title, content, place, show } = this.props;
+    const {
+      ribbon,
+      show: stateShow,
+      popoverMeasures,
+      childrenMeasures,
+    } = this.state;
+
     return (
-      this.props.title !== nextProps.title ||
-      this.props.content !== nextProps.content ||
-      this.props.place !== nextProps.place ||
-      this.props.show !== nextProps.show ||
-      this.state.ribbon !== nextState.ribbon ||
-      this.state.show !== nextState.show ||
-      this.state.popoverMeasures.width !== nextState.popoverMeasures.width ||
-      this.state.popoverMeasures.height !== nextState.popoverMeasures.height ||
-      this.state.childrenMeasures.width !== nextState.childrenMeasures.width ||
-      this.state.childrenMeasures.height !== nextState.childrenMeasures.height
+      title !== nextProps.title ||
+      content !== nextProps.content ||
+      place !== nextProps.place ||
+      show !== nextProps.show ||
+      ribbon !== nextState.ribbon ||
+      stateShow !== nextState.show ||
+      popoverMeasures.width !== nextState.popoverMeasures.width ||
+      popoverMeasures.height !== nextState.popoverMeasures.height ||
+      childrenMeasures.width !== nextState.childrenMeasures.width ||
+      childrenMeasures.height !== nextState.childrenMeasures.height
     );
   }
 
@@ -100,6 +108,22 @@ class Popover extends Component {
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClickOutside);
   }
+
+  toggleVisibility = event => {
+    event.preventDefault();
+
+    this.setState(({ show }) => ({
+      show: !show,
+    }));
+  };
+
+  hide = () => {
+    this.setState({ show: false });
+  };
+
+  handleClickOutside = ({ target }) => {
+    if (!this.wrapperRef.contains(target)) this.hide();
+  };
 
   measure() {
     const {
@@ -122,22 +146,6 @@ class Popover extends Component {
       },
     });
   }
-
-  toggleVisibility = event => {
-    event.preventDefault();
-
-    this.setState(({ show }) => ({
-      show: !show,
-    }));
-  };
-
-  hide = () => {
-    this.setState({ show: false });
-  };
-
-  handleClickOutside = ({ target }) => {
-    if (!this.wrapperRef.contains(target)) this.hide();
-  };
 
   render() {
     const {

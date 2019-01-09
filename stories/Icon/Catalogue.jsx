@@ -3,19 +3,20 @@ import { Container, Row, Col } from '../../components/Grid';
 import Colors from '../../components/Colors';
 import Input from '../../components/Input';
 import IconToClipboard from './IconToClipboard';
-import icons from '../../components/shared/icons';
+import Icons from '../../components/shared/icons';
 
 class Catalogue extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { icons, filtered: icons };
+    this.state = { icons: Icons, filtered: Icons };
   }
 
   filterIcons = (e, { value }) => {
+    const { icons } = this.state;
     const filtered = value
-      ? this.state.icons.filter(name => name.indexOf(value) >= 0)
-      : this.state.icons;
+      ? icons.filter(name => name.indexOf(value) >= 0)
+      : icons;
 
     this.setState({ filtered });
   };

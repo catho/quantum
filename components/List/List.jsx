@@ -47,7 +47,9 @@ const Unordered = styled.ul`
   list-style: none;
   margin: 0;
 
-  ${inlineList} ${bullets} ${dividedList}
+  ${inlineList}
+  ${bullets}
+  ${dividedList}
 `;
 
 Unordered.displayName = 'UnorderedList';
@@ -82,8 +84,11 @@ Ordered.displayName = 'OrderedList';
 
 class List extends React.Component {
   static Item = Item;
+
   static Content = Content;
+
   static Header = Header;
+
   static SubHeader = SubHeader;
 
   constructor(props) {

@@ -26,13 +26,13 @@ class ComponentPanel extends React.Component {
   };
 
   render() {
-    const { component: Component } = this.props;
+    const { component: Component, importModules } = this.props;
 
     return (
       <React.Fragment>
         <Row>
           <Col desktop={12} tablet={12}>
-            <HowToImport importModules={this.props.importModules} />
+            <HowToImport importModules={importModules} />
           </Col>
 
           <Col desktop={6} tablet={6}>

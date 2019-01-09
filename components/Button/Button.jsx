@@ -106,6 +106,7 @@ const StyledButton = styled.button`
 
 class Button extends React.Component {
   static Facebook = SocialButtons.Facebook;
+
   static Google = SocialButtons.Google;
 
   render() {

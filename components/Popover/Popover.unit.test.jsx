@@ -1,8 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Popover from './Popover';
-import Button from './../Button';
-import Icon from './../Icon';
+import Button from '../Button';
+import Icon from '../Icon';
 
 describe('Popover', () => {
   it('should match the snapshot', () => {

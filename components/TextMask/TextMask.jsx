@@ -5,9 +5,13 @@ import TextMaskTypes from './TextMaskTypes';
 
 class TextMask extends React.Component {
   static CEP = TextMaskTypes.CEP;
+
   static CNPJ = TextMaskTypes.CNPJ;
+
   static CPF = TextMaskTypes.CPF;
+
   static Date = TextMaskTypes.Date;
+
   static Phone = TextMaskTypes.Phone;
 
   render() {

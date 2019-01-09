@@ -87,6 +87,7 @@ class TabbedView extends React.Component {
 
   render() {
     const { children } = this.props;
+    const { activeTab } = this.state;
 
     return (
       <React.Fragment>
@@ -98,7 +99,7 @@ class TabbedView extends React.Component {
                 <NavItem
                   key={tab.props.title}
                   onClick={() => this.onTabClick(tab)}
-                  active={children.indexOf(tab) === this.state.activeTab}
+                  active={children.indexOf(tab) === activeTab}
                 >
                   {tab.props.title}
                 </NavItem>
@@ -107,10 +108,7 @@ class TabbedView extends React.Component {
         </Navbar>
 
         {React.Children.map(children, child =>
-          renderIf(
-            this.props.children.indexOf(child) === this.state.activeTab,
-            () => child,
-          ),
+          renderIf(children.indexOf(child) === activeTab, () => child),
         )}
       </React.Fragment>
     );

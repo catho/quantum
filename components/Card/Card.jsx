@@ -11,7 +11,7 @@ import {
   SupportText,
   Media,
   Divider,
-} from '../Card/sub-components/';
+} from './sub-components';
 
 const elevation = ({ elevation: level, hoverElevation: hoverLevel }) => {
   const elev = Number(level);
@@ -46,12 +46,19 @@ const CardWrapper = styled.article`
 
 class Card extends React.Component {
   static Button = Button;
+
   static Container = Container;
+
   static Thumbnail = Thumbnail;
+
   static HeaderText = HeaderText;
+
   static Title = Title;
+
   static SupportText = SupportText;
+
   static Media = Media;
+
   static Divider = Divider;
 
   render = () => <CardWrapper {...this.props} />;
