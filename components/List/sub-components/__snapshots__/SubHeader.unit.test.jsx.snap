@@ -2,7 +2,6 @@
 
 exports[`<SubHeader /> Should match the snapshot 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <List.SubHeader>
     SubHeader
@@ -11,37 +10,84 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": "SubHeader",
     },
     "ref": null,
     "rendered": "SubHeader",
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "SubHeader__Description-sc-1cbn297-0",
+        "isStatic": true,
+        "rules": Array [
+          "font-size:12px;",
+        ],
+      },
+      "displayName": "SubHeader",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "SubHeader__Description-sc-1cbn297-0",
+      "target": "span",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": "SubHeader",
       },
       "ref": null,
       "rendered": "SubHeader",
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "SubHeader__Description-sc-1cbn297-0",
+          "isStatic": true,
+          "rules": Array [
+            "font-size:12px;",
+          ],
+        },
+        "displayName": "SubHeader",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "SubHeader__Description-sc-1cbn297-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },

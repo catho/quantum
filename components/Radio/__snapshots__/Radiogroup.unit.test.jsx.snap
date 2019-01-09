@@ -2,7 +2,6 @@
 
 exports[`Radio Group component Should match the snapshot 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RadioGroup
     boxed={false}
@@ -29,13 +28,14 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <Radio
@@ -96,13 +96,38 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "RadioGroup__Group-ayrpi6-0",
+        "isStatic": false,
+        "rules": Array [
+          "position:relative;margin-bottom:",
+          "20px",
+          ";min-width:250px;width:100%;",
+          "display:flex;flex-direction:",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "RadioGroup__Group",
+      "foldedComponentIds": Array [
+        "FieldGroup-sc-1ksesv8-0",
+      ],
+      "render": [Function],
+      "styledComponentId": "RadioGroup__Group-ayrpi6-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <Radio
@@ -163,13 +188,48 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "RadioGroup__Group-ayrpi6-0",
+          "isStatic": false,
+          "rules": Array [
+            "position:relative;margin-bottom:",
+            "20px",
+            ";min-width:250px;width:100%;",
+            "display:flex;flex-direction:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "RadioGroup__Group",
+        "foldedComponentIds": Array [
+          "FieldGroup-sc-1ksesv8-0",
+        ],
+        "render": [Function],
+        "styledComponentId": "RadioGroup__Group-ayrpi6-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
@@ -178,7 +238,6 @@ ShallowWrapper {
 
 exports[`Radio Group component Should match the snapshot 2`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RadioGroup
     boxed={true}
@@ -205,13 +264,14 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <Radio
@@ -272,13 +332,38 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "RadioGroup__Group-ayrpi6-0",
+        "isStatic": false,
+        "rules": Array [
+          "position:relative;margin-bottom:",
+          "20px",
+          ";min-width:250px;width:100%;",
+          "display:flex;flex-direction:",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "RadioGroup__Group",
+      "foldedComponentIds": Array [
+        "FieldGroup-sc-1ksesv8-0",
+      ],
+      "render": [Function],
+      "styledComponentId": "RadioGroup__Group-ayrpi6-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <Radio
@@ -339,13 +424,48 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "RadioGroup__Group-ayrpi6-0",
+          "isStatic": false,
+          "rules": Array [
+            "position:relative;margin-bottom:",
+            "20px",
+            ";min-width:250px;width:100%;",
+            "display:flex;flex-direction:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "RadioGroup__Group",
+        "foldedComponentIds": Array [
+          "FieldGroup-sc-1ksesv8-0",
+        ],
+        "render": [Function],
+        "styledComponentId": "RadioGroup__Group-ayrpi6-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
@@ -354,7 +474,6 @@ ShallowWrapper {
 
 exports[`Radio Group component Should match the snapshot 3`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RadioGroup
     boxed={false}
@@ -381,13 +500,14 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <Radio
@@ -448,13 +568,38 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "RadioGroup__Group-ayrpi6-0",
+        "isStatic": false,
+        "rules": Array [
+          "position:relative;margin-bottom:",
+          "20px",
+          ";min-width:250px;width:100%;",
+          "display:flex;flex-direction:",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "RadioGroup__Group",
+      "foldedComponentIds": Array [
+        "FieldGroup-sc-1ksesv8-0",
+      ],
+      "render": [Function],
+      "styledComponentId": "RadioGroup__Group-ayrpi6-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <Radio
@@ -515,13 +660,48 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "RadioGroup__Group-ayrpi6-0",
+          "isStatic": false,
+          "rules": Array [
+            "position:relative;margin-bottom:",
+            "20px",
+            ";min-width:250px;width:100%;",
+            "display:flex;flex-direction:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "RadioGroup__Group",
+        "foldedComponentIds": Array [
+          "FieldGroup-sc-1ksesv8-0",
+        ],
+        "render": [Function],
+        "styledComponentId": "RadioGroup__Group-ayrpi6-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },

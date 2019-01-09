@@ -172,7 +172,7 @@ class Popover extends Component {
 
     return (
       <Wrapper
-        innerRef={ref => {
+        ref={ref => {
           this.wrapperRef = ref;
         }}
       >
@@ -180,7 +180,7 @@ class Popover extends Component {
           {...rest}
           {...measures}
           show={show}
-          innerRef={ref => {
+          ref={ref => {
             this.popoverRef = ref;
           }}
         >
@@ -196,7 +196,7 @@ class Popover extends Component {
 
         <ChildrenContainer
           onClick={this.toggleVisibility}
-          innerRef={ref => {
+          ref={ref => {
             this.childrenRef = ref;
           }}
         >

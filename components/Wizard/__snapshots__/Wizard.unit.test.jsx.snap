@@ -2,22 +2,22 @@
 
 exports[`Wizard Component Should match the snapshot 1`] = `
 <div
-  className="Wizard__Wrapper-iXZlmz cuZZkA"
+  className="Wizard__Wrapper-sc-1adrzh3-0 gJMlOC"
 >
   <ul
-    className="Wizard__ProgressBar-bZMfKu jvTztC"
+    className="Wizard__ProgressBar-sc-1adrzh3-1 dusBCA"
   >
     <li
-      className="Step__ProgressStep-jVQefS hupESk"
+      className="Step__ProgressStep-sc-2fi2qc-1 iITDkp"
     >
       <p
-        className="Step__Title-kjpidS khCQIZ"
+        className="Step__Title-sc-2fi2qc-2 eoZsRv"
       >
         Criação de conta
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE jkXcmV"
+        className="material-icons MuiIcon-root-1 Step__StepIcon-sc-2fi2qc-0 crAJTW"
         status="done"
         style={
           Object {
@@ -29,16 +29,16 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="Step__ProgressStep-jVQefS hdqgYm"
+      className="Step__ProgressStep-sc-2fi2qc-1 hcPuAb"
     >
       <p
-        className="Step__Title-kjpidS khCQIZ"
+        className="Step__Title-sc-2fi2qc-2 eoZsRv"
       >
         Plano Forma de pagamento
       </p>
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Step__StepIcon-iGDfaE jyVmuJ"
+        className="material-icons MuiIcon-root-1 Step__StepIcon-sc-2fi2qc-0 dhKkAo"
         status="active"
         style={
           Object {

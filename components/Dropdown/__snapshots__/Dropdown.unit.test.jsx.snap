@@ -2,27 +2,33 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
 >
   
-  <div>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
     <button
-      aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
+      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
+      onKeyUp={[Function]}
       role="button"
       type="button"
     >
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
         style={
           Object {
             "color": "#93a3ad",
@@ -39,34 +45,40 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
 >
   <label
-    className="Label-bxMjsr iZhmvb"
+    className="Label-inke2y-0 gpnWva"
     htmlFor="dropdown"
   >
      
     Text label
      
   </label>
-  <div>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
     <button
-      aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
+      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
+      onKeyUp={[Function]}
       role="button"
       type="button"
     >
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
         style={
           Object {
             "color": "#93a3ad",
@@ -83,27 +95,33 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
 >
   
-  <div>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
     <button
-      aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
+      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
+      onKeyUp={[Function]}
       role="button"
       type="button"
     >
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
         style={
           Object {
             "color": "#93a3ad",
@@ -115,7 +133,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     </button>
   </div>
   <div
-    className="ErrorMessage-eJhZpN jUpnFq"
+    className="ErrorMessage-o8xm0w-0 cMosjL"
   >
     Error message
   </div>
@@ -124,27 +142,33 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 
 exports[`Input component  with items should match the snapshot 1`] = `
 <div
-  className="FieldGroup-iFQzIc dToppz"
+  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
 >
   
-  <div>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
     <button
-      aria-expanded={false}
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-dIZGdw iYuKfz"
+      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
+      onKeyUp={[Function]}
       role="button"
       type="button"
     >
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-laZZPE lijqbI"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
         style={
           Object {
             "color": "#93a3ad",

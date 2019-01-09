@@ -127,7 +127,7 @@ class Form extends React.Component {
     event.preventDefault();
 
     const { onSubmit, onValidSubmit, children } = this.props;
-    const { errors, values, valid } = this.state;
+    const { errors, values } = this.state;
 
     this._validateError(children);
 
@@ -137,14 +137,14 @@ class Form extends React.Component {
       const { valid: updatedValid } = this.state;
       onSubmit({ valid: updatedValid });
 
-      if (valid) onValidSubmit(values);
+      if (isValid) onValidSubmit(values);
     });
   };
 
   render() {
     // Removing invalid form props, to avoid warnings
     const _props = { ...this.props };
-    const { children } = this.props;
+    const { children } = _props;
     delete _props.onValidSubmit;
 
     return (

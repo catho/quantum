@@ -2,13 +2,14 @@
 
 exports[`AutoComplete component  should match the snapshot 1`] = `
 <div
-  className="AutoComplete__Wrapper-TpPgp bKfnlE"
+  className="AutoComplete__Wrapper-sc-1hvlboc-1 duCmTo"
 >
   <div
-    className="Input__InputFieldGroup-bdQEwu kZedPI FieldGroup-iFQzIc dToppz"
+    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
   >
     <input
-      className="Input__InputTag-INLdc eQvqsJ"
+      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      defaultValue="test"
       id=""
       list="_datalist"
       maxLength=""
@@ -16,13 +17,12 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       type="text"
-      value="test"
     />
     
     
   </div>
   <datalist
-    className="AutoComplete__Datalist-fNXhCf dLBRGh"
+    className="AutoComplete__Datalist-sc-1hvlboc-0 iKIUyQ"
     id="_datalist"
   >
     <option

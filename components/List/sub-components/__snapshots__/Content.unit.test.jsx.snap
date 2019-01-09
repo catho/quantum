@@ -2,7 +2,6 @@
 
 exports[`<Content /> Should match the snapshot 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <List.Content
     content={Object {}}
@@ -13,20 +12,21 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
-      "children": <UNDEFINED>
+      "children": <React.Fragment>
         <List.Header>
           
         </List.Header>
         
-      </UNDEFINED>,
+      </React.Fragment>,
     },
     "ref": null,
     "rendered": Object {
@@ -58,20 +58,38 @@ ShallowWrapper {
       ],
       "type": Symbol(react.fragment),
     },
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Content__ContentBox-sc-1b55rus-0",
+        "isStatic": true,
+        "rules": Array [
+          "display:flex;flex-direction:column;",
+        ],
+      },
+      "displayName": "Content",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "Content__ContentBox-sc-1b55rus-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
-        "children": <UNDEFINED>
+        "children": <React.Fragment>
           <List.Header>
             
           </List.Header>
           
-        </UNDEFINED>,
+        </React.Fragment>,
       },
       "ref": null,
       "rendered": Object {
@@ -103,13 +121,41 @@ ShallowWrapper {
         ],
         "type": Symbol(react.fragment),
       },
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Content__ContentBox-sc-1b55rus-0",
+          "isStatic": true,
+          "rules": Array [
+            "display:flex;flex-direction:column;",
+          ],
+        },
+        "displayName": "Content",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Content__ContentBox-sc-1b55rus-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
