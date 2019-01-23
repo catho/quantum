@@ -2,9 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
 import styled from 'styled-components';
-import Icon from '../../components/Icon';
-import Colors from '../../components/Colors';
-
 import {
   Heading,
   HowToImport,
@@ -13,6 +10,9 @@ import {
   CodeExample,
   Title,
 } from '@catho/quantum-storybook-ui';
+
+import Icon from '../../components/Icon';
+import Colors from '../../components/Colors';
 import Catalogue from './Catalogue';
 
 const IconWrapper = styled.div`

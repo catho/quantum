@@ -1,8 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import TextMask from '../../components/TextMask';
-import TextMaskTypes from '../../components/TextMask/TextMaskTypes';
-
 import {
   Heading,
   TabbedView,
@@ -12,6 +9,9 @@ import {
   Example,
   CodeExample,
 } from '@catho/quantum-storybook-ui';
+
+import TextMask from '../../components/TextMask';
+import TextMaskTypes from '../../components/TextMask/TextMaskTypes';
 
 const examples = {
   CEP: {
