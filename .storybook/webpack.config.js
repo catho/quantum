@@ -1,8 +1,12 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   plugins: [
-    // your custom plugins
+    new webpack.ContextReplacementPlugin(
+      /highlight.js\/lib\/languages$/,
+      new RegExp(`^./(javascript)$`),
+    ),
   ],
   module: {
     rules: [

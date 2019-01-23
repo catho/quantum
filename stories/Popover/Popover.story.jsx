@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { Tab, Example, AutoExample } from '../../.storybook/components';
+import { Tab, Example, AutoExample } from '@catho/quantum-storybook-ui';
+
 import { Container, Row, Col } from '../../components/Grid';
 import Button from '../../components/Button';
 import Popover from '../../components/Popover';

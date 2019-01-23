@@ -12,7 +12,7 @@ import {
   Tab,
   CodeExample,
   Title,
-} from '../../.storybook/components';
+} from '@catho/quantum-storybook-ui';
 import Catalogue from './Catalogue';
 
 const IconWrapper = styled.div`

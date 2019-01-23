@@ -1,13 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Heading from '../../.storybook/components/Heading';
-import CodeExample from '../../.storybook/components/CodeExample';
-import Table from '../../.storybook/components/Table';
+import {
+  Heading,
+  CodeExample,
+  Table,
+  TabbedView,
+  Tab,
+  Title,
+} from '@catho/quantum-storybook-ui';
+
 import { Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
 import Image from '../../components/Image';
-import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import Title from '../../.storybook/components/Title';
 
 const cardSample = (
   <Card elevation={1} hoverElevation={5}>

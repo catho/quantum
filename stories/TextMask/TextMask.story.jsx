@@ -11,7 +11,7 @@ import {
   HowToImport,
   Example,
   CodeExample,
-} from '../../.storybook/components';
+} from '@catho/quantum-storybook-ui';
 
 const examples = {
   CEP: {

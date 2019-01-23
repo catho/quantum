@@ -1,8 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import AutoExample from '../../.storybook/components/AutoExample';
-import Example from '../../.storybook/components/Example';
-import { Tab } from '../../.storybook/components/TabbedView';
+import { AutoExample, Example, Tab } from '@catho/quantum-storybook-ui';
+
 import Input from '../../components/Input';
 
 const tabExample = (

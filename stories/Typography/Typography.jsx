@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import LinkTo from '@storybook/addon-links/react';
-import Title from '../../.storybook/components/Title';
-import HowToImport from '../../.storybook/components/HowToImport';
+import { HowToImport, Title } from '@catho/quantum-storybook-ui';
+
 import Colors from '../../components/Colors';
 
 const Font = styled.div`

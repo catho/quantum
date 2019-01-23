@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Highlight from 'react-highlight';
-import CodeToClipboard from '../../.storybook/components/CodeToClipboard';
+import {
+  CodeToClipboard,
+  Title,
+  HowToImport,
+} from '@catho/quantum-storybook-ui';
+
 import Colors from '../../components/Colors';
-import Title from '../../.storybook/components/Title';
-import HowToImport from '../../.storybook/components/HowToImport';
 
 const ColorPallete = styled.div`
   display: grid;
