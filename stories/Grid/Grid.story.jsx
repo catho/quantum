@@ -1,11 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Heading from '../../.storybook/components/Heading';
+import { Heading } from '@catho/quantum-storybook-ui';
 import Grid from './Grid';
-import Formula from '../../.storybook/static/formula.svg';
 
 storiesOf('1. Foundation', module).add('Grid System', () => (
-  <Heading name="Grid" image={Formula} title="Grid">
+  <Heading name="Grid" title="Grid">
     <Grid />
   </Heading>
 ));

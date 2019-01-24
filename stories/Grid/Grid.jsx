@@ -1,11 +1,14 @@
 import React from 'react';
 import Highlight from 'react-highlight';
 import styled from 'styled-components';
+import {
+  HowToImport,
+  Title,
+  Subtitle,
+  Table,
+} from '@catho/quantum-storybook-ui';
+
 import Colors from '../../components/Colors';
-import HowToImport from '../../.storybook/components/HowToImport';
-import Title from '../../.storybook/components/Title';
-import Subtitle from '../../.storybook/components/Subtitle';
-import Table from '../../.storybook/components/Table';
 import { Container, Row, Col, Hide } from '../../components/Grid';
 
 const StyledRow = styled(Row)`

@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Heading } from '@catho/quantum-storybook-ui';
+
 import Typography from './Typography';
-import Heading from '../../.storybook/components/Heading';
-import Formula from '../../.storybook/static/formula.svg';
 
 storiesOf('1. Foundation', module).add('Typography', () => (
-  <Heading image={Formula} title="Typography">
+  <Heading title="Typography">
     <Typography />
   </Heading>
 ));

@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import {
+  Heading,
+  TabbedView,
+  Tab,
+  HowToImport,
+  CodeExample,
+  AutoPropsApi,
+} from '@catho/quantum-storybook-ui';
 import Loader from '../../components/Loader';
 import LoaderTypes from '../../components/Loader/LoaderTypes';
-import Heading from '../../.storybook/components/Heading';
-import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
-import HowToImport from '../../.storybook/components/HowToImport';
-import CodeExample from '../../.storybook/components/CodeExample';
-import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
+
 import { Col, Row } from '../../components/Grid';
 
 const LoaderExample = ({ name }) => {

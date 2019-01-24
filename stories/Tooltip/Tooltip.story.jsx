@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import AutoExample from '../../.storybook/components/AutoExample';
-import { Tab } from '../../.storybook/components/TabbedView';
+import { AutoExample, Tab } from '@catho/quantum-storybook-ui';
+
 import Tooltip from '../../components/Tooltip';
 import Logo from '../../components/Logo';
 

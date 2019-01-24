@@ -1,8 +1,12 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   plugins: [
-    // your custom plugins
+    new webpack.ContextReplacementPlugin(
+      /highlight.js\/lib\/languages$/,
+      new RegExp(`^./(javascript)$`),
+    ),
   ],
   module: {
     rules: [
@@ -35,5 +39,13 @@ module.exports = {
         include: path.resolve(__dirname, '../'),
       },
     ],
+  },
+  resolve: {
+    alias: {
+      'styled-components': path.resolve(
+        __dirname,
+        '../node_modules/styled-components',
+      ),
+    },
   },
 };

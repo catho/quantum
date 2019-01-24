@@ -1,12 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Heading from '../../.storybook/components/Heading';
-import CodeExample from '../../.storybook/components/CodeExample';
-import Example from '../../.storybook/components/Example';
-import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
+import {
+  Heading,
+  CodeExample,
+  Example,
+  TabbedView,
+  Tab,
+} from '@catho/quantum-storybook-ui';
+
 import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
-
 import { Form, Validations } from '../../components/Form';
 import Input from '../../components/Input';
 

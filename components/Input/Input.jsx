@@ -22,8 +22,8 @@ const InputLabel = styled(Label)`
   top: 6px;
   ${theme.mixins.transition()};
 
-  ${props => props.withValue && `${sharedStyle}`}
-  ${props => props.error && `color: ${Colors.DANGER['500']};`}
+  ${props => props.withValue && `${sharedStyle}`} ${props =>
+    props.error && `color: ${Colors.DANGER['500']};`};
 `;
 
 const InputTag = styled.input`

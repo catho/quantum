@@ -1,13 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
-import Heading from '../../.storybook/components/Heading';
-import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
-import HowToImport from '../../.storybook/components/HowToImport';
-import Example from '../../.storybook/components/Example';
-import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
+import {
+  Heading,
+  AutoPropsApi,
+  CodeExample,
+  HowToImport,
+  Example,
+  TabbedView,
+  Tab,
+} from '@catho/quantum-storybook-ui';
+
 import { Col, Row } from '../../components/Grid';
-import CodeExample from '../../.storybook/components/CodeExample';
 import { Wizard, Step } from '../../components/Wizard';
 
 const StepExample = (

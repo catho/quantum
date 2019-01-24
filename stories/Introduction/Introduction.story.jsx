@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Heading } from '@catho/quantum-storybook-ui';
+
 import Introduction from './Introduction';
-import Heading from '../../.storybook/components/Heading';
-import Logo from '../../.storybook/static/logo.svg';
 
 storiesOf('Introduction', module).add('Getting started', () => (
-  <Heading image={Logo} title="Quantum">
+  <Heading title="Quantum">
     <Introduction />
   </Heading>
 ));

@@ -1,13 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import Heading from '../../.storybook/components/Heading';
-import AutoPropsApi from '../../.storybook/components/AutoPropsApi';
-import HowToImport from '../../.storybook/components/HowToImport';
+import {
+  Heading,
+  AutoPropsApi,
+  HowToImport,
+  CodeExample,
+  TabbedView,
+  Tab,
+} from '@catho/quantum-storybook-ui';
+
 import { Radio, RadioGroup } from '../../components/Radio';
-import { TabbedView, Tab } from '../../.storybook/components/TabbedView';
 import { Col, Row } from '../../components/Grid';
-import CodeExample from '../../.storybook/components/CodeExample';
 
 const RadioGroupWrapper = styled.div`
   padding: 15px;
