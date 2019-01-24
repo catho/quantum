@@ -23,7 +23,6 @@ import { Wizard, Step } from './components/Wizard';
 import Popover from './components/Popover';
 import Badge from './components/Badge';
 
-// test
 export {
   BREAKPOINTS,
   Button,
