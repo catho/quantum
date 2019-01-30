@@ -27,7 +27,7 @@ ShallowWrapper {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Header__Title-i809p-0",
+        "componentId": "Header__Title-e8ruju-0",
         "isStatic": true,
         "rules": Array [
           "margin-top:4px;margin-bottom:4px;",
@@ -36,7 +36,7 @@ ShallowWrapper {
       "displayName": "Header",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "Header__Title-i809p-0",
+      "styledComponentId": "Header__Title-e8ruju-0",
       "target": "span",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -57,7 +57,7 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Header__Title-i809p-0",
+          "componentId": "Header__Title-e8ruju-0",
           "isStatic": true,
           "rules": Array [
             "margin-top:4px;margin-bottom:4px;",
@@ -66,7 +66,7 @@ ShallowWrapper {
         "displayName": "Header",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Header__Title-i809p-0",
+        "styledComponentId": "Header__Title-e8ruju-0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],

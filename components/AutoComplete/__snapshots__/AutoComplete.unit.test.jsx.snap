@@ -2,13 +2,13 @@
 
 exports[`AutoComplete component  should match the snapshot 1`] = `
 <div
-  className="AutoComplete__Wrapper-sc-1hvlboc-1 duCmTo"
+  className="AutoComplete__Wrapper-sc-1vy8gb0-1 fiwLLF"
 >
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue="test"
       id=""
       list="_datalist"
@@ -22,7 +22,7 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
     
   </div>
   <datalist
-    className="AutoComplete__Datalist-sc-1hvlboc-0 iKIUyQ"
+    className="AutoComplete__Datalist-sc-1vy8gb0-0 fJbUIm"
     id="_datalist"
   >
     <option

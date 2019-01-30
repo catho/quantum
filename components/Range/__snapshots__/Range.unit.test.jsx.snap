@@ -2,7 +2,7 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   
   <input
@@ -21,10 +21,10 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   <label
-    className="Label-inke2y-0 gpnWva"
+    className="Label-sc-1ny5bqy-0 bvIVUH"
     htmlFor="range-with-label"
   >
      
@@ -47,7 +47,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   
   <input
@@ -61,7 +61,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     value={0}
   />
   <div
-    className="ErrorMessage-o8xm0w-0 cMosjL"
+    className="ErrorMessage-sc-19jcdrm-0 iRUhLB"
   >
     Error message
   </div>
