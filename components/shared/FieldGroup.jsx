@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../../theme';
+import theme from '../shared/theme';
 
 export default styled.div`
   position: relative;

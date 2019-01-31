@@ -1,10 +1,10 @@
 import React from 'react';
 import Logo from './Logo';
-import LogoCandidate from '../../static/logoB2c.svg';
-import LogoBusiness from '../../static/logoB2b.svg';
-import LogoEducation from '../../static/logoEducacao.svg';
-import LogoGoogle from '../../static/logoGoogle.svg';
-import LogoFacebook from '../../static/logoFacebook.svg';
+import LogoCandidate from '../shared/static/logoB2c.svg';
+import LogoBusiness from '../shared/static/logoB2b.svg';
+import LogoEducation from '../shared/static/logoEducacao.svg';
+import LogoGoogle from '../shared/static/logoGoogle.svg';
+import LogoFacebook from '../shared/static/logoFacebook.svg';
 
 const LogoTypes = {
   Business: props => (

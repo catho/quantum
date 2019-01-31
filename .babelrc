@@ -6,9 +6,10 @@
     "babel-plugin-styled-components"
   ],
   "env": {
-    "storybook": {
-      "plugins": [
-        "react-docgen"
+    "production": {
+      "ignore": [
+        "./components/**/*.test.jsx",
+        "./components/**/*/__snapshots__"
       ]
     }
   }

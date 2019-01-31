@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
-import theme from '../../theme';
+import theme from '../shared/theme';
 
 const Checkbox = styled.input`
   display: none;

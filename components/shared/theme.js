@@ -1,4 +1,4 @@
-import Colors from './components/Colors';
+import Colors from '../Colors';
 
 export default {
   font: {

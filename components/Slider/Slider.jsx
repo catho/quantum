@@ -5,7 +5,7 @@ import SliderComponent from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Colors from '../Colors';
 import Tooltip from '../Tooltip';
-import theme from '../../theme';
+import theme from '../shared/theme';
 
 const StyledSlider = styled(SliderComponent)`
   &.rc-slider {

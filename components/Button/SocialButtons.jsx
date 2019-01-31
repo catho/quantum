@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../Colors';
-import googleLogo from '../../static/googleSocialLogo.svg';
-import facebookLogo from '../../static/facebookSocialLogo.svg';
+import googleLogo from '../shared/static/googleSocialLogo.svg';
+import facebookLogo from '../shared/static/facebookSocialLogo.svg';
 
 const sharedStyles = `
   border: none;

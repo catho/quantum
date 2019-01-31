@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Image from '../Image';
-import LogoCandidate from '../../static/logoB2c.svg';
+import LogoCandidate from '../shared/static/logoB2c.svg';
 import LogoTypes from './LogoTypes';
 
 class Logo extends Component {

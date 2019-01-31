@@ -34,7 +34,7 @@ const createPackageJson = () => {
 };
 
 const run = () => {
-  ['CHANGELOG.md', 'README.md', 'theme.js'].map(copyFile);
+  ['CHANGELOG.md', 'README.md'].map(copyFile);
   createPackageJson();
 };
 

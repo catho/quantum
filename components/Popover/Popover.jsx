@@ -5,7 +5,7 @@ import Icon from '../Icon';
 import Ribbon from '../Ribbon';
 import mixins from './mixins';
 import Colors from '../Colors';
-import theme from '../../theme';
+import theme from '../shared/theme';
 
 const PADDING = '18px 24px';
 
