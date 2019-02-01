@@ -2,10 +2,10 @@
 
 exports[`Step Component Should match the snapshot 1`] = `
 <li
-  className="Step__ProgressStep-sc-2fi2qc-1 cnITNu"
+  className="Step__ProgressStep-sc-1lfyhjt-1 jmEKUd"
 >
   <p
-    className="Step__Title-sc-2fi2qc-2 eoZsRv"
+    className="Step__Title-sc-1lfyhjt-2 gGGPGK"
   >
     Step 1
   </p>
@@ -15,16 +15,16 @@ exports[`Step Component Should match the snapshot 1`] = `
 
 exports[`Step Component Should match the snapshot with icon 1`] = `
 <li
-  className="Step__ProgressStep-sc-2fi2qc-1 cnITNu"
+  className="Step__ProgressStep-sc-1lfyhjt-1 jmEKUd"
 >
   <p
-    className="Step__Title-sc-2fi2qc-2 eoZsRv"
+    className="Step__Title-sc-1lfyhjt-2 gGGPGK"
   >
     Step 1
   </p>
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Step__StepIcon-sc-2fi2qc-0 dkraaq"
+    className="material-icons MuiIcon-root-1 Step__StepIcon-sc-1lfyhjt-0 jLqfgI"
     status=""
     style={
       Object {
@@ -39,10 +39,10 @@ exports[`Step Component Should match the snapshot with icon 1`] = `
 
 exports[`Step Component Should match the snapshot with status active 1`] = `
 <li
-  className="Step__ProgressStep-sc-2fi2qc-1 hcPuAb"
+  className="Step__ProgressStep-sc-1lfyhjt-1 ORSnQ"
 >
   <p
-    className="Step__Title-sc-2fi2qc-2 eoZsRv"
+    className="Step__Title-sc-1lfyhjt-2 gGGPGK"
   >
     Step 1
   </p>
@@ -52,10 +52,10 @@ exports[`Step Component Should match the snapshot with status active 1`] = `
 
 exports[`Step Component Should match the snapshot with status done 1`] = `
 <li
-  className="Step__ProgressStep-sc-2fi2qc-1 iITDkp"
+  className="Step__ProgressStep-sc-1lfyhjt-1 hXhBoE"
 >
   <p
-    className="Step__Title-sc-2fi2qc-2 eoZsRv"
+    className="Step__Title-sc-1lfyhjt-2 gGGPGK"
   >
     Step 1
   </p>

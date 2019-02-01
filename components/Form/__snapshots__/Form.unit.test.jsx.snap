@@ -6,10 +6,10 @@ exports[`Form component  should match the snapshot 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue=""
       id=""
       maxLength=""
@@ -20,7 +20,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 fEodVC"
+      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
       htmlFor=""
     >
       required
@@ -28,10 +28,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue=""
       id=""
       maxLength=""
@@ -42,7 +42,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 fEodVC"
+      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
       htmlFor=""
     >
       CPF
@@ -50,10 +50,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue=""
       id=""
       maxLength=""
@@ -64,7 +64,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 fEodVC"
+      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
       htmlFor=""
     >
       CEP
@@ -72,10 +72,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue=""
       id=""
       maxLength=""
@@ -86,7 +86,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 fEodVC"
+      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
       htmlFor=""
     >
       Birthday
@@ -94,10 +94,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue=""
       id=""
       maxLength=""
@@ -108,7 +108,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 fEodVC"
+      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
       htmlFor=""
     >
       E-mail
@@ -116,10 +116,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue=""
       id=""
       maxLength=""
@@ -131,7 +131,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 fEodVC"
+      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
       htmlFor=""
     >
       Address
@@ -139,10 +139,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
   >
     <input
-      className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+      className="Input__InputTag-sc-16zet9e-1 inKlOh"
       defaultValue=""
       id=""
       maxLength="3"
@@ -153,7 +153,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 fEodVC"
+      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
       htmlFor=""
     >
       Country
@@ -161,7 +161,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="Button__StyledButton-raryz3-1 kcQqfI"
+    className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
     disabled={false}
     onClick={[Function]}
     size="normal"

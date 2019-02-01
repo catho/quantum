@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-import { Frame } from '@catho/quantum-storybook-ui';
+import { Frame } from '@catho-private/quantum-storybook-ui';
 import stories from './stories';
 
 addDecorator(

@@ -2,11 +2,11 @@
 
 exports[`Radio component Should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   
   <textarea
-    className="Textarea__Textfield-sc-19iy8fu-0 jEpFzt"
+    className="Textarea__Textfield-jsoe8i-0 cKZWpX"
     id=""
     maxLength={300}
     name=""
@@ -17,11 +17,11 @@ exports[`Radio component Should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="Textarea__Infos-sc-19iy8fu-1 gOksil"
+    className="Textarea__Infos-jsoe8i-1 iTTTOR"
   >
     
     <span
-      className="Textarea__Countdown-sc-19iy8fu-2 eILLae"
+      className="Textarea__Countdown-jsoe8i-2 eqyMRU"
     >
       300
     </span>
@@ -31,10 +31,10 @@ exports[`Radio component Should match the snapshot 1`] = `
 
 exports[`Radio component with a label should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   <label
-    className="Label-inke2y-0 gpnWva"
+    className="Label-sc-1ny5bqy-0 bvIVUH"
     htmlFor="textarea"
   >
      
@@ -42,7 +42,7 @@ exports[`Radio component with a label should match the snapshot 1`] = `
      
   </label>
   <textarea
-    className="Textarea__Textfield-sc-19iy8fu-0 jEpFzt"
+    className="Textarea__Textfield-jsoe8i-0 cKZWpX"
     id="textarea"
     maxLength={300}
     name=""
@@ -53,11 +53,11 @@ exports[`Radio component with a label should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="Textarea__Infos-sc-19iy8fu-1 gOksil"
+    className="Textarea__Infos-jsoe8i-1 iTTTOR"
   >
     
     <span
-      className="Textarea__Countdown-sc-19iy8fu-2 eILLae"
+      className="Textarea__Countdown-jsoe8i-2 eqyMRU"
     >
       300
     </span>
@@ -67,11 +67,11 @@ exports[`Radio component with a label should match the snapshot 1`] = `
 
 exports[`Radio component with an error message should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   
   <textarea
-    className="Textarea__Textfield-sc-19iy8fu-0 kNTgXG"
+    className="Textarea__Textfield-jsoe8i-0 buSVtw"
     id=""
     maxLength={300}
     name=""
@@ -82,15 +82,15 @@ exports[`Radio component with an error message should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="Textarea__Infos-sc-19iy8fu-1 gOksil"
+    className="Textarea__Infos-jsoe8i-1 iTTTOR"
   >
     <div
-      className="ErrorMessage-o8xm0w-0 cMosjL"
+      className="ErrorMessage-sc-19jcdrm-0 iRUhLB"
     >
       Error message
     </div>
     <span
-      className="Textarea__Countdown-sc-19iy8fu-2 eILLae"
+      className="Textarea__Countdown-jsoe8i-2 eqyMRU"
     >
       300
     </span>

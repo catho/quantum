@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import theme from '../../theme';
+import theme from '../shared/theme';
 import Colors from '../Colors';
 
 const sizeStr = ({ size }) => `${size}px`;

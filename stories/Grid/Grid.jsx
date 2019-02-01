@@ -6,7 +6,7 @@ import {
   Title,
   Subtitle,
   Table,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import Colors from '../../components/Colors';
 import { Container, Row, Col, Hide } from '../../components/Grid';

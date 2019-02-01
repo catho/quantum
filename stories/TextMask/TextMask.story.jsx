@@ -8,7 +8,7 @@ import {
   HowToImport,
   Example,
   CodeExample,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import TextMask from '../../components/TextMask';
 import TextMaskTypes from '../../components/TextMask/TextMaskTypes';

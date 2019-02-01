@@ -5,7 +5,7 @@ import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import List from '../List/List';
 import Colors from '../Colors';
-import theme from '../../theme';
+import theme from '../shared/theme';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
 const DropdownButton = styled.button`

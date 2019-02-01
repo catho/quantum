@@ -56,6 +56,7 @@ ShallowWrapper {
   </Modal>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -239,7 +240,7 @@ ShallowWrapper {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Header-sc-1fgygl7-0",
+                  "componentId": "Header-sc-13ddtbk-0",
                   "isStatic": true,
                   "rules": Array [
                     "border-bottom:2px solid ",
@@ -250,7 +251,7 @@ ShallowWrapper {
                 "displayName": "Modal.Header",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Header-sc-1fgygl7-0",
+                "styledComponentId": "Header-sc-13ddtbk-0",
                 "target": "h2",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -270,7 +271,7 @@ ShallowWrapper {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Content-g4e9ct-0",
+                  "componentId": "Content-sc-9f5o6t-0",
                   "isStatic": true,
                   "rules": Array [
                     "font-size:14px;padding:18px 24px;",
@@ -279,7 +280,7 @@ ShallowWrapper {
                 "displayName": "Modal.Content",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Content-g4e9ct-0",
+                "styledComponentId": "Content-sc-9f5o6t-0",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -363,7 +364,7 @@ ShallowWrapper {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Footer-sc-2irees-0",
+                  "componentId": "Footer-sc-8oh0mo-0",
                   "isStatic": false,
                   "rules": Array [
                     "background-color:#f4f4f4;border-top:2px solid ",
@@ -376,7 +377,7 @@ ShallowWrapper {
                 "displayName": "Modal.Footer",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Footer-sc-2irees-0",
+                "styledComponentId": "Footer-sc-8oh0mo-0",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -388,7 +389,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "Modal__Wrapper-pn37qy-1",
+              "componentId": "Modal__Wrapper-sc-300qpr-1",
               "isStatic": true,
               "rules": Array [
                 "background-color:",
@@ -407,7 +408,7 @@ ShallowWrapper {
             "displayName": "Modal__Wrapper",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "Modal__Wrapper-pn37qy-1",
+            "styledComponentId": "Modal__Wrapper-sc-300qpr-1",
             "target": "section",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -418,7 +419,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Modal__Overlay-pn37qy-0",
+            "componentId": "Modal__Overlay-sc-300qpr-0",
             "isStatic": true,
             "rules": Array [
               "align-items:center;background-color:",
@@ -429,7 +430,7 @@ ShallowWrapper {
           "displayName": "Overlay",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Modal__Overlay-pn37qy-0",
+          "styledComponentId": "Modal__Overlay-sc-300qpr-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -634,7 +635,7 @@ ShallowWrapper {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "Header-sc-1fgygl7-0",
+                    "componentId": "Header-sc-13ddtbk-0",
                     "isStatic": true,
                     "rules": Array [
                       "border-bottom:2px solid ",
@@ -645,7 +646,7 @@ ShallowWrapper {
                   "displayName": "Modal.Header",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "Header-sc-1fgygl7-0",
+                  "styledComponentId": "Header-sc-13ddtbk-0",
                   "target": "h2",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -665,7 +666,7 @@ ShallowWrapper {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "Content-g4e9ct-0",
+                    "componentId": "Content-sc-9f5o6t-0",
                     "isStatic": true,
                     "rules": Array [
                       "font-size:14px;padding:18px 24px;",
@@ -674,7 +675,7 @@ ShallowWrapper {
                   "displayName": "Modal.Content",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "Content-g4e9ct-0",
+                  "styledComponentId": "Content-sc-9f5o6t-0",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -758,7 +759,7 @@ ShallowWrapper {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "Footer-sc-2irees-0",
+                    "componentId": "Footer-sc-8oh0mo-0",
                     "isStatic": false,
                     "rules": Array [
                       "background-color:#f4f4f4;border-top:2px solid ",
@@ -771,7 +772,7 @@ ShallowWrapper {
                   "displayName": "Modal.Footer",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "Footer-sc-2irees-0",
+                  "styledComponentId": "Footer-sc-8oh0mo-0",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -783,7 +784,7 @@ ShallowWrapper {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "Modal__Wrapper-pn37qy-1",
+                "componentId": "Modal__Wrapper-sc-300qpr-1",
                 "isStatic": true,
                 "rules": Array [
                   "background-color:",
@@ -802,7 +803,7 @@ ShallowWrapper {
               "displayName": "Modal__Wrapper",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "Modal__Wrapper-pn37qy-1",
+              "styledComponentId": "Modal__Wrapper-sc-300qpr-1",
               "target": "section",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -813,7 +814,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "Modal__Overlay-pn37qy-0",
+              "componentId": "Modal__Overlay-sc-300qpr-0",
               "isStatic": true,
               "rules": Array [
                 "align-items:center;background-color:",
@@ -824,7 +825,7 @@ ShallowWrapper {
             "displayName": "Overlay",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "Modal__Overlay-pn37qy-0",
+            "styledComponentId": "Modal__Overlay-sc-300qpr-0",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -856,9 +857,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

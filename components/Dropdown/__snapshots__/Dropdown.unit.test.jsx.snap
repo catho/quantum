@@ -2,7 +2,7 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   
   <div
@@ -15,7 +15,7 @@ exports[`Input component  should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
+      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -28,7 +28,7 @@ exports[`Input component  should match the snapshot 1`] = `
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-xoew8d-1 hWbTds"
         style={
           Object {
             "color": "#93a3ad",
@@ -45,10 +45,10 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   <label
-    className="Label-inke2y-0 gpnWva"
+    className="Label-sc-1ny5bqy-0 bvIVUH"
     htmlFor="dropdown"
   >
      
@@ -65,7 +65,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
+      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -78,7 +78,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-xoew8d-1 hWbTds"
         style={
           Object {
             "color": "#93a3ad",
@@ -95,7 +95,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   
   <div
@@ -108,7 +108,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
+      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -121,7 +121,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-xoew8d-1 hWbTds"
         style={
           Object {
             "color": "#93a3ad",
@@ -133,7 +133,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     </button>
   </div>
   <div
-    className="ErrorMessage-o8xm0w-0 cMosjL"
+    className="ErrorMessage-sc-19jcdrm-0 iRUhLB"
   >
     Error message
   </div>
@@ -142,7 +142,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 
 exports[`Input component  with items should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 jFrSKp"
+  className="FieldGroup-sc-18uoi37-0 exZTLD"
 >
   
   <div
@@ -155,7 +155,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-sc-13n1lji-0 gJatwz"
+      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -168,7 +168,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
       Selecione
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-sc-13n1lji-1 jxCBkG"
+        className="material-icons MuiIcon-root-1 Dropdown__ArrowDown-xoew8d-1 hWbTds"
         style={
           Object {
             "color": "#93a3ad",

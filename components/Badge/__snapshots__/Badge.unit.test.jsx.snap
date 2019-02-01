@@ -2,7 +2,7 @@
 
 exports[`Badge component Should match snapshot with different skins 1`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 hJqOXp"
+  className="Badge__Wrapper-zpdrj8-0 dYSDEY"
 >
    
    Brand1 
@@ -12,7 +12,7 @@ exports[`Badge component Should match snapshot with different skins 1`] = `
 
 exports[`Badge component Should match snapshot with different skins 2`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 bhTlEX"
+  className="Badge__Wrapper-zpdrj8-0 hUchzv"
 >
    
    Brand2 
@@ -22,7 +22,7 @@ exports[`Badge component Should match snapshot with different skins 2`] = `
 
 exports[`Badge component Should match snapshot with different skins 3`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 hWuITi"
+  className="Badge__Wrapper-zpdrj8-0 eNzhds"
 >
    
    Primary 
@@ -32,7 +32,7 @@ exports[`Badge component Should match snapshot with different skins 3`] = `
 
 exports[`Badge component Should match snapshot with different skins 4`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 eodmzi"
+  className="Badge__Wrapper-zpdrj8-0 djuupM"
 >
    
    Secondary 
@@ -42,7 +42,7 @@ exports[`Badge component Should match snapshot with different skins 4`] = `
 
 exports[`Badge component Should match snapshot with different skins 5`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 fAYuzf"
+  className="Badge__Wrapper-zpdrj8-0 kREFCI"
 >
    
    Text 
@@ -52,7 +52,7 @@ exports[`Badge component Should match snapshot with different skins 5`] = `
 
 exports[`Badge component Should match snapshot with different skins 6`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 bUNrWI"
+  className="Badge__Wrapper-zpdrj8-0 ewhMuB"
 >
    
    Text 
@@ -62,7 +62,7 @@ exports[`Badge component Should match snapshot with different skins 6`] = `
 
 exports[`Badge component Should match snapshot with different skins 7`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 jtiMdQ"
+  className="Badge__Wrapper-zpdrj8-0 copVIb"
 >
    
    Text 
@@ -72,7 +72,7 @@ exports[`Badge component Should match snapshot with different skins 7`] = `
 
 exports[`Badge component Should match snapshot with different skins 8`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 jtlTmS"
+  className="Badge__Wrapper-zpdrj8-0 fRwJrq"
 >
    
    Text 
@@ -82,7 +82,7 @@ exports[`Badge component Should match snapshot with different skins 8`] = `
 
 exports[`Badge component Should match snapshot with different skins 9`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 cQpuvR"
+  className="Badge__Wrapper-zpdrj8-0 dIsHnq"
 >
    
    Text 
@@ -92,7 +92,7 @@ exports[`Badge component Should match snapshot with different skins 9`] = `
 
 exports[`Badge component Should match snapshot with different text props 1`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 hWuITi"
+  className="Badge__Wrapper-zpdrj8-0 eNzhds"
 >
    
   Default with text prop
@@ -102,7 +102,7 @@ exports[`Badge component Should match snapshot with different text props 1`] = `
 
 exports[`Badge component Should match snapshot with different text props 2`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 hWuITi"
+  className="Badge__Wrapper-zpdrj8-0 eNzhds"
 >
    
    Default with children 
@@ -112,7 +112,7 @@ exports[`Badge component Should match snapshot with different text props 2`] = `
 
 exports[`Badge component Should match snapshot with different text props 3`] = `
 <div
-  className="Badge__Wrapper-o4eu03-0 hWuITi"
+  className="Badge__Wrapper-zpdrj8-0 eNzhds"
 >
    
    Default 

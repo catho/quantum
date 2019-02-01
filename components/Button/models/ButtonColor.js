@@ -1,4 +1,4 @@
-import theme from '../../../theme';
+import theme from '../../shared/theme';
 
 class ButtonColor {
   constructor({

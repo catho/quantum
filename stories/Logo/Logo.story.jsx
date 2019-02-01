@@ -9,7 +9,7 @@ import {
   HowToImport,
   CodeExample,
   AutoPropsApi,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import Logo from '../../components/Logo';
 import LogoTypes from '../../components/Logo/LogoTypes';

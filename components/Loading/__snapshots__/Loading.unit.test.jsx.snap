@@ -2,15 +2,15 @@
 
 exports[`Loading component  should match the snapshot 1`] = `
 <div
-  className="Loading__Wrapper-sc-1jan2m7-0 kMhPws"
+  className="Loading__Wrapper-sc-1tyj5mn-0 clMUyr"
   size={60}
 >
   <svg
-    className="Loading__Svg-sc-1jan2m7-1 iZTpBD"
+    className="Loading__Svg-sc-1tyj5mn-1 loRehu"
     viewBox="25 25 50 50"
   >
     <circle
-      className="Loading__Circle-sc-1jan2m7-2 kERifh"
+      className="Loading__Circle-sc-1tyj5mn-2 ilfJjW"
       cx="50"
       cy="50"
       r="12"
@@ -21,15 +21,15 @@ exports[`Loading component  should match the snapshot 1`] = `
 
 exports[`Loading component  should match the snapshot when it's not visible 1`] = `
 <div
-  className="Loading__Wrapper-sc-1jan2m7-0 jFGGzX"
+  className="Loading__Wrapper-sc-1tyj5mn-0 bYSbkq"
   size={60}
 >
   <svg
-    className="Loading__Svg-sc-1jan2m7-1 iZTpBD"
+    className="Loading__Svg-sc-1tyj5mn-1 loRehu"
     viewBox="25 25 50 50"
   >
     <circle
-      className="Loading__Circle-sc-1jan2m7-2 kERifh"
+      className="Loading__Circle-sc-1tyj5mn-2 ilfJjW"
       cx="50"
       cy="50"
       r="12"

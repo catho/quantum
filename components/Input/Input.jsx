@@ -6,7 +6,7 @@ import MaskedInput from 'react-text-mask';
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
-import theme from '../../theme';
+import theme from '../shared/theme';
 import InputTypes from './InputTypes';
 
 const sharedStyle = css`

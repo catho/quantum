@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import Button from '../Button';
-import theme from '../../theme';
+import theme from '../shared/theme';
 import { Header, Content, Footer } from './sub-components';
 
 const Overlay = styled.div`

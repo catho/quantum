@@ -2,7 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
-import { Tab, Example, AutoExample, Title } from '@catho/quantum-storybook-ui';
+import {
+  Tab,
+  Example,
+  AutoExample,
+  Title,
+} from '@catho-private/quantum-storybook-ui';
 import Button from '../../components/Button';
 import { Container, Row, Col } from '../../components/Grid';
 

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import SocialButtons from './SocialButtons';
 import { SIZES } from '../Grid/sub-components/shared/grid-config';
-import theme from '../../theme';
+import theme from '../shared/theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
 

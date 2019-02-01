@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Icon from '../Icon';
 import Colors from '../Colors';
 
-import GlobalTheme from '../../theme';
+import GlobalTheme from '../shared/theme';
 import ComponentTheme from './ComponentTheme';
 
 const sharedStyles = `

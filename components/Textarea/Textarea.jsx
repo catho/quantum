@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
-import theme from '../../theme';
+import theme from '../shared/theme';
 import { ErrorMessage, Label, FieldGroup } from '../shared';
 
 const Textfield = styled.textarea`

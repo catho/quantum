@@ -8,7 +8,7 @@ import {
   HowToImport,
   CodeExample,
   AutoPropsApi,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import Image from '../../components/Image';
 import { Col, Row } from '../../components/Grid';

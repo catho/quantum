@@ -2,10 +2,10 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+  className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
 >
   <input
-    className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+    className="Input__InputTag-sc-16zet9e-1 inKlOh"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -21,10 +21,10 @@ exports[`Input component  should match the snapshot 1`] = `
 
 exports[`Input component  with a label should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+  className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
 >
   <input
-    className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+    className="Input__InputTag-sc-16zet9e-1 inKlOh"
     defaultValue="foo"
     id="input-with-label"
     maxLength=""
@@ -34,7 +34,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     type="text"
   />
   <label
-    className="Label-inke2y-0 Input__InputLabel-sc-1mls2zy-0 gMAGUR"
+    className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 kHrprc"
     htmlFor="input-with-label"
   >
     Text label
@@ -45,10 +45,10 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-1ksesv8-0 Input__InputFieldGroup-sc-1mls2zy-3 MYeBt"
+  className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
 >
   <input
-    className="Input__InputTag-sc-1mls2zy-1 bVAJiU"
+    className="Input__InputTag-sc-16zet9e-1 inKlOh"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -59,7 +59,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   />
   
   <div
-    className="ErrorMessage-o8xm0w-0 cMosjL"
+    className="ErrorMessage-sc-19jcdrm-0 iRUhLB"
   >
     Error message
   </div>

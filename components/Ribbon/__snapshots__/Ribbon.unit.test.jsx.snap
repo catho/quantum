@@ -2,6 +2,6 @@
 
 exports[`<Ribbon /> Should match the snapshot 1`] = `
 <div
-  className="Ribbon__Wrapper-sc-10u1e5z-0 lfKtOY"
+  className="Ribbon__Wrapper-sc-1sloaie-0 cayrxv"
 />
 `;

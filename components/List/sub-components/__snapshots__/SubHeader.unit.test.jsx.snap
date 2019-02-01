@@ -8,6 +8,7 @@ ShallowWrapper {
   </List.SubHeader>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -27,7 +28,7 @@ ShallowWrapper {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "SubHeader__Description-sc-1cbn297-0",
+        "componentId": "SubHeader__Description-gatzne-0",
         "isStatic": true,
         "rules": Array [
           "font-size:12px;",
@@ -36,7 +37,7 @@ ShallowWrapper {
       "displayName": "SubHeader",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "SubHeader__Description-sc-1cbn297-0",
+      "styledComponentId": "SubHeader__Description-gatzne-0",
       "target": "span",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -57,7 +58,7 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "SubHeader__Description-sc-1cbn297-0",
+          "componentId": "SubHeader__Description-gatzne-0",
           "isStatic": true,
           "rules": Array [
             "font-size:12px;",
@@ -66,7 +67,7 @@ ShallowWrapper {
         "displayName": "SubHeader",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "SubHeader__Description-sc-1cbn297-0",
+        "styledComponentId": "SubHeader__Description-gatzne-0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -78,9 +79,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
