@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { AutoExample } from '@catho/quantum-storybook-ui';
+import { AutoExample } from '@catho-private/quantum-storybook-ui';
 
 import Loading from '../../components/Loading';
 

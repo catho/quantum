@@ -1,6 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { AutoExample, Tab, Example, Title } from '@catho/quantum-storybook-ui';
+import {
+  AutoExample,
+  Tab,
+  Example,
+  Title,
+} from '@catho-private/quantum-storybook-ui';
 
 import Alert from '../../components/Alert';
 

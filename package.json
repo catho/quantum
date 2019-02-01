@@ -1,6 +1,6 @@
 {
   "name": "@catho/quantum",
-  "version": "0.12.2",
+  "version": "0.1.0",
   "description": "Catho react components",
   "sideEffects": false,
   "scripts": {
@@ -75,7 +75,7 @@
     "styled-components": "^4.1.3"
   },
   "dependencies": {
-    "@catho/quantum-storybook-ui": "../quantum-storybook-ui/",
+    "@catho-private/quantum-storybook-ui": "^0.1.0",
     "@material-ui/core": "^3.8.2",
     "@material-ui/icons": "^3.0.2",
     "babel-polyfill": "^6.26.0",

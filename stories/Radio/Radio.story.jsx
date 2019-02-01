@@ -8,7 +8,7 @@ import {
   CodeExample,
   TabbedView,
   Tab,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import { Radio, RadioGroup } from '../../components/Radio';
 import { Col, Row } from '../../components/Grid';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { AutoExample, Tab } from '@catho/quantum-storybook-ui';
+import { AutoExample, Tab } from '@catho-private/quantum-storybook-ui';
 
 import Tooltip from '../../components/Tooltip';
 import Logo from '../../components/Logo';

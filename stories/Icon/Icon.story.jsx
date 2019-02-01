@@ -9,7 +9,7 @@ import {
   Tab,
   CodeExample,
   Title,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import Icon from '../../components/Icon';
 import Colors from '../../components/Colors';

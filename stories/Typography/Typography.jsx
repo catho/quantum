@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import LinkTo from '@storybook/addon-links/react';
-import { HowToImport, Title } from '@catho/quantum-storybook-ui';
+import { HowToImport, Title } from '@catho-private/quantum-storybook-ui';
 
 import Colors from '../../components/Colors';
 

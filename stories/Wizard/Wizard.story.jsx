@@ -9,7 +9,7 @@ import {
   Example,
   TabbedView,
   Tab,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import { Col, Row } from '../../components/Grid';
 import { Wizard, Step } from '../../components/Wizard';

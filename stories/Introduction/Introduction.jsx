@@ -6,7 +6,7 @@ import {
   CodeToClipboard,
   TabbedView,
   Tab,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import Image from '../../components/Image';
 

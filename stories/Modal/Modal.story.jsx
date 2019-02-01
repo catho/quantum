@@ -7,7 +7,7 @@ import {
   CodeExample,
   TabbedView,
   Tab,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';

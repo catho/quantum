@@ -9,7 +9,7 @@ import {
   HowToImport,
   CodeExample,
   AutoPropsApi,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 import Loader from '../../components/Loader';
 import LoaderTypes from '../../components/Loader/LoaderTypes';
 

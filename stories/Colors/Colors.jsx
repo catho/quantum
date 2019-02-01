@@ -5,7 +5,7 @@ import {
   CodeToClipboard,
   Title,
   HowToImport,
-} from '@catho/quantum-storybook-ui';
+} from '@catho-private/quantum-storybook-ui';
 
 import Colors from '../../components/Colors';
 
