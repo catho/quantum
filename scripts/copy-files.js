@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import pkg from '../package.json';
 
 const copyFile = file => {
   const buildPath = path.resolve(__dirname, '../dist/', path.basename(file));
@@ -9,22 +10,20 @@ const copyFile = file => {
 };
 
 const createPackageJson = () => {
-  const packageData = fs.readFileSync(
-    path.resolve(__dirname, '../package.json'),
-    'utf8',
-  );
   const {
     scripts,
     devDependencies,
     'lint-staged': lintStaged,
     jest,
     ...packageDataOther
-  } = JSON.parse(packageData);
+  } = pkg;
+
   const newPackageData = {
     ...packageDataOther,
     main: './index.js',
     private: false,
   };
+
   const buildPath = path.resolve(__dirname, '../dist/package.json');
 
   fs.writeFileSync(buildPath, JSON.stringify(newPackageData, null, 2), 'utf8');
