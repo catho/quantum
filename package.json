@@ -85,8 +85,7 @@
     "rc-slider": "^8.6.4",
     "react-content-loader": "^3.4.2",
     "react-image": "^1.5.1",
-    "react-text-mask": "^5.4.3",
-    "rollup-plugin-url": "^2.1.0"
+    "react-text-mask": "^5.4.3"
   },
   "peerDependencies": {
     "react": "^16.7.0",
