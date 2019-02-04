@@ -1,8 +1,10 @@
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-import { Frame } from '@catho-private/quantum-storybook-ui';
+import { Typography } from '../components/GlobalStyle';
 import stories from './stories';
+
+console.log(Typography);
 
 addDecorator(
   withOptions({
@@ -13,7 +15,7 @@ addDecorator(
   }),
 );
 
-addDecorator(Frame);
+addDecorator(Typography);
 
 const reqStories = require.context('../stories', true, /.story.jsx?$/);
 
