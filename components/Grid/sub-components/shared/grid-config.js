@@ -1,11 +1,11 @@
 const DEVICES = ['hd', 'large', 'desktop', 'tablet', 'phone'];
 
 const BREAKPOINTS = {
-  hd: 1440,
-  large: 1280,
-  desktop: 980,
-  tablet: 768,
-  phone: 320,
+  xlarge: 1920,
+  large: 1440,
+  medium: 1024,
+  small: 600,
+  xsmall: 1,
 };
 
 const SIZES = {

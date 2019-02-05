@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { SIZES, DEVICES } from './shared/grid-config';
+import { BREAKPOINTS, DEVICES } from './shared/grid-config';
 import { query, hide } from './shared/media';
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
   box-sizing: border-box;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 
   ${props => props.hide && [].concat([], props.hide).map(prop => hide[prop]())}
 
-  ${props => !props.fluid && query.desktop`max-width: ${SIZES.desktop}px;`}
-  ${props => !props.fluid && query.large`max-width: ${SIZES.large}px;`}
-  ${props => !props.fluid && query.hd`max-width: ${SIZES.hd}px;`}
+  ${props => !props.fluid && query.medium`max-width: ${BREAKPOINTS.medium}px;`}
+  ${props => !props.fluid && query.large`max-width: ${BREAKPOINTS.large}px;`}
+  ${props => !props.fluid && query.xlarge`max-width: ${BREAKPOINTS.xlarge}px;`}
 `;
 
 Container.propTypes = {
