@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { GRID_COLUMNS, DEVICES } from './shared/grid-config';
+import { DEVICES } from './shared/grid-config';
 import { query, hide } from './shared/media';
 
 const Col = styled.div`
@@ -11,21 +11,37 @@ const Col = styled.div`
   padding-right: 15px;
   box-sizing: border-box;
 
+  @media (min-width: 1px) {
+    --grid-column: 4;
+  }
+
+  @media (min-width: 600px) {
+    --grid-column: 8;
+  }
+
+  @media (min-width: 840px) {
+    --grid-column: 12;
+  }
+
   ${props =>
     props.hide &&
     [].concat([], props.hide).map(prop => hide[prop] && hide[prop]())}
 
   ${props =>
-    props.phone && query.phone`width: ${(props.phone / GRID_COLUMNS) * 100}%;`}
+    props.xsmall &&
+    query.xsmall`width: calc(${props.xsmall} / var(--grid-column) * 100)%;`}
   ${props =>
-    props.tablet &&
-    query.tablet`width: ${(props.tablet / GRID_COLUMNS) * 100}%;`}
+    props.small &&
+    query.small`width: calc(${props.small} / var(--grid-column) * 100)%;`}
   ${props =>
-    props.desktop &&
-    query.desktop`width: ${(props.desktop / GRID_COLUMNS) * 100}%;`}
+    props.medium &&
+    query.medium`width: calc(${props.medium} / var(--grid-column) * 100)%;`}
   ${props =>
-    props.large && query.large`width: ${(props.large / GRID_COLUMNS) * 100}%;`}
-  ${props => props.hd && query.hd`width: ${(props.hd / GRID_COLUMNS) * 100}%;`}
+    props.large &&
+    query.large`width: calc(${props.large} / var(--grid-column) * 100)%;`}
+  ${props =>
+    props.xlarge &&
+    query.xlarge`width: calc(${props.xlarge} / var(--grid-column) * 100)%;`}
 `;
 
 Col.propTypes = {
