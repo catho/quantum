@@ -416,6 +416,7 @@ const Grid = () => (
         <GreyCol medium={1}>medium</GreyCol>
         <GreyCol medium={1}>medium</GreyCol>
         <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
       </Row>
     </Container>
   </React.Fragment>

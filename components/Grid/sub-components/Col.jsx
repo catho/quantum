@@ -29,19 +29,19 @@ const Col = styled.div`
 
   ${props =>
     props.xsmall &&
-    query.xsmall`width: calc(${props.xsmall} / var(--grid-column) * 100)%;`}
+    query.xsmall`width: calc(${props.xsmall} / var(--grid-column) * 100%);`}
   ${props =>
     props.small &&
-    query.small`width: calc(${props.small} / var(--grid-column) * 100)%;`}
+    query.small`width: calc(${props.small} / var(--grid-column) * 100%);`}
   ${props =>
     props.medium &&
-    query.medium`width: calc(${props.medium} / var(--grid-column) * 100)%;`}
+    query.medium`width: calc(${props.medium} / var(--grid-column) * 100%);`}
   ${props =>
     props.large &&
-    query.large`width: calc(${props.large} / var(--grid-column) * 100)%;`}
+    query.large`width: calc(${props.large} / var(--grid-column) * 100%);`}
   ${props =>
     props.xlarge &&
-    query.xlarge`width: calc(${props.xlarge} / var(--grid-column) * 100)%;`}
+    query.xlarge`width: calc(${props.xlarge} / var(--grid-column) * 100%);`}
 `;
 
 Col.propTypes = {
