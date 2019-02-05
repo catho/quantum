@@ -17,23 +17,6 @@ const skins = {
     selected: Colors.ACTION['600'],
     disabled: Colors.ACTION['200'],
   }),
-  cancel: new DefaultButton({
-    unselected: Colors.WHITE,
-    unselectedBorder: Colors.PRIMARY['300'],
-    unselectedTextColor: Colors.PRIMARY['300'],
-    selected: Colors.WHITE,
-    selectedBorder: Colors.PRIMARY['500'],
-    selectedTextColor: Colors.PRIMARY['500'],
-    disabled: Colors.SECONDARY['50'],
-  }),
-  modal: new DefaultButton({
-    unselected: Colors.WHITE,
-    unselectedTextColor: Colors.PRIMARY['500'],
-    selected: Colors.SECONDARY['50'],
-    disabled: Colors.WHITE,
-    disabledTextColor: Colors.PRIMARY['300'],
-    shadow: false,
-  }),
 };
 
 export default ({ skin }) => skins[skin] || skins.primary;

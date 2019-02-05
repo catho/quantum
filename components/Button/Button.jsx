@@ -8,12 +8,20 @@ import theme from '../shared/theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
 
-const fontSize = ({ size }) =>
-  `font-size: ${theme.font[size] || theme.font.normal};`;
+const fontSize = ({ size }) => {
+  const sizes = {
+    xsmall: '12px',
+    small: '12px',
+    medium: '16px',
+    big: '20px',
+    xbig: '24px',
+  };
+  return `font-size: ${sizes[size] || sizes.medium};`;
+};
+
 const iconSize = ({ size }) => {
   const sizes = {
     normal: '24px',
-    big: '32px',
   };
 
   return `font-size: ${sizes[size] || sizes.normal};`;
@@ -22,7 +30,6 @@ const iconSize = ({ size }) => {
 const iconMargin = ({ size }) => {
   const margins = {
     normal: '-5px 5px -7px -5px',
-    big: '-5px 5px -10px -10px',
   };
 
   return `margin: ${margins[size] || margins.normal};`;
@@ -30,8 +37,11 @@ const iconMargin = ({ size }) => {
 
 const padding = ({ size }) => {
   const paddings = {
-    normal: '8px 10px',
-    big: '15px 27px',
+    xsmall: '4px 12px',
+    small: '8px 12px',
+    medium: '10px 12px',
+    big: '11px 16px',
+    xbig: '13px 16px',
   };
 
   return `padding: ${paddings[size] || paddings.normal};`;
@@ -126,7 +136,7 @@ Button.defaultProps = {
   disabled: false,
   full: false,
   icon: '',
-  size: 'normal',
+  size: 'medium',
   skin: 'primary',
   type: 'button',
   children: 'Catho',
@@ -140,8 +150,8 @@ Button.propTypes = {
   /** Icon name. The full catalogue can be found
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
-  size: PropTypes.oneOf(['normal', 'big']),
-  skin: PropTypes.oneOf(['primary', 'secondary', 'action', 'cancel', 'modal']),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'big', 'xbig']),
+  skin: PropTypes.oneOf(['primary', 'secondary', 'action']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
   children: PropTypes.node,
   onClick: PropTypes.func,
