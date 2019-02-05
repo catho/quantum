@@ -3,7 +3,6 @@ import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
 import GlobalStyle from '../components/GlobalStyle';
-import Icon from '../components/Icon';
 import stories from './stories';
 
 const Frame = storyFn => (
