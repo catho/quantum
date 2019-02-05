@@ -265,6 +265,11 @@ const HideExample = () => (
   </React.Fragment>
 );
 
+const GreyCol = styled(Col)`
+  background-color: #ccc;
+  border: 1px solid #000;
+`;
+
 const Grid = () => (
   <React.Fragment>
     <p>
@@ -272,14 +277,11 @@ const Grid = () => (
       understand ours.
     </p>
     <HowToImport importModules="Container, Row, Col, Hide" />
-
     <p>
       Here’s a comparison table of viewports. Ours on left - Bootstrap’s on
       right.
     </p>
-
     <ViewportTable />
-
     <Title>How it works</Title>
     <Subtitle>Containers</Subtitle>
     <p>
@@ -316,7 +318,6 @@ const Grid = () => (
       then counteracted on the rows with negative margins. This way, all the
       content in your columns is visually aligned down the left side.
     </p>
-
     <Subtitle>No Gutters</Subtitle>
     <p>
       The gutters between columns in our predefined grid styles can be removed
@@ -324,24 +325,19 @@ const Grid = () => (
       negative margins from <code>{'<Col>'}</code> and the horizontal padding
       from all immediate children columns.
     </p>
-
     <Subtitle>Breakpoints</Subtitle>
     <p>
       The grid system appropriately scales up to 12 columns as the device or
       viewport size increases. It includes predefined viewports, they are:
     </p>
-
     <SizesTable />
-
     <Subtitle>Example: Stacked-to-horizontal</Subtitle>
     <p>
       You can create a basic grid system that starts out stacked on mobile
       devices and tablet devices before becoming horizontal on desktop devices.
       Place grid columns in any <code>{'<Row>'}</code>
     </p>
-
     <HorizontalExample />
-
     <Subtitle>Example: Mobile and desktop</Subtitle>
     <p>
       Don’t want your columns to simply stack in smaller devices? Use the phone
@@ -349,9 +345,7 @@ const Grid = () => (
       <code>{'tablet={*}'}</code> to your columns. See the example below for a
       better idea of how it all works.
     </p>
-
     <MobileDesktopExample />
-
     <Subtitle>Hide Component</Subtitle>
     <p>
       If you need to hide some elements in your UI, you can use the
@@ -368,10 +362,62 @@ const Grid = () => (
       <li>large</li>
       <li>hd</li>
     </ul>
-
     <Subtitle>Example: Hiding elements in phone devices</Subtitle>
-
     <HideExample />
+    <Container>
+      <Row>
+        <GreyCol xsmall={1}>xsmall</GreyCol>
+        <GreyCol xsmall={1}>xsmall</GreyCol>
+        <GreyCol xsmall={1}>xsmall</GreyCol>
+        <GreyCol xsmall={1}>xsmall</GreyCol>
+      </Row>
+    </Container>
+    ------------------------------------
+    <Container>
+      <Row>
+        <GreyCol small={1}>small 8</GreyCol>
+        <GreyCol small={1}>small 8</GreyCol>
+        <GreyCol small={1}>small 8</GreyCol>
+        <GreyCol small={1}>small 8</GreyCol>
+        <GreyCol small={1}>small 8</GreyCol>
+        <GreyCol small={1}>small 8</GreyCol>
+        <GreyCol small={1}>small 8</GreyCol>
+        <GreyCol small={1}>small 8</GreyCol>
+      </Row>
+    </Container>
+    ------------------------------------
+    <Container>
+      <Row>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+        <GreyCol small={1}>small 12</GreyCol>
+      </Row>
+    </Container>
+    ------------------------------------
+    <Container>
+      <Row>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={1}>medium</GreyCol>
+      </Row>
+    </Container>
   </React.Fragment>
 );
 
