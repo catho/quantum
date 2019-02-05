@@ -1,10 +1,17 @@
 import 'babel-polyfill';
+import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-import { Typography } from '../components/GlobalStyle';
+import GlobalStyle from '../components/GlobalStyle';
+import Icon from '../components/Icon';
 import stories from './stories';
 
-console.log(Typography);
+const Frame = storyFn => (
+  <React.Fragment>
+    <GlobalStyle />
+    {storyFn()}
+  </React.Fragment>
+);
 
 addDecorator(
   withOptions({
@@ -15,7 +22,7 @@ addDecorator(
   }),
 );
 
-addDecorator(Typography);
+addDecorator(Frame);
 
 const reqStories = require.context('../stories', true, /.story.jsx?$/);
 
