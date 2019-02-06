@@ -277,8 +277,8 @@ const Grid = () => (
       <a href="https://material.io/design/layout/responsive-layout-grid.html">
         Material Design Grid definition
       </a>
-      . It's adaptable to screen size and orientation and has columns
-      definitions to each resolution.
+      It is adaptable to screen size and orientation and has columns definitions
+      to each resolution.
     </p>
     <HowToImport importModules="Container, Row, Col, Hide" />
     <p>
