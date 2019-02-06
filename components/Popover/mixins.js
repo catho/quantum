@@ -1,4 +1,4 @@
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 const ARROW_SIZE = '8px';
 const CORNER_ARROW_DISTANCE = 25;

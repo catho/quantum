@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 import googleLogo from '../shared/static/googleSocialLogo.svg';
 import facebookLogo from '../shared/static/facebookSocialLogo.svg';
 

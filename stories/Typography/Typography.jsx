@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import LinkTo from '@storybook/addon-links/react';
 import { HowToImport, Title } from '@catho-private/quantum-storybook-ui';
 
-import Colors from '../../components/Colors';
+import Colors from '../../components/Colors/deprecated';
 
 const Font = styled.div`
   font-family: Oxygen;

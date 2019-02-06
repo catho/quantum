@@ -4,7 +4,7 @@ import React from 'react';
 import MaskedInput from 'react-text-mask';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 import Icon from '../Icon';
 import theme from '../shared/theme';
 import InputTypes from './InputTypes';

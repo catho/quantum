@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Icon from '../Icon';
 import Ribbon from '../Ribbon';
 import mixins from './mixins';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 import theme from '../shared/theme';
 
 const PADDING = '18px 24px';

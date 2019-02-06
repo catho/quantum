@@ -1,5 +1,5 @@
 import React from 'react';
-import Colors from '../../../components/Colors';
+import Colors from '../../../components/Colors/deprecated';
 import List from '../../../components/List';
 
 const simpleListItemAlternatives = {

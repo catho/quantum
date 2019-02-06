@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from '../../Image';
-import Colors from '../../Colors';
+import Colors from '../../Colors/deprecated';
 
 const RoundedImage = styled(Image)`
   background-color: ${Colors.SECONDARY['50']};

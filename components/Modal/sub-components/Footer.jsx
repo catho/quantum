@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Colors from '../../Colors';
+import Colors from '../../Colors/deprecated';
 
 const Footer = styled.div`
   background-color: #f4f4f4;

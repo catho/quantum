@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Colors from '../../Colors';
+import Colors from '../../Colors/deprecated';
 
 const Header = styled.h2`
   border-bottom: 2px solid ${Colors.SECONDARY['50']};
