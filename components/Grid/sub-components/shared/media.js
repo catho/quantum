@@ -11,34 +11,34 @@ const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
 }, {});
 
 const hide = {
-  hd: () => `
-    @media (min-width: ${BREAKPOINTS.large + 1}px) {
+  xlarge: () => `
+    @media (min-width: ${BREAKPOINTS.xlarge + 1}px) {
       display: none !important;
     }
   `,
   large: () => `
-    @media (min-width: ${BREAKPOINTS.desktop + 1}px) and (max-width: ${
+    @media (min-width: ${BREAKPOINTS.large + 1}px) and (max-width: ${
+    BREAKPOINTS.xlarge
+  }px) {
+      display: none !important;
+    }
+  `,
+  medium: () => `
+    @media (min-width: ${BREAKPOINTS.medium + 1}px) and (max-width: ${
     BREAKPOINTS.large
   }px) {
       display: none !important;
     }
   `,
-  desktop: () => `
-    @media (min-width: ${BREAKPOINTS.tablet + 1}px) and (max-width: ${
-    BREAKPOINTS.desktop
+  small: () => `
+    @media (min-width: ${BREAKPOINTS.small + 1}px) and (max-width: ${
+    BREAKPOINTS.medium
   }px) {
       display: none !important;
     }
   `,
-  tablet: () => `
-    @media (min-width: ${BREAKPOINTS.phone + 1}px) and (max-width: ${
-    BREAKPOINTS.tablet
-  }px) {
-      display: none !important;
-    }
-  `,
-  phone: () => `
-    @media (max-width: ${BREAKPOINTS.phone}px) {
+  xsmall: () => `
+    @media (max-width: ${BREAKPOINTS.small}px) {
       display: none !important;
     }
   `,

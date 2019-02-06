@@ -368,66 +368,58 @@ const Grid = () => (
     </ul>
     <Subtitle>Example: Hiding elements in phone devices</Subtitle>
     <HideExample />
-    <Container fluid>
-      <Row>
-        <GreyCol xsmall={1}>xsmall</GreyCol>
-        <GreyCol xsmall={1}>xsmall</GreyCol>
-        <GreyCol xsmall={1}>xsmall</GreyCol>
-        <GreyCol xsmall={1}>xsmall</GreyCol>
-      </Row>
-    </Container>
+    <Row>
+      <GreyCol xsmall={1}>xsmall</GreyCol>
+      <GreyCol xsmall={1}>xsmall</GreyCol>
+      <GreyCol xsmall={1}>xsmall</GreyCol>
+      <GreyCol xsmall={1}>xsmall</GreyCol>
+    </Row>
     ------------------------------------
-    <Container fluid>
-      <Row>
-        <GreyCol small={1}>small 8</GreyCol>
-        <GreyCol small={1}>small 8</GreyCol>
-        <GreyCol small={1}>small 8</GreyCol>
-        <GreyCol small={1}>small 8</GreyCol>
-        <GreyCol small={1}>small 8</GreyCol>
-        <GreyCol small={1}>small 8</GreyCol>
-        <GreyCol small={1}>small 8</GreyCol>
-        <GreyCol small={1}>small 8</GreyCol>
-      </Row>
-    </Container>
+    <Row>
+      <GreyCol small={1}>small 8</GreyCol>
+      <GreyCol small={1}>small 8</GreyCol>
+      <GreyCol small={1}>small 8</GreyCol>
+      <GreyCol small={1}>small 8</GreyCol>
+      <GreyCol small={1}>small 8</GreyCol>
+      <GreyCol small={1}>small 8</GreyCol>
+      <GreyCol small={1}>small 8</GreyCol>
+      <GreyCol small={1}>small 8</GreyCol>
+    </Row>
     ------------------------------------
-    <Container fluid>
-      <Row>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-        <GreyCol small={1}>small 12</GreyCol>
-      </Row>
-    </Container>
+    <Row>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+      <GreyCol small={1}>small 12</GreyCol>
+    </Row>
     ------------------------------------
-    <Container fluid>
-      <Row>
-        <GreyCol medium={3}>medium</GreyCol>
-        <GreyCol medium={9}>
-          <Container fluid>
-            <Row>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-              <GreyCol medium={6}>ø</GreyCol>
-            </Row>
-          </Container>
-        </GreyCol>
-      </Row>
-    </Container>
+    <Row hide="medium">
+      <GreyCol medium={3}>medium</GreyCol>
+      <GreyCol medium={9}>
+        <Container fluid no-gutters>
+          <Row>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol medium={6}>ø</GreyCol>
+          </Row>
+        </Container>
+      </GreyCol>
+    </Row>
   </React.Fragment>
 );
 

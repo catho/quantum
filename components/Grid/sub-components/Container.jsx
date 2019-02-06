@@ -17,6 +17,8 @@ const Container = styled.div`
   ${props => !props.fluid && query.medium`max-width: ${BREAKPOINTS.medium}px;`}
   ${props => !props.fluid && query.large`max-width: ${BREAKPOINTS.large}px;`}
   ${props => !props.fluid && query.xlarge`max-width: ${BREAKPOINTS.xlarge}px;`}
+
+  ${props => props['no-gutters'] && '--gutter: 0px;'};
 `;
 
 Container.propTypes = {
