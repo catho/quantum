@@ -37,14 +37,26 @@ const iconMargin = ({ size }) => {
 
 const padding = ({ size }) => {
   const paddings = {
-    xsmall: '4px 12px',
-    small: '8px 12px',
-    medium: '10px 12px',
-    big: '11px 16px',
-    xbig: '13px 16px',
+    xsmall: '0 12px',
+    small: '0 12px',
+    medium: '0 12px',
+    big: '0 16px',
+    xbig: '0 16px',
   };
 
   return `padding: ${paddings[size] || paddings.normal};`;
+};
+
+const height = ({ size }) => {
+  const heights = {
+    xsmall: '24px',
+    small: '32px',
+    medium: '40px',
+    big: '48px',
+    xbig: '56px',
+  };
+
+  return `height: ${heights[size] || heights.normal};`;
 };
 
 const ButtonIcon = styled(Icon)`
@@ -59,6 +71,7 @@ const StyledButton = styled.button`
 
   ${fontSize}
   ${padding}
+  ${height}
   ${theme.mixins.transition()};
 
   ${ButtonIcon} {
