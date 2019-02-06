@@ -1,13 +1,14 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { BREAKPOINTS, DEVICES } from './shared/grid-config';
+import BREAKPOINTS from './shared/breakpoints';
+import GlobalVars from './shared/variables';
 import { query, hide } from './shared/media';
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
   box-sizing: border-box;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: var(--gutter);
   margin-right: auto;
   margin-left: auto;
 
@@ -24,7 +25,7 @@ Container.propTypes = {
   hd: PropTypes.number,
   fluid: PropTypes.bool,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(DEVICES),
+    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
 };
@@ -35,4 +36,9 @@ Container.defaultProps = {
 
 Container.displayName = 'Container';
 
-export default Container;
+export default props => (
+  <>
+    <GlobalVars />
+    <Container {...props} />
+  </>
+);

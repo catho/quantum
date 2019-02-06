@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import SocialButtons from './SocialButtons';
-import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../shared/theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
@@ -96,12 +95,6 @@ const StyledButton = styled.button`
       }
     `;
   }}
-
-  @media (max-width: ${SIZES.phone}px) {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
 `;
 
 class Button extends React.Component {

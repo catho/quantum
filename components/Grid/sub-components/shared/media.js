@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { BREAKPOINTS } from './grid-config';
+import BREAKPOINTS from './breakpoints';
 
 const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
   acc[label] = (...args) => css`

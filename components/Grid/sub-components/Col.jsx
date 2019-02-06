@@ -1,15 +1,16 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { DEVICES } from './shared/grid-config';
+import BREAKPOINTS from './shared/breakpoints';
+import GlobalVars from './shared/variables';
 import { query, hide } from './shared/media';
 
 const Col = styled.div`
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
   box-sizing: border-box;
+  margin: var(--gutter);
 
   @media (min-width: 1px) {
     --grid-column: 4;
@@ -29,19 +30,29 @@ const Col = styled.div`
 
   ${props =>
     props.xsmall &&
-    query.xsmall`width: calc(${props.xsmall} / var(--grid-column) * 100%);`}
+    query.xsmall`width: calc(${
+      props.xsmall
+    } / var(--grid-column) * 100% - calc(var(--gutter) * 2));`}
   ${props =>
     props.small &&
-    query.small`width: calc(${props.small} / var(--grid-column) * 100%);`}
+    query.small`width: calc(${
+      props.small
+    } / var(--grid-column) * 100% - calc(var(--gutter) * 2));`}
   ${props =>
     props.medium &&
-    query.medium`width: calc(${props.medium} / var(--grid-column) * 100%);`}
+    query.medium`width: calc(${
+      props.medium
+    } / var(--grid-column) * 100% - calc(var(--gutter) * 2));`}
   ${props =>
     props.large &&
-    query.large`width: calc(${props.large} / var(--grid-column) * 100%);`}
+    query.large`width: calc(${
+      props.large
+    } / var(--grid-column) * 100% - calc(var(--gutter) * 2));`}
   ${props =>
     props.xlarge &&
-    query.xlarge`width: calc(${props.xlarge} / var(--grid-column) * 100%);`}
+    query.xlarge`width: calc(${
+      props.xlarge
+    } / var(--grid-column) * 100% - calc(var(--gutter) * 2));`}
 `;
 
 Col.propTypes = {
@@ -49,11 +60,16 @@ Col.propTypes = {
   large: PropTypes.number,
   hd: PropTypes.number,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(DEVICES),
+    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
 };
 
 Col.displayName = 'Col';
 
-export default Col;
+export default props => (
+  <>
+    <GlobalVars />
+    <Col {...props} />
+  </>
+);

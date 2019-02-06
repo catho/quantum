@@ -117,34 +117,34 @@ const HorizontalExample = () => (
   <React.Fragment>
     <Container fluid>
       <StyledRow>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
       </StyledRow>
 
       <StyledRow>
-        <StyledCol tablet={8}>{'<Col tablet={8}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
+        <StyledCol medium={8}>{'<Col medium={8}>'}</StyledCol>
+        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
       </StyledRow>
 
       <StyledRow>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
+        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
       </StyledRow>
 
       <StyledRow>
-        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
-        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
+        <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
+        <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
       </StyledRow>
     </Container>
 
@@ -273,8 +273,12 @@ const GreyCol = styled(Col)`
 const Grid = () => (
   <React.Fragment>
     <p>
-      If you are familiar with <strong>Boostrap</strong>, you can easily
-      understand ours.
+      This Grid is based on{' '}
+      <a href="https://material.io/design/layout/responsive-layout-grid.html">
+        Material Design Grid definition
+      </a>
+      . It's adaptable to screen size and orientation and has columns
+      definitions to each resolution.
     </p>
     <HowToImport importModules="Container, Row, Col, Hide" />
     <p>
@@ -364,7 +368,7 @@ const Grid = () => (
     </ul>
     <Subtitle>Example: Hiding elements in phone devices</Subtitle>
     <HideExample />
-    <Container>
+    <Container fluid>
       <Row>
         <GreyCol xsmall={1}>xsmall</GreyCol>
         <GreyCol xsmall={1}>xsmall</GreyCol>
@@ -373,7 +377,7 @@ const Grid = () => (
       </Row>
     </Container>
     ------------------------------------
-    <Container>
+    <Container fluid>
       <Row>
         <GreyCol small={1}>small 8</GreyCol>
         <GreyCol small={1}>small 8</GreyCol>
@@ -386,7 +390,7 @@ const Grid = () => (
       </Row>
     </Container>
     ------------------------------------
-    <Container>
+    <Container fluid>
       <Row>
         <GreyCol small={1}>small 12</GreyCol>
         <GreyCol small={1}>small 12</GreyCol>
@@ -403,20 +407,25 @@ const Grid = () => (
       </Row>
     </Container>
     ------------------------------------
-    <Container>
+    <Container fluid>
       <Row>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
-        <GreyCol medium={1}>medium</GreyCol>
+        <GreyCol medium={3}>medium</GreyCol>
+        <GreyCol medium={9}>
+          <Container fluid>
+            <Row>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+              <GreyCol medium={6}>ø</GreyCol>
+            </Row>
+          </Container>
+        </GreyCol>
       </Row>
     </Container>
   </React.Fragment>

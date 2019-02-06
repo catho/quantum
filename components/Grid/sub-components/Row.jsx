@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { DEVICES } from './shared/grid-config';
+import BREAKPOINTS from './shared/breakpoints';
 import { hide } from './shared/media';
 
 const noGutters = `
@@ -16,8 +16,8 @@ const noGutters = `
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  /* margin-right: -15px;
+  margin-left: -15px; */
 
   ${props =>
     props.hide &&
@@ -31,7 +31,7 @@ Row.propTypes = {
   hd: PropTypes.number,
   'no-gutters': PropTypes.bool,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(DEVICES),
+    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
 };
