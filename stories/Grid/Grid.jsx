@@ -151,34 +151,34 @@ const HorizontalExample = () => (
     <Highlight language="javascript" className="highlight">
       {`
   <Row>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
   </Row>
 
   <Row>
-    <Col tablet={8}>...</Col>
-    <Col tablet={4}>...</Col>
+    <Col medium={8}>...</Col>
+    <Col medium={4}>...</Col>
   </Row>
 
   <Row>
-    <Col tablet={4}>...</Col>
-    <Col tablet={4}>...</Col>
-    <Col tablet={4}>...</Col>
+    <Col medium={4}>...</Col>
+    <Col medium={4}>...</Col>
+    <Col medium={4}>...</Col>
   </Row>
 
   <Row>
-    <Col tablet={6}>...</Col>
-    <Col tablet={6}>...</Col>
+    <Col medium={6}>...</Col>
+    <Col medium={6}>...</Col>
   </Row>
 `}
     </Highlight>
@@ -189,48 +189,48 @@ const MobileDesktopExample = () => (
   <React.Fragment>
     <Container fluid>
       <StyledRow>
-        <StyledCol phone={12} tablet={8}>
-          {'<Col phone={12} tablet={8}>'}
+        <StyledCol xsmall={4} small={8}>
+          {'<Col xsmall={4} small={8}>'}
         </StyledCol>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
-        </StyledCol>
-      </StyledRow>
-
-      <StyledRow>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
-        </StyledCol>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
-        </StyledCol>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
+        <StyledCol xsmall={4} small={4}>
+          {'<Col xsmall={6} small={4}>'}
         </StyledCol>
       </StyledRow>
 
       <StyledRow>
-        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
-        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
+        <StyledCol xsmall={4} small={4}>
+          {'<Col xsmall={4} small={4}>'}
+        </StyledCol>
+        <StyledCol xsmall={4} small={4}>
+          {'<Col xsmall={4} small={4}>'}
+        </StyledCol>
+        <StyledCol xsmall={4} small={4}>
+          {'<Col xsmall={4} small={4}>'}
+        </StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol xsmall={4}>{'<Col xsmall={4}>'}</StyledCol>
+        <StyledCol xsmall={4}>{'<Col xsmall={4}>'}</StyledCol>
       </StyledRow>
     </Container>
 
     <Highlight language="javascript" className="highlight">
       {`
   <Row>
-    <Col phone={12} tablet={8}>...</Col>
-    <Col phone={6} tablet={4}>...</Col>
+    <Col xsmall={12} medium={8}>...</Col>
+    <Col xsmall={6} medium={4}>...</Col>
   </Row>
 
   <Row>
-    <Col phone={6} tablet={4}>...</Col>
-    <Col phone={6} tablet={4}>...</Col>
-    <Col phone={6} tablet={4}>...</Col>
+    <Col xsmall={6} medium={4}>...</Col>
+    <Col xsmall={6} medium={4}>...</Col>
+    <Col xsmall={6} medium={4}>...</Col>
   </Row>
 
   <Row>
-    <Col phone={6}>...</Col>
-    <Col phone={6}>...</Col>
+    <Col xsmall={6}>...</Col>
+    <Col xsmall={6}>...</Col>
   </Row>
   `}
     </Highlight>
@@ -240,12 +240,12 @@ const MobileDesktopExample = () => (
 const HideExample = () => (
   <React.Fragment>
     <Container fluid>
-      <Hide phone>
+      <Hide small>
         <StyledRow>
-          <StyledCol phone={12} tablet={8}>
+          <StyledCol xsmall={12} medium={8}>
             ...
           </StyledCol>
-          <StyledCol phone={6} tablet={4}>
+          <StyledCol xsmall={6} medium={4}>
             ...
           </StyledCol>
         </StyledRow>
@@ -254,7 +254,7 @@ const HideExample = () => (
 
     <Highlight language="javascript" className="highlight">
       {`
-  <Hide phone>
+  <Hide xsmall>
     <Row>
       <Col>...</Col>
       <Col>...</Col>
