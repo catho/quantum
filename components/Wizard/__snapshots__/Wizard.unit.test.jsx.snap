@@ -8,10 +8,10 @@ exports[`Wizard Component Should match the snapshot 1`] = `
     className="Wizard__ProgressBar-bbfhzr-1 knIJGB"
   >
     <li
-      className="Step__ProgressStep-sc-1lfyhjt-1 hXhBoE"
+      className="Step__ProgressStep-sc-1lfyhjt-1 bwpZUw"
     >
       <p
-        className="Step__Title-sc-1lfyhjt-2 gGGPGK"
+        className="Step__Title-sc-1lfyhjt-2 gyhgbg"
       >
         Criação de conta
       </p>
@@ -29,10 +29,10 @@ exports[`Wizard Component Should match the snapshot 1`] = `
       </span>
     </li>
     <li
-      className="Step__ProgressStep-sc-1lfyhjt-1 ORSnQ"
+      className="Step__ProgressStep-sc-1lfyhjt-1 kDkICH"
     >
       <p
-        className="Step__Title-sc-1lfyhjt-2 gGGPGK"
+        className="Step__Title-sc-1lfyhjt-2 gyhgbg"
       >
         Plano Forma de pagamento
       </p>
