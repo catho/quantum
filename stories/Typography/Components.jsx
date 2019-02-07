@@ -1,17 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import LinkTo from '@storybook/addon-links/react';
-import { HowToImport, Title } from '@catho-private/quantum-storybook-ui';
+import { Title } from '@catho-private/quantum-storybook-ui';
 
 import Colors from '../../components/Colors';
+import { Title as QuantumTitle } from '../../components/GlobalStyle';
 
 const Font = styled.div`
-  font-family: Oxygen;
-`;
-
-const H = styled.span`
-  font-size: ${props => props.size}px;
-  color: ${Colors.SECONDARY['900']};
+  * {
+    font-family: Montserrat, sans-serif !important;
+  }
 `;
 
 const Link = styled.a`
@@ -35,10 +32,6 @@ const Tr = styled.tr`
   height: 54px;
 `;
 
-const Td = styled.td`
-  width: 150px;
-`;
-
 const Blockquote = styled.blockquote`
   color: #999;
   font-size: 12px;
@@ -60,67 +53,88 @@ const Li = styled.li`
   line-height: 24px;
 `;
 
-const Typography = () => (
+const Components = () => (
   <Font>
-    <p>
-      <strong>Oxygen</strong> is the standard typeface for Catho on the web
-    </p>
-
-    <p>
-      In order to use the default Catho Typography, just import the font css:
-    </p>
-
-    <HowToImport from="@cathodevel/quantum/static/typography.css" />
-
-    <p>
-      This font also provides all the available{' '}
-      <LinkTo kind="1. Foundation" story="Icons">
-        Icons
-      </LinkTo>
-    </p>
-
     <Title>Headings</Title>
 
     <table>
       <tbody>
         <Tr>
-          <Td>
-            h1 <Small>24px</Small>
-          </Td>
+          <td style={{ width: 90 }}>
+            h1 <Small>48px</Small>
+          </td>
+          <td style={{ width: 220 }}>
+            <code>{'<Title />'}</code>
+          </td>
           <td>
-            <H size="24">Heading One</H>
+            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h1">
+              Heading One
+            </QuantumTitle>
           </td>
         </Tr>
         <Tr>
-          <Td>
-            h2 <Small>22px</Small>
-          </Td>
+          <td style={{ width: 90 }}>
+            h2 <Small>54px</Small>
+          </td>
+          <td style={{ width: 220 }}>
+            <code>{'<Title as="h2" />'}</code>
+          </td>
           <td>
-            <H size="22">Heading Two</H>
+            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h2">
+              Heading Two
+            </QuantumTitle>
           </td>
         </Tr>
         <Tr>
-          <Td>
-            h3 <Small>20px</Small>
-          </Td>
+          <td style={{ width: 90 }}>
+            h3 <Small>28px</Small>
+          </td>
+          <td style={{ width: 220 }}>
+            <code>{'<Title as="h3" />'}</code>
+          </td>
           <td>
-            <H size="20">Heading Three</H>
+            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h3">
+              Heading Three
+            </QuantumTitle>
           </td>
         </Tr>
         <Tr>
-          <Td>
-            h4 <Small>18px</Small>
-          </Td>
+          <td style={{ width: 90 }}>
+            h4 <Small>24px</Small>
+          </td>
+          <td style={{ width: 220 }}>
+            <code>{'<Title as="h4" />'}</code>
+          </td>
           <td>
-            <H size="18">Heading Four</H>
+            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h4">
+              Heading Four
+            </QuantumTitle>
           </td>
         </Tr>
         <Tr>
-          <Td>
-            h5 <Small>18px</Small>
-          </Td>
+          <td style={{ width: 90 }}>
+            h5 <Small>20px</Small>
+          </td>
+          <td style={{ width: 220 }}>
+            <code>{'<Title as="h5" />'}</code>
+          </td>
           <td>
-            <H size="18">Heading Five</H>
+            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h5">
+              Heading Five
+            </QuantumTitle>
+          </td>
+        </Tr>
+        <Tr>
+          <td style={{ width: 90 }}>
+            h6 <Small>18px</Small>
+          </td>
+          <td style={{ width: 220 }}>
+            <code>{'<Title as="h6" />'}</code>
+          </td>
+          <td>
+            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h6">
+              Heading Six
+            </QuantumTitle>
           </td>
         </Tr>
       </tbody>
@@ -131,17 +145,17 @@ const Typography = () => (
     <table>
       <tbody>
         <Tr>
-          <Td>
+          <td>
             a <Small>inherit</Small>
-          </Td>
+          </td>
           <td>
             <Link href="/">Lorem ipsum dolor sit amet.</Link>
           </td>
         </Tr>
         <Tr>
-          <Td>
+          <td>
             p <Small>16px</Small>
-          </Td>
+          </td>
           <td>
             <P>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -156,9 +170,9 @@ const Typography = () => (
           </td>
         </Tr>
         <Tr>
-          <Td>
+          <td>
             blockquote <Small>12px</Small>
-          </Td>
+          </td>
           <td>
             <Blockquote>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -181,9 +195,9 @@ const Typography = () => (
       <Caption>Lists have line-height of 24 pixels.</Caption>
       <tbody>
         <Tr>
-          <Td>
+          <td>
             ul {'>'} li <Small>16px</Small>
-          </Td>
+          </td>
           <td>
             <Ul style={{ marginBottom: '20px' }}>
               <Li>Lorem ipsum dolor sit amet</Li>
@@ -196,9 +210,9 @@ const Typography = () => (
           </td>
         </Tr>
         <Tr>
-          <Td>
+          <td>
             ol {'>'} li <Small>16px</Small>
-          </Td>
+          </td>
           <td>
             <Ol>
               <Li>Lorem ipsum dolor sit amet</Li>
@@ -215,4 +229,4 @@ const Typography = () => (
   </Font>
 );
 
-export default Typography;
+export default Components;

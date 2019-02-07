@@ -1,16 +1,16 @@
 import 'babel-polyfill';
-import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-import GlobalStyle from '../components/GlobalStyle';
+import { Frame } from '@catho-private/quantum-storybook-ui';
 import stories from './stories';
 
-const Frame = storyFn => (
-  <React.Fragment>
-    <GlobalStyle />
-    {storyFn()}
-  </React.Fragment>
-);
+// import GlobalStyle from '../components/GlobalStyle';
+// const Frame = storyFn => (
+//   <React.Fragment>
+//     <GlobalStyle />
+//     {storyFn()}
+//   </React.Fragment>
+// );
 
 addDecorator(
   withOptions({

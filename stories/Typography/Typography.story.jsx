@@ -1,11 +1,39 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { Heading } from '@catho-private/quantum-storybook-ui';
+import { Heading, TabbedView, Tab } from '@catho-private/quantum-storybook-ui';
 
-import Typography from './Typography';
+import Usage from './Usage';
+import Components from './Components';
 
-storiesOf('1. Foundation', module).add('Typography', () => (
-  <Heading title="Typography">
-    <Typography />
-  </Heading>
-));
+import GlobalStyle from '../../components/GlobalStyle';
+
+const QuantumFont = storyFn => (
+  <>
+    <GlobalStyle />
+    {storyFn()}
+  </>
+);
+
+const Font = styled.div`
+  * {
+    font-family: Montserrat, sans-serif !important;
+  }
+`;
+
+storiesOf('1. Foundation', module)
+  .addDecorator(QuantumFont)
+  .add('Typography', () => (
+    <Font>
+      <Heading title="Typography">
+        <TabbedView>
+          <Tab title="Usage">
+            <Usage />
+          </Tab>
+          <Tab title="Components">
+            <Components />
+          </Tab>
+        </TabbedView>
+      </Heading>
+    </Font>
+  ));
