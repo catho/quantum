@@ -1,25 +1,35 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {
-  query,
-  CSSVariables,
-  BREAKPOINTS,
-  hideCb,
-  noGuttersCb,
-} from './shared';
+import { query, BREAKPOINTS, hideCb, noGuttersCb } from './shared';
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
   box-sizing: border-box;
-  padding: var(--gutter);
+  padding: ${BREAKPOINTS.xsmall.gutter}px;
   margin-right: auto;
   margin-left: auto;
 
-  ${props => !props.fluid && query.small`max-width: ${BREAKPOINTS.small}px;`}
-  ${props => !props.fluid && query.medium`max-width: ${BREAKPOINTS.medium}px;`}
-  ${props => !props.fluid && query.large`max-width: ${BREAKPOINTS.large}px;`}
-  ${props => !props.fluid && query.xlarge`max-width: ${BREAKPOINTS.xlarge}px;`}
+  ${props =>
+    !props.fluid &&
+    query.small`
+    max-width: ${BREAKPOINTS.small.width}px;
+    padding: ${BREAKPOINTS.small.gutter}px;
+  `}
+  ${props =>
+    !props.fluid &&
+    query.medium`
+    max-width: ${BREAKPOINTS.medium.width}px;
+  `}
+  ${props =>
+    !props.fluid &&
+    query.large`
+    max-width: ${BREAKPOINTS.large.width}px;
+  `}
+  ${props =>
+    !props.fluid &&
+    query.xlarge`
+    max-width: ${BREAKPOINTS.xlarge.width}px;
+  `}
 
   ${hideCb}
   ${noGuttersCb}
@@ -41,9 +51,4 @@ Container.defaultProps = {
 
 Container.displayName = 'Container';
 
-export default props => (
-  <>
-    <CSSVariables />
-    <Container {...props} />
-  </>
-);
+export default Container;

@@ -23,297 +23,262 @@ const StyledCol = styled(Col)`
   padding-top: 10px;
 `;
 
-const ViewportTable = () => (
-  <Table>
-    <thead>
-      <tr>
-        <th>Grid</th>
-        <th>
-          <a href="https://getbootstrap.com/docs/3.3/css/#grid">Bootstrap</a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>phone</td>
-        <td>xs</td>
-      </tr>
-      <tr>
-        <td>tablet</td>
-        <td>sm</td>
-      </tr>
-      <tr>
-        <td>desktop</td>
-        <td>md</td>
-      </tr>
-      <tr>
-        <td>large</td>
-        <td>lg</td>
-      </tr>
-      <tr>
-        <td>hd</td>
-        <td>xl</td>
-      </tr>
-    </tbody>
-  </Table>
-);
-
 const SizesTable = () => (
   <Table>
     <tbody>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>Breakpoint Range (dp)</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>Portrait</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>Landscape</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>Window</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>Columns</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>Margins / Gutters*</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>0 – 359</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>small handset</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>xsmall</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>4</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>16</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>360 – 399</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>medium handset</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>xsmall</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>4</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>16</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>400 – 479</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>large handset</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>xsmall</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>4</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>16</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>480 – 599</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>large handset</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>small handset</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>xsmall</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>4</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>16</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>600 – 719</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>small tablet</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>medium handset</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>small</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>8</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>16</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>720 – 839</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>large tablet</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>large handset</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>small</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>8</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>840 – 959</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>large tablet</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>large handset</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>small</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>12</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>960 – 1023</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>small tablet</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>small</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>12</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>1024 – 1279</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>large tablet</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>medium</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>12</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>1280 – 1439</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>large tablet</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>medium</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>12</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>1440 – 1599</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>large</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>12</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>1600 – 1919</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>large</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>12</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
       <tr>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>1920 +</p>
         </td>
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1" />
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
           <p>xlarge</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>12</p>
         </td>
-        <td colspan="1" rowspan="1">
+        <td colSpan="1" rowSpan="1">
           <p>24</p>
         </td>
       </tr>
@@ -397,48 +362,48 @@ const MobileDesktopExample = () => (
   <React.Fragment>
     <Container fluid>
       <StyledRow>
-        <StyledCol xsmall={4} small={8}>
-          {'<Col xsmall={4} small={8}>'}
+        <StyledCol xsmall={2} small={8}>
+          {'<Col xsmall={2} small={8}>'}
         </StyledCol>
-        <StyledCol xsmall={4} small={4}>
-          {'<Col xsmall={6} small={4}>'}
-        </StyledCol>
-      </StyledRow>
-
-      <StyledRow>
-        <StyledCol xsmall={4} small={4}>
-          {'<Col xsmall={4} small={4}>'}
-        </StyledCol>
-        <StyledCol xsmall={4} small={4}>
-          {'<Col xsmall={4} small={4}>'}
-        </StyledCol>
-        <StyledCol xsmall={4} small={4}>
-          {'<Col xsmall={4} small={4}>'}
+        <StyledCol xsmall={2} small={4}>
+          {'<Col xsmall={2} small={4}>'}
         </StyledCol>
       </StyledRow>
 
       <StyledRow>
-        <StyledCol xsmall={4}>{'<Col xsmall={4}>'}</StyledCol>
-        <StyledCol xsmall={4}>{'<Col xsmall={4}>'}</StyledCol>
+        <StyledCol xsmall={4} small={4}>
+          {'<Col xsmall={4} small={4}>'}
+        </StyledCol>
+        <StyledCol xsmall={4} small={4}>
+          {'<Col xsmall={4} small={4}>'}
+        </StyledCol>
+        <StyledCol xsmall={4} small={4}>
+          {'<Col xsmall={4} small={4}>'}
+        </StyledCol>
+      </StyledRow>
+
+      <StyledRow>
+        <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
+        <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
       </StyledRow>
     </Container>
 
     <Highlight language="javascript" className="highlight">
       {`
   <Row>
-    <Col xsmall={12} medium={8}>...</Col>
-    <Col xsmall={6} medium={4}>...</Col>
+    <Col xsmall={2} small={8}>...</Col>
+    <Col xsmall={2} small={4}>...</Col>
   </Row>
 
   <Row>
-    <Col xsmall={6} medium={4}>...</Col>
-    <Col xsmall={6} medium={4}>...</Col>
-    <Col xsmall={6} medium={4}>...</Col>
+    <Col xsmall={4} small={4}>...</Col>
+    <Col xsmall={4} small={4}>...</Col>
+    <Col xsmall={4} small={4}>...</Col>
   </Row>
 
   <Row>
-    <Col xsmall={6}>...</Col>
-    <Col xsmall={6}>...</Col>
+    <Col xsmall={2}>...</Col>
+    <Col xsmall={2}>...</Col>
   </Row>
   `}
     </Highlight>
@@ -448,12 +413,12 @@ const MobileDesktopExample = () => (
 const HideExample = () => (
   <React.Fragment>
     <Container fluid>
-      <Hide small>
+      <Hide xsmall>
         <StyledRow>
-          <StyledCol xsmall={12} medium={8}>
+          <StyledCol xsmall={2} small={4} medium={6}>
             ...
           </StyledCol>
-          <StyledCol xsmall={6} medium={4}>
+          <StyledCol xsmall={2} small={4} medium={6}>
             ...
           </StyledCol>
         </StyledRow>
@@ -553,9 +518,9 @@ const Grid = () => (
     <HorizontalExample />
     <Subtitle>Example: Mobile and desktop</Subtitle>
     <p>
-      Don’t want your columns to simply stack in smaller devices? Use the phone
-      and tablet device grid props by adding <code>{'phone={*}'}</code>
-      <code>{'tablet={*}'}</code> to your columns. See the example below for a
+      Don’t want your columns to simply stack in smaller devices? Use the xsmall
+      and small device grid props by adding <code>{'xsmall={*}'}</code>
+      <code>{'small={*}'}</code> to your columns. See the example below for a
       better idea of how it all works.
     </p>
     <MobileDesktopExample />
@@ -569,13 +534,13 @@ const Grid = () => (
       <code>{'<Col>'}</code> component, they are:
     </p>
     <ul>
-      <li>phone</li>
-      <li>tablet</li>
-      <li>desktop</li>
+      <li>xsmall</li>
+      <li>small</li>
+      <li>medium</li>
       <li>large</li>
-      <li>hd</li>
+      <li>xlarge</li>
     </ul>
-    <Subtitle>Example: Hiding elements in phone devices</Subtitle>
+    <Subtitle>Example: Hiding elements in xsmall devices</Subtitle>
     <HideExample />
     <Row>
       <GreyCol medium={3}>
