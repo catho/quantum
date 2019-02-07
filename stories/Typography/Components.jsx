@@ -9,6 +9,7 @@ import {
   Blockquote,
 } from '../../components/GlobalStyle';
 
+// eslint-disable-next-line react/prop-types
 const WithNunito = ({ component: Component, ...rest }) => {
   const Nunitted = styled(Component)`
     & {
@@ -203,7 +204,7 @@ const Components = () => (
             </LinkTo>
           </td>
           <td>
-            <WithNunito component={'ul'}>
+            <WithNunito component="ul">
               <li>Lorem ipsum dolor sit amet</li>
               <li>
                 Sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -223,7 +224,7 @@ const Components = () => (
             </LinkTo>
           </td>
           <td>
-            <WithNunito component={'ol'}>
+            <WithNunito component="ol">
               <li>Lorem ipsum dolor sit amet</li>
               <li>
                 Sed do eiusmod tempor incididunt ut labore et dolore magna
