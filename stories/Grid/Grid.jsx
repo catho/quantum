@@ -432,11 +432,6 @@ const HideExample = () => (
   </React.Fragment>
 );
 
-const GreyCol = styled(Col)`
-  background-color: #ccc;
-  border: 1px solid #000;
-`;
-
 const Grid = () => (
   <React.Fragment>
     <p>
