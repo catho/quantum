@@ -2,26 +2,56 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { BREAKPOINTS, query } from './shared';
 
-const columnSize = (
-  { xsmall, small = xsmall, medium = small, large = medium, xlarge = large },
+const columnPosition = (
+  {
+    xsmall,
+    small = xsmall,
+    medium = small,
+    large = medium,
+    xlarge = large,
+    'xsmall-offset': xsmallOffset,
+    'small-offset': smallOffset = xsmallOffset,
+    'medium-offset': mediumOffset = smallOffset,
+    'large-offset': largeOffset = mediumOffset,
+    'xlarge-offset': xlargeOffset = largeOffset,
+  },
   breakpoint,
 ) => {
   const q = query[breakpoint];
-  const size =
-    {
-      xsmall,
-      small,
-      medium,
-      large,
-      xlarge,
-    }[breakpoint] || 12;
 
-  return q`grid-column-start: span ${size};`;
+  const { size, offset } = {
+    xsmall: {
+      size: xsmall,
+      offset: xsmallOffset,
+    },
+    small: {
+      size: small,
+      offset: smallOffset,
+    },
+    medium: {
+      size: medium,
+      offset: mediumOffset,
+    },
+    large: {
+      size: large,
+      offset: largeOffset,
+    },
+    xlarge: {
+      size: xlarge,
+      offset: xlargeOffset,
+    },
+  }[breakpoint];
+
+  const offsetStyle = offset ? `${offset + 1}/` : '';
+
+  return q`grid-column: ${offsetStyle} span ${size || 12};`;
 };
 
 const Col = styled.div`
   ${props =>
-    Object.keys(BREAKPOINTS).map(breakpoint => columnSize(props, breakpoint))}
+    Object.keys(BREAKPOINTS).map(breakpoint =>
+      columnPosition(props, breakpoint),
+    )}
   word-break: break-word;
   box-sizing: border-box;
 `;
@@ -32,6 +62,11 @@ Col.propTypes = {
   medium: PropTypes.number,
   large: PropTypes.number,
   xlarge: PropTypes.number,
+  'xsmall-offset': PropTypes.number,
+  'small-offset': PropTypes.number,
+  'medium-offset': PropTypes.number,
+  'large-offset': PropTypes.number,
+  'xlarge-offset': PropTypes.number,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(BREAKPOINTS)),
     PropTypes.arrayOf(PropTypes.string),

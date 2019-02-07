@@ -14,7 +14,8 @@ import { Container, Row, Col, Hide } from '../../components/Grid';
 const StyledCol = styled(Col)`
   background-color: ${Colors.SECONDARY['100']};
   border: 1px solid ${Colors.SECONDARY['200']};
-  padding: 10px;
+  padding: 8px;
+  font-size: 14px;
 `;
 
 const SizesTable = () => (
@@ -552,41 +553,108 @@ const Grid = () => (
       <StyledCol medium={9}>
         <Container fluid>
           <Row>
-            <StyledCol xsmall={2} medium={6}>
-              ø
+            {Array(12)
+              .fill()
+              .map((_, i) => (
+                <StyledCol xsmall={1}>{i + 1}</StyledCol>
+              ))}
+          </Row>
+          <Row>
+            <StyledCol xsmall={2} medium={6} medium-offset={2}>
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6 medium-offset = 2
+              </Hide>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={4}>
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                4
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
             <StyledCol xsmall={2} medium={6}>
-              ø
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              ø
+              <Hide medium large xlarge>
+                2
+              </Hide>
+              <Hide xsmall small>
+                6
+              </Hide>
             </StyledCol>
           </Row>
         </Container>
