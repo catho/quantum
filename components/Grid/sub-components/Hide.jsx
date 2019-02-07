@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { hide } from './shared/media';
+import { hideQueries } from './shared/media';
 
 const Hide = styled.div`
-  ${props => props.xlarge && hide.xlarge()}
-  ${props => props.large && hide.large()}
-  ${props => props.medium && hide.medium()}
-  ${props => props.small && hide.small()}
-  ${props => props.xsmall && hide.xsmall()}
+  ${props => props.xlarge && hideQueries.xlarge()}
+  ${props => props.large && hideQueries.large()}
+  ${props => props.medium && hideQueries.medium()}
+  ${props => props.small && hideQueries.small()}
+  ${props => props.xsmall && hideQueries.xsmall()}
 `;
 
 Hide.propTypes = {

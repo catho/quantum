@@ -10,7 +10,7 @@ const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
   return acc;
 }, {});
 
-const hide = {
+const hideQueries = {
   xlarge: () => `
     @media (min-width: ${BREAKPOINTS.xlarge.width + 1}px) {
       display: none !important;
@@ -44,4 +44,4 @@ const hide = {
   `,
 };
 
-export { query, hide };
+export { query, hideQueries };

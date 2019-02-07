@@ -1,38 +1,23 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { query, BREAKPOINTS, hideCb, noGuttersCb } from './shared';
+import { query, BREAKPOINTS, hide, noGutters, CSSVariables } from './shared';
+
+const maxWidth = ({ fluid }, name) =>
+  !fluid && query[name]`max-width: ${BREAKPOINTS[name].width}px;`;
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
   box-sizing: border-box;
-  padding: ${BREAKPOINTS.xsmall.gutter}px;
+  padding: var(--gutter);
   margin-right: auto;
   margin-left: auto;
 
   ${props =>
-    !props.fluid &&
-    query.small`
-    max-width: ${BREAKPOINTS.small.width}px;
-    padding: ${BREAKPOINTS.small.gutter}px;
-  `}
-  ${props =>
-    !props.fluid &&
-    query.medium`
-    max-width: ${BREAKPOINTS.medium.width}px;
-  `}
-  ${props =>
-    !props.fluid &&
-    query.large`
-    max-width: ${BREAKPOINTS.large.width}px;
-  `}
-  ${props =>
-    !props.fluid &&
-    query.xlarge`
-    max-width: ${BREAKPOINTS.xlarge.width}px;
-  `}
+    Object.keys(BREAKPOINTS).map(breakpoint => maxWidth(props, breakpoint))}
 
-  ${hideCb}
-  ${noGuttersCb}
+  ${hide}
+  ${noGutters}
 `;
 
 Container.propTypes = {
@@ -51,4 +36,9 @@ Container.defaultProps = {
 
 Container.displayName = 'Container';
 
-export default Container;
+export default props => (
+  <>
+    <CSSVariables />
+    <Container {...props} />
+  </>
+);

@@ -1,11 +1,9 @@
-import { hide } from './media';
+import { hideQueries } from './media';
 
-const hideCb = props =>
-  props.hide && [].concat([], props.hide).map(prop => hide[prop]());
-const noGuttersCb = ({ 'no-gutters': noGutters }) =>
-  noGutters && '--gutter: 0px;';
-const collumnSize = (breakpoint, queryCb) =>
-  breakpoint &&
-  queryCb`width: calc(${breakpoint} / var(--grid-column) * 100% - var(--gutter));`;
+const hide = props =>
+  props.hide && [].concat([], props.hide).map(prop => hideQueries[prop]());
 
-export { hideCb, noGuttersCb, collumnSize };
+const noGutters = ({ 'no-gutters': noGuttersProp }) =>
+  noGuttersProp && '--gutter: 0px;';
+
+export { hide, noGutters };

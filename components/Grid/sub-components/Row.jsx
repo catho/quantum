@@ -1,20 +1,14 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { BREAKPOINTS, hideCb, noGuttersCb, query } from './shared';
+import { BREAKPOINTS, hide, noGutters } from './shared';
 
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * ${BREAKPOINTS.xsmall.gutter}px / 2);
-  margin-left: calc(-1 * ${BREAKPOINTS.xsmall.gutter}px / 2);
+  margin: 0 calc(-1 * var(--gutter) / 2);
 
-  ${query.small`
-    margin-right: calc(-1 * ${BREAKPOINTS.small.gutter}px / 2);
-    margin-left: calc(-1 * ${BREAKPOINTS.small.gutter}px / 2);
-  `}
-
-  ${hideCb}
-  ${noGuttersCb}
+  ${hide}
+  ${noGutters}
 `;
 
 Row.propTypes = {
