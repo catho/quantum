@@ -1,9 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import LinkTo from '@storybook/addon-links/react';
 import { Title } from '@catho-private/quantum-storybook-ui';
 
-import Colors from '../../components/Colors';
-import { Title as QuantumTitle } from '../../components/GlobalStyle';
+import {
+  Title as QuantumTitle,
+  Subtitle,
+  Blockquote,
+} from '../../components/GlobalStyle';
+
+const WithNunito = ({ component: Component, ...rest }) => {
+  const Nunitted = styled(Component)`
+    & {
+      font-family: 'Nunito Sans' !important;
+    }
+  `;
+  return <Nunitted {...rest} />;
+};
 
 const Font = styled.div`
   * {
@@ -11,46 +24,20 @@ const Font = styled.div`
   }
 `;
 
-const Link = styled.a`
-  color: ${Colors.PRIMARY['500']};
-`;
-
-const P = styled.p`
-  font-size: 16px;
-`;
-
 const Small = styled.small`
   font-size: 10px;
 `;
 
-const Caption = styled.caption`
-  padding: 10px;
-  text-align: left;
-`;
-
 const Tr = styled.tr`
   height: 54px;
-`;
 
-const Blockquote = styled.blockquote`
-  color: #999;
-  font-size: 12px;
-  line-height: 18px;
-  margin: 0;
-`;
+  td:first-child {
+    width: 140px;
+  }
 
-const Ul = styled.ul`
-  margin: 0;
-  padding-left: 18px;
-`;
-
-const Ol = styled.ol`
-  margin: 0;
-  padding-left: 18px;
-`;
-
-const Li = styled.li`
-  line-height: 24px;
+  td:nth-child(2) {
+    width: 180px;
+  }
 `;
 
 const Components = () => (
@@ -60,81 +47,90 @@ const Components = () => (
     <table>
       <tbody>
         <Tr>
-          <td style={{ width: 90 }}>
+          <td>
             h1 <Small>48px</Small>
           </td>
-          <td style={{ width: 220 }}>
+          <td>
             <code>{'<Title />'}</code>
           </td>
           <td>
-            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h1">
-              Heading One
-            </QuantumTitle>
+            <WithNunito component={QuantumTitle}>Heading One</WithNunito>
           </td>
         </Tr>
         <Tr>
-          <td style={{ width: 90 }}>
+          <td>
             h2 <Small>54px</Small>
           </td>
-          <td style={{ width: 220 }}>
+          <td>
             <code>{'<Title as="h2" />'}</code>
           </td>
           <td>
-            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h2">
+            <WithNunito component={QuantumTitle} as="h2">
               Heading Two
-            </QuantumTitle>
+            </WithNunito>
           </td>
         </Tr>
         <Tr>
-          <td style={{ width: 90 }}>
+          <td>
             h3 <Small>28px</Small>
           </td>
-          <td style={{ width: 220 }}>
+          <td>
             <code>{'<Title as="h3" />'}</code>
           </td>
           <td>
-            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h3">
+            <WithNunito component={QuantumTitle} as="h3">
               Heading Three
-            </QuantumTitle>
+            </WithNunito>
           </td>
         </Tr>
         <Tr>
-          <td style={{ width: 90 }}>
+          <td>
             h4 <Small>24px</Small>
           </td>
-          <td style={{ width: 220 }}>
+          <td>
             <code>{'<Title as="h4" />'}</code>
           </td>
           <td>
-            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h4">
+            <WithNunito component={QuantumTitle} as="h4">
               Heading Four
-            </QuantumTitle>
+            </WithNunito>
           </td>
         </Tr>
         <Tr>
-          <td style={{ width: 90 }}>
+          <td>
             h5 <Small>20px</Small>
           </td>
-          <td style={{ width: 220 }}>
+          <td>
             <code>{'<Title as="h5" />'}</code>
           </td>
           <td>
-            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h5">
+            <WithNunito component={QuantumTitle} as="h5">
               Heading Five
-            </QuantumTitle>
+            </WithNunito>
           </td>
         </Tr>
         <Tr>
-          <td style={{ width: 90 }}>
+          <td>
             h6 <Small>18px</Small>
           </td>
-          <td style={{ width: 220 }}>
+          <td>
             <code>{'<Title as="h6" />'}</code>
           </td>
           <td>
-            <QuantumTitle style={{ fontFamily: 'NunitoSans' }} as="h6">
+            <WithNunito component={QuantumTitle} as="h6">
               Heading Six
-            </QuantumTitle>
+            </WithNunito>
+          </td>
+        </Tr>
+        <Tr>
+          <td>
+            Subtitle <Small>14px</Small>
+          </td>
+          <td>
+            <code>{'<Subtitle />'}</code>
+          </td>
+          <td>
+            <WithNunito component={Subtitle}>Heading Two</WithNunito>
           </td>
         </Tr>
       </tbody>
@@ -144,6 +140,7 @@ const Components = () => (
 
     <table>
       <tbody>
+        {/* // TODO: waiting spec
         <Tr>
           <td>
             a <Small>inherit</Small>
@@ -168,13 +165,16 @@ const Components = () => (
               gravida.
             </P>
           </td>
-        </Tr>
+        </Tr> */}
         <Tr>
           <td>
             blockquote <Small>12px</Small>
           </td>
           <td>
-            <Blockquote>
+            <code>{'<Blockquote />'}</code>
+          </td>
+          <td>
+            <WithNunito component={Blockquote}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               lorem magna, molestie at pretium non, consequat sit amet ante.
               Aenean et ultrices elit. Suspendisse quis urna consequat,
@@ -183,7 +183,7 @@ const Components = () => (
               maximus est est, sed ullamcorper mi pellentesque at. Nunc
               facilisis blandit felis sed sollicitudin. Proin rutrum consectetur
               gravida.
-            </Blockquote>
+            </WithNunito>
           </td>
         </Tr>
       </tbody>
@@ -192,21 +192,25 @@ const Components = () => (
     <Title>Lists</Title>
 
     <table>
-      <Caption>Lists have line-height of 24 pixels.</Caption>
       <tbody>
         <Tr>
           <td>
             ul {'>'} li <Small>16px</Small>
           </td>
           <td>
-            <Ul style={{ marginBottom: '20px' }}>
-              <Li>Lorem ipsum dolor sit amet</Li>
-              <Li>
+            <LinkTo kind="10. List" story="List">
+              {'<List />'}
+            </LinkTo>
+          </td>
+          <td>
+            <WithNunito component={'ul'}>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>
                 Sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua
-              </Li>
-              <Li>Consectetur adipiscing elit</Li>
-            </Ul>
+              </li>
+              <li>Consectetur adipiscing elit</li>
+            </WithNunito>
           </td>
         </Tr>
         <Tr>
@@ -214,14 +218,19 @@ const Components = () => (
             ol {'>'} li <Small>16px</Small>
           </td>
           <td>
-            <Ol>
-              <Li>Lorem ipsum dolor sit amet</Li>
-              <Li>
+            <LinkTo kind="10. List" story="List">
+              {'<List />'}
+            </LinkTo>
+          </td>
+          <td>
+            <WithNunito component={'ol'}>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>
                 Sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua
-              </Li>
-              <Li>Consectetur adipiscing elit</Li>
-            </Ol>
+              </li>
+              <li>Consectetur adipiscing elit</li>
+            </WithNunito>
           </td>
         </Tr>
       </tbody>

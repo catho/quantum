@@ -4,14 +4,6 @@ import { withOptions } from '@storybook/addon-options';
 import { Frame } from '@catho-private/quantum-storybook-ui';
 import stories from './stories';
 
-// import GlobalStyle from '../components/GlobalStyle';
-// const Frame = storyFn => (
-//   <React.Fragment>
-//     <GlobalStyle />
-//     {storyFn()}
-//   </React.Fragment>
-// );
-
 addDecorator(
   withOptions({
     name: 'Quantum',

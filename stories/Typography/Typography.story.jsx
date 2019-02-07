@@ -19,6 +19,15 @@ const Font = styled.div`
   * {
     font-family: Montserrat, sans-serif !important;
   }
+
+  & > h1:first-child {
+    line-height: 1;
+    letter-spacing: inherit;
+  }
+
+  p strong {
+    font-weight: 700;
+  }
 `;
 
 storiesOf('1. Foundation', module)

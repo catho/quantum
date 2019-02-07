@@ -35,7 +35,7 @@ const Typography = createGlobalStyle`
     line-height: 42px;
     letter-spacing: 0.4px;
   }
-  
+
   h4 {
     font-size: 24px;
     line-height: 36px;
@@ -52,6 +52,15 @@ const Typography = createGlobalStyle`
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.3px;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding-left: 18px;
+
+    & li {
+      line-height: 24px;
+    }
   }
 `;
 
