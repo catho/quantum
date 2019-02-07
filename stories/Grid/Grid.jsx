@@ -60,54 +60,262 @@ const ViewportTable = () => (
 
 const SizesTable = () => (
   <Table>
-    <thead>
-      <tr>
-        <th />
-        <th>
-          Phone <small>{'(<768px)'}</small>{' '}
-        </th>
-        <th>
-          Tablet <small>{'(>768px)'}</small>{' '}
-        </th>
-        <th>
-          Desktop <small>{'(>=980px)'}</small>{' '}
-        </th>
-        <th>
-          Large <small>{'(>=1280px)'}</small>{' '}
-        </th>
-        <th>
-          HD <small>{'(>=1440px)'}</small>{' '}
-        </th>
-      </tr>
-    </thead>
     <tbody>
       <tr>
-        <th scope="row">Container width</th>
-        <td>540px</td>
-        <td>720px</td>
-        <td>980px</td>
-        <td>1200px</td>
-        <td>1330px</td>
+        <td colspan="1" rowspan="1">
+          <p>Breakpoint Range (dp)</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Portrait</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Landscape</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Window</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Columns</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Margins / Gutters*</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row"># of columns</th>
-        <td colSpan="5">12</td>
+        <td colspan="1" rowspan="1">
+          <p>0 – 359</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>small handset</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>xsmall</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>4</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Gutter width</th>
-        <td colSpan="5">30px (15px on each side of a column)</td>
+        <td colspan="1" rowspan="1">
+          <p>360 – 399</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>medium handset</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>xsmall</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>4</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Nestable</th>
-        <td colSpan="5">Yes</td>
+        <td colspan="1" rowspan="1">
+          <p>400 – 479</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>large handset</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>xsmall</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>4</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Offsets</th>
-        <td colSpan="5">Soon...</td>
+        <td colspan="1" rowspan="1">
+          <p>480 – 599</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>large handset</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>small handset</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>xsmall</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>4</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Column ordering</th>
-        <td colSpan="5">Soon...</td>
+        <td colspan="1" rowspan="1">
+          <p>600 – 719</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>small tablet</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>medium handset</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>small</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>8</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>16</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>720 – 839</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>large tablet</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>large handset</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>small</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>8</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>840 – 959</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>large tablet</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>large handset</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>small</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>12</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>960 – 1023</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>small tablet</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>small</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>12</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>1024 – 1279</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>large tablet</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>medium</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>12</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>1280 – 1439</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>large tablet</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>medium</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>12</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>1440 – 1599</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>large</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>12</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>1600 – 1919</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>large</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>12</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>1920 +</p>
+        </td>
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1" />
+        <td colspan="1" rowspan="1">
+          <p>xlarge</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>12</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>24</p>
+        </td>
       </tr>
     </tbody>
   </Table>
@@ -281,11 +489,7 @@ const Grid = () => (
       to each resolution.
     </p>
     <HowToImport importModules="Container, Row, Col, Hide" />
-    <p>
-      Here’s a comparison table of viewports. Ours on left - Bootstrap’s on
-      right.
-    </p>
-    <ViewportTable />
+
     <Title>How it works</Title>
     <Subtitle>Containers</Subtitle>
     <p>
@@ -331,8 +535,13 @@ const Grid = () => (
     </p>
     <Subtitle>Breakpoints</Subtitle>
     <p>
-      The grid system appropriately scales up to 12 columns as the device or
-      viewport size increases. It includes predefined viewports, they are:
+      Material Design provides responsive layouts based on the following column
+      structures. Layouts using 4-column, 8-column, and 12-column grids are
+      available for use across different screens, devices, and orientations.
+    </p>
+    <p>
+      Each breakpoint range determines the number of columns, and recommended
+      margins and gutters, for each display size.
     </p>
     <SizesTable />
     <Subtitle>Example: Stacked-to-horizontal</Subtitle>
