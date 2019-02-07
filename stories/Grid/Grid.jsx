@@ -11,16 +11,10 @@ import {
 import Colors from '../../components/Colors';
 import { Container, Row, Col, Hide } from '../../components/Grid';
 
-const StyledRow = styled(Row)`
-  margin-bottom: 10px;
-`;
-
 const StyledCol = styled(Col)`
   background-color: ${Colors.SECONDARY['100']};
   border: 1px solid ${Colors.SECONDARY['200']};
-  font-size: 14px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px;
 `;
 
 const SizesTable = () => (
@@ -289,7 +283,7 @@ const SizesTable = () => (
 const HorizontalExample = () => (
   <React.Fragment>
     <Container fluid>
-      <StyledRow>
+      <Row>
         <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
         <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
         <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
@@ -302,23 +296,23 @@ const HorizontalExample = () => (
         <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
         <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
         <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-      </StyledRow>
+      </Row>
 
-      <StyledRow>
+      <Row>
         <StyledCol medium={8}>{'<Col medium={8}>'}</StyledCol>
         <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
-      </StyledRow>
+      </Row>
 
-      <StyledRow>
+      <Row>
         <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
         <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
         <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
-      </StyledRow>
+      </Row>
 
-      <StyledRow>
+      <Row>
         <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
         <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
-      </StyledRow>
+      </Row>
     </Container>
 
     <Highlight language="javascript" className="highlight">
@@ -361,16 +355,16 @@ const HorizontalExample = () => (
 const MobileDesktopExample = () => (
   <React.Fragment>
     <Container fluid>
-      <StyledRow>
+      <Row>
         <StyledCol xsmall={2} small={8}>
           {'<Col xsmall={2} small={8}>'}
         </StyledCol>
         <StyledCol xsmall={2} small={4}>
           {'<Col xsmall={2} small={4}>'}
         </StyledCol>
-      </StyledRow>
+      </Row>
 
-      <StyledRow>
+      <Row>
         <StyledCol xsmall={4} small={4}>
           {'<Col xsmall={4} small={4}>'}
         </StyledCol>
@@ -380,12 +374,12 @@ const MobileDesktopExample = () => (
         <StyledCol xsmall={4} small={4}>
           {'<Col xsmall={4} small={4}>'}
         </StyledCol>
-      </StyledRow>
+      </Row>
 
-      <StyledRow>
+      <Row>
         <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
         <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
-      </StyledRow>
+      </Row>
     </Container>
 
     <Highlight language="javascript" className="highlight">
@@ -414,14 +408,14 @@ const HideExample = () => (
   <React.Fragment>
     <Container fluid>
       <Hide xsmall>
-        <StyledRow>
+        <Row>
           <StyledCol xsmall={2} small={4} medium={6}>
             ...
           </StyledCol>
           <StyledCol xsmall={2} small={4} medium={6}>
             ...
           </StyledCol>
-        </StyledRow>
+        </Row>
       </Hide>
     </Container>
 
@@ -543,7 +537,7 @@ const Grid = () => (
     <Subtitle>Example: Hiding elements in xsmall devices</Subtitle>
     <HideExample />
     <Row>
-      <GreyCol medium={3}>
+      <StyledCol medium={3}>
         <Hide small medium large xlarge>
           xsmall
         </Hide>
@@ -559,49 +553,49 @@ const Grid = () => (
         <Hide xsmall small medium large>
           xlarge
         </Hide>
-      </GreyCol>
-      <GreyCol medium={9}>
+      </StyledCol>
+      <StyledCol medium={9}>
         <Container fluid>
           <Row>
-            <GreyCol xsmall={2} medium={6}>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
-            <GreyCol xsmall={2} medium={6}>
+            </StyledCol>
+            <StyledCol xsmall={2} medium={6}>
               ø
-            </GreyCol>
+            </StyledCol>
           </Row>
         </Container>
-      </GreyCol>
+      </StyledCol>
     </Row>
   </React.Fragment>
 );

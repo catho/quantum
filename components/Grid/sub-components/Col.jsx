@@ -1,32 +1,29 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { query, BREAKPOINTS, hide } from './shared';
+import { BREAKPOINTS, query } from './shared';
 
-const collumnConfig = (
+const columnSize = (
   { xsmall, small = xsmall, medium = small, large = medium, xlarge = large },
-  breakpointName,
+  breakpoint,
 ) => {
-  const sizes = { xsmall, small, medium, large, xlarge };
-  const columnSize = sizes[breakpointName];
-  const { columns } = BREAKPOINTS[breakpointName];
+  const q = query[breakpoint];
+  const size =
+    {
+      xsmall,
+      small,
+      medium,
+      large,
+      xlarge,
+    }[breakpoint] || 12;
 
-  return query[breakpointName]`
-    width: calc(${columnSize || columns} / ${columns} * 100% - var(--gutter));
-    margin: calc(var(--gutter) / 2);
-  `;
+  return q`grid-column-start: span ${size};`;
 };
 
 const Col = styled.div`
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  box-sizing: border-box;
-
   ${props =>
-    Object.keys(BREAKPOINTS).map(breakpoint =>
-      collumnConfig(props, breakpoint),
-    )}
-  ${hide}
+    Object.keys(BREAKPOINTS).map(breakpoint => columnSize(props, breakpoint))}
+  word-break: break-word;
+  box-sizing: border-box;
 `;
 
 Col.propTypes = {

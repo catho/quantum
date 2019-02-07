@@ -6,7 +6,7 @@ export default createGlobalStyle`
     --gutter: 16px;
   }
 
-  @media (min-width: ${BREAKPOINTS.small}px) {
+  @media (min-width: ${BREAKPOINTS.small.width}px) {
     :root {
       --gutter: 24px;
     }

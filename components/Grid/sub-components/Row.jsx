@@ -1,14 +1,29 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { BREAKPOINTS, hide, noGutters } from './shared';
+import { BREAKPOINTS, hide, noGutters, query } from './shared';
+
+const queryStyle = () =>
+  Object.entries(BREAKPOINTS).map(
+    ([name, { columns }]) =>
+      query[name]`
+      grid-template-columns: repeat(${columns}, 1fr);
+    `,
+  );
 
 const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 calc(-1 * var(--gutter) / 2);
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--gutter);
+  grid-auto-columns: max-content;
+  ${queryStyle}
 
   ${hide}
   ${noGutters}
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 Row.propTypes = {
