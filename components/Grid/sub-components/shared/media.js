@@ -17,17 +17,23 @@ const hide = {
     }
   `,
   large: () => `
-    @media (min-width: ${BREAKPOINTS.large}px) {
+    @media (min-width: ${BREAKPOINTS.large + 1}px) and (max-width: ${
+    BREAKPOINTS.xlarge
+  }px) {
       display: none !important;
     }
   `,
   medium: () => `
-    @media (min-width: ${BREAKPOINTS.medium}px) {
+    @media (min-width: ${BREAKPOINTS.medium + 1}px) and (max-width: ${
+    BREAKPOINTS.large
+  }px) {
       display: none !important;
     }
   `,
   small: () => `
-    @media (min-width: ${BREAKPOINTS.small + 1}px) {
+    @media (min-width: ${BREAKPOINTS.small + 1}px) and (max-width: ${
+    BREAKPOINTS.medium
+  }px) {
       display: none !important;
     }
   `,

@@ -369,53 +369,62 @@ const Grid = () => (
     <Subtitle>Example: Hiding elements in phone devices</Subtitle>
     <HideExample />
     <Row>
-      <GreyCol xsmall={1}>xsmall</GreyCol>
-      <GreyCol xsmall={1}>xsmall</GreyCol>
-      <GreyCol xsmall={1}>xsmall</GreyCol>
-      <GreyCol xsmall={1}>xsmall</GreyCol>
-    </Row>
-    ------------------------------------
-    <Row>
-      <GreyCol small={1}>small 8</GreyCol>
-      <GreyCol small={1}>small 8</GreyCol>
-      <GreyCol small={1}>small 8</GreyCol>
-      <GreyCol small={1}>small 8</GreyCol>
-      <GreyCol small={1}>small 8</GreyCol>
-      <GreyCol small={1}>small 8</GreyCol>
-      <GreyCol small={1}>small 8</GreyCol>
-      <GreyCol small={1}>small 8</GreyCol>
-    </Row>
-    ------------------------------------
-    <Row>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-      <GreyCol small={1}>small 12</GreyCol>
-    </Row>
-    ------------------------------------
-    <Row hide="medium">
-      <GreyCol medium={3}>medium</GreyCol>
+      <GreyCol medium={3}>
+        <Hide small medium large xlarge>
+          xsmall
+        </Hide>
+        <Hide xsmall medium large xlarge>
+          small
+        </Hide>
+        <Hide xsmall small large xlarge>
+          medium
+        </Hide>
+        <Hide xsmall small medium xlarge>
+          large
+        </Hide>
+        <Hide xsmall small medium large>
+          xlarge
+        </Hide>
+      </GreyCol>
       <GreyCol medium={9}>
-        <Container fluid no-gutters>
+        <Container fluid>
           <Row>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
-            <GreyCol medium={6}>ø</GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
+            <GreyCol xsmall={2} medium={6}>
+              ø
+            </GreyCol>
           </Row>
         </Container>
       </GreyCol>

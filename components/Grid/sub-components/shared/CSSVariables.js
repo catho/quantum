@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalVars = createGlobalStyle`
+export default createGlobalStyle`
   :root {
     --gutter: 16px;
   }
@@ -11,5 +11,3 @@ const GlobalVars = createGlobalStyle`
     }
   }
 `;
-
-export default GlobalVars;

@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import BREAKPOINTS from './shared/breakpoints';
-import GlobalVars from './shared/variables';
-import { query, hide } from './shared/media';
+import {
+  query,
+  CSSVariables,
+  BREAKPOINTS,
+  hideCb,
+  noGuttersCb,
+} from './shared';
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
@@ -12,19 +16,17 @@ const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-  ${props => props.hide && [].concat([], props.hide).map(prop => hide[prop]())}
-
+  ${props => !props.fluid && query.small`max-width: ${BREAKPOINTS.small}px;`}
   ${props => !props.fluid && query.medium`max-width: ${BREAKPOINTS.medium}px;`}
   ${props => !props.fluid && query.large`max-width: ${BREAKPOINTS.large}px;`}
   ${props => !props.fluid && query.xlarge`max-width: ${BREAKPOINTS.xlarge}px;`}
 
-  ${props => props['no-gutters'] && '--gutter: 0px;'};
+  ${hideCb}
+  ${noGuttersCb}
 `;
 
 Container.propTypes = {
-  desktop: PropTypes.number,
-  large: PropTypes.number,
-  hd: PropTypes.number,
+  width: PropTypes.string,
   fluid: PropTypes.bool,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(BREAKPOINTS)),
@@ -34,13 +36,14 @@ Container.propTypes = {
 
 Container.defaultProps = {
   fluid: false,
+  'no-gutters': false,
 };
 
 Container.displayName = 'Container';
 
 export default props => (
   <>
-    <GlobalVars />
+    <CSSVariables />
     <Container {...props} />
   </>
 );

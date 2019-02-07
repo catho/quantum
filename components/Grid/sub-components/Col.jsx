@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import BREAKPOINTS from './shared/breakpoints';
-import GlobalVars from './shared/variables';
-import { query, hide } from './shared/media';
+import {
+  query,
+  CSSVariables,
+  BREAKPOINTS,
+  hideCb,
+  collumnSize,
+} from './shared';
 
 const Col = styled.div`
   position: relative;
@@ -24,39 +28,21 @@ const Col = styled.div`
     --grid-column: 12;
   }
 
-  ${props => props.hide && [].concat([], props.hide).map(prop => hide[prop]())}
+  ${hideCb}
 
-  ${props =>
-    props.xsmall &&
-    query.xsmall`width: calc(${
-      props.xsmall
-    } / var(--grid-column) * 100% - var(--gutter));`}
-  ${props =>
-    props.small &&
-    query.small`width: calc(${
-      props.small
-    } / var(--grid-column) * 100% - var(--gutter));`}
-  ${props =>
-    props.medium &&
-    query.medium`width: calc(${
-      props.medium
-    } / var(--grid-column) * 100% - var(--gutter));`}
-  ${props =>
-    props.large &&
-    query.large`width: calc(${
-      props.large
-    } / var(--grid-column) * 100% - var(--gutter));`}
-  ${props =>
-    props.xlarge &&
-    query.xlarge`width: calc(${
-      props.xlarge
-    } / var(--grid-column) * 100% - var(--gutter));`}
+  ${props => collumnSize(props.xsmall, query.xsmall)}
+  ${props => collumnSize(props.small, query.small)}
+  ${props => collumnSize(props.medium, query.medium)}
+  ${props => collumnSize(props.large, query.large)}
+  ${props => collumnSize(props.xlarge, query.xlarge)}
 `;
 
 Col.propTypes = {
-  desktop: PropTypes.number,
+  xsmall: PropTypes.number,
+  small: PropTypes.number,
+  medium: PropTypes.number,
   large: PropTypes.number,
-  hd: PropTypes.number,
+  xlarge: PropTypes.number,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(BREAKPOINTS)),
     PropTypes.arrayOf(PropTypes.string),
@@ -67,7 +53,7 @@ Col.displayName = 'Col';
 
 export default props => (
   <>
-    <GlobalVars />
+    <CSSVariables />
     <Col {...props} />
   </>
 );
