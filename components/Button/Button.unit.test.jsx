@@ -24,14 +24,10 @@ describe('Button component', () => {
       const primary = <Button skin="primary">primary</Button>;
       const secondary = <Button skin="secondary">secondary</Button>;
       const action = <Button skin="action">action</Button>;
-      const cancel = <Button skin="cancel">cancel</Button>;
-      const modal = <Button skin="modal">modal</Button>;
 
       expect(renderer.create(primary).toJSON()).toMatchSnapshot();
       expect(renderer.create(secondary).toJSON()).toMatchSnapshot();
       expect(renderer.create(action).toJSON()).toMatchSnapshot();
-      expect(renderer.create(cancel).toJSON()).toMatchSnapshot();
-      expect(renderer.create(modal).toJSON()).toMatchSnapshot();
     });
   });
 

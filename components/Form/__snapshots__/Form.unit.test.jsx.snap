@@ -161,10 +161,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+    className="Button__StyledButton-sc-1ovnfsw-1 kUUAMn"
     disabled={false}
     onClick={[Function]}
-    size="normal"
+    size="medium"
     type="submit"
   >
     

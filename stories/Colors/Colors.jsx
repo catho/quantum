@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Title, Subtitle } from '@catho-private/quantum-storybook-ui';
 
 export default () => (

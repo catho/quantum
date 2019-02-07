@@ -9,7 +9,7 @@ describe('Radio component', () => {
       <Modal.Header>Title</Modal.Header>
       <Modal.Content>Example Content</Modal.Content>
       <Modal.Footer>
-        <Button skin="modal">Cancel</Button>
+        <Button skin="primary">Cancel</Button>
         <Button>OK</Button>
       </Modal.Footer>
     </Modal>
@@ -25,7 +25,7 @@ describe('Radio component', () => {
         <Modal.Header>Title</Modal.Header>
         <Modal.Content>Example Content</Modal.Content>
         <Modal.Footer>
-          <Button skin="modal">Cancel</Button>
+          <Button skin="primary">Cancel</Button>
           <Button>OK</Button>
         </Modal.Footer>
       </Modal>,
@@ -40,7 +40,7 @@ describe('Radio component', () => {
         <Modal.Header>Title</Modal.Header>
         <Modal.Content>Example Content</Modal.Content>
         <Modal.Footer>
-          <Button skin="modal">Cancel</Button>
+          <Button skin="primary">Cancel</Button>
           <Button>OK</Button>
         </Modal.Footer>
       </Modal>,
