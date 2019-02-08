@@ -26,6 +26,7 @@ const ColorDescription = styled.div`
   font-size: 14px;
   padding: 15px;
   position: relative;
+  color: #333;
 `;
 
 const ColorProperties = styled.div`
@@ -98,9 +99,10 @@ export default () => (
 
     <Subtitle>Blue</Subtitle>
     <p>
-      É a brand color principal. Esta cor passa em AAA no contrast checker das
-      diretrizes WCAG por isso pode ser usada em diversos contextos como botões,
-      textos e headings, backgrounds, elementos gráficos e default states.
+      It is the main color brand. This color passes in AAA in the contrast
+      checker of the WCAG guidelines so it can be used in various contexts like
+      buttons, texts and headings, backgrounds, graphic elements and default
+      states.
     </p>
 
     <ColorSample hex={Colors.BLUE[500]} number={500} name="Blue" />
@@ -114,25 +116,25 @@ export default () => (
 
     <Subtitle>Sky</Subtitle>
     <p>
-      Ë uma cor secundária que pode ser usada somente em elementos de apoio como
-      backgrounds, elementos gráficos, ícones, strokes e estados informativos.
-      Não é recomendado usar esta cor em textos e headings pois ela não passa no
-      contrast checker da WCAG.
+      It is a secondary color that can be used only in support elements such as
+      backgrounds, graphic elements, icons, strokes and informational states. It
+      is not recommended to use this color in texts and headings because it does
+      not contrast checker from WCAG.
     </p>
     <ColorSample hex={Colors.SKY[500]} number={500} name="Sky" />
 
     <Subtitle>Cobalt</Subtitle>
     <p>
-      É outra cor secundária que pode ser usada em elementos de suporte como
-      backgrounds, elementos gráficos, ícones, textos e headings. Ela passa em
-      AAA nas diretrizes WCAG e por isso também é indicada para textos.
+      It is another secondary color that can be used in support elements like
+      backgrounds, graphic elements, icons, texts and headings. It goes through
+      AAA in the WCAG guidelines and so it is also suitable for texts.
     </p>
     <ColorSample hex={Colors.COBALT[500]} number={500} name="Cobalt" />
 
     <Subtitle>Pink</Subtitle>
     <p>
-      É usada principalmente em contextos de grande destaque como CTAs e
-      highlights. Evitar usar em contextos onde não incitam ação ou destaque.
+      It is used mainly in contexts of great prominence as CTAs and highlights
+      Avoid using in contexts where they do not incite action or highlight.
     </p>
     <ColorSample hex={Colors.PINK[500]} number={500} name="Pink" />
 
@@ -141,14 +143,15 @@ export default () => (
     <Title>Support colors</Title>
 
     <p>
-      Os tons 500 são usados para ícones, strokes de inputs e buttons mas não
-      são indicados para textos por não passarem no contrast checker de WCAG.
+      Tones 500 are used for icons, input and button strokes, but not are
+      indicated for texts by not passing the contrast checker of WCAG.
       <br />
-      Os tons 200 são usados exclusivamente para backgrounds.
       <br />
-      Os tons 900 são usados exclusivamente para textos por passarem no contrast
-      checker de WCAG.
+      The 200 tones are used exclusively for backgrounds.
       <br />
+      <br />
+      The 900 tones are used exclusively for texts because they pass in contrast
+      WCAG checker.
     </p>
 
     <Subtitle>Success</Subtitle>
@@ -186,28 +189,28 @@ export default () => (
     <Title>Neutral colors</Title>
     <Subtitle>Black</Subtitle>
     <p>
-      É usado principalmente para textos e headings. Passa em AAA no contrast
+      It is mainly used for texts and headings. Passes on AAA in the contrast
       checker.
     </p>
     <ColorSample hex={Colors.BLACK[900]} number={900} name="Black" />
     <p>
-      É usado para textos em geral e também pode indicar estados ativos. Passa
-      em AAA no contrast checker.
+      It is used for general texts and can also indicate active states. Pass in
+      AAA in contrast checker.
     </p>
     <ColorSample hex={Colors.BLACK[700]} number={700} name="Black" />
     <p>
-      É usado para strokes e também pode indicar estados inativos. Não passa em
-      Acessibilidade.
+      It is used for strokes and can also indicate inactive states. Reproves in
+      accessibility.
     </p>
     <ColorSample hex={Colors.BLACK[400]} number={400} name="Black" />
     <p>
-      É um tom neutro auxiliar e pode ser usado para estados inativos. Não passa
-      em Acessibilidade.
+      It is an auxiliary neutral tone and can be used for inactive states.
+      Reproves in accessibility.
     </p>
     <ColorSample hex={Colors.BLACK[200]} number={200} name="Black" />
     <p>
-      É usada para indicar campos de inputs desabilitados. Não passa em
-      Acessibilidade.
+      It is used to indicate input fields disabled.  Reproves in
+      accessibility.
     </p>
     <ColorSample
       hex={Colors.BLACK[100]}
