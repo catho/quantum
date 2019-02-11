@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Label, FieldGroup } from '../shared';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 import theme from '../shared/theme';
 
 const Checkbox = styled.input`

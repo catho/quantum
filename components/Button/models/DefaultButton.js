@@ -1,4 +1,4 @@
-import Colors from '../../Colors';
+import Colors from '../../Colors/deprecated';
 import ButtonColor from './ButtonColor';
 
 class DefaultButton extends ButtonColor {

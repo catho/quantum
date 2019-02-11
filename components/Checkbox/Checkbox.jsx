@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import theme from '../shared/theme';
 
 import { Label, FieldGroup } from '../shared';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 const getColors = ({ disabled, checked }) => {
   let bgColor = checked ? Colors.PRIMARY['500'] : Colors.WHITE;

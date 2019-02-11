@@ -1,4 +1,4 @@
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 const arrowSize = 5;
 const upDownBorders = `

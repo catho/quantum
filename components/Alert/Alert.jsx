@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import React, { Component } from 'react';
 import Icon from '../Icon';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 import GlobalTheme from '../shared/theme';
 import ComponentTheme from './ComponentTheme';

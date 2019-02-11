@@ -47,16 +47,14 @@ const Typography = () => (
       <CodeToClipboard code={glogalStyleImport} />
     </HighlightWrapper>
 
-    <p>
-      Usually, it is used before the application component
-      <HighlightWrapper>
-        <Highlight language="bash" className="highlight">
-          {glogalStyleCode}
-        </Highlight>
+    <p>Usually, it is used before the application component</p>
+    <HighlightWrapper>
+      <Highlight language="bash" className="highlight">
+        {glogalStyleCode}
+      </Highlight>
 
-        <CodeToClipboard code={glogalStyleCode} />
-      </HighlightWrapper>
-    </p>
+      <CodeToClipboard code={glogalStyleCode} />
+    </HighlightWrapper>
 
     <p>
       The <code>{'<GlobalStyle />'}</code> will add and set automatically all
@@ -66,6 +64,7 @@ const Typography = () => (
       </LinkTo>
       .
     </p>
+
     <p>
       If you want to include one of those separately, you can import each one as
       you like to:

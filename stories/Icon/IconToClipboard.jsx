@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Col } from '../../components/Grid';
-import Colors from '../../components/Colors';
+import Colors from '../../components/Colors/deprecated';
 import Icon from '../../components/Icon';
 
 const IconName = styled.div`
