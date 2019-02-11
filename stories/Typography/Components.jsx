@@ -9,22 +9,6 @@ import {
   Blockquote,
 } from '../../components/GlobalStyle';
 
-// eslint-disable-next-line react/prop-types
-const WithNunito = ({ component: Component, ...rest }) => {
-  const Nunitted = styled(Component)`
-    & {
-      font-family: 'Nunito Sans' !important;
-    }
-  `;
-  return <Nunitted {...rest} />;
-};
-
-const Font = styled.div`
-  * {
-    font-family: Montserrat, sans-serif !important;
-  }
-`;
-
 const Small = styled.small`
   font-size: 10px;
 `;
@@ -42,7 +26,7 @@ const Tr = styled.tr`
 `;
 
 const Components = () => (
-  <Font>
+  <>
     <Title>Headings</Title>
 
     <table>
@@ -55,7 +39,7 @@ const Components = () => (
             <code>{'<Title />'}</code>
           </td>
           <td>
-            <WithNunito component={QuantumTitle}>Heading One</WithNunito>
+            <QuantumTitle>Heading One</QuantumTitle>
           </td>
         </Tr>
         <Tr>
@@ -66,9 +50,7 @@ const Components = () => (
             <code>{'<Title as="h2" />'}</code>
           </td>
           <td>
-            <WithNunito component={QuantumTitle} as="h2">
-              Heading Two
-            </WithNunito>
+            <QuantumTitle as="h2">Heading Two</QuantumTitle>
           </td>
         </Tr>
         <Tr>
@@ -79,9 +61,7 @@ const Components = () => (
             <code>{'<Title as="h3" />'}</code>
           </td>
           <td>
-            <WithNunito component={QuantumTitle} as="h3">
-              Heading Three
-            </WithNunito>
+            <QuantumTitle as="h3">Heading Three</QuantumTitle>
           </td>
         </Tr>
         <Tr>
@@ -92,9 +72,7 @@ const Components = () => (
             <code>{'<Title as="h4" />'}</code>
           </td>
           <td>
-            <WithNunito component={QuantumTitle} as="h4">
-              Heading Four
-            </WithNunito>
+            <QuantumTitle as="h4">Heading Four</QuantumTitle>
           </td>
         </Tr>
         <Tr>
@@ -105,9 +83,7 @@ const Components = () => (
             <code>{'<Title as="h5" />'}</code>
           </td>
           <td>
-            <WithNunito component={QuantumTitle} as="h5">
-              Heading Five
-            </WithNunito>
+            <QuantumTitle as="h5">Heading Five</QuantumTitle>
           </td>
         </Tr>
         <Tr>
@@ -118,9 +94,7 @@ const Components = () => (
             <code>{'<Title as="h6" />'}</code>
           </td>
           <td>
-            <WithNunito component={QuantumTitle} as="h6">
-              Heading Six
-            </WithNunito>
+            <QuantumTitle as="h6">Heading Six</QuantumTitle>
           </td>
         </Tr>
         <Tr>
@@ -131,7 +105,7 @@ const Components = () => (
             <code>{'<Subtitle />'}</code>
           </td>
           <td>
-            <WithNunito component={Subtitle}>Heading Two</WithNunito>
+            <Subtitle>Heading Two</Subtitle>
           </td>
         </Tr>
       </tbody>
@@ -175,7 +149,7 @@ const Components = () => (
             <code>{'<Blockquote />'}</code>
           </td>
           <td>
-            <WithNunito component={Blockquote}>
+            <Blockquote>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               lorem magna, molestie at pretium non, consequat sit amet ante.
               Aenean et ultrices elit. Suspendisse quis urna consequat,
@@ -184,7 +158,7 @@ const Components = () => (
               maximus est est, sed ullamcorper mi pellentesque at. Nunc
               facilisis blandit felis sed sollicitudin. Proin rutrum consectetur
               gravida.
-            </WithNunito>
+            </Blockquote>
           </td>
         </Tr>
       </tbody>
@@ -204,14 +178,14 @@ const Components = () => (
             </LinkTo>
           </td>
           <td>
-            <WithNunito component="ul">
+            <ul>
               <li>Lorem ipsum dolor sit amet</li>
               <li>
                 Sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua
               </li>
               <li>Consectetur adipiscing elit</li>
-            </WithNunito>
+            </ul>
           </td>
         </Tr>
         <Tr>
@@ -224,19 +198,19 @@ const Components = () => (
             </LinkTo>
           </td>
           <td>
-            <WithNunito component="ol">
+            <ol>
               <li>Lorem ipsum dolor sit amet</li>
               <li>
                 Sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua
               </li>
               <li>Consectetur adipiscing elit</li>
-            </WithNunito>
+            </ol>
           </td>
         </Tr>
       </tbody>
     </table>
-  </Font>
+  </>
 );
 
 export default Components;
