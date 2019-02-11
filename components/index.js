@@ -22,6 +22,7 @@ import List from './List';
 import { Wizard, Step } from './Wizard';
 import Popover from './Popover';
 import Badge from './Badge';
+import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
 
 export {
   BREAKPOINTS,
@@ -55,4 +56,7 @@ export {
   Step,
   Popover,
   Badge,
+  GlobalStyle,
+  Typography,
+  IconFont,
 };
