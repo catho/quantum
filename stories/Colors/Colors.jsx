@@ -81,7 +81,6 @@ ColorSample.propTypes = {
   fontColor: PropTypes.string.isRequired,
 };
 
-
 const exampleCode = `console.log(Colors.BLUE['500']);
 /*returns: #1355d0;*/
 
@@ -218,8 +217,7 @@ export default () => (
     </p>
     <ColorSample hex={Colors.BLACK[200]} number={200} name="Black" />
     <p>
-      It is used to indicate input fields disabled.  Reproves in
-      accessibility.
+      It is used to indicate input fields disabled. Reproves in accessibility.
     </p>
     <ColorSample
       hex={Colors.BLACK[100]}
