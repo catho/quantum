@@ -76,7 +76,7 @@ const ColorSample = ({ hex, number, name, fontColor }) => (
 
 ColorSample.propTypes = {
   hex: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   fontColor: PropTypes.string.isRequired,
 };
