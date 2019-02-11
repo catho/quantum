@@ -1,6 +1,7 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { BREAKPOINTS, hide, noGutters, query } from './shared';
+import { CSSVariables, BREAKPOINTS, hide, noGutters, query } from './shared';
 
 const queryStyle = () =>
   Object.entries(BREAKPOINTS).map(
@@ -40,4 +41,9 @@ Row.defaultProps = {
 
 Row.displayName = 'Row';
 
-export default Row;
+export default props => (
+  <>
+    <CSSVariables />
+    <Row {...props} />
+  </>
+);
