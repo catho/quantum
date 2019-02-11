@@ -13,8 +13,8 @@ const fontSize = ({ size }) => {
     xsmall: '12px',
     small: '12px',
     medium: '16px',
-    big: '20px',
-    xbig: '24px',
+    large: '20px',
+    xlarge: '24px',
   };
   return `font-size: ${sizes[size] || sizes.medium};`;
 };
@@ -40,8 +40,8 @@ const padding = ({ size }) => {
     xsmall: '0 12px',
     small: '0 12px',
     medium: '0 12px',
-    big: '0 16px',
-    xbig: '0 16px',
+    large: '0 16px',
+    xlarge: '0 16px',
   };
 
   return `padding: ${paddings[size] || paddings.normal};`;
@@ -52,8 +52,8 @@ const height = ({ size }) => {
     xsmall: '24px',
     small: '32px',
     medium: '40px',
-    big: '48px',
-    xbig: '56px',
+    large: '48px',
+    xlarge: '56px',
   };
 
   return `height: ${heights[size] || heights.normal};`;
@@ -163,7 +163,7 @@ Button.propTypes = {
   /** Icon name. The full catalogue can be found
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
-  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'big', 'xbig']),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   skin: PropTypes.oneOf(['primary', 'secondary', 'action']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
   children: PropTypes.node,
