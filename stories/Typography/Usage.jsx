@@ -14,7 +14,7 @@ const HighlightWrapper = styled.div`
   position: relative;
 `;
 
-const glogalStyleImport = `import GlobalStyle from '@catho-private/quantum';`;
+const glogalStyleImport = `import { GlobalStyle } from '@catho-private/quantum';`;
 
 const glogalStyleCode = `...
 ReactDOM
