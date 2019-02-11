@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
   Title,
@@ -72,6 +73,14 @@ const ColorSample = ({ hex, number, name, fontColor }) => (
     </ColorDescription>
   </PalleteColor>
 );
+
+ColorSample.propTypes = {
+  hex: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  fontColor: PropTypes.string.isRequired,
+};
+
 
 const exampleCode = `console.log(Colors.BLUE['500']);
 /*returns: #1355d0;*/
