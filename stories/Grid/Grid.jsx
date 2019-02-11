@@ -38,7 +38,7 @@ const SizesTable = () => (
           <p>Columns</p>
         </td>
         <td colSpan="1" rowSpan="1">
-          <p>Margins / Gutters*</p>
+          <p>Margins / Gutters</p>
         </td>
       </tr>
       <tr>
@@ -132,7 +132,7 @@ const SizesTable = () => (
           <p>8</p>
         </td>
         <td colSpan="1" rowSpan="1">
-          <p>16</p>
+          <p>24</p>
         </td>
       </tr>
       <tr>
@@ -169,7 +169,7 @@ const SizesTable = () => (
           <p>small</p>
         </td>
         <td colSpan="1" rowSpan="1">
-          <p>12</p>
+          <p>8</p>
         </td>
         <td colSpan="1" rowSpan="1">
           <p>24</p>
@@ -187,7 +187,7 @@ const SizesTable = () => (
           <p>small</p>
         </td>
         <td colSpan="1" rowSpan="1">
-          <p>12</p>
+          <p>8</p>
         </td>
         <td colSpan="1" rowSpan="1">
           <p>24</p>
@@ -283,42 +283,39 @@ const SizesTable = () => (
 
 const HorizontalExample = () => (
   <React.Fragment>
-    <Container fluid>
-      <Row>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-        <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
-      </Row>
+    <Row>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+    </Row>
 
-      <Row>
-        <StyledCol medium={8}>{'<Col medium={8}>'}</StyledCol>
-        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
-      </Row>
+    <Row>
+      <StyledCol medium={8}>{'<Col medium={8}>'}</StyledCol>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+    </Row>
 
-      <Row>
-        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
-        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
-        <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
-      </Row>
+    <Row>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+    </Row>
 
-      <Row>
-        <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
-        <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
-      </Row>
-    </Container>
+    <Row>
+      <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
+      <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
+    </Row>
 
     <Highlight language="javascript" className="highlight">
-      {`
-  <Row>
+      {`<Row>
     <Col medium={1}>...</Col>
     <Col medium={1}>...</Col>
     <Col medium={1}>...</Col>
@@ -355,37 +352,34 @@ const HorizontalExample = () => (
 
 const MobileDesktopExample = () => (
   <React.Fragment>
-    <Container fluid>
-      <Row>
-        <StyledCol xsmall={2} small={8}>
-          {'<Col xsmall={2} small={8}>'}
-        </StyledCol>
-        <StyledCol xsmall={2} small={4}>
-          {'<Col xsmall={2} small={4}>'}
-        </StyledCol>
-      </Row>
+    <Row>
+      <StyledCol xsmall={2} small={8}>
+        {'<Col xsmall={2} small={8}>'}
+      </StyledCol>
+      <StyledCol xsmall={2} small={4}>
+        {'<Col xsmall={2} small={4}>'}
+      </StyledCol>
+    </Row>
 
-      <Row>
-        <StyledCol xsmall={4} small={4}>
-          {'<Col xsmall={4} small={4}>'}
-        </StyledCol>
-        <StyledCol xsmall={4} small={4}>
-          {'<Col xsmall={4} small={4}>'}
-        </StyledCol>
-        <StyledCol xsmall={4} small={4}>
-          {'<Col xsmall={4} small={4}>'}
-        </StyledCol>
-      </Row>
+    <Row>
+      <StyledCol xsmall={4} small={4}>
+        {'<Col xsmall={4} small={4}>'}
+      </StyledCol>
+      <StyledCol xsmall={4} small={4}>
+        {'<Col xsmall={4} small={4}>'}
+      </StyledCol>
+      <StyledCol xsmall={4} small={4}>
+        {'<Col xsmall={4} small={4}>'}
+      </StyledCol>
+    </Row>
 
-      <Row>
-        <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
-        <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
-      </Row>
-    </Container>
+    <Row>
+      <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
+      <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
+    </Row>
 
     <Highlight language="javascript" className="highlight">
-      {`
-  <Row>
+      {`<Row>
     <Col xsmall={2} small={8}>...</Col>
     <Col xsmall={2} small={4}>...</Col>
   </Row>
@@ -407,22 +401,19 @@ const MobileDesktopExample = () => (
 
 const HideExample = () => (
   <React.Fragment>
-    <Container fluid>
-      <Hide xsmall>
-        <Row>
-          <StyledCol xsmall={2} small={4} medium={6}>
-            ...
-          </StyledCol>
-          <StyledCol xsmall={2} small={4} medium={6}>
-            ...
-          </StyledCol>
-        </Row>
-      </Hide>
-    </Container>
+    <Hide xsmall>
+      <Row>
+        <StyledCol xsmall={2} small={4} medium={6}>
+          ...
+        </StyledCol>
+        <StyledCol xsmall={2} small={4} medium={6}>
+          ...
+        </StyledCol>
+      </Row>
+    </Hide>
 
     <Highlight language="javascript" className="highlight">
-      {`
-  <Hide xsmall>
+      {`<Hide xsmall>
     <Row>
       <Col>...</Col>
       <Col>...</Col>
@@ -431,6 +422,47 @@ const HideExample = () => (
   `}
     </Highlight>
   </React.Fragment>
+);
+
+const NoGuttersExample = () => (
+  <>
+    <Row no-gutters>
+      <StyledCol medium={6}>medium={6}</StyledCol>
+      <StyledCol medium={6}>medium={6}</StyledCol>
+    </Row>
+
+    <Highlight language="javascript" className="highlight">
+      {`<Row no-gutters>
+  <StyledCol medium={6}>medium={6}</StyledCol>
+  <StyledCol medium={6}>medium={6}</StyledCol>
+</Row>`}
+    </Highlight>
+  </>
+);
+
+const OffsetExample = () => (
+  <>
+    <Row>
+      <StyledCol small={2} small-offset={2}>
+        small={2} small-offset={2}
+      </StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+    </Row>
+
+    <Highlight language="javascript" className="highlight">
+      {`<Row>
+  <Col small={2} small-offset={2}>small-offset={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+</Row>
+`}
+    </Highlight>
+  </>
 );
 
 const Grid = () => (
@@ -456,8 +488,7 @@ const Grid = () => (
       container.
     </p>
     <Highlight language="javascript" className="highlight">
-      {`
-  <Container>
+      {`<Container>
     ...
   </Container>
 `}
@@ -467,27 +498,24 @@ const Grid = () => (
       container, spanning the entire width of your viewport.
     </p>
     <Highlight language="javascript" className="highlight">
-      {`
-<Container fluid>
+      {`<Container fluid>
 ...
 </Container>
 `}
     </Highlight>
     <Subtitle>Row</Subtitle>
     <p>
-      Rows are wrappers for columns. Each column has horizontal{' '}
-      <code>padding</code>
-      (called a gutter) for controlling the space between them. This padding is
-      then counteracted on the rows with negative margins. This way, all the
-      content in your columns is visually aligned down the left side.
+      Rows are wrappers for columns. Each column has horizontal space{' '}
+      <code>column gap</code>
+      (called a gutter) for controlling the space between them.
     </p>
     <Subtitle>No Gutters</Subtitle>
     <p>
-      The gutters between columns in our predefined grid styles can be removed
-      with no-gutters prop <code>{'<Row no-gutters>'}</code>. This removes the
-      negative margins from <code>{'<Col>'}</code> and the horizontal padding
-      from all immediate children columns.
+      The padding in container and the gutter between rows and columns can be
+      removed with no-gutters prop on <code>{'<Container no-gutters>'}</code> or{' '}
+      <code>{'<Row no-gutters>'}</code>.
     </p>
+    <NoGuttersExample />
     <Subtitle>Breakpoints</Subtitle>
     <p>
       Material Design provides responsive layouts based on the following column
@@ -499,6 +527,16 @@ const Grid = () => (
       margins and gutters, for each display size.
     </p>
     <SizesTable />
+    <p>
+      The <code>{'<Col>'}</code> component accepts this props for breakpoints:
+    </p>
+    <ul>
+      <li>xsmall</li>
+      <li>small</li>
+      <li>medium</li>
+      <li>large</li>
+      <li>xlarge</li>
+    </ul>
     <Subtitle>Example: Stacked-to-horizontal</Subtitle>
     <p>
       You can create a basic grid system that starts out stacked on mobile
@@ -532,134 +570,23 @@ const Grid = () => (
     </ul>
     <Subtitle>Example: Hiding elements in xsmall devices</Subtitle>
     <HideExample />
-    <Row>
-      <StyledCol medium={3}>
-        <Hide small medium large xlarge>
-          xsmall
-        </Hide>
-        <Hide xsmall medium large xlarge>
-          small
-        </Hide>
-        <Hide xsmall small large xlarge>
-          medium
-        </Hide>
-        <Hide xsmall small medium xlarge>
-          large
-        </Hide>
-        <Hide xsmall small medium large>
-          xlarge
-        </Hide>
-      </StyledCol>
-      <StyledCol medium={9}>
-        <Container fluid>
-          <Row>
-            {Array(12)
-              .fill()
-              .map((_, i) => (
-                <StyledCol xsmall={1}>{i + 1}</StyledCol>
-              ))}
-          </Row>
-          <Row>
-            <StyledCol xsmall={2} medium={6} medium-offset={2}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6 medium-offset = 2
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={4}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                4
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-            <StyledCol xsmall={2} medium={6}>
-              <Hide medium large xlarge>
-                2
-              </Hide>
-              <Hide xsmall small>
-                6
-              </Hide>
-            </StyledCol>
-          </Row>
-        </Container>
-      </StyledCol>
-    </Row>
+    <Subtitle>Offsetting columns</Subtitle>
+    <p>
+      Move columns to the right using{' '}
+      <code>{'<Col [breakpoint]-offset={2}>'}</code> props. These props increase
+      the left gap of a column by * columns. For example,
+      <code>{'<Col small-offset={2} />'}</code> moves the column over two
+      columns on small devices up.
+    </p>
+    <OffsetExample />
+    <p>You can pass offset to all predefined props:</p>
+    <ul>
+      <li>xsmall-offset</li>
+      <li>small-offset</li>
+      <li>medium-offset</li>
+      <li>large-offset</li>
+      <li>xlarge-offset</li>
+    </ul>
   </React.Fragment>
 );
 
