@@ -2,7 +2,7 @@ import Button from './Button';
 import Checkbox from './Checkbox';
 import Colors from './Colors';
 import Dropdown from './Dropdown';
-import { Container, Row, Col, Hide, BREAKPOINTS } from './Grid';
+import { Container, Row, Col, Hide } from './Grid';
 import Image from './Image';
 import Input from './Input';
 import Loading from './Loading';
@@ -23,6 +23,7 @@ import { Wizard, Step } from './Wizard';
 import Popover from './Popover';
 import Badge from './Badge';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
+import { BREAKPOINTS } from './shared';
 
 export {
   BREAKPOINTS,

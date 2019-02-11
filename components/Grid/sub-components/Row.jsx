@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { CSSVariables, BREAKPOINTS, hide, noGutters, query } from './shared';
+import { CSSVariables, hide, noGutters, query } from './shared';
+import { BREAKPOINTS } from '../../shared';
 
 const queryStyle = () =>
   Object.entries(BREAKPOINTS).map(
@@ -21,10 +22,6 @@ const Row = styled.div`
 
   ${hide}
   ${noGutters}
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 `;
 
 Row.propTypes = {

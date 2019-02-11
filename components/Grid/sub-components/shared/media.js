@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import BREAKPOINTS from './breakpoints';
+import { BREAKPOINTS } from '../../../shared';
 
 const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
   acc[label] = (...args) => css`

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { BREAKPOINTS } from '../../../shared';
+import { BREAKPOINTS } from '../../shared';
 
 export default createGlobalStyle`
   :root {

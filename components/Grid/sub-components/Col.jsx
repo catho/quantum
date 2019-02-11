@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { BREAKPOINTS, query } from './shared';
+import { query } from './shared';
+import { BREAKPOINTS } from '../../shared';
 
 const columnPosition = (
   {

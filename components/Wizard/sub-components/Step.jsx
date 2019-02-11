@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from '../../Icon';
 import Colors from '../../Colors';
-import { BREAKPOINTS } from '../../Grid/sub-components';
+import { BREAKPOINTS } from '../../shared';
 
 const statusFontColor = ({ status }) => {
   const statusColors = {
