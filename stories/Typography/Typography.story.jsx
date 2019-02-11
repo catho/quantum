@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { Heading, TabbedView, Tab } from '@catho-private/quantum-storybook-ui';
 
