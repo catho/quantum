@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import SliderComponent from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 import Tooltip from '../Tooltip';
 import theme from '../shared/theme';
 

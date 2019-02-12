@@ -60,15 +60,6 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button skin="cancel" icon="sms">
-                Message
-              </Button>
-            }
-          />
-        </Col>
-        <Col tablet={3}>
-          <Example
-            component={
               <Button skin="action" icon="camera">
                 Screenshot
               </Button>
@@ -81,7 +72,7 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button size="big" icon="card_giftcard">
+              <Button size="large" icon="card_giftcard">
                 Gift
               </Button>
             }
@@ -90,16 +81,7 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button size="big" skin="modal" icon="business_center">
-                Apply
-              </Button>
-            }
-          />
-        </Col>
-        <Col tablet={3}>
-          <Example
-            component={
-              <Button size="big" skin="secondary" icon="block" disabled>
+              <Button size="large" skin="secondary" icon="block" disabled>
                 Not allowed
               </Button>
             }
@@ -108,7 +90,7 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button size="big" skin="action" icon="play_arrow">
+              <Button size="large" skin="action" icon="play_arrow">
                 Play
               </Button>
             }

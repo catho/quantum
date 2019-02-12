@@ -6,7 +6,7 @@ import Content from './sub-components/Content';
 import Header from './sub-components/Header';
 import SubHeader from './sub-components/SubHeader';
 
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 const bullets = ({ bullet }) =>
   bullet

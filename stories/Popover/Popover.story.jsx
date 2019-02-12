@@ -98,7 +98,7 @@ const examples = [
     <Example
       component={
         <Popover content={<Content>{content}</Content>} {...rest}>
-          <Button size="big">{label}</Button>
+          <Button size="large">{label}</Button>
         </Popover>
       }
     />

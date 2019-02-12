@@ -8,8 +8,8 @@ import {
   Table,
 } from '@catho-private/quantum-storybook-ui';
 
-import Colors from '../../components/Colors';
-import { Row, Col, Hide } from '../../components/Grid';
+import Colors from '../../components/Colors/deprecated';
+import { Container, Row, Col, Hide } from '../../components/Grid';
 
 const StyledCol = styled(Col)`
   background-color: ${Colors.SECONDARY['100']};

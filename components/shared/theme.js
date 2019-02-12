@@ -1,4 +1,4 @@
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 export default {
   font: {
@@ -7,7 +7,7 @@ export default {
     big: '16px',
   },
   sizes: {
-    radius: '1px',
+    radius: '4px',
     fieldHeight: '40px',
     spacing: '20px',
     loading: '60px',

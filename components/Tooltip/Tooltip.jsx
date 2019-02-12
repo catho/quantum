@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 import { skins, placement } from './options';
 
 const tipSkin = ({ skin }) => skins[skin] || skins.info;

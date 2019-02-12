@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 export default styled.div`
   color: ${Colors.DANGER['500']};

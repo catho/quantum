@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from '../../Icon';
-import Colors from '../../Colors';
 import { BREAKPOINTS } from '../../shared';
+import Colors from '../../Colors/deprecated';
 
 const statusFontColor = ({ status }) => {
   const statusColors = {

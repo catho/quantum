@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from '../../components/Grid';
-import Colors from '../../components/Colors';
+import Colors from '../../components/Colors/deprecated';
 import Input from '../../components/Input';
 import IconToClipboard from './IconToClipboard';
 import Icons from '../../components/shared/icons';

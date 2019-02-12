@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import theme from '../shared/theme';
-import Colors from '../Colors';
+import Colors from '../Colors/deprecated';
 
 const sizeStr = ({ size }) => `${size}px`;
 

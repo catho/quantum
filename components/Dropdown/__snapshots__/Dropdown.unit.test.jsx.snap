@@ -15,7 +15,7 @@ exports[`Input component  should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
+      className="Dropdown__DropdownButton-xoew8d-0 bLKPfe"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -65,7 +65,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
+      className="Dropdown__DropdownButton-xoew8d-0 bLKPfe"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -108,7 +108,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
+      className="Dropdown__DropdownButton-xoew8d-0 bLKPfe"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}
@@ -155,7 +155,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="Dropdown__DropdownButton-xoew8d-0 dsvLMx"
+      className="Dropdown__DropdownButton-xoew8d-0 bLKPfe"
       data-toggle={true}
       name="Dropdown"
       onBlur={[Function]}

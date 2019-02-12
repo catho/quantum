@@ -1,6 +1,6 @@
 import Button from './Button';
 import Checkbox from './Checkbox';
-import Colors from './Colors';
+import Colors from './Colors/deprecated';
 import Dropdown from './Dropdown';
 import { Container, Row, Col, Hide } from './Grid';
 import Image from './Image';
