@@ -1,4 +1,4 @@
-const arrowSize = 5;
+const arrowSize = 6;
 const upDownBorders = `
   border-left: ${arrowSize}px solid transparent;
   border-right: ${arrowSize}px solid transparent;
