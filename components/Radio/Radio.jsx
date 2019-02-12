@@ -1,33 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import Colors from '../Colors/deprecated';
+import Colors from '../Colors';
 import { Label } from '../shared';
 import skins from '../Button/skins';
 
 const CANCEL_SKIN = skins({ skin: 'cancel' });
 const PRIMARY_SKIN = skins({ skin: 'primary' });
 
+console.log(Colors.COBALT);
+
 const commonAttr = {
-  borderWidth: '3px',
-  height: '24px',
-  width: '24px',
+  borderWidth: '4px',
+  height: '16px',
+  width: '16px',
 };
 
 const boxedRadio = props => {
   const { unselected, selected, disabled } = CANCEL_SKIN;
 
   if (props.boxed) {
-    return `
+    return css`
       padding: 10px;
-      background-color: ${
-        props.disabled ? disabled.background : unselected.background
-      };
+      background-color: ${props.disabled
+        ? disabled.background
+        : unselected.background};
       border: 1px solid ${props.disabled ? disabled.border : unselected.border};
       color: ${props.disabled ? disabled.color : unselected.color};
-      font-weight: ${
-        props.disabled ? disabled.fontWeight : unselected.fontWeight
-      };
+      font-weight: ${props.disabled
+        ? disabled.fontWeight
+        : unselected.fontWeight};
 
       &:active {
         background-color: ${selected.background};
@@ -37,29 +39,31 @@ const boxedRadio = props => {
     `;
   }
 
-  return `
+  return css`
     &:before {
       content: ' ';
-      border: 1px solid
-        ${props.disabled ? Colors.SECONDARY[100] : Colors.SECONDARY[300]};
+      border-width: 1.5px;
+      border-style: solid;
+      border-color: ${Colors.BLACK[400]};
+      ${props.disabled &&
+        `
+        background-color: ${Colors.BLACK[200]};
+      `}
       border-radius: 50%;
       display: inline-block;
       height: ${commonAttr.height};
       width: ${commonAttr.width};
-      margin-left: -4px;
-      margin-top: -4px;
       margin-right: 5px;
 
       ${props.checked && `box-shadow: inset 0px 0px 0 3px white;`}
       cursor: inherit;
       position: relative;
-      top: 6px;
+      top: 4px;
     }
 
     &:hover:before {
-      border: 1px solid
-        ${props.disabled ? Colors.SECONDARY[100] : Colors.PRIMARY[500]};
-      box-shadow: inset 0 0 0 3px ${Colors.WHITE};
+      border-color: ${props.disabled ? Colors.COBALT[100] : Colors.BLUE[500]};
+      box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
     }
   `;
 };
@@ -101,13 +105,13 @@ const boxedInput = props => {
 
   return css`
     &:checked + ${StyledLabel}:before {
-      background-color: ${Colors.PRIMARY[500]};
-      box-shadow: inset 0 0 0 3px ${Colors.WHITE};
+      background-color: ${Colors.BLUE};
+      box-shadow: inset 0 0 0 4px ${Colors.WHITE};
     }
 
     &:disabled:checked + ${StyledLabel}:before {
-      background-color: ${Colors.SECONDARY[100]};
-      box-shadow: inset 0 0 0 3px ${Colors.WHITE};
+      background-color: ${Colors.COBALT[100]};
+      box-shadow: inset 0 0 0 4px ${Colors.WHITE};
     }
   `;
 };
