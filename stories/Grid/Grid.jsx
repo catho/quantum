@@ -509,13 +509,6 @@ const Grid = () => (
       <code>column gap</code>
       (called a gutter) for controlling the space between them.
     </p>
-    <Subtitle>No Gutters</Subtitle>
-    <p>
-      The padding in container and the gutter between rows and columns can be
-      removed with no-gutters prop on <code>{'<Container no-gutters>'}</code> or{' '}
-      <code>{'<Row no-gutters>'}</code>.
-    </p>
-    <NoGuttersExample />
     <Subtitle>Breakpoints</Subtitle>
     <p>
       Material Design provides responsive layouts based on the following column
@@ -552,6 +545,13 @@ const Grid = () => (
       better idea of how it all works.
     </p>
     <MobileDesktopExample />
+    <Subtitle>No Gutters</Subtitle>
+    <p>
+      The padding in container and the gutter between rows and columns can be
+      removed with no-gutters prop on <code>{'<Container no-gutters>'}</code> or{' '}
+      <code>{'<Row no-gutters>'}</code>.
+    </p>
+    <NoGuttersExample />
     <Subtitle>Hide Component</Subtitle>
     <p>
       If you need to hide some elements in your UI, you can use the
