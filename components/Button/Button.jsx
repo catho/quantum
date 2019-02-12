@@ -38,7 +38,7 @@ const padding = ({ size }) => {
   const paddings = {
     xsmall: '0 12px',
     small: '0 12px',
-    medium: '0 12px',
+    medium: '0 16px',
     large: '0 16px',
     xlarge: '0 16px',
   };
@@ -102,11 +102,10 @@ const StyledButton = styled.button`
       background-color: ${
         props.disabled ? disabled.background : unselected.background
       };
-      border: 1px solid ${props.disabled ? disabled.border : unselected.border};
-      color: ${props.disabled ? disabled.color : unselected.color};
-      font-weight: ${
-        props.disabled ? disabled.fontWeight : unselected.fontWeight
+      border: 1.5px solid ${
+        props.disabled ? disabled.border : unselected.border
       };
+      color: ${props.disabled ? disabled.color : unselected.color};
 
       ${shadow ? theme.mixins.shadow() : undefined};
 
@@ -126,6 +125,7 @@ class Button extends React.Component {
   static Google = SocialButtons.Google;
 
   render() {
+    console.log(this.props);
     const { children, icon, size, ...rest } = this.props;
 
     return (

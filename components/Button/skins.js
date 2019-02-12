@@ -13,6 +13,7 @@ const skins = {
     disabled: Colors.SHADOW['40'],
     unselectedTextColor: Colors.BLUE['500'],
     disabledTextColor: Colors.BLACK['400'],
+    disabledBorder: Colors.BLACK['400'],
     unselectedBorder: Colors.BLUE['500'],
     selectedBorder: Colors.BLUE['500'],
   }),
