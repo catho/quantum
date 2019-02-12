@@ -19,5 +19,10 @@ exports[`Input component  should match the snapshot 1`] = `
     />
     Label
   </label>
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__ErrorLabel-sc-1ca5whm-3 bmZyoW"
+  >
+    
+  </label>
 </div>
 `;

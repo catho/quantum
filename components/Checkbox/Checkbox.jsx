@@ -89,7 +89,6 @@ const StyledLabel = styled(Label)`
 
 const StyledFieldGroup = styled(FieldGroup)`
   height: 18px;
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -97,6 +96,15 @@ const StyledFieldGroup = styled(FieldGroup)`
 
 const StyledCheckbox = styled.input`
   display: none;
+`;
+
+const ErrorLabel = styled(Label)`
+  color: ${Colors.ERROR['900']};
+  cursor: text;
+  font-weight: 600;
+  left: -8px;
+  position: absolute;
+  top: 22px;
 `;
 
 class Checkbox extends React.Component {
@@ -143,6 +151,7 @@ class Checkbox extends React.Component {
           />
           {label}
         </StyledLabel>
+        <ErrorLabel>{error}</ErrorLabel>
       </StyledFieldGroup>
     );
   }
@@ -153,7 +162,7 @@ Checkbox.defaultProps = {
   id: '',
   checked: false,
   disabled: false,
-  error: false,
+  error: '',
   onChange: () => {},
 };
 
@@ -163,7 +172,7 @@ Checkbox.propTypes = {
   id: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  error: PropTypes.bool,
+  error: PropTypes.string,
   onChange: PropTypes.func,
 };
 
