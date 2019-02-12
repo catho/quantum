@@ -1,5 +1,3 @@
-import Colors from '../Colors/deprecated';
-
 const arrowSize = 5;
 const upDownBorders = `
   border-left: ${arrowSize}px solid transparent;
@@ -63,12 +61,4 @@ const placement = {
   },
 };
 
-const skins = {
-  primary: Colors.PRIMARY['500'],
-  info: Colors.INFO['500'],
-  danger: Colors.DANGER['500'],
-  success: Colors.SUCCESS['500'],
-  warning: Colors.WARNING['500'],
-};
-
-export { skins, placement };
+export default placement;

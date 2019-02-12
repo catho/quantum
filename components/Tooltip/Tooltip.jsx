@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors/deprecated';
-import { skins, placement } from './options';
+import Colors from '../Colors';
+import placement from './options';
 
-const tipSkin = ({ skin }) => skins[skin] || skins.info;
+const TIP_MAXLENGTH = 36;
 
 const Tip = styled.div`
-  background-color: ${tipSkin};
-  border-color: ${tipSkin};
+  background-color: ${Colors.BLACK[700]};
+  border-color: ${Colors.BLACK[700]};
   border-radius: 2px;
   color: ${Colors.WHITE};
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   opacity: ${props => (props.show ? '1' : '0')};
-  padding: 5px 20px;
+  padding: 4px 8px;
   position: absolute;
   text-align: center;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -31,10 +31,15 @@ const Tip = styled.div`
 `;
 
 const Wrapper = styled.div`
+  cursor: default;
   display: ${props => (props.slider ? 'block' : 'inline-block')};
   position: ${props => (props.slider ? 'initial' : 'relative')};
-  cursor: default;
-  white-space: nowrap;
+  white-space: ${props =>
+    props.length >= TIP_MAXLENGTH ? 'initial' : 'nowrap'};
+
+  ${Tip} {
+    width: ${props => (props.length >= TIP_MAXLENGTH ? '200px' : 'initial')};
+  }
 `;
 
 class Tooltip extends Component {
@@ -78,18 +83,18 @@ class Tooltip extends Component {
   }
 
   render() {
-    const { children, skin, place, text, slider, offset } = this.props;
-
+    const { children, place, text, slider, offset } = this.props;
     const { width, height, show } = this.state;
+    const { length } = text;
 
     return (
       <Wrapper
         onMouseEnter={!slider ? this.handleEnter : () => {}}
         onMouseLeave={!slider ? this.handleLeave : () => {}}
         slider={slider}
+        length={length}
       >
         <Tip
-          skin={skin}
           ref={tip => {
             this.tip = tip;
           }}
@@ -110,7 +115,6 @@ class Tooltip extends Component {
 
 Tooltip.propTypes = {
   text: PropTypes.string,
-  skin: PropTypes.oneOf(['primary', 'info', 'danger', 'success', 'warning']),
   place: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   offset: PropTypes.string,
   slider: PropTypes.bool,
@@ -119,7 +123,6 @@ Tooltip.propTypes = {
 
 Tooltip.defaultProps = {
   text: 'Tooltip',
-  skin: 'primary',
   place: 'top',
   offset: '',
   slider: false,
