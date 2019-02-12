@@ -2,11 +2,11 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__StyledFieldGroup-sc-1ca5whm-1 eXgurZ"
+  className="FieldGroup-sc-18uoi37-0 Checkbox__StyledFieldGroup-sc-1ca5whm-1 drAbRE"
 >
   <label
     checked={false}
-    className="Label-sc-1ny5bqy-0 Checkbox__StyledLabel-sc-1ca5whm-0 hRIEPJ"
+    className="Label-sc-1ny5bqy-0 Checkbox__StyledLabel-sc-1ca5whm-0 jkovYA"
     disabled={false}
   >
     <input
