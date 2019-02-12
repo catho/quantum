@@ -9,105 +9,273 @@ import {
 } from '@catho-private/quantum-storybook-ui';
 
 import Colors from '../../components/Colors/deprecated';
-import { Container, Row, Col, Hide } from '../../components/Grid';
-
-const StyledRow = styled(Row)`
-  margin-bottom: 10px;
-`;
+import { Row, Col, Hide } from '../../components/Grid';
 
 const StyledCol = styled(Col)`
   background-color: ${Colors.SECONDARY['100']};
   border: 1px solid ${Colors.SECONDARY['200']};
+  padding: 8px;
   font-size: 14px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 `;
-
-const ViewportTable = () => (
-  <Table>
-    <thead>
-      <tr>
-        <th>Grid</th>
-        <th>
-          <a href="https://getbootstrap.com/docs/3.3/css/#grid">Bootstrap</a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>phone</td>
-        <td>xs</td>
-      </tr>
-      <tr>
-        <td>tablet</td>
-        <td>sm</td>
-      </tr>
-      <tr>
-        <td>desktop</td>
-        <td>md</td>
-      </tr>
-      <tr>
-        <td>large</td>
-        <td>lg</td>
-      </tr>
-      <tr>
-        <td>hd</td>
-        <td>xl</td>
-      </tr>
-    </tbody>
-  </Table>
-);
 
 const SizesTable = () => (
   <Table>
-    <thead>
-      <tr>
-        <th />
-        <th>
-          Phone <small>{'(<768px)'}</small>{' '}
-        </th>
-        <th>
-          Tablet <small>{'(>768px)'}</small>{' '}
-        </th>
-        <th>
-          Desktop <small>{'(>=980px)'}</small>{' '}
-        </th>
-        <th>
-          Large <small>{'(>=1280px)'}</small>{' '}
-        </th>
-        <th>
-          HD <small>{'(>=1440px)'}</small>{' '}
-        </th>
-      </tr>
-    </thead>
     <tbody>
       <tr>
-        <th scope="row">Container width</th>
-        <td>540px</td>
-        <td>720px</td>
-        <td>980px</td>
-        <td>1200px</td>
-        <td>1330px</td>
+        <td colSpan="1" rowSpan="1">
+          <p>Breakpoint Range (dp)</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>Portrait</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>Landscape</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>Window</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>Columns</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>Margins / Gutters</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row"># of columns</th>
-        <td colSpan="5">12</td>
+        <td colSpan="1" rowSpan="1">
+          <p>0 – 359</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>small handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>xsmall</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>4</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Gutter width</th>
-        <td colSpan="5">30px (15px on each side of a column)</td>
+        <td colSpan="1" rowSpan="1">
+          <p>360 – 399</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>medium handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>xsmall</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>4</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Nestable</th>
-        <td colSpan="5">Yes</td>
+        <td colSpan="1" rowSpan="1">
+          <p>400 – 479</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>large handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>xsmall</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>4</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Offsets</th>
-        <td colSpan="5">Soon...</td>
+        <td colSpan="1" rowSpan="1">
+          <p>480 – 599</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>large handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>small handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>xsmall</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>4</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>16</p>
+        </td>
       </tr>
       <tr>
-        <th scope="row">Column ordering</th>
-        <td colSpan="5">Soon...</td>
+        <td colSpan="1" rowSpan="1">
+          <p>600 – 719</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>small tablet</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>medium handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>small</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>8</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>720 – 839</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>large tablet</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>large handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>small</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>8</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>840 – 959</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>large tablet</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>large handset</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>small</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>8</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>960 – 1023</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>small tablet</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>small</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>8</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>1024 – 1279</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>large tablet</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>medium</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>12</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>1280 – 1439</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>large tablet</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>medium</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>12</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>1440 – 1599</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>large</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>12</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>1600 – 1919</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>large</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>12</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan="1" rowSpan="1">
+          <p>1920 +</p>
+        </td>
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1" />
+        <td colSpan="1" rowSpan="1">
+          <p>xlarge</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>12</p>
+        </td>
+        <td colSpan="1" rowSpan="1">
+          <p>24</p>
+        </td>
       </tr>
     </tbody>
   </Table>
@@ -115,70 +283,67 @@ const SizesTable = () => (
 
 const HorizontalExample = () => (
   <React.Fragment>
-    <Container fluid>
-      <StyledRow>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-        <StyledCol tablet={1}>{'<Col tablet={1}>'}</StyledCol>
-      </StyledRow>
+    <Row>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+      <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
+    </Row>
 
-      <StyledRow>
-        <StyledCol tablet={8}>{'<Col tablet={8}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-      </StyledRow>
+    <Row>
+      <StyledCol medium={8}>{'<Col medium={8}>'}</StyledCol>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+    </Row>
 
-      <StyledRow>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-        <StyledCol tablet={4}>{'<Col tablet={4}>'}</StyledCol>
-      </StyledRow>
+    <Row>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+      <StyledCol medium={4}>{'<Col medium={4}>'}</StyledCol>
+    </Row>
 
-      <StyledRow>
-        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
-        <StyledCol tablet={6}>{'<Col tablet={6}>'}</StyledCol>
-      </StyledRow>
-    </Container>
+    <Row>
+      <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
+      <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
+    </Row>
 
     <Highlight language="javascript" className="highlight">
-      {`
-  <Row>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
-    <Col tablet={1}>...</Col>
+      {`<Row>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
+    <Col medium={1}>...</Col>
   </Row>
 
   <Row>
-    <Col tablet={8}>...</Col>
-    <Col tablet={4}>...</Col>
+    <Col medium={8}>...</Col>
+    <Col medium={4}>...</Col>
   </Row>
 
   <Row>
-    <Col tablet={4}>...</Col>
-    <Col tablet={4}>...</Col>
-    <Col tablet={4}>...</Col>
+    <Col medium={4}>...</Col>
+    <Col medium={4}>...</Col>
+    <Col medium={4}>...</Col>
   </Row>
 
   <Row>
-    <Col tablet={6}>...</Col>
-    <Col tablet={6}>...</Col>
+    <Col medium={6}>...</Col>
+    <Col medium={6}>...</Col>
   </Row>
 `}
     </Highlight>
@@ -187,50 +352,47 @@ const HorizontalExample = () => (
 
 const MobileDesktopExample = () => (
   <React.Fragment>
-    <Container fluid>
-      <StyledRow>
-        <StyledCol phone={12} tablet={8}>
-          {'<Col phone={12} tablet={8}>'}
-        </StyledCol>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
-        </StyledCol>
-      </StyledRow>
+    <Row>
+      <StyledCol xsmall={2} small={8}>
+        {'<Col xsmall={2} small={8}>'}
+      </StyledCol>
+      <StyledCol xsmall={2} small={4}>
+        {'<Col xsmall={2} small={4}>'}
+      </StyledCol>
+    </Row>
 
-      <StyledRow>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
-        </StyledCol>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
-        </StyledCol>
-        <StyledCol phone={6} tablet={4}>
-          {'<Col phone={6} tablet={4}>'}
-        </StyledCol>
-      </StyledRow>
+    <Row>
+      <StyledCol xsmall={4} small={4}>
+        {'<Col xsmall={4} small={4}>'}
+      </StyledCol>
+      <StyledCol xsmall={4} small={4}>
+        {'<Col xsmall={4} small={4}>'}
+      </StyledCol>
+      <StyledCol xsmall={4} small={4}>
+        {'<Col xsmall={4} small={4}>'}
+      </StyledCol>
+    </Row>
 
-      <StyledRow>
-        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
-        <StyledCol phone={6}>{'<Col phone={6}>'}</StyledCol>
-      </StyledRow>
-    </Container>
+    <Row>
+      <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
+      <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
+    </Row>
 
     <Highlight language="javascript" className="highlight">
-      {`
-  <Row>
-    <Col phone={12} tablet={8}>...</Col>
-    <Col phone={6} tablet={4}>...</Col>
+      {`<Row>
+    <Col xsmall={2} small={8}>...</Col>
+    <Col xsmall={2} small={4}>...</Col>
   </Row>
 
   <Row>
-    <Col phone={6} tablet={4}>...</Col>
-    <Col phone={6} tablet={4}>...</Col>
-    <Col phone={6} tablet={4}>...</Col>
+    <Col xsmall={4} small={4}>...</Col>
+    <Col xsmall={4} small={4}>...</Col>
+    <Col xsmall={4} small={4}>...</Col>
   </Row>
 
   <Row>
-    <Col phone={6}>...</Col>
-    <Col phone={6}>...</Col>
+    <Col xsmall={2}>...</Col>
+    <Col xsmall={2}>...</Col>
   </Row>
   `}
     </Highlight>
@@ -239,22 +401,19 @@ const MobileDesktopExample = () => (
 
 const HideExample = () => (
   <React.Fragment>
-    <Container fluid>
-      <Hide phone>
-        <StyledRow>
-          <StyledCol phone={12} tablet={8}>
-            ...
-          </StyledCol>
-          <StyledCol phone={6} tablet={4}>
-            ...
-          </StyledCol>
-        </StyledRow>
-      </Hide>
-    </Container>
+    <Hide xsmall>
+      <Row>
+        <StyledCol xsmall={2} small={4} medium={6}>
+          ...
+        </StyledCol>
+        <StyledCol xsmall={2} small={4} medium={6}>
+          ...
+        </StyledCol>
+      </Row>
+    </Hide>
 
     <Highlight language="javascript" className="highlight">
-      {`
-  <Hide phone>
+      {`<Hide xsmall>
     <Row>
       <Col>...</Col>
       <Col>...</Col>
@@ -265,20 +424,58 @@ const HideExample = () => (
   </React.Fragment>
 );
 
+const NoGuttersExample = () => (
+  <>
+    <Row no-gutters>
+      <StyledCol medium={6}>medium={6}</StyledCol>
+      <StyledCol medium={6}>medium={6}</StyledCol>
+    </Row>
+
+    <Highlight language="javascript" className="highlight">
+      {`<Row no-gutters>
+  <StyledCol medium={6}>medium={6}</StyledCol>
+  <StyledCol medium={6}>medium={6}</StyledCol>
+</Row>`}
+    </Highlight>
+  </>
+);
+
+const OffsetExample = () => (
+  <>
+    <Row>
+      <StyledCol small={2} small-offset={2}>
+        small={2} small-offset={2}
+      </StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+      <StyledCol small={2}>small={2}</StyledCol>
+    </Row>
+
+    <Highlight language="javascript" className="highlight">
+      {`<Row>
+  <Col small={2} small-offset={2}>small-offset={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+</Row>
+`}
+    </Highlight>
+  </>
+);
+
 const Grid = () => (
   <React.Fragment>
     <p>
-      If you are familiar with <strong>Boostrap</strong>, you can easily
-      understand ours.
+      This Grid is based on{' '}
+      <a href="https://material.io/design/layout/responsive-layout-grid.html">
+        Material Design Grid definition
+      </a>
+      It is adaptable to screen size and orientation and has columns definitions
+      to each resolution.
     </p>
     <HowToImport importModules="Container, Row, Col, Hide" />
-
-    <p>
-      Here’s a comparison table of viewports. Ours on left - Bootstrap’s on
-      right.
-    </p>
-
-    <ViewportTable />
 
     <Title>How it works</Title>
     <Subtitle>Containers</Subtitle>
@@ -291,8 +488,7 @@ const Grid = () => (
       container.
     </p>
     <Highlight language="javascript" className="highlight">
-      {`
-  <Container>
+      {`<Container>
     ...
   </Container>
 `}
@@ -302,56 +498,60 @@ const Grid = () => (
       container, spanning the entire width of your viewport.
     </p>
     <Highlight language="javascript" className="highlight">
-      {`
-<Container fluid>
+      {`<Container fluid>
 ...
 </Container>
 `}
     </Highlight>
     <Subtitle>Row</Subtitle>
     <p>
-      Rows are wrappers for columns. Each column has horizontal{' '}
-      <code>padding</code>
-      (called a gutter) for controlling the space between them. This padding is
-      then counteracted on the rows with negative margins. This way, all the
-      content in your columns is visually aligned down the left side.
+      Rows are wrappers for columns. Each column has horizontal space{' '}
+      <code>column gap</code>
+      (called a gutter) for controlling the space between them.
     </p>
-
-    <Subtitle>No Gutters</Subtitle>
-    <p>
-      The gutters between columns in our predefined grid styles can be removed
-      with no-gutters prop <code>{'<Row no-gutters>'}</code>. This removes the
-      negative margins from <code>{'<Col>'}</code> and the horizontal padding
-      from all immediate children columns.
-    </p>
-
     <Subtitle>Breakpoints</Subtitle>
     <p>
-      The grid system appropriately scales up to 12 columns as the device or
-      viewport size increases. It includes predefined viewports, they are:
+      Material Design provides responsive layouts based on the following column
+      structures. Layouts using 4-column, 8-column, and 12-column grids are
+      available for use across different screens, devices, and orientations.
     </p>
-
+    <p>
+      Each breakpoint range determines the number of columns, and recommended
+      margins and gutters, for each display size.
+    </p>
     <SizesTable />
-
+    <p>
+      The <code>{'<Col>'}</code> component accepts this props for breakpoints:
+    </p>
+    <ul>
+      <li>xsmall</li>
+      <li>small</li>
+      <li>medium</li>
+      <li>large</li>
+      <li>xlarge</li>
+    </ul>
     <Subtitle>Example: Stacked-to-horizontal</Subtitle>
     <p>
       You can create a basic grid system that starts out stacked on mobile
       devices and tablet devices before becoming horizontal on desktop devices.
       Place grid columns in any <code>{'<Row>'}</code>
     </p>
-
     <HorizontalExample />
-
     <Subtitle>Example: Mobile and desktop</Subtitle>
     <p>
-      Don’t want your columns to simply stack in smaller devices? Use the phone
-      and tablet device grid props by adding <code>{'phone={*}'}</code>
-      <code>{'tablet={*}'}</code> to your columns. See the example below for a
+      Don’t want your columns to simply stack in smaller devices? Use the xsmall
+      and small device grid props by adding <code>{'xsmall={*}'}</code>
+      <code>{'small={*}'}</code> to your columns. See the example below for a
       better idea of how it all works.
     </p>
-
     <MobileDesktopExample />
-
+    <Subtitle>No Gutters</Subtitle>
+    <p>
+      The padding in container and the gutter between rows and columns can be
+      removed with no-gutters prop on <code>{'<Container no-gutters>'}</code> or{' '}
+      <code>{'<Row no-gutters>'}</code>.
+    </p>
+    <NoGuttersExample />
     <Subtitle>Hide Component</Subtitle>
     <p>
       If you need to hide some elements in your UI, you can use the
@@ -362,16 +562,31 @@ const Grid = () => (
       <code>{'<Col>'}</code> component, they are:
     </p>
     <ul>
-      <li>phone</li>
-      <li>tablet</li>
-      <li>desktop</li>
+      <li>xsmall</li>
+      <li>small</li>
+      <li>medium</li>
       <li>large</li>
-      <li>hd</li>
+      <li>xlarge</li>
     </ul>
-
-    <Subtitle>Example: Hiding elements in phone devices</Subtitle>
-
+    <Subtitle>Example: Hiding elements in xsmall devices</Subtitle>
     <HideExample />
+    <Subtitle>Offsetting columns</Subtitle>
+    <p>
+      Move columns to the right using{' '}
+      <code>{'<Col [breakpoint]-offset={2}>'}</code> props. These props increase
+      the left gap of a column by * columns. For example,
+      <code>{'<Col small-offset={2} />'}</code> moves the column over two
+      columns on small devices up.
+    </p>
+    <OffsetExample />
+    <p>You can pass offset to all predefined props:</p>
+    <ul>
+      <li>xsmall-offset</li>
+      <li>small-offset</li>
+      <li>medium-offset</li>
+      <li>large-offset</li>
+      <li>xlarge-offset</li>
+    </ul>
   </React.Fragment>
 );
 

@@ -72,7 +72,7 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button size="big" icon="card_giftcard">
+              <Button size="large" icon="card_giftcard">
                 Gift
               </Button>
             }
@@ -81,7 +81,7 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button size="big" skin="secondary" icon="block" disabled>
+              <Button size="large" skin="secondary" icon="block" disabled>
                 Not allowed
               </Button>
             }
@@ -90,7 +90,7 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button size="big" skin="action" icon="play_arrow">
+              <Button size="large" skin="action" icon="play_arrow">
                 Play
               </Button>
             }

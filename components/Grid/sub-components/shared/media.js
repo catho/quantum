@@ -1,47 +1,47 @@
 import { css } from 'styled-components';
-import { BREAKPOINTS } from './grid-config';
+import { BREAKPOINTS } from '../../../shared';
 
 const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
   acc[label] = (...args) => css`
-    @media (min-width: ${BREAKPOINTS[label]}px) {
+    @media (min-width: ${BREAKPOINTS[label].width}px) {
       ${css(...args)};
     }
   `;
   return acc;
 }, {});
 
-const hide = {
-  hd: () => `
-    @media (min-width: ${BREAKPOINTS.large + 1}px) {
+const hideQueries = {
+  xlarge: () => `
+    @media (min-width: ${BREAKPOINTS.xlarge.width + 1}px) {
       display: none !important;
     }
   `,
   large: () => `
-    @media (min-width: ${BREAKPOINTS.desktop + 1}px) and (max-width: ${
-    BREAKPOINTS.large
+    @media (min-width: ${BREAKPOINTS.large.width + 1}px) and (max-width: ${
+    BREAKPOINTS.xlarge.width
   }px) {
       display: none !important;
     }
   `,
-  desktop: () => `
-    @media (min-width: ${BREAKPOINTS.tablet + 1}px) and (max-width: ${
-    BREAKPOINTS.desktop
+  medium: () => `
+    @media (min-width: ${BREAKPOINTS.medium.width + 1}px) and (max-width: ${
+    BREAKPOINTS.large.width
   }px) {
       display: none !important;
     }
   `,
-  tablet: () => `
-    @media (min-width: ${BREAKPOINTS.phone + 1}px) and (max-width: ${
-    BREAKPOINTS.tablet
+  small: () => `
+    @media (min-width: ${BREAKPOINTS.small.width + 1}px) and (max-width: ${
+    BREAKPOINTS.medium.width
   }px) {
       display: none !important;
     }
   `,
-  phone: () => `
-    @media (max-width: ${BREAKPOINTS.phone}px) {
+  xsmall: () => `
+    @media (max-width: ${BREAKPOINTS.small.width}px) {
       display: none !important;
     }
   `,
 };
 
-export { query, hide };
+export { query, hideQueries };
