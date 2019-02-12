@@ -60,15 +60,6 @@ const exampleTab = (
         <Col tablet={3}>
           <Example
             component={
-              <Button skin="cancel" icon="sms">
-                Message
-              </Button>
-            }
-          />
-        </Col>
-        <Col tablet={3}>
-          <Example
-            component={
               <Button skin="action" icon="camera">
                 Screenshot
               </Button>
@@ -83,15 +74,6 @@ const exampleTab = (
             component={
               <Button size="big" icon="card_giftcard">
                 Gift
-              </Button>
-            }
-          />
-        </Col>
-        <Col tablet={3}>
-          <Example
-            component={
-              <Button size="big" skin="modal" icon="business_center">
-                Apply
               </Button>
             }
           />
