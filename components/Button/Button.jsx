@@ -3,17 +3,24 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import SocialButtons from './SocialButtons';
-import { SIZES } from '../Grid/sub-components/shared/grid-config';
 import theme from '../shared/theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
 
-const fontSize = ({ size }) =>
-  `font-size: ${theme.font[size] || theme.font.normal};`;
+const fontSize = ({ size }) => {
+  const sizes = {
+    xsmall: '12px',
+    small: '12px',
+    medium: '16px',
+    large: '20px',
+    xlarge: '24px',
+  };
+  return `font-size: ${sizes[size] || sizes.medium};`;
+};
+
 const iconSize = ({ size }) => {
   const sizes = {
     normal: '24px',
-    big: '32px',
   };
 
   return `font-size: ${sizes[size] || sizes.normal};`;
@@ -22,7 +29,6 @@ const iconSize = ({ size }) => {
 const iconMargin = ({ size }) => {
   const margins = {
     normal: '-5px 5px -7px -5px',
-    big: '-5px 5px -10px -10px',
   };
 
   return `margin: ${margins[size] || margins.normal};`;
@@ -30,11 +36,26 @@ const iconMargin = ({ size }) => {
 
 const padding = ({ size }) => {
   const paddings = {
-    normal: '8px 10px',
-    big: '15px 27px',
+    xsmall: '0 12px',
+    small: '0 12px',
+    medium: '0 12px',
+    large: '0 16px',
+    xlarge: '0 16px',
   };
 
   return `padding: ${paddings[size] || paddings.normal};`;
+};
+
+const height = ({ size }) => {
+  const heights = {
+    xsmall: '24px',
+    small: '32px',
+    medium: '40px',
+    large: '48px',
+    xlarge: '56px',
+  };
+
+  return `height: ${heights[size] || heights.normal};`;
 };
 
 const ButtonIcon = styled(Icon)`
@@ -49,6 +70,7 @@ const StyledButton = styled.button`
 
   ${fontSize}
   ${padding}
+  ${height}
   ${theme.mixins.transition()};
 
   ${ButtonIcon} {
@@ -96,12 +118,6 @@ const StyledButton = styled.button`
       }
     `;
   }}
-
-  @media (max-width: ${SIZES.phone}px) {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
 `;
 
 class Button extends React.Component {
@@ -126,7 +142,7 @@ Button.defaultProps = {
   disabled: false,
   full: false,
   icon: '',
-  size: 'normal',
+  size: 'medium',
   skin: 'primary',
   type: 'button',
   children: 'Catho',
@@ -140,8 +156,8 @@ Button.propTypes = {
   /** Icon name. The full catalogue can be found
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
-  size: PropTypes.oneOf(['normal', 'big']),
-  skin: PropTypes.oneOf(['primary', 'secondary', 'action', 'cancel', 'modal']),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
+  skin: PropTypes.oneOf(['primary', 'secondary', 'action']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
   children: PropTypes.node,
   onClick: PropTypes.func,

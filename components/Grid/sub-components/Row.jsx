@@ -1,37 +1,32 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { DEVICES } from './shared/grid-config';
-import { hide } from './shared/media';
+import { hide, noGutters, query } from './shared';
+import { BREAKPOINTS } from '../../shared';
 
-const noGutters = `
-  margin-right: 0;
-  margin-left: 0;
-
-  > [class*="Col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-`;
+const queryStyle = () =>
+  Object.entries(BREAKPOINTS).map(
+    ([name, { columns }]) =>
+      query[name]`
+      grid-template-columns: repeat(${columns}, 1fr);
+    `,
+  );
 
 const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--gutter);
+  grid-auto-columns: max-content;
+  ${queryStyle}
 
-  ${props =>
-    props.hide &&
-    [].concat([], props.hide).map(prop => hide[prop]())} ${props =>
-    props['no-gutters'] && noGutters};
+  ${hide}
+  ${noGutters}
 `;
 
 Row.propTypes = {
-  desktop: PropTypes.number,
-  large: PropTypes.number,
-  hd: PropTypes.number,
   'no-gutters': PropTypes.bool,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(DEVICES),
+    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
 };

@@ -1,39 +1,75 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { GRID_COLUMNS, DEVICES } from './shared/grid-config';
-import { query, hide } from './shared/media';
+import { query } from './shared';
+import { BREAKPOINTS } from '../../shared';
+
+const columnPosition = (
+  {
+    xsmall,
+    small = xsmall,
+    medium = small,
+    large = medium,
+    xlarge = large,
+    'xsmall-offset': xsmallOffset,
+    'small-offset': smallOffset = xsmallOffset,
+    'medium-offset': mediumOffset = smallOffset,
+    'large-offset': largeOffset = mediumOffset,
+    'xlarge-offset': xlargeOffset = largeOffset,
+  },
+  breakpoint,
+) => {
+  const q = query[breakpoint];
+
+  const { size, offset } = {
+    xsmall: {
+      size: xsmall,
+      offset: xsmallOffset,
+    },
+    small: {
+      size: small,
+      offset: smallOffset,
+    },
+    medium: {
+      size: medium,
+      offset: mediumOffset,
+    },
+    large: {
+      size: large,
+      offset: largeOffset,
+    },
+    xlarge: {
+      size: xlarge,
+      offset: xlargeOffset,
+    },
+  }[breakpoint];
+
+  const offsetStyle = offset ? `${offset + 1}/` : '';
+
+  return q`grid-column: ${offsetStyle} span ${size || 12};`;
+};
 
 const Col = styled.div`
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  ${props =>
+    Object.keys(BREAKPOINTS).map(breakpoint =>
+      columnPosition(props, breakpoint),
+    )}
+  word-break: break-word;
   box-sizing: border-box;
-
-  ${props =>
-    props.hide &&
-    [].concat([], props.hide).map(prop => hide[prop] && hide[prop]())}
-
-  ${props =>
-    props.phone && query.phone`width: ${(props.phone / GRID_COLUMNS) * 100}%;`}
-  ${props =>
-    props.tablet &&
-    query.tablet`width: ${(props.tablet / GRID_COLUMNS) * 100}%;`}
-  ${props =>
-    props.desktop &&
-    query.desktop`width: ${(props.desktop / GRID_COLUMNS) * 100}%;`}
-  ${props =>
-    props.large && query.large`width: ${(props.large / GRID_COLUMNS) * 100}%;`}
-  ${props => props.hd && query.hd`width: ${(props.hd / GRID_COLUMNS) * 100}%;`}
 `;
 
 Col.propTypes = {
-  desktop: PropTypes.number,
+  xsmall: PropTypes.number,
+  small: PropTypes.number,
+  medium: PropTypes.number,
   large: PropTypes.number,
-  hd: PropTypes.number,
+  xlarge: PropTypes.number,
+  'xsmall-offset': PropTypes.number,
+  'small-offset': PropTypes.number,
+  'medium-offset': PropTypes.number,
+  'large-offset': PropTypes.number,
+  'xlarge-offset': PropTypes.number,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(DEVICES),
+    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
 };

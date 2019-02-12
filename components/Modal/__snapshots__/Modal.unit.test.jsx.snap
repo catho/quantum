@@ -13,7 +13,7 @@ ShallowWrapper {
         full={false}
         icon=""
         onClick={[Function]}
-        size="normal"
+        size="medium"
         skin="primary"
         type="button"
       >
@@ -34,8 +34,8 @@ ShallowWrapper {
         full={false}
         icon=""
         onClick={[Function]}
-        size="normal"
-        skin="modal"
+        size="medium"
+        skin="primary"
         type="button"
       >
         Cancel
@@ -46,7 +46,7 @@ ShallowWrapper {
         full={false}
         icon=""
         onClick={[Function]}
-        size="normal"
+        size="medium"
         skin="primary"
         type="button"
       >
@@ -75,7 +75,7 @@ ShallowWrapper {
           full={false}
           icon=""
           onClick={[Function]}
-          size="normal"
+          size="medium"
           skin="primary"
           type="button"
         >
@@ -96,8 +96,8 @@ ShallowWrapper {
                 full={false}
                 icon=""
                 onClick={[Function]}
-                size="normal"
-                skin="modal"
+                size="medium"
+                skin="primary"
                 type="button"
               >
                 Cancel
@@ -108,7 +108,7 @@ ShallowWrapper {
                 full={false}
                 icon=""
                 onClick={[Function]}
-                size="normal"
+                size="medium"
                 skin="primary"
                 type="button"
               >
@@ -135,7 +135,7 @@ ShallowWrapper {
           "full": false,
           "icon": "",
           "onClick": [Function],
-          "size": "normal",
+          "size": "medium",
           "skin": "primary",
           "type": "button",
         },
@@ -162,8 +162,8 @@ ShallowWrapper {
                 full={false}
                 icon=""
                 onClick={[Function]}
-                size="normal"
-                skin="modal"
+                size="medium"
+                skin="primary"
                 type="button"
               >
                 Cancel
@@ -174,7 +174,7 @@ ShallowWrapper {
                 full={false}
                 icon=""
                 onClick={[Function]}
-                size="normal"
+                size="medium"
                 skin="primary"
                 type="button"
               >
@@ -204,8 +204,8 @@ ShallowWrapper {
                   full={false}
                   icon=""
                   onClick={[Function]}
-                  size="normal"
-                  skin="modal"
+                  size="medium"
+                  skin="primary"
                   type="button"
                 >
                   Cancel
@@ -216,7 +216,7 @@ ShallowWrapper {
                   full={false}
                   icon=""
                   onClick={[Function]}
-                  size="normal"
+                  size="medium"
                   skin="primary"
                   type="button"
                 >
@@ -299,8 +299,8 @@ ShallowWrapper {
                     full={false}
                     icon=""
                     onClick={[Function]}
-                    size="normal"
-                    skin="modal"
+                    size="medium"
+                    skin="primary"
                     type="button"
                   >
                     Cancel
@@ -311,7 +311,7 @@ ShallowWrapper {
                     full={false}
                     icon=""
                     onClick={[Function]}
-                    size="normal"
+                    size="medium"
                     skin="primary"
                     type="button"
                   >
@@ -332,8 +332,8 @@ ShallowWrapper {
                     "full": false,
                     "icon": "",
                     "onClick": [Function],
-                    "size": "normal",
-                    "skin": "modal",
+                    "size": "medium",
+                    "skin": "primary",
                     "type": "button",
                   },
                   "ref": null,
@@ -351,7 +351,7 @@ ShallowWrapper {
                     "full": false,
                     "icon": "",
                     "onClick": [Function],
-                    "size": "normal",
+                    "size": "medium",
                     "skin": "primary",
                     "type": "button",
                   },
@@ -470,7 +470,7 @@ ShallowWrapper {
             full={false}
             icon=""
             onClick={[Function]}
-            size="normal"
+            size="medium"
             skin="primary"
             type="button"
           >
@@ -491,8 +491,8 @@ ShallowWrapper {
                   full={false}
                   icon=""
                   onClick={[Function]}
-                  size="normal"
-                  skin="modal"
+                  size="medium"
+                  skin="primary"
                   type="button"
                 >
                   Cancel
@@ -503,7 +503,7 @@ ShallowWrapper {
                   full={false}
                   icon=""
                   onClick={[Function]}
-                  size="normal"
+                  size="medium"
                   skin="primary"
                   type="button"
                 >
@@ -530,7 +530,7 @@ ShallowWrapper {
             "full": false,
             "icon": "",
             "onClick": [Function],
-            "size": "normal",
+            "size": "medium",
             "skin": "primary",
             "type": "button",
           },
@@ -557,8 +557,8 @@ ShallowWrapper {
                   full={false}
                   icon=""
                   onClick={[Function]}
-                  size="normal"
-                  skin="modal"
+                  size="medium"
+                  skin="primary"
                   type="button"
                 >
                   Cancel
@@ -569,7 +569,7 @@ ShallowWrapper {
                   full={false}
                   icon=""
                   onClick={[Function]}
-                  size="normal"
+                  size="medium"
                   skin="primary"
                   type="button"
                 >
@@ -599,8 +599,8 @@ ShallowWrapper {
                     full={false}
                     icon=""
                     onClick={[Function]}
-                    size="normal"
-                    skin="modal"
+                    size="medium"
+                    skin="primary"
                     type="button"
                   >
                     Cancel
@@ -611,7 +611,7 @@ ShallowWrapper {
                     full={false}
                     icon=""
                     onClick={[Function]}
-                    size="normal"
+                    size="medium"
                     skin="primary"
                     type="button"
                   >
@@ -694,8 +694,8 @@ ShallowWrapper {
                       full={false}
                       icon=""
                       onClick={[Function]}
-                      size="normal"
-                      skin="modal"
+                      size="medium"
+                      skin="primary"
                       type="button"
                     >
                       Cancel
@@ -706,7 +706,7 @@ ShallowWrapper {
                       full={false}
                       icon=""
                       onClick={[Function]}
-                      size="normal"
+                      size="medium"
                       skin="primary"
                       type="button"
                     >
@@ -727,8 +727,8 @@ ShallowWrapper {
                       "full": false,
                       "icon": "",
                       "onClick": [Function],
-                      "size": "normal",
-                      "skin": "modal",
+                      "size": "medium",
+                      "skin": "primary",
                       "type": "button",
                     },
                     "ref": null,
@@ -746,7 +746,7 @@ ShallowWrapper {
                       "full": false,
                       "icon": "",
                       "onClick": [Function],
-                      "size": "normal",
+                      "size": "medium",
                       "skin": "primary",
                       "type": "button",
                     },

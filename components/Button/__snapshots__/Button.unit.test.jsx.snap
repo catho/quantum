@@ -2,10 +2,10 @@
 
 exports[`Button component Should match the snapshot 1`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   
@@ -15,10 +15,10 @@ exports[`Button component Should match the snapshot 1`] = `
 
 exports[`Button component when center prop is set 1`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 kZlEXF"
+  className="Button__StyledButton-sc-1ovnfsw-1 lfruMQ"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   
@@ -28,10 +28,10 @@ exports[`Button component when center prop is set 1`] = `
 
 exports[`Button component when full prop is set 1`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 bGeYAT"
+  className="Button__StyledButton-sc-1ovnfsw-1 jALiDh"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   
@@ -41,10 +41,10 @@ exports[`Button component when full prop is set 1`] = `
 
 exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   
@@ -54,10 +54,10 @@ exports[`Button component when there is a skin set should match secondary snapsh
 
 exports[`Button component when there is a skin set should match secondary snapshot 2`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 gxOZLs"
+  className="Button__StyledButton-sc-1ovnfsw-1 kYDNbD"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   
@@ -67,10 +67,10 @@ exports[`Button component when there is a skin set should match secondary snapsh
 
 exports[`Button component when there is a skin set should match secondary snapshot 3`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 lkOzym"
+  className="Button__StyledButton-sc-1ovnfsw-1 cEiWPa"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   
@@ -78,38 +78,12 @@ exports[`Button component when there is a skin set should match secondary snapsh
 </button>
 `;
 
-exports[`Button component when there is a skin set should match secondary snapshot 4`] = `
-<button
-  className="Button__StyledButton-sc-1ovnfsw-1 fEewCj"
-  disabled={false}
-  onClick={[Function]}
-  size="normal"
-  type="button"
->
-  
-  cancel
-</button>
-`;
-
-exports[`Button component when there is a skin set should match secondary snapshot 5`] = `
-<button
-  className="Button__StyledButton-sc-1ovnfsw-1 gLsYBF"
-  disabled={false}
-  onClick={[Function]}
-  size="normal"
-  type="button"
->
-  
-  modal
-</button>
-`;
-
 exports[`Button component when there is a type set should match secondary snapshot 1`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   
@@ -119,10 +93,10 @@ exports[`Button component when there is a type set should match secondary snapsh
 
 exports[`Button component when there is a type set should match secondary snapshot 2`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="reset"
 >
   
@@ -132,10 +106,10 @@ exports[`Button component when there is a type set should match secondary snapsh
 
 exports[`Button component when there is a type set should match secondary snapshot 3`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="submit"
 >
   
@@ -145,16 +119,16 @@ exports[`Button component when there is a type set should match secondary snapsh
 
 exports[`Button component with an icon should match secondary snapshot 1`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   <span
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
-    size="normal"
+    size="medium"
     style={
       Object {
         "color": "",
@@ -169,16 +143,16 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 
 exports[`Button component with an icon should match secondary snapshot 2`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   <span
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
-    size="normal"
+    size="medium"
     style={
       Object {
         "color": "",
@@ -193,16 +167,16 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 
 exports[`Button component with an icon should match secondary snapshot 3`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   <span
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
-    size="normal"
+    size="medium"
     style={
       Object {
         "color": "",
@@ -217,16 +191,16 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 
 exports[`Button component with an icon should match secondary snapshot 4`] = `
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 fwLpgE"
+  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
   disabled={false}
   onClick={[Function]}
-  size="normal"
+  size="medium"
   type="button"
 >
   <span
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
-    size="normal"
+    size="medium"
     style={
       Object {
         "color": "",
