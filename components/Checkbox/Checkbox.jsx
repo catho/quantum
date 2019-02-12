@@ -6,7 +6,7 @@ import theme from '../shared/theme';
 import { Label, FieldGroup } from '../shared';
 import Colors from '../Colors';
 
-const getColors = ({ disabled, checked }) => {
+const getColors = ({ disabled, checked, error }) => {
   let bgColor = checked ? Colors.BLUE['500'] : Colors.WHITE;
   let borderColor = checked ? Colors.BLUE['500'] : Colors.BLACK['400'];
 
@@ -15,9 +15,13 @@ const getColors = ({ disabled, checked }) => {
     bgColor = checked ? Colors.BLACK['400'] : Colors.BLACK['200'];
   }
 
+  if (error) {
+    borderColor = Colors.ERROR['500'];
+    bgColor = Colors.WHITE;
+  }
   return `
     background-color: ${bgColor};
-    border: 1px solid ${borderColor};
+    border: 2px solid ${borderColor};
   `;
 };
 
@@ -41,15 +45,14 @@ const StyledLabel = styled(Label)`
     &:after {
       content: ' ';
       display: inline-block;
-      width: 7px;
+      width: 5px;
       position: absolute;
-      height: 14px;
-      top: -2px;
-      left: 0;
+      height: 12px;
+      left: -1px;
 
       border: solid ${Colors.WHITE};
       border-radius: 3px;
-      border-width: 0 4px 4px 0;
+      border-width: 0 3px 3px 0;
 
       transform: rotate(45deg);
     }
@@ -68,22 +71,24 @@ const StyledLabel = styled(Label)`
     content: ' ';
     display: inline-block;
     left: -8px;
-    top: -4px;
-    height: 24px;
-    width: 24px;
+    top: -1px;
+    height: 18px;
+    width: 18px;
   }
 
   &:hover:before {
-    ${({ disabled }) =>
+    ${({ disabled, error }) =>
       !disabled &&
+      !error &&
       `
-      border: 1px solid ${Colors.BLUE['500']};
+      border: 2px solid ${Colors.BLUE['500']};
+      box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
     `}
   }
 `;
 
 const StyledFieldGroup = styled(FieldGroup)`
-  height: 24px;
+  height: 18px;
 
   display: flex;
   flex-direction: row;
@@ -104,10 +109,16 @@ class Checkbox extends React.Component {
   }
 
   componentWillUpdate(nextProps) {
+    console.log(nextProps);
     const { checked } = this.state;
     if (nextProps.checked !== checked) {
       this.state.checked = nextProps.checked;
     }
+
+    // if (nextProps.error) {
+    //   nextProps.disabled = false;
+    //   nextProps.checked = false;
+    // }
   }
 
   onChange = e => {
@@ -123,17 +134,17 @@ class Checkbox extends React.Component {
   };
 
   render() {
-    const { label, disabled, ...rest } = this.props;
+    const { label, disabled, error, ...rest } = this.props;
     const { checked } = this.state;
-
     return (
       <StyledFieldGroup>
-        <StyledLabel checked={checked} disabled={disabled}>
+        <StyledLabel checked={checked} disabled={disabled} error={error}>
           <StyledCheckbox
             {...rest}
             disabled={disabled}
             type="checkbox"
             checked={checked}
+            error={error}
             onChange={this.onChange}
           />
           {label}
@@ -148,6 +159,7 @@ Checkbox.defaultProps = {
   id: '',
   checked: false,
   disabled: false,
+  error: false,
   onChange: () => {},
 };
 
@@ -157,6 +169,7 @@ Checkbox.propTypes = {
   id: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
   onChange: PropTypes.func,
 };
 
