@@ -37,9 +37,4 @@ Container.defaultProps = {
 
 Container.displayName = 'Container';
 
-export default props => (
-  <>
-    <CSSVariables />
-    <Container {...props} />
-  </>
-);
+export default Container;

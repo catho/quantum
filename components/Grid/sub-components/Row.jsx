@@ -38,9 +38,4 @@ Row.defaultProps = {
 
 Row.displayName = 'Row';
 
-export default props => (
-  <>
-    <CSSVariables />
-    <Row {...props} />
-  </>
-);
+export default Row;
