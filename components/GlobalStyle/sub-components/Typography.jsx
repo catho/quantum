@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import Colors from '../../Colors';
 
 const Typography = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
@@ -11,6 +12,7 @@ const Typography = createGlobalStyle`
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2px;
+    color: ${Colors.BLACK[700]}
   }
 
   h1, h2, h3, h4, h5, h6 {

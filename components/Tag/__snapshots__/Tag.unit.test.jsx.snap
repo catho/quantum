@@ -1,0 +1,616 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag component Closable it is rendering well 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component Closable it is rendering well 2`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  border: 1px solid;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component Closable it is rendering well 3`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #FFFFFF;
+  background-color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "#FFFFFF",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component Closable it is rendering well 4`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #1355d0;
+  background-color: #e5edfc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "#1355d0",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component Closable it is rendering well 5`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #3c6510;
+  background-color: #edfadf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "#3c6510",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component Closable it is rendering well 6`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #a36300;
+  background-color: #ffefd6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "#a36300",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component Closable it is rendering well 7`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #ac001a;
+  background-color: #ffe5e9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "#ac001a",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component Closable it is rendering well 8`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #1355d0;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 {
+  font-size: 18px !important;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "#1355d0",
+        }
+      }
+    >
+      close
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tag component blue skin 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #1355d0;
+  background-color: #e5edfc;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component blue-text skin 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #1355d0;
+  background-color: #f2f2f2;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component bold 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component error skin 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #ac001a;
+  background-color: #ffe5e9;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component inverted skin 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #FFFFFF;
+  background-color: #999999;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component stroked skin 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  border: 1px solid;
+  background: none;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component success skin 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #3c6510;
+  background-color: #edfadf;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component text prop / children 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  background-color: #f2f2f2;
+}
+
+<div
+  className="c0"
+>
+  example
+</div>
+`;
+
+exports[`Tag component text prop / children 2`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  background-color: #f2f2f2;
+}
+
+<div
+  className="c0"
+>
+  example
+</div>
+`;
+
+exports[`Tag component warning skin 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  color: #a36300;
+  background-color: #ffefd6;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
+
+exports[`Tag component without props 1`] = `
+.c0 {
+  border-radius: 8px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  height: 32px;
+  background-color: #f2f2f2;
+}
+
+<div
+  className="c0"
+>
+  Tag text
+</div>
+`;
