@@ -1,7 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { query, hide, noGutters, CSSVariables } from './shared';
+import { query, hide, noGutters } from './shared';
 import { BREAKPOINTS } from '../../shared';
 
 const maxWidth = ({ fluid }, name) =>

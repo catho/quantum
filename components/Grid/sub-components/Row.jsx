@@ -1,7 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { CSSVariables, hide, noGutters, query } from './shared';
+import { hide, noGutters, query } from './shared';
 import { BREAKPOINTS } from '../../shared';
 
 const queryStyle = () =>
