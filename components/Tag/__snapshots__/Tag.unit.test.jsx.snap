@@ -57,7 +57,7 @@ exports[`<Tag /> Closable is rendering well 1`] = `
         size="medium"
         style={
           Object {
-            "color": "default",
+            "color": "",
           }
         }
         text="Tag text"
@@ -127,7 +127,7 @@ exports[`<Tag /> Closable is rendering well 2`] = `
         size="medium"
         style={
           Object {
-            "color": "stroked",
+            "color": "",
           }
         }
         text="Tag text"
@@ -197,7 +197,7 @@ exports[`<Tag /> Closable is rendering well 3`] = `
         size="medium"
         style={
           Object {
-            "color": "inverted",
+            "color": "#FFFFFF",
           }
         }
         text="Tag text"
@@ -267,7 +267,7 @@ exports[`<Tag /> Closable is rendering well 4`] = `
         size="medium"
         style={
           Object {
-            "color": "blue",
+            "color": "#1355d0",
           }
         }
         text="Tag text"
@@ -337,7 +337,7 @@ exports[`<Tag /> Closable is rendering well 5`] = `
         size="medium"
         style={
           Object {
-            "color": "success",
+            "color": "#3c6510",
           }
         }
         text="Tag text"
@@ -407,7 +407,7 @@ exports[`<Tag /> Closable is rendering well 6`] = `
         size="medium"
         style={
           Object {
-            "color": "warning",
+            "color": "#a36300",
           }
         }
         text="Tag text"
@@ -477,7 +477,7 @@ exports[`<Tag /> Closable is rendering well 7`] = `
         size="medium"
         style={
           Object {
-            "color": "error",
+            "color": "#ac001a",
           }
         }
         text="Tag text"
@@ -547,7 +547,7 @@ exports[`<Tag /> Closable is rendering well 8`] = `
         size="medium"
         style={
           Object {
-            "color": "blue-text",
+            "color": "#1355d0",
           }
         }
         text="Tag text"

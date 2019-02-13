@@ -123,9 +123,9 @@ class Tag extends Component {
           {closable && (
             <ResetedButton onClick={this.hide} {...this.props}>
               <SmallIcon
+                {...this.props}
                 name="close"
                 skin={skinFontColors[skin]}
-                {...this.props}
               />
             </ResetedButton>
           )}
