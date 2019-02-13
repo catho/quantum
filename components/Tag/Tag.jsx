@@ -50,8 +50,13 @@ const Wrapper = styled.div`
   padding: 4px 12px;
   box-sizing: border-box;
   height: 32px;
+  display: inline-block;
+  margin-right: 8px;
   ${({ bold }) => bold && `font-weight: bold;`}
   ${({ skin }) => skins[skin]}
+`;
+
+const Content = styled.div`
   ${({ closable }) =>
     closable &&
     `
@@ -94,12 +99,14 @@ class Tag extends Component {
 
     return (
       <Wrapper closable={closable} skin={skin} bold={bold}>
-        {children || text}
-        {closable && (
-          <ResetedButton onClick={this.hide}>
-            <SmallIcon name="close" skin={skinFontColors[skin]} />
-          </ResetedButton>
-        )}
+        <Content closable={closable}>
+          {children || text}
+          {closable && (
+            <ResetedButton onClick={this.hide}>
+              <SmallIcon name="close" skin={skinFontColors[skin]} />
+            </ResetedButton>
+          )}
+        </Content>
       </Wrapper>
     );
   }

@@ -39,7 +39,7 @@ describe('Tag component', () => {
 
     it('is removed when close button is clicked', () => {
       const tag = shallow(<Tag closable />);
-      const button = tag.childAt(1);
+      const button = tag.childAt(0).childAt(1);
 
       expect(tag.state('hidden')).toBe(false);
 
