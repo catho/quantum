@@ -20,7 +20,7 @@ class RadioGroup extends React.Component {
     React.Children.map(children, ({ props: { id, checked } }) => {
       this.state[id] = {
         checked: !!checked,
-        tabIndex: !!checked ? 0 : -1,
+        tabIndex: checked ? 0 : -1,
       };
     });
 
