@@ -65,6 +65,6 @@ export default [
   // 15. Badge
   'Badge',
 
-  // 16. Badge
+  // 16. Tags
   'Tag',
 ].map(s => `./${s}/${s}.story.jsx`);
