@@ -136,6 +136,10 @@ class Tag extends Component {
 }
 
 Tag.propTypes = {
+  bold: PropTypes.bool,
+  children: PropTypes.string,
+  closable: PropTypes.bool,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
   skin: PropTypes.oneOf([
     'default',
     'stroked',
@@ -146,20 +150,16 @@ Tag.propTypes = {
     'error',
     'blue-text',
   ]),
-  children: PropTypes.string,
   text: PropTypes.string,
-  bold: PropTypes.bool,
-  closable: PropTypes.bool,
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
 };
 
 Tag.defaultProps = {
-  skin: 'default',
-  text: 'Tag text',
   bold: false,
   children: '',
   closable: false,
   size: 'medium',
+  skin: 'default',
+  text: 'Tag text',
 };
 
 export default Tag;

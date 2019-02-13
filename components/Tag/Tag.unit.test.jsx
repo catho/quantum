@@ -35,6 +35,12 @@ describe('<Tag />', () => {
     });
   });
 
+  describe('Sizes', () => {
+    it('small', () => testSnapshot({ size: 'small' }));
+    it('medium', () => testSnapshot({ size: 'medium' }));
+    it('large', () => testSnapshot({ size: 'large' }));
+  });
+
   describe('Closable', () => {
     it('is rendering well', () => {
       testSnapshot({ closable: true });
@@ -58,11 +64,5 @@ describe('<Tag />', () => {
       expect(tag.state('hidden')).toBe(true);
       expect(tag.html()).toBeNull();
     });
-  });
-
-  describe('Sizes', () => {
-    it('small', () => testSnapshot({ size: 'small' }));
-    it('medium', () => testSnapshot({ size: 'medium' }));
-    it('large', () => testSnapshot({ size: 'large' }));
   });
 });
