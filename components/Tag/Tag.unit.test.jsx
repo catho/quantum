@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import 'jest-styled-components';
 import Tag from './Tag';
+import Colors from '../Colors';
 
 const testSnapshot = props => {
   const propsList = Array.isArray(props) ? props : [props];
@@ -26,6 +27,12 @@ describe('<Tag />', () => {
     it('warning', () => testSnapshot({ skin: 'warning' }));
     it('error', () => testSnapshot({ skin: 'error' }));
     it('blue-text', () => testSnapshot({ skin: 'blue-text' }));
+    it('default', () => {
+      testSnapshot({ skin: 'default' });
+
+      const tag = renderer.create(<Tag />).toJSON();
+      expect(tag).toHaveStyleRule('background-color', Colors.BLACK[100]);
+    });
   });
 
   describe('Closable', () => {

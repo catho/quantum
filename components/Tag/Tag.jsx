@@ -47,16 +47,11 @@ const skins = {
 
 const sizes = {
   small: `
-    height: 24px;
     font-size: 12px;
     padding-top: 3px;
     padding-bottom: 3px;
   `,
-  medium: `
-    height: 32px;
-  `,
   large: `
-    height: 36px;
     font-size: 18px;
   `,
 };

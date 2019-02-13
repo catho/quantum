@@ -9,7 +9,6 @@ exports[`<Tag /> Closable is rendering well 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
-  height: 32px;
 }
 
 .c1 {
@@ -80,7 +79,6 @@ exports[`<Tag /> Closable is rendering well 2`] = `
   padding: 4px 12px;
   border: 1px solid;
   background: none;
-  height: 32px;
 }
 
 .c1 {
@@ -151,7 +149,6 @@ exports[`<Tag /> Closable is rendering well 3`] = `
   padding: 4px 12px;
   color: #FFFFFF;
   background-color: #999999;
-  height: 32px;
 }
 
 .c1 {
@@ -222,7 +219,6 @@ exports[`<Tag /> Closable is rendering well 4`] = `
   padding: 4px 12px;
   color: #1355d0;
   background-color: #e5edfc;
-  height: 32px;
 }
 
 .c1 {
@@ -293,7 +289,6 @@ exports[`<Tag /> Closable is rendering well 5`] = `
   padding: 4px 12px;
   color: #3c6510;
   background-color: #edfadf;
-  height: 32px;
 }
 
 .c1 {
@@ -364,7 +359,6 @@ exports[`<Tag /> Closable is rendering well 6`] = `
   padding: 4px 12px;
   color: #a36300;
   background-color: #ffefd6;
-  height: 32px;
 }
 
 .c1 {
@@ -435,7 +429,6 @@ exports[`<Tag /> Closable is rendering well 7`] = `
   padding: 4px 12px;
   color: #ac001a;
   background-color: #ffe5e9;
-  height: 32px;
 }
 
 .c1 {
@@ -506,7 +499,6 @@ exports[`<Tag /> Closable is rendering well 8`] = `
   padding: 4px 12px;
   color: #1355d0;
   background-color: #f2f2f2;
-  height: 32px;
 }
 
 .c1 {
@@ -576,7 +568,6 @@ exports[`<Tag /> Sizes large 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
-  height: 36px;
   font-size: 18px;
 }
 
@@ -601,7 +592,6 @@ exports[`<Tag /> Sizes medium 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
-  height: 32px;
 }
 
 <div
@@ -625,7 +615,6 @@ exports[`<Tag /> Sizes small 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
-  height: 24px;
   font-size: 12px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -653,7 +642,6 @@ exports[`<Tag /> Skins blue 1`] = `
   padding: 4px 12px;
   color: #1355d0;
   background-color: #e5edfc;
-  height: 32px;
 }
 
 <div
@@ -678,7 +666,29 @@ exports[`<Tag /> Skins blue-text 1`] = `
   padding: 4px 12px;
   color: #1355d0;
   background-color: #f2f2f2;
-  height: 32px;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins default 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
 }
 
 <div
@@ -703,7 +713,6 @@ exports[`<Tag /> Skins error 1`] = `
   padding: 4px 12px;
   color: #ac001a;
   background-color: #ffe5e9;
-  height: 32px;
 }
 
 <div
@@ -728,7 +737,6 @@ exports[`<Tag /> Skins inverted 1`] = `
   padding: 4px 12px;
   color: #FFFFFF;
   background-color: #999999;
-  height: 32px;
 }
 
 <div
@@ -753,7 +761,6 @@ exports[`<Tag /> Skins stroked 1`] = `
   padding: 4px 12px;
   border: 1px solid;
   background: none;
-  height: 32px;
 }
 
 <div
@@ -778,7 +785,6 @@ exports[`<Tag /> Skins success 1`] = `
   padding: 4px 12px;
   color: #3c6510;
   background-color: #edfadf;
-  height: 32px;
 }
 
 <div
@@ -803,7 +809,6 @@ exports[`<Tag /> Skins warning 1`] = `
   padding: 4px 12px;
   color: #a36300;
   background-color: #ffefd6;
-  height: 32px;
 }
 
 <div
@@ -828,7 +833,6 @@ exports[`<Tag /> with bold prop 1`] = `
   padding: 4px 12px;
   font-weight: bold;
   background-color: #f2f2f2;
-  height: 32px;
 }
 
 <div
@@ -852,7 +856,6 @@ exports[`<Tag /> with only text prop / children 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
-  height: 32px;
 }
 
 <div
@@ -876,7 +879,6 @@ exports[`<Tag /> with only text prop / children 2`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
-  height: 32px;
 }
 
 <div
@@ -900,7 +902,6 @@ exports[`<Tag /> without props 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
-  height: 32px;
 }
 
 <div
