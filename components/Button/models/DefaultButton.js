@@ -1,4 +1,4 @@
-import Colors from '../../Colors/deprecated';
+import Colors from '../../Colors';
 import ButtonColor from './ButtonColor';
 
 class DefaultButton extends ButtonColor {
@@ -6,6 +6,7 @@ class DefaultButton extends ButtonColor {
     unselected,
     unselectedBorder = unselected,
     unselectedTextColor = Colors.WHITE,
+    unselectedHover,
     selected,
     selectedBorder = selected,
     selectedTextColor = unselectedTextColor,
@@ -18,6 +19,7 @@ class DefaultButton extends ButtonColor {
       unselected,
       unselectedBorder,
       unselectedTextColor,
+      unselectedHover,
       selected,
       selectedBorder,
       selectedTextColor,

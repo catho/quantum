@@ -115,6 +115,13 @@ const StyledButton = styled.button`
         border-color: ${selected.border};
         color: ${selected.color};
       }
+
+      ${!props.disabled &&
+        `
+        &:hover {
+          background-color:  ${unselected.hover};
+        }      
+      `};
     `;
   }}
 `;

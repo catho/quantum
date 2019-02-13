@@ -5,6 +5,7 @@ class ButtonColor {
     unselected,
     unselectedBorder = unselected,
     unselectedTextColor,
+    unselectedHover,
     unselectedFontWeight = theme.font.weight,
     selected,
     selectedBorder = selected,
@@ -19,6 +20,7 @@ class ButtonColor {
     this._unselected = unselected;
     this._unselectedBorder = unselectedBorder;
     this._unselectedTextColor = unselectedTextColor;
+    this._unselectedHover = unselectedHover;
     this._unselectedFontWeight = unselectedFontWeight;
     this._selected = selected;
     this._selectedBorder = selectedBorder;
@@ -37,6 +39,7 @@ class ButtonColor {
       border: this._unselectedBorder,
       color: this._unselectedTextColor,
       fontWeight: this._unselectedFontWeight,
+      hover: this._unselectedHover,
     };
   }
 
