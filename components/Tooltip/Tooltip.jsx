@@ -9,7 +9,7 @@ const TIP_MAXLENGTH = 36;
 const Tip = styled.div`
   background-color: ${Colors.BLACK[700]};
   border-color: ${Colors.BLACK[700]};
-  border-radius: 2px;
+  border-radius: 4px;
   color: ${Colors.WHITE};
   font-size: 16px;
   font-weight: bold;
