@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge component Should match snapshot and correct styles With number 1`] = `
+exports[`<Badge /> Should match snapshot With number 1`] = `
 .c0 {
   display: inline-block;
   margin-left: 8px;
@@ -36,7 +36,7 @@ exports[`Badge component Should match snapshot and correct styles With number 1`
 </div>
 `;
 
-exports[`Badge component Should match snapshot and correct styles with children 1`] = `
+exports[`<Badge /> Should match snapshot with children 1`] = `
 .c0 {
   display: inline-block;
   position: relative;
