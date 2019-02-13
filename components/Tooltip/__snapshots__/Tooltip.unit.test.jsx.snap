@@ -7,11 +7,3 @@ exports[`Tooltip component  All positions Should match the snapshot when place i
 exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-1 dxEjoL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 gsaAVj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover Me</div>"`;
 
 exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-1 dxEjoL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 gsaAVj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover Me</div>"`;
-
-exports[`Tooltip component  All skins Should match the snapshot skin is info 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-1 dxEjoL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 gsaAVj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover Me</div>"`;
-
-exports[`Tooltip component  All skins Should match the snapshot when skin is danger 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-1 dxEjoL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 gsaAVj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover Me</div>"`;
-
-exports[`Tooltip component  All skins Should match the snapshot when skin is success 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-1 dxEjoL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 gsaAVj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover Me</div>"`;
-
-exports[`Tooltip component  All skins Should match the snapshot when skin is warning 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-1 dxEjoL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 gsaAVj\\" width=\\"0\\" height=\\"0\\">Tooltip</div>Hover Me</div>"`;
