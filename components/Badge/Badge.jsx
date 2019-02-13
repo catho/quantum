@@ -35,7 +35,7 @@ const getColors = ({ skin }) => {
     background-color: ${badgeColors[skin].background};
     color: ${badgeColors[skin].text};
 
-    ${skin === 'white' && 'mix-blend-mode: screen;'}
+    ${skin === 'white' && 'mix-blend-mode: lighten;'}
   `;
 };
 
@@ -43,7 +43,7 @@ const Wrapper = styled.div`
   display: inline-block;
 
   ${props =>
-    props.child
+    props.originalChildren
       ? `position: relative;`
       : `margin-left: 8px; margin-right: 8px;`}
 `;
@@ -68,7 +68,7 @@ const Tag = styled.span`
   `}
 
   ${props =>
-    props.child &&
+    props.originalChildren &&
     `
     position: absolute;
     right: -10px;
@@ -82,14 +82,18 @@ const Badge = ({ children, number, skin }) => {
   const value = number > 99 ? '99+' : number;
 
   return (
-    <Wrapper value={value} child={children}>
-      <Tag skin={skin} value={number} child={children}>
+    <Wrapper value={value} originalChildren={children}>
+      <Tag skin={skin} value={number} originalChildren={children}>
         {value}
       </Tag>
       {children}
     </Wrapper>
   );
 };
+
+Wrapper.displayName = 'Wrapper';
+Tag.displayName = 'Tag';
+Badge.displayName = 'Badge';
 
 Badge.propTypes = {
   /** Define background and text color */
