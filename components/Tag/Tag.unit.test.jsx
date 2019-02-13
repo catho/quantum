@@ -55,11 +55,11 @@ describe('<Tag />', () => {
 
     it('is removed when close button is clicked', () => {
       const tag = shallow(<Tag closable />);
-      const button = tag.childAt(0).childAt(1);
+      const button = tag.find('CloseButton');
 
       expect(tag.state('hidden')).toBe(false);
 
-      button.simulate('click', {});
+      button.simulate('click');
 
       expect(tag.state('hidden')).toBe(true);
       expect(tag.html()).toBeNull();

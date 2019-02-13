@@ -83,7 +83,7 @@ const iconSizes = {
   large: '20px',
 };
 
-const ResetedButton = styled.button`
+const CloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
@@ -92,6 +92,8 @@ const ResetedButton = styled.button`
   padding: 0;
   ${({ size }) => `height: ${iconSizes[size]};`}
 `;
+
+CloseButton.displayName = 'CloseButton';
 
 const SmallIcon = styled(Icon)`
   ${({ size }) => `font-size: ${iconSizes[size]} !important;`}
@@ -121,13 +123,13 @@ class Tag extends Component {
         <Content closable={closable}>
           {children || text}
           {closable && (
-            <ResetedButton onClick={this.hide} {...this.props}>
+            <CloseButton onClick={this.hide} {...this.props}>
               <SmallIcon
                 {...this.props}
                 name="close"
                 skin={skinFontColors[skin]}
               />
-            </ResetedButton>
+            </CloseButton>
           )}
         </Content>
       </Wrapper>
