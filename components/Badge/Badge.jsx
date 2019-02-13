@@ -78,6 +78,7 @@ const StyledBadge = styled.span`
   ${getColors}
 `;
 
+/** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
 const Badge = ({ children, number, skin }) => {
   const value = number > 99 ? '99+' : number;
 
