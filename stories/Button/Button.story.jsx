@@ -33,6 +33,12 @@ const exampleTab = (
         }
         code={'<Button center skin="action">Centered</Button>'}
       />
+
+      <ExampleTitle>Link</ExampleTitle>
+      <Example
+        component={<Button skin="link">click here</Button>}
+        code={'<Button skin="link">click here</Button>'}
+      />
     </Container>
 
     <Container fluid>

@@ -11,7 +11,6 @@ class DefaultButton extends ButtonColor {
     selectedBorder = selected,
     selectedTextColor = unselectedTextColor,
     disabled,
-    disabledBorder = disabled,
     disabledTextColor = unselectedTextColor,
     shadow = true,
   }) {
@@ -24,7 +23,6 @@ class DefaultButton extends ButtonColor {
       selectedBorder,
       selectedTextColor,
       disabled,
-      disabledBorder,
       disabledTextColor,
       shadow,
     });

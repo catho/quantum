@@ -64,6 +64,12 @@ class ButtonColor {
   get shadow() {
     return this._shadow;
   }
+
+  get link() {
+    return {
+      color: this._unselectedTextColor,
+    };
+  }
 }
 
 export default ButtonColor;

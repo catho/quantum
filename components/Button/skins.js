@@ -25,6 +25,9 @@ const skins = {
     disabled: Colors.PINK['500'],
     unselectedHover: Colors.PINK['900'],
   }),
+  link: new DefaultButton({
+    unselectedTextColor: Colors.BLUE['500'],
+  }),
 };
 
 export default ({ skin }) => skins[skin] || skins.primary;

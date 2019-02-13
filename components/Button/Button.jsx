@@ -43,7 +43,7 @@ const padding = ({ size }) => {
     xlarge: '0 16px',
   };
 
-  return `padding: ${paddings[size] || paddings.normal};`;
+  return `padding: ${paddings[size] || paddings.medium};`;
 };
 
 const height = ({ size }) => {
@@ -55,7 +55,7 @@ const height = ({ size }) => {
     xlarge: '56px',
   };
 
-  return `height: ${heights[size] || heights.normal};`;
+  return `height: ${heights[size] || heights.medium};`;
 };
 
 const ButtonIcon = styled(Icon)`
@@ -63,8 +63,15 @@ const ButtonIcon = styled(Icon)`
 `;
 
 const StyledButton = styled.button`
+  
+${props =>
+  props.skin !== 'link' &&
+  `
   border-radius: ${theme.sizes.radius};
+  `}
+
   font-weight: bold;
+  letter-spacing: 0.2px;
   text-align: center;
   text-decoration: ${props => (props.link ? 'underline' : 'none')};
 
@@ -96,32 +103,45 @@ const StyledButton = styled.button`
   `}
 
   ${props => {
-    const { unselected, selected, disabled, shadow } = skins(props);
+    const { unselected, selected, disabled, shadow, link } = skins(props);
 
     return `
-      background-color: ${
-        props.disabled ? disabled.background : unselected.background
-      };
-      border: 1.5px solid ${
-        props.disabled ? disabled.border : unselected.border
-      };
-      color: ${props.disabled ? disabled.color : unselected.color};
 
-      ${shadow ? theme.mixins.shadow() : undefined};
+      ${
+        props.skin !== 'link'
+          ? `
+          background-color: ${
+            props.disabled ? disabled.background : unselected.background
+          };
+          border: 1.5px solid ${
+            props.disabled ? disabled.border : unselected.border
+          };
+          color: ${props.disabled ? disabled.color : unselected.color};
 
-      &:active {
-        ${shadow && theme.mixins.shadow(2)};
-        background-color: ${selected.background};
-        border-color: ${selected.border};
-        color: ${selected.color};
-      }
+          ${shadow ? theme.mixins.shadow() : undefined};
 
-      ${!props.disabled &&
+          &:active {
+            ${shadow && theme.mixins.shadow(2)};
+            background-color: ${selected.background};
+            border-color: ${selected.border};
+            color: ${selected.color};
+          }
+
+          ${!props.disabled &&
+            `
+            &:hover {
+              background-color:  ${unselected.hover};
+            }      
+          `};
+          `
+          : `
+          background: none;
+          border: none;
+          color: ${link.color};
+          text-decoration: underline;
         `
-        &:hover {
-          background-color:  ${unselected.hover};
-        }      
-      `};
+      };
+
     `;
   }}
 `;
@@ -132,7 +152,6 @@ class Button extends React.Component {
   static Google = SocialButtons.Google;
 
   render() {
-    console.log(this.props);
     const { children, icon, size, ...rest } = this.props;
 
     return (
@@ -164,7 +183,7 @@ Button.propTypes = {
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
-  skin: PropTypes.oneOf(['primary', 'secondary', 'action']),
+  skin: PropTypes.oneOf(['primary', 'secondary', 'action', 'link']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
   children: PropTypes.node,
   onClick: PropTypes.func,
