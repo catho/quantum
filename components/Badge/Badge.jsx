@@ -39,7 +39,7 @@ const getColors = ({ skin }) => {
   `;
 };
 
-const Wrapper = styled.div`
+const BadgeWrapper = styled.div`
   display: inline-block;
 
   ${props =>
@@ -48,7 +48,7 @@ const Wrapper = styled.div`
       : `margin-left: 8px; margin-right: 8px;`}
 `;
 
-const Tag = styled.span`
+const StyledBadge = styled.span`
   border-radius: 8px;
   display: inline-block;
   font-size: 12px;
@@ -61,7 +61,7 @@ const Tag = styled.span`
   padding-right: 2px;
 
   ${props =>
-    props.value > 99 &&
+    !Number.isInteger(props.value) &&
     `
     padding-left: 4px;
     padding-right: 4px;
@@ -82,17 +82,17 @@ const Badge = ({ children, number, skin }) => {
   const value = number > 99 ? '99+' : number;
 
   return (
-    <Wrapper value={value} originalChildren={children}>
-      <Tag skin={skin} value={number} originalChildren={children}>
+    <BadgeWrapper value={value} originalChildren={children}>
+      <StyledBadge skin={skin} value={value} originalChildren={children}>
         {value}
-      </Tag>
+      </StyledBadge>
       {children}
-    </Wrapper>
+    </BadgeWrapper>
   );
 };
 
-Wrapper.displayName = 'Wrapper';
-Tag.displayName = 'Tag';
+BadgeWrapper.displayName = 'BadgeWrapper';
+StyledBadge.displayName = 'StyledBadge';
 Badge.displayName = 'Badge';
 
 Badge.propTypes = {
