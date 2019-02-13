@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
-import placement from './options';
+import placementConfig from './options';
 
 const TIP_MAXLENGTH = 36;
 
 const Tip = styled.div`
   background-color: ${Colors.BLACK[700]};
   border-color: ${Colors.BLACK[700]};
-  border-radius: 4px;
+  border-radius: 2px;
   color: ${Colors.WHITE};
   font-size: 16px;
   font-weight: bold;
@@ -21,19 +21,16 @@ const Tip = styled.div`
   visibility: ${props => (props.show ? 'visible' : 'hidden')};
   z-index: 100;
 
-  ${placement.tipPosition} &:before {
+  ${placementConfig.tipPosition} &:before {
     content: '';
     position: absolute;
-    ${props => placement.arrowPosition[props.place]};
+    ${props => placementConfig.arrowPosition[props.placement]};
   }
-
-  ${({ offset }) => (offset || offset === 0 ? `left: ${offset}%;` : '')};
 `;
 
 const Wrapper = styled.div`
   cursor: default;
-  display: ${props => (props.slider ? 'block' : 'inline-block')};
-  position: ${props => (props.slider ? 'initial' : 'relative')};
+  position: relative;
   white-space: ${props =>
     props.length >= TIP_MAXLENGTH ? 'initial' : 'nowrap'};
 
@@ -56,6 +53,7 @@ class Tooltip extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     const { text } = this.props;
     const { show, width, height } = this.state;
+
     return (
       text !== nextProps.text ||
       show !== nextState.show ||
@@ -83,27 +81,24 @@ class Tooltip extends Component {
   }
 
   render() {
-    const { children, place, text, slider, offset } = this.props;
+    const { children, placement, text } = this.props;
     const { width, height, show } = this.state;
     const { length } = text;
 
     return (
       <Wrapper
-        onMouseEnter={!slider ? this.handleEnter : () => {}}
-        onMouseLeave={!slider ? this.handleLeave : () => {}}
-        slider={slider}
+        onMouseEnter={this.handleEnter}
+        onMouseLeave={this.handleLeave}
         length={length}
       >
         <Tip
           ref={tip => {
             this.tip = tip;
           }}
-          place={place}
+          placement={placement}
           width={width}
           height={height}
-          show={slider ? true : show}
-          slider={slider}
-          offset={offset}
+          show={show}
         >
           {text}
         </Tip>
@@ -114,18 +109,19 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
+  /** Text that tooltip will show */
   text: PropTypes.string,
-  place: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-  offset: PropTypes.string,
-  slider: PropTypes.bool,
-  children: PropTypes.node.isRequired,
+  /** Define tooltip positioning */
+  placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 Tooltip.defaultProps = {
   text: 'Tooltip',
-  place: 'top',
-  offset: '',
-  slider: false,
+  placement: 'top',
 };
 
 export default Tooltip;

@@ -13,7 +13,7 @@ const sideBorders = `
   transform: translateY(-50%);
 `;
 
-const placement = {
+const placementConfig = {
   arrowPosition: {
     bottom: `
       ${upDownBorders}
@@ -41,7 +41,7 @@ const placement = {
     `,
   },
 
-  tipPosition: ({ place, height, width }) => {
+  tipPosition: ({ placement, height, width }) => {
     const position = {
       top: `top: -${height + 5}px; left: 50%; margin-left: -${Math.floor(
         width / 2,
@@ -57,8 +57,8 @@ const placement = {
       )}px;`,
     };
 
-    return position[place] || position.top;
+    return position[placement] || position.top;
   },
 };
 
-export default placement;
+export default placementConfig;
