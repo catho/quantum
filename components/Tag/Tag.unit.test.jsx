@@ -12,21 +12,24 @@ const testSnapshot = props => {
   });
 };
 
-describe('Tag component', () => {
+describe('<Tag />', () => {
   it('without props', () => testSnapshot());
-  it('text prop / children', () =>
+  it('with only text prop / children', () =>
     testSnapshot([{ text: 'example' }, { children: 'example' }]));
-  it('bold', () => testSnapshot({ bold: true }));
-  it('stroked skin', () => testSnapshot({ skin: 'stroked' }));
-  it('inverted skin', () => testSnapshot({ skin: 'inverted' }));
-  it('blue skin', () => testSnapshot({ skin: 'blue' }));
-  it('success skin', () => testSnapshot({ skin: 'success' }));
-  it('warning skin', () => testSnapshot({ skin: 'warning' }));
-  it('error skin', () => testSnapshot({ skin: 'error' }));
-  it('blue-text skin', () => testSnapshot({ skin: 'blue-text' }));
+  it('with bold prop', () => testSnapshot({ bold: true }));
+
+  describe('Skins', () => {
+    it('stroked', () => testSnapshot({ skin: 'stroked' }));
+    it('inverted', () => testSnapshot({ skin: 'inverted' }));
+    it('blue', () => testSnapshot({ skin: 'blue' }));
+    it('success', () => testSnapshot({ skin: 'success' }));
+    it('warning', () => testSnapshot({ skin: 'warning' }));
+    it('error', () => testSnapshot({ skin: 'error' }));
+    it('blue-text', () => testSnapshot({ skin: 'blue-text' }));
+  });
 
   describe('Closable', () => {
-    it('it is rendering well', () => {
+    it('is rendering well', () => {
       testSnapshot({ closable: true });
       testSnapshot({ closable: true, skin: 'stroked' });
       testSnapshot({ closable: true, skin: 'inverted' });
@@ -48,5 +51,11 @@ describe('Tag component', () => {
       expect(tag.state('hidden')).toBe(true);
       expect(tag.html()).toBeNull();
     });
+  });
+
+  describe('Sizes', () => {
+    it('small', () => testSnapshot({ size: 'small' }));
+    it('medium', () => testSnapshot({ size: 'medium' }));
+    it('large', () => testSnapshot({ size: 'large' }));
   });
 });

@@ -45,15 +45,32 @@ const skins = {
   `,
 };
 
+const sizes = {
+  small: `
+    height: 24px;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  `,
+  medium: `
+    height: 32px;
+  `,
+  large: `
+    height: 36px;
+    font-size: 18px;
+  `,
+};
+
 const Wrapper = styled.div`
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   ${({ bold }) => bold && `font-weight: bold;`}
   ${({ skin }) => skins[skin]}
+  ${({ size }) => sizes[size]}
 `;
 
 const Content = styled.div`
@@ -65,17 +82,24 @@ const Content = styled.div`
   `}
 `;
 
+const iconSizes = {
+  small: '14px',
+  medium: '18px',
+  large: '20px',
+};
+
 const ResetedButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  ${({ size }) => `height: ${iconSizes[size]};`}
 `;
 
 const SmallIcon = styled(Icon)`
-  font-size: 18px !important;
+  ${({ size }) => `font-size: ${iconSizes[size]} !important;`}
 `;
 
 class Tag extends Component {
@@ -93,17 +117,21 @@ class Tag extends Component {
 
   render() {
     const { hidden } = this.state;
-    const { children, text, closable, skin, bold } = this.props;
-
     if (hidden) return '';
 
+    const { children, text, closable, skin } = this.props;
+
     return (
-      <Wrapper closable={closable} skin={skin} bold={bold}>
+      <Wrapper {...this.props}>
         <Content closable={closable}>
           {children || text}
           {closable && (
-            <ResetedButton onClick={this.hide}>
-              <SmallIcon name="close" skin={skinFontColors[skin]} />
+            <ResetedButton onClick={this.hide} {...this.props}>
+              <SmallIcon
+                name="close"
+                skin={skinFontColors[skin]}
+                {...this.props}
+              />
             </ResetedButton>
           )}
         </Content>
@@ -127,6 +155,7 @@ Tag.propTypes = {
   text: PropTypes.string,
   bold: PropTypes.bool,
   closable: PropTypes.bool,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
 };
 
 Tag.defaultProps = {
@@ -135,6 +164,7 @@ Tag.defaultProps = {
   bold: false,
   children: '',
   closable: false,
+  size: 'medium',
 };
 
 export default Tag;

@@ -1,14 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tag component Closable it is rendering well 1`] = `
+exports[`<Tag /> Closable is rendering well 1`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   background-color: #f2f2f2;
+  height: 32px;
 }
 
 .c1 {
@@ -27,8 +28,9 @@ exports[`Tag component Closable it is rendering well 1`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -37,6 +39,7 @@ exports[`Tag component Closable it is rendering well 1`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -45,15 +48,20 @@ exports[`Tag component Closable it is rendering well 1`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "",
+            "color": "default",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -62,16 +70,17 @@ exports[`Tag component Closable it is rendering well 1`] = `
 </div>
 `;
 
-exports[`Tag component Closable it is rendering well 2`] = `
+exports[`<Tag /> Closable is rendering well 2`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   border: 1px solid;
   background: none;
+  height: 32px;
 }
 
 .c1 {
@@ -90,8 +99,9 @@ exports[`Tag component Closable it is rendering well 2`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -100,6 +110,7 @@ exports[`Tag component Closable it is rendering well 2`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -108,15 +119,20 @@ exports[`Tag component Closable it is rendering well 2`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "",
+            "color": "stroked",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -125,16 +141,17 @@ exports[`Tag component Closable it is rendering well 2`] = `
 </div>
 `;
 
-exports[`Tag component Closable it is rendering well 3`] = `
+exports[`<Tag /> Closable is rendering well 3`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   color: #FFFFFF;
   background-color: #999999;
+  height: 32px;
 }
 
 .c1 {
@@ -153,8 +170,9 @@ exports[`Tag component Closable it is rendering well 3`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -163,6 +181,7 @@ exports[`Tag component Closable it is rendering well 3`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -171,15 +190,20 @@ exports[`Tag component Closable it is rendering well 3`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "#FFFFFF",
+            "color": "inverted",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -188,16 +212,17 @@ exports[`Tag component Closable it is rendering well 3`] = `
 </div>
 `;
 
-exports[`Tag component Closable it is rendering well 4`] = `
+exports[`<Tag /> Closable is rendering well 4`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   color: #1355d0;
   background-color: #e5edfc;
+  height: 32px;
 }
 
 .c1 {
@@ -216,8 +241,9 @@ exports[`Tag component Closable it is rendering well 4`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -226,6 +252,7 @@ exports[`Tag component Closable it is rendering well 4`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -234,15 +261,20 @@ exports[`Tag component Closable it is rendering well 4`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "#1355d0",
+            "color": "blue",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -251,16 +283,17 @@ exports[`Tag component Closable it is rendering well 4`] = `
 </div>
 `;
 
-exports[`Tag component Closable it is rendering well 5`] = `
+exports[`<Tag /> Closable is rendering well 5`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   color: #3c6510;
   background-color: #edfadf;
+  height: 32px;
 }
 
 .c1 {
@@ -279,8 +312,9 @@ exports[`Tag component Closable it is rendering well 5`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -289,6 +323,7 @@ exports[`Tag component Closable it is rendering well 5`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -297,15 +332,20 @@ exports[`Tag component Closable it is rendering well 5`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "#3c6510",
+            "color": "success",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -314,16 +354,17 @@ exports[`Tag component Closable it is rendering well 5`] = `
 </div>
 `;
 
-exports[`Tag component Closable it is rendering well 6`] = `
+exports[`<Tag /> Closable is rendering well 6`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   color: #a36300;
   background-color: #ffefd6;
+  height: 32px;
 }
 
 .c1 {
@@ -342,8 +383,9 @@ exports[`Tag component Closable it is rendering well 6`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -352,6 +394,7 @@ exports[`Tag component Closable it is rendering well 6`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -360,15 +403,20 @@ exports[`Tag component Closable it is rendering well 6`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "#a36300",
+            "color": "warning",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -377,16 +425,17 @@ exports[`Tag component Closable it is rendering well 6`] = `
 </div>
 `;
 
-exports[`Tag component Closable it is rendering well 7`] = `
+exports[`<Tag /> Closable is rendering well 7`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   color: #ac001a;
   background-color: #ffe5e9;
+  height: 32px;
 }
 
 .c1 {
@@ -405,8 +454,9 @@ exports[`Tag component Closable it is rendering well 7`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -415,6 +465,7 @@ exports[`Tag component Closable it is rendering well 7`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -423,15 +474,20 @@ exports[`Tag component Closable it is rendering well 7`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "#ac001a",
+            "color": "error",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -440,16 +496,17 @@ exports[`Tag component Closable it is rendering well 7`] = `
 </div>
 `;
 
-exports[`Tag component Closable it is rendering well 8`] = `
+exports[`<Tag /> Closable is rendering well 8`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   color: #1355d0;
   background-color: #f2f2f2;
+  height: 32px;
 }
 
 .c1 {
@@ -468,8 +525,9 @@ exports[`Tag component Closable it is rendering well 8`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  padding: 0;
   margin-left: 4px;
+  padding: 0;
+  height: 18px;
 }
 
 .c3 {
@@ -478,6 +536,7 @@ exports[`Tag component Closable it is rendering well 8`] = `
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className="c1"
@@ -486,15 +545,20 @@ exports[`Tag component Closable it is rendering well 8`] = `
     <button
       className="c2"
       onClick={[Function]}
+      size="medium"
     >
       <span
         aria-hidden="true"
+        bold={false}
         className="material-icons MuiIcon-root-1 c3"
+        closable={true}
+        size="medium"
         style={
           Object {
-            "color": "#1355d0",
+            "color": "blue-text",
           }
         }
+        text="Tag text"
       >
         close
       </span>
@@ -503,20 +567,98 @@ exports[`Tag component Closable it is rendering well 8`] = `
 </div>
 `;
 
-exports[`Tag component blue skin 1`] = `
+exports[`<Tag /> Sizes large 1`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  height: 36px;
+  font-size: 18px;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Sizes medium 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  height: 32px;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Sizes small 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  height: 24px;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+<div
+  className="c0"
+  size="small"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins blue 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
   color: #1355d0;
   background-color: #e5edfc;
+  height: 32px;
 }
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className=""
@@ -526,20 +668,22 @@ exports[`Tag component blue skin 1`] = `
 </div>
 `;
 
-exports[`Tag component blue-text skin 1`] = `
+exports[`<Tag /> Skins blue-text 1`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   color: #1355d0;
   background-color: #f2f2f2;
+  height: 32px;
 }
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className=""
@@ -549,20 +693,147 @@ exports[`Tag component blue-text skin 1`] = `
 </div>
 `;
 
-exports[`Tag component bold 1`] = `
+exports[`<Tag /> Skins error 1`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
+  color: #ac001a;
+  background-color: #ffe5e9;
+  height: 32px;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins inverted 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
+  color: #FFFFFF;
+  background-color: #999999;
+  height: 32px;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins stroked 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
+  border: 1px solid;
+  background: none;
+  height: 32px;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins success 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
+  color: #3c6510;
+  background-color: #edfadf;
+  height: 32px;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins warning 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
+  color: #a36300;
+  background-color: #ffefd6;
+  height: 32px;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> with bold prop 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 8px;
+  padding: 4px 12px;
   font-weight: bold;
   background-color: #f2f2f2;
+  height: 32px;
 }
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className=""
@@ -572,111 +843,21 @@ exports[`Tag component bold 1`] = `
 </div>
 `;
 
-exports[`Tag component error skin 1`] = `
+exports[`<Tag /> with only text prop / children 1`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
-  color: #ac001a;
-  background-color: #ffe5e9;
-}
-
-<div
-  className="c0"
->
-  <div
-    className=""
-  >
-    Tag text
-  </div>
-</div>
-`;
-
-exports[`Tag component inverted skin 1`] = `
-.c0 {
-  border-radius: 8px;
   padding: 4px 12px;
-  box-sizing: border-box;
-  height: 32px;
-  display: inline-block;
-  margin-right: 8px;
-  color: #FFFFFF;
-  background-color: #999999;
-}
-
-<div
-  className="c0"
->
-  <div
-    className=""
-  >
-    Tag text
-  </div>
-</div>
-`;
-
-exports[`Tag component stroked skin 1`] = `
-.c0 {
-  border-radius: 8px;
-  padding: 4px 12px;
-  box-sizing: border-box;
-  height: 32px;
-  display: inline-block;
-  margin-right: 8px;
-  border: 1px solid;
-  background: none;
-}
-
-<div
-  className="c0"
->
-  <div
-    className=""
-  >
-    Tag text
-  </div>
-</div>
-`;
-
-exports[`Tag component success skin 1`] = `
-.c0 {
-  border-radius: 8px;
-  padding: 4px 12px;
-  box-sizing: border-box;
-  height: 32px;
-  display: inline-block;
-  margin-right: 8px;
-  color: #3c6510;
-  background-color: #edfadf;
-}
-
-<div
-  className="c0"
->
-  <div
-    className=""
-  >
-    Tag text
-  </div>
-</div>
-`;
-
-exports[`Tag component text prop / children 1`] = `
-.c0 {
-  border-radius: 8px;
-  padding: 4px 12px;
-  box-sizing: border-box;
-  height: 32px;
-  display: inline-block;
-  margin-right: 8px;
   background-color: #f2f2f2;
+  height: 32px;
 }
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className=""
@@ -686,19 +867,21 @@ exports[`Tag component text prop / children 1`] = `
 </div>
 `;
 
-exports[`Tag component text prop / children 2`] = `
+exports[`<Tag /> with only text prop / children 2`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
+  padding: 4px 12px;
   background-color: #f2f2f2;
+  height: 32px;
 }
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className=""
@@ -708,42 +891,21 @@ exports[`Tag component text prop / children 2`] = `
 </div>
 `;
 
-exports[`Tag component warning skin 1`] = `
+exports[`<Tag /> without props 1`] = `
 .c0 {
   border-radius: 8px;
-  padding: 4px 12px;
   box-sizing: border-box;
-  height: 32px;
   display: inline-block;
+  line-height: 1.5;
   margin-right: 8px;
-  color: #a36300;
-  background-color: #ffefd6;
-}
-
-<div
-  className="c0"
->
-  <div
-    className=""
-  >
-    Tag text
-  </div>
-</div>
-`;
-
-exports[`Tag component without props 1`] = `
-.c0 {
-  border-radius: 8px;
   padding: 4px 12px;
-  box-sizing: border-box;
-  height: 32px;
-  display: inline-block;
-  margin-right: 8px;
   background-color: #f2f2f2;
+  height: 32px;
 }
 
 <div
   className="c0"
+  size="medium"
 >
   <div
     className=""

@@ -8,7 +8,7 @@ import {
 } from '@catho-private/quantum-storybook-ui';
 import { Tag } from '../../components';
 
-const codeSkins = `<Tag>Default</Tag>
+const skinsCode = `<Tag>Default</Tag>
 <Tag skin="stroked">Stroked</Tag>
 <Tag skin="inverted">Inverted</Tag>
 <Tag skin="blue">Blue</Tag>
@@ -33,12 +33,12 @@ const skinsExample = (
           <Tag skin="blue-text">Blue Text</Tag>
         </>
       }
-      code={codeSkins}
+      code={skinsCode}
     />
   </>
 );
 
-const codeClosables = `<Tag closable>Default</Tag>
+const closableCodes = `<Tag closable>Default</Tag>
 <Tag closable skin="stroked">Stroked</Tag>
 <Tag closable skin="inverted">Inverted</Tag>
 <Tag closable skin="blue">Blue</Tag>
@@ -77,7 +77,27 @@ const closableExample = (
           </Tag>
         </>
       }
-      code={codeClosables}
+      code={closableCodes}
+    />
+  </>
+);
+
+const sizesCode = `<Tag skin="small">Small</Tag>
+<Tag>Medium (Default)</Tag>
+<Tag skin="large">Large</Tag>`;
+
+const sizesExample = (
+  <>
+    <Title>Sizes</Title>
+    <Example
+      component={
+        <>
+          <Tag size="small">Small</Tag>
+          <Tag>Medium (Default)</Tag>
+          <Tag size="large">Large</Tag>
+        </>
+      }
+      code={sizesCode}
     />
   </>
 );
@@ -86,6 +106,7 @@ const exampleTab = (
   <Tab title="Examples">
     {skinsExample}
     {closableExample}
+    {sizesExample}
   </Tab>
 );
 
