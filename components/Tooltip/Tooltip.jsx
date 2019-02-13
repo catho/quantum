@@ -1,40 +1,42 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors/deprecated';
-import { skins, placement } from './options';
+import Colors from '../Colors';
+import placementConfig from './options';
 
-const tipSkin = ({ skin }) => skins[skin] || skins.info;
+const TIP_MAXLENGTH = 36;
 
 const Tip = styled.div`
-  background-color: ${tipSkin};
-  border-color: ${tipSkin};
-  border-radius: 2px;
+  background-color: ${Colors.BLACK[700]};
+  border-color: ${Colors.BLACK[700]};
+  border-radius: 4px;
   color: ${Colors.WHITE};
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   opacity: ${props => (props.show ? '1' : '0')};
-  padding: 5px 20px;
+  padding: 4px 8px;
   position: absolute;
   text-align: center;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   visibility: ${props => (props.show ? 'visible' : 'hidden')};
   z-index: 100;
 
-  ${placement.tipPosition} &:before {
+  ${placementConfig.tipPosition} &:before {
     content: '';
     position: absolute;
-    ${props => placement.arrowPosition[props.place]};
+    ${props => placementConfig.arrowPosition[props.placement]};
   }
-
-  ${({ offset }) => (offset || offset === 0 ? `left: ${offset}%;` : '')};
 `;
 
 const Wrapper = styled.div`
-  display: ${props => (props.slider ? 'block' : 'inline-block')};
-  position: ${props => (props.slider ? 'initial' : 'relative')};
   cursor: default;
-  white-space: nowrap;
+  position: relative;
+  white-space: ${props =>
+    props.length >= TIP_MAXLENGTH ? 'initial' : 'nowrap'};
+
+  ${Tip} {
+    width: ${props => (props.length >= TIP_MAXLENGTH ? '200px' : 'initial')};
+  }
 `;
 
 class Tooltip extends Component {
@@ -51,6 +53,7 @@ class Tooltip extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     const { text } = this.props;
     const { show, width, height } = this.state;
+
     return (
       text !== nextProps.text ||
       show !== nextState.show ||
@@ -78,27 +81,24 @@ class Tooltip extends Component {
   }
 
   render() {
-    const { children, skin, place, text, slider, offset } = this.props;
-
+    const { children, placement, text } = this.props;
     const { width, height, show } = this.state;
+    const { length } = text;
 
     return (
       <Wrapper
-        onMouseEnter={!slider ? this.handleEnter : () => {}}
-        onMouseLeave={!slider ? this.handleLeave : () => {}}
-        slider={slider}
+        onMouseEnter={this.handleEnter}
+        onMouseLeave={this.handleLeave}
+        length={length}
       >
         <Tip
-          skin={skin}
           ref={tip => {
             this.tip = tip;
           }}
-          place={place}
+          placement={placement}
           width={width}
           height={height}
-          show={slider ? true : show}
-          slider={slider}
-          offset={offset}
+          show={show}
         >
           {text}
         </Tip>
@@ -109,20 +109,19 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
+  /** Text that tooltip will show */
   text: PropTypes.string,
-  skin: PropTypes.oneOf(['primary', 'info', 'danger', 'success', 'warning']),
-  place: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-  offset: PropTypes.string,
-  slider: PropTypes.bool,
-  children: PropTypes.node.isRequired,
+  /** Define tooltip positioning */
+  placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 Tooltip.defaultProps = {
   text: 'Tooltip',
-  skin: 'primary',
-  place: 'top',
-  offset: '',
-  slider: false,
+  placement: 'top',
 };
 
 export default Tooltip;
