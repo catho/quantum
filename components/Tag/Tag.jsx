@@ -60,7 +60,6 @@ const Wrapper = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   ${({ bold }) => bold && `font-weight: bold;`}

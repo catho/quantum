@@ -8,14 +8,16 @@ describe('Typography component', () => {
   it('Should add standard typeface', () => {
     renderer.create(<Typography />);
 
-    expectCSSMatches(`* { font-family: 'Nunito Sans', sans-serif; }`);
+    expectCSSMatches(`* {
+      font-family: 'Nunito Sans', sans-serif;
+      line-height: 1.5;
+    }`);
   });
 
   it('Should set h1 style', () => {
     renderer.create(<Typography />);
 
     expectCSSMatches(`h1 {
-        line-height: 72px;
         -webkit-letter-spacing: 0.7px;
         -moz-letter-spacing: 0.7px;
         -ms-letter-spacing: 0.7px;
@@ -30,7 +32,6 @@ describe('Typography component', () => {
     expectCSSMatches(
       `h2 {
         font-size: 36px;
-        line-height: 54px;
         -webkit-letter-spacing: 0.5px;
         -moz-letter-spacing: 0.5px;
         -ms-letter-spacing: 0.5px;
@@ -45,7 +46,6 @@ describe('Typography component', () => {
     expectCSSMatches(
       `h3 {
         font-size: 28px;
-        line-height: 42px;
         -webkit-letter-spacing: 0.4px;
         -moz-letter-spacing: 0.4px;
         -ms-letter-spacing: 0.4px;
@@ -60,7 +60,6 @@ describe('Typography component', () => {
     expectCSSMatches(
       `h4 {
         font-size: 24px;
-        line-height: 36px;
         -webkit-letter-spacing: 0.4px;
         -moz-letter-spacing: 0.4px;
         -ms-letter-spacing: 0.4px;
@@ -75,7 +74,6 @@ describe('Typography component', () => {
     expectCSSMatches(
       `h5 {
         font-size: 20px;
-        line-height: 30px;
         -webkit-letter-spacing: 0.3px;
         -moz-letter-spacing: 0.3px;
         -ms-letter-spacing: 0.3px;
@@ -90,7 +88,6 @@ describe('Typography component', () => {
     expectCSSMatches(
       `h6 {
         font-size: 18px;
-        line-height: 27px;
         -webkit-letter-spacing: 0.3px;
         -moz-letter-spacing: 0.3px;
         -ms-letter-spacing: 0.3px;

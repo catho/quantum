@@ -5,7 +5,6 @@ exports[`<Tag /> Closable is rendering well 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
@@ -74,7 +73,6 @@ exports[`<Tag /> Closable is rendering well 2`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   border: 1px solid;
@@ -144,7 +142,6 @@ exports[`<Tag /> Closable is rendering well 3`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #FFFFFF;
@@ -214,7 +211,6 @@ exports[`<Tag /> Closable is rendering well 4`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #1355d0;
@@ -284,7 +280,6 @@ exports[`<Tag /> Closable is rendering well 5`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #3c6510;
@@ -354,7 +349,6 @@ exports[`<Tag /> Closable is rendering well 6`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #a36300;
@@ -424,7 +418,6 @@ exports[`<Tag /> Closable is rendering well 7`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #ac001a;
@@ -494,7 +487,6 @@ exports[`<Tag /> Closable is rendering well 8`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #1355d0;
@@ -564,7 +556,6 @@ exports[`<Tag /> Sizes large 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
@@ -588,7 +579,6 @@ exports[`<Tag /> Sizes medium 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
@@ -611,7 +601,6 @@ exports[`<Tag /> Sizes small 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
@@ -637,7 +626,6 @@ exports[`<Tag /> Skins blue 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #1355d0;
@@ -661,7 +649,6 @@ exports[`<Tag /> Skins blue-text 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #1355d0;
@@ -685,7 +672,6 @@ exports[`<Tag /> Skins default 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
@@ -708,7 +694,6 @@ exports[`<Tag /> Skins error 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #ac001a;
@@ -732,7 +717,6 @@ exports[`<Tag /> Skins inverted 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #FFFFFF;
@@ -756,7 +740,6 @@ exports[`<Tag /> Skins stroked 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   border: 1px solid;
@@ -780,7 +763,6 @@ exports[`<Tag /> Skins success 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #3c6510;
@@ -804,7 +786,6 @@ exports[`<Tag /> Skins warning 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   color: #a36300;
@@ -828,7 +809,6 @@ exports[`<Tag /> with bold prop 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   font-weight: bold;
@@ -852,7 +832,6 @@ exports[`<Tag /> with only text prop / children 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
@@ -875,7 +854,6 @@ exports[`<Tag /> with only text prop / children 2`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
@@ -898,7 +876,6 @@ exports[`<Tag /> without props 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
