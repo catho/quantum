@@ -23,8 +23,10 @@ const StyledDiv = styled.div`
 
 const RadioBlock = (
   <RadioGroup>
-    <Radio id="radio" value="radio" name="radio" label="Click me!" />
-    <Radio id="radioTwo" value="radioTwo" name="radio" label="Click me!" />
+    <Radio id="radioOne" value="radio" name="radio" label="Click me!" />
+    <Radio id="radioTwo" value="radio" name="radio" label="Click me!" />
+    <Radio id="radioThree" value="radio" name="radio" label="Click me!" />
+    <Radio id="radioFour" value="radioTwo" name="radio" label="Click me!" />
   </RadioGroup>
 );
 
@@ -73,7 +75,7 @@ stories.add('Radio Button', () => (
         <h4>RadioGroup with block display</h4>
         <Row>
           <Col phone={6}>
-            <CodeExample component={RadioBlock} showTitle={false} />
+            {/* <CodeExample component={RadioBlock} showTitle={false} /> */}
           </Col>
 
           <Col phone={6}>

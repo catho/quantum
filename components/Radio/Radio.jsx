@@ -2,140 +2,171 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Colors from '../Colors';
-import { Label } from '../shared';
-import skins from '../Button/skins';
 
-const CANCEL_SKIN = skins({ skin: 'cancel' });
-const PRIMARY_SKIN = skins({ skin: 'primary' });
-
-console.log(Colors.COBALT);
-
-const commonAttr = {
-  borderWidth: '4px',
-  height: '16px',
-  width: '16px',
-};
-
-const boxedRadio = props => {
-  const { unselected, selected, disabled } = CANCEL_SKIN;
-
-  if (props.boxed) {
-    return css`
-      padding: 10px;
-      background-color: ${props.disabled
-        ? disabled.background
-        : unselected.background};
-      border: 1px solid ${props.disabled ? disabled.border : unselected.border};
-      color: ${props.disabled ? disabled.color : unselected.color};
-      font-weight: ${props.disabled
-        ? disabled.fontWeight
-        : unselected.fontWeight};
-
-      &:active {
-        background-color: ${selected.background};
-        border-color: ${selected.border};
-        color: ${selected.color};
-      }
-    `;
-  }
-
-  return css`
-    &:before {
-      content: ' ';
-      border-width: 1.5px;
-      border-style: solid;
-      border-color: ${Colors.BLACK[400]};
-      ${props.disabled &&
-        `
-        background-color: ${Colors.BLACK[200]};
-      `}
-      border-radius: 50%;
-      display: inline-block;
-      height: ${commonAttr.height};
-      width: ${commonAttr.width};
-      margin-right: 5px;
-
-      ${props.checked && `box-shadow: inset 0px 0px 0 3px white;`}
-      cursor: inherit;
-      position: relative;
-      top: 4px;
-    }
-
-    &:hover:before {
-      border-color: ${props.disabled ? Colors.COBALT[100] : Colors.BLUE[500]};
-      box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
-    }
-  `;
-};
-
-const StyledLabel = styled(Label)`
-  cursor: inherit;
+const StyledLabel = styled.div.attrs(props => ({
+  role: 'radio',
+  tabIndex: -1,
+  'aria-checked': 'false',
+}))`
+  cursor: pointer;
   display: inline-block;
 
-  ${boxedRadio};
-`;
+  &:before {
+    content: ' ';
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: ${Colors.BLACK[400]};
+    ${props =>
+      props.disabled &&
+      `
+      background-color: ${Colors.BLACK[200]};
+    `}
+    border-radius: 50%;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
 
-const Wrapper = styled.div`
-  cursor: pointer;
-  margin-right: ${({ boxed }) => (boxed ? '0' : '10px')};
+    position: relative;
+    top: 4px;
+  }
 
-  &:first-child ${StyledLabel} {
-    border-right: none;
+  &[aria-checked='true']:before {
+    background-color: ${Colors.BLUE[500]};
+    border-color: ${Colors.BLUE[500]};
+    box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
+  }
+
+  &[aria-checked='true']:hover:before,
+  &[aria-checked='true']:focus:before {
+    box-shadow: inset 0 0 0 3.5px ${Colors.WHITE},
+      0 2px 6px 0 ${Colors.BLUE[50]};
+  }
+
+  &:hover:before,
+  &:focus:before {
+    border-color: ${Colors.BLUE[500]};
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+  }
+
+  &[disabled] {
+    color: ${Colors.BLACK[400]};
+  }
+
+  &[disabled]:before {
+    background-color: ${Colors.BLACK[200]};
+  }
+
+  &[disabled]:hover {
+    cursor: not-allowed;
+  }
+
+  &[disabled]:hover:before,
+  &[disabled]:focus:before {
+    border-color: ${Colors.BLACK[400]};
+    box-shadow: none;
+  }
+
+  &[aria-checked='true']:disabled:before {
+    background-color: ${Colors.BLACK[400]};
+    border-color: ${Colors.BLACK[400]};
+    box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
   }
 `;
 
-const boxedInput = props => {
-  const { selected, disabled } = PRIMARY_SKIN;
+class Radio extends React.Component {
+  constructor(props) {
+    super(props);
 
-  if (props.boxed) {
-    return css`
-      &:checked + ${StyledLabel} {
-        background-color: ${selected.background};
-        border-color: ${selected.border};
-        color: ${selected.color};
-      }
+    this.KEYS = Object.freeze({
+      RETURN: 13,
+      SPACE: 32,
+      LEFT: 37,
+      UP: 38,
+      RIGHT: 39,
+      DOWN: 40,
+    });
 
-      &:disabled:checked + ${StyledLabel} {
-        background-color: ${disabled.background};
-        border-color: ${disabled.border};
-        color: ${disabled.color};
-      }
-    `;
+    this.radioRef = React.createRef();
   }
 
-  return css`
-    &:checked + ${StyledLabel}:before {
-      background-color: ${Colors.BLUE};
-      box-shadow: inset 0 0 0 4px ${Colors.WHITE};
+  shouldComponentUpdate(nextProps) {
+    if (nextProps['aria-checked']) {
+      this.radioRef.focus();
     }
 
-    &:disabled:checked + ${StyledLabel}:before {
-      background-color: ${Colors.COBALT[100]};
-      box-shadow: inset 0 0 0 4px ${Colors.WHITE};
+    return true;
+  }
+
+  onClick = () => {
+    const { check, disabled } = this.props;
+
+    if (disabled) return;
+
+    check(this.props);
+  };
+
+  onKeyDown = event => {
+    const { checkPrevious, checkNext, check } = this.props;
+    let changed;
+
+    switch (event.keyCode) {
+      case this.KEYS.SPACE:
+        check(this.props);
+        changed = true;
+        break;
+
+      case this.KEYS.RETURN:
+        check(this.props);
+        changed = true;
+        break;
+
+      case this.KEYS.UP:
+        checkPrevious(this.props);
+        changed = true;
+        break;
+
+      case this.KEYS.DOWN:
+        checkNext(this.props);
+        changed = true;
+        break;
+
+      case this.KEYS.LEFT:
+        checkPrevious(this.props);
+        changed = true;
+        break;
+
+      case this.KEYS.RIGHT:
+        checkNext(this.props);
+        changed = true;
+        break;
+
+      default:
+        break;
     }
-  `;
-};
 
-const StyledInput = styled.input`
-  display: none;
+    if (changed) {
+      event.stopPropagation();
+      event.preventDefault();
+    }
+  };
 
-  ${boxedInput};
-`;
+  render() {
+    const { id, label, ...rest } = this.props;
 
-const Radio = ({ id, label, onChange, disabled, ...rest }) => (
-  <Wrapper {...rest}>
-    <StyledInput
-      {...rest}
-      id={id}
-      type="radio"
-      disabled={disabled}
-      onChange={e => onChange(e, { checked: e.target.value })}
-    />
-    <StyledLabel {...rest} disabled={disabled} htmlFor={id}>
-      {label}
-    </StyledLabel>
-  </Wrapper>
-);
+    return (
+      <StyledLabel
+        {...rest}
+        htmlFor={id}
+        onClick={this.onClick}
+        onKeyDown={this.onKeyDown}
+        ref={radio => (this.radioRef = radio)}
+      >
+        {label}
+      </StyledLabel>
+    );
+  }
+}
 
 Radio.displayName = 'Radio';
 
