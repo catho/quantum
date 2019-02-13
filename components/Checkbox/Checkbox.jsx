@@ -48,12 +48,12 @@ const StyledLabel = styled(Label)`
       width: 5px;
       position: absolute;
       height: 12px;
-      left: -1px;
+      left: 3px;
 
       border: solid ${Colors.WHITE};
       border-radius: 3px;
       border-width: 0 3px 3px 0;
-
+      top: 1px;
       transform: rotate(45deg);
     }
   `}
@@ -70,19 +70,21 @@ const StyledLabel = styled(Label)`
     border-radius: 4px;
     content: ' ';
     display: inline-block;
-    left: -8px;
-    top: -1px;
+    left: -2px;
+    top: 2px;
     height: 18px;
     width: 18px;
+    box-sizing: border-box;
   }
 
   &:hover:before {
     ${({ disabled, error }) =>
       !disabled &&
-      !error &&
       `
-      border: 2px solid ${Colors.BLUE['500']};
-      box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
+      border: 2px solid ${error ? Colors.ERROR['500'] : Colors.BLUE['500']};
+      box-shadow: 0 2px 6px 0 ${
+        error ? Colors.ERROR['500'] : Colors.BLUE['500']
+      };
     `}
   }
 `;
@@ -102,7 +104,8 @@ const ErrorLabel = styled(Label)`
   color: ${Colors.ERROR['900']};
   cursor: text;
   font-weight: 600;
-  left: -8px;
+  font-style: italic;
+  left: -3px;
   position: absolute;
   top: 22px;
 `;
