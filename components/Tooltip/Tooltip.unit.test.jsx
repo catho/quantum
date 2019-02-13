@@ -24,26 +24,4 @@ describe('Tooltip component ', () => {
       expect(tooltip.html()).toMatchSnapshot();
     });
   });
-
-  describe('All skins', () => {
-    it('Should match the snapshot skin is info', () => {
-      const tooltip = mount(<Tooltip skin="info">Hover Me</Tooltip>);
-      expect(tooltip.html()).toMatchSnapshot();
-    });
-
-    it('Should match the snapshot when skin is danger', () => {
-      const tooltip = mount(<Tooltip skin="danger">Hover Me</Tooltip>);
-      expect(tooltip.html()).toMatchSnapshot();
-    });
-
-    it('Should match the snapshot when skin is success', () => {
-      const tooltip = mount(<Tooltip skin="success">Hover Me</Tooltip>);
-      expect(tooltip.html()).toMatchSnapshot();
-    });
-
-    it('Should match the snapshot when skin is warning', () => {
-      const tooltip = mount(<Tooltip skin="warning">Hover Me</Tooltip>);
-      expect(tooltip.html()).toMatchSnapshot();
-    });
-  });
 });
