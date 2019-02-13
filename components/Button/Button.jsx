@@ -130,7 +130,8 @@ ${props =>
           ${!props.disabled &&
             `
             &:hover {
-              background-color:  ${unselected.hover};
+              background-color: ${unselected.hover};
+              border-color: ${selected.border};
             }      
           `};
           `

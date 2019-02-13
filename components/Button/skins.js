@@ -7,6 +7,7 @@ const skins = {
     selected: Colors.COBALT['500'],
     disabled: Colors.BLACK['400'],
     unselectedHover: Colors.COBALT['500'],
+    selectedBorder: Colors.COBALT['500'],
   }),
   secondary: new DefaultButton({
     unselected: Colors.WHITE,
@@ -24,6 +25,7 @@ const skins = {
     selected: Colors.PINK['900'],
     disabled: Colors.PINK['500'],
     unselectedHover: Colors.PINK['900'],
+    selectedBorder: Colors.PINK['900'],
   }),
   link: new DefaultButton({
     unselectedTextColor: Colors.BLUE['500'],
