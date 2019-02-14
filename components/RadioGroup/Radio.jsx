@@ -169,7 +169,7 @@ class Radio extends React.Component {
   }
 }
 
-Radio.displayName = 'Radio';
+Radio.displayName = 'RadioGroup.Radio';
 
 Radio.defaultProps = {
   disabled: false,

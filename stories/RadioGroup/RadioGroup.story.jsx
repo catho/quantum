@@ -29,37 +29,25 @@ const RadioBlock = (
   </RadioGroup>
 );
 
-const RadioInline = (
-  <RadioGroup inline>
-    <RadioGroup.Radio
-      id="radioInline"
-      value="radio"
-      name="radioInline"
-      label="Click me!"
-    />
-    <RadioGroup.Radio
-      id="radioTwoInline"
-      value="radioTwo"
-      name="radioInline"
-      label="Click me!"
-    />
+const RadioDisabled = (
+  <RadioGroup name="">
+    <RadioGroup.Radio value="Fruit Juices" label="Fruit Juices" />
+    <RadioGroup.Radio value="Vegatables" label="Vegatables" />
+    <RadioGroup.Radio disabled value="Pizza" label="Pizza" />
+    <RadioGroup.Radio disabled value="Burguer" label="Burguer" />
+    <RadioGroup.Radio disabled value="Fries" label="Fries" />
+    <RadioGroup.Radio value="Salad" label="Salad" />
   </RadioGroup>
 );
 
-const BoxedRadio = (
-  <RadioGroup boxed inline>
-    <RadioGroup.Radio
-      id="radioBoxed"
-      value="radio"
-      name="radioInline"
-      label="Yes"
-    />
-    <RadioGroup.Radio
-      id="radioTwoBoxed"
-      value="radioTwo"
-      name="radioInline"
-      label="No"
-    />
+const RadioBlockSelected = (
+  <RadioGroup name="groceries" selected="Pikachu">
+    <RadioGroup.Radio value="Pikachu" label="Pikachu" />
+    <RadioGroup.Radio value="Charizard" label="Charizard" />
+    <RadioGroup.Radio value="Squirtle" label="Squirtle" />
+    <RadioGroup.Radio value="Pidgeotto" label="Pidgeotto" />
+    <RadioGroup.Radio value="Butterfree" label="Butterfree" />
+    <RadioGroup.Radio value="Muk" label="Muk" />
   </RadioGroup>
 );
 
@@ -68,54 +56,56 @@ stories.add('Radio Button', () => (
   <Heading name="Radio" title="<RadioGroup />">
     <TabbedView>
       <Tab title="Usage">
-        <HowToImport
-          importModules="RadioGroup, Radio"
-          componentName="RadioGroup"
-        />
+        <HowToImport importModules="RadioGroup" componentName="RadioGroup" />
 
         <StyledDiv>
-          <p>We provide two components to use Radio Buttons.</p>
           <p>
-            <code>{'<RadioGroup>'}</code> and <code>{'<Radio>'}</code> must be
-            used together and can be displayed inlined or blocked
+            We provide two components to use Radio Buttons:{' '}
+            <code>{'<RadioGroup />'}</code> and{' '}
+            <code>{'<RadioGroup.Radio />'}</code>
+          </p>
+
+          <p>
+            Note that you can navigate between radios by using the arrows keys,
+            space and return.
           </p>
         </StyledDiv>
 
-        <h4>RadioGroup with block display</h4>
+        <h4>RadioGroup</h4>
         <Row>
-          <Col phone={6}>
+          <Col small={3}>
             <CodeExample component={RadioBlock} showTitle={false} />
           </Col>
 
-          <Col phone={6}>
+          <Col small={3}>
             <RadioGroupWrapper>{RadioBlock}</RadioGroupWrapper>
           </Col>
         </Row>
 
-        <h4>RadioGroup with inline display</h4>
+        <h4>RadioGroup with disabled options</h4>
         <Row>
-          <Col phone={6}>
-            <CodeExample component={RadioInline} showTitle={false} />
+          <Col small={3}>
+            <CodeExample component={RadioDisabled} showTitle={false} />
           </Col>
 
-          <Col phone={6}>
-            <RadioGroupWrapper>{RadioInline}</RadioGroupWrapper>
+          <Col small={3}>
+            <RadioGroupWrapper>{RadioDisabled}</RadioGroupWrapper>
           </Col>
         </Row>
-
-        <h4>Boxed RadioGroup</h4>
+        <h4>RadioGroup with selected option</h4>
         <Row>
-          <Col phone={6}>
-            <CodeExample component={BoxedRadio} showTitle={false} />
+          <Col small={3}>
+            <CodeExample component={RadioBlockSelected} showTitle={false} />
           </Col>
 
-          <Col phone={6}>
-            <RadioGroupWrapper>{BoxedRadio}</RadioGroupWrapper>
+          <Col small={3}>
+            <RadioGroupWrapper>{RadioBlockSelected}</RadioGroupWrapper>
           </Col>
         </Row>
       </Tab>
       <Tab title="API">
         <AutoPropsApi component={RadioGroup} title="RadioGroup" />
+        <AutoPropsApi component={RadioGroup.Radio} title="RadioGroup.Radio" />
       </Tab>
     </TabbedView>
   </Heading>
