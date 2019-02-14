@@ -63,17 +63,9 @@ const ButtonIcon = styled(Icon)`
 `;
 
 const StyledButton = styled.button`
-  
-${props =>
-  props.skin !== 'link' &&
-  `
-  border-radius: ${theme.sizes.radius};
-  `}
-
   font-weight: bold;
   letter-spacing: 0.2px;
   text-align: center;
-  text-decoration: ${props => (props.link ? 'underline' : 'none')};
 
   ${fontSize}
   ${padding}
@@ -103,46 +95,44 @@ ${props =>
   `}
 
   ${props => {
-    const { unselected, selected, disabled, shadow, link } = skins(props);
+    const {
+      unselected,
+      selected,
+      disabled,
+      focused,
+      decoration,
+      borderRadius,
+    } = skins(props);
 
-    return `
-
-      ${
-        props.skin !== 'link'
-          ? `
-          background-color: ${
-            props.disabled ? disabled.background : unselected.background
-          };
-          border: 1.5px solid ${
-            props.disabled ? disabled.border : unselected.border
-          };
-          color: ${props.disabled ? disabled.color : unselected.color};
-
-          ${shadow ? theme.mixins.shadow() : undefined};
-
-          &:active {
-            ${shadow && theme.mixins.shadow(2)};
-            background-color: ${selected.background};
-            border-color: ${selected.border};
-            color: ${selected.color};
-          }
-
-          ${!props.disabled &&
-            `
-            &:hover {
-              background-color: ${unselected.hover};
-              border-color: ${selected.border};
-            }      
-          `};
-          `
-          : `
-          background: none;
-          border: none;
-          color: ${link.color};
-          text-decoration: underline;
-        `
+    return `${`
+      background-color: ${
+        props.disabled ? disabled.background : unselected.background
+      };
+      border: 1.5px solid ${
+        props.disabled ? disabled.border : unselected.border
       };
 
+      box-shadow: ${props.disabled ? disabled.shadow : unselected.shadow};
+
+      color: ${props.disabled ? disabled.color : unselected.color};
+
+      ${decoration ? `text-decoration: ${decoration};` : ''}
+      ${borderRadius ? `border-radius: ${borderRadius};` : ''}
+    `}
+
+      &:focus {
+        box-shadow: ${focused.shadow};
+        background-color: ${focused.background};
+        border-color: ${focused.border};
+        color: ${focused.color};
+      }
+
+      &:active {
+        box-shadow: ${selected.shadow};
+        background-color: ${selected.background};
+        border-color: ${selected.border};
+        color: ${selected.color};
+      }
     `;
   }}
 `;
