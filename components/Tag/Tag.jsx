@@ -82,6 +82,10 @@ const iconSizes = {
   large: '20px',
 };
 
+const applyIconSize = ({ size }) => iconSizes[size];
+
+const SmallIcon = styled(Icon)``;
+
 const CloseButton = styled.button`
   background: none;
   border: none;
@@ -89,14 +93,15 @@ const CloseButton = styled.button`
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  ${({ size }) => `height: ${iconSizes[size]};`}
+  height: ${applyIconSize};
+
+  ${SmallIcon} {
+    font-size: ${applyIconSize};
+    color: ${({ skin }) => skinFontColors[skin]};
+  }
 `;
 
 CloseButton.displayName = 'CloseButton';
-
-const SmallIcon = styled(Icon)`
-  ${({ size }) => `font-size: ${iconSizes[size]} !important;`}
-`;
 
 class Tag extends Component {
   constructor(props) {
@@ -115,15 +120,15 @@ class Tag extends Component {
     const { hidden } = this.state;
     if (hidden) return '';
 
-    const { children, text, closable, skin, size } = this.props;
+    const { children, text, closable, ...rest } = this.props;
 
     return (
-      <Wrapper {...this.props}>
+      <Wrapper {...rest}>
         <Content closable={closable}>
           {children || text}
           {closable && (
-            <CloseButton onClick={this.hide} {...this.props}>
-              <SmallIcon size={size} name="close" skin={skinFontColors[skin]} />
+            <CloseButton {...rest} onClick={this.hide}>
+              <SmallIcon name="close" />
             </CloseButton>
           )}
         </Content>

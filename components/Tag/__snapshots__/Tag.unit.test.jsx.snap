@@ -31,8 +31,8 @@ exports[`<Tag /> Closable is rendering well 1`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
 }
 
 <div
@@ -50,16 +50,12 @@ exports[`<Tag /> Closable is rendering well 1`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
             "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
@@ -100,8 +96,8 @@ exports[`<Tag /> Closable is rendering well 2`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
 }
 
 <div
@@ -119,16 +115,12 @@ exports[`<Tag /> Closable is rendering well 2`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
             "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
@@ -159,6 +151,10 @@ exports[`<Tag /> Closable is rendering well 3`] = `
   align-items: center;
 }
 
+.c4 .c3 {
+  font-size: 18px;
+}
+
 .c2 {
   background: none;
   border: none;
@@ -169,8 +165,9 @@ exports[`<Tag /> Closable is rendering well 3`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
 <div
@@ -188,16 +185,12 @@ exports[`<Tag /> Closable is rendering well 3`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
-            "color": "#FFFFFF",
+            "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
@@ -228,6 +221,15 @@ exports[`<Tag /> Closable is rendering well 4`] = `
   align-items: center;
 }
 
+.c4 .c3 {
+  font-size: 18px;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
 .c2 {
   background: none;
   border: none;
@@ -238,8 +240,9 @@ exports[`<Tag /> Closable is rendering well 4`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
+  color: #1355d0;
 }
 
 <div
@@ -257,16 +260,12 @@ exports[`<Tag /> Closable is rendering well 4`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
-            "color": "#1355d0",
+            "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
@@ -297,6 +296,20 @@ exports[`<Tag /> Closable is rendering well 5`] = `
   align-items: center;
 }
 
+.c4 .c3 {
+  font-size: 18px;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
 .c2 {
   background: none;
   border: none;
@@ -307,8 +320,9 @@ exports[`<Tag /> Closable is rendering well 5`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
+  color: #3c6510;
 }
 
 <div
@@ -326,16 +340,12 @@ exports[`<Tag /> Closable is rendering well 5`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
-            "color": "#3c6510",
+            "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
@@ -366,6 +376,25 @@ exports[`<Tag /> Closable is rendering well 6`] = `
   align-items: center;
 }
 
+.c4 .c3 {
+  font-size: 18px;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
 .c2 {
   background: none;
   border: none;
@@ -376,8 +405,9 @@ exports[`<Tag /> Closable is rendering well 6`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
+  color: #a36300;
 }
 
 <div
@@ -395,16 +425,12 @@ exports[`<Tag /> Closable is rendering well 6`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
-            "color": "#a36300",
+            "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
@@ -435,6 +461,30 @@ exports[`<Tag /> Closable is rendering well 7`] = `
   align-items: center;
 }
 
+.c4 .c3 {
+  font-size: 18px;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c8 .c3 {
+  font-size: 18px;
+  color: #a36300;
+}
+
 .c2 {
   background: none;
   border: none;
@@ -445,8 +495,9 @@ exports[`<Tag /> Closable is rendering well 7`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
+  color: #ac001a;
 }
 
 <div
@@ -464,16 +515,12 @@ exports[`<Tag /> Closable is rendering well 7`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
-            "color": "#ac001a",
+            "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
@@ -504,6 +551,15 @@ exports[`<Tag /> Closable is rendering well 8`] = `
   align-items: center;
 }
 
+.c4 .c3 {
+  font-size: 18px;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
 .c2 {
   background: none;
   border: none;
@@ -514,8 +570,24 @@ exports[`<Tag /> Closable is rendering well 8`] = `
   height: 18px;
 }
 
-.c3 {
-  font-size: 18px !important;
+.c2 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #a36300;
+}
+
+.c8 .c3 {
+  font-size: 18px;
+  color: #ac001a;
 }
 
 <div
@@ -533,16 +605,12 @@ exports[`<Tag /> Closable is rendering well 8`] = `
     >
       <span
         aria-hidden="true"
-        bold={false}
-        className="material-icons MuiIcon-root-1 c3"
-        closable={true}
-        size="medium"
+        className="material-icons MuiIcon-root-1 c3 "
         style={
           Object {
-            "color": "#1355d0",
+            "color": "",
           }
         }
-        text="Tag text"
       >
         close
       </span>
