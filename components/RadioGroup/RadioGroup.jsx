@@ -30,35 +30,23 @@ class RadioGroup extends React.Component {
     });
 
     const noTabIndex = !Object.values(this.state).find(
-      state => state.tabIndex != -1,
+      state => state.tabIndex !== -1,
     );
 
     const allRadioDisabled = !Object.values(this.state).filter(s => !s.disabled)
       .length;
 
     if (noTabIndex && !allRadioDisabled) {
-      this.state[Object.keys(this.state)[0]].tabIndex = 0;
-      this.firstRadio = Object.keys(this.state)[0];
+      const [firstState] = Object.keys(this.state);
+      const { [firstState]: firstRadio } = this.state;
+
+      this.firstRadio = firstState;
+      firstRadio.tabIndex = 0;
+
       this.lastRadio = Object.keys(this.state)[
         React.Children.count(children) - 1
       ];
     }
-  }
-
-  _cleanState() {
-    const { children } = this.props;
-
-    const newState = {};
-
-    React.Children.map(children, ({ props: { value, disabled } }) => {
-      newState[value] = {
-        checked: false,
-        tabIndex: -1,
-        disabled,
-      };
-    });
-
-    return newState;
   }
 
   handleChange = ({ value }) => {
@@ -78,16 +66,20 @@ class RadioGroup extends React.Component {
       ...newState,
     });
 
-    onChange && onChange(value);
+    if (onChange) {
+      onChange(value);
+    }
   };
 
   checkPrevious = ({ value }) => {
     if (value === this.firstRadio) {
       this.check({ value });
     } else {
-      const radioIds = Object.keys(this.state).filter(
-        s => !this.state[s].disabled,
-      );
+      const radioIds = Object.keys(this.state).filter(s => {
+        const { [s]: state } = this.state;
+
+        return !state.disabled;
+      });
 
       const index = radioIds.indexOf(value);
 
@@ -99,9 +91,11 @@ class RadioGroup extends React.Component {
     if (value === this.lastRadio) {
       this.check({ value });
     } else {
-      const radioIds = Object.keys(this.state).filter(
-        s => !this.state[s].disabled,
-      );
+      const radioIds = Object.keys(this.state).filter(s => {
+        const { [s]: state } = this.state;
+
+        return !state.disabled;
+      });
 
       if (radioIds.length <= 1) {
         this.check({ value });
@@ -117,6 +111,22 @@ class RadioGroup extends React.Component {
     this.handleChange({ value });
   };
 
+  _cleanState() {
+    const { children } = this.props;
+
+    const newState = {};
+
+    React.Children.map(children, ({ props: { value, disabled } }) => {
+      newState[value] = {
+        checked: false,
+        tabIndex: -1,
+        disabled,
+      };
+    });
+
+    return newState;
+  }
+
   render() {
     const { children, name, ...rest } = this.props;
     const groupProps = {
@@ -128,16 +138,21 @@ class RadioGroup extends React.Component {
 
     return (
       <Group {...rest}>
-        <pre>{JSON.stringify(this.state, null, 2)}</pre>
-        {React.Children.map(children, ({ type: Component, props }) => (
-          <Component
-            {...props}
-            {...groupProps}
-            key={props.value}
-            aria-checked={this.state[props.value].checked}
-            tabIndex={this.state[props.value].tabIndex}
-          />
-        ))}
+        {React.Children.map(children, ({ type: Component, props }) => {
+          const {
+            [props.value]: { checked, tabIndex },
+          } = this.state;
+
+          return (
+            <Component
+              {...props}
+              {...groupProps}
+              key={props.value}
+              aria-checked={checked}
+              tabIndex={tabIndex}
+            />
+          );
+        })}
       </Group>
     );
   }
@@ -148,6 +163,7 @@ class RadioGroup extends React.Component {
  */
 RadioGroup.defaultProps = {
   selected: undefined,
+  onChange: () => {},
 };
 
 RadioGroup.propTypes = {
@@ -162,6 +178,7 @@ RadioGroup.propTypes = {
     PropTypes.number,
     PropTypes.bool,
   ]),
+  name: PropTypes.string.isRequired,
 };
 
 export default RadioGroup;

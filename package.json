@@ -15,11 +15,15 @@
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "yarn clean:build",
     "precommit": "lint-staged",
-    "prepush": "yarn lint && yarn test:components",
+    "prepush": "yarn lint:all && yarn test:components",
     "storybook": "start-storybook -s static",
     "build-storybook": "build-storybook",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx --quiet"
+    "lint": "eslint --ext js,jsx --quiet",
+    "lint:components": "yarn lint ./components",
+    "lint:stories": "yarn lint ./stories",
+    "lint:js": "yarn lint ./*.js",
+    "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js"
   },
   "repository": {
     "type": "git",

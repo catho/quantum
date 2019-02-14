@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 
-const StyledLabel = styled.div.attrs(props => ({
+const StyledLabel = styled.div.attrs({
   role: 'radio',
   tabIndex: -1,
   'aria-checked': 'false',
-}))`
+})`
   cursor: pointer;
   display: inline-block;
 
@@ -152,14 +152,16 @@ class Radio extends React.Component {
   };
 
   render() {
-    const { id, label, ...rest } = this.props;
+    const { label, ...rest } = this.props;
 
     return (
       <StyledLabel
         {...rest}
         onClick={this.onClick}
         onKeyDown={this.onKeyDown}
-        ref={radio => (this.radioRef = radio)}
+        ref={radio => {
+          this.radioRef = radio;
+        }}
       >
         {label}
       </StyledLabel>
@@ -174,11 +176,13 @@ Radio.defaultProps = {
 };
 
 Radio.propTypes = {
-  /** Id to associate with label */
-  value: PropTypes.string.isRequired,
+  'aria-checked': PropTypes.bool.isRequired,
+  check: PropTypes.func.isRequired,
+  checkNext: PropTypes.func.isRequired,
+  checkPrevious: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
-  /** Label that will be displayed on browser */
   label: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default Radio;
