@@ -11,7 +11,7 @@ class ButtonColor {
     selected,
     selectedBorder = selected,
     selectedTextColor,
-    selectedShadow,
+    selectedShadow = unselectedShadow,
     // Disabled
     disabled,
     disabledBorder = disabled,
@@ -21,7 +21,12 @@ class ButtonColor {
     focused,
     focusedBorder = focused,
     focusedTextColor,
-    focusedShadow,
+    focusedShadow = unselectedShadow,
+    // Hovered
+    hovered,
+    hoveredBorder = hovered,
+    hoveredTextColor,
+    hoveredShadow = unselectedShadow,
     // General
     decoration = 'none',
     borderRadius = theme.sizes.radius,
@@ -46,6 +51,11 @@ class ButtonColor {
     this._focusedBorder = focusedBorder;
     this._focusedTextColor = focusedTextColor;
     this._focusedShadow = focusedShadow;
+    // Hovered
+    this._hovered = hovered;
+    this._hoveredBorder = hoveredBorder;
+    this._hoveredTextColor = hoveredTextColor;
+    this._hoveredShadow = hoveredShadow;
     // Misc
     this._decoration = decoration;
     this._borderRadius = borderRadius;
@@ -84,6 +94,15 @@ class ButtonColor {
       border: this._focusedBorder,
       color: this._focusedTextColor,
       shadow: this._focusedShadow,
+    };
+  }
+
+  get hovered() {
+    return {
+      background: this._hovered,
+      border: this._hoveredBorder,
+      color: this._hoveredTextColor,
+      shadow: this._hoveredShadow,
     };
   }
 

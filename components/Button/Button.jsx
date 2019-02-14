@@ -100,6 +100,7 @@ const StyledButton = styled.button`
       selected,
       disabled,
       focused,
+      hovered,
       decoration,
       borderRadius,
     } = skins(props);
@@ -119,6 +120,13 @@ const StyledButton = styled.button`
       ${decoration ? `text-decoration: ${decoration};` : ''}
       ${borderRadius ? `border-radius: ${borderRadius};` : ''}
     `}
+
+      &:hover {
+        box-shadow: ${hovered.shadow};
+        background-color: ${hovered.background};
+        border-color: ${hovered.border};
+        color: ${hovered.color};
+      }
 
       &:focus {
         box-shadow: ${focused.shadow};

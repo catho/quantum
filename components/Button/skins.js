@@ -8,7 +8,7 @@ const skins = {
     focused: Colors.BLUE['500'],
     focusedShadow: '0 2px 6px 0 rgba(19, 85, 208, 0.5);',
     disabled: Colors.BLACK['400'],
-    // unselectedHover: Colors.COBALT['500'],
+    hovered: Colors.COBALT['500'],
     selectedBorder: Colors.COBALT['500'],
   }),
   secondary: new DefaultButton({
@@ -23,7 +23,8 @@ const skins = {
     focused: Colors.WHITE,
     focusedBorder: Colors.BLUE['500'],
     focusedShadow: '0 2px 4px 0 rgba(19, 85, 208, 0.5);',
-    // unselectedHover: Colors.BLUE['200'],
+    hovered: Colors.BLUE['200'],
+    hoveredBorder: Colors.BLUE['500'],
   }),
   action: new DefaultButton({
     unselected: Colors.PINK['500'],
@@ -32,17 +33,17 @@ const skins = {
     disabled: Colors.PINK['500'],
     focused: Colors.PINK['500'],
     focusedShadow: `0 2px 6px 0 ${Colors.PINK['500']};`,
-    // unselectedHover: Colors.PINK['900'],
+    hovered: Colors.PINK['900'],
   }),
   link: new DefaultButton({
     unselected: 'transparent',
     unselectedTextColor: Colors.BLUE['500'],
     unselectedShadow: 'none',
+    selectedShadow: 'none',
     disabled: 'transparent',
     focused: 'transparent',
     decoration: 'underline',
     borderRadius: 'unset',
-    // unselectedHover: 'transperent',
   }),
 };
 
