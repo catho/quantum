@@ -10,7 +10,7 @@ import {
   Tab,
 } from '@catho-private/quantum-storybook-ui';
 
-import { Radio, RadioGroup } from '../../components/Radio';
+import RadioGroup from '../../components/RadioGroup';
 import { Col, Row } from '../../components/Grid';
 
 const RadioGroupWrapper = styled.div`
@@ -22,23 +22,24 @@ const StyledDiv = styled.div`
 `;
 
 const RadioBlock = (
-  <RadioGroup>
-    <Radio id="radioOne" value="radio" name="radio" label="Click me!" />
-    <Radio id="radioTwo" value="radio" name="radio" label="Click me!" />
-    <Radio id="radioThree" value="radio" name="radio" label="Click me!" />
-    <Radio id="radioFour" value="radioTwo" name="radio" label="Click me!" />
+  <RadioGroup name="groceries">
+    <RadioGroup.Radio value="Tomato sauce" label="Tomato sauce" />
+    <RadioGroup.Radio value="Mustard" label="Mustard" />
+    <RadioGroup.Radio value="Barbecue sauce" label="Barbecue sauce" />
+    <RadioGroup.Radio value="Barbecue" label="Barbecue" />
+    <RadioGroup.Radio value="sauce" label="sauce" />
   </RadioGroup>
 );
 
 const RadioInline = (
   <RadioGroup inline>
-    <Radio
+    <RadioGroup.Radio
       id="radioInline"
       value="radio"
       name="radioInline"
       label="Click me!"
     />
-    <Radio
+    <RadioGroup.Radio
       id="radioTwoInline"
       value="radioTwo"
       name="radioInline"
@@ -49,8 +50,18 @@ const RadioInline = (
 
 const BoxedRadio = (
   <RadioGroup boxed inline>
-    <Radio id="radioBoxed" value="radio" name="radioInline" label="Yes" />
-    <Radio id="radioTwoBoxed" value="radioTwo" name="radioInline" label="No" />
+    <RadioGroup.Radio
+      id="radioBoxed"
+      value="radio"
+      name="radioInline"
+      label="Yes"
+    />
+    <RadioGroup.Radio
+      id="radioTwoBoxed"
+      value="radioTwo"
+      name="radioInline"
+      label="No"
+    />
   </RadioGroup>
 );
 
@@ -106,7 +117,6 @@ stories.add('Radio Button', () => (
         </Row>
       </Tab>
       <Tab title="API">
-        <AutoPropsApi component={Radio} title="Radio" />
         <AutoPropsApi component={RadioGroup} title="RadioGroup" />
       </Tab>
     </TabbedView>

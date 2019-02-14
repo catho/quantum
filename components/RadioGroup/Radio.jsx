@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Colors from '../Colors';
 
 const StyledLabel = styled.div.attrs(props => ({
@@ -157,7 +157,6 @@ class Radio extends React.Component {
     return (
       <StyledLabel
         {...rest}
-        htmlFor={id}
         onClick={this.onClick}
         onKeyDown={this.onKeyDown}
         ref={radio => (this.radioRef = radio)}
@@ -171,20 +170,15 @@ class Radio extends React.Component {
 Radio.displayName = 'Radio';
 
 Radio.defaultProps = {
-  onChange: () => {},
   disabled: false,
 };
 
 Radio.propTypes = {
   /** Id to associate with label */
-  id: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   /** Label that will be displayed on browser */
   label: PropTypes.string.isRequired,
-  /** On change event handle function */
-  onChange: PropTypes.func,
 };
 
 export default Radio;
