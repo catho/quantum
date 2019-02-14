@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import SocialButtons from './SocialButtons';
 import theme from '../shared/theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
@@ -145,22 +144,12 @@ const StyledButton = styled.button`
   }}
 `;
 
-class Button extends React.Component {
-  static Facebook = SocialButtons.Facebook;
-
-  static Google = SocialButtons.Google;
-
-  render() {
-    const { children, icon, size, ...rest } = this.props;
-
-    return (
-      <StyledButton {...rest} size={size}>
-        {icon && <ButtonIcon size={size} name={icon} />}
-        {children}
-      </StyledButton>
-    );
-  }
-}
+const Button = ({ children, icon, size, ...rest }) => (
+  <StyledButton {...rest} size={size}>
+    {icon && <ButtonIcon size={size} name={icon} />}
+    {children}
+  </StyledButton>
+);
 
 Button.defaultProps = {
   center: false,
