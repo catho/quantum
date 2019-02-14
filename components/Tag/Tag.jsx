@@ -115,7 +115,7 @@ class Tag extends Component {
     const { hidden } = this.state;
     if (hidden) return '';
 
-    const { children, text, closable, skin } = this.props;
+    const { children, text, closable, skin, size } = this.props;
 
     return (
       <Wrapper {...this.props}>
@@ -123,11 +123,7 @@ class Tag extends Component {
           {children || text}
           {closable && (
             <CloseButton onClick={this.hide} {...this.props}>
-              <SmallIcon
-                {...this.props}
-                name="close"
-                skin={skinFontColors[skin]}
-              />
+              <SmallIcon size={size} name="close" skin={skinFontColors[skin]} />
             </CloseButton>
           )}
         </Content>
