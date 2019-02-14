@@ -26,8 +26,6 @@ const RadioBlock = (
     <RadioGroup.Radio value="Tomato sauce" label="Tomato sauce" />
     <RadioGroup.Radio value="Mustard" label="Mustard" />
     <RadioGroup.Radio value="Barbecue sauce" label="Barbecue sauce" />
-    <RadioGroup.Radio value="Barbecue" label="Barbecue" />
-    <RadioGroup.Radio value="sauce" label="sauce" />
   </RadioGroup>
 );
 
@@ -86,7 +84,7 @@ stories.add('Radio Button', () => (
         <h4>RadioGroup with block display</h4>
         <Row>
           <Col phone={6}>
-            {/* <CodeExample component={RadioBlock} showTitle={false} /> */}
+            <CodeExample component={RadioBlock} showTitle={false} />
           </Col>
 
           <Col phone={6}>
