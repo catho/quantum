@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 
-const StyledLabel = styled.div.attrs({
+const StyledRadio = styled.div.attrs({
   role: 'radio',
   tabIndex: -1,
   'aria-checked': 'false',
@@ -155,7 +155,7 @@ class Radio extends React.Component {
     const { label, ...rest } = this.props;
 
     return (
-      <StyledLabel
+      <StyledRadio
         {...rest}
         onClick={this.onClick}
         onKeyDown={this.onKeyDown}
@@ -164,7 +164,7 @@ class Radio extends React.Component {
         }}
       >
         {label}
-      </StyledLabel>
+      </StyledRadio>
     );
   }
 }
