@@ -53,16 +53,14 @@ describe('<Tag />', () => {
       testSnapshot({ closable: true, skin: 'blue-text' });
     });
 
-    it('is removed when close button is clicked', () => {
-      const tag = shallow(<Tag closable />);
+    it('is calling "onClose" prop when close button is clicked', () => {
+      const onCloseCb = jest.fn();
+      const tag = shallow(<Tag closable onClose={onCloseCb} />);
       const button = tag.find('CloseButton');
-
-      expect(tag.state('hidden')).toBe(false);
 
       button.simulate('click');
 
-      expect(tag.state('hidden')).toBe(true);
-      expect(tag.html()).toBeNull();
+      expect(onCloseCb).toHaveBeenCalled();
     });
   });
 });

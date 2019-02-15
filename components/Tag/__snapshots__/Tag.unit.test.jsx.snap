@@ -28,7 +28,6 @@ exports[`<Tag /> Closable is rendering well 1`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
@@ -93,7 +92,6 @@ exports[`<Tag /> Closable is rendering well 2`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
@@ -162,7 +160,6 @@ exports[`<Tag /> Closable is rendering well 3`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
@@ -237,7 +234,6 @@ exports[`<Tag /> Closable is rendering well 4`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
@@ -317,7 +313,6 @@ exports[`<Tag /> Closable is rendering well 5`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
@@ -402,7 +397,6 @@ exports[`<Tag /> Closable is rendering well 6`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
@@ -492,7 +486,6 @@ exports[`<Tag /> Closable is rendering well 7`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
@@ -567,7 +560,6 @@ exports[`<Tag /> Closable is rendering well 8`] = `
   height: 18px;
   margin-left: 4px;
   padding: 0;
-  height: 18px;
 }
 
 .c2 .c3 {
