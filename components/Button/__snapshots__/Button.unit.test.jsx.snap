@@ -140,7 +140,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 erFPTV"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {
@@ -164,7 +164,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 erFPTV"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {
@@ -188,7 +188,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 erFPTV"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {
@@ -212,7 +212,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 erFPTV"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {

@@ -55,6 +55,7 @@ const height = ({ size }) => {
 
 const ButtonIcon = styled(Icon)`
   margin-right: 5px;
+  pointer-events: none;
 `;
 
 const StyledButton = styled.button`
