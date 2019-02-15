@@ -19,18 +19,14 @@ const fontSize = ({ size }) => {
 
 const iconSize = ({ size }) => {
   const sizes = {
+    xsmall: '16px',
+    small: '16px',
     normal: '24px',
+    large: '24px',
+    xlarge: '24px',
   };
 
   return `font-size: ${sizes[size] || sizes.normal};`;
-};
-
-const iconMargin = ({ size }) => {
-  const margins = {
-    normal: '-5px 5px -7px -5px',
-  };
-
-  return `margin: ${margins[size] || margins.normal};`;
 };
 
 const padding = ({ size }) => {
@@ -58,13 +54,15 @@ const height = ({ size }) => {
 };
 
 const ButtonIcon = styled(Icon)`
-  ${iconMargin};
+  margin-right: 5px;
 `;
 
 const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   letter-spacing: 0.2px;
-  text-align: center;
 
   ${fontSize}
   ${padding}
@@ -75,22 +73,13 @@ const StyledButton = styled.button`
     ${iconSize}
   }
 
-  ${props =>
-    props.full &&
-    `
-    width: 100%;
-  `}
-
+  ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
+  ${props => props.full && `width: 100%;`}
   ${props =>
     props.center &&
     `
-    display: block;
     margin-left: auto;
     margin-right: auto;
-  `}
-
-  ${props => `
-    cursor: ${props.disabled ? 'not-allowed' : 'pointer'};
   `}
 
   ${props => {
@@ -120,11 +109,17 @@ const StyledButton = styled.button`
       ${borderRadius ? `border-radius: ${borderRadius};` : ''}
     `}
 
-      &:hover {
-        box-shadow: ${hovered.shadow};
-        background-color: ${hovered.background};
-        border-color: ${hovered.border};
-        color: ${hovered.color};
+      ${
+        !props.disabled
+          ? `
+        &:hover {
+          box-shadow: ${hovered.shadow};
+          background-color: ${hovered.background};
+          border-color: ${hovered.border};
+          color: ${hovered.color};
+        }
+      `
+          : ''
       }
 
       &:focus {
