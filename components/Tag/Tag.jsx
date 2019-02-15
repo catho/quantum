@@ -118,21 +118,21 @@ class Tag extends Component {
 
   render() {
     const { hidden } = this.state;
-    if (hidden) return '';
-
     const { children, text, closable, ...rest } = this.props;
 
     return (
-      <Wrapper {...rest}>
-        <Content closable={closable}>
-          {children || text}
-          {closable && (
-            <CloseButton {...rest} onClick={this.hide}>
-              <SmallIcon name="close" />
-            </CloseButton>
-          )}
-        </Content>
-      </Wrapper>
+      hidden || (
+        <Wrapper {...rest}>
+          <Content closable={closable}>
+            {children || text}
+            {closable && (
+              <CloseButton {...rest} onClick={this.hide}>
+                <SmallIcon name="close" />
+              </CloseButton>
+            )}
+          </Content>
+        </Wrapper>
+      )
     );
   }
 }
