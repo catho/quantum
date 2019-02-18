@@ -15,7 +15,8 @@ const StyledRadio = styled.div.attrs({
     content: ' ';
     border-width: 1.5px;
     border-style: solid;
-    border-color: ${Colors.BLACK[400]};
+    border-color: ${({ error }) =>
+      error ? Colors.ERROR[500] : Colors.BLACK[400]};
     ${props =>
       props.disabled &&
       `
@@ -32,21 +33,26 @@ const StyledRadio = styled.div.attrs({
   }
 
   &[aria-checked='true']:before {
-    background-color: ${Colors.BLUE[500]};
-    border-color: ${Colors.BLUE[500]};
+    background-color: ${({ error }) =>
+      error ? Colors.ERROR[500] : Colors.BLUE[500]};
+    border-color: ${({ error }) =>
+      error ? Colors.ERROR[500] : Colors.BLUE[500]};
     box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
   }
 
   &[aria-checked='true']:hover:before,
   &[aria-checked='true']:focus:before {
     box-shadow: inset 0 0 0 3.5px ${Colors.WHITE},
-      0 2px 6px 0 ${Colors.BLUE[50]};
+      0 2px 6px 0
+        ${({ error }) => (error ? Colors.ERROR[200] : Colors.BLUE[50])};
   }
 
   &:hover:before,
   &:focus:before {
-    border-color: ${Colors.BLUE[500]};
-    box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+    border-color: ${({ error }) =>
+      error ? Colors.ERROR[500] : Colors.BLUE[500]};
+    box-shadow: 0 2px 6px 0
+      ${({ error }) => (error ? Colors.ERROR[500] : Colors.BLUE[50])};
   }
 
   &[disabled] {
@@ -79,7 +85,6 @@ class Radio extends React.Component {
     super(props);
 
     this.KEYS = Object.freeze({
-      RETURN: 13,
       SPACE: 32,
       LEFT: 37,
       UP: 38,
@@ -112,11 +117,6 @@ class Radio extends React.Component {
 
     switch (event.keyCode) {
       case this.KEYS.SPACE:
-        check(this.props);
-        changed = true;
-        break;
-
-      case this.KEYS.RETURN:
         check(this.props);
         changed = true;
         break;
@@ -172,15 +172,21 @@ class Radio extends React.Component {
 Radio.displayName = 'RadioGroup.Radio';
 
 Radio.defaultProps = {
+  check: () => {},
+  checkNext: () => {},
+  checkPrevious: () => {},
   disabled: false,
+  error: false,
+  'aria-checked': false,
 };
 
 Radio.propTypes = {
-  'aria-checked': PropTypes.bool.isRequired,
-  check: PropTypes.func.isRequired,
-  checkNext: PropTypes.func.isRequired,
-  checkPrevious: PropTypes.func.isRequired,
+  'aria-checked': PropTypes.bool,
+  check: PropTypes.func,
+  checkNext: PropTypes.func,
+  checkPrevious: PropTypes.func,
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
 };

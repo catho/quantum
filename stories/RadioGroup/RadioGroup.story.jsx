@@ -29,6 +29,14 @@ const RadioBlock = (
   </RadioGroup>
 );
 
+const RadioError = (
+  <RadioGroup name="groceries" error="Esta opção é obrigatória">
+    <RadioGroup.Radio value="Red" label="Red" />
+    <RadioGroup.Radio value="Green" label="Green" />
+    <RadioGroup.Radio value="Blue" label="Blue" />
+  </RadioGroup>
+);
+
 const RadioDisabled = (
   <RadioGroup name="">
     <RadioGroup.Radio value="Fruit Juices" label="Fruit Juices" />
@@ -71,35 +79,58 @@ stories.add('Radio Button', () => (
           </p>
         </StyledDiv>
 
-        <h4>RadioGroup</h4>
         <Row>
-          <Col small={3}>
-            <CodeExample component={RadioBlock} showTitle={false} />
+          <Col small={6}>
+            <h4>Default</h4>
+            <Row>
+              <Col small={6}>
+                <CodeExample component={RadioBlock} showTitle={false} />
+              </Col>
+
+              <Col small={6}>
+                <RadioGroupWrapper>{RadioBlock}</RadioGroupWrapper>
+              </Col>
+            </Row>
           </Col>
 
-          <Col small={3}>
-            <RadioGroupWrapper>{RadioBlock}</RadioGroupWrapper>
+          <Col small={6}>
+            <h4>Error</h4>
+            <Row>
+              <Col small={6}>
+                <CodeExample component={RadioError} showTitle={false} />
+              </Col>
+
+              <Col small={6}>
+                <RadioGroupWrapper>{RadioError}</RadioGroupWrapper>
+              </Col>
+            </Row>
           </Col>
         </Row>
-
-        <h4>RadioGroup with disabled options</h4>
         <Row>
-          <Col small={3}>
-            <CodeExample component={RadioDisabled} showTitle={false} />
+          <Col small={6}>
+            <h4>Disabled</h4>
+            <Row>
+              <Col small={6}>
+                <CodeExample component={RadioDisabled} showTitle={false} />
+              </Col>
+
+              <Col small={6}>
+                <RadioGroupWrapper>{RadioDisabled}</RadioGroupWrapper>
+              </Col>
+            </Row>
           </Col>
 
-          <Col small={3}>
-            <RadioGroupWrapper>{RadioDisabled}</RadioGroupWrapper>
-          </Col>
-        </Row>
-        <h4>RadioGroup with selected option</h4>
-        <Row>
-          <Col small={3}>
-            <CodeExample component={RadioBlockSelected} showTitle={false} />
-          </Col>
+          <Col small={6}>
+            <h4>Selected</h4>
+            <Row>
+              <Col small={6}>
+                <CodeExample component={RadioBlockSelected} showTitle={false} />
+              </Col>
 
-          <Col small={3}>
-            <RadioGroupWrapper>{RadioBlockSelected}</RadioGroupWrapper>
+              <Col small={6}>
+                <RadioGroupWrapper>{RadioBlockSelected}</RadioGroupWrapper>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Tab>

@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { FieldGroup } from '../shared';
+import Colors from '../Colors';
+import { FieldGroup, Label } from '../shared';
+
 import Radio from './Radio';
 
 const Group = styled(FieldGroup).attrs({
@@ -9,6 +11,20 @@ const Group = styled(FieldGroup).attrs({
 })`
   display: flex;
   flex-direction: column;
+
+  position: relative;
+`;
+
+const ErrorLabel = styled(Label)`
+  color: ${Colors.ERROR['900']};
+  cursor: text;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 14px;
+  left: -3px;
+  position: absolute;
+
+  bottom: -30px;
 `;
 
 class RadioGroup extends React.Component {
@@ -128,7 +144,7 @@ class RadioGroup extends React.Component {
   }
 
   render() {
-    const { children, name, ...rest } = this.props;
+    const { children, name, error, ...rest } = this.props;
     const groupProps = {
       name,
       checkPrevious: this.checkPrevious,
@@ -150,9 +166,11 @@ class RadioGroup extends React.Component {
               key={props.value}
               aria-checked={checked}
               tabIndex={tabIndex}
+              error={Boolean(error)}
             />
           );
         })}
+        {error && <ErrorLabel>{error}</ErrorLabel>}
       </Group>
     );
   }
@@ -163,6 +181,7 @@ class RadioGroup extends React.Component {
  */
 RadioGroup.defaultProps = {
   selected: undefined,
+  error: '',
   onChange: () => {},
 };
 
@@ -179,6 +198,9 @@ RadioGroup.propTypes = {
     PropTypes.bool,
   ]),
   name: PropTypes.string.isRequired,
+  error: PropTypes.string,
 };
+
+RadioGroup;
 
 export default RadioGroup;
