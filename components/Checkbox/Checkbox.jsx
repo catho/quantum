@@ -30,9 +30,10 @@ const StyledLabel = styled(Label)`
 
   cursor: inherit;
   display: initial;
+  font-size: 16px;
   position: relative;
   margin-bottom: 0;
-  padding-left: 24px;
+  padding-left: 22px;
 
   ${({ disabled }) =>
     `
@@ -47,13 +48,13 @@ const StyledLabel = styled(Label)`
       display: inline-block;
       width: 5px;
       position: absolute;
-      height: 12px;
+      height: 11px;
       left: 3px;
 
       border: solid ${Colors.WHITE};
-      border-radius: 3px;
+      border-radius: 1px;
       border-width: 0 3px 3px 0;
-      top: 1px;
+      top: 2px;
       transform: rotate(45deg);
     }
   `}
@@ -67,7 +68,7 @@ const StyledLabel = styled(Label)`
     ${props => getColors(props)};
 
     position: absolute;
-    border-radius: 4px;
+    border-radius: 2px;
     content: ' ';
     display: inline-block;
     left: -2px;
@@ -83,7 +84,7 @@ const StyledLabel = styled(Label)`
       `
       border: 2px solid ${error ? Colors.ERROR['500'] : Colors.BLUE['500']};
       box-shadow: 0 2px 6px 0 ${
-        error ? Colors.ERROR['500'] : Colors.BLUE['500']
+        error ? Colors.ERROR['500'] : Colors.BLUE['50']
       };
     `}
   }
