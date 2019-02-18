@@ -27,11 +27,17 @@ const exampleTab = (
       <ExampleTitle>Centered button</ExampleTitle>
       <Example
         component={
-          <Button center skin="action">
+          <Button icon="face" center skin="action">
             Centered
           </Button>
         }
         code={'<Button center skin="action">Centered</Button>'}
+      />
+
+      <ExampleTitle>Link</ExampleTitle>
+      <Example
+        component={<Button skin="link">click here</Button>}
+        code={'<Button skin="link">click here</Button>'}
       />
     </Container>
 
@@ -95,27 +101,6 @@ const exampleTab = (
               </Button>
             }
           />
-        </Col>
-      </Row>
-    </Container>
-
-    <Container fluid>
-      <ExampleTitle>Social login buttons</ExampleTitle>
-      <p>
-        We provide Google and Facebook login buttons:{' '}
-        <code>{'<Button.Facebook />'}</code> and{' '}
-        <code>{'<Button.Google />'}</code>
-      </p>
-      <p>
-        The social buttons do not allow any prop that change style, so, props
-        like <code>skin</code> or <code>full</code> will not be accepted.
-      </p>
-      <Row>
-        <Col tablet={4}>
-          <Example component={<Button.Facebook />} code="<Button.Facebook />" />
-        </Col>
-        <Col tablet={4}>
-          <Example component={<Button.Google />} code="<Button.Google />" />
         </Col>
       </Row>
     </Container>

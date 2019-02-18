@@ -24,10 +24,12 @@ describe('Button component', () => {
       const primary = <Button skin="primary">primary</Button>;
       const secondary = <Button skin="secondary">secondary</Button>;
       const action = <Button skin="action">action</Button>;
+      const link = <Button skin="link">action</Button>;
 
       expect(renderer.create(primary).toJSON()).toMatchSnapshot();
       expect(renderer.create(secondary).toJSON()).toMatchSnapshot();
       expect(renderer.create(action).toJSON()).toMatchSnapshot();
+      expect(renderer.create(link).toJSON()).toMatchSnapshot();
     });
   });
 
