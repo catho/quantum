@@ -1,47 +1,114 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
-import RadioGroup from './RadioGroup';
+import { shallow, mount } from 'enzyme';
 import Radio from './Radio';
 
-describe('Radio component', () => {
-  const onChangeMock = jest.fn();
+describe('<RadioGroup.Radio />', () => {
+  const checkMock = jest.fn();
+  const checkPreviousMock = jest.fn();
+  const checkNextMock = jest.fn();
 
-  const radioButton = (
+  const KEYS = Object.freeze({
+    SPACE: 32,
+    LEFT: 37,
+    UP: 38,
+    RIGHT: 39,
+    DOWN: 40,
+  });
+
+  const radioExample = (
     <Radio
-      id="radio"
-      name="radio"
-      value="1"
+      value="Hello"
       label="Hello"
-      onChange={onChangeMock}
+      check={checkMock}
+      checkNext={checkNextMock}
+      checkPrevious={checkPreviousMock}
     />
   );
 
-  const wrapper = shallow(<RadioGroup>{radioButton}</RadioGroup>);
-
-  it('Should verify if Radio contains the required properties', () => {
-    expect(wrapper.find('Radio')).toHaveLength(1);
-    expect(wrapper.find('Radio').prop('id')).toEqual('radio');
-    expect(wrapper.find('Radio').prop('name')).toEqual('radio');
-    expect(wrapper.find('Radio').prop('value')).toEqual('1');
-    expect(wrapper.find('Radio').prop('label')).toEqual('Hello');
-    expect(wrapper.find('Radio').prop('onChange')).toEqual(onChangeMock);
-  });
+  const wrapper = mount(radioExample);
+  const shalloWrapper = shallow(radioExample);
 
   it('Should match the snapshot', () => {
-    const tree = renderer.create(radioButton).toJSON();
+    const tree = renderer.create(radioExample).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it('Should call "onChange" when the radio changes', () => {
-    const event = { target: { name: 'radio', value: '1' } };
-    const value = { checked: '1' };
+  describe('properties', () => {
+    it('Should have defaults', () => {
+      const {
+        type: {
+          attrs: [attributes],
+        },
+      } = shalloWrapper.get(0);
+      expect(attributes).toHaveProperty('role', 'radio');
+      expect(attributes).toHaveProperty('aria-checked', 'false');
+      expect(attributes).toHaveProperty('tabIndex', -1);
+    });
+  });
 
-    const component = shallow(radioButton);
+  describe('events', () => {
+    const eventDefault = {
+      stopPropagation() {},
+      preventDefault() {},
+    };
 
-    component.find('#radio').simulate('change', event);
-    component.update();
+    it('Should check when clicked and when pressing space bar', () => {
+      const space = {
+        ...eventDefault,
+        keyCode: KEYS.SPACE,
+      };
 
-    expect(onChangeMock).toBeCalledWith(event, value);
+      wrapper.simulate('click');
+      expect(checkMock).toBeCalledWith(wrapper.props());
+
+      wrapper.simulate('keydown', space);
+      expect(checkMock).toBeCalledWith(wrapper.props());
+    });
+
+    it('Should check next radio when arrow right or down is triggered', () => {
+      const right = {
+        ...eventDefault,
+        keyCode: KEYS.RIGHT,
+      };
+
+      const down = {
+        ...eventDefault,
+        keyCode: KEYS.DOWN,
+      };
+
+      wrapper.simulate('keydown', right);
+      expect(checkNextMock).toBeCalledWith(wrapper.props());
+
+      wrapper.simulate('keydown', down);
+      expect(checkNextMock).toBeCalledWith(wrapper.props());
+    });
+
+    it('Should check previous radio when arrow left or up is triggered', () => {
+      const up = {
+        ...eventDefault,
+        keyCode: KEYS.UP,
+      };
+
+      const left = {
+        ...eventDefault,
+        keyCode: KEYS.LEFT,
+      };
+
+      wrapper.simulate('keydown', up);
+      expect(checkPreviousMock).toBeCalledWith(wrapper.props());
+
+      wrapper.simulate('keydown', left);
+      expect(checkPreviousMock).toBeCalledWith(wrapper.props());
+    });
+
+    it('Should focus when aria-checked change', () => {
+      const radio = wrapper.instance().radioRef;
+      jest.spyOn(radio, 'focus');
+
+      wrapper.setProps({ 'aria-checked': true });
+
+      expect(radio.focus).toHaveBeenCalledTimes(1);
+    });
   });
 });

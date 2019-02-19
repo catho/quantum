@@ -1,28 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Radio component Should match the snapshot 1`] = `
+exports[`<RadioGroup.Radio /> Should match the snapshot 1`] = `
+.c0 {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.c0:before {
+  content: ' ';
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+.c0[aria-checked='true']:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c0[aria-checked='true']:hover:before,
+.c0[aria-checked='true']:focus:before {
+  box-shadow: inset 0 0 0 3.5px #FFFFFF,0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0:hover:before,
+.c0:focus:before {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0[disabled] {
+  color: #999999;
+}
+
+.c0[disabled]:before {
+  background-color: #cccccc;
+}
+
+.c0[disabled]:hover {
+  cursor: not-allowed;
+}
+
+.c0[disabled]:hover:before,
+.c0[disabled]:focus:before {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c0[aria-checked='true']:disabled:before {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
 <div
-  className="Radio__Wrapper-sc-1diyv3n-1 corTqy"
-  name="radio"
-  value="1"
+  aria-checked={false}
+  className="c0"
+  disabled={false}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="radio"
+  tabIndex={-1}
+  value="Hello"
 >
-  <input
-    className="Radio__StyledInput-sc-1diyv3n-2 fTTWXf"
-    disabled={false}
-    id="radio"
-    name="radio"
-    onChange={[Function]}
-    type="radio"
-    value="1"
-  />
-  <label
-    className="Label-sc-1ny5bqy-0 Radio__StyledLabel-sc-1diyv3n-0 fetNXm"
-    disabled={false}
-    htmlFor="radio"
-    name="radio"
-    value="1"
-  >
-    Hello
-  </label>
+  Hello
 </div>
 `;
