@@ -53,53 +53,64 @@ describe('<RadioGroup.Radio />', () => {
       preventDefault() {},
     };
 
-    it('Should check when clicked and when pressing space bar', () => {
-      const space = {
-        ...eventDefault,
-        keyCode: KEYS.SPACE,
-      };
+    describe('click', () => {
+      it('Should check when clicked and when pressing space bar', () => {
+        const space = {
+          ...eventDefault,
+          keyCode: KEYS.SPACE,
+        };
 
-      wrapper.simulate('click');
-      expect(checkMock).toBeCalledWith(wrapper.props());
+        wrapper.simulate('click');
+        expect(checkMock).toBeCalledWith(wrapper.props());
 
-      wrapper.simulate('keydown', space);
-      expect(checkMock).toBeCalledWith(wrapper.props());
+        wrapper.simulate('keydown', space);
+        expect(checkMock).toBeCalledWith(wrapper.props());
+      });
+
+      it('Should not check when disabled', () => {
+        wrapper.setProps({ disabled: true });
+        wrapper.simulate('click');
+
+        expect(checkMock).not.toBeCalled();
+      });
     });
 
-    it('Should check next radio when arrow right or down is triggered', () => {
-      const right = {
-        ...eventDefault,
-        keyCode: KEYS.RIGHT,
-      };
+    describe('arrows', () => {
+      it('Should check next radio when arrow right or down is triggered', () => {
+        const right = {
+          ...eventDefault,
+          keyCode: KEYS.RIGHT,
+        };
 
-      const down = {
-        ...eventDefault,
-        keyCode: KEYS.DOWN,
-      };
+        const down = {
+          ...eventDefault,
+          keyCode: KEYS.DOWN,
+        };
 
-      wrapper.simulate('keydown', right);
-      expect(checkNextMock).toBeCalledWith(wrapper.props());
+        wrapper.simulate('keydown', right);
+        expect(checkNextMock).toBeCalledWith(wrapper.props());
 
-      wrapper.simulate('keydown', down);
-      expect(checkNextMock).toBeCalledWith(wrapper.props());
-    });
+        wrapper.simulate('keydown', down);
+        expect(checkNextMock).toBeCalledWith(wrapper.props());
+      });
 
-    it('Should check previous radio when arrow left or up is triggered', () => {
-      const up = {
-        ...eventDefault,
-        keyCode: KEYS.UP,
-      };
+      it('Should check previous radio when arrow left or up is triggered', () => {
+        const up = {
+          ...eventDefault,
+          keyCode: KEYS.UP,
+        };
 
-      const left = {
-        ...eventDefault,
-        keyCode: KEYS.LEFT,
-      };
+        const left = {
+          ...eventDefault,
+          keyCode: KEYS.LEFT,
+        };
 
-      wrapper.simulate('keydown', up);
-      expect(checkPreviousMock).toBeCalledWith(wrapper.props());
+        wrapper.simulate('keydown', up);
+        expect(checkPreviousMock).toBeCalledWith(wrapper.props());
 
-      wrapper.simulate('keydown', left);
-      expect(checkPreviousMock).toBeCalledWith(wrapper.props());
+        wrapper.simulate('keydown', left);
+        expect(checkPreviousMock).toBeCalledWith(wrapper.props());
+      });
     });
 
     it('Should focus when aria-checked change', () => {
