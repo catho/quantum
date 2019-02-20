@@ -1,8 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component Should match the snapshot 1`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -14,8 +44,41 @@ exports[`Button component Should match the snapshot 1`] = `
 `;
 
 exports[`Button component when center prop is set 1`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 lfruMQ"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -27,8 +90,39 @@ exports[`Button component when center prop is set 1`] = `
 `;
 
 exports[`Button component when full prop is set 1`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 jALiDh"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -40,8 +134,38 @@ exports[`Button component when full prop is set 1`] = `
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -53,8 +177,38 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 2`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 kYDNbD"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -66,8 +220,38 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 3`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #de0059;
+  border: 1px solid #de0059;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #ab0045;
+  border-color: #ab0045;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 cEiWPa"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -79,8 +263,38 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a type set should match secondary snapshot 1`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -92,8 +306,38 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component when there is a type set should match secondary snapshot 2`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -105,8 +349,38 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component when there is a type set should match secondary snapshot 3`] = `
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -118,8 +392,58 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component with an icon should match secondary snapshot 1`] = `
+.c2 {
+  margin: -5px 5px -7px -5px;
+}
+
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c1 {
+  font-size: 24px;
+}
+
+.c4 .c1 {
+  font-size: 24px;
+}
+
+.c5 .c1 {
+  font-size: 24px;
+}
+
+.c6 .c1 {
+  font-size: 24px;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -127,7 +451,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
+    className="material-icons MuiIcon-root-1 c1 c2"
     size="medium"
     style={
       Object {
@@ -142,8 +466,58 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 2`] = `
+.c2 {
+  margin: -5px 5px -7px -5px;
+}
+
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c1 {
+  font-size: 24px;
+}
+
+.c4 .c1 {
+  font-size: 24px;
+}
+
+.c5 .c1 {
+  font-size: 24px;
+}
+
+.c6 .c1 {
+  font-size: 24px;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -151,7 +525,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
+    className="material-icons MuiIcon-root-1 c1 c2"
     size="medium"
     style={
       Object {
@@ -166,8 +540,58 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 3`] = `
+.c2 {
+  margin: -5px 5px -7px -5px;
+}
+
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c1 {
+  font-size: 24px;
+}
+
+.c4 .c1 {
+  font-size: 24px;
+}
+
+.c5 .c1 {
+  font-size: 24px;
+}
+
+.c6 .c1 {
+  font-size: 24px;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -175,7 +599,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
+    className="material-icons MuiIcon-root-1 c1 c2"
     size="medium"
     style={
       Object {
@@ -190,8 +614,58 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 4`] = `
+.c2 {
+  margin: -5px 5px -7px -5px;
+}
+
+.c0 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c0 .c1 {
+  font-size: 24px;
+}
+
+.c0:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c1 {
+  font-size: 24px;
+}
+
+.c4 .c1 {
+  font-size: 24px;
+}
+
+.c5 .c1 {
+  font-size: 24px;
+}
+
+.c6 .c1 {
+  font-size: 24px;
+}
+
 <button
-  className="Button__StyledButton-sc-1ovnfsw-1 rjHcY"
+  className="c0"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -199,7 +673,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 lcmNHP"
+    className="material-icons MuiIcon-root-1 c1 c2"
     size="medium"
     style={
       Object {

@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card component Should match the snapshot 1`] = `
+.c0 {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+  transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+}
+
 <article
-  className="Card__CardWrapper-om5cci-0 cbyCFo"
+  className="c0"
   elevation={1}
 />
 `;

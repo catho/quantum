@@ -1,8 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Badge component Should match snapshot with different skins 1`] = `
+.c0 {
+  background-color: #005BA2;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 dYSDEY"
+  className="c0"
 >
    
    Brand1 
@@ -11,8 +20,17 @@ exports[`Badge component Should match snapshot with different skins 1`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 2`] = `
+.c0 {
+  background-color: #012C52;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 hUchzv"
+  className="c0"
 >
    
    Brand2 
@@ -21,8 +39,17 @@ exports[`Badge component Should match snapshot with different skins 2`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 3`] = `
+.c0 {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 eNzhds"
+  className="c0"
 >
    
    Primary 
@@ -31,8 +58,17 @@ exports[`Badge component Should match snapshot with different skins 3`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 4`] = `
+.c0 {
+  background-color: #647c8a;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 djuupM"
+  className="c0"
 >
    
    Secondary 
@@ -41,8 +77,17 @@ exports[`Badge component Should match snapshot with different skins 4`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 5`] = `
+.c0 {
+  background-color: #7ed321;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 kREFCI"
+  className="c0"
 >
    
    Text 
@@ -51,8 +96,17 @@ exports[`Badge component Should match snapshot with different skins 5`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 6`] = `
+.c0 {
+  background-color: #f09100;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 ewhMuB"
+  className="c0"
 >
    
    Text 
@@ -61,8 +115,17 @@ exports[`Badge component Should match snapshot with different skins 6`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 7`] = `
+.c0 {
+  background-color: #f4c10b;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 copVIb"
+  className="c0"
 >
    
    Text 
@@ -71,8 +134,17 @@ exports[`Badge component Should match snapshot with different skins 7`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 8`] = `
+.c0 {
+  background-color: #f4365b;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 fRwJrq"
+  className="c0"
 >
    
    Text 
@@ -81,8 +153,17 @@ exports[`Badge component Should match snapshot with different skins 8`] = `
 `;
 
 exports[`Badge component Should match snapshot with different skins 9`] = `
+.c0 {
+  background-color: #00dff2;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 dIsHnq"
+  className="c0"
 >
    
    Text 
@@ -91,8 +172,17 @@ exports[`Badge component Should match snapshot with different skins 9`] = `
 `;
 
 exports[`Badge component Should match snapshot with different text props 1`] = `
+.c0 {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 eNzhds"
+  className="c0"
 >
    
   Default with text prop
@@ -101,8 +191,17 @@ exports[`Badge component Should match snapshot with different text props 1`] = `
 `;
 
 exports[`Badge component Should match snapshot with different text props 2`] = `
+.c0 {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 eNzhds"
+  className="c0"
 >
    
    Default with children 
@@ -111,8 +210,17 @@ exports[`Badge component Should match snapshot with different text props 2`] = `
 `;
 
 exports[`Badge component Should match snapshot with different text props 3`] = `
+.c0 {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
 <div
-  className="Badge__Wrapper-zpdrj8-0 eNzhds"
+  className="c0"
 >
    
    Default 

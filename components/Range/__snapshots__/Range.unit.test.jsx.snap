@@ -1,8 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component  should match the snapshot 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 exZTLD"
+  className="c0"
 >
   
   <input
@@ -20,11 +27,29 @@ exports[`Input component  should match the snapshot 1`] = `
 `;
 
 exports[`Input component  with a label should match the snapshot 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 exZTLD"
+  className="c0"
 >
   <label
-    className="Label-sc-1ny5bqy-0 bvIVUH"
+    className="c1"
     htmlFor="range-with-label"
   >
      
@@ -46,8 +71,21 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 `;
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
+.c1 {
+  color: #f4365b;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 exZTLD"
+  className="c0"
 >
   
   <input
@@ -61,7 +99,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     value={0}
   />
   <div
-    className="ErrorMessage-sc-19jcdrm-0 iRUhLB"
+    className="c1"
   >
     Error message
   </div>
