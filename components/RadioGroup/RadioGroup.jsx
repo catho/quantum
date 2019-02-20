@@ -201,6 +201,4 @@ RadioGroup.propTypes = {
   error: PropTypes.string,
 };
 
-RadioGroup;
-
 export default RadioGroup;
