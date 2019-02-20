@@ -116,7 +116,7 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       required
     </label>
-    
+
   </div>
   <div
     className="c0"
@@ -138,7 +138,7 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       CPF
     </label>
-    
+
   </div>
   <div
     className="c0"
@@ -160,7 +160,7 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       CEP
     </label>
-    
+
   </div>
   <div
     className="c0"
@@ -182,7 +182,7 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       Birthday
     </label>
-    
+
   </div>
   <div
     className="c0"
@@ -204,7 +204,7 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       E-mail
     </label>
-    
+
   </div>
   <div
     className="c0"
@@ -227,7 +227,7 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       Address
     </label>
-    
+
   </div>
   <div
     className="c0"
@@ -249,17 +249,17 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       Country
     </label>
-    
+
   </div>
   <button
-    className="c4"
+    className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
     disabled={false}
     onClick={[Function]}
     size="medium"
     type="submit"
   >
-    
-     Enviar 
+
+     Enviar
   </button>
 </form>
 `;

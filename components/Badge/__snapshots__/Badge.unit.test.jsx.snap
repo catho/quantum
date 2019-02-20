@@ -1,229 +1,114 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge component Should match snapshot with different skins 1`] = `
+exports[`<Badge /> Should match snapshot With number 1`] = `
 .c0 {
-  background-color: #005BA2;
-  border-radius: 2px;
-  color: #FFFFFF;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.c1 {
+  border-radius: 8px;
+  display: inline-block;
   font-size: 12px;
-  padding: 2px 4px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  min-width: 20px;
   text-align: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
   className="c0"
+  value={10}
 >
-   
-   Brand1 
-   
+  <span
+    className="c1"
+    value={10}
+  >
+    10
+  </span>
+
 </div>
 `;
 
-exports[`Badge component Should match snapshot with different skins 2`] = `
+exports[`<Badge /> Should match snapshot with children 1`] = `
 .c0 {
-  background-color: #012C52;
-  border-radius: 2px;
-  color: #FFFFFF;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  border-radius: 8px;
+  display: inline-block;
   font-size: 12px;
-  padding: 2px 4px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  min-width: 20px;
   text-align: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: #f2f2f2;
+  color: #4c4c4c;
+}
+
+.c2 {
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c2:active {
+  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 <div
   className="c0"
+  value={10}
 >
-   
-   Brand2 
-   
-</div>
-`;
+  <span
+    className="c1"
+    value={10}
+  >
+    10
+  </span>
+  <button
+    className="c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
 
-exports[`Badge component Should match snapshot with different skins 3`] = `
-.c0 {
-  background-color: #03a9f4;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Primary 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different skins 4`] = `
-.c0 {
-  background-color: #647c8a;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Secondary 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different skins 5`] = `
-.c0 {
-  background-color: #7ed321;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Text 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different skins 6`] = `
-.c0 {
-  background-color: #f09100;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Text 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different skins 7`] = `
-.c0 {
-  background-color: #f4c10b;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Text 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different skins 8`] = `
-.c0 {
-  background-color: #f4365b;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Text 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different skins 9`] = `
-.c0 {
-  background-color: #00dff2;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Text 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different text props 1`] = `
-.c0 {
-  background-color: #03a9f4;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-  Default with text prop
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different text props 2`] = `
-.c0 {
-  background-color: #03a9f4;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Default with children 
-   
-</div>
-`;
-
-exports[`Badge component Should match snapshot with different text props 3`] = `
-.c0 {
-  background-color: #03a9f4;
-  border-radius: 2px;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 2px 4px;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-   
-   Default 
-   
+    Catho
+  </button>
 </div>
 `;

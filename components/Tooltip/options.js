@@ -1,6 +1,4 @@
-import Colors from '../Colors/deprecated';
-
-const arrowSize = 5;
+const arrowSize = 6;
 const upDownBorders = `
   border-left: ${arrowSize}px solid transparent;
   border-right: ${arrowSize}px solid transparent;
@@ -15,7 +13,7 @@ const sideBorders = `
   transform: translateY(-50%);
 `;
 
-const placement = {
+const placementConfig = {
   arrowPosition: {
     bottom: `
       ${upDownBorders}
@@ -43,7 +41,7 @@ const placement = {
     `,
   },
 
-  tipPosition: ({ place, height, width }) => {
+  tipPosition: ({ placement, height, width }) => {
     const position = {
       top: `top: -${height + 5}px; left: 50%; margin-left: -${Math.floor(
         width / 2,
@@ -59,16 +57,8 @@ const placement = {
       )}px;`,
     };
 
-    return position[place] || position.top;
+    return position[placement] || position.top;
   },
 };
 
-const skins = {
-  primary: Colors.PRIMARY['500'],
-  info: Colors.INFO['500'],
-  danger: Colors.DANGER['500'],
-  success: Colors.SUCCESS['500'],
-  warning: Colors.WARNING['500'],
-};
-
-export { skins, placement };
+export default placementConfig;

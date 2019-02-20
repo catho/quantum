@@ -32,13 +32,13 @@ exports[`Button component Should match the snapshot 1`] = `
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="button"
 >
-  
+
   Text
 </button>
 `;
@@ -78,13 +78,13 @@ exports[`Button component when center prop is set 1`] = `
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 iWWtg"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="button"
 >
-  
+
   Center
 </button>
 `;
@@ -122,13 +122,13 @@ exports[`Button component when full prop is set 1`] = `
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 eWJxdF"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="button"
 >
-  
+
   Full
 </button>
 `;
@@ -165,13 +165,13 @@ exports[`Button component when there is a skin set should match secondary snapsh
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="button"
 >
-  
+
   primary
 </button>
 `;
@@ -208,13 +208,13 @@ exports[`Button component when there is a skin set should match secondary snapsh
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 dQxJno"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="button"
 >
-  
+
   secondary
 </button>
 `;
@@ -251,13 +251,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 dUbHwH"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="button"
 >
-  
+
+  action
+</button>
+`;
+
+exports[`Button component when there is a skin set should match secondary snapshot 4`] = `
+<button
+  className="Button__StyledButton-sc-1ovnfsw-1 hwCVvK"
+  disabled={false}
+  onClick={[Function]}
+  size="medium"
+  type="button"
+>
+
   action
 </button>
 `;
@@ -294,13 +307,13 @@ exports[`Button component when there is a type set should match secondary snapsh
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="button"
 >
-  
+
   button
 </button>
 `;
@@ -337,13 +350,13 @@ exports[`Button component when there is a type set should match secondary snapsh
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="reset"
 >
-  
+
   reset
 </button>
 `;
@@ -380,13 +393,13 @@ exports[`Button component when there is a type set should match secondary snapsh
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
   type="submit"
 >
-  
+
   submit
 </button>
 `;
@@ -443,7 +456,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -451,7 +464,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {
@@ -517,7 +530,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -525,7 +538,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {
@@ -591,7 +604,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -599,7 +612,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {
@@ -665,7 +678,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 }
 
 <button
-  className="c0"
+  className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -673,7 +686,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <span
     aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    className="material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 isEXQZ"
     size="medium"
     style={
       Object {

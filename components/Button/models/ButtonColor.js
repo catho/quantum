@@ -2,33 +2,63 @@ import theme from '../../shared/theme';
 
 class ButtonColor {
   constructor({
+    // Unselected
     unselected,
     unselectedBorder = unselected,
     unselectedTextColor,
-    unselectedFontWeight = theme.font.weight,
+    unselectedShadow,
+    // Selected
     selected,
     selectedBorder = selected,
     selectedTextColor,
-    selectedFontWeight = theme.font.weight,
+    selectedShadow = unselectedShadow,
+    // Disabled
     disabled,
     disabledBorder = disabled,
     disabledTextColor,
-    disabledFontWeight = theme.font.weight,
-    shadow,
+    disabledShadow = unselectedShadow,
+    // Focused
+    focused,
+    focusedBorder = focused,
+    focusedTextColor,
+    focusedShadow = unselectedShadow,
+    // Hovered
+    hovered,
+    hoveredBorder = hovered,
+    hoveredTextColor,
+    hoveredShadow = unselectedShadow,
+    // General
+    decoration = 'none',
+    borderRadius = theme.sizes.radius,
   }) {
+    // Unselected
     this._unselected = unselected;
     this._unselectedBorder = unselectedBorder;
     this._unselectedTextColor = unselectedTextColor;
-    this._unselectedFontWeight = unselectedFontWeight;
+    this._unselectedShadow = unselectedShadow;
+    // Selected
     this._selected = selected;
     this._selectedBorder = selectedBorder;
     this._selectedTextColor = selectedTextColor;
-    this._selectedFontWeight = selectedFontWeight;
+    this._selectedShadow = selectedShadow;
+    // Disabled
     this._disabled = disabled;
     this._disabledBorder = disabledBorder;
     this._disabledTextColor = disabledTextColor;
-    this._disabledFontWeight = disabledFontWeight;
-    this._shadow = shadow;
+    this._disabledShadow = disabledShadow;
+    // Focused
+    this._focused = focused;
+    this._focusedBorder = focusedBorder;
+    this._focusedTextColor = focusedTextColor;
+    this._focusedShadow = focusedShadow;
+    // Hovered
+    this._hovered = hovered;
+    this._hoveredBorder = hoveredBorder;
+    this._hoveredTextColor = hoveredTextColor;
+    this._hoveredShadow = hoveredShadow;
+    // Misc
+    this._decoration = decoration;
+    this._borderRadius = borderRadius;
   }
 
   get unselected() {
@@ -36,7 +66,7 @@ class ButtonColor {
       background: this._unselected,
       border: this._unselectedBorder,
       color: this._unselectedTextColor,
-      fontWeight: this._unselectedFontWeight,
+      shadow: this._unselectedShadow,
     };
   }
 
@@ -45,7 +75,7 @@ class ButtonColor {
       background: this._selected,
       border: this._selectedBorder,
       color: this._selectedTextColor,
-      fontWeight: this._selectedFontWeight,
+      shadow: this._selectedShadow,
     };
   }
 
@@ -54,12 +84,34 @@ class ButtonColor {
       background: this._disabled,
       border: this._disabledBorder,
       color: this._disabledTextColor,
-      fontWeight: this._disabledFontWeight,
+      shadow: this._disabledShadow,
     };
   }
 
-  get shadow() {
-    return this._shadow;
+  get focused() {
+    return {
+      background: this._focused,
+      border: this._focusedBorder,
+      color: this._focusedTextColor,
+      shadow: this._focusedShadow,
+    };
+  }
+
+  get hovered() {
+    return {
+      background: this._hovered,
+      border: this._hoveredBorder,
+      color: this._hoveredTextColor,
+      shadow: this._hoveredShadow,
+    };
+  }
+
+  get decoration() {
+    return this._decoration;
+  }
+
+  get borderRadius() {
+    return this._borderRadius;
   }
 }
 

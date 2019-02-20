@@ -1,37 +1,94 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
+
 import Badge from './Badge';
+import Colors from '../Colors';
+import Button from '../Button';
+import 'jest-styled-components';
 
-describe('Badge component', () => {
+describe('<Badge />', () => {
   describe('Should match snapshot', () => {
-    it('with different text props', () => {
-      const badges = [
-        <Badge text="Default with text prop" />,
-        <Badge text="Default with text prop"> Default with children </Badge>,
-        <Badge> Default </Badge>,
-      ];
-
-      badges.forEach(badge => {
-        expect(renderer.create(badge).toJSON()).toMatchSnapshot();
-      });
+    it('With number', () => {
+      expect(renderer.create(<Badge number={10} />).toJSON()).toMatchSnapshot();
     });
 
-    it('with different skins', () => {
-      const badges = [
-        <Badge skin="brand1"> Brand1 </Badge>,
-        <Badge skin="brand2"> Brand2 </Badge>,
-        <Badge skin="primary"> Primary </Badge>,
-        <Badge skin="secondary"> Secondary </Badge>,
-        <Badge skin="success"> Text </Badge>,
-        <Badge skin="action"> Text </Badge>,
-        <Badge skin="warning"> Text </Badge>,
-        <Badge skin="danger"> Text </Badge>,
-        <Badge skin="info"> Text </Badge>,
-      ];
+    it('with children', () => {
+      expect(
+        renderer
+          .create(
+            <Badge number={10}>
+              <Button />
+            </Badge>,
+          )
+          .toJSON(),
+      ).toMatchSnapshot();
+    });
+  });
 
-      badges.forEach(badge => {
-        expect(renderer.create(badge).toJSON()).toMatchSnapshot();
-      });
+  describe('Match correct styles', () => {
+    const BadgeComponent = mount(<Badge number={10} />);
+
+    it("should have correct colors when skin prop isn't defined", () => {
+      expect(BadgeComponent.find('StyledBadge')).toHaveStyleRule(
+        'background-color',
+        Colors.BLACK[100],
+      );
+
+      expect(BadgeComponent.find('StyledBadge')).toHaveStyleRule(
+        'color',
+        Colors.BLACK[700],
+      );
+    });
+
+    it("Should have spacing around when Badge don't have children", () => {
+      expect(BadgeComponent.find('BadgeWrapper')).toHaveStyleRule(
+        'margin-left',
+        '8px',
+      );
+      expect(BadgeComponent.find('BadgeWrapper')).toHaveStyleRule(
+        'margin-right',
+        '8px',
+      );
+    });
+
+    it('Should match colors when skin prop is defined', () => {
+      const BadgeWithSkin = mount(<Badge number={10} skin="success" />);
+
+      expect(BadgeWithSkin.find('StyledBadge')).toHaveStyleRule(
+        'background-color',
+        Colors.SUCCESS[200],
+      );
+      expect(BadgeWithSkin.find('StyledBadge')).toHaveStyleRule(
+        'color',
+        Colors.SUCCESS[900],
+      );
+    });
+  });
+
+  describe('Positioning when have children', () => {
+    it('should be placed at top-right corner', () => {
+      const BadgeComponent = mount(
+        <Badge number={10}>
+          <Button />
+        </Badge>,
+      );
+      expect(BadgeComponent.find('BadgeWrapper')).toHaveStyleRule(
+        'position',
+        'relative',
+      );
+      expect(BadgeComponent.find('StyledBadge')).toHaveStyleRule(
+        'position',
+        'absolute',
+      );
+      expect(BadgeComponent.find('StyledBadge')).toHaveStyleRule(
+        'top',
+        '-10px',
+      );
+      expect(BadgeComponent.find('StyledBadge')).toHaveStyleRule(
+        'right',
+        '-10px',
+      );
     });
   });
 });
