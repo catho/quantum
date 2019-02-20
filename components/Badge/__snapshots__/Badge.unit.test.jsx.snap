@@ -32,7 +32,7 @@ exports[`<Badge /> Should match snapshot With number 1`] = `
   >
     10
   </span>
-
+  
 </div>
 `;
 
@@ -61,30 +61,58 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
 }
 
 .c2 {
-  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-weight: bold;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   font-size: 16px;
-  padding: 0 12px;
+  padding: 0 16px;
   height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   background-color: #1355d0;
-  border: 1px solid #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
   color: #FFFFFF;
-  font-weight: 500;
-  box-shadow: 0 2px 5px rgba(92,116,130,0.3);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .c2 .c3 {
   font-size: 24px;
 }
 
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
 .c2:active {
-  box-shadow: 0 2px 6px rgba(92,116,130,0.6);
+  box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
@@ -107,7 +135,7 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
     size="medium"
     type="button"
   >
-
+    
     Catho
   </button>
 </div>
