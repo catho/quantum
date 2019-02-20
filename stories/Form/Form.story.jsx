@@ -12,6 +12,7 @@ import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
 import { Form, Validations } from '../../components/Form';
 import Input from '../../components/Input';
+import Checkbox from '../../components/Checkbox';
 
 import * as SimpleForm from './SimpleForm';
 import * as SimpleValidation from './SimpleValidation';
@@ -42,6 +43,20 @@ const FormExample = (
       minLength={3}
     />
     <Input.Date name="date" label="Birthday" validate={Validations.Date} />
+    <Checkbox
+      onChange={e => {
+        console.log(e.target.checked);
+        // console.log(checked)
+        console.log('alterou o compoente');
+      }}
+    />
+    <input
+      type="checkbox"
+      onChange={e => {
+        console.log(e.target.checked);
+        console.log('alterou o nativo');
+      }}
+    />
     <Button type="submit"> Enviar </Button>
   </Form>
 );

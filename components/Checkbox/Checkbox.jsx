@@ -25,7 +25,16 @@ const getColors = ({ disabled, checked, error }) => {
   `;
 };
 
-const StyledLabel = styled(Label)`
+const checkboxSize = '24px';
+
+const CheckboxFieldGroup = styled(FieldGroup)`
+  height: ${checkboxSize};
+
+  align-items: center;
+  pointer-events: none;
+`;
+
+const CheckboxLabel = styled(Label)`
   ${theme.mixins.transition()};
 
   cursor: inherit;
@@ -33,48 +42,25 @@ const StyledLabel = styled(Label)`
   font-size: 16px;
   position: relative;
   margin-bottom: 0;
-  padding-left: 22px;
-
-  ${({ disabled }) =>
-    `
-    color: ${disabled ? Colors.BLACK['400'] : Colors.BLACK['700']};
-  `}
-
-  ${({ checked }) =>
-    checked &&
-    `
-    &:after {
-      content: ' ';
-      display: inline-block;
-      width: 5px;
-      position: absolute;
-      height: 11px;
-      left: 3px;
-
-      border: solid ${Colors.WHITE};
-      border-radius: 1px;
-      border-width: 0 3px 3px 0;
-      top: 2px;
-      transform: rotate(45deg);
-    }
-  `}
+  padding-left: ${checkboxSize};
+  left: -${checkboxSize};
 
   ${({ disabled }) => `
+    color: ${disabled ? Colors.BLACK['400'] : Colors.BLACK['700']};
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
   `}
 
   &:before {
     ${theme.mixins.transition()};
-    ${props => getColors(props)};
+    ${getColors};
 
     position: absolute;
     border-radius: 2px;
     content: ' ';
     display: inline-block;
-    left: -2px;
-    top: 2px;
-    height: 18px;
-    width: 18px;
+    left: 0;
+    height: ${checkboxSize};
+    width: ${checkboxSize};
     box-sizing: border-box;
   }
 
@@ -90,18 +76,37 @@ const StyledLabel = styled(Label)`
   }
 `;
 
-const StyledFieldGroup = styled(FieldGroup)`
-  height: 18px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+CheckboxLabel.displayName = 'CheckboxLabel';
+
+const HiddenCheckbox = styled.input`
+  opacity: 0;
+  pointer-events: initial;
+  margin: 0;
+  width: ${checkboxSize};
+  height: ${checkboxSize};
+
+  &:checked + ${CheckboxLabel}:before {
+    ${({ disabled, error }) => getColors({ disabled, error, checked: true })};
+  }
+
+  &:checked + ${CheckboxLabel}:after {
+    border-radius: 1px;
+    border-width: 0 3px 3px 0;
+    border: solid ${Colors.WHITE};
+    content: ' ';
+    display: inline-block;
+    height: 11px;
+    left: 7px;
+    position: absolute;
+    top: 3px;
+    transform: rotate(45deg);
+    width: 5px;
+  }
 `;
 
-const StyledCheckbox = styled.input`
-  display: none;
-`;
+HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-const ErrorLabel = styled(Label)`
+const CheckboxError = styled(Label)`
   color: ${Colors.ERROR['900']};
   cursor: text;
   font-weight: 600;
@@ -111,60 +116,27 @@ const ErrorLabel = styled(Label)`
   top: 22px;
 `;
 
-class Checkbox extends React.Component {
-  constructor(props) {
-    super(props);
-
-    const { checked } = props;
-
-    this.state = { checked };
-  }
-
-  componentWillUpdate(nextProps) {
-    const { checked } = this.state;
-    if (nextProps.checked !== checked) {
-      this.state.checked = nextProps.checked;
-    }
-  }
-
-  onChange = e => {
-    const { onChange, disabled } = this.props;
-
-    if (disabled) return;
-
-    const { checked } = this.state;
-
-    this.setState({ checked: !checked });
-
-    onChange(e, { checked: !checked });
-  };
-
-  render() {
-    const { label, disabled, error, ...rest } = this.props;
-    const { checked } = this.state;
-    return (
-      <StyledFieldGroup>
-        <StyledLabel checked={checked} disabled={disabled} error={error}>
-          <StyledCheckbox
-            {...rest}
-            disabled={disabled}
-            type="checkbox"
-            checked={checked}
-            error={error}
-            onChange={this.onChange}
-          />
-          {label}
-        </StyledLabel>
-        <ErrorLabel>{error}</ErrorLabel>
-      </StyledFieldGroup>
-    );
-  }
-}
+const Checkbox = ({ label, disabled, error, checked, onChange, ...rest }) => (
+  <CheckboxFieldGroup>
+    <HiddenCheckbox
+      {...rest}
+      disabled={disabled}
+      type="checkbox"
+      checked={checked}
+      error={error}
+      onChange={onChange}
+    />
+    <CheckboxLabel checked={checked} disabled={disabled} error={error}>
+      {/*label*/}
+    </CheckboxLabel>
+    {error && <CheckboxError>{error}</CheckboxError>}
+  </CheckboxFieldGroup>
+);
 
 Checkbox.defaultProps = {
   label: 'Label',
   id: '',
-  checked: false,
+  checked: undefined,
   disabled: false,
   error: '',
   onChange: () => {},

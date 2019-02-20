@@ -1,28 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component  should match the snapshot 1`] = `
+exports[`<Checkbox /> should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__StyledFieldGroup-sc-1ca5whm-1 drAbRE"
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 fnvEtO"
 >
-  <label
-    checked={false}
-    className="Label-sc-1ny5bqy-0 Checkbox__StyledLabel-sc-1ca5whm-0 jehTzY"
+  <input
+    className="Checkbox__HiddenCheckbox-sc-1ca5whm-2 ieoJUh"
     disabled={false}
-  >
-    <input
-      checked={false}
-      className="Checkbox__StyledCheckbox-sc-1ca5whm-2 dYlkvI"
-      disabled={false}
-      id=""
-      onChange={[Function]}
-      type="checkbox"
-    />
-    Label
-  </label>
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__ErrorLabel-sc-1ca5whm-3 hUTdrB"
-  >
-    
-  </label>
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 bxUiuL"
+    disabled={false}
+  />
+  
 </div>
 `;
