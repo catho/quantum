@@ -16,8 +16,11 @@ const exampleTab = (
       <Example
         component={
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <label htmlFor="left" style={{ marginRight: 10 }}>
-              Left label
+            <label
+              htmlFor="left"
+              style={{ marginRight: 10, cursor: 'pointer' }}
+            >
+              Left label with checked true
             </label>
             <Toggle checked id="left" />
           </div>
@@ -32,8 +35,11 @@ const exampleTab = (
         component={
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <Toggle id="right" />
-            <label htmlFor="right" style={{ marginLeft: 10 }}>
-              Right label
+            <label
+              htmlFor="right"
+              style={{ marginLeft: 10, cursor: 'pointer' }}
+            >
+              Right label without checked prop
             </label>
           </div>
         }
@@ -47,5 +53,11 @@ const exampleTab = (
 );
 
 storiesOf('3. Forms', module).add('Toggle', () => (
-  <AutoExample component={Toggle} additionalTabs={exampleTab} />
+  <AutoExample
+    component={Toggle}
+    additionalTabs={exampleTab}
+    componentProps={{
+      id: 'example',
+    }}
+  />
 ));

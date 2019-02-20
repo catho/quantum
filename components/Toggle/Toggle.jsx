@@ -98,6 +98,7 @@ const Checkbox = styled.input.attrs({
   }
 `;
 
+/** If you pass `checked` prop to `<Toggle />` than it will be a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) */
 const Toggle = ({ checked, id, onChange, ...rest }) => (
   <Wrapper>
     <Checkbox
@@ -115,13 +116,12 @@ const Toggle = ({ checked, id, onChange, ...rest }) => (
 );
 
 Toggle.defaultProps = {
-  id: '',
   checked: null,
   onChange: () => {},
 };
 
 Toggle.propTypes = {
-  id: PropTypes.string,
+  id: PropTypes.string.isRequired,
   checked: PropTypes.bool,
   onChange: PropTypes.func,
 };
