@@ -5,6 +5,6 @@ import 'jest-styled-components';
 
 describe('<Toggle /> ', () => {
   it('should match the snapshot', () => {
-    expect(renderer.create(<Toggle />).toJSON()).toMatchSnapshot();
+    expect(renderer.create(<Toggle id="test" />).toJSON()).toMatchSnapshot();
   });
 });
