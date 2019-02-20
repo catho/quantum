@@ -27,6 +27,8 @@ const ErrorLabel = styled(Label)`
   bottom: -30px;
 `;
 
+ErrorLabel.displayName = 'ErrorLabel';
+
 class RadioGroup extends React.Component {
   static Radio = Radio;
 
@@ -82,9 +84,7 @@ class RadioGroup extends React.Component {
       ...newState,
     });
 
-    if (onChange) {
-      onChange(value);
-    }
+    onChange(value);
   };
 
   checkPrevious = ({ value }) => {
@@ -181,7 +181,7 @@ class RadioGroup extends React.Component {
  */
 RadioGroup.defaultProps = {
   selected: undefined,
-  error: '',
+  error: undefined,
   onChange: () => {},
 };
 

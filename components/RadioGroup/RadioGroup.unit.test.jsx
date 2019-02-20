@@ -5,8 +5,10 @@ import RadioGroup from './RadioGroup';
 import Radio from './Radio';
 
 describe('<RadioGroup />', () => {
+  const onChangeMock = jest.fn();
+
   const radioGroup = (
-    <RadioGroup name="group">
+    <RadioGroup name="group" onChange={onChangeMock}>
       <Radio value="Foo" label="Foo" />
       <Radio value="Bar" label="Bar" />
       <Radio value="Baz" label="Baz" />
@@ -20,7 +22,7 @@ describe('<RadioGroup />', () => {
   }
 
   let wrapper = mount(radioGroup);
-  const radios = getRadios(wrapper);
+  let radios = getRadios(wrapper);
 
   it('Should match the snapshot', () => {
     const tree = renderer.create(radioGroup).toJSON();
@@ -66,11 +68,22 @@ describe('<RadioGroup />', () => {
       expect(secondUpdatedRadio.prop('aria-checked')).toBe(true);
       expect(lastUpdatedRadio.prop('tabIndex')).toBe(-1);
     });
+
+    it('Should show error', () => {
+      expect(wrapper.find('ErrorLabel').exists()).toBe(false);
+
+      wrapper.setProps({
+        error: 'Error message',
+      });
+
+      expect(wrapper.find('ErrorLabel').exists()).toBe(true);
+    });
   });
 
   describe('events', () => {
     beforeEach(() => {
       wrapper = mount(radioGroup);
+      radios = getRadios(wrapper);
     });
 
     it('Should check a <RadioGroup.Radio />', () => {
@@ -193,6 +206,31 @@ describe('<RadioGroup />', () => {
       expect(lastUpdatedRadio.prop('aria-checked')).toBe(true);
     });
 
+    it('Should check the only one <RadioGroup.Radio /> available', () => {
+      wrapper.setProps({
+        children: [
+          <Radio value="Foo" label="Foo" />,
+          <Radio value="Bar" label="Bar" disabled />,
+          <Radio value="Baz" label="Baz" disabled />,
+        ],
+      });
+
+      wrapper.unmount();
+      wrapper.mount();
+
+      const firstRadio = radios.at(0);
+
+      expect(firstRadio.prop('aria-checked')).toBe(false);
+
+      wrapper.instance().checkNext(firstRadio.props());
+      wrapper.update();
+
+      const updatedRadios = getRadios(wrapper);
+      const firstUpdatedRadio = updatedRadios.at(0);
+
+      expect(firstUpdatedRadio.prop('aria-checked')).toBe(true);
+    });
+
     it('Should check the previous <RadioGroup.Radio />, skipping the disabled one', () => {
       wrapper.setProps({
         children: [
@@ -220,6 +258,13 @@ describe('<RadioGroup />', () => {
 
       expect(firstUpdatedRadio.prop('tabIndex')).toBe(0);
       expect(firstUpdatedRadio.prop('aria-checked')).toBe(true);
+    });
+
+    it('Should call onChange prop', () => {
+      const firstRadio = radios.at(0);
+      firstRadio.simulate('click');
+
+      expect(onChangeMock).toHaveBeenCalled();
     });
   });
 });

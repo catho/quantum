@@ -78,7 +78,7 @@ exports[`<RadioGroup /> Should match the snapshot 1`] = `
 
 <div
   className="c0"
-  onChange={[Function]}
+  onChange={[MockFunction]}
   role="radiogroup"
 >
   <div
@@ -120,6 +120,5 @@ exports[`<RadioGroup /> Should match the snapshot 1`] = `
   >
     Baz
   </div>
-  
 </div>
 `;
