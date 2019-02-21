@@ -117,7 +117,7 @@ const CheckboxError = styled(Label)`
   font-weight: 600;
   left: -3px;
   position: absolute;
-  top: 22px;
+  top: 28px;
 `;
 
 const Checkbox = ({ label, error, id, ...rest }) => (

@@ -24,7 +24,7 @@ describe('<Checkbox />', () => {
     expect(wrapper.prop('onChange')).toEqual(checkbox.prop('onChange'));
   });
 
-  it('should pass onChange prop to checkbox component', () => {
+  it('should pass checked prop to checkbox component', () => {
     const wrapper = mount(<Checkbox checked />);
     const checkbox = wrapper.find('HiddenInput');
     expect(checkbox.prop('checked')).toEqual(true);

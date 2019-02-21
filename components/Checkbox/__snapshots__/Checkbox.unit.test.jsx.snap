@@ -274,7 +274,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   font-weight: 600;
   left: -3px;
   position: absolute;
-  top: 22px;
+  top: 28px;
 }
 
 <div
