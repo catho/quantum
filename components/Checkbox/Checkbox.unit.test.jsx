@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import Checkbox from './Checkbox';
 import 'jest-styled-components';
 
@@ -25,13 +25,13 @@ describe('<Checkbox />', () => {
   });
 
   it('should pass checked prop to checkbox component', () => {
-    const wrapper = mount(<Checkbox checked />);
+    const wrapper = shallow(<Checkbox checked />);
     const checkbox = wrapper.find('HiddenInput');
     expect(checkbox.prop('checked')).toEqual(true);
   });
 
   it('should apply id prop', () => {
-    const wrapper = mount(<Checkbox onChange={mockFn} id="test" />);
+    const wrapper = shallow(<Checkbox onChange={mockFn} id="test" />);
 
     const label = wrapper.find('CheckboxLabel');
     const checkbox = wrapper.find('HiddenInput');
