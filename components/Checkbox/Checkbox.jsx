@@ -28,7 +28,8 @@ const CheckboxLabel = styled(Label)`
   :before {
     ${theme.mixins.transition()};
     background-color: ${Colors.WHITE};
-    border-color: ${Colors.BLACK['400']};
+    border-color: ${({ error }) =>
+      error ? Colors.ERROR['500'] : Colors.BLACK['400']};
     border-radius: 2px;
     border-style: solid;
     border-width: 2px;
