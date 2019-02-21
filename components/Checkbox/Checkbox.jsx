@@ -28,7 +28,8 @@ const CheckboxLabel = styled(Label)`
   :before {
     ${theme.mixins.transition()};
     background-color: ${Colors.WHITE};
-    border-color: ${Colors.BLACK['400']};
+    border-color: ${({ error }) =>
+      error ? Colors.ERROR['500'] : Colors.BLACK['400']};
     border-radius: 2px;
     border-style: solid;
     border-width: 2px;
@@ -86,13 +87,6 @@ const HiddenInput = styled.input`
       };
     `}
   }
-
-  ${({ error }) =>
-    error &&
-    `
-    border-color: ${Colors.ERROR['500']};
-    background-color: ${Colors.WHITE};
-  `}
 
   &[disabled] + ${CheckboxLabel} {
     color: ${Colors.BLACK['400']};

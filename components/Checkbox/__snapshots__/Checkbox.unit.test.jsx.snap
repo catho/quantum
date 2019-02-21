@@ -152,7 +152,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border-color: #999999;
+  border-color: #ff2d4d;
   border-radius: 2px;
   border-style: solid;
   border-width: 2px;
@@ -216,8 +216,6 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   position: absolute;
   width: 18px;
   width: 100%;
-  border-color: #ff2d4d;
-  background-color: #FFFFFF;
 }
 
 .c1:checked + .c2:before {
