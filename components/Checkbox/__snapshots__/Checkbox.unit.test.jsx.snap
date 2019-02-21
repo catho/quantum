@@ -1,18 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> should match the snapshot 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.c3 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: inherit;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-left: 24px;
+  min-height: 24px;
+  left: 0;
+  top: 0;
+  color: #4c4c4c;
+}
+
+.c3:before {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border-color: #999999;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  content: ' ';
+  display: inline-block;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+}
+
+.c1 {
+  cursor: pointer;
+  height: 18px;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: initial;
+  position: absolute;
+  width: 18px;
+  width: 100%;
+}
+
+.c1:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c1:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c1:hover + .c2:before {
+  border: 2px solid #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] + .c2 {
+  color: #999999;
+}
+
+.c1[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c1[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+  className="c0"
 >
   <input
-    className="Checkbox__HiddenInput-sc-1ca5whm-2 iiVQqx"
+    className="c1"
     disabled={false}
     id=""
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    className="c2 c3"
     htmlFor=""
   >
     Label
@@ -22,24 +120,181 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 `;
 
 exports[`<Checkbox /> should match the snapshot 2`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.c3 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: inherit;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-left: 24px;
+  min-height: 24px;
+  left: 0;
+  top: 0;
+  color: #4c4c4c;
+}
+
+.c3:before {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border-color: #999999;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  content: ' ';
+  display: inline-block;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+}
+
+.c5:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c5:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c5:hover + .c2:before {
+  border: 2px solid #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5[disabled] + .c2 {
+  color: #999999;
+}
+
+.c5[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c5[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
+.c1 {
+  cursor: pointer;
+  height: 18px;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: initial;
+  position: absolute;
+  width: 18px;
+  width: 100%;
+  border-color: #ff2d4d;
+  background-color: #FFFFFF;
+}
+
+.c1:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c1:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c1:hover + .c2:before {
+  border: 2px solid #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c1[disabled] + .c2 {
+  color: #999999;
+}
+
+.c1[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c1[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ac001a;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  left: -3px;
+  position: absolute;
+  top: 22px;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+  className="c0"
 >
   <input
-    className="Checkbox__HiddenInput-sc-1ca5whm-2 jxMvrS"
+    className="c1"
     disabled={false}
     id=""
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    className="c2 c3"
     htmlFor=""
   >
     Label
   </label>
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxError-sc-1ca5whm-3 kxoiII"
+    className="c4"
   >
     error message
   </label>
@@ -47,19 +302,157 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 `;
 
 exports[`<Checkbox /> should match the snapshot 3`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.c3 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: inherit;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-left: 24px;
+  min-height: 24px;
+  left: 0;
+  top: 0;
+  color: #4c4c4c;
+}
+
+.c3:before {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border-color: #999999;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  content: ' ';
+  display: inline-block;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+}
+
+.c1 {
+  cursor: pointer;
+  height: 18px;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: initial;
+  position: absolute;
+  width: 18px;
+  width: 100%;
+}
+
+.c1:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c1:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c1:hover + .c2:before {
+  border: 2px solid #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] + .c2 {
+  color: #999999;
+}
+
+.c1[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c1[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
+.c4:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c4:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c4:hover + .c2:before {
+  border: 2px solid #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c4[disabled] + .c2 {
+  color: #999999;
+}
+
+.c4[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c4[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+  className="c0"
 >
   <input
     checked={true}
-    className="Checkbox__HiddenInput-sc-1ca5whm-2 iiVQqx"
+    className="c1"
     disabled={false}
     id=""
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    className="c2 c3"
     htmlFor=""
   >
     Label
@@ -69,18 +462,191 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 `;
 
 exports[`<Checkbox /> should match the snapshot 4`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.c3 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: inherit;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-left: 24px;
+  min-height: 24px;
+  left: 0;
+  top: 0;
+  color: #4c4c4c;
+}
+
+.c3:before {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border-color: #999999;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  content: ' ';
+  display: inline-block;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+}
+
+.c4:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c4:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c4:hover + .c2:before {
+  border: 2px solid #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c4[disabled] + .c2 {
+  color: #999999;
+}
+
+.c4[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c4[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
+.c5:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c5:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c5:hover + .c2:before {
+  border: 2px solid #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c5[disabled] + .c2 {
+  color: #999999;
+}
+
+.c5[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c5[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
+.c1 {
+  cursor: not-allowed;
+  height: 18px;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: initial;
+  position: absolute;
+  width: 18px;
+  width: 100%;
+}
+
+.c1:checked + .c2:before {
+  background-color: #1355d0;
+  border-color: #1355d0;
+}
+
+.c1:checked + .c2:after {
+  border-color: #FFFFFF;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 0 2.5px 2.5px 0;
+  content: ' ';
+  display: inline-block;
+  height: 11px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+
+.c1[disabled] + .c2 {
+  color: #999999;
+}
+
+.c1[disabled] + .c2:before {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c1[disabled]:checked + .c2:before {
+  background-color: #999999;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+  className="c0"
 >
   <input
-    className="Checkbox__HiddenInput-sc-1ca5whm-2 ZmBWl"
+    className="c1"
     disabled={true}
     id=""
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    className="c2 c3"
     htmlFor=""
   >
     Label

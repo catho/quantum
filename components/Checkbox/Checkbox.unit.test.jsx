@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import Checkbox from './Checkbox';
+import 'jest-styled-components';
 
 describe('<Checkbox />', () => {
   const mockFn = jest.fn();

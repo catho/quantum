@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import SocialButtons from './SocialButtons';
 import theme from '../shared/theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
@@ -20,30 +19,26 @@ const fontSize = ({ size }) => {
 
 const iconSize = ({ size }) => {
   const sizes = {
+    xsmall: '16px',
+    small: '16px',
     normal: '24px',
+    large: '24px',
+    xlarge: '24px',
   };
 
   return `font-size: ${sizes[size] || sizes.normal};`;
-};
-
-const iconMargin = ({ size }) => {
-  const margins = {
-    normal: '-5px 5px -7px -5px',
-  };
-
-  return `margin: ${margins[size] || margins.normal};`;
 };
 
 const padding = ({ size }) => {
   const paddings = {
     xsmall: '0 12px',
     small: '0 12px',
-    medium: '0 12px',
+    medium: '0 16px',
     large: '0 16px',
     xlarge: '0 16px',
   };
 
-  return `padding: ${paddings[size] || paddings.normal};`;
+  return `padding: ${paddings[size] || paddings.medium};`;
 };
 
 const height = ({ size }) => {
@@ -55,18 +50,20 @@ const height = ({ size }) => {
     xlarge: '56px',
   };
 
-  return `height: ${heights[size] || heights.normal};`;
+  return `height: ${heights[size] || heights.medium};`;
 };
 
 const ButtonIcon = styled(Icon)`
-  ${iconMargin};
+  margin-right: 5px;
+  pointer-events: none;
 `;
 
 const StyledButton = styled.button`
-  border-radius: ${theme.sizes.radius};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
-  text-align: center;
-  text-decoration: ${props => (props.link ? 'underline' : 'none')};
+  letter-spacing: 0.2px;
 
   ${fontSize}
   ${padding}
@@ -77,41 +74,64 @@ const StyledButton = styled.button`
     ${iconSize}
   }
 
-  ${props =>
-    props.full &&
-    `
-    width: 100%;
-  `}
-
+  ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
+  ${props => props.full && `width: 100%;`}
   ${props =>
     props.center &&
     `
-    display: block;
     margin-left: auto;
     margin-right: auto;
   `}
 
-  ${props => `
-    cursor: ${props.disabled ? 'not-allowed' : 'pointer'};
-  `}
-
   ${props => {
-    const { unselected, selected, disabled, shadow } = skins(props);
+    const {
+      unselected,
+      selected,
+      disabled,
+      focused,
+      hovered,
+      decoration,
+      borderRadius,
+    } = skins(props);
 
-    return `
+    return `${`
       background-color: ${
         props.disabled ? disabled.background : unselected.background
       };
-      border: 1px solid ${props.disabled ? disabled.border : unselected.border};
-      color: ${props.disabled ? disabled.color : unselected.color};
-      font-weight: ${
-        props.disabled ? disabled.fontWeight : unselected.fontWeight
+      border: 1.5px solid ${
+        props.disabled ? disabled.border : unselected.border
       };
 
-      ${shadow ? theme.mixins.shadow() : undefined};
+      box-shadow: ${props.disabled ? disabled.shadow : unselected.shadow};
+
+      color: ${props.disabled ? disabled.color : unselected.color};
+
+      ${decoration ? `text-decoration: ${decoration};` : ''}
+      ${borderRadius ? `border-radius: ${borderRadius};` : ''}
+    `}
+
+      ${
+        !props.disabled
+          ? `
+        &:hover {
+          box-shadow: ${hovered.shadow};
+          background-color: ${hovered.background};
+          border-color: ${hovered.border};
+          color: ${hovered.color};
+        }
+      `
+          : ''
+      }
+
+      &:focus {
+        box-shadow: ${focused.shadow};
+        background-color: ${focused.background};
+        border-color: ${focused.border};
+        color: ${focused.color};
+      }
 
       &:active {
-        ${shadow && theme.mixins.shadow(2)};
+        box-shadow: ${selected.shadow};
         background-color: ${selected.background};
         border-color: ${selected.border};
         color: ${selected.color};
@@ -120,22 +140,12 @@ const StyledButton = styled.button`
   }}
 `;
 
-class Button extends React.Component {
-  static Facebook = SocialButtons.Facebook;
-
-  static Google = SocialButtons.Google;
-
-  render() {
-    const { children, icon, size, ...rest } = this.props;
-
-    return (
-      <StyledButton {...rest} size={size}>
-        {icon && <ButtonIcon size={size} name={icon} />}
-        {children}
-      </StyledButton>
-    );
-  }
-}
+const Button = ({ children, icon, size, ...rest }) => (
+  <StyledButton {...rest} size={size}>
+    {icon && <ButtonIcon size={size} name={icon} />}
+    {children}
+  </StyledButton>
+);
 
 Button.defaultProps = {
   center: false,
@@ -157,7 +167,7 @@ Button.propTypes = {
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
-  skin: PropTypes.oneOf(['primary', 'secondary', 'action']),
+  skin: PropTypes.oneOf(['primary', 'secondary', 'action', 'link']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
   children: PropTypes.node,
   onClick: PropTypes.func,
