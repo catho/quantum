@@ -58,8 +58,10 @@ const HiddenInput = styled.input.attrs({
   width: 100%;
 
   :checked + ${CheckboxLabel}:before {
-    background-color: ${Colors.BLUE['500']};
-    border-color: ${Colors.BLUE['500']};
+    background-color: ${({ error }) =>
+      error ? Colors.ERROR['500'] : Colors.BLUE['500']};
+    border-color: ${({ error }) =>
+      error ? Colors.ERROR['500'] : Colors.BLUE['500']};
   }
 
   :checked + ${CheckboxLabel}:after {

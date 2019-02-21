@@ -215,8 +215,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c1:checked + .c2:before {
-  background-color: #1355d0;
-  border-color: #1355d0;
+  background-color: #ff2d4d;
+  border-color: #ff2d4d;
 }
 
 .c1:checked + .c2:after {
@@ -397,8 +397,8 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c4:checked + .c2:before {
-  background-color: #1355d0;
-  border-color: #1355d0;
+  background-color: #ff2d4d;
+  border-color: #ff2d4d;
 }
 
 .c4:checked + .c2:after {
@@ -547,8 +547,8 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c5:checked + .c2:before {
-  background-color: #1355d0;
-  border-color: #1355d0;
+  background-color: #ff2d4d;
+  border-color: #ff2d4d;
 }
 
 .c5:checked + .c2:after {
