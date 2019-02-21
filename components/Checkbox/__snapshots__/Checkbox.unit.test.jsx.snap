@@ -19,14 +19,14 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   user-select: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #4c4c4c;
   cursor: inherit;
   font-size: 16px;
-  margin-bottom: 0;
-  padding-left: 24px;
-  min-height: 24px;
   left: 0;
+  margin-bottom: 0;
+  min-height: 24px;
+  padding-left: 24px;
   top: 0;
-  color: #4c4c4c;
 }
 
 .c3:before {
@@ -138,14 +138,14 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   user-select: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #4c4c4c;
   cursor: inherit;
   font-size: 16px;
-  margin-bottom: 0;
-  padding-left: 24px;
-  min-height: 24px;
   left: 0;
+  margin-bottom: 0;
+  min-height: 24px;
+  padding-left: 24px;
   top: 0;
-  color: #4c4c4c;
 }
 
 .c3:before {
@@ -216,8 +216,6 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   position: absolute;
   width: 18px;
   width: 100%;
-  border-color: #ff2d4d;
-  background-color: #FFFFFF;
 }
 
 .c1:checked + .c2:before {
@@ -245,6 +243,10 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 .c1:hover + .c2:before {
   border: 2px solid #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c1 + .c2:before {
+  border-color: #ff2d4d;
 }
 
 .c1[disabled] + .c2 {
@@ -320,14 +322,14 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   user-select: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #4c4c4c;
   cursor: inherit;
   font-size: 16px;
-  margin-bottom: 0;
-  padding-left: 24px;
-  min-height: 24px;
   left: 0;
+  margin-bottom: 0;
+  min-height: 24px;
+  padding-left: 24px;
   top: 0;
-  color: #4c4c4c;
 }
 
 .c3:before {
@@ -427,6 +429,10 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
+.c4 + .c2:before {
+  border-color: #ff2d4d;
+}
+
 .c4[disabled] + .c2 {
   color: #999999;
 }
@@ -480,14 +486,14 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   user-select: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #4c4c4c;
   cursor: inherit;
   font-size: 16px;
-  margin-bottom: 0;
-  padding-left: 24px;
-  min-height: 24px;
   left: 0;
+  margin-bottom: 0;
+  min-height: 24px;
+  padding-left: 24px;
   top: 0;
-  color: #4c4c4c;
 }
 
 .c3:before {
@@ -573,6 +579,10 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 .c5:hover + .c2:before {
   border: 2px solid #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c5 + .c2:before {
+  border-color: #ff2d4d;
 }
 
 .c5[disabled] + .c2 {
