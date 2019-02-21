@@ -1,28 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component  should match the snapshot 1`] = `
+exports[`<Checkbox /> should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__StyledFieldGroup-sc-1ca5whm-1 drAbRE"
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
 >
-  <label
-    checked={false}
-    className="Label-sc-1ny5bqy-0 Checkbox__StyledLabel-sc-1ca5whm-0 jehTzY"
+  <input
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 iiVQqx"
     disabled={false}
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
   >
-    <input
-      checked={false}
-      className="Checkbox__StyledCheckbox-sc-1ca5whm-2 dYlkvI"
-      disabled={false}
-      id=""
-      onChange={[Function]}
-      type="checkbox"
-    />
+    Label
+  </label>
+  
+</div>
+`;
+
+exports[`<Checkbox /> should match the snapshot 2`] = `
+<div
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+>
+  <input
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 jxMvrS"
+    disabled={false}
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
+  >
     Label
   </label>
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__ErrorLabel-sc-1ca5whm-3 hUTdrB"
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxError-sc-1ca5whm-3 kxoiII"
   >
-    
+    error message
   </label>
+</div>
+`;
+
+exports[`<Checkbox /> should match the snapshot 3`] = `
+<div
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+>
+  <input
+    checked={true}
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 iiVQqx"
+    disabled={false}
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
+  >
+    Label
+  </label>
+  
+</div>
+`;
+
+exports[`<Checkbox /> should match the snapshot 4`] = `
+<div
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+>
+  <input
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 ZmBWl"
+    disabled={true}
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
+  >
+    Label
+  </label>
+  
 </div>
 `;

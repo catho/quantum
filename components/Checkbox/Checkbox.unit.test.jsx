@@ -1,42 +1,42 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Checkbox from './Checkbox';
 
-describe('Input component ', () => {
+describe('<Checkbox />', () => {
+  const mockFn = jest.fn();
+
+  beforeEach(mockFn.mockClear);
+
   it('should match the snapshot', () => {
     expect(renderer.create(<Checkbox />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Checkbox error="error message" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(renderer.create(<Checkbox checked />).toJSON()).toMatchSnapshot();
+    expect(renderer.create(<Checkbox disabled />).toJSON()).toMatchSnapshot();
   });
 
-  describe('with an "onChange" callback set', () => {
-    const mockFn = jest.fn();
-    const mockEvent = { foo: 'bar' };
+  it('should pass onChange prop to checkbox component', () => {
+    const wrapper = mount(<Checkbox onChange={mockFn} />);
+    const checkbox = wrapper.find('HiddenInput');
+    expect(wrapper.prop('onChange')).toEqual(checkbox.prop('onChange'));
+  });
 
-    beforeEach(mockFn.mockClear);
+  it('should pass onChange prop to checkbox component', () => {
+    const wrapper = mount(<Checkbox checked />);
+    const checkbox = wrapper.find('HiddenInput');
+    expect(checkbox.prop('checked')).toEqual(true);
+  });
 
-    it('should call the callback and toggle checked state', () => {
-      const wrapper = shallow(<Checkbox onChange={mockFn} id="checkbox" />);
-      const checkbox = wrapper.find('#checkbox');
-      const checked = checkbox.prop('checked');
+  it('should apply id prop', () => {
+    const wrapper = mount(<Checkbox onChange={mockFn} id="test" />);
 
-      checkbox.simulate('change', mockEvent);
+    const label = wrapper.find('CheckboxLabel');
+    const checkbox = wrapper.find('HiddenInput');
+    const htmlFor = label.prop('htmlFor');
 
-      expect(wrapper.state('checked')).toEqual(!checked);
-      expect(mockFn).toHaveBeenCalledTimes(1);
-      expect(mockFn).toBeCalledWith(mockEvent, { checked: !checked });
-    });
-
-    it('should not call the callback when disabled prop is set', () => {
-      const wrapper = shallow(
-        <Checkbox onChange={mockFn} id="checkbox" disabled />,
-      );
-      const checkbox = wrapper.find('#checkbox');
-      const checked = checkbox.prop('checked');
-
-      checkbox.simulate('change', mockEvent);
-
-      expect(wrapper.state('checked')).toEqual(checked);
-      expect(mockFn).not.toHaveBeenCalled();
-    });
+    expect(htmlFor).not.toBeUndefined();
+    expect(htmlFor).toEqual(checkbox.prop('id'));
   });
 });
