@@ -117,11 +117,12 @@ const Toggle = ({ checked, id, onChange, ...rest }) => (
 
 Toggle.defaultProps = {
   checked: null,
+  id: null,
   onChange: () => {},
 };
 
 Toggle.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   checked: PropTypes.bool,
   onChange: PropTypes.func,
 };
