@@ -41,26 +41,26 @@ describe('<Tag />', () => {
     it('large', () => testSnapshot({ size: 'large' }));
   });
 
-  describe('Closable', () => {
+  describe('onClose Prop', () => {
     it('is rendering well', () => {
-      testSnapshot({ closable: true });
-      testSnapshot({ closable: true, skin: 'stroked' });
-      testSnapshot({ closable: true, skin: 'inverted' });
-      testSnapshot({ closable: true, skin: 'blue' });
-      testSnapshot({ closable: true, skin: 'success' });
-      testSnapshot({ closable: true, skin: 'warning' });
-      testSnapshot({ closable: true, skin: 'error' });
-      testSnapshot({ closable: true, skin: 'blue-text' });
+      testSnapshot({ onClose: () => {} });
+      testSnapshot({ onClose: () => {}, skin: 'stroked' });
+      testSnapshot({ onClose: () => {}, skin: 'inverted' });
+      testSnapshot({ onClose: () => {}, skin: 'blue' });
+      testSnapshot({ onClose: () => {}, skin: 'success' });
+      testSnapshot({ onClose: () => {}, skin: 'warning' });
+      testSnapshot({ onClose: () => {}, skin: 'error' });
+      testSnapshot({ onClose: () => {}, skin: 'blue-text' });
     });
 
-    it('is calling "onClose" prop when close button is clicked', () => {
-      const onCloseCb = jest.fn();
-      const tag = shallow(<Tag closable onClose={onCloseCb} />);
+    it('is called when close button is clicked', () => {
+      const onCloseMock = jest.fn();
+      const tag = shallow(<Tag closable onClose={onCloseMock} />);
       const button = tag.find('CloseButton');
 
       button.simulate('click');
 
-      expect(onCloseCb).toHaveBeenCalled();
+      expect(onCloseMock).toHaveBeenCalled();
     });
   });
 });

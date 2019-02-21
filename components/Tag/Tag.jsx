@@ -68,8 +68,8 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-  ${({ closable }) =>
-    closable &&
+  ${({ onClose }) =>
+    onClose &&
     `
     display: flex;
     align-items: center;
@@ -102,11 +102,11 @@ const CloseButton = styled.button`
 
 CloseButton.displayName = 'CloseButton';
 
-const Tag = ({ children, text, closable, onClose, ...rest }) => (
+const Tag = ({ children, text, onClose, ...rest }) => (
   <Wrapper {...rest}>
-    <Content closable={closable}>
+    <Content onClose={onClose}>
       {children || text}
-      {closable && (
+      {onClose && (
         <CloseButton {...rest} onClick={onClose}>
           <CloseIcon name="close" />
         </CloseButton>
@@ -118,7 +118,6 @@ const Tag = ({ children, text, closable, onClose, ...rest }) => (
 Tag.propTypes = {
   bold: PropTypes.bool,
   children: PropTypes.string,
-  closable: PropTypes.bool,
   /** A callback that is called when close button is clicked */
   onClose: PropTypes.func,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
@@ -138,8 +137,7 @@ Tag.propTypes = {
 Tag.defaultProps = {
   bold: false,
   children: '',
-  closable: false,
-  onClose: () => {},
+  onClose: undefined,
   size: 'medium',
   skin: 'default',
   text: 'Tag text',

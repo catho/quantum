@@ -38,14 +38,14 @@ const skinsExample = (
   </>
 );
 
-const closableCodes = `<Tag closable>Default</Tag>
-<Tag closable skin="stroked">Stroked</Tag>
-<Tag closable skin="inverted">Inverted</Tag>
-<Tag closable skin="blue">Blue</Tag>
-<Tag closable skin="success">Success</Tag>
-<Tag closable skin="warning">Warning</Tag>
-<Tag closable skin="error">Error</Tag>
-<Tag closable skin="blue-text">Blue Text</Tag>`;
+const closableCodes = `<Tag onClose={() => {}}>Default</Tag>
+<Tag onClose={() => {}} skin="stroked">Stroked</Tag>
+<Tag onClose={() => {}} skin="inverted">Inverted</Tag>
+<Tag onClose={() => {}} skin="blue">Blue</Tag>
+<Tag onClose={() => {}} skin="success">Success</Tag>
+<Tag onClose={() => {}} skin="warning">Warning</Tag>
+<Tag onClose={() => {}} skin="error">Error</Tag>
+<Tag onClose={() => {}} skin="blue-text">Blue Text</Tag>`;
 
 const closableExample = (
   <>
@@ -53,26 +53,26 @@ const closableExample = (
     <Example
       component={
         <>
-          <Tag closable>Default</Tag>
-          <Tag closable skin="stroked">
+          <Tag onClose={() => {}}>Default</Tag>
+          <Tag onClose={() => {}} skin="stroked">
             Stroked
           </Tag>
-          <Tag closable skin="inverted">
+          <Tag onClose={() => {}} skin="inverted">
             Inverted
           </Tag>
-          <Tag closable skin="blue">
+          <Tag onClose={() => {}} skin="blue">
             Blue
           </Tag>
-          <Tag closable skin="success">
+          <Tag onClose={() => {}} skin="success">
             Success
           </Tag>
-          <Tag closable skin="warning">
+          <Tag onClose={() => {}} skin="warning">
             Warning
           </Tag>
-          <Tag closable skin="error">
+          <Tag onClose={() => {}} skin="error">
             Error
           </Tag>
-          <Tag closable skin="blue-text">
+          <Tag onClose={() => {}} skin="blue-text">
             Blue Text
           </Tag>
         </>
