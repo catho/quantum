@@ -10,9 +10,6 @@ const checkboxSize = '18px';
 const containerSize = '24px';
 
 const CheckboxFieldGroup = styled(FieldGroup)`
-  height: ${containerSize};
-
-  align-items: center;
   pointer-events: none;
 `;
 
@@ -20,10 +17,7 @@ const CheckboxLabel = styled(Label)`
   ${theme.mixins.transition()};
 
   cursor: inherit;
-  display: flex;
-  align-items: center;
   font-size: 16px;
-  position: absolute;
   margin-bottom: 0;
   padding-left: ${containerSize};
   min-height: ${containerSize};
@@ -44,6 +38,7 @@ const CheckboxLabel = styled(Label)`
     height: ${checkboxSize};
     left: 0;
     position: absolute;
+    top: 3px;
     width: ${checkboxSize};
   }
 `;
@@ -57,6 +52,7 @@ const HiddenInput = styled.input`
   margin: 0;
   opacity: 0;
   pointer-events: initial;
+  position: absolute;
   width: ${checkboxSize};
   width: 100%;
 
@@ -124,10 +120,12 @@ const CheckboxError = styled(Label)`
   top: 22px;
 `;
 
-const Checkbox = ({ label, error, ...rest }) => (
+const Checkbox = ({ label, error, id, ...rest }) => (
   <CheckboxFieldGroup>
-    <HiddenInput type="checkbox" error={error} {...rest} />
-    <CheckboxLabel error={error}>{label}</CheckboxLabel>
+    <HiddenInput type="checkbox" id={id} error={error} {...rest} />
+    <CheckboxLabel error={error} htmlFor={id}>
+      {label}
+    </CheckboxLabel>
     {error && <CheckboxError>{error}</CheckboxError>}
   </CheckboxFieldGroup>
 );

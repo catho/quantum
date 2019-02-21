@@ -2,17 +2,86 @@
 
 exports[`<Checkbox /> should match the snapshot 1`] = `
 <div
-  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 fnvEtO"
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
 >
   <input
-    className="Checkbox__HiddenCheckbox-sc-1ca5whm-2 etGEbn"
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 iiVQqx"
     disabled={false}
     id=""
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 dTIqPb"
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
+  >
+    Label
+  </label>
+  
+</div>
+`;
+
+exports[`<Checkbox /> should match the snapshot 2`] = `
+<div
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+>
+  <input
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 jxMvrS"
+    disabled={false}
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
+  >
+    Label
+  </label>
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxError-sc-1ca5whm-3 kxoiII"
+  >
+    error message
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should match the snapshot 3`] = `
+<div
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+>
+  <input
+    checked={true}
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 iiVQqx"
+    disabled={false}
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
+  >
+    Label
+  </label>
+  
+</div>
+`;
+
+exports[`<Checkbox /> should match the snapshot 4`] = `
+<div
+  className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 deqTyt"
+>
+  <input
+    className="Checkbox__HiddenInput-sc-1ca5whm-2 ZmBWl"
+    disabled={true}
+    id=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 gGoKKz"
+    htmlFor=""
   >
     Label
   </label>
