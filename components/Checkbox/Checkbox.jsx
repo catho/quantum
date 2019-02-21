@@ -14,8 +14,6 @@ const CheckboxFieldGroup = styled(FieldGroup)`
 `;
 
 const CheckboxLabel = styled(Label)`
-  ${theme.mixins.transition()};
-
   color: ${Colors.BLACK['700']};
   cursor: inherit;
   font-size: 16px;
@@ -46,7 +44,9 @@ const CheckboxLabel = styled(Label)`
 
 CheckboxLabel.displayName = 'CheckboxLabel';
 
-const HiddenInput = styled.input`
+const HiddenInput = styled.input.attrs({
+  type: 'checkbox',
+})`
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   height: ${checkboxSize};
   height: 100%;
@@ -124,7 +124,7 @@ const CheckboxError = styled(Label)`
 
 const Checkbox = ({ label, error, id, ...rest }) => (
   <CheckboxFieldGroup>
-    <HiddenInput type="checkbox" id={id} error={error} {...rest} />
+    <HiddenInput id={id} error={error} {...rest} />
     <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     {error && <CheckboxError>{error}</CheckboxError>}
   </CheckboxFieldGroup>
