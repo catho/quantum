@@ -5,16 +5,17 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   className="FieldGroup-sc-18uoi37-0 Checkbox__CheckboxFieldGroup-sc-1ca5whm-0 fnvEtO"
 >
   <input
-    className="Checkbox__HiddenCheckbox-sc-1ca5whm-2 ieoJUh"
+    className="Checkbox__HiddenCheckbox-sc-1ca5whm-2 etGEbn"
     disabled={false}
     id=""
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 bxUiuL"
-    disabled={false}
-  />
+    className="Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-1 dTIqPb"
+  >
+    Label
+  </label>
   
 </div>
 `;

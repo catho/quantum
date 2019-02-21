@@ -15,7 +15,7 @@ describe('<Checkbox />', () => {
   describe('onChange prop', () => {
     it('should call the callback', () => {
       const wrapper = shallow(<Checkbox onChange={mockFn} />);
-      const checkbox = wrapper.find('HiddenCheckbox');
+      const checkbox = wrapper.find('HiddenInput');
       const mockEvent = { target: { checked: true } };
 
       checkbox.simulate('change', mockEvent);
@@ -26,7 +26,7 @@ describe('<Checkbox />', () => {
 
     it('should call the callback when checked is set', () => {
       const wrapper = shallow(<Checkbox onChange={mockFn} checked />);
-      const checkbox = wrapper.find('HiddenCheckbox');
+      const checkbox = wrapper.find('HiddenInput');
       const mockEvent = { target: { checked: false } };
 
       checkbox.simulate('change', mockEvent);
@@ -37,7 +37,7 @@ describe('<Checkbox />', () => {
 
     it('should not call the callback when disabled prop is set', () => {
       const wrapper = shallow(<Checkbox onChange={mockFn} disabled />);
-      const checkbox = wrapper.find('HiddenCheckbox');
+      const checkbox = wrapper.find('HiddenInput');
       const mockEvent = { target: { checked: true } };
 
       checkbox.simulate('change', mockEvent);
@@ -49,7 +49,7 @@ describe('<Checkbox />', () => {
   describe('checked prop', () => {
     it('should not change checkbox state, when checked prop is set', () => {
       const mounted = mount(<Checkbox checked />);
-      const checkbox = mounted.find('HiddenCheckbox');
+      const checkbox = mounted.find('HiddenInput');
       const checkboxNode = checkbox.getDOMNode();
 
       expect(checkboxNode.checked).toEqual(true);
@@ -61,7 +61,7 @@ describe('<Checkbox />', () => {
 
     it('should change checkbox state, when checked prop is not set', () => {
       const wrapper = mount(<Checkbox />);
-      const checkbox = wrapper.find('HiddenCheckbox');
+      const checkbox = wrapper.find('HiddenInput');
       const checkboxNode = checkbox.getDOMNode();
 
       expect(checkboxNode.checked).toEqual(false);
@@ -77,7 +77,7 @@ describe('<Checkbox />', () => {
       const wrapper = shallow(<Checkbox onChange={mockFn} />);
 
       const label = wrapper.find('CheckboxLabel');
-      const checkbox = wrapper.find('HiddenCheckbox');
+      const checkbox = wrapper.find('HiddenInput');
       const htmlFor = label.prop('htmlFor');
 
       expect(htmlFor).not.toBeUndefined();
@@ -88,7 +88,7 @@ describe('<Checkbox />', () => {
       const wrapper = shallow(<Checkbox onChange={mockFn} id="test" />);
 
       const label = wrapper.find('CheckboxLabel');
-      const checkbox = wrapper.find('HiddenCheckbox');
+      const checkbox = wrapper.find('HiddenInput');
       const htmlFor = label.prop('htmlFor');
 
       expect(htmlFor).not.toBeUndefined();
