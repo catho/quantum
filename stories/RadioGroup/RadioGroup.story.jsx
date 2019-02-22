@@ -21,13 +21,13 @@ const StyledDiv = styled.div`
   margin-bottom: 40px;
 `;
 
-const RadioBlock = (
-  <RadioGroup name="groceries">
-    <RadioGroup.Radio value="Tomato sauce" label="Tomato sauce" />
-    <RadioGroup.Radio value="Mustard" label="Mustard" />
-    <RadioGroup.Radio value="Barbecue sauce" label="Barbecue sauce" />
-  </RadioGroup>
-);
+const options = [
+  { value: 'Tomato sauce', label: 'Tomato sauce' },
+  { value: 'Mustard', label: 'Mustard' },
+  { value: 'Barbecue sauce', label: 'Barbecue sauce' },
+];
+
+const RadioBlock = <RadioGroup name="groceries" options={options} />;
 
 const RadioError = (
   <RadioGroup name="groceries" error="Esta opção é obrigatória">

@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 
-const StyledRadio = styled.div.attrs({
-  role: 'radio',
-  tabIndex: -1,
-  'aria-checked': 'false',
+const StyledRadio = styled.input.attrs({
+  type: 'radio',
 })`
   cursor: pointer;
   display: inline-block;
@@ -81,114 +79,29 @@ const StyledRadio = styled.div.attrs({
 `;
 
 class Radio extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.KEYS = Object.freeze({
-      SPACE: 32,
-      LEFT: 37,
-      UP: 38,
-      RIGHT: 39,
-      DOWN: 40,
-    });
-
-    this.radioRef = React.createRef();
-  }
-
-  shouldComponentUpdate(nextProps) {
-    if (nextProps['aria-checked']) {
-      this.radioRef.focus();
-    }
-
-    return true;
-  }
-
-  onClick = () => {
-    const { check, disabled } = this.props;
-
-    if (disabled) return;
-
-    check(this.props);
-  };
-
-  onKeyDown = event => {
-    const { checkPrevious, checkNext, check } = this.props;
-    let changed;
-
-    switch (event.keyCode) {
-      case this.KEYS.SPACE:
-        check(this.props);
-        changed = true;
-        break;
-
-      case this.KEYS.UP:
-        checkPrevious(this.props);
-        changed = true;
-        break;
-
-      case this.KEYS.DOWN:
-        checkNext(this.props);
-        changed = true;
-        break;
-
-      case this.KEYS.LEFT:
-        checkPrevious(this.props);
-        changed = true;
-        break;
-
-      case this.KEYS.RIGHT:
-        checkNext(this.props);
-        changed = true;
-        break;
-
-      default:
-        break;
-    }
-
-    if (changed) {
-      event.stopPropagation();
-      event.preventDefault();
-    }
-  };
+  static create = radio => <Radio label={radio} />;
 
   render() {
     const { label, ...rest } = this.props;
 
-    return (
-      <StyledRadio
-        {...rest}
-        onClick={this.onClick}
-        onKeyDown={this.onKeyDown}
-        ref={radio => {
-          this.radioRef = radio;
-        }}
-      >
-        {label}
-      </StyledRadio>
-    );
+    return <StyledRadio {...rest} />;
   }
 }
 
 Radio.displayName = 'RadioGroup.Radio';
 
 Radio.defaultProps = {
-  check: () => {},
-  checkNext: () => {},
-  checkPrevious: () => {},
   disabled: false,
   error: false,
-  'aria-checked': false,
+  onChange: () => {},
 };
 
 Radio.propTypes = {
-  'aria-checked': PropTypes.bool,
-  check: PropTypes.func,
-  checkNext: PropTypes.func,
-  checkPrevious: PropTypes.func,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
 };
 
 export default Radio;
