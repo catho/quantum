@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../shared/theme';
 
-import { Label, FieldGroup } from '../shared';
+import { Label, FieldGroup, ErrorMessage } from '../shared';
 import Colors from '../Colors';
 
 const checkboxSize = '18px';
@@ -114,11 +114,7 @@ const HiddenInput = styled.input.attrs({
 
 HiddenInput.displayName = 'HiddenInput';
 
-const CheckboxError = styled(Label)`
-  color: ${Colors.ERROR['900']};
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
+const CheckboxErrorMessage = styled(ErrorMessage)`
   left: -3px;
   position: absolute;
   top: 28px;
@@ -128,7 +124,7 @@ const Checkbox = ({ label, error, id, ...rest }) => (
   <CheckboxFieldGroup>
     <HiddenInput id={id} error={error} {...rest} />
     <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
-    {error && <CheckboxError>{error}</CheckboxError>}
+    {error && <CheckboxErrorMessage>{error}</CheckboxErrorMessage>}
   </CheckboxFieldGroup>
 );
 

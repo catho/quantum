@@ -259,14 +259,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c4 {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   color: #ac001a;
+  font-size: 14px;
   cursor: text;
   font-style: italic;
   font-weight: 600;
@@ -291,11 +285,11 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   >
     Label
   </label>
-  <label
+  <div
     className="c4"
   >
     error message
-  </label>
+  </div>
 </div>
 `;
 

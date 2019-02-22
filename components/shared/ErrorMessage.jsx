@@ -1,8 +1,10 @@
 import styled from 'styled-components';
-import Colors from '../Colors/deprecated';
+import Colors from '../Colors';
 
 export default styled.div`
-  color: ${Colors.DANGER['500']};
-  font-size: 12px;
-  margin: 5px 0;
+  color: ${Colors.ERROR['900']};
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
 `;
