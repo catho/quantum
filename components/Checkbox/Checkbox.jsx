@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../shared/theme';
 
 import { Label, FieldGroup, ErrorMessage } from '../shared';
 import Colors from '../Colors';
@@ -24,10 +23,8 @@ const CheckboxLabel = styled(Label)`
   top: 0;
 
   :before {
-    ${theme.mixins.transition()};
     background-color: ${Colors.WHITE};
-    border-color: ${({ error }) =>
-      error ? Colors.ERROR['500'] : Colors.BLACK['400']};
+    border-color: ${Colors.BLACK['400']};
     border-radius: 2px;
     border-style: solid;
     border-width: 2px;
@@ -38,6 +35,7 @@ const CheckboxLabel = styled(Label)`
     left: 0;
     position: absolute;
     top: 3px;
+    transition: all 0.2s ease-in-out;
     width: ${checkboxSize};
   }
 `;
@@ -58,10 +56,8 @@ const HiddenInput = styled.input.attrs({
   width: 100%;
 
   :checked + ${CheckboxLabel}:before {
-    background-color: ${({ error }) =>
-      error ? Colors.ERROR['500'] : Colors.BLUE['500']};
-    border-color: ${({ error }) =>
-      error ? Colors.ERROR['500'] : Colors.BLUE['500']};
+    background-color: ${Colors.BLUE['500']};
+    border-width: 0;
   }
 
   :checked + ${CheckboxLabel}:after {
@@ -80,14 +76,8 @@ const HiddenInput = styled.input.attrs({
   }
 
   :hover + ${CheckboxLabel}:before {
-    ${({ disabled, error }) =>
-      !disabled &&
-      `
-      border: 2px solid ${error ? Colors.ERROR['500'] : Colors.BLUE['500']};
-      box-shadow: 0 2px 6px 0 ${
-        error ? Colors.ERROR['500'] : Colors.BLUE['50']
-      };
-    `}
+    border-color: ${Colors.BLUE['500']};
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
   }
 
   ${({ error }) =>
@@ -95,6 +85,15 @@ const HiddenInput = styled.input.attrs({
     `
     + ${CheckboxLabel}:before {
       border-color: ${Colors.ERROR['500']};
+    }
+
+    :checked + ${CheckboxLabel}:before {
+      background-color: ${Colors.ERROR['500']};
+    }
+
+    :hover +  ${CheckboxLabel}:before {
+      border-color: ${Colors.ERROR['500']};
+      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
     }
   `}
 
@@ -105,6 +104,10 @@ const HiddenInput = styled.input.attrs({
   &[disabled] + ${CheckboxLabel}:before {
     border-color: ${Colors.BLACK['400']};
     background-color: ${Colors.BLACK['200']};
+  }
+
+  &[disabled]:hover + ${CheckboxLabel}:before {
+    box-shadow: none;
   }
 
   &[disabled]:checked + ${CheckboxLabel}:before {
