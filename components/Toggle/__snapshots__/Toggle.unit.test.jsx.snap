@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Toggle />  Snapshots should match snapshot with checked props 1`] = `
+exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
 .c0 {
   display: inline-block;
   position: relative;
