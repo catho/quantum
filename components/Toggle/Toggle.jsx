@@ -4,8 +4,14 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import Icon from '../Icon';
 
-const CheckIcon = styled(Icon)``;
-const CloseIcon = styled(Icon)``;
+const CheckIcon = styled(Icon).attrs({
+  name: 'check',
+})``;
+
+const CloseIcon = styled(Icon).attrs({
+  name: 'close',
+})``;
+
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
@@ -104,8 +110,8 @@ const Toggle = ({ checked, ...rest }) => (
   <Wrapper>
     <HiddenCheckbox checked={checked} {...rest} />
     <Switch>
-      <CloseIcon name="close" />
-      <CheckIcon name="check" />
+      <CloseIcon />
+      <CheckIcon />
     </Switch>
   </Wrapper>
 );

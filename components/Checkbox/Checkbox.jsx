@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { Label, ErrorMessage, theme } from '../shared';
+import { Label, ErrorMessage } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
 
