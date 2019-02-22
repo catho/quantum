@@ -53,11 +53,5 @@ const exampleTab = (
 );
 
 storiesOf('3. Forms', module).add('Toggle', () => (
-  <AutoExample
-    component={Toggle}
-    additionalTabs={exampleTab}
-    componentProps={{
-      id: 'example',
-    }}
-  />
+  <AutoExample component={Toggle} additionalTabs={exampleTab} />
 ));
