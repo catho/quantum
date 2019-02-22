@@ -1,73 +1,61 @@
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import {
-  Tab,
-  Example,
-  AutoExample,
-  Title,
-} from '@catho-private/quantum-storybook-ui';
+import { Tab, Example, AutoExample } from '@catho-private/quantum-storybook-ui';
 import Checkbox from '../../components/Checkbox';
-import { Container } from '../../components/Grid';
-
-const ExampleTitle = styled(Title)`
-  margin-top: 60px;
-`;
+import FieldGroup from '../../components/shared/FieldGroup';
 
 const exampleTab = (
   <Tab title="Example">
-    <Container fluid>
-      <ExampleTitle>Default checkbox</ExampleTitle>
-      <Example
-        component={<Checkbox label="Lorem ipsum dolor" onChange={() => {}} />}
-        code='<Checkbox label="Lorem ipsum dolor" onChange={() => {}} />'
-      />
-    </Container>
-    <Container fluid>
-      <ExampleTitle>Checked checkbox</ExampleTitle>
-      <Example
-        component={
-          <Checkbox checked label="Lorem ipsum dolor" onChange={() => {}} />
-        }
-        code='<Checkbox checked label="Lorem ipsum dolor" onChange={() => {}} />'
-      />
-    </Container>
-    <Container fluid>
-      <ExampleTitle>Disabled checkbox</ExampleTitle>
-      <Example
-        component={
-          <Checkbox disabled label="Lorem ipsum dolor" onChange={() => {}} />
-        }
-        code='<Checkbox disabled label="Lorem ipsum dolor" onChange={() => {}} />'
-      />
-    </Container>
-    <Container fluid>
-      <ExampleTitle>Checked and disabled checkbox</ExampleTitle>
-      <Example
-        component={
-          <Checkbox
-            disabled
-            checked
-            label="Lorem ipsum dolor"
-            onChange={() => {}}
-          />
-        }
-        code='<Checkbox disabled checked label="Lorem ipsum dolor" onChange={() => {}} />'
-      />
-    </Container>
-    <Container fluid>
-      <ExampleTitle>Error checkbox</ExampleTitle>
-      <Example
-        component={
-          <Checkbox
-            error="Error message"
-            label="Lorem ipsum dolor"
-            onChange={() => {}}
-          />
-        }
-        code='<Checkbox error="Error message" label="Lorem ipsum dolor" onChange={() => {}} />'
-      />
-    </Container>
+    <Example
+      component={
+        <>
+          <FieldGroup>
+            <Checkbox label="Default" checked={false} onChange={() => {}} />
+          </FieldGroup>
+          <FieldGroup>
+            <Checkbox label="Checked" checked onChange={() => {}} />
+          </FieldGroup>
+          <FieldGroup>
+            <Checkbox
+              label="Disabled"
+              disabled
+              checked={false}
+              onChange={() => {}}
+            />
+          </FieldGroup>
+          <FieldGroup>
+            <Checkbox
+              label="Disabled & Checked"
+              disabled
+              checked
+              onChange={() => {}}
+            />
+          </FieldGroup>
+          <FieldGroup>
+            <Checkbox
+              label="With error"
+              error="Message"
+              checked={false}
+              onChange={() => {}}
+            />
+          </FieldGroup>
+          <FieldGroup>
+            <Checkbox
+              label="With error & Checked"
+              error="Message"
+              checked
+              onChange={() => {}}
+            />
+          </FieldGroup>
+        </>
+      }
+      code={`<Checkbox label="Default" checked={false} onChange={() => {}} />
+<Checkbox label="Checked" checked onChange={() => {}} />
+<Checkbox label="Disabled" disabled checked={false} onChange={() => {}} />
+<Checkbox label="Disabled & Checked" disabled checked onChange={() => {}} />
+<Checkbox label="With error" error="Message" checked={false} onChange={() => {}} />
+<Checkbox label="With error & Checked" error="Message" checked onChange={() => {}} />`}
+    />
   </Tab>
 );
 
