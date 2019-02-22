@@ -29,10 +29,8 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 
 .c3:before {
   background-color: #FFFFFF;
-  border-color: #999999;
   border-radius: 2px;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #999999;
   box-sizing: border-box;
   content: ' ';
   display: inline-block;
@@ -153,10 +151,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 
 .c3:before {
   background-color: #FFFFFF;
-  border-color: #999999;
   border-radius: 2px;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #999999;
   box-sizing: border-box;
   content: ' ';
   display: inline-block;
@@ -349,10 +345,8 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 
 .c3:before {
   background-color: #FFFFFF;
-  border-color: #999999;
   border-radius: 2px;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #999999;
   box-sizing: border-box;
   content: ' ';
   display: inline-block;
@@ -531,10 +525,8 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 
 .c3:before {
   background-color: #FFFFFF;
-  border-color: #999999;
   border-radius: 2px;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #999999;
   box-sizing: border-box;
   content: ' ';
   display: inline-block;

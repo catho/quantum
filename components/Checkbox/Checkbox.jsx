@@ -24,10 +24,8 @@ const CheckboxLabel = styled(Label)`
 
   :before {
     background-color: ${Colors.WHITE};
-    border-color: ${Colors.BLACK['400']};
     border-radius: 2px;
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid ${Colors.BLACK['400']};
     box-sizing: border-box;
     content: ' ';
     display: inline-block;
