@@ -100,7 +100,6 @@ const HiddenCheckbox = styled.input.attrs({
 
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-/** If you pass `checked` prop to `<Toggle />` than it will be a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) */
 const Toggle = ({ checked, ...rest }) => (
   <Wrapper>
     <HiddenCheckbox checked={checked} {...rest} />
