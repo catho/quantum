@@ -10,17 +10,18 @@ describe('<Toggle /> ', () => {
       expect(renderer.create(<Toggle />).toJSON()).toMatchSnapshot();
     });
 
-    it('should match snapshot with checked props', () => {
+    it('should match snapshot with checked prop', () => {
       expect(renderer.create(<Toggle checked />).toJSON()).toMatchSnapshot();
     });
   });
 
   describe('Correctly props', () => {
     it('should pass onChange prop to input element', () => {
-      const toggle = shallow(<Toggle onChange={() => {}} />);
+      const onChangeMock = () => {};
+      const toggle = shallow(<Toggle onChange={onChangeMock} />);
       const checkbox = toggle.find('HiddenCheckbox');
 
-      expect(checkbox.props().onChange).toBeTruthy();
+      expect(checkbox.props().onChange).toBe(onChangeMock);
     });
 
     it('should pass checked prop to input element', () => {
