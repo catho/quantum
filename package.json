@@ -15,11 +15,15 @@
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "yarn clean:build",
     "precommit": "lint-staged",
-    "prepush": "yarn lint && yarn test:components",
+    "prepush": "yarn lint && yarn test:components && yarn gh-pages",
     "storybook": "start-storybook -s static",
     "build-storybook": "build-storybook",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx --quiet"
+    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx --quiet",
+    "gh-pages:clean": "rm -rf docs",
+    "gh-pages:build": "build-storybook -o docs",
+    "gh-pages:update": "./scripts/update-docs.sh",
+    "gh-pages": "yarn gh-pages:clean && yarn gh-pages:build && yarn gh-pages:update"
   },
   "repository": {
     "type": "git",
