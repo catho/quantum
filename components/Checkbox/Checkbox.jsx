@@ -59,9 +59,8 @@ const HiddenInput = styled.input.attrs({
     }
 
     + ${CheckboxLabel}:after {
-      border-color: ${Colors.WHITE};
       border-radius: 1px;
-      border-style: solid;
+      border: solid ${Colors.WHITE};
       border-width: 0 2.5px 2.5px 0;
       content: ' ';
       display: inline-block;

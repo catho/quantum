@@ -60,9 +60,8 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 }
 
 .c1:checked + .c2:after {
-  border-color: #FFFFFF;
   border-radius: 1px;
-  border-style: solid;
+  border: solid #FFFFFF;
   border-width: 0 2.5px 2.5px 0;
   content: ' ';
   display: inline-block;
@@ -171,9 +170,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c5:checked + .c2:after {
-  border-color: #FFFFFF;
   border-radius: 1px;
-  border-style: solid;
+  border: solid #FFFFFF;
   border-width: 0 2.5px 2.5px 0;
   content: ' ';
   display: inline-block;
@@ -226,9 +224,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c1:checked + .c2:after {
-  border-color: #FFFFFF;
   border-radius: 1px;
-  border-style: solid;
+  border: solid #FFFFFF;
   border-width: 0 2.5px 2.5px 0;
   content: ' ';
   display: inline-block;
@@ -376,9 +373,8 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c1:checked + .c2:after {
-  border-color: #FFFFFF;
   border-radius: 1px;
-  border-style: solid;
+  border: solid #FFFFFF;
   border-width: 0 2.5px 2.5px 0;
   content: ' ';
   display: inline-block;
@@ -424,9 +420,8 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c4:checked + .c2:after {
-  border-color: #FFFFFF;
   border-radius: 1px;
-  border-style: solid;
+  border: solid #FFFFFF;
   border-width: 0 2.5px 2.5px 0;
   content: ' ';
   display: inline-block;
@@ -556,9 +551,8 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c1:checked + .c2:after {
-  border-color: #FFFFFF;
   border-radius: 1px;
-  border-style: solid;
+  border: solid #FFFFFF;
   border-width: 0 2.5px 2.5px 0;
   content: ' ';
   display: inline-block;
@@ -604,9 +598,8 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c4:checked + .c2:after {
-  border-color: #FFFFFF;
   border-radius: 1px;
-  border-style: solid;
+  border: solid #FFFFFF;
   border-width: 0 2.5px 2.5px 0;
   content: ' ';
   display: inline-block;
