@@ -22,7 +22,7 @@ const exampleTab = (
             >
               Left label with checked true
             </label>
-            <Toggle checked id="left" />
+            <Toggle checked id="left" onChange={() => {}} />
           </div>
         }
         code={`<div style={{ display: 'flex', alignContent: 'center' }}>
