@@ -54,7 +54,7 @@ const Switch = styled.div`
   }
 `;
 
-const Checkbox = styled.input.attrs({
+const HiddenCheckbox = styled.input.attrs({
   type: 'checkbox',
   role: 'switch',
 })`
@@ -98,15 +98,12 @@ const Checkbox = styled.input.attrs({
   }
 `;
 
+HiddenCheckbox.displayName = 'HiddenCheckbox';
+
 /** If you pass `checked` prop to `<Toggle />` than it will be a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) */
-const Toggle = ({ checked, id, onChange, ...rest }) => (
+const Toggle = ({ checked, ...rest }) => (
   <Wrapper>
-    <Checkbox
-      checked={checked}
-      aria-checked={checked || false}
-      onChange={onChange}
-      {...rest}
-    />
+    <HiddenCheckbox checked={checked} {...rest} />
     <Switch>
       <CloseIcon name="close" />
       <CheckIcon name="check" />
@@ -116,12 +113,10 @@ const Toggle = ({ checked, id, onChange, ...rest }) => (
 
 Toggle.defaultProps = {
   checked: null,
-  onChange: () => {},
 };
 
 Toggle.propTypes = {
   checked: PropTypes.bool,
-  onChange: PropTypes.func,
 };
 
 export default Toggle;
