@@ -2,104 +2,210 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
+import Label from '../shared/Label';
+
+const RadioMark = styled.span`
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: ${Colors.BLACK[400]};
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+  background-color: ${Colors.WHITE};
+
+  :after {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: ${Colors.BLUE[500]};
+  }
+`;
 
 const StyledRadio = styled.input.attrs({
   type: 'radio',
 })`
+  width: 0;
+  height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+`;
+
+const RadioLabel = styled(Label)`
   cursor: pointer;
-  display: inline-block;
+  user-select: none;
 
-  &:before {
-    content: ' ';
-    border-width: 1.5px;
-    border-style: solid;
-    border-color: ${({ error }) =>
-      error ? Colors.ERROR[500] : Colors.BLACK[400]};
-    ${props =>
-      props.disabled &&
-      `
-      background-color: ${Colors.BLACK[200]};
+  ${StyledRadio} {
+    :checked {
+      ~ ${RadioMark} {
+        border-color: ${Colors.BLUE[500]};
+        :after {
+          display: block;
+          background-color: ${Colors.BLUE[500]};
+        }
+      }
+
+      :focus {
+        ~ ${RadioMark} {
+          box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+        }
+      }
+    }
+
+    :focus {
+      ~ ${RadioMark} {
+        border-color: ${Colors.BLUE[500]};
+        box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+      }
+    }
+  }
+
+  :hover,
+  :focus {
+    ${RadioMark} {
+      border-color: ${Colors.BLUE[500]};
+      box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+    }
+  }
+
+  ${({ error }) =>
+    error &&
+    `
+    ${StyledRadio} {
+      :checked {
+        ~ ${RadioMark} {
+          border-color: ${Colors.ERROR[500]};
+          :after {
+            display: block;
+            background-color: ${Colors.ERROR[500]};
+          }
+        }
+
+        :focus {
+          ~ ${RadioMark} {
+            box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
+          }
+        }
+      }
+      :focus {
+        ~ ${RadioMark} {
+          border-color: ${Colors.ERROR[500]};
+          box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
+        }
+      }
+    }
+
+    :hover,
+    :focus {
+      ${RadioMark} {
+        border-color: ${Colors.ERROR[500]};
+        box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
+      }
+    }
     `}
-    border-radius: 50%;
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin-right: 5px;
 
-    position: relative;
-    top: 4px;
-  }
 
-  &[aria-checked='true']:before {
-    background-color: ${({ error }) =>
-      error ? Colors.ERROR[500] : Colors.BLUE[500]};
-    border-color: ${({ error }) =>
-      error ? Colors.ERROR[500] : Colors.BLUE[500]};
-    box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
-  }
 
-  &[aria-checked='true']:hover:before,
-  &[aria-checked='true']:focus:before {
-    box-shadow: inset 0 0 0 3.5px ${Colors.WHITE},
-      0 2px 6px 0
-        ${({ error }) => (error ? Colors.ERROR[200] : Colors.BLUE[50])};
-  }
-
-  &:hover:before,
-  &:focus:before {
-    border-color: ${({ error }) =>
-      error ? Colors.ERROR[500] : Colors.BLUE[500]};
-    box-shadow: 0 2px 6px 0
-      ${({ error }) => (error ? Colors.ERROR[500] : Colors.BLUE[50])};
-  }
-
-  &[disabled] {
+  ${({ disabled }) =>
+    disabled &&
+    `
     color: ${Colors.BLACK[400]};
-  }
 
-  &[disabled]:before {
-    background-color: ${Colors.BLACK[200]};
-  }
+    :hover {
+      cursor: not-allowed;
+    }
 
-  &[disabled]:hover {
-    cursor: not-allowed;
-  }
+    ${StyledRadio} {
+      :disabled {
+        ~ ${RadioMark} {
+          background-color: ${Colors.BLACK[200]};
+        }
+      }
 
-  &[disabled]:hover:before,
-  &[disabled]:focus:before {
-    border-color: ${Colors.BLACK[400]};
-    box-shadow: none;
-  }
+      :checked {
+        ~ ${RadioMark} {
+          border-color: ${Colors.ERROR[500]};
+          :after {
+            display: block;
+            background-color: ${Colors.ERROR[500]};
+          }
+        }
 
-  &[aria-checked='true']:disabled:before {
+        :focus {
+          ~ ${RadioMark} {
+            box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
+          }
+        }
+      }
+
+      :checked:disabled {
+        background-color: ${Colors.BLACK[400]};
+        border-color: ${Colors.BLACK[400]};
+        ~ ${RadioMark}:after {
+          background-color: ${Colors.BLACK[400]};
+        }
+      }
+
+      :focus {
+        ~ ${RadioMark} {
+          border-color: ${Colors.BLACK[400]};
+          box-shadow: none;
+        }
+      }
+    }
+
+    :hover, :focus {
+      ${RadioMark} {
+        border-color: ${Colors.BLACK[400]};
+        box-shadow: none;
+      }
+    }
+  `}
+
+  ${StyledRadio}:checked:disabled ~ ${RadioMark} {
     background-color: ${Colors.BLACK[400]};
     border-color: ${Colors.BLACK[400]};
     box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
   }
 `;
 
-class Radio extends React.Component {
-  static create = radio => <Radio label={radio} />;
+const Radio = ({ children, label, error, disabled, ...rest }) => (
+  <RadioLabel error={error} disabled={disabled}>
+    <StyledRadio disabled={disabled} {...rest} />
+    <RadioMark />
+    {children || label}
+  </RadioLabel>
+);
 
-  render() {
-    const { label, ...rest } = this.props;
-
-    return <StyledRadio {...rest} />;
-  }
-}
+Radio.create = radio => <Radio {...radio} />;
 
 Radio.displayName = 'RadioGroup.Radio';
 
 Radio.defaultProps = {
   disabled: false,
   error: false,
+  children: undefined,
+  label: undefined,
   onChange: () => {},
 };
 
 Radio.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  label: PropTypes.string.isRequired,
+  children: PropTypes.string,
+  label: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
 };

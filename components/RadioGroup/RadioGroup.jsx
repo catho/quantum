@@ -29,26 +29,44 @@ const ErrorLabel = styled(Label)`
 
 ErrorLabel.displayName = 'ErrorLabel';
 
-class RadioGroup extends React.Component {
-  static Radio = Radio;
+const RadioGroup = ({
+  children,
+  name,
+  error,
+  onChange,
+  options,
+  value,
+  ...rest
+}) => {
+  const radioOptions = options.map(option =>
+    Object.assign({}, option, {
+      name,
+      error: Boolean(error),
+      onChange,
+      checked: option.value === value ? true : undefined,
+    }),
+  );
 
-  render() {
-    const { children, name, error, options, ...rest } = this.props;
+  console.log(radioOptions);
 
-    const radioOptions = options.map(option =>
-      Object.assign({}, option, { name }),
-    );
+  const listItems =
+    React.Children.map(children, child =>
+      React.cloneElement(child, {
+        name,
+        error,
+        ...radioOptions,
+      }),
+    ) || radioOptions.map(Radio.create);
 
-    const listItems = children || radioOptions.map(Radio.create);
+  return (
+    <Group {...rest}>
+      {listItems}
+      {error && <ErrorLabel>{error}</ErrorLabel>}
+    </Group>
+  );
+};
 
-    return (
-      <Group {...rest}>
-        {listItems}
-        {error && <ErrorLabel>{error}</ErrorLabel>}
-      </Group>
-    );
-  }
-}
+RadioGroup.Radio = Radio;
 
 /**
  * Group for Radio components.
@@ -56,6 +74,7 @@ class RadioGroup extends React.Component {
 RadioGroup.defaultProps = {
   value: undefined,
   error: undefined,
+  children: undefined,
   options: [],
   onChange: () => {},
 };
@@ -71,7 +90,7 @@ RadioGroup.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-  ]).isRequired,
+  ]),
   onChange: PropTypes.func,
   /** Initialize RadioGroup with a value */
   value: PropTypes.string,

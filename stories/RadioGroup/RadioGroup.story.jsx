@@ -27,10 +27,15 @@ const options = [
   { value: 'Barbecue sauce', label: 'Barbecue sauce' },
 ];
 
-const RadioBlock = <RadioGroup name="groceries" options={options} />;
+const RadioBlock = (
+  <form>
+    <RadioGroup name="groceries" options={options} />
+    <button>Ali</button>
+  </form>
+);
 
 const RadioError = (
-  <RadioGroup name="groceries" error="Esta opção é obrigatória">
+  <RadioGroup name="colors" error="Esta opção é obrigatória">
     <RadioGroup.Radio value="Red" label="Red" />
     <RadioGroup.Radio value="Green" label="Green" />
     <RadioGroup.Radio value="Blue" label="Blue" />
@@ -38,7 +43,7 @@ const RadioError = (
 );
 
 const RadioDisabled = (
-  <RadioGroup name="">
+  <RadioGroup name="healthy_groceries">
     <RadioGroup.Radio value="Fruit Juices" label="Fruit Juices" />
     <RadioGroup.Radio value="Vegatables" label="Vegatables" />
     <RadioGroup.Radio disabled value="Pizza" label="Pizza" />
@@ -49,7 +54,7 @@ const RadioDisabled = (
 );
 
 const RadioBlockSelected = (
-  <RadioGroup name="groceries" selected="Pikachu">
+  <RadioGroup name="pokemons" selected="Pikachu">
     <RadioGroup.Radio value="Pikachu" label="Pikachu" />
     <RadioGroup.Radio value="Charizard" label="Charizard" />
     <RadioGroup.Radio value="Squirtle" label="Squirtle" />
