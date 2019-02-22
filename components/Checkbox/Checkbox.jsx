@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../shared/theme';
 
 import { Label, FieldGroup, ErrorMessage } from '../shared';
 import Colors from '../Colors';
 
-const checkboxSize = '18px';
-const containerSize = '24px';
+const CHECKBOX_SIZE = '18px';
+const CONTAINER_SIZE = '24px';
 
 const CheckboxFieldGroup = styled(FieldGroup)`
   pointer-events: none;
@@ -19,26 +18,25 @@ const CheckboxLabel = styled(Label)`
   font-size: 16px;
   left: 0;
   margin-bottom: 0;
-  min-height: ${containerSize};
-  padding-left: ${containerSize};
+  min-height: ${CONTAINER_SIZE};
+  padding-left: ${CONTAINER_SIZE};
   top: 0;
 
   :before {
-    ${theme.mixins.transition()};
     background-color: ${Colors.WHITE};
-    border-color: ${({ error }) =>
-      error ? Colors.ERROR['500'] : Colors.BLACK['400']};
+    border-color: ${Colors.BLACK['400']};
     border-radius: 2px;
     border-style: solid;
     border-width: 2px;
     box-sizing: border-box;
     content: ' ';
     display: inline-block;
-    height: ${checkboxSize};
+    height: ${CHECKBOX_SIZE};
     left: 0;
     position: absolute;
     top: 3px;
-    width: ${checkboxSize};
+    transition: all 0.2s ease-in-out;
+    width: ${CHECKBOX_SIZE};
   }
 `;
 
@@ -47,47 +45,40 @@ CheckboxLabel.displayName = 'CheckboxLabel';
 const HiddenInput = styled.input.attrs({
   type: 'checkbox',
 })`
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  height: ${checkboxSize};
+  cursor: pointer;
+  height: ${CHECKBOX_SIZE};
   height: 100%;
   margin: 0;
   opacity: 0;
   pointer-events: initial;
   position: absolute;
-  width: ${checkboxSize};
   width: 100%;
 
-  :checked + ${CheckboxLabel}:before {
-    background-color: ${({ error }) =>
-      error ? Colors.ERROR['500'] : Colors.BLUE['500']};
-    border-color: ${({ error }) =>
-      error ? Colors.ERROR['500'] : Colors.BLUE['500']};
-  }
+  :checked {
+    + ${CheckboxLabel}:before {
+      background-color: ${Colors.BLUE['500']};
+      border-width: 0;
+    }
 
-  :checked + ${CheckboxLabel}:after {
-    border-color: ${Colors.WHITE};
-    border-radius: 1px;
-    border-style: solid;
-    border-width: 0 2.5px 2.5px 0;
-    content: ' ';
-    display: inline-block;
-    height: 11px;
-    left: 6px;
-    position: absolute;
-    top: 3px;
-    transform: rotate(45deg);
-    width: 4px;
+    + ${CheckboxLabel}:after {
+      border-color: ${Colors.WHITE};
+      border-radius: 1px;
+      border-style: solid;
+      border-width: 0 2.5px 2.5px 0;
+      content: ' ';
+      display: inline-block;
+      height: 11px;
+      left: 6px;
+      position: absolute;
+      top: 3px;
+      transform: rotate(45deg);
+      width: 4px;
+    }
   }
 
   :hover + ${CheckboxLabel}:before {
-    ${({ disabled, error }) =>
-      !disabled &&
-      `
-      border: 2px solid ${error ? Colors.ERROR['500'] : Colors.BLUE['500']};
-      box-shadow: 0 2px 6px 0 ${
-        error ? Colors.ERROR['500'] : Colors.BLUE['50']
-      };
-    `}
+    border-color: ${Colors.BLUE['500']};
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
   }
 
   ${({ error }) =>
@@ -96,19 +87,36 @@ const HiddenInput = styled.input.attrs({
     + ${CheckboxLabel}:before {
       border-color: ${Colors.ERROR['500']};
     }
+
+    :checked + ${CheckboxLabel}:before {
+      background-color: ${Colors.ERROR['500']};
+    }
+
+    :hover +  ${CheckboxLabel}:before {
+      border-color: ${Colors.ERROR['500']};
+      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
+    }
   `}
 
-  &[disabled] + ${CheckboxLabel} {
-    color: ${Colors.BLACK['400']};
-  }
+  &[disabled] {
+    cursor: not-allowed;
 
-  &[disabled] + ${CheckboxLabel}:before {
-    border-color: ${Colors.BLACK['400']};
-    background-color: ${Colors.BLACK['200']};
-  }
+    + ${CheckboxLabel} {
+      color: ${Colors.BLACK['400']};
+    }
 
-  &[disabled]:checked + ${CheckboxLabel}:before {
-    background-color: ${Colors.BLACK['400']};
+    + ${CheckboxLabel}:before {
+      border-color: ${Colors.BLACK['400']};
+      background-color: ${Colors.BLACK['200']};
+    }
+
+    :checked + ${CheckboxLabel}:before {
+      background-color: ${Colors.BLACK['400']};
+    }
+
+    :hover + ${CheckboxLabel}:before {
+      box-shadow: none;
+    }
   }
 `;
 
