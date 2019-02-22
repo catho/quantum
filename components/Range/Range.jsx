@@ -1,77 +1,62 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Colors from '../Colors';
 
-import { ErrorMessage, Label, FieldGroup } from '../shared';
+const Dot = styled.div`
+  background-color: ${Colors.BLUE[500]};
+  border-radius: 50%;
+  box-shadow: ${Colors.SHADOW[40]};
+  display: inline-block;
+  height: 20px;
+  width: 20px;
 
-class Range extends React.Component {
-  constructor(props) {
-    super(props);
+  ${props =>
+    !props.disabled &&
+    `
+    :hover {
+      box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+    };`}
 
-    const { value } = props;
+  ${props =>
+    props.disabled &&
+    `
+    background-color: ${Colors.BLACK[400]};
+  `}
+`;
 
-    this.state = { value };
-  }
+const Stripe = styled.div`
+  background-color: ${Colors.BLUE[200]};
+  border-radius: 5px;
+  display: inline-block;
+  height: 8px;
+  width: 100%;
 
-  componentWillUpdate(nextProps) {
-    const { value } = this.state;
+  ${props =>
+    props.disabled &&
+    `
+    background-color: ${Colors.BLACK[100]};
+  `}
+`;
 
-    if (nextProps.value !== value) {
-      this.state.value = nextProps.value;
-    }
-  }
+const Wrapper = styled.div`
+  cursor: pointer;
+  width: 100%;
+`;
 
-  handleChange = e => {
-    const { onChange } = this.props;
-    const {
-      target: { value },
-    } = e;
-
-    this.setState({ value: Number(value) });
-
-    onChange(e, { value: Number(value) });
-  };
-
-  render() {
-    const { id, label, error } = this.props;
-    const { value } = this.state;
-
-    return (
-      <FieldGroup>
-        {label && <Label htmlFor={id}> {label} </Label>}
-        <input
-          {...this.props}
-          id={id}
-          value={value}
-          type="range"
-          onChange={this.handleChange}
-        />
-        {error && <ErrorMessage>{error}</ErrorMessage>}
-      </FieldGroup>
-    );
-  }
-}
+const Range = ({ disabled }) => (
+  <Wrapper>
+    <Dot disabled={disabled} />
+    <Stripe disabled={disabled} />
+  </Wrapper>
+);
 
 Range.defaultProps = {
-  value: 0,
-  label: '',
-  error: '',
-  id: '',
-  onBlur: () => {},
-  onChange: () => {},
-  onFocus: () => {},
+  disabled: false,
 };
 
 Range.propTypes = {
-  value: PropTypes.number,
-  /** Display a label text that describe the field */
-  label: PropTypes.string,
-  /** Display an error message */
-  error: PropTypes.string,
-  /** HTML identification */
-  id: PropTypes.string,
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
+  disabled: PropTypes.bool,
 };
 
 export default Range;
