@@ -1,76 +1,727 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RadioGroup.Radio /> Should match the snapshot 1`] = `
-.c0 {
-  cursor: pointer;
-  display: inline-block;
-}
-
-.c0:before {
-  content: ' ';
+exports[`<RadioGroup.Radio /> snapshot children 1`] = `
+.c4 {
   border-width: 1.5px;
   border-style: solid;
-  border-color: #999999;
   border-radius: 50%;
+  border-color: #999999;
   display: inline-block;
   height: 16px;
   width: 16px;
   margin-right: 5px;
+  box-sizing: border-box;
   position: relative;
   top: 4px;
+  background-color: #FFFFFF;
 }
 
-.c0[aria-checked='true']:before {
+.c4:after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
   background-color: #1355d0;
+}
+
+.c2 {
+  width: 0;
+  height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 .c1:checked ~ .c3 {
   border-color: #1355d0;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
 }
 
-.c0[aria-checked='true']:hover:before,
-.c0[aria-checked='true']:focus:before {
-  box-shadow: inset 0 0 0 3.5px #FFFFFF,0 2px 6px 0 rgba(19,85,208,0.5);
+.c0 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
 }
 
-.c0:hover:before,
-.c0:focus:before {
+.c0 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c0[disabled] {
-  color: #999999;
+.c0:hover .c3,
+.c0:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c0[disabled]:before {
-  background-color: #cccccc;
-}
-
-.c0[disabled]:hover {
-  cursor: not-allowed;
-}
-
-.c0[disabled]:hover:before,
-.c0[disabled]:focus:before {
-  border-color: #999999;
-  box-shadow: none;
-}
-
-.c0[aria-checked='true']:disabled:before {
+.c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #FFFFFF;
 }
 
-<div
-  aria-checked={false}
+.c5 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c5 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c5 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5:hover .c3,
+.c5:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5 .c1:disabled ~ .c3 {
+  background-color: #cccccc;
+}
+
+.c5 .c1:checked ~ .c3 {
+  border-color: #ff2d4d;
+}
+
+.c5 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #ff2d4d;
+}
+
+.c5 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c5 .c1:checked:disabled {
+  background-color: #999999;
+  border-color: #999999;
+}
+
+.c5 .c1:checked:disabled ~ .c3:after {
+  background-color: #999999;
+}
+
+.c5 .c1:focus ~ .c3 {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c5:hover .c3,
+.c5:focus .c3 {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c5 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c6 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c6 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c6 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c6 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c6:hover .c3,
+.c6:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c6 .c1:checked ~ .c3 {
+  border-color: #ff2d4d;
+}
+
+.c6 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #ff2d4d;
+}
+
+.c6 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c6 .c1:focus ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c6 .c3 {
+  border-color: #ff2d4d;
+}
+
+.c6:hover .c3,
+.c6:focus .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c6 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+<label
   className="c0"
   disabled={false}
-  onClick={[Function]}
-  onKeyDown={[Function]}
-  role="radio"
-  tabIndex={-1}
-  value="Hello"
 >
-  Hello
-</div>
+  <input
+    className="c1 c2"
+    disabled={false}
+    onChange={[Function]}
+    type="radio"
+  />
+  <span
+    className="c3 c4"
+  />
+  Foo
+</label>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
+.c4 {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #999999;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  position: relative;
+  top: 4px;
+  background-color: #FFFFFF;
+}
+
+.c4:after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #1355d0;
+}
+
+.c2 {
+  width: 0;
+  height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.c5 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c5 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c5 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5:hover .c3,
+.c5:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #999999;
+}
+
+.c0 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c0 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c0 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0:hover .c3,
+.c0:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0:hover {
+  cursor: not-allowed;
+}
+
+.c0 .c1:disabled ~ .c3 {
+  background-color: #cccccc;
+}
+
+.c0 .c1:checked ~ .c3 {
+  border-color: #ff2d4d;
+}
+
+.c0 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #ff2d4d;
+}
+
+.c0 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c0 .c1:checked:disabled {
+  background-color: #999999;
+  border-color: #999999;
+}
+
+.c0 .c1:checked:disabled ~ .c3:after {
+  background-color: #999999;
+}
+
+.c0 .c1:focus ~ .c3 {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c0:hover .c3,
+.c0:focus .c3 {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c0 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+<label
+  className="c0"
+  disabled={true}
+>
+  <input
+    className="c1 c2"
+    disabled={true}
+    onChange={[Function]}
+    type="radio"
+  />
+  <span
+    className="c3 c4"
+  />
+  Foo
+</label>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot error 1`] = `
+.c4 {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #999999;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  position: relative;
+  top: 4px;
+  background-color: #FFFFFF;
+}
+
+.c4:after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #1355d0;
+}
+
+.c2 {
+  width: 0;
+  height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.c5 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c5 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c5 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5:hover .c3,
+.c5:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c5 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c6 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c6 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c6 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c6 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c6:hover .c3,
+.c6:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c6 .c1:disabled ~ .c3 {
+  background-color: #cccccc;
+}
+
+.c6 .c1:checked ~ .c3 {
+  border-color: #ff2d4d;
+}
+
+.c6 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #ff2d4d;
+}
+
+.c6 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c6 .c1:checked:disabled {
+  background-color: #999999;
+  border-color: #999999;
+}
+
+.c6 .c1:checked:disabled ~ .c3:after {
+  background-color: #999999;
+}
+
+.c6 .c1:focus ~ .c3 {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c6:hover .c3,
+.c6:focus .c3 {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c6 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c0 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c0 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0:hover .c3,
+.c0:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0 .c1:checked ~ .c3 {
+  border-color: #ff2d4d;
+}
+
+.c0 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #ff2d4d;
+}
+
+.c0 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c0 .c1:focus ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c0 .c3 {
+  border-color: #ff2d4d;
+}
+
+.c0:hover .c3,
+.c0:focus .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c0 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+<label
+  className="c0"
+  disabled={false}
+>
+  <input
+    className="c1 c2"
+    disabled={false}
+    onChange={[Function]}
+    type="radio"
+  />
+  <span
+    className="c3 c4"
+  />
+  Foo
+</label>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
+.c4 {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #999999;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  position: relative;
+  top: 4px;
+  background-color: #FFFFFF;
+}
+
+.c4:after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #1355d0;
+}
+
+.c2 {
+  width: 0;
+  height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 .c1:checked ~ .c3 {
+  border-color: #1355d0;
+}
+
+.c0 .c1:checked ~ .c3:after {
+  display: block;
+  background-color: #1355d0;
+}
+
+.c0 .c1:checked:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0 .c1:focus ~ .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0:hover .c3,
+.c0:focus .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c0 .c1:checked:disabled ~ .c3 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+<label
+  className="c0"
+  disabled={false}
+>
+  <input
+    className="c1 c2"
+    disabled={false}
+    onChange={[Function]}
+    type="radio"
+  />
+  <span
+    className="c3 c4"
+  />
+  Foo
+</label>
 `;
