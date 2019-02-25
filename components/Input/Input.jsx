@@ -79,6 +79,10 @@ const InputFieldGroup = styled(FieldGroup)`
   }
 `;
 
+const InputErrorMessage = styled(ErrorMessage)`
+  margin-top: 8px;
+`;
+
 /** A text field component to get user text data */
 class Input extends React.Component {
   static CEP = InputTypes.CEP;
@@ -164,7 +168,7 @@ class Input extends React.Component {
             onClick={this._showPassword}
           />
         )}
-        {error && <ErrorMessage>{error}</ErrorMessage>}
+        {error && <InputErrorMessage>{error}</InputErrorMessage>}
       </InputFieldGroup>
     );
   }
