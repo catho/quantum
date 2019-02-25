@@ -1,62 +1,93 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
 import Colors from '../Colors';
+import Tooltip from '../Tooltip';
 
-const Dot = styled.div`
-  background-color: ${Colors.BLUE[500]};
-  border-radius: 50%;
-  box-shadow: ${Colors.SHADOW[40]};
-  display: inline-block;
-  height: 20px;
-  width: 20px;
+const RangeComponent = Slider.Range;
+const SliderComponent = Slider;
 
-  ${props =>
-    !props.disabled &&
-    `
-    :hover {
-      box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
-    };`}
+const tooltipOffset = ({ half, min, max }) => {
+  const percent = ((half - min) / (max - min)) * 100;
 
-  ${props =>
-    props.disabled &&
-    `
-    background-color: ${Colors.BLACK[400]};
-  `}
-`;
+  return percent;
+};
 
-const Stripe = styled.div`
-  background-color: ${Colors.BLUE[200]};
-  border-radius: 5px;
-  display: inline-block;
-  height: 8px;
+const StyledTooltip = styled(Tooltip)`
   width: 100%;
-
-  ${props =>
-    props.disabled &&
-    `
-    background-color: ${Colors.BLACK[100]};
-  `}
+  > div:first-child {
+    left: ${({ value, min, max }) => {
+      let half = value;
+      if (Array.isArray(value)) {
+        half = (value[1] + value[0]) / 2;
+      }
+      return tooltipOffset({ half, min, max });
+    }}%;
+  }
 `;
 
-const Wrapper = styled.div`
-  cursor: pointer;
-  width: 100%;
-`;
+class Range extends React.Component {
+  constructor(props) {
+    super(props);
 
-const Range = ({ disabled }) => (
-  <Wrapper>
-    <Dot disabled={disabled} />
-    <Stripe disabled={disabled} />
-  </Wrapper>
-);
+    const { value: valueProp, max, min } = this.props;
+    const value = valueProp >= min && valueProp <= max ? valueProp : min;
+
+    this.state = { value };
+  }
+
+  handleChange = value => {
+    this.setState({ value });
+  };
+
+  render() {
+    const { min, max } = this.props;
+    const { value } = this.state;
+    const { handleChange } = this;
+
+    console.log(value);
+
+    return (
+      <StyledTooltip text={value} value={value} min={min} max={max}>
+        {typeof value === 'object' ? (
+          <RangeComponent
+            value={[value.from, value.to]}
+            onChange={handleChange}
+            min={min}
+            max={max}
+            allowCross={false}
+          />
+        ) : (
+          <SliderComponent
+            onChange={handleChange}
+            value={value}
+            min={min}
+            max={max}
+          />
+        )}
+      </StyledTooltip>
+    );
+  }
+}
 
 Range.defaultProps = {
-  disabled: false,
+  max: 100,
+  min: 0,
+  value: 50,
 };
 
 Range.propTypes = {
-  disabled: PropTypes.bool,
+  max: PropTypes.number,
+  min: PropTypes.number,
+  value: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.shape({
+      from: PropTypes.number,
+      to: PropTypes.number,
+    }),
+  ]),
 };
 
 export default Range;
