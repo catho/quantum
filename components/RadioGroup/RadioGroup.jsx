@@ -21,10 +21,7 @@ const ErrorLabel = styled(Label)`
   font-weight: 600;
   font-style: italic;
   font-size: 14px;
-  left: -3px;
-  position: absolute;
-
-  bottom: -30px;
+  margin-left: -3px;
 `;
 
 ErrorLabel.displayName = 'ErrorLabel';
@@ -46,8 +43,6 @@ const RadioGroup = ({
       checked: option.value === value ? true : undefined,
     }),
   );
-
-  console.log(radioOptions);
 
   const listItems =
     React.Children.map(children, child =>
@@ -82,8 +77,8 @@ RadioGroup.defaultProps = {
 RadioGroup.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-      value: PropTypes.string,
+      label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+      value: PropTypes.string.isRequired,
       disabled: PropTypes.bool,
     }),
   ),

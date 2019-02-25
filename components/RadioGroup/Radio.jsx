@@ -13,6 +13,7 @@ const RadioMark = styled.span`
   height: 16px;
   width: 16px;
   margin-right: 5px;
+  box-sizing: border-box;
 
   position: relative;
   top: 4px;
@@ -22,10 +23,10 @@ const RadioMark = styled.span`
     content: '';
     display: none;
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 9px;
-    height: 9px;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     background-color: ${Colors.BLUE[500]};
   }
@@ -107,6 +108,10 @@ const RadioLabel = styled(Label)`
       }
     }
 
+    ${RadioMark} {
+      border-color: ${Colors.ERROR[500]};
+    }
+
     :hover,
     :focus {
       ${RadioMark} {
@@ -181,9 +186,21 @@ const RadioLabel = styled(Label)`
   }
 `;
 
-const Radio = ({ children, label, error, disabled, ...rest }) => (
+const Radio = ({
+  children,
+  label,
+  error,
+  disabled,
+  onChange,
+  value,
+  ...rest
+}) => (
   <RadioLabel error={error} disabled={disabled}>
-    <StyledRadio disabled={disabled} {...rest} />
+    <StyledRadio
+      disabled={disabled}
+      onChange={e => onChange({ value, label }, e)}
+      {...rest}
+    />
     <RadioMark />
     {children || label}
   </RadioLabel>
