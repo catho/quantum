@@ -35,21 +35,24 @@ const RadioGroup = ({
   value,
   ...rest
 }) => {
+  const commonProps = {
+    name,
+    error: Boolean(error),
+    onChange,
+  };
   const radioOptions = options.map(option =>
     Object.assign({}, option, {
-      name,
-      error: Boolean(error),
-      onChange,
+      key: option.value,
       checked: option.value === value ? true : undefined,
+      ...commonProps,
     }),
   );
 
   const listItems =
     React.Children.map(children, child =>
       React.cloneElement(child, {
-        name,
-        error,
-        ...radioOptions,
+        checked: child.props.value === value ? true : undefined,
+        ...commonProps,
       }),
     ) || radioOptions.map(Radio.create);
 
