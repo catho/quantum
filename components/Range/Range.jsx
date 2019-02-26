@@ -9,21 +9,18 @@ import Tooltip from '../Tooltip';
 const RangeComponent = Slider.Range;
 const SliderComponent = Slider;
 
-const tooltipOffset = ({ half, min, max }) => {
-  const percent = ((half - min) / (max - min)) * 100;
-
-  return percent;
-};
-
 const StyledTooltip = styled(Tooltip)`
   width: 100%;
   > div:first-child {
     left: ${({ value, min, max }) => {
       let half = value;
-      if (Array.isArray(value)) {
-        half = (value[1] + value[0]) / 2;
+
+      if (typeof value === 'object') {
+        const { from, to } = value;
+        half = (to + from) / 2;
       }
-      return tooltipOffset({ half, min, max });
+
+      return ((half - min) / (max - min)) * 100;
     }}%;
   }
 `;
@@ -33,39 +30,45 @@ class Range extends React.Component {
     super(props);
 
     const { value: valueProp, max, min } = this.props;
-    const value = valueProp >= min && valueProp <= max ? valueProp : min;
+    const value =
+      typeof valueProp === 'object'
+        ? valueProp
+        : valueProp >= min && valueProp <= max
+        ? valueProp
+        : min;
 
     this.state = { value };
   }
 
   handleChange = value => {
-    this.setState({ value });
+    if (Array.isArray(value)) {
+      const [from, to] = value;
+      this.setState({ value: { from, to } });
+    } else {
+      this.setState({ value });
+    }
   };
 
   render() {
-    const { min, max } = this.props;
     const { value } = this.state;
-    const { handleChange } = this;
+    const { handleChange, props } = this;
 
-    console.log(value);
+    const tooltipText =
+      typeof value === 'object' ? `${value.from} a ${value.to}` : value;
 
     return (
-      <StyledTooltip text={value} value={value} min={min} max={max}>
+      <StyledTooltip {...props} text={tooltipText} value={value}>
         {typeof value === 'object' ? (
           <RangeComponent
-            value={[value.from, value.to]}
-            onChange={handleChange}
-            min={min}
-            max={max}
+            {...props}
             allowCross={false}
+            pushable
+            onChange={handleChange}
+            value={[value.from, value.to]}
+            tabIndex={[null, null, null]}
           />
         ) : (
-          <SliderComponent
-            onChange={handleChange}
-            value={value}
-            min={min}
-            max={max}
-          />
+          <SliderComponent {...props} onChange={handleChange} value={value} />
         )}
       </StyledTooltip>
     );
