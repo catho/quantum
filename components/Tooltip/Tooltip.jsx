@@ -81,7 +81,7 @@ class Tooltip extends Component {
   }
 
   render() {
-    const { children, placement, text, className } = this.props;
+    const { children, placement, text, ...rest } = this.props;
     const { width, height, show } = this.state;
     const { length } = text;
 
@@ -90,7 +90,7 @@ class Tooltip extends Component {
         onMouseEnter={this.handleEnter}
         onMouseLeave={this.handleLeave}
         length={length}
-        className={className}
+        {...rest}
       >
         <Tip
           ref={tip => {
