@@ -18,6 +18,13 @@
         "allowChildren": false
       }
     ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "controlComponents": ["Toggle"],
+        "depth": 3
+      }
+    ],
     "no-underscore-dangle": 0,
     "no-unused-expressions": [
       "error",

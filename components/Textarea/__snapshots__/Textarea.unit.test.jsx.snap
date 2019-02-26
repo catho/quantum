@@ -220,7 +220,11 @@ exports[`Radio component with an error message should match the snapshot 1`] = `
     className="c2"
   >
     <div
+<<<<<<< HEAD
       className="c3"
+=======
+      className="ErrorMessage-sc-19jcdrm-0 feYwqr"
+>>>>>>> origin/master
     >
       Error message
     </div>

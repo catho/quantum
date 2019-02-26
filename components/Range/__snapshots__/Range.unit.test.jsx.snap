@@ -99,7 +99,11 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     value={0}
   />
   <div
+<<<<<<< HEAD
     className="c1"
+=======
+    className="ErrorMessage-sc-19jcdrm-0 Range__RangeErrorMessage-yyti5j-0 fJvZVK"
+>>>>>>> origin/master
   >
     Error message
   </div>

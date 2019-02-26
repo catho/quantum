@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styled from 'styled-components';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
+
+const RangeErrorMessage = styled(ErrorMessage)`
+  left: 1px;
+  position: absolute;
+  top: 20px;
+`;
 
 class Range extends React.Component {
   constructor(props) {
@@ -45,7 +52,7 @@ class Range extends React.Component {
           type="range"
           onChange={this.handleChange}
         />
-        {error && <ErrorMessage>{error}</ErrorMessage>}
+        {error && <RangeErrorMessage>{error}</RangeErrorMessage>}
       </FieldGroup>
     );
   }

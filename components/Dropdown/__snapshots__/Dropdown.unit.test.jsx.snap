@@ -297,7 +297,11 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     </button>
   </div>
   <div
+<<<<<<< HEAD
     className="c3"
+=======
+    className="ErrorMessage-sc-19jcdrm-0 Dropdown__DropdownErrorMessage-xoew8d-3 bTkDzo"
+>>>>>>> origin/master
   >
     Error message
   </div>
