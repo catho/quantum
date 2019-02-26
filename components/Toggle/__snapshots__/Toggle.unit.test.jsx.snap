@@ -1,73 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-<<<<<<< HEAD
-exports[`Input component  should match the snapshot 1`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c2 {
-  display: none;
-}
-
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 16px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  line-height: 1.5;
-  cursor: pointer;
-  display: inline-block;
-  padding-right: 54px;
-  position: relative;
-}
-
-.c1:before,
-.c1:after {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.c1:before {
-  background: #b2bec5;
-  border-radius: 10px;
-  content: '';
-  height: 16px;
-  position: absolute;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  top: 50%;
-  width: 42px;
-}
-
-.c1:after {
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border: 1px solid #93a3ad;
-  border-radius: 50%;
-  box-sizing: border-box;
-  content: '';
-  height: 24px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  width: 24px;
-  background-color: #FFFFFF;
-}
-
-.c1:hover:after {
-  background-color: #03a9f4;
-  border: 1px solid transparent;
-=======
 exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
 .c0 {
   display: inline-block;
@@ -316,31 +248,11 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
->>>>>>> origin/master
 }
 
 <div
   className="c0"
 >
-<<<<<<< HEAD
-  <label
-    checked={false}
-    className="c1"
-    disabled={false}
-  >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id=""
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="checkbox"
-    />
-    
-  </label>
-=======
   <input
     checked={null}
     className="c1"
@@ -373,6 +285,5 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
       check
     </span>
   </div>
->>>>>>> origin/master
 </div>
 `;

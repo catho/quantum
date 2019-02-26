@@ -156,9 +156,11 @@ exports[`Radio component with a label should match the snapshot 1`] = `
 
 exports[`Radio component with an error message should match the snapshot 1`] = `
 .c3 {
-  color: #f4365b;
-  font-size: 12px;
-  margin: 5px 0;
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .c0 {
@@ -220,11 +222,7 @@ exports[`Radio component with an error message should match the snapshot 1`] = `
     className="c2"
   >
     <div
-<<<<<<< HEAD
       className="c3"
-=======
-      className="ErrorMessage-sc-19jcdrm-0 feYwqr"
->>>>>>> origin/master
     >
       Error message
     </div>

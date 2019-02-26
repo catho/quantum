@@ -71,17 +71,22 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 `;
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
-.c1 {
-  color: #f4365b;
-  font-size: 12px;
-  margin: 5px 0;
-}
-
 .c0 {
   position: relative;
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+}
+
+.c1 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  left: 1px;
+  position: absolute;
+  top: 20px;
 }
 
 <div
@@ -99,11 +104,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     value={0}
   />
   <div
-<<<<<<< HEAD
     className="c1"
-=======
-    className="ErrorMessage-sc-19jcdrm-0 Range__RangeErrorMessage-yyti5j-0 fJvZVK"
->>>>>>> origin/master
   >
     Error message
   </div>

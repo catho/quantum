@@ -152,12 +152,6 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 `;
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
-.c2 {
-  color: #f4365b;
-  font-size: 12px;
-  margin: 5px 0;
-}
-
 .c1 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -201,6 +195,15 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   margin-top: 20px;
 }
 
+.c2 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
 <div
   className="c0"
 >
@@ -216,11 +219,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   />
   
   <div
-<<<<<<< HEAD
     className="c2"
-=======
-    className="ErrorMessage-sc-19jcdrm-0 Input__InputErrorMessage-sc-16zet9e-4 CRooO"
->>>>>>> origin/master
   >
     Error message
   </div>
