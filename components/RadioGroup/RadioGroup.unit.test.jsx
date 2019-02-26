@@ -82,9 +82,9 @@ describe('<RadioGroup />', () => {
       const wrapper = mount(component);
       const radios = wrapper.find(RadioGroup.Radio);
 
-      radios.map(radio => {
-        expect(radio.prop('name')).toBe(wrapper.prop('name'));
-      });
+      radios.map(radio =>
+        expect(radio.prop('name')).toBe(wrapper.prop('name')),
+      );
     });
 
     it('should have selected prop', () => {
@@ -116,9 +116,7 @@ describe('<RadioGroup />', () => {
       const wrapper = shallow(component);
       const radios = wrapper.find(RadioGroup.Radio);
 
-      radios.map(radio => {
-        radio.simulate('change');
-      });
+      radios.map(radio => radio.simulate('change'));
 
       expect(onChangeMock).toBeCalledTimes(3);
     });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RadioGroup /> snapshot should be the same rendered 1`] = `
+exports[`<RadioGroup /> snapshot should render the same 1`] = `
 "Snapshot Diff:
  Compared values have no visual difference."
 `;
