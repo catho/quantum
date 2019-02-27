@@ -178,7 +178,7 @@ Range.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
   onChange: PropTypes.func,
-  /** A function to format the text inside tooltip component. */
+  /** Slider will pass its value to tipFormatter, display its value in Tooltip, and hide Tooltip when return value is null. */
   tipFormatter: PropTypes.func,
   value: (props, propName, componentName) => {
     const { [propName]: value } = props;
