@@ -5,19 +5,16 @@ import Colors from '../Colors';
 import Label from '../shared/Label';
 
 const RadioMark = styled.span`
-  border-width: 1.5px;
-  border-style: solid;
+  background-color: ${Colors.WHITE};
+  border: 1.5px solid ${Colors.BLACK[400]};
   border-radius: 50%;
-  border-color: ${Colors.BLACK[400]};
+  box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  width: 16px;
   margin-right: 5px;
-  box-sizing: border-box;
-
   position: relative;
   top: 4px;
-  background-color: ${Colors.WHITE};
+  width: 16px;
 
   :after {
     content: '';
