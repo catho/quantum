@@ -178,6 +178,7 @@ Range.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
   onChange: PropTypes.func,
+  /** A function to format the text inside tooltip component. */
   tipFormatter: PropTypes.func,
   value: (props, propName, componentName) => {
     const { [propName]: value } = props;
