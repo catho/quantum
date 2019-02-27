@@ -29,7 +29,7 @@ if [ -n "$BRANCH_NAME" ]; then
 fi
 
 if [[ `git status docs --porcelain` ]] && [ -n "$PREFIX_MSG" ]; then
-    echo "Automacally updating docs"
+    echo "Automatically updating docs"
 
     git add -A docs
     git commit -m "$MSG" --no-verify
