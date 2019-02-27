@@ -57,12 +57,6 @@ const RadioLabel = styled(Label)`
           background-color: ${Colors.BLUE[500]};
         }
       }
-
-      :focus {
-        ~ ${RadioMark} {
-          box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
-        }
-      }
     }
 
     :focus {
@@ -91,12 +85,6 @@ const RadioLabel = styled(Label)`
           :after {
             display: block;
             background-color: ${Colors.ERROR[500]};
-          }
-        }
-
-        :focus {
-          ~ ${RadioMark} {
-            box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
           }
         }
       }
@@ -145,12 +133,6 @@ const RadioLabel = styled(Label)`
           :after {
             display: block;
             background-color: ${Colors.ERROR[500]};
-          }
-        }
-
-        :focus {
-          ~ ${RadioMark} {
-            box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
           }
         }
       }

@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
-import { FieldGroup, Label } from '../shared';
+import { FieldGroup, ErrorMessage } from '../shared';
 
 import Radio from './Radio';
 
@@ -15,12 +14,7 @@ const Group = styled(FieldGroup).attrs({
   position: relative;
 `;
 
-const ErrorLabel = styled(Label)`
-  color: ${Colors.ERROR['900']};
-  cursor: text;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 14px;
+const ErrorLabel = styled(ErrorMessage)`
   margin-left: -3px;
 `;
 
