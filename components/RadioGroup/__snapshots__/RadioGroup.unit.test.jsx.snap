@@ -7,18 +7,16 @@ exports[`<RadioGroup /> snapshot should render the same 1`] = `
 
 exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 .c5 {
-  border-width: 1.5px;
-  border-style: solid;
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
   border-radius: 50%;
-  border-color: #999999;
+  box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  width: 16px;
   margin-right: 5px;
-  box-sizing: border-box;
   position: relative;
   top: 4px;
-  background-color: #FFFFFF;
+  width: 16px;
 }
 
 .c5:after {
@@ -157,18 +155,16 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 
 exports[`<RadioGroup /> snapshot simple with options 1`] = `
 .c5 {
-  border-width: 1.5px;
-  border-style: solid;
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
   border-radius: 50%;
-  border-color: #999999;
+  box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  width: 16px;
   margin-right: 5px;
-  box-sizing: border-box;
   position: relative;
   top: 4px;
-  background-color: #FFFFFF;
+  width: 16px;
 }
 
 .c5:after {

@@ -2,18 +2,16 @@
 
 exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c4 {
-  border-width: 1.5px;
-  border-style: solid;
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
   border-radius: 50%;
-  border-color: #999999;
+  box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  width: 16px;
   margin-right: 5px;
-  box-sizing: border-box;
   position: relative;
   top: 4px;
-  background-color: #FFFFFF;
+  width: 16px;
 }
 
 .c4:after {
@@ -208,18 +206,16 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 .c4 {
-  border-width: 1.5px;
-  border-style: solid;
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
   border-radius: 50%;
-  border-color: #999999;
+  box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  width: 16px;
   margin-right: 5px;
-  box-sizing: border-box;
   position: relative;
   top: 4px;
-  background-color: #FFFFFF;
+  width: 16px;
 }
 
 .c4:after {
@@ -369,18 +365,16 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c4 {
-  border-width: 1.5px;
-  border-style: solid;
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
   border-radius: 50%;
-  border-color: #999999;
+  box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  width: 16px;
   margin-right: 5px;
-  box-sizing: border-box;
   position: relative;
   top: 4px;
-  background-color: #FFFFFF;
+  width: 16px;
 }
 
 .c4:after {
@@ -575,18 +569,16 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 .c4 {
-  border-width: 1.5px;
-  border-style: solid;
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
   border-radius: 50%;
-  border-color: #999999;
+  box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  width: 16px;
   margin-right: 5px;
-  box-sizing: border-box;
   position: relative;
   top: 4px;
-  background-color: #FFFFFF;
+  width: 16px;
 }
 
 .c4:after {
