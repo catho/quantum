@@ -67,7 +67,7 @@ stories.add('Radio Button', () => (
 
         <p>
           For <code>RadioGroup.Radio</code>, and option shape as well, you can
-          add the <code>disable</code> property too
+          add the <code>disable</code> property too:
         </p>
 
         <br />
