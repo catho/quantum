@@ -57,7 +57,7 @@ describe('<RadioGroup />', () => {
   });
 
   describe('<RadioGroup.Radio />', () => {
-    it('simple case', () => {
+    it('should render three <RadioGroup.Radio />', () => {
       const component = (
         <RadioGroup name="foo">
           <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
@@ -87,7 +87,7 @@ describe('<RadioGroup />', () => {
       );
     });
 
-    it('should have selected prop', () => {
+    it('should have <RadioGroup.Radio /> checked matching <RadioGroup /> value', () => {
       const component = (
         <RadioGroup name="foo" value="Bar">
           <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
