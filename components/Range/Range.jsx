@@ -94,7 +94,7 @@ class Range extends React.Component {
       value = valueProp >= min && valueProp <= max ? valueProp : min;
     }
 
-    this.state = { value };
+    this.state = { value, visible: null };
   }
 
   handleChange = value => {
@@ -106,11 +106,21 @@ class Range extends React.Component {
     }
   };
 
+  handleMouseDown = () => {
+    this.setState({ visible: true });
+  };
+
+  handleMouseUp = () => {
+    this.setState({ visible: false });
+  };
+
   render() {
     const {
       handleChange,
+      handleMouseDown,
+      handleMouseUp,
       props,
-      state: { value },
+      state: { value, visible },
     } = this;
     const { handleStyle, trackStyle } = sliderStyle;
 
@@ -118,7 +128,12 @@ class Range extends React.Component {
       typeof value === 'object' ? `${value.from} a ${value.to}` : value;
 
     return (
-      <StyledTooltip {...props} text={tooltipText} value={value}>
+      <StyledTooltip
+        {...props}
+        text={tooltipText}
+        value={value}
+        visible={visible}
+      >
         {typeof value === 'object' ? (
           <StyledRange
             {...props}
@@ -126,6 +141,8 @@ class Range extends React.Component {
             allowCross={false}
             pushable
             onChange={handleChange}
+            onBeforeChange={handleMouseDown}
+            onAfterChange={handleMouseUp}
             value={[value.from, value.to]}
             handleStyle={[handleStyle, handleStyle]}
             trackStyle={[trackStyle, trackStyle]}
@@ -135,6 +152,8 @@ class Range extends React.Component {
             {...props}
             {...sliderStyle}
             onChange={handleChange}
+            onBeforeChange={handleMouseDown}
+            onAfterChange={handleMouseUp}
             value={value}
           />
         )}
