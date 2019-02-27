@@ -33,4 +33,5 @@ if [[ `git status docs --porcelain` ]] && [ -n "$PREFIX_MSG" ]; then
 
     git add -A docs
     git commit -m "$MSG" --no-verify
+    git push --no-verify
 fi

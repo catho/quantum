@@ -43,7 +43,7 @@ stories.add('Radio Button', () => (
         </p>
 
         <p>
-          With a very simple API, you can set an radio group using just a array,
+          With a very simple API, you can set a radio group using just a array,
           such as <code>RadioGroup.Radio</code>:
         </p>
         <br />
