@@ -46,7 +46,7 @@ const FormExample = (
   </Form>
 );
 
-storiesOf('3. Forms', module).add('Validation', () => (
+storiesOf('Forms', module).add('Validation', () => (
   <Heading title="<Form />">
     <TabbedView>
       <Tab title="Usage">

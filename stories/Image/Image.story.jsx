@@ -96,7 +96,7 @@ import { Loading } from '@cathodevel/quantum';
   },
 };
 
-storiesOf('6. Images', module).add('Image', () => (
+storiesOf('Images', module).add('Image', () => (
   <Heading name="Image">
     <TabbedView>
       <Tab title="Usage">

@@ -107,6 +107,6 @@ const exampleTab = (
   </Tab>
 );
 
-storiesOf('2. Buttons', module).add('Button', () => (
+storiesOf('Buttons', module).add('Button', () => (
   <AutoExample component={Button} additionalTabs={exampleTab} />
 ));

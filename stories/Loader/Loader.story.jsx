@@ -42,7 +42,7 @@ LoaderExample.propTypes = { name: PropTypes.string };
 
 const loaderTypes = Object.keys(LoaderTypes);
 
-storiesOf('13. Others', module).add('Loader', () => (
+storiesOf('Others', module).add('Loader', () => (
   <Heading name="Loader">
     <TabbedView>
       <Tab title="Usage">

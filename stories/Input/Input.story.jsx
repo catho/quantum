@@ -33,7 +33,7 @@ const tabExample = (
   </Tab>
 );
 
-storiesOf('3. Forms', module).add('Input', () => (
+storiesOf('Forms', module).add('Input', () => (
   <AutoExample
     component={Input}
     componentProps={{

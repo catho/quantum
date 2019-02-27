@@ -63,7 +63,7 @@ const simpleCardSample = (
   </Card>
 );
 
-storiesOf('9. Card', module).add('Card', () => (
+storiesOf('Card', module).add('Card', () => (
   <Heading name="Card">
     <TabbedView>
       <Tab title="Anatomy">

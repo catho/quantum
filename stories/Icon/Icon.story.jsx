@@ -51,7 +51,7 @@ const exampleCode = `<Icon name="thumb_up" />
 <Icon name="event" skin={Colors.DANGER['300']} />
 `;
 
-storiesOf('1. Foundation', module).add('Icons', () => (
+storiesOf('Foundation', module).add('Icons', () => (
   <React.Fragment>
     <Heading name="Icon">
       <TabbedView>

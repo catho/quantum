@@ -13,7 +13,7 @@ import { Col, Row } from '../../components/Grid';
 import Button from '../../components/Button';
 import Modal from '../../components/Modal';
 
-const stories = storiesOf('5. Modals', module);
+const stories = storiesOf('Modals', module);
 
 const ModalExample = {
   component: (

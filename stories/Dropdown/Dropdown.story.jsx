@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { AutoExample } from '@catho-private/quantum-storybook-ui';
 import Dropdown from '../../components/Dropdown';
 
-storiesOf('3. Forms', module).add('Dropdown', () => (
+storiesOf('Forms', module).add('Dropdown', () => (
   <AutoExample
     component={Dropdown}
     componentProps={{

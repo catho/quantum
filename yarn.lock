@@ -862,6 +862,15 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@catho-private/quantum-storybook-ui@../quantum-storybook-ui":
+  version "0.1.0"
+  dependencies:
+    react-copy-to-clipboard "^5.0.1"
+    react-highlight "^0.12.0"
+    react-markdown "^4.0.6"
+    semantic-ui-css "^2.4.1"
+    semantic-ui-react "^0.84.0"
+
 "@catho-private/quantum-storybook-ui@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@catho-private/quantum-storybook-ui/-/quantum-storybook-ui-0.1.0.tgz#2461761b90a61229d30ad2994f830b2142854095"

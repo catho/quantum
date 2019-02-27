@@ -22,7 +22,7 @@ const StepExample = (
   </Wizard>
 );
 
-const stories = storiesOf('11. Wizard', module);
+const stories = storiesOf('Wizard', module);
 
 stories.add('Wizard', () => (
   <Heading name="Wizard">

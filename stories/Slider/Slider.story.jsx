@@ -56,7 +56,7 @@ const exampleTab = (
   </Tab>
 );
 
-storiesOf('12. Slider', module).add('Slider', () => (
+storiesOf('Slider', module).add('Slider', () => (
   <AutoExample
     component={Slider}
     additionalTabs={exampleTab}

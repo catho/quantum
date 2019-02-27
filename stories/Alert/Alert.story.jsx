@@ -88,6 +88,6 @@ const exampleTab = (
   </Tab>
 );
 
-storiesOf('4. Alerts', module).add('Basic', () => (
+storiesOf('Alerts', module).add('Basic', () => (
   <AutoExample component={Alert} additionalTabs={exampleTab} />
 ));

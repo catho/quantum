@@ -79,7 +79,7 @@ const TextMaskCode = `<TextMask text="06460090" mask={[[/\\d/, /\\d/, /\\d/, /\\
 <TextMask.CEP>06460090</TextMask.CEP>
 <TextMask.CEP text="06460090" />`;
 
-storiesOf('7. Mask', module).add('Text', () => (
+storiesOf('Mask', module).add('Text', () => (
   <React.Fragment>
     <Heading name="TextMask">
       <TabbedView>

@@ -69,7 +69,7 @@ const TabExample = (
   </Tab>
 );
 
-storiesOf('15. Badge', module).add('Badge', () => (
+storiesOf('Badge', module).add('Badge', () => (
   <AutoExample
     component={Badge}
     componentProps={{

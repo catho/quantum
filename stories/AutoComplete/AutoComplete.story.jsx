@@ -4,7 +4,7 @@ import { AutoExample } from '@catho-private/quantum-storybook-ui';
 
 import AutoComplete from '../../components/AutoComplete';
 
-storiesOf('3. Forms', module).add('Auto Complete', () => (
+storiesOf('Forms', module).add('Auto Complete', () => (
   <AutoExample
     component={AutoComplete}
     componentProps={{

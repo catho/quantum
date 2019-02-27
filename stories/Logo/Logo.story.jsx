@@ -33,7 +33,7 @@ const LogoExample = ({ name }) => {
   );
 };
 
-storiesOf('6. Images', module).add('Logo', () => {
+storiesOf('Images', module).add('Logo', () => {
   const logoList = Object.keys(LogoTypes);
   return (
     <Heading name="Logo">

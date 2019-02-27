@@ -52,7 +52,7 @@ const BoxedRadio = (
   </RadioGroup>
 );
 
-const stories = storiesOf('3. Forms', module);
+const stories = storiesOf('Forms', module);
 stories.add('Radio Button', () => (
   <Heading name="Radio" title="<RadioGroup />">
     <TabbedView>
