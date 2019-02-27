@@ -68,10 +68,6 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   background-color: #1355d0;
 }
 
-.c1 .c2:checked:focus ~ .c4 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c1 .c2:focus ~ .c4 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -220,10 +216,6 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 .c1 .c2:checked ~ .c4:after {
   display: block;
   background-color: #1355d0;
-}
-
-.c1 .c2:checked:focus ~ .c4 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1 .c2:focus ~ .c4 {

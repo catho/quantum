@@ -63,10 +63,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   background-color: #1355d0;
 }
 
-.c0 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -93,10 +89,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   background-color: #1355d0;
 }
 
-.c5 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c5 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -119,10 +111,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c5 .c1:checked ~ .c3:after {
   display: block;
   background-color: #ff2d4d;
-}
-
-.c5 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c5 .c1:checked:disabled {
@@ -160,10 +148,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   background-color: #1355d0;
 }
 
-.c6 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c6 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -182,10 +166,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c6 .c1:checked ~ .c3:after {
   display: block;
   background-color: #ff2d4d;
-}
-
-.c6 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c6 .c1:focus ~ .c3 {
@@ -273,10 +253,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   background-color: #1355d0;
 }
 
-.c5 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c5 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -320,10 +296,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   background-color: #1355d0;
 }
 
-.c0 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -350,10 +322,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 .c0 .c1:checked ~ .c3:after {
   display: block;
   background-color: #ff2d4d;
-}
-
-.c0 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c0 .c1:checked:disabled {
@@ -446,10 +414,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   background-color: #1355d0;
 }
 
-.c5 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c5 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -476,10 +440,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   background-color: #1355d0;
 }
 
-.c6 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c6 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -502,10 +462,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c6 .c1:checked ~ .c3:after {
   display: block;
   background-color: #ff2d4d;
-}
-
-.c6 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c6 .c1:checked:disabled {
@@ -559,10 +515,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   background-color: #1355d0;
 }
 
-.c0 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
 .c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
@@ -581,10 +533,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c0 .c1:checked ~ .c3:after {
   display: block;
   background-color: #ff2d4d;
-}
-
-.c0 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c0 .c1:focus ~ .c3 {
@@ -686,10 +634,6 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 .c0 .c1:checked ~ .c3:after {
   display: block;
   background-color: #1355d0;
-}
-
-.c0 .c1:checked:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c0 .c1:focus ~ .c3 {
