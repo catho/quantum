@@ -51,12 +51,13 @@ class Tooltip extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { text } = this.props;
+    const { text, visible } = this.props;
     const { show, width, height } = this.state;
 
     return (
       text !== nextProps.text ||
       show !== nextState.show ||
+      visible !== nextProps.visible ||
       width !== nextState.width ||
       height !== nextState.height
     );
@@ -81,7 +82,7 @@ class Tooltip extends Component {
   }
 
   render() {
-    const { children, placement, text, ...rest } = this.props;
+    const { children, placement, text, visible, ...rest } = this.props;
     const { width, height, show } = this.state;
     const { length } = text;
 
@@ -99,7 +100,7 @@ class Tooltip extends Component {
           placement={placement}
           width={width}
           height={height}
-          show={show}
+          show={visible || show}
         >
           {text}
         </Tip>
@@ -116,6 +117,7 @@ Tooltip.propTypes = {
   text: PropTypes.string,
   /** Define tooltip positioning */
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+  visible: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -125,6 +127,7 @@ Tooltip.propTypes = {
 Tooltip.defaultProps = {
   text: 'Tooltip',
   placement: 'top',
+  visible: undefined,
 };
 
 export default Tooltip;
