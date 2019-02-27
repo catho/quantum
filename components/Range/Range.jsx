@@ -87,22 +87,20 @@ class Range extends React.Component {
   constructor(props) {
     super(props);
 
-    const { value: valueProp, max, min } = this.props;
-    let value = valueProp;
-
-    if (typeof valueProp !== 'object') {
-      value = valueProp >= min && valueProp <= max ? valueProp : min;
-    }
-
-    this.state = { value, visible: null };
+    this.state = { visible: null };
   }
 
   handleChange = value => {
+    const { onChange } = this.props;
+    let rangeValue = value;
+
     if (Array.isArray(value)) {
       const [from, to] = value;
-      this.setState({ value: { from, to } });
+      rangeValue = { from, to };
+
+      onChange(rangeValue);
     } else {
-      this.setState({ value });
+      onChange(rangeValue);
     }
   };
 
@@ -120,12 +118,18 @@ class Range extends React.Component {
       handleMouseDown,
       handleMouseUp,
       props,
-      state: { value, visible },
+      state: { visible },
     } = this;
+
+    const { value, tipFormatter } = this.props;
+    const { from, to } = value;
+
     const { handleStyle, trackStyle } = sliderStyle;
 
     const tooltipText =
-      typeof value === 'object' ? `${value.from} a ${value.to}` : value;
+      typeof value === 'object'
+        ? `${tipFormatter(from)} a ${tipFormatter(to)}`
+        : tipFormatter(value);
 
     return (
       <StyledTooltip
@@ -143,7 +147,7 @@ class Range extends React.Component {
             onChange={handleChange}
             onBeforeChange={handleMouseDown}
             onAfterChange={handleMouseUp}
-            value={[value.from, value.to]}
+            value={[from, to]}
             handleStyle={[handleStyle, handleStyle]}
             trackStyle={[trackStyle, trackStyle]}
           />
@@ -166,18 +170,47 @@ Range.defaultProps = {
   max: 100,
   min: 0,
   value: 50,
+  onChange: () => {},
+  tipFormatter: value => value,
 };
 
 Range.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
-  value: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.shape({
-      from: PropTypes.number,
-      to: PropTypes.number,
-    }),
-  ]),
+  onChange: PropTypes.func,
+  tipFormatter: PropTypes.func,
+  value: (props, propName, componentName) => {
+    const { [propName]: value } = props;
+    const { max, min } = props;
+    const errorMessage = `${propName} prop supplied to ${componentName} is out of bounds. The ${propName} prop must be between ${min} and ${max}.`;
+    const isNumber = val => typeof val === 'number';
+
+    if (typeof value === 'object') {
+      const { from, to } = value;
+
+      if (!isNumber(from) || !isNumber(to)) {
+        return new Error(
+          `The 'from' and 'to' keys from ${propName} prop must be a Number.`,
+        );
+      }
+
+      if (from < min || to > max) {
+        return new Error(errorMessage);
+      }
+
+      return null;
+    }
+
+    if (!isNumber(value)) {
+      return new Error(`${propName} prop must be a Number.`);
+    }
+
+    if (value < min || value > max) {
+      return new Error(errorMessage);
+    }
+
+    return null;
+  },
 };
 
 export default Range;
