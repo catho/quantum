@@ -35,6 +35,7 @@ const StyledRadio = styled.input.attrs({
   border: 0;
   height: 0;
   margin: 0;
+  opacity: 0;
   overflow: hidden;
   padding: 0;
   position: absolute;
