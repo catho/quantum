@@ -61,6 +61,7 @@
     "dotenv-webpack": "^1.6.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
@@ -111,6 +112,9 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileMock.js",
       "\\.(css|less)$": "<rootDir>/styleMock.js"
     },
-    "setupTestFrameworkScriptFile": "<rootDir>/jest-config.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/jest-config.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
