@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Range from './Range';
 import 'jest-styled-components';
 
@@ -7,17 +8,17 @@ describe('<Range />', () => {
   describe('Snapshots', () => {
     it('should match the snapshot when have just one handle', () => {
       const range = mount(<Range value={10} />);
-      expect(range).toMatchSnapshot();
+      expect(toJson(range)).toMatchSnapshot();
     });
 
     it('should match the snapshot when have two handles', () => {
       const range = mount(<Range value={{ from: 10, to: 30 }} />);
-      expect(range).toMatchSnapshot();
+      expect(toJson(range)).toMatchSnapshot();
     });
 
     it('should match the snapshot when <Range /> is disabled', () => {
       const range = mount(<Range disabled />);
-      expect(range).toMatchSnapshot();
+      expect(toJson(range)).toMatchSnapshot();
     });
   });
 
