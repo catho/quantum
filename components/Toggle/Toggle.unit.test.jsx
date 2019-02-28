@@ -2,7 +2,6 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import Toggle from './Toggle';
-import 'jest-styled-components';
 
 describe('<Toggle /> ', () => {
   describe('Snapshots', () => {

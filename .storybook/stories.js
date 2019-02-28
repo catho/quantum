@@ -22,6 +22,7 @@ export default [
   'Dropdown',
   'Input',
   'Radio',
+  'RadioGroup',
   'Textarea',
   'Toggle',
   'Form',

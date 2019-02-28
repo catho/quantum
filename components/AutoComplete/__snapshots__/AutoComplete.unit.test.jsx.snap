@@ -1,14 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AutoComplete component  should match the snapshot 1`] = `
+.c2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #93a3ad;
+  box-sizing: border-box;
+  color: #364c5a;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 3px;
+  outline: none;
+  width: 100%;
+}
+
+.c2::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c2:focus {
+  border-color: #03a9f4;
+}
+
+.c2:focus + .c4 {
+  color: #03a9f4;
+  font-size: 12px;
+  -webkit-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  transform: translateY(-22px);
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c1:first-child {
+  margin-top: 20px;
+}
+
+.c3 {
+  position: relative;
+  top: -20px;
+  left: -2px;
+}
+
+.c3 select {
+  margin-top: initial !important;
+  margin-left: initial !important;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+}
+
 <div
-  className="AutoComplete__Wrapper-sc-1vy8gb0-1 fiwLLF"
+  className="c0"
 >
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c1"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c2"
       defaultValue="test"
       id=""
       list="_datalist"
@@ -22,7 +81,7 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
     
   </div>
   <datalist
-    className="AutoComplete__Datalist-sc-1vy8gb0-0 fJbUIm"
+    className="c3"
     id="_datalist"
   >
     <option

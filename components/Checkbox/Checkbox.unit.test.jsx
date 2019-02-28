@@ -1,7 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
-import 'jest-styled-components';
 
 import Checkbox from './Checkbox';
 

@@ -5,7 +5,6 @@ import { mount } from 'enzyme';
 import Badge from './Badge';
 import Colors from '../Colors';
 import Button from '../Button';
-import 'jest-styled-components';
 
 describe('<Badge />', () => {
   describe('Should match snapshot', () => {

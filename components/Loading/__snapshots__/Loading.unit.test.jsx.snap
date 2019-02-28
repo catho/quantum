@@ -1,16 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loading component  should match the snapshot 1`] = `
+.c0 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: show;
+  animation-name: show;
+}
+
+.c1 {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+
+.c2 {
+  fill: none;
+  stroke: #03a9f4;
+  stroke-width: 3;
+  stroke-dasharray: 110,200;
+  stroke-dashoffset: -10;
+  stroke-linecap: round;
+  -webkit-animation: dash 2s ease-in-out infinite;
+  animation: dash 2s ease-in-out infinite;
+}
+
 <div
-  className="Loading__Wrapper-sc-1tyj5mn-0 clMUyr"
+  className="c0"
   size={60}
 >
   <svg
-    className="Loading__Svg-sc-1tyj5mn-1 loRehu"
+    className="c1"
     viewBox="25 25 50 50"
   >
     <circle
-      className="Loading__Circle-sc-1tyj5mn-2 ilfJjW"
+      className="c2"
       cx="50"
       cy="50"
       r="12"
@@ -20,16 +50,46 @@ exports[`Loading component  should match the snapshot 1`] = `
 `;
 
 exports[`Loading component  should match the snapshot when it's not visible 1`] = `
+.c0 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: hide;
+  animation-name: hide;
+}
+
+.c1 {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+
+.c2 {
+  fill: none;
+  stroke: #03a9f4;
+  stroke-width: 3;
+  stroke-dasharray: 110,200;
+  stroke-dashoffset: -10;
+  stroke-linecap: round;
+  -webkit-animation: dash 2s ease-in-out infinite;
+  animation: dash 2s ease-in-out infinite;
+}
+
 <div
-  className="Loading__Wrapper-sc-1tyj5mn-0 bYSbkq"
+  className="c0"
   size={60}
 >
   <svg
-    className="Loading__Svg-sc-1tyj5mn-1 loRehu"
+    className="c1"
     viewBox="25 25 50 50"
   >
     <circle
-      className="Loading__Circle-sc-1tyj5mn-2 ilfJjW"
+      className="c2"
       cx="50"
       cy="50"
       r="12"
