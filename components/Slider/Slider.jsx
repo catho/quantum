@@ -5,6 +5,7 @@ import RcSlider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Colors from '../Colors';
 import Tooltip from '../Tooltip';
+import valueValidator from './valueValidator';
 
 const sliderStyle = {
   handleStyle: {
@@ -126,15 +127,10 @@ class Slider extends React.Component {
 
     const { handleStyle, trackStyle } = sliderStyle;
 
-    const tooltipText =
-      typeof value === 'object'
-        ? `${tipFormatter(from)} a ${tipFormatter(to)}`
-        : tipFormatter(value);
-
     return (
       <StyledTooltip
         {...props}
-        text={String(tooltipText)}
+        text={String(tipFormatter(value))}
         value={value}
         visible={visible}
       >
@@ -174,7 +170,8 @@ Slider.defaultProps = {
   min: 0,
   value: 50,
   onChange: () => {},
-  tipFormatter: value => value,
+  tipFormatter: value =>
+    typeof value === 'object' ? `${value.from} to ${value.to}` : value,
 };
 
 Slider.propTypes = {
@@ -183,38 +180,7 @@ Slider.propTypes = {
   onChange: PropTypes.func,
   /** Slider will pass its value to tipFormatter, display its value in Tooltip, and hide Tooltip when return value is null. */
   tipFormatter: PropTypes.func,
-  value: (props, propName, componentName) => {
-    const { [propName]: value } = props;
-    const { max, min } = props;
-    const errorMessage = `${propName} prop supplied to ${componentName} is out of bounds. The ${propName} prop must be between ${min} and ${max}.`;
-    const isNumber = val => typeof val === 'number';
-
-    if (typeof value === 'object') {
-      const { from, to } = value;
-
-      if (!isNumber(from) || !isNumber(to)) {
-        return new Error(
-          `The 'from' and 'to' keys from ${propName} prop must be a Number.`,
-        );
-      }
-
-      if (from < min || to > max) {
-        return new Error(errorMessage);
-      }
-
-      return null;
-    }
-
-    if (!isNumber(value)) {
-      return new Error(`${propName} prop must be a Number.`);
-    }
-
-    if (value < min || value > max) {
-      return new Error(errorMessage);
-    }
-
-    return null;
-  },
+  value: valueValidator,
 };
 
 export default Slider;
