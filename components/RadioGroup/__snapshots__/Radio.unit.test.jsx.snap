@@ -30,6 +30,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   border: 0;
   height: 0;
   margin: 0;
+  opacity: 0;
   overflow: hidden;
   padding: 0;
   position: absolute;
@@ -234,6 +235,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   border: 0;
   height: 0;
   margin: 0;
+  opacity: 0;
   overflow: hidden;
   padding: 0;
   position: absolute;
@@ -393,6 +395,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   border: 0;
   height: 0;
   margin: 0;
+  opacity: 0;
   overflow: hidden;
   padding: 0;
   position: absolute;
@@ -597,6 +600,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   border: 0;
   height: 0;
   margin: 0;
+  opacity: 0;
   overflow: hidden;
   padding: 0;
   position: absolute;
