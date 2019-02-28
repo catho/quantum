@@ -1,12 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio component Should match the snapshot 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #364c5a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: inherit;
+  font-size: 14px;
+  font-family: inherit;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c1:focus {
+  border-color: #03a9f4;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  font-size: 12px;
+  margin-left: auto;
+  margin-top: 2px;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 exZTLD"
+  className="c0"
 >
   
   <textarea
-    className="Textarea__Textfield-jsoe8i-0 hcVzjF"
+    className="c1"
     id=""
     maxLength={300}
     name=""
@@ -17,11 +56,11 @@ exports[`Radio component Should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="Textarea__Infos-jsoe8i-1 iTTTOR"
+    className="c2"
   >
     
     <span
-      className="Textarea__Countdown-jsoe8i-2 eqyMRU"
+      className="c3"
     >
       300
     </span>
@@ -30,11 +69,61 @@ exports[`Radio component Should match the snapshot 1`] = `
 `;
 
 exports[`Radio component with a label should match the snapshot 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  border: 1px solid #364c5a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: inherit;
+  font-size: 14px;
+  font-family: inherit;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c2:focus {
+  border-color: #03a9f4;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  font-size: 12px;
+  margin-left: auto;
+  margin-top: 2px;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 exZTLD"
+  className="c0"
 >
   <label
-    className="Label-sc-1ny5bqy-0 bvIVUH"
+    className="c1"
     htmlFor="textarea"
   >
      
@@ -42,7 +131,7 @@ exports[`Radio component with a label should match the snapshot 1`] = `
      
   </label>
   <textarea
-    className="Textarea__Textfield-jsoe8i-0 hcVzjF"
+    className="c2"
     id="textarea"
     maxLength={300}
     name=""
@@ -53,11 +142,11 @@ exports[`Radio component with a label should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="Textarea__Infos-jsoe8i-1 iTTTOR"
+    className="c3"
   >
     
     <span
-      className="Textarea__Countdown-jsoe8i-2 eqyMRU"
+      className="c4"
     >
       300
     </span>
@@ -66,12 +155,60 @@ exports[`Radio component with a label should match the snapshot 1`] = `
 `;
 
 exports[`Radio component with an error message should match the snapshot 1`] = `
+.c3 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #364c5a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: inherit;
+  font-size: 14px;
+  font-family: inherit;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-color: #f4365b;
+}
+
+.c1:focus {
+  border-color: #03a9f4;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  font-size: 12px;
+  margin-left: auto;
+  margin-top: 2px;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 exZTLD"
+  className="c0"
 >
   
   <textarea
-    className="Textarea__Textfield-jsoe8i-0 iphZYw"
+    className="c1"
     id=""
     maxLength={300}
     name=""
@@ -82,15 +219,15 @@ exports[`Radio component with an error message should match the snapshot 1`] = `
     value=""
   />
   <div
-    className="Textarea__Infos-jsoe8i-1 iTTTOR"
+    className="c2"
   >
     <div
-      className="ErrorMessage-sc-19jcdrm-0 feYwqr"
+      className="c3"
     >
       Error message
     </div>
     <span
-      className="Textarea__Countdown-jsoe8i-2 eqyMRU"
+      className="c4"
     >
       300
     </span>

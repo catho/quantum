@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioGroup /> snapshot should render the same 1`] = `
+"Snapshot Diff:
+ Compared values have no visual difference."
+`;
+
+exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
+.c5 {
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 16px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+  width: 16px;
+}
+
+.c5:after {
+  background-color: #1355d0;
+  border-radius: 50%;
+  content: '';
+  display: none;
+  height: 50%;
+  left: 25%;
+  position: absolute;
+  top: 25%;
+  width: 50%;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1 .c2:checked ~ .c4 {
+  border-color: #1355d0;
+}
+
+.c1 .c2:checked ~ .c4:after {
+  background-color: #1355d0;
+  display: block;
+}
+
+.c1 .c2:focus ~ .c4 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:hover .c4,
+.c1:focus .c4 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1 .c2:checked:disabled ~ .c4 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="radiogroup"
+>
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <input
+      className="c2 c3"
+      disabled={false}
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="c4 c5"
+    />
+    Foo
+  </label>
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <input
+      className="c2 c3"
+      disabled={false}
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="c4 c5"
+    />
+    Bar
+  </label>
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <input
+      className="c2 c3"
+      disabled={false}
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="c4 c5"
+    />
+    Baz
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup /> snapshot simple with options 1`] = `
+.c5 {
+  background-color: #FFFFFF;
+  border: 1.5px solid #999999;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 16px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+  width: 16px;
+}
+
+.c5:after {
+  background-color: #1355d0;
+  border-radius: 50%;
+  content: '';
+  display: none;
+  height: 50%;
+  left: 25%;
+  position: absolute;
+  top: 25%;
+  width: 50%;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1 .c2:checked ~ .c4 {
+  border-color: #1355d0;
+}
+
+.c1 .c2:checked ~ .c4:after {
+  background-color: #1355d0;
+  display: block;
+}
+
+.c1 .c2:focus ~ .c4 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:hover .c4,
+.c1:focus .c4 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1 .c2:checked:disabled ~ .c4 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="radiogroup"
+>
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <input
+      className="c2 c3"
+      disabled={false}
+      name="foo"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="c4 c5"
+    />
+    Foo
+  </label>
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <input
+      className="c2 c3"
+      disabled={false}
+      name="foo"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="c4 c5"
+    />
+    Bar
+  </label>
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <input
+      className="c2 c3"
+      disabled={false}
+      name="foo"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="c4 c5"
+    />
+    Baz
+  </label>
+</div>
+`;

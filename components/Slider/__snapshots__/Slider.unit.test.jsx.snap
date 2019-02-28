@@ -1,8 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Slider component  should match the snapshot 1`] = `
+.c0.rc-slider {
+  height: 50px;
+}
+
+.c0.rc-slider-disabled {
+  background-color: transparent;
+}
+
+.c0.rc-slider-disabled .rc-slider-handle {
+  background-color: #647c8a;
+}
+
+.c0 .rc-slider-handle {
+  border: none;
+  box-shadow: 0 0 5px rgba(92,116,130,0.3);
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: border 0.1s,box-shadow 0.1s;
+  transition: border 0.1s,box-shadow 0.1s;
+}
+
+.c0 .rc-slider-handle:hover {
+  box-shadow: 0 0 1px 5px rgba(3,169,244,0.5);
+}
+
+.c0 .rc-slider-handle:active {
+  border: 1px solid #03a9f4;
+  box-shadow: none;
+}
+
+.c0 .rc-slider-mark {
+  width: 100%;
+  height: 18px;
+  overflow: hidden;
+}
+
+.c0 .rc-slider-mark .rc-slider-mark-text:first-child {
+  left: 1% !important;
+}
+
+.c0 .rc-slider-mark .rc-slider-mark-text:last-child {
+  left: 99% !important;
+}
+
+.c0 .rc-slider-rail,
+.c0 .rc-slider-track {
+  height: 8px;
+}
+
+.c0 .rc-slider-track {
+  background-color: #03a9f4;
+}
+
+.c0 .rc-slider-mark {
+  top: 26px;
+}
+
+.c0 .rc-slider-dot {
+  display: none;
+}
+
 <div
-  className="rc-slider Slider__StyledSlider-sc-1xvfbkj-0 bwKNDE"
+  className="rc-slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}

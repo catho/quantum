@@ -8,7 +8,7 @@ import Input from './Input';
 import Loading from './Loading';
 import Modal from './Modal';
 import Alert from './Alert';
-import { Radio, RadioGroup } from './Radio';
+import RadioGroup from './RadioGroup';
 import Range from './Range';
 import Textarea from './Textarea';
 import Toggle from './Toggle';
@@ -43,7 +43,6 @@ export {
   Logo,
   Modal,
   Alert,
-  Radio,
   RadioGroup,
   Range,
   Row,
