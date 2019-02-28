@@ -9,7 +9,6 @@ import Loading from './Loading';
 import Modal from './Modal';
 import Alert from './Alert';
 import { Radio, RadioGroup } from './Radio';
-import Range from './Range';
 import Textarea from './Textarea';
 import Toggle from './Toggle';
 import TextMask from './TextMask';
@@ -45,7 +44,6 @@ export {
   Alert,
   Radio,
   RadioGroup,
-  Range,
   Row,
   Textarea,
   Toggle,

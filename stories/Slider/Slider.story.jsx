@@ -1,70 +1,40 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Tab, Example, AutoExample } from '@catho-private/quantum-storybook-ui';
-
+import {
+  AutoExample,
+  Tab,
+  Example,
+  Title,
+} from '@catho-private/quantum-storybook-ui';
 import Slider from '../../components/Slider';
-import { Container, Row, Col } from '../../components/Grid';
 
-const exampleTab = (
+import { ControlledSlider, ControlledTwoHandles } from './sub-components';
+
+const twoHandles = <Slider value={{ from: 0, to: 100 }} />;
+
+const tipFormatter = <Slider tipFormatter={value => `R$ ${value}`} />;
+
+const tabExample = (
   <Tab title="Example">
-    <Container fluid>
-      <Row>
-        <Col tablet={12} desktop={12} hd={12}>
-          <h3>Simple slider</h3>
-          <Example component={<Slider min={0} max={10} />} />
-        </Col>
-      </Row>
-      <Row>
-        <Col tablet={12} desktop={12} hd={12}>
-          <h3>Slider with tooltip</h3>
-          <Example component={<Slider tooltip min={0} max={10} />} />
-        </Col>
-      </Row>
-      <Row>
-        <Col tablet={12} desktop={12} hd={12}>
-          <h3>Slider with marks</h3>
-          <Example
-            component={
-              <Slider min={0} max={10} marks={{ 0: '0', 5: '5', 10: '10' }} />
-            }
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col tablet={12} desktop={12} hd={12}>
-          <h3>Slider with marks, tooltip and step</h3>
-          <Example
-            component={
-              <Slider
-                tooltip
-                min={0}
-                max={100}
-                step={10}
-                marks={{ 0: '0', 50: '50', 100: '100' }}
-              />
-            }
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col tablet={12} desktop={12} hd={12}>
-          <h3>Slider disabled</h3>
-          <Example component={<Slider disabled min={0} max={100} />} />
-        </Col>
-      </Row>
-    </Container>
+    <Title>With two handles</Title>
+    <Example component={twoHandles} />
+    <Title>tipFormatter</Title>
+    <p>tipFormatter is a prop to format the tooltip value.</p>
+    <Example
+      component={tipFormatter}
+      code="<Slider tipFormatter={value => `R$ ${value}`} />"
+    />{' '}
+    {/* eslint-disable-line */}
+    <Title>Controlled</Title>
+    <Example component={<ControlledSlider />} code={ControlledSlider.code} />
+    <Title>Controlled with two handles</Title>
+    <Example
+      component={<ControlledTwoHandles />}
+      code={ControlledTwoHandles.code}
+    />
   </Tab>
 );
 
 storiesOf('12. Slider', module).add('Slider', () => (
-  <AutoExample
-    component={Slider}
-    additionalTabs={exampleTab}
-    componentProps={{
-      tooltip: true,
-      min: 0,
-      max: 50,
-      step: 10,
-    }}
-  />
+  <AutoExample component={Slider} additionalTabs={tabExample} />
 ));

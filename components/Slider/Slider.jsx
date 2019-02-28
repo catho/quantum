@@ -1,154 +1,220 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import SliderComponent from 'rc-slider';
+import RcSlider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import Colors from '../Colors/deprecated';
+import Colors from '../Colors';
 import Tooltip from '../Tooltip';
-import theme from '../shared/theme';
 
-const StyledSlider = styled(SliderComponent)`
-  &.rc-slider {
-    height: 50px;
+const sliderStyle = {
+  handleStyle: {
+    borderWidth: 0,
+    height: 20,
+    width: 20,
+    marginTop: -6,
+    marginLeft: -9,
+  },
+  trackStyle: {
+    height: 8,
+  },
+  railStyle: {
+    height: 8,
+  },
+};
+
+const customStyle = css`
+  .rc-slider-handle {
+    background-color: ${Colors.BLUE[500]};
+  }
+
+  .rc-slider-rail {
+    background-color: ${Colors.BLUE[200]};
+  }
+
+  .rc-slider-track {
+    background-color: ${Colors.BLUE[50]};
+  }
+
+  .rc-slider-handle:active,
+  .rc-slider-handle:focus {
+    border: none;
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
   }
 
   &.rc-slider-disabled {
+    background: none;
+
     .rc-slider-handle {
-      background-color: ${Colors.SECONDARY[500]};
+      background-color: ${Colors.BLACK[400]};
     }
-    background-color: transparent;
-  }
 
-  .rc-slider-handle {
-    border: none;
-    box-shadow: 0 0 5px ${theme.mixins.hexToRgba(Colors.SECONDARY['600'], 0.3)};
-    margin-left: -10px;
-    width: ${({ disabled }) => (!disabled ? '20px' : '15px')};
-    height: ${({ disabled }) => (!disabled ? '20px' : '15px')};
-    transition: border 0.1s, box-shadow 0.1s;
-
-    ${({ disabled }) =>
-      !disabled &&
-      `&:hover {
-        box-shadow: 0 0 1px 5px ${theme.mixins.hexToRgba(
-          Colors.PRIMARY['500'],
-          0.5,
-        )};
-      }
-
-      &:active {
-        border: 1px solid ${Colors.PRIMARY['500']};
-        box-shadow: none;
-      }
-      `}
-}
-
-  .rc-slider-mark {
-    width: 100%;
-    height: 18px;
-    overflow: hidden;
-
-    .rc-slider-mark-text:first-child {
-      left: 1% !important;
+    .rc-slider-rail {
+      background-color: ${Colors.BLACK[100]};
     }
-    .rc-slider-mark-text:last-child {
-      left: 99% !important;
+
+    .rc-slider-track {
+      background-color: ${Colors.BLACK[200]};
     }
   }
-
-  .rc-slider-rail,
-  .rc-slider-track {
-    height: 8px;
-  }
-
-  .rc-slider-track {
-    background-color: ${Colors.PRIMARY['500']};
-  }
-
-  .rc-slider-mark {
-    top: 26px;
-  }
-
-  .rc-slider-dot {
-    display: none;
-  }
-}
 `;
 
-const { Handle: OriginalHandle } = SliderComponent;
+const StyledSlider = styled(RcSlider)`
+  ${customStyle}
+`;
+const StyledRange = styled(RcSlider.Range)`
+  ${customStyle}
+`;
 
-const Handle = ({ value, offset, dragging, ...restProps }) => (
-  <Tooltip slider offset={offset.toString()} text={value.toString()}>
-    <OriginalHandle value={value} offset={offset} {...restProps} />
-  </Tooltip>
-);
+const StyledTooltip = styled(Tooltip)`
+  width: 100%;
 
-Handle.defaultProps = {
-  value: 0,
-  offset: '',
-  dragging: false,
-};
+  > div:first-child {
+    top: -41px;
+    left: ${({ value, min, max }) => {
+      let half = value;
 
-Handle.propTypes = {
-  value: PropTypes.number,
-  offset: PropTypes.string,
-  dragging: PropTypes.bool,
-};
+      if (typeof value === 'object') {
+        const { from, to } = value;
+        half = (to + from) / 2;
+      }
 
-/** Sliders allow users to make selections from a range of values. */
-const Slider = ({ tooltip, marks, min, max, step, disabled, ...rest }) => {
-  const sliderProps = {
-    min,
-    max,
-    step,
-    disabled,
-    ...rest,
+      return ((half - min) / (max - min)) * 100;
+    }}%;
+  }
+`;
+
+class Slider extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { visible: null };
+  }
+
+  handleChange = value => {
+    const { onChange } = this.props;
+    let rangeValue = value;
+
+    if (Array.isArray(value)) {
+      const [from, to] = value;
+      rangeValue = { from, to };
+
+      onChange(rangeValue);
+    } else {
+      onChange(rangeValue);
+    }
   };
 
-  if (tooltip) {
-    sliderProps.handle = Handle;
-  }
+  handleMouseDown = () => {
+    this.setState({ visible: true });
+  };
 
-  if (marks) {
-    sliderProps.marks = marks;
-  }
+  handleMouseUp = () => {
+    this.setState({ visible: false });
+  };
 
-  return <StyledSlider {...sliderProps} />;
-};
+  render() {
+    const {
+      handleChange,
+      handleMouseDown,
+      handleMouseUp,
+      props,
+      state: { visible },
+    } = this;
+
+    const { value, tipFormatter } = this.props;
+    const { from, to } = value;
+
+    const { handleStyle, trackStyle } = sliderStyle;
+
+    const tooltipText =
+      typeof value === 'object'
+        ? `${tipFormatter(from)} a ${tipFormatter(to)}`
+        : tipFormatter(value);
+
+    return (
+      <StyledTooltip
+        {...props}
+        text={String(tooltipText)}
+        value={value}
+        visible={visible}
+      >
+        {typeof value === 'object' ? (
+          <StyledRange
+            {...props}
+            {...sliderStyle}
+            allowCross={false}
+            pushable
+            onChange={handleChange}
+            onBeforeChange={handleMouseDown}
+            onAfterChange={handleMouseUp}
+            value={[from, to]}
+            handleStyle={[handleStyle, handleStyle]}
+            trackStyle={[trackStyle, trackStyle]}
+          />
+        ) : (
+          <StyledSlider
+            {...props}
+            {...sliderStyle}
+            onChange={handleChange}
+            onBeforeChange={handleMouseDown}
+            onAfterChange={handleMouseUp}
+            value={value}
+          />
+        )}
+      </StyledTooltip>
+    );
+  }
+}
+
+StyledRange.displayName = 'rcRange';
+StyledSlider.displayName = 'rcSlider';
 
 Slider.defaultProps = {
-  step: 1,
-  disabled: false,
-  tooltip: false,
-  marks: {},
+  max: 100,
+  min: 0,
+  value: 50,
   onChange: () => {},
-  onBeforeChange: () => {},
-  onAfterChange: () => {},
-  onClick: () => {},
+  tipFormatter: value => value,
 };
 
 Slider.propTypes = {
-  /** Minimum value allowed */
-  min: PropTypes.number.isRequired,
-  /** Maximum value allowed */
-  max: PropTypes.number.isRequired,
-  /** Value on how much increment the value on drag event */
-  step: PropTypes.number,
-  /** Disable slider */
-  disabled: PropTypes.bool,
-  /** Shows the value while dragging on a tooltip above the slider */
-  tooltip: PropTypes.bool,
-  /** Dots on specified values to snap the drag on Slider */
-  // eslint-disable-next-line react/forbid-prop-types
-  marks: PropTypes.object,
-  /** Triggers a function on OnChange event, it returns the current value */
+  max: PropTypes.number,
+  min: PropTypes.number,
   onChange: PropTypes.func,
-  /** Triggers a function before OnChange event */
-  onBeforeChange: PropTypes.func,
-  /** Triggers a function after OnChange event */
-  onAfterChange: PropTypes.func,
-  /** Triggers a function on Onclick event */
-  onClick: PropTypes.func,
+  /** Slider will pass its value to tipFormatter, display its value in Tooltip, and hide Tooltip when return value is null. */
+  tipFormatter: PropTypes.func,
+  value: (props, propName, componentName) => {
+    const { [propName]: value } = props;
+    const { max, min } = props;
+    const errorMessage = `${propName} prop supplied to ${componentName} is out of bounds. The ${propName} prop must be between ${min} and ${max}.`;
+    const isNumber = val => typeof val === 'number';
+
+    if (typeof value === 'object') {
+      const { from, to } = value;
+
+      if (!isNumber(from) || !isNumber(to)) {
+        return new Error(
+          `The 'from' and 'to' keys from ${propName} prop must be a Number.`,
+        );
+      }
+
+      if (from < min || to > max) {
+        return new Error(errorMessage);
+      }
+
+      return null;
+    }
+
+    if (!isNumber(value)) {
+      return new Error(`${propName} prop must be a Number.`);
+    }
+
+    if (value < min || value > max) {
+      return new Error(errorMessage);
+    }
+
+    return null;
+  },
 };
 
 export default Slider;
