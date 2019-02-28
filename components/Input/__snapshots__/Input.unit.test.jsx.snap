@@ -1,11 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component  should match the snapshot 1`] = `
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #93a3ad;
+  box-sizing: border-box;
+  color: #364c5a;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 3px;
+  outline: none;
+  width: 100%;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #03a9f4;
+}
+
+.c1:focus + .c2 {
+  color: #03a9f4;
+  font-size: 12px;
+  -webkit-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  transform: translateY(-22px);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+  className="c0"
 >
   <input
-    className="Input__InputTag-sc-16zet9e-1 inKlOh"
+    className="c1"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -20,11 +63,76 @@ exports[`Input component  should match the snapshot 1`] = `
 `;
 
 exports[`Input component  with a label should match the snapshot 1`] = `
+.c3 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: text;
+  font-size: 16px;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 12px;
+  -webkit-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  transform: translateY(-22px);
+}
+
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #93a3ad;
+  box-sizing: border-box;
+  color: #364c5a;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 3px;
+  outline: none;
+  width: 100%;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #03a9f4;
+}
+
+.c1:focus + .c2 {
+  color: #03a9f4;
+  font-size: 12px;
+  -webkit-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  transform: translateY(-22px);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+  className="c0"
 >
   <input
-    className="Input__InputTag-sc-16zet9e-1 inKlOh"
+    className="c1"
     defaultValue="foo"
     id="input-with-label"
     maxLength=""
@@ -34,7 +142,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     type="text"
   />
   <label
-    className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 kHrprc"
+    className="c2 c3"
     htmlFor="input-with-label"
   >
     Text label
@@ -44,11 +152,63 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 `;
 
 exports[`Input component  with an error message should match the snapshot 1`] = `
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #93a3ad;
+  box-sizing: border-box;
+  color: #364c5a;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 3px;
+  outline: none;
+  width: 100%;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #03a9f4;
+}
+
+.c1:focus + .c3 {
+  color: #03a9f4;
+  font-size: 12px;
+  -webkit-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  transform: translateY(-22px);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+.c2 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
 <div
-  className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+  className="c0"
 >
   <input
-    className="Input__InputTag-sc-16zet9e-1 inKlOh"
+    className="c1"
     defaultValue="foo"
     id=""
     maxLength=""
@@ -59,7 +219,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   />
   
   <div
-    className="ErrorMessage-sc-19jcdrm-0 Input__InputErrorMessage-sc-16zet9e-4 CRooO"
+    className="c2"
   >
     Error message
   </div>
