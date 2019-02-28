@@ -21,7 +21,7 @@ export default [
   'Checkbox',
   'Dropdown',
   'Input',
-  'Radio',
+  'RadioGroup',
   'Textarea',
   'Toggle',
   'Form',

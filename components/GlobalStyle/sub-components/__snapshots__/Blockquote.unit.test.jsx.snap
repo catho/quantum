@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Blockquote /> Should match the snapshot 1`] = `
+.c0 {
+  font-size: 12px;
+  line-height: 18px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
 <blockquote
-  className="Blockquote-wqzdn1-0 dpfPEW"
+  className="c0"
 />
 `;
