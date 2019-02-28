@@ -134,7 +134,7 @@ class Range extends React.Component {
     return (
       <StyledTooltip
         {...props}
-        text={tooltipText}
+        text={String(tooltipText)}
         value={value}
         visible={visible}
       >
@@ -165,6 +165,9 @@ class Range extends React.Component {
     );
   }
 }
+
+StyledRange.displayName = 'rcRange';
+StyledSlider.displayName = 'rcSlider';
 
 Range.defaultProps = {
   max: 100,
