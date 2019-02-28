@@ -17,28 +17,28 @@ const RadioMark = styled.span`
   width: 16px;
 
   :after {
+    background-color: ${Colors.BLUE[500]};
+    border-radius: 50%;
     content: '';
     display: none;
+    height: 50%;
+    left: 25%;
     position: absolute;
     top: 25%;
-    left: 25%;
     width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    background-color: ${Colors.BLUE[500]};
   }
 `;
 
 const StyledRadio = styled.input.attrs({
   type: 'radio',
 })`
-  width: 0;
-  height: 0;
   border: 0;
-  padding: 0;
+  height: 0;
   margin: 0;
   overflow: hidden;
+  padding: 0;
   position: absolute;
+  width: 0;
 `;
 
 const RadioLabel = styled(Label)`
@@ -50,8 +50,8 @@ const RadioLabel = styled(Label)`
       ~ ${RadioMark} {
         border-color: ${Colors.BLUE[500]};
         :after {
-          display: block;
           background-color: ${Colors.BLUE[500]};
+          display: block;
         }
       }
     }
@@ -80,8 +80,8 @@ const RadioLabel = styled(Label)`
         ~ ${RadioMark} {
           border-color: ${Colors.ERROR[500]};
           :after {
-            display: block;
             background-color: ${Colors.ERROR[500]};
+            display: block;
           }
         }
       }
@@ -128,8 +128,8 @@ const RadioLabel = styled(Label)`
         ~ ${RadioMark} {
           border-color: ${Colors.ERROR[500]};
           :after {
-            display: block;
             background-color: ${Colors.ERROR[500]};
+            display: block;
           }
         }
       }

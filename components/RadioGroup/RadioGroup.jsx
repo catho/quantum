@@ -10,7 +10,6 @@ const Group = styled(FieldGroup).attrs({
 })`
   display: flex;
   flex-direction: column;
-
   position: relative;
 `;
 
