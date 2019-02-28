@@ -22,9 +22,8 @@ const tabExample = (
     <p>tipFormatter is a prop to format the tooltip value.</p>
     <Example
       component={tipFormatter}
-      code="<Slider tipFormatter={value => `R$ ${value}`} />"
-    />{' '}
-    {/* eslint-disable-line */}
+      code="<Slider tipFormatter={value => `R$ ${value}`} />" // eslint-disable-line
+    />
     <Title>Controlled</Title>
     <Example component={<ControlledSlider />} code={ControlledSlider.code} />
     <Title>Controlled with two handles</Title>
