@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Slider from './Slider';
 import 'jest-styled-components';
@@ -22,23 +22,7 @@ describe('<Slider />', () => {
     });
   });
 
-  describe('Tooltip position', () => {
-    it('should align <Tooltip /> correctly when have just one handle', () => {
-      const range = mount(<Slider value={50} />);
-      const tooltip = range.find('Tip');
-
-      expect(tooltip).toHaveStyleRule('left', '50%');
-    });
-
-    it('shuold align <Tooltip /> correctly when have two handles', () => {
-      const range = mount(<Slider value={{ from: 0, to: 100 }} />);
-      const tooltip = range.find('Tip');
-
-      expect(tooltip).toHaveStyleRule('left', '50%');
-    });
-  });
-
-  describe('tipFormatter', () => {
+  describe('tipFormatter prop', () => {
     it('should format Tooltip text and display it correctly when have just one handle', () => {
       const range = mount(
         <Slider value={10} tipFormatter={value => `R$ ${value}`} />,
@@ -58,6 +42,30 @@ describe('<Slider />', () => {
       const tooltip = range.find('Tip');
 
       expect(tooltip.text()).toBe('10km to 40km');
+    });
+  });
+
+  describe('onChange prop', () => {
+    it('should call it with currently slider value', () => {
+      const onChangeMock = jest.fn();
+      const range = shallow(<Slider value={10} onChange={onChangeMock} />);
+      const slider = range.find('rcSlider');
+
+      slider.simulate('change', 20);
+
+      expect(onChangeMock).toBeCalledWith(20);
+    });
+
+    it('should call it with currently range value', () => {
+      const onChangeMock = jest.fn();
+      const range = shallow(
+        <Slider value={{ from: 0, to: 100 }} onChange={onChangeMock} />,
+      );
+      const slider = range.find('rcRange');
+
+      slider.simulate('change', [20, 80]);
+
+      expect(onChangeMock).toBeCalledWith({ from: 20, to: 80 });
     });
   });
 
