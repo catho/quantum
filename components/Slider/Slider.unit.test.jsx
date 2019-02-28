@@ -79,8 +79,8 @@ describe('<Slider />', () => {
       const rcSlider = slider.find('rcSlider');
       const rcRange = range.find('rcRange');
 
-      expect(rcSlider.props().min).toBe(min);
-      expect(rcRange.props().min).toBe(min);
+      expect(rcSlider.prop('min')).toBe(min);
+      expect(rcRange.prop('min')).toBe(min);
     });
 
     it('should pass max prop to inner rc-slider component', () => {
