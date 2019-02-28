@@ -30,8 +30,8 @@ RadioGroupExample.propTypes = {
 };
 
 const stories = storiesOf('3. Forms', module);
-stories.add('Radio Button', () => (
-  <Heading name="Radio" title="<RadioGroup />">
+stories.add('Radio group', () => (
+  <Heading name="RadioGroup" title="<RadioGroup />">
     <TabbedView>
       <Tab title="Usage">
         <HowToImport importModules="RadioGroup" componentName="RadioGroup" />
