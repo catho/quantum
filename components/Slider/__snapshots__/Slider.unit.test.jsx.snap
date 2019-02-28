@@ -1177,7 +1177,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
     max={100}
     min={0}
     onChange={[Function]}
-    text="10 a 30"
+    text="10 to 30"
     tipFormatter={[Function]}
     value={
       Object {
@@ -1217,7 +1217,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
       max={100}
       min={0}
       onChange={[Function]}
-      text="10 a 30"
+      text="10 to 30"
       tipFormatter={[Function]}
       value={
         Object {
@@ -1233,7 +1233,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
         min={0}
         onChange={[Function]}
         placement="top"
-        text="10 a 30"
+        text="10 to 30"
         tipFormatter={[Function]}
         value={
           Object {
@@ -1245,7 +1245,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
       >
         <Tooltip__Wrapper
           className="c0"
-          length={7}
+          length={8}
           max={100}
           min={0}
           onChange={[Function]}
@@ -1290,7 +1290,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
               }
             }
             forwardedRef={null}
-            length={7}
+            length={8}
             max={100}
             min={0}
             onChange={[Function]}
@@ -1372,7 +1372,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
                     height={0}
                     width={0}
                   >
-                    10 a 30
+                    10 to 30
                   </div>
                 </StyledComponent>
               </Tip>

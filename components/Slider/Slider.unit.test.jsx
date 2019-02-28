@@ -52,12 +52,12 @@ describe('<Slider />', () => {
       const range = mount(
         <Slider
           value={{ from: 10, to: 40 }}
-          tipFormatter={value => `${value}km`}
+          tipFormatter={({ from, to }) => `${from}km to ${to}km`}
         />,
       );
       const tooltip = range.find('Tip');
 
-      expect(tooltip.text()).toBe('10km a 40km');
+      expect(tooltip.text()).toBe('10km to 40km');
     });
   });
 
@@ -86,26 +86,6 @@ describe('<Slider />', () => {
 
       expect(rcSlider.props().max).toBe(max);
       expect(rcRange.props().max).toBe(max);
-    });
-
-    describe('PropType errors', () => {
-      it(`should throw PropType error when 'value' prop is below accepted min value`, () => {
-        global.console = { error: jest.fn() };
-        mount(<Slider min={10} value={0} />);
-
-        expect(console.error).toBeCalled(); // eslint-disable-line
-
-        global.console.error.mockReset();
-      });
-
-      it(`should throw PropType error when 'value' prop is higher than accepted max value`, () => {
-        global.console = { error: jest.fn() };
-        mount(<Slider max={50} value={60} />);
-
-        expect(console.error).toBeCalled(); // eslint-disable-line
-
-        global.console.error.mockReset();
-      });
     });
   });
 

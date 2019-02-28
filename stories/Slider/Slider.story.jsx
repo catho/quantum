@@ -13,9 +13,15 @@ import { ControlledSlider, ControlledTwoHandles } from './sub-components';
 const twoHandles = <Slider value={{ from: 0, to: 100 }} />;
 
 const tipFormatter = <Slider tipFormatter={value => `R$ ${value}`} />;
+const tipFormatterWithTwoHandles = (
+  <Slider
+    value={{ from: 10, to: 80 }}
+    tipFormatter={({ from, to }) => `From ${from} to ${to} functionaries`}
+  />
+);
 
 const tabExample = (
-  <Tab title="Example">
+  <Tab title="Examples">
     <Title>With two handles</Title>
     <Example component={twoHandles} />
     <Title>tipFormatter</Title>
@@ -23,6 +29,10 @@ const tabExample = (
     <Example
       component={tipFormatter}
       code="<Slider tipFormatter={value => `R$ ${value}`} />" // eslint-disable-line
+    />
+    <Example
+      component={tipFormatterWithTwoHandles}
+      code="<Slider tipFormatter={({from, to}) => `From ${from} to ${to} functionaries`} />" // eslint-disable-line
     />
     <Title>Controlled</Title>
     <Example component={<ControlledSlider />} code={ControlledSlider.code} />
