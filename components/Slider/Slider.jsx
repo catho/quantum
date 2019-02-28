@@ -93,15 +93,12 @@ class Slider extends React.Component {
 
   handleChange = value => {
     const { onChange } = this.props;
-    let rangeValue = value;
 
     if (Array.isArray(value)) {
       const [from, to] = value;
-      rangeValue = { from, to };
-
-      onChange(rangeValue);
+      onChange({ from, to });
     } else {
-      onChange(rangeValue);
+      onChange(value);
     }
   };
 
@@ -122,7 +119,7 @@ class Slider extends React.Component {
       state: { visible },
     } = this;
 
-    const { value, tipFormatter } = this.props;
+    const { value, tipFormatter } = props;
     const { from, to } = value;
 
     const { handleStyle, trackStyle } = sliderStyle;
