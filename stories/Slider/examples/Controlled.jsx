@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from '../../../components/Slider';
 
-class ControlledSlider extends Component {
+class Controlled extends Component {
   constructor(props) {
     super(props);
 
@@ -19,7 +19,7 @@ class ControlledSlider extends Component {
   }
 }
 
-ControlledSlider.code = `
+Controlled.code = `
 import React, { Component } from 'react';
 import { Slider } from '@catho-private/quantum';
 
@@ -44,4 +44,4 @@ class ControlledSlider extends Component {
 }
 `;
 
-export default ControlledSlider;
+export default Controlled;

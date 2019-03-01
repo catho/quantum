@@ -8,7 +8,7 @@ import {
 } from '@catho-private/quantum-storybook-ui';
 import Slider from '../../components/Slider';
 
-import { ControlledSlider, ControlledTwoHandles } from './sub-components';
+import { ControlledSlider, ControlledTwoHandles } from './examples';
 
 const twoHandles = <Slider value={{ from: 70, to: 90 }} min={50} max={100} />;
 
