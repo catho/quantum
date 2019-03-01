@@ -15,26 +15,31 @@ const sliderStyle = {
     marginTop: -6,
     width: 20,
   },
-  trackStyle: {
-    height: 8,
-  },
-  railStyle: {
-    height: 8,
-  },
   marksStyle: {
     common: {
       fontSize: 16,
       marginLeft: 0,
       width: 'auto',
     },
-    min: {
-      left: 0,
-    },
     max: {
       left: 'unset',
       right: 0,
     },
+    min: { left: 0 },
   },
+  railStyle: { height: 8 },
+  trackStyle: { height: 8 },
+};
+
+const tipPosition = ({ value, min, max }) => {
+  let half = value;
+
+  if (typeof value === 'object') {
+    const { from, to } = value;
+    half = (to + from) / 2;
+  }
+
+  return ((half - min) / (max - min)) * 100;
 };
 
 const customStyle = css`
@@ -84,17 +89,8 @@ const StyledTooltip = styled(Tooltip)`
   width: 100%;
 
   > div:first-child {
+    left: ${tipPosition}%;
     top: -41px;
-    left: ${({ value, min, max }) => {
-      let half = value;
-
-      if (typeof value === 'object') {
-        const { from, to } = value;
-        half = (to + from) / 2;
-      }
-
-      return ((half - min) / (max - min)) * 100;
-    }}%;
   }
 `;
 

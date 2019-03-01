@@ -1,20 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import {
-  Example,
   Title,
   Heading,
   TabbedView,
   Tab,
   HowToImport,
   CodeExample,
-  AutoPropsApi,
 } from '@catho-private/quantum-storybook-ui';
 import { Col, Row } from '../../components/Grid';
 import List from '../../components/List';
-import Slider from '../../components/Slider';
 
-import * as Samples from './sub-components';
+import * as Samples from './examples';
 
 storiesOf('3. Forms', module).add('Slider', () => (
   <Heading name="Slider">
