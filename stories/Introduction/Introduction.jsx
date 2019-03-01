@@ -1,131 +1,60 @@
 import React from 'react';
-import styled from 'styled-components';
-import Highlight from 'react-highlight';
 import {
   Title,
-  CodeToClipboard,
-  TabbedView,
-  Tab,
+  StoryContainer,
+  SimpleHighlight,
 } from '@catho-private/quantum-storybook-ui';
-
-import Image from '../../components/Image';
 
 const registry = 'registry="http://armazem.devel:4873/"';
 const yarnAdd = 'yarn add @cathodevel/quantum';
 const importHeader = `import { Header } from '@cathodevel/quantum';
 export default () => <Header />;`;
 
-const HighlightWrapper = styled.div`
-  position: relative;
-`;
-
-const registryCmd = 'sudo npm set registry http://armazem.devel:4873';
-const installCmd = 'sudo npm i -g @cathodevel/create-catho-app';
-
-const Terminal = styled.div`
-  background-color: #092c36;
-  padding: 10px;
-  display: inline-block;
-  margin-bottom: 20px;
-`;
-
-const gifUrls = {
-  app:
-    'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/application-react.gif',
-  component:
-    'http://gitlab.devel/frontend-platform/create-catho-app/raw/master/examples/component-stateful.gif',
-};
+const codeBackgroundColor = '#e8f2fc';
+const codefontColor = '#1a82e2';
 
 const Introduction = () => (
-  <React.Fragment>
+  <StoryContainer>
+    <Title as="h2">Starting from scratch</Title>
     <p>
-      The official <strong>Catho</strong> style guide
+      Quantum can be easily included in applications or one-off projects. We
+      recommend pulling the latest version of Style Guide's CSS from our CDN.
+      You may also clone this repository and pull in the component SCSS files if
+      you wish to only include a portion of Style Guide in your project.
     </p>
 
-    <Title style={{ marginTop: '40px' }}>Starting from scratch</Title>
-
+    <Title as="h3">React based</Title>
     <p>
-      In order to easily creating new apps or components, we present our{' '}
-      <a
-        href="https://en.wikipedia.org/wiki/Command-line_interface"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        CLI
-      </a>
-      .
+      We have chosen React as our preferred front-end framework. To that end, we
+      maintain the sibling project UI Components, which implements Style Guide
+      as React Components. If you are building a feature in React, prefer this
+      library because the components encapsulate logic, markup, and (in the
+      future) styles. Repository Storybook On NPM
     </p>
 
-    <h3>How to install</h3>
-
-    <p>First, set your registry properly with our local package registry:</p>
-    <HighlightWrapper>
-      <Highlight language="bash" className="highlight">
-        {registryCmd}
-      </Highlight>
-
-      <CodeToClipboard code={registryCmd} />
-    </HighlightWrapper>
-
-    <p>Then, install it globally:</p>
-    <HighlightWrapper>
-      <Highlight language="bash" className="highlight">
-        {installCmd}
-      </Highlight>
-
-      <CodeToClipboard code={installCmd} />
-    </HighlightWrapper>
-
-    <TabbedView>
-      <Tab title="Application">
-        <Terminal>
-          <Image
-            src={gifUrls.app}
-            alt="Creating a react application with few commands"
-          />
-        </Terminal>
-      </Tab>
-      <Tab title="Component">
-        <Terminal>
-          <Image
-            src={gifUrls.component}
-            alt="Creating a react component with few commands"
-          />
-        </Terminal>
-      </Tab>
-    </TabbedView>
-
-    <Title>Using with an existing project</Title>
-
-    <p>
-      Create a <code>.npmrc</code> file, with the following content:
-    </p>
-    <HighlightWrapper>
-      <Highlight language="javascript" className="highlight">
-        {registry}
-      </Highlight>
-
-      <CodeToClipboard code={registry} />
-    </HighlightWrapper>
-
+    <Title as="h3">Installing Quantum</Title>
+    <p>Create a .npmrc file, with the following content:</p>
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {registry}
+    </SimpleHighlight>
     <p>Add as a dependency:</p>
-    <HighlightWrapper>
-      <Highlight language="javascript" className="highlight">
-        {yarnAdd}
-      </Highlight>
-
-      <CodeToClipboard code={yarnAdd} />
-    </HighlightWrapper>
-
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {yarnAdd}
+    </SimpleHighlight>
     <p>Use in your react project:</p>
-    <HighlightWrapper>
-      <Highlight language="javascript" className="highlight">
-        {importHeader}
-      </Highlight>
-
-      <CodeToClipboard code={importHeader} />
-    </HighlightWrapper>
-  </React.Fragment>
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {importHeader}
+    </SimpleHighlight>
+  </StoryContainer>
 );
 
 export default Introduction;

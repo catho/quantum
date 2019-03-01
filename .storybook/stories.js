@@ -17,50 +17,50 @@ export default [
   'Button',
 
   // 3. Forms
-  'AutoComplete',
+  //'AutoComplete',
   'Checkbox',
   'Dropdown',
-  'Input',
+  //'Input',
   'Radio',
   'Range',
-  'Textarea',
+  //'Textarea',
   'Toggle',
   'Form',
 
   // 4. Alerts
-  'Alert',
+  //'Alert',
 
   // 5. Modals
-  'Modal',
+  //'Modal',
 
   // 6. Images
-  'Image',
-  'Logo',
+  //'Image',
+  //'Logo',
 
   // 7. Mask
-  'TextMask',
+  //'TextMask',
 
   // 8. Tooltip
   'Tooltip',
 
   // 9. Card
-  'Card',
+  //'Card',
 
   // 10. List
-  'List',
+  //'List',
 
   // 11. Wizard
-  'Wizard',
+  //'Wizard',
 
   // 12. Slider
-  'Slider',
+  //'Slider',
 
   // 13. Other
-  'Loading',
-  'Loader',
+  //'Loading',
+  //'Loader',
 
   // 14. Popover
-  'Popover',
+  //'Popover',
 
   // 15. Badge
   'Badge',
