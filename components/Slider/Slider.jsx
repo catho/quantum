@@ -22,16 +22,17 @@ const sliderStyle = {
     height: 8,
   },
   marksStyle: {
-    min: {
-      left: 0,
+    common: {
       marginLeft: 0,
       width: 'auto',
+      fontSize: 16,
+    },
+    min: {
+      left: 0,
     },
     max: {
       right: 0,
-      marginLeft: 0,
       left: 'unset',
-      width: 'auto',
     },
   },
 };
@@ -137,11 +138,17 @@ class Slider extends React.Component {
     const { handleStyle, trackStyle, marksStyle, railStyle } = sliderStyle;
     const marks = {
       [min]: {
-        style: marksStyle.min,
+        style: {
+          ...marksStyle.common,
+          ...marksStyle.min,
+        },
         label: minMaxFormatter(min),
       },
       [max]: {
-        style: marksStyle.max,
+        style: {
+          ...marksStyle.common,
+          ...marksStyle.max,
+        },
         label: minMaxFormatter(max),
       },
     };
