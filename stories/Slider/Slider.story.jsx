@@ -10,13 +10,14 @@ import Slider from '../../components/Slider';
 
 import { ControlledSlider, ControlledTwoHandles } from './sub-components';
 
-const twoHandles = <Slider value={{ from: 0, to: 100 }} />;
+const twoHandles = <Slider value={{ from: 70, to: 90 }} min={50} max={100} />;
 
 const tipFormatter = <Slider tipFormatter={value => `R$ ${value}`} />;
 const tipFormatterWithTwoHandles = (
   <Slider
     value={{ from: 10, to: 80 }}
     tipFormatter={({ from, to }) => `From ${from} to ${to} functionaries`}
+    minMaxFormatter={value => `R$ ${value}`}
   />
 );
 
@@ -44,6 +45,6 @@ const tabExample = (
   </Tab>
 );
 
-storiesOf('12. Slider', module).add('Slider', () => (
+storiesOf('3. Forms', module).add('Slider', () => (
   <AutoExample component={Slider} additionalTabs={tabExample} />
 ));

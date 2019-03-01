@@ -1,4 +1,4 @@
-export default (props, propName, componentName) => {
+const valueValidator = (props, propName, componentName) => {
   const { [propName]: value } = props;
   const { max, min } = props;
   const errorMessage = `${propName} prop supplied to ${componentName} is out of bounds. The ${propName} prop must be between ${min} and ${max}.`;
@@ -30,3 +30,5 @@ export default (props, propName, componentName) => {
 
   return null;
 };
+
+export default valueValidator;

@@ -16,9 +16,9 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   visibility: hidden;
   z-index: 100;
-  top: -5px;
+  top: -1085px;
   left: 50%;
-  margin-left: -0px;
+  margin-left: -960px;
 }
 
 .c3:before {
@@ -88,457 +88,128 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   left: 50%;
 }
 
-<Slider
+<div
+  className="c0 c1"
   disabled={true}
   max={100}
   min={0}
   onChange={[Function]}
-  tipFormatter={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
   value={50}
 >
-  <Slider__StyledTooltip
-    disabled={true}
-    max={100}
-    min={0}
-    onChange={[Function]}
-    text="50"
-    tipFormatter={[Function]}
-    value={50}
-    visible={null}
+  <div
+    className="c2 c3"
+    height={1080}
+    width={1920}
   >
-    <StyledComponent
-      disabled={true}
-      forwardedComponent={
+    50
+  </div>
+  <div
+    className="rc-slider rc-slider-with-marks rc-slider-disabled c4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="rc-slider-rail"
+      style={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Slider__StyledTooltip-sc-1xvfbkj-2",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "width:100%;> div:first-child{top:-41px;left:",
-              [Function],
-              "%;}",
-            ],
-          },
-          "displayName": "Slider__StyledTooltip",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Slider__StyledTooltip-sc-1xvfbkj-2",
-          "target": [Function],
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-          Symbol(Symbol.hasInstance): [Function],
+          "height": 8,
         }
       }
-      forwardedRef={null}
-      max={100}
-      min={0}
-      onChange={[Function]}
-      text="50"
-      tipFormatter={[Function]}
-      value={50}
-      visible={null}
+    />
+    <div
+      className="rc-slider-track"
+      style={
+        Object {
+          "height": 8,
+          "left": "0%",
+          "width": "50%",
+        }
+      }
+    />
+    <div
+      className="rc-slider-step"
     >
-      <Tooltip
-        className="c0"
-        disabled={true}
-        max={100}
-        min={0}
-        onChange={[Function]}
-        placement="top"
-        text="50"
-        tipFormatter={[Function]}
-        value={50}
-        visible={null}
+      <span
+        className="rc-slider-dot rc-slider-dot-active"
+        style={
+          Object {
+            "display": "none",
+            "left": "1%",
+          }
+        }
+      />
+      <span
+        className="rc-slider-dot"
+        style={
+          Object {
+            "display": "none",
+            "left": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      aria-disabled={true}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={50}
+      className="rc-slider-handle"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "50%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={null}
+    />
+    <div
+      className="rc-slider-mark"
+    >
+      <span
+        className="rc-slider-mark-text rc-slider-mark-text-active"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": 0,
+            "marginLeft": 0,
+            "width": "auto",
+          }
+        }
       >
-        <Tooltip__Wrapper
-          className="c0"
-          disabled={true}
-          length={2}
-          max={100}
-          min={0}
-          onChange={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          tipFormatter={[Function]}
-          value={50}
-        >
-          <StyledComponent
-            className="c0"
-            disabled={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Tooltip__Wrapper-sc-1s2fcfh-1",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "cursor:default;position:relative;white-space:",
-                    [Function],
-                    ";",
-                    ".c2",
-                    "{width:",
-                    [Function],
-                    ";}",
-                  ],
-                },
-                "displayName": "Tooltip__Wrapper",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Tooltip__Wrapper-sc-1s2fcfh-1",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            length={2}
-            max={100}
-            min={0}
-            onChange={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tipFormatter={[Function]}
-            value={50}
-          >
-            <div
-              className="c0 c1"
-              disabled={true}
-              max={100}
-              min={0}
-              onChange={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              value={50}
-            >
-              <Tip
-                height={0}
-                placement="top"
-                show={false}
-                width={0}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "c2",
-                        "isStatic": false,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          "background-color:",
-                          "#4c4c4c",
-                          ";border-color:",
-                          "#4c4c4c",
-                          ";border-radius:4px;color:",
-                          "#FFFFFF",
-                          ";font-size:16px;font-weight:bold;opacity:",
-                          [Function],
-                          ";padding:4px 8px;position:absolute;text-align:center;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;visibility:",
-                          [Function],
-                          ";z-index:100;",
-                          [Function],
-                          " &:before{content:'';position:absolute;",
-                          [Function],
-                          ";}",
-                        ],
-                      },
-                      "displayName": "Tip",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "c2",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={[Function]}
-                  height={0}
-                  placement="top"
-                  show={false}
-                  width={0}
-                >
-                  <div
-                    className="c2 c3"
-                    height={0}
-                    width={0}
-                  >
-                    50
-                  </div>
-                </StyledComponent>
-              </Tip>
-              <rcSlider
-                disabled={true}
-                handleStyle={
-                  Object {
-                    "borderWidth": 0,
-                    "height": 20,
-                    "marginLeft": -9,
-                    "marginTop": -6,
-                    "width": 20,
-                  }
-                }
-                max={100}
-                min={0}
-                onAfterChange={[Function]}
-                onBeforeChange={[Function]}
-                onChange={[Function]}
-                railStyle={
-                  Object {
-                    "height": 8,
-                  }
-                }
-                tipFormatter={[Function]}
-                trackStyle={
-                  Object {
-                    "height": 8,
-                  }
-                }
-                value={50}
-              >
-                <StyledComponent
-                  disabled={true}
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "Handle": [Function],
-                      "Range": [Function],
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Slider__StyledSlider-sc-1xvfbkj-0",
-                        "isStatic": true,
-                        "lastClassName": "c4",
-                        "rules": Array [
-                          ".rc-slider-handle{background-color:",
-                          "#1355d0",
-                          ";}.rc-slider-rail{background-color:",
-                          "#e5edfc",
-                          ";}.rc-slider-track{background-color:",
-                          "rgba(19, 85, 208, 0.5)",
-                          ";}.rc-slider-handle:active,.rc-slider-handle:focus{border:none;box-shadow:0 2px 6px 0 ",
-                          "rgba(19, 85, 208, 0.5)",
-                          ";}&.rc-slider-disabled{background:none;.rc-slider-handle{background-color:",
-                          "#999999",
-                          ";}.rc-slider-rail{background-color:",
-                          "#f2f2f2",
-                          ";}.rc-slider-track{background-color:",
-                          "#cccccc",
-                          ";}}",
-                        ],
-                      },
-                      "createSliderWithTooltip": [Function],
-                      "displayName": "rcSlider",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Slider__StyledSlider-sc-1xvfbkj-0",
-                      "target": [Function],
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                      Symbol(Symbol.hasInstance): [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  handleStyle={
-                    Object {
-                      "borderWidth": 0,
-                      "height": 20,
-                      "marginLeft": -9,
-                      "marginTop": -6,
-                      "width": 20,
-                    }
-                  }
-                  max={100}
-                  min={0}
-                  onAfterChange={[Function]}
-                  onBeforeChange={[Function]}
-                  onChange={[Function]}
-                  railStyle={
-                    Object {
-                      "height": 8,
-                    }
-                  }
-                  tipFormatter={[Function]}
-                  trackStyle={
-                    Object {
-                      "height": 8,
-                    }
-                  }
-                  value={50}
-                >
-                  <ComponentEnhancer(undefined)
-                    activeDotStyle={Object {}}
-                    className="c4"
-                    disabled={true}
-                    dotStyle={Object {}}
-                    dots={false}
-                    handle={[Function]}
-                    handleStyle={
-                      Object {
-                        "borderWidth": 0,
-                        "height": 20,
-                        "marginLeft": -9,
-                        "marginTop": -6,
-                        "width": 20,
-                      }
-                    }
-                    included={true}
-                    marks={Object {}}
-                    max={100}
-                    min={0}
-                    onAfterChange={[Function]}
-                    onBeforeChange={[Function]}
-                    onChange={[Function]}
-                    prefixCls="rc-slider"
-                    railStyle={
-                      Object {
-                        "height": 8,
-                      }
-                    }
-                    step={1}
-                    tipFormatter={[Function]}
-                    trackStyle={
-                      Object {
-                        "height": 8,
-                      }
-                    }
-                    value={50}
-                    vertical={false}
-                  >
-                    <div
-                      className="rc-slider rc-slider-disabled c4"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchStart={[Function]}
-                    >
-                      <div
-                        className="rc-slider-rail"
-                        style={
-                          Object {
-                            "height": 8,
-                          }
-                        }
-                      />
-                      <Track
-                        className="rc-slider-track"
-                        included={true}
-                        length={50}
-                        offset={0}
-                        style={
-                          Object {
-                            "height": 8,
-                          }
-                        }
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-track"
-                          style={
-                            Object {
-                              "height": 8,
-                              "left": "0%",
-                              "width": "50%",
-                            }
-                          }
-                        />
-                      </Track>
-                      <Steps
-                        activeDotStyle={Object {}}
-                        dotStyle={Object {}}
-                        dots={false}
-                        included={true}
-                        lowerBound={0}
-                        marks={Object {}}
-                        max={100}
-                        min={0}
-                        prefixCls="rc-slider"
-                        step={1}
-                        upperBound={50}
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-step"
-                        />
-                      </Steps>
-                      <Handle
-                        className="rc-slider-handle"
-                        disabled={true}
-                        key="0"
-                        max={100}
-                        min={0}
-                        offset={50}
-                        prefixCls="rc-slider"
-                        style={
-                          Object {
-                            "borderWidth": 0,
-                            "height": 20,
-                            "marginLeft": -9,
-                            "marginTop": -6,
-                            "width": 20,
-                          }
-                        }
-                        value={50}
-                        vertical={false}
-                      >
-                        <div
-                          aria-disabled={true}
-                          aria-valuemax={100}
-                          aria-valuemin={0}
-                          aria-valuenow={50}
-                          className="rc-slider-handle"
-                          onBlur={[Function]}
-                          onKeyDown={[Function]}
-                          role="slider"
-                          style={
-                            Object {
-                              "borderWidth": 0,
-                              "height": 20,
-                              "left": "50%",
-                              "marginLeft": -9,
-                              "marginTop": -6,
-                              "width": 20,
-                            }
-                          }
-                          tabIndex={null}
-                        />
-                      </Handle>
-                      <Marks
-                        className="rc-slider-mark"
-                        included={true}
-                        lowerBound={0}
-                        marks={Object {}}
-                        max={100}
-                        min={0}
-                        onClickLabel={[Function]}
-                        upperBound={50}
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-mark"
-                        />
-                      </Marks>
-                    </div>
-                  </ComponentEnhancer(undefined)>
-                </StyledComponent>
-              </rcSlider>
-            </div>
-          </StyledComponent>
-        </Tooltip__Wrapper>
-      </Tooltip>
-    </StyledComponent>
-  </Slider__StyledTooltip>
-</Slider>
+        0
+      </span>
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "unset",
+            "marginLeft": 0,
+            "right": 0,
+            "width": "auto",
+          }
+        }
+      >
+        100
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`<Slider /> Snapshots should match the snapshot when have just one handle 1`] = `
@@ -557,9 +228,9 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   visibility: hidden;
   z-index: 100;
-  top: -5px;
+  top: -1085px;
   left: 50%;
-  margin-left: -0px;
+  margin-left: -960px;
 }
 
 .c3:before {
@@ -629,448 +300,127 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   left: 10%;
 }
 
-<Slider
+<div
+  className="c0 c1"
   max={100}
   min={0}
   onChange={[Function]}
-  tipFormatter={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
   value={10}
 >
-  <Slider__StyledTooltip
-    max={100}
-    min={0}
-    onChange={[Function]}
-    text="10"
-    tipFormatter={[Function]}
-    value={10}
-    visible={null}
+  <div
+    className="c2 c3"
+    height={1080}
+    width={1920}
   >
-    <StyledComponent
-      forwardedComponent={
+    10
+  </div>
+  <div
+    className="rc-slider rc-slider-with-marks c4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="rc-slider-rail"
+      style={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Slider__StyledTooltip-sc-1xvfbkj-2",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "width:100%;> div:first-child{top:-41px;left:",
-              [Function],
-              "%;}",
-            ],
-          },
-          "displayName": "Slider__StyledTooltip",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Slider__StyledTooltip-sc-1xvfbkj-2",
-          "target": [Function],
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-          Symbol(Symbol.hasInstance): [Function],
+          "height": 8,
         }
       }
-      forwardedRef={null}
-      max={100}
-      min={0}
-      onChange={[Function]}
-      text="10"
-      tipFormatter={[Function]}
-      value={10}
-      visible={null}
+    />
+    <div
+      className="rc-slider-track"
+      style={
+        Object {
+          "height": 8,
+          "left": "0%",
+          "width": "10%",
+        }
+      }
+    />
+    <div
+      className="rc-slider-step"
     >
-      <Tooltip
-        className="c0"
-        max={100}
-        min={0}
-        onChange={[Function]}
-        placement="top"
-        text="10"
-        tipFormatter={[Function]}
-        value={10}
-        visible={null}
+      <span
+        className="rc-slider-dot rc-slider-dot-active"
+        style={
+          Object {
+            "display": "none",
+            "left": "1%",
+          }
+        }
+      />
+      <span
+        className="rc-slider-dot"
+        style={
+          Object {
+            "display": "none",
+            "left": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      aria-disabled={false}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={10}
+      className="rc-slider-handle"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "10%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      className="rc-slider-mark"
+    >
+      <span
+        className="rc-slider-mark-text rc-slider-mark-text-active"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": 0,
+            "marginLeft": 0,
+            "width": "auto",
+          }
+        }
       >
-        <Tooltip__Wrapper
-          className="c0"
-          length={2}
-          max={100}
-          min={0}
-          onChange={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          tipFormatter={[Function]}
-          value={10}
-        >
-          <StyledComponent
-            className="c0"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Tooltip__Wrapper-sc-1s2fcfh-1",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "cursor:default;position:relative;white-space:",
-                    [Function],
-                    ";",
-                    ".c2",
-                    "{width:",
-                    [Function],
-                    ";}",
-                  ],
-                },
-                "displayName": "Tooltip__Wrapper",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Tooltip__Wrapper-sc-1s2fcfh-1",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            length={2}
-            max={100}
-            min={0}
-            onChange={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tipFormatter={[Function]}
-            value={10}
-          >
-            <div
-              className="c0 c1"
-              max={100}
-              min={0}
-              onChange={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              value={10}
-            >
-              <Tip
-                height={0}
-                placement="top"
-                show={false}
-                width={0}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "c2",
-                        "isStatic": false,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          "background-color:",
-                          "#4c4c4c",
-                          ";border-color:",
-                          "#4c4c4c",
-                          ";border-radius:4px;color:",
-                          "#FFFFFF",
-                          ";font-size:16px;font-weight:bold;opacity:",
-                          [Function],
-                          ";padding:4px 8px;position:absolute;text-align:center;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;visibility:",
-                          [Function],
-                          ";z-index:100;",
-                          [Function],
-                          " &:before{content:'';position:absolute;",
-                          [Function],
-                          ";}",
-                        ],
-                      },
-                      "displayName": "Tip",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "c2",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={[Function]}
-                  height={0}
-                  placement="top"
-                  show={false}
-                  width={0}
-                >
-                  <div
-                    className="c2 c3"
-                    height={0}
-                    width={0}
-                  >
-                    10
-                  </div>
-                </StyledComponent>
-              </Tip>
-              <rcSlider
-                handleStyle={
-                  Object {
-                    "borderWidth": 0,
-                    "height": 20,
-                    "marginLeft": -9,
-                    "marginTop": -6,
-                    "width": 20,
-                  }
-                }
-                max={100}
-                min={0}
-                onAfterChange={[Function]}
-                onBeforeChange={[Function]}
-                onChange={[Function]}
-                railStyle={
-                  Object {
-                    "height": 8,
-                  }
-                }
-                tipFormatter={[Function]}
-                trackStyle={
-                  Object {
-                    "height": 8,
-                  }
-                }
-                value={10}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "Handle": [Function],
-                      "Range": [Function],
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Slider__StyledSlider-sc-1xvfbkj-0",
-                        "isStatic": true,
-                        "lastClassName": "c4",
-                        "rules": Array [
-                          ".rc-slider-handle{background-color:",
-                          "#1355d0",
-                          ";}.rc-slider-rail{background-color:",
-                          "#e5edfc",
-                          ";}.rc-slider-track{background-color:",
-                          "rgba(19, 85, 208, 0.5)",
-                          ";}.rc-slider-handle:active,.rc-slider-handle:focus{border:none;box-shadow:0 2px 6px 0 ",
-                          "rgba(19, 85, 208, 0.5)",
-                          ";}&.rc-slider-disabled{background:none;.rc-slider-handle{background-color:",
-                          "#999999",
-                          ";}.rc-slider-rail{background-color:",
-                          "#f2f2f2",
-                          ";}.rc-slider-track{background-color:",
-                          "#cccccc",
-                          ";}}",
-                        ],
-                      },
-                      "createSliderWithTooltip": [Function],
-                      "displayName": "rcSlider",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Slider__StyledSlider-sc-1xvfbkj-0",
-                      "target": [Function],
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                      Symbol(Symbol.hasInstance): [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  handleStyle={
-                    Object {
-                      "borderWidth": 0,
-                      "height": 20,
-                      "marginLeft": -9,
-                      "marginTop": -6,
-                      "width": 20,
-                    }
-                  }
-                  max={100}
-                  min={0}
-                  onAfterChange={[Function]}
-                  onBeforeChange={[Function]}
-                  onChange={[Function]}
-                  railStyle={
-                    Object {
-                      "height": 8,
-                    }
-                  }
-                  tipFormatter={[Function]}
-                  trackStyle={
-                    Object {
-                      "height": 8,
-                    }
-                  }
-                  value={10}
-                >
-                  <ComponentEnhancer(undefined)
-                    activeDotStyle={Object {}}
-                    className="c4"
-                    disabled={false}
-                    dotStyle={Object {}}
-                    dots={false}
-                    handle={[Function]}
-                    handleStyle={
-                      Object {
-                        "borderWidth": 0,
-                        "height": 20,
-                        "marginLeft": -9,
-                        "marginTop": -6,
-                        "width": 20,
-                      }
-                    }
-                    included={true}
-                    marks={Object {}}
-                    max={100}
-                    min={0}
-                    onAfterChange={[Function]}
-                    onBeforeChange={[Function]}
-                    onChange={[Function]}
-                    prefixCls="rc-slider"
-                    railStyle={
-                      Object {
-                        "height": 8,
-                      }
-                    }
-                    step={1}
-                    tipFormatter={[Function]}
-                    trackStyle={
-                      Object {
-                        "height": 8,
-                      }
-                    }
-                    value={10}
-                    vertical={false}
-                  >
-                    <div
-                      className="rc-slider c4"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchStart={[Function]}
-                    >
-                      <div
-                        className="rc-slider-rail"
-                        style={
-                          Object {
-                            "height": 8,
-                          }
-                        }
-                      />
-                      <Track
-                        className="rc-slider-track"
-                        included={true}
-                        length={10}
-                        offset={0}
-                        style={
-                          Object {
-                            "height": 8,
-                          }
-                        }
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-track"
-                          style={
-                            Object {
-                              "height": 8,
-                              "left": "0%",
-                              "width": "10%",
-                            }
-                          }
-                        />
-                      </Track>
-                      <Steps
-                        activeDotStyle={Object {}}
-                        dotStyle={Object {}}
-                        dots={false}
-                        included={true}
-                        lowerBound={0}
-                        marks={Object {}}
-                        max={100}
-                        min={0}
-                        prefixCls="rc-slider"
-                        step={1}
-                        upperBound={10}
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-step"
-                        />
-                      </Steps>
-                      <Handle
-                        className="rc-slider-handle"
-                        disabled={false}
-                        key="0"
-                        max={100}
-                        min={0}
-                        offset={10}
-                        prefixCls="rc-slider"
-                        style={
-                          Object {
-                            "borderWidth": 0,
-                            "height": 20,
-                            "marginLeft": -9,
-                            "marginTop": -6,
-                            "width": 20,
-                          }
-                        }
-                        value={10}
-                        vertical={false}
-                      >
-                        <div
-                          aria-disabled={false}
-                          aria-valuemax={100}
-                          aria-valuemin={0}
-                          aria-valuenow={10}
-                          className="rc-slider-handle"
-                          onBlur={[Function]}
-                          onKeyDown={[Function]}
-                          role="slider"
-                          style={
-                            Object {
-                              "borderWidth": 0,
-                              "height": 20,
-                              "left": "10%",
-                              "marginLeft": -9,
-                              "marginTop": -6,
-                              "width": 20,
-                            }
-                          }
-                          tabIndex={0}
-                        />
-                      </Handle>
-                      <Marks
-                        className="rc-slider-mark"
-                        included={true}
-                        lowerBound={0}
-                        marks={Object {}}
-                        max={100}
-                        min={0}
-                        onClickLabel={[Function]}
-                        upperBound={10}
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-mark"
-                        />
-                      </Marks>
-                    </div>
-                  </ComponentEnhancer(undefined)>
-                </StyledComponent>
-              </rcSlider>
-            </div>
-          </StyledComponent>
-        </Tooltip__Wrapper>
-      </Tooltip>
-    </StyledComponent>
-  </Slider__StyledTooltip>
-</Slider>
+        0
+      </span>
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "unset",
+            "marginLeft": 0,
+            "right": 0,
+            "width": "auto",
+          }
+        }
+      >
+        100
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`] = `
@@ -1089,9 +439,9 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   visibility: hidden;
   z-index: 100;
-  top: -5px;
+  top: -1085px;
   left: 50%;
-  margin-left: -0px;
+  margin-left: -960px;
 }
 
 .c3:before {
@@ -1161,11 +511,13 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   left: 20%;
 }
 
-<Slider
+<div
+  className="c0 c1"
   max={100}
   min={0}
   onChange={[Function]}
-  tipFormatter={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
   value={
     Object {
       "from": 10,
@@ -1173,576 +525,137 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
     }
   }
 >
-  <Slider__StyledTooltip
-    max={100}
-    min={0}
-    onChange={[Function]}
-    text="10 to 30"
-    tipFormatter={[Function]}
-    value={
-      Object {
-        "from": 10,
-        "to": 30,
-      }
-    }
-    visible={null}
+  <div
+    className="c2 c3"
+    height={1080}
+    width={1920}
   >
-    <StyledComponent
-      forwardedComponent={
+    10 to 30
+  </div>
+  <div
+    className="rc-slider rc-slider-with-marks c4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="rc-slider-rail"
+      style={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Slider__StyledTooltip-sc-1xvfbkj-2",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "width:100%;> div:first-child{top:-41px;left:",
-              [Function],
-              "%;}",
-            ],
-          },
-          "displayName": "Slider__StyledTooltip",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Slider__StyledTooltip-sc-1xvfbkj-2",
-          "target": [Function],
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-          Symbol(Symbol.hasInstance): [Function],
+          "height": 8,
         }
       }
-      forwardedRef={null}
-      max={100}
-      min={0}
-      onChange={[Function]}
-      text="10 to 30"
-      tipFormatter={[Function]}
-      value={
+    />
+    <div
+      className="rc-slider-track rc-slider-track-1"
+      style={
         Object {
-          "from": 10,
-          "to": 30,
+          "height": 8,
+          "left": "10%",
+          "width": "20%",
         }
       }
-      visible={null}
+    />
+    <div
+      className="rc-slider-step"
     >
-      <Tooltip
-        className="c0"
-        max={100}
-        min={0}
-        onChange={[Function]}
-        placement="top"
-        text="10 to 30"
-        tipFormatter={[Function]}
-        value={
+      <span
+        className="rc-slider-dot"
+        style={
           Object {
-            "from": 10,
-            "to": 30,
+            "display": "none",
+            "left": "1%",
           }
         }
-        visible={null}
-      >
-        <Tooltip__Wrapper
-          className="c0"
-          length={8}
-          max={100}
-          min={0}
-          onChange={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          tipFormatter={[Function]}
-          value={
-            Object {
-              "from": 10,
-              "to": 30,
-            }
+      />
+      <span
+        className="rc-slider-dot"
+        style={
+          Object {
+            "display": "none",
+            "left": "100%",
           }
-        >
-          <StyledComponent
-            className="c0"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Tooltip__Wrapper-sc-1s2fcfh-1",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "cursor:default;position:relative;white-space:",
-                    [Function],
-                    ";",
-                    ".c2",
-                    "{width:",
-                    [Function],
-                    ";}",
-                  ],
-                },
-                "displayName": "Tooltip__Wrapper",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Tooltip__Wrapper-sc-1s2fcfh-1",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            length={8}
-            max={100}
-            min={0}
-            onChange={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tipFormatter={[Function]}
-            value={
-              Object {
-                "from": 10,
-                "to": 30,
-              }
-            }
-          >
-            <div
-              className="c0 c1"
-              max={100}
-              min={0}
-              onChange={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              value={
-                Object {
-                  "from": 10,
-                  "to": 30,
-                }
-              }
-            >
-              <Tip
-                height={0}
-                placement="top"
-                show={false}
-                width={0}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "c2",
-                        "isStatic": false,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          "background-color:",
-                          "#4c4c4c",
-                          ";border-color:",
-                          "#4c4c4c",
-                          ";border-radius:4px;color:",
-                          "#FFFFFF",
-                          ";font-size:16px;font-weight:bold;opacity:",
-                          [Function],
-                          ";padding:4px 8px;position:absolute;text-align:center;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;visibility:",
-                          [Function],
-                          ";z-index:100;",
-                          [Function],
-                          " &:before{content:'';position:absolute;",
-                          [Function],
-                          ";}",
-                        ],
-                      },
-                      "displayName": "Tip",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "c2",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={[Function]}
-                  height={0}
-                  placement="top"
-                  show={false}
-                  width={0}
-                >
-                  <div
-                    className="c2 c3"
-                    height={0}
-                    width={0}
-                  >
-                    10 to 30
-                  </div>
-                </StyledComponent>
-              </Tip>
-              <rcRange
-                allowCross={false}
-                handleStyle={
-                  Array [
-                    Object {
-                      "borderWidth": 0,
-                      "height": 20,
-                      "marginLeft": -9,
-                      "marginTop": -6,
-                      "width": 20,
-                    },
-                    Object {
-                      "borderWidth": 0,
-                      "height": 20,
-                      "marginLeft": -9,
-                      "marginTop": -6,
-                      "width": 20,
-                    },
-                  ]
-                }
-                max={100}
-                min={0}
-                onAfterChange={[Function]}
-                onBeforeChange={[Function]}
-                onChange={[Function]}
-                pushable={true}
-                railStyle={
-                  Object {
-                    "height": 8,
-                  }
-                }
-                tipFormatter={[Function]}
-                trackStyle={
-                  Array [
-                    Object {
-                      "height": 8,
-                    },
-                    Object {
-                      "height": 8,
-                    },
-                  ]
-                }
-                value={
-                  Array [
-                    10,
-                    30,
-                  ]
-                }
-              >
-                <StyledComponent
-                  allowCross={false}
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Slider__StyledRange-sc-1xvfbkj-1",
-                        "isStatic": true,
-                        "lastClassName": "c4",
-                        "rules": Array [
-                          ".rc-slider-handle{background-color:",
-                          "#1355d0",
-                          ";}.rc-slider-rail{background-color:",
-                          "#e5edfc",
-                          ";}.rc-slider-track{background-color:",
-                          "rgba(19, 85, 208, 0.5)",
-                          ";}.rc-slider-handle:active,.rc-slider-handle:focus{border:none;box-shadow:0 2px 6px 0 ",
-                          "rgba(19, 85, 208, 0.5)",
-                          ";}&.rc-slider-disabled{background:none;.rc-slider-handle{background-color:",
-                          "#999999",
-                          ";}.rc-slider-rail{background-color:",
-                          "#f2f2f2",
-                          ";}.rc-slider-track{background-color:",
-                          "#cccccc",
-                          ";}}",
-                        ],
-                      },
-                      "displayName": "rcRange",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Slider__StyledRange-sc-1xvfbkj-1",
-                      "target": [Function],
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                      Symbol(Symbol.hasInstance): [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  handleStyle={
-                    Array [
-                      Object {
-                        "borderWidth": 0,
-                        "height": 20,
-                        "marginLeft": -9,
-                        "marginTop": -6,
-                        "width": 20,
-                      },
-                      Object {
-                        "borderWidth": 0,
-                        "height": 20,
-                        "marginLeft": -9,
-                        "marginTop": -6,
-                        "width": 20,
-                      },
-                    ]
-                  }
-                  max={100}
-                  min={0}
-                  onAfterChange={[Function]}
-                  onBeforeChange={[Function]}
-                  onChange={[Function]}
-                  pushable={true}
-                  railStyle={
-                    Object {
-                      "height": 8,
-                    }
-                  }
-                  tipFormatter={[Function]}
-                  trackStyle={
-                    Array [
-                      Object {
-                        "height": 8,
-                      },
-                      Object {
-                        "height": 8,
-                      },
-                    ]
-                  }
-                  value={
-                    Array [
-                      10,
-                      30,
-                    ]
-                  }
-                >
-                  <ComponentEnhancer(Range)
-                    activeDotStyle={Object {}}
-                    allowCross={false}
-                    className="c4"
-                    count={1}
-                    disabled={false}
-                    dotStyle={Object {}}
-                    dots={false}
-                    handle={[Function]}
-                    handleStyle={
-                      Array [
-                        Object {
-                          "borderWidth": 0,
-                          "height": 20,
-                          "marginLeft": -9,
-                          "marginTop": -6,
-                          "width": 20,
-                        },
-                        Object {
-                          "borderWidth": 0,
-                          "height": 20,
-                          "marginLeft": -9,
-                          "marginTop": -6,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    included={true}
-                    marks={Object {}}
-                    max={100}
-                    min={0}
-                    onAfterChange={[Function]}
-                    onBeforeChange={[Function]}
-                    onChange={[Function]}
-                    prefixCls="rc-slider"
-                    pushable={true}
-                    railStyle={
-                      Object {
-                        "height": 8,
-                      }
-                    }
-                    step={1}
-                    tabIndex={Array []}
-                    tipFormatter={[Function]}
-                    trackStyle={
-                      Array [
-                        Object {
-                          "height": 8,
-                        },
-                        Object {
-                          "height": 8,
-                        },
-                      ]
-                    }
-                    value={
-                      Array [
-                        10,
-                        30,
-                      ]
-                    }
-                    vertical={false}
-                  >
-                    <div
-                      className="rc-slider c4"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchStart={[Function]}
-                    >
-                      <div
-                        className="rc-slider-rail"
-                        style={
-                          Object {
-                            "height": 8,
-                          }
-                        }
-                      />
-                      <Track
-                        className="rc-slider-track rc-slider-track-1"
-                        included={true}
-                        key="1"
-                        length={20}
-                        offset={10}
-                        style={
-                          Object {
-                            "height": 8,
-                          }
-                        }
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-track rc-slider-track-1"
-                          style={
-                            Object {
-                              "height": 8,
-                              "left": "10%",
-                              "width": "20%",
-                            }
-                          }
-                        />
-                      </Track>
-                      <Steps
-                        activeDotStyle={Object {}}
-                        dotStyle={Object {}}
-                        dots={false}
-                        included={true}
-                        lowerBound={10}
-                        marks={Object {}}
-                        max={100}
-                        min={0}
-                        prefixCls="rc-slider"
-                        step={1}
-                        upperBound={30}
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-step"
-                        />
-                      </Steps>
-                      <Handle
-                        className="rc-slider-handle rc-slider-handle-1"
-                        disabled={false}
-                        key="0"
-                        max={100}
-                        min={0}
-                        offset={10}
-                        prefixCls="rc-slider"
-                        style={
-                          Object {
-                            "borderWidth": 0,
-                            "height": 20,
-                            "marginLeft": -9,
-                            "marginTop": -6,
-                            "width": 20,
-                          }
-                        }
-                        tabIndex={0}
-                        value={10}
-                        vertical={false}
-                      >
-                        <div
-                          aria-disabled={false}
-                          aria-valuemax={100}
-                          aria-valuemin={0}
-                          aria-valuenow={10}
-                          className="rc-slider-handle rc-slider-handle-1"
-                          onBlur={[Function]}
-                          onKeyDown={[Function]}
-                          role="slider"
-                          style={
-                            Object {
-                              "borderWidth": 0,
-                              "height": 20,
-                              "left": "10%",
-                              "marginLeft": -9,
-                              "marginTop": -6,
-                              "width": 20,
-                            }
-                          }
-                          tabIndex={0}
-                        />
-                      </Handle>
-                      <Handle
-                        className="rc-slider-handle rc-slider-handle-2"
-                        disabled={false}
-                        key="1"
-                        max={100}
-                        min={0}
-                        offset={30}
-                        prefixCls="rc-slider"
-                        style={
-                          Object {
-                            "borderWidth": 0,
-                            "height": 20,
-                            "marginLeft": -9,
-                            "marginTop": -6,
-                            "width": 20,
-                          }
-                        }
-                        tabIndex={0}
-                        value={30}
-                        vertical={false}
-                      >
-                        <div
-                          aria-disabled={false}
-                          aria-valuemax={100}
-                          aria-valuemin={0}
-                          aria-valuenow={30}
-                          className="rc-slider-handle rc-slider-handle-2"
-                          onBlur={[Function]}
-                          onKeyDown={[Function]}
-                          role="slider"
-                          style={
-                            Object {
-                              "borderWidth": 0,
-                              "height": 20,
-                              "left": "30%",
-                              "marginLeft": -9,
-                              "marginTop": -6,
-                              "width": 20,
-                            }
-                          }
-                          tabIndex={0}
-                        />
-                      </Handle>
-                      <Marks
-                        className="rc-slider-mark"
-                        included={true}
-                        lowerBound={10}
-                        marks={Object {}}
-                        max={100}
-                        min={0}
-                        onClickLabel={[Function]}
-                        upperBound={30}
-                        vertical={false}
-                      >
-                        <div
-                          className="rc-slider-mark"
-                        />
-                      </Marks>
-                    </div>
-                  </ComponentEnhancer(Range)>
-                </StyledComponent>
-              </rcRange>
-            </div>
-          </StyledComponent>
-        </Tooltip__Wrapper>
-      </Tooltip>
-    </StyledComponent>
-  </Slider__StyledTooltip>
-</Slider>
+        }
+      />
+    </div>
+    <div
+      aria-disabled={false}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={10}
+      className="rc-slider-handle rc-slider-handle-1"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "10%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      aria-disabled={false}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={30}
+      className="rc-slider-handle rc-slider-handle-2"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "30%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      className="rc-slider-mark"
+    >
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": 0,
+            "marginLeft": 0,
+            "width": "auto",
+          }
+        }
+      >
+        0
+      </span>
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "unset",
+            "marginLeft": 0,
+            "right": 0,
+            "width": "auto",
+          }
+        }
+      >
+        100
+      </span>
+    </div>
+  </div>
+</div>
 `;

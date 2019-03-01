@@ -21,6 +21,19 @@ const sliderStyle = {
   railStyle: {
     height: 8,
   },
+  marksStyle: {
+    min: {
+      left: 0,
+      marginLeft: 0,
+      width: 'auto',
+    },
+    max: {
+      right: 0,
+      marginLeft: 0,
+      left: 'unset',
+      width: 'auto',
+    },
+  },
 };
 
 const customStyle = css`
@@ -119,10 +132,19 @@ class Slider extends React.Component {
       state: { visible },
     } = this;
 
-    const { value, tipFormatter } = props;
+    const { value, tipFormatter, minMaxFormatter, min, max } = props;
     const { from, to } = value;
-
-    const { handleStyle, trackStyle } = sliderStyle;
+    const { handleStyle, trackStyle, marksStyle, railStyle } = sliderStyle;
+    const marks = {
+      [min]: {
+        style: marksStyle.min,
+        label: minMaxFormatter(min),
+      },
+      [max]: {
+        style: marksStyle.max,
+        label: minMaxFormatter(max),
+      },
+    };
 
     return (
       <StyledTooltip
@@ -134,23 +156,33 @@ class Slider extends React.Component {
         {typeof value === 'object' ? (
           <StyledRange
             {...props}
-            {...sliderStyle}
             allowCross={false}
+            dotStyle={{ display: 'none' }}
+            handleStyle={[handleStyle, handleStyle]}
+            max={max}
+            min={min}
+            marks={marks}
             pushable
             onChange={handleChange}
             onBeforeChange={handleMouseDown}
             onAfterChange={handleMouseUp}
-            value={[from, to]}
-            handleStyle={[handleStyle, handleStyle]}
+            railStyle={railStyle}
             trackStyle={[trackStyle, trackStyle]}
+            value={[from, to]}
           />
         ) : (
           <StyledSlider
             {...props}
-            {...sliderStyle}
+            dotStyle={{ display: 'none' }}
+            handleStyle={handleStyle}
+            max={max}
+            marks={marks}
+            min={min}
             onChange={handleChange}
             onBeforeChange={handleMouseDown}
             onAfterChange={handleMouseUp}
+            railStyle={railStyle}
+            trackStyle={trackStyle}
             value={value}
           />
         )}
@@ -159,24 +191,28 @@ class Slider extends React.Component {
   }
 }
 
-StyledRange.displayName = 'rcRange';
-StyledSlider.displayName = 'rcSlider';
+StyledRange.displayName = 'RcRange';
+StyledSlider.displayName = 'RcSlider';
 
 Slider.defaultProps = {
   max: 100,
   min: 0,
   value: 50,
+  disabled: false,
   onChange: () => {},
   tipFormatter: value =>
     typeof value === 'object' ? `${value.from} to ${value.to}` : value,
+  minMaxFormatter: value => value,
 };
 
 Slider.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
+  disabled: PropTypes.bool,
   onChange: PropTypes.func,
   /** Slider will pass its value to tipFormatter, display its value in Tooltip, and hide Tooltip when return value is null. */
   tipFormatter: PropTypes.func,
+  minMaxFormatter: PropTypes.func,
   value: valueValidator,
 };
 

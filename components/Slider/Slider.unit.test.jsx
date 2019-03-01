@@ -1,24 +1,43 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import renderer from 'react-test-renderer';
 import Slider from './Slider';
-import 'jest-styled-components';
 
 describe('<Slider />', () => {
   describe('Snapshots', () => {
+    const tipMock = {
+      clientWidth: 1920,
+      clientHeight: 1080,
+    };
+
     it('should match the snapshot when have just one handle', () => {
-      const range = mount(<Slider value={10} />);
-      expect(toJson(range)).toMatchSnapshot();
+      expect(
+        renderer
+          .create(<Slider value={10} />, {
+            createNodeMock: element => tipMock,
+          })
+          .toJSON(),
+      ).toMatchSnapshot();
     });
 
     it('should match the snapshot when have two handles', () => {
-      const range = mount(<Slider value={{ from: 10, to: 30 }} />);
-      expect(toJson(range)).toMatchSnapshot();
+      expect(
+        renderer
+          .create(<Slider value={{ from: 10, to: 30 }} />, {
+            createNodeMock: element => tipMock,
+          })
+          .toJSON(),
+      ).toMatchSnapshot();
     });
 
     it('should match the snapshot when <Slider /> is disabled', () => {
-      const range = mount(<Slider disabled />);
-      expect(toJson(range)).toMatchSnapshot();
+      expect(
+        renderer
+          .create(<Slider disabled />, {
+            createNodeMock: element => tipMock,
+          })
+          .toJSON(),
+      ).toMatchSnapshot();
     });
   });
 
@@ -45,11 +64,21 @@ describe('<Slider />', () => {
     });
   });
 
+  describe('minMaxFormatter prop', () => {
+    it('should format min and max dots text', () => {
+      const range = mount(<Slider minMaxFormatter={value => `${value}km`} />);
+      const dots = range.find('.rc-slider-mark-text');
+
+      expect(dots.at(0).text()).toBe('0km');
+      expect(dots.at(1).text()).toBe('100km');
+    });
+  });
+
   describe('onChange prop', () => {
     it('should call it with currently slider value', () => {
       const onChangeMock = jest.fn();
       const range = shallow(<Slider value={10} onChange={onChangeMock} />);
-      const slider = range.find('rcSlider');
+      const slider = range.find('RcSlider');
 
       slider.simulate('change', 20);
 
@@ -61,7 +90,7 @@ describe('<Slider />', () => {
       const range = shallow(
         <Slider value={{ from: 0, to: 100 }} onChange={onChangeMock} />,
       );
-      const slider = range.find('rcRange');
+      const slider = range.find('RcRange');
 
       slider.simulate('change', [20, 80]);
 
@@ -76,8 +105,8 @@ describe('<Slider />', () => {
       const range = mount(<Slider min={min} value={{ from: 10, to: 100 }} />);
       const slider = mount(<Slider min={min} />);
 
-      const rcSlider = slider.find('rcSlider');
-      const rcRange = range.find('rcRange');
+      const rcSlider = slider.find('RcSlider');
+      const rcRange = range.find('RcRange');
 
       expect(rcSlider.prop('min')).toBe(min);
       expect(rcRange.prop('min')).toBe(min);
@@ -89,20 +118,20 @@ describe('<Slider />', () => {
       const range = mount(<Slider max={max} value={{ from: 0, to: 100 }} />);
       const slider = mount(<Slider max={max} />);
 
-      const rcSlider = slider.find('rcSlider');
-      const rcRange = range.find('rcRange');
+      const rcSlider = slider.find('RcSlider');
+      const rcRange = range.find('RcRange');
 
-      expect(rcSlider.props().max).toBe(max);
-      expect(rcRange.props().max).toBe(max);
+      expect(rcSlider.prop('max')).toBe(max);
+      expect(rcRange.prop('max')).toBe(max);
     });
   });
 
   describe('value prop', () => {
     it('should convert value object to array and pass to inner rc-slider component', () => {
       const range = mount(<Slider value={{ from: 0, to: 50 }} />);
-      const slider = range.find('rcRange');
+      const slider = range.find('RcRange');
 
-      expect(slider.props().value).toEqual([0, 50]);
+      expect(slider.prop('value')).toEqual([0, 50]);
     });
   });
 });
