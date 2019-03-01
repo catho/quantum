@@ -51,7 +51,7 @@ class Tooltip extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { text, visible } = this.props;
+    const { text, visible, children } = this.props;
     const { show, width, height } = this.state;
 
     return (
@@ -59,7 +59,8 @@ class Tooltip extends Component {
       show !== nextState.show ||
       visible !== nextProps.visible ||
       width !== nextState.width ||
-      height !== nextState.height
+      height !== nextState.height ||
+      children !== nextProps.children
     );
   }
 
