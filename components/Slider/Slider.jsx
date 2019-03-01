@@ -11,9 +11,9 @@ const sliderStyle = {
   handleStyle: {
     borderWidth: 0,
     height: 20,
-    width: 20,
-    marginTop: -6,
     marginLeft: -9,
+    marginTop: -6,
+    width: 20,
   },
   trackStyle: {
     height: 8,
@@ -23,16 +23,16 @@ const sliderStyle = {
   },
   marksStyle: {
     common: {
+      fontSize: 16,
       marginLeft: 0,
       width: 'auto',
-      fontSize: 16,
     },
     min: {
       left: 0,
     },
     max: {
-      right: 0,
       left: 'unset',
+      right: 0,
     },
   },
 };
