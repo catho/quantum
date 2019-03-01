@@ -140,7 +140,7 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
         style={
           Object {
             "display": "none",
-            "left": "1%",
+            "left": "0%",
           }
         }
       />
@@ -184,6 +184,7 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
         onTouchStart={[Function]}
         style={
           Object {
+            "fontSize": 16,
             "left": 0,
             "marginLeft": 0,
             "width": "auto",
@@ -198,6 +199,7 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
         onTouchStart={[Function]}
         style={
           Object {
+            "fontSize": 16,
             "left": "unset",
             "marginLeft": 0,
             "right": 0,
@@ -302,6 +304,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 
 <div
   className="c0 c1"
+  disabled={false}
   max={100}
   min={0}
   onChange={[Function]}
@@ -351,7 +354,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
         style={
           Object {
             "display": "none",
-            "left": "1%",
+            "left": "0%",
           }
         }
       />
@@ -395,6 +398,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
         onTouchStart={[Function]}
         style={
           Object {
+            "fontSize": 16,
             "left": 0,
             "marginLeft": 0,
             "width": "auto",
@@ -409,6 +413,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
         onTouchStart={[Function]}
         style={
           Object {
+            "fontSize": 16,
             "left": "unset",
             "marginLeft": 0,
             "right": 0,
@@ -513,6 +518,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
 
 <div
   className="c0 c1"
+  disabled={false}
   max={100}
   min={0}
   onChange={[Function]}
@@ -567,7 +573,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
         style={
           Object {
             "display": "none",
-            "left": "1%",
+            "left": "0%",
           }
         }
       />
@@ -632,6 +638,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
         onTouchStart={[Function]}
         style={
           Object {
+            "fontSize": 16,
             "left": 0,
             "marginLeft": 0,
             "width": "auto",
@@ -646,6 +653,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
         onTouchStart={[Function]}
         style={
           Object {
+            "fontSize": 16,
             "left": "unset",
             "marginLeft": 0,
             "right": 0,

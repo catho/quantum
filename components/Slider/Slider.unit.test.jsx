@@ -134,4 +134,59 @@ describe('<Slider />', () => {
       expect(slider.prop('value')).toEqual([0, 50]);
     });
   });
+
+  describe('Value prop validator', () => {
+    global.console = {
+      error: jest.fn(),
+    };
+
+    beforeEach(global.console.error.mockReset);
+
+    describe('with a single value', () => {
+      it('should not call console.error when it is valid', () => {
+        <Slider value={0} />;
+        expect(global.console.error).not.toHaveBeenCalled();
+      });
+
+      it('should call console.error when it is not a number', () => {
+        <Slider value="1" />;
+        expect(global.console.error).toHaveBeenCalled();
+      });
+
+      it('should call console.error when it is greater then max prop', () => {
+        <Slider max={40} value={50} />;
+        expect(global.console.error).toHaveBeenCalled();
+      });
+
+      it('should call console.error when it is less then min prop', () => {
+        <Slider min={40} value={30} />;
+        expect(global.console.error).toHaveBeenCalled();
+      });
+    });
+
+    describe('with a range value', () => {
+      it('should not call console.error when both is valid', () => {
+        <Slider value={{ from: 0, to: 100 }} />;
+        expect(global.console.error).not.toHaveBeenCalled();
+      });
+
+      it('should call console.error when one of them are not a number', () => {
+        <Slider value={{ from: '0', to: 100 }} />;
+        expect(global.console.error).toHaveBeenCalled();
+
+        <Slider value={{ from: 0, to: '100' }} />;
+        expect(global.console.error).toHaveBeenCalled();
+      });
+
+      it('should call console.error when "to" value is greater then max prop', () => {
+        <Slider value={{ from: 0, to: 100 }} max={90} />;
+        expect(global.console.error).toHaveBeenCalled();
+      });
+
+      it('should call console.error when "from" value is less then min prop', () => {
+        <Slider value={{ from: 0, to: 100 }} min={10} />;
+        expect(global.console.error).toHaveBeenCalled();
+      });
+    });
+  });
 });
