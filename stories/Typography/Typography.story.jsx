@@ -6,7 +6,11 @@ import Usage from './Usage';
 import Components from './Components';
 
 storiesOf('Foundation', module).add('Typography', () => (
-  <Heading title="Typography">
+  <>
+    <Heading title="Typography">
+      Nunito Sans is the standard typeface for Catho on the web
+    </Heading>
+
     <TabbedView>
       <Tab title="Usage">
         <Usage />
@@ -15,5 +19,5 @@ storiesOf('Foundation', module).add('Typography', () => (
         <Components />
       </Tab>
     </TabbedView>
-  </Heading>
+  </>
 ));

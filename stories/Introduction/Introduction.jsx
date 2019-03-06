@@ -18,9 +18,10 @@ const Introduction = () => (
     <Title as="h2">Starting from scratch</Title>
     <p>
       Quantum can be easily included in applications or one-off projects. We
-      recommend pulling the latest version of Style Guide's CSS from our CDN.
-      You may also clone this repository and pull in the component SCSS files if
-      you wish to only include a portion of Style Guide in your project.
+      recommend pulling the latest version of Style Guide&apos;s CSS from our
+      CDN. You may also clone this repository and pull in the component SCSS
+      files if you wish to only include a portion of Style Guide in your
+      project.
     </p>
 
     <Title as="h3">React based</Title>
