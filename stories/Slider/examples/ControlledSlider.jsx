@@ -15,7 +15,12 @@ class ControlledSlider extends Component {
   render() {
     const { value } = this.state;
 
-    return <Slider value={value} onChange={this.handleChange} />;
+    return (
+      <>
+        Slider value: {value}
+        <Slider value={value} onChange={this.handleChange} />
+      </>
+    );
   }
 }
 
@@ -38,7 +43,10 @@ class ControlledSlider extends Component {
     const { value } = this.state;
 
     return (
-      <Slider value={value} onChange={this.handleChange} />
+      <>
+         Slider value: {value}
+         <Slider value={value} onChange={this.handleChange} />
+      </
     );
   }
 }

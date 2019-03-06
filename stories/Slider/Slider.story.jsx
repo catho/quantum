@@ -104,17 +104,14 @@ storiesOf('3. Forms', module).add('Slider', () => (
           </Col>
         </Row>
 
-        <Title>minMaxFormatter - Formatting {'<Slider />'} labels text</Title>
+        <Title>
+          Formatting <code>min</code> and <code>max</code> labels text
+        </Title>
         <p>
-          You can format {'<Slider />'} label text through{' '}
-          <strong>minMaxFormatter</strong> prop.
+          You can format both <code>min</code> and <code>max</code> labels text
+          through <strong>minMaxFormatter</strong> prop.
         </p>
-        <p>
-          It receives a function and should return a string.{' '}
-          <em>
-            <small>see the slider label</small>
-          </em>
-        </p>
+        <p>It receives a function and should return a string. </p>
         <Row>
           <Col xsmall={2} small={4} medium={6}>
             <CodeExample
@@ -138,7 +135,7 @@ storiesOf('3. Forms', module).add('Slider', () => (
           >
             controlled component
           </a>{' '}
-          to change {'<Slider />'} value.
+          to change the {'<Slider />'} value.
         </p>
         <p>The same is applied when is passed an object to value prop.</p>
         <Row>
