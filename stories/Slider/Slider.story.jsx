@@ -7,8 +7,10 @@ import {
   Tab,
   HowToImport,
   CodeExample,
+  AutoPropsApi,
 } from '@catho-private/quantum-storybook-ui';
 import { Col, Row } from '../../components/Grid';
+import Slider from '../../components/Slider';
 import List from '../../components/List';
 
 import * as Samples from './examples';
@@ -151,7 +153,9 @@ storiesOf('3. Forms', module).add('Slider', () => (
           </Col>
         </Row>
       </Tab>
-      <Tab title="API" />
+      <Tab title="API">
+        <AutoPropsApi component={Slider} />
+      </Tab>
     </TabbedView>
   </Heading>
 ));
