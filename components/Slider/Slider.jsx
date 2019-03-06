@@ -215,7 +215,9 @@ Slider.propTypes = {
   onChange: PropTypes.func,
   /** Slider will pass its value to tipFormatter, display its value in Tooltip, and hide Tooltip when return value is null. */
   tipFormatter: PropTypes.func,
+  /** Same as tipFormatter, but for the min and max labels. */
   minMaxFormatter: PropTypes.func,
+  /** It receives a Number to display a slider or an Object with from and to properties to display a range. Example: `value={10}` or `value={{ from: 20, to: 40 }}` */
   value: valueValidator,
 };
 
