@@ -84,7 +84,7 @@ storiesOf('3. Forms', module).add('Slider', () => (
             <Samples.Range />
           </Col>
         </Row>
-        <Title>tipFormatter - Formatting tooltip text</Title>
+        <Title>Formatting tooltip text</Title>
         <p>
           You can format tooltip text through <strong>tipFormatter</strong>{' '}
           prop.
