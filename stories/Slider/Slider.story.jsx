@@ -59,6 +59,16 @@ storiesOf('3. Forms', module).add('Slider', () => (
             <Samples.Slider />
           </Col>
         </Row>
+        <Title>Min & Max props</Title>
+        <p>You can limit the available range to be selected</p>
+        <Row>
+          <Col xsmall={2} small={4} medium={6}>
+            <CodeExample code={Samples.MinMax.code} showTitle={false} />
+          </Col>
+          <Col xsmall={2} small={4} medium={6}>
+            <Samples.MinMax />
+          </Col>
+        </Row>
         <Title>Range usage</Title>
         <p>
           Set value prop with an Object with &quot;to&quot; and &quot;from&quot;
