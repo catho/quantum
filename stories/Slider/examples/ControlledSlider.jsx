@@ -46,7 +46,7 @@ class ControlledSlider extends Component {
       <>
          Slider value: {value}
          <Slider value={value} onChange={this.handleChange} />
-      </
+      </>
     );
   }
 }
