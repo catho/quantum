@@ -9,6 +9,7 @@ import {
   StoryContainer,
 } from '@catho-private/quantum-storybook-ui';
 import Button from '../../components/Button';
+import IconFont from '../../components/GlobalStyle';
 import { Container, Row, Col } from '../../components/Grid';
 
 const exampleTab = (
@@ -106,5 +107,8 @@ const exampleTab = (
 );
 
 storiesOf('Buttons', module).add('Button', () => (
-  <AutoExample component={Button} additionalTabs={exampleTab} />
+  <>
+    <IconFont />
+    <AutoExample component={Button} additionalTabs={exampleTab} />
+  </>
 ));
