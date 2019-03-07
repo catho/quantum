@@ -4,11 +4,12 @@ import LinkTo from '@storybook/addon-links/react';
 import styled from 'styled-components';
 import {
   Heading,
-  HowToImport,
   TabbedView,
   Tab,
   CodeExample,
   Title,
+  SimpleHighlight,
+  StoryContainer,
 } from '@catho-private/quantum-storybook-ui';
 
 import Icon from '../../components/Icon';
@@ -51,13 +52,19 @@ const exampleCode = `<Icon name="thumb_up" />
 <Icon name="event" skin={Colors.DANGER['300']} />
 `;
 
+const importIcon = `import { Icon } from '@cathodevel/quantum';`;
+
 storiesOf('Foundation', module).add('Icons', () => (
   <React.Fragment>
-    <Heading name="Icon">
-      <TabbedView>
-        <Tab title="Usage">
-          <HowToImport importModules="Icon" />
-          <Title>Usage</Title>
+    <Heading name="Icon" />
+
+    <TabbedView>
+      <Tab title="Usage">
+        <StoryContainer>
+          <Title as="h2">Importing Icon</Title>
+          <SimpleHighlight>{importIcon}</SimpleHighlight>
+
+          <Title as="h2">Usage</Title>
           <p>
             You need to import the{' '}
             <LinkTo kind="1. Foundation" story="Typography">
@@ -70,12 +77,16 @@ storiesOf('Foundation', module).add('Icons', () => (
               <IconWrapper key={icon.props.name}>{icon}</IconWrapper>
             ))}
           </small>
+
           <CodeExample showTitle={false} code={exampleCode} />
-        </Tab>
-        <Tab title="Catalogue">
+        </StoryContainer>
+      </Tab>
+
+      <Tab title="Catalogue">
+        <StoryContainer>
           <Catalogue />
-        </Tab>
-      </TabbedView>
-    </Heading>
+        </StoryContainer>
+      </Tab>
+    </TabbedView>
   </React.Fragment>
 ));

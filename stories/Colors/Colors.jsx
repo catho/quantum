@@ -9,8 +9,6 @@ import {
 import Colors from '../../components/Colors';
 
 const importColors = `import { Colors } from '@cathodevel/quantum';`;
-const codeBackgroundColor = '#e8f2fc';
-const codefontColor = '#1a82e2';
 
 const ColorBackground = styled.div`
   background-color: ${({ hex }) => hex};
@@ -95,24 +93,14 @@ console.log(Colors.PINK['500'])
 export default () => (
   <StoryContainer>
     <Title as="h2">Importing colors</Title>
-    <SimpleHighlight
-      backgroundColor={codeBackgroundColor}
-      fontColor={codefontColor}
-    >
-      {importColors}
-    </SimpleHighlight>
+    <SimpleHighlight>{importColors}</SimpleHighlight>
 
     <Title as="h3">Usage</Title>
     <p>
       Colors is a object that expose the pallete and can be used in multiple
       places
     </p>
-    <SimpleHighlight
-      backgroundColor={codeBackgroundColor}
-      fontColor={codefontColor}
-    >
-      {exampleCode}
-    </SimpleHighlight>
+    <SimpleHighlight>{exampleCode}</SimpleHighlight>
 
     <Title as="h2">Brand colors</Title>
     <Title as="h3" style={{ paddingTop: 0 }}>
