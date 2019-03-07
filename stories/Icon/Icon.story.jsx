@@ -13,7 +13,8 @@ import {
 } from '@catho-private/quantum-storybook-ui';
 
 import Icon from '../../components/Icon';
-import Colors from '../../components/Colors/deprecated';
+import IconFont from '../../components/GlobalStyle';
+import Colors from '../../components/Colors';
 import Catalogue from './Catalogue';
 
 const IconWrapper = styled.div`
@@ -30,11 +31,11 @@ const exampleIcons = [
   <Icon name="access_alarm" />,
   <Icon name="audiotrack" />,
   <Icon name="attach_money" />,
-  <Icon name="autorenew" skin={Colors.ACTION['500']} />,
-  <Icon name="check_circle" skin={Colors.SECONDARY['700']} />,
-  <Icon name="clear" skin={Colors.INFO['400']} />,
+  <Icon name="autorenew" skin={Colors.COBALT['500']} />,
+  <Icon name="check_circle" skin={Colors.PINK['900']} />,
+  <Icon name="clear" skin={Colors.BLUE['500']} />,
   <Icon name="directions_bike" skin={Colors.WARNING['900']} />,
-  <Icon name="event" skin={Colors.DANGER['300']} />,
+  <Icon name="event" skin={Colors.ERROR['200']} />,
 ];
 
 const exampleCode = `<Icon name="thumb_up" />
@@ -45,11 +46,11 @@ const exampleCode = `<Icon name="thumb_up" />
 <Icon name="access_alarm" />
 <Icon name="audiotrack" />
 <Icon name="attach_money" />
-<Icon name="autorenew" skin={Colors.ACTION['500']} />
-<Icon name="check_circle" skin={Colors.SECONDARY['700']} />
-<Icon name="clear" skin={Colors.INFO['400']} />
+<Icon name="autorenew" skin={Colors.COBALT['500']} />
+<Icon name="check_circle" skin={Colors.PINK['900']} />
+<Icon name="clear" skin={Colors.BLUE['500']} />
 <Icon name="directions_bike" skin={Colors.WARNING['900']} />
-<Icon name="event" skin={Colors.DANGER['300']} />
+<Icon name="event" skin={Colors.ERROR['200']} />
 `;
 
 const importIcon = `import { Icon } from '@cathodevel/quantum';`;
@@ -57,6 +58,8 @@ const importIcon = `import { Icon } from '@cathodevel/quantum';`;
 storiesOf('Foundation', module).add('Icons', () => (
   <React.Fragment>
     <Heading name="Icon" />
+
+    <IconFont />
 
     <TabbedView>
       <Tab title="Usage">
@@ -78,7 +81,7 @@ storiesOf('Foundation', module).add('Icons', () => (
             ))}
           </small>
 
-          <CodeExample showTitle={false} code={exampleCode} />
+          <CodeExample code={exampleCode} />
         </StoryContainer>
       </Tab>
 
