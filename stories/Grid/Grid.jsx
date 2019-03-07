@@ -1,9 +1,7 @@
 import React from 'react';
-import Highlight from 'react-highlight';
 import styled from 'styled-components';
 import {
   Title,
-  Subtitle,
   Table,
   StoryContainer,
   SimpleHighlight,

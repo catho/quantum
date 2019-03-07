@@ -19,12 +19,6 @@ const Small = styled.small`
   font-size: 10px;
 `;
 
-const Font = styled.div`
-  * {
-    font-family: 'Nunito Sans', sans-serif !important;
-  }
-`;
-
 const Components = () => (
   <StoryContainer>
     <Title as="h2">Headings</Title>
