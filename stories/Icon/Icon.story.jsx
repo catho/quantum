@@ -13,7 +13,7 @@ import {
 } from '@catho-private/quantum-storybook-ui';
 
 import Icon from '../../components/Icon';
-import IconFont from '../../components/GlobalStyle';
+import { IconFont } from '../../components/GlobalStyle';
 import Colors from '../../components/Colors';
 import Catalogue from './Catalogue';
 
