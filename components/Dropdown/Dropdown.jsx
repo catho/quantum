@@ -4,33 +4,51 @@ import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import List from '../List/List';
-import Colors from '../Colors/deprecated';
+import Colors from '../Colors';
+import DeprecatedColors from '../Colors/deprecated';
 import theme from '../shared/theme';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
 const DropdownButton = styled.button`
   ${theme.mixins.transition()};
-
-  display: flex;
-  justify-content: space-between;
+  
   align-items: center;
-
+  background-color: ${DeprecatedColors.WHITE};
+  border-radius: 4px;
+  border: 1.5px solid ${Colors.BLACK['400']};
+  color: ${Colors.BLACK['400']};
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  justify-content: space-between;
+  letter-spacing: 0.2px;
   width: 100%;
 
-  padding: 10px 16px;
+  &:hover, &:focus {
+    border-color: ${Colors.BLUE['500']};
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
+  }
 
-  font-size: 16px;
-  font-weight: bold;
+  &[disabled] {
+    background-color: ${Colors.BLACK['100']};
+    color: ${Colors.BLACK['400']};
+    cursor: not-allowed;
+    border-color: ${Colors.BLACK['400']};
+    box-shadow: none;
+  }
 
-  background-color: ${Colors.WHITE};
-  border: solid 1px ${Colors.SECONDARY['300']};
+  ${({ error }) =>
+    error &&
+    `
+      border: 1.5px solid ${Colors.ERROR['500']};
+    `};
 
   ${({ isOpen }) =>
     isOpen &&
     `
-    border-top-color: ${Colors.PRIMARY['500']};
-    border-right-color: ${Colors.PRIMARY['500']};
-    border-left-color: ${Colors.PRIMARY['500']};
+    border-top-color: ${DeprecatedColors.PRIMARY['500']};
+    border-right-color: ${DeprecatedColors.PRIMARY['500']};
+    border-left-color: ${DeprecatedColors.PRIMARY['500']};
   `}
 
   border-radius: ${theme.sizes.radius};
@@ -39,7 +57,7 @@ const DropdownButton = styled.button`
   ${props =>
     props.error &&
     `
-    border-color: ${Colors.DANGER['400']};
+    border-color: ${DeprecatedColors.DANGER['400']};
   `}
 
   &:focus {
@@ -47,37 +65,40 @@ const DropdownButton = styled.button`
   }
 
   & ~ ul {
-    background-color: ${Colors.WHITE};
+    background-color: ${DeprecatedColors.WHITE};
     border-width: 1px;
     border-style: solid;
-    border-color: ${Colors.PRIMARY['500']};
+    border-color: ${DeprecatedColors.PRIMARY['500']};
     border-top: none;
   }
 `;
 
-const ArrowDown = styled(Icon)`
+const ArrowDown = styled(Icon).attrs({
+  name: 'keyboard_arrow_down',
+})`
+  color: ${Colors.BLACK['700']};
   font-size: 1.5em;
   pointer-events: none;
 `;
 
 const DropDownItem = styled.div`
   cursor: pointer;
-  border-bottom: 1px solid ${Colors.SECONDARY['50']};
+  border-bottom: 1px solid ${DeprecatedColors.SECONDARY['50']};
 
   &:last-child {
     border: none;
   }
 
   &:hover {
-    background-color: ${Colors.PRIMARY['500']};
+    background-color: ${DeprecatedColors.PRIMARY['500']};
     font-weight: bold;
-    color: ${Colors.WHITE};
+    color: ${DeprecatedColors.WHITE};
   }
 
   ${({ isSelected }) =>
     isSelected &&
     `
-    color: ${Colors.PRIMARY['500']};
+    color: ${DeprecatedColors.PRIMARY['500']};
   `};
 `;
 
@@ -106,6 +127,8 @@ const Select = ({
   onChange,
   name,
   placeholder,
+  disabled,
+  error,
   ...rest
 }) => (
   <Downshift
@@ -113,6 +136,7 @@ const Select = ({
     selectedItem={selectedItem}
     onChange={onChange}
     itemToString={({ item }) => itemToString(item)}
+    disabled={disabled}
   >
     {({
       isOpen,
@@ -121,12 +145,15 @@ const Select = ({
       selectedItem: dsSelectedItem,
     }) => (
       <div>
-        <DropdownButton {...getToggleButtonProps()} name={name} isOpen={isOpen}>
+        <DropdownButton
+          {...getToggleButtonProps()}
+          name={name}
+          isOpen={isOpen}
+          disabled={disabled}
+          error={error}
+        >
           {itemToString(dsSelectedItem.item) || placeholder}
-          <ArrowDown
-            name={!isOpen ? 'arrow_drop_down' : 'arrow_drop_up'}
-            skin={Colors.SECONDARY['300']}
-          />
+          <ArrowDown />
         </DropdownButton>
         {isOpen && (
           <List>
@@ -177,19 +204,23 @@ const itemPropType = PropTypes.shape({
 });
 
 Select.propTypes = {
+  disabled: false,
+  error: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType),
-  selectedItem: itemPropType,
-  onChange: PropTypes.func,
   name: PropTypes.string,
+  onChange: PropTypes.func,
   placeholder: PropTypes.string,
+  selectedItem: itemPropType,
 };
 
 Select.defaultProps = {
+  disabled: PropTypes.bool,
+  error: '',
   items: [],
-  selectedItem: {},
-  onChange: PropTypes.func,
   name: PropTypes.string,
+  onChange: PropTypes.func,
   placeholder: PropTypes.string,
+  selectedItem: {},
 };
 
 class Dropdown extends React.Component {
@@ -234,6 +265,7 @@ class Dropdown extends React.Component {
           placeholder={placeholder}
           name={name}
           id={id}
+          error={error}
         />
 
         {error && <DropdownErrorMessage>{error}</DropdownErrorMessage>}
@@ -243,25 +275,27 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.defaultProps = {
-  placeholder: 'Selecione',
-  label: '',
+  disabled: false,
   error: '',
-  name: 'Dropdown',
   id: 'dropdown',
   items: [],
-  selectedItem: {},
+  label: '',
+  name: 'Dropdown',
   onChange: () => {},
+  placeholder: 'Selecione',
+  selectedItem: {},
 };
 
 Dropdown.propTypes = {
-  placeholder: PropTypes.string,
-  label: PropTypes.string,
+  disabled: PropTypes.bool,
   error: PropTypes.string,
-  name: PropTypes.string,
   id: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType),
-  selectedItem: itemPropType,
+  label: PropTypes.string,
+  name: PropTypes.string,
   onChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  selectedItem: itemPropType,
 };
 
 export default Dropdown;

@@ -11,26 +11,45 @@ exports[`Input component  should match the snapshot 1`] = `
 .c1 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  padding: 10px 16px;
-  font-size: 16px;
-  font-weight: bold;
   background-color: #FFFFFF;
-  border: solid 1px #93a3ad;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  width: 100%;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
 }
 
 .c1:focus {
@@ -46,6 +65,7 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c2 {
+  color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
 }
@@ -66,6 +86,7 @@ exports[`Input component  should match the snapshot 1`] = `
       aria-label="open menu"
       className="c1"
       data-toggle={true}
+      disabled={false}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
@@ -80,11 +101,11 @@ exports[`Input component  should match the snapshot 1`] = `
         className="material-icons MuiIcon-root-1 c2"
         style={
           Object {
-            "color": "#93a3ad",
+            "color": "",
           }
         }
       >
-        arrow_drop_down
+        keyboard_arrow_down
       </span>
     </button>
   </div>
@@ -114,26 +135,45 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 .c2 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  padding: 10px 16px;
-  font-size: 16px;
-  font-weight: bold;
   background-color: #FFFFFF;
-  border: solid 1px #93a3ad;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  width: 100%;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
 }
 
 .c2:focus {
@@ -149,6 +189,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 }
 
 .c3 {
+  color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
 }
@@ -176,6 +217,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
       aria-label="open menu"
       className="c2"
       data-toggle={true}
+      disabled={false}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
@@ -190,11 +232,11 @@ exports[`Input component  with a label should match the snapshot 1`] = `
         className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
-            "color": "#93a3ad",
+            "color": "",
           }
         }
       >
-        arrow_drop_down
+        keyboard_arrow_down
       </span>
     </button>
   </div>
@@ -213,26 +255,47 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 .c1 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  padding: 10px 16px;
-  font-size: 16px;
-  font-weight: bold;
   background-color: #FFFFFF;
-  border: solid 1px #93a3ad;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  width: 100%;
+  border: 1.5px solid #ff2d4d;
   border-radius: 4px;
   cursor: pointer;
+  border-color: #f65474;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
 }
 
 .c1:focus {
@@ -248,6 +311,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 }
 
 .c2 {
+  color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
 }
@@ -277,6 +341,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
       aria-label="open menu"
       className="c1"
       data-toggle={true}
+      disabled={false}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
@@ -291,11 +356,11 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
         className="material-icons MuiIcon-root-1 c2"
         style={
           Object {
-            "color": "#93a3ad",
+            "color": "",
           }
         }
       >
-        arrow_drop_down
+        keyboard_arrow_down
       </span>
     </button>
   </div>
@@ -318,26 +383,45 @@ exports[`Input component  with items should match the snapshot 1`] = `
 .c1 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  padding: 10px 16px;
-  font-size: 16px;
-  font-weight: bold;
   background-color: #FFFFFF;
-  border: solid 1px #93a3ad;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  width: 100%;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
 }
 
 .c1:focus {
@@ -353,6 +437,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
 }
 
 .c2 {
+  color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
 }
@@ -373,6 +458,7 @@ exports[`Input component  with items should match the snapshot 1`] = `
       aria-label="open menu"
       className="c1"
       data-toggle={true}
+      disabled={false}
       name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
@@ -387,11 +473,11 @@ exports[`Input component  with items should match the snapshot 1`] = `
         className="material-icons MuiIcon-root-1 c2"
         style={
           Object {
-            "color": "#93a3ad",
+            "color": "",
           }
         }
       >
-        arrow_drop_down
+        keyboard_arrow_down
       </span>
     </button>
   </div>
