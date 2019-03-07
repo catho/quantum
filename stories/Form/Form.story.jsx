@@ -6,6 +6,7 @@ import {
   Example,
   TabbedView,
   Tab,
+  StoryContainer,
 } from '@catho-private/quantum-storybook-ui';
 
 import { Col, Row } from '../../components/Grid';
@@ -47,98 +48,108 @@ const FormExample = (
 );
 
 storiesOf('Forms', module).add('Validation', () => (
-  <Heading title="<Form />">
+  <>
+    <Heading name="Form" />
     <TabbedView>
       <Tab title="Usage">
-        <p>We provide a bunch of components to use in your form.</p>
+        <StoryContainer>
+          <p>We provide a bunch of components to use in your form.</p>
 
-        <p>
-          To use it, you need to import the component itself and add some inputs
-          as you like.
-        </p>
+          <p>
+            To use it, you need to import the component itself and add some
+            inputs as you like.
+          </p>
 
-        <h4>Simple form</h4>
-        <Row>
-          <Col desktop={6}>
-            <CodeExample
-              showTitle={false}
-              withImport={['Form', 'Input', 'Button'].join(', ')}
-              component={SimpleForm.Form}
-              code={SimpleForm.Code}
-            />
-          </Col>
+          <h4>Simple form</h4>
+          <Row>
+            <Col desktop={6}>
+              <CodeExample
+                showTitle={false}
+                withImport={['Form', 'Input', 'Button'].join(', ')}
+                component={SimpleForm.Form}
+                code={SimpleForm.Code}
+              />
+            </Col>
 
-          <Col desktop={6}>
-            <SimpleForm.Form />
-          </Col>
-        </Row>
+            <Col desktop={6}>
+              <SimpleForm.Form />
+            </Col>
+          </Row>
 
-        <p>
-          Each child of <code>Form</code> has an property <code>validate</code>.
-        </p>
-        <p>
-          It is not required but you can provide validations on it to be fired
-          when your form is submitted.
-        </p>
+          <p>
+            Each child of <code>Form</code> has an property{' '}
+            <code>validate</code>.
+          </p>
+          <p>
+            It is not required but you can provide validations on it to be fired
+            when your form is submitted.
+          </p>
 
-        <h4>Validate Example</h4>
-        <Row>
-          <Col desktop={6}>
-            <CodeExample
-              showTitle={false}
-              withImport={['Form', 'Validations', 'Input', 'Button'].join(', ')}
-              component={SimpleValidation.Form}
-              code={SimpleValidation.Code}
-            />
-          </Col>
+          <h4>Validate Example</h4>
+          <Row>
+            <Col desktop={6}>
+              <CodeExample
+                showTitle={false}
+                withImport={['Form', 'Validations', 'Input', 'Button'].join(
+                  ', ',
+                )}
+                component={SimpleValidation.Form}
+                code={SimpleValidation.Code}
+              />
+            </Col>
 
-          <Col desktop={6}>
-            <SimpleValidation.Form />
-          </Col>
-        </Row>
+            <Col desktop={6}>
+              <SimpleValidation.Form />
+            </Col>
+          </Row>
 
-        <p>
-          As you can see in the example above, we also provide some useful
-          validations:
-        </p>
-        <ul>
-          {Object.getOwnPropertyNames(Validations)
-            .filter(name => !['name', 'length', 'prototype'].includes(name))
-            .map(validate => (
-              <li key={validate}>{validate}</li>
-            ))}
-        </ul>
+          <p>
+            As you can see in the example above, we also provide some useful
+            validations:
+          </p>
+          <ul>
+            {Object.getOwnPropertyNames(Validations)
+              .filter(name => !['name', 'length', 'prototype'].includes(name))
+              .map(validate => (
+                <li key={validate}>{validate}</li>
+              ))}
+          </ul>
 
-        <p>You can add as many validations as you want!</p>
-        <p>
-          And you can write your custom validate function with custom error
-          messages too!!!
-        </p>
+          <p>You can add as many validations as you want!</p>
+          <p>
+            And you can write your custom validate function with custom error
+            messages too!!!
+          </p>
 
-        <h4>Advanced Form</h4>
-        <Row>
-          <Col desktop={6}>
-            <CodeExample
-              showTitle={false}
-              withImport={['Form', 'Validations', 'Input', 'Button'].join(', ')}
-              component={AdvancedValidation.Form}
-              code={AdvancedValidation.Code}
-            />
-          </Col>
+          <h4>Advanced Form</h4>
+          <Row>
+            <Col desktop={6}>
+              <CodeExample
+                showTitle={false}
+                withImport={['Form', 'Validations', 'Input', 'Button'].join(
+                  ', ',
+                )}
+                component={AdvancedValidation.Form}
+                code={AdvancedValidation.Code}
+              />
+            </Col>
 
-          <Col desktop={6}>
-            <AdvancedValidation.Form />
-          </Col>
-        </Row>
+            <Col desktop={6}>
+              <AdvancedValidation.Form />
+            </Col>
+          </Row>
+        </StoryContainer>
       </Tab>
 
       <Tab title="Example">
-        <Example
-          title="New User"
-          importModules="Form"
-          component={FormExample}
-        />
+        <StoryContainer>
+          <Example
+            title="New User"
+            importModules="Form"
+            component={FormExample}
+          />
+        </StoryContainer>
       </Tab>
     </TabbedView>
-  </Heading>
+  </>
 ));
