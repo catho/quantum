@@ -9,6 +9,13 @@ import DeprecatedColors from '../Colors/deprecated';
 import theme from '../shared/theme';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
+const DropdownLabel = styled(Label)`
+  margin-bottom: 8px;
+  padding-left: 13.5px;
+`;
+
+DropdownLabel.displayName = 'DropdownLabel';
+
 const DropdownButton = styled.button`
   ${theme.mixins.transition()};
   
@@ -22,6 +29,7 @@ const DropdownButton = styled.button`
   height: 44px;
   justify-content: space-between;
   letter-spacing: 0.2px;
+  padding: 10px 12px;
   width: 100%;
 
   &:hover, &:focus {
@@ -104,6 +112,7 @@ const DropDownItem = styled.div`
 
 const DropdownErrorMessage = styled(ErrorMessage)`
   margin-top: 8px;
+  padding-left: 13.5px;
 `;
 
 function itemToString(item = '') {
@@ -204,24 +213,30 @@ const itemPropType = PropTypes.shape({
 });
 
 Select.propTypes = {
-  disabled: false,
+  disabled: PropTypes.bool,
   error: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType),
   name: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
+  required: PropTypes.bool,
   selectedItem: itemPropType,
 };
 
 Select.defaultProps = {
-  disabled: PropTypes.bool,
+  disabled: false,
   error: '',
   items: [],
   name: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
+  required: false,
   selectedItem: {},
 };
+
+const RequiredMark = styled.em`
+  color: ${Colors.ERROR['500']};
+`;
 
 class Dropdown extends React.Component {
   constructor(props) {
@@ -249,21 +264,24 @@ class Dropdown extends React.Component {
   };
 
   render() {
-    const { items, label, id, error, placeholder, name, ...rest } = this.props;
+    const { label, id, error, required, ...rest } = this.props;
 
     const { selectedItem } = this.state;
 
     return (
       <FieldGroup>
-        {label && <Label htmlFor={id}> {label} </Label>}
+        {label && (
+          <DropdownLabel htmlFor={id}>
+            {' '}
+            {label}
+            {required && <RequiredMark>*</RequiredMark>}
+          </DropdownLabel>
+        )}
 
         <Select
           {...rest}
-          items={items}
           onChange={this._onChange}
           selectedItem={selectedItem}
-          placeholder={placeholder}
-          name={name}
           id={id}
           error={error}
         />
@@ -283,6 +301,7 @@ Dropdown.defaultProps = {
   name: 'Dropdown',
   onChange: () => {},
   placeholder: 'Selecione',
+  required: false,
   selectedItem: {},
 };
 
@@ -295,6 +314,7 @@ Dropdown.propTypes = {
   name: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
+  required: PropTypes.bool,
   selectedItem: itemPropType,
 };
 

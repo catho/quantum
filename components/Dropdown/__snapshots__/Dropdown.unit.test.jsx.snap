@@ -33,6 +33,7 @@ exports[`Input component  should match the snapshot 1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  padding: 10px 12px;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
@@ -113,18 +114,7 @@ exports[`Input component  should match the snapshot 1`] = `
 </div>
 `;
 
-exports[`Input component  with a label should match the snapshot 1`] = `
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 16px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  line-height: 1.5;
-}
-
+exports[`Input component  should match the snapshot 2`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -132,7 +122,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
@@ -157,18 +147,19 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  padding: 10px 12px;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2[disabled] {
+.c1[disabled] {
   background-color: #f2f2f2;
   color: #999999;
   cursor: not-allowed;
@@ -176,11 +167,11 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   box-shadow: none;
 }
 
-.c2:focus {
+.c1:focus {
   outline: 0;
 }
 
-.c2 ~ ul {
+.c1 ~ ul {
   background-color: #FFFFFF;
   border-width: 1px;
   border-style: solid;
@@ -188,7 +179,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   border-top: none;
 }
 
-.c3 {
+.c2 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
@@ -197,14 +188,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 <div
   className="c0"
 >
-  <label
-    className="c1"
-    htmlFor="dropdown"
-  >
-     
-    Text label
-     
-  </label>
+  
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
@@ -215,7 +199,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="c1"
       data-toggle={true}
       disabled={false}
       name="Dropdown"
@@ -226,10 +210,10 @@ exports[`Input component  with a label should match the snapshot 1`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Dropdown placeholder
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        className="material-icons MuiIcon-root-1 c2"
         style={
           Object {
             "color": "",
@@ -244,7 +228,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 </div>
 `;
 
-exports[`Input component  with an error message should match the snapshot 1`] = `
+exports[`Input component  should match the snapshot 3`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -277,6 +261,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  padding: 10px 12px;
   width: 100%;
   border: 1.5px solid #ff2d4d;
   border-radius: 4px;
@@ -323,6 +308,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   font-style: italic;
   font-weight: 600;
   margin-top: 8px;
+  padding-left: 13.5px;
 }
 
 <div
@@ -372,7 +358,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 </div>
 `;
 
-exports[`Input component  with items should match the snapshot 1`] = `
+exports[`Input component  should match the snapshot 4`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -405,6 +391,396 @@ exports[`Input component  with items should match the snapshot 1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  padding: 10px 12px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c1:focus {
+  outline: 0;
+}
+
+.c1 ~ ul {
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #03a9f4;
+  border-top: none;
+}
+
+.c2 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+>
+  
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c1"
+      data-toggle={true}
+      disabled={true}
+      name="Dropdown"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      Selecione
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c2"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 5`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  padding-left: 13.5px;
+}
+
+.c2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c2:focus {
+  outline: 0;
+}
+
+.c2 ~ ul {
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #03a9f4;
+  border-top: none;
+}
+
+.c3 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="dropdown"
+  >
+     
+    Dropdown label
+  </label>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c2"
+      data-toggle={true}
+      disabled={false}
+      name="Dropdown"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      Selecione
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 6`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  padding-left: 13.5px;
+}
+
+.c3 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c3:focus {
+  outline: 0;
+}
+
+.c3 ~ ul {
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #03a9f4;
+  border-top: none;
+}
+
+.c4 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+.c2 {
+  color: #ff2d4d;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="dropdown"
+  >
+     
+    Dropdown label
+    <em
+      className="c2"
+    >
+      *
+    </em>
+  </label>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c3"
+      data-toggle={true}
+      disabled={false}
+      name="Dropdown"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      Selecione
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c4"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 7`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
