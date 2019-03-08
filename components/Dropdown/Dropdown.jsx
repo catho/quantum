@@ -6,7 +6,6 @@ import Icon from '../Icon/Icon';
 import List from '../List/List';
 import Colors from '../Colors';
 import DeprecatedColors from '../Colors/deprecated';
-import theme from '../shared/theme';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
 const DropdownLabel = styled(Label)`
@@ -17,25 +16,37 @@ const DropdownLabel = styled(Label)`
 DropdownLabel.displayName = 'DropdownLabel';
 
 const DropdownButton = styled.button`
-  ${theme.mixins.transition()};
-  
   align-items: center;
   background-color: ${DeprecatedColors.WHITE};
   border-radius: 4px;
   border: 1.5px solid ${Colors.BLACK['400']};
   color: ${Colors.BLACK['400']};
+  cursor: pointer;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   justify-content: space-between;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  transition: all 0.2s ease-in-out;
   width: 100%;
 
-  &:hover, &:focus {
+  :hover,
+  :focus {
     border-color: ${Colors.BLUE['500']};
     box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
   }
+
+  ${({ error }) =>
+    error &&
+    `
+    border-color: ${Colors.ERROR['500']};
+
+    :hover, :focus {
+      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
+      border-color: ${Colors.ERROR['500']};
+    }
+  `};
 
   &[disabled] {
     background-color: ${Colors.BLACK['100']};
@@ -45,12 +56,6 @@ const DropdownButton = styled.button`
     box-shadow: none;
   }
 
-  ${({ error }) =>
-    error &&
-    `
-      border: 1.5px solid ${Colors.ERROR['500']};
-    `};
-
   ${({ isOpen }) =>
     isOpen &&
     `
@@ -59,18 +64,11 @@ const DropdownButton = styled.button`
     border-left-color: ${DeprecatedColors.PRIMARY['500']};
   `}
 
-  border-radius: ${theme.sizes.radius};
-  cursor: pointer;
-
   ${props =>
     props.error &&
     `
     border-color: ${DeprecatedColors.DANGER['400']};
   `}
-
-  &:focus {
-    outline: 0;
-  }
 
   & ~ ul {
     background-color: ${DeprecatedColors.WHITE};
@@ -126,113 +124,8 @@ function itemToString(item = '') {
     return content;
   }
 
-  const { header } = content;
-  return header;
+  return content.header;
 }
-
-const Select = ({
-  items,
-  selectedItem,
-  onChange,
-  name,
-  placeholder,
-  disabled,
-  error,
-  ...rest
-}) => (
-  <Downshift
-    {...rest}
-    selectedItem={selectedItem}
-    onChange={onChange}
-    itemToString={({ item }) => itemToString(item)}
-    disabled={disabled}
-  >
-    {({
-      isOpen,
-      getToggleButtonProps,
-      getItemProps,
-      selectedItem: dsSelectedItem,
-    }) => (
-      <div>
-        <DropdownButton
-          {...getToggleButtonProps()}
-          name={name}
-          isOpen={isOpen}
-          disabled={disabled}
-          error={error}
-        >
-          {itemToString(dsSelectedItem.item) || placeholder}
-          <ArrowDown />
-        </DropdownButton>
-        {isOpen && (
-          <List>
-            {items.map(item => (
-              <DropDownItem
-                {...getItemProps({
-                  item,
-                  isSelected: dsSelectedItem === item,
-                })}
-                key={itemToString(item.item)}
-              >
-                <List.Item
-                  key={item.value}
-                  icon={item.item.icon}
-                  content={item.item.content || item.item}
-                />
-              </DropDownItem>
-            ))}
-          </List>
-        )}
-      </div>
-    )}
-  </Downshift>
-);
-
-const ListItemPropType = PropTypes.oneOfType([
-  PropTypes.string,
-  PropTypes.shape({
-    icon: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Object)]),
-    content: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.shape({
-        header: PropTypes.string,
-        subheader: PropTypes.string,
-      }),
-    ]),
-  }),
-]);
-
-const stringOrNumber = PropTypes.oneOfType([
-  PropTypes.string,
-  PropTypes.number,
-]);
-
-const itemPropType = PropTypes.shape({
-  value: stringOrNumber,
-  item: ListItemPropType,
-});
-
-Select.propTypes = {
-  disabled: PropTypes.bool,
-  error: PropTypes.string,
-  items: PropTypes.arrayOf(itemPropType),
-  name: PropTypes.string,
-  onChange: PropTypes.func,
-  placeholder: PropTypes.string,
-  required: PropTypes.bool,
-  selectedItem: itemPropType,
-};
-
-Select.defaultProps = {
-  disabled: false,
-  error: '',
-  items: [],
-  name: PropTypes.string,
-  onChange: PropTypes.func,
-  placeholder: PropTypes.string,
-  required: false,
-  selectedItem: {},
-};
 
 const RequiredMark = styled.em`
   color: ${Colors.ERROR['500']};
@@ -264,8 +157,16 @@ class Dropdown extends React.Component {
   };
 
   render() {
-    const { label, id, error, required, ...rest } = this.props;
-
+    const {
+      label,
+      id,
+      error,
+      required,
+      disabled,
+      items,
+      placeholder,
+      ...rest
+    } = this.props;
     const { selectedItem } = this.state;
 
     return (
@@ -278,13 +179,46 @@ class Dropdown extends React.Component {
           </DropdownLabel>
         )}
 
-        <Select
+        <Downshift
           {...rest}
-          onChange={this._onChange}
-          selectedItem={selectedItem}
           id={id}
-          error={error}
-        />
+          selectedItem={selectedItem}
+          onChange={this._onChange}
+          itemToString={({ item }) => itemToString(item)}
+        >
+          {({ isOpen, getToggleButtonProps, getItemProps }) => (
+            <div>
+              <DropdownButton
+                {...getToggleButtonProps()}
+                isOpen={isOpen}
+                disabled={disabled}
+                error={error}
+              >
+                {itemToString(selectedItem.item) || placeholder}
+                <ArrowDown />
+              </DropdownButton>
+              {isOpen && (
+                <List>
+                  {items.map(item => (
+                    <DropDownItem
+                      {...getItemProps({
+                        item,
+                        isSelected: selectedItem === item,
+                      })}
+                      key={itemToString(item.item)}
+                    >
+                      <List.Item
+                        key={item.value}
+                        icon={item.item.icon}
+                        content={item.item.content || item.item}
+                      />
+                    </DropDownItem>
+                  ))}
+                </List>
+              )}
+            </div>
+          )}
+        </Downshift>
 
         {error && <DropdownErrorMessage>{error}</DropdownErrorMessage>}
       </FieldGroup>
@@ -304,6 +238,26 @@ Dropdown.defaultProps = {
   required: false,
   selectedItem: {},
 };
+
+const itemPropType = PropTypes.shape({
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  item: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      icon: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.instanceOf(Object),
+      ]),
+      content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          header: PropTypes.string,
+          subheader: PropTypes.string,
+        }),
+      ]),
+    }),
+  ]),
+});
 
 Dropdown.propTypes = {
   disabled: PropTypes.bool,

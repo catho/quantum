@@ -9,8 +9,6 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -19,11 +17,12 @@ exports[`Input component  should match the snapshot 1`] = `
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #999999;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -34,9 +33,9 @@ exports[`Input component  should match the snapshot 1`] = `
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .c1:hover,
@@ -51,10 +50,6 @@ exports[`Input component  should match the snapshot 1`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1:focus {
-  outline: 0;
 }
 
 .c1 ~ ul {
@@ -88,7 +83,6 @@ exports[`Input component  should match the snapshot 1`] = `
       className="c1"
       data-toggle={true}
       disabled={false}
-      name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -123,8 +117,6 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -133,11 +125,12 @@ exports[`Input component  should match the snapshot 2`] = `
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #999999;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -148,9 +141,9 @@ exports[`Input component  should match the snapshot 2`] = `
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .c1:hover,
@@ -165,10 +158,6 @@ exports[`Input component  should match the snapshot 2`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1:focus {
-  outline: 0;
 }
 
 .c1 ~ ul {
@@ -202,7 +191,6 @@ exports[`Input component  should match the snapshot 2`] = `
       className="c1"
       data-toggle={true}
       disabled={false}
-      name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -237,8 +225,6 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -247,11 +233,12 @@ exports[`Input component  should match the snapshot 3`] = `
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #999999;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -262,10 +249,10 @@ exports[`Input component  should match the snapshot 3`] = `
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  border: 1.5px solid #ff2d4d;
-  border-radius: 4px;
-  cursor: pointer;
+  border-color: #ff2d4d;
   border-color: #f65474;
 }
 
@@ -275,16 +262,18 @@ exports[`Input component  should match the snapshot 3`] = `
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
+.c1:hover,
+.c1:focus {
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  border-color: #ff2d4d;
+}
+
 .c1[disabled] {
   background-color: #f2f2f2;
   color: #999999;
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1:focus {
-  outline: 0;
 }
 
 .c1 ~ ul {
@@ -328,7 +317,6 @@ exports[`Input component  should match the snapshot 3`] = `
       className="c1"
       data-toggle={true}
       disabled={false}
-      name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -367,8 +355,6 @@ exports[`Input component  should match the snapshot 4`] = `
 }
 
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -377,11 +363,12 @@ exports[`Input component  should match the snapshot 4`] = `
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #999999;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -392,9 +379,9 @@ exports[`Input component  should match the snapshot 4`] = `
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .c1:hover,
@@ -409,10 +396,6 @@ exports[`Input component  should match the snapshot 4`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1:focus {
-  outline: 0;
 }
 
 .c1 ~ ul {
@@ -446,7 +429,6 @@ exports[`Input component  should match the snapshot 4`] = `
       className="c1"
       data-toggle={true}
       disabled={true}
-      name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -494,8 +476,6 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c2 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -504,11 +484,12 @@ exports[`Input component  should match the snapshot 5`] = `
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #999999;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -519,9 +500,9 @@ exports[`Input component  should match the snapshot 5`] = `
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .c2:hover,
@@ -536,10 +517,6 @@ exports[`Input component  should match the snapshot 5`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c2:focus {
-  outline: 0;
 }
 
 .c2 ~ ul {
@@ -579,7 +556,6 @@ exports[`Input component  should match the snapshot 5`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
-      name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -627,8 +603,6 @@ exports[`Input component  should match the snapshot 6`] = `
 }
 
 .c3 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -637,11 +611,12 @@ exports[`Input component  should match the snapshot 6`] = `
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #999999;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -652,9 +627,9 @@ exports[`Input component  should match the snapshot 6`] = `
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .c3:hover,
@@ -669,10 +644,6 @@ exports[`Input component  should match the snapshot 6`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c3:focus {
-  outline: 0;
 }
 
 .c3 ~ ul {
@@ -721,7 +692,6 @@ exports[`Input component  should match the snapshot 6`] = `
       className="c3"
       data-toggle={true}
       disabled={false}
-      name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -756,8 +726,6 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -766,11 +734,12 @@ exports[`Input component  should match the snapshot 7`] = `
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #999999;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: inherit;
+  font-size: initial;
   height: 44px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -781,9 +750,9 @@ exports[`Input component  should match the snapshot 7`] = `
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .c1:hover,
@@ -798,10 +767,6 @@ exports[`Input component  should match the snapshot 7`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1:focus {
-  outline: 0;
 }
 
 .c1 ~ ul {
@@ -835,7 +800,6 @@ exports[`Input component  should match the snapshot 7`] = `
       className="c1"
       data-toggle={true}
       disabled={false}
-      name="Dropdown"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
