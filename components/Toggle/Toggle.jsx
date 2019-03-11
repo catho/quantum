@@ -1,133 +1,127 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Label, FieldGroup } from '../shared';
-import Colors from '../Colors/deprecated';
-import theme from '../shared/theme';
+import Colors from '../Colors';
+import Icon from '../Icon';
 
-const Checkbox = styled.input`
-  display: none;
+const CheckIcon = styled(Icon).attrs({
+  name: 'check',
+})``;
+
+const CloseIcon = styled(Icon).attrs({
+  name: 'close',
+})``;
+
+const Wrapper = styled.div`
+  display: inline-block;
+  position: relative;
+  pointer-events: none;
 `;
 
-const StyledLabel = styled(Label)`
-  ${({ disabled }) => `
-    cursor: ${disabled ? 'not-allowed' : 'pointer'};
-  `} display: inline-block;
-  padding-right: 54px;
-  position: relative;
-
-  &:before,
-  &:after {
-    ${theme.mixins.transition()};
-  }
+const Switch = styled.div`
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  padding-left: 42px;
 
   &:before {
-    background: ${({ checked }) =>
-      checked ? Colors.PRIMARY[100] : Colors.SECONDARY[200]};
-    border-radius: 10px;
-    content: '';
-    height: 16px;
-    position: absolute;
-    right: 0;
-    transform: translateY(-50%);
-    top: 50%;
-    width: 42px;
-  }
-
-  &:after {
-    transform: ${({ checked }) =>
-      checked ? 'translateX(20px) translateY(-50%)' : 'translateY(-50%)'};
-    border: 1px solid
-      ${({ checked }) => (checked ? 'transparent' : Colors.SECONDARY['300'])};
-    border-radius: 50%;
-    box-sizing: border-box;
+    background-color: ${Colors.BLACK[400]};
+    border-radius: 16px;
     content: '';
     height: 24px;
     position: absolute;
-    right: 20px;
-    top: 50%;
-    width: 24px;
-    background-color: ${({ checked, disabled }) => {
-      if (disabled) return Colors.SECONDARY[300];
-      return checked ? Colors.PRIMARY[500] : Colors.WHITE;
-    }};
+    left: 0;
+    top: 0;
+    width: 42px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+      transform 0.2s ease-in-out;
   }
 
-  &:hover:after {
-    background-color: ${({ disabled }) => !disabled && Colors.PRIMARY[500]};
-    border: 1px solid transparent;
+  ${CloseIcon},
+  ${CheckIcon} {
+    align-items: center;
+    background-color: ${Colors.BLACK[100]};
+    border-radius: 50%;
+    display: flex;
+    color: ${Colors.BLACK[400]};
+    font-size: 12px;
+    height: 20px;
+    justify-content: center;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    visibility: hidden;
+    width: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  ${CloseIcon} {
+    visibility: visible;
   }
 `;
 
-class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
+const HiddenCheckbox = styled.input.attrs({
+  type: 'checkbox',
+  role: 'switch',
+})`
+  cursor: pointer;
+  height: 24px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: initial;
+  width: 100%;
 
-    const { checked } = props;
-
-    this.state = { checked };
+  &:focus + ${Switch}:before {
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
   }
 
-  componentWillUpdate({ checked }) {
-    const { checked: stateChecked } = this.state;
-
-    if (checked !== stateChecked) {
-      this.state.checked = checked;
-    }
+  &:hover + ${Switch}:before {
+    background-color: ${Colors.BLACK[700]};
   }
 
-  onChange = e => {
-    const { onChange, disabled } = this.props;
-
-    if (disabled) return;
-
-    const { checked } = this.state;
-
-    this.setState({ checked: !checked });
-
-    onChange(e, { checked: !checked });
-  };
-
-  render() {
-    const { id, label, disabled, ...rest } = this.props;
-    const { checked } = this.state;
-
-    return (
-      <FieldGroup>
-        <StyledLabel checked={checked} disabled={disabled}>
-          <Checkbox
-            {...rest}
-            disabled={disabled}
-            checked={checked}
-            id={id}
-            type="checkbox"
-            onChange={this.onChange}
-          />
-          {label}
-        </StyledLabel>
-      </FieldGroup>
-    );
+  &:checked + ${Switch} ${CloseIcon} {
+    visibility: hidden;
+    transform: translateX(18px);
   }
-}
+
+  &:checked + ${Switch} ${CheckIcon} {
+    visibility: visible;
+  }
+
+  &:checked + ${Switch}:before {
+    background-color: ${Colors.BLUE[500]};
+  }
+
+  &:checked:hover + ${Switch}:before {
+    background-color: ${Colors.COBALT[500]};
+  }
+
+  &:checked + ${Switch} ${CheckIcon} {
+    background-color: ${Colors.BLUE[200]};
+    color: ${Colors.BLUE[500]};
+    transform: translateX(18px);
+  }
+`;
+
+HiddenCheckbox.displayName = 'HiddenCheckbox';
+
+const Toggle = ({ checked, ...rest }) => (
+  <Wrapper>
+    <HiddenCheckbox checked={checked} {...rest} />
+    <Switch>
+      <CloseIcon />
+      <CheckIcon />
+    </Switch>
+  </Wrapper>
+);
 
 Toggle.defaultProps = {
-  label: '',
-  id: '',
-  checked: false,
-  disabled: false,
-  onBlur: () => {},
-  onChange: () => {},
-  onFocus: () => {},
+  checked: null,
 };
 
 Toggle.propTypes = {
-  label: PropTypes.string,
-  id: PropTypes.string,
   checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
 };
 
 export default Toggle;

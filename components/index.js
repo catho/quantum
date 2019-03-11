@@ -8,8 +8,7 @@ import Input from './Input';
 import Loading from './Loading';
 import Modal from './Modal';
 import Alert from './Alert';
-import { Radio, RadioGroup } from './Radio';
-import Range from './Range';
+import RadioGroup from './RadioGroup';
 import Textarea from './Textarea';
 import Toggle from './Toggle';
 import TextMask from './TextMask';
@@ -20,6 +19,7 @@ import Card from './Card';
 import Icon from './Icon';
 import List from './List';
 import { Wizard, Step } from './Wizard';
+import Slider from './Slider';
 import Popover from './Popover';
 import Badge from './Badge';
 import Tag from './Tag';
@@ -43,9 +43,7 @@ export {
   Logo,
   Modal,
   Alert,
-  Radio,
   RadioGroup,
-  Range,
   Row,
   Textarea,
   Toggle,
@@ -56,6 +54,7 @@ export {
   List,
   Wizard,
   Step,
+  Slider,
   Popover,
   Badge,
   GlobalStyle,

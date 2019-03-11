@@ -1,164 +1,138 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../shared/theme';
 
-import { Label, FieldGroup } from '../shared';
-import Colors from '../Colors/deprecated';
+import { Label, ErrorMessage } from '../shared';
+import Colors from '../Colors';
+import Icon from '../Icon';
 
-const getColors = ({ disabled, checked }) => {
-  let bgColor = checked ? Colors.PRIMARY['500'] : Colors.WHITE;
-  let borderColor = checked ? Colors.PRIMARY['500'] : Colors.SECONDARY['300'];
+const CHECKBOX_SIZE = '18px';
 
-  if (disabled) {
-    borderColor = Colors.SECONDARY['100'];
-    bgColor = Colors.WHITE;
-  }
+const Wrapper = styled.div``;
 
-  return `
-    background-color: ${bgColor};
-    border: 1px solid ${borderColor};
-  `;
-};
-
-const StyledLabel = styled(Label)`
-  ${theme.mixins.transition()};
-
-  cursor: inherit;
-  display: initial;
-  position: relative;
-  margin-bottom: 0;
-  padding-left: 24px;
-
-  ${({ disabled }) =>
-    disabled &&
-    `
-    color: ${Colors.SECONDARY['300']};
-  `}
-
-  ${({ checked, disabled }) =>
-    checked &&
-    `
-    &:after {
-      content: ' ';
-      display: inline-block;
-      width: 7px;
-      position: absolute;
-      height: 14px;
-      top: -2px;
-      left: 0;
-
-      border: solid ${disabled ? Colors.SECONDARY['300'] : Colors.WHITE};
-      border-radius: 3px;
-      border-width: 0 4px 4px 0;
-
-      transform: rotate(45deg);
-    }
-  `}
-
-  ${({ disabled }) => `
-    cursor: ${disabled ? 'not-allowed' : 'pointer'};
-  `}
-
-  &:before {
-    ${theme.mixins.transition()};
-    ${props => getColors(props)};
-
-    position: absolute;
-    border-radius: 4px;
-    content: ' ';
-    display: inline-block;
-    left: -8px;
-    top: -4px;
-    height: 24px;
-    width: 24px;
-  }
-
-  &:hover:before {
-    ${({ disabled }) =>
-      !disabled &&
-      `
-      border: 1px solid ${Colors.PRIMARY['500']};
-    `}
-  }
-`;
-
-const StyledFieldGroup = styled(FieldGroup)`
-  height: 24px;
-
+const CheckboxWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: relative;
 `;
 
-const StyledCheckbox = styled.input`
-  display: none;
+const CheckboxLabel = styled(Label)`
+  color: ${Colors.BLACK['700']};
+  font-size: 16px;
+  margin: 0 0 0 10px;
 `;
 
-class Checkbox extends React.Component {
-  constructor(props) {
-    super(props);
+CheckboxLabel.displayName = 'CheckboxLabel';
 
-    const { checked } = props;
+const CheckIcon = styled(Icon).attrs({
+  name: 'check',
+})``;
 
-    this.state = { checked };
+const HiddenCheckbox = styled.input.attrs({
+  type: 'checkbox',
+})`
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+
+  + ${CheckIcon} {
+    align-items: center;
+    background-color: ${Colors.WHITE};
+    border-radius: 2px;
+    border: 2px solid ${Colors.BLACK['400']};
+    box-sizing: border-box;
+    color: transparent;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    height: ${CHECKBOX_SIZE};
+    justify-content: center;
+    margin-top: 2px;
+    transition: all 0.2s ease-in-out;
+    width: ${CHECKBOX_SIZE};
   }
 
-  componentWillUpdate(nextProps) {
-    const { checked } = this.state;
-    if (nextProps.checked !== checked) {
-      this.state.checked = nextProps.checked;
+  :checked {
+    + ${CheckIcon} {
+      background-color: ${Colors.BLUE['500']};
+      border-width: 0;
+      color: ${Colors.WHITE};
     }
   }
 
-  onChange = e => {
-    const { onChange, disabled } = this.props;
-
-    if (disabled) return;
-
-    const { checked } = this.state;
-
-    this.setState({ checked: !checked });
-
-    onChange(e, { checked: !checked });
-  };
-
-  render() {
-    const { label, disabled, ...rest } = this.props;
-    const { checked } = this.state;
-
-    return (
-      <StyledFieldGroup>
-        <StyledLabel checked={checked} disabled={disabled}>
-          <StyledCheckbox
-            {...rest}
-            disabled={disabled}
-            type="checkbox"
-            checked={checked}
-            onChange={this.onChange}
-          />
-          {label}
-        </StyledLabel>
-      </StyledFieldGroup>
-    );
+  :hover + ${CheckIcon} {
+    border-color: ${Colors.BLUE['500']};
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
   }
-}
+
+  ${({ error }) =>
+    error &&
+    `
+    + ${CheckIcon} {
+      border-color: ${Colors.ERROR['500']};
+    }
+
+    :checked + ${CheckIcon} {
+      background-color: ${Colors.ERROR['500']};
+    }
+
+    :hover +  ${CheckIcon} {
+      border-color: ${Colors.ERROR['500']};
+      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
+    }
+  `}
+
+  &[disabled] {
+    cursor: not-allowed;
+
+    ~ ${CheckboxLabel} {
+      color: ${Colors.BLACK['400']};
+    }
+
+    + ${CheckIcon} {
+      border-color: ${Colors.BLACK['400']};
+      background-color: ${Colors.BLACK['200']};
+    }
+
+    :checked + ${CheckIcon} {
+      background-color: ${Colors.BLACK['400']};
+    }
+
+    :hover + ${CheckIcon} {
+      box-shadow: none;
+    }
+  }
+`;
+
+HiddenCheckbox.displayName = 'HiddenCheckbox';
+
+const Checkbox = ({ label, error, id, ...rest }) => (
+  <Wrapper>
+    <CheckboxWrapper>
+      <HiddenCheckbox id={id} error={error} {...rest} />
+      <CheckIcon />
+      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
+    </CheckboxWrapper>
+    {error && <ErrorMessage>{error}</ErrorMessage>}
+  </Wrapper>
+);
 
 Checkbox.defaultProps = {
-  label: 'Label',
-  id: '',
-  checked: false,
+  checked: undefined,
   disabled: false,
-  onChange: () => {},
+  error: '',
+  id: '',
+  label: 'Label',
 };
 
 Checkbox.propTypes = {
-  /** An html identification */
-  label: PropTypes.string,
-  id: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  onChange: PropTypes.func,
+  error: PropTypes.string,
+  id: PropTypes.string,
+  label: PropTypes.string,
 };
 
 export default Checkbox;

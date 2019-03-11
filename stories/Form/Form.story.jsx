@@ -6,6 +6,7 @@ import {
   Example,
   TabbedView,
   Tab,
+  Title,
   StoryContainer,
 } from '@catho-private/quantum-storybook-ui';
 
@@ -47,20 +48,15 @@ const FormExample = (
   </Form>
 );
 
-storiesOf('Forms', module).add('Validation', () => (
+const importSlider = `import { Slider } from '@cathodevel/quantum';`;
+
+storiesOf('Forms', module).add('Form', () => (
   <>
-    <Heading name="Form" />
+    <Heading name="Forms" />
     <TabbedView>
       <Tab title="Usage">
         <StoryContainer>
-          <p>We provide a bunch of components to use in your form.</p>
-
-          <p>
-            To use it, you need to import the component itself and add some
-            inputs as you like.
-          </p>
-
-          <h4>Simple form</h4>
+          <Title as="h2">Simple form</Title>
           <Row>
             <Col desktop={6}>
               <CodeExample

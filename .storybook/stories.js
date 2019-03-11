@@ -16,13 +16,12 @@ export default [
   // 2. Buttons
   'Button',
 
-  // 3. Forms
+  // Forms
   'Checkbox',
-  'Dropdown',
-  'Radio',
-  'Range',
+  'RadioGroup',
   'Toggle',
   'Form',
+  'Slider',
 
   // 8. Tooltip
   'Tooltip',

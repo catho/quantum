@@ -81,6 +81,10 @@ const DropDownItem = styled.div`
   `};
 `;
 
+const DropdownErrorMessage = styled(ErrorMessage)`
+  margin-top: 8px;
+`;
+
 function itemToString(item = '') {
   if (typeof item === 'string') {
     return item;
@@ -232,7 +236,7 @@ class Dropdown extends React.Component {
           id={id}
         />
 
-        {error && <ErrorMessage>{error}</ErrorMessage>}
+        {error && <DropdownErrorMessage>{error}</DropdownErrorMessage>}
       </FieldGroup>
     );
   }

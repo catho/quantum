@@ -1,7 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import 'jest-styled-components';
 import Tag from './Tag';
 import Colors from '../Colors';
 
@@ -41,28 +40,26 @@ describe('<Tag />', () => {
     it('large', () => testSnapshot({ size: 'large' }));
   });
 
-  describe('Closable', () => {
+  describe('onClose Prop', () => {
     it('is rendering well', () => {
-      testSnapshot({ closable: true });
-      testSnapshot({ closable: true, skin: 'stroked' });
-      testSnapshot({ closable: true, skin: 'inverted' });
-      testSnapshot({ closable: true, skin: 'blue' });
-      testSnapshot({ closable: true, skin: 'success' });
-      testSnapshot({ closable: true, skin: 'warning' });
-      testSnapshot({ closable: true, skin: 'error' });
-      testSnapshot({ closable: true, skin: 'blue-text' });
+      testSnapshot({ onClose: () => {} });
+      testSnapshot({ onClose: () => {}, skin: 'stroked' });
+      testSnapshot({ onClose: () => {}, skin: 'inverted' });
+      testSnapshot({ onClose: () => {}, skin: 'blue' });
+      testSnapshot({ onClose: () => {}, skin: 'success' });
+      testSnapshot({ onClose: () => {}, skin: 'warning' });
+      testSnapshot({ onClose: () => {}, skin: 'error' });
+      testSnapshot({ onClose: () => {}, skin: 'blue-text' });
     });
 
-    it('is removed when close button is clicked', () => {
-      const tag = shallow(<Tag closable />);
+    it('is called when close button is clicked', () => {
+      const onCloseMock = jest.fn();
+      const tag = shallow(<Tag closable onClose={onCloseMock} />);
       const button = tag.find('CloseButton');
-
-      expect(tag.state('hidden')).toBe(false);
 
       button.simulate('click');
 
-      expect(tag.state('hidden')).toBe(true);
-      expect(tag.html()).toBeNull();
+      expect(onCloseMock).toHaveBeenCalled();
     });
   });
 });

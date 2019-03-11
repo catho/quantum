@@ -1,15 +1,134 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form component  should match the snapshot 1`] = `
+.c3 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  cursor: text;
+  font-size: 16px;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #93a3ad;
+  box-sizing: border-box;
+  color: #364c5a;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 3px;
+  outline: none;
+  width: 100%;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #03a9f4;
+}
+
+.c1:focus + .c2 {
+  color: #03a9f4;
+  font-size: 12px;
+  -webkit-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  transform: translateY(-22px);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c4 .c5 {
+  font-size: 24px;
+}
+
+.c4:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c4:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c4:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 <form
   noValidate={true}
   onSubmit={[Function]}
 >
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c0"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c1"
       defaultValue=""
       id=""
       maxLength=""
@@ -20,7 +139,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
+      className="c2 c3"
       htmlFor=""
     >
       required
@@ -28,10 +147,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c0"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c1"
       defaultValue=""
       id=""
       maxLength=""
@@ -42,7 +161,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
+      className="c2 c3"
       htmlFor=""
     >
       CPF
@@ -50,10 +169,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c0"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c1"
       defaultValue=""
       id=""
       maxLength=""
@@ -64,7 +183,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
+      className="c2 c3"
       htmlFor=""
     >
       CEP
@@ -72,10 +191,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c0"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c1"
       defaultValue=""
       id=""
       maxLength=""
@@ -86,7 +205,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
+      className="c2 c3"
       htmlFor=""
     >
       Birthday
@@ -94,10 +213,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c0"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c1"
       defaultValue=""
       id=""
       maxLength=""
@@ -108,7 +227,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
+      className="c2 c3"
       htmlFor=""
     >
       E-mail
@@ -116,10 +235,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c0"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c1"
       defaultValue=""
       id=""
       maxLength=""
@@ -131,7 +250,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
+      className="c2 c3"
       htmlFor=""
     >
       Address
@@ -139,10 +258,10 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="FieldGroup-sc-18uoi37-0 Input__InputFieldGroup-sc-16zet9e-3 gKcXhp"
+    className="c0"
   >
     <input
-      className="Input__InputTag-sc-16zet9e-1 inKlOh"
+      className="c1"
       defaultValue=""
       id=""
       maxLength="3"
@@ -153,7 +272,7 @@ exports[`Form component  should match the snapshot 1`] = `
       type="text"
     />
     <label
-      className="Label-sc-1ny5bqy-0 Input__InputLabel-sc-16zet9e-0 jRqQQv"
+      className="c2 c3"
       htmlFor=""
     >
       Country
@@ -161,7 +280,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="Button__StyledButton-sc-1ovnfsw-1 jDXnmX"
+    className="c4"
     disabled={false}
     onClick={[Function]}
     size="medium"

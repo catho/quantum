@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import Colors from '../../Colors';
 
 const Typography = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,600i,700');
 
   * {
     font-family: 'Nunito Sans', sans-serif;

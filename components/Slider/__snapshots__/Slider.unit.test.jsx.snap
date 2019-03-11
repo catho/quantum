@@ -1,49 +1,669 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slider component  should match the snapshot 1`] = `
+exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disabled 1`] = `
+.c3 {
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  padding: 4px 8px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+  top: -1085px;
+  left: 50%;
+  margin-left: -960px;
+}
+
+.c3:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c1 {
+  cursor: default;
+  position: relative;
+  white-space: nowrap;
+}
+
+.c1 .c2 {
+  width: initial;
+}
+
+.c4 .rc-slider-handle {
+  background-color: #1355d0;
+}
+
+.c4 .rc-slider-rail {
+  background-color: #e5edfc;
+}
+
+.c4 .rc-slider-track {
+  background-color: rgba(19,85,208,0.5);
+}
+
+.c4 .rc-slider-handle:active,
+.c4 .rc-slider-handle:focus {
+  border: none;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c4.rc-slider-disabled {
+  background: none;
+}
+
+.c4.rc-slider-disabled .rc-slider-handle {
+  background-color: #999999;
+}
+
+.c4.rc-slider-disabled .rc-slider-rail {
+  background-color: #f2f2f2;
+}
+
+.c4.rc-slider-disabled .rc-slider-track {
+  background-color: #cccccc;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c0 > div:first-child {
+  left: 50%;
+  top: -41px;
+}
+
 <div
-  className="rc-slider Slider__StyledSlider-sc-1xvfbkj-0 bwKNDE"
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onMouseDown={[Function]}
-  onMouseUp={[Function]}
-  onTouchStart={[Function]}
+  className="c0 c1"
+  disabled={true}
+  max={100}
+  min={0}
+  onChange={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  value={50}
 >
   <div
-    className="rc-slider-rail"
-    style={Object {}}
-  />
+    className="c2 c3"
+    height={1080}
+    width={1920}
+  >
+    50
+  </div>
   <div
-    className="rc-slider-track"
-    style={
-      Object {
-        "left": "0%",
-        "width": "0%",
-      }
-    }
-  />
-  <div
-    className="rc-slider-step"
-  />
-  <div
-    aria-disabled={false}
-    aria-valuemax={50}
-    aria-valuemin={0}
-    aria-valuenow={0}
-    className="rc-slider-handle"
+    className="rc-slider rc-slider-with-marks rc-slider-disabled c4"
     onBlur={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="slider"
-    style={
-      Object {
-        "left": "0%",
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="rc-slider-rail"
+      style={
+        Object {
+          "height": 8,
+        }
       }
-    }
-    tabIndex={0}
-  />
+    />
+    <div
+      className="rc-slider-track"
+      style={
+        Object {
+          "height": 8,
+          "left": "0%",
+          "width": "50%",
+        }
+      }
+    />
+    <div
+      className="rc-slider-step"
+    >
+      <span
+        className="rc-slider-dot rc-slider-dot-active"
+        style={
+          Object {
+            "display": "none",
+            "left": "0%",
+          }
+        }
+      />
+      <span
+        className="rc-slider-dot"
+        style={
+          Object {
+            "display": "none",
+            "left": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      aria-disabled={true}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={50}
+      className="rc-slider-handle"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "50%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={null}
+    />
+    <div
+      className="rc-slider-mark"
+    >
+      <span
+        className="rc-slider-mark-text rc-slider-mark-text-active"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "fontSize": 16,
+            "left": 0,
+            "marginLeft": 0,
+            "width": "auto",
+          }
+        }
+      >
+        0
+      </span>
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "fontSize": 16,
+            "left": "unset",
+            "marginLeft": 0,
+            "right": 0,
+            "width": "auto",
+          }
+        }
+      >
+        100
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Slider /> Snapshots should match the snapshot when have just one handle 1`] = `
+.c3 {
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  padding: 4px 8px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+  top: -1085px;
+  left: 50%;
+  margin-left: -960px;
+}
+
+.c3:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c1 {
+  cursor: default;
+  position: relative;
+  white-space: nowrap;
+}
+
+.c1 .c2 {
+  width: initial;
+}
+
+.c4 .rc-slider-handle {
+  background-color: #1355d0;
+}
+
+.c4 .rc-slider-rail {
+  background-color: #e5edfc;
+}
+
+.c4 .rc-slider-track {
+  background-color: rgba(19,85,208,0.5);
+}
+
+.c4 .rc-slider-handle:active,
+.c4 .rc-slider-handle:focus {
+  border: none;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c4.rc-slider-disabled {
+  background: none;
+}
+
+.c4.rc-slider-disabled .rc-slider-handle {
+  background-color: #999999;
+}
+
+.c4.rc-slider-disabled .rc-slider-rail {
+  background-color: #f2f2f2;
+}
+
+.c4.rc-slider-disabled .rc-slider-track {
+  background-color: #cccccc;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c0 > div:first-child {
+  left: 10%;
+  top: -41px;
+}
+
+<div
+  className="c0 c1"
+  disabled={false}
+  max={100}
+  min={0}
+  onChange={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  value={10}
+>
   <div
-    className="rc-slider-mark"
-  />
+    className="c2 c3"
+    height={1080}
+    width={1920}
+  >
+    10
+  </div>
+  <div
+    className="rc-slider rc-slider-with-marks c4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="rc-slider-rail"
+      style={
+        Object {
+          "height": 8,
+        }
+      }
+    />
+    <div
+      className="rc-slider-track"
+      style={
+        Object {
+          "height": 8,
+          "left": "0%",
+          "width": "10%",
+        }
+      }
+    />
+    <div
+      className="rc-slider-step"
+    >
+      <span
+        className="rc-slider-dot rc-slider-dot-active"
+        style={
+          Object {
+            "display": "none",
+            "left": "0%",
+          }
+        }
+      />
+      <span
+        className="rc-slider-dot"
+        style={
+          Object {
+            "display": "none",
+            "left": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      aria-disabled={false}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={10}
+      className="rc-slider-handle"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "10%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      className="rc-slider-mark"
+    >
+      <span
+        className="rc-slider-mark-text rc-slider-mark-text-active"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "fontSize": 16,
+            "left": 0,
+            "marginLeft": 0,
+            "width": "auto",
+          }
+        }
+      >
+        0
+      </span>
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "fontSize": 16,
+            "left": "unset",
+            "marginLeft": 0,
+            "right": 0,
+            "width": "auto",
+          }
+        }
+      >
+        100
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`] = `
+.c3 {
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  padding: 4px 8px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+  top: -1085px;
+  left: 50%;
+  margin-left: -960px;
+}
+
+.c3:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c1 {
+  cursor: default;
+  position: relative;
+  white-space: nowrap;
+}
+
+.c1 .c2 {
+  width: initial;
+}
+
+.c4 .rc-slider-handle {
+  background-color: #1355d0;
+}
+
+.c4 .rc-slider-rail {
+  background-color: #e5edfc;
+}
+
+.c4 .rc-slider-track {
+  background-color: rgba(19,85,208,0.5);
+}
+
+.c4 .rc-slider-handle:active,
+.c4 .rc-slider-handle:focus {
+  border: none;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c4.rc-slider-disabled {
+  background: none;
+}
+
+.c4.rc-slider-disabled .rc-slider-handle {
+  background-color: #999999;
+}
+
+.c4.rc-slider-disabled .rc-slider-rail {
+  background-color: #f2f2f2;
+}
+
+.c4.rc-slider-disabled .rc-slider-track {
+  background-color: #cccccc;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c0 > div:first-child {
+  left: 20%;
+  top: -41px;
+}
+
+<div
+  className="c0 c1"
+  disabled={false}
+  max={100}
+  min={0}
+  onChange={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  value={
+    Object {
+      "from": 10,
+      "to": 30,
+    }
+  }
+>
+  <div
+    className="c2 c3"
+    height={1080}
+    width={1920}
+  >
+    10 to 30
+  </div>
+  <div
+    className="rc-slider rc-slider-with-marks c4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="rc-slider-rail"
+      style={
+        Object {
+          "height": 8,
+        }
+      }
+    />
+    <div
+      className="rc-slider-track rc-slider-track-1"
+      style={
+        Object {
+          "height": 8,
+          "left": "10%",
+          "width": "20%",
+        }
+      }
+    />
+    <div
+      className="rc-slider-step"
+    >
+      <span
+        className="rc-slider-dot"
+        style={
+          Object {
+            "display": "none",
+            "left": "0%",
+          }
+        }
+      />
+      <span
+        className="rc-slider-dot"
+        style={
+          Object {
+            "display": "none",
+            "left": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      aria-disabled={false}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={10}
+      className="rc-slider-handle rc-slider-handle-1"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "10%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      aria-disabled={false}
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={30}
+      className="rc-slider-handle rc-slider-handle-2"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "borderWidth": 0,
+          "height": 20,
+          "left": "30%",
+          "marginLeft": -9,
+          "marginTop": -6,
+          "width": 20,
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      className="rc-slider-mark"
+    >
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "fontSize": 16,
+            "left": 0,
+            "marginLeft": 0,
+            "width": "auto",
+          }
+        }
+      >
+        0
+      </span>
+      <span
+        className="rc-slider-mark-text"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "fontSize": 16,
+            "left": "unset",
+            "marginLeft": 0,
+            "right": 0,
+            "width": "auto",
+          }
+        }
+      >
+        100
+      </span>
+    </div>
+  </div>
 </div>
 `;

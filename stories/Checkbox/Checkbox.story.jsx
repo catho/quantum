@@ -1,8 +1,76 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { AutoExample } from '@catho-private/quantum-storybook-ui';
+import {
+  Tab,
+  Title,
+  SimpleHighlight,
+  AutoExample,
+  StoryContainer,
+} from '@catho-private/quantum-storybook-ui';
 import Checkbox from '../../components/Checkbox';
+import FieldGroup from '../../components/shared/FieldGroup';
+import IconFont from '../../components/GlobalStyle';
+
+const exampleUsage = `<Checkbox label="Default" checked={false} onChange={() => {}} />
+<Checkbox label="Checked" checked onChange={() => {}} />
+<Checkbox label="Disabled" disabled checked={false} onChange={() => {}} />
+<Checkbox label="Disabled & Checked" disabled checked onChange={() => {}} />
+<Checkbox label="With error" error="Message" checked={false} onChange={() => {}} />
+<Checkbox label="With error & Checked" error="Message" checked onChange={() => {}} />`;
+
+const exampleTab = (
+  <Tab title="Example">
+    <StoryContainer>
+      <Title as="h2" style={{ paddingTop: 0 }}>
+        Examples
+      </Title>
+      <FieldGroup>
+        <Checkbox label="Default" checked={false} onChange={() => {}} />
+      </FieldGroup>
+      <FieldGroup>
+        <Checkbox label="Checked" checked onChange={() => {}} />
+      </FieldGroup>
+      <FieldGroup>
+        <Checkbox
+          label="Disabled"
+          disabled
+          checked={false}
+          onChange={() => {}}
+        />
+      </FieldGroup>
+      <FieldGroup>
+        <Checkbox
+          label="Disabled & Checked"
+          disabled
+          checked
+          onChange={() => {}}
+        />
+      </FieldGroup>
+      <FieldGroup>
+        <Checkbox
+          label="With error"
+          error="Message"
+          checked={false}
+          onChange={() => {}}
+        />
+      </FieldGroup>
+      <FieldGroup>
+        <Checkbox
+          label="With error & Checked"
+          error="Message"
+          checked
+          onChange={() => {}}
+        />
+      </FieldGroup>
+      <Title as="h2">Usage</Title>
+      <SimpleHighlight>{exampleUsage}</SimpleHighlight>
+    </StoryContainer>
+  </Tab>
+);
 
 storiesOf('Forms', module).add('Checkbox', () => (
-  <AutoExample component={Checkbox} />
+  <>
+    <IconFont />
+    <AutoExample component={Checkbox} additionalTabs={exampleTab} />
+  </>
 ));

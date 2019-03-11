@@ -15,12 +15,20 @@
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "yarn clean:build",
     "precommit": "lint-staged",
-    "prepush": "yarn lint && yarn test:components",
+    "lint:components": "yarn lint ./components",
+    "lint:stories": "yarn lint ./stories",
+    "lint:js": "yarn lint ./*.js",
+    "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
+    "prepush": "yarn lint:all && yarn test:components && yarn gh-pages",
     "storybook": "start-storybook -s static",
     "build-storybook": "build-storybook",
     "format": "prettier --write ./**/*.{js,jsx,json}",
     "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx --quiet",
-    "ui-update": "yarn remove @catho-private/quantum-storybook-ui && yarn add ../quantum-storybook-ui/ && yarn storybook"
+    "ui-update": "yarn remove @catho-private/quantum-storybook-ui && yarn add ../quantum-storybook-ui/ && yarn storybook",
+    "gh-pages:clean": "rm -rf docs",
+    "gh-pages:build": "build-storybook -o docs",
+    "gh-pages:update": "./scripts/update-docs.sh",
+    "gh-pages": "yarn gh-pages:clean && yarn gh-pages:build && yarn gh-pages:update"
   },
   "repository": {
     "type": "git",
@@ -67,6 +75,7 @@
     "eslint-plugin-react": "^7.12.3",
     "husky": "^1.3.1",
     "jest": "^23.6.0",
+    "jest-diff": "^24.0.0",
     "jest-styled-components": "^6.3.1",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3",
@@ -75,6 +84,7 @@
     "react-dom": "^16.7.0",
     "react-test-renderer": "^16.7.0",
     "regenerator-runtime": "^0.13.1",
+    "strip-ansi": "^5.0.0",
     "styled-components": "^4.1.3"
   },
   "dependencies": {
@@ -85,7 +95,7 @@
     "datalist-polyfill": "^1.23.1",
     "downshift": "^3.1.10",
     "prop-types": "^15.6.2",
-    "rc-slider": "^8.6.4",
+    "rc-slider": "8.6.3",
     "react-content-loader": "^3.4.2",
     "react-image": "^1.5.1",
     "react-text-mask": "^5.4.3"
