@@ -14,6 +14,7 @@
     "postbuild": "yarn clean:directories:build && yarn clean:files:build && yarn copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "yarn clean:build",
+    "cm": "git-cz",
     "precommit": "lint-staged",
     "lint:components": "yarn lint ./components",
     "lint:stories": "yarn lint ./stories",
@@ -61,7 +62,9 @@
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-modern-regexp": "^0.0.6",
+    "commitizen": "^3.0.7",
     "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "2.1.0",
     "dotenv-webpack": "^1.6.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
@@ -118,5 +121,10 @@
       "\\.(css|less)$": "<rootDir>/styleMock.js"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/jest-config.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
