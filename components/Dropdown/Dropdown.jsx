@@ -56,6 +56,8 @@ const DropdownButton = styled.button`
     box-shadow: none;
   }
 
+  ${({ text }) => !text && 'flex-direction: row-reverse;'};
+
   ${({ isOpen }) =>
     isOpen &&
     `
@@ -169,6 +171,8 @@ class Dropdown extends React.Component {
     } = this.props;
     const { selectedItem } = this.state;
 
+    const buttonText = itemToString(selectedItem.item) || placeholder;
+
     return (
       <FieldGroup>
         {label && (
@@ -193,8 +197,9 @@ class Dropdown extends React.Component {
                 isOpen={isOpen}
                 disabled={disabled}
                 error={error}
+                text={buttonText}
               >
-                {itemToString(selectedItem.item) || placeholder}
+                {buttonText}
                 <ArrowDown />
               </DropdownButton>
               {isOpen && (

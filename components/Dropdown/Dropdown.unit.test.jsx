@@ -20,6 +20,9 @@ describe('Input component ', () => {
       renderer.create(<Dropdown placeholder="Dropdown placeholder" />).toJSON(),
     ).toMatchSnapshot();
     expect(
+      renderer.create(<Dropdown placeholder="" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
       renderer.create(<Dropdown error="Error message" />).toJSON(),
     ).toMatchSnapshot();
     expect(renderer.create(<Dropdown disabled />).toJSON()).toMatchSnapshot();

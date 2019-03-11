@@ -252,6 +252,117 @@ exports[`Input component  should match the snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c1 ~ ul {
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #03a9f4;
+  border-top: none;
+}
+
+.c2 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+>
+  
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="dropdown-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c1"
+      data-toggle={true}
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c2"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 4`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: initial;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
   border-color: #ff2d4d;
   border-color: #f65474;
 }
@@ -346,7 +457,7 @@ exports[`Input component  should match the snapshot 3`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 4`] = `
+exports[`Input component  should match the snapshot 5`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -454,7 +565,7 @@ exports[`Input component  should match the snapshot 4`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 5`] = `
+exports[`Input component  should match the snapshot 6`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -581,7 +692,7 @@ exports[`Input component  should match the snapshot 5`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 6`] = `
+exports[`Input component  should match the snapshot 7`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -717,7 +828,7 @@ exports[`Input component  should match the snapshot 6`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 7`] = `
+exports[`Input component  should match the snapshot 8`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
