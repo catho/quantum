@@ -52,14 +52,6 @@ exports[`Input component  should match the snapshot 1`] = `
   box-shadow: none;
 }
 
-.c1 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
-}
-
 .c2 {
   color: #4c4c4c;
   font-size: 1.5em;
@@ -158,14 +150,6 @@ exports[`Input component  should match the snapshot 2`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
 }
 
 .c2 {
@@ -271,14 +255,6 @@ exports[`Input component  should match the snapshot 3`] = `
   box-shadow: none;
 }
 
-.c1 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
-}
-
 .c2 {
   color: #4c4c4c;
   font-size: 1.5em;
@@ -364,7 +340,6 @@ exports[`Input component  should match the snapshot 4`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   border-color: #ff2d4d;
-  border-color: #f65474;
 }
 
 .c1:hover,
@@ -385,14 +360,6 @@ exports[`Input component  should match the snapshot 4`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
 }
 
 .c2 {
@@ -509,14 +476,6 @@ exports[`Input component  should match the snapshot 5`] = `
   box-shadow: none;
 }
 
-.c1 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
-}
-
 .c2 {
   color: #4c4c4c;
   font-size: 1.5em;
@@ -628,14 +587,6 @@ exports[`Input component  should match the snapshot 6`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c2 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
 }
 
 .c3 {
@@ -757,14 +708,6 @@ exports[`Input component  should match the snapshot 7`] = `
   box-shadow: none;
 }
 
-.c3 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
-}
-
 .c4 {
   color: #4c4c4c;
   font-size: 1.5em;
@@ -878,14 +821,6 @@ exports[`Input component  should match the snapshot 8`] = `
   cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
-}
-
-.c1 ~ ul {
-  background-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #03a9f4;
-  border-top: none;
 }
 
 .c2 {

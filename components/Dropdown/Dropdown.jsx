@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
-import List from '../List/List';
 import Colors from '../Colors';
-import DeprecatedColors from '../Colors/deprecated';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
 const DropdownLabel = styled(Label)`
@@ -17,7 +15,7 @@ DropdownLabel.displayName = 'DropdownLabel';
 
 const DropdownButton = styled.button`
   align-items: center;
-  background-color: ${DeprecatedColors.WHITE};
+  background-color: ${Colors.WHITE};
   border-radius: 4px;
   border: 1.5px solid ${Colors.BLACK['400']};
   color: ${Colors.BLACK['400']};
@@ -57,28 +55,6 @@ const DropdownButton = styled.button`
   }
 
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
-
-  ${({ isOpen }) =>
-    isOpen &&
-    `
-    border-top-color: ${DeprecatedColors.PRIMARY['500']};
-    border-right-color: ${DeprecatedColors.PRIMARY['500']};
-    border-left-color: ${DeprecatedColors.PRIMARY['500']};
-  `}
-
-  ${props =>
-    props.error &&
-    `
-    border-color: ${DeprecatedColors.DANGER['400']};
-  `}
-
-  & ~ ul {
-    background-color: ${DeprecatedColors.WHITE};
-    border-width: 1px;
-    border-style: solid;
-    border-color: ${DeprecatedColors.PRIMARY['500']};
-    border-top: none;
-  }
 `;
 
 const ArrowDown = styled(Icon).attrs({
@@ -89,25 +65,40 @@ const ArrowDown = styled(Icon).attrs({
   pointer-events: none;
 `;
 
-const DropDownItem = styled.div`
-  cursor: pointer;
-  border-bottom: 1px solid ${DeprecatedColors.SECONDARY['50']};
+const DropdownList = styled.ul`
+  background-color: ${Colors.WHITE};
+  box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
+  margin-top: 4px;
+  list-style: none;
+  padding: 0;
+`;
 
-  &:last-child {
-    border: none;
-  }
+const CheckIcon = styled(Icon).attrs({
+  name: 'check',
+})`
+  color: ${Colors.BLUE['500']};
+`;
+
+const DropdownListItem = styled.li`
+  background-color: ${Colors.WHITE};
+  border-radius: 4px;
+  border: solid 1.5px ${Colors.BLACK[100]};
+  border-bottom-width: 0;
+  cursor: pointer;
+  height: 44px;
+  padding: 10px 15px;
+  box-sizing: border-box;
 
   &:hover {
-    background-color: ${DeprecatedColors.PRIMARY['500']};
-    font-weight: bold;
-    color: ${DeprecatedColors.WHITE};
+    background-color: ${Colors.BLUE[200]};
   }
 
   ${({ isSelected }) =>
     isSelected &&
     `
-    color: ${DeprecatedColors.PRIMARY['500']};
-  `};
+    display: flex;
+    justify-content: space-between;
+  `}
 `;
 
 const DropdownErrorMessage = styled(ErrorMessage)`
@@ -203,23 +194,21 @@ class Dropdown extends React.Component {
                 <ArrowDown />
               </DropdownButton>
               {isOpen && (
-                <List>
+                <DropdownList>
                   {items.map(item => (
-                    <DropDownItem
+                    <DropdownListItem
                       {...getItemProps({
                         item,
                         isSelected: selectedItem === item,
                       })}
+                      isSelected={selectedItem === item}
                       key={itemToString(item.item)}
                     >
-                      <List.Item
-                        key={item.value}
-                        icon={item.item.icon}
-                        content={item.item.content || item.item}
-                      />
-                    </DropDownItem>
+                      {item.item.content || item.item}
+                      {selectedItem === item && <CheckIcon />}
+                    </DropdownListItem>
                   ))}
-                </List>
+                </DropdownList>
               )}
             </div>
           )}
@@ -249,10 +238,6 @@ const itemPropType = PropTypes.shape({
   item: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
-      icon: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.instanceOf(Object),
-      ]),
       content: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.shape({
