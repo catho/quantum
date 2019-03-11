@@ -14,7 +14,7 @@
     "postbuild": "yarn clean:directories:build && yarn clean:files:build && yarn copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "yarn clean:build",
-    "cm": "git-cz",
+    "commitizen": "git-cz",
     "precommit": "lint-staged",
     "lint:components": "yarn lint ./components",
     "lint:stories": "yarn lint ./stories",
