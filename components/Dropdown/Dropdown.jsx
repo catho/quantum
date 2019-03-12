@@ -89,7 +89,7 @@ const DropdownListItem = styled.li`
   padding: 10px 15px;
   box-sizing: border-box;
 
-  &:hover {
+  &[aria-selected='true'] {
     background-color: ${Colors.BLUE[200]};
   }
 
@@ -152,7 +152,6 @@ class Dropdown extends React.Component {
   render() {
     const {
       label,
-      id,
       error,
       required,
       disabled,
@@ -166,25 +165,35 @@ class Dropdown extends React.Component {
 
     return (
       <FieldGroup>
-        {label && (
-          <DropdownLabel htmlFor={id}>
-            {' '}
-            {label}
-            {required && <RequiredMark>*</RequiredMark>}
-          </DropdownLabel>
-        )}
-
         <Downshift
           {...rest}
-          id={id}
           selectedItem={selectedItem}
           onChange={this._onChange}
           itemToString={({ item }) => itemToString(item)}
         >
-          {({ isOpen, getToggleButtonProps, getItemProps }) => (
+          {({
+            isOpen,
+            getToggleButtonProps,
+            getItemProps,
+            getLabelProps,
+            getInputProps,
+          }) => (
             <div>
+              {label && (
+                <DropdownLabel
+                  {...getLabelProps()}
+                  onClick={() => this._dropdownButton.focus()}
+                >
+                  {label}
+                  {required && <RequiredMark>*</RequiredMark>}
+                </DropdownLabel>
+              )}
+              <input type="hidden" {...getInputProps()} />
               <DropdownButton
                 {...getToggleButtonProps()}
+                ref={button => {
+                  this._dropdownButton = button;
+                }}
                 isOpen={isOpen}
                 disabled={disabled}
                 error={error}
@@ -223,7 +232,6 @@ class Dropdown extends React.Component {
 Dropdown.defaultProps = {
   disabled: false,
   error: '',
-  id: 'dropdown',
   items: [],
   label: '',
   name: 'Dropdown',
@@ -252,7 +260,6 @@ const itemPropType = PropTypes.shape({
 Dropdown.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.string,
-  id: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType),
   label: PropTypes.string,
   name: PropTypes.string,
