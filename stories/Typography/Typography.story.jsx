@@ -8,7 +8,8 @@ import Components from './Components';
 storiesOf('Foundation', module).add('Typography', () => (
   <>
     <Heading title="Typography">
-      Nunito Sans is the standard typeface for Catho on the web
+      Typography - Quantum uses Nunito Sans as the standard typeface to present
+      our design and content as clearly and efficiently as possible.
     </Heading>
 
     <TabbedView>
