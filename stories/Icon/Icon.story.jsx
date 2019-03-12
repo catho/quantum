@@ -57,7 +57,11 @@ const importIcon = `import { Icon } from '@cathodevel/quantum';`;
 
 storiesOf('Foundation', module).add('Icons', () => (
   <React.Fragment>
-    <Heading name="Icon" />
+    <Heading name="Icons">
+      Quantum use Material icons, beautifully crafted symbols for common actions
+      and items. Download on desktop to use them in your digital products for
+      Android, iOS, and web.
+    </Heading>
 
     <IconFont />
 
