@@ -61,14 +61,27 @@ exports[`Input component  should match the snapshot 1`] = `
 <div
   className="c0"
 >
-  
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-0-label"
     aria-owns={null}
     role="combobox"
   >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-0-label"
+      autoComplete="off"
+      id="downshift-0-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"
@@ -161,14 +174,27 @@ exports[`Input component  should match the snapshot 2`] = `
 <div
   className="c0"
 >
-  
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-1-label"
     aria-owns={null}
     role="combobox"
   >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-1-label"
+      autoComplete="off"
+      id="downshift-1-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"
@@ -264,14 +290,27 @@ exports[`Input component  should match the snapshot 3`] = `
 <div
   className="c0"
 >
-  
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-2-label"
     aria-owns={null}
     role="combobox"
   >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-2-label"
+      autoComplete="off"
+      id="downshift-2-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"
@@ -381,14 +420,27 @@ exports[`Input component  should match the snapshot 4`] = `
 <div
   className="c0"
 >
-  
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-3-label"
     aria-owns={null}
     role="combobox"
   >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-3-label"
+      autoComplete="off"
+      id="downshift-3-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"
@@ -485,14 +537,27 @@ exports[`Input component  should match the snapshot 5`] = `
 <div
   className="c0"
 >
-  
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-4-label"
     aria-owns={null}
     role="combobox"
   >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-4-label"
+      autoComplete="off"
+      id="downshift-4-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"
@@ -533,14 +598,15 @@ exports[`Input component  should match the snapshot 6`] = `
 }
 
 .c1 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   margin-bottom: 8px;
   padding-left: 13.5px;
 }
@@ -598,20 +664,34 @@ exports[`Input component  should match the snapshot 6`] = `
 <div
   className="c0"
 >
-  <label
-    className="c1"
-    htmlFor="dropdown"
-  >
-     
-    Dropdown label
-  </label>
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-5-label"
     aria-owns={null}
     role="combobox"
   >
+    <label
+      className="c1"
+      htmlFor="downshift-5-input"
+      id="downshift-5-label"
+      onClick={[Function]}
+    >
+      Dropdown label
+    </label>
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-5-label"
+      autoComplete="off"
+      id="downshift-5-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"
@@ -652,14 +732,15 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c1 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   margin-bottom: 8px;
   padding-left: 13.5px;
 }
@@ -721,25 +802,39 @@ exports[`Input component  should match the snapshot 7`] = `
 <div
   className="c0"
 >
-  <label
-    className="c1"
-    htmlFor="dropdown"
-  >
-     
-    Dropdown label
-    <em
-      className="c2"
-    >
-      *
-    </em>
-  </label>
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-6-label"
     aria-owns={null}
     role="combobox"
   >
+    <label
+      className="c1"
+      htmlFor="downshift-6-input"
+      id="downshift-6-label"
+      onClick={[Function]}
+    >
+      Dropdown label
+      <em
+        className="c2"
+      >
+        *
+      </em>
+    </label>
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-6-label"
+      autoComplete="off"
+      id="downshift-6-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"
@@ -832,14 +927,27 @@ exports[`Input component  should match the snapshot 8`] = `
 <div
   className="c0"
 >
-  
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="dropdown-label"
+    aria-labelledby="downshift-7-label"
     aria-owns={null}
     role="combobox"
   >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-7-label"
+      autoComplete="off"
+      id="downshift-7-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
     <button
       aria-haspopup={true}
       aria-label="open menu"

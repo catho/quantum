@@ -36,18 +36,6 @@ describe('Input component ', () => {
   });
 });
 
-describe('with a label', () => {
-  const dropdown = <Dropdown label="Text label" id="dropdown" />;
-
-  it('should match label "htmlFor" label param with "id" dropdown param', () => {
-    const wrapper = shallow(dropdown);
-    const select = wrapper.find('#dropdown');
-    const label = wrapper.find('DropdownLabel');
-
-    expect(label.prop('htmlFor')).toEqual(select.prop('id'));
-  });
-});
-
 describe('with an "onChange" callback set', () => {
   const mockFn = jest.fn();
 
