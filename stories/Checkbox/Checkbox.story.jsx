@@ -9,7 +9,7 @@ import {
 } from '@catho-private/quantum-storybook-ui';
 import Checkbox from '../../components/Checkbox';
 import FieldGroup from '../../components/shared/FieldGroup';
-import IconFont from '../../components/GlobalStyle';
+import { IconFont } from '../../components/GlobalStyle';
 
 const exampleUsage = `<Checkbox label="Default" checked={false} onChange={() => {}} />
 <Checkbox label="Checked" checked onChange={() => {}} />
@@ -21,9 +21,7 @@ const exampleUsage = `<Checkbox label="Default" checked={false} onChange={() => 
 const exampleTab = (
   <Tab title="Example">
     <StoryContainer>
-      <Title as="h2" style={{ paddingTop: 0 }}>
-        Examples
-      </Title>
+      <Title as="h2">Examples</Title>
       <FieldGroup>
         <Checkbox label="Default" checked={false} onChange={() => {}} />
       </FieldGroup>
@@ -68,9 +66,16 @@ const exampleTab = (
   </Tab>
 );
 
+const description = `Checkboxes are used when there is a list of options and
+the user may select multiple options, including all or none.`;
+
 storiesOf('Forms', module).add('Checkbox', () => (
   <>
     <IconFont />
-    <AutoExample component={Checkbox} additionalTabs={exampleTab} />
+    <AutoExample
+      description={description}
+      component={Checkbox}
+      additionalTabs={exampleTab}
+    />
   </>
 ));
