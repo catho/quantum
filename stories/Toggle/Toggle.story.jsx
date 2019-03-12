@@ -5,13 +5,14 @@ import {
   Example,
   AutoExample,
   Title,
+  StoryContainer,
 } from '@catho-private/quantum-storybook-ui';
 import Toggle from '../../components/Toggle';
-import { Container } from '../../components/Grid';
+import { IconFont } from '../../components/GlobalStyle';
 
 const exampleTab = (
   <Tab title="Example">
-    <Container fluid>
+    <StoryContainer fluid>
       <Title>Left label</Title>
       <Example
         component={
@@ -48,10 +49,20 @@ const exampleTab = (
   <label htmlFor="right" style={{ marginLeft: 10 }}>Right label</label>
 </div>`}
       />
-    </Container>
+    </StoryContainer>
   </Tab>
 );
 
+const description = `Toggle is a control that is used to quickly switch
+between two possible states.`;
+
 storiesOf('Forms', module).add('Toggle', () => (
-  <AutoExample component={Toggle} additionalTabs={exampleTab} />
+  <>
+    <IconFont />
+    <AutoExample
+      description={description}
+      component={Toggle}
+      additionalTabs={exampleTab}
+    />
+  </>
 ));
