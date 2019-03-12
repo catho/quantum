@@ -119,12 +119,33 @@
     content: '';
     width: 16px;
     height: 16px;
-    background: url(https://image.flaticon.com/icons/svg/149/149852.svg) no-repeat;
+    background: url(https://image.flaticon.com/icons/svg/149/149852.svg)
+      no-repeat;
     background-size: 16px;
     position: absolute;
     top: 19px;
     left: 13px;
     opacity: 0.6;
+  }
+
+  /* Components scroll */
+  .Pane.vertical.Pane1 > div > div {
+    overflow-x: hidden;
+  }
+
+  .Pane.vertical.Pane1 > div > div::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Components scroll */
+  .Pane.vertical.Pane1 > div > div::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Components scroll */
+  .Pane.vertical.Pane1 > div > div::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
   }
 
   /* shortcuts panel */
