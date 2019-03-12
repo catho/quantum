@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react';
 import {
   Heading,
   AutoPropsApi,
-  HowToImport,
   CodeExample,
   TabbedView,
   Tab,
@@ -40,7 +39,11 @@ const importRadioGroup = `import { RadioGroup } from '@cathodevel/quantum';`;
 const stories = storiesOf('Forms', module);
 stories.add('Radio group', () => (
   <>
-    <Heading title="RadioGroup" />
+    <Heading title="RadioGroup">
+      Radio group is a list of radio buttons that are used when a list of two or
+      more options are mutually exclusive, meaning the user must select only one
+      option.
+    </Heading>
     <TabbedView>
       <Tab title="Usage">
         <StoryContainer>
