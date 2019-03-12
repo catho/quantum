@@ -28,9 +28,7 @@ class Catalogue extends Component {
       <React.Fragment>
         <Row>
           <Col medium={12}>
-            <Title as="h2" style={{ marginTop: '50px' }}>
-              Available Icons{' '}
-            </Title>
+            <Title as="h2">Available Icons </Title>
           </Col>
         </Row>
         <Row style={{ marginTop: '-40px' }}>
