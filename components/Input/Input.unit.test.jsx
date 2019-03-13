@@ -23,21 +23,6 @@ describe('Input component ', () => {
       expect(renderer.create(input).toJSON()).toMatchSnapshot();
     });
 
-    it('should have withValue prop set to true when input have value', () => {
-      const wrapper = shallow(input);
-      const label = wrapper.childAt(1);
-
-      expect(label.prop('withValue')).toEqual(true);
-    });
-
-    it("should have withValue prop set to false when input doesn't have value", () => {
-      const inputWithoutValue = <Input label="Text label" id="withoutValue" />;
-      const wrapper = shallow(inputWithoutValue);
-      const label = wrapper.childAt(1);
-
-      expect(label.prop('withValue')).toEqual(false);
-    });
-
     it('should match label "htmlFor" label param with "id" input param', () => {
       const wrapper = shallow(input);
       const styledInput = wrapper.childAt(0);

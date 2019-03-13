@@ -1,43 +1,52 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
 import { ErrorMessage, Label, FieldGroup } from '../shared';
-import Colors from '../Colors/deprecated';
+import ColorsDeprecated from '../Colors/deprecated';
+import Colors from '../Colors';
 import Icon from '../Icon';
 import theme from '../shared/theme';
 import InputTypes from './InputTypes';
 
-const sharedStyle = css`
-  font-size: 12px;
-  transform: translateY(-22px);
-`;
-
 const InputLabel = styled(Label)`
   cursor: text;
   font-size: 16px;
-  left: 0;
-  position: absolute;
-  top: 6px;
+  margin-bottom: 0;
+  padding: 8px 12px 0px 12px;
+  font-weight: bold;
   ${theme.mixins.transition()};
-
-  ${props => props.withValue && `${sharedStyle}`} ${props =>
-    props.error && `color: ${Colors.DANGER['500']};`};
 `;
 
 const InputTag = styled.input`
   ${theme.mixins.transition()};
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid ${Colors.SECONDARY['300']};
+  border-radius: 4px;
+  border: 1.5px solid ${Colors.BLACK['400']};
   box-sizing: border-box;
-  color: ${Colors.SECONDARY['900']};
+  color: ${Colors.BLACK['700']};
   font-size: 16px;
-  height: 30px;
-  padding: 0px 3px;
+  height: 44px;
+  padding: 10px 12px;
   outline: none;
   width: 100%;
+  margin-top: 5px;
+
+  &[disabled] {
+    background-color: ${Colors.BLACK['100']};
+    color: ${Colors.BLACK['400']};
+    cursor: not-allowed;
+    border-color: ${Colors.BLACK['400']};
+    box-shadow: none;
+  }
+
+  ${({ error }) =>
+    error &&
+    `
+    border-color: ${Colors.ERROR['500']};
+  `}
 
   ${props =>
     props.password &&
@@ -50,25 +59,19 @@ const InputTag = styled.input`
   }
 
   &:focus {
-    border-color: ${Colors.PRIMARY['500']};
+    border-color: ${Colors.BLUE['500']};
+    box-shadow: 0 1px 6px 0 ${Colors.BLUE['50']};
   }
 
-  ${props =>
-    props.error &&
-    `
-    border-color: ${Colors.DANGER['500']};
-  `}
-
   &:focus + ${InputLabel} {
-    color: ${Colors.PRIMARY['500']};
-    ${sharedStyle}
+    color: ${ColorsDeprecated.PRIMARY['500']};
   }
 `;
 
 const InputIcon = styled(Icon)`
+  cursor: pointer;
   position: absolute;
   right: 2px;
-  cursor: pointer;
 `;
 
 const InputFieldGroup = styled(FieldGroup)`
@@ -80,7 +83,29 @@ const InputFieldGroup = styled(FieldGroup)`
 `;
 
 const InputErrorMessage = styled(ErrorMessage)`
-  margin-top: 8px;
+  padding: 8px 12px;
+`;
+
+const HelperText = styled.span`
+  color: ${Colors.BLACK['700']};
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px;
+`;
+
+const DescriptionLabel = styled.span`
+  color: ${Colors.BLACK['700']};
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  padding: 0px 12px;
+`;
+
+const RequiredMark = styled.em`
+  color: ${Colors.ERROR['500']};
 `;
 
 /** A text field component to get user text data */
@@ -142,11 +167,30 @@ class Input extends React.Component {
   };
 
   render() {
-    const { id, label, error, mask, type: inputType, ...rest } = this.props;
+    const {
+      id,
+      label,
+      error,
+      mask,
+      type: inputType,
+      descriptionLabel,
+      helperText,
+      required,
+      ...rest
+    } = this.props;
     const { value, type } = this.state;
 
     return (
       <InputFieldGroup>
+        {label && (
+          <InputLabel htmlFor={id} error={error}>
+            {label}
+            {required && <RequiredMark>*</RequiredMark>}
+          </InputLabel>
+        )}
+        {descriptionLabel && (
+          <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
+        )}
         <MaskedInput
           {...rest}
           id={id}
@@ -154,14 +198,10 @@ class Input extends React.Component {
           mask={mask}
           value={value}
           onChange={this._onChange}
-          render={(ref, props) => <InputTag ref={ref} {...props} />}
+          render={(ref, props) => (
+            <InputTag ref={ref} error={error} {...props} />
+          )}
         />
-
-        {label && (
-          <InputLabel htmlFor={id} error={error} withValue={!!value}>
-            {label}
-          </InputLabel>
-        )}
         {inputType === 'password' && (
           <InputIcon
             name={type === 'password' ? 'visibility' : 'visibility_off'}
@@ -169,6 +209,7 @@ class Input extends React.Component {
           />
         )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
+        {helperText && !error && <HelperText>{helperText}</HelperText>}
       </InputFieldGroup>
     );
   }
@@ -182,6 +223,10 @@ Input.defaultProps = {
   maxLength: '',
   type: 'text',
   value: '',
+  helperText: '',
+  descriptionLabel: '',
+  required: false,
+  disabled: false,
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
@@ -191,6 +236,13 @@ Input.propTypes = {
   value: PropTypes.string,
   /** Display a label text that describe the field */
   label: PropTypes.string,
+  /** Display a helper text below the input */
+  helperText: PropTypes.string,
+  /** Display a description text below the label */
+  descriptionLabel: PropTypes.string,
+  /** set if the input is required */
+  required: PropTypes.bool,
+  disabled: PropTypes.bool,
   type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
   /** Display an error message and changes border color to error color */
   error: PropTypes.string,

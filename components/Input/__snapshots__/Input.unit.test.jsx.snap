@@ -6,14 +6,24 @@ exports[`Input component  should match the snapshot 1`] = `
   transition: all 0.2s ease-in-out;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #93a3ad;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #364c5a;
+  color: #4c4c4c;
   font-size: 16px;
-  height: 30px;
-  padding: 0px 3px;
+  height: 44px;
+  padding: 10px 12px;
   outline: none;
   width: 100%;
+  margin-top: 5px;
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
 }
 
 .c1::-webkit-calendar-picker-indicator {
@@ -21,15 +31,12 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c1:focus {
-  border-color: #03a9f4;
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c2 {
   color: #03a9f4;
-  font-size: 12px;
-  -webkit-transform: translateY(-22px);
-  -ms-transform: translateY(-22px);
-  transform: translateY(-22px);
 }
 
 .c0 {
@@ -47,9 +54,12 @@ exports[`Input component  should match the snapshot 1`] = `
 <div
   className="c0"
 >
+  
+  
   <input
     className="c1"
     defaultValue="foo"
+    disabled={false}
     id=""
     maxLength=""
     onBlur={[Function]}
@@ -63,7 +73,7 @@ exports[`Input component  should match the snapshot 1`] = `
 `;
 
 exports[`Input component  with a label should match the snapshot 1`] = `
-.c3 {
+.c2 {
   cursor: pointer;
   display: block;
   font-size: 16px;
@@ -75,46 +85,53 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   user-select: none;
   cursor: text;
   font-size: 16px;
-  left: 0;
-  position: absolute;
-  top: 6px;
+  margin-bottom: 0;
+  padding: 8px 12px 0px 12px;
+  font-weight: bold;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-size: 12px;
-  -webkit-transform: translateY(-22px);
-  -ms-transform: translateY(-22px);
-  transform: translateY(-22px);
 }
 
-.c1 {
+.c3 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #93a3ad;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #364c5a;
+  color: #4c4c4c;
   font-size: 16px;
-  height: 30px;
-  padding: 0px 3px;
+  height: 44px;
+  padding: 10px 12px;
   outline: none;
   width: 100%;
+  margin-top: 5px;
 }
 
-.c1::-webkit-calendar-picker-indicator {
+.c3[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c3::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.c1:focus {
-  border-color: #03a9f4;
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1:focus + .c2 {
+.c3:focus + .c1 {
   color: #03a9f4;
-  font-size: 12px;
-  -webkit-transform: translateY(-22px);
-  -ms-transform: translateY(-22px);
-  transform: translateY(-22px);
+}
+
+.c4:focus + .c1 {
+  color: #03a9f4;
 }
 
 .c0 {
@@ -132,9 +149,17 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 <div
   className="c0"
 >
+  <label
+    className="c1 c2"
+    htmlFor="input-with-label"
+  >
+    Text label
+  </label>
+  
   <input
-    className="c1"
+    className="c3"
     defaultValue="foo"
+    disabled={false}
     id="input-with-label"
     maxLength=""
     onBlur={[Function]}
@@ -142,12 +167,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     onFocus={[Function]}
     type="text"
   />
-  <label
-    className="c2 c3"
-    htmlFor="input-with-label"
-  >
-    Text label
-  </label>
+  
   
 </div>
 `;
@@ -158,14 +178,25 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   transition: all 0.2s ease-in-out;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #93a3ad;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #364c5a;
+  color: #4c4c4c;
   font-size: 16px;
-  height: 30px;
-  padding: 0px 3px;
+  height: 44px;
+  padding: 10px 12px;
   outline: none;
   width: 100%;
+  margin-top: 5px;
+  border-color: #ff2d4d;
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
 }
 
 .c1::-webkit-calendar-picker-indicator {
@@ -173,15 +204,12 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
 }
 
 .c1:focus {
-  border-color: #03a9f4;
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c3 {
   color: #03a9f4;
-  font-size: 12px;
-  -webkit-transform: translateY(-22px);
-  -ms-transform: translateY(-22px);
-  transform: translateY(-22px);
 }
 
 .c0 {
@@ -202,15 +230,18 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   cursor: text;
   font-style: italic;
   font-weight: 600;
-  margin-top: 8px;
+  padding: 8px 12px;
 }
 
 <div
   className="c0"
 >
+  
+  
   <input
     className="c1"
     defaultValue="foo"
+    disabled={false}
     id=""
     maxLength=""
     onBlur={[Function]}
@@ -218,11 +249,11 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     onFocus={[Function]}
     type="text"
   />
-  
   <div
     className="c2"
   >
     Error message
   </div>
+  
 </div>
 `;
