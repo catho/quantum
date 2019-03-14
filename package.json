@@ -2,7 +2,6 @@
   "name": "@catho/quantum",
   "version": "0.0.0-development",
   "description": "Catho react components",
-  "private": false,
   "sideEffects": false,
   "scripts": {
     "test": "jest",
@@ -34,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https:git@github.com:catho/quantum.git"
+    "url": "https://github.com/catho/quantum.git"
   },
   "keywords": [
     "catho",
@@ -130,7 +129,14 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "publishConfig": {
-    "access": "restricted"
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "./dist"
+        }
+      ]
+    ]
   }
 }
