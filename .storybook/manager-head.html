@@ -2,20 +2,28 @@
   @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i');
 
   /* logo */
-  .Pane.vertical.Pane1 > div > div > div > div > a {
+  #logo {
     background-image: url(//static.catho.com.br/svg/site/logoCathoB2c.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 85px;
     border: none !important;
     text-indent: -9999px;
-    padding: 40px;
+    padding: 30px 40px;
+    position: absolute;
+    bottom: 0px;
+    width: 60%;
+  }
+
+  #logo * {
+    color: transparent !important;
+    border: none !important;
   }
 
   .Pane.vertical.Pane1 {
     background-color: #ffffff !important;
     overflow: hidden !important;
-    width: 240px !important;
+    width: 190px !important;
   }
 
   /* hide menu arrow */
@@ -26,14 +34,13 @@
   /* first ul align */
   .Pane.vertical.Pane1 > div > div > div > div > ul {
     margin-left: -10px !important;
-    padding: 0px !important;
-    width: 216px;
+    padding: 10px 0px 0px 0px !important;
     font-family: 'Titillium Web' !important;
     color: #546b81;
   }
 
   .Pane.vertical.Pane1 > div > div > div > div > ul li {
-    padding: 3px 0;
+    padding: 8px;
   }
 
   .Pane.vertical.Pane1 > div > div > div > div > ul li > div > ul {
@@ -100,7 +107,6 @@
   .Pane.vertical.Pane1 > div > div > div > div:nth-child(2) {
     font-family: 'Titillium Web' !important;
     width: 105% !important;
-    border: 1px solid #e9ecef;
     margin-left: -10px;
     padding: 10px 0px;
   }
@@ -133,8 +139,20 @@
     overflow-x: hidden;
   }
 
+  .Pane.vertical.Pane1 > div > div > div {
+    padding: 0 !important;
+  }
+
+  .Pane.vertical.Pane1 > div > div > div > div {
+    padding: 0 !important;
+  }
+
+  .Pane.vertical.Pane1 > div {
+    height: 82%;
+  }
+
   .Pane.vertical.Pane1 > div > div::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
   }
 
   /* Components scroll */
@@ -144,7 +162,7 @@
 
   /* Components scroll */
   .Pane.vertical.Pane1 > div > div::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.12);
     border-radius: 5px;
   }
 
@@ -161,15 +179,28 @@
   /* lateral panel */
   .Pane.horizontal.Pane1 {
     overflow: hidden !important;
-    border-right: 1px solid #e9ecef;
   }
 
   /* iframe padding */
   .Pane.horizontal.Pane1 > div {
     padding: 0 !important;
   }
+
+  .Pane.horizontal.Pane1 > div div:nth-child(2) {
+    border: none !important;
+  }
 </style>
 
 <script>
   document.title = 'Quantum';
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var oldLogo = document.querySelector('.Pane.vertical.Pane1 > div > div > div > div');
+    var componentsFrame = document.querySelector('.Pane.vertical.Pane1 > div > div');
+    var searchField = document.querySelector('.Pane.vertical.Pane1 > div > div > div > div:nth-child(2)');
+
+    oldLogo.remove();
+    oldLogo.setAttribute('id', 'logo');
+    searchField.remove();
+    componentsFrame.parentNode.append(oldLogo);
+  });
 </script>
