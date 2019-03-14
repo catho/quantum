@@ -66,6 +66,17 @@ const InputTag = styled.input`
   &:focus + ${InputLabel} {
     color: ${ColorsDeprecated.PRIMARY['500']};
   }
+
+  ${({ placeholder, defaultValue }) =>
+    placeholder &&
+    !defaultValue &&
+    `
+    color: ${Colors.BLACK['400']};
+  `}
+
+  :-webkit-autofill {
+    color: ${Colors.BLACK['700']} !important;
+  }
 `;
 
 const InputIcon = styled(Icon)`
@@ -227,6 +238,7 @@ Input.defaultProps = {
   descriptionLabel: '',
   required: false,
   disabled: false,
+  placeholder: '',
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
@@ -243,6 +255,7 @@ Input.propTypes = {
   /** set if the input is required */
   required: PropTypes.bool,
   disabled: PropTypes.bool,
+  placeholder: PropTypes.string,
   type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
   /** Display an error message and changes border color to error color */
   error: PropTypes.string,
