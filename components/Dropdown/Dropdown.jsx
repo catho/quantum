@@ -44,17 +44,17 @@ const DropButton = styled.button`
     border-color: ${Colors.ERROR['500']};
 
     :hover, :focus {
-      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
       border-color: ${Colors.ERROR['500']};
+      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
     }
   `};
 
   &[disabled] {
     background-color: ${Colors.BLACK['100']};
-    color: ${Colors.BLACK['400']};
-    cursor: not-allowed;
     border-color: ${Colors.BLACK['400']};
     box-shadow: none;
+    color: ${Colors.BLACK['400']};
+    cursor: not-allowed;
   }
 
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
@@ -71,6 +71,8 @@ const ArrowDown = styled(Icon).attrs({
 
 const DropList = styled.ul`
   background-color: ${Colors.WHITE};
+  border-radius: 4px;
+  border: solid 1.5px ${Colors.BLACK[100]};
   box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
   list-style: none;
   margin-top: 4px;
@@ -80,8 +82,6 @@ const DropList = styled.ul`
   position: absolute;
   width: 100%;
   z-index: 9999;
-  border-radius: 4px;
-  border: solid 1.5px ${Colors.BLACK[100]};
 `;
 
 const CheckIcon = styled(Icon).attrs({
@@ -93,10 +93,10 @@ const CheckIcon = styled(Icon).attrs({
 const DropItem = styled.li`
   background-color: ${Colors.WHITE};
   border-bottom: solid 1.5px ${Colors.BLACK[100]};
+  box-sizing: border-box;
   cursor: pointer;
   height: ${ITEM_HEIGHT};
   padding: 10px 15px;
-  box-sizing: border-box;
 
   :last-child {
     border-bottom-width: 0;

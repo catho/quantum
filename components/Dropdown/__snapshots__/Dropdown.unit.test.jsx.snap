@@ -46,10 +46,10 @@ exports[`Input component  should match the snapshot 1`] = `
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -164,10 +164,10 @@ exports[`Input component  should match the snapshot 2`] = `
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -285,10 +285,10 @@ exports[`Input component  should match the snapshot 3`] = `
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -404,16 +404,16 @@ exports[`Input component  should match the snapshot 4`] = `
 
 .c2:hover,
 .c2:focus {
-  box-shadow: 0 2px 6px 0 #ff2d4d;
   border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -542,10 +542,10 @@ exports[`Input component  should match the snapshot 5`] = `
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -674,10 +674,10 @@ exports[`Input component  should match the snapshot 6`] = `
 
 .c3[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c4 {
@@ -813,10 +813,10 @@ exports[`Input component  should match the snapshot 7`] = `
 
 .c4[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c5 {
@@ -947,10 +947,10 @@ exports[`Input component  should match the snapshot 8`] = `
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -1066,10 +1066,10 @@ exports[`Input component  should match the snapshot 9`] = `
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
