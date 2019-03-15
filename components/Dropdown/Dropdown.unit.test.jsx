@@ -15,6 +15,17 @@ describe('Input component ', () => {
       />
     );
 
+    const withSelectedItem = (
+      <Dropdown
+        items={[
+          { value: 'fooKey', label: 'foo' },
+          { value: 'barKey', label: 'bar' },
+          { value: 'bazKey', label: 'baz' },
+        ]}
+        selectedItem={{ value: 'bazKey', label: 'baz' }}
+      />
+    );
+
     expect(renderer.create(<Dropdown />).toJSON()).toMatchSnapshot();
     expect(
       renderer.create(<Dropdown placeholder="Dropdown placeholder" />).toJSON(),
@@ -33,6 +44,7 @@ describe('Input component ', () => {
       renderer.create(<Dropdown required label="Dropdown label" />).toJSON(),
     ).toMatchSnapshot();
     expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
+    expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
   });
 });
 
@@ -50,9 +62,9 @@ describe('with an "onChange" callback set', () => {
     },
   ];
 
-  const dropdown = <Dropdown onChange={mockFn} id="dropdown" items={items} />;
-
-  const wrapper = shallow(dropdown);
+  const wrapper = shallow(
+    <Dropdown onChange={mockFn} id="dropdown" items={items} />,
+  );
 
   it('should call the callback and set a new value', () => {
     const [selectedItem] = items;
