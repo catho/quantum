@@ -1,64 +1,37 @@
+import { BREAKPOINTS } from './shared';
+import { Container, Row, Col, Hide } from './Grid';
+import { Form, Validations } from './Form';
+import Badge from './Badge';
 import Button from './Button';
 import Checkbox from './Checkbox';
-import Colors from './Colors/deprecated';
-import Dropdown from './Dropdown';
-import { Container, Row, Col, Hide } from './Grid';
-import Image from './Image';
-import Input from './Input';
-import Loading from './Loading';
-import Modal from './Modal';
-import Alert from './Alert';
-import RadioGroup from './RadioGroup';
-import Textarea from './Textarea';
-import Toggle from './Toggle';
-import TextMask from './TextMask';
-import { Form, Validations } from './Form';
-import Tooltip from './Tooltip';
-import Logo from './Logo';
-import Card from './Card';
-import Icon from './Icon';
-import List from './List';
-import { Wizard, Step } from './Wizard';
-import Slider from './Slider';
-import Popover from './Popover';
-import Badge from './Badge';
-import Tag from './Tag';
+import Colors from './Colors';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
-import { BREAKPOINTS } from './shared';
+import Icon from './Icon';
+import RadioGroup from './RadioGroup';
+import Slider from './Slider';
+import Tag from './Tag';
+import Toggle from './Toggle';
+import Tooltip from './Tooltip';
 
 export {
+  Badge,
   BREAKPOINTS,
   Button,
-  Card,
   Checkbox,
   Col,
-  Container,
   Colors,
-  Dropdown,
+  Container,
   Form,
+  GlobalStyle,
   Hide,
-  Image,
-  Input,
-  Loading,
-  Logo,
-  Modal,
-  Alert,
+  Icon,
+  IconFont,
   RadioGroup,
   Row,
-  Textarea,
-  Toggle,
-  TextMask,
-  Tooltip,
-  Validations,
-  Icon,
-  List,
-  Wizard,
-  Step,
   Slider,
-  Popover,
-  Badge,
-  GlobalStyle,
-  Typography,
-  IconFont,
   Tag,
+  Toggle,
+  Tooltip,
+  Typography,
+  Validations,
 };

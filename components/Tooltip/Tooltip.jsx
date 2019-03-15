@@ -29,7 +29,6 @@ const Tip = styled.div`
 `;
 
 const Wrapper = styled.div`
-  cursor: default;
   position: relative;
   white-space: ${props =>
     props.length >= TIP_MAXLENGTH ? 'initial' : 'nowrap'};
