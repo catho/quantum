@@ -247,6 +247,7 @@ const itemPropType = PropTypes.oneOfType([
 Dropdown.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.string,
+  /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
   label: PropTypes.string,
   onChange: PropTypes.func,
