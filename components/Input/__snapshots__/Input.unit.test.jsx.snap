@@ -35,12 +35,20 @@ exports[`Input component  should match the snapshot 1`] = `
   box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1:focus + .c2 {
+.c1:focus + .c3 {
   color: #03a9f4;
 }
 
 .c1:-webkit-autofill {
-  color: #4c4c4c !important;
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 45px;
 }
 
 .c0 {
@@ -72,6 +80,18 @@ exports[`Input component  should match the snapshot 1`] = `
     placeholder=""
     type="text"
   />
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c2"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
   
   
 </div>
@@ -136,11 +156,19 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 }
 
 .c3:-webkit-autofill {
-  color: #4c4c4c !important;
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
-.c4:focus + .c1 {
+.c5:focus + .c1 {
   color: #03a9f4;
+}
+
+.c4 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 45px;
 }
 
 .c0 {
@@ -177,6 +205,18 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     placeholder=""
     type="text"
   />
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c4"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
   
   
 </div>
@@ -218,12 +258,20 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1:focus + .c3 {
+.c1:focus + .c4 {
   color: #03a9f4;
 }
 
 .c1:-webkit-autofill {
-  color: #4c4c4c !important;
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 45px;
 }
 
 .c0 {
@@ -238,7 +286,7 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   margin-top: 20px;
 }
 
-.c2 {
+.c3 {
   color: #ac001a;
   font-size: 14px;
   cursor: text;
@@ -264,8 +312,20 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     placeholder=""
     type="text"
   />
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c2"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
   <div
-    className="c2"
+    className="c3"
   >
     Error message
   </div>

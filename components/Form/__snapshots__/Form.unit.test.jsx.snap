@@ -59,7 +59,8 @@ exports[`Form component  should match the snapshot 1`] = `
 }
 
 .c3:-webkit-autofill {
-  color: #4c4c4c !important;
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c0 {

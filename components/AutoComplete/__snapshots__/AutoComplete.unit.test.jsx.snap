@@ -35,12 +35,20 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
   box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2:focus + .c4 {
+.c2:focus + .c5 {
   color: #03a9f4;
 }
 
 .c2:-webkit-autofill {
-  color: #4c4c4c !important;
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c3 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 45px;
 }
 
 .c1 {
@@ -55,13 +63,13 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
   margin-top: 20px;
 }
 
-.c3 {
+.c4 {
   position: relative;
   top: -20px;
   left: -2px;
 }
 
-.c3 select {
+.c4 select {
   margin-top: initial !important;
   margin-left: initial !important;
 }
@@ -92,11 +100,23 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
       placeholder=""
       type="text"
     />
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c3"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      cancel
+    </span>
     
     
   </div>
   <datalist
-    className="c3"
+    className="c4"
     id="_datalist"
   >
     <option

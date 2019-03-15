@@ -83,7 +83,8 @@ const InputTag = styled.input`
 const InputIcon = styled(Icon)`
   cursor: pointer;
   position: absolute;
-  right: 2px;
+  right: 12px;
+  top: 45px;
 `;
 
 const InputFieldGroup = styled(FieldGroup)`
@@ -178,6 +179,10 @@ class Input extends React.Component {
     }
   };
 
+  _handleClear = () => {
+    this.setState({ value: '' });
+  };
+
   render() {
     const {
       id,
@@ -191,6 +196,7 @@ class Input extends React.Component {
       ...rest
     } = this.props;
     const { value, type } = this.state;
+    const valueIsTyped = !!value;
 
     return (
       <InputFieldGroup>
@@ -219,6 +225,9 @@ class Input extends React.Component {
             name={type === 'password' ? 'visibility' : 'visibility_off'}
             onClick={this._showPassword}
           />
+        )}
+        {valueIsTyped && (
+          <InputIcon name="cancel" onClick={this._handleClear} />
         )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
         {helperText && !error && <HelperText>{helperText}</HelperText>}
