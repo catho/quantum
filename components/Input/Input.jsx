@@ -75,7 +75,8 @@ const InputTag = styled.input`
   `}
 
   :-webkit-autofill {
-    color: ${Colors.BLACK['700']} !important;
+    -webkit-text-fill-color: ${Colors.BLACK['700']};
+    -webkit-box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
   }
 `;
 
