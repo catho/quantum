@@ -97,7 +97,7 @@
     "datalist-polyfill": "^1.23.1",
     "downshift": "^3.1.10",
     "prop-types": "^15.6.2",
-    "rc-slider": "^8.6.4",
+    "rc-slider": "8.6.3",
     "react-content-loader": "^3.4.2",
     "react-image": "^1.5.1",
     "react-text-mask": "^5.4.3"

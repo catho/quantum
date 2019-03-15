@@ -9,7 +9,6 @@ import Loading from './Loading';
 import Modal from './Modal';
 import Alert from './Alert';
 import RadioGroup from './RadioGroup';
-import Range from './Range';
 import Textarea from './Textarea';
 import Toggle from './Toggle';
 import TextMask from './TextMask';
@@ -20,6 +19,7 @@ import Card from './Card';
 import Icon from './Icon';
 import List from './List';
 import { Wizard, Step } from './Wizard';
+import Slider from './Slider';
 import Popover from './Popover';
 import Badge from './Badge';
 import Tag from './Tag';
@@ -44,7 +44,6 @@ export {
   Modal,
   Alert,
   RadioGroup,
-  Range,
   Row,
   Textarea,
   Toggle,
@@ -55,6 +54,7 @@ export {
   List,
   Wizard,
   Step,
+  Slider,
   Popover,
   Badge,
   GlobalStyle,

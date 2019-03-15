@@ -1,154 +1,224 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import SliderComponent from 'rc-slider';
+import RcSlider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import Colors from '../Colors/deprecated';
+import Colors from '../Colors';
 import Tooltip from '../Tooltip';
-import theme from '../shared/theme';
+import valueValidator from './valueValidator';
 
-const StyledSlider = styled(SliderComponent)`
-  &.rc-slider {
-    height: 50px;
+const sliderStyle = {
+  handleStyle: {
+    borderWidth: 0,
+    height: 20,
+    marginLeft: -9,
+    marginTop: -6,
+    width: 20,
+  },
+  marksStyle: {
+    common: {
+      fontSize: 16,
+      marginLeft: 0,
+      width: 'auto',
+    },
+    max: {
+      left: 'unset',
+      right: 0,
+    },
+    min: { left: 0 },
+  },
+  railStyle: { height: 8 },
+  trackStyle: { height: 8 },
+};
+
+const tipPosition = ({ value, min, max }) => {
+  let half = value;
+
+  if (typeof value === 'object') {
+    const { from, to } = value;
+    half = (to + from) / 2;
+  }
+
+  return ((half - min) / (max - min)) * 100;
+};
+
+const customStyle = css`
+  .rc-slider-handle {
+    background-color: ${Colors.BLUE[500]};
+  }
+
+  .rc-slider-rail {
+    background-color: ${Colors.BLUE[200]};
+  }
+
+  .rc-slider-track {
+    background-color: ${Colors.BLUE[50]};
+  }
+
+  .rc-slider-handle:active,
+  .rc-slider-handle:focus {
+    border: none;
+    box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
   }
 
   &.rc-slider-disabled {
+    background: none;
+
     .rc-slider-handle {
-      background-color: ${Colors.SECONDARY[500]};
+      background-color: ${Colors.BLACK[400]};
     }
-    background-color: transparent;
-  }
 
-  .rc-slider-handle {
-    border: none;
-    box-shadow: 0 0 5px ${theme.mixins.hexToRgba(Colors.SECONDARY['600'], 0.3)};
-    margin-left: -10px;
-    width: ${({ disabled }) => (!disabled ? '20px' : '15px')};
-    height: ${({ disabled }) => (!disabled ? '20px' : '15px')};
-    transition: border 0.1s, box-shadow 0.1s;
-
-    ${({ disabled }) =>
-      !disabled &&
-      `&:hover {
-        box-shadow: 0 0 1px 5px ${theme.mixins.hexToRgba(
-          Colors.PRIMARY['500'],
-          0.5,
-        )};
-      }
-
-      &:active {
-        border: 1px solid ${Colors.PRIMARY['500']};
-        box-shadow: none;
-      }
-      `}
-}
-
-  .rc-slider-mark {
-    width: 100%;
-    height: 18px;
-    overflow: hidden;
-
-    .rc-slider-mark-text:first-child {
-      left: 1% !important;
+    .rc-slider-rail {
+      background-color: ${Colors.BLACK[100]};
     }
-    .rc-slider-mark-text:last-child {
-      left: 99% !important;
+
+    .rc-slider-track {
+      background-color: ${Colors.BLACK[200]};
     }
   }
-
-  .rc-slider-rail,
-  .rc-slider-track {
-    height: 8px;
-  }
-
-  .rc-slider-track {
-    background-color: ${Colors.PRIMARY['500']};
-  }
-
-  .rc-slider-mark {
-    top: 26px;
-  }
-
-  .rc-slider-dot {
-    display: none;
-  }
-}
 `;
 
-const { Handle: OriginalHandle } = SliderComponent;
+const StyledSlider = styled(RcSlider)`
+  ${customStyle}
+`;
+const StyledRange = styled(RcSlider.Range)`
+  ${customStyle}
+`;
 
-const Handle = ({ value, offset, dragging, ...restProps }) => (
-  <Tooltip slider offset={offset.toString()} text={value.toString()}>
-    <OriginalHandle value={value} offset={offset} {...restProps} />
-  </Tooltip>
-);
+const StyledTooltip = styled(Tooltip)`
+  width: 100%;
 
-Handle.defaultProps = {
-  value: 0,
-  offset: '',
-  dragging: false,
-};
+  > div:first-child {
+    left: ${tipPosition}%;
+    top: -41px;
+  }
+`;
 
-Handle.propTypes = {
-  value: PropTypes.number,
-  offset: PropTypes.string,
-  dragging: PropTypes.bool,
-};
+class Slider extends React.Component {
+  constructor(props) {
+    super(props);
 
-/** Sliders allow users to make selections from a range of values. */
-const Slider = ({ tooltip, marks, min, max, step, disabled, ...rest }) => {
-  const sliderProps = {
-    min,
-    max,
-    step,
-    disabled,
-    ...rest,
+    this.state = { visible: null };
+  }
+
+  handleChange = value => {
+    const { onChange } = this.props;
+
+    if (Array.isArray(value)) {
+      const [from, to] = value;
+      onChange({ from, to });
+    } else {
+      onChange(value);
+    }
   };
 
-  if (tooltip) {
-    sliderProps.handle = Handle;
-  }
+  handleMouseDown = () => {
+    this.setState({ visible: true });
+  };
 
-  if (marks) {
-    sliderProps.marks = marks;
-  }
+  handleMouseUp = () => {
+    this.setState({ visible: false });
+  };
 
-  return <StyledSlider {...sliderProps} />;
-};
+  render() {
+    const {
+      handleChange,
+      handleMouseDown,
+      handleMouseUp,
+      props,
+      state: { visible },
+    } = this;
+
+    const { value, tipFormatter, minMaxFormatter, min, max } = props;
+    const { from, to } = value;
+    const { handleStyle, trackStyle, marksStyle, railStyle } = sliderStyle;
+    const marks = {
+      [min]: {
+        style: {
+          ...marksStyle.common,
+          ...marksStyle.min,
+        },
+        label: minMaxFormatter(min),
+      },
+      [max]: {
+        style: {
+          ...marksStyle.common,
+          ...marksStyle.max,
+        },
+        label: minMaxFormatter(max),
+      },
+    };
+
+    return (
+      <StyledTooltip
+        {...props}
+        text={String(tipFormatter(value))}
+        value={value}
+        visible={visible}
+      >
+        {typeof value === 'object' ? (
+          <StyledRange
+            {...props}
+            allowCross={false}
+            dotStyle={{ display: 'none' }}
+            handleStyle={[handleStyle, handleStyle]}
+            max={max}
+            min={min}
+            marks={marks}
+            pushable
+            onChange={handleChange}
+            onBeforeChange={handleMouseDown}
+            onAfterChange={handleMouseUp}
+            railStyle={railStyle}
+            trackStyle={[trackStyle, trackStyle]}
+            value={[from, to]}
+          />
+        ) : (
+          <StyledSlider
+            {...props}
+            dotStyle={{ display: 'none' }}
+            handleStyle={handleStyle}
+            max={max}
+            marks={marks}
+            min={min}
+            onChange={handleChange}
+            onBeforeChange={handleMouseDown}
+            onAfterChange={handleMouseUp}
+            railStyle={railStyle}
+            trackStyle={trackStyle}
+            value={value}
+          />
+        )}
+      </StyledTooltip>
+    );
+  }
+}
+
+StyledRange.displayName = 'RcRange';
+StyledSlider.displayName = 'RcSlider';
 
 Slider.defaultProps = {
-  step: 1,
+  max: 100,
+  min: 0,
+  value: 50,
   disabled: false,
-  tooltip: false,
-  marks: {},
   onChange: () => {},
-  onBeforeChange: () => {},
-  onAfterChange: () => {},
-  onClick: () => {},
+  tipFormatter: value =>
+    typeof value === 'object' ? `${value.from} to ${value.to}` : value,
+  minMaxFormatter: value => value,
 };
 
 Slider.propTypes = {
-  /** Minimum value allowed */
-  min: PropTypes.number.isRequired,
-  /** Maximum value allowed */
-  max: PropTypes.number.isRequired,
-  /** Value on how much increment the value on drag event */
-  step: PropTypes.number,
-  /** Disable slider */
+  max: PropTypes.number,
+  min: PropTypes.number,
   disabled: PropTypes.bool,
-  /** Shows the value while dragging on a tooltip above the slider */
-  tooltip: PropTypes.bool,
-  /** Dots on specified values to snap the drag on Slider */
-  // eslint-disable-next-line react/forbid-prop-types
-  marks: PropTypes.object,
-  /** Triggers a function on OnChange event, it returns the current value */
   onChange: PropTypes.func,
-  /** Triggers a function before OnChange event */
-  onBeforeChange: PropTypes.func,
-  /** Triggers a function after OnChange event */
-  onAfterChange: PropTypes.func,
-  /** Triggers a function on Onclick event */
-  onClick: PropTypes.func,
+  /** Slider will pass its value to tipFormatter, display its value in Tooltip, and hide Tooltip when return value is null. */
+  tipFormatter: PropTypes.func,
+  /** Same as tipFormatter, but for the min and max labels. */
+  minMaxFormatter: PropTypes.func,
+  /** It receives a Number to display a slider or an Object with from and to properties to display a range. Example: `value={10}` or `value={{ from: 20, to: 40 }}` */
+  value: valueValidator,
 };
 
 export default Slider;
