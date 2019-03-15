@@ -54,17 +54,12 @@ describe('with an "onChange" callback set', () => {
 
   const wrapper = shallow(dropdown);
 
-  it('should init value with an empty label', () => {
-    expect(wrapper.state('selectedItem')).toEqual(null);
-  });
-
   it('should call the callback and set a new value', () => {
     const [selectedItem] = items;
 
     wrapper.find('#dropdown').simulate('change', selectedItem);
 
-    expect(wrapper.state('selectedItem')).toEqual(selectedItem);
     expect(mockFn).toHaveBeenCalledTimes(1);
-    expect(mockFn).toBeCalledWith(null, { selectedItem });
+    expect(mockFn).toBeCalledWith(selectedItem);
   });
 });

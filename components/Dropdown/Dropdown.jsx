@@ -8,9 +8,6 @@ import { FieldGroup, Label, ErrorMessage } from '../shared';
 
 const ITEM_HEIGHT = '44px';
 
-const _value = item => item.value || item.label || item;
-const _label = item => item.label || item.value || item;
-
 const DropLabel = styled(Label)`
   margin-bottom: 8px;
   padding-left: 13.5px;
@@ -125,129 +122,116 @@ const RequiredMark = styled.em`
   color: ${Colors.ERROR['500']};
 `;
 
-class Dropdown extends React.Component {
-  constructor(props) {
-    super(props);
+const _getValue = item => (item ? item.value || item.label || item : '');
+const _getLabel = item => (item ? item.label || item.value || item : '');
+const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
 
-    const { selectedItem } = props;
+const Dropdown = ({
+  label,
+  error,
+  required,
+  disabled,
+  items,
+  placeholder,
+  selectedItem,
+  onChange,
+  ...rest
+}) => {
+  const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
+  const _buttonRef = React.createRef();
 
-    this.state = { selectedItem };
-  }
-
-  componentWillUpdate(nextProps) {
-    const { selectedItem } = this.state;
-
-    if (nextProps.selectedItem !== selectedItem) {
-      this.state.selectedItem = nextProps.selectedItem;
+  const _reducer = ({ selectedItem: selected }, changes) => {
+    if (changes.isOpen !== undefined && changes.isOpen) {
+      return {
+        ...changes,
+        highlightedIndex: items.map(_getValue).indexOf(_getValue(selected)),
+      };
     }
-  }
 
-  _onChange = item => {
-    const { onChange } = this.props;
-
-    this.setState({ selectedItem: item });
-
-    onChange(null, { selectedItem: item });
+    return changes;
   };
 
-  render() {
-    const {
-      label,
-      error,
-      required,
-      disabled,
-      items,
-      placeholder,
-      ...rest
-    } = this.props;
-    const { selectedItem } = this.state;
-
-    const buttonText = selectedItem ? _label(selectedItem) : placeholder;
-
-    return (
-      <FieldGroup>
-        <Downshift
-          {...rest}
-          selectedItem={selectedItem}
-          onChange={this._onChange}
-          itemToString={_value}
-        >
-          {({
-            isOpen,
-            getToggleButtonProps,
-            getItemProps,
-            getLabelProps,
-            getInputProps,
-            getRootProps,
-          }) => (
-            <DropContainer {...getRootProps()}>
-              {label && (
-                <DropLabel
-                  {...getLabelProps()}
-                  onClick={() => this._dropButton.focus()}
-                >
-                  {label}
-                  {required && <RequiredMark>*</RequiredMark>}
-                </DropLabel>
-              )}
-              <input type="hidden" {...getInputProps()} />
-              <DropButton
-                {...getToggleButtonProps()}
-                ref={button => {
-                  this._dropButton = button;
-                }}
-                isOpen={isOpen}
-                disabled={disabled}
-                error={error}
-                text={buttonText}
-                selectedItem={selectedItem}
+  return (
+    <FieldGroup>
+      <Downshift
+        {...rest}
+        selectedItem={selectedItem}
+        onChange={onChange}
+        itemToString={_getValue}
+        stateReducer={_reducer}
+      >
+        {({
+          getRootProps,
+          getLabelProps,
+          getInputProps,
+          getToggleButtonProps,
+          getItemProps,
+          isOpen,
+        }) => (
+          <DropContainer {...getRootProps()}>
+            {label && (
+              <DropLabel
+                {...getLabelProps()}
+                onClick={() => _buttonRef.current.focus()}
               >
-                {buttonText}
-                <ArrowDown />
-              </DropButton>
-              {isOpen && (
-                <DropList>
-                  {items.map(item => (
-                    <DropItem
-                      {...getItemProps({
-                        item,
-                        isSelected: selectedItem === item,
-                        key: _value(item),
-                      })}
-                    >
-                      {_label(item)}
-                      {selectedItem === item && <CheckIcon />}
-                    </DropItem>
-                  ))}
-                </DropList>
-              )}
-            </DropContainer>
-          )}
-        </Downshift>
+                {label}
+                {required && <RequiredMark>*</RequiredMark>}
+              </DropLabel>
+            )}
+            <input type="hidden" {...getInputProps()} />
+            <DropButton
+              {...getToggleButtonProps()}
+              ref={_buttonRef}
+              isOpen={isOpen}
+              disabled={disabled}
+              error={error}
+              text={_buttonLabel}
+              selectedItem={selectedItem}
+            >
+              {_buttonLabel}
+              <ArrowDown />
+            </DropButton>
+            {isOpen && (
+              <DropList>
+                {items.map(item => (
+                  <DropItem
+                    {...getItemProps({
+                      item,
+                      isSelected: _isEqual(selectedItem, item),
+                      key: _getValue(item),
+                    })}
+                  >
+                    {_getLabel(item)}
+                    {_isEqual(selectedItem, item) && <CheckIcon />}
+                  </DropItem>
+                ))}
+              </DropList>
+            )}
+          </DropContainer>
+        )}
+      </Downshift>
 
-        {error && <DropError>{error}</DropError>}
-      </FieldGroup>
-    );
-  }
-}
+      {error && <DropError>{error}</DropError>}
+    </FieldGroup>
+  );
+};
 
 Dropdown.defaultProps = {
   disabled: false,
   error: '',
   items: [],
   label: '',
-  name: 'Dropdown',
   onChange: () => {},
-  placeholder: 'Selecione',
+  placeholder: 'Select an option',
   required: false,
-  selectedItem: null,
+  selectedItem: '',
 };
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
   PropTypes.shape({
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    item: PropTypes.string,
+    label: PropTypes.string,
   }),
 ]);
 
@@ -256,7 +240,6 @@ Dropdown.propTypes = {
   error: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType),
   label: PropTypes.string,
-  name: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   required: PropTypes.bool,

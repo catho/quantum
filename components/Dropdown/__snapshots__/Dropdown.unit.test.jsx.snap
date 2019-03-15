@@ -100,7 +100,7 @@ exports[`Input component  should match the snapshot 1`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c3"
@@ -474,7 +474,7 @@ exports[`Input component  should match the snapshot 4`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c3"
@@ -596,7 +596,7 @@ exports[`Input component  should match the snapshot 5`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c3"
@@ -735,7 +735,7 @@ exports[`Input component  should match the snapshot 6`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c4"
@@ -883,7 +883,7 @@ exports[`Input component  should match the snapshot 7`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c5"
@@ -1001,7 +1001,7 @@ exports[`Input component  should match the snapshot 8`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c3"
