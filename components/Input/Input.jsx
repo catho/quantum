@@ -29,10 +29,13 @@ const InputTag = styled.input`
   color: ${Colors.BLACK['700']};
   font-size: 16px;
   height: 44px;
-  padding: 10px 12px;
+  padding: 10px 42px 10px 12px;
   outline: none;
   width: 100%;
   margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &[disabled] {
     background-color: ${Colors.BLACK['100']};
@@ -41,6 +44,12 @@ const InputTag = styled.input`
     border-color: ${Colors.BLACK['400']};
     box-shadow: none;
   }
+
+  ${({ isSearchable }) =>
+    isSearchable &&
+    `
+    padding: 10px 42px 10px 42px;
+  `}
 
   ${({ error }) =>
     error &&
@@ -84,7 +93,21 @@ const InputIcon = styled(Icon)`
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 45px;
+  top: 47px;
+
+  ${({ description }) =>
+    description &&
+    `
+    top: 67px;
+  `};
+`;
+
+const InputSearchIcon = styled(InputIcon)`
+  left: 12px;
+`;
+
+const InputErrorIcon = styled(InputIcon)`
+  color: ${Colors.ERROR['500']};
 `;
 
 const InputFieldGroup = styled(FieldGroup)`
@@ -193,6 +216,7 @@ class Input extends React.Component {
       descriptionLabel,
       helperText,
       required,
+      isSearchable,
       ...rest
     } = this.props;
     const { value, type } = this.state;
@@ -209,6 +233,13 @@ class Input extends React.Component {
         {descriptionLabel && (
           <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
         )}
+        {isSearchable && (
+          <InputSearchIcon
+            name="search"
+            description={descriptionLabel}
+            onClick={this._handleClear}
+          />
+        )}
         <MaskedInput
           {...rest}
           id={id}
@@ -217,17 +248,30 @@ class Input extends React.Component {
           value={value}
           onChange={this._onChange}
           render={(ref, props) => (
-            <InputTag ref={ref} error={error} {...props} />
+            <InputTag
+              ref={ref}
+              error={error}
+              isSearchable={isSearchable}
+              {...props}
+            />
           )}
         />
-        {inputType === 'password' && (
+        {error && (
+          <InputErrorIcon name="error" description={descriptionLabel} />
+        )}
+        {inputType === 'password' && !error && (
           <InputIcon
             name={type === 'password' ? 'visibility' : 'visibility_off'}
+            description={descriptionLabel}
             onClick={this._showPassword}
           />
         )}
-        {valueIsTyped && (
-          <InputIcon name="cancel" onClick={this._handleClear} />
+        {valueIsTyped && !error && (
+          <InputIcon
+            name="cancel"
+            description={descriptionLabel}
+            onClick={this._handleClear}
+          />
         )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
         {helperText && !error && <HelperText>{helperText}</HelperText>}
@@ -248,6 +292,7 @@ Input.defaultProps = {
   descriptionLabel: '',
   required: false,
   disabled: false,
+  isSearchable: false,
   placeholder: '',
   onBlur: () => {},
   onChange: () => {},
@@ -265,6 +310,7 @@ Input.propTypes = {
   /** set if the input is required */
   required: PropTypes.bool,
   disabled: PropTypes.bool,
+  isSearchable: PropTypes.bool,
   placeholder: PropTypes.string,
   type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
   /** Display an error message and changes border color to error color */

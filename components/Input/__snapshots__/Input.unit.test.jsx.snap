@@ -12,10 +12,13 @@ exports[`Input component  should match the snapshot 1`] = `
   color: #4c4c4c;
   font-size: 16px;
   height: 44px;
-  padding: 10px 12px;
+  padding: 10px 42px 10px 12px;
   outline: none;
   width: 100%;
   margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c1[disabled] {
@@ -48,7 +51,7 @@ exports[`Input component  should match the snapshot 1`] = `
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 45px;
+  top: 47px;
 }
 
 .c0 {
@@ -80,9 +83,11 @@ exports[`Input component  should match the snapshot 1`] = `
     placeholder=""
     type="text"
   />
+  
   <span
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 c2"
+    description=""
     onClick={[Function]}
     style={
       Object {
@@ -128,10 +133,13 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   color: #4c4c4c;
   font-size: 16px;
   height: 44px;
-  padding: 10px 12px;
+  padding: 10px 42px 10px 12px;
   outline: none;
   width: 100%;
   margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3[disabled] {
@@ -168,7 +176,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 45px;
+  top: 47px;
 }
 
 .c0 {
@@ -205,9 +213,11 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     placeholder=""
     type="text"
   />
+  
   <span
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 c4"
+    description=""
     onClick={[Function]}
     style={
       Object {
@@ -234,10 +244,13 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   color: #4c4c4c;
   font-size: 16px;
   height: 44px;
-  padding: 10px 12px;
+  padding: 10px 42px 10px 12px;
   outline: none;
   width: 100%;
   margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   border-color: #ff2d4d;
 }
 
@@ -271,7 +284,8 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 45px;
+  top: 47px;
+  color: #ff2d4d;
 }
 
 .c0 {
@@ -315,14 +329,14 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   <span
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 c2"
-    onClick={[Function]}
+    description=""
     style={
       Object {
         "color": "",
       }
     }
   >
-    cancel
+    error
   </span>
   <div
     className="c3"

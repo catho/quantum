@@ -31,10 +31,13 @@ exports[`Form component  should match the snapshot 1`] = `
   color: #4c4c4c;
   font-size: 16px;
   height: 44px;
-  padding: 10px 12px;
+  padding: 10px 42px 10px 12px;
   outline: none;
   width: 100%;
   margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3[disabled] {
@@ -162,6 +165,7 @@ exports[`Form component  should match the snapshot 1`] = `
     />
     
     
+    
   </div>
   <div
     className="c0"
@@ -186,6 +190,7 @@ exports[`Form component  should match the snapshot 1`] = `
       placeholder=""
       type="text"
     />
+    
     
     
   </div>
@@ -214,6 +219,7 @@ exports[`Form component  should match the snapshot 1`] = `
     />
     
     
+    
   </div>
   <div
     className="c0"
@@ -240,6 +246,7 @@ exports[`Form component  should match the snapshot 1`] = `
     />
     
     
+    
   </div>
   <div
     className="c0"
@@ -264,6 +271,7 @@ exports[`Form component  should match the snapshot 1`] = `
       placeholder=""
       type="text"
     />
+    
     
     
   </div>
@@ -293,6 +301,7 @@ exports[`Form component  should match the snapshot 1`] = `
     />
     
     
+    
   </div>
   <div
     className="c0"
@@ -317,6 +326,7 @@ exports[`Form component  should match the snapshot 1`] = `
       placeholder=""
       type="text"
     />
+    
     
     
   </div>
