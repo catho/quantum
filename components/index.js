@@ -7,6 +7,7 @@ import Checkbox from './Checkbox';
 import Colors from './Colors';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
 import Icon from './Icon';
+import Input from './Input';
 import RadioGroup from './RadioGroup';
 import Slider from './Slider';
 import Tag from './Tag';
@@ -25,6 +26,7 @@ export {
   GlobalStyle,
   Hide,
   Icon,
+  Input,
   IconFont,
   RadioGroup,
   Row,

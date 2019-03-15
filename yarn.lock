@@ -875,7 +875,6 @@
 "@catho/quantum@../quantum/dist/":
   version "0.1.0"
   dependencies:
-    "@catho-private/quantum-storybook-ui" "../quantum-storybook-ui/"
     "@material-ui/core" "^3.8.2"
     "@material-ui/icons" "^3.0.2"
     babel-polyfill "^6.26.0"
