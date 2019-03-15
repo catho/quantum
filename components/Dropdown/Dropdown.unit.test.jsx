@@ -8,9 +8,9 @@ describe('Input component ', () => {
     const withItems = (
       <Dropdown
         items={[
-          { value: 'fooKey', item: 'foo' },
-          { value: 'barKey', item: 'bar' },
-          { value: 'bazKey', item: 'baz' },
+          { value: 'fooKey', label: 'foo' },
+          { value: 'barKey', label: 'bar' },
+          { value: 'bazKey', label: 'baz' },
         ]}
       />
     );
@@ -42,11 +42,11 @@ describe('with an "onChange" callback set', () => {
   const items = [
     {
       value: 'fooKey',
-      item: 'foo',
+      label: 'foo',
     },
     {
       value: 'barKey',
-      item: 'bar',
+      label: 'bar',
     },
   ];
 
@@ -55,7 +55,7 @@ describe('with an "onChange" callback set', () => {
   const wrapper = shallow(dropdown);
 
   it('should init value with an empty label', () => {
-    expect(wrapper.state('selectedItem')).toEqual({});
+    expect(wrapper.state('selectedItem')).toEqual(null);
   });
 
   it('should call the callback and set a new value', () => {

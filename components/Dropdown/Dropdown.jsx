@@ -6,14 +6,19 @@ import Icon from '../Icon/Icon';
 import Colors from '../Colors';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
-const DropdownLabel = styled(Label)`
+const ITEM_HEIGHT = '44px';
+
+const _value = item => item.value || item.label || item;
+const _label = item => item.label || item.value || item;
+
+const DropLabel = styled(Label)`
   margin-bottom: 8px;
   padding-left: 13.5px;
 `;
 
-DropdownLabel.displayName = 'DropdownLabel';
+DropLabel.displayName = 'DropLabel';
 
-const DropdownButton = styled.button`
+const DropButton = styled.button`
   align-items: center;
   background-color: ${Colors.WHITE};
   border-radius: 4px;
@@ -22,7 +27,7 @@ const DropdownButton = styled.button`
   cursor: pointer;
   display: flex;
   font-size: initial;
-  height: 44px;
+  height: ${ITEM_HEIGHT};
   justify-content: space-between;
   letter-spacing: 0.2px;
   padding: 10px 12px;
@@ -55,6 +60,7 @@ const DropdownButton = styled.button`
   }
 
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
+  ${({ selectedItem }) => selectedItem && `color: ${Colors.BLACK[700]}`};
 `;
 
 const ArrowDown = styled(Icon).attrs({
@@ -65,12 +71,17 @@ const ArrowDown = styled(Icon).attrs({
   pointer-events: none;
 `;
 
-const DropdownList = styled.ul`
+const DropList = styled.ul`
   background-color: ${Colors.WHITE};
   box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
-  margin-top: 4px;
   list-style: none;
+  margin-top: 4px;
+  max-height: calc(${ITEM_HEIGHT} * 7);
+  overflow: auto;
   padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
 `;
 
 const CheckIcon = styled(Icon).attrs({
@@ -79,13 +90,13 @@ const CheckIcon = styled(Icon).attrs({
   color: ${Colors.BLUE['500']};
 `;
 
-const DropdownListItem = styled.li`
+const DropItem = styled.li`
   background-color: ${Colors.WHITE};
   border-radius: 4px;
   border: solid 1.5px ${Colors.BLACK[100]};
   border-bottom-width: 0;
   cursor: pointer;
-  height: 44px;
+  height: ${ITEM_HEIGHT};
   padding: 10px 15px;
   box-sizing: border-box;
 
@@ -101,24 +112,14 @@ const DropdownListItem = styled.li`
   `}
 `;
 
-const DropdownErrorMessage = styled(ErrorMessage)`
+const DropError = styled(ErrorMessage)`
   margin-top: 8px;
   padding-left: 13.5px;
 `;
 
-function itemToString(item = '') {
-  if (typeof item === 'string') {
-    return item;
-  }
-
-  const { content } = item;
-
-  if (typeof content === 'string') {
-    return content;
-  }
-
-  return content.header;
-}
+const DropContainer = styled.div`
+  position: relative;
+`;
 
 const RequiredMark = styled.em`
   color: ${Colors.ERROR['500']};
@@ -128,7 +129,7 @@ class Dropdown extends React.Component {
   constructor(props) {
     super(props);
 
-    const { selectedItem = null } = props;
+    const { selectedItem } = props;
 
     this.state = { selectedItem };
   }
@@ -161,7 +162,7 @@ class Dropdown extends React.Component {
     } = this.props;
     const { selectedItem } = this.state;
 
-    const buttonText = itemToString(selectedItem.item) || placeholder;
+    const buttonText = selectedItem ? _label(selectedItem) : placeholder;
 
     return (
       <FieldGroup>
@@ -169,7 +170,7 @@ class Dropdown extends React.Component {
           {...rest}
           selectedItem={selectedItem}
           onChange={this._onChange}
-          itemToString={({ item }) => itemToString(item)}
+          itemToString={_value}
         >
           {({
             isOpen,
@@ -177,53 +178,54 @@ class Dropdown extends React.Component {
             getItemProps,
             getLabelProps,
             getInputProps,
+            getRootProps,
           }) => (
-            <div>
+            <DropContainer {...getRootProps()}>
               {label && (
-                <DropdownLabel
+                <DropLabel
                   {...getLabelProps()}
-                  onClick={() => this._dropdownButton.focus()}
+                  onClick={() => this._dropButton.focus()}
                 >
                   {label}
                   {required && <RequiredMark>*</RequiredMark>}
-                </DropdownLabel>
+                </DropLabel>
               )}
               <input type="hidden" {...getInputProps()} />
-              <DropdownButton
+              <DropButton
                 {...getToggleButtonProps()}
                 ref={button => {
-                  this._dropdownButton = button;
+                  this._dropButton = button;
                 }}
                 isOpen={isOpen}
                 disabled={disabled}
                 error={error}
                 text={buttonText}
+                selectedItem={selectedItem}
               >
                 {buttonText}
                 <ArrowDown />
-              </DropdownButton>
+              </DropButton>
               {isOpen && (
-                <DropdownList>
+                <DropList>
                   {items.map(item => (
-                    <DropdownListItem
+                    <DropItem
                       {...getItemProps({
                         item,
                         isSelected: selectedItem === item,
+                        key: _value(item),
                       })}
-                      isSelected={selectedItem === item}
-                      key={itemToString(item.item)}
                     >
-                      {item.item.content || item.item}
+                      {_label(item)}
                       {selectedItem === item && <CheckIcon />}
-                    </DropdownListItem>
+                    </DropItem>
                   ))}
-                </DropdownList>
+                </DropList>
               )}
-            </div>
+            </DropContainer>
           )}
         </Downshift>
 
-        {error && <DropdownErrorMessage>{error}</DropdownErrorMessage>}
+        {error && <DropError>{error}</DropError>}
       </FieldGroup>
     );
   }
@@ -238,24 +240,16 @@ Dropdown.defaultProps = {
   onChange: () => {},
   placeholder: 'Selecione',
   required: false,
-  selectedItem: {},
+  selectedItem: null,
 };
 
-const itemPropType = PropTypes.shape({
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  item: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.shape({
-      content: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.shape({
-          header: PropTypes.string,
-          subheader: PropTypes.string,
-        }),
-      ]),
-    }),
-  ]),
-});
+const itemPropType = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.shape({
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    item: PropTypes.string,
+  }),
+]);
 
 Dropdown.propTypes = {
   disabled: PropTypes.bool,
