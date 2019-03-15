@@ -7,6 +7,7 @@ import Colors from '../Colors';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
 const ITEM_HEIGHT = '44px';
+const MAX_ITEMS_VISIBILITY = 7;
 
 const DropLabel = styled(Label)`
   margin-bottom: 8px;
@@ -73,12 +74,14 @@ const DropList = styled.ul`
   box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
   list-style: none;
   margin-top: 4px;
-  max-height: calc(${ITEM_HEIGHT} * 7);
+  max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
   overflow: auto;
   padding: 0;
   position: absolute;
   width: 100%;
   z-index: 9999;
+  border-radius: 4px;
+  border: solid 1.5px ${Colors.BLACK[100]};
 `;
 
 const CheckIcon = styled(Icon).attrs({
@@ -89,13 +92,15 @@ const CheckIcon = styled(Icon).attrs({
 
 const DropItem = styled.li`
   background-color: ${Colors.WHITE};
-  border-radius: 4px;
-  border: solid 1.5px ${Colors.BLACK[100]};
-  border-bottom-width: 0;
+  border-bottom: solid 1.5px ${Colors.BLACK[100]};
   cursor: pointer;
   height: ${ITEM_HEIGHT};
   padding: 10px 15px;
   box-sizing: border-box;
+
+  :last-child {
+    border-bottom-width: 0;
+  }
 
   &[aria-selected='true'] {
     background-color: ${Colors.BLUE[200]};
@@ -140,11 +145,15 @@ const Dropdown = ({
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
   const _buttonRef = React.createRef();
 
-  const _reducer = ({ selectedItem: selected }, changes) => {
+  const _highlightedReducer = ({ selectedItem: selected }, changes) => {
     if (changes.isOpen !== undefined && changes.isOpen) {
+      const selectedIndex = items.map(_getValue).indexOf(_getValue(selected));
+      const withRange = selectedIndex + Math.floor(MAX_ITEMS_VISIBILITY / 2);
+      const { length } = items;
+
       return {
         ...changes,
-        highlightedIndex: items.map(_getValue).indexOf(_getValue(selected)),
+        highlightedIndex: withRange < length ? withRange : length - 1,
       };
     }
 
@@ -158,7 +167,7 @@ const Dropdown = ({
         selectedItem={selectedItem}
         onChange={onChange}
         itemToString={_getValue}
-        stateReducer={_reducer}
+        stateReducer={_highlightedReducer}
       >
         {({
           getRootProps,
