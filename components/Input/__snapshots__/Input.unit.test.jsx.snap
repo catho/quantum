@@ -16,9 +16,6 @@ exports[`Input component  should match the snapshot 1`] = `
   outline: none;
   width: 100%;
   margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c1[disabled] {
@@ -79,7 +76,6 @@ exports[`Input component  should match the snapshot 1`] = `
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
     placeholder=""
     type="text"
   />
@@ -88,7 +84,6 @@ exports[`Input component  should match the snapshot 1`] = `
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 c2"
     description=""
-    onClick={[Function]}
     style={
       Object {
         "color": "",
@@ -137,9 +132,6 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   outline: none;
   width: 100%;
   margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c3[disabled] {
@@ -209,7 +201,6 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
     placeholder=""
     type="text"
   />
@@ -218,7 +209,6 @@ exports[`Input component  with a label should match the snapshot 1`] = `
     aria-hidden="true"
     className="material-icons MuiIcon-root-1 c4"
     description=""
-    onClick={[Function]}
     style={
       Object {
         "color": "",
@@ -248,9 +238,6 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   outline: none;
   width: 100%;
   margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   border-color: #ff2d4d;
 }
 
@@ -322,7 +309,6 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
     maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
     placeholder=""
     type="text"
   />

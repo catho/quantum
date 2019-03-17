@@ -33,9 +33,6 @@ const InputTag = styled.input`
   outline: none;
   width: 100%;
   margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   &[disabled] {
     background-color: ${Colors.BLACK['100']};
@@ -161,32 +158,19 @@ class Input extends React.Component {
   constructor(props) {
     super(props);
 
-    const { value, type } = props;
+    const { type } = props;
 
     this.state = {
-      value,
       type,
     };
   }
 
   componentWillUpdate(nextProps) {
-    const { value, type } = this.state;
-    if (nextProps.value !== value || nextProps.type !== type) {
-      this.state.value = nextProps.value;
+    const { type } = this.state;
+    if (nextProps.type !== type) {
       this.state.type = nextProps.type;
     }
   }
-
-  _onChange = e => {
-    const { onChange } = this.props;
-    const {
-      target: { value },
-    } = e;
-
-    this.setState({ value });
-
-    onChange(e, { value });
-  };
 
   _changeType = type => {
     this.setState({ type });
@@ -202,10 +186,6 @@ class Input extends React.Component {
     }
   };
 
-  _handleClear = () => {
-    this.setState({ value: '' });
-  };
-
   render() {
     const {
       id,
@@ -217,9 +197,10 @@ class Input extends React.Component {
       helperText,
       required,
       isSearchable,
+      value,
       ...rest
     } = this.props;
-    const { value, type } = this.state;
+    const { type } = this.state;
     const valueIsTyped = !!value;
 
     return (
@@ -234,11 +215,7 @@ class Input extends React.Component {
           <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
         )}
         {isSearchable && (
-          <InputSearchIcon
-            name="search"
-            description={descriptionLabel}
-            onClick={this._handleClear}
-          />
+          <InputSearchIcon name="search" description={descriptionLabel} />
         )}
         <MaskedInput
           {...rest}
@@ -246,7 +223,6 @@ class Input extends React.Component {
           type={type}
           mask={mask}
           value={value}
-          onChange={this._onChange}
           render={(ref, props) => (
             <InputTag
               ref={ref}
@@ -294,9 +270,7 @@ Input.defaultProps = {
   disabled: false,
   isSearchable: false,
   placeholder: '',
-  onBlur: () => {},
   onChange: () => {},
-  onFocus: () => {},
 };
 
 Input.propTypes = {
@@ -329,9 +303,7 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
-  onBlur: PropTypes.func,
   onChange: PropTypes.func,
-  onFocus: PropTypes.func,
 };
 
 Input.displayName = 'Input';

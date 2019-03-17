@@ -16,9 +16,6 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
   outline: none;
   width: 100%;
   margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c2[disabled] {
@@ -108,7 +105,6 @@ exports[`AutoComplete component  should match the snapshot 1`] = `
       aria-hidden="true"
       className="material-icons MuiIcon-root-1 c3"
       description=""
-      onClick={[Function]}
       style={
         Object {
           "color": "",

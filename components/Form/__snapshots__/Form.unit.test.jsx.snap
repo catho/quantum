@@ -35,9 +35,6 @@ exports[`Form component  should match the snapshot 1`] = `
   outline: none;
   width: 100%;
   margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c3[disabled] {
@@ -159,7 +156,6 @@ exports[`Form component  should match the snapshot 1`] = `
       name="required"
       onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       placeholder=""
       type="text"
     />
@@ -186,7 +182,6 @@ exports[`Form component  should match the snapshot 1`] = `
       name="cpf"
       onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       placeholder=""
       type="text"
     />
@@ -213,7 +208,6 @@ exports[`Form component  should match the snapshot 1`] = `
       name="cep"
       onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       placeholder=""
       type="text"
     />
@@ -240,7 +234,6 @@ exports[`Form component  should match the snapshot 1`] = `
       name="birthday"
       onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       placeholder=""
       type="text"
     />
@@ -267,7 +260,6 @@ exports[`Form component  should match the snapshot 1`] = `
       name="email"
       onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       placeholder=""
       type="text"
     />
@@ -295,7 +287,6 @@ exports[`Form component  should match the snapshot 1`] = `
       name="address"
       onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       placeholder=""
       type="text"
     />
@@ -322,7 +313,6 @@ exports[`Form component  should match the snapshot 1`] = `
       name="country"
       onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       placeholder=""
       type="text"
     />
