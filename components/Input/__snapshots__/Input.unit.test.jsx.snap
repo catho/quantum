@@ -97,7 +97,7 @@ exports[`Input component  should match the snapshot 1`] = `
 </div>
 `;
 
-exports[`Input component  with a label should match the snapshot 1`] = `
+exports[`Input component  should match the snapshot 2`] = `
 .c2 {
   cursor: pointer;
   display: block;
@@ -160,10 +160,6 @@ exports[`Input component  with a label should match the snapshot 1`] = `
   -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
-.c5:focus + .c1 {
-  color: #03a9f4;
-}
-
 .c4 {
   cursor: pointer;
   position: absolute;
@@ -222,7 +218,7 @@ exports[`Input component  with a label should match the snapshot 1`] = `
 </div>
 `;
 
-exports[`Input component  with an error message should match the snapshot 1`] = `
+exports[`Input component  should match the snapshot 3`] = `
 .c1 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -329,6 +325,618 @@ exports[`Input component  with an error message should match the snapshot 1`] = 
   >
     Error message
   </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 4`] = `
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: 16px;
+  height: 44px;
+  padding: 10px 42px 10px 12px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:focus + .c3 {
+  color: #03a9f4;
+}
+
+.c1:-webkit-autofill {
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 47px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <input
+    className="c1"
+    defaultValue="foo"
+    disabled={false}
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c2"
+    description=""
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
+  
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 5`] = `
+.c2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: 16px;
+  height: 44px;
+  padding: 10px 42px 10px 12px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px 42px 10px 42px;
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c2::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2:focus + .c4 {
+  color: #03a9f4;
+}
+
+.c2:-webkit-autofill {
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c3 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 47px;
+}
+
+.c1 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 47px;
+  left: 12px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c1"
+    description=""
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    search
+  </span>
+  <input
+    className="c2"
+    defaultValue="foo"
+    disabled={false}
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c3"
+    description=""
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
+  
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 6`] = `
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: 16px;
+  height: 44px;
+  padding: 10px 42px 10px 12px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:focus + .c4 {
+  color: #03a9f4;
+}
+
+.c1:-webkit-autofill {
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 47px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+.c3 {
+  color: #4c4c4c;
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <input
+    className="c1"
+    defaultValue="foo"
+    disabled={false}
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c2"
+    description=""
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
+  
+  <span
+    className="c3"
+  >
+    this is a helper text
+  </span>
+</div>
+`;
+
+exports[`Input component  should match the snapshot 7`] = `
+.c2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: 16px;
+  height: 44px;
+  padding: 10px 42px 10px 12px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c2::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2:focus + .c4 {
+  color: #03a9f4;
+}
+
+.c2:-webkit-autofill {
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c3 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 47px;
+  top: 67px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+.c1 {
+  color: #4c4c4c;
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
+<div
+  className="c0"
+>
+  
+  <span
+    className="c1"
+  >
+    this is a description label
+  </span>
+  <input
+    className="c2"
+    defaultValue="foo"
+    disabled={false}
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c3"
+    description="this is a description label"
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
+  
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 8`] = `
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: 16px;
+  height: 44px;
+  padding: 10px 42px 10px 12px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:focus + .c3 {
+  color: #03a9f4;
+}
+
+.c1:-webkit-autofill {
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 47px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <input
+    className="c1"
+    defaultValue="foo"
+    disabled={true}
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c2"
+    description=""
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    cancel
+  </span>
+  
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 9`] = `
+.c1 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: 16px;
+  height: 44px;
+  padding: 10px 42px 10px 12px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+  color: #999999;
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.c1::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:focus + .c2 {
+  color: #03a9f4;
+}
+
+.c1:-webkit-autofill {
+  -webkit-text-fill-color: #4c4c4c;
+  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <input
+    className="c1"
+    defaultValue=""
+    disabled={false}
+    id=""
+    maxLength=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="this input has a placeholder"
+    type="text"
+  />
+  
+  
   
 </div>
 `;

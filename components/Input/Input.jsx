@@ -141,6 +141,12 @@ const RequiredMark = styled.em`
   color: ${Colors.ERROR['500']};
 `;
 
+InputSearchIcon.displayName = 'InputSearchIcon';
+InputErrorIcon.displayName = 'InputErrorIcon';
+HelperText.displayName = 'HelperText';
+DescriptionLabel.displayName = 'DescriptionLabel';
+InputTag.displayName = 'InputTag';
+
 /** A text field component to get user text data */
 class Input extends React.Component {
   static CEP = InputTypes.CEP;
@@ -243,11 +249,7 @@ class Input extends React.Component {
           />
         )}
         {valueIsTyped && !error && (
-          <InputIcon
-            name="cancel"
-            description={descriptionLabel}
-            onClick={this._handleClear}
-          />
+          <InputIcon name="cancel" description={descriptionLabel} />
         )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
         {helperText && !error && <HelperText>{helperText}</HelperText>}
