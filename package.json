@@ -1,6 +1,6 @@
 {
   "name": "@catho/quantum",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "Catho react components",
   "sideEffects": false,
   "scripts": {
@@ -8,31 +8,29 @@
     "test:components": "yarn test ./components",
     "test:coverage": "yarn test:components --coverage",
     "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
+    "build-storybook": "build-storybook",
     "clean:files:build": "rm ./dist/**/*.test.jsx ./dist/**/*/*.test.jsx",
     "clean:directories:build": "rm -rf ./dist/**/__snapshots__ ./dist/**/*/__snapshots__",
     "clean:build": "rm -rf ./dist",
     "postbuild": "yarn clean:directories:build && yarn clean:files:build && yarn copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "yarn clean:build",
+    "commitizen": "git-cz",
     "precommit": "lint-staged",
     "lint:components": "yarn lint ./components",
     "lint:stories": "yarn lint ./stories",
     "lint:js": "yarn lint ./*.js",
     "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
-    "prepush": "yarn lint:all && yarn test:components && yarn gh-pages",
+    "lint": "eslint --ext js,jsx --quiet",
+    "prepush": "yarn lint:all && yarn test:components",
     "storybook": "start-storybook -s static",
-    "build-storybook": "build-storybook",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "lint": "eslint ./components ./.storybook ./stories ./*.js --ext js,jsx --quiet",
-    "ui-update": "yarn remove @catho/quantum-storybook-ui && yarn add ../quantum-storybook-ui/ && yarn storybook",
-    "gh-pages:clean": "rm -rf docs",
-    "gh-pages:build": "build-storybook -o docs",
-    "gh-pages:update": "./scripts/update-docs.sh",
-    "gh-pages": "yarn gh-pages:clean && yarn gh-pages:build && yarn gh-pages:update"
+    "deploy-storybook": "storybook-to-ghpages",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.devel:frontend-platform/quantum.git"
+    "url": "https://github.com/catho/quantum.git"
   },
   "keywords": [
     "catho",
@@ -55,6 +53,7 @@
     "@storybook/addon-options": "^4.1.4",
     "@storybook/addons": "^4.1.4",
     "@storybook/react": "^4.1.4",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
@@ -62,7 +61,9 @@
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-modern-regexp": "^0.0.6",
+    "commitizen": "^3.0.7",
     "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "2.1.0",
     "dotenv-webpack": "^1.6.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
@@ -84,6 +85,7 @@
     "react-dom": "^16.7.0",
     "react-test-renderer": "^16.7.0",
     "regenerator-runtime": "^0.13.1",
+    "semantic-release": "^15.13.3",
     "strip-ansi": "^5.0.0",
     "styled-components": "^4.1.3"
   },
@@ -119,5 +121,26 @@
       "\\.(css|less)$": "<rootDir>/styleMock.js"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/jest-config.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "./dist"
+        }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "successCmd": "yarn deploy-storybook"
+        }
+      ]
+    ]
   }
 }
