@@ -58,7 +58,7 @@ describe('Input component ', () => {
 
   it('should has a searchabel icon when IsSearchable prop is true', () => {
     const component = mount(
-      <Input value="foo" label="label of input" isSearchable />,
+      <Input value="foo" label="label of input" searchable />,
     );
     const InputSearchIconElement = component
       .find('InputSearchIcon')

@@ -21,7 +21,7 @@ const InputLabel = styled(Label)`
 
 const InputTag = styled.input`
   ${theme.mixins.transition()};
-  background-color: transparent;
+  background-color: ${Colors.WHITE};
   border: none;
   border-radius: 4px;
   border: 1.5px solid ${Colors.BLACK['400']};
@@ -29,21 +29,21 @@ const InputTag = styled.input`
   color: ${Colors.BLACK['700']};
   font-size: 16px;
   height: 44px;
-  padding: 10px 42px 10px 12px;
+  margin-top: 8px;
   outline: none;
+  padding: 10px 42px 10px 12px;
   width: 100%;
-  margin-top: 5px;
 
   &[disabled] {
     background-color: ${Colors.BLACK['100']};
-    color: ${Colors.BLACK['400']};
-    cursor: not-allowed;
     border-color: ${Colors.BLACK['400']};
     box-shadow: none;
+    color: ${Colors.BLACK['400']};
+    cursor: not-allowed;
   }
 
-  ${({ isSearchable }) =>
-    isSearchable &&
+  ${({ searchable }) =>
+    searchable &&
     `
     padding: 10px 42px 10px 42px;
   `}
@@ -81,8 +81,8 @@ const InputTag = styled.input`
   `}
 
   :-webkit-autofill {
-    -webkit-text-fill-color: ${Colors.BLACK['700']};
     -webkit-box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
+    -webkit-text-fill-color: ${Colors.BLACK['700']};
   }
 `;
 
@@ -90,12 +90,12 @@ const InputIcon = styled(Icon)`
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 47px;
+  top: 50px;
 
   ${({ description }) =>
     description &&
     `
-    top: 67px;
+    top: 70px;
   `};
 `;
 
@@ -215,7 +215,7 @@ class Input extends React.Component {
       descriptionLabel,
       helperText,
       required,
-      isSearchable,
+      searchable,
       value,
       ...rest
     } = this.props;
@@ -234,7 +234,7 @@ class Input extends React.Component {
         {descriptionLabel && (
           <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
         )}
-        {isSearchable && (
+        {searchable && (
           <InputSearchIcon name="search" description={descriptionLabel} />
         )}
         <MaskedInput
@@ -247,7 +247,7 @@ class Input extends React.Component {
             <InputTag
               ref={ref}
               error={error}
-              isSearchable={isSearchable}
+              searchable={searchable}
               {...props}
             />
           )}
@@ -284,7 +284,7 @@ Input.defaultProps = {
   descriptionLabel: '',
   required: false,
   disabled: false,
-  isSearchable: false,
+  searchable: false,
   placeholder: '',
   onChange: () => {},
 };
@@ -299,8 +299,11 @@ Input.propTypes = {
   descriptionLabel: PropTypes.string,
   /** set if the input is required */
   required: PropTypes.bool,
+  /** set if the input is disabled */
   disabled: PropTypes.bool,
-  isSearchable: PropTypes.bool,
+  /** set if the input is searchable */
+  searchable: PropTypes.bool,
+  /** set the input placeholder */
   placeholder: PropTypes.string,
   type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
   /** Display an error message and changes border color to error color */
