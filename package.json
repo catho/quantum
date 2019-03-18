@@ -2,6 +2,7 @@
   "name": "@catho/quantum",
   "version": "0.0.0-development",
   "description": "Catho react components",
+  "private": false,
   "sideEffects": false,
   "scripts": {
     "test": "jest",
