@@ -6,7 +6,7 @@ import {
   AutoExample,
   Title,
   StoryContainer,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 import Toggle from '../../components/Toggle';
 import { IconFont } from '../../components/GlobalStyle';
 

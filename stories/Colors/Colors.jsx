@@ -5,7 +5,7 @@ import {
   Title,
   StoryContainer,
   SimpleHighlight,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 import Colors from '../../components/Colors';
 
 const importColors = `import { Colors } from '@cathodevel/quantum';`;

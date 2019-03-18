@@ -9,8 +9,8 @@ import {
   SimpleHighlight,
   CodeExample,
   AutoPropsApi,
-} from '@catho-private/quantum-storybook-ui';
-import { StoryContainer } from '@catho-private/quantum-storybook-ui/dist/components';
+} from '@catho/quantum-storybook-ui';
+import { StoryContainer } from '@catho/quantum-storybook-ui/dist/components';
 import { Col, Row } from '../../components/Grid';
 import Slider from '../../components/Slider';
 import List from '../../components/List';

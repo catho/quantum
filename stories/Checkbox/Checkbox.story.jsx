@@ -6,7 +6,7 @@ import {
   SimpleHighlight,
   AutoExample,
   StoryContainer,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 import Checkbox from '../../components/Checkbox';
 import FieldGroup from '../../components/shared/FieldGroup';
 import { IconFont } from '../../components/GlobalStyle';

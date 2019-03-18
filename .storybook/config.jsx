@@ -2,7 +2,7 @@ import React from 'react';
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-import { GlobalStyle as UIGlobalStyle } from '@catho-private/quantum-storybook-ui';
+import { GlobalStyle as UIGlobalStyle } from '@catho/quantum-storybook-ui';
 import { CSSVariables } from '../components/GlobalStyle';
 import stories from './stories';
 

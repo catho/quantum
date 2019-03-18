@@ -4,9 +4,9 @@ import {
   Title,
   StoryContainer,
   SimpleHighlight,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 
-const glogalStyleImport = `import { GlobalStyle } from '@catho-private/quantum';`;
+const glogalStyleImport = `import { GlobalStyle } from '@catho/quantum';`;
 const glogalStyleCode = `...
 ReactDOM
   .render(() => (
@@ -17,7 +17,7 @@ ReactDOM
   ), document.getElementById('root'));
 `;
 
-const typographyAndIconImport = `import { Typography, IconFont } from '@catho-private/quantum';`;
+const typographyAndIconImport = `import { Typography, IconFont } from '@catho/quantum';`;
 const codeBackgroundColor = '#e8f2fc';
 const codefontColor = '#1a82e2';
 

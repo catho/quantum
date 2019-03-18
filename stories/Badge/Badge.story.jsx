@@ -6,7 +6,7 @@ import {
   Example,
   Title,
   StoryContainer,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 
 import Badge from '../../components/Badge';
 import Button from '../../components/Button';

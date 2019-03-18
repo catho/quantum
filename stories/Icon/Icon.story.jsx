@@ -10,7 +10,7 @@ import {
   Title,
   SimpleHighlight,
   StoryContainer,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 
 import Icon from '../../components/Icon';
 import { IconFont } from '../../components/GlobalStyle';

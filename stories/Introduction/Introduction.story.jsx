@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Heading } from '@catho-private/quantum-storybook-ui';
+import { Heading } from '@catho/quantum-storybook-ui';
 import Logo from '../../.storybook/static/logo.svg';
 import Introduction from './Introduction';
 

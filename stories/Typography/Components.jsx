@@ -2,11 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import LinkTo from '@storybook/addon-links/react';
 
-import {
-  Title,
-  StoryContainer,
-  Table,
-} from '@catho-private/quantum-storybook-ui';
+import { Title, StoryContainer, Table } from '@catho/quantum-storybook-ui';
 
 import {
   Title as QuantumTitle,

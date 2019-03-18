@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Title } from '@catho-private/quantum-storybook-ui';
+import { Title } from '@catho/quantum-storybook-ui';
 import { Row, Col } from '../../components/Grid';
 import Input from '../../components/Input';
 import IconToClipboard from './IconToClipboard';

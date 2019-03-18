@@ -6,7 +6,7 @@ import {
   SimpleHighlight,
   Title,
   StoryContainer,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 
 import { Col, Row } from '../../components/Grid';
 import { Validations } from '../../components/Form';

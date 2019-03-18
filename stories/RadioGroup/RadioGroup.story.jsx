@@ -10,7 +10,7 @@ import {
   StoryContainer,
   Title,
   SimpleHighlight,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 
 import RadioGroup from '../../components/RadioGroup';
 import { Col, Row } from '../../components/Grid';

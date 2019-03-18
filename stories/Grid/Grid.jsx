@@ -5,7 +5,7 @@ import {
   Table,
   StoryContainer,
   SimpleHighlight,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 
 import { Row, Col, Hide } from '../../components/Grid';
 

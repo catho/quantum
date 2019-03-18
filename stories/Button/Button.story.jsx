@@ -7,7 +7,7 @@ import {
   AutoExample,
   Title,
   StoryContainer,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 import Button from '../../components/Button';
 import { IconFont } from '../../components/GlobalStyle';
 import { Container, Row, Col } from '../../components/Grid';
@@ -106,7 +106,7 @@ const exampleTab = (
   </Tab>
 );
 
-const description = `Buttons express what action will occur when the user clicks 
+const description = `Buttons express what action will occur when the user clicks
 or touches it. Buttons are used to initialize an action, either in the
 background or foreground of an experience.
 `;

@@ -6,7 +6,7 @@ import {
   AutoExample,
   StoryContainer,
   Title,
-} from '@catho-private/quantum-storybook-ui';
+} from '@catho/quantum-storybook-ui';
 import { Tag, IconFont } from '../../components';
 
 const skinsCode = `<Tag>Default</Tag>
