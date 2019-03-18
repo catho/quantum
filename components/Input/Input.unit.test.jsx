@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow, mount } from 'enzyme';
+import MaskedInput from 'react-text-mask';
 import Input from './Input';
 
 describe('Input component ', () => {
@@ -132,16 +133,25 @@ describe('Input component ', () => {
   });
 
   describe('with a label', () => {
-    const input = (
+    const inputWithId = (
       <Input label="Text label" id="input-with-label" value="foo" />
     );
+    const input = <Input label="Text label" value="foo" />;
 
     it('should match label "htmlFor" label param with "id" input param', () => {
-      const wrapper = shallow(input);
-      const styledInput = wrapper.childAt(0);
-      const label = wrapper.childAt(1);
+      const wrapper = mount(inputWithId);
+      const inputTag = wrapper.find('InputTag');
+      const label = wrapper.find('InputLabel');
 
-      expect(label.prop('htmlFor')).toEqual(styledInput.prop('id'));
+      expect(label.prop('htmlFor')).toEqual(inputTag.prop('id'));
+    });
+
+    it('should match label "htmlFor" label param with generate "id"', () => {
+      const wrapper = shallow(input);
+      const label = wrapper.find('InputLabel').prop('htmlFor');
+      const maskedInput = wrapper.find(MaskedInput).prop('id');
+
+      expect(label).toEqual(maskedInput);
     });
   });
 
@@ -173,6 +183,19 @@ describe('Input component ', () => {
 
       expect(visibilityIcon()).toBeTruthy();
       expect(wrapper.state('type')).toEqual('password');
+    });
+  });
+
+  describe('Generate Id', () => {
+    it('should generate a new id for it instances', () => {
+      const componentA = mount(<Input value="foo" label="label of input" />);
+      const componentB = mount(<Input value="foo" label="label of input" />);
+      const idA = componentA.find(MaskedInput).prop('id');
+      const idB = componentB.find(MaskedInput).prop('id');
+
+      expect(idA).not.toBe('');
+      expect(idB).not.toBe('');
+      expect(idA).not.toEqual(idB);
     });
   });
 });

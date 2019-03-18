@@ -142,7 +142,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       className="c1 c2"
-      htmlFor=""
+      htmlFor="input-0"
     >
       required
     </label>
@@ -151,7 +151,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c3"
       defaultValue=""
       disabled={false}
-      id=""
+      id="input-0"
       maxLength=""
       name="required"
       onBlur={[Function]}
@@ -168,7 +168,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       className="c1 c2"
-      htmlFor=""
+      htmlFor="input-1"
     >
       CPF
     </label>
@@ -177,7 +177,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c3"
       defaultValue=""
       disabled={false}
-      id=""
+      id="input-1"
       maxLength=""
       name="cpf"
       onBlur={[Function]}
@@ -194,7 +194,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       className="c1 c2"
-      htmlFor=""
+      htmlFor="input-2"
     >
       CEP
     </label>
@@ -203,7 +203,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c3"
       defaultValue=""
       disabled={false}
-      id=""
+      id="input-2"
       maxLength=""
       name="cep"
       onBlur={[Function]}
@@ -220,7 +220,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       className="c1 c2"
-      htmlFor=""
+      htmlFor="input-3"
     >
       Birthday
     </label>
@@ -229,7 +229,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c3"
       defaultValue=""
       disabled={false}
-      id=""
+      id="input-3"
       maxLength=""
       name="birthday"
       onBlur={[Function]}
@@ -246,7 +246,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       className="c1 c2"
-      htmlFor=""
+      htmlFor="input-4"
     >
       E-mail
     </label>
@@ -255,7 +255,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c3"
       defaultValue=""
       disabled={false}
-      id=""
+      id="input-4"
       maxLength=""
       name="email"
       onBlur={[Function]}
@@ -272,7 +272,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       className="c1 c2"
-      htmlFor=""
+      htmlFor="input-5"
     >
       Address
     </label>
@@ -281,7 +281,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c3"
       defaultValue=""
       disabled={false}
-      id=""
+      id="input-5"
       maxLength=""
       minLength="8"
       name="address"
@@ -299,7 +299,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       className="c1 c2"
-      htmlFor=""
+      htmlFor="input-6"
     >
       Country
     </label>
@@ -308,7 +308,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c3"
       defaultValue=""
       disabled={false}
-      id=""
+      id="input-6"
       maxLength="3"
       name="country"
       onBlur={[Function]}

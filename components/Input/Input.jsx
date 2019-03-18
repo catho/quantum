@@ -146,6 +146,7 @@ InputErrorIcon.displayName = 'InputErrorIcon';
 HelperText.displayName = 'HelperText';
 DescriptionLabel.displayName = 'DescriptionLabel';
 InputTag.displayName = 'InputTag';
+InputLabel.displayName = 'InputLabel';
 
 /** A text field component to get user text data */
 class Input extends React.Component {
@@ -160,6 +161,8 @@ class Input extends React.Component {
   static Phone = InputTypes.Phone;
 
   static Password = InputTypes.Password;
+
+  static counter = 0;
 
   constructor(props) {
     super(props);
@@ -192,9 +195,19 @@ class Input extends React.Component {
     }
   };
 
+  _getId() {
+    const { id } = this.props;
+    if (id) {
+      return id;
+    }
+
+    const _id = `input-${Input.counter}`;
+    Input.counter += 1;
+    return _id;
+  }
+
   render() {
     const {
-      id,
       label,
       error,
       mask,
@@ -208,11 +221,12 @@ class Input extends React.Component {
     } = this.props;
     const { type } = this.state;
     const valueIsTyped = !!value;
+    const generateId = this._getId();
 
     return (
       <InputFieldGroup>
         {label && (
-          <InputLabel htmlFor={id} error={error}>
+          <InputLabel htmlFor={generateId} error={error}>
             {label}
             {required && <RequiredMark>*</RequiredMark>}
           </InputLabel>
@@ -225,7 +239,7 @@ class Input extends React.Component {
         )}
         <MaskedInput
           {...rest}
-          id={id}
+          id={generateId}
           type={type}
           mask={mask}
           value={value}
