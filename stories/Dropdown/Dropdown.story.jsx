@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import {
@@ -32,7 +33,7 @@ const ExampleWrapper = styled.div`
   ${MARGIN}
 `;
 
-const _example = Component => (
+const DropdownExample = ({ component: Component }) => (
   <ExampleWrapper>
     <Row>
       <Col xsmall={2} small={4} medium={6}>
@@ -44,6 +45,10 @@ const _example = Component => (
     </Row>
   </ExampleWrapper>
 );
+
+DropdownExample.propTypes = {
+  component: PropTypes.func.isRequired,
+};
 
 storiesOf('3. Forms', module).add('Dropdown', () => (
   <Heading name="Dropdown">
@@ -73,12 +78,12 @@ storiesOf('3. Forms', module).add('Dropdown', () => (
           values and labels.
         </p>
         <StyledTitle>Examples</StyledTitle>
-        {_example(Simple)}
-        {_example(CustomLabel)}
-        {_example(RequiredMark)}
-        {_example(WithError)}
-        {_example(Disabled)}
-        {_example(Controlled)}
+        <DropdownExample component={Simple} />
+        <DropdownExample component={CustomLabel} />
+        <DropdownExample component={RequiredMark} />
+        <DropdownExample component={WithError} />
+        <DropdownExample component={Disabled} />
+        <DropdownExample component={Controlled} />
       </Tab>
       <Tab title="API">
         <AutoPropsApi component={Dropdown} />
