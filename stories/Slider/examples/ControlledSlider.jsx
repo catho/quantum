@@ -26,7 +26,7 @@ class ControlledSlider extends Component {
 
 ControlledSlider.code = `
 import React, { Component } from 'react';
-import { Slider } from '@catho-private/quantum';
+import { Slider } from '@catho/quantum';
 
 class ControlledSlider extends Component {
   constructor(props) {

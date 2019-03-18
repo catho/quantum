@@ -1,37 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 import LinkTo from '@storybook/addon-links/react';
-import { Title } from '@catho-private/quantum-storybook-ui';
+
+import { Title, StoryContainer, Table } from '@catho/quantum-storybook-ui';
 
 import {
   Title as QuantumTitle,
   Subtitle,
   Blockquote,
+  Typography,
 } from '../../components/GlobalStyle';
 
 const Small = styled.small`
   font-size: 10px;
 `;
 
-const Tr = styled.tr`
-  height: 54px;
-
-  td:first-child {
-    width: 140px;
-  }
-
-  td:nth-child(2) {
-    width: 180px;
-  }
-`;
-
 const Components = () => (
-  <>
-    <Title>Headings</Title>
+  <StoryContainer>
+    <Title as="h2">Headings</Title>
 
-    <table>
+    <Typography />
+    <Table>
       <tbody>
-        <Tr>
+        <tr>
           <td>
             h1 <Small>48px</Small>
           </td>
@@ -41,8 +32,8 @@ const Components = () => (
           <td>
             <QuantumTitle>Heading One</QuantumTitle>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             h2 <Small>54px</Small>
           </td>
@@ -52,8 +43,8 @@ const Components = () => (
           <td>
             <QuantumTitle as="h2">Heading Two</QuantumTitle>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             h3 <Small>28px</Small>
           </td>
@@ -63,8 +54,8 @@ const Components = () => (
           <td>
             <QuantumTitle as="h3">Heading Three</QuantumTitle>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             h4 <Small>24px</Small>
           </td>
@@ -74,8 +65,8 @@ const Components = () => (
           <td>
             <QuantumTitle as="h4">Heading Four</QuantumTitle>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             h5 <Small>20px</Small>
           </td>
@@ -85,8 +76,8 @@ const Components = () => (
           <td>
             <QuantumTitle as="h5">Heading Five</QuantumTitle>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             h6 <Small>18px</Small>
           </td>
@@ -96,8 +87,8 @@ const Components = () => (
           <td>
             <QuantumTitle as="h6">Heading Six</QuantumTitle>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             Subtitle <Small>14px</Small>
           </td>
@@ -107,24 +98,24 @@ const Components = () => (
           <td>
             <Subtitle>Heading Two</Subtitle>
           </td>
-        </Tr>
+        </tr>
       </tbody>
-    </table>
+    </Table>
 
-    <Title>Texts</Title>
+    <Title as="h2">Texts</Title>
 
-    <table>
+    <Table>
       <tbody>
         {/* // TODO: waiting spec
-        <Tr>
+        <tr>
           <td>
             a <Small>inherit</Small>
           </td>
           <td>
             <Link href="/">Lorem ipsum dolor sit amet.</Link>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             p <Small>16px</Small>
           </td>
@@ -140,8 +131,8 @@ const Components = () => (
               gravida.
             </P>
           </td>
-        </Tr> */}
-        <Tr>
+        </tr> */}
+        <tr>
           <td>
             blockquote <Small>12px</Small>
           </td>
@@ -160,15 +151,15 @@ const Components = () => (
               gravida.
             </Blockquote>
           </td>
-        </Tr>
+        </tr>
       </tbody>
-    </table>
+    </Table>
 
-    <Title>Lists</Title>
+    <Title as="h2">Lists</Title>
 
-    <table>
+    <Table>
       <tbody>
-        <Tr>
+        <tr>
           <td>
             ul {'>'} li <Small>16px</Small>
           </td>
@@ -187,8 +178,8 @@ const Components = () => (
               <li>Consectetur adipiscing elit</li>
             </ul>
           </td>
-        </Tr>
-        <Tr>
+        </tr>
+        <tr>
           <td>
             ol {'>'} li <Small>16px</Small>
           </td>
@@ -207,10 +198,10 @@ const Components = () => (
               <li>Consectetur adipiscing elit</li>
             </ol>
           </td>
-        </Tr>
+        </tr>
       </tbody>
-    </table>
-  </>
+    </Table>
+  </StoryContainer>
 );
 
 export default Components;

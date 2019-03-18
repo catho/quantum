@@ -1,208 +1,206 @@
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
+  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i');
 
-  .SplitPane.vertical {
-    border-left: 64px solid rgb(7, 71, 166);
-  }
-
-  #root>div>div {
-    background-color: rgb(244, 245, 247) !important;
-  }
-
-  .Pane.vertical.Pane1 {
-    background-color: rgb(244, 245, 247) !important;
-    overflow: hidden !important;
-  }
-
-  .Pane.vertical.Pane1 ul li {
-    font-family: 'Montserrat' !important;
-    padding: 3px 0;
-  }
-
-  .Pane.vertical.Pane1 ul li>ul>li>div>div>div:nth-child(1) {
-    display: none !important;
-  }
-
-  .Pane.vertical.Pane1 ul li>ul>li>div>div>div:nth-child(2) {
-    /* text-transform: uppercase; */
-    font-size: 12px;
-    display: none;
-  }
-
-  .Pane.vertical.Pane1 ul li>ul>li>ul {
-    display: block !important;
-    padding-left: 8px !important;
-  }
-
-  .Pane.vertical.Pane1 ul li a[class*='css-glamorous-routedlink'] {
-    font-weight: normal;
-  }
-
-  .Pane.vertical.Pane1>div>div>div div:nth-child(3) div {
-    overflow: hidden;
-  }
-
-  .Pane.vertical.Pane1>div>div>div div:nth-child(3) {
-    overflow: hidden !important;
-  }
-
-  .Pane.vertical.Pane1>div>div>div div:nth-child(3):hover {
-    overflow: auto !important;
-  }
-
-  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  .Pane.vertical.Pane1>div>div>div div:nth-child(3)::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-  }
-
-  .Resizer.vertical {
-    background-color: rgb(244, 245, 247);
-  }
-
-  .Pane.vertical.Pane1>div>div>div>div>a {
+  /* logo */
+  #logo {
     background-image: url(//static.catho.com.br/svg/site/logoCathoB2c.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100px;
+    background-size: 85px;
     border: none !important;
     text-indent: -9999px;
-    padding: 20px;
-    background-color: #f4f5f7;
+    padding: 30px 40px;
+    position: absolute;
+    bottom: 0px;
+    width: 60%;
   }
 
-  .Pane.vertical.Pane1>div>div>div>div:nth-child(2) {
-    font-family: 'Montserrat' !important;
-    position: absolute !important;
-    bottom: 10px !important;
-    width: 100% !important;
+  #logo * {
+    color: transparent !important;
+    border: none !important;
+  }
+
+  .Pane.vertical.Pane1 {
+    background-color: #ffffff !important;
+    overflow: hidden !important;
+    width: 190px !important;
+  }
+
+  /* hide menu arrow */
+  .Pane.vertical.Pane1 ul li > div > ul > li > div > div > div:nth-child(1) {
     display: none !important;
   }
 
-  .Pane.vertical.Pane1>div>div>div>div:nth-child(2) input {
-    font-family: 'Montserrat' !important;
-    font-size: 14px;
-    padding: 18px 18px 18px 38px !important;
+  /* first ul align */
+  .Pane.vertical.Pane1 > div > div > div > div > ul {
+    margin-left: -10px !important;
+    padding: 10px 0px 0px 0px !important;
+    font-family: 'Titillium Web' !important;
+    color: #546b81;
   }
 
-  .Pane.vertical.Pane1>div>div>div>div:nth-child(2):before {
+  .Pane.vertical.Pane1 > div > div > div > div > ul li {
+    padding: 8px;
+  }
+
+  .Pane.vertical.Pane1 > div > div > div > div > ul li > div > ul {
+    padding-left: 16px !important;
+  }
+
+  /* subitem list */
+  .Pane.vertical.Pane1
+    > div
+    > div
+    > div
+    > div
+    > ul
+    li
+    > div
+    > ul
+    > li
+    div
+    > ul {
+    padding: 0px !important;
+  }
+
+  /* subitem listitem */
+  .Pane.vertical.Pane1
+    > div
+    > div
+    > div
+    > div
+    > ul
+    li
+    > div
+    > ul
+    > li
+    div
+    > ul
+    li
+    > a {
+    padding: 7px !important;
+  }
+
+  /* selected subitem */
+  .Pane.vertical.Pane1
+    > div
+    > div
+    > div
+    > div
+    > ul
+    li
+    > div
+    > ul
+    > li
+    div
+    > ul
+    li
+    > a.css-oato19 {
+    background-color: #fbfbfc;
+  }
+
+  .Resizer.vertical {
+    display: none;
+  }
+
+  /* filter input */
+  .Pane.vertical.Pane1 > div > div > div > div:nth-child(2) {
+    font-family: 'Titillium Web' !important;
+    width: 105% !important;
+    margin-left: -10px;
+    padding: 10px 0px;
+  }
+
+  /* filter input */
+  .Pane.vertical.Pane1 > div > div > div > div:nth-child(2) input {
+    font-family: 'Titillium Web' !important;
+    font-size: 14px;
+    padding: 18px 18px 18px 38px !important;
+    border-radius: 3px;
+    width: 90%;
+  }
+
+  /* filter input */
+  .Pane.vertical.Pane1 > div > div > div > div:nth-child(2):before {
     content: '';
     width: 16px;
     height: 16px;
-    background: url('https://image.flaticon.com/icons/svg/149/149852.svg') no-repeat;
+    background: url(https://image.flaticon.com/icons/svg/149/149852.svg)
+      no-repeat;
     background-size: 16px;
     position: absolute;
-    top: 9px;
-    left: 11px;
+    top: 19px;
+    left: 13px;
     opacity: 0.6;
   }
 
-  .Pane.vertical.Pane1>div>div>div>div>button {
+  /* Components scroll */
+  .Pane.vertical.Pane1 > div > div {
+    overflow-x: hidden;
+  }
+
+  .Pane.vertical.Pane1 > div > div > div {
+    padding: 0 !important;
+  }
+
+  .Pane.vertical.Pane1 > div > div > div > div {
+    padding: 0 !important;
+  }
+
+  .Pane.vertical.Pane1 > div {
+    height: calc(100% - 100px);
+  }
+
+  .Pane.vertical.Pane1 > div > div::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Components scroll */
+  .Pane.vertical.Pane1 > div > div::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Components scroll */
+  .Pane.vertical.Pane1 > div > div::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+  }
+
+  /* shortcuts panel */
+  .Pane.vertical.Pane1 > div > div > div > div > button {
     display: none !important;
   }
 
+  /* menu resizing */
   .Resizer.horizontal.disabled {
     display: none;
   }
 
+  /* lateral panel */
   .Pane.horizontal.Pane1 {
     overflow: hidden !important;
   }
 
-  .Pane.horizontal.Pane1>div {
+  /* iframe padding */
+  .Pane.horizontal.Pane1 > div {
     padding: 0 !important;
   }
 
-  .Pane.horizontal.Pane1>div>div {
+  .Pane.horizontal.Pane1 > div div:nth-child(2) {
     border: none !important;
-  }
-
-  .lateral-menu {
-    list-style-type: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 12px;
-    margin: 0;
-  }
-
-  .lateral-menu-item {
-    margin-top: 15px;
-    border-radius: 50%;
-    padding: 7px 7px 3px 7px;
-    transition: all linear 0.2s;
-    cursor: pointer;
-  }
-
-  .lateral-menu-item:hover {
-    background-color: rgb(19, 62, 124);
   }
 </style>
 
 <script>
-  function openSearch() {
-    window.onkeydown({
-      target: {
-        getAttribute: function () { },
-        tagName: 'body',
-      },
-      keyCode: 79,
-      ctrlKey: true,
-      shiftKey: true,
-      preventDefault: function () { },
-    });
-
-    var searchOverlay = document.querySelector('.ReactModal__Overlay.ReactModal__Overlay--after-open');
-    searchOverlay.style.backgroundColor = "#0000009c";
-    searchOverlay.style.zIndex = "1001";
-
-    var inputSearchWrapper = document.querySelector('.react-fuzzy-search');
-    inputSearchWrapper.style.padding = 0;
-    inputSearchWrapper.style.fontFamily = 'Montserrat';
-
-    var inputSearch = inputSearchWrapper.querySelector('div input');
-    inputSearch.style.border = 'none';
-    inputSearch.style.fontFamily = 'Montserrat';
-    inputSearch.style.fontSize = '36px';
-    inputSearch.style.fontWeight = '200';
-    inputSearch.style.padding = '10px 15px';
-  }
-
-  function hideMenu() {
-    var menu = document.querySelector('.Pane.vertical.Pane1');
-    menu.style.display = (menu.style.display == 'none') ? 'block' : 'none';
-  };
-
-  document.addEventListener("DOMContentLoaded", function (event) {
-    var verticalPane = document.getElementById("root");
-    var verticalPaneDiv = verticalPane.querySelector('div');
-
-    var lateralMenu = document.createElement("ul");
-    lateralMenu.className = 'lateral-menu';
-
-    lateralMenu.innerHTML =
-      "<li class=\"lateral-menu-item\" onClick=\"openSearch()\";>" +
-      "  <span class=\"sc-bwzfXH iQjDgX\" aria-label=\"search\">" +
-      "    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"presentation\">" +
-      "      <path d=\"M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"></path></svg>" +
-      "  </span>" +
-      "</li>" +
-      "<li class=\"lateral-menu-item\" onClick=\"hideMenu();\">" +
-      "  <span class=\"sc-bwzfXH iQjDgX\" aria-label=\"Menu\">" +
-      "    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"presentation\"><path d=\"M5 15h14v2H5zm0-8h14v2H5zm0 4h14v2H5z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"></path></svg>" +
-      "  </span>" +
-      "</li>";
-
-    verticalPane.insertBefore(lateralMenu, verticalPaneDiv);
-  });
-
   document.title = 'Quantum';
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var oldLogo = document.querySelector('.Pane.vertical.Pane1 > div > div > div > div');
+    var componentsFrame = document.querySelector('.Pane.vertical.Pane1 > div > div');
+    var searchField = document.querySelector('.Pane.vertical.Pane1 > div > div > div > div:nth-child(2)');
+
+    oldLogo.remove();
+    oldLogo.setAttribute('id', 'logo');
+    searchField.remove();
+    componentsFrame.parentNode.append(oldLogo);
+  });
 </script>

@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
   Title,
-  Subtitle,
-  HowToImport,
-  CodeExample,
-  CodeToClipboard,
-} from '@catho-private/quantum-storybook-ui';
+  StoryContainer,
+  SimpleHighlight,
+} from '@catho/quantum-storybook-ui';
 import Colors from '../../components/Colors';
+
+const importColors = `import { Colors } from '@cathodevel/quantum';`;
 
 const ColorBackground = styled.div`
   background-color: ${({ hex }) => hex};
@@ -68,8 +68,6 @@ const ColorSample = ({ hex, number, name, fontColor }) => (
         </ColorName>
         <ColorHex>{hex}</ColorHex>
       </ColorProperties>
-
-      <CodeToClipboard code={`Colors.${name.toUpperCase()}[${number}]`} />
     </ColorDescription>
   </PalleteColor>
 );
@@ -93,23 +91,22 @@ console.log(Colors.PINK['500'])
 `;
 
 export default () => (
-  <React.Fragment>
+  <StoryContainer>
+    <Title as="h2">Importing colors</Title>
+    <SimpleHighlight>{importColors}</SimpleHighlight>
+
+    <Title as="h3">Usage</Title>
     <p>
-      Catho has some segments, below you can see the
-      <strong> Candidates</strong> default color palette.
+      Colors is a object that expose the pallete and can be used in multiple
+      places
     </p>
+    <SimpleHighlight>{exampleCode}</SimpleHighlight>
 
-    <HowToImport importModules="Colors" />
+    <Title as="h2">Brand colors</Title>
+    <Title as="h3" style={{ paddingTop: 0 }}>
+      Blue
+    </Title>
 
-    <Title>Usage</Title>
-    <p>Some samples on how the Color object are structured</p>
-
-    <CodeExample showTitle={false} code={exampleCode} />
-
-    <br />
-    <Title>Brand colors</Title>
-
-    <Subtitle>Blue</Subtitle>
     <p>
       It is the main color brand. This color passes in AAA in the contrast
       checker of the WCAG guidelines so it can be used in various contexts like
@@ -126,7 +123,7 @@ export default () => (
     />
     <ColorSample hex={Colors.BLUE[50]} number={50} name="Blue" />
 
-    <Subtitle>Sky</Subtitle>
+    <Title as="h3">Sky</Title>
     <p>
       It is a secondary color that can be used only in support elements such as
       backgrounds, graphic elements, icons, strokes and informational states. It
@@ -135,7 +132,7 @@ export default () => (
     </p>
     <ColorSample hex={Colors.SKY[500]} number={500} name="Sky" />
 
-    <Subtitle>Cobalt</Subtitle>
+    <Title as="h3">Cobalt</Title>
     <p>
       It is another secondary color that can be used in support elements like
       backgrounds, graphic elements, icons, texts and headings. It goes through
@@ -143,7 +140,7 @@ export default () => (
     </p>
     <ColorSample hex={Colors.COBALT[500]} number={500} name="Cobalt" />
 
-    <Subtitle>Pink</Subtitle>
+    <Title as="h3">Pink</Title>
     <p>
       It is used mainly in contexts of great prominence as CTAs and highlights
       Avoid using in contexts where they do not incite action or highlight.
@@ -152,21 +149,20 @@ export default () => (
 
     <br />
 
-    <Title>Support colors</Title>
-
+    <Title as="h2">Support colors</Title>
     <p>
       Tones 500 are used for icons, input and button strokes, but not are
       indicated for texts by not passing the contrast checker of WCAG.
       <br />
-      <br />
       The 200 tones are used exclusively for backgrounds.
-      <br />
       <br />
       The 900 tones are used exclusively for texts because they pass in contrast
       WCAG checker.
     </p>
 
-    <Subtitle>Success</Subtitle>
+    <Title as="h3" style={{ paddingTop: 0 }}>
+      Success
+    </Title>
     <ColorSample hex={Colors.SUCCESS[900]} number={900} name="Success" />
     <ColorSample hex={Colors.SUCCESS[500]} number={500} name="Success" />
     <ColorSample
@@ -176,7 +172,7 @@ export default () => (
       fontColor="black"
     />
 
-    <Subtitle>Warning</Subtitle>
+    <Title as="h3">Warning</Title>
     <ColorSample hex={Colors.WARNING[900]} number={900} name="Warning" />
     <ColorSample hex={Colors.WARNING[500]} number={500} name="Warning" />
     <ColorSample
@@ -186,7 +182,7 @@ export default () => (
       fontColor="black"
     />
 
-    <Subtitle>Error</Subtitle>
+    <Title as="h3">Error</Title>
     <ColorSample hex={Colors.ERROR[900]} number={900} name="Error" />
     <ColorSample hex={Colors.ERROR[500]} number={500} name="Error" />
     <ColorSample
@@ -198,8 +194,10 @@ export default () => (
 
     <br />
 
-    <Title>Neutral colors</Title>
-    <Subtitle>Black</Subtitle>
+    <Title as="h2">Neutral colors</Title>
+    <Title as="h3" style={{ paddingTop: 0 }}>
+      Black
+    </Title>
     <p>
       It is mainly used for texts and headings. Passes on AAA in the contrast
       checker.
@@ -230,12 +228,12 @@ export default () => (
       fontColor="black"
     />
 
-    <Subtitle>Shadow</Subtitle>
+    <Title as="h3">Shadow</Title>
     <ColorSample
       hex={Colors.SHADOW[40]}
       number={200}
       name="Shadow"
       fontColor="black"
     />
-  </React.Fragment>
+  </StoryContainer>
 );

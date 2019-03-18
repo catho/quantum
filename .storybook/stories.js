@@ -16,50 +16,15 @@ export default [
   // 2. Buttons
   'Button',
 
-  // 3. Forms
-  'AutoComplete',
+  // Forms
   'Checkbox',
-  'Dropdown',
-  'Input',
   'RadioGroup',
-  'Textarea',
   'Toggle',
   'Form',
-
-  // 4. Alerts
-  'Alert',
-
-  // 5. Modals
-  'Modal',
-
-  // 6. Images
-  'Image',
-  'Logo',
-
-  // 7. Mask
-  'TextMask',
+  'Slider',
 
   // 8. Tooltip
   'Tooltip',
-
-  // 9. Card
-  'Card',
-
-  // 10. List
-  'List',
-
-  // 11. Wizard
-  'Wizard',
-
-  // 12. Slider
-  'Slider',
-
-  // 13. Other
-  'Loading',
-  'Loader',
-
-  // 14. Popover
-  'Popover',
 
   // 15. Badge
   'Badge',
