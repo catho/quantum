@@ -35,9 +35,14 @@ const NavItem = styled.li`
     transition: width 0.25s ease-out;
   }
   &:hover {
-    color: ${Colors.blue.curious};
+    background-color: ${Colors.BLUE[200]};
   }
-  ${props => props.active && `color: ${Colors.blue.curious};`};
+  ${props =>
+    props.active &&
+    `color: ${Colors.COBALT[500]};
+    font-weight: bold;
+    border-bottom: 4px solid ${Colors.COBALT[500]};
+  `};
 `;
 
 NavItem.displayName = 'NavItem';
@@ -57,17 +62,21 @@ Tab.displayName = 'Tab';
 const RenderIf = ({ conditional, children }) => conditional && children;
 
 class TabbedView extends React.Component {
+  static Tab = Tab;
+
   constructor(props) {
     super(props);
 
+    const { children } = props;
+
+    const [firstTab] = React.Children.toArray(children);
     this.state = {
-      activeTab: 0,
+      activeTab: firstTab.props.title,
     };
   }
 
   onTabClick = tab => {
-    const { children } = this.props;
-    this.setState({ activeTab: children.indexOf(tab) });
+    this.setState({ activeTab: tab });
   };
 
   render() {
@@ -76,25 +85,22 @@ class TabbedView extends React.Component {
 
     return (
       <React.Fragment>
+        {activeTab}
         <Navbar>
-          {React.Children.map(
-            children,
-            tab =>
-              tab && (
-                <NavItem
-                  key={tab.props.title}
-                  onClick={() => this.onTabClick(tab)}
-                  active={children.indexOf(tab) === activeTab}
-                >
-                  {tab.props.title}
-                </NavItem>
-              ),
-          )}
+          {React.Children.map(children, ({ props: { title } }) => (
+            <NavItem
+              key={title}
+              onClick={() => this.onTabClick(title)}
+              active={title === activeTab}
+            >
+              {title}
+            </NavItem>
+          ))}
         </Navbar>
 
         {React.Children.map(children, child => (
-          <RenderIf conditional={children.indexOf(child) === activeTab}>
-            {children}
+          <RenderIf conditional={child.props.title === activeTab}>
+            {child.props.children}
           </RenderIf>
         ))}
       </React.Fragment>

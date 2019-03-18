@@ -1,6 +1,7 @@
 import { BREAKPOINTS } from './shared';
 import { Container, Row, Col, Hide } from './Grid';
 import { Form, Validations } from './Form';
+import { TabbedView, Tab } from './TabbedView';
 import Badge from './Badge';
 import Button from './Button';
 import Checkbox from './Checkbox';
@@ -37,5 +38,7 @@ export {
   Toggle,
   Tooltip,
   Typography,
+  TabbedView,
+  Tab,
   Validations,
 };
