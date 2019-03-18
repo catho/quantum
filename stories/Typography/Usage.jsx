@@ -1,21 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
-import Highlight from 'react-highlight';
 import LinkTo from '@storybook/addon-links/react';
-import { CodeToClipboard } from '@catho-private/quantum-storybook-ui';
+import {
+  Title,
+  StoryContainer,
+  SimpleHighlight,
+} from '@catho/quantum-storybook-ui';
 
-const Font = styled.div`
-  * {
-    font-family: Montserrat, sans-serif !important;
-  }
-`;
-
-const HighlightWrapper = styled.div`
-  position: relative;
-`;
-
-const glogalStyleImport = `import { GlobalStyle } from '@catho-private/quantum';`;
-
+const glogalStyleImport = `import { GlobalStyle } from '@catho/quantum';`;
 const glogalStyleCode = `...
 ReactDOM
   .render(() => (
@@ -26,35 +17,28 @@ ReactDOM
   ), document.getElementById('root'));
 `;
 
-const typographyAndIconImport = `import { Typography, IconFont } from '@catho-private/quantum';`;
+const typographyAndIconImport = `import { Typography, IconFont } from '@catho/quantum';`;
+const codeBackgroundColor = '#e8f2fc';
+const codefontColor = '#1a82e2';
 
 const Typography = () => (
-  <Font>
-    <p>
-      <strong>Nunito Sans</strong> is the standard typeface for Catho on the web
-    </p>
-
-    <p>
-      In order to use the default Catho Typography, just import the GlobalStyle
-      component:
-    </p>
-
-    <HighlightWrapper>
-      <Highlight language="bash" className="highlight">
-        {glogalStyleImport}
-      </Highlight>
-
-      <CodeToClipboard code={glogalStyleImport} />
-    </HighlightWrapper>
+  <StoryContainer>
+    <Title as="h2">Importing colors</Title>
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {glogalStyleImport}
+    </SimpleHighlight>
 
     <p>Usually, it is used before the application component</p>
-    <HighlightWrapper>
-      <Highlight language="bash" className="highlight">
-        {glogalStyleCode}
-      </Highlight>
 
-      <CodeToClipboard code={glogalStyleCode} />
-    </HighlightWrapper>
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {glogalStyleCode}
+    </SimpleHighlight>
 
     <p>
       The <code>{'<GlobalStyle />'}</code> will add and set automatically all
@@ -69,14 +53,13 @@ const Typography = () => (
       If you want to include one of those separately, you can import each one as
       you like to:
     </p>
-    <HighlightWrapper>
-      <Highlight language="bash" className="highlight">
-        {typographyAndIconImport}
-      </Highlight>
-
-      <CodeToClipboard code={typographyAndIconImport} />
-    </HighlightWrapper>
-  </Font>
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {typographyAndIconImport}
+    </SimpleHighlight>
+  </StoryContainer>
 );
 
 export default Typography;

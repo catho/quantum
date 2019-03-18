@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import {
-  Title,
-  Heading,
-  TabbedView,
-  Tab,
-  HowToImport,
-  CodeExample,
   AutoPropsApi,
-} from '@catho-private/quantum-storybook-ui';
+  Heading,
+  SimpleHighlight,
+  StoryContainer,
+  Tab,
+  TabbedView,
+  Title,
+} from '@catho/quantum-storybook-ui';
 
 import Dropdown from '../../components/Dropdown';
 import { Row, Col } from '../../components/Grid';
@@ -24,70 +23,67 @@ import {
   Controlled,
 } from './examples';
 
-const MARGIN = 'margin-bottom: 60px;';
-
-const StyledTitle = styled(Title)`
-  ${MARGIN}
-`;
-const ExampleWrapper = styled.div`
-  ${MARGIN}
-`;
-
 const DropdownExample = ({ component: Component }) => (
-  <ExampleWrapper>
-    <Row>
-      <Col xsmall={2} small={4} medium={6}>
-        <CodeExample code={Component.CODE} showTitle={false} />
-      </Col>
-      <Col xsmall={2} small={4} medium={6}>
-        <Component />
-      </Col>
-    </Row>
-  </ExampleWrapper>
+  <Row>
+    <Col xsmall={2} small={4} medium={6}>
+      <SimpleHighlight>{Component.CODE}</SimpleHighlight>
+    </Col>
+    <Col xsmall={2} small={4} medium={6}>
+      <Component />
+    </Col>
+  </Row>
 );
 
 DropdownExample.propTypes = {
   component: PropTypes.func.isRequired,
 };
 
-storiesOf('3. Forms', module).add('Dropdown', () => (
-  <Heading name="Dropdown">
+const importCode = "import { Slider } from '@cathodevel/quantum';";
+
+storiesOf('Forms', module).add('Dropdown', () => (
+  <>
+    <Heading name="Dropdown">
+      <p>
+        A dropdown receives user input, allowing it to choose one of several
+        options.
+      </p>
+      <p>
+        Its options are described by {'"'}items{'"'} prop, which can be either
+        array of string or objects, within the following structure:
+      </p>
+      <List>
+        <List.Item>
+          <strong>value</strong>: Computed to dropdown value itself, if the
+          corresponding item is selected
+        </List.Item>
+        <List.Item>
+          <strong>label</strong>: What is showed to the user in the dropdown
+          interface
+        </List.Item>
+      </List>
+      <p>
+        If a list of strings is provided, they will be used both for items
+        values and labels.
+      </p>
+    </Heading>
+
     <TabbedView>
       <Tab title="Usage">
-        <HowToImport importModules="Dropdown" />
-        <p>
-          A dropdown receives user input, allowing it to choose one of several
-          options.
-        </p>
-        <p>
-          Its options are described by {'"'}items{'"'} prop, which can be either
-          array of string or objects, within the following structure:
-        </p>
-        <List>
-          <List.Item>
-            <strong>value</strong>: Computed to dropdown value itself, if the
-            corresponding item is selected
-          </List.Item>
-          <List.Item>
-            <strong>label</strong>: What is showed to the user in the dropdown
-            interface
-          </List.Item>
-        </List>
-        <p>
-          If a list of strings is provided, they will be used both for items
-          values and labels.
-        </p>
-        <StyledTitle>Examples</StyledTitle>
-        <DropdownExample component={Simple} />
-        <DropdownExample component={CustomLabel} />
-        <DropdownExample component={RequiredMark} />
-        <DropdownExample component={WithError} />
-        <DropdownExample component={Disabled} />
-        <DropdownExample component={Controlled} />
+        <StoryContainer>
+          <Title as="h2">Importing</Title>
+          <SimpleHighlight>{importCode}</SimpleHighlight>
+          <Title as="h2">Examples</Title>
+          <DropdownExample component={Simple} />
+          <DropdownExample component={CustomLabel} />
+          <DropdownExample component={RequiredMark} />
+          <DropdownExample component={WithError} />
+          <DropdownExample component={Disabled} />
+          <DropdownExample component={Controlled} />
+        </StoryContainer>
       </Tab>
       <Tab title="API">
         <AutoPropsApi component={Dropdown} />
       </Tab>
     </TabbedView>
-  </Heading>
+  </>
 ));
