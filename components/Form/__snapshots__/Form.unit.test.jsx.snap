@@ -21,20 +21,31 @@ exports[`Form component  should match the snapshot 1`] = `
 }
 
 .c3 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c3[disabled] {
@@ -47,11 +58,6 @@ exports[`Form component  should match the snapshot 1`] = `
 
 .c3::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c3:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c3:focus + .c1 {

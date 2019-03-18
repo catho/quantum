@@ -19,6 +19,7 @@ export default [
   // Forms
   'Checkbox',
   'Dropdown',
+  'Input',
   'RadioGroup',
   'Toggle',
   'Form',

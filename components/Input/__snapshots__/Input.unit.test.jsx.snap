@@ -2,20 +2,31 @@
 
 exports[`Input component  should match the snapshot 1`] = `
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1[disabled] {
@@ -28,11 +39,6 @@ exports[`Input component  should match the snapshot 1`] = `
 
 .c1::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c3 {
@@ -118,20 +124,31 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c3 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c3[disabled] {
@@ -144,11 +161,6 @@ exports[`Input component  should match the snapshot 2`] = `
 
 .c3::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c3:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c3:focus + .c1 {
@@ -220,21 +232,38 @@ exports[`Input component  should match the snapshot 2`] = `
 
 exports[`Input component  should match the snapshot 3`] = `
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
   border-color: #ff2d4d;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c1[disabled] {
@@ -247,11 +276,6 @@ exports[`Input component  should match the snapshot 3`] = `
 
 .c1::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c4 {
@@ -331,20 +355,31 @@ exports[`Input component  should match the snapshot 3`] = `
 
 exports[`Input component  should match the snapshot 4`] = `
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1[disabled] {
@@ -357,11 +392,6 @@ exports[`Input component  should match the snapshot 4`] = `
 
 .c1::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c3 {
@@ -428,20 +458,31 @@ exports[`Input component  should match the snapshot 4`] = `
 
 exports[`Input component  should match the snapshot 5`] = `
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1[disabled] {
@@ -454,11 +495,6 @@ exports[`Input component  should match the snapshot 5`] = `
 
 .c1::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c3 {
@@ -525,20 +561,31 @@ exports[`Input component  should match the snapshot 5`] = `
 
 exports[`Input component  should match the snapshot 6`] = `
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1[disabled] {
@@ -551,11 +598,6 @@ exports[`Input component  should match the snapshot 6`] = `
 
 .c1::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c4 {
@@ -636,20 +678,31 @@ exports[`Input component  should match the snapshot 6`] = `
 
 exports[`Input component  should match the snapshot 7`] = `
 .c2 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c2[disabled] {
@@ -662,11 +715,6 @@ exports[`Input component  should match the snapshot 7`] = `
 
 .c2::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c2:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c2:focus + .c4 {
@@ -746,20 +794,31 @@ exports[`Input component  should match the snapshot 7`] = `
 
 exports[`Input component  should match the snapshot 8`] = `
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1[disabled] {
@@ -772,11 +831,6 @@ exports[`Input component  should match the snapshot 8`] = `
 
 .c1::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c3 {
@@ -843,21 +897,32 @@ exports[`Input component  should match the snapshot 8`] = `
 
 exports[`Input component  should match the snapshot 9`] = `
 .c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   background-color: #FFFFFF;
-  border: none;
   border-radius: 4px;
   border: 1.5px solid #999999;
-  box-sizing: border-box;
   color: #4c4c4c;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: initial;
   height: 44px;
-  margin-top: 8px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 42px 10px 12px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
   color: #999999;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1[disabled] {
@@ -870,11 +935,6 @@ exports[`Input component  should match the snapshot 9`] = `
 
 .c1::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 1px 6px 0 rgba(19,85,208,0.5);
 }
 
 .c1:focus + .c2 {

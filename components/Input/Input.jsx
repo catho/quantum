@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-import { ErrorMessage, Label, FieldGroup } from '../shared';
+import { ErrorMessage, Label, FieldGroup, inputStyle } from '../shared';
 import ColorsDeprecated from '../Colors/deprecated';
 import Colors from '../Colors';
 import Icon from '../Icon';
@@ -20,38 +20,16 @@ const InputLabel = styled(Label)`
 `;
 
 const InputTag = styled.input`
-  ${theme.mixins.transition()};
-  background-color: ${Colors.WHITE};
-  border: none;
-  border-radius: 4px;
-  border: 1.5px solid ${Colors.BLACK['400']};
-  box-sizing: border-box;
-  color: ${Colors.BLACK['700']};
-  font-size: 16px;
-  height: 44px;
-  margin-top: 8px;
-  outline: none;
-  padding: 10px 42px 10px 12px;
-  width: 100%;
+  ${inputStyle}
 
-  &[disabled] {
-    background-color: ${Colors.BLACK['100']};
-    border-color: ${Colors.BLACK['400']};
-    box-shadow: none;
-    color: ${Colors.BLACK['400']};
-    cursor: not-allowed;
-  }
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
 
   ${({ searchable }) =>
     searchable &&
     `
     padding: 10px 42px 10px 42px;
-  `}
-
-  ${({ error }) =>
-    error &&
-    `
-    border-color: ${Colors.ERROR['500']};
   `}
 
   ${props =>
@@ -62,11 +40,6 @@ const InputTag = styled.input`
 
   &::-webkit-calendar-picker-indicator {
     display: none;
-  }
-
-  &:focus {
-    border-color: ${Colors.BLUE['500']};
-    box-shadow: 0 1px 6px 0 ${Colors.BLUE['50']};
   }
 
   &:focus + ${InputLabel} {
