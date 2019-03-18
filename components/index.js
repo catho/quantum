@@ -5,6 +5,7 @@ import Badge from './Badge';
 import Button from './Button';
 import Checkbox from './Checkbox';
 import Colors from './Colors';
+import Dropdown from './Dropdown';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
@@ -22,6 +23,7 @@ export {
   Col,
   Colors,
   Container,
+  Dropdown,
   Form,
   GlobalStyle,
   Hide,
