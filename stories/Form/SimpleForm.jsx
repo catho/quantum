@@ -7,13 +7,12 @@ const SimpleForm = () => (
   <Form>
     <Input name="firstName" label="name" />
     <Button name="submit" type="submit">
-      Enviar
+      Submit
     </Button>
   </Form>
 );
 
-const SimpleFormCode = `
-<Form>
+const SimpleFormCode = `<Form>
   <Input
     name="firstName"
     placeholder="name"
@@ -22,7 +21,7 @@ const SimpleFormCode = `
     name="submit"
     type="submit"
   >
-    Enviar
+    Submit
   </Button>
 </Form>`;
 

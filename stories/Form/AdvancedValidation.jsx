@@ -22,13 +22,12 @@ const AdvancedValidation = () => (
       validate={({ value }) => (value === 'Catho' ? '' : 'Catho, please')}
     />
     <Button name="submit" type="submit">
-      Enviar
+      Submit
     </Button>
   </Form>
 );
 
-const AdvancedValidationCode = `
-<Form>
+const AdvancedValidationCode = `<Form>
   <Input
     name="email"
     label="Required"
@@ -51,7 +50,7 @@ const AdvancedValidationCode = `
     name="submit"
     type="submit"
   >
-    Enviar
+    Submit
   </Button>
 </Form>`;
 

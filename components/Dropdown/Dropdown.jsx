@@ -6,14 +6,17 @@ import Icon from '../Icon/Icon';
 import Colors from '../Colors';
 import { FieldGroup, Label, ErrorMessage } from '../shared';
 
-const DropdownLabel = styled(Label)`
+const ITEM_HEIGHT = '44px';
+const MAX_ITEMS_VISIBILITY = 7;
+
+const DropLabel = styled(Label)`
   margin-bottom: 8px;
   padding-left: 13.5px;
 `;
 
-DropdownLabel.displayName = 'DropdownLabel';
+DropLabel.displayName = 'DropLabel';
 
-const DropdownButton = styled.button`
+const DropButton = styled.button`
   align-items: center;
   background-color: ${Colors.WHITE};
   border-radius: 4px;
@@ -22,7 +25,7 @@ const DropdownButton = styled.button`
   cursor: pointer;
   display: flex;
   font-size: initial;
-  height: 44px;
+  height: ${ITEM_HEIGHT};
   justify-content: space-between;
   letter-spacing: 0.2px;
   padding: 10px 12px;
@@ -41,20 +44,21 @@ const DropdownButton = styled.button`
     border-color: ${Colors.ERROR['500']};
 
     :hover, :focus {
-      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
       border-color: ${Colors.ERROR['500']};
+      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
     }
   `};
 
   &[disabled] {
     background-color: ${Colors.BLACK['100']};
-    color: ${Colors.BLACK['400']};
-    cursor: not-allowed;
     border-color: ${Colors.BLACK['400']};
     box-shadow: none;
+    color: ${Colors.BLACK['400']};
+    cursor: not-allowed;
   }
 
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
+  ${({ selectedItem }) => selectedItem && `color: ${Colors.BLACK[700]}`};
 `;
 
 const ArrowDown = styled(Icon).attrs({
@@ -65,12 +69,19 @@ const ArrowDown = styled(Icon).attrs({
   pointer-events: none;
 `;
 
-const DropdownList = styled.ul`
+const DropList = styled.ul`
   background-color: ${Colors.WHITE};
+  border-radius: 4px;
+  border: solid 1.5px ${Colors.BLACK[100]};
   box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
-  margin-top: 4px;
   list-style: none;
+  margin-top: 4px;
+  max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
+  overflow: auto;
   padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
 `;
 
 const CheckIcon = styled(Icon).attrs({
@@ -79,15 +90,17 @@ const CheckIcon = styled(Icon).attrs({
   color: ${Colors.BLUE['500']};
 `;
 
-const DropdownListItem = styled.li`
+const DropItem = styled.li`
   background-color: ${Colors.WHITE};
-  border-radius: 4px;
-  border: solid 1.5px ${Colors.BLACK[100]};
-  border-bottom-width: 0;
-  cursor: pointer;
-  height: 44px;
-  padding: 10px 15px;
+  border-bottom: solid 1.5px ${Colors.BLACK[100]};
   box-sizing: border-box;
+  cursor: pointer;
+  height: ${ITEM_HEIGHT};
+  padding: 10px 15px;
+
+  :last-child {
+    border-bottom-width: 0;
+  }
 
   &[aria-selected='true'] {
     background-color: ${Colors.BLUE[200]};
@@ -101,168 +114,142 @@ const DropdownListItem = styled.li`
   `}
 `;
 
-const DropdownErrorMessage = styled(ErrorMessage)`
+const DropError = styled(ErrorMessage)`
   margin-top: 8px;
   padding-left: 13.5px;
 `;
 
-function itemToString(item = '') {
-  if (typeof item === 'string') {
-    return item;
-  }
-
-  const { content } = item;
-
-  if (typeof content === 'string') {
-    return content;
-  }
-
-  return content.header;
-}
+const DropContainer = styled.div`
+  position: relative;
+`;
 
 const RequiredMark = styled.em`
   color: ${Colors.ERROR['500']};
 `;
 
-class Dropdown extends React.Component {
-  constructor(props) {
-    super(props);
+const _getValue = item => (item ? item.value || item.label || item : '');
+const _getLabel = item => (item ? item.label || item.value || item : '');
+const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
 
-    const { selectedItem = null } = props;
+const Dropdown = ({
+  label,
+  error,
+  required,
+  disabled,
+  items,
+  placeholder,
+  selectedItem,
+  onChange,
+  ...rest
+}) => {
+  const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
+  const _buttonRef = React.createRef();
 
-    this.state = { selectedItem };
-  }
+  const _highlightedReducer = ({ selectedItem: selected }, changes) => {
+    if (changes.isOpen !== undefined && changes.isOpen) {
+      const selectedIndex = items.map(_getValue).indexOf(_getValue(selected));
+      const withRange = selectedIndex + Math.floor(MAX_ITEMS_VISIBILITY / 2);
+      const { length } = items;
 
-  componentWillUpdate(nextProps) {
-    const { selectedItem } = this.state;
-
-    if (nextProps.selectedItem !== selectedItem) {
-      this.state.selectedItem = nextProps.selectedItem;
+      return {
+        ...changes,
+        highlightedIndex: withRange < length ? withRange : length - 1,
+      };
     }
-  }
 
-  _onChange = item => {
-    const { onChange } = this.props;
-
-    this.setState({ selectedItem: item });
-
-    onChange(null, { selectedItem: item });
+    return changes;
   };
 
-  render() {
-    const {
-      label,
-      error,
-      required,
-      disabled,
-      items,
-      placeholder,
-      ...rest
-    } = this.props;
-    const { selectedItem } = this.state;
-
-    const buttonText = itemToString(selectedItem.item) || placeholder;
-
-    return (
-      <FieldGroup>
-        <Downshift
-          {...rest}
-          selectedItem={selectedItem}
-          onChange={this._onChange}
-          itemToString={({ item }) => itemToString(item)}
-        >
-          {({
-            isOpen,
-            getToggleButtonProps,
-            getItemProps,
-            getLabelProps,
-            getInputProps,
-          }) => (
-            <div>
-              {label && (
-                <DropdownLabel
-                  {...getLabelProps()}
-                  onClick={() => this._dropdownButton.focus()}
-                >
-                  {label}
-                  {required && <RequiredMark>*</RequiredMark>}
-                </DropdownLabel>
-              )}
-              <input type="hidden" {...getInputProps()} />
-              <DropdownButton
-                {...getToggleButtonProps()}
-                ref={button => {
-                  this._dropdownButton = button;
-                }}
-                isOpen={isOpen}
-                disabled={disabled}
-                error={error}
-                text={buttonText}
+  return (
+    <FieldGroup>
+      <Downshift
+        {...rest}
+        selectedItem={selectedItem}
+        onChange={onChange}
+        itemToString={_getValue}
+        stateReducer={_highlightedReducer}
+      >
+        {({
+          getRootProps,
+          getLabelProps,
+          getInputProps,
+          getToggleButtonProps,
+          getItemProps,
+          isOpen,
+        }) => (
+          <DropContainer {...getRootProps()}>
+            {label && (
+              <DropLabel
+                {...getLabelProps()}
+                onClick={() => _buttonRef.current.focus()}
               >
-                {buttonText}
-                <ArrowDown />
-              </DropdownButton>
-              {isOpen && (
-                <DropdownList>
-                  {items.map(item => (
-                    <DropdownListItem
-                      {...getItemProps({
-                        item,
-                        isSelected: selectedItem === item,
-                      })}
-                      isSelected={selectedItem === item}
-                      key={itemToString(item.item)}
-                    >
-                      {item.item.content || item.item}
-                      {selectedItem === item && <CheckIcon />}
-                    </DropdownListItem>
-                  ))}
-                </DropdownList>
-              )}
-            </div>
-          )}
-        </Downshift>
+                {label}
+                {required && <RequiredMark>*</RequiredMark>}
+              </DropLabel>
+            )}
+            <input type="hidden" {...getInputProps()} />
+            <DropButton
+              {...getToggleButtonProps()}
+              ref={_buttonRef}
+              isOpen={isOpen}
+              disabled={disabled}
+              error={error}
+              text={_buttonLabel}
+              selectedItem={selectedItem}
+            >
+              {_buttonLabel}
+              <ArrowDown />
+            </DropButton>
+            {isOpen && (
+              <DropList>
+                {items.map(item => (
+                  <DropItem
+                    {...getItemProps({
+                      item,
+                      isSelected: _isEqual(selectedItem, item),
+                      key: _getValue(item),
+                    })}
+                  >
+                    {_getLabel(item)}
+                    {_isEqual(selectedItem, item) && <CheckIcon />}
+                  </DropItem>
+                ))}
+              </DropList>
+            )}
+          </DropContainer>
+        )}
+      </Downshift>
 
-        {error && <DropdownErrorMessage>{error}</DropdownErrorMessage>}
-      </FieldGroup>
-    );
-  }
-}
+      {error && <DropError>{error}</DropError>}
+    </FieldGroup>
+  );
+};
 
 Dropdown.defaultProps = {
   disabled: false,
   error: '',
   items: [],
   label: '',
-  name: 'Dropdown',
   onChange: () => {},
-  placeholder: 'Selecione',
+  placeholder: 'Select an option',
   required: false,
-  selectedItem: {},
+  selectedItem: '',
 };
 
-const itemPropType = PropTypes.shape({
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  item: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.shape({
-      content: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.shape({
-          header: PropTypes.string,
-          subheader: PropTypes.string,
-        }),
-      ]),
-    }),
-  ]),
-});
+const itemPropType = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.shape({
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    label: PropTypes.string,
+  }),
+]);
 
 Dropdown.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.string,
+  /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
   label: PropTypes.string,
-  name: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   required: PropTypes.bool,

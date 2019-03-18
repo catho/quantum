@@ -3,142 +3,98 @@ import { storiesOf } from '@storybook/react';
 import {
   Heading,
   CodeExample,
-  Example,
-  TabbedView,
-  Tab,
-} from '@catho-private/quantum-storybook-ui';
+  SimpleHighlight,
+  Title,
+  StoryContainer,
+} from '@catho/quantum-storybook-ui';
 
 import { Col, Row } from '../../components/Grid';
-import Button from '../../components/Button';
-import { Form, Validations } from '../../components/Form';
-import Input from '../../components/Input';
+import { Validations } from '../../components/Form';
 
 import * as SimpleForm from './SimpleForm';
 import * as SimpleValidation from './SimpleValidation';
 import * as AdvancedValidation from './AdvancedValidation';
 
-const FormExample = (
-  <Form style={{ width: '400px' }}>
-    <Input
-      name="first"
-      label="First Name"
-      validate={[
-        {
-          validate: Validations.Required,
-        },
-        Validations.MinLength,
-      ]}
-      minLength={3}
-    />
-    <Input
-      name="last"
-      label="Last Name"
-      validate={[
-        {
-          validate: Validations.Required,
-        },
-        Validations.MinLength,
-      ]}
-      minLength={3}
-    />
-    <Input.Date name="date" label="Birthday" validate={Validations.Date} />
-    <Button type="submit"> Enviar </Button>
-  </Form>
-);
+const importForm = `import { Form } from '@cathodevel/quantum';`;
 
-storiesOf('3. Forms', module).add('Validation', () => (
-  <Heading title="<Form />">
-    <TabbedView>
-      <Tab title="Usage">
-        <p>We provide a bunch of components to use in your form.</p>
+storiesOf('Forms', module).add('Form', () => (
+  <>
+    <Heading name="Forms">
+      A Form displays a set of related user input fields in a structured way,
+      some other components like validation adds check behavior of the data
+      against a set of criteria before passing it along to the server
+    </Heading>
+    <StoryContainer>
+      <Title as="h2">Importing form</Title>
+      <SimpleHighlight>{importForm}</SimpleHighlight>
 
-        <p>
-          To use it, you need to import the component itself and add some inputs
-          as you like.
-        </p>
+      <Title as="h2">Usage</Title>
+      <Row>
+        <Col medium={6}>
+          <CodeExample
+            showTitle={false}
+            component={SimpleForm.Form}
+            code={SimpleForm.Code}
+          />
+        </Col>
 
-        <h4>Simple form</h4>
-        <Row>
-          <Col desktop={6}>
-            <CodeExample
-              showTitle={false}
-              withImport={['Form', 'Input', 'Button'].join(', ')}
-              component={SimpleForm.Form}
-              code={SimpleForm.Code}
-            />
-          </Col>
+        <Col medium={6}>
+          <SimpleForm.Form />
+        </Col>
+      </Row>
 
-          <Col desktop={6}>
-            <SimpleForm.Form />
-          </Col>
-        </Row>
+      <Title as="h2">Validate Example</Title>
+      <p>
+        Each child of <code>Form</code> has an property <code>validate</code>.
+      </p>
+      <p>
+        It is not required but you can provide validations on it to be fired
+        when your form is submitted.
+      </p>
+      <Row>
+        <Col medium={6}>
+          <CodeExample
+            showTitle={false}
+            component={SimpleValidation.Form}
+            code={SimpleValidation.Code}
+          />
+        </Col>
 
-        <p>
-          Each child of <code>Form</code> has an property <code>validate</code>.
-        </p>
-        <p>
-          It is not required but you can provide validations on it to be fired
-          when your form is submitted.
-        </p>
+        <Col medium={6}>
+          <SimpleValidation.Form />
+        </Col>
+      </Row>
 
-        <h4>Validate Example</h4>
-        <Row>
-          <Col desktop={6}>
-            <CodeExample
-              showTitle={false}
-              withImport={['Form', 'Validations', 'Input', 'Button'].join(', ')}
-              component={SimpleValidation.Form}
-              code={SimpleValidation.Code}
-            />
-          </Col>
+      <p>
+        As you can see in the example above, we also provide some useful
+        validations:
+      </p>
+      <ul>
+        {Object.getOwnPropertyNames(Validations)
+          .filter(name => !['name', 'length', 'prototype'].includes(name))
+          .map(validate => (
+            <li key={validate}>{validate}</li>
+          ))}
+      </ul>
 
-          <Col desktop={6}>
-            <SimpleValidation.Form />
-          </Col>
-        </Row>
+      <p>You can add as many validations as you want!</p>
+      <Title as="h2">Custom Validation</Title>
+      <p>
+        You can write your custom validate function with custom error messages.
+      </p>
+      <Row>
+        <Col medium={6}>
+          <CodeExample
+            showTitle={false}
+            component={AdvancedValidation.Form}
+            code={AdvancedValidation.Code}
+          />
+        </Col>
 
-        <p>
-          As you can see in the example above, we also provide some useful
-          validations:
-        </p>
-        <ul>
-          {Object.getOwnPropertyNames(Validations)
-            .filter(name => !['name', 'length', 'prototype'].includes(name))
-            .map(validate => (
-              <li key={validate}>{validate}</li>
-            ))}
-        </ul>
-
-        <p>You can add as many validations as you want!</p>
-        <p>
-          And you can write your custom validate function with custom error
-          messages too!!!
-        </p>
-
-        <h4>Advanced Form</h4>
-        <Row>
-          <Col desktop={6}>
-            <CodeExample
-              showTitle={false}
-              withImport={['Form', 'Validations', 'Input', 'Button'].join(', ')}
-              component={AdvancedValidation.Form}
-              code={AdvancedValidation.Code}
-            />
-          </Col>
-
-          <Col desktop={6}>
-            <AdvancedValidation.Form />
-          </Col>
-        </Row>
-      </Tab>
-
-      <Tab title="Example">
-        <Example
-          title="New User"
-          importModules="Form"
-          component={FormExample}
-        />
-      </Tab>
-    </TabbedView>
-  </Heading>
+        <Col medium={6}>
+          <AdvancedValidation.Form />
+        </Col>
+      </Row>
+    </StoryContainer>
+  </>
 ));

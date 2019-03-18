@@ -8,10 +8,21 @@ describe('Input component ', () => {
     const withItems = (
       <Dropdown
         items={[
-          { value: 'fooKey', item: 'foo' },
-          { value: 'barKey', item: 'bar' },
-          { value: 'bazKey', item: 'baz' },
+          { value: 'fooKey', label: 'foo' },
+          { value: 'barKey', label: 'bar' },
+          { value: 'bazKey', label: 'baz' },
         ]}
+      />
+    );
+
+    const withSelectedItem = (
+      <Dropdown
+        items={[
+          { value: 'fooKey', label: 'foo' },
+          { value: 'barKey', label: 'bar' },
+          { value: 'bazKey', label: 'baz' },
+        ]}
+        selectedItem={{ value: 'bazKey', label: 'baz' }}
       />
     );
 
@@ -33,6 +44,7 @@ describe('Input component ', () => {
       renderer.create(<Dropdown required label="Dropdown label" />).toJSON(),
     ).toMatchSnapshot();
     expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
+    expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
   });
 });
 
@@ -42,29 +54,24 @@ describe('with an "onChange" callback set', () => {
   const items = [
     {
       value: 'fooKey',
-      item: 'foo',
+      label: 'foo',
     },
     {
       value: 'barKey',
-      item: 'bar',
+      label: 'bar',
     },
   ];
 
-  const dropdown = <Dropdown onChange={mockFn} id="dropdown" items={items} />;
-
-  const wrapper = shallow(dropdown);
-
-  it('should init value with an empty label', () => {
-    expect(wrapper.state('selectedItem')).toEqual({});
-  });
+  const wrapper = shallow(
+    <Dropdown onChange={mockFn} id="dropdown" items={items} />,
+  );
 
   it('should call the callback and set a new value', () => {
     const [selectedItem] = items;
 
     wrapper.find('#dropdown').simulate('change', selectedItem);
 
-    expect(wrapper.state('selectedItem')).toEqual(selectedItem);
     expect(mockFn).toHaveBeenCalledTimes(1);
-    expect(mockFn).toBeCalledWith(null, { selectedItem });
+    expect(mockFn).toBeCalledWith(selectedItem);
   });
 });

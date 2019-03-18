@@ -1,17 +1,89 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
-import { AutoExample } from '@catho-private/quantum-storybook-ui';
-import Dropdown from '../../components/Dropdown';
+import {
+  AutoPropsApi,
+  Heading,
+  SimpleHighlight,
+  StoryContainer,
+  Tab,
+  TabbedView,
+  Title,
+} from '@catho/quantum-storybook-ui';
 
-storiesOf('3. Forms', module).add('Dropdown', () => (
-  <AutoExample
-    component={Dropdown}
-    componentProps={{
-      items: [
-        { value: 'SP', item: 'São Paulo' },
-        { value: 'MG', item: 'Minas Gerais' },
-        { value: 'FE', item: 'Fortaleza' },
-      ],
-    }}
-  />
+import Dropdown from '../../components/Dropdown';
+import { Row, Col } from '../../components/Grid';
+import List from '../../components/List';
+import {
+  Simple,
+  CustomLabel,
+  RequiredMark,
+  WithError,
+  Disabled,
+  Controlled,
+} from './examples';
+
+const DropdownExample = ({ component: Component }) => (
+  <Row>
+    <Col xsmall={2} small={4} medium={6}>
+      <SimpleHighlight>{Component.CODE}</SimpleHighlight>
+    </Col>
+    <Col xsmall={2} small={4} medium={6}>
+      <Component />
+    </Col>
+  </Row>
+);
+
+DropdownExample.propTypes = {
+  component: PropTypes.func.isRequired,
+};
+
+const importCode = "import { Slider } from '@cathodevel/quantum';";
+
+storiesOf('Forms', module).add('Dropdown', () => (
+  <>
+    <Heading name="Dropdown">
+      <p>
+        A dropdown receives user input, allowing it to choose one of several
+        options.
+      </p>
+      <p>
+        Its options are described by {'"'}items{'"'} prop, which can be either
+        array of string or objects, within the following structure:
+      </p>
+      <List>
+        <List.Item>
+          <strong>value</strong>: Computed to dropdown value itself, if the
+          corresponding item is selected
+        </List.Item>
+        <List.Item>
+          <strong>label</strong>: What is showed to the user in the dropdown
+          interface
+        </List.Item>
+      </List>
+      <p>
+        If a list of strings is provided, they will be used both for items
+        values and labels.
+      </p>
+    </Heading>
+
+    <TabbedView>
+      <Tab title="Usage">
+        <StoryContainer>
+          <Title as="h2">Importing</Title>
+          <SimpleHighlight>{importCode}</SimpleHighlight>
+          <Title as="h2">Examples</Title>
+          <DropdownExample component={Simple} />
+          <DropdownExample component={CustomLabel} />
+          <DropdownExample component={RequiredMark} />
+          <DropdownExample component={WithError} />
+          <DropdownExample component={Disabled} />
+          <DropdownExample component={Controlled} />
+        </StoryContainer>
+      </Tab>
+      <Tab title="API">
+        <AutoPropsApi component={Dropdown} />
+      </Tab>
+    </TabbedView>
+  </>
 ));

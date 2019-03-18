@@ -8,7 +8,7 @@ exports[`Input component  should match the snapshot 1`] = `
   width: 100%;
 }
 
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -38,24 +38,28 @@ exports[`Input component  should match the snapshot 1`] = `
   width: 100%;
 }
 
-.c1:hover,
-.c1:focus {
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1[disabled] {
+.c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
-.c2 {
+.c3 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
@@ -66,6 +70,7 @@ exports[`Input component  should match the snapshot 1`] = `
     aria-haspopup="listbox"
     aria-labelledby="downshift-0-label"
     aria-owns={null}
+    className="c1"
     role="combobox"
   >
     
@@ -85,7 +90,7 @@ exports[`Input component  should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c1"
+      className="c2"
       data-toggle={true}
       disabled={false}
       onBlur={[Function]}
@@ -95,10 +100,10 @@ exports[`Input component  should match the snapshot 1`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c2"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -119,496 +124,6 @@ exports[`Input component  should match the snapshot 2`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  color: #999999;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: initial;
-  height: 44px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
-  border-color: #999999;
-  box-shadow: none;
-}
-
-.c2 {
-  color: #4c4c4c;
-  font-size: 1.5em;
-  pointer-events: none;
-}
-
-<div
-  className="c0"
->
-  <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="downshift-1-label"
-    aria-owns={null}
-    role="combobox"
-  >
-    
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls={null}
-      aria-labelledby="downshift-1-label"
-      autoComplete="off"
-      id="downshift-1-input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      type="hidden"
-      value=""
-    />
-    <button
-      aria-haspopup={true}
-      aria-label="open menu"
-      className="c1"
-      data-toggle={true}
-      disabled={false}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      type="button"
-    >
-      Dropdown placeholder
-      <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c2"
-        style={
-          Object {
-            "color": "",
-          }
-        }
-      >
-        keyboard_arrow_down
-      </span>
-    </button>
-  </div>
-  
-</div>
-`;
-
-exports[`Input component  should match the snapshot 3`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  color: #999999;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: initial;
-  height: 44px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
-  border-color: #999999;
-  box-shadow: none;
-}
-
-.c2 {
-  color: #4c4c4c;
-  font-size: 1.5em;
-  pointer-events: none;
-}
-
-<div
-  className="c0"
->
-  <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="downshift-2-label"
-    aria-owns={null}
-    role="combobox"
-  >
-    
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls={null}
-      aria-labelledby="downshift-2-label"
-      autoComplete="off"
-      id="downshift-2-input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      type="hidden"
-      value=""
-    />
-    <button
-      aria-haspopup={true}
-      aria-label="open menu"
-      className="c1"
-      data-toggle={true}
-      disabled={false}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      type="button"
-    >
-      
-      <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c2"
-        style={
-          Object {
-            "color": "",
-          }
-        }
-      >
-        keyboard_arrow_down
-      </span>
-    </button>
-  </div>
-  
-</div>
-`;
-
-exports[`Input component  should match the snapshot 4`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  color: #999999;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: initial;
-  height: 44px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  border-color: #ff2d4d;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c1:hover,
-.c1:focus {
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  border-color: #ff2d4d;
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
-  border-color: #999999;
-  box-shadow: none;
-}
-
-.c2 {
-  color: #4c4c4c;
-  font-size: 1.5em;
-  pointer-events: none;
-}
-
-.c3 {
-  color: #ac001a;
-  font-size: 14px;
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
-  margin-top: 8px;
-  padding-left: 13.5px;
-}
-
-<div
-  className="c0"
->
-  <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="downshift-3-label"
-    aria-owns={null}
-    role="combobox"
-  >
-    
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls={null}
-      aria-labelledby="downshift-3-label"
-      autoComplete="off"
-      id="downshift-3-input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      type="hidden"
-      value=""
-    />
-    <button
-      aria-haspopup={true}
-      aria-label="open menu"
-      className="c1"
-      data-toggle={true}
-      disabled={false}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      type="button"
-    >
-      Selecione
-      <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c2"
-        style={
-          Object {
-            "color": "",
-          }
-        }
-      >
-        keyboard_arrow_down
-      </span>
-    </button>
-  </div>
-  <div
-    className="c3"
-  >
-    Error message
-  </div>
-</div>
-`;
-
-exports[`Input component  should match the snapshot 5`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  color: #999999;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: initial;
-  height: 44px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
-  border-color: #999999;
-  box-shadow: none;
-}
-
-.c2 {
-  color: #4c4c4c;
-  font-size: 1.5em;
-  pointer-events: none;
-}
-
-<div
-  className="c0"
->
-  <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="downshift-4-label"
-    aria-owns={null}
-    role="combobox"
-  >
-    
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls={null}
-      aria-labelledby="downshift-4-label"
-      autoComplete="off"
-      id="downshift-4-input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      type="hidden"
-      value=""
-    />
-    <button
-      aria-haspopup={true}
-      aria-label="open menu"
-      className="c1"
-      data-toggle={true}
-      disabled={true}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      type="button"
-    >
-      Selecione
-      <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c2"
-        style={
-          Object {
-            "color": "",
-          }
-        }
-      >
-        keyboard_arrow_down
-      </span>
-    </button>
-  </div>
-  
-</div>
-`;
-
-exports[`Input component  should match the snapshot 6`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c1 {
-  cursor: pointer;
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-bottom: 8px;
-  padding-left: 13.5px;
 }
 
 .c2 {
@@ -649,10 +164,10 @@ exports[`Input component  should match the snapshot 6`] = `
 
 .c2[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -661,31 +176,29 @@ exports[`Input component  should match the snapshot 6`] = `
   pointer-events: none;
 }
 
+.c1 {
+  position: relative;
+}
+
 <div
   className="c0"
 >
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="downshift-5-label"
+    aria-labelledby="downshift-1-label"
     aria-owns={null}
+    className="c1"
     role="combobox"
   >
-    <label
-      className="c1"
-      htmlFor="downshift-5-input"
-      id="downshift-5-label"
-      onClick={[Function]}
-    >
-      Dropdown label
-    </label>
+    
     <input
       aria-activedescendant={null}
       aria-autocomplete="list"
       aria-controls={null}
-      aria-labelledby="downshift-5-label"
+      aria-labelledby="downshift-1-label"
       autoComplete="off"
-      id="downshift-5-input"
+      id="downshift-1-input"
       onBlur={[Function]}
       onChange={[Function]}
       onKeyDown={[Function]}
@@ -705,7 +218,7 @@ exports[`Input component  should match the snapshot 6`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Dropdown placeholder
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c3"
@@ -723,7 +236,7 @@ exports[`Input component  should match the snapshot 6`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 7`] = `
+exports[`Input component  should match the snapshot 3`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -731,7 +244,385 @@ exports[`Input component  should match the snapshot 7`] = `
   width: 100%;
 }
 
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: initial;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
 .c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-2-label"
+    aria-owns={null}
+    className="c1"
+    role="combobox"
+  >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-2-label"
+      autoComplete="off"
+      id="downshift-2-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c2"
+      data-toggle={true}
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 4`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: initial;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  border-color: #ff2d4d;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+.c4 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 8px;
+  padding-left: 13.5px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-3-label"
+    aria-owns={null}
+    className="c1"
+    role="combobox"
+  >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-3-label"
+      autoComplete="off"
+      id="downshift-3-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c2"
+      data-toggle={true}
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      Select an option
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  <div
+    className="c4"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`Input component  should match the snapshot 5`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: initial;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-4-label"
+    aria-owns={null}
+    className="c1"
+    role="combobox"
+  >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-4-label"
+      autoComplete="off"
+      id="downshift-4-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c2"
+      data-toggle={true}
+      disabled={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      Select an option
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 6`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
   cursor: pointer;
   display: block;
   font-size: 16px;
@@ -783,10 +674,10 @@ exports[`Input component  should match the snapshot 7`] = `
 
 .c3[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 .c4 {
@@ -795,8 +686,8 @@ exports[`Input component  should match the snapshot 7`] = `
   pointer-events: none;
 }
 
-.c2 {
-  color: #ff2d4d;
+.c1 {
+  position: relative;
 }
 
 <div
@@ -805,30 +696,26 @@ exports[`Input component  should match the snapshot 7`] = `
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="downshift-6-label"
+    aria-labelledby="downshift-5-label"
     aria-owns={null}
+    className="c1"
     role="combobox"
   >
     <label
-      className="c1"
-      htmlFor="downshift-6-input"
-      id="downshift-6-label"
+      className="c2"
+      htmlFor="downshift-5-input"
+      id="downshift-5-label"
       onClick={[Function]}
     >
       Dropdown label
-      <em
-        className="c2"
-      >
-        *
-      </em>
     </label>
     <input
       aria-activedescendant={null}
       aria-autocomplete="list"
       aria-controls={null}
-      aria-labelledby="downshift-6-label"
+      aria-labelledby="downshift-5-label"
       autoComplete="off"
-      id="downshift-6-input"
+      id="downshift-5-input"
       onBlur={[Function]}
       onChange={[Function]}
       onKeyDown={[Function]}
@@ -848,7 +735,7 @@ exports[`Input component  should match the snapshot 7`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
         className="material-icons MuiIcon-root-1 c4"
@@ -866,7 +753,7 @@ exports[`Input component  should match the snapshot 7`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 8`] = `
+exports[`Input component  should match the snapshot 7`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -874,7 +761,21 @@ exports[`Input component  should match the snapshot 8`] = `
   width: 100%;
 }
 
-.c1 {
+.c2 {
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 8px;
+  padding-left: 13.5px;
+}
+
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -904,24 +805,162 @@ exports[`Input component  should match the snapshot 8`] = `
   width: 100%;
 }
 
-.c1:hover,
-.c1:focus {
+.c4:hover,
+.c4:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1[disabled] {
+.c4[disabled] {
   background-color: #f2f2f2;
-  color: #999999;
-  cursor: not-allowed;
   border-color: #999999;
   box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
 }
 
-.c2 {
+.c5 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c3 {
+  color: #ff2d4d;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-6-label"
+    aria-owns={null}
+    className="c1"
+    role="combobox"
+  >
+    <label
+      className="c2"
+      htmlFor="downshift-6-input"
+      id="downshift-6-label"
+      onClick={[Function]}
+    >
+      Dropdown label
+      <em
+        className="c3"
+      >
+        *
+      </em>
+    </label>
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-6-label"
+      autoComplete="off"
+      id="downshift-6-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c4"
+      data-toggle={true}
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      Select an option
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c5"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 8`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: initial;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
@@ -932,6 +971,7 @@ exports[`Input component  should match the snapshot 8`] = `
     aria-haspopup="listbox"
     aria-labelledby="downshift-7-label"
     aria-owns={null}
+    className="c1"
     role="combobox"
   >
     
@@ -951,7 +991,7 @@ exports[`Input component  should match the snapshot 8`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c1"
+      className="c2"
       data-toggle={true}
       disabled={false}
       onBlur={[Function]}
@@ -961,10 +1001,129 @@ exports[`Input component  should match the snapshot 8`] = `
       role="button"
       type="button"
     >
-      Selecione
+      Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c2"
+        className="material-icons MuiIcon-root-1 c3"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </button>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 9`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #999999;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: initial;
+  height: 44px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  color: #4c4c4c;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-8-label"
+    aria-owns={null}
+    className="c1"
+    role="combobox"
+  >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-8-label"
+      autoComplete="off"
+      id="downshift-8-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value="bazKey"
+    />
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c2"
+      data-toggle={true}
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      baz
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
