@@ -1,31 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import Colors from '../Colors';
-import { FieldGroup, Label, ErrorMessage, inputStyle } from '../shared';
+import { FieldGroup, Label, ErrorMessage, INPUT_STYLE } from '../shared';
 
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
-const DropLabel = styled(Label)`
-  margin-bottom: 8px;
-  padding-left: 13.5px;
-`;
-
-DropLabel.displayName = 'DropLabel';
+const { HOVER_STYLE, ERROR_HOVER_STYLE, default: DEFAULT_STYLE } = INPUT_STYLE;
 
 const DropButton = styled.button`
-  ${inputStyle}
-
   align-items: center;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
+
+  ${DEFAULT_STYLE};
 
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
   ${({ selectedItem }) => !selectedItem && `color: ${Colors.BLACK[400]}`};
 `;
+
+const DropLabel = styled(Label)`
+  margin-bottom: 8px;
+  padding-left: 13.5px;
+
+  ${({ error, disabled }) =>
+    !disabled &&
+    css`
+      :hover ~ ${DropButton}, :focus ~ ${DropButton} {
+        ${error ? ERROR_HOVER_STYLE : HOVER_STYLE};
+      }
+    `};
+`;
+
+DropLabel.displayName = 'DropLabel';
 
 const ArrowDown = styled(Icon).attrs({
   name: 'keyboard_arrow_down',
@@ -109,7 +120,6 @@ const Dropdown = ({
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
-  const _buttonRef = React.createRef();
 
   const _highlightedReducer = ({ selectedItem: selected }, changes) => {
     if (changes.isOpen !== undefined && changes.isOpen) {
@@ -141,13 +151,16 @@ const Dropdown = ({
           getInputProps,
           getToggleButtonProps,
           getItemProps,
+          openMenu,
           isOpen,
         }) => (
           <DropContainer {...getRootProps()}>
             {label && (
               <DropLabel
                 {...getLabelProps()}
-                onClick={() => _buttonRef.current.focus()}
+                onClick={() => openMenu()}
+                error={error}
+                disabled={disabled}
               >
                 {label}
                 {required && <RequiredMark>*</RequiredMark>}
@@ -156,7 +169,6 @@ const Dropdown = ({
             <input type="hidden" {...getInputProps()} />
             <DropButton
               {...getToggleButtonProps()}
-              ref={_buttonRef}
               isOpen={isOpen}
               disabled={disabled}
               error={error}

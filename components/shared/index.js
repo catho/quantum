@@ -4,7 +4,7 @@ import FieldGroup from './FieldGroup';
 import icons from './icons';
 import masks from './masks';
 import BREAKPOINTS from './breakpoints';
-import inputStyle from './inputStyle';
+import * as INPUT_STYLE from './inputStyle';
 
 export {
   ErrorMessage,
@@ -13,5 +13,5 @@ export {
   icons,
   masks,
   BREAKPOINTS,
-  inputStyle,
+  INPUT_STYLE,
 };

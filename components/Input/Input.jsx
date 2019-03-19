@@ -3,28 +3,27 @@ import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-import { ErrorMessage, Label, FieldGroup, inputStyle } from '../shared';
+import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
 import ColorsDeprecated from '../Colors/deprecated';
 import Colors from '../Colors';
 import Icon from '../Icon';
-import theme from '../shared/theme';
 import InputTypes from './InputTypes';
 
+const { default: DEFAULT_INPUT_STYLE } = INPUT_STYLE;
+
 const InputLabel = styled(Label)`
-  cursor: text;
   font-size: 16px;
   margin-bottom: 0;
   padding: 8px 12px 0px 12px;
   font-weight: bold;
-  ${theme.mixins.transition()};
 `;
 
 const InputTag = styled.input`
-  ${inputStyle}
-
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
+
+  ${DEFAULT_INPUT_STYLE};
 
   ${({ searchable }) =>
     searchable &&
@@ -54,7 +53,7 @@ const InputTag = styled.input`
   `}
 
   :-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
+    box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
     -webkit-text-fill-color: ${Colors.BLACK['700']};
   }
 `;
