@@ -38,15 +38,9 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 .c0 {
-  cursor: pointer;
   display: block;
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -270,15 +264,9 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 .c0 {
-  cursor: pointer;
   display: block;
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -490,15 +478,9 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 }
 
 .c0 {
-  cursor: pointer;
   display: block;
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -611,15 +593,9 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 }
 
 .c0 {
-  cursor: pointer;
   display: block;
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;

@@ -43,15 +43,9 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 }
 
 .c1 {
-  cursor: pointer;
   display: block;
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -193,15 +187,9 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 }
 
 .c1 {
-  cursor: pointer;
   display: block;
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;

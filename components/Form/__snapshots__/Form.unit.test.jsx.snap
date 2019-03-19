@@ -2,30 +2,23 @@
 
 exports[`Form component  should match the snapshot 1`] = `
 .c2 {
-  cursor: pointer;
   display: block;
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: text;
   font-size: 16px;
   margin-bottom: 0;
   padding: 8px 12px 0px 12px;
   font-weight: bold;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .c3 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
   color: #4c4c4c;
-  cursor: pointer;
   font-size: initial;
   height: 44px;
   -webkit-letter-spacing: 0.2px;
@@ -37,9 +30,6 @@ exports[`Form component  should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
 }
 
 .c3:hover,
@@ -65,7 +55,7 @@ exports[`Form component  should match the snapshot 1`] = `
 }
 
 .c3:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #e5edfc inset;
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
   -webkit-text-fill-color: #4c4c4c;
 }
 
