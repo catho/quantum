@@ -6,41 +6,22 @@ import Input from './Input';
 
 describe('Input component ', () => {
   it('should match the snapshot', () => {
-    expect(renderer.create(<Input value="foo" />).toJSON()).toMatchSnapshot();
-    expect(
-      renderer
-        .create(<Input label="Text label" id="input-with-label" value="foo" />)
-        .toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Input value="foo" error="Error message" />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Input value="foo" required />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Input value="foo" isSearchable />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer
-        .create(<Input value="foo" helperText="this is a helper text" />)
-        .toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer
-        .create(
-          <Input value="foo" descriptionLabel="this is a description label" />,
-        )
-        .toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Input value="foo" disabled />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer
-        .create(<Input placeholder="this input has a placeholder" />)
-        .toJSON(),
-    ).toMatchSnapshot();
+    const INPUTS = [
+      <Input />,
+      <Input value="foo" />,
+      <Input label="Text label" />,
+      <Input error="Error message" />,
+      <Input required />,
+      <Input searchable />,
+      <Input disabled />,
+      <Input helperText="this is a helper text" />,
+      <Input descriptionLabel="this is a description label" />,
+      <Input placeholder="this input has a placeholder" />,
+    ];
+
+    INPUTS.forEach(input =>
+      expect(renderer.create(input).toJSON()).toMatchSnapshot(),
+    );
   });
 
   it('should has a required signal when the required prop is true', () => {
@@ -56,8 +37,8 @@ describe('Input component ', () => {
     expect(requiredElement).toBeTruthy();
   });
 
-  it('should has a searchabel icon when IsSearchable prop is true', () => {
-    const component = mount(
+  it('should has a searchable icon when "searchable" prop is true', () => {
+    const component = shallow(
       <Input value="foo" label="label of input" searchable />,
     );
     const InputSearchIconElement = component
@@ -69,7 +50,7 @@ describe('Input component ', () => {
   });
 
   it('should has a error icon when the input error has a text', () => {
-    const component = mount(
+    const component = shallow(
       <Input value="foo" label="label of input" error="error text" />,
     );
     const InputErrorIconElement = component
@@ -82,7 +63,7 @@ describe('Input component ', () => {
 
   it('should has a helper text when his input was set ', () => {
     const helperTextContent = 'this is a helper text';
-    const component = mount(
+    const component = shallow(
       <Input
         value="foo"
         label="label of input"
@@ -94,9 +75,9 @@ describe('Input component ', () => {
     expect(helperTextElementContent).toEqual(helperTextContent);
   });
 
-  it('should has a description label when his input was set ', () => {
+  it('should has a description label when his input was set', () => {
     const descriptionLabelContent = 'this is a description label';
-    const component = mount(
+    const component = shallow(
       <Input
         value="foo"
         label="label of input"
@@ -133,13 +114,10 @@ describe('Input component ', () => {
   });
 
   describe('with a label', () => {
-    const inputWithId = (
-      <Input label="Text label" id="input-with-label" value="foo" />
-    );
-    const input = <Input label="Text label" value="foo" />;
-
     it('should match label "htmlFor" label param with "id" input param', () => {
-      const wrapper = mount(inputWithId);
+      const input = <Input label="Text label" id="input-id" value="foo" />;
+
+      const wrapper = mount(input);
       const inputTag = wrapper.find('InputTag');
       const label = wrapper.find('InputLabel');
 
@@ -147,6 +125,7 @@ describe('Input component ', () => {
     });
 
     it('should match label "htmlFor" label param with generate "id"', () => {
+      const input = <Input label="Text label" value="foo" />;
       const wrapper = shallow(input);
       const label = wrapper.find('InputLabel').prop('htmlFor');
       const maskedInput = wrapper.find(MaskedInput).prop('id');
@@ -168,7 +147,7 @@ describe('Input component ', () => {
         .html()
         .includes('visibility_off');
 
-    it('should has "password", as default input type', () => {
+    it('should has "password" as default input type', () => {
       expect(visibilityIcon()).toBeTruthy();
       expect(wrapper.state('type')).toEqual('password');
     });
@@ -188,8 +167,8 @@ describe('Input component ', () => {
 
   describe('Generate Id', () => {
     it('should generate a new id for it instances', () => {
-      const componentA = mount(<Input value="foo" label="label of input" />);
-      const componentB = mount(<Input value="foo" label="label of input" />);
+      const componentA = shallow(<Input value="foo" label="label of input" />);
+      const componentB = shallow(<Input value="foo" label="label of input" />);
       const idA = componentA.find(MaskedInput).prop('id');
       const idB = componentB.find(MaskedInput).prop('id');
 
