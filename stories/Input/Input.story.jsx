@@ -11,7 +11,7 @@ const tabExample = (
   <Tab title="Example">
     <Container>
       {examples.map(example => (
-        <Row>
+        <Row key={example.code}>
           <Col xsmall={2} small={4} medium={6}>
             <SimpleHighlight>{example.code}</SimpleHighlight>
           </Col>
