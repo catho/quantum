@@ -38,6 +38,7 @@ export default {
   },
   WHITE: '#FFFFFF',
   SHADOW: {
+    20: 'rgba(128, 128, 128, 0.5)',
     40: 'rgba(204, 204, 204, 0.4)',
   },
 };
