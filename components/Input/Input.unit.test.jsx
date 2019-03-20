@@ -30,13 +30,8 @@ describe('Input component ', () => {
     const component = shallow(
       <Input value="foo" label="label of input" required />,
     );
-    const label = component.childAt(0);
-    const requiredElement = label
-      .childAt(1)
-      .html()
-      .includes('*');
 
-    expect(requiredElement).toBeTruthy();
+    expect(component.find('InputLabel').text()).toMatch('*');
   });
 
   it('should has a search icon when type prop is set to "search" value', () => {
