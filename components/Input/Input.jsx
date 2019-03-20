@@ -12,7 +12,7 @@ const { default: DEFAULT_INPUT_STYLE } = INPUT_STYLE;
 
 const InputLabel = styled(Label)`
   margin-bottom: 0;
-  padding: 8px 12px 0px 12px;
+  padding: 8px 12px 0px;
   font-weight: bold;
 `;
 
@@ -26,7 +26,7 @@ const InputTag = styled.input`
   ${({ searchable }) =>
     searchable &&
     `
-    padding: 10px 42px 10px 42px;
+    padding: 10px 42px;
   `}
 
   ${props =>

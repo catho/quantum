@@ -173,7 +173,7 @@ exports[`Input component  should match snapshots 3`] = `
   display: block;
   margin-bottom: 5px;
   margin-bottom: 0;
-  padding: 8px 12px 0px 12px;
+  padding: 8px 12px 0px;
   font-weight: bold;
 }
 
@@ -453,7 +453,7 @@ exports[`Input component  should match snapshots 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  padding: 10px 42px 10px 42px;
+  padding: 10px 42px;
 }
 
 .c2:hover,
@@ -783,7 +783,7 @@ exports[`Input component  should match snapshots 10`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  padding: 10px 42px 10px 42px;
+  padding: 10px 42px;
 }
 
 .c3:hover,
