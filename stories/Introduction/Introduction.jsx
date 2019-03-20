@@ -5,7 +5,6 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
-const registry = 'registry="http://armazem.devel:4873/"';
 const yarnAdd = 'yarn add @cathodevel/quantum';
 const importHeader = `import { Header } from '@cathodevel/quantum';
 export default () => <Header />;`;
@@ -34,13 +33,6 @@ const Introduction = () => (
     </p>
 
     <Title as="h3">Installing Quantum</Title>
-    <p>Create a .npmrc file, with the following content:</p>
-    <SimpleHighlight
-      backgroundColor={codeBackgroundColor}
-      fontColor={codefontColor}
-    >
-      {registry}
-    </SimpleHighlight>
     <p>Add as a dependency:</p>
     <SimpleHighlight
       backgroundColor={codeBackgroundColor}

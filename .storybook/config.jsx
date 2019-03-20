@@ -2,7 +2,7 @@ import React from 'react';
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-import { GlobalStyle as UIGlobalStyle } from '@catho/quantum-storybook-ui';
+import { UiStyle } from '@catho/quantum-storybook-ui';
 import { CSSVariables } from '../components/GlobalStyle';
 import stories from './stories';
 
@@ -22,7 +22,7 @@ const CSSVariablesDecorator = storyFn => (
   </>
 );
 
-addDecorator(UIGlobalStyle);
+addDecorator(UiStyle);
 addDecorator(CSSVariablesDecorator);
 
 const reqStories = require.context('../stories', true, /.story.jsx?$/);

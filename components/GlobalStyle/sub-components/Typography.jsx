@@ -11,7 +11,6 @@ const Typography = createGlobalStyle`
 
   body {
     font-size: 16px;
-    letter-spacing: 0.2px;
     color: ${Colors.BLACK[700]}
   }
 
