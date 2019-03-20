@@ -5,9 +5,11 @@ const DEFAULT_STYLE = css`
   background-color: ${Colors.WHITE};
   border-radius: 4px;
   border: 1.5px solid ${Colors.BLACK['400']};
+  box-sizing: border-box;
   color: ${Colors.BLACK['700']};
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   letter-spacing: 0.2px;
   outline: none;
   padding: 10px 12px;

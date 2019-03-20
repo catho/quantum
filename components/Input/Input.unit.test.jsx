@@ -5,7 +5,7 @@ import MaskedInput from 'react-text-mask';
 import Input from './Input';
 import masks from '../shared/masks';
 
-describe('Input component ', () => {
+describe('Input component', () => {
   it('should match snapshots', () => {
     const INPUTS = [
       <Input />,
