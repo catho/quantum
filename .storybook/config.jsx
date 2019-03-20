@@ -1,17 +1,10 @@
-import 'babel-polyfill';
 import React from 'react';
+import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-import { Frame } from '@catho-private/quantum-storybook-ui';
-import GlobalStyle from '../components/GlobalStyle';
+import { GlobalStyle as UIGlobalStyle } from '@catho/quantum-storybook-ui';
+import { CSSVariables } from '../components/GlobalStyle';
 import stories from './stories';
-
-const QuantumTypography = storyFn => (
-  <>
-    <GlobalStyle />
-    {storyFn()}
-  </>
-);
 
 addDecorator(
   withOptions({
@@ -22,8 +15,15 @@ addDecorator(
   }),
 );
 
-addDecorator(QuantumTypography);
-addDecorator(Frame);
+const CSSVariablesDecorator = storyFn => (
+  <>
+    <CSSVariables />
+    {storyFn()}
+  </>
+);
+
+addDecorator(UIGlobalStyle);
+addDecorator(CSSVariablesDecorator);
 
 const reqStories = require.context('../stories', true, /.story.jsx?$/);
 

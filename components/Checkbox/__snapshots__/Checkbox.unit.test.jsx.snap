@@ -10,14 +10,15 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 }
 
 .c4 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   color: #4c4c4c;
   font-size: 16px;
   margin: 0 0 0 10px;
@@ -143,14 +144,15 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c4 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   color: #4c4c4c;
   font-size: 16px;
   margin: 0 0 0 10px;
@@ -348,14 +350,15 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c4 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   color: #4c4c4c;
   font-size: 16px;
   margin: 0 0 0 10px;
@@ -546,14 +549,15 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c4 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   color: #4c4c4c;
   font-size: 16px;
   margin: 0 0 0 10px;
@@ -740,14 +744,15 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 }
 
 .c4 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   color: #4c4c4c;
   font-size: 16px;
   margin: 0 0 0 10px;
@@ -933,14 +938,15 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 }
 
 .c4 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   color: #4c4c4c;
   font-size: 16px;
   margin: 0 0 0 10px;
@@ -1126,14 +1132,15 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 }
 
 .c4 {
+  cursor: pointer;
   display: block;
-  margin-bottom: 5px;
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
   color: #4c4c4c;
   font-size: 16px;
   margin: 0 0 0 10px;

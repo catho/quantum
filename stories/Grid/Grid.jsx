@@ -1,19 +1,20 @@
 import React from 'react';
-import Highlight from 'react-highlight';
 import styled from 'styled-components';
 import {
-  HowToImport,
   Title,
-  Subtitle,
   Table,
-} from '@catho-private/quantum-storybook-ui';
+  StoryContainer,
+  SimpleHighlight,
+} from '@catho/quantum-storybook-ui';
 
-import Colors from '../../components/Colors/deprecated';
 import { Row, Col, Hide } from '../../components/Grid';
 
+const importGrid = `import { Container, Row, Col, Hide } from '@cathodevel/quantum';';`;
+const codeBackgroundColor = '#e8f2fc';
+const codefontColor = '#1a82e2';
+
 const StyledCol = styled(Col)`
-  background-color: ${Colors.SECONDARY['100']};
-  border: 1px solid ${Colors.SECONDARY['200']};
+  background-color: #f6f8fa;
   padding: 8px;
   font-size: 14px;
 `;
@@ -314,39 +315,41 @@ const HorizontalExample = () => (
       <StyledCol medium={6}>{'<Col medium={6}>'}</StyledCol>
     </Row>
 
-    <Highlight language="javascript" className="highlight">
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
       {`<Row>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-    <Col medium={1}>...</Col>
-  </Row>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+</Row>
 
-  <Row>
-    <Col medium={8}>...</Col>
-    <Col medium={4}>...</Col>
-  </Row>
+<Row>
+  <Col medium={8}>...</Col>
+  <Col medium={4}>...</Col>
+</Row>
 
-  <Row>
-    <Col medium={4}>...</Col>
-    <Col medium={4}>...</Col>
-    <Col medium={4}>...</Col>
-  </Row>
+<Row>
+  <Col medium={4}>...</Col>
+  <Col medium={4}>...</Col>
+  <Col medium={4}>...</Col>
+</Row>
 
-  <Row>
-    <Col medium={6}>...</Col>
-    <Col medium={6}>...</Col>
-  </Row>
-`}
-    </Highlight>
+<Row>
+  <Col medium={6}>...</Col>
+  <Col medium={6}>...</Col>
+</Row>`}
+    </SimpleHighlight>
   </React.Fragment>
 );
 
@@ -378,24 +381,26 @@ const MobileDesktopExample = () => (
       <StyledCol xsmall={2}>{'<Col xsmall={2}>'}</StyledCol>
     </Row>
 
-    <Highlight language="javascript" className="highlight">
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
       {`<Row>
-    <Col xsmall={2} small={8}>...</Col>
-    <Col xsmall={2} small={4}>...</Col>
-  </Row>
+  <Col xsmall={2} small={8}>...</Col>
+  <Col xsmall={2} small={4}>...</Col>
+</Row>
 
-  <Row>
-    <Col xsmall={4} small={4}>...</Col>
-    <Col xsmall={4} small={4}>...</Col>
-    <Col xsmall={4} small={4}>...</Col>
-  </Row>
+<Row>
+  <Col xsmall={4} small={4}>...</Col>
+  <Col xsmall={4} small={4}>...</Col>
+  <Col xsmall={4} small={4}>...</Col>
+</Row>
 
-  <Row>
-    <Col xsmall={2}>...</Col>
-    <Col xsmall={2}>...</Col>
-  </Row>
-  `}
-    </Highlight>
+<Row>
+  <Col xsmall={2}>...</Col>
+  <Col xsmall={2}>...</Col>
+</Row>`}
+    </SimpleHighlight>
   </React.Fragment>
 );
 
@@ -412,15 +417,17 @@ const HideExample = () => (
       </Row>
     </Hide>
 
-    <Highlight language="javascript" className="highlight">
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
       {`<Hide xsmall>
-    <Row>
-      <Col>...</Col>
-      <Col>...</Col>
-    </Row>
-  </Hide>
-  `}
-    </Highlight>
+  <Row>
+    <Col>...</Col>
+    <Col>...</Col>
+  </Row>
+</Hide>`}
+    </SimpleHighlight>
   </React.Fragment>
 );
 
@@ -430,13 +437,16 @@ const NoGuttersExample = () => (
       <StyledCol medium={6}>medium={6}</StyledCol>
       <StyledCol medium={6}>medium={6}</StyledCol>
     </Row>
-
-    <Highlight language="javascript" className="highlight">
+    <br />
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
       {`<Row no-gutters>
   <StyledCol medium={6}>medium={6}</StyledCol>
   <StyledCol medium={6}>medium={6}</StyledCol>
 </Row>`}
-    </Highlight>
+    </SimpleHighlight>
   </>
 );
 
@@ -452,74 +462,88 @@ const OffsetExample = () => (
       <StyledCol small={2}>small={2}</StyledCol>
     </Row>
 
-    <Highlight language="javascript" className="highlight">
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
       {`<Row>
   <Col small={2} small-offset={2}>small-offset={2}</Col>
   <Col small={2}>small={2}</Col>
   <Col small={2}>small={2}</Col>
   <Col small={2}>small={2}</Col>
   <Col small={2}>small={2}</Col>
-</Row>
-`}
-    </Highlight>
+</Row>`}
+    </SimpleHighlight>
   </>
 );
 
 const Grid = () => (
-  <React.Fragment>
-    <p>
-      This Grid is based on{' '}
-      <a href="https://material.io/design/layout/responsive-layout-grid.html">
-        Material Design Grid definition
-      </a>
-      It is adaptable to screen size and orientation and has columns definitions
-      to each resolution.
-    </p>
-    <HowToImport importModules="Container, Row, Col, Hide" />
+  <StoryContainer>
+    <Title as="h2">Importing grid</Title>
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {importGrid}
+    </SimpleHighlight>
 
-    <Title>How it works</Title>
-    <Subtitle>Containers</Subtitle>
+    <Title as="h2">How it works</Title>
+    <Title as="h3" style={{ paddingTop: 0 }}>
+      Containers
+    </Title>
+
     <p>
       You may choose one of two containers or both to use in your projects. Note
       that, due to padding and more, neither container is nestable.
-    </p>
-    <p>
+      <br />
       Use <code>{'<Container></Container>'}</code> for a responsive fixed width
       container.
     </p>
-    <Highlight language="javascript" className="highlight">
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
       {`<Container>
     ...
-  </Container>
-`}
-    </Highlight>
+ </Container>`}
+    </SimpleHighlight>
+
     <p>
       Use <code>{'<Container fluid></Container>'}</code> for a full width
       container, spanning the entire width of your viewport.
     </p>
-    <Highlight language="javascript" className="highlight">
+
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
       {`<Container fluid>
-...
-</Container>
-`}
-    </Highlight>
-    <Subtitle>Row</Subtitle>
+    ...
+ </Container>`}
+    </SimpleHighlight>
+
+    <Title as="h3">Row</Title>
     <p>
       Rows are wrappers for columns. Each column has horizontal space{' '}
       <code>column gap</code>
       (called a gutter) for controlling the space between them.
     </p>
-    <Subtitle>Breakpoints</Subtitle>
+
+    <Title as="h3">Breakpoints</Title>
+
     <p>
       Material Design provides responsive layouts based on the following column
       structures. Layouts using 4-column, 8-column, and 12-column grids are
       available for use across different screens, devices, and orientations.
     </p>
+
     <p>
       Each breakpoint range determines the number of columns, and recommended
       margins and gutters, for each display size.
     </p>
+
     <SizesTable />
+
     <p>
       The <code>{'<Col>'}</code> component accepts this props for breakpoints:
     </p>
@@ -530,14 +554,18 @@ const Grid = () => (
       <li>large</li>
       <li>xlarge</li>
     </ul>
-    <Subtitle>Example: Stacked-to-horizontal</Subtitle>
+
+    <Title as="h3">Example: Stacked-to-horizontal</Title>
+
     <p>
       You can create a basic grid system that starts out stacked on mobile
       devices and tablet devices before becoming horizontal on desktop devices.
       Place grid columns in any <code>{'<Row>'}</code>
     </p>
+
     <HorizontalExample />
-    <Subtitle>Example: Mobile and desktop</Subtitle>
+
+    <Title as="h3">Example: Mobile and desktop</Title>
     <p>
       Don’t want your columns to simply stack in smaller devices? Use the xsmall
       and small device grid props by adding <code>{'xsmall={*}'}</code>
@@ -545,14 +573,15 @@ const Grid = () => (
       better idea of how it all works.
     </p>
     <MobileDesktopExample />
-    <Subtitle>No Gutters</Subtitle>
+    <Title as="h3">No Gutters</Title>
+
     <p>
       The padding in container and the gutter between rows and columns can be
       removed with no-gutters prop on <code>{'<Container no-gutters>'}</code> or{' '}
       <code>{'<Row no-gutters>'}</code>.
     </p>
     <NoGuttersExample />
-    <Subtitle>Hide Component</Subtitle>
+    <Title as="h3">Hide Component</Title>
     <p>
       If you need to hide some elements in your UI, you can use the
       <code>{'<Hide>'}</code> component.
@@ -568,9 +597,10 @@ const Grid = () => (
       <li>large</li>
       <li>xlarge</li>
     </ul>
-    <Subtitle>Example: Hiding elements in xsmall devices</Subtitle>
+
+    <Title as="h3">Example: Hiding elements in xsmall devices</Title>
     <HideExample />
-    <Subtitle>Offsetting columns</Subtitle>
+    <Title as="h3">Offsetting columns</Title>
     <p>
       Move columns to the right using{' '}
       <code>{'<Col [breakpoint]-offset={2}>'}</code> props. These props increase
@@ -587,7 +617,7 @@ const Grid = () => (
       <li>large-offset</li>
       <li>xlarge-offset</li>
     </ul>
-  </React.Fragment>
+  </StoryContainer>
 );
 
 export default Grid;

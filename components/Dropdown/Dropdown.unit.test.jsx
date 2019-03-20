@@ -2,81 +2,76 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import Dropdown from './Dropdown';
-import { Label } from '../shared';
 
 describe('Input component ', () => {
   it('should match the snapshot', () => {
-    expect(renderer.create(<Dropdown />).toJSON()).toMatchSnapshot();
-  });
-
-  it('with an error message should match the snapshot', () => {
-    expect(
-      renderer.create(<Dropdown error="Error message" />).toJSON(),
-    ).toMatchSnapshot();
-  });
-
-  describe('with items', () => {
-    const dropdown = (
+    const withItems = (
       <Dropdown
         items={[
-          { value: 'fooKey', item: 'foo' },
-          { value: 'barKey', item: 'bar' },
-          { value: 'bazKey', item: 'baz' },
+          { value: 'fooKey', label: 'foo' },
+          { value: 'barKey', label: 'bar' },
+          { value: 'bazKey', label: 'baz' },
         ]}
       />
     );
 
-    it('should match the snapshot', () => {
-      expect(renderer.create(dropdown).toJSON()).toMatchSnapshot();
-    });
+    const withSelectedItem = (
+      <Dropdown
+        items={[
+          { value: 'fooKey', label: 'foo' },
+          { value: 'barKey', label: 'bar' },
+          { value: 'bazKey', label: 'baz' },
+        ]}
+        selectedItem={{ value: 'bazKey', label: 'baz' }}
+      />
+    );
+
+    expect(renderer.create(<Dropdown />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown placeholder="Dropdown placeholder" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown placeholder="" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown error="Error message" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(renderer.create(<Dropdown disabled />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown label="Dropdown label" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown required label="Dropdown label" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
+    expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
   });
+});
 
-  describe('with a label', () => {
-    const dropdown = <Dropdown label="Text label" id="dropdown" />;
+describe('with an "onChange" callback set', () => {
+  const mockFn = jest.fn();
 
-    it('should match the snapshot', () => {
-      expect(renderer.create(dropdown).toJSON()).toMatchSnapshot();
-    });
+  const items = [
+    {
+      value: 'fooKey',
+      label: 'foo',
+    },
+    {
+      value: 'barKey',
+      label: 'bar',
+    },
+  ];
 
-    it('should match label "htmlFor" label param with "id" dropdown param', () => {
-      const wrapper = shallow(dropdown);
-      const select = wrapper.find('#dropdown');
-      const label = wrapper.find(Label);
+  const wrapper = shallow(
+    <Dropdown onChange={mockFn} id="dropdown" items={items} />,
+  );
 
-      expect(label.prop('htmlFor')).toEqual(select.prop('id'));
-    });
-  });
+  it('should call the callback and set a new value', () => {
+    const [selectedItem] = items;
 
-  describe('with an "onChange" callback set', () => {
-    const mockFn = jest.fn();
+    wrapper.find('#dropdown').simulate('change', selectedItem);
 
-    const items = [
-      {
-        value: 'fooKey',
-        item: 'foo',
-      },
-      {
-        value: 'barKey',
-        item: 'bar',
-      },
-    ];
-
-    const dropdown = <Dropdown onChange={mockFn} id="dropdown" items={items} />;
-
-    const wrapper = shallow(dropdown);
-
-    it('should init value with an empty label', () => {
-      expect(wrapper.state('selectedItem')).toEqual({});
-    });
-
-    it('should call the callback and set a new value', () => {
-      const [selectedItem] = items;
-
-      wrapper.find('#dropdown').simulate('change', selectedItem);
-
-      expect(wrapper.state('selectedItem')).toEqual(selectedItem);
-      expect(mockFn).toHaveBeenCalledTimes(1);
-      expect(mockFn).toBeCalledWith(null, { selectedItem });
-    });
+    expect(mockFn).toHaveBeenCalledTimes(1);
+    expect(mockFn).toBeCalledWith(selectedItem);
   });
 });

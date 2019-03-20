@@ -7,9 +7,7 @@ import Colors from '../../components/Colors/deprecated';
 import Icon from '../../components/Icon';
 
 const IconName = styled.div`
-  display: block;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 `;
 
@@ -19,6 +17,10 @@ const IconWrapper = styled(Col)`
   position: relative;
   text-align: center;
   cursor: pointer;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 
   &:hover {
     background-color: ${Colors.PRIMARY['500']};
@@ -51,7 +53,7 @@ class IconToClipboard extends Component {
         key={name}
         onCopy={this.showFeedback}
       >
-        <IconWrapper tablet={1} title={name}>
+        <IconWrapper medium={1} title={name}>
           <Icon name={name} />
           <IconName>{hasJustCopied ? 'Copied!!' : name}</IconName>
         </IconWrapper>

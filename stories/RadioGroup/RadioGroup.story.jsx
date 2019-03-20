@@ -4,11 +4,13 @@ import { storiesOf } from '@storybook/react';
 import {
   Heading,
   AutoPropsApi,
-  HowToImport,
   CodeExample,
   TabbedView,
   Tab,
-} from '@catho-private/quantum-storybook-ui';
+  StoryContainer,
+  Title,
+  SimpleHighlight,
+} from '@catho/quantum-storybook-ui';
 
 import RadioGroup from '../../components/RadioGroup';
 import { Col, Row } from '../../components/Grid';
@@ -20,7 +22,10 @@ const RadioGroupExample = ({ code, component }) => (
     <Col small={5}>
       <CodeExample component={{}} code={code} showTitle={false} />
     </Col>
-    <Col small={7}>{component}</Col>
+    <Col small={7}>
+      <br />
+      {component}
+    </Col>
   </>
 );
 
@@ -29,56 +34,66 @@ RadioGroupExample.propTypes = {
   component: PropTypes.node.isRequired,
 };
 
-const stories = storiesOf('3. Forms', module);
+const importRadioGroup = `import { RadioGroup } from '@cathodevel/quantum';`;
+
+const stories = storiesOf('Forms', module);
 stories.add('Radio group', () => (
-  <Heading name="RadioGroup" title="<RadioGroup />">
+  <>
+    <Heading title="RadioGroup">
+      Radio group is a list of radio buttons that are used when a list of two or
+      more options are mutually exclusive, meaning the user must select only one
+      option.
+    </Heading>
     <TabbedView>
       <Tab title="Usage">
-        <HowToImport importModules="RadioGroup" componentName="RadioGroup" />
+        <StoryContainer>
+          <Title as="h2">Importing RadioGroup</Title>
+          <SimpleHighlight>{importRadioGroup}</SimpleHighlight>
 
-        <p>
-          We provide two components to use Radio Buttons:{' '}
-          <code>{'<RadioGroup />'}</code> and{' '}
-          <code>{'<RadioGroup.Radio />'}</code>
-        </p>
+          <p>
+            We provide two components to use Radio Buttons:{' '}
+            <code>{'<RadioGroup />'}</code> and{' '}
+            <code>{'<RadioGroup.Radio />'}</code>
+          </p>
 
-        <p>
-          With a very simple API, you can set a radio group using just a array,
-          such as <code>RadioGroup.Radio</code>:
-        </p>
-        <br />
+          <p>
+            With a very simple API, you can set a radio group using just a
+            array, such as <code>RadioGroup.Radio</code>:
+          </p>
+          <br />
 
-        <Row>
-          <RadioGroupExample {...samples.simpleRadioGroup} />
-        </Row>
-        <br />
+          <Row>
+            <RadioGroupExample {...samples.simpleRadioGroup} />
+          </Row>
+          <br />
 
-        <p>
-          Also, you can set some properties to <code>RadioGroup</code>, such as
-          the selected <code>value</code>, <code>error</code> and{' '}
-          <code>onChange</code> function
-        </p>
-        <br />
+          <p>
+            Also, you can set some properties to <code>RadioGroup</code>, such
+            as the selected <code>value</code>, <code>error</code> and{' '}
+            <code>onChange</code> function
+          </p>
+          <br />
 
-        <Row>
-          <RadioGroupExample {...samples.propsRadioGroup} />
-        </Row>
-        <br />
+          <Row>
+            <RadioGroupExample {...samples.propsRadioGroup} />
+          </Row>
+          <br />
 
-        <p>
-          For <code>RadioGroup.Radio</code>, and option shape as well, you can
-          add the <code>disable</code> property too:
-        </p>
+          <p>
+            For <code>RadioGroup.Radio</code>, and option shape as well, you can
+            add the <code>disable</code> property too:
+          </p>
 
-        <br />
-        <Row>
-          <RadioGroupExample {...samples.disabledRadio} />
-        </Row>
+          <br />
+          <Row>
+            <RadioGroupExample {...samples.disabledRadio} />
+          </Row>
+        </StoryContainer>
       </Tab>
       <Tab title="API">
         <AutoPropsApi component={RadioGroup} title="RadioGroup" />
         <AutoPropsApi component={RadioGroup.Radio} title="RadioGroup.Radio" />
       </Tab>
     </TabbedView>
-  </Heading>
+  </>
 ));

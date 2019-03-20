@@ -13,13 +13,12 @@ const SimpleValidation = () => (
     />
 
     <Button name="submit" type="submit">
-      Enviar
+      Submit
     </Button>
   </Form>
 );
 
-const SimpleValidationCode = `
-<Form>
+const SimpleValidationCode = `<Form>
   <Input
     name="min"
     placeholder="Digit at least 5 characters"
@@ -31,7 +30,7 @@ const SimpleValidationCode = `
     name="submit"
     type="submit"
   >
-    Enviar
+    Submit
   </Button>
 </Form>`;
 

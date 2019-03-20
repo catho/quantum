@@ -4,9 +4,10 @@ import {
   Tab,
   Example,
   AutoExample,
+  StoryContainer,
   Title,
-} from '@catho-private/quantum-storybook-ui';
-import { Tag } from '../../components';
+} from '@catho/quantum-storybook-ui';
+import { Tag, IconFont } from '../../components';
 
 const skinsCode = `<Tag>Default</Tag>
 <Tag skin="stroked">Stroked</Tag>
@@ -19,7 +20,7 @@ const skinsCode = `<Tag>Default</Tag>
 
 const skinsExample = (
   <>
-    <Title>Skins</Title>
+    <Title as="h2">Skins</Title>
     <Example
       component={
         <>
@@ -49,7 +50,7 @@ const closableCodes = `<Tag onClose={() => {}}>Default</Tag>
 
 const closableExample = (
   <>
-    <Title>Closables</Title>
+    <Title as="h2">Closables</Title>
     <Example
       component={
         <>
@@ -88,7 +89,7 @@ const sizesCode = `<Tag skin="small">Small</Tag>
 
 const sizesExample = (
   <>
-    <Title>Sizes</Title>
+    <Title as="h2">Sizes</Title>
     <Example
       component={
         <>
@@ -104,12 +105,22 @@ const sizesExample = (
 
 const exampleTab = (
   <Tab title="Examples">
-    {skinsExample}
-    {closableExample}
-    {sizesExample}
+    <IconFont />
+    <StoryContainer>
+      {skinsExample}
+      {closableExample}
+      {sizesExample}
+    </StoryContainer>
   </Tab>
 );
 
-storiesOf('16. Tag', module).add('Tag', () => (
-  <AutoExample component={Tag} additionalTabs={exampleTab} />
+const description = `Tags are used for items that need to be labeled,
+categorized, or organized using keywords that describe them.`;
+
+storiesOf('Tag', module).add('Tag', () => (
+  <AutoExample
+    description={description}
+    component={Tag}
+    additionalTabs={exampleTab}
+  />
 ));
