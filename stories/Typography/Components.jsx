@@ -8,7 +8,6 @@ import {
   Title as QuantumTitle,
   Subtitle,
   Blockquote,
-  Typography,
 } from '../../components/GlobalStyle';
 
 const Small = styled.small`
@@ -18,8 +17,6 @@ const Small = styled.small`
 const Components = () => (
   <StoryContainer>
     <Title as="h2">Headings</Title>
-
-    <Typography />
     <Table>
       <tbody>
         <tr>

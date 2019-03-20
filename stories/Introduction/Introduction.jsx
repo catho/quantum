@@ -34,13 +34,6 @@ const Introduction = () => (
     </p>
 
     <Title as="h3">Installing Quantum</Title>
-    <p>Create a .npmrc file, with the following content:</p>
-    <SimpleHighlight
-      backgroundColor={codeBackgroundColor}
-      fontColor={codefontColor}
-    >
-      {registry}
-    </SimpleHighlight>
     <p>Add as a dependency:</p>
     <SimpleHighlight
       backgroundColor={codeBackgroundColor}
