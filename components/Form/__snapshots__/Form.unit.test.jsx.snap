@@ -146,9 +146,7 @@ exports[`Form component  should match the snapshot 1`] = `
     <input
       className="c3"
       defaultValue=""
-      disabled={false}
       id="input-0"
-      maxLength=""
       name="required"
       onBlur={[Function]}
       onChange={[Function]}
@@ -172,9 +170,7 @@ exports[`Form component  should match the snapshot 1`] = `
     <input
       className="c3"
       defaultValue=""
-      disabled={false}
       id="input-1"
-      maxLength=""
       name="cpf"
       onBlur={[Function]}
       onChange={[Function]}
@@ -198,9 +194,7 @@ exports[`Form component  should match the snapshot 1`] = `
     <input
       className="c3"
       defaultValue=""
-      disabled={false}
       id="input-2"
-      maxLength=""
       name="cep"
       onBlur={[Function]}
       onChange={[Function]}
@@ -224,9 +218,7 @@ exports[`Form component  should match the snapshot 1`] = `
     <input
       className="c3"
       defaultValue=""
-      disabled={false}
       id="input-3"
-      maxLength=""
       name="birthday"
       onBlur={[Function]}
       onChange={[Function]}
@@ -250,9 +242,7 @@ exports[`Form component  should match the snapshot 1`] = `
     <input
       className="c3"
       defaultValue=""
-      disabled={false}
       id="input-4"
-      maxLength=""
       name="email"
       onBlur={[Function]}
       onChange={[Function]}
@@ -276,9 +266,7 @@ exports[`Form component  should match the snapshot 1`] = `
     <input
       className="c3"
       defaultValue=""
-      disabled={false}
       id="input-5"
-      maxLength=""
       minLength="8"
       name="address"
       onBlur={[Function]}
@@ -303,7 +291,6 @@ exports[`Form component  should match the snapshot 1`] = `
     <input
       className="c3"
       defaultValue=""
-      disabled={false}
       id="input-6"
       maxLength="3"
       name="country"

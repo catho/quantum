@@ -53,7 +53,7 @@ class Form extends React.Component {
         return child;
       }
 
-      const { name, error, onChange } = child.props;
+      const { name, error, onChange = () => {} } = child.props;
       return React.cloneElement(child, {
         value: values[name],
         error: errors[name] || error,

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component  should match the snapshot 1`] = `
+exports[`Input component  should match snapshots 1`] = `
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -69,9 +69,7 @@ exports[`Input component  should match the snapshot 1`] = `
   <input
     className="c1"
     defaultValue=""
-    disabled={false}
     id="input-1"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -83,7 +81,7 @@ exports[`Input component  should match the snapshot 1`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 2`] = `
+exports[`Input component  should match snapshots 2`] = `
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -159,9 +157,7 @@ exports[`Input component  should match the snapshot 2`] = `
   <input
     className="c1"
     defaultValue="foo"
-    disabled={false}
     id="input-2"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -185,7 +181,7 @@ exports[`Input component  should match the snapshot 2`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 3`] = `
+exports[`Input component  should match snapshots 3`] = `
 .c2 {
   display: block;
   line-height: 1.5;
@@ -269,9 +265,7 @@ exports[`Input component  should match the snapshot 3`] = `
   <input
     className="c3"
     defaultValue=""
-    disabled={false}
     id="input-3"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -283,7 +277,7 @@ exports[`Input component  should match the snapshot 3`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 4`] = `
+exports[`Input component  should match snapshots 4`] = `
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -376,9 +370,7 @@ exports[`Input component  should match the snapshot 4`] = `
   <input
     className="c1"
     defaultValue=""
-    disabled={false}
     id="input-4"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -405,7 +397,7 @@ exports[`Input component  should match the snapshot 4`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 5`] = `
+exports[`Input component  should match snapshots 5`] = `
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -474,9 +466,7 @@ exports[`Input component  should match the snapshot 5`] = `
   <input
     className="c1"
     defaultValue=""
-    disabled={false}
     id="input-5"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -488,7 +478,7 @@ exports[`Input component  should match the snapshot 5`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 6`] = `
+exports[`Input component  should match snapshots 6`] = `
 .c2 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -578,9 +568,7 @@ exports[`Input component  should match the snapshot 6`] = `
   <input
     className="c2"
     defaultValue=""
-    disabled={false}
     id="input-6"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -592,7 +580,7 @@ exports[`Input component  should match the snapshot 6`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 7`] = `
+exports[`Input component  should match snapshots 7`] = `
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -663,7 +651,6 @@ exports[`Input component  should match the snapshot 7`] = `
     defaultValue=""
     disabled={true}
     id="input-7"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -675,7 +662,7 @@ exports[`Input component  should match the snapshot 7`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 8`] = `
+exports[`Input component  should match snapshots 8`] = `
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -754,9 +741,7 @@ exports[`Input component  should match the snapshot 8`] = `
   <input
     className="c1"
     defaultValue=""
-    disabled={false}
     id="input-8"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -772,7 +757,7 @@ exports[`Input component  should match the snapshot 8`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 9`] = `
+exports[`Input component  should match snapshots 9`] = `
 .c2 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -853,9 +838,7 @@ exports[`Input component  should match the snapshot 9`] = `
   <input
     className="c2"
     defaultValue=""
-    disabled={false}
     id="input-9"
-    maxLength=""
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
@@ -867,7 +850,122 @@ exports[`Input component  should match the snapshot 9`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 10`] = `
+exports[`Input component  should match snapshots 10`] = `
+.c3 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  padding: 10px 42px 10px 42px;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c3:focus + .c4 {
+  color: #03a9f4;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+  -webkit-text-fill-color: #4c4c4c;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 50px;
+  top: 70px;
+  left: 12px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+
+.c0:first-child {
+  margin-top: 20px;
+}
+
+.c1 {
+  color: #4c4c4c;
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
+<div
+  className="c0"
+>
+  
+  <span
+    className="c1"
+  >
+    this is a description label
+  </span>
+  <span
+    aria-hidden="true"
+    className="material-icons MuiIcon-root-1 c2"
+    description="this is a description label"
+    style={
+      Object {
+        "color": "",
+      }
+    }
+  >
+    search
+  </span>
+  <input
+    className="c3"
+    defaultValue=""
+    id="input-10"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  
+  
+  
+</div>
+`;
+
+exports[`Input component  should match snapshots 11`] = `
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -937,9 +1035,7 @@ exports[`Input component  should match the snapshot 10`] = `
   <input
     className="c1"
     defaultValue=""
-    disabled={false}
-    id="input-10"
-    maxLength=""
+    id="input-11"
     onBlur={[Function]}
     onChange={[Function]}
     placeholder="this input has a placeholder"

@@ -141,30 +141,16 @@ class Input extends React.Component {
 
     const { type } = props;
 
-    this.state = {
-      type,
-    };
-  }
-
-  componentWillUpdate(nextProps) {
-    const { type } = this.state;
-    if (nextProps.type !== type) {
-      this.state.type = nextProps.type;
-    }
+    this.state = { type };
   }
 
   _changeType = type => {
     this.setState({ type });
   };
 
-  _showPassword = () => {
+  _toggleInputType = () => {
     const { type } = this.state;
-
-    if (type === 'text') {
-      this._changeType('password');
-    } else {
-      this._changeType('text');
-    }
+    this._changeType(type === 'text' ? 'password' : 'text');
   };
 
   _getId() {
@@ -182,8 +168,7 @@ class Input extends React.Component {
     const {
       label,
       error,
-      mask,
-      type: inputType,
+      type: typeProp,
       descriptionLabel,
       helperText,
       required,
@@ -191,14 +176,13 @@ class Input extends React.Component {
       value,
       ...rest
     } = this.props;
-    const { type } = this.state;
-    const valueIsTyped = !!value;
-    const generateId = this._getId();
+    const { type: typeState } = this.state;
+    const _id = this._getId();
 
     return (
       <InputFieldGroup>
         {label && (
-          <InputLabel htmlFor={generateId} error={error}>
+          <InputLabel htmlFor={_id} error={error}>
             {label}
             {required && <RequiredMark>*</RequiredMark>}
           </InputLabel>
@@ -211,9 +195,8 @@ class Input extends React.Component {
         )}
         <MaskedInput
           {...rest}
-          id={generateId}
-          type={type}
-          mask={mask}
+          id={_id}
+          type={typeState}
           value={value}
           render={(ref, props) => (
             <InputTag
@@ -227,14 +210,14 @@ class Input extends React.Component {
         {error && (
           <InputErrorIcon name="error" description={descriptionLabel} />
         )}
-        {inputType === 'password' && !error && (
+        {typeProp === 'password' && !error && (
           <InputIcon
-            name={type === 'password' ? 'visibility' : 'visibility_off'}
+            name={typeState === 'password' ? 'visibility' : 'visibility_off'}
             description={descriptionLabel}
-            onClick={this._showPassword}
+            onClick={this._toggleInputType}
           />
         )}
-        {valueIsTyped && !error && (
+        {!!value && !error && (
           <InputIcon name="cancel" description={descriptionLabel} />
         )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
@@ -249,40 +232,30 @@ Input.defaultProps = {
   id: '',
   label: '',
   mask: false,
-  maxLength: '',
   type: 'text',
   value: '',
   helperText: '',
   descriptionLabel: '',
   required: false,
-  disabled: false,
   searchable: false,
   placeholder: '',
-  onChange: () => {},
 };
 
 Input.propTypes = {
   value: PropTypes.string,
-  /** Display a label text that describe the field */
+  /** Displays a label text that describes the field */
   label: PropTypes.string,
-  /** Display a helper text below the input */
+  /** Displays a helper text below the input */
   helperText: PropTypes.string,
-  /** Display a description text below the label */
+  /** Displays a description text below the label */
   descriptionLabel: PropTypes.string,
-  /** set if the input is required */
   required: PropTypes.bool,
-  /** set if the input is disabled */
-  disabled: PropTypes.bool,
-  /** set if the input is searchable */
+  /** Displays a search icon, on the input left */
   searchable: PropTypes.bool,
-  /** set the input placeholder */
   placeholder: PropTypes.string,
   type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
-  /** Display an error message and changes border color to error color */
+  /** Displays an error message and changes border color to error color */
   error: PropTypes.string,
-  /** Set a text mask that filter user input */
-  maxLength: PropTypes.string,
-  /** A html identification */
   id: PropTypes.string,
   /**
    * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
@@ -294,7 +267,6 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
-  onChange: PropTypes.func,
 };
 
 Input.displayName = 'Input';
