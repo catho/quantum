@@ -8,8 +8,12 @@ import {
   AutoPropsApi,
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
-import { Row, Col, Container } from '../../components';
-import { TabbedView as QuantumTabbedView } from '../../components';
+import {
+  Row,
+  Col,
+  Container,
+  TabbedView as QuantumTabbedView,
+} from '../../components';
 
 storiesOf('TabbedView', module).add('TabbedView', () => (
   <>
@@ -35,7 +39,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
           <Row>
             <Col xsmall={2} small={4} medium={6}>
               <SimpleHighlight>{`import { TabbedView, Tab } from '@catho/quantum';
-              
+
 <TabbedView
   skin="blue" // optional
   activeTab="Empresas"> // optional
