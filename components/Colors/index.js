@@ -39,5 +39,6 @@ export default {
   WHITE: '#FFFFFF',
   SHADOW: {
     40: 'rgba(204, 204, 204, 0.4)',
+    50: 'rgba(128, 128, 128, 0.5)',
   },
 };

@@ -34,7 +34,7 @@ RadioGroupExample.propTypes = {
   component: PropTypes.node.isRequired,
 };
 
-const importRadioGroup = `import { RadioGroup } from '@cathodevel/quantum';`;
+const importRadioGroup = `import { RadioGroup } from '@catho/quantum';`;
 
 const stories = storiesOf('Forms', module);
 stories.add('Radio group', () => (
