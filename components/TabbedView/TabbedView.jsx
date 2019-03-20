@@ -109,6 +109,11 @@ TabbedView.propTypes = {
     ),
     PropTypes.instanceOf(Tab),
   ]).isRequired,
+  activeTab: PropTypes.string,
+};
+
+TabbedView.defaultProps = {
+  activeTab: undefined,
 };
 
 TabbedView.displayName = 'TabbedView';
