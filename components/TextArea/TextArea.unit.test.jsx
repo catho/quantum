@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 import TextArea from './TextArea';
 
 describe('TextArea component', () => {
@@ -7,16 +8,39 @@ describe('TextArea component', () => {
     const TEXT_AREAS = [
       <TextArea />,
       <TextArea value="foo" />,
-      // <TextArea label="Text label" />,
+      <TextArea label="Text label" />,
+      <TextArea label="Text label" required />,
+      <TextArea disabled />,
+      <TextArea placeholder="this input has a placeholder" />,
+      <TextArea helperText="this is a helper text" />,
       // <TextArea error="Error message" />,
-      // <TextArea required />,
-      // <TextArea disabled />,
-      // <TextArea helperText="this is a helper text" />,
-      // <TextArea placeholder="this input has a placeholder" />,
     ];
 
-    TEXT_AREAS.forEach(input =>
-      expect(renderer.create(input).toJSON()).toMatchSnapshot(),
+    TEXT_AREAS.forEach(textArea =>
+      expect(renderer.create(textArea).toJSON()).toMatchSnapshot(),
     );
+  });
+
+  it('should has a required signal when "required" prop is set ', () => {
+    const component = mount(<TextArea label="Text label" required />);
+    expect(component.find('TextAreaLabel').text()).toMatch('*');
+  });
+
+  it('should have a placeholder when "placeholder" prop has a text ', () => {
+    const placeholderText = 'this input has a placeholder';
+    const component = mount(<TextArea placeholder={placeholderText} />);
+    const textAreaPlaceholder = component
+      .find('StyledTextArea')
+      .prop('placeholder');
+
+    expect(textAreaPlaceholder).toMatch(placeholderText);
+  });
+
+  it('should have a helper text when "helper text" prop has a text ', () => {
+    const helperTextContent = 'this is a helper text';
+    const component = mount(<TextArea helperText={helperTextContent} />);
+    const textAreaHelperText = component.find('HelperText').text();
+
+    expect(textAreaHelperText).toMatch(helperTextContent);
   });
 });
