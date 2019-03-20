@@ -2,7 +2,7 @@ import Media from './Media';
 import Header from './Header';
 import HeaderText from './HeaderText';
 import Title from './Title';
-import SubTitle from './SubTitle';
+import Description from './Description';
 import Thumbnail from './Thumbnail';
 import Content from './Content';
 import Footer from './Footer';
@@ -12,7 +12,7 @@ export {
   Header,
   HeaderText,
   Title,
-  SubTitle,
+  Description,
   Thumbnail,
   Content,
   Footer,

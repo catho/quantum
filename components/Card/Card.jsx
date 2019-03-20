@@ -5,7 +5,7 @@ import {
   Header,
   HeaderText,
   Title,
-  SubTitle,
+  Description,
   Media,
   Thumbnail,
   Content,
@@ -29,7 +29,7 @@ class Card extends React.Component {
 
   static Title = Title;
 
-  static SubTitle = SubTitle;
+  static Description = Description;
 
   static Media = Media;
 
