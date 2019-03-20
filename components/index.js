@@ -12,6 +12,7 @@ import Input from './Input';
 import RadioGroup from './RadioGroup';
 import Slider from './Slider';
 import Tag from './Tag';
+import TextArea from './TextArea';
 import Toggle from './Toggle';
 import Tooltip from './Tooltip';
 
@@ -34,6 +35,7 @@ export {
   Row,
   Slider,
   Tag,
+  TextArea,
   Toggle,
   Tooltip,
   Typography,
