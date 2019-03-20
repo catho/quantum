@@ -32,4 +32,6 @@ export default [
 
   // 16. Tags
   'Tag',
+
+  'Card',
 ].map(s => `./${s}/${s}.story.jsx`);
