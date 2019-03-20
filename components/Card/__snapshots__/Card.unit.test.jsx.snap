@@ -22,6 +22,7 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 
 .c3 {
   font-size: 24px;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -52,7 +53,6 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   background-color: #FFFFFF;
   border-radius: 8px;
   box-shadow: 0 2px 6px 0 rgba(128,128,128,0.5);
-  color: #4c4c4c;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -132,6 +132,7 @@ exports[`<Card /> Snapshots should match snapshot with small Description 1`] = `
 exports[`<Card /> Snapshots should match snapshot with small Title 1`] = `
 .c0 {
   font-size: 20px;
+  font-weight: 600;
   margin: 0;
 }
 

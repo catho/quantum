@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Heading = styled.h2`
   font-size: ${props => (props.small ? '20px' : '24px')};
+  font-weight: 600;
   margin: 0;
 `;
 

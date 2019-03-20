@@ -17,11 +17,13 @@ import AdvancedCard from './examples/AdvancedCard';
 
 import { Container, Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
+import { Typography } from '../../components/GlobalStyle';
 
 const importCard = `import { Card } from '@catho/quantum';`;
 
 storiesOf('Card', module).add('Card', () => (
   <>
+    <Typography />
     <Heading name="Card">
       Cards contain content and actions about a single subject.
     </Heading>
