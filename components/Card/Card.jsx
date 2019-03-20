@@ -15,7 +15,7 @@ import {
 const CardWrapper = styled.article`
   background-color: ${Colors.WHITE};
   border-radius: 8px;
-  box-shadow: 0 2px 6px 0 ${Colors.SHADOW[20]};
+  box-shadow: 0 2px 6px 0 ${Colors.SHADOW[50]};
   color: ${Colors.BLACK[700]};
   display: flex;
   flex-direction: column;

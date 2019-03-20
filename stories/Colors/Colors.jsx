@@ -231,7 +231,14 @@ export default () => (
     <Title as="h3">Shadow</Title>
     <ColorSample
       hex={Colors.SHADOW[40]}
-      number={200}
+      number={40}
+      name="Shadow"
+      fontColor="black"
+    />
+
+    <ColorSample
+      hex={Colors.SHADOW[50]}
+      number={50}
       name="Shadow"
       fontColor="black"
     />
