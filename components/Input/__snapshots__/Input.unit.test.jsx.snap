@@ -510,7 +510,7 @@ exports[`Input component  should match snapshots 6`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
-    type="text"
+    type="search"
   />
   
   
@@ -852,7 +852,7 @@ exports[`Input component  should match snapshots 10`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
-    type="text"
+    type="search"
   />
   
   

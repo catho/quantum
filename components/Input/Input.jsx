@@ -155,12 +155,12 @@ class Input extends React.Component {
       descriptionLabel,
       helperText,
       required,
-      searchable,
       value,
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
     const _id = this._getId();
+    const _isSearchType = typeProp === 'search';
 
     return (
       <FieldGroup>
@@ -173,7 +173,7 @@ class Input extends React.Component {
         {descriptionLabel && (
           <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
         )}
-        {searchable && (
+        {_isSearchType && (
           <InputSearchIcon name="search" description={descriptionLabel} />
         )}
         <MaskedInput
@@ -185,7 +185,7 @@ class Input extends React.Component {
             <InputTag
               ref={ref}
               error={error}
-              searchable={searchable}
+              searchable={_isSearchType}
               {...props}
             />
           )}
@@ -220,7 +220,6 @@ Input.defaultProps = {
   helperText: '',
   descriptionLabel: '',
   required: false,
-  searchable: false,
   placeholder: '',
 };
 
@@ -233,10 +232,15 @@ Input.propTypes = {
   /** Displays a description text below the label */
   descriptionLabel: PropTypes.string,
   required: PropTypes.bool,
-  /** Displays a search icon, on the input left */
-  searchable: PropTypes.bool,
   placeholder: PropTypes.string,
-  type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
+  type: PropTypes.oneOf([
+    'email',
+    'text',
+    'tel',
+    'number',
+    'password',
+    'search',
+  ]),
   /** Displays an error message and changes border color to error color */
   error: PropTypes.string,
   id: PropTypes.string,

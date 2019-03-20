@@ -27,8 +27,8 @@ export default [
     component: <Input.Password label="Password Type" />,
   },
   {
-    code: '<Input label="Searchable" searchable />',
-    component: <Input label="Searchable" searchable />,
+    code: '<Input label="Searchable" type="search" />',
+    component: <Input label="Searchable" type="search" />,
   },
   {
     code: '<Input label="With an error" error="Error here" />',

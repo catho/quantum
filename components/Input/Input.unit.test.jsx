@@ -13,11 +13,11 @@ describe('Input component ', () => {
       <Input label="Text label" />,
       <Input error="Error message" />,
       <Input required />,
-      <Input searchable />,
+      <Input type="search" />,
       <Input disabled />,
       <Input helperText="this is a helper text" />,
       <Input descriptionLabel="this is a description label" />,
-      <Input descriptionLabel="this is a description label" searchable />,
+      <Input descriptionLabel="this is a description label" type="search" />,
       <Input placeholder="this input has a placeholder" />,
     ];
 
@@ -39,9 +39,9 @@ describe('Input component ', () => {
     expect(requiredElement).toBeTruthy();
   });
 
-  it('should has a searchable icon when "searchable" prop is set', () => {
+  it('should has a search icon when type prop is set to "search" value', () => {
     const component = shallow(
-      <Input value="foo" label="label of input" searchable />,
+      <Input value="foo" label="label of input" type="search" />,
     );
     const InputSearchIconElement = component
       .find('InputSearchIcon')
