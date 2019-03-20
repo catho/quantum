@@ -1,20 +1,25 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Image from '../../Image';
-import Colors from '../../Colors/deprecated';
+import Colors from '../../Colors';
 
-const RoundedImage = styled(Image)`
-  background-color: ${Colors.SECONDARY['50']};
-  padding: 5px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  margin-top: 5px;
-  margin-right: 15px;
+const Thumbnail = styled.img`
+  background-color: ${Colors.BLACK['200']};
+  border-radius: ${({ rounded }) => (rounded ? '50%' : '4px')};
+  display: inline-block;
+  height: 72px;
+  width: 72px;
 `;
 
-const Thumbnail = props => <RoundedImage {...props} />;
-
 Thumbnail.displayName = 'Card.Thumbnail';
+
+Thumbnail.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  rounded: PropTypes.bool,
+};
+
+Thumbnail.defaultProps = {
+  rounded: false,
+};
 
 export default Thumbnail;

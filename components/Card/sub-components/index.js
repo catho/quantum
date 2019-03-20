@@ -1,17 +1,19 @@
-import Thumbnail from './Thumbnail';
-import Container from './Container';
-import { HeaderText, Title, SupportText } from './HeaderText';
 import Media from './Media';
-import Button from './Button';
-import Divider from './Divider';
+import Header from './Header';
+import HeaderText from './HeaderText';
+import Title from './Title';
+import SubTitle from './SubTitle';
+import Thumbnail from './Thumbnail';
+import Content from './Content';
+import Footer from './Footer';
 
 export {
-  Container,
-  Thumbnail,
+  Media,
+  Header,
   HeaderText,
   Title,
-  SupportText,
-  Media,
-  Button,
-  Divider,
+  SubTitle,
+  Thumbnail,
+  Content,
+  Footer,
 };
