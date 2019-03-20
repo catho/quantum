@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Card /> Should match the snapshot 1`] = `
+exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 20px 12px;
+  padding: 20px 20px 0;
 }
 
 .c1 > * {
@@ -22,6 +22,7 @@ exports[`<Card /> Should match the snapshot 1`] = `
 
 .c3 {
   font-size: 24px;
+  margin: 0;
 }
 
 .c4 {
@@ -38,7 +39,7 @@ exports[`<Card /> Should match the snapshot 1`] = `
 }
 
 .c6 {
-  padding: 12px 20px 20px;
+  padding: 12px 20px;
   font-size: 14px;
   margin: 0;
 }
@@ -76,11 +77,11 @@ exports[`<Card /> Should match the snapshot 1`] = `
       >
         Title
       </h2>
-      <p
+      <div
         className="c4"
       >
-        SubTitle
-      </p>
+        Description
+      </div>
     </div>
     <img
       alt="Thumbnail"
@@ -99,4 +100,42 @@ exports[`<Card /> Should match the snapshot 1`] = `
     Footer
   </footer>
 </article>
+`;
+
+exports[`<Card /> Snapshots should match snapshot with rounded Thumbnail 1`] = `
+.c0 {
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+}
+
+<img
+  alt=""
+  className="c0"
+  src=""
+/>
+`;
+
+exports[`<Card /> Snapshots should match snapshot with small Description 1`] = `
+.c0 {
+  font-size: 12px;
+  margin: 8px 0 0 0;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Card /> Snapshots should match snapshot with small Title 1`] = `
+.c0 {
+  font-size: 20px;
+  margin: 0;
+}
+
+<h2
+  className="c0"
+/>
 `;

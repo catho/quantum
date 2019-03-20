@@ -19,7 +19,9 @@ const JobAdCard = () => (
       <Card.Content>
         Irá atuar com Atendimento e recepção de clientes para reuniões e eventos
         agendados na empresa. Experiência em atendimento e recepção de clientes{' '}
+        {/* eslint-disable-next-line */}
         <a href="#" style={{ color: Colors.BLUE['500'], fontWeight: '700' }}>
+          {' '}
           continuar lendo…
         </a>
       </Card.Content>
