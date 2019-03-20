@@ -47,13 +47,8 @@ exports[`Input component  should match snapshots 1`] = `
   display: none;
 }
 
-.c1:focus + .c2 {
-  color: #03a9f4;
-}
-
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 <div
@@ -123,13 +118,8 @@ exports[`Input component  should match snapshots 2`] = `
   display: none;
 }
 
-.c1:focus + .c3 {
-  color: #03a9f4;
-}
-
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 .c2 {
@@ -179,17 +169,15 @@ exports[`Input component  should match snapshots 3`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   display: block;
-  line-height: 1.5;
   margin-bottom: 5px;
-  font-size: 16px;
   margin-bottom: 0;
   padding: 8px 12px 0px 12px;
   font-weight: bold;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
@@ -210,13 +198,13 @@ exports[`Input component  should match snapshots 3`] = `
   width: 100%;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c3[disabled] {
+.c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -224,31 +212,26 @@ exports[`Input component  should match snapshots 3`] = `
   cursor: not-allowed;
 }
 
-.c3::-webkit-calendar-picker-indicator {
+.c2::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.c3:focus + .c1 {
-  color: #03a9f4;
-}
-
-.c3:-webkit-autofill {
+.c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 <div
   className="c0"
 >
   <label
-    className="c1 c2"
+    className="c1"
     htmlFor="input-3"
   >
     Text label
   </label>
   
   <input
-    className="c3"
+    className="c2"
     defaultValue=""
     id="input-3"
     onBlur={[Function]}
@@ -316,13 +299,8 @@ exports[`Input component  should match snapshots 4`] = `
   display: none;
 }
 
-.c1:focus + .c4 {
-  color: #03a9f4;
-}
-
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 .c2 {
@@ -424,13 +402,8 @@ exports[`Input component  should match snapshots 5`] = `
   display: none;
 }
 
-.c1:focus + .c2 {
-  color: #03a9f4;
-}
-
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 <div
@@ -501,13 +474,8 @@ exports[`Input component  should match snapshots 6`] = `
   display: none;
 }
 
-.c2:focus + .c3 {
-  color: #03a9f4;
-}
-
 .c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 .c1 {
@@ -597,13 +565,8 @@ exports[`Input component  should match snapshots 7`] = `
   display: none;
 }
 
-.c1:focus + .c2 {
-  color: #03a9f4;
-}
-
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 <div
@@ -674,17 +637,11 @@ exports[`Input component  should match snapshots 8`] = `
   display: none;
 }
 
-.c1:focus + .c3 {
-  color: #03a9f4;
-}
-
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 .c2 {
-  color: #4c4c4c;
   cursor: text;
   display: block;
   font-size: 14px;
@@ -764,17 +721,11 @@ exports[`Input component  should match snapshots 9`] = `
   display: none;
 }
 
-.c2:focus + .c3 {
-  color: #03a9f4;
-}
-
 .c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 .c1 {
-  color: #4c4c4c;
   cursor: text;
   display: block;
   font-size: 14px;
@@ -853,13 +804,8 @@ exports[`Input component  should match snapshots 10`] = `
   display: none;
 }
 
-.c3:focus + .c4 {
-  color: #03a9f4;
-}
-
 .c3:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 .c2 {
@@ -872,7 +818,6 @@ exports[`Input component  should match snapshots 10`] = `
 }
 
 .c1 {
-  color: #4c4c4c;
   cursor: text;
   display: block;
   font-size: 14px;
@@ -963,13 +908,8 @@ exports[`Input component  should match snapshots 11`] = `
   display: none;
 }
 
-.c1:focus + .c2 {
-  color: #03a9f4;
-}
-
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
 <div

@@ -4,7 +4,6 @@ import React from 'react';
 import MaskedInput from 'react-text-mask';
 
 import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
-import ColorsDeprecated from '../Colors/deprecated';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
@@ -12,7 +11,6 @@ import InputTypes from './InputTypes';
 const { default: DEFAULT_INPUT_STYLE } = INPUT_STYLE;
 
 const InputLabel = styled(Label)`
-  font-size: 16px;
   margin-bottom: 0;
   padding: 8px 12px 0px 12px;
   font-weight: bold;
@@ -41,10 +39,6 @@ const InputTag = styled.input`
     display: none;
   }
 
-  &:focus + ${InputLabel} {
-    color: ${ColorsDeprecated.PRIMARY['500']};
-  }
-
   ${({ placeholder, defaultValue }) =>
     placeholder &&
     !defaultValue &&
@@ -54,7 +48,6 @@ const InputTag = styled.input`
 
   :-webkit-autofill {
     box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
-    -webkit-text-fill-color: ${Colors.BLACK['700']};
   }
 `;
 
@@ -84,7 +77,6 @@ const InputErrorMessage = styled(ErrorMessage)`
 `;
 
 const HelperText = styled.span`
-  color: ${Colors.BLACK['700']};
   cursor: text;
   display: block;
   font-size: 14px;
@@ -94,7 +86,6 @@ const HelperText = styled.span`
 `;
 
 const DescriptionLabel = styled.span`
-  color: ${Colors.BLACK['700']};
   cursor: text;
   display: block;
   font-size: 14px;

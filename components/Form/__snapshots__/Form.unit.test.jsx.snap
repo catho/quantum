@@ -8,17 +8,15 @@ exports[`Form component  should match the snapshot 1`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   display: block;
-  line-height: 1.5;
   margin-bottom: 5px;
-  font-size: 16px;
   margin-bottom: 0;
   padding: 8px 12px 0px 12px;
   font-weight: bold;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
@@ -39,13 +37,13 @@ exports[`Form component  should match the snapshot 1`] = `
   width: 100%;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c3[disabled] {
+.c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -53,20 +51,15 @@ exports[`Form component  should match the snapshot 1`] = `
   cursor: not-allowed;
 }
 
-.c3::-webkit-calendar-picker-indicator {
+.c2::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.c3:focus + .c1 {
-  color: #03a9f4;
-}
-
-.c3:-webkit-autofill {
+.c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-  -webkit-text-fill-color: #4c4c4c;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -99,25 +92,25 @@ exports[`Form component  should match the snapshot 1`] = `
   border-radius: 4px;
 }
 
-.c4 .c5 {
+.c3 .c4 {
   font-size: 24px;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c3:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c3:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -132,14 +125,14 @@ exports[`Form component  should match the snapshot 1`] = `
     className="c0"
   >
     <label
-      className="c1 c2"
+      className="c1"
       htmlFor="input-0"
     >
       required
     </label>
     
     <input
-      className="c3"
+      className="c2"
       defaultValue=""
       id="input-0"
       name="required"
@@ -156,14 +149,14 @@ exports[`Form component  should match the snapshot 1`] = `
     className="c0"
   >
     <label
-      className="c1 c2"
+      className="c1"
       htmlFor="input-1"
     >
       CPF
     </label>
     
     <input
-      className="c3"
+      className="c2"
       defaultValue=""
       id="input-1"
       name="cpf"
@@ -180,14 +173,14 @@ exports[`Form component  should match the snapshot 1`] = `
     className="c0"
   >
     <label
-      className="c1 c2"
+      className="c1"
       htmlFor="input-2"
     >
       CEP
     </label>
     
     <input
-      className="c3"
+      className="c2"
       defaultValue=""
       id="input-2"
       name="cep"
@@ -204,14 +197,14 @@ exports[`Form component  should match the snapshot 1`] = `
     className="c0"
   >
     <label
-      className="c1 c2"
+      className="c1"
       htmlFor="input-3"
     >
       Birthday
     </label>
     
     <input
-      className="c3"
+      className="c2"
       defaultValue=""
       id="input-3"
       name="birthday"
@@ -228,14 +221,14 @@ exports[`Form component  should match the snapshot 1`] = `
     className="c0"
   >
     <label
-      className="c1 c2"
+      className="c1"
       htmlFor="input-4"
     >
       E-mail
     </label>
     
     <input
-      className="c3"
+      className="c2"
       defaultValue=""
       id="input-4"
       name="email"
@@ -252,14 +245,14 @@ exports[`Form component  should match the snapshot 1`] = `
     className="c0"
   >
     <label
-      className="c1 c2"
+      className="c1"
       htmlFor="input-5"
     >
       Address
     </label>
     
     <input
-      className="c3"
+      className="c2"
       defaultValue=""
       id="input-5"
       minLength="8"
@@ -277,14 +270,14 @@ exports[`Form component  should match the snapshot 1`] = `
     className="c0"
   >
     <label
-      className="c1 c2"
+      className="c1"
       htmlFor="input-6"
     >
       Country
     </label>
     
     <input
-      className="c3"
+      className="c2"
       defaultValue=""
       id="input-6"
       maxLength="3"
@@ -299,7 +292,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="c4"
+    className="c3"
     disabled={false}
     onClick={[Function]}
     size="medium"

@@ -44,7 +44,6 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 
 .c1 {
   display: block;
-  line-height: 1.5;
   margin-bottom: 5px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -188,7 +187,6 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 
 .c1 {
   display: block;
-  line-height: 1.5;
   margin-bottom: 5px;
   cursor: pointer;
   -webkit-user-select: none;

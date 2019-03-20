@@ -680,7 +680,6 @@ exports[`Input component  should match the snapshot 6`] = `
 
 .c2 {
   display: block;
-  line-height: 1.5;
   margin-bottom: 5px;
   margin-bottom: 8px;
   padding-left: 13.5px;
@@ -822,7 +821,6 @@ exports[`Input component  should match the snapshot 7`] = `
 
 .c2 {
   display: block;
-  line-height: 1.5;
   margin-bottom: 5px;
   margin-bottom: 8px;
   padding-left: 13.5px;
