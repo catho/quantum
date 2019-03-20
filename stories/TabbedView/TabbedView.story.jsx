@@ -4,7 +4,8 @@ import { TabbedView } from '../../components';
 
 storiesOf('TabbedView', module).add('TabbedView', () => (
   <TabbedView>
-    <TabbedView.Tab title="1">Tab 1</TabbedView.Tab>
-    <TabbedView.Tab title="2">Tab 2</TabbedView.Tab>
+    <TabbedView.Tab title="Candidatos">Candidatos</TabbedView.Tab>
+    <TabbedView.Tab title="Empresas">Empresas</TabbedView.Tab>
+    <TabbedView.Tab title="Educação">Educação</TabbedView.Tab>
   </TabbedView>
 ));

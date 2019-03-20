@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
+import Tab from './Tab';
 
 const Navbar = styled.ul`
   display: flex;
@@ -16,24 +17,18 @@ Navbar.displayName = 'Navbar';
 
 const NavItem = styled.li`
   cursor: pointer;
-  font-size: 17px;
-  letter-spacing: initial;
-  line-height: initial;
+  height: 48px;
+  font-size: 20px;
+  box-sizing: border-box;
+  line-height: 1.5;
   overflow: hidden;
-  padding: 18px 18px 16px;
+  padding: 9px 16px;
   position: relative;
   text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    transition: width 0.25s ease-out;
-  }
+  text-transform: uppercase;
+  min-width: 90px;
+  flex-shrink: 0;
+
   &:hover {
     background-color: ${Colors.BLUE[200]};
   }
@@ -47,18 +42,6 @@ const NavItem = styled.li`
 
 NavItem.displayName = 'NavItem';
 
-const Tab = ({ children, title }) => <>{title && children}</>;
-
-Tab.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
-
-Tab.displayName = 'Tab';
-
 const RenderIf = ({ conditional, children }) => conditional && children;
 
 class TabbedView extends React.Component {
@@ -67,12 +50,21 @@ class TabbedView extends React.Component {
   constructor(props) {
     super(props);
 
-    const { children } = props;
+    const { children, activeTab } = props;
 
-    const [firstTab] = React.Children.toArray(children);
-    this.state = {
-      activeTab: firstTab.props.title,
-    };
+    if (activeTab) {
+      this.state = {
+        activeTab,
+      };
+    } else {
+      const [firstTab] = React.Children.toArray(children);
+      const {
+        props: { title },
+      } = firstTab;
+      this.state = {
+        activeTab: title,
+      };
+    }
   }
 
   onTabClick = tab => {
@@ -85,7 +77,6 @@ class TabbedView extends React.Component {
 
     return (
       <React.Fragment>
-        {activeTab}
         <Navbar>
           {React.Children.map(children, ({ props: { title } }) => (
             <NavItem
@@ -110,11 +101,16 @@ class TabbedView extends React.Component {
 
 TabbedView.propTypes = {
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.instanceOf(Tab)),
+    PropTypes.arrayOf(
+      PropTypes.oneOfType(
+        PropTypes.instanceOf(Tab),
+        PropTypes.instanceOf(TabbedView.Tab),
+      ),
+    ),
     PropTypes.instanceOf(Tab),
   ]).isRequired,
 };
 
 TabbedView.displayName = 'TabbedView';
 
-export { Tab, TabbedView };
+export default TabbedView;
