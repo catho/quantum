@@ -15,11 +15,10 @@ import SimpleCard from './examples/SimpleCard';
 import JobAdCard from './examples/JobAdCard';
 import AdvancedCard from './examples/AdvancedCard';
 
-import { Container, Col, Row } from '../../components/Grid';
 import Card from '../../components/Card';
+import Button from '../../components/Button';
+import { Container, Col, Row } from '../../components/Grid';
 import { Typography } from '../../components/GlobalStyle';
-
-const importCard = `import { Card } from '@catho/quantum';`;
 
 storiesOf('Card', module).add('Card', () => (
   <>
@@ -31,96 +30,118 @@ storiesOf('Card', module).add('Card', () => (
       <Tab title="Usage">
         <StoryContainer>
           <Title as="h2">Importing Card</Title>
-          <SimpleHighlight>{importCard}</SimpleHighlight>
+          <SimpleHighlight>{`import { Card } from '@catho/quantum';`}</SimpleHighlight>
 
-          <Title as="h3">Compund Components</Title>
+          <Title as="h3">Compound Components</Title>
           <p>We provide a few components to build your Card.</p>
 
-          <Table>
-            <thead>
-              <tr style={{ width: 180 }}>
-                <th>Component</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <code>{'<Card />'}</code>
-                </td>
-                <td>
-                  Card wrapper, it&apos;s the root element of card component.
-                  Hold all card elements, and their size is determined by the
-                  space those elements occupy.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.Header />'}</code>
-                </td>
-                <td>It&apos;s envolve the card header components.</td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.HeaderText />'}</code>
-                </td>
-                <td>
-                  It&apos;s envolve the Card.Title and Card.Description
-                  components.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.Title />'}</code>
-                </td>
-                <td>The main title.</td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.Description />'}</code>
-                </td>
-                <td>Cards can display a little explanation.</td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.Thumbnail />'}</code>
-                </td>
-                <td>Display an image, avatar, or logo.</td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.Media />'}</code>
-                </td>
-                <td>
-                  Cards can include a variety of media, including images,
-                  photos, graphics, and so on.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.Content />'}</code>
-                </td>
-                <td>
-                  The main content, can include, for example, a job description
-                  or a resume information.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>{'<Card.Footer />'}</code>
-                </td>
-                <td>
-                  Footer is provided for include actions buttons, icons, any
-                  kind of user interaction.
-                </td>
-              </tr>
-            </tbody>
-          </Table>
+          <Row>
+            <Col medium={8}>
+              <Table>
+                <thead>
+                  <tr style={{ width: 180 }}>
+                    <th>Component</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <code>{'<Card />'}</code>
+                    </td>
+                    <td>
+                      Card wrapper, it&apos;s the root element of card
+                      component. Hold all card elements, and their size is
+                      determined by the space those elements occupy.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.Header />'}</code>
+                    </td>
+                    <td>It&apos;s envolve the card header components.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.HeaderText />'}</code>
+                    </td>
+                    <td>
+                      It&apos;s envolve the Card.Title and Card.Description
+                      components.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.Title />'}</code>
+                    </td>
+                    <td>The main title.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.Description />'}</code>
+                    </td>
+                    <td>Cards can display a little explanation.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.Thumbnail />'}</code>
+                    </td>
+                    <td>Display an image, avatar, or logo.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.Media />'}</code>
+                    </td>
+                    <td>
+                      Cards can include a variety of media, including images,
+                      photos, graphics, and so on.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.Content />'}</code>
+                    </td>
+                    <td>
+                      The main content, can include, for example, a job
+                      description or a resume information.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>{'<Card.Footer />'}</code>
+                    </td>
+                    <td>
+                      Footer is provided for include actions buttons, icons, any
+                      kind of user interaction.
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Col>
 
+            <Col medium={4}>
+              <Card>
+                <Card.Header>
+                  <Card.Thumbnail rounded src="" alt="" />
+                  <Card.HeaderText>
+                    <Card.Title>Title</Card.Title>
+                    <Card.Description>Description</Card.Description>
+                  </Card.HeaderText>
+                </Card.Header>
+                <Card.Media src="" alt="" />
+                <Card.Content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  quis fringilla lectus. Morbi a risus.
+                </Card.Content>
+                <Card.Footer>
+                  <Button>Apply</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+          </Row>
           <p>
             <code>
-              {'<Card.Title />'}, {'<Card.Description />'} and{' '}
-              {'<Card.Thumbnail />'}
+              {'<Card.Title />, <Card.Description /> and <Card.Thumbnail />'}
             </code>{' '}
             can receive some props, you can check then on the{' '}
             <strong>API panel</strong>.
