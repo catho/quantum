@@ -1,8 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Colors from '../Colors';
 import Tab from './Tab';
+
+const getColors = skin => {
+  const skins = {
+    default: {
+      background: 'transparent',
+      text: 'inherit',
+      activeText: Colors.COBALT[500],
+      hover: Colors.BLUE[200],
+    },
+    blue: {
+      background: Colors.BLUE[500],
+      text: Colors.WHITE,
+      activeText: Colors.WHITE,
+      hover: Colors.COBALT[500],
+    },
+  };
+
+  return skins[skin] || skins.default;
+};
 
 const Navbar = styled.ul`
   display: flex;
@@ -29,15 +48,25 @@ const NavItem = styled.li`
   min-width: 90px;
   flex-shrink: 0;
 
-  &:hover {
-    background-color: ${Colors.BLUE[200]};
-  }
-  ${props =>
-    props.active &&
-    `color: ${Colors.COBALT[500]};
-    font-weight: bold;
-    border-bottom: 4px solid ${Colors.COBALT[500]};
-  `};
+  ${({ skin, active }) => {
+    const { background, text, activeText, hover } = getColors(skin);
+    console.log({ background, text, hover });
+    return css`
+      color: ${text};
+      background-color: ${background};
+
+      ${active &&
+        `
+        color: ${activeText};
+        font-weight: bold;
+        border-bottom: 4px solid ${activeText};
+      `}
+
+      &:hover {
+        background-color: ${hover};
+      }
+    `;
+  }}
 `;
 
 NavItem.displayName = 'NavItem';
@@ -72,7 +101,7 @@ class TabbedView extends React.Component {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, skin } = this.props;
     const { activeTab } = this.state;
 
     return (
@@ -83,6 +112,7 @@ class TabbedView extends React.Component {
               key={title}
               onClick={() => this.onTabClick(title)}
               active={title === activeTab}
+              skin={skin}
             >
               {title}
             </NavItem>
@@ -102,18 +132,20 @@ class TabbedView extends React.Component {
 TabbedView.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(
-      PropTypes.oneOfType(
+      PropTypes.oneOfType([
         PropTypes.instanceOf(Tab),
         PropTypes.instanceOf(TabbedView.Tab),
-      ),
+      ]),
     ),
     PropTypes.instanceOf(Tab),
   ]).isRequired,
   activeTab: PropTypes.string,
+  skin: PropTypes.oneOf(['default', 'blue']),
 };
 
 TabbedView.defaultProps = {
   activeTab: undefined,
+  skin: 'default',
 };
 
 TabbedView.displayName = 'TabbedView';
