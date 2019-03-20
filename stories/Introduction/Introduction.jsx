@@ -5,7 +5,6 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
-const registry = 'registry="http://armazem.devel:4873/"';
 const yarnAdd = 'yarn add @cathodevel/quantum';
 const importHeader = `import { Header } from '@cathodevel/quantum';
 export default () => <Header />;`;
