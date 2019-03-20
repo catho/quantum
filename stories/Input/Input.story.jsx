@@ -1,38 +1,25 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { AutoExample, Tab } from '@catho/quantum-storybook-ui';
+import { AutoExample, Tab, SimpleHighlight } from '@catho/quantum-storybook-ui';
 import { IconFont } from '../../components/GlobalStyle';
-import { Container } from '../../components/Grid';
+import { Container, Row, Col } from '../../components/Grid';
+import examples from './examples';
 
 import Input from '../../components/Input';
 
 const tabExample = (
   <Tab title="Example">
     <Container>
-      <Input.CEP id="CEP" label="CEP" />
-      <Input.CNPJ id="CNPJ" label="CNPJ" />
-      <Input.CPF
-        id="CPF"
-        label="CPF"
-        value="99999999999"
-        onChange={event => {
-          console.log(event.target);
-          console.log(event.target.value);
-        }}
-      />
-      <Input.Date id="Date" label="Date" />
-      <Input.Phone id="Phone" label="Phone" />
-      <Input.Password id="password" label="Password" />
-      <Input label="Error" error="this is a error text" />
-      <Input label="Disabled" disabled />
-      <Input label="Searchable" searchable />
-      <Input
-        searchable
-        label="default Label"
-        descriptionLabel="description label"
-        helperText="helper text"
-        error="error text"
-      />
+      {examples.map(example => (
+        <Row>
+          <Col xsmall={2} small={4} medium={6}>
+            <SimpleHighlight>{example.code}</SimpleHighlight>
+          </Col>
+          <Col xsmall={2} small={4} medium={6}>
+            {example.component}
+          </Col>
+        </Row>
+      ))}
     </Container>
   </Tab>
 );

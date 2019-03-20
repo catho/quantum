@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form component  should match the snapshot 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c2 {
   display: block;
   line-height: 1.5;
@@ -57,18 +64,6 @@ exports[`Form component  should match the snapshot 1`] = `
 .c3:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
   -webkit-text-fill-color: #4c4c4c;
-}
-
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
 }
 
 .c4 {

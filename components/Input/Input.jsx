@@ -79,14 +79,6 @@ const InputErrorIcon = styled(InputIcon)`
   color: ${Colors.ERROR['500']};
 `;
 
-const InputFieldGroup = styled(FieldGroup)`
-  margin: 40px 0 20px;
-
-  &:first-child {
-    margin-top: 20px;
-  }
-`;
-
 const InputErrorMessage = styled(ErrorMessage)`
   padding: 8px 12px;
 `;
@@ -180,7 +172,7 @@ class Input extends React.Component {
     const _id = this._getId();
 
     return (
-      <InputFieldGroup>
+      <FieldGroup>
         {label && (
           <InputLabel htmlFor={_id} error={error}>
             {label}
@@ -222,7 +214,7 @@ class Input extends React.Component {
         )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
         {helperText && !error && <HelperText>{helperText}</HelperText>}
-      </InputFieldGroup>
+      </FieldGroup>
     );
   }
 }

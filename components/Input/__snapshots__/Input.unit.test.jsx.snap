@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component  should match snapshots 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -49,18 +56,6 @@ exports[`Input component  should match snapshots 1`] = `
   -webkit-text-fill-color: #4c4c4c;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 <div
   className="c0"
 >
@@ -82,6 +77,13 @@ exports[`Input component  should match snapshots 1`] = `
 `;
 
 exports[`Input component  should match snapshots 2`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -137,18 +139,6 @@ exports[`Input component  should match snapshots 2`] = `
   top: 50px;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 <div
   className="c0"
 >
@@ -182,6 +172,13 @@ exports[`Input component  should match snapshots 2`] = `
 `;
 
 exports[`Input component  should match snapshots 3`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c2 {
   display: block;
   line-height: 1.5;
@@ -240,18 +237,6 @@ exports[`Input component  should match snapshots 3`] = `
   -webkit-text-fill-color: #4c4c4c;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 <div
   className="c0"
 >
@@ -278,6 +263,13 @@ exports[`Input component  should match snapshots 3`] = `
 `;
 
 exports[`Input component  should match snapshots 4`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -341,18 +333,6 @@ exports[`Input component  should match snapshots 4`] = `
   color: #ff2d4d;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 .c3 {
   color: #ac001a;
   font-size: 14px;
@@ -398,6 +378,13 @@ exports[`Input component  should match snapshots 4`] = `
 `;
 
 exports[`Input component  should match snapshots 5`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -446,18 +433,6 @@ exports[`Input component  should match snapshots 5`] = `
   -webkit-text-fill-color: #4c4c4c;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 <div
   className="c0"
 >
@@ -479,6 +454,13 @@ exports[`Input component  should match snapshots 5`] = `
 `;
 
 exports[`Input component  should match snapshots 6`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c2 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -536,18 +518,6 @@ exports[`Input component  should match snapshots 6`] = `
   left: 12px;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 <div
   className="c0"
 >
@@ -581,6 +551,13 @@ exports[`Input component  should match snapshots 6`] = `
 `;
 
 exports[`Input component  should match snapshots 7`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -629,18 +606,6 @@ exports[`Input component  should match snapshots 7`] = `
   -webkit-text-fill-color: #4c4c4c;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 <div
   className="c0"
 >
@@ -663,6 +628,13 @@ exports[`Input component  should match snapshots 7`] = `
 `;
 
 exports[`Input component  should match snapshots 8`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -711,18 +683,6 @@ exports[`Input component  should match snapshots 8`] = `
   -webkit-text-fill-color: #4c4c4c;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 .c2 {
   color: #4c4c4c;
   cursor: text;
@@ -758,6 +718,13 @@ exports[`Input component  should match snapshots 8`] = `
 `;
 
 exports[`Input component  should match snapshots 9`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c2 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -806,18 +773,6 @@ exports[`Input component  should match snapshots 9`] = `
   -webkit-text-fill-color: #4c4c4c;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 .c1 {
   color: #4c4c4c;
   cursor: text;
@@ -851,6 +806,13 @@ exports[`Input component  should match snapshots 9`] = `
 `;
 
 exports[`Input component  should match snapshots 10`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c3 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -909,18 +871,6 @@ exports[`Input component  should match snapshots 10`] = `
   left: 12px;
 }
 
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
-}
-
 .c1 {
   color: #4c4c4c;
   cursor: text;
@@ -966,6 +916,13 @@ exports[`Input component  should match snapshots 10`] = `
 `;
 
 exports[`Input component  should match snapshots 11`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
 .c1 {
   box-sizing: border-box;
   margin-top: 8px;
@@ -1013,18 +970,6 @@ exports[`Input component  should match snapshots 11`] = `
 .c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
   -webkit-text-fill-color: #4c4c4c;
-}
-
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  margin: 40px 0 20px;
-}
-
-.c0:first-child {
-  margin-top: 20px;
 }
 
 <div
