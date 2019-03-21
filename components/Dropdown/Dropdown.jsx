@@ -1,65 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import Colors from '../Colors';
-import { FieldGroup, Label, ErrorMessage } from '../shared';
+import { FieldGroup, Label, ErrorMessage, INPUT_STYLE } from '../shared';
 
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
-const DropLabel = styled(Label)`
-  margin-bottom: 8px;
-  padding-left: 13.5px;
-`;
-
-DropLabel.displayName = 'DropLabel';
+const { HOVER_STYLE, ERROR_HOVER_STYLE, default: DEFAULT_STYLE } = INPUT_STYLE;
 
 const DropButton = styled.button`
   align-items: center;
-  background-color: ${Colors.WHITE};
-  border-radius: 4px;
-  border: 1.5px solid ${Colors.BLACK['400']};
-  color: ${Colors.BLACK['400']};
   cursor: pointer;
   display: flex;
-  font-size: initial;
-  height: ${ITEM_HEIGHT};
   justify-content: space-between;
-  letter-spacing: 0.2px;
-  padding: 10px 12px;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
 
-  :hover,
-  :focus {
-    border-color: ${Colors.BLUE['500']};
-    box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
-  }
-
-  ${({ error }) =>
-    error &&
-    `
-    border-color: ${Colors.ERROR['500']};
-
-    :hover, :focus {
-      border-color: ${Colors.ERROR['500']};
-      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
-    }
-  `};
-
-  &[disabled] {
-    background-color: ${Colors.BLACK['100']};
-    border-color: ${Colors.BLACK['400']};
-    box-shadow: none;
-    color: ${Colors.BLACK['400']};
-    cursor: not-allowed;
-  }
+  ${DEFAULT_STYLE};
 
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
-  ${({ selectedItem }) => selectedItem && `color: ${Colors.BLACK[700]}`};
+  ${({ selectedItem }) => !selectedItem && `color: ${Colors.BLACK[400]}`};
 `;
+
+const DropLabel = styled(Label)`
+  margin-bottom: 8px;
+  padding-left: 13.5px;
+
+  ${({ error, disabled }) =>
+    !disabled &&
+    css`
+      :hover ~ ${DropButton}, :focus ~ ${DropButton} {
+        ${error ? ERROR_HOVER_STYLE : HOVER_STYLE};
+      }
+    `};
+`;
+
+DropLabel.displayName = 'DropLabel';
 
 const ArrowDown = styled(Icon).attrs({
   name: 'keyboard_arrow_down',
@@ -143,7 +120,6 @@ const Dropdown = ({
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
-  const _buttonRef = React.createRef();
 
   const _highlightedReducer = ({ selectedItem: selected }, changes) => {
     if (changes.isOpen !== undefined && changes.isOpen) {
@@ -175,13 +151,16 @@ const Dropdown = ({
           getInputProps,
           getToggleButtonProps,
           getItemProps,
+          openMenu,
           isOpen,
         }) => (
           <DropContainer {...getRootProps()}>
             {label && (
               <DropLabel
                 {...getLabelProps()}
-                onClick={() => _buttonRef.current.focus()}
+                onClick={() => openMenu()}
+                error={error}
+                disabled={disabled}
               >
                 {label}
                 {required && <RequiredMark>*</RequiredMark>}
@@ -190,7 +169,6 @@ const Dropdown = ({
             <input type="hidden" {...getInputProps()} />
             <DropButton
               {...getToggleButtonProps()}
-              ref={_buttonRef}
               isOpen={isOpen}
               disabled={disabled}
               error={error}

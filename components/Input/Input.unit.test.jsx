@@ -1,65 +1,151 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+import MaskedInput from 'react-text-mask';
 import Input from './Input';
+import masks from '../shared/masks';
 
 describe('Input component ', () => {
-  it('should match the snapshot', () => {
-    expect(renderer.create(<Input value="foo" />).toJSON()).toMatchSnapshot();
+  it('should match snapshots', () => {
+    const INPUTS = [
+      <Input />,
+      <Input value="foo" />,
+      <Input label="Text label" />,
+      <Input error="Error message" />,
+      <Input required />,
+      <Input type="search" />,
+      <Input disabled />,
+      <Input helperText="this is a helper text" />,
+      <Input descriptionLabel="this is a description label" />,
+      <Input descriptionLabel="this is a description label" type="search" />,
+      <Input placeholder="this input has a placeholder" />,
+    ];
+
+    INPUTS.forEach(input =>
+      expect(renderer.create(input).toJSON()).toMatchSnapshot(),
+    );
   });
 
-  it('with an error message should match the snapshot', () => {
-    expect(
-      renderer.create(<Input value="foo" error="Error message" />).toJSON(),
-    ).toMatchSnapshot();
+  it('should has a required signal when "required" prop is set', () => {
+    const component = shallow(
+      <Input value="foo" label="label of input" required />,
+    );
+
+    expect(component.find('InputLabel').text()).toMatch('*');
+  });
+
+  it('should has a search icon when type prop is set to "search" value', () => {
+    const component = shallow(
+      <Input value="foo" label="label of input" type="search" />,
+    );
+    const InputSearchIconElement = component
+      .find('InputSearchIcon')
+      .html()
+      .includes('search');
+
+    expect(InputSearchIconElement).toBeTruthy();
+  });
+
+  it('should has an error icon when "error" prop is set', () => {
+    const component = shallow(
+      <Input value="foo" label="label of input" error="error text" />,
+    );
+    const InputErrorIconElement = component
+      .find('InputErrorIcon')
+      .html()
+      .includes('error');
+
+    expect(InputErrorIconElement).toBeTruthy();
+  });
+
+  it('should has a helper text when "helperText" prop is set ', () => {
+    const helperTextContent = 'this is a helper text';
+    const component = shallow(
+      <Input
+        value="foo"
+        label="label of input"
+        helperText={helperTextContent}
+      />,
+    );
+    const helperTextElementContent = component.find('HelperText').text();
+
+    expect(helperTextElementContent).toEqual(helperTextContent);
+  });
+
+  it('should has a description label when "descriptionLabel" prop was set', () => {
+    const descriptionLabelContent = 'this is a description label';
+    const component = shallow(
+      <Input
+        value="foo"
+        label="label of input"
+        descriptionLabel={descriptionLabelContent}
+      />,
+    );
+    const descriptionLabelElementContent = component
+      .find('DescriptionLabel')
+      .text();
+
+    expect(descriptionLabelElementContent).toEqual(descriptionLabelContent);
+  });
+
+  it('should has a placeholder when "placeholder" is text', () => {
+    const placeholderContent = 'this is a input placeholder';
+    const component = mount(
+      <Input
+        value="foo"
+        label="label of input"
+        placeholder={placeholderContent}
+      />,
+    );
+
+    const placeholderProp = component.find('InputTag').prop('placeholder');
+    expect(placeholderProp).toEqual(placeholderContent);
+  });
+
+  it('should has a cancel icon when input value is not empty', () => {
+    const component = mount(<Input value="foo" label="label of input" />);
+    const hasIcon = component.find('span.material-icons');
+    expect(hasIcon).toBeTruthy();
+
+    const cancelIcon = hasIcon.text();
+    expect(cancelIcon).toEqual('cancel');
+  });
+
+  it('should generate a new id for it instance, when "id" prop is not set', () => {
+    const componentA = shallow(<Input value="foo" label="label of input" />);
+    const componentB = shallow(<Input value="foo" label="label of input" />);
+    const inputIdA = componentA.find(MaskedInput).prop('id');
+    const inputIdB = componentB.find(MaskedInput).prop('id');
+
+    expect(inputIdA).not.toBe('');
+    expect(inputIdB).not.toBe('');
+
+    expect(inputIdA).not.toEqual(inputIdB);
+  });
+
+  it('should apply a mask prop to input value', () => {
+    const input = mount(<Input mask={masks.cpf} value="99999999999" />);
+    const { value } = input.find(MaskedInput).getDOMNode();
+
+    expect(value).toBe('999.999.999-99');
   });
 
   describe('with a label', () => {
-    const input = (
-      <Input label="Text label" id="input-with-label" value="foo" />
-    );
-
-    it('should match the snapshot', () => {
-      expect(renderer.create(input).toJSON()).toMatchSnapshot();
-    });
-
-    it('should have withValue prop set to true when input have value', () => {
-      const wrapper = shallow(input);
-      const label = wrapper.childAt(1);
-
-      expect(label.prop('withValue')).toEqual(true);
-    });
-
-    it("should have withValue prop set to false when input doesn't have value", () => {
-      const inputWithoutValue = <Input label="Text label" id="withoutValue" />;
-      const wrapper = shallow(inputWithoutValue);
-      const label = wrapper.childAt(1);
-
-      expect(label.prop('withValue')).toEqual(false);
-    });
-
     it('should match label "htmlFor" label param with "id" input param', () => {
-      const wrapper = shallow(input);
-      const styledInput = wrapper.childAt(0);
-      const label = wrapper.childAt(1);
+      const input = <Input label="Text label" id="input-id" value="foo" />;
+      const wrapper = mount(input);
+      const inputTag = wrapper.find('InputTag');
+      const label = wrapper.find('InputLabel');
 
-      expect(label.prop('htmlFor')).toEqual(styledInput.prop('id'));
+      expect(label.prop('htmlFor')).toEqual(inputTag.prop('id'));
     });
-  });
 
-  describe('with an "onChange" callback set', () => {
-    const mockFn = jest.fn();
-    const wrapper = shallow(<Input onChange={mockFn} id="input" />);
-    const value = 'test';
-    const valueObj = { value };
-    const mockEvent = { target: valueObj };
+    it('should match label "htmlFor" label param and "input" param with generated id', () => {
+      const wrapper = shallow(<Input label="Text label" value="foo" />);
+      const labelId = wrapper.find('InputLabel').prop('htmlFor');
+      const inputId = wrapper.find(MaskedInput).prop('id');
 
-    it('should call the callback and set a new value', () => {
-      wrapper.find('#input').simulate('change', mockEvent);
-
-      expect(wrapper.state('value')).toEqual(value);
-      expect(mockFn).toHaveBeenCalledTimes(1);
-      expect(mockFn).toBeCalledWith(mockEvent, valueObj);
+      expect(labelId).toEqual(inputId);
     });
   });
 
@@ -67,28 +153,28 @@ describe('Input component ', () => {
     const wrapper = shallow(<Input type="password" />);
 
     const icon = () => wrapper.childAt(1);
+
     const visibilityIcon = () =>
       icon()
         .html()
         .includes('visibility');
-    const visibilityOffIcon = () =>
-      icon()
-        .html()
-        .includes('visibility_off');
 
-    it('should has "password", as default input type', () => {
+    it('should has "password" as default input type', () => {
       expect(visibilityIcon()).toBeTruthy();
       expect(wrapper.state('type')).toEqual('password');
     });
 
     it('should toggle input type, when password icon is clicked', () => {
-      icon().simulate('click');
+      const visibilityOffIcon = () =>
+        icon()
+          .html()
+          .includes('visibility_off');
 
+      icon().simulate('click');
       expect(visibilityOffIcon()).toBeTruthy();
       expect(wrapper.state('type')).toEqual('text');
 
       icon().simulate('click');
-
       expect(visibilityIcon()).toBeTruthy();
       expect(wrapper.state('type')).toEqual('password');
     });

@@ -1,43 +1,33 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-import { ErrorMessage, Label, FieldGroup } from '../shared';
-import Colors from '../Colors/deprecated';
+import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
+import Colors from '../Colors';
 import Icon from '../Icon';
-import theme from '../shared/theme';
 import InputTypes from './InputTypes';
 
-const sharedStyle = css`
-  font-size: 12px;
-  transform: translateY(-22px);
-`;
+const { default: DEFAULT_INPUT_STYLE } = INPUT_STYLE;
 
 const InputLabel = styled(Label)`
-  cursor: text;
-  font-size: 16px;
-  left: 0;
-  position: absolute;
-  top: 6px;
-  ${theme.mixins.transition()};
-
-  ${props => props.withValue && `${sharedStyle}`} ${props =>
-    props.error && `color: ${Colors.DANGER['500']};`};
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
 `;
 
 const InputTag = styled.input`
-  ${theme.mixins.transition()};
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid ${Colors.SECONDARY['300']};
   box-sizing: border-box;
-  color: ${Colors.SECONDARY['900']};
-  font-size: 16px;
-  height: 30px;
-  padding: 0px 3px;
-  outline: none;
-  width: 100%;
+  margin-top: 8px;
+  padding-right: 42px;
+
+  ${DEFAULT_INPUT_STYLE};
+
+  ${({ searchable }) =>
+    searchable &&
+    `
+    padding: 10px 42px;
+  `}
 
   ${props =>
     props.password &&
@@ -49,39 +39,69 @@ const InputTag = styled.input`
     display: none;
   }
 
-  &:focus {
-    border-color: ${Colors.PRIMARY['500']};
-  }
-
-  ${props =>
-    props.error &&
+  ${({ placeholder, defaultValue }) =>
+    placeholder &&
+    !defaultValue &&
     `
-    border-color: ${Colors.DANGER['500']};
+    color: ${Colors.BLACK['400']};
   `}
 
-  &:focus + ${InputLabel} {
-    color: ${Colors.PRIMARY['500']};
-    ${sharedStyle}
+  :-webkit-autofill {
+    box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
   }
 `;
 
 const InputIcon = styled(Icon)`
-  position: absolute;
-  right: 2px;
   cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 50px;
+
+  ${({ description }) =>
+    description &&
+    `
+    top: 70px;
+  `};
 `;
 
-const InputFieldGroup = styled(FieldGroup)`
-  margin: 40px 0 20px;
+const InputSearchIcon = styled(InputIcon)`
+  left: 12px;
+`;
 
-  &:first-child {
-    margin-top: 20px;
-  }
+const InputErrorIcon = styled(InputIcon)`
+  color: ${Colors.ERROR['500']};
 `;
 
 const InputErrorMessage = styled(ErrorMessage)`
-  margin-top: 8px;
+  padding: 8px 12px;
 `;
+
+const HelperText = styled.span`
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px;
+`;
+
+const DescriptionLabel = styled.span`
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  padding: 0px 12px;
+`;
+
+const RequiredMark = styled.em`
+  color: ${Colors.ERROR['500']};
+`;
+
+InputSearchIcon.displayName = 'InputSearchIcon';
+InputErrorIcon.displayName = 'InputErrorIcon';
+HelperText.displayName = 'HelperText';
+DescriptionLabel.displayName = 'DescriptionLabel';
+InputTag.displayName = 'InputTag';
+InputLabel.displayName = 'InputLabel';
 
 /** A text field component to get user text data */
 class Input extends React.Component {
@@ -97,79 +117,95 @@ class Input extends React.Component {
 
   static Password = InputTypes.Password;
 
+  static counter = 0;
+
   constructor(props) {
     super(props);
 
-    const { value, type } = props;
+    const { type } = props;
 
-    this.state = {
-      value,
-      type,
-    };
+    this.state = { type };
   }
-
-  componentWillUpdate(nextProps) {
-    const { value, type } = this.state;
-    if (nextProps.value !== value || nextProps.type !== type) {
-      this.state.value = nextProps.value;
-      this.state.type = nextProps.type;
-    }
-  }
-
-  _onChange = e => {
-    const { onChange } = this.props;
-    const {
-      target: { value },
-    } = e;
-
-    this.setState({ value });
-
-    onChange(e, { value });
-  };
 
   _changeType = type => {
     this.setState({ type });
   };
 
-  _showPassword = () => {
+  _toggleInputType = () => {
     const { type } = this.state;
-
-    if (type === 'text') {
-      this._changeType('password');
-    } else {
-      this._changeType('text');
-    }
+    this._changeType(type === 'text' ? 'password' : 'text');
   };
 
+  _getId() {
+    const { id } = this.props;
+    if (id) {
+      return id;
+    }
+
+    const _id = `input-${Input.counter}`;
+    Input.counter += 1;
+    return _id;
+  }
+
   render() {
-    const { id, label, error, mask, type: inputType, ...rest } = this.props;
-    const { value, type } = this.state;
+    const {
+      label,
+      error,
+      type: typeProp,
+      descriptionLabel,
+      helperText,
+      required,
+      value,
+      ...rest
+    } = this.props;
+    const { type: typeState } = this.state;
+    const _id = this._getId();
+    const _isSearchType = typeProp === 'search';
 
     return (
-      <InputFieldGroup>
-        <MaskedInput
-          {...rest}
-          id={id}
-          type={type}
-          mask={mask}
-          value={value}
-          onChange={this._onChange}
-          render={(ref, props) => <InputTag ref={ref} {...props} />}
-        />
-
+      <FieldGroup>
         {label && (
-          <InputLabel htmlFor={id} error={error} withValue={!!value}>
+          <InputLabel htmlFor={_id} error={error}>
             {label}
+            {required && <RequiredMark>*</RequiredMark>}
           </InputLabel>
         )}
-        {inputType === 'password' && (
+        {descriptionLabel && (
+          <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
+        )}
+        {_isSearchType && (
+          <InputSearchIcon name="search" description={descriptionLabel} />
+        )}
+        <MaskedInput
+          {...rest}
+          id={_id}
+          type={typeState}
+          value={value}
+          render={(ref, props) => (
+            <InputTag
+              ref={ref}
+              error={error}
+              searchable={_isSearchType}
+              {...props}
+            />
+          )}
+        />
+        {error && (
+          <InputErrorIcon name="error" description={descriptionLabel} />
+        )}
+        {typeProp === 'password' && !error && (
           <InputIcon
-            name={type === 'password' ? 'visibility' : 'visibility_off'}
-            onClick={this._showPassword}
+            name={typeState === 'password' ? 'visibility' : 'visibility_off'}
+            description={descriptionLabel}
+            onClick={this._toggleInputType}
           />
         )}
+        {!!value && !error && (
+          <InputIcon name="cancel" description={descriptionLabel} />
+        )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
-      </InputFieldGroup>
+        {helperText && !error && <HelperText>{helperText}</HelperText>}
+      </FieldGroup>
     );
   }
 }
@@ -179,24 +215,34 @@ Input.defaultProps = {
   id: '',
   label: '',
   mask: false,
-  maxLength: '',
   type: 'text',
   value: '',
-  onBlur: () => {},
-  onChange: () => {},
-  onFocus: () => {},
+  helperText: '',
+  descriptionLabel: '',
+  required: false,
+  placeholder: '',
 };
 
 Input.propTypes = {
   value: PropTypes.string,
-  /** Display a label text that describe the field */
+  /** Displays a label text that describes the field */
   label: PropTypes.string,
-  type: PropTypes.oneOf(['email', 'text', 'tel', 'number', 'password']),
-  /** Display an error message and changes border color to error color */
+  /** Displays a helper text below the input */
+  helperText: PropTypes.string,
+  /** Displays a description text below the label */
+  descriptionLabel: PropTypes.string,
+  required: PropTypes.bool,
+  placeholder: PropTypes.string,
+  type: PropTypes.oneOf([
+    'email',
+    'text',
+    'tel',
+    'number',
+    'password',
+    'search',
+  ]),
+  /** Displays an error message and changes border color to error color */
   error: PropTypes.string,
-  /** Set a text mask that filter user input */
-  maxLength: PropTypes.string,
-  /** A html identification */
   id: PropTypes.string,
   /**
    * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
@@ -208,9 +254,6 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
 };
 
 Input.displayName = 'Input';

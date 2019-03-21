@@ -15,6 +15,9 @@ const createPackageJson = () => {
     devDependencies,
     'lint-staged': lintStaged,
     jest,
+    config,
+    publishConfig,
+    release,
     ...packageDataOther
   } = pkg;
 

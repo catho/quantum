@@ -1,69 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form component  should match the snapshot 1`] = `
-.c3 {
-  cursor: pointer;
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 5px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: text;
-  font-size: 16px;
-  left: 0;
-  position: absolute;
-  top: 6px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.c1 {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #93a3ad;
-  box-sizing: border-box;
-  color: #364c5a;
-  font-size: 16px;
-  height: 30px;
-  padding: 0px 3px;
-  outline: none;
-  width: 100%;
-}
-
-.c1::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.c1:focus {
-  border-color: #03a9f4;
-}
-
-.c1:focus + .c2 {
-  color: #03a9f4;
-  font-size: 12px;
-  -webkit-transform: translateY(-22px);
-  -ms-transform: translateY(-22px);
-  transform: translateY(-22px);
-}
-
 .c0 {
   position: relative;
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
-  margin: 40px 0 20px;
 }
 
-.c0:first-child {
-  margin-top: 20px;
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
 }
 
-.c4 {
+.c2 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c2::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -96,25 +92,25 @@ exports[`Form component  should match the snapshot 1`] = `
   border-radius: 4px;
 }
 
-.c4 .c5 {
+.c3 .c4 {
   font-size: 24px;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c3:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c3:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -128,160 +124,175 @@ exports[`Form component  should match the snapshot 1`] = `
   <div
     className="c0"
   >
-    <input
-      className="c1"
-      defaultValue=""
-      id=""
-      maxLength=""
-      name="required"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="text"
-    />
     <label
-      className="c2 c3"
-      htmlFor=""
+      className="c1"
+      htmlFor="input-0"
     >
       required
     </label>
     
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-0"
+      name="required"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    
+    
   </div>
   <div
     className="c0"
   >
-    <input
-      className="c1"
-      defaultValue=""
-      id=""
-      maxLength=""
-      name="cpf"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="text"
-    />
     <label
-      className="c2 c3"
-      htmlFor=""
+      className="c1"
+      htmlFor="input-1"
     >
       CPF
     </label>
     
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-1"
+      name="cpf"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    
+    
   </div>
   <div
     className="c0"
   >
-    <input
-      className="c1"
-      defaultValue=""
-      id=""
-      maxLength=""
-      name="cep"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="text"
-    />
     <label
-      className="c2 c3"
-      htmlFor=""
+      className="c1"
+      htmlFor="input-2"
     >
       CEP
     </label>
     
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-2"
+      name="cep"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    
+    
   </div>
   <div
     className="c0"
   >
-    <input
-      className="c1"
-      defaultValue=""
-      id=""
-      maxLength=""
-      name="birthday"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="text"
-    />
     <label
-      className="c2 c3"
-      htmlFor=""
+      className="c1"
+      htmlFor="input-3"
     >
       Birthday
     </label>
     
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-3"
+      name="birthday"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    
+    
   </div>
   <div
     className="c0"
   >
-    <input
-      className="c1"
-      defaultValue=""
-      id=""
-      maxLength=""
-      name="email"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="text"
-    />
     <label
-      className="c2 c3"
-      htmlFor=""
+      className="c1"
+      htmlFor="input-4"
     >
       E-mail
     </label>
     
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-4"
+      name="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    
+    
   </div>
   <div
     className="c0"
   >
-    <input
-      className="c1"
-      defaultValue=""
-      id=""
-      maxLength=""
-      minLength="8"
-      name="address"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="text"
-    />
     <label
-      className="c2 c3"
-      htmlFor=""
+      className="c1"
+      htmlFor="input-5"
     >
       Address
     </label>
     
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-5"
+      minLength="8"
+      name="address"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    
+    
   </div>
   <div
     className="c0"
   >
-    <input
-      className="c1"
-      defaultValue=""
-      id=""
-      maxLength="3"
-      name="country"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      type="text"
-    />
     <label
-      className="c2 c3"
-      htmlFor=""
+      className="c1"
+      htmlFor="input-6"
     >
       Country
     </label>
     
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-6"
+      maxLength="3"
+      name="country"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    
+    
   </div>
   <button
-    className="c4"
+    className="c3"
     disabled={false}
     onClick={[Function]}
     size="medium"
