@@ -87,7 +87,7 @@ ShallowWrapper {
                 "componentId": "TabbedView__NavItem-sc-131sgnr-1",
                 "isStatic": false,
                 "rules": Array [
-                  "cursor:pointer;height:48px;font-size:20px;box-sizing:border-box;line-height:1.5;overflow:hidden;padding:9px 16px;position:relative;text-align:center;text-transform:uppercase;min-width:90px;flex-shrink:0;",
+                  "box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;padding:9px 16px;position:relative;text-align:center;text-transform:uppercase;",
                   [Function],
                 ],
               },
@@ -214,7 +214,7 @@ ShallowWrapper {
                   "componentId": "TabbedView__NavItem-sc-131sgnr-1",
                   "isStatic": false,
                   "rules": Array [
-                    "cursor:pointer;height:48px;font-size:20px;box-sizing:border-box;line-height:1.5;overflow:hidden;padding:9px 16px;position:relative;text-align:center;text-transform:uppercase;min-width:90px;flex-shrink:0;",
+                    "box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;padding:9px 16px;position:relative;text-align:center;text-transform:uppercase;",
                     [Function],
                   ],
                 },
