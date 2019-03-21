@@ -151,7 +151,7 @@
       [
         "@semantic-release/exec",
         {
-          "successCmd": "yarn deploy-storybook"
+          "successCmd": "yarn deploy-storybook --ci"
         }
       ]
     ]
