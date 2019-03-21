@@ -12,7 +12,7 @@ const Typography = createGlobalStyle`
   body {
     font-size: 16px;
     letter-spacing: 0.2px;
-    color: ${Colors.BLACK[700]}
+    color: ${Colors.BLACK[700]};
   }
 
   h1, h2, h3, h4, h5, h6 {

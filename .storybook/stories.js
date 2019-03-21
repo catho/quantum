@@ -19,6 +19,7 @@ export default [
   // Forms
   'Checkbox',
   'Dropdown',
+  'Input',
   'RadioGroup',
   'Toggle',
   'Form',
@@ -35,4 +36,7 @@ export default [
 
   // TabbedView
   'TabbedView',
+
+  // Card
+  'Card',
 ].map(s => `./${s}/${s}.story.jsx`);
