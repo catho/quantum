@@ -25,10 +25,6 @@ const StyledTextArea = styled.textarea`
   }
 `;
 
-const TextAreaLabel = styled(Label)`
-  ${LABEL_STYLE}
-`;
-
 const HelperText = styled.span`
   ${HELPER_TEXT_STYLE}
 `;
@@ -47,15 +43,17 @@ const TextAreaErrorMessage = styled(ErrorMessage)`
   `}
 `;
 
+const TextAreaLabel = styled.span`
+  ${LABEL_STYLE}
+`;
+
 const TextArea = ({ label, required, helperText, error, ...rest }) => (
   <FieldGroup>
-    {label && (
-      <TextAreaLabel>
-        {label}
-        {required && <RequiredMark>*</RequiredMark>}
-      </TextAreaLabel>
-    )}
-    <StyledTextArea error={error} {...rest} />
+    <Label>
+      {label && <TextAreaLabel>{label}</TextAreaLabel>}
+      {required && <RequiredMark>*</RequiredMark>}
+      <StyledTextArea error={error} {...rest} />
+    </Label>
     {helperText && <HelperText>{helperText}</HelperText>}
     {error && (
       <TextAreaErrorMessage helperText={helperText}>
@@ -70,7 +68,7 @@ TextArea.defaultProps = {
   error: '',
   helperText: '',
   label: 'Textarea label',
-  onChange: () => {},
+  onChange: () => { },
   placeholder: '',
   required: false,
   value: '',
