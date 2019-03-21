@@ -9,7 +9,7 @@ const getColors = skin => {
     default: {
       background: 'transparent',
       text: 'inherit',
-      activeText: Colors.COBALT[500],
+      activeText: Colors.BLUE[500],
       hover: Colors.BLUE[200],
     },
     blue: {
