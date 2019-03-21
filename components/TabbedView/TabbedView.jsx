@@ -7,16 +7,16 @@ import Tab from './Tab';
 const getColors = skin => {
   const skins = {
     default: {
-      background: 'transparent',
-      text: 'inherit',
       activeText: Colors.BLUE[500],
+      background: 'transparent',
       hover: Colors.BLUE[200],
+      text: 'inherit',
     },
     blue: {
-      background: Colors.BLUE[500],
-      text: Colors.WHITE,
       activeText: Colors.WHITE,
+      background: Colors.BLUE[500],
       hover: Colors.COBALT[500],
+      text: Colors.WHITE,
     },
   };
 
@@ -35,30 +35,30 @@ const Navbar = styled.ul`
 Navbar.displayName = 'Navbar';
 
 const NavItem = styled.li`
-  cursor: pointer;
-  height: 48px;
-  font-size: 20px;
   box-sizing: border-box;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 20px;
+  height: 48px;
   line-height: 1.5;
+  min-width: 90px;
   overflow: hidden;
   padding: 9px 16px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  min-width: 90px;
-  flex-shrink: 0;
 
   ${({ skin, active }) => {
     const { background, text, activeText, hover } = getColors(skin);
     return css`
-      color: ${text};
       background-color: ${background};
+      color: ${text};
 
       ${active &&
         `
+        border-bottom: 4px solid ${activeText};
         color: ${activeText};
         font-weight: bold;
-        border-bottom: 4px solid ${activeText};
       `}
 
       &:hover {
