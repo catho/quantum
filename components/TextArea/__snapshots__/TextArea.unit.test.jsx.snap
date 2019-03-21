@@ -66,6 +66,7 @@ exports[`TextArea component should match snapshots 1`] = `
     placeholder=""
   />
   
+  
 </div>
 `;
 
@@ -136,6 +137,7 @@ exports[`TextArea component should match snapshots 2`] = `
     value="foo"
   />
   
+  
 </div>
 `;
 
@@ -204,6 +206,7 @@ exports[`TextArea component should match snapshots 3`] = `
     disabled={false}
     placeholder=""
   />
+  
   
 </div>
 `;
@@ -283,6 +286,7 @@ exports[`TextArea component should match snapshots 4`] = `
     placeholder=""
   />
   
+  
 </div>
 `;
 
@@ -351,6 +355,7 @@ exports[`TextArea component should match snapshots 5`] = `
     disabled={true}
     placeholder=""
   />
+  
   
 </div>
 `;
@@ -421,6 +426,7 @@ exports[`TextArea component should match snapshots 6`] = `
     placeholder="this input has a placeholder"
   />
   
+  
 </div>
 `;
 
@@ -478,6 +484,7 @@ exports[`TextArea component should match snapshots 7`] = `
 
 .c3 {
   cursor: text;
+  display: block;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
@@ -502,5 +509,96 @@ exports[`TextArea component should match snapshots 7`] = `
   >
     this is a helper text
   </span>
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 8`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  border-color: #ff2d4d;
+  min-height: 108px;
+  margin-top: 8px;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
+}
+
+.c3 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+  >
+    Textarea label
+  </label>
+  <textarea
+    className="c2"
+    disabled={false}
+    placeholder=""
+  />
+  
+  <div
+    className="c3"
+  >
+    Error message
+  </div>
 </div>
 `;

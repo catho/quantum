@@ -13,7 +13,7 @@ describe('TextArea component', () => {
       <TextArea disabled />,
       <TextArea placeholder="this input has a placeholder" />,
       <TextArea helperText="this is a helper text" />,
-      // <TextArea error="Error message" />,
+      <TextArea error="Error message" />,
     ];
 
     TEXT_AREAS.forEach(textArea =>
@@ -42,5 +42,12 @@ describe('TextArea component', () => {
     const textAreaHelperText = component.find('HelperText').text();
 
     expect(textAreaHelperText).toMatch(helperTextContent);
+  });
+
+  it.only('should have a error text when "error" prop is set', () => {
+    const errorMessageContent = 'Error message';
+    const component = mount(<TextArea error={errorMessageContent} />);
+    const errorMessage = component.find('TextAreaErrorMessage').text();
+    expect(errorMessage).toMatch(errorMessageContent);
   });
 });
