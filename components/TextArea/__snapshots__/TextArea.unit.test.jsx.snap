@@ -26,8 +26,11 @@ exports[`TextArea component should match snapshots 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2:hover,
@@ -42,6 +45,10 @@ exports[`TextArea component should match snapshots 1`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -63,7 +70,9 @@ exports[`TextArea component should match snapshots 1`] = `
   <textarea
     className="c2"
     disabled={false}
+    onChange={[Function]}
     placeholder=""
+    value=""
   />
   
   
@@ -96,8 +105,11 @@ exports[`TextArea component should match snapshots 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2:hover,
@@ -112,6 +124,10 @@ exports[`TextArea component should match snapshots 2`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -133,6 +149,7 @@ exports[`TextArea component should match snapshots 2`] = `
   <textarea
     className="c2"
     disabled={false}
+    onChange={[Function]}
     placeholder=""
     value="foo"
   />
@@ -167,8 +184,11 @@ exports[`TextArea component should match snapshots 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2:hover,
@@ -183,6 +203,10 @@ exports[`TextArea component should match snapshots 3`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -204,7 +228,9 @@ exports[`TextArea component should match snapshots 3`] = `
   <textarea
     className="c2"
     disabled={false}
+    onChange={[Function]}
     placeholder=""
+    value=""
   />
   
   
@@ -237,8 +263,11 @@ exports[`TextArea component should match snapshots 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c3:hover,
@@ -253,6 +282,10 @@ exports[`TextArea component should match snapshots 4`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -283,7 +316,9 @@ exports[`TextArea component should match snapshots 4`] = `
   <textarea
     className="c3"
     disabled={false}
+    onChange={[Function]}
     placeholder=""
+    value=""
   />
   
   
@@ -316,8 +351,11 @@ exports[`TextArea component should match snapshots 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2:hover,
@@ -332,6 +370,10 @@ exports[`TextArea component should match snapshots 5`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -353,7 +395,9 @@ exports[`TextArea component should match snapshots 5`] = `
   <textarea
     className="c2"
     disabled={true}
+    onChange={[Function]}
     placeholder=""
+    value=""
   />
   
   
@@ -386,8 +430,12 @@ exports[`TextArea component should match snapshots 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  color: #999999;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2:hover,
@@ -402,6 +450,10 @@ exports[`TextArea component should match snapshots 6`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -423,7 +475,9 @@ exports[`TextArea component should match snapshots 6`] = `
   <textarea
     className="c2"
     disabled={false}
+    onChange={[Function]}
     placeholder="this input has a placeholder"
+    value=""
   />
   
   
@@ -456,8 +510,11 @@ exports[`TextArea component should match snapshots 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2:hover,
@@ -474,6 +531,10 @@ exports[`TextArea component should match snapshots 7`] = `
   cursor: not-allowed;
 }
 
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
 .c1 {
   display: block;
   margin-bottom: 5px;
@@ -488,7 +549,7 @@ exports[`TextArea component should match snapshots 7`] = `
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 8px 12px 0px;
 }
 
 <div
@@ -502,7 +563,9 @@ exports[`TextArea component should match snapshots 7`] = `
   <textarea
     className="c2"
     disabled={false}
+    onChange={[Function]}
     placeholder=""
+    value=""
   />
   <span
     className="c3"
@@ -540,8 +603,11 @@ exports[`TextArea component should match snapshots 8`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   border-color: #ff2d4d;
+  display: block;
   min-height: 108px;
   margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2:hover,
@@ -564,6 +630,10 @@ exports[`TextArea component should match snapshots 8`] = `
   cursor: not-allowed;
 }
 
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
 .c1 {
   display: block;
   margin-bottom: 5px;
@@ -578,7 +648,7 @@ exports[`TextArea component should match snapshots 8`] = `
   cursor: text;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 8px 12px 0px;
 }
 
 <div
@@ -592,7 +662,9 @@ exports[`TextArea component should match snapshots 8`] = `
   <textarea
     className="c2"
     disabled={false}
+    onChange={[Function]}
     placeholder=""
+    value=""
   />
   
   <div

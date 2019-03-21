@@ -44,7 +44,7 @@ describe('TextArea component', () => {
     expect(textAreaHelperText).toMatch(helperTextContent);
   });
 
-  it.only('should have a error text when "error" prop is set', () => {
+  it('should have a error text when "error" prop is set', () => {
     const errorMessageContent = 'Error message';
     const component = mount(<TextArea error={errorMessageContent} />);
     const errorMessage = component.find('TextAreaErrorMessage').text();

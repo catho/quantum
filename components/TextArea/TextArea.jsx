@@ -18,6 +18,7 @@ const StyledTextArea = styled.textarea`
   display: block;
   min-height: 108px;
   margin-top: 8px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
   :-webkit-autofill {
     ${AUTO_FILL_STYLE}
@@ -65,21 +66,25 @@ const TextArea = ({ label, required, helperText, error, ...rest }) => (
 );
 
 TextArea.defaultProps = {
-  label: 'Textarea label',
-  required: false,
   disabled: false,
-  placeholder: '',
-  helperText: '',
   error: '',
+  helperText: '',
+  label: 'Textarea label',
+  onChange: () => {},
+  placeholder: '',
+  required: false,
+  value: '',
 };
 
 TextArea.propTypes = {
-  label: PropTypes.string,
-  required: PropTypes.bool,
   disabled: PropTypes.bool,
-  placeholder: PropTypes.string,
-  helperText: PropTypes.string,
   error: PropTypes.string,
+  helperText: PropTypes.string,
+  label: PropTypes.string,
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool,
+  value: PropTypes.string,
 };
 
 StyledTextArea.displayName = 'StyledTextArea';

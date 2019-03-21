@@ -44,13 +44,6 @@ const InputTag = styled.input`
     display: none;
   }
 
-  ${({ placeholder, defaultValue }) =>
-    placeholder &&
-    !defaultValue &&
-    `
-    color: ${Colors.BLACK['400']};
-  `}
-
   :-webkit-autofill {
     ${AUTO_FILL_STYLE}
   }

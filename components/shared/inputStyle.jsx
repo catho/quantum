@@ -87,6 +87,14 @@ const INPUT_STYLE = css`
   &[disabled] {
     ${DISABLED_STYLE}
   }
+
+  ${({ placeholder, defaultValue, value }) =>
+    placeholder &&
+    !defaultValue &&
+    !value &&
+    `
+    color: ${Colors.BLACK['400']};
+  `}
 `;
 
 export {
