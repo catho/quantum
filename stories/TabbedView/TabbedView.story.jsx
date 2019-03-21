@@ -18,10 +18,8 @@ import {
 storiesOf('TabbedView', module).add('TabbedView', () => (
   <>
     <Heading name="TabbedView">
-      <p>
-        TabbedView and Tab are components created to organize content into
-        separate views where only one view can be visible at a time.
-      </p>
+      TabbedView and Tab are components created to organize content into
+      separate views where only one view can be visible at a time.
     </Heading>
 
     <TabbedView>
