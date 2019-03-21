@@ -14,6 +14,7 @@ const {
   HELPER_TEXT_STYLE,
   REQUIRED_MARK_STYLE,
   ERROR_MESSAGE_STYLE,
+  AUTO_FILL_STYLE,
 } = INPUT_STYLE;
 
 const InputLabel = styled(Label)`
@@ -51,7 +52,7 @@ const InputTag = styled.input`
   `}
 
   :-webkit-autofill {
-    box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
+    ${AUTO_FILL_STYLE}
   }
 `;
 

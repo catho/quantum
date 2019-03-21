@@ -62,6 +62,10 @@ const ERROR_MESSAGE_STYLE = css`
   padding: 8px 12px;
 `;
 
+const AUTO_FILL_STYLE = css`
+  box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
+`;
+
 const INPUT_STYLE = css`
   ${DEFAULT_STYLE}
 
@@ -95,5 +99,6 @@ export {
   HELPER_TEXT_STYLE,
   REQUIRED_MARK_STYLE,
   ERROR_MESSAGE_STYLE,
+  AUTO_FILL_STYLE,
   INPUT_STYLE as default,
 };
