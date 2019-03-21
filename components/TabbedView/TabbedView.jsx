@@ -50,7 +50,6 @@ const NavItem = styled.li`
 
   ${({ skin, active }) => {
     const { background, text, activeText, hover } = getColors(skin);
-    console.log({ background, text, hover });
     return css`
       color: ${text};
       background-color: ${background};
@@ -105,7 +104,7 @@ class TabbedView extends React.Component {
     const { activeTab } = this.state;
 
     return (
-      <React.Fragment>
+      <>
         <Navbar>
           {React.Children.map(children, ({ props: { title } }) => (
             <NavItem
@@ -124,20 +123,15 @@ class TabbedView extends React.Component {
             {child.props.children}
           </RenderIf>
         ))}
-      </React.Fragment>
+      </>
     );
   }
 }
 
 TabbedView.propTypes = {
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(
-      PropTypes.oneOfType([
-        PropTypes.instanceOf(Tab),
-        PropTypes.instanceOf(TabbedView.Tab),
-      ]),
-    ),
-    PropTypes.instanceOf(Tab),
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]).isRequired,
   activeTab: PropTypes.string,
   skin: PropTypes.oneOf(['default', 'blue']),
