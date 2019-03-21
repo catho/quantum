@@ -79,6 +79,12 @@ const InputErrorIcon = styled(InputIcon)`
 
 const InputErrorMessage = styled(ErrorMessage)`
   ${ERROR_MESSAGE_STYLE}
+
+  ${({ helperText }) =>
+    helperText &&
+    `
+    padding-top: 2px;
+  `}
 `;
 
 const HelperText = styled.span`
@@ -203,8 +209,10 @@ class Input extends React.Component {
         {!!value && !error && (
           <InputIcon name="cancel" description={descriptionLabel} />
         )}
-        {error && <InputErrorMessage>{error}</InputErrorMessage>}
-        {helperText && !error && <HelperText>{helperText}</HelperText>}
+        {helperText && <HelperText>{helperText}</HelperText>}
+        {error && (
+          <InputErrorMessage helperText={helperText}>{error}</InputErrorMessage>
+        )}
       </FieldGroup>
     );
   }

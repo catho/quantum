@@ -51,7 +51,7 @@ const HELPER_TEXT_STYLE = css`
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 8px 12px 0px;
 `;
 
 const REQUIRED_MARK_STYLE = css`
@@ -59,7 +59,7 @@ const REQUIRED_MARK_STYLE = css`
 `;
 
 const ERROR_MESSAGE_STYLE = css`
-  padding: 8px 12px;
+  padding: 8px 12px 0px;
 `;
 
 const AUTO_FILL_STYLE = css`

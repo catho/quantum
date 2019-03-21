@@ -444,7 +444,7 @@ exports[`Input component  should match the snapshot 4`] = `
   cursor: text;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 8px 12px 0px;
 }
 
 .c1 {

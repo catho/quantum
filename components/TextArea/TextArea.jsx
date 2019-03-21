@@ -14,6 +14,8 @@ const {
 
 const StyledTextArea = styled.textarea`
   ${DEFAULT_INPUT_STYLE};
+
+  display: block;
   min-height: 108px;
   margin-top: 8px;
 
@@ -36,7 +38,14 @@ const RequiredMark = styled.em`
 
 const TextAreaErrorMessage = styled(ErrorMessage)`
   ${ERROR_MESSAGE_STYLE}
+
+  ${({ helperText }) =>
+    helperText &&
+    `
+    padding-top: 2px;
+  `}
 `;
+
 const TextArea = ({ label, required, helperText, error, ...rest }) => (
   <FieldGroup>
     {label && (
@@ -47,7 +56,11 @@ const TextArea = ({ label, required, helperText, error, ...rest }) => (
     )}
     <StyledTextArea error={error} {...rest} />
     {helperText && <HelperText>{helperText}</HelperText>}
-    {error && <TextAreaErrorMessage>{error}</TextAreaErrorMessage>}
+    {error && (
+      <TextAreaErrorMessage helperText={helperText}>
+        {error}
+      </TextAreaErrorMessage>
+    )}
   </FieldGroup>
 );
 
