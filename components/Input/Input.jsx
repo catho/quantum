@@ -7,6 +7,7 @@ import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
+import generateId from '../shared/generateId';
 
 const {
   default: DEFAULT_INPUT_STYLE,
@@ -124,6 +125,8 @@ class Input extends React.Component {
     const { type } = props;
 
     this.state = { type };
+
+    this._id = generateId('input-');
   }
 
   _changeType = type => {
@@ -158,13 +161,12 @@ class Input extends React.Component {
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
-    const _id = this._getId();
     const _isSearchType = typeProp === 'search';
 
     return (
       <FieldGroup>
         {label && (
-          <InputLabel htmlFor={_id} error={error}>
+          <InputLabel htmlFor={this._id} error={error}>
             {label}
             {required && <RequiredMark>*</RequiredMark>}
           </InputLabel>
@@ -177,7 +179,7 @@ class Input extends React.Component {
         )}
         <MaskedInput
           {...rest}
-          id={_id}
+          id={this._id}
           type={typeState}
           value={value}
           render={(ref, props) => (
