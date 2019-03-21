@@ -8,12 +8,16 @@ import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
 
-const { default: DEFAULT_INPUT_STYLE } = INPUT_STYLE;
+const {
+  default: DEFAULT_INPUT_STYLE,
+  LABEL_STYLE,
+  HELPER_TEXT_STYLE,
+  REQUIRED_MARK_STYLE,
+  ERROR_MESSAGE_STYLE,
+} = INPUT_STYLE;
 
 const InputLabel = styled(Label)`
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
+  ${LABEL_STYLE}
 `;
 
 const InputTag = styled.input`
@@ -73,16 +77,11 @@ const InputErrorIcon = styled(InputIcon)`
 `;
 
 const InputErrorMessage = styled(ErrorMessage)`
-  padding: 8px 12px;
+  ${ERROR_MESSAGE_STYLE}
 `;
 
 const HelperText = styled.span`
-  cursor: text;
-  display: block;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 600;
-  padding: 8px 12px;
+  ${HELPER_TEXT_STYLE}
 `;
 
 const DescriptionLabel = styled.span`
@@ -93,7 +92,7 @@ const DescriptionLabel = styled.span`
 `;
 
 const RequiredMark = styled.em`
-  color: ${Colors.ERROR['500']};
+  ${REQUIRED_MARK_STYLE}
 `;
 
 InputSearchIcon.displayName = 'InputSearchIcon';

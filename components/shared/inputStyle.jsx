@@ -39,6 +39,29 @@ const DISABLED_STYLE = css`
   cursor: not-allowed;
 `;
 
+const LABEL_STYLE = css`
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
+`;
+
+const HELPER_TEXT_STYLE = css`
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px;
+`;
+
+const REQUIRED_MARK_STYLE = css`
+  color: ${Colors.ERROR['500']};
+`;
+
+const ERROR_MESSAGE_STYLE = css`
+  padding: 8px 12px;
+`;
+
 const INPUT_STYLE = css`
   ${DEFAULT_STYLE}
 
@@ -68,5 +91,9 @@ export {
   ERROR_STŸLE,
   ERROR_HOVER_STYLE,
   DISABLED_STYLE,
+  LABEL_STYLE,
+  HELPER_TEXT_STYLE,
+  REQUIRED_MARK_STYLE,
+  ERROR_MESSAGE_STYLE,
   INPUT_STYLE as default,
 };

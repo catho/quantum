@@ -1,10 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
 import { INPUT_STYLE, Label, FieldGroup, ErrorMessage } from '../shared';
 
-const { default: DEFAULT_INPUT_STYLE } = INPUT_STYLE;
+const {
+  default: DEFAULT_INPUT_STYLE,
+  LABEL_STYLE,
+  HELPER_TEXT_STYLE,
+  REQUIRED_MARK_STYLE,
+  ERROR_MESSAGE_STYLE,
+} = INPUT_STYLE;
 
 const StyledTextArea = styled.textarea`
   ${DEFAULT_INPUT_STYLE};
@@ -13,26 +18,19 @@ const StyledTextArea = styled.textarea`
 `;
 
 const TextAreaLabel = styled(Label)`
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
+  ${LABEL_STYLE}
 `;
 
 const HelperText = styled.span`
-  cursor: text;
-  display: block;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 600;
-  padding: 8px 12px;
+  ${HELPER_TEXT_STYLE}
 `;
 
 const RequiredMark = styled.em`
-  color: ${Colors.ERROR['500']};
+  ${REQUIRED_MARK_STYLE}
 `;
 
 const TextAreaErrorMessage = styled(ErrorMessage)`
-  padding: 8px 12px;
+  ${ERROR_MESSAGE_STYLE}
 `;
 const TextArea = ({ label, required, helperText, error, ...rest }) => (
   <FieldGroup>
