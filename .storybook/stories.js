@@ -35,4 +35,7 @@ export default [
   'Tag',
 
   'Card',
+
+  // Modal
+  'Modal',
 ].map(s => `./${s}/${s}.story.jsx`);
