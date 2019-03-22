@@ -9,7 +9,6 @@ import {
   StoryContainer,
 } from '@catho/quantum-storybook-ui';
 import Button from '../../components/Button';
-import { IconFont } from '../../components/GlobalStyle';
 import { Container, Row, Col } from '../../components/Grid';
 
 const exampleTab = (
@@ -113,7 +112,6 @@ background or foreground of an experience.
 
 storiesOf('Buttons', module).add('Button', () => (
   <>
-    <IconFont />
     <AutoExample
       description={description}
       component={Button}
