@@ -30,11 +30,15 @@ export const ModalCard = styled(Card)`
   ${getBreakpoint}
 `;
 
-const CloseIcon = styled(Button.Icon)`
+const CloseIcon = styled(Button.Icon).attrs({
+  icon: 'close',
+})`
   position: absolute;
   top: 16px;
   right: 16px;
 `;
+
+CloseIcon.displayName = 'CloseIcon';
 
 class Modal extends React.Component {
   static Header = Header;
@@ -80,11 +84,7 @@ class Modal extends React.Component {
     return ReactDOM.createPortal(
       <ModalCard role="dialog">
         {children}
-        <CloseIcon
-          icon="close"
-          onClick={onClose}
-          aria-label={closeButtonAriaLabel}
-        />
+        <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
       </ModalCard>,
       this.modalWrapper,
     );
