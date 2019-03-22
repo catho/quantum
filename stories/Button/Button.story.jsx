@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
 import {
