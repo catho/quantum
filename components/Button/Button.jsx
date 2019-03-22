@@ -185,6 +185,7 @@ const IconButton = styled(Button)`
 
   background-color: transparent;
   box-shadow: none;
+  outline: none;
 
   :hover,
   :focus {
