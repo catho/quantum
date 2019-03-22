@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Button from '../Button';
 import Colors from '../Colors';
 import Icon from '../Icon';
-import Button from '../Button';
 
 const BORDER_SIZE = '1.5px';
 const DEFAULT_SPACING = '16px';
@@ -15,6 +15,22 @@ const Content = styled.div`
 `;
 
 const AlertIcon = styled(Icon)``;
+
+const CloseButton = styled(Button.Icon).attrs({
+  icon: 'close',
+})`
+  height: auto;
+  width: auto;
+  margin: 0 0 0 ${DEFAULT_SPACING};
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+
+  :hover {
+    background: none;
+    opacity: 1;
+  }
+`;
 
 const getStylesBySkin = skin => {
   const colorSchema = skin.toUpperCase();
@@ -41,22 +57,6 @@ const Wrapper = styled.div`
   padding: ${WRAPPER_SPACING} ${DEFAULT_SPACING};
 
   ${({ skin }) => getStylesBySkin(skin)}
-`;
-
-const CloseButton = styled(Button.Icon).attrs({
-  icon: 'close',
-})`
-  height: auto;
-  width: auto;
-  margin: 0 0 0 ${DEFAULT_SPACING};
-  padding: 0;
-  opacity: 0.8;
-  transition: opacity 0.4s ease;
-
-  :hover {
-    background: none;
-    opacity: 1;
-  }
 `;
 
 CloseButton.displayName = 'CloseButton';
