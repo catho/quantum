@@ -14,7 +14,6 @@ import {
 import Dropdown from '../../components/Dropdown';
 import { Row, Col } from '../../components/Grid';
 import List from '../../components/List';
-import { IconFont } from '../../components/GlobalStyle';
 import {
   Simple,
   CustomLabel,
@@ -43,7 +42,6 @@ const importCode = "import { Slider } from '@cathodevel/quantum';";
 
 storiesOf('Forms', module).add('Dropdown', () => (
   <>
-    <IconFont />
     <Heading name="Dropdown">
       <p>
         A dropdown receives user input, allowing it to choose one of several

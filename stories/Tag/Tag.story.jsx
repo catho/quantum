@@ -7,7 +7,7 @@ import {
   StoryContainer,
   Title,
 } from '@catho/quantum-storybook-ui';
-import { Tag, IconFont } from '../../components';
+import { Tag } from '../../components';
 
 const skinsCode = `<Tag>Default</Tag>
 <Tag skin="stroked">Stroked</Tag>
@@ -105,7 +105,6 @@ const sizesExample = (
 
 const exampleTab = (
   <Tab title="Examples">
-    <IconFont />
     <StoryContainer>
       {skinsExample}
       {closableExample}

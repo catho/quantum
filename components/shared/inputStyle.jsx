@@ -5,9 +5,11 @@ const DEFAULT_STYLE = css`
   background-color: ${Colors.WHITE};
   border-radius: 4px;
   border: 1.5px solid ${Colors.BLACK['400']};
+  box-sizing: border-box;
   color: ${Colors.BLACK['700']};
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   letter-spacing: 0.2px;
   outline: none;
   padding: 10px 12px;
@@ -37,6 +39,33 @@ const DISABLED_STYLE = css`
   cursor: not-allowed;
 `;
 
+const LABEL_STYLE = css`
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
+`;
+
+const HELPER_TEXT_STYLE = css`
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px 0px;
+`;
+
+const REQUIRED_MARK_STYLE = css`
+  color: ${Colors.ERROR['500']};
+`;
+
+const ERROR_MESSAGE_STYLE = css`
+  padding: 8px 12px 0px;
+`;
+
+const AUTO_FILL_STYLE = css`
+  box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
+`;
+
 const INPUT_STYLE = css`
   ${DEFAULT_STYLE}
 
@@ -58,6 +87,14 @@ const INPUT_STYLE = css`
   &[disabled] {
     ${DISABLED_STYLE}
   }
+
+  ${({ placeholder, defaultValue, value }) =>
+    placeholder &&
+    !defaultValue &&
+    !value &&
+    `
+    color: ${Colors.BLACK['400']};
+  `}
 `;
 
 export {
@@ -66,5 +103,10 @@ export {
   ERROR_STŸLE,
   ERROR_HOVER_STYLE,
   DISABLED_STYLE,
+  LABEL_STYLE,
+  HELPER_TEXT_STYLE,
+  REQUIRED_MARK_STYLE,
+  ERROR_MESSAGE_STYLE,
+  AUTO_FILL_STYLE,
   INPUT_STYLE as default,
 };

@@ -13,7 +13,6 @@ import {
 } from '@catho/quantum-storybook-ui';
 
 import Icon from '../../components/Icon';
-import { IconFont } from '../../components/GlobalStyle';
 import Colors from '../../components/Colors';
 import Catalogue from './Catalogue';
 
@@ -62,8 +61,6 @@ storiesOf('Foundation', module).add('Icons', () => (
       and items. Download on desktop to use them in your digital products for
       Android, iOS, and web.
     </Heading>
-
-    <IconFont />
 
     <TabbedView>
       <Tab title="Usage">

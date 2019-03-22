@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component  should match snapshots 1`] = `
+exports[`Input component should match snapshots 1`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -15,9 +15,11 @@ exports[`Input component  should match snapshots 1`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -63,6 +65,7 @@ exports[`Input component  should match snapshots 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -71,7 +74,7 @@ exports[`Input component  should match snapshots 1`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 2`] = `
+exports[`Input component should match snapshots 2`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -86,9 +89,11 @@ exports[`Input component  should match snapshots 2`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -141,6 +146,7 @@ exports[`Input component  should match snapshots 2`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -161,7 +167,7 @@ exports[`Input component  should match snapshots 2`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 3`] = `
+exports[`Input component should match snapshots 3`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -184,9 +190,11 @@ exports[`Input component  should match snapshots 3`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -237,6 +245,7 @@ exports[`Input component  should match snapshots 3`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -245,7 +254,7 @@ exports[`Input component  should match snapshots 3`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 4`] = `
+exports[`Input component should match snapshots 4`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -260,9 +269,11 @@ exports[`Input component  should match snapshots 4`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -317,7 +328,7 @@ exports[`Input component  should match snapshots 4`] = `
   cursor: text;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 8px 12px 0px;
 }
 
 <div
@@ -332,6 +343,7 @@ exports[`Input component  should match snapshots 4`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   <span
@@ -346,16 +358,16 @@ exports[`Input component  should match snapshots 4`] = `
   >
     error
   </span>
+  
   <div
     className="c3"
   >
     Error message
   </div>
-  
 </div>
 `;
 
-exports[`Input component  should match snapshots 5`] = `
+exports[`Input component should match snapshots 5`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -370,9 +382,11 @@ exports[`Input component  should match snapshots 5`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -418,6 +432,7 @@ exports[`Input component  should match snapshots 5`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={true}
     type="text"
   />
   
@@ -426,7 +441,7 @@ exports[`Input component  should match snapshots 5`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 6`] = `
+exports[`Input component should match snapshots 6`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -441,9 +456,11 @@ exports[`Input component  should match snapshots 6`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -510,6 +527,7 @@ exports[`Input component  should match snapshots 6`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="search"
   />
   
@@ -518,7 +536,7 @@ exports[`Input component  should match snapshots 6`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 7`] = `
+exports[`Input component should match snapshots 7`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -533,9 +551,11 @@ exports[`Input component  should match snapshots 7`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -582,6 +602,7 @@ exports[`Input component  should match snapshots 7`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -590,7 +611,7 @@ exports[`Input component  should match snapshots 7`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 8`] = `
+exports[`Input component should match snapshots 8`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -605,9 +626,11 @@ exports[`Input component  should match snapshots 8`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -647,7 +670,7 @@ exports[`Input component  should match snapshots 8`] = `
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 8px 12px 0px;
 }
 
 <div
@@ -662,19 +685,20 @@ exports[`Input component  should match snapshots 8`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
-  
   
   <span
     className="c2"
   >
     this is a helper text
   </span>
+  
 </div>
 `;
 
-exports[`Input component  should match snapshots 9`] = `
+exports[`Input component should match snapshots 9`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -689,9 +713,11 @@ exports[`Input component  should match snapshots 9`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -748,6 +774,7 @@ exports[`Input component  should match snapshots 9`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -756,7 +783,7 @@ exports[`Input component  should match snapshots 9`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 10`] = `
+exports[`Input component should match snapshots 10`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -771,9 +798,11 @@ exports[`Input component  should match snapshots 10`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -852,6 +881,7 @@ exports[`Input component  should match snapshots 10`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="search"
   />
   
@@ -860,7 +890,7 @@ exports[`Input component  should match snapshots 10`] = `
 </div>
 `;
 
-exports[`Input component  should match snapshots 11`] = `
+exports[`Input component should match snapshots 11`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -875,9 +905,11 @@ exports[`Input component  should match snapshots 11`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
+  box-sizing: border-box;
   color: #4c4c4c;
   font-size: initial;
   height: 44px;
+  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -924,6 +956,7 @@ exports[`Input component  should match snapshots 11`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder="this input has a placeholder"
+    required={false}
     type="text"
   />
   
