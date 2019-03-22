@@ -120,11 +120,11 @@ class Input extends React.Component {
   constructor(props) {
     super(props);
 
-    const { type } = props;
+    const { type, id } = props;
 
     this.state = { type };
 
-    this._id = props.id || uniqId('input-');
+    this._id = id || uniqId('input-');
   }
 
   _changeType = type => {
