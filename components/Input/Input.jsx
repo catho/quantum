@@ -167,6 +167,7 @@ class Input extends React.Component {
         <MaskedInput
           {...rest}
           id={this._id}
+          required={required}
           type={typeState}
           value={value}
           render={(ref, props) => (

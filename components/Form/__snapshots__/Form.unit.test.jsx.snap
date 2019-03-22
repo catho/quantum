@@ -141,6 +141,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       placeholder=""
+      required={false}
       type="text"
     />
     
@@ -165,6 +166,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       placeholder=""
+      required={false}
       type="text"
     />
     
@@ -189,6 +191,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       placeholder=""
+      required={false}
       type="text"
     />
     
@@ -213,6 +216,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       placeholder=""
+      required={false}
       type="text"
     />
     
@@ -237,6 +241,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       placeholder=""
+      required={false}
       type="text"
     />
     
@@ -262,6 +267,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       placeholder=""
+      required={false}
       type="text"
     />
     
@@ -287,6 +293,7 @@ exports[`Form component  should match the snapshot 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       placeholder=""
+      required={false}
       type="text"
     />
     

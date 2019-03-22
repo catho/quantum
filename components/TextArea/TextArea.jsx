@@ -54,7 +54,7 @@ const TextArea = ({ label, required, helperText, error, id, ...rest }) => {
           {required && <RequiredMark>*</RequiredMark>}
         </TextAreaLabel>
       )}
-      <TextAreaTag error={error} id={_id} {...rest} />
+      <TextAreaTag error={error} id={_id} required={required} {...rest} />
       {helperText && <HelperText>{helperText}</HelperText>}
       {error && (
         <TextAreaErrorMessage helperText={helperText}>

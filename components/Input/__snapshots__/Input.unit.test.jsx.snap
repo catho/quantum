@@ -65,6 +65,7 @@ exports[`Input component should match snapshots 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -145,6 +146,7 @@ exports[`Input component should match snapshots 2`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -243,6 +245,7 @@ exports[`Input component should match snapshots 3`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -340,6 +343,7 @@ exports[`Input component should match snapshots 4`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   <span
@@ -428,6 +432,7 @@ exports[`Input component should match snapshots 5`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={true}
     type="text"
   />
   
@@ -522,6 +527,7 @@ exports[`Input component should match snapshots 6`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="search"
   />
   
@@ -596,6 +602,7 @@ exports[`Input component should match snapshots 7`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -678,6 +685,7 @@ exports[`Input component should match snapshots 8`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -766,6 +774,7 @@ exports[`Input component should match snapshots 9`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="text"
   />
   
@@ -872,6 +881,7 @@ exports[`Input component should match snapshots 10`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
+    required={false}
     type="search"
   />
   
@@ -946,6 +956,7 @@ exports[`Input component should match snapshots 11`] = `
     onBlur={[Function]}
     onChange={[Function]}
     placeholder="this input has a placeholder"
+    required={false}
     type="text"
   />
   

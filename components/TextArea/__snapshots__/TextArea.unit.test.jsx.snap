@@ -56,6 +56,7 @@ exports[`TextArea component should match snapshots 1`] = `
     id="textarea-0"
     onChange={[Function]}
     placeholder=""
+    required={false}
     value=""
   />
   
@@ -119,6 +120,7 @@ exports[`TextArea component should match snapshots 2`] = `
     id="textarea-1"
     onChange={[Function]}
     placeholder=""
+    required={false}
     value="foo"
   />
   
@@ -196,6 +198,7 @@ exports[`TextArea component should match snapshots 3`] = `
     id="textarea-2"
     onChange={[Function]}
     placeholder=""
+    required={false}
     value=""
   />
   
@@ -282,6 +285,7 @@ exports[`TextArea component should match snapshots 4`] = `
     id="textarea-3"
     onChange={[Function]}
     placeholder=""
+    required={true}
     value=""
   />
   
@@ -345,6 +349,7 @@ exports[`TextArea component should match snapshots 5`] = `
     id="textarea-4"
     onChange={[Function]}
     placeholder=""
+    required={false}
     value=""
   />
   
@@ -409,6 +414,7 @@ exports[`TextArea component should match snapshots 6`] = `
     id="textarea-5"
     onChange={[Function]}
     placeholder="this input has a placeholder"
+    required={false}
     value=""
   />
   
@@ -481,6 +487,7 @@ exports[`TextArea component should match snapshots 7`] = `
     id="textarea-6"
     onChange={[Function]}
     placeholder=""
+    required={false}
     value=""
   />
   <span
@@ -564,6 +571,7 @@ exports[`TextArea component should match snapshots 8`] = `
     id="textarea-7"
     onChange={[Function]}
     placeholder=""
+    required={false}
     value=""
   />
   
