@@ -1,0 +1,1050 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert component Should match the snapshot of a simple alert 1`] = `
+.c7 {
+  pointer-events: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c5 .c6 {
+  font-size: 24px;
+}
+
+.c5:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: undefined;
+  background-color: #e5edfc;
+  border: 1.5px solid #1355d0;
+}
+
+.c0 .c1 .c8 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #1355d0;
+}
+
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span>
+      Sample alert
+    </span>
+    <button
+      className="c3 c4 c5"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c6 c7"
+        size="medium"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Alert component When you set a alert custom icon Should match the snapshot with an icon 1`] = `
+.c8 {
+  pointer-events: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c6 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c6 .c7 {
+  font-size: 24px;
+}
+
+.c6:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c6:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c6:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: undefined;
+  background-color: #e5edfc;
+  border: 1.5px solid #1355d0;
+}
+
+.c0 .c1 .c3 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c4 {
+  color: #1355d0;
+}
+
+.c5 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c5:hover,
+.c5:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c5:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c5:hover {
+  background: none;
+  opacity: 1;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c3 "
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      info
+    </span>
+    <span>
+      Sample alert
+    </span>
+    <button
+      className="c4 c5 c6"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c7 c8"
+        size="medium"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Alert component When you set a different skin Should match a skin snapshot 1`] = `
+.c7 {
+  pointer-events: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c5 .c6 {
+  font-size: 24px;
+}
+
+.c5:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: undefined;
+  background-color: #e5edfc;
+  border: 1.5px solid #1355d0;
+}
+
+.c0 .c1 .c8 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #1355d0;
+}
+
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span>
+      blue
+    </span>
+    <button
+      className="c3 c4 c5"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c6 c7"
+        size="medium"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Alert component When you set a different skin Should match a skin snapshot 2`] = `
+.c7 {
+  pointer-events: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c5 .c6 {
+  font-size: 24px;
+}
+
+.c5:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 .c1 .c9 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c8 .c1 .c3 {
+  color: #1355d0;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #3c6510;
+  background-color: #edfadf;
+  border: 1.5px solid #7ed321;
+}
+
+.c0 .c1 .c9 {
+  color: #7ed321;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #7ed321;
+}
+
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span>
+      success
+    </span>
+    <button
+      className="c3 c4 c5"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c6 c7"
+        size="medium"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Alert component When you set a different skin Should match a skin snapshot 3`] = `
+.c7 {
+  pointer-events: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c5 .c6 {
+  font-size: 24px;
+}
+
+.c5:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 .c1 .c10 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c8 .c1 .c3 {
+  color: #1355d0;
+}
+
+.c9 .c1 .c10 {
+  color: #7ed321;
+  margin-right: 16px;
+}
+
+.c9 .c1 .c3 {
+  color: #7ed321;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #a36300;
+  background-color: #ffefd6;
+  border: 1.5px solid #f09100;
+}
+
+.c0 .c1 .c10 {
+  color: #f09100;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #f09100;
+}
+
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span>
+      warning
+    </span>
+    <button
+      className="c3 c4 c5"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c6 c7"
+        size="medium"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Alert component When you set a different skin Should match a skin snapshot 4`] = `
+.c7 {
+  pointer-events: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c5 .c6 {
+  font-size: 24px;
+}
+
+.c5:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 .c1 .c11 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c8 .c1 .c3 {
+  color: #1355d0;
+}
+
+.c9 .c1 .c11 {
+  color: #7ed321;
+  margin-right: 16px;
+}
+
+.c9 .c1 .c3 {
+  color: #7ed321;
+}
+
+.c10 .c1 .c11 {
+  color: #f09100;
+  margin-right: 16px;
+}
+
+.c10 .c1 .c3 {
+  color: #f09100;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #ac001a;
+  background-color: #ffe5e9;
+  border: 1.5px solid #ff2d4d;
+}
+
+.c0 .c1 .c11 {
+  color: #ff2d4d;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #ff2d4d;
+}
+
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span>
+      error
+    </span>
+    <button
+      className="c3 c4 c5"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c6 c7"
+        size="medium"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;

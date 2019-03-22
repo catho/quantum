@@ -13,6 +13,7 @@ export default [
   'Typography',
   'Icon',
 
+  'Alert',
   // 2. Buttons
   'Button',
 

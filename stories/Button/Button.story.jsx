@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
 import {
@@ -117,6 +117,9 @@ storiesOf('Buttons', module).add('Button', () => (
     <AutoExample
       description={description}
       component={Button}
+      componentProps={{
+        children: 'Catho',
+      }}
       additionalTabs={exampleTab}
     />
   </>
