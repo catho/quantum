@@ -78,24 +78,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   display: flex;
 }
 
-.c0 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  padding: 11px 16px;
-  color: undefined;
-  background-color: #e5edfc;
-  border: 1.5px solid #1355d0;
-}
-
-.c0 .c1 .c8 {
-  color: #1355d0;
-  margin-right: 16px;
-}
-
-.c0 .c1 .c3 {
-  color: #1355d0;
-}
-
 .c4 {
   border-radius: 50%;
   border: none;
@@ -128,6 +110,24 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c4:hover {
   background: none;
   opacity: 1;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: undefined;
+  background-color: #e5edfc;
+  border: 1.5px solid #1355d0;
+}
+
+.c0 .c1 .c8 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #1355d0;
 }
 
 <div
@@ -242,24 +242,6 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   display: flex;
 }
 
-.c0 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  padding: 11px 16px;
-  color: undefined;
-  background-color: #e5edfc;
-  border: 1.5px solid #1355d0;
-}
-
-.c0 .c1 .c3 {
-  color: #1355d0;
-  margin-right: 16px;
-}
-
-.c0 .c1 .c4 {
-  color: #1355d0;
-}
-
 .c5 {
   border-radius: 50%;
   border: none;
@@ -292,6 +274,24 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 .c5:hover {
   background: none;
   opacity: 1;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: undefined;
+  background-color: #e5edfc;
+  border: 1.5px solid #1355d0;
+}
+
+.c0 .c1 .c3 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c4 {
+  color: #1355d0;
 }
 
 <div
@@ -417,24 +417,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
-.c0 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  padding: 11px 16px;
-  color: undefined;
-  background-color: #e5edfc;
-  border: 1.5px solid #1355d0;
-}
-
-.c0 .c1 .c8 {
-  color: #1355d0;
-  margin-right: 16px;
-}
-
-.c0 .c1 .c3 {
-  color: #1355d0;
-}
-
 .c4 {
   border-radius: 50%;
   border: none;
@@ -467,6 +449,24 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4:hover {
   background: none;
   opacity: 1;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: undefined;
+  background-color: #e5edfc;
+  border: 1.5px solid #1355d0;
+}
+
+.c0 .c1 .c8 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #1355d0;
 }
 
 <div
@@ -581,33 +581,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
-.c8 .c1 .c9 {
-  color: #1355d0;
-  margin-right: 16px;
-}
-
-.c8 .c1 .c3 {
-  color: #1355d0;
-}
-
-.c0 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  padding: 11px 16px;
-  color: #3c6510;
-  background-color: #edfadf;
-  border: 1.5px solid #7ed321;
-}
-
-.c0 .c1 .c9 {
-  color: #7ed321;
-  margin-right: 16px;
-}
-
-.c0 .c1 .c3 {
-  color: #7ed321;
-}
-
 .c4 {
   border-radius: 50%;
   border: none;
@@ -640,6 +613,33 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4:hover {
   background: none;
   opacity: 1;
+}
+
+.c8 .c1 .c9 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c8 .c1 .c3 {
+  color: #1355d0;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #3c6510;
+  background-color: #edfadf;
+  border: 1.5px solid #7ed321;
+}
+
+.c0 .c1 .c9 {
+  color: #7ed321;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #7ed321;
 }
 
 <div
@@ -754,6 +754,40 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
 .c8 .c1 .c10 {
   color: #1355d0;
   margin-right: 16px;
@@ -788,40 +822,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 .c0 .c1 .c3 {
   color: #f09100;
-}
-
-.c4 {
-  border-radius: 50%;
-  border: none;
-  color: #999999;
-  width: 40px;
-  background-color: transparent;
-  box-shadow: none;
-  height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
-  opacity: 0.8;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
-}
-
-.c4:hover,
-.c4:focus {
-  box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
-}
-
-.c4:active {
-  box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
-}
-
-.c4:hover {
-  background: none;
-  opacity: 1;
 }
 
 <div
@@ -936,6 +936,40 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: #999999;
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 16px;
+  padding: 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
 .c8 .c1 .c11 {
   color: #1355d0;
   margin-right: 16px;
@@ -979,40 +1013,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 .c0 .c1 .c3 {
   color: #ff2d4d;
-}
-
-.c4 {
-  border-radius: 50%;
-  border: none;
-  color: #999999;
-  width: 40px;
-  background-color: transparent;
-  box-shadow: none;
-  height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
-  opacity: 0.8;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
-}
-
-.c4:hover,
-.c4:focus {
-  box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
-}
-
-.c4:active {
-  box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
-}
-
-.c4:hover {
-  background: none;
-  opacity: 1;
 }
 
 <div
