@@ -93,6 +93,10 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   border-radius: 4px;
 }
 
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
 .c2 .c3 {
   font-size: 24px;
 }
@@ -136,7 +140,6 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
     type="button"
   >
     
-    Catho
   </button>
 </div>
 `;
