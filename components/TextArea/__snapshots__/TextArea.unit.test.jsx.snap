@@ -47,10 +47,6 @@ exports[`TextArea component should match snapshots 1`] = `
   cursor: not-allowed;
 }
 
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
 <div
   className="c0"
 >
@@ -114,10 +110,6 @@ exports[`TextArea component should match snapshots 2`] = `
   cursor: not-allowed;
 }
 
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
 <div
   className="c0"
 >
@@ -179,10 +171,6 @@ exports[`TextArea component should match snapshots 3`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -260,10 +248,6 @@ exports[`TextArea component should match snapshots 4`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
-}
-
-.c3:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c1 {
@@ -352,10 +336,6 @@ exports[`TextArea component should match snapshots 5`] = `
   cursor: not-allowed;
 }
 
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
 <div
   className="c0"
 >
@@ -420,10 +400,6 @@ exports[`TextArea component should match snapshots 6`] = `
   cursor: not-allowed;
 }
 
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
 <div
   className="c0"
 >
@@ -485,10 +461,6 @@ exports[`TextArea component should match snapshots 7`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c2 {
@@ -572,10 +544,6 @@ exports[`TextArea component should match snapshots 8`] = `
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
 .c2 {

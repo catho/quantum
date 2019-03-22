@@ -10,7 +10,6 @@ const {
   HELPER_TEXT_STYLE,
   REQUIRED_MARK_STYLE,
   ERROR_MESSAGE_STYLE,
-  AUTO_FILL_STYLE,
 } = INPUT_STYLE;
 
 const TextAreaTag = styled.textarea`
@@ -20,10 +19,6 @@ const TextAreaTag = styled.textarea`
   min-height: 108px;
   margin-top: 8px;
   transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-  :-webkit-autofill {
-    ${AUTO_FILL_STYLE}
-  }
 `;
 
 const TextAreaLabel = styled(Label)`
