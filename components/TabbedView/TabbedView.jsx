@@ -23,19 +23,23 @@ const getColors = skin => {
   return skins[skin] || skins.default;
 };
 
-const Navbar = styled.ul`
+const Navbar = styled.nav.attrs({
+  role: 'tablist',
+})`
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
-  list-style: none;
   margin: 0 0 25px 0;
   padding: 0;
 `;
 
 Navbar.displayName = 'Navbar';
 
-const NavItem = styled.li`
+const NavItem = styled.button.attrs({
+  role: 'tab',
+})`
   box-sizing: border-box;
+  border: none;
   cursor: pointer;
   flex-shrink: 0;
   font-size: 20px;
@@ -43,8 +47,8 @@ const NavItem = styled.li`
   line-height: 1.5;
   min-width: 90px;
   overflow: hidden;
+  outline: none;
   padding: 9px 16px;
-  position: relative;
   text-align: center;
   text-transform: uppercase;
 
@@ -59,6 +63,7 @@ const NavItem = styled.li`
         border-bottom: 4px solid ${activeText};
         color: ${activeText};
         font-weight: bold;
+        cursor: default;
       `}
 
       &:hover {
@@ -112,17 +117,29 @@ class TabbedView extends React.Component {
               onClick={() => this.onTabClick(title)}
               active={title === activeTab}
               skin={skin}
+              id={`${title}-tab`}
+              aria-controls={`${title}-panel`}
+              aria-selected={title === activeTab}
             >
               {title}
             </NavItem>
           ))}
         </Navbar>
 
-        {React.Children.map(children, child => (
-          <RenderIf conditional={child.props.title === activeTab}>
-            {child.props.children}
-          </RenderIf>
-        ))}
+        {React.Children.map(
+          children,
+          ({ props: { title, children: tabContent } }) => (
+            <RenderIf conditional={title === activeTab}>
+              <div
+                role="tabpanel"
+                id={`${title}-panel`}
+                aria-labelledby={`${title}-tab`}
+              >
+                {tabContent}
+              </div>
+            </RenderIf>
+          ),
+        )}
       </>
     );
   }

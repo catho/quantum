@@ -32,6 +32,9 @@ ShallowWrapper {
         <ForwardRef>
           <ForwardRef
             active={true}
+            aria-controls="example-panel"
+            aria-selected={true}
+            id="example-tab"
             onClick={[Function]}
             skin="default"
           >
@@ -42,9 +45,15 @@ ShallowWrapper {
           <RenderIf
             conditional={true}
           >
-            <p>
-              Example text
-            </p>
+            <div
+              aria-labelledby="example-tab"
+              id="example-panel"
+              role="tabpanel"
+            >
+              <p>
+                Example text
+              </p>
+            </div>
           </RenderIf>,
         ],
       ],
@@ -59,6 +68,9 @@ ShallowWrapper {
           "children": Array [
             <ForwardRef
               active={true}
+              aria-controls="example-panel"
+              aria-selected={true}
+              id="example-tab"
               onClick={[Function]}
               skin="default"
             >
@@ -74,7 +86,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "active": true,
+              "aria-controls": "example-panel",
+              "aria-selected": true,
               "children": "example",
+              "id": "example-tab",
               "onClick": [Function],
               "skin": "default",
             },
@@ -82,12 +97,16 @@ ShallowWrapper {
             "rendered": "example",
             "type": Object {
               "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
+              "attrs": Array [
+                Object {
+                  "role": "tab",
+                },
+              ],
               "componentStyle": ComponentStyle {
                 "componentId": "TabbedView__NavItem-sc-131sgnr-1",
                 "isStatic": false,
                 "rules": Array [
-                  "box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;padding:9px 16px;position:relative;text-align:center;text-transform:uppercase;",
+                  "box-sizing:border-box;border:none;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;outline:none;padding:9px 16px;text-align:center;text-transform:uppercase;",
                   [Function],
                 ],
               },
@@ -95,7 +114,7 @@ ShallowWrapper {
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "TabbedView__NavItem-sc-131sgnr-1",
-              "target": "li",
+              "target": "button",
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
@@ -104,19 +123,23 @@ ShallowWrapper {
         ],
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
+          "attrs": Array [
+            Object {
+              "role": "tablist",
+            },
+          ],
           "componentStyle": ComponentStyle {
             "componentId": "TabbedView__Navbar-sc-131sgnr-0",
             "isStatic": true,
             "rules": Array [
-              "display:flex;flex-grow:1;flex-shrink:1;list-style:none;margin:0 0 25px 0;padding:0;",
+              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;",
             ],
           },
           "displayName": "Navbar",
           "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "TabbedView__Navbar-sc-131sgnr-0",
-          "target": "ul",
+          "target": "nav",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -127,9 +150,15 @@ ShallowWrapper {
         "key": ".0",
         "nodeType": "function",
         "props": Object {
-          "children": <p>
-            Example text
-          </p>,
+          "children": <div
+            aria-labelledby="example-tab"
+            id="example-panel"
+            role="tabpanel"
+          >
+            <p>
+              Example text
+            </p>
+          </div>,
           "conditional": true,
         },
         "ref": null,
@@ -138,11 +167,26 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Example text",
+            "aria-labelledby": "example-tab",
+            "children": <p>
+              Example text
+            </p>,
+            "id": "example-panel",
+            "role": "tabpanel",
           },
           "ref": null,
-          "rendered": "Example text",
-          "type": "p",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Example text",
+            },
+            "ref": null,
+            "rendered": "Example text",
+            "type": "p",
+          },
+          "type": "div",
         },
         "type": [Function],
       },
@@ -159,6 +203,9 @@ ShallowWrapper {
           <ForwardRef>
             <ForwardRef
               active={true}
+              aria-controls="example-panel"
+              aria-selected={true}
+              id="example-tab"
               onClick={[Function]}
               skin="default"
             >
@@ -169,9 +216,15 @@ ShallowWrapper {
             <RenderIf
               conditional={true}
             >
-              <p>
-                Example text
-              </p>
+              <div
+                aria-labelledby="example-tab"
+                id="example-panel"
+                role="tabpanel"
+              >
+                <p>
+                  Example text
+                </p>
+              </div>
             </RenderIf>,
           ],
         ],
@@ -186,6 +239,9 @@ ShallowWrapper {
             "children": Array [
               <ForwardRef
                 active={true}
+                aria-controls="example-panel"
+                aria-selected={true}
+                id="example-tab"
                 onClick={[Function]}
                 skin="default"
               >
@@ -201,7 +257,10 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "active": true,
+                "aria-controls": "example-panel",
+                "aria-selected": true,
                 "children": "example",
+                "id": "example-tab",
                 "onClick": [Function],
                 "skin": "default",
               },
@@ -209,12 +268,16 @@ ShallowWrapper {
               "rendered": "example",
               "type": Object {
                 "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
+                "attrs": Array [
+                  Object {
+                    "role": "tab",
+                  },
+                ],
                 "componentStyle": ComponentStyle {
                   "componentId": "TabbedView__NavItem-sc-131sgnr-1",
                   "isStatic": false,
                   "rules": Array [
-                    "box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;padding:9px 16px;position:relative;text-align:center;text-transform:uppercase;",
+                    "box-sizing:border-box;border:none;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;outline:none;padding:9px 16px;text-align:center;text-transform:uppercase;",
                     [Function],
                   ],
                 },
@@ -222,7 +285,7 @@ ShallowWrapper {
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "TabbedView__NavItem-sc-131sgnr-1",
-                "target": "li",
+                "target": "button",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
@@ -231,19 +294,23 @@ ShallowWrapper {
           ],
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
+            "attrs": Array [
+              Object {
+                "role": "tablist",
+              },
+            ],
             "componentStyle": ComponentStyle {
               "componentId": "TabbedView__Navbar-sc-131sgnr-0",
               "isStatic": true,
               "rules": Array [
-                "display:flex;flex-grow:1;flex-shrink:1;list-style:none;margin:0 0 25px 0;padding:0;",
+                "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;",
               ],
             },
             "displayName": "Navbar",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "TabbedView__Navbar-sc-131sgnr-0",
-            "target": "ul",
+            "target": "nav",
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
@@ -254,9 +321,15 @@ ShallowWrapper {
           "key": ".0",
           "nodeType": "function",
           "props": Object {
-            "children": <p>
-              Example text
-            </p>,
+            "children": <div
+              aria-labelledby="example-tab"
+              id="example-panel"
+              role="tabpanel"
+            >
+              <p>
+                Example text
+              </p>
+            </div>,
             "conditional": true,
           },
           "ref": null,
@@ -265,11 +338,26 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Example text",
+              "aria-labelledby": "example-tab",
+              "children": <p>
+                Example text
+              </p>,
+              "id": "example-panel",
+              "role": "tabpanel",
             },
             "ref": null,
-            "rendered": "Example text",
-            "type": "p",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Example text",
+              },
+              "ref": null,
+              "rendered": "Example text",
+              "type": "p",
+            },
+            "type": "div",
           },
           "type": [Function],
         },
