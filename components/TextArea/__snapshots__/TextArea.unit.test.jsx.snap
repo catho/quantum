@@ -8,7 +8,7 @@ exports[`TextArea component should match snapshots 1`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
@@ -33,13 +33,13 @@ exports[`TextArea component should match snapshots 1`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2[disabled] {
+.c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -47,29 +47,17 @@ exports[`TextArea component should match snapshots 1`] = `
   cursor: not-allowed;
 }
 
-.c2:-webkit-autofill {
+.c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
 }
 
 <div
   className="c0"
 >
-  <label
-    className="c1"
-  >
-    Textarea label
-  </label>
   <textarea
-    className="c2"
+    className="c1"
     disabled={false}
+    id="textarea-0"
     onChange={[Function]}
     placeholder=""
     value=""
@@ -87,7 +75,7 @@ exports[`TextArea component should match snapshots 2`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
@@ -112,13 +100,13 @@ exports[`TextArea component should match snapshots 2`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2[disabled] {
+.c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -126,29 +114,17 @@ exports[`TextArea component should match snapshots 2`] = `
   cursor: not-allowed;
 }
 
-.c2:-webkit-autofill {
+.c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
 }
 
 <div
   className="c0"
 >
-  <label
-    className="c1"
-  >
-    Textarea label
-  </label>
   <textarea
-    className="c2"
+    className="c1"
     disabled={false}
+    id="textarea-1"
     onChange={[Function]}
     placeholder=""
     value="foo"
@@ -222,12 +198,14 @@ exports[`TextArea component should match snapshots 3`] = `
 >
   <label
     className="c1"
+    htmlFor="textarea-2"
   >
     Text label
   </label>
   <textarea
     className="c2"
     disabled={false}
+    id="textarea-2"
     onChange={[Function]}
     placeholder=""
     value=""
@@ -305,6 +283,7 @@ exports[`TextArea component should match snapshots 4`] = `
 >
   <label
     className="c1"
+    htmlFor="textarea-3"
   >
     Text label
     <em
@@ -316,6 +295,7 @@ exports[`TextArea component should match snapshots 4`] = `
   <textarea
     className="c3"
     disabled={false}
+    id="textarea-3"
     onChange={[Function]}
     placeholder=""
     value=""
@@ -333,7 +313,7 @@ exports[`TextArea component should match snapshots 5`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
@@ -358,13 +338,13 @@ exports[`TextArea component should match snapshots 5`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2[disabled] {
+.c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -372,29 +352,17 @@ exports[`TextArea component should match snapshots 5`] = `
   cursor: not-allowed;
 }
 
-.c2:-webkit-autofill {
+.c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
 }
 
 <div
   className="c0"
 >
-  <label
-    className="c1"
-  >
-    Textarea label
-  </label>
   <textarea
-    className="c2"
+    className="c1"
     disabled={true}
+    id="textarea-4"
     onChange={[Function]}
     placeholder=""
     value=""
@@ -412,7 +380,7 @@ exports[`TextArea component should match snapshots 6`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
@@ -438,13 +406,13 @@ exports[`TextArea component should match snapshots 6`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2[disabled] {
+.c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -452,29 +420,17 @@ exports[`TextArea component should match snapshots 6`] = `
   cursor: not-allowed;
 }
 
-.c2:-webkit-autofill {
+.c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
 }
 
 <div
   className="c0"
 >
-  <label
-    className="c1"
-  >
-    Textarea label
-  </label>
   <textarea
-    className="c2"
+    className="c1"
     disabled={false}
+    id="textarea-5"
     onChange={[Function]}
     placeholder="this input has a placeholder"
     value=""
@@ -492,7 +448,7 @@ exports[`TextArea component should match snapshots 7`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
@@ -517,13 +473,13 @@ exports[`TextArea component should match snapshots 7`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2[disabled] {
+.c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -531,19 +487,11 @@ exports[`TextArea component should match snapshots 7`] = `
   cursor: not-allowed;
 }
 
-.c2:-webkit-autofill {
+.c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
-}
-
-.c3 {
+.c2 {
   cursor: text;
   display: block;
   font-size: 14px;
@@ -555,20 +503,16 @@ exports[`TextArea component should match snapshots 7`] = `
 <div
   className="c0"
 >
-  <label
-    className="c1"
-  >
-    Textarea label
-  </label>
   <textarea
-    className="c2"
+    className="c1"
     disabled={false}
+    id="textarea-6"
     onChange={[Function]}
     placeholder=""
     value=""
   />
   <span
-    className="c3"
+    className="c2"
   >
     this is a helper text
   </span>
@@ -584,7 +528,7 @@ exports[`TextArea component should match snapshots 8`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1.5px solid #999999;
@@ -610,19 +554,19 @@ exports[`TextArea component should match snapshots 8`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   border-color: #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -630,19 +574,11 @@ exports[`TextArea component should match snapshots 8`] = `
   cursor: not-allowed;
 }
 
-.c2:-webkit-autofill {
+.c1:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
-}
-
-.c3 {
+.c2 {
   color: #ac001a;
   font-size: 14px;
   cursor: text;
@@ -654,21 +590,17 @@ exports[`TextArea component should match snapshots 8`] = `
 <div
   className="c0"
 >
-  <label
-    className="c1"
-  >
-    Textarea label
-  </label>
   <textarea
-    className="c2"
+    className="c1"
     disabled={false}
+    id="textarea-7"
     onChange={[Function]}
     placeholder=""
     value=""
   />
   
   <div
-    className="c3"
+    className="c2"
   >
     Error message
   </div>

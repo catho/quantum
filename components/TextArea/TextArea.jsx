@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { INPUT_STYLE, Label, FieldGroup, ErrorMessage } from '../shared';
+import uniqId from '../shared/uniqId';
 
 const {
   default: DEFAULT_INPUT_STYLE,
@@ -12,7 +13,7 @@ const {
   AUTO_FILL_STYLE,
 } = INPUT_STYLE;
 
-const StyledTextArea = styled.textarea`
+const TextAreaTag = styled.textarea`
   ${DEFAULT_INPUT_STYLE};
 
   display: block;
@@ -47,33 +48,38 @@ const TextAreaErrorMessage = styled(ErrorMessage)`
   `}
 `;
 
-const TextArea = ({ label, required, helperText, error, ...rest }) => (
-  <FieldGroup>
-    {label && (
-      <TextAreaLabel>
-        {label}
-        {required && <RequiredMark>*</RequiredMark>}
-      </TextAreaLabel>
-    )}
-    <StyledTextArea error={error} {...rest} />
-    {helperText && <HelperText>{helperText}</HelperText>}
-    {error && (
-      <TextAreaErrorMessage helperText={helperText}>
-        {error}
-      </TextAreaErrorMessage>
-    )}
-  </FieldGroup>
-);
+const TextArea = ({ label, required, helperText, error, id, ...rest }) => {
+  const _id = id || uniqId('textarea-');
+
+  return (
+    <FieldGroup>
+      {label && (
+        <TextAreaLabel htmlFor={_id}>
+          {label}
+          {required && <RequiredMark>*</RequiredMark>}
+        </TextAreaLabel>
+      )}
+      <TextAreaTag error={error} id={_id} {...rest} />
+      {helperText && <HelperText>{helperText}</HelperText>}
+      {error && (
+        <TextAreaErrorMessage helperText={helperText}>
+          {error}
+        </TextAreaErrorMessage>
+      )}
+    </FieldGroup>
+  );
+};
 
 TextArea.defaultProps = {
   disabled: false,
   error: '',
   helperText: '',
-  label: 'Textarea label',
+  label: undefined,
   onChange: () => {},
   placeholder: '',
   required: false,
   value: '',
+  id: undefined,
 };
 
 TextArea.propTypes = {
@@ -85,9 +91,10 @@ TextArea.propTypes = {
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   value: PropTypes.string,
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-StyledTextArea.displayName = 'StyledTextArea';
+TextAreaTag.displayName = 'TextAreaTag';
 TextAreaLabel.displayName = 'TextAreaLabel';
 HelperText.displayName = 'HelperText';
 TextAreaErrorMessage.displayName = 'TextAreaErrorMessage';

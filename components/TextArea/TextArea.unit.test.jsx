@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import TextArea from './TextArea';
 
 describe('TextArea component', () => {
@@ -21,24 +21,24 @@ describe('TextArea component', () => {
     );
   });
 
-  it('should has a required signal when "required" prop is set ', () => {
-    const component = mount(<TextArea label="Text label" required />);
+  it('should has a required signal when "required" and "label" props are set ', () => {
+    const component = shallow(<TextArea label="Text label" required />);
     expect(component.find('TextAreaLabel').text()).toMatch('*');
   });
 
-  it('should have a placeholder when "placeholder" prop has a text ', () => {
+  it('should have a placeholder when "placeholder" prop is set ', () => {
     const placeholderText = 'this input has a placeholder';
-    const component = mount(<TextArea placeholder={placeholderText} />);
+    const component = shallow(<TextArea placeholder={placeholderText} />);
     const textAreaPlaceholder = component
-      .find('StyledTextArea')
+      .find('TextAreaTag')
       .prop('placeholder');
 
     expect(textAreaPlaceholder).toMatch(placeholderText);
   });
 
-  it('should have a helper text when "helper text" prop has a text ', () => {
+  it('should have a helper text when "helper text" prop is set ', () => {
     const helperTextContent = 'this is a helper text';
-    const component = mount(<TextArea helperText={helperTextContent} />);
+    const component = shallow(<TextArea helperText={helperTextContent} />);
     const textAreaHelperText = component.find('HelperText').text();
 
     expect(textAreaHelperText).toMatch(helperTextContent);
@@ -46,8 +46,30 @@ describe('TextArea component', () => {
 
   it('should have a error text when "error" prop is set', () => {
     const errorMessageContent = 'Error message';
-    const component = mount(<TextArea error={errorMessageContent} />);
+    const component = shallow(<TextArea error={errorMessageContent} />);
     const errorMessage = component.find('TextAreaErrorMessage').text();
     expect(errorMessage).toMatch(errorMessageContent);
+  });
+
+  describe('with a label', () => {
+    it('should match label "htmlFor" label param with "id" input param', () => {
+      const id = 'input-id';
+      const wrapper = shallow(<TextArea label="Text label" id={id} />);
+      const input = wrapper.find('TextAreaTag');
+      const label = wrapper.find('TextAreaLabel');
+      const labelHtmlFor = label.prop('htmlFor');
+      const inputId = input.prop('id');
+
+      expect(labelHtmlFor).toEqual(id);
+      expect(inputId).toEqual(id);
+    });
+
+    it('should match label "htmlFor" label param and "input" param with generated id', () => {
+      const wrapper = shallow(<TextArea label="Text label" value="foo" />);
+      const labelId = wrapper.find('TextAreaLabel').prop('htmlFor');
+      const inputId = wrapper.find('TextAreaTag').prop('id');
+
+      expect(labelId).toEqual(inputId);
+    });
   });
 });

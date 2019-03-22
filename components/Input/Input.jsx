@@ -7,7 +7,7 @@ import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
-import generateId from '../shared/generateId';
+import uniqId from '../shared/uniqId';
 
 const {
   default: DEFAULT_INPUT_STYLE,
@@ -117,8 +117,6 @@ class Input extends React.Component {
 
   static Password = InputTypes.Password;
 
-  static counter = 0;
-
   constructor(props) {
     super(props);
 
@@ -126,7 +124,7 @@ class Input extends React.Component {
 
     this.state = { type };
 
-    this._id = generateId('input-');
+    this._id = props.id || uniqId('input-');
   }
 
   _changeType = type => {
@@ -137,17 +135,6 @@ class Input extends React.Component {
     const { type } = this.state;
     this._changeType(type === 'text' ? 'password' : 'text');
   };
-
-  _getId() {
-    const { id } = this.props;
-    if (id) {
-      return id;
-    }
-
-    const _id = `input-${Input.counter}`;
-    Input.counter += 1;
-    return _id;
-  }
 
   render() {
     const {
