@@ -7,7 +7,7 @@ import Colors from '../Colors';
 import Card from '../Card';
 import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
-import { Content, Header, HeaderText, Title } from './sub-components';
+import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 
 function getBreakpoint() {
   const sizes = {
@@ -37,26 +37,30 @@ const CloseIcon = styled(Button.Icon)`
 `;
 
 class Modal extends React.Component {
-  static Content = Content;
-
   static Header = Header;
 
   static HeaderText = HeaderText;
 
+  static Content = Content;
+
   static Title = Title;
+
+  static Footer = Footer;
 
   constructor(props) {
     super(props);
 
     this.modalWrapper = document.createElement('section');
     this.modalWrapper.style.cssText = `
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
+      align-items: center;
       background-color: ${Colors.SHADOW[50]};
       display: flex;
-      align-items: center;
+      height: 100vh;
+      left: 0;
       justify-content: center;
+      position: fixed;
+      top: 0;
+      width: 100vw;
     `;
   }
 
@@ -71,12 +75,16 @@ class Modal extends React.Component {
   }
 
   render() {
-    const { children, onClose } = this.props;
+    const { children, onClose, closeButtonAriaLabel } = this.props;
 
     return ReactDOM.createPortal(
-      <ModalCard>
+      <ModalCard role="dialog">
         {children}
-        <CloseIcon icon="close" onClick={onClose} />
+        <CloseIcon
+          icon="close"
+          onClick={onClose}
+          aria-label={closeButtonAriaLabel}
+        />
       </ModalCard>,
       this.modalWrapper,
     );
@@ -88,12 +96,16 @@ Modal.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  /** Function to be called when close icon is clicked. */
   onClose: PropTypes.func,
+  /** aria-label property value for the close button icon. */
+  closeButtonAriaLabel: PropTypes.string,
 };
 
 Modal.defaultProps = {
   children: undefined,
   onClose: () => {},
+  closeButtonAriaLabel: 'close dialog',
 };
 
 export default Modal;
