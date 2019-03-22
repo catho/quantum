@@ -14,6 +14,7 @@ import Slider from './Slider';
 import Tag from './Tag';
 import Toggle from './Toggle';
 import Tooltip from './Tooltip';
+import Modal from './Modal';
 
 export {
   Badge,
@@ -38,4 +39,5 @@ export {
   Tooltip,
   Typography,
   Validations,
+  Modal,
 };
