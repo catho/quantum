@@ -16,9 +16,11 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   visibility: hidden;
   z-index: 100;
-  top: -1085px;
   left: 50%;
-  margin-left: -960px;
+  bottom: 130%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .c3:before {
@@ -99,8 +101,6 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
 >
   <div
     className="c2 c3"
-    height={1080}
-    width={1920}
   >
     50
   </div>
@@ -229,9 +229,11 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   visibility: hidden;
   z-index: 100;
-  top: -1085px;
   left: 50%;
-  margin-left: -960px;
+  bottom: 130%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .c3:before {
@@ -312,8 +314,6 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 >
   <div
     className="c2 c3"
-    height={1080}
-    width={1920}
   >
     10
   </div>
@@ -442,9 +442,11 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   visibility: hidden;
   z-index: 100;
-  top: -1085px;
   left: 50%;
-  margin-left: -960px;
+  bottom: 130%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .c3:before {
@@ -530,8 +532,6 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
 >
   <div
     className="c2 c3"
-    height={1080}
-    width={1920}
   >
     10 to 30
   </div>
