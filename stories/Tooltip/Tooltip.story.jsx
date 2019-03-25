@@ -12,6 +12,7 @@ storiesOf('Tooltip', module).add('Basic', () => (
     component={Tooltip}
     componentProps={{
       children: 'Hover me',
+      text: 'This is a hint.',
     }}
   />
 ));

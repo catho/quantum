@@ -20,11 +20,12 @@ const Tip = styled.div`
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   visibility: ${props => (props.show ? 'visible' : 'hidden')};
   z-index: 100;
+  ${({ placement }) => placementConfig.tipPosition[placement]};
 
-  ${placementConfig.tipPosition} &:before {
+  &:before {
     content: '';
     position: absolute;
-    ${props => placementConfig.arrowPosition[props.placement]};
+    ${({ placement }) => placementConfig.arrowPosition[placement]};
   }
 `;
 
@@ -41,67 +42,26 @@ const Wrapper = styled.div`
 class Tooltip extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { show: false, width: null, height: null };
+    const { visible } = this.props;
+    this.state = { show: visible };
   }
 
-  componentDidMount() {
-    this.measure();
-  }
+  handleEnter = () => this.setState({ show: true });
 
-  shouldComponentUpdate(nextProps, nextState) {
-    const { text, visible, children } = this.props;
-    const { show, width, height } = this.state;
-
-    return (
-      text !== nextProps.text ||
-      show !== nextState.show ||
-      visible !== nextProps.visible ||
-      width !== nextState.width ||
-      height !== nextState.height ||
-      children !== nextProps.children
-    );
-  }
-
-  componentDidUpdate() {
-    this.measure();
-  }
-
-  handleEnter = () => {
-    this.setState({ show: true });
-  };
-
-  handleLeave = () => {
-    this.setState({ show: false });
-  };
-
-  measure() {
-    const { clientWidth, clientHeight } = this.tip;
-
-    this.setState({ width: clientWidth, height: clientHeight });
-  }
+  handleLeave = () => this.setState({ show: false });
 
   render() {
-    const { children, placement, text, visible, ...rest } = this.props;
-    const { width, height, show } = this.state;
-    const { length } = text;
+    const { children, placement, text, ...rest } = this.props;
+    const { show } = this.state;
 
     return (
       <Wrapper
         onMouseEnter={this.handleEnter}
         onMouseLeave={this.handleLeave}
-        length={length}
+        length={text ? text.length : 0}
         {...rest}
       >
-        <Tip
-          ref={tip => {
-            this.tip = tip;
-          }}
-          placement={placement}
-          width={width}
-          height={height}
-          show={visible || show}
-        >
+        <Tip placement={placement} show={show}>
           {text}
         </Tip>
         {children}
@@ -114,7 +74,7 @@ Tip.displayName = 'Tip';
 
 Tooltip.propTypes = {
   /** Text that tooltip will show */
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   /** Define tooltip positioning */
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   visible: PropTypes.bool,
@@ -125,9 +85,8 @@ Tooltip.propTypes = {
 };
 
 Tooltip.defaultProps = {
-  text: 'Tooltip',
   placement: 'top',
-  visible: undefined,
+  visible: false,
 };
 
 export default Tooltip;
