@@ -25,12 +25,12 @@ class ModalExample extends Component {
             <Modal.Header>
               <Modal.HeaderText>
                 <Modal.Title>
-                  Tem certeza que deseja excluir este arquivo?
+                  Are you sure you want to delete this item?
                 </Modal.Title>
               </Modal.HeaderText>
             </Modal.Header>
             <Modal.Content>
-              Após excluir, não será possível recuperar este arquivo novamente.
+              You will not be able to recover this item later.
             </Modal.Content>
             <Modal.Footer>
               <div
@@ -39,14 +39,12 @@ class ModalExample extends Component {
                   justifyContent: 'flex-end',
                 }}
               >
-                <Button
-                  skin="secondary"
-                  style={{ marginRight: 24 }}
-                  onClick={this.closeModal}
-                >
-                  Excluir
+                <Button style={{ marginRight: 24 }} onClick={this.closeModal}>
+                  Delete
                 </Button>
-                <Button onClick={this.closeModal}>Cancelar</Button>
+                <Button onClick={this.closeModal} skin="secondary">
+                  Cancel
+                </Button>
               </div>
             </Modal.Footer>
           </Modal>
@@ -83,12 +81,12 @@ class ModalExample extends Component {
             <Modal.Header>
               <Modal.HeaderText>
                 <Modal.Title>
-                  Tem certeza que deseja excluir este arquivo?
+                  Are you sure you want to delete this item?
                 </Modal.Title>
               </Modal.HeaderText>
             </Modal.Header>
             <Modal.Content>
-              Após excluir, não será possível recuperar este arquivo novamente.
+              You will not be able to recover this item later.
             </Modal.Content>
             <Modal.Footer>
               <div
@@ -98,13 +96,15 @@ class ModalExample extends Component {
                 }}
               >
                 <Button
-                  skin="secondary"
                   style={{ marginRight: 24 }}
                   onClick={this.closeModal}
                 >
-                  Excluir
+                  Delete
                 </Button>
-                <Button onClick={this.closeModal}>Cancelar</Button>
+                <Button
+                  onClick={this.closeModal}
+                  skin="secondary"
+                >Cancel</Button>
               </div>
             </Modal.Footer>
           </Modal>
