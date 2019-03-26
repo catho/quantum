@@ -79,4 +79,25 @@ describe('<Modal />', () => {
       expect(onCloseMock).toHaveBeenCalled();
     });
   });
+
+  describe('Tab events', () => {
+    it('should focus first element when Modal is opened', () => {
+      const modal = mount(
+        <Modal>
+          <Modal.Footer>
+            <button type="button">Cancel</button>
+            <button type="button">Ok</button>
+          </Modal.Footer>
+        </Modal>,
+      );
+
+      const focusedElement = document.activeElement;
+      expect(
+        modal
+          .find('button')
+          .at(0)
+          .getDOMNode(),
+      ).toBe(focusedElement);
+    });
+  });
 });
