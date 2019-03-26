@@ -40,42 +40,42 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
 
 <TabbedView
   skin="blue" // optional
-  activeTab="Empresas"> // optional
-  <TabbedView.Tab title="Candidatos">
-    Candidatos content
+  activeTab="Companies"> // optional
+  <TabbedView.Tab title="Candidates">
+    Candidates content
   </TabbedView.Tab>
-  <TabbedView.Tab title="Empresas">
-    Empresas content
+  <TabbedView.Tab title="Companies">
+    Companies content
   </TabbedView.Tab>
-  <Tab title="Educação">
-    Educação content
+  <Tab title="Education">
+    Education content
   </Tab>
 </TabbedView>`}</SimpleHighlight>
             </Col>
             <Col xsmall={2} small={4} medium={6}>
               <Container>
                 <QuantumTabbedView>
-                  <QuantumTabbedView.Tab title="Candidatos">
-                    Candidatos content
+                  <QuantumTabbedView.Tab title="Candidates">
+                    Candidates content
                   </QuantumTabbedView.Tab>
-                  <QuantumTabbedView.Tab title="Empresas">
-                    Empresas content
+                  <QuantumTabbedView.Tab title="Companies">
+                    Companies content
                   </QuantumTabbedView.Tab>
-                  <QuantumTabbedView.Tab title="Educação">
-                    Educação content
+                  <QuantumTabbedView.Tab title="Education">
+                    Education content
                   </QuantumTabbedView.Tab>
                 </QuantumTabbedView>
               </Container>
               <Container>
-                <QuantumTabbedView skin="blue" activeTab="Empresas">
-                  <QuantumTabbedView.Tab title="Candidatos">
-                    Candidatos content
+                <QuantumTabbedView skin="blue" activeTab="Companies">
+                  <QuantumTabbedView.Tab title="Candidates">
+                    Candidates content
                   </QuantumTabbedView.Tab>
-                  <QuantumTabbedView.Tab title="Empresas">
-                    Empresas content
+                  <QuantumTabbedView.Tab title="Companies">
+                    Companies content
                   </QuantumTabbedView.Tab>
-                  <QuantumTabbedView.Tab title="Educação">
-                    Educação content
+                  <QuantumTabbedView.Tab title="Education">
+                    Education content
                   </QuantumTabbedView.Tab>
                 </QuantumTabbedView>
               </Container>
