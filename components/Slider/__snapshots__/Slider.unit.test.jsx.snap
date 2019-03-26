@@ -1,20 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disabled 1`] = `
-.c3 {
+.c2 {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
   border-radius: 4px;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: bold;
+  max-width: 250px;
   opacity: 0;
+  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
   text-align: center;
+  text-overflow: ellipsis;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  visibility: hidden;
+  white-space: nowrap;
   z-index: 100;
   left: 50%;
   bottom: 130%;
@@ -23,7 +26,7 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   transform: translateX(-50%);
 }
 
-.c3:before {
+.c2:before {
   content: '';
   position: absolute;
   border-left: 6px solid transparent;
@@ -39,44 +42,39 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
 
 .c1 {
   position: relative;
-  white-space: nowrap;
 }
 
-.c1 .c2 {
-  width: initial;
-}
-
-.c4 .rc-slider-handle {
+.c3 .rc-slider-handle {
   background-color: #1355d0;
 }
 
-.c4 .rc-slider-rail {
+.c3 .rc-slider-rail {
   background-color: #e5edfc;
 }
 
-.c4 .rc-slider-track {
+.c3 .rc-slider-track {
   background-color: rgba(19,85,208,0.5);
 }
 
-.c4 .rc-slider-handle:active,
-.c4 .rc-slider-handle:focus {
+.c3 .rc-slider-handle:active,
+.c3 .rc-slider-handle:focus {
   border: none;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c4.rc-slider-disabled {
+.c3.rc-slider-disabled {
   background: none;
 }
 
-.c4.rc-slider-disabled .rc-slider-handle {
+.c3.rc-slider-disabled .rc-slider-handle {
   background-color: #999999;
 }
 
-.c4.rc-slider-disabled .rc-slider-rail {
+.c3.rc-slider-disabled .rc-slider-rail {
   background-color: #f2f2f2;
 }
 
-.c4.rc-slider-disabled .rc-slider-track {
+.c3.rc-slider-disabled .rc-slider-track {
   background-color: #cccccc;
 }
 
@@ -100,12 +98,12 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   value={50}
 >
   <div
-    className="c2 c3"
+    className="c2"
   >
     50
   </div>
   <div
-    className="rc-slider rc-slider-with-marks rc-slider-disabled c4"
+    className="rc-slider rc-slider-with-marks rc-slider-disabled c3"
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -214,20 +212,23 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
 `;
 
 exports[`<Slider /> Snapshots should match the snapshot when have just one handle 1`] = `
-.c3 {
+.c2 {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
   border-radius: 4px;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: bold;
+  max-width: 250px;
   opacity: 0;
+  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
   text-align: center;
+  text-overflow: ellipsis;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  visibility: hidden;
+  white-space: nowrap;
   z-index: 100;
   left: 50%;
   bottom: 130%;
@@ -236,7 +237,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   transform: translateX(-50%);
 }
 
-.c3:before {
+.c2:before {
   content: '';
   position: absolute;
   border-left: 6px solid transparent;
@@ -252,44 +253,39 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 
 .c1 {
   position: relative;
-  white-space: nowrap;
 }
 
-.c1 .c2 {
-  width: initial;
-}
-
-.c4 .rc-slider-handle {
+.c3 .rc-slider-handle {
   background-color: #1355d0;
 }
 
-.c4 .rc-slider-rail {
+.c3 .rc-slider-rail {
   background-color: #e5edfc;
 }
 
-.c4 .rc-slider-track {
+.c3 .rc-slider-track {
   background-color: rgba(19,85,208,0.5);
 }
 
-.c4 .rc-slider-handle:active,
-.c4 .rc-slider-handle:focus {
+.c3 .rc-slider-handle:active,
+.c3 .rc-slider-handle:focus {
   border: none;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c4.rc-slider-disabled {
+.c3.rc-slider-disabled {
   background: none;
 }
 
-.c4.rc-slider-disabled .rc-slider-handle {
+.c3.rc-slider-disabled .rc-slider-handle {
   background-color: #999999;
 }
 
-.c4.rc-slider-disabled .rc-slider-rail {
+.c3.rc-slider-disabled .rc-slider-rail {
   background-color: #f2f2f2;
 }
 
-.c4.rc-slider-disabled .rc-slider-track {
+.c3.rc-slider-disabled .rc-slider-track {
   background-color: #cccccc;
 }
 
@@ -313,12 +309,12 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   value={10}
 >
   <div
-    className="c2 c3"
+    className="c2"
   >
     10
   </div>
   <div
-    className="rc-slider rc-slider-with-marks c4"
+    className="rc-slider rc-slider-with-marks c3"
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -427,20 +423,23 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 `;
 
 exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`] = `
-.c3 {
+.c2 {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
   border-radius: 4px;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: bold;
+  max-width: 250px;
   opacity: 0;
+  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
   text-align: center;
+  text-overflow: ellipsis;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  visibility: hidden;
+  white-space: nowrap;
   z-index: 100;
   left: 50%;
   bottom: 130%;
@@ -449,7 +448,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   transform: translateX(-50%);
 }
 
-.c3:before {
+.c2:before {
   content: '';
   position: absolute;
   border-left: 6px solid transparent;
@@ -465,44 +464,39 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
 
 .c1 {
   position: relative;
-  white-space: nowrap;
 }
 
-.c1 .c2 {
-  width: initial;
-}
-
-.c4 .rc-slider-handle {
+.c3 .rc-slider-handle {
   background-color: #1355d0;
 }
 
-.c4 .rc-slider-rail {
+.c3 .rc-slider-rail {
   background-color: #e5edfc;
 }
 
-.c4 .rc-slider-track {
+.c3 .rc-slider-track {
   background-color: rgba(19,85,208,0.5);
 }
 
-.c4 .rc-slider-handle:active,
-.c4 .rc-slider-handle:focus {
+.c3 .rc-slider-handle:active,
+.c3 .rc-slider-handle:focus {
   border: none;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c4.rc-slider-disabled {
+.c3.rc-slider-disabled {
   background: none;
 }
 
-.c4.rc-slider-disabled .rc-slider-handle {
+.c3.rc-slider-disabled .rc-slider-handle {
   background-color: #999999;
 }
 
-.c4.rc-slider-disabled .rc-slider-rail {
+.c3.rc-slider-disabled .rc-slider-rail {
   background-color: #f2f2f2;
 }
 
-.c4.rc-slider-disabled .rc-slider-track {
+.c3.rc-slider-disabled .rc-slider-track {
   background-color: #cccccc;
 }
 
@@ -531,12 +525,12 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   }
 >
   <div
-    className="c2 c3"
+    className="c2"
   >
     10 to 30
   </div>
   <div
-    className="rc-slider rc-slider-with-marks c4"
+    className="rc-slider rc-slider-with-marks c3"
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}

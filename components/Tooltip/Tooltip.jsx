@@ -11,15 +11,12 @@ const Tip = styled.div`
   color: ${Colors.WHITE};
   font-size: 16px;
   font-weight: bold;
-  max-width: 250px;
   opacity: ${props => (props.show ? '1' : '0')};
-  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
-  text-overflow: ellipsis;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-  white-space: nowrap;
   z-index: 100;
 
   ${({ placement }) => placementConfig.tipPosition[placement]};
@@ -29,6 +26,14 @@ const Tip = styled.div`
     position: absolute;
     ${({ placement }) => placementConfig.arrowPosition[placement]};
   }
+`;
+
+const TipText = styled.span`
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const Wrapper = styled.div`
@@ -58,7 +63,7 @@ class Tooltip extends Component {
         {...rest}
       >
         <Tip placement={placement} show={visible || show}>
-          {text}
+          <TipText>{text}</TipText>
         </Tip>
         {children}
       </Wrapper>
