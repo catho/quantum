@@ -36,376 +36,37 @@ ShallowWrapper {
     "nodeType": "portal",
     "props": Object {
       "children": <ForwardRef
-        role="dialog"
+        onClick={[Function]}
       >
-        <ForwardRef>
+        <ForwardRef
+          role="dialog"
+        >
           <ForwardRef>
             <ForwardRef>
-              Modal title
+              <ForwardRef>
+                Modal title
+              </ForwardRef>
             </ForwardRef>
           </ForwardRef>
+          <ForwardRef>
+            Modal Content
+          </ForwardRef>
+          <ForwardRef>
+            ModalFooter
+          </ForwardRef>
+          <ForwardRef
+            aria-label="close dialog"
+            onClick={[Function]}
+          />
         </ForwardRef>
-        <ForwardRef>
-          Modal Content
-        </ForwardRef>
-        <ForwardRef>
-          ModalFooter
-        </ForwardRef>
-        <ForwardRef
-          aria-label="close dialog"
-          onClick={[Function]}
-        />
       </ForwardRef>,
-      "containerInfo": <section
-        style="align-items: center; background-color: rgba(128, 128, 128, 0.5); display: flex; height: 100vh; left: 0px; justify-content: center; position: fixed; top: 0px; width: 100vw;"
-      />,
+      "containerInfo": <section />,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          Array [
-            <ForwardRef>
-              <ForwardRef>
-                <ForwardRef>
-                  Modal title
-                </ForwardRef>
-              </ForwardRef>
-            </ForwardRef>,
-            <ForwardRef>
-              Modal Content
-            </ForwardRef>,
-            <ForwardRef>
-              ModalFooter
-            </ForwardRef>,
-          ],
-          <ForwardRef
-            aria-label="close dialog"
-            onClick={[Function]}
-          />,
-        ],
-        "role": "dialog",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <ForwardRef>
-              <ForwardRef>
-                Modal title
-              </ForwardRef>
-            </ForwardRef>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": <ForwardRef>
-                Modal title
-              </ForwardRef>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": "Modal title",
-              },
-              "ref": null,
-              "rendered": "Modal title",
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Title-hr7zki-0",
-                  "isStatic": true,
-                  "rules": Array [
-                    "font-weight:700;line-height:1.25;",
-                  ],
-                },
-                "displayName": "Title",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Title-hr7zki-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              },
-            },
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "HeaderText-sc-15zd9gn-0",
-                "isStatic": true,
-                "rules": Array [
-                  "flex-grow:1;",
-                ],
-              },
-              "displayName": "Card.HeaderText",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "HeaderText-sc-15zd9gn-0",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            },
-          },
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "Header-sc-13ddtbk-0",
-              "isStatic": true,
-              "rules": Array [
-                "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
-                "padding:24px 24px 0;",
-              ],
-            },
-            "displayName": "Header",
-            "foldedComponentIds": Array [
-              "Header-sc-1u94v40-0",
-            ],
-            "render": [Function],
-            "styledComponentId": "Header-sc-13ddtbk-0",
-            "target": "header",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "Modal Content",
-          },
-          "ref": null,
-          "rendered": "Modal Content",
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "Content-sc-9f5o6t-0",
-              "isStatic": true,
-              "rules": Array [
-                "padding:12px 20px;font-size:14px;margin:0;",
-                "padding:16px 24px;max-height:70vh;overflow-y:auto;",
-              ],
-            },
-            "displayName": "Content",
-            "foldedComponentIds": Array [
-              "Content-sc-6vzg5x-0",
-            ],
-            "render": [Function],
-            "styledComponentId": "Content-sc-9f5o6t-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "ModalFooter",
-          },
-          "ref": null,
-          "rendered": "ModalFooter",
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "Footer-pp401c-0",
-              "isStatic": true,
-              "rules": Array [
-                "padding:0 20px 20px;",
-              ],
-            },
-            "displayName": "Card.Footer",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "Footer-pp401c-0",
-            "target": "footer",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "aria-label": "close dialog",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [
-              Object {
-                "icon": "close",
-              },
-            ],
-            "componentStyle": ComponentStyle {
-              "componentId": "Modal__CloseIcon-sc-300qpr-1",
-              "isStatic": true,
-              "rules": Array [
-                "border-radius:50%;border:none;color:",
-                "#999999",
-                ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                "rgba(204, 204, 204, 0.4)",
-                ";color:",
-                "#4c4c4c",
-                ";}:active{box-shadow:none;background-color:",
-                "rgba(128, 128, 128, 0.5)",
-                ";color:",
-                "#4c4c4c",
-                ";}",
-                "position:absolute;top:16px;right:16px;",
-              ],
-            },
-            "displayName": "CloseIcon",
-            "foldedComponentIds": Array [
-              "Button__IconButton-sc-1ovnfsw-2",
-            ],
-            "render": [Function],
-            "styledComponentId": "Modal__CloseIcon-sc-300qpr-1",
-            "target": [Function],
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
-          },
-        },
-      ],
-      "type": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "Content": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Content-sc-6vzg5x-0",
-            "isStatic": true,
-            "rules": Array [
-              "padding:12px 20px;font-size:14px;margin:0;",
-            ],
-          },
-          "displayName": "Card.Content",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Content-sc-6vzg5x-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-        "Description": [Function],
-        "Footer": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Footer-pp401c-0",
-            "isStatic": true,
-            "rules": Array [
-              "padding:0 20px 20px;",
-            ],
-          },
-          "displayName": "Card.Footer",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Footer-pp401c-0",
-          "target": "footer",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-        "Header": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Header-sc-1u94v40-0",
-            "isStatic": true,
-            "rules": Array [
-              "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
-            ],
-          },
-          "displayName": "Card.Header",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Header-sc-1u94v40-0",
-          "target": "header",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-        "HeaderText": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "HeaderText-sc-15zd9gn-0",
-            "isStatic": true,
-            "rules": Array [
-              "flex-grow:1;",
-            ],
-          },
-          "displayName": "Card.HeaderText",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "HeaderText-sc-15zd9gn-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-        "Media": [Function],
-        "Thumbnail": [Function],
-        "Title": [Function],
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Modal__ModalCard-sc-300qpr-0",
-          "isStatic": false,
-          "rules": Array [
-            ".Header-sc-1u94v40-0",
-            "{padding-right:56px;}",
-            [Function],
-          ],
-        },
-        "displayName": "Modal__ModalCard",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Modal__ModalCard-sc-300qpr-0",
-        "target": [Function],
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
-      },
-    },
-    "type": Symbol(react.portal),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "portal",
       "props": Object {
         "children": <ForwardRef
           role="dialog"
@@ -428,11 +89,11 @@ ShallowWrapper {
             onClick={[Function]}
           />
         </ForwardRef>,
-        "containerInfo": <section
-          style="align-items: center; background-color: rgba(128, 128, 128, 0.5); display: flex; height: 100vh; left: 0px; justify-content: center; position: fixed; top: 0px; width: 100vw;"
-        />,
+        "onClick": [Function],
       },
-      "ref": null,
+      "ref": Object {
+        "current": null,
+      },
       "rendered": Object {
         "instance": null,
         "key": undefined,
@@ -641,7 +302,7 @@ ShallowWrapper {
                 "isStatic": true,
                 "rules": Array [
                   "border-radius:50%;border:none;color:",
-                  "#999999",
+                  "rgba(128, 128, 128, 0.5)",
                   ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
                   "rgba(204, 204, 204, 0.4)",
                   ";color:",
@@ -769,6 +430,455 @@ ShallowWrapper {
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
           Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Modal__ModalWrapper-sc-300qpr-2",
+          "isStatic": true,
+          "rules": Array [
+            "align-items:center;background-color:",
+            "rgba(128, 128, 128, 0.5)",
+            ";display:flex;height:100vh;justify-content:center;position:fixed;top:0;width:100vw;",
+          ],
+        },
+        "displayName": "ModalWrapper",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Modal__ModalWrapper-sc-300qpr-2",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": Symbol(react.portal),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "portal",
+      "props": Object {
+        "children": <ForwardRef
+          onClick={[Function]}
+        >
+          <ForwardRef
+            role="dialog"
+          >
+            <ForwardRef>
+              <ForwardRef>
+                <ForwardRef>
+                  Modal title
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>
+            <ForwardRef>
+              Modal Content
+            </ForwardRef>
+            <ForwardRef>
+              ModalFooter
+            </ForwardRef>
+            <ForwardRef
+              aria-label="close dialog"
+              onClick={[Function]}
+            />
+          </ForwardRef>
+        </ForwardRef>,
+        "containerInfo": <section />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <ForwardRef
+            role="dialog"
+          >
+            <ForwardRef>
+              <ForwardRef>
+                <ForwardRef>
+                  Modal title
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>
+            <ForwardRef>
+              Modal Content
+            </ForwardRef>
+            <ForwardRef>
+              ModalFooter
+            </ForwardRef>
+            <ForwardRef
+              aria-label="close dialog"
+              onClick={[Function]}
+            />
+          </ForwardRef>,
+          "onClick": [Function],
+        },
+        "ref": Object {
+          "current": null,
+        },
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              Array [
+                <ForwardRef>
+                  <ForwardRef>
+                    <ForwardRef>
+                      Modal title
+                    </ForwardRef>
+                  </ForwardRef>
+                </ForwardRef>,
+                <ForwardRef>
+                  Modal Content
+                </ForwardRef>,
+                <ForwardRef>
+                  ModalFooter
+                </ForwardRef>,
+              ],
+              <ForwardRef
+                aria-label="close dialog"
+                onClick={[Function]}
+              />,
+            ],
+            "role": "dialog",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <ForwardRef>
+                  <ForwardRef>
+                    Modal title
+                  </ForwardRef>
+                </ForwardRef>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <ForwardRef>
+                    Modal title
+                  </ForwardRef>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Modal title",
+                  },
+                  "ref": null,
+                  "rendered": "Modal title",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Title-hr7zki-0",
+                      "isStatic": true,
+                      "rules": Array [
+                        "font-weight:700;line-height:1.25;",
+                      ],
+                    },
+                    "displayName": "Title",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Title-hr7zki-0",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  },
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "HeaderText-sc-15zd9gn-0",
+                    "isStatic": true,
+                    "rules": Array [
+                      "flex-grow:1;",
+                    ],
+                  },
+                  "displayName": "Card.HeaderText",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "HeaderText-sc-15zd9gn-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Header-sc-13ddtbk-0",
+                  "isStatic": true,
+                  "rules": Array [
+                    "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
+                    "padding:24px 24px 0;",
+                  ],
+                },
+                "displayName": "Header",
+                "foldedComponentIds": Array [
+                  "Header-sc-1u94v40-0",
+                ],
+                "render": [Function],
+                "styledComponentId": "Header-sc-13ddtbk-0",
+                "target": "header",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Modal Content",
+              },
+              "ref": null,
+              "rendered": "Modal Content",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Content-sc-9f5o6t-0",
+                  "isStatic": true,
+                  "rules": Array [
+                    "padding:12px 20px;font-size:14px;margin:0;",
+                    "padding:16px 24px;max-height:70vh;overflow-y:auto;",
+                  ],
+                },
+                "displayName": "Content",
+                "foldedComponentIds": Array [
+                  "Content-sc-6vzg5x-0",
+                ],
+                "render": [Function],
+                "styledComponentId": "Content-sc-9f5o6t-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "ModalFooter",
+              },
+              "ref": null,
+              "rendered": "ModalFooter",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Footer-pp401c-0",
+                  "isStatic": true,
+                  "rules": Array [
+                    "padding:0 20px 20px;",
+                  ],
+                },
+                "displayName": "Card.Footer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Footer-pp401c-0",
+                "target": "footer",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "aria-label": "close dialog",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  Object {
+                    "icon": "close",
+                  },
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Modal__CloseIcon-sc-300qpr-1",
+                  "isStatic": true,
+                  "rules": Array [
+                    "border-radius:50%;border:none;color:",
+                    "rgba(128, 128, 128, 0.5)",
+                    ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                    "rgba(204, 204, 204, 0.4)",
+                    ";color:",
+                    "#4c4c4c",
+                    ";}:active{box-shadow:none;background-color:",
+                    "rgba(128, 128, 128, 0.5)",
+                    ";color:",
+                    "#4c4c4c",
+                    ";}",
+                    "position:absolute;top:16px;right:16px;",
+                  ],
+                },
+                "displayName": "CloseIcon",
+                "foldedComponentIds": Array [
+                  "Button__IconButton-sc-1ovnfsw-2",
+                ],
+                "render": [Function],
+                "styledComponentId": "Modal__CloseIcon-sc-300qpr-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "Content": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Content-sc-6vzg5x-0",
+                "isStatic": true,
+                "rules": Array [
+                  "padding:12px 20px;font-size:14px;margin:0;",
+                ],
+              },
+              "displayName": "Card.Content",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Content-sc-6vzg5x-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+            "Description": [Function],
+            "Footer": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Footer-pp401c-0",
+                "isStatic": true,
+                "rules": Array [
+                  "padding:0 20px 20px;",
+                ],
+              },
+              "displayName": "Card.Footer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Footer-pp401c-0",
+              "target": "footer",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+            "Header": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Header-sc-1u94v40-0",
+                "isStatic": true,
+                "rules": Array [
+                  "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
+                ],
+              },
+              "displayName": "Card.Header",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Header-sc-1u94v40-0",
+              "target": "header",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+            "HeaderText": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "HeaderText-sc-15zd9gn-0",
+                "isStatic": true,
+                "rules": Array [
+                  "flex-grow:1;",
+                ],
+              },
+              "displayName": "Card.HeaderText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "HeaderText-sc-15zd9gn-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+            "Media": [Function],
+            "Thumbnail": [Function],
+            "Title": [Function],
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Modal__ModalCard-sc-300qpr-0",
+              "isStatic": false,
+              "rules": Array [
+                ".Header-sc-1u94v40-0",
+                "{padding-right:56px;}",
+                [Function],
+              ],
+            },
+            "displayName": "Modal__ModalCard",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Modal__ModalCard-sc-300qpr-0",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Modal__ModalWrapper-sc-300qpr-2",
+            "isStatic": true,
+            "rules": Array [
+              "align-items:center;background-color:",
+              "rgba(128, 128, 128, 0.5)",
+              ";display:flex;height:100vh;justify-content:center;position:fixed;top:0;width:100vw;",
+            ],
+          },
+          "displayName": "ModalWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Modal__ModalWrapper-sc-300qpr-2",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         },
       },
       "type": Symbol(react.portal),

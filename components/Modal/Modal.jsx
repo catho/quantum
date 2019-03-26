@@ -22,7 +22,7 @@ function getBreakpoint() {
   );
 }
 
-export const ModalCard = styled(Card)`
+const ModalCard = styled(Card)`
   ${Card.Header} {
     padding-right: 56px;
   }
@@ -40,6 +40,19 @@ const CloseIcon = styled(Button.Icon).attrs({
 
 CloseIcon.displayName = 'CloseIcon';
 
+const ModalWrapper = styled.div`
+  align-items: center;
+  background-color: ${Colors.SHADOW[50]};
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+`;
+
+ModalWrapper.displayName = 'ModalWrapper';
+
 class Modal extends React.Component {
   static Header = Header;
 
@@ -54,39 +67,55 @@ class Modal extends React.Component {
   constructor(props) {
     super(props);
 
-    this.modalWrapper = document.createElement('section');
-    this.modalWrapper.style.cssText = `
-      align-items: center;
-      background-color: ${Colors.SHADOW[50]};
-      display: flex;
-      height: 100vh;
-      left: 0;
-      justify-content: center;
-      position: fixed;
-      top: 0;
-      width: 100vw;
-    `;
+    this.modalWrapperRef = React.createRef();
+    this.modalOverlay = document.createElement('section');
   }
 
   componentDidMount() {
     const { body } = document;
-    body.appendChild(this.modalWrapper);
+
+    body.appendChild(this.modalOverlay);
+    window.addEventListener('keydown', this.handleEscKey);
   }
 
   componentWillUnmount() {
     const { body } = document;
-    body.removeChild(this.modalWrapper);
+
+    body.removeChild(this.modalOverlay);
+    window.removeEventListener('keydown', this.handleEscKey);
   }
+
+  handleClickOutside = ({ target }) => {
+    const { onClose } = this.props;
+    const { current: modalRef } = this.modalWrapperRef;
+
+    if (target === modalRef) {
+      onClose();
+    }
+  };
+
+  handleEscKey = ({ key }) => {
+    const { onClose } = this.props;
+
+    if (key === 'Escape') {
+      onClose();
+    }
+  };
 
   render() {
     const { children, onClose, closeButtonAriaLabel } = this.props;
 
     return ReactDOM.createPortal(
-      <ModalCard role="dialog">
-        {children}
-        <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
-      </ModalCard>,
-      this.modalWrapper,
+      <ModalWrapper
+        onClick={this.handleClickOutside}
+        ref={this.modalWrapperRef}
+      >
+        <ModalCard role="dialog">
+          {children}
+          <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
+        </ModalCard>
+      </ModalWrapper>,
+      this.modalOverlay,
     );
   }
 }

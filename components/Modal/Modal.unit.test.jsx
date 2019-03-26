@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Modal from './Modal';
 
 describe('<Modal />', () => {
@@ -33,18 +33,45 @@ describe('<Modal />', () => {
     });
   });
 
-  describe('closeIcon Button', () => {
+  describe('closeIcon', () => {
     it('should exists a closeIcon button when modal is rendered', () => {
       const modal = shallow(<Modal />);
 
       expect(modal.find('CloseIcon')).toBeTruthy();
     });
+  });
 
-    it('should call onClock when CloseIcon is clicked', () => {
+  describe('onClose prop', () => {
+    it('should call onClose when CloseIcon is clicked', () => {
       const onCloseMock = jest.fn();
       const modal = shallow(<Modal onClose={onCloseMock} />);
 
       modal.find('CloseIcon').simulate('click');
+
+      expect(onCloseMock).toHaveBeenCalled();
+    });
+
+    it('should call onClose when is clicked outside Modal', () => {
+      const onCloseMock = jest.fn();
+      const modal = mount(<Modal onClose={onCloseMock} />);
+
+      modal.find('ModalWrapper').simulate('click');
+
+      expect(onCloseMock).toHaveBeenCalled();
+    });
+
+    it('should call onClose when "Escape" key is pressed', () => {
+      const eventMap = {
+        keydown: null,
+      };
+      window.addEventListener = jest.fn((event, cb) => {
+        eventMap[event] = cb;
+      });
+
+      const onCloseMock = jest.fn();
+      mount(<Modal onClose={onCloseMock} />);
+
+      eventMap.keydown({ key: 'Escape' });
 
       expect(onCloseMock).toHaveBeenCalled();
     });
