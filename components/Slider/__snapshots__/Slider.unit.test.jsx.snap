@@ -8,16 +8,13 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   color: #FFFFFF;
   font-size: 16px;
   font-weight: bold;
-  max-width: 250px;
   opacity: 0;
-  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
-  text-overflow: ellipsis;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  white-space: nowrap;
   z-index: 100;
   left: 50%;
   bottom: 130%;
@@ -40,41 +37,49 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   bottom: -5px;
 }
 
+.c3 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c1 {
   position: relative;
 }
 
-.c3 .rc-slider-handle {
+.c4 .rc-slider-handle {
   background-color: #1355d0;
 }
 
-.c3 .rc-slider-rail {
+.c4 .rc-slider-rail {
   background-color: #e5edfc;
 }
 
-.c3 .rc-slider-track {
+.c4 .rc-slider-track {
   background-color: rgba(19,85,208,0.5);
 }
 
-.c3 .rc-slider-handle:active,
-.c3 .rc-slider-handle:focus {
+.c4 .rc-slider-handle:active,
+.c4 .rc-slider-handle:focus {
   border: none;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c3.rc-slider-disabled {
+.c4.rc-slider-disabled {
   background: none;
 }
 
-.c3.rc-slider-disabled .rc-slider-handle {
+.c4.rc-slider-disabled .rc-slider-handle {
   background-color: #999999;
 }
 
-.c3.rc-slider-disabled .rc-slider-rail {
+.c4.rc-slider-disabled .rc-slider-rail {
   background-color: #f2f2f2;
 }
 
-.c3.rc-slider-disabled .rc-slider-track {
+.c4.rc-slider-disabled .rc-slider-track {
   background-color: #cccccc;
 }
 
@@ -100,10 +105,14 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   <div
     className="c2"
   >
-    50
+    <span
+      className="c3"
+    >
+      50
+    </span>
   </div>
   <div
-    className="rc-slider rc-slider-with-marks rc-slider-disabled c3"
+    className="rc-slider rc-slider-with-marks rc-slider-disabled c4"
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -219,16 +228,13 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   color: #FFFFFF;
   font-size: 16px;
   font-weight: bold;
-  max-width: 250px;
   opacity: 0;
-  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
-  text-overflow: ellipsis;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  white-space: nowrap;
   z-index: 100;
   left: 50%;
   bottom: 130%;
@@ -251,41 +257,49 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   bottom: -5px;
 }
 
+.c3 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c1 {
   position: relative;
 }
 
-.c3 .rc-slider-handle {
+.c4 .rc-slider-handle {
   background-color: #1355d0;
 }
 
-.c3 .rc-slider-rail {
+.c4 .rc-slider-rail {
   background-color: #e5edfc;
 }
 
-.c3 .rc-slider-track {
+.c4 .rc-slider-track {
   background-color: rgba(19,85,208,0.5);
 }
 
-.c3 .rc-slider-handle:active,
-.c3 .rc-slider-handle:focus {
+.c4 .rc-slider-handle:active,
+.c4 .rc-slider-handle:focus {
   border: none;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c3.rc-slider-disabled {
+.c4.rc-slider-disabled {
   background: none;
 }
 
-.c3.rc-slider-disabled .rc-slider-handle {
+.c4.rc-slider-disabled .rc-slider-handle {
   background-color: #999999;
 }
 
-.c3.rc-slider-disabled .rc-slider-rail {
+.c4.rc-slider-disabled .rc-slider-rail {
   background-color: #f2f2f2;
 }
 
-.c3.rc-slider-disabled .rc-slider-track {
+.c4.rc-slider-disabled .rc-slider-track {
   background-color: #cccccc;
 }
 
@@ -311,10 +325,14 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   <div
     className="c2"
   >
-    10
+    <span
+      className="c3"
+    >
+      10
+    </span>
   </div>
   <div
-    className="rc-slider rc-slider-with-marks c3"
+    className="rc-slider rc-slider-with-marks c4"
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -430,16 +448,13 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   color: #FFFFFF;
   font-size: 16px;
   font-weight: bold;
-  max-width: 250px;
   opacity: 0;
-  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
-  text-overflow: ellipsis;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  white-space: nowrap;
   z-index: 100;
   left: 50%;
   bottom: 130%;
@@ -462,41 +477,49 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   bottom: -5px;
 }
 
+.c3 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c1 {
   position: relative;
 }
 
-.c3 .rc-slider-handle {
+.c4 .rc-slider-handle {
   background-color: #1355d0;
 }
 
-.c3 .rc-slider-rail {
+.c4 .rc-slider-rail {
   background-color: #e5edfc;
 }
 
-.c3 .rc-slider-track {
+.c4 .rc-slider-track {
   background-color: rgba(19,85,208,0.5);
 }
 
-.c3 .rc-slider-handle:active,
-.c3 .rc-slider-handle:focus {
+.c4 .rc-slider-handle:active,
+.c4 .rc-slider-handle:focus {
   border: none;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c3.rc-slider-disabled {
+.c4.rc-slider-disabled {
   background: none;
 }
 
-.c3.rc-slider-disabled .rc-slider-handle {
+.c4.rc-slider-disabled .rc-slider-handle {
   background-color: #999999;
 }
 
-.c3.rc-slider-disabled .rc-slider-rail {
+.c4.rc-slider-disabled .rc-slider-rail {
   background-color: #f2f2f2;
 }
 
-.c3.rc-slider-disabled .rc-slider-track {
+.c4.rc-slider-disabled .rc-slider-track {
   background-color: #cccccc;
 }
 
@@ -527,10 +550,14 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   <div
     className="c2"
   >
-    10 to 30
+    <span
+      className="c3"
+    >
+      10 to 30
+    </span>
   </div>
   <div
-    className="rc-slider rc-slider-with-marks c3"
+    className="rc-slider rc-slider-with-marks c4"
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}

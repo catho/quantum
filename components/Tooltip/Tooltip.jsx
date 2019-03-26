@@ -11,7 +11,7 @@ const Tip = styled.div`
   color: ${Colors.WHITE};
   font-size: 16px;
   font-weight: bold;
-  opacity: ${props => (props.show ? '1' : '0')};
+  opacity: ${({ visible }) => (visible ? '1' : '0')};
   padding: 4px 8px;
   position: absolute;
   line-height: 0;
@@ -44,25 +44,28 @@ class Tooltip extends Component {
   constructor(props) {
     super(props);
     const { visible } = this.props;
-    this.state = { show: visible };
+    this.state = { visible };
   }
 
-  handleEnter = () => this.setState({ show: true });
-
-  handleLeave = () => this.setState({ show: false });
+  isVisible = visible => this.setState({ visible });
 
   render() {
-    const { children, placement, text, visible, ...rest } = this.props;
-    const { show } = this.state;
+    const {
+      children,
+      placement,
+      text,
+      visible: visibleProp,
+      ...rest
+    } = this.props;
+    const { visible: visibleState } = this.state;
 
     return (
       <Wrapper
-        onMouseEnter={this.handleEnter}
-        onMouseLeave={this.handleLeave}
-        length={text ? text.length : 0}
+        onMouseEnter={() => this.isVisible(true)}
+        onMouseLeave={() => this.isVisible(false)}
         {...rest}
       >
-        <Tip placement={placement} show={visible || show}>
+        <Tip placement={placement} visible={visibleProp || visibleState}>
           <TipText>{text}</TipText>
         </Tip>
         {children}
