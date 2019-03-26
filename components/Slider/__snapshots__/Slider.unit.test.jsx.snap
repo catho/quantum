@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disabled 1`] = `
-.c3 {
+.c2 {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
   border-radius: 4px;
@@ -11,17 +11,19 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   opacity: 0;
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  visibility: hidden;
   z-index: 100;
-  top: -1085px;
   left: 50%;
-  margin-left: -960px;
+  bottom: 130%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.c3:before {
+.c2:before {
   content: '';
   position: absolute;
   border-left: 6px solid transparent;
@@ -35,13 +37,16 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   bottom: -5px;
 }
 
-.c1 {
-  position: relative;
+.c3 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.c1 .c2 {
-  width: initial;
+.c1 {
+  position: relative;
 }
 
 .c4 .rc-slider-handle {
@@ -98,11 +103,13 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   value={50}
 >
   <div
-    className="c2 c3"
-    height={1080}
-    width={1920}
+    className="c2"
   >
-    50
+    <span
+      className="c3"
+    >
+      50
+    </span>
   </div>
   <div
     className="rc-slider rc-slider-with-marks rc-slider-disabled c4"
@@ -214,7 +221,7 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
 `;
 
 exports[`<Slider /> Snapshots should match the snapshot when have just one handle 1`] = `
-.c3 {
+.c2 {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
   border-radius: 4px;
@@ -224,17 +231,19 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   opacity: 0;
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  visibility: hidden;
   z-index: 100;
-  top: -1085px;
   left: 50%;
-  margin-left: -960px;
+  bottom: 130%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.c3:before {
+.c2:before {
   content: '';
   position: absolute;
   border-left: 6px solid transparent;
@@ -248,13 +257,16 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   bottom: -5px;
 }
 
-.c1 {
-  position: relative;
+.c3 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.c1 .c2 {
-  width: initial;
+.c1 {
+  position: relative;
 }
 
 .c4 .rc-slider-handle {
@@ -311,11 +323,13 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   value={10}
 >
   <div
-    className="c2 c3"
-    height={1080}
-    width={1920}
+    className="c2"
   >
-    10
+    <span
+      className="c3"
+    >
+      10
+    </span>
   </div>
   <div
     className="rc-slider rc-slider-with-marks c4"
@@ -427,7 +441,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 `;
 
 exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`] = `
-.c3 {
+.c2 {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
   border-radius: 4px;
@@ -437,17 +451,19 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   opacity: 0;
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  visibility: hidden;
   z-index: 100;
-  top: -1085px;
   left: 50%;
-  margin-left: -960px;
+  bottom: 130%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.c3:before {
+.c2:before {
   content: '';
   position: absolute;
   border-left: 6px solid transparent;
@@ -461,13 +477,16 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   bottom: -5px;
 }
 
-.c1 {
-  position: relative;
+.c3 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.c1 .c2 {
-  width: initial;
+.c1 {
+  position: relative;
 }
 
 .c4 .rc-slider-handle {
@@ -529,11 +548,13 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   }
 >
   <div
-    className="c2 c3"
-    height={1080}
-    width={1920}
+    className="c2"
   >
-    10 to 30
+    <span
+      className="c3"
+    >
+      10 to 30
+    </span>
   </div>
   <div
     className="rc-slider rc-slider-with-marks c4"
