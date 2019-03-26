@@ -35,5 +35,9 @@ export default [
   // 16. Tags
   'Tag',
 
+  // 17. Cards
   'Card',
+
+  // 18. SnackBar
+  'SnackBar',
 ].map(s => `./${s}/${s}.story.jsx`);
