@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import theme from '../shared/theme';
 import skins from './skins';
 import Icon from '../Icon/Icon';
+import Colors from '../Colors';
 
 const fontSize = ({ size }) => {
   const sizes = {
@@ -64,6 +65,10 @@ const StyledButton = styled.button`
   justify-content: center;
   font-weight: bold;
   letter-spacing: 0.2px;
+
+  *:nth-child(2) {
+    margin-left: 5px;
+  }
 
   ${fontSize}
   ${padding}
@@ -143,7 +148,7 @@ const StyledButton = styled.button`
 const Button = ({ children, icon, size, ...rest }) => (
   <StyledButton {...rest} size={size}>
     {icon && <ButtonIcon size={size} name={icon} />}
-    {children}
+    {children && <span>{children}</span>}
   </StyledButton>
 );
 
@@ -155,7 +160,7 @@ Button.defaultProps = {
   size: 'medium',
   skin: 'primary',
   type: 'button',
-  children: 'Catho',
+  children: undefined,
   onClick: () => {},
 };
 
@@ -172,5 +177,28 @@ Button.propTypes = {
   children: PropTypes.node,
   onClick: PropTypes.func,
 };
+
+const IconButton = styled(Button)`
+  border-radius: 50%;
+  border: none;
+  color: ${Colors.BLACK[400]};
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  :hover,
+  :focus {
+    box-shadow: none;
+    background-color: ${Colors.SHADOW[40]};
+    color: ${Colors.BLACK[700]};
+  }
+  :active {
+    box-shadow: none;
+    background-color: ${Colors.SHADOW[50]};
+    color: ${Colors.BLACK[700]};
+  }
+`;
+
+Button.Icon = IconButton;
 
 export default Button;

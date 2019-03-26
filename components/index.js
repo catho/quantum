@@ -11,6 +11,7 @@ import Icon from './Icon';
 import Input from './Input';
 import RadioGroup from './RadioGroup';
 import Slider from './Slider';
+import SnackBar from './SnackBar';
 import Tag from './Tag';
 import TextArea from './TextArea';
 import Toggle from './Toggle';
@@ -29,11 +30,12 @@ export {
   GlobalStyle,
   Hide,
   Icon,
-  Input,
   IconFont,
+  Input,
   RadioGroup,
   Row,
   Slider,
+  SnackBar,
   Tag,
   TextArea,
   Toggle,
