@@ -8,7 +8,6 @@ import {
   StoryContainer,
   Title,
   SimpleHighlight,
-  Table,
 } from '@catho/quantum-storybook-ui';
 
 import { Row, Col } from '../../components';
@@ -18,42 +17,17 @@ import SnackBarExample from './examples/SnackBarExample';
 storiesOf('SnackBar', module).add('SnackBar', () => (
   <>
     <Heading name="SnackBar">
-      Modals inform users about a task and can contain critical information,
-      require decisions, or involve multiple tasks.
+      SnackBars are used to give a actions support that have just been maded:
+      delete or archive content by accident (undo), resend messages that not
+      been sended for any reason or try to reconnect to internet (retry).
     </Heading>
     <TabbedView>
       <Tab title="Usage">
         <StoryContainer>
           <Title as="h2">Importing SnackBar</Title>
           <SimpleHighlight>{`import { SnackBar } from '@catho/quantum';`}</SimpleHighlight>
-
-          <Title as="h3">Compound Components</Title>
-          <p>We provide a few components to build your Modal.</p>
-
           <Row>
-            <Col medium={8}>
-              <Table>
-                <thead>
-                  <tr>
-                    <th>Component</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style={{ width: 200 }}>
-                      <code>{'<SnackBar />'}</code>
-                    </td>
-                    <td>
-                      Modal wrapper, it&apos;s the root element of Modal
-                      component. Hold all Modal elements.
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-            </Col>
-
-            <Col medium={4}>
+            <Col style={{ marginTop: '20px' }}>
               <SnackBarExample />
             </Col>
           </Row>
@@ -68,7 +42,7 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
         <StoryContainer>
           <Title as="h3">SnackBar</Title>
           <p>
-            Here you can check a simple implamentation using Modal component.
+            Here you can check a simple implamentation using SnackBar component.
           </p>
 
           <Row>
@@ -76,7 +50,7 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
               <SimpleHighlight>{SnackBarExample.code}</SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              <SnackBarExample />
+              <SnackBarExample text="SnackBar text content" />
             </Col>
           </Row>
         </StoryContainer>

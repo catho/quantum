@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SnackBar component should match snapshots 1`] = `
-.c4 {
+.c6 {
   margin-right: 5px;
   pointer-events: none;
 }
 
-.c2 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,29 +39,29 @@ exports[`SnackBar component should match snapshots 1`] = `
   border-radius: 4px;
 }
 
-.c2 *:nth-child(2) {
+.c4 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c2 .c3 {
+.c4 .c5 {
   font-size: 24px;
 }
 
-.c2:hover {
+.c4:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c2:focus {
+.c4:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c2:active {
+.c4:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -69,10 +69,35 @@ exports[`SnackBar component should match snapshots 1`] = `
 }
 
 .c0 {
-  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #002f7b;
+  border-radius: 4px;
+  bottom: 30px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  left: calc(50%/2);
+  min-height: 48px;
+  padding: 13px 16px;
+  position: fixed;
 }
 
 .c1 {
+  font-weight: normal;
+  max-width: 344px;
+  padding-right: 8px;
+}
+
+.c3 {
   border-radius: 50%;
   border: none;
   color: #999999;
@@ -80,32 +105,62 @@ exports[`SnackBar component should match snapshots 1`] = `
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  color: #FFFFFF;
 }
 
-.c1:hover,
-.c1:focus {
+.c3:hover,
+.c3:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c1:active {
+.c3:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-<section
+.c3:hover,
+.c3:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #FFFFFF;
+}
+
+.c2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 13px 8px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
   className="c0"
   role="dialog"
 >
-  Text of SnackBar component
+  <strong
+    className="c1"
+  >
+    Text of SnackBar component
+  </strong>
+  <a
+    className="c2"
+    href="/"
+  >
+    action
+  </a>
   <button
     aria-label="close SnackBar"
-    className="c1 c2"
+    className="c3 c4"
     disabled={false}
     onClick={[Function]}
     size="medium"
@@ -113,7 +168,7 @@ exports[`SnackBar component should match snapshots 1`] = `
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 c4"
+      className="material-icons MuiIcon-root-1 c5 c6"
       size="medium"
       style={
         Object {
@@ -124,16 +179,16 @@ exports[`SnackBar component should match snapshots 1`] = `
       close
     </span>
   </button>
-</section>
+</div>
 `;
 
 exports[`SnackBar component should match snapshots 2`] = `
-.c4 {
+.c6 {
   margin-right: 5px;
   pointer-events: none;
 }
 
-.c2 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -166,29 +221,29 @@ exports[`SnackBar component should match snapshots 2`] = `
   border-radius: 4px;
 }
 
-.c2 *:nth-child(2) {
+.c4 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c2 .c3 {
+.c4 .c5 {
   font-size: 24px;
 }
 
-.c2:hover {
+.c4:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c2:focus {
+.c4:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c2:active {
+.c4:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -196,10 +251,35 @@ exports[`SnackBar component should match snapshots 2`] = `
 }
 
 .c0 {
-  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #002f7b;
+  border-radius: 4px;
+  bottom: 30px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  left: calc(50%/2);
+  min-height: 48px;
+  padding: 13px 16px;
+  position: fixed;
 }
 
 .c1 {
+  font-weight: normal;
+  max-width: 344px;
+  padding-right: 8px;
+}
+
+.c3 {
   border-radius: 50%;
   border: none;
   color: #999999;
@@ -207,32 +287,62 @@ exports[`SnackBar component should match snapshots 2`] = `
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  color: #FFFFFF;
 }
 
-.c1:hover,
-.c1:focus {
+.c3:hover,
+.c3:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c1:active {
+.c3:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-<section
+.c3:hover,
+.c3:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #FFFFFF;
+}
+
+.c2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 13px 8px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
   className="c0"
   role="dialog"
 >
-  SnackBar message content 
+  <strong
+    className="c1"
+  >
+    SnackBar message content 
+  </strong>
+  <a
+    className="c2"
+    href="/"
+  >
+    action
+  </a>
   <button
     aria-label="close SnackBar"
-    className="c1 c2"
+    className="c3 c4"
     disabled={false}
     onClick={[Function]}
     size="medium"
@@ -240,7 +350,7 @@ exports[`SnackBar component should match snapshots 2`] = `
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 c4"
+      className="material-icons MuiIcon-root-1 c5 c6"
       size="medium"
       style={
         Object {
@@ -251,16 +361,16 @@ exports[`SnackBar component should match snapshots 2`] = `
       close
     </span>
   </button>
-</section>
+</div>
 `;
 
 exports[`SnackBar component should match snapshots 3`] = `
-.c4 {
+.c6 {
   margin-right: 5px;
   pointer-events: none;
 }
 
-.c2 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -293,29 +403,29 @@ exports[`SnackBar component should match snapshots 3`] = `
   border-radius: 4px;
 }
 
-.c2 *:nth-child(2) {
+.c4 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c2 .c3 {
+.c4 .c5 {
   font-size: 24px;
 }
 
-.c2:hover {
+.c4:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c2:focus {
+.c4:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c2:active {
+.c4:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -323,10 +433,35 @@ exports[`SnackBar component should match snapshots 3`] = `
 }
 
 .c0 {
-  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #002f7b;
+  border-radius: 4px;
+  bottom: 30px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  left: calc(50%/2);
+  min-height: 48px;
+  padding: 13px 16px;
+  position: fixed;
 }
 
 .c1 {
+  font-weight: normal;
+  max-width: 344px;
+  padding-right: 8px;
+}
+
+.c3 {
   border-radius: 50%;
   border: none;
   color: #999999;
@@ -334,32 +469,62 @@ exports[`SnackBar component should match snapshots 3`] = `
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  color: #FFFFFF;
 }
 
-.c1:hover,
-.c1:focus {
+.c3:hover,
+.c3:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c1:active {
+.c3:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-<section
+.c3:hover,
+.c3:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #FFFFFF;
+}
+
+.c2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 13px 8px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
   className="c0"
   role="dialog"
 >
-  Text of SnackBar component
+  <strong
+    className="c1"
+  >
+    Text of SnackBar component
+  </strong>
+  <a
+    className="c2"
+    href="/"
+  >
+    action
+  </a>
   <button
     aria-label="close SnackBar"
-    className="c1 c2"
+    className="c3 c4"
     disabled={false}
     onClick={[Function]}
     size="medium"
@@ -367,7 +532,7 @@ exports[`SnackBar component should match snapshots 3`] = `
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 c4"
+      className="material-icons MuiIcon-root-1 c5 c6"
       size="medium"
       style={
         Object {
@@ -378,16 +543,16 @@ exports[`SnackBar component should match snapshots 3`] = `
       close
     </span>
   </button>
-</section>
+</div>
 `;
 
 exports[`SnackBar component should match snapshots 4`] = `
-.c4 {
+.c6 {
   margin-right: 5px;
   pointer-events: none;
 }
 
-.c2 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -420,29 +585,29 @@ exports[`SnackBar component should match snapshots 4`] = `
   border-radius: 4px;
 }
 
-.c2 *:nth-child(2) {
+.c4 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c2 .c3 {
+.c4 .c5 {
   font-size: 24px;
 }
 
-.c2:hover {
+.c4:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c2:focus {
+.c4:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c2:active {
+.c4:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -450,10 +615,35 @@ exports[`SnackBar component should match snapshots 4`] = `
 }
 
 .c0 {
-  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #002f7b;
+  border-radius: 4px;
+  bottom: 30px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  left: calc(50%/2);
+  min-height: 48px;
+  padding: 13px 16px;
+  position: fixed;
 }
 
 .c1 {
+  font-weight: normal;
+  max-width: 344px;
+  padding-right: 8px;
+}
+
+.c3 {
   border-radius: 50%;
   border: none;
   color: #999999;
@@ -461,32 +651,62 @@ exports[`SnackBar component should match snapshots 4`] = `
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  color: #FFFFFF;
 }
 
-.c1:hover,
-.c1:focus {
+.c3:hover,
+.c3:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c1:active {
+.c3:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-<section
+.c3:hover,
+.c3:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #FFFFFF;
+}
+
+.c2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 13px 8px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
   className="c0"
   role="dialog"
 >
-  Text of SnackBar component
+  <strong
+    className="c1"
+  >
+    Text of SnackBar component
+  </strong>
+  <a
+    className="c2"
+    href="/"
+  >
+    action
+  </a>
   <button
     aria-label="close"
-    className="c1 c2"
+    className="c3 c4"
     disabled={false}
     onClick={[Function]}
     size="medium"
@@ -494,7 +714,7 @@ exports[`SnackBar component should match snapshots 4`] = `
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 c4"
+      className="material-icons MuiIcon-root-1 c5 c6"
       size="medium"
       style={
         Object {
@@ -505,16 +725,16 @@ exports[`SnackBar component should match snapshots 4`] = `
       close
     </span>
   </button>
-</section>
+</div>
 `;
 
 exports[`SnackBar component should match snapshots 5`] = `
-.c4 {
+.c6 {
   margin-right: 5px;
   pointer-events: none;
 }
 
-.c2 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -547,29 +767,29 @@ exports[`SnackBar component should match snapshots 5`] = `
   border-radius: 4px;
 }
 
-.c2 *:nth-child(2) {
+.c4 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c2 .c3 {
+.c4 .c5 {
   font-size: 24px;
 }
 
-.c2:hover {
+.c4:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c2:focus {
+.c4:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c2:active {
+.c4:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -577,10 +797,35 @@ exports[`SnackBar component should match snapshots 5`] = `
 }
 
 .c0 {
-  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #002f7b;
+  border-radius: 4px;
+  bottom: 30px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  left: calc(50%/2);
+  min-height: 48px;
+  padding: 13px 16px;
+  position: fixed;
 }
 
 .c1 {
+  font-weight: normal;
+  max-width: 344px;
+  padding-right: 8px;
+}
+
+.c3 {
   border-radius: 50%;
   border: none;
   color: #999999;
@@ -588,32 +833,62 @@ exports[`SnackBar component should match snapshots 5`] = `
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  color: #FFFFFF;
 }
 
-.c1:hover,
-.c1:focus {
+.c3:hover,
+.c3:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c1:active {
+.c3:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-<section
+.c3:hover,
+.c3:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #FFFFFF;
+}
+
+.c2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 13px 8px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
   className="c0"
   role="dialog"
 >
-  Text of SnackBar component
+  <strong
+    className="c1"
+  >
+    Text of SnackBar component
+  </strong>
+  <a
+    className="c2"
+    href="/"
+  >
+    action
+  </a>
   <button
     aria-label="close SnackBar"
-    className="c1 c2"
+    className="c3 c4"
     disabled={false}
     onClick={[Function]}
     size="medium"
@@ -621,7 +896,7 @@ exports[`SnackBar component should match snapshots 5`] = `
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 c4"
+      className="material-icons MuiIcon-root-1 c5 c6"
       size="medium"
       style={
         Object {
@@ -632,5 +907,5 @@ exports[`SnackBar component should match snapshots 5`] = `
       close
     </span>
   </button>
-</section>
+</div>
 `;
