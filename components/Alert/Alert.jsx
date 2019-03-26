@@ -32,21 +32,24 @@ const CloseButton = styled(Button.Icon).attrs({
   }
 `;
 
+CloseButton.displayName = 'CloseButton';
+
 const getStylesBySkin = skin => {
-  const colorSchema = skin.toUpperCase();
+  const colorName = skin.toUpperCase();
+  const colorSchema = Colors[colorName];
 
   return `
-    color: ${Colors[colorSchema][900]};
-    background-color: ${Colors[colorSchema][200]};
-    border: ${BORDER_SIZE} solid ${Colors[colorSchema][500]};
+    ${colorSchema[900] && `color: ${colorSchema[900]}`};
+    background-color: ${colorSchema[200]};
+    border: ${BORDER_SIZE} solid ${colorSchema[500]};
 
     ${Content} ${AlertIcon} {
-      color: ${Colors[colorSchema][500]};
+      color: ${colorSchema[500]};
       margin-right: ${DEFAULT_SPACING};
     }
 
     ${Content} ${CloseButton} {
-      color: ${Colors[colorSchema][500]};
+      color: ${colorSchema[500]};
     }
   `;
 };
@@ -59,10 +62,8 @@ const Wrapper = styled.div`
   ${({ skin }) => getStylesBySkin(skin)}
 `;
 
-CloseButton.displayName = 'CloseButton';
-
 const Alert = ({ icon, children, onClose, ...rest }) => (
-  <Wrapper {...rest}>
+  <Wrapper {...rest} role="alert">
     <Content onClose={onClose}>
       {icon && <AlertIcon name={icon} />}
       {children && <span>{children}</span>}
