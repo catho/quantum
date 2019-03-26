@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Modal from './Modal';
 
 describe('<Modal />', () => {
@@ -23,7 +24,7 @@ describe('<Modal />', () => {
   describe('Snapshots', () => {
     it('should match the snapshot', () => {
       component = mount(wrapper);
-      expect(component.html()).toMatchSnapshot();
+      expect(toJson(component)).toMatchSnapshot();
     });
   });
 

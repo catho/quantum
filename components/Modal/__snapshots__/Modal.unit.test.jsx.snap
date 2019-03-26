@@ -1,3 +1,1149 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Modal /> Snapshots should match the snapshot 1`] = `"<div role=\\"dialog\\" class=\\"Modal__ModalWrapper-sc-300qpr-2 cphscy\\"><article class=\\"Modal__ModalCard-sc-300qpr-0 eAMeGy Card__CardWrapper-om5cci-0 eLGObe\\"><header class=\\"Header-sc-1u94v40-0 Header-sc-13ddtbk-0 glzHSR\\"><div class=\\"HeaderText-sc-15zd9gn-0 fBjxvv\\"><h2 class=\\"Title-hr7zki-0 iZpMuq Title__Heading-sc-14fvmc0-0 fGTSAd\\">Modal title</h2></div></header><div class=\\"Content-sc-6vzg5x-0 Content-sc-9f5o6t-0 gCvCNY\\">Modal Content</div><footer class=\\"Footer-pp401c-0 jtKCYn\\">ModalFooter</footer><button aria-label=\\"close dialog\\" class=\\"Button__IconButton-sc-1ovnfsw-2 Modal__CloseIcon-sc-300qpr-1 iILLFk Button__StyledButton-sc-1ovnfsw-1 dwNtHu\\" type=\\"button\\"><span class=\\"material-icons MuiIcon-root-1 Button__ButtonIcon-sc-1ovnfsw-0 hvLbao\\" aria-hidden=\\"true\\">close</span></button></article></div>"`;
+exports[`<Modal /> Snapshots should match the snapshot 1`] = `
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c7 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c9 {
+  padding: 0 20px 20px;
+}
+
+.c2 {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px 0 rgba(128,128,128,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c13 {
+  pointer-events: none;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c11 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c11 .c12 {
+  font-size: 24px;
+}
+
+.c11:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c11:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c11:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c8 {
+  padding: 12px 20px;
+  font-size: 14px;
+  margin: 0;
+  font-size: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 16px 24px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px 0;
+  padding: 24px 24px 0;
+}
+
+.c4 > * {
+  margin-right: 18px;
+}
+
+.c4 > *:last-child {
+  margin-right: 0;
+}
+
+.c6 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.c1 .c3 {
+  padding-right: 56px;
+}
+
+.c10 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.c10:hover,
+.c10:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c10:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(128,128,128,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+@media (min-width:1px) {
+  .c1 {
+    width: 90%;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    width: 400px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 600px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    width: 800px;
+  }
+}
+
+<Modal
+  closeButtonAriaLabel="close dialog"
+  onClose={[Function]}
+>
+  <Portal
+    containerInfo={
+      .c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c7 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c9 {
+  padding: 0 20px 20px;
+}
+
+.c2 {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px 0 rgba(128,128,128,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c13 {
+  pointer-events: none;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c11 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c11 .c12 {
+  font-size: 24px;
+}
+
+.c11:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c11:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c11:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c8 {
+  padding: 12px 20px;
+  font-size: 14px;
+  margin: 0;
+  font-size: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 16px 24px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px 0;
+  padding: 24px 24px 0;
+}
+
+.c4 > * {
+  margin-right: 18px;
+}
+
+.c4 > *:last-child {
+  margin-right: 0;
+}
+
+.c6 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.c1 .c3 {
+  padding-right: 56px;
+}
+
+.c10 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.c10:hover,
+.c10:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c10:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(128,128,128,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+@media (min-width:1px) {
+  .c1 {
+    width: 90%;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    width: 400px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 600px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    width: 800px;
+  }
+}
+
+<section>
+        <div
+          class="c0"
+          role="dialog"
+        >
+          <article
+            class="c1 c2"
+          >
+            <header
+              class="c3 c4"
+            >
+              <div
+                class="c5"
+              >
+                <h2
+                  class="c6 c7"
+                >
+                  Modal title
+                </h2>
+              </div>
+            </header>
+            <div
+              class="c8"
+            >
+              Modal Content
+            </div>
+            <footer
+              class="c9"
+            >
+              ModalFooter
+            </footer>
+            <button
+              aria-label="close dialog"
+              class="c10 c11"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="material-icons MuiIcon-root-1 c12 c13"
+              >
+                close
+              </span>
+            </button>
+          </article>
+        </div>
+      </section>
+    }
+  >
+    <ModalWrapper
+      onClick={[Function]}
+      role="dialog"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Modal__ModalWrapper-sc-300qpr-2",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "align-items:center;background-color:",
+                "rgba(128, 128, 128, 0.5)",
+                ";display:flex;height:100vh;justify-content:center;position:fixed;top:0;width:100vw;",
+              ],
+            },
+            "displayName": "ModalWrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Modal__ModalWrapper-sc-300qpr-2",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={
+          Object {
+            "current": <div
+              class="c0"
+              role="dialog"
+            >
+              <article
+                class="c1 c2"
+              >
+                <header
+                  class="c3 c4"
+                >
+                  <div
+                    class="c5"
+                  >
+                    <h2
+                      class="c6 c7"
+                    >
+                      Modal title
+                    </h2>
+                  </div>
+                </header>
+                <div
+                  class="c8"
+                >
+                  Modal Content
+                </div>
+                <footer
+                  class="c9"
+                >
+                  ModalFooter
+                </footer>
+                <button
+                  aria-label="close dialog"
+                  class="c10 c11"
+                  type="button"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="material-icons MuiIcon-root-1 c12 c13"
+                  >
+                    close
+                  </span>
+                </button>
+              </article>
+            </div>,
+          }
+        }
+        onClick={[Function]}
+        role="dialog"
+      >
+        <div
+          className="c0"
+          onClick={[Function]}
+          role="dialog"
+        >
+          <Modal__ModalCard>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "Content": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content-sc-6vzg5x-0",
+                      "isStatic": true,
+                      "rules": Array [
+                        "padding:12px 20px;font-size:14px;margin:0;",
+                      ],
+                    },
+                    "displayName": "Card.Content",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content-sc-6vzg5x-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                  "Description": [Function],
+                  "Footer": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Footer-pp401c-0",
+                      "isStatic": true,
+                      "lastClassName": "c9",
+                      "rules": Array [
+                        "padding:0 20px 20px;",
+                      ],
+                    },
+                    "displayName": "Card.Footer",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Footer-pp401c-0",
+                    "target": "footer",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                  "Header": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "c3",
+                      "isStatic": true,
+                      "rules": Array [
+                        "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
+                      ],
+                    },
+                    "displayName": "Card.Header",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "c3",
+                    "target": "header",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                  "HeaderText": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "HeaderText-sc-15zd9gn-0",
+                      "isStatic": true,
+                      "lastClassName": "c5",
+                      "rules": Array [
+                        "flex-grow:1;",
+                      ],
+                    },
+                    "displayName": "Card.HeaderText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "HeaderText-sc-15zd9gn-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                  "Media": [Function],
+                  "Thumbnail": [Function],
+                  "Title": [Function],
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Modal__ModalCard-sc-300qpr-0",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      ".c3",
+                      "{padding-right:56px;}",
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Modal__ModalCard",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Modal__ModalCard-sc-300qpr-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <Card
+                className="c1"
+              >
+                <Card__CardWrapper
+                  className="c1"
+                >
+                  <StyledComponent
+                    className="c1"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Card__CardWrapper-om5cci-0",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "background-color:",
+                            "#FFFFFF",
+                            ";border-radius:8px;box-shadow:0 2px 6px 0 ",
+                            "rgba(128, 128, 128, 0.5)",
+                            ";display:flex;flex-direction:column;position:relative;",
+                          ],
+                        },
+                        "displayName": "Card__CardWrapper",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Card__CardWrapper-om5cci-0",
+                        "target": "article",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <article
+                      className="c1 c2"
+                    >
+                      <Header>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Header-sc-13ddtbk-0",
+                                "isStatic": true,
+                                "lastClassName": "c4",
+                                "rules": Array [
+                                  "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
+                                  "padding:24px 24px 0;",
+                                ],
+                              },
+                              "displayName": "Header",
+                              "foldedComponentIds": Array [
+                                "c3",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "Header-sc-13ddtbk-0",
+                              "target": "header",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <header
+                            className="c3 c4"
+                          >
+                            <Card.HeaderText>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "HeaderText-sc-15zd9gn-0",
+                                      "isStatic": true,
+                                      "lastClassName": "c5",
+                                      "rules": Array [
+                                        "flex-grow:1;",
+                                      ],
+                                    },
+                                    "displayName": "Card.HeaderText",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "HeaderText-sc-15zd9gn-0",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <div
+                                  className="c5"
+                                >
+                                  <Title>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "Title-hr7zki-0",
+                                            "isStatic": true,
+                                            "lastClassName": "c6",
+                                            "rules": Array [
+                                              "font-weight:700;line-height:1.25;",
+                                            ],
+                                          },
+                                          "displayName": "Title",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "Title-hr7zki-0",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                          Symbol(Symbol.hasInstance): [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <Card.Title
+                                        className="c6"
+                                        small={false}
+                                      >
+                                        <Title__Heading
+                                          className="c6"
+                                          small={false}
+                                        >
+                                          <StyledComponent
+                                            className="c6"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "Title__Heading-sc-14fvmc0-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c7",
+                                                  "rules": Array [
+                                                    "font-size:",
+                                                    [Function],
+                                                    ";font-weight:600;margin:0;",
+                                                  ],
+                                                },
+                                                "displayName": "Title__Heading",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "Title__Heading-sc-14fvmc0-0",
+                                                "target": "h2",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            small={false}
+                                          >
+                                            <h2
+                                              className="c6 c7"
+                                            >
+                                              Modal title
+                                            </h2>
+                                          </StyledComponent>
+                                        </Title__Heading>
+                                      </Card.Title>
+                                    </StyledComponent>
+                                  </Title>
+                                </div>
+                              </StyledComponent>
+                            </Card.HeaderText>
+                          </header>
+                        </StyledComponent>
+                      </Header>
+                      <Content>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Content-sc-9f5o6t-0",
+                                "isStatic": true,
+                                "lastClassName": "c8",
+                                "rules": Array [
+                                  "padding:12px 20px;font-size:14px;margin:0;",
+                                  "font-size:16px;max-height:70vh;overflow-y:auto;padding:16px 24px;",
+                                ],
+                              },
+                              "displayName": "Content",
+                              "foldedComponentIds": Array [
+                                "Content-sc-6vzg5x-0",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "Content-sc-9f5o6t-0",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c8"
+                          >
+                            Modal Content
+                          </div>
+                        </StyledComponent>
+                      </Content>
+                      <Card.Footer>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Footer-pp401c-0",
+                                "isStatic": true,
+                                "lastClassName": "c9",
+                                "rules": Array [
+                                  "padding:0 20px 20px;",
+                                ],
+                              },
+                              "displayName": "Card.Footer",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Footer-pp401c-0",
+                              "target": "footer",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <footer
+                            className="c9"
+                          >
+                            ModalFooter
+                          </footer>
+                        </StyledComponent>
+                      </Card.Footer>
+                      <CloseIcon
+                        aria-label="close dialog"
+                        onClick={[Function]}
+                      >
+                        <StyledComponent
+                          aria-label="close dialog"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
+                                Object {
+                                  "icon": "close",
+                                },
+                              ],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Modal__CloseIcon-sc-300qpr-1",
+                                "isStatic": true,
+                                "lastClassName": "c10",
+                                "rules": Array [
+                                  "border-radius:50%;border:none;color:",
+                                  "rgba(128, 128, 128, 0.5)",
+                                  ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                                  "rgba(204, 204, 204, 0.4)",
+                                  ";color:",
+                                  "#4c4c4c",
+                                  ";}:active{box-shadow:none;background-color:",
+                                  "rgba(128, 128, 128, 0.5)",
+                                  ";color:",
+                                  "#4c4c4c",
+                                  ";}",
+                                  "position:absolute;top:16px;right:16px;",
+                                ],
+                              },
+                              "displayName": "CloseIcon",
+                              "foldedComponentIds": Array [
+                                "Button__IconButton-sc-1ovnfsw-2",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "Modal__CloseIcon-sc-300qpr-1",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                              Symbol(Symbol.hasInstance): [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                        >
+                          <Button
+                            aria-label="close dialog"
+                            center={false}
+                            className="c10"
+                            disabled={false}
+                            full={false}
+                            icon="close"
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <Button__StyledButton
+                              aria-label="close dialog"
+                              center={false}
+                              className="c10"
+                              disabled={false}
+                              full={false}
+                              onClick={[Function]}
+                              size="medium"
+                              skin="primary"
+                              type="button"
+                            >
+                              <StyledComponent
+                                aria-label="close dialog"
+                                center={false}
+                                className="c10"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                      "isStatic": false,
+                                      "lastClassName": "c11",
+                                      "rules": Array [
+                                        "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        "transition: all 0.2s ease-in-out",
+                                        ";",
+                                        ".c12",
+                                        "{",
+                                        [Function],
+                                        "}",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "Button__StyledButton",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                full={false}
+                                onClick={[Function]}
+                                size="medium"
+                                skin="primary"
+                                type="button"
+                              >
+                                <button
+                                  aria-label="close dialog"
+                                  className="c10 c11"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                  size="medium"
+                                  type="button"
+                                >
+                                  <Button__ButtonIcon
+                                    name="close"
+                                    size="medium"
+                                  >
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "c12",
+                                            "isStatic": true,
+                                            "lastClassName": "c13",
+                                            "rules": Array [
+                                              "pointer-events:none;",
+                                            ],
+                                          },
+                                          "displayName": "Button__ButtonIcon",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "c12",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                          Symbol(Symbol.hasInstance): [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      name="close"
+                                      size="medium"
+                                    >
+                                      <Icon
+                                        className="c12 c13"
+                                        name="close"
+                                        size="medium"
+                                        skin=""
+                                        style={Object {}}
+                                      >
+                                        <WithStyles(Icon)
+                                          className="c12 c13"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          <Icon
+                                            className="c12 c13"
+                                            classes={
+                                              Object {
+                                                "colorAction": "MuiIcon-colorAction-4",
+                                                "colorDisabled": "MuiIcon-colorDisabled-6",
+                                                "colorError": "MuiIcon-colorError-5",
+                                                "colorPrimary": "MuiIcon-colorPrimary-2",
+                                                "colorSecondary": "MuiIcon-colorSecondary-3",
+                                                "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                                "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                                "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                                "root": "MuiIcon-root-1",
+                                              }
+                                            }
+                                            color="inherit"
+                                            component="span"
+                                            fontSize="default"
+                                            size="medium"
+                                            style={
+                                              Object {
+                                                "color": "",
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              aria-hidden="true"
+                                              className="material-icons MuiIcon-root-1 c12 c13"
+                                              size="medium"
+                                              style={
+                                                Object {
+                                                  "color": "",
+                                                }
+                                              }
+                                            >
+                                              close
+                                            </span>
+                                          </Icon>
+                                        </WithStyles(Icon)>
+                                      </Icon>
+                                    </StyledComponent>
+                                  </Button__ButtonIcon>
+                                </button>
+                              </StyledComponent>
+                            </Button__StyledButton>
+                          </Button>
+                        </StyledComponent>
+                      </CloseIcon>
+                    </article>
+                  </StyledComponent>
+                </Card__CardWrapper>
+              </Card>
+            </StyledComponent>
+          </Modal__ModalCard>
+        </div>
+      </StyledComponent>
+    </ModalWrapper>
+  </Portal>
+</Modal>
+`;
