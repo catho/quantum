@@ -39,7 +39,7 @@ const getStylesBySkin = skin => {
   const colorSchema = Colors[colorName];
 
   return `
-    ${colorSchema[900] && `color: ${colorSchema[900]}`};
+    color: ${colorSchema[900] ? colorSchema[900] : 'inherit'};
     background-color: ${colorSchema[200]};
     border: ${BORDER_SIZE} solid ${colorSchema[500]};
 

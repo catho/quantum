@@ -116,7 +116,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   padding: 11px 16px;
-  color: undefined;
+  color: inherit;
   background-color: #e5edfc;
   border: 1.5px solid #1355d0;
 }
@@ -132,6 +132,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 
 <div
   className="c0"
+  role="alert"
 >
   <div
     className="c1 c2"
@@ -280,7 +281,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   border-radius: 8px;
   box-sizing: border-box;
   padding: 11px 16px;
-  color: undefined;
+  color: inherit;
   background-color: #e5edfc;
   border: 1.5px solid #1355d0;
 }
@@ -296,6 +297,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 
 <div
   className="c0"
+  role="alert"
 >
   <div
     className="c1 c2"
@@ -455,7 +457,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 8px;
   box-sizing: border-box;
   padding: 11px 16px;
-  color: undefined;
+  color: inherit;
   background-color: #e5edfc;
   border: 1.5px solid #1355d0;
 }
@@ -471,6 +473,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 <div
   className="c0"
+  role="alert"
 >
   <div
     className="c1 c2"
@@ -644,6 +647,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 <div
   className="c0"
+  role="alert"
 >
   <div
     className="c1 c2"
@@ -826,6 +830,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 <div
   className="c0"
+  role="alert"
 >
   <div
     className="c1 c2"
@@ -1017,6 +1022,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 <div
   className="c0"
+  role="alert"
 >
   <div
     className="c1 c2"
