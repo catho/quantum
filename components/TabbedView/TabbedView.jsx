@@ -9,13 +9,13 @@ const getColors = skin => {
     default: {
       activeText: Colors.BLUE[500],
       background: 'transparent',
-      hover: Colors.BLUE[200],
+      hoverBackground: Colors.BLUE[200],
       text: 'inherit',
     },
     blue: {
       activeText: Colors.WHITE,
       background: Colors.BLUE[500],
-      hover: Colors.COBALT[500],
+      hoverBackground: Colors.COBALT[500],
       text: Colors.WHITE,
     },
   };
@@ -52,22 +52,21 @@ const NavItem = styled.button.attrs({
   text-align: center;
   text-transform: uppercase;
 
-  ${({ skin, active }) => {
-    const { background, text, activeText, hover } = getColors(skin);
+  ${({ skin }) => {
+    const { background, text, activeText, hoverBackground } = getColors(skin);
     return css`
       background-color: ${background};
       color: ${text};
 
-      ${active &&
-        `
+      &[aria-selected='true'] {
         border-bottom: 4px solid ${activeText};
         color: ${activeText};
         font-weight: bold;
         cursor: default;
-      `}
+      }
 
       &:hover {
-        background-color: ${hover};
+        background-color: ${hoverBackground};
       }
     `;
   }}
@@ -86,17 +85,14 @@ class TabbedView extends React.Component {
     const { children, activeTab } = props;
 
     if (activeTab) {
-      this.state = {
-        activeTab,
-      };
+      this.state = { activeTab };
     } else {
-      const [firstTab] = React.Children.toArray(children);
-      const {
-        props: { title },
-      } = firstTab;
-      this.state = {
-        activeTab: title,
-      };
+      const [
+        {
+          props: { title },
+        },
+      ] = React.Children.toArray(children);
+      this.state = { activeTab: title };
     }
   }
 
@@ -115,7 +111,6 @@ class TabbedView extends React.Component {
             <NavItem
               key={title}
               onClick={() => this.onTabClick(title)}
-              active={title === activeTab}
               skin={skin}
               id={`${title}-tab`}
               aria-controls={`${title}-panel`}

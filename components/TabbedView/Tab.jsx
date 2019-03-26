@@ -1,7 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
-const Tab = ({ children, title }) => <>{title && children}</>;
+const Tab = ({ children, title }) => title && children;
 
 Tab.propTypes = {
   title: PropTypes.string.isRequired,

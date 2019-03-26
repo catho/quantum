@@ -31,7 +31,6 @@ ShallowWrapper {
       "children": Array [
         <ForwardRef>
           <ForwardRef
-            active={true}
             aria-controls="example-panel"
             aria-selected={true}
             id="example-tab"
@@ -67,7 +66,6 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <ForwardRef
-              active={true}
               aria-controls="example-panel"
               aria-selected={true}
               id="example-tab"
@@ -85,7 +83,6 @@ ShallowWrapper {
             "key": "example/.0",
             "nodeType": "function",
             "props": Object {
-              "active": true,
               "aria-controls": "example-panel",
               "aria-selected": true,
               "children": "example",
@@ -202,7 +199,6 @@ ShallowWrapper {
         "children": Array [
           <ForwardRef>
             <ForwardRef
-              active={true}
               aria-controls="example-panel"
               aria-selected={true}
               id="example-tab"
@@ -238,7 +234,6 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <ForwardRef
-                active={true}
                 aria-controls="example-panel"
                 aria-selected={true}
                 id="example-tab"
@@ -256,7 +251,6 @@ ShallowWrapper {
               "key": "example/.0",
               "nodeType": "function",
               "props": Object {
-                "active": true,
                 "aria-controls": "example-panel",
                 "aria-selected": true,
                 "children": "example",
