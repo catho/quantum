@@ -103,7 +103,7 @@ ShallowWrapper {
                 "componentId": "TabbedView__NavItem-sc-131sgnr-1",
                 "isStatic": false,
                 "rules": Array [
-                  "box-sizing:border-box;border:none;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;outline:none;padding:9px 16px;text-align:center;text-transform:uppercase;",
+                  "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:9px 16px;transition:all 0.2s ease-in-out;text-align:center;text-transform:uppercase;",
                   [Function],
                 ],
               },
@@ -271,7 +271,7 @@ ShallowWrapper {
                   "componentId": "TabbedView__NavItem-sc-131sgnr-1",
                   "isStatic": false,
                   "rules": Array [
-                    "box-sizing:border-box;border:none;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;overflow:hidden;outline:none;padding:9px 16px;text-align:center;text-transform:uppercase;",
+                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:9px 16px;transition:all 0.2s ease-in-out;text-align:center;text-transform:uppercase;",
                     [Function],
                   ],
                 },

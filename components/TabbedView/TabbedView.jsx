@@ -38,17 +38,18 @@ Navbar.displayName = 'Navbar';
 const NavItem = styled.button.attrs({
   role: 'tab',
 })`
-  box-sizing: border-box;
   border: none;
+  box-sizing: border-box;
   cursor: pointer;
   flex-shrink: 0;
   font-size: 20px;
   height: 48px;
   line-height: 1.5;
   min-width: 90px;
-  overflow: hidden;
   outline: none;
+  overflow: hidden;
   padding: 9px 16px;
+  transition: all 0.2s ease-in-out;
   text-align: center;
   text-transform: uppercase;
 
@@ -61,8 +62,8 @@ const NavItem = styled.button.attrs({
       &[aria-selected='true'] {
         border-bottom: 4px solid ${activeText};
         color: ${activeText};
-        font-weight: bold;
         cursor: default;
+        font-weight: bold;
       }
 
       &:hover {
