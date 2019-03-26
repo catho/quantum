@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import placementConfig from './options';
 
-const TIP_MAXLENGTH = 36;
-
 const Tip = styled.div`
   background-color: ${Colors.BLACK[700]};
   border-color: ${Colors.BLACK[700]};
