@@ -69,19 +69,42 @@ class Modal extends React.Component {
 
     this.modalWrapperRef = React.createRef();
     this.modalOverlay = document.createElement('section');
+    this.focusableElements = [];
+    this.focusedElementBeforeOpen = document.activeElement;
+    this.firstFocusableElement = null;
+    this.lastFocusableElement = null;
   }
 
   componentDidMount() {
     const { body } = document;
 
     body.appendChild(this.modalOverlay);
+
+    this.focusableElements = this.modalOverlay.querySelectorAll(
+      `a[href],
+      area[href],
+      input:not([disabled]),
+      select:not([disabled]),
+      textarea:not([disabled]),
+      button:not([disabled]),
+      [tabindex="0"]`,
+    );
+    this.firstFocusableElement = this.focusableElements[0]; // eslint-disable-line
+    this.lastFocusableElement = this.focusableElements[
+      this.focusableElements.length - 1
+    ];
+    this.firstFocusableElement.focus();
+
+    window.addEventListener('keydown', this.handleKeyDown);
     window.addEventListener('keydown', this.handleEscKey);
   }
 
   componentWillUnmount() {
     const { body } = document;
+    this.focusedElementBeforeOpen.focus();
 
     body.removeChild(this.modalOverlay);
+    window.removeEventListener('keydown', this.handleKeyDown);
     window.removeEventListener('keydown', this.handleEscKey);
   }
 
@@ -102,6 +125,36 @@ class Modal extends React.Component {
     }
   };
 
+  handleBackwardTab = e => {
+    if (document.activeElement === this.firstFocusableElement) {
+      e.preventDefault();
+      this.lastFocusableElement.focus();
+    }
+  };
+
+  handleFowardTab = e => {
+    if (document.activeElement === this.lastFocusableElement) {
+      e.preventDefault();
+      this.firstFocusableElement.focus();
+    }
+  };
+
+  handleKeyDown = e => {
+    if (e.key === 'Tab') {
+      if (this.focusableElements.length === 1) {
+        return e.preventDefault();
+      }
+
+      if (e.shiftKey) {
+        return this.handleBackwardTab(e);
+      }
+
+      return this.handleFowardTab(e);
+    }
+
+    return false;
+  };
+
   render() {
     const { children, onClose, closeButtonAriaLabel } = this.props;
 
@@ -109,8 +162,9 @@ class Modal extends React.Component {
       <ModalWrapper
         onClick={this.handleClickOutside}
         ref={this.modalWrapperRef}
+        role="dialog"
       >
-        <ModalCard role="dialog">
+        <ModalCard>
           {children}
           <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
         </ModalCard>

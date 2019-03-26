@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import Modal from './Modal';
 
 describe('<Modal />', () => {
@@ -16,26 +16,28 @@ describe('<Modal />', () => {
     </Modal>
   );
 
-  afterEach(() => component.unmount());
+  afterEach(() => {
+    if (component && component.length) component.unmount();
+  });
 
   describe('Snapshots', () => {
     it('should match the snapshot', () => {
-      component = shallow(wrapper);
-      expect(component).toMatchSnapshot();
+      component = mount(wrapper);
+      expect(component.html()).toMatchSnapshot();
     });
   });
 
   describe('Modal DOM position', () => {
     it('should be child of body element', () => {
       expect(document.body.childNodes.length).toBe(0);
-      component = shallow(wrapper);
+      component = mount(wrapper);
       expect(document.body.childNodes.length).toBe(1);
     });
   });
 
   describe('closeIcon', () => {
     it('should exists a closeIcon button when modal is rendered', () => {
-      const modal = shallow(<Modal />);
+      const modal = mount(<Modal />);
 
       expect(modal.find('CloseIcon')).toBeTruthy();
     });
@@ -44,7 +46,7 @@ describe('<Modal />', () => {
   describe('onClose prop', () => {
     it('should call onClose when CloseIcon is clicked', () => {
       const onCloseMock = jest.fn();
-      const modal = shallow(<Modal onClose={onCloseMock} />);
+      const modal = mount(<Modal onClose={onCloseMock} />);
 
       modal.find('CloseIcon').simulate('click');
 
