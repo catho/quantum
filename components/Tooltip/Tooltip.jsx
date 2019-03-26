@@ -13,13 +13,17 @@ const Tip = styled.div`
   color: ${Colors.WHITE};
   font-size: 16px;
   font-weight: bold;
+  max-width: 250px;
   opacity: ${props => (props.show ? '1' : '0')};
+  overflow: hidden;
   padding: 4px 8px;
   position: absolute;
   text-align: center;
+  text-overflow: ellipsis;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-  visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  white-space: nowrap;
   z-index: 100;
+
   ${({ placement }) => placementConfig.tipPosition[placement]};
 
   &:before {
@@ -31,12 +35,6 @@ const Tip = styled.div`
 
 const Wrapper = styled.div`
   position: relative;
-  white-space: ${props =>
-    props.length >= TIP_MAXLENGTH ? 'initial' : 'nowrap'};
-
-  ${Tip} {
-    width: ${props => (props.length >= TIP_MAXLENGTH ? '200px' : 'initial')};
-  }
 `;
 
 class Tooltip extends Component {
@@ -51,7 +49,7 @@ class Tooltip extends Component {
   handleLeave = () => this.setState({ show: false });
 
   render() {
-    const { children, placement, text, ...rest } = this.props;
+    const { children, placement, text, visible, ...rest } = this.props;
     const { show } = this.state;
 
     return (
@@ -61,7 +59,7 @@ class Tooltip extends Component {
         length={text ? text.length : 0}
         {...rest}
       >
-        <Tip placement={placement} show={show}>
+        <Tip placement={placement} show={visible || show}>
           {text}
         </Tip>
         {children}
