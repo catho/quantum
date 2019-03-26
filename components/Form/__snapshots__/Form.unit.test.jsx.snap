@@ -94,6 +94,10 @@ exports[`Form component  should match the snapshot 1`] = `
   border-radius: 4px;
 }
 
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
 .c3 .c4 {
   font-size: 24px;
 }
@@ -308,7 +312,9 @@ exports[`Form component  should match the snapshot 1`] = `
     type="submit"
   >
     
-     Enviar 
+    <span>
+       Enviar 
+    </span>
   </button>
 </form>
 `;
