@@ -15,6 +15,7 @@ import Tag from './Tag';
 import TextArea from './TextArea';
 import Toggle from './Toggle';
 import Tooltip from './Tooltip';
+import Modal from './Modal';
 
 export {
   Badge,
@@ -40,4 +41,5 @@ export {
   Tooltip,
   Typography,
   Validations,
+  Modal,
 };

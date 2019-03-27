@@ -115,6 +115,7 @@ storiesOf('Buttons', module).add('Button', () => (
     <AutoExample
       description={description}
       component={Button}
+      componentProps={{ children: 'Catho' }}
       additionalTabs={exampleTab}
     />
   </>
