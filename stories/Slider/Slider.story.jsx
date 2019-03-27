@@ -130,7 +130,7 @@ storiesOf('Forms', module).add('Slider', () => (
               <Samples.MinMaxFormatter />.
             </ColSample>
           </Row>
-          {/*
+
           <Title as="h2">Controlled Slider</Title>
           <p>
             it&apos;s needed an{' '}
@@ -155,7 +155,7 @@ storiesOf('Forms', module).add('Slider', () => (
             <ColSample xsmall={2} small={4} medium={6}>
               <Samples.ControlledSlider />.
             </ColSample>
-          </Row> */}
+          </Row>
         </StoryContainer>
       </Tab>
       <Tab title="API">

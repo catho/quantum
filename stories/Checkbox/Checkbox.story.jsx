@@ -9,7 +9,6 @@ import {
 } from '@catho/quantum-storybook-ui';
 import Checkbox from '../../components/Checkbox';
 import FieldGroup from '../../components/shared/FieldGroup';
-import { IconFont } from '../../components/GlobalStyle';
 
 const exampleUsage = `<Checkbox label="Default" checked={false} onChange={() => {}} />
 <Checkbox label="Checked" checked onChange={() => {}} />
@@ -71,7 +70,6 @@ the user may select multiple options, including all or none.`;
 
 storiesOf('Forms', module).add('Checkbox', () => (
   <>
-    <IconFont />
     <AutoExample
       description={description}
       component={Checkbox}

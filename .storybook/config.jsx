@@ -3,7 +3,7 @@ import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
 import { UiStyle } from '@catho/quantum-storybook-ui';
-import { CSSVariables } from '../components/GlobalStyle';
+import { CSSVariables, IconFont } from '../components/GlobalStyle';
 import stories from './stories';
 
 addDecorator(
@@ -15,15 +15,16 @@ addDecorator(
   }),
 );
 
-const CSSVariablesDecorator = storyFn => (
+const CSSDecorator = storyFn => (
   <>
     <CSSVariables />
+    <IconFont />
     {storyFn()}
   </>
 );
 
 addDecorator(UiStyle);
-addDecorator(CSSVariablesDecorator);
+addDecorator(CSSDecorator);
 
 const reqStories = require.context('../stories', true, /.story.jsx?$/);
 

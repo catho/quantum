@@ -7,13 +7,19 @@ import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
+import uniqId from '../shared/uniqId';
 
-const { default: DEFAULT_INPUT_STYLE } = INPUT_STYLE;
+const {
+  default: DEFAULT_INPUT_STYLE,
+  LABEL_STYLE,
+  HELPER_TEXT_STYLE,
+  REQUIRED_MARK_STYLE,
+  ERROR_MESSAGE_STYLE,
+  AUTO_FILL_STYLE,
+} = INPUT_STYLE;
 
 const InputLabel = styled(Label)`
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
+  ${LABEL_STYLE}
 `;
 
 const InputTag = styled.input`
@@ -39,15 +45,8 @@ const InputTag = styled.input`
     display: none;
   }
 
-  ${({ placeholder, defaultValue }) =>
-    placeholder &&
-    !defaultValue &&
-    `
-    color: ${Colors.BLACK['400']};
-  `}
-
   :-webkit-autofill {
-    box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
+    ${AUTO_FILL_STYLE}
   }
 `;
 
@@ -67,16 +66,17 @@ const InputErrorIcon = styled(InputIcon)`
 `;
 
 const InputErrorMessage = styled(ErrorMessage)`
-  padding: 8px 12px;
+  ${ERROR_MESSAGE_STYLE}
+
+  ${({ helperText }) =>
+    helperText &&
+    `
+    padding-top: 2px;
+  `}
 `;
 
 const HelperText = styled.span`
-  cursor: text;
-  display: block;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 600;
-  padding: 8px 12px;
+  ${HELPER_TEXT_STYLE}
 `;
 
 const DescriptionLabel = styled.span`
@@ -87,7 +87,7 @@ const DescriptionLabel = styled.span`
 `;
 
 const RequiredMark = styled.em`
-  color: ${Colors.ERROR['500']};
+  ${REQUIRED_MARK_STYLE}
 `;
 
 InputSearchIcon.displayName = 'InputSearchIcon';
@@ -111,14 +111,14 @@ class Input extends React.Component {
 
   static Password = InputTypes.Password;
 
-  static counter = 0;
-
   constructor(props) {
     super(props);
 
-    const { type } = props;
+    const { type, id } = props;
 
     this.state = { type };
+
+    this._id = id || uniqId('input-');
   }
 
   _changeType = type => {
@@ -129,17 +129,6 @@ class Input extends React.Component {
     const { type } = this.state;
     this._changeType(type === 'text' ? 'password' : 'text');
   };
-
-  _getId() {
-    const { id } = this.props;
-    if (id) {
-      return id;
-    }
-
-    const _id = `input-${Input.counter}`;
-    Input.counter += 1;
-    return _id;
-  }
 
   render() {
     const {
@@ -153,13 +142,12 @@ class Input extends React.Component {
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
-    const _id = this._getId();
     const _isSearchType = typeProp === 'search';
 
     return (
       <FieldGroup>
         {label && (
-          <InputLabel htmlFor={_id} error={error}>
+          <InputLabel htmlFor={this._id} error={error}>
             {label}
             {required && <RequiredMark>*</RequiredMark>}
           </InputLabel>
@@ -172,7 +160,8 @@ class Input extends React.Component {
         )}
         <MaskedInput
           {...rest}
-          id={_id}
+          id={this._id}
+          required={required}
           type={typeState}
           value={value}
           render={(ref, props) => (
@@ -197,8 +186,10 @@ class Input extends React.Component {
         {!!value && !error && (
           <InputIcon name="cancel" description={descriptionLabel} />
         )}
-        {error && <InputErrorMessage>{error}</InputErrorMessage>}
-        {helperText && !error && <HelperText>{helperText}</HelperText>}
+        {helperText && <HelperText>{helperText}</HelperText>}
+        {error && (
+          <InputErrorMessage helperText={helperText}>{error}</InputErrorMessage>
+        )}
       </FieldGroup>
     );
   }

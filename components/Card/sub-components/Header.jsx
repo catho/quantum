@@ -7,6 +7,10 @@ const Header = styled.header`
   > * {
     margin-right: 18px;
   }
+
+  > *:last-child {
+    margin-right: 0;
+  }
 `;
 
 Header.displayName = 'Card.Header';

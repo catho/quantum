@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { AutoExample, Tab, SimpleHighlight } from '@catho/quantum-storybook-ui';
-import { IconFont } from '../../components/GlobalStyle';
 import { Container, Row, Col } from '../../components/Grid';
 import examples from './examples';
 
@@ -26,7 +25,6 @@ const tabExample = (
 
 storiesOf('Forms', module).add('Input', () => (
   <>
-    <IconFont />
     <AutoExample
       component={Input}
       componentProps={{

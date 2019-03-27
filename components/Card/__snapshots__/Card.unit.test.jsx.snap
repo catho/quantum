@@ -13,6 +13,10 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   margin-right: 18px;
 }
 
+.c1 > *:last-child {
+  margin-right: 0;
+}
+
 .c2 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;

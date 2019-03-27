@@ -1,0 +1,584 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea component should match snapshots 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1"
+    disabled={false}
+    id="textarea-0"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 2`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1"
+    disabled={false}
+    id="textarea-1"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value="foo"
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 3`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="textarea-2"
+  >
+    Text label
+  </label>
+  <textarea
+    className="c2"
+    disabled={false}
+    id="textarea-2"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 4`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c3 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
+}
+
+.c2 {
+  color: #ff2d4d;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="textarea-3"
+  >
+    Text label
+    <em
+      className="c2"
+    >
+      *
+    </em>
+  </label>
+  <textarea
+    className="c3"
+    disabled={false}
+    id="textarea-3"
+    onChange={[Function]}
+    placeholder=""
+    required={true}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 5`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1"
+    disabled={true}
+    id="textarea-4"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 6`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  color: #999999;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1"
+    disabled={false}
+    id="textarea-5"
+    onChange={[Function]}
+    placeholder="this input has a placeholder"
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 7`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c2 {
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px 0px;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1"
+    disabled={false}
+    id="textarea-6"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  <span
+    className="c2"
+  >
+    this is a helper text
+  </span>
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 8`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  border-color: #ff2d4d;
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c1[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c2 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px 0px;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1"
+    disabled={false}
+    id="textarea-7"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  <div
+    className="c2"
+  >
+    Error message
+  </div>
+</div>
+`;

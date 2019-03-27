@@ -5,7 +5,7 @@ import MaskedInput from 'react-text-mask';
 import Input from './Input';
 import masks from '../shared/masks';
 
-describe('Input component ', () => {
+describe('Input component', () => {
   it('should match snapshots', () => {
     const INPUTS = [
       <Input />,
@@ -132,12 +132,15 @@ describe('Input component ', () => {
 
   describe('with a label', () => {
     it('should match label "htmlFor" label param with "id" input param', () => {
-      const input = <Input label="Text label" id="input-id" value="foo" />;
-      const wrapper = mount(input);
-      const inputTag = wrapper.find('InputTag');
+      const id = 'input-id';
+      const wrapper = mount(<Input label="Text label" id={id} />);
+      const input = wrapper.find('InputTag');
       const label = wrapper.find('InputLabel');
+      const labelHtmlFor = label.prop('htmlFor');
+      const inputId = input.prop('id');
 
-      expect(label.prop('htmlFor')).toEqual(inputTag.prop('id'));
+      expect(labelHtmlFor).toEqual(id);
+      expect(inputId).toEqual(id);
     });
 
     it('should match label "htmlFor" label param and "input" param with generated id', () => {

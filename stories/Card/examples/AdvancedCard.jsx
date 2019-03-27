@@ -1,5 +1,4 @@
 import React from 'react';
-import { IconFont } from '../../../components/GlobalStyle';
 import Colors from '../../../components/Colors';
 import Card from '../../../components/Card';
 import Button from '../../../components/Button';
@@ -7,7 +6,6 @@ import Icon from '../../../components/Icon';
 
 const AdvancedCard = () => (
   <>
-    <IconFont />
     <Card>
       <Card.Header>
         <Card.Thumbnail src="http://i.pravatar.cc/72" alt="Avatar" />
@@ -45,7 +43,6 @@ const AdvancedCard = () => (
 );
 
 AdvancedCard.code = `import {
-  IconFont,
   Colors,
   Card,
   Button,
@@ -54,7 +51,6 @@ AdvancedCard.code = `import {
 
 const AdvancedCard = () => (
   <>
-  <IconFont />
   <Card>
     <Card.Header>
       <Card.Thumbnail src="http://i.pravatar.cc/72" alt="Avatar" />

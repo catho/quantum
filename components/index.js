@@ -2,6 +2,7 @@ import Alert from './Alert';
 import { BREAKPOINTS } from './shared';
 import { Container, Row, Col, Hide } from './Grid';
 import { Form, Validations } from './Form';
+import { TabbedView, Tab } from './TabbedView';
 import Badge from './Badge';
 import Button from './Button';
 import Checkbox from './Checkbox';
@@ -13,8 +14,10 @@ import Input from './Input';
 import RadioGroup from './RadioGroup';
 import Slider from './Slider';
 import Tag from './Tag';
+import TextArea from './TextArea';
 import Toggle from './Toggle';
 import Tooltip from './Tooltip';
+import Modal from './Modal';
 
 export {
   Alert,
@@ -36,8 +39,12 @@ export {
   Row,
   Slider,
   Tag,
+  TextArea,
   Toggle,
   Tooltip,
   Typography,
+  TabbedView,
+  Tab,
   Validations,
+  Modal,
 };
