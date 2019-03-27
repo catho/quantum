@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SnackBar component should match snapshots 1`] = `
-.c6 {
-  margin-right: 5px;
+.c9 {
   pointer-events: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,29 +38,29 @@ exports[`SnackBar component should match snapshots 1`] = `
   border-radius: 4px;
 }
 
-.c4 *:nth-child(2) {
+.c7 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c4 .c5 {
+.c7 .c8 {
   font-size: 24px;
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c7:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -69,13 +68,25 @@ exports[`SnackBar component should match snapshots 1`] = `
 }
 
 .c0 {
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--gutter);
+  grid-auto-columns: max-content;
+}
+
+.c1 {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: #002f7b;
   border-radius: 4px;
-  bottom: 30px;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -85,22 +96,20 @@ exports[`SnackBar component should match snapshots 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  left: calc(50% / 2);
   min-height: 48px;
   padding: 13px 16px;
-  position: fixed;
 }
 
-.c1 {
+.c3 {
   font-weight: normal;
   max-width: 344px;
   padding-right: 8px;
 }
 
-.c3 {
+.c6 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -108,27 +117,27 @@ exports[`SnackBar component should match snapshots 1`] = `
   color: #FFFFFF;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c3:active {
+.c6:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   background-color: transparent;
   box-shadow: none;
   color: #FFFFFF;
 }
 
-.c2 {
+.c5 {
   color: #FFFFFF;
   font-weight: bold;
   padding: 13px 8px;
@@ -138,57 +147,139 @@ exports[`SnackBar component should match snapshots 1`] = `
   white-space: nowrap;
 }
 
-.c2:hover {
+.c5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:1px) {
+  .c0 {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .c0 {
+    grid-template-columns: repeat(8,1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1920px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
 <div
   className="c0"
-  role="dialog"
 >
-  <strong
+  <div
     className="c1"
   >
-    Text of SnackBar component
-  </strong>
-  <a
-    className="c2"
-    href="/"
-  >
-    action
-  </a>
-  <button
-    aria-label="close SnackBar"
-    className="c3 c4"
-    disabled={false}
-    onClick={[Function]}
-    size="medium"
-    type="button"
-  >
-    <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c5 c6"
-      size="medium"
-      style={
-        Object {
-          "color": "",
-        }
-      }
+    <div
+      className="c2"
+      role="dialog"
     >
-      close
-    </span>
-  </button>
+      <strong
+        className="c3"
+      >
+        Text of SnackBar component
+      </strong>
+      <div
+        className="c4"
+      >
+        <a
+          className="c5"
+          href="/"
+        >
+          action
+        </a>
+        <button
+          aria-label="close SnackBar"
+          className="c6 c7"
+          disabled={false}
+          onClick={[Function]}
+          size="medium"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            className="material-icons MuiIcon-root-1 c8 c9"
+            size="medium"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+          >
+            close
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`SnackBar component should match snapshots 2`] = `
-.c6 {
-  margin-right: 5px;
+.c9 {
   pointer-events: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -221,29 +312,29 @@ exports[`SnackBar component should match snapshots 2`] = `
   border-radius: 4px;
 }
 
-.c4 *:nth-child(2) {
+.c7 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c4 .c5 {
+.c7 .c8 {
   font-size: 24px;
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c7:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -251,13 +342,25 @@ exports[`SnackBar component should match snapshots 2`] = `
 }
 
 .c0 {
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--gutter);
+  grid-auto-columns: max-content;
+}
+
+.c1 {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: #002f7b;
   border-radius: 4px;
-  bottom: 30px;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -267,22 +370,20 @@ exports[`SnackBar component should match snapshots 2`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  left: calc(50% / 2);
   min-height: 48px;
   padding: 13px 16px;
-  position: fixed;
 }
 
-.c1 {
+.c3 {
   font-weight: normal;
   max-width: 344px;
   padding-right: 8px;
 }
 
-.c3 {
+.c6 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -290,27 +391,27 @@ exports[`SnackBar component should match snapshots 2`] = `
   color: #FFFFFF;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c3:active {
+.c6:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   background-color: transparent;
   box-shadow: none;
   color: #FFFFFF;
 }
 
-.c2 {
+.c5 {
   color: #FFFFFF;
   font-weight: bold;
   padding: 13px 8px;
@@ -320,57 +421,139 @@ exports[`SnackBar component should match snapshots 2`] = `
   white-space: nowrap;
 }
 
-.c2:hover {
+.c5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:1px) {
+  .c0 {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .c0 {
+    grid-template-columns: repeat(8,1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1920px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
 <div
   className="c0"
-  role="dialog"
 >
-  <strong
+  <div
     className="c1"
   >
-    SnackBar message content 
-  </strong>
-  <a
-    className="c2"
-    href="/"
-  >
-    action
-  </a>
-  <button
-    aria-label="close SnackBar"
-    className="c3 c4"
-    disabled={false}
-    onClick={[Function]}
-    size="medium"
-    type="button"
-  >
-    <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c5 c6"
-      size="medium"
-      style={
-        Object {
-          "color": "",
-        }
-      }
+    <div
+      className="c2"
+      role="dialog"
     >
-      close
-    </span>
-  </button>
+      <strong
+        className="c3"
+      >
+        SnackBar message content 
+      </strong>
+      <div
+        className="c4"
+      >
+        <a
+          className="c5"
+          href="/"
+        >
+          action
+        </a>
+        <button
+          aria-label="close SnackBar"
+          className="c6 c7"
+          disabled={false}
+          onClick={[Function]}
+          size="medium"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            className="material-icons MuiIcon-root-1 c8 c9"
+            size="medium"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+          >
+            close
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`SnackBar component should match snapshots 3`] = `
-.c6 {
-  margin-right: 5px;
+.c9 {
   pointer-events: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -403,29 +586,29 @@ exports[`SnackBar component should match snapshots 3`] = `
   border-radius: 4px;
 }
 
-.c4 *:nth-child(2) {
+.c7 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c4 .c5 {
+.c7 .c8 {
   font-size: 24px;
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c7:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -433,13 +616,25 @@ exports[`SnackBar component should match snapshots 3`] = `
 }
 
 .c0 {
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--gutter);
+  grid-auto-columns: max-content;
+}
+
+.c1 {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: #002f7b;
   border-radius: 4px;
-  bottom: 30px;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -449,22 +644,20 @@ exports[`SnackBar component should match snapshots 3`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  left: calc(50% / 2);
   min-height: 48px;
   padding: 13px 16px;
-  position: fixed;
 }
 
-.c1 {
+.c3 {
   font-weight: normal;
   max-width: 344px;
   padding-right: 8px;
 }
 
-.c3 {
+.c6 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -472,27 +665,27 @@ exports[`SnackBar component should match snapshots 3`] = `
   color: #FFFFFF;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c3:active {
+.c6:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   background-color: transparent;
   box-shadow: none;
   color: #FFFFFF;
 }
 
-.c2 {
+.c5 {
   color: #FFFFFF;
   font-weight: bold;
   padding: 13px 8px;
@@ -502,57 +695,139 @@ exports[`SnackBar component should match snapshots 3`] = `
   white-space: nowrap;
 }
 
-.c2:hover {
+.c5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:1px) {
+  .c0 {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .c0 {
+    grid-template-columns: repeat(8,1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1920px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
 <div
   className="c0"
-  role="dialog"
 >
-  <strong
+  <div
     className="c1"
   >
-    Text of SnackBar component
-  </strong>
-  <a
-    className="c2"
-    href="/"
-  >
-    action
-  </a>
-  <button
-    aria-label="close SnackBar"
-    className="c3 c4"
-    disabled={false}
-    onClick={[Function]}
-    size="medium"
-    type="button"
-  >
-    <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c5 c6"
-      size="medium"
-      style={
-        Object {
-          "color": "",
-        }
-      }
+    <div
+      className="c2"
+      role="dialog"
     >
-      close
-    </span>
-  </button>
+      <strong
+        className="c3"
+      >
+        Text of SnackBar component
+      </strong>
+      <div
+        className="c4"
+      >
+        <a
+          className="c5"
+          href="/"
+        >
+          action
+        </a>
+        <button
+          aria-label="close SnackBar"
+          className="c6 c7"
+          disabled={false}
+          onClick={[Function]}
+          size="medium"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            className="material-icons MuiIcon-root-1 c8 c9"
+            size="medium"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+          >
+            close
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`SnackBar component should match snapshots 4`] = `
-.c6 {
-  margin-right: 5px;
+.c9 {
   pointer-events: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -585,29 +860,29 @@ exports[`SnackBar component should match snapshots 4`] = `
   border-radius: 4px;
 }
 
-.c4 *:nth-child(2) {
+.c7 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c4 .c5 {
+.c7 .c8 {
   font-size: 24px;
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c7:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -615,13 +890,25 @@ exports[`SnackBar component should match snapshots 4`] = `
 }
 
 .c0 {
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--gutter);
+  grid-auto-columns: max-content;
+}
+
+.c1 {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: #002f7b;
   border-radius: 4px;
-  bottom: 30px;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -631,22 +918,20 @@ exports[`SnackBar component should match snapshots 4`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  left: calc(50% / 2);
   min-height: 48px;
   padding: 13px 16px;
-  position: fixed;
 }
 
-.c1 {
+.c3 {
   font-weight: normal;
   max-width: 344px;
   padding-right: 8px;
 }
 
-.c3 {
+.c6 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -654,27 +939,27 @@ exports[`SnackBar component should match snapshots 4`] = `
   color: #FFFFFF;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c3:active {
+.c6:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   background-color: transparent;
   box-shadow: none;
   color: #FFFFFF;
 }
 
-.c2 {
+.c5 {
   color: #FFFFFF;
   font-weight: bold;
   padding: 13px 8px;
@@ -684,57 +969,139 @@ exports[`SnackBar component should match snapshots 4`] = `
   white-space: nowrap;
 }
 
-.c2:hover {
+.c5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:1px) {
+  .c0 {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .c0 {
+    grid-template-columns: repeat(8,1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1920px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
 <div
   className="c0"
-  role="dialog"
 >
-  <strong
+  <div
     className="c1"
   >
-    Text of SnackBar component
-  </strong>
-  <a
-    className="c2"
-    href="/"
-  >
-    action
-  </a>
-  <button
-    aria-label="close"
-    className="c3 c4"
-    disabled={false}
-    onClick={[Function]}
-    size="medium"
-    type="button"
-  >
-    <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c5 c6"
-      size="medium"
-      style={
-        Object {
-          "color": "",
-        }
-      }
+    <div
+      className="c2"
+      role="dialog"
     >
-      close
-    </span>
-  </button>
+      <strong
+        className="c3"
+      >
+        Text of SnackBar component
+      </strong>
+      <div
+        className="c4"
+      >
+        <a
+          className="c5"
+          href="/"
+        >
+          action
+        </a>
+        <button
+          aria-label="close"
+          className="c6 c7"
+          disabled={false}
+          onClick={[Function]}
+          size="medium"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            className="material-icons MuiIcon-root-1 c8 c9"
+            size="medium"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+          >
+            close
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`SnackBar component should match snapshots 5`] = `
-.c6 {
-  margin-right: 5px;
+.c9 {
   pointer-events: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -767,29 +1134,29 @@ exports[`SnackBar component should match snapshots 5`] = `
   border-radius: 4px;
 }
 
-.c4 *:nth-child(2) {
+.c7 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c4 .c5 {
+.c7 .c8 {
   font-size: 24px;
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c7:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
@@ -797,13 +1164,25 @@ exports[`SnackBar component should match snapshots 5`] = `
 }
 
 .c0 {
+  display: grid;
+  grid-column-gap: var(--gutter);
+  grid-row-gap: var(--gutter);
+  margin-bottom: var(--gutter);
+  grid-auto-columns: max-content;
+}
+
+.c1 {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: #002f7b;
   border-radius: 4px;
-  bottom: 30px;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -813,22 +1192,20 @@ exports[`SnackBar component should match snapshots 5`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  left: calc(50% / 2);
   min-height: 48px;
   padding: 13px 16px;
-  position: fixed;
 }
 
-.c1 {
+.c3 {
   font-weight: normal;
   max-width: 344px;
   padding-right: 8px;
 }
 
-.c3 {
+.c6 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -836,27 +1213,27 @@ exports[`SnackBar component should match snapshots 5`] = `
   color: #FFFFFF;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c3:active {
+.c6:active {
   box-shadow: none;
   background-color: rgba(128,128,128,0.5);
   color: #4c4c4c;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   background-color: transparent;
   box-shadow: none;
   color: #FFFFFF;
 }
 
-.c2 {
+.c5 {
   color: #FFFFFF;
   font-weight: bold;
   padding: 13px 8px;
@@ -866,46 +1243,129 @@ exports[`SnackBar component should match snapshots 5`] = `
   white-space: nowrap;
 }
 
-.c2:hover {
+.c5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:1px) {
+  .c0 {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .c0 {
+    grid-template-columns: repeat(8,1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    grid-template-columns: repeat(12,1fr);
+  }
+}
+
+@media (min-width:1px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
+@media (min-width:1920px) {
+  .c1 {
+    grid-column: 2/ span 10;
+  }
+}
+
 <div
   className="c0"
-  role="dialog"
 >
-  <strong
+  <div
     className="c1"
   >
-    Text of SnackBar component
-  </strong>
-  <a
-    className="c2"
-    href="/"
-  >
-    action
-  </a>
-  <button
-    aria-label="close SnackBar"
-    className="c3 c4"
-    disabled={false}
-    onClick={[Function]}
-    size="medium"
-    type="button"
-  >
-    <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c5 c6"
-      size="medium"
-      style={
-        Object {
-          "color": "",
-        }
-      }
+    <div
+      className="c2"
+      role="dialog"
     >
-      close
-    </span>
-  </button>
+      <strong
+        className="c3"
+      >
+        Text of SnackBar component
+      </strong>
+      <div
+        className="c4"
+      >
+        <a
+          className="c5"
+          href="/"
+        >
+          action
+        </a>
+        <button
+          aria-label="close SnackBar"
+          className="c6 c7"
+          disabled={false}
+          onClick={[Function]}
+          size="medium"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            className="material-icons MuiIcon-root-1 c8 c9"
+            size="medium"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+          >
+            close
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
