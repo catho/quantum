@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import placementConfig from './options';
 
-const TIP_MAXLENGTH = 36;
-
 const Tip = styled.div`
   background-color: ${Colors.BLACK[700]};
   border-color: ${Colors.BLACK[700]};
@@ -13,96 +11,62 @@ const Tip = styled.div`
   color: ${Colors.WHITE};
   font-size: 16px;
   font-weight: bold;
-  opacity: ${props => (props.show ? '1' : '0')};
+  opacity: ${({ visible }) => (visible ? '1' : '0')};
   padding: 4px 8px;
   position: absolute;
+  line-height: 0;
   text-align: center;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-  visibility: ${props => (props.show ? 'visible' : 'hidden')};
   z-index: 100;
 
-  ${placementConfig.tipPosition} &:before {
+  ${({ placement }) => placementConfig.tipPosition[placement]};
+
+  &:before {
     content: '';
     position: absolute;
-    ${props => placementConfig.arrowPosition[props.placement]};
+    ${({ placement }) => placementConfig.arrowPosition[placement]};
   }
+`;
+
+const TipText = styled.span`
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const Wrapper = styled.div`
   position: relative;
-  white-space: ${props =>
-    props.length >= TIP_MAXLENGTH ? 'initial' : 'nowrap'};
-
-  ${Tip} {
-    width: ${props => (props.length >= TIP_MAXLENGTH ? '200px' : 'initial')};
-  }
 `;
 
 class Tooltip extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { show: false, width: null, height: null };
+    const { visible } = this.props;
+    this.state = { visible };
   }
 
-  componentDidMount() {
-    this.measure();
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    const { text, visible, children } = this.props;
-    const { show, width, height } = this.state;
-
-    return (
-      text !== nextProps.text ||
-      show !== nextState.show ||
-      visible !== nextProps.visible ||
-      width !== nextState.width ||
-      height !== nextState.height ||
-      children !== nextProps.children
-    );
-  }
-
-  componentDidUpdate() {
-    this.measure();
-  }
-
-  handleEnter = () => {
-    this.setState({ show: true });
-  };
-
-  handleLeave = () => {
-    this.setState({ show: false });
-  };
-
-  measure() {
-    const { clientWidth, clientHeight } = this.tip;
-
-    this.setState({ width: clientWidth, height: clientHeight });
-  }
+  isVisible = visible => this.setState({ visible });
 
   render() {
-    const { children, placement, text, visible, ...rest } = this.props;
-    const { width, height, show } = this.state;
-    const { length } = text;
+    const {
+      children,
+      placement,
+      text,
+      visible: visibleProp,
+      ...rest
+    } = this.props;
+    const { visible: visibleState } = this.state;
 
     return (
       <Wrapper
-        onMouseEnter={this.handleEnter}
-        onMouseLeave={this.handleLeave}
-        length={length}
+        onMouseEnter={() => this.isVisible(true)}
+        onMouseLeave={() => this.isVisible(false)}
         {...rest}
       >
-        <Tip
-          ref={tip => {
-            this.tip = tip;
-          }}
-          placement={placement}
-          width={width}
-          height={height}
-          show={visible || show}
-        >
-          {text}
+        <Tip placement={placement} visible={visibleProp || visibleState}>
+          <TipText>{text}</TipText>
         </Tip>
         {children}
       </Wrapper>
@@ -114,7 +78,7 @@ Tip.displayName = 'Tip';
 
 Tooltip.propTypes = {
   /** Text that tooltip will show */
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   /** Define tooltip positioning */
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   visible: PropTypes.bool,
@@ -125,9 +89,8 @@ Tooltip.propTypes = {
 };
 
 Tooltip.defaultProps = {
-  text: 'Tooltip',
   placement: 'top',
-  visible: undefined,
+  visible: false,
 };
 
 export default Tooltip;

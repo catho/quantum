@@ -1,63 +1,69 @@
-const arrowSize = 6;
+const ARROW_SIZE = 6;
+const PERCENTAGE_Y = 130;
+const PERCENTAGE_X = 50;
+
 const upDownBorders = `
-  border-left: ${arrowSize}px solid transparent;
-  border-right: ${arrowSize}px solid transparent;
+  border-left: ${ARROW_SIZE}px solid transparent;
+  border-right: ${ARROW_SIZE}px solid transparent;
   left: 50%;
   transform: translateX(-50%);
 `;
 
 const sideBorders = `
-  border-top: ${arrowSize}px solid transparent;
-  border-bottom: ${arrowSize}px solid transparent;
+  border-top: ${ARROW_SIZE}px solid transparent;
+  border-bottom: ${ARROW_SIZE}px solid transparent;
   top: 50%;
   transform: translateY(-50%);
 `;
 
 const placementConfig = {
   arrowPosition: {
-    bottom: `
-      ${upDownBorders}
-      border-bottom: ${arrowSize}px solid;
-      border-bottom-color: inherit;
-      top: -${arrowSize - 1}px;
-    `,
     top: `
       ${upDownBorders}
-      border-top: ${arrowSize}px solid;
+      border-top: ${ARROW_SIZE}px solid;
       border-top-color: inherit;
-      bottom: -${arrowSize - 1}px;
-    `,
-    left: `
-      ${sideBorders}
-      border-left: ${arrowSize}px solid;
-      border-left-color: inherit;
-      right: -${arrowSize - 1}px;
+      bottom: -${ARROW_SIZE - 1}px;
     `,
     right: `
+    ${sideBorders}
+    border-right: ${ARROW_SIZE}px solid;
+    border-right-color: inherit;
+    left: -${ARROW_SIZE - 1}px;
+  `,
+    left: `
       ${sideBorders}
-      border-right: ${arrowSize}px solid;
-      border-right-color: inherit;
-      left: -${arrowSize - 1}px;
+      border-left: ${ARROW_SIZE}px solid;
+      border-left-color: inherit;
+      right: -${ARROW_SIZE - 1}px;
+    `,
+    bottom: `
+      ${upDownBorders}
+      border-bottom: ${ARROW_SIZE}px solid;
+      border-bottom-color: inherit;
+      top: -${ARROW_SIZE - 1}px;
     `,
   },
-
-  tipPosition: ({ placement, height, width }) => {
-    const position = {
-      top: `top: -${height + 5}px; left: 50%; margin-left: -${Math.floor(
-        width / 2,
-      )}px;`,
-      right: `right: -${width + 15}px;top: 50%; margin-top: -${Math.floor(
-        height / 2,
-      )}px;`,
-      bottom: `bottom: -${height + 10}px; left: 50%; margin-left: -${Math.floor(
-        width / 2,
-      )}px;`,
-      left: `left: -${width + 15}px;top: 50%; margin-top: -${Math.floor(
-        height / 2,
-      )}px;`,
-    };
-
-    return position[placement] || position.top;
+  tipPosition: {
+    top: `
+      left: ${PERCENTAGE_X}%;
+      bottom: ${PERCENTAGE_Y}%;
+      transform: translateX(-${PERCENTAGE_X}%);
+    `,
+    right: `
+      left: ${PERCENTAGE_Y}%;
+      top: ${PERCENTAGE_X}%;
+      transform: translateY(-${PERCENTAGE_X}%);
+  `,
+    left: `
+      right: ${PERCENTAGE_Y}%;
+      top: ${PERCENTAGE_X}%;
+      transform: translateY(-${PERCENTAGE_X}%);
+    `,
+    bottom: `
+      left: ${PERCENTAGE_X}%;
+      top: ${PERCENTAGE_Y}%;
+      transform: translateX(-${PERCENTAGE_X}%);
+    `,
   },
 };
 

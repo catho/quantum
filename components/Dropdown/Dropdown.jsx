@@ -9,7 +9,13 @@ import { FieldGroup, Label, ErrorMessage, INPUT_STYLE } from '../shared';
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
-const { HOVER_STYLE, ERROR_HOVER_STYLE, default: DEFAULT_STYLE } = INPUT_STYLE;
+const {
+  HOVER_STYLE,
+  ERROR_HOVER_STYLE,
+  default: DEFAULT_STYLE,
+  REQUIRED_MARK_STYLE,
+  ERROR_MESSAGE_STYLE,
+} = INPUT_STYLE;
 
 const DropButton = styled.button`
   align-items: center;
@@ -92,8 +98,7 @@ const DropItem = styled.li`
 `;
 
 const DropError = styled(ErrorMessage)`
-  margin-top: 8px;
-  padding-left: 13.5px;
+  ${ERROR_MESSAGE_STYLE}
 `;
 
 const DropContainer = styled.div`
@@ -101,7 +106,7 @@ const DropContainer = styled.div`
 `;
 
 const RequiredMark = styled.em`
-  color: ${Colors.ERROR['500']};
+  ${REQUIRED_MARK_STYLE}
 `;
 
 const _getValue = item => (item ? item.value || item.label || item : '');

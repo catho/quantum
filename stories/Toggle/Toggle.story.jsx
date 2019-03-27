@@ -8,7 +8,6 @@ import {
   StoryContainer,
 } from '@catho/quantum-storybook-ui';
 import Toggle from '../../components/Toggle';
-import { IconFont } from '../../components/GlobalStyle';
 
 const exampleTab = (
   <Tab title="Example">
@@ -57,12 +56,9 @@ const description = `Toggle is a control that is used to quickly switch
 between two possible states.`;
 
 storiesOf('Forms', module).add('Toggle', () => (
-  <>
-    <IconFont />
-    <AutoExample
-      description={description}
-      component={Toggle}
-      additionalTabs={exampleTab}
-    />
-  </>
+  <AutoExample
+    description={description}
+    component={Toggle}
+    additionalTabs={exampleTab}
+  />
 ));

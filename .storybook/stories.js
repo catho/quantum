@@ -24,6 +24,7 @@ export default [
   'Toggle',
   'Form',
   'Slider',
+  'TextArea',
 
   // 8. Tooltip
   'Tooltip',
