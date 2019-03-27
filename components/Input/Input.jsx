@@ -195,11 +195,7 @@ class Input extends React.Component {
           />
         )}
         {!!value && !error && (
-          <InputIcon
-            name="cancel"
-            description={descriptionLabel}
-            hasLabel={Boolean(label)}
-          />
+          <InputIcon name="cancel" description={descriptionLabel} />
         )}
         {error && <InputErrorMessage>{error}</InputErrorMessage>}
         {helperText && !error && <HelperText>{helperText}</HelperText>}

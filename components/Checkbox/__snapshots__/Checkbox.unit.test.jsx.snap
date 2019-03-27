@@ -112,7 +112,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   
@@ -307,7 +307,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   <div
@@ -507,7 +507,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   <div
@@ -699,7 +699,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   
@@ -886,7 +886,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   
@@ -1261,7 +1261,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   
