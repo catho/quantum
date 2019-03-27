@@ -81,10 +81,11 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c4 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
+  outline: none;
   height: auto;
   width: auto;
   margin: 0 0 0 16px;
@@ -246,10 +247,11 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 .c5 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
+  outline: none;
   height: auto;
   width: auto;
   margin: 0 0 0 16px;
@@ -422,10 +424,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
+  outline: none;
   height: auto;
   width: auto;
   margin: 0 0 0 16px;
@@ -587,10 +590,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
+  outline: none;
   height: auto;
   width: auto;
   margin: 0 0 0 16px;
@@ -761,10 +765,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
+  outline: none;
   height: auto;
   width: auto;
   margin: 0 0 0 16px;
@@ -944,10 +949,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: #999999;
+  color: rgba(128,128,128,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
+  outline: none;
   height: auto;
   width: auto;
   margin: 0 0 0 16px;
