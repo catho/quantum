@@ -39,14 +39,14 @@ storiesOf('Card', module).add('Card', () => (
             <Col medium={8}>
               <Table>
                 <thead>
-                  <tr style={{ width: 180 }}>
+                  <tr>
                     <th>Component</th>
                     <th>Description</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
+                    <td style={{ width: 180 }}>
                       <code>{'<Card />'}</code>
                     </td>
                     <td>

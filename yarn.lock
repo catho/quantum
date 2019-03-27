@@ -857,18 +857,28 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@catho/quantum-storybook-ui@^1.0.0", "@catho/quantum-storybook-ui@^1.0.1":
+"@catho/quantum-storybook-ui@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@catho/quantum-storybook-ui/-/quantum-storybook-ui-1.0.1.tgz#aca8f121cad96d1a856ef5eb80af8f198025f73d"
   dependencies:
     "@catho/quantum" "^1.2.0"
     react-markdown "^4.0.6"
 
-"@catho/quantum@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-1.2.0.tgz#ea2fdbdf2c117bce11665a75c6ee38afb5d93faa"
+"@catho/quantum-storybook-ui@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@catho/quantum-storybook-ui/-/quantum-storybook-ui-1.0.3.tgz#6698b1810ad67a11de0679cc1f2728c3d624752b"
+  integrity sha512-t+Ac7U+fPaO3mZny9KzTugKxaMTqUUgeSoYIqABa9YaTOHbTocrgZ6+iALfTFjpWkysYOjKkzoAA9RpDm6TOUA==
   dependencies:
-    "@catho/quantum-storybook-ui" "^1.0.0"
+    "@catho/quantum" "^1.5.1"
+    commitizen "^3.0.7"
+    react-markdown "^4.0.6"
+
+"@catho/quantum@^1.5.1":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-1.7.0.tgz#c8fa6b984a685ef274b6dfe4ca14c266c787485e"
+  integrity sha512-T9NsMxG2GZTMKqV5RKBfIcptHgAK5BsS0kPcxqWGGES0on4njCwZ9XNF7NjUuP03vGuv4vWniOmNTMwMLpI/sw==
+  dependencies:
+    "@catho/quantum-storybook-ui" "^1.0.1"
     "@material-ui/core" "^3.8.2"
     "@material-ui/icons" "^3.0.2"
     babel-polyfill "^6.26.0"
@@ -4355,6 +4365,13 @@ enzyme-adapter-utils@^1.10.1:
     object.fromentries "^2.0.0"
     prop-types "^15.7.2"
     semver "^5.6.0"
+
+enzyme-to-json@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/enzyme-to-json/-/enzyme-to-json-3.3.5.tgz#f8eb82bd3d5941c9d8bc6fd9140030777d17d0af"
+  integrity sha512-DmH1wJ68HyPqKSYXdQqB33ZotwfUhwQZW3IGXaNXgR69Iodaoj8TF/D9RjLdz4pEhGq2Tx2zwNUIjBuqoZeTgA==
+  dependencies:
+    lodash "^4.17.4"
 
 enzyme@^3.8.0:
   version "3.9.0"

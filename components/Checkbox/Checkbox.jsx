@@ -124,7 +124,7 @@ Checkbox.defaultProps = {
   disabled: false,
   error: '',
   id: '',
-  label: 'Label',
+  label: '',
 };
 
 Checkbox.propTypes = {

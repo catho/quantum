@@ -55,7 +55,6 @@ const height = ({ size }) => {
 };
 
 const ButtonIcon = styled(Icon)`
-  margin-right: 5px;
   pointer-events: none;
 `;
 
@@ -181,11 +180,13 @@ Button.propTypes = {
 const IconButton = styled(Button)`
   border-radius: 50%;
   border: none;
-  color: ${Colors.BLACK[400]};
+  color: ${Colors.SHADOW[50]};
   width: 40px;
+
   background-color: transparent;
   box-shadow: none;
   outline: none;
+
   :hover,
   :focus {
     box-shadow: none;
