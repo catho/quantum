@@ -3,19 +3,17 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Colors from '../Colors';
 import Button from '../Button';
+import { Row, Col } from '../Grid';
 
 const SnackBarDialog = styled.div`
   align-items: center;
   background-color: ${Colors.COBALT['500']};
   border-radius: 4px;
-  bottom: 30px;
   color: ${Colors.WHITE};
   display: flex;
   justify-content: space-between;
-  left: calc(50% / 2);
   min-height: 48px;
   padding: 13px 16px;
-  position: fixed;
 `;
 
 const TextContainer = styled.strong`
@@ -50,19 +48,33 @@ const ActionLink = styled.a`
   }
 `;
 
+const ActionsSection = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 class SnackBar extends React.Component {
   componentDidMount() {}
 
   render() {
     const { text, onClose, closeButtonAriaLabel, ...rest } = this.props;
     return (
-      <SnackBarDialog {...rest} role="dialog">
-        <TextContainer>{text}</TextContainer>
-        <ActionLink href="/">action</ActionLink>
-        {onClose && (
-          <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
-        )}
-      </SnackBarDialog>
+      <Row>
+        <Col xsmall-offset={1} xsmall={10}>
+          <SnackBarDialog {...rest} role="dialog">
+            <TextContainer>{text}</TextContainer>
+            <ActionsSection>
+              <ActionLink href="/">action</ActionLink>
+              {onClose && (
+                <CloseIcon
+                  onClick={onClose}
+                  aria-label={closeButtonAriaLabel}
+                />
+              )}
+            </ActionsSection>
+          </SnackBarDialog>
+        </Col>
+      </Row>
     );
   }
 }
