@@ -54,13 +54,7 @@ const InputIcon = styled(Icon)`
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 50px;
-
-  ${({ description }) =>
-    description &&
-    `
-    top: 70px;
-  `};
+  bottom: 10px;
 `;
 
 const InputSearchIcon = styled(InputIcon)`

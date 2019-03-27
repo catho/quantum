@@ -1,3 +1,4 @@
+import Alert from './Alert';
 import { BREAKPOINTS } from './shared';
 import { Container, Row, Col, Hide } from './Grid';
 import { Form, Validations } from './Form';
@@ -19,6 +20,7 @@ import Tooltip from './Tooltip';
 import Modal from './Modal';
 
 export {
+  Alert,
   Badge,
   BREAKPOINTS,
   Button,
