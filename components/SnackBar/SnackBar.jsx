@@ -53,28 +53,37 @@ const ActionsSection = styled.div`
   align-items: center;
 `;
 
+const DialogBlock = styled.section`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+`;
+
 class SnackBar extends React.Component {
   componentDidMount() {}
 
   render() {
     const { text, onClose, closeButtonAriaLabel, ...rest } = this.props;
     return (
-      <Row>
-        <Col xsmall-offset={1} xsmall={10}>
-          <SnackBarDialog {...rest} role="dialog">
-            <TextContainer>{text}</TextContainer>
-            <ActionsSection>
-              <ActionLink href="/">action</ActionLink>
-              {onClose && (
-                <CloseIcon
-                  onClick={onClose}
-                  aria-label={closeButtonAriaLabel}
-                />
-              )}
-            </ActionsSection>
-          </SnackBarDialog>
-        </Col>
-      </Row>
+      <DialogBlock>
+        <Row>
+          <Col xsmall-offset={1} xsmall={10}>
+            <SnackBarDialog {...rest} role="dialog">
+              <TextContainer>{text}</TextContainer>
+              <ActionsSection>
+                <ActionLink href="/">action</ActionLink>
+                {onClose && (
+                  <CloseIcon
+                    onClick={onClose}
+                    aria-label={closeButtonAriaLabel}
+                  />
+                )}
+              </ActionsSection>
+            </SnackBarDialog>
+          </Col>
+        </Row>
+      </DialogBlock>
     );
   }
 }
