@@ -80,6 +80,12 @@ class SnackBar extends React.Component {
   componentDidMount() {
     const { body } = document;
     body.appendChild(this.snackBarSection);
+
+    const { onClose, secondsToClose } = this.props;
+
+    setTimeout(() => {
+      onClose();
+    }, secondsToClose * 1000);
   }
 
   componentWillUnmount() {
