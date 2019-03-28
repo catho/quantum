@@ -47,6 +47,7 @@ const CloseIcon = styled(Button.Icon).attrs({
 
 const ActionLink = styled.a`
   color: ${Colors.WHITE};
+  cursor: pointer;
   font-weight: bold;
   padding: 13px 8px;
   text-decoration: underline;
@@ -87,9 +88,14 @@ class SnackBar extends React.Component {
   }
 
   render() {
-    const _id = uniqId('snack-bar-dialog-');
-    const { text, onClose, closeButtonAriaLabel, ...rest } = this.props;
-
+    const _id = uniqId('snackbar-dialog-');
+    const {
+      text,
+      onClose,
+      closeButtonAriaLabel,
+      actionTrigger,
+      ...rest
+    } = this.props;
     return ReactDOM.createPortal(
       <DialogBlock>
         <Row>
@@ -101,15 +107,19 @@ class SnackBar extends React.Component {
               tabIndex="0"
             >
               <TextContainer id={_id}>{text}</TextContainer>
-              <ActionsSection>
-                <ActionLink href="/">action</ActionLink>
-                {onClose && (
-                  <CloseIcon
-                    onClick={onClose}
-                    aria-label={closeButtonAriaLabel}
-                  />
-                )}
-              </ActionsSection>
+              {actionTrigger && (
+                <ActionsSection>
+                  <ActionLink onClick={actionTrigger.callbackFn}>
+                    {actionTrigger.title}
+                  </ActionLink>
+                  {onClose && (
+                    <CloseIcon
+                      onClick={onClose}
+                      aria-label={closeButtonAriaLabel}
+                    />
+                  )}
+                </ActionsSection>
+              )}
             </SnackBarDialog>
           </Col>
         </Row>
@@ -122,6 +132,10 @@ class SnackBar extends React.Component {
 CloseIcon.displayName = 'CloseIcon';
 
 SnackBar.propTypes = {
+  actionTrigger: PropTypes.shape({
+    title: PropTypes.string,
+    callback: PropTypes.func,
+  }),
   closeButtonAriaLabel: PropTypes.string,
   onClose: PropTypes.func,
   secondsToClose: PropTypes.number,
@@ -135,6 +149,10 @@ SnackBar.defaultProps = {
   secondsToClose: 6,
   skin: 'cobalt',
   text: 'Text of SnackBar component',
+  actionTrigger: {
+    title: 'ACTION',
+    callbackFn: () => {},
+  },
 };
 
 export default SnackBar;
