@@ -1,9 +1,11 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Colors from '../Colors';
 import Button from '../Button';
 import { Row, Col } from '../Grid';
+import uniqId from '../shared/uniqId';
 
 const SnackBarDialog = styled.div`
   align-items: center;
@@ -18,7 +20,6 @@ const SnackBarDialog = styled.div`
 
 const TextContainer = styled.strong`
   font-weight: normal;
-  max-width: 344px;
   padding-right: 8px;
 `;
 
@@ -61,16 +62,36 @@ const DialogBlock = styled.section`
 `;
 
 class SnackBar extends React.Component {
-  componentDidMount() {}
+  constructor(props) {
+    super(props);
+    this.snackBarSection = document.createElement('section');
+  }
+
+  componentDidMount() {
+    const { body } = document;
+    body.appendChild(this.snackBarSection);
+  }
+
+  componentWillUnmount() {
+    const { body } = document;
+    body.removeChild(this.snackBarSection);
+  }
 
   render() {
+    const _id = uniqId('snack-bar-dialog-');
     const { text, onClose, closeButtonAriaLabel, ...rest } = this.props;
-    return (
+
+    return ReactDOM.createPortal(
       <DialogBlock>
         <Row>
           <Col xsmall-offset={1} xsmall={10}>
-            <SnackBarDialog {...rest} role="dialog">
-              <TextContainer>{text}</TextContainer>
+            <SnackBarDialog
+              {...rest}
+              role="alertdialog"
+              aria-describedby={_id}
+              tabIndex="0"
+            >
+              <TextContainer id={_id}>{text}</TextContainer>
               <ActionsSection>
                 <ActionLink href="/">action</ActionLink>
                 {onClose && (
@@ -83,7 +104,8 @@ class SnackBar extends React.Component {
             </SnackBarDialog>
           </Col>
         </Row>
-      </DialogBlock>
+      </DialogBlock>,
+      this.snackBarSection,
     );
   }
 }
