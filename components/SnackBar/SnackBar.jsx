@@ -1,21 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import PropTypes, { oneOf } from 'prop-types';
 import Colors from '../Colors';
 import Button from '../Button';
 import { Row, Col } from '../Grid';
 import uniqId from '../shared/uniqId';
 
+const getBackgroundBySkin = skin => {
+  const color = skin.toUpperCase();
+  const indexColor = skin === 'cobalt' ? '500' : '700';
+  return `
+      background-color: ${Colors[color][indexColor]}
+  `;
+};
+
 const SnackBarDialog = styled.div`
   align-items: center;
-  background-color: ${Colors.COBALT['500']};
   border-radius: 4px;
   color: ${Colors.WHITE};
   display: flex;
   justify-content: space-between;
   min-height: 48px;
   padding: 13px 16px;
+
+  ${({ skin }) => getBackgroundBySkin(skin)}
 `;
 
 const TextContainer = styled.strong`
@@ -116,6 +125,7 @@ SnackBar.propTypes = {
   closeButtonAriaLabel: PropTypes.string,
   onClose: PropTypes.func,
   secondsToClose: PropTypes.number,
+  skin: oneOf(['cobalt', 'black']),
   text: PropTypes.string,
 };
 
@@ -123,6 +133,7 @@ SnackBar.defaultProps = {
   closeButtonAriaLabel: 'close SnackBar',
   onClose: () => {},
   secondsToClose: 6,
+  skin: 'cobalt',
   text: 'Text of SnackBar component',
 };
 
