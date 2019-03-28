@@ -16,7 +16,7 @@ import Slider from '../../components/Slider';
 import List from '../../components/List';
 import * as Samples from './examples';
 
-const importSlider = `import { Slider } from '@cathodevel/quantum';`;
+const importSlider = `import { Slider } from '@catho/quantum';`;
 
 const ColSample = styled(Col)`
   padding-top: 15px;

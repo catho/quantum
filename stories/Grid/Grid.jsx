@@ -9,7 +9,7 @@ import {
 
 import { Row, Col, Hide } from '../../components/Grid';
 
-const importGrid = `import { Container, Row, Col, Hide } from '@cathodevel/quantum';';`;
+const importGrid = `import { Container, Row, Col, Hide } from '@catho/quantum';';`;
 const codeBackgroundColor = '#e8f2fc';
 const codefontColor = '#1a82e2';
 
