@@ -15,7 +15,7 @@ import * as SimpleForm from './SimpleForm';
 import * as SimpleValidation from './SimpleValidation';
 import * as AdvancedValidation from './AdvancedValidation';
 
-const importForm = `import { Form } from '@cathodevel/quantum';`;
+const importForm = `import { Form } from '@catho/quantum';`;
 
 storiesOf('Forms', module).add('Form', () => (
   <>

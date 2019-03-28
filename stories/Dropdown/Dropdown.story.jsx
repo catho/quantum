@@ -38,7 +38,7 @@ DropdownExample.propTypes = {
   component: PropTypes.func.isRequired,
 };
 
-const importCode = "import { Dropdown } from '@cathodevel/quantum';";
+const importCode = "import { Dropdown } from '@catho/quantum';";
 
 storiesOf('Forms', module).add('Dropdown', () => (
   <>
