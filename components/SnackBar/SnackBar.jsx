@@ -7,6 +7,8 @@ import Button from '../Button';
 import { Row, Col } from '../Grid';
 import uniqId from '../shared/uniqId';
 
+const a11yFocusTab = `outline: auto;`;
+
 const getBackgroundBySkin = skin => {
   const color = skin.toUpperCase();
   const indexColor = skin === 'cobalt' ? '500' : '700';
@@ -30,6 +32,10 @@ const SnackBarDialog = styled.div`
 const TextContainer = styled.strong`
   font-weight: normal;
   padding-right: 8px;
+
+  :focus {
+    ${a11yFocusTab}
+  }
 `;
 
 const CloseIcon = styled(Button.Icon).attrs({
@@ -42,20 +48,24 @@ const CloseIcon = styled(Button.Icon).attrs({
     background-color: transparent;
     box-shadow: none;
     color: ${Colors.WHITE};
+    ${a11yFocusTab}
   }
 `;
 
-const ActionLink = styled.a`
+const ActionButton = styled(Button)`
   color: ${Colors.WHITE};
-  cursor: pointer;
   font-weight: bold;
-  padding: 13px 8px;
-  text-decoration: underline;
   text-transform: uppercase;
   white-space: nowrap;
 
-  :hover {
+  :hover,
+  :focus {
     text-decoration: none;
+    color: ${Colors.WHITE};
+  }
+
+  :focus {
+    ${a11yFocusTab}
   }
 `;
 
@@ -80,6 +90,8 @@ class SnackBar extends React.Component {
   componentDidMount() {
     const { body } = document;
     body.appendChild(this.snackBarSection);
+
+    document.querySelector('.action-button').focus();
 
     const { onClose, secondsToClose } = this.props;
 
@@ -115,9 +127,14 @@ class SnackBar extends React.Component {
               <TextContainer id={_id}>{text}</TextContainer>
               {actionTrigger && (
                 <ActionsSection>
-                  <ActionLink onClick={actionTrigger.callbackFn}>
+                  <ActionButton
+                    className="action-button"
+                    skin="link"
+                    onClick={actionTrigger.callbackFn}
+                  >
                     {actionTrigger.title}
-                  </ActionLink>
+                  </ActionButton>
+                  {/* <Button skin="link">Ação</Button> */}
                   {onClose && (
                     <CloseIcon
                       onClick={onClose}
