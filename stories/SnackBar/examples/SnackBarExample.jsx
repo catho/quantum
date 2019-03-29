@@ -58,8 +58,15 @@ class SnackBarExample extends React.Component {
 
   closeSnackBar = () => this.setState({ showSnackBar: false });
 
+  actionCallback = () => this.closeSnackBar();
+
   render() {
     const { showSnackBar } = this.state;
+
+    const actions = {
+      title: 'HIDE',
+      callbackFn: this.actionCallback,
+    };
 
     return (
       <>
@@ -68,6 +75,7 @@ class SnackBarExample extends React.Component {
           <SnackBar
             text="SnackBar text content"
             onClose={this.closeSnackBar}
+            actionTrigger={actions}
           />
         )}
       </>

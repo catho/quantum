@@ -152,6 +152,7 @@ class SnackBar extends React.Component {
 }
 
 CloseIcon.displayName = 'CloseIcon';
+ActionButton.displayName = 'ActionButton';
 
 SnackBar.propTypes = {
   actionTrigger: PropTypes.shape({

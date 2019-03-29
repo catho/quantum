@@ -901,7 +901,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                 <div
                                   className="c5"
                                 >
-                                  <SnackBar__ActionButton
+                                  <ActionButton
                                     className="action-button"
                                     onClick={[Function]}
                                     skin="link"
@@ -956,7 +956,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                               "}",
                                             ],
                                           },
-                                          "displayName": "SnackBar__ActionButton",
+                                          "displayName": "ActionButton",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
                                           "styledComponentId": "SnackBar__ActionButton-myzzmd-3",
@@ -1059,7 +1059,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                         </Button__StyledButton>
                                       </Button>
                                     </StyledComponent>
-                                  </SnackBar__ActionButton>
+                                  </ActionButton>
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
@@ -2215,7 +2215,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                 <div
                                   className="c5"
                                 >
-                                  <SnackBar__ActionButton
+                                  <ActionButton
                                     className="action-button"
                                     onClick={[Function]}
                                     skin="link"
@@ -2270,7 +2270,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                               "}",
                                             ],
                                           },
-                                          "displayName": "SnackBar__ActionButton",
+                                          "displayName": "ActionButton",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
                                           "styledComponentId": "SnackBar__ActionButton-myzzmd-3",
@@ -2373,7 +2373,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                         </Button__StyledButton>
                                       </Button>
                                     </StyledComponent>
-                                  </SnackBar__ActionButton>
+                                  </ActionButton>
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
@@ -3529,7 +3529,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                 <div
                                   className="c5"
                                 >
-                                  <SnackBar__ActionButton
+                                  <ActionButton
                                     className="action-button"
                                     onClick={[Function]}
                                     skin="link"
@@ -3584,7 +3584,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                               "}",
                                             ],
                                           },
-                                          "displayName": "SnackBar__ActionButton",
+                                          "displayName": "ActionButton",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
                                           "styledComponentId": "SnackBar__ActionButton-myzzmd-3",
@@ -3687,7 +3687,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                         </Button__StyledButton>
                                       </Button>
                                     </StyledComponent>
-                                  </SnackBar__ActionButton>
+                                  </ActionButton>
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
@@ -4843,7 +4843,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                 <div
                                   className="c5"
                                 >
-                                  <SnackBar__ActionButton
+                                  <ActionButton
                                     className="action-button"
                                     onClick={[Function]}
                                     skin="link"
@@ -4898,7 +4898,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                               "}",
                                             ],
                                           },
-                                          "displayName": "SnackBar__ActionButton",
+                                          "displayName": "ActionButton",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
                                           "styledComponentId": "SnackBar__ActionButton-myzzmd-3",
@@ -5001,7 +5001,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                         </Button__StyledButton>
                                       </Button>
                                     </StyledComponent>
-                                  </SnackBar__ActionButton>
+                                  </ActionButton>
                                   <CloseIcon
                                     aria-label="close"
                                     onClick={[Function]}
@@ -6157,7 +6157,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                 <div
                                   className="c5"
                                 >
-                                  <SnackBar__ActionButton
+                                  <ActionButton
                                     className="action-button"
                                     onClick={[Function]}
                                     skin="link"
@@ -6212,7 +6212,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                               "}",
                                             ],
                                           },
-                                          "displayName": "SnackBar__ActionButton",
+                                          "displayName": "ActionButton",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
                                           "styledComponentId": "SnackBar__ActionButton-myzzmd-3",
@@ -6315,7 +6315,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                         </Button__StyledButton>
                                       </Button>
                                     </StyledComponent>
-                                  </SnackBar__ActionButton>
+                                  </ActionButton>
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
@@ -7471,7 +7471,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                 <div
                                   className="c5"
                                 >
-                                  <SnackBar__ActionButton
+                                  <ActionButton
                                     className="action-button"
                                     onClick={[Function]}
                                     skin="link"
@@ -7526,7 +7526,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                               "}",
                                             ],
                                           },
-                                          "displayName": "SnackBar__ActionButton",
+                                          "displayName": "ActionButton",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
                                           "styledComponentId": "SnackBar__ActionButton-myzzmd-3",
@@ -7629,7 +7629,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                         </Button__StyledButton>
                                       </Button>
                                     </StyledComponent>
-                                  </SnackBar__ActionButton>
+                                  </ActionButton>
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
