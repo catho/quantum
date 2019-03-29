@@ -134,7 +134,6 @@ class SnackBar extends React.Component {
                   >
                     {actionTrigger.title}
                   </ActionButton>
-                  {/* <Button skin="link">Ação</Button> */}
                   {onClose && (
                     <CloseIcon
                       onClick={onClose}

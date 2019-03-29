@@ -1,8 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import SnackBar from './SnackBar';
 
-describe('SnackBar component', () => {
+describe('<SnackBar />', () => {
   it('should match snapshots', () => {
     const SNACKBARS = [
       <SnackBar />,
@@ -10,9 +11,10 @@ describe('SnackBar component', () => {
       <SnackBar onClose={() => {}} />,
       <SnackBar closeButtonAriaLabel="close" />,
       <SnackBar secondsToClose={10} />,
+      <SnackBar skin="black" />,
     ];
     SNACKBARS.forEach(snackbar =>
-      expect(renderer.create(snackbar).toJSON()).toMatchSnapshot(),
+      expect(toJson(mount(snackbar))).toMatchSnapshot(),
     );
   });
 });
