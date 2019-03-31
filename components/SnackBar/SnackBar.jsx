@@ -91,7 +91,7 @@ class SnackBar extends React.Component {
     const { body } = document;
     body.appendChild(this.snackBarSection);
 
-    document.querySelector('.action-button').focus();
+    this.objectFocus(document.querySelector('.action-button'));
 
     const { onClose, secondsToClose } = this.props;
 
@@ -104,6 +104,16 @@ class SnackBar extends React.Component {
     const { body } = document;
     body.removeChild(this.snackBarSection);
   }
+
+  // this event was implemented to simulate unit tests (a11y)
+  handleKeyPress = event => {
+    const { onClose } = this.props;
+    if (event.key === 'Enter') onClose();
+  };
+
+  objectFocus = element => {
+    element.focus();
+  };
 
   render() {
     const _id = uniqId('snackbar-dialog-');
@@ -138,6 +148,7 @@ class SnackBar extends React.Component {
                     <CloseIcon
                       onClick={onClose}
                       aria-label={closeButtonAriaLabel}
+                      onKeyPress={this.handleKeyPress}
                     />
                   )}
                 </ActionsSection>
@@ -153,6 +164,8 @@ class SnackBar extends React.Component {
 
 CloseIcon.displayName = 'CloseIcon';
 ActionButton.displayName = 'ActionButton';
+SnackBarDialog.displayName = 'SnackBarDialog';
+TextContainer.displayName = 'TextContainer';
 
 SnackBar.propTypes = {
   actionTrigger: PropTypes.shape({

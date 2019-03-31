@@ -787,7 +787,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                     <div
                       className="c2"
                     >
-                      <SnackBar__SnackBarDialog
+                      <SnackBarDialog
                         aria-describedby="snackbar-dialog-0"
                         role="alertdialog"
                         secondsToClose={6}
@@ -811,7 +811,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                   [Function],
                                 ],
                               },
-                              "displayName": "SnackBar__SnackBarDialog",
+                              "displayName": "SnackBarDialog",
                               "foldedComponentIds": Array [],
                               "render": [Function],
                               "styledComponentId": "SnackBar__SnackBarDialog-myzzmd-0",
@@ -833,7 +833,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                             role="alertdialog"
                             tabIndex="0"
                           >
-                            <SnackBar__TextContainer
+                            <TextContainer
                               id="snackbar-dialog-0"
                             >
                               <StyledComponent
@@ -851,7 +851,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                         "}",
                                       ],
                                     },
-                                    "displayName": "SnackBar__TextContainer",
+                                    "displayName": "TextContainer",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "styledComponentId": "SnackBar__TextContainer-myzzmd-1",
@@ -871,7 +871,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                   Text of SnackBar component
                                 </strong>
                               </StyledComponent>
-                            </SnackBar__TextContainer>
+                            </TextContainer>
                             <SnackBar__ActionsSection>
                               <StyledComponent
                                 forwardedComponent={
@@ -1063,6 +1063,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
+                                    onKeyPress={[Function]}
                                   >
                                     <StyledComponent
                                       aria-label="close SnackBar"
@@ -1114,6 +1115,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                       }
                                       forwardedRef={null}
                                       onClick={[Function]}
+                                      onKeyPress={[Function]}
                                     >
                                       <Button
                                         aria-label="close SnackBar"
@@ -1123,6 +1125,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                         full={false}
                                         icon="close"
                                         onClick={[Function]}
+                                        onKeyPress={[Function]}
                                         size="medium"
                                         skin="primary"
                                         type="button"
@@ -1134,6 +1137,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                           disabled={false}
                                           full={false}
                                           onClick={[Function]}
+                                          onKeyPress={[Function]}
                                           size="medium"
                                           skin="primary"
                                           type="button"
@@ -1187,6 +1191,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                             forwardedRef={null}
                                             full={false}
                                             onClick={[Function]}
+                                            onKeyPress={[Function]}
                                             size="medium"
                                             skin="primary"
                                             type="button"
@@ -1196,6 +1201,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                               className="c8 c9"
                                               disabled={false}
                                               onClick={[Function]}
+                                              onKeyPress={[Function]}
                                               size="medium"
                                               type="button"
                                             >
@@ -1300,7 +1306,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                             </SnackBar__ActionsSection>
                           </div>
                         </StyledComponent>
-                      </SnackBar__SnackBarDialog>
+                      </SnackBarDialog>
                     </div>
                   </StyledComponent>
                 </Col>
@@ -2101,7 +2107,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                     <div
                       className="c2"
                     >
-                      <SnackBar__SnackBarDialog
+                      <SnackBarDialog
                         aria-describedby="snackbar-dialog-1"
                         role="alertdialog"
                         secondsToClose={6}
@@ -2125,7 +2131,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                   [Function],
                                 ],
                               },
-                              "displayName": "SnackBar__SnackBarDialog",
+                              "displayName": "SnackBarDialog",
                               "foldedComponentIds": Array [],
                               "render": [Function],
                               "styledComponentId": "SnackBar__SnackBarDialog-myzzmd-0",
@@ -2147,7 +2153,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                             role="alertdialog"
                             tabIndex="0"
                           >
-                            <SnackBar__TextContainer
+                            <TextContainer
                               id="snackbar-dialog-1"
                             >
                               <StyledComponent
@@ -2165,7 +2171,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                         "}",
                                       ],
                                     },
-                                    "displayName": "SnackBar__TextContainer",
+                                    "displayName": "TextContainer",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "styledComponentId": "SnackBar__TextContainer-myzzmd-1",
@@ -2185,7 +2191,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                   SnackBar message content 
                                 </strong>
                               </StyledComponent>
-                            </SnackBar__TextContainer>
+                            </TextContainer>
                             <SnackBar__ActionsSection>
                               <StyledComponent
                                 forwardedComponent={
@@ -2377,6 +2383,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
+                                    onKeyPress={[Function]}
                                   >
                                     <StyledComponent
                                       aria-label="close SnackBar"
@@ -2428,6 +2435,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                       }
                                       forwardedRef={null}
                                       onClick={[Function]}
+                                      onKeyPress={[Function]}
                                     >
                                       <Button
                                         aria-label="close SnackBar"
@@ -2437,6 +2445,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                         full={false}
                                         icon="close"
                                         onClick={[Function]}
+                                        onKeyPress={[Function]}
                                         size="medium"
                                         skin="primary"
                                         type="button"
@@ -2448,6 +2457,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                           disabled={false}
                                           full={false}
                                           onClick={[Function]}
+                                          onKeyPress={[Function]}
                                           size="medium"
                                           skin="primary"
                                           type="button"
@@ -2501,6 +2511,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                             forwardedRef={null}
                                             full={false}
                                             onClick={[Function]}
+                                            onKeyPress={[Function]}
                                             size="medium"
                                             skin="primary"
                                             type="button"
@@ -2510,6 +2521,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                               className="c8 c9"
                                               disabled={false}
                                               onClick={[Function]}
+                                              onKeyPress={[Function]}
                                               size="medium"
                                               type="button"
                                             >
@@ -2614,7 +2626,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                             </SnackBar__ActionsSection>
                           </div>
                         </StyledComponent>
-                      </SnackBar__SnackBarDialog>
+                      </SnackBarDialog>
                     </div>
                   </StyledComponent>
                 </Col>
@@ -3415,7 +3427,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                     <div
                       className="c2"
                     >
-                      <SnackBar__SnackBarDialog
+                      <SnackBarDialog
                         aria-describedby="snackbar-dialog-2"
                         role="alertdialog"
                         secondsToClose={6}
@@ -3439,7 +3451,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                   [Function],
                                 ],
                               },
-                              "displayName": "SnackBar__SnackBarDialog",
+                              "displayName": "SnackBarDialog",
                               "foldedComponentIds": Array [],
                               "render": [Function],
                               "styledComponentId": "SnackBar__SnackBarDialog-myzzmd-0",
@@ -3461,7 +3473,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                             role="alertdialog"
                             tabIndex="0"
                           >
-                            <SnackBar__TextContainer
+                            <TextContainer
                               id="snackbar-dialog-2"
                             >
                               <StyledComponent
@@ -3479,7 +3491,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                         "}",
                                       ],
                                     },
-                                    "displayName": "SnackBar__TextContainer",
+                                    "displayName": "TextContainer",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "styledComponentId": "SnackBar__TextContainer-myzzmd-1",
@@ -3499,7 +3511,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                   Text of SnackBar component
                                 </strong>
                               </StyledComponent>
-                            </SnackBar__TextContainer>
+                            </TextContainer>
                             <SnackBar__ActionsSection>
                               <StyledComponent
                                 forwardedComponent={
@@ -3691,6 +3703,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
+                                    onKeyPress={[Function]}
                                   >
                                     <StyledComponent
                                       aria-label="close SnackBar"
@@ -3742,6 +3755,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                       }
                                       forwardedRef={null}
                                       onClick={[Function]}
+                                      onKeyPress={[Function]}
                                     >
                                       <Button
                                         aria-label="close SnackBar"
@@ -3751,6 +3765,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                         full={false}
                                         icon="close"
                                         onClick={[Function]}
+                                        onKeyPress={[Function]}
                                         size="medium"
                                         skin="primary"
                                         type="button"
@@ -3762,6 +3777,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                           disabled={false}
                                           full={false}
                                           onClick={[Function]}
+                                          onKeyPress={[Function]}
                                           size="medium"
                                           skin="primary"
                                           type="button"
@@ -3815,6 +3831,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                             forwardedRef={null}
                                             full={false}
                                             onClick={[Function]}
+                                            onKeyPress={[Function]}
                                             size="medium"
                                             skin="primary"
                                             type="button"
@@ -3824,6 +3841,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                               className="c8 c9"
                                               disabled={false}
                                               onClick={[Function]}
+                                              onKeyPress={[Function]}
                                               size="medium"
                                               type="button"
                                             >
@@ -3928,7 +3946,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                             </SnackBar__ActionsSection>
                           </div>
                         </StyledComponent>
-                      </SnackBar__SnackBarDialog>
+                      </SnackBarDialog>
                     </div>
                   </StyledComponent>
                 </Col>
@@ -4729,7 +4747,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                     <div
                       className="c2"
                     >
-                      <SnackBar__SnackBarDialog
+                      <SnackBarDialog
                         aria-describedby="snackbar-dialog-3"
                         role="alertdialog"
                         secondsToClose={6}
@@ -4753,7 +4771,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                   [Function],
                                 ],
                               },
-                              "displayName": "SnackBar__SnackBarDialog",
+                              "displayName": "SnackBarDialog",
                               "foldedComponentIds": Array [],
                               "render": [Function],
                               "styledComponentId": "SnackBar__SnackBarDialog-myzzmd-0",
@@ -4775,7 +4793,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                             role="alertdialog"
                             tabIndex="0"
                           >
-                            <SnackBar__TextContainer
+                            <TextContainer
                               id="snackbar-dialog-3"
                             >
                               <StyledComponent
@@ -4793,7 +4811,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                         "}",
                                       ],
                                     },
-                                    "displayName": "SnackBar__TextContainer",
+                                    "displayName": "TextContainer",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "styledComponentId": "SnackBar__TextContainer-myzzmd-1",
@@ -4813,7 +4831,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                   Text of SnackBar component
                                 </strong>
                               </StyledComponent>
-                            </SnackBar__TextContainer>
+                            </TextContainer>
                             <SnackBar__ActionsSection>
                               <StyledComponent
                                 forwardedComponent={
@@ -5005,6 +5023,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                   <CloseIcon
                                     aria-label="close"
                                     onClick={[Function]}
+                                    onKeyPress={[Function]}
                                   >
                                     <StyledComponent
                                       aria-label="close"
@@ -5056,6 +5075,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                       }
                                       forwardedRef={null}
                                       onClick={[Function]}
+                                      onKeyPress={[Function]}
                                     >
                                       <Button
                                         aria-label="close"
@@ -5065,6 +5085,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                         full={false}
                                         icon="close"
                                         onClick={[Function]}
+                                        onKeyPress={[Function]}
                                         size="medium"
                                         skin="primary"
                                         type="button"
@@ -5076,6 +5097,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                           disabled={false}
                                           full={false}
                                           onClick={[Function]}
+                                          onKeyPress={[Function]}
                                           size="medium"
                                           skin="primary"
                                           type="button"
@@ -5129,6 +5151,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                             forwardedRef={null}
                                             full={false}
                                             onClick={[Function]}
+                                            onKeyPress={[Function]}
                                             size="medium"
                                             skin="primary"
                                             type="button"
@@ -5138,6 +5161,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                               className="c8 c9"
                                               disabled={false}
                                               onClick={[Function]}
+                                              onKeyPress={[Function]}
                                               size="medium"
                                               type="button"
                                             >
@@ -5242,7 +5266,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                             </SnackBar__ActionsSection>
                           </div>
                         </StyledComponent>
-                      </SnackBar__SnackBarDialog>
+                      </SnackBarDialog>
                     </div>
                   </StyledComponent>
                 </Col>
@@ -6043,7 +6067,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                     <div
                       className="c2"
                     >
-                      <SnackBar__SnackBarDialog
+                      <SnackBarDialog
                         aria-describedby="snackbar-dialog-4"
                         role="alertdialog"
                         secondsToClose={10}
@@ -6067,7 +6091,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                   [Function],
                                 ],
                               },
-                              "displayName": "SnackBar__SnackBarDialog",
+                              "displayName": "SnackBarDialog",
                               "foldedComponentIds": Array [],
                               "render": [Function],
                               "styledComponentId": "SnackBar__SnackBarDialog-myzzmd-0",
@@ -6089,7 +6113,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                             role="alertdialog"
                             tabIndex="0"
                           >
-                            <SnackBar__TextContainer
+                            <TextContainer
                               id="snackbar-dialog-4"
                             >
                               <StyledComponent
@@ -6107,7 +6131,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                         "}",
                                       ],
                                     },
-                                    "displayName": "SnackBar__TextContainer",
+                                    "displayName": "TextContainer",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "styledComponentId": "SnackBar__TextContainer-myzzmd-1",
@@ -6127,7 +6151,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                   Text of SnackBar component
                                 </strong>
                               </StyledComponent>
-                            </SnackBar__TextContainer>
+                            </TextContainer>
                             <SnackBar__ActionsSection>
                               <StyledComponent
                                 forwardedComponent={
@@ -6319,6 +6343,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
+                                    onKeyPress={[Function]}
                                   >
                                     <StyledComponent
                                       aria-label="close SnackBar"
@@ -6370,6 +6395,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                       }
                                       forwardedRef={null}
                                       onClick={[Function]}
+                                      onKeyPress={[Function]}
                                     >
                                       <Button
                                         aria-label="close SnackBar"
@@ -6379,6 +6405,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                         full={false}
                                         icon="close"
                                         onClick={[Function]}
+                                        onKeyPress={[Function]}
                                         size="medium"
                                         skin="primary"
                                         type="button"
@@ -6390,6 +6417,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                           disabled={false}
                                           full={false}
                                           onClick={[Function]}
+                                          onKeyPress={[Function]}
                                           size="medium"
                                           skin="primary"
                                           type="button"
@@ -6443,6 +6471,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                             forwardedRef={null}
                                             full={false}
                                             onClick={[Function]}
+                                            onKeyPress={[Function]}
                                             size="medium"
                                             skin="primary"
                                             type="button"
@@ -6452,6 +6481,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                               className="c8 c9"
                                               disabled={false}
                                               onClick={[Function]}
+                                              onKeyPress={[Function]}
                                               size="medium"
                                               type="button"
                                             >
@@ -6556,7 +6586,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                             </SnackBar__ActionsSection>
                           </div>
                         </StyledComponent>
-                      </SnackBar__SnackBarDialog>
+                      </SnackBarDialog>
                     </div>
                   </StyledComponent>
                 </Col>
@@ -7357,7 +7387,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                     <div
                       className="c2"
                     >
-                      <SnackBar__SnackBarDialog
+                      <SnackBarDialog
                         aria-describedby="snackbar-dialog-5"
                         role="alertdialog"
                         secondsToClose={6}
@@ -7381,7 +7411,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                   [Function],
                                 ],
                               },
-                              "displayName": "SnackBar__SnackBarDialog",
+                              "displayName": "SnackBarDialog",
                               "foldedComponentIds": Array [],
                               "render": [Function],
                               "styledComponentId": "SnackBar__SnackBarDialog-myzzmd-0",
@@ -7403,7 +7433,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                             role="alertdialog"
                             tabIndex="0"
                           >
-                            <SnackBar__TextContainer
+                            <TextContainer
                               id="snackbar-dialog-5"
                             >
                               <StyledComponent
@@ -7421,7 +7451,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                         "}",
                                       ],
                                     },
-                                    "displayName": "SnackBar__TextContainer",
+                                    "displayName": "TextContainer",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "styledComponentId": "SnackBar__TextContainer-myzzmd-1",
@@ -7441,7 +7471,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                   Text of SnackBar component
                                 </strong>
                               </StyledComponent>
-                            </SnackBar__TextContainer>
+                            </TextContainer>
                             <SnackBar__ActionsSection>
                               <StyledComponent
                                 forwardedComponent={
@@ -7633,6 +7663,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                   <CloseIcon
                                     aria-label="close SnackBar"
                                     onClick={[Function]}
+                                    onKeyPress={[Function]}
                                   >
                                     <StyledComponent
                                       aria-label="close SnackBar"
@@ -7684,6 +7715,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                       }
                                       forwardedRef={null}
                                       onClick={[Function]}
+                                      onKeyPress={[Function]}
                                     >
                                       <Button
                                         aria-label="close SnackBar"
@@ -7693,6 +7725,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                         full={false}
                                         icon="close"
                                         onClick={[Function]}
+                                        onKeyPress={[Function]}
                                         size="medium"
                                         skin="primary"
                                         type="button"
@@ -7704,6 +7737,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                           disabled={false}
                                           full={false}
                                           onClick={[Function]}
+                                          onKeyPress={[Function]}
                                           size="medium"
                                           skin="primary"
                                           type="button"
@@ -7757,6 +7791,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                             forwardedRef={null}
                                             full={false}
                                             onClick={[Function]}
+                                            onKeyPress={[Function]}
                                             size="medium"
                                             skin="primary"
                                             type="button"
@@ -7766,6 +7801,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                               className="c8 c9"
                                               disabled={false}
                                               onClick={[Function]}
+                                              onKeyPress={[Function]}
                                               size="medium"
                                               type="button"
                                             >
@@ -7870,7 +7906,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                             </SnackBar__ActionsSection>
                           </div>
                         </StyledComponent>
-                      </SnackBar__SnackBarDialog>
+                      </SnackBarDialog>
                     </div>
                   </StyledComponent>
                 </Col>
