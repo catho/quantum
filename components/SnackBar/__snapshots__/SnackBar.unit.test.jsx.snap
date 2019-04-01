@@ -222,20 +222,20 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -535,20 +535,20 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -677,7 +677,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
-                "position:fixed;bottom:0;left:0;width:100%;",
+                "bottom:0;left:0;position:fixed;width:100%;",
               ],
             },
             "displayName": "SnackBar__DialogBlock",
@@ -883,7 +883,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                       "isStatic": true,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "display:flex;align-items:center;",
+                                        "align-items:center;display:flex;",
                                       ],
                                     },
                                     "displayName": "SnackBar__ActionsSection",
@@ -1542,20 +1542,20 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -1855,20 +1855,20 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -1997,7 +1997,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
-                "position:fixed;bottom:0;left:0;width:100%;",
+                "bottom:0;left:0;position:fixed;width:100%;",
               ],
             },
             "displayName": "SnackBar__DialogBlock",
@@ -2203,7 +2203,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                       "isStatic": true,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "display:flex;align-items:center;",
+                                        "align-items:center;display:flex;",
                                       ],
                                     },
                                     "displayName": "SnackBar__ActionsSection",
@@ -2862,20 +2862,20 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -3175,20 +3175,20 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -3317,7 +3317,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
-                "position:fixed;bottom:0;left:0;width:100%;",
+                "bottom:0;left:0;position:fixed;width:100%;",
               ],
             },
             "displayName": "SnackBar__DialogBlock",
@@ -3523,7 +3523,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                       "isStatic": true,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "display:flex;align-items:center;",
+                                        "align-items:center;display:flex;",
                                       ],
                                     },
                                     "displayName": "SnackBar__ActionsSection",
@@ -4182,20 +4182,20 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -4495,20 +4495,20 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -4637,7 +4637,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
-                "position:fixed;bottom:0;left:0;width:100%;",
+                "bottom:0;left:0;position:fixed;width:100%;",
               ],
             },
             "displayName": "SnackBar__DialogBlock",
@@ -4843,7 +4843,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                       "isStatic": true,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "display:flex;align-items:center;",
+                                        "align-items:center;display:flex;",
                                       ],
                                     },
                                     "displayName": "SnackBar__ActionsSection",
@@ -5502,20 +5502,20 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -5815,20 +5815,20 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -5957,7 +5957,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
-                "position:fixed;bottom:0;left:0;width:100%;",
+                "bottom:0;left:0;position:fixed;width:100%;",
               ],
             },
             "displayName": "SnackBar__DialogBlock",
@@ -6163,7 +6163,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                       "isStatic": true,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "display:flex;align-items:center;",
+                                        "align-items:center;display:flex;",
                                       ],
                                     },
                                     "displayName": "SnackBar__ActionsSection",
@@ -6822,20 +6822,20 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -7135,20 +7135,20 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -7277,7 +7277,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
-                "position:fixed;bottom:0;left:0;width:100%;",
+                "bottom:0;left:0;position:fixed;width:100%;",
               ],
             },
             "displayName": "SnackBar__DialogBlock",
@@ -7483,7 +7483,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                       "isStatic": true,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "display:flex;align-items:center;",
+                                        "align-items:center;display:flex;",
                                       ],
                                     },
                                     "displayName": "SnackBar__ActionsSection",
