@@ -1973,7 +1973,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-1 c10 c11"
+                      class="material-icons MuiIcon-root-10 c10 c11"
                     >
                       close
                     </span>
@@ -2577,15 +2577,15 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                                         className="c10 c11"
                                                         classes={
                                                           Object {
-                                                            "colorAction": "MuiIcon-colorAction-4",
-                                                            "colorDisabled": "MuiIcon-colorDisabled-6",
-                                                            "colorError": "MuiIcon-colorError-5",
-                                                            "colorPrimary": "MuiIcon-colorPrimary-2",
-                                                            "colorSecondary": "MuiIcon-colorSecondary-3",
-                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                                                            "root": "MuiIcon-root-1",
+                                                            "colorAction": "MuiIcon-colorAction-13",
+                                                            "colorDisabled": "MuiIcon-colorDisabled-15",
+                                                            "colorError": "MuiIcon-colorError-14",
+                                                            "colorPrimary": "MuiIcon-colorPrimary-11",
+                                                            "colorSecondary": "MuiIcon-colorSecondary-12",
+                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-16",
+                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-18",
+                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-17",
+                                                            "root": "MuiIcon-root-10",
                                                           }
                                                         }
                                                         color="inherit"
@@ -2600,7 +2600,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                                       >
                                                         <span
                                                           aria-hidden="true"
-                                                          className="material-icons MuiIcon-root-1 c10 c11"
+                                                          className="material-icons MuiIcon-root-10 c10 c11"
                                                           size="medium"
                                                           style={
                                                             Object {
@@ -3293,7 +3293,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-1 c10 c11"
+                      class="material-icons MuiIcon-root-19 c10 c11"
                     >
                       close
                     </span>
@@ -3897,15 +3897,15 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                                         className="c10 c11"
                                                         classes={
                                                           Object {
-                                                            "colorAction": "MuiIcon-colorAction-4",
-                                                            "colorDisabled": "MuiIcon-colorDisabled-6",
-                                                            "colorError": "MuiIcon-colorError-5",
-                                                            "colorPrimary": "MuiIcon-colorPrimary-2",
-                                                            "colorSecondary": "MuiIcon-colorSecondary-3",
-                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                                                            "root": "MuiIcon-root-1",
+                                                            "colorAction": "MuiIcon-colorAction-22",
+                                                            "colorDisabled": "MuiIcon-colorDisabled-24",
+                                                            "colorError": "MuiIcon-colorError-23",
+                                                            "colorPrimary": "MuiIcon-colorPrimary-20",
+                                                            "colorSecondary": "MuiIcon-colorSecondary-21",
+                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-25",
+                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-27",
+                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-26",
+                                                            "root": "MuiIcon-root-19",
                                                           }
                                                         }
                                                         color="inherit"
@@ -3920,7 +3920,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                                       >
                                                         <span
                                                           aria-hidden="true"
-                                                          className="material-icons MuiIcon-root-1 c10 c11"
+                                                          className="material-icons MuiIcon-root-19 c10 c11"
                                                           size="medium"
                                                           style={
                                                             Object {
@@ -4613,7 +4613,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-1 c10 c11"
+                      class="material-icons MuiIcon-root-28 c10 c11"
                     >
                       close
                     </span>
@@ -5217,15 +5217,15 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                                         className="c10 c11"
                                                         classes={
                                                           Object {
-                                                            "colorAction": "MuiIcon-colorAction-4",
-                                                            "colorDisabled": "MuiIcon-colorDisabled-6",
-                                                            "colorError": "MuiIcon-colorError-5",
-                                                            "colorPrimary": "MuiIcon-colorPrimary-2",
-                                                            "colorSecondary": "MuiIcon-colorSecondary-3",
-                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                                                            "root": "MuiIcon-root-1",
+                                                            "colorAction": "MuiIcon-colorAction-31",
+                                                            "colorDisabled": "MuiIcon-colorDisabled-33",
+                                                            "colorError": "MuiIcon-colorError-32",
+                                                            "colorPrimary": "MuiIcon-colorPrimary-29",
+                                                            "colorSecondary": "MuiIcon-colorSecondary-30",
+                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-34",
+                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-36",
+                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-35",
+                                                            "root": "MuiIcon-root-28",
                                                           }
                                                         }
                                                         color="inherit"
@@ -5240,7 +5240,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                                       >
                                                         <span
                                                           aria-hidden="true"
-                                                          className="material-icons MuiIcon-root-1 c10 c11"
+                                                          className="material-icons MuiIcon-root-28 c10 c11"
                                                           size="medium"
                                                           style={
                                                             Object {
@@ -5933,7 +5933,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-1 c10 c11"
+                      class="material-icons MuiIcon-root-37 c10 c11"
                     >
                       close
                     </span>
@@ -6537,15 +6537,15 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                                         className="c10 c11"
                                                         classes={
                                                           Object {
-                                                            "colorAction": "MuiIcon-colorAction-4",
-                                                            "colorDisabled": "MuiIcon-colorDisabled-6",
-                                                            "colorError": "MuiIcon-colorError-5",
-                                                            "colorPrimary": "MuiIcon-colorPrimary-2",
-                                                            "colorSecondary": "MuiIcon-colorSecondary-3",
-                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                                                            "root": "MuiIcon-root-1",
+                                                            "colorAction": "MuiIcon-colorAction-40",
+                                                            "colorDisabled": "MuiIcon-colorDisabled-42",
+                                                            "colorError": "MuiIcon-colorError-41",
+                                                            "colorPrimary": "MuiIcon-colorPrimary-38",
+                                                            "colorSecondary": "MuiIcon-colorSecondary-39",
+                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-43",
+                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-45",
+                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-44",
+                                                            "root": "MuiIcon-root-37",
                                                           }
                                                         }
                                                         color="inherit"
@@ -6560,7 +6560,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                                       >
                                                         <span
                                                           aria-hidden="true"
-                                                          className="material-icons MuiIcon-root-1 c10 c11"
+                                                          className="material-icons MuiIcon-root-37 c10 c11"
                                                           size="medium"
                                                           style={
                                                             Object {
@@ -7253,7 +7253,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-1 c10 c11"
+                      class="material-icons MuiIcon-root-46 c10 c11"
                     >
                       close
                     </span>
@@ -7857,15 +7857,15 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                                         className="c10 c11"
                                                         classes={
                                                           Object {
-                                                            "colorAction": "MuiIcon-colorAction-4",
-                                                            "colorDisabled": "MuiIcon-colorDisabled-6",
-                                                            "colorError": "MuiIcon-colorError-5",
-                                                            "colorPrimary": "MuiIcon-colorPrimary-2",
-                                                            "colorSecondary": "MuiIcon-colorSecondary-3",
-                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                                                            "root": "MuiIcon-root-1",
+                                                            "colorAction": "MuiIcon-colorAction-49",
+                                                            "colorDisabled": "MuiIcon-colorDisabled-51",
+                                                            "colorError": "MuiIcon-colorError-50",
+                                                            "colorPrimary": "MuiIcon-colorPrimary-47",
+                                                            "colorSecondary": "MuiIcon-colorSecondary-48",
+                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-52",
+                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-54",
+                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-53",
+                                                            "root": "MuiIcon-root-46",
                                                           }
                                                         }
                                                         color="inherit"
@@ -7880,7 +7880,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                                       >
                                                         <span
                                                           aria-hidden="true"
-                                                          className="material-icons MuiIcon-root-1 c10 c11"
+                                                          className="material-icons MuiIcon-root-46 c10 c11"
                                                           size="medium"
                                                           style={
                                                             Object {

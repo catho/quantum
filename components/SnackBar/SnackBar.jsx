@@ -98,6 +98,8 @@ class SnackBar extends React.Component {
     setTimeout(() => {
       onClose();
     }, secondsToClose * 1000);
+
+    this.closeOnTime(secondsToClose, onClose);
   }
 
   componentWillUnmount() {
@@ -113,6 +115,12 @@ class SnackBar extends React.Component {
 
   objectFocus = element => {
     element.focus();
+  };
+
+  closeOnTime = (secondsToClose, callback) => {
+    setTimeout(() => {
+      callback();
+    }, secondsToClose * 1000);
   };
 
   render() {
