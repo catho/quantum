@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
 
 import Radio from './Radio';
+import RadioButton from './RadioButton';
 
 const Group = styled(FieldGroup).attrs({
   role: 'radiogroup',
@@ -58,6 +59,7 @@ const RadioGroup = ({
 };
 
 RadioGroup.Radio = Radio;
+RadioGroup.Button = RadioButton;
 
 /**
  * Group for Radio components.
