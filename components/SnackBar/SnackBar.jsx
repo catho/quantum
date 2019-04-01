@@ -70,14 +70,14 @@ const ActionButton = styled(Button)`
 `;
 
 const ActionsSection = styled.div`
-  display: flex;
   align-items: center;
+  display: flex;
 `;
 
 const DialogBlock = styled.section`
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
   width: 100%;
 `;
 
