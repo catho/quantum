@@ -1,30 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import Colors from '../Colors';
-import Button from '../Button';
-import { INPUT_STYLE } from '../shared';
+import styled from 'styled-components';
+import ButtonGroupLabel from '../shared/ButtonGroupLabel';
 
-const { ERROR_STYLE, ERROR_HOVER_STYLE } = INPUT_STYLE;
-
-const StyledButton = styled(Button)`
-  ${({ error }) =>
-    error &&
-    css`
-    ${ERROR_STYLE}
-    color: ${Colors.ERROR['500']};
-
-    :hover, :focus {
-      ${ERROR_HOVER_STYLE};
-      color: ${Colors.ERROR['500']};
-      background-color: ${Colors.ERROR['200']};
-    }
-  `}
+const StyledRadio = styled.input.attrs({
+  type: 'radio',
+})`
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
 `;
 
-const RadioButton = ({
+const Radio = ({
   children,
   label,
+  error,
+  disabled,
   onChange,
   value,
   checked,
@@ -33,29 +29,42 @@ const RadioButton = ({
   const skin = checked ? 'primary' : 'secondary';
 
   return (
-    <StyledButton skin={skin} {...rest}>
-      {children}
-    </StyledButton>
+    <ButtonGroupLabel
+      error={error}
+      disabled={disabled}
+      skin={skin}
+      checked={checked}
+    >
+      <StyledRadio
+        checked={checked}
+        disabled={disabled}
+        onChange={e => onChange({ value, label }, e)}
+        {...rest}
+      />
+      {children || label}
+    </ButtonGroupLabel>
   );
 };
 
-RadioButton.displayName = 'RadioGroup.Radio';
+Radio.displayName = 'RadioGroup.Radio';
 
-RadioButton.defaultProps = {
-  disabled: false,
+Radio.defaultProps = {
   checked: false,
+  disabled: false,
+  error: false,
   children: undefined,
   label: undefined,
   onChange: () => {},
 };
 
-RadioButton.propTypes = {
-  disabled: PropTypes.bool,
+Radio.propTypes = {
   checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+  error: PropTypes.bool,
   children: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
 };
 
-export default RadioButton;
+export default Radio;
