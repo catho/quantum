@@ -63,6 +63,11 @@ stories.add('Radio group', () => (
           <br />
 
           <Row>
+            <RadioGroupExample {...samples.buttonGroup} />
+          </Row>
+          <br />
+
+          <Row>
             <RadioGroupExample {...samples.simpleRadioGroup} />
           </Row>
           <br />
