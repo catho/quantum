@@ -42,17 +42,17 @@ const RadioGroup = ({
     }),
   );
 
-  const listItems =
+  const items =
     React.Children.map(children, child =>
       React.cloneElement(child, {
         checked: child.props.value === value ? true : undefined,
         ...commonProps,
       }),
-    ) || radioOptions.map(Radio.create);
+    ) || radioOptions.map(props => <Radio {...props} />);
 
   return (
     <Group {...rest}>
-      {listItems}
+      {items}
       {error && <ErrorLabel>{error}</ErrorLabel>}
     </Group>
   );

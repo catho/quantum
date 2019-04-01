@@ -186,8 +186,6 @@ const Radio = ({
   </RadioLabel>
 );
 
-Radio.create = radio => <Radio {...radio} />;
-
 Radio.displayName = 'RadioGroup.Radio';
 
 Radio.defaultProps = {
