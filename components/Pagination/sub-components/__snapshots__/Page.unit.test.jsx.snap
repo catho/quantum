@@ -7,7 +7,7 @@ exports[`<Page /> Snapshot should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -21,12 +21,13 @@ exports[`<Page /> Snapshot should match snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c0:hover,

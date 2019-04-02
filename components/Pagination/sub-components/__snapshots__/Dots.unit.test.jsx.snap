@@ -3,7 +3,7 @@
 exports[`<Dots /> Snapshot should match snapshot 1`] = `
 .c0 {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   width: 22px;
 }
 

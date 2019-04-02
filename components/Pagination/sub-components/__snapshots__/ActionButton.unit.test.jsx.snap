@@ -68,7 +68,7 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;

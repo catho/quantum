@@ -21,20 +21,21 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c3:hover,
 .c3:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c4 {
@@ -43,7 +44,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -57,12 +58,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c4:hover,
@@ -194,13 +196,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #c9c9c9;
+  color: #cccccc;
   cursor: not-allowed;
 }
 
@@ -209,7 +211,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -240,10 +242,12 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={true}
     className="c1 c2"
     disabled={true}
     onClick={[Function]}
@@ -256,36 +260,47 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
     </span>
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 1"
     className="c3"
     onClick={[Function]}
   >
     1
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 2"
     className="c4"
     onClick={[Function]}
   >
     2
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 3"
     className="c4"
     onClick={[Function]}
   >
     3
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 4"
     className="c4"
     onClick={[Function]}
   >
     4
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 5"
     className="c4"
     onClick={[Function]}
   >
     5
   </button>
   <button
+    aria-disabled={false}
     className="c5 c6"
     disabled={false}
     onClick={[Function]}
@@ -297,7 +312,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
@@ -321,20 +336,21 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c3:hover,
 .c3:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c4 {
@@ -343,7 +359,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -357,12 +373,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c4:hover,
@@ -494,13 +511,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #c9c9c9;
+  color: #cccccc;
   cursor: not-allowed;
 }
 
@@ -509,7 +526,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -540,10 +557,12 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={true}
     className="c1 c2"
     disabled={true}
     onClick={[Function]}
@@ -556,42 +575,55 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
     </span>
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 1"
     className="c3"
     onClick={[Function]}
   >
     1
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 2"
     className="c4"
     onClick={[Function]}
   >
     2
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 3"
     className="c4"
     onClick={[Function]}
   >
     3
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 4"
     className="c4"
     onClick={[Function]}
   >
     4
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 5"
     className="c4"
     onClick={[Function]}
   >
     5
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 6"
     className="c4"
     onClick={[Function]}
   >
     6
   </button>
   <button
+    aria-disabled={false}
     className="c5 c6"
     disabled={false}
     onClick={[Function]}
@@ -603,7 +635,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
@@ -627,20 +659,21 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c3:hover,
 .c3:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c4 {
@@ -649,7 +682,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -663,12 +696,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c4:hover,
@@ -800,13 +834,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #c9c9c9;
+  color: #cccccc;
   cursor: not-allowed;
 }
 
@@ -815,7 +849,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -832,7 +866,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 
 .c5 {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   width: 22px;
 }
 
@@ -885,10 +919,12 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={true}
     className="c1 c2"
     disabled={true}
     onClick={[Function]}
@@ -901,24 +937,32 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
     </span>
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 1"
     className="c3"
     onClick={[Function]}
   >
     1
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 2"
     className="c4"
     onClick={[Function]}
   >
     2
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 3"
     className="c4"
     onClick={[Function]}
   >
     3
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 4"
     className="c4"
     onClick={[Function]}
   >
@@ -932,12 +976,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
     />
   </div>
   <button
+    aria-current={false}
+    aria-label="Page 7"
     className="c4"
     onClick={[Function]}
   >
     7
   </button>
   <button
+    aria-disabled={false}
     className="c7 c8"
     disabled={false}
     onClick={[Function]}
@@ -949,7 +996,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
@@ -973,20 +1020,21 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c4:hover,
 .c4:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c3 {
@@ -995,7 +1043,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -1009,12 +1057,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c3:hover,
@@ -1091,7 +1140,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -1122,10 +1171,12 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -1138,48 +1189,63 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
     </span>
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 1"
     className="c3"
     onClick={[Function]}
   >
     1
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 2"
     className="c3"
     onClick={[Function]}
   >
     2
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 3"
     className="c3"
     onClick={[Function]}
   >
     3
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 4"
     className="c4"
     onClick={[Function]}
   >
     4
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 5"
     className="c3"
     onClick={[Function]}
   >
     5
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 6"
     className="c3"
     onClick={[Function]}
   >
     6
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 7"
     className="c3"
     onClick={[Function]}
   >
     7
   </button>
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -1191,7 +1257,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
@@ -1215,20 +1281,21 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c6:hover,
 .c6:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c3 {
@@ -1237,7 +1304,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -1251,12 +1318,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c3:hover,
@@ -1333,7 +1401,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -1350,7 +1418,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c4 {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   width: 22px;
 }
 
@@ -1403,10 +1471,12 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -1419,6 +1489,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
     </span>
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 1"
     className="c3"
     onClick={[Function]}
   >
@@ -1432,30 +1504,39 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
     />
   </div>
   <button
+    aria-current={false}
+    aria-label="Page 4"
     className="c3"
     onClick={[Function]}
   >
     4
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 5"
     className="c6"
     onClick={[Function]}
   >
     5
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 6"
     className="c3"
     onClick={[Function]}
   >
     6
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 7"
     className="c3"
     onClick={[Function]}
   >
     7
   </button>
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -1467,7 +1548,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
@@ -1491,20 +1572,21 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c6:hover,
 .c6:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c3 {
@@ -1513,7 +1595,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -1527,12 +1609,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c3:hover,
@@ -1609,7 +1692,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -1626,7 +1709,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c4 {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   width: 22px;
 }
 
@@ -1679,10 +1762,12 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -1695,6 +1780,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
     </span>
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 1"
     className="c3"
     onClick={[Function]}
   >
@@ -1708,30 +1795,39 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
     />
   </div>
   <button
+    aria-current={false}
+    aria-label="Page 4"
     className="c3"
     onClick={[Function]}
   >
     4
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 5"
     className="c6"
     onClick={[Function]}
   >
     5
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 6"
     className="c3"
     onClick={[Function]}
   >
     6
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 7"
     className="c3"
     onClick={[Function]}
   >
     7
   </button>
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -1743,7 +1839,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
@@ -1767,20 +1863,21 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c6:hover,
 .c6:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c3 {
@@ -1789,7 +1886,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -1803,12 +1900,13 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
 
 .c3:hover,
@@ -1885,7 +1983,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -1902,7 +2000,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 
 .c4 {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   width: 22px;
 }
 
@@ -1955,10 +2053,12 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -1971,6 +2071,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
     </span>
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 1"
     className="c3"
     onClick={[Function]}
   >
@@ -1984,18 +2086,24 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
     />
   </div>
   <button
+    aria-current={false}
+    aria-label="Page 49"
     className="c3"
     onClick={[Function]}
   >
     49
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 50"
     className="c6"
     onClick={[Function]}
   >
     50
   </button>
   <button
+    aria-current={false}
+    aria-label="Page 51"
     className="c3"
     onClick={[Function]}
   >
@@ -2009,12 +2117,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
     />
   </div>
   <button
+    aria-current={false}
+    aria-label="Page 100"
     className="c3"
     onClick={[Function]}
   >
     100
   </button>
   <button
+    aria-disabled={false}
     className="c1 c2"
     disabled={false}
     onClick={[Function]}
@@ -2026,7 +2137,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
@@ -2050,20 +2161,21 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   color: #FFFFFF;
 }
 
 .c3:hover,
 .c3:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c2 {
@@ -2126,13 +2238,13 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #c9c9c9;
+  color: #cccccc;
   cursor: not-allowed;
 }
 
@@ -2152,10 +2264,12 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   padding: 16px !important;
 }
 
-<div
+<nav
+  aria-label="pagination"
   className="c0"
 >
   <button
+    aria-disabled={true}
     className="c1 c2"
     disabled={true}
     onClick={[Function]}
@@ -2168,12 +2282,15 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
     </span>
   </button>
   <button
+    aria-current="page"
+    aria-label="Current Page, Page 1"
     className="c3"
     onClick={[Function]}
   >
     1
   </button>
   <button
+    aria-disabled={true}
     className="c1 c2"
     disabled={true}
     onClick={[Function]}
@@ -2185,5 +2302,5 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
       Next
     </span>
   </button>
-</div>
+</nav>
 `;
