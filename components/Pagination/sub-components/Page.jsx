@@ -36,13 +36,11 @@ const PageButton = styled.button`
   }
 `;
 
-const Page = ({ children, onClick, ...props }) => {
-  return (
-    <PageButton onClick={onClick} {...props}>
-      {children}
-    </PageButton>
-  );
-};
+const Page = ({ children, onClick, ...props }) => (
+  <PageButton onClick={onClick} {...props}>
+    {children}
+  </PageButton>
+);
 
 Page.displayName = 'Page';
 

@@ -52,8 +52,8 @@ const pagination = ({ totalPages = 1, activePage = 1 } = {}) => {
     pages = [...pages.slice(0, -1), lastPage - 1, lastPage];
   }
 
-  firstPage = pages[0];
-  secondPage = pages[1];
+  firstPage = pages[0]; // eslint-disable-line
+  secondPage = pages[1]; // eslint-disable-line
 
   if (secondPage > firstPage + 2) {
     pages = [firstPage, '...', ...pages.slice(1)];
