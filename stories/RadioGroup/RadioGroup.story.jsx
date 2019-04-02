@@ -63,11 +63,6 @@ stories.add('Radio group', () => (
           <br />
 
           <Row>
-            <RadioGroupExample {...samples.buttonGroup} />
-          </Row>
-          <br />
-
-          <Row>
             <RadioGroupExample {...samples.simpleRadioGroup} />
           </Row>
           <br />
@@ -95,9 +90,24 @@ stories.add('Radio group', () => (
           </Row>
         </StoryContainer>
       </Tab>
+      <Tab title="Button Group">
+        <StoryContainer>
+          <Title as="h2">Button Group Skin</Title>
+          <p>
+            It's possible to render radio elements as buttons, using{' '}
+            <code>{'<RadioGroup.Button />'}</code>
+          </p>
+
+          <br />
+          <Row>
+            <RadioGroupExample {...samples.buttonGroup} />
+          </Row>
+        </StoryContainer>
+      </Tab>
       <Tab title="API">
         <AutoPropsApi component={RadioGroup} title="RadioGroup" />
         <AutoPropsApi component={RadioGroup.Radio} title="RadioGroup.Radio" />
+        <AutoPropsApi component={RadioGroup.Button} title="RadioGroup.Button" />
       </Tab>
     </TabbedView>
   </>
