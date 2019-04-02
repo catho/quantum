@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1 .c2 {
+  font-size: 24px;
+}
+
+.c1:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c0 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+<button
+  className="c0 c1"
+  disabled={false}
+  onClick={[Function]}
+  size="medium"
+  type="button"
+>
+  
+  <span>
+    Back
+  </span>
+</button>
+`;

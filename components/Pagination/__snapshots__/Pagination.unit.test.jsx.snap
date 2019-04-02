@@ -1,0 +1,2189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: not-allowed;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c7 {
+  font-size: 24px;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c6 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c6 .c7 {
+  font-size: 24px;
+}
+
+.c6:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c6:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c6:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #c9c9c9;
+  cursor: not-allowed;
+}
+
+.c5 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:hover,
+.c5:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={true}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    2
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    3
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    4
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    5
+  </button>
+  <button
+    className="c5 c6"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: not-allowed;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c7 {
+  font-size: 24px;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c6 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c6 .c7 {
+  font-size: 24px;
+}
+
+.c6:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c6:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c6:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #c9c9c9;
+  cursor: not-allowed;
+}
+
+.c5 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:hover,
+.c5:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={true}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    2
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    3
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    4
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    5
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    6
+  </button>
+  <button
+    className="c5 c6"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: not-allowed;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c9 {
+  font-size: 24px;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c8 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c8 .c9 {
+  font-size: 24px;
+}
+
+.c8:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c8:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c8:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #c9c9c9;
+  cursor: not-allowed;
+}
+
+.c7 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7:hover,
+.c7:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c5 {
+  display: inline-block;
+  margin: 0 8px;
+  width: 22px;
+}
+
+.c6 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c6:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c6:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={true}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    2
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    3
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    4
+  </button>
+  <div
+    className="c5"
+  >
+    <span
+      className="c6"
+    />
+  </div>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    7
+  </button>
+  <button
+    className="c7 c8"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c5 {
+  font-size: 24px;
+}
+
+.c2:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    2
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    3
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    4
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    5
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    6
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    7
+  </button>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c6:hover,
+.c6:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c7 {
+  font-size: 24px;
+}
+
+.c2:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  display: inline-block;
+  margin: 0 8px;
+  width: 22px;
+}
+
+.c5 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <div
+    className="c4"
+  >
+    <span
+      className="c5"
+    />
+  </div>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    4
+  </button>
+  <button
+    className="c6"
+    onClick={[Function]}
+  >
+    5
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    6
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    7
+  </button>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c6:hover,
+.c6:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c7 {
+  font-size: 24px;
+}
+
+.c2:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  display: inline-block;
+  margin: 0 8px;
+  width: 22px;
+}
+
+.c5 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <div
+    className="c4"
+  >
+    <span
+      className="c5"
+    />
+  </div>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    4
+  </button>
+  <button
+    className="c6"
+    onClick={[Function]}
+  >
+    5
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    6
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    7
+  </button>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c6:hover,
+.c6:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c7 {
+  font-size: 24px;
+}
+
+.c2:hover {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  display: inline-block;
+  margin: 0 8px;
+  width: 22px;
+}
+
+.c5 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <div
+    className="c4"
+  >
+    <span
+      className="c5"
+    />
+  </div>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    49
+  </button>
+  <button
+    className="c6"
+    onClick={[Function]}
+  >
+    50
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    51
+  </button>
+  <div
+    className="c4"
+  >
+    <span
+      className="c5"
+    />
+  </div>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    100
+  </button>
+  <button
+    className="c1 c2"
+    disabled={false}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  color: #FFFFFF;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: not-allowed;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: none;
+  color: #1355d0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-radius: unset;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 .c4 {
+  font-size: 24px;
+}
+
+.c2:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #1355d0;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: undefined;
+  border-color: undefined;
+  color: #1355d0;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 8px;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #c9c9c9;
+  cursor: not-allowed;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px !important;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    disabled={true}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className="c1 c2"
+    disabled={true}
+    onClick={[Function]}
+    size="medium"
+    type="button"
+  >
+    
+    <span>
+      Next
+    </span>
+  </button>
+</div>
+`;

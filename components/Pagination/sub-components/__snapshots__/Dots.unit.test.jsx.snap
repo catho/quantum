@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dots /> Snapshot should match snapshot 1`] = `
+.c0 {
+  display: inline-block;
+  margin: 0 8px;
+  width: 22px;
+}
+
+.c1 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c1:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c1:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  />
+</div>
+`;
