@@ -8,6 +8,7 @@ export default styled(Label)`
   ${buttonStyle}
 
   margin-bottom: 16px;
+  display: inline-flex;
 
   ${({ error, checked }) =>
     error &&

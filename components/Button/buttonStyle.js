@@ -70,22 +70,22 @@ const skin = props => {
         border-color: ${hovered.border};
         color: ${hovered.color};
       }
+
+      &:focus {
+        box-shadow: ${focused.shadow};
+        background-color: ${focused.background};
+        border-color: ${focused.border};
+        color: ${focused.color};
+      }
+
+      &:active {
+        box-shadow: ${selected.shadow};
+        background-color: ${selected.background};
+        border-color: ${selected.border};
+        color: ${selected.color};
+      }
     `
         : ''
-    }
-
-    &:focus {
-      box-shadow: ${focused.shadow};
-      background-color: ${focused.background};
-      border-color: ${focused.border};
-      color: ${focused.color};
-    }
-
-    &:active {
-      box-shadow: ${selected.shadow};
-      background-color: ${selected.background};
-      border-color: ${selected.border};
-      color: ${selected.color};
     }
   `;
 };

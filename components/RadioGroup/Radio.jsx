@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import Label from '../shared/Label';
+import HiddenRadio from './HiddenRadio';
 
 const RadioMark = styled.span`
   background-color: ${Colors.WHITE};
@@ -29,24 +30,11 @@ const RadioMark = styled.span`
   }
 `;
 
-const StyledRadio = styled.input.attrs({
-  type: 'radio',
-})`
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-`;
-
 const RadioLabel = styled(Label)`
   cursor: pointer;
   user-select: none;
 
-  ${StyledRadio} {
+  ${HiddenRadio} {
     :checked {
       ~ ${RadioMark} {
         border-color: ${Colors.BLUE[500]};
@@ -76,7 +64,7 @@ const RadioLabel = styled(Label)`
   ${({ error }) =>
     error &&
     `
-    ${StyledRadio} {
+    ${HiddenRadio} {
       :checked {
         ~ ${RadioMark} {
           border-color: ${Colors.ERROR[500]};
@@ -118,7 +106,7 @@ const RadioLabel = styled(Label)`
       cursor: not-allowed;
     }
 
-    ${StyledRadio} {
+    ${HiddenRadio} {
       :disabled {
         ~ ${RadioMark} {
           background-color: ${Colors.BLACK[200]};
@@ -159,7 +147,7 @@ const RadioLabel = styled(Label)`
     }
   `}
 
-  ${StyledRadio}:checked:disabled ~ ${RadioMark} {
+  ${HiddenRadio}:checked:disabled ~ ${RadioMark} {
     background-color: ${Colors.BLACK[400]};
     border-color: ${Colors.BLACK[400]};
     box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
@@ -176,9 +164,10 @@ const Radio = ({
   ...rest
 }) => (
   <RadioLabel error={error} disabled={disabled}>
-    <StyledRadio
+    <HiddenRadio
       disabled={disabled}
       onChange={e => onChange({ value, label }, e)}
+      value={value}
       {...rest}
     />
     <RadioMark />

@@ -1,0 +1,753 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c1:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c1:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 .c3 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={true}
+    className="c1"
+    disabled={false}
+  >
+    <input
+      checked={true}
+      className="c2"
+      disabled={false}
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    Foo
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot children 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:focus {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 .c3 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+    disabled={false}
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={false}
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    Foo
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: not-allowed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(204,204,204,0.4);
+  border: 1.5px solid #999999;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #999999;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 .c3 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+.c4 .c3 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+    disabled={true}
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={true}
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    Foo
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c3 "
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      lock
+    </span>
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot error 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #ff2d4d;
+  border-color: #ff2d4d;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:focus {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  color: #ff2d4d;
+  border-color: #ff2d4d;
+  background-color: #ffe5e9;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 .c3 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+    disabled={false}
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={false}
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    Foo
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:focus {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-right: 8px;
+}
+
+.c0 .c4 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+    disabled={false}
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      check
+    </span>
+    <input
+      checked={false}
+      className="c3"
+      disabled={false}
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    Foo
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:focus {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.c0:last-child {
+  margin-right: 0;
+}
+
+.c0 .c3 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+    disabled={false}
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={false}
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    Foo
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:focus {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 .c3 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+    disabled={false}
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={false}
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    Foo
+  </label>
+</div>
+`;

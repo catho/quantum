@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup.Radio /> snapshot children 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c4 {
   background-color: #FFFFFF;
   border: 1.5px solid #999999;
@@ -24,17 +35,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c0 {
@@ -191,6 +191,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
     disabled={false}
     onChange={[Function]}
     type="radio"
+    value="Foo"
   />
   <span
     className="c3 c4"
@@ -200,6 +201,17 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c4 {
   background-color: #FFFFFF;
   border: 1.5px solid #999999;
@@ -223,17 +235,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c5 .c1:checked ~ .c3 {
@@ -345,6 +346,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     disabled={true}
     onChange={[Function]}
     type="radio"
+    value="Foo"
   />
   <span
     className="c3 c4"
@@ -354,6 +356,17 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c4 {
   background-color: #FFFFFF;
   border: 1.5px solid #999999;
@@ -377,17 +390,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c5 .c1:checked ~ .c3 {
@@ -544,6 +546,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
     disabled={false}
     onChange={[Function]}
     type="radio"
+    value="Foo"
   />
   <span
     className="c3 c4"
@@ -553,6 +556,17 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c4 {
   background-color: #FFFFFF;
   border: 1.5px solid #999999;
@@ -576,17 +590,6 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c0 {
@@ -634,6 +637,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
     disabled={false}
     onChange={[Function]}
     type="radio"
+    value="Foo"
   />
   <span
     className="c3 c4"

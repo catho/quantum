@@ -14,12 +14,15 @@ class Group extends React.Component {
     return (
       <RadioGroup
         name="groceries"
-        error={value ? '' : 'Select one'}
         value={value}
         onChange={({ value: opValue }) => this.setState({ value: opValue })}
       >
-        <RadioGroup.Button value="Tomato sauce">Tomato sauce</RadioGroup.Button>
-        <RadioGroup.Button value="Mustard">Mustard</RadioGroup.Button>
+        <RadioGroup.Button icon="print" value="Tomato sauce">
+          Tomato sauce
+        </RadioGroup.Button>
+        <RadioGroup.Button disabled value="Mustard">
+          Mustard
+        </RadioGroup.Button>
         <RadioGroup.Button value="Barbecue sauce Barbecue sauce Barbecue sauce">
           Barbecue sauce Barbecue sauce Barbecue sauce
         </RadioGroup.Button>
