@@ -19,7 +19,7 @@ const sharedPseudoElementStyles = `
 
 const Wrapper = styled.div`
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   width: 22px;
 `;
 

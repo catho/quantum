@@ -10,7 +10,7 @@ const StyledButton = styled(Button)`
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 8px;
+  margin: 0 4px;
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
@@ -19,7 +19,7 @@ const StyledButton = styled(Button)`
   ${({ disabled }) =>
     disabled
       ? `
-        color: #c9c9c9;
+        color: ${Colors.BLACK['200']};
         cursor: not-allowed;
       `
       : `
