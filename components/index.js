@@ -16,6 +16,7 @@ import TextArea from './TextArea';
 import Toggle from './Toggle';
 import Tooltip from './Tooltip';
 import Modal from './Modal';
+import Pagination from './Pagination';
 
 export {
   Badge,
@@ -42,4 +43,5 @@ export {
   Typography,
   Validations,
   Modal,
+  Pagination,
 };

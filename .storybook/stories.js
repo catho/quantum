@@ -39,4 +39,5 @@ export default [
 
   // Modal
   'Modal',
+  'Pagination',
 ].map(s => `./${s}/${s}.story.jsx`);
