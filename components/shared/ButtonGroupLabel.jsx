@@ -10,7 +10,8 @@ export default styled(Label)`
   margin-bottom: 16px;
   display: inline-flex;
 
-  ${({ error, checked }) =>
+  ${({ disabled, error, checked }) =>
+    !disabled &&
     error &&
     css`
     color: ${Colors.ERROR['500']};

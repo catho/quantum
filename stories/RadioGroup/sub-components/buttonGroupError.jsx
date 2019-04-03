@@ -18,37 +18,25 @@ class Group extends React.Component {
 
     return (
       <RadioGroup
-        name="default-example"
+        name="error-example"
         value={value}
         onChange={({ value: opValue }) => this.setState({ value: opValue })}
         options={options}
         type="button"
+        error="Some message error"
       />
     );
   }
 }
 
 const buttonGroup = {
-  code: `const options = ${JSON.stringify(options, null, 2)};
-
-<RadioGroup
+  code: `<RadioGroup
   name="groceries"
   type="button"
   options={options}
-/>
-
-/* or */
-
-<RadioGroup name="groceries">
-  <RadioGroup.Button value="with-icon" icon="thumb_up">
-    With an Icon
-  </RadioGroup.Button>
-  <RadioGroup.Button disabled value="disabled">
-    Disabled
-  </RadioGroup.Button>
-  <RadioGroup.Button value="default">
-    Default
-  </RadioGroup.Button>
+  error="Some message error"
+>
+...
 </RadioGroup>`,
   component: <Group />,
 };

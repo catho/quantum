@@ -2,9 +2,8 @@ import React from 'react';
 import RadioGroup from '../../../components/RadioGroup';
 
 const options = [
-  { value: 'tomato-sauce', label: 'Tomato sauce', icon: 'print' },
-  { value: 'mustard', label: 'Mustard', disabled: true },
-  { value: 'barbecue-sauce', label: 'Barbecue sauce' },
+  { value: 'with-icon', label: 'With an Icon', icon: 'thumb_up' },
+  { value: 'default', label: 'Default' },
 ];
 
 class Group extends React.Component {
@@ -19,7 +18,7 @@ class Group extends React.Component {
 
     return (
       <RadioGroup
-        name="groceries"
+        name="inline-example"
         value={value}
         onChange={({ value: opValue }) => this.setState({ value: opValue })}
         options={options}

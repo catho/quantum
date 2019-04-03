@@ -34,6 +34,11 @@ describe('<RadioGroup.Radio />', () => {
       expect(renderer.create(component).toJSON()).toMatchSnapshot();
     });
 
+    it('disabled with an error', () => {
+      const component = <RadioButton value="Foo" label="Foo" error disabled />;
+      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+    });
+
     it('children', () => {
       const component = <RadioButton value="Foo">Foo</RadioButton>;
       expect(renderer.create(component).toJSON()).toMatchSnapshot();

@@ -98,20 +98,37 @@ stories.add('Radio group', () => (
             <code>{'<RadioGroup.Button />'}</code> component or{' '}
             <code>type=&quot;button&quot;</code> prop.
           </p>
-
           <br />
+
           <Row>
             <RadioGroupExample {...samples.buttonGroup} />
           </Row>
+          <br />
 
           <p>
             It&apos;s also possible to render it inline, <code>inline</code>{' '}
             prop.
           </p>
-
           <br />
+
           <Row>
             <RadioGroupExample {...samples.buttonGroupInline} />
+          </Row>
+          <br />
+
+          <p>With an error message.</p>
+          <br />
+
+          <Row>
+            <RadioGroupExample {...samples.buttonGroupError} />
+          </Row>
+          <br />
+
+          <p>Disabled options.</p>
+          <br />
+
+          <Row>
+            <RadioGroupExample {...samples.buttonGroupDisabled} />
           </Row>
         </StoryContainer>
       </Tab>
