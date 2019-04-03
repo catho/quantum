@@ -135,7 +135,14 @@ class SnackBar extends React.Component {
     return ReactDOM.createPortal(
       <DialogBlock>
         <Row>
-          <Col xsmall-offset={1} xsmall={10}>
+          <Col
+            xsmall-offset={0}
+            xsmall={4}
+            small-offset={1}
+            small={6}
+            medium-offset={1}
+            medium={10}
+          >
             <SnackBarDialog
               {...rest}
               role="alertdialog"

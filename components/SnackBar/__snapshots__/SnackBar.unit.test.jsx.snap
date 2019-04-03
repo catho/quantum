@@ -271,13 +271,13 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -584,13 +584,13 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -740,8 +740,12 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                 className="c1"
               >
                 <Col
-                  xsmall={10}
-                  xsmall-offset={1}
+                  medium={10}
+                  medium-offset={1}
+                  small={6}
+                  small-offset={1}
+                  xsmall={4}
+                  xsmall-offset={0}
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -781,8 +785,12 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                       }
                     }
                     forwardedRef={null}
-                    xsmall={10}
-                    xsmall-offset={1}
+                    medium={10}
+                    medium-offset={1}
+                    small={6}
+                    small-offset={1}
+                    xsmall={4}
+                    xsmall-offset={0}
                   >
                     <div
                       className="c2"
@@ -1591,13 +1599,13 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -1904,13 +1912,13 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -2060,8 +2068,12 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                 className="c1"
               >
                 <Col
-                  xsmall={10}
-                  xsmall-offset={1}
+                  medium={10}
+                  medium-offset={1}
+                  small={6}
+                  small-offset={1}
+                  xsmall={4}
+                  xsmall-offset={0}
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -2101,8 +2113,12 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                       }
                     }
                     forwardedRef={null}
-                    xsmall={10}
-                    xsmall-offset={1}
+                    medium={10}
+                    medium-offset={1}
+                    small={6}
+                    small-offset={1}
+                    xsmall={4}
+                    xsmall-offset={0}
                   >
                     <div
                       className="c2"
@@ -2911,13 +2927,13 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -3224,13 +3240,13 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -3380,8 +3396,12 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                 className="c1"
               >
                 <Col
-                  xsmall={10}
-                  xsmall-offset={1}
+                  medium={10}
+                  medium-offset={1}
+                  small={6}
+                  small-offset={1}
+                  xsmall={4}
+                  xsmall-offset={0}
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -3421,8 +3441,12 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                       }
                     }
                     forwardedRef={null}
-                    xsmall={10}
-                    xsmall-offset={1}
+                    medium={10}
+                    medium-offset={1}
+                    small={6}
+                    small-offset={1}
+                    xsmall={4}
+                    xsmall-offset={0}
                   >
                     <div
                       className="c2"
@@ -4231,13 +4255,13 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -4544,13 +4568,13 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -4700,8 +4724,12 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                 className="c1"
               >
                 <Col
-                  xsmall={10}
-                  xsmall-offset={1}
+                  medium={10}
+                  medium-offset={1}
+                  small={6}
+                  small-offset={1}
+                  xsmall={4}
+                  xsmall-offset={0}
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -4741,8 +4769,12 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                       }
                     }
                     forwardedRef={null}
-                    xsmall={10}
-                    xsmall-offset={1}
+                    medium={10}
+                    medium-offset={1}
+                    small={6}
+                    small-offset={1}
+                    xsmall={4}
+                    xsmall-offset={0}
                   >
                     <div
                       className="c2"
@@ -5551,13 +5583,13 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -5864,13 +5896,13 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -6020,8 +6052,12 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                 className="c1"
               >
                 <Col
-                  xsmall={10}
-                  xsmall-offset={1}
+                  medium={10}
+                  medium-offset={1}
+                  small={6}
+                  small-offset={1}
+                  xsmall={4}
+                  xsmall-offset={0}
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -6061,8 +6097,12 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                       }
                     }
                     forwardedRef={null}
-                    xsmall={10}
-                    xsmall-offset={1}
+                    medium={10}
+                    medium-offset={1}
+                    small={6}
+                    small-offset={1}
+                    xsmall={4}
+                    xsmall-offset={0}
                   >
                     <div
                       className="c2"
@@ -6871,13 +6911,13 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -7184,13 +7224,13 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 
 @media (min-width:1px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: span 4;
   }
 }
 
 @media (min-width:600px) {
   .c2 {
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 6;
   }
 }
 
@@ -7340,8 +7380,12 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                 className="c1"
               >
                 <Col
-                  xsmall={10}
-                  xsmall-offset={1}
+                  medium={10}
+                  medium-offset={1}
+                  small={6}
+                  small-offset={1}
+                  xsmall={4}
+                  xsmall-offset={0}
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -7381,8 +7425,12 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                       }
                     }
                     forwardedRef={null}
-                    xsmall={10}
-                    xsmall-offset={1}
+                    medium={10}
+                    medium-offset={1}
+                    small={6}
+                    small-offset={1}
+                    xsmall={4}
+                    xsmall-offset={0}
                   >
                     <div
                       className="c2"
