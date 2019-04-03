@@ -101,9 +101,9 @@ class SnackBar extends React.Component {
   componentWillUnmount() {
     const { body } = document;
     body.removeChild(this.snackBarSection);
+    clearTimeout(this.closeEventtimeOut);
   }
 
-  // this event was implemented to simulate unit tests (a11y)
   handleKeyPress = event => {
     const { onClose } = this.props;
     if (event.key === 'Enter') onClose();
@@ -114,7 +114,7 @@ class SnackBar extends React.Component {
   };
 
   closeOnTime = (secondsToClose, callback) => {
-    setTimeout(() => {
+    this.closeEventtimeOut = setTimeout(() => {
       callback();
     }, secondsToClose * 1000);
   };
