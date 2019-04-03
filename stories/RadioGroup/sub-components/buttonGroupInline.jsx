@@ -24,32 +24,20 @@ class Group extends React.Component {
         onChange={({ value: opValue }) => this.setState({ value: opValue })}
         options={options}
         type="button"
+        inline
       />
     );
   }
 }
 
 const buttonGroup = {
-  code: `const options = ${JSON.stringify(options, null, 2)};
-
-<RadioGroup
+  code: `<RadioGroup
   name="groceries"
   type="button"
   options={options}
-/>
-
-/* or */
-
-<RadioGroup name="groceries">
-  <RadioGroup.Button icon="print" value="tomato-sauce">
-    Tomato sauce
-  </RadioGroup.Button>
-  <RadioGroup.Button disabled value="mustard">
-    Mustard
-  </RadioGroup.Button>
-  <RadioGroup.Button value="barbecue-sauce">
-    Barbecue sauce
-  </RadioGroup.Button>
+  inline
+>
+...
 </RadioGroup>`,
   component: <Group />,
 };

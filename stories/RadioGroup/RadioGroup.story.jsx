@@ -94,13 +94,24 @@ stories.add('Radio group', () => (
         <StoryContainer>
           <Title as="h2">Button Group Skin</Title>
           <p>
-            It's possible to render radio elements as buttons, using{' '}
-            <code>{'<RadioGroup.Button />'}</code>
+            It&apos;s possible to render radio elements as buttons, using{' '}
+            <code>{'<RadioGroup.Button />'}</code> component or{' '}
+            <code>type=&quot;button&quot;</code> prop.
           </p>
 
           <br />
           <Row>
             <RadioGroupExample {...samples.buttonGroup} />
+          </Row>
+
+          <p>
+            It&apos;s also possible to render it inline, <code>inline</code>{' '}
+            prop.
+          </p>
+
+          <br />
+          <Row>
+            <RadioGroupExample {...samples.buttonGroupInline} />
           </Row>
         </StoryContainer>
       </Tab>
