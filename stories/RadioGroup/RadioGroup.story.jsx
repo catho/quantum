@@ -47,7 +47,7 @@ stories.add('Radio group', () => (
     <TabbedView>
       <Tab title="Usage">
         <StoryContainer>
-          <Title as="h2">Importing RadioGroup</Title>
+          <Title as="h2">Importing</Title>
           <SimpleHighlight>{importRadioGroup}</SimpleHighlight>
 
           <p>

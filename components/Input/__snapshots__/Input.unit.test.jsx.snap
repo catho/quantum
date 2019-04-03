@@ -131,7 +131,7 @@ exports[`Input component should match snapshots 2`] = `
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 50px;
+  bottom: 10px;
 }
 
 <div
@@ -318,7 +318,7 @@ exports[`Input component should match snapshots 4`] = `
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 50px;
+  bottom: 10px;
   color: #ff2d4d;
 }
 
@@ -499,7 +499,7 @@ exports[`Input component should match snapshots 6`] = `
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 50px;
+  bottom: 10px;
   left: 12px;
 }
 
@@ -841,8 +841,7 @@ exports[`Input component should match snapshots 10`] = `
   cursor: pointer;
   position: absolute;
   right: 12px;
-  top: 50px;
-  top: 70px;
+  bottom: 10px;
   left: 12px;
 }
 

@@ -62,7 +62,7 @@ const HiddenCheckbox = styled.input.attrs({
     }
   }
 
-  :hover + ${CheckIcon} {
+  :hover + ${CheckIcon}, :focus + ${CheckIcon} {
     border-color: ${Colors.BLUE['500']};
     box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
   }
@@ -124,7 +124,7 @@ Checkbox.defaultProps = {
   disabled: false,
   error: '',
   id: '',
-  label: 'Label',
+  label: '',
 };
 
 Checkbox.propTypes = {

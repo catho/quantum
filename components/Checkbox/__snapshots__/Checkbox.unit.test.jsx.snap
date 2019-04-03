@@ -59,7 +59,8 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   color: #FFFFFF;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -112,7 +113,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   
@@ -177,7 +178,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   color: #FFFFFF;
 }
 
-.c6:hover + .c2 {
+.c6:hover + .c2,
+.c6:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -241,7 +243,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   color: #FFFFFF;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -307,7 +310,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   <div
@@ -376,7 +379,8 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   color: #FFFFFF;
 }
 
-.c6:hover + .c2 {
+.c6:hover + .c2,
+.c6:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -440,7 +444,8 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   color: #FFFFFF;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -507,7 +512,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   <div
@@ -577,7 +582,8 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   color: #FFFFFF;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -636,7 +642,8 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   color: #FFFFFF;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -699,7 +706,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   
@@ -765,7 +772,8 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   color: #FFFFFF;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -824,7 +832,8 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   color: #FFFFFF;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -886,7 +895,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   
@@ -952,7 +961,8 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   color: #FFFFFF;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -1011,7 +1021,8 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   color: #FFFFFF;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -1139,7 +1150,8 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   color: #FFFFFF;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -1198,7 +1210,8 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   color: #FFFFFF;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
@@ -1261,7 +1274,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       className="c3 c4"
       htmlFor=""
     >
-      Label
+      
     </label>
   </div>
   

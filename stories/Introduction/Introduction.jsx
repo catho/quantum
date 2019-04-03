@@ -5,8 +5,8 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
-const yarnAdd = 'yarn add @cathodevel/quantum';
-const importHeader = `import { Header } from '@cathodevel/quantum';
+const yarnAdd = 'yarn add @catho/quantum';
+const importHeader = `import { Header } from '@catho/quantum';
 export default () => <Header />;`;
 
 const codeBackgroundColor = '#e8f2fc';

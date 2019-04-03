@@ -38,33 +38,13 @@ DropdownExample.propTypes = {
   component: PropTypes.func.isRequired,
 };
 
-const importCode = "import { Slider } from '@cathodevel/quantum';";
+const importCode = "import { Dropdown } from '@catho/quantum';";
 
 storiesOf('Forms', module).add('Dropdown', () => (
   <>
     <Heading name="Dropdown">
-      <p>
-        A dropdown receives user input, allowing it to choose one of several
-        options.
-      </p>
-      <p>
-        Its options are described by {'"'}items{'"'} prop, which can be either
-        array of string or objects, within the following structure:
-      </p>
-      <List>
-        <List.Item>
-          <strong>value</strong>: Computed to dropdown value itself, if the
-          corresponding item is selected
-        </List.Item>
-        <List.Item>
-          <strong>label</strong>: What is showed to the user in the dropdown
-          interface
-        </List.Item>
-      </List>
-      <p>
-        If a list of strings is provided, they will be used both for items
-        values and labels.
-      </p>
+      A dropdown receives user input, allowing it to choose one of several
+      options.
     </Heading>
 
     <TabbedView>
@@ -72,7 +52,26 @@ storiesOf('Forms', module).add('Dropdown', () => (
         <StoryContainer>
           <Title as="h2">Importing</Title>
           <SimpleHighlight>{importCode}</SimpleHighlight>
-          <Title as="h2">Examples</Title>
+          <div>
+            <p>
+              Its options are described by {'"'}items{'"'} prop, which can be
+              either array of string or objects, within the following structure:
+            </p>
+            <List>
+              <List.Item>
+                <strong>value</strong>: Computed to dropdown value itself, if
+                the corresponding item is selected
+              </List.Item>
+              <List.Item>
+                <strong>label</strong>: What is showed to the user in the
+                dropdown interface
+              </List.Item>
+            </List>
+            <p>
+              If a list of strings is provided, they will be used both for items
+              values and labels.
+            </p>
+          </div>
           <DropdownExample component={Simple} />
           <DropdownExample component={CustomLabel} />
           <DropdownExample component={RequiredMark} />

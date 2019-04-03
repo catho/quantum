@@ -173,7 +173,7 @@ Button.propTypes = {
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   skin: PropTypes.oneOf(['primary', 'secondary', 'action', 'link']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
-  children: PropTypes.node,
+  children: PropTypes.string,
   onClick: PropTypes.func,
 };
 
@@ -193,7 +193,6 @@ const IconButton = styled(Button)`
     background-color: ${Colors.SHADOW[40]};
     color: ${Colors.BLACK[700]};
   }
-
   :active {
     box-shadow: none;
     background-color: ${Colors.SHADOW[50]};

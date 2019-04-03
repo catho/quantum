@@ -7,13 +7,15 @@
 export default [
   'Introduction',
 
-  // 1. Foundations
+  // Foundations
   'Colors',
   'Grid',
   'Typography',
   'Icon',
 
-  // 2. Buttons
+  'Alert',
+
+  // Buttons
   'Button',
 
   // Forms
@@ -26,18 +28,27 @@ export default [
   'Slider',
   'TextArea',
 
-  // 8. Tooltip
+  // Tooltip
   'Tooltip',
 
-  // 15. Badge
+  // Badge
   'Badge',
 
-  // 16. Tags
+  // Tags
   'Tag',
 
+  // TabbedView
+  'TabbedView',
+
+  // Card
   'Card',
 
   // Modal
   'Modal',
+
+  // Pagination
   'Pagination',
+
+  // SnackBar
+  'SnackBar',
 ].map(s => `./${s}/${s}.story.jsx`);

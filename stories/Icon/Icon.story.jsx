@@ -52,7 +52,7 @@ const exampleCode = `<Icon name="thumb_up" />
 <Icon name="event" skin={Colors.ERROR['200']} />
 `;
 
-const importIcon = `import { Icon } from '@cathodevel/quantum';`;
+const importIcon = `import { Icon } from '@catho/quantum';`;
 
 storiesOf('Foundation', module).add('Icons', () => (
   <React.Fragment>
