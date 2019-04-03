@@ -1,11 +1,14 @@
 import styled, { css } from 'styled-components';
 import Colors from '../Colors';
-import buttonStyle from '../Button/buttonStyle';
+import { DEFAULT_STYLE, SKIN_STYLE } from '../Button/buttonStyle';
 import Label from './Label';
-import { ERROR_HOVER_STYLE, ERROR_STYLE } from './inputStyle';
+import { ERROR_STYLE } from './inputStyle';
 
-export default styled(Label)`
-  ${buttonStyle}
+export default styled(Label).attrs({
+  tabindex: 0,
+})`
+  ${DEFAULT_STYLE}
+  ${SKIN_STYLE}
 
   margin-bottom: 16px;
   display: inline-flex;
@@ -14,22 +17,14 @@ export default styled(Label)`
     !disabled &&
     error &&
     css`
-    color: ${Colors.ERROR['500']};
+      color: ${Colors.ERROR['500']};
 
-    ${ERROR_STYLE}
+      ${ERROR_STYLE}
 
-    :hover, :focus {
-      ${ERROR_HOVER_STYLE}
-
-      color: ${checked ? Colors.WHITE : Colors.ERROR['500']};
-      border-color: ${checked ? Colors.ERROR['900'] : Colors.ERROR['500']};
-      background-color: ${checked ? Colors.ERROR['900'] : Colors.ERROR['200']};
-    }
-
-    ${checked &&
-      `
+      ${checked &&
+        `
       background-color: ${Colors.ERROR['500']};
       color: ${Colors.ERROR['200']};
     `}
-  `}
+    `}
 `;

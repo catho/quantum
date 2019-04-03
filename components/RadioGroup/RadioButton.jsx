@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ButtonGroupLabel from '../shared/ButtonGroupLabel';
-import HiddenRadio from './HiddenRadio';
+import HiddenRadio from '../shared/HiddenRadio';
 import Icon from '../Icon';
+import uniqId from '../shared/uniqId';
 
 const LockIcon = styled(Icon).attrs({
   name: 'lock',
@@ -41,27 +42,33 @@ const Radio = ({
   value,
   checked,
   icon,
+  id,
   inline,
   ...rest
 }) => {
   const skin = checked ? 'primary' : 'secondary';
+  const _id = id || uniqId('radio-button-');
 
   return (
     <Wrapper inline={inline}>
-      <ButtonGroupLabel
-        error={error}
-        disabled={disabled}
-        skin={skin}
+      <HiddenRadio
         checked={checked}
+        disabled={disabled}
+        id={_id}
+        onChange={e => onChange({ value, label }, e)}
+        value={value}
+        skin={skin}
+        error={error}
+        {...rest}
+      />
+      <ButtonGroupLabel
+        checked={checked}
+        disabled={disabled}
+        error={error}
+        htmlFor={_id}
+        skin={skin}
       >
         {icon && <ButtonIcon name={icon} />}
-        <HiddenRadio
-          checked={checked}
-          disabled={disabled}
-          onChange={e => onChange({ value, label }, e)}
-          value={value}
-          {...rest}
-        />
         {children || label}
         {disabled && <LockIcon />}
       </ButtonGroupLabel>
@@ -77,6 +84,7 @@ Radio.defaultProps = {
   disabled: false,
   error: false,
   icon: undefined,
+  id: undefined,
   inline: false,
   label: undefined,
   onChange: () => {},
@@ -88,6 +96,7 @@ Radio.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   icon: PropTypes.string,
+  id: PropTypes.string,
   inline: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,

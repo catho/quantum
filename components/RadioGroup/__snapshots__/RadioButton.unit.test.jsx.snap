@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
-.c1 {
+.c3 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -41,135 +41,32 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   display: inline-flex;
 }
 
-.c1 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c1:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c1:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c1:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c0 .c3 {
-  margin-left: 8px;
-  font-size: 17px;
-}
-
-<div
-  className="c0"
->
-  <label
-    checked={true}
-    className="c1"
-    disabled={false}
-  >
-    <input
-      checked={true}
-      className="c2"
-      disabled={false}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
-    Foo
-  </label>
-</div>
-`;
-
-exports[`<RadioGroup.Radio /> snapshot children 1`] = `
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  font-weight: bold;
-  height: 40px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0 16px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #FFFFFF;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #1355d0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 *:nth-child(2) {
-  margin-left: 5px;
-}
-
-.c1:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:focus {
+.c4:focus ~ .c2 {
   box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
   background-color: #FFFFFF;
   border-color: #1355d0;
   color: #1355d0;
 }
 
-.c1:active {
+.c4:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c4:active ~ .c2 {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #e5edfc;
   border-color: #1355d0;
   color: #1355d0;
 }
 
-.c2 {
+.c1 {
   border: 0;
   height: 0;
   margin: 0;
@@ -180,7 +77,28 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   width: 0;
 }
 
-.c0 .c3 {
+.c1:focus ~ .c2 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c1:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c1:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c0 .c5 {
   margin-left: 8px;
   font-size: 17px;
 }
@@ -188,26 +106,178 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 <div
   className="c0"
 >
+  <input
+    checked={true}
+    className="c1"
+    disabled={false}
+    id="radio-button-1"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
   <label
+    checked={true}
+    className="c2 c3"
+    disabled={false}
+    htmlFor="radio-button-1"
+  >
+    Foo
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot children 1`] = `
+.c3 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c1 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1:focus ~ .c2 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c4:focus ~ .c2 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c4:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c4:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:focus ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c5:hover ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c5:active ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c0 .c6 {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+<div
+  className="c0"
+>
+  <input
     checked={false}
     className="c1"
     disabled={false}
+    id="radio-button-7"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
+  <label
+    checked={false}
+    className="c2 c3"
+    disabled={false}
+    htmlFor="radio-button-7"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
     Foo
   </label>
 </div>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
-.c1 {
+.c3 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -247,11 +317,53 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   display: inline-flex;
 }
 
-.c1 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c2 {
+.c5:focus ~ .c2 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c5:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c5:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c6:focus ~ .c2 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c6:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c6:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c1 {
   border: 0;
   height: 0;
   margin: 0;
@@ -262,12 +374,12 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   width: 0;
 }
 
-.c0 .c3 {
+.c0 .c4 {
   margin-left: 8px;
   font-size: 17px;
 }
 
-.c4 .c3 {
+.c7 .c4 {
   margin-left: 8px;
   font-size: 17px;
 }
@@ -275,23 +387,25 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 <div
   className="c0"
 >
-  <label
+  <input
     checked={false}
     className="c1"
     disabled={true}
+    id="radio-button-4"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
+  <label
+    checked={false}
+    className="c2 c3"
+    disabled={true}
+    htmlFor="radio-button-4"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={true}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
     Foo
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 "
+      className="material-icons MuiIcon-root-1 c4 "
       style={
         Object {
           "color": "",
@@ -305,7 +419,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
-.c1 {
+.c3 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -345,11 +459,53 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   display: inline-flex;
 }
 
-.c1 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c2 {
+.c5:focus ~ .c2 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c5:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c5:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c6:focus ~ .c2 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c6:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c6:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c1 {
   border: 0;
   height: 0;
   margin: 0;
@@ -360,12 +516,36 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   width: 0;
 }
 
-.c0 .c3 {
+.c1:focus ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c1:hover ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c1:active ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c0 .c4 {
   margin-left: 8px;
   font-size: 17px;
 }
 
-.c4 .c3 {
+.c7 .c4 {
   margin-left: 8px;
   font-size: 17px;
 }
@@ -373,23 +553,25 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 <div
   className="c0"
 >
-  <label
+  <input
     checked={false}
     className="c1"
     disabled={true}
+    id="radio-button-6"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
+  <label
+    checked={false}
+    className="c2 c3"
+    disabled={true}
+    htmlFor="radio-button-6"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={true}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
     Foo
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 "
+      className="material-icons MuiIcon-root-1 c4 "
       style={
         Object {
           "color": "",
@@ -403,7 +585,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
-.c1 {
+.c3 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -445,41 +627,53 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   border-color: #ff2d4d;
 }
 
-.c1 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c1:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:focus {
+.c4:focus ~ .c2 {
   box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
   background-color: #FFFFFF;
   border-color: #1355d0;
   color: #1355d0;
 }
 
-.c1:active {
+.c4:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c4:active ~ .c2 {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #e5edfc;
   border-color: #1355d0;
   color: #1355d0;
 }
 
-.c1:hover,
-.c1:focus {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  color: #ff2d4d;
-  border-color: #ff2d4d;
-  background-color: #ffe5e9;
+.c5:focus ~ .c2 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
 }
 
-.c2 {
+.c5:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c1 {
   border: 0;
   height: 0;
   margin: 0;
@@ -490,7 +684,31 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   width: 0;
 }
 
-.c0 .c3 {
+.c1:focus ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c1:hover ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c1:active ~ .c2 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c0 .c6 {
   margin-left: 8px;
   font-size: 17px;
 }
@@ -498,26 +716,28 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 <div
   className="c0"
 >
-  <label
+  <input
     checked={false}
     className="c1"
     disabled={false}
+    id="radio-button-5"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
+  <label
+    checked={false}
+    className="c2 c3"
+    disabled={false}
+    htmlFor="radio-button-5"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
     Foo
   </label>
 </div>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
-.c1 {
+.c3 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -557,32 +777,11 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   display: inline-flex;
 }
 
-.c1 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c1:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:focus {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c3 {
+.c1 {
   border: 0;
   height: 0;
   margin: 0;
@@ -593,11 +792,53 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   width: 0;
 }
 
-.c2 {
+.c1:focus ~ .c2 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c5:focus ~ .c2 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c4 {
   margin-right: 8px;
 }
 
-.c0 .c4 {
+.c0 .c6 {
   margin-left: 8px;
   font-size: 17px;
 }
@@ -605,14 +846,24 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 <div
   className="c0"
 >
-  <label
+  <input
     checked={false}
     className="c1"
     disabled={false}
+    id="radio-button-3"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
+  <label
+    checked={false}
+    className="c2 c3"
+    disabled={false}
+    htmlFor="radio-button-3"
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c2"
+      className="material-icons MuiIcon-root-1 c4"
       style={
         Object {
           "color": "",
@@ -621,21 +872,13 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
     >
       check
     </span>
-    <input
-      checked={false}
-      className="c3"
-      disabled={false}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
     Foo
   </label>
 </div>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
-.c1 {
+.c3 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -675,32 +918,11 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   display: inline-flex;
 }
 
-.c1 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c1:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:focus {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2 {
+.c1 {
   border: 0;
   height: 0;
   margin: 0;
@@ -709,6 +931,48 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.c1:focus ~ .c2 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c4:focus ~ .c2 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c4:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c4:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c0 {
@@ -721,7 +985,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   margin-right: 0;
 }
 
-.c0 .c3 {
+.c0 .c5 {
   margin-left: 8px;
   font-size: 17px;
 }
@@ -729,26 +993,28 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
 <div
   className="c0"
 >
-  <label
+  <input
     checked={false}
     className="c1"
     disabled={false}
+    id="radio-button-2"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
+  <label
+    checked={false}
+    className="c2 c3"
+    disabled={false}
+    htmlFor="radio-button-2"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
     Foo
   </label>
 </div>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
-.c1 {
+.c3 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -788,32 +1054,11 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   display: inline-flex;
 }
 
-.c1 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c1:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:focus {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2 {
+.c1 {
   border: 0;
   height: 0;
   margin: 0;
@@ -824,7 +1069,28 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   width: 0;
 }
 
-.c0 .c3 {
+.c1:focus ~ .c2 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:hover ~ .c2 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c1:active ~ .c2 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 .c4 {
   margin-left: 8px;
   font-size: 17px;
 }
@@ -832,19 +1098,21 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 <div
   className="c0"
 >
-  <label
+  <input
     checked={false}
     className="c1"
     disabled={false}
+    id="radio-button-0"
+    onChange={[Function]}
+    type="radio"
+    value="Foo"
+  />
+  <label
+    checked={false}
+    className="c2 c3"
+    disabled={false}
+    htmlFor="radio-button-0"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      onChange={[Function]}
-      type="radio"
-      value="Foo"
-    />
     Foo
   </label>
 </div>

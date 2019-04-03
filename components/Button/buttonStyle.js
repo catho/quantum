@@ -36,21 +36,33 @@ const height = ({ size }) => {
   return `height: ${heights[size] || heights.medium};`;
 };
 
-const skin = props => {
+const _interactiveStyle = (props, skinProp) => {
   const {
-    unselected,
-    selected,
-    disabled,
-    focused,
-    hovered,
-    decoration,
-    borderRadius,
+    [skinProp]: { shadow, background, border, color },
   } = skins(props);
+  const { disabled } = props;
 
-  return `${`
-    background-color: ${
-      props.disabled ? disabled.background : unselected.background
-    };
+  return !disabled
+    ? `
+    box-shadow: ${shadow};
+    background-color: ${background};
+    border-color: ${border};
+    color: ${color};
+  `
+    : '';
+};
+
+const hover = props => _interactiveStyle(props, 'hovered');
+const focus = props => _interactiveStyle(props, 'focused');
+const active = props => _interactiveStyle(props, 'selected');
+
+const skin = props => {
+  const { unselected, disabled, decoration, borderRadius } = skins(props);
+
+  return css`
+    background-color: ${props.disabled
+      ? disabled.background
+      : unselected.background};
     border: 1.5px solid ${props.disabled ? disabled.border : unselected.border};
 
     box-shadow: ${props.disabled ? disabled.shadow : unselected.shadow};
@@ -59,38 +71,10 @@ const skin = props => {
 
     ${decoration ? `text-decoration: ${decoration};` : ''}
     ${borderRadius ? `border-radius: ${borderRadius};` : ''}
-  `}
-
-    ${
-      !props.disabled
-        ? `
-      &:hover {
-        box-shadow: ${hovered.shadow};
-        background-color: ${hovered.background};
-        border-color: ${hovered.border};
-        color: ${hovered.color};
-      }
-
-      &:focus {
-        box-shadow: ${focused.shadow};
-        background-color: ${focused.background};
-        border-color: ${focused.border};
-        color: ${focused.color};
-      }
-
-      &:active {
-        box-shadow: ${selected.shadow};
-        background-color: ${selected.background};
-        border-color: ${selected.border};
-        color: ${selected.color};
-      }
-    `
-        : ''
-    }
   `;
 };
 
-export default css`
+const DEFAULT_STYLE = css`
   align-items: center;
   ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
   display: flex;
@@ -115,6 +99,43 @@ export default css`
   transition: all 0.2s ease-in-out;
 
   ${props => props.full && `width: 100%;`}
+`;
 
+const SKIN_STYLE = css`
   ${skin}
 `;
+const HOVER_STYLE = css`
+  ${hover}
+`;
+const FOCUS_STYLE = css`
+  ${focus}
+`;
+const ACTIVE_STYLE = css`
+  ${active}
+`;
+
+const BUTTON_STYLE = css`
+  ${DEFAULT_STYLE}
+  ${SKIN_STYLE}
+
+  :hover {
+    ${HOVER_STYLE}
+  }
+
+  :focus {
+    ${FOCUS_STYLE}
+  }
+
+  :active {
+    ${ACTIVE_STYLE}
+  }
+`;
+
+export {
+  DEFAULT_STYLE,
+  SKIN_STYLE,
+  HOVER_STYLE,
+  FOCUS_STYLE,
+  ACTIVE_STYLE,
+  BUTTON_STYLE as default,
+};

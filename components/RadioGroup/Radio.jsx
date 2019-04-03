@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import Label from '../shared/Label';
-import HiddenRadio from './HiddenRadio';
+import HiddenRadio from '../shared/HiddenRadio';
 
 const RadioMark = styled.span`
   background-color: ${Colors.WHITE};

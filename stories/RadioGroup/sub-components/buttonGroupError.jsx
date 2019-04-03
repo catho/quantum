@@ -23,7 +23,7 @@ class Group extends React.Component {
         onChange={({ value: opValue }) => this.setState({ value: opValue })}
         options={options}
         type="button"
-        error="Some message error"
+        error="Example error message"
       />
     );
   }
@@ -34,7 +34,7 @@ const buttonGroup = {
   name="groceries"
   type="button"
   options={options}
-  error="Some message error"
+  error="Example error message"
 >
 ...
 </RadioGroup>`,
