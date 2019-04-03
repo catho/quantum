@@ -95,10 +95,6 @@ class SnackBar extends React.Component {
 
     const { onClose, secondsToClose } = this.props;
 
-    setTimeout(() => {
-      onClose();
-    }, secondsToClose * 1000);
-
     this.closeOnTime(secondsToClose, onClose);
   }
 
