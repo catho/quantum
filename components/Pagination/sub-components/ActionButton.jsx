@@ -5,16 +5,18 @@ import styled from 'styled-components';
 import Button from '../../Button';
 import Colors from '../../Colors';
 
-const StyledButton = styled(Button)`
+const StyledButton = styled.a`
   border: 1px solid transparent;
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
   margin: 0 4px;
   outline: none;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 8px;
   text-decoration: none;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+  user-select: none;
   white-space: nowrap;
 
   ${({ disabled }) =>

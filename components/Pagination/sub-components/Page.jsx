@@ -11,6 +11,7 @@ const PageButton = styled.a`
     ${({ active }) => (active ? Colors.BLUE['500'] : Colors.BLACK['200'])};
   border-radius: 10px;
   box-sizing: border-box;
+  color: ${Colors.BLACK['700']};
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -24,6 +25,7 @@ const PageButton = styled.a`
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
     color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+  user-select: none;
 
   ${({ active }) => active && `color: ${Colors.WHITE};`};
 

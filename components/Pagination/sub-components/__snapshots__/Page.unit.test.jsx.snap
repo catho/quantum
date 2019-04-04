@@ -10,6 +10,7 @@ exports[`<Page /> Snapshot should match snapshot 1`] = `
   border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
+  color: #4c4c4c;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26,6 +27,8 @@ exports[`<Page /> Snapshot should match snapshot 1`] = `
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
 }
@@ -37,10 +40,10 @@ exports[`<Page /> Snapshot should match snapshot 1`] = `
   color: #1355d0;
 }
 
-<button
+<a
   className="c0"
   onClick={[Function]}
 >
   50
-</button>
+</a>
 `;

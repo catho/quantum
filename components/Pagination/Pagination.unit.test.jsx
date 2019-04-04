@@ -56,24 +56,28 @@ describe('<Pagination />', () => {
     });
   });
 
-  describe('onClick prop', () => {
+  describe('onPageClick prop', () => {
     describe('Page button', () => {
-      it('should call onClick when button is clicked', () => {
-        const onClickMock = jest.fn();
+      it('should call onPageClick when button is clicked', () => {
+        const onPageClickMock = jest.fn();
         const wrapper = shallow(
-          <Pagination totalPages={10} onClick={onClickMock} />,
+          <Pagination totalPages={10} onPageClick={onPageClickMock} />,
         );
 
         const page = wrapper.find('Page');
-        page.at(0).simulate('click');
+        page.at(0).simulate('click', { preventDefault: () => {} });
 
-        expect(onClickMock).toHaveBeenCalled();
+        expect(onPageClickMock).toHaveBeenCalled();
       });
 
       it('should receive clicked page as onClick parameter when button is clicked', () => {
-        const onClickMock = jest.fn();
+        const onPageClickMock = jest.fn();
         const wrapper = mount(
-          <Pagination totalPages={10} activePage={2} onClick={onClickMock} />,
+          <Pagination
+            totalPages={10}
+            activePage={2}
+            onPageClick={onPageClickMock}
+          />,
         );
 
         wrapper
@@ -81,39 +85,47 @@ describe('<Pagination />', () => {
           .at(2)
           .simulate('click');
 
-        expect(onClickMock).toHaveBeenCalledWith(3);
+        expect(onPageClickMock).toHaveBeenCalledWith(3);
       });
     });
 
     describe('Action buttons', () => {
       it('should call onClick when previous button is clicked', () => {
-        const onClickMock = jest.fn();
+        const onPageClickMock = jest.fn();
         const wrapper = shallow(
-          <Pagination totalPages={10} onClick={onClickMock} />,
+          <Pagination
+            totalPages={10}
+            activePage={2}
+            onPageClick={onPageClickMock}
+          />,
         );
 
         const page = wrapper.find('ActionButton');
-        page.at(0).simulate('click');
+        page.at(0).simulate('click', { preventDefault: () => {} });
 
-        expect(onClickMock).toHaveBeenCalled();
+        expect(onPageClickMock).toHaveBeenCalled();
       });
 
       it('should call onClick when next button is clicked', () => {
-        const onClickMock = jest.fn();
+        const onPageClickMock = jest.fn();
         const wrapper = shallow(
-          <Pagination totalPages={10} onClick={onClickMock} />,
+          <Pagination totalPages={10} onPageClick={onPageClickMock} />,
         );
 
         const page = wrapper.find('ActionButton');
-        page.at(1).simulate('click');
+        page.at(1).simulate('click', { preventDefault: () => {} });
 
-        expect(onClickMock).toHaveBeenCalled();
+        expect(onPageClickMock).toHaveBeenCalled();
       });
 
       it('should receive previous page as onClick parameter when previous button is clicked', () => {
-        const onClickMock = jest.fn();
+        const onPageClickMock = jest.fn();
         const wrapper = mount(
-          <Pagination totalPages={10} activePage={2} onClick={onClickMock} />,
+          <Pagination
+            totalPages={10}
+            activePage={2}
+            onPageClick={onPageClickMock}
+          />,
         );
 
         wrapper
@@ -121,13 +133,17 @@ describe('<Pagination />', () => {
           .at(0)
           .simulate('click');
 
-        expect(onClickMock).toHaveBeenCalledWith(1);
+        expect(onPageClickMock).toHaveBeenCalledWith(1);
       });
 
       it('should receive next page as onClick parameter when next button is clicked', () => {
-        const onClickMock = jest.fn();
+        const onPageClickMock = jest.fn();
         const wrapper = mount(
-          <Pagination totalPages={10} activePage={2} onClick={onClickMock} />,
+          <Pagination
+            totalPages={10}
+            activePage={2}
+            onPageClick={onPageClickMock}
+          />,
         );
 
         wrapper
@@ -135,8 +151,26 @@ describe('<Pagination />', () => {
           .at(1)
           .simulate('click');
 
-        expect(onClickMock).toHaveBeenCalledWith(3);
+        expect(onPageClickMock).toHaveBeenCalledWith(3);
       });
+    });
+  });
+
+  describe('Page href prop', () => {
+    it('should set href value with correct value', () => {
+      const wrapper = mount(
+        <Pagination
+          totalPages={10}
+          activePage={2}
+          pageHref={page => `/?page=${page}`}
+        />,
+      );
+      expect(
+        wrapper
+          .find('Page')
+          .at(0)
+          .prop('href'),
+      ).toBe('/?page=1');
     });
   });
 });
