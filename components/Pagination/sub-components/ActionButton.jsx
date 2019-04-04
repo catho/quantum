@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Button from '../../Button';
 import Colors from '../../Colors';
 
 const StyledButton = styled.a`
