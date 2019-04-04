@@ -115,7 +115,7 @@ const Checkbox = ({ label, error, id, ...rest }) => (
       <CheckIcon />
       <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxWrapper>
-    {error && <ErrorMessage>{error}</ErrorMessage>}
+    {error && typeof error === 'string' && <ErrorMessage>{error}</ErrorMessage>}
   </Wrapper>
 );
 
@@ -125,14 +125,16 @@ Checkbox.defaultProps = {
   error: '',
   id: '',
   label: '',
+  value: '',
 };
 
 Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  error: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
   label: PropTypes.string,
+  value: PropTypes.string,
 };
 
 export default Checkbox;
