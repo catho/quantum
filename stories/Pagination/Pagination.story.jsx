@@ -98,7 +98,7 @@ storiesOf('Pagination', module).add('Pagination', () => (
             <Col medium={5}>
               <SimpleHighlight>
                 {
-                  '<Pagination totalPages={10} pageHref={page => `/?page=${page}`} />'
+                  '<Pagination totalPages={10} pageHref={page => `/?page=${page}`} />' // eslint-disable-line
                 }
               </SimpleHighlight>
             </Col>
@@ -121,8 +121,8 @@ storiesOf('Pagination', module).add('Pagination', () => (
             prop will be ignored.
           </p>
           <p>
-            Here's an example of a controlled pagination that use this prop to
-            handle the state.
+            Here&apos;s an example of a controlled pagination that use this prop
+            to handle the state.
           </p>
           <Row>
             <Col medium={5}>
