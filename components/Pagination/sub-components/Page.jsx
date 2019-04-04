@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../../Colors';
 
-const PageButton = styled.button`
+const PageButton = styled.a`
   align-items: center;
   background-color: ${({ active }) =>
     active ? Colors.BLUE['500'] : Colors.WHITE};
@@ -21,6 +21,7 @@ const PageButton = styled.button`
   min-width: 40px;
   outline: none;
   padding: 5px 8px;
+  text-decoration: none;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
     color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
 

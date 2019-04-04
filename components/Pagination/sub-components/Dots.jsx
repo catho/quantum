@@ -20,7 +20,7 @@ const sharedPseudoElementStyles = `
 const Wrapper = styled.div`
   display: inline-block;
   margin: 0 4px;
-  width: 22px;
+  min-width: 22px;
 `;
 
 const Dot = styled.span`

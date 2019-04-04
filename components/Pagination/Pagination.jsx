@@ -11,7 +11,6 @@ import pagination from './utils/pagination';
 const Wrapper = styled.nav`
   align-items: center;
   display: flex;
-  justify-content: center;
   padding: 16px !important;
 `;
 
