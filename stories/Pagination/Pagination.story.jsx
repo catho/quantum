@@ -30,50 +30,50 @@ storiesOf('Pagination', module).add('Pagination', () => (
 
           <Title as="h3">With 6 pages</Title>
           <Row>
-            <Col medium={6}>
+            <Col medium={5}>
               <SimpleHighlight>{`<Pagination totalPages={6} />`}</SimpleHighlight>
             </Col>
-            <Col medium={6}>
+            <Col medium={7}>
               <Pagination totalPages={6} />
             </Col>
           </Row>
 
           <Title as="h3">With 10 pages</Title>
           <Row>
-            <Col medium={6}>
+            <Col medium={5}>
               <SimpleHighlight>{`<Pagination totalPages={10} />`}</SimpleHighlight>
             </Col>
-            <Col medium={6}>
+            <Col medium={7}>
               <Pagination totalPages={10} />
             </Col>
           </Row>
 
           <Title as="h3">With active page equals 5</Title>
           <Row>
-            <Col medium={6}>
+            <Col medium={5}>
               <SimpleHighlight>{`<Pagination totalPages={10} activePage={5} />`}</SimpleHighlight>
             </Col>
-            <Col medium={6}>
+            <Col medium={7}>
               <Pagination totalPages={10} activePage={5} />
             </Col>
           </Row>
 
           <Title as="h3">With active page equals 10</Title>
           <Row>
-            <Col medium={6}>
+            <Col medium={5}>
               <SimpleHighlight>{`<Pagination totalPages={10} activePage={10} />`}</SimpleHighlight>
             </Col>
-            <Col medium={6}>
+            <Col medium={7}>
               <Pagination totalPages={10} activePage={10} />
             </Col>
           </Row>
 
           <Title as="h3">With custom previous and next texts</Title>
           <Row>
-            <Col medium={6}>
+            <Col medium={5}>
               <SimpleHighlight>{`<Pagination prevButtonText="Previous Page" nextButtonText="Next Page" totalPages={10} activePage={5} />`}</SimpleHighlight>
             </Col>
-            <Col medium={6}>
+            <Col medium={7}>
               <Pagination
                 prevButtonText="Previous Page"
                 nextButtonText="Next Page"
@@ -87,35 +87,39 @@ storiesOf('Pagination', module).add('Pagination', () => (
           <Row>
             <Col medium={12}>
               <Table>
-                <tr>
-                  <th>Component prop</th>
-                  <th>Description</th>
-                </tr>
-                <tr>
-                  <td>ariaLabel</td>
-                  <td>
-                    Set the value of the <code>aria-label</code> attribute of
-                    the pagination root nav element
-                  </td>
-                </tr>
-                <tr>
-                  <td>activePageAriaLabel</td>
-                  <td>
-                    Set the value of <code>aria-label</code> attribute of the
-                    active page button, the default value is &quot;Current
-                    Page&quot;. This will be displayed with the pageAriaLabel
-                    prop. Ex: Current Page, Page 1.
-                  </td>
-                </tr>
-                <tr>
-                  <td>pageAriaLabel</td>
-                  <td>
-                    Set the value of <code>aria-label</code> attribute of the
-                    availables page buttons, this value will be concatenated
-                    with the page number. The default value is &quot;Page&quot;.
-                    Example: Page 4.
-                  </td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Component prop</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ariaLabel</td>
+                    <td>
+                      Set the value of the <code>aria-label</code> attribute of
+                      the pagination root nav element
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>activePageAriaLabel</td>
+                    <td>
+                      Set the value of <code>aria-label</code> attribute of the
+                      active page button, the default value is &quot;Current
+                      Page&quot;. This will be displayed with the pageAriaLabel
+                      prop. Ex: Current Page, Page 1.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>pageAriaLabel</td>
+                    <td>
+                      Set the value of <code>aria-label</code> attribute of the
+                      availables page buttons, this value will be concatenated
+                      with the page number. The default value is
+                      &quot;Page&quot;. Example: Page 4.
+                    </td>
+                  </tr>
+                </tbody>
               </Table>
             </Col>
           </Row>
@@ -123,10 +127,10 @@ storiesOf('Pagination', module).add('Pagination', () => (
             Controlled pagination with aria attributes and custom texts
           </Title>
           <Row>
-            <Col medium={6}>
+            <Col medium={5}>
               <SimpleHighlight>{ControlledPagination.code}</SimpleHighlight>
             </Col>
-            <Col medium={6}>
+            <Col medium={7}>
               <ControlledPagination />
             </Col>
           </Row>
