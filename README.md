@@ -9,14 +9,18 @@ This is the default pack of components and layout principles that dictates Catho
 It can be installed via npm or yarn.
 
 ```sh
-yarn add @cathodevel/quantum
+yarn add @catho/quantum
 ```
 
 To use a component, it need to be imported in your project:
 
 ```js
-import { Button } from 'quantum';
+import { Button } from '@catho/quantum';
+// or
+import Button from '@catho/quantum/Button';
 ```
+
+You can find a list of all available components and full documentation on how to use them at our [Storybook](https://catho.github.io/quantum/)
 
 ## Contributing
 
