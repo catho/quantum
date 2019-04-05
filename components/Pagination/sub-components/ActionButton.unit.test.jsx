@@ -10,9 +10,11 @@ describe('<ActionButton />', () => {
       ).toMatchSnapshot();
     });
 
-    it('should match snapshot with disable prop', () => {
+    it('should match snapshot with aria-disabled prop', () => {
       expect(
-        renderer.create(<ActionButton disabled>Next</ActionButton>).toJSON(),
+        renderer
+          .create(<ActionButton aria-disabled>Next</ActionButton>)
+          .toJSON(),
       ).toMatchSnapshot();
     });
   });

@@ -29,14 +29,13 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 
 <a
   className="c0"
-  disabled={false}
   onClick={[Function]}
 >
   Back
 </a>
 `;
 
-exports[`<ActionButton /> Snapshot should match snapshot with disable prop 1`] = `
+exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop 1`] = `
 .c0 {
   border: 1px solid transparent;
   border-radius: 10px;
@@ -59,8 +58,8 @@ exports[`<ActionButton /> Snapshot should match snapshot with disable prop 1`] =
 }
 
 <a
+  aria-disabled={true}
   className="c0"
-  disabled={true}
   onClick={[Function]}
 >
   Next

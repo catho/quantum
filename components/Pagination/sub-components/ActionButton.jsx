@@ -18,8 +18,8 @@ const StyledButton = styled.a`
   user-select: none;
   white-space: nowrap;
 
-  ${({ disabled }) =>
-    disabled
+  ${({ 'aria-disabled': ariaDisabled }) =>
+    ariaDisabled
       ? `
         color: ${Colors.BLACK['200']};
         cursor: not-allowed;
@@ -39,12 +39,12 @@ const ActionButton = ({ onClick, ...props }) => (
 );
 
 ActionButton.propTypes = {
-  disabled: PropTypes.bool,
+  ariaDisabled: PropTypes.bool,
   onClick: PropTypes.func,
 };
 
 ActionButton.defaultProps = {
-  disabled: false,
+  ariaDisabled: false,
   onClick: () => {},
 };
 

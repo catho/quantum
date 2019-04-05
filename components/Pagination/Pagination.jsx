@@ -55,7 +55,6 @@ const Pagination = ({
     <Wrapper aria-label={ariaLabel} {...props}>
       <ActionButton
         aria-disabled={activePage === 1}
-        disabled={activePage === 1}
         onClick={handlePageClick(activePage - 1)}
         href={handleHref(activePage - 1)}
       >
@@ -85,7 +84,6 @@ const Pagination = ({
 
       <ActionButton
         aria-disabled={activePage === totalPages}
-        disabled={activePage === totalPages}
         onClick={handlePageClick(activePage + 1)}
         href={handleHref(activePage + 1)}
       >
