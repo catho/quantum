@@ -15,7 +15,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     role=\\"radiogroup\\"
   >
     <div
-      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 diXnRa\\"
+      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 idAGJn\\"
     >
       <input
         checked={false}
@@ -39,7 +39,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
       </label>
     </div>
     <div
-      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 diXnRa\\"
+      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 idAGJn\\"
     >
       <input
         checked={false}
@@ -63,7 +63,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
       </label>
     </div>
     <div
-      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 diXnRa\\"
+      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 idAGJn\\"
     >
       <input
         checked={false}
@@ -208,8 +208,8 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
 }
 
 .c1 .c9 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 .c0 {
@@ -413,8 +413,8 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
 
 .c1 {
   display: inline-block;
-  vertical-align: top;
   margin-right: 16px;
+  vertical-align: top;
 }
 
 .c1:last-child {
@@ -422,8 +422,8 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
 }
 
 .c1 .c9 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 .c0 {
@@ -786,8 +786,8 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
 }
 
 .c1 .c9 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 .c0 {

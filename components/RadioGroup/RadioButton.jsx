@@ -19,8 +19,8 @@ const Wrapper = styled.div`
     inline &&
     `
     display: inline-block;
-    vertical-align: top;
     margin-right: 16px;
+    vertical-align: top;
 
     :last-child {
       margin-right: 0;
@@ -28,8 +28,8 @@ const Wrapper = styled.div`
   `}
 
   ${LockIcon} {
-    margin-left: 8px;
     font-size: 17px;
+    margin-left: 8px;
   }
 `;
 
