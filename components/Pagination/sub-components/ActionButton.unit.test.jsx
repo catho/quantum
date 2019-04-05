@@ -9,5 +9,11 @@ describe('<ActionButton />', () => {
         renderer.create(<ActionButton>Back</ActionButton>).toJSON(),
       ).toMatchSnapshot();
     });
+
+    it('should match snapshot with disable prop', () => {
+      expect(
+        renderer.create(<ActionButton disabled>Next</ActionButton>).toJSON(),
+      ).toMatchSnapshot();
+    });
   });
 });

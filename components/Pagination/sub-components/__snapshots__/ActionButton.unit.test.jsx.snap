@@ -35,3 +35,34 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
   Back
 </a>
 `;
+
+exports[`<ActionButton /> Snapshot should match snapshot with disable prop 1`] = `
+.c0 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+<a
+  className="c0"
+  disabled={true}
+  onClick={[Function]}
+>
+  Next
+</a>
+`;
