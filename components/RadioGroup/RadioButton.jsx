@@ -6,6 +6,8 @@ import HiddenRadio from '../shared/HiddenRadio';
 import Icon from '../Icon';
 import uniqId from '../shared/uniqId';
 
+const ID_GENERATOR = uniqId('radio-button-');
+
 const LockIcon = styled(Icon).attrs({
   name: 'lock',
 })``;
@@ -33,48 +35,58 @@ const Wrapper = styled.div`
   }
 `;
 
-const Radio = ({
-  children,
-  label,
-  error,
-  disabled,
-  onChange,
-  value,
-  checked,
-  icon,
-  id,
-  inline,
-  ...rest
-}) => {
-  const skin = checked ? 'primary' : 'secondary';
-  const _id = id || uniqId('radio-button-');
+class Radio extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <Wrapper inline={inline}>
-      <HiddenRadio
-        checked={checked}
-        disabled={disabled}
-        id={_id}
-        onChange={e => onChange({ value, label }, e)}
-        value={value}
-        skin={skin}
-        error={error}
-        {...rest}
-      />
-      <ButtonGroupLabel
-        checked={checked}
-        disabled={disabled}
-        error={error}
-        htmlFor={_id}
-        skin={skin}
-      >
-        {icon && <ButtonIcon name={icon} />}
-        {children || label}
-        {disabled && <LockIcon />}
-      </ButtonGroupLabel>
-    </Wrapper>
-  );
-};
+    const { id } = props;
+
+    this._id = id || ID_GENERATOR.next().value;
+  }
+
+  render() {
+    const {
+      children,
+      label,
+      error,
+      disabled,
+      onChange,
+      value,
+      checked,
+      icon,
+      id,
+      inline,
+      ...rest
+    } = this.props;
+    const skin = checked ? 'primary' : 'secondary';
+
+    return (
+      <Wrapper inline={inline}>
+        <HiddenRadio
+          checked={checked}
+          disabled={disabled}
+          id={this._id}
+          onChange={e => onChange({ value, label }, e)}
+          value={value}
+          skin={skin}
+          error={error}
+          {...rest}
+        />
+        <ButtonGroupLabel
+          checked={checked}
+          disabled={disabled}
+          error={error}
+          htmlFor={this._id}
+          skin={skin}
+        >
+          {icon && <ButtonIcon name={icon} />}
+          {children || label}
+          {disabled && <LockIcon />}
+        </ButtonGroupLabel>
+      </Wrapper>
+    );
+  }
+}
 
 Radio.displayName = 'RadioGroup.Button';
 
