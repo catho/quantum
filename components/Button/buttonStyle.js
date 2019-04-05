@@ -36,9 +36,9 @@ const height = ({ size }) => {
   return `height: ${heights[size] || heights.medium};`;
 };
 
-const _interactiveStyle = (props, skinProp) => {
+const _interactiveStyle = (props, interactiveState) => {
   const {
-    [skinProp]: { shadow, background, border, color },
+    [interactiveState]: { shadow, background, border, color },
   } = skins(props);
   const { disabled } = props;
 
