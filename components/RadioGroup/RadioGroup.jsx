@@ -4,12 +4,11 @@ import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
 
 import Radio from './Radio';
+import RadioButton from './RadioButton';
 
 const Group = styled(FieldGroup).attrs({
   role: 'radiogroup',
 })`
-  display: flex;
-  flex-direction: column;
   position: relative;
 `;
 
@@ -20,9 +19,11 @@ const ErrorLabel = styled(ErrorMessage)`
 ErrorLabel.displayName = 'ErrorLabel';
 
 const RadioGroup = ({
+  type,
   children,
-  name,
   error,
+  inline,
+  name,
   onChange,
   options,
   value,
@@ -32,6 +33,7 @@ const RadioGroup = ({
     name,
     error: Boolean(error),
     onChange,
+    inline,
   };
   const radioOptions = options.map(option =>
     Object.assign({}, option, {
@@ -41,36 +43,43 @@ const RadioGroup = ({
     }),
   );
 
-  const listItems =
+  const items =
     React.Children.map(children, child =>
       React.cloneElement(child, {
         checked: child.props.value === value ? true : undefined,
         ...commonProps,
       }),
-    ) || radioOptions.map(Radio.create);
+    ) ||
+    radioOptions.map(props =>
+      type === 'button' ? <RadioButton {...props} /> : <Radio {...props} />,
+    );
 
   return (
     <Group {...rest}>
-      {listItems}
+      {items}
       {error && <ErrorLabel>{error}</ErrorLabel>}
     </Group>
   );
 };
 
 RadioGroup.Radio = Radio;
+RadioGroup.Button = RadioButton;
 
 /**
  * Group for Radio components.
  */
 RadioGroup.defaultProps = {
-  value: undefined,
-  error: undefined,
+  type: 'radio',
   children: undefined,
-  options: [],
+  error: undefined,
+  inline: false,
   onChange: () => {},
+  options: [],
+  value: undefined,
 };
 
 RadioGroup.propTypes = {
+  type: PropTypes.oneOf(['radio', 'button']),
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
@@ -79,9 +88,10 @@ RadioGroup.propTypes = {
     }),
   ),
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element,
   ]),
+  inline: PropTypes.bool,
   onChange: PropTypes.func,
   /** Initialize RadioGroup with a value */
   value: PropTypes.string,

@@ -5,7 +5,541 @@ exports[`<RadioGroup /> snapshot should render the same 1`] = `
  Compared values have no visual difference."
 `;
 
+exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button /> 1`] = `
+"Snapshot Diff:
+ - Expected
++ Received
+
+  <div
+    className=\\"FieldGroup-sc-18uoi37-0 RadioGroup__Group-sc-1l7wvp0-0 fJKEVN\\"
+    role=\\"radiogroup\\"
+  >
+    <div
+      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 idAGJn\\"
+    >
+      <input
+        checked={false}
+        className=\\"HiddenRadio-sc-1ptfasu-0 liKeGo\\"
+        disabled={false}
+-       id=\\"radio-button-9\\"
++       id=\\"radio-button-12\\"
+        name=\\"foo\\"
+        onChange={[Function onChange]}
+        type=\\"radio\\"
+        value=\\"Foo\\"
+      />
+      <label
+        checked={false}
+        className=\\"Label-sc-1ny5bqy-0 ButtonGroupLabel-c89ie7-0 XDOfc\\"
+        disabled={false}
+-       htmlFor=\\"radio-button-9\\"
++       htmlFor=\\"radio-button-12\\"
+      >
+        Foo
+      </label>
+    </div>
+    <div
+      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 idAGJn\\"
+    >
+      <input
+        checked={false}
+        className=\\"HiddenRadio-sc-1ptfasu-0 liKeGo\\"
+        disabled={false}
+-       id=\\"radio-button-10\\"
++       id=\\"radio-button-13\\"
+        name=\\"foo\\"
+        onChange={[Function onChange]}
+        type=\\"radio\\"
+        value=\\"Bar\\"
+      />
+      <label
+        checked={false}
+        className=\\"Label-sc-1ny5bqy-0 ButtonGroupLabel-c89ie7-0 XDOfc\\"
+        disabled={false}
+-       htmlFor=\\"radio-button-10\\"
++       htmlFor=\\"radio-button-13\\"
+      >
+        Bar
+      </label>
+    </div>
+    <div
+      className=\\"RadioButton__Wrapper-sc-1q7g63p-2 idAGJn\\"
+    >
+      <input
+        checked={false}
+        className=\\"HiddenRadio-sc-1ptfasu-0 liKeGo\\"
+        disabled={false}
+-       id=\\"radio-button-11\\"
++       id=\\"radio-button-14\\"
+        name=\\"foo\\"
+        onChange={[Function onChange]}
+        type=\\"radio\\"
+        value=\\"Baz\\"
+      />
+      <label
+        checked={false}
+        className=\\"Label-sc-1ny5bqy-0 ButtonGroupLabel-c89ie7-0 XDOfc\\"
+        disabled={false}
+-       htmlFor=\\"radio-button-11\\"
++       htmlFor=\\"radio-button-14\\"
+      >
+        Baz
+      </label>
+    </div>
+  </div>"
+`;
+
+exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
+.c5 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c6:focus ~ .c4 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c6:hover ~ .c4 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c6:active ~ .c4 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c3:focus ~ .c4 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3:hover ~ .c4 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3:active ~ .c4 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c8 {
+  border-color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c8:after {
+  background-color: #1355d0;
+  display: block;
+}
+
+.c7 .c2:focus ~ .c8 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c7 .c2:checked:disabled ~ .c8 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c1 .c9 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="radiogroup"
+>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-3"
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-3"
+    >
+      Foo
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-4"
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+      value="Bar"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-4"
+    >
+      Bar
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-5"
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+      value="Baz"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-5"
+    >
+      Baz
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = `
+.c5 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c6:focus ~ .c4 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c6:hover ~ .c4 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c6:active ~ .c4 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c3:focus ~ .c4 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3:hover ~ .c4 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3:active ~ .c4 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c8 {
+  border-color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c8:after {
+  background-color: #1355d0;
+  display: block;
+}
+
+.c7 .c2:focus ~ .c8 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c7 .c2:checked:disabled ~ .c8 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c1 {
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
+.c1 .c9 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="radiogroup"
+>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-6"
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-6"
+    >
+      Foo
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-7"
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+      value="Bar"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-7"
+    >
+      Bar
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-8"
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+      value="Baz"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-8"
+    >
+      Baz
+    </label>
+  </div>
+</div>
+`;
+
 exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c3:focus ~ .c6 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:hover ~ .c6 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:active ~ .c6 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 .c5 {
   background-color: #FFFFFF;
   border: 1.5px solid #999999;
@@ -29,17 +563,6 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-}
-
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c1 {
@@ -83,13 +606,6 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
 }
 
@@ -107,6 +623,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       name="groceries"
       onChange={[Function]}
       type="radio"
+      value="Foo"
     />
     <span
       className="c4 c5"
@@ -123,6 +640,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       name="groceries"
       onChange={[Function]}
       type="radio"
+      value="Bar"
     />
     <span
       className="c4 c5"
@@ -139,6 +657,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       name="groceries"
       onChange={[Function]}
       type="radio"
+      value="Baz"
     />
     <span
       className="c4 c5"
@@ -148,7 +667,243 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 </div>
 `;
 
+exports[`<RadioGroup /> snapshot simple with button options 1`] = `
+.c5 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c6:focus ~ .c4 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c6:hover ~ .c4 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c6:active ~ .c4 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c3:focus ~ .c4 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3:hover ~ .c4 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c3:active ~ .c4 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c8 {
+  border-color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c8:after {
+  background-color: #1355d0;
+  display: block;
+}
+
+.c7 .c2:focus ~ .c8 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c7 .c2:checked:disabled ~ .c8 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+}
+
+.c1 .c9 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="radiogroup"
+>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-0"
+      name="foo"
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-0"
+    >
+      Foo
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-1"
+      name="foo"
+      onChange={[Function]}
+      type="radio"
+      value="Bar"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-1"
+    >
+      Bar
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      id="radio-button-2"
+      name="foo"
+      onChange={[Function]}
+      type="radio"
+      value="Baz"
+    />
+    <label
+      checked={false}
+      className="c4 c5"
+      disabled={false}
+      htmlFor="radio-button-2"
+    >
+      Baz
+    </label>
+  </div>
+</div>
+`;
+
 exports[`<RadioGroup /> snapshot simple with options 1`] = `
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c3:focus ~ .c6 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:hover ~ .c6 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:active ~ .c6 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
 .c5 {
   background-color: #FFFFFF;
   border: 1.5px solid #999999;
@@ -172,17 +927,6 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-}
-
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c1 {
@@ -226,13 +970,6 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
 }
 
@@ -250,6 +987,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       name="foo"
       onChange={[Function]}
       type="radio"
+      value="Foo"
     />
     <span
       className="c4 c5"
@@ -266,6 +1004,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       name="foo"
       onChange={[Function]}
       type="radio"
+      value="Bar"
     />
     <span
       className="c4 c5"
@@ -282,6 +1021,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       name="foo"
       onChange={[Function]}
       type="radio"
+      value="Baz"
     />
     <span
       className="c4 c5"

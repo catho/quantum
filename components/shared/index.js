@@ -6,6 +6,7 @@ import masks from './masks';
 import BREAKPOINTS from './breakpoints';
 import uniqId from './uniqId';
 import * as INPUT_STYLE from './inputStyle';
+import ButtonGroupLabel from './ButtonGroupLabel';
 
 export {
   ErrorMessage,
@@ -16,4 +17,5 @@ export {
   BREAKPOINTS,
   INPUT_STYLE,
   uniqId,
+  ButtonGroupLabel,
 };

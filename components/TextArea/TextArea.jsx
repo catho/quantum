@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { INPUT_STYLE, Label, FieldGroup, ErrorMessage } from '../shared';
 import uniqId from '../shared/uniqId';
 
+const ID_GENERATOR = uniqId('textarea-');
+
 const {
   default: DEFAULT_INPUT_STYLE,
   LABEL_STYLE,
@@ -43,27 +45,42 @@ const TextAreaErrorMessage = styled(ErrorMessage)`
   `}
 `;
 
-const TextArea = ({ label, required, helperText, error, id, ...rest }) => {
-  const _id = id || uniqId('textarea-');
+class TextArea extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <FieldGroup>
-      {label && (
-        <TextAreaLabel htmlFor={_id}>
-          {label}
-          {required && <RequiredMark>*</RequiredMark>}
-        </TextAreaLabel>
-      )}
-      <TextAreaTag error={error} id={_id} required={required} {...rest} />
-      {helperText && <HelperText>{helperText}</HelperText>}
-      {error && (
-        <TextAreaErrorMessage helperText={helperText}>
-          {error}
-        </TextAreaErrorMessage>
-      )}
-    </FieldGroup>
-  );
-};
+    const { id } = props;
+
+    this._id = id || ID_GENERATOR.next().value;
+  }
+
+  render() {
+    const { label, required, helperText, error, id, ...rest } = this.props;
+
+    return (
+      <FieldGroup>
+        {label && (
+          <TextAreaLabel htmlFor={this._id}>
+            {label}
+            {required && <RequiredMark>*</RequiredMark>}
+          </TextAreaLabel>
+        )}
+        <TextAreaTag
+          error={error}
+          id={this._id}
+          required={required}
+          {...rest}
+        />
+        {helperText && <HelperText>{helperText}</HelperText>}
+        {error && (
+          <TextAreaErrorMessage helperText={helperText}>
+            {error}
+          </TextAreaErrorMessage>
+        )}
+      </FieldGroup>
+    );
+  }
+}
 
 TextArea.defaultProps = {
   disabled: false,
