@@ -623,14 +623,14 @@ exports[`<SnackBar /> should match snapshots 1`] = `
               class="c2"
             >
               <div
-                aria-describedby="[object Generator]"
+                aria-describedby="snackbar-dialog-0"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="[object Generator]"
+                  id="snackbar-dialog-0"
                 >
                   Text of SnackBar component
                 </strong>
@@ -796,22 +796,14 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby={
-                          GeneratorFunctionPrototype {
-                            "_invoke": [Function],
-                          }
-                        }
+                        aria-describedby="snackbar-dialog-0"
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby={
-                            GeneratorFunctionPrototype {
-                              "_invoke": [Function],
-                            }
-                          }
+                          aria-describedby="snackbar-dialog-0"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -844,21 +836,13 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby={
-                              GeneratorFunctionPrototype {
-                                "_invoke": [Function],
-                              }
-                            }
+                            aria-describedby="snackbar-dialog-0"
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id={
-                                GeneratorFunctionPrototype {
-                                  "_invoke": [Function],
-                                }
-                              }
+                              id="snackbar-dialog-0"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -886,19 +870,11 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id={
-                                  GeneratorFunctionPrototype {
-                                    "_invoke": [Function],
-                                  }
-                                }
+                                id="snackbar-dialog-0"
                               >
                                 <strong
                                   className="c4"
-                                  id={
-                                    GeneratorFunctionPrototype {
-                                      "_invoke": [Function],
-                                    }
-                                  }
+                                  id="snackbar-dialog-0"
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -1987,14 +1963,14 @@ exports[`<SnackBar /> should match snapshots 2`] = `
               class="c2"
             >
               <div
-                aria-describedby="[object Generator]"
+                aria-describedby="snackbar-dialog-1"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="[object Generator]"
+                  id="snackbar-dialog-1"
                 >
                   SnackBar message content 
                 </strong>
@@ -2160,22 +2136,14 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby={
-                          GeneratorFunctionPrototype {
-                            "_invoke": [Function],
-                          }
-                        }
+                        aria-describedby="snackbar-dialog-1"
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby={
-                            GeneratorFunctionPrototype {
-                              "_invoke": [Function],
-                            }
-                          }
+                          aria-describedby="snackbar-dialog-1"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -2208,21 +2176,13 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby={
-                              GeneratorFunctionPrototype {
-                                "_invoke": [Function],
-                              }
-                            }
+                            aria-describedby="snackbar-dialog-1"
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id={
-                                GeneratorFunctionPrototype {
-                                  "_invoke": [Function],
-                                }
-                              }
+                              id="snackbar-dialog-1"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -2250,19 +2210,11 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id={
-                                  GeneratorFunctionPrototype {
-                                    "_invoke": [Function],
-                                  }
-                                }
+                                id="snackbar-dialog-1"
                               >
                                 <strong
                                   className="c4"
-                                  id={
-                                    GeneratorFunctionPrototype {
-                                      "_invoke": [Function],
-                                    }
-                                  }
+                                  id="snackbar-dialog-1"
                                 >
                                   SnackBar message content 
                                 </strong>
@@ -3351,14 +3303,14 @@ exports[`<SnackBar /> should match snapshots 3`] = `
               class="c2"
             >
               <div
-                aria-describedby="[object Generator]"
+                aria-describedby="snackbar-dialog-2"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="[object Generator]"
+                  id="snackbar-dialog-2"
                 >
                   Text of SnackBar component
                 </strong>
@@ -3524,22 +3476,14 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby={
-                          GeneratorFunctionPrototype {
-                            "_invoke": [Function],
-                          }
-                        }
+                        aria-describedby="snackbar-dialog-2"
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby={
-                            GeneratorFunctionPrototype {
-                              "_invoke": [Function],
-                            }
-                          }
+                          aria-describedby="snackbar-dialog-2"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -3572,21 +3516,13 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby={
-                              GeneratorFunctionPrototype {
-                                "_invoke": [Function],
-                              }
-                            }
+                            aria-describedby="snackbar-dialog-2"
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id={
-                                GeneratorFunctionPrototype {
-                                  "_invoke": [Function],
-                                }
-                              }
+                              id="snackbar-dialog-2"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -3614,19 +3550,11 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id={
-                                  GeneratorFunctionPrototype {
-                                    "_invoke": [Function],
-                                  }
-                                }
+                                id="snackbar-dialog-2"
                               >
                                 <strong
                                   className="c4"
-                                  id={
-                                    GeneratorFunctionPrototype {
-                                      "_invoke": [Function],
-                                    }
-                                  }
+                                  id="snackbar-dialog-2"
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -4715,14 +4643,14 @@ exports[`<SnackBar /> should match snapshots 4`] = `
               class="c2"
             >
               <div
-                aria-describedby="[object Generator]"
+                aria-describedby="snackbar-dialog-3"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="[object Generator]"
+                  id="snackbar-dialog-3"
                 >
                   Text of SnackBar component
                 </strong>
@@ -4888,22 +4816,14 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby={
-                          GeneratorFunctionPrototype {
-                            "_invoke": [Function],
-                          }
-                        }
+                        aria-describedby="snackbar-dialog-3"
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby={
-                            GeneratorFunctionPrototype {
-                              "_invoke": [Function],
-                            }
-                          }
+                          aria-describedby="snackbar-dialog-3"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -4936,21 +4856,13 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby={
-                              GeneratorFunctionPrototype {
-                                "_invoke": [Function],
-                              }
-                            }
+                            aria-describedby="snackbar-dialog-3"
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id={
-                                GeneratorFunctionPrototype {
-                                  "_invoke": [Function],
-                                }
-                              }
+                              id="snackbar-dialog-3"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -4978,19 +4890,11 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id={
-                                  GeneratorFunctionPrototype {
-                                    "_invoke": [Function],
-                                  }
-                                }
+                                id="snackbar-dialog-3"
                               >
                                 <strong
                                   className="c4"
-                                  id={
-                                    GeneratorFunctionPrototype {
-                                      "_invoke": [Function],
-                                    }
-                                  }
+                                  id="snackbar-dialog-3"
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -6079,14 +5983,14 @@ exports[`<SnackBar /> should match snapshots 5`] = `
               class="c2"
             >
               <div
-                aria-describedby="[object Generator]"
+                aria-describedby="snackbar-dialog-4"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="[object Generator]"
+                  id="snackbar-dialog-4"
                 >
                   Text of SnackBar component
                 </strong>
@@ -6252,22 +6156,14 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby={
-                          GeneratorFunctionPrototype {
-                            "_invoke": [Function],
-                          }
-                        }
+                        aria-describedby="snackbar-dialog-4"
                         role="alertdialog"
                         secondsToClose={10}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby={
-                            GeneratorFunctionPrototype {
-                              "_invoke": [Function],
-                            }
-                          }
+                          aria-describedby="snackbar-dialog-4"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -6300,21 +6196,13 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby={
-                              GeneratorFunctionPrototype {
-                                "_invoke": [Function],
-                              }
-                            }
+                            aria-describedby="snackbar-dialog-4"
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id={
-                                GeneratorFunctionPrototype {
-                                  "_invoke": [Function],
-                                }
-                              }
+                              id="snackbar-dialog-4"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -6342,19 +6230,11 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id={
-                                  GeneratorFunctionPrototype {
-                                    "_invoke": [Function],
-                                  }
-                                }
+                                id="snackbar-dialog-4"
                               >
                                 <strong
                                   className="c4"
-                                  id={
-                                    GeneratorFunctionPrototype {
-                                      "_invoke": [Function],
-                                    }
-                                  }
+                                  id="snackbar-dialog-4"
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -7443,14 +7323,14 @@ exports[`<SnackBar /> should match snapshots 6`] = `
               class="c2"
             >
               <div
-                aria-describedby="[object Generator]"
+                aria-describedby="snackbar-dialog-5"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="[object Generator]"
+                  id="snackbar-dialog-5"
                 >
                   Text of SnackBar component
                 </strong>
@@ -7616,22 +7496,14 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby={
-                          GeneratorFunctionPrototype {
-                            "_invoke": [Function],
-                          }
-                        }
+                        aria-describedby="snackbar-dialog-5"
                         role="alertdialog"
                         secondsToClose={6}
                         skin="black"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby={
-                            GeneratorFunctionPrototype {
-                              "_invoke": [Function],
-                            }
-                          }
+                          aria-describedby="snackbar-dialog-5"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -7664,21 +7536,13 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby={
-                              GeneratorFunctionPrototype {
-                                "_invoke": [Function],
-                              }
-                            }
+                            aria-describedby="snackbar-dialog-5"
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id={
-                                GeneratorFunctionPrototype {
-                                  "_invoke": [Function],
-                                }
-                              }
+                              id="snackbar-dialog-5"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -7706,19 +7570,11 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id={
-                                  GeneratorFunctionPrototype {
-                                    "_invoke": [Function],
-                                  }
-                                }
+                                id="snackbar-dialog-5"
                               >
                                 <strong
                                   className="c4"
-                                  id={
-                                    GeneratorFunctionPrototype {
-                                      "_invoke": [Function],
-                                    }
-                                  }
+                                  id="snackbar-dialog-5"
                                 >
                                   Text of SnackBar component
                                 </strong>
