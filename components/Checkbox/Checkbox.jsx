@@ -108,33 +108,36 @@ const HiddenCheckbox = styled.input.attrs({
 
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-const Checkbox = ({ label, error, id, ...rest }) => (
+const Checkbox = ({ children, error, id, label, value, ...rest }) => (
   <Wrapper>
     <CheckboxWrapper>
-      <HiddenCheckbox id={id} error={error} {...rest} />
+      <HiddenCheckbox id={id} error={error} value={value} {...rest} />
       <CheckIcon />
-      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
+      <CheckboxLabel htmlFor={id}>{children || label || value}</CheckboxLabel>
     </CheckboxWrapper>
     {error && typeof error === 'string' && <ErrorMessage>{error}</ErrorMessage>}
   </Wrapper>
 );
 
 Checkbox.defaultProps = {
+  children: '',
   checked: undefined,
   disabled: false,
   error: '',
   id: '',
   label: '',
-  value: '',
 };
 
 Checkbox.propTypes = {
+  children: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
   label: PropTypes.string,
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
 };
+
+Checkbox.displayName = 'Checkbox';
 
 export default Checkbox;

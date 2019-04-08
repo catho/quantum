@@ -97,7 +97,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       disabled={false}
       id=""
       type="checkbox"
-      value=""
+      value="foo"
     />
     <span
       aria-hidden="true"
@@ -114,7 +114,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       className="c3 c4"
       htmlFor=""
     >
-      
+      foo
     </label>
   </div>
   
@@ -295,7 +295,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       disabled={false}
       id=""
       type="checkbox"
-      value=""
+      value="foo"
     />
     <span
       aria-hidden="true"
@@ -312,7 +312,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       className="c3 c4"
       htmlFor=""
     >
-      
+      foo
     </label>
   </div>
   <div
@@ -498,7 +498,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       disabled={false}
       id=""
       type="checkbox"
-      value=""
+      value="foo"
     />
     <span
       aria-hidden="true"
@@ -515,7 +515,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       className="c3 c4"
       htmlFor=""
     >
-      
+      foo
     </label>
   </div>
   <div
@@ -693,7 +693,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       disabled={false}
       id=""
       type="checkbox"
-      value=""
+      value="foo"
     />
     <span
       aria-hidden="true"
@@ -710,7 +710,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       className="c3 c4"
       htmlFor=""
     >
-      
+      foo
     </label>
   </div>
   
@@ -883,7 +883,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       disabled={true}
       id=""
       type="checkbox"
-      value=""
+      value="foo"
     />
     <span
       aria-hidden="true"
@@ -900,7 +900,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       className="c3 c4"
       htmlFor=""
     >
-      
+      foo
     </label>
   </div>
   
@@ -1073,7 +1073,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
       disabled={false}
       id=""
       type="checkbox"
-      value=""
+      value="foo"
     />
     <span
       aria-hidden="true"
@@ -1264,7 +1264,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       disabled={true}
       id=""
       type="checkbox"
-      value=""
+      value="foo"
     />
     <span
       aria-hidden="true"
@@ -1281,7 +1281,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       className="c3 c4"
       htmlFor=""
     >
-      
+      foo
     </label>
   </div>
   
