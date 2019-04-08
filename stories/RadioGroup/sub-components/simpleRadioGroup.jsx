@@ -10,9 +10,9 @@ const options = [
 const simpleRadioGroup = {
   code: `const options = ${JSON.stringify(options, null, 2)};
 
-<RadioGroup 
-  name="groceries" 
-  options={options} 
+<RadioGroup
+  name="groceries"
+  options={options}
 />
 
 /* or */

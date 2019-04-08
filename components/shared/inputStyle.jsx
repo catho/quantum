@@ -22,7 +22,7 @@ const HOVER_STYLE = css`
   box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
 `;
 
-const ERROR_STŸLE = css`
+const ERROR_STYLE = css`
   border-color: ${Colors.ERROR['500']};
 `;
 
@@ -77,7 +77,7 @@ const INPUT_STYLE = css`
   ${({ error }) =>
     error &&
     css`
-      ${ERROR_STŸLE}
+      ${ERROR_STYLE}
 
       :hover, :focus {
         ${ERROR_HOVER_STYLE}
@@ -100,7 +100,7 @@ const INPUT_STYLE = css`
 export {
   DEFAULT_STYLE,
   HOVER_STYLE,
-  ERROR_STŸLE,
+  ERROR_STYLE,
   ERROR_HOVER_STYLE,
   DISABLED_STYLE,
   LABEL_STYLE,
