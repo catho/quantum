@@ -6,29 +6,29 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -40,10 +40,6 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -67,30 +63,34 @@ exports[`<SnackBar /> should match snapshots 1`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -102,10 +102,6 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -127,6 +123,10 @@ exports[`<SnackBar /> should match snapshots 1`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -319,29 +319,29 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -353,10 +353,6 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -380,30 +376,34 @@ exports[`<SnackBar /> should match snapshots 1`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -415,10 +415,6 @@ exports[`<SnackBar /> should match snapshots 1`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -440,6 +436,10 @@ exports[`<SnackBar /> should match snapshots 1`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -623,14 +623,14 @@ exports[`<SnackBar /> should match snapshots 1`] = `
               class="c2"
             >
               <div
-                aria-describedby="snackbar-dialog-0"
+                aria-describedby="[object Generator]"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="snackbar-dialog-0"
+                  id="[object Generator]"
                 >
                   Text of SnackBar component
                 </strong>
@@ -796,14 +796,22 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby="snackbar-dialog-0"
+                        aria-describedby={
+                          GeneratorFunctionPrototype {
+                            "_invoke": [Function],
+                          }
+                        }
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby="snackbar-dialog-0"
+                          aria-describedby={
+                            GeneratorFunctionPrototype {
+                              "_invoke": [Function],
+                            }
+                          }
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -836,13 +844,21 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby="snackbar-dialog-0"
+                            aria-describedby={
+                              GeneratorFunctionPrototype {
+                                "_invoke": [Function],
+                              }
+                            }
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id="snackbar-dialog-0"
+                              id={
+                                GeneratorFunctionPrototype {
+                                  "_invoke": [Function],
+                                }
+                              }
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -870,11 +886,19 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id="snackbar-dialog-0"
+                                id={
+                                  GeneratorFunctionPrototype {
+                                    "_invoke": [Function],
+                                  }
+                                }
                               >
                                 <strong
                                   className="c4"
-                                  id="snackbar-dialog-0"
+                                  id={
+                                    GeneratorFunctionPrototype {
+                                      "_invoke": [Function],
+                                    }
+                                  }
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -1013,26 +1037,32 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -1164,26 +1194,32 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -1334,29 +1370,29 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -1368,10 +1404,6 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -1395,30 +1427,34 @@ exports[`<SnackBar /> should match snapshots 2`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -1430,10 +1466,6 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -1455,6 +1487,10 @@ exports[`<SnackBar /> should match snapshots 2`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -1647,29 +1683,29 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -1681,10 +1717,6 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -1708,30 +1740,34 @@ exports[`<SnackBar /> should match snapshots 2`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -1743,10 +1779,6 @@ exports[`<SnackBar /> should match snapshots 2`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -1768,6 +1800,10 @@ exports[`<SnackBar /> should match snapshots 2`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -1951,14 +1987,14 @@ exports[`<SnackBar /> should match snapshots 2`] = `
               class="c2"
             >
               <div
-                aria-describedby="snackbar-dialog-1"
+                aria-describedby="[object Generator]"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="snackbar-dialog-1"
+                  id="[object Generator]"
                 >
                   SnackBar message content 
                 </strong>
@@ -2124,14 +2160,22 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby="snackbar-dialog-1"
+                        aria-describedby={
+                          GeneratorFunctionPrototype {
+                            "_invoke": [Function],
+                          }
+                        }
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby="snackbar-dialog-1"
+                          aria-describedby={
+                            GeneratorFunctionPrototype {
+                              "_invoke": [Function],
+                            }
+                          }
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -2164,13 +2208,21 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby="snackbar-dialog-1"
+                            aria-describedby={
+                              GeneratorFunctionPrototype {
+                                "_invoke": [Function],
+                              }
+                            }
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id="snackbar-dialog-1"
+                              id={
+                                GeneratorFunctionPrototype {
+                                  "_invoke": [Function],
+                                }
+                              }
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -2198,11 +2250,19 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id="snackbar-dialog-1"
+                                id={
+                                  GeneratorFunctionPrototype {
+                                    "_invoke": [Function],
+                                  }
+                                }
                               >
                                 <strong
                                   className="c4"
-                                  id="snackbar-dialog-1"
+                                  id={
+                                    GeneratorFunctionPrototype {
+                                      "_invoke": [Function],
+                                    }
+                                  }
                                 >
                                   SnackBar message content 
                                 </strong>
@@ -2341,26 +2401,32 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -2492,26 +2558,32 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -2662,29 +2734,29 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -2696,10 +2768,6 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -2723,30 +2791,34 @@ exports[`<SnackBar /> should match snapshots 3`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -2758,10 +2830,6 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -2783,6 +2851,10 @@ exports[`<SnackBar /> should match snapshots 3`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -2975,29 +3047,29 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -3009,10 +3081,6 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -3036,30 +3104,34 @@ exports[`<SnackBar /> should match snapshots 3`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -3071,10 +3143,6 @@ exports[`<SnackBar /> should match snapshots 3`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -3096,6 +3164,10 @@ exports[`<SnackBar /> should match snapshots 3`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -3279,14 +3351,14 @@ exports[`<SnackBar /> should match snapshots 3`] = `
               class="c2"
             >
               <div
-                aria-describedby="snackbar-dialog-2"
+                aria-describedby="[object Generator]"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="snackbar-dialog-2"
+                  id="[object Generator]"
                 >
                   Text of SnackBar component
                 </strong>
@@ -3452,14 +3524,22 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby="snackbar-dialog-2"
+                        aria-describedby={
+                          GeneratorFunctionPrototype {
+                            "_invoke": [Function],
+                          }
+                        }
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby="snackbar-dialog-2"
+                          aria-describedby={
+                            GeneratorFunctionPrototype {
+                              "_invoke": [Function],
+                            }
+                          }
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -3492,13 +3572,21 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby="snackbar-dialog-2"
+                            aria-describedby={
+                              GeneratorFunctionPrototype {
+                                "_invoke": [Function],
+                              }
+                            }
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id="snackbar-dialog-2"
+                              id={
+                                GeneratorFunctionPrototype {
+                                  "_invoke": [Function],
+                                }
+                              }
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -3526,11 +3614,19 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id="snackbar-dialog-2"
+                                id={
+                                  GeneratorFunctionPrototype {
+                                    "_invoke": [Function],
+                                  }
+                                }
                               >
                                 <strong
                                   className="c4"
-                                  id="snackbar-dialog-2"
+                                  id={
+                                    GeneratorFunctionPrototype {
+                                      "_invoke": [Function],
+                                    }
+                                  }
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -3669,26 +3765,32 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -3820,26 +3922,32 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -3990,29 +4098,29 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -4024,10 +4132,6 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -4051,30 +4155,34 @@ exports[`<SnackBar /> should match snapshots 4`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -4086,10 +4194,6 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -4111,6 +4215,10 @@ exports[`<SnackBar /> should match snapshots 4`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -4303,29 +4411,29 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -4337,10 +4445,6 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -4364,30 +4468,34 @@ exports[`<SnackBar /> should match snapshots 4`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -4399,10 +4507,6 @@ exports[`<SnackBar /> should match snapshots 4`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -4424,6 +4528,10 @@ exports[`<SnackBar /> should match snapshots 4`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -4607,14 +4715,14 @@ exports[`<SnackBar /> should match snapshots 4`] = `
               class="c2"
             >
               <div
-                aria-describedby="snackbar-dialog-3"
+                aria-describedby="[object Generator]"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="snackbar-dialog-3"
+                  id="[object Generator]"
                 >
                   Text of SnackBar component
                 </strong>
@@ -4780,14 +4888,22 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby="snackbar-dialog-3"
+                        aria-describedby={
+                          GeneratorFunctionPrototype {
+                            "_invoke": [Function],
+                          }
+                        }
                         role="alertdialog"
                         secondsToClose={6}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby="snackbar-dialog-3"
+                          aria-describedby={
+                            GeneratorFunctionPrototype {
+                              "_invoke": [Function],
+                            }
+                          }
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -4820,13 +4936,21 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby="snackbar-dialog-3"
+                            aria-describedby={
+                              GeneratorFunctionPrototype {
+                                "_invoke": [Function],
+                              }
+                            }
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id="snackbar-dialog-3"
+                              id={
+                                GeneratorFunctionPrototype {
+                                  "_invoke": [Function],
+                                }
+                              }
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -4854,11 +4978,19 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id="snackbar-dialog-3"
+                                id={
+                                  GeneratorFunctionPrototype {
+                                    "_invoke": [Function],
+                                  }
+                                }
                               >
                                 <strong
                                   className="c4"
-                                  id="snackbar-dialog-3"
+                                  id={
+                                    GeneratorFunctionPrototype {
+                                      "_invoke": [Function],
+                                    }
+                                  }
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -4997,26 +5129,32 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -5148,26 +5286,32 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -5318,29 +5462,29 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -5352,10 +5496,6 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -5379,30 +5519,34 @@ exports[`<SnackBar /> should match snapshots 5`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -5414,10 +5558,6 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -5439,6 +5579,10 @@ exports[`<SnackBar /> should match snapshots 5`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -5631,29 +5775,29 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -5665,10 +5809,6 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -5692,30 +5832,34 @@ exports[`<SnackBar /> should match snapshots 5`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -5727,10 +5871,6 @@ exports[`<SnackBar /> should match snapshots 5`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -5752,6 +5892,10 @@ exports[`<SnackBar /> should match snapshots 5`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -5935,14 +6079,14 @@ exports[`<SnackBar /> should match snapshots 5`] = `
               class="c2"
             >
               <div
-                aria-describedby="snackbar-dialog-4"
+                aria-describedby="[object Generator]"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="snackbar-dialog-4"
+                  id="[object Generator]"
                 >
                   Text of SnackBar component
                 </strong>
@@ -6108,14 +6252,22 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby="snackbar-dialog-4"
+                        aria-describedby={
+                          GeneratorFunctionPrototype {
+                            "_invoke": [Function],
+                          }
+                        }
                         role="alertdialog"
                         secondsToClose={10}
                         skin="cobalt"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby="snackbar-dialog-4"
+                          aria-describedby={
+                            GeneratorFunctionPrototype {
+                              "_invoke": [Function],
+                            }
+                          }
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -6148,13 +6300,21 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby="snackbar-dialog-4"
+                            aria-describedby={
+                              GeneratorFunctionPrototype {
+                                "_invoke": [Function],
+                              }
+                            }
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id="snackbar-dialog-4"
+                              id={
+                                GeneratorFunctionPrototype {
+                                  "_invoke": [Function],
+                                }
+                              }
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -6182,11 +6342,19 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id="snackbar-dialog-4"
+                                id={
+                                  GeneratorFunctionPrototype {
+                                    "_invoke": [Function],
+                                  }
+                                }
                               >
                                 <strong
                                   className="c4"
-                                  id="snackbar-dialog-4"
+                                  id={
+                                    GeneratorFunctionPrototype {
+                                      "_invoke": [Function],
+                                    }
+                                  }
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -6325,26 +6493,32 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -6476,26 +6650,32 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -6646,29 +6826,29 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -6680,10 +6860,6 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -6707,30 +6883,34 @@ exports[`<SnackBar /> should match snapshots 6`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -6742,10 +6922,6 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -6767,6 +6943,10 @@ exports[`<SnackBar /> should match snapshots 6`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -6959,29 +7139,29 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: transparent;
   border: 1.5px solid transparent;
   box-shadow: none;
@@ -6993,10 +7173,6 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 
 .c7 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c7 .c10 {
-  font-size: 24px;
 }
 
 .c7:hover {
@@ -7020,30 +7196,34 @@ exports[`<SnackBar /> should match snapshots 6`] = `
   color: #1355d0;
 }
 
+.c7 .c10 {
+  font-size: 24px;
+}
+
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: bold;
+  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  font-size: 16px;
-  padding: 0 16px;
-  height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   background-color: #1355d0;
   border: 1.5px solid #1355d0;
   box-shadow: 0 2px 4px 0 #cccccc;
@@ -7055,10 +7235,6 @@ exports[`<SnackBar /> should match snapshots 6`] = `
 
 .c9 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c9 .c10 {
-  font-size: 24px;
 }
 
 .c9:hover {
@@ -7080,6 +7256,10 @@ exports[`<SnackBar /> should match snapshots 6`] = `
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
+}
+
+.c9 .c10 {
+  font-size: 24px;
 }
 
 .c1 {
@@ -7263,14 +7443,14 @@ exports[`<SnackBar /> should match snapshots 6`] = `
               class="c2"
             >
               <div
-                aria-describedby="snackbar-dialog-5"
+                aria-describedby="[object Generator]"
                 class="c3"
                 role="alertdialog"
                 tabindex="0"
               >
                 <strong
                   class="c4"
-                  id="snackbar-dialog-5"
+                  id="[object Generator]"
                 >
                   Text of SnackBar component
                 </strong>
@@ -7436,14 +7616,22 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                       className="c2"
                     >
                       <SnackBarDialog
-                        aria-describedby="snackbar-dialog-5"
+                        aria-describedby={
+                          GeneratorFunctionPrototype {
+                            "_invoke": [Function],
+                          }
+                        }
                         role="alertdialog"
                         secondsToClose={6}
                         skin="black"
                         tabIndex="0"
                       >
                         <StyledComponent
-                          aria-describedby="snackbar-dialog-5"
+                          aria-describedby={
+                            GeneratorFunctionPrototype {
+                              "_invoke": [Function],
+                            }
+                          }
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -7476,13 +7664,21 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                           tabIndex="0"
                         >
                           <div
-                            aria-describedby="snackbar-dialog-5"
+                            aria-describedby={
+                              GeneratorFunctionPrototype {
+                                "_invoke": [Function],
+                              }
+                            }
                             className="c3"
                             role="alertdialog"
                             tabIndex="0"
                           >
                             <TextContainer
-                              id="snackbar-dialog-5"
+                              id={
+                                GeneratorFunctionPrototype {
+                                  "_invoke": [Function],
+                                }
+                              }
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -7510,11 +7706,19 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                id="snackbar-dialog-5"
+                                id={
+                                  GeneratorFunctionPrototype {
+                                    "_invoke": [Function],
+                                  }
+                                }
                               >
                                 <strong
                                   className="c4"
-                                  id="snackbar-dialog-5"
+                                  id={
+                                    GeneratorFunctionPrototype {
+                                      "_invoke": [Function],
+                                    }
+                                  }
                                 >
                                   Text of SnackBar component
                                 </strong>
@@ -7653,26 +7857,32 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",
@@ -7804,26 +8014,32 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
-                                                    "display:flex;align-items:center;justify-content:center;font-weight:bold;letter-spacing:0.2px;*:nth-child(2){margin-left:5px;}",
+                                                    "align-items:center;",
+                                                    [Function],
+                                                    " display:flex;",
+                                                    [Function],
+                                                    " font-weight:bold;",
+                                                    [Function],
+                                                    " justify-content:center;",
+                                                    [Function],
+                                                    " letter-spacing:0.2px;",
+                                                    [Function],
+                                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
                                                     [Function],
                                                     " ",
                                                     [Function],
-                                                    " ",
+                                                    ":hover{",
                                                     [Function],
+                                                    "}:focus{",
+                                                    [Function],
+                                                    "}:active{",
+                                                    [Function],
+                                                    "}",
                                                     " ",
-                                                    "transition: all 0.2s ease-in-out",
-                                                    ";",
                                                     ".c10",
                                                     "{",
                                                     [Function],
                                                     "}",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
-                                                    " ",
-                                                    [Function],
                                                   ],
                                                 },
                                                 "displayName": "Button__StyledButton",

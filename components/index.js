@@ -11,6 +11,7 @@ import Dropdown from './Dropdown';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
+import Popover from './Popover';
 import RadioGroup from './RadioGroup';
 import Slider from './Slider';
 import SnackBar from './SnackBar';
@@ -36,6 +37,7 @@ export {
   Icon,
   IconFont,
   Input,
+  Popover,
   RadioGroup,
   Row,
   Slider,

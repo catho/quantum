@@ -31,6 +31,9 @@ export default [
   // Tooltip
   'Tooltip',
 
+  // Popover
+  'Popover',
+
   // Badge
   'Badge',
 
