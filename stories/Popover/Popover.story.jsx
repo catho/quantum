@@ -7,5 +7,12 @@ const description = `Popovers provide additional information upon hover or focus
 They often contain helper text that is contextual to an element.`;
 
 storiesOf('Popover', module).add('Popover', () => (
-  <AutoExample description={description} component={Popover} />
+  <AutoExample
+    description={description}
+    component={Popover}
+    componentProps={{
+      children: 'Popover me',
+      text: 'This is a Popover.',
+    }}
+  />
 ));
