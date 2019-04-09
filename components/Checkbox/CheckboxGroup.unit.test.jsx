@@ -35,7 +35,7 @@ const _childrenTest = CheckboxItem => {
       expect(withChildren.find(CheckboxItem)).toHaveLength(3);
     });
 
-    it(`should <CheckboxGroup /> have proper values state`, () => {
+    it(`should <CheckboxGroup /> have proper items state`, () => {
       const children = [
         { value: 'foo', name: 'Foo', checked: true },
         { value: 'bar', name: 'Bar' },
@@ -50,8 +50,8 @@ const _childrenTest = CheckboxItem => {
         { value: 'baz', name: 'Baz', checked: true },
       ];
 
-      expect(withChildren.state('values')).toEqual(desiredState);
-      expect(withOptions.state('values')).toEqual(desiredState);
+      expect(withChildren.state('items')).toEqual(desiredState);
+      expect(withOptions.state('items')).toEqual(desiredState);
     });
 
     it(`should call onChange on every <${CheckboxItem.displayName} />`, () => {

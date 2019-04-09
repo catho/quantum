@@ -1,35 +1,86 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import {
-  TabbedView,
-  Heading,
-  Tab,
-  ComponentPanel,
   AutoPropsApi,
+  CodeExample,
+  ComponentPanel,
+  Heading,
+  StoryContainer,
+  Tab,
+  TabbedView,
+  Title,
 } from '@catho/quantum-storybook-ui';
 import Checkbox from '../../components/Checkbox';
-import checkboxGroup from './sub-components/checkboxGroup';
+import CheckboxGroup from '../../components/Checkbox/CheckboxGroup';
+import { Col, Row } from '../../components/Grid';
+import groupExamples from './sub-components/groupExamples';
 
-const description = `Checkboxes are used when there is a list of options and
-the user may select multiple options, including all or none.`;
+const CheckboxGroupExample = ({ code, component }) => (
+  <>
+    <Row>
+      <Col small={6}>
+        <CodeExample component={{}} code={code} showTitle={false} />
+      </Col>
+      <Col small={6}>
+        <br />
+        {component}
+      </Col>
+    </Row>
+  </>
+);
+
+CheckboxGroupExample.propTypes = {
+  code: PropTypes.string.isRequired,
+  component: PropTypes.node.isRequired,
+};
 
 storiesOf('Forms', module).add('Checkbox', () => (
   <>
-    <Heading name="Checkbox">{description}</Heading>
+    <Heading name="Checkbox">
+      Checkboxes are used when there is a list of options and the user may
+      select multiple options, including all or none.
+    </Heading>
 
     <TabbedView>
       <Tab title="Usage">
         <ComponentPanel
-          component={<Checkbox name="test" />}
+          component={<Checkbox name="required-name" />}
           importModules="Checkbox"
         />
       </Tab>
 
-      <Tab title="API">
-        <AutoPropsApi component={Checkbox} />
+      <Tab title="Checkbox group">
+        <StoryContainer>
+          <Title as="h2">Checkbox Group</Title>
+          <p>
+            <code>CheckboxGroup</code> component has the ability to manage, get
+            values via a single <code>onChange</code> callback prop and apply a
+            single error message to a group of checkboxes. Also, it offers an
+            alternative way to instantiate checkbox items, with{' '}
+            <code>options</code> prop:
+          </p>
+
+          <CheckboxGroupExample {...groupExamples.simple} />
+
+          <p>With a shared error message:</p>
+
+          <CheckboxGroupExample {...groupExamples.withError} />
+
+          <p>
+            A controlled group triggers its changes via <code>onChange</code>{' '}
+            callback prop, with is called with the current changed checkbox
+            event and a list with checkboxes values.
+          </p>
+
+          <CheckboxGroupExample {...groupExamples.controlled} />
+        </StoryContainer>
       </Tab>
 
-      <Tab title="Checkbox group">{checkboxGroup}</Tab>
+      <Tab title="API">
+        <AutoPropsApi title="Checkbox" component={Checkbox} />
+        <AutoPropsApi title="CheckboxGroup" component={CheckboxGroup} />
+      </Tab>
     </TabbedView>
   </>
 ));

@@ -25,25 +25,29 @@ class CheckboxGroup extends React.Component {
         )
       : options;
 
-    const values = childrenProps.map(({ checked, name, value }) => ({
+    const items = childrenProps.map(({ checked, name, value }) => ({
       checked: Boolean(checked),
       name,
       value,
     }));
 
-    this.state = { values };
+    this.state = { items };
   }
 
-  _onChange = ({ target: { checked, name } }) => {
+  _onChange = event => {
+    const {
+      target: { checked, name },
+    } = event;
     const { onChange } = this.props;
-    const { values } = this.state;
-    const item = values.find(({ name: checkboxName }) => checkboxName === name);
+    const { items } = this.state;
 
-    item.checked = checked;
+    const newItems = items.map(item =>
+      item.name === name ? { ...item, checked } : item,
+    );
 
-    onChange(values);
+    onChange(event, newItems);
 
-    this.setState({ values });
+    this.setState({ items: newItems });
   };
 
   render() {
@@ -92,6 +96,7 @@ CheckboxGroup.propTypes = {
     PropTypes.element,
   ]),
   error: PropTypes.string,
+  /** It captures group changes. Signature: onChange(event: SynteticEvent, list: Array) */
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(
     PropTypes.shape({
