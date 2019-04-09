@@ -58,14 +58,14 @@ const pagination = ({ totalPages = 1, activePage = 1 } = {}) => {
   [firstPage, secondPage] = visiblePages;
 
   if (secondPage > firstPage + 2) {
-    visiblePages = [firstPage, '…', ...visiblePages.slice(1)];
+    visiblePages = [firstPage, '...', ...visiblePages.slice(1)];
   }
 
   penultimatePage = visiblePages[visiblePages.length - 2];
   lastPage = visiblePages[visiblePages.length - 1];
 
   if (penultimatePage < lastPage - 2) {
-    visiblePages = [...visiblePages.slice(0, -1), '…', lastPage];
+    visiblePages = [...visiblePages.slice(0, -1), '...', lastPage];
   }
 
   return visiblePages;
