@@ -5,7 +5,7 @@ import { Form, Validations } from './Form';
 import { TabbedView, Tab } from './TabbedView';
 import Badge from './Badge';
 import Button from './Button';
-import Checkbox from './Checkbox';
+import { Checkbox, CheckboxGroup } from './Checkbox';
 import Colors from './Colors';
 import Dropdown from './Dropdown';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
@@ -25,6 +25,7 @@ export {
   BREAKPOINTS,
   Button,
   Checkbox,
+  CheckboxGroup,
   Col,
   Colors,
   Container,

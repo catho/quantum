@@ -11,9 +11,7 @@ import {
   TabbedView,
   Title,
 } from '@catho/quantum-storybook-ui';
-import Checkbox from '../../components/Checkbox';
-import CheckboxGroup from '../../components/Checkbox/CheckboxGroup';
-import { Col, Row } from '../../components/Grid';
+import { Checkbox, CheckboxGroup, Col, Row } from '../../components';
 import groupExamples from './sub-components/groupExamples';
 
 const CheckboxGroupExample = ({ code, component }) => (
