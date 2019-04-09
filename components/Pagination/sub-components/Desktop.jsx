@@ -62,6 +62,7 @@ Desktop.propTypes = {
   activePage: PropTypes.number,
   activePageAriaLabel: PropTypes.string,
   handlePageClick: PropTypes.func,
+  handleHref: PropTypes.func,
   totalPages: PropTypes.number.isRequired,
   prevButtonText: PropTypes.string,
   nextButtonText: PropTypes.string,
@@ -76,7 +77,6 @@ Desktop.defaultProps = {
   handleHref: undefined,
   prevButtonText: 'Previous',
   handlePageClick: undefined,
-  infoFormatter: undefined,
 };
 
 export default Desktop;
