@@ -7,6 +7,8 @@ import Button from '../Button';
 import { Row, Col } from '../Grid';
 import uniqId from '../shared/uniqId';
 
+const ID_GENERATOR = uniqId('snackbar-dialog-');
+
 const a11yFocusTab = `outline: auto;`;
 
 const getBackgroundBySkin = skin => {
@@ -84,7 +86,9 @@ const DialogBlock = styled.section`
 class SnackBar extends React.Component {
   constructor(props) {
     super(props);
+    const { id } = props;
     this.snackBarSection = document.createElement('section');
+    this._id = id || ID_GENERATOR.next().value;
   }
 
   componentDidMount() {
@@ -120,7 +124,6 @@ class SnackBar extends React.Component {
   };
 
   render() {
-    const _id = uniqId('snackbar-dialog-');
     const {
       text,
       onClose,
@@ -142,10 +145,10 @@ class SnackBar extends React.Component {
             <SnackBarDialog
               {...rest}
               role="alertdialog"
-              aria-describedby={_id}
+              aria-describedby={this._id}
               tabIndex="0"
             >
-              <TextContainer id={_id}>{text}</TextContainer>
+              <TextContainer id={this._id}>{text}</TextContainer>
               {actionTrigger && (
                 <ActionsSection>
                   <ActionButton
@@ -188,6 +191,7 @@ SnackBar.propTypes = {
   secondsToClose: PropTypes.number,
   skin: oneOf(['cobalt', 'black']),
   text: PropTypes.string,
+  id: PropTypes.string,
 };
 
 SnackBar.defaultProps = {
@@ -200,6 +204,7 @@ SnackBar.defaultProps = {
     title: 'ACTION',
     callbackFn: () => {},
   },
+  id: undefined,
 };
 
 export default SnackBar;
