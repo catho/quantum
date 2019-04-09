@@ -126,6 +126,7 @@ Checkbox.defaultProps = {
   error: '',
   id: '',
   label: '',
+  value: '',
 };
 
 Checkbox.propTypes = {
@@ -135,7 +136,8 @@ Checkbox.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
   label: PropTypes.string,
-  value: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
 };
 
 Checkbox.displayName = 'Checkbox';

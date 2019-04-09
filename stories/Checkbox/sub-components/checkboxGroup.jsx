@@ -5,12 +5,17 @@ import CheckboxGroup from '../../../components/Checkbox/CheckboxGroup';
 export default (
   <StoryContainer>
     <Title as="h2">Checkbox Group</Title>
-    <CheckboxGroup name="group-test" onChange={list => console.log(list)}>
-      <CheckboxGroup.Checkbox value="Banana" />
-      <CheckboxGroup.Checkbox value="Orange" />
-      <CheckboxGroup.Checkbox value="Lemon" />
-      <CheckboxGroup.Checkbox value="Strawberry" disabled checked />
-      <CheckboxGroup.Checkbox value="Blueberry" />
+    <CheckboxGroup onChange={list => console.log(list)}>
+      <CheckboxGroup.Checkbox label="Banana" name="Banana" />
+      <CheckboxGroup.Checkbox label="Orange" name="Orange" />
+      <CheckboxGroup.Checkbox label="Lemon" name="Lemon" />
+      <CheckboxGroup.Checkbox
+        label="Strawberry"
+        name="Strawberry"
+        disabled
+        checked
+      />
+      <CheckboxGroup.Checkbox label="Blueberry" name="Blueberry" />
     </CheckboxGroup>
   </StoryContainer>
 );

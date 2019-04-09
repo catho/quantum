@@ -19,28 +19,27 @@ class CheckboxGroup extends React.Component {
     super(props);
 
     const { children, options } = this.props;
-    const values = {};
     const childrenProps = React.Children.count(children)
       ? React.Children.toArray(children).map(
           ({ props: childProps }) => childProps,
         )
       : options;
 
-    childrenProps.forEach(({ value, checked }) => {
-      values[value] = Boolean(checked);
-    });
+    const values = childrenProps.map(({ checked, name, value }) => ({
+      checked: Boolean(checked),
+      name,
+      value,
+    }));
 
     this.state = { values };
   }
 
-  _onChange = ({ target: { checked, value } }) => {
+  _onChange = ({ target: { checked, name } }) => {
     const { onChange } = this.props;
-    const { values: stateValues } = this.state;
+    const { values } = this.state;
+    const item = values.find(({ name: checkboxName }) => checkboxName === name);
 
-    const values = {
-      ...stateValues,
-      [value]: checked,
-    };
+    item.checked = checked;
 
     onChange(values);
 
@@ -48,16 +47,15 @@ class CheckboxGroup extends React.Component {
   };
 
   render() {
-    const { children, error, name, options } = this.props;
+    const { children, error, options } = this.props;
 
     const commonProps = {
-      name,
       error: Boolean(error),
       onChange: this._onChange,
     };
     const checkboxOptions = options.map(option =>
       Object.assign({}, option, {
-        key: option.value,
+        key: option.name,
         ...commonProps,
       }),
     );
@@ -94,14 +92,14 @@ CheckboxGroup.propTypes = {
     PropTypes.element,
   ]),
   error: PropTypes.string,
-  name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-      value: PropTypes.string.isRequired,
-      disabled: PropTypes.bool,
       checked: PropTypes.bool,
+      disabled: PropTypes.bool,
+      label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+      name: PropTypes.string.isRequired,
+      value: PropTypes.string,
     }),
   ),
 };

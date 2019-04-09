@@ -10,45 +10,43 @@ describe('<Checkbox />', () => {
   beforeEach(mockFn.mockClear);
 
   it('should match the snapshot', () => {
+    expect(renderer.create(<Checkbox name="foo" />).toJSON()).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox value="foo" />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Checkbox value="foo" error="error message" />).toJSON(),
+      renderer.create(<Checkbox name="foo" error="error message" />).toJSON(),
     ).toMatchSnapshot();
     expect(
       renderer
-        .create(<Checkbox value="foo" error="error message" checked />)
+        .create(<Checkbox name="foo" error="error message" checked />)
         .toJSON(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox value="foo" checked />).toJSON(),
+      renderer.create(<Checkbox name="foo" checked />).toJSON(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox value="foo" disabled />).toJSON(),
+      renderer.create(<Checkbox name="foo" disabled />).toJSON(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox value="foo" label="Some text" />).toJSON(),
+      renderer.create(<Checkbox name="foo" label="Some text" />).toJSON(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox value="foo" checked disabled />).toJSON(),
+      renderer.create(<Checkbox name="foo" checked disabled />).toJSON(),
     ).toMatchSnapshot();
   });
 
   it('should pass onChange prop to checkbox component', () => {
-    const wrapper = mount(<Checkbox value="foo" onChange={mockFn} />);
+    const wrapper = mount(<Checkbox name="foo" onChange={mockFn} />);
     const checkbox = wrapper.find('HiddenCheckbox');
     expect(wrapper.prop('onChange')).toEqual(checkbox.prop('onChange'));
   });
 
   it('should pass checked prop to checkbox component', () => {
-    const wrapper = shallow(<Checkbox value="foo" checked />);
+    const wrapper = shallow(<Checkbox name="foo" checked />);
     const checkbox = wrapper.find('HiddenCheckbox');
     expect(checkbox.prop('checked')).toEqual(true);
   });
 
   it('should apply id prop', () => {
-    const wrapper = shallow(<Checkbox value="foo" id="test" />);
+    const wrapper = shallow(<Checkbox name="foo" id="test" />);
 
     const label = wrapper.find('CheckboxLabel');
     const checkbox = wrapper.find('HiddenCheckbox');
@@ -59,7 +57,7 @@ describe('<Checkbox />', () => {
   });
 
   it('should apply label prop', () => {
-    const wrapper = mount(<Checkbox value="foo" label="test" />);
+    const wrapper = mount(<Checkbox name="foo" label="test" />);
     const labelText = wrapper.find('CheckboxLabel').text();
 
     expect(labelText).not.toBeUndefined();

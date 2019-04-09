@@ -19,7 +19,10 @@ storiesOf('Forms', module).add('Checkbox', () => (
 
     <TabbedView>
       <Tab title="Usage">
-        <ComponentPanel component={<Checkbox />} importModules="Checkbox" />
+        <ComponentPanel
+          component={<Checkbox name="test" />}
+          importModules="Checkbox"
+        />
       </Tab>
 
       <Tab title="API">

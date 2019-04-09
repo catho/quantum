@@ -18,10 +18,10 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           className=\\"Checkbox__HiddenCheckbox-sc-1ca5whm-4 bQRmLw\\"
           disabled={false}
           id=\\"\\"
-          name=\\"foo\\"
+          name=\\"Foo\\"
           onChange={[Function anonymous]}
           type=\\"checkbox\\"
-          value=\\"Foo\\"
+          value=\\"\\"
         />
         <span
           aria-hidden=\\"true\\"
@@ -53,10 +53,10 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           className=\\"Checkbox__HiddenCheckbox-sc-1ca5whm-4 bQRmLw\\"
           disabled={false}
           id=\\"\\"
-          name=\\"foo\\"
+          name=\\"Bar\\"
           onChange={[Function anonymous]}
           type=\\"checkbox\\"
-          value=\\"Bar\\"
+          value=\\"\\"
         />
         <span
           aria-hidden=\\"true\\"
@@ -88,10 +88,10 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           className=\\"Checkbox__HiddenCheckbox-sc-1ca5whm-4 bQRmLw\\"
           disabled={false}
           id=\\"\\"
-          name=\\"foo\\"
+          name=\\"Baz\\"
           onChange={[Function anonymous]}
           type=\\"checkbox\\"
-          value=\\"Baz\\"
+          value=\\"\\"
         />
         <span
           aria-hidden=\\"true\\"
@@ -223,10 +223,10 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         className="c2"
         disabled={false}
         id=""
-        name="groceries"
+        name="Foo"
         onChange={[Function]}
         type="checkbox"
-        value="Foo"
+        value=""
       />
       <span
         aria-hidden="true"
@@ -257,10 +257,10 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         className="c2"
         disabled={false}
         id=""
-        name="groceries"
+        name="Bar"
         onChange={[Function]}
         type="checkbox"
-        value="Bar"
+        value=""
       />
       <span
         aria-hidden="true"
@@ -291,10 +291,10 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         className="c2"
         disabled={false}
         id=""
-        name="groceries"
+        name="Baz"
         onChange={[Function]}
         type="checkbox"
-        value="Baz"
+        value=""
       />
       <span
         aria-hidden="true"
@@ -425,10 +425,10 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         className="c2"
         disabled={false}
         id=""
-        name="foo"
+        name="Foo"
         onChange={[Function]}
         type="checkbox"
-        value="Foo"
+        value=""
       />
       <span
         aria-hidden="true"
@@ -459,10 +459,10 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         className="c2"
         disabled={false}
         id=""
-        name="foo"
+        name="Bar"
         onChange={[Function]}
         type="checkbox"
-        value="Bar"
+        value=""
       />
       <span
         aria-hidden="true"
@@ -493,10 +493,10 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         className="c2"
         disabled={false}
         id=""
-        name="foo"
+        name="Baz"
         onChange={[Function]}
         type="checkbox"
-        value="Baz"
+        value=""
       />
       <span
         aria-hidden="true"
