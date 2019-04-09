@@ -8,9 +8,7 @@ describe('Popover component ', () => {
   describe('All positions', () => {
     it('Should match the snapshot when place is top', () => {
       const popover = mount(
-        <Popover place="top" text={POPOVER_TEXT}>
-          Hover Me
-        </Popover>,
+        <Popover text={POPOVER_TEXT}>popover here</Popover>,
       );
       expect(popover.html()).toMatchSnapshot();
     });
