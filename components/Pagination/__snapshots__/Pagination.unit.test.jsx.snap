@@ -1,6 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c4 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
 .c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -88,53 +137,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   color: #1355d0;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  color: #cccccc;
-  cursor: not-allowed;
-}
-
-.c4 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.c4:hover,
-.c4:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -148,7 +150,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav
@@ -213,6 +214,55 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c4 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
 .c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -300,53 +350,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   color: #1355d0;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  color: #cccccc;
-  cursor: not-allowed;
-}
-
-.c4 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.c4:hover,
-.c4:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -360,7 +363,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav
@@ -433,6 +435,94 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c6 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c6:hover,
+.c6:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c5 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
 .c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -520,92 +610,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   color: #1355d0;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  color: #cccccc;
-  cursor: not-allowed;
-}
-
-.c6 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.c6:hover,
-.c6:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
-}
-
-.c4 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c5 {
-  position: relative;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c5:after {
-  left: 8px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c5:before {
-  left: 16px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -619,7 +623,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav
@@ -691,6 +694,33 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
 .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -778,32 +808,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1355d0;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.c1:hover,
-.c1:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -817,7 +821,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav
@@ -898,6 +901,72 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
 .c5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -985,71 +1054,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1355d0;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.c1:hover,
-.c1:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
-}
-
-.c3 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c4 {
-  position: relative;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:after {
-  left: 8px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:before {
-  left: 16px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1063,7 +1067,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav
@@ -1135,6 +1138,72 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
 .c5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1222,71 +1291,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1355d0;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.c1:hover,
-.c1:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
-}
-
-.c3 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c4 {
-  position: relative;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:after {
-  left: 8px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:before {
-  left: 16px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1300,7 +1304,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav
@@ -1372,6 +1375,72 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
 .c5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1459,71 +1528,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   color: #1355d0;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.c1:hover,
-.c1:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
-}
-
-.c3 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c4 {
-  position: relative;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:after {
-  left: 8px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:before {
-  left: 16px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1537,7 +1541,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav
@@ -1616,6 +1619,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
 .c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1660,27 +1685,6 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   color: #FFFFFF;
 }
 
-.c1 {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 0 4px;
-  outline: none;
-  padding: 8px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  color: #cccccc;
-  cursor: not-allowed;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1694,7 +1698,6 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 16px !important;
 }
 
 <nav

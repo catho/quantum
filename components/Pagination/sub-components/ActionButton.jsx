@@ -12,6 +12,7 @@ const StyledButton = styled.a`
   margin: 0 4px;
   outline: none;
   padding: 8px;
+  text-align: center;
   text-decoration: none;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
     border 0.2s ease-in-out;

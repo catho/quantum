@@ -9,6 +9,7 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
   margin: 0 4px;
   outline: none;
   padding: 8px;
+  text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
@@ -44,6 +45,7 @@ exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop
   margin: 0 4px;
   outline: none;
   padding: 8px;
+  text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;

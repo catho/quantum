@@ -42,7 +42,15 @@ storiesOf('Pagination', module).add('Pagination', () => (
               <SimpleHighlight>{`<Pagination totalPages={6} />`}</SimpleHighlight>
             </Col>
             <Col medium={7}>
-              <Pagination totalPages={6} />
+              <Pagination
+                totalPages={6}
+                infoFormatter={(activePage, totalPages) => (
+                  <>
+                    <strong>{activePage}</strong> de{' '}
+                    <strong>{totalPages}</strong>
+                  </>
+                )}
+              />
             </Col>
           </Row>
 

@@ -2,20 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Page from './sub-components/Page';
-import ActionButton from './sub-components/ActionButton';
-import Dots from './sub-components/Dots';
-
-import pagination from './utils/pagination';
+import { BREAKPOINTS } from '../shared';
+import Desktop from './sub-components/Desktop';
+import Mobile from './sub-components/Mobile';
 
 const Wrapper = styled.nav`
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 16px !important;
 `;
-
-const generateDotsKey = index => `dots-${index}`;
 
 const Pagination = ({
   ariaLabel,
@@ -27,6 +22,7 @@ const Pagination = ({
   prevButtonText,
   onPageClick,
   totalPages,
+  infoFormatter,
   ...props
 }) => {
   const handlePageClick = page => e => {
@@ -51,44 +47,23 @@ const Pagination = ({
     return pageHref(page);
   };
 
+  const width = (window && window.innerWidth) || 480;
+
+  const Component = width >= BREAKPOINTS.small.width ? Desktop : Mobile;
+
   return (
     <Wrapper aria-label={ariaLabel} {...props}>
-      <ActionButton
-        aria-disabled={activePage === 1}
-        onClick={handlePageClick(activePage - 1)}
-        href={handleHref(activePage - 1)}
-      >
-        {prevButtonText}
-      </ActionButton>
-
-      {pagination({ totalPages, activePage }).map((page, index) => {
-        if (page === '...') {
-          return <Dots key={generateDotsKey(index)} />;
-        }
-
-        return (
-          <Page
-            aria-current={activePage === page ? 'page' : false}
-            aria-label={`${
-              activePage === page ? `${activePageAriaLabel}, ` : ''
-            }${pageAriaLabel} ${page}`}
-            key={page}
-            active={activePage === page}
-            onClick={handlePageClick(page)}
-            href={handleHref(page)}
-          >
-            {page}
-          </Page>
-        );
-      })}
-
-      <ActionButton
-        aria-disabled={activePage === totalPages}
-        onClick={handlePageClick(activePage + 1)}
-        href={handleHref(activePage + 1)}
-      >
-        {nextButtonText}
-      </ActionButton>
+      <Component
+        activePage={activePage}
+        handlePageClick={handlePageClick}
+        handleHref={handleHref}
+        prevButtonText={prevButtonText}
+        nextButtonText={nextButtonText}
+        totalPages={totalPages}
+        activePageAriaLabel={activePageAriaLabel}
+        pageAriaLabel={pageAriaLabel}
+        infoFormatter={infoFormatter}
+      />
     </Wrapper>
   );
 };
@@ -112,6 +87,8 @@ Pagination.propTypes = {
   prevButtonText: PropTypes.string,
   /** Function to be called when prev, next or page button is clicked, it receives the next page number as an argument. */
   onPageClick: PropTypes.func,
+  /** When viewport is less than 600px (small breakpoint) the pagination will show the mobile layout, this function can be used to format the current and last page information. */
+  infoFormatter: PropTypes.func,
 };
 
 Pagination.defaultProps = {
@@ -123,6 +100,7 @@ Pagination.defaultProps = {
   pageHref: undefined,
   prevButtonText: 'Previous',
   onPageClick: undefined, // eslint-disable-line
+  infoFormatter: undefined,
 };
 
 export default Pagination;
