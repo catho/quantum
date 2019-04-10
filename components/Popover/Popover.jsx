@@ -2,17 +2,18 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 import Colors from '../Colors';
-import placementConfig from '../Tooltip/options';
+import placementConfig from './options';
 import Button from '../Button';
 
 const getStyleBySkin = skin => {
-  const color = skin.toUpperCase();
-  // const indexColor = skin === 'default' ? '500' : '700';
+  const indexColor = skin.toUpperCase();
   return `
       background-color: ${
-        skin === 'default' ? Colors.WHITE : Colors[color][200]
+        skin === 'default' ? Colors.WHITE : Colors[indexColor][200]
       };
-      color: ${skin === 'default' ? Colors.BLACK[700] : Colors[color][900]};
+      color: ${
+        skin === 'default' ? Colors.BLACK[700] : Colors[indexColor][900]
+      };
   `;
 };
 
@@ -46,6 +47,7 @@ const PopoverText = styled.span`
 `;
 
 const Wrapper = styled.div`
+  display: inline-block;
   position: relative;
 `;
 
@@ -67,7 +69,6 @@ const CloseButton = styled(Button.Icon).attrs({
 `;
 
 const ChildrenBlock = styled.div`
-  text-decoration: none;
   cursor: pointer;
 `;
 
@@ -83,20 +84,18 @@ class Popover extends Component {
   componentDidMount() {}
 
   isVisible = visible => {
+    const { onClose } = this.props;
+    if (!visible) {
+      onClose();
+    }
+
     this.setState({ visible });
   };
 
   render() {
-    const {
-      children,
-      text,
-      placement,
-      visible,
-      isClickable,
-      onClose,
-      ...rest
-    } = this.props;
+    const { children, text, placement, visible, onClose, ...rest } = this.props;
     const { visible: visibleState } = this.state;
+
     return (
       <Wrapper>
         <PopoverContent
@@ -123,7 +122,6 @@ Popover.propTypes = {
   visible: PropTypes.bool,
   text: PropTypes.string.isRequired,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-  isClickable: PropTypes.bool,
   onClose: PropTypes.func,
   skin: oneOf(['default', 'success', 'warning', 'error']),
 };
@@ -131,7 +129,6 @@ Popover.propTypes = {
 Popover.defaultProps = {
   visible: false,
   placement: 'top',
-  isClickable: false,
   onClose: () => {},
   skin: 'default',
 };
