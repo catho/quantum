@@ -67,8 +67,8 @@ storiesOf('Forms', module).add('Checkbox', () => (
 
           <p>
             A controlled group triggers its changes via <code>onChange</code>{' '}
-            callback prop, with is called with the current changed checkbox
-            event and a list with checkboxes values.
+            callback prop, wich is called with the current changed checkbox
+            event and a list of checkboxes values.
           </p>
 
           <CheckboxGroupExample {...groupExamples.controlled} />

@@ -24,7 +24,6 @@ class Group extends React.Component {
         options={options}
         type="button"
         error="Example error message"
-        inline
       />
     );
   }

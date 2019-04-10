@@ -81,7 +81,7 @@ class CheckboxGroup extends React.Component {
 CheckboxGroup.Checkbox = Checkbox;
 
 /**
- * Group for Radio components.
+ * Group for Checkbox components.
  */
 CheckboxGroup.defaultProps = {
   children: undefined,

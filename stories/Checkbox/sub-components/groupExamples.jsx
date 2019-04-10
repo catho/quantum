@@ -4,7 +4,7 @@ import CheckboxGroup from '../../../components/Checkbox/CheckboxGroup';
 const options = [
   { label: 'Banana', name: 'banana' },
   { label: 'Orange', name: 'orange', checked: true },
-  { label: 'Lemon', name: 'lemon' },
+  { label: 'Lemon', name: 'lemon', checked: true, disabled: true },
   { label: 'Strawberry', name: 'strawberry', disabled: true },
   { label: 'Blueberry', name: 'blueberry' },
 ];
