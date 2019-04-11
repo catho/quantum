@@ -12,7 +12,7 @@ import {
   Title,
 } from '@catho/quantum-storybook-ui';
 import { Checkbox, CheckboxGroup, Col, Row } from '../../components';
-import groupExamples from './sub-components/groupExamples';
+import { groupExamples, buttonGroupExamples } from './sub-components';
 
 const CheckboxGroupExample = ({ code, component }) => (
   <>
@@ -41,6 +41,7 @@ storiesOf('Forms', module).add('Checkbox', () => (
     </Heading>
 
     <TabbedView>
+      <Tab title="Button Group">{buttonGroupExamples}</Tab>
       <Tab title="Usage">
         <ComponentPanel
           component={<Checkbox name="required-name" />}

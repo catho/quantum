@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
 import Checkbox from './Checkbox';
+import CheckboxButton from './CheckboxButton';
 
 const Group = styled(FieldGroup)`
   position: relative;
@@ -79,6 +80,7 @@ class CheckboxGroup extends React.Component {
 }
 
 CheckboxGroup.Checkbox = Checkbox;
+CheckboxGroup.Button = CheckboxButton;
 
 /**
  * Group for Checkbox components.
