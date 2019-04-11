@@ -9,6 +9,8 @@ import Icon from '../Icon';
 import InputTypes from './InputTypes';
 import uniqId from '../shared/uniqId';
 
+const ID_GENERATOR = uniqId('input-');
+
 const {
   default: DEFAULT_INPUT_STYLE,
   LABEL_STYLE,
@@ -118,7 +120,7 @@ class Input extends React.Component {
 
     this.state = { type };
 
-    this._id = id || uniqId('input-');
+    this._id = id || ID_GENERATOR.next().value;
   }
 
   _changeType = type => {

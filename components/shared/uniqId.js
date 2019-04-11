@@ -1,8 +1,6 @@
-let _counter = 0;
+import 'babel-polyfill';
 
-export default (prefix = '') => {
-  const _id = `${prefix}${_counter}`;
-  _counter += 1;
-
-  return _id;
-};
+export default function*(prefix = '') {
+  let _counter = -1;
+  while (true) yield `${prefix}${(_counter += 1)}`;
+}

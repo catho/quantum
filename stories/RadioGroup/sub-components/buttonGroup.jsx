@@ -43,9 +43,6 @@ const buttonGroup = {
   <RadioGroup.Button value="with-icon" icon="thumb_up">
     With an Icon
   </RadioGroup.Button>
-  <RadioGroup.Button disabled value="disabled">
-    Disabled
-  </RadioGroup.Button>
   <RadioGroup.Button value="default">
     Default
   </RadioGroup.Button>

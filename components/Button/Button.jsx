@@ -79,7 +79,6 @@ const IconButton = styled(Button)`
     background-color: ${Colors.SHADOW[40]};
     color: ${Colors.BLACK[700]};
   }
-
   :active {
     box-shadow: none;
     background-color: ${Colors.SHADOW[50]};
