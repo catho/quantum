@@ -1,15 +1,29 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Heading } from '@catho/quantum-storybook-ui';
-import Logo from '../../.storybook/static/logo.svg';
+import styled from 'styled-components';
 import Introduction from './Introduction';
+import Background from '../../.storybook/static/getting-started-bg.png';
+
+const StyledHeading = styled(Heading)`
+  background-color: red;
+  position: relative;
+  background-image: url(${Background});
+  background-color: #f3f3f5;
+  padding: 45px 0 !important;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 50px;
+  }
+`;
 
 storiesOf('Introduction', module).add('Getting started', () => (
   <>
-    <Heading title="Quantum" image={Logo}>
+    <StyledHeading title="Quantum">
       CSS in JS based reusable components, are the core of Quantum
       design-system: a library for developing consistent UI/UX at Catho.
-    </Heading>
+    </StyledHeading>
 
     <Introduction />
   </>
