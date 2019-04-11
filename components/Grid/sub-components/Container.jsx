@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { query, hide, noGutters } from './shared';
 import { BREAKPOINTS } from '../../shared';
 
-const maxWidth = ({ fluid }, name) =>
-  !fluid && query[name]`max-width: ${BREAKPOINTS[name].width}px;`;
+const maxWidth = ({ name }, { width: nextWidth = 0 } = {}, fluid) =>
+  !fluid && nextWidth && query[name]`max-width: ${nextWidth}px;`;
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
@@ -13,8 +13,13 @@ const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-  ${props =>
-    Object.keys(BREAKPOINTS).map(breakpoint => maxWidth(props, breakpoint))}
+  ${({ fluid }) =>
+    Object.entries(BREAKPOINTS)
+      .map(([name, value]) => ({ name, ...value }))
+      .sort((a, b) => a.width - b.width)
+      .map((breakpoint, i, list) => {
+        return maxWidth(breakpoint, list[i + 1], fluid);
+      })}
 
   ${hide}
   ${noGutters}

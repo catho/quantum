@@ -7,7 +7,7 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
-import { Row, Col, Hide } from '../../components/Grid';
+import { Row, Col, Hide, Container } from '../../components/Grid';
 
 const importGrid = `import { Container, Row, Col, Hide } from '@catho/quantum';';`;
 const codeBackgroundColor = '#e8f2fc';
@@ -491,6 +491,12 @@ const Grid = () => (
     <Title as="h3" style={{ paddingTop: 0 }}>
       Containers
     </Title>
+
+    <Container>
+      <Row>
+        <StyledCol xsmall={4}>Teste</StyledCol>
+      </Row>
+    </Container>
 
     <p>
       You may choose one of two containers or both to use in your projects. Note
