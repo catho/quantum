@@ -5,6 +5,7 @@ import { Form, Validations } from './Form';
 import { TabbedView, Tab } from './TabbedView';
 import Badge from './Badge';
 import Button from './Button';
+import Card from './Card';
 import Checkbox from './Checkbox';
 import Colors from './Colors';
 import Dropdown from './Dropdown';
@@ -25,6 +26,7 @@ export {
   Badge,
   BREAKPOINTS,
   Button,
+  Card,
   Checkbox,
   Col,
   Colors,
