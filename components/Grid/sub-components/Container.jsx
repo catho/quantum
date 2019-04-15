@@ -17,9 +17,7 @@ const Container = styled.div`
     Object.entries(BREAKPOINTS)
       .map(([name, value]) => ({ name, ...value }))
       .sort((a, b) => a.width - b.width)
-      .map((breakpoint, i, list) => {
-        return maxWidth(breakpoint, list[i + 1], fluid);
-      })}
+      .map((breakpoint, i, list) => maxWidth(breakpoint, list[i + 1], fluid))}
 
   ${hide}
   ${noGutters}
