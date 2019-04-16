@@ -47,9 +47,9 @@ const Pagination = ({
     return pageHref(page);
   };
 
-  const width = (window && window.innerWidth) || 480;
+  const width = (window && window.innerWidth) || BREAKPOINTS.small.width;
 
-  const Component = width >= BREAKPOINTS.small.width ? Desktop : Mobile;
+  const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
 
   return (
     <Wrapper aria-label={ariaLabel} {...props}>
@@ -99,7 +99,7 @@ Pagination.defaultProps = {
   pageAriaLabel: 'Page',
   pageHref: undefined,
   prevButtonText: 'Previous',
-  onPageClick: undefined, // eslint-disable-line
+  onPageClick: undefined,
   infoFormatter: undefined,
 };
 
