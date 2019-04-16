@@ -6,6 +6,8 @@ import Icon from '../Icon/Icon';
 import Colors from '../Colors';
 import { FieldGroup, Label, ErrorMessage, INPUT_STYLE } from '../shared';
 
+import { Input } from '..';
+
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
@@ -122,6 +124,8 @@ const Dropdown = ({
   placeholder,
   selectedItem,
   onChange,
+  autoComplete,
+  completeOnLength,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -141,6 +145,9 @@ const Dropdown = ({
     return changes;
   };
 
+  const inputFilter = value =>
+    items.filter(item => item.toLowerCase().indexOf(value.toLowerCase()) > -1);
+
   return (
     <FieldGroup>
       <Downshift
@@ -156,6 +163,7 @@ const Dropdown = ({
           getInputProps,
           getToggleButtonProps,
           getItemProps,
+          inputValue,
           openMenu,
           isOpen,
         }) => (
@@ -172,32 +180,64 @@ const Dropdown = ({
               </DropLabel>
             )}
             <input type="hidden" {...getInputProps()} />
-            <DropButton
-              {...getToggleButtonProps()}
-              isOpen={isOpen}
-              disabled={disabled}
-              error={error}
-              text={_buttonLabel}
-              selectedItem={selectedItem}
-            >
-              {_buttonLabel}
-              <ArrowDown />
-            </DropButton>
-            {isOpen && (
-              <DropList>
-                {items.map(item => (
-                  <DropItem
-                    {...getItemProps({
-                      item,
-                      isSelected: _isEqual(selectedItem, item),
-                      key: _getValue(item),
-                    })}
-                  >
-                    {_getLabel(item)}
-                    {_isEqual(selectedItem, item) && <CheckIcon />}
-                  </DropItem>
-                ))}
-              </DropList>
+            {autoComplete ? (
+              <div style={{ position: 'relative' }}>
+                <Input
+                  {...getInputProps({
+                    isOpen,
+                  })}
+                  error={error}
+                  disabled={disabled}
+                  text={_buttonLabel}
+                />
+                {isOpen && inputValue.length >= completeOnLength && (
+                  <DropList>
+                    {inputFilter(inputValue).map(item => (
+                      <DropItem
+                        {...getItemProps({
+                          item,
+                          isSelected: _isEqual(selectedItem, item),
+                          key: _getValue(item),
+                        })}
+                      >
+                        {_getLabel(item)}
+                        {_isEqual(selectedItem, item) && <CheckIcon />}
+                      </DropItem>
+                    ))}
+                  </DropList>
+                )}
+              </div>
+            ) : (
+              <>
+                <DropButton
+                  {...getToggleButtonProps()}
+                  isOpen={isOpen}
+                  disabled={disabled}
+                  error={error}
+                  text={_buttonLabel}
+                  selectedItem={selectedItem}
+                >
+                  {_buttonLabel}
+                  <ArrowDown />
+                </DropButton>
+
+                {isOpen && (
+                  <DropList>
+                    {items.map(item => (
+                      <DropItem
+                        {...getItemProps({
+                          item,
+                          isSelected: _isEqual(selectedItem, item),
+                          key: _getValue(item),
+                        })}
+                      >
+                        {_getLabel(item)}
+                        {_isEqual(selectedItem, item) && <CheckIcon />}
+                      </DropItem>
+                    ))}
+                  </DropList>
+                )}
+              </>
             )}
           </DropContainer>
         )}
@@ -209,6 +249,7 @@ const Dropdown = ({
 };
 
 Dropdown.defaultProps = {
+  autocomplete: false,
   disabled: false,
   error: '',
   items: [],
@@ -228,6 +269,7 @@ const itemPropType = PropTypes.oneOfType([
 ]);
 
 Dropdown.propTypes = {
+  autocomplete: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.string,
   /** A list of string or objects with value and label keys */

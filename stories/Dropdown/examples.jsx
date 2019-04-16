@@ -83,7 +83,11 @@ Controlled.propTypes = {
 };
 
 const Simple = () => (
-  <Dropdown items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']} />
+  <Dropdown
+    items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
+    autoComplete
+    completeOnLength={1}
+  />
 );
 Simple.CODE = `<Dropdown
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
