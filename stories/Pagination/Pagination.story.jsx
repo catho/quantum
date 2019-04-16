@@ -36,9 +36,9 @@ storiesOf('Pagination', module).add('Pagination', () => (
           <SimpleHighlight>{`import { Pagination } from '@catho/quantum';`}</SimpleHighlight>
 
           <p>
-            An adaptive Pagination component, if viewport width is below small
-            breakpoint value it will renders a mobile friendly component, if
-            not, will render an dotted Pagination component.
+            The Pagination component will render a mobile-friendly component if
+            the viewport width is below small breakpoint value else it will
+            render a dotted component.
           </p>
 
           <p>
@@ -48,19 +48,15 @@ storiesOf('Pagination', module).add('Pagination', () => (
             </strong>
           </p>
 
-          <Title as="h2">Examples</Title>
-
-          <p>
-            If you want to control the state of pagination, set{' '}
-            <code>onPageClick</code>
-            prop, if you want the <code>{'<a>'}</code> element controls the
-            pagination, set <code>pageHref</code> prop.
-          </p>
-          <p>Check the examples below:</p>
-
           <Title as="h3">Simple usage</Title>
           <Row>
             <Col medium={5}>
+              <p>
+                If you want to control the state of pagination, set{' '}
+                <code>onPageClick</code>
+                prop, if you want the <code>{'<a>'}</code> element controls the
+                pagination, set <code>pageHref</code> prop.
+              </p>
               <SimpleHighlight>{`<Pagination totalPages={6} />`}</SimpleHighlight>
             </Col>
             <Col medium={7}>
@@ -115,13 +111,8 @@ storiesOf('Pagination', module).add('Pagination', () => (
           <Row>
             <Col medium={5}>
               <p>
-                When viewport is below <code>small</code> breakpoint, then,
-                pagination component will be displayed with improvements for
-                small devices.
-              </p>
-              <p>
-                You can format the text with the <code>infoFormatter</code>{' '}
-                prop, see the example below:
+                You can format the helper text of the mobile-friendly component
+                with the <code>infoFormatter</code> prop, see the example below:
               </p>
               <SimpleHighlight>
                 {`<Pagination
@@ -208,7 +199,7 @@ storiesOf('Pagination', module).add('Pagination', () => (
 
           <Title as="h3">onClickPage prop</Title>
           <p>
-            Thorugh <code>onClickPage</code> prop is possible to get the page
+            Through <code>onClickPage</code> prop is possible to get the page
             clicked.
           </p>
           <p>
@@ -221,7 +212,7 @@ storiesOf('Pagination', module).add('Pagination', () => (
           </p>
           <p>
             Here&apos;s an example of a controlled pagination that use this prop
-            to handle the state.
+            to handle the state:
           </p>
           <Row>
             <Col medium={5}>
