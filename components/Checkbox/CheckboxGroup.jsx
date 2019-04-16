@@ -14,24 +14,26 @@ const ErrorLabel = styled(ErrorMessage)`
 
 ErrorLabel.displayName = 'ErrorLabel';
 
+const CheckboxGroupContext = React.createContext({});
 class CheckboxGroup extends React.Component {
   constructor(props) {
     super(props);
 
     const { children, options } = this.props;
-    const childrenProps = React.Children.count(children)
+
+    const items = React.Children.count(children)
       ? React.Children.toArray(children).map(
           ({ props: childProps }) => childProps,
         )
       : options;
 
-    const items = childrenProps.map(({ checked, name, value }) => ({
-      checked: Boolean(checked),
-      name,
-      value,
-    }));
-
-    this.state = { items };
+    this.state = {
+      items: items.map(({ checked, name, value }) => ({
+        checked: Boolean(checked),
+        name,
+        value,
+      })),
+    };
   }
 
   _onChange = event => {
@@ -53,25 +55,22 @@ class CheckboxGroup extends React.Component {
   render() {
     const { children, error, options } = this.props;
 
-    const commonProps = {
-      error: Boolean(error),
-      onChange: this._onChange,
-    };
-    const checkboxOptions = options.map(option =>
-      Object.assign({}, option, {
-        key: option.name,
-        ...commonProps,
-      }),
-    );
-
     const checkboxes =
-      React.Children.map(children, child =>
-        React.cloneElement(child, commonProps),
-      ) || checkboxOptions.map(childProps => <Checkbox {...childProps} />);
+      children ||
+      options.map(option => (
+        <Checkbox {...Object.assign({}, option, { key: option.name })} />
+      ));
 
     return (
       <Group>
-        {checkboxes}
+        <CheckboxGroupContext.Provider
+          value={{
+            error: Boolean(error),
+            onChange: this._onChange,
+          }}
+        >
+          {checkboxes}
+        </CheckboxGroupContext.Provider>
         {error && <ErrorLabel>{error}</ErrorLabel>}
       </Group>
     );
@@ -79,6 +78,7 @@ class CheckboxGroup extends React.Component {
 }
 
 CheckboxGroup.Checkbox = Checkbox;
+CheckboxGroup.Context = CheckboxGroupContext;
 
 /**
  * Group for Checkbox components.

@@ -528,3 +528,292 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   </div>
 </div>
 `;
+
+exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an error 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c5 {
+  display: block;
+  margin-bottom: 5px;
+  color: #4c4c4c;
+  font-size: 16px;
+  margin: 0 0 0 10px;
+}
+
+.c7 + .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 2px solid #999999;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 18px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 18px;
+}
+
+.c7:checked + .c3 {
+  background-color: #1355d0;
+  border-width: 0;
+  color: #FFFFFF;
+}
+
+.c7:hover + .c3,
+.c7:focus + .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c7[disabled] ~ .c4 {
+  color: #999999;
+}
+
+.c7[disabled] + .c3 {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c7[disabled]:checked + .c3 {
+  background-color: #999999;
+}
+
+.c7[disabled]:hover + .c3 {
+  box-shadow: none;
+}
+
+.c2 {
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.c2 + .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 2px solid #999999;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 18px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 18px;
+}
+
+.c2:checked + .c3 {
+  background-color: #1355d0;
+  border-width: 0;
+  color: #FFFFFF;
+}
+
+.c2:hover + .c3,
+.c2:focus + .c3 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2 + .c3 {
+  border-color: #ff2d4d;
+}
+
+.c2:checked + .c3 {
+  background-color: #ff2d4d;
+}
+
+.c2:hover + .c3,
+.c2:focus + .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+}
+
+.c2[disabled] {
+  cursor: not-allowed;
+}
+
+.c2[disabled] ~ .c4 {
+  color: #999999;
+}
+
+.c2[disabled] + .c3 {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c2[disabled]:checked + .c3 {
+  background-color: #999999;
+}
+
+.c2[disabled]:hover + .c3 {
+  box-shadow: none;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  position: relative;
+}
+
+.c6 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className=""
+  >
+    <div
+      className="c1"
+    >
+      <input
+        checked={false}
+        className="c2"
+        disabled={false}
+        id=""
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        check
+      </span>
+      <label
+        className="c4 c5"
+        htmlFor=""
+      >
+        Foo
+      </label>
+    </div>
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="c1"
+    >
+      <input
+        checked={false}
+        className="c2"
+        disabled={false}
+        id=""
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        check
+      </span>
+      <label
+        className="c4 c5"
+        htmlFor=""
+      >
+        Bar
+      </label>
+    </div>
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="c1"
+    >
+      <input
+        checked={false}
+        className="c2"
+        disabled={false}
+        id=""
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        check
+      </span>
+      <label
+        className="c4 c5"
+        htmlFor=""
+      >
+        Baz
+      </label>
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    Error Message
+  </div>
+</div>
+`;

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import CheckboxGroup from './CheckboxGroup';
 
 import { Label, ErrorMessage } from '../shared';
 import Colors from '../Colors';
@@ -108,16 +109,39 @@ const HiddenCheckbox = styled.input.attrs({
 
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-const Checkbox = ({ children, error, id, label, value, ...rest }) => (
-  <Wrapper>
-    <CheckboxWrapper>
-      <HiddenCheckbox id={id} error={error} value={value} {...rest} />
-      <CheckIcon />
-      <CheckboxLabel htmlFor={id}>{children || label || value}</CheckboxLabel>
-    </CheckboxWrapper>
-    {error && typeof error === 'string' && <ErrorMessage>{error}</ErrorMessage>}
-  </Wrapper>
-);
+const useGroupContext = ({ error, onChange }) => {
+  const { error: errorContext, onChange: onChangeContext } = useContext(
+    CheckboxGroup.Context,
+  );
+
+  return {
+    error: errorContext !== undefined ? errorContext : error,
+    onChange: onChangeContext || onChange,
+  };
+};
+
+const Checkbox = ({ children, id, label, value, ...props }) => {
+  const { error, onChange } = useGroupContext(props);
+
+  return (
+    <Wrapper>
+      <CheckboxWrapper>
+        <HiddenCheckbox
+          {...props}
+          id={id}
+          error={error}
+          value={value}
+          onChange={onChange}
+        />
+        <CheckIcon />
+        <CheckboxLabel htmlFor={id}>{children || label || value}</CheckboxLabel>
+      </CheckboxWrapper>
+      {error && typeof error === 'string' && (
+        <ErrorMessage>{error}</ErrorMessage>
+      )}
+    </Wrapper>
+  );
+};
 
 Checkbox.defaultProps = {
   checked: false,
