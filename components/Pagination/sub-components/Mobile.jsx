@@ -42,6 +42,8 @@ const StyledActionButton = styled(ActionButton)`
       : ''}
 `;
 
+Info.displayName = 'Info';
+
 const Mobile = ({
   activePage,
   handlePageClick,
@@ -89,8 +91,8 @@ Mobile.defaultProps = {
   nextButtonText: 'Next',
   prevButtonText: 'Previous',
   infoFormatter: (activePage, lastPage) => `${activePage} of ${lastPage}`,
-  handleHref: undefined,
-  handlePageClick: undefined,
+  handleHref: () => {},
+  handlePageClick: () => {},
 };
 
 export default Mobile;
