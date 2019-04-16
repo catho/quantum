@@ -5,8 +5,9 @@ import ActionButton from './ActionButton';
 import Dots from './Dots';
 import Page from './Page';
 import pagination from '../utils/pagination';
+import uniqId from '../../shared/uniqId';
 
-const generateDotsKey = index => `dots-${index}`;
+const DOT_KEY_GENERATOR = uniqId('dot-');
 
 const Desktop = ({
   activePage,
@@ -27,9 +28,9 @@ const Desktop = ({
       {prevButtonText}
     </ActionButton>
 
-    {pagination({ totalPages, activePage }).map((page, index) => {
+    {pagination({ totalPages, activePage }).map(page => {
       if (page === '...') {
-        return <Dots key={generateDotsKey(index)} />;
+        return <Dots key={DOT_KEY_GENERATOR.next().value} />;
       }
 
       return (
