@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import Pagination from './Pagination';
 
 describe('<Pagination />', () => {
