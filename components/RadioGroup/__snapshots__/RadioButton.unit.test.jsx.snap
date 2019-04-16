@@ -99,8 +99,8 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
 }
 
 .c0 .c5 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div
@@ -249,8 +249,8 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 .c0 .c6 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div
@@ -375,13 +375,13 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 .c0 .c4 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 .c7 .c4 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div
@@ -541,13 +541,13 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 }
 
 .c0 .c4 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 .c7 .c4 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div
@@ -709,8 +709,8 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 }
 
 .c0 .c6 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div
@@ -839,8 +839,8 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 }
 
 .c0 .c6 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div
@@ -977,8 +977,8 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
 
 .c0 {
   display: inline-block;
-  vertical-align: top;
   margin-right: 16px;
+  vertical-align: top;
 }
 
 .c0:last-child {
@@ -986,8 +986,8 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
 }
 
 .c0 .c5 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div
@@ -1091,8 +1091,8 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 }
 
 .c0 .c4 {
-  margin-left: 8px;
   font-size: 17px;
+  margin-left: 8px;
 }
 
 <div

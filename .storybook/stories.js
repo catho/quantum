@@ -45,4 +45,7 @@ export default [
 
   // Modal
   'Modal',
+
+  // SnackBar
+  'SnackBar',
 ].map(s => `./${s}/${s}.story.jsx`);

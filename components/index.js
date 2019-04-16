@@ -6,6 +6,7 @@ import { TabbedView, Tab } from './TabbedView';
 import Badge from './Badge';
 import Button from './Button';
 import { Checkbox, CheckboxGroup } from './Checkbox';
+import Card from './Card';
 import Colors from './Colors';
 import Dropdown from './Dropdown';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
@@ -13,6 +14,7 @@ import Icon from './Icon';
 import Input from './Input';
 import RadioGroup from './RadioGroup';
 import Slider from './Slider';
+import SnackBar from './SnackBar';
 import Tag from './Tag';
 import TextArea from './TextArea';
 import Toggle from './Toggle';
@@ -24,6 +26,7 @@ export {
   Badge,
   BREAKPOINTS,
   Button,
+  Card,
   Checkbox,
   CheckboxGroup,
   Col,
@@ -34,11 +37,12 @@ export {
   GlobalStyle,
   Hide,
   Icon,
-  Input,
   IconFont,
+  Input,
   RadioGroup,
   Row,
   Slider,
+  SnackBar,
   Tag,
   TextArea,
   Toggle,
