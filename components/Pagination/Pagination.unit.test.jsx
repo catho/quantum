@@ -4,6 +4,10 @@ import { shallow, mount } from 'enzyme';
 import Pagination from './Pagination';
 
 describe('<Pagination />', () => {
+  beforeEach(() => {
+    window.innerWidth = 1024;
+  });
+
   describe('Snapshots', () => {
     it('should match snapshot without props', () => {
       expect(
@@ -54,13 +58,21 @@ describe('<Pagination />', () => {
           .toJSON(),
       ).toMatchSnapshot();
     });
+
+    it('should match snapshot when viewport is below then small breakpoint', () => {
+      window.innerWidth = 400;
+
+      expect(
+        renderer.create(<Pagination totalPages={10} />).toJSON(),
+      ).toMatchSnapshot();
+    });
   });
 
   describe('onPageClick prop', () => {
     describe('Page button', () => {
       it('should call onPageClick when button is clicked', () => {
         const onPageClickMock = jest.fn();
-        const wrapper = shallow(
+        const wrapper = mount(
           <Pagination totalPages={10} onPageClick={onPageClickMock} />,
         );
 
@@ -92,7 +104,7 @@ describe('<Pagination />', () => {
     describe('Action buttons', () => {
       it('should call onClick when previous button is clicked', () => {
         const onPageClickMock = jest.fn();
-        const wrapper = shallow(
+        const wrapper = mount(
           <Pagination
             totalPages={10}
             activePage={2}
@@ -108,7 +120,7 @@ describe('<Pagination />', () => {
 
       it('should call onClick when next button is clicked', () => {
         const onPageClickMock = jest.fn();
-        const wrapper = shallow(
+        const wrapper = mount(
           <Pagination totalPages={10} onPageClick={onPageClickMock} />,
         );
 
@@ -171,6 +183,38 @@ describe('<Pagination />', () => {
           .at(0)
           .prop('href'),
       ).toBe('/?page=1');
+    });
+  });
+
+  describe('Mobile Pagination', () => {
+    beforeEach(() => {
+      window.innerWidth = 400;
+    });
+    describe('infoFormatter prop', () => {
+      it('should receive activePage and totalPages as arguments', () => {
+        const infoFormatterMock = jest.fn();
+        mount(
+          <Pagination
+            totalPages={10}
+            activePage={1}
+            infoFormatter={infoFormatterMock}
+          />,
+        );
+
+        expect(infoFormatterMock).toBeCalledWith(1, 10);
+      });
+      it('should format the info text of mobile pagination component', () => {
+        const wrapper = mount(
+          <Pagination
+            totalPages={10}
+            activePage={6}
+            infoFormatter={(activePage, totalPages) =>
+              `${activePage} of ${totalPages}`
+            }
+          />,
+        );
+        expect(wrapper.find('Info').text()).toBe('6 of 10');
+      });
     });
   });
 });

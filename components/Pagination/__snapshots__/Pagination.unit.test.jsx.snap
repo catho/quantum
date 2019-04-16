@@ -1,5 +1,128 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Pagination /> Snapshots should match snapshot when viewport is below then small breakpoint 1`] = `
+.c2 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c5 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c5:hover,
+.c5:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: #cccccc;
+  color: #4c4c4c;
+  padding: 8px 16px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c3:hover {
+  background-color: #e5edfc;
+}
+
+.c3:hover strong {
+  color: #1355d0;
+}
+
+.c1 {
+  border-color: #cccccc;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c4 {
+  border-color: #cccccc;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={true}
+    className="c1 c2"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <span
+    className="c3"
+  >
+    1 of 10
+  </span>
+  <a
+    aria-disabled={false}
+    className="c4 c5"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
 exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 .c1 {
   border: 1px solid transparent;
