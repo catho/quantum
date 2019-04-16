@@ -121,25 +121,25 @@ const Checkbox = ({ children, error, id, label, value, ...rest }) => (
 
 Checkbox.defaultProps = {
   checked: false,
-  children: '',
   disabled: false,
+  children: '',
   error: '',
   id: '',
   label: '',
-  onChange: () => {},
   value: '',
+  onChange: () => {},
 };
 
 Checkbox.propTypes = {
-  children: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
+  children: PropTypes.string,
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   id: PropTypes.string,
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
-  onChange: PropTypes.func,
   value: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 Checkbox.displayName = 'Checkbox';

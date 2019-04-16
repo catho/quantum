@@ -92,9 +92,9 @@ export default {
 
 <CheckboxGroup>
   <CheckboxGroup.Checkbox label="Banana" name="banana" />
-  <CheckboxGroup.Checkbox label="Orange" name="orange" />
-  <CheckboxGroup.Checkbox label="Lemon" name="lemon" />
-  <CheckboxGroup.Checkbox label="Strawberry" name="strawberry" />
+  <CheckboxGroup.Checkbox label="Orange" name="orange" checked />
+  <CheckboxGroup.Checkbox label="Lemon" name="lemon" checked disabled />
+  <CheckboxGroup.Checkbox label="Strawberry" name="strawberry" disabled />
   <CheckboxGroup.Checkbox label="Blueberry" name="blueberry" />
 </CheckboxGroup>`,
   },
