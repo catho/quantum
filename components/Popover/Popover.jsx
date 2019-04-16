@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 import Colors from '../Colors';
 import placementConfig from './options';
+import getArrow from './config';
 import Button from '../Button';
 
 const getStyleBySkin = skin => {
@@ -33,9 +34,7 @@ const PopoverContent = styled.div`
   ${({ placement }) => placementConfig.tipPosition[placement]};
 
   &:before {
-    content: '';
-    position: absolute;
-    ${({ placement }) => placementConfig.arrowPosition[placement]};
+    ${({ placement, skin }) => getArrow(placement, skin)};
   }
 
   ${({ skin }) => getStyleBySkin(skin)}
