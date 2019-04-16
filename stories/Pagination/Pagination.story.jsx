@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 import {
   TabbedView,
   Tab,
@@ -12,8 +13,15 @@ import {
 } from '@catho/quantum-storybook-ui';
 
 import { Pagination, Row, Col } from '../../components';
+import Mobile from '../../components/Pagination/sub-components/Mobile';
 import ControlledPagination from './examples/ControlledPagination';
 import ControlledPaginationAria from './examples/ControlledPaginationAria';
+
+const MobileWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+`;
 
 storiesOf('Pagination', module).add('Pagination', () => (
   <>
@@ -27,12 +35,26 @@ storiesOf('Pagination', module).add('Pagination', () => (
           <Title as="h2">Importing Pagination</Title>
           <SimpleHighlight>{`import { Pagination } from '@catho/quantum';`}</SimpleHighlight>
 
+          <p>
+            An adaptive Pagination component, if viewport width is below small
+            breakpoint value it will renders a mobile friendly component, if
+            not, will render an dotted Pagination component.
+          </p>
+
+          <p>
+            <strong>
+              It&apos;s highly recommended to avoid pagination and use infinite
+              scroll in small devices.
+            </strong>
+          </p>
+
           <Title as="h2">Examples</Title>
 
           <p>
-            If you want to control the state of pagination, set the onPageClick
+            If you want to control the state of pagination, set{' '}
+            <code>onPageClick</code>
             prop, if you want the <code>{'<a>'}</code> element controls the
-            pagination, set the pageHref prop.
+            pagination, set <code>pageHref</code> prop.
           </p>
           <p>Check the examples below:</p>
 
@@ -65,14 +87,19 @@ storiesOf('Pagination', module).add('Pagination', () => (
           </Row>
 
           <Title as="h3">Custom previous and next button texts</Title>
-          <p>
-            It&apos;s possible to change the text from &quot;Previous&quot; and
-            &quot;Next&quot; buttons through <code>prevButtonText</code> and{' '}
-            <code>nextButtonText</code> props.
-          </p>
           <Row>
             <Col medium={5}>
-              <SimpleHighlight>{`<Pagination prevButtonText="Previous Page" nextButtonText="Next Page" totalPages={10} activePage={5} />`}</SimpleHighlight>
+              <p>
+                It&apos;s possible to change the text from &quot;Previous&quot;
+                and &quot;Next&quot; buttons through <code>prevButtonText</code>{' '}
+                and <code>nextButtonText</code> props.
+              </p>
+              <SimpleHighlight>{`<Pagination
+  prevButtonText="Previous Page"
+  nextButtonText="Next Page"
+  totalPages={10}
+  activePage={5}
+/>`}</SimpleHighlight>
             </Col>
             <Col medium={7}>
               <Pagination
@@ -84,29 +111,93 @@ storiesOf('Pagination', module).add('Pagination', () => (
             </Col>
           </Row>
 
+          <Title as="h3">Helper text</Title>
+          <Row>
+            <Col medium={5}>
+              <p>
+                When viewport is below <code>small</code> breakpoint, then,
+                pagination component will be displayed with improvements for
+                small devices.
+              </p>
+              <p>
+                You can format the text with the <code>infoFormatter</code>{' '}
+                prop, see the example below:
+              </p>
+              <SimpleHighlight>
+                {`<Pagination
+  totalPages={10}
+  infoFormatter={(activePage, totalPage) => \`\${activePage} of \${totalPage}\`}
+/>`}
+              </SimpleHighlight>
+            </Col>
+            <Col medium={7}>
+              <MobileWrapper>
+                <Mobile
+                  totalPages={10}
+                  infoFormatter={(activePage, totalPage) =>
+                    `${activePage} of ${totalPage}`
+                  }
+                />
+              </MobileWrapper>
+            </Col>
+          </Row>
+          <Row>
+            <Col medium={5}>
+              <p>
+                You can also pass a component to the returned value from
+                <code>infoFormatter</code> function.
+              </p>
+              <SimpleHighlight>
+                {`<Pagination
+  totalPages={10}
+  infoFormatter={(activePage, totalPages) => (
+    <>
+      <strong>{activePage}</strong> of{' '}
+      <strong>{totalPages}</strong>
+    </>
+  )}
+/>`}
+              </SimpleHighlight>
+            </Col>
+            <Col medium={7}>
+              <MobileWrapper>
+                <Mobile
+                  totalPages={10}
+                  infoFormatter={(activePage, totalPages) => (
+                    <>
+                      <strong>{activePage}</strong> of{' '}
+                      <strong>{totalPages}</strong>
+                    </>
+                  )}
+                />
+              </MobileWrapper>
+            </Col>
+          </Row>
+
           <Title as="h3">
             Setting the href attribute of the page link elements
           </Title>
-          <p>
-            The page elements are rendered as anchor elements (
-            <code>{`<a>`}</code>).
-          </p>
-          <p>
-            You can set the href attribute through <code>pageHref</code> prop,
-            this prop must be a function, it receives the page elements value
-            and should return a string.
-          </p>
-
-          <p>
-            Example of usage: (hover the elements to see href value, if you
-            click, the pagination will send you to another page)
-          </p>
-
           <Row>
             <Col medium={5}>
+              <p>
+                The page elements are rendered as anchor elements (
+                <code>{`<a>`}</code>).
+              </p>
+              <p>
+                You can set the href attribute through <code>pageHref</code>{' '}
+                prop, this prop must be a function, it receives the page
+                elements value and should return a string.
+              </p>
+
+              <p>
+                Example of usage: (hover the elements to see href value, if you
+                click, the pagination will send you to another page)
+              </p>
               <SimpleHighlight>
-                {
-                  '<Pagination totalPages={10} pageHref={page => `/?page=${page}`} />' // eslint-disable-line
+                {`<Pagination
+  totalPages={10}
+  pageHref={page => \`/?page=\${page}\`}
+/>` // eslint-disable-line
                 }
               </SimpleHighlight>
             </Col>
