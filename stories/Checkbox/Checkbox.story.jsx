@@ -17,10 +17,10 @@ import { groupExamples, buttonGroupExamples } from './sub-components';
 const CheckboxGroupExample = ({ code, component }) => (
   <>
     <Row>
-      <Col small={6}>
+      <Col small={7}>
         <CodeExample component={{}} code={code} showTitle={false} />
       </Col>
-      <Col small={6}>
+      <Col small={5}>
         <br />
         {component}
       </Col>

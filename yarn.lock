@@ -857,21 +857,21 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@catho/quantum-storybook-ui@^1.0.3", "@catho/quantum-storybook-ui@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@catho/quantum-storybook-ui/-/quantum-storybook-ui-1.0.4.tgz#01139e3d8fe048916e9fc226d8fee9d2b9021a49"
-  integrity sha512-uEa0qh0yip/upUWgjNCjmlXZnEjHUKceTtGaPAhW8OuJpE4UsPcjns8h5h8Ss0yPWfFjcZdY5u/12rbVKr7dgw==
+"@catho/quantum-storybook-ui@^1.0.4", "@catho/quantum-storybook-ui@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@catho/quantum-storybook-ui/-/quantum-storybook-ui-1.0.5.tgz#a572595274914fa4c94a0d6f64fd396957308e65"
+  integrity sha512-7x7LZJWKfb2t+K1136mV6VTFsZPeaGJcmlC+YMlryRgsc/pW/mfmSxMFHupXb1k/VqDU60ahRRiL44pCom0yPQ==
   dependencies:
     "@catho/quantum" "^1.8.0"
     commitizen "^3.0.7"
     react-markdown "^4.0.6"
 
 "@catho/quantum@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-1.8.0.tgz#e051c9b06213eefd980e1a60bd235b3a2ac348d4"
-  integrity sha512-Huw810Ep00dAp1bARXmIvYZ8cFxHCRmFFJCKwcht2rLsSBiQ83cNDcJACJrElg9Df7G0PaJ99LPFeHr9KiQNUg==
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-1.10.2.tgz#aa38b589759a2b3a7de2b8264f45ccac7fbecbf8"
+  integrity sha512-mPEyPWBMfoapfvT+5jLMijUNMItXB/QADUyepgPTu6bGNCL7ps6B3HjzgXxdQ4lyDgy2E41XMrIqFfch6Xb2jg==
   dependencies:
-    "@catho/quantum-storybook-ui" "^1.0.3"
+    "@catho/quantum-storybook-ui" "^1.0.4"
     "@material-ui/core" "^3.8.2"
     "@material-ui/icons" "^3.0.2"
     babel-polyfill "^6.26.0"

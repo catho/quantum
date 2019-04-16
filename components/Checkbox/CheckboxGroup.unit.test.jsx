@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import diff from 'jest-diff';
 import stripAnsi from 'strip-ansi';
@@ -62,16 +62,18 @@ const _childrenTest = CheckboxItem => {
         groupOptions: {
           onChange: onChildrenChangeMock,
         },
+        enzymeMethod: mount,
       });
 
       const { withOptions } = _create({
         groupOptions: {
           onChange: onOptionsChangeMock,
         },
+        enzymeMethod: mount,
       });
 
       withChildren.find(CheckboxItem).forEach(checkbox =>
-        checkbox.simulate('change', {
+        checkbox.find('HiddenCheckbox').simulate('change', {
           target: {
             checked: true,
             name: checkbox.prop('name'),
@@ -80,7 +82,7 @@ const _childrenTest = CheckboxItem => {
       );
 
       withOptions.find(CheckboxItem).forEach(checkbox => {
-        checkbox.simulate('change', {
+        checkbox.find('HiddenCheckbox').simulate('change', {
           target: {
             checked: true,
             name: checkbox.prop('name'),
@@ -110,6 +112,17 @@ describe('<CheckboxGroup />', () => {
     it('simple with <CheckboxGroup.Checkbox />', () => {
       const component = (
         <CheckboxGroup>
+          <CheckboxGroup.Checkbox name="Foo">Foo</CheckboxGroup.Checkbox>
+          <CheckboxGroup.Checkbox name="Bar">Bar</CheckboxGroup.Checkbox>
+          <CheckboxGroup.Checkbox name="Baz">Baz</CheckboxGroup.Checkbox>
+        </CheckboxGroup>
+      );
+      expect(renderer.create(component)).toMatchSnapshot();
+    });
+
+    it('with <CheckboxGroup.Checkbox /> with an error', () => {
+      const component = (
+        <CheckboxGroup error="Error Message">
           <CheckboxGroup.Checkbox name="Foo">Foo</CheckboxGroup.Checkbox>
           <CheckboxGroup.Checkbox name="Bar">Bar</CheckboxGroup.Checkbox>
           <CheckboxGroup.Checkbox name="Baz">Baz</CheckboxGroup.Checkbox>

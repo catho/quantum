@@ -6,6 +6,7 @@ import { TabbedView, Tab } from './TabbedView';
 import Badge from './Badge';
 import Button from './Button';
 import { Checkbox, CheckboxGroup } from './Checkbox';
+import Card from './Card';
 import Colors from './Colors';
 import Dropdown from './Dropdown';
 import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
@@ -25,6 +26,7 @@ export {
   Badge,
   BREAKPOINTS,
   Button,
+  Card,
   Checkbox,
   CheckboxGroup,
   Col,
