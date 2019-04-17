@@ -6,8 +6,6 @@ import Icon from '../Icon/Icon';
 import Colors from '../Colors';
 import { FieldGroup, Label, ErrorMessage, INPUT_STYLE } from '../shared';
 
-import { Input } from '..';
-
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
@@ -54,11 +52,18 @@ const ArrowDown = styled(Icon).attrs({
   pointer-events: none;
 `;
 
+const InputArrowDown = styled(ArrowDown)`
+  position: absolute;
+  top: 12px;
+  right: 14px;
+`;
+
 const DropList = styled.ul`
   background-color: ${Colors.WHITE};
   border-radius: 4px;
   border: solid 1.5px ${Colors.BLACK[100]};
   box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
+  box-sizing: border-box;
   list-style: none;
   margin-top: 4px;
   max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
@@ -124,6 +129,7 @@ const Dropdown = ({
   placeholder,
   selectedItem,
   onChange,
+  onStateChange,
   autoComplete,
   completeOnLength,
   ...rest
@@ -154,6 +160,7 @@ const Dropdown = ({
         {...rest}
         selectedItem={selectedItem}
         onChange={onChange}
+        onStateChange={onStateChange}
         itemToString={_getValue}
         stateReducer={_highlightedReducer}
       >
@@ -181,16 +188,24 @@ const Dropdown = ({
             )}
             <input type="hidden" {...getInputProps()} />
             {autoComplete ? (
-              <div style={{ position: 'relative' }}>
-                <Input
-                  {...getInputProps({
-                    isOpen,
-                  })}
-                  error={error}
-                  disabled={disabled}
-                  text={_buttonLabel}
-                />
-                {isOpen && inputValue.length >= completeOnLength && (
+              <>
+                <DropContainer>
+                  <DropButton
+                    as="input"
+                    style={{ cursor: 'inherit' }}
+                    {...getInputProps({
+                      isOpen,
+                      placeholder,
+                      onClick: openMenu,
+                    })}
+                    error={error}
+                    disabled={disabled}
+                    text={_buttonLabel}
+                  />
+                  <InputArrowDown />
+                </DropContainer>
+
+                {isOpen && inputFilter(inputValue).length > 0 && (
                   <DropList>
                     {inputFilter(inputValue).map(item => (
                       <DropItem
@@ -206,7 +221,7 @@ const Dropdown = ({
                     ))}
                   </DropList>
                 )}
-              </div>
+              </>
             ) : (
               <>
                 <DropButton
@@ -255,6 +270,7 @@ Dropdown.defaultProps = {
   items: [],
   label: '',
   onChange: () => {},
+  onStateChange: () => {},
   placeholder: 'Select an option',
   required: false,
   selectedItem: '',
@@ -276,6 +292,7 @@ Dropdown.propTypes = {
   items: PropTypes.arrayOf(itemPropType),
   label: PropTypes.string,
   onChange: PropTypes.func,
+  onStateChange: PropTypes.func,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   selectedItem: itemPropType,
