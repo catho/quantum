@@ -38,21 +38,23 @@ class CheckboxButton extends React.Component {
 
     const skin = checked ? 'primary' : 'secondary';
 
-    console.log({ checked });
-
     return (
       <Wrapper>
         <HiddenInput
           type="checkbox"
-          {...props}
-          id={this._id}
-          error={error}
-          value={value}
-        />
-        <ButtonGroupLabel
-          htmlFor={this._id}
           checked={checked}
           disabled={disabled}
+          id={this._id}
+          value={value}
+          skin={skin}
+          error={error}
+          {...props}
+        />
+        <ButtonGroupLabel
+          checked={checked}
+          disabled={disabled}
+          error={error}
+          htmlFor={this._id}
           skin={skin}
         >
           {children || label || value}
