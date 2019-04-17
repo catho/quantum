@@ -1,70 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
-import Colors from '../Colors';
-import placementConfig from './options';
-import getArrow from './config';
-import Button from '../Button';
 
-const getStyleBySkin = skin => {
-  const indexColor = skin.toUpperCase();
-  return `
-      background-color: ${
-        skin === 'default' ? Colors.WHITE : Colors[indexColor][200]
-      };
-      color: ${
-        skin === 'default' ? Colors.BLACK[700] : Colors[indexColor][900]
-      };
-  `;
-};
-
-const PopoverContent = styled.div`
-  box-shadow: 0 2px 4px 0 ${Colors.SHADOW[50]};
-  align-items: start;
-  display: flex;
-  border-radius: 4px;
-  font-size: 16px;
-  opacity: ${({ visible }) => (visible ? '1' : '0')};
-  padding: 4px 8px;
-  position: absolute;
-  line-height: 0;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-  z-index: 100;
-
-  ${({ placement }) => placementConfig.tipPosition[placement]};
-
-  &:before {
-    ${({ placement, skin }) => getArrow(placement, skin)};
-  }
-
-  ${({ skin }) => getStyleBySkin(skin)}
-`;
-
-const PopoverText = styled.span`
-  display: inline-block;
-  max-width: 250px;
-`;
+import Content from './sub-components/Content';
 
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
-`;
-
-const CloseButton = styled(Button.Icon).attrs({
-  icon: 'close',
-})`
-  display: inherit;
-  height: auto;
-  margin: 0 0 0 16px;
-  opacity: 0.8;
-  padding: 0;
-  transition: opacity 0.4s ease;
-  width: auto;
-
-  :hover {
-    background: none;
-    opacity: 1;
-  }
 `;
 
 const ChildrenBlock = styled.div`
@@ -74,37 +16,50 @@ const ChildrenBlock = styled.div`
 class Popover extends Component {
   constructor(props) {
     super(props);
+
     const { visible } = props;
+
+    this.wrapperRef = React.createRef();
     this.state = {
       visible,
     };
   }
-
-  componentDidMount() {}
 
   isVisible = visible => {
     const { onClose } = this.props;
     if (!visible) {
       onClose();
     }
+    this.setState({ visible }, () => {
+      const { visible: newVisibleValue } = this.state;
 
-    this.setState({ visible });
+      if (newVisibleValue) {
+        this.contentMeasures();
+      }
+    });
+  };
+
+  contentMeasures = () => {
+    const top = this.wrapperRef.current.offsetTop;
+    this.contentRef.innerContentRef.style.top = `${top}px`;
   };
 
   render() {
-    const { children, text, placement, visible, onClose, ...rest } = this.props;
-    const { visible: visibleState } = this.state;
+    const { children, text, placement, onClose, ...rest } = this.props;
+    const { visible } = this.state;
 
     return (
-      <Wrapper>
-        <PopoverContent
-          placement={placement}
-          visible={visible || visibleState}
-          {...rest}
-        >
-          <PopoverText>{text}</PopoverText>
-          <CloseButton onClick={() => this.isVisible(false)} />
-        </PopoverContent>
+      <Wrapper ref={this.wrapperRef}>
+        {visible && (
+          <Content
+            placement={placement}
+            visible={visible}
+            text={text}
+            onPopoverClose={() => this.isVisible(false)}
+            ref={element => (this.contentRef = element)}
+            {...rest}
+          />
+        )}
         <ChildrenBlock onClick={() => this.isVisible(true)}>
           {children}
         </ChildrenBlock>
