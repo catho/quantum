@@ -46,6 +46,9 @@ export default [
   // Modal
   'Modal',
 
+  // Pagination
+  'Pagination',
+
   // SnackBar
   'SnackBar',
 ].map(s => `./${s}/${s}.story.jsx`);

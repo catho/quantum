@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
+.c0 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c0:hover,
+.c0:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+<a
+  className="c0"
+  onClick={[Function]}
+>
+  Back
+</a>
+`;
+
+exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop 1`] = `
+.c0 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+<a
+  aria-disabled={true}
+  className="c0"
+  onClick={[Function]}
+>
+  Next
+</a>
+`;

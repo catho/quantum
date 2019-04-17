@@ -1,0 +1,1853 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> Snapshots should match snapshot when viewport is below then small breakpoint 1`] = `
+.c2 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c5 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c5:hover,
+.c5:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: #cccccc;
+  color: #4c4c4c;
+  padding: 8px 16px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+.c3:hover {
+  background-color: #e5edfc;
+}
+
+.c3:hover strong {
+  color: #1355d0;
+}
+
+.c1 {
+  border-color: #cccccc;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c4 {
+  border-color: #cccccc;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={true}
+    className="c1 c2"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <span
+    className="c3"
+  >
+    1 of 10
+  </span>
+  <a
+    aria-disabled={false}
+    className="c4 c5"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c4 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={true}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 2"
+    className="c3"
+    onClick={[Function]}
+  >
+    2
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 3"
+    className="c3"
+    onClick={[Function]}
+  >
+    3
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 4"
+    className="c3"
+    onClick={[Function]}
+  >
+    4
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 5"
+    className="c3"
+    onClick={[Function]}
+  >
+    5
+  </a>
+  <a
+    aria-disabled={false}
+    className="c4"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c4 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={true}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 2"
+    className="c3"
+    onClick={[Function]}
+  >
+    2
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 3"
+    className="c3"
+    onClick={[Function]}
+  >
+    3
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 4"
+    className="c3"
+    onClick={[Function]}
+  >
+    4
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 5"
+    className="c3"
+    onClick={[Function]}
+  >
+    5
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 6"
+    className="c3"
+    onClick={[Function]}
+  >
+    6
+  </a>
+  <a
+    aria-disabled={false}
+    className="c4"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c6 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c6:hover,
+.c6:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c4 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c5 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={true}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 2"
+    className="c3"
+    onClick={[Function]}
+  >
+    2
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 3"
+    className="c3"
+    onClick={[Function]}
+  >
+    3
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 4"
+    className="c3"
+    onClick={[Function]}
+  >
+    4
+  </a>
+  <div
+    className="c4"
+  >
+    <span
+      className="c5"
+    />
+  </div>
+  <a
+    aria-current={false}
+    aria-label="Page 7"
+    className="c3"
+    onClick={[Function]}
+  >
+    7
+  </a>
+  <a
+    aria-disabled={false}
+    className="c6"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 2"
+    className="c2"
+    onClick={[Function]}
+  >
+    2
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 3"
+    className="c2"
+    onClick={[Function]}
+  >
+    3
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 4"
+    className="c3"
+    onClick={[Function]}
+  >
+    4
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 5"
+    className="c2"
+    onClick={[Function]}
+  >
+    5
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 6"
+    className="c2"
+    onClick={[Function]}
+  >
+    6
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 7"
+    className="c2"
+    onClick={[Function]}
+  >
+    7
+  </a>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c5:hover,
+.c5:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <div
+    className="c3"
+  >
+    <span
+      className="c4"
+    />
+  </div>
+  <a
+    aria-current={false}
+    aria-label="Page 4"
+    className="c2"
+    onClick={[Function]}
+  >
+    4
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 5"
+    className="c5"
+    onClick={[Function]}
+  >
+    5
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 6"
+    className="c2"
+    onClick={[Function]}
+  >
+    6
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 7"
+    className="c2"
+    onClick={[Function]}
+  >
+    7
+  </a>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c5:hover,
+.c5:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <div
+    className="c3"
+  >
+    <span
+      className="c4"
+    />
+  </div>
+  <a
+    aria-current={false}
+    aria-label="Page 4"
+    className="c2"
+    onClick={[Function]}
+  >
+    4
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 5"
+    className="c5"
+    onClick={[Function]}
+  >
+    5
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 6"
+    className="c2"
+    onClick={[Function]}
+  >
+    6
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 7"
+    className="c2"
+    onClick={[Function]}
+  >
+    7
+  </a>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c3 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:after {
+  left: 8px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c4:before {
+  left: 16px;
+  content: '';
+  position: absolute;
+  tpo: 0;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c5:hover,
+.c5:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <div
+    className="c3"
+  >
+    <span
+      className="c4"
+    />
+  </div>
+  <a
+    aria-current={false}
+    aria-label="Page 49"
+    className="c2"
+    onClick={[Function]}
+  >
+    49
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 50"
+    className="c5"
+    onClick={[Function]}
+  >
+    50
+  </a>
+  <a
+    aria-current={false}
+    aria-label="Page 51"
+    className="c2"
+    onClick={[Function]}
+  >
+    51
+  </a>
+  <div
+    className="c3"
+  >
+    <span
+      className="c4"
+    />
+  </div>
+  <a
+    aria-current={false}
+    aria-label="Page 100"
+    className="c2"
+    onClick={[Function]}
+  >
+    100
+  </a>
+  <a
+    aria-disabled={false}
+    className="c1"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
+.c1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0 4px;
+  outline: none;
+  padding: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 4px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: 5px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+.c2:hover,
+.c2:focus {
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<nav
+  aria-label="pagination"
+  className="c0"
+>
+  <a
+    aria-disabled={true}
+    className="c1"
+    onClick={[Function]}
+  >
+    Previous
+  </a>
+  <a
+    aria-current="page"
+    aria-label="Current Page, Page 1"
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </a>
+  <a
+    aria-disabled={true}
+    className="c1"
+    onClick={[Function]}
+  >
+    Next
+  </a>
+</nav>
+`;
