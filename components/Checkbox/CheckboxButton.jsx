@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ButtonGroupLabel } from '../shared';
+import HiddenInput from '../shared/HiddenInput';
+import uniqId from '../shared/uniqId';
+
+const ID_GENERATOR = uniqId('checkbox-button-');
+
 // import Colors from '../Colors';
 // import Icon from '../Icon';
 
@@ -10,38 +15,54 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const HiddenCheckbox = styled.input.attrs({
-  type: 'checkbox',
-})`
-  cursor: pointer;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-`;
+class CheckboxButton extends React.Component {
+  constructor(props) {
+    super(props);
 
-HiddenCheckbox.displayName = 'HiddenCheckbox';
+    const { id } = props;
 
-const Checkbox = ({
-  children,
-  error,
-  id,
-  label,
-  value,
-  checked,
-  disabled,
-  ...rest
-}) => (
-  <Wrapper>
-    <ButtonGroupLabel htmlFor={id} checked={checked} disabled={disabled}>
-      <HiddenCheckbox id={id} error={error} value={value} {...rest} />
-      {children || label || value}
-    </ButtonGroupLabel>
-  </Wrapper>
-);
+    this._id = id || ID_GENERATOR.next().value;
+  }
 
-Checkbox.defaultProps = {
+  render() {
+    const {
+      children,
+      error,
+      id,
+      label,
+      value,
+      checked,
+      disabled,
+      ...props
+    } = this.props;
+
+    const skin = checked ? 'primary' : 'secondary';
+
+    console.log({ checked });
+
+    return (
+      <Wrapper>
+        <HiddenInput
+          type="checkbox"
+          {...props}
+          id={this._id}
+          error={error}
+          value={value}
+        />
+        <ButtonGroupLabel
+          htmlFor={this._id}
+          checked={checked}
+          disabled={disabled}
+          skin={skin}
+        >
+          {children || label || value}
+        </ButtonGroupLabel>
+      </Wrapper>
+    );
+  }
+}
+
+CheckboxButton.defaultProps = {
   checked: false,
   children: '',
   disabled: false,
@@ -52,7 +73,7 @@ Checkbox.defaultProps = {
   value: '',
 };
 
-Checkbox.propTypes = {
+CheckboxButton.propTypes = {
   children: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -64,6 +85,6 @@ Checkbox.propTypes = {
   value: PropTypes.string,
 };
 
-Checkbox.displayName = 'Checkbox';
+CheckboxButton.displayName = 'CheckboxButton';
 
-export default Checkbox;
+export default CheckboxButton;

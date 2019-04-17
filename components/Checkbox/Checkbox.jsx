@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CheckboxGroup from './CheckboxGroup';
 
 import { Label, ErrorMessage } from '../shared';
+import HiddenInput from '../shared/HiddenInput';
 import Colors from '../Colors';
 import Icon from '../Icon';
 
@@ -28,14 +29,11 @@ const CheckIcon = styled(Icon).attrs({
   name: 'check',
 })``;
 
-const HiddenCheckbox = styled.input.attrs({
+const HiddenCheckbox = styled(HiddenInput).attrs({
   type: 'checkbox',
 })`
   cursor: pointer;
   height: 100%;
-  margin: 0;
-  opacity: 0;
-  position: absolute;
   width: 100%;
 
   + ${CheckIcon} {

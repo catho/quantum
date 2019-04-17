@@ -12,9 +12,7 @@ const _errorInteractiveStyle = ({ checked }) => css`
   color: ${checked ? Colors.WHITE : Colors.ERROR['500']};
 `;
 
-export default styled.input.attrs({
-  type: 'radio',
-})`
+export default styled.input`
   border: 0;
   height: 0;
   margin: 0;

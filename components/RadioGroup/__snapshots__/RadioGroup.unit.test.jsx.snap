@@ -19,7 +19,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <input
         checked={false}
-        className=\\"HiddenRadio-sc-1ptfasu-0 liKeGo\\"
+        className=\\"HiddenInput-sc-14w753s-0 kBRSRV\\"
         disabled={false}
 -       id=\\"radio-button-9\\"
 +       id=\\"radio-button-12\\"
@@ -43,7 +43,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <input
         checked={false}
-        className=\\"HiddenRadio-sc-1ptfasu-0 liKeGo\\"
+        className=\\"HiddenInput-sc-14w753s-0 kBRSRV\\"
         disabled={false}
 -       id=\\"radio-button-10\\"
 +       id=\\"radio-button-13\\"
@@ -67,7 +67,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <input
         checked={false}
-        className=\\"HiddenRadio-sc-1ptfasu-0 liKeGo\\"
+        className=\\"HiddenInput-sc-14w753s-0 kBRSRV\\"
         disabled={false}
 -       id=\\"radio-button-11\\"
 +       id=\\"radio-button-14\\"

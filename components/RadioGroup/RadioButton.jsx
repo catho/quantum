@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ButtonGroupLabel from '../shared/ButtonGroupLabel';
-import HiddenRadio from '../shared/HiddenRadio';
+import HiddenInput from '../shared/HiddenInput';
 import Icon from '../Icon';
 import uniqId from '../shared/uniqId';
 
@@ -62,7 +62,8 @@ class Radio extends React.Component {
 
     return (
       <Wrapper inline={inline}>
-        <HiddenRadio
+        <HiddenInput
+          type="radio"
           checked={checked}
           disabled={disabled}
           id={this._id}

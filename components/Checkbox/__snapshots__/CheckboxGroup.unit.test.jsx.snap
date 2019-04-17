@@ -16,7 +16,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"Checkbox__HiddenCheckbox-sc-1ca5whm-4 bQRmLw\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 fQyIFG\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -52,7 +52,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"Checkbox__HiddenCheckbox-sc-1ca5whm-4 bQRmLw\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 fQyIFG\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -88,7 +88,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"Checkbox__HiddenCheckbox-sc-1ca5whm-4 bQRmLw\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 fQyIFG\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -137,12 +137,38 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
 }
 
 .c2 {
-  cursor: pointer;
-  height: 100%;
+  border: 0;
+  height: 0;
   margin: 0;
   opacity: 0;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
+  width: 0;
+  cursor: pointer;
+  height: 100%;
   width: 100%;
+}
+
+.c2:focus ~ .c6 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:hover ~ .c6 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:active ~ .c6 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c2 + .c3 {
@@ -342,12 +368,38 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
 }
 
 .c2 {
-  cursor: pointer;
-  height: 100%;
+  border: 0;
+  height: 0;
   margin: 0;
   opacity: 0;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
+  width: 0;
+  cursor: pointer;
+  height: 100%;
   width: 100%;
+}
+
+.c2:focus ~ .c6 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:hover ~ .c6 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:active ~ .c6 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
 }
 
 .c2 + .c3 {
@@ -603,12 +655,41 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 }
 
 .c2 {
-  cursor: pointer;
-  height: 100%;
+  border: 0;
+  height: 0;
   margin: 0;
   opacity: 0;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
+  width: 0;
+  cursor: pointer;
+  height: 100%;
   width: 100%;
+}
+
+.c2:focus ~ .c8 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c2:hover ~ .c8 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c2:active ~ .c8 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
 }
 
 .c2 + .c3 {
