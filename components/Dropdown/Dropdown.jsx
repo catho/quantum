@@ -130,8 +130,7 @@ const Dropdown = ({
   selectedItem,
   onChange,
   onStateChange,
-  autoComplete,
-  completeOnLength,
+  autocomplete,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -187,7 +186,7 @@ const Dropdown = ({
               </DropLabel>
             )}
             <input type="hidden" {...getInputProps()} />
-            {autoComplete ? (
+            {autocomplete ? (
               <>
                 <DropContainer>
                   <DropButton
