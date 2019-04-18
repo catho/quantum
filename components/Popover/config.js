@@ -50,11 +50,11 @@ const getArrow = (placement, skin) => {
   }
 
   return `
-  color: ${getColorBySkin(skin)}
-  font-size: ${ARROW_SIZE};
-  position: absolute;
-  
-  ${placementPosition}
+    color: ${getColorBySkin(skin)}
+    font-size: ${ARROW_SIZE};
+    position: absolute;
+    
+    ${placementPosition}
   `;
 };
 

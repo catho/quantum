@@ -1,8 +1,10 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 
 import Content from './sub-components/Content';
+
+import popoverPosition from './options';
 
 const Wrapper = styled.div`
   display: inline-block;
@@ -34,18 +36,48 @@ class Popover extends Component {
       const { visible: newVisibleValue } = this.state;
 
       if (newVisibleValue) {
-        this.contentMeasures();
+        this.setPopoverPosition();
       }
     });
   };
 
-  contentMeasures = () => {
-    const top = this.wrapperRef.current.offsetTop;
-    this.contentRef.innerContentRef.style.top = `${top}px`;
+  setPopoverPosition = () => {
+    const { placement } = this.props;
+    const {
+      current: {
+        offsetTop: popoverWrapperTopValue,
+        offsetLeft: triggerLeftValue,
+        offsetWidth: triggerWidthValue,
+        offsetHeight: triggerHeightValue,
+      },
+    } = this.wrapperRef;
+    const {
+      innerContentRef,
+      innerContentRef: {
+        offsetWidth: popoverContentWidth,
+        offsetHeight: popoverContentHeight,
+      },
+    } = this.contentRef;
+
+    const position = popoverPosition({
+      popoverWrapperTopValue,
+      popoverContentWidth,
+      popoverContentHeight,
+      triggerLeftValue,
+      triggerWidthValue,
+      triggerHeightValue,
+    });
+
+    innerContentRef.style.left = `${position[placement].left}px`;
+    innerContentRef.style.top = `${position[placement].top}px`;
+
+    if (placement === 'right' || placement === 'left') {
+      innerContentRef.style.transform = 'translateY(-50%)';
+    }
   };
 
   render() {
-    const { children, text, placement, onClose, ...rest } = this.props;
+    const { children, trigger, placement, ...rest } = this.props;
     const { visible } = this.state;
 
     return (
@@ -54,14 +86,17 @@ class Popover extends Component {
           <Content
             placement={placement}
             visible={visible}
-            text={text}
             onPopoverClose={() => this.isVisible(false)}
-            ref={element => (this.contentRef = element)}
+            ref={element => {
+              this.contentRef = element;
+            }}
             {...rest}
-          />
+          >
+            {children}
+          </Content>
         )}
         <ChildrenBlock onClick={() => this.isVisible(true)}>
-          {children}
+          {trigger}
         </ChildrenBlock>
       </Wrapper>
     );
@@ -73,8 +108,8 @@ Popover.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  trigger: PropTypes.node.isRequired,
   visible: PropTypes.bool,
-  text: PropTypes.string.isRequired,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   onClose: PropTypes.func,
   skin: oneOf(['default', 'success', 'warning', 'error']),

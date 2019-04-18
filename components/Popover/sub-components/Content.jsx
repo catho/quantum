@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Colors from '../../Colors';
-import placementConfig from '../options';
 import getArrow from '../config';
 import Button from '../../Button';
 
@@ -26,7 +25,7 @@ const PopoverContent = styled.div`
   display: flex;
   border-radius: 4px;
   font-size: 16px;
-  padding: 4px 8px;
+  padding: 8px;
   position: absolute;
   line-height: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -77,20 +76,38 @@ class Content extends Component {
   }
 
   render() {
-    const { placement, visible, text, onPopoverClose, ...rest } = this.props;
+    const { placement, children, onPopoverClose, ...rest } = this.props;
 
     return ReactDOM.createPortal(
       <PopoverContent
         placement={placement}
-        ref={element => (this.innerContentRef = element)}
+        ref={element => {
+          this.innerContentRef = element;
+        }}
         {...rest}
       >
-        <PopoverText>{text}</PopoverText>
+        <PopoverText>{children}</PopoverText>
         <CloseButton onClick={onPopoverClose} />
       </PopoverContent>,
       this.wrapper,
     );
   }
 }
+
+Content.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+  placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+  onPopoverClose: PropTypes.func,
+  skin: PropTypes.oneOf(['default', 'success', 'warning', 'error']),
+};
+
+Content.defaultProps = {
+  placement: 'top',
+  onPopoverClose: () => {},
+  skin: 'default',
+};
 
 export default Content;
