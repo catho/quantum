@@ -4,7 +4,7 @@ import { query, hide, noGutters } from './shared';
 import { BREAKPOINTS } from '../../shared';
 
 const maxWidth = ({ name }, { width: nextWidth = 0 } = {}, fluid) =>
-  !fluid && nextWidth && query[name]`max-width: ${nextWidth}px;`;
+  !fluid && Boolean(nextWidth) && query[name]`max-width: ${nextWidth}px;`;
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
