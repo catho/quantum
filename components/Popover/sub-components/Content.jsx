@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Colors from '../../Colors';
-import getArrow from '../config';
+import getArrow from '../arrowProperties';
 import Button from '../../Button';
 
 const getStyleBySkin = skin => {

@@ -1,7 +1,7 @@
 import Colors from '../Colors';
 
 const ARROW_SIZE = '16px';
-const ARROW_POSITION_Y = '101%';
+const ARROW_POSITION_Y = '105%';
 const SIDE_POSITION_X = -10;
 const CENTER_POSITION = '50%';
 
