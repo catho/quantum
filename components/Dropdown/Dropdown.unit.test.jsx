@@ -43,6 +43,9 @@ describe('Input component ', () => {
     expect(
       renderer.create(<Dropdown required label="Dropdown label" />).toJSON(),
     ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown autocomplete />).toJSON(),
+    ).toMatchSnapshot();
     expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
     expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
   });

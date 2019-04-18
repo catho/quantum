@@ -129,7 +129,6 @@ const Dropdown = ({
   placeholder,
   selectedItem,
   onChange,
-  onStateChange,
   autocomplete,
   ...rest
 }) => {
@@ -159,7 +158,6 @@ const Dropdown = ({
         {...rest}
         selectedItem={selectedItem}
         onChange={onChange}
-        onStateChange={onStateChange}
         itemToString={_getValue}
         stateReducer={_highlightedReducer}
       >
