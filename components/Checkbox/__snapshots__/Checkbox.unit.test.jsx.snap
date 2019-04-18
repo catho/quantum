@@ -93,10 +93,14 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
     className="c0"
   >
     <input
+      checked={false}
       className="c1"
       disabled={false}
       id=""
+      name="foo"
+      onChange={[Function]}
       type="checkbox"
+      value=""
     />
     <span
       aria-hidden="true"
@@ -257,7 +261,8 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   background-color: #ff2d4d;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
@@ -290,10 +295,14 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
     className="c0"
   >
     <input
+      checked={false}
       className="c1"
       disabled={false}
       id=""
+      name="foo"
+      onChange={[Function]}
       type="checkbox"
+      value=""
     />
     <span
       aria-hidden="true"
@@ -458,7 +467,8 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   background-color: #ff2d4d;
 }
 
-.c1:hover + .c2 {
+.c1:hover + .c2,
+.c1:focus + .c2 {
   border-color: #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
@@ -495,7 +505,10 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       className="c1"
       disabled={false}
       id=""
+      name="foo"
+      onChange={[Function]}
       type="checkbox"
+      value=""
     />
     <span
       aria-hidden="true"
@@ -656,7 +669,8 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   background-color: #ff2d4d;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
@@ -689,7 +703,10 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       className="c1"
       disabled={false}
       id=""
+      name="foo"
+      onChange={[Function]}
       type="checkbox"
+      value=""
     />
     <span
       aria-hidden="true"
@@ -846,7 +863,8 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   background-color: #ff2d4d;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
@@ -875,10 +893,14 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
     className="c0"
   >
     <input
+      checked={false}
       className="c1"
       disabled={true}
       id=""
+      name="foo"
+      onChange={[Function]}
       type="checkbox"
+      value=""
     />
     <span
       aria-hidden="true"
@@ -1035,7 +1057,8 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   background-color: #ff2d4d;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
@@ -1064,10 +1087,14 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
     className="c0"
   >
     <input
+      checked={false}
       className="c1"
       disabled={false}
       id=""
+      name="foo"
+      onChange={[Function]}
       type="checkbox"
+      value=""
     />
     <span
       aria-hidden="true"
@@ -1224,7 +1251,8 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   background-color: #ff2d4d;
 }
 
-.c5:hover + .c2 {
+.c5:hover + .c2,
+.c5:focus + .c2 {
   border-color: #ff2d4d;
   box-shadow: 0 2px 6px 0 #ff2d4d;
 }
@@ -1257,7 +1285,10 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       className="c1"
       disabled={true}
       id=""
+      name="foo"
+      onChange={[Function]}
       type="checkbox"
+      value=""
     />
     <span
       aria-hidden="true"

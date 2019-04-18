@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import CheckboxGroup from './CheckboxGroup';
 
 import { Label, ErrorMessage } from '../shared';
 import Colors from '../Colors';
@@ -78,7 +79,7 @@ const HiddenCheckbox = styled.input.attrs({
       background-color: ${Colors.ERROR['500']};
     }
 
-    :hover +  ${CheckIcon} {
+    :hover +  ${CheckIcon}, :focus +  ${CheckIcon} {
       border-color: ${Colors.ERROR['500']};
       box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
     }
@@ -108,31 +109,62 @@ const HiddenCheckbox = styled.input.attrs({
 
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-const Checkbox = ({ label, error, id, ...rest }) => (
-  <Wrapper>
-    <CheckboxWrapper>
-      <HiddenCheckbox id={id} error={error} {...rest} />
-      <CheckIcon />
-      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
-    </CheckboxWrapper>
-    {error && <ErrorMessage>{error}</ErrorMessage>}
-  </Wrapper>
-);
+const Checkbox = ({
+  children,
+  id,
+  label,
+  value,
+  error: errorProp,
+  onChange: onChangeProp,
+  ...props
+}) => {
+  const context = useContext(CheckboxGroup.Context);
+  const { error: errorContext } = context;
+  const { error = errorProp, onChange = onChangeProp } = context;
+
+  return (
+    <Wrapper>
+      <CheckboxWrapper>
+        <HiddenCheckbox
+          {...props}
+          id={id}
+          error={error}
+          value={value}
+          onChange={onChange}
+        />
+        <CheckIcon />
+        <CheckboxLabel htmlFor={id}>{children || label || value}</CheckboxLabel>
+      </CheckboxWrapper>
+      {error && errorContext === undefined && (
+        <ErrorMessage>{error}</ErrorMessage>
+      )}
+    </Wrapper>
+  );
+};
 
 Checkbox.defaultProps = {
-  checked: undefined,
+  checked: false,
   disabled: false,
+  children: '',
   error: '',
   id: '',
   label: '',
+  value: '',
+  onChange: () => {},
 };
 
 Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
+  children: PropTypes.string,
   error: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
 };
+
+Checkbox.displayName = 'Checkbox';
 
 export default Checkbox;

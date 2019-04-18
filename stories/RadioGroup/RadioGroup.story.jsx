@@ -106,8 +106,8 @@ stories.add('Radio group', () => (
           <br />
 
           <p>
-            It&apos;s also possible to render it inline, <code>inline</code>{' '}
-            prop.
+            It&apos;s also possible to render it inline, with{' '}
+            <code>inline</code> prop.
           </p>
           <br />
 
