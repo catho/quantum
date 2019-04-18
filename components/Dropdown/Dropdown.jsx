@@ -170,89 +170,93 @@ const Dropdown = ({
           inputValue,
           openMenu,
           isOpen,
-        }) => (
-          <DropContainer {...getRootProps()}>
-            {label && (
-              <DropLabel
-                {...getLabelProps()}
-                onClick={() => openMenu()}
-                error={error}
-                disabled={disabled}
-              >
-                {label}
-                {required && <RequiredMark>*</RequiredMark>}
-              </DropLabel>
-            )}
-            <input type="hidden" {...getInputProps()} />
-            {autocomplete ? (
-              <>
-                <DropContainer>
-                  <DropButton
-                    as="input"
-                    style={{ cursor: 'inherit' }}
-                    {...getInputProps({
-                      isOpen,
-                      placeholder,
-                      onClick: openMenu,
-                    })}
-                    error={error}
-                    disabled={disabled}
-                    text={_buttonLabel}
-                  />
-                  <InputArrowDown />
-                </DropContainer>
+        }) => {
+          const filteredInput = isOpen ? inputFilter(inputValue) : [];
 
-                {isOpen && inputFilter(inputValue).length > 0 && (
-                  <DropList>
-                    {inputFilter(inputValue).map(item => (
-                      <DropItem
-                        {...getItemProps({
-                          item,
-                          isSelected: _isEqual(selectedItem, item),
-                          key: _getValue(item),
-                        })}
-                      >
-                        {_getLabel(item)}
-                        {_isEqual(selectedItem, item) && <CheckIcon />}
-                      </DropItem>
-                    ))}
-                  </DropList>
-                )}
-              </>
-            ) : (
-              <>
-                <DropButton
-                  {...getToggleButtonProps()}
-                  isOpen={isOpen}
-                  disabled={disabled}
+          return (
+            <DropContainer {...getRootProps()}>
+              {label && (
+                <DropLabel
+                  {...getLabelProps()}
+                  onClick={() => openMenu()}
                   error={error}
-                  text={_buttonLabel}
-                  selectedItem={selectedItem}
+                  disabled={disabled}
                 >
-                  {_buttonLabel}
-                  <ArrowDown />
-                </DropButton>
+                  {label}
+                  {required && <RequiredMark>*</RequiredMark>}
+                </DropLabel>
+              )}
+              <input type="hidden" {...getInputProps()} />
+              {autocomplete ? (
+                <>
+                  <DropContainer>
+                    <DropButton
+                      as="input"
+                      style={{ cursor: 'inherit' }}
+                      {...getInputProps({
+                        isOpen,
+                        placeholder,
+                        onClick: openMenu,
+                      })}
+                      error={error}
+                      disabled={disabled}
+                      text={_buttonLabel}
+                    />
+                    <InputArrowDown />
+                  </DropContainer>
 
-                {isOpen && (
-                  <DropList>
-                    {items.map(item => (
-                      <DropItem
-                        {...getItemProps({
-                          item,
-                          isSelected: _isEqual(selectedItem, item),
-                          key: _getValue(item),
-                        })}
-                      >
-                        {_getLabel(item)}
-                        {_isEqual(selectedItem, item) && <CheckIcon />}
-                      </DropItem>
-                    ))}
-                  </DropList>
-                )}
-              </>
-            )}
-          </DropContainer>
-        )}
+                  {filteredInput.length > 0 && (
+                    <DropList>
+                      {filteredInput.map(item => (
+                        <DropItem
+                          {...getItemProps({
+                            item,
+                            isSelected: _isEqual(selectedItem, item),
+                            key: _getValue(item),
+                          })}
+                        >
+                          {_getLabel(item)}
+                          {_isEqual(selectedItem, item) && <CheckIcon />}
+                        </DropItem>
+                      ))}
+                    </DropList>
+                  )}
+                </>
+              ) : (
+                <>
+                  <DropButton
+                    {...getToggleButtonProps()}
+                    isOpen={isOpen}
+                    disabled={disabled}
+                    error={error}
+                    text={_buttonLabel}
+                    selectedItem={selectedItem}
+                  >
+                    {_buttonLabel}
+                    <ArrowDown />
+                  </DropButton>
+
+                  {isOpen && (
+                    <DropList>
+                      {items.map(item => (
+                        <DropItem
+                          {...getItemProps({
+                            item,
+                            isSelected: _isEqual(selectedItem, item),
+                            key: _getValue(item),
+                          })}
+                        >
+                          {_getLabel(item)}
+                          {_isEqual(selectedItem, item) && <CheckIcon />}
+                        </DropItem>
+                      ))}
+                    </DropList>
+                  )}
+                </>
+              )}
+            </DropContainer>
+          );
+        }}
       </Downshift>
 
       {error && <DropError>{error}</DropError>}
