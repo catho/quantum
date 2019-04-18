@@ -21,6 +21,7 @@ import {
   WithError,
   Disabled,
   Controlled,
+  AutoComplete,
 } from './examples';
 
 const DropdownExample = ({ component: Component }) => (
@@ -74,6 +75,7 @@ storiesOf('Forms', module).add('Dropdown', () => (
           </div>
           <DropdownExample component={Simple} />
           <DropdownExample component={CustomLabel} />
+          <DropdownExample component={AutoComplete} />
           <DropdownExample component={RequiredMark} />
           <DropdownExample component={WithError} />
           <DropdownExample component={Disabled} />

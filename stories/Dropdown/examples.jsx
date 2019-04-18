@@ -141,4 +141,27 @@ Disabled.CODE = `<Dropdown
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
 />`;
 
-export { Simple, CustomLabel, RequiredMark, WithError, Disabled, Controlled };
+const AutoComplete = () => (
+  <Dropdown
+    autocomplete
+    label="Autocomplete"
+    placeholder="Start typing..."
+    items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
+  />
+);
+AutoComplete.CODE = `<Dropdown
+  autocomplete
+  label="Autocomplete"
+  placeholder="Start typing..."
+  items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
+/>`;
+
+export {
+  Simple,
+  CustomLabel,
+  RequiredMark,
+  WithError,
+  Disabled,
+  Controlled,
+  AutoComplete,
+};
