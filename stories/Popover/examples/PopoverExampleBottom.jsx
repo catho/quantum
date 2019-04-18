@@ -12,10 +12,10 @@ class PopoverExampleBottom extends React.Component {
       <Popover
         placement="bottom"
         skin="warning"
-        trigger={<Button>bottom Example</Button>}
+        trigger={<Button>This is a Popover bottom example</Button>}
         onClose={this.onCloseFn}
       >
-        Here comes a new Popover Top example
+        Here comes a new Popover Bottom example
       </Popover>
     );
   }
@@ -36,10 +36,10 @@ class PopoverExampleBottom extends React.Component {
       <Popover
         placement="bottom"
         skin="warning"
-        text="Here comes a new Popover Top example"
+        trigger={<Button>This is a Popover bottom example</Button>}
         onClose={this.onCloseFn}
       >
-        <Button>This is a Popover Top Example</Button>
+        Here comes a new Popover Bottom example
       </Popover>
     );
   }

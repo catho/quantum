@@ -9,11 +9,11 @@ class PopoverExampleTop extends React.Component {
 
   render() {
     return (
-      <Popover trigger={<Button>Trigger</Button>} onClose={this.onCloseFn}>
-        <form>
-          <input />
-          <Button>A simple button</Button>
-        </form>
+      <Popover
+        trigger={<Button>This is a Popover top example</Button>}
+        onClose={this.onCloseFn}
+      >
+        Here comes a new Popover Top example
       </Popover>
     );
   }
@@ -31,11 +31,8 @@ class PopoverExampleTop extends React.Component {
 
   render() {
     return (
-      <Popover
-        text="Here comes a new Popover Top example"
-        onClose={this.onCloseFn}
-      >
-        <Button>This is a Popover Top Example</Button>
+      <Popover trigger={<Button>This is a Popover top example</Button>} onClose={this.onCloseFn}>
+        Here comes a new Popover Top example
       </Popover>
     );
   }
