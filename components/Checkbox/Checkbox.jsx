@@ -109,19 +109,18 @@ const HiddenCheckbox = styled.input.attrs({
 
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-const useGroupContext = ({ error, onChange }) => {
-  const { error: errorContext, onChange: onChangeContext } = useContext(
-    CheckboxGroup.Context,
-  );
-
-  return {
-    error: errorContext !== undefined ? errorContext : error,
-    onChange: onChangeContext || onChange,
-  };
-};
-
-const Checkbox = ({ children, id, label, value, ...props }) => {
-  const { error, onChange } = useGroupContext(props);
+const Checkbox = ({
+  children,
+  id,
+  label,
+  value,
+  error: errorProp,
+  onChange: onChangeProp,
+  ...props
+}) => {
+  const context = useContext(CheckboxGroup.Context);
+  const { error: errorContext } = context;
+  const { error = errorProp, onChange = onChangeProp } = context;
 
   return (
     <Wrapper>
@@ -136,7 +135,7 @@ const Checkbox = ({ children, id, label, value, ...props }) => {
         <CheckIcon />
         <CheckboxLabel htmlFor={id}>{children || label || value}</CheckboxLabel>
       </CheckboxWrapper>
-      {error && typeof error === 'string' && (
+      {error && errorContext === undefined && (
         <ErrorMessage>{error}</ErrorMessage>
       )}
     </Wrapper>
@@ -158,7 +157,7 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   children: PropTypes.string,
-  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  error: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
