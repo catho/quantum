@@ -1,3 +1,5960 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Popover component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"Popover__Wrapper-sc-94rrmp-0 bDqkxe\\"><div class=\\"Popover__ChildrenBlock-sc-94rrmp-1 jkpYXD\\"><span>popover here</span></div></div>"`;
+exports[`Popover component  Snapshots should match snapshots 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match snapshots 2`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="success"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match snapshots 3`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="warning"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match snapshots 4`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="error"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match snapshots 5`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="bottom"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match snapshots 6`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="left"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match snapshots 7`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="right"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 1`] = `
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c3:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c4 {
+  font-size: 24px;
+}
+
+.c1 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c1:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c2:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c6 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <Content
+          onClose={[Function]}
+          onPopoverClose={[Function]}
+          placement="top"
+          skin="default"
+          visible={false}
+        >
+          <Portal
+            containerInfo={
+              .c4 {
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c0 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c0:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c1:hover {
+  background: none;
+  opacity: 1;
+}
+
+<section>
+                <div
+                  class="c0"
+                  style="left: 0px; top: -15px;"
+                >
+                  <div
+                    class=""
+                  >
+                    This is a hint
+                  </div>
+                  <button
+                    class="c1 c2"
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root-1 c3 c4"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+              </section>
+            }
+          >
+            <Content__PopoverContent
+              onClose={[Function]}
+              placement="top"
+              skin="default"
+              visible={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__PopoverContent-sc-1005q1-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "box-shadow:0 2px 4px 0 ",
+                        "rgba(128, 128, 128, 0.5)",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        [Function],
+                        ";}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Content__PopoverContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__PopoverContent-sc-1005q1-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={[Function]}
+                onClose={[Function]}
+                placement="top"
+                skin="default"
+                visible={false}
+              >
+                <div
+                  className="c1"
+                  onClose={[Function]}
+                >
+                  <PopoverChildren>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__PopoverChildren-sc-1005q1-2",
+                            "isStatic": true,
+                            "lastClassName": "ihRKEi",
+                            "rules": Array [],
+                          },
+                          "displayName": "PopoverChildren",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content__PopoverChildren-sc-1005q1-2",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className=""
+                      >
+                        This is a hint
+                      </div>
+                    </StyledComponent>
+                  </PopoverChildren>
+                  <CloseButton
+                    onClick={[Function]}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "border-radius:50%;border:none;color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                              "rgba(204, 204, 204, 0.4)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}:active{box-shadow:none;background-color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}",
+                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                            ],
+                          },
+                          "displayName": "CloseButton",
+                          "foldedComponentIds": Array [
+                            "Button__IconButton-sc-1ovnfsw-2",
+                          ],
+                          "render": [Function],
+                          "styledComponentId": "Content__CloseButton-sc-1005q1-1",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                          Symbol(Symbol.hasInstance): [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <Button
+                        center={false}
+                        className="c2"
+                        disabled={false}
+                        full={false}
+                        icon="close"
+                        onClick={[Function]}
+                        size="medium"
+                        skin="primary"
+                        type="button"
+                      >
+                        <Button__StyledButton
+                          center={false}
+                          className="c2"
+                          disabled={false}
+                          full={false}
+                          onClick={[Function]}
+                          size="medium"
+                          skin="primary"
+                          type="button"
+                        >
+                          <StyledComponent
+                            center={false}
+                            className="c2"
+                            disabled={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "align-items:center;",
+                                    [Function],
+                                    " display:flex;",
+                                    [Function],
+                                    " font-weight:bold;",
+                                    [Function],
+                                    " justify-content:center;",
+                                    [Function],
+                                    " letter-spacing:0.2px;",
+                                    [Function],
+                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                    [Function],
+                                    " ",
+                                    [Function],
+                                    ":hover{",
+                                    [Function],
+                                    "}:focus{",
+                                    [Function],
+                                    "}:active{",
+                                    [Function],
+                                    "}",
+                                    " ",
+                                    ".c4",
+                                    "{",
+                                    [Function],
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Button__StyledButton",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                "target": "button",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            full={false}
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <button
+                              className="c2 c3"
+                              disabled={false}
+                              onClick={[Function]}
+                              size="medium"
+                              type="button"
+                            >
+                              <Button__ButtonIcon
+                                name="close"
+                                size="medium"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "c4",
+                                        "isStatic": true,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "pointer-events:none;",
+                                        ],
+                                      },
+                                      "displayName": "Button__ButtonIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "c4",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                      Symbol(Symbol.hasInstance): [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  name="close"
+                                  size="medium"
+                                >
+                                  <Icon
+                                    className="c4 c5"
+                                    name="close"
+                                    size="medium"
+                                    skin=""
+                                    style={Object {}}
+                                  >
+                                    <WithStyles(Icon)
+                                      className="c4 c5"
+                                      size="medium"
+                                      style={
+                                        Object {
+                                          "color": "",
+                                        }
+                                      }
+                                    >
+                                      <Icon
+                                        className="c4 c5"
+                                        classes={
+                                          Object {
+                                            "colorAction": "MuiIcon-colorAction-4",
+                                            "colorDisabled": "MuiIcon-colorDisabled-6",
+                                            "colorError": "MuiIcon-colorError-5",
+                                            "colorPrimary": "MuiIcon-colorPrimary-2",
+                                            "colorSecondary": "MuiIcon-colorSecondary-3",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                            "root": "MuiIcon-root-1",
+                                          }
+                                        }
+                                        color="inherit"
+                                        component="span"
+                                        fontSize="default"
+                                        size="medium"
+                                        style={
+                                          Object {
+                                            "color": "",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          className="material-icons MuiIcon-root-1 c4 c5"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          close
+                                        </span>
+                                      </Icon>
+                                    </WithStyles(Icon)>
+                                  </Icon>
+                                </StyledComponent>
+                              </Button__ButtonIcon>
+                            </button>
+                          </StyledComponent>
+                        </Button__StyledButton>
+                      </Button>
+                    </StyledComponent>
+                  </CloseButton>
+                </div>
+              </StyledComponent>
+            </Content__PopoverContent>
+          </Portal>
+        </Content>
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c6",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c6"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 2`] = `
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c3:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c4 {
+  font-size: 24px;
+}
+
+.c1 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #edfadf;
+  color: #3c6510;
+}
+
+.c1:before {
+  color: #edfadf;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c2:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c6 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="success"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <Content
+          onClose={[Function]}
+          onPopoverClose={[Function]}
+          placement="top"
+          skin="success"
+          visible={false}
+        >
+          <Portal
+            containerInfo={
+              .c4 {
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c0 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #edfadf;
+  color: #3c6510;
+}
+
+.c0:before {
+  color: #edfadf;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c1:hover {
+  background: none;
+  opacity: 1;
+}
+
+<section>
+                <div
+                  class="c0"
+                  style="left: 0px; top: -15px;"
+                >
+                  <div
+                    class=""
+                  >
+                    This is a hint
+                  </div>
+                  <button
+                    class="c1 c2"
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root-10 c3 c4"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+              </section>
+            }
+          >
+            <Content__PopoverContent
+              onClose={[Function]}
+              placement="top"
+              skin="success"
+              visible={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__PopoverContent-sc-1005q1-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "box-shadow:0 2px 4px 0 ",
+                        "rgba(128, 128, 128, 0.5)",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        [Function],
+                        ";}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Content__PopoverContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__PopoverContent-sc-1005q1-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={[Function]}
+                onClose={[Function]}
+                placement="top"
+                skin="success"
+                visible={false}
+              >
+                <div
+                  className="c1"
+                  onClose={[Function]}
+                >
+                  <PopoverChildren>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__PopoverChildren-sc-1005q1-2",
+                            "isStatic": true,
+                            "lastClassName": "ihRKEi",
+                            "rules": Array [],
+                          },
+                          "displayName": "PopoverChildren",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content__PopoverChildren-sc-1005q1-2",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className=""
+                      >
+                        This is a hint
+                      </div>
+                    </StyledComponent>
+                  </PopoverChildren>
+                  <CloseButton
+                    onClick={[Function]}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "border-radius:50%;border:none;color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                              "rgba(204, 204, 204, 0.4)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}:active{box-shadow:none;background-color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}",
+                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                            ],
+                          },
+                          "displayName": "CloseButton",
+                          "foldedComponentIds": Array [
+                            "Button__IconButton-sc-1ovnfsw-2",
+                          ],
+                          "render": [Function],
+                          "styledComponentId": "Content__CloseButton-sc-1005q1-1",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                          Symbol(Symbol.hasInstance): [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <Button
+                        center={false}
+                        className="c2"
+                        disabled={false}
+                        full={false}
+                        icon="close"
+                        onClick={[Function]}
+                        size="medium"
+                        skin="primary"
+                        type="button"
+                      >
+                        <Button__StyledButton
+                          center={false}
+                          className="c2"
+                          disabled={false}
+                          full={false}
+                          onClick={[Function]}
+                          size="medium"
+                          skin="primary"
+                          type="button"
+                        >
+                          <StyledComponent
+                            center={false}
+                            className="c2"
+                            disabled={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "align-items:center;",
+                                    [Function],
+                                    " display:flex;",
+                                    [Function],
+                                    " font-weight:bold;",
+                                    [Function],
+                                    " justify-content:center;",
+                                    [Function],
+                                    " letter-spacing:0.2px;",
+                                    [Function],
+                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                    [Function],
+                                    " ",
+                                    [Function],
+                                    ":hover{",
+                                    [Function],
+                                    "}:focus{",
+                                    [Function],
+                                    "}:active{",
+                                    [Function],
+                                    "}",
+                                    " ",
+                                    ".c4",
+                                    "{",
+                                    [Function],
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Button__StyledButton",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                "target": "button",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            full={false}
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <button
+                              className="c2 c3"
+                              disabled={false}
+                              onClick={[Function]}
+                              size="medium"
+                              type="button"
+                            >
+                              <Button__ButtonIcon
+                                name="close"
+                                size="medium"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "c4",
+                                        "isStatic": true,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "pointer-events:none;",
+                                        ],
+                                      },
+                                      "displayName": "Button__ButtonIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "c4",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                      Symbol(Symbol.hasInstance): [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  name="close"
+                                  size="medium"
+                                >
+                                  <Icon
+                                    className="c4 c5"
+                                    name="close"
+                                    size="medium"
+                                    skin=""
+                                    style={Object {}}
+                                  >
+                                    <WithStyles(Icon)
+                                      className="c4 c5"
+                                      size="medium"
+                                      style={
+                                        Object {
+                                          "color": "",
+                                        }
+                                      }
+                                    >
+                                      <Icon
+                                        className="c4 c5"
+                                        classes={
+                                          Object {
+                                            "colorAction": "MuiIcon-colorAction-13",
+                                            "colorDisabled": "MuiIcon-colorDisabled-15",
+                                            "colorError": "MuiIcon-colorError-14",
+                                            "colorPrimary": "MuiIcon-colorPrimary-11",
+                                            "colorSecondary": "MuiIcon-colorSecondary-12",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-16",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-18",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-17",
+                                            "root": "MuiIcon-root-10",
+                                          }
+                                        }
+                                        color="inherit"
+                                        component="span"
+                                        fontSize="default"
+                                        size="medium"
+                                        style={
+                                          Object {
+                                            "color": "",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          className="material-icons MuiIcon-root-10 c4 c5"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          close
+                                        </span>
+                                      </Icon>
+                                    </WithStyles(Icon)>
+                                  </Icon>
+                                </StyledComponent>
+                              </Button__ButtonIcon>
+                            </button>
+                          </StyledComponent>
+                        </Button__StyledButton>
+                      </Button>
+                    </StyledComponent>
+                  </CloseButton>
+                </div>
+              </StyledComponent>
+            </Content__PopoverContent>
+          </Portal>
+        </Content>
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c6",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c6"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 3`] = `
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c3:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c4 {
+  font-size: 24px;
+}
+
+.c1 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffefd6;
+  color: #a36300;
+}
+
+.c1:before {
+  color: #ffefd6;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c2:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c6 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="warning"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <Content
+          onClose={[Function]}
+          onPopoverClose={[Function]}
+          placement="top"
+          skin="warning"
+          visible={false}
+        >
+          <Portal
+            containerInfo={
+              .c4 {
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c0 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffefd6;
+  color: #a36300;
+}
+
+.c0:before {
+  color: #ffefd6;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c1:hover {
+  background: none;
+  opacity: 1;
+}
+
+<section>
+                <div
+                  class="c0"
+                  style="left: 0px; top: -15px;"
+                >
+                  <div
+                    class=""
+                  >
+                    This is a hint
+                  </div>
+                  <button
+                    class="c1 c2"
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root-19 c3 c4"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+              </section>
+            }
+          >
+            <Content__PopoverContent
+              onClose={[Function]}
+              placement="top"
+              skin="warning"
+              visible={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__PopoverContent-sc-1005q1-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "box-shadow:0 2px 4px 0 ",
+                        "rgba(128, 128, 128, 0.5)",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        [Function],
+                        ";}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Content__PopoverContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__PopoverContent-sc-1005q1-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={[Function]}
+                onClose={[Function]}
+                placement="top"
+                skin="warning"
+                visible={false}
+              >
+                <div
+                  className="c1"
+                  onClose={[Function]}
+                >
+                  <PopoverChildren>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__PopoverChildren-sc-1005q1-2",
+                            "isStatic": true,
+                            "lastClassName": "ihRKEi",
+                            "rules": Array [],
+                          },
+                          "displayName": "PopoverChildren",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content__PopoverChildren-sc-1005q1-2",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className=""
+                      >
+                        This is a hint
+                      </div>
+                    </StyledComponent>
+                  </PopoverChildren>
+                  <CloseButton
+                    onClick={[Function]}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "border-radius:50%;border:none;color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                              "rgba(204, 204, 204, 0.4)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}:active{box-shadow:none;background-color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}",
+                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                            ],
+                          },
+                          "displayName": "CloseButton",
+                          "foldedComponentIds": Array [
+                            "Button__IconButton-sc-1ovnfsw-2",
+                          ],
+                          "render": [Function],
+                          "styledComponentId": "Content__CloseButton-sc-1005q1-1",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                          Symbol(Symbol.hasInstance): [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <Button
+                        center={false}
+                        className="c2"
+                        disabled={false}
+                        full={false}
+                        icon="close"
+                        onClick={[Function]}
+                        size="medium"
+                        skin="primary"
+                        type="button"
+                      >
+                        <Button__StyledButton
+                          center={false}
+                          className="c2"
+                          disabled={false}
+                          full={false}
+                          onClick={[Function]}
+                          size="medium"
+                          skin="primary"
+                          type="button"
+                        >
+                          <StyledComponent
+                            center={false}
+                            className="c2"
+                            disabled={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "align-items:center;",
+                                    [Function],
+                                    " display:flex;",
+                                    [Function],
+                                    " font-weight:bold;",
+                                    [Function],
+                                    " justify-content:center;",
+                                    [Function],
+                                    " letter-spacing:0.2px;",
+                                    [Function],
+                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                    [Function],
+                                    " ",
+                                    [Function],
+                                    ":hover{",
+                                    [Function],
+                                    "}:focus{",
+                                    [Function],
+                                    "}:active{",
+                                    [Function],
+                                    "}",
+                                    " ",
+                                    ".c4",
+                                    "{",
+                                    [Function],
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Button__StyledButton",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                "target": "button",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            full={false}
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <button
+                              className="c2 c3"
+                              disabled={false}
+                              onClick={[Function]}
+                              size="medium"
+                              type="button"
+                            >
+                              <Button__ButtonIcon
+                                name="close"
+                                size="medium"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "c4",
+                                        "isStatic": true,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "pointer-events:none;",
+                                        ],
+                                      },
+                                      "displayName": "Button__ButtonIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "c4",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                      Symbol(Symbol.hasInstance): [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  name="close"
+                                  size="medium"
+                                >
+                                  <Icon
+                                    className="c4 c5"
+                                    name="close"
+                                    size="medium"
+                                    skin=""
+                                    style={Object {}}
+                                  >
+                                    <WithStyles(Icon)
+                                      className="c4 c5"
+                                      size="medium"
+                                      style={
+                                        Object {
+                                          "color": "",
+                                        }
+                                      }
+                                    >
+                                      <Icon
+                                        className="c4 c5"
+                                        classes={
+                                          Object {
+                                            "colorAction": "MuiIcon-colorAction-22",
+                                            "colorDisabled": "MuiIcon-colorDisabled-24",
+                                            "colorError": "MuiIcon-colorError-23",
+                                            "colorPrimary": "MuiIcon-colorPrimary-20",
+                                            "colorSecondary": "MuiIcon-colorSecondary-21",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-25",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-27",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-26",
+                                            "root": "MuiIcon-root-19",
+                                          }
+                                        }
+                                        color="inherit"
+                                        component="span"
+                                        fontSize="default"
+                                        size="medium"
+                                        style={
+                                          Object {
+                                            "color": "",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          className="material-icons MuiIcon-root-19 c4 c5"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          close
+                                        </span>
+                                      </Icon>
+                                    </WithStyles(Icon)>
+                                  </Icon>
+                                </StyledComponent>
+                              </Button__ButtonIcon>
+                            </button>
+                          </StyledComponent>
+                        </Button__StyledButton>
+                      </Button>
+                    </StyledComponent>
+                  </CloseButton>
+                </div>
+              </StyledComponent>
+            </Content__PopoverContent>
+          </Portal>
+        </Content>
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c6",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c6"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 4`] = `
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c3:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c4 {
+  font-size: 24px;
+}
+
+.c1 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffe5e9;
+  color: #ac001a;
+}
+
+.c1:before {
+  color: #ffe5e9;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c2:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c6 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="top"
+  skin="error"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <Content
+          onClose={[Function]}
+          onPopoverClose={[Function]}
+          placement="top"
+          skin="error"
+          visible={false}
+        >
+          <Portal
+            containerInfo={
+              .c4 {
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c0 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffe5e9;
+  color: #ac001a;
+}
+
+.c0:before {
+  color: #ffe5e9;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  top: 105%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c1:hover {
+  background: none;
+  opacity: 1;
+}
+
+<section>
+                <div
+                  class="c0"
+                  style="left: 0px; top: -15px;"
+                >
+                  <div
+                    class=""
+                  >
+                    This is a hint
+                  </div>
+                  <button
+                    class="c1 c2"
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root-28 c3 c4"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+              </section>
+            }
+          >
+            <Content__PopoverContent
+              onClose={[Function]}
+              placement="top"
+              skin="error"
+              visible={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__PopoverContent-sc-1005q1-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "box-shadow:0 2px 4px 0 ",
+                        "rgba(128, 128, 128, 0.5)",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        [Function],
+                        ";}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Content__PopoverContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__PopoverContent-sc-1005q1-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={[Function]}
+                onClose={[Function]}
+                placement="top"
+                skin="error"
+                visible={false}
+              >
+                <div
+                  className="c1"
+                  onClose={[Function]}
+                >
+                  <PopoverChildren>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__PopoverChildren-sc-1005q1-2",
+                            "isStatic": true,
+                            "lastClassName": "ihRKEi",
+                            "rules": Array [],
+                          },
+                          "displayName": "PopoverChildren",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content__PopoverChildren-sc-1005q1-2",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className=""
+                      >
+                        This is a hint
+                      </div>
+                    </StyledComponent>
+                  </PopoverChildren>
+                  <CloseButton
+                    onClick={[Function]}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "border-radius:50%;border:none;color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                              "rgba(204, 204, 204, 0.4)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}:active{box-shadow:none;background-color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}",
+                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                            ],
+                          },
+                          "displayName": "CloseButton",
+                          "foldedComponentIds": Array [
+                            "Button__IconButton-sc-1ovnfsw-2",
+                          ],
+                          "render": [Function],
+                          "styledComponentId": "Content__CloseButton-sc-1005q1-1",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                          Symbol(Symbol.hasInstance): [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <Button
+                        center={false}
+                        className="c2"
+                        disabled={false}
+                        full={false}
+                        icon="close"
+                        onClick={[Function]}
+                        size="medium"
+                        skin="primary"
+                        type="button"
+                      >
+                        <Button__StyledButton
+                          center={false}
+                          className="c2"
+                          disabled={false}
+                          full={false}
+                          onClick={[Function]}
+                          size="medium"
+                          skin="primary"
+                          type="button"
+                        >
+                          <StyledComponent
+                            center={false}
+                            className="c2"
+                            disabled={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "align-items:center;",
+                                    [Function],
+                                    " display:flex;",
+                                    [Function],
+                                    " font-weight:bold;",
+                                    [Function],
+                                    " justify-content:center;",
+                                    [Function],
+                                    " letter-spacing:0.2px;",
+                                    [Function],
+                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                    [Function],
+                                    " ",
+                                    [Function],
+                                    ":hover{",
+                                    [Function],
+                                    "}:focus{",
+                                    [Function],
+                                    "}:active{",
+                                    [Function],
+                                    "}",
+                                    " ",
+                                    ".c4",
+                                    "{",
+                                    [Function],
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Button__StyledButton",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                "target": "button",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            full={false}
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <button
+                              className="c2 c3"
+                              disabled={false}
+                              onClick={[Function]}
+                              size="medium"
+                              type="button"
+                            >
+                              <Button__ButtonIcon
+                                name="close"
+                                size="medium"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "c4",
+                                        "isStatic": true,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "pointer-events:none;",
+                                        ],
+                                      },
+                                      "displayName": "Button__ButtonIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "c4",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                      Symbol(Symbol.hasInstance): [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  name="close"
+                                  size="medium"
+                                >
+                                  <Icon
+                                    className="c4 c5"
+                                    name="close"
+                                    size="medium"
+                                    skin=""
+                                    style={Object {}}
+                                  >
+                                    <WithStyles(Icon)
+                                      className="c4 c5"
+                                      size="medium"
+                                      style={
+                                        Object {
+                                          "color": "",
+                                        }
+                                      }
+                                    >
+                                      <Icon
+                                        className="c4 c5"
+                                        classes={
+                                          Object {
+                                            "colorAction": "MuiIcon-colorAction-31",
+                                            "colorDisabled": "MuiIcon-colorDisabled-33",
+                                            "colorError": "MuiIcon-colorError-32",
+                                            "colorPrimary": "MuiIcon-colorPrimary-29",
+                                            "colorSecondary": "MuiIcon-colorSecondary-30",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-34",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-36",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-35",
+                                            "root": "MuiIcon-root-28",
+                                          }
+                                        }
+                                        color="inherit"
+                                        component="span"
+                                        fontSize="default"
+                                        size="medium"
+                                        style={
+                                          Object {
+                                            "color": "",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          className="material-icons MuiIcon-root-28 c4 c5"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          close
+                                        </span>
+                                      </Icon>
+                                    </WithStyles(Icon)>
+                                  </Icon>
+                                </StyledComponent>
+                              </Button__ButtonIcon>
+                            </button>
+                          </StyledComponent>
+                        </Button__StyledButton>
+                      </Button>
+                    </StyledComponent>
+                  </CloseButton>
+                </div>
+              </StyledComponent>
+            </Content__PopoverContent>
+          </Portal>
+        </Content>
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c6",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c6"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 5`] = `
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c3:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c4 {
+  font-size: 24px;
+}
+
+.c1 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c1:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  bottom: 105%;
+  content: '▲';
+  left: 50%;
+  text-shadow: 0px -3px 4px rgba(128,128,128,0.5);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c2:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c6 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="bottom"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <Content
+          onClose={[Function]}
+          onPopoverClose={[Function]}
+          placement="bottom"
+          skin="default"
+          visible={false}
+        >
+          <Portal
+            containerInfo={
+              .c4 {
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c0 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c0:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  bottom: 105%;
+  content: '▲';
+  left: 50%;
+  text-shadow: 0px -3px 4px rgba(128,128,128,0.5);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c1:hover {
+  background: none;
+  opacity: 1;
+}
+
+<section>
+                <div
+                  class="c0"
+                  style="left: 0px; top: 15px;"
+                >
+                  <div
+                    class=""
+                  >
+                    This is a hint
+                  </div>
+                  <button
+                    class="c1 c2"
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root-37 c3 c4"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+              </section>
+            }
+          >
+            <Content__PopoverContent
+              onClose={[Function]}
+              placement="bottom"
+              skin="default"
+              visible={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__PopoverContent-sc-1005q1-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "box-shadow:0 2px 4px 0 ",
+                        "rgba(128, 128, 128, 0.5)",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        [Function],
+                        ";}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Content__PopoverContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__PopoverContent-sc-1005q1-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={[Function]}
+                onClose={[Function]}
+                placement="bottom"
+                skin="default"
+                visible={false}
+              >
+                <div
+                  className="c1"
+                  onClose={[Function]}
+                >
+                  <PopoverChildren>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__PopoverChildren-sc-1005q1-2",
+                            "isStatic": true,
+                            "lastClassName": "ihRKEi",
+                            "rules": Array [],
+                          },
+                          "displayName": "PopoverChildren",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content__PopoverChildren-sc-1005q1-2",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className=""
+                      >
+                        This is a hint
+                      </div>
+                    </StyledComponent>
+                  </PopoverChildren>
+                  <CloseButton
+                    onClick={[Function]}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "border-radius:50%;border:none;color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                              "rgba(204, 204, 204, 0.4)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}:active{box-shadow:none;background-color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}",
+                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                            ],
+                          },
+                          "displayName": "CloseButton",
+                          "foldedComponentIds": Array [
+                            "Button__IconButton-sc-1ovnfsw-2",
+                          ],
+                          "render": [Function],
+                          "styledComponentId": "Content__CloseButton-sc-1005q1-1",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                          Symbol(Symbol.hasInstance): [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <Button
+                        center={false}
+                        className="c2"
+                        disabled={false}
+                        full={false}
+                        icon="close"
+                        onClick={[Function]}
+                        size="medium"
+                        skin="primary"
+                        type="button"
+                      >
+                        <Button__StyledButton
+                          center={false}
+                          className="c2"
+                          disabled={false}
+                          full={false}
+                          onClick={[Function]}
+                          size="medium"
+                          skin="primary"
+                          type="button"
+                        >
+                          <StyledComponent
+                            center={false}
+                            className="c2"
+                            disabled={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "align-items:center;",
+                                    [Function],
+                                    " display:flex;",
+                                    [Function],
+                                    " font-weight:bold;",
+                                    [Function],
+                                    " justify-content:center;",
+                                    [Function],
+                                    " letter-spacing:0.2px;",
+                                    [Function],
+                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                    [Function],
+                                    " ",
+                                    [Function],
+                                    ":hover{",
+                                    [Function],
+                                    "}:focus{",
+                                    [Function],
+                                    "}:active{",
+                                    [Function],
+                                    "}",
+                                    " ",
+                                    ".c4",
+                                    "{",
+                                    [Function],
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Button__StyledButton",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                "target": "button",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            full={false}
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <button
+                              className="c2 c3"
+                              disabled={false}
+                              onClick={[Function]}
+                              size="medium"
+                              type="button"
+                            >
+                              <Button__ButtonIcon
+                                name="close"
+                                size="medium"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "c4",
+                                        "isStatic": true,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "pointer-events:none;",
+                                        ],
+                                      },
+                                      "displayName": "Button__ButtonIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "c4",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                      Symbol(Symbol.hasInstance): [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  name="close"
+                                  size="medium"
+                                >
+                                  <Icon
+                                    className="c4 c5"
+                                    name="close"
+                                    size="medium"
+                                    skin=""
+                                    style={Object {}}
+                                  >
+                                    <WithStyles(Icon)
+                                      className="c4 c5"
+                                      size="medium"
+                                      style={
+                                        Object {
+                                          "color": "",
+                                        }
+                                      }
+                                    >
+                                      <Icon
+                                        className="c4 c5"
+                                        classes={
+                                          Object {
+                                            "colorAction": "MuiIcon-colorAction-40",
+                                            "colorDisabled": "MuiIcon-colorDisabled-42",
+                                            "colorError": "MuiIcon-colorError-41",
+                                            "colorPrimary": "MuiIcon-colorPrimary-38",
+                                            "colorSecondary": "MuiIcon-colorSecondary-39",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-43",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-45",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-44",
+                                            "root": "MuiIcon-root-37",
+                                          }
+                                        }
+                                        color="inherit"
+                                        component="span"
+                                        fontSize="default"
+                                        size="medium"
+                                        style={
+                                          Object {
+                                            "color": "",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          className="material-icons MuiIcon-root-37 c4 c5"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          close
+                                        </span>
+                                      </Icon>
+                                    </WithStyles(Icon)>
+                                  </Icon>
+                                </StyledComponent>
+                              </Button__ButtonIcon>
+                            </button>
+                          </StyledComponent>
+                        </Button__StyledButton>
+                      </Button>
+                    </StyledComponent>
+                  </CloseButton>
+                </div>
+              </StyledComponent>
+            </Content__PopoverContent>
+          </Portal>
+        </Content>
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c6",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c6"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 6`] = `
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c3:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c4 {
+  font-size: 24px;
+}
+
+.c1 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c1:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50%;
+  content: '▶';
+  right: -10px;
+  text-shadow: 3px 1px 4px rgba(128,128,128,0.5);
+}
+
+.c2 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c2:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c6 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="left"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <Content
+          onClose={[Function]}
+          onPopoverClose={[Function]}
+          placement="left"
+          skin="default"
+          visible={false}
+        >
+          <Portal
+            containerInfo={
+              .c4 {
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c0 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c0:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50%;
+  content: '▶';
+  right: -10px;
+  text-shadow: 3px 1px 4px rgba(128,128,128,0.5);
+}
+
+.c1 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c1:hover {
+  background: none;
+  opacity: 1;
+}
+
+<section>
+                <div
+                  class="c0"
+                  style="left: -15px; top: 0px; transform: translateY(-50%);"
+                >
+                  <div
+                    class=""
+                  >
+                    This is a hint
+                  </div>
+                  <button
+                    class="c1 c2"
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root-46 c3 c4"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+              </section>
+            }
+          >
+            <Content__PopoverContent
+              onClose={[Function]}
+              placement="left"
+              skin="default"
+              visible={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__PopoverContent-sc-1005q1-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "box-shadow:0 2px 4px 0 ",
+                        "rgba(128, 128, 128, 0.5)",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        [Function],
+                        ";}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Content__PopoverContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__PopoverContent-sc-1005q1-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={[Function]}
+                onClose={[Function]}
+                placement="left"
+                skin="default"
+                visible={false}
+              >
+                <div
+                  className="c1"
+                  onClose={[Function]}
+                >
+                  <PopoverChildren>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__PopoverChildren-sc-1005q1-2",
+                            "isStatic": true,
+                            "lastClassName": "ihRKEi",
+                            "rules": Array [],
+                          },
+                          "displayName": "PopoverChildren",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content__PopoverChildren-sc-1005q1-2",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className=""
+                      >
+                        This is a hint
+                      </div>
+                    </StyledComponent>
+                  </PopoverChildren>
+                  <CloseButton
+                    onClick={[Function]}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "border-radius:50%;border:none;color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                              "rgba(204, 204, 204, 0.4)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}:active{box-shadow:none;background-color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}",
+                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                            ],
+                          },
+                          "displayName": "CloseButton",
+                          "foldedComponentIds": Array [
+                            "Button__IconButton-sc-1ovnfsw-2",
+                          ],
+                          "render": [Function],
+                          "styledComponentId": "Content__CloseButton-sc-1005q1-1",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                          Symbol(Symbol.hasInstance): [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <Button
+                        center={false}
+                        className="c2"
+                        disabled={false}
+                        full={false}
+                        icon="close"
+                        onClick={[Function]}
+                        size="medium"
+                        skin="primary"
+                        type="button"
+                      >
+                        <Button__StyledButton
+                          center={false}
+                          className="c2"
+                          disabled={false}
+                          full={false}
+                          onClick={[Function]}
+                          size="medium"
+                          skin="primary"
+                          type="button"
+                        >
+                          <StyledComponent
+                            center={false}
+                            className="c2"
+                            disabled={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "align-items:center;",
+                                    [Function],
+                                    " display:flex;",
+                                    [Function],
+                                    " font-weight:bold;",
+                                    [Function],
+                                    " justify-content:center;",
+                                    [Function],
+                                    " letter-spacing:0.2px;",
+                                    [Function],
+                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                    [Function],
+                                    " ",
+                                    [Function],
+                                    ":hover{",
+                                    [Function],
+                                    "}:focus{",
+                                    [Function],
+                                    "}:active{",
+                                    [Function],
+                                    "}",
+                                    " ",
+                                    ".c4",
+                                    "{",
+                                    [Function],
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Button__StyledButton",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                "target": "button",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            full={false}
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <button
+                              className="c2 c3"
+                              disabled={false}
+                              onClick={[Function]}
+                              size="medium"
+                              type="button"
+                            >
+                              <Button__ButtonIcon
+                                name="close"
+                                size="medium"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "c4",
+                                        "isStatic": true,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "pointer-events:none;",
+                                        ],
+                                      },
+                                      "displayName": "Button__ButtonIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "c4",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                      Symbol(Symbol.hasInstance): [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  name="close"
+                                  size="medium"
+                                >
+                                  <Icon
+                                    className="c4 c5"
+                                    name="close"
+                                    size="medium"
+                                    skin=""
+                                    style={Object {}}
+                                  >
+                                    <WithStyles(Icon)
+                                      className="c4 c5"
+                                      size="medium"
+                                      style={
+                                        Object {
+                                          "color": "",
+                                        }
+                                      }
+                                    >
+                                      <Icon
+                                        className="c4 c5"
+                                        classes={
+                                          Object {
+                                            "colorAction": "MuiIcon-colorAction-49",
+                                            "colorDisabled": "MuiIcon-colorDisabled-51",
+                                            "colorError": "MuiIcon-colorError-50",
+                                            "colorPrimary": "MuiIcon-colorPrimary-47",
+                                            "colorSecondary": "MuiIcon-colorSecondary-48",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-52",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-54",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-53",
+                                            "root": "MuiIcon-root-46",
+                                          }
+                                        }
+                                        color="inherit"
+                                        component="span"
+                                        fontSize="default"
+                                        size="medium"
+                                        style={
+                                          Object {
+                                            "color": "",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          className="material-icons MuiIcon-root-46 c4 c5"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          close
+                                        </span>
+                                      </Icon>
+                                    </WithStyles(Icon)>
+                                  </Icon>
+                                </StyledComponent>
+                              </Button__ButtonIcon>
+                            </button>
+                          </StyledComponent>
+                        </Button__StyledButton>
+                      </Button>
+                    </StyledComponent>
+                  </CloseButton>
+                </div>
+              </StyledComponent>
+            </Content__PopoverContent>
+          </Portal>
+        </Content>
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c6",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c6"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;
+
+exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 7`] = `
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c3 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c3:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3 .c4 {
+  font-size: 24px;
+}
+
+.c1 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c1:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50%;
+  content: '◀';
+  left: -10px;
+  text-shadow: -3px 1px 4px rgba(128,128,128,0.5);
+}
+
+.c2 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c2:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c2:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c6 {
+  cursor: pointer;
+}
+
+<Popover
+  onClose={[Function]}
+  placement="right"
+  skin="default"
+  trigger={
+    <span>
+      popover here
+    </span>
+  }
+  visible={false}
+>
+  <Popover__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Popover__Wrapper-sc-94rrmp-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Popover__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Popover__Wrapper-sc-94rrmp-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+<div
+            class="c0"
+          >
+            <div
+              class="c1"
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <Content
+          onClose={[Function]}
+          onPopoverClose={[Function]}
+          placement="right"
+          skin="default"
+          visible={false}
+        >
+          <Portal
+            containerInfo={
+              .c4 {
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c2 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c2:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c2:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c2 .c3 {
+  font-size: 24px;
+}
+
+.c0 {
+  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #4c4c4c;
+}
+
+.c0:before {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50%;
+  content: '◀';
+  left: -10px;
+  text-shadow: -3px 1px 4px rgba(128,128,128,0.5);
+}
+
+.c1 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inherit;
+  height: auto;
+  margin: 0 0 0 16px;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c1:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c1:hover {
+  background: none;
+  opacity: 1;
+}
+
+<section>
+                <div
+                  class="c0"
+                  style="left: 15px; top: 0px; transform: translateY(-50%);"
+                >
+                  <div
+                    class=""
+                  >
+                    This is a hint
+                  </div>
+                  <button
+                    class="c1 c2"
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root-55 c3 c4"
+                    >
+                      close
+                    </span>
+                  </button>
+                </div>
+              </section>
+            }
+          >
+            <Content__PopoverContent
+              onClose={[Function]}
+              placement="right"
+              skin="default"
+              visible={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__PopoverContent-sc-1005q1-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "box-shadow:0 2px 4px 0 ",
+                        "rgba(128, 128, 128, 0.5)",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        [Function],
+                        ";}",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Content__PopoverContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__PopoverContent-sc-1005q1-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={[Function]}
+                onClose={[Function]}
+                placement="right"
+                skin="default"
+                visible={false}
+              >
+                <div
+                  className="c1"
+                  onClose={[Function]}
+                >
+                  <PopoverChildren>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__PopoverChildren-sc-1005q1-2",
+                            "isStatic": true,
+                            "lastClassName": "ihRKEi",
+                            "rules": Array [],
+                          },
+                          "displayName": "PopoverChildren",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content__PopoverChildren-sc-1005q1-2",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className=""
+                      >
+                        This is a hint
+                      </div>
+                    </StyledComponent>
+                  </PopoverChildren>
+                  <CloseButton
+                    onClick={[Function]}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "border-radius:50%;border:none;color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
+                              "rgba(204, 204, 204, 0.4)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}:active{box-shadow:none;background-color:",
+                              "rgba(128, 128, 128, 0.5)",
+                              ";color:",
+                              "#4c4c4c",
+                              ";}",
+                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                            ],
+                          },
+                          "displayName": "CloseButton",
+                          "foldedComponentIds": Array [
+                            "Button__IconButton-sc-1ovnfsw-2",
+                          ],
+                          "render": [Function],
+                          "styledComponentId": "Content__CloseButton-sc-1005q1-1",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                          Symbol(Symbol.hasInstance): [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <Button
+                        center={false}
+                        className="c2"
+                        disabled={false}
+                        full={false}
+                        icon="close"
+                        onClick={[Function]}
+                        size="medium"
+                        skin="primary"
+                        type="button"
+                      >
+                        <Button__StyledButton
+                          center={false}
+                          className="c2"
+                          disabled={false}
+                          full={false}
+                          onClick={[Function]}
+                          size="medium"
+                          skin="primary"
+                          type="button"
+                        >
+                          <StyledComponent
+                            center={false}
+                            className="c2"
+                            disabled={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "align-items:center;",
+                                    [Function],
+                                    " display:flex;",
+                                    [Function],
+                                    " font-weight:bold;",
+                                    [Function],
+                                    " justify-content:center;",
+                                    [Function],
+                                    " letter-spacing:0.2px;",
+                                    [Function],
+                                    " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                    [Function],
+                                    " ",
+                                    [Function],
+                                    ":hover{",
+                                    [Function],
+                                    "}:focus{",
+                                    [Function],
+                                    "}:active{",
+                                    [Function],
+                                    "}",
+                                    " ",
+                                    ".c4",
+                                    "{",
+                                    [Function],
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Button__StyledButton",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Button__StyledButton-sc-1ovnfsw-1",
+                                "target": "button",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            full={false}
+                            onClick={[Function]}
+                            size="medium"
+                            skin="primary"
+                            type="button"
+                          >
+                            <button
+                              className="c2 c3"
+                              disabled={false}
+                              onClick={[Function]}
+                              size="medium"
+                              type="button"
+                            >
+                              <Button__ButtonIcon
+                                name="close"
+                                size="medium"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "c4",
+                                        "isStatic": true,
+                                        "lastClassName": "c5",
+                                        "rules": Array [
+                                          "pointer-events:none;",
+                                        ],
+                                      },
+                                      "displayName": "Button__ButtonIcon",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "c4",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                      Symbol(Symbol.hasInstance): [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  name="close"
+                                  size="medium"
+                                >
+                                  <Icon
+                                    className="c4 c5"
+                                    name="close"
+                                    size="medium"
+                                    skin=""
+                                    style={Object {}}
+                                  >
+                                    <WithStyles(Icon)
+                                      className="c4 c5"
+                                      size="medium"
+                                      style={
+                                        Object {
+                                          "color": "",
+                                        }
+                                      }
+                                    >
+                                      <Icon
+                                        className="c4 c5"
+                                        classes={
+                                          Object {
+                                            "colorAction": "MuiIcon-colorAction-58",
+                                            "colorDisabled": "MuiIcon-colorDisabled-60",
+                                            "colorError": "MuiIcon-colorError-59",
+                                            "colorPrimary": "MuiIcon-colorPrimary-56",
+                                            "colorSecondary": "MuiIcon-colorSecondary-57",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-61",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-63",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-62",
+                                            "root": "MuiIcon-root-55",
+                                          }
+                                        }
+                                        color="inherit"
+                                        component="span"
+                                        fontSize="default"
+                                        size="medium"
+                                        style={
+                                          Object {
+                                            "color": "",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          className="material-icons MuiIcon-root-55 c4 c5"
+                                          size="medium"
+                                          style={
+                                            Object {
+                                              "color": "",
+                                            }
+                                          }
+                                        >
+                                          close
+                                        </span>
+                                      </Icon>
+                                    </WithStyles(Icon)>
+                                  </Icon>
+                                </StyledComponent>
+                              </Button__ButtonIcon>
+                            </button>
+                          </StyledComponent>
+                        </Button__StyledButton>
+                      </Button>
+                    </StyledComponent>
+                  </CloseButton>
+                </div>
+              </StyledComponent>
+            </Content__PopoverContent>
+          </Portal>
+        </Content>
+        <ChildrenBlock
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "isStatic": true,
+                  "lastClassName": "c6",
+                  "rules": Array [
+                    "cursor:pointer;",
+                  ],
+                },
+                "displayName": "ChildrenBlock",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <div
+              className="c6"
+              onClick={[Function]}
+            >
+              <span>
+                popover here
+              </span>
+            </div>
+          </StyledComponent>
+        </ChildrenBlock>
+      </div>
+    </StyledComponent>
+  </Popover__Wrapper>
+</Popover>
+`;

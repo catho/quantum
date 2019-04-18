@@ -38,11 +38,6 @@ const PopoverContent = styled.div`
   ${({ skin }) => getStyleBySkin(skin)}
 `;
 
-const PopoverText = styled.span`
-  display: inline-block;
-  max-width: 250px;
-`;
-
 const CloseButton = styled(Button.Icon).attrs({
   icon: 'close',
 })`
@@ -59,6 +54,8 @@ const CloseButton = styled(Button.Icon).attrs({
     opacity: 1;
   }
 `;
+
+const PopoverChildren = styled.div``;
 
 class Content extends Component {
   constructor(props) {
@@ -86,13 +83,16 @@ class Content extends Component {
         }}
         {...rest}
       >
-        <PopoverText>{children}</PopoverText>
+        <PopoverChildren>{children}</PopoverChildren>
         <CloseButton onClick={onPopoverClose} />
       </PopoverContent>,
       this.wrapper,
     );
   }
 }
+
+CloseButton.displayName = 'CloseButton';
+PopoverChildren.displayName = 'PopoverChildren';
 
 Content.propTypes = {
   children: PropTypes.oneOfType([

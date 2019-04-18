@@ -103,6 +103,8 @@ class Popover extends Component {
   }
 }
 
+ChildrenBlock.displayName = 'ChildrenBlock';
+
 Popover.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
