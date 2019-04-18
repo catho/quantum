@@ -52,11 +52,18 @@ const ArrowDown = styled(Icon).attrs({
   pointer-events: none;
 `;
 
+const InputArrowDown = styled(ArrowDown)`
+  position: absolute;
+  top: 12px;
+  right: 14px;
+`;
+
 const DropList = styled.ul`
   background-color: ${Colors.WHITE};
   border-radius: 4px;
   border: solid 1.5px ${Colors.BLACK[100]};
   box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
+  box-sizing: border-box;
   list-style: none;
   margin-top: 4px;
   max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
@@ -122,6 +129,7 @@ const Dropdown = ({
   placeholder,
   selectedItem,
   onChange,
+  autocomplete,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -141,6 +149,9 @@ const Dropdown = ({
     return changes;
   };
 
+  const inputFilter = value =>
+    items.filter(item => item.toLowerCase().indexOf(value.toLowerCase()) > -1);
+
   return (
     <FieldGroup>
       <Downshift
@@ -156,51 +167,96 @@ const Dropdown = ({
           getInputProps,
           getToggleButtonProps,
           getItemProps,
+          inputValue,
           openMenu,
           isOpen,
-        }) => (
-          <DropContainer {...getRootProps()}>
-            {label && (
-              <DropLabel
-                {...getLabelProps()}
-                onClick={() => openMenu()}
-                error={error}
-                disabled={disabled}
-              >
-                {label}
-                {required && <RequiredMark>*</RequiredMark>}
-              </DropLabel>
-            )}
-            <input type="hidden" {...getInputProps()} />
-            <DropButton
-              {...getToggleButtonProps()}
-              isOpen={isOpen}
-              disabled={disabled}
-              error={error}
-              text={_buttonLabel}
-              selectedItem={selectedItem}
-            >
-              {_buttonLabel}
-              <ArrowDown />
-            </DropButton>
-            {isOpen && (
-              <DropList>
-                {items.map(item => (
-                  <DropItem
-                    {...getItemProps({
-                      item,
-                      isSelected: _isEqual(selectedItem, item),
-                      key: _getValue(item),
-                    })}
+        }) => {
+          const filteredInput = isOpen ? inputFilter(inputValue) : [];
+
+          return (
+            <DropContainer {...getRootProps()}>
+              {label && (
+                <DropLabel
+                  {...getLabelProps()}
+                  onClick={() => openMenu()}
+                  error={error}
+                  disabled={disabled}
+                >
+                  {label}
+                  {required && <RequiredMark>*</RequiredMark>}
+                </DropLabel>
+              )}
+              <input type="hidden" {...getInputProps()} />
+              {autocomplete ? (
+                <>
+                  <DropContainer>
+                    <DropButton
+                      as="input"
+                      style={{ cursor: 'inherit' }}
+                      {...getInputProps({
+                        isOpen,
+                        placeholder,
+                        onClick: openMenu,
+                      })}
+                      error={error}
+                      disabled={disabled}
+                      text={_buttonLabel}
+                    />
+                    <InputArrowDown />
+                  </DropContainer>
+
+                  {filteredInput.length > 0 && (
+                    <DropList>
+                      {filteredInput.map(item => (
+                        <DropItem
+                          {...getItemProps({
+                            item,
+                            isSelected: _isEqual(selectedItem, item),
+                            key: _getValue(item),
+                          })}
+                        >
+                          {_getLabel(item)}
+                          {_isEqual(selectedItem, item) && <CheckIcon />}
+                        </DropItem>
+                      ))}
+                    </DropList>
+                  )}
+                </>
+              ) : (
+                <>
+                  <DropButton
+                    {...getToggleButtonProps()}
+                    isOpen={isOpen}
+                    disabled={disabled}
+                    error={error}
+                    text={_buttonLabel}
+                    selectedItem={selectedItem}
                   >
-                    {_getLabel(item)}
-                    {_isEqual(selectedItem, item) && <CheckIcon />}
-                  </DropItem>
-                ))}
-              </DropList>
-            )}
-          </DropContainer>
-        )}
+                    {_buttonLabel}
+                    <ArrowDown />
+                  </DropButton>
+
+                  {isOpen && (
+                    <DropList>
+                      {items.map(item => (
+                        <DropItem
+                          {...getItemProps({
+                            item,
+                            isSelected: _isEqual(selectedItem, item),
+                            key: _getValue(item),
+                          })}
+                        >
+                          {_getLabel(item)}
+                          {_isEqual(selectedItem, item) && <CheckIcon />}
+                        </DropItem>
+                      ))}
+                    </DropList>
+                  )}
+                </>
+              )}
+            </DropContainer>
+          );
+        }}
       </Downshift>
 
       {error && <DropError>{error}</DropError>}
@@ -209,6 +265,7 @@ const Dropdown = ({
 };
 
 Dropdown.defaultProps = {
+  autocomplete: false,
   disabled: false,
   error: '',
   items: [],
@@ -228,6 +285,7 @@ const itemPropType = PropTypes.oneOfType([
 ]);
 
 Dropdown.propTypes = {
+  autocomplete: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.string,
   /** A list of string or objects with value and label keys */

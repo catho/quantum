@@ -968,6 +968,148 @@ exports[`Input component  should match the snapshot 8`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   color: #999999;
+  color: #999999;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c5:hover ~ .c2,
+.c5:focus ~ .c2 {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c4 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+  pointer-events: none;
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-7-label"
+    aria-owns={null}
+    className="c1"
+    role="combobox"
+  >
+    
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-7-label"
+      autoComplete="off"
+      id="downshift-7-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
+    <div
+      className="c1"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls={null}
+        aria-labelledby="downshift-7-label"
+        autoComplete="off"
+        className="c2 c3"
+        disabled={false}
+        id="downshift-7-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Select an option"
+        style={
+          Object {
+            "cursor": "inherit",
+          }
+        }
+        value=""
+      />
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c4"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        keyboard_arrow_down
+      </span>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Input component  should match the snapshot 9`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  color: #999999;
 }
 
 .c3:hover,
@@ -1006,7 +1148,7 @@ exports[`Input component  should match the snapshot 8`] = `
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="downshift-7-label"
+    aria-labelledby="downshift-8-label"
     aria-owns={null}
     className="c1"
     role="combobox"
@@ -1016,9 +1158,9 @@ exports[`Input component  should match the snapshot 8`] = `
       aria-activedescendant={null}
       aria-autocomplete="list"
       aria-controls={null}
-      aria-labelledby="downshift-7-label"
+      aria-labelledby="downshift-8-label"
       autoComplete="off"
-      id="downshift-7-input"
+      id="downshift-8-input"
       onBlur={[Function]}
       onChange={[Function]}
       onKeyDown={[Function]}
@@ -1056,7 +1198,7 @@ exports[`Input component  should match the snapshot 8`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 9`] = `
+exports[`Input component  should match the snapshot 10`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1133,7 +1275,7 @@ exports[`Input component  should match the snapshot 9`] = `
   <div
     aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="downshift-8-label"
+    aria-labelledby="downshift-9-label"
     aria-owns={null}
     className="c1"
     role="combobox"
@@ -1143,9 +1285,9 @@ exports[`Input component  should match the snapshot 9`] = `
       aria-activedescendant={null}
       aria-autocomplete="list"
       aria-controls={null}
-      aria-labelledby="downshift-8-label"
+      aria-labelledby="downshift-9-label"
       autoComplete="off"
-      id="downshift-8-input"
+      id="downshift-9-input"
       onBlur={[Function]}
       onChange={[Function]}
       onKeyDown={[Function]}
