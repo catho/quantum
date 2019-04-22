@@ -922,7 +922,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1140,7 +1140,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1657,7 +1657,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1875,7 +1875,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -2392,7 +2392,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -2610,7 +2610,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -3127,7 +3127,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -3345,7 +3345,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   content: '▼';
   left: 50%;
   text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-  top: 105%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -3859,7 +3859,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #FFFFFF;
   font-size: 16px;
   position: absolute;
-  bottom: 105%;
+  top: -4px;
   content: '▲';
   left: 50%;
   text-shadow: 0px -3px 4px rgba(128,128,128,0.5);
@@ -4077,7 +4077,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #FFFFFF;
   font-size: 16px;
   position: absolute;
-  bottom: 105%;
+  top: -4px;
   content: '▲';
   left: 50%;
   text-shadow: 0px -3px 4px rgba(128,128,128,0.5);
@@ -4596,7 +4596,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   bottom: 50%;
   content: '▶';
-  right: -10px;
+  right: -8px;
   text-shadow: 3px 1px 4px rgba(128,128,128,0.5);
 }
 
@@ -4811,7 +4811,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   bottom: 50%;
   content: '▶';
-  right: -10px;
+  right: -8px;
   text-shadow: 3px 1px 4px rgba(128,128,128,0.5);
 }
 
@@ -5325,7 +5325,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   bottom: 50%;
   content: '◀';
-  left: -10px;
+  left: -8px;
   text-shadow: -3px 1px 4px rgba(128,128,128,0.5);
 }
 
@@ -5540,7 +5540,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   bottom: 50%;
   content: '◀';
-  left: -10px;
+  left: -8px;
   text-shadow: -3px 1px 4px rgba(128,128,128,0.5);
 }
 
