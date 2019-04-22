@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import CheckboxGroup from './CheckboxGroup';
 
 import { Label, ErrorMessage } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
 import Colors from '../Colors';
 import Icon from '../Icon';
+import CheckboxGroupContext from './CheckboxGroupContext';
 
 const CHECKBOX_SIZE = '18px';
 
@@ -116,7 +116,7 @@ const Checkbox = ({
   onChange: onChangeProp,
   ...props
 }) => {
-  const context = useContext(CheckboxGroup.Context);
+  const context = useContext(CheckboxGroupContext);
   const { error: errorContext } = context;
   const { error = errorProp, onChange = onChangeProp } = context;
 
@@ -133,9 +133,7 @@ const Checkbox = ({
         <CheckIcon />
         <CheckboxLabel htmlFor={id}>{children || label || value}</CheckboxLabel>
       </CheckboxWrapper>
-      {error && errorContext === undefined && (
-        <ErrorMessage>{error}</ErrorMessage>
-      )}
+      {error && !errorContext && <ErrorMessage>{error}</ErrorMessage>}
     </Wrapper>
   );
 };

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
 import Checkbox from './Checkbox';
 import CheckboxButton from './CheckboxButton';
+import CheckboxGroupContext from './CheckboxGroupContext';
 
 const Group = styled(FieldGroup)`
   position: relative;
@@ -15,7 +16,6 @@ const ErrorLabel = styled(ErrorMessage)`
 
 ErrorLabel.displayName = 'ErrorLabel';
 
-const CheckboxGroupContext = React.createContext({});
 class CheckboxGroup extends React.Component {
   constructor(props) {
     super(props);
@@ -80,7 +80,6 @@ class CheckboxGroup extends React.Component {
 
 CheckboxGroup.Checkbox = Checkbox;
 CheckboxGroup.Button = CheckboxButton;
-CheckboxGroup.Context = CheckboxGroupContext;
 
 /**
  * Group for Checkbox components.
