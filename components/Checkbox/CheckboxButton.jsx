@@ -4,13 +4,27 @@ import styled from 'styled-components';
 import { ButtonGroupLabel } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
 import uniqId from '../shared/uniqId';
+import Icon from '../Icon';
 import CheckboxGroupContext from './CheckboxGroupContext';
 
 const ID_GENERATOR = uniqId('checkbox-button-');
 
+const LockIcon = styled(Icon).attrs({
+  name: 'lock',
+})``;
+
+const ButtonIcon = styled(Icon)`
+  margin-right: 8px;
+`;
+
 const Wrapper = styled.div`
   display: flex;
   position: relative;
+
+  ${LockIcon} {
+    font-size: 17px;
+    margin-left: 8px;
+  }
 `;
 
 const CheckboxButton = ({
@@ -21,6 +35,7 @@ const CheckboxButton = ({
   checked,
   disabled,
   name,
+  icon,
   error: errorProp,
   onChange: onChangeProp,
   ...props
@@ -53,7 +68,9 @@ const CheckboxButton = ({
         htmlFor={_id}
         skin={skin}
       >
+        {icon && <ButtonIcon name={icon} />}
         {children || label || value}
+        {disabled && <LockIcon />}
       </ButtonGroupLabel>
     </Wrapper>
   );
@@ -64,6 +81,7 @@ CheckboxButton.defaultProps = {
   children: '',
   disabled: false,
   error: '',
+  icon: undefined,
   id: '',
   label: '',
   onChange: () => {},
@@ -74,8 +92,9 @@ CheckboxButton.propTypes = {
   children: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  error: PropTypes.string,
   id: PropTypes.string,
+  icon: PropTypes.string,
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
