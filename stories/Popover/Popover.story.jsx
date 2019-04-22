@@ -64,8 +64,8 @@ storiesOf('Popover', module).add('Popover', () => (
     description={description}
     component={Popover}
     componentProps={{
-      children: 'Popover me',
-      text:
+      trigger: <span>Click me!</span>,
+      children:
         'Lorem ipsum dolor avec Lorem ipsum dolor avec Lorem ipsum dolor avec Lorem ipsum dolor avec.',
     }}
     additionalTabs={TabExample}
