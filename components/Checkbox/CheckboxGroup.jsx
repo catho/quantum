@@ -17,40 +17,19 @@ const ErrorLabel = styled(ErrorMessage)`
 ErrorLabel.displayName = 'ErrorLabel';
 
 class CheckboxGroup extends React.Component {
-  constructor(props) {
-    super(props);
-
-    const { children, options } = this.props;
-
-    const items = React.Children.count(children)
-      ? React.Children.toArray(children).map(
-          ({ props: childProps }) => childProps,
-        )
-      : options;
-
-    this.state = {
-      items: items.map(({ checked, name, value }) => ({
-        checked: Boolean(checked),
-        name,
-        value,
-      })),
-    };
-  }
-
   _onChange = event => {
     const {
       target: { checked, name },
     } = event;
-    const { onChange } = this.props;
-    const { items } = this.state;
 
-    const newItems = items.map(item =>
-      item.name === name ? { ...item, checked } : item,
+    const { onChange, children, options } = this.props;
+
+    const items = React.Children.map(children, ({ props }) => props) || options;
+
+    onChange(
+      items.map(item => (item.name === name ? { ...item, checked } : item)),
+      event,
     );
-
-    onChange(event, newItems);
-
-    this.setState({ items: newItems });
   };
 
   render() {

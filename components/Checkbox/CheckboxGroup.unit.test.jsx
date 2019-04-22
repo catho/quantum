@@ -35,26 +35,9 @@ const _childrenTest = CheckboxItem => {
       expect(withChildren.find(CheckboxItem)).toHaveLength(3);
     });
 
-    it(`should <CheckboxGroup /> have proper items state`, () => {
-      const children = [
-        { value: 'foo', name: 'Foo', checked: true },
-        { value: 'bar', name: 'Bar' },
-        { value: 'baz', name: 'Baz', checked: true },
-      ];
-
-      const { withOptions, withChildren } = _create({ children });
-
-      const desiredState = [
-        { value: 'foo', name: 'Foo', checked: true },
-        { value: 'bar', name: 'Bar', checked: false },
-        { value: 'baz', name: 'Baz', checked: true },
-      ];
-
-      expect(withChildren.state('items')).toEqual(desiredState);
-      expect(withOptions.state('items')).toEqual(desiredState);
-    });
-
-    it(`should call onChange on every <${CheckboxItem.displayName} />`, () => {
+    it(`should call onChange on every <${
+      CheckboxItem.displayName
+    } /> change`, () => {
       const onChildrenChangeMock = jest.fn();
       const onOptionsChangeMock = jest.fn();
 
