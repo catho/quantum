@@ -53,7 +53,7 @@ describe('Popover component ', () => {
     it('should match the snapshots after click on trigger to show Popover Balloon', () => {
       POPOVERS.forEach(popover => {
         const popoverComponent = mount(popover);
-        const trigger = popoverComponent.find('ChildrenBlock');
+        const trigger = popoverComponent.find('TriggerBlock');
         trigger.simulate('click');
         expect(toJson(popoverComponent)).toMatchSnapshot();
         popoverComponent.unmount();
@@ -61,28 +61,48 @@ describe('Popover component ', () => {
     });
   });
 
-  it('should always have a close icon when the Popover is open', () => {
-    const childrenBlock = component.find('ChildrenBlock');
-    childrenBlock.simulate('click');
-    const closeIconContent = component.find('CloseButton').text();
-    expect(closeIconContent).toMatch('close');
+  describe('Popover close button', () => {
+    it('should have a close icon when Popover is open', () => {
+      const childrenBlock = component.find('TriggerBlock');
+      childrenBlock.simulate('click');
+      const closeIconContent = component.find('CloseButton').text();
+      expect(closeIconContent).toMatch('close');
+    });
+
+    it('should call on close event callback', () => {
+      component.find('TriggerBlock').simulate('click');
+      component.find('CloseButton').simulate('click');
+      expect(onCloseEventMock).toHaveBeenCalled();
+    });
   });
 
-  it('should the trigger props is match to the component children', () => {
-    const childrenBlocktext = component.find('ChildrenBlock').prop('children');
-    expect(childrenBlocktext).toEqual(POPOVER_TRIGGER);
+  describe('Popover trigger', () => {
+    it('should trigger be Popover children', () => {
+      const childrenBlocktext = component.find('TriggerBlock').prop('children');
+      expect(childrenBlocktext).toEqual(POPOVER_TRIGGER);
+    });
   });
 
-  it('should the children props of component seems correct', () => {
-    const trigger = component.find('ChildrenBlock');
-    trigger.simulate('click');
-    const popoverChildren = component.find('PopoverChildren').text();
-    expect(popoverChildren).toMatch(POPOVER_TEXT);
+  describe('Openning Popover', () => {
+    it('should display correct content when Popover is opened', () => {
+      expect(component.find('PopoverChildren').exists()).toBe(false);
+
+      const trigger = component.find('TriggerBlock');
+      trigger.simulate('click');
+
+      expect(component.find('PopoverChildren').text()).toMatch(POPOVER_TEXT);
+    });
   });
 
-  it('should call on close event callback', () => {
-    component.find('ChildrenBlock').simulate('click');
-    component.find('CloseButton').simulate('click');
-    expect(onCloseEventMock).toHaveBeenCalled();
+  describe('Popover visible', () => {
+    it('should be visible at first render', () => {
+      const wrapper = mount(
+        <Popover visible trigger={POPOVER_TRIGGER}>
+          {POPOVER_TEXT}
+        </Popover>,
+      );
+
+      expect(wrapper.find('PopoverChildren').text()).toBe(POPOVER_TEXT);
+    });
   });
 });

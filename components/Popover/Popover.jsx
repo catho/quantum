@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const ChildrenBlock = styled.div`
+const TriggerBlock = styled.div`
   cursor: pointer;
 `;
 
@@ -25,6 +25,14 @@ class Popover extends Component {
     this.state = {
       visible,
     };
+  }
+
+  componentDidMount() {
+    const { visible } = this.state;
+
+    if (visible) {
+      this.setPopoverPosition();
+    }
   }
 
   isVisible = visible => {
@@ -95,15 +103,15 @@ class Popover extends Component {
             {children}
           </Content>
         )}
-        <ChildrenBlock onClick={() => this.isVisible(true)}>
+        <TriggerBlock onClick={() => this.isVisible(true)}>
           {trigger}
-        </ChildrenBlock>
+        </TriggerBlock>
       </Wrapper>
     );
   }
 }
 
-ChildrenBlock.displayName = 'ChildrenBlock';
+TriggerBlock.displayName = 'TriggerBlock';
 
 Popover.propTypes = {
   children: PropTypes.oneOfType([

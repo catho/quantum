@@ -73,7 +73,7 @@ exports[`Popover component  Snapshots should match snapshots 1`] = `
       <div
         className="c0"
       >
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -82,17 +82,17 @@ exports[`Popover component  Snapshots should match snapshots 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -111,7 +111,7 @@ exports[`Popover component  Snapshots should match snapshots 1`] = `
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -191,7 +191,7 @@ exports[`Popover component  Snapshots should match snapshots 2`] = `
       <div
         className="c0"
       >
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -200,17 +200,17 @@ exports[`Popover component  Snapshots should match snapshots 2`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -229,7 +229,7 @@ exports[`Popover component  Snapshots should match snapshots 2`] = `
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -309,7 +309,7 @@ exports[`Popover component  Snapshots should match snapshots 3`] = `
       <div
         className="c0"
       >
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -318,17 +318,17 @@ exports[`Popover component  Snapshots should match snapshots 3`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -347,7 +347,7 @@ exports[`Popover component  Snapshots should match snapshots 3`] = `
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -427,7 +427,7 @@ exports[`Popover component  Snapshots should match snapshots 4`] = `
       <div
         className="c0"
       >
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -436,17 +436,17 @@ exports[`Popover component  Snapshots should match snapshots 4`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -465,7 +465,7 @@ exports[`Popover component  Snapshots should match snapshots 4`] = `
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -545,7 +545,7 @@ exports[`Popover component  Snapshots should match snapshots 5`] = `
       <div
         className="c0"
       >
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -554,17 +554,17 @@ exports[`Popover component  Snapshots should match snapshots 5`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -583,7 +583,7 @@ exports[`Popover component  Snapshots should match snapshots 5`] = `
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -663,7 +663,7 @@ exports[`Popover component  Snapshots should match snapshots 6`] = `
       <div
         className="c0"
       >
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -672,17 +672,17 @@ exports[`Popover component  Snapshots should match snapshots 6`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -701,7 +701,7 @@ exports[`Popover component  Snapshots should match snapshots 6`] = `
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -781,7 +781,7 @@ exports[`Popover component  Snapshots should match snapshots 7`] = `
       <div
         className="c0"
       >
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -790,17 +790,17 @@ exports[`Popover component  Snapshots should match snapshots 7`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -819,7 +819,7 @@ exports[`Popover component  Snapshots should match snapshots 7`] = `
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -1516,7 +1516,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             </Content__PopoverContent>
           </Portal>
         </Content>
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -1525,17 +1525,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c6",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1554,7 +1554,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -2251,7 +2251,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             </Content__PopoverContent>
           </Portal>
         </Content>
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -2260,17 +2260,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c6",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -2289,7 +2289,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -2986,7 +2986,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             </Content__PopoverContent>
           </Portal>
         </Content>
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -2995,17 +2995,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c6",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3024,7 +3024,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -3721,7 +3721,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             </Content__PopoverContent>
           </Portal>
         </Content>
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -3730,17 +3730,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c6",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3759,7 +3759,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -4456,7 +4456,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             </Content__PopoverContent>
           </Portal>
         </Content>
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -4465,17 +4465,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c6",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -4494,7 +4494,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -5185,7 +5185,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             </Content__PopoverContent>
           </Portal>
         </Content>
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -5194,17 +5194,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c6",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -5223,7 +5223,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
@@ -5914,7 +5914,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             </Content__PopoverContent>
           </Portal>
         </Content>
-        <ChildrenBlock
+        <TriggerBlock
           onClick={[Function]}
         >
           <StyledComponent
@@ -5923,17 +5923,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                  "componentId": "Popover__TriggerBlock-sc-94rrmp-1",
                   "isStatic": true,
                   "lastClassName": "c6",
                   "rules": Array [
                     "cursor:pointer;",
                   ],
                 },
-                "displayName": "ChildrenBlock",
+                "displayName": "TriggerBlock",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Popover__ChildrenBlock-sc-94rrmp-1",
+                "styledComponentId": "Popover__TriggerBlock-sc-94rrmp-1",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -5952,7 +5952,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               </span>
             </div>
           </StyledComponent>
-        </ChildrenBlock>
+        </TriggerBlock>
       </div>
     </StyledComponent>
   </Popover__Wrapper>
