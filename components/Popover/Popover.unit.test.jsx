@@ -62,13 +62,6 @@ describe('Popover component ', () => {
   });
 
   describe('Popover close button', () => {
-    it('should have a close icon when Popover is open', () => {
-      const childrenBlock = component.find('TriggerBlock');
-      childrenBlock.simulate('click');
-      const closeIconContent = component.find('CloseButton').text();
-      expect(closeIconContent).toMatch('close');
-    });
-
     it('should call on close event callback', () => {
       component.find('TriggerBlock').simulate('click');
       component.find('CloseButton').simulate('click');
