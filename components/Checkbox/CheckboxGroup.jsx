@@ -33,12 +33,13 @@ class CheckboxGroup extends React.Component {
   };
 
   render() {
-    const { children, error, options } = this.props;
+    const { children, error, options, type } = this.props;
+    const ItemType = type === 'checkbox' ? Checkbox : CheckboxButton;
 
     const checkboxes =
       children ||
       options.map(option => (
-        <Checkbox {...Object.assign({}, option, { key: option.name })} />
+        <ItemType {...Object.assign({}, option, { key: option.name })} />
       ));
 
     return (
@@ -68,6 +69,7 @@ CheckboxGroup.defaultProps = {
   error: undefined,
   onChange: () => {},
   options: [],
+  type: 'checkbox',
 };
 
 CheckboxGroup.propTypes = {
@@ -87,6 +89,7 @@ CheckboxGroup.propTypes = {
       value: PropTypes.string,
     }),
   ),
+  type: PropTypes.oneOf(['checkbox', 'button']),
 };
 
 export default CheckboxGroup;
