@@ -1,8 +1,7 @@
 import Colors from '../Colors';
 
 const ARROW_SIZE = '16px';
-const ARROW_POSITION_Y = '105%';
-const SIDE_POSITION_X = -10;
+const SIDE_POSITION_X = -8;
 const CENTER_POSITION = '50%';
 
 const getColorBySkin = skin => {
@@ -16,7 +15,7 @@ const getArrow = (placement, skin) => {
   content: '▼';
   left: ${CENTER_POSITION};
   text-shadow: 0px 4px 4px ${Colors.SHADOW[50]};
-  top: ${ARROW_POSITION_Y};
+  bottom: 0;
   transform: translateX(-${CENTER_POSITION});`;
 
   switch (placement) {
@@ -25,7 +24,7 @@ const getArrow = (placement, skin) => {
       break;
     case 'bottom':
       placementPosition = `
-      bottom: ${ARROW_POSITION_Y};
+      top: -4px;
       content: '▲';
       left: ${CENTER_POSITION};
       text-shadow: 0px -3px 4px ${Colors.SHADOW[50]};
@@ -53,7 +52,7 @@ const getArrow = (placement, skin) => {
     color: ${getColorBySkin(skin)}
     font-size: ${ARROW_SIZE};
     position: absolute;
-    
+
     ${placementPosition}
   `;
 };

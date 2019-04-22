@@ -12,11 +12,7 @@ const popoverPosition = ({
       popoverContentWidth +
       triggerWidthValue / 2 +
       popoverContentWidth / 2,
-    top:
-      popoverWrapperTopValue -
-      triggerHeightValue -
-      popoverContentHeight / 2 -
-      15,
+    top: popoverWrapperTopValue - popoverContentHeight - 15,
   },
   right: {
     left: triggerLeftValue + triggerWidthValue + 15,
