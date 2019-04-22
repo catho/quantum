@@ -18,10 +18,10 @@ const TabExample = (
       <Title as="h2">Examples</Title>
       {examples.map(example => (
         <Row key={example.code}>
-          <Col xsmall={2} small={4} medium={6}>
+          <Col xsmall={4} small={8} medium={6}>
             <SimpleHighlight>{example.code}</SimpleHighlight>
           </Col>
-          <Col xsmall={2} small={4} medium={6}>
+          <Col xsmall={4} small={8} medium={6}>
             {example.component}
           </Col>
         </Row>
