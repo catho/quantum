@@ -10,7 +10,7 @@ import {
 
 import { Row, Col } from '../../components/Grid';
 import Popover from '../../components/Popover';
-import examples from './examples';
+import examples from './examples/examples';
 
 const TabExample = (
   <Tab title="Examples">
