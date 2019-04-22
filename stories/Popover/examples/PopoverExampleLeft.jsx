@@ -10,7 +10,6 @@ const PopoverExampleLeft = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
       <Popover
-        visible
         placement="left"
         skin="success"
         trigger={<Button>This is a Popover left example</Button>}
