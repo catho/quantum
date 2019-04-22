@@ -1,68 +1,63 @@
-import React from 'react';
+import React, { useContext, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ButtonGroupLabel } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
 import uniqId from '../shared/uniqId';
+import CheckboxGroupContext from './CheckboxGroupContext';
 
 const ID_GENERATOR = uniqId('checkbox-button-');
-
-// import Colors from '../Colors';
-// import Icon from '../Icon';
 
 const Wrapper = styled.div`
   display: flex;
   position: relative;
 `;
 
-class CheckboxButton extends React.Component {
-  constructor(props) {
-    super(props);
+const CheckboxButton = ({
+  children,
+  id,
+  label,
+  value,
+  checked,
+  disabled,
+  name,
+  error: errorProp,
+  onChange: onChangeProp,
+  ...props
+}) => {
+  const { error = errorProp, onChange = onChangeProp } = useContext(
+    CheckboxGroupContext,
+  );
 
-    const { id } = props;
+  const skin = checked ? 'primary' : 'secondary';
+  const _id = useMemo(() => ID_GENERATOR.next().value, [name]);
 
-    this._id = id || ID_GENERATOR.next().value;
-  }
-
-  render() {
-    const {
-      children,
-      error,
-      id,
-      label,
-      value,
-      checked,
-      disabled,
-      ...props
-    } = this.props;
-
-    const skin = checked ? 'primary' : 'secondary';
-
-    return (
-      <Wrapper>
-        <HiddenInput
-          type="checkbox"
-          checked={checked}
-          disabled={disabled}
-          id={this._id}
-          value={value}
-          skin={skin}
-          error={error}
-          {...props}
-        />
-        <ButtonGroupLabel
-          checked={checked}
-          disabled={disabled}
-          error={error}
-          htmlFor={this._id}
-          skin={skin}
-        >
-          {children || label || value}
-        </ButtonGroupLabel>
-      </Wrapper>
-    );
-  }
-}
+  return (
+    <Wrapper>
+      <HiddenInput
+        {...props}
+        checked={checked}
+        disabled={disabled}
+        error={error}
+        id={_id}
+        name={name}
+        onChange={onChange}
+        skin={skin}
+        type="checkbox"
+        value={value}
+      />
+      <ButtonGroupLabel
+        checked={checked}
+        disabled={disabled}
+        error={error}
+        htmlFor={_id}
+        skin={skin}
+      >
+        {children || label || value}
+      </ButtonGroupLabel>
+    </Wrapper>
+  );
+};
 
 CheckboxButton.defaultProps = {
   checked: false,
