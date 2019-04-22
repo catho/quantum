@@ -24,8 +24,17 @@ const ButtonIcon = styled(Icon)`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  position: relative;
+  ${({ inline }) =>
+    inline &&
+    `
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: top;
+
+    :last-child {
+      margin-right: 0;
+    }
+  `}
 
   ${LockIcon} {
     font-size: 17px;
@@ -46,7 +55,7 @@ const CheckboxButton = ({
   onChange: onChangeProp,
   ...props
 }) => {
-  const { error = errorProp, onChange = onChangeProp } = useContext(
+  const { error = errorProp, onChange = onChangeProp, inline } = useContext(
     CheckboxGroupContext,
   );
 
@@ -54,7 +63,7 @@ const CheckboxButton = ({
   const _id = useMemo(() => ID_GENERATOR.next().value, [name]);
 
   return (
-    <Wrapper>
+    <Wrapper inline={inline}>
       <HiddenCheckbox
         {...props}
         checked={checked}

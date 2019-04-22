@@ -128,7 +128,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 brfAPx\\"
   >
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 fyNEyf\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 bWfXYb\\"
     >
       <input
         checked={false}
@@ -153,7 +153,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 fyNEyf\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 bWfXYb\\"
     >
       <input
         checked={false}
@@ -178,7 +178,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 fyNEyf\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 bWfXYb\\"
     >
       <input
         checked={false}
@@ -301,14 +301,6 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   background-color: #e5edfc;
   border-color: #1355d0;
   color: #1355d0;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
 }
 
 .c1 .c6 {
@@ -956,14 +948,6 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   color: #1355d0;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
 .c1 .c6 {
   font-size: 17px;
   margin-left: 8px;
@@ -1197,14 +1181,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
 
 .c5 {
   margin-right: 8px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
 }
 
 .c1 .c9 {
@@ -1460,14 +1436,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   background-color: #ffe5e9;
   border-color: #ff2d4d;
   color: #ff2d4d;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
 }
 
 .c1 .c9 {
@@ -1812,14 +1780,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   padding: 0;
   position: absolute;
   width: 0;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
 }
 
 .c1 .c5 {
@@ -2618,6 +2578,247 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         Baz
       </label>
     </div>
+  </div>
+</div>
+`;
+
+exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
+.c4 {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #1355d0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c5:focus ~ .c3 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:hover ~ .c3 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:active ~ .c3 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c6:focus ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c6:hover ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c6:active ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2:focus ~ .c3 {
+  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
+  background-color: #FFFFFF;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2:hover ~ .c3 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c2:active ~ .c3 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #e5edfc;
+  border-color: #1355d0;
+  color: #1355d0;
+}
+
+.c7:focus ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c7:hover ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c7:active ~ .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
+  background-color: #ffe5e9;
+  border-color: #ff2d4d;
+  color: #ff2d4d;
+}
+
+.c1 {
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
+.c1 .c8 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={false}
+      id="checkbox-button-21"
+      name="Foo"
+      onChange={[Function]}
+      type="checkbox"
+      value=""
+    />
+    <label
+      checked={false}
+      className="c3 c4"
+      disabled={false}
+      htmlFor="checkbox-button-21"
+    >
+      Foo
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={false}
+      id="checkbox-button-22"
+      name="Bar"
+      onChange={[Function]}
+      type="checkbox"
+      value=""
+    />
+    <label
+      checked={false}
+      className="c3 c4"
+      disabled={false}
+      htmlFor="checkbox-button-22"
+    >
+      Bar
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2"
+      disabled={false}
+      id="checkbox-button-23"
+      name="Baz"
+      onChange={[Function]}
+      type="checkbox"
+      value=""
+    />
+    <label
+      checked={false}
+      className="c3 c4"
+      disabled={false}
+      htmlFor="checkbox-button-23"
+    >
+      Baz
+    </label>
   </div>
 </div>
 `;
