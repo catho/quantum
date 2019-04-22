@@ -33,14 +33,12 @@ class CheckboxGroup extends React.Component {
   };
 
   render() {
-    const { children, error, options, type } = this.props;
+    const { children, error, options, type, inline } = this.props;
     const ItemType = type === 'checkbox' ? Checkbox : CheckboxButton;
 
     const checkboxes =
       children ||
-      options.map(option => (
-        <ItemType {...Object.assign({}, option, { key: option.name })} />
-      ));
+      options.map(option => <ItemType {...option} key={option.name} />);
 
     return (
       <Group>
@@ -48,6 +46,7 @@ class CheckboxGroup extends React.Component {
           value={{
             error: Boolean(error),
             onChange: this._onChange,
+            inline,
           }}
         >
           {checkboxes}
@@ -67,6 +66,7 @@ CheckboxGroup.Button = CheckboxButton;
 CheckboxGroup.defaultProps = {
   children: undefined,
   error: undefined,
+  inline: false,
   onChange: () => {},
   options: [],
   type: 'checkbox',
@@ -78,6 +78,7 @@ CheckboxGroup.propTypes = {
     PropTypes.element,
   ]),
   error: PropTypes.string,
+  inline: PropTypes.bool,
   /** It captures group changes. Signature: onChange(event: SynteticEvent, list: Array) */
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(

@@ -1,4 +1,4 @@
 import groupExamples from './groupExamples';
-import buttonGroupExamples from './buttonGroupExamples';
+import buttonExamples from './buttonExamples';
 
-export { groupExamples, buttonGroupExamples };
+export { groupExamples, buttonExamples };
