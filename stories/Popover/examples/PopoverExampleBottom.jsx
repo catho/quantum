@@ -2,42 +2,27 @@ import React from 'react';
 import Popover from '../../../components/Popover';
 import Button from '../../../components/Button';
 
-const PopoverExampleBottom = () => {
-  const onCloseFn = () => {
-    console.log('onClose prop triggered!');
-  };
+const PopoverExampleBottom = () => (
+  <Popover
+    placement="bottom"
+    skin="warning"
+    trigger={<Button>This is a warning Popover bottom example</Button>}
+    onClose={() => console.log('onClose prop triggered')}
+  >
+    Here comes a new Popover Bottom example
+  </Popover>
+);
 
-  return (
-    <Popover
-      placement="bottom"
-      skin="warning"
-      trigger={<Button>This is a Popover bottom example</Button>}
-      onClose={onCloseFn}
-    >
-      Here comes a new Popover Bottom example
-    </Popover>
-  );
-};
+PopoverExampleBottom.code = `import { Popover, Button } from '@catho/quantum';
 
-PopoverExampleBottom.code = `import React from 'react';
-import { Popover, Button } from '@catho/quantum';
-
-const PopoverExampleBottom = () => {
-  const onCloseFn = () => {
-    console.log('onClose prop triggered!');
-  };
-
-  return (
-    <Popover
-      placement="bottom"
-      skin="warning"
-      trigger={<Button>This is a Popover bottom example</Button>}
-      onClose={onCloseFn}
-    >
-      Here comes a new Popover Bottom example
-    </Popover>
-  );
-};
+<Popover
+  placement="bottom"
+  skin="warning"
+  trigger={<Button>This is a warning Popover bottom example</Button>}
+  onClose={() => console.log('onClose prop triggered')}
+>
+  Here comes a new Popover Bottom example
+</Popover>
 `;
 
 export default PopoverExampleBottom;

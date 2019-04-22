@@ -3,55 +3,29 @@ import { storiesOf } from '@storybook/react';
 import {
   AutoExample,
   Tab,
-  Example,
   Title,
   StoryContainer,
+  SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
+import { Row, Col } from '../../components/Grid';
 import Popover from '../../components/Popover';
-import { Container } from '../../components/Grid';
-import PopoverExampleTop from './examples/PopoverExampleTop';
-import PopoverExampleLeft from './examples/PopoverExampleLeft';
-import PopoverExampleBottom from './examples/PopoverExampleBottom';
-import PopoverExampleRight from './examples/PopoverExampleRight';
+import examples from './examples';
 
 const TabExample = (
   <Tab title="Examples">
     <StoryContainer>
-      <Container fluid>
-        <Title as="h2">Popover top (default color)</Title>
-        <Example
-          component={<PopoverExampleTop />}
-          code={PopoverExampleTop.code}
-        />
-      </Container>
-    </StoryContainer>
-    <StoryContainer>
-      <Container fluid>
-        <Title as="h2">Popover left (success color)</Title>
-        <Example
-          component={<PopoverExampleLeft />}
-          code={PopoverExampleLeft.code}
-        />
-      </Container>
-    </StoryContainer>
-    <StoryContainer>
-      <Container fluid>
-        <Title as="h2">Popover bottom (warning color)</Title>
-        <Example
-          component={<PopoverExampleBottom />}
-          code={PopoverExampleBottom.code}
-        />
-      </Container>
-    </StoryContainer>
-    <StoryContainer>
-      <Container fluid>
-        <Title as="h2">Popover right (error color)</Title>
-        <Example
-          component={<PopoverExampleRight />}
-          code={PopoverExampleRight.code}
-        />
-      </Container>
+      <Title as="h2">Examples</Title>
+      {examples.map(example => (
+        <Row key={example.code}>
+          <Col xsmall={2} small={4} medium={6}>
+            <SimpleHighlight>{example.code}</SimpleHighlight>
+          </Col>
+          <Col xsmall={2} small={4} medium={6}>
+            {example.component}
+          </Col>
+        </Row>
+      ))}
     </StoryContainer>
   </Tab>
 );
