@@ -19,23 +19,32 @@ class Popover extends Component {
   constructor(props) {
     super(props);
 
-    const { visible } = props;
-
     this.wrapperRef = React.createRef();
     this.state = {
-      visible,
+      visible: undefined,
     };
   }
 
   componentDidMount() {
-    const { visible } = this.state;
-
-    if (visible) {
+    if (this.isVisible) {
       this.setPopoverPosition();
     }
   }
 
-  isVisible = visible => {
+  componentDidUpdate() {
+    if (this.isVisible) {
+      this.setPopoverPosition();
+    }
+  }
+
+  get isVisible() {
+    const { visible: visibleState } = this.state;
+    const { visible } = this.props;
+
+    return visibleState !== undefined ? visibleState : visible;
+  }
+
+  handleVisible = visible => {
     const { onClose } = this.props;
     if (!visible) {
       onClose();
@@ -85,16 +94,15 @@ class Popover extends Component {
   };
 
   render() {
-    const { children, trigger, placement, ...rest } = this.props;
-    const { visible } = this.state;
+    const { children, trigger, placement, visible, ...rest } = this.props;
 
     return (
       <Wrapper ref={this.wrapperRef}>
-        {visible && (
+        {this.isVisible && (
           <Content
             placement={placement}
             visible={visible}
-            onPopoverClose={() => this.isVisible(false)}
+            onPopoverClose={() => this.handleVisible(false)}
             ref={element => {
               this.contentRef = element;
             }}
@@ -103,7 +111,7 @@ class Popover extends Component {
             {children}
           </Content>
         )}
-        <TriggerBlock onClick={() => this.isVisible(true)}>
+        <TriggerBlock onClick={() => this.handleVisible(true)}>
           {trigger}
         </TriggerBlock>
       </Wrapper>
