@@ -9,6 +9,12 @@ import CheckboxGroupContext from './CheckboxGroupContext';
 
 const ID_GENERATOR = uniqId('checkbox-button-');
 
+const HiddenCheckbox = styled(HiddenInput).attrs({
+  type: 'checkbox',
+})``;
+
+HiddenCheckbox.displayName = 'HiddenCheckbox';
+
 const LockIcon = styled(Icon).attrs({
   name: 'lock',
 })``;
@@ -49,7 +55,7 @@ const CheckboxButton = ({
 
   return (
     <Wrapper>
-      <HiddenInput
+      <HiddenCheckbox
         {...props}
         checked={checked}
         disabled={disabled}
@@ -58,7 +64,6 @@ const CheckboxButton = ({
         name={name}
         onChange={onChange}
         skin={skin}
-        type="checkbox"
         value={value}
       />
       <ButtonGroupLabel
