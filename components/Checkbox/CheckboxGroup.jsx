@@ -79,7 +79,7 @@ CheckboxGroup.propTypes = {
   ]),
   error: PropTypes.string,
   inline: PropTypes.bool,
-  /** It captures group changes. Signature: onChange(event: SynteticEvent, list: Array) */
+  /** It captures group changes. Signature: onChange(list: Array, event: SynteticEvent) */
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(
     PropTypes.shape({
