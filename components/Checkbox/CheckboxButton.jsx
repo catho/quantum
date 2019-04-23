@@ -60,7 +60,7 @@ const CheckboxButton = ({
   );
 
   const skin = checked ? 'primary' : 'secondary';
-  const _id = useMemo(() => ID_GENERATOR.next().value, [name]);
+  const _id = id || useMemo(() => ID_GENERATOR.next().value, [name]);
 
   return (
     <Wrapper inline={inline}>
