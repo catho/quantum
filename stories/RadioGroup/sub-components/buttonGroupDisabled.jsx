@@ -19,7 +19,7 @@ const buttonGroup = {
   name="groceries"
   type="button"
   options={options}
-  checked="checked"
+  checked="checked-option"
 >
 ...
 </RadioGroup>`,
@@ -27,7 +27,6 @@ const buttonGroup = {
     <RadioGroup
       name="disabled-example"
       value="checked-option"
-      onChange={({ value: opValue }) => this.setState({ value: opValue })}
       options={options}
       type="button"
     />

@@ -22,22 +22,15 @@ class ControlledGroup extends React.Component {
     };
   }
 
-  onChange = ({ target: { checked, name } }) => {
-    const { items: itemsState } = this.state;
-
-    this.setState({
-      items: itemsState.map(item =>
-        item.name === name ? { ...item, checked } : item,
-      ),
-    });
-  };
-
   render() {
     const { items } = this.state;
 
     return (
       <>
-        <CheckboxGroup options={items} onChange={this.onChange} />
+        <CheckboxGroup
+          options={items}
+          onChange={newItems => this.setState({ items: newItems })}
+        />
         <p>State:</p>
         <pre>{JSON.stringify(items, null, 2)}</pre>
       </>
@@ -58,22 +51,15 @@ ControlledGroup.code = `class ControlledGroup extends React.Component {
     };
   }
 
-  onChange = ({ target: { checked, name } }) => {
-    const { items: itemsState } = this.state;
-
-    this.setState({
-      items: itemsState.map(item =>
-        item.name === name ? { ...item, checked } : item,
-      ),
-    });
-  };
-
   render() {
     const { items } = this.state;
 
     return (
       <>
-        <CheckboxGroup options={items} onChange={this.onChange} />
+        <CheckboxGroup
+          options={items}
+          onChange={newItems => this.setState({ items: newItems })}
+        />
         <p>State:</p>
         <pre>{JSON.stringify(items, null, 2)}</pre>
       </>

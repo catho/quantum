@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
 import Label from '../shared/Label';
-import HiddenRadio from '../shared/HiddenRadio';
+import HiddenInput from '../shared/HiddenInput';
 
 const RadioMark = styled.span`
   background-color: ${Colors.WHITE};
@@ -34,7 +34,7 @@ const RadioLabel = styled(Label)`
   cursor: pointer;
   user-select: none;
 
-  ${HiddenRadio} {
+  ${HiddenInput} {
     :checked {
       ~ ${RadioMark} {
         border-color: ${Colors.BLUE[500]};
@@ -64,7 +64,7 @@ const RadioLabel = styled(Label)`
   ${({ error }) =>
     error &&
     `
-    ${HiddenRadio} {
+    ${HiddenInput} {
       :checked {
         ~ ${RadioMark} {
           border-color: ${Colors.ERROR[500]};
@@ -106,7 +106,7 @@ const RadioLabel = styled(Label)`
       cursor: not-allowed;
     }
 
-    ${HiddenRadio} {
+    ${HiddenInput} {
       :disabled {
         ~ ${RadioMark} {
           background-color: ${Colors.BLACK[200]};
@@ -147,7 +147,7 @@ const RadioLabel = styled(Label)`
     }
   `}
 
-  ${HiddenRadio}:checked:disabled ~ ${RadioMark} {
+  ${HiddenInput}:checked:disabled ~ ${RadioMark} {
     background-color: ${Colors.BLACK[400]};
     border-color: ${Colors.BLACK[400]};
     box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
@@ -164,7 +164,8 @@ const Radio = ({
   ...rest
 }) => (
   <RadioLabel error={error} disabled={disabled}>
-    <HiddenRadio
+    <HiddenInput
+      type="radio"
       disabled={disabled}
       onChange={e => onChange({ value, label }, e)}
       value={value}

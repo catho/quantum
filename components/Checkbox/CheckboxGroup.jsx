@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
 import Checkbox from './Checkbox';
+import CheckboxButton from './CheckboxButton';
+import CheckboxGroupContext from './CheckboxGroupContext';
 
 const Group = styled(FieldGroup)`
   position: relative;
@@ -14,52 +16,29 @@ const ErrorLabel = styled(ErrorMessage)`
 
 ErrorLabel.displayName = 'ErrorLabel';
 
-const CheckboxGroupContext = React.createContext({});
 class CheckboxGroup extends React.Component {
-  constructor(props) {
-    super(props);
-
-    const { children, options } = this.props;
-
-    const items = React.Children.count(children)
-      ? React.Children.toArray(children).map(
-          ({ props: childProps }) => childProps,
-        )
-      : options;
-
-    this.state = {
-      items: items.map(({ checked, name, value }) => ({
-        checked: Boolean(checked),
-        name,
-        value,
-      })),
-    };
-  }
-
   _onChange = event => {
     const {
       target: { checked, name },
     } = event;
-    const { onChange } = this.props;
-    const { items } = this.state;
 
-    const newItems = items.map(item =>
-      item.name === name ? { ...item, checked } : item,
+    const { onChange, children, options } = this.props;
+
+    const items = React.Children.map(children, ({ props }) => props) || options;
+
+    onChange(
+      items.map(item => (item.name === name ? { ...item, checked } : item)),
+      event,
     );
-
-    onChange(event, newItems);
-
-    this.setState({ items: newItems });
   };
 
   render() {
-    const { children, error, options } = this.props;
+    const { children, error, options, type, inline } = this.props;
+    const ItemType = type === 'checkbox' ? Checkbox : CheckboxButton;
 
     const checkboxes =
       children ||
-      options.map(option => (
-        <Checkbox {...Object.assign({}, option, { key: option.name })} />
-      ));
+      options.map(option => <ItemType {...option} key={option.name} />);
 
     return (
       <Group>
@@ -67,6 +46,7 @@ class CheckboxGroup extends React.Component {
           value={{
             error: Boolean(error),
             onChange: this._onChange,
+            inline,
           }}
         >
           {checkboxes}
@@ -78,7 +58,7 @@ class CheckboxGroup extends React.Component {
 }
 
 CheckboxGroup.Checkbox = Checkbox;
-CheckboxGroup.Context = CheckboxGroupContext;
+CheckboxGroup.Button = CheckboxButton;
 
 /**
  * Group for Checkbox components.
@@ -86,8 +66,10 @@ CheckboxGroup.Context = CheckboxGroupContext;
 CheckboxGroup.defaultProps = {
   children: undefined,
   error: undefined,
+  inline: false,
   onChange: () => {},
   options: [],
+  type: 'checkbox',
 };
 
 CheckboxGroup.propTypes = {
@@ -96,7 +78,8 @@ CheckboxGroup.propTypes = {
     PropTypes.element,
   ]),
   error: PropTypes.string,
-  /** It captures group changes. Signature: onChange(event: SynteticEvent, list: Array) */
+  inline: PropTypes.bool,
+  /** It captures group changes. Signature: onChange(list: Array, event: SynteticEvent) */
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(
     PropTypes.shape({
@@ -107,6 +90,7 @@ CheckboxGroup.propTypes = {
       value: PropTypes.string,
     }),
   ),
+  type: PropTypes.oneOf(['checkbox', 'button']),
 };
 
 export default CheckboxGroup;
