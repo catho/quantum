@@ -8,7 +8,7 @@ exports[`Input component should match snapshots 1`] = `
   width: 100%;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
@@ -31,13 +31,13 @@ exports[`Input component should match snapshots 1`] = `
   width: 100%;
 }
 
-.c1:hover,
-.c1:focus {
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1[disabled] {
+.c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -45,12 +45,16 @@ exports[`Input component should match snapshots 1`] = `
   cursor: not-allowed;
 }
 
-.c1::-webkit-calendar-picker-indicator {
+.c2::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.c1:-webkit-autofill {
+.c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
@@ -58,17 +62,21 @@ exports[`Input component should match snapshots 1`] = `
 >
   
   
-  <input
+  <div
     className="c1"
-    defaultValue=""
-    id="input-1"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="text"
-  />
-  
+  >
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-1"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="text"
+    />
+    
+  </div>
   
   
 </div>
@@ -82,7 +90,7 @@ exports[`Input component should match snapshots 2`] = `
   width: 100%;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
@@ -105,13 +113,13 @@ exports[`Input component should match snapshots 2`] = `
   width: 100%;
 }
 
-.c1:hover,
-.c1:focus {
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1[disabled] {
+.c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -119,19 +127,23 @@ exports[`Input component should match snapshots 2`] = `
   cursor: not-allowed;
 }
 
-.c1::-webkit-calendar-picker-indicator {
+.c2::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.c1:-webkit-autofill {
+.c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
-.c2 {
+.c3 {
   cursor: pointer;
   position: absolute;
   right: 12px;
   bottom: 10px;
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
@@ -139,29 +151,33 @@ exports[`Input component should match snapshots 2`] = `
 >
   
   
-  <input
+  <div
     className="c1"
-    defaultValue="foo"
-    id="input-2"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="text"
-  />
-  
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c2"
-    description=""
-    style={
-      Object {
-        "color": "",
-      }
-    }
   >
-    cancel
-  </span>
+    <input
+      className="c2"
+      defaultValue="foo"
+      id="input-2"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="text"
+    />
+    
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c3"
+      description=""
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      cancel
+    </span>
+  </div>
   
   
 </div>
@@ -183,7 +199,7 @@ exports[`Input component should match snapshots 3`] = `
   font-weight: bold;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
@@ -206,10 +222,104 @@ exports[`Input component should match snapshots 3`] = `
   width: 100%;
 }
 
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c2 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="input-3"
+  >
+    Text label
+  </label>
+  
+  <div
+    className="c2"
+  >
+    <input
+      className="c3"
+      defaultValue=""
+      id="input-3"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="text"
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 4`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  border-color: #ff2d4d;
+}
+
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0 2px 6px 0 #ff2d4d;
 }
 
 .c2[disabled] {
@@ -228,93 +338,7 @@ exports[`Input component should match snapshots 3`] = `
   box-shadow: 0 0 0px 1000px #e5edfc inset;
 }
 
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    htmlFor="input-3"
-  >
-    Text label
-  </label>
-  
-  <input
-    className="c2"
-    defaultValue=""
-    id="input-3"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="text"
-  />
-  
-  
-  
-</div>
-`;
-
-exports[`Input component should match snapshots 4`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  border-color: #ff2d4d;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  box-shadow: none;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c1::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c2 {
+.c3 {
   cursor: pointer;
   position: absolute;
   right: 12px;
@@ -322,7 +346,7 @@ exports[`Input component should match snapshots 4`] = `
   color: #ff2d4d;
 }
 
-.c3 {
+.c4 {
   color: #ac001a;
   font-size: 14px;
   cursor: text;
@@ -331,36 +355,44 @@ exports[`Input component should match snapshots 4`] = `
   padding: 8px 12px 0px;
 }
 
+.c1 {
+  position: relative;
+}
+
 <div
   className="c0"
 >
   
   
-  <input
+  <div
     className="c1"
-    defaultValue=""
-    id="input-4"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="text"
-  />
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c2"
-    description=""
-    style={
-      Object {
-        "color": "",
-      }
-    }
   >
-    error
-  </span>
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-4"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c3"
+      description=""
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      error
+    </span>
+  </div>
   
   <div
-    className="c3"
+    className="c4"
   >
     Error message
   </div>
@@ -375,7 +407,7 @@ exports[`Input component should match snapshots 5`] = `
   width: 100%;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
@@ -398,13 +430,13 @@ exports[`Input component should match snapshots 5`] = `
   width: 100%;
 }
 
-.c1:hover,
-.c1:focus {
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1[disabled] {
+.c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -412,12 +444,16 @@ exports[`Input component should match snapshots 5`] = `
   cursor: not-allowed;
 }
 
-.c1::-webkit-calendar-picker-indicator {
+.c2::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.c1:-webkit-autofill {
+.c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
@@ -425,365 +461,27 @@ exports[`Input component should match snapshots 5`] = `
 >
   
   
-  <input
+  <div
     className="c1"
-    defaultValue=""
-    id="input-5"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={true}
-    type="text"
-  />
-  
+  >
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-5"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={true}
+      type="text"
+    />
+    
+  </div>
   
   
 </div>
 `;
 
 exports[`Input component should match snapshots 6`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c2 {
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  padding: 10px 42px;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  box-shadow: none;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c2::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c1 {
-  cursor: pointer;
-  position: absolute;
-  right: 12px;
-  bottom: 10px;
-  left: 12px;
-}
-
-<div
-  className="c0"
->
-  
-  
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1"
-    description=""
-    style={
-      Object {
-        "color": "",
-      }
-    }
-  >
-    search
-  </span>
-  <input
-    className="c2"
-    defaultValue=""
-    id="input-6"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="search"
-  />
-  
-  
-  
-</div>
-`;
-
-exports[`Input component should match snapshots 7`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  box-shadow: none;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c1::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-<div
-  className="c0"
->
-  
-  
-  <input
-    className="c1"
-    defaultValue=""
-    disabled={true}
-    id="input-7"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="text"
-  />
-  
-  
-  
-</div>
-`;
-
-exports[`Input component should match snapshots 8`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  box-shadow: none;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c1::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c2 {
-  cursor: text;
-  display: block;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 600;
-  padding: 8px 12px 0px;
-}
-
-<div
-  className="c0"
->
-  
-  
-  <input
-    className="c1"
-    defaultValue=""
-    id="input-8"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="text"
-  />
-  
-  <span
-    className="c2"
-  >
-    this is a helper text
-  </span>
-  
-</div>
-`;
-
-exports[`Input component should match snapshots 9`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c2 {
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  box-shadow: none;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c2::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
-.c1 {
-  cursor: text;
-  display: block;
-  font-size: 14px;
-  padding: 0px 12px;
-}
-
-<div
-  className="c0"
->
-  
-  <span
-    className="c1"
-  >
-    this is a description label
-  </span>
-  <input
-    className="c2"
-    defaultValue=""
-    id="input-9"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="text"
-  />
-  
-  
-  
-</div>
-`;
-
-exports[`Input component should match snapshots 10`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -846,10 +544,286 @@ exports[`Input component should match snapshots 10`] = `
 }
 
 .c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      description=""
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      search
+    </span>
+    <input
+      className="c3"
+      defaultValue=""
+      id="input-6"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="search"
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 7`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c2::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      defaultValue=""
+      disabled={true}
+      id="input-7"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="text"
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 8`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c2::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c3 {
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px 0px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-8"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="text"
+    />
+    
+  </div>
+  <span
+    className="c3"
+  >
+    this is a helper text
+  </span>
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 9`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c3 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c1 {
   cursor: text;
   display: block;
   font-size: 14px;
   padding: 0px 12px;
+}
+
+.c2 {
+  position: relative;
 }
 
 <div
@@ -861,29 +835,135 @@ exports[`Input component should match snapshots 10`] = `
   >
     this is a description label
   </span>
-  <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c2"
-    description="this is a description label"
-    style={
-      Object {
-        "color": "",
-      }
-    }
+  <div
+    className="c2"
   >
-    search
-  </span>
-  <input
-    className="c3"
-    defaultValue=""
-    id="input-10"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder=""
-    required={false}
-    type="search"
-  />
+    <input
+      className="c3"
+      defaultValue=""
+      id="input-9"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="text"
+    />
+    
+  </div>
   
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 10`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c4 {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 42px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1.5px solid #999999;
+  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: initial;
+  height: 44px;
+  min-height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  padding: 10px 42px;
+}
+
+.c4:hover,
+.c4:focus {
+  border-color: #1355d0;
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+}
+
+.c4[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c4::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c4:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c3 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  left: 12px;
+}
+
+.c1 {
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
+.c2 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  <span
+    className="c1"
+  >
+    this is a description label
+  </span>
+  <div
+    className="c2"
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c3"
+      description="this is a description label"
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      search
+    </span>
+    <input
+      className="c4"
+      defaultValue=""
+      id="input-10"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      required={false}
+      type="search"
+    />
+    
+  </div>
   
   
 </div>
@@ -897,7 +977,7 @@ exports[`Input component should match snapshots 11`] = `
   width: 100%;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
@@ -921,13 +1001,13 @@ exports[`Input component should match snapshots 11`] = `
   color: #999999;
 }
 
-.c1:hover,
-.c1:focus {
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
 }
 
-.c1[disabled] {
+.c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
@@ -935,12 +1015,16 @@ exports[`Input component should match snapshots 11`] = `
   cursor: not-allowed;
 }
 
-.c1::-webkit-calendar-picker-indicator {
+.c2::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.c1:-webkit-autofill {
+.c2:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #e5edfc inset;
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
@@ -948,17 +1032,21 @@ exports[`Input component should match snapshots 11`] = `
 >
   
   
-  <input
+  <div
     className="c1"
-    defaultValue=""
-    id="input-11"
-    onBlur={[Function]}
-    onChange={[Function]}
-    placeholder="this input has a placeholder"
-    required={false}
-    type="text"
-  />
-  
+  >
+    <input
+      className="c2"
+      defaultValue=""
+      id="input-11"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="this input has a placeholder"
+      required={false}
+      type="text"
+    />
+    
+  </div>
   
   
 </div>
