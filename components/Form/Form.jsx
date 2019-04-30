@@ -57,9 +57,9 @@ class Form extends React.Component {
       return React.cloneElement(child, {
         value: values[name],
         error: errors[name] || error,
-        onChange: (e, data) => {
-          this._handleChange(e, data);
-          onChange(e, data);
+        onChange: e => {
+          this._handleChange(e);
+          onChange(e);
         },
       });
     });
@@ -109,7 +109,7 @@ class Form extends React.Component {
     });
   };
 
-  _handleChange = ({ target: { name } }, { value }) => {
+  _handleChange = ({ target: { name, value } }) => {
     const { values, errors } = this.state;
     const newValues = {
       ...values,
@@ -166,7 +166,9 @@ Form.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  /** A callback triggered every submit trial, with a flag that indicates that it is valid */
   onSubmit: PropTypes.func,
+  /** A callback triggered every valid submit, with a object with input values */
   onValidSubmit: PropTypes.func,
   /** Default html attribute, that prevents default browser validations */
   noValidate: PropTypes.bool,
