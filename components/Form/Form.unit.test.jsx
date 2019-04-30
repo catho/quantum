@@ -77,11 +77,9 @@ describe('Form component ', () => {
 
         if (invalid) {
           const initalField = getField();
-          initalField.simulate(
-            'change',
-            { target: { name: initalField.prop('name') } },
-            { value: invalid },
-          );
+          initalField.simulate('change', {
+            target: { name: initalField.prop('name'), value: invalid },
+          });
         }
 
         wrapper.simulate('submit', mockEvent);
@@ -89,11 +87,9 @@ describe('Form component ', () => {
         const beforeChange = getField();
         expect(beforeChange.prop('error')).toBe(errorMsg);
 
-        beforeChange.simulate(
-          'change',
-          { target: { name: beforeChange.prop('name') } },
-          { value: valid },
-        );
+        beforeChange.simulate('change', {
+          target: { name: beforeChange.prop('name'), value: valid },
+        });
 
         const afterChange = getField();
 
@@ -143,7 +139,7 @@ describe('Form component ', () => {
         },
       ];
 
-      validationTests.forEach(params => execTest(params));
+      validationTests.forEach(execTest);
     });
 
     it('Should exec validations in diferent formats', () => {
@@ -171,11 +167,9 @@ describe('Form component ', () => {
 
       const input = wrapper.find(Input);
 
-      input.simulate(
-        'change',
-        { target: { name: input.prop('name') } },
-        { value: 'Some value' },
-      );
+      input.simulate('change', {
+        target: { name: input.prop('name'), value: 'Some value' },
+      });
 
       wrapper.simulate('submit', mockEvent);
 
