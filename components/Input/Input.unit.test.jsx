@@ -153,9 +153,9 @@ describe('Input component', () => {
   });
 
   describe('with password type', () => {
-    const wrapper = shallow(<Input type="password" />);
+    const wrapper = mount(<Input type="password" />);
 
-    const icon = () => wrapper.childAt(1);
+    const icon = () => wrapper.find('InputIcon');
 
     const visibilityIcon = () =>
       icon()

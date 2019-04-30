@@ -37,8 +37,8 @@ const InputTag = styled.input`
     padding: 10px 42px;
   `}
 
-  ${props =>
-    props.password &&
+  ${({ password }) =>
+    password &&
     `
     padding-right: 28px;
   `}
@@ -92,6 +92,11 @@ const RequiredMark = styled.em`
   ${REQUIRED_MARK_STYLE}
 `;
 
+const InputWrapper = styled.div`
+  position: relative;
+`;
+
+InputIcon.displayName = 'InputIcon';
 InputSearchIcon.displayName = 'InputSearchIcon';
 InputErrorIcon.displayName = 'InputErrorIcon';
 HelperText.displayName = 'HelperText';
@@ -157,37 +162,39 @@ class Input extends React.Component {
         {descriptionLabel && (
           <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
         )}
-        {_isSearchType && (
-          <InputSearchIcon name="search" description={descriptionLabel} />
-        )}
-        <MaskedInput
-          {...rest}
-          id={this._id}
-          required={required}
-          type={typeState}
-          value={value}
-          render={(ref, props) => (
-            <InputTag
-              ref={ref}
-              error={error}
-              searchable={_isSearchType}
-              {...props}
+        <InputWrapper>
+          {_isSearchType && (
+            <InputSearchIcon name="search" description={descriptionLabel} />
+          )}
+          <MaskedInput
+            {...rest}
+            id={this._id}
+            required={required}
+            type={typeState}
+            value={value}
+            render={(ref, props) => (
+              <InputTag
+                ref={ref}
+                error={error}
+                searchable={_isSearchType}
+                {...props}
+              />
+            )}
+          />
+          {error && (
+            <InputErrorIcon name="error" description={descriptionLabel} />
+          )}
+          {typeProp === 'password' && !error && (
+            <InputIcon
+              name={typeState === 'password' ? 'visibility' : 'visibility_off'}
+              description={descriptionLabel}
+              onClick={this._toggleInputType}
             />
           )}
-        />
-        {error && (
-          <InputErrorIcon name="error" description={descriptionLabel} />
-        )}
-        {typeProp === 'password' && !error && (
-          <InputIcon
-            name={typeState === 'password' ? 'visibility' : 'visibility_off'}
-            description={descriptionLabel}
-            onClick={this._toggleInputType}
-          />
-        )}
-        {!!value && !error && (
-          <InputIcon name="cancel" description={descriptionLabel} />
-        )}
+          {!!value && !error && (
+            <InputIcon name="cancel" description={descriptionLabel} />
+          )}
+        </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
         {error && (
           <InputErrorMessage helperText={helperText}>{error}</InputErrorMessage>
