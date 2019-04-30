@@ -153,7 +153,7 @@ describe('Input component', () => {
   });
 
   describe('with password type', () => {
-    const wrapper = mount(<Input type="password" />);
+    const wrapper = shallow(<Input type="password" />);
 
     const icon = () => wrapper.find('InputIcon');
 
