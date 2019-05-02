@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../../components/Input';
+import ControlledExample from './ControlledExample';
 
 export default [
   {
@@ -56,5 +57,9 @@ export default [
   helperText="Helper here"
 />`,
     component: <Input label="With a helper text" helperText="Helper here" />,
+  },
+  {
+    code: ControlledExample.code,
+    component: <ControlledExample />,
   },
 ];

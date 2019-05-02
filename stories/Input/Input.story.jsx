@@ -1,12 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  AutoExample,
-  Tab,
-  SimpleHighlight,
-  Title,
-} from '@catho/quantum-storybook-ui';
-import ControlledExample from './ControlledExample';
+import { AutoExample, Tab, SimpleHighlight } from '@catho/quantum-storybook-ui';
 import { Container, Row, Col } from '../../components/Grid';
 import examples from './examples';
 
@@ -25,17 +19,6 @@ const tabExample = (
           </Col>
         </Row>
       ))}
-    </Container>
-    <Container>
-      <Title as="h3">Controlled example</Title>
-      <Row>
-        <Col xsmall={4} small={4} medium={6}>
-          <SimpleHighlight>{ControlledExample.code}</SimpleHighlight>
-        </Col>
-        <Col xsmall={4} small={4} medium={6}>
-          <ControlledExample />
-        </Col>
-      </Row>
     </Container>
   </Tab>
 );
