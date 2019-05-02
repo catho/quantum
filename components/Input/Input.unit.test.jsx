@@ -132,7 +132,7 @@ describe('Input component', () => {
 
   it('should call onClean callback when prop is setted', () => {
     const onCleanMock = jest.fn();
-    const component = mount(<Input value="foo" onClean={onCleanMock} />);
+    const component = shallow(<Input value="foo" onClean={onCleanMock} />);
     const inputIcon = component.find('InputIcon');
     inputIcon.simulate('click');
     expect(onCleanMock).toHaveBeenCalled();
