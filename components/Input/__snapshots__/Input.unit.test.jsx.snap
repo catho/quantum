@@ -169,6 +169,7 @@ exports[`Input component should match snapshots 2`] = `
       aria-hidden="true"
       className="material-icons MuiIcon-root-1 c3"
       description=""
+      onClick={[Function]}
       style={
         Object {
           "color": "",

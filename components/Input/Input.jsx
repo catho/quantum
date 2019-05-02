@@ -146,6 +146,7 @@ class Input extends React.Component {
       helperText,
       required,
       value,
+      onClean,
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
@@ -192,7 +193,11 @@ class Input extends React.Component {
             />
           )}
           {!!value && !error && (
-            <InputIcon name="cancel" description={descriptionLabel} />
+            <InputIcon
+              name="cancel"
+              description={descriptionLabel}
+              onClick={onClean}
+            />
           )}
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
@@ -215,6 +220,7 @@ Input.defaultProps = {
   descriptionLabel: '',
   required: false,
   placeholder: '',
+  onClean: () => {},
 };
 
 Input.propTypes = {
@@ -248,6 +254,7 @@ Input.propTypes = {
     PropTypes.func,
     PropTypes.string,
   ]),
+  onClean: PropTypes.func,
 };
 
 Input.displayName = 'Input';

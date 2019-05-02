@@ -130,6 +130,14 @@ describe('Input component', () => {
     expect(value).toBe('999.999.999-99');
   });
 
+  it('should call onClean callback when prop is setted', () => {
+    const onCleanMock = jest.fn();
+    const component = mount(<Input value="foo" onClean={onCleanMock} />);
+    const inputIcon = component.find('InputIcon');
+    inputIcon.simulate('click');
+    expect(onCleanMock).toHaveBeenCalled();
+  });
+
   describe('with a label', () => {
     it('should match label "htmlFor" label param with "id" input param', () => {
       const id = 'input-id';
