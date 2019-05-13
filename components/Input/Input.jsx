@@ -147,10 +147,12 @@ class Input extends React.Component {
       required,
       value,
       onClean,
+      mask: maskProp,
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
     const _isSearchType = typeProp === 'search';
+    const mask = maskProp || (val => Array(val.length).fill(/./));
 
     return (
       <FieldGroup>
@@ -173,6 +175,7 @@ class Input extends React.Component {
             required={required}
             type={typeState}
             value={value}
+            mask={mask}
             render={(ref, props) => (
               <InputTag
                 ref={ref}
