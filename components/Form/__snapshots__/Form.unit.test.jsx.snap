@@ -16,56 +16,11 @@ exports[`Form component  should match the snapshot 1`] = `
   font-weight: bold;
 }
 
-.c3 {
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-
-.c3:hover,
-.c3:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c3[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  box-shadow: none;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c3::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.c3:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px #e5edfc inset;
-}
-
 .c2 {
   position: relative;
 }
 
-.c4 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -98,32 +53,32 @@ exports[`Form component  should match the snapshot 1`] = `
   border-radius: 4px;
 }
 
-.c4 *:nth-child(2) {
+.c3 *:nth-child(2) {
   margin-left: 5px;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0 2px 4px 0 #cccccc;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4:focus {
+.c3:focus {
   box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
   background-color: #1355d0;
   border-color: #1355d0;
   color: #FFFFFF;
 }
 
-.c4:active {
+.c3:active {
   box-shadow: 0 2px 4px 0 #4c4c4c;
   background-color: #002f7b;
   border-color: #002f7b;
   color: #FFFFFF;
 }
 
-.c4 .c5 {
+.c3 .c4 {
   font-size: 24px;
 }
 
@@ -145,15 +100,16 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
-        className="c3"
-        defaultValue=""
         id="input-0"
+        mask={[Function]}
         name="required"
-        onBlur={[Function]}
         onChange={[Function]}
         placeholder=""
+        render={[Function]}
         required={false}
         type="text"
+        validate={[Function]}
+        value=""
       />
       
     </div>
@@ -174,15 +130,16 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
-        className="c3"
-        defaultValue=""
         id="input-1"
+        mask={[Function]}
         name="cpf"
-        onBlur={[Function]}
         onChange={[Function]}
         placeholder=""
+        render={[Function]}
         required={false}
         type="text"
+        validate={[Function]}
+        value=""
       />
       
     </div>
@@ -203,15 +160,16 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
-        className="c3"
-        defaultValue=""
         id="input-2"
+        mask={[Function]}
         name="cep"
-        onBlur={[Function]}
         onChange={[Function]}
         placeholder=""
+        render={[Function]}
         required={false}
         type="text"
+        validate={[Function]}
+        value=""
       />
       
     </div>
@@ -232,15 +190,16 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
-        className="c3"
-        defaultValue=""
         id="input-3"
+        mask={[Function]}
         name="birthday"
-        onBlur={[Function]}
         onChange={[Function]}
         placeholder=""
+        render={[Function]}
         required={false}
         type="text"
+        validate={[Function]}
+        value=""
       />
       
     </div>
@@ -261,15 +220,16 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
-        className="c3"
-        defaultValue=""
         id="input-4"
+        mask={[Function]}
         name="email"
-        onBlur={[Function]}
         onChange={[Function]}
         placeholder=""
+        render={[Function]}
         required={false}
         type="text"
+        validate={[Function]}
+        value=""
       />
       
     </div>
@@ -290,16 +250,17 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
-        className="c3"
-        defaultValue=""
         id="input-5"
+        mask={[Function]}
         minLength="8"
         name="address"
-        onBlur={[Function]}
         onChange={[Function]}
         placeholder=""
+        render={[Function]}
         required={false}
         type="text"
+        validate={[Function]}
+        value=""
       />
       
     </div>
@@ -320,16 +281,17 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
-        className="c3"
-        defaultValue=""
         id="input-6"
+        mask={[Function]}
         maxLength="3"
         name="country"
-        onBlur={[Function]}
         onChange={[Function]}
         placeholder=""
+        render={[Function]}
         required={false}
         type="text"
+        validate={[Function]}
+        value=""
       />
       
     </div>
@@ -337,7 +299,7 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <button
-    className="c4"
+    className="c3"
     disabled={false}
     onClick={[Function]}
     size="medium"

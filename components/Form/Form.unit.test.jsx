@@ -6,6 +6,10 @@ import Form from './Form';
 import Input from '../Input';
 import Button from '../Button';
 
+jest.mock('react-text-mask', () => props => (
+  <input type="text" {...{ ...props }} />
+));
+
 const onValidSubmitCallback = jest.fn();
 const onSubmitCallback = jest.fn();
 const mockEvent = { preventDefault: jest.fn() };
