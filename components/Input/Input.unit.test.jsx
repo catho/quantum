@@ -1,31 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { shallow, mount } from 'enzyme';
 import MaskedInput from 'react-text-mask';
 import Input from './Input';
 import masks from '../shared/masks';
 
 describe('Input component', () => {
-  it('should match snapshots', () => {
-    const INPUTS = [
-      <Input />,
-      <Input value="foo" />,
-      <Input label="Text label" />,
-      <Input error="Error message" />,
-      <Input required />,
-      <Input type="search" />,
-      <Input disabled />,
-      <Input helperText="this is a helper text" />,
-      <Input descriptionLabel="this is a description label" />,
-      <Input descriptionLabel="this is a description label" type="search" />,
-      <Input placeholder="this input has a placeholder" />,
-    ];
-
-    INPUTS.forEach(input =>
-      expect(renderer.create(input).toJSON()).toMatchSnapshot(),
-    );
-  });
-
   it('should has a required signal when "required" prop is set', () => {
     const component = shallow(
       <Input value="foo" label="label of input" required />,

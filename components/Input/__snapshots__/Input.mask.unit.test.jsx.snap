@@ -1,0 +1,837 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should match snapshots 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-0"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 2`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-1"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value="foo"
+    />
+    
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      description=""
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      cancel
+    </span>
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 3`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  padding: 8px 12px 0px;
+  font-weight: bold;
+}
+
+.c2 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="input-2"
+  >
+    Text label
+  </label>
+  
+  <div
+    className="c2"
+  >
+    <input
+      id="input-2"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 4`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  color: #ff2d4d;
+}
+
+.c3 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px 0px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-3"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      description=""
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      error
+    </span>
+  </div>
+  
+  <div
+    className="c3"
+  >
+    Error message
+  </div>
+</div>
+`;
+
+exports[`Input component should match snapshots 5`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-4"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 6`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  left: 12px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      description=""
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      search
+    </span>
+    <input
+      id="input-5"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="search"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 7`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      disabled={true}
+      id="input-6"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 8`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px 12px 0px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-7"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  <span
+    className="c2"
+  >
+    this is a helper text
+  </span>
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 9`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
+.c2 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  <span
+    className="c1"
+  >
+    this is a description label
+  </span>
+  <div
+    className="c2"
+  >
+    <input
+      id="input-8"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 10`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c3 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  left: 12px;
+}
+
+.c1 {
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
+.c2 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  <span
+    className="c1"
+  >
+    this is a description label
+  </span>
+  <div
+    className="c2"
+  >
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c3"
+      description="this is a description label"
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      search
+    </span>
+    <input
+      id="input-9"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="search"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 11`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-10"
+      mask={[Function]}
+      placeholder="this input has a placeholder"
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 12`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-11"
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 13`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-12"
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 14`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-13"
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          ".",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 15`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-14"
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          "/",
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 16`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-15"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Input component should match snapshots 17`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  
+  
+  <div
+    className="c1"
+  >
+    <input
+      id="input-16"
+      mask={[Function]}
+      placeholder=""
+      render={[Function]}
+      required={false}
+      type="password"
+      value=""
+    />
+    
+    <span
+      aria-hidden="true"
+      className="material-icons MuiIcon-root-1 c2"
+      description=""
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    >
+      visibility
+    </span>
+  </div>
+  
+  
+</div>
+`;
