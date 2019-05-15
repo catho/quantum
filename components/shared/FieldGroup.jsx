@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import theme from './theme';
 
 export default styled.div`
   position: relative;
-  margin-bottom: ${theme.sizes.spacing};
+  margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
 `;

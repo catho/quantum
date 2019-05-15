@@ -1,5 +1,3 @@
-import theme from '../../shared/theme';
-
 class ButtonColor {
   constructor({
     // Unselected
@@ -29,7 +27,7 @@ class ButtonColor {
     hoveredShadow = unselectedShadow,
     // General
     decoration = 'none',
-    borderRadius = theme.sizes.radius,
+    borderRadius = '4px',
   }) {
     // Unselected
     this._unselected = unselected;
