@@ -12,8 +12,6 @@ It can be installed via npm or yarn.
 yarn add @catho/quantum styled-components
 ```
 
-PS.: you have need to install [styled-components](https://www.styled-components.com/) because it's a @catho/quantum dependency.
-
 To use a component, it need to be imported in your project:
 
 ```js
