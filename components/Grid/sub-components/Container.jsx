@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { query, hide, noGutters } from './shared';
-import { BREAKPOINTS } from '../../shared';
+import { breakpoints } from '../../shared/theme';
 
-const maxWidth = ({ name }, { width: nextWidth = 0 } = {}, fluid) =>
-  !fluid && Boolean(nextWidth) && query[name]`max-width: ${nextWidth}px;`;
+const maxWidthStyle = ({ name, maxWidth }, fluid) =>
+  !fluid && Boolean(maxWidth) && query[name]`max-width: ${maxWidth}px;`;
 
 const Container = styled.div`
   width: ${props => props.width || '100%'};
@@ -14,10 +14,20 @@ const Container = styled.div`
   margin-left: auto;
 
   ${({ fluid }) =>
-    Object.entries(BREAKPOINTS)
+    Object.entries(breakpoints)
       .map(([name, value]) => ({ name, ...value }))
-      .sort((a, b) => a.width - b.width)
-      .map((breakpoint, i, list) => maxWidth(breakpoint, list[i + 1], fluid))}
+      .sort((a, b) => {
+        if (!a.maxWidth) {
+          return 1;
+        }
+
+        if (!b.maxWidth) {
+          return -1;
+        }
+
+        return a.maxWidth - b.maxWidth;
+      })
+      .map(breakpoint => maxWidthStyle(breakpoint, fluid))}
 
   ${hide}
   ${noGutters}
@@ -27,7 +37,7 @@ Container.propTypes = {
   width: PropTypes.string,
   fluid: PropTypes.bool,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
+    PropTypes.oneOf(Object.keys(breakpoints)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
 };
