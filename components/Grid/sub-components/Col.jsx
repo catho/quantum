@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { query } from './shared';
-import { BREAKPOINTS } from '../../shared';
+import { theme } from '../../shared';
 
 const columnPosition = (
   {
@@ -50,12 +50,16 @@ const columnPosition = (
 
 const Col = styled.div`
   ${props =>
-    Object.keys(BREAKPOINTS).map(breakpoint =>
+    Object.keys(props.theme.breakpoints).map(breakpoint =>
       columnPosition(props, breakpoint),
     )}
   word-break: break-word;
   box-sizing: border-box;
 `;
+
+Col.defaultProps = {
+  theme,
+};
 
 Col.propTypes = {
   xsmall: PropTypes.number,
@@ -69,7 +73,7 @@ Col.propTypes = {
   'large-offset': PropTypes.number,
   'xlarge-offset': PropTypes.number,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
+    PropTypes.oneOf(Object.keys(theme.breakpoints)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
 };
