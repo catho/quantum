@@ -744,6 +744,32 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                   medium-offset={1}
                   small={6}
                   small-offset={1}
+                  theme={
+                    Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "maxWidth": 1919,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "maxWidth": 1439,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "maxWidth": 1023,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                          "maxWidth": 599,
+                        },
+                      },
+                      "gutter": 8,
+                    }
+                  }
                   xsmall={4}
                   xsmall-offset={0}
                 >
@@ -760,6 +786,32 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                             [Function],
                             " word-break:break-word;box-sizing:border-box;",
                           ],
+                        },
+                        "defaultProps": Object {
+                          "theme": Object {
+                            "breakpoints": Object {
+                              "large": Object {
+                                "columns": 12,
+                                "maxWidth": 1919,
+                              },
+                              "medium": Object {
+                                "columns": 12,
+                                "maxWidth": 1439,
+                              },
+                              "small": Object {
+                                "columns": 8,
+                                "maxWidth": 1023,
+                              },
+                              "xlarge": Object {
+                                "columns": 12,
+                              },
+                              "xsmall": Object {
+                                "columns": 4,
+                                "maxWidth": 599,
+                              },
+                            },
+                            "gutter": 8,
+                          },
                         },
                         "displayName": "Col",
                         "foldedComponentIds": Array [],
@@ -789,6 +841,32 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                     medium-offset={1}
                     small={6}
                     small-offset={1}
+                    theme={
+                      Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "maxWidth": 1919,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "maxWidth": 1439,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "maxWidth": 1023,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                            "maxWidth": 599,
+                          },
+                        },
+                        "gutter": 8,
+                      }
+                    }
                     xsmall={4}
                     xsmall-offset={0}
                   >
@@ -2084,6 +2162,32 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                   medium-offset={1}
                   small={6}
                   small-offset={1}
+                  theme={
+                    Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "maxWidth": 1919,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "maxWidth": 1439,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "maxWidth": 1023,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                          "maxWidth": 599,
+                        },
+                      },
+                      "gutter": 8,
+                    }
+                  }
                   xsmall={4}
                   xsmall-offset={0}
                 >
@@ -2100,6 +2204,32 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                             [Function],
                             " word-break:break-word;box-sizing:border-box;",
                           ],
+                        },
+                        "defaultProps": Object {
+                          "theme": Object {
+                            "breakpoints": Object {
+                              "large": Object {
+                                "columns": 12,
+                                "maxWidth": 1919,
+                              },
+                              "medium": Object {
+                                "columns": 12,
+                                "maxWidth": 1439,
+                              },
+                              "small": Object {
+                                "columns": 8,
+                                "maxWidth": 1023,
+                              },
+                              "xlarge": Object {
+                                "columns": 12,
+                              },
+                              "xsmall": Object {
+                                "columns": 4,
+                                "maxWidth": 599,
+                              },
+                            },
+                            "gutter": 8,
+                          },
                         },
                         "displayName": "Col",
                         "foldedComponentIds": Array [],
@@ -2129,6 +2259,32 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                     medium-offset={1}
                     small={6}
                     small-offset={1}
+                    theme={
+                      Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "maxWidth": 1919,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "maxWidth": 1439,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "maxWidth": 1023,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                            "maxWidth": 599,
+                          },
+                        },
+                        "gutter": 8,
+                      }
+                    }
                     xsmall={4}
                     xsmall-offset={0}
                   >
@@ -3424,6 +3580,32 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                   medium-offset={1}
                   small={6}
                   small-offset={1}
+                  theme={
+                    Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "maxWidth": 1919,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "maxWidth": 1439,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "maxWidth": 1023,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                          "maxWidth": 599,
+                        },
+                      },
+                      "gutter": 8,
+                    }
+                  }
                   xsmall={4}
                   xsmall-offset={0}
                 >
@@ -3440,6 +3622,32 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                             [Function],
                             " word-break:break-word;box-sizing:border-box;",
                           ],
+                        },
+                        "defaultProps": Object {
+                          "theme": Object {
+                            "breakpoints": Object {
+                              "large": Object {
+                                "columns": 12,
+                                "maxWidth": 1919,
+                              },
+                              "medium": Object {
+                                "columns": 12,
+                                "maxWidth": 1439,
+                              },
+                              "small": Object {
+                                "columns": 8,
+                                "maxWidth": 1023,
+                              },
+                              "xlarge": Object {
+                                "columns": 12,
+                              },
+                              "xsmall": Object {
+                                "columns": 4,
+                                "maxWidth": 599,
+                              },
+                            },
+                            "gutter": 8,
+                          },
                         },
                         "displayName": "Col",
                         "foldedComponentIds": Array [],
@@ -3469,6 +3677,32 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                     medium-offset={1}
                     small={6}
                     small-offset={1}
+                    theme={
+                      Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "maxWidth": 1919,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "maxWidth": 1439,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "maxWidth": 1023,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                            "maxWidth": 599,
+                          },
+                        },
+                        "gutter": 8,
+                      }
+                    }
                     xsmall={4}
                     xsmall-offset={0}
                   >
@@ -4764,6 +4998,32 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                   medium-offset={1}
                   small={6}
                   small-offset={1}
+                  theme={
+                    Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "maxWidth": 1919,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "maxWidth": 1439,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "maxWidth": 1023,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                          "maxWidth": 599,
+                        },
+                      },
+                      "gutter": 8,
+                    }
+                  }
                   xsmall={4}
                   xsmall-offset={0}
                 >
@@ -4780,6 +5040,32 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                             [Function],
                             " word-break:break-word;box-sizing:border-box;",
                           ],
+                        },
+                        "defaultProps": Object {
+                          "theme": Object {
+                            "breakpoints": Object {
+                              "large": Object {
+                                "columns": 12,
+                                "maxWidth": 1919,
+                              },
+                              "medium": Object {
+                                "columns": 12,
+                                "maxWidth": 1439,
+                              },
+                              "small": Object {
+                                "columns": 8,
+                                "maxWidth": 1023,
+                              },
+                              "xlarge": Object {
+                                "columns": 12,
+                              },
+                              "xsmall": Object {
+                                "columns": 4,
+                                "maxWidth": 599,
+                              },
+                            },
+                            "gutter": 8,
+                          },
                         },
                         "displayName": "Col",
                         "foldedComponentIds": Array [],
@@ -4809,6 +5095,32 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                     medium-offset={1}
                     small={6}
                     small-offset={1}
+                    theme={
+                      Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "maxWidth": 1919,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "maxWidth": 1439,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "maxWidth": 1023,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                            "maxWidth": 599,
+                          },
+                        },
+                        "gutter": 8,
+                      }
+                    }
                     xsmall={4}
                     xsmall-offset={0}
                   >
@@ -6104,6 +6416,32 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                   medium-offset={1}
                   small={6}
                   small-offset={1}
+                  theme={
+                    Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "maxWidth": 1919,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "maxWidth": 1439,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "maxWidth": 1023,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                          "maxWidth": 599,
+                        },
+                      },
+                      "gutter": 8,
+                    }
+                  }
                   xsmall={4}
                   xsmall-offset={0}
                 >
@@ -6120,6 +6458,32 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                             [Function],
                             " word-break:break-word;box-sizing:border-box;",
                           ],
+                        },
+                        "defaultProps": Object {
+                          "theme": Object {
+                            "breakpoints": Object {
+                              "large": Object {
+                                "columns": 12,
+                                "maxWidth": 1919,
+                              },
+                              "medium": Object {
+                                "columns": 12,
+                                "maxWidth": 1439,
+                              },
+                              "small": Object {
+                                "columns": 8,
+                                "maxWidth": 1023,
+                              },
+                              "xlarge": Object {
+                                "columns": 12,
+                              },
+                              "xsmall": Object {
+                                "columns": 4,
+                                "maxWidth": 599,
+                              },
+                            },
+                            "gutter": 8,
+                          },
                         },
                         "displayName": "Col",
                         "foldedComponentIds": Array [],
@@ -6149,6 +6513,32 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                     medium-offset={1}
                     small={6}
                     small-offset={1}
+                    theme={
+                      Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "maxWidth": 1919,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "maxWidth": 1439,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "maxWidth": 1023,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                            "maxWidth": 599,
+                          },
+                        },
+                        "gutter": 8,
+                      }
+                    }
                     xsmall={4}
                     xsmall-offset={0}
                   >
@@ -7444,6 +7834,32 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                   medium-offset={1}
                   small={6}
                   small-offset={1}
+                  theme={
+                    Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "maxWidth": 1919,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "maxWidth": 1439,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "maxWidth": 1023,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                          "maxWidth": 599,
+                        },
+                      },
+                      "gutter": 8,
+                    }
+                  }
                   xsmall={4}
                   xsmall-offset={0}
                 >
@@ -7460,6 +7876,32 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                             [Function],
                             " word-break:break-word;box-sizing:border-box;",
                           ],
+                        },
+                        "defaultProps": Object {
+                          "theme": Object {
+                            "breakpoints": Object {
+                              "large": Object {
+                                "columns": 12,
+                                "maxWidth": 1919,
+                              },
+                              "medium": Object {
+                                "columns": 12,
+                                "maxWidth": 1439,
+                              },
+                              "small": Object {
+                                "columns": 8,
+                                "maxWidth": 1023,
+                              },
+                              "xlarge": Object {
+                                "columns": 12,
+                              },
+                              "xsmall": Object {
+                                "columns": 4,
+                                "maxWidth": 599,
+                              },
+                            },
+                            "gutter": 8,
+                          },
                         },
                         "displayName": "Col",
                         "foldedComponentIds": Array [],
@@ -7489,6 +7931,32 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                     medium-offset={1}
                     small={6}
                     small-offset={1}
+                    theme={
+                      Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "maxWidth": 1919,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "maxWidth": 1439,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "maxWidth": 1023,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                            "maxWidth": 599,
+                          },
+                        },
+                        "gutter": 8,
+                      }
+                    }
                     xsmall={4}
                     xsmall-offset={0}
                   >
