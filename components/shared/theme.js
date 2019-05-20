@@ -22,4 +22,6 @@ const breakpoints = {
 
 const gutter = 8;
 
-export { breakpoints, gutter };
+const theme = { breakpoints, gutter };
+
+export { breakpoints, gutter, theme as default };

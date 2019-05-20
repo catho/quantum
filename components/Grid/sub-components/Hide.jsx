@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { hideQueries } from './shared/media';
-import * as theme from '../../shared/theme';
+import theme from '../../shared/theme';
 
 const Hide = styled.div`
   ${({ theme: { breakpoints }, xsmall }) =>
