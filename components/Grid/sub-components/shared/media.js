@@ -10,38 +10,40 @@ const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
   return acc;
 }, {});
 
-const hideQueries = {
-  xlarge: () => `
-    @media (min-width: ${BREAKPOINTS.xlarge.width + 1}px) {
-      display: none !important;
-    }
-  `,
-  large: () => `
-    @media (min-width: ${BREAKPOINTS.large.width + 1}px) and (max-width: ${
-    BREAKPOINTS.xlarge.width
-  }px) {
-      display: none !important;
-    }
-  `,
-  medium: () => `
-    @media (min-width: ${BREAKPOINTS.medium.width + 1}px) and (max-width: ${
-    BREAKPOINTS.large.width
-  }px) {
+const hideQueries = ({
+  xsmall: { maxWidth: xsmallMaxWidth },
+  small: { maxWidth: smallMaxWidth },
+  medium: { maxWidth: mediumMaxWidth },
+  large: { maxWidth: largeMaxWidth },
+}) => ({
+  xsmall: () => `
+    @media (max-width: ${xsmallMaxWidth}px) {
       display: none !important;
     }
   `,
   small: () => `
-    @media (min-width: ${BREAKPOINTS.small.width + 1}px) and (max-width: ${
-    BREAKPOINTS.medium.width
-  }px) {
+    @media (min-width: ${xsmallMaxWidth +
+      1}px) and (max-width: ${smallMaxWidth}px) {
       display: none !important;
     }
   `,
-  xsmall: () => `
-    @media (max-width: ${BREAKPOINTS.small.width}px) {
+  medium: () => `
+    @media (min-width: ${smallMaxWidth +
+      1}px) and (max-width: ${mediumMaxWidth}px) {
       display: none !important;
     }
   `,
-};
+  large: () => `
+    @media (min-width: ${mediumMaxWidth +
+      1}px) and (max-width: ${largeMaxWidth}px) {
+      display: none !important;
+    }
+  `,
+  xlarge: () => `
+    @media (min-width: ${largeMaxWidth + 1}px) {
+      display: none !important;
+    }
+  `,
+});
 
 export { query, hideQueries };
