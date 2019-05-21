@@ -20,5 +20,35 @@ describe('<Hide />', () => {
     expect(
       renderer.create(<Hide xlarge>Content</Hide>).toJSON(),
     ).toMatchSnapshot();
+
+    expect(
+      renderer
+        .create(
+          <Hide small xlarge>
+            Content
+          </Hide>,
+        )
+        .toJSON(),
+    ).toMatchSnapshot();
+
+    expect(
+      renderer
+        .create(
+          <Hide xsmall medium>
+            Content
+          </Hide>,
+        )
+        .toJSON(),
+    ).toMatchSnapshot();
+
+    expect(
+      renderer
+        .create(
+          <Hide small large medium>
+            Content
+          </Hide>,
+        )
+        .toJSON(),
+    ).toMatchSnapshot();
   });
 });

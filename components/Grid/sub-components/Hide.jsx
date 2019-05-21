@@ -4,16 +4,19 @@ import { hideQueries } from './shared/media';
 import theme from '../../shared/theme';
 
 const Hide = styled.div`
-  ${({ theme: { breakpoints }, xsmall }) =>
-    xsmall && hideQueries(breakpoints).xsmall()}
-  ${({ theme: { breakpoints }, small }) =>
-    small && hideQueries(breakpoints).small()}
-  ${({ theme: { breakpoints }, medium }) =>
-    medium && hideQueries(breakpoints).medium()}
-  ${({ theme: { breakpoints }, large }) =>
-    large && hideQueries(breakpoints).large()}
-  ${({ theme: { breakpoints }, xlarge }) =>
-    xlarge && hideQueries(breakpoints).xlarge()}
+  ${({ theme: { breakpoints }, xsmall, small, medium, large, xlarge }) => {
+    let style = '';
+
+    const hideBreapoint = hideQueries(breakpoints);
+
+    style += xsmall ? hideBreapoint.xsmall() : '';
+    style += xlarge ? hideBreapoint.xlarge() : '';
+    style += small ? hideBreapoint.small() : '';
+    style += medium ? hideBreapoint.medium() : '';
+    style += large ? hideBreapoint.large() : '';
+
+    return style;
+  }}
 `;
 
 Hide.defaultProps = { theme };
