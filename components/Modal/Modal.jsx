@@ -8,17 +8,17 @@ import Card from '../Card';
 import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
+import { theme as defaultTheme } from '../shared';
 
-function getBreakpoint() {
+function getBreakpoint({ theme: { breakpoints } }) {
   const sizes = {
     xsmall: '90%',
     small: '400px',
     medium: '600px',
     large: '800px',
   };
-
   return Object.entries(sizes).map(
-    ([breakpoint, value]) => query[breakpoint]`width: ${value};`,
+    ([breakpoint, value]) => query(breakpoints)[breakpoint]`width: ${value};`,
   );
 }
 
@@ -156,15 +156,22 @@ class Modal extends React.Component {
   };
 
   render() {
-    const { children, onClose, closeButtonAriaLabel } = this.props;
+    const {
+      children,
+      onClose,
+      closeButtonAriaLabel,
+      theme,
+      ...rest
+    } = this.props;
 
     return ReactDOM.createPortal(
       <ModalWrapper
         onClick={this.handleClickOutside}
         ref={this.modalWrapperRef}
         role="dialog"
+        {...rest}
       >
-        <ModalCard>
+        <ModalCard theme={theme}>
           {children}
           <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
         </ModalCard>
@@ -183,12 +190,16 @@ Modal.propTypes = {
   onClose: PropTypes.func,
   /** aria-label property value for the close button icon. */
   closeButtonAriaLabel: PropTypes.string,
+  theme: PropTypes.shape({
+    breakpoints: PropTypes.object,
+  }),
 };
 
 Modal.defaultProps = {
   children: undefined,
   onClose: () => {},
   closeButtonAriaLabel: 'close dialog',
+  theme: defaultTheme,
 };
 
 export default Modal;
