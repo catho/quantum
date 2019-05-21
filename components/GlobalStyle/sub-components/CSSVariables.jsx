@@ -1,14 +1,37 @@
+import PropTypes from 'prop-types';
 import { createGlobalStyle } from 'styled-components';
-import { BREAKPOINTS } from '../../shared';
+import { theme as defaultTheme } from '../../shared';
 
-export default createGlobalStyle`
-  :root {
-    --gutter: 16px;
-  }
-
-  @media (min-width: ${BREAKPOINTS.small.width}px) {
+const CSSVariables = createGlobalStyle`
+  ${({
+    theme: {
+      breakpoints: {
+        small: { width },
+      },
+      gutter,
+    },
+  }) => `
     :root {
-      --gutter: 24px;
+      --gutter: ${gutter * 2}px;
     }
-  }
+
+    @media (min-width: ${width}px) {
+      :root {
+        --gutter: ${gutter * 3}px;
+      }
+    }
+  `}
 `;
+
+CSSVariables.defaultProps = {
+  theme: defaultTheme,
+};
+
+CSSVariables.propTypes = {
+  theme: PropTypes.shape({
+    breakpoints: PropTypes.object,
+    gutter: PropTypes.number,
+  }),
+};
+
+export default CSSVariables;

@@ -180,7 +180,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   width: 100vw;
 }
 
-@media (min-width:1px) {
+@media (min-width:0px) {
   .c1 {
     width: 90%;
   }
@@ -207,6 +207,56 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 <Modal
   closeButtonAriaLabel="close dialog"
   onClose={[Function]}
+  theme={
+    Object {
+      "breakpoints": Object {
+        "large": Object {
+          "columns": 12,
+          "width": 1440,
+        },
+        "medium": Object {
+          "columns": 12,
+          "width": 1024,
+        },
+        "small": Object {
+          "columns": 8,
+          "width": 600,
+        },
+        "xlarge": Object {
+          "columns": 12,
+          "width": 1920,
+        },
+        "xsmall": Object {
+          "columns": 4,
+        },
+      },
+      "default": Object {
+        "breakpoints": Object {
+          "large": Object {
+            "columns": 12,
+            "width": 1440,
+          },
+          "medium": Object {
+            "columns": 12,
+            "width": 1024,
+          },
+          "small": Object {
+            "columns": 8,
+            "width": 600,
+          },
+          "xlarge": Object {
+            "columns": 12,
+            "width": 1920,
+          },
+          "xsmall": Object {
+            "columns": 4,
+          },
+        },
+        "gutter": 8,
+      },
+      "gutter": 8,
+    }
+  }
 >
   <Portal
     containerInfo={
@@ -389,7 +439,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   width: 100vw;
 }
 
-@media (min-width:1px) {
+@media (min-width:0px) {
   .c1 {
     width: 90%;
   }
@@ -546,7 +596,58 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           onClick={[Function]}
           role="dialog"
         >
-          <Modal__ModalCard>
+          <Modal__ModalCard
+            theme={
+              Object {
+                "breakpoints": Object {
+                  "large": Object {
+                    "columns": 12,
+                    "width": 1440,
+                  },
+                  "medium": Object {
+                    "columns": 12,
+                    "width": 1024,
+                  },
+                  "small": Object {
+                    "columns": 8,
+                    "width": 600,
+                  },
+                  "xlarge": Object {
+                    "columns": 12,
+                    "width": 1920,
+                  },
+                  "xsmall": Object {
+                    "columns": 4,
+                  },
+                },
+                "default": Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "gutter": 8,
+                },
+                "gutter": 8,
+              }
+            }
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -656,12 +757,162 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              theme={
+                Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "default": Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "gutter": 8,
+                  },
+                  "gutter": 8,
+                }
+              }
             >
               <Card
                 className="c1"
+                theme={
+                  Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "default": Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "gutter": 8,
+                    },
+                    "gutter": 8,
+                  }
+                }
               >
                 <Card__CardWrapper
                   className="c1"
+                  theme={
+                    Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "default": Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "gutter": 8,
+                      },
+                      "gutter": 8,
+                    }
+                  }
                 >
                   <StyledComponent
                     className="c1"
@@ -692,6 +943,56 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       }
                     }
                     forwardedRef={null}
+                    theme={
+                      Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "default": Object {
+                          "breakpoints": Object {
+                            "large": Object {
+                              "columns": 12,
+                              "width": 1440,
+                            },
+                            "medium": Object {
+                              "columns": 12,
+                              "width": 1024,
+                            },
+                            "small": Object {
+                              "columns": 8,
+                              "width": 600,
+                            },
+                            "xlarge": Object {
+                              "columns": 12,
+                              "width": 1920,
+                            },
+                            "xsmall": Object {
+                              "columns": 4,
+                            },
+                          },
+                          "gutter": 8,
+                        },
+                        "gutter": 8,
+                      }
+                    }
                   >
                     <article
                       className="c1 c2"

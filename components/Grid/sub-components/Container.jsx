@@ -1,40 +1,39 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { query, hide, noGutters } from './shared';
-import { BREAKPOINTS } from '../../shared';
-
-const maxWidth = ({ name }, { width: nextWidth = 0 } = {}, fluid) =>
-  !fluid && Boolean(nextWidth) && query[name]`max-width: ${nextWidth}px;`;
+import { hide, noGutters } from './shared';
+import { theme as defaultTheme } from '../../shared';
 
 const Container = styled.div`
-  width: ${props => props.width || '100%'};
   box-sizing: border-box;
-  padding: var(--gutter);
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
 
-  ${({ fluid }) =>
-    Object.entries(BREAKPOINTS)
-      .map(([name, value]) => ({ name, ...value }))
-      .sort((a, b) => a.width - b.width)
-      .map((breakpoint, i, list) => maxWidth(breakpoint, list[i + 1], fluid))}
-
+  ${({ fluid }) => !fluid && 'max-width: 95%;'}
   ${hide}
   ${noGutters}
+
+  & & {
+    max-width: 100%;
+  }
 `;
 
 Container.propTypes = {
-  width: PropTypes.string,
   fluid: PropTypes.bool,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
+    PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
+  theme: PropTypes.shape({
+    breakpoints: PropTypes.object,
+  }),
+  'no-gutters': PropTypes.bool,
 };
 
 Container.defaultProps = {
   fluid: false,
   'no-gutters': false,
+  theme: defaultTheme,
 };
 
 Container.displayName = 'Container';

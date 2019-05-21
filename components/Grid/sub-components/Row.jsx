@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { hide, noGutters, query } from './shared';
-import { BREAKPOINTS } from '../../shared';
+import { theme as defaultTheme } from '../../shared';
 
-const queryStyle = () =>
-  Object.entries(BREAKPOINTS).map(
+const queryStyle = ({ theme: { breakpoints } }) =>
+  Object.entries(breakpoints).map(
     ([name, { columns }]) =>
-      query[name]`
+      query(breakpoints)[name]`
       grid-template-columns: repeat(${columns}, 1fr);
     `,
   );
@@ -26,13 +26,17 @@ const Row = styled.div`
 Row.propTypes = {
   'no-gutters': PropTypes.bool,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
-    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
+    PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
   ]),
+  theme: PropTypes.shape({
+    breakpoints: PropTypes.object,
+  }),
 };
 
 Row.defaultProps = {
   'no-gutters': false,
+  theme: defaultTheme,
 };
 
 Row.displayName = 'Row';
