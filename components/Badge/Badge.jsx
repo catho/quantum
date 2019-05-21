@@ -2,40 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Colors from '../Colors';
+import { theme as defaultTheme } from '../shared';
 
-const getColors = ({ skin }) => {
+const getColors = ({ skin, theme: { colors } }) => {
   const badgeColors = {
     default: {
-      background: Colors.BLACK[100],
-      text: Colors.BLACK[700],
+      background: colors.neutral[100],
+      text: colors.neutral[700],
     },
     black: {
-      background: Colors.BLACK[700],
-      text: Colors.WHITE,
+      background: colors.neutral[700],
+      text: colors.neutral[100],
     },
     blue: {
-      background: Colors.BLUE[500],
-      text: Colors.WHITE,
-    },
-    white: {
-      background: Colors.WHITE,
-      text: '#000',
+      background: colors.primary[500],
+      text: colors.neutral[100],
     },
     error: {
       background: Colors.ERROR[500],
-      text: Colors.WHITE,
+      text: colors.neutral[100],
     },
     success: {
-      background: Colors.SUCCESS[200],
-      text: Colors.SUCCESS[900],
+      background: colors.success[100],
+      text: colors.success[900],
     },
   };
 
   return css`
     background-color: ${badgeColors[skin].background};
     color: ${badgeColors[skin].text};
-
-    ${skin === 'white' && 'mix-blend-mode: lighten;'}
   `;
 };
 
@@ -79,12 +74,17 @@ const StyledBadge = styled.span`
 `;
 
 /** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
-const Badge = ({ children, number, skin }) => {
+const Badge = ({ children, number, skin, theme }) => {
   const value = number > 99 ? '99+' : number;
 
   return (
     <BadgeWrapper value={value} originalChildren={children}>
-      <StyledBadge skin={skin} value={value} originalChildren={children}>
+      <StyledBadge
+        skin={skin}
+        theme={theme}
+        value={value}
+        originalChildren={children}
+      >
         {value}
       </StyledBadge>
       {children}
@@ -98,14 +98,7 @@ Badge.displayName = 'Badge';
 
 Badge.propTypes = {
   /** Define background and text color */
-  skin: PropTypes.oneOf([
-    'default',
-    'black',
-    'blue',
-    'white',
-    'error',
-    'success',
-  ]),
+  skin: PropTypes.oneOf(['default', 'black', 'blue', 'error', 'success']),
   /** When passed a children to <Badge />, the badge will be displayed at top-right corner of the children. */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -113,12 +106,16 @@ Badge.propTypes = {
   ]),
   /** Number to be displayed inside badge. When number is higher than 99 will be displayed "99+" instead of number value */
   number: PropTypes.number,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+  }),
 };
 
 Badge.defaultProps = {
   skin: 'default',
   children: '',
   number: 0,
+  theme: defaultTheme,
 };
 
 export default Badge;
