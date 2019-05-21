@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import Colors from '../Colors';
 import { theme as defaultTheme } from '../shared';
 
 const getColors = ({ skin, theme: { colors } }) => {
@@ -19,7 +18,7 @@ const getColors = ({ skin, theme: { colors } }) => {
       text: colors.neutral[100],
     },
     error: {
-      background: Colors.ERROR[500],
+      background: colors.error[500],
       text: colors.neutral[100],
     },
     success: {
