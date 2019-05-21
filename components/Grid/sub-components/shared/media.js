@@ -1,46 +1,43 @@
 import { css } from 'styled-components';
-import { BREAKPOINTS } from '../../../shared';
 
-const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (min-width: ${BREAKPOINTS[label].width}px) {
-      ${css(...args)};
-    }
-  `;
-  return acc;
-}, {});
+const query = breakpoints =>
+  Object.keys(breakpoints).reduce((acc, label) => {
+    acc[label] = (...style) => css`
+      @media (min-width: ${breakpoints[label].width || 0}px) {
+        ${css(...style)};
+      }
+    `;
+    return acc;
+  }, {});
 
 const hideQueries = ({
-  xsmall: { maxWidth: xsmallMaxWidth },
-  small: { maxWidth: smallMaxWidth },
-  medium: { maxWidth: mediumMaxWidth },
-  large: { maxWidth: largeMaxWidth },
+  small: { width: smallWidth },
+  medium: { width: mediumWidth },
+  large: { width: largeWidth },
+  xlarge: { width: xlargeWidth },
 }) => ({
   xsmall: () => `
-    @media (max-width: ${xsmallMaxWidth}px) {
+    @media (max-width: ${smallWidth - 1}px) {
       display: none !important;
     }
   `,
   small: () => `
-    @media (min-width: ${xsmallMaxWidth +
-      1}px) and (max-width: ${smallMaxWidth}px) {
+    @media (min-width: ${smallWidth}px) and (max-width: ${mediumWidth - 1}px) {
       display: none !important;
     }
   `,
   medium: () => `
-    @media (min-width: ${smallMaxWidth +
-      1}px) and (max-width: ${mediumMaxWidth}px) {
+    @media (min-width: ${mediumWidth}px) and (max-width: ${largeWidth - 1}px) {
       display: none !important;
     }
   `,
   large: () => `
-    @media (min-width: ${mediumMaxWidth +
-      1}px) and (max-width: ${largeMaxWidth}px) {
+    @media (min-width: ${largeWidth}px) and (max-width: ${xlargeWidth - 1}px) {
       display: none !important;
     }
   `,
   xlarge: () => `
-    @media (min-width: ${largeMaxWidth + 1}px) {
+    @media (min-width: ${xlargeWidth}px) {
       display: none !important;
     }
   `,

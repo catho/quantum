@@ -1,21 +1,21 @@
 const breakpoints = {
   xsmall: {
     columns: 4,
-    maxWidth: 599,
   },
   small: {
+    width: 600,
     columns: 8,
-    maxWidth: 1023,
   },
   medium: {
+    width: 1024,
     columns: 12,
-    maxWidth: 1439,
   },
   large: {
+    width: 1440,
     columns: 12,
-    maxWidth: 1919,
   },
   xlarge: {
+    width: 1920,
     columns: 12,
   },
 };
