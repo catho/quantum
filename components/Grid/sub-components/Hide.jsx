@@ -7,13 +7,13 @@ const Hide = styled.div`
   ${({ theme: { breakpoints }, xsmall, small, medium, large, xlarge }) => {
     let style = '';
 
-    const hideBreapoint = hideQueries(breakpoints);
+    const hideBreakpoint = hideQueries(breakpoints);
 
-    style += xsmall ? hideBreapoint.xsmall() : '';
-    style += xlarge ? hideBreapoint.xlarge() : '';
-    style += small ? hideBreapoint.small() : '';
-    style += medium ? hideBreapoint.medium() : '';
-    style += large ? hideBreapoint.large() : '';
+    style += xsmall ? hideBreakpoint.xsmall() : '';
+    style += xlarge ? hideBreakpoint.xlarge() : '';
+    style += small ? hideBreakpoint.small() : '';
+    style += medium ? hideBreakpoint.medium() : '';
+    style += large ? hideBreakpoint.large() : '';
 
     return style;
   }}
