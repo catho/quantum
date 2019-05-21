@@ -9,7 +9,7 @@ This is the default pack of components and layout principles that dictates Catho
 It can be installed via npm or yarn.
 
 ```sh
-yarn add @catho/quantum
+yarn add @catho/quantum styled-components
 ```
 
 To use a component, it need to be imported in your project:
