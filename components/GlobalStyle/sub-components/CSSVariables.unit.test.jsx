@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import CSSVariables from './CSSVariables';
-import { BREAKPOINTS } from '../../shared';
+import { breakpoints, gutter } from '../../shared/theme';
 
 import { expectCSSMatches } from '../test.utils';
 
@@ -11,7 +11,7 @@ describe('CSSVariables component', () => {
 
     expectCSSMatches(
       `:root {
-        --gutter: 16px;
+        --gutter: ${gutter * 2}px;
       }`,
     );
   });
@@ -20,9 +20,9 @@ describe('CSSVariables component', () => {
     renderer.create(<CSSVariables />);
 
     expectCSSMatches(
-      `@media (min-width: ${BREAKPOINTS.small.width}px) {
+      `@media (min-width: ${breakpoints.small.width}px) {
         :root {
-          --gutter: 24px;
+          --gutter: ${gutter * 3}px;
         }
       }`,
     );

@@ -697,6 +697,56 @@ exports[`<SnackBar /> should match snapshots 1`] = `
         >
           <Row
             no-gutters={false}
+            theme={
+              Object {
+                "breakpoints": Object {
+                  "large": Object {
+                    "columns": 12,
+                    "width": 1440,
+                  },
+                  "medium": Object {
+                    "columns": 12,
+                    "width": 1024,
+                  },
+                  "small": Object {
+                    "columns": 8,
+                    "width": 600,
+                  },
+                  "xlarge": Object {
+                    "columns": 12,
+                    "width": 1920,
+                  },
+                  "xsmall": Object {
+                    "columns": 4,
+                  },
+                },
+                "default": Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "gutter": 8,
+                },
+                "gutter": 8,
+              }
+            }
           >
             <StyledComponent
               forwardedComponent={
@@ -718,12 +768,61 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                   },
                   "defaultProps": Object {
                     "no-gutters": false,
+                    "theme": Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "default": Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "gutter": 8,
+                      },
+                      "gutter": 8,
+                    },
                   },
                   "displayName": "Row",
                   "foldedComponentIds": Array [],
                   "propTypes": Object {
                     "hide": [Function],
                     "no-gutters": [Function],
+                    "theme": [Function],
                   },
                   "render": [Function],
                   "styledComponentId": "Row-tx22b8-0",
@@ -735,6 +834,56 @@ exports[`<SnackBar /> should match snapshots 1`] = `
               }
               forwardedRef={null}
               no-gutters={false}
+              theme={
+                Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "default": Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "gutter": 8,
+                  },
+                  "gutter": 8,
+                }
+              }
             >
               <div
                 className="c1"
@@ -2187,6 +2336,56 @@ exports[`<SnackBar /> should match snapshots 2`] = `
         >
           <Row
             no-gutters={false}
+            theme={
+              Object {
+                "breakpoints": Object {
+                  "large": Object {
+                    "columns": 12,
+                    "width": 1440,
+                  },
+                  "medium": Object {
+                    "columns": 12,
+                    "width": 1024,
+                  },
+                  "small": Object {
+                    "columns": 8,
+                    "width": 600,
+                  },
+                  "xlarge": Object {
+                    "columns": 12,
+                    "width": 1920,
+                  },
+                  "xsmall": Object {
+                    "columns": 4,
+                  },
+                },
+                "default": Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "gutter": 8,
+                },
+                "gutter": 8,
+              }
+            }
           >
             <StyledComponent
               forwardedComponent={
@@ -2208,12 +2407,61 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                   },
                   "defaultProps": Object {
                     "no-gutters": false,
+                    "theme": Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "default": Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "gutter": 8,
+                      },
+                      "gutter": 8,
+                    },
                   },
                   "displayName": "Row",
                   "foldedComponentIds": Array [],
                   "propTypes": Object {
                     "hide": [Function],
                     "no-gutters": [Function],
+                    "theme": [Function],
                   },
                   "render": [Function],
                   "styledComponentId": "Row-tx22b8-0",
@@ -2225,6 +2473,56 @@ exports[`<SnackBar /> should match snapshots 2`] = `
               }
               forwardedRef={null}
               no-gutters={false}
+              theme={
+                Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "default": Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "gutter": 8,
+                  },
+                  "gutter": 8,
+                }
+              }
             >
               <div
                 className="c1"
@@ -3677,6 +3975,56 @@ exports[`<SnackBar /> should match snapshots 3`] = `
         >
           <Row
             no-gutters={false}
+            theme={
+              Object {
+                "breakpoints": Object {
+                  "large": Object {
+                    "columns": 12,
+                    "width": 1440,
+                  },
+                  "medium": Object {
+                    "columns": 12,
+                    "width": 1024,
+                  },
+                  "small": Object {
+                    "columns": 8,
+                    "width": 600,
+                  },
+                  "xlarge": Object {
+                    "columns": 12,
+                    "width": 1920,
+                  },
+                  "xsmall": Object {
+                    "columns": 4,
+                  },
+                },
+                "default": Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "gutter": 8,
+                },
+                "gutter": 8,
+              }
+            }
           >
             <StyledComponent
               forwardedComponent={
@@ -3698,12 +4046,61 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                   },
                   "defaultProps": Object {
                     "no-gutters": false,
+                    "theme": Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "default": Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "gutter": 8,
+                      },
+                      "gutter": 8,
+                    },
                   },
                   "displayName": "Row",
                   "foldedComponentIds": Array [],
                   "propTypes": Object {
                     "hide": [Function],
                     "no-gutters": [Function],
+                    "theme": [Function],
                   },
                   "render": [Function],
                   "styledComponentId": "Row-tx22b8-0",
@@ -3715,6 +4112,56 @@ exports[`<SnackBar /> should match snapshots 3`] = `
               }
               forwardedRef={null}
               no-gutters={false}
+              theme={
+                Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "default": Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "gutter": 8,
+                  },
+                  "gutter": 8,
+                }
+              }
             >
               <div
                 className="c1"
@@ -5167,6 +5614,56 @@ exports[`<SnackBar /> should match snapshots 4`] = `
         >
           <Row
             no-gutters={false}
+            theme={
+              Object {
+                "breakpoints": Object {
+                  "large": Object {
+                    "columns": 12,
+                    "width": 1440,
+                  },
+                  "medium": Object {
+                    "columns": 12,
+                    "width": 1024,
+                  },
+                  "small": Object {
+                    "columns": 8,
+                    "width": 600,
+                  },
+                  "xlarge": Object {
+                    "columns": 12,
+                    "width": 1920,
+                  },
+                  "xsmall": Object {
+                    "columns": 4,
+                  },
+                },
+                "default": Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "gutter": 8,
+                },
+                "gutter": 8,
+              }
+            }
           >
             <StyledComponent
               forwardedComponent={
@@ -5188,12 +5685,61 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                   },
                   "defaultProps": Object {
                     "no-gutters": false,
+                    "theme": Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "default": Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "gutter": 8,
+                      },
+                      "gutter": 8,
+                    },
                   },
                   "displayName": "Row",
                   "foldedComponentIds": Array [],
                   "propTypes": Object {
                     "hide": [Function],
                     "no-gutters": [Function],
+                    "theme": [Function],
                   },
                   "render": [Function],
                   "styledComponentId": "Row-tx22b8-0",
@@ -5205,6 +5751,56 @@ exports[`<SnackBar /> should match snapshots 4`] = `
               }
               forwardedRef={null}
               no-gutters={false}
+              theme={
+                Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "default": Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "gutter": 8,
+                  },
+                  "gutter": 8,
+                }
+              }
             >
               <div
                 className="c1"
@@ -6657,6 +7253,56 @@ exports[`<SnackBar /> should match snapshots 5`] = `
         >
           <Row
             no-gutters={false}
+            theme={
+              Object {
+                "breakpoints": Object {
+                  "large": Object {
+                    "columns": 12,
+                    "width": 1440,
+                  },
+                  "medium": Object {
+                    "columns": 12,
+                    "width": 1024,
+                  },
+                  "small": Object {
+                    "columns": 8,
+                    "width": 600,
+                  },
+                  "xlarge": Object {
+                    "columns": 12,
+                    "width": 1920,
+                  },
+                  "xsmall": Object {
+                    "columns": 4,
+                  },
+                },
+                "default": Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "gutter": 8,
+                },
+                "gutter": 8,
+              }
+            }
           >
             <StyledComponent
               forwardedComponent={
@@ -6678,12 +7324,61 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                   },
                   "defaultProps": Object {
                     "no-gutters": false,
+                    "theme": Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "default": Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "gutter": 8,
+                      },
+                      "gutter": 8,
+                    },
                   },
                   "displayName": "Row",
                   "foldedComponentIds": Array [],
                   "propTypes": Object {
                     "hide": [Function],
                     "no-gutters": [Function],
+                    "theme": [Function],
                   },
                   "render": [Function],
                   "styledComponentId": "Row-tx22b8-0",
@@ -6695,6 +7390,56 @@ exports[`<SnackBar /> should match snapshots 5`] = `
               }
               forwardedRef={null}
               no-gutters={false}
+              theme={
+                Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "default": Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "gutter": 8,
+                  },
+                  "gutter": 8,
+                }
+              }
             >
               <div
                 className="c1"
@@ -8147,6 +8892,56 @@ exports[`<SnackBar /> should match snapshots 6`] = `
         >
           <Row
             no-gutters={false}
+            theme={
+              Object {
+                "breakpoints": Object {
+                  "large": Object {
+                    "columns": 12,
+                    "width": 1440,
+                  },
+                  "medium": Object {
+                    "columns": 12,
+                    "width": 1024,
+                  },
+                  "small": Object {
+                    "columns": 8,
+                    "width": 600,
+                  },
+                  "xlarge": Object {
+                    "columns": 12,
+                    "width": 1920,
+                  },
+                  "xsmall": Object {
+                    "columns": 4,
+                  },
+                },
+                "default": Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "gutter": 8,
+                },
+                "gutter": 8,
+              }
+            }
           >
             <StyledComponent
               forwardedComponent={
@@ -8168,12 +8963,61 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                   },
                   "defaultProps": Object {
                     "no-gutters": false,
+                    "theme": Object {
+                      "breakpoints": Object {
+                        "large": Object {
+                          "columns": 12,
+                          "width": 1440,
+                        },
+                        "medium": Object {
+                          "columns": 12,
+                          "width": 1024,
+                        },
+                        "small": Object {
+                          "columns": 8,
+                          "width": 600,
+                        },
+                        "xlarge": Object {
+                          "columns": 12,
+                          "width": 1920,
+                        },
+                        "xsmall": Object {
+                          "columns": 4,
+                        },
+                      },
+                      "default": Object {
+                        "breakpoints": Object {
+                          "large": Object {
+                            "columns": 12,
+                            "width": 1440,
+                          },
+                          "medium": Object {
+                            "columns": 12,
+                            "width": 1024,
+                          },
+                          "small": Object {
+                            "columns": 8,
+                            "width": 600,
+                          },
+                          "xlarge": Object {
+                            "columns": 12,
+                            "width": 1920,
+                          },
+                          "xsmall": Object {
+                            "columns": 4,
+                          },
+                        },
+                        "gutter": 8,
+                      },
+                      "gutter": 8,
+                    },
                   },
                   "displayName": "Row",
                   "foldedComponentIds": Array [],
                   "propTypes": Object {
                     "hide": [Function],
                     "no-gutters": [Function],
+                    "theme": [Function],
                   },
                   "render": [Function],
                   "styledComponentId": "Row-tx22b8-0",
@@ -8185,6 +9029,56 @@ exports[`<SnackBar /> should match snapshots 6`] = `
               }
               forwardedRef={null}
               no-gutters={false}
+              theme={
+                Object {
+                  "breakpoints": Object {
+                    "large": Object {
+                      "columns": 12,
+                      "width": 1440,
+                    },
+                    "medium": Object {
+                      "columns": 12,
+                      "width": 1024,
+                    },
+                    "small": Object {
+                      "columns": 8,
+                      "width": 600,
+                    },
+                    "xlarge": Object {
+                      "columns": 12,
+                      "width": 1920,
+                    },
+                    "xsmall": Object {
+                      "columns": 4,
+                    },
+                  },
+                  "default": Object {
+                    "breakpoints": Object {
+                      "large": Object {
+                        "columns": 12,
+                        "width": 1440,
+                      },
+                      "medium": Object {
+                        "columns": 12,
+                        "width": 1024,
+                      },
+                      "small": Object {
+                        "columns": 8,
+                        "width": 600,
+                      },
+                      "xlarge": Object {
+                        "columns": 12,
+                        "width": 1920,
+                      },
+                      "xsmall": Object {
+                        "columns": 4,
+                      },
+                    },
+                    "gutter": 8,
+                  },
+                  "gutter": 8,
+                }
+              }
             >
               <div
                 className="c1"

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { hide, noGutters } from './shared';
-import theme, { breakpoints } from '../../shared/theme';
+import { theme as defaultTheme } from '../../shared';
 
 const Container = styled.div`
   box-sizing: border-box;
@@ -21,7 +21,7 @@ const Container = styled.div`
 Container.propTypes = {
   fluid: PropTypes.bool,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(breakpoints)),
+    PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
   theme: PropTypes.shape({
@@ -33,7 +33,7 @@ Container.propTypes = {
 Container.defaultProps = {
   fluid: false,
   'no-gutters': false,
-  theme,
+  theme: defaultTheme,
 };
 
 Container.displayName = 'Container';
