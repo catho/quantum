@@ -67,6 +67,41 @@ const colors = {
 
 const gutter = 8;
 
-const theme = { breakpoints, gutter, colors };
+const spacing = {
+  xxxsmall: gutter * 0.25, // 2
+  xxsmall: gutter * 0.5, // 4
+  xsmall: gutter * 1, // 8
+  small: gutter * 1.5, // 12
+  medium: gutter * 2, // 16
+  large: gutter * 3, // 24
+  xlarge: gutter * 4, // 32
+  xxlarge: gutter * 5, // 40
+  xxxlarge: gutter * 6, // 48
+};
 
-export { breakpoints, gutter, colors, theme as default };
+const components = {
+  badge: {
+    skins: {
+      neutral: {
+        background: colors.neutral[100],
+        text: colors.neutral[700],
+      },
+      primary: {
+        background: colors.primary[500],
+        text: colors.neutral[100],
+      },
+      error: {
+        background: colors.error[500],
+        text: colors.neutral[100],
+      },
+      success: {
+        background: colors.success[100],
+        text: colors.success[900],
+      },
+    },
+  },
+};
+
+const theme = { breakpoints, gutter, colors, components, spacing };
+
+export { breakpoints, gutter, colors, components, spacing, theme as default };
