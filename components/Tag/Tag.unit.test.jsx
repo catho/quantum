@@ -19,13 +19,9 @@ describe('<Tag />', () => {
   it('with bold prop', () => testSnapshot({ bold: true }));
 
   describe('Skins', () => {
-    it('stroked', () => testSnapshot({ skin: 'stroked' }));
-    it('inverted', () => testSnapshot({ skin: 'inverted' }));
-    it('blue', () => testSnapshot({ skin: 'blue' }));
     it('success', () => testSnapshot({ skin: 'success' }));
     it('warning', () => testSnapshot({ skin: 'warning' }));
     it('error', () => testSnapshot({ skin: 'error' }));
-    it('blue-text', () => testSnapshot({ skin: 'blue-text' }));
     it('default', () => {
       testSnapshot({ skin: 'default' });
 
@@ -43,13 +39,9 @@ describe('<Tag />', () => {
   describe('onClose Prop', () => {
     it('is rendering well', () => {
       testSnapshot({ onClose: () => {} });
-      testSnapshot({ onClose: () => {}, skin: 'stroked' });
-      testSnapshot({ onClose: () => {}, skin: 'inverted' });
-      testSnapshot({ onClose: () => {}, skin: 'blue' });
       testSnapshot({ onClose: () => {}, skin: 'success' });
       testSnapshot({ onClose: () => {}, skin: 'warning' });
       testSnapshot({ onClose: () => {}, skin: 'error' });
-      testSnapshot({ onClose: () => {}, skin: 'blue-text' });
     });
 
     it('is called when close button is clicked', () => {

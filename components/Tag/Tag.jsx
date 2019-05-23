@@ -5,28 +5,13 @@ import Colors from '../Colors';
 import Icon from '../Icon';
 
 const skinFontColors = {
-  inverted: Colors.WHITE,
-  blue: Colors.BLUE[500],
   success: Colors.SUCCESS[900],
   warning: Colors.WARNING[900],
   error: Colors.ERROR[900],
-  'blue-text': Colors.BLUE[500],
 };
 
 const skins = {
   default: `background-color: ${Colors.BLACK[100]};`,
-  stroked: `
-    border: 1px solid;
-    background: none;
-  `,
-  inverted: `
-    color: ${skinFontColors.inverted}
-    background-color: ${Colors.BLACK[400]};
-  `,
-  blue: `
-    color: ${skinFontColors.blue}
-    background-color: ${Colors.BLUE[200]};
-  `,
   success: `
     color: ${skinFontColors.success}
     background-color: ${Colors.SUCCESS[200]};
@@ -38,10 +23,6 @@ const skins = {
   error: `
     color: ${skinFontColors.error}
     background-color: ${Colors.ERROR[200]};
-  `,
-  'blue-text': `
-    color: ${skinFontColors['blue-text']}
-    background-color: ${Colors.BLACK[100]};
   `,
 };
 
@@ -121,16 +102,7 @@ Tag.propTypes = {
   /** A callback that is called when close button is clicked */
   onClose: PropTypes.func,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  skin: PropTypes.oneOf([
-    'default',
-    'stroked',
-    'inverted',
-    'blue',
-    'success',
-    'warning',
-    'error',
-    'blue-text',
-  ]),
+  skin: PropTypes.oneOf(['default', 'success', 'warning', 'error']),
   text: PropTypes.string,
 };
 
