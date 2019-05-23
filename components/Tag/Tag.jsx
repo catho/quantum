@@ -1,30 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Colors from '../Colors';
+import styled, { css } from 'styled-components';
 import Icon from '../Icon';
-
-const skinFontColors = {
-  success: Colors.SUCCESS[900],
-  warning: Colors.WARNING[900],
-  error: Colors.ERROR[900],
-};
-
-const skins = {
-  default: `background-color: ${Colors.BLACK[100]};`,
-  success: `
-    color: ${skinFontColors.success}
-    background-color: ${Colors.SUCCESS[200]};
-  `,
-  warning: `
-    color: ${skinFontColors.warning}
-    background-color: ${Colors.WARNING[200]};
-  `,
-  error: `
-    color: ${skinFontColors.error}
-    background-color: ${Colors.ERROR[200]};
-  `,
-};
+import { components } from '../shared/theme';
 
 const sizes = {
   small: `
@@ -37,6 +15,28 @@ const sizes = {
   `,
 };
 
+const _getColors = ({
+  skin,
+  theme: {
+    components: {
+      tag: {
+        skins: {
+          [skin]: { background, text },
+        },
+      },
+    },
+  },
+}) => ({ background, text });
+
+const getWrapperColors = props => {
+  const { background, text } = _getColors(props);
+
+  return css`
+    background-color: ${background};
+    color: ${text};
+  `;
+};
+
 const Wrapper = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
@@ -44,8 +44,8 @@ const Wrapper = styled.div`
   margin-right: 8px;
   padding: 4px 12px;
   ${({ bold }) => bold && `font-weight: bold;`}
-  ${({ skin }) => skins[skin]}
   ${({ size }) => sizes[size]}
+  ${getWrapperColors}
 `;
 
 const Content = styled.div`
@@ -77,7 +77,7 @@ const CloseButton = styled.button`
 
   ${CloseIcon} {
     font-size: ${applyIconSize};
-    color: ${({ skin }) => skinFontColors[skin]};
+    color: ${props => _getColors(props).text};
   }
 `;
 
@@ -102,8 +102,13 @@ Tag.propTypes = {
   /** A callback that is called when close button is clicked */
   onClose: PropTypes.func,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  skin: PropTypes.oneOf(['default', 'success', 'warning', 'error']),
+  skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   text: PropTypes.string,
+  theme: PropTypes.shape({
+    components: {
+      tag: PropTypes.object,
+    },
+  }),
 };
 
 Tag.defaultProps = {
@@ -111,8 +116,13 @@ Tag.defaultProps = {
   children: '',
   onClose: undefined,
   size: 'medium',
-  skin: 'default',
+  skin: 'neutral',
   text: 'Tag text',
+  theme: {
+    components: {
+      tag: components.tag,
+    },
+  },
 };
 
 export default Tag;

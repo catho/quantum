@@ -2,9 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import Tag from './Tag';
-import Colors from '../Colors';
 
-const testSnapshot = props => {
+const testSnapshot = (props = {}) => {
   const propsList = Array.isArray(props) ? props : [props];
 
   propsList.forEach(p => {
@@ -19,15 +18,11 @@ describe('<Tag />', () => {
   it('with bold prop', () => testSnapshot({ bold: true }));
 
   describe('Skins', () => {
+    it('neutral', () => testSnapshot());
+    it('primary', () => testSnapshot({ skin: 'primary' }));
     it('success', () => testSnapshot({ skin: 'success' }));
     it('warning', () => testSnapshot({ skin: 'warning' }));
     it('error', () => testSnapshot({ skin: 'error' }));
-    it('default', () => {
-      testSnapshot({ skin: 'default' });
-
-      const tag = renderer.create(<Tag />).toJSON();
-      expect(tag).toHaveStyleRule('background-color', Colors.BLACK[100]);
-    });
   });
 
   describe('Sizes', () => {
@@ -39,6 +34,7 @@ describe('<Tag />', () => {
   describe('onClose Prop', () => {
     it('is rendering well', () => {
       testSnapshot({ onClose: () => {} });
+      testSnapshot({ onClose: () => {}, skin: 'primary' });
       testSnapshot({ onClose: () => {}, skin: 'success' });
       testSnapshot({ onClose: () => {}, skin: 'warning' });
       testSnapshot({ onClose: () => {}, skin: 'error' });

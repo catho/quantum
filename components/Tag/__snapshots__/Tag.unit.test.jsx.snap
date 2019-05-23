@@ -7,8 +7,9 @@ exports[`<Tag /> Sizes large 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  background-color: #f2f2f2;
   font-size: 18px;
+  background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
@@ -31,6 +32,7 @@ exports[`<Tag /> Sizes medium 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
@@ -52,37 +54,16 @@ exports[`<Tag /> Sizes small 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  background-color: #f2f2f2;
   font-size: 12px;
   padding-top: 3px;
   padding-bottom: 3px;
+  background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
   className="c0"
   size="small"
->
-  <div
-    className=""
-  >
-    Tag text
-  </div>
-</div>
-`;
-
-exports[`<Tag /> Skins default 1`] = `
-.c0 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: inline-block;
-  margin-right: 8px;
-  padding: 4px 12px;
-  background-color: #f2f2f2;
-}
-
-<div
-  className="c0"
-  size="medium"
 >
   <div
     className=""
@@ -99,8 +80,54 @@ exports[`<Tag /> Skins error 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  color: #ac001a;
   background-color: #ffe5e9;
+  color: #ac001a;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins neutral 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  color: #4c4c4c;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Skins primary 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #e5edfc;
+  color: #1355d0;
 }
 
 <div
@@ -122,8 +149,8 @@ exports[`<Tag /> Skins success 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  color: #3c6510;
   background-color: #edfadf;
+  color: #3c6510;
 }
 
 <div
@@ -145,8 +172,8 @@ exports[`<Tag /> Skins warning 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  color: #a36300;
   background-color: #ffefd6;
+  color: #a36300;
 }
 
 <div
@@ -169,6 +196,7 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -193,6 +221,7 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
 
 .c2 .c3 {
   font-size: 18px;
+  color: #4c4c4c;
 }
 
 <div
@@ -232,8 +261,8 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  color: #3c6510;
-  background-color: #edfadf;
+  background-color: #e5edfc;
+  color: #1355d0;
 }
 
 .c1 {
@@ -249,6 +278,7 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
 
 .c4 .c3 {
   font-size: 18px;
+  color: #4c4c4c;
 }
 
 .c2 {
@@ -262,7 +292,7 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
 
 .c2 .c3 {
   font-size: 18px;
-  color: #3c6510;
+  color: #1355d0;
 }
 
 <div
@@ -302,8 +332,8 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  color: #a36300;
-  background-color: #ffefd6;
+  background-color: #edfadf;
+  color: #3c6510;
 }
 
 .c1 {
@@ -319,9 +349,91 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
 
 .c4 .c3 {
   font-size: 18px;
+  color: #4c4c4c;
 }
 
 .c5 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  margin-left: 4px;
+  padding: 0;
+}
+
+.c2 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className="c1"
+    onClose={[Function]}
+  >
+    Tag text
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Tag /> onClose Prop is rendering well 4`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #ffefd6;
+  color: #a36300;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .c3 {
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c6 .c3 {
   font-size: 18px;
   color: #3c6510;
 }
@@ -370,15 +482,15 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
 </div>
 `;
 
-exports[`<Tag /> onClose Prop is rendering well 4`] = `
+exports[`<Tag /> onClose Prop is rendering well 5`] = `
 .c0 {
   border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  color: #ac001a;
   background-color: #ffe5e9;
+  color: #ac001a;
 }
 
 .c1 {
@@ -394,14 +506,20 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
 
 .c4 .c3 {
   font-size: 18px;
+  color: #4c4c4c;
 }
 
 .c5 .c3 {
   font-size: 18px;
-  color: #3c6510;
+  color: #1355d0;
 }
 
 .c6 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c7 .c3 {
   font-size: 18px;
   color: #a36300;
 }
@@ -459,6 +577,7 @@ exports[`<Tag /> with bold prop 1`] = `
   padding: 4px 12px;
   font-weight: bold;
   background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
@@ -481,6 +600,7 @@ exports[`<Tag /> with only text prop / children 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
@@ -503,6 +623,7 @@ exports[`<Tag /> with only text prop / children 2`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
@@ -525,6 +646,7 @@ exports[`<Tag /> without props 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  color: #4c4c4c;
 }
 
 <div
