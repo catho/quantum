@@ -274,6 +274,28 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "900": "#e56200",
         },
       },
+      "components": Object {
+        "badge": Object {
+          "skins": Object {
+            "error": Object {
+              "background": "#ff2d4d",
+              "text": "#f2f2f2",
+            },
+            "neutral": Object {
+              "background": "#f2f2f2",
+              "text": "#4c4c4c",
+            },
+            "primary": Object {
+              "background": "#1355d0",
+              "text": "#f2f2f2",
+            },
+            "success": Object {
+              "background": "#d8f2bc",
+              "text": "#4eb70b",
+            },
+          },
+        },
+      },
       "default": Object {
         "breakpoints": Object {
           "large": Object {
@@ -340,9 +362,53 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             "900": "#e56200",
           },
         },
+        "components": Object {
+          "badge": Object {
+            "skins": Object {
+              "error": Object {
+                "background": "#ff2d4d",
+                "text": "#f2f2f2",
+              },
+              "neutral": Object {
+                "background": "#f2f2f2",
+                "text": "#4c4c4c",
+              },
+              "primary": Object {
+                "background": "#1355d0",
+                "text": "#f2f2f2",
+              },
+              "success": Object {
+                "background": "#d8f2bc",
+                "text": "#4eb70b",
+              },
+            },
+          },
+        },
         "gutter": 8,
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        },
       },
       "gutter": 8,
+      "spacing": Object {
+        "large": 24,
+        "medium": 16,
+        "small": 12,
+        "xlarge": 32,
+        "xsmall": 8,
+        "xxlarge": 40,
+        "xxsmall": 4,
+        "xxxlarge": 48,
+        "xxxsmall": 2,
+      },
     }
   }
 >
@@ -752,6 +818,28 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#e56200",
                   },
                 },
+                "components": Object {
+                  "badge": Object {
+                    "skins": Object {
+                      "error": Object {
+                        "background": "#ff2d4d",
+                        "text": "#f2f2f2",
+                      },
+                      "neutral": Object {
+                        "background": "#f2f2f2",
+                        "text": "#4c4c4c",
+                      },
+                      "primary": Object {
+                        "background": "#1355d0",
+                        "text": "#f2f2f2",
+                      },
+                      "success": Object {
+                        "background": "#d8f2bc",
+                        "text": "#4eb70b",
+                      },
+                    },
+                  },
+                },
                 "default": Object {
                   "breakpoints": Object {
                     "large": Object {
@@ -818,9 +906,53 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#e56200",
                     },
                   },
+                  "components": Object {
+                    "badge": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ff2d4d",
+                          "text": "#f2f2f2",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "primary": Object {
+                          "background": "#1355d0",
+                          "text": "#f2f2f2",
+                        },
+                        "success": Object {
+                          "background": "#d8f2bc",
+                          "text": "#4eb70b",
+                        },
+                      },
+                    },
+                  },
                   "gutter": 8,
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 },
                 "gutter": 8,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
               }
             }
           >
@@ -1000,6 +1132,28 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#e56200",
                     },
                   },
+                  "components": Object {
+                    "badge": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ff2d4d",
+                          "text": "#f2f2f2",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "primary": Object {
+                          "background": "#1355d0",
+                          "text": "#f2f2f2",
+                        },
+                        "success": Object {
+                          "background": "#d8f2bc",
+                          "text": "#4eb70b",
+                        },
+                      },
+                    },
+                  },
                   "default": Object {
                     "breakpoints": Object {
                       "large": Object {
@@ -1066,9 +1220,53 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "900": "#e56200",
                       },
                     },
+                    "components": Object {
+                      "badge": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ff2d4d",
+                            "text": "#f2f2f2",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "primary": Object {
+                            "background": "#1355d0",
+                            "text": "#f2f2f2",
+                          },
+                          "success": Object {
+                            "background": "#d8f2bc",
+                            "text": "#4eb70b",
+                          },
+                        },
+                      },
+                    },
                     "gutter": 8,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   },
                   "gutter": 8,
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
             >
@@ -1141,6 +1339,28 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "900": "#e56200",
                       },
                     },
+                    "components": Object {
+                      "badge": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ff2d4d",
+                            "text": "#f2f2f2",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "primary": Object {
+                            "background": "#1355d0",
+                            "text": "#f2f2f2",
+                          },
+                          "success": Object {
+                            "background": "#d8f2bc",
+                            "text": "#4eb70b",
+                          },
+                        },
+                      },
+                    },
                     "default": Object {
                       "breakpoints": Object {
                         "large": Object {
@@ -1207,9 +1427,53 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#e56200",
                         },
                       },
+                      "components": Object {
+                        "badge": Object {
+                          "skins": Object {
+                            "error": Object {
+                              "background": "#ff2d4d",
+                              "text": "#f2f2f2",
+                            },
+                            "neutral": Object {
+                              "background": "#f2f2f2",
+                              "text": "#4c4c4c",
+                            },
+                            "primary": Object {
+                              "background": "#1355d0",
+                              "text": "#f2f2f2",
+                            },
+                            "success": Object {
+                              "background": "#d8f2bc",
+                              "text": "#4eb70b",
+                            },
+                          },
+                        },
+                      },
                       "gutter": 8,
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
                     },
                     "gutter": 8,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
               >
@@ -1282,6 +1546,28 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#e56200",
                         },
                       },
+                      "components": Object {
+                        "badge": Object {
+                          "skins": Object {
+                            "error": Object {
+                              "background": "#ff2d4d",
+                              "text": "#f2f2f2",
+                            },
+                            "neutral": Object {
+                              "background": "#f2f2f2",
+                              "text": "#4c4c4c",
+                            },
+                            "primary": Object {
+                              "background": "#1355d0",
+                              "text": "#f2f2f2",
+                            },
+                            "success": Object {
+                              "background": "#d8f2bc",
+                              "text": "#4eb70b",
+                            },
+                          },
+                        },
+                      },
                       "default": Object {
                         "breakpoints": Object {
                           "large": Object {
@@ -1348,9 +1634,53 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#e56200",
                           },
                         },
+                        "components": Object {
+                          "badge": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ff2d4d",
+                                "text": "#f2f2f2",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "primary": Object {
+                                "background": "#1355d0",
+                                "text": "#f2f2f2",
+                              },
+                              "success": Object {
+                                "background": "#d8f2bc",
+                                "text": "#4eb70b",
+                              },
+                            },
+                          },
+                        },
                         "gutter": 8,
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
                       },
                       "gutter": 8,
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
                     }
                   }
                 >
@@ -1450,6 +1780,28 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#e56200",
                           },
                         },
+                        "components": Object {
+                          "badge": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ff2d4d",
+                                "text": "#f2f2f2",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "primary": Object {
+                                "background": "#1355d0",
+                                "text": "#f2f2f2",
+                              },
+                              "success": Object {
+                                "background": "#d8f2bc",
+                                "text": "#4eb70b",
+                              },
+                            },
+                          },
+                        },
                         "default": Object {
                           "breakpoints": Object {
                             "large": Object {
@@ -1516,9 +1868,53 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "900": "#e56200",
                             },
                           },
+                          "components": Object {
+                            "badge": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ff2d4d",
+                                  "text": "#f2f2f2",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "primary": Object {
+                                  "background": "#1355d0",
+                                  "text": "#f2f2f2",
+                                },
+                                "success": Object {
+                                  "background": "#d8f2bc",
+                                  "text": "#4eb70b",
+                                },
+                              },
+                            },
+                          },
                           "gutter": 8,
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
                         },
                         "gutter": 8,
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
                       }
                     }
                   >

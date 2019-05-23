@@ -1,41 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import Colors from '../Colors';
+import { components, spacing } from '../shared/theme';
 
-const getColors = ({ skin }) => {
-  const badgeColors = {
-    default: {
-      background: Colors.BLACK[100],
-      text: Colors.BLACK[700],
+const getColors = ({
+  skin,
+  theme: {
+    components: {
+      badge: {
+        skins: { [skin]: badgeColor },
+      },
     },
-    black: {
-      background: Colors.BLACK[700],
-      text: Colors.WHITE,
-    },
-    blue: {
-      background: Colors.BLUE[500],
-      text: Colors.WHITE,
-    },
-    white: {
-      background: Colors.WHITE,
-      text: '#000',
-    },
-    error: {
-      background: Colors.ERROR[500],
-      text: Colors.WHITE,
-    },
-    success: {
-      background: Colors.SUCCESS[200],
-      text: Colors.SUCCESS[900],
-    },
-  };
-
+  },
+  inverted,
+}) => {
+  if (inverted) {
+    const [text, background] = [badgeColor.background, badgeColor.text];
+    return css`
+      background-color: ${background};
+      color: ${text};
+    `;
+  }
   return css`
-    background-color: ${badgeColors[skin].background};
-    color: ${badgeColors[skin].text};
-
-    ${skin === 'white' && 'mix-blend-mode: lighten;'}
+    background-color: ${badgeColor.background};
+    color: ${badgeColor.text};
   `;
 };
 
@@ -57,15 +45,23 @@ const StyledBadge = styled.span`
   line-height: 20px;
   min-width: 20px;
   text-align: center;
-  padding-left: 2px;
-  padding-right: 2px;
+  box-sizing: border-box;
 
-  ${props =>
-    !Number.isInteger(props.value) &&
-    `
-    padding-left: 4px;
-    padding-right: 4px;
-  `}
+  ${({
+    value,
+    theme: {
+      spacing: { xxxsmall, xxsmall },
+    },
+    number,
+  }) => {
+    const padding =
+      !Number.isInteger(value) || number >= 10 ? xxsmall : xxxsmall;
+
+    return `
+      padding-left: ${padding}px;
+      padding-right: ${padding}px;
+    `;
+  }}
 
   ${props =>
     props.originalChildren &&
@@ -79,12 +75,18 @@ const StyledBadge = styled.span`
 `;
 
 /** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
-const Badge = ({ children, number, skin }) => {
+const Badge = ({ children, number, skin, inverted, theme }) => {
   const value = number > 99 ? '99+' : number;
 
   return (
     <BadgeWrapper value={value} originalChildren={children}>
-      <StyledBadge skin={skin} value={value} originalChildren={children}>
+      <StyledBadge
+        skin={skin}
+        inverted={inverted}
+        theme={theme}
+        value={value}
+        originalChildren={children}
+      >
         {value}
       </StyledBadge>
       {children}
@@ -98,14 +100,7 @@ Badge.displayName = 'Badge';
 
 Badge.propTypes = {
   /** Define background and text color */
-  skin: PropTypes.oneOf([
-    'default',
-    'black',
-    'blue',
-    'white',
-    'error',
-    'success',
-  ]),
+  skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral']),
   /** When passed a children to <Badge />, the badge will be displayed at top-right corner of the children. */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -113,12 +108,29 @@ Badge.propTypes = {
   ]),
   /** Number to be displayed inside badge. When number is higher than 99 will be displayed "99+" instead of number value */
   number: PropTypes.number,
+  /** Swap background and text color */
+  inverted: PropTypes.bool,
+  theme: PropTypes.shape({
+    spacing: {
+      badge: PropTypes.object,
+    },
+    components: {
+      badge: PropTypes.object,
+    },
+  }),
 };
 
 Badge.defaultProps = {
-  skin: 'default',
+  skin: 'neutral',
+  inverted: false,
   children: '',
   number: 0,
+  theme: {
+    spacing,
+    components: {
+      badge: components.badge,
+    },
+  },
 };
 
 export default Badge;
