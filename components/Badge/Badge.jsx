@@ -37,7 +37,7 @@ const BadgeWrapper = styled.div`
 `;
 
 const StyledBadge = styled.span`
-  border-radius: ${spacing.xsmall}px;
+  border-radius: 8px;
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
@@ -45,15 +45,23 @@ const StyledBadge = styled.span`
   line-height: 20px;
   min-width: 20px;
   text-align: center;
-  padding-left: ${spacing.xxxsmall}px;
-  padding-right: ${spacing.xxxsmall}px;
+  box-sizing: border-box;
 
-  ${props =>
-    !Number.isInteger(props.value) &&
-    `
-    padding-left: 4px;
-    padding-right: 4px;
-  `}
+  ${({
+    value,
+    theme: {
+      spacing: { xxxsmall, xxsmall },
+    },
+    number,
+  }) => {
+    const padding =
+      !Number.isInteger(value) || number >= 10 ? xxsmall : xxxsmall;
+
+    return `
+      padding-left: ${padding}px;
+      padding-right: ${padding}px;
+    `;
+  }}
 
   ${props =>
     props.originalChildren &&
@@ -113,7 +121,7 @@ Badge.propTypes = {
 };
 
 Badge.defaultProps = {
-  skin: 'primary',
+  skin: 'neutral',
   inverted: false,
   children: '',
   number: 0,

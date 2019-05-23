@@ -16,6 +16,7 @@ exports[`<Badge /> Should match snapshot With number 1`] = `
   line-height: 20px;
   min-width: 20px;
   text-align: center;
+  box-sizing: border-box;
   padding-left: 2px;
   padding-right: 2px;
   background-color: #f2f2f2;
@@ -51,6 +52,7 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   line-height: 20px;
   min-width: 20px;
   text-align: center;
+  box-sizing: border-box;
   padding-left: 2px;
   padding-right: 2px;
   position: absolute;
