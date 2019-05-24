@@ -107,6 +107,7 @@ Tooltip.propTypes = {
   theme: PropTypes.shape({
     spacing: PropTypes.object,
     colors: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
 };
 
