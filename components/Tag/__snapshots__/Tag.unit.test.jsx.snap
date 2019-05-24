@@ -8,6 +8,7 @@ exports[`<Tag /> Inverted prop error 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #ac001a;
+  border: none;
   color: #ffe5e9;
 }
 
@@ -31,6 +32,7 @@ exports[`<Tag /> Inverted prop neutral 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #4c4c4c;
+  border: none;
   color: #f2f2f2;
 }
 
@@ -54,6 +56,7 @@ exports[`<Tag /> Inverted prop primary 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #1355d0;
+  border: none;
   color: #e5edfc;
 }
 
@@ -77,6 +80,7 @@ exports[`<Tag /> Inverted prop success 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #3c6510;
+  border: none;
   color: #edfadf;
 }
 
@@ -100,6 +104,7 @@ exports[`<Tag /> Inverted prop warning 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #a36300;
+  border: none;
   color: #ffefd6;
 }
 
@@ -123,6 +128,7 @@ exports[`<Tag /> Sizes large 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
   font-size: 18px;
 }
@@ -147,6 +153,7 @@ exports[`<Tag /> Sizes medium 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
 }
 
@@ -170,6 +177,7 @@ exports[`<Tag /> Sizes small 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
   font-size: 12px;
   padding-top: 4px;
@@ -196,30 +204,8 @@ exports[`<Tag /> Skins error 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #ffe5e9;
+  border: none;
   color: #ac001a;
-}
-
-<div
-  className="c0"
-  size="medium"
->
-  <div
-    className=""
-  >
-    Tag text
-  </div>
-</div>
-`;
-
-exports[`<Tag /> Skins neutral 1`] = `
-.c0 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: inline-block;
-  margin-right: 8px;
-  padding: 4px 12px;
-  background-color: #f2f2f2;
-  color: #4c4c4c;
 }
 
 <div
@@ -242,6 +228,7 @@ exports[`<Tag /> Skins primary 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #e5edfc;
+  border: none;
   color: #1355d0;
 }
 
@@ -265,6 +252,7 @@ exports[`<Tag /> Skins success 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #edfadf;
+  border: none;
   color: #3c6510;
 }
 
@@ -288,6 +276,127 @@ exports[`<Tag /> Skins warning 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #ffefd6;
+  border: none;
+  color: #a36300;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Stroked prop error 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #ac001a;
+  color: #ac001a;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Stroked prop neutral 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #4c4c4c;
+  color: #4c4c4c;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Stroked prop primary 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Stroked prop success 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #3c6510;
+  color: #3c6510;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className=""
+  >
+    Tag text
+  </div>
+</div>
+`;
+
+exports[`<Tag /> Stroked prop warning 1`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #a36300;
   color: #a36300;
 }
 
@@ -311,6 +420,7 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
 }
 
@@ -377,6 +487,7 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #e5edfc;
+  border: none;
   color: #1355d0;
 }
 
@@ -448,6 +559,7 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #edfadf;
+  border: none;
   color: #3c6510;
 }
 
@@ -524,6 +636,7 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #ffefd6;
+  border: none;
   color: #a36300;
 }
 
@@ -605,6 +718,7 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #ffe5e9;
+  border: none;
   color: #ac001a;
 }
 
@@ -691,6 +805,7 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #4c4c4c;
+  border: none;
   color: #f2f2f2;
 }
 
@@ -782,6 +897,7 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #1355d0;
+  border: none;
   color: #e5edfc;
 }
 
@@ -878,6 +994,7 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #3c6510;
+  border: none;
   color: #edfadf;
 }
 
@@ -979,6 +1096,7 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #a36300;
+  border: none;
   color: #ffefd6;
 }
 
@@ -1085,6 +1203,7 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #ac001a;
+  border: none;
   color: #ffe5e9;
 }
 
@@ -1188,6 +1307,566 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
 </div>
 `;
 
+exports[`<Tag /> onClose Prop is rendering well 11`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #4c4c4c;
+  color: #4c4c4c;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 .c3 {
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+.c4 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #a36300;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #ac001a;
+}
+
+.c8 .c3 {
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.c9 .c3 {
+  font-size: 18px;
+  color: #e5edfc;
+}
+
+.c10 .c3 {
+  font-size: 18px;
+  color: #edfadf;
+}
+
+.c11 .c3 {
+  font-size: 18px;
+  color: #ffefd6;
+}
+
+.c12 .c3 {
+  font-size: 18px;
+  color: #ffe5e9;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className="c1"
+    onClose={[Function]}
+  >
+    Tag text
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Tag /> onClose Prop is rendering well 12`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #1355d0;
+  color: #1355d0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .c3 {
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+.c2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #a36300;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #ac001a;
+}
+
+.c8 .c3 {
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.c9 .c3 {
+  font-size: 18px;
+  color: #e5edfc;
+}
+
+.c10 .c3 {
+  font-size: 18px;
+  color: #edfadf;
+}
+
+.c11 .c3 {
+  font-size: 18px;
+  color: #ffefd6;
+}
+
+.c12 .c3 {
+  font-size: 18px;
+  color: #ffe5e9;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className="c1"
+    onClose={[Function]}
+  >
+    Tag text
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Tag /> onClose Prop is rendering well 13`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #3c6510;
+  color: #3c6510;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .c3 {
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #a36300;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #ac001a;
+}
+
+.c8 .c3 {
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.c9 .c3 {
+  font-size: 18px;
+  color: #e5edfc;
+}
+
+.c10 .c3 {
+  font-size: 18px;
+  color: #edfadf;
+}
+
+.c11 .c3 {
+  font-size: 18px;
+  color: #ffefd6;
+}
+
+.c12 .c3 {
+  font-size: 18px;
+  color: #ffe5e9;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className="c1"
+    onClose={[Function]}
+  >
+    Tag text
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Tag /> onClose Prop is rendering well 14`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #a36300;
+  color: #a36300;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .c3 {
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 .c3 {
+  font-size: 18px;
+  color: #a36300;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #ac001a;
+}
+
+.c8 .c3 {
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.c9 .c3 {
+  font-size: 18px;
+  color: #e5edfc;
+}
+
+.c10 .c3 {
+  font-size: 18px;
+  color: #edfadf;
+}
+
+.c11 .c3 {
+  font-size: 18px;
+  color: #ffefd6;
+}
+
+.c12 .c3 {
+  font-size: 18px;
+  color: #ffe5e9;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className="c1"
+    onClose={[Function]}
+  >
+    Tag text
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Tag /> onClose Prop is rendering well 15`] = `
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #ac001a;
+  color: #ac001a;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .c3 {
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+.c5 .c3 {
+  font-size: 18px;
+  color: #1355d0;
+}
+
+.c6 .c3 {
+  font-size: 18px;
+  color: #3c6510;
+}
+
+.c7 .c3 {
+  font-size: 18px;
+  color: #a36300;
+}
+
+.c2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.c2 .c3 {
+  font-size: 18px;
+  color: #ac001a;
+}
+
+.c8 .c3 {
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.c9 .c3 {
+  font-size: 18px;
+  color: #e5edfc;
+}
+
+.c10 .c3 {
+  font-size: 18px;
+  color: #edfadf;
+}
+
+.c11 .c3 {
+  font-size: 18px;
+  color: #ffefd6;
+}
+
+.c12 .c3 {
+  font-size: 18px;
+  color: #ffe5e9;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <div
+    className="c1"
+    onClose={[Function]}
+  >
+    Tag text
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3 "
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`<Tag /> with bold prop 1`] = `
 .c0 {
   border-radius: 8px;
@@ -1197,6 +1876,7 @@ exports[`<Tag /> with bold prop 1`] = `
   padding: 4px 12px;
   font-weight: bold;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
 }
 
@@ -1220,6 +1900,7 @@ exports[`<Tag /> with only text prop / children 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
 }
 
@@ -1243,6 +1924,7 @@ exports[`<Tag /> with only text prop / children 2`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
 }
 
@@ -1266,6 +1948,7 @@ exports[`<Tag /> without props 1`] = `
   margin-right: 8px;
   padding: 4px 12px;
   background-color: #f2f2f2;
+  border: none;
   color: #4c4c4c;
 }
 

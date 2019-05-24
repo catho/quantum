@@ -18,7 +18,6 @@ describe('<Tag />', () => {
   it('with bold prop', () => testSnapshot({ bold: true }));
 
   describe('Skins', () => {
-    it('neutral', () => testSnapshot());
     it('primary', () => testSnapshot({ skin: 'primary' }));
     it('success', () => testSnapshot({ skin: 'success' }));
     it('warning', () => testSnapshot({ skin: 'warning' }));
@@ -39,6 +38,14 @@ describe('<Tag />', () => {
     it('error', () => testSnapshot({ skin: 'error', inverted: true }));
   });
 
+  describe('Stroked prop', () => {
+    it('neutral', () => testSnapshot({ stroked: true }));
+    it('primary', () => testSnapshot({ skin: 'primary', stroked: true }));
+    it('success', () => testSnapshot({ skin: 'success', stroked: true }));
+    it('warning', () => testSnapshot({ skin: 'warning', stroked: true }));
+    it('error', () => testSnapshot({ skin: 'error', stroked: true }));
+  });
+
   describe('onClose Prop', () => {
     it('is rendering well', () => {
       testSnapshot({ onClose: () => {} });
@@ -52,6 +59,12 @@ describe('<Tag />', () => {
       testSnapshot({ onClose: () => {}, skin: 'success', inverted: true });
       testSnapshot({ onClose: () => {}, skin: 'warning', inverted: true });
       testSnapshot({ onClose: () => {}, skin: 'error', inverted: true });
+
+      testSnapshot({ onClose: () => {}, stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'primary', stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'success', stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'warning', stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'error', stroked: true });
     });
 
     it('is called when close button is clicked', () => {

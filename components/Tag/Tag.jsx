@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Icon from '../Icon';
-import { components, spacing } from '../shared/theme';
+import { colors, components, spacing } from '../shared/theme';
 
 const _colors = ({
-  skin,
   inverted,
+  skin,
+  stroked,
   theme: {
     components: {
       tag: {
@@ -17,15 +18,22 @@ const _colors = ({
     },
   },
 }) => ({
-  background: inverted ? text : background,
-  text: inverted ? background : text,
+  background: inverted && !stroked ? text : background,
+  text: inverted && !stroked ? background : text,
 });
 
 const wrapperColors = props => {
   const { background, text } = _colors(props);
+  const {
+    stroked,
+    theme: {
+      colors: { neutral },
+    },
+  } = props;
 
   return css`
-    background-color: ${background};
+    background-color: ${stroked ? neutral[100] : background};
+    border: ${stroked ? `1px solid ${text}` : 'none'};
     color: ${text};
   `;
 };
@@ -117,12 +125,14 @@ Tag.propTypes = {
   onClose: PropTypes.func,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
+  stroked: PropTypes.bool,
   text: PropTypes.string,
   theme: PropTypes.shape({
-    spacing: PropTypes.object,
+    colors: PropTypes.object,
     components: {
       tag: PropTypes.object,
     },
+    spacing: PropTypes.object,
   }),
 };
 
@@ -133,12 +143,14 @@ Tag.defaultProps = {
   onClose: undefined,
   size: 'medium',
   skin: 'neutral',
+  stroked: false,
   text: 'Tag text',
   theme: {
-    spacing,
+    colors,
     components: {
       tag: components.tag,
     },
+    spacing,
   },
 };
 
