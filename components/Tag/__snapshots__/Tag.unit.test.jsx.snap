@@ -7,9 +7,9 @@ exports[`<Tag /> Sizes large 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  font-size: 18px;
   background-color: #f2f2f2;
   color: #4c4c4c;
+  font-size: 18px;
 }
 
 <div
@@ -54,11 +54,11 @@ exports[`<Tag /> Sizes small 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  font-size: 12px;
-  padding-top: 3px;
-  padding-bottom: 3px;
   background-color: #f2f2f2;
   color: #4c4c4c;
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 <div
@@ -215,8 +215,8 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  margin-left: 4px;
   padding: 0;
+  margin-left: 4px;
 }
 
 .c2 .c3 {
@@ -286,8 +286,8 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  margin-left: 4px;
   padding: 0;
+  margin-left: 4px;
 }
 
 .c2 .c3 {
@@ -362,8 +362,8 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  margin-left: 4px;
   padding: 0;
+  margin-left: 4px;
 }
 
 .c2 .c3 {
@@ -443,8 +443,8 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  margin-left: 4px;
   padding: 0;
+  margin-left: 4px;
 }
 
 .c2 .c3 {
@@ -529,8 +529,8 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
   border: none;
   cursor: pointer;
   height: 18px;
-  margin-left: 4px;
   padding: 0;
+  margin-left: 4px;
 }
 
 .c2 .c3 {

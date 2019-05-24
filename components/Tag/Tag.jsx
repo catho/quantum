@@ -2,20 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Icon from '../Icon';
-import { components } from '../shared/theme';
+import { components, spacing } from '../shared/theme';
 
-const sizes = {
-  small: `
-    font-size: 12px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-  `,
-  large: `
-    font-size: 18px;
-  `,
-};
-
-const _getColors = ({
+const _colors = ({
   skin,
   theme: {
     components: {
@@ -28,14 +17,31 @@ const _getColors = ({
   },
 }) => ({ background, text });
 
-const getWrapperColors = props => {
-  const { background, text } = _getColors(props);
+const wrapperColors = props => {
+  const { background, text } = _colors(props);
 
   return css`
     background-color: ${background};
     color: ${text};
   `;
 };
+
+const wrapperSize = ({
+  theme: {
+    spacing: { xxsmall },
+  },
+  size: propSize,
+}) =>
+  ({
+    small: `
+    font-size: 12px;
+    padding-top: ${xxsmall}px;
+    padding-bottom: ${xxsmall}px;
+  `,
+    large: `
+    font-size: 18px;
+  `,
+  }[propSize]);
 
 const Wrapper = styled.div`
   border-radius: 8px;
@@ -44,8 +50,8 @@ const Wrapper = styled.div`
   margin-right: 8px;
   padding: 4px 12px;
   ${({ bold }) => bold && `font-weight: bold;`}
-  ${({ size }) => sizes[size]}
-  ${getWrapperColors}
+  ${wrapperColors}
+  ${wrapperSize}
 `;
 
 const Content = styled.div`
@@ -57,13 +63,12 @@ const Content = styled.div`
   `}
 `;
 
-const iconSizes = {
-  small: '14px',
-  medium: '18px',
-  large: '20px',
-};
-
-const applyIconSize = ({ size }) => iconSizes[size];
+const iconSize = ({ size }) =>
+  ({
+    small: '14px',
+    medium: '18px',
+    large: '20px',
+  }[size]);
 
 const CloseIcon = styled(Icon)``;
 
@@ -71,13 +76,17 @@ const CloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  height: ${applyIconSize};
-  margin-left: 4px;
+  height: ${iconSize};
   padding: 0;
+  ${({
+    theme: {
+      spacing: { xxsmall },
+    },
+  }) => `margin-left: ${xxsmall}px;`}
 
   ${CloseIcon} {
-    font-size: ${applyIconSize};
-    color: ${props => _getColors(props).text};
+    font-size: ${iconSize};
+    color: ${props => _colors(props).text};
   }
 `;
 
@@ -105,6 +114,7 @@ Tag.propTypes = {
   skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   text: PropTypes.string,
   theme: PropTypes.shape({
+    spacing: PropTypes.object,
     components: {
       tag: PropTypes.object,
     },
@@ -119,6 +129,7 @@ Tag.defaultProps = {
   skin: 'neutral',
   text: 'Tag text',
   theme: {
+    spacing,
     components: {
       tag: components.tag,
     },
