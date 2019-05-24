@@ -31,6 +31,14 @@ describe('<Tag />', () => {
     it('large', () => testSnapshot({ size: 'large' }));
   });
 
+  describe('Inverted prop', () => {
+    it('neutral', () => testSnapshot({ inverted: true }));
+    it('primary', () => testSnapshot({ skin: 'primary', inverted: true }));
+    it('success', () => testSnapshot({ skin: 'success', inverted: true }));
+    it('warning', () => testSnapshot({ skin: 'warning', inverted: true }));
+    it('error', () => testSnapshot({ skin: 'error', inverted: true }));
+  });
+
   describe('onClose Prop', () => {
     it('is rendering well', () => {
       testSnapshot({ onClose: () => {} });
@@ -38,6 +46,12 @@ describe('<Tag />', () => {
       testSnapshot({ onClose: () => {}, skin: 'success' });
       testSnapshot({ onClose: () => {}, skin: 'warning' });
       testSnapshot({ onClose: () => {}, skin: 'error' });
+
+      testSnapshot({ onClose: () => {}, inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'primary', inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'success', inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'warning', inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'error', inverted: true });
     });
 
     it('is called when close button is clicked', () => {

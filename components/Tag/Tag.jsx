@@ -6,6 +6,7 @@ import { components, spacing } from '../shared/theme';
 
 const _colors = ({
   skin,
+  inverted,
   theme: {
     components: {
       tag: {
@@ -15,7 +16,10 @@ const _colors = ({
       },
     },
   },
-}) => ({ background, text });
+}) => ({
+  background: inverted ? text : background,
+  text: inverted ? background : text,
+});
 
 const wrapperColors = props => {
   const { background, text } = _colors(props);
@@ -108,6 +112,7 @@ const Tag = ({ children, text, onClose, ...rest }) => (
 Tag.propTypes = {
   bold: PropTypes.bool,
   children: PropTypes.string,
+  inverted: PropTypes.bool,
   /** A callback that is called when close button is clicked */
   onClose: PropTypes.func,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
@@ -124,6 +129,7 @@ Tag.propTypes = {
 Tag.defaultProps = {
   bold: false,
   children: '',
+  inverted: false,
   onClose: undefined,
   size: 'medium',
   skin: 'neutral',
