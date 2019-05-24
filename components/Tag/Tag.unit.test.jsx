@@ -2,9 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import Tag from './Tag';
-import Colors from '../Colors';
 
-const testSnapshot = props => {
+const testSnapshot = (props = {}) => {
   const propsList = Array.isArray(props) ? props : [props];
 
   propsList.forEach(p => {
@@ -19,19 +18,10 @@ describe('<Tag />', () => {
   it('with bold prop', () => testSnapshot({ bold: true }));
 
   describe('Skins', () => {
-    it('stroked', () => testSnapshot({ skin: 'stroked' }));
-    it('inverted', () => testSnapshot({ skin: 'inverted' }));
-    it('blue', () => testSnapshot({ skin: 'blue' }));
+    it('primary', () => testSnapshot({ skin: 'primary' }));
     it('success', () => testSnapshot({ skin: 'success' }));
     it('warning', () => testSnapshot({ skin: 'warning' }));
     it('error', () => testSnapshot({ skin: 'error' }));
-    it('blue-text', () => testSnapshot({ skin: 'blue-text' }));
-    it('default', () => {
-      testSnapshot({ skin: 'default' });
-
-      const tag = renderer.create(<Tag />).toJSON();
-      expect(tag).toHaveStyleRule('background-color', Colors.BLACK[100]);
-    });
   });
 
   describe('Sizes', () => {
@@ -40,16 +30,41 @@ describe('<Tag />', () => {
     it('large', () => testSnapshot({ size: 'large' }));
   });
 
+  describe('Inverted prop', () => {
+    it('neutral', () => testSnapshot({ inverted: true }));
+    it('primary', () => testSnapshot({ skin: 'primary', inverted: true }));
+    it('success', () => testSnapshot({ skin: 'success', inverted: true }));
+    it('warning', () => testSnapshot({ skin: 'warning', inverted: true }));
+    it('error', () => testSnapshot({ skin: 'error', inverted: true }));
+  });
+
+  describe('Stroked prop', () => {
+    it('neutral', () => testSnapshot({ stroked: true }));
+    it('primary', () => testSnapshot({ skin: 'primary', stroked: true }));
+    it('success', () => testSnapshot({ skin: 'success', stroked: true }));
+    it('warning', () => testSnapshot({ skin: 'warning', stroked: true }));
+    it('error', () => testSnapshot({ skin: 'error', stroked: true }));
+  });
+
   describe('onClose Prop', () => {
     it('is rendering well', () => {
       testSnapshot({ onClose: () => {} });
-      testSnapshot({ onClose: () => {}, skin: 'stroked' });
-      testSnapshot({ onClose: () => {}, skin: 'inverted' });
-      testSnapshot({ onClose: () => {}, skin: 'blue' });
+      testSnapshot({ onClose: () => {}, skin: 'primary' });
       testSnapshot({ onClose: () => {}, skin: 'success' });
       testSnapshot({ onClose: () => {}, skin: 'warning' });
       testSnapshot({ onClose: () => {}, skin: 'error' });
-      testSnapshot({ onClose: () => {}, skin: 'blue-text' });
+
+      testSnapshot({ onClose: () => {}, inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'primary', inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'success', inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'warning', inverted: true });
+      testSnapshot({ onClose: () => {}, skin: 'error', inverted: true });
+
+      testSnapshot({ onClose: () => {}, stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'primary', stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'success', stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'warning', stroked: true });
+      testSnapshot({ onClose: () => {}, skin: 'error', stroked: true });
     });
 
     it('is called when close button is clicked', () => {

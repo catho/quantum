@@ -1,60 +1,59 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Colors from '../Colors';
+import styled, { css } from 'styled-components';
 import Icon from '../Icon';
+import { colors, components, spacing } from '../shared/theme';
 
-const skinFontColors = {
-  inverted: Colors.WHITE,
-  blue: Colors.BLUE[500],
-  success: Colors.SUCCESS[900],
-  warning: Colors.WARNING[900],
-  error: Colors.ERROR[900],
-  'blue-text': Colors.BLUE[500],
+const _colors = ({
+  inverted,
+  skin,
+  stroked,
+  theme: {
+    components: {
+      tag: {
+        skins: {
+          [skin]: { background, text },
+        },
+      },
+    },
+  },
+}) => ({
+  background: inverted && !stroked ? text : background,
+  text: inverted && !stroked ? background : text,
+});
+
+const wrapperColors = props => {
+  const { background, text } = _colors(props);
+  const {
+    stroked,
+    theme: {
+      colors: { neutral },
+    },
+  } = props;
+
+  return css`
+    background-color: ${stroked ? neutral[100] : background};
+    border: ${stroked ? `1px solid ${text}` : 'none'};
+    color: ${text};
+  `;
 };
 
-const skins = {
-  default: `background-color: ${Colors.BLACK[100]};`,
-  stroked: `
-    border: 1px solid;
-    background: none;
-  `,
-  inverted: `
-    color: ${skinFontColors.inverted}
-    background-color: ${Colors.BLACK[400]};
-  `,
-  blue: `
-    color: ${skinFontColors.blue}
-    background-color: ${Colors.BLUE[200]};
-  `,
-  success: `
-    color: ${skinFontColors.success}
-    background-color: ${Colors.SUCCESS[200]};
-  `,
-  warning: `
-    color: ${skinFontColors.warning}
-    background-color: ${Colors.WARNING[200]};
-  `,
-  error: `
-    color: ${skinFontColors.error}
-    background-color: ${Colors.ERROR[200]};
-  `,
-  'blue-text': `
-    color: ${skinFontColors['blue-text']}
-    background-color: ${Colors.BLACK[100]};
-  `,
-};
-
-const sizes = {
-  small: `
+const wrapperSize = ({
+  theme: {
+    spacing: { xxsmall },
+  },
+  size: propSize,
+}) =>
+  ({
+    small: `
     font-size: 12px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: ${xxsmall}px;
+    padding-bottom: ${xxsmall}px;
   `,
-  large: `
+    large: `
     font-size: 18px;
   `,
-};
+  }[propSize]);
 
 const Wrapper = styled.div`
   border-radius: 8px;
@@ -63,8 +62,8 @@ const Wrapper = styled.div`
   margin-right: 8px;
   padding: 4px 12px;
   ${({ bold }) => bold && `font-weight: bold;`}
-  ${({ skin }) => skins[skin]}
-  ${({ size }) => sizes[size]}
+  ${wrapperColors}
+  ${wrapperSize}
 `;
 
 const Content = styled.div`
@@ -76,13 +75,12 @@ const Content = styled.div`
   `}
 `;
 
-const iconSizes = {
-  small: '14px',
-  medium: '18px',
-  large: '20px',
-};
-
-const applyIconSize = ({ size }) => iconSizes[size];
+const iconSize = ({ size }) =>
+  ({
+    small: '14px',
+    medium: '18px',
+    large: '20px',
+  }[size]);
 
 const CloseIcon = styled(Icon)``;
 
@@ -90,13 +88,17 @@ const CloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  height: ${applyIconSize};
-  margin-left: 4px;
+  height: ${iconSize};
   padding: 0;
+  ${({
+    theme: {
+      spacing: { xxsmall },
+    },
+  }) => `margin-left: ${xxsmall}px;`}
 
   ${CloseIcon} {
-    font-size: ${applyIconSize};
-    color: ${({ skin }) => skinFontColors[skin]};
+    font-size: ${iconSize};
+    color: ${props => _colors(props).text};
   }
 `;
 
@@ -118,29 +120,38 @@ const Tag = ({ children, text, onClose, ...rest }) => (
 Tag.propTypes = {
   bold: PropTypes.bool,
   children: PropTypes.string,
+  inverted: PropTypes.bool,
   /** A callback that is called when close button is clicked */
   onClose: PropTypes.func,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  skin: PropTypes.oneOf([
-    'default',
-    'stroked',
-    'inverted',
-    'blue',
-    'success',
-    'warning',
-    'error',
-    'blue-text',
-  ]),
+  skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
+  stroked: PropTypes.bool,
   text: PropTypes.string,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    components: PropTypes.shape({
+      tag: PropTypes.object,
+    }),
+    spacing: PropTypes.object,
+  }),
 };
 
 Tag.defaultProps = {
   bold: false,
-  children: '',
-  onClose: undefined,
-  size: 'medium',
-  skin: 'default',
+  inverted: false,
+  stroked: false,
   text: 'Tag text',
+  children: '',
+  size: 'medium',
+  skin: 'neutral',
+  onClose: undefined,
+  theme: {
+    colors,
+    components: {
+      tag: components.tag,
+    },
+    spacing,
+  },
 };
 
 export default Tag;

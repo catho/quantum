@@ -111,12 +111,10 @@ Badge.propTypes = {
   /** Swap background and text color */
   inverted: PropTypes.bool,
   theme: PropTypes.shape({
-    spacing: {
+    spacing: PropTypes.object,
+    components: PropTypes.shape({
       badge: PropTypes.object,
-    },
-    components: {
-      badge: PropTypes.object,
-    },
+    }),
   }),
 };
 

@@ -22,7 +22,7 @@ const breakpoints = {
 
 const colors = {
   primary: {
-    100: '#b8ccf1',
+    100: '#e5edfc',
     300: '#5a88de',
     500: '#1355d0',
     700: '#0e44c4',
@@ -36,25 +36,25 @@ const colors = {
     900: '#c8002e',
   },
   success: {
-    100: '#d8f2bc',
+    100: '#edfadf',
     300: '#a5e064',
     500: '#7ed321',
     700: '#6bc818',
-    900: '#4eb70b',
+    900: '#3c6510',
   },
   warning: {
-    100: '#fbdeb3',
+    100: '#ffefd6',
     300: '#f5b24d',
     500: '#f09100',
     700: '#ec7e00',
-    900: '#e56200',
+    900: '#a36300',
   },
   error: {
-    100: '#ffc0ca',
+    100: '#ffe5e9',
     300: '#ff6c82',
     500: '#ff2d4d',
     700: '#ff223d',
-    900: '#ff1125',
+    900: '#ac001a',
   },
   neutral: {
     100: '#f2f2f2',
@@ -97,6 +97,31 @@ const components = {
       success: {
         background: colors.success[100],
         text: colors.success[900],
+      },
+    },
+  },
+
+  tag: {
+    skins: {
+      neutral: {
+        background: colors.neutral[100],
+        text: colors.neutral[700],
+      },
+      primary: {
+        background: colors.primary[100],
+        text: colors.primary[500],
+      },
+      success: {
+        background: colors.success[100],
+        text: colors.success[900],
+      },
+      warning: {
+        background: colors.warning[100],
+        text: colors.warning[900],
+      },
+      error: {
+        background: colors.error[100],
+        text: colors.error[900],
       },
     },
   },
