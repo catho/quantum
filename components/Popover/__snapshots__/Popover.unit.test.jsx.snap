@@ -1407,10 +1407,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
-                    inverted={false}
                     onClick={[Function]}
-                    onClose={[Function]}
-                    skin="neutral"
                     theme={
                       Object {
                         "components": Object {
@@ -1448,7 +1445,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       }
                     }
-                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -1494,10 +1490,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
-                      inverted={false}
                       onClick={[Function]}
-                      onClose={[Function]}
-                      skin="neutral"
                       theme={
                         Object {
                           "components": Object {
@@ -1535,7 +1528,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                         }
                       }
-                      visible={false}
                     >
                       <Button
                         center={false}
@@ -1543,11 +1535,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
-                        inverted={false}
                         onClick={[Function]}
-                        onClose={[Function]}
                         size="medium"
-                        skin="neutral"
+                        skin="primary"
                         theme={
                           Object {
                             "components": Object {
@@ -1586,18 +1576,15 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           }
                         }
                         type="button"
-                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
-                          inverted={false}
                           onClick={[Function]}
-                          onClose={[Function]}
                           size="medium"
-                          skin="neutral"
+                          skin="primary"
                           theme={
                             Object {
                               "components": Object {
@@ -1636,7 +1623,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                           type="button"
-                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -1691,11 +1677,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
-                            inverted={false}
                             onClick={[Function]}
-                            onClose={[Function]}
                             size="medium"
-                            skin="neutral"
+                            skin="primary"
                             theme={
                               Object {
                                 "components": Object {
@@ -1734,13 +1718,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               }
                             }
                             type="button"
-                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
-                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -2464,10 +2446,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
-                    inverted={false}
                     onClick={[Function]}
-                    onClose={[Function]}
-                    skin="success"
                     theme={
                       Object {
                         "components": Object {
@@ -2505,7 +2484,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       }
                     }
-                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -2551,10 +2529,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
-                      inverted={false}
                       onClick={[Function]}
-                      onClose={[Function]}
-                      skin="success"
                       theme={
                         Object {
                           "components": Object {
@@ -2592,7 +2567,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                         }
                       }
-                      visible={false}
                     >
                       <Button
                         center={false}
@@ -2600,11 +2574,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
-                        inverted={false}
                         onClick={[Function]}
-                        onClose={[Function]}
                         size="medium"
-                        skin="success"
+                        skin="primary"
                         theme={
                           Object {
                             "components": Object {
@@ -2643,18 +2615,15 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           }
                         }
                         type="button"
-                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
-                          inverted={false}
                           onClick={[Function]}
-                          onClose={[Function]}
                           size="medium"
-                          skin="success"
+                          skin="primary"
                           theme={
                             Object {
                               "components": Object {
@@ -2693,7 +2662,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                           type="button"
-                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -2748,11 +2716,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
-                            inverted={false}
                             onClick={[Function]}
-                            onClose={[Function]}
                             size="medium"
-                            skin="success"
+                            skin="primary"
                             theme={
                               Object {
                                 "components": Object {
@@ -2791,13 +2757,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               }
                             }
                             type="button"
-                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
-                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -3521,10 +3485,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
-                    inverted={false}
                     onClick={[Function]}
-                    onClose={[Function]}
-                    skin="warning"
                     theme={
                       Object {
                         "components": Object {
@@ -3562,7 +3523,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       }
                     }
-                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -3608,10 +3568,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
-                      inverted={false}
                       onClick={[Function]}
-                      onClose={[Function]}
-                      skin="warning"
                       theme={
                         Object {
                           "components": Object {
@@ -3649,7 +3606,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                         }
                       }
-                      visible={false}
                     >
                       <Button
                         center={false}
@@ -3657,11 +3613,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
-                        inverted={false}
                         onClick={[Function]}
-                        onClose={[Function]}
                         size="medium"
-                        skin="warning"
+                        skin="primary"
                         theme={
                           Object {
                             "components": Object {
@@ -3700,18 +3654,15 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           }
                         }
                         type="button"
-                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
-                          inverted={false}
                           onClick={[Function]}
-                          onClose={[Function]}
                           size="medium"
-                          skin="warning"
+                          skin="primary"
                           theme={
                             Object {
                               "components": Object {
@@ -3750,7 +3701,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                           type="button"
-                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -3805,11 +3755,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
-                            inverted={false}
                             onClick={[Function]}
-                            onClose={[Function]}
                             size="medium"
-                            skin="warning"
+                            skin="primary"
                             theme={
                               Object {
                                 "components": Object {
@@ -3848,13 +3796,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               }
                             }
                             type="button"
-                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
-                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -4578,10 +4524,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
-                    inverted={false}
                     onClick={[Function]}
-                    onClose={[Function]}
-                    skin="error"
                     theme={
                       Object {
                         "components": Object {
@@ -4619,7 +4562,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       }
                     }
-                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -4665,10 +4607,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
-                      inverted={false}
                       onClick={[Function]}
-                      onClose={[Function]}
-                      skin="error"
                       theme={
                         Object {
                           "components": Object {
@@ -4706,7 +4645,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                         }
                       }
-                      visible={false}
                     >
                       <Button
                         center={false}
@@ -4714,11 +4652,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
-                        inverted={false}
                         onClick={[Function]}
-                        onClose={[Function]}
                         size="medium"
-                        skin="error"
+                        skin="primary"
                         theme={
                           Object {
                             "components": Object {
@@ -4757,18 +4693,15 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           }
                         }
                         type="button"
-                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
-                          inverted={false}
                           onClick={[Function]}
-                          onClose={[Function]}
                           size="medium"
-                          skin="error"
+                          skin="primary"
                           theme={
                             Object {
                               "components": Object {
@@ -4807,7 +4740,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                           type="button"
-                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -4862,11 +4794,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
-                            inverted={false}
                             onClick={[Function]}
-                            onClose={[Function]}
                             size="medium"
-                            skin="error"
+                            skin="primary"
                             theme={
                               Object {
                                 "components": Object {
@@ -4905,13 +4835,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               }
                             }
                             type="button"
-                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
-                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -5635,10 +5563,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
-                    inverted={false}
                     onClick={[Function]}
-                    onClose={[Function]}
-                    skin="neutral"
                     theme={
                       Object {
                         "components": Object {
@@ -5676,7 +5601,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       }
                     }
-                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -5722,10 +5646,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
-                      inverted={false}
                       onClick={[Function]}
-                      onClose={[Function]}
-                      skin="neutral"
                       theme={
                         Object {
                           "components": Object {
@@ -5763,7 +5684,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                         }
                       }
-                      visible={false}
                     >
                       <Button
                         center={false}
@@ -5771,11 +5691,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
-                        inverted={false}
                         onClick={[Function]}
-                        onClose={[Function]}
                         size="medium"
-                        skin="neutral"
+                        skin="primary"
                         theme={
                           Object {
                             "components": Object {
@@ -5814,18 +5732,15 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           }
                         }
                         type="button"
-                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
-                          inverted={false}
                           onClick={[Function]}
-                          onClose={[Function]}
                           size="medium"
-                          skin="neutral"
+                          skin="primary"
                           theme={
                             Object {
                               "components": Object {
@@ -5864,7 +5779,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                           type="button"
-                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -5919,11 +5833,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
-                            inverted={false}
                             onClick={[Function]}
-                            onClose={[Function]}
                             size="medium"
-                            skin="neutral"
+                            skin="primary"
                             theme={
                               Object {
                                 "components": Object {
@@ -5962,13 +5874,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               }
                             }
                             type="button"
-                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
-                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -6686,10 +6596,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
-                    inverted={false}
                     onClick={[Function]}
-                    onClose={[Function]}
-                    skin="neutral"
                     theme={
                       Object {
                         "components": Object {
@@ -6727,7 +6634,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       }
                     }
-                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -6773,10 +6679,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
-                      inverted={false}
                       onClick={[Function]}
-                      onClose={[Function]}
-                      skin="neutral"
                       theme={
                         Object {
                           "components": Object {
@@ -6814,7 +6717,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                         }
                       }
-                      visible={false}
                     >
                       <Button
                         center={false}
@@ -6822,11 +6724,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
-                        inverted={false}
                         onClick={[Function]}
-                        onClose={[Function]}
                         size="medium"
-                        skin="neutral"
+                        skin="primary"
                         theme={
                           Object {
                             "components": Object {
@@ -6865,18 +6765,15 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           }
                         }
                         type="button"
-                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
-                          inverted={false}
                           onClick={[Function]}
-                          onClose={[Function]}
                           size="medium"
-                          skin="neutral"
+                          skin="primary"
                           theme={
                             Object {
                               "components": Object {
@@ -6915,7 +6812,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                           type="button"
-                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -6970,11 +6866,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
-                            inverted={false}
                             onClick={[Function]}
-                            onClose={[Function]}
                             size="medium"
-                            skin="neutral"
+                            skin="primary"
                             theme={
                               Object {
                                 "components": Object {
@@ -7013,13 +6907,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               }
                             }
                             type="button"
-                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
-                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -7737,10 +7629,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
-                    inverted={false}
                     onClick={[Function]}
-                    onClose={[Function]}
-                    skin="neutral"
                     theme={
                       Object {
                         "components": Object {
@@ -7778,7 +7667,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       }
                     }
-                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -7824,10 +7712,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
-                      inverted={false}
                       onClick={[Function]}
-                      onClose={[Function]}
-                      skin="neutral"
                       theme={
                         Object {
                           "components": Object {
@@ -7865,7 +7750,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                         }
                       }
-                      visible={false}
                     >
                       <Button
                         center={false}
@@ -7873,11 +7757,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
-                        inverted={false}
                         onClick={[Function]}
-                        onClose={[Function]}
                         size="medium"
-                        skin="neutral"
+                        skin="primary"
                         theme={
                           Object {
                             "components": Object {
@@ -7916,18 +7798,15 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           }
                         }
                         type="button"
-                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
-                          inverted={false}
                           onClick={[Function]}
-                          onClose={[Function]}
                           size="medium"
-                          skin="neutral"
+                          skin="primary"
                           theme={
                             Object {
                               "components": Object {
@@ -7966,7 +7845,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                           type="button"
-                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -8021,11 +7899,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
-                            inverted={false}
                             onClick={[Function]}
-                            onClose={[Function]}
                             size="medium"
-                            skin="neutral"
+                            skin="primary"
                             theme={
                               Object {
                                 "components": Object {
@@ -8064,13 +7940,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               }
                             }
                             type="button"
-                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
-                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >

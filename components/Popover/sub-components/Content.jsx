@@ -96,10 +96,11 @@ class Content extends Component {
   }
 
   render() {
-    const { placement, children, onPopoverClose, ...rest } = this.props;
+    const { placement, children, onPopoverClose, theme, ...rest } = this.props;
 
     return ReactDOM.createPortal(
       <PopoverContent
+        theme={theme}
         placement={placement}
         ref={element => {
           this.innerContentRef = element;
@@ -107,7 +108,7 @@ class Content extends Component {
         {...rest}
       >
         <PopoverChildren>{children}</PopoverChildren>
-        <CloseButton {...rest} onClick={onPopoverClose} />
+        <CloseButton theme={theme} onClick={onPopoverClose} />
       </PopoverContent>,
       this.wrapper,
     );
