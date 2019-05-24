@@ -34,11 +34,11 @@ const TabExample = (
         <Title as="h2">With children</Title>
         <Example
           component={
-            <Badge number={10} skin="blue">
+            <Badge number={10} skin="primary">
               <Button skin="action" size="large" />
             </Badge>
           }
-          code={`<Badge number={10} skin="blue">
+          code={`<Badge number={10} skin="primary">
   <Button skin="action" size="large"/>
 </Badge>`}
         />
@@ -54,7 +54,7 @@ const TabExample = (
                 color: Colors.WHITE,
               }}
             >
-              <Badge number={10} skin="white" />
+              <Badge number={10} skin="primary" inverted />
               This is a badge
             </div>
           }
