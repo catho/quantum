@@ -1,4 +1,4 @@
-export default (hex, opacity = 1) => {
+const hexToRgba = (hex, opacity = 1) => {
   const _h = hex.replace('#', '');
 
   const _shortened = hex.length < 5;
@@ -10,3 +10,5 @@ export default (hex, opacity = 1) => {
 
   return `rgba(${_p(0)},${_p(_step)},${_p(_bIndex)},${opacity})`;
 };
+
+export default hexToRgba;
