@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import placementConfig from './options';
-import { colors, spacing, baseFontSize } from '../shared/theme';
+import {
+  colors,
+  spacing,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 
 const Tip = styled.div`
   border-radius: 4px;
-  font-size: ${baseFontSize}px;
   font-weight: bold;
   opacity: ${({ visible }) => (visible ? '1' : '0')};
   position: absolute;
@@ -19,11 +22,13 @@ const Tip = styled.div`
     theme: {
       colors: { neutral },
       spacing: { xxsmall, xsmall },
+      baseFontSize,
     },
   }) => `
     background-color: ${neutral[700]};
     border-color: ${neutral[700]};
     color: ${neutral[100]};
+    font-size: ${baseFontSize}px;
     padding: ${xxsmall}px ${xsmall}px;
   `}
 
@@ -111,6 +116,7 @@ Tooltip.defaultProps = {
   theme: {
     spacing,
     colors,
+    baseFontSize: defaultBaseFontSize,
   },
 };
 
