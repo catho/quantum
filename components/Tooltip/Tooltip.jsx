@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import placementConfig from './options';
-import { colors, spacing } from '../shared/theme';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 
 const Tip = styled.div`
   border-radius: 4px;
-  font-size: 16px;
+  font-size: ${baseFontSize}px;
   font-weight: bold;
   opacity: ${({ visible }) => (visible ? '1' : '0')};
   position: absolute;
