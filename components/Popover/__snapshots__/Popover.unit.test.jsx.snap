@@ -945,7 +945,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -1074,6 +1074,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                 },
               },
+              "spacing": Object {
+                "large": 24,
+                "medium": 16,
+                "small": 12,
+                "xlarge": 32,
+                "xsmall": 8,
+                "xxlarge": 40,
+                "xxsmall": 4,
+                "xxxlarge": 48,
+                "xxxsmall": 2,
+              },
             }
           }
           visible={false}
@@ -1191,7 +1202,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -1271,6 +1282,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       },
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
               visible={false}
@@ -1287,7 +1309,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "rules": Array [
                         "box-shadow:0 2px 4px 0 ",
                         "rgba(128, 128, 128, 0.5)",
-                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
+                        [Function],
+                        ";position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
                         [Function],
                         ";}",
                         [Function],
@@ -1332,6 +1356,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
                 visible={false}
@@ -1372,7 +1407,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    onClose={[Function]}
+                    skin="neutral"
+                    theme={
+                      Object {
+                        "components": Object {
+                          "popover": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
+                        },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      }
+                    }
+                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -1385,7 +1461,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           ],
                           "componentStyle": ComponentStyle {
                             "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "border-radius:50%;border:none;color:",
@@ -1399,7 +1475,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              "display:inherit;height:auto;",
+                              [Function],
+                              ";opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -1416,7 +1494,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      onClose={[Function]}
+                      skin="neutral"
+                      theme={
+                        Object {
+                          "components": Object {
+                            "popover": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
+                                },
+                              },
+                            },
+                          },
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                      visible={false}
                     >
                       <Button
                         center={false}
@@ -1424,20 +1543,100 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
+                        onClose={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
+                        theme={
+                          Object {
+                            "components": Object {
+                              "popover": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "background": "#ffe5e9",
+                                    "text": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "background": "#f2f2f2",
+                                    "text": "#4c4c4c",
+                                  },
+                                  "success": Object {
+                                    "background": "#edfadf",
+                                    "text": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "background": "#ffefd6",
+                                    "text": "#a36300",
+                                  },
+                                },
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                         type="button"
+                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
+                          onClose={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
+                          theme={
+                            Object {
+                              "components": Object {
+                                "popover": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "background": "#ffe5e9",
+                                      "text": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "background": "#f2f2f2",
+                                      "text": "#4c4c4c",
+                                    },
+                                    "success": Object {
+                                      "background": "#edfadf",
+                                      "text": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "background": "#ffefd6",
+                                      "text": "#a36300",
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                           type="button"
+                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -1492,15 +1691,56 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
+                            onClose={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
+                            theme={
+                              Object {
+                                "components": Object {
+                                  "popover": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "background": "#ffe5e9",
+                                        "text": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "background": "#f2f2f2",
+                                        "text": "#4c4c4c",
+                                      },
+                                      "success": Object {
+                                        "background": "#edfadf",
+                                        "text": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "background": "#ffefd6",
+                                        "text": "#a36300",
+                                      },
+                                    },
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
+                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
+                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -1762,7 +2002,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -1891,6 +2131,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                 },
               },
+              "spacing": Object {
+                "large": 24,
+                "medium": 16,
+                "small": 12,
+                "xlarge": 32,
+                "xsmall": 8,
+                "xxlarge": 40,
+                "xxsmall": 4,
+                "xxxlarge": 48,
+                "xxxsmall": 2,
+              },
             }
           }
           visible={false}
@@ -2008,7 +2259,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -2088,6 +2339,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       },
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
               visible={false}
@@ -2104,7 +2366,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "rules": Array [
                         "box-shadow:0 2px 4px 0 ",
                         "rgba(128, 128, 128, 0.5)",
-                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
+                        [Function],
+                        ";position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
                         [Function],
                         ";}",
                         [Function],
@@ -2149,6 +2413,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
                 visible={false}
@@ -2189,7 +2464,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    onClose={[Function]}
+                    skin="success"
+                    theme={
+                      Object {
+                        "components": Object {
+                          "popover": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
+                        },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      }
+                    }
+                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -2202,7 +2518,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           ],
                           "componentStyle": ComponentStyle {
                             "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "border-radius:50%;border:none;color:",
@@ -2216,7 +2532,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              "display:inherit;height:auto;",
+                              [Function],
+                              ";opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -2233,7 +2551,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      onClose={[Function]}
+                      skin="success"
+                      theme={
+                        Object {
+                          "components": Object {
+                            "popover": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
+                                },
+                              },
+                            },
+                          },
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                      visible={false}
                     >
                       <Button
                         center={false}
@@ -2241,20 +2600,100 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
+                        onClose={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="success"
+                        theme={
+                          Object {
+                            "components": Object {
+                              "popover": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "background": "#ffe5e9",
+                                    "text": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "background": "#f2f2f2",
+                                    "text": "#4c4c4c",
+                                  },
+                                  "success": Object {
+                                    "background": "#edfadf",
+                                    "text": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "background": "#ffefd6",
+                                    "text": "#a36300",
+                                  },
+                                },
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                         type="button"
+                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
+                          onClose={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="success"
+                          theme={
+                            Object {
+                              "components": Object {
+                                "popover": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "background": "#ffe5e9",
+                                      "text": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "background": "#f2f2f2",
+                                      "text": "#4c4c4c",
+                                    },
+                                    "success": Object {
+                                      "background": "#edfadf",
+                                      "text": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "background": "#ffefd6",
+                                      "text": "#a36300",
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                           type="button"
+                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -2309,15 +2748,56 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
+                            onClose={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="success"
+                            theme={
+                              Object {
+                                "components": Object {
+                                  "popover": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "background": "#ffe5e9",
+                                        "text": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "background": "#f2f2f2",
+                                        "text": "#4c4c4c",
+                                      },
+                                      "success": Object {
+                                        "background": "#edfadf",
+                                        "text": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "background": "#ffefd6",
+                                        "text": "#a36300",
+                                      },
+                                    },
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
+                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
+                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -2579,7 +3059,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -2708,6 +3188,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                 },
               },
+              "spacing": Object {
+                "large": 24,
+                "medium": 16,
+                "small": 12,
+                "xlarge": 32,
+                "xsmall": 8,
+                "xxlarge": 40,
+                "xxsmall": 4,
+                "xxxlarge": 48,
+                "xxxsmall": 2,
+              },
             }
           }
           visible={false}
@@ -2825,7 +3316,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -2905,6 +3396,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       },
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
               visible={false}
@@ -2921,7 +3423,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "rules": Array [
                         "box-shadow:0 2px 4px 0 ",
                         "rgba(128, 128, 128, 0.5)",
-                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
+                        [Function],
+                        ";position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
                         [Function],
                         ";}",
                         [Function],
@@ -2966,6 +3470,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
                 visible={false}
@@ -3006,7 +3521,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    onClose={[Function]}
+                    skin="warning"
+                    theme={
+                      Object {
+                        "components": Object {
+                          "popover": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
+                        },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      }
+                    }
+                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -3019,7 +3575,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           ],
                           "componentStyle": ComponentStyle {
                             "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "border-radius:50%;border:none;color:",
@@ -3033,7 +3589,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              "display:inherit;height:auto;",
+                              [Function],
+                              ";opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -3050,7 +3608,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      onClose={[Function]}
+                      skin="warning"
+                      theme={
+                        Object {
+                          "components": Object {
+                            "popover": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
+                                },
+                              },
+                            },
+                          },
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                      visible={false}
                     >
                       <Button
                         center={false}
@@ -3058,20 +3657,100 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
+                        onClose={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="warning"
+                        theme={
+                          Object {
+                            "components": Object {
+                              "popover": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "background": "#ffe5e9",
+                                    "text": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "background": "#f2f2f2",
+                                    "text": "#4c4c4c",
+                                  },
+                                  "success": Object {
+                                    "background": "#edfadf",
+                                    "text": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "background": "#ffefd6",
+                                    "text": "#a36300",
+                                  },
+                                },
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                         type="button"
+                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
+                          onClose={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="warning"
+                          theme={
+                            Object {
+                              "components": Object {
+                                "popover": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "background": "#ffe5e9",
+                                      "text": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "background": "#f2f2f2",
+                                      "text": "#4c4c4c",
+                                    },
+                                    "success": Object {
+                                      "background": "#edfadf",
+                                      "text": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "background": "#ffefd6",
+                                      "text": "#a36300",
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                           type="button"
+                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -3126,15 +3805,56 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
+                            onClose={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="warning"
+                            theme={
+                              Object {
+                                "components": Object {
+                                  "popover": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "background": "#ffe5e9",
+                                        "text": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "background": "#f2f2f2",
+                                        "text": "#4c4c4c",
+                                      },
+                                      "success": Object {
+                                        "background": "#edfadf",
+                                        "text": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "background": "#ffefd6",
+                                        "text": "#a36300",
+                                      },
+                                    },
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
+                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
+                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -3396,7 +4116,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -3525,6 +4245,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                 },
               },
+              "spacing": Object {
+                "large": 24,
+                "medium": 16,
+                "small": 12,
+                "xlarge": 32,
+                "xsmall": 8,
+                "xxlarge": 40,
+                "xxsmall": 4,
+                "xxxlarge": 48,
+                "xxxsmall": 2,
+              },
             }
           }
           visible={false}
@@ -3642,7 +4373,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -3722,6 +4453,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       },
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
               visible={false}
@@ -3738,7 +4480,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "rules": Array [
                         "box-shadow:0 2px 4px 0 ",
                         "rgba(128, 128, 128, 0.5)",
-                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
+                        [Function],
+                        ";position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
                         [Function],
                         ";}",
                         [Function],
@@ -3783,6 +4527,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
                 visible={false}
@@ -3823,7 +4578,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    onClose={[Function]}
+                    skin="error"
+                    theme={
+                      Object {
+                        "components": Object {
+                          "popover": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
+                        },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      }
+                    }
+                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -3836,7 +4632,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           ],
                           "componentStyle": ComponentStyle {
                             "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "border-radius:50%;border:none;color:",
@@ -3850,7 +4646,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              "display:inherit;height:auto;",
+                              [Function],
+                              ";opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -3867,7 +4665,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      onClose={[Function]}
+                      skin="error"
+                      theme={
+                        Object {
+                          "components": Object {
+                            "popover": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
+                                },
+                              },
+                            },
+                          },
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                      visible={false}
                     >
                       <Button
                         center={false}
@@ -3875,20 +4714,100 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
+                        onClose={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="error"
+                        theme={
+                          Object {
+                            "components": Object {
+                              "popover": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "background": "#ffe5e9",
+                                    "text": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "background": "#f2f2f2",
+                                    "text": "#4c4c4c",
+                                  },
+                                  "success": Object {
+                                    "background": "#edfadf",
+                                    "text": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "background": "#ffefd6",
+                                    "text": "#a36300",
+                                  },
+                                },
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                         type="button"
+                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
+                          onClose={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="error"
+                          theme={
+                            Object {
+                              "components": Object {
+                                "popover": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "background": "#ffe5e9",
+                                      "text": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "background": "#f2f2f2",
+                                      "text": "#4c4c4c",
+                                    },
+                                    "success": Object {
+                                      "background": "#edfadf",
+                                      "text": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "background": "#ffefd6",
+                                      "text": "#a36300",
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                           type="button"
+                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -3943,15 +4862,56 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
+                            onClose={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="error"
+                            theme={
+                              Object {
+                                "components": Object {
+                                  "popover": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "background": "#ffe5e9",
+                                        "text": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "background": "#f2f2f2",
+                                        "text": "#4c4c4c",
+                                      },
+                                      "success": Object {
+                                        "background": "#edfadf",
+                                        "text": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "background": "#ffefd6",
+                                        "text": "#a36300",
+                                      },
+                                    },
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
+                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
+                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -4213,7 +5173,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -4342,6 +5302,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                 },
               },
+              "spacing": Object {
+                "large": 24,
+                "medium": 16,
+                "small": 12,
+                "xlarge": 32,
+                "xsmall": 8,
+                "xxlarge": 40,
+                "xxsmall": 4,
+                "xxxlarge": 48,
+                "xxxsmall": 2,
+              },
             }
           }
           visible={false}
@@ -4459,7 +5430,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -4539,6 +5510,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       },
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
               visible={false}
@@ -4555,7 +5537,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "rules": Array [
                         "box-shadow:0 2px 4px 0 ",
                         "rgba(128, 128, 128, 0.5)",
-                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
+                        [Function],
+                        ";position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
                         [Function],
                         ";}",
                         [Function],
@@ -4600,6 +5584,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
                 visible={false}
@@ -4640,7 +5635,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    onClose={[Function]}
+                    skin="neutral"
+                    theme={
+                      Object {
+                        "components": Object {
+                          "popover": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
+                        },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      }
+                    }
+                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -4653,7 +5689,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           ],
                           "componentStyle": ComponentStyle {
                             "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "border-radius:50%;border:none;color:",
@@ -4667,7 +5703,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              "display:inherit;height:auto;",
+                              [Function],
+                              ";opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -4684,7 +5722,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      onClose={[Function]}
+                      skin="neutral"
+                      theme={
+                        Object {
+                          "components": Object {
+                            "popover": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
+                                },
+                              },
+                            },
+                          },
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                      visible={false}
                     >
                       <Button
                         center={false}
@@ -4692,20 +5771,100 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
+                        onClose={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
+                        theme={
+                          Object {
+                            "components": Object {
+                              "popover": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "background": "#ffe5e9",
+                                    "text": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "background": "#f2f2f2",
+                                    "text": "#4c4c4c",
+                                  },
+                                  "success": Object {
+                                    "background": "#edfadf",
+                                    "text": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "background": "#ffefd6",
+                                    "text": "#a36300",
+                                  },
+                                },
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                         type="button"
+                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
+                          onClose={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
+                          theme={
+                            Object {
+                              "components": Object {
+                                "popover": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "background": "#ffe5e9",
+                                      "text": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "background": "#f2f2f2",
+                                      "text": "#4c4c4c",
+                                    },
+                                    "success": Object {
+                                      "background": "#edfadf",
+                                      "text": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "background": "#ffefd6",
+                                      "text": "#a36300",
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                           type="button"
+                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -4760,15 +5919,56 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
+                            onClose={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
+                            theme={
+                              Object {
+                                "components": Object {
+                                  "popover": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "background": "#ffe5e9",
+                                        "text": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "background": "#f2f2f2",
+                                        "text": "#4c4c4c",
+                                      },
+                                      "success": Object {
+                                        "background": "#edfadf",
+                                        "text": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "background": "#ffefd6",
+                                        "text": "#a36300",
+                                      },
+                                    },
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
+                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
+                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -5027,7 +6227,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -5156,6 +6356,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                 },
               },
+              "spacing": Object {
+                "large": 24,
+                "medium": 16,
+                "small": 12,
+                "xlarge": 32,
+                "xsmall": 8,
+                "xxlarge": 40,
+                "xxsmall": 4,
+                "xxxlarge": 48,
+                "xxxsmall": 2,
+              },
             }
           }
           visible={false}
@@ -5270,7 +6481,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -5350,6 +6561,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       },
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
               visible={false}
@@ -5366,7 +6588,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "rules": Array [
                         "box-shadow:0 2px 4px 0 ",
                         "rgba(128, 128, 128, 0.5)",
-                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
+                        [Function],
+                        ";position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
                         [Function],
                         ";}",
                         [Function],
@@ -5411,6 +6635,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
                 visible={false}
@@ -5451,7 +6686,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    onClose={[Function]}
+                    skin="neutral"
+                    theme={
+                      Object {
+                        "components": Object {
+                          "popover": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
+                        },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      }
+                    }
+                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -5464,7 +6740,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           ],
                           "componentStyle": ComponentStyle {
                             "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "border-radius:50%;border:none;color:",
@@ -5478,7 +6754,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              "display:inherit;height:auto;",
+                              [Function],
+                              ";opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -5495,7 +6773,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      onClose={[Function]}
+                      skin="neutral"
+                      theme={
+                        Object {
+                          "components": Object {
+                            "popover": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
+                                },
+                              },
+                            },
+                          },
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                      visible={false}
                     >
                       <Button
                         center={false}
@@ -5503,20 +6822,100 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
+                        onClose={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
+                        theme={
+                          Object {
+                            "components": Object {
+                              "popover": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "background": "#ffe5e9",
+                                    "text": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "background": "#f2f2f2",
+                                    "text": "#4c4c4c",
+                                  },
+                                  "success": Object {
+                                    "background": "#edfadf",
+                                    "text": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "background": "#ffefd6",
+                                    "text": "#a36300",
+                                  },
+                                },
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                         type="button"
+                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
+                          onClose={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
+                          theme={
+                            Object {
+                              "components": Object {
+                                "popover": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "background": "#ffe5e9",
+                                      "text": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "background": "#f2f2f2",
+                                      "text": "#4c4c4c",
+                                    },
+                                    "success": Object {
+                                      "background": "#edfadf",
+                                      "text": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "background": "#ffefd6",
+                                      "text": "#a36300",
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                           type="button"
+                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -5571,15 +6970,56 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
+                            onClose={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
+                            theme={
+                              Object {
+                                "components": Object {
+                                  "popover": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "background": "#ffe5e9",
+                                        "text": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "background": "#f2f2f2",
+                                        "text": "#4c4c4c",
+                                      },
+                                      "success": Object {
+                                        "background": "#edfadf",
+                                        "text": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "background": "#ffefd6",
+                                        "text": "#a36300",
+                                      },
+                                    },
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
+                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
+                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >
@@ -5838,7 +7278,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -5967,6 +7407,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                 },
               },
+              "spacing": Object {
+                "large": 24,
+                "medium": 16,
+                "small": 12,
+                "xlarge": 32,
+                "xsmall": 8,
+                "xxlarge": 40,
+                "xxsmall": 4,
+                "xxxlarge": 48,
+                "xxxsmall": 2,
+              },
             }
           }
           visible={false}
@@ -6081,7 +7532,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   outline: none;
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -6161,6 +7612,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       },
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
               visible={false}
@@ -6177,7 +7639,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "rules": Array [
                         "box-shadow:0 2px 4px 0 ",
                         "rgba(128, 128, 128, 0.5)",
-                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;padding:8px;position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
+                        ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
+                        [Function],
+                        ";position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
                         [Function],
                         ";}",
                         [Function],
@@ -6222,6 +7686,17 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
                 visible={false}
@@ -6262,7 +7737,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    onClose={[Function]}
+                    skin="neutral"
+                    theme={
+                      Object {
+                        "components": Object {
+                          "popover": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#f2f2f2",
+                                "text": "#4c4c4c",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
+                        },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      }
+                    }
+                    visible={false}
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -6275,7 +7791,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           ],
                           "componentStyle": ComponentStyle {
                             "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "border-radius:50%;border:none;color:",
@@ -6289,7 +7805,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;margin:0 0 0 16px;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              "display:inherit;height:auto;",
+                              [Function],
+                              ";opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -6306,7 +7824,48 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      onClose={[Function]}
+                      skin="neutral"
+                      theme={
+                        Object {
+                          "components": Object {
+                            "popover": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#f2f2f2",
+                                  "text": "#4c4c4c",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
+                                },
+                              },
+                            },
+                          },
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                      visible={false}
                     >
                       <Button
                         center={false}
@@ -6314,20 +7873,100 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
+                        onClose={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
+                        theme={
+                          Object {
+                            "components": Object {
+                              "popover": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "background": "#ffe5e9",
+                                    "text": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "background": "#f2f2f2",
+                                    "text": "#4c4c4c",
+                                  },
+                                  "success": Object {
+                                    "background": "#edfadf",
+                                    "text": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "background": "#ffefd6",
+                                    "text": "#a36300",
+                                  },
+                                },
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                         type="button"
+                        visible={false}
                       >
                         <Button__StyledButton
                           center={false}
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
+                          onClose={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
+                          theme={
+                            Object {
+                              "components": Object {
+                                "popover": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "background": "#ffe5e9",
+                                      "text": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "background": "#f2f2f2",
+                                      "text": "#4c4c4c",
+                                    },
+                                    "success": Object {
+                                      "background": "#edfadf",
+                                      "text": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "background": "#ffefd6",
+                                      "text": "#a36300",
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                           type="button"
+                          visible={false}
                         >
                           <StyledComponent
                             center={false}
@@ -6382,15 +8021,56 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
+                            onClose={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
+                            theme={
+                              Object {
+                                "components": Object {
+                                  "popover": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "background": "#ffe5e9",
+                                        "text": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "background": "#f2f2f2",
+                                        "text": "#4c4c4c",
+                                      },
+                                      "success": Object {
+                                        "background": "#edfadf",
+                                        "text": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "background": "#ffefd6",
+                                        "text": "#a36300",
+                                      },
+                                    },
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
+                            visible={false}
                           >
                             <button
                               className="c2 c3"
                               disabled={false}
                               onClick={[Function]}
+                              onClose={[Function]}
                               size="medium"
                               type="button"
                             >

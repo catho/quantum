@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Colors from '../../Colors';
-import { components } from '../../shared/theme';
+import { components, spacing } from '../../shared/theme';
 import getArrow from '../arrowProperties';
 import Button from '../../Button';
 
@@ -39,7 +39,11 @@ const PopoverContent = styled.div`
   display: flex;
   border-radius: 4px;
   font-size: 16px;
-  padding: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `padding: ${xsmall}px`};
   position: absolute;
   line-height: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -58,7 +62,11 @@ const CloseButton = styled(Button.Icon).attrs({
 })`
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  ${({
+    theme: {
+      spacing: { medium },
+    },
+  }) => `margin-left: ${medium}px`};
   opacity: 0.8;
   padding: 0;
   transition: opacity 0.4s ease;
@@ -99,7 +107,7 @@ class Content extends Component {
         {...rest}
       >
         <PopoverChildren>{children}</PopoverChildren>
-        <CloseButton onClick={onPopoverClose} />
+        <CloseButton {...rest} onClick={onPopoverClose} />
       </PopoverContent>,
       this.wrapper,
     );
@@ -132,6 +140,7 @@ Content.defaultProps = {
   onPopoverClose: () => {},
   skin: 'neutral',
   theme: {
+    spacing,
     components: {
       popover: components.popover,
     },
