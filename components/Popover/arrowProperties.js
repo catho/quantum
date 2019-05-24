@@ -4,10 +4,14 @@ const ARROW_SIZE = '16px';
 const SIDE_POSITION_X = -8;
 const CENTER_POSITION = '50%';
 
-const getColorBySkin = skin => {
-  const indexColor = skin.toUpperCase();
-  return skin === 'default' ? Colors.WHITE : Colors[indexColor][200];
-};
+const getColorBySkin = (
+  skin,
+  {
+    components: {
+      popover: { skins },
+    },
+  },
+) => skins[skin].background;
 
 const placementPosition = {
   top: `
@@ -38,8 +42,8 @@ const placementPosition = {
   `,
 };
 
-const getArrow = (placement, skin) => `
-  color: ${getColorBySkin(skin)}
+const getArrow = (placement, skin, theme) => `
+  color: ${getColorBySkin(skin, theme)}
   font-size: ${ARROW_SIZE};
   position: absolute;
 

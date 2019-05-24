@@ -13,7 +13,7 @@ exports[`Popover component  Snapshots should match snapshots 1`] = `
 <Popover
   onClose={[Function]}
   placement="top"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -485,7 +485,7 @@ exports[`Popover component  Snapshots should match snapshots 5`] = `
 <Popover
   onClose={[Function]}
   placement="bottom"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -603,7 +603,7 @@ exports[`Popover component  Snapshots should match snapshots 6`] = `
 <Popover
   onClose={[Function]}
   placement="left"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -721,7 +721,7 @@ exports[`Popover component  Snapshots should match snapshots 7`] = `
 <Popover
   onClose={[Function]}
   placement="right"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -911,12 +911,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -976,7 +976,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 <Popover
   onClose={[Function]}
   placement="top"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -1040,7 +1040,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="top"
-          skin="default"
+          skin="neutral"
+          theme={
+            Object {
+              "components": Object {
+                "popover": Object {
+                  "skins": Object {
+                    "error": Object {
+                      "background": "#ffe5e9",
+                      "text": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "background": "#f2f2f2",
+                      "text": "#4c4c4c",
+                    },
+                    "success": Object {
+                      "background": "#edfadf",
+                      "text": "#3c6510",
+                    },
+                    "warning": Object {
+                      "background": "#ffefd6",
+                      "text": "#a36300",
+                    },
+                  },
+                },
+              },
+            }
+          }
           visible={false}
         >
           <Portal
@@ -1129,12 +1155,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -1210,7 +1236,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             <Content__PopoverContent
               onClose={[Function]}
               placement="top"
-              skin="default"
+              skin="neutral"
+              theme={
+                Object {
+                  "components": Object {
+                    "popover": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
+                  },
+                }
+              }
               visible={false}
             >
               <StyledComponent
@@ -1244,7 +1296,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 forwardedRef={[Function]}
                 onClose={[Function]}
                 placement="top"
-                skin="default"
+                skin="neutral"
+                theme={
+                  Object {
+                    "components": Object {
+                      "popover": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
+                    },
+                  }
+                }
                 visible={false}
               >
                 <div
@@ -1776,6 +1854,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           onPopoverClose={[Function]}
           placement="top"
           skin="success"
+          theme={
+            Object {
+              "components": Object {
+                "popover": Object {
+                  "skins": Object {
+                    "error": Object {
+                      "background": "#ffe5e9",
+                      "text": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "background": "#f2f2f2",
+                      "text": "#4c4c4c",
+                    },
+                    "success": Object {
+                      "background": "#edfadf",
+                      "text": "#3c6510",
+                    },
+                    "warning": Object {
+                      "background": "#ffefd6",
+                      "text": "#a36300",
+                    },
+                  },
+                },
+              },
+            }
+          }
           visible={false}
         >
           <Portal
@@ -1946,6 +2050,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               onClose={[Function]}
               placement="top"
               skin="success"
+              theme={
+                Object {
+                  "components": Object {
+                    "popover": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
+                  },
+                }
+              }
               visible={false}
             >
               <StyledComponent
@@ -1980,6 +2110,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 onClose={[Function]}
                 placement="top"
                 skin="success"
+                theme={
+                  Object {
+                    "components": Object {
+                      "popover": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
+                    },
+                  }
+                }
                 visible={false}
               >
                 <div
@@ -2511,6 +2667,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           onPopoverClose={[Function]}
           placement="top"
           skin="warning"
+          theme={
+            Object {
+              "components": Object {
+                "popover": Object {
+                  "skins": Object {
+                    "error": Object {
+                      "background": "#ffe5e9",
+                      "text": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "background": "#f2f2f2",
+                      "text": "#4c4c4c",
+                    },
+                    "success": Object {
+                      "background": "#edfadf",
+                      "text": "#3c6510",
+                    },
+                    "warning": Object {
+                      "background": "#ffefd6",
+                      "text": "#a36300",
+                    },
+                  },
+                },
+              },
+            }
+          }
           visible={false}
         >
           <Portal
@@ -2681,6 +2863,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               onClose={[Function]}
               placement="top"
               skin="warning"
+              theme={
+                Object {
+                  "components": Object {
+                    "popover": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
+                  },
+                }
+              }
               visible={false}
             >
               <StyledComponent
@@ -2715,6 +2923,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 onClose={[Function]}
                 placement="top"
                 skin="warning"
+                theme={
+                  Object {
+                    "components": Object {
+                      "popover": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
+                    },
+                  }
+                }
                 visible={false}
               >
                 <div
@@ -3246,6 +3480,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           onPopoverClose={[Function]}
           placement="top"
           skin="error"
+          theme={
+            Object {
+              "components": Object {
+                "popover": Object {
+                  "skins": Object {
+                    "error": Object {
+                      "background": "#ffe5e9",
+                      "text": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "background": "#f2f2f2",
+                      "text": "#4c4c4c",
+                    },
+                    "success": Object {
+                      "background": "#edfadf",
+                      "text": "#3c6510",
+                    },
+                    "warning": Object {
+                      "background": "#ffefd6",
+                      "text": "#a36300",
+                    },
+                  },
+                },
+              },
+            }
+          }
           visible={false}
         >
           <Portal
@@ -3416,6 +3676,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               onClose={[Function]}
               placement="top"
               skin="error"
+              theme={
+                Object {
+                  "components": Object {
+                    "popover": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
+                  },
+                }
+              }
               visible={false}
             >
               <StyledComponent
@@ -3450,6 +3736,32 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 onClose={[Function]}
                 placement="top"
                 skin="error"
+                theme={
+                  Object {
+                    "components": Object {
+                      "popover": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
+                    },
+                  }
+                }
                 visible={false}
               >
                 <div
@@ -3851,12 +4163,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   top: -4px;
@@ -3916,7 +4228,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 <Popover
   onClose={[Function]}
   placement="bottom"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -3980,7 +4292,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="bottom"
-          skin="default"
+          skin="neutral"
+          theme={
+            Object {
+              "components": Object {
+                "popover": Object {
+                  "skins": Object {
+                    "error": Object {
+                      "background": "#ffe5e9",
+                      "text": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "background": "#f2f2f2",
+                      "text": "#4c4c4c",
+                    },
+                    "success": Object {
+                      "background": "#edfadf",
+                      "text": "#3c6510",
+                    },
+                    "warning": Object {
+                      "background": "#ffefd6",
+                      "text": "#a36300",
+                    },
+                  },
+                },
+              },
+            }
+          }
           visible={false}
         >
           <Portal
@@ -4069,12 +4407,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   top: -4px;
@@ -4150,7 +4488,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             <Content__PopoverContent
               onClose={[Function]}
               placement="bottom"
-              skin="default"
+              skin="neutral"
+              theme={
+                Object {
+                  "components": Object {
+                    "popover": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
+                  },
+                }
+              }
               visible={false}
             >
               <StyledComponent
@@ -4184,7 +4548,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 forwardedRef={[Function]}
                 onClose={[Function]}
                 placement="bottom"
-                skin="default"
+                skin="neutral"
+                theme={
+                  Object {
+                    "components": Object {
+                      "popover": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
+                    },
+                  }
+                }
                 visible={false}
               >
                 <div
@@ -4586,12 +4976,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -4648,7 +5038,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 <Popover
   onClose={[Function]}
   placement="left"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -4712,7 +5102,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="left"
-          skin="default"
+          skin="neutral"
+          theme={
+            Object {
+              "components": Object {
+                "popover": Object {
+                  "skins": Object {
+                    "error": Object {
+                      "background": "#ffe5e9",
+                      "text": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "background": "#f2f2f2",
+                      "text": "#4c4c4c",
+                    },
+                    "success": Object {
+                      "background": "#edfadf",
+                      "text": "#3c6510",
+                    },
+                    "warning": Object {
+                      "background": "#ffefd6",
+                      "text": "#a36300",
+                    },
+                  },
+                },
+              },
+            }
+          }
           visible={false}
         >
           <Portal
@@ -4801,12 +5217,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -4879,7 +5295,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             <Content__PopoverContent
               onClose={[Function]}
               placement="left"
-              skin="default"
+              skin="neutral"
+              theme={
+                Object {
+                  "components": Object {
+                    "popover": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
+                  },
+                }
+              }
               visible={false}
             >
               <StyledComponent
@@ -4913,7 +5355,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 forwardedRef={[Function]}
                 onClose={[Function]}
                 placement="left"
-                skin="default"
+                skin="neutral"
+                theme={
+                  Object {
+                    "components": Object {
+                      "popover": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
+                    },
+                  }
+                }
                 visible={false}
               >
                 <div
@@ -5315,12 +5783,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -5377,7 +5845,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 <Popover
   onClose={[Function]}
   placement="right"
-  skin="default"
+  skin="neutral"
   trigger={
     <span>
       popover here
@@ -5441,7 +5909,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="right"
-          skin="default"
+          skin="neutral"
+          theme={
+            Object {
+              "components": Object {
+                "popover": Object {
+                  "skins": Object {
+                    "error": Object {
+                      "background": "#ffe5e9",
+                      "text": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "background": "#f2f2f2",
+                      "text": "#4c4c4c",
+                    },
+                    "success": Object {
+                      "background": "#edfadf",
+                      "text": "#3c6510",
+                    },
+                    "warning": Object {
+                      "background": "#ffefd6",
+                      "text": "#a36300",
+                    },
+                  },
+                },
+              },
+            }
+          }
           visible={false}
         >
           <Portal
@@ -5530,12 +6024,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #FFFFFF;
+  color: #f2f2f2;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -5608,7 +6102,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             <Content__PopoverContent
               onClose={[Function]}
               placement="right"
-              skin="default"
+              skin="neutral"
+              theme={
+                Object {
+                  "components": Object {
+                    "popover": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#f2f2f2",
+                          "text": "#4c4c4c",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
+                  },
+                }
+              }
               visible={false}
             >
               <StyledComponent
@@ -5642,7 +6162,33 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 forwardedRef={[Function]}
                 onClose={[Function]}
                 placement="right"
-                skin="default"
+                skin="neutral"
+                theme={
+                  Object {
+                    "components": Object {
+                      "popover": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#f2f2f2",
+                            "text": "#4c4c4c",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
+                    },
+                  }
+                }
                 visible={false}
               >
                 <div

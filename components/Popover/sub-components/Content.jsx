@@ -1,24 +1,35 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Colors from '../../Colors';
+import { components } from '../../shared/theme';
 import getArrow from '../arrowProperties';
 import Button from '../../Button';
 
-const getStyleBySkin = skin => {
-  const indexColor = skin.toUpperCase();
-  return `
-      background-color: ${
-        skin === 'default' ? Colors.WHITE : Colors[indexColor][200]
-      };
-      color: ${
-        skin === 'default' ? Colors.BLACK[700] : Colors[indexColor][900]
-      };
-  `;
-};
+const _colors = ({
+  skin,
+  theme: {
+    components: {
+      popover: {
+        skins: { [skin]: popoverColor },
+      },
+    },
+  },
+}) => css`
+  background-color: ${popoverColor.background};
+  color: ${popoverColor.text};
+`;
 
+// const getStyleBySkin = skin =>
+//   // const indexColor = skin.toUpperCase();
+//   `
+//       background-color: ${
+//         skin === 'neutral' ? colors.neutral[100] : colors[skin][100]
+//       };
+//       color: ${skin === 'neutral' ? colors.neutral[700] : colors[skin][900]};
+//   `;
 const PopoverContent = styled.div`
   box-shadow: 0 2px 4px 0 ${Colors.SHADOW[50]};
   align-items: start;
@@ -32,10 +43,10 @@ const PopoverContent = styled.div`
   z-index: 100;
 
   &:before {
-    ${({ placement, skin }) => getArrow(placement, skin)};
+    ${({ placement, skin, theme }) => getArrow(placement, skin, theme)};
   }
 
-  ${({ skin }) => getStyleBySkin(skin)}
+  ${_colors}
 `;
 
 const CloseButton = styled(Button.Icon).attrs({
@@ -101,13 +112,24 @@ Content.propTypes = {
   ]).isRequired,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   onPopoverClose: PropTypes.func,
-  skin: PropTypes.oneOf(['default', 'success', 'warning', 'error']),
+  skin: PropTypes.oneOf(['neutral', 'success', 'warning', 'error']),
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    components: PropTypes.shape({
+      badge: PropTypes.object,
+    }),
+  }),
 };
 
 Content.defaultProps = {
   placement: 'top',
   onPopoverClose: () => {},
-  skin: 'default',
+  skin: 'neutral',
+  theme: {
+    components: {
+      popover: components.popover,
+    },
+  },
 };
 
 export default Content;
