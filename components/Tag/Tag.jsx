@@ -129,9 +129,9 @@ Tag.propTypes = {
   text: PropTypes.string,
   theme: PropTypes.shape({
     colors: PropTypes.object,
-    components: {
+    components: PropTypes.shape({
       tag: PropTypes.object,
-    },
+    }),
     spacing: PropTypes.object,
   }),
 };
