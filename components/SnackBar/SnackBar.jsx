@@ -14,14 +14,6 @@ import {
 
 const ID_GENERATOR = uniqId('snackbar-dialog-');
 
-const a11yFocusTab = props => {
-  const { text } = getBackgroundAndTextColorBySkin(props);
-
-  return `
-    outline: 1px solid ${text};
-  `;
-};
-
 const getBackgroundAndTextColorBySkin = ({
   skin,
   theme: {
@@ -50,14 +42,26 @@ const getBackgroundAndTextColorBySkin = ({
   };
 };
 
+const a11yFocusTab = props => {
+  const { text } = getBackgroundAndTextColorBySkin(props);
+
+  return `
+    outline: 1px solid ${text};
+  `;
+};
+
 const SnackBarDialog = styled.div`
   align-items: center;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
   min-height: 48px;
-  ${({ theme: { spacing } }) => `
-    padding: ${spacing.small}px ${spacing.medium}px;
+  ${({
+    theme: {
+      spacing: { small, medium },
+    },
+  }) => `
+    padding: ${small}px ${medium}px;
   `}
 
   ${props => {
