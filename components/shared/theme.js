@@ -126,6 +126,31 @@ const components = {
       },
     },
   },
+
+  snackbar: {
+    skins: {
+      neutral: {
+        background: colors.neutral[700],
+        text: colors.neutral[100],
+      },
+      primary: {
+        background: colors.primary[700],
+        text: colors.neutral[100],
+      },
+      success: {
+        background: colors.success[100],
+        text: colors.success[900],
+      },
+      warning: {
+        background: colors.warning[100],
+        text: colors.warning[900],
+      },
+      error: {
+        background: colors.error[100],
+        text: colors.error[900],
+      },
+    },
+  },
 };
 
 const theme = {
