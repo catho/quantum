@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip component  All positions Should match the snapshot when place is bottom 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 dmQPgz\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is bottom 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 iWQIyD\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is left 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 dmQPgz\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is left 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 iWQIyD\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 dmQPgz\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 iWQIyD\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 dmQPgz\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 dAhLSL\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 iWQIyD\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 eOKkaJ\\">This is a hint</span></div>Hover Me</div>"`;
