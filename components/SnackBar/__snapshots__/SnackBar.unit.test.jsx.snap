@@ -699,6 +699,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
             no-gutters={false}
             theme={
               Object {
+                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -811,6 +812,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                   },
                 },
                 "default": Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -971,6 +973,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                   "defaultProps": Object {
                     "no-gutters": false,
                     "theme": Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -1083,6 +1086,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -1240,6 +1244,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
               no-gutters={false}
               theme={
                 Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -1352,6 +1357,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                     },
                   },
                   "default": Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -1501,6 +1507,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                   small-offset={1}
                   theme={
                     Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -1613,6 +1620,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -1770,6 +1778,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                         },
                         "defaultProps": Object {
                           "theme": Object {
+                            "baseFontSize": 16,
                             "breakpoints": Object {
                               "large": Object {
                                 "columns": 12,
@@ -1882,6 +1891,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                               },
                             },
                             "default": Object {
+                              "baseFontSize": 16,
                               "breakpoints": Object {
                                 "large": Object {
                                   "columns": 12,
@@ -2050,6 +2060,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                     small-offset={1}
                     theme={
                       Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -2162,6 +2173,7 @@ exports[`<SnackBar /> should match snapshots 1`] = `
                           },
                         },
                         "default": Object {
+                          "baseFontSize": 16,
                           "breakpoints": Object {
                             "large": Object {
                               "columns": 12,
@@ -3550,6 +3562,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
             no-gutters={false}
             theme={
               Object {
+                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -3662,6 +3675,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                   },
                 },
                 "default": Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -3822,6 +3836,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                   "defaultProps": Object {
                     "no-gutters": false,
                     "theme": Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -3934,6 +3949,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -4091,6 +4107,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
               no-gutters={false}
               theme={
                 Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -4203,6 +4220,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                     },
                   },
                   "default": Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -4352,6 +4370,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                   small-offset={1}
                   theme={
                     Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -4464,6 +4483,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -4621,6 +4641,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                         },
                         "defaultProps": Object {
                           "theme": Object {
+                            "baseFontSize": 16,
                             "breakpoints": Object {
                               "large": Object {
                                 "columns": 12,
@@ -4733,6 +4754,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                               },
                             },
                             "default": Object {
+                              "baseFontSize": 16,
                               "breakpoints": Object {
                                 "large": Object {
                                   "columns": 12,
@@ -4901,6 +4923,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                     small-offset={1}
                     theme={
                       Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -5013,6 +5036,7 @@ exports[`<SnackBar /> should match snapshots 2`] = `
                           },
                         },
                         "default": Object {
+                          "baseFontSize": 16,
                           "breakpoints": Object {
                             "large": Object {
                               "columns": 12,
@@ -6401,6 +6425,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
             no-gutters={false}
             theme={
               Object {
+                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -6513,6 +6538,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                   },
                 },
                 "default": Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -6673,6 +6699,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                   "defaultProps": Object {
                     "no-gutters": false,
                     "theme": Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -6785,6 +6812,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -6942,6 +6970,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
               no-gutters={false}
               theme={
                 Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -7054,6 +7083,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                     },
                   },
                   "default": Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -7203,6 +7233,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                   small-offset={1}
                   theme={
                     Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -7315,6 +7346,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -7472,6 +7504,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                         },
                         "defaultProps": Object {
                           "theme": Object {
+                            "baseFontSize": 16,
                             "breakpoints": Object {
                               "large": Object {
                                 "columns": 12,
@@ -7584,6 +7617,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                               },
                             },
                             "default": Object {
+                              "baseFontSize": 16,
                               "breakpoints": Object {
                                 "large": Object {
                                   "columns": 12,
@@ -7752,6 +7786,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                     small-offset={1}
                     theme={
                       Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -7864,6 +7899,7 @@ exports[`<SnackBar /> should match snapshots 3`] = `
                           },
                         },
                         "default": Object {
+                          "baseFontSize": 16,
                           "breakpoints": Object {
                             "large": Object {
                               "columns": 12,
@@ -9252,6 +9288,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
             no-gutters={false}
             theme={
               Object {
+                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -9364,6 +9401,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                   },
                 },
                 "default": Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -9524,6 +9562,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                   "defaultProps": Object {
                     "no-gutters": false,
                     "theme": Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -9636,6 +9675,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -9793,6 +9833,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
               no-gutters={false}
               theme={
                 Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -9905,6 +9946,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                     },
                   },
                   "default": Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -10054,6 +10096,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                   small-offset={1}
                   theme={
                     Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -10166,6 +10209,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -10323,6 +10367,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                         },
                         "defaultProps": Object {
                           "theme": Object {
+                            "baseFontSize": 16,
                             "breakpoints": Object {
                               "large": Object {
                                 "columns": 12,
@@ -10435,6 +10480,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                               },
                             },
                             "default": Object {
+                              "baseFontSize": 16,
                               "breakpoints": Object {
                                 "large": Object {
                                   "columns": 12,
@@ -10603,6 +10649,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                     small-offset={1}
                     theme={
                       Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -10715,6 +10762,7 @@ exports[`<SnackBar /> should match snapshots 4`] = `
                           },
                         },
                         "default": Object {
+                          "baseFontSize": 16,
                           "breakpoints": Object {
                             "large": Object {
                               "columns": 12,
@@ -12103,6 +12151,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
             no-gutters={false}
             theme={
               Object {
+                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -12215,6 +12264,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                   },
                 },
                 "default": Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -12375,6 +12425,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                   "defaultProps": Object {
                     "no-gutters": false,
                     "theme": Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -12487,6 +12538,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -12644,6 +12696,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
               no-gutters={false}
               theme={
                 Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -12756,6 +12809,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                     },
                   },
                   "default": Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -12905,6 +12959,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                   small-offset={1}
                   theme={
                     Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -13017,6 +13072,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -13174,6 +13230,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                         },
                         "defaultProps": Object {
                           "theme": Object {
+                            "baseFontSize": 16,
                             "breakpoints": Object {
                               "large": Object {
                                 "columns": 12,
@@ -13286,6 +13343,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                               },
                             },
                             "default": Object {
+                              "baseFontSize": 16,
                               "breakpoints": Object {
                                 "large": Object {
                                   "columns": 12,
@@ -13454,6 +13512,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                     small-offset={1}
                     theme={
                       Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -13566,6 +13625,7 @@ exports[`<SnackBar /> should match snapshots 5`] = `
                           },
                         },
                         "default": Object {
+                          "baseFontSize": 16,
                           "breakpoints": Object {
                             "large": Object {
                               "columns": 12,
@@ -14954,6 +15014,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
             no-gutters={false}
             theme={
               Object {
+                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -15066,6 +15127,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                   },
                 },
                 "default": Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -15226,6 +15288,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                   "defaultProps": Object {
                     "no-gutters": false,
                     "theme": Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -15338,6 +15401,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -15495,6 +15559,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
               no-gutters={false}
               theme={
                 Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -15607,6 +15672,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                     },
                   },
                   "default": Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -15756,6 +15822,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                   small-offset={1}
                   theme={
                     Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -15868,6 +15935,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -16025,6 +16093,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                         },
                         "defaultProps": Object {
                           "theme": Object {
+                            "baseFontSize": 16,
                             "breakpoints": Object {
                               "large": Object {
                                 "columns": 12,
@@ -16137,6 +16206,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                               },
                             },
                             "default": Object {
+                              "baseFontSize": 16,
                               "breakpoints": Object {
                                 "large": Object {
                                   "columns": 12,
@@ -16305,6 +16375,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                     small-offset={1}
                     theme={
                       Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -16417,6 +16488,7 @@ exports[`<SnackBar /> should match snapshots 6`] = `
                           },
                         },
                         "default": Object {
+                          "baseFontSize": 16,
                           "breakpoints": Object {
                             "large": Object {
                               "columns": 12,
