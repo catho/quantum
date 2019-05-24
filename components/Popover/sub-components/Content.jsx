@@ -17,19 +17,22 @@ const _colors = ({
       },
     },
   },
-}) => css`
-  background-color: ${popoverColor.background};
-  color: ${popoverColor.text};
-`;
+  inverted,
+}) => {
+  if (inverted) {
+    const [background, text] = [popoverColor.text, popoverColor.background];
 
-// const getStyleBySkin = skin =>
-//   // const indexColor = skin.toUpperCase();
-//   `
-//       background-color: ${
-//         skin === 'neutral' ? colors.neutral[100] : colors[skin][100]
-//       };
-//       color: ${skin === 'neutral' ? colors.neutral[700] : colors[skin][900]};
-//   `;
+    return css`
+      background-color: ${background};
+      color: ${text};
+    `;
+  }
+  return css`
+    background-color: ${popoverColor.background};
+    color: ${popoverColor.text};
+  `;
+};
+
 const PopoverContent = styled.div`
   box-shadow: 0 2px 4px 0 ${Colors.SHADOW[50]};
   align-items: start;
@@ -43,7 +46,8 @@ const PopoverContent = styled.div`
   z-index: 100;
 
   &:before {
-    ${({ placement, skin, theme }) => getArrow(placement, skin, theme)};
+    ${({ placement, skin, theme, inverted }) =>
+      getArrow(placement, skin, theme, inverted)};
   }
 
   ${_colors}
@@ -110,6 +114,7 @@ Content.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  inverted: PropTypes.bool,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   onPopoverClose: PropTypes.func,
   skin: PropTypes.oneOf(['neutral', 'success', 'warning', 'error']),
@@ -122,6 +127,7 @@ Content.propTypes = {
 };
 
 Content.defaultProps = {
+  inverted: false,
   placement: 'top',
   onPopoverClose: () => {},
   skin: 'neutral',

@@ -11,7 +11,13 @@ const getColorBySkin = (
       popover: { skins },
     },
   },
-) => skins[skin].background;
+  inverted,
+) => {
+  if (inverted) {
+    return skins[skin].text;
+  }
+  return skins[skin].background;
+};
 
 const placementPosition = {
   top: `
@@ -42,8 +48,8 @@ const placementPosition = {
   `,
 };
 
-const getArrow = (placement, skin, theme) => `
-  color: ${getColorBySkin(skin, theme)}
+const getArrow = (placement, skin, theme, inverted) => `
+  color: ${getColorBySkin(skin, theme, inverted)}
   font-size: ${ARROW_SIZE};
   position: absolute;
 

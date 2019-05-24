@@ -11,6 +11,7 @@ exports[`Popover component  Snapshots should match snapshots 1`] = `
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="neutral"
@@ -129,6 +130,7 @@ exports[`Popover component  Snapshots should match snapshots 2`] = `
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="success"
@@ -247,6 +249,7 @@ exports[`Popover component  Snapshots should match snapshots 3`] = `
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="warning"
@@ -365,6 +368,7 @@ exports[`Popover component  Snapshots should match snapshots 4`] = `
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="error"
@@ -483,6 +487,7 @@ exports[`Popover component  Snapshots should match snapshots 5`] = `
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="bottom"
   skin="neutral"
@@ -601,6 +606,7 @@ exports[`Popover component  Snapshots should match snapshots 6`] = `
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="left"
   skin="neutral"
@@ -719,6 +725,7 @@ exports[`Popover component  Snapshots should match snapshots 7`] = `
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="right"
   skin="neutral"
@@ -974,6 +981,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="neutral"
@@ -1037,6 +1045,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         className="c0"
       >
         <Content
+          inverted={false}
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="top"
@@ -1234,6 +1243,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             }
           >
             <Content__PopoverContent
+              inverted={false}
               onClose={[Function]}
               placement="top"
               skin="neutral"
@@ -1294,6 +1304,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   }
                 }
                 forwardedRef={[Function]}
+                inverted={false}
                 onClose={[Function]}
                 placement="top"
                 skin="neutral"
@@ -1787,6 +1798,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="success"
@@ -1850,6 +1862,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         className="c0"
       >
         <Content
+          inverted={false}
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="top"
@@ -2047,6 +2060,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             }
           >
             <Content__PopoverContent
+              inverted={false}
               onClose={[Function]}
               placement="top"
               skin="success"
@@ -2107,6 +2121,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   }
                 }
                 forwardedRef={[Function]}
+                inverted={false}
                 onClose={[Function]}
                 placement="top"
                 skin="success"
@@ -2600,6 +2615,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="warning"
@@ -2663,6 +2679,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         className="c0"
       >
         <Content
+          inverted={false}
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="top"
@@ -2860,6 +2877,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             }
           >
             <Content__PopoverContent
+              inverted={false}
               onClose={[Function]}
               placement="top"
               skin="warning"
@@ -2920,6 +2938,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   }
                 }
                 forwardedRef={[Function]}
+                inverted={false}
                 onClose={[Function]}
                 placement="top"
                 skin="warning"
@@ -3413,6 +3432,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="top"
   skin="error"
@@ -3476,6 +3496,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         className="c0"
       >
         <Content
+          inverted={false}
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="top"
@@ -3673,6 +3694,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             }
           >
             <Content__PopoverContent
+              inverted={false}
               onClose={[Function]}
               placement="top"
               skin="error"
@@ -3733,6 +3755,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   }
                 }
                 forwardedRef={[Function]}
+                inverted={false}
                 onClose={[Function]}
                 placement="top"
                 skin="error"
@@ -4226,6 +4249,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="bottom"
   skin="neutral"
@@ -4289,6 +4313,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         className="c0"
       >
         <Content
+          inverted={false}
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="bottom"
@@ -4486,6 +4511,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             }
           >
             <Content__PopoverContent
+              inverted={false}
               onClose={[Function]}
               placement="bottom"
               skin="neutral"
@@ -4546,6 +4572,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   }
                 }
                 forwardedRef={[Function]}
+                inverted={false}
                 onClose={[Function]}
                 placement="bottom"
                 skin="neutral"
@@ -5036,6 +5063,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="left"
   skin="neutral"
@@ -5099,6 +5127,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         className="c0"
       >
         <Content
+          inverted={false}
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="left"
@@ -5293,6 +5322,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             }
           >
             <Content__PopoverContent
+              inverted={false}
               onClose={[Function]}
               placement="left"
               skin="neutral"
@@ -5353,6 +5383,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   }
                 }
                 forwardedRef={[Function]}
+                inverted={false}
                 onClose={[Function]}
                 placement="left"
                 skin="neutral"
@@ -5843,6 +5874,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 <Popover
+  inverted={false}
   onClose={[Function]}
   placement="right"
   skin="neutral"
@@ -5906,6 +5938,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         className="c0"
       >
         <Content
+          inverted={false}
           onClose={[Function]}
           onPopoverClose={[Function]}
           placement="right"
@@ -6100,6 +6133,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             }
           >
             <Content__PopoverContent
+              inverted={false}
               onClose={[Function]}
               placement="right"
               skin="neutral"
@@ -6160,6 +6194,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   }
                 }
                 forwardedRef={[Function]}
+                inverted={false}
                 onClose={[Function]}
                 placement="right"
                 skin="neutral"

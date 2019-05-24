@@ -122,6 +122,7 @@ class Popover extends Component {
 TriggerBlock.displayName = 'TriggerBlock';
 
 Popover.propTypes = {
+  inverted: PropTypes.bool,
   visible: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -134,6 +135,7 @@ Popover.propTypes = {
 };
 
 Popover.defaultProps = {
+  inverted: false,
   visible: false,
   skin: 'neutral',
   placement: 'top',
