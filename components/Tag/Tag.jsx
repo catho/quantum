@@ -138,13 +138,13 @@ Tag.propTypes = {
 
 Tag.defaultProps = {
   bold: false,
-  children: '',
   inverted: false,
-  onClose: undefined,
-  size: 'medium',
-  skin: 'neutral',
   stroked: false,
   text: 'Tag text',
+  children: '',
+  size: 'medium',
+  skin: 'neutral',
+  onClose: undefined,
   theme: {
     colors,
     components: {
