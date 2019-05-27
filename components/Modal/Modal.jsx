@@ -9,7 +9,7 @@ import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import { hexToRgba, theme } from '../shared';
 
-const { breakpoints, colors } = theme;
+const { breakpoints, colors, spacing } = theme;
 
 function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   const sizes = {
@@ -26,7 +26,11 @@ function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
 
 const ModalCard = styled(Card)`
   ${Card.Header} {
-    padding-right: 56px;
+    padding-right: ${({
+      theme: {
+        spacing: { xxxlarge },
+      },
+    }) => `${xxxlarge}px`};
   }
 
   ${getBreakpoint}
@@ -36,8 +40,15 @@ const CloseIcon = styled(Button.Icon).attrs({
   icon: 'close',
 })`
   position: absolute;
-  top: 16px;
-  right: 16px;
+
+  ${({
+    theme: {
+      spacing: { medium },
+    },
+  }) => `
+    top: ${medium}px;
+    right: ${medium}px;
+  `};
 `;
 
 CloseIcon.displayName = 'CloseIcon';
@@ -180,7 +191,11 @@ class Modal extends React.Component {
       >
         <ModalCard theme={themeProp}>
           {children}
-          <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
+          <CloseIcon
+            onClick={onClose}
+            aria-label={closeButtonAriaLabel}
+            theme={themeProp}
+          />
         </ModalCard>
       </ModalWrapper>,
       this.modalOverlay,
@@ -200,6 +215,7 @@ Modal.propTypes = {
   theme: PropTypes.shape({
     breakpoints: PropTypes.object,
     colors: PropTypes.object,
+    spacing: PropTypes.object,
   }),
 };
 
@@ -210,6 +226,7 @@ Modal.defaultProps = {
   theme: {
     breakpoints,
     colors,
+    spacing,
   },
 };
 

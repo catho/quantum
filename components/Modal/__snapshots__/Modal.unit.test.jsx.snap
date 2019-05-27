@@ -131,7 +131,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c1 .c3 {
-  padding-right: 56px;
+  padding-right: 48px;
 }
 
 .c10 {
@@ -274,6 +274,17 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "900": "#a36300",
         },
       },
+      "spacing": Object {
+        "large": 24,
+        "medium": 16,
+        "small": 12,
+        "xlarge": 32,
+        "xsmall": 8,
+        "xxlarge": 40,
+        "xxsmall": 4,
+        "xxxlarge": 48,
+        "xxxsmall": 2,
+      },
     }
   }
 >
@@ -409,7 +420,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c1 .c3 {
-  padding-right: 56px;
+  padding-right: 48px;
 }
 
 .c10 {
@@ -600,6 +611,17 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "900": "#a36300",
             },
           },
+          "spacing": Object {
+            "large": 24,
+            "medium": 16,
+            "small": 12,
+            "xlarge": 32,
+            "xsmall": 8,
+            "xxlarge": 40,
+            "xxsmall": 4,
+            "xxxlarge": 48,
+            "xxxsmall": 2,
+          },
         }
       }
     >
@@ -745,6 +767,17 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#a36300",
               },
             },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -820,6 +853,17 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "700": "#ec7e00",
                     "900": "#a36300",
                   },
+                },
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
                 },
               }
             }
@@ -917,7 +961,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       ".c3",
-                      "{padding-right:56px;}",
+                      "{padding-right:",
+                      [Function],
+                      ";}",
                       [Function],
                     ],
                   },
@@ -1000,6 +1046,17 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#a36300",
                     },
                   },
+                  "spacing": Object {
+                    "large": 24,
+                    "medium": 16,
+                    "small": 12,
+                    "xlarge": 32,
+                    "xsmall": 8,
+                    "xxlarge": 40,
+                    "xxsmall": 4,
+                    "xxxlarge": 48,
+                    "xxxsmall": 2,
+                  },
                 }
               }
             >
@@ -1072,6 +1129,17 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "900": "#a36300",
                       },
                     },
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
                   }
                 }
               >
@@ -1143,6 +1211,17 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "700": "#ec7e00",
                           "900": "#a36300",
                         },
+                      },
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
                       },
                     }
                   }
@@ -1243,13 +1322,40 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#a36300",
                           },
                         },
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
                       }
                     }
                   >
                     <article
                       className="c1 c2"
                     >
-                      <Header>
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <StyledComponent
                           forwardedComponent={
                             Object {
@@ -1257,17 +1363,37 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
                                 "componentId": "Header-sc-13ddtbk-0",
-                                "isStatic": true,
+                                "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
                                   "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
-                                  "padding:24px 24px 0;",
+                                  "padding:",
+                                  [Function],
+                                  ";",
                                 ],
+                              },
+                              "defaultProps": Object {
+                                "theme": Object {
+                                  "spacing": Object {
+                                    "large": 24,
+                                    "medium": 16,
+                                    "small": 12,
+                                    "xlarge": 32,
+                                    "xsmall": 8,
+                                    "xxlarge": 40,
+                                    "xxsmall": 4,
+                                    "xxxlarge": 48,
+                                    "xxxsmall": 2,
+                                  },
+                                },
                               },
                               "displayName": "Header",
                               "foldedComponentIds": Array [
                                 "c3",
                               ],
+                              "propTypes": Object {
+                                "theme": [Function],
+                              },
                               "render": [Function],
                               "styledComponentId": "Header-sc-13ddtbk-0",
                               "target": "header",
@@ -1277,6 +1403,21 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             }
                           }
                           forwardedRef={null}
+                          theme={
+                            Object {
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                         >
                           <header
                             className="c3 c4"
@@ -1390,7 +1531,23 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           </header>
                         </StyledComponent>
                       </Header>
-                      <Content>
+                      <Content
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <StyledComponent
                           forwardedComponent={
                             Object {
@@ -1398,17 +1555,37 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
                                 "componentId": "Content-sc-9f5o6t-0",
-                                "isStatic": true,
+                                "isStatic": false,
                                 "lastClassName": "c8",
                                 "rules": Array [
                                   "padding:12px 20px;font-size:14px;margin:0;",
-                                  "font-size:16px;max-height:70vh;overflow-y:auto;padding:16px 24px;",
+                                  "font-size:16px;max-height:70vh;overflow-y:auto;padding:",
+                                  [Function],
+                                  ";",
                                 ],
+                              },
+                              "defaultProps": Object {
+                                "theme": Object {
+                                  "spacing": Object {
+                                    "large": 24,
+                                    "medium": 16,
+                                    "small": 12,
+                                    "xlarge": 32,
+                                    "xsmall": 8,
+                                    "xxlarge": 40,
+                                    "xxsmall": 4,
+                                    "xxxlarge": 48,
+                                    "xxxsmall": 2,
+                                  },
+                                },
                               },
                               "displayName": "Content",
                               "foldedComponentIds": Array [
                                 "Content-sc-6vzg5x-0",
                               ],
+                              "propTypes": Object {
+                                "theme": [Function],
+                              },
                               "render": [Function],
                               "styledComponentId": "Content-sc-9f5o6t-0",
                               "target": "div",
@@ -1418,6 +1595,21 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             }
                           }
                           forwardedRef={null}
+                          theme={
+                            Object {
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                         >
                           <div
                             className="c8"
@@ -1462,6 +1654,86 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       <CloseIcon
                         aria-label="close dialog"
                         onClick={[Function]}
+                        theme={
+                          Object {
+                            "breakpoints": Object {
+                              "large": Object {
+                                "columns": 12,
+                                "width": 1440,
+                              },
+                              "medium": Object {
+                                "columns": 12,
+                                "width": 1024,
+                              },
+                              "small": Object {
+                                "columns": 8,
+                                "width": 600,
+                              },
+                              "xlarge": Object {
+                                "columns": 12,
+                                "width": 1920,
+                              },
+                              "xsmall": Object {
+                                "columns": 4,
+                              },
+                            },
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
                       >
                         <StyledComponent
                           aria-label="close dialog"
@@ -1475,7 +1747,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               ],
                               "componentStyle": ComponentStyle {
                                 "componentId": "Modal__CloseIcon-sc-300qpr-1",
-                                "isStatic": true,
+                                "isStatic": false,
                                 "lastClassName": "c10",
                                 "rules": Array [
                                   "border-radius:50%;border:none;color:",
@@ -1489,7 +1761,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   ";color:",
                                   "#4c4c4c",
                                   ";}",
-                                  "position:absolute;top:16px;right:16px;",
+                                  "position:absolute;",
+                                  [Function],
+                                  ";",
                                 ],
                               },
                               "displayName": "CloseIcon",
@@ -1507,6 +1781,86 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           }
                           forwardedRef={null}
                           onClick={[Function]}
+                          theme={
+                            Object {
+                              "breakpoints": Object {
+                                "large": Object {
+                                  "columns": 12,
+                                  "width": 1440,
+                                },
+                                "medium": Object {
+                                  "columns": 12,
+                                  "width": 1024,
+                                },
+                                "small": Object {
+                                  "columns": 8,
+                                  "width": 600,
+                                },
+                                "xlarge": Object {
+                                  "columns": 12,
+                                  "width": 1920,
+                                },
+                                "xsmall": Object {
+                                  "columns": 4,
+                                },
+                              },
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                         >
                           <Button
                             aria-label="close dialog"
@@ -1518,6 +1872,86 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             onClick={[Function]}
                             size="medium"
                             skin="primary"
+                            theme={
+                              Object {
+                                "breakpoints": Object {
+                                  "large": Object {
+                                    "columns": 12,
+                                    "width": 1440,
+                                  },
+                                  "medium": Object {
+                                    "columns": 12,
+                                    "width": 1024,
+                                  },
+                                  "small": Object {
+                                    "columns": 8,
+                                    "width": 600,
+                                  },
+                                  "xlarge": Object {
+                                    "columns": 12,
+                                    "width": 1920,
+                                  },
+                                  "xsmall": Object {
+                                    "columns": 4,
+                                  },
+                                },
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
+                                "spacing": Object {
+                                  "large": 24,
+                                  "medium": 16,
+                                  "small": 12,
+                                  "xlarge": 32,
+                                  "xsmall": 8,
+                                  "xxlarge": 40,
+                                  "xxsmall": 4,
+                                  "xxxlarge": 48,
+                                  "xxxsmall": 2,
+                                },
+                              }
+                            }
                             type="button"
                           >
                             <Button__StyledButton
@@ -1529,6 +1963,86 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               onClick={[Function]}
                               size="medium"
                               skin="primary"
+                              theme={
+                                Object {
+                                  "breakpoints": Object {
+                                    "large": Object {
+                                      "columns": 12,
+                                      "width": 1440,
+                                    },
+                                    "medium": Object {
+                                      "columns": 12,
+                                      "width": 1024,
+                                    },
+                                    "small": Object {
+                                      "columns": 8,
+                                      "width": 600,
+                                    },
+                                    "xlarge": Object {
+                                      "columns": 12,
+                                      "width": 1920,
+                                    },
+                                    "xsmall": Object {
+                                      "columns": 4,
+                                    },
+                                  },
+                                  "colors": Object {
+                                    "error": Object {
+                                      "100": "#ffe5e9",
+                                      "300": "#ff6c82",
+                                      "500": "#ff2d4d",
+                                      "700": "#ff223d",
+                                      "900": "#ac001a",
+                                    },
+                                    "neutral": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                    "primary": Object {
+                                      "100": "#e5edfc",
+                                      "300": "#5a88de",
+                                      "500": "#1355d0",
+                                      "700": "#0e44c4",
+                                      "900": "#062ab3",
+                                    },
+                                    "secondary": Object {
+                                      "100": "#f5b3cd",
+                                      "300": "#e84d8b",
+                                      "500": "#de0059",
+                                      "700": "#d50048",
+                                      "900": "#c8002e",
+                                    },
+                                    "success": Object {
+                                      "100": "#edfadf",
+                                      "300": "#a5e064",
+                                      "500": "#7ed321",
+                                      "700": "#6bc818",
+                                      "900": "#3c6510",
+                                    },
+                                    "warning": Object {
+                                      "100": "#ffefd6",
+                                      "300": "#f5b24d",
+                                      "500": "#f09100",
+                                      "700": "#ec7e00",
+                                      "900": "#a36300",
+                                    },
+                                  },
+                                  "spacing": Object {
+                                    "large": 24,
+                                    "medium": 16,
+                                    "small": 12,
+                                    "xlarge": 32,
+                                    "xsmall": 8,
+                                    "xxlarge": 40,
+                                    "xxsmall": 4,
+                                    "xxxlarge": 48,
+                                    "xxxsmall": 2,
+                                  },
+                                }
+                              }
                               type="button"
                             >
                               <StyledComponent
@@ -1588,6 +2102,86 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 onClick={[Function]}
                                 size="medium"
                                 skin="primary"
+                                theme={
+                                  Object {
+                                    "breakpoints": Object {
+                                      "large": Object {
+                                        "columns": 12,
+                                        "width": 1440,
+                                      },
+                                      "medium": Object {
+                                        "columns": 12,
+                                        "width": 1024,
+                                      },
+                                      "small": Object {
+                                        "columns": 8,
+                                        "width": 600,
+                                      },
+                                      "xlarge": Object {
+                                        "columns": 12,
+                                        "width": 1920,
+                                      },
+                                      "xsmall": Object {
+                                        "columns": 4,
+                                      },
+                                    },
+                                    "colors": Object {
+                                      "error": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "neutral": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "primary": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "secondary": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "success": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "warning": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                    },
+                                    "spacing": Object {
+                                      "large": 24,
+                                      "medium": 16,
+                                      "small": 12,
+                                      "xlarge": 32,
+                                      "xsmall": 8,
+                                      "xxlarge": 40,
+                                      "xxsmall": 4,
+                                      "xxxlarge": 48,
+                                      "xxxsmall": 2,
+                                    },
+                                  }
+                                }
                                 type="button"
                               >
                                 <button
