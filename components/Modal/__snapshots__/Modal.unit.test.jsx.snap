@@ -165,7 +165,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(76,76,76,0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -209,7 +209,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   onClose={[Function]}
   theme={
     Object {
-      "baseFontSize": 16,
       "breakpoints": Object {
         "large": Object {
           "columns": 12,
@@ -274,190 +273,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "700": "#ec7e00",
           "900": "#a36300",
         },
-      },
-      "components": Object {
-        "badge": Object {
-          "skins": Object {
-            "error": Object {
-              "background": "#ff2d4d",
-              "text": "#f2f2f2",
-            },
-            "neutral": Object {
-              "background": "#f2f2f2",
-              "text": "#4c4c4c",
-            },
-            "primary": Object {
-              "background": "#1355d0",
-              "text": "#f2f2f2",
-            },
-            "success": Object {
-              "background": "#edfadf",
-              "text": "#3c6510",
-            },
-          },
-        },
-        "tag": Object {
-          "skins": Object {
-            "error": Object {
-              "background": "#ffe5e9",
-              "text": "#ac001a",
-            },
-            "neutral": Object {
-              "background": "#f2f2f2",
-              "text": "#4c4c4c",
-            },
-            "primary": Object {
-              "background": "#e5edfc",
-              "text": "#1355d0",
-            },
-            "success": Object {
-              "background": "#edfadf",
-              "text": "#3c6510",
-            },
-            "warning": Object {
-              "background": "#ffefd6",
-              "text": "#a36300",
-            },
-          },
-        },
-      },
-      "default": Object {
-        "baseFontSize": 16,
-        "breakpoints": Object {
-          "large": Object {
-            "columns": 12,
-            "width": 1440,
-          },
-          "medium": Object {
-            "columns": 12,
-            "width": 1024,
-          },
-          "small": Object {
-            "columns": 8,
-            "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
-          },
-          "xsmall": Object {
-            "columns": 4,
-          },
-        },
-        "colors": Object {
-          "error": Object {
-            "100": "#ffe5e9",
-            "300": "#ff6c82",
-            "500": "#ff2d4d",
-            "700": "#ff223d",
-            "900": "#ac001a",
-          },
-          "neutral": Object {
-            "100": "#f2f2f2",
-            "300": "#cccccc",
-            "500": "#999999",
-            "700": "#4c4c4c",
-            "900": "#191919",
-          },
-          "primary": Object {
-            "100": "#e5edfc",
-            "300": "#5a88de",
-            "500": "#1355d0",
-            "700": "#0e44c4",
-            "900": "#062ab3",
-          },
-          "secondary": Object {
-            "100": "#f5b3cd",
-            "300": "#e84d8b",
-            "500": "#de0059",
-            "700": "#d50048",
-            "900": "#c8002e",
-          },
-          "success": Object {
-            "100": "#edfadf",
-            "300": "#a5e064",
-            "500": "#7ed321",
-            "700": "#6bc818",
-            "900": "#3c6510",
-          },
-          "warning": Object {
-            "100": "#ffefd6",
-            "300": "#f5b24d",
-            "500": "#f09100",
-            "700": "#ec7e00",
-            "900": "#a36300",
-          },
-        },
-        "components": Object {
-          "badge": Object {
-            "skins": Object {
-              "error": Object {
-                "background": "#ff2d4d",
-                "text": "#f2f2f2",
-              },
-              "neutral": Object {
-                "background": "#f2f2f2",
-                "text": "#4c4c4c",
-              },
-              "primary": Object {
-                "background": "#1355d0",
-                "text": "#f2f2f2",
-              },
-              "success": Object {
-                "background": "#edfadf",
-                "text": "#3c6510",
-              },
-            },
-          },
-          "tag": Object {
-            "skins": Object {
-              "error": Object {
-                "background": "#ffe5e9",
-                "text": "#ac001a",
-              },
-              "neutral": Object {
-                "background": "#f2f2f2",
-                "text": "#4c4c4c",
-              },
-              "primary": Object {
-                "background": "#e5edfc",
-                "text": "#1355d0",
-              },
-              "success": Object {
-                "background": "#edfadf",
-                "text": "#3c6510",
-              },
-              "warning": Object {
-                "background": "#ffefd6",
-                "text": "#a36300",
-              },
-            },
-          },
-        },
-        "gutter": 8,
-        "spacing": Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        },
-      },
-      "gutter": 8,
-      "spacing": Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
       },
     }
   }
@@ -628,7 +443,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(76,76,76,0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -718,6 +533,75 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
     <ModalWrapper
       onClick={[Function]}
       role="dialog"
+      theme={
+        Object {
+          "breakpoints": Object {
+            "large": Object {
+              "columns": 12,
+              "width": 1440,
+            },
+            "medium": Object {
+              "columns": 12,
+              "width": 1024,
+            },
+            "small": Object {
+              "columns": 8,
+              "width": 600,
+            },
+            "xlarge": Object {
+              "columns": 12,
+              "width": 1920,
+            },
+            "xsmall": Object {
+              "columns": 4,
+            },
+          },
+          "colors": Object {
+            "error": Object {
+              "100": "#ffe5e9",
+              "300": "#ff6c82",
+              "500": "#ff2d4d",
+              "700": "#ff223d",
+              "900": "#ac001a",
+            },
+            "neutral": Object {
+              "100": "#f2f2f2",
+              "300": "#cccccc",
+              "500": "#999999",
+              "700": "#4c4c4c",
+              "900": "#191919",
+            },
+            "primary": Object {
+              "100": "#e5edfc",
+              "300": "#5a88de",
+              "500": "#1355d0",
+              "700": "#0e44c4",
+              "900": "#062ab3",
+            },
+            "secondary": Object {
+              "100": "#f5b3cd",
+              "300": "#e84d8b",
+              "500": "#de0059",
+              "700": "#d50048",
+              "900": "#c8002e",
+            },
+            "success": Object {
+              "100": "#edfadf",
+              "300": "#a5e064",
+              "500": "#7ed321",
+              "700": "#6bc818",
+              "900": "#3c6510",
+            },
+            "warning": Object {
+              "100": "#ffefd6",
+              "300": "#f5b24d",
+              "500": "#f09100",
+              "700": "#ec7e00",
+              "900": "#a36300",
+            },
+          },
+        }
+      }
     >
       <StyledComponent
         forwardedComponent={
@@ -726,11 +610,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "Modal__ModalWrapper-sc-300qpr-2",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "c0",
               "rules": Array [
                 "align-items:center;background-color:",
-                "rgba(128, 128, 128, 0.5)",
+                [Function],
                 ";display:flex;height:100vh;justify-content:center;position:fixed;top:0;width:100vw;",
               ],
             },
@@ -794,6 +678,75 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
         }
         onClick={[Function]}
         role="dialog"
+        theme={
+          Object {
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+          }
+        }
       >
         <div
           className="c0"
@@ -803,7 +756,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           <Modal__ModalCard
             theme={
               Object {
-                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -868,190 +820,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "700": "#ec7e00",
                     "900": "#a36300",
                   },
-                },
-                "components": Object {
-                  "badge": Object {
-                    "skins": Object {
-                      "error": Object {
-                        "background": "#ff2d4d",
-                        "text": "#f2f2f2",
-                      },
-                      "neutral": Object {
-                        "background": "#f2f2f2",
-                        "text": "#4c4c4c",
-                      },
-                      "primary": Object {
-                        "background": "#1355d0",
-                        "text": "#f2f2f2",
-                      },
-                      "success": Object {
-                        "background": "#edfadf",
-                        "text": "#3c6510",
-                      },
-                    },
-                  },
-                  "tag": Object {
-                    "skins": Object {
-                      "error": Object {
-                        "background": "#ffe5e9",
-                        "text": "#ac001a",
-                      },
-                      "neutral": Object {
-                        "background": "#f2f2f2",
-                        "text": "#4c4c4c",
-                      },
-                      "primary": Object {
-                        "background": "#e5edfc",
-                        "text": "#1355d0",
-                      },
-                      "success": Object {
-                        "background": "#edfadf",
-                        "text": "#3c6510",
-                      },
-                      "warning": Object {
-                        "background": "#ffefd6",
-                        "text": "#a36300",
-                      },
-                    },
-                  },
-                },
-                "default": Object {
-                  "baseFontSize": 16,
-                  "breakpoints": Object {
-                    "large": Object {
-                      "columns": 12,
-                      "width": 1440,
-                    },
-                    "medium": Object {
-                      "columns": 12,
-                      "width": 1024,
-                    },
-                    "small": Object {
-                      "columns": 8,
-                      "width": 600,
-                    },
-                    "xlarge": Object {
-                      "columns": 12,
-                      "width": 1920,
-                    },
-                    "xsmall": Object {
-                      "columns": 4,
-                    },
-                  },
-                  "colors": Object {
-                    "error": Object {
-                      "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
-                      "900": "#ac001a",
-                    },
-                    "neutral": Object {
-                      "100": "#f2f2f2",
-                      "300": "#cccccc",
-                      "500": "#999999",
-                      "700": "#4c4c4c",
-                      "900": "#191919",
-                    },
-                    "primary": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
-                    },
-                    "secondary": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
-                    },
-                    "success": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
-                      "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
-                    },
-                    "warning": Object {
-                      "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
-                    },
-                  },
-                  "components": Object {
-                    "badge": Object {
-                      "skins": Object {
-                        "error": Object {
-                          "background": "#ff2d4d",
-                          "text": "#f2f2f2",
-                        },
-                        "neutral": Object {
-                          "background": "#f2f2f2",
-                          "text": "#4c4c4c",
-                        },
-                        "primary": Object {
-                          "background": "#1355d0",
-                          "text": "#f2f2f2",
-                        },
-                        "success": Object {
-                          "background": "#edfadf",
-                          "text": "#3c6510",
-                        },
-                      },
-                    },
-                    "tag": Object {
-                      "skins": Object {
-                        "error": Object {
-                          "background": "#ffe5e9",
-                          "text": "#ac001a",
-                        },
-                        "neutral": Object {
-                          "background": "#f2f2f2",
-                          "text": "#4c4c4c",
-                        },
-                        "primary": Object {
-                          "background": "#e5edfc",
-                          "text": "#1355d0",
-                        },
-                        "success": Object {
-                          "background": "#edfadf",
-                          "text": "#3c6510",
-                        },
-                        "warning": Object {
-                          "background": "#ffefd6",
-                          "text": "#a36300",
-                        },
-                      },
-                    },
-                  },
-                  "gutter": 8,
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                },
-                "gutter": 8,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
                 },
               }
             }
@@ -1167,7 +935,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               forwardedRef={null}
               theme={
                 Object {
-                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -1233,190 +1000,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#a36300",
                     },
                   },
-                  "components": Object {
-                    "badge": Object {
-                      "skins": Object {
-                        "error": Object {
-                          "background": "#ff2d4d",
-                          "text": "#f2f2f2",
-                        },
-                        "neutral": Object {
-                          "background": "#f2f2f2",
-                          "text": "#4c4c4c",
-                        },
-                        "primary": Object {
-                          "background": "#1355d0",
-                          "text": "#f2f2f2",
-                        },
-                        "success": Object {
-                          "background": "#edfadf",
-                          "text": "#3c6510",
-                        },
-                      },
-                    },
-                    "tag": Object {
-                      "skins": Object {
-                        "error": Object {
-                          "background": "#ffe5e9",
-                          "text": "#ac001a",
-                        },
-                        "neutral": Object {
-                          "background": "#f2f2f2",
-                          "text": "#4c4c4c",
-                        },
-                        "primary": Object {
-                          "background": "#e5edfc",
-                          "text": "#1355d0",
-                        },
-                        "success": Object {
-                          "background": "#edfadf",
-                          "text": "#3c6510",
-                        },
-                        "warning": Object {
-                          "background": "#ffefd6",
-                          "text": "#a36300",
-                        },
-                      },
-                    },
-                  },
-                  "default": Object {
-                    "baseFontSize": 16,
-                    "breakpoints": Object {
-                      "large": Object {
-                        "columns": 12,
-                        "width": 1440,
-                      },
-                      "medium": Object {
-                        "columns": 12,
-                        "width": 1024,
-                      },
-                      "small": Object {
-                        "columns": 8,
-                        "width": 600,
-                      },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
-                      "xsmall": Object {
-                        "columns": 4,
-                      },
-                    },
-                    "colors": Object {
-                      "error": Object {
-                        "100": "#ffe5e9",
-                        "300": "#ff6c82",
-                        "500": "#ff2d4d",
-                        "700": "#ff223d",
-                        "900": "#ac001a",
-                      },
-                      "neutral": Object {
-                        "100": "#f2f2f2",
-                        "300": "#cccccc",
-                        "500": "#999999",
-                        "700": "#4c4c4c",
-                        "900": "#191919",
-                      },
-                      "primary": Object {
-                        "100": "#e5edfc",
-                        "300": "#5a88de",
-                        "500": "#1355d0",
-                        "700": "#0e44c4",
-                        "900": "#062ab3",
-                      },
-                      "secondary": Object {
-                        "100": "#f5b3cd",
-                        "300": "#e84d8b",
-                        "500": "#de0059",
-                        "700": "#d50048",
-                        "900": "#c8002e",
-                      },
-                      "success": Object {
-                        "100": "#edfadf",
-                        "300": "#a5e064",
-                        "500": "#7ed321",
-                        "700": "#6bc818",
-                        "900": "#3c6510",
-                      },
-                      "warning": Object {
-                        "100": "#ffefd6",
-                        "300": "#f5b24d",
-                        "500": "#f09100",
-                        "700": "#ec7e00",
-                        "900": "#a36300",
-                      },
-                    },
-                    "components": Object {
-                      "badge": Object {
-                        "skins": Object {
-                          "error": Object {
-                            "background": "#ff2d4d",
-                            "text": "#f2f2f2",
-                          },
-                          "neutral": Object {
-                            "background": "#f2f2f2",
-                            "text": "#4c4c4c",
-                          },
-                          "primary": Object {
-                            "background": "#1355d0",
-                            "text": "#f2f2f2",
-                          },
-                          "success": Object {
-                            "background": "#edfadf",
-                            "text": "#3c6510",
-                          },
-                        },
-                      },
-                      "tag": Object {
-                        "skins": Object {
-                          "error": Object {
-                            "background": "#ffe5e9",
-                            "text": "#ac001a",
-                          },
-                          "neutral": Object {
-                            "background": "#f2f2f2",
-                            "text": "#4c4c4c",
-                          },
-                          "primary": Object {
-                            "background": "#e5edfc",
-                            "text": "#1355d0",
-                          },
-                          "success": Object {
-                            "background": "#edfadf",
-                            "text": "#3c6510",
-                          },
-                          "warning": Object {
-                            "background": "#ffefd6",
-                            "text": "#a36300",
-                          },
-                        },
-                      },
-                    },
-                    "gutter": 8,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  },
-                  "gutter": 8,
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
                 }
               }
             >
@@ -1424,7 +1007,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 className="c1"
                 theme={
                   Object {
-                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -1489,190 +1071,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "700": "#ec7e00",
                         "900": "#a36300",
                       },
-                    },
-                    "components": Object {
-                      "badge": Object {
-                        "skins": Object {
-                          "error": Object {
-                            "background": "#ff2d4d",
-                            "text": "#f2f2f2",
-                          },
-                          "neutral": Object {
-                            "background": "#f2f2f2",
-                            "text": "#4c4c4c",
-                          },
-                          "primary": Object {
-                            "background": "#1355d0",
-                            "text": "#f2f2f2",
-                          },
-                          "success": Object {
-                            "background": "#edfadf",
-                            "text": "#3c6510",
-                          },
-                        },
-                      },
-                      "tag": Object {
-                        "skins": Object {
-                          "error": Object {
-                            "background": "#ffe5e9",
-                            "text": "#ac001a",
-                          },
-                          "neutral": Object {
-                            "background": "#f2f2f2",
-                            "text": "#4c4c4c",
-                          },
-                          "primary": Object {
-                            "background": "#e5edfc",
-                            "text": "#1355d0",
-                          },
-                          "success": Object {
-                            "background": "#edfadf",
-                            "text": "#3c6510",
-                          },
-                          "warning": Object {
-                            "background": "#ffefd6",
-                            "text": "#a36300",
-                          },
-                        },
-                      },
-                    },
-                    "default": Object {
-                      "baseFontSize": 16,
-                      "breakpoints": Object {
-                        "large": Object {
-                          "columns": 12,
-                          "width": 1440,
-                        },
-                        "medium": Object {
-                          "columns": 12,
-                          "width": 1024,
-                        },
-                        "small": Object {
-                          "columns": 8,
-                          "width": 600,
-                        },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
-                        "xsmall": Object {
-                          "columns": 4,
-                        },
-                      },
-                      "colors": Object {
-                        "error": Object {
-                          "100": "#ffe5e9",
-                          "300": "#ff6c82",
-                          "500": "#ff2d4d",
-                          "700": "#ff223d",
-                          "900": "#ac001a",
-                        },
-                        "neutral": Object {
-                          "100": "#f2f2f2",
-                          "300": "#cccccc",
-                          "500": "#999999",
-                          "700": "#4c4c4c",
-                          "900": "#191919",
-                        },
-                        "primary": Object {
-                          "100": "#e5edfc",
-                          "300": "#5a88de",
-                          "500": "#1355d0",
-                          "700": "#0e44c4",
-                          "900": "#062ab3",
-                        },
-                        "secondary": Object {
-                          "100": "#f5b3cd",
-                          "300": "#e84d8b",
-                          "500": "#de0059",
-                          "700": "#d50048",
-                          "900": "#c8002e",
-                        },
-                        "success": Object {
-                          "100": "#edfadf",
-                          "300": "#a5e064",
-                          "500": "#7ed321",
-                          "700": "#6bc818",
-                          "900": "#3c6510",
-                        },
-                        "warning": Object {
-                          "100": "#ffefd6",
-                          "300": "#f5b24d",
-                          "500": "#f09100",
-                          "700": "#ec7e00",
-                          "900": "#a36300",
-                        },
-                      },
-                      "components": Object {
-                        "badge": Object {
-                          "skins": Object {
-                            "error": Object {
-                              "background": "#ff2d4d",
-                              "text": "#f2f2f2",
-                            },
-                            "neutral": Object {
-                              "background": "#f2f2f2",
-                              "text": "#4c4c4c",
-                            },
-                            "primary": Object {
-                              "background": "#1355d0",
-                              "text": "#f2f2f2",
-                            },
-                            "success": Object {
-                              "background": "#edfadf",
-                              "text": "#3c6510",
-                            },
-                          },
-                        },
-                        "tag": Object {
-                          "skins": Object {
-                            "error": Object {
-                              "background": "#ffe5e9",
-                              "text": "#ac001a",
-                            },
-                            "neutral": Object {
-                              "background": "#f2f2f2",
-                              "text": "#4c4c4c",
-                            },
-                            "primary": Object {
-                              "background": "#e5edfc",
-                              "text": "#1355d0",
-                            },
-                            "success": Object {
-                              "background": "#edfadf",
-                              "text": "#3c6510",
-                            },
-                            "warning": Object {
-                              "background": "#ffefd6",
-                              "text": "#a36300",
-                            },
-                          },
-                        },
-                      },
-                      "gutter": 8,
-                      "spacing": Object {
-                        "large": 24,
-                        "medium": 16,
-                        "small": 12,
-                        "xlarge": 32,
-                        "xsmall": 8,
-                        "xxlarge": 40,
-                        "xxsmall": 4,
-                        "xxxlarge": 48,
-                        "xxxsmall": 2,
-                      },
-                    },
-                    "gutter": 8,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
                     },
                   }
                 }
@@ -1681,7 +1079,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   className="c1"
                   theme={
                     Object {
-                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -1746,190 +1143,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "700": "#ec7e00",
                           "900": "#a36300",
                         },
-                      },
-                      "components": Object {
-                        "badge": Object {
-                          "skins": Object {
-                            "error": Object {
-                              "background": "#ff2d4d",
-                              "text": "#f2f2f2",
-                            },
-                            "neutral": Object {
-                              "background": "#f2f2f2",
-                              "text": "#4c4c4c",
-                            },
-                            "primary": Object {
-                              "background": "#1355d0",
-                              "text": "#f2f2f2",
-                            },
-                            "success": Object {
-                              "background": "#edfadf",
-                              "text": "#3c6510",
-                            },
-                          },
-                        },
-                        "tag": Object {
-                          "skins": Object {
-                            "error": Object {
-                              "background": "#ffe5e9",
-                              "text": "#ac001a",
-                            },
-                            "neutral": Object {
-                              "background": "#f2f2f2",
-                              "text": "#4c4c4c",
-                            },
-                            "primary": Object {
-                              "background": "#e5edfc",
-                              "text": "#1355d0",
-                            },
-                            "success": Object {
-                              "background": "#edfadf",
-                              "text": "#3c6510",
-                            },
-                            "warning": Object {
-                              "background": "#ffefd6",
-                              "text": "#a36300",
-                            },
-                          },
-                        },
-                      },
-                      "default": Object {
-                        "baseFontSize": 16,
-                        "breakpoints": Object {
-                          "large": Object {
-                            "columns": 12,
-                            "width": 1440,
-                          },
-                          "medium": Object {
-                            "columns": 12,
-                            "width": 1024,
-                          },
-                          "small": Object {
-                            "columns": 8,
-                            "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
-                          },
-                          "xsmall": Object {
-                            "columns": 4,
-                          },
-                        },
-                        "colors": Object {
-                          "error": Object {
-                            "100": "#ffe5e9",
-                            "300": "#ff6c82",
-                            "500": "#ff2d4d",
-                            "700": "#ff223d",
-                            "900": "#ac001a",
-                          },
-                          "neutral": Object {
-                            "100": "#f2f2f2",
-                            "300": "#cccccc",
-                            "500": "#999999",
-                            "700": "#4c4c4c",
-                            "900": "#191919",
-                          },
-                          "primary": Object {
-                            "100": "#e5edfc",
-                            "300": "#5a88de",
-                            "500": "#1355d0",
-                            "700": "#0e44c4",
-                            "900": "#062ab3",
-                          },
-                          "secondary": Object {
-                            "100": "#f5b3cd",
-                            "300": "#e84d8b",
-                            "500": "#de0059",
-                            "700": "#d50048",
-                            "900": "#c8002e",
-                          },
-                          "success": Object {
-                            "100": "#edfadf",
-                            "300": "#a5e064",
-                            "500": "#7ed321",
-                            "700": "#6bc818",
-                            "900": "#3c6510",
-                          },
-                          "warning": Object {
-                            "100": "#ffefd6",
-                            "300": "#f5b24d",
-                            "500": "#f09100",
-                            "700": "#ec7e00",
-                            "900": "#a36300",
-                          },
-                        },
-                        "components": Object {
-                          "badge": Object {
-                            "skins": Object {
-                              "error": Object {
-                                "background": "#ff2d4d",
-                                "text": "#f2f2f2",
-                              },
-                              "neutral": Object {
-                                "background": "#f2f2f2",
-                                "text": "#4c4c4c",
-                              },
-                              "primary": Object {
-                                "background": "#1355d0",
-                                "text": "#f2f2f2",
-                              },
-                              "success": Object {
-                                "background": "#edfadf",
-                                "text": "#3c6510",
-                              },
-                            },
-                          },
-                          "tag": Object {
-                            "skins": Object {
-                              "error": Object {
-                                "background": "#ffe5e9",
-                                "text": "#ac001a",
-                              },
-                              "neutral": Object {
-                                "background": "#f2f2f2",
-                                "text": "#4c4c4c",
-                              },
-                              "primary": Object {
-                                "background": "#e5edfc",
-                                "text": "#1355d0",
-                              },
-                              "success": Object {
-                                "background": "#edfadf",
-                                "text": "#3c6510",
-                              },
-                              "warning": Object {
-                                "background": "#ffefd6",
-                                "text": "#a36300",
-                              },
-                            },
-                          },
-                        },
-                        "gutter": 8,
-                        "spacing": Object {
-                          "large": 24,
-                          "medium": 16,
-                          "small": 12,
-                          "xlarge": 32,
-                          "xsmall": 8,
-                          "xxlarge": 40,
-                          "xxsmall": 4,
-                          "xxxlarge": 48,
-                          "xxxsmall": 2,
-                        },
-                      },
-                      "gutter": 8,
-                      "spacing": Object {
-                        "large": 24,
-                        "medium": 16,
-                        "small": 12,
-                        "xlarge": 32,
-                        "xsmall": 8,
-                        "xxlarge": 40,
-                        "xxsmall": 4,
-                        "xxxlarge": 48,
-                        "xxxsmall": 2,
                       },
                     }
                   }
@@ -1965,7 +1178,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     forwardedRef={null}
                     theme={
                       Object {
-                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -2030,190 +1242,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "700": "#ec7e00",
                             "900": "#a36300",
                           },
-                        },
-                        "components": Object {
-                          "badge": Object {
-                            "skins": Object {
-                              "error": Object {
-                                "background": "#ff2d4d",
-                                "text": "#f2f2f2",
-                              },
-                              "neutral": Object {
-                                "background": "#f2f2f2",
-                                "text": "#4c4c4c",
-                              },
-                              "primary": Object {
-                                "background": "#1355d0",
-                                "text": "#f2f2f2",
-                              },
-                              "success": Object {
-                                "background": "#edfadf",
-                                "text": "#3c6510",
-                              },
-                            },
-                          },
-                          "tag": Object {
-                            "skins": Object {
-                              "error": Object {
-                                "background": "#ffe5e9",
-                                "text": "#ac001a",
-                              },
-                              "neutral": Object {
-                                "background": "#f2f2f2",
-                                "text": "#4c4c4c",
-                              },
-                              "primary": Object {
-                                "background": "#e5edfc",
-                                "text": "#1355d0",
-                              },
-                              "success": Object {
-                                "background": "#edfadf",
-                                "text": "#3c6510",
-                              },
-                              "warning": Object {
-                                "background": "#ffefd6",
-                                "text": "#a36300",
-                              },
-                            },
-                          },
-                        },
-                        "default": Object {
-                          "baseFontSize": 16,
-                          "breakpoints": Object {
-                            "large": Object {
-                              "columns": 12,
-                              "width": 1440,
-                            },
-                            "medium": Object {
-                              "columns": 12,
-                              "width": 1024,
-                            },
-                            "small": Object {
-                              "columns": 8,
-                              "width": 600,
-                            },
-                            "xlarge": Object {
-                              "columns": 12,
-                              "width": 1920,
-                            },
-                            "xsmall": Object {
-                              "columns": 4,
-                            },
-                          },
-                          "colors": Object {
-                            "error": Object {
-                              "100": "#ffe5e9",
-                              "300": "#ff6c82",
-                              "500": "#ff2d4d",
-                              "700": "#ff223d",
-                              "900": "#ac001a",
-                            },
-                            "neutral": Object {
-                              "100": "#f2f2f2",
-                              "300": "#cccccc",
-                              "500": "#999999",
-                              "700": "#4c4c4c",
-                              "900": "#191919",
-                            },
-                            "primary": Object {
-                              "100": "#e5edfc",
-                              "300": "#5a88de",
-                              "500": "#1355d0",
-                              "700": "#0e44c4",
-                              "900": "#062ab3",
-                            },
-                            "secondary": Object {
-                              "100": "#f5b3cd",
-                              "300": "#e84d8b",
-                              "500": "#de0059",
-                              "700": "#d50048",
-                              "900": "#c8002e",
-                            },
-                            "success": Object {
-                              "100": "#edfadf",
-                              "300": "#a5e064",
-                              "500": "#7ed321",
-                              "700": "#6bc818",
-                              "900": "#3c6510",
-                            },
-                            "warning": Object {
-                              "100": "#ffefd6",
-                              "300": "#f5b24d",
-                              "500": "#f09100",
-                              "700": "#ec7e00",
-                              "900": "#a36300",
-                            },
-                          },
-                          "components": Object {
-                            "badge": Object {
-                              "skins": Object {
-                                "error": Object {
-                                  "background": "#ff2d4d",
-                                  "text": "#f2f2f2",
-                                },
-                                "neutral": Object {
-                                  "background": "#f2f2f2",
-                                  "text": "#4c4c4c",
-                                },
-                                "primary": Object {
-                                  "background": "#1355d0",
-                                  "text": "#f2f2f2",
-                                },
-                                "success": Object {
-                                  "background": "#edfadf",
-                                  "text": "#3c6510",
-                                },
-                              },
-                            },
-                            "tag": Object {
-                              "skins": Object {
-                                "error": Object {
-                                  "background": "#ffe5e9",
-                                  "text": "#ac001a",
-                                },
-                                "neutral": Object {
-                                  "background": "#f2f2f2",
-                                  "text": "#4c4c4c",
-                                },
-                                "primary": Object {
-                                  "background": "#e5edfc",
-                                  "text": "#1355d0",
-                                },
-                                "success": Object {
-                                  "background": "#edfadf",
-                                  "text": "#3c6510",
-                                },
-                                "warning": Object {
-                                  "background": "#ffefd6",
-                                  "text": "#a36300",
-                                },
-                              },
-                            },
-                          },
-                          "gutter": 8,
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        },
-                        "gutter": 8,
-                        "spacing": Object {
-                          "large": 24,
-                          "medium": 16,
-                          "small": 12,
-                          "xlarge": 32,
-                          "xsmall": 8,
-                          "xxlarge": 40,
-                          "xxsmall": 4,
-                          "xxxlarge": 48,
-                          "xxxsmall": 2,
                         },
                       }
                     }

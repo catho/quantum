@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Colors from '../Colors';
 import Card from '../Card';
 import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
-import { theme as defaultTheme } from '../shared';
+import { hexToRgba, theme } from '../shared';
 
-function getBreakpoint({ theme: { breakpoints } }) {
+const { breakpoints, colors } = theme;
+
+function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   const sizes = {
     xsmall: '90%',
     small: '400px',
@@ -18,7 +19,8 @@ function getBreakpoint({ theme: { breakpoints } }) {
     large: '800px',
   };
   return Object.entries(sizes).map(
-    ([breakpoint, value]) => query(breakpoints)[breakpoint]`width: ${value};`,
+    ([breakpoint, value]) =>
+      query(themeBreakpoints)[breakpoint]`width: ${value};`,
   );
 }
 
@@ -42,7 +44,11 @@ CloseIcon.displayName = 'CloseIcon';
 
 const ModalWrapper = styled.div`
   align-items: center;
-  background-color: ${Colors.SHADOW[50]};
+  background-color: ${({
+    theme: {
+      colors: { neutral },
+    },
+  }) => hexToRgba(neutral[700], 0.5)};
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -160,7 +166,7 @@ class Modal extends React.Component {
       children,
       onClose,
       closeButtonAriaLabel,
-      theme,
+      theme: themeProp,
       ...rest
     } = this.props;
 
@@ -169,9 +175,10 @@ class Modal extends React.Component {
         onClick={this.handleClickOutside}
         ref={this.modalWrapperRef}
         role="dialog"
+        theme={themeProp}
         {...rest}
       >
-        <ModalCard theme={theme}>
+        <ModalCard theme={themeProp}>
           {children}
           <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
         </ModalCard>
@@ -192,6 +199,7 @@ Modal.propTypes = {
   closeButtonAriaLabel: PropTypes.string,
   theme: PropTypes.shape({
     breakpoints: PropTypes.object,
+    colors: PropTypes.object,
   }),
 };
 
@@ -199,7 +207,10 @@ Modal.defaultProps = {
   children: undefined,
   onClose: () => {},
   closeButtonAriaLabel: 'close dialog',
-  theme: defaultTheme,
+  theme: {
+    breakpoints,
+    colors,
+  },
 };
 
 export default Modal;
