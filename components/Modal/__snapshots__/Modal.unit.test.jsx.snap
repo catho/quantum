@@ -296,6 +296,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
           },
         },
+        "snackbar": Object {
+          "skins": Object {
+            "error": Object {
+              "background": "#ffe5e9",
+              "text": "#ac001a",
+            },
+            "neutral": Object {
+              "background": "#4c4c4c",
+              "text": "#f2f2f2",
+            },
+            "primary": Object {
+              "background": "#0e44c4",
+              "text": "#f2f2f2",
+            },
+            "success": Object {
+              "background": "#edfadf",
+              "text": "#3c6510",
+            },
+            "warning": Object {
+              "background": "#ffefd6",
+              "text": "#a36300",
+            },
+          },
+        },
         "tag": Object {
           "skins": Object {
             "error": Object {
@@ -406,6 +430,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "success": Object {
                 "background": "#edfadf",
                 "text": "#3c6510",
+              },
+            },
+          },
+          "snackbar": Object {
+            "skins": Object {
+              "error": Object {
+                "background": "#ffe5e9",
+                "text": "#ac001a",
+              },
+              "neutral": Object {
+                "background": "#4c4c4c",
+                "text": "#f2f2f2",
+              },
+              "primary": Object {
+                "background": "#0e44c4",
+                "text": "#f2f2f2",
+              },
+              "success": Object {
+                "background": "#edfadf",
+                "text": "#3c6510",
+              },
+              "warning": Object {
+                "background": "#ffefd6",
+                "text": "#a36300",
               },
             },
           },
@@ -890,6 +938,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                     },
                   },
+                  "snackbar": Object {
+                    "skins": Object {
+                      "error": Object {
+                        "background": "#ffe5e9",
+                        "text": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "background": "#4c4c4c",
+                        "text": "#f2f2f2",
+                      },
+                      "primary": Object {
+                        "background": "#0e44c4",
+                        "text": "#f2f2f2",
+                      },
+                      "success": Object {
+                        "background": "#edfadf",
+                        "text": "#3c6510",
+                      },
+                      "warning": Object {
+                        "background": "#ffefd6",
+                        "text": "#a36300",
+                      },
+                    },
+                  },
                   "tag": Object {
                     "skins": Object {
                       "error": Object {
@@ -1000,6 +1072,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "success": Object {
                           "background": "#edfadf",
                           "text": "#3c6510",
+                        },
+                      },
+                    },
+                    "snackbar": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#4c4c4c",
+                          "text": "#f2f2f2",
+                        },
+                        "primary": Object {
+                          "background": "#0e44c4",
+                          "text": "#f2f2f2",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
                         },
                       },
                     },
@@ -1254,6 +1350,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                       },
                     },
+                    "snackbar": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "background": "#ffe5e9",
+                          "text": "#ac001a",
+                        },
+                        "neutral": Object {
+                          "background": "#4c4c4c",
+                          "text": "#f2f2f2",
+                        },
+                        "primary": Object {
+                          "background": "#0e44c4",
+                          "text": "#f2f2f2",
+                        },
+                        "success": Object {
+                          "background": "#edfadf",
+                          "text": "#3c6510",
+                        },
+                        "warning": Object {
+                          "background": "#ffefd6",
+                          "text": "#a36300",
+                        },
+                      },
+                    },
                     "tag": Object {
                       "skins": Object {
                         "error": Object {
@@ -1364,6 +1484,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "success": Object {
                             "background": "#edfadf",
                             "text": "#3c6510",
+                          },
+                        },
+                      },
+                      "snackbar": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#4c4c4c",
+                            "text": "#f2f2f2",
+                          },
+                          "primary": Object {
+                            "background": "#0e44c4",
+                            "text": "#f2f2f2",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
                           },
                         },
                       },
@@ -1511,6 +1655,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                         },
                       },
+                      "snackbar": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "background": "#ffe5e9",
+                            "text": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "background": "#4c4c4c",
+                            "text": "#f2f2f2",
+                          },
+                          "primary": Object {
+                            "background": "#0e44c4",
+                            "text": "#f2f2f2",
+                          },
+                          "success": Object {
+                            "background": "#edfadf",
+                            "text": "#3c6510",
+                          },
+                          "warning": Object {
+                            "background": "#ffefd6",
+                            "text": "#a36300",
+                          },
+                        },
+                      },
                       "tag": Object {
                         "skins": Object {
                           "error": Object {
@@ -1621,6 +1789,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "success": Object {
                               "background": "#edfadf",
                               "text": "#3c6510",
+                            },
+                          },
+                        },
+                        "snackbar": Object {
+                          "skins": Object {
+                            "error": Object {
+                              "background": "#ffe5e9",
+                              "text": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "background": "#4c4c4c",
+                              "text": "#f2f2f2",
+                            },
+                            "primary": Object {
+                              "background": "#0e44c4",
+                              "text": "#f2f2f2",
+                            },
+                            "success": Object {
+                              "background": "#edfadf",
+                              "text": "#3c6510",
+                            },
+                            "warning": Object {
+                              "background": "#ffefd6",
+                              "text": "#a36300",
                             },
                           },
                         },
@@ -1768,6 +1960,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                           },
                         },
+                        "snackbar": Object {
+                          "skins": Object {
+                            "error": Object {
+                              "background": "#ffe5e9",
+                              "text": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "background": "#4c4c4c",
+                              "text": "#f2f2f2",
+                            },
+                            "primary": Object {
+                              "background": "#0e44c4",
+                              "text": "#f2f2f2",
+                            },
+                            "success": Object {
+                              "background": "#edfadf",
+                              "text": "#3c6510",
+                            },
+                            "warning": Object {
+                              "background": "#ffefd6",
+                              "text": "#a36300",
+                            },
+                          },
+                        },
                         "tag": Object {
                           "skins": Object {
                             "error": Object {
@@ -1878,6 +2094,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "success": Object {
                                 "background": "#edfadf",
                                 "text": "#3c6510",
+                              },
+                            },
+                          },
+                          "snackbar": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#4c4c4c",
+                                "text": "#f2f2f2",
+                              },
+                              "primary": Object {
+                                "background": "#0e44c4",
+                                "text": "#f2f2f2",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
                               },
                             },
                           },
@@ -2052,6 +2292,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                             },
                           },
+                          "snackbar": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "background": "#ffe5e9",
+                                "text": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "background": "#4c4c4c",
+                                "text": "#f2f2f2",
+                              },
+                              "primary": Object {
+                                "background": "#0e44c4",
+                                "text": "#f2f2f2",
+                              },
+                              "success": Object {
+                                "background": "#edfadf",
+                                "text": "#3c6510",
+                              },
+                              "warning": Object {
+                                "background": "#ffefd6",
+                                "text": "#a36300",
+                              },
+                            },
+                          },
                           "tag": Object {
                             "skins": Object {
                               "error": Object {
@@ -2162,6 +2426,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "success": Object {
                                   "background": "#edfadf",
                                   "text": "#3c6510",
+                                },
+                              },
+                            },
+                            "snackbar": Object {
+                              "skins": Object {
+                                "error": Object {
+                                  "background": "#ffe5e9",
+                                  "text": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "background": "#4c4c4c",
+                                  "text": "#f2f2f2",
+                                },
+                                "primary": Object {
+                                  "background": "#0e44c4",
+                                  "text": "#f2f2f2",
+                                },
+                                "success": Object {
+                                  "background": "#edfadf",
+                                  "text": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "background": "#ffefd6",
+                                  "text": "#a36300",
                                 },
                               },
                             },
