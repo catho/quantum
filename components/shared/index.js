@@ -8,6 +8,7 @@ import BREAKPOINTS from './breakpoints';
 import uniqId from './uniqId';
 import * as INPUT_STYLE from './inputStyle';
 import ButtonGroupLabel from './ButtonGroupLabel';
+import hexToRgba from './hexToRgba';
 
 export {
   ErrorMessage,
@@ -20,4 +21,5 @@ export {
   INPUT_STYLE,
   uniqId,
   ButtonGroupLabel,
+  hexToRgba,
 };
