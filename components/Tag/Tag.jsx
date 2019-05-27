@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Icon from '../Icon';
-import { colors, components, spacing } from '../shared/theme';
+import {
+  colors,
+  components,
+  spacing,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 
 const _colors = ({
   inverted,
@@ -41,17 +46,18 @@ const wrapperColors = props => {
 const wrapperSize = ({
   theme: {
     spacing: { xxsmall },
+    baseFontSize,
   },
   size: propSize,
 }) =>
   ({
     small: `
-    font-size: 12px;
+    font-size: ${baseFontSize * 0.75}px;
     padding-top: ${xxsmall}px;
     padding-bottom: ${xxsmall}px;
   `,
     large: `
-    font-size: 18px;
+    font-size: ${baseFontSize * 1.125}px;
   `,
   }[propSize]);
 
@@ -75,11 +81,11 @@ const Content = styled.div`
   `}
 `;
 
-const iconSize = ({ size }) =>
+const iconSize = ({ size, theme: { baseFontSize } }) =>
   ({
-    small: '14px',
-    medium: '18px',
-    large: '20px',
+    small: `${baseFontSize * 0.875}px`,
+    medium: `${baseFontSize * 1.125}px`,
+    large: `${baseFontSize * 1.25}px`,
   }[size]);
 
 const CloseIcon = styled(Icon)``;
@@ -146,6 +152,7 @@ Tag.defaultProps = {
   skin: 'neutral',
   onClose: undefined,
   theme: {
+    baseFontSize: defaultBaseFontSize,
     colors,
     components: {
       tag: components.tag,

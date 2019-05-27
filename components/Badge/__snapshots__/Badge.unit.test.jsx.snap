@@ -10,13 +10,13 @@ exports[`<Badge /> Should match snapshot With number 1`] = `
 .c1 {
   border-radius: 8px;
   display: inline-block;
-  font-size: 12px;
   font-weight: bold;
   height: 20px;
   line-height: 20px;
   min-width: 20px;
   text-align: center;
   box-sizing: border-box;
+  font-size: 12px;
   padding-left: 2px;
   padding-right: 2px;
   background-color: #f2f2f2;
@@ -46,13 +46,13 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
 .c1 {
   border-radius: 8px;
   display: inline-block;
-  font-size: 12px;
   font-weight: bold;
   height: 20px;
   line-height: 20px;
   min-width: 20px;
   text-align: center;
   box-sizing: border-box;
+  font-size: 12px;
   padding-left: 2px;
   padding-right: 2px;
   position: absolute;

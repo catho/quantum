@@ -66,6 +66,7 @@ const colors = {
 };
 
 const gutter = 8;
+const baseFontSize = 16;
 
 const spacing = {
   xxxsmall: gutter * 0.25, // 2
@@ -148,6 +149,21 @@ const components = {
   },
 };
 
-const theme = { breakpoints, gutter, colors, components, spacing };
+const theme = {
+  breakpoints,
+  gutter,
+  colors,
+  components,
+  spacing,
+  baseFontSize,
+};
 
-export { breakpoints, gutter, colors, components, spacing, theme as default };
+export {
+  breakpoints,
+  gutter,
+  colors,
+  components,
+  spacing,
+  baseFontSize,
+  theme as default,
+};

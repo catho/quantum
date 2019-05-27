@@ -209,6 +209,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   onClose={[Function]}
   theme={
     Object {
+      "baseFontSize": 16,
       "breakpoints": Object {
         "large": Object {
           "columns": 12,
@@ -341,6 +342,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
         },
       },
       "default": Object {
+        "baseFontSize": 16,
         "breakpoints": Object {
           "large": Object {
             "columns": 12,
@@ -841,6 +843,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           <Modal__ModalCard
             theme={
               Object {
+                "baseFontSize": 16,
                 "breakpoints": Object {
                   "large": Object {
                     "columns": 12,
@@ -973,6 +976,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                 },
                 "default": Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -1243,6 +1247,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               forwardedRef={null}
               theme={
                 Object {
+                  "baseFontSize": 16,
                   "breakpoints": Object {
                     "large": Object {
                       "columns": 12,
@@ -1375,6 +1380,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     },
                   },
                   "default": Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -1538,6 +1544,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 className="c1"
                 theme={
                   Object {
+                    "baseFontSize": 16,
                     "breakpoints": Object {
                       "large": Object {
                         "columns": 12,
@@ -1670,6 +1677,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                     },
                     "default": Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -1833,6 +1841,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   className="c1"
                   theme={
                     Object {
+                      "baseFontSize": 16,
                       "breakpoints": Object {
                         "large": Object {
                           "columns": 12,
@@ -1965,6 +1974,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                       },
                       "default": Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -2155,6 +2165,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     forwardedRef={null}
                     theme={
                       Object {
+                        "baseFontSize": 16,
                         "breakpoints": Object {
                           "large": Object {
                             "columns": 12,
@@ -2287,6 +2298,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                         },
                         "default": Object {
+                          "baseFontSize": 16,
                           "breakpoints": Object {
                             "large": Object {
                               "columns": 12,

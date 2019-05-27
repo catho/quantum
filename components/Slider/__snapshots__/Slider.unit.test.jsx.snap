@@ -2,20 +2,20 @@
 
 exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disabled 1`] = `
 .c2 {
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
   border-radius: 4px;
-  color: #FFFFFF;
-  font-size: 16px;
   font-weight: bold;
   opacity: 0;
-  padding: 4px 8px;
   position: absolute;
   line-height: 0;
   text-align: center;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 4px 8px;
   left: 50%;
   bottom: 130%;
   -webkit-transform: translateX(-50%);
@@ -222,20 +222,20 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
 
 exports[`<Slider /> Snapshots should match the snapshot when have just one handle 1`] = `
 .c2 {
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
   border-radius: 4px;
-  color: #FFFFFF;
-  font-size: 16px;
   font-weight: bold;
   opacity: 0;
-  padding: 4px 8px;
   position: absolute;
   line-height: 0;
   text-align: center;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 4px 8px;
   left: 50%;
   bottom: 130%;
   -webkit-transform: translateX(-50%);
@@ -442,20 +442,20 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 
 exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`] = `
 .c2 {
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
   border-radius: 4px;
-  color: #FFFFFF;
-  font-size: 16px;
   font-weight: bold;
   opacity: 0;
-  padding: 4px 8px;
   position: absolute;
   line-height: 0;
   text-align: center;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 4px 8px;
   left: 50%;
   bottom: 130%;
   -webkit-transform: translateX(-50%);

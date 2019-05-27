@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { components, spacing } from '../shared/theme';
+import {
+  components,
+  spacing,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 
 const getColors = ({
   skin,
@@ -39,7 +43,6 @@ const BadgeWrapper = styled.div`
 const StyledBadge = styled.span`
   border-radius: 8px;
   display: inline-block;
-  font-size: 12px;
   font-weight: bold;
   height: 20px;
   line-height: 20px;
@@ -51,6 +54,7 @@ const StyledBadge = styled.span`
     value,
     theme: {
       spacing: { xxxsmall, xxsmall },
+      baseFontSize,
     },
     number,
   }) => {
@@ -58,6 +62,7 @@ const StyledBadge = styled.span`
       !Number.isInteger(value) || number >= 10 ? xxsmall : xxxsmall;
 
     return `
+      font-size: ${baseFontSize * 0.75}px;
       padding-left: ${padding}px;
       padding-right: ${padding}px;
     `;
@@ -111,6 +116,7 @@ Badge.propTypes = {
   /** Swap background and text color */
   inverted: PropTypes.bool,
   theme: PropTypes.shape({
+    baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
     components: PropTypes.shape({
       badge: PropTypes.object,
@@ -124,6 +130,7 @@ Badge.defaultProps = {
   children: '',
   number: 0,
   theme: {
+    baseFontSize: defaultBaseFontSize,
     spacing,
     components: {
       badge: components.badge,
