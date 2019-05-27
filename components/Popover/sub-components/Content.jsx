@@ -8,7 +8,12 @@ import { components, spacing } from '../../shared/theme';
 import getArrow from '../arrowProperties';
 import Button from '../../Button';
 
-const _colors = ({
+const _getThemeSpacing = ({ spacing: { xsmall, medium } }) => ({
+  xsmall,
+  medium,
+});
+
+const _getColors = ({
   skin,
   theme: {
     components: {
@@ -39,11 +44,11 @@ const PopoverContent = styled.div`
   display: flex;
   border-radius: 4px;
   font-size: 16px;
-  ${({
-    theme: {
-      spacing: { xsmall },
-    },
-  }) => `padding: ${xsmall}px`};
+  ${({ theme }) => {
+    const { xsmall } = _getThemeSpacing(theme);
+    return `padding: ${xsmall}px`;
+  }}}
+
   position: absolute;
   line-height: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -54,7 +59,7 @@ const PopoverContent = styled.div`
       getArrow(placement, skin, theme, inverted)};
   }
 
-  ${_colors}
+  ${_getColors}
 `;
 
 const CloseButton = styled(Button.Icon).attrs({
@@ -62,11 +67,11 @@ const CloseButton = styled(Button.Icon).attrs({
 })`
   display: inherit;
   height: auto;
-  ${({
-    theme: {
-      spacing: { medium },
-    },
-  }) => `margin-left: ${medium}px`};
+  ${({ theme }) => {
+    const { medium } = _getThemeSpacing(theme);
+    return `margin-left: ${medium}px`;
+  }}}
+
   opacity: 0.8;
   padding: 0;
   transition: opacity 0.4s ease;
