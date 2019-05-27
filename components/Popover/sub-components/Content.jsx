@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Colors from '../../Colors';
-import { components, spacing } from '../../shared/theme';
+import { components, spacing, colors } from '../../shared/theme';
 import getArrow from '../arrowProperties';
 import Button from '../../Button';
+import { hexToRgba } from '../../shared';
 
 const _getThemeSpacing = ({ spacing: { xsmall, medium } }) => ({
   xsmall,
@@ -39,7 +39,11 @@ const _getColors = ({
 };
 
 const PopoverContent = styled.div`
-  box-shadow: 0 2px 4px 0 ${Colors.SHADOW[50]};
+  ${({
+    theme: {
+      colors: { neutral },
+    },
+  }) => `box-shadow: 0 2px 4px 0 ${hexToRgba(neutral[700], 0.5)}`};
   align-items: start;
   display: flex;
   border-radius: 4px;
@@ -133,6 +137,7 @@ Content.propTypes = {
   onPopoverClose: PropTypes.func,
   skin: PropTypes.oneOf(['neutral', 'success', 'warning', 'error']),
   theme: PropTypes.shape({
+    colors: PropTypes.object,
     spacing: PropTypes.object,
     components: PropTypes.shape({
       badge: PropTypes.object,
@@ -146,6 +151,7 @@ Content.defaultProps = {
   onPopoverClose: () => {},
   skin: 'neutral',
   theme: {
+    colors,
     spacing,
     components: {
       popover: components.popover,

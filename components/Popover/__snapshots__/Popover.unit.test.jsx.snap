@@ -901,7 +901,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -1052,6 +1052,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           skin="neutral"
           theme={
             Object {
+              "colors": Object {
+                "error": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "neutral": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "primary": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "secondary": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "success": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "warning": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+              },
               "components": Object {
                 "popover": Object {
                   "skins": Object {
@@ -1158,7 +1202,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -1260,6 +1304,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               skin="neutral"
               theme={
                 Object {
+                  "colors": Object {
+                    "error": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "primary": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "secondary": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "success": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "warning": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                  },
                   "components": Object {
                     "popover": Object {
                       "skins": Object {
@@ -1307,8 +1395,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "box-shadow:0 2px 4px 0 ",
-                        "rgba(128, 128, 128, 0.5)",
+                        [Function],
                         ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
                         [Function],
                         "}position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
@@ -1334,6 +1421,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 skin="neutral"
                 theme={
                   Object {
+                    "colors": Object {
+                      "error": Object {
+                        "100": "#ffe5e9",
+                        "300": "#ff6c82",
+                        "500": "#ff2d4d",
+                        "700": "#ff223d",
+                        "900": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "100": "#f2f2f2",
+                        "300": "#cccccc",
+                        "500": "#999999",
+                        "700": "#4c4c4c",
+                        "900": "#191919",
+                      },
+                      "primary": Object {
+                        "100": "#e5edfc",
+                        "300": "#5a88de",
+                        "500": "#1355d0",
+                        "700": "#0e44c4",
+                        "900": "#062ab3",
+                      },
+                      "secondary": Object {
+                        "100": "#f5b3cd",
+                        "300": "#e84d8b",
+                        "500": "#de0059",
+                        "700": "#d50048",
+                        "900": "#c8002e",
+                      },
+                      "success": Object {
+                        "100": "#edfadf",
+                        "300": "#a5e064",
+                        "500": "#7ed321",
+                        "700": "#6bc818",
+                        "900": "#3c6510",
+                      },
+                      "warning": Object {
+                        "100": "#ffefd6",
+                        "300": "#f5b24d",
+                        "500": "#f09100",
+                        "700": "#ec7e00",
+                        "900": "#a36300",
+                      },
+                    },
                     "components": Object {
                       "popover": Object {
                         "skins": Object {
@@ -1410,6 +1541,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     onClick={[Function]}
                     theme={
                       Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "primary": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "secondary": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "success": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "warning": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                        },
                         "components": Object {
                           "popover": Object {
                             "skins": Object {
@@ -1493,6 +1668,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       onClick={[Function]}
                       theme={
                         Object {
+                          "colors": Object {
+                            "error": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "primary": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "secondary": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "success": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "warning": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                          },
                           "components": Object {
                             "popover": Object {
                               "skins": Object {
@@ -1540,6 +1759,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         skin="primary"
                         theme={
                           Object {
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
                             "components": Object {
                               "popover": Object {
                                 "skins": Object {
@@ -1587,6 +1850,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           skin="primary"
                           theme={
                             Object {
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
                               "components": Object {
                                 "popover": Object {
                                   "skins": Object {
@@ -1682,6 +1989,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             skin="primary"
                             theme={
                               Object {
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
                                 "components": Object {
                                   "popover": Object {
                                     "skins": Object {
@@ -1940,7 +2291,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -2091,6 +2442,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           skin="success"
           theme={
             Object {
+              "colors": Object {
+                "error": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "neutral": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "primary": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "secondary": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "success": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "warning": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+              },
               "components": Object {
                 "popover": Object {
                   "skins": Object {
@@ -2197,7 +2592,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -2299,6 +2694,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               skin="success"
               theme={
                 Object {
+                  "colors": Object {
+                    "error": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "primary": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "secondary": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "success": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "warning": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                  },
                   "components": Object {
                     "popover": Object {
                       "skins": Object {
@@ -2346,8 +2785,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "box-shadow:0 2px 4px 0 ",
-                        "rgba(128, 128, 128, 0.5)",
+                        [Function],
                         ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
                         [Function],
                         "}position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
@@ -2373,6 +2811,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 skin="success"
                 theme={
                   Object {
+                    "colors": Object {
+                      "error": Object {
+                        "100": "#ffe5e9",
+                        "300": "#ff6c82",
+                        "500": "#ff2d4d",
+                        "700": "#ff223d",
+                        "900": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "100": "#f2f2f2",
+                        "300": "#cccccc",
+                        "500": "#999999",
+                        "700": "#4c4c4c",
+                        "900": "#191919",
+                      },
+                      "primary": Object {
+                        "100": "#e5edfc",
+                        "300": "#5a88de",
+                        "500": "#1355d0",
+                        "700": "#0e44c4",
+                        "900": "#062ab3",
+                      },
+                      "secondary": Object {
+                        "100": "#f5b3cd",
+                        "300": "#e84d8b",
+                        "500": "#de0059",
+                        "700": "#d50048",
+                        "900": "#c8002e",
+                      },
+                      "success": Object {
+                        "100": "#edfadf",
+                        "300": "#a5e064",
+                        "500": "#7ed321",
+                        "700": "#6bc818",
+                        "900": "#3c6510",
+                      },
+                      "warning": Object {
+                        "100": "#ffefd6",
+                        "300": "#f5b24d",
+                        "500": "#f09100",
+                        "700": "#ec7e00",
+                        "900": "#a36300",
+                      },
+                    },
                     "components": Object {
                       "popover": Object {
                         "skins": Object {
@@ -2449,6 +2931,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     onClick={[Function]}
                     theme={
                       Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "primary": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "secondary": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "success": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "warning": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                        },
                         "components": Object {
                           "popover": Object {
                             "skins": Object {
@@ -2532,6 +3058,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       onClick={[Function]}
                       theme={
                         Object {
+                          "colors": Object {
+                            "error": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "primary": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "secondary": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "success": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "warning": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                          },
                           "components": Object {
                             "popover": Object {
                               "skins": Object {
@@ -2579,6 +3149,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         skin="primary"
                         theme={
                           Object {
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
                             "components": Object {
                               "popover": Object {
                                 "skins": Object {
@@ -2626,6 +3240,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           skin="primary"
                           theme={
                             Object {
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
                               "components": Object {
                                 "popover": Object {
                                   "skins": Object {
@@ -2721,6 +3379,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             skin="primary"
                             theme={
                               Object {
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
                                 "components": Object {
                                   "popover": Object {
                                     "skins": Object {
@@ -2979,7 +3681,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -3130,6 +3832,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           skin="warning"
           theme={
             Object {
+              "colors": Object {
+                "error": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "neutral": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "primary": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "secondary": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "success": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "warning": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+              },
               "components": Object {
                 "popover": Object {
                   "skins": Object {
@@ -3236,7 +3982,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -3338,6 +4084,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               skin="warning"
               theme={
                 Object {
+                  "colors": Object {
+                    "error": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "primary": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "secondary": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "success": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "warning": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                  },
                   "components": Object {
                     "popover": Object {
                       "skins": Object {
@@ -3385,8 +4175,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "box-shadow:0 2px 4px 0 ",
-                        "rgba(128, 128, 128, 0.5)",
+                        [Function],
                         ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
                         [Function],
                         "}position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
@@ -3412,6 +4201,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 skin="warning"
                 theme={
                   Object {
+                    "colors": Object {
+                      "error": Object {
+                        "100": "#ffe5e9",
+                        "300": "#ff6c82",
+                        "500": "#ff2d4d",
+                        "700": "#ff223d",
+                        "900": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "100": "#f2f2f2",
+                        "300": "#cccccc",
+                        "500": "#999999",
+                        "700": "#4c4c4c",
+                        "900": "#191919",
+                      },
+                      "primary": Object {
+                        "100": "#e5edfc",
+                        "300": "#5a88de",
+                        "500": "#1355d0",
+                        "700": "#0e44c4",
+                        "900": "#062ab3",
+                      },
+                      "secondary": Object {
+                        "100": "#f5b3cd",
+                        "300": "#e84d8b",
+                        "500": "#de0059",
+                        "700": "#d50048",
+                        "900": "#c8002e",
+                      },
+                      "success": Object {
+                        "100": "#edfadf",
+                        "300": "#a5e064",
+                        "500": "#7ed321",
+                        "700": "#6bc818",
+                        "900": "#3c6510",
+                      },
+                      "warning": Object {
+                        "100": "#ffefd6",
+                        "300": "#f5b24d",
+                        "500": "#f09100",
+                        "700": "#ec7e00",
+                        "900": "#a36300",
+                      },
+                    },
                     "components": Object {
                       "popover": Object {
                         "skins": Object {
@@ -3488,6 +4321,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     onClick={[Function]}
                     theme={
                       Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "primary": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "secondary": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "success": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "warning": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                        },
                         "components": Object {
                           "popover": Object {
                             "skins": Object {
@@ -3571,6 +4448,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       onClick={[Function]}
                       theme={
                         Object {
+                          "colors": Object {
+                            "error": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "primary": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "secondary": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "success": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "warning": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                          },
                           "components": Object {
                             "popover": Object {
                               "skins": Object {
@@ -3618,6 +4539,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         skin="primary"
                         theme={
                           Object {
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
                             "components": Object {
                               "popover": Object {
                                 "skins": Object {
@@ -3665,6 +4630,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           skin="primary"
                           theme={
                             Object {
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
                               "components": Object {
                                 "popover": Object {
                                   "skins": Object {
@@ -3760,6 +4769,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             skin="primary"
                             theme={
                               Object {
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
                                 "components": Object {
                                   "popover": Object {
                                     "skins": Object {
@@ -4018,7 +5071,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -4169,6 +5222,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           skin="error"
           theme={
             Object {
+              "colors": Object {
+                "error": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "neutral": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "primary": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "secondary": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "success": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "warning": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+              },
               "components": Object {
                 "popover": Object {
                   "skins": Object {
@@ -4275,7 +5372,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -4377,6 +5474,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               skin="error"
               theme={
                 Object {
+                  "colors": Object {
+                    "error": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "primary": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "secondary": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "success": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "warning": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                  },
                   "components": Object {
                     "popover": Object {
                       "skins": Object {
@@ -4424,8 +5565,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "box-shadow:0 2px 4px 0 ",
-                        "rgba(128, 128, 128, 0.5)",
+                        [Function],
                         ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
                         [Function],
                         "}position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
@@ -4451,6 +5591,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 skin="error"
                 theme={
                   Object {
+                    "colors": Object {
+                      "error": Object {
+                        "100": "#ffe5e9",
+                        "300": "#ff6c82",
+                        "500": "#ff2d4d",
+                        "700": "#ff223d",
+                        "900": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "100": "#f2f2f2",
+                        "300": "#cccccc",
+                        "500": "#999999",
+                        "700": "#4c4c4c",
+                        "900": "#191919",
+                      },
+                      "primary": Object {
+                        "100": "#e5edfc",
+                        "300": "#5a88de",
+                        "500": "#1355d0",
+                        "700": "#0e44c4",
+                        "900": "#062ab3",
+                      },
+                      "secondary": Object {
+                        "100": "#f5b3cd",
+                        "300": "#e84d8b",
+                        "500": "#de0059",
+                        "700": "#d50048",
+                        "900": "#c8002e",
+                      },
+                      "success": Object {
+                        "100": "#edfadf",
+                        "300": "#a5e064",
+                        "500": "#7ed321",
+                        "700": "#6bc818",
+                        "900": "#3c6510",
+                      },
+                      "warning": Object {
+                        "100": "#ffefd6",
+                        "300": "#f5b24d",
+                        "500": "#f09100",
+                        "700": "#ec7e00",
+                        "900": "#a36300",
+                      },
+                    },
                     "components": Object {
                       "popover": Object {
                         "skins": Object {
@@ -4527,6 +5711,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     onClick={[Function]}
                     theme={
                       Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "primary": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "secondary": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "success": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "warning": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                        },
                         "components": Object {
                           "popover": Object {
                             "skins": Object {
@@ -4610,6 +5838,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       onClick={[Function]}
                       theme={
                         Object {
+                          "colors": Object {
+                            "error": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "primary": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "secondary": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "success": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "warning": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                          },
                           "components": Object {
                             "popover": Object {
                               "skins": Object {
@@ -4657,6 +5929,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         skin="primary"
                         theme={
                           Object {
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
                             "components": Object {
                               "popover": Object {
                                 "skins": Object {
@@ -4704,6 +6020,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           skin="primary"
                           theme={
                             Object {
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
                               "components": Object {
                                 "popover": Object {
                                   "skins": Object {
@@ -4799,6 +6159,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             skin="primary"
                             theme={
                               Object {
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
                                 "components": Object {
                                   "popover": Object {
                                     "skins": Object {
@@ -5057,7 +6461,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -5208,6 +6612,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           skin="neutral"
           theme={
             Object {
+              "colors": Object {
+                "error": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "neutral": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "primary": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "secondary": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "success": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "warning": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+              },
               "components": Object {
                 "popover": Object {
                   "skins": Object {
@@ -5314,7 +6762,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -5416,6 +6864,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               skin="neutral"
               theme={
                 Object {
+                  "colors": Object {
+                    "error": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "primary": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "secondary": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "success": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "warning": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                  },
                   "components": Object {
                     "popover": Object {
                       "skins": Object {
@@ -5463,8 +6955,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "box-shadow:0 2px 4px 0 ",
-                        "rgba(128, 128, 128, 0.5)",
+                        [Function],
                         ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
                         [Function],
                         "}position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
@@ -5490,6 +6981,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 skin="neutral"
                 theme={
                   Object {
+                    "colors": Object {
+                      "error": Object {
+                        "100": "#ffe5e9",
+                        "300": "#ff6c82",
+                        "500": "#ff2d4d",
+                        "700": "#ff223d",
+                        "900": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "100": "#f2f2f2",
+                        "300": "#cccccc",
+                        "500": "#999999",
+                        "700": "#4c4c4c",
+                        "900": "#191919",
+                      },
+                      "primary": Object {
+                        "100": "#e5edfc",
+                        "300": "#5a88de",
+                        "500": "#1355d0",
+                        "700": "#0e44c4",
+                        "900": "#062ab3",
+                      },
+                      "secondary": Object {
+                        "100": "#f5b3cd",
+                        "300": "#e84d8b",
+                        "500": "#de0059",
+                        "700": "#d50048",
+                        "900": "#c8002e",
+                      },
+                      "success": Object {
+                        "100": "#edfadf",
+                        "300": "#a5e064",
+                        "500": "#7ed321",
+                        "700": "#6bc818",
+                        "900": "#3c6510",
+                      },
+                      "warning": Object {
+                        "100": "#ffefd6",
+                        "300": "#f5b24d",
+                        "500": "#f09100",
+                        "700": "#ec7e00",
+                        "900": "#a36300",
+                      },
+                    },
                     "components": Object {
                       "popover": Object {
                         "skins": Object {
@@ -5566,6 +7101,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     onClick={[Function]}
                     theme={
                       Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "primary": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "secondary": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "success": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "warning": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                        },
                         "components": Object {
                           "popover": Object {
                             "skins": Object {
@@ -5649,6 +7228,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       onClick={[Function]}
                       theme={
                         Object {
+                          "colors": Object {
+                            "error": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "primary": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "secondary": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "success": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "warning": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                          },
                           "components": Object {
                             "popover": Object {
                               "skins": Object {
@@ -5696,6 +7319,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         skin="primary"
                         theme={
                           Object {
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
                             "components": Object {
                               "popover": Object {
                                 "skins": Object {
@@ -5743,6 +7410,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           skin="primary"
                           theme={
                             Object {
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
                               "components": Object {
                                 "popover": Object {
                                   "skins": Object {
@@ -5838,6 +7549,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             skin="primary"
                             theme={
                               Object {
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
                                 "components": Object {
                                   "popover": Object {
                                     "skins": Object {
@@ -6096,7 +7851,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -6244,6 +7999,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           skin="neutral"
           theme={
             Object {
+              "colors": Object {
+                "error": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "neutral": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "primary": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "secondary": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "success": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "warning": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+              },
               "components": Object {
                 "popover": Object {
                   "skins": Object {
@@ -6350,7 +8149,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -6449,6 +8248,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               skin="neutral"
               theme={
                 Object {
+                  "colors": Object {
+                    "error": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "primary": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "secondary": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "success": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "warning": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                  },
                   "components": Object {
                     "popover": Object {
                       "skins": Object {
@@ -6496,8 +8339,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "box-shadow:0 2px 4px 0 ",
-                        "rgba(128, 128, 128, 0.5)",
+                        [Function],
                         ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
                         [Function],
                         "}position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
@@ -6523,6 +8365,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 skin="neutral"
                 theme={
                   Object {
+                    "colors": Object {
+                      "error": Object {
+                        "100": "#ffe5e9",
+                        "300": "#ff6c82",
+                        "500": "#ff2d4d",
+                        "700": "#ff223d",
+                        "900": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "100": "#f2f2f2",
+                        "300": "#cccccc",
+                        "500": "#999999",
+                        "700": "#4c4c4c",
+                        "900": "#191919",
+                      },
+                      "primary": Object {
+                        "100": "#e5edfc",
+                        "300": "#5a88de",
+                        "500": "#1355d0",
+                        "700": "#0e44c4",
+                        "900": "#062ab3",
+                      },
+                      "secondary": Object {
+                        "100": "#f5b3cd",
+                        "300": "#e84d8b",
+                        "500": "#de0059",
+                        "700": "#d50048",
+                        "900": "#c8002e",
+                      },
+                      "success": Object {
+                        "100": "#edfadf",
+                        "300": "#a5e064",
+                        "500": "#7ed321",
+                        "700": "#6bc818",
+                        "900": "#3c6510",
+                      },
+                      "warning": Object {
+                        "100": "#ffefd6",
+                        "300": "#f5b24d",
+                        "500": "#f09100",
+                        "700": "#ec7e00",
+                        "900": "#a36300",
+                      },
+                    },
                     "components": Object {
                       "popover": Object {
                         "skins": Object {
@@ -6599,6 +8485,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     onClick={[Function]}
                     theme={
                       Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "primary": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "secondary": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "success": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "warning": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                        },
                         "components": Object {
                           "popover": Object {
                             "skins": Object {
@@ -6682,6 +8612,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       onClick={[Function]}
                       theme={
                         Object {
+                          "colors": Object {
+                            "error": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "primary": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "secondary": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "success": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "warning": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                          },
                           "components": Object {
                             "popover": Object {
                               "skins": Object {
@@ -6729,6 +8703,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         skin="primary"
                         theme={
                           Object {
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
                             "components": Object {
                               "popover": Object {
                                 "skins": Object {
@@ -6776,6 +8794,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           skin="primary"
                           theme={
                             Object {
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
                               "components": Object {
                                 "popover": Object {
                                   "skins": Object {
@@ -6871,6 +8933,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             skin="primary"
                             theme={
                               Object {
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
                                 "components": Object {
                                   "popover": Object {
                                     "skins": Object {
@@ -7129,7 +9235,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -7277,6 +9383,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
           skin="neutral"
           theme={
             Object {
+              "colors": Object {
+                "error": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "neutral": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "primary": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "secondary": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "success": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "warning": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+              },
               "components": Object {
                 "popover": Object {
                   "skins": Object {
@@ -7383,7 +9533,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(128,128,128,0.5);
+  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -7482,6 +9632,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               skin="neutral"
               theme={
                 Object {
+                  "colors": Object {
+                    "error": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "neutral": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "primary": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "secondary": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "success": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "warning": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                  },
                   "components": Object {
                     "popover": Object {
                       "skins": Object {
@@ -7529,8 +9723,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "box-shadow:0 2px 4px 0 ",
-                        "rgba(128, 128, 128, 0.5)",
+                        [Function],
                         ";align-items:start;display:flex;border-radius:4px;font-size:16px;",
                         [Function],
                         "}position:absolute;line-height:0;transition:opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;z-index:100;&:before{",
@@ -7556,6 +9749,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 skin="neutral"
                 theme={
                   Object {
+                    "colors": Object {
+                      "error": Object {
+                        "100": "#ffe5e9",
+                        "300": "#ff6c82",
+                        "500": "#ff2d4d",
+                        "700": "#ff223d",
+                        "900": "#ac001a",
+                      },
+                      "neutral": Object {
+                        "100": "#f2f2f2",
+                        "300": "#cccccc",
+                        "500": "#999999",
+                        "700": "#4c4c4c",
+                        "900": "#191919",
+                      },
+                      "primary": Object {
+                        "100": "#e5edfc",
+                        "300": "#5a88de",
+                        "500": "#1355d0",
+                        "700": "#0e44c4",
+                        "900": "#062ab3",
+                      },
+                      "secondary": Object {
+                        "100": "#f5b3cd",
+                        "300": "#e84d8b",
+                        "500": "#de0059",
+                        "700": "#d50048",
+                        "900": "#c8002e",
+                      },
+                      "success": Object {
+                        "100": "#edfadf",
+                        "300": "#a5e064",
+                        "500": "#7ed321",
+                        "700": "#6bc818",
+                        "900": "#3c6510",
+                      },
+                      "warning": Object {
+                        "100": "#ffefd6",
+                        "300": "#f5b24d",
+                        "500": "#f09100",
+                        "700": "#ec7e00",
+                        "900": "#a36300",
+                      },
+                    },
                     "components": Object {
                       "popover": Object {
                         "skins": Object {
@@ -7632,6 +9869,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     onClick={[Function]}
                     theme={
                       Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "neutral": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "primary": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "secondary": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "success": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "warning": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                        },
                         "components": Object {
                           "popover": Object {
                             "skins": Object {
@@ -7715,6 +9996,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       onClick={[Function]}
                       theme={
                         Object {
+                          "colors": Object {
+                            "error": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "neutral": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "primary": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "secondary": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "success": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "warning": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                          },
                           "components": Object {
                             "popover": Object {
                               "skins": Object {
@@ -7762,6 +10087,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         skin="primary"
                         theme={
                           Object {
+                            "colors": Object {
+                              "error": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "neutral": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "primary": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "secondary": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "success": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "warning": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                            },
                             "components": Object {
                               "popover": Object {
                                 "skins": Object {
@@ -7809,6 +10178,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           skin="primary"
                           theme={
                             Object {
+                              "colors": Object {
+                                "error": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "neutral": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "primary": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "secondary": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "success": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "warning": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                              },
                               "components": Object {
                                 "popover": Object {
                                   "skins": Object {
@@ -7904,6 +10317,50 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             skin="primary"
                             theme={
                               Object {
+                                "colors": Object {
+                                  "error": Object {
+                                    "100": "#ffe5e9",
+                                    "300": "#ff6c82",
+                                    "500": "#ff2d4d",
+                                    "700": "#ff223d",
+                                    "900": "#ac001a",
+                                  },
+                                  "neutral": Object {
+                                    "100": "#f2f2f2",
+                                    "300": "#cccccc",
+                                    "500": "#999999",
+                                    "700": "#4c4c4c",
+                                    "900": "#191919",
+                                  },
+                                  "primary": Object {
+                                    "100": "#e5edfc",
+                                    "300": "#5a88de",
+                                    "500": "#1355d0",
+                                    "700": "#0e44c4",
+                                    "900": "#062ab3",
+                                  },
+                                  "secondary": Object {
+                                    "100": "#f5b3cd",
+                                    "300": "#e84d8b",
+                                    "500": "#de0059",
+                                    "700": "#d50048",
+                                    "900": "#c8002e",
+                                  },
+                                  "success": Object {
+                                    "100": "#edfadf",
+                                    "300": "#a5e064",
+                                    "500": "#7ed321",
+                                    "700": "#6bc818",
+                                    "900": "#3c6510",
+                                  },
+                                  "warning": Object {
+                                    "100": "#ffefd6",
+                                    "300": "#f5b24d",
+                                    "500": "#f09100",
+                                    "700": "#ec7e00",
+                                    "900": "#a36300",
+                                  },
+                                },
                                 "components": Object {
                                   "popover": Object {
                                     "skins": Object {
