@@ -901,7 +901,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -928,7 +928,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1202,7 +1202,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -1229,7 +1229,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -2291,7 +2291,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -2318,7 +2318,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -2592,7 +2592,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -2619,7 +2619,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3681,7 +3681,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -3708,7 +3708,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3982,7 +3982,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -4009,7 +4009,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -5071,7 +5071,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -5098,7 +5098,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -5372,7 +5372,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -5399,7 +5399,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   position: absolute;
   content: '▼';
   left: 50%;
-  text-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  text-shadow: 0px 8px 4px rgba(128,128,128,0.5);
   bottom: 0;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -6461,7 +6461,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -6762,7 +6762,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -7851,7 +7851,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -7879,7 +7879,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   bottom: 50%;
   content: '▶';
   right: -8px;
-  text-shadow: 3px 1px 4px rgba(128,128,128,0.5);
+  text-shadow: 4px 1px 4px rgba(128,128,128,0.5);
 }
 
 .c2 {
@@ -8149,7 +8149,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -8177,7 +8177,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   bottom: 50%;
   content: '▶';
   right: -8px;
-  text-shadow: 3px 1px 4px rgba(128,128,128,0.5);
+  text-shadow: 4px 1px 4px rgba(128,128,128,0.5);
 }
 
 .c1 {
@@ -9235,7 +9235,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c1 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -9263,7 +9263,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   bottom: 50%;
   content: '◀';
   left: -8px;
-  text-shadow: -3px 1px 4px rgba(128,128,128,0.5);
+  text-shadow: -4px 1px 4px rgba(128,128,128,0.5);
 }
 
 .c2 {
@@ -9533,7 +9533,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c0 {
-  box-shadow: 0 2px 4px 0 rgba(76,76,76,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(76,76,76,0.2),0px 5px 8px 0px rgba(76,76,76,0.14),0px 1px 14px 0px rgba(76,76,76,0.12);
   -webkit-align-items: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -9561,7 +9561,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   bottom: 50%;
   content: '◀';
   left: -8px;
-  text-shadow: -3px 1px 4px rgba(128,128,128,0.5);
+  text-shadow: -4px 1px 4px rgba(128,128,128,0.5);
 }
 
 .c1 {

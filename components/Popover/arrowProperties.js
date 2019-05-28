@@ -23,7 +23,7 @@ const placementPosition = {
   top: `
     content: '▼';
     left: ${CENTER_POSITION};
-    text-shadow: 0px 4px 4px ${Colors.SHADOW[50]};
+    text-shadow: 0px 8px 4px ${Colors.SHADOW[50]};
     bottom: 0;
     transform: translateX(-${CENTER_POSITION});
   `,
@@ -38,13 +38,13 @@ const placementPosition = {
     bottom: ${CENTER_POSITION};
     content: '◀';
     left: ${SIDE_POSITION_X}px;
-    text-shadow: -3px 1px 4px ${Colors.SHADOW[50]};
+    text-shadow: -4px 1px 4px ${Colors.SHADOW[50]};
   `,
   left: `
     bottom: ${CENTER_POSITION};
     content: '▶';
     right: ${SIDE_POSITION_X}px;
-    text-shadow: 3px 1px 4px ${Colors.SHADOW[50]};
+    text-shadow: 4px 1px 4px ${Colors.SHADOW[50]};
   `,
 };
 
