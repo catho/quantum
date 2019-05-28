@@ -21,8 +21,13 @@ describe('Alert component', () => {
 
   describe('When you set a different skin', () => {
     it('Should match a skin snapshot', () => {
-      const blue = (
-        <Alert onClose={() => {}} skin="blue">
+      const neutral = (
+        <Alert onClose={() => {}} skin="neutral">
+          blue
+        </Alert>
+      );
+      const primary = (
+        <Alert onClose={() => {}} skin="primary">
           blue
         </Alert>
       );
@@ -41,8 +46,8 @@ describe('Alert component', () => {
           error
         </Alert>
       );
-
-      expect(renderer.create(blue).toJSON()).toMatchSnapshot();
+      expect(renderer.create(neutral).toJSON()).toMatchSnapshot();
+      expect(renderer.create(primary).toJSON()).toMatchSnapshot();
       expect(renderer.create(success).toJSON()).toMatchSnapshot();
       expect(renderer.create(warning).toJSON()).toMatchSnapshot();
       expect(renderer.create(error).toJSON()).toMatchSnapshot();

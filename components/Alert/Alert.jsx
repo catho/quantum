@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from '../Button';
-import Colors from '../Colors';
 import Icon from '../Icon';
-
-const BORDER_SIZE = '1.5px';
-const DEFAULT_SPACING = '16px';
-const WRAPPER_SPACING = '11px';
+import {
+  components,
+  spacing,
+  colors,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 
 const Content = styled.div`
   align-items: start;
@@ -20,11 +21,10 @@ const CloseButton = styled(Button.Icon).attrs({
   icon: 'close',
 })`
   height: auto;
-  width: auto;
-  margin: 0 0 0 ${DEFAULT_SPACING};
-  padding: 0;
   opacity: 0.8;
+  padding: 0;
   transition: opacity 0.4s ease;
+  width: auto;
 
   :hover {
     background: none;
@@ -34,22 +34,34 @@ const CloseButton = styled(Button.Icon).attrs({
 
 CloseButton.displayName = 'CloseButton';
 
-const getStylesBySkin = skin => {
-  const colorName = skin.toUpperCase();
-  const colorSchema = Colors[colorName];
+const getThemeStyles = (skin, theme) => {
+  const {
+    baseFontSize,
+    spacing: { small, medium },
+    components: {
+      alert: {
+        skins: {
+          [skin]: { background, icon, text },
+        },
+      },
+    },
+  } = theme;
 
   return `
-    color: ${colorSchema[900] ? colorSchema[900] : 'inherit'};
-    background-color: ${colorSchema[200]};
-    border: ${BORDER_SIZE} solid ${colorSchema[500]};
+    font-size: ${baseFontSize}px;
+    background-color: ${background};
+    border: 1.5px solid ${icon};
+    color: ${text};
+    padding: ${small}px ${medium}px;
 
     ${Content} ${AlertIcon} {
-      color: ${colorSchema[500]};
-      margin-right: ${DEFAULT_SPACING};
+      color: ${icon};
+      margin-right: ${spacing.medium}px;
     }
 
     ${Content} ${CloseButton} {
-      color: ${colorSchema[500]};
+      color: ${icon};
+      margin: 0 0 0 ${spacing.medium}px;
     }
   `;
 };
@@ -57,13 +69,12 @@ const getStylesBySkin = skin => {
 const Wrapper = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
-  padding: ${WRAPPER_SPACING} ${DEFAULT_SPACING};
 
-  ${({ skin }) => getStylesBySkin(skin)}
+  ${({ skin, theme }) => getThemeStyles(skin, theme)}
 `;
 
-const Alert = ({ icon, children, onClose, ...rest }) => (
-  <Wrapper {...rest} role="alert">
+const Alert = ({ icon, children, theme, onClose, ...rest }) => (
+  <Wrapper theme={theme} {...rest} role="alert">
     <Content onClose={onClose}>
       {icon && <AlertIcon name={icon} />}
       {children && <span>{children}</span>}
@@ -74,7 +85,15 @@ const Alert = ({ icon, children, onClose, ...rest }) => (
 
 Alert.defaultProps = {
   icon: null,
-  skin: 'blue',
+  skin: 'neutral',
+  theme: {
+    colors,
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    components: {
+      alert: components.alert,
+    },
+  },
 };
 
 Alert.propTypes = {
@@ -85,7 +104,15 @@ Alert.propTypes = {
   icon: PropTypes.string,
   /** You must pass a callback that is called when close button is clicked */
   onClose: PropTypes.func.isRequired,
-  skin: PropTypes.oneOf(['blue', 'success', 'warning', 'error']),
+  skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
+  theme: PropTypes.shape({
+    baseFontSize: PropTypes.number,
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+    components: PropTypes.shape({
+      alert: PropTypes.object,
+    }),
+  }),
 };
 
 export default Alert;
