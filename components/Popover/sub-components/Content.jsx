@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { components, spacing, colors } from '../../shared/theme';
 import getArrow from '../arrowProperties';
 import Button from '../../Button';
-import { hexToRgba } from '../../shared';
+import { shadow } from '../../shared';
 
 const _getThemeSpacing = ({ spacing: { xsmall, medium } }) => ({
   xsmall,
@@ -39,11 +39,7 @@ const _getColors = ({
 };
 
 const PopoverContent = styled.div`
-  ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => `box-shadow: 0 2px 4px 0 ${hexToRgba(neutral[700], 0.5)}`};
+  ${shadow(5)};
   align-items: start;
   display: flex;
   border-radius: 4px;
