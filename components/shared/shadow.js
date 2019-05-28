@@ -99,15 +99,13 @@ const {
   AMBIENT: { elevations: ambientElevations, opacity: ambientOpacity },
 } = SHADOWS;
 
-const shadow = (
+const shadowWithTheme = (
   {
-    theme: {
-      colors: {
-        neutral: { 700: defaultColor },
-      },
+    colors: {
+      neutral: { 700: defaultColor },
     },
   },
-  elevation = 0,
+  elevation,
   color = defaultColor,
 ) => {
   const umbrelaSHadow = `${umbraElevations[elevation]} ${hexToRgba(
@@ -125,5 +123,8 @@ const shadow = (
 
   return `box-shadow: ${umbrelaSHadow}, ${penumbraSHadow}, ${ambientSHadow};`;
 };
+
+const shadow = (elevation = 0, color) => ({ theme }) =>
+  shadowWithTheme(theme, elevation, color);
 
 export default shadow;

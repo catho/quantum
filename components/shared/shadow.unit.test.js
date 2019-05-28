@@ -13,7 +13,7 @@ describe('Shadow helper', () => {
         neutral: { 700: defaultColor },
       } = colors;
 
-      expect(normalize(shadow({ theme }))).toBe(
+      expect(normalize(shadow()({ theme }))).toBe(
         normalize(`
           box-shadow:
             0px 0px 0px 0px ${hexToRgba(defaultColor, opacity0)},
@@ -21,7 +21,7 @@ describe('Shadow helper', () => {
             0px 0px 0px 0px ${hexToRgba(defaultColor, opacity2)};
           `),
       );
-      expect(normalize(shadow({ theme }))).toBe(
+      expect(normalize(shadow(0)({ theme }))).toBe(
         normalize(`
           box-shadow:
             0px 0px 0px 0px ${hexToRgba(defaultColor, opacity0)},
@@ -29,15 +29,7 @@ describe('Shadow helper', () => {
             0px 0px 0px 0px ${hexToRgba(defaultColor, opacity2)};
           `),
       );
-      expect(normalize(shadow({ theme }, 0))).toBe(
-        normalize(`
-          box-shadow:
-            0px 0px 0px 0px ${hexToRgba(defaultColor, opacity0)},
-            0px 0px 0px 0px ${hexToRgba(defaultColor, opacity1)},
-            0px 0px 0px 0px ${hexToRgba(defaultColor, opacity2)};
-          `),
-      );
-      expect(normalize(shadow({ theme }, 2))).toBe(
+      expect(normalize(shadow(2)({ theme }))).toBe(
         normalize(`
           box-shadow:
             0px 3px 1px -2px ${hexToRgba(defaultColor, opacity0)},
@@ -56,7 +48,7 @@ describe('Shadow helper', () => {
         success: { 500: third },
       } = colors;
 
-      expect(normalize(shadow({ theme }, 5, first))).toBe(
+      expect(normalize(shadow(5, first)({ theme }))).toBe(
         normalize(
           `box-shadow:
             0px 3px 5px -1px ${hexToRgba(first, opacity0)},
@@ -65,7 +57,7 @@ describe('Shadow helper', () => {
           `,
         ),
       );
-      expect(normalize(shadow({ theme }, 9, second))).toBe(
+      expect(normalize(shadow(9, second)({ theme }))).toBe(
         normalize(
           `box-shadow:
             0px 5px 6px -3px ${hexToRgba(second, opacity0)},
@@ -74,7 +66,7 @@ describe('Shadow helper', () => {
           `,
         ),
       );
-      expect(normalize(shadow({ theme }, 15, third))).toBe(
+      expect(normalize(shadow(15, third)({ theme }))).toBe(
         normalize(
           `box-shadow:
             0px 8px 9px -5px ${hexToRgba(third, opacity0)},
