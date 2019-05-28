@@ -34,8 +34,9 @@ const CloseButton = styled(Button.Icon).attrs({
 
 CloseButton.displayName = 'CloseButton';
 
-const getThemeStyles = (skin, theme) => {
-  const {
+const getThemeStyles = ({
+  skin,
+  theme: {
     baseFontSize,
     spacing: { small, medium },
     components: {
@@ -45,9 +46,8 @@ const getThemeStyles = (skin, theme) => {
         },
       },
     },
-  } = theme;
-
-  return `
+  },
+}) => `
     font-size: ${baseFontSize}px;
     background-color: ${background};
     border: 1.5px solid ${icon};
@@ -64,13 +64,12 @@ const getThemeStyles = (skin, theme) => {
       margin: 0 0 0 ${spacing.medium}px;
     }
   `;
-};
 
 const Wrapper = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
 
-  ${({ skin, theme }) => getThemeStyles(skin, theme)}
+  ${getThemeStyles}
 `;
 
 const Alert = ({ icon, children, theme, onClose, ...rest }) => (
