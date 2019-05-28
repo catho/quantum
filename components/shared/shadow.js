@@ -1,9 +1,4 @@
 import hexToRgba from './hexToRgba';
-import { colors } from './theme';
-
-const {
-  neutral: { 700: defaultColor },
-} = colors;
 
 const SHADOWS = {
   UMBRA: {
@@ -104,7 +99,17 @@ const {
   AMBIENT: { elevations: ambientElevations, opacity: ambientOpacity },
 } = SHADOWS;
 
-const shadow = (elevation = 0, color = defaultColor) => {
+const shadow = (
+  {
+    theme: {
+      colors: {
+        neutral: { 700: defaultColor },
+      },
+    },
+  },
+  elevation = 0,
+  color = defaultColor,
+) => {
   const umbrelaSHadow = `${umbraElevations[elevation]} ${hexToRgba(
     color,
     umbraOpacity,
