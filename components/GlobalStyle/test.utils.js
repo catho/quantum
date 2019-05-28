@@ -1,4 +1,4 @@
-const parse = rule =>
+const normalizeCSS = rule =>
   rule
     .join('\n')
     .replace(/(?:\r\n|\r|\n)/g, '')
@@ -10,10 +10,12 @@ const parse = rule =>
     .replace(/:\s+;/g, ':;');
 
 const getCSS = scope =>
-  parse(Array.from(scope.querySelectorAll('style')).map(tag => tag.innerHTML));
+  normalizeCSS(
+    Array.from(scope.querySelectorAll('style')).map(tag => tag.innerHTML),
+  );
 
 const expectCSSMatches = expectation => {
-  const _expectation = parse(expectation.split('\n'));
+  const _expectation = normalizeCSS(expectation.split('\n'));
 
   const css = getCSS(document);
 
@@ -21,4 +23,4 @@ const expectCSSMatches = expectation => {
   return css;
 };
 
-export { getCSS, expectCSSMatches };
+export { getCSS, expectCSSMatches, normalizeCSS };

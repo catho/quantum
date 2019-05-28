@@ -1,7 +1,7 @@
 const hexToRgba = (hex, opacity = 1) => {
   const _h = hex.replace('#', '');
 
-  const _shortened = hex.length < 5;
+  const _shortened = _h.length === 3;
   const _step = _shortened ? 1 : 2;
   const _bIndex = _shortened ? 2 : 4;
 

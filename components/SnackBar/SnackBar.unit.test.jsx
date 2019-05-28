@@ -21,7 +21,6 @@ describe('<SnackBar />', () => {
       secondsToClose={secondsToClose}
       onClose={onCloseEventMock}
       closeButtonAriaLabel={CloseButtonAriaLabel}
-      skin="black"
       actionTrigger={actionTrigger}
     />
   );
@@ -33,7 +32,16 @@ describe('<SnackBar />', () => {
       <SnackBar onClose={() => {}} />,
       <SnackBar closeButtonAriaLabel="close" />,
       <SnackBar secondsToClose={10} />,
-      <SnackBar skin="black" />,
+      <SnackBar skin="neutral" />,
+      <SnackBar skin="primary" />,
+      <SnackBar skin="success" />,
+      <SnackBar skin="warning" />,
+      <SnackBar skin="error" />,
+      <SnackBar skin="neutral" inverted />,
+      <SnackBar skin="primary" inverted />,
+      <SnackBar skin="success" inverted />,
+      <SnackBar skin="warning" inverted />,
+      <SnackBar skin="error" inverted />,
     ];
 
     SNACKBARS.forEach(snackbar => {

@@ -9,6 +9,7 @@ import uniqId from './uniqId';
 import * as INPUT_STYLE from './inputStyle';
 import ButtonGroupLabel from './ButtonGroupLabel';
 import hexToRgba from './hexToRgba';
+import shadow from './shadow';
 
 export {
   ErrorMessage,
@@ -22,4 +23,5 @@ export {
   uniqId,
   ButtonGroupLabel,
   hexToRgba,
+  shadow,
 };
