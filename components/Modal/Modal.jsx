@@ -7,9 +7,8 @@ import Card from '../Card';
 import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
-import { hexToRgba, theme } from '../shared';
-
-const { breakpoints, colors, spacing } = theme;
+import { hexToRgba } from '../shared';
+import { breakpoints, colors, spacing } from '../shared/theme';
 
 function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   const sizes = {
@@ -177,7 +176,7 @@ class Modal extends React.Component {
       children,
       onClose,
       closeButtonAriaLabel,
-      theme: themeProp,
+      theme,
       ...rest
     } = this.props;
 
@@ -186,15 +185,15 @@ class Modal extends React.Component {
         onClick={this.handleClickOutside}
         ref={this.modalWrapperRef}
         role="dialog"
-        theme={themeProp}
+        theme={theme}
         {...rest}
       >
-        <ModalCard theme={themeProp}>
+        <ModalCard theme={theme}>
           {children}
           <CloseIcon
             onClick={onClose}
             aria-label={closeButtonAriaLabel}
-            theme={themeProp}
+            theme={theme}
           />
         </ModalCard>
       </ModalWrapper>,
