@@ -108,20 +108,20 @@ const shadowWithTheme = (
   elevation,
   color = defaultColor,
 ) => {
-  const umbrelaSHadow = `${umbraElevations[elevation]} ${hexToRgba(
+  const umbra = `${umbraElevations[elevation]} ${hexToRgba(
     color,
     umbraOpacity,
   )}`;
-  const penumbraSHadow = `${penumbraElevations[elevation]} ${hexToRgba(
+  const penumbra = `${penumbraElevations[elevation]} ${hexToRgba(
     color,
     penumbraOpacity,
   )}`;
-  const ambientSHadow = `${ambientElevations[elevation]} ${hexToRgba(
+  const ambient = `${ambientElevations[elevation]} ${hexToRgba(
     color,
     ambientOpacity,
   )}`;
 
-  return `box-shadow: ${umbrelaSHadow}, ${penumbraSHadow}, ${ambientSHadow};`;
+  return `box-shadow: ${umbra}, ${penumbra}, ${ambient};`;
 };
 
 const shadow = (elevation = 0, color) => ({ theme }) =>
