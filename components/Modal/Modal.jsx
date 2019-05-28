@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Colors from '../Colors';
 import Card from '../Card';
 import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
-import { theme as defaultTheme } from '../shared';
+import { hexToRgba } from '../shared';
+import { breakpoints, colors, spacing } from '../shared/theme';
 
-function getBreakpoint({ theme: { breakpoints } }) {
+function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   const sizes = {
     xsmall: '90%',
     small: '400px',
@@ -18,13 +18,18 @@ function getBreakpoint({ theme: { breakpoints } }) {
     large: '800px',
   };
   return Object.entries(sizes).map(
-    ([breakpoint, value]) => query(breakpoints)[breakpoint]`width: ${value};`,
+    ([breakpoint, value]) =>
+      query(themeBreakpoints)[breakpoint]`width: ${value};`,
   );
 }
 
 const ModalCard = styled(Card)`
   ${Card.Header} {
-    padding-right: 56px;
+    padding-right: ${({
+      theme: {
+        spacing: { xxxlarge },
+      },
+    }) => `${xxxlarge}px`};
   }
 
   ${getBreakpoint}
@@ -34,15 +39,26 @@ const CloseIcon = styled(Button.Icon).attrs({
   icon: 'close',
 })`
   position: absolute;
-  top: 16px;
-  right: 16px;
+
+  ${({
+    theme: {
+      spacing: { medium },
+    },
+  }) => `
+    top: ${medium}px;
+    right: ${medium}px;
+  `};
 `;
 
 CloseIcon.displayName = 'CloseIcon';
 
 const ModalWrapper = styled.div`
   align-items: center;
-  background-color: ${Colors.SHADOW[50]};
+  background-color: ${({
+    theme: {
+      colors: { neutral },
+    },
+  }) => hexToRgba(neutral[700], 0.5)};
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -169,11 +185,16 @@ class Modal extends React.Component {
         onClick={this.handleClickOutside}
         ref={this.modalWrapperRef}
         role="dialog"
+        theme={theme}
         {...rest}
       >
         <ModalCard theme={theme}>
           {children}
-          <CloseIcon onClick={onClose} aria-label={closeButtonAriaLabel} />
+          <CloseIcon
+            onClick={onClose}
+            aria-label={closeButtonAriaLabel}
+            theme={theme}
+          />
         </ModalCard>
       </ModalWrapper>,
       this.modalOverlay,
@@ -192,6 +213,8 @@ Modal.propTypes = {
   closeButtonAriaLabel: PropTypes.string,
   theme: PropTypes.shape({
     breakpoints: PropTypes.object,
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
   }),
 };
 
@@ -199,7 +222,11 @@ Modal.defaultProps = {
   children: undefined,
   onClose: () => {},
   closeButtonAriaLabel: 'close dialog',
-  theme: defaultTheme,
+  theme: {
+    breakpoints,
+    colors,
+    spacing,
+  },
 };
 
 export default Modal;

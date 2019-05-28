@@ -39,12 +39,14 @@ class ModalExample extends Component {
                   justifyContent: 'flex-end',
                 }}
               >
-                <Button style={{ marginRight: 24 }} onClick={this.closeModal}>
-                  Delete
-                </Button>
-                <Button onClick={this.closeModal} skin="secondary">
+                <Button
+                  style={{ marginRight: 24 }}
+                  onClick={this.closeModal}
+                  skin="secondary"
+                >
                   Cancel
                 </Button>
+                <Button onClick={this.closeModal}>Delete</Button>
               </div>
             </Modal.Footer>
           </Modal>
