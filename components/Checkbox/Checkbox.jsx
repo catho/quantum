@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { Label, ErrorMessage } from '../shared';
+import { Label, ErrorMessage, hexToRgba } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
-import Colors from '../Colors';
 import Icon from '../Icon';
 import CheckboxGroupContext from './CheckboxGroupContext';
+import { colors } from '../shared/theme';
 
 const CHECKBOX_SIZE = '18px';
 
@@ -18,7 +18,11 @@ const CheckboxWrapper = styled.div`
 `;
 
 const CheckboxLabel = styled(Label)`
-  color: ${Colors.BLACK['700']};
+  color: ${({
+    theme: {
+      colors: { neutral },
+    },
+  }) => neutral[700]};
   font-size: 16px;
   margin: 0 0 0 10px;
 `;
@@ -38,9 +42,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
 
   + ${CheckIcon} {
     align-items: center;
-    background-color: ${Colors.WHITE};
     border-radius: 2px;
-    border: 2px solid ${Colors.BLACK['400']};
     box-sizing: border-box;
     color: transparent;
     display: flex;
@@ -51,53 +53,88 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     margin-top: 2px;
     transition: all 0.2s ease-in-out;
     width: ${CHECKBOX_SIZE};
+
+    ${({
+      theme: {
+        colors: { neutral },
+      },
+    }) => `
+      background-color: ${neutral[100]};
+      border: 2px solid  ${neutral[500]};
+    `}
   }
 
   :checked {
     + ${CheckIcon} {
-      background-color: ${Colors.BLUE['500']};
       border-width: 0;
-      color: ${Colors.WHITE};
+
+      ${({
+        theme: {
+          colors: { primary, neutral },
+        },
+      }) => `
+        background-color: ${primary[500]};
+        color: ${neutral[100]};
+      `}
     }
   }
 
   :hover + ${CheckIcon}, :focus + ${CheckIcon} {
-    border-color: ${Colors.BLUE['500']};
-    box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
+    ${({
+      theme: {
+        colors: { primary },
+      },
+    }) => `
+      border-color: ${primary[500]};
+      box-shadow: 0 2px 6px 0 ${hexToRgba(primary[500], 0.5)}};
+    `}
   }
 
-  ${({ error }) =>
+  ${({
+    error,
+    theme: {
+      colors: {
+        error: { 500: errorColor },
+      },
+    },
+  }) =>
     error &&
     `
     + ${CheckIcon} {
-      border-color: ${Colors.ERROR['500']};
+      border-color: ${errorColor};
     }
 
     :checked + ${CheckIcon} {
-      background-color: ${Colors.ERROR['500']};
+      background-color: ${errorColor};
     }
 
     :hover +  ${CheckIcon}, :focus +  ${CheckIcon} {
-      border-color: ${Colors.ERROR['500']};
-      box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
+      border-color: ${errorColor};
+      box-shadow: 0 2px 6px 0 ${errorColor};
     }
   `}
 
   &[disabled] {
     cursor: not-allowed;
 
-    ~ ${CheckboxLabel} {
-      color: ${Colors.BLACK['400']};
-    }
+    ${({
+      theme: {
+        colors: { neutral },
+      },
+    }) => `
+      ~ ${CheckboxLabel} {
+        color: ${neutral[500]};
+      }
 
-    + ${CheckIcon} {
-      border-color: ${Colors.BLACK['400']};
-      background-color: ${Colors.BLACK['200']};
-    }
+      + ${CheckIcon} {
+        border-color: ${neutral[500]};
+        background-color: ${neutral[300]};
+      }
 
-    :checked + ${CheckIcon} {
-      background-color: ${Colors.BLACK['400']};
-    }
+      :checked + ${CheckIcon} {
+        background-color: ${neutral[500]};
+      }
+    `}
 
     :hover + ${CheckIcon} {
       box-shadow: none;
@@ -112,6 +149,7 @@ const Checkbox = ({
   id,
   label,
   value,
+  theme,
   error: errorProp,
   onChange: onChangeProp,
   ...props
@@ -129,24 +167,16 @@ const Checkbox = ({
           error={error}
           value={value}
           onChange={onChange}
+          theme={theme}
         />
         <CheckIcon />
-        <CheckboxLabel htmlFor={id}>{children || label || value}</CheckboxLabel>
+        <CheckboxLabel htmlFor={id} theme={theme}>
+          {children || label || value}
+        </CheckboxLabel>
       </CheckboxWrapper>
       {error && !errorContext && <ErrorMessage>{error}</ErrorMessage>}
     </Wrapper>
   );
-};
-
-Checkbox.defaultProps = {
-  checked: false,
-  disabled: false,
-  children: '',
-  error: '',
-  id: '',
-  label: '',
-  value: '',
-  onChange: () => {},
 };
 
 Checkbox.propTypes = {
@@ -159,6 +189,23 @@ Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+  }),
+};
+
+Checkbox.defaultProps = {
+  checked: false,
+  disabled: false,
+  children: '',
+  error: '',
+  id: '',
+  label: '',
+  value: '',
+  onChange: () => {},
+  theme: {
+    colors,
+  },
 };
 
 Checkbox.displayName = 'Checkbox';

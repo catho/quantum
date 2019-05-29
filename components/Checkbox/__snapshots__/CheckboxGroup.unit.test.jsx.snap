@@ -16,7 +16,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 fQyIFG\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dSrlkm\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -52,7 +52,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 fQyIFG\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dSrlkm\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -88,7 +88,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 fQyIFG\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dSrlkm\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -445,9 +445,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -465,12 +463,14 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c2:checked + .c3 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c2:hover + .c3,
@@ -676,9 +676,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -696,12 +694,14 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c2:checked + .c3 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c2:hover + .c3,
@@ -1911,9 +1911,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1931,12 +1929,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c7:checked + .c3 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c3,
@@ -2005,9 +2005,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -2025,12 +2023,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c2:checked + .c3 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c2:hover + .c3,
@@ -2264,9 +2264,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -2284,12 +2282,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c6:checked + .c3 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c3,
@@ -2324,9 +2324,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -2344,12 +2342,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c7:checked + .c3 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c3,
@@ -2408,9 +2408,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -2428,12 +2426,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c2:checked + .c3 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c2:hover + .c3,

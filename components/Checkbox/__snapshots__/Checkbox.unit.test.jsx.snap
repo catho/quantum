@@ -57,9 +57,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -77,12 +75,14 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
@@ -180,9 +180,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -200,12 +198,14 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
@@ -274,9 +274,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -294,12 +292,14 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
@@ -415,9 +415,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -435,12 +433,14 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
@@ -471,9 +471,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -491,12 +489,14 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
@@ -579,9 +579,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -599,12 +597,14 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
@@ -747,9 +747,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -767,12 +765,14 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
@@ -807,9 +807,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -827,12 +825,14 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
@@ -877,9 +877,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -897,12 +895,14 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
@@ -1002,9 +1002,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1022,12 +1020,14 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
@@ -1058,9 +1058,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1078,12 +1076,14 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
@@ -1128,9 +1128,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1148,12 +1146,14 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
@@ -1212,9 +1212,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1232,12 +1230,14 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
@@ -1362,9 +1362,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1382,12 +1380,14 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
@@ -1422,9 +1422,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1442,12 +1440,14 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
@@ -1492,9 +1492,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1512,12 +1510,14 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
@@ -1562,9 +1562,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1582,12 +1580,14 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
@@ -1673,9 +1673,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1693,12 +1691,14 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
@@ -1729,9 +1729,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1749,12 +1747,14 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
@@ -1799,9 +1799,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1819,12 +1817,14 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
@@ -1883,9 +1883,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
@@ -1903,12 +1901,14 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
