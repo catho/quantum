@@ -28,6 +28,11 @@ const InputTag = styled.input`
   box-sizing: border-box;
   margin-top: 8px;
   padding-right: 42px;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
   ${DEFAULT_INPUT_STYLE};
 

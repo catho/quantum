@@ -101,6 +101,13 @@ class TabbedView extends React.Component {
     this.setState({ activeTab: tab });
   };
 
+  sanitize = str =>
+    str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(' ', '-')
+      .toLowerCase();
+
   render() {
     const { children, skin } = this.props;
     const { activeTab } = this.state;
@@ -113,8 +120,8 @@ class TabbedView extends React.Component {
               key={title}
               onClick={() => this.onTabClick(title)}
               skin={skin}
-              id={`${title}-tab`}
-              aria-controls={`${title}-panel`}
+              id={`${this.sanitize(title)}-tab`}
+              aria-controls={`${this.sanitize(title)}-panel`}
               aria-selected={title === activeTab}
             >
               {title}
@@ -128,8 +135,8 @@ class TabbedView extends React.Component {
             <RenderIf conditional={title === activeTab}>
               <div
                 role="tabpanel"
-                id={`${title}-panel`}
-                aria-labelledby={`${title}-tab`}
+                id={`${this.sanitize(title)}-panel`}
+                aria-labelledby={`${this.sanitize(title)}-tab`}
               >
                 {tabContent}
               </div>
