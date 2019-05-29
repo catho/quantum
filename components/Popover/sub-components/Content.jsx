@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { components, spacing, colors } from '../../shared/theme';
@@ -8,35 +8,22 @@ import getArrow from '../arrowProperties';
 import Button from '../../Button';
 import { shadow } from '../../shared';
 
-const _getThemeSpacing = ({ spacing: { xsmall, medium } }) => ({
-  xsmall,
-  medium,
-});
-
 const _getColors = ({
   skin,
   theme: {
     components: {
       popover: {
-        skins: { [skin]: popoverColor },
+        skins: {
+          [skin]: { text, background },
+        },
       },
     },
   },
   inverted,
-}) => {
-  if (inverted) {
-    const [background, text] = [popoverColor.text, popoverColor.background];
-
-    return css`
-      background-color: ${background};
-      color: ${text};
-    `;
-  }
-  return css`
-    background-color: ${popoverColor.background};
-    color: ${popoverColor.text};
-  `;
-};
+}) => `
+  background-color: ${inverted ? text : background}
+  color: ${inverted ? background : text}
+`;
 
 const PopoverContent = styled.div`
   ${shadow(5)};
@@ -44,10 +31,11 @@ const PopoverContent = styled.div`
   display: flex;
   border-radius: 4px;
   font-size: 16px;
-  ${({ theme }) => {
-    const { xsmall } = _getThemeSpacing(theme);
-    return `padding: ${xsmall}px`;
-  }}}
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `padding: ${xsmall}px;`}
 
   position: absolute;
   line-height: 0;
@@ -55,8 +43,7 @@ const PopoverContent = styled.div`
   z-index: 100;
 
   &:before {
-    ${({ placement, skin, theme, inverted }) =>
-      getArrow(placement, skin, theme, inverted)};
+    ${getArrow};
   }
 
   ${_getColors}
@@ -67,10 +54,11 @@ const CloseButton = styled(Button.Icon).attrs({
 })`
   display: inherit;
   height: auto;
-  ${({ theme }) => {
-    const { medium } = _getThemeSpacing(theme);
-    return `margin-left: ${medium}px`;
-  }}}
+  ${({
+    theme: {
+      spacing: { medium },
+    },
+  }) => `margin-left: ${medium}px;`}
 
   opacity: 0.8;
   padding: 0;

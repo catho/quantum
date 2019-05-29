@@ -4,21 +4,6 @@ const ARROW_SIZE = '16px';
 const SIDE_POSITION_X = -8;
 const CENTER_POSITION = '50%';
 
-const getColorBySkin = (
-  skin,
-  {
-    components: {
-      popover: { skins },
-    },
-  },
-  inverted,
-) => {
-  if (inverted) {
-    return skins[skin].text;
-  }
-  return skins[skin].background;
-};
-
 const placementPosition = {
   top: `
     content: '▼';
@@ -48,8 +33,18 @@ const placementPosition = {
   `,
 };
 
-const getArrow = (placement, skin, theme, inverted) => `
-  color: ${getColorBySkin(skin, theme, inverted)}
+const getArrow = ({
+  placement,
+  skin,
+  theme: {
+    components: {
+      popover: {
+        skins: { [skin]: popoverSkin },
+      },
+    },
+  },
+  inverted,
+}) => ` color: ${inverted ? popoverSkin.text : popoverSkin.background}
   font-size: ${ARROW_SIZE};
   position: absolute;
 
