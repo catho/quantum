@@ -81,6 +81,30 @@ const spacing = {
 };
 
 const components = {
+  button: {
+    skins: {
+      neutral: {
+        mainColor: colors.neutral,
+        text: colors.neutral,
+      },
+      primary: {
+        mainColor: colors.primary,
+        text: colors.neutral,
+      },
+      success: {
+        mainColor: colors.success,
+        text: colors.neutral,
+      },
+      warning: {
+        mainColor: colors.warning,
+        text: colors.neutral,
+      },
+      error: {
+        mainColor: colors.error,
+        text: colors.neutral,
+      },
+    },
+  },
   badge: {
     skins: {
       neutral: {
