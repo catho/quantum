@@ -5,7 +5,6 @@ import PropTypes, { oneOf } from 'prop-types';
 import Content from './sub-components/Content';
 
 import popoverPosition from './options';
-import { colors, spacing, components } from '../shared/theme';
 
 const Wrapper = styled.div`
   display: inline-block;
@@ -95,20 +94,12 @@ class Popover extends Component {
   };
 
   render() {
-    const {
-      children,
-      trigger,
-      placement,
-      visible,
-      theme,
-      ...rest
-    } = this.props;
+    const { children, trigger, placement, visible, ...rest } = this.props;
 
     return (
       <Wrapper ref={this.wrapperRef}>
         {this.isVisible && (
           <Content
-            theme={theme}
             placement={placement}
             visible={visible}
             onPopoverClose={() => this.handleVisible(false)}
@@ -141,13 +132,6 @@ Popover.propTypes = {
   skin: oneOf(['neutral', 'success', 'warning', 'error']),
   trigger: PropTypes.node.isRequired,
   onClose: PropTypes.func,
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-    components: PropTypes.shape({
-      badge: PropTypes.object,
-    }),
-  }),
 };
 
 Popover.defaultProps = {
@@ -156,13 +140,6 @@ Popover.defaultProps = {
   skin: 'neutral',
   placement: 'top',
   onClose: () => {},
-  theme: {
-    colors,
-    spacing,
-    components: {
-      popover: components.popover,
-    },
-  },
 };
 
 export default Popover;
