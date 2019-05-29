@@ -14,7 +14,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c1 {
@@ -172,7 +172,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c6 + .c2 {
@@ -407,7 +407,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c6 + .c2 {
@@ -704,7 +704,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c1 {
@@ -994,7 +994,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c5 + .c2 {
@@ -1319,7 +1319,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c1 {
@@ -1665,7 +1665,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c5 + .c2 {

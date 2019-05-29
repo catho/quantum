@@ -6,7 +6,7 @@ import { Label, ErrorMessage, shadow } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
 import Icon from '../Icon';
 import CheckboxGroupContext from './CheckboxGroupContext';
-import { colors } from '../shared/theme';
+import { colors, spacing } from '../shared/theme';
 
 const CHECKBOX_SIZE = '18px';
 
@@ -24,7 +24,11 @@ const CheckboxLabel = styled(Label)`
     },
   }) => neutral[700]};
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `0 0 0 ${xsmall}px`};
 `;
 
 CheckboxLabel.displayName = 'CheckboxLabel';
@@ -50,7 +54,11 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     font-weight: bold;
     height: ${CHECKBOX_SIZE};
     justify-content: center;
-    margin-top: 2px;
+    margin-top: ${({
+      theme: {
+        spacing: { xxxsmall },
+      },
+    }) => `${xxxsmall}px`};
     transition: all 0.2s ease-in-out;
     width: ${CHECKBOX_SIZE};
 
@@ -195,6 +203,7 @@ Checkbox.propTypes = {
   onChange: PropTypes.func,
   theme: PropTypes.shape({
     colors: PropTypes.object,
+    spacing: PropTypes.object,
   }),
 };
 
@@ -209,6 +218,7 @@ Checkbox.defaultProps = {
   onChange: () => {},
   theme: {
     colors,
+    spacing,
   },
 };
 

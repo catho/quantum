@@ -36,7 +36,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 jGRlMX\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 emsKyS\\"
           htmlFor=\\"\\"
         >
 -         Foo label
@@ -72,7 +72,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 jGRlMX\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 emsKyS\\"
           htmlFor=\\"\\"
         >
 -         Bar label
@@ -108,7 +108,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 jGRlMX\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 emsKyS\\"
           htmlFor=\\"\\"
         >
 -         Baz label
@@ -402,7 +402,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c2 {
@@ -633,7 +633,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c2 {
@@ -1457,7 +1457,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   cursor: text;
   font-style: italic;
   font-weight: 600;
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 <div
@@ -1903,7 +1903,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c7 + .c3 {
@@ -2088,7 +2088,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   cursor: text;
   font-style: italic;
   font-weight: 600;
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 <div
@@ -2221,7 +2221,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c6 {
