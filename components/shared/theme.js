@@ -172,6 +172,36 @@ const components = {
       },
     },
   },
+
+  alert: {
+    skins: {
+      neutral: {
+        icon: colors.neutral[500],
+        background: colors.neutral[100],
+        text: colors.neutral[900],
+      },
+      primary: {
+        icon: colors.primary[500],
+        background: colors.primary[100],
+        text: colors.primary[900],
+      },
+      success: {
+        icon: colors.success[500],
+        background: colors.success[100],
+        text: colors.success[900],
+      },
+      warning: {
+        icon: colors.warning[500],
+        background: colors.warning[100],
+        text: colors.warning[900],
+      },
+      error: {
+        icon: colors.error[500],
+        background: colors.error[100],
+        text: colors.error[900],
+      },
+    },
+  },
 };
 
 const theme = {

@@ -87,12 +87,11 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   box-shadow: none;
   outline: none;
   height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
   opacity: 0.8;
+  padding: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
+  width: auto;
 }
 
 .c4:hover,
@@ -116,19 +115,21 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c0 {
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 11px 16px;
-  color: inherit;
-  background-color: #e5edfc;
-  border: 1.5px solid #1355d0;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  color: #191919;
+  padding: 12px 16px;
 }
 
 .c0 .c1 .c8 {
-  color: #1355d0;
+  color: #999999;
   margin-right: 16px;
 }
 
 .c0 .c1 .c3 {
-  color: #1355d0;
+  color: #999999;
+  margin: 0 0 0 16px;
 }
 
 <div
@@ -253,12 +254,11 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   box-shadow: none;
   outline: none;
   height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
   opacity: 0.8;
+  padding: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
+  width: auto;
 }
 
 .c5:hover,
@@ -282,19 +282,21 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 .c0 {
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 11px 16px;
-  color: inherit;
-  background-color: #e5edfc;
-  border: 1.5px solid #1355d0;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  color: #191919;
+  padding: 12px 16px;
 }
 
 .c0 .c1 .c3 {
-  color: #1355d0;
+  color: #999999;
   margin-right: 16px;
 }
 
 .c0 .c1 .c4 {
-  color: #1355d0;
+  color: #999999;
+  margin: 0 0 0 16px;
 }
 
 <div
@@ -430,12 +432,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-shadow: none;
   outline: none;
   height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
   opacity: 0.8;
+  padding: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
+  width: auto;
 }
 
 .c4:hover,
@@ -459,19 +460,21 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c0 {
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 11px 16px;
-  color: inherit;
-  background-color: #e5edfc;
-  border: 1.5px solid #1355d0;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  color: #191919;
+  padding: 12px 16px;
 }
 
 .c0 .c1 .c8 {
-  color: #1355d0;
+  color: #999999;
   margin-right: 16px;
 }
 
 .c0 .c1 .c3 {
-  color: #1355d0;
+  color: #999999;
+  margin: 0 0 0 16px;
 }
 
 <div
@@ -596,12 +599,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-shadow: none;
   outline: none;
   height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
   opacity: 0.8;
+  padding: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
+  width: auto;
 }
 
 .c4:hover,
@@ -623,30 +625,33 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c8 .c1 .c9 {
-  color: #1355d0;
+  color: #999999;
   margin-right: 16px;
 }
 
 .c8 .c1 .c3 {
-  color: #1355d0;
+  color: #999999;
+  margin: 0 0 0 16px;
 }
 
 .c0 {
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 11px 16px;
-  color: #3c6510;
-  background-color: #edfadf;
-  border: 1.5px solid #7ed321;
+  font-size: 16px;
+  background-color: #e5edfc;
+  border: 1.5px solid #1355d0;
+  color: #062ab3;
+  padding: 12px 16px;
 }
 
 .c0 .c1 .c9 {
-  color: #7ed321;
+  color: #1355d0;
   margin-right: 16px;
 }
 
 .c0 .c1 .c3 {
-  color: #7ed321;
+  color: #1355d0;
+  margin: 0 0 0 16px;
 }
 
 <div
@@ -658,7 +663,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     onClose={[Function]}
   >
     <span>
-      success
+      blue
     </span>
     <button
       className="c3 c4 c5"
@@ -771,12 +776,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-shadow: none;
   outline: none;
   height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
   opacity: 0.8;
+  padding: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
+  width: auto;
 }
 
 .c4:hover,
@@ -798,39 +802,43 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c8 .c1 .c10 {
-  color: #1355d0;
+  color: #999999;
   margin-right: 16px;
 }
 
 .c8 .c1 .c3 {
-  color: #1355d0;
+  color: #999999;
+  margin: 0 0 0 16px;
 }
 
 .c9 .c1 .c10 {
-  color: #7ed321;
+  color: #1355d0;
   margin-right: 16px;
 }
 
 .c9 .c1 .c3 {
-  color: #7ed321;
+  color: #1355d0;
+  margin: 0 0 0 16px;
 }
 
 .c0 {
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 11px 16px;
-  color: #a36300;
-  background-color: #ffefd6;
-  border: 1.5px solid #f09100;
+  font-size: 16px;
+  background-color: #edfadf;
+  border: 1.5px solid #7ed321;
+  color: #3c6510;
+  padding: 12px 16px;
 }
 
 .c0 .c1 .c10 {
-  color: #f09100;
+  color: #7ed321;
   margin-right: 16px;
 }
 
 .c0 .c1 .c3 {
-  color: #f09100;
+  color: #7ed321;
+  margin: 0 0 0 16px;
 }
 
 <div
@@ -842,7 +850,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     onClose={[Function]}
   >
     <span>
-      warning
+      success
     </span>
     <button
       className="c3 c4 c5"
@@ -955,12 +963,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-shadow: none;
   outline: none;
   height: auto;
-  width: auto;
-  margin: 0 0 0 16px;
-  padding: 0;
   opacity: 0.8;
+  padding: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
+  width: auto;
 }
 
 .c4:hover,
@@ -982,48 +989,260 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c8 .c1 .c11 {
-  color: #1355d0;
+  color: #999999;
   margin-right: 16px;
 }
 
 .c8 .c1 .c3 {
-  color: #1355d0;
+  color: #999999;
+  margin: 0 0 0 16px;
 }
 
 .c9 .c1 .c11 {
-  color: #7ed321;
+  color: #1355d0;
   margin-right: 16px;
 }
 
 .c9 .c1 .c3 {
-  color: #7ed321;
+  color: #1355d0;
+  margin: 0 0 0 16px;
 }
 
 .c10 .c1 .c11 {
-  color: #f09100;
+  color: #7ed321;
   margin-right: 16px;
 }
 
 .c10 .c1 .c3 {
-  color: #f09100;
+  color: #7ed321;
+  margin: 0 0 0 16px;
 }
 
 .c0 {
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 11px 16px;
-  color: #ac001a;
-  background-color: #ffe5e9;
-  border: 1.5px solid #ff2d4d;
+  font-size: 16px;
+  background-color: #ffefd6;
+  border: 1.5px solid #f09100;
+  color: #a36300;
+  padding: 12px 16px;
 }
 
 .c0 .c1 .c11 {
+  color: #f09100;
+  margin-right: 16px;
+}
+
+.c0 .c1 .c3 {
+  color: #f09100;
+  margin: 0 0 0 16px;
+}
+
+<div
+  className="c0"
+  role="alert"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span>
+      warning
+    </span>
+    <button
+      className="c3 c4 c5"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c6 c7"
+        size="medium"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Alert component When you set a different skin Should match a skin snapshot 5`] = `
+.c7 {
+  pointer-events: none;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1355d0;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0 2px 4px 0 #cccccc;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.c5 *:nth-child(2) {
+  margin-left: 5px;
+}
+
+.c5:hover {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5:focus {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c5:active {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5 .c6 {
+  font-size: 24px;
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(128,128,128,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c4:active {
+  box-shadow: none;
+  background-color: rgba(128,128,128,0.5);
+  color: #4c4c4c;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c8 .c1 .c12 {
+  color: #999999;
+  margin-right: 16px;
+}
+
+.c8 .c1 .c3 {
+  color: #999999;
+  margin: 0 0 0 16px;
+}
+
+.c9 .c1 .c12 {
+  color: #1355d0;
+  margin-right: 16px;
+}
+
+.c9 .c1 .c3 {
+  color: #1355d0;
+  margin: 0 0 0 16px;
+}
+
+.c10 .c1 .c12 {
+  color: #7ed321;
+  margin-right: 16px;
+}
+
+.c10 .c1 .c3 {
+  color: #7ed321;
+  margin: 0 0 0 16px;
+}
+
+.c11 .c1 .c12 {
+  color: #f09100;
+  margin-right: 16px;
+}
+
+.c11 .c1 .c3 {
+  color: #f09100;
+  margin: 0 0 0 16px;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #ffe5e9;
+  border: 1.5px solid #ff2d4d;
+  color: #ac001a;
+  padding: 12px 16px;
+}
+
+.c0 .c1 .c12 {
   color: #ff2d4d;
   margin-right: 16px;
 }
 
 .c0 .c1 .c3 {
   color: #ff2d4d;
+  margin: 0 0 0 16px;
 }
 
 <div
