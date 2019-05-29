@@ -25,6 +25,19 @@ const _getColors = ({
   color: ${inverted ? background : text}
 `;
 
+const _getTextColor = ({
+  skin,
+  theme: {
+    components: {
+      popover: {
+        skins: { [skin]: closeButtonColor },
+      },
+    },
+  },
+  inverted,
+}) =>
+  `color: ${inverted ? closeButtonColor.background : closeButtonColor.text};`;
+
 const PopoverContent = styled.div`
   ${shadow(5)};
   align-items: start;
@@ -52,6 +65,7 @@ const PopoverContent = styled.div`
 const CloseButton = styled(Button.Icon).attrs({
   icon: 'close',
 })`
+  ${_getTextColor}
   display: inherit;
   height: auto;
   ${({
@@ -68,6 +82,7 @@ const CloseButton = styled(Button.Icon).attrs({
   :hover {
     background: none;
     opacity: 1;
+    ${_getTextColor}
   }
 `;
 
@@ -89,19 +104,34 @@ class Content extends Component {
   }
 
   render() {
-    const { placement, children, onPopoverClose, theme, ...rest } = this.props;
+    const {
+      placement,
+      children,
+      onPopoverClose,
+      theme,
+      skin,
+      inverted,
+      ...rest
+    } = this.props;
 
     return ReactDOM.createPortal(
       <PopoverContent
         theme={theme}
+        inverted={inverted}
         placement={placement}
+        skin={skin}
         ref={element => {
           this.innerContentRef = element;
         }}
         {...rest}
       >
         <PopoverChildren>{children}</PopoverChildren>
-        <CloseButton theme={theme} onClick={onPopoverClose} />
+        <CloseButton
+          skin={skin}
+          theme={theme}
+          inverted={inverted}
+          onClick={onPopoverClose}
+        />
       </PopoverContent>,
       this.wrapper,
     );

@@ -1710,6 +1710,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -1736,6 +1737,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 .c0 {
@@ -2092,6 +2094,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -2118,6 +2121,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 <section>
@@ -2386,7 +2390,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="neutral"
                     theme={
                       Object {
                         "colors": Object {
@@ -2494,9 +2500,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -2513,7 +2522,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="neutral"
                       theme={
                         Object {
                           "colors": Object {
@@ -2602,9 +2613,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
                         theme={
                           Object {
                             "colors": Object {
@@ -2693,9 +2705,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
                           theme={
                             Object {
                               "colors": Object {
@@ -2832,9 +2845,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
                             theme={
                               Object {
                                 "colors": Object {
@@ -3181,6 +3195,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -3207,6 +3222,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 .c0 {
@@ -3563,6 +3579,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -3589,6 +3606,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 <section>
@@ -3857,7 +3875,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="neutral"
                     theme={
                       Object {
                         "colors": Object {
@@ -3965,9 +3985,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -3984,7 +4007,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="neutral"
                       theme={
                         Object {
                           "colors": Object {
@@ -4073,9 +4098,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
                         theme={
                           Object {
                             "colors": Object {
@@ -4164,9 +4190,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
                           theme={
                             Object {
                               "colors": Object {
@@ -4303,9 +4330,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
                             theme={
                               Object {
                                 "colors": Object {
@@ -4652,6 +4680,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #3c6510;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -4678,6 +4707,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #3c6510;
 }
 
 .c0 {
@@ -5034,6 +5064,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #3c6510;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -5060,6 +5091,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #3c6510;
 }
 
 <section>
@@ -5328,7 +5360,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="success"
                     theme={
                       Object {
                         "colors": Object {
@@ -5436,9 +5470,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -5455,7 +5492,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="success"
                       theme={
                         Object {
                           "colors": Object {
@@ -5544,9 +5583,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="success"
                         theme={
                           Object {
                             "colors": Object {
@@ -5635,9 +5675,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="success"
                           theme={
                             Object {
                               "colors": Object {
@@ -5774,9 +5815,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="success"
                             theme={
                               Object {
                                 "colors": Object {
@@ -6123,6 +6165,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #a36300;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -6149,6 +6192,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #a36300;
 }
 
 .c0 {
@@ -6505,6 +6549,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #a36300;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -6531,6 +6576,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #a36300;
 }
 
 <section>
@@ -6799,7 +6845,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="warning"
                     theme={
                       Object {
                         "colors": Object {
@@ -6907,9 +6955,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -6926,7 +6977,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="warning"
                       theme={
                         Object {
                           "colors": Object {
@@ -7015,9 +7068,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="warning"
                         theme={
                           Object {
                             "colors": Object {
@@ -7106,9 +7160,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="warning"
                           theme={
                             Object {
                               "colors": Object {
@@ -7245,9 +7300,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="warning"
                             theme={
                               Object {
                                 "colors": Object {
@@ -7594,6 +7650,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #ac001a;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -7620,6 +7677,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #ac001a;
 }
 
 .c0 {
@@ -7976,6 +8034,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #ac001a;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -8002,6 +8061,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #ac001a;
 }
 
 <section>
@@ -8270,7 +8330,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="error"
                     theme={
                       Object {
                         "colors": Object {
@@ -8378,9 +8440,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -8397,7 +8462,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="error"
                       theme={
                         Object {
                           "colors": Object {
@@ -8486,9 +8553,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="error"
                         theme={
                           Object {
                             "colors": Object {
@@ -8577,9 +8645,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="error"
                           theme={
                             Object {
                               "colors": Object {
@@ -8716,9 +8785,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="error"
                             theme={
                               Object {
                                 "colors": Object {
@@ -9065,6 +9135,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -9091,6 +9162,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 .c0 {
@@ -9447,6 +9519,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -9473,6 +9546,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 <section>
@@ -9741,7 +9815,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="neutral"
                     theme={
                       Object {
                         "colors": Object {
@@ -9849,9 +9925,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -9868,7 +9947,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="neutral"
                       theme={
                         Object {
                           "colors": Object {
@@ -9957,9 +10038,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
                         theme={
                           Object {
                             "colors": Object {
@@ -10048,9 +10130,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
                           theme={
                             Object {
                               "colors": Object {
@@ -10187,9 +10270,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
                             theme={
                               Object {
                                 "colors": Object {
@@ -10533,6 +10617,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -10559,6 +10644,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 .c0 {
@@ -10912,6 +10998,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -10938,6 +11025,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 <section>
@@ -11206,7 +11294,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="neutral"
                     theme={
                       Object {
                         "colors": Object {
@@ -11314,9 +11404,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -11333,7 +11426,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="neutral"
                       theme={
                         Object {
                           "colors": Object {
@@ -11422,9 +11517,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
                         theme={
                           Object {
                             "colors": Object {
@@ -11513,9 +11609,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
                           theme={
                             Object {
                               "colors": Object {
@@ -11652,9 +11749,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
                             theme={
                               Object {
                                 "colors": Object {
@@ -11998,6 +12096,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -12024,6 +12123,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 .c0 {
@@ -12377,6 +12477,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  color: #4c4c4c;
   display: inherit;
   height: auto;
   margin-left: 16px;
@@ -12403,6 +12504,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:hover {
   background: none;
   opacity: 1;
+  color: #4c4c4c;
 }
 
 <section>
@@ -12671,7 +12773,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     </StyledComponent>
                   </PopoverChildren>
                   <CloseButton
+                    inverted={false}
                     onClick={[Function]}
+                    skin="neutral"
                     theme={
                       Object {
                         "colors": Object {
@@ -12779,9 +12883,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               ";color:",
                               "#4c4c4c",
                               ";}",
-                              "display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;}",
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
                             ],
                           },
                           "displayName": "CloseButton",
@@ -12798,7 +12905,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         }
                       }
                       forwardedRef={null}
+                      inverted={false}
                       onClick={[Function]}
+                      skin="neutral"
                       theme={
                         Object {
                           "colors": Object {
@@ -12887,9 +12996,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         disabled={false}
                         full={false}
                         icon="close"
+                        inverted={false}
                         onClick={[Function]}
                         size="medium"
-                        skin="primary"
+                        skin="neutral"
                         theme={
                           Object {
                             "colors": Object {
@@ -12978,9 +13088,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           className="c2"
                           disabled={false}
                           full={false}
+                          inverted={false}
                           onClick={[Function]}
                           size="medium"
-                          skin="primary"
+                          skin="neutral"
                           theme={
                             Object {
                               "colors": Object {
@@ -13117,9 +13228,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                             forwardedRef={null}
                             full={false}
+                            inverted={false}
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
                             theme={
                               Object {
                                 "colors": Object {
