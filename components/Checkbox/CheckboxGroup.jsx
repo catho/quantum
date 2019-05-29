@@ -5,7 +5,7 @@ import { FieldGroup, ErrorMessage } from '../shared';
 import Checkbox from './Checkbox';
 import CheckboxButton from './CheckboxButton';
 import CheckboxGroupContext from './CheckboxGroupContext';
-import { spacing } from '../shared/theme';
+import { colors, spacing } from '../shared/theme';
 
 const Group = styled(FieldGroup)`
   position: relative;
@@ -85,6 +85,7 @@ CheckboxGroup.propTypes = {
   ),
   type: PropTypes.oneOf(['checkbox', 'button']),
   theme: PropTypes.shape({
+    colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
 };
@@ -100,6 +101,7 @@ CheckboxGroup.defaultProps = {
   options: [],
   type: 'checkbox',
   theme: {
+    colors,
     spacing,
   },
 };
