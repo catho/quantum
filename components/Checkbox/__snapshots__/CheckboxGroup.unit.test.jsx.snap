@@ -16,7 +16,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dSrlkm\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 gbfYQo\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -52,7 +52,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dSrlkm\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 gbfYQo\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -88,7 +88,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dSrlkm\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 gbfYQo\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -476,7 +476,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
 .c2:hover + .c3,
 .c2:focus + .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
@@ -497,7 +497,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
 }
 
 .c2[disabled]:hover + .c3 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c0 {
@@ -707,7 +707,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
 .c2:hover + .c3,
 .c2:focus + .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
@@ -728,7 +728,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
 }
 
 .c2[disabled]:hover + .c3 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c0 {
@@ -1942,7 +1942,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 .c7:hover + .c3,
 .c7:focus + .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7[disabled] ~ .c4 {
@@ -1959,7 +1959,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 }
 
 .c7[disabled]:hover + .c3 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c2 {
@@ -2036,7 +2036,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 .c2:hover + .c3,
 .c2:focus + .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2 + .c3 {
@@ -2050,7 +2050,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 .c2:hover + .c3,
 .c2:focus + .c3 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c2[disabled] {
@@ -2071,7 +2071,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 }
 
 .c2[disabled]:hover + .c3 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c0 {
@@ -2295,7 +2295,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 .c6:hover + .c3,
 .c6:focus + .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6[disabled] {
@@ -2316,7 +2316,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 }
 
 .c6[disabled]:hover + .c3 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c7 + .c3 {
@@ -2355,7 +2355,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 .c7:hover + .c3,
 .c7:focus + .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7 + .c3 {
@@ -2369,7 +2369,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 .c7:hover + .c3,
 .c7:focus + .c3 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c7[disabled] ~ .c4 {
@@ -2386,7 +2386,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 }
 
 .c7[disabled]:hover + .c3 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c2 {
@@ -2439,7 +2439,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 .c2:hover + .c3,
 .c2:focus + .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
@@ -2460,7 +2460,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 }
 
 .c2[disabled]:hover + .c3 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c0 {

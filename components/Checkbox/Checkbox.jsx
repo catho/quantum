@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { Label, ErrorMessage, hexToRgba } from '../shared';
+import { Label, ErrorMessage, shadow } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
 import Icon from '../Icon';
 import CheckboxGroupContext from './CheckboxGroupContext';
@@ -80,39 +80,43 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
   }
 
   :hover + ${CheckIcon}, :focus + ${CheckIcon} {
-    ${({
-      theme: {
+    ${({ theme }) => {
+      const {
         colors: { primary },
-      },
-    }) => `
-      border-color: ${primary[500]};
-      box-shadow: 0 2px 6px 0 ${hexToRgba(primary[500], 0.5)}};
-    `}
+      } = theme;
+
+      return `
+        border-color: ${primary[500]};
+        ${shadow(5, primary[500])({ theme })}
+      `;
+    }}
   }
 
-  ${({
-    error,
-    theme: {
+  ${({ error, theme }) => {
+    const {
       colors: {
         error: { 500: errorColor },
       },
-    },
-  }) =>
-    error &&
+    } = theme;
+
+    return (
+      error &&
+      `
+      + ${CheckIcon} {
+        border-color: ${errorColor};
+      }
+
+      :checked + ${CheckIcon} {
+        background-color: ${errorColor};
+      }
+
+      :hover +  ${CheckIcon}, :focus +  ${CheckIcon} {
+        border-color: ${errorColor};
+        ${shadow(5, errorColor)({ theme })}
+      }
     `
-    + ${CheckIcon} {
-      border-color: ${errorColor};
-    }
-
-    :checked + ${CheckIcon} {
-      background-color: ${errorColor};
-    }
-
-    :hover +  ${CheckIcon}, :focus +  ${CheckIcon} {
-      border-color: ${errorColor};
-      box-shadow: 0 2px 6px 0 ${errorColor};
-    }
-  `}
+    );
+  }}
 
   &[disabled] {
     cursor: not-allowed;
@@ -137,7 +141,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     `}
 
     :hover + ${CheckIcon} {
-      box-shadow: none;
+      ${shadow(0)}
     }
   }
 `;
