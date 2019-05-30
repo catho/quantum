@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
 import { colors, spacing } from '../shared/theme';
 import Icon from '../Icon';
+import { shadow } from '../shared';
 
 const CheckIcon = styled(Icon).attrs({
   name: 'check',
@@ -90,7 +90,11 @@ const HiddenCheckbox = styled.input.attrs({
   width: 100%;
 
   &:focus + ${Switch}:before {
-    box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+    ${({
+      theme: {
+        colors: { primary },
+      },
+    }) => shadow(4, primary[900])};
   }
 
   &:hover + ${Switch}:before {
