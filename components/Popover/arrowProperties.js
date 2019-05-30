@@ -39,13 +39,15 @@ const getArrow = ({
   theme: {
     components: {
       popover: {
-        skins: { [skin]: popoverSkin },
+        skins: {
+          [skin]: { background, text },
+        },
       },
     },
     colors,
   },
   inverted,
-}) => ` color: ${inverted ? popoverSkin.text : popoverSkin.background}
+}) => ` color: ${inverted ? text : background}
   font-size: ${ARROW_SIZE};
   position: absolute;
 
