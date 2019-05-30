@@ -20,12 +20,14 @@ const CheckboxWrapper = styled.div`
 const CheckboxLabel = styled(Label)`
   ${({
     theme: {
-      colors: { neutral },
+      colors: {
+        neutral: { 700: neutralColor },
+      },
       spacing: { xsmall },
       baseFontSize: fontSize,
     },
   }) => `
-    color: ${neutral[700]};
+    color: ${neutralColor};
     font-size: ${fontSize}px;
     margin: 0 0 0 ${xsmall}px;
   `}
@@ -58,13 +60,15 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
 
     ${({
       theme: {
-        colors: { neutral },
+        colors: {
+          neutral: { 100: neutral100, 500: neutral500 },
+        },
         spacing: { xxxsmall },
         baseFontSize: fontSize,
       },
     }) => `
-      background-color: ${neutral[100]};
-      border: 2px solid  ${neutral[500]};
+      background-color: ${neutral100};
+      border: 2px solid  ${neutral500};
       font-size: ${fontSize}px;
       margin-top: ${xxxsmall}px;
     `}
@@ -76,11 +80,14 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
 
       ${({
         theme: {
-          colors: { primary, neutral },
+          colors: {
+            primary: { 500: primaryColor },
+            neutral: { 100: neutralColor },
+          },
         },
       }) => `
-        background-color: ${primary[500]};
-        color: ${neutral[100]};
+        background-color: ${primaryColor};
+        color: ${neutralColor};
       `}
     }
   }
@@ -88,12 +95,14 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
   :hover + ${CheckIcon}, :focus + ${CheckIcon} {
     ${({ theme }) => {
       const {
-        colors: { primary },
+        colors: {
+          primary: { 500: primaryColor },
+        },
       } = theme;
 
       return `
-        border-color: ${primary[500]};
-        ${shadow(5, primary[500])({ theme })}
+        border-color: ${primaryColor};
+        ${shadow(5, primaryColor)({ theme })}
       `;
     }}
   }
@@ -129,20 +138,22 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
 
     ${({
       theme: {
-        colors: { neutral },
+        colors: {
+          neutral: { 500: neutral500, 300: neutral300 },
+        },
       },
     }) => `
       ~ ${CheckboxLabel} {
-        color: ${neutral[500]};
+        color: ${neutral500};
       }
 
       + ${CheckIcon} {
-        border-color: ${neutral[500]};
-        background-color: ${neutral[300]};
+        border-color: ${neutral500};
+        background-color: ${neutral300};
       }
 
       :checked + ${CheckIcon} {
-        background-color: ${neutral[500]};
+        background-color: ${neutral500};
       }
     `}
 
