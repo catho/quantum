@@ -6,7 +6,7 @@ import { Label, ErrorMessage, shadow } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
 import Icon from '../Icon';
 import CheckboxGroupContext from './CheckboxGroupContext';
-import { colors, spacing } from '../shared/theme';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 
 const CHECKBOX_SIZE = '18px';
 
@@ -18,17 +18,17 @@ const CheckboxWrapper = styled.div`
 `;
 
 const CheckboxLabel = styled(Label)`
-  color: ${({
+  ${({
     theme: {
       colors: { neutral },
-    },
-  }) => neutral[700]};
-  font-size: 16px;
-  margin: ${({
-    theme: {
       spacing: { xsmall },
+      baseFontSize: fontSize,
     },
-  }) => `0 0 0 ${xsmall}px`};
+  }) => `
+    color: ${neutral[700]};
+    font-size: ${fontSize}px;
+    margin: 0 0 0 ${xsmall}px;
+  `}
 `;
 
 CheckboxLabel.displayName = 'CheckboxLabel';
@@ -50,25 +50,23 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     box-sizing: border-box;
     color: transparent;
     display: flex;
-    font-size: 16px;
     font-weight: bold;
     height: ${CHECKBOX_SIZE};
     justify-content: center;
-    margin-top: ${({
-      theme: {
-        spacing: { xxxsmall },
-      },
-    }) => `${xxxsmall}px`};
     transition: all 0.2s ease-in-out;
     width: ${CHECKBOX_SIZE};
 
     ${({
       theme: {
         colors: { neutral },
+        spacing: { xxxsmall },
+        baseFontSize: fontSize,
       },
     }) => `
       background-color: ${neutral[100]};
       border: 2px solid  ${neutral[500]};
+      font-size: ${fontSize}px;
+      margin-top: ${xxxsmall}px;
     `}
   }
 
@@ -149,7 +147,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     `}
 
     :hover + ${CheckIcon} {
-      ${shadow(0)}
+      ${shadow()}
     }
   }
 `;
@@ -204,6 +202,7 @@ Checkbox.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
 };
 
@@ -219,6 +218,7 @@ Checkbox.defaultProps = {
   theme: {
     colors,
     spacing,
+    baseFontSize,
   },
 };
 

@@ -64,19 +64,19 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
@@ -187,19 +187,19 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
@@ -281,19 +281,19 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
@@ -422,19 +422,19 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
@@ -478,19 +478,19 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
@@ -586,19 +586,19 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
@@ -754,19 +754,19 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
@@ -814,19 +814,19 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
@@ -884,19 +884,19 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
@@ -1009,19 +1009,19 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
@@ -1065,19 +1065,19 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
@@ -1135,19 +1135,19 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
@@ -1219,19 +1219,19 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
@@ -1369,19 +1369,19 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
@@ -1429,19 +1429,19 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
@@ -1499,19 +1499,19 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
@@ -1569,19 +1569,19 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
@@ -1680,19 +1680,19 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
@@ -1736,19 +1736,19 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
@@ -1806,19 +1806,19 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
@@ -1890,19 +1890,19 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {

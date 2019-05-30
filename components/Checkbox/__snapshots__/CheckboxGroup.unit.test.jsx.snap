@@ -16,7 +16,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 gbfYQo\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dNWRto\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -36,7 +36,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 emsKyS\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 oQALj\\"
           htmlFor=\\"\\"
         >
 -         Foo label
@@ -52,7 +52,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 gbfYQo\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dNWRto\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -72,7 +72,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 emsKyS\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 oQALj\\"
           htmlFor=\\"\\"
         >
 -         Bar label
@@ -88,7 +88,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 gbfYQo\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dNWRto\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -108,7 +108,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 emsKyS\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 oQALj\\"
           htmlFor=\\"\\"
         >
 -         Baz label
@@ -452,19 +452,19 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c2:checked + .c3 {
@@ -683,19 +683,19 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c2:checked + .c3 {
@@ -1918,19 +1918,19 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c3 {
@@ -2012,19 +2012,19 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c2:checked + .c3 {
@@ -2271,19 +2271,19 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c3 {
@@ -2331,19 +2331,19 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c3 {
@@ -2415,19 +2415,19 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
   background-color: #f2f2f2;
   border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c2:checked + .c3 {
