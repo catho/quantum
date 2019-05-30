@@ -30,13 +30,14 @@ const _getTextColor = ({
   theme: {
     components: {
       popover: {
-        skins: { [skin]: closeButtonColor },
+        skins: {
+          [skin]: { background, text },
+        },
       },
     },
   },
   inverted,
-}) =>
-  `color: ${inverted ? closeButtonColor.background : closeButtonColor.text};`;
+}) => `color: ${inverted ? background : text};`;
 
 const PopoverContent = styled.div`
   ${shadow(5)};
