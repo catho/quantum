@@ -90,57 +90,66 @@ const StyledButton = styled.button`
       components: {
         button: {
           skins: {
-            [skin]: { mainColor, text },
+            [skin]: {
+              mainColor: {
+                100: mainColor100,
+                500: mainColor500,
+                700: mainColor700,
+              },
+              text: { 100: text100 },
+            },
           },
         },
       },
-      colors,
+      colors: {
+        neutral: { 100: neutral100, 500: neutral500 },
+      },
     } = theme;
 
     let bgColor;
     let textColor;
 
     if (disabled) {
-      bgColor = colors.neutral[500];
-      textColor = colors.neutral[100];
+      bgColor = neutral500;
+      textColor = neutral100;
     } else if (stroked) {
-      textColor = mainColor[500];
-      bgColor = colors.neutral[100];
+      textColor = mainColor500;
+      bgColor = neutral100;
     } else {
-      textColor = text[100];
-      bgColor = mainColor[500];
+      textColor = text100;
+      bgColor = mainColor500;
     }
 
     return `
       background-color: ${bgColor};
       color: ${textColor};
 
-      border: 1.5px solid ${disabled ? colors.neutral[500] : mainColor[500]};
+      border: 1.5px solid ${disabled ? neutral500 : mainColor500};
 
-      ${shadow(2, colors.neutral[500])({ theme })}
+      ${shadow(2, neutral500)({ theme })}
 
       :hover {
         ${
           !disabled
             ? `
-              ${shadow(4, mainColor[700])({ theme })}
-              background-color: ${stroked ? mainColor[100] : mainColor[700]};
-              border-color: ${mainColor[700]};
+              ${shadow(4, mainColor700)({ theme })}
+              background-color: ${stroked ? mainColor100 : mainColor700};
+              border-color: ${mainColor700};
             `
             : ''
         }
       }
 
       :focus {
-        ${!disabled ? shadow(4, mainColor[500]) : ''}
+        ${!disabled ? shadow(4, mainColor500) : ''}
       }
 
       :active {
         ${
           !disabled
             ? `
-              ${shadow(8, mainColor[700])({ theme })}
-              background-color: ${mainColor[700]};
+              ${shadow(8, mainColor700)({ theme })}
+              background-color: ${mainColor700};
             `
             : ''
         }
