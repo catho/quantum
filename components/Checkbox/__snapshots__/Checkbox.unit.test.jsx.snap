@@ -14,7 +14,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c1 {
@@ -57,38 +57,38 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
@@ -109,7 +109,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 }
 
 .c1[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 <div
@@ -172,7 +172,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c6 + .c2 {
@@ -180,38 +180,38 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6[disabled] ~ .c3 {
@@ -228,7 +228,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c6[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c1 {
@@ -274,38 +274,38 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1 + .c2 {
@@ -319,7 +319,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c1[disabled] {
@@ -340,7 +340,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c1[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 <div
@@ -407,7 +407,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c6 + .c2 {
@@ -415,38 +415,38 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6[disabled] ~ .c3 {
@@ -463,7 +463,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c6[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c7 + .c2 {
@@ -471,38 +471,38 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
 .c7:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7 + .c2 {
@@ -516,7 +516,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 .c7:hover + .c2,
 .c7:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c7[disabled] ~ .c3 {
@@ -533,7 +533,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c7[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c1 {
@@ -579,38 +579,38 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1 + .c2 {
@@ -624,7 +624,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c1[disabled] {
@@ -645,7 +645,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c1[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 <div
@@ -704,7 +704,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c1 {
@@ -747,38 +747,38 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
@@ -799,7 +799,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c1[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c5 + .c2 {
@@ -807,38 +807,38 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
 .c5:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5 + .c2 {
@@ -852,7 +852,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 .c5:hover + .c2,
 .c5:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c5[disabled] ~ .c3 {
@@ -869,7 +869,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c5[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c6 + .c2 {
@@ -877,38 +877,38 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6 + .c2 {
@@ -922,7 +922,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c6[disabled] ~ .c3 {
@@ -939,7 +939,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c6[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 <div
@@ -994,7 +994,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c5 + .c2 {
@@ -1002,38 +1002,38 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
 .c5:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5[disabled] ~ .c3 {
@@ -1050,7 +1050,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 }
 
 .c5[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c6 + .c2 {
@@ -1058,38 +1058,38 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6 + .c2 {
@@ -1103,7 +1103,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c6[disabled] ~ .c3 {
@@ -1120,7 +1120,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 }
 
 .c6[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c7 + .c2 {
@@ -1128,38 +1128,38 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
 .c7:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7 + .c2 {
@@ -1173,7 +1173,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 .c7:hover + .c2,
 .c7:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c7[disabled] ~ .c3 {
@@ -1190,7 +1190,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 }
 
 .c7[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c1 {
@@ -1212,38 +1212,38 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
@@ -1264,7 +1264,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 }
 
 .c1[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 <div
@@ -1319,7 +1319,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c1 {
@@ -1362,38 +1362,38 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
@@ -1414,7 +1414,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 }
 
 .c1[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c5 + .c2 {
@@ -1422,38 +1422,38 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
 .c5:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5 + .c2 {
@@ -1467,7 +1467,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 .c5:hover + .c2,
 .c5:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c5[disabled] ~ .c3 {
@@ -1484,7 +1484,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 }
 
 .c5[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c6 + .c2 {
@@ -1492,38 +1492,38 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6 + .c2 {
@@ -1537,7 +1537,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c6[disabled] ~ .c3 {
@@ -1554,7 +1554,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 }
 
 .c6[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c7 + .c2 {
@@ -1562,38 +1562,38 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
 .c7:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7[disabled] ~ .c3 {
@@ -1610,7 +1610,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 }
 
 .c7[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 <div
@@ -1665,7 +1665,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   margin-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
 }
 
 .c5 + .c2 {
@@ -1673,38 +1673,38 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c5:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c5:hover + .c2,
 .c5:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5[disabled] ~ .c3 {
@@ -1721,7 +1721,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 }
 
 .c5[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c6 + .c2 {
@@ -1729,38 +1729,38 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c6:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6 + .c2 {
@@ -1774,7 +1774,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 .c6:hover + .c2,
 .c6:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c6[disabled] ~ .c3 {
@@ -1791,7 +1791,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 }
 
 .c6[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c7 + .c2 {
@@ -1799,38 +1799,38 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c7:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c7:hover + .c2,
 .c7:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7 + .c2 {
@@ -1844,7 +1844,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 .c7:hover + .c2,
 .c7:focus + .c2 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c7[disabled] ~ .c3 {
@@ -1861,7 +1861,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 }
 
 .c7[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 .c1 {
@@ -1883,38 +1883,38 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
   border-radius: 2px;
-  border: 2px solid #999999;
   box-sizing: border-box;
   color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
   height: 18px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .c1:checked + .c2 {
-  background-color: #1355d0;
   border-width: 0;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  color: #f2f2f2;
 }
 
 .c1:hover + .c2,
 .c1:focus + .c2 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
@@ -1935,7 +1935,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 }
 
 .c1[disabled]:hover + .c2 {
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
 <div
