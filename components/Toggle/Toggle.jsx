@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Colors from '../Colors';
+import { colors, spacing } from '../shared/theme';
 import Icon from '../Icon';
 
 const CheckIcon = styled(Icon).attrs({
@@ -22,10 +23,18 @@ const Switch = styled.div`
   cursor: pointer;
   display: inline-block;
   height: 24px;
-  padding-left: 42px;
+  padding-left: ${({
+    theme: {
+      spacing: { xxlarge },
+    },
+  }) => `${xxlarge}px;`}
 
   &:before {
-    background-color: ${Colors.BLACK[400]};
+    background-color: ${({
+      theme: {
+        colors: { neutral },
+      },
+    }) => `${neutral[500]};`};
     border-radius: 16px;
     content: '';
     height: 24px;
@@ -40,10 +49,18 @@ const Switch = styled.div`
   ${CloseIcon},
   ${CheckIcon} {
     align-items: center;
-    background-color: ${Colors.BLACK[100]};
+    background-color: ${({
+      theme: {
+        colors: { neutral },
+      },
+    }) => `${neutral[100]};`};
     border-radius: 50%;
     display: flex;
-    color: ${Colors.BLACK[400]};
+    color: ${({
+      theme: {
+        colors: { neutral },
+      },
+    }) => `${neutral[500]};`};
     font-size: 12px;
     height: 20px;
     justify-content: center;
@@ -77,7 +94,11 @@ const HiddenCheckbox = styled.input.attrs({
   }
 
   &:hover + ${Switch}:before {
-    background-color: ${Colors.BLACK[700]};
+    background-color: ${({
+      theme: {
+        colors: { neutral },
+      },
+    }) => `${neutral[700]};`};
   }
 
   &:checked + ${Switch} ${CloseIcon} {
@@ -90,38 +111,59 @@ const HiddenCheckbox = styled.input.attrs({
   }
 
   &:checked + ${Switch}:before {
-    background-color: ${Colors.BLUE[500]};
+    background-color: ${({
+      theme: {
+        colors: { primary },
+      },
+    }) => `${primary[500]};`};
   }
 
   &:checked:hover + ${Switch}:before {
-    background-color: ${Colors.COBALT[500]};
+    background-color: ${({
+      theme: {
+        colors: { primary },
+      },
+    }) => `${primary[900]};`};
   }
 
   &:checked + ${Switch} ${CheckIcon} {
-    background-color: ${Colors.BLUE[200]};
-    color: ${Colors.BLUE[500]};
+    ${({
+      theme: {
+        colors: { primary },
+      },
+    }) =>
+      `background-color: ${primary[100]};
+     color: ${primary[500]};`};
     transform: translateX(18px);
   }
 `;
 
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-const Toggle = ({ checked, ...rest }) => (
+const Toggle = ({ checked, theme, ...rest }) => (
   <Wrapper>
-    <HiddenCheckbox checked={checked} {...rest} />
-    <Switch>
+    <HiddenCheckbox theme={theme} checked={checked} {...rest} />
+    <Switch theme={theme}>
       <CloseIcon />
       <CheckIcon />
     </Switch>
   </Wrapper>
 );
 
-Toggle.defaultProps = {
-  checked: null,
-};
-
 Toggle.propTypes = {
   checked: PropTypes.bool,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
+};
+
+Toggle.defaultProps = {
+  checked: null,
+  theme: {
+    colors,
+    spacing,
+  },
 };
 
 export default Toggle;

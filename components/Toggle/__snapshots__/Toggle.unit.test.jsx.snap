@@ -11,7 +11,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   cursor: pointer;
   display: inline-block;
   height: 24px;
-  padding-left: 42px;
+  padding-left: 40px;
 }
 
 .c3:before {
@@ -95,7 +95,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
 }
 
 .c1:checked:hover + .c2:before {
-  background-color: #002f7b;
+  background-color: #062ab3;
 }
 
 .c1:checked + .c2 .c5 {
@@ -155,7 +155,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   cursor: pointer;
   display: inline-block;
   height: 24px;
-  padding-left: 42px;
+  padding-left: 40px;
 }
 
 .c3:before {
@@ -239,7 +239,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
 }
 
 .c1:checked:hover + .c2:before {
-  background-color: #002f7b;
+  background-color: #062ab3;
 }
 
 .c1:checked + .c2 .c5 {
