@@ -9,7 +9,6 @@ const RadioMark = styled.span`
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
@@ -19,10 +18,12 @@ const RadioMark = styled.span`
       colors: {
         neutral: { 100: white, 500: gray },
       },
+      spacing: { xxsmall },
     },
   }) => `
     background-color: ${white};
     border: 1.5px solid ${gray};
+    margin-right: ${xxsmall}px;
   `}
 
   :after {
@@ -264,10 +265,7 @@ Radio.defaultProps = {
   children: undefined,
   label: undefined,
   onChange: () => {},
-  theme: {
-    colors,
-    spacing,
-  },
+  theme: { colors, spacing },
 };
 
 export default Radio;

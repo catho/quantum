@@ -38,12 +38,12 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
   background-color: #f2f2f2;
   border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
@@ -238,12 +238,12 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
   background-color: #f2f2f2;
   border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
@@ -414,12 +414,12 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
   background-color: #f2f2f2;
   border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
@@ -635,12 +635,12 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
   background-color: #f2f2f2;
   border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
