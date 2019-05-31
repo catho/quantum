@@ -10,6 +10,7 @@ import * as INPUT_STYLE from './inputStyle';
 import ButtonGroupLabel from './ButtonGroupLabel';
 import hexToRgba from './hexToRgba';
 import shadow from './shadow';
+import HiddenInput from './HiddenInput';
 
 export {
   ErrorMessage,
@@ -24,4 +25,5 @@ export {
   ButtonGroupLabel,
   hexToRgba,
   shadow,
+  HiddenInput,
 };
