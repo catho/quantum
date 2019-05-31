@@ -24,11 +24,9 @@ const CheckboxLabel = styled(Label)`
         neutral: { 700: neutralColor },
       },
       spacing: { xsmall },
-      baseFontSize: fontSize,
     },
   }) => `
     color: ${neutralColor};
-    font-size: ${fontSize}px;
     margin: 0 0 0 ${xsmall}px;
   `}
 `;
