@@ -91,6 +91,10 @@ const components = {
         mainColor: colors.primary,
         text: colors.neutral,
       },
+      secondary: {
+        mainColor: colors.secondary,
+        text: colors.neutral,
+      },
       success: {
         mainColor: colors.success,
         text: colors.neutral,
