@@ -46,21 +46,18 @@ const Switch = styled.div`
       transform 0.2s ease-in-out;
   }
 
-  ${CloseIcon},
-  ${CheckIcon} {
+  ${CloseIcon}, ${CheckIcon} {
     align-items: center;
-    background-color: ${({
+    ${({
       theme: {
         colors: { neutral },
       },
-    }) => `${neutral[100]};`};
+    }) => `
+      background-color: ${neutral[100]};
+      color: ${neutral[500]};
+    `};
     border-radius: 50%;
     display: flex;
-    color: ${({
-      theme: {
-        colors: { neutral },
-      },
-    }) => `${neutral[500]};`};
     font-size: 12px;
     height: 20px;
     justify-content: center;

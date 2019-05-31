@@ -35,12 +35,12 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #f2f2f2;
+  color: #999999;
   border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #999999;
   font-size: 12px;
   height: 20px;
   -webkit-box-pack: center;
@@ -179,12 +179,12 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #f2f2f2;
+  color: #999999;
   border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #999999;
   font-size: 12px;
   height: 20px;
   -webkit-box-pack: center;
