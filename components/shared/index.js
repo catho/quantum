@@ -7,7 +7,6 @@ import * as theme from './theme';
 import BREAKPOINTS from './breakpoints';
 import uniqId from './uniqId';
 import * as INPUT_STYLE from './inputStyle';
-import ButtonGroupLabel from './ButtonGroupLabel';
 import hexToRgba from './hexToRgba';
 import shadow from './shadow';
 
@@ -21,7 +20,6 @@ export {
   BREAKPOINTS,
   INPUT_STYLE,
   uniqId,
-  ButtonGroupLabel,
   hexToRgba,
   shadow,
 };
