@@ -198,6 +198,7 @@ Button.defaultProps = {
   skin: 'primary',
   type: 'button',
   children: undefined,
+  $as: undefined,
   onClick: () => {},
   theme: {
     colors: defaultColors,
