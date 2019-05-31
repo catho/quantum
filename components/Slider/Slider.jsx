@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import RcSlider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Colors from '../Colors';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 import Tooltip from '../Tooltip';
 import valueValidator from './valueValidator';
 
@@ -17,7 +18,7 @@ const sliderStyle = {
   },
   marksStyle: {
     common: {
-      fontSize: 16,
+      fontSize: baseFontSize,
       marginLeft: 0,
       width: 'auto',
     },
@@ -44,11 +45,19 @@ const tipPosition = ({ value, min, max }) => {
 
 const customStyle = css`
   .rc-slider-handle {
-    background-color: ${Colors.BLUE[500]};
+    background-color: ${({
+      theme: {
+        colors: { primary },
+      },
+    }) => primary[500]};
   }
 
   .rc-slider-rail {
-    background-color: ${Colors.BLUE[200]};
+    background-color: ${({
+      theme: {
+        colors: { primary },
+      },
+    }) => primary[100]};
   }
 
   .rc-slider-track {
@@ -65,15 +74,27 @@ const customStyle = css`
     background: none;
 
     .rc-slider-handle {
-      background-color: ${Colors.BLACK[400]};
+      background-color: ${({
+        theme: {
+          colors: { neutral },
+        },
+      }) => neutral[500]};
     }
 
     .rc-slider-rail {
-      background-color: ${Colors.BLACK[100]};
+      background-color: ${({
+        theme: {
+          colors: { neutral },
+        },
+      }) => neutral[100]};
     }
 
     .rc-slider-track {
-      background-color: ${Colors.BLACK[200]};
+      background-color: ${({
+        theme: {
+          colors: { neutral },
+        },
+      }) => neutral[300]};
     }
   }
 `;
@@ -129,7 +150,7 @@ class Slider extends React.Component {
       state: { visible },
     } = this;
 
-    const { value, tipFormatter, minMaxFormatter, min, max } = props;
+    const { value, tipFormatter, minMaxFormatter, min, max, theme } = props;
     const { from, to } = value;
     const { handleStyle, trackStyle, marksStyle, railStyle } = sliderStyle;
     const marks = {
@@ -164,6 +185,7 @@ class Slider extends React.Component {
             handleStyle={[handleStyle, handleStyle]}
             max={max}
             min={min}
+            theme={theme}
             marks={marks}
             pushable
             onChange={handleChange}
@@ -181,6 +203,7 @@ class Slider extends React.Component {
             max={max}
             marks={marks}
             min={min}
+            theme={theme}
             onChange={handleChange}
             onBeforeChange={handleMouseDown}
             onAfterChange={handleMouseUp}
@@ -206,6 +229,11 @@ Slider.defaultProps = {
   tipFormatter: value =>
     typeof value === 'object' ? `${value.from} to ${value.to}` : value,
   minMaxFormatter: value => value,
+  theme: {
+    spacing,
+    colors,
+    baseFontSize,
+  },
 };
 
 Slider.propTypes = {
@@ -219,6 +247,11 @@ Slider.propTypes = {
   minMaxFormatter: PropTypes.func,
   /** It receives a Number to display a slider or an Object with from and to properties to display a range. Example: `value={10}` or `value={{ from: 20, to: 40 }}` */
   value: valueValidator,
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    colors: PropTypes.object,
+    baseFontSize: PropTypes.number,
+  }),
 };
 
 export default Slider;
