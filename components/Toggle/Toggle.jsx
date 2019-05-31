@@ -23,18 +23,20 @@ const Switch = styled.div`
   cursor: pointer;
   display: inline-block;
   height: 24px;
-  padding-left: ${({
+  ${({
     theme: {
       spacing: { xxlarge },
     },
-  }) => `${xxlarge}px;`}
+  }) => `padding-left: ${xxlarge}px;`}
 
   &:before {
-    background-color: ${({
+    ${({
       theme: {
-        colors: { neutral },
+        colors: {
+          neutral: { 500: neutral500 },
+        },
       },
-    }) => `${neutral[500]};`};
+    }) => `background-color: ${neutral500};`};
     border-radius: 16px;
     content: '';
     height: 24px;
@@ -50,16 +52,18 @@ const Switch = styled.div`
     align-items: center;
     ${({
       theme: {
-        colors: { neutral },
+        colors: {
+          neutral: { 100: neutral100, 500: neutral500 },
+        },
       },
     }) => `
-      background-color: ${neutral[100]};
-      color: ${neutral[500]};
+      background-color: ${neutral100};
+      color: ${neutral500};
     `};
     border-radius: 50%;
     display: flex;
-    font-size: ${({ theme: { baseFontSize: baseFont } }) =>
-      `${baseFont * 0.75}px`};
+    ${({ theme: { baseFontSize: baseFont } }) =>
+      `font-size: ${baseFont * 0.75}px`};
     height: 20px;
     justify-content: center;
     position: absolute;
@@ -90,17 +94,21 @@ const HiddenCheckbox = styled.input.attrs({
   &:focus + ${Switch}:before {
     ${({
       theme: {
-        colors: { primary },
+        colors: {
+          primary: { 900: primary900 },
+        },
       },
-    }) => shadow(4, primary[900])};
+    }) => shadow(4, primary900)};
   }
 
   &:hover + ${Switch}:before {
-    background-color: ${({
+    ${({
       theme: {
-        colors: { neutral },
+        colors: {
+          neutral: { 700: neutral700 },
+        },
       },
-    }) => `${neutral[700]};`};
+    }) => `background-color: ${neutral700};`};
   }
 
   &:checked + ${Switch} ${CloseIcon} {
@@ -113,29 +121,35 @@ const HiddenCheckbox = styled.input.attrs({
   }
 
   &:checked + ${Switch}:before {
-    background-color: ${({
+    ${({
       theme: {
-        colors: { primary },
+        colors: {
+          primary: { 500: primary500 },
+        },
       },
-    }) => `${primary[500]};`};
+    }) => `background-color: ${primary500};`};
   }
 
   &:checked:hover + ${Switch}:before {
-    background-color: ${({
+    ${({
       theme: {
-        colors: { primary },
+        colors: {
+          primary: { 900: primary900 },
+        },
       },
-    }) => `${primary[900]};`};
+    }) => `background-color: ${primary900};`};
   }
 
   &:checked + ${Switch} ${CheckIcon} {
     ${({
       theme: {
-        colors: { primary },
+        colors: {
+          primary: { 100: primary100, 500: primary500 },
+        },
       },
     }) =>
-      `background-color: ${primary[100]};
-     color: ${primary[500]};`};
+      `background-color: ${primary100};
+     color: ${primary500};`};
     transform: translateX(18px);
   }
 `;
