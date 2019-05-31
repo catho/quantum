@@ -198,13 +198,13 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
 
 .c7 .c2:focus ~ .c8 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7 .c2:checked:disabled ~ .c8 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c1 .c9 {
@@ -402,13 +402,13 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
 
 .c7 .c2:focus ~ .c8 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7 .c2:checked:disabled ~ .c8 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c1 {
@@ -541,20 +541,19 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 }
 
 .c5 {
-  background-color: #FFFFFF;
-  border: 1.5px solid #999999;
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c5:after {
-  background-color: #1355d0;
   border-radius: 50%;
   content: '';
   display: none;
@@ -563,6 +562,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
+  background-color: #1355d0;
 }
 
 .c1 {
@@ -586,19 +586,19 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 
 .c1 .c2:focus ~ .c4 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1:hover .c4,
 .c1:focus .c4 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c0 {
@@ -776,13 +776,13 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
 
 .c7 .c2:focus ~ .c8 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c7 .c2:checked:disabled ~ .c8 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c1 .c9 {
@@ -905,20 +905,19 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 }
 
 .c5 {
-  background-color: #FFFFFF;
-  border: 1.5px solid #999999;
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c5:after {
-  background-color: #1355d0;
   border-radius: 50%;
   content: '';
   display: none;
@@ -927,6 +926,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
+  background-color: #1355d0;
 }
 
 .c1 {
@@ -950,19 +950,19 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 
 .c1 .c2:focus ~ .c4 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1:hover .c4,
 .c1:focus .c4 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c0 {
@@ -1028,5 +1028,195 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
     />
     Baz
   </label>
+</div>
+`;
+
+exports[`<RadioGroup /> snapshot with an error 1`] = `
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c3:focus ~ .c8 {
+  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  background-color: #1355d0;
+  border-color: #1355d0;
+  color: #FFFFFF;
+}
+
+.c3:hover ~ .c8 {
+  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c3:active ~ .c8 {
+  box-shadow: 0 2px 4px 0 #4c4c4c;
+  background-color: #002f7b;
+  border-color: #002f7b;
+  color: #FFFFFF;
+}
+
+.c5 {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  top: 4px;
+  width: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  margin-right: 4px;
+}
+
+.c5:after {
+  border-radius: 50%;
+  content: '';
+  display: none;
+  height: 50%;
+  left: 25%;
+  position: absolute;
+  top: 25%;
+  width: 50%;
+  background-color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c4 {
+  border-color: #1355d0;
+}
+
+.c7 .c2:checked ~ .c4:after {
+  background-color: #1355d0;
+  display: block;
+}
+
+.c7 .c2:focus ~ .c4 {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c7:hover .c4,
+.c7:focus .c4 {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c7 .c2:checked:disabled ~ .c4 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1 .c2:checked ~ .c4 {
+  border-color: #1355d0;
+}
+
+.c1 .c2:checked ~ .c4:after {
+  background-color: #1355d0;
+  display: block;
+}
+
+.c1 .c2:focus ~ .c4 {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c1:hover .c4,
+.c1:focus .c4 {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c1 .c2:checked ~ .c4 {
+  border-color: #ff2d4d;
+}
+
+.c1 .c2:checked ~ .c4:after {
+  background-color: #ff2d4d;
+  display: block;
+}
+
+.c1 .c2:focus ~ .c4 {
+  border-color: #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+}
+
+.c1 .c4 {
+  border-color: #ff2d4d;
+}
+
+.c1:hover .c4,
+.c1:focus .c4 {
+  border-color: #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+}
+
+.c1 .c2:checked:disabled ~ .c4 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  position: relative;
+}
+
+.c6 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  margin-left: -4px;
+}
+
+<div
+  className="c0"
+  role="radiogroup"
+>
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <input
+      className="c2 c3"
+      disabled={false}
+      name="groceries"
+      onChange={[Function]}
+      type="radio"
+      value="Foo"
+    />
+    <span
+      className="c4 c5"
+    />
+    Foo
+  </label>
+  <div
+    className="c6"
+  >
+    Error text
+  </div>
 </div>
 `;
