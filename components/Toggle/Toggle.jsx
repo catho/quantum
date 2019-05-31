@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { colors, spacing } from '../shared/theme';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 import Icon from '../Icon';
 import { shadow } from '../shared';
 
@@ -58,7 +58,8 @@ const Switch = styled.div`
     `};
     border-radius: 50%;
     display: flex;
-    font-size: 12px;
+    font-size: ${({ theme: { baseFontSize: baseFont } }) =>
+      `${baseFont * 0.75}px`};
     height: 20px;
     justify-content: center;
     position: absolute;
@@ -156,6 +157,7 @@ Toggle.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
 };
 
@@ -164,6 +166,7 @@ Toggle.defaultProps = {
   theme: {
     colors,
     spacing,
+    baseFontSize,
   },
 };
 
