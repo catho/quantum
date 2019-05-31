@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { shadow } from '../shared';
+import { shadow, hexToRgba } from '../shared';
 import {
   components,
   spacing,
@@ -10,7 +10,6 @@ import {
 } from '../shared/theme';
 
 import Icon from '../Icon/Icon';
-import Colors from '../Colors';
 
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
@@ -246,27 +245,84 @@ Button.propTypes = {
 };
 
 const IconButton = styled(Button)`
-  border-radius: 50%;
-  border: none;
-  color: ${Colors.SHADOW[50]};
-  width: 40px;
+  ${({ skin, theme }) => {
+    const {
+      components: {
+        button: {
+          skins: {
+            [skin]: {
+              mainColor: {
+                300: mainColor300,
+                500: mainColor500,
+                700: mainColor700,
+              },
+            },
+          },
+        },
+      },
+    } = theme;
 
-  background-color: transparent;
-  box-shadow: none;
-  outline: none;
+    return `
+    border-radius: 50%;
+    border: none;
+    color: ${hexToRgba(mainColor500, 0.5)};
+    width: 40px;
 
-  :hover,
-  :focus {
+    background-color: transparent;
     box-shadow: none;
-    background-color: ${Colors.SHADOW[40]};
-    color: ${Colors.BLACK[700]};
-  }
-  :active {
-    box-shadow: none;
-    background-color: ${Colors.SHADOW[50]};
-    color: ${Colors.BLACK[700]};
-  }
+    outline: none;
+
+    ${ButtonIcon} {
+      margin-right: 0;
+    }
+
+    :hover,
+    :focus {
+      box-shadow: none;
+      background-color: ${hexToRgba(mainColor300, 0.4)};
+      color: ${mainColor700};
+    }
+
+    :active {
+      box-shadow: none;
+      background-color: ${hexToRgba(mainColor300, 0.5)};
+      color: ${mainColor700};
+    }
+    `;
+  }}
 `;
+
+IconButton.propTypes = {
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
+  skin: PropTypes.oneOf([
+    'neutral',
+    'primary',
+    'secondary',
+    'success',
+    'warning',
+    'error',
+  ]),
+  theme: PropTypes.shape({
+    baseFontSize: PropTypes.number,
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+    components: PropTypes.shape({
+      button: PropTypes.object,
+    }),
+  }),
+};
+
+IconButton.defaultProps = {
+  size: 'medium',
+  skin: 'neutral',
+  theme: {
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    components: {
+      button: components.button,
+    },
+  },
+};
 
 Button.Icon = IconButton;
 
