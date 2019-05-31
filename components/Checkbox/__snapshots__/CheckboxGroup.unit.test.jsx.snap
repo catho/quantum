@@ -16,7 +16,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dNWRto\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 kNoFpO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -52,7 +52,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dNWRto\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 kNoFpO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -88,7 +88,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dNWRto\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 kNoFpO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -128,76 +128,88 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 brfAPx\\"
   >
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 bWfXYb\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 cMijjU\\"
     >
-      <input
-        checked={false}
-        className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 kcaPAK\\"
-        disabled={false}
--       id=\\"checkbox-button-12\\"
-+       id=\\"checkbox-button-15\\"
-        name=\\"Foo\\"
-        onChange={[Function anonymous]}
-        type=\\"checkbox\\"
-        value=\\"\\"
-      />
       <label
         checked={false}
-        className=\\"Label-sc-1ny5bqy-0 ButtonGroupLabel-c89ie7-0 XDOfc\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 jwxkYa\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-12\\"
 +       htmlFor=\\"checkbox-button-15\\"
+        onClick={[Function onClick]}
+        size=\\"medium\\"
+        type=\\"button\\"
       >
+        
+        <input
+          checked={false}
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 cvUSAl\\"
+          disabled={false}
+-         id=\\"checkbox-button-12\\"
++         id=\\"checkbox-button-15\\"
+          name=\\"Foo\\"
+          onChange={[Function anonymous]}
+          type=\\"checkbox\\"
+          value=\\"\\"
+        />
 -       Foo label
 +       Foo
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 bWfXYb\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 cMijjU\\"
     >
-      <input
-        checked={false}
-        className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 kcaPAK\\"
-        disabled={false}
--       id=\\"checkbox-button-13\\"
-+       id=\\"checkbox-button-16\\"
-        name=\\"Bar\\"
-        onChange={[Function anonymous]}
-        type=\\"checkbox\\"
-        value=\\"\\"
-      />
       <label
         checked={false}
-        className=\\"Label-sc-1ny5bqy-0 ButtonGroupLabel-c89ie7-0 XDOfc\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 jwxkYa\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-13\\"
 +       htmlFor=\\"checkbox-button-16\\"
+        onClick={[Function onClick]}
+        size=\\"medium\\"
+        type=\\"button\\"
       >
+        
+        <input
+          checked={false}
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 cvUSAl\\"
+          disabled={false}
+-         id=\\"checkbox-button-13\\"
++         id=\\"checkbox-button-16\\"
+          name=\\"Bar\\"
+          onChange={[Function anonymous]}
+          type=\\"checkbox\\"
+          value=\\"\\"
+        />
 -       Bar label
 +       Bar
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-3 bWfXYb\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 cMijjU\\"
     >
-      <input
-        checked={false}
-        className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 kcaPAK\\"
-        disabled={false}
--       id=\\"checkbox-button-14\\"
-+       id=\\"checkbox-button-17\\"
-        name=\\"Baz\\"
-        onChange={[Function anonymous]}
-        type=\\"checkbox\\"
-        value=\\"\\"
-      />
       <label
         checked={false}
-        className=\\"Label-sc-1ny5bqy-0 ButtonGroupLabel-c89ie7-0 XDOfc\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 jwxkYa\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-14\\"
 +       htmlFor=\\"checkbox-button-17\\"
+        onClick={[Function onClick]}
+        size=\\"medium\\"
+        type=\\"button\\"
       >
+        
+        <input
+          checked={false}
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 cvUSAl\\"
+          disabled={false}
+-         id=\\"checkbox-button-14\\"
++         id=\\"checkbox-button-17\\"
+          name=\\"Baz\\"
+          onChange={[Function anonymous]}
+          type=\\"checkbox\\"
+          value=\\"\\"
+        />
 -       Baz label
 +       Baz
       </label>
@@ -206,72 +218,70 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
 `;
 
 exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
-.c4 {
-  display: block;
-  margin-bottom: 5px;
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #FFFFFF;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #f2f2f2;
   color: #1355d0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 *:nth-child(2) {
-  margin-left: 5px;
+.c3 .c5 {
+  margin-right: 5px;
 }
 
-.c5:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c3:hover {
+  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
+  background-color: #e5edfc;
+  border-color: #0e44c4;
 }
 
-.c5:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:focus,
+.c3:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
-.c5:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:active {
+  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
+  background-color: #0e44c4;
 }
 
-.c2 {
+.c3 .c5 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
+}
+
+.c3 .c5 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -282,30 +292,17 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   width: 0;
 }
 
-.c2:focus ~ .c3 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
 .c1 .c6 {
   font-size: 17px;
   margin-left: 8px;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -322,66 +319,78 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-3"
-      name="Foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-3"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-3"
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Foo
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-4"
-      name="Bar"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-4"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-4"
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Bar
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-5"
-      name="Baz"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-5"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-5"
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Baz
     </label>
   </div>
@@ -417,27 +426,6 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   cursor: pointer;
   height: 100%;
   width: 100%;
-}
-
-.c2:focus ~ .c6 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c2:hover ~ .c6 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c2:active ~ .c6 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
 }
 
 .c2 + .c3 {
@@ -650,27 +638,6 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   width: 100%;
 }
 
-.c2:focus ~ .c6 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c2:hover ~ .c6 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c2:active ~ .c6 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
 .c2 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -851,72 +818,70 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
 `;
 
 exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button" 1`] = `
-.c4 {
-  display: block;
-  margin-bottom: 5px;
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #FFFFFF;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #f2f2f2;
   color: #1355d0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 *:nth-child(2) {
-  margin-left: 5px;
+.c3 .c5 {
+  margin-right: 5px;
 }
 
-.c5:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c3:hover {
+  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
+  background-color: #e5edfc;
+  border-color: #0e44c4;
 }
 
-.c5:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:focus,
+.c3:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
-.c5:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:active {
+  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
+  background-color: #0e44c4;
 }
 
-.c2 {
+.c3 .c5 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
+}
+
+.c3 .c5 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -925,27 +890,6 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   padding: 0;
   position: absolute;
   width: 0;
-}
-
-.c2:focus ~ .c3 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
 }
 
 .c1 .c6 {
@@ -953,6 +897,14 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   margin-left: 8px;
 }
 
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -967,66 +919,78 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-0"
-      name="Foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-0"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-0"
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Foo
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-1"
-      name="Bar"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-1"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-1"
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Bar
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-2"
-      name="Baz"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-2"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-2"
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Baz
     </label>
   </div>
@@ -1034,96 +998,122 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] = `
-.c4 {
-  display: block;
-  margin-bottom: 5px;
+.c5 {
+  pointer-events: none;
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #FFFFFF;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #f2f2f2;
   color: #1355d0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 *:nth-child(2) {
-  margin-left: 5px;
+.c3 .c4 {
+  margin-right: 5px;
 }
 
-.c6:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c3:hover {
+  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
+  background-color: #e5edfc;
+  border-color: #0e44c4;
 }
 
-.c6:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:focus,
+.c3:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
-.c6:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:active {
+  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
+  background-color: #0e44c4;
 }
 
-.c7:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+.c3 .c4 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
 }
 
-.c7:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+.c3 .c4 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c7:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+.c7 .c4 {
+  margin-right: 5px;
 }
 
-.c2 {
+.c7 .c4 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
+}
+
+.c7 .c4 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c8 .c4 {
+  margin-right: 5px;
+}
+
+.c8 .c4 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
+}
+
+.c8 .c4 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c9 .c4 {
+  margin-right: 5px;
+}
+
+.c9 .c4 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
+}
+
+.c9 .c4 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c6 {
   border: 0;
   height: 0;
   margin: 0;
@@ -1134,58 +1124,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   width: 0;
 }
 
-.c2:focus ~ .c3 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c8:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c8:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c8:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c5 {
-  margin-right: 8px;
-}
-
-.c1 .c9 {
+.c1 .c10 {
   font-size: 17px;
   margin-left: 8px;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -1202,25 +1151,19 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-18"
-      name="Foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-18"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c5"
+        className="material-icons MuiIcon-root-1 c4 c5"
+        size="medium"
         style={
           Object {
             "color": "",
@@ -1229,53 +1172,61 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       >
         print
       </span>
+      <input
+        checked={false}
+        className="c6"
+        disabled={false}
+        id="checkbox-button-18"
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Foo
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-19"
-      name="Bar"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-19"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c6"
+        disabled={false}
+        id="checkbox-button-19"
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Bar
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-20"
-      name="Baz"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-20"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c5"
+        className="material-icons MuiIcon-root-1 c4 c5"
+        size="medium"
         style={
           Object {
             "color": "",
@@ -1284,6 +1235,16 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       >
         face
       </span>
+      <input
+        checked={false}
+        className="c6"
+        disabled={false}
+        id="checkbox-button-20"
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Baz
     </label>
   </div>
@@ -1291,119 +1252,70 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 1`] = `
-.c4 {
-  display: block;
-  margin-bottom: 5px;
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #FFFFFF;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #1355d0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  background-color: #f2f2f2;
   color: #ff2d4d;
-  border-color: #ff2d4d;
+  border: 1.5px solid #ff2d4d;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 *:nth-child(2) {
-  margin-left: 5px;
+.c3 .c6 {
+  margin-right: 5px;
 }
 
-.c6:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c6:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c6:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c7:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+.c3:hover {
+  box-shadow: 0px 2px 4px -1px rgba(255,34,61,0.2),0px 4px 5px 0px rgba(255,34,61,0.14),0px 1px 10px 0px rgba(255,34,61,0.12);
   background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+  border-color: #ff223d;
 }
 
-.c7:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+.c3:focus,
+.c3:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(255,45,77,0.2),0px 4px 5px 0px rgba(255,45,77,0.14),0px 1px 10px 0px rgba(255,45,77,0.12);
 }
 
-.c7:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+.c3:active {
+  box-shadow: 0px 5px 5px -3px rgba(255,34,61,0.2),0px 8px 10px 1px rgba(255,34,61,0.14),0px 3px 14px 2px rgba(255,34,61,0.12);
+  background-color: #ff223d;
 }
 
-.c8:focus ~ .c3 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
+.c3 .c6 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
 }
 
-.c8:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+.c3 .c6 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c8:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -1414,33 +1326,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   width: 0;
 }
 
-.c2:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c2:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c2:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c1 .c9 {
+.c1 .c7 {
   font-size: 17px;
   margin-left: 8px;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -1466,66 +1362,78 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-6"
-      name="Foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-6"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-6"
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Foo
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-7"
-      name="Bar"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-7"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-7"
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Bar
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-8"
-      name="Baz"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-8"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-8"
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Baz
     </label>
   </div>
@@ -1538,240 +1446,164 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled options 1`] = `
-.c7 {
-  display: block;
-  margin-bottom: 5px;
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  border-radius: 4px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 16px;
-  font-weight: bold;
   height: 40px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding: 0 16px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #FFFFFF;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #f2f2f2;
   color: #1355d0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c7 *:nth-child(2) {
-  margin-left: 5px;
+.c6 .c8 {
+  margin-right: 5px;
 }
 
-.c4 {
-  display: block;
-  margin-bottom: 5px;
+.c6:hover {
+  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
+  background-color: #e5edfc;
+  border-color: #0e44c4;
+}
+
+.c6:focus,
+.c6:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+}
+
+.c6:active {
+  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
+  background-color: #0e44c4;
+}
+
+.c6 .c8 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
+}
+
+.c6 .c8 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: not-allowed;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: not-allowed;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: rgba(204,204,204,0.4);
-  border: 1.5px solid #999999;
-  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #f2f2f2;
   color: #999999;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 *:nth-child(2) {
-  margin-left: 5px;
+.c3 .c8 {
+  margin-right: 5px;
 }
 
-.c8 {
-  display: block;
-  margin-bottom: 5px;
+.c3 .c8 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
+}
+
+.c3 .c8 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c7 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: not-allowed;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: not-allowed;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
+  color: #f2f2f2;
   border: 1.5px solid #999999;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c8 *:nth-child(2) {
-  margin-left: 5px;
+.c7 .c8 {
+  margin-right: 5px;
 }
 
-.c9:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c7 .c8 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
 }
 
-.c9:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c7 .c8 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c9:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c10:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c10:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c10:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c6 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c6:focus ~ .c3 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c6:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c6:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c11:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c11:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c11:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c2 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -1785,6 +1617,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
 .c1 .c5 {
   font-size: 17px;
   margin-left: 8px;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -1801,22 +1641,26 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={true}
-      id="checkbox-button-9"
-      name="Foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={true}
       htmlFor="checkbox-button-9"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={true}
+        id="checkbox-button-9"
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Foo
       <span
         aria-hidden="true"
@@ -1834,44 +1678,52 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c6"
-      disabled={false}
-      id="checkbox-button-10"
-      name="Bar"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c7"
+      className="c2 c6"
       disabled={false}
       htmlFor="checkbox-button-10"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-10"
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Bar
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={true}
-      className="c2"
-      disabled={true}
-      id="checkbox-button-11"
-      name="Baz"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={true}
-      className="c3 c8"
+      className="c2 c7"
       disabled={true}
       htmlFor="checkbox-button-11"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={true}
+        className="c4"
+        disabled={true}
+        id="checkbox-button-11"
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Baz
       <span
         aria-hidden="true"
@@ -1974,30 +1826,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   cursor: pointer;
   height: 100%;
   width: 100%;
-}
-
-.c2:focus ~ .c8 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c2:hover ~ .c8 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c2:active ~ .c8 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
 }
 
 .c2 + .c3 {
@@ -2224,171 +2052,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   margin: 0 0 0 8px;
 }
 
-.c6 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-}
-
-.c6:focus ~ .c8 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c6:hover ~ .c8 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c6:active ~ .c8 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c6 + .c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 2px;
-  box-sizing: border-box;
-  color: transparent;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  height: 18px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 18px;
-  background-color: #f2f2f2;
-  border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
-}
-
-.c6:checked + .c3 {
-  border-width: 0;
-  background-color: #1355d0;
-  color: #f2f2f2;
-}
-
-.c6:hover + .c3,
-.c6:focus + .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
-}
-
-.c6[disabled] {
-  cursor: not-allowed;
-}
-
-.c6[disabled] ~ .c4 {
-  color: #999999;
-}
-
-.c6[disabled] + .c3 {
-  border-color: #999999;
-  background-color: #cccccc;
-}
-
-.c6[disabled]:checked + .c3 {
-  background-color: #999999;
-}
-
-.c6[disabled]:hover + .c3 {
-  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
-}
-
-.c7 + .c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 2px;
-  box-sizing: border-box;
-  color: transparent;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  height: 18px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 18px;
-  background-color: #f2f2f2;
-  border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
-}
-
-.c7:checked + .c3 {
-  border-width: 0;
-  background-color: #1355d0;
-  color: #f2f2f2;
-}
-
-.c7:hover + .c3,
-.c7:focus + .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
-}
-
-.c7 + .c3 {
-  border-color: #ff2d4d;
-}
-
-.c7:checked + .c3 {
-  background-color: #ff2d4d;
-}
-
-.c7:hover + .c3,
-.c7:focus + .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
-}
-
-.c7[disabled] ~ .c4 {
-  color: #999999;
-}
-
-.c7[disabled] + .c3 {
-  border-color: #999999;
-  background-color: #cccccc;
-}
-
-.c7[disabled]:checked + .c3 {
-  background-color: #999999;
-}
-
-.c7[disabled]:hover + .c3 {
-  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
-}
-
 .c2 {
   border: 0;
   height: 0;
@@ -2463,6 +2126,76 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
 }
 
+.c6 + .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 18px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 18px;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.c6:checked + .c3 {
+  border-width: 0;
+  background-color: #1355d0;
+  color: #f2f2f2;
+}
+
+.c6:hover + .c3,
+.c6:focus + .c3 {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c6 + .c3 {
+  border-color: #ff2d4d;
+}
+
+.c6:checked + .c3 {
+  background-color: #ff2d4d;
+}
+
+.c6:hover + .c3,
+.c6:focus + .c3 {
+  border-color: #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+}
+
+.c6[disabled] ~ .c4 {
+  color: #999999;
+}
+
+.c6[disabled] + .c3 {
+  border-color: #999999;
+  background-color: #cccccc;
+}
+
+.c6[disabled]:checked + .c3 {
+  background-color: #999999;
+}
+
+.c6[disabled]:hover + .c3 {
+  box-shadow: 0px 0px 0px 0px rgba(76,76,76,0.2),0px 0px 0px 0px rgba(76,76,76,0.14),0px 0px 0px 0px rgba(76,76,76,0.12);
+}
+
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -2517,7 +2250,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
     >
       <input
         checked={false}
-        className="c6"
+        className="c2"
         disabled={false}
         id=""
         name="Bar"
@@ -2583,96 +2316,70 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 `;
 
 exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
-.c4 {
-  display: block;
-  margin-bottom: 5px;
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #FFFFFF;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
+  background-color: #f2f2f2;
   color: #1355d0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border: 1.5px solid #1355d0;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 *:nth-child(2) {
-  margin-left: 5px;
+.c3 .c5 {
+  margin-right: 5px;
 }
 
-.c5:focus ~ .c3 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c3:hover {
+  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
+  background-color: #e5edfc;
+  border-color: #0e44c4;
 }
 
-.c5:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:focus,
+.c3:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
-.c5:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+.c3:active {
+  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
+  background-color: #0e44c4;
 }
 
-.c6:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+.c3 .c5 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "font-size: ".concat(sizes[size] || sizes.normal,";");
 }
 
-.c6:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
+.c3 .c5 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c6:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c2 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -2681,51 +2388,6 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   padding: 0;
   position: absolute;
   width: 0;
-}
-
-.c2:focus ~ .c3 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:hover ~ .c3 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c2:active ~ .c3 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c7:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c7:hover ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c7:active ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
 }
 
 .c1 {
@@ -2738,9 +2400,17 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   margin-right: 0;
 }
 
-.c1 .c8 {
+.c1 .c6 {
   font-size: 17px;
   margin-left: 8px;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -2757,66 +2427,78 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-21"
-      name="Foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-21"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-21"
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Foo
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-22"
-      name="Bar"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-22"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-22"
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Bar
     </label>
   </div>
   <div
     className="c1"
   >
-    <input
-      checked={false}
-      className="c2"
-      disabled={false}
-      id="checkbox-button-23"
-      name="Baz"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
     <label
       checked={false}
-      className="c3 c4"
+      className="c2 c3"
       disabled={false}
       htmlFor="checkbox-button-23"
+      onClick={[Function]}
+      size="medium"
+      type="button"
     >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-23"
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
       Baz
     </label>
   </div>

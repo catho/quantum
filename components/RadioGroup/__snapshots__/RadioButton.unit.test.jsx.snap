@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -41,29 +41,8 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   display: inline-flex;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c4:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c4:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c4:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
 }
 
 .c1 {
@@ -77,28 +56,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   width: 0;
 }
 
-.c1:focus ~ .c2 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c1:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c1:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c0 .c5 {
+.c0 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -117,7 +75,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   />
   <label
     checked={true}
-    className="c2 c3"
+    className="c2"
     disabled={false}
     htmlFor="radio-button-1"
   >
@@ -127,7 +85,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot children 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -167,7 +125,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   display: inline-flex;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
 }
 
@@ -182,73 +140,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   width: 0;
 }
 
-.c1:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c4:focus ~ .c2 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c4:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c4:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c5:focus ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c5:hover ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c5:active ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c0 .c6 {
+.c0 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -267,7 +159,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   />
   <label
     checked={false}
-    className="c2 c3"
+    className="c2"
     disabled={false}
     htmlFor="radio-button-7"
   >
@@ -277,7 +169,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -317,50 +209,8 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   display: inline-flex;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c5:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c5:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c5:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c6:focus ~ .c2 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c6:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c6:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
 }
 
 .c1 {
@@ -374,12 +224,12 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   width: 0;
 }
 
-.c0 .c4 {
+.c0 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c7 .c4 {
+.c4 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -398,14 +248,14 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   />
   <label
     checked={false}
-    className="c2 c3"
+    className="c2"
     disabled={true}
     htmlFor="radio-button-4"
   >
     Foo
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c4 "
+      className="material-icons MuiIcon-root-1 c3 "
       style={
         Object {
           "color": "",
@@ -419,7 +269,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -459,50 +309,8 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   display: inline-flex;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c5:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c5:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c5:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c6:focus ~ .c2 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c6:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c6:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
 }
 
 .c1 {
@@ -516,36 +324,12 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   width: 0;
 }
 
-.c1:focus ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c1:hover ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c1:active ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c0 .c4 {
+.c0 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c7 .c4 {
+.c4 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -564,14 +348,14 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   />
   <label
     checked={false}
-    className="c2 c3"
+    className="c2"
     disabled={true}
     htmlFor="radio-button-6"
   >
     Foo
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c4 "
+      className="material-icons MuiIcon-root-1 c3 "
       style={
         Object {
           "color": "",
@@ -585,7 +369,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -627,50 +411,8 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   border-color: #ff2d4d;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
-}
-
-.c4:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c4:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c4:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c5:focus ~ .c2 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c5:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c5:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
 }
 
 .c1 {
@@ -684,31 +426,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   width: 0;
 }
 
-.c1:focus ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c1:hover ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c1:active ~ .c2 {
-  border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
-  background-color: #ffe5e9;
-  border-color: #ff2d4d;
-  color: #ff2d4d;
-}
-
-.c0 .c6 {
+.c0 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -727,7 +445,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   />
   <label
     checked={false}
-    className="c2 c3"
+    className="c2"
     disabled={false}
     htmlFor="radio-button-5"
   >
@@ -737,7 +455,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -777,7 +495,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   display: inline-flex;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
 }
 
@@ -792,53 +510,11 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   width: 0;
 }
 
-.c1:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c5:focus ~ .c2 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c5:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c5:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c4 {
+.c3 {
   margin-right: 8px;
 }
 
-.c0 .c6 {
+.c0 .c4 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -857,13 +533,13 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   />
   <label
     checked={false}
-    className="c2 c3"
+    className="c2"
     disabled={false}
     htmlFor="radio-button-3"
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c4"
+      className="material-icons MuiIcon-root-1 c3"
       style={
         Object {
           "color": "",
@@ -878,7 +554,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -918,7 +594,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   display: inline-flex;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
 }
 
@@ -933,48 +609,6 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   width: 0;
 }
 
-.c1:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c4:focus ~ .c2 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c4:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c4:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
 .c0 {
   display: inline-block;
   margin-right: 16px;
@@ -985,7 +619,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   margin-right: 0;
 }
 
-.c0 .c5 {
+.c0 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -1004,7 +638,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   />
   <label
     checked={false}
-    className="c2 c3"
+    className="c2"
     disabled={false}
     htmlFor="radio-button-2"
   >
@@ -1014,7 +648,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
-.c3 {
+.c2 {
   display: block;
   margin-bottom: 5px;
   -webkit-align-items: center;
@@ -1054,7 +688,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   display: inline-flex;
 }
 
-.c3 *:nth-child(2) {
+.c2 *:nth-child(2) {
   margin-left: 5px;
 }
 
@@ -1069,28 +703,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   width: 0;
 }
 
-.c1:focus ~ .c2 {
-  box-shadow: 0 2px 4px 0 rgba(19,85,208,0.5);
-  background-color: #FFFFFF;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:hover ~ .c2 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c1:active ~ .c2 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
-}
-
-.c0 .c4 {
+.c0 .c3 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -1109,7 +722,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   />
   <label
     checked={false}
-    className="c2 c3"
+    className="c2"
     disabled={false}
     htmlFor="radio-button-0"
   >

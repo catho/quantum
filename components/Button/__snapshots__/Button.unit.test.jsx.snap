@@ -32,8 +32,8 @@ exports[`Button component Should match the snapshot 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -42,12 +42,9 @@ exports[`Button component Should match the snapshot 1`] = `
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -75,9 +72,7 @@ exports[`Button component Should match the snapshot 1`] = `
   type="button"
 >
   
-  <span>
-    Text
-  </span>
+  Text
 </button>
 `;
 
@@ -115,8 +110,8 @@ exports[`Button component when center prop is set 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -125,12 +120,9 @@ exports[`Button component when center prop is set 1`] = `
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -158,9 +150,7 @@ exports[`Button component when center prop is set 1`] = `
   type="button"
 >
   
-  <span>
-    Center
-  </span>
+  Center
 </button>
 `;
 
@@ -197,8 +187,8 @@ exports[`Button component when full prop is set 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -207,12 +197,9 @@ exports[`Button component when full prop is set 1`] = `
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -240,9 +227,7 @@ exports[`Button component when full prop is set 1`] = `
   type="button"
 >
   
-  <span>
-    Full
-  </span>
+  Full
 </button>
 `;
 
@@ -278,8 +263,8 @@ exports[`Button component when there is a skin set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -288,12 +273,9 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-color: #4c4c4c;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c0:active {
@@ -321,9 +303,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   type="button"
 >
   
-  <span>
-    neutral
-  </span>
+  neutral
 </button>
 `;
 
@@ -359,8 +339,8 @@ exports[`Button component when there is a skin set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -369,12 +349,9 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -402,9 +379,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   type="button"
 >
   
-  <span>
-    primary
-  </span>
+  primary
 </button>
 `;
 
@@ -440,8 +415,8 @@ exports[`Button component when there is a skin set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -450,12 +425,9 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-color: #6bc818;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(126,211,33,0.2),0px 4px 5px 0px rgba(126,211,33,0.14),0px 1px 10px 0px rgba(126,211,33,0.12);
 }
 
 .c0:active {
@@ -483,9 +455,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   type="button"
 >
   
-  <span>
-    success
-  </span>
+  success
 </button>
 `;
 
@@ -521,8 +491,8 @@ exports[`Button component when there is a skin set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -531,12 +501,9 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-color: #ec7e00;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(240,145,0,0.2),0px 4px 5px 0px rgba(240,145,0,0.14),0px 1px 10px 0px rgba(240,145,0,0.12);
 }
 
 .c0:active {
@@ -564,9 +531,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   type="button"
 >
   
-  <span>
-    warning
-  </span>
+  warning
 </button>
 `;
 
@@ -602,8 +567,8 @@ exports[`Button component when there is a skin set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -612,12 +577,9 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-color: #ff223d;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(255,45,77,0.2),0px 4px 5px 0px rgba(255,45,77,0.14),0px 1px 10px 0px rgba(255,45,77,0.12);
 }
 
 .c0:active {
@@ -645,9 +607,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   type="button"
 >
   
-  <span>
-    error
-  </span>
+  error
 </button>
 `;
 
@@ -683,8 +643,8 @@ exports[`Button component when there is a type set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -693,12 +653,9 @@ exports[`Button component when there is a type set should match secondary snapsh
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -726,9 +683,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   type="button"
 >
   
-  <span>
-    button
-  </span>
+  button
 </button>
 `;
 
@@ -764,8 +719,8 @@ exports[`Button component when there is a type set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -774,12 +729,9 @@ exports[`Button component when there is a type set should match secondary snapsh
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -807,9 +759,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   type="reset"
 >
   
-  <span>
-    reset
-  </span>
+  reset
 </button>
 `;
 
@@ -845,8 +795,8 @@ exports[`Button component when there is a type set should match secondary snapsh
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -855,12 +805,9 @@ exports[`Button component when there is a type set should match secondary snapsh
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -888,9 +835,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   type="submit"
 >
   
-  <span>
-    submit
-  </span>
+  submit
 </button>
 `;
 
@@ -930,8 +875,8 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -940,12 +885,9 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -965,6 +907,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c3 .c1 {
+  margin-right: 5px;
+}
+
 .c3 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -975,6 +921,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 
 .c3 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c4 .c1 {
+  margin-right: 5px;
 }
 
 .c4 .c1 function (_ref5) {
@@ -989,6 +939,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c5 .c1 {
+  margin-right: 5px;
+}
+
 .c5 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -999,6 +953,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 
 .c5 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c6 .c1 {
+  margin-right: 5px;
 }
 
 .c6 .c1 function (_ref5) {
@@ -1013,6 +971,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c7 .c1 {
+  margin-right: 5px;
+}
+
 .c7 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1023,6 +985,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 
 .c7 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c8 .c1 {
+  margin-right: 5px;
 }
 
 .c8 .c1 function (_ref5) {
@@ -1056,9 +1022,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   >
     search
   </span>
-  <span>
-    Search
-  </span>
+  Search
 </button>
 `;
 
@@ -1098,8 +1062,8 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -1108,12 +1072,9 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -1133,6 +1094,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c3 .c1 {
+  margin-right: 5px;
+}
+
 .c3 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1143,6 +1108,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 
 .c3 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c4 .c1 {
+  margin-right: 5px;
 }
 
 .c4 .c1 function (_ref5) {
@@ -1157,6 +1126,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c5 .c1 {
+  margin-right: 5px;
+}
+
 .c5 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1167,6 +1140,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 
 .c5 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c6 .c1 {
+  margin-right: 5px;
 }
 
 .c6 .c1 function (_ref5) {
@@ -1181,6 +1158,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c7 .c1 {
+  margin-right: 5px;
+}
+
 .c7 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1191,6 +1172,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 
 .c7 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c8 .c1 {
+  margin-right: 5px;
 }
 
 .c8 .c1 function (_ref5) {
@@ -1224,9 +1209,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   >
     sync
   </span>
-  <span>
-    Sync
-  </span>
+  Sync
 </button>
 `;
 
@@ -1266,8 +1249,8 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -1276,12 +1259,9 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -1301,6 +1281,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c3 .c1 {
+  margin-right: 5px;
+}
+
 .c3 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1311,6 +1295,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 
 .c3 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c4 .c1 {
+  margin-right: 5px;
 }
 
 .c4 .c1 function (_ref5) {
@@ -1325,6 +1313,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c5 .c1 {
+  margin-right: 5px;
+}
+
 .c5 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1335,6 +1327,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 
 .c5 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c6 .c1 {
+  margin-right: 5px;
 }
 
 .c6 .c1 function (_ref5) {
@@ -1349,6 +1345,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c7 .c1 {
+  margin-right: 5px;
+}
+
 .c7 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1359,6 +1359,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 
 .c7 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c8 .c1 {
+  margin-right: 5px;
 }
 
 .c8 .c1 function (_ref5) {
@@ -1392,9 +1396,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   >
     sms
   </span>
-  <span>
-    Message
-  </span>
+  Message
 </button>
 `;
 
@@ -1434,8 +1436,8 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 *:nth-child(2) {
-  margin-left: 5px;
+.c0 .c1 {
+  margin-right: 5px;
 }
 
 .c0:hover {
@@ -1444,12 +1446,9 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   border-color: #0e44c4;
 }
 
-.c0:focus function (_ref2) {
-  -webkit-var: theme = _ref2.theme;
-  -moz-var: theme = _ref2.theme;
-  -ms-var: theme = _ref2.theme;
-  var: theme = _ref2.theme;
-  return: shadowWithTheme(theme,elevation,color);
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
 }
 
 .c0:active {
@@ -1469,6 +1468,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c3 .c1 {
+  margin-right: 5px;
+}
+
 .c3 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1479,6 +1482,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 
 .c3 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c4 .c1 {
+  margin-right: 5px;
 }
 
 .c4 .c1 function (_ref5) {
@@ -1493,6 +1500,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c5 .c1 {
+  margin-right: 5px;
+}
+
 .c5 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1503,6 +1514,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 
 .c5 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c6 .c1 {
+  margin-right: 5px;
 }
 
 .c6 .c1 function (_ref5) {
@@ -1517,6 +1532,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+.c7 .c1 {
+  margin-right: 5px;
+}
+
 .c7 .c1 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1527,6 +1546,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 
 .c7 .c1 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c8 .c1 {
+  margin-right: 5px;
 }
 
 .c8 .c1 function (_ref5) {
@@ -1560,8 +1583,6 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   >
     camera
   </span>
-  <span>
-    Screenshot
-  </span>
+  Screenshot
 </button>
 `;
