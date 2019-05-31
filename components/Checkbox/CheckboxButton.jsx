@@ -63,29 +63,39 @@ const CheckboxButton = ({
 
   const _id = id || useMemo(() => ID_GENERATOR.next().value, [name]);
 
+  let checkSkin;
+
+  if (error) {
+    checkSkin = 'error';
+  } else if (disabled) {
+    checkSkin = 'neutral';
+  } else if (checked) {
+    checkSkin = skin;
+  }
+
   return (
     <Wrapper inline={inline}>
-      <HiddenCheckbox
-        {...props}
-        checked={checked}
-        disabled={disabled}
-        error={error}
-        id={_id}
-        name={name}
-        onChange={onChange}
-        skin={skin}
-        value={value}
-      />
       <CheckButton
-        as="label"
         checked={checked}
         disabled={disabled}
         error={error}
         htmlFor={_id}
-        skin={error ? 'error' : skin}
+        skin={checkSkin}
         icon={icon}
-        stroked={!checked || disabled}
+        stroked={!checked}
+        $as="label"
       >
+        <HiddenCheckbox
+          {...props}
+          checked={checked}
+          disabled={disabled}
+          error={error}
+          id={_id}
+          name={name}
+          onChange={onChange}
+          skin={checkSkin}
+          value={value}
+        />
         {children || label || value}
         {disabled && <LockIcon />}
       </CheckButton>
@@ -111,7 +121,7 @@ CheckboxButton.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  skin: PropTypes.string,
+  skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.string,
