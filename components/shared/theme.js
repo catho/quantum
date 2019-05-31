@@ -127,6 +127,27 @@ const components = {
     },
   },
 
+  popover: {
+    skins: {
+      neutral: {
+        background: colors.neutral[100],
+        text: colors.neutral[700],
+      },
+      success: {
+        background: colors.success[100],
+        text: colors.success[900],
+      },
+      warning: {
+        background: colors.warning[100],
+        text: colors.warning[900],
+      },
+      error: {
+        background: colors.error[100],
+        text: colors.error[900],
+      },
+    },
+  },
+
   snackbar: {
     skins: {
       neutral: {

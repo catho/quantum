@@ -22,6 +22,9 @@ describe('Popover component ', () => {
   describe('Snapshots', () => {
     const POPOVERS = [
       <Popover trigger={POPOVER_TRIGGER}>{POPOVER_TEXT}</Popover>,
+      <Popover skin="neutral" trigger={POPOVER_TRIGGER}>
+        {POPOVER_TEXT}
+      </Popover>,
       <Popover skin="success" trigger={POPOVER_TRIGGER}>
         {POPOVER_TEXT}
       </Popover>,
