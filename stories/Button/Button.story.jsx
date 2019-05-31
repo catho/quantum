@@ -24,17 +24,17 @@ const exampleTab = (
         <Title as="h2">Centered button</Title>
         <Example
           component={
-            <Button icon="face" center skin="action">
+            <Button icon="face" center skin="success">
               Centered
             </Button>
           }
-          code={'<Button center skin="action">Centered</Button>'}
+          code={'<Button center skin="success">Centered</Button>'}
         />
 
-        <Title as="h2">Link</Title>
+        <Title as="h2">Secondary</Title>
         <Example
-          component={<Button skin="link">click here</Button>}
-          code={'<Button skin="link">click here</Button>'}
+          component={<Button skin="secondary">click here</Button>}
+          code={'<Button skin="secondary">click here</Button>'}
         />
       </Container>
 
@@ -63,7 +63,7 @@ const exampleTab = (
           <Col tablet={3}>
             <Example
               component={
-                <Button skin="action" icon="camera">
+                <Button skin="error" icon="camera">
                   Screenshot
                 </Button>
               }
@@ -93,7 +93,7 @@ const exampleTab = (
           <Col tablet={3}>
             <Example
               component={
-                <Button size="large" skin="action" icon="play_arrow">
+                <Button size="large" skin="warning" icon="play_arrow">
                   Play
                 </Button>
               }
