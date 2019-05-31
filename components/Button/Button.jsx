@@ -77,8 +77,8 @@ const StyledButton = styled.button`
     margin-right: auto;
   `}
 
-  *:nth-child(2) {
-    margin-left: 5px;
+  ${ButtonIcon} {
+    margin-right: 5px;
   }
 
   transition: all 0.2s ease-in-out;
@@ -109,15 +109,18 @@ const StyledButton = styled.button`
     let bgColor;
     let textColor;
 
-    if (disabled) {
+    if (disabled && stroked) {
+      bgColor = neutral100;
+      textColor = neutral500;
+    } else if (stroked) {
+      bgColor = neutral100;
+      textColor = mainColor500;
+    } else if (disabled) {
       bgColor = neutral500;
       textColor = neutral100;
-    } else if (stroked) {
-      textColor = mainColor500;
-      bgColor = neutral100;
     } else {
-      textColor = text100;
       bgColor = mainColor500;
+      textColor = text100;
     }
 
     return `
@@ -140,8 +143,9 @@ const StyledButton = styled.button`
         }
       }
 
-      :focus {
-        ${!disabled ? shadow(4, mainColor500) : ''}
+      :focus,
+      :focus-within {
+        ${!disabled ? shadow(4, mainColor500)({ theme }) : ''}
       }
 
       :active {
@@ -177,10 +181,10 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, ...rest }) => (
-  <StyledButton {...rest} size={size}>
+const Button = ({ children, icon, size, $as, ...rest }) => (
+  <StyledButton as={$as} {...rest} size={size}>
     {icon && <ButtonIcon size={size} name={icon} />}
-    {children && <span>{children}</span>}
+    {children}
   </StyledButton>
 );
 
@@ -214,12 +218,21 @@ Button.propTypes = {
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
-  skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
+  skin: PropTypes.oneOf([
+    'neutral',
+    'primary',
+    'secondary',
+    'success',
+    'warning',
+    'error',
+  ]),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  /** https://www.styled-components.com/docs/api#as-polymorphic-prop */
+  $as: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   onClick: PropTypes.func,
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
