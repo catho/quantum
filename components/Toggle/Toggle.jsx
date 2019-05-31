@@ -62,8 +62,8 @@ const Switch = styled.div`
     `};
     border-radius: 50%;
     display: flex;
-    ${({ theme: { baseFontSize: baseFont } }) =>
-      `font-size: ${baseFont * 0.75}px`};
+    ${({ theme: { baseFontSize: fontSize } }) =>
+      `font-size: ${fontSize * 0.75}px`};
     height: 20px;
     justify-content: center;
     position: absolute;
