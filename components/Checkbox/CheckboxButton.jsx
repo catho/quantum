@@ -1,10 +1,10 @@
 import React, { useContext, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { ButtonGroupLabel } from '../shared';
 import HiddenInput from '../shared/HiddenInput';
 import uniqId from '../shared/uniqId';
 import Icon from '../Icon';
+import Button from '../Button';
 import CheckboxGroupContext from './CheckboxGroupContext';
 
 const ID_GENERATOR = uniqId('checkbox-button-');
@@ -18,10 +18,6 @@ HiddenCheckbox.displayName = 'HiddenCheckbox';
 const LockIcon = styled(Icon).attrs({
   name: 'lock',
 })``;
-
-const ButtonIcon = styled(Icon)`
-  margin-right: 8px;
-`;
 
 const Wrapper = styled.div`
   ${({ inline }) =>
@@ -42,6 +38,11 @@ const Wrapper = styled.div`
   }
 `;
 
+const CheckButton = styled(Button)`
+  margin-bottom: 16px;
+  display: inline-flex;
+`;
+
 const CheckboxButton = ({
   children,
   id,
@@ -51,6 +52,7 @@ const CheckboxButton = ({
   disabled,
   name,
   icon,
+  skin,
   error: errorProp,
   onChange: onChangeProp,
   ...props
@@ -59,7 +61,6 @@ const CheckboxButton = ({
     CheckboxGroupContext,
   );
 
-  const skin = checked ? 'primary' : 'secondary';
   const _id = id || useMemo(() => ID_GENERATOR.next().value, [name]);
 
   return (
@@ -75,17 +76,19 @@ const CheckboxButton = ({
         skin={skin}
         value={value}
       />
-      <ButtonGroupLabel
+      <CheckButton
+        as="label"
         checked={checked}
         disabled={disabled}
         error={error}
         htmlFor={_id}
-        skin={skin}
+        skin={error ? 'error' : skin}
+        icon={icon}
+        stroked={!checked || disabled}
       >
-        {icon && <ButtonIcon name={icon} />}
         {children || label || value}
         {disabled && <LockIcon />}
-      </ButtonGroupLabel>
+      </CheckButton>
     </Wrapper>
   );
 };
@@ -93,6 +96,7 @@ const CheckboxButton = ({
 CheckboxButton.defaultProps = {
   checked: false,
   children: '',
+  skin: 'primary',
   disabled: false,
   error: '',
   icon: undefined,
@@ -103,7 +107,11 @@ CheckboxButton.defaultProps = {
 };
 
 CheckboxButton.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+  skin: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.string,

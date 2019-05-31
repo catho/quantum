@@ -216,7 +216,10 @@ Button.propTypes = {
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
   onClick: PropTypes.func,
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
