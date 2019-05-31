@@ -285,6 +285,7 @@ SnackBar.propTypes = {
     spacing: PropTypes.object,
     components: PropTypes.shape({
       snackbar: PropTypes.object,
+      button: PropTypes.object,
     }),
   }),
   closeButtonAriaLabel: PropTypes.string,
@@ -315,6 +316,7 @@ SnackBar.defaultProps = {
     spacing,
     components: {
       snackbar: components.snackbar,
+      button: components.button,
     },
   },
 };
