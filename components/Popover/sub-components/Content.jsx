@@ -3,47 +3,78 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Colors from '../../Colors';
+import { components, spacing, colors } from '../../shared/theme';
 import getArrow from '../arrowProperties';
 import Button from '../../Button';
+import { shadow } from '../../shared';
 
-const getStyleBySkin = skin => {
-  const indexColor = skin.toUpperCase();
-  return `
-      background-color: ${
-        skin === 'default' ? Colors.WHITE : Colors[indexColor][200]
-      };
-      color: ${
-        skin === 'default' ? Colors.BLACK[700] : Colors[indexColor][900]
-      };
-  `;
-};
+const _getColors = ({
+  skin,
+  theme: {
+    components: {
+      popover: {
+        skins: {
+          [skin]: { text, background },
+        },
+      },
+    },
+  },
+  inverted,
+}) => `
+  background-color: ${inverted ? text : background}
+  color: ${inverted ? background : text}
+`;
+
+const _getTextColor = ({
+  skin,
+  theme: {
+    components: {
+      popover: {
+        skins: {
+          [skin]: { background, text },
+        },
+      },
+    },
+  },
+  inverted,
+}) => `color: ${inverted ? background : text};`;
 
 const PopoverContent = styled.div`
-  box-shadow: 0 2px 4px 0 ${Colors.SHADOW[50]};
+  ${shadow(5)};
   align-items: start;
   display: flex;
   border-radius: 4px;
   font-size: 16px;
-  padding: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `padding: ${xsmall}px;`}
+
   position: absolute;
   line-height: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   z-index: 100;
 
   &:before {
-    ${({ placement, skin }) => getArrow(placement, skin)};
+    ${getArrow};
   }
 
-  ${({ skin }) => getStyleBySkin(skin)}
+  ${_getColors}
 `;
 
 const CloseButton = styled(Button.Icon).attrs({
   icon: 'close',
 })`
+  ${_getTextColor}
   display: inherit;
   height: auto;
-  margin: 0 0 0 16px;
+  ${({
+    theme: {
+      spacing: { medium },
+    },
+  }) => `margin-left: ${medium}px;`}
+
   opacity: 0.8;
   padding: 0;
   transition: opacity 0.4s ease;
@@ -52,6 +83,7 @@ const CloseButton = styled(Button.Icon).attrs({
   :hover {
     background: none;
     opacity: 1;
+    ${_getTextColor}
   }
 `;
 
@@ -73,18 +105,34 @@ class Content extends Component {
   }
 
   render() {
-    const { placement, children, onPopoverClose, ...rest } = this.props;
+    const {
+      placement,
+      children,
+      onPopoverClose,
+      theme,
+      skin,
+      inverted,
+      ...rest
+    } = this.props;
 
     return ReactDOM.createPortal(
       <PopoverContent
+        theme={theme}
+        inverted={inverted}
         placement={placement}
+        skin={skin}
         ref={element => {
           this.innerContentRef = element;
         }}
         {...rest}
       >
         <PopoverChildren>{children}</PopoverChildren>
-        <CloseButton onClick={onPopoverClose} />
+        <CloseButton
+          skin={skin}
+          theme={theme}
+          inverted={inverted}
+          onClick={onPopoverClose}
+        />
       </PopoverContent>,
       this.wrapper,
     );
@@ -99,15 +147,31 @@ Content.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  inverted: PropTypes.bool,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   onPopoverClose: PropTypes.func,
-  skin: PropTypes.oneOf(['default', 'success', 'warning', 'error']),
+  skin: PropTypes.oneOf(['neutral', 'success', 'warning', 'error']),
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+    components: PropTypes.shape({
+      badge: PropTypes.object,
+    }),
+  }),
 };
 
 Content.defaultProps = {
+  inverted: false,
   placement: 'top',
   onPopoverClose: () => {},
-  skin: 'default',
+  skin: 'neutral',
+  theme: {
+    colors,
+    spacing,
+    components: {
+      popover: components.popover,
+    },
+  },
 };
 
 export default Content;
