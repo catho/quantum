@@ -1058,7 +1058,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -1074,6 +1074,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
@@ -1083,7 +1087,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -1462,7 +1466,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -1478,6 +1482,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
@@ -1487,7 +1495,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -1965,6 +1973,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="neutral"
                     theme={
                       Object {
@@ -2162,17 +2171,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -2181,10 +2180,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -2197,6 +2321,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="neutral"
                       theme={
                         Object {
@@ -3257,7 +3382,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -3273,6 +3398,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
@@ -3282,7 +3411,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -3661,7 +3790,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -3677,6 +3806,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
@@ -3686,7 +3819,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -4164,6 +4297,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="neutral"
                     theme={
                       Object {
@@ -4361,17 +4495,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -4380,10 +4504,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -4396,6 +4645,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="neutral"
                       theme={
                         Object {
@@ -5469,10 +5719,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   transform: translateX(-50%);
 }
 
+.c8 .c4 {
+  margin-right: 0;
+}
+
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(126,211,33,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -5488,17 +5742,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(165,224,100,0.4);
+  color: #6bc818;
 }
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
+  background-color: rgba(165,224,100,0.5);
+  color: #6bc818;
 }
 
 .c2:hover {
@@ -5889,10 +6147,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   transform: translateX(-50%);
 }
 
+.c6 .c3 {
+  margin-right: 0;
+}
+
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(126,211,33,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -5908,17 +6170,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(165,224,100,0.4);
+  color: #6bc818;
 }
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
+  background-color: rgba(165,224,100,0.5);
+  color: #6bc818;
 }
 
 .c1:hover {
@@ -6395,6 +6661,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="success"
                     theme={
                       Object {
@@ -6592,17 +6859,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -6611,10 +6868,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -6627,6 +7009,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="success"
                       theme={
                         Object {
@@ -7716,10 +8099,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   transform: translateX(-50%);
 }
 
+.c9 .c4 {
+  margin-right: 0;
+}
+
+.c10 .c4 {
+  margin-right: 0;
+}
+
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(240,145,0,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -7735,17 +8126,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(245,178,77,0.4);
+  color: #ec7e00;
 }
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
+  background-color: rgba(245,178,77,0.5);
+  color: #ec7e00;
 }
 
 .c2:hover {
@@ -8152,10 +8547,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   transform: translateX(-50%);
 }
 
+.c7 .c3 {
+  margin-right: 0;
+}
+
+.c8 .c3 {
+  margin-right: 0;
+}
+
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(240,145,0,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -8171,17 +8574,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(245,178,77,0.4);
+  color: #ec7e00;
 }
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
+  background-color: rgba(245,178,77,0.5);
+  color: #ec7e00;
 }
 
 .c1:hover {
@@ -8658,6 +9065,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="warning"
                     theme={
                       Object {
@@ -8855,17 +9263,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -8874,10 +9272,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -8890,6 +9413,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="warning"
                       theme={
                         Object {
@@ -9995,10 +10519,22 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   transform: translateX(-50%);
 }
 
+.c10 .c4 {
+  margin-right: 0;
+}
+
+.c11 .c4 {
+  margin-right: 0;
+}
+
+.c12 .c4 {
+  margin-right: 0;
+}
+
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(255,45,77,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -10014,17 +10550,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(255,108,130,0.4);
+  color: #ff223d;
 }
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
+  background-color: rgba(255,108,130,0.5);
+  color: #ff223d;
 }
 
 .c2:hover {
@@ -10447,10 +10987,22 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   transform: translateX(-50%);
 }
 
+.c8 .c3 {
+  margin-right: 0;
+}
+
+.c9 .c3 {
+  margin-right: 0;
+}
+
+.c10 .c3 {
+  margin-right: 0;
+}
+
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(255,45,77,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -10466,17 +11018,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(255,108,130,0.4);
+  color: #ff223d;
 }
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
-  color: #4c4c4c;
+  background-color: rgba(255,108,130,0.5);
+  color: #ff223d;
 }
 
 .c1:hover {
@@ -10953,6 +11509,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="error"
                     theme={
                       Object {
@@ -11150,17 +11707,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -11169,10 +11716,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -11185,6 +11857,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="error"
                       theme={
                         Object {
@@ -12293,7 +12966,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -12309,6 +12982,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
@@ -12318,7 +12995,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -12326,6 +13003,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #4c4c4c;
+}
+
+.c10 .c4 {
+  margin-right: 0;
+}
+
+.c11 .c4 {
+  margin-right: 0;
+}
+
+.c12 .c4 {
+  margin-right: 0;
 }
 
 .c0 {
@@ -12745,7 +13434,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -12761,6 +13450,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
@@ -12770,7 +13463,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -12778,6 +13471,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #4c4c4c;
+}
+
+.c8 .c3 {
+  margin-right: 0;
+}
+
+.c9 .c3 {
+  margin-right: 0;
+}
+
+.c10 .c3 {
+  margin-right: 0;
 }
 
 <section>
@@ -13248,6 +13953,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="neutral"
                     theme={
                       Object {
@@ -13445,17 +14151,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -13464,10 +14160,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -13480,6 +14301,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="neutral"
                       theme={
                         Object {
@@ -14585,7 +15407,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -14601,6 +15423,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
@@ -14610,7 +15436,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -14618,6 +15444,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #4c4c4c;
+}
+
+.c10 .c4 {
+  margin-right: 0;
+}
+
+.c11 .c4 {
+  margin-right: 0;
+}
+
+.c12 .c4 {
+  margin-right: 0;
 }
 
 .c0 {
@@ -15034,7 +15872,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -15050,6 +15888,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
@@ -15059,7 +15901,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -15067,6 +15909,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #4c4c4c;
+}
+
+.c8 .c3 {
+  margin-right: 0;
+}
+
+.c9 .c3 {
+  margin-right: 0;
+}
+
+.c10 .c3 {
+  margin-right: 0;
 }
 
 <section>
@@ -15537,6 +16391,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="neutral"
                     theme={
                       Object {
@@ -15734,17 +16589,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -15753,10 +16598,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -15769,6 +16739,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="neutral"
                       theme={
                         Object {
@@ -16874,7 +17845,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c2 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -16890,6 +17861,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c2 .c4 {
+  margin-right: 0;
+}
+
 .c2:hover,
 .c2:focus {
   box-shadow: none;
@@ -16899,7 +17874,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c2:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -16907,6 +17882,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #4c4c4c;
+}
+
+.c10 .c4 {
+  margin-right: 0;
+}
+
+.c11 .c4 {
+  margin-right: 0;
+}
+
+.c12 .c4 {
+  margin-right: 0;
 }
 
 .c0 {
@@ -17323,7 +18310,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -17339,6 +18326,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   width: auto;
 }
 
+.c1 .c3 {
+  margin-right: 0;
+}
+
 .c1:hover,
 .c1:focus {
   box-shadow: none;
@@ -17348,7 +18339,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c1:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -17356,6 +18347,18 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #4c4c4c;
+}
+
+.c8 .c3 {
+  margin-right: 0;
+}
+
+.c9 .c3 {
+  margin-right: 0;
+}
+
+.c10 .c3 {
+  margin-right: 0;
 }
 
 <section>
@@ -17826,6 +18829,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   <CloseButton
                     inverted={false}
                     onClick={[Function]}
+                    size="medium"
                     skin="neutral"
                     theme={
                       Object {
@@ -18023,17 +19027,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "border-radius:50%;border:none;color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                              "rgba(204, 204, 204, 0.4)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}:active{box-shadow:none;background-color:",
-                              "rgba(128, 128, 128, 0.5)",
-                              ";color:",
-                              "#4c4c4c",
-                              ";}",
+                              [Function],
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
@@ -18042,10 +19036,135 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "}",
                             ],
                           },
+                          "defaultProps": Object {
+                            "size": "medium",
+                            "skin": "neutral",
+                            "theme": Object {
+                              "baseFontSize": 16,
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            },
+                          },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
                             "Button__IconButton-sc-1ovnfsw-2",
                           ],
+                          "propTypes": Object {
+                            "size": [Function],
+                            "skin": [Function],
+                            "theme": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "Content__CloseButton-sc-1005q1-1",
                           "target": [Function],
@@ -18058,6 +19177,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedRef={null}
                       inverted={false}
                       onClick={[Function]}
+                      size="medium"
                       skin="neutral"
                       theme={
                         Object {
