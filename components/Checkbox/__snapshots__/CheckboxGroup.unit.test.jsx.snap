@@ -36,7 +36,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 oQALj\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kANfVa\\"
           htmlFor=\\"\\"
         >
 -         Foo label
@@ -72,7 +72,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 oQALj\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kANfVa\\"
           htmlFor=\\"\\"
         >
 -         Bar label
@@ -108,7 +108,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 oQALj\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kANfVa\\"
           htmlFor=\\"\\"
         >
 -         Baz label
@@ -410,7 +410,6 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   display: block;
   margin-bottom: 5px;
   color: #4c4c4c;
-  font-size: 16px;
   margin: 0 0 0 8px;
 }
 
@@ -620,7 +619,6 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   display: block;
   margin-bottom: 5px;
   color: #4c4c4c;
-  font-size: 16px;
   margin: 0 0 0 8px;
 }
 
@@ -1754,7 +1752,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   display: block;
   margin-bottom: 5px;
   color: #4c4c4c;
-  font-size: 16px;
   margin: 0 0 0 8px;
 }
 
@@ -2048,7 +2045,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: block;
   margin-bottom: 5px;
   color: #4c4c4c;
-  font-size: 16px;
   margin: 0 0 0 8px;
 }
 

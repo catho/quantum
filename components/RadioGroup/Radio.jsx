@@ -1,24 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
-import Label from '../shared/Label';
-import HiddenInput from '../shared/HiddenInput';
+import { Label, HiddenInput, shadow } from '../shared';
+import { colors, spacing } from '../shared/theme';
 
 const RadioMark = styled.span`
-  background-color: ${Colors.WHITE};
-  border: 1.5px solid ${Colors.BLACK[400]};
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
 
+  ${({
+    theme: {
+      colors: {
+        neutral: { 100: white, 500: gray },
+      },
+      spacing: { xxsmall },
+    },
+  }) => `
+    background-color: ${white};
+    border: 1.5px solid ${gray};
+    margin-right: ${xxsmall}px;
+  `}
+
   :after {
-    background-color: ${Colors.BLUE[500]};
     border-radius: 50%;
     content: '';
     display: none;
@@ -27,6 +35,14 @@ const RadioMark = styled.span`
     position: absolute;
     top: 25%;
     width: 50%;
+
+    background-color: ${({
+      theme: {
+        colors: {
+          primary: { 500: primary },
+        },
+      },
+    }) => primary};
   }
 `;
 
@@ -37,18 +53,36 @@ const RadioLabel = styled(Label)`
   ${HiddenInput} {
     :checked {
       ~ ${RadioMark} {
-        border-color: ${Colors.BLUE[500]};
-        :after {
-          background-color: ${Colors.BLUE[500]};
-          display: block;
-        }
+        ${({
+          theme: {
+            colors: {
+              primary: { 500: primary },
+            },
+          },
+        }) => `
+          border-color: ${primary};
+          :after {
+            background-color: ${primary};
+            display: block;
+          }
+        `}
       }
     }
 
     :focus {
       ~ ${RadioMark} {
-        border-color: ${Colors.BLUE[500]};
-        box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+        ${({ theme }) => {
+          const {
+            colors: {
+              primary: { 500: primary },
+            },
+          } = theme;
+
+          return `
+            border-color: ${primary};
+            ${shadow(5, primary)({ theme })}
+          `;
+        }}
       }
     }
   }
@@ -56,51 +90,76 @@ const RadioLabel = styled(Label)`
   :hover,
   :focus {
     ${RadioMark} {
-      border-color: ${Colors.BLUE[500]};
-      box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+      ${({ theme }) => {
+        const {
+          colors: {
+            primary: { 500: primary },
+          },
+        } = theme;
+
+        return `
+          border-color: ${primary};
+          ${shadow(5, primary)({ theme })}
+        `;
+      }}
     }
   }
 
-  ${({ error }) =>
-    error &&
-    `
-    ${HiddenInput} {
-      :checked {
-        ~ ${RadioMark} {
-          border-color: ${Colors.ERROR[500]};
-          :after {
-            background-color: ${Colors.ERROR[500]};
-            display: block;
+  ${({ theme, error }) => {
+    const {
+      colors: {
+        error: { 500: errorColor },
+      },
+    } = theme;
+
+    return (
+      error &&
+      `
+      ${HiddenInput} {
+        :checked {
+          ~ ${RadioMark} {
+            border-color: ${errorColor};
+            :after {
+              background-color: ${errorColor};
+              display: block;
+            }
+          }
+        }
+        :focus {
+          ~ ${RadioMark} {
+            border-color: ${errorColor};
+            ${shadow(5, errorColor)({ theme })}
           }
         }
       }
+
+      ${RadioMark} {
+        border-color: ${errorColor};
+      }
+
+      :hover,
       :focus {
-        ~ ${RadioMark} {
-          border-color: ${Colors.ERROR[500]};
-          box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
+        ${RadioMark} {
+          border-color: ${errorColor};
+          ${shadow(5, errorColor)({ theme })}
         }
       }
-    }
+    `
+    );
+  }}
 
-    ${RadioMark} {
-      border-color: ${Colors.ERROR[500]};
-    }
-
-    :hover,
-    :focus {
-      ${RadioMark} {
-        border-color: ${Colors.ERROR[500]};
-        box-shadow: 0 2px 6px 0 ${Colors.ERROR[500]};
-      }
-    }
-    `}
-
-
-
-  ${({ disabled }) =>
+  ${({
+    disabled,
+    theme: {
+      colors: {
+        neutral: { 500: neutral500, 300: neutral300 },
+        error: { 500: errorColor },
+      },
+    },
+  }) =>
     disabled &&
     `
-    color: ${Colors.BLACK[400]};
+    color: ${neutral500};
 
     :hover {
       cursor: not-allowed;
@@ -109,31 +168,31 @@ const RadioLabel = styled(Label)`
     ${HiddenInput} {
       :disabled {
         ~ ${RadioMark} {
-          background-color: ${Colors.BLACK[200]};
+          background-color: ${neutral300};
         }
       }
 
       :checked {
         ~ ${RadioMark} {
-          border-color: ${Colors.ERROR[500]};
+          border-color: ${errorColor};
           :after {
-            background-color: ${Colors.ERROR[500]};
+            background-color: ${errorColor};
             display: block;
           }
         }
       }
 
       :checked:disabled {
-        background-color: ${Colors.BLACK[400]};
-        border-color: ${Colors.BLACK[400]};
+        background-color: ${neutral500};
+        border-color: ${neutral500};
         ~ ${RadioMark}:after {
-          background-color: ${Colors.BLACK[400]};
+          background-color: ${neutral500};
         }
       }
 
       :focus {
         ~ ${RadioMark} {
-          border-color: ${Colors.BLACK[400]};
+          border-color: ${neutral500};
           box-shadow: none;
         }
       }
@@ -141,16 +200,24 @@ const RadioLabel = styled(Label)`
 
     :hover, :focus {
       ${RadioMark} {
-        border-color: ${Colors.BLACK[400]};
+        border-color: ${neutral500};
         box-shadow: none;
       }
     }
   `}
 
   ${HiddenInput}:checked:disabled ~ ${RadioMark} {
-    background-color: ${Colors.BLACK[400]};
-    border-color: ${Colors.BLACK[400]};
-    box-shadow: inset 0 0 0 3.5px ${Colors.WHITE};
+    ${({
+      theme: {
+        colors: {
+          neutral: { 100: white, 500: black },
+        },
+      },
+    }) => `
+      background-color: ${black};
+      border-color: ${black};
+      box-shadow: inset 0 0 0 3.5px ${white};
+    `}
   }
 `;
 
@@ -161,9 +228,10 @@ const Radio = ({
   disabled,
   onChange,
   value,
+  theme,
   ...rest
 }) => (
-  <RadioLabel error={error} disabled={disabled}>
+  <RadioLabel error={error} disabled={disabled} theme={theme}>
     <HiddenInput
       type="radio"
       disabled={disabled}
@@ -171,20 +239,12 @@ const Radio = ({
       value={value}
       {...rest}
     />
-    <RadioMark />
+    <RadioMark theme={theme} />
     {children || label}
   </RadioLabel>
 );
 
 Radio.displayName = 'RadioGroup.Radio';
-
-Radio.defaultProps = {
-  disabled: false,
-  error: false,
-  children: undefined,
-  label: undefined,
-  onChange: () => {},
-};
 
 Radio.propTypes = {
   disabled: PropTypes.bool,
@@ -193,6 +253,19 @@ Radio.propTypes = {
   label: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
+};
+
+Radio.defaultProps = {
+  disabled: false,
+  error: false,
+  children: undefined,
+  label: undefined,
+  onChange: () => {},
+  theme: { colors, spacing },
 };
 
 export default Radio;

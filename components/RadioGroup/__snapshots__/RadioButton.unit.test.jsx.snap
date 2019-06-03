@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -64,17 +75,6 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 .c0 {
   margin-bottom: 8px;
   display: -webkit-inline-box;
@@ -111,6 +111,17 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot children 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -174,17 +185,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 .c0 {
   margin-bottom: 8px;
   display: -webkit-inline-box;
@@ -221,6 +221,17 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -266,17 +277,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 
 .c1 .c5 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c4 .c3 {
@@ -331,6 +331,17 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -376,17 +387,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 
 .c1 .c5 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c4 .c3 {
@@ -441,6 +441,17 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -504,17 +515,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 .c0 {
   margin-bottom: 8px;
   display: -webkit-inline-box;
@@ -551,6 +551,17 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -614,17 +625,6 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 .c3 {
   margin-right: 8px;
 }
@@ -676,6 +676,17 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -739,17 +750,6 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 .c0 {
   display: inline-block;
   margin-right: 16px;
@@ -801,6 +801,17 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -862,17 +873,6 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 
 .c1 .c3 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), normal:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c2 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
 }
 
 .c0 {

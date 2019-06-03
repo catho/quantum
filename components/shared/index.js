@@ -9,6 +9,7 @@ import uniqId from './uniqId';
 import * as INPUT_STYLE from './inputStyle';
 import hexToRgba from './hexToRgba';
 import shadow from './shadow';
+import HiddenInput from './HiddenInput';
 
 export {
   ErrorMessage,
@@ -22,4 +23,5 @@ export {
   uniqId,
   hexToRgba,
   shadow,
+  HiddenInput,
 };
