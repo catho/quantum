@@ -152,7 +152,7 @@ const StyledButton = styled.button`
           !disabled
             ? `
               ${shadow(8, mainColor700)({ theme })}
-              background-color: ${mainColor700};
+              background-color: ${stroked ? mainColor100 : mainColor700};
             `
             : ''
         }
