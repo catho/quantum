@@ -47,21 +47,25 @@ const customStyle = css`
   .rc-slider-handle {
     background-color: ${({
       theme: {
-        colors: { primary },
+        colors: {
+          primary: { 500: primary500 },
+        },
       },
-    }) => primary[500]};
+    }) => primary500};
   }
 
   .rc-slider-rail {
     background-color: ${({
       theme: {
-        colors: { primary },
+        colors: {
+          primary: { 100: primary100 },
+        },
       },
-    }) => primary[100]};
+    }) => primary100};
   }
 
   .rc-slider-track {
-    background-color: ${Colors.BLUE[50]};
+    background-color: ${Colors.BLUE[50]}; //usar o hex
   }
 
   .rc-slider-handle:active,
@@ -76,25 +80,31 @@ const customStyle = css`
     .rc-slider-handle {
       background-color: ${({
         theme: {
-          colors: { neutral },
+          colors: {
+            neutral: { 500: neutral500 },
+          },
         },
-      }) => neutral[500]};
+      }) => neutral500};
     }
 
     .rc-slider-rail {
       background-color: ${({
         theme: {
-          colors: { neutral },
+          colors: {
+            neutral: { 100: neutral100 },
+          },
         },
-      }) => neutral[100]};
+      }) => neutral100};
     }
 
     .rc-slider-track {
       background-color: ${({
         theme: {
-          colors: { neutral },
+          colors: {
+            neutral: { 300: neutral300 },
+          },
         },
-      }) => neutral[300]};
+      }) => neutral300};
     }
   }
 `;
