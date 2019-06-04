@@ -8,53 +8,19 @@ import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
 import uniqId from '../shared/uniqId';
+import TextInput from './TextInput';
 
 const ID_GENERATOR = uniqId('input-');
 
 const {
-  default: DEFAULT_INPUT_STYLE,
   LABEL_STYLE,
   HELPER_TEXT_STYLE,
   REQUIRED_MARK_STYLE,
   ERROR_MESSAGE_STYLE,
-  AUTO_FILL_STYLE,
 } = INPUT_STYLE;
 
 const InputLabel = styled(Label)`
   ${LABEL_STYLE}
-`;
-
-const InputTag = styled.input`
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  &::-webkit-inner-spin-button,
-  &::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  ${DEFAULT_INPUT_STYLE};
-
-  ${({ searchable }) =>
-    searchable &&
-    `
-    padding: 10px 42px;
-  `}
-
-  ${({ password }) =>
-    password &&
-    `
-    padding-right: 28px;
-  `}
-
-  &::-webkit-calendar-picker-indicator {
-    display: none;
-  }
-
-  :-webkit-autofill {
-    ${AUTO_FILL_STYLE}
-  }
 `;
 
 const InputIcon = styled(Icon)`
@@ -106,7 +72,6 @@ InputSearchIcon.displayName = 'InputSearchIcon';
 InputErrorIcon.displayName = 'InputErrorIcon';
 HelperText.displayName = 'HelperText';
 DescriptionLabel.displayName = 'DescriptionLabel';
-InputTag.displayName = 'InputTag';
 InputLabel.displayName = 'InputLabel';
 
 /** A text field component to get user text data */
@@ -179,7 +144,7 @@ class Input extends React.Component {
             type={typeState}
             value={value}
             render={(ref, props) => (
-              <InputTag
+              <TextInput
                 ref={ref}
                 error={error}
                 searchable={_isSearchType}
