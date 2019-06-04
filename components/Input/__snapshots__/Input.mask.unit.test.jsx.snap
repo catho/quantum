@@ -102,7 +102,6 @@ exports[`Input component should match snapshots 3`] = `
 
 .c1 {
   display: block;
-  margin-bottom: 5px;
   margin-bottom: 0;
   padding: 8px 12px 0px;
   font-weight: bold;

@@ -3,25 +3,21 @@ import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
+import { ErrorMessage, FieldGroup, INPUT_STYLE } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
 import uniqId from '../shared/uniqId';
 import TextInput from './TextInput';
+import Label from './Label';
 
 const ID_GENERATOR = uniqId('input-');
 
 const {
-  LABEL_STYLE,
   HELPER_TEXT_STYLE,
   REQUIRED_MARK_STYLE,
   ERROR_MESSAGE_STYLE,
 } = INPUT_STYLE;
-
-const InputLabel = styled(Label)`
-  ${LABEL_STYLE}
-`;
 
 const InputIcon = styled(Icon)`
   cursor: pointer;
@@ -72,7 +68,6 @@ InputSearchIcon.displayName = 'InputSearchIcon';
 InputErrorIcon.displayName = 'InputErrorIcon';
 HelperText.displayName = 'HelperText';
 DescriptionLabel.displayName = 'DescriptionLabel';
-InputLabel.displayName = 'InputLabel';
 
 /** A text field component to get user text data */
 class Input extends React.Component {
@@ -125,10 +120,10 @@ class Input extends React.Component {
     return (
       <FieldGroup>
         {label && (
-          <InputLabel htmlFor={this._id} error={error}>
+          <Label htmlFor={this._id} error={error}>
             {label}
             {required && <RequiredMark>*</RequiredMark>}
-          </InputLabel>
+          </Label>
         )}
         {descriptionLabel && (
           <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
