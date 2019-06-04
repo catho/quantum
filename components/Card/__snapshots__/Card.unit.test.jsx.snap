@@ -6,11 +6,11 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 20px 0;
+  padding: 16px 16px 0;
 }
 
 .c1 > * {
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .c1 > *:last-child {
@@ -36,27 +36,26 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 }
 
 .c5 {
-  background-color: #cccccc;
   border-radius: 4px;
   display: inline-block;
   height: 72px;
   width: 72px;
+  background-color: #cccccc;
+  border-radius: 4px;
 }
 
 .c6 {
-  padding: 12px 20px;
-  font-size: 14px;
   margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
 }
 
 .c7 {
-  padding: 0 20px 20px;
+  padding: 0 16px 16px;
 }
 
 .c0 {
-  background-color: #FFFFFF;
   border-radius: 8px;
-  box-shadow: 0 2px 6px 0 rgba(128,128,128,0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -65,6 +64,8 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(76,76,76,0.2),0px 1px 1px 0px rgba(76,76,76,0.14),0px 1px 3px 0px rgba(76,76,76,0.12);
+  background-color: #f2f2f2;
 }
 
 <article
@@ -108,11 +109,12 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 
 exports[`<Card /> Snapshots should match snapshot with rounded Thumbnail 1`] = `
 .c0 {
-  background-color: #cccccc;
   border-radius: 50%;
   display: inline-block;
   height: 72px;
   width: 72px;
+  background-color: #cccccc;
+  border-radius: 50%;
 }
 
 <img

@@ -15,13 +15,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c9 {
-  padding: 0 20px 20px;
+  padding: 0 16px 16px;
 }
 
 .c2 {
-  background-color: #FFFFFF;
   border-radius: 8px;
-  box-shadow: 0 2px 6px 0 rgba(128,128,128,0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,6 +28,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(76,76,76,0.2),0px 1px 1px 0px rgba(76,76,76,0.14),0px 1px 3px 0px rgba(76,76,76,0.12);
+  background-color: #f2f2f2;
 }
 
 .c13 {
@@ -96,9 +96,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c8 {
-  padding: 12px 20px;
-  font-size: 14px;
   margin: 0;
+  padding: 12px 16px;
+  font-size: NaNpx;
   font-size: 16px;
   max-height: 70vh;
   overflow-y: auto;
@@ -110,12 +110,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 20px 0;
+  padding: 16px 16px 0;
   padding: 24px 24px 0;
 }
 
 .c4 > * {
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .c4 > *:last-child {
@@ -407,13 +407,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c9 {
-  padding: 0 20px 20px;
+  padding: 0 16px 16px;
 }
 
 .c2 {
-  background-color: #FFFFFF;
   border-radius: 8px;
-  box-shadow: 0 2px 6px 0 rgba(128,128,128,0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -422,6 +420,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(76,76,76,0.2),0px 1px 1px 0px rgba(76,76,76,0.14),0px 1px 3px 0px rgba(76,76,76,0.12);
+  background-color: #f2f2f2;
 }
 
 .c13 {
@@ -488,9 +488,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c8 {
-  padding: 12px 20px;
-  font-size: 14px;
   margin: 0;
+  padding: 12px 16px;
+  font-size: NaNpx;
   font-size: 16px;
   max-height: 70vh;
   overflow-y: auto;
@@ -502,12 +502,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 20px 0;
+  padding: 16px 16px 0;
   padding: 24px 24px 0;
 }
 
 .c4 > * {
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .c4 > *:last-child {
@@ -1287,13 +1287,33 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "Content-sc-6vzg5x-0",
-                      "isStatic": true,
+                      "isStatic": false,
                       "rules": Array [
-                        "padding:12px 20px;font-size:14px;margin:0;",
+                        "margin:0;",
+                        [Function],
                       ],
+                    },
+                    "defaultProps": Object {
+                      "theme": Object {
+                        "baseFontSize": 16,
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      },
                     },
                     "displayName": "Card.Content",
                     "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "theme": [Function],
+                    },
                     "render": [Function],
                     "styledComponentId": "Content-sc-6vzg5x-0",
                     "target": "div",
@@ -1307,14 +1327,34 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "Footer-pp401c-0",
-                      "isStatic": true,
+                      "isStatic": false,
                       "lastClassName": "c9",
                       "rules": Array [
-                        "padding:0 20px 20px;",
+                        "padding:",
+                        [Function],
+                        ";",
                       ],
+                    },
+                    "defaultProps": Object {
+                      "theme": Object {
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      },
                     },
                     "displayName": "Card.Footer",
                     "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "theme": [Function],
+                    },
                     "render": [Function],
                     "styledComponentId": "Footer-pp401c-0",
                     "target": "footer",
@@ -1327,13 +1367,32 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "c3",
-                      "isStatic": true,
+                      "isStatic": false,
                       "rules": Array [
-                        "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
+                        "display:flex;",
+                        [Function],
                       ],
+                    },
+                    "defaultProps": Object {
+                      "theme": Object {
+                        "spacing": Object {
+                          "large": 24,
+                          "medium": 16,
+                          "small": 12,
+                          "xlarge": 32,
+                          "xsmall": 8,
+                          "xxlarge": 40,
+                          "xxsmall": 4,
+                          "xxxlarge": 48,
+                          "xxxsmall": 2,
+                        },
+                      },
                     },
                     "displayName": "Card.Header",
                     "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "theme": [Function],
+                    },
                     "render": [Function],
                     "styledComponentId": "c3",
                     "target": "header",
@@ -1950,14 +2009,13 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
                           "componentId": "Card__CardWrapper-om5cci-0",
-                          "isStatic": true,
+                          "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
-                            "background-color:",
-                            "#FFFFFF",
-                            ";border-radius:8px;box-shadow:0 2px 6px 0 ",
-                            "rgba(128, 128, 128, 0.5)",
-                            ";display:flex;flex-direction:column;position:relative;",
+                            "border-radius:8px;display:flex;flex-direction:column;position:relative;",
+                            [Function],
+                            " ",
+                            [Function],
                           ],
                         },
                         "displayName": "Card__CardWrapper",
@@ -2184,7 +2242,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
-                                  "display:flex;padding:20px 20px 0;> *{margin-right:18px;}> *:last-child{margin-right:0;}",
+                                  "display:flex;",
+                                  [Function],
                                   "padding:",
                                   [Function],
                                   ";",
@@ -2299,10 +2358,20 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       <Card.Title
                                         className="c6"
                                         small={false}
+                                        theme={
+                                          Object {
+                                            "baseFontSize": 16,
+                                          }
+                                        }
                                       >
                                         <Title__Heading
                                           className="c6"
                                           small={false}
+                                          theme={
+                                            Object {
+                                              "baseFontSize": 16,
+                                            }
+                                          }
                                         >
                                           <StyledComponent
                                             className="c6"
@@ -2317,7 +2386,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "rules": Array [
                                                     "font-size:",
                                                     [Function],
-                                                    ";font-weight:600;margin:0;",
+                                                    "px;font-weight:600;margin:0;",
                                                   ],
                                                 },
                                                 "displayName": "Title__Heading",
@@ -2332,6 +2401,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             }
                                             forwardedRef={null}
                                             small={false}
+                                            theme={
+                                              Object {
+                                                "baseFontSize": 16,
+                                              }
+                                            }
                                           >
                                             <h2
                                               className="c6 c7"
@@ -2376,7 +2450,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "isStatic": false,
                                 "lastClassName": "c8",
                                 "rules": Array [
-                                  "padding:12px 20px;font-size:14px;margin:0;",
+                                  "margin:0;",
+                                  [Function],
                                   "font-size:16px;max-height:70vh;overflow-y:auto;padding:",
                                   [Function],
                                   ";",
@@ -2436,7 +2511,23 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           </div>
                         </StyledComponent>
                       </Content>
-                      <Card.Footer>
+                      <Card.Footer
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <StyledComponent
                           forwardedComponent={
                             Object {
@@ -2444,14 +2535,34 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
                                 "componentId": "Footer-pp401c-0",
-                                "isStatic": true,
+                                "isStatic": false,
                                 "lastClassName": "c9",
                                 "rules": Array [
-                                  "padding:0 20px 20px;",
+                                  "padding:",
+                                  [Function],
+                                  ";",
                                 ],
+                              },
+                              "defaultProps": Object {
+                                "theme": Object {
+                                  "spacing": Object {
+                                    "large": 24,
+                                    "medium": 16,
+                                    "small": 12,
+                                    "xlarge": 32,
+                                    "xsmall": 8,
+                                    "xxlarge": 40,
+                                    "xxsmall": 4,
+                                    "xxxlarge": 48,
+                                    "xxxsmall": 2,
+                                  },
+                                },
                               },
                               "displayName": "Card.Footer",
                               "foldedComponentIds": Array [],
+                              "propTypes": Object {
+                                "theme": [Function],
+                              },
                               "render": [Function],
                               "styledComponentId": "Footer-pp401c-0",
                               "target": "footer",
@@ -2461,6 +2572,21 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             }
                           }
                           forwardedRef={null}
+                          theme={
+                            Object {
+                              "spacing": Object {
+                                "large": 24,
+                                "medium": 16,
+                                "small": 12,
+                                "xlarge": 32,
+                                "xsmall": 8,
+                                "xxlarge": 40,
+                                "xxsmall": 4,
+                                "xxxlarge": 48,
+                                "xxxsmall": 2,
+                              },
+                            }
+                          }
                         >
                           <footer
                             className="c9"
