@@ -22,7 +22,7 @@ const CardWrapper = styled.article`
   flex-direction: column;
   position: relative;
 
-  ${shadow()}
+  ${shadow(1)}
 
   ${({
     theme: {
