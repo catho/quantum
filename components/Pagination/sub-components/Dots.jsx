@@ -1,47 +1,72 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../../Colors';
 
-const sharedStyles = `
-  background-color: ${Colors.BLACK['200']};
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-`;
-
-const sharedPseudoElementStyles = `
-  content: '';
-  position: absolute;
-  tpo: 0;
-  ${sharedStyles}
-`;
+import { colors, spacing } from '../../shared/theme';
 
 const Wrapper = styled.div`
   display: inline-block;
-  margin: 0 4px;
+  margin: ${({
+    theme: {
+      spacing: { xxsmall },
+    },
+  }) => `0 ${xxsmall}px`};
   min-width: 22px;
 `;
 
 const Dot = styled.span`
   position: relative;
-  ${sharedStyles}
 
-  &:after {
-    left: 8px;
-    ${sharedPseudoElementStyles}
-  }
+  ${({
+    theme: {
+      spacing: { xsmall, medium },
+      colors: {
+        neutral: { 300: neutral300 },
+      },
+    },
+  }) => `
+    &, &:after, &:before {
+      background-color: ${neutral300};
+      border-radius: 50%;
+      display: inline-block;
+      height: 5px;
+      width: 5px;
+    }
 
-  &:before {
-    left: 16px;
-    ${sharedPseudoElementStyles}
-  }
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+    }
+
+    &:after {
+      left: ${xsmall}px;
+    }
+
+    &:before {
+      left: ${medium}px;
+    }
+  `}
 `;
 
-const Dots = ({ ...props }) => (
-  <Wrapper {...props}>
-    <Dot />
+const Dots = ({ theme, ...props }) => (
+  <Wrapper theme={theme} {...props}>
+    <Dot theme={theme} />
   </Wrapper>
 );
+
+Dots.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
+};
+
+Dots.defaultProps = {
+  theme: {
+    colors,
+    spacing,
+  },
+};
 
 export default Dots;

@@ -1,16 +1,18 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Page from './Page';
+import PageButton from './PageButton';
 
-describe('<Page />', () => {
+describe('<PageButton />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      expect(renderer.create(<Page>{50}</Page>).toJSON()).toMatchSnapshot();
+      expect(
+        renderer.create(<PageButton>{50}</PageButton>).toJSON(),
+      ).toMatchSnapshot();
     });
 
     it('should match snapshot with active prop', () => {
       expect(
-        renderer.create(<Page active>{10}</Page>).toJSON(),
+        renderer.create(<PageButton active>{10}</PageButton>).toJSON(),
       ).toMatchSnapshot();
     });
   });
