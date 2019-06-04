@@ -1,6 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
+
+import { shadow } from '../shared';
+import { colors } from '../shared/theme';
+
 import {
   Header,
   HeaderText,
@@ -13,12 +17,22 @@ import {
 } from './sub-components';
 
 const CardWrapper = styled.article`
-  background-color: ${Colors.WHITE};
   border-radius: 8px;
-  box-shadow: 0 2px 6px 0 ${Colors.SHADOW[50]};
   display: flex;
   flex-direction: column;
   position: relative;
+
+  ${shadow()}
+
+  ${({
+    theme: {
+      colors: {
+        neutral: { 100: neutral100 },
+      },
+    },
+  }) => `
+    background-color: ${neutral100};
+  `}
 `;
 
 class Card extends React.Component {
@@ -40,5 +54,17 @@ class Card extends React.Component {
 
   render = () => <CardWrapper {...this.props} />;
 }
+
+Card.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+  }),
+};
+
+Card.defaultProps = {
+  theme: {
+    colors,
+  },
+};
 
 export default Card;

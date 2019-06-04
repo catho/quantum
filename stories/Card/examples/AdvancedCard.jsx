@@ -1,5 +1,4 @@
 import React from 'react';
-import Colors from '../../../components/Colors';
 import Card from '../../../components/Card';
 import Button from '../../../components/Button';
 import Icon from '../../../components/Icon';
@@ -34,8 +33,8 @@ const AdvancedCard = () => (
           </Button>
         </div>
         <div>
-          <Icon skin={Colors.BLACK['400']} name="favorite" />
-          <Icon skin={Colors.BLACK['400']} name="share" />
+          <Icon name="favorite" />
+          <Icon name="share" />
         </div>
       </Card.Footer>
     </Card>
@@ -43,7 +42,6 @@ const AdvancedCard = () => (
 );
 
 AdvancedCard.code = `import {
-  Colors,
   Card,
   Button,
   Icon
@@ -79,8 +77,8 @@ const AdvancedCard = () => (
         </Button>
       </div>
       <div>
-        <Icon skin={Colors.BLACK['400']} name="favorite" />
-        <Icon skin={Colors.BLACK['400']} name="share" />
+        <Icon name="favorite" />
+        <Icon name="share" />
       </div>
     </Card.Footer>
   </Card>
