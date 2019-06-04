@@ -33,7 +33,7 @@ const StyledButton = styled.button`
       large: `${baseFontSize * 1.25}px`,
       xlarge: `${baseFontSize * 1.5}px`,
     };
-    return `font-size: ${sizes[size] || sizes.medium};`;
+    return `font-size: ${sizes[size]};`;
   }}
 
   ${({
@@ -49,7 +49,7 @@ const StyledButton = styled.button`
       large: `${xxxlarge}px`,
     };
 
-    return `height: ${heights[size] || heights.medium};`;
+    return `height: ${heights[size]};`;
   }}
 
   ${({
@@ -66,7 +66,7 @@ const StyledButton = styled.button`
       xlarge: `0 ${medium}px`,
     };
 
-    return `padding: ${paddings[size] || paddings.medium};`;
+    return `padding: ${paddings[size]};`;
   }}
 
   ${props =>
@@ -75,10 +75,6 @@ const StyledButton = styled.button`
     margin-left: auto;
     margin-right: auto;
   `}
-
-  ${ButtonIcon} {
-    margin-right: 5px;
-  }
 
   transition: all 0.2s ease-in-out;
 
@@ -162,18 +158,21 @@ const StyledButton = styled.button`
       ${({
         size,
         theme: {
-          spacing: { medium, large },
+          spacing: { xxsmall, medium, large },
         },
       }) => {
         const sizes = {
           xsmall: `${medium}px`,
           small: `${medium}px`,
-          normal: `${large}px`,
+          medium: `${large}px`,
           large: `${large}px`,
           xlarge: `${large}px`,
         };
 
-        return `font-size: ${sizes[size] || sizes.normal};`;
+        return `
+          font-size: ${sizes[size]};
+          margin-right: ${xxsmall}px;
+        `;
       }}
     }
     `;
