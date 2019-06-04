@@ -42,7 +42,7 @@ class ModalExample extends Component {
                 <Button
                   style={{ marginRight: 24 }}
                   onClick={this.closeModal}
-                  skin="secondary"
+                  stroked
                 >
                   Cancel
                 </Button>

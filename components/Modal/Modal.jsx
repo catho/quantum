@@ -8,7 +8,7 @@ import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import { hexToRgba } from '../shared';
-import { breakpoints, colors, spacing } from '../shared/theme';
+import { breakpoints, colors, spacing, components } from '../shared/theme';
 
 function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   const sizes = {
@@ -215,6 +215,9 @@ Modal.propTypes = {
     breakpoints: PropTypes.object,
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    components: PropTypes.shape({
+      button: PropTypes.object,
+    }),
   }),
 };
 
@@ -226,6 +229,9 @@ Modal.defaultProps = {
     breakpoints,
     colors,
     spacing,
+    components: {
+      button: components.button,
+    },
   },
 };
 

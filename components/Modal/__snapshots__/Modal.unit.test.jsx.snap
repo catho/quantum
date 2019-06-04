@@ -41,61 +41,58 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c11 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c11:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c11:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c11:focus,
+.c11:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c11:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c11 .c12 {
-  font-size: 24px;
+.c11 .c12 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c11 .c12 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c8 {
@@ -137,7 +134,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 .c10 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -145,6 +142,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   position: absolute;
   top: 16px;
   right: 16px;
+}
+
+.c10 .c12 {
+  margin-right: 0;
 }
 
 .c10:hover,
@@ -156,7 +157,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 
 .c10:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -274,6 +275,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "900": "#a36300",
         },
       },
+      "components": Object {
+        "button": Object {
+          "skins": Object {
+            "error": Object {
+              "mainColor": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "text": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+            },
+            "neutral": Object {
+              "mainColor": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "text": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+            },
+            "primary": Object {
+              "mainColor": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "text": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+            },
+            "secondary": Object {
+              "mainColor": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "text": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+            },
+            "success": Object {
+              "mainColor": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "text": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+            },
+            "warning": Object {
+              "mainColor": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+              "text": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+            },
+          },
+        },
+      },
       "spacing": Object {
         "large": 24,
         "medium": 16,
@@ -330,61 +433,58 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c11 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c11:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c11:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c11:focus,
+.c11:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c11:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c11 .c12 {
-  font-size: 24px;
+.c11 .c12 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c11 .c12 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c8 {
@@ -426,7 +526,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 .c10 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -434,6 +534,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   position: absolute;
   top: 16px;
   right: 16px;
+}
+
+.c10 .c12 {
+  margin-right: 0;
 }
 
 .c10:hover,
@@ -445,7 +549,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 
 .c10:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -611,6 +715,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "900": "#a36300",
             },
           },
+          "components": Object {
+            "button": Object {
+              "skins": Object {
+                "error": Object {
+                  "mainColor": Object {
+                    "100": "#ffe5e9",
+                    "300": "#ff6c82",
+                    "500": "#ff2d4d",
+                    "700": "#ff223d",
+                    "900": "#ac001a",
+                  },
+                  "text": Object {
+                    "100": "#f2f2f2",
+                    "300": "#cccccc",
+                    "500": "#999999",
+                    "700": "#4c4c4c",
+                    "900": "#191919",
+                  },
+                },
+                "neutral": Object {
+                  "mainColor": Object {
+                    "100": "#f2f2f2",
+                    "300": "#cccccc",
+                    "500": "#999999",
+                    "700": "#4c4c4c",
+                    "900": "#191919",
+                  },
+                  "text": Object {
+                    "100": "#f2f2f2",
+                    "300": "#cccccc",
+                    "500": "#999999",
+                    "700": "#4c4c4c",
+                    "900": "#191919",
+                  },
+                },
+                "primary": Object {
+                  "mainColor": Object {
+                    "100": "#e5edfc",
+                    "300": "#5a88de",
+                    "500": "#1355d0",
+                    "700": "#0e44c4",
+                    "900": "#062ab3",
+                  },
+                  "text": Object {
+                    "100": "#f2f2f2",
+                    "300": "#cccccc",
+                    "500": "#999999",
+                    "700": "#4c4c4c",
+                    "900": "#191919",
+                  },
+                },
+                "secondary": Object {
+                  "mainColor": Object {
+                    "100": "#f5b3cd",
+                    "300": "#e84d8b",
+                    "500": "#de0059",
+                    "700": "#d50048",
+                    "900": "#c8002e",
+                  },
+                  "text": Object {
+                    "100": "#f2f2f2",
+                    "300": "#cccccc",
+                    "500": "#999999",
+                    "700": "#4c4c4c",
+                    "900": "#191919",
+                  },
+                },
+                "success": Object {
+                  "mainColor": Object {
+                    "100": "#edfadf",
+                    "300": "#a5e064",
+                    "500": "#7ed321",
+                    "700": "#6bc818",
+                    "900": "#3c6510",
+                  },
+                  "text": Object {
+                    "100": "#f2f2f2",
+                    "300": "#cccccc",
+                    "500": "#999999",
+                    "700": "#4c4c4c",
+                    "900": "#191919",
+                  },
+                },
+                "warning": Object {
+                  "mainColor": Object {
+                    "100": "#ffefd6",
+                    "300": "#f5b24d",
+                    "500": "#f09100",
+                    "700": "#ec7e00",
+                    "900": "#a36300",
+                  },
+                  "text": Object {
+                    "100": "#f2f2f2",
+                    "300": "#cccccc",
+                    "500": "#999999",
+                    "700": "#4c4c4c",
+                    "900": "#191919",
+                  },
+                },
+              },
+            },
+          },
           "spacing": Object {
             "large": 24,
             "medium": 16,
@@ -767,6 +973,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#a36300",
               },
             },
+            "components": Object {
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
             "spacing": Object {
               "large": 24,
               "medium": 16,
@@ -852,6 +1160,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "500": "#f09100",
                     "700": "#ec7e00",
                     "900": "#a36300",
+                  },
+                },
+                "components": Object {
+                  "button": Object {
+                    "skins": Object {
+                      "error": Object {
+                        "mainColor": Object {
+                          "100": "#ffe5e9",
+                          "300": "#ff6c82",
+                          "500": "#ff2d4d",
+                          "700": "#ff223d",
+                          "900": "#ac001a",
+                        },
+                        "text": Object {
+                          "100": "#f2f2f2",
+                          "300": "#cccccc",
+                          "500": "#999999",
+                          "700": "#4c4c4c",
+                          "900": "#191919",
+                        },
+                      },
+                      "neutral": Object {
+                        "mainColor": Object {
+                          "100": "#f2f2f2",
+                          "300": "#cccccc",
+                          "500": "#999999",
+                          "700": "#4c4c4c",
+                          "900": "#191919",
+                        },
+                        "text": Object {
+                          "100": "#f2f2f2",
+                          "300": "#cccccc",
+                          "500": "#999999",
+                          "700": "#4c4c4c",
+                          "900": "#191919",
+                        },
+                      },
+                      "primary": Object {
+                        "mainColor": Object {
+                          "100": "#e5edfc",
+                          "300": "#5a88de",
+                          "500": "#1355d0",
+                          "700": "#0e44c4",
+                          "900": "#062ab3",
+                        },
+                        "text": Object {
+                          "100": "#f2f2f2",
+                          "300": "#cccccc",
+                          "500": "#999999",
+                          "700": "#4c4c4c",
+                          "900": "#191919",
+                        },
+                      },
+                      "secondary": Object {
+                        "mainColor": Object {
+                          "100": "#f5b3cd",
+                          "300": "#e84d8b",
+                          "500": "#de0059",
+                          "700": "#d50048",
+                          "900": "#c8002e",
+                        },
+                        "text": Object {
+                          "100": "#f2f2f2",
+                          "300": "#cccccc",
+                          "500": "#999999",
+                          "700": "#4c4c4c",
+                          "900": "#191919",
+                        },
+                      },
+                      "success": Object {
+                        "mainColor": Object {
+                          "100": "#edfadf",
+                          "300": "#a5e064",
+                          "500": "#7ed321",
+                          "700": "#6bc818",
+                          "900": "#3c6510",
+                        },
+                        "text": Object {
+                          "100": "#f2f2f2",
+                          "300": "#cccccc",
+                          "500": "#999999",
+                          "700": "#4c4c4c",
+                          "900": "#191919",
+                        },
+                      },
+                      "warning": Object {
+                        "mainColor": Object {
+                          "100": "#ffefd6",
+                          "300": "#f5b24d",
+                          "500": "#f09100",
+                          "700": "#ec7e00",
+                          "900": "#a36300",
+                        },
+                        "text": Object {
+                          "100": "#f2f2f2",
+                          "300": "#cccccc",
+                          "500": "#999999",
+                          "700": "#4c4c4c",
+                          "900": "#191919",
+                        },
+                      },
+                    },
                   },
                 },
                 "spacing": Object {
@@ -1046,6 +1456,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#a36300",
                     },
                   },
+                  "components": Object {
+                    "button": Object {
+                      "skins": Object {
+                        "error": Object {
+                          "mainColor": Object {
+                            "100": "#ffe5e9",
+                            "300": "#ff6c82",
+                            "500": "#ff2d4d",
+                            "700": "#ff223d",
+                            "900": "#ac001a",
+                          },
+                          "text": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                        },
+                        "neutral": Object {
+                          "mainColor": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                          "text": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                        },
+                        "primary": Object {
+                          "mainColor": Object {
+                            "100": "#e5edfc",
+                            "300": "#5a88de",
+                            "500": "#1355d0",
+                            "700": "#0e44c4",
+                            "900": "#062ab3",
+                          },
+                          "text": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                        },
+                        "secondary": Object {
+                          "mainColor": Object {
+                            "100": "#f5b3cd",
+                            "300": "#e84d8b",
+                            "500": "#de0059",
+                            "700": "#d50048",
+                            "900": "#c8002e",
+                          },
+                          "text": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                        },
+                        "success": Object {
+                          "mainColor": Object {
+                            "100": "#edfadf",
+                            "300": "#a5e064",
+                            "500": "#7ed321",
+                            "700": "#6bc818",
+                            "900": "#3c6510",
+                          },
+                          "text": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                        },
+                        "warning": Object {
+                          "mainColor": Object {
+                            "100": "#ffefd6",
+                            "300": "#f5b24d",
+                            "500": "#f09100",
+                            "700": "#ec7e00",
+                            "900": "#a36300",
+                          },
+                          "text": Object {
+                            "100": "#f2f2f2",
+                            "300": "#cccccc",
+                            "500": "#999999",
+                            "700": "#4c4c4c",
+                            "900": "#191919",
+                          },
+                        },
+                      },
+                    },
+                  },
                   "spacing": Object {
                     "large": 24,
                     "medium": 16,
@@ -1129,6 +1641,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "900": "#a36300",
                       },
                     },
+                    "components": Object {
+                      "button": Object {
+                        "skins": Object {
+                          "error": Object {
+                            "mainColor": Object {
+                              "100": "#ffe5e9",
+                              "300": "#ff6c82",
+                              "500": "#ff2d4d",
+                              "700": "#ff223d",
+                              "900": "#ac001a",
+                            },
+                            "text": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                          },
+                          "neutral": Object {
+                            "mainColor": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                            "text": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                          },
+                          "primary": Object {
+                            "mainColor": Object {
+                              "100": "#e5edfc",
+                              "300": "#5a88de",
+                              "500": "#1355d0",
+                              "700": "#0e44c4",
+                              "900": "#062ab3",
+                            },
+                            "text": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                          },
+                          "secondary": Object {
+                            "mainColor": Object {
+                              "100": "#f5b3cd",
+                              "300": "#e84d8b",
+                              "500": "#de0059",
+                              "700": "#d50048",
+                              "900": "#c8002e",
+                            },
+                            "text": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                          },
+                          "success": Object {
+                            "mainColor": Object {
+                              "100": "#edfadf",
+                              "300": "#a5e064",
+                              "500": "#7ed321",
+                              "700": "#6bc818",
+                              "900": "#3c6510",
+                            },
+                            "text": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                          },
+                          "warning": Object {
+                            "mainColor": Object {
+                              "100": "#ffefd6",
+                              "300": "#f5b24d",
+                              "500": "#f09100",
+                              "700": "#ec7e00",
+                              "900": "#a36300",
+                            },
+                            "text": Object {
+                              "100": "#f2f2f2",
+                              "300": "#cccccc",
+                              "500": "#999999",
+                              "700": "#4c4c4c",
+                              "900": "#191919",
+                            },
+                          },
+                        },
+                      },
+                    },
                     "spacing": Object {
                       "large": 24,
                       "medium": 16,
@@ -1210,6 +1824,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "500": "#f09100",
                           "700": "#ec7e00",
                           "900": "#a36300",
+                        },
+                      },
+                      "components": Object {
+                        "button": Object {
+                          "skins": Object {
+                            "error": Object {
+                              "mainColor": Object {
+                                "100": "#ffe5e9",
+                                "300": "#ff6c82",
+                                "500": "#ff2d4d",
+                                "700": "#ff223d",
+                                "900": "#ac001a",
+                              },
+                              "text": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                            },
+                            "neutral": Object {
+                              "mainColor": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                              "text": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                            },
+                            "primary": Object {
+                              "mainColor": Object {
+                                "100": "#e5edfc",
+                                "300": "#5a88de",
+                                "500": "#1355d0",
+                                "700": "#0e44c4",
+                                "900": "#062ab3",
+                              },
+                              "text": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                            },
+                            "secondary": Object {
+                              "mainColor": Object {
+                                "100": "#f5b3cd",
+                                "300": "#e84d8b",
+                                "500": "#de0059",
+                                "700": "#d50048",
+                                "900": "#c8002e",
+                              },
+                              "text": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                            },
+                            "success": Object {
+                              "mainColor": Object {
+                                "100": "#edfadf",
+                                "300": "#a5e064",
+                                "500": "#7ed321",
+                                "700": "#6bc818",
+                                "900": "#3c6510",
+                              },
+                              "text": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                            },
+                            "warning": Object {
+                              "mainColor": Object {
+                                "100": "#ffefd6",
+                                "300": "#f5b24d",
+                                "500": "#f09100",
+                                "700": "#ec7e00",
+                                "900": "#a36300",
+                              },
+                              "text": Object {
+                                "100": "#f2f2f2",
+                                "300": "#cccccc",
+                                "500": "#999999",
+                                "700": "#4c4c4c",
+                                "900": "#191919",
+                              },
+                            },
+                          },
                         },
                       },
                       "spacing": Object {
@@ -1320,6 +2036,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "500": "#f09100",
                             "700": "#ec7e00",
                             "900": "#a36300",
+                          },
+                        },
+                        "components": Object {
+                          "button": Object {
+                            "skins": Object {
+                              "error": Object {
+                                "mainColor": Object {
+                                  "100": "#ffe5e9",
+                                  "300": "#ff6c82",
+                                  "500": "#ff2d4d",
+                                  "700": "#ff223d",
+                                  "900": "#ac001a",
+                                },
+                                "text": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                              },
+                              "neutral": Object {
+                                "mainColor": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                                "text": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                              },
+                              "primary": Object {
+                                "mainColor": Object {
+                                  "100": "#e5edfc",
+                                  "300": "#5a88de",
+                                  "500": "#1355d0",
+                                  "700": "#0e44c4",
+                                  "900": "#062ab3",
+                                },
+                                "text": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                              },
+                              "secondary": Object {
+                                "mainColor": Object {
+                                  "100": "#f5b3cd",
+                                  "300": "#e84d8b",
+                                  "500": "#de0059",
+                                  "700": "#d50048",
+                                  "900": "#c8002e",
+                                },
+                                "text": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                              },
+                              "success": Object {
+                                "mainColor": Object {
+                                  "100": "#edfadf",
+                                  "300": "#a5e064",
+                                  "500": "#7ed321",
+                                  "700": "#6bc818",
+                                  "900": "#3c6510",
+                                },
+                                "text": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                              },
+                              "warning": Object {
+                                "mainColor": Object {
+                                  "100": "#ffefd6",
+                                  "300": "#f5b24d",
+                                  "500": "#f09100",
+                                  "700": "#ec7e00",
+                                  "900": "#a36300",
+                                },
+                                "text": Object {
+                                  "100": "#f2f2f2",
+                                  "300": "#cccccc",
+                                  "500": "#999999",
+                                  "700": "#4c4c4c",
+                                  "900": "#191919",
+                                },
+                              },
+                            },
                           },
                         },
                         "spacing": Object {
@@ -1654,6 +2472,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       <CloseIcon
                         aria-label="close dialog"
                         onClick={[Function]}
+                        size="medium"
+                        skin="neutral"
                         theme={
                           Object {
                             "breakpoints": Object {
@@ -1721,6 +2541,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#a36300",
                               },
                             },
+                            "components": Object {
+                              "button": Object {
+                                "skins": Object {
+                                  "error": Object {
+                                    "mainColor": Object {
+                                      "100": "#ffe5e9",
+                                      "300": "#ff6c82",
+                                      "500": "#ff2d4d",
+                                      "700": "#ff223d",
+                                      "900": "#ac001a",
+                                    },
+                                    "text": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                  },
+                                  "neutral": Object {
+                                    "mainColor": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                    "text": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                  },
+                                  "primary": Object {
+                                    "mainColor": Object {
+                                      "100": "#e5edfc",
+                                      "300": "#5a88de",
+                                      "500": "#1355d0",
+                                      "700": "#0e44c4",
+                                      "900": "#062ab3",
+                                    },
+                                    "text": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                  },
+                                  "secondary": Object {
+                                    "mainColor": Object {
+                                      "100": "#f5b3cd",
+                                      "300": "#e84d8b",
+                                      "500": "#de0059",
+                                      "700": "#d50048",
+                                      "900": "#c8002e",
+                                    },
+                                    "text": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                  },
+                                  "success": Object {
+                                    "mainColor": Object {
+                                      "100": "#edfadf",
+                                      "300": "#a5e064",
+                                      "500": "#7ed321",
+                                      "700": "#6bc818",
+                                      "900": "#3c6510",
+                                    },
+                                    "text": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                  },
+                                  "warning": Object {
+                                    "mainColor": Object {
+                                      "100": "#ffefd6",
+                                      "300": "#f5b24d",
+                                      "500": "#f09100",
+                                      "700": "#ec7e00",
+                                      "900": "#a36300",
+                                    },
+                                    "text": Object {
+                                      "100": "#f2f2f2",
+                                      "300": "#cccccc",
+                                      "500": "#999999",
+                                      "700": "#4c4c4c",
+                                      "900": "#191919",
+                                    },
+                                  },
+                                },
+                              },
+                            },
                             "spacing": Object {
                               "large": 24,
                               "medium": 16,
@@ -1750,26 +2672,141 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "isStatic": false,
                                 "lastClassName": "c10",
                                 "rules": Array [
-                                  "border-radius:50%;border:none;color:",
-                                  "rgba(128, 128, 128, 0.5)",
-                                  ";width:40px;background-color:transparent;box-shadow:none;outline:none;:hover,:focus{box-shadow:none;background-color:",
-                                  "rgba(204, 204, 204, 0.4)",
-                                  ";color:",
-                                  "#4c4c4c",
-                                  ";}:active{box-shadow:none;background-color:",
-                                  "rgba(128, 128, 128, 0.5)",
-                                  ";color:",
-                                  "#4c4c4c",
-                                  ";}",
+                                  [Function],
                                   "position:absolute;",
                                   [Function],
                                   ";",
                                 ],
                               },
+                              "defaultProps": Object {
+                                "size": "medium",
+                                "skin": "neutral",
+                                "theme": Object {
+                                  "baseFontSize": 16,
+                                  "components": Object {
+                                    "button": Object {
+                                      "skins": Object {
+                                        "error": Object {
+                                          "mainColor": Object {
+                                            "100": "#ffe5e9",
+                                            "300": "#ff6c82",
+                                            "500": "#ff2d4d",
+                                            "700": "#ff223d",
+                                            "900": "#ac001a",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "neutral": Object {
+                                          "mainColor": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "primary": Object {
+                                          "mainColor": Object {
+                                            "100": "#e5edfc",
+                                            "300": "#5a88de",
+                                            "500": "#1355d0",
+                                            "700": "#0e44c4",
+                                            "900": "#062ab3",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "secondary": Object {
+                                          "mainColor": Object {
+                                            "100": "#f5b3cd",
+                                            "300": "#e84d8b",
+                                            "500": "#de0059",
+                                            "700": "#d50048",
+                                            "900": "#c8002e",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "success": Object {
+                                          "mainColor": Object {
+                                            "100": "#edfadf",
+                                            "300": "#a5e064",
+                                            "500": "#7ed321",
+                                            "700": "#6bc818",
+                                            "900": "#3c6510",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "warning": Object {
+                                          "mainColor": Object {
+                                            "100": "#ffefd6",
+                                            "300": "#f5b24d",
+                                            "500": "#f09100",
+                                            "700": "#ec7e00",
+                                            "900": "#a36300",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                      },
+                                    },
+                                  },
+                                  "spacing": Object {
+                                    "large": 24,
+                                    "medium": 16,
+                                    "small": 12,
+                                    "xlarge": 32,
+                                    "xsmall": 8,
+                                    "xxlarge": 40,
+                                    "xxsmall": 4,
+                                    "xxxlarge": 48,
+                                    "xxxsmall": 2,
+                                  },
+                                },
+                              },
                               "displayName": "CloseIcon",
                               "foldedComponentIds": Array [
                                 "Button__IconButton-sc-1ovnfsw-2",
                               ],
+                              "propTypes": Object {
+                                "size": [Function],
+                                "skin": [Function],
+                                "theme": [Function],
+                              },
                               "render": [Function],
                               "styledComponentId": "Modal__CloseIcon-sc-300qpr-1",
                               "target": [Function],
@@ -1781,6 +2818,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           }
                           forwardedRef={null}
                           onClick={[Function]}
+                          size="medium"
+                          skin="neutral"
                           theme={
                             Object {
                               "breakpoints": Object {
@@ -1848,6 +2887,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#a36300",
                                 },
                               },
+                              "components": Object {
+                                "button": Object {
+                                  "skins": Object {
+                                    "error": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffe5e9",
+                                        "300": "#ff6c82",
+                                        "500": "#ff2d4d",
+                                        "700": "#ff223d",
+                                        "900": "#ac001a",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "neutral": Object {
+                                      "mainColor": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "primary": Object {
+                                      "mainColor": Object {
+                                        "100": "#e5edfc",
+                                        "300": "#5a88de",
+                                        "500": "#1355d0",
+                                        "700": "#0e44c4",
+                                        "900": "#062ab3",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "secondary": Object {
+                                      "mainColor": Object {
+                                        "100": "#f5b3cd",
+                                        "300": "#e84d8b",
+                                        "500": "#de0059",
+                                        "700": "#d50048",
+                                        "900": "#c8002e",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "success": Object {
+                                      "mainColor": Object {
+                                        "100": "#edfadf",
+                                        "300": "#a5e064",
+                                        "500": "#7ed321",
+                                        "700": "#6bc818",
+                                        "900": "#3c6510",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                    "warning": Object {
+                                      "mainColor": Object {
+                                        "100": "#ffefd6",
+                                        "300": "#f5b24d",
+                                        "500": "#f09100",
+                                        "700": "#ec7e00",
+                                        "900": "#a36300",
+                                      },
+                                      "text": Object {
+                                        "100": "#f2f2f2",
+                                        "300": "#cccccc",
+                                        "500": "#999999",
+                                        "700": "#4c4c4c",
+                                        "900": "#191919",
+                                      },
+                                    },
+                                  },
+                                },
+                              },
                               "spacing": Object {
                                 "large": 24,
                                 "medium": 16,
@@ -1871,7 +3012,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             icon="close"
                             onClick={[Function]}
                             size="medium"
-                            skin="primary"
+                            skin="neutral"
+                            stroked={false}
                             theme={
                               Object {
                                 "breakpoints": Object {
@@ -1939,6 +3081,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "900": "#a36300",
                                   },
                                 },
+                                "components": Object {
+                                  "button": Object {
+                                    "skins": Object {
+                                      "error": Object {
+                                        "mainColor": Object {
+                                          "100": "#ffe5e9",
+                                          "300": "#ff6c82",
+                                          "500": "#ff2d4d",
+                                          "700": "#ff223d",
+                                          "900": "#ac001a",
+                                        },
+                                        "text": Object {
+                                          "100": "#f2f2f2",
+                                          "300": "#cccccc",
+                                          "500": "#999999",
+                                          "700": "#4c4c4c",
+                                          "900": "#191919",
+                                        },
+                                      },
+                                      "neutral": Object {
+                                        "mainColor": Object {
+                                          "100": "#f2f2f2",
+                                          "300": "#cccccc",
+                                          "500": "#999999",
+                                          "700": "#4c4c4c",
+                                          "900": "#191919",
+                                        },
+                                        "text": Object {
+                                          "100": "#f2f2f2",
+                                          "300": "#cccccc",
+                                          "500": "#999999",
+                                          "700": "#4c4c4c",
+                                          "900": "#191919",
+                                        },
+                                      },
+                                      "primary": Object {
+                                        "mainColor": Object {
+                                          "100": "#e5edfc",
+                                          "300": "#5a88de",
+                                          "500": "#1355d0",
+                                          "700": "#0e44c4",
+                                          "900": "#062ab3",
+                                        },
+                                        "text": Object {
+                                          "100": "#f2f2f2",
+                                          "300": "#cccccc",
+                                          "500": "#999999",
+                                          "700": "#4c4c4c",
+                                          "900": "#191919",
+                                        },
+                                      },
+                                      "secondary": Object {
+                                        "mainColor": Object {
+                                          "100": "#f5b3cd",
+                                          "300": "#e84d8b",
+                                          "500": "#de0059",
+                                          "700": "#d50048",
+                                          "900": "#c8002e",
+                                        },
+                                        "text": Object {
+                                          "100": "#f2f2f2",
+                                          "300": "#cccccc",
+                                          "500": "#999999",
+                                          "700": "#4c4c4c",
+                                          "900": "#191919",
+                                        },
+                                      },
+                                      "success": Object {
+                                        "mainColor": Object {
+                                          "100": "#edfadf",
+                                          "300": "#a5e064",
+                                          "500": "#7ed321",
+                                          "700": "#6bc818",
+                                          "900": "#3c6510",
+                                        },
+                                        "text": Object {
+                                          "100": "#f2f2f2",
+                                          "300": "#cccccc",
+                                          "500": "#999999",
+                                          "700": "#4c4c4c",
+                                          "900": "#191919",
+                                        },
+                                      },
+                                      "warning": Object {
+                                        "mainColor": Object {
+                                          "100": "#ffefd6",
+                                          "300": "#f5b24d",
+                                          "500": "#f09100",
+                                          "700": "#ec7e00",
+                                          "900": "#a36300",
+                                        },
+                                        "text": Object {
+                                          "100": "#f2f2f2",
+                                          "300": "#cccccc",
+                                          "500": "#999999",
+                                          "700": "#4c4c4c",
+                                          "900": "#191919",
+                                        },
+                                      },
+                                    },
+                                  },
+                                },
                                 "spacing": Object {
                                   "large": 24,
                                   "medium": 16,
@@ -1962,7 +3206,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               full={false}
                               onClick={[Function]}
                               size="medium"
-                              skin="primary"
+                              skin="neutral"
+                              stroked={false}
                               theme={
                                 Object {
                                   "breakpoints": Object {
@@ -2030,6 +3275,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#a36300",
                                     },
                                   },
+                                  "components": Object {
+                                    "button": Object {
+                                      "skins": Object {
+                                        "error": Object {
+                                          "mainColor": Object {
+                                            "100": "#ffe5e9",
+                                            "300": "#ff6c82",
+                                            "500": "#ff2d4d",
+                                            "700": "#ff223d",
+                                            "900": "#ac001a",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "neutral": Object {
+                                          "mainColor": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "primary": Object {
+                                          "mainColor": Object {
+                                            "100": "#e5edfc",
+                                            "300": "#5a88de",
+                                            "500": "#1355d0",
+                                            "700": "#0e44c4",
+                                            "900": "#062ab3",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "secondary": Object {
+                                          "mainColor": Object {
+                                            "100": "#f5b3cd",
+                                            "300": "#e84d8b",
+                                            "500": "#de0059",
+                                            "700": "#d50048",
+                                            "900": "#c8002e",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "success": Object {
+                                          "mainColor": Object {
+                                            "100": "#edfadf",
+                                            "300": "#a5e064",
+                                            "500": "#7ed321",
+                                            "700": "#6bc818",
+                                            "900": "#3c6510",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                        "warning": Object {
+                                          "mainColor": Object {
+                                            "100": "#ffefd6",
+                                            "300": "#f5b24d",
+                                            "500": "#f09100",
+                                            "700": "#ec7e00",
+                                            "900": "#a36300",
+                                          },
+                                          "text": Object {
+                                            "100": "#f2f2f2",
+                                            "300": "#cccccc",
+                                            "500": "#999999",
+                                            "700": "#4c4c4c",
+                                            "900": "#191919",
+                                          },
+                                        },
+                                      },
+                                    },
+                                  },
                                   "spacing": Object {
                                     "large": 24,
                                     "medium": 16,
@@ -2059,32 +3406,20 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "isStatic": false,
                                       "lastClassName": "c11",
                                       "rules": Array [
-                                        "align-items:center;",
-                                        [Function],
-                                        " display:flex;",
-                                        [Function],
-                                        " font-weight:bold;",
-                                        [Function],
-                                        " justify-content:center;",
-                                        [Function],
-                                        " letter-spacing:0.2px;",
-                                        [Function],
-                                        " *:nth-child(2){margin-left:5px;}transition:all 0.2s ease-in-out;",
+                                        "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
                                         [Function],
                                         " ",
                                         [Function],
-                                        ":hover{",
-                                        [Function],
-                                        "}:focus{",
-                                        [Function],
-                                        "}:active{",
-                                        [Function],
-                                        "}",
                                         " ",
-                                        ".c12",
-                                        "{",
                                         [Function],
-                                        "}",
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " transition:all 0.2s ease-in-out;",
+                                        [Function],
+                                        " ",
+                                        [Function],
                                       ],
                                     },
                                     "displayName": "Button__StyledButton",
@@ -2101,7 +3436,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 full={false}
                                 onClick={[Function]}
                                 size="medium"
-                                skin="primary"
+                                skin="neutral"
+                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -2167,6 +3503,108 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "500": "#f09100",
                                         "700": "#ec7e00",
                                         "900": "#a36300",
+                                      },
+                                    },
+                                    "components": Object {
+                                      "button": Object {
+                                        "skins": Object {
+                                          "error": Object {
+                                            "mainColor": Object {
+                                              "100": "#ffe5e9",
+                                              "300": "#ff6c82",
+                                              "500": "#ff2d4d",
+                                              "700": "#ff223d",
+                                              "900": "#ac001a",
+                                            },
+                                            "text": Object {
+                                              "100": "#f2f2f2",
+                                              "300": "#cccccc",
+                                              "500": "#999999",
+                                              "700": "#4c4c4c",
+                                              "900": "#191919",
+                                            },
+                                          },
+                                          "neutral": Object {
+                                            "mainColor": Object {
+                                              "100": "#f2f2f2",
+                                              "300": "#cccccc",
+                                              "500": "#999999",
+                                              "700": "#4c4c4c",
+                                              "900": "#191919",
+                                            },
+                                            "text": Object {
+                                              "100": "#f2f2f2",
+                                              "300": "#cccccc",
+                                              "500": "#999999",
+                                              "700": "#4c4c4c",
+                                              "900": "#191919",
+                                            },
+                                          },
+                                          "primary": Object {
+                                            "mainColor": Object {
+                                              "100": "#e5edfc",
+                                              "300": "#5a88de",
+                                              "500": "#1355d0",
+                                              "700": "#0e44c4",
+                                              "900": "#062ab3",
+                                            },
+                                            "text": Object {
+                                              "100": "#f2f2f2",
+                                              "300": "#cccccc",
+                                              "500": "#999999",
+                                              "700": "#4c4c4c",
+                                              "900": "#191919",
+                                            },
+                                          },
+                                          "secondary": Object {
+                                            "mainColor": Object {
+                                              "100": "#f5b3cd",
+                                              "300": "#e84d8b",
+                                              "500": "#de0059",
+                                              "700": "#d50048",
+                                              "900": "#c8002e",
+                                            },
+                                            "text": Object {
+                                              "100": "#f2f2f2",
+                                              "300": "#cccccc",
+                                              "500": "#999999",
+                                              "700": "#4c4c4c",
+                                              "900": "#191919",
+                                            },
+                                          },
+                                          "success": Object {
+                                            "mainColor": Object {
+                                              "100": "#edfadf",
+                                              "300": "#a5e064",
+                                              "500": "#7ed321",
+                                              "700": "#6bc818",
+                                              "900": "#3c6510",
+                                            },
+                                            "text": Object {
+                                              "100": "#f2f2f2",
+                                              "300": "#cccccc",
+                                              "500": "#999999",
+                                              "700": "#4c4c4c",
+                                              "900": "#191919",
+                                            },
+                                          },
+                                          "warning": Object {
+                                            "mainColor": Object {
+                                              "100": "#ffefd6",
+                                              "300": "#f5b24d",
+                                              "500": "#f09100",
+                                              "700": "#ec7e00",
+                                              "900": "#a36300",
+                                            },
+                                            "text": Object {
+                                              "100": "#f2f2f2",
+                                              "300": "#cccccc",
+                                              "500": "#999999",
+                                              "700": "#4c4c4c",
+                                              "900": "#191919",
+                                            },
+                                          },
+                                        },
                                       },
                                     },
                                     "spacing": Object {

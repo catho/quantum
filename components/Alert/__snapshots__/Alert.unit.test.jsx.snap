@@ -10,61 +10,58 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c5 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c5:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c5:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c5:focus,
+.c5:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c5:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c5 .c6 {
-  font-size: 24px;
+.c5 .c6 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c5 .c6 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c2 {
@@ -81,7 +78,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c4 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -94,6 +91,10 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   width: auto;
 }
 
+.c4 .c6 {
+  margin-right: 0;
+}
+
 .c4:hover,
 .c4:focus {
   box-shadow: none;
@@ -103,7 +104,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 
 .c4:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -177,61 +178,58 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c6 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c6:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c6:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c6:focus,
+.c6:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c6:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c6 .c7 {
-  font-size: 24px;
+.c6 .c7 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c6 .c7 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c2 {
@@ -248,7 +246,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 .c5 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -261,6 +259,10 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   width: auto;
 }
 
+.c5 .c7 {
+  margin-right: 0;
+}
+
 .c5:hover,
 .c5:focus {
   box-shadow: none;
@@ -270,7 +272,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 
 .c5:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -355,61 +357,58 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c5 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c5:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c5:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c5:focus,
+.c5:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c5:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c5 .c6 {
-  font-size: 24px;
+.c5 .c6 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c5 .c6 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c2 {
@@ -426,7 +425,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -439,6 +438,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
+.c4 .c6 {
+  margin-right: 0;
+}
+
 .c4:hover,
 .c4:focus {
   box-shadow: none;
@@ -448,7 +451,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 .c4:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -522,61 +525,58 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c5 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c5:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c5:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c5:focus,
+.c5:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c5:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c5 .c6 {
-  font-size: 24px;
+.c5 .c6 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c5 .c6 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c2 {
@@ -593,7 +593,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -606,6 +606,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
+.c4 .c6 {
+  margin-right: 0;
+}
+
 .c4:hover,
 .c4:focus {
   box-shadow: none;
@@ -615,7 +619,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 .c4:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -699,61 +703,58 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c5 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c5:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c5:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c5:focus,
+.c5:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c5:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c5 .c6 {
-  font-size: 24px;
+.c5 .c6 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c5 .c6 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c2 {
@@ -770,7 +771,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -783,6 +784,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
+.c4 .c6 {
+  margin-right: 0;
+}
+
 .c4:hover,
 .c4:focus {
   box-shadow: none;
@@ -792,7 +797,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 .c4:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -886,61 +891,58 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c5 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c5:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c5:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c5:focus,
+.c5:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c5:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c5 .c6 {
-  font-size: 24px;
+.c5 .c6 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c5 .c6 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c2 {
@@ -957,7 +959,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -970,6 +972,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
+.c4 .c6 {
+  margin-right: 0;
+}
+
 .c4:hover,
 .c4:focus {
   box-shadow: none;
@@ -979,7 +985,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 .c4:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
@@ -1083,61 +1089,58 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   font-weight: bold;
-  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 16px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
-  border: 1.5px solid #1355d0;
-  box-shadow: 0 2px 4px 0 #cccccc;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.c5 *:nth-child(2) {
-  margin-left: 5px;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 1.5px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c5:hover {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
 }
 
-.c5:focus {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
+.c5:focus,
+.c5:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
 .c5:active {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
 }
 
-.c5 .c6 {
-  font-size: 24px;
+.c5 .c6 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c5 .c6 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 .c2 {
@@ -1154,7 +1157,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c4 {
   border-radius: 50%;
   border: none;
-  color: rgba(128,128,128,0.5);
+  color: rgba(153,153,153,0.5);
   width: 40px;
   background-color: transparent;
   box-shadow: none;
@@ -1167,6 +1170,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
+.c4 .c6 {
+  margin-right: 0;
+}
+
 .c4:hover,
 .c4:focus {
   box-shadow: none;
@@ -1176,7 +1183,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 .c4:active {
   box-shadow: none;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 

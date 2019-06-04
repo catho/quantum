@@ -35,11 +35,11 @@ const TabExample = (
         <Example
           component={
             <Badge number={10} skin="primary">
-              <Button skin="action" size="large" />
+              <Button skin="secondary" size="large" />
             </Badge>
           }
           code={`<Badge number={10} skin="primary">
-  <Button skin="action" size="large"/>
+  <Button skin="secondary" size="large"/>
 </Badge>`}
         />
 

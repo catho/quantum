@@ -75,7 +75,7 @@ const Alert = ({ icon, children, theme, onClose, ...rest }) => (
     <Content onClose={onClose}>
       {icon && <AlertIcon name={icon} />}
       {children && <span>{children}</span>}
-      {onClose && <CloseButton onClick={onClose} />}
+      {onClose && <CloseButton theme={theme} onClick={onClose} />}
     </Content>
   </Wrapper>
 );
@@ -89,6 +89,7 @@ Alert.defaultProps = {
     spacing,
     components: {
       alert: components.alert,
+      button: components.button,
     },
   },
 };
@@ -108,6 +109,7 @@ Alert.propTypes = {
     spacing: PropTypes.object,
     components: PropTypes.shape({
       alert: PropTypes.object,
+      button: PropTypes.object,
     }),
   }),
 };

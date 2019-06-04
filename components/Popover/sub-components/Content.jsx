@@ -155,7 +155,8 @@ Content.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
     components: PropTypes.shape({
-      badge: PropTypes.object,
+      popover: PropTypes.object,
+      button: PropTypes.object,
     }),
   }),
 };
@@ -170,6 +171,7 @@ Content.defaultProps = {
     spacing,
     components: {
       popover: components.popover,
+      button: components.button,
     },
   },
 };
