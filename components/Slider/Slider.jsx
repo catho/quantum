@@ -68,10 +68,10 @@ const customStyle = css`
     ${({
       theme: {
         colors: {
-          primary: { 700: primary900 },
+          primary: { 700: primary700 },
         },
       },
-    }) => `background-color: ${hexToRgba(primary900, 0.5)};`}
+    }) => `background-color: ${hexToRgba(primary700, 0.5)};`}
   }
 
   .rc-slider-handle:active,
