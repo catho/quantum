@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import RcSlider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import Colors from '../Colors';
 import { colors, spacing, baseFontSize } from '../shared/theme';
+import { shadow, hexToRgba } from '../shared';
 import Tooltip from '../Tooltip';
 import valueValidator from './valueValidator';
 
@@ -65,13 +65,25 @@ const customStyle = css`
   }
 
   .rc-slider-track {
-    background-color: ${Colors.BLUE[50]}; //usar o hex
+    ${({
+      theme: {
+        colors: {
+          primary: { 700: primary900 },
+        },
+      },
+    }) => `background-color: ${hexToRgba(primary900, 0.5)};`}
   }
 
   .rc-slider-handle:active,
   .rc-slider-handle:focus {
     border: none;
-    box-shadow: 0 2px 6px 0 ${Colors.BLUE[50]};
+    ${({
+      theme: {
+        colors: {
+          primary: { 900: primary900 },
+        },
+      },
+    }) => shadow(6, primary900)}
   }
 
   &.rc-slider-disabled {
