@@ -9,7 +9,7 @@ describe('IconFont component', () => {
     renderer.create(<IconFont />);
 
     expectCSSMatches(
-      `@import url('https://fonts.googleapis.com/icon?family=Material+Icons');`,
+      `@import url('https://fonts.googleapis.com/icon?family=Material+Icons&display=block');`,
     );
   });
 });
