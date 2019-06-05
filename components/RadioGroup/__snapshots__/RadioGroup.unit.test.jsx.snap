@@ -1107,6 +1107,7 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   cursor: text;
   font-style: italic;
   font-weight: 600;
+  display: block;
   margin-left: -4px;
 }
 
@@ -1131,10 +1132,10 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
     />
     Foo
   </label>
-  <div
+  <span
     className="c6"
   >
     Error text
-  </div>
+  </span>
 </div>
 `;

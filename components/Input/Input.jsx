@@ -4,7 +4,6 @@ import React from 'react';
 import MaskedInput from 'react-text-mask';
 
 import { FieldGroup, uniqId } from '../shared';
-import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
 import {
@@ -26,12 +25,18 @@ const InputIcon = styled(Icon)`
   bottom: 10px;
 `;
 
-const InputSearchIcon = styled(InputIcon)`
+const InputSearchIcon = styled(InputIcon).attrs({ name: 'search' })`
   left: 12px;
 `;
 
-const InputErrorIcon = styled(InputIcon)`
-  color: ${Colors.ERROR['500']};
+const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
+  ${({
+    theme: {
+      colors: {
+        error: { 500: error500 },
+      },
+    },
+  }) => `color: ${error500};`}
 `;
 
 const DescriptionLabel = styled.span`
@@ -103,6 +108,7 @@ class Input extends React.Component {
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
+
     const _isSearchType = typeProp === 'search';
     const _isPassword = typeProp === 'password';
     const _hasValue = !!value;
@@ -120,9 +126,7 @@ class Input extends React.Component {
           <DescriptionLabel theme={theme}>{descriptionLabel}</DescriptionLabel>
         )}
         <InputWrapper>
-          {_isSearchType && (
-            <InputSearchIcon name="search" description={descriptionLabel} />
-          )}
+          {_isSearchType && <InputSearchIcon description={descriptionLabel} />}
           <MaskedInput
             {...rest}
             id={this._id}
@@ -139,7 +143,7 @@ class Input extends React.Component {
             )}
           />
           {error && (
-            <InputErrorIcon name="error" description={descriptionLabel} />
+            <InputErrorIcon description={descriptionLabel} theme={theme} />
           )}
           {_isPassword && !error && (
             <InputIcon
