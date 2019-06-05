@@ -27,7 +27,7 @@ const TextInput = styled.input.attrs({
     display: none;
   }
 
-  ${({ error, placeholder, defaultValue, value, hasIcon, theme }) => {
+  ${({ defaultValue, error, hasIcon, placeholder, theme, value }) => {
     const {
       colors: {
         primary: { 500: primaryColor },

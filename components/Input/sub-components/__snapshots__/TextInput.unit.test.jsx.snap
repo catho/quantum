@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should match snapshots 1`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  type="text"
+/>
+`;
+
+exports[`Input component should match snapshots 2`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+  border-color: #ff2d4d;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  type="text"
+/>
+`;
+
+exports[`Input component should match snapshots 3`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  disabled={true}
+  type="text"
+/>
+`;
+
+exports[`Input component should match snapshots 4`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+  padding-right: 40px;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  type="text"
+/>
+`;
+
+exports[`Input component should match snapshots 5`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+  color: #999999;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  placeholder="Placeholder text"
+  type="text"
+/>
+`;
+
+exports[`Input component should match snapshots 6`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  type="text"
+  value="Value text"
+/>
+`;
+
+exports[`Input component should match snapshots 7`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  defaultValue="Value text"
+  type="text"
+/>
+`;
+
+exports[`Input component should match snapshots 8`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  placeholder="Placeholder text"
+  type="text"
+  value="Value text"
+/>
+`;
+
+exports[`Input component should match snapshots 9`] = `
+.c0 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  height: 44px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 12px;
+  border-color: #ff2d4d;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.c0:hover,
+.c0:focus {
+  border-color: #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+}
+
+.c0[disabled] {
+  background-color: #cccccc;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffe5e9 inset;
+}
+
+<input
+  className="c0"
+  disabled={true}
+  type="text"
+/>
+`;
