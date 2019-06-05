@@ -6,9 +6,7 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 4px;
   outline: none;
-  padding: 8px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -19,10 +17,17 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  margin: 0 4px;
+  padding: 8px;
 }
 
-.c0:hover,
-.c0:focus {
+.c0[aria-disabled=true] {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.c0[aria-disabled=false]:hover,
+.c0[aria-disabled=false]:focus {
   background-color: #e5edfc;
   border: 1px solid #1355d0;
   color: #1355d0;
@@ -42,9 +47,7 @@ exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop
   border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
-  margin: 0 4px;
   outline: none;
-  padding: 8px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -55,8 +58,20 @@ exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  margin: 0 4px;
+  padding: 8px;
+}
+
+.c0[aria-disabled=true] {
   color: #cccccc;
   cursor: not-allowed;
+}
+
+.c0[aria-disabled=false]:hover,
+.c0[aria-disabled=false]:focus {
+  background-color: #e5edfc;
+  border: 1px solid #1355d0;
+  color: #1355d0;
 }
 
 <a
