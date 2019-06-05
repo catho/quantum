@@ -3,11 +3,10 @@ import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-import { FieldGroup } from '../shared';
+import { FieldGroup, uniqId } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
-import uniqId from '../shared/uniqId';
 import {
   TextInput,
   Label,
@@ -15,6 +14,8 @@ import {
   RequiredMark,
   ErrorMessage,
 } from './sub-components';
+
+import { spacing, colors } from '../shared/theme';
 
 const ID_GENERATOR = uniqId('input-');
 
@@ -37,7 +38,13 @@ const DescriptionLabel = styled.span`
   cursor: text;
   display: block;
   font-size: 14px;
-  padding: 0px 12px;
+  ${({
+    theme: {
+      spacing: { small },
+    },
+  }) => `
+    padding: 0px ${small}px;
+  `}
 `;
 
 const InputWrapper = styled.div`
@@ -92,10 +99,14 @@ class Input extends React.Component {
       required,
       value,
       onClean,
+      theme,
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
     const _isSearchType = typeProp === 'search';
+    const _isPassword = typeProp === 'password';
+    const _hasValue = !!value;
+    const _hasIcon = error || _isPassword || _hasValue;
 
     return (
       <FieldGroup>
@@ -106,7 +117,7 @@ class Input extends React.Component {
           </Label>
         )}
         {descriptionLabel && (
-          <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
+          <DescriptionLabel theme={theme}>{descriptionLabel}</DescriptionLabel>
         )}
         <InputWrapper>
           {_isSearchType && (
@@ -122,7 +133,7 @@ class Input extends React.Component {
               <TextInput
                 ref={ref}
                 error={error}
-                searchable={_isSearchType}
+                hasIcon={_hasIcon}
                 {...props}
               />
             )}
@@ -130,14 +141,14 @@ class Input extends React.Component {
           {error && (
             <InputErrorIcon name="error" description={descriptionLabel} />
           )}
-          {typeProp === 'password' && !error && (
+          {_isPassword && !error && (
             <InputIcon
               name={typeState === 'password' ? 'visibility' : 'visibility_off'}
               description={descriptionLabel}
               onClick={this._toggleInputType}
             />
           )}
-          {!!value && !error && (
+          {_hasValue && !_isPassword && !error && (
             <InputIcon
               name="cancel"
               description={descriptionLabel}
@@ -146,7 +157,7 @@ class Input extends React.Component {
           )}
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
-        {error && <ErrorMessage helperText={helperText}>{error}</ErrorMessage>}
+        {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
       </FieldGroup>
     );
   }
@@ -164,6 +175,7 @@ Input.defaultProps = {
   required: false,
   placeholder: '',
   onClean: () => {},
+  theme: { spacing, colors },
 };
 
 Input.propTypes = {
@@ -198,6 +210,10 @@ Input.propTypes = {
     PropTypes.string,
   ]),
   onClean: PropTypes.func,
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    colors: PropTypes.object,
+  }),
 };
 
 Input.displayName = 'Input';

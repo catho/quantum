@@ -102,9 +102,8 @@ exports[`Input component should match snapshots 3`] = `
 
 .c1 {
   display: block;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
   font-weight: bold;
+  margin: 8px 12px 0;
 }
 
 .c2 {
@@ -154,7 +153,8 @@ exports[`Input component should match snapshots 4`] = `
   cursor: text;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px 0px;
+  display: block;
+  margin: 8px 12px 0;
 }
 
 .c2 {
@@ -200,11 +200,11 @@ exports[`Input component should match snapshots 4`] = `
     </span>
   </div>
   
-  <div
+  <span
     className="c3"
   >
     Error message
-  </div>
+  </span>
 </div>
 `;
 
@@ -346,12 +346,14 @@ exports[`Input component should match snapshots 8`] = `
 }
 
 .c2 {
-  cursor: text;
-  display: block;
+  color: #ac001a;
   font-size: 14px;
+  cursor: text;
   font-style: italic;
   font-weight: 600;
-  padding: 8px 12px 0px;
+  display: block;
+  margin: 8px 12px 0;
+  color: #4c4c4c;
 }
 
 .c1 {

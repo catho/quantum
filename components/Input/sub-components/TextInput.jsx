@@ -1,17 +1,28 @@
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Colors from '../../Colors';
+import { spacing } from '../../shared/theme';
 
 const TextInput = styled.input.attrs({
   type: 'text',
 })`
   box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  &::-webkit-inner-spin-button,
-  &::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+
+  ${({
+    hasIcon,
+    theme: {
+      spacing: { xsmall, small, xxlarge },
+    },
+  }) => `
+    margin-top: ${xsmall}px;
+    padding: ${small}px;
+    ${hasIcon && `padding-right: ${xxlarge}px;`}
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  `}
 
   background-color: ${Colors.WHITE};
   border-radius: 4px;
@@ -23,7 +34,6 @@ const TextInput = styled.input.attrs({
   min-height: 44px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   transition: all 0.2s ease-in-out;
   width: 100%;
 
@@ -61,18 +71,6 @@ const TextInput = styled.input.attrs({
     color: ${Colors.BLACK['400']};
   `}
 
-  ${({ searchable }) =>
-    searchable &&
-    `
-    padding: 10px 42px;
-  `}
-
-  ${({ password }) =>
-    password &&
-    `
-    padding-right: 28px;
-  `}
-
   &::-webkit-calendar-picker-indicator {
     display: none;
   }
@@ -83,5 +81,15 @@ const TextInput = styled.input.attrs({
 `;
 
 TextInput.displayName = 'TextInput';
+
+TextInput.propTypes = {
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+  }),
+};
+
+TextInput.defaultProps = {
+  theme: { spacing },
+};
 
 export default TextInput;

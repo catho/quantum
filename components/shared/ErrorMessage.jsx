@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { colors } from './theme';
 
-const ErrorMessage = styled.div`
+const ErrorMessage = styled.span`
   color: ${({
     theme: {
       colors: { error },
@@ -12,6 +12,7 @@ const ErrorMessage = styled.div`
   cursor: text;
   font-style: italic;
   font-weight: 600;
+  display: block;
 `;
 
 ErrorMessage.propTypes = {

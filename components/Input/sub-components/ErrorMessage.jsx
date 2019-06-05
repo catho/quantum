@@ -1,14 +1,26 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ErrorMessage } from '../../shared';
+import { spacing } from '../../shared/theme';
 
 const InputErrorMessage = styled(ErrorMessage)`
-  padding: 8px 12px 0px;
-
-  ${({ helperText }) =>
-    helperText &&
-    `
-    padding-top: 2px;
+  ${({
+    theme: {
+      spacing: { xsmall, small },
+    },
+  }) => `
+    margin: ${xsmall}px ${small}px 0;
   `}
 `;
+
+ErrorMessage.propTypes = {
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+  }),
+};
+
+ErrorMessage.defaultProps = {
+  theme: { spacing },
+};
 
 export default InputErrorMessage;
