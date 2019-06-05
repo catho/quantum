@@ -53,6 +53,7 @@ const customStyle = css`
           700: primary700,
           900: primary900,
         },
+        neutral: { 100: neutral100, 300: neutral300, 500: neutral500 },
       },
     },
   }) => css`
@@ -73,18 +74,10 @@ const customStyle = css`
       border: none;
       ${shadow(6, primary900)}
     }
-  `};
 
-  &.rc-slider-disabled {
-    background: none;
+    &.rc-slider-disabled {
+      background: none;
 
-    ${({
-      theme: {
-        colors: {
-          neutral: { 100: neutral100, 300: neutral300, 500: neutral500 },
-        },
-      },
-    }) => css`
       .rc-slider-handle {
         background-color: ${neutral500};
       }
@@ -102,8 +95,8 @@ const customStyle = css`
         border: none;
         ${shadow(6, neutral500)}
       }
-    `};
-  }
+    }
+  `};
 `;
 
 const StyledSlider = styled(RcSlider)`
