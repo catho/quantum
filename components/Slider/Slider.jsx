@@ -44,80 +44,65 @@ const tipPosition = ({ value, min, max }) => {
 };
 
 const customStyle = css`
-  .rc-slider-handle {
-    background-color: ${({
-      theme: {
-        colors: {
-          primary: { 500: primary500 },
+  ${({
+    theme: {
+      colors: {
+        primary: {
+          500: primary500,
+          100: primary100,
+          700: primary700,
+          900: primary900,
         },
       },
-    }) => primary500};
-  }
+    },
+  }) => css`
+    .rc-slider-handle {
+      background-color: ${primary500};
+    }
 
-  .rc-slider-rail {
-    background-color: ${({
-      theme: {
-        colors: {
-          primary: { 100: primary100 },
-        },
-      },
-    }) => primary100};
-  }
+    .rc-slider-rail {
+      background-color: ${primary100};
+    }
 
-  .rc-slider-track {
-    ${({
-      theme: {
-        colors: {
-          primary: { 700: primary700 },
-        },
-      },
-    }) => `background-color: ${hexToRgba(primary700, 0.5)};`}
-  }
+    .rc-slider-track {
+      background-color: ${hexToRgba(primary700, 0.5)};
+    }
 
-  .rc-slider-handle:active,
-  .rc-slider-handle:focus {
-    border: none;
-    ${({
-      theme: {
-        colors: {
-          primary: { 900: primary900 },
-        },
-      },
-    }) => shadow(6, primary900)}
-  }
+    .rc-slider-handle:active,
+    .rc-slider-handle:focus {
+      border: none;
+      ${shadow(6, primary900)}
+    }
+  `};
 
   &.rc-slider-disabled {
     background: none;
 
-    .rc-slider-handle {
-      background-color: ${({
-        theme: {
-          colors: {
-            neutral: { 500: neutral500 },
-          },
+    ${({
+      theme: {
+        colors: {
+          neutral: { 100: neutral100, 300: neutral300, 500: neutral500 },
         },
-      }) => neutral500};
-    }
+      },
+    }) => css`
+      .rc-slider-handle {
+        background-color: ${neutral500};
+      }
 
-    .rc-slider-rail {
-      background-color: ${({
-        theme: {
-          colors: {
-            neutral: { 100: neutral100 },
-          },
-        },
-      }) => neutral100};
-    }
+      .rc-slider-rail {
+        background-color: ${neutral100};
+      }
 
-    .rc-slider-track {
-      background-color: ${({
-        theme: {
-          colors: {
-            neutral: { 300: neutral300 },
-          },
-        },
-      }) => neutral300};
-    }
+      .rc-slider-track {
+        background-color: ${neutral300};
+      }
+
+      .rc-slider-handle:active,
+      .rc-slider-handle:focus {
+        border: none;
+        ${shadow(6, neutral500)}
+      }
+    `};
   }
 `;
 
