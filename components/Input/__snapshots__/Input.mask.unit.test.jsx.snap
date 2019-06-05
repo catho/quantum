@@ -148,14 +148,6 @@ exports[`Input component should match snapshots 4`] = `
   width: 100%;
 }
 
-.c2 {
-  cursor: pointer;
-  position: absolute;
-  right: 12px;
-  bottom: 10px;
-  color: #ff2d4d;
-}
-
 .c3 {
   color: #ac001a;
   font-size: 14px;
@@ -163,6 +155,14 @@ exports[`Input component should match snapshots 4`] = `
   font-style: italic;
   font-weight: 600;
   padding: 8px 12px 0px;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  color: #ff2d4d;
 }
 
 .c1 {

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import Colors from '../Colors';
+import Colors from '../../Colors';
 
 const TextInput = styled.input.attrs({
   type: 'text',

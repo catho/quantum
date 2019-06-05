@@ -3,21 +3,20 @@ import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-import { ErrorMessage, FieldGroup, INPUT_STYLE } from '../shared';
+import { FieldGroup } from '../shared';
 import Colors from '../Colors';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
 import uniqId from '../shared/uniqId';
-import TextInput from './TextInput';
-import Label from './Label';
+import {
+  TextInput,
+  Label,
+  HelperText,
+  RequiredMark,
+  ErrorMessage,
+} from './sub-components';
 
 const ID_GENERATOR = uniqId('input-');
-
-const {
-  HELPER_TEXT_STYLE,
-  REQUIRED_MARK_STYLE,
-  ERROR_MESSAGE_STYLE,
-} = INPUT_STYLE;
 
 const InputIcon = styled(Icon)`
   cursor: pointer;
@@ -34,29 +33,11 @@ const InputErrorIcon = styled(InputIcon)`
   color: ${Colors.ERROR['500']};
 `;
 
-const InputErrorMessage = styled(ErrorMessage)`
-  ${ERROR_MESSAGE_STYLE}
-
-  ${({ helperText }) =>
-    helperText &&
-    `
-    padding-top: 2px;
-  `}
-`;
-
-const HelperText = styled.span`
-  ${HELPER_TEXT_STYLE}
-`;
-
 const DescriptionLabel = styled.span`
   cursor: text;
   display: block;
   font-size: 14px;
   padding: 0px 12px;
-`;
-
-const RequiredMark = styled.em`
-  ${REQUIRED_MARK_STYLE}
 `;
 
 const InputWrapper = styled.div`
@@ -66,7 +47,6 @@ const InputWrapper = styled.div`
 InputIcon.displayName = 'InputIcon';
 InputSearchIcon.displayName = 'InputSearchIcon';
 InputErrorIcon.displayName = 'InputErrorIcon';
-HelperText.displayName = 'HelperText';
 DescriptionLabel.displayName = 'DescriptionLabel';
 
 /** A text field component to get user text data */
@@ -166,9 +146,7 @@ class Input extends React.Component {
           )}
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
-        {error && (
-          <InputErrorMessage helperText={helperText}>{error}</InputErrorMessage>
-        )}
+        {error && <ErrorMessage helperText={helperText}>{error}</ErrorMessage>}
       </FieldGroup>
     );
   }
