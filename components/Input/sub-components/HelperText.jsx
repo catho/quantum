@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import ErrorMessage from './ErrorMessage';
+import InputErrorMessage from './InputErrorMessage';
 import { colors, spacing } from '../../shared/theme';
 
-const HelperText = styled(ErrorMessage)`
+const HelperText = styled(InputErrorMessage)`
   ${({
     theme: {
       colors: {

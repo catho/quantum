@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ErrorMessage } from '../../shared';
-import { spacing } from '../../shared/theme';
+import { spacing, colors } from '../../shared/theme';
 
 const InputErrorMessage = styled(ErrorMessage)`
   ${({
@@ -13,14 +13,17 @@ const InputErrorMessage = styled(ErrorMessage)`
   `}
 `;
 
-ErrorMessage.propTypes = {
+InputErrorMessage.displayName = 'InputErrorMessage';
+
+InputErrorMessage.propTypes = {
   theme: PropTypes.shape({
     spacing: PropTypes.object,
+    colors: PropTypes.object,
   }),
 };
 
-ErrorMessage.defaultProps = {
-  theme: { spacing },
+InputErrorMessage.defaultProps = {
+  theme: { spacing, colors },
 };
 
 export default InputErrorMessage;

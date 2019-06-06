@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import { spacing, colors } from '../../shared/theme';
 import { shadow } from '../../shared';
 
-const TextInput = styled.input.attrs({
-  type: 'text',
-})`
+const TextInput = styled.input`
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
