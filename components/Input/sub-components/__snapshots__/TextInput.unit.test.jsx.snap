@@ -6,12 +6,10 @@ exports[`Input component should match snapshots 1`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -20,7 +18,7 @@ exports[`Input component should match snapshots 1`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -29,7 +27,8 @@ exports[`Input component should match snapshots 1`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -53,7 +52,6 @@ exports[`Input component should match snapshots 1`] = `
 
 <input
   className="c0"
-  type="text"
 />
 `;
 
@@ -63,12 +61,10 @@ exports[`Input component should match snapshots 2`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -77,7 +73,7 @@ exports[`Input component should match snapshots 2`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
   border-color: #ff2d4d;
 }
 
@@ -87,7 +83,8 @@ exports[`Input component should match snapshots 2`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -111,7 +108,6 @@ exports[`Input component should match snapshots 2`] = `
 
 <input
   className="c0"
-  type="text"
 />
 `;
 
@@ -121,12 +117,10 @@ exports[`Input component should match snapshots 3`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -135,7 +129,7 @@ exports[`Input component should match snapshots 3`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -144,7 +138,8 @@ exports[`Input component should match snapshots 3`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -169,7 +164,6 @@ exports[`Input component should match snapshots 3`] = `
 <input
   className="c0"
   disabled={true}
-  type="text"
 />
 `;
 
@@ -179,12 +173,10 @@ exports[`Input component should match snapshots 4`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -193,8 +185,7 @@ exports[`Input component should match snapshots 4`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
-  padding-right: 40px;
+  padding: 8px 12px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -203,7 +194,8 @@ exports[`Input component should match snapshots 4`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -227,7 +219,6 @@ exports[`Input component should match snapshots 4`] = `
 
 <input
   className="c0"
-  type="text"
 />
 `;
 
@@ -237,12 +228,10 @@ exports[`Input component should match snapshots 5`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -251,7 +240,7 @@ exports[`Input component should match snapshots 5`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
   color: #999999;
 }
 
@@ -261,7 +250,8 @@ exports[`Input component should match snapshots 5`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -286,7 +276,6 @@ exports[`Input component should match snapshots 5`] = `
 <input
   className="c0"
   placeholder="Placeholder text"
-  type="text"
 />
 `;
 
@@ -296,12 +285,10 @@ exports[`Input component should match snapshots 6`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -310,7 +297,7 @@ exports[`Input component should match snapshots 6`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -319,7 +306,8 @@ exports[`Input component should match snapshots 6`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -343,7 +331,6 @@ exports[`Input component should match snapshots 6`] = `
 
 <input
   className="c0"
-  type="text"
   value="Value text"
 />
 `;
@@ -354,12 +341,10 @@ exports[`Input component should match snapshots 7`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -368,7 +353,7 @@ exports[`Input component should match snapshots 7`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -377,7 +362,8 @@ exports[`Input component should match snapshots 7`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -402,7 +388,6 @@ exports[`Input component should match snapshots 7`] = `
 <input
   className="c0"
   defaultValue="Value text"
-  type="text"
 />
 `;
 
@@ -412,12 +397,10 @@ exports[`Input component should match snapshots 8`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -426,7 +409,7 @@ exports[`Input component should match snapshots 8`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -435,7 +418,8 @@ exports[`Input component should match snapshots 8`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -460,7 +444,6 @@ exports[`Input component should match snapshots 8`] = `
 <input
   className="c0"
   placeholder="Placeholder text"
-  type="text"
   value="Value text"
 />
 `;
@@ -471,12 +454,10 @@ exports[`Input component should match snapshots 9`] = `
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -485,7 +466,7 @@ exports[`Input component should match snapshots 9`] = `
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
-  padding: 12px;
+  padding: 8px 12px;
   border-color: #ff2d4d;
 }
 
@@ -495,7 +476,8 @@ exports[`Input component should match snapshots 9`] = `
   margin: 0;
 }
 
-.c0::-webkit-calendar-picker-indicator {
+.c0::-webkit-calendar-picker-indicator,
+.c0::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -520,6 +502,5 @@ exports[`Input component should match snapshots 9`] = `
 <input
   className="c0"
   disabled={true}
-  type="text"
 />
 `;
