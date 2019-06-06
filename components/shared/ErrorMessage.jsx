@@ -5,9 +5,11 @@ import { colors } from './theme';
 const ErrorMessage = styled.span`
   color: ${({
     theme: {
-      colors: { error },
+      colors: {
+        error: { 900: errorColor },
+      },
     },
-  }) => error[900]};
+  }) => errorColor};
   font-size: 14px;
   cursor: text;
   font-style: italic;

@@ -69,7 +69,7 @@ const TextInput = styled.input.attrs({
       }
 
       :-webkit-autofill {
-        box-shadow: 0 0 0px 1000px ${error100} inset;
+        box-shadow: 0 0 0 1000px ${error100} inset;
       }
     `;
   }}
