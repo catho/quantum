@@ -1323,6 +1323,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   cursor: text;
   font-style: italic;
   font-weight: 600;
+  display: block;
   margin-left: -2px;
 }
 
@@ -1407,11 +1408,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
       Baz
     </label>
   </div>
-  <div
+  <span
     className="c5"
   >
     Error Message
-  </div>
+  </span>
 </div>
 `;
 
@@ -1873,6 +1874,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   cursor: text;
   font-style: italic;
   font-weight: 600;
+  display: block;
   margin-left: -2px;
 }
 
@@ -1984,11 +1986,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
       </label>
     </div>
   </div>
-  <div
+  <span
     className="c6"
   >
     Error Message
-  </div>
+  </span>
 </div>
 `;
 

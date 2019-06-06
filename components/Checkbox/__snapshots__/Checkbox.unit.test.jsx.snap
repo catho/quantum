@@ -135,6 +135,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   cursor: text;
   font-style: italic;
   font-weight: 600;
+  display: block;
 }
 
 .c0 {
@@ -330,11 +331,11 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       
     </label>
   </div>
-  <div
+  <span
     className="c5"
   >
     error message
-  </div>
+  </span>
 </div>
 `;
 
@@ -345,6 +346,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   cursor: text;
   font-style: italic;
   font-weight: 600;
+  display: block;
 }
 
 .c0 {
@@ -540,11 +542,11 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       
     </label>
   </div>
-  <div
+  <span
     className="c5"
   >
     error message
-  </div>
+  </span>
 </div>
 `;
 
