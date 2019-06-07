@@ -3,16 +3,12 @@ import styled from 'styled-components';
 import { spacing, colors } from '../../shared/theme';
 import { shadow } from '../../shared';
 
-const TextInput = styled.input.attrs({
-  type: 'text',
-})`
+const TextInput = styled.input`
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
   font-size: initial;
-  height: 44px;
   letter-spacing: 0.2px;
-  min-height: 44px;
   outline: none;
   transition: all 0.2s ease-in-out;
   width: 100%;
@@ -23,11 +19,20 @@ const TextInput = styled.input.attrs({
     margin: 0;
   }
 
-  &::-webkit-calendar-picker-indicator {
+  &::-webkit-calendar-picker-indicator,
+  &::-webkit-search-cancel-button {
     display: none;
   }
 
-  ${({ defaultValue, error, hasIcon, placeholder, theme, value }) => {
+  ${({
+    defaultValue,
+    error,
+    hasRightIcon,
+    hasLeftIcon,
+    placeholder,
+    theme,
+    value,
+  }) => {
     const {
       colors: {
         primary: { 500: primaryColor },
@@ -49,9 +54,10 @@ const TextInput = styled.input.attrs({
       border: 2px solid ${neutral500};
       color: ${neutral700};
       margin-top: ${xsmall}px;
-      padding: ${small}px;
+      padding: ${xsmall}px ${small}px;
 
-      ${hasIcon ? `padding-right: ${xxlarge}px;` : ''}
+      ${hasRightIcon ? `padding-right: ${xxlarge}px;` : ''}
+      ${hasLeftIcon ? `padding-left: ${xxlarge}px;` : ''}
       ${error ? `border-color: ${mainColor};` : ''}
       ${placeholder && !defaultValue && !value ? `color: ${neutral500};` : ''}
 

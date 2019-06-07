@@ -8,10 +8,10 @@ import Icon from '../Icon';
 import InputTypes from './InputTypes';
 import {
   TextInput,
-  Label,
+  InputLabel,
   HelperText,
   RequiredMark,
-  ErrorMessage,
+  InputErrorMessage,
 } from './sub-components';
 import { spacing, colors, baseFontSize } from '../shared/theme';
 
@@ -31,6 +31,7 @@ const InputIcon = styled(Icon)`
 `;
 
 const InputSearchIcon = styled(InputIcon).attrs({ name: 'search' })`
+  pointer-events: none;
   ${({
     theme: {
       spacing: { small },
@@ -127,10 +128,10 @@ class Input extends React.Component {
     return (
       <FieldGroup>
         {label && (
-          <Label htmlFor={this._id} error={error}>
+          <InputLabel htmlFor={this._id} error={error}>
             {label}
             {required && <RequiredMark>*</RequiredMark>}
-          </Label>
+          </InputLabel>
         )}
         {descriptionLabel && (
           <DescriptionLabel theme={theme}>{descriptionLabel}</DescriptionLabel>
@@ -149,7 +150,8 @@ class Input extends React.Component {
               <TextInput
                 ref={ref}
                 error={error}
-                hasIcon={_hasIcon}
+                hasRightIcon={_hasIcon}
+                hasLeftIcon={_isSearchType}
                 {...props}
               />
             )}
@@ -175,7 +177,7 @@ class Input extends React.Component {
           )}
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
-        {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
+        {error && <InputErrorMessage theme={theme}>{error}</InputErrorMessage>}
       </FieldGroup>
     );
   }

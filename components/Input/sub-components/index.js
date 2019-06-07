@@ -1,7 +1,7 @@
 import TextInput from './TextInput';
 import HelperText from './HelperText';
-import Label from './Label';
+import InputLabel from './InputLabel';
 import RequiredMark from './RequiredMark';
-import ErrorMessage from './ErrorMessage';
+import InputErrorMessage from './InputErrorMessage';
 
-export { TextInput, HelperText, Label, RequiredMark, ErrorMessage };
+export { TextInput, HelperText, InputLabel, RequiredMark, InputErrorMessage };
