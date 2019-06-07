@@ -9,6 +9,23 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -22,38 +39,36 @@ exports[`Input component  should match the snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 .c3 {
@@ -131,6 +146,23 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -144,38 +176,36 @@ exports[`Input component  should match the snapshot 2`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 .c3 {
@@ -253,6 +283,23 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -266,41 +313,39 @@ exports[`Input component  should match the snapshot 3`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   color: #999999;
 }
 
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 .c3 {
@@ -377,7 +422,35 @@ exports[`Input component  should match the snapshot 4`] = `
   width: 100%;
 }
 
+.c4 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  display: block;
+  margin: 8px 12px 0;
+}
+
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-color: #ff2d4d;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -391,61 +464,42 @@ exports[`Input component  should match the snapshot 4`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  border-color: #ff2d4d;
   color: #999999;
 }
 
-.c2:hover,
-.c2:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+}
+
 .c3 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
-}
-
-.c4 {
-  color: #ac001a;
-  font-size: 14px;
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
-  display: block;
-  padding: 8px 12px 0px;
 }
 
 .c1 {
@@ -521,6 +575,23 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -534,38 +605,36 @@ exports[`Input component  should match the snapshot 5`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 .c3 {
@@ -642,7 +711,30 @@ exports[`Input component  should match the snapshot 6`] = `
   width: 100%;
 }
 
-.c4 {
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 12px 0;
+}
+
+.c3 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -656,54 +748,39 @@ exports[`Input component  should match the snapshot 6`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
 }
 
-.c4:hover,
-.c4:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.c4[disabled] {
-  background-color: #f2f2f2;
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c3[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 8px;
-  padding-left: 13.5px;
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c2:hover ~ .c3,
-.c2:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c5 {
+.c4 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
@@ -749,7 +826,7 @@ exports[`Input component  should match the snapshot 6`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c3 c4"
+      className="c3"
       data-toggle={true}
       disabled={false}
       onBlur={[Function]}
@@ -762,7 +839,7 @@ exports[`Input component  should match the snapshot 6`] = `
       Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c5"
+        className="material-icons MuiIcon-root-1 c4"
         style={
           Object {
             "color": "",
@@ -785,7 +862,34 @@ exports[`Input component  should match the snapshot 7`] = `
   width: 100%;
 }
 
-.c5 {
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 12px 0;
+}
+
+.c3 {
+  color: #ff2d4d;
+}
+
+.c4 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -799,54 +903,39 @@ exports[`Input component  should match the snapshot 7`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
 }
 
-.c5:hover,
-.c5:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c4::-webkit-inner-spin-button,
+.c4::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.c5[disabled] {
-  background-color: #f2f2f2;
+.c4::-webkit-calendar-picker-indicator,
+.c4::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4:hover,
+.c4:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c4[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 8px;
-  padding-left: 13.5px;
+.c4:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c2:hover ~ .c4,
-.c2:focus ~ .c4 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c6 {
+.c5 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
@@ -854,10 +943,6 @@ exports[`Input component  should match the snapshot 7`] = `
 
 .c1 {
   position: relative;
-}
-
-.c3 {
-  color: #ff2d4d;
 }
 
 <div
@@ -901,7 +986,7 @@ exports[`Input component  should match the snapshot 7`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c4 c5"
+      className="c4"
       data-toggle={true}
       disabled={false}
       onBlur={[Function]}
@@ -914,7 +999,7 @@ exports[`Input component  should match the snapshot 7`] = `
       Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6"
+        className="material-icons MuiIcon-root-1 c5"
         style={
           Object {
             "color": "",
@@ -937,7 +1022,25 @@ exports[`Input component  should match the snapshot 8`] = `
   width: 100%;
 }
 
-.c3 {
+.c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
+  color: #999999;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -951,48 +1054,39 @@ exports[`Input component  should match the snapshot 8`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  color: #999999;
   color: #999999;
 }
 
-.c3:hover,
-.c3:focus {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
-.c3[disabled] {
-  background-color: #f2f2f2;
+.c2[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c5:hover ~ .c2,
-.c5:focus ~ .c2 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c4 {
+.c3 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
@@ -1039,7 +1133,7 @@ exports[`Input component  should match the snapshot 8`] = `
         aria-controls={null}
         aria-labelledby="downshift-7-label"
         autoComplete="off"
-        className="c2 c3"
+        className="c2"
         disabled={false}
         id="downshift-7-input"
         onBlur={[Function]}
@@ -1056,7 +1150,7 @@ exports[`Input component  should match the snapshot 8`] = `
       />
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -1079,7 +1173,24 @@ exports[`Input component  should match the snapshot 9`] = `
   width: 100%;
 }
 
-.c3 {
+.c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1093,47 +1204,39 @@ exports[`Input component  should match the snapshot 9`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
 }
 
-.c3:hover,
-.c3:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.c3[disabled] {
-  background-color: #f2f2f2;
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c2[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c5:hover ~ .c2,
-.c5:focus ~ .c2 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c4 {
+.c3 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
@@ -1171,7 +1274,7 @@ exports[`Input component  should match the snapshot 9`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2 c3"
+      className="c2"
       data-toggle={true}
       disabled={false}
       onBlur={[Function]}
@@ -1184,7 +1287,7 @@ exports[`Input component  should match the snapshot 9`] = `
       Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -1207,7 +1310,24 @@ exports[`Input component  should match the snapshot 10`] = `
   width: 100%;
 }
 
-.c3 {
+.c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1221,46 +1341,38 @@ exports[`Input component  should match the snapshot 10`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
 }
 
-.c3:hover,
-.c3:focus {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
-.c3[disabled] {
-  background-color: #f2f2f2;
+.c2[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c5:hover ~ .c2,
-.c5:focus ~ .c2 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c4 {
+.c3 {
   color: #4c4c4c;
   font-size: 1.5em;
   pointer-events: none;
@@ -1298,7 +1410,7 @@ exports[`Input component  should match the snapshot 10`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2 c3"
+      className="c2"
       data-toggle={true}
       disabled={false}
       onBlur={[Function]}
@@ -1311,7 +1423,7 @@ exports[`Input component  should match the snapshot 10`] = `
       baz
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",

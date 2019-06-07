@@ -1,48 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import Colors from '../Colors';
-import { FieldGroup, Label, ErrorMessage, INPUT_STYLE } from '../shared';
+import { FieldGroup } from '../shared';
+import {
+  InputLabel,
+  InputErrorMessage,
+  RequiredMark,
+  TextInput,
+} from '../Input/sub-components';
 
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
-const {
-  HOVER_STYLE,
-  ERROR_HOVER_STYLE,
-  default: DEFAULT_STYLE,
-  REQUIRED_MARK_STYLE,
-  ERROR_MESSAGE_STYLE,
-} = INPUT_STYLE;
-
-const DropButton = styled.button`
+const DropInput = styled(TextInput)`
   align-items: center;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
 
-  ${DEFAULT_STYLE};
-
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
   ${({ selectedItem }) => !selectedItem && `color: ${Colors.BLACK[400]}`};
 `;
-
-const DropLabel = styled(Label)`
-  margin-bottom: 8px;
-  padding-left: 13.5px;
-
-  ${({ error, disabled }) =>
-    !disabled &&
-    css`
-      :hover ~ ${DropButton}, :focus ~ ${DropButton} {
-        ${error ? ERROR_HOVER_STYLE : HOVER_STYLE};
-      }
-    `};
-`;
-
-DropLabel.displayName = 'DropLabel';
 
 const ArrowDown = styled(Icon).attrs({
   name: 'keyboard_arrow_down',
@@ -104,16 +85,8 @@ const DropItem = styled.li`
   `}
 `;
 
-const DropError = styled(ErrorMessage)`
-  ${ERROR_MESSAGE_STYLE}
-`;
-
 const DropContainer = styled.div`
   position: relative;
-`;
-
-const RequiredMark = styled.em`
-  ${REQUIRED_MARK_STYLE}
 `;
 
 const _getValue = item => (item ? item.value || item.label || item : '');
@@ -176,7 +149,7 @@ const Dropdown = ({
           return (
             <DropContainer {...getRootProps()}>
               {label && (
-                <DropLabel
+                <InputLabel
                   {...getLabelProps()}
                   onClick={() => openMenu()}
                   error={error}
@@ -184,14 +157,13 @@ const Dropdown = ({
                 >
                   {label}
                   {required && <RequiredMark>*</RequiredMark>}
-                </DropLabel>
+                </InputLabel>
               )}
               <input type="hidden" {...getInputProps()} />
               {autocomplete ? (
                 <>
                   <DropContainer>
-                    <DropButton
-                      as="input"
+                    <DropInput
                       style={{ cursor: 'inherit' }}
                       {...getInputProps({
                         isOpen,
@@ -224,8 +196,9 @@ const Dropdown = ({
                 </>
               ) : (
                 <>
-                  <DropButton
+                  <DropInput
                     {...getToggleButtonProps()}
+                    as="button"
                     isOpen={isOpen}
                     disabled={disabled}
                     error={error}
@@ -234,7 +207,7 @@ const Dropdown = ({
                   >
                     {_buttonLabel}
                     <ArrowDown />
-                  </DropButton>
+                  </DropInput>
 
                   {isOpen && (
                     <DropList>
@@ -259,7 +232,7 @@ const Dropdown = ({
         }}
       </Downshift>
 
-      {error && <DropError>{error}</DropError>}
+      {error && <InputErrorMessage>{error}</InputErrorMessage>}
     </FieldGroup>
   );
 };
