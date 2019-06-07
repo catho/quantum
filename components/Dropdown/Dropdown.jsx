@@ -164,6 +164,42 @@ const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
 
+const itemPropType = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.shape({
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    label: PropTypes.string,
+  }),
+]);
+
+const List = ({ theme, items, selectedItem, getItemProps }) => (
+  <DropList theme={theme}>
+    {items.map(item => (
+      <DropItem
+        theme={theme}
+        {...getItemProps({
+          item,
+          isSelected: _isEqual(selectedItem, item),
+          key: _getValue(item),
+        })}
+      >
+        {_getLabel(item)}
+        {_isEqual(selectedItem, item) && <CheckIcon theme={theme} />}
+      </DropItem>
+    ))}
+  </DropList>
+);
+
+List.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }).isRequired,
+  items: PropTypes.arrayOf(itemPropType).isRequired,
+  selectedItem: PropTypes.shape(itemPropType).isRequired,
+  getItemProps: PropTypes.func.isRequired,
+};
+
 const Dropdown = ({
   label,
   error,
@@ -260,23 +296,12 @@ const Dropdown = ({
                   </DropContainer>
 
                   {filteredInput.length > 0 && (
-                    <DropList theme={theme}>
-                      {filteredInput.map(item => (
-                        <DropItem
-                          theme={theme}
-                          {...getItemProps({
-                            item,
-                            isSelected: _isEqual(selectedItem, item),
-                            key: _getValue(item),
-                          })}
-                        >
-                          {_getLabel(item)}
-                          {_isEqual(selectedItem, item) && (
-                            <CheckIcon theme={theme} />
-                          )}
-                        </DropItem>
-                      ))}
-                    </DropList>
+                    <List
+                      items={filteredInput}
+                      theme={theme}
+                      selectedItem={selectedItem}
+                      getItemProps={getItemProps}
+                    />
                   )}
                 </>
               ) : (
@@ -297,23 +322,12 @@ const Dropdown = ({
                   </DropInput>
 
                   {isOpen && (
-                    <DropList theme={theme}>
-                      {items.map(item => (
-                        <DropItem
-                          theme={theme}
-                          {...getItemProps({
-                            item,
-                            isSelected: _isEqual(selectedItem, item),
-                            key: _getValue(item),
-                          })}
-                        >
-                          {_getLabel(item)}
-                          {_isEqual(selectedItem, item) && (
-                            <CheckIcon theme={theme} />
-                          )}
-                        </DropItem>
-                      ))}
-                    </DropList>
+                    <List
+                      items={items}
+                      theme={theme}
+                      selectedItem={selectedItem}
+                      getItemProps={getItemProps}
+                    />
                   )}
                 </>
               )}
@@ -340,14 +354,6 @@ Dropdown.defaultProps = {
   id: '',
   theme: { colors, spacing },
 };
-
-const itemPropType = PropTypes.oneOfType([
-  PropTypes.string,
-  PropTypes.shape({
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    label: PropTypes.string,
-  }),
-]);
 
 Dropdown.propTypes = {
   autocomplete: PropTypes.bool,
