@@ -189,7 +189,12 @@ const Dropdown = ({
   };
 
   const inputFilter = value =>
-    items.filter(item => item.toLowerCase().indexOf(value.toLowerCase()) > -1);
+    items.filter(
+      item =>
+        _getValue(item)
+          .toLowerCase()
+          .indexOf(value.toLowerCase()) > -1,
+    );
 
   return (
     <FieldGroup>
@@ -256,7 +261,9 @@ const Dropdown = ({
                           })}
                         >
                           {_getLabel(item)}
-                          {_isEqual(selectedItem, item) && <CheckIcon />}
+                          {_isEqual(selectedItem, item) && (
+                            <CheckIcon theme={theme} />
+                          )}
                         </DropItem>
                       ))}
                     </DropList>
@@ -290,7 +297,9 @@ const Dropdown = ({
                           })}
                         >
                           {_getLabel(item)}
-                          {_isEqual(selectedItem, item) && <CheckIcon />}
+                          {_isEqual(selectedItem, item) && (
+                            <CheckIcon theme={theme} />
+                          )}
                         </DropItem>
                       ))}
                     </DropList>
