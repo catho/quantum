@@ -72,7 +72,7 @@ describe('with an "onChange" callback set', () => {
   it('should call the callback and set a new value', () => {
     const [selectedItem] = items;
 
-    wrapper.find('#dropdown').simulate('change', selectedItem);
+    wrapper.find('Downshift').simulate('change', selectedItem);
 
     expect(mockFn).toHaveBeenCalledTimes(1);
     expect(mockFn).toBeCalledWith(selectedItem);

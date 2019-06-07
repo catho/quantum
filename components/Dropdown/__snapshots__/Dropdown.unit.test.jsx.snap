@@ -72,7 +72,6 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -112,6 +111,7 @@ exports[`Input component  should match the snapshot 1`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-0"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -268,7 +268,6 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -308,6 +307,7 @@ exports[`Input component  should match the snapshot 2`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-1"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -467,7 +467,6 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -507,6 +506,7 @@ exports[`Input component  should match the snapshot 3`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-2"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -674,7 +674,6 @@ exports[`Input component  should match the snapshot 4`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -714,6 +713,7 @@ exports[`Input component  should match the snapshot 4`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-3"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -874,7 +874,6 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -914,6 +913,7 @@ exports[`Input component  should match the snapshot 5`] = `
       className="c2"
       data-toggle={true}
       disabled={true}
+      id="dropdown-4"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -1076,7 +1076,6 @@ exports[`Input component  should match the snapshot 6`] = `
 }
 
 .c4 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -1099,9 +1098,8 @@ exports[`Input component  should match the snapshot 6`] = `
     <label
       className="c2"
       disabled={false}
-      htmlFor="downshift-5-input"
+      htmlFor="dropdown-5"
       id="downshift-5-label"
-      onClick={[Function]}
     >
       Dropdown label
     </label>
@@ -1124,6 +1122,7 @@ exports[`Input component  should match the snapshot 6`] = `
       className="c3"
       data-toggle={true}
       disabled={false}
+      id="dropdown-5"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -1290,7 +1289,6 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c5 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -1313,9 +1311,8 @@ exports[`Input component  should match the snapshot 7`] = `
     <label
       className="c2"
       disabled={false}
-      htmlFor="downshift-6-input"
+      htmlFor="dropdown-6"
       id="downshift-6-label"
-      onClick={[Function]}
     >
       Dropdown label
       <em
@@ -1343,6 +1340,7 @@ exports[`Input component  should match the snapshot 7`] = `
       className="c4"
       data-toggle={true}
       disabled={false}
+      id="dropdown-6"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -1500,7 +1498,6 @@ exports[`Input component  should match the snapshot 8`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
   position: absolute;
@@ -1548,7 +1545,7 @@ exports[`Input component  should match the snapshot 8`] = `
         autoComplete="off"
         className="c2"
         disabled={false}
-        id="downshift-7-input"
+        id="dropdown-7"
         onBlur={[Function]}
         onChange={[Function]}
         onClick={[Function]}
@@ -1709,7 +1706,6 @@ exports[`Input component  should match the snapshot 9`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -1749,6 +1745,7 @@ exports[`Input component  should match the snapshot 9`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-8"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -1904,7 +1901,6 @@ exports[`Input component  should match the snapshot 10`] = `
 }
 
 .c3 {
-  font-size: 1.5em;
   pointer-events: none;
   color: #4c4c4c;
 }
@@ -1944,6 +1940,7 @@ exports[`Input component  should match the snapshot 10`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-9"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}

@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
-import { FieldGroup, shadow } from '../shared';
-
+import { FieldGroup, shadow, uniqId } from '../shared';
 import { colors, spacing } from '../shared/theme';
 
 import {
@@ -14,6 +13,7 @@ import {
   TextInput,
 } from '../Input/sub-components';
 
+const ID_GENERATOR = uniqId('dropdown-');
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
@@ -41,7 +41,6 @@ const DropInput = styled(TextInput)`
 const ArrowDown = styled(Icon).attrs({
   name: 'keyboard_arrow_down',
 })`
-  font-size: 1.5em;
   pointer-events: none;
 
   ${({
@@ -176,6 +175,7 @@ const Dropdown = ({
   onChange,
   autocomplete,
   theme,
+  id,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -194,6 +194,8 @@ const Dropdown = ({
 
     return changes;
   };
+
+  const [_id] = useState(id || ID_GENERATOR.next().value);
 
   const inputFilter = value =>
     items.filter(
@@ -229,9 +231,9 @@ const Dropdown = ({
               {label && (
                 <InputLabel
                   {...getLabelProps()}
-                  onClick={() => openMenu()}
                   error={error}
                   disabled={disabled}
+                  htmlFor={_id}
                 >
                   {label}
                   {required && <RequiredMark>*</RequiredMark>}
@@ -252,6 +254,7 @@ const Dropdown = ({
                       disabled={disabled}
                       text={_buttonLabel}
                       theme={theme}
+                      id={_id}
                     />
                     <InputArrowDown theme={theme} />
                   </DropContainer>
@@ -287,6 +290,7 @@ const Dropdown = ({
                     text={_buttonLabel}
                     selectedItem={selectedItem}
                     theme={theme}
+                    id={_id}
                   >
                     {_buttonLabel}
                     <ArrowDown theme={theme} />
@@ -333,6 +337,7 @@ Dropdown.defaultProps = {
   placeholder: 'Select an option',
   required: false,
   selectedItem: '',
+  id: '',
   theme: { colors, spacing },
 };
 
@@ -351,6 +356,7 @@ Dropdown.propTypes = {
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
   label: PropTypes.string,
+  id: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
