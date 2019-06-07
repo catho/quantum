@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
-import Colors from '../Colors';
-import { FieldGroup } from '../shared';
+import { FieldGroup, shadow } from '../shared';
 
-import { spacing } from '../shared/theme';
+import { colors, spacing } from '../shared/theme';
 
 import {
   InputLabel,
@@ -25,15 +24,38 @@ const DropInput = styled(TextInput)`
   justify-content: space-between;
 
   ${({ text }) => !text && 'flex-direction: row-reverse;'};
-  ${({ selectedItem }) => !selectedItem && `color: ${Colors.BLACK[400]}`};
+  ${({
+    selectedItem,
+    theme: {
+      colors: {
+        neutral: { 500: neutral500 },
+      },
+    },
+  }) =>
+    !selectedItem &&
+    `
+    color: ${neutral500};
+  `};
 `;
 
 const ArrowDown = styled(Icon).attrs({
   name: 'keyboard_arrow_down',
 })`
-  color: ${Colors.BLACK['700']};
   font-size: 1.5em;
   pointer-events: none;
+
+  ${({
+    selectedItem,
+    theme: {
+      colors: {
+        neutral: { 700: neutral700 },
+      },
+    },
+  }) =>
+    !selectedItem &&
+    `
+    color: ${neutral700};
+  `};
 `;
 
 const InputArrowDown = styled(ArrowDown)`
@@ -43,10 +65,7 @@ const InputArrowDown = styled(ArrowDown)`
 `;
 
 const DropList = styled.ul`
-  background-color: ${Colors.WHITE};
   border-radius: 4px;
-  border: solid 1.5px ${Colors.BLACK[100]};
-  box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
   box-sizing: border-box;
   list-style: none;
   max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
@@ -56,32 +75,54 @@ const DropList = styled.ul`
   width: 100%;
   z-index: 9999;
 
-  ${({
-    theme: {
+  ${({ theme }) => {
+    const {
       spacing: { xxsmall },
-    },
-  }) => `
-    margin-top: ${xxsmall}px;
-  `}
+      colors: {
+        neutral: { 100: neutral100, 300: neutral300 },
+      },
+    } = theme;
+
+    return `
+      background-color: ${neutral100};
+      border: solid 1.5px ${neutral100};
+      margin-top: ${xxsmall}px;
+      ${shadow(5, neutral300)({ theme })};
+    `;
+  }}
 `;
 
 const CheckIcon = styled(Icon).attrs({
   name: 'check',
 })`
-  color: ${Colors.BLUE['500']};
+  ${({
+    selectedItem,
+    theme: {
+      colors: {
+        primary: { 500: primary },
+      },
+    },
+  }) =>
+    !selectedItem &&
+    `
+    color: ${primary};
+  `}
 `;
 
 const DropItem = styled.li`
-  background-color: ${Colors.WHITE};
-  border-bottom: solid 1.5px ${Colors.BLACK[100]};
   box-sizing: border-box;
   cursor: pointer;
 
   ${({
     theme: {
       spacing: { xsmall, small },
+      colors: {
+        neutral: { 100: neutral100, 300: neutral300 },
+      },
     },
   }) => `
+    background-color: ${neutral100};
+    border-bottom: solid 1.5px ${neutral300};
     padding: ${xsmall * 1.125}px ${small}px;
   `}
 
@@ -90,7 +131,15 @@ const DropItem = styled.li`
   }
 
   &[aria-selected='true'] {
-    background-color: ${Colors.BLUE[200]};
+    ${({
+      theme: {
+        colors: {
+          primary: { 100: primary },
+        },
+      },
+    }) => `
+      background-color: ${primary};
+    `}
   }
 
   ${({ isSelected }) =>
@@ -181,17 +230,18 @@ const Dropdown = ({
                 <>
                   <DropContainer>
                     <DropInput
-                      style={{ cursor: 'inherit' }}
                       {...getInputProps({
                         isOpen,
                         placeholder,
                         onClick: openMenu,
                       })}
+                      style={{ cursor: 'inherit' }}
                       error={error}
                       disabled={disabled}
                       text={_buttonLabel}
+                      theme={theme}
                     />
-                    <InputArrowDown />
+                    <InputArrowDown theme={theme} />
                   </DropContainer>
 
                   {filteredInput.length > 0 && (
@@ -222,9 +272,10 @@ const Dropdown = ({
                     error={error}
                     text={_buttonLabel}
                     selectedItem={selectedItem}
+                    theme={theme}
                   >
                     {_buttonLabel}
-                    <ArrowDown />
+                    <ArrowDown theme={theme} />
                   </DropInput>
 
                   {isOpen && (
@@ -266,7 +317,7 @@ Dropdown.defaultProps = {
   placeholder: 'Select an option',
   required: false,
   selectedItem: '',
-  theme: { spacing },
+  theme: { colors, spacing },
 };
 
 const itemPropType = PropTypes.oneOfType([
@@ -289,6 +340,7 @@ Dropdown.propTypes = {
   required: PropTypes.bool,
   selectedItem: itemPropType,
   theme: PropTypes.shape({
+    colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
 };
