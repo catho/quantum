@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from 'react';
+import React, { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import HiddenInput from '../shared/HiddenInput';
@@ -61,7 +61,7 @@ const CheckboxButton = ({
     CheckboxGroupContext,
   );
 
-  const _id = id || useMemo(() => ID_GENERATOR.next().value, [name]);
+  const [_id] = useState(id || ID_GENERATOR.next().value);
 
   let checkSkin;
 
