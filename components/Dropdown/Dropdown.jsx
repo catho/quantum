@@ -55,13 +55,20 @@ const ArrowDown = styled(Icon).attrs({
     !selectedItem &&
     `
     color: ${neutral700};
-  `};
+  `}
 `;
 
 const InputArrowDown = styled(ArrowDown)`
   position: absolute;
-  top: 12px;
-  right: 14px;
+
+  ${({
+    theme: {
+      spacing: { small, medium },
+    },
+  }) => `
+    top: ${small}px;
+    right: ${medium * 0.875}px;
+  `}
 `;
 
 const DropList = styled.ul`
