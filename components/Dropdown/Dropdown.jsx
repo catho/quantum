@@ -5,6 +5,9 @@ import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import Colors from '../Colors';
 import { FieldGroup } from '../shared';
+
+import { spacing } from '../shared/theme';
+
 import {
   InputLabel,
   InputErrorMessage,
@@ -46,13 +49,20 @@ const DropList = styled.ul`
   box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
   box-sizing: border-box;
   list-style: none;
-  margin-top: 4px;
   max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
   overflow: auto;
   padding: 0;
   position: absolute;
   width: 100%;
   z-index: 9999;
+
+  ${({
+    theme: {
+      spacing: { xxsmall },
+    },
+  }) => `
+    margin-top: ${xxsmall}px;
+  `}
 `;
 
 const CheckIcon = styled(Icon).attrs({
@@ -66,8 +76,14 @@ const DropItem = styled.li`
   border-bottom: solid 1.5px ${Colors.BLACK[100]};
   box-sizing: border-box;
   cursor: pointer;
-  height: ${ITEM_HEIGHT};
-  padding: 10px 15px;
+
+  ${({
+    theme: {
+      spacing: { xsmall, small },
+    },
+  }) => `
+    padding: ${xsmall * 1.125}px ${small}px;
+  `}
 
   :last-child {
     border-bottom-width: 0;
@@ -103,6 +119,7 @@ const Dropdown = ({
   selectedItem,
   onChange,
   autocomplete,
+  theme,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -178,9 +195,10 @@ const Dropdown = ({
                   </DropContainer>
 
                   {filteredInput.length > 0 && (
-                    <DropList>
+                    <DropList theme={theme}>
                       {filteredInput.map(item => (
                         <DropItem
+                          theme={theme}
                           {...getItemProps({
                             item,
                             isSelected: _isEqual(selectedItem, item),
@@ -210,9 +228,10 @@ const Dropdown = ({
                   </DropInput>
 
                   {isOpen && (
-                    <DropList>
+                    <DropList theme={theme}>
                       {items.map(item => (
                         <DropItem
+                          theme={theme}
                           {...getItemProps({
                             item,
                             isSelected: _isEqual(selectedItem, item),
@@ -247,6 +266,7 @@ Dropdown.defaultProps = {
   placeholder: 'Select an option',
   required: false,
   selectedItem: '',
+  theme: { spacing },
 };
 
 const itemPropType = PropTypes.oneOfType([
@@ -268,6 +288,9 @@ Dropdown.propTypes = {
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   selectedItem: itemPropType,
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+  }),
 };
 
 export default Dropdown;
