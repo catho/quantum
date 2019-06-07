@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { FieldGroup } from '../shared';
-import uniqId from '../shared/uniqId';
+import { FieldGroup, uniqId } from '../shared';
 import {
   InputLabel,
   InputErrorMessage,

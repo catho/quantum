@@ -191,12 +191,12 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
 );
 
 List.propTypes = {
+  selectedItem: PropTypes.shape(itemPropType).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }).isRequired,
   items: PropTypes.arrayOf(itemPropType).isRequired,
-  selectedItem: PropTypes.shape(itemPropType).isRequired,
   getItemProps: PropTypes.func.isRequired,
 };
 
@@ -344,29 +344,29 @@ const Dropdown = ({
 Dropdown.defaultProps = {
   autocomplete: false,
   disabled: false,
-  error: '',
-  items: [],
-  label: '',
-  onChange: () => {},
-  placeholder: 'Select an option',
   required: false,
-  selectedItem: '',
+  error: '',
   id: '',
+  label: '',
+  placeholder: 'Select an option',
+  selectedItem: '',
+  items: [],
+  onChange: () => {},
   theme: { colors, spacing },
 };
 
 Dropdown.propTypes = {
   autocomplete: PropTypes.bool,
   disabled: PropTypes.bool,
+  required: PropTypes.bool,
   error: PropTypes.string,
+  id: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  selectedItem: itemPropType,
+  onChange: PropTypes.func,
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
-  label: PropTypes.string,
-  id: PropTypes.string,
-  onChange: PropTypes.func,
-  placeholder: PropTypes.string,
-  required: PropTypes.bool,
-  selectedItem: itemPropType,
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
