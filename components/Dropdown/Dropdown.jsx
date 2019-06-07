@@ -23,18 +23,17 @@ const DropInput = styled(TextInput)`
   display: flex;
   justify-content: space-between;
 
-  ${({ text }) => !text && 'flex-direction: row-reverse;'};
   ${({
     selectedItem,
+    text,
     theme: {
       colors: {
         neutral: { 500: neutral500 },
       },
     },
-  }) =>
-    !selectedItem &&
-    `
-    color: ${neutral500};
+  }) => `
+    ${!text ? 'flex-direction: row-reverse;' : ''}
+    ${!selectedItem ? `color: ${neutral500};` : ''}
   `};
 `;
 
