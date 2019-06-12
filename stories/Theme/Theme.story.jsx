@@ -13,6 +13,7 @@ import { colors, breakpoints } from '../../components/shared/theme';
 const Details = styled.details`
   margin-top: 10px;
 `;
+
 const Summary = styled.summary`
   cursor: pointer;
   &::-webkit-details-marker {
@@ -141,7 +142,10 @@ storiesOf('Foundation', module).add('Theme', () => (
         <Summary>
           <code>gutter</code>
         </Summary>
-        <p>gutter</p>
+        <p>
+          Gutter is a default value used for grid gap and spacing property of
+          the default theme.
+        </p>
       </Details>
 
       <Details>
