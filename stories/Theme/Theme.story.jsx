@@ -8,7 +8,12 @@ import {
   Table,
 } from '@catho/quantum-storybook-ui';
 
-import { colors, breakpoints } from '../../components/shared/theme';
+import {
+  colors,
+  breakpoints,
+  spacing,
+  components,
+} from '../../components/shared/theme';
 
 const Summary = styled.summary`
   cursor: pointer;
@@ -168,8 +173,9 @@ storiesOf('Foundation', module).add('Theme', () => (
           <code>gutter</code>
         </Summary>
         <p>
-          Gutter is a default value used for grid gap and spacing property of
-          the default theme.
+          Gutter is a default value used in grid gap and spacing property of the
+          default theme. The <strong>default value is 8</strong> and it's used
+          to dictates the spacing of the components.
         </p>
       </Details>
 
@@ -177,21 +183,70 @@ storiesOf('Foundation', module).add('Theme', () => (
         <Summary>
           <code>baseFontSize</code>
         </Summary>
-        <p>baseFontSize</p>
+        <p>
+          The <code>font-size</code> of the components is calculed based on a
+          default value that is <strong>16</strong>, if you change this value,
+          all the "font-sizes" will be affected.
+        </p>
       </Details>
 
       <Details>
         <Summary>
           <code>spacing</code>
         </Summary>
-        <p>spacing</p>
+        <p>
+          Used in several components the <code>spacing</code> object have 9
+          predefined values.
+        </p>
+        <p>The spacings name and values are:</p>
+        <Table>
+          <thead>
+            <th style={{ width: 100 }}>name</th>
+            <th>value</th>
+          </thead>
+          <tbody>
+            {Object.entries(spacing).map(([name, size]) => (
+              <tr>
+                <td>{name}</td>
+                <td>{size}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+        <em>
+          All of them is calculed using the gutter as a base value, so, if you
+          change the gutter value, the spacing object will be affected.
+        </em>
       </Details>
 
       <Details>
         <Summary>
           <code>components</code>
         </Summary>
-        <p>components</p>
+        <p>
+          The components object holds components that have skins, the skins
+          object are relationed with the "skin" prop of the components that have
+          it.
+        </p>
+        <p>Currently components that have skins are:</p>
+        <ul>
+          {Object.keys(components)
+            .sort()
+            .map(component => (
+              <li>{component}</li>
+            ))}
+        </ul>
+
+        <p>Here's the components object:</p>
+        <code
+          style={{
+            whiteSpace: 'pre-wrap',
+            lineHeight: 1.5,
+            width: '100%',
+          }}
+        >
+          "badge": {JSON.stringify(components.badge, null, 2)}
+        </code>
       </Details>
     </StoryContainer>
   </>
