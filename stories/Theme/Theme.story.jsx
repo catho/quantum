@@ -10,15 +10,38 @@ import {
 
 import { colors, breakpoints } from '../../components/shared/theme';
 
-const Details = styled.details`
-  margin-top: 10px;
-`;
-
 const Summary = styled.summary`
   cursor: pointer;
+  position: relative;
+  padding-left: 24px;
   &::-webkit-details-marker {
     width: 8px;
     height: 8px;
+    display: none;
+  }
+
+  &:before {
+    content: 'add';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+  }
+`;
+
+const Details = styled.details`
+  margin-top: 10px;
+
+  &[open] {
+    ${Summary} {
+      &:before {
+        content: 'remove';
+      }
+    }
   }
 `;
 
@@ -56,7 +79,7 @@ storiesOf('Foundation', module).add('Theme', () => (
         structured our theme with those props:
       </p>
 
-      <Details open="true">
+      <Details open>
         <Summary>
           <code>breakpoints</code>
         </Summary>
@@ -69,16 +92,18 @@ storiesOf('Foundation', module).add('Theme', () => (
         <p>
           Each breakpoint is defined by an object wich contains 2 properties:{' '}
           <Table>
-            <tr>
-              <th>width</th>
-              <td>responsive behavior starts from this</td>
-            </tr>
-            <tr>
-              <th>columns</th>
-              <td>
-                define how many columns the respective breakpoint will have
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>width</th>
+                <td>responsive behavior starts from this</td>
+              </tr>
+              <tr>
+                <th>columns</th>
+                <td>
+                  define how many columns the respective breakpoint will have
+                </td>
+              </tr>
+            </tbody>
           </Table>
         </p>
 
@@ -94,7 +119,7 @@ storiesOf('Foundation', module).add('Theme', () => (
         </code>
       </Details>
 
-      <Details open="true">
+      <Details open>
         <Summary>
           <code>colors</code>
         </Summary>
