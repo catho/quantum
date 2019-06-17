@@ -174,8 +174,8 @@ storiesOf('Foundation', module).add('Theme', () => (
         </Summary>
         <p>
           Gutter is a default value used in grid gap and spacing property of the
-          default theme. The <strong>default value is 8</strong> and it's used
-          to dictates the spacing of the components.
+          default theme. The <strong>default value is 8</strong> and it&apos;s
+          used to dictates the spacing of the components.
         </p>
       </Details>
 
@@ -186,7 +186,7 @@ storiesOf('Foundation', module).add('Theme', () => (
         <p>
           The <code>font-size</code> of the components is calculed based on a
           default value that is <strong>16</strong>, if you change this value,
-          all the "font-sizes" will be affected.
+          all the &quot;font-sizes&quot; will be affected.
         </p>
       </Details>
 
@@ -213,6 +213,10 @@ storiesOf('Foundation', module).add('Theme', () => (
             ))}
           </tbody>
         </Table>
+        <p>
+          Margins and paddings are some of the properties that use the spacing
+          object.
+        </p>
         <em>
           All of them is calculed using the gutter as a base value, so, if you
           change the gutter value, the spacing object will be affected.
@@ -225,8 +229,8 @@ storiesOf('Foundation', module).add('Theme', () => (
         </Summary>
         <p>
           The components object holds components that have skins, the skins
-          object are relationed with the "skin" prop of the components that have
-          it.
+          object are relationed with the &quot;skin&quot; prop of the components
+          that have it.
         </p>
         <p>Currently components that have skins are:</p>
         <ul>
@@ -237,7 +241,7 @@ storiesOf('Foundation', module).add('Theme', () => (
             ))}
         </ul>
 
-        <p>Here's the components object:</p>
+        <p>Here&apos;s the components object:</p>
         <code
           style={{
             whiteSpace: 'pre-wrap',
@@ -245,7 +249,7 @@ storiesOf('Foundation', module).add('Theme', () => (
             width: '100%',
           }}
         >
-          "badge": {JSON.stringify(components.badge, null, 2)}
+          &quot;badge&quot;: {JSON.stringify(components.badge, null, 2)}
         </code>
       </Details>
     </StoryContainer>
