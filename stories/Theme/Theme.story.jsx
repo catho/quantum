@@ -84,7 +84,7 @@ storiesOf('Foundation', module).add('Theme', () => (
         structured our theme with those props:
       </p>
 
-      <Details open>
+      <Details>
         <Summary>
           <code>breakpoints</code>
         </Summary>
@@ -124,7 +124,7 @@ storiesOf('Foundation', module).add('Theme', () => (
         </code>
       </Details>
 
-      <Details open>
+      <Details>
         <Summary>
           <code>colors</code>
         </Summary>
@@ -173,9 +173,9 @@ storiesOf('Foundation', module).add('Theme', () => (
           <code>gutter</code>
         </Summary>
         <p>
-          Gutter is a default value used in grid gap and spacing property of the
-          default theme. The <strong>default value is 8</strong> and it&apos;s
-          used to dictates the spacing of the components.
+          Is the default value used in <code>{'<Grid />'}</code>, to generate
+          and manipulate the grid system properties, and spacing property of the
+          default theme. The <strong>value is 8</strong>.
         </p>
       </Details>
 
@@ -184,9 +184,9 @@ storiesOf('Foundation', module).add('Theme', () => (
           <code>baseFontSize</code>
         </Summary>
         <p>
-          The <code>font-size</code> of the components is calculed based on a
-          default value that is <strong>16</strong>, if you change this value,
-          all the &quot;font-sizes&quot; will be affected.
+          The <code>font-size</code> property of a component is calculed based
+          on a value that is <strong>16</strong>, by default. Changing this
+          value will affect all library.
         </p>
       </Details>
 
@@ -195,11 +195,17 @@ storiesOf('Foundation', module).add('Theme', () => (
           <code>spacing</code>
         </Summary>
         <p>
-          Used in several components the <code>spacing</code> object have 9
-          predefined values.
+          Present in several components, the <code>spacing</code> object has 9
+          predefined values and should be used to set margins and paddings.
         </p>
-        <p>The spacings name and values are:</p>
+        <p>The spacing names and values are:</p>
         <Table>
+          <caption
+            style={{ captionSide: 'bottom', fontSize: 'small', padding: 8 }}
+          >
+            All values are calculated using the gutter as a base value so if you
+            change the gutter value, the spacing object will be affected.
+          </caption>
           <thead>
             <th style={{ width: 100 }}>name</th>
             <th>value</th>
@@ -213,14 +219,6 @@ storiesOf('Foundation', module).add('Theme', () => (
             ))}
           </tbody>
         </Table>
-        <p>
-          Margins and paddings are some of the properties that use the spacing
-          object.
-        </p>
-        <em>
-          All of them is calculed using the gutter as a base value, so, if you
-          change the gutter value, the spacing object will be affected.
-        </em>
       </Details>
 
       <Details>
@@ -228,20 +226,25 @@ storiesOf('Foundation', module).add('Theme', () => (
           <code>components</code>
         </Summary>
         <p>
-          The components object holds components that have skins, the skins
-          object are relationed with the &quot;skin&quot; prop of the components
-          that have it.
+          Each component inside this library may have a prop to set the colors
+          used inside itself. That prop is called <code>skin</code> and can be
+          changed respectively, according to each component, inside the
+          <code>components</code> theme property.
         </p>
         <p>Currently components that have skins are:</p>
         <ul>
           {Object.keys(components)
             .sort()
-            .map(component => (
-              <li>{component}</li>
+            .map(([firstLetter, ...rest]) => (
+              <li>
+                <code>{`<${firstLetter.toUpperCase()}${rest.join(
+                  '',
+                )} />`}</code>
+              </li>
             ))}
         </ul>
 
-        <p>Here&apos;s the components object:</p>
+        <p>Here&apos;s a example of the components object:</p>
         <code
           style={{
             whiteSpace: 'pre-wrap',
