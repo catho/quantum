@@ -17,24 +17,25 @@ import {
 
 const Summary = styled.summary`
   cursor: pointer;
-  position: relative;
   padding-left: 24px;
+  position: relative;
+
   &::-webkit-details-marker {
-    width: 8px;
-    height: 8px;
     display: none;
+    height: 8px;
+    width: 8px;
   }
 
   &:before {
     content: 'add';
+    font-family: 'Material Icons';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    left: 0;
+    line-height: 1;
     position: absolute;
     top: 6px;
-    left: 0;
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1;
   }
 `;
 
@@ -51,8 +52,8 @@ const Details = styled.details`
 `;
 
 const ColorSquare = styled.span`
-  position: relative;
   padding-left: 24px;
+  position: relative;
 
   &:before {
     background-color: ${({ children }) => children};
