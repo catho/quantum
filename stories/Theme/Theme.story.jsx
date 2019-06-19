@@ -73,15 +73,15 @@ storiesOf('Foundation', module).add('Theme', () => (
     <Heading title="Theme">
       All Quantum components are initialized with the default Quantum theme.
       <br />
-      Here we will describe wich properties are available on it.
+      Here we will describe which properties are available on it.
     </Heading>
 
     <StoryContainer>
       <Title>Quantum Theme</Title>
 
       <p>
-        The theme has properties wich, some of them, are used in components. We
-        structured our theme with those props:
+        The theme has properties which, some of them, are used in components.
+        It&apos;s structured with these ones:
       </p>
 
       <Details>
@@ -92,10 +92,10 @@ storiesOf('Foundation', module).add('Theme', () => (
           Used at <code>{'<Grid />'}</code> to generate and manage the grid
           system behavior in all defined screen sizes named as{' '}
           <code>xsmall</code>, <code>small</code>, <code>medium</code>,{' '}
-          <code>large</code> and <code>xlarge</code>.
+          <code>large</code>, and <code>xlarge</code>.
         </p>
         <p>
-          Each breakpoint is defined by an object wich contains 2 properties:{' '}
+          Each breakpoint is defined by an object which contains 2 properties:{' '}
           <Table>
             <tbody>
               <tr>
@@ -203,8 +203,8 @@ storiesOf('Foundation', module).add('Theme', () => (
           <caption
             style={{ captionSide: 'bottom', fontSize: 'small', padding: 8 }}
           >
-            All values are calculated using the gutter as a base value so if you
-            change the gutter value, the spacing object will be affected.
+            All values are calculated using the gutter as a base value. If you
+            change it&apos;s value, the spacing object will be affected.
           </caption>
           <thead>
             <th style={{ width: 100 }}>name</th>
@@ -226,12 +226,12 @@ storiesOf('Foundation', module).add('Theme', () => (
           <code>components</code>
         </Summary>
         <p>
-          Each component inside this library may have a prop to set the colors
-          used inside itself. That prop is called <code>skin</code> and can be
-          changed respectively, according to each component, inside the
+          Each component may have a prop to set the colors used inside itself.
+          That prop is called <code>skin</code> and can be changed respectively,
+          according to each component, inside the
           <code>components</code> theme property.
         </p>
-        <p>Currently components that have skins are:</p>
+        <p>Currently, these components have skins:</p>
         <ul>
           {Object.keys(components)
             .sort()
@@ -244,7 +244,7 @@ storiesOf('Foundation', module).add('Theme', () => (
             ))}
         </ul>
 
-        <p>Here&apos;s a example of the components object:</p>
+        <p>Here&apos;s an example of the components object:</p>
         <code
           style={{
             whiteSpace: 'pre-wrap',
