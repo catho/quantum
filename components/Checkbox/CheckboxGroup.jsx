@@ -5,13 +5,18 @@ import { FieldGroup, ErrorMessage } from '../shared';
 import Checkbox from './Checkbox';
 import CheckboxButton from './CheckboxButton';
 import CheckboxGroupContext from './CheckboxGroupContext';
+import { colors, spacing } from '../shared/theme';
 
 const Group = styled(FieldGroup)`
   position: relative;
 `;
 
 const ErrorLabel = styled(ErrorMessage)`
-  margin-left: -3px;
+  margin-left: ${({
+    theme: {
+      spacing: { xxxsmall },
+    },
+  }) => `-${xxxsmall}px`};
 `;
 
 ErrorLabel.displayName = 'ErrorLabel';
@@ -33,7 +38,7 @@ class CheckboxGroup extends React.Component {
   };
 
   render() {
-    const { children, error, options, type, inline } = this.props;
+    const { children, error, options, type, inline, theme } = this.props;
     const ItemType = type === 'checkbox' ? Checkbox : CheckboxButton;
 
     const checkboxes =
@@ -51,7 +56,7 @@ class CheckboxGroup extends React.Component {
         >
           {checkboxes}
         </CheckboxGroupContext.Provider>
-        {error && <ErrorLabel>{error}</ErrorLabel>}
+        {error && <ErrorLabel theme={theme}>{error}</ErrorLabel>}
       </Group>
     );
   }
@@ -59,18 +64,6 @@ class CheckboxGroup extends React.Component {
 
 CheckboxGroup.Checkbox = Checkbox;
 CheckboxGroup.Button = CheckboxButton;
-
-/**
- * Group for Checkbox components.
- */
-CheckboxGroup.defaultProps = {
-  children: undefined,
-  error: undefined,
-  inline: false,
-  onChange: () => {},
-  options: [],
-  type: 'checkbox',
-};
 
 CheckboxGroup.propTypes = {
   children: PropTypes.oneOfType([
@@ -91,6 +84,26 @@ CheckboxGroup.propTypes = {
     }),
   ),
   type: PropTypes.oneOf(['checkbox', 'button']),
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
+};
+
+/**
+ * Group for Checkbox components.
+ */
+CheckboxGroup.defaultProps = {
+  children: undefined,
+  error: undefined,
+  inline: false,
+  onChange: () => {},
+  options: [],
+  type: 'checkbox',
+  theme: {
+    colors,
+    spacing,
+  },
 };
 
 export default CheckboxGroup;

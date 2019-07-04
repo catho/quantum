@@ -2,7 +2,6 @@ import React from 'react';
 import Card from '../../../components/Card';
 import Tag from '../../../components/Tag';
 import Button from '../../../components/Button';
-import Colors from '../../../components/Colors';
 
 const JobAdCard = () => (
   <>
@@ -11,7 +10,8 @@ const JobAdCard = () => (
         <Card.HeaderText>
           <Card.Title small>Administrador</Card.Title>
           <Card.Description small>
-            <Tag text="Hortolândia – SP" /> <Tag text="R$ 1.200" />
+            <Tag text="Hortolândia – SP" skin="primary" />{' '}
+            <Tag skin="primary" text="R$ 1.200" />
           </Card.Description>
         </Card.HeaderText>
         <Card.Thumbnail rounded src="#" alt="" />
@@ -20,7 +20,7 @@ const JobAdCard = () => (
         Irá atuar com Atendimento e recepção de clientes para reuniões e eventos
         agendados na empresa. Experiência em atendimento e recepção de clientes{' '}
         {/* eslint-disable-next-line */}
-        <a href="#" style={{ color: Colors.BLUE['500'], fontWeight: '700' }}>
+        <a href="#" style={{ fontWeight: '700' }}>
           {' '}
           continuar lendo…
         </a>
@@ -54,7 +54,7 @@ const JobAd = () => (
       <Card.Content>
         Irá atuar com Atendimento e recepção de clientes para reuniões e eventos
         agendados na empresa. Experiência em atendimento e recepção de clientes{' '}
-        <a href="#" style={{ color: Colors.BLUE['500'], fontWeight: '700' }}>
+        <a href="#" style={{ fontWeight: '700' }}>
           continuar lendo…
         </a>
       </Card.Content>

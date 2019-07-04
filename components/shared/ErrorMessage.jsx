@@ -1,10 +1,30 @@
 import styled from 'styled-components';
-import Colors from '../Colors';
+import PropTypes from 'prop-types';
+import { colors } from './theme';
 
-export default styled.div`
-  color: ${Colors.ERROR['900']};
+const ErrorMessage = styled.span`
+  color: ${({
+    theme: {
+      colors: {
+        error: { 900: errorColor },
+      },
+    },
+  }) => errorColor};
   font-size: 14px;
   cursor: text;
   font-style: italic;
   font-weight: 600;
+  display: block;
 `;
+
+ErrorMessage.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+  }),
+};
+
+ErrorMessage.defaultProps = {
+  theme: { colors },
+};
+
+export default ErrorMessage;

@@ -9,35 +9,31 @@ exports[`<Dots /> Snapshot should match snapshot 1`] = `
 
 .c1 {
   position: relative;
+}
+
+.c1,
+.c1:after,
+.c1:before {
   background-color: #cccccc;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
   width: 5px;
+}
+
+.c1:after,
+.c1:before {
+  content: '';
+  position: absolute;
+  top: 0;
 }
 
 .c1:after {
   left: 8px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
 }
 
 .c1:before {
   left: 16px;
-  content: '';
-  position: absolute;
-  tpo: 0;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
 }
 
 <div

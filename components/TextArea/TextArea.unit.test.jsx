@@ -23,7 +23,7 @@ describe('TextArea component', () => {
 
   it('should has a required signal when "required" and "label" props are set ', () => {
     const component = shallow(<TextArea label="Text label" required />);
-    expect(component.find('TextAreaLabel').text()).toMatch('*');
+    expect(component.find('InputLabel').text()).toMatch('*');
   });
 
   it('should have a placeholder when "placeholder" prop is set ', () => {
@@ -47,7 +47,7 @@ describe('TextArea component', () => {
   it('should have a error text when "error" prop is set', () => {
     const errorMessageContent = 'Error message';
     const component = shallow(<TextArea error={errorMessageContent} />);
-    const errorMessage = component.find('TextAreaErrorMessage').text();
+    const errorMessage = component.find('InputErrorMessage').text();
     expect(errorMessage).toMatch(errorMessageContent);
   });
 
@@ -56,7 +56,7 @@ describe('TextArea component', () => {
       const id = 'input-id';
       const wrapper = shallow(<TextArea label="Text label" id={id} />);
       const input = wrapper.find('TextAreaTag');
-      const label = wrapper.find('TextAreaLabel');
+      const label = wrapper.find('InputLabel');
       const labelHtmlFor = label.prop('htmlFor');
       const inputId = input.prop('id');
 
@@ -66,7 +66,7 @@ describe('TextArea component', () => {
 
     it('should match label "htmlFor" label param and "input" param with generated id', () => {
       const wrapper = shallow(<TextArea label="Text label" value="foo" />);
-      const labelId = wrapper.find('TextAreaLabel').prop('htmlFor');
+      const labelId = wrapper.find('InputLabel').prop('htmlFor');
       const inputId = wrapper.find('TextAreaTag').prop('id');
 
       expect(labelId).toEqual(inputId);

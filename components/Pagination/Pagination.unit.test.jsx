@@ -76,7 +76,7 @@ describe('<Pagination />', () => {
           <Pagination totalPages={10} onPageClick={onPageClickMock} />,
         );
 
-        const page = wrapper.find('Page');
+        const page = wrapper.find('PageButton');
         page.at(0).simulate('click', { preventDefault: () => {} });
 
         expect(onPageClickMock).toHaveBeenCalled();
@@ -93,7 +93,7 @@ describe('<Pagination />', () => {
         );
 
         wrapper
-          .find('Page')
+          .find('PageButton')
           .at(2)
           .simulate('click');
 
@@ -179,7 +179,7 @@ describe('<Pagination />', () => {
       );
       expect(
         wrapper
-          .find('Page')
+          .find('PageButton')
           .at(0)
           .prop('href'),
       ).toBe('/?page=1');

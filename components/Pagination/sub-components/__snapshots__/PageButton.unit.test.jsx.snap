@@ -1,32 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Page /> Snapshot should match snapshot 1`] = `
+exports[`<PageButton /> Snapshot should match snapshot 1`] = `
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
-  border: 1px solid #cccccc;
   border-radius: 10px;
   box-sizing: border-box;
-  color: #4c4c4c;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
-  font-weight: normal;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
-  padding: 5px 8px;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
@@ -35,6 +28,13 @@ exports[`<Page /> Snapshot should match snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 4px;
+  padding: 4px 8px;
 }
 
 .c0:hover,
@@ -52,33 +52,26 @@ exports[`<Page /> Snapshot should match snapshot 1`] = `
 </a>
 `;
 
-exports[`<Page /> Snapshot should match snapshot with active prop 1`] = `
+exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
   border-radius: 10px;
   box-sizing: border-box;
-  color: #4c4c4c;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
-  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 4px;
   min-height: 40px;
   min-width: 40px;
   outline: none;
-  padding: 5px 8px;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
@@ -87,14 +80,20 @@ exports[`<Page /> Snapshot should match snapshot with active prop 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #FFFFFF;
+  background-color: #1355d0;
+  border: 1px solid #1355d0;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 4px;
+  padding: 4px 8px;
 }
 
 .c0:hover,
 .c0:focus {
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
+  background-color: #062ab3;
+  border-color: #062ab3;
+  color: #f2f2f2;
 }
 
 <a

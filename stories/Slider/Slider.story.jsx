@@ -70,6 +70,18 @@ storiesOf('Forms', module).add('Slider', () => (
               <Samples.Slider />
             </ColSample>
           </Row>
+          <Title as="h2">Disable</Title>
+          <Row>
+            <Col xsmall={2} small={4} medium={6}>
+              <CodeExample
+                code={Samples.BasicDisabledSlider.code}
+                showTitle={false}
+              />
+            </Col>
+            <ColSample xsmall={2} small={4} medium={6}>
+              <Samples.BasicDisabledSlider />
+            </ColSample>
+          </Row>
           <Title as="h2">Min & Max props</Title>
           <p>You can limit the available range to be selected</p>
           <Row>
