@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
+import { spacing, colors } from '../shared/theme';
 
 import Radio from './Radio';
 import RadioButton from './RadioButton';
@@ -13,7 +14,11 @@ const Group = styled(FieldGroup).attrs({
 `;
 
 const ErrorLabel = styled(ErrorMessage)`
-  margin-left: -3px;
+  margin-left: ${({
+    theme: {
+      spacing: { xxsmall },
+    },
+  }) => -xxsmall}px;
 `;
 
 ErrorLabel.displayName = 'ErrorLabel';
@@ -27,6 +32,7 @@ const RadioGroup = ({
   onChange,
   options,
   value,
+  theme,
   ...rest
 }) => {
   const commonProps = {
@@ -57,26 +63,13 @@ const RadioGroup = ({
   return (
     <Group {...rest}>
       {items}
-      {error && <ErrorLabel>{error}</ErrorLabel>}
+      {error && <ErrorLabel theme={theme}>{error}</ErrorLabel>}
     </Group>
   );
 };
 
 RadioGroup.Radio = Radio;
 RadioGroup.Button = RadioButton;
-
-/**
- * Group for Radio components.
- */
-RadioGroup.defaultProps = {
-  type: 'radio',
-  children: undefined,
-  error: undefined,
-  inline: false,
-  onChange: () => {},
-  options: [],
-  value: undefined,
-};
 
 RadioGroup.propTypes = {
   type: PropTypes.oneOf(['radio', 'button']),
@@ -97,6 +90,24 @@ RadioGroup.propTypes = {
   value: PropTypes.string,
   name: PropTypes.string.isRequired,
   error: PropTypes.string,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
+};
+
+/**
+ * Group for Radio components.
+ */
+RadioGroup.defaultProps = {
+  type: 'radio',
+  children: undefined,
+  error: undefined,
+  inline: false,
+  onChange: () => {},
+  options: [],
+  value: undefined,
+  theme: { colors, spacing },
 };
 
 export default RadioGroup;

@@ -3,98 +3,64 @@ import styled from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-import { ErrorMessage, Label, FieldGroup, INPUT_STYLE } from '../shared';
-import Colors from '../Colors';
+import { FieldGroup, uniqId } from '../shared';
 import Icon from '../Icon';
 import InputTypes from './InputTypes';
-import uniqId from '../shared/uniqId';
+import {
+  TextInput,
+  InputLabel,
+  HelperText,
+  RequiredMark,
+  InputErrorMessage,
+} from './sub-components';
+import { spacing, colors, baseFontSize } from '../shared/theme';
 
 const ID_GENERATOR = uniqId('input-');
-
-const {
-  default: DEFAULT_INPUT_STYLE,
-  LABEL_STYLE,
-  HELPER_TEXT_STYLE,
-  REQUIRED_MARK_STYLE,
-  ERROR_MESSAGE_STYLE,
-  AUTO_FILL_STYLE,
-} = INPUT_STYLE;
-
-const InputLabel = styled(Label)`
-  ${LABEL_STYLE}
-`;
-
-const InputTag = styled.input`
-  box-sizing: border-box;
-  margin-top: 8px;
-  padding-right: 42px;
-  &::-webkit-inner-spin-button,
-  &::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  ${DEFAULT_INPUT_STYLE};
-
-  ${({ searchable }) =>
-    searchable &&
-    `
-    padding: 10px 42px;
-  `}
-
-  ${({ password }) =>
-    password &&
-    `
-    padding-right: 28px;
-  `}
-
-  &::-webkit-calendar-picker-indicator {
-    display: none;
-  }
-
-  :-webkit-autofill {
-    ${AUTO_FILL_STYLE}
-  }
-`;
 
 const InputIcon = styled(Icon)`
   cursor: pointer;
   position: absolute;
-  right: 12px;
-  bottom: 10px;
-`;
-
-const InputSearchIcon = styled(InputIcon)`
-  left: 12px;
-`;
-
-const InputErrorIcon = styled(InputIcon)`
-  color: ${Colors.ERROR['500']};
-`;
-
-const InputErrorMessage = styled(ErrorMessage)`
-  ${ERROR_MESSAGE_STYLE}
-
-  ${({ helperText }) =>
-    helperText &&
-    `
-    padding-top: 2px;
+  ${({
+    theme: {
+      spacing: { xsmall, small },
+    },
+  }) => `
+    right: ${small}px;
+    bottom: ${xsmall * 1.25}px;
   `}
 `;
 
-const HelperText = styled.span`
-  ${HELPER_TEXT_STYLE}
+const InputSearchIcon = styled(InputIcon).attrs({ name: 'search' })`
+  pointer-events: none;
+  ${({
+    theme: {
+      spacing: { small },
+    },
+  }) => `left: ${small}px;`}
+`;
+
+const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
+  ${({
+    theme: {
+      colors: {
+        error: { 500: error500 },
+      },
+    },
+  }) => `color: ${error500};`}
 `;
 
 const DescriptionLabel = styled.span`
   cursor: text;
   display: block;
-  font-size: 14px;
-  padding: 0px 12px;
-`;
-
-const RequiredMark = styled.em`
-  ${REQUIRED_MARK_STYLE}
+  ${({
+    theme: {
+      spacing: { small },
+      baseFontSize: fontSize,
+    },
+  }) => `
+    font-size: ${fontSize * 0.875}px;
+    padding: 0 ${small}px;
+  `}
 `;
 
 const InputWrapper = styled.div`
@@ -104,10 +70,7 @@ const InputWrapper = styled.div`
 InputIcon.displayName = 'InputIcon';
 InputSearchIcon.displayName = 'InputSearchIcon';
 InputErrorIcon.displayName = 'InputErrorIcon';
-HelperText.displayName = 'HelperText';
 DescriptionLabel.displayName = 'DescriptionLabel';
-InputTag.displayName = 'InputTag';
-InputLabel.displayName = 'InputLabel';
 
 /** A text field component to get user text data */
 class Input extends React.Component {
@@ -152,10 +115,15 @@ class Input extends React.Component {
       required,
       value,
       onClean,
+      theme,
       ...rest
     } = this.props;
     const { type: typeState } = this.state;
+
     const _isSearchType = typeProp === 'search';
+    const _isPassword = typeProp === 'password';
+    const _hasValue = !!value;
+    const _hasIcon = error || _isPassword || _hasValue;
 
     return (
       <FieldGroup>
@@ -166,11 +134,11 @@ class Input extends React.Component {
           </InputLabel>
         )}
         {descriptionLabel && (
-          <DescriptionLabel>{descriptionLabel}</DescriptionLabel>
+          <DescriptionLabel theme={theme}>{descriptionLabel}</DescriptionLabel>
         )}
         <InputWrapper>
           {_isSearchType && (
-            <InputSearchIcon name="search" description={descriptionLabel} />
+            <InputSearchIcon description={descriptionLabel} theme={theme} />
           )}
           <MaskedInput
             {...rest}
@@ -179,26 +147,29 @@ class Input extends React.Component {
             type={typeState}
             value={value}
             render={(ref, props) => (
-              <InputTag
+              <TextInput
                 ref={ref}
                 error={error}
-                searchable={_isSearchType}
+                hasRightIcon={_hasIcon}
+                hasLeftIcon={_isSearchType}
                 {...props}
               />
             )}
           />
           {error && (
-            <InputErrorIcon name="error" description={descriptionLabel} />
+            <InputErrorIcon description={descriptionLabel} theme={theme} />
           )}
-          {typeProp === 'password' && !error && (
+          {_isPassword && !error && (
             <InputIcon
+              theme={theme}
               name={typeState === 'password' ? 'visibility' : 'visibility_off'}
               description={descriptionLabel}
               onClick={this._toggleInputType}
             />
           )}
-          {!!value && !error && (
+          {_hasValue && !_isPassword && !error && (
             <InputIcon
+              theme={theme}
               name="cancel"
               description={descriptionLabel}
               onClick={onClean}
@@ -206,27 +177,11 @@ class Input extends React.Component {
           )}
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
-        {error && (
-          <InputErrorMessage helperText={helperText}>{error}</InputErrorMessage>
-        )}
+        {error && <InputErrorMessage theme={theme}>{error}</InputErrorMessage>}
       </FieldGroup>
     );
   }
 }
-
-Input.defaultProps = {
-  error: '',
-  id: '',
-  label: '',
-  mask: val => Array(val.length).fill(/./),
-  type: 'text',
-  value: '',
-  helperText: '',
-  descriptionLabel: '',
-  required: false,
-  placeholder: '',
-  onClean: () => {},
-};
 
 Input.propTypes = {
   value: PropTypes.string,
@@ -260,6 +215,26 @@ Input.propTypes = {
     PropTypes.string,
   ]),
   onClean: PropTypes.func,
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    colors: PropTypes.object,
+    baseFontSize: PropTypes.number,
+  }),
+};
+
+Input.defaultProps = {
+  error: '',
+  id: '',
+  label: '',
+  mask: val => Array(val.length).fill(/./),
+  type: 'text',
+  value: '',
+  helperText: '',
+  descriptionLabel: '',
+  required: false,
+  placeholder: '',
+  onClean: () => {},
+  theme: { spacing, colors, baseFontSize },
 };
 
 Input.displayName = 'Input';

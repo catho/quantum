@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import ActionButton from './ActionButton';
 import Dots from './Dots';
-import Page from './Page';
+import PageButton from './PageButton';
 import pagination from '../utils/pagination';
 import uniqId from '../../shared/uniqId';
 
@@ -34,7 +34,7 @@ const Desktop = ({
       }
 
       return (
-        <Page
+        <PageButton
           aria-current={activePage === page ? 'page' : false}
           aria-label={`${
             activePage === page ? `${activePageAriaLabel}, ` : ''
@@ -45,7 +45,7 @@ const Desktop = ({
           href={handleHref(page)}
         >
           {page}
-        </Page>
+        </PageButton>
       );
     })}
 

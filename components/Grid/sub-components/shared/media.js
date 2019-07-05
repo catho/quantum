@@ -1,47 +1,46 @@
 import { css } from 'styled-components';
-import { BREAKPOINTS } from '../../../shared';
 
-const query = Object.keys(BREAKPOINTS).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (min-width: ${BREAKPOINTS[label].width}px) {
-      ${css(...args)};
-    }
-  `;
-  return acc;
-}, {});
+const query = breakpoints =>
+  Object.keys(breakpoints).reduce((acc, label) => {
+    acc[label] = (...style) => css`
+      @media (min-width: ${breakpoints[label].width || 0}px) {
+        ${css(...style)};
+      }
+    `;
+    return acc;
+  }, {});
 
-const hideQueries = {
-  xlarge: () => `
-    @media (min-width: ${BREAKPOINTS.xlarge.width + 1}px) {
-      display: none !important;
-    }
-  `,
-  large: () => `
-    @media (min-width: ${BREAKPOINTS.large.width + 1}px) and (max-width: ${
-    BREAKPOINTS.xlarge.width
-  }px) {
-      display: none !important;
-    }
-  `,
-  medium: () => `
-    @media (min-width: ${BREAKPOINTS.medium.width + 1}px) and (max-width: ${
-    BREAKPOINTS.large.width
-  }px) {
+const hideQueries = ({
+  small: { width: smallWidth },
+  medium: { width: mediumWidth },
+  large: { width: largeWidth },
+  xlarge: { width: xlargeWidth },
+}) => ({
+  xsmall: () => `
+    @media (max-width: ${smallWidth - 1}px) {
       display: none !important;
     }
   `,
   small: () => `
-    @media (min-width: ${BREAKPOINTS.small.width + 1}px) and (max-width: ${
-    BREAKPOINTS.medium.width
-  }px) {
+    @media (min-width: ${smallWidth}px) and (max-width: ${mediumWidth - 1}px) {
       display: none !important;
     }
   `,
-  xsmall: () => `
-    @media (max-width: ${BREAKPOINTS.small.width}px) {
+  medium: () => `
+    @media (min-width: ${mediumWidth}px) and (max-width: ${largeWidth - 1}px) {
       display: none !important;
     }
   `,
-};
+  large: () => `
+    @media (min-width: ${largeWidth}px) and (max-width: ${xlargeWidth - 1}px) {
+      display: none !important;
+    }
+  `,
+  xlarge: () => `
+    @media (min-width: ${xlargeWidth}px) {
+      display: none !important;
+    }
+  `,
+});
 
 export { query, hideQueries };

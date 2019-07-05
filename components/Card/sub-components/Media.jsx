@@ -1,14 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../../Colors';
+
+import { spacing, colors } from '../../shared/theme';
 
 const Wrapper = styled.div`
-  background-color: ${Colors.BLACK['200']};
-  margin-top: 12px;
   padding-bottom: 56.25%;
   position: relative;
   overflow: hidden;
+
+  ${({
+    theme: {
+      colors: {
+        neutral: { 300: neutral300 },
+      },
+      spacing: { small },
+    },
+  }) => `
+    margin-top: ${small}px;
+    background-color: ${neutral300};
+  `}
 `;
 
 const Image = styled.img`
@@ -18,8 +29,8 @@ const Image = styled.img`
   width: 100%;
 `;
 
-const Media = ({ className, style, ...props }) => (
-  <Wrapper className={className} style={style}>
+const Media = ({ className, style, theme, ...props }) => (
+  <Wrapper className={className} style={style} theme={theme}>
     <Image {...props} />
   </Wrapper>
 );
@@ -29,11 +40,19 @@ Media.displayName = 'Card.Media';
 Media.propTypes = {
   className: PropTypes.string,
   style: PropTypes.objectOf(PropTypes.string),
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
 };
 
 Media.defaultProps = {
   className: undefined,
   style: undefined,
+  theme: {
+    colors,
+    spacing,
+  },
 };
 
 export default Media;

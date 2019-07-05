@@ -21,15 +21,17 @@ describe('Button component', () => {
 
   describe('when there is a skin set', () => {
     it('should match secondary snapshot', () => {
+      const neutral = <Button skin="neutral">neutral</Button>;
       const primary = <Button skin="primary">primary</Button>;
-      const secondary = <Button skin="secondary">secondary</Button>;
-      const action = <Button skin="action">action</Button>;
-      const link = <Button skin="link">action</Button>;
+      const success = <Button skin="success">success</Button>;
+      const warning = <Button skin="warning">warning</Button>;
+      const error = <Button skin="error">error</Button>;
 
+      expect(renderer.create(neutral).toJSON()).toMatchSnapshot();
       expect(renderer.create(primary).toJSON()).toMatchSnapshot();
-      expect(renderer.create(secondary).toJSON()).toMatchSnapshot();
-      expect(renderer.create(action).toJSON()).toMatchSnapshot();
-      expect(renderer.create(link).toJSON()).toMatchSnapshot();
+      expect(renderer.create(success).toJSON()).toMatchSnapshot();
+      expect(renderer.create(warning).toJSON()).toMatchSnapshot();
+      expect(renderer.create(error).toJSON()).toMatchSnapshot();
     });
   });
 

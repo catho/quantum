@@ -9,23 +9,23 @@ exports[`TextArea component should match snapshots 1`] = `
 }
 
 .c1 {
-  background-color: #FFFFFF;
   border-radius: 4px;
-  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #4c4c4c;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -33,18 +33,33 @@ exports[`TextArea component should match snapshots 1`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c1:hover,
 .c1:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c1:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -73,23 +88,23 @@ exports[`TextArea component should match snapshots 2`] = `
 }
 
 .c1 {
-  background-color: #FFFFFF;
   border-radius: 4px;
-  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #4c4c4c;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -97,18 +112,33 @@ exports[`TextArea component should match snapshots 2`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c1:hover,
 .c1:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c1:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -136,24 +166,30 @@ exports[`TextArea component should match snapshots 3`] = `
   width: 100%;
 }
 
+.c1 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 12px 0;
+}
+
 .c2 {
-  background-color: #FFFFFF;
   border-radius: 4px;
-  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #4c4c4c;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -161,26 +197,33 @@ exports[`TextArea component should match snapshots 3`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -214,24 +257,34 @@ exports[`TextArea component should match snapshots 4`] = `
   width: 100%;
 }
 
+.c1 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 12px 0;
+}
+
+.c2 {
+  color: #ff2d4d;
+}
+
 .c3 {
-  background-color: #FFFFFF;
   border-radius: 4px;
-  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #4c4c4c;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -239,30 +292,33 @@ exports[`TextArea component should match snapshots 4`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c3:hover,
 .c3:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c3[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c1 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  padding: 8px 12px 0px;
-  font-weight: bold;
-}
-
-.c2 {
-  color: #ff2d4d;
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -302,23 +358,23 @@ exports[`TextArea component should match snapshots 5`] = `
 }
 
 .c1 {
-  background-color: #FFFFFF;
   border-radius: 4px;
-  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #4c4c4c;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -326,18 +382,33 @@ exports[`TextArea component should match snapshots 5`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c1:hover,
 .c1:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c1:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -366,23 +437,23 @@ exports[`TextArea component should match snapshots 6`] = `
 }
 
 .c1 {
-  background-color: #FFFFFF;
   border-radius: 4px;
-  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #4c4c4c;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   color: #999999;
   display: block;
   min-height: 108px;
@@ -391,18 +462,33 @@ exports[`TextArea component should match snapshots 6`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c1:hover,
 .c1:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
+}
+
+.c1:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -430,24 +516,35 @@ exports[`TextArea component should match snapshots 7`] = `
   width: 100%;
 }
 
-.c1 {
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
+.c2 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  display: block;
+  margin: 8px 12px 0;
   color: #4c4c4c;
+}
+
+.c1 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -455,27 +552,33 @@ exports[`TextArea component should match snapshots 7`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c1:hover,
 .c1:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c1[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c2 {
-  cursor: text;
-  display: block;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 600;
-  padding: 8px 12px 0px;
+.c1:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -507,24 +610,34 @@ exports[`TextArea component should match snapshots 8`] = `
   width: 100%;
 }
 
+.c2 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  display: block;
+  margin: 8px 12px 0;
+}
+
 .c1 {
-  background-color: #FFFFFF;
   border-radius: 4px;
-  border: 1.5px solid #999999;
   box-sizing: border-box;
-  color: #4c4c4c;
+  box-sizing: border-box;
   font-size: initial;
-  height: 44px;
-  min-height: 44px;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
   outline: none;
-  padding: 10px 12px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   border-color: #ff2d4d;
   display: block;
   min-height: 108px;
@@ -533,33 +646,33 @@ exports[`TextArea component should match snapshots 8`] = `
   transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
-.c1:hover,
-.c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c1:hover,
 .c1:focus {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c1[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c2 {
-  color: #ac001a;
-  font-size: 14px;
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
-  padding: 8px 12px 0px;
+.c1:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <div
@@ -575,10 +688,10 @@ exports[`TextArea component should match snapshots 8`] = `
     value=""
   />
   
-  <div
+  <span
     className="c2"
   >
     Error message
-  </div>
+  </span>
 </div>
 `;

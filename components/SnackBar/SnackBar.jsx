@@ -1,39 +1,91 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components';
-import PropTypes, { oneOf } from 'prop-types';
-import Colors from '../Colors';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 import Button from '../Button';
 import { Row, Col } from '../Grid';
 import uniqId from '../shared/uniqId';
+import {
+  components,
+  spacing,
+  colors,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 
 const ID_GENERATOR = uniqId('snackbar-dialog-');
 
-const a11yFocusTab = `outline: auto;`;
+const getBackgroundAndTextColorBySkin = ({
+  skin,
+  theme: {
+    components: {
+      snackbar: {
+        skins: {
+          [skin]: { text, background },
+        },
+      },
+    },
+  },
+  inverted,
+}) => {
+  if (inverted) {
+    const [textInverted, backgroundInverted] = [background, text];
 
-const getBackgroundBySkin = skin => {
-  const color = skin.toUpperCase();
-  const indexColor = skin === 'cobalt' ? '500' : '700';
+    return {
+      background: backgroundInverted,
+      text: textInverted,
+    };
+  }
+
+  return {
+    background,
+    text,
+  };
+};
+
+const a11yFocusTab = props => {
+  const { text } = getBackgroundAndTextColorBySkin(props);
+
   return `
-      background-color: ${Colors[color][indexColor]}
+    outline: 1px solid ${text};
   `;
 };
 
 const SnackBarDialog = styled.div`
   align-items: center;
   border-radius: 4px;
-  color: ${Colors.WHITE};
   display: flex;
   justify-content: space-between;
   min-height: 48px;
-  padding: 13px 16px;
+  ${({
+    theme: {
+      spacing: { small, medium },
+    },
+  }) => `
+    padding: ${small}px ${medium}px;
+  `}
 
-  ${({ skin }) => getBackgroundBySkin(skin)}
+  ${props => {
+    const { background, text } = getBackgroundAndTextColorBySkin(props);
+    return `
+    background-color: ${background};
+    color: ${text};
+  `;
+  }}
+
+  :focus {
+    ${a11yFocusTab}
+  }
 `;
 
 const TextContainer = styled.strong`
   font-weight: normal;
-  padding-right: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+    padding-right: ${xsmall}px;
+  `}
 
   :focus {
     ${a11yFocusTab}
@@ -43,19 +95,42 @@ const TextContainer = styled.strong`
 const CloseIcon = styled(Button.Icon).attrs({
   icon: 'close',
 })`
-  color: ${Colors.WHITE};
+  ${props => {
+    const { text } = getBackgroundAndTextColorBySkin(props);
 
-  :hover,
-  :focus {
-    background-color: transparent;
-    box-shadow: none;
-    color: ${Colors.WHITE};
-    ${a11yFocusTab}
-  }
+    return css`
+      color: ${text};
+
+      :hover,
+      :focus {
+        background-color: transparent;
+        box-shadow: none;
+        color: ${text};
+        ${a11yFocusTab}
+      }
+    `;
+  }}
 `;
 
 const ActionButton = styled(Button)`
-  color: ${Colors.WHITE};
+  ${props => {
+    const { text } = getBackgroundAndTextColorBySkin(props);
+
+    return `
+      border: 1px solid ${text};
+      color: ${text};
+
+      :hover,
+      :focus {
+        border: 1px solid ${text};
+        color: ${text};
+        text-decoration: none;
+        background-color: transparent;
+      }
+    `;
+  }};
+
+  background-color: transparent;
   font-weight: bold;
   text-transform: uppercase;
   white-space: nowrap;
@@ -63,7 +138,7 @@ const ActionButton = styled(Button)`
   :hover,
   :focus {
     text-decoration: none;
-    color: ${Colors.WHITE};
+    background-color: transparent;
   }
 
   :focus {
@@ -129,6 +204,9 @@ class SnackBar extends React.Component {
       onClose,
       closeButtonAriaLabel,
       actionTrigger,
+      theme,
+      skin,
+      inverted,
       ...rest
     } = this.props;
     return ReactDOM.createPortal(
@@ -144,22 +222,37 @@ class SnackBar extends React.Component {
           >
             <SnackBarDialog
               {...rest}
+              theme={theme}
+              inverted={inverted}
+              skin={skin}
               role="alertdialog"
               aria-describedby={this._id}
               tabIndex="0"
             >
-              <TextContainer id={this._id}>{text}</TextContainer>
+              <TextContainer
+                id={this._id}
+                inverted={inverted}
+                theme={theme}
+                skin={skin}
+              >
+                {text}
+              </TextContainer>
               {actionTrigger && (
                 <ActionsSection>
                   <ActionButton
                     className="action-button"
-                    skin="link"
+                    inverted={inverted}
+                    theme={theme}
+                    skin={skin}
                     onClick={actionTrigger.callbackFn}
                   >
                     {actionTrigger.title}
                   </ActionButton>
                   {onClose && (
                     <CloseIcon
+                      theme={theme}
+                      inverted={inverted}
+                      skin={skin}
                       onClick={onClose}
                       aria-label={closeButtonAriaLabel}
                       onKeyPress={this.handleKeyPress}
@@ -186,11 +279,22 @@ SnackBar.propTypes = {
     title: PropTypes.string,
     callback: PropTypes.func,
   }),
+  theme: PropTypes.shape({
+    baseFontSize: PropTypes.number,
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+    components: PropTypes.shape({
+      snackbar: PropTypes.object,
+      button: PropTypes.object,
+    }),
+  }),
   closeButtonAriaLabel: PropTypes.string,
   onClose: PropTypes.func,
   secondsToClose: PropTypes.number,
-  skin: oneOf(['cobalt', 'black']),
+  skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
   text: PropTypes.string,
+  /** Swap background and text color */
+  inverted: PropTypes.bool,
   id: PropTypes.string,
 };
 
@@ -198,13 +302,23 @@ SnackBar.defaultProps = {
   closeButtonAriaLabel: 'close SnackBar',
   onClose: () => {},
   secondsToClose: 6,
-  skin: 'cobalt',
+  skin: 'neutral',
   text: 'Text of SnackBar component',
   actionTrigger: {
     title: 'ACTION',
     callbackFn: () => {},
   },
+  inverted: false,
   id: undefined,
+  theme: {
+    colors,
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    components: {
+      snackbar: components.snackbar,
+      button: components.button,
+    },
+  },
 };
 
 export default SnackBar;

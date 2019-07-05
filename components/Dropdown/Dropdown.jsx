@@ -1,99 +1,150 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
-import Colors from '../Colors';
-import { FieldGroup, Label, ErrorMessage, INPUT_STYLE } from '../shared';
+import { FieldGroup, shadow, uniqId } from '../shared';
+import { colors, spacing } from '../shared/theme';
 
+import {
+  InputLabel,
+  InputErrorMessage,
+  RequiredMark,
+  TextInput,
+} from '../Input/sub-components';
+
+const ID_GENERATOR = uniqId('dropdown-');
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
-const {
-  HOVER_STYLE,
-  ERROR_HOVER_STYLE,
-  default: DEFAULT_STYLE,
-  REQUIRED_MARK_STYLE,
-  ERROR_MESSAGE_STYLE,
-} = INPUT_STYLE;
-
-const DropButton = styled.button`
+const DropInput = styled(TextInput)`
   align-items: center;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
 
-  ${DEFAULT_STYLE};
-
-  ${({ text }) => !text && 'flex-direction: row-reverse;'};
-  ${({ selectedItem }) => !selectedItem && `color: ${Colors.BLACK[400]}`};
+  ${({
+    selectedItem,
+    text,
+    theme: {
+      colors: {
+        neutral: { 500: neutral500 },
+      },
+    },
+  }) => `
+    ${!text ? 'flex-direction: row-reverse;' : ''}
+    ${!selectedItem ? `color: ${neutral500};` : ''}
+  `};
 `;
-
-const DropLabel = styled(Label)`
-  margin-bottom: 8px;
-  padding-left: 13.5px;
-
-  ${({ error, disabled }) =>
-    !disabled &&
-    css`
-      :hover ~ ${DropButton}, :focus ~ ${DropButton} {
-        ${error ? ERROR_HOVER_STYLE : HOVER_STYLE};
-      }
-    `};
-`;
-
-DropLabel.displayName = 'DropLabel';
 
 const ArrowDown = styled(Icon).attrs({
   name: 'keyboard_arrow_down',
 })`
-  color: ${Colors.BLACK['700']};
-  font-size: 1.5em;
   pointer-events: none;
+
+  ${({
+    selectedItem,
+    theme: {
+      colors: {
+        neutral: { 700: neutral700 },
+      },
+    },
+  }) =>
+    !selectedItem &&
+    `
+    color: ${neutral700};
+  `}
 `;
 
 const InputArrowDown = styled(ArrowDown)`
   position: absolute;
-  top: 12px;
-  right: 14px;
+
+  ${({
+    theme: {
+      spacing: { small, medium },
+    },
+  }) => `
+    top: ${small}px;
+    right: ${medium * 0.875}px;
+  `}
 `;
 
 const DropList = styled.ul`
-  background-color: ${Colors.WHITE};
   border-radius: 4px;
-  border: solid 1.5px ${Colors.BLACK[100]};
-  box-shadow: 0 2px 6px 0 ${Colors.SHADOW[40]};
   box-sizing: border-box;
   list-style: none;
-  margin-top: 4px;
   max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
   overflow: auto;
   padding: 0;
   position: absolute;
   width: 100%;
   z-index: 9999;
+
+  ${({ theme }) => {
+    const {
+      spacing: { xxsmall },
+      colors: {
+        neutral: { 100: neutral100, 300: neutral300 },
+      },
+    } = theme;
+
+    return `
+      background-color: ${neutral100};
+      border: solid 1.5px ${neutral100};
+      margin-top: ${xxsmall}px;
+      ${shadow(5, neutral300)({ theme })};
+    `;
+  }}
 `;
 
 const CheckIcon = styled(Icon).attrs({
   name: 'check',
 })`
-  color: ${Colors.BLUE['500']};
+  ${({
+    selectedItem,
+    theme: {
+      colors: {
+        primary: { 500: primary },
+      },
+    },
+  }) =>
+    !selectedItem &&
+    `
+    color: ${primary};
+  `}
 `;
 
 const DropItem = styled.li`
-  background-color: ${Colors.WHITE};
-  border-bottom: solid 1.5px ${Colors.BLACK[100]};
   box-sizing: border-box;
   cursor: pointer;
-  height: ${ITEM_HEIGHT};
-  padding: 10px 15px;
+
+  ${({
+    theme: {
+      spacing: { xsmall, small },
+      colors: {
+        neutral: { 100: neutral100, 300: neutral300 },
+      },
+    },
+  }) => `
+    background-color: ${neutral100};
+    border-bottom: solid 1.5px ${neutral300};
+    padding: ${xsmall * 1.125}px ${small}px;
+  `}
 
   :last-child {
     border-bottom-width: 0;
   }
 
   &[aria-selected='true'] {
-    background-color: ${Colors.BLUE[200]};
+    ${({
+      theme: {
+        colors: {
+          primary: { 100: primary },
+        },
+      },
+    }) => `
+      background-color: ${primary};
+    `}
   }
 
   ${({ isSelected }) =>
@@ -104,21 +155,49 @@ const DropItem = styled.li`
   `}
 `;
 
-const DropError = styled(ErrorMessage)`
-  ${ERROR_MESSAGE_STYLE}
-`;
-
 const DropContainer = styled.div`
   position: relative;
-`;
-
-const RequiredMark = styled.em`
-  ${REQUIRED_MARK_STYLE}
 `;
 
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
+
+const itemPropType = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.shape({
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    label: PropTypes.string,
+  }),
+]);
+
+const List = ({ theme, items, selectedItem, getItemProps }) => (
+  <DropList theme={theme}>
+    {items.map(item => (
+      <DropItem
+        theme={theme}
+        {...getItemProps({
+          item,
+          isSelected: _isEqual(selectedItem, item),
+          key: _getValue(item),
+        })}
+      >
+        {_getLabel(item)}
+        {_isEqual(selectedItem, item) && <CheckIcon theme={theme} />}
+      </DropItem>
+    ))}
+  </DropList>
+);
+
+List.propTypes = {
+  selectedItem: PropTypes.shape(itemPropType).isRequired,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }).isRequired,
+  items: PropTypes.arrayOf(itemPropType).isRequired,
+  getItemProps: PropTypes.func.isRequired,
+};
 
 const Dropdown = ({
   label,
@@ -130,6 +209,8 @@ const Dropdown = ({
   selectedItem,
   onChange,
   autocomplete,
+  theme,
+  id,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -149,8 +230,15 @@ const Dropdown = ({
     return changes;
   };
 
+  const [_id] = useState(id || ID_GENERATOR.next().value);
+
   const inputFilter = value =>
-    items.filter(item => item.toLowerCase().indexOf(value.toLowerCase()) > -1);
+    items.filter(
+      item =>
+        _getValue(item)
+          .toLowerCase()
+          .indexOf(value.toLowerCase()) > -1,
+    );
 
   return (
     <FieldGroup>
@@ -176,81 +264,69 @@ const Dropdown = ({
           return (
             <DropContainer {...getRootProps()}>
               {label && (
-                <DropLabel
+                <InputLabel
                   {...getLabelProps()}
-                  onClick={() => openMenu()}
                   error={error}
                   disabled={disabled}
+                  htmlFor={_id}
                 >
                   {label}
                   {required && <RequiredMark>*</RequiredMark>}
-                </DropLabel>
+                </InputLabel>
               )}
               <input type="hidden" {...getInputProps()} />
               {autocomplete ? (
                 <>
                   <DropContainer>
-                    <DropButton
-                      as="input"
-                      style={{ cursor: 'inherit' }}
+                    <DropInput
                       {...getInputProps({
                         isOpen,
                         placeholder,
                         onClick: openMenu,
                       })}
+                      style={{ cursor: 'inherit' }}
                       error={error}
                       disabled={disabled}
                       text={_buttonLabel}
+                      theme={theme}
+                      id={_id}
                     />
-                    <InputArrowDown />
+                    <InputArrowDown theme={theme} />
                   </DropContainer>
 
                   {filteredInput.length > 0 && (
-                    <DropList>
-                      {filteredInput.map(item => (
-                        <DropItem
-                          {...getItemProps({
-                            item,
-                            isSelected: _isEqual(selectedItem, item),
-                            key: _getValue(item),
-                          })}
-                        >
-                          {_getLabel(item)}
-                          {_isEqual(selectedItem, item) && <CheckIcon />}
-                        </DropItem>
-                      ))}
-                    </DropList>
+                    <List
+                      items={filteredInput}
+                      theme={theme}
+                      selectedItem={selectedItem}
+                      getItemProps={getItemProps}
+                    />
                   )}
                 </>
               ) : (
                 <>
-                  <DropButton
+                  <DropInput
                     {...getToggleButtonProps()}
+                    as="button"
                     isOpen={isOpen}
                     disabled={disabled}
                     error={error}
                     text={_buttonLabel}
                     selectedItem={selectedItem}
+                    theme={theme}
+                    id={_id}
                   >
                     {_buttonLabel}
-                    <ArrowDown />
-                  </DropButton>
+                    <ArrowDown theme={theme} />
+                  </DropInput>
 
                   {isOpen && (
-                    <DropList>
-                      {items.map(item => (
-                        <DropItem
-                          {...getItemProps({
-                            item,
-                            isSelected: _isEqual(selectedItem, item),
-                            key: _getValue(item),
-                          })}
-                        >
-                          {_getLabel(item)}
-                          {_isEqual(selectedItem, item) && <CheckIcon />}
-                        </DropItem>
-                      ))}
-                    </DropList>
+                    <List
+                      items={items}
+                      theme={theme}
+                      selectedItem={selectedItem}
+                      getItemProps={getItemProps}
+                    />
                   )}
                 </>
               )}
@@ -259,7 +335,7 @@ const Dropdown = ({
         }}
       </Downshift>
 
-      {error && <DropError>{error}</DropError>}
+      {error && <InputErrorMessage>{error}</InputErrorMessage>}
     </FieldGroup>
   );
 };
@@ -267,34 +343,33 @@ const Dropdown = ({
 Dropdown.defaultProps = {
   autocomplete: false,
   disabled: false,
-  error: '',
-  items: [],
-  label: '',
-  onChange: () => {},
-  placeholder: 'Select an option',
   required: false,
+  error: '',
+  id: '',
+  label: '',
+  placeholder: 'Select an option',
   selectedItem: '',
+  items: [],
+  onChange: () => {},
+  theme: { colors, spacing },
 };
-
-const itemPropType = PropTypes.oneOfType([
-  PropTypes.string,
-  PropTypes.shape({
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    label: PropTypes.string,
-  }),
-]);
 
 Dropdown.propTypes = {
   autocomplete: PropTypes.bool,
   disabled: PropTypes.bool,
+  required: PropTypes.bool,
   error: PropTypes.string,
+  id: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  selectedItem: itemPropType,
+  onChange: PropTypes.func,
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
-  label: PropTypes.string,
-  onChange: PropTypes.func,
-  placeholder: PropTypes.string,
-  required: PropTypes.bool,
-  selectedItem: itemPropType,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
 };
 
 export default Dropdown;

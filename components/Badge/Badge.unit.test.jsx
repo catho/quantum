@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
 import Badge from './Badge';
-import Colors from '../Colors';
+import { theme } from '../shared';
 import Button from '../Button';
 
 describe('<Badge />', () => {
@@ -31,12 +31,12 @@ describe('<Badge />', () => {
     it("should have correct colors when skin prop isn't defined", () => {
       expect(BadgeComponent.find('StyledBadge')).toHaveStyleRule(
         'background-color',
-        Colors.BLACK[100],
+        theme.colors.neutral[100],
       );
 
       expect(BadgeComponent.find('StyledBadge')).toHaveStyleRule(
         'color',
-        Colors.BLACK[700],
+        theme.colors.neutral[700],
       );
     });
 
@@ -56,11 +56,11 @@ describe('<Badge />', () => {
 
       expect(BadgeWithSkin.find('StyledBadge')).toHaveStyleRule(
         'background-color',
-        Colors.SUCCESS[200],
+        theme.colors.success[100],
       );
       expect(BadgeWithSkin.find('StyledBadge')).toHaveStyleRule(
         'color',
-        Colors.SUCCESS[900],
+        theme.colors.success[900],
       );
     });
   });

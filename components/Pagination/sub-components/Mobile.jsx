@@ -2,26 +2,45 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Colors from '../../Colors';
 import ActionButton from './ActionButton';
+import { colors, spacing } from '../../shared/theme';
 
 const Info = styled.span`
   border-bottom: 1px solid;
   border-top: 1px solid;
-  border-color: ${Colors.BLACK['200']};
-  color: ${Colors.BLACK['700']};
-  padding: 8px 16px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
-  :hover {
-    background-color: ${Colors.BLUE['200']};
-    strong {
-      color: ${Colors.BLUE['500']};
+  ${({
+    theme: {
+      colors: {
+        neutral: { 300: neutral300, 700: neutral700 },
+        primary: { 100: primary100, 500: primary500 },
+      },
+      spacing: { xsmall, medium },
+    },
+  }) => `
+    border-color: ${neutral300};
+    color: ${neutral700};
+    padding: ${xsmall}px ${medium}px;
+
+    :hover {
+      background-color: ${primary100};
+      strong {
+        color: ${primary500};
+      }
     }
-  }
+  `}
 `;
 const StyledActionButton = styled(ActionButton)`
-  border-color: ${Colors.BLACK['200']};
+  ${({
+    theme: {
+      colors: {
+        neutral: { 300: neutral300 },
+      },
+    },
+  }) => `
+    border-color: ${neutral300};
+  `}
 
   ${({ rightSquared }) =>
     rightSquared
@@ -52,6 +71,7 @@ const Mobile = ({
   nextButtonText,
   totalPages,
   infoFormatter,
+  theme,
 }) => (
   <>
     <StyledActionButton
@@ -59,17 +79,19 @@ const Mobile = ({
       onClick={handlePageClick(activePage - 1)}
       href={handleHref(activePage - 1)}
       rightSquared
+      theme={theme}
     >
       {prevButtonText}
     </StyledActionButton>
 
-    <Info>{infoFormatter(activePage, totalPages)}</Info>
+    <Info theme={theme}>{infoFormatter(activePage, totalPages)}</Info>
 
     <StyledActionButton
       aria-disabled={activePage === totalPages}
       onClick={handlePageClick(activePage + 1)}
       href={handleHref(activePage + 1)}
       leftSquared
+      theme={theme}
     >
       {nextButtonText}
     </StyledActionButton>
@@ -84,6 +106,10 @@ Mobile.propTypes = {
   prevButtonText: PropTypes.string,
   handleHref: PropTypes.func,
   handlePageClick: PropTypes.func,
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+  }),
 };
 
 Mobile.defaultProps = {
@@ -93,6 +119,10 @@ Mobile.defaultProps = {
   infoFormatter: (activePage, lastPage) => `${activePage} of ${lastPage}`,
   handleHref: () => {},
   handlePageClick: () => {},
+  theme: {
+    colors,
+    spacing,
+  },
 };
 
 export default Mobile;

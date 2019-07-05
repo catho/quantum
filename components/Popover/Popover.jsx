@@ -122,20 +122,22 @@ class Popover extends Component {
 TriggerBlock.displayName = 'TriggerBlock';
 
 Popover.propTypes = {
+  inverted: PropTypes.bool,
   visible: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-  skin: oneOf(['default', 'success', 'warning', 'error']),
+  skin: oneOf(['neutral', 'success', 'warning', 'error']),
   trigger: PropTypes.node.isRequired,
   onClose: PropTypes.func,
 };
 
 Popover.defaultProps = {
+  inverted: false,
   visible: false,
-  skin: 'default',
+  skin: 'neutral',
   placement: 'top',
   onClose: () => {},
 };

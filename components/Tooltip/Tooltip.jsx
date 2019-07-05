@@ -1,23 +1,36 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Colors from '../Colors';
 import placementConfig from './options';
+import {
+  colors,
+  spacing,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 
 const Tip = styled.div`
-  background-color: ${Colors.BLACK[700]};
-  border-color: ${Colors.BLACK[700]};
   border-radius: 4px;
-  color: ${Colors.WHITE};
-  font-size: 16px;
   font-weight: bold;
   opacity: ${({ visible }) => (visible ? '1' : '0')};
-  padding: 4px 8px;
   position: absolute;
   line-height: 0;
   text-align: center;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   z-index: 100;
+
+  ${({
+    theme: {
+      colors: { neutral },
+      spacing: { xxsmall, xsmall },
+      baseFontSize,
+    },
+  }) => `
+    background-color: ${neutral[700]};
+    border-color: ${neutral[700]};
+    color: ${neutral[100]};
+    font-size: ${baseFontSize}px;
+    padding: ${xxsmall}px ${xsmall}px;
+  `}
 
   ${({ placement }) => placementConfig.tipPosition[placement]};
 
@@ -55,6 +68,7 @@ class Tooltip extends Component {
       placement,
       text,
       visible: visibleProp,
+      theme,
       ...rest
     } = this.props;
     const { visible: visibleState } = this.state;
@@ -65,7 +79,11 @@ class Tooltip extends Component {
         onMouseLeave={() => this.isVisible(false)}
         {...rest}
       >
-        <Tip placement={placement} visible={visibleProp || visibleState}>
+        <Tip
+          placement={placement}
+          visible={visibleProp || visibleState}
+          theme={theme}
+        >
           <TipText>{text}</TipText>
         </Tip>
         {children}
@@ -86,11 +104,21 @@ Tooltip.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    colors: PropTypes.object,
+    baseFontSize: PropTypes.number,
+  }),
 };
 
 Tooltip.defaultProps = {
   placement: 'top',
   visible: false,
+  theme: {
+    spacing,
+    colors,
+    baseFontSize: defaultBaseFontSize,
+  },
 };
 
 export default Tooltip;

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { query } from './shared';
-import { BREAKPOINTS } from '../../shared';
+import { theme as defaultTheme } from '../../shared';
 
 const columnPosition = (
   {
@@ -15,12 +15,13 @@ const columnPosition = (
     'medium-offset': mediumOffset = smallOffset,
     'large-offset': largeOffset = mediumOffset,
     'xlarge-offset': xlargeOffset = largeOffset,
+    theme: { breakpoints },
   },
   breakpoint,
 ) => {
-  const q = query[breakpoint];
+  const q = query(breakpoints)[breakpoint];
 
-  const { size, offset } = {
+  const screenDefinitions = {
     xsmall: {
       size: xsmall,
       offset: xsmallOffset,
@@ -41,7 +42,9 @@ const columnPosition = (
       size: xlarge,
       offset: xlargeOffset,
     },
-  }[breakpoint];
+  };
+
+  const { size, offset } = screenDefinitions[breakpoint];
 
   const offsetStyle = offset ? `${offset + 1}/` : '';
 
@@ -50,12 +53,16 @@ const columnPosition = (
 
 const Col = styled.div`
   ${props =>
-    Object.keys(BREAKPOINTS).map(breakpoint =>
+    Object.keys(props.theme.breakpoints).map(breakpoint =>
       columnPosition(props, breakpoint),
     )}
   word-break: break-word;
   box-sizing: border-box;
 `;
+
+Col.defaultProps = {
+  theme: defaultTheme,
+};
 
 Col.propTypes = {
   xsmall: PropTypes.number,
@@ -69,8 +76,8 @@ Col.propTypes = {
   'large-offset': PropTypes.number,
   'xlarge-offset': PropTypes.number,
   hide: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(BREAKPOINTS)),
-    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
+    PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
   ]),
 };
 

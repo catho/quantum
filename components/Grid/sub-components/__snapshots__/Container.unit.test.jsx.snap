@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> with "no-gutters" prop should not have gutters 1`] = `
+.c2 .c0 {
+  max-width: 100%;
+}
+
+.c3 .c0 {
+  max-width: 100%;
+}
+
+.c4 .c0 {
+  max-width: 100%;
+}
+
+.c5 .c0 {
+  max-width: 100%;
+}
+
+.c6 .c0 {
+  max-width: 100%;
+}
+
+.c7 .c0 {
+  max-width: 100%;
+}
+
+.c8 .c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+  max-width: 95%;
+  --gutter: 0px;
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;
+
+exports[`<Container /> with fluid prop should have a fluid width 1`] = `
+.c2 .c0 {
+  max-width: 100%;
+}
+
+.c3 .c0 {
+  max-width: 100%;
+}
+
+.c4 .c0 {
+  max-width: 100%;
+}
+
+.c5 .c0 {
+  max-width: 100%;
+}
+
+.c6 .c0 {
+  max-width: 100%;
+}
+
+.c7 .c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;
+
+exports[`<Container /> with hide prop should hide it's children according to screen size 1`] = `
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+  max-width: 95%;
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+@media (max-width:599px) {
+  .c1 {
+    display: none !important;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;
+
+exports[`<Container /> with hide prop should hide it's children according to screen size 2`] = `
+.c2 .c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+  max-width: 95%;
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c1 {
+    display: none !important;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;
+
+exports[`<Container /> with hide prop should hide it's children according to screen size 3`] = `
+.c2 .c0 {
+  max-width: 100%;
+}
+
+.c3 .c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+  max-width: 95%;
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c1 {
+    display: none !important;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;
+
+exports[`<Container /> with hide prop should hide it's children according to screen size 4`] = `
+.c2 .c0 {
+  max-width: 100%;
+}
+
+.c3 .c0 {
+  max-width: 100%;
+}
+
+.c4 .c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+  max-width: 95%;
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c1 {
+    display: none !important;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;
+
+exports[`<Container /> with hide prop should hide it's children according to screen size 5`] = `
+.c2 .c0 {
+  max-width: 100%;
+}
+
+.c3 .c0 {
+  max-width: 100%;
+}
+
+.c4 .c0 {
+  max-width: 100%;
+}
+
+.c5 .c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+  max-width: 95%;
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+@media (min-width:1920px) {
+  .c1 {
+    display: none !important;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;
+
+exports[`<Container /> with hide prop should hide it's children according to screen size 6`] = `
+.c2 .c0 {
+  max-width: 100%;
+}
+
+.c3 .c0 {
+  max-width: 100%;
+}
+
+.c4 .c0 {
+  max-width: 100%;
+}
+
+.c5 .c0 {
+  max-width: 100%;
+}
+
+.c6 .c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--gutter);
+  max-width: 95%;
+}
+
+.c1 .c0 {
+  max-width: 100%;
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c1 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+  .c1 {
+    display: none !important;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  Content
+</div>
+`;

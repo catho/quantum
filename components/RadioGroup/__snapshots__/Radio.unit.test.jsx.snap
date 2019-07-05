@@ -12,42 +12,20 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   width: 0;
 }
 
-.c2:focus ~ .c7 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c2:hover ~ .c7 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c2:active ~ .c7 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
 .c4 {
-  background-color: #FFFFFF;
-  border: 1.5px solid #999999;
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
-  background-color: #1355d0;
   border-radius: 50%;
   content: '';
   display: none;
@@ -56,6 +34,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
+  background-color: #1355d0;
 }
 
 .c0 {
@@ -79,19 +58,19 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 
 .c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c5 .c1:checked ~ .c3 {
@@ -105,13 +84,13 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 
 .c5 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5:hover .c3,
 .c5:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5 .c1:disabled ~ .c3 {
@@ -150,7 +129,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c5 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c6 .c1:checked ~ .c3 {
@@ -164,13 +143,13 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 
 .c6 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6:hover .c3,
 .c6:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6 .c1:checked ~ .c3 {
@@ -184,7 +163,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 
 .c6 .c1:focus ~ .c3 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c6 .c3 {
@@ -194,13 +173,13 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c6:hover .c3,
 .c6:focus .c3 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c6 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 <label
@@ -234,20 +213,19 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 .c4 {
-  background-color: #FFFFFF;
-  border: 1.5px solid #999999;
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
-  background-color: #1355d0;
   border-radius: 50%;
   content: '';
   display: none;
@@ -256,6 +234,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
+  background-color: #1355d0;
 }
 
 .c5 .c1:checked ~ .c3 {
@@ -269,19 +248,19 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 
 .c5 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5:hover .c3,
 .c5:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c0 {
@@ -306,13 +285,13 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 
 .c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0:hover {
@@ -355,7 +334,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 <label
@@ -388,42 +367,20 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   width: 0;
 }
 
-.c2:focus ~ .c7 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c2:hover ~ .c7 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c2:active ~ .c7 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
 .c4 {
-  background-color: #FFFFFF;
-  border: 1.5px solid #999999;
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
-  background-color: #1355d0;
   border-radius: 50%;
   content: '';
   display: none;
@@ -432,6 +389,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
+  background-color: #1355d0;
 }
 
 .c5 .c1:checked ~ .c3 {
@@ -445,19 +403,19 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 
 .c5 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5:hover .c3,
 .c5:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c5 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c6 .c1:checked ~ .c3 {
@@ -471,13 +429,13 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 
 .c6 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6:hover .c3,
 .c6:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c6 .c1:disabled ~ .c3 {
@@ -516,7 +474,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c6 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 .c0 {
@@ -540,13 +498,13 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 
 .c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0 .c1:checked ~ .c3 {
@@ -560,7 +518,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 
 .c0 .c1:focus ~ .c3 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c0 .c3 {
@@ -570,13 +528,13 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c0:hover .c3,
 .c0:focus .c3 {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 <label
@@ -609,42 +567,20 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   width: 0;
 }
 
-.c2:focus ~ .c5 {
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-  background-color: #1355d0;
-  border-color: #1355d0;
-  color: #FFFFFF;
-}
-
-.c2:hover ~ .c5 {
-  box-shadow: 0 2px 4px 0 #cccccc;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
-.c2:active ~ .c5 {
-  box-shadow: 0 2px 4px 0 #4c4c4c;
-  background-color: #002f7b;
-  border-color: #002f7b;
-  color: #FFFFFF;
-}
-
 .c4 {
-  background-color: #FFFFFF;
-  border: 1.5px solid #999999;
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 16px;
-  margin-right: 5px;
   position: relative;
   top: 4px;
   width: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  margin-right: 4px;
 }
 
 .c4:after {
-  background-color: #1355d0;
   border-radius: 50%;
   content: '';
   display: none;
@@ -653,6 +589,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
+  background-color: #1355d0;
 }
 
 .c0 {
@@ -676,19 +613,19 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 
 .c0 .c1:focus ~ .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #FFFFFF;
+  box-shadow: inset 0 0 0 3.5px #f2f2f2;
 }
 
 <label

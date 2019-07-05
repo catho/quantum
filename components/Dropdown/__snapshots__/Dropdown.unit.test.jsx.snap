@@ -9,6 +9,23 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -22,44 +39,41 @@ exports[`Input component  should match the snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+}
+
 .c3 {
-  color: #4c4c4c;
-  font-size: 1.5em;
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -97,6 +111,7 @@ exports[`Input component  should match the snapshot 1`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-0"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -111,6 +126,65 @@ exports[`Input component  should match the snapshot 1`] = `
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -131,6 +205,23 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -144,44 +235,41 @@ exports[`Input component  should match the snapshot 2`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+}
+
 .c3 {
-  color: #4c4c4c;
-  font-size: 1.5em;
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -219,6 +307,7 @@ exports[`Input component  should match the snapshot 2`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-1"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -233,6 +322,65 @@ exports[`Input component  should match the snapshot 2`] = `
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -253,6 +401,23 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -266,47 +431,44 @@ exports[`Input component  should match the snapshot 3`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   color: #999999;
 }
 
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+}
+
 .c3 {
-  color: #4c4c4c;
-  font-size: 1.5em;
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -344,6 +506,7 @@ exports[`Input component  should match the snapshot 3`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-2"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -358,6 +521,65 @@ exports[`Input component  should match the snapshot 3`] = `
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -377,7 +599,35 @@ exports[`Input component  should match the snapshot 4`] = `
   width: 100%;
 }
 
+.c4 {
+  color: #ac001a;
+  font-size: 14px;
+  cursor: text;
+  font-style: italic;
+  font-weight: 600;
+  display: block;
+  margin: 8px 12px 0;
+}
+
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-color: #ff2d4d;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -391,60 +641,41 @@ exports[`Input component  should match the snapshot 4`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  border-color: #ff2d4d;
   color: #999999;
 }
 
-.c2:hover,
-.c2:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #ff2d4d;
-  box-shadow: 0 2px 6px 0 #ff2d4d;
+  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c3 {
-  color: #4c4c4c;
-  font-size: 1.5em;
-  pointer-events: none;
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c4 {
-  color: #ac001a;
-  font-size: 14px;
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
-  padding: 8px 12px 0px;
+.c3 {
+  pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -482,6 +713,7 @@ exports[`Input component  should match the snapshot 4`] = `
       className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-3"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -498,16 +730,75 @@ exports[`Input component  should match the snapshot 4`] = `
             "color": "",
           }
         }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         keyboard_arrow_down
       </span>
     </button>
   </div>
-  <div
+  <span
     className="c4"
   >
     Error message
-  </div>
+  </span>
 </div>
 `;
 
@@ -520,6 +811,23 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -533,44 +841,41 @@ exports[`Input component  should match the snapshot 5`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
 }
 
 .c2:hover,
 .c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
 .c2[disabled] {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+}
+
 .c3 {
-  color: #4c4c4c;
-  font-size: 1.5em;
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -608,6 +913,7 @@ exports[`Input component  should match the snapshot 5`] = `
       className="c2"
       data-toggle={true}
       disabled={true}
+      id="dropdown-4"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -622,6 +928,65 @@ exports[`Input component  should match the snapshot 5`] = `
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -641,7 +1006,30 @@ exports[`Input component  should match the snapshot 6`] = `
   width: 100%;
 }
 
-.c4 {
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 12px 0;
+}
+
+.c3 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -655,57 +1043,41 @@ exports[`Input component  should match the snapshot 6`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
 }
 
-.c4:hover,
-.c4:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.c4[disabled] {
-  background-color: #f2f2f2;
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c3[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 8px;
-  padding-left: 13.5px;
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c2:hover ~ .c3,
-.c2:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c5 {
-  color: #4c4c4c;
-  font-size: 1.5em;
+.c4 {
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -726,9 +1098,8 @@ exports[`Input component  should match the snapshot 6`] = `
     <label
       className="c2"
       disabled={false}
-      htmlFor="downshift-5-input"
+      htmlFor="dropdown-5"
       id="downshift-5-label"
-      onClick={[Function]}
     >
       Dropdown label
     </label>
@@ -748,9 +1119,10 @@ exports[`Input component  should match the snapshot 6`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c3 c4"
+      className="c3"
       data-toggle={true}
       disabled={false}
+      id="dropdown-5"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -761,10 +1133,69 @@ exports[`Input component  should match the snapshot 6`] = `
       Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c5"
+        className="material-icons MuiIcon-root-1 c4"
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -784,7 +1215,34 @@ exports[`Input component  should match the snapshot 7`] = `
   width: 100%;
 }
 
-.c5 {
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 12px 0;
+}
+
+.c3 {
+  color: #ff2d4d;
+}
+
+.c4 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -798,65 +1256,45 @@ exports[`Input component  should match the snapshot 7`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
 }
 
-.c5:hover,
-.c5:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c4::-webkit-inner-spin-button,
+.c4::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.c5[disabled] {
-  background-color: #f2f2f2;
+.c4::-webkit-calendar-picker-indicator,
+.c4::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4:hover,
+.c4:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c4[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-  margin-bottom: 8px;
-  padding-left: 13.5px;
+.c4:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c2:hover ~ .c4,
-.c2:focus ~ .c4 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
-}
-
-.c6 {
-  color: #4c4c4c;
-  font-size: 1.5em;
+.c5 {
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
   position: relative;
-}
-
-.c3 {
-  color: #ff2d4d;
 }
 
 <div
@@ -873,9 +1311,8 @@ exports[`Input component  should match the snapshot 7`] = `
     <label
       className="c2"
       disabled={false}
-      htmlFor="downshift-6-input"
+      htmlFor="dropdown-6"
       id="downshift-6-label"
-      onClick={[Function]}
     >
       Dropdown label
       <em
@@ -900,9 +1337,10 @@ exports[`Input component  should match the snapshot 7`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c4 c5"
+      className="c4"
       data-toggle={true}
       disabled={false}
+      id="dropdown-6"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -913,10 +1351,69 @@ exports[`Input component  should match the snapshot 7`] = `
       Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6"
+        className="material-icons MuiIcon-root-1 c5"
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -936,7 +1433,25 @@ exports[`Input component  should match the snapshot 8`] = `
   width: 100%;
 }
 
-.c3 {
+.c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
+  color: #999999;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -950,51 +1465,41 @@ exports[`Input component  should match the snapshot 8`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  color: #999999;
   color: #999999;
 }
 
-.c3:hover,
-.c3:focus {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
-.c3[disabled] {
-  background-color: #f2f2f2;
+.c2[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c5:hover ~ .c2,
-.c5:focus ~ .c2 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c4 {
-  color: #4c4c4c;
-  font-size: 1.5em;
+.c3 {
   pointer-events: none;
+  color: #4c4c4c;
   position: absolute;
   top: 12px;
   right: 14px;
@@ -1038,9 +1543,9 @@ exports[`Input component  should match the snapshot 8`] = `
         aria-controls={null}
         aria-labelledby="downshift-7-label"
         autoComplete="off"
-        className="c2 c3"
+        className="c2"
         disabled={false}
-        id="downshift-7-input"
+        id="dropdown-7"
         onBlur={[Function]}
         onChange={[Function]}
         onClick={[Function]}
@@ -1055,10 +1560,69 @@ exports[`Input component  should match the snapshot 8`] = `
       />
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -1078,7 +1642,24 @@ exports[`Input component  should match the snapshot 9`] = `
   width: 100%;
 }
 
-.c3 {
+.c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1092,50 +1673,41 @@ exports[`Input component  should match the snapshot 9`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
   color: #999999;
 }
 
-.c3:hover,
-.c3:focus {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.c3[disabled] {
-  background-color: #f2f2f2;
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1355d0;
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+}
+
+.c2[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c5:hover ~ .c2,
-.c5:focus ~ .c2 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c4 {
-  color: #4c4c4c;
-  font-size: 1.5em;
+.c3 {
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -1170,9 +1742,10 @@ exports[`Input component  should match the snapshot 9`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2 c3"
+      className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-8"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -1183,10 +1756,69 @@ exports[`Input component  should match the snapshot 9`] = `
       Select an option
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >
@@ -1206,7 +1838,24 @@ exports[`Input component  should match the snapshot 10`] = `
   width: 100%;
 }
 
-.c3 {
+.c2 {
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid #999999;
+  color: #4c4c4c;
+  margin-top: 8px;
+  padding: 8px 12px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1220,49 +1869,40 @@ exports[`Input component  should match the snapshot 10`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1.5px solid #999999;
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: initial;
-  height: 44px;
-  min-height: 44px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  outline: none;
-  padding: 10px 12px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
 }
 
-.c3:hover,
-.c3:focus {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
   border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
 }
 
-.c3[disabled] {
-  background-color: #f2f2f2;
+.c2[disabled] {
+  background-color: #cccccc;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c5:hover ~ .c2,
-.c5:focus ~ .c2 {
-  border-color: #1355d0;
-  box-shadow: 0 2px 6px 0 rgba(19,85,208,0.5);
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
-.c4 {
-  color: #4c4c4c;
-  font-size: 1.5em;
+.c3 {
   pointer-events: none;
+  color: #4c4c4c;
 }
 
 .c1 {
@@ -1297,9 +1937,10 @@ exports[`Input component  should match the snapshot 10`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2 c3"
+      className="c2"
       data-toggle={true}
       disabled={false}
+      id="dropdown-9"
       onBlur={[Function]}
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -1310,10 +1951,69 @@ exports[`Input component  should match the snapshot 10`] = `
       baz
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
+          }
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
           }
         }
       >

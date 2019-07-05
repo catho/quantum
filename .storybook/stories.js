@@ -11,6 +11,7 @@ export default [
   'Colors',
   'Grid',
   'Typography',
+  'Theme',
   'Icon',
 
   'Alert',

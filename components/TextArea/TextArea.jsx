@@ -1,48 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { INPUT_STYLE, Label, FieldGroup, ErrorMessage } from '../shared';
-import uniqId from '../shared/uniqId';
+import { FieldGroup, uniqId } from '../shared';
+import {
+  InputLabel,
+  InputErrorMessage,
+  HelperText,
+  RequiredMark,
+  TextInput,
+} from '../Input/sub-components';
 
 const ID_GENERATOR = uniqId('textarea-');
 
-const {
-  default: DEFAULT_INPUT_STYLE,
-  LABEL_STYLE,
-  HELPER_TEXT_STYLE,
-  REQUIRED_MARK_STYLE,
-  ERROR_MESSAGE_STYLE,
-} = INPUT_STYLE;
-
-const TextAreaTag = styled.textarea`
-  ${DEFAULT_INPUT_STYLE};
-
+const TextAreaTag = styled(TextInput)`
   display: block;
   min-height: 108px;
   margin-top: 8px;
   transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-`;
-
-const TextAreaLabel = styled(Label)`
-  ${LABEL_STYLE}
-`;
-
-const HelperText = styled.span`
-  ${HELPER_TEXT_STYLE}
-`;
-
-const RequiredMark = styled.em`
-  ${REQUIRED_MARK_STYLE}
-`;
-
-const TextAreaErrorMessage = styled(ErrorMessage)`
-  ${ERROR_MESSAGE_STYLE}
-
-  ${({ helperText }) =>
-    helperText &&
-    `
-    padding-top: 2px;
-  `}
 `;
 
 class TextArea extends React.Component {
@@ -60,22 +34,21 @@ class TextArea extends React.Component {
     return (
       <FieldGroup>
         {label && (
-          <TextAreaLabel htmlFor={this._id}>
+          <InputLabel htmlFor={this._id}>
             {label}
             {required && <RequiredMark>*</RequiredMark>}
-          </TextAreaLabel>
+          </InputLabel>
         )}
         <TextAreaTag
           error={error}
           id={this._id}
           required={required}
+          as="textarea"
           {...rest}
         />
         {helperText && <HelperText>{helperText}</HelperText>}
         {error && (
-          <TextAreaErrorMessage helperText={helperText}>
-            {error}
-          </TextAreaErrorMessage>
+          <InputErrorMessage helperText={helperText}>{error}</InputErrorMessage>
         )}
       </FieldGroup>
     );
@@ -107,8 +80,5 @@ TextArea.propTypes = {
 };
 
 TextAreaTag.displayName = 'TextAreaTag';
-TextAreaLabel.displayName = 'TextAreaLabel';
-HelperText.displayName = 'HelperText';
-TextAreaErrorMessage.displayName = 'TextAreaErrorMessage';
 
 export default TextArea;

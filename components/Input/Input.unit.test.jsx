@@ -77,7 +77,7 @@ describe('Input component', () => {
       />,
     );
 
-    const placeholderProp = component.find('InputTag').prop('placeholder');
+    const placeholderProp = component.find('TextInput').prop('placeholder');
     expect(placeholderProp).toEqual(placeholderContent);
   });
 
@@ -121,7 +121,7 @@ describe('Input component', () => {
     it('should match label "htmlFor" label param with "id" input param', () => {
       const id = 'input-id';
       const wrapper = mount(<Input label="Text label" id={id} />);
-      const input = wrapper.find('InputTag');
+      const input = wrapper.find('TextInput');
       const label = wrapper.find('InputLabel');
       const labelHtmlFor = label.prop('htmlFor');
       const inputId = input.prop('id');

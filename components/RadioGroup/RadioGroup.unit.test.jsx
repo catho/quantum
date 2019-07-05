@@ -136,6 +136,15 @@ describe('<RadioGroup />', () => {
       expect(renderer.create(component)).toMatchSnapshot();
     });
 
+    it('with an error', () => {
+      const component = (
+        <RadioGroup name="groceries" error="Error text">
+          <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
+        </RadioGroup>
+      );
+      expect(renderer.create(component)).toMatchSnapshot();
+    });
+
     it('should render the same', () => {
       const options = [
         { value: 'Foo', label: 'Foo' },
