@@ -16,6 +16,19 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/755101?v=4",
       "profile": "https://github.com/ddsilva",
       "contributions": [
+        "doc",
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "ggdaltoso",
+      "name": "Gabriel Daltoso",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6536985?v=4",
+      "profile": "https://twitter.com/ggdaltoso",
+      "contributions": [
         "code"
       ]
     }
