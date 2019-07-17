@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography component Should add standart typeface on SSR via tag link 1`] = `
+<link
+  href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap"
+  rel="stylesheet"
+/>
+`;

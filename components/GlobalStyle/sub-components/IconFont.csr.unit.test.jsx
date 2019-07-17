@@ -5,7 +5,7 @@ import IconFont from './IconFont';
 import { expectCSSMatches } from '../test.utils';
 
 describe('IconFont component', () => {
-  it('Should add icon typeface', () => {
+  it('Should add icon typeface on CSR via @import', () => {
     renderer.create(<IconFont />);
 
     expectCSSMatches(

@@ -1,0 +1,80 @@
+{
+  "projectName": "quantum",
+  "projectOwner": "catho",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "ddsilva",
+      "name": "Daniel Silva",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/755101?v=4",
+      "profile": "https://github.com/ddsilva",
+      "contributions": [
+        "doc",
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "ggdaltoso",
+      "name": "Gabriel Daltoso",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6536985?v=4",
+      "profile": "https://twitter.com/ggdaltoso",
+      "contributions": [
+        "doc",
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "allyssonsantos",
+      "name": "Allysson dos Santos",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13424727?v=4",
+      "profile": "https://twitter.com/_allyssonsantos",
+      "contributions": [
+        "code",
+        "review",
+        "doc",
+        "test",
+        "ideas"
+      ]
+    },
+    {
+      "login": "alan-oliv",
+      "name": "Alan Oliveira",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4368481?v=4",
+      "profile": "https://github.com/alan-oliv",
+      "contributions": [
+        "code",
+        "review",
+        "doc",
+        "test",
+        "ideas"
+      ]
+    },
+    {
+      "login": "rapahaeru",
+      "name": "Raphael Oliveira",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3389749?v=4",
+      "profile": "https://github.com/rapahaeru",
+      "contributions": [
+        "code",
+        "review",
+        "doc",
+        "test",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

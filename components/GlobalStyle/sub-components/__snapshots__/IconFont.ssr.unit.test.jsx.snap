@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconFont component Should add icon typeface on SSR via tag link 1`] = `
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block"
+  rel="stylesheet"
+/>
+`;
