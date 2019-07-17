@@ -1,0 +1,24 @@
+{
+  "projectName": "quantum",
+  "projectOwner": "catho",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "ddsilva",
+      "name": "Daniel Silva",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/755101?v=4",
+      "profile": "https://github.com/ddsilva",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
