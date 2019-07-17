@@ -48,6 +48,19 @@
         "test",
         "ideas"
       ]
+    },
+    {
+      "login": "alan-oliv",
+      "name": "Alan Oliveira",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4368481?v=4",
+      "profile": "https://github.com/alan-oliv",
+      "contributions": [
+        "code",
+        "review",
+        "doc",
+        "test",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7
