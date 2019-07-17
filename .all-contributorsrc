@@ -61,6 +61,19 @@
         "test",
         "ideas"
       ]
+    },
+    {
+      "login": "rapahaeru",
+      "name": "Raphael Oliveira",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3389749?v=4",
+      "profile": "https://github.com/rapahaeru",
+      "contributions": [
+        "code",
+        "review",
+        "doc",
+        "test",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7
