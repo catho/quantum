@@ -33,8 +33,8 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
@@ -139,8 +139,8 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -245,8 +245,8 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -351,8 +351,8 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -457,8 +457,8 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -563,8 +563,8 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -684,8 +684,8 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -805,8 +805,8 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;

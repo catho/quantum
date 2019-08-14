@@ -19,7 +19,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bScnSo\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 faeGLX\\"
         disabled={false}
 -       htmlFor=\\"radio-button-9\\"
 +       htmlFor=\\"radio-button-12\\"
@@ -47,7 +47,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bScnSo\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 faeGLX\\"
         disabled={false}
 -       htmlFor=\\"radio-button-10\\"
 +       htmlFor=\\"radio-button-13\\"
@@ -75,7 +75,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bScnSo\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 faeGLX\\"
         disabled={false}
 -       htmlFor=\\"radio-button-11\\"
 +       htmlFor=\\"radio-button-14\\"
@@ -154,8 +154,8 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -346,8 +346,8 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
@@ -692,8 +692,8 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;

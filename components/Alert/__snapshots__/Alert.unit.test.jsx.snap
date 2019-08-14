@@ -26,8 +26,8 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
@@ -194,8 +194,8 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
@@ -373,8 +373,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
@@ -541,8 +541,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
@@ -719,8 +719,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
@@ -907,8 +907,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
@@ -1105,8 +1105,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 6px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
