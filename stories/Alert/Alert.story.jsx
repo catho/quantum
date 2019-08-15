@@ -17,14 +17,22 @@ const sampleChildren = (
   </span>
 );
 
-storiesOf('Alert', module).add('Alert', () => (
-  <AutoExample
-    description={description}
-    component={Alert}
-    componentProps={{
-      children: sampleChildren,
-      onClose: () => {},
-      icon: 'info',
-    }}
-  />
-));
+const props = {
+  onClose: () => {},
+  icon: 'info',
+};
+
+const autoExampleProps = {
+  ...props,
+  children: sampleChildren,
+};
+
+storiesOf('Alert', module)
+  .add('Alert', () => (
+    <AutoExample
+      description={description}
+      component={Alert}
+      componentProps={autoExampleProps}
+    />
+  ))
+  .add('Pure', () => <Alert {...props}>{sampleChildren}</Alert>);
