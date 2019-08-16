@@ -194,7 +194,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -205,7 +205,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 .c2:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c3 {
@@ -235,7 +235,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -389,7 +389,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -400,7 +400,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 .c2:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c3 {
@@ -430,7 +430,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -627,7 +627,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -638,7 +638,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 .c2:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c3 {
@@ -668,7 +668,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -829,7 +829,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -840,7 +840,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 .c3:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c2 {
@@ -870,7 +870,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -1075,7 +1075,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -1086,7 +1086,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 .c5:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c2 {
@@ -1116,7 +1116,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -1312,7 +1312,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -1323,7 +1323,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 .c5:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c2 {
@@ -1353,7 +1353,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -1549,7 +1549,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -1560,7 +1560,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 .c5:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c2 {
@@ -1590,7 +1590,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -1758,7 +1758,7 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -1769,7 +1769,7 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
 .c2:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .c0 {

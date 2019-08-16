@@ -16,7 +16,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 kNoFpO\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 ejOBtZ\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -52,7 +52,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 kNoFpO\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 ejOBtZ\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -88,7 +88,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 kNoFpO\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 ejOBtZ\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -444,7 +444,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   font-size: 16px;
   margin-top: 2px;
@@ -653,7 +653,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   font-size: 16px;
   margin-top: 2px;
@@ -1737,7 +1737,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   font-size: 16px;
   margin-top: 2px;
@@ -1807,7 +1807,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   font-size: 16px;
   margin-top: 2px;
@@ -2045,7 +2045,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   font-size: 16px;
   margin-top: 2px;
@@ -2105,7 +2105,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 18px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   font-size: 16px;
   margin-top: 2px;

@@ -27,15 +27,15 @@ const PageButton = styled.a`
     theme: {
       baseFontSize,
       colors: {
-        neutral: { 100: neutral100, 300: neutral300, 700: neutral700 },
+        neutral: { 0: neutral0, 300: neutral300, 700: neutral700 },
         primary: { 100: primary100, 500: primary500, 900: primary900 },
       },
       spacing: { xxsmall, xsmall },
     },
   }) => `
-    background-color: ${active ? primary500 : neutral100};
+    background-color: ${active ? primary500 : neutral0};
     border: 1px solid ${active ? primary500 : neutral300};
-    color: ${active ? neutral100 : neutral700};
+    color: ${active ? neutral0 : neutral700};
     font-size: ${baseFontSize}px;
     font-weight: ${active ? '700' : 'normal'};
     margin: 0 ${xxsmall}px;
@@ -45,7 +45,7 @@ const PageButton = styled.a`
     :focus {
       background-color: ${active ? primary900 : primary100};
       border-color: ${active ? primary900 : primary500};
-      color: ${active ? neutral100 : primary500};
+      color: ${active ? neutral0 : primary500};
     }
   `}
 `;
