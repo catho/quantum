@@ -22,7 +22,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <ForwardRef
+      "children": <ForwardRef(Item__ListItem)
         bullet=""
       >
         
@@ -31,7 +31,7 @@ ShallowWrapper {
           header=""
           subheader=""
         />
-      </ForwardRef>,
+      </ForwardRef(Item__ListItem)>,
     },
     "ref": null,
     "rendered": Object {
@@ -97,7 +97,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <ForwardRef
+        "children": <ForwardRef(Item__ListItem)
           bullet=""
         >
           
@@ -106,7 +106,7 @@ ShallowWrapper {
             header=""
             subheader=""
           />
-        </ForwardRef>,
+        </ForwardRef(Item__ListItem)>,
       },
       "ref": null,
       "rendered": Object {
