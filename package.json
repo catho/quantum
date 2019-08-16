@@ -24,10 +24,12 @@
     "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
     "lint": "eslint --ext js,jsx --quiet",
     "prepush": "yarn lint:all && yarn test:components",
-    "storybook": "start-storybook -s static",
+    "storybook": "start-storybook -s static --port 9009",
     "format": "prettier --write ./**/*.{js,jsx,json}",
     "deploy-storybook": "storybook-to-ghpages",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "loki:test": "yarn loki test --storiesFilter=pure --port 9009",
+    "loki:update": "yarn loki update --storiesFilter=pure --port 9009"
   },
   "repository": {
     "type": "git",

@@ -35,4 +35,20 @@ storiesOf('Alert', module)
       componentProps={autoExampleProps}
     />
   ))
-  .add('Pure', () => <Alert {...props}>{sampleChildren}</Alert>);
+  .add('Pure', () => (
+    <>
+      <Alert {...props}>{sampleChildren}</Alert>
+      <Alert {...props} skin={'primary'}>
+        {sampleChildren}
+      </Alert>
+      <Alert {...props} skin={'success'}>
+        {sampleChildren}
+      </Alert>
+      <Alert {...props} skin={'error'}>
+        {sampleChildren}
+      </Alert>
+      <Alert {...props} skin={'warning'}>
+        {sampleChildren}
+      </Alert>
+    </>
+  ));

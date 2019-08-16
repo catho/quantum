@@ -75,13 +75,24 @@ const TabExample = (
 const description = `Badges are used for showing quantity of something, as
 warnings, inbox messages and others.`;
 
-storiesOf('Badge', module).add('Badge', () => (
-  <AutoExample
-    description={description}
-    component={Badge}
-    componentProps={{
-      number: 10,
-    }}
-    additionalTabs={TabExample}
-  />
-));
+storiesOf('Badge', module)
+  .add('Badge', () => (
+    <AutoExample
+      description={description}
+      component={Badge}
+      componentProps={{
+        number: 10,
+      }}
+      additionalTabs={TabExample}
+    />
+  ))
+  .add('Pure', () => (
+    <>
+      <Badge number={10} />
+      <Badge number={110} />
+      <Badge number={10} skin={'primary'} />
+      <Badge number={10} skin={'success'} />
+      <Badge number={10} skin={'error'} />
+      <Badge number={10} inverted />
+    </>
+  ));
