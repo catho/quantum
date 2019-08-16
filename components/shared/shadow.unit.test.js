@@ -4,7 +4,7 @@ import hexToRgba from './hexToRgba';
 import { normalizeCSS } from '../GlobalStyle/test.utils';
 
 const [opacity0, opacity1, opacity2] = [0.2, 0.14, 0.12];
-const normalize = str => normalizeCSS(str.trimStart().split('\n'));
+const normalize = str => normalizeCSS(str.trimLeft().split('\n'));
 
 describe('Shadow helper', () => {
   describe('without a color', () => {
