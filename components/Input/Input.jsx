@@ -93,7 +93,6 @@ class Input extends React.Component {
 
     this.state = {
       type,
-      isDirty: !!value,
       currentValue: value,
     };
 
@@ -104,10 +103,9 @@ class Input extends React.Component {
 
   onChangeInput(ev) {
     const { onChange } = this.props;
-    const vl = ev.currentTarget.value;
+    const inputValue = ev.currentTarget.value;
     this.setState({
-      currentValue: vl,
-      isDirty: !!vl[0],
+      currentValue: inputValue,
     });
 
     onChange();
@@ -134,15 +132,15 @@ class Input extends React.Component {
       theme,
       ...rest
     } = this.props;
-    const { isDirty, currentValue } = this.state;
+    const { currentValue } = this.state;
     const { type: typeState } = this.state;
 
     const _isSearchType = typeProp === 'search';
     const _isPassword = typeProp === 'password';
-    const _hasIcon = error || _isPassword || isDirty;
+    const hasValue = currentValue && currentValue[0];
+    const _hasIcon = error || _isPassword || hasValue;
     const onCleanClick = e => {
       this.setState({
-        isDirty: false,
         currentValue: '',
       });
       onClean(e);
@@ -191,7 +189,7 @@ class Input extends React.Component {
               onClick={this._toggleInputType}
             />
           )}
-          {isDirty && !_isPassword && !error && (
+          {hasValue && !_isPassword && !error && (
             <InputIcon
               theme={theme}
               name="cancel"
