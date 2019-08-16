@@ -31,6 +31,7 @@ exports[`Input component should match snapshots 1`] = `
       value=""
     />
     
+    
   </div>
   
   
@@ -196,6 +197,7 @@ exports[`Input component should match snapshots 3`] = `
       value=""
     />
     
+    
   </div>
   
   
@@ -322,6 +324,7 @@ exports[`Input component should match snapshots 4`] = `
     >
       error
     </span>
+    
   </div>
   
   <span
@@ -362,6 +365,7 @@ exports[`Input component should match snapshots 5`] = `
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -481,6 +485,7 @@ exports[`Input component should match snapshots 6`] = `
       value=""
     />
     
+    
   </div>
   
   
@@ -518,6 +523,7 @@ exports[`Input component should match snapshots 7`] = `
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -566,6 +572,7 @@ exports[`Input component should match snapshots 8`] = `
       type="text"
       value=""
     />
+    
     
   </div>
   <span
@@ -618,6 +625,7 @@ exports[`Input component should match snapshots 9`] = `
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -748,6 +756,7 @@ exports[`Input component should match snapshots 10`] = `
       value=""
     />
     
+    
   </div>
   
   
@@ -784,6 +793,7 @@ exports[`Input component should match snapshots 11`] = `
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -833,6 +843,7 @@ exports[`Input component should match snapshots 12`] = `
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -892,6 +903,7 @@ exports[`Input component should match snapshots 13`] = `
       value=""
     />
     
+    
   </div>
   
   
@@ -946,6 +958,7 @@ exports[`Input component should match snapshots 14`] = `
       value=""
     />
     
+    
   </div>
   
   
@@ -996,6 +1009,7 @@ exports[`Input component should match snapshots 15`] = `
       value=""
     />
     
+    
   </div>
   
   
@@ -1032,6 +1046,7 @@ exports[`Input component should match snapshots 16`] = `
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -1150,6 +1165,7 @@ exports[`Input component should match snapshots 17`] = `
     >
       visibility
     </span>
+    
   </div>
   
   
