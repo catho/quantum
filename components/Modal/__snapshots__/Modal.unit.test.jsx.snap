@@ -233,7 +233,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
       },
       "colors": Object {
         "error": Object {
+          "0": "#ffffff",
           "100": "#ffe5e9",
+          "1000": "#000000",
           "300": "#ff6c82",
           "500": "#ff2d4d",
           "700": "#ff223d",
@@ -249,28 +251,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "900": "#191919",
         },
         "primary": Object {
+          "0": "#ffffff",
           "100": "#e5edfc",
+          "1000": "#000000",
           "300": "#5a88de",
           "500": "#1355d0",
           "700": "#0e44c4",
           "900": "#062ab3",
         },
         "secondary": Object {
+          "0": "#ffffff",
           "100": "#f5b3cd",
+          "1000": "#000000",
           "300": "#e84d8b",
           "500": "#de0059",
           "700": "#d50048",
           "900": "#c8002e",
         },
         "success": Object {
+          "0": "#ffffff",
           "100": "#edfadf",
+          "1000": "#000000",
           "300": "#a5e064",
           "500": "#7ed321",
           "700": "#6bc818",
           "900": "#3c6510",
         },
         "warning": Object {
+          "0": "#ffffff",
           "100": "#ffefd6",
+          "1000": "#000000",
           "300": "#f5b24d",
           "500": "#f09100",
           "700": "#ec7e00",
@@ -282,7 +292,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "skins": Object {
             "error": Object {
               "mainColor": Object {
+                "0": "#ffffff",
                 "100": "#ffe5e9",
+                "1000": "#000000",
                 "300": "#ff6c82",
                 "500": "#ff2d4d",
                 "700": "#ff223d",
@@ -320,7 +332,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
             "primary": Object {
               "mainColor": Object {
+                "0": "#ffffff",
                 "100": "#e5edfc",
+                "1000": "#000000",
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
@@ -338,7 +352,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
             "secondary": Object {
               "mainColor": Object {
+                "0": "#ffffff",
                 "100": "#f5b3cd",
+                "1000": "#000000",
                 "300": "#e84d8b",
                 "500": "#de0059",
                 "700": "#d50048",
@@ -356,7 +372,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
             "success": Object {
               "mainColor": Object {
+                "0": "#ffffff",
                 "100": "#edfadf",
+                "1000": "#000000",
                 "300": "#a5e064",
                 "500": "#7ed321",
                 "700": "#6bc818",
@@ -374,7 +392,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
             "warning": Object {
               "mainColor": Object {
+                "0": "#ffffff",
                 "100": "#ffefd6",
+                "1000": "#000000",
                 "300": "#f5b24d",
                 "500": "#f09100",
                 "700": "#ec7e00",
@@ -689,7 +709,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           },
           "colors": Object {
             "error": Object {
+              "0": "#ffffff",
               "100": "#ffe5e9",
+              "1000": "#000000",
               "300": "#ff6c82",
               "500": "#ff2d4d",
               "700": "#ff223d",
@@ -705,28 +727,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "900": "#191919",
             },
             "primary": Object {
+              "0": "#ffffff",
               "100": "#e5edfc",
+              "1000": "#000000",
               "300": "#5a88de",
               "500": "#1355d0",
               "700": "#0e44c4",
               "900": "#062ab3",
             },
             "secondary": Object {
+              "0": "#ffffff",
               "100": "#f5b3cd",
+              "1000": "#000000",
               "300": "#e84d8b",
               "500": "#de0059",
               "700": "#d50048",
               "900": "#c8002e",
             },
             "success": Object {
+              "0": "#ffffff",
               "100": "#edfadf",
+              "1000": "#000000",
               "300": "#a5e064",
               "500": "#7ed321",
               "700": "#6bc818",
               "900": "#3c6510",
             },
             "warning": Object {
+              "0": "#ffffff",
               "100": "#ffefd6",
+              "1000": "#000000",
               "300": "#f5b24d",
               "500": "#f09100",
               "700": "#ec7e00",
@@ -738,7 +768,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "skins": Object {
                 "error": Object {
                   "mainColor": Object {
+                    "0": "#ffffff",
                     "100": "#ffe5e9",
+                    "1000": "#000000",
                     "300": "#ff6c82",
                     "500": "#ff2d4d",
                     "700": "#ff223d",
@@ -776,7 +808,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 },
                 "primary": Object {
                   "mainColor": Object {
+                    "0": "#ffffff",
                     "100": "#e5edfc",
+                    "1000": "#000000",
                     "300": "#5a88de",
                     "500": "#1355d0",
                     "700": "#0e44c4",
@@ -794,7 +828,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 },
                 "secondary": Object {
                   "mainColor": Object {
+                    "0": "#ffffff",
                     "100": "#f5b3cd",
+                    "1000": "#000000",
                     "300": "#e84d8b",
                     "500": "#de0059",
                     "700": "#d50048",
@@ -812,7 +848,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 },
                 "success": Object {
                   "mainColor": Object {
+                    "0": "#ffffff",
                     "100": "#edfadf",
+                    "1000": "#000000",
                     "300": "#a5e064",
                     "500": "#7ed321",
                     "700": "#6bc818",
@@ -830,7 +868,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 },
                 "warning": Object {
                   "mainColor": Object {
+                    "0": "#ffffff",
                     "100": "#ffefd6",
+                    "1000": "#000000",
                     "300": "#f5b24d",
                     "500": "#f09100",
                     "700": "#ec7e00",
@@ -963,7 +1003,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
             "colors": Object {
               "error": Object {
+                "0": "#ffffff",
                 "100": "#ffe5e9",
+                "1000": "#000000",
                 "300": "#ff6c82",
                 "500": "#ff2d4d",
                 "700": "#ff223d",
@@ -979,28 +1021,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#191919",
               },
               "primary": Object {
+                "0": "#ffffff",
                 "100": "#e5edfc",
+                "1000": "#000000",
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
                 "900": "#062ab3",
               },
               "secondary": Object {
+                "0": "#ffffff",
                 "100": "#f5b3cd",
+                "1000": "#000000",
                 "300": "#e84d8b",
                 "500": "#de0059",
                 "700": "#d50048",
                 "900": "#c8002e",
               },
               "success": Object {
+                "0": "#ffffff",
                 "100": "#edfadf",
+                "1000": "#000000",
                 "300": "#a5e064",
                 "500": "#7ed321",
                 "700": "#6bc818",
                 "900": "#3c6510",
               },
               "warning": Object {
+                "0": "#ffffff",
                 "100": "#ffefd6",
+                "1000": "#000000",
                 "300": "#f5b24d",
                 "500": "#f09100",
                 "700": "#ec7e00",
@@ -1012,7 +1062,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#ffe5e9",
+                      "1000": "#000000",
                       "300": "#ff6c82",
                       "500": "#ff2d4d",
                       "700": "#ff223d",
@@ -1050,7 +1102,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                   "primary": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#e5edfc",
+                      "1000": "#000000",
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
@@ -1068,7 +1122,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                   "secondary": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#f5b3cd",
+                      "1000": "#000000",
                       "300": "#e84d8b",
                       "500": "#de0059",
                       "700": "#d50048",
@@ -1086,7 +1142,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                   "success": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#edfadf",
+                      "1000": "#000000",
                       "300": "#a5e064",
                       "500": "#7ed321",
                       "700": "#6bc818",
@@ -1104,7 +1162,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                   "warning": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#ffefd6",
+                      "1000": "#000000",
                       "300": "#f5b24d",
                       "500": "#f09100",
                       "700": "#ec7e00",
@@ -1168,7 +1228,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 },
                 "colors": Object {
                   "error": Object {
+                    "0": "#ffffff",
                     "100": "#ffe5e9",
+                    "1000": "#000000",
                     "300": "#ff6c82",
                     "500": "#ff2d4d",
                     "700": "#ff223d",
@@ -1184,28 +1246,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#191919",
                   },
                   "primary": Object {
+                    "0": "#ffffff",
                     "100": "#e5edfc",
+                    "1000": "#000000",
                     "300": "#5a88de",
                     "500": "#1355d0",
                     "700": "#0e44c4",
                     "900": "#062ab3",
                   },
                   "secondary": Object {
+                    "0": "#ffffff",
                     "100": "#f5b3cd",
+                    "1000": "#000000",
                     "300": "#e84d8b",
                     "500": "#de0059",
                     "700": "#d50048",
                     "900": "#c8002e",
                   },
                   "success": Object {
+                    "0": "#ffffff",
                     "100": "#edfadf",
+                    "1000": "#000000",
                     "300": "#a5e064",
                     "500": "#7ed321",
                     "700": "#6bc818",
                     "900": "#3c6510",
                   },
                   "warning": Object {
+                    "0": "#ffffff",
                     "100": "#ffefd6",
+                    "1000": "#000000",
                     "300": "#f5b24d",
                     "500": "#f09100",
                     "700": "#ec7e00",
@@ -1217,7 +1287,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "skins": Object {
                       "error": Object {
                         "mainColor": Object {
+                          "0": "#ffffff",
                           "100": "#ffe5e9",
+                          "1000": "#000000",
                           "300": "#ff6c82",
                           "500": "#ff2d4d",
                           "700": "#ff223d",
@@ -1255,7 +1327,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                       "primary": Object {
                         "mainColor": Object {
+                          "0": "#ffffff",
                           "100": "#e5edfc",
+                          "1000": "#000000",
                           "300": "#5a88de",
                           "500": "#1355d0",
                           "700": "#0e44c4",
@@ -1273,7 +1347,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                       "secondary": Object {
                         "mainColor": Object {
+                          "0": "#ffffff",
                           "100": "#f5b3cd",
+                          "1000": "#000000",
                           "300": "#e84d8b",
                           "500": "#de0059",
                           "700": "#d50048",
@@ -1291,7 +1367,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                       "success": Object {
                         "mainColor": Object {
+                          "0": "#ffffff",
                           "100": "#edfadf",
+                          "1000": "#000000",
                           "300": "#a5e064",
                           "500": "#7ed321",
                           "700": "#6bc818",
@@ -1309,7 +1387,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                       "warning": Object {
                         "mainColor": Object {
+                          "0": "#ffffff",
                           "100": "#ffefd6",
+                          "1000": "#000000",
                           "300": "#f5b24d",
                           "500": "#f09100",
                           "700": "#ec7e00",
@@ -1537,7 +1617,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                   "colors": Object {
                     "error": Object {
+                      "0": "#ffffff",
                       "100": "#ffe5e9",
+                      "1000": "#000000",
                       "300": "#ff6c82",
                       "500": "#ff2d4d",
                       "700": "#ff223d",
@@ -1553,28 +1635,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#191919",
                     },
                     "primary": Object {
+                      "0": "#ffffff",
                       "100": "#e5edfc",
+                      "1000": "#000000",
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
                       "900": "#062ab3",
                     },
                     "secondary": Object {
+                      "0": "#ffffff",
                       "100": "#f5b3cd",
+                      "1000": "#000000",
                       "300": "#e84d8b",
                       "500": "#de0059",
                       "700": "#d50048",
                       "900": "#c8002e",
                     },
                     "success": Object {
+                      "0": "#ffffff",
                       "100": "#edfadf",
+                      "1000": "#000000",
                       "300": "#a5e064",
                       "500": "#7ed321",
                       "700": "#6bc818",
                       "900": "#3c6510",
                     },
                     "warning": Object {
+                      "0": "#ffffff",
                       "100": "#ffefd6",
+                      "1000": "#000000",
                       "300": "#f5b24d",
                       "500": "#f09100",
                       "700": "#ec7e00",
@@ -1586,7 +1676,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
+                            "0": "#ffffff",
                             "100": "#ffe5e9",
+                            "1000": "#000000",
                             "300": "#ff6c82",
                             "500": "#ff2d4d",
                             "700": "#ff223d",
@@ -1624,7 +1716,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                         "primary": Object {
                           "mainColor": Object {
+                            "0": "#ffffff",
                             "100": "#e5edfc",
+                            "1000": "#000000",
                             "300": "#5a88de",
                             "500": "#1355d0",
                             "700": "#0e44c4",
@@ -1642,7 +1736,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                         "secondary": Object {
                           "mainColor": Object {
+                            "0": "#ffffff",
                             "100": "#f5b3cd",
+                            "1000": "#000000",
                             "300": "#e84d8b",
                             "500": "#de0059",
                             "700": "#d50048",
@@ -1660,7 +1756,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                         "success": Object {
                           "mainColor": Object {
+                            "0": "#ffffff",
                             "100": "#edfadf",
+                            "1000": "#000000",
                             "300": "#a5e064",
                             "500": "#7ed321",
                             "700": "#6bc818",
@@ -1678,7 +1776,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                         "warning": Object {
                           "mainColor": Object {
+                            "0": "#ffffff",
                             "100": "#ffefd6",
+                            "1000": "#000000",
                             "300": "#f5b24d",
                             "500": "#f09100",
                             "700": "#ec7e00",
@@ -1738,7 +1838,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     },
                     "colors": Object {
                       "error": Object {
+                        "0": "#ffffff",
                         "100": "#ffe5e9",
+                        "1000": "#000000",
                         "300": "#ff6c82",
                         "500": "#ff2d4d",
                         "700": "#ff223d",
@@ -1754,28 +1856,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "900": "#191919",
                       },
                       "primary": Object {
+                        "0": "#ffffff",
                         "100": "#e5edfc",
+                        "1000": "#000000",
                         "300": "#5a88de",
                         "500": "#1355d0",
                         "700": "#0e44c4",
                         "900": "#062ab3",
                       },
                       "secondary": Object {
+                        "0": "#ffffff",
                         "100": "#f5b3cd",
+                        "1000": "#000000",
                         "300": "#e84d8b",
                         "500": "#de0059",
                         "700": "#d50048",
                         "900": "#c8002e",
                       },
                       "success": Object {
+                        "0": "#ffffff",
                         "100": "#edfadf",
+                        "1000": "#000000",
                         "300": "#a5e064",
                         "500": "#7ed321",
                         "700": "#6bc818",
                         "900": "#3c6510",
                       },
                       "warning": Object {
+                        "0": "#ffffff",
                         "100": "#ffefd6",
+                        "1000": "#000000",
                         "300": "#f5b24d",
                         "500": "#f09100",
                         "700": "#ec7e00",
@@ -1787,7 +1897,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
+                              "0": "#ffffff",
                               "100": "#ffe5e9",
+                              "1000": "#000000",
                               "300": "#ff6c82",
                               "500": "#ff2d4d",
                               "700": "#ff223d",
@@ -1825,7 +1937,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                           "primary": Object {
                             "mainColor": Object {
+                              "0": "#ffffff",
                               "100": "#e5edfc",
+                              "1000": "#000000",
                               "300": "#5a88de",
                               "500": "#1355d0",
                               "700": "#0e44c4",
@@ -1843,7 +1957,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                           "secondary": Object {
                             "mainColor": Object {
+                              "0": "#ffffff",
                               "100": "#f5b3cd",
+                              "1000": "#000000",
                               "300": "#e84d8b",
                               "500": "#de0059",
                               "700": "#d50048",
@@ -1861,7 +1977,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                           "success": Object {
                             "mainColor": Object {
+                              "0": "#ffffff",
                               "100": "#edfadf",
+                              "1000": "#000000",
                               "300": "#a5e064",
                               "500": "#7ed321",
                               "700": "#6bc818",
@@ -1879,7 +1997,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                           "warning": Object {
                             "mainColor": Object {
+                              "0": "#ffffff",
                               "100": "#ffefd6",
+                              "1000": "#000000",
                               "300": "#f5b24d",
                               "500": "#f09100",
                               "700": "#ec7e00",
@@ -1939,7 +2059,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                       "colors": Object {
                         "error": Object {
+                          "0": "#ffffff",
                           "100": "#ffe5e9",
+                          "1000": "#000000",
                           "300": "#ff6c82",
                           "500": "#ff2d4d",
                           "700": "#ff223d",
@@ -1955,28 +2077,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#191919",
                         },
                         "primary": Object {
+                          "0": "#ffffff",
                           "100": "#e5edfc",
+                          "1000": "#000000",
                           "300": "#5a88de",
                           "500": "#1355d0",
                           "700": "#0e44c4",
                           "900": "#062ab3",
                         },
                         "secondary": Object {
+                          "0": "#ffffff",
                           "100": "#f5b3cd",
+                          "1000": "#000000",
                           "300": "#e84d8b",
                           "500": "#de0059",
                           "700": "#d50048",
                           "900": "#c8002e",
                         },
                         "success": Object {
+                          "0": "#ffffff",
                           "100": "#edfadf",
+                          "1000": "#000000",
                           "300": "#a5e064",
                           "500": "#7ed321",
                           "700": "#6bc818",
                           "900": "#3c6510",
                         },
                         "warning": Object {
+                          "0": "#ffffff",
                           "100": "#ffefd6",
+                          "1000": "#000000",
                           "300": "#f5b24d",
                           "500": "#f09100",
                           "700": "#ec7e00",
@@ -1988,7 +2118,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "skins": Object {
                             "error": Object {
                               "mainColor": Object {
+                                "0": "#ffffff",
                                 "100": "#ffe5e9",
+                                "1000": "#000000",
                                 "300": "#ff6c82",
                                 "500": "#ff2d4d",
                                 "700": "#ff223d",
@@ -2026,7 +2158,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                             "primary": Object {
                               "mainColor": Object {
+                                "0": "#ffffff",
                                 "100": "#e5edfc",
+                                "1000": "#000000",
                                 "300": "#5a88de",
                                 "500": "#1355d0",
                                 "700": "#0e44c4",
@@ -2044,7 +2178,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                             "secondary": Object {
                               "mainColor": Object {
+                                "0": "#ffffff",
                                 "100": "#f5b3cd",
+                                "1000": "#000000",
                                 "300": "#e84d8b",
                                 "500": "#de0059",
                                 "700": "#d50048",
@@ -2062,7 +2198,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                             "success": Object {
                               "mainColor": Object {
+                                "0": "#ffffff",
                                 "100": "#edfadf",
+                                "1000": "#000000",
                                 "300": "#a5e064",
                                 "500": "#7ed321",
                                 "700": "#6bc818",
@@ -2080,7 +2218,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                             "warning": Object {
                               "mainColor": Object {
+                                "0": "#ffffff",
                                 "100": "#ffefd6",
+                                "1000": "#000000",
                                 "300": "#f5b24d",
                                 "500": "#f09100",
                                 "700": "#ec7e00",
@@ -2166,7 +2306,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                         "colors": Object {
                           "error": Object {
+                            "0": "#ffffff",
                             "100": "#ffe5e9",
+                            "1000": "#000000",
                             "300": "#ff6c82",
                             "500": "#ff2d4d",
                             "700": "#ff223d",
@@ -2182,28 +2324,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#191919",
                           },
                           "primary": Object {
+                            "0": "#ffffff",
                             "100": "#e5edfc",
+                            "1000": "#000000",
                             "300": "#5a88de",
                             "500": "#1355d0",
                             "700": "#0e44c4",
                             "900": "#062ab3",
                           },
                           "secondary": Object {
+                            "0": "#ffffff",
                             "100": "#f5b3cd",
+                            "1000": "#000000",
                             "300": "#e84d8b",
                             "500": "#de0059",
                             "700": "#d50048",
                             "900": "#c8002e",
                           },
                           "success": Object {
+                            "0": "#ffffff",
                             "100": "#edfadf",
+                            "1000": "#000000",
                             "300": "#a5e064",
                             "500": "#7ed321",
                             "700": "#6bc818",
                             "900": "#3c6510",
                           },
                           "warning": Object {
+                            "0": "#ffffff",
                             "100": "#ffefd6",
+                            "1000": "#000000",
                             "300": "#f5b24d",
                             "500": "#f09100",
                             "700": "#ec7e00",
@@ -2215,7 +2365,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
+                                  "0": "#ffffff",
                                   "100": "#ffe5e9",
+                                  "1000": "#000000",
                                   "300": "#ff6c82",
                                   "500": "#ff2d4d",
                                   "700": "#ff223d",
@@ -2253,7 +2405,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                               "primary": Object {
                                 "mainColor": Object {
+                                  "0": "#ffffff",
                                   "100": "#e5edfc",
+                                  "1000": "#000000",
                                   "300": "#5a88de",
                                   "500": "#1355d0",
                                   "700": "#0e44c4",
@@ -2271,7 +2425,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                               "secondary": Object {
                                 "mainColor": Object {
+                                  "0": "#ffffff",
                                   "100": "#f5b3cd",
+                                  "1000": "#000000",
                                   "300": "#e84d8b",
                                   "500": "#de0059",
                                   "700": "#d50048",
@@ -2289,7 +2445,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                               "success": Object {
                                 "mainColor": Object {
+                                  "0": "#ffffff",
                                   "100": "#edfadf",
+                                  "1000": "#000000",
                                   "300": "#a5e064",
                                   "500": "#7ed321",
                                   "700": "#6bc818",
@@ -2307,7 +2465,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                               "warning": Object {
                                 "mainColor": Object {
+                                  "0": "#ffffff",
                                   "100": "#ffefd6",
+                                  "1000": "#000000",
                                   "300": "#f5b24d",
                                   "500": "#f09100",
                                   "700": "#ec7e00",
@@ -2756,7 +2916,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                             "colors": Object {
                               "error": Object {
+                                "0": "#ffffff",
                                 "100": "#ffe5e9",
+                                "1000": "#000000",
                                 "300": "#ff6c82",
                                 "500": "#ff2d4d",
                                 "700": "#ff223d",
@@ -2772,28 +2934,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#191919",
                               },
                               "primary": Object {
+                                "0": "#ffffff",
                                 "100": "#e5edfc",
+                                "1000": "#000000",
                                 "300": "#5a88de",
                                 "500": "#1355d0",
                                 "700": "#0e44c4",
                                 "900": "#062ab3",
                               },
                               "secondary": Object {
+                                "0": "#ffffff",
                                 "100": "#f5b3cd",
+                                "1000": "#000000",
                                 "300": "#e84d8b",
                                 "500": "#de0059",
                                 "700": "#d50048",
                                 "900": "#c8002e",
                               },
                               "success": Object {
+                                "0": "#ffffff",
                                 "100": "#edfadf",
+                                "1000": "#000000",
                                 "300": "#a5e064",
                                 "500": "#7ed321",
                                 "700": "#6bc818",
                                 "900": "#3c6510",
                               },
                               "warning": Object {
+                                "0": "#ffffff",
                                 "100": "#ffefd6",
+                                "1000": "#000000",
                                 "300": "#f5b24d",
                                 "500": "#f09100",
                                 "700": "#ec7e00",
@@ -2805,7 +2975,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
+                                      "0": "#ffffff",
                                       "100": "#ffe5e9",
+                                      "1000": "#000000",
                                       "300": "#ff6c82",
                                       "500": "#ff2d4d",
                                       "700": "#ff223d",
@@ -2843,7 +3015,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   },
                                   "primary": Object {
                                     "mainColor": Object {
+                                      "0": "#ffffff",
                                       "100": "#e5edfc",
+                                      "1000": "#000000",
                                       "300": "#5a88de",
                                       "500": "#1355d0",
                                       "700": "#0e44c4",
@@ -2861,7 +3035,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   },
                                   "secondary": Object {
                                     "mainColor": Object {
+                                      "0": "#ffffff",
                                       "100": "#f5b3cd",
+                                      "1000": "#000000",
                                       "300": "#e84d8b",
                                       "500": "#de0059",
                                       "700": "#d50048",
@@ -2879,7 +3055,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   },
                                   "success": Object {
                                     "mainColor": Object {
+                                      "0": "#ffffff",
                                       "100": "#edfadf",
+                                      "1000": "#000000",
                                       "300": "#a5e064",
                                       "500": "#7ed321",
                                       "700": "#6bc818",
@@ -2897,7 +3075,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   },
                                   "warning": Object {
                                     "mainColor": Object {
+                                      "0": "#ffffff",
                                       "100": "#ffefd6",
+                                      "1000": "#000000",
                                       "300": "#f5b24d",
                                       "500": "#f09100",
                                       "700": "#ec7e00",
@@ -2945,7 +3125,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "skins": Object {
                                         "error": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#ffe5e9",
+                                            "1000": "#000000",
                                             "300": "#ff6c82",
                                             "500": "#ff2d4d",
                                             "700": "#ff223d",
@@ -2983,7 +3165,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "primary": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#e5edfc",
+                                            "1000": "#000000",
                                             "300": "#5a88de",
                                             "500": "#1355d0",
                                             "700": "#0e44c4",
@@ -3001,7 +3185,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "secondary": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#f5b3cd",
+                                            "1000": "#000000",
                                             "300": "#e84d8b",
                                             "500": "#de0059",
                                             "700": "#d50048",
@@ -3019,7 +3205,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "success": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#edfadf",
+                                            "1000": "#000000",
                                             "300": "#a5e064",
                                             "500": "#7ed321",
                                             "700": "#6bc818",
@@ -3037,7 +3225,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "warning": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#ffefd6",
+                                            "1000": "#000000",
                                             "300": "#f5b24d",
                                             "500": "#f09100",
                                             "700": "#ec7e00",
@@ -3132,7 +3322,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                               "colors": Object {
                                 "error": Object {
+                                  "0": "#ffffff",
                                   "100": "#ffe5e9",
+                                  "1000": "#000000",
                                   "300": "#ff6c82",
                                   "500": "#ff2d4d",
                                   "700": "#ff223d",
@@ -3148,28 +3340,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#191919",
                                 },
                                 "primary": Object {
+                                  "0": "#ffffff",
                                   "100": "#e5edfc",
+                                  "1000": "#000000",
                                   "300": "#5a88de",
                                   "500": "#1355d0",
                                   "700": "#0e44c4",
                                   "900": "#062ab3",
                                 },
                                 "secondary": Object {
+                                  "0": "#ffffff",
                                   "100": "#f5b3cd",
+                                  "1000": "#000000",
                                   "300": "#e84d8b",
                                   "500": "#de0059",
                                   "700": "#d50048",
                                   "900": "#c8002e",
                                 },
                                 "success": Object {
+                                  "0": "#ffffff",
                                   "100": "#edfadf",
+                                  "1000": "#000000",
                                   "300": "#a5e064",
                                   "500": "#7ed321",
                                   "700": "#6bc818",
                                   "900": "#3c6510",
                                 },
                                 "warning": Object {
+                                  "0": "#ffffff",
                                   "100": "#ffefd6",
+                                  "1000": "#000000",
                                   "300": "#f5b24d",
                                   "500": "#f09100",
                                   "700": "#ec7e00",
@@ -3181,7 +3381,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
+                                        "0": "#ffffff",
                                         "100": "#ffe5e9",
+                                        "1000": "#000000",
                                         "300": "#ff6c82",
                                         "500": "#ff2d4d",
                                         "700": "#ff223d",
@@ -3219,7 +3421,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     },
                                     "primary": Object {
                                       "mainColor": Object {
+                                        "0": "#ffffff",
                                         "100": "#e5edfc",
+                                        "1000": "#000000",
                                         "300": "#5a88de",
                                         "500": "#1355d0",
                                         "700": "#0e44c4",
@@ -3237,7 +3441,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     },
                                     "secondary": Object {
                                       "mainColor": Object {
+                                        "0": "#ffffff",
                                         "100": "#f5b3cd",
+                                        "1000": "#000000",
                                         "300": "#e84d8b",
                                         "500": "#de0059",
                                         "700": "#d50048",
@@ -3255,7 +3461,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     },
                                     "success": Object {
                                       "mainColor": Object {
+                                        "0": "#ffffff",
                                         "100": "#edfadf",
+                                        "1000": "#000000",
                                         "300": "#a5e064",
                                         "500": "#7ed321",
                                         "700": "#6bc818",
@@ -3273,7 +3481,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     },
                                     "warning": Object {
                                       "mainColor": Object {
+                                        "0": "#ffffff",
                                         "100": "#ffefd6",
+                                        "1000": "#000000",
                                         "300": "#f5b24d",
                                         "500": "#f09100",
                                         "700": "#ec7e00",
@@ -3342,7 +3552,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 },
                                 "colors": Object {
                                   "error": Object {
+                                    "0": "#ffffff",
                                     "100": "#ffe5e9",
+                                    "1000": "#000000",
                                     "300": "#ff6c82",
                                     "500": "#ff2d4d",
                                     "700": "#ff223d",
@@ -3358,28 +3570,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "900": "#191919",
                                   },
                                   "primary": Object {
+                                    "0": "#ffffff",
                                     "100": "#e5edfc",
+                                    "1000": "#000000",
                                     "300": "#5a88de",
                                     "500": "#1355d0",
                                     "700": "#0e44c4",
                                     "900": "#062ab3",
                                   },
                                   "secondary": Object {
+                                    "0": "#ffffff",
                                     "100": "#f5b3cd",
+                                    "1000": "#000000",
                                     "300": "#e84d8b",
                                     "500": "#de0059",
                                     "700": "#d50048",
                                     "900": "#c8002e",
                                   },
                                   "success": Object {
+                                    "0": "#ffffff",
                                     "100": "#edfadf",
+                                    "1000": "#000000",
                                     "300": "#a5e064",
                                     "500": "#7ed321",
                                     "700": "#6bc818",
                                     "900": "#3c6510",
                                   },
                                   "warning": Object {
+                                    "0": "#ffffff",
                                     "100": "#ffefd6",
+                                    "1000": "#000000",
                                     "300": "#f5b24d",
                                     "500": "#f09100",
                                     "700": "#ec7e00",
@@ -3391,7 +3611,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
+                                          "0": "#ffffff",
                                           "100": "#ffe5e9",
+                                          "1000": "#000000",
                                           "300": "#ff6c82",
                                           "500": "#ff2d4d",
                                           "700": "#ff223d",
@@ -3429,7 +3651,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       },
                                       "primary": Object {
                                         "mainColor": Object {
+                                          "0": "#ffffff",
                                           "100": "#e5edfc",
+                                          "1000": "#000000",
                                           "300": "#5a88de",
                                           "500": "#1355d0",
                                           "700": "#0e44c4",
@@ -3447,7 +3671,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       },
                                       "secondary": Object {
                                         "mainColor": Object {
+                                          "0": "#ffffff",
                                           "100": "#f5b3cd",
+                                          "1000": "#000000",
                                           "300": "#e84d8b",
                                           "500": "#de0059",
                                           "700": "#d50048",
@@ -3465,7 +3691,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       },
                                       "success": Object {
                                         "mainColor": Object {
+                                          "0": "#ffffff",
                                           "100": "#edfadf",
+                                          "1000": "#000000",
                                           "300": "#a5e064",
                                           "500": "#7ed321",
                                           "700": "#6bc818",
@@ -3483,7 +3711,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       },
                                       "warning": Object {
                                         "mainColor": Object {
+                                          "0": "#ffffff",
                                           "100": "#ffefd6",
+                                          "1000": "#000000",
                                           "300": "#f5b24d",
                                           "500": "#f09100",
                                           "700": "#ec7e00",
@@ -3552,7 +3782,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   },
                                   "colors": Object {
                                     "error": Object {
+                                      "0": "#ffffff",
                                       "100": "#ffe5e9",
+                                      "1000": "#000000",
                                       "300": "#ff6c82",
                                       "500": "#ff2d4d",
                                       "700": "#ff223d",
@@ -3568,28 +3800,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#191919",
                                     },
                                     "primary": Object {
+                                      "0": "#ffffff",
                                       "100": "#e5edfc",
+                                      "1000": "#000000",
                                       "300": "#5a88de",
                                       "500": "#1355d0",
                                       "700": "#0e44c4",
                                       "900": "#062ab3",
                                     },
                                     "secondary": Object {
+                                      "0": "#ffffff",
                                       "100": "#f5b3cd",
+                                      "1000": "#000000",
                                       "300": "#e84d8b",
                                       "500": "#de0059",
                                       "700": "#d50048",
                                       "900": "#c8002e",
                                     },
                                     "success": Object {
+                                      "0": "#ffffff",
                                       "100": "#edfadf",
+                                      "1000": "#000000",
                                       "300": "#a5e064",
                                       "500": "#7ed321",
                                       "700": "#6bc818",
                                       "900": "#3c6510",
                                     },
                                     "warning": Object {
+                                      "0": "#ffffff",
                                       "100": "#ffefd6",
+                                      "1000": "#000000",
                                       "300": "#f5b24d",
                                       "500": "#f09100",
                                       "700": "#ec7e00",
@@ -3601,7 +3841,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "skins": Object {
                                         "error": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#ffe5e9",
+                                            "1000": "#000000",
                                             "300": "#ff6c82",
                                             "500": "#ff2d4d",
                                             "700": "#ff223d",
@@ -3639,7 +3881,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "primary": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#e5edfc",
+                                            "1000": "#000000",
                                             "300": "#5a88de",
                                             "500": "#1355d0",
                                             "700": "#0e44c4",
@@ -3657,7 +3901,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "secondary": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#f5b3cd",
+                                            "1000": "#000000",
                                             "300": "#e84d8b",
                                             "500": "#de0059",
                                             "700": "#d50048",
@@ -3675,7 +3921,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "success": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#edfadf",
+                                            "1000": "#000000",
                                             "300": "#a5e064",
                                             "500": "#7ed321",
                                             "700": "#6bc818",
@@ -3693,7 +3941,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "warning": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#ffefd6",
+                                            "1000": "#000000",
                                             "300": "#f5b24d",
                                             "500": "#f09100",
                                             "700": "#ec7e00",
@@ -3798,7 +4048,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     },
                                     "colors": Object {
                                       "error": Object {
+                                        "0": "#ffffff",
                                         "100": "#ffe5e9",
+                                        "1000": "#000000",
                                         "300": "#ff6c82",
                                         "500": "#ff2d4d",
                                         "700": "#ff223d",
@@ -3814,28 +4066,36 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#191919",
                                       },
                                       "primary": Object {
+                                        "0": "#ffffff",
                                         "100": "#e5edfc",
+                                        "1000": "#000000",
                                         "300": "#5a88de",
                                         "500": "#1355d0",
                                         "700": "#0e44c4",
                                         "900": "#062ab3",
                                       },
                                       "secondary": Object {
+                                        "0": "#ffffff",
                                         "100": "#f5b3cd",
+                                        "1000": "#000000",
                                         "300": "#e84d8b",
                                         "500": "#de0059",
                                         "700": "#d50048",
                                         "900": "#c8002e",
                                       },
                                       "success": Object {
+                                        "0": "#ffffff",
                                         "100": "#edfadf",
+                                        "1000": "#000000",
                                         "300": "#a5e064",
                                         "500": "#7ed321",
                                         "700": "#6bc818",
                                         "900": "#3c6510",
                                       },
                                       "warning": Object {
+                                        "0": "#ffffff",
                                         "100": "#ffefd6",
+                                        "1000": "#000000",
                                         "300": "#f5b24d",
                                         "500": "#f09100",
                                         "700": "#ec7e00",
@@ -3847,7 +4107,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
+                                              "0": "#ffffff",
                                               "100": "#ffe5e9",
+                                              "1000": "#000000",
                                               "300": "#ff6c82",
                                               "500": "#ff2d4d",
                                               "700": "#ff223d",
@@ -3885,7 +4147,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           },
                                           "primary": Object {
                                             "mainColor": Object {
+                                              "0": "#ffffff",
                                               "100": "#e5edfc",
+                                              "1000": "#000000",
                                               "300": "#5a88de",
                                               "500": "#1355d0",
                                               "700": "#0e44c4",
@@ -3903,7 +4167,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           },
                                           "secondary": Object {
                                             "mainColor": Object {
+                                              "0": "#ffffff",
                                               "100": "#f5b3cd",
+                                              "1000": "#000000",
                                               "300": "#e84d8b",
                                               "500": "#de0059",
                                               "700": "#d50048",
@@ -3921,7 +4187,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           },
                                           "success": Object {
                                             "mainColor": Object {
+                                              "0": "#ffffff",
                                               "100": "#edfadf",
+                                              "1000": "#000000",
                                               "300": "#a5e064",
                                               "500": "#7ed321",
                                               "700": "#6bc818",
@@ -3939,7 +4207,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           },
                                           "warning": Object {
                                             "mainColor": Object {
+                                              "0": "#ffffff",
                                               "100": "#ffefd6",
+                                              "1000": "#000000",
                                               "300": "#f5b24d",
                                               "500": "#f09100",
                                               "700": "#ec7e00",
