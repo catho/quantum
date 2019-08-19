@@ -67,15 +67,15 @@ const StyledButton = styled.button`
   ${({
     size,
     theme: {
-      spacing: { small, medium },
+      spacing: { small, medium, xsmall, xxsmall, large },
     },
   }) => {
     const paddings = {
-      xsmall: `4px ${small}px`,
-      small: `6px ${small}px`,
-      medium: `8px ${medium}px`,
-      large: `10px ${medium}px`,
-      xlarge: `12px ${medium}px`,
+      xsmall: `${xxsmall}px ${small}px`,
+      small: `${small / 2}px ${small}px`,
+      medium: `${xsmall}px ${medium}px`,
+      large: `${xsmall * 1.25}px ${medium}px`,
+      xlarge: `${large / 2}px ${medium}px`,
     };
 
     return `padding: ${paddings[size]};`;
