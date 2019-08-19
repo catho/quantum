@@ -13,6 +13,7 @@ import Icon from '../Icon/Icon';
 
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
+  margin-right: 8px;
 `;
 
 const StyledButton = styled.button`
@@ -34,6 +35,17 @@ const StyledButton = styled.button`
       xlarge: `${baseFontSize * 1.5}px`,
     };
     return `font-size: ${sizes[size]};`;
+  }}
+
+  ${({ size, theme: { baseFontSize } }) => {
+    const sizes = {
+      xsmall: `${baseFontSize * 0.75 * 1.5}px`,
+      small: `${baseFontSize * 0.75 * 1.5}px`,
+      medium: `${baseFontSize * 1.5}px`,
+      large: `${baseFontSize * 1.25 * 1.5}px`,
+      xlarge: `${baseFontSize * 1.5 * 1.5}px`,
+    };
+    return `line-height: ${sizes[size]};`;
   }}
 
   ${({
@@ -59,11 +71,11 @@ const StyledButton = styled.button`
     },
   }) => {
     const paddings = {
-      xsmall: `1px ${small}px`,
-      small: `5px ${small}px`,
-      medium: `6px ${medium}px`,
-      large: `7px ${medium}px`,
-      xlarge: `0 ${medium}px`,
+      xsmall: `4px ${small}px`,
+      small: `6px ${small}px`,
+      medium: `8px ${medium}px`,
+      large: `10px ${medium}px`,
+      xlarge: `12px ${medium}px`,
     };
 
     return `padding: ${paddings[size]};`;
@@ -122,7 +134,7 @@ const StyledButton = styled.button`
       background-color: ${bgColor};
       color: ${textColor};
 
-      border: 1.5px solid ${disabled ? neutral500 : mainColor500};
+      border: 1px solid ${disabled ? neutral500 : mainColor500};
 
       ${shadow(2, neutral500)({ theme })}
 
