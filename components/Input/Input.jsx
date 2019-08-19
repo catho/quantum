@@ -97,11 +97,9 @@ class Input extends React.Component {
     };
 
     this._id = id || ID_GENERATOR.next().value;
-
-    this.onChangeInput = this.onChangeInput.bind(this);
   }
 
-  onChangeInput(ev) {
+  onChangeInput = ev => {
     const { onChange } = this.props;
     const inputValue = ev.currentTarget.value;
     this.setState({
@@ -109,7 +107,7 @@ class Input extends React.Component {
     });
 
     onChange();
-  }
+  };
 
   _changeType = type => {
     this.setState({ type });
