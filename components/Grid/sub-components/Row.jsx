@@ -1,23 +1,12 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { hide, noGutters, query } from './shared';
+import { hide, noGutters } from './shared';
 import { theme as defaultTheme } from '../../shared';
 
-const queryStyle = ({ theme: { breakpoints } }) =>
-  Object.entries(breakpoints).map(
-    ([name, { columns }]) =>
-      query(breakpoints)[name]`
-      grid-template-columns: repeat(${columns}, 1fr);
-    `,
-  );
-
 const Row = styled.div`
-  display: grid;
-  grid-column-gap: var(--gutter);
-  grid-row-gap: var(--gutter);
+  width: 100%;
+  display: flex;
   margin-bottom: var(--gutter);
-  grid-auto-columns: max-content;
-  ${queryStyle}
 
   ${hide}
   ${noGutters}

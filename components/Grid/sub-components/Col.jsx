@@ -46,9 +46,45 @@ const columnPosition = (
 
   const { size, offset } = screenDefinitions[breakpoint];
 
-  const offsetStyle = offset ? `${offset + 1}/` : '';
+  const calculedWidth = size ? (100 / 12) * size : 100;
+  const calculedOffset = offset ? (100 / 12) * size : 100;
 
-  return q`grid-column: ${offsetStyle} span ${size || 12};`;
+  const offsetStyle = offset
+    ? `
+    margin-left: calc(${calculedOffset.toFixed(
+      3,
+    )}% + (var(--gutter) / (12 / ${offset}) ) );
+
+    &:first-child {
+      margin-left: calc(${calculedOffset.toFixed(
+        3,
+      )}% + (var(--gutter) / (12 / ${offset}) ) );
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  
+  `
+    : `
+    margin-left: calc(var(--gutter) / 2);
+    margin-right: calc(var(--gutter) / 2);
+    content: "gdfgdfg";
+    
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  `;
+
+  return q`
+    width: calc(${calculedWidth.toFixed(
+      3,
+    )}% - var(--gutter) + (var(--gutter) / (12 / ${size || 12}) ) );
+
+    ${offsetStyle}
+  `;
 };
 
 const Col = styled.div`
@@ -56,6 +92,9 @@ const Col = styled.div`
     Object.keys(props.theme.breakpoints).map(breakpoint =>
       columnPosition(props, breakpoint),
     )}
+
+  display: inline-block;
+  box-sizing: content-box;
   word-break: break-word;
   box-sizing: border-box;
 `;
