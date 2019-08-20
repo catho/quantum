@@ -110,34 +110,15 @@ or touches it. Buttons are used to initialize an action, either in the
 background or foreground of an experience.
 `;
 
-storiesOf('Buttons', module)
-  .add('Button', () => (
-    <>
-      <AutoExample
-        description={description}
-        component={Button}
-        componentProps={{
-          children: 'Catho',
-        }}
-        additionalTabs={exampleTab}
-      />
-    </>
-  ))
-  .add('Pure', () => (
-    <>
-      <Button>Catho</Button>
-      <Button disabled>Catho</Button>
-      <Button stroked>Catho</Button>
-      <Button full>Catho</Button>
-      <Button icon={'info'}>Catho</Button>
-      <Button size={'xsmall'}>Catho</Button>
-      <Button size={'small'}>Catho</Button>
-      <Button size={'large'}>Catho</Button>
-      <Button size={'xlarge'}>Catho</Button>
-      <Button skin={'neutral'}>Catho</Button>
-      <Button skin={'secondary'}>Catho</Button>
-      <Button skin={'success'}>Catho</Button>
-      <Button skin={'warning'}>Catho</Button>
-      <Button skin={'error'}>Catho</Button>
-    </>
-  ));
+storiesOf('Buttons', module).add('Button', () => (
+  <>
+    <AutoExample
+      description={description}
+      component={Button}
+      componentProps={{
+        children: 'Catho',
+      }}
+      additionalTabs={exampleTab}
+    />
+  </>
+));

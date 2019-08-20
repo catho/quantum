@@ -17,38 +17,14 @@ const sampleChildren = (
   </span>
 );
 
-const props = {
-  onClose: () => {},
-  icon: 'info',
-};
-
-const autoExampleProps = {
-  ...props,
-  children: sampleChildren,
-};
-
-storiesOf('Alert', module)
-  .add('Alert', () => (
-    <AutoExample
-      description={description}
-      component={Alert}
-      componentProps={autoExampleProps}
-    />
-  ))
-  .add('Pure', () => (
-    <>
-      <Alert {...props}>{sampleChildren}</Alert>
-      <Alert {...props} skin={'primary'}>
-        {sampleChildren}
-      </Alert>
-      <Alert {...props} skin={'success'}>
-        {sampleChildren}
-      </Alert>
-      <Alert {...props} skin={'error'}>
-        {sampleChildren}
-      </Alert>
-      <Alert {...props} skin={'warning'}>
-        {sampleChildren}
-      </Alert>
-    </>
-  ));
+storiesOf('Alert', module).add('Alert', () => (
+  <AutoExample
+    description={description}
+    component={Alert}
+    componentProps={{
+      children: sampleChildren,
+      onClose: () => {},
+      icon: 'info',
+    }}
+  />
+));

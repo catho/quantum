@@ -7,7 +7,7 @@ const AdvancedCard = () => (
   <>
     <Card>
       <Card.Header>
-        <Card.Thumbnail src="http://i.pravatar.cc/72" alt="Avatar" />
+        <Card.Thumbnail src="http://placekitten.com/72/72" alt="Avatar" />
         <Card.HeaderText>
           <Card.Title small>Title</Card.Title>
           <Card.Description>Lorem ipsum dolor sit amet.</Card.Description>
@@ -51,7 +51,7 @@ const AdvancedCard = () => (
   <>
   <Card>
     <Card.Header>
-      <Card.Thumbnail src="http://i.pravatar.cc/72" alt="Avatar" />
+      <Card.Thumbnail src="http://placekitten.com/72/72" alt="Avatar" />
       <Card.HeaderText>
         <Card.Title small>Title</Card.Title>
         <Card.Description>Lorem ipsum dolor sit amet.</Card.Description>
