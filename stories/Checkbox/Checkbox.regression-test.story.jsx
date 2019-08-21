@@ -6,6 +6,6 @@ storiesOf('Checkbox', module)
   .add('default', () => <Checkbox />)
   .add('disabled', () => <Checkbox disabled />)
   .add('checked', () => <Checkbox checked />)
-  .add('error', () => <Checkbox error={'message'} />)
-  .add('label', () => <Checkbox label={'example'} />)
-  .add('value', () => <Checkbox value={'example'} />);
+  .add('error', () => <Checkbox error="message" />)
+  .add('label', () => <Checkbox label="example" />)
+  .add('value', () => <Checkbox value="example" />);

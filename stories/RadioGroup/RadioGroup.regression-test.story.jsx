@@ -25,10 +25,10 @@ disabledOptions[1] = {
   disabled: true,
 };
 
-const stories = storiesOf('RadioGroup', module)
+storiesOf('RadioGroup', module)
   .add('default', () => <RadioGroup name="groceries" options={options} />)
   .add('error', () => (
-    <RadioGroup name="groceries" options={options} error={'message'} />
+    <RadioGroup name="groceries" options={options} error="message" />
   ))
   .add('disabled', () => (
     <RadioGroup name="groceries" options={disabledOptions} />

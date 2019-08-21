@@ -5,7 +5,7 @@ import Input from '../../components/Input';
 
 storiesOf('Input', module)
   .add('default', () => <Input />)
-  .add('search', () => <Input type={'search'} />)
-  .add('error', () => <Input error={'message'} />)
+  .add('search', () => <Input type="search" />)
+  .add('error', () => <Input error="message" />)
   .add('disabled', () => <Input disabled />)
-  .add('helper', () => <Input helper={'message'} />);
+  .add('helper', () => <Input helper="message" />);
