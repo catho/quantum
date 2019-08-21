@@ -21,6 +21,7 @@ const Desktop = ({
 }) => (
   <>
     <ActionButton
+      tabIndex={0}
       aria-disabled={activePage === 1}
       onClick={handlePageClick(activePage - 1)}
       href={handleHref(activePage - 1)}
@@ -35,6 +36,7 @@ const Desktop = ({
 
       return (
         <PageButton
+          tabIndex={0}
           aria-current={activePage === page ? 'page' : false}
           aria-label={`${
             activePage === page ? `${activePageAriaLabel}, ` : ''
@@ -50,6 +52,7 @@ const Desktop = ({
     })}
 
     <ActionButton
+      tabIndex={0}
       aria-disabled={activePage === totalPages}
       onClick={handlePageClick(activePage + 1)}
       href={handleHref(activePage + 1)}
