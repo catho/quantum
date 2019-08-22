@@ -47,7 +47,7 @@ const columnPosition = (
   const { size, offset } = screenDefinitions[breakpoint];
 
   const calculedWidth = size ? (100 / 12) * size : 100;
-  const calculedOffset = offset ? (100 / 12) * size : 100;
+  const calculedOffset = offset ? (100 / 12) * offset : 100;
 
   const offsetStyle = offset
     ? `

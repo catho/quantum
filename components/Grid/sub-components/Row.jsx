@@ -7,6 +7,7 @@ const Row = styled.div`
   width: 100%;
   display: flex;
   margin-bottom: var(--gutter);
+  flex-wrap: wrap;
 
   ${hide}
   ${noGutters}
