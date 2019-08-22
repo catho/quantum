@@ -86,26 +86,32 @@ const components = {
       neutral: {
         mainColor: colors.neutral,
         text: colors.neutral,
+        borderSize: '1px',
       },
       primary: {
         mainColor: colors.primary,
         text: colors.neutral,
+        borderSize: '1px',
       },
       secondary: {
         mainColor: colors.secondary,
         text: colors.neutral,
+        borderSize: '1px',
       },
       success: {
         mainColor: colors.success,
         text: colors.neutral,
+        borderSize: '1px',
       },
       warning: {
         mainColor: colors.warning,
         text: colors.neutral,
+        borderSize: '1px',
       },
       error: {
         mainColor: colors.error,
         text: colors.neutral,
+        borderSize: '2px',
       },
     },
   },

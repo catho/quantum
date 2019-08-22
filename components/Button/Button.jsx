@@ -104,6 +104,7 @@ const StyledButton = styled.button`
                 700: mainColor700,
               },
               text: { 100: text100 },
+              borderSize,
             },
           },
         },
@@ -134,7 +135,7 @@ const StyledButton = styled.button`
       background-color: ${bgColor};
       color: ${textColor};
 
-      border: 1px solid ${disabled ? neutral500 : mainColor500};
+      border: ${borderSize} solid ${disabled ? neutral500 : mainColor500};
 
       ${shadow(2, neutral500)({ theme })}
 
