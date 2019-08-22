@@ -8,8 +8,13 @@
     "test": "jest",
     "test:components": "yarn test ./components",
     "test:coverage": "yarn test:components --coverage",
+    "test:regression": "yarn loki test --port 9006",
+    "test:regression:approve": "yarn loki approve --port 9006",
+    "test:regression:update": "yarn loki update --port 9006",
+    "test:regression:storybook": "start-storybook -s static -c .storybook/regression-test --port 9006",
     "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
     "build-storybook": "build-storybook",
+    "build:regression": "yarn test:regression:storybook & ./scripts/run-regression.sh",
     "clean:files:build": "rm ./dist/**/*.test.jsx ./dist/**/*/*.test.jsx",
     "clean:directories:build": "rm -rf ./dist/**/__snapshots__ ./dist/**/*/__snapshots__",
     "clean:build": "rm -rf ./dist",
@@ -27,11 +32,7 @@
     "storybook": "start-storybook -s static",
     "format": "prettier --write ./**/*.{js,jsx,json}",
     "deploy-storybook": "storybook-to-ghpages",
-    "semantic-release": "semantic-release",
-    "regression-test:storybook": "start-storybook -s static -c .storybook/regression-test --port 9009",
-    "regression-test:verify": "yarn loki test --port 9009",
-    "regression-test:approve": "yarn loki approve --port 9009",
-    "regression-test:update": "yarn loki update --port 9009"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
