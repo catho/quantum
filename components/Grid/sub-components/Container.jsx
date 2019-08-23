@@ -1,17 +1,55 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { hide, noGutters } from './shared';
+import { hide, query, calcGutter } from './shared';
 import { theme as defaultTheme } from '../../shared';
+import { CSSVariables } from '../../GlobalStyle';
+
+const renderBreakpoint = (
+  { theme: { gutter, breakpoints }, 'no-gutters': noGutters },
+  breakpoint,
+) => {
+  const calculedGutter = CSSVariables({
+    theme: {
+      gutter: Number(
+        calcGutter({ 'no-gutters': noGutters, theme: { gutter } }).replace(
+          'px',
+          '',
+        ),
+      ),
+    },
+  }).gutter[breakpoint];
+  const q = query(breakpoints)[breakpoint];
+
+  return q`
+    padding: ${calculedGutter};
+  `;
+};
+
+const renderResponsives = ({
+  theme: { breakpoints, gutter },
+  'no-gutters': noGutters,
+}) =>
+  Object.keys(breakpoints).map(breakpoint =>
+    renderBreakpoint(
+      {
+        theme: {
+          breakpoints,
+          gutter,
+        },
+        'no-gutters': noGutters,
+      },
+      breakpoint,
+    ),
+  );
 
 const Container = styled.div`
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding: var(--gutter);
 
+  ${renderResponsives}
   ${({ fluid }) => !fluid && 'max-width: 95%;'}
   ${hide}
-  ${noGutters}
 
   & & {
     max-width: 100%;

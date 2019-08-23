@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { query } from './shared';
 import { theme as defaultTheme } from '../../shared';
+import { CSSVariables } from '../../GlobalStyle';
 
 const columnPosition = (
   {
@@ -15,7 +16,7 @@ const columnPosition = (
     'medium-offset': mediumOffset = smallOffset,
     'large-offset': largeOffset = mediumOffset,
     'xlarge-offset': xlargeOffset = largeOffset,
-    theme: { breakpoints },
+    theme: { breakpoints, gutter },
   },
   breakpoint,
 ) => {
@@ -48,17 +49,18 @@ const columnPosition = (
 
   const calculedWidth = size ? (100 / 12) * size : 100;
   const calculedOffset = offset ? (100 / 12) * offset : 100;
+  const calculedGutter = CSSVariables({ theme: { gutter } }).gutter[breakpoint];
 
   const offsetStyle = offset
     ? `
     margin-left: calc(${calculedOffset.toFixed(
       3,
-    )}% + (var(--gutter) / (12 / ${offset}) ) );
+    )}% + (${calculedGutter} / (12 / ${offset}) ) );
 
     &:first-child {
       margin-left: calc(${calculedOffset.toFixed(
         3,
-      )}% + (var(--gutter) / (12 / ${offset}) ) );
+      )}% + (${calculedGutter} / (12 / ${offset}) ) );
     }
     &:last-child {
       margin-right: 0;
@@ -66,8 +68,8 @@ const columnPosition = (
   
   `
     : `
-    margin-left: calc(var(--gutter) / 2);
-    margin-right: calc(var(--gutter) / 2);
+    margin-left: calc(${calculedGutter} / 2);
+    margin-right: calc(${calculedGutter} / 2);
     content: "gdfgdfg";
     
     &:first-child {
@@ -81,7 +83,7 @@ const columnPosition = (
   return q`
     width: calc(${calculedWidth.toFixed(
       3,
-    )}% - var(--gutter) + (var(--gutter) / (12 / ${size || 12}) ) );
+    )}% - ${calculedGutter} + (${calculedGutter} / (12 / ${size || 12}) ) );
 
     ${offsetStyle}
   `;

@@ -1,16 +1,38 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { hide, noGutters } from './shared';
+import { query, hide } from './shared';
 import { theme as defaultTheme } from '../../shared';
+import { CSSVariables } from '../../GlobalStyle';
+
+const renderBreakpoint = ({ theme: { gutter, breakpoints } }, breakpoint) => {
+  const calculedGutter = CSSVariables({ theme: { gutter } }).gutter[breakpoint];
+  const q = query(breakpoints)[breakpoint];
+
+  return q`
+    margin-bottom: ${calculedGutter};
+  `;
+};
+
+const renderResponsives = ({ theme: { breakpoints, gutter } }) =>
+  Object.keys(breakpoints).map(breakpoint =>
+    renderBreakpoint(
+      {
+        theme: {
+          breakpoints,
+          gutter,
+        },
+      },
+      breakpoint,
+    ),
+  );
 
 const Row = styled.div`
   width: 100%;
   display: flex;
-  margin-bottom: var(--gutter);
   flex-wrap: wrap;
 
+  ${renderResponsives}
   ${hide}
-  ${noGutters}
 `;
 
 Row.propTypes = {
