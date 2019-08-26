@@ -7,13 +7,13 @@ const AdvancedCard = () => (
   <>
     <Card>
       <Card.Header>
-        <Card.Thumbnail src="http://placekitten.com/72/72" alt="Avatar" />
+        <Card.Thumbnail src="https://dummyimage.com/72x72" alt="Avatar" />
         <Card.HeaderText>
           <Card.Title small>Title</Card.Title>
           <Card.Description>Lorem ipsum dolor sit amet.</Card.Description>
         </Card.HeaderText>
       </Card.Header>
-      <Card.Media src="http://placekitten.com/g/800" alt="A beautiful Cat" />
+      <Card.Media src="https://dummyimage.com/800x800" alt="A beautiful Cat" />
       <Card.Content>
         Duis ac enim non leo dapibus placerat ut vel ligula. Pellentesque sed
         metus elit. In hac habitasse platea dictumst. Fusce non purus a dui
@@ -51,13 +51,13 @@ const AdvancedCard = () => (
   <>
   <Card>
     <Card.Header>
-      <Card.Thumbnail src="http://placekitten.com/72/72" alt="Avatar" />
+      <Card.Thumbnail src="https://dummyimage.com/72x72" alt="Avatar" />
       <Card.HeaderText>
         <Card.Title small>Title</Card.Title>
         <Card.Description>Lorem ipsum dolor sit amet.</Card.Description>
       </Card.HeaderText>
     </Card.Header>
-    <Card.Media src="http://placekitten.com/g/800" alt="A beautiful Cat" />
+    <Card.Media src="https://dummyimage.com/800x800" alt="A beautiful Cat" />
     <Card.Content>
       Duis ac enim non leo dapibus placerat ut vel ligula. Pellentesque sed
       metus elit. In hac habitasse platea dictumst. Fusce non purus a dui

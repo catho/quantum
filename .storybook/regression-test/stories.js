@@ -18,4 +18,5 @@ export default [
   'TextArea',
   'Tag',
   'Pagination',
+  'Grid',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);
