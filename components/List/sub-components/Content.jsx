@@ -23,11 +23,11 @@ class Content extends React.Component {
     const { header = propsHeader, subheader = propsSubHeader } = content;
 
     return (
-      <React.Fragment>
+      <>
         <Header>{header}</Header>
 
         {subheader && <SubHeader>{subheader}</SubHeader>}
-      </React.Fragment>
+      </>
     );
   };
 

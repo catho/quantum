@@ -277,7 +277,7 @@ TextContainer.displayName = 'TextContainer';
 SnackBar.propTypes = {
   actionTrigger: PropTypes.shape({
     title: PropTypes.string,
-    callback: PropTypes.func,
+    callbackFn: PropTypes.func,
   }),
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
