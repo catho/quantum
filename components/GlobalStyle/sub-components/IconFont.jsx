@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/display-name */
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
