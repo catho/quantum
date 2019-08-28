@@ -47,7 +47,10 @@ const Pagination = ({
     return pageHref(page);
   };
 
-  const width = (window && window.innerWidth) || BREAKPOINTS.small.width;
+  let { width } = BREAKPOINTS.small;
+  if (typeof window !== 'undefined') {
+    width = window.innerWidth;
+  }
 
   const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
 

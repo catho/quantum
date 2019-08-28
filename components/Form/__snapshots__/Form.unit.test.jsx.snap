@@ -108,6 +108,7 @@ exports[`Form component  should match the snapshot 1`] = `
         value=""
       />
       
+      
     </div>
     
     
@@ -137,6 +138,7 @@ exports[`Form component  should match the snapshot 1`] = `
         validate={[Function]}
         value=""
       />
+      
       
     </div>
     
@@ -168,6 +170,7 @@ exports[`Form component  should match the snapshot 1`] = `
         value=""
       />
       
+      
     </div>
     
     
@@ -198,6 +201,7 @@ exports[`Form component  should match the snapshot 1`] = `
         value=""
       />
       
+      
     </div>
     
     
@@ -227,6 +231,7 @@ exports[`Form component  should match the snapshot 1`] = `
         validate={[Function]}
         value=""
       />
+      
       
     </div>
     
@@ -259,6 +264,7 @@ exports[`Form component  should match the snapshot 1`] = `
         value=""
       />
       
+      
     </div>
     
     
@@ -289,6 +295,7 @@ exports[`Form component  should match the snapshot 1`] = `
         validate={[Function]}
         value=""
       />
+      
       
     </div>
     
