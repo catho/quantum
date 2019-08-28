@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { shadow, hexToRgba } from '../shared';
+import { shadow, hexToRgba, theme as defaultTheme } from '../shared';
+import { query } from '../Grid/sub-components/shared';
+
 import {
   components,
   spacing,
@@ -11,9 +13,21 @@ import {
 
 import Icon from '../Icon/Icon';
 
+const buttonIconBreakpoints = (props, breakpoint) => {
+  const q = query(props.theme.breakpoints)[breakpoint];
+
+  return q`
+    margin-right: ${props.theme.spacing[breakpoint] / 2}px;
+  `;
+};
+
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
-  margin-right: 8px;
+
+  ${props =>
+    Object.keys(props.theme.breakpoints).map(breakpoint => {
+      return buttonIconBreakpoints(props, breakpoint);
+    })}
 `;
 
 const StyledButton = styled.button`
@@ -194,7 +208,7 @@ const StyledButton = styled.button`
 
 const Button = ({ children, icon, size, $as, ...rest }) => (
   <StyledButton as={$as} {...rest} size={size}>
-    {icon && <ButtonIcon size={size} name={icon} />}
+    {icon && <ButtonIcon size={size} name={icon} {...rest} />}
     {children}
   </StyledButton>
 );
@@ -215,6 +229,7 @@ Button.defaultProps = {
     colors: defaultColors,
     baseFontSize: defaultBaseFontSize,
     spacing,
+    breakpoints: defaultTheme.breakpoints,
     components: {
       button: components.button,
     },
@@ -250,6 +265,7 @@ Button.propTypes = {
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    breakpoints: PropTypes.arrayOf(PropTypes.any),
     components: PropTypes.shape({
       button: PropTypes.object,
     }),
@@ -328,6 +344,8 @@ IconButton.defaultProps = {
   size: 'medium',
   skin: 'neutral',
   theme: {
+    breakpoints: defaultTheme.breakpoints,
+    gutter: '8px',
     baseFontSize: defaultBaseFontSize,
     spacing,
     components: {
