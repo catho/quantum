@@ -106,7 +106,6 @@ const components = {
       error: {
         mainColor: colors.error,
         text: colors.neutral,
-        borderSize: '2px',
       },
     },
   },

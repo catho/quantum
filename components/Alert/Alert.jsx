@@ -8,6 +8,7 @@ import {
   spacing,
   colors,
   baseFontSize as defaultBaseFontSize,
+  breakpoints,
 } from '../shared/theme';
 
 const Content = styled.div`
@@ -87,6 +88,7 @@ Alert.defaultProps = {
     colors,
     baseFontSize: defaultBaseFontSize,
     spacing,
+    breakpoints,
     components: {
       alert: components.alert,
       button: components.button,

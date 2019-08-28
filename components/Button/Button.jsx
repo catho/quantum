@@ -30,6 +30,27 @@ const ButtonIcon = styled(Icon)`
     })}
 `;
 
+const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
+  const sizes = {
+    xsmall: `${baseFontSize * 0.75}px`,
+    small: `${baseFontSize * 0.75}px`,
+    medium: `${baseFontSize}px`,
+    large: `${baseFontSize * 1.25}px`,
+    xlarge: `${baseFontSize * 1.5}px`,
+  };
+  const lineHeights = {
+    xsmall: `${baseFontSize * 0.75 * 1.5}px`,
+    small: `${baseFontSize * 0.75 * 1.5}px`,
+    medium: `${baseFontSize * 1.5}px`,
+    large: `${baseFontSize * 1.25 * 1.5}px`,
+    xlarge: `${baseFontSize * 1.5 * 1.5}px`,
+  };
+  return `
+    font-size: ${sizes[size]};
+    line-height: ${lineHeights[size]};
+  `;
+};
+
 const StyledButton = styled.button`
   align-items: center;
   display: flex;
@@ -40,27 +61,7 @@ const StyledButton = styled.button`
 
   ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
 
-  ${({ size, theme: { baseFontSize } }) => {
-    const sizes = {
-      xsmall: `${baseFontSize * 0.75}px`,
-      small: `${baseFontSize * 0.75}px`,
-      medium: `${baseFontSize}px`,
-      large: `${baseFontSize * 1.25}px`,
-      xlarge: `${baseFontSize * 1.5}px`,
-    };
-    return `font-size: ${sizes[size]};`;
-  }}
-
-  ${({ size, theme: { baseFontSize } }) => {
-    const sizes = {
-      xsmall: `${baseFontSize * 0.75 * 1.5}px`,
-      small: `${baseFontSize * 0.75 * 1.5}px`,
-      medium: `${baseFontSize * 1.5}px`,
-      large: `${baseFontSize * 1.25 * 1.5}px`,
-      xlarge: `${baseFontSize * 1.5 * 1.5}px`,
-    };
-    return `line-height: ${sizes[size]};`;
-  }}
+  ${buttonFontAndLineProps}
 
   ${({
     size,
