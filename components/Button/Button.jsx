@@ -25,9 +25,9 @@ const ButtonIcon = styled(Icon)`
   pointer-events: none;
 
   ${props =>
-    Object.keys(props.theme.breakpoints).map(breakpoint => {
-      return buttonIconBreakpoints(props, breakpoint);
-    })}
+    Object.keys(props.theme.breakpoints).map(breakpoint =>
+      buttonIconBreakpoints(props, breakpoint),
+    )}
 `;
 
 const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {

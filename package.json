@@ -11,6 +11,7 @@
     "test:regression": "yarn loki test --port 9006",
     "test:regression:approve": "yarn loki approve --port 9006",
     "test:regression:update": "yarn loki update --port 9006",
+    "test:regression:update:storie": "yarn loki update --port 9006 --storiesFilter $STORIE",
     "test:regression:storybook": "start-storybook -s static -c .storybook/regression-test --port 9006",
     "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
     "build-storybook": "build-storybook",
