@@ -283,7 +283,7 @@ const SizesTable = () => (
 );
 
 const HorizontalExample = () => (
-  <React.Fragment>
+  <>
     <Row>
       <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
       <StyledCol medium={1}>{'<Col medium={1}>'}</StyledCol>
@@ -350,11 +350,11 @@ const HorizontalExample = () => (
   <Col medium={6}>...</Col>
 </Row>`}
     </SimpleHighlight>
-  </React.Fragment>
+  </>
 );
 
 const MobileDesktopExample = () => (
-  <React.Fragment>
+  <>
     <Row>
       <StyledCol xsmall={2} small={8}>
         {'<Col xsmall={2} small={8}>'}
@@ -401,11 +401,11 @@ const MobileDesktopExample = () => (
   <Col xsmall={2}>...</Col>
 </Row>`}
     </SimpleHighlight>
-  </React.Fragment>
+  </>
 );
 
 const HideExample = () => (
-  <React.Fragment>
+  <>
     <Hide xsmall>
       <Row>
         <StyledCol xsmall={2} small={4} medium={6}>
@@ -428,7 +428,7 @@ const HideExample = () => (
   </Row>
 </Hide>`}
     </SimpleHighlight>
-  </React.Fragment>
+  </>
 );
 
 const NoGuttersExample = () => (
