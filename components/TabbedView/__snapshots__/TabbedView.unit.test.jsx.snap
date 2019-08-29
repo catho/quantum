@@ -29,8 +29,8 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <ForwardRef(TabbedView__Navbar)>
-          <ForwardRef(TabbedView__NavItem)
+        <ForwardRef>
+          <ForwardRef
             aria-controls="example-panel"
             aria-selected={true}
             id="example-tab"
@@ -38,8 +38,8 @@ ShallowWrapper {
             skin="default"
           >
             example
-          </ForwardRef(TabbedView__NavItem)>
-        </ForwardRef(TabbedView__Navbar)>,
+          </ForwardRef>
+        </ForwardRef>,
         Array [
           <RenderIf
             conditional={true}
@@ -65,7 +65,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <ForwardRef(TabbedView__NavItem)
+            <ForwardRef
               aria-controls="example-panel"
               aria-selected={true}
               id="example-tab"
@@ -73,7 +73,7 @@ ShallowWrapper {
               skin="default"
             >
               example
-            </ForwardRef(TabbedView__NavItem)>,
+            </ForwardRef>,
           ],
         },
         "ref": null,
@@ -197,8 +197,8 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <ForwardRef(TabbedView__Navbar)>
-            <ForwardRef(TabbedView__NavItem)
+          <ForwardRef>
+            <ForwardRef
               aria-controls="example-panel"
               aria-selected={true}
               id="example-tab"
@@ -206,8 +206,8 @@ ShallowWrapper {
               skin="default"
             >
               example
-            </ForwardRef(TabbedView__NavItem)>
-          </ForwardRef(TabbedView__Navbar)>,
+            </ForwardRef>
+          </ForwardRef>,
           Array [
             <RenderIf
               conditional={true}
@@ -233,7 +233,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": Array [
-              <ForwardRef(TabbedView__NavItem)
+              <ForwardRef
                 aria-controls="example-panel"
                 aria-selected={true}
                 id="example-tab"
@@ -241,7 +241,7 @@ ShallowWrapper {
                 skin="default"
               >
                 example
-              </ForwardRef(TabbedView__NavItem)>,
+              </ForwardRef>,
             ],
           },
           "ref": null,

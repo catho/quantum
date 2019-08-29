@@ -2153,7 +2153,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -2272,25 +2291,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
@@ -4467,7 +4467,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -4586,25 +4605,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
@@ -6813,7 +6813,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -6932,25 +6951,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
@@ -9191,7 +9191,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -9310,25 +9329,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
@@ -11601,7 +11601,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -11720,25 +11739,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
@@ -14011,7 +14011,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -14130,25 +14149,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
@@ -16415,7 +16415,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -16534,25 +16553,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
@@ -18819,7 +18819,26 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "_foldedDefaultProps": Object {
+                          "attrs": Array [
+                            Object {
+                              "icon": "close",
+                            },
+                          ],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content__CloseButton-sc-1005q1-1",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              " display:inherit;height:auto;",
+                              [Function],
+                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              [Function],
+                              "}",
+                            ],
+                          },
+                          "defaultProps": Object {
                             "size": "medium",
                             "skin": "neutral",
                             "theme": Object {
@@ -18938,25 +18957,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxxsmall": 2,
                               },
                             },
-                          },
-                          "attrs": Array [
-                            Object {
-                              "icon": "close",
-                            },
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Content__CloseButton-sc-1005q1-1",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              " display:inherit;height:auto;",
-                              [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
-                              [Function],
-                              "}",
-                            ],
                           },
                           "displayName": "CloseButton",
                           "foldedComponentIds": Array [
