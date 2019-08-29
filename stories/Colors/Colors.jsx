@@ -90,7 +90,7 @@ console.log(Colors.PINK['500'])
 /*returns: #de0059/*
 `;
 
-export default () => (
+const ColorsStory = () => (
   <StoryContainer>
     <Title as="h2">Importing colors</Title>
     <SimpleHighlight>{importColors}</SimpleHighlight>
@@ -244,3 +244,5 @@ export default () => (
     />
   </StoryContainer>
 );
+
+export default ColorsStory;
