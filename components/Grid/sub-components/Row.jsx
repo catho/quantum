@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 import { query, hide } from './shared';
 import { theme as defaultTheme } from '../../shared';
@@ -26,7 +27,7 @@ const renderResponsives = ({ theme: { breakpoints, gutter } }) =>
     ),
   );
 
-const Row = styled.div`
+const StyledRow = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -35,8 +36,34 @@ const Row = styled.div`
   ${hide}
 `;
 
+class Row extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.props = props;
+  }
+
+  render() {
+    const { children, 'no-gutters': noGutters, ...rest } = this.props;
+
+    const applyNoGutters = child => {
+      const ChildWithNoGutters = React.cloneElement(child, {
+        'no-gutters': child.props['no-gutters'] === true ? true : noGutters,
+      });
+      return ChildWithNoGutters;
+    };
+
+    return (
+      <StyledRow {...rest}>
+        {children.map(child => applyNoGutters(child))}
+      </StyledRow>
+    );
+  }
+}
+
 Row.propTypes = {
   'no-gutters': PropTypes.bool,
+  children: PropTypes.node.isRequired,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
@@ -47,6 +74,7 @@ Row.propTypes = {
 };
 
 Row.defaultProps = {
+  hide: null,
   'no-gutters': false,
   theme: defaultTheme,
 };

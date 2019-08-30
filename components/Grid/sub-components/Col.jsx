@@ -17,6 +17,7 @@ const columnPosition = (
     'large-offset': largeOffset = mediumOffset,
     'xlarge-offset': xlargeOffset = largeOffset,
     theme: { breakpoints, gutter },
+    'no-gutters': noGutters,
   },
   breakpoint,
 ) => {
@@ -49,7 +50,11 @@ const columnPosition = (
 
   const calculedWidth = size ? (100 / 12) * size : 100;
   const calculedOffset = offset ? (100 / 12) * offset : 100;
-  const calculedGutter = CSSVariables({ theme: { gutter } }).gutter[breakpoint];
+  const calculedGutter = CSSVariables({
+    theme: {
+      gutter: noGutters ? 0 : gutter,
+    },
+  }).gutter[breakpoint];
 
   const offsetStyle = offset
     ? `
@@ -103,9 +108,11 @@ const Col = styled.div`
 
 Col.defaultProps = {
   theme: defaultTheme,
+  'no-gutters': false,
 };
 
 Col.propTypes = {
+  'no-gutters': PropTypes.bool,
   xsmall: PropTypes.number,
   small: PropTypes.number,
   medium: PropTypes.number,
