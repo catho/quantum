@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-import { query, hide } from './shared';
+import { query, hide, calcGutter } from './shared';
 import { theme as defaultTheme } from '../../shared';
 import { CSSVariables } from '../../GlobalStyle';
 
@@ -27,12 +27,34 @@ const renderResponsives = ({ theme: { breakpoints, gutter } }) =>
     ),
   );
 
-const StyledRow = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+const queryStyle = ({ theme: { breakpoints } }) =>
+  Object.entries(breakpoints).map(
+    ([name, { columns }]) =>
+      query(breakpoints)[name]`
+      grid-template-columns: repeat(${columns}, 1fr);
+    `,
+  );
 
-  ${renderResponsives}
+const StyledRow = styled.div`
+  display: grid;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  margin-bottom: 24px;
+  grid-auto-columns: max-content;
+
+  @supports ( display: grid ) {
+    ${queryStyle}
+    /* rever calc gutters
+    ${calcGutter}*/
+  }
+
+  @supports not ( display: grid ) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    ${renderResponsives}
+	}
+
   ${hide}
 `;
 

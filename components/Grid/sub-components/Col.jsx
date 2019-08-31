@@ -4,6 +4,59 @@ import { query } from './shared';
 import { theme as defaultTheme } from '../../shared';
 import { CSSVariables } from '../../GlobalStyle';
 
+const columnGrid = ({ size, offset }) => {
+  const offsetStyle = offset ? `${offset + 1}/` : '';
+
+  return `grid-column: ${offsetStyle} span ${size || 12};`;
+};
+
+const columnGridLess = ({ size, offset, breakpoint, noGutters, gutter }) => {
+  const calculedWidth = size ? (100 / 12) * size : 100;
+  const calculedOffset = offset ? (100 / 12) * offset : 100;
+  const calculedGutter = CSSVariables({
+    theme: {
+      gutter: noGutters ? 0 : gutter,
+    },
+  }).gutter[breakpoint];
+
+  const offsetStyle = offset
+    ? `
+    margin-left: calc(${calculedOffset.toFixed(
+      3,
+    )}% + (${calculedGutter} / (12 / ${offset}) ) );
+
+    &:first-child {
+      margin-left: calc(${calculedOffset.toFixed(
+        3,
+      )}% + (${calculedGutter} / (12 / ${offset}) ) );
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  
+  `
+    : `
+    margin-left: calc(${calculedGutter} / 2);
+    margin-right: calc(${calculedGutter} / 2);
+    content: "gdfgdfg";
+    
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  `;
+
+  return `
+    width: calc(${calculedWidth.toFixed(
+      3,
+    )}% - ${calculedGutter} + (${calculedGutter} / (12 / ${size || 12}) ) );
+
+    ${offsetStyle}
+  `;
+};
+
 const columnPosition = (
   {
     xsmall,
@@ -48,49 +101,23 @@ const columnPosition = (
 
   const { size, offset } = screenDefinitions[breakpoint];
 
-  const calculedWidth = size ? (100 / 12) * size : 100;
-  const calculedOffset = offset ? (100 / 12) * offset : 100;
-  const calculedGutter = CSSVariables({
-    theme: {
-      gutter: noGutters ? 0 : gutter,
-    },
-  }).gutter[breakpoint];
-
-  const offsetStyle = offset
-    ? `
-    margin-left: calc(${calculedOffset.toFixed(
-      3,
-    )}% + (${calculedGutter} / (12 / ${offset}) ) );
-
-    &:first-child {
-      margin-left: calc(${calculedOffset.toFixed(
-        3,
-      )}% + (${calculedGutter} / (12 / ${offset}) ) );
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  
-  `
-    : `
-    margin-left: calc(${calculedGutter} / 2);
-    margin-right: calc(${calculedGutter} / 2);
-    content: "gdfgdfg";
-    
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  `;
-
   return q`
-    width: calc(${calculedWidth.toFixed(
-      3,
-    )}% - ${calculedGutter} + (${calculedGutter} / (12 / ${size || 12}) ) );
+    @supports ( display: grid ) {
+      ${columnGrid({
+        size,
+        offset,
+        breakpoint,
+      })}
+    }
 
-    ${offsetStyle}
+    @supports not ( display: grid ) {
+      ${columnGridLess({
+        size,
+        offset,
+        breakpoint,
+        noGutters,
+        gutter,
+      })}
   `;
 };
 
@@ -100,8 +127,11 @@ const Col = styled.div`
       columnPosition(props, breakpoint),
     )}
 
-  display: inline-block;
-  box-sizing: content-box;
+  @supports not ( display: grid ) {
+    display: inline-block;
+    box-sizing: content-box;
+  }
+
   word-break: break-word;
   box-sizing: border-box;
 `;
