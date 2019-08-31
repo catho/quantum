@@ -10,12 +10,7 @@ const renderBreakpoint = (
 ) => {
   const calculedGutter = CSSVariables({
     theme: {
-      gutter: Number(
-        calcGutter({ 'no-gutters': noGutters, theme: { gutter } }).replace(
-          'px',
-          '',
-        ),
-      ),
+      gutter: Number(calcGutter(gutter, noGutters, true)),
     },
   }).gutter[breakpoint];
   const q = query(breakpoints)[breakpoint];

@@ -5,16 +5,25 @@ import { query, hide, calcGutter } from './shared';
 import { theme as defaultTheme } from '../../shared';
 import { CSSVariables } from '../../GlobalStyle';
 
-const renderBreakpoint = ({ theme: { gutter, breakpoints } }, breakpoint) => {
-  const calculedGutter = CSSVariables({ theme: { gutter } }).gutter[breakpoint];
+const renderBreakpoint = (
+  { theme: { gutter, breakpoints }, 'no-gutters': noGutters },
+  breakpoint,
+) => {
+  const calculedGutter = calcGutter(
+    CSSVariables({ theme: { gutter } }).gutter[breakpoint],
+    noGutters,
+  );
   const q = query(breakpoints)[breakpoint];
 
-  return q`
+  return q`    
     margin-bottom: ${calculedGutter};
   `;
 };
 
-const renderResponsives = ({ theme: { breakpoints, gutter } }) =>
+const renderResponsivesGridless = ({
+  theme: { breakpoints, gutter },
+  'no-gutters': noGutters,
+}) =>
   Object.keys(breakpoints).map(breakpoint =>
     renderBreakpoint(
       {
@@ -22,6 +31,40 @@ const renderResponsives = ({ theme: { breakpoints, gutter } }) =>
           breakpoints,
           gutter,
         },
+        'no-gutters': noGutters,
+      },
+      breakpoint,
+    ),
+  );
+
+const renderColsProps = (
+  { theme: { gutter }, 'no-gutters': noGutters },
+  breakpoint,
+) => {
+  const calculedGutter = calcGutter(
+    CSSVariables({ theme: { gutter } }).gutter[breakpoint],
+    noGutters,
+  );
+
+  return `
+    margin-bottom: ${calculedGutter};
+    grid-column-gap: ${calculedGutter};
+    grid-row-gap: ${calculedGutter};
+  `;
+};
+
+const renderResponsivesGrid = ({
+  theme: { breakpoints, gutter },
+  'no-gutters': noGutters,
+}) =>
+  Object.keys(breakpoints).map(breakpoint =>
+    renderColsProps(
+      {
+        theme: {
+          breakpoints,
+          gutter,
+        },
+        'no-gutters': noGutters,
       },
       breakpoint,
     ),
@@ -37,23 +80,18 @@ const queryStyle = ({ theme: { breakpoints } }) =>
 
 const StyledRow = styled.div`
   display: grid;
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-  margin-bottom: 24px;
   grid-auto-columns: max-content;
+  ${renderResponsivesGrid}
 
   @supports ( display: grid ) {
     ${queryStyle}
-    /* rever calc gutters
-    ${calcGutter}*/
   }
 
-  @supports not ( display: grid ) {
+  @supports not (display: grid) {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    ${renderResponsives}
-	}
+    display: inline-block;
+    ${renderResponsivesGridless}
+  }
 
   ${hide}
 `;
@@ -76,7 +114,7 @@ class Row extends React.Component {
     };
 
     return (
-      <StyledRow {...rest}>
+      <StyledRow {...rest} no-gutters={noGutters}>
         {children.map(child => applyNoGutters(child))}
       </StyledRow>
     );
