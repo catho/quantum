@@ -38,7 +38,7 @@ const renderResponsivesGridless = ({
   );
 
 const renderColsProps = (
-  { theme: { gutter }, 'no-gutters': noGutters },
+  { theme: { breakpoints, gutter }, 'no-gutters': noGutters },
   breakpoint,
 ) => {
   const calculedGutter = calcGutter(
@@ -46,7 +46,9 @@ const renderColsProps = (
     noGutters,
   );
 
-  return `
+  const q = query(breakpoints)[breakpoint];
+
+  return q`
     margin-bottom: ${calculedGutter};
     grid-column-gap: ${calculedGutter};
     grid-row-gap: ${calculedGutter};
@@ -113,9 +115,14 @@ class Row extends React.Component {
       return ChildWithNoGutters;
     };
 
+    const applyChildrenProps = c =>
+      Array.isArray(c)
+        ? c.map(child => applyNoGutters(child))
+        : applyNoGutters(c);
+
     return (
       <StyledRow {...rest} no-gutters={noGutters}>
-        {children.map(child => applyNoGutters(child))}
+        {applyChildrenProps(children)}
       </StyledRow>
     );
   }
@@ -123,7 +130,10 @@ class Row extends React.Component {
 
 Row.propTypes = {
   'no-gutters': PropTypes.bool,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node),
+  ]).isRequired,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
