@@ -1,20 +1,11 @@
 {
-  "extends": [
-    "airbnb",
-    "prettier",
-    "prettier/react",
-    "plugin:react/recommended"
-  ],
-  "plugins": ["prettier", "react"],
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
   "env": {
     "jest": true
   },
   "parser": "babel-eslint",
   "rules": {
-    "react/jsx-props-no-spreading": "off",
-    "react/jsx-key": "off",
-    "import/no-cycle": "off",
-    "jsx-a11y/control-has-associated-label": "off",
     "strict": 0,
     "import/no-extraneous-dependencies": 0,
     "jsx-a11y/label-has-for": [

@@ -41,12 +41,13 @@ const RadioGroup = ({
     onChange,
     inline,
   };
-  const radioOptions = options.map(option => ({
-    ...option,
-    key: option.value,
-    checked: option.value === value ? true : undefined,
-    ...commonProps,
-  }));
+  const radioOptions = options.map(option =>
+    Object.assign({}, option, {
+      key: option.value,
+      checked: option.value === value ? true : undefined,
+      ...commonProps,
+    }),
+  );
 
   const items =
     React.Children.map(children, child =>
