@@ -132,7 +132,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 bScnSo\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-12\\"
 +       htmlFor=\\"checkbox-button-15\\"
@@ -161,7 +161,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 bScnSo\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-13\\"
 +       htmlFor=\\"checkbox-button-16\\"
@@ -190,7 +190,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 bScnSo\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-14\\"
 +       htmlFor=\\"checkbox-button-17\\"
@@ -239,13 +239,14 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
   color: #1355d0;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -833,13 +834,14 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
   color: #1355d0;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1013,13 +1015,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
   color: #1355d0;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1119,6 +1122,36 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   position: relative;
 }
 
+@media (min-width:0px) {
+  .c5 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c5 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c5 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c5 {
+    margin-right: 16px;
+  }
+}
+
 <div
   className="c0"
 >
@@ -1136,13 +1169,205 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4 c5"
+        center={false}
+        checked={false}
+        className="material-icons MuiIcon-root-1 c2 c4 c5"
+        disabled={false}
+        error={false}
+        full={false}
+        htmlFor="checkbox-button-18"
+        onClick={[Function]}
         size="medium"
+        stroked={true}
         style={
           Object {
-            "color": "",
+            "color": "primary",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         print
       </span>
@@ -1199,13 +1424,205 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4 c5"
+        center={false}
+        checked={false}
+        className="material-icons MuiIcon-root-1 c2 c4 c5"
+        disabled={false}
+        error={false}
+        full={false}
+        htmlFor="checkbox-button-20"
+        onClick={[Function]}
         size="medium"
+        stroked={true}
         style={
           Object {
-            "color": "",
+            "color": "primary",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         face
       </span>
@@ -1247,13 +1664,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
   color: #ff2d4d;
-  border: 1.5px solid #ff2d4d;
+  border: 2px solid #ff2d4d;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1438,13 +1856,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
   color: #1355d0;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1497,13 +1916,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
   color: #999999;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1540,13 +1960,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -2295,13 +2716,14 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f2f2f2;
   color: #1355d0;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 

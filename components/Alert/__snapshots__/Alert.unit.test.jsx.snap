@@ -1,174 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert component Should match the snapshot of a simple alert 1`] = `
-.c7 {
-  pointer-events: none;
-}
-
-.c5 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #999999;
-  color: #f2f2f2;
-  border: 1.5px solid #999999;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c5:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
-}
-
-.c5:focus,
-.c5:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
-}
-
-.c5:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-}
-
-.c5 .c6 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c5 .c6 function (_ref5) var sizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
-  background-color: transparent;
-  box-shadow: none;
-  outline: none;
-  height: auto;
-  opacity: 0.8;
-  padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
-  width: auto;
-}
-
-.c4 .c6 {
-  margin-right: 0;
-}
-
-.c4:hover,
-.c4:focus {
-  box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
-}
-
-.c4:active {
-  box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
-}
-
-.c4:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c0 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: #f2f2f2;
-  border: 1.5px solid #999999;
-  color: #191919;
-  padding: 12px 16px;
-}
-
-.c0 .c1 .c8 {
-  color: #999999;
-  margin-right: 16px;
-}
-
-.c0 .c1 .c3 {
-  color: #999999;
-  margin: 0 0 0 16px;
-}
-
-<div
-  className="c0"
-  role="alert"
->
-  <div
-    className="c1 c2"
-    onClose={[Function]}
-  >
-    <span>
-      Sample alert
-    </span>
-    <button
-      className="c3 c4 c5"
-      disabled={false}
-      onClick={[Function]}
-      size="medium"
-      type="button"
-    >
-      <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6 c7"
-        size="medium"
-        style={
-          Object {
-            "color": "",
-          }
-        }
-      >
-        close
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Alert component When you set a alert custom icon Should match the snapshot with an icon 1`] = `
 .c8 {
   pointer-events: none;
 }
@@ -194,13 +26,14 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -291,14 +124,475 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   padding: 12px 16px;
 }
 
+.c0 .c1 .c9 {
+  color: #999999;
+  margin-right: 16px;
+}
+
+.c0 .c1 > .c4 {
+  color: #999999;
+  margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c0 .c1 > .c4 .c3 {
+  color: #999999;
+  margin-left: 0;
+}
+
+@media (min-width:0px) {
+  .c8 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c8 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c8 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c8 {
+    margin-right: 16px;
+  }
+}
+
+<div
+  className="c0"
+  role="alert"
+>
+  <div
+    className="c1 c2"
+    onClose={[Function]}
+  >
+    <span>
+      Sample alert
+    </span>
+    <button
+      className="c3 c4 c5 c6"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        center={false}
+        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
+        disabled={false}
+        full={false}
+        onClick={[Function]}
+        size="medium"
+        stroked={false}
+        style={
+          Object {
+            "color": "neutral",
+          }
+        }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "alert": Object {
+                "skins": Object {
+                  "error": Object {
+                    "background": "#ffe5e9",
+                    "icon": "#ff2d4d",
+                    "text": "#ac001a",
+                  },
+                  "neutral": Object {
+                    "background": "#f2f2f2",
+                    "icon": "#999999",
+                    "text": "#191919",
+                  },
+                  "primary": Object {
+                    "background": "#e5edfc",
+                    "icon": "#1355d0",
+                    "text": "#062ab3",
+                  },
+                  "success": Object {
+                    "background": "#edfadf",
+                    "icon": "#7ed321",
+                    "text": "#3c6510",
+                  },
+                  "warning": Object {
+                    "background": "#ffefd6",
+                    "icon": "#f09100",
+                    "text": "#a36300",
+                  },
+                },
+              },
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
+      >
+        close
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Alert component When you set a alert custom icon Should match the snapshot with an icon 1`] = `
+.c9 {
+  pointer-events: none;
+}
+
+.c7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #999999;
+  color: #f2f2f2;
+  border: 2px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c7:hover {
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+}
+
+.c7:focus,
+.c7:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+}
+
+.c7:active {
+  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
+  background-color: #4c4c4c;
+}
+
+.c7 .c8 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c7 .c8 function (_ref5) var sizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c2 {
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c6 .c8 {
+  margin-right: 0;
+}
+
+.c6:hover,
+.c6:focus {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.4);
+  color: #4c4c4c;
+}
+
+.c6:active {
+  box-shadow: none;
+  background-color: rgba(204,204,204,0.5);
+  color: #4c4c4c;
+}
+
+.c6:hover {
+  background: none;
+  opacity: 1;
+}
+
+.c0 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #999999;
+  color: #191919;
+  padding: 12px 16px;
+}
+
 .c0 .c1 .c3 {
   color: #999999;
   margin-right: 16px;
 }
 
-.c0 .c1 .c4 {
+.c0 .c1 > .c5 {
   color: #999999;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c0 .c1 > .c5 .c4 {
+  color: #999999;
+  margin-left: 0;
+}
+
+@media (min-width:0px) {
+  .c9 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c9 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c9 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c9 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c9 {
+    margin-right: 16px;
+  }
 }
 
 <div
@@ -324,7 +618,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
       Sample alert
     </span>
     <button
-      className="c4 c5 c6"
+      className="c4 c5 c6 c7"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -332,13 +626,231 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c7 c8"
+        center={false}
+        className="material-icons MuiIcon-root-1 c4 c5 c6 c8 c9"
+        disabled={false}
+        full={false}
+        onClick={[Function]}
         size="medium"
+        stroked={false}
         style={
           Object {
-            "color": "",
+            "color": "neutral",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "alert": Object {
+                "skins": Object {
+                  "error": Object {
+                    "background": "#ffe5e9",
+                    "icon": "#ff2d4d",
+                    "text": "#ac001a",
+                  },
+                  "neutral": Object {
+                    "background": "#f2f2f2",
+                    "icon": "#999999",
+                    "text": "#191919",
+                  },
+                  "primary": Object {
+                    "background": "#e5edfc",
+                    "icon": "#1355d0",
+                    "text": "#062ab3",
+                  },
+                  "success": Object {
+                    "background": "#edfadf",
+                    "icon": "#7ed321",
+                    "text": "#3c6510",
+                  },
+                  "warning": Object {
+                    "background": "#ffefd6",
+                    "icon": "#f09100",
+                    "text": "#a36300",
+                  },
+                },
+              },
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         close
       </span>
@@ -348,11 +860,11 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 `;
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 1`] = `
-.c7 {
+.c8 {
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -373,33 +885,34 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c5:hover {
+.c6:hover {
   box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.c5:focus,
-.c5:focus-within {
+.c6:focus,
+.c6:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
-.c5:active {
+.c6:active {
   box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
 }
 
-.c5 .c6 function (_ref5) {
+.c6 .c7 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -407,7 +920,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c6 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -422,7 +935,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -438,24 +951,24 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
-.c4 .c6 {
+.c5 .c7 {
   margin-right: 0;
 }
 
-.c4:hover,
-.c4:focus {
+.c5:hover,
+.c5:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c4:active {
+.c5:active {
   box-shadow: none;
   background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
-.c4:hover {
+.c5:hover {
   background: none;
   opacity: 1;
 }
@@ -470,14 +983,51 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c8 {
+.c0 .c1 .c9 {
   color: #999999;
   margin-right: 16px;
 }
 
-.c0 .c1 .c3 {
+.c0 .c1 > .c4 {
   color: #999999;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c0 .c1 > .c4 .c3 {
+  color: #999999;
+  margin-left: 0;
+}
+
+@media (min-width:0px) {
+  .c8 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c8 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c8 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c8 {
+    margin-right: 16px;
+  }
 }
 
 <div
@@ -492,7 +1042,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       blue
     </span>
     <button
-      className="c3 c4 c5"
+      className="c3 c4 c5 c6"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -500,13 +1050,231 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6 c7"
+        center={false}
+        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
+        disabled={false}
+        full={false}
+        onClick={[Function]}
         size="medium"
+        stroked={false}
         style={
           Object {
-            "color": "",
+            "color": "neutral",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "alert": Object {
+                "skins": Object {
+                  "error": Object {
+                    "background": "#ffe5e9",
+                    "icon": "#ff2d4d",
+                    "text": "#ac001a",
+                  },
+                  "neutral": Object {
+                    "background": "#f2f2f2",
+                    "icon": "#999999",
+                    "text": "#191919",
+                  },
+                  "primary": Object {
+                    "background": "#e5edfc",
+                    "icon": "#1355d0",
+                    "text": "#062ab3",
+                  },
+                  "success": Object {
+                    "background": "#edfadf",
+                    "icon": "#7ed321",
+                    "text": "#3c6510",
+                  },
+                  "warning": Object {
+                    "background": "#ffefd6",
+                    "icon": "#f09100",
+                    "text": "#a36300",
+                  },
+                },
+              },
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         close
       </span>
@@ -516,11 +1284,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 `;
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 2`] = `
-.c7 {
+.c8 {
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -541,33 +1309,34 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c5:hover {
+.c6:hover {
   box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.c5:focus,
-.c5:focus-within {
+.c6:focus,
+.c6:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
-.c5:active {
+.c6:active {
   box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
 }
 
-.c5 .c6 function (_ref5) {
+.c6 .c7 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -575,7 +1344,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c6 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -590,7 +1359,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -606,36 +1375,43 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
-.c4 .c6 {
+.c5 .c7 {
   margin-right: 0;
 }
 
-.c4:hover,
-.c4:focus {
+.c5:hover,
+.c5:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c4:active {
+.c5:active {
   box-shadow: none;
   background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
-.c4:hover {
+.c5:hover {
   background: none;
   opacity: 1;
 }
 
-.c8 .c1 .c9 {
+.c9 .c1 .c10 {
   color: #999999;
   margin-right: 16px;
 }
 
-.c8 .c1 .c3 {
+.c9 .c1 > .c4 {
   color: #999999;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c9 .c1 > .c4 .c3 {
+  color: #999999;
+  margin-left: 0;
 }
 
 .c0 {
@@ -648,14 +1424,51 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c9 {
+.c0 .c1 .c10 {
   color: #1355d0;
   margin-right: 16px;
 }
 
-.c0 .c1 .c3 {
+.c0 .c1 > .c4 {
   color: #1355d0;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c0 .c1 > .c4 .c3 {
+  color: #1355d0;
+  margin-left: 0;
+}
+
+@media (min-width:0px) {
+  .c8 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c8 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c8 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c8 {
+    margin-right: 16px;
+  }
 }
 
 <div
@@ -670,7 +1483,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       blue
     </span>
     <button
-      className="c3 c4 c5"
+      className="c3 c4 c5 c6"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -678,13 +1491,231 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6 c7"
+        center={false}
+        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
+        disabled={false}
+        full={false}
+        onClick={[Function]}
         size="medium"
+        stroked={false}
         style={
           Object {
-            "color": "",
+            "color": "neutral",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "alert": Object {
+                "skins": Object {
+                  "error": Object {
+                    "background": "#ffe5e9",
+                    "icon": "#ff2d4d",
+                    "text": "#ac001a",
+                  },
+                  "neutral": Object {
+                    "background": "#f2f2f2",
+                    "icon": "#999999",
+                    "text": "#191919",
+                  },
+                  "primary": Object {
+                    "background": "#e5edfc",
+                    "icon": "#1355d0",
+                    "text": "#062ab3",
+                  },
+                  "success": Object {
+                    "background": "#edfadf",
+                    "icon": "#7ed321",
+                    "text": "#3c6510",
+                  },
+                  "warning": Object {
+                    "background": "#ffefd6",
+                    "icon": "#f09100",
+                    "text": "#a36300",
+                  },
+                },
+              },
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         close
       </span>
@@ -694,11 +1725,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 `;
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 3`] = `
-.c7 {
+.c8 {
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -719,33 +1750,34 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c5:hover {
+.c6:hover {
   box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.c5:focus,
-.c5:focus-within {
+.c6:focus,
+.c6:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
-.c5:active {
+.c6:active {
   box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
 }
 
-.c5 .c6 function (_ref5) {
+.c6 .c7 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -753,7 +1785,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c6 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -768,7 +1800,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -784,46 +1816,60 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
-.c4 .c6 {
+.c5 .c7 {
   margin-right: 0;
 }
 
-.c4:hover,
-.c4:focus {
+.c5:hover,
+.c5:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c4:active {
+.c5:active {
   box-shadow: none;
   background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
-.c4:hover {
+.c5:hover {
   background: none;
   opacity: 1;
 }
 
-.c8 .c1 .c10 {
+.c9 .c1 .c11 {
   color: #999999;
   margin-right: 16px;
 }
 
-.c8 .c1 .c3 {
+.c9 .c1 > .c4 {
   color: #999999;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
 }
 
-.c9 .c1 .c10 {
+.c9 .c1 > .c4 .c3 {
+  color: #999999;
+  margin-left: 0;
+}
+
+.c10 .c1 .c11 {
   color: #1355d0;
   margin-right: 16px;
 }
 
-.c9 .c1 .c3 {
+.c10 .c1 > .c4 {
   color: #1355d0;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c10 .c1 > .c4 .c3 {
+  color: #1355d0;
+  margin-left: 0;
 }
 
 .c0 {
@@ -836,14 +1882,51 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c10 {
+.c0 .c1 .c11 {
   color: #7ed321;
   margin-right: 16px;
 }
 
-.c0 .c1 .c3 {
+.c0 .c1 > .c4 {
   color: #7ed321;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c0 .c1 > .c4 .c3 {
+  color: #7ed321;
+  margin-left: 0;
+}
+
+@media (min-width:0px) {
+  .c8 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c8 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c8 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c8 {
+    margin-right: 16px;
+  }
 }
 
 <div
@@ -858,7 +1941,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       success
     </span>
     <button
-      className="c3 c4 c5"
+      className="c3 c4 c5 c6"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -866,13 +1949,231 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6 c7"
+        center={false}
+        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
+        disabled={false}
+        full={false}
+        onClick={[Function]}
         size="medium"
+        stroked={false}
         style={
           Object {
-            "color": "",
+            "color": "neutral",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "alert": Object {
+                "skins": Object {
+                  "error": Object {
+                    "background": "#ffe5e9",
+                    "icon": "#ff2d4d",
+                    "text": "#ac001a",
+                  },
+                  "neutral": Object {
+                    "background": "#f2f2f2",
+                    "icon": "#999999",
+                    "text": "#191919",
+                  },
+                  "primary": Object {
+                    "background": "#e5edfc",
+                    "icon": "#1355d0",
+                    "text": "#062ab3",
+                  },
+                  "success": Object {
+                    "background": "#edfadf",
+                    "icon": "#7ed321",
+                    "text": "#3c6510",
+                  },
+                  "warning": Object {
+                    "background": "#ffefd6",
+                    "icon": "#f09100",
+                    "text": "#a36300",
+                  },
+                },
+              },
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         close
       </span>
@@ -882,11 +2183,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 `;
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 4`] = `
-.c7 {
+.c8 {
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -907,33 +2208,34 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c5:hover {
+.c6:hover {
   box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.c5:focus,
-.c5:focus-within {
+.c6:focus,
+.c6:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
-.c5:active {
+.c6:active {
   box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
 }
 
-.c5 .c6 function (_ref5) {
+.c6 .c7 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -941,7 +2243,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c6 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -956,7 +2258,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -972,56 +2274,77 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
-.c4 .c6 {
+.c5 .c7 {
   margin-right: 0;
 }
 
-.c4:hover,
-.c4:focus {
+.c5:hover,
+.c5:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c4:active {
+.c5:active {
   box-shadow: none;
   background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
-.c4:hover {
+.c5:hover {
   background: none;
   opacity: 1;
 }
 
-.c8 .c1 .c11 {
+.c9 .c1 .c12 {
   color: #999999;
   margin-right: 16px;
 }
 
-.c8 .c1 .c3 {
+.c9 .c1 > .c4 {
   color: #999999;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
 }
 
-.c9 .c1 .c11 {
+.c9 .c1 > .c4 .c3 {
+  color: #999999;
+  margin-left: 0;
+}
+
+.c10 .c1 .c12 {
   color: #1355d0;
   margin-right: 16px;
 }
 
-.c9 .c1 .c3 {
+.c10 .c1 > .c4 {
   color: #1355d0;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
 }
 
-.c10 .c1 .c11 {
+.c10 .c1 > .c4 .c3 {
+  color: #1355d0;
+  margin-left: 0;
+}
+
+.c11 .c1 .c12 {
   color: #7ed321;
   margin-right: 16px;
 }
 
-.c10 .c1 .c3 {
+.c11 .c1 > .c4 {
   color: #7ed321;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c11 .c1 > .c4 .c3 {
+  color: #7ed321;
+  margin-left: 0;
 }
 
 .c0 {
@@ -1034,14 +2357,51 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c11 {
+.c0 .c1 .c12 {
   color: #f09100;
   margin-right: 16px;
 }
 
-.c0 .c1 .c3 {
+.c0 .c1 > .c4 {
   color: #f09100;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c0 .c1 > .c4 .c3 {
+  color: #f09100;
+  margin-left: 0;
+}
+
+@media (min-width:0px) {
+  .c8 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c8 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c8 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c8 {
+    margin-right: 16px;
+  }
 }
 
 <div
@@ -1056,7 +2416,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       warning
     </span>
     <button
-      className="c3 c4 c5"
+      className="c3 c4 c5 c6"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -1064,13 +2424,231 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6 c7"
+        center={false}
+        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
+        disabled={false}
+        full={false}
+        onClick={[Function]}
         size="medium"
+        stroked={false}
         style={
           Object {
-            "color": "",
+            "color": "neutral",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "alert": Object {
+                "skins": Object {
+                  "error": Object {
+                    "background": "#ffe5e9",
+                    "icon": "#ff2d4d",
+                    "text": "#ac001a",
+                  },
+                  "neutral": Object {
+                    "background": "#f2f2f2",
+                    "icon": "#999999",
+                    "text": "#191919",
+                  },
+                  "primary": Object {
+                    "background": "#e5edfc",
+                    "icon": "#1355d0",
+                    "text": "#062ab3",
+                  },
+                  "success": Object {
+                    "background": "#edfadf",
+                    "icon": "#7ed321",
+                    "text": "#3c6510",
+                  },
+                  "warning": Object {
+                    "background": "#ffefd6",
+                    "icon": "#f09100",
+                    "text": "#a36300",
+                  },
+                },
+              },
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         close
       </span>
@@ -1080,11 +2658,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 `;
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 5`] = `
-.c7 {
+.c8 {
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1105,33 +2683,34 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c5:hover {
+.c6:hover {
   box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.c5:focus,
-.c5:focus-within {
+.c6:focus,
+.c6:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
 }
 
-.c5:active {
+.c6:active {
   box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
   background-color: #4c4c4c;
 }
 
-.c5 .c6 function (_ref5) {
+.c6 .c7 function (_ref5) {
   -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
@@ -1139,7 +2718,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c6 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var sizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1154,7 +2733,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -1170,66 +2749,94 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   width: auto;
 }
 
-.c4 .c6 {
+.c5 .c7 {
   margin-right: 0;
 }
 
-.c4:hover,
-.c4:focus {
+.c5:hover,
+.c5:focus {
   box-shadow: none;
   background-color: rgba(204,204,204,0.4);
   color: #4c4c4c;
 }
 
-.c4:active {
+.c5:active {
   box-shadow: none;
   background-color: rgba(204,204,204,0.5);
   color: #4c4c4c;
 }
 
-.c4:hover {
+.c5:hover {
   background: none;
   opacity: 1;
 }
 
-.c8 .c1 .c12 {
+.c9 .c1 .c13 {
   color: #999999;
   margin-right: 16px;
 }
 
-.c8 .c1 .c3 {
+.c9 .c1 > .c4 {
   color: #999999;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
 }
 
-.c9 .c1 .c12 {
+.c9 .c1 > .c4 .c3 {
+  color: #999999;
+  margin-left: 0;
+}
+
+.c10 .c1 .c13 {
   color: #1355d0;
   margin-right: 16px;
 }
 
-.c9 .c1 .c3 {
+.c10 .c1 > .c4 {
   color: #1355d0;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
 }
 
-.c10 .c1 .c12 {
+.c10 .c1 > .c4 .c3 {
+  color: #1355d0;
+  margin-left: 0;
+}
+
+.c11 .c1 .c13 {
   color: #7ed321;
   margin-right: 16px;
 }
 
-.c10 .c1 .c3 {
+.c11 .c1 > .c4 {
   color: #7ed321;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
 }
 
-.c11 .c1 .c12 {
+.c11 .c1 > .c4 .c3 {
+  color: #7ed321;
+  margin-left: 0;
+}
+
+.c12 .c1 .c13 {
   color: #f09100;
   margin-right: 16px;
 }
 
-.c11 .c1 .c3 {
+.c12 .c1 > .c4 {
   color: #f09100;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c12 .c1 > .c4 .c3 {
+  color: #f09100;
+  margin-left: 0;
 }
 
 .c0 {
@@ -1242,14 +2849,51 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c12 {
+.c0 .c1 .c13 {
   color: #ff2d4d;
   margin-right: 16px;
 }
 
-.c0 .c1 .c3 {
+.c0 .c1 > .c4 {
   color: #ff2d4d;
   margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c0 .c1 > .c4 .c3 {
+  color: #ff2d4d;
+  margin-left: 0;
+}
+
+@media (min-width:0px) {
+  .c8 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c8 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c8 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c8 {
+    margin-right: 16px;
+  }
 }
 
 <div
@@ -1264,7 +2908,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       error
     </span>
     <button
-      className="c3 c4 c5"
+      className="c3 c4 c5 c6"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -1272,13 +2916,231 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c6 c7"
+        center={false}
+        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
+        disabled={false}
+        full={false}
+        onClick={[Function]}
         size="medium"
+        stroked={false}
         style={
           Object {
-            "color": "",
+            "color": "neutral",
           }
         }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "breakpoints": Object {
+              "large": Object {
+                "columns": 12,
+                "width": 1440,
+              },
+              "medium": Object {
+                "columns": 12,
+                "width": 1024,
+              },
+              "small": Object {
+                "columns": 8,
+                "width": 600,
+              },
+              "xlarge": Object {
+                "columns": 12,
+                "width": 1920,
+              },
+              "xsmall": Object {
+                "columns": 4,
+              },
+            },
+            "colors": Object {
+              "error": Object {
+                "100": "#ffe5e9",
+                "300": "#ff6c82",
+                "500": "#ff2d4d",
+                "700": "#ff223d",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "100": "#f2f2f2",
+                "300": "#cccccc",
+                "500": "#999999",
+                "700": "#4c4c4c",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#e5edfc",
+                "300": "#5a88de",
+                "500": "#1355d0",
+                "700": "#0e44c4",
+                "900": "#062ab3",
+              },
+              "secondary": Object {
+                "100": "#f5b3cd",
+                "300": "#e84d8b",
+                "500": "#de0059",
+                "700": "#d50048",
+                "900": "#c8002e",
+              },
+              "success": Object {
+                "100": "#edfadf",
+                "300": "#a5e064",
+                "500": "#7ed321",
+                "700": "#6bc818",
+                "900": "#3c6510",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#f5b24d",
+                "500": "#f09100",
+                "700": "#ec7e00",
+                "900": "#a36300",
+              },
+            },
+            "components": Object {
+              "alert": Object {
+                "skins": Object {
+                  "error": Object {
+                    "background": "#ffe5e9",
+                    "icon": "#ff2d4d",
+                    "text": "#ac001a",
+                  },
+                  "neutral": Object {
+                    "background": "#f2f2f2",
+                    "icon": "#999999",
+                    "text": "#191919",
+                  },
+                  "primary": Object {
+                    "background": "#e5edfc",
+                    "icon": "#1355d0",
+                    "text": "#062ab3",
+                  },
+                  "success": Object {
+                    "background": "#edfadf",
+                    "icon": "#7ed321",
+                    "text": "#3c6510",
+                  },
+                  "warning": Object {
+                    "background": "#ffefd6",
+                    "icon": "#f09100",
+                    "text": "#a36300",
+                  },
+                },
+              },
+              "button": Object {
+                "skins": Object {
+                  "error": Object {
+                    "mainColor": Object {
+                      "100": "#ffe5e9",
+                      "300": "#ff6c82",
+                      "500": "#ff2d4d",
+                      "700": "#ff223d",
+                      "900": "#ac001a",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "neutral": Object {
+                    "mainColor": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "primary": Object {
+                    "mainColor": Object {
+                      "100": "#e5edfc",
+                      "300": "#5a88de",
+                      "500": "#1355d0",
+                      "700": "#0e44c4",
+                      "900": "#062ab3",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "secondary": Object {
+                    "mainColor": Object {
+                      "100": "#f5b3cd",
+                      "300": "#e84d8b",
+                      "500": "#de0059",
+                      "700": "#d50048",
+                      "900": "#c8002e",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "success": Object {
+                    "mainColor": Object {
+                      "100": "#edfadf",
+                      "300": "#a5e064",
+                      "500": "#7ed321",
+                      "700": "#6bc818",
+                      "900": "#3c6510",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                  "warning": Object {
+                    "mainColor": Object {
+                      "100": "#ffefd6",
+                      "300": "#f5b24d",
+                      "500": "#f09100",
+                      "700": "#ec7e00",
+                      "900": "#a36300",
+                    },
+                    "text": Object {
+                      "100": "#f2f2f2",
+                      "300": "#cccccc",
+                      "500": "#999999",
+                      "700": "#4c4c4c",
+                      "900": "#191919",
+                    },
+                  },
+                },
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+        type="button"
       >
         close
       </span>
