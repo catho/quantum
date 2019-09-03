@@ -142,10 +142,6 @@ const Col = styled.div`
       columnPosition(props, breakpoint),
     )}
 
-  @supports not ( display: grid ) {
-    display: inline-block;
-  }
-
   word-break: break-word;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -110,7 +110,8 @@ class Row extends React.Component {
 
     const applyNoGutters = child => {
       const ChildWithNoGutters = React.cloneElement(child, {
-        'no-gutters': child.props['no-gutters'] === true ? true : noGutters,
+        'no-gutters':
+          child.props && child.props['no-gutters'] === true ? true : noGutters,
       });
       return ChildWithNoGutters;
     };
