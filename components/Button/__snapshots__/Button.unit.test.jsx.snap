@@ -22,13 +22,14 @@ exports[`Button component Should match the snapshot 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -94,15 +95,16 @@ exports[`Button component when center prop is set 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   margin-left: auto;
   margin-right: auto;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -168,14 +170,15 @@ exports[`Button component when full prop is set 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -241,13 +244,14 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
   color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -313,13 +317,14 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -385,13 +390,14 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #7ed321;
   color: #f2f2f2;
-  border: 1.5px solid #7ed321;
+  border: 2px solid #7ed321;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -457,13 +463,14 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f09100;
   color: #f2f2f2;
-  border: 1.5px solid #f09100;
+  border: 2px solid #f09100;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -529,13 +536,14 @@ exports[`Button component when there is a skin set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ff2d4d;
   color: #f2f2f2;
-  border: 1.5px solid #ff2d4d;
+  border: 2px solid #ff2d4d;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -601,13 +609,14 @@ exports[`Button component when there is a type set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -673,13 +682,14 @@ exports[`Button component when there is a type set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -745,13 +755,14 @@ exports[`Button component when there is a type set should match secondary snapsh
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -821,13 +832,14 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -931,6 +943,36 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+@media (min-width:0px) {
+  .c2 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c2 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c2 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c2 {
+    margin-right: 16px;
+  }
+}
+
 <button
   className="c0"
   disabled={false}
@@ -940,13 +982,202 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <span
     aria-hidden="true"
+    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
+    disabled={false}
+    full={false}
+    onClick={[Function]}
     size="medium"
+    stroked={false}
     style={
       Object {
-        "color": "",
+        "color": "primary",
       }
     }
+    theme={
+      Object {
+        "baseFontSize": 16,
+        "breakpoints": Object {
+          "large": Object {
+            "columns": 12,
+            "width": 1440,
+          },
+          "medium": Object {
+            "columns": 12,
+            "width": 1024,
+          },
+          "small": Object {
+            "columns": 8,
+            "width": 600,
+          },
+          "xlarge": Object {
+            "columns": 12,
+            "width": 1920,
+          },
+          "xsmall": Object {
+            "columns": 4,
+          },
+        },
+        "colors": Object {
+          "error": Object {
+            "100": "#ffe5e9",
+            "300": "#ff6c82",
+            "500": "#ff2d4d",
+            "700": "#ff223d",
+            "900": "#ac001a",
+          },
+          "neutral": Object {
+            "100": "#f2f2f2",
+            "300": "#cccccc",
+            "500": "#999999",
+            "700": "#4c4c4c",
+            "900": "#191919",
+          },
+          "primary": Object {
+            "100": "#e5edfc",
+            "300": "#5a88de",
+            "500": "#1355d0",
+            "700": "#0e44c4",
+            "900": "#062ab3",
+          },
+          "secondary": Object {
+            "100": "#f5b3cd",
+            "300": "#e84d8b",
+            "500": "#de0059",
+            "700": "#d50048",
+            "900": "#c8002e",
+          },
+          "success": Object {
+            "100": "#edfadf",
+            "300": "#a5e064",
+            "500": "#7ed321",
+            "700": "#6bc818",
+            "900": "#3c6510",
+          },
+          "warning": Object {
+            "100": "#ffefd6",
+            "300": "#f5b24d",
+            "500": "#f09100",
+            "700": "#ec7e00",
+            "900": "#a36300",
+          },
+        },
+        "components": Object {
+          "button": Object {
+            "skins": Object {
+              "error": Object {
+                "mainColor": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "neutral": Object {
+                "mainColor": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "primary": Object {
+                "mainColor": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "secondary": Object {
+                "mainColor": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "success": Object {
+                "mainColor": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "warning": Object {
+                "mainColor": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+            },
+          },
+        },
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        },
+      }
+    }
+    type="button"
   >
     search
   </span>
@@ -980,13 +1211,14 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1090,6 +1322,36 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+@media (min-width:0px) {
+  .c2 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c2 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c2 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c2 {
+    margin-right: 16px;
+  }
+}
+
 <button
   className="c0"
   disabled={false}
@@ -1099,13 +1361,202 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <span
     aria-hidden="true"
+    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
+    disabled={false}
+    full={false}
+    onClick={[Function]}
     size="medium"
+    stroked={false}
     style={
       Object {
-        "color": "",
+        "color": "primary",
       }
     }
+    theme={
+      Object {
+        "baseFontSize": 16,
+        "breakpoints": Object {
+          "large": Object {
+            "columns": 12,
+            "width": 1440,
+          },
+          "medium": Object {
+            "columns": 12,
+            "width": 1024,
+          },
+          "small": Object {
+            "columns": 8,
+            "width": 600,
+          },
+          "xlarge": Object {
+            "columns": 12,
+            "width": 1920,
+          },
+          "xsmall": Object {
+            "columns": 4,
+          },
+        },
+        "colors": Object {
+          "error": Object {
+            "100": "#ffe5e9",
+            "300": "#ff6c82",
+            "500": "#ff2d4d",
+            "700": "#ff223d",
+            "900": "#ac001a",
+          },
+          "neutral": Object {
+            "100": "#f2f2f2",
+            "300": "#cccccc",
+            "500": "#999999",
+            "700": "#4c4c4c",
+            "900": "#191919",
+          },
+          "primary": Object {
+            "100": "#e5edfc",
+            "300": "#5a88de",
+            "500": "#1355d0",
+            "700": "#0e44c4",
+            "900": "#062ab3",
+          },
+          "secondary": Object {
+            "100": "#f5b3cd",
+            "300": "#e84d8b",
+            "500": "#de0059",
+            "700": "#d50048",
+            "900": "#c8002e",
+          },
+          "success": Object {
+            "100": "#edfadf",
+            "300": "#a5e064",
+            "500": "#7ed321",
+            "700": "#6bc818",
+            "900": "#3c6510",
+          },
+          "warning": Object {
+            "100": "#ffefd6",
+            "300": "#f5b24d",
+            "500": "#f09100",
+            "700": "#ec7e00",
+            "900": "#a36300",
+          },
+        },
+        "components": Object {
+          "button": Object {
+            "skins": Object {
+              "error": Object {
+                "mainColor": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "neutral": Object {
+                "mainColor": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "primary": Object {
+                "mainColor": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "secondary": Object {
+                "mainColor": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "success": Object {
+                "mainColor": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "warning": Object {
+                "mainColor": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+            },
+          },
+        },
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        },
+      }
+    }
+    type="button"
   >
     sync
   </span>
@@ -1139,13 +1590,14 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1249,6 +1701,36 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+@media (min-width:0px) {
+  .c2 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c2 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c2 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c2 {
+    margin-right: 16px;
+  }
+}
+
 <button
   className="c0"
   disabled={false}
@@ -1258,13 +1740,202 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <span
     aria-hidden="true"
+    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
+    disabled={false}
+    full={false}
+    onClick={[Function]}
     size="medium"
+    stroked={false}
     style={
       Object {
-        "color": "",
+        "color": "primary",
       }
     }
+    theme={
+      Object {
+        "baseFontSize": 16,
+        "breakpoints": Object {
+          "large": Object {
+            "columns": 12,
+            "width": 1440,
+          },
+          "medium": Object {
+            "columns": 12,
+            "width": 1024,
+          },
+          "small": Object {
+            "columns": 8,
+            "width": 600,
+          },
+          "xlarge": Object {
+            "columns": 12,
+            "width": 1920,
+          },
+          "xsmall": Object {
+            "columns": 4,
+          },
+        },
+        "colors": Object {
+          "error": Object {
+            "100": "#ffe5e9",
+            "300": "#ff6c82",
+            "500": "#ff2d4d",
+            "700": "#ff223d",
+            "900": "#ac001a",
+          },
+          "neutral": Object {
+            "100": "#f2f2f2",
+            "300": "#cccccc",
+            "500": "#999999",
+            "700": "#4c4c4c",
+            "900": "#191919",
+          },
+          "primary": Object {
+            "100": "#e5edfc",
+            "300": "#5a88de",
+            "500": "#1355d0",
+            "700": "#0e44c4",
+            "900": "#062ab3",
+          },
+          "secondary": Object {
+            "100": "#f5b3cd",
+            "300": "#e84d8b",
+            "500": "#de0059",
+            "700": "#d50048",
+            "900": "#c8002e",
+          },
+          "success": Object {
+            "100": "#edfadf",
+            "300": "#a5e064",
+            "500": "#7ed321",
+            "700": "#6bc818",
+            "900": "#3c6510",
+          },
+          "warning": Object {
+            "100": "#ffefd6",
+            "300": "#f5b24d",
+            "500": "#f09100",
+            "700": "#ec7e00",
+            "900": "#a36300",
+          },
+        },
+        "components": Object {
+          "button": Object {
+            "skins": Object {
+              "error": Object {
+                "mainColor": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "neutral": Object {
+                "mainColor": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "primary": Object {
+                "mainColor": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "secondary": Object {
+                "mainColor": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "success": Object {
+                "mainColor": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "warning": Object {
+                "mainColor": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+            },
+          },
+        },
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        },
+      }
+    }
+    type="button"
   >
     sms
   </span>
@@ -1298,13 +1969,14 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  padding: 0 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
   color: #f2f2f2;
-  border: 1.5px solid #1355d0;
+  border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1408,6 +2080,36 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
+@media (min-width:0px) {
+  .c2 {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width:600px) {
+  .c2 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c2 {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:1920px) {
+  .c2 {
+    margin-right: 16px;
+  }
+}
+
 <button
   className="c0"
   disabled={false}
@@ -1417,13 +2119,202 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <span
     aria-hidden="true"
+    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
+    disabled={false}
+    full={false}
+    onClick={[Function]}
     size="medium"
+    stroked={false}
     style={
       Object {
-        "color": "",
+        "color": "primary",
       }
     }
+    theme={
+      Object {
+        "baseFontSize": 16,
+        "breakpoints": Object {
+          "large": Object {
+            "columns": 12,
+            "width": 1440,
+          },
+          "medium": Object {
+            "columns": 12,
+            "width": 1024,
+          },
+          "small": Object {
+            "columns": 8,
+            "width": 600,
+          },
+          "xlarge": Object {
+            "columns": 12,
+            "width": 1920,
+          },
+          "xsmall": Object {
+            "columns": 4,
+          },
+        },
+        "colors": Object {
+          "error": Object {
+            "100": "#ffe5e9",
+            "300": "#ff6c82",
+            "500": "#ff2d4d",
+            "700": "#ff223d",
+            "900": "#ac001a",
+          },
+          "neutral": Object {
+            "100": "#f2f2f2",
+            "300": "#cccccc",
+            "500": "#999999",
+            "700": "#4c4c4c",
+            "900": "#191919",
+          },
+          "primary": Object {
+            "100": "#e5edfc",
+            "300": "#5a88de",
+            "500": "#1355d0",
+            "700": "#0e44c4",
+            "900": "#062ab3",
+          },
+          "secondary": Object {
+            "100": "#f5b3cd",
+            "300": "#e84d8b",
+            "500": "#de0059",
+            "700": "#d50048",
+            "900": "#c8002e",
+          },
+          "success": Object {
+            "100": "#edfadf",
+            "300": "#a5e064",
+            "500": "#7ed321",
+            "700": "#6bc818",
+            "900": "#3c6510",
+          },
+          "warning": Object {
+            "100": "#ffefd6",
+            "300": "#f5b24d",
+            "500": "#f09100",
+            "700": "#ec7e00",
+            "900": "#a36300",
+          },
+        },
+        "components": Object {
+          "button": Object {
+            "skins": Object {
+              "error": Object {
+                "mainColor": Object {
+                  "100": "#ffe5e9",
+                  "300": "#ff6c82",
+                  "500": "#ff2d4d",
+                  "700": "#ff223d",
+                  "900": "#ac001a",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "neutral": Object {
+                "mainColor": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "primary": Object {
+                "mainColor": Object {
+                  "100": "#e5edfc",
+                  "300": "#5a88de",
+                  "500": "#1355d0",
+                  "700": "#0e44c4",
+                  "900": "#062ab3",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "secondary": Object {
+                "mainColor": Object {
+                  "100": "#f5b3cd",
+                  "300": "#e84d8b",
+                  "500": "#de0059",
+                  "700": "#d50048",
+                  "900": "#c8002e",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "success": Object {
+                "mainColor": Object {
+                  "100": "#edfadf",
+                  "300": "#a5e064",
+                  "500": "#7ed321",
+                  "700": "#6bc818",
+                  "900": "#3c6510",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+              "warning": Object {
+                "mainColor": Object {
+                  "100": "#ffefd6",
+                  "300": "#f5b24d",
+                  "500": "#f09100",
+                  "700": "#ec7e00",
+                  "900": "#a36300",
+                },
+                "text": Object {
+                  "100": "#f2f2f2",
+                  "300": "#cccccc",
+                  "500": "#999999",
+                  "700": "#4c4c4c",
+                  "900": "#191919",
+                },
+              },
+            },
+          },
+        },
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        },
+      }
+    }
+    type="button"
   >
     camera
   </span>

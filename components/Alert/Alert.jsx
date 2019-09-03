@@ -8,6 +8,7 @@ import {
   spacing,
   colors,
   baseFontSize as defaultBaseFontSize,
+  breakpoints,
 } from '../shared/theme';
 
 const Content = styled.div`
@@ -63,9 +64,16 @@ const Wrapper = styled.div`
       margin-right: ${medium}px;
     }
 
-    ${Content} ${CloseButton} {
+    ${Content} > ${CloseButton} {
       color: ${icon};
       margin: 0 0 0 ${medium}px;
+      min-height: 0;
+      opacity: 1;
+
+      ${Button.Icon} {
+        color: ${icon};
+        margin-left: 0;
+      }
     }
   `}
 `;
@@ -87,6 +95,7 @@ Alert.defaultProps = {
     colors,
     baseFontSize: defaultBaseFontSize,
     spacing,
+    breakpoints,
     components: {
       alert: components.alert,
       button: components.button,
