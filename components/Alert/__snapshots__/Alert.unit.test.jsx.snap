@@ -133,6 +133,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   color: #999999;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
@@ -556,6 +557,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   color: #999999;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c0 .c1 > .c5 .c4 {
@@ -990,6 +992,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #999999;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
@@ -1403,6 +1406,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #999999;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
@@ -1429,6 +1433,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #1355d0;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
@@ -1842,6 +1847,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #999999;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
@@ -1858,6 +1864,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #1355d0;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
@@ -1884,6 +1891,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #7ed321;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
@@ -2297,6 +2305,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #999999;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
@@ -2313,6 +2322,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #1355d0;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
@@ -2329,6 +2339,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #7ed321;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c11 .c1 > .c4 .c3 {
@@ -2355,6 +2366,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #f09100;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
@@ -2768,6 +2780,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #999999;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
@@ -2784,6 +2797,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #1355d0;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
@@ -2800,6 +2814,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #7ed321;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c11 .c1 > .c4 .c3 {
@@ -2816,6 +2831,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #f09100;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c12 .c1 > .c4 .c3 {
@@ -2842,6 +2858,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #ff2d4d;
   margin: 0 0 0 16px;
   min-height: 0;
+  opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {

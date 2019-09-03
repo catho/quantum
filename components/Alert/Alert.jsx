@@ -68,6 +68,7 @@ const Wrapper = styled.div`
       color: ${icon};
       margin: 0 0 0 ${medium}px;
       min-height: 0;
+      opacity: 1;
 
       ${Button.Icon} {
         color: ${icon};
