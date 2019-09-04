@@ -54,6 +54,7 @@ PageButton.displayName = 'PageButton';
 
 PageButton.propTypes = {
   active: PropTypes.bool,
+  tabIndex: PropTypes.number,
   children: PropTypes.number.isRequired,
   onClick: PropTypes.func,
   theme: PropTypes.shape({

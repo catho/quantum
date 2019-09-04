@@ -75,6 +75,7 @@ const Mobile = ({
 }) => (
   <>
     <StyledActionButton
+      tabIndex={0}
       aria-disabled={activePage === 1}
       onClick={handlePageClick(activePage - 1)}
       href={handleHref(activePage - 1)}
@@ -87,6 +88,7 @@ const Mobile = ({
     <Info theme={theme}>{infoFormatter(activePage, totalPages)}</Info>
 
     <StyledActionButton
+      tabIndex={0}
       aria-disabled={activePage === totalPages}
       onClick={handlePageClick(activePage + 1)}
       href={handleHref(activePage + 1)}

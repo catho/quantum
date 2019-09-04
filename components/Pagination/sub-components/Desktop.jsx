@@ -18,9 +18,11 @@ const Desktop = ({
   totalPages,
   activePageAriaLabel,
   pageAriaLabel,
+  tabIndex,
 }) => (
   <>
     <ActionButton
+      tabIndex={tabIndex}
       aria-disabled={activePage === 1}
       onClick={handlePageClick(activePage - 1)}
       href={handleHref(activePage - 1)}
@@ -35,6 +37,7 @@ const Desktop = ({
 
       return (
         <PageButton
+          tabIndex={tabIndex}
           aria-current={activePage === page ? 'page' : false}
           aria-label={`${
             activePage === page ? `${activePageAriaLabel}, ` : ''
@@ -50,6 +53,7 @@ const Desktop = ({
     })}
 
     <ActionButton
+      tabIndex={tabIndex}
       aria-disabled={activePage === totalPages}
       onClick={handlePageClick(activePage + 1)}
       href={handleHref(activePage + 1)}
@@ -60,6 +64,7 @@ const Desktop = ({
 );
 
 Desktop.propTypes = {
+  tabIndex: PropTypes.number,
   activePage: PropTypes.number,
   activePageAriaLabel: PropTypes.string,
   handlePageClick: PropTypes.func,
@@ -71,6 +76,7 @@ Desktop.propTypes = {
 };
 
 Desktop.defaultProps = {
+  tabIndex: 0,
   activePage: 1,
   activePageAriaLabel: 'Current Page',
   nextButtonText: 'Next',
