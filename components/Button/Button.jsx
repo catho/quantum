@@ -206,9 +206,9 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, $as, ...rest }) => (
-  <StyledButton as={$as} {...rest} size={size}>
-    {icon && <ButtonIcon size={size} name={icon} {...rest} />}
+const Button = ({ children, icon, size, $as, skin, theme, ...rest }) => (
+  <StyledButton as={$as} {...rest} size={size} skin={skin} theme={theme}>
+    {icon && <ButtonIcon size={size} name={icon} skin={skin} theme={theme} />}
     {children}
   </StyledButton>
 );
@@ -265,7 +265,7 @@ Button.propTypes = {
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,
-    breakpoints: PropTypes.arrayOf(PropTypes.any),
+    breakpoints: PropTypes.object,
     components: PropTypes.shape({
       button: PropTypes.object,
     }),
