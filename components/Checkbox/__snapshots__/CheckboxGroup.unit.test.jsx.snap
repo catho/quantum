@@ -132,11 +132,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-<<<<<<< HEAD
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 kTPTIh\\"
-=======
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
->>>>>>> master
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-12\\"
 +       htmlFor=\\"checkbox-button-15\\"
@@ -165,11 +161,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-<<<<<<< HEAD
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 kTPTIh\\"
-=======
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
->>>>>>> master
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-13\\"
 +       htmlFor=\\"checkbox-button-16\\"
@@ -198,11 +190,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-<<<<<<< HEAD
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 kTPTIh\\"
-=======
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
->>>>>>> master
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-14\\"
 +       htmlFor=\\"checkbox-button-17\\"
@@ -1229,7 +1217,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1276,7 +1266,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#ac001a",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1285,14 +1277,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                   },
                   "neutral": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
                       "900": "#191919",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1308,7 +1304,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#062ab3",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1324,7 +1322,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#c8002e",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1340,7 +1340,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#3c6510",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1356,7 +1358,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#a36300",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1484,7 +1488,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1531,7 +1537,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#ac001a",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1540,14 +1548,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                   },
                   "neutral": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
                       "900": "#191919",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1563,7 +1575,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#062ab3",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1579,7 +1593,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#c8002e",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1595,7 +1611,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#3c6510",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1611,7 +1629,9 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
                       "900": "#a36300",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1978,13 +1998,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
-<<<<<<< HEAD
   color: #ffffff;
-  border: 1.5px solid #999999;
-=======
-  color: #f2f2f2;
   border: 2px solid #999999;
->>>>>>> master
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 

@@ -19,11 +19,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-<<<<<<< HEAD
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 kTPTIh\\"
-=======
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
->>>>>>> master
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
         disabled={false}
 -       htmlFor=\\"radio-button-9\\"
 +       htmlFor=\\"radio-button-12\\"
@@ -51,11 +47,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-<<<<<<< HEAD
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 kTPTIh\\"
-=======
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
->>>>>>> master
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
         disabled={false}
 -       htmlFor=\\"radio-button-10\\"
 +       htmlFor=\\"radio-button-13\\"
@@ -83,11 +75,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-<<<<<<< HEAD
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 kTPTIh\\"
-=======
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 fLfrVt\\"
->>>>>>> master
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
         disabled={false}
 -       htmlFor=\\"radio-button-11\\"
 +       htmlFor=\\"radio-button-14\\"
