@@ -8,8 +8,14 @@
     "test": "jest",
     "test:components": "yarn test ./components",
     "test:coverage": "yarn test:components --coverage",
+    "test:regression": "yarn loki test --port 9006",
+    "test:regression:approve": "yarn loki approve --port 9006",
+    "test:regression:update": "yarn loki update --port 9006",
+    "test:regression:update:storie": "yarn loki update --port 9006 --storiesFilter $STORIE",
+    "test:regression:storybook": "start-storybook -s static -c .storybook/regression-test --port 9006",
     "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
     "build-storybook": "build-storybook",
+    "build:regression": "yarn test:regression:storybook & ./scripts/run-regression.sh",
     "clean:files:build": "rm ./dist/**/*.test.jsx ./dist/**/*/*.test.jsx",
     "clean:directories:build": "rm -rf ./dist/**/__snapshots__ ./dist/**/*/__snapshots__",
     "clean:build": "rm -rf ./dist",
@@ -87,6 +93,7 @@
     "jest-diff": "^24.0.0",
     "jest-styled-components": "^6.3.1",
     "lint-staged": "^8.1.0",
+    "loki": "^0.17.0",
     "prettier": "^1.15.3",
     "react": "^16.7.0",
     "react-cookies": "^0.1.0",
@@ -157,5 +164,21 @@
         }
       ]
     ]
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.docker",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false,
+        "fitWindow": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.docker",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }

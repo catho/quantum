@@ -12,63 +12,86 @@ const Wrapper = styled.nav`
   justify-content: center;
 `;
 
-const Pagination = ({
-  ariaLabel,
-  activePage,
-  activePageAriaLabel,
-  nextButtonText,
-  pageAriaLabel,
-  pageHref,
-  prevButtonText,
-  onPageClick,
-  totalPages,
-  infoFormatter,
-  ...props
-}) => {
-  const handlePageClick = page => e => {
-    if (!onPageClick) {
-      return undefined;
-    }
+class Pagination extends React.Component {
+  constructor(props) {
+    super(props);
 
-    e.preventDefault();
+    this.props = props;
+  }
 
-    if (page <= 0 || page > totalPages) {
-      return false;
-    }
+  componentDidMount() {
+    window.addEventListener('resize', this.resize);
+  }
 
-    return onPageClick(page);
-  };
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize);
+  }
 
-  const handleHref = page => {
-    if (!pageHref || onPageClick || page <= 0 || page > totalPages) {
-      return undefined;
-    }
+  resize = () => this.forceUpdate();
 
-    return pageHref(page);
-  };
+  render() {
+    const {
+      ariaLabel,
+      activePage,
+      activePageAriaLabel,
+      nextButtonText,
+      pageAriaLabel,
+      pageHref,
+      prevButtonText,
+      onPageClick,
+      totalPages,
+      infoFormatter,
+      tabIndex,
+      ...props
+    } = this.props;
 
-  const width = (window && window.innerWidth) || BREAKPOINTS.small.width;
+    const handlePageClick = page => e => {
+      if (!onPageClick) {
+        return undefined;
+      }
 
-  const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
+      e.preventDefault();
 
-  return (
-    <Wrapper aria-label={ariaLabel} {...props}>
-      <Component
-        activePage={activePage}
-        handlePageClick={handlePageClick}
-        handleHref={handleHref}
-        prevButtonText={prevButtonText}
-        nextButtonText={nextButtonText}
-        totalPages={totalPages}
-        activePageAriaLabel={activePageAriaLabel}
-        pageAriaLabel={pageAriaLabel}
-        infoFormatter={infoFormatter}
-      />
-    </Wrapper>
-  );
-};
+      if (page <= 0 || page > totalPages) {
+        return false;
+      }
+
+      return onPageClick(page);
+    };
+
+    const handleHref = page => {
+      if (!pageHref || onPageClick || page <= 0 || page > totalPages) {
+        return undefined;
+      }
+
+      return pageHref(page);
+    };
+
+    const width = (window && window.innerWidth) || BREAKPOINTS.small.width;
+
+    const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
+
+    return (
+      <Wrapper aria-label={ariaLabel} {...props}>
+        <Component
+          tabIndex={tabIndex}
+          activePage={activePage}
+          handlePageClick={handlePageClick}
+          handleHref={handleHref}
+          prevButtonText={prevButtonText}
+          nextButtonText={nextButtonText}
+          totalPages={totalPages}
+          activePageAriaLabel={activePageAriaLabel}
+          pageAriaLabel={pageAriaLabel}
+          infoFormatter={infoFormatter}
+        />
+      </Wrapper>
+    );
+  }
+}
 
 Pagination.propTypes = {
+  tabIndex: PropTypes.number,
   /** Set the aria-label html attribute to the root element of pagination */
   ariaLabel: PropTypes.string,
   /** Set the current page */
@@ -92,6 +115,7 @@ Pagination.propTypes = {
 };
 
 Pagination.defaultProps = {
+  tabIndex: undefined,
   ariaLabel: 'pagination',
   activePage: 1,
   activePageAriaLabel: 'Current Page',

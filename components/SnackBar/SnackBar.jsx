@@ -10,6 +10,7 @@ import {
   spacing,
   colors,
   baseFontSize as defaultBaseFontSize,
+  breakpoints,
 } from '../shared/theme';
 
 const ID_GENERATOR = uniqId('snackbar-dialog-');
@@ -282,6 +283,7 @@ SnackBar.propTypes = {
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
+    breakpoints: PropTypes.array,
     spacing: PropTypes.object,
     components: PropTypes.shape({
       snackbar: PropTypes.object,
@@ -314,6 +316,7 @@ SnackBar.defaultProps = {
     colors,
     baseFontSize: defaultBaseFontSize,
     spacing,
+    breakpoints,
     components: {
       snackbar: components.snackbar,
       button: components.button,

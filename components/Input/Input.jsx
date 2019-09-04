@@ -89,12 +89,25 @@ class Input extends React.Component {
   constructor(props) {
     super(props);
 
-    const { type, id } = props;
+    const { type, id, value } = props;
 
-    this.state = { type };
+    this.state = {
+      type,
+      currentValue: value,
+    };
 
     this._id = id || ID_GENERATOR.next().value;
   }
+
+  onChangeInput = ev => {
+    const { onChange } = this.props;
+    const inputValue = ev.currentTarget.value;
+    this.setState({
+      currentValue: inputValue,
+    });
+
+    onChange();
+  };
 
   _changeType = type => {
     this.setState({ type });
@@ -113,17 +126,23 @@ class Input extends React.Component {
       descriptionLabel,
       helperText,
       required,
-      value,
       onClean,
       theme,
       ...rest
     } = this.props;
+    const { currentValue } = this.state;
     const { type: typeState } = this.state;
 
     const _isSearchType = typeProp === 'search';
     const _isPassword = typeProp === 'password';
-    const _hasValue = !!value;
-    const _hasIcon = error || _isPassword || _hasValue;
+    const hasValue = currentValue && currentValue[0];
+    const _hasIcon = error || _isPassword || hasValue;
+    const onCleanClick = e => {
+      this.setState({
+        currentValue: '',
+      });
+      onClean(e);
+    };
 
     return (
       <FieldGroup>
@@ -145,7 +164,8 @@ class Input extends React.Component {
             id={this._id}
             required={required}
             type={typeState}
-            value={value}
+            value={currentValue}
+            onChange={this.onChangeInput}
             render={(ref, props) => (
               <TextInput
                 ref={ref}
@@ -167,12 +187,12 @@ class Input extends React.Component {
               onClick={this._toggleInputType}
             />
           )}
-          {_hasValue && !_isPassword && !error && (
+          {hasValue && !_isPassword && !error && (
             <InputIcon
               theme={theme}
               name="cancel"
               description={descriptionLabel}
-              onClick={onClean}
+              onClick={onCleanClick}
             />
           )}
         </InputWrapper>
@@ -215,6 +235,7 @@ Input.propTypes = {
     PropTypes.string,
   ]),
   onClean: PropTypes.func,
+  onChange: PropTypes.func,
   theme: PropTypes.shape({
     spacing: PropTypes.object,
     colors: PropTypes.object,
@@ -234,6 +255,7 @@ Input.defaultProps = {
   required: false,
   placeholder: '',
   onClean: () => {},
+  onChange: () => {},
   theme: { spacing, colors, baseFontSize },
 };
 

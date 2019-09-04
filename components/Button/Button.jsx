@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { shadow, hexToRgba } from '../shared';
+import { shadow, hexToRgba, theme as defaultTheme } from '../shared';
+import { query } from '../Grid/sub-components/shared';
+
 import {
   components,
   spacing,
@@ -11,9 +13,43 @@ import {
 
 import Icon from '../Icon/Icon';
 
+const buttonIconBreakpoints = (props, breakpoint) => {
+  const q = query(props.theme.breakpoints)[breakpoint];
+
+  return q`
+    margin-right: ${props.theme.spacing[breakpoint] / 2}px;
+  `;
+};
+
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
+
+  ${props =>
+    Object.keys(props.theme.breakpoints).map(breakpoint =>
+      buttonIconBreakpoints(props, breakpoint),
+    )}
 `;
+
+const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
+  const sizes = {
+    xsmall: `${baseFontSize * 0.75}px`,
+    small: `${baseFontSize * 0.75}px`,
+    medium: `${baseFontSize}px`,
+    large: `${baseFontSize * 1.25}px`,
+    xlarge: `${baseFontSize * 1.5}px`,
+  };
+  const lineHeights = {
+    xsmall: `${baseFontSize * 0.75 * 1.5}px`,
+    small: `${baseFontSize * 0.75 * 1.5}px`,
+    medium: `${baseFontSize * 1.5}px`,
+    large: `${baseFontSize * 1.25 * 1.5}px`,
+    xlarge: `${baseFontSize * 1.5 * 1.5}px`,
+  };
+  return `
+    font-size: ${sizes[size]};
+    line-height: ${lineHeights[size]};
+  `;
+};
 
 const StyledButton = styled.button`
   align-items: center;
@@ -25,16 +61,7 @@ const StyledButton = styled.button`
 
   ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
 
-  ${({ size, theme: { baseFontSize } }) => {
-    const sizes = {
-      xsmall: `${baseFontSize * 0.75}px`,
-      small: `${baseFontSize * 0.75}px`,
-      medium: `${baseFontSize}px`,
-      large: `${baseFontSize * 1.25}px`,
-      xlarge: `${baseFontSize * 1.5}px`,
-    };
-    return `font-size: ${sizes[size]};`;
-  }}
+  ${buttonFontAndLineProps}
 
   ${({
     size,
@@ -49,21 +76,21 @@ const StyledButton = styled.button`
       large: `${xxxlarge}px`,
     };
 
-    return `height: ${heights[size]};`;
+    return `min-height: ${heights[size]};`;
   }}
 
   ${({
     size,
     theme: {
-      spacing: { small, medium },
+      spacing: { small, medium, xsmall, xxsmall, large },
     },
   }) => {
     const paddings = {
-      xsmall: `0 ${small}px`,
-      small: `0 ${small}px`,
-      medium: `0 ${medium}px`,
-      large: `0 ${medium}px`,
-      xlarge: `0 ${medium}px`,
+      xsmall: `${xxsmall}px ${small}px`,
+      small: `${small / 2}px ${small}px`,
+      medium: `${xsmall}px ${medium}px`,
+      large: `${xsmall * 1.25}px ${medium}px`,
+      xlarge: `${large / 2}px ${medium}px`,
     };
 
     return `padding: ${paddings[size]};`;
@@ -122,7 +149,7 @@ const StyledButton = styled.button`
       background-color: ${bgColor};
       color: ${textColor};
 
-      border: 1.5px solid ${disabled ? neutral500 : mainColor500};
+      border: 2px solid ${disabled ? neutral500 : mainColor500};
 
       ${shadow(2, neutral500)({ theme })}
 
@@ -181,7 +208,7 @@ const StyledButton = styled.button`
 
 const Button = ({ children, icon, size, $as, ...rest }) => (
   <StyledButton as={$as} {...rest} size={size}>
-    {icon && <ButtonIcon size={size} name={icon} />}
+    {icon && <ButtonIcon size={size} name={icon} {...rest} />}
     {children}
   </StyledButton>
 );
@@ -202,6 +229,7 @@ Button.defaultProps = {
     colors: defaultColors,
     baseFontSize: defaultBaseFontSize,
     spacing,
+    breakpoints: defaultTheme.breakpoints,
     components: {
       button: components.button,
     },
@@ -237,6 +265,7 @@ Button.propTypes = {
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    breakpoints: PropTypes.arrayOf(PropTypes.any),
     components: PropTypes.shape({
       button: PropTypes.object,
     }),
@@ -315,6 +344,8 @@ IconButton.defaultProps = {
   size: 'medium',
   skin: 'neutral',
   theme: {
+    breakpoints: defaultTheme.breakpoints,
+    gutter: '8px',
     baseFontSize: defaultBaseFontSize,
     spacing,
     components: {

@@ -23,12 +23,14 @@ exports[`Input component should match snapshots 1`] = `
     <input
       id="input-0"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -66,6 +68,7 @@ exports[`Input component should match snapshots 2`] = `
     <input
       id="input-1"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
@@ -188,12 +191,14 @@ exports[`Input component should match snapshots 3`] = `
     <input
       id="input-2"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -242,6 +247,7 @@ exports[`Input component should match snapshots 4`] = `
     <input
       id="input-3"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
@@ -322,6 +328,7 @@ exports[`Input component should match snapshots 4`] = `
     >
       error
     </span>
+    
   </div>
   
   <span
@@ -355,12 +362,14 @@ exports[`Input component should match snapshots 5`] = `
     <input
       id="input-4"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={true}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -474,12 +483,14 @@ exports[`Input component should match snapshots 6`] = `
     <input
       id="input-5"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="search"
       value=""
     />
+    
     
   </div>
   
@@ -511,12 +522,14 @@ exports[`Input component should match snapshots 7`] = `
       disabled={true}
       id="input-6"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -558,12 +571,14 @@ exports[`Input component should match snapshots 8`] = `
     <input
       id="input-7"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   <span
@@ -609,12 +624,14 @@ exports[`Input component should match snapshots 9`] = `
     <input
       id="input-8"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -739,12 +756,14 @@ exports[`Input component should match snapshots 10`] = `
     <input
       id="input-9"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="search"
       value=""
     />
+    
     
   </div>
   
@@ -775,12 +794,14 @@ exports[`Input component should match snapshots 11`] = `
     <input
       id="input-10"
       mask={[Function]}
+      onChange={[Function]}
       placeholder="this input has a placeholder"
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -823,12 +844,14 @@ exports[`Input component should match snapshots 12`] = `
           /\\\\d/,
         ]
       }
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -880,12 +903,14 @@ exports[`Input component should match snapshots 13`] = `
           /\\\\d/,
         ]
       }
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -933,12 +958,14 @@ exports[`Input component should match snapshots 14`] = `
           /\\\\d/,
         ]
       }
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -982,12 +1009,14 @@ exports[`Input component should match snapshots 15`] = `
           /\\\\d/,
         ]
       }
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -1018,12 +1047,14 @@ exports[`Input component should match snapshots 16`] = `
     <input
       id="input-15"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
       type="text"
       value=""
     />
+    
     
   </div>
   
@@ -1061,6 +1092,7 @@ exports[`Input component should match snapshots 17`] = `
     <input
       id="input-16"
       mask={[Function]}
+      onChange={[Function]}
       placeholder=""
       render={[Function]}
       required={false}
@@ -1143,6 +1175,7 @@ exports[`Input component should match snapshots 17`] = `
     >
       visibility
     </span>
+    
   </div>
   
   
