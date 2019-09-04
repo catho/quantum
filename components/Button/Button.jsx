@@ -97,7 +97,7 @@ const StyledButton = styled.button`
         },
       },
       colors: {
-        neutral: { 100: neutral100, 500: neutral500 },
+        neutral: { 0: neutral0, 500: neutral500 },
       },
     } = theme;
 
@@ -105,14 +105,14 @@ const StyledButton = styled.button`
     let textColor;
 
     if (disabled && stroked) {
-      bgColor = neutral100;
+      bgColor = neutral0;
       textColor = neutral500;
     } else if (stroked) {
-      bgColor = neutral100;
+      bgColor = neutral0;
       textColor = mainColor500;
     } else if (disabled) {
       bgColor = neutral500;
-      textColor = neutral100;
+      textColor = neutral0;
     } else {
       bgColor = mainColor500;
       textColor = text100;

@@ -160,7 +160,7 @@ const components = {
   popover: {
     skins: {
       neutral: {
-        background: colors.neutral[100],
+        background: colors.neutral[0],
         text: colors.neutral[700],
       },
       success: {

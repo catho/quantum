@@ -199,6 +199,11 @@ export default () => (
       Black
     </Title>
     <p>
+      It is used only in situations that Black 900 is not sufficient. This is
+      the absolute black.
+    </p>
+    <ColorSample hex={Colors.BLACK[1000]} number={1000} name="Black" />
+    <p>
       It is mainly used for texts and headings. Passes on AAA in the contrast
       checker.
     </p>
@@ -226,6 +231,16 @@ export default () => (
       number={100}
       name="Black"
       fontColor="black"
+    />
+    <p>
+      It is used only in situations that Black 200 is not clear enought. This is
+      the absolute white.
+    </p>
+    <ColorSample
+      hex={Colors.BLACK[0]}
+      number={0}
+      name="Black"
+      fontColor={Colors.BLACK[1000]}
     />
 
     <Title as="h3">Shadow</Title>

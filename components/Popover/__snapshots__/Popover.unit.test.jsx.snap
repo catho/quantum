@@ -1034,12 +1034,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -1342,7 +1342,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -1454,12 +1454,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -1713,7 +1713,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -1946,7 +1946,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -2185,7 +2185,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -2563,7 +2563,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -2772,7 +2772,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -2981,7 +2981,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -3226,7 +3226,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
@@ -3490,12 +3490,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -3798,7 +3798,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -3910,12 +3910,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -4169,7 +4169,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -4402,7 +4402,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -4641,7 +4641,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -5019,7 +5019,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -5228,7 +5228,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -5437,7 +5437,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -5682,7 +5682,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
@@ -6270,7 +6270,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -6657,7 +6657,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -6890,7 +6890,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -7129,7 +7129,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -7507,7 +7507,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -7716,7 +7716,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -7925,7 +7925,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -8170,7 +8170,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
@@ -8774,7 +8774,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -9177,7 +9177,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -9410,7 +9410,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -9649,7 +9649,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -10027,7 +10027,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -10236,7 +10236,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -10445,7 +10445,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -10690,7 +10690,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
@@ -11310,7 +11310,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -11729,7 +11729,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -11962,7 +11962,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -12201,7 +12201,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -12579,7 +12579,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -12788,7 +12788,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -12997,7 +12997,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -13242,7 +13242,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
@@ -13542,12 +13542,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   top: -4px;
@@ -13862,7 +13862,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -14010,12 +14010,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   top: -4px;
@@ -14281,7 +14281,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -14514,7 +14514,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -14753,7 +14753,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -15131,7 +15131,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -15340,7 +15340,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -15549,7 +15549,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -15794,7 +15794,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
@@ -16094,12 +16094,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -16411,7 +16411,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -16559,12 +16559,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -16827,7 +16827,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -17060,7 +17060,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -17299,7 +17299,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -17677,7 +17677,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -17886,7 +17886,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -18095,7 +18095,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -18340,7 +18340,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
@@ -18640,12 +18640,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c1:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -18957,7 +18957,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#f2f2f2",
+                      "background": "#ffffff",
                       "text": "#4c4c4c",
                     },
                     "success": Object {
@@ -19105,12 +19105,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #4c4c4c;
 }
 
 .c0:before {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   bottom: 50%;
@@ -19373,7 +19373,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "text": "#ac001a",
                         },
                         "neutral": Object {
-                          "background": "#f2f2f2",
+                          "background": "#ffffff",
                           "text": "#4c4c4c",
                         },
                         "success": Object {
@@ -19606,7 +19606,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "text": "#ac001a",
                           },
                           "neutral": Object {
-                            "background": "#f2f2f2",
+                            "background": "#ffffff",
                             "text": "#4c4c4c",
                           },
                           "success": Object {
@@ -19845,7 +19845,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
-                                "background": "#f2f2f2",
+                                "background": "#ffffff",
                                 "text": "#4c4c4c",
                               },
                               "success": Object {
@@ -20223,7 +20223,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
-                                  "background": "#f2f2f2",
+                                  "background": "#ffffff",
                                   "text": "#4c4c4c",
                                 },
                                 "success": Object {
@@ -20432,7 +20432,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
-                                    "background": "#f2f2f2",
+                                    "background": "#ffffff",
                                     "text": "#4c4c4c",
                                   },
                                   "success": Object {
@@ -20641,7 +20641,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
-                                      "background": "#f2f2f2",
+                                      "background": "#ffffff",
                                       "text": "#4c4c4c",
                                     },
                                     "success": Object {
@@ -20886,7 +20886,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
-                                        "background": "#f2f2f2",
+                                        "background": "#ffffff",
                                         "text": "#4c4c4c",
                                       },
                                       "success": Object {
