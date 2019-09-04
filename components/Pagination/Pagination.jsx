@@ -41,6 +41,7 @@ class Pagination extends React.Component {
       onPageClick,
       totalPages,
       infoFormatter,
+      tabIndex,
       ...props
     } = this.props;
 
@@ -73,6 +74,7 @@ class Pagination extends React.Component {
     return (
       <Wrapper aria-label={ariaLabel} {...props}>
         <Component
+          tabIndex={tabIndex}
           activePage={activePage}
           handlePageClick={handlePageClick}
           handleHref={handleHref}
@@ -89,6 +91,7 @@ class Pagination extends React.Component {
 }
 
 Pagination.propTypes = {
+  tabIndex: PropTypes.number,
   /** Set the aria-label html attribute to the root element of pagination */
   ariaLabel: PropTypes.string,
   /** Set the current page */
@@ -112,6 +115,7 @@ Pagination.propTypes = {
 };
 
 Pagination.defaultProps = {
+  tabIndex: undefined,
   ariaLabel: 'pagination',
   activePage: 1,
   activePageAriaLabel: 'Current Page',
