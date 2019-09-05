@@ -28,7 +28,7 @@ exports[`Button component Should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -103,7 +103,7 @@ exports[`Button component when center prop is set 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -177,7 +177,7 @@ exports[`Button component when full prop is set 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -250,7 +250,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -323,7 +323,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -396,7 +396,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #7ed321;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #7ed321;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -469,7 +469,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f09100;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #f09100;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -542,7 +542,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ff2d4d;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #ff2d4d;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -615,7 +615,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -688,7 +688,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -761,7 +761,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -809,6 +809,7 @@ exports[`Button component when there is a type set should match secondary snapsh
 exports[`Button component with an icon should match secondary snapshot 1`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
@@ -838,7 +839,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -1204,6 +1205,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 exports[`Button component with an icon should match secondary snapshot 2`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
@@ -1233,7 +1235,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -1599,6 +1601,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 exports[`Button component with an icon should match secondary snapshot 3`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
@@ -1628,7 +1631,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -1994,6 +1997,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 exports[`Button component with an icon should match secondary snapshot 4`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
@@ -2023,7 +2027,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }

@@ -23,6 +23,7 @@ const buttonIconBreakpoints = (props, breakpoint) => {
 
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
+  margin-bottom: 0 !important;
 
   ${props =>
     Object.keys(props.theme.breakpoints).map(breakpoint =>
@@ -118,7 +119,7 @@ const StyledButton = styled.button`
                 500: mainColor500,
                 700: mainColor700,
               },
-              text: { 100: text100 },
+              text: { 0: text0 },
             },
           },
         },
@@ -142,7 +143,7 @@ const StyledButton = styled.button`
       textColor = neutral0;
     } else {
       bgColor = mainColor500;
-      textColor = text100;
+      textColor = text0;
     }
 
     return `
