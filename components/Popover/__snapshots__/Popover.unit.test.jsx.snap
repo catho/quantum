@@ -955,6 +955,7 @@ exports[`Popover component  Snapshots should match snapshots 8`] = `
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 1`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c3 {
@@ -1411,6 +1412,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c2 {
@@ -3602,7 +3604,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },
@@ -4782,6 +4784,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 2`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c3 {
@@ -5238,6 +5241,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c2 {
@@ -7429,7 +7433,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },
@@ -8609,6 +8613,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 3`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c7 .c4 function (_ref5) {
@@ -9081,6 +9086,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c5 .c3 function (_ref5) {
@@ -11288,7 +11294,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },
@@ -12468,6 +12474,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 4`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c7 .c4 function (_ref5) {
@@ -12956,6 +12963,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c5 .c3 function (_ref5) {
@@ -15179,7 +15187,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },
@@ -16359,6 +16367,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 5`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c7 .c4 function (_ref5) {
@@ -16863,6 +16872,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c5 .c3 function (_ref5) {
@@ -19102,7 +19112,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },
@@ -20282,6 +20292,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 6`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c3 {
@@ -20786,6 +20797,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c2 {
@@ -23025,7 +23037,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },
@@ -24205,6 +24217,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 7`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c3 {
@@ -24706,6 +24719,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c2 {
@@ -26942,7 +26956,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },
@@ -28122,6 +28136,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 8`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c3 {
@@ -28623,6 +28638,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c2 {
@@ -30859,7 +30875,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "isStatic": false,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
+                                          "pointer-events:none;margin-bottom:0 !important;",
                                           [Function],
                                         ],
                                       },

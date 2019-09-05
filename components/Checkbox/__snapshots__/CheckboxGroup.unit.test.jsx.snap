@@ -992,6 +992,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] = `
 .c5 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c3 {

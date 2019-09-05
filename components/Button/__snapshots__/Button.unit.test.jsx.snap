@@ -809,6 +809,7 @@ exports[`Button component when there is a type set should match secondary snapsh
 exports[`Button component with an icon should match secondary snapshot 1`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
@@ -1188,6 +1189,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 exports[`Button component with an icon should match secondary snapshot 2`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
@@ -1567,6 +1569,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 exports[`Button component with an icon should match secondary snapshot 3`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
@@ -1946,6 +1949,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 exports[`Button component with an icon should match secondary snapshot 4`] = `
 .c2 {
   pointer-events: none;
+  margin-bottom: 0 !important;
 }
 
 .c0 {
