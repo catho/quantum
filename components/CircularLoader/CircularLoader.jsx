@@ -6,15 +6,8 @@ import { colors } from '../shared/theme';
 const Content = styled.svg`
   overflow: hidden;
 
-  ${({
-    skin,
-    theme: {
-      colors: {
-        [skin]: { 500: mainColor500 },
-      },
-    },
-  }) => `
-    color: ${mainColor500};
+  ${({ color }) => `
+    color: ${color};
   `}
 `;
 
@@ -51,15 +44,8 @@ const Circle = styled.circle`
   cy: 44;
   r: 20.2;
 
-  ${({
-    skin,
-    theme: {
-      colors: {
-        [skin]: { 500: mainColor500 },
-      },
-    },
-  }) => `
-    color: ${mainColor500};
+  ${({ color }) => `
+    color: ${color};
   `}
 `;
 
@@ -82,18 +68,12 @@ const CircularLoader = props => (
 
 CircularLoader.defaultProps = {
   size: '48px',
-  skin: 'neutral',
-  theme: {
-    colors,
-  },
+  color: colors.primary[500],
 };
 
 CircularLoader.propTypes = {
   size: PropTypes.string,
-  skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
-  theme: PropTypes.shape({
-    colors,
-  }),
+  color: PropTypes.string,
 };
 
 export default CircularLoader;

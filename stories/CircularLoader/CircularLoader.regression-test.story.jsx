@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { CircularLoader } from '../../components';
 
 storiesOf('CircularLoader', module)
-  .add('neutral', () => <CircularLoader skin="neutral" />)
-  .add('primary', () => <CircularLoader skin="primary" />)
-  .add('success', () => <CircularLoader skin="success" />)
-  .add('warning', () => <CircularLoader skin="warning" />)
-  .add('error', () => <CircularLoader skin="error" />);
+  .add('default', () => <CircularLoader />)
+  .add('with custom color', () => <CircularLoader color="#000000" />)
+  .add('with custom size', () => <CircularLoader size="70px" />);
