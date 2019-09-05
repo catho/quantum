@@ -3,7 +3,6 @@
 exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c8 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c6 {
@@ -444,7 +443,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 exports[`Alert component When you set a alert custom icon Should match the snapshot with an icon 1`] = `
 .c9 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c7 {
@@ -896,7 +894,6 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 exports[`Alert component When you set a different skin Should match a skin snapshot 1`] = `
 .c8 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c6 {
@@ -1337,7 +1334,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 exports[`Alert component When you set a different skin Should match a skin snapshot 2`] = `
 .c8 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c6 {
@@ -1795,7 +1791,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 exports[`Alert component When you set a different skin Should match a skin snapshot 3`] = `
 .c8 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c6 {
@@ -2270,7 +2265,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 exports[`Alert component When you set a different skin Should match a skin snapshot 4`] = `
 .c8 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c6 {
@@ -2762,7 +2756,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 exports[`Alert component When you set a different skin Should match a skin snapshot 5`] = `
 .c8 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c6 {

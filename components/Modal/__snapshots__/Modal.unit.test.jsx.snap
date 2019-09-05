@@ -34,7 +34,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 
 .c13 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c11 {
@@ -474,7 +473,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 
 .c13 {
   pointer-events: none;
-  margin-bottom: 0 !important;
 }
 
 .c11 {
@@ -4295,7 +4293,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "isStatic": false,
                                             "lastClassName": "c13",
                                             "rules": Array [
-                                              "pointer-events:none;margin-bottom:0 !important;",
+                                              "pointer-events:none;",
                                               [Function],
                                             ],
                                           },

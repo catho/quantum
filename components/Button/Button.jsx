@@ -23,7 +23,6 @@ const buttonIconBreakpoints = (props, breakpoint) => {
 
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
-  margin-bottom: 0 !important;
 
   ${props =>
     Object.keys(props.theme.breakpoints).map(breakpoint =>
