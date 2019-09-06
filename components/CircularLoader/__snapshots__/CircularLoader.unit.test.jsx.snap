@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CircularLoader component Should match the snapshot of a simple circular loader 1`] = `
+.c1 {
+  overflow: hidden;
+  color: #1355d0;
+}
+
+.c2 {
+  -webkit-animation: dPEoa 1.4s ease-in-out infinite;
+  animation: dPEoa 1.4s ease-in-out infinite;
+  stroke-dasharray: 80px,200px;
+  stroke-dashoffset: 0px;
+  stroke: currentColor;
+  line-height: 1;
+  stroke-width: 3.6;
+  fill: none;
+  cx: 44;
+  cy: 44;
+  r: 20.2;
+  color: #1355d0;
+}
+
+.c0 {
+  -webkit-animation: cZxgpV 1.4s linear infinite;
+  animation: cZxgpV 1.4s linear infinite;
+  height: 48px;
+  width: 48px;
+}
+
+<div
+  className="c0"
+  color="#1355d0"
+  role="progressbar"
+  size="48px"
+>
+  <svg
+    className="c1"
+    color="#1355d0"
+    size="48px"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="c2"
+      color="#1355d0"
+      size="48px"
+    />
+  </svg>
+</div>
+`;

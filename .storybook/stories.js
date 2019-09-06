@@ -29,6 +29,9 @@ export default [
   'Slider',
   'TextArea',
 
+  // Loaders
+  'Loaders',
+
   // Tooltip
   'Tooltip',
 
