@@ -12,8 +12,8 @@ exports[`ProgressBar component Should match the snapshot of a simple circular lo
 }
 
 .c2 {
-  -webkit-transition: width .4s linear;
-  transition: width .4s linear;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
   display: inline-block;
   height: 100%;
   position: absolute;
