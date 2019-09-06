@@ -19,5 +19,5 @@ export default [
   'Tag',
   'Pagination',
   'Grid',
-  'CircularLoader',
+  'ProgressBar',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);
