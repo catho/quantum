@@ -1,7 +1,76 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
-import { hide, noGutters, query } from './shared';
+import { query, hide, calcGutter } from './shared';
 import { theme as defaultTheme } from '../../shared';
+import { CSSVariables } from '../../GlobalStyle';
+
+const renderBreakpoint = (
+  { theme: { gutter, breakpoints }, 'no-gutters': noGutters },
+  breakpoint,
+) => {
+  const calculedGutter = calcGutter(
+    CSSVariables({ theme: { gutter } }).gutter[breakpoint],
+    noGutters,
+  );
+  const q = query(breakpoints)[breakpoint];
+
+  return q`    
+    margin-bottom: ${calculedGutter};
+  `;
+};
+
+const renderResponsivesGridless = ({
+  theme: { breakpoints, gutter },
+  'no-gutters': noGutters,
+}) =>
+  Object.keys(breakpoints).map(breakpoint =>
+    renderBreakpoint(
+      {
+        theme: {
+          breakpoints,
+          gutter,
+        },
+        'no-gutters': noGutters,
+      },
+      breakpoint,
+    ),
+  );
+
+const renderColsProps = (
+  { theme: { breakpoints, gutter }, 'no-gutters': noGutters },
+  breakpoint,
+) => {
+  const calculedGutter = calcGutter(
+    CSSVariables({ theme: { gutter } }).gutter[breakpoint],
+    noGutters,
+  );
+
+  const q = query(breakpoints)[breakpoint];
+
+  return q`
+    margin-bottom: ${calculedGutter};
+    grid-column-gap: ${calculedGutter};
+    grid-row-gap: ${calculedGutter};
+  `;
+};
+
+const renderResponsivesGrid = ({
+  theme: { breakpoints, gutter },
+  'no-gutters': noGutters,
+}) =>
+  Object.keys(breakpoints).map(breakpoint =>
+    renderColsProps(
+      {
+        theme: {
+          breakpoints,
+          gutter,
+        },
+        'no-gutters': noGutters,
+      },
+      breakpoint,
+    ),
+  );
 
 const queryStyle = ({ theme: { breakpoints } }) =>
   Object.entries(breakpoints).map(
@@ -11,20 +80,61 @@ const queryStyle = ({ theme: { breakpoints } }) =>
     `,
   );
 
-const Row = styled.div`
+const StyledRow = styled.div`
   display: grid;
-  grid-column-gap: var(--gutter);
-  grid-row-gap: var(--gutter);
-  margin-bottom: var(--gutter);
   grid-auto-columns: max-content;
-  ${queryStyle}
+  ${renderResponsivesGrid}
+
+  @supports ( display: grid ) {
+    ${queryStyle}
+  }
+
+  @supports not (display: grid) {
+    width: 100%;
+    display: inline-block;
+    ${renderResponsivesGridless}
+  }
 
   ${hide}
-  ${noGutters}
 `;
+
+class Row extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.props = props;
+  }
+
+  render() {
+    const { children, 'no-gutters': noGutters, ...rest } = this.props;
+
+    const applyNoGutters = child => {
+      const ChildWithNoGutters = React.cloneElement(child, {
+        'no-gutters':
+          child.props && child.props['no-gutters'] === true ? true : noGutters,
+      });
+      return ChildWithNoGutters;
+    };
+
+    const applyChildrenProps = c =>
+      Array.isArray(c)
+        ? c.map(child => applyNoGutters(child))
+        : applyNoGutters(c);
+
+    return (
+      <StyledRow {...rest} no-gutters={noGutters}>
+        {applyChildrenProps(children)}
+      </StyledRow>
+    );
+  }
+}
 
 Row.propTypes = {
   'no-gutters': PropTypes.bool,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node),
+  ]).isRequired,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
@@ -35,6 +145,7 @@ Row.propTypes = {
 };
 
 Row.defaultProps = {
+  hide: null,
   'no-gutters': false,
   theme: defaultTheme,
 };
