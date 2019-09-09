@@ -191,16 +191,11 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
     >
       <span
         aria-hidden="true"
-        center={false}
-        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
-        disabled={false}
-        full={false}
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c7 c8"
         size="medium"
-        stroked={false}
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -415,7 +410,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
             },
           }
         }
-        type="button"
       >
         close
       </span>
@@ -626,16 +620,11 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
     >
       <span
         aria-hidden="true"
-        center={false}
-        className="material-icons MuiIcon-root-1 c4 c5 c6 c8 c9"
-        disabled={false}
-        full={false}
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c8 c9"
         size="medium"
-        stroked={false}
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -850,7 +839,6 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
             },
           }
         }
-        type="button"
       >
         close
       </span>
@@ -1050,16 +1038,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        center={false}
-        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
-        disabled={false}
-        full={false}
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c7 c8"
         size="medium"
-        stroked={false}
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -1274,7 +1257,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
           }
         }
-        type="button"
       >
         close
       </span>
@@ -1491,16 +1473,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        center={false}
-        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
-        disabled={false}
-        full={false}
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c7 c8"
         size="medium"
-        stroked={false}
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -1715,7 +1692,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
           }
         }
-        type="button"
       >
         close
       </span>
@@ -1949,16 +1925,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        center={false}
-        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
-        disabled={false}
-        full={false}
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c7 c8"
         size="medium"
-        stroked={false}
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -2173,7 +2144,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
           }
         }
-        type="button"
       >
         close
       </span>
@@ -2424,16 +2394,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        center={false}
-        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
-        disabled={false}
-        full={false}
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c7 c8"
         size="medium"
-        stroked={false}
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -2648,7 +2613,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
           }
         }
-        type="button"
       >
         close
       </span>
@@ -2916,16 +2880,11 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <span
         aria-hidden="true"
-        center={false}
-        className="material-icons MuiIcon-root-1 c3 c4 c5 c7 c8"
-        disabled={false}
-        full={false}
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c7 c8"
         size="medium"
-        stroked={false}
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -3140,7 +3099,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
           }
         }
-        type="button"
       >
         close
       </span>
