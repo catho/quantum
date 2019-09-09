@@ -1,37 +1,11 @@
-import PropTypes from 'prop-types';
-import { createGlobalStyle } from 'styled-components';
-import { theme as defaultTheme } from '../../shared';
-
-const CSSVariables = createGlobalStyle`
-  ${({
-    theme: {
-      breakpoints: {
-        small: { width },
-      },
-      gutter,
-    },
-  }) => `
-    :root {
-      --gutter: ${gutter * 2}px;
-    }
-
-    @media (min-width: ${width}px) {
-      :root {
-        --gutter: ${gutter * 3}px;
-      }
-    }
-  `}
-`;
-
-CSSVariables.defaultProps = {
-  theme: defaultTheme,
-};
-
-CSSVariables.propTypes = {
-  theme: PropTypes.shape({
-    breakpoints: PropTypes.object,
-    gutter: PropTypes.number,
-  }),
-};
+const CSSVariables = ({ theme: { gutter } }) => ({
+  gutter: {
+    xsmall: `${gutter * 2}px`,
+    small: `${gutter * 3}px`,
+    medium: `${gutter * 3}px`,
+    large: `${gutter * 3}px`,
+    xlarge: `${gutter * 3}px`,
+  },
+});
 
 export default CSSVariables;
