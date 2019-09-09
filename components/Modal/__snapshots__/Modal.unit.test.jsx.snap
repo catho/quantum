@@ -1512,7 +1512,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -2418,7 +2417,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}
@@ -3029,7 +3027,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
-                              Symbol(Symbol.hasInstance): [Function],
                             }
                           }
                           forwardedRef={null}
@@ -4067,7 +4064,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}

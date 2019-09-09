@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Content from './Content';
 import Header from './Header';
 import SubHeader from './SubHeader';
@@ -10,26 +11,27 @@ const subheader = 'subheader';
 
 describe('<Content />', () => {
   it('Should match the snapshot', () => {
-    expect(shallow(<Content />)).toMatchSnapshot();
+    const wrapper = mount(<Content />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('render Header component', () => {
-    const wrapper = shallow(<Content content={content} />);
+    const wrapper = mount(<Content content={content} />);
 
     expect(wrapper.render().text()).toBe(content);
     expect(wrapper.find(Header)).toHaveLength(1);
   });
 
   it('accept any children as a content', () => {
-    const wrapper = shallow(<Content>{content}</Content>);
+    const wrapper = mount(<Content>{content}</Content>);
 
     expect(wrapper.render().text()).toBe(content);
     expect(wrapper.find(Header)).toHaveLength(0);
   });
 
   it('render Header and SubHeader components', () => {
-    const contentWrapper = shallow(<Content content={{ header, subheader }} />);
-    const propWrapper = shallow(
+    const contentWrapper = mount(<Content content={{ header, subheader }} />);
+    const propWrapper = mount(
       <Content header={header} subheader={subheader} />,
     );
 

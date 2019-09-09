@@ -1,9 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Header from './Header';
 
 describe('<Header />', () => {
   it('Should match the snapshot', () => {
-    expect(shallow(<Header>Header</Header>)).toMatchSnapshot();
+    const wrapper = mount(<Header>Header</Header>);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
