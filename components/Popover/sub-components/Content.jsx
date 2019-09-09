@@ -154,7 +154,7 @@ Content.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
-    breakpoints: PropTypes.array,
+    breakpoints: PropTypes.object,
     components: PropTypes.shape({
       popover: PropTypes.object,
       button: PropTypes.object,
