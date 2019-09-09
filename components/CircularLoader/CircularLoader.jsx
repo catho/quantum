@@ -58,22 +58,40 @@ const Wrapper = styled.div`
   `}
 `;
 
-const CircularLoader = props => (
-  <Wrapper {...props} role="progressbar">
-    <Content {...props} viewBox="22 22 44 44">
-      <Circle {...props} />
-    </Content>
-  </Wrapper>
-);
+const CircularLoader = props => {
+  const {
+    size,
+    skin,
+    theme: {
+      colors: {
+        [skin]: { 500: color },
+      },
+    },
+  } = props;
+
+  return (
+    <Wrapper size={size} role="progressbar">
+      <Content color={color} viewBox="22 22 44 44">
+        <Circle color={color} />
+      </Content>
+    </Wrapper>
+  );
+};
 
 CircularLoader.defaultProps = {
   size: '48px',
-  color: colors.primary[500],
+  skin: 'primary',
+  theme: {
+    colors,
+  },
 };
 
 CircularLoader.propTypes = {
   size: PropTypes.string,
-  color: PropTypes.string,
+  skin: PropTypes.oneOf(['primary', 'secondary']),
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+  }),
 };
 
 export default CircularLoader;

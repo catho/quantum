@@ -30,20 +30,17 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
 
 <div
   className="c0"
-  color="#1355d0"
   role="progressbar"
   size="48px"
 >
   <svg
     className="c1"
     color="#1355d0"
-    size="48px"
     viewBox="22 22 44 44"
   >
     <circle
       className="c2"
       color="#1355d0"
-      size="48px"
     />
   </svg>
 </div>

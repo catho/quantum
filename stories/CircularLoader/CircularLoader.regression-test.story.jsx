@@ -4,5 +4,5 @@ import { CircularLoader } from '../../components';
 
 storiesOf('CircularLoader', module)
   .add('default', () => <CircularLoader />)
-  .add('with custom color', () => <CircularLoader color="#000000" />)
+  .add('with secondary theme', () => <CircularLoader skin="secondary" />)
   .add('with custom size', () => <CircularLoader size="70px" />);
