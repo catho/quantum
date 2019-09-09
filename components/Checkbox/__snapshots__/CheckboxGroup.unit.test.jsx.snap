@@ -1173,7 +1173,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
         size="medium"
         style={
           Object {
-            "color": "primary",
+            "color": "",
           }
         }
         theme={
@@ -1419,7 +1419,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
         size="medium"
         style={
           Object {
-            "color": "primary",
+            "color": "",
           }
         }
         theme={

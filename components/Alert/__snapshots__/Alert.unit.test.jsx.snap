@@ -195,7 +195,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
         size="medium"
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -624,7 +624,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
         size="medium"
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -1042,7 +1042,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         size="medium"
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -1477,7 +1477,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         size="medium"
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -1929,7 +1929,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         size="medium"
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -2398,7 +2398,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         size="medium"
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={
@@ -2884,7 +2884,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         size="medium"
         style={
           Object {
-            "color": "neutral",
+            "color": "",
           }
         }
         theme={

@@ -3376,7 +3376,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="neutral"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -3608,7 +3607,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="neutral"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -3816,7 +3814,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="neutral"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -4026,7 +4024,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -4253,7 +4251,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -4465,7 +4463,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -7158,7 +7156,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="neutral"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -7390,7 +7387,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="neutral"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -7598,7 +7594,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="neutral"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -7808,7 +7804,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -8035,7 +8031,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -8247,7 +8243,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -10972,7 +10968,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="success"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -11204,7 +11199,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="success"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -11412,7 +11406,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="success"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -11622,7 +11616,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "success",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -11849,7 +11843,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "success",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -12061,7 +12055,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "success",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -14818,7 +14812,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="warning"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -15050,7 +15043,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="warning"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -15258,7 +15250,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="warning"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -15468,7 +15460,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "warning",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -15695,7 +15687,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "warning",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -15907,7 +15899,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "warning",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -18696,7 +18688,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="error"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -18928,7 +18919,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="error"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -19136,7 +19126,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="error"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -19346,7 +19336,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "error",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -19573,7 +19563,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "error",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -19785,7 +19775,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "error",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -22574,7 +22564,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="neutral"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -22806,7 +22795,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="neutral"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -23014,7 +23002,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="neutral"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -23224,7 +23212,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -23451,7 +23439,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -23663,7 +23651,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -26446,7 +26434,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="neutral"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -26678,7 +26665,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="neutral"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -26886,7 +26872,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="neutral"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -27096,7 +27082,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -27323,7 +27309,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -27535,7 +27521,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -30318,7 +30304,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               <Button__ButtonIcon
                                 name="close"
                                 size="medium"
-                                skin="neutral"
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -30550,7 +30535,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   forwardedRef={null}
                                   name="close"
                                   size="medium"
-                                  skin="neutral"
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -30758,7 +30742,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     className="c4 c5"
                                     name="close"
                                     size="medium"
-                                    skin="neutral"
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -30968,7 +30952,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       size="medium"
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -31195,7 +31179,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         size="medium"
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -31407,7 +31391,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={

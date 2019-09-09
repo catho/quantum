@@ -986,7 +986,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
     size="medium"
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={
@@ -1359,7 +1359,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
     size="medium"
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={
@@ -1732,7 +1732,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
     size="medium"
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={
@@ -2105,7 +2105,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
     size="medium"
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={

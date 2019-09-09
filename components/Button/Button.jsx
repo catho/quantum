@@ -206,9 +206,9 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, $as, skin, theme, ...rest }) => (
-  <StyledButton as={$as} {...rest} size={size} skin={skin} theme={theme}>
-    {icon && <ButtonIcon size={size} name={icon} skin={skin} theme={theme} />}
+const Button = ({ children, icon, size, $as, theme, ...rest }) => (
+  <StyledButton as={$as} {...rest} size={size} theme={theme}>
+    {icon && <ButtonIcon size={size} name={icon} theme={theme} />}
     {children}
   </StyledButton>
 );

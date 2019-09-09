@@ -3845,7 +3845,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   <Button__ButtonIcon
                                     name="close"
                                     size="medium"
-                                    skin="neutral"
                                     theme={
                                       Object {
                                         "breakpoints": Object {
@@ -4057,7 +4056,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       forwardedRef={null}
                                       name="close"
                                       size="medium"
-                                      skin="neutral"
                                       theme={
                                         Object {
                                           "breakpoints": Object {
@@ -4245,7 +4243,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         className="c12 c13"
                                         name="close"
                                         size="medium"
-                                        skin="neutral"
+                                        skin=""
                                         style={Object {}}
                                         theme={
                                           Object {
@@ -4435,7 +4433,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           size="medium"
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -4642,7 +4640,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             size="medium"
                                             style={
                                               Object {
-                                                "color": "neutral",
+                                                "color": "",
                                               }
                                             }
                                             theme={
@@ -4834,7 +4832,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               size="medium"
                                               style={
                                                 Object {
-                                                  "color": "neutral",
+                                                  "color": "",
                                                 }
                                               }
                                               theme={
