@@ -232,26 +232,6 @@ const components = {
       },
     },
   },
-
-  progressBar: {
-    skins: {
-      neutral: {
-        titleColor: colors.neutral[1000],
-        background: colors.neutral[500],
-        textColor: colors.neutral[700],
-      },
-      primary: {
-        titleColor: colors.neutral[1000],
-        background: colors.primary[500],
-        textColor: colors.neutral[700],
-      },
-      secondary: {
-        titleColor: colors.neutral[1000],
-        background: colors.secondary[500],
-        textColor: colors.neutral[700],
-      },
-    },
-  },
 };
 
 const theme = {

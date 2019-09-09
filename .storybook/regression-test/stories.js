@@ -19,5 +19,5 @@ export default [
   'Tag',
   'Pagination',
   'Grid',
-  'ProgressBar',
+  'Skeleton',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);

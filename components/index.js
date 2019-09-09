@@ -21,7 +21,7 @@ import TextArea from './TextArea';
 import Toggle from './Toggle';
 import Tooltip from './Tooltip';
 import Modal from './Modal';
-import ProgressBar from './ProgressBar';
+import Skeleton from './Skeleton';
 import Pagination from './Pagination';
 
 export {
@@ -42,7 +42,7 @@ export {
   Icon,
   IconFont,
   Input,
-  ProgressBar,
+  Skeleton,
   Popover,
   RadioGroup,
   Row,
