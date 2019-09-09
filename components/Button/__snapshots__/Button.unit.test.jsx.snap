@@ -982,16 +982,11 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <span
     aria-hidden="true"
-    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
-    disabled={false}
-    full={false}
-    onClick={[Function]}
     size="medium"
-    stroked={false}
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={
@@ -1193,7 +1188,6 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
         },
       }
     }
-    type="button"
   >
     search
   </span>
@@ -1377,16 +1371,11 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <span
     aria-hidden="true"
-    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
-    disabled={false}
-    full={false}
-    onClick={[Function]}
     size="medium"
-    stroked={false}
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={
@@ -1588,7 +1577,6 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
         },
       }
     }
-    type="button"
   >
     sync
   </span>
@@ -1772,16 +1760,11 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <span
     aria-hidden="true"
-    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
-    disabled={false}
-    full={false}
-    onClick={[Function]}
     size="medium"
-    stroked={false}
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={
@@ -1983,7 +1966,6 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
         },
       }
     }
-    type="button"
   >
     sms
   </span>
@@ -2167,16 +2149,11 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <span
     aria-hidden="true"
-    center={false}
     className="material-icons MuiIcon-root-1 c1 c2"
-    disabled={false}
-    full={false}
-    onClick={[Function]}
     size="medium"
-    stroked={false}
     style={
       Object {
-        "color": "primary",
+        "color": "",
       }
     }
     theme={
@@ -2378,7 +2355,6 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
         },
       }
     }
-    type="button"
   >
     camera
   </span>
