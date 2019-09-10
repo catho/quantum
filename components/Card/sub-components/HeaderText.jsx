@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const HeaderText = styled.div`
   flex-grow: 1;
-  max-width: 100%;
-  display: inline-block;
-  word-break: break-all;
+  width: 100%;
 `;
 
 HeaderText.displayName = 'Card.HeaderText';
