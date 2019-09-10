@@ -1,57 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-
-const skeletonAnimation = keyframes`
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
-const StyledSkeleton = styled.div`
-  background-color: rgba(0, 0, 0, 0.08);
-  animation: ${skeletonAnimation} 1.5s ease-in-out infinite;
-
-  ${({ height, width }) => `
-    height: ${height};
-    width: ${width}; 
-  `}
-`;
-
-const SkeletonRect = styled(StyledSkeleton)``;
-
-const SkeletonCircle = styled(StyledSkeleton)`
-  border-radius: 50%;
-`;
-
-const SkeletonText = styled(StyledSkeleton)`
-  border-radius: 4px;
-`;
+import styled from 'styled-components';
+import SkeletonTypes from './SkeletonTypes';
+import { spacing } from '../shared/theme';
+import {
+  SkeletonRect,
+  SkeletonCircle,
+  SkeletonText,
+  SkeletonButton,
+} from './sub-components';
 
 const Wrapper = styled.div`
   display: inline-block;
   box-sizing: inherit;
 
-  ${({ height, width }) => `
+  ${({ height, width, cols }) => `
     height: ${height};
-    width: ${width}; 
+    width: ${cols > 0 ? `calc(100% / 12 * ${cols})` : width};
   `}
 `;
 
 const Skeleton = props => {
-  const { type, width, height } = props;
+  const { type, width, height, cols } = props;
 
   return (
-    <Wrapper width={width} height={height}>
-      {type === 'rect' && <SkeletonRect width={width} height={height} />}
-      {type === 'circle' && <SkeletonCircle width={width} height={height} />}
-      {type === 'text' && <SkeletonText width={width} height={height} />}
+    <Wrapper width={width} height={height} cols={cols}>
+      {type === 'rect' && <SkeletonRect {...props} />}
+      {type === 'circle' && <SkeletonCircle {...props} />}
+      {type === 'text' && <SkeletonText {...props} />}
+      {type === 'Button' && <SkeletonButton {...props} />}
     </Wrapper>
   );
 };
@@ -59,13 +36,28 @@ const Skeleton = props => {
 Skeleton.defaultProps = {
   type: 'rect',
   width: '100%',
-  height: '100%',
+  height: '14px',
+  cols: 0,
+  size: 'medium',
+  theme: {
+    spacing,
+  },
 };
 
 Skeleton.propTypes = {
-  type: PropTypes.oneOf(['rect', 'circle', 'text']),
+  type: PropTypes.oneOf(['rect', 'circle', 'text', 'Button']),
   width: PropTypes.string,
   height: PropTypes.string,
+  cols: PropTypes.number,
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+  }),
 };
+
+// Types
+Skeleton.Button = SkeletonTypes.Button;
+Skeleton.Circle = SkeletonTypes.Circle;
+Skeleton.Text = SkeletonTypes.Text;
 
 export default Skeleton;
