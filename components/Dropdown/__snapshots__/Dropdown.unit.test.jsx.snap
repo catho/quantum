@@ -21,7 +21,7 @@ exports[`Input component  should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -139,7 +139,9 @@ exports[`Input component  should match the snapshot 1`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -217,7 +219,7 @@ exports[`Input component  should match the snapshot 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -335,7 +337,9 @@ exports[`Input component  should match the snapshot 2`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -413,7 +417,7 @@ exports[`Input component  should match the snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -534,7 +538,9 @@ exports[`Input component  should match the snapshot 3`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -622,7 +628,7 @@ exports[`Input component  should match the snapshot 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -741,7 +747,9 @@ exports[`Input component  should match the snapshot 4`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -823,7 +831,7 @@ exports[`Input component  should match the snapshot 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -941,7 +949,9 @@ exports[`Input component  should match the snapshot 5`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1025,7 +1035,7 @@ exports[`Input component  should match the snapshot 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -1150,7 +1160,9 @@ exports[`Input component  should match the snapshot 6`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1238,7 +1250,7 @@ exports[`Input component  should match the snapshot 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -1368,7 +1380,9 @@ exports[`Input component  should match the snapshot 7`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1446,7 +1460,7 @@ exports[`Input component  should match the snapshot 8`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -1577,7 +1591,9 @@ exports[`Input component  should match the snapshot 8`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1655,7 +1671,7 @@ exports[`Input component  should match the snapshot 9`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -1773,7 +1789,9 @@ exports[`Input component  should match the snapshot 9`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1851,7 +1869,7 @@ exports[`Input component  should match the snapshot 10`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -1968,7 +1986,9 @@ exports[`Input component  should match the snapshot 10`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",

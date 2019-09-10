@@ -196,36 +196,51 @@ export default () => (
 
     <Title as="h2">Neutral colors</Title>
     <Title as="h3" style={{ paddingTop: 0 }}>
-      Black
+      Neutral
     </Title>
+    <p>
+      It is used only in situations that Neutral 900 is not sufficient. This is
+      the absolute black.
+    </p>
+    <ColorSample hex={Colors.BLACK[1000]} number={1000} name="Neutral" />
     <p>
       It is mainly used for texts and headings. Passes on AAA in the contrast
       checker.
     </p>
-    <ColorSample hex={Colors.BLACK[900]} number={900} name="Black" />
+    <ColorSample hex={Colors.BLACK[900]} number={900} name="Neutral" />
     <p>
       It is used for general texts and can also indicate active states. Pass in
       AAA in contrast checker.
     </p>
-    <ColorSample hex={Colors.BLACK[700]} number={700} name="Black" />
+    <ColorSample hex={Colors.BLACK[700]} number={700} name="Neutral" />
     <p>
       It is used for strokes and can also indicate inactive states. Reproves in
       accessibility.
     </p>
-    <ColorSample hex={Colors.BLACK[400]} number={400} name="Black" />
+    <ColorSample hex={Colors.BLACK[400]} number={400} name="Neutral" />
     <p>
       It is an auxiliary neutral tone and can be used for inactive states.
       Reproves in accessibility.
     </p>
-    <ColorSample hex={Colors.BLACK[200]} number={200} name="Black" />
+    <ColorSample hex={Colors.BLACK[200]} number={200} name="Neutral" />
     <p>
       It is used to indicate input fields disabled. Reproves in accessibility.
     </p>
     <ColorSample
       hex={Colors.BLACK[100]}
       number={100}
-      name="Black"
+      name="Neutral"
       fontColor="black"
+    />
+    <p>
+      It is used only in situations that Neutral 200 is not clear enought. This
+      is the absolute white.
+    </p>
+    <ColorSample
+      hex={Colors.BLACK[0]}
+      number={0}
+      name="Neutral"
+      fontColor={Colors.BLACK[1000]}
     />
 
     <Title as="h3">Shadow</Title>

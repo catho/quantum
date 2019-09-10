@@ -119,13 +119,13 @@ const StyledButton = styled.button`
                 500: mainColor500,
                 700: mainColor700,
               },
-              text: { 100: text100 },
+              text: { 0: text0 },
             },
           },
         },
       },
       colors: {
-        neutral: { 100: neutral100, 500: neutral500 },
+        neutral: { 0: neutral0, 500: neutral500 },
       },
     } = theme;
 
@@ -133,17 +133,17 @@ const StyledButton = styled.button`
     let textColor;
 
     if (disabled && stroked) {
-      bgColor = neutral100;
+      bgColor = neutral0;
       textColor = neutral500;
     } else if (stroked) {
-      bgColor = neutral100;
+      bgColor = neutral0;
       textColor = mainColor500;
     } else if (disabled) {
       bgColor = neutral500;
-      textColor = neutral100;
+      textColor = neutral0;
     } else {
       bgColor = mainColor500;
-      textColor = text100;
+      textColor = text0;
     }
 
     return `
@@ -207,9 +207,9 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, $as, ...rest }) => (
-  <StyledButton as={$as} {...rest} size={size}>
-    {icon && <ButtonIcon size={size} name={icon} {...rest} />}
+const Button = ({ children, icon, size, $as, theme, ...rest }) => (
+  <StyledButton as={$as} {...rest} size={size} theme={theme}>
+    {icon && <ButtonIcon size={size} name={icon} theme={theme} />}
     {children}
   </StyledButton>
 );
@@ -266,7 +266,7 @@ Button.propTypes = {
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,
-    breakpoints: PropTypes.arrayOf(PropTypes.any),
+    breakpoints: PropTypes.object,
     components: PropTypes.shape({
       button: PropTypes.object,
     }),

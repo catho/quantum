@@ -21,7 +21,7 @@ exports[`TextArea component should match snapshots 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -100,7 +100,7 @@ exports[`TextArea component should match snapshots 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -185,7 +185,7 @@ exports[`TextArea component should match snapshots 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -280,7 +280,7 @@ exports[`TextArea component should match snapshots 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -370,7 +370,7 @@ exports[`TextArea component should match snapshots 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -449,7 +449,7 @@ exports[`TextArea component should match snapshots 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -540,7 +540,7 @@ exports[`TextArea component should match snapshots 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;
@@ -633,7 +633,7 @@ exports[`TextArea component should match snapshots 8`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 2px solid #999999;
   color: #4c4c4c;
   margin-top: 8px;

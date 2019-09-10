@@ -28,7 +28,7 @@ exports[`<PageButton /> Snapshot should match snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   color: #4c4c4c;
   font-size: 16px;
@@ -82,7 +82,7 @@ exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
   user-select: none;
   background-color: #1355d0;
   border: 1px solid #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 4px;
@@ -93,7 +93,7 @@ exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
 .c0:focus {
   background-color: #062ab3;
   border-color: #062ab3;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 <a
