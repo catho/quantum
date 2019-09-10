@@ -59,13 +59,13 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     ${({
       theme: {
         colors: {
-          neutral: { 100: neutral100, 500: neutral500 },
+          neutral: { 0: neutral0, 500: neutral500 },
         },
         spacing: { xxxsmall },
         baseFontSize: fontSize,
       },
     }) => `
-      background-color: ${neutral100};
+      background-color: ${neutral0};
       border: 2px solid  ${neutral500};
       font-size: ${fontSize}px;
       margin-top: ${xxxsmall}px;

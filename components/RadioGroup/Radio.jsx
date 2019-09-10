@@ -16,7 +16,7 @@ const RadioMark = styled.span`
   ${({
     theme: {
       colors: {
-        neutral: { 100: white, 500: gray },
+        neutral: { 0: white, 500: gray },
       },
       spacing: { xxsmall },
     },
@@ -210,7 +210,7 @@ const RadioLabel = styled(Label)`
     ${({
       theme: {
         colors: {
-          neutral: { 100: white, 500: black },
+          neutral: { 0: white, 500: black },
         },
       },
     }) => `
