@@ -98,7 +98,9 @@ exports[`Input component should match snapshots 2`] = `
               "900": "#ac001a",
             },
             "neutral": Object {
+              "0": "#ffffff",
               "100": "#f2f2f2",
+              "1000": "#000000",
               "300": "#cccccc",
               "500": "#999999",
               "700": "#4c4c4c",
@@ -273,7 +275,9 @@ exports[`Input component should match snapshots 4`] = `
               "900": "#ac001a",
             },
             "neutral": Object {
+              "0": "#ffffff",
               "100": "#f2f2f2",
+              "1000": "#000000",
               "300": "#cccccc",
               "500": "#999999",
               "700": "#4c4c4c",
@@ -423,7 +427,9 @@ exports[`Input component should match snapshots 6`] = `
               "900": "#ac001a",
             },
             "neutral": Object {
+              "0": "#ffffff",
               "100": "#f2f2f2",
+              "1000": "#000000",
               "300": "#cccccc",
               "500": "#999999",
               "700": "#4c4c4c",
@@ -694,7 +700,9 @@ exports[`Input component should match snapshots 10`] = `
               "900": "#ac001a",
             },
             "neutral": Object {
+              "0": "#ffffff",
               "100": "#f2f2f2",
+              "1000": "#000000",
               "300": "#cccccc",
               "500": "#999999",
               "700": "#4c4c4c",
@@ -1114,7 +1122,9 @@ exports[`Input component should match snapshots 17`] = `
               "900": "#ac001a",
             },
             "neutral": Object {
+              "0": "#ffffff",
               "100": "#f2f2f2",
+              "1000": "#000000",
               "300": "#cccccc",
               "500": "#999999",
               "700": "#4c4c4c",

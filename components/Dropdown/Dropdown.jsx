@@ -84,13 +84,13 @@ const DropList = styled.ul`
     const {
       spacing: { xxsmall },
       colors: {
-        neutral: { 100: neutral100, 300: neutral300 },
+        neutral: { 0: neutral0, 300: neutral300 },
       },
     } = theme;
 
     return `
-      background-color: ${neutral100};
-      border: solid 1.5px ${neutral100};
+      background-color: ${neutral0};
+      border: solid 1.5px ${neutral0};
       margin-top: ${xxsmall}px;
       ${shadow(5, neutral300)({ theme })};
     `;
@@ -122,11 +122,11 @@ const DropItem = styled.li`
     theme: {
       spacing: { xsmall, small },
       colors: {
-        neutral: { 100: neutral100, 300: neutral300 },
+        neutral: { 0: neutral0, 300: neutral300 },
       },
     },
   }) => `
-    background-color: ${neutral100};
+    background-color: ${neutral0};
     border-bottom: solid 1.5px ${neutral300};
     padding: ${xsmall * 1.125}px ${small}px;
   `}

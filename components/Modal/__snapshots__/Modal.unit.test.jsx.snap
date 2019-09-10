@@ -29,7 +29,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   flex-direction: column;
   position: relative;
   box-shadow: 0px 2px 1px -1px rgba(76,76,76,0.2),0px 1px 1px 0px rgba(76,76,76,0.14),0px 1px 3px 0px rgba(76,76,76,0.12);
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .c13 {
@@ -63,7 +63,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -271,7 +271,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "900": "#ac001a",
         },
         "neutral": Object {
+          "0": "#ffffff",
           "100": "#f2f2f2",
+          "1000": "#000000",
           "300": "#cccccc",
           "500": "#999999",
           "700": "#4c4c4c",
@@ -318,7 +320,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#ac001a",
               },
               "text": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -327,14 +331,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
             "neutral": Object {
               "mainColor": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
                 "900": "#191919",
               },
               "text": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -350,7 +358,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#062ab3",
               },
               "text": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -366,7 +376,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#c8002e",
               },
               "text": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -382,7 +394,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#3c6510",
               },
               "text": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -398,7 +412,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#a36300",
               },
               "text": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -452,7 +468,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   flex-direction: column;
   position: relative;
   box-shadow: 0px 2px 1px -1px rgba(76,76,76,0.2),0px 1px 1px 0px rgba(76,76,76,0.14),0px 1px 3px 0px rgba(76,76,76,0.12);
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .c13 {
@@ -486,7 +502,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -743,7 +759,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "900": "#ac001a",
             },
             "neutral": Object {
+              "0": "#ffffff",
               "100": "#f2f2f2",
+              "1000": "#000000",
               "300": "#cccccc",
               "500": "#999999",
               "700": "#4c4c4c",
@@ -790,7 +808,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#ac001a",
                   },
                   "text": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
@@ -799,14 +819,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 },
                 "neutral": Object {
                   "mainColor": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
                     "900": "#191919",
                   },
                   "text": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
@@ -822,7 +846,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#062ab3",
                   },
                   "text": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
@@ -838,7 +864,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#c8002e",
                   },
                   "text": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
@@ -854,7 +882,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#3c6510",
                   },
                   "text": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
@@ -870,7 +900,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#a36300",
                   },
                   "text": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
@@ -1002,7 +1034,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#ac001a",
               },
               "neutral": Object {
+                "0": "#ffffff",
                 "100": "#f2f2f2",
+                "1000": "#000000",
                 "300": "#cccccc",
                 "500": "#999999",
                 "700": "#4c4c4c",
@@ -1049,7 +1083,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#ac001a",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1058,14 +1094,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                   "neutral": Object {
                     "mainColor": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
                       "900": "#191919",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1081,7 +1121,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#062ab3",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1097,7 +1139,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#c8002e",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1113,7 +1157,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#3c6510",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1129,7 +1175,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#a36300",
                     },
                     "text": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1191,7 +1239,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#ac001a",
                   },
                   "neutral": Object {
+                    "0": "#ffffff",
                     "100": "#f2f2f2",
+                    "1000": "#000000",
                     "300": "#cccccc",
                     "500": "#999999",
                     "700": "#4c4c4c",
@@ -1238,7 +1288,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#ac001a",
                         },
                         "text": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
@@ -1247,14 +1299,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                       "neutral": Object {
                         "mainColor": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
                           "900": "#191919",
                         },
                         "text": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
@@ -1270,7 +1326,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#062ab3",
                         },
                         "text": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
@@ -1286,7 +1344,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#c8002e",
                         },
                         "text": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
@@ -1302,7 +1362,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#3c6510",
                         },
                         "text": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
@@ -1318,7 +1380,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#a36300",
                         },
                         "text": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
@@ -1543,7 +1607,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#ac001a",
                     },
                     "neutral": Object {
+                      "0": "#ffffff",
                       "100": "#f2f2f2",
+                      "1000": "#000000",
                       "300": "#cccccc",
                       "500": "#999999",
                       "700": "#4c4c4c",
@@ -1590,7 +1656,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#ac001a",
                           },
                           "text": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
@@ -1599,14 +1667,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                         "neutral": Object {
                           "mainColor": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
                             "900": "#191919",
                           },
                           "text": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
@@ -1622,7 +1694,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#062ab3",
                           },
                           "text": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
@@ -1638,7 +1712,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#c8002e",
                           },
                           "text": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
@@ -1654,7 +1730,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#3c6510",
                           },
                           "text": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
@@ -1670,7 +1748,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#a36300",
                           },
                           "text": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
@@ -1728,7 +1808,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "900": "#ac001a",
                       },
                       "neutral": Object {
+                        "0": "#ffffff",
                         "100": "#f2f2f2",
+                        "1000": "#000000",
                         "300": "#cccccc",
                         "500": "#999999",
                         "700": "#4c4c4c",
@@ -1775,7 +1857,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "900": "#ac001a",
                             },
                             "text": Object {
+                              "0": "#ffffff",
                               "100": "#f2f2f2",
+                              "1000": "#000000",
                               "300": "#cccccc",
                               "500": "#999999",
                               "700": "#4c4c4c",
@@ -1784,14 +1868,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                           "neutral": Object {
                             "mainColor": Object {
+                              "0": "#ffffff",
                               "100": "#f2f2f2",
+                              "1000": "#000000",
                               "300": "#cccccc",
                               "500": "#999999",
                               "700": "#4c4c4c",
                               "900": "#191919",
                             },
                             "text": Object {
+                              "0": "#ffffff",
                               "100": "#f2f2f2",
+                              "1000": "#000000",
                               "300": "#cccccc",
                               "500": "#999999",
                               "700": "#4c4c4c",
@@ -1807,7 +1895,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "900": "#062ab3",
                             },
                             "text": Object {
+                              "0": "#ffffff",
                               "100": "#f2f2f2",
+                              "1000": "#000000",
                               "300": "#cccccc",
                               "500": "#999999",
                               "700": "#4c4c4c",
@@ -1823,7 +1913,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "900": "#c8002e",
                             },
                             "text": Object {
+                              "0": "#ffffff",
                               "100": "#f2f2f2",
+                              "1000": "#000000",
                               "300": "#cccccc",
                               "500": "#999999",
                               "700": "#4c4c4c",
@@ -1839,7 +1931,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "900": "#3c6510",
                             },
                             "text": Object {
+                              "0": "#ffffff",
                               "100": "#f2f2f2",
+                              "1000": "#000000",
                               "300": "#cccccc",
                               "500": "#999999",
                               "700": "#4c4c4c",
@@ -1855,7 +1949,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "900": "#a36300",
                             },
                             "text": Object {
+                              "0": "#ffffff",
                               "100": "#f2f2f2",
+                              "1000": "#000000",
                               "300": "#cccccc",
                               "500": "#999999",
                               "700": "#4c4c4c",
@@ -1913,7 +2009,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#ac001a",
                         },
                         "neutral": Object {
+                          "0": "#ffffff",
                           "100": "#f2f2f2",
+                          "1000": "#000000",
                           "300": "#cccccc",
                           "500": "#999999",
                           "700": "#4c4c4c",
@@ -1960,7 +2058,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#ac001a",
                               },
                               "text": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
@@ -1969,14 +2069,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                             "neutral": Object {
                               "mainColor": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
                                 "900": "#191919",
                               },
                               "text": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
@@ -1992,7 +2096,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#062ab3",
                               },
                               "text": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
@@ -2008,7 +2114,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#c8002e",
                               },
                               "text": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
@@ -2024,7 +2132,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#3c6510",
                               },
                               "text": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
@@ -2040,7 +2150,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#a36300",
                               },
                               "text": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
@@ -2124,7 +2236,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#ac001a",
                           },
                           "neutral": Object {
+                            "0": "#ffffff",
                             "100": "#f2f2f2",
+                            "1000": "#000000",
                             "300": "#cccccc",
                             "500": "#999999",
                             "700": "#4c4c4c",
@@ -2171,7 +2285,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#ac001a",
                                 },
                                 "text": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
@@ -2180,14 +2296,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                               "neutral": Object {
                                 "mainColor": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
                                   "900": "#191919",
                                 },
                                 "text": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
@@ -2203,7 +2323,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#062ab3",
                                 },
                                 "text": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
@@ -2219,7 +2341,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#c8002e",
                                 },
                                 "text": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
@@ -2235,7 +2359,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#3c6510",
                                 },
                                 "text": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
@@ -2251,7 +2377,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#a36300",
                                 },
                                 "text": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
@@ -2694,7 +2822,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#ac001a",
                               },
                               "neutral": Object {
+                                "0": "#ffffff",
                                 "100": "#f2f2f2",
+                                "1000": "#000000",
                                 "300": "#cccccc",
                                 "500": "#999999",
                                 "700": "#4c4c4c",
@@ -2741,7 +2871,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#ac001a",
                                     },
                                     "text": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
@@ -2750,14 +2882,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   },
                                   "neutral": Object {
                                     "mainColor": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
                                       "900": "#191919",
                                     },
                                     "text": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
@@ -2773,7 +2909,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#062ab3",
                                     },
                                     "text": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
@@ -2789,7 +2927,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#c8002e",
                                     },
                                     "text": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
@@ -2805,7 +2945,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#3c6510",
                                     },
                                     "text": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
@@ -2821,7 +2963,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#a36300",
                                     },
                                     "text": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
@@ -2904,7 +3048,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#ac001a",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -2913,14 +3059,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "neutral": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
                                             "900": "#191919",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -2936,7 +3086,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#062ab3",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -2952,7 +3104,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#c8002e",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -2968,7 +3122,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#3c6510",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -2984,7 +3140,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#a36300",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3061,7 +3219,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#ac001a",
                                 },
                                 "neutral": Object {
+                                  "0": "#ffffff",
                                   "100": "#f2f2f2",
+                                  "1000": "#000000",
                                   "300": "#cccccc",
                                   "500": "#999999",
                                   "700": "#4c4c4c",
@@ -3108,7 +3268,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#ac001a",
                                       },
                                       "text": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
@@ -3117,14 +3279,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     },
                                     "neutral": Object {
                                       "mainColor": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
                                         "900": "#191919",
                                       },
                                       "text": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
@@ -3140,7 +3306,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#062ab3",
                                       },
                                       "text": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
@@ -3156,7 +3324,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#c8002e",
                                       },
                                       "text": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
@@ -3172,7 +3342,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#3c6510",
                                       },
                                       "text": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
@@ -3188,7 +3360,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#a36300",
                                       },
                                       "text": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
@@ -3255,7 +3429,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "900": "#ac001a",
                                   },
                                   "neutral": Object {
+                                    "0": "#ffffff",
                                     "100": "#f2f2f2",
+                                    "1000": "#000000",
                                     "300": "#cccccc",
                                     "500": "#999999",
                                     "700": "#4c4c4c",
@@ -3302,7 +3478,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "900": "#ac001a",
                                         },
                                         "text": Object {
+                                          "0": "#ffffff",
                                           "100": "#f2f2f2",
+                                          "1000": "#000000",
                                           "300": "#cccccc",
                                           "500": "#999999",
                                           "700": "#4c4c4c",
@@ -3311,14 +3489,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       },
                                       "neutral": Object {
                                         "mainColor": Object {
+                                          "0": "#ffffff",
                                           "100": "#f2f2f2",
+                                          "1000": "#000000",
                                           "300": "#cccccc",
                                           "500": "#999999",
                                           "700": "#4c4c4c",
                                           "900": "#191919",
                                         },
                                         "text": Object {
+                                          "0": "#ffffff",
                                           "100": "#f2f2f2",
+                                          "1000": "#000000",
                                           "300": "#cccccc",
                                           "500": "#999999",
                                           "700": "#4c4c4c",
@@ -3334,7 +3516,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "900": "#062ab3",
                                         },
                                         "text": Object {
+                                          "0": "#ffffff",
                                           "100": "#f2f2f2",
+                                          "1000": "#000000",
                                           "300": "#cccccc",
                                           "500": "#999999",
                                           "700": "#4c4c4c",
@@ -3350,7 +3534,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "900": "#c8002e",
                                         },
                                         "text": Object {
+                                          "0": "#ffffff",
                                           "100": "#f2f2f2",
+                                          "1000": "#000000",
                                           "300": "#cccccc",
                                           "500": "#999999",
                                           "700": "#4c4c4c",
@@ -3366,7 +3552,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "900": "#3c6510",
                                         },
                                         "text": Object {
+                                          "0": "#ffffff",
                                           "100": "#f2f2f2",
+                                          "1000": "#000000",
                                           "300": "#cccccc",
                                           "500": "#999999",
                                           "700": "#4c4c4c",
@@ -3382,7 +3570,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "900": "#a36300",
                                         },
                                         "text": Object {
+                                          "0": "#ffffff",
                                           "100": "#f2f2f2",
+                                          "1000": "#000000",
                                           "300": "#cccccc",
                                           "500": "#999999",
                                           "700": "#4c4c4c",
@@ -3449,7 +3639,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#ac001a",
                                     },
                                     "neutral": Object {
+                                      "0": "#ffffff",
                                       "100": "#f2f2f2",
+                                      "1000": "#000000",
                                       "300": "#cccccc",
                                       "500": "#999999",
                                       "700": "#4c4c4c",
@@ -3496,7 +3688,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#ac001a",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3505,14 +3699,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "neutral": Object {
                                           "mainColor": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
                                             "900": "#191919",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3528,7 +3726,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#062ab3",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3544,7 +3744,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#c8002e",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3560,7 +3762,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#3c6510",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3576,7 +3780,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#a36300",
                                           },
                                           "text": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3679,7 +3885,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#ac001a",
                                       },
                                       "neutral": Object {
+                                        "0": "#ffffff",
                                         "100": "#f2f2f2",
+                                        "1000": "#000000",
                                         "300": "#cccccc",
                                         "500": "#999999",
                                         "700": "#4c4c4c",
@@ -3726,7 +3934,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "900": "#ac001a",
                                             },
                                             "text": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
@@ -3735,14 +3945,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           },
                                           "neutral": Object {
                                             "mainColor": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
                                               "900": "#191919",
                                             },
                                             "text": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
@@ -3758,7 +3972,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "900": "#062ab3",
                                             },
                                             "text": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
@@ -3774,7 +3990,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "900": "#c8002e",
                                             },
                                             "text": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
@@ -3790,7 +4008,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "900": "#3c6510",
                                             },
                                             "text": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
@@ -3806,7 +4026,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "900": "#a36300",
                                             },
                                             "text": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
@@ -3874,7 +4096,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#ac001a",
                                           },
                                           "neutral": Object {
+                                            "0": "#ffffff",
                                             "100": "#f2f2f2",
+                                            "1000": "#000000",
                                             "300": "#cccccc",
                                             "500": "#999999",
                                             "700": "#4c4c4c",
@@ -3921,7 +4145,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "900": "#ac001a",
                                                 },
                                                 "text": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
@@ -3930,14 +4156,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               },
                                               "neutral": Object {
                                                 "mainColor": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
                                                   "900": "#191919",
                                                 },
                                                 "text": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
@@ -3953,7 +4183,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "900": "#062ab3",
                                                 },
                                                 "text": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
@@ -3969,7 +4201,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "900": "#c8002e",
                                                 },
                                                 "text": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
@@ -3985,7 +4219,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "900": "#3c6510",
                                                 },
                                                 "text": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
@@ -4001,7 +4237,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "900": "#a36300",
                                                 },
                                                 "text": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
@@ -4084,7 +4322,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "900": "#ac001a",
                                             },
                                             "neutral": Object {
+                                              "0": "#ffffff",
                                               "100": "#f2f2f2",
+                                              "1000": "#000000",
                                               "300": "#cccccc",
                                               "500": "#999999",
                                               "700": "#4c4c4c",
@@ -4131,7 +4371,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "900": "#ac001a",
                                                   },
                                                   "text": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
@@ -4140,14 +4382,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                 },
                                                 "neutral": Object {
                                                   "mainColor": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
                                                     "900": "#191919",
                                                   },
                                                   "text": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
@@ -4163,7 +4409,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "900": "#062ab3",
                                                   },
                                                   "text": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
@@ -4179,7 +4427,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "900": "#c8002e",
                                                   },
                                                   "text": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
@@ -4195,7 +4445,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "900": "#3c6510",
                                                   },
                                                   "text": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
@@ -4211,7 +4463,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "900": "#a36300",
                                                   },
                                                   "text": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
@@ -4273,7 +4527,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                 "900": "#ac001a",
                                               },
                                               "neutral": Object {
+                                                "0": "#ffffff",
                                                 "100": "#f2f2f2",
+                                                "1000": "#000000",
                                                 "300": "#cccccc",
                                                 "500": "#999999",
                                                 "700": "#4c4c4c",
@@ -4320,7 +4576,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "900": "#ac001a",
                                                     },
                                                     "text": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
@@ -4329,14 +4587,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   },
                                                   "neutral": Object {
                                                     "mainColor": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
                                                       "900": "#191919",
                                                     },
                                                     "text": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
@@ -4352,7 +4614,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "900": "#062ab3",
                                                     },
                                                     "text": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
@@ -4368,7 +4632,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "900": "#c8002e",
                                                     },
                                                     "text": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
@@ -4384,7 +4650,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "900": "#3c6510",
                                                     },
                                                     "text": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
@@ -4400,7 +4668,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "900": "#a36300",
                                                     },
                                                     "text": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
@@ -4464,7 +4734,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "900": "#ac001a",
                                                 },
                                                 "neutral": Object {
+                                                  "0": "#ffffff",
                                                   "100": "#f2f2f2",
+                                                  "1000": "#000000",
                                                   "300": "#cccccc",
                                                   "500": "#999999",
                                                   "700": "#4c4c4c",
@@ -4511,7 +4783,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         "900": "#ac001a",
                                                       },
                                                       "text": Object {
+                                                        "0": "#ffffff",
                                                         "100": "#f2f2f2",
+                                                        "1000": "#000000",
                                                         "300": "#cccccc",
                                                         "500": "#999999",
                                                         "700": "#4c4c4c",
@@ -4520,14 +4794,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     },
                                                     "neutral": Object {
                                                       "mainColor": Object {
+                                                        "0": "#ffffff",
                                                         "100": "#f2f2f2",
+                                                        "1000": "#000000",
                                                         "300": "#cccccc",
                                                         "500": "#999999",
                                                         "700": "#4c4c4c",
                                                         "900": "#191919",
                                                       },
                                                       "text": Object {
+                                                        "0": "#ffffff",
                                                         "100": "#f2f2f2",
+                                                        "1000": "#000000",
                                                         "300": "#cccccc",
                                                         "500": "#999999",
                                                         "700": "#4c4c4c",
@@ -4543,7 +4821,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         "900": "#062ab3",
                                                       },
                                                       "text": Object {
+                                                        "0": "#ffffff",
                                                         "100": "#f2f2f2",
+                                                        "1000": "#000000",
                                                         "300": "#cccccc",
                                                         "500": "#999999",
                                                         "700": "#4c4c4c",
@@ -4559,7 +4839,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         "900": "#c8002e",
                                                       },
                                                       "text": Object {
+                                                        "0": "#ffffff",
                                                         "100": "#f2f2f2",
+                                                        "1000": "#000000",
                                                         "300": "#cccccc",
                                                         "500": "#999999",
                                                         "700": "#4c4c4c",
@@ -4575,7 +4857,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         "900": "#3c6510",
                                                       },
                                                       "text": Object {
+                                                        "0": "#ffffff",
                                                         "100": "#f2f2f2",
+                                                        "1000": "#000000",
                                                         "300": "#cccccc",
                                                         "500": "#999999",
                                                         "700": "#4c4c4c",
@@ -4591,7 +4875,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         "900": "#a36300",
                                                       },
                                                       "text": Object {
+                                                        "0": "#ffffff",
                                                         "100": "#f2f2f2",
+                                                        "1000": "#000000",
                                                         "300": "#cccccc",
                                                         "500": "#999999",
                                                         "700": "#4c4c4c",
@@ -4671,7 +4957,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "900": "#ac001a",
                                                   },
                                                   "neutral": Object {
+                                                    "0": "#ffffff",
                                                     "100": "#f2f2f2",
+                                                    "1000": "#000000",
                                                     "300": "#cccccc",
                                                     "500": "#999999",
                                                     "700": "#4c4c4c",
@@ -4718,7 +5006,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                           "900": "#ac001a",
                                                         },
                                                         "text": Object {
+                                                          "0": "#ffffff",
                                                           "100": "#f2f2f2",
+                                                          "1000": "#000000",
                                                           "300": "#cccccc",
                                                           "500": "#999999",
                                                           "700": "#4c4c4c",
@@ -4727,14 +5017,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       },
                                                       "neutral": Object {
                                                         "mainColor": Object {
+                                                          "0": "#ffffff",
                                                           "100": "#f2f2f2",
+                                                          "1000": "#000000",
                                                           "300": "#cccccc",
                                                           "500": "#999999",
                                                           "700": "#4c4c4c",
                                                           "900": "#191919",
                                                         },
                                                         "text": Object {
+                                                          "0": "#ffffff",
                                                           "100": "#f2f2f2",
+                                                          "1000": "#000000",
                                                           "300": "#cccccc",
                                                           "500": "#999999",
                                                           "700": "#4c4c4c",
@@ -4750,7 +5044,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                           "900": "#062ab3",
                                                         },
                                                         "text": Object {
+                                                          "0": "#ffffff",
                                                           "100": "#f2f2f2",
+                                                          "1000": "#000000",
                                                           "300": "#cccccc",
                                                           "500": "#999999",
                                                           "700": "#4c4c4c",
@@ -4766,7 +5062,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                           "900": "#c8002e",
                                                         },
                                                         "text": Object {
+                                                          "0": "#ffffff",
                                                           "100": "#f2f2f2",
+                                                          "1000": "#000000",
                                                           "300": "#cccccc",
                                                           "500": "#999999",
                                                           "700": "#4c4c4c",
@@ -4782,7 +5080,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                           "900": "#3c6510",
                                                         },
                                                         "text": Object {
+                                                          "0": "#ffffff",
                                                           "100": "#f2f2f2",
+                                                          "1000": "#000000",
                                                           "300": "#cccccc",
                                                           "500": "#999999",
                                                           "700": "#4c4c4c",
@@ -4798,7 +5098,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                           "900": "#a36300",
                                                         },
                                                         "text": Object {
+                                                          "0": "#ffffff",
                                                           "100": "#f2f2f2",
+                                                          "1000": "#000000",
                                                           "300": "#cccccc",
                                                           "500": "#999999",
                                                           "700": "#4c4c4c",
@@ -4863,7 +5165,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "900": "#ac001a",
                                                     },
                                                     "neutral": Object {
+                                                      "0": "#ffffff",
                                                       "100": "#f2f2f2",
+                                                      "1000": "#000000",
                                                       "300": "#cccccc",
                                                       "500": "#999999",
                                                       "700": "#4c4c4c",
@@ -4910,7 +5214,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                             "900": "#ac001a",
                                                           },
                                                           "text": Object {
+                                                            "0": "#ffffff",
                                                             "100": "#f2f2f2",
+                                                            "1000": "#000000",
                                                             "300": "#cccccc",
                                                             "500": "#999999",
                                                             "700": "#4c4c4c",
@@ -4919,14 +5225,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         },
                                                         "neutral": Object {
                                                           "mainColor": Object {
+                                                            "0": "#ffffff",
                                                             "100": "#f2f2f2",
+                                                            "1000": "#000000",
                                                             "300": "#cccccc",
                                                             "500": "#999999",
                                                             "700": "#4c4c4c",
                                                             "900": "#191919",
                                                           },
                                                           "text": Object {
+                                                            "0": "#ffffff",
                                                             "100": "#f2f2f2",
+                                                            "1000": "#000000",
                                                             "300": "#cccccc",
                                                             "500": "#999999",
                                                             "700": "#4c4c4c",
@@ -4942,7 +5252,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                             "900": "#062ab3",
                                                           },
                                                           "text": Object {
+                                                            "0": "#ffffff",
                                                             "100": "#f2f2f2",
+                                                            "1000": "#000000",
                                                             "300": "#cccccc",
                                                             "500": "#999999",
                                                             "700": "#4c4c4c",
@@ -4958,7 +5270,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                             "900": "#c8002e",
                                                           },
                                                           "text": Object {
+                                                            "0": "#ffffff",
                                                             "100": "#f2f2f2",
+                                                            "1000": "#000000",
                                                             "300": "#cccccc",
                                                             "500": "#999999",
                                                             "700": "#4c4c4c",
@@ -4974,7 +5288,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                             "900": "#3c6510",
                                                           },
                                                           "text": Object {
+                                                            "0": "#ffffff",
                                                             "100": "#f2f2f2",
+                                                            "1000": "#000000",
                                                             "300": "#cccccc",
                                                             "500": "#999999",
                                                             "700": "#4c4c4c",
@@ -4990,7 +5306,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                             "900": "#a36300",
                                                           },
                                                           "text": Object {
+                                                            "0": "#ffffff",
                                                             "100": "#f2f2f2",
+                                                            "1000": "#000000",
                                                             "300": "#cccccc",
                                                             "500": "#999999",
                                                             "700": "#4c4c4c",

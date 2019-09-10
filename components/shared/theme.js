@@ -57,11 +57,13 @@ const colors = {
     900: '#ac001a',
   },
   neutral: {
+    0: '#ffffff',
     100: '#f2f2f2',
     300: '#cccccc',
     500: '#999999',
     700: '#4c4c4c',
     900: '#191919',
+    1000: '#000000',
   },
 };
 
@@ -158,7 +160,7 @@ const components = {
   popover: {
     skins: {
       neutral: {
-        background: colors.neutral[100],
+        background: colors.neutral[0],
         text: colors.neutral[700],
       },
       success: {

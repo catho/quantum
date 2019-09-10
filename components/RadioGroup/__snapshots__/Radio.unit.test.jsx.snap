@@ -20,7 +20,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   position: relative;
   top: 4px;
   width: 16px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1.5px solid #999999;
   margin-right: 4px;
 }
@@ -70,7 +70,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 .c5 .c1:checked ~ .c3 {
@@ -129,7 +129,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c5 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 .c6 .c1:checked ~ .c3 {
@@ -179,7 +179,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 .c6 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
@@ -220,7 +220,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   position: relative;
   top: 4px;
   width: 16px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1.5px solid #999999;
   margin-right: 4px;
 }
@@ -260,7 +260,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 .c5 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 .c0 {
@@ -334,7 +334,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
@@ -375,7 +375,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   position: relative;
   top: 4px;
   width: 16px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1.5px solid #999999;
   margin-right: 4px;
 }
@@ -415,7 +415,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c5 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 .c6 .c1:checked ~ .c3 {
@@ -474,7 +474,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c6 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 .c0 {
@@ -534,7 +534,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
@@ -575,7 +575,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   position: relative;
   top: 4px;
   width: 16px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1.5px solid #999999;
   margin-right: 4px;
 }
@@ -625,7 +625,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 .c0 .c1:checked:disabled ~ .c3 {
   background-color: #999999;
   border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #f2f2f2;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
