@@ -1,35 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import SkeletonTypes from './SkeletonTypes';
-import { spacing } from '../shared/theme';
+import { spacing, baseFontSize as defaultBaseFontSize } from '../shared/theme';
 import {
   SkeletonRect,
   SkeletonCircle,
   SkeletonText,
   SkeletonButton,
+  SkeletonTag,
 } from './sub-components';
 
-const Wrapper = styled.div`
-  display: inline-block;
-  box-sizing: inherit;
-
-  ${({ height, width, cols }) => `
-    height: ${height};
-    width: ${cols > 0 ? `calc(100% / 12 * ${cols})` : width};
-  `}
-`;
-
 const Skeleton = props => {
-  const { type, width, height, cols } = props;
+  const { type } = props;
 
   return (
-    <Wrapper width={width} height={height} cols={cols}>
+    <>
       {type === 'rect' && <SkeletonRect {...props} />}
       {type === 'circle' && <SkeletonCircle {...props} />}
       {type === 'text' && <SkeletonText {...props} />}
       {type === 'Button' && <SkeletonButton {...props} />}
-    </Wrapper>
+      {type === 'Tag' && <SkeletonTag {...props} />}
+    </>
   );
 };
 
@@ -37,21 +28,21 @@ Skeleton.defaultProps = {
   type: 'rect',
   width: '100%',
   height: '14px',
-  cols: 0,
   size: 'medium',
   theme: {
+    baseFontSize: defaultBaseFontSize,
     spacing,
   },
 };
 
 Skeleton.propTypes = {
-  type: PropTypes.oneOf(['rect', 'circle', 'text', 'Button']),
+  type: PropTypes.oneOf(['rect', 'circle', 'text', 'Button', 'Tag']),
   width: PropTypes.string,
   height: PropTypes.string,
-  cols: PropTypes.number,
-  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
   theme: PropTypes.shape({
     spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
 };
 
@@ -59,5 +50,6 @@ Skeleton.propTypes = {
 Skeleton.Button = SkeletonTypes.Button;
 Skeleton.Circle = SkeletonTypes.Circle;
 Skeleton.Text = SkeletonTypes.Text;
+Skeleton.Tag = SkeletonTypes.Tag;
 
 export default Skeleton;

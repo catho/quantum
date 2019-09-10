@@ -16,10 +16,12 @@ const skeletonAnimation = keyframes`
 const SkeletonBase = styled.div`
   background-color: rgba(0, 0, 0, 0.08);
   animation: ${skeletonAnimation} 1.5s ease-in-out infinite;
+  display: inline-block;
+  box-sizing: border-box;
 
   ${({ height, width }) => `
     height: ${height};
-    width: ${width}; 
+    width: ${width};
   `}
 `;
 

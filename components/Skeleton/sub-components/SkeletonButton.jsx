@@ -26,8 +26,7 @@ const SkeletonButton = styled(SkeletonBase)`
 SkeletonButton.displayName = 'SkeletonButton';
 
 SkeletonButton.propTypes = {
-  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge'])
-    .isRequired,
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']).isRequired,
   theme: PropTypes.shape({
     spacing: PropTypes.object,
   }).isRequired,
