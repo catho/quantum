@@ -6,7 +6,13 @@ const hide = ({ hide: hideProp, theme: { breakpoints } }) =>
     .concat([], hideProp)
     .map(breakpoint => hideQueries(breakpoints)[breakpoint]());
 
-const noGutters = ({ 'no-gutters': noGuttersProp }) =>
-  noGuttersProp && '--gutter: 0px;';
+const calcGutter = (gutter, noGuttersProp, onlyValue = false) => {
+  let returnValue = '0';
+  if (gutter) {
+    returnValue = noGuttersProp ? '0' : `${gutter}`;
+  }
 
-export { hide, noGutters };
+  return `${returnValue.replace('px', '')}${onlyValue ? '' : 'px'}`;
+};
+
+export { hide, calcGutter };
