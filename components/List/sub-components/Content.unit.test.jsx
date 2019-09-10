@@ -34,6 +34,11 @@ describe('<Content />', () => {
     const propWrapper = mount(
       <Content header={header} subheader={subheader} />,
     );
+    // ###
+    // ###
+    // ###
+    // ### FAZER O HEADER E SUBHEADER FUNCIONAREM QDO PASSADO VIA PROPS
+    // console.log('###### PROP', propWrapper.find(Header)).toHaveLength(2);
 
     expect(contentWrapper.find(Header)).toHaveLength(1);
     expect(contentWrapper.render().text()).toContain(header);

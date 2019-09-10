@@ -17,7 +17,7 @@ exports[`<Content /> Should match the snapshot 1`] = `
 }
 
 <List.Content
-  content={Object {}}
+  content=""
   header=""
   subheader=""
 >

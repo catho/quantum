@@ -1,2 +1,2 @@
 export { query, hideQueries } from './media';
-export { hide, noGutters } from './utils';
+export { hide, calcGutter } from './utils';

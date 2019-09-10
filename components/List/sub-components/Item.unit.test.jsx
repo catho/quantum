@@ -5,7 +5,7 @@ import Item from './Item';
 import Content from './Content';
 
 const content = 'content';
-const icon = 'icon';
+const icon = 'info';
 const header = 'header';
 const subheader = 'subheader';
 

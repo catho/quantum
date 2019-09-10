@@ -1596,9 +1596,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-1 c1 c3 c4"
+                      class="material-icons MuiIcon-root-1 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -3374,16 +3373,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="neutral"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -3586,12 +3577,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -3616,13 +3603,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="neutral"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -3825,19 +3807,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="neutral"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -4041,20 +4016,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -4259,11 +4227,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-4",
@@ -4279,16 +4245,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -4493,21 +4454,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-1 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-1 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -4712,7 +4666,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
@@ -5421,9 +5374,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-10 c1 c3 c4"
+                      class="material-icons MuiIcon-root-10 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -7199,16 +7151,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="neutral"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -7411,12 +7355,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -7441,13 +7381,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="neutral"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -7650,19 +7585,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="neutral"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -7866,20 +7794,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -8084,11 +8005,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-13",
@@ -8104,16 +8023,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -8318,21 +8232,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-10 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-10 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -8537,7 +8444,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
@@ -9278,9 +9184,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-19 c1 c3 c4"
+                      class="material-icons MuiIcon-root-19 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -11056,16 +10961,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="success"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -11268,12 +11165,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -11298,13 +11191,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="success"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -11507,19 +11395,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="success"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -11723,20 +11604,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "success",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -11941,11 +11815,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-22",
@@ -11961,16 +11833,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "success",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -12175,21 +12042,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-19 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-19 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "success",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -12394,7 +12254,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
@@ -13167,9 +13026,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-28 c1 c3 c4"
+                      class="material-icons MuiIcon-root-28 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -14945,16 +14803,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="warning"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -15157,12 +15007,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -15187,13 +15033,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="warning"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -15396,19 +15237,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="warning"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -15612,20 +15446,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "warning",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -15830,11 +15657,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-31",
@@ -15850,16 +15675,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "warning",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -16064,21 +15884,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-28 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-28 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "warning",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -16283,7 +16096,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
@@ -17088,9 +16900,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-37 c1 c3 c4"
+                      class="material-icons MuiIcon-root-37 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -18866,16 +18677,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="error"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -19078,12 +18881,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -19108,13 +18907,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="error"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -19317,19 +19111,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="error"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -19533,20 +19320,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "error",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -19751,11 +19531,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-40",
@@ -19771,16 +19549,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "error",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -19985,21 +19758,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-37 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-37 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "error",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -20204,7 +19970,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
@@ -21009,9 +20774,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-46 c1 c3 c4"
+                      class="material-icons MuiIcon-root-46 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -22787,16 +22551,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="neutral"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -22999,12 +22755,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -23029,13 +22781,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="neutral"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -23238,19 +22985,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="neutral"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -23454,20 +23194,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -23672,11 +23405,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-49",
@@ -23692,16 +23423,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -23906,21 +23632,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-46 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-46 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -24125,7 +23844,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
@@ -24924,9 +24642,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-55 c1 c3 c4"
+                      class="material-icons MuiIcon-root-55 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -26702,16 +26419,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="neutral"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -26914,12 +26623,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -26944,13 +26649,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="neutral"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -27153,19 +26853,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="neutral"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -27369,20 +27062,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -27587,11 +27273,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-58",
@@ -27607,16 +27291,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -27821,21 +27500,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-55 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-55 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -28040,7 +27712,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
@@ -28839,9 +28510,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-64 c1 c3 c4"
+                      class="material-icons MuiIcon-root-64 c3 c4"
                       theme="[object Object]"
-                      type="button"
                     >
                       close
                     </span>
@@ -30617,16 +30287,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               type="button"
                             >
                               <Button__ButtonIcon
-                                center={false}
-                                className="c2"
-                                disabled={false}
-                                full={false}
-                                inverted={false}
                                 name="close"
-                                onClick={[Function]}
                                 size="medium"
-                                skin="neutral"
-                                stroked={false}
                                 theme={
                                   Object {
                                     "breakpoints": Object {
@@ -30829,12 +30491,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                   }
                                 }
-                                type="button"
                               >
                                 <StyledComponent
-                                  center={false}
-                                  className="c2"
-                                  disabled={false}
                                   forwardedComponent={
                                     Object {
                                       "$$typeof": Symbol(react.forward_ref),
@@ -30859,13 +30517,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     }
                                   }
                                   forwardedRef={null}
-                                  full={false}
-                                  inverted={false}
                                   name="close"
-                                  onClick={[Function]}
                                   size="medium"
-                                  skin="neutral"
-                                  stroked={false}
                                   theme={
                                     Object {
                                       "breakpoints": Object {
@@ -31068,19 +30721,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                     }
                                   }
-                                  type="button"
                                 >
                                   <Icon
-                                    center={false}
-                                    className="c2 c4 c5"
-                                    disabled={false}
-                                    full={false}
-                                    inverted={false}
+                                    className="c4 c5"
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="neutral"
-                                    stroked={false}
+                                    skin=""
                                     style={Object {}}
                                     theme={
                                       Object {
@@ -31284,20 +30930,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <WithStyles(Icon)
-                                      center={false}
-                                      className="c2 c4 c5"
-                                      disabled={false}
-                                      full={false}
-                                      inverted={false}
-                                      onClick={[Function]}
+                                      className="c4 c5"
                                       size="medium"
-                                      stroked={false}
                                       style={
                                         Object {
-                                          "color": "neutral",
+                                          "color": "",
                                         }
                                       }
                                       theme={
@@ -31502,11 +31141,9 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        center={false}
-                                        className="c2 c4 c5"
+                                        className="c4 c5"
                                         classes={
                                           Object {
                                             "colorAction": "MuiIcon-colorAction-67",
@@ -31522,16 +31159,11 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                         color="inherit"
                                         component="span"
-                                        disabled={false}
                                         fontSize="default"
-                                        full={false}
-                                        inverted={false}
-                                        onClick={[Function]}
                                         size="medium"
-                                        stroked={false}
                                         style={
                                           Object {
-                                            "color": "neutral",
+                                            "color": "",
                                           }
                                         }
                                         theme={
@@ -31736,21 +31368,14 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <span
                                           aria-hidden="true"
-                                          center={false}
-                                          className="material-icons MuiIcon-root-64 c2 c4 c5"
-                                          disabled={false}
-                                          full={false}
-                                          inverted={false}
-                                          onClick={[Function]}
+                                          className="material-icons MuiIcon-root-64 c4 c5"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -31955,7 +31580,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           close
                                         </span>
