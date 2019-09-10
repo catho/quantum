@@ -25,19 +25,32 @@ storiesOf('Skeleton', module)
   .add('Button', () => (
     <>
       <Skeleton.Button width="100px" />
+      <br />
       <Skeleton.Button width="10%" />
+      <br />
       <Skeleton.Button size="xsmall" />
+      <br />
       <Skeleton.Button size="small" />
+      <br />
       <Skeleton.Button size="medium" />
+      <br />
       <Skeleton.Button size="large" />
     </>
   ))
   .add('Tag', () => (
     <>
       <Skeleton.Tag width="100px" />
+      <Skeleton.Tag width="100px" />
+      <br />
       <Skeleton.Tag width="10%" />
-      <Skeleton.Tag size="small" />
-      <Skeleton.Tag size="medium" />
-      <Skeleton.Tag size="large" />
+      <br />
+      <Skeleton.Tag width="200px" size="small" />
+      <Skeleton.Tag width="50px" size="small" />
+      <br />
+      <Skeleton.Tag width="200px" size="medium" />
+      <Skeleton.Tag width="50px" size="medium" />
+      <br />
+      <Skeleton.Tag width="200px" size="large" />
+      <Skeleton.Tag width="50px" size="large" />
     </>
   ));
