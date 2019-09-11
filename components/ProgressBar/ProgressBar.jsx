@@ -72,7 +72,8 @@ const ProgressBar = props => {
     subTitle,
     width,
     height,
-    progress,
+    progressText,
+    progressPercent,
     label,
     withLabel,
     skin,
@@ -98,11 +99,11 @@ const ProgressBar = props => {
         width={width}
         role="progressbar"
       >
-        <Content background={background} progress={progress} />
+        <Content background={background} progress={progressPercent} />
       </Bar>
       {withLabel && (
         <ProgressLabel textColor={textColor}>
-          {progress}
+          {progressText}
           {label}
         </ProgressLabel>
       )}
@@ -115,7 +116,8 @@ ProgressBar.defaultProps = {
   subTitle: null,
   width: '250px',
   height: '8px',
-  progress: 0,
+  progressText: 0,
+  progressPercent: 0,
   skin: 'primary',
   theme: {
     baseFontSize: 12,
@@ -139,7 +141,8 @@ ProgressBar.propTypes = {
   subTitle: PropTypes.string,
   width: PropTypes.string,
   height: PropTypes.string,
-  progress: PropTypes.number,
+  progressText: PropTypes.number,
+  progressPercent: PropTypes.number,
   label: PropTypes.string,
   withLabel: PropTypes.bool,
 };

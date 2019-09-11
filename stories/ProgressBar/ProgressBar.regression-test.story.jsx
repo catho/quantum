@@ -4,20 +4,31 @@ import { ProgressBar } from '../../components';
 
 const title = 'This is a title';
 const subTitle = 'Now this is a subtitle';
-const progress = 25;
+const progressPercent = 25;
+const progressText = 25;
 const label = '% percent to finish';
 
 storiesOf('ProgressBar', module)
   .add('neutral default', () => (
-    <ProgressBar skin="neutral" progress={progress} />
+    <ProgressBar
+      skin="neutral"
+      progressPercent={progressPercent}
+      progressText={progressText}
+    />
   ))
   .add('neutral with title', () => (
-    <ProgressBar skin="neutral" progress={progress} title={title} />
+    <ProgressBar
+      skin="neutral"
+      progressPercent={progressPercent}
+      progressText={progressText}
+      title={title}
+    />
   ))
   .add('neutral with title and subtitle', () => (
     <ProgressBar
       skin="neutral"
-      progress={progress}
+      progressPercent={progressPercent}
+      progressText={progressText}
       title={title}
       subTitle={subTitle}
     />
@@ -25,7 +36,8 @@ storiesOf('ProgressBar', module)
   .add('neutral with title and subtitle and label', () => (
     <ProgressBar
       skin="neutral"
-      progress={progress}
+      progressPercent={progressPercent}
+      progressText={progressText}
       title={title}
       subTitle={subTitle}
       label={label}
@@ -34,7 +46,8 @@ storiesOf('ProgressBar', module)
   .add('primary with title and subtitle and label', () => (
     <ProgressBar
       skin="primary"
-      progress={progress}
+      progressPercent={progressPercent}
+      progressText={progressText}
       title={title}
       subTitle={subTitle}
       label={label}
@@ -43,9 +56,20 @@ storiesOf('ProgressBar', module)
   .add('secondary with title and subtitle and label', () => (
     <ProgressBar
       skin="secondary"
-      progress={progress}
+      progressPercent={progressPercent}
+      progressText={progressText}
       title={title}
       subTitle={subTitle}
       label={label}
+    />
+  ))
+  .add('primary with differents values and percent', () => (
+    <ProgressBar
+      skin="primary"
+      progressPercent={progressPercent}
+      progressText={305}
+      title={title}
+      subTitle={subTitle}
+      label=" files loaded from 1220 total"
     />
   ));
