@@ -69,7 +69,7 @@ Item.defaultProps = {
   icon: '',
   bullet: '',
   children: null,
-  content: null,
+  content: '',
 };
 
 Item.propTypes = {
