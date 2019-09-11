@@ -1,40 +1,42 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Item from './Item';
 import Content from './Content';
 
 const content = 'content';
-const icon = 'icon';
+const icon = 'info';
 const header = 'header';
 const subheader = 'subheader';
 
 describe('<Item />', () => {
   it('Should match the snapshot', () => {
-    expect(shallow(<Item />)).toMatchSnapshot();
+    const wrapper = mount(<Item />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('render an Item with icon', () => {
-    const wrapper = shallow(<Item icon={icon} />);
+    const wrapper = mount(<Item icon={icon} />);
 
     expect(wrapper.find('ItemIcon')).toHaveLength(1);
   });
 
   it('render Content component', () => {
-    const wrapper = shallow(<Item content={content} />);
+    const wrapper = mount(<Item content={content} />);
 
     expect(wrapper.render().text()).toBe(content);
     expect(wrapper.find(Content)).toHaveLength(1);
   });
 
   it('accept any children as a content', () => {
-    const wrapper = shallow(<Item>{content}</Item>);
+    const wrapper = mount(<Item>{content}</Item>);
 
     expect(wrapper.render().text()).toBe(content);
     expect(wrapper.find(Content)).toHaveLength(0);
   });
 
   it('render Content, Header and SubHeader components', () => {
-    const wrapper = shallow(<Item content={{ header, subheader }} />);
+    const wrapper = mount(<Item content={{ header, subheader }} />);
 
     expect(wrapper.find(Content)).toHaveLength(1);
     expect(wrapper.render().text()).toContain(header);

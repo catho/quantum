@@ -1,12 +1,13 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import TabbedView from './TabbedView';
 import Tab from './Tab';
 
 describe('<TabbedView /> ', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      const component = shallow(
+      const component = mount(
         <TabbedView>
           <TabbedView.Tab title="example">
             <p>Example text</p>
@@ -14,12 +15,12 @@ describe('<TabbedView /> ', () => {
         </TabbedView>,
       );
 
-      expect(component).toMatchSnapshot();
+      expect(toJson(component)).toMatchSnapshot();
     });
   });
 
   describe('Active Tab', () => {
-    const component = shallow(
+    const component = mount(
       <TabbedView>
         <Tab title="Candidatos">Candidatos content</Tab>
         <Tab title="Empresas">Empresas content</Tab>
@@ -44,7 +45,7 @@ describe('<TabbedView /> ', () => {
     });
 
     it('should have pre selected Tab', () => {
-      const wrapper = shallow(
+      const wrapper = mount(
         <TabbedView activeTab="Educação">
           <Tab title="Candidatos">Candidatos content</Tab>
           <Tab title="Empresas">Empresas content</Tab>
