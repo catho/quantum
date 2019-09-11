@@ -39,7 +39,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -145,7 +145,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #1355d0;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
@@ -252,7 +252,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #999999;
   border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
@@ -359,7 +359,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #999999;
   border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
@@ -466,7 +466,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #ff2d4d;
   border: 2px solid #ff2d4d;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
@@ -573,7 +573,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #1355d0;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
@@ -695,7 +695,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #1355d0;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
@@ -817,7 +817,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #1355d0;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
