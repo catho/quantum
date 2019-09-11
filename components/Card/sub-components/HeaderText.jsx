@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const HeaderText = styled.div`
   flex-grow: 1;
-  width: 100%;
+  flex-basis: 0;
 `;
 
 HeaderText.displayName = 'Card.HeaderText';

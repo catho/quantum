@@ -69,7 +69,7 @@
     "all-contributors-cli": "^6.8.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.0.0",
     "babel-loader": "^8.0.0-beta.6",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -89,7 +89,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3",
     "husky": "^1.3.1",
-    "jest": "^23.6.0",
+    "jest": "^24.0.0",
     "jest-diff": "^24.0.0",
     "jest-styled-components": "^6.3.1",
     "lint-staged": "^8.1.0",
@@ -136,7 +136,9 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileMock.js",
       "\\.(css|less)$": "<rootDir>/styleMock.js"
     },
-    "setupTestFrameworkScriptFile": "<rootDir>/jest-config.js"
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-config.js"
+    ]
   },
   "config": {
     "commitizen": {
