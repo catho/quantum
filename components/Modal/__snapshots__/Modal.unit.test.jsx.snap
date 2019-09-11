@@ -6,6 +6,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .c7 {
@@ -445,6 +446,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .c7 {
@@ -713,10 +715,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             >
               <span
                 aria-hidden="true"
-                aria-label="close dialog"
-                class="material-icons MuiIcon-root-1 c10 c12 c13"
+                class="material-icons MuiIcon-root-1 c12 c13"
                 theme="[object Object]"
-                type="button"
               >
                 close
               </span>
@@ -992,10 +992,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 >
                   <span
                     aria-hidden="true"
-                    aria-label="close dialog"
-                    class="material-icons MuiIcon-root-1 c10 c12 c13"
+                    class="material-icons MuiIcon-root-1 c12 c13"
                     theme="[object Object]"
-                    type="button"
                   >
                     close
                   </span>
@@ -1540,7 +1538,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "isStatic": true,
                       "lastClassName": "c5",
                       "rules": Array [
-                        "flex-grow:1;",
+                        "flex-grow:1;width:100%;",
                       ],
                     },
                     "displayName": "Card.HeaderText",
@@ -2506,7 +2504,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "isStatic": true,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "flex-grow:1;",
+                                        "flex-grow:1;width:100%;",
                                       ],
                                     },
                                     "displayName": "Card.HeaderText",
@@ -4069,16 +4067,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   type="button"
                                 >
                                   <Button__ButtonIcon
-                                    aria-label="close dialog"
-                                    center={false}
-                                    className="c10"
-                                    disabled={false}
-                                    full={false}
                                     name="close"
-                                    onClick={[Function]}
                                     size="medium"
-                                    skin="neutral"
-                                    stroked={false}
                                     theme={
                                       Object {
                                         "breakpoints": Object {
@@ -4277,13 +4267,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                       }
                                     }
-                                    type="button"
                                   >
                                     <StyledComponent
-                                      aria-label="close dialog"
-                                      center={false}
-                                      className="c10"
-                                      disabled={false}
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
@@ -4309,12 +4294,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         }
                                       }
                                       forwardedRef={null}
-                                      full={false}
                                       name="close"
-                                      onClick={[Function]}
                                       size="medium"
-                                      skin="neutral"
-                                      stroked={false}
                                       theme={
                                         Object {
                                           "breakpoints": Object {
@@ -4513,19 +4494,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           },
                                         }
                                       }
-                                      type="button"
                                     >
                                       <Icon
-                                        aria-label="close dialog"
-                                        center={false}
-                                        className="c10 c12 c13"
-                                        disabled={false}
-                                        full={false}
+                                        className="c12 c13"
                                         name="close"
-                                        onClick={[Function]}
                                         size="medium"
-                                        skin="neutral"
-                                        stroked={false}
+                                        skin=""
                                         style={Object {}}
                                         theme={
                                           Object {
@@ -4725,20 +4699,13 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             },
                                           }
                                         }
-                                        type="button"
                                       >
                                         <WithStyles(Icon)
-                                          aria-label="close dialog"
-                                          center={false}
-                                          className="c10 c12 c13"
-                                          disabled={false}
-                                          full={false}
-                                          onClick={[Function]}
+                                          className="c12 c13"
                                           size="medium"
-                                          stroked={false}
                                           style={
                                             Object {
-                                              "color": "neutral",
+                                              "color": "",
                                             }
                                           }
                                           theme={
@@ -4939,12 +4906,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               },
                                             }
                                           }
-                                          type="button"
                                         >
                                           <Icon
-                                            aria-label="close dialog"
-                                            center={false}
-                                            className="c10 c12 c13"
+                                            className="c12 c13"
                                             classes={
                                               Object {
                                                 "colorAction": "MuiIcon-colorAction-4",
@@ -4960,15 +4924,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             }
                                             color="inherit"
                                             component="span"
-                                            disabled={false}
                                             fontSize="default"
-                                            full={false}
-                                            onClick={[Function]}
                                             size="medium"
-                                            stroked={false}
                                             style={
                                               Object {
-                                                "color": "neutral",
+                                                "color": "",
                                               }
                                             }
                                             theme={
@@ -5169,21 +5129,14 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                 },
                                               }
                                             }
-                                            type="button"
                                           >
                                             <span
                                               aria-hidden="true"
-                                              aria-label="close dialog"
-                                              center={false}
-                                              className="material-icons MuiIcon-root-1 c10 c12 c13"
-                                              disabled={false}
-                                              full={false}
-                                              onClick={[Function]}
+                                              className="material-icons MuiIcon-root-1 c12 c13"
                                               size="medium"
-                                              stroked={false}
                                               style={
                                                 Object {
-                                                  "color": "neutral",
+                                                  "color": "",
                                                 }
                                               }
                                               theme={
@@ -5384,7 +5337,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   },
                                                 }
                                               }
-                                              type="button"
                                             >
                                               close
                                             </span>

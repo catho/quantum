@@ -1169,19 +1169,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     >
       <span
         aria-hidden="true"
-        center={false}
-        checked={false}
-        className="material-icons MuiIcon-root-1 c2 c4 c5"
-        disabled={false}
-        error={false}
-        full={false}
-        htmlFor="checkbox-button-18"
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c4 c5"
         size="medium"
-        stroked={true}
         style={
           Object {
-            "color": "primary",
+            "color": "",
           }
         }
         theme={
@@ -1383,7 +1375,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
             },
           }
         }
-        type="button"
       >
         print
       </span>
@@ -1440,19 +1431,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     >
       <span
         aria-hidden="true"
-        center={false}
-        checked={false}
-        className="material-icons MuiIcon-root-1 c2 c4 c5"
-        disabled={false}
-        error={false}
-        full={false}
-        htmlFor="checkbox-button-20"
-        onClick={[Function]}
+        className="material-icons MuiIcon-root-1 c4 c5"
         size="medium"
-        stroked={true}
         style={
           Object {
-            "color": "primary",
+            "color": "",
           }
         }
         theme={
@@ -1654,7 +1637,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
             },
           }
         }
-        type="button"
       >
         face
       </span>

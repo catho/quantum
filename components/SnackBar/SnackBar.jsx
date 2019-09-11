@@ -283,7 +283,7 @@ SnackBar.propTypes = {
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
-    breakpoints: PropTypes.array,
+    breakpoints: PropTypes.object,
     spacing: PropTypes.object,
     components: PropTypes.shape({
       snackbar: PropTypes.object,
