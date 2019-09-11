@@ -30,11 +30,13 @@ export default {
     500: '#de0059',
   },
   BLACK: {
+    1000: '#000000',
     900: '#191919',
     700: '#4c4c4c',
     400: '#999999',
     200: '#cccccc',
     100: '#f2f2f2',
+    0: '#ffffff',
   },
   WHITE: '#FFFFFF',
   SHADOW: {

@@ -27,11 +27,11 @@ const CardWrapper = styled.article`
   ${({
     theme: {
       colors: {
-        neutral: { 100: neutral100 },
+        neutral: { 0: neutral0 },
       },
     },
   }) => `
-    background-color: ${neutral100};
+    background-color: ${neutral0};
   `}
 `;
 

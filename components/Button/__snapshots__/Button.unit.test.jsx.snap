@@ -28,7 +28,7 @@ exports[`Button component Should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -103,7 +103,7 @@ exports[`Button component when center prop is set 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -177,7 +177,7 @@ exports[`Button component when full prop is set 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -250,7 +250,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #999999;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -323,7 +323,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -396,7 +396,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #7ed321;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #7ed321;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -469,7 +469,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f09100;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #f09100;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -542,7 +542,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ff2d4d;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #ff2d4d;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -615,7 +615,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -688,7 +688,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -761,7 +761,7 @@ exports[`Button component when there is a type set should match secondary snapsh
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -838,7 +838,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -1022,7 +1022,9 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
             "900": "#ac001a",
           },
           "neutral": Object {
+            "0": "#ffffff",
             "100": "#f2f2f2",
+            "1000": "#000000",
             "300": "#cccccc",
             "500": "#999999",
             "700": "#4c4c4c",
@@ -1069,7 +1071,9 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
                   "900": "#ac001a",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1078,14 +1082,18 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
               },
               "neutral": Object {
                 "mainColor": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
                   "900": "#191919",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1101,7 +1109,9 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
                   "900": "#062ab3",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1117,7 +1127,9 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
                   "900": "#c8002e",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1133,7 +1145,9 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
                   "900": "#3c6510",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1149,7 +1163,9 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
                   "900": "#a36300",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1211,7 +1227,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -1395,7 +1411,9 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
             "900": "#ac001a",
           },
           "neutral": Object {
+            "0": "#ffffff",
             "100": "#f2f2f2",
+            "1000": "#000000",
             "300": "#cccccc",
             "500": "#999999",
             "700": "#4c4c4c",
@@ -1442,7 +1460,9 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
                   "900": "#ac001a",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1451,14 +1471,18 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
               },
               "neutral": Object {
                 "mainColor": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
                   "900": "#191919",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1474,7 +1498,9 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
                   "900": "#062ab3",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1490,7 +1516,9 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
                   "900": "#c8002e",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1506,7 +1534,9 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
                   "900": "#3c6510",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1522,7 +1552,9 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
                   "900": "#a36300",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1584,7 +1616,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -1768,7 +1800,9 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
             "900": "#ac001a",
           },
           "neutral": Object {
+            "0": "#ffffff",
             "100": "#f2f2f2",
+            "1000": "#000000",
             "300": "#cccccc",
             "500": "#999999",
             "700": "#4c4c4c",
@@ -1815,7 +1849,9 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
                   "900": "#ac001a",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1824,14 +1860,18 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
               },
               "neutral": Object {
                 "mainColor": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
                   "900": "#191919",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1847,7 +1887,9 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
                   "900": "#062ab3",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1863,7 +1905,9 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
                   "900": "#c8002e",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1879,7 +1923,9 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
                   "900": "#3c6510",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1895,7 +1941,9 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
                   "900": "#a36300",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -1957,7 +2005,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #1355d0;
-  color: #f2f2f2;
+  color: #ffffff;
   border: 2px solid #1355d0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -2141,7 +2189,9 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
             "900": "#ac001a",
           },
           "neutral": Object {
+            "0": "#ffffff",
             "100": "#f2f2f2",
+            "1000": "#000000",
             "300": "#cccccc",
             "500": "#999999",
             "700": "#4c4c4c",
@@ -2188,7 +2238,9 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
                   "900": "#ac001a",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -2197,14 +2249,18 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
               },
               "neutral": Object {
                 "mainColor": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
                   "900": "#191919",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -2220,7 +2276,9 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
                   "900": "#062ab3",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -2236,7 +2294,9 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
                   "900": "#c8002e",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -2252,7 +2312,9 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
                   "900": "#3c6510",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
@@ -2268,7 +2330,9 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
                   "900": "#a36300",
                 },
                 "text": Object {
+                  "0": "#ffffff",
                   "100": "#f2f2f2",
+                  "1000": "#000000",
                   "300": "#cccccc",
                   "500": "#999999",
                   "700": "#4c4c4c",
