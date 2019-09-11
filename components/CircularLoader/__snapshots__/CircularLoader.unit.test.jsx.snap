@@ -3,6 +3,12 @@
 exports[`CircularLoader component Should match the snapshot of a simple circular loader 1`] = `
 .c1 {
   overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   color: #1355d0;
 }
 
@@ -22,6 +28,7 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
 }
 
 .c0 {
+  position: relative;
   -webkit-animation: cZxgpV 1.4s linear infinite;
   animation: cZxgpV 1.4s linear infinite;
   height: 48px;

@@ -5,6 +5,10 @@ import { colors } from '../shared/theme';
 
 const Content = styled.svg`
   overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   ${({ color }) => `
     color: ${color};
@@ -50,6 +54,7 @@ const Circle = styled.circle`
 `;
 
 const Wrapper = styled.div`
+  position: relative;
   animation: ${circularRotate} 1.4s linear infinite;
 
   ${({ size }) => `
