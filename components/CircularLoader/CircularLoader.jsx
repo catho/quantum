@@ -1,7 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
-import { colors } from '../shared/theme';
+import { colors, gutter as defaultGutter } from '../shared/theme';
+
+const getSizePixels = (size, gutter) => {
+  const sizes = {
+    medium: gutter * 2, // 16
+    large: gutter * 3, // 24
+    xlarge: gutter * 4, // 32
+    xxlarge: gutter * 5, // 40
+    xxxlarge: gutter * 6, // 48
+  };
+
+  return sizes[size];
+};
 
 const Content = styled.svg`
   overflow: hidden;
@@ -57,9 +69,9 @@ const Wrapper = styled.div`
   position: relative;
   animation: ${circularRotate} 1.4s linear infinite;
 
-  ${({ size }) => `
-    height: ${size};
-    width: ${size}; 
+  ${({ size, gutter }) => `
+    height: ${getSizePixels(size, gutter)}px;
+    width: ${getSizePixels(size, gutter)}px; 
   `}
 `;
 
@@ -71,11 +83,12 @@ const CircularLoader = props => {
       colors: {
         [skin]: { 500: color },
       },
+      gutter,
     },
   } = props;
 
   return (
-    <Wrapper size={size} role="progressbar">
+    <Wrapper size={size} gutter={gutter} role="progressbar">
       <Content color={color} viewBox="22 22 44 44">
         <Circle color={color} />
       </Content>
@@ -84,18 +97,20 @@ const CircularLoader = props => {
 };
 
 CircularLoader.defaultProps = {
-  size: '48px',
+  size: 'medium',
   skin: 'primary',
   theme: {
     colors,
+    gutter: defaultGutter,
   },
 };
 
 CircularLoader.propTypes = {
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['medium', 'large', 'xlarge', 'xxlarge', 'xxxlarge']),
   skin: PropTypes.oneOf(['primary', 'secondary']),
   theme: PropTypes.shape({
     colors: PropTypes.object,
+    gutter: PropTypes.number,
   }),
 };
 
