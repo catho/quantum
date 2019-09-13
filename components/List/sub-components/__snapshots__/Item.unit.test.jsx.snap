@@ -1,197 +1,150 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Item /> Should match the snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <List.Item
-    bullet=""
-    content={null}
-    icon=""
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": <ForwardRef
-        bullet=""
-      >
-        
-        <List.Content
-          content={null}
-          header=""
-          subheader=""
-        />
-      </ForwardRef>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "bullet": "",
-        "children": Array [
-          "",
-          <List.Content
-            content={null}
-            header=""
-            subheader=""
-          />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        "",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": null,
-            "content": null,
-            "header": "",
-            "subheader": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Item__ListItem-culzzj-1",
-          "isStatic": false,
-          "rules": Array [
-            "display:flex;flex-direction:row;align-items:center;padding:10px 16px;",
-            [Function],
-            ";",
-          ],
-        },
-        "displayName": "ListItem",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Item__ListItem-culzzj-1",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-    },
-    "type": "li",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <ForwardRef
-          bullet=""
-        >
-          
-          <List.Content
-            content={null}
-            header=""
-            subheader=""
-          />
-        </ForwardRef>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "bullet": "",
-          "children": Array [
-            "",
-            <List.Content
-              content={null}
-              header=""
-              subheader=""
-            />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": null,
-              "content": null,
-              "header": "",
-              "subheader": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Item__ListItem-culzzj-1",
-            "isStatic": false,
-            "rules": Array [
-              "display:flex;flex-direction:row;align-items:center;padding:10px 16px;",
-              [Function],
-              ";",
-            ],
-          },
-          "displayName": "ListItem",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Item__ListItem-culzzj-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-      },
-      "type": "li",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    Symbol(enzyme.__providerValues__): undefined,
-  },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
+.c2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+<List.Item
+  bullet=""
+  content=""
+  icon=""
+>
+  <li>
+    <ListItem
+      bullet=""
+    >
+      <StyledComponent
+        bullet=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Item__ListItem-culzzj-1",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "display:flex;flex-direction:row;align-items:center;padding:10px 16px;",
+                [Function],
+                ";",
+              ],
+            },
+            "displayName": "ListItem",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Item__ListItem-culzzj-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <List.Content
+            content=""
+            header=""
+            subheader=""
+          >
+            <Content>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__ContentBox-sc-1fmj11p-0",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "display:flex;flex-direction:column;",
+                      ],
+                    },
+                    "displayName": "Content",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__ContentBox-sc-1fmj11p-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c1"
+                >
+                  <List.Header>
+                    <Header>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Header__Title-e8ruju-0",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "margin-top:4px;margin-bottom:4px;",
+                              ],
+                            },
+                            "displayName": "Header",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Header__Title-e8ruju-0",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="c2"
+                        />
+                      </StyledComponent>
+                    </Header>
+                  </List.Header>
+                </div>
+              </StyledComponent>
+            </Content>
+          </List.Content>
+        </div>
+      </StyledComponent>
+    </ListItem>
+  </li>
+</List.Item>
 `;

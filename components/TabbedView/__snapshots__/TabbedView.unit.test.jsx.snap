@@ -1,124 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <TabbedView
-    skin="default"
-  >
-    <Tab
-      title="example"
-    >
-      <p>
-        Example text
-      </p>
-    </Tab>
-  </TabbedView>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": Array [
-        <ForwardRef>
-          <ForwardRef
-            aria-controls="example-panel"
-            aria-selected={true}
-            id="example-tab"
-            onClick={[Function]}
-            skin="default"
-          >
-            example
-          </ForwardRef>
-        </ForwardRef>,
-        Array [
-          <RenderIf
-            conditional={true}
-          >
-            <div
-              aria-labelledby="example-tab"
-              id="example-panel"
-              role="tabpanel"
-            >
-              <p>
-                Example text
-              </p>
-            </div>
-          </RenderIf>,
-        ],
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [
-            <ForwardRef
-              aria-controls="example-panel"
-              aria-selected={true}
-              id="example-tab"
-              onClick={[Function]}
-              skin="default"
-            >
-              example
-            </ForwardRef>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "example/.0",
-            "nodeType": "function",
-            "props": Object {
-              "aria-controls": "example-panel",
-              "aria-selected": true,
-              "children": "example",
-              "id": "example-tab",
-              "onClick": [Function],
-              "skin": "default",
-            },
-            "ref": null,
-            "rendered": "example",
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [
-                Object {
-                  "role": "tab",
-                },
-              ],
-              "componentStyle": ComponentStyle {
-                "componentId": "TabbedView__NavItem-sc-131sgnr-1",
-                "isStatic": false,
-                "rules": Array [
-                  "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:9px 16px;transition:all 0.2s ease-in-out;text-align:center;text-transform:uppercase;",
-                  [Function],
-                ],
-              },
-              "displayName": "NavItem",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "TabbedView__NavItem-sc-131sgnr-1",
-              "target": "button",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            },
-          },
-        ],
-        "type": Object {
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+.c1 {
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 20px;
+  height: 48px;
+  line-height: 1.5;
+  min-width: 90px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: inherit;
+}
+
+.c1[aria-selected='true'] {
+  border-bottom: 4px solid #1355d0;
+  color: #1355d0;
+  cursor: default;
+  font-weight: bold;
+}
+
+.c1:hover {
+  background-color: #e5edfc;
+}
+
+<TabbedView
+  skin="default"
+>
+  <Navbar>
+    <StyledComponent
+      forwardedComponent={
+        Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [
             Object {
@@ -128,6 +66,7 @@ ShallowWrapper {
           "componentStyle": ComponentStyle {
             "componentId": "TabbedView__Navbar-sc-131sgnr-0",
             "isStatic": true,
+            "lastClassName": "c0",
             "rules": Array [
               "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;",
             ],
@@ -140,127 +79,27 @@ ShallowWrapper {
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
-        },
-      },
-      Object {
-        "instance": null,
-        "key": ".0",
-        "nodeType": "function",
-        "props": Object {
-          "children": <div
-            aria-labelledby="example-tab"
-            id="example-panel"
-            role="tabpanel"
-          >
-            <p>
-              Example text
-            </p>
-          </div>,
-          "conditional": true,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "aria-labelledby": "example-tab",
-            "children": <p>
-              Example text
-            </p>,
-            "id": "example-panel",
-            "role": "tabpanel",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Example text",
-            },
-            "ref": null,
-            "rendered": "Example text",
-            "type": "p",
-          },
-          "type": "div",
-        },
-        "type": [Function],
-      },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <ForwardRef>
-            <ForwardRef
-              aria-controls="example-panel"
-              aria-selected={true}
-              id="example-tab"
-              onClick={[Function]}
-              skin="default"
-            >
-              example
-            </ForwardRef>
-          </ForwardRef>,
-          Array [
-            <RenderIf
-              conditional={true}
-            >
-              <div
-                aria-labelledby="example-tab"
-                id="example-panel"
-                role="tabpanel"
-              >
-                <p>
-                  Example text
-                </p>
-              </div>
-            </RenderIf>,
-          ],
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": Array [
-              <ForwardRef
-                aria-controls="example-panel"
-                aria-selected={true}
-                id="example-tab"
-                onClick={[Function]}
-                skin="default"
-              >
-                example
-              </ForwardRef>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "example/.0",
-              "nodeType": "function",
-              "props": Object {
-                "aria-controls": "example-panel",
-                "aria-selected": true,
-                "children": "example",
-                "id": "example-tab",
-                "onClick": [Function],
-                "skin": "default",
-              },
-              "ref": null,
-              "rendered": "example",
-              "type": Object {
+        }
+      }
+      forwardedRef={null}
+    >
+      <nav
+        className="c0"
+        role="tablist"
+      >
+        <NavItem
+          aria-controls="example-panel"
+          aria-selected={true}
+          id="example-tab"
+          key="example/.0"
+          onClick={[Function]}
+          skin="default"
+        >
+          <StyledComponent
+            aria-controls="example-panel"
+            aria-selected={true}
+            forwardedComponent={
+              Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [
                   Object {
@@ -270,6 +109,7 @@ ShallowWrapper {
                 "componentStyle": ComponentStyle {
                   "componentId": "TabbedView__NavItem-sc-131sgnr-1",
                   "isStatic": false,
+                  "lastClassName": "c1",
                   "rules": Array [
                     "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;font-size:20px;height:48px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:9px 16px;transition:all 0.2s ease-in-out;text-align:center;text-transform:uppercase;",
                     [Function],
@@ -283,107 +123,41 @@ ShallowWrapper {
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-              },
-            },
-          ],
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [
-              Object {
-                "role": "tablist",
-              },
-            ],
-            "componentStyle": ComponentStyle {
-              "componentId": "TabbedView__Navbar-sc-131sgnr-0",
-              "isStatic": true,
-              "rules": Array [
-                "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;",
-              ],
-            },
-            "displayName": "Navbar",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "TabbedView__Navbar-sc-131sgnr-0",
-            "target": "nav",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
-        },
-        Object {
-          "instance": null,
-          "key": ".0",
-          "nodeType": "function",
-          "props": Object {
-            "children": <div
-              aria-labelledby="example-tab"
-              id="example-panel"
-              role="tabpanel"
+              }
+            }
+            forwardedRef={null}
+            id="example-tab"
+            onClick={[Function]}
+            skin="default"
+          >
+            <button
+              aria-controls="example-panel"
+              aria-selected={true}
+              className="c1"
+              id="example-tab"
+              onClick={[Function]}
+              role="tab"
             >
-              <p>
-                Example text
-              </p>
-            </div>,
-            "conditional": true,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "aria-labelledby": "example-tab",
-              "children": <p>
-                Example text
-              </p>,
-              "id": "example-panel",
-              "role": "tabpanel",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Example text",
-              },
-              "ref": null,
-              "rendered": "Example text",
-              "type": "p",
-            },
-            "type": "div",
-          },
-          "type": [Function],
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    Symbol(enzyme.__providerValues__): undefined,
-  },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
-}
+              example
+            </button>
+          </StyledComponent>
+        </NavItem>
+      </nav>
+    </StyledComponent>
+  </Navbar>
+  <RenderIf
+    conditional={true}
+    key=".0"
+  >
+    <div
+      aria-labelledby="example-tab"
+      id="example-panel"
+      role="tabpanel"
+    >
+      <p>
+        Example text
+      </p>
+    </div>
+  </RenderIf>
+</TabbedView>
 `;

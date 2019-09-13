@@ -1,173 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Content /> Should match the snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <List.Content
-    content={Object {}}
-    header=""
-    subheader=""
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": <React.Fragment>
-        <List.Header>
-          
-        </List.Header>
-        
-      </React.Fragment>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <List.Header>
-            
-          </List.Header>,
-          "",
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "",
-          },
-          "ref": null,
-          "rendered": "",
-          "type": [Function],
-        },
-        "",
-      ],
-      "type": Symbol(react.fragment),
-    },
-    "type": Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "Content__ContentBox-sc-1fmj11p-0",
-        "isStatic": true,
-        "rules": Array [
-          "display:flex;flex-direction:column;",
-        ],
-      },
-      "displayName": "Content",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "Content__ContentBox-sc-1fmj11p-0",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    },
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <React.Fragment>
-          <List.Header>
-            
-          </List.Header>
-          
-        </React.Fragment>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [
-            <List.Header>
-              
-            </List.Header>,
-            "",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "",
-            },
-            "ref": null,
-            "rendered": "",
-            "type": [Function],
-          },
-          "",
-        ],
-        "type": Symbol(react.fragment),
-      },
-      "type": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Content__ContentBox-sc-1fmj11p-0",
-          "isStatic": true,
-          "rules": Array [
-            "display:flex;flex-direction:column;",
-          ],
-        },
-        "displayName": "Content",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Content__ContentBox-sc-1fmj11p-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    Symbol(enzyme.__providerValues__): undefined,
-  },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
+.c1 {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<List.Content
+  content=""
+  header=""
+  subheader=""
+>
+  <Content>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Content__ContentBox-sc-1fmj11p-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:flex;flex-direction:column;",
+            ],
+          },
+          "displayName": "Content",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Content__ContentBox-sc-1fmj11p-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <List.Header>
+          <Header>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Header__Title-e8ruju-0",
+                    "isStatic": true,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "margin-top:4px;margin-bottom:4px;",
+                    ],
+                  },
+                  "displayName": "Header",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Header__Title-e8ruju-0",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="c1"
+              />
+            </StyledComponent>
+          </Header>
+        </List.Header>
+      </div>
+    </StyledComponent>
+  </Content>
+</List.Content>
 `;
