@@ -16,9 +16,9 @@ const getSizePixels = (size, gutter) => {
 };
 
 const Content = styled.svg`
+  left: 50%;
   overflow: hidden;
   position: absolute;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
@@ -50,15 +50,15 @@ const circularDash = keyframes`
 
 const Circle = styled.circle`
   animation: ${circularDash} 1.4s ease-in-out infinite;
-  stroke-dasharray: 80px, 200px;
-  stroke-dashoffset: 0px;
-  stroke: currentColor;
-  line-height: 1;
-  stroke-width: 3.6;
-  fill: none;
   cx: 44;
   cy: 44;
+  fill: none;
+  line-height: 1;
   r: 20.2;
+  stroke-dasharray: 80px, 200px;
+  stroke-dashoffset: 0px;
+  stroke-width: 3.6;
+  stroke: currentColor;
 
   ${({ color }) => `
     color: ${color};
@@ -66,8 +66,8 @@ const Circle = styled.circle`
 `;
 
 const Wrapper = styled.div`
-  position: relative;
   animation: ${circularRotate} 1.4s linear infinite;
+  position: relative;
 
   ${({ size, gutter }) => `
     height: ${getSizePixels(size, gutter)}px;
