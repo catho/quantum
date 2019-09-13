@@ -5,26 +5,26 @@ import { components } from '../shared/theme';
 import { hexToRgba } from '../../shared/helpers';
 
 const Bar = styled.div`
-  position: relative;
-  overflow: hidden;
   border-radius: 8px;
   margin-top: 8px;
+  overflow: hidden;
+  position: relative;
 
   ${({ height, width, background }) => `
+    background-color: ${hexToRgba(background, 0.39)};
     height: ${height};
     width: ${width}; 
-    background-color: ${hexToRgba(background, 0.39)};
   `}
 `;
 
 const Content = styled.div`
-  transition: width 0.4s linear;
+  border-radius: 8px;
   display: inline-block;
   height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  border-radius: 8px;
+  transition: width 0.4s linear;
 
   ${({ background, progress }) => `
     background-color: ${background};
@@ -35,11 +35,11 @@ const Content = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  font-style: normal;
+  font-weight: normal;
   letter-spacing: 0.18px;
+  line-height: 1.5;
 
   ${({ baseFontSize, textColor }) => `
     color: ${textColor};

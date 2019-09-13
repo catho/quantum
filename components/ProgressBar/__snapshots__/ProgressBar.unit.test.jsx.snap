@@ -2,24 +2,24 @@
 
 exports[`ProgressBar component Should match the snapshot of a progressbar with title and subtitle 1`] = `
 .c3 {
-  position: relative;
-  overflow: hidden;
   border-radius: 8px;
   margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
   height: 8px;
   width: 250px;
-  background-color: rgba(19,85,208,0.39);
 }
 
 .c4 {
-  -webkit-transition: width 0.4s linear;
-  transition: width 0.4s linear;
+  border-radius: 8px;
   display: inline-block;
   height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  border-radius: 8px;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
   background-color: #1355d0;
   width: 0%;
 }
@@ -32,14 +32,14 @@ exports[`ProgressBar component Should match the snapshot of a progressbar with t
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  font-style: normal;
+  font-weight: normal;
   -webkit-letter-spacing: 0.18px;
   -moz-letter-spacing: 0.18px;
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
+  line-height: 1.5;
   color: #4c4c4c;
   font-size: 12px;
 }
@@ -91,24 +91,24 @@ exports[`ProgressBar component Should match the snapshot of a progressbar with t
 
 exports[`ProgressBar component Should match the snapshot of a progressbar with title and subtitle and value 1`] = `
 .c3 {
-  position: relative;
-  overflow: hidden;
   border-radius: 8px;
   margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
   height: 8px;
   width: 250px;
-  background-color: rgba(19,85,208,0.39);
 }
 
 .c4 {
-  -webkit-transition: width 0.4s linear;
-  transition: width 0.4s linear;
+  border-radius: 8px;
   display: inline-block;
   height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  border-radius: 8px;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
   background-color: #1355d0;
   width: 30%;
 }
@@ -121,14 +121,14 @@ exports[`ProgressBar component Should match the snapshot of a progressbar with t
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  font-style: normal;
+  font-weight: normal;
   -webkit-letter-spacing: 0.18px;
   -moz-letter-spacing: 0.18px;
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
+  line-height: 1.5;
   color: #4c4c4c;
   font-size: 12px;
 }
@@ -180,24 +180,24 @@ exports[`ProgressBar component Should match the snapshot of a progressbar with t
 
 exports[`ProgressBar component Should match the snapshot of a simple progress bar 1`] = `
 .c1 {
-  position: relative;
-  overflow: hidden;
   border-radius: 8px;
   margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
   height: 8px;
   width: 250px;
-  background-color: rgba(19,85,208,0.39);
 }
 
 .c2 {
-  -webkit-transition: width 0.4s linear;
-  transition: width 0.4s linear;
+  border-radius: 8px;
   display: inline-block;
   height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  border-radius: 8px;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
   background-color: #1355d0;
   width: 0%;
 }
@@ -210,14 +210,14 @@ exports[`ProgressBar component Should match the snapshot of a simple progress ba
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  font-style: normal;
+  font-weight: normal;
   -webkit-letter-spacing: 0.18px;
   -moz-letter-spacing: 0.18px;
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
+  line-height: 1.5;
   color: #4c4c4c;
   font-size: 12px;
 }
