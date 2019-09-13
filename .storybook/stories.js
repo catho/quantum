@@ -31,6 +31,8 @@ export default [
 
   // Skeletons
   'Skeleton',
+  // Loaders
+  'Loaders',
 
   // Tooltip
   'Tooltip',
