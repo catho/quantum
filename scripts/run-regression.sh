@@ -12,5 +12,3 @@ done
 echo "http://localhost:9006/ up and running!"
 
 yarn test:regression
-
-fuser -k 9006/tcp
