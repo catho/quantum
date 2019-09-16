@@ -40,24 +40,6 @@ const Wrapper = styled.div`
   font-weight: normal;
   letter-spacing: 0.18px;
   line-height: 1.5;
-
-  ${({ baseFontSize, textColor }) => `
-    color: ${textColor};
-    font-size: ${baseFontSize}px;
-  `}
-`;
-
-const Title = styled.span`
-  font-weight: bold;
-  ${({ titleColor }) => `
-    color: ${titleColor};
-  `}
-`;
-
-const SubTitle = styled.span`
-  ${({ background }) => `
-    color: ${background};
-  `}
 `;
 
 const ProgressLabel = styled.span`
@@ -68,31 +50,27 @@ const ProgressLabel = styled.span`
 
 const ProgressBar = props => {
   const {
-    title,
-    subTitle,
     width,
     height,
     progressText,
     progressPercent,
     label,
-    withLabel,
     skin,
     theme: {
-      baseFontSize,
       components: {
         progressBar: {
           skins: {
-            [skin]: { background, titleColor, textColor },
+            [skin]: { background, textColor },
           },
         },
       },
     },
   } = props;
 
+  const progressLabel = progressText === null ? progressPercent : progressText;
+
   return (
-    <Wrapper baseFontSize={baseFontSize} textColor={textColor}>
-      {title && <Title titleColor={titleColor}>{title}</Title>}
-      {subTitle && <SubTitle background={background}>{subTitle}</SubTitle>}
+    <Wrapper>
       <Bar
         background={background}
         height={height}
@@ -101,50 +79,40 @@ const ProgressBar = props => {
       >
         <Content background={background} progress={progressPercent} />
       </Bar>
-      {withLabel && (
-        <ProgressLabel textColor={textColor}>
-          {progressText}
-          {label}
-        </ProgressLabel>
-      )}
+      <ProgressLabel textColor={textColor}>
+        {progressLabel}
+        {label}
+      </ProgressLabel>
     </Wrapper>
   );
 };
 
 ProgressBar.defaultProps = {
-  title: null,
-  subTitle: null,
   width: '250px',
   height: '8px',
-  progressText: 0,
+  progressText: null,
   progressPercent: 0,
   skin: 'primary',
   theme: {
-    baseFontSize: 12,
     components: {
       progressBar: components.progressBar,
     },
   },
   label: '%',
-  withLabel: true,
 };
 
 ProgressBar.propTypes = {
   skin: PropTypes.oneOf(['neutral', 'primary', 'secondary']),
   theme: PropTypes.shape({
-    baseFontSize: PropTypes.number,
     components: PropTypes.shape({
       progressBar: PropTypes.object,
     }),
   }),
-  title: PropTypes.string,
-  subTitle: PropTypes.string,
   width: PropTypes.string,
   height: PropTypes.string,
   progressText: PropTypes.number,
   progressPercent: PropTypes.number,
   label: PropTypes.string,
-  withLabel: PropTypes.bool,
 };
 
 export default ProgressBar;
