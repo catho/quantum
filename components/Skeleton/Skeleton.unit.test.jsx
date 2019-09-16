@@ -9,22 +9,22 @@ describe('Skeleton component', () => {
   });
 
   it('Should match the snapshot of a text skeleton', () => {
-    const simpleSkeleton = <Skeleton.Text />;
-    expect(renderer.create(simpleSkeleton).toJSON()).toMatchSnapshot();
+    const textSkeleton = <Skeleton.Text />;
+    expect(renderer.create(textSkeleton).toJSON()).toMatchSnapshot();
   });
 
   it('Should match the snapshot of a circular skeleton', () => {
-    const simpleSkeleton = <Skeleton.Circle height="56px" width="56px" />;
-    expect(renderer.create(simpleSkeleton).toJSON()).toMatchSnapshot();
+    const circularSkeleton = <Skeleton.Circle height="56px" width="56px" />;
+    expect(renderer.create(circularSkeleton).toJSON()).toMatchSnapshot();
   });
 
   it('Should match the snapshot of a Button component skeleton', () => {
-    const simpleSkeleton = <Skeleton.Button width="100px" />;
-    expect(renderer.create(simpleSkeleton).toJSON()).toMatchSnapshot();
+    const buttonSkeleton = <Skeleton.Button width="100px" />;
+    expect(renderer.create(buttonSkeleton).toJSON()).toMatchSnapshot();
   });
 
   it('Should match the snapshot of a Tag component loader', () => {
-    const simpleSkeleton = <Skeleton.Tag width="100px" />;
-    expect(renderer.create(simpleSkeleton).toJSON()).toMatchSnapshot();
+    const tagSkeleton = <Skeleton.Tag width="100px" />;
+    expect(renderer.create(tagSkeleton).toJSON()).toMatchSnapshot();
   });
 });

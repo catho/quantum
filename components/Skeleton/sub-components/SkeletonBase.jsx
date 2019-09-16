@@ -13,23 +13,36 @@ const skeletonAnimation = keyframes`
   }
 `;
 
+const setSize = ({ height, width }) => {
+  const sizes = [];
+  if (height !== null) {
+    sizes.push(`height: ${height};`);
+  }
+  if (width !== null) {
+    sizes.push(`width: ${width};`);
+  }
+  return sizes.join('');
+};
+
 const SkeletonBase = styled.div`
   background-color: rgba(0, 0, 0, 0.08);
   animation: ${skeletonAnimation} 1.5s ease-in-out infinite;
   display: inline-block;
   box-sizing: border-box;
 
-  ${({ height, width }) => `
-    height: ${height};
-    width: ${width};
-  `}
+  ${({ height, width }) => setSize({ height, width })}
 `;
 
 SkeletonBase.displayName = 'SkeletonBase';
 
 SkeletonBase.propTypes = {
-  width: PropTypes.isRequired,
-  height: PropTypes.isRequired,
+  width: PropTypes.string,
+  height: PropTypes.string,
+};
+
+SkeletonBase.defaultProps = {
+  width: null,
+  height: null,
 };
 
 export default SkeletonBase;

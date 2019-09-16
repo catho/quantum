@@ -7,7 +7,6 @@ exports[`Skeleton component Should match the snapshot of a Button component skel
   animation: bzcbYv 1.5s ease-in-out infinite;
   display: inline-block;
   box-sizing: border-box;
-  height: 14px;
   width: 100px;
   border-radius: 4px;
   height: 40px;
@@ -15,9 +14,8 @@ exports[`Skeleton component Should match the snapshot of a Button component skel
 
 <div
   className="c0"
-  height="14px"
+  height={null}
   size="medium"
-  type="Button"
   width="100px"
 />
 `;
@@ -29,7 +27,6 @@ exports[`Skeleton component Should match the snapshot of a Tag component loader 
   animation: bzcbYv 1.5s ease-in-out infinite;
   display: inline-block;
   box-sizing: border-box;
-  height: 14px;
   width: 100px;
   border-radius: 8px;
   margin-right: 8px;
@@ -38,9 +35,8 @@ exports[`Skeleton component Should match the snapshot of a Tag component loader 
 
 <div
   className="c0"
-  height="14px"
+  height={null}
   size="medium"
-  type="Tag"
   width="100px"
 />
 `;
@@ -60,8 +56,6 @@ exports[`Skeleton component Should match the snapshot of a circular skeleton 1`]
 <div
   className="c0"
   height="56px"
-  size="medium"
-  type="circle"
   width="56px"
 />
 `;
@@ -80,8 +74,6 @@ exports[`Skeleton component Should match the snapshot of a simple skeleton 1`] =
 <div
   className="c0"
   height="14px"
-  size="medium"
-  type="rect"
   width="100%"
 />
 `;
@@ -101,8 +93,6 @@ exports[`Skeleton component Should match the snapshot of a text skeleton 1`] = `
 <div
   className="c0"
   height="14px"
-  size="medium"
-  type="text"
   width="100%"
 />
 `;

@@ -22,7 +22,8 @@ const tabExample = (
   </Tab>
 );
 
-const description = 'A component that simulate another while it is loading.';
+const description =
+  'A component that replaces others while they are loading or not ready to render.';
 
 storiesOf('Skeletons', module).add('Skeleton', () => (
   <AutoExample

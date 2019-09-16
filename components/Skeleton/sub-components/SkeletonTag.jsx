@@ -14,14 +14,14 @@ const SkeletonTag = styled(SkeletonBase)`
       spacing: { xxsmall },
     },
   }) => {
-    const paddings = xxsmall * 2;
+    const padding = xxsmall * 2;
     const heights = {
       small: baseFontSize * 0.875,
       medium: baseFontSize * 1.125,
       large: baseFontSize * 1.25,
     };
 
-    return `height: ${heights[size] + paddings}px;`;
+    return `height: ${heights[size] + padding}px;`;
   }}
 `;
 

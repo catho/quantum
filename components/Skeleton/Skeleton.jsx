@@ -11,15 +11,41 @@ import {
 } from './sub-components';
 
 const Skeleton = props => {
-  const { type } = props;
+  const { type, size, theme, height, width } = props;
+
+  const rectProps = {
+    height,
+    width,
+  };
+  const circleProps = {
+    height,
+    width,
+  };
+
+  const textProps = {
+    height,
+    width,
+  };
+
+  const buttonProps = {
+    size,
+    theme,
+    width,
+  };
+
+  const tagProps = {
+    size,
+    theme,
+    width,
+  };
 
   return (
     <>
-      {type === 'rect' && <SkeletonRect {...props} />}
-      {type === 'circle' && <SkeletonCircle {...props} />}
-      {type === 'text' && <SkeletonText {...props} />}
-      {type === 'Button' && <SkeletonButton {...props} />}
-      {type === 'Tag' && <SkeletonTag {...props} />}
+      {type === 'rect' && <SkeletonRect {...rectProps} />}
+      {type === 'circle' && <SkeletonCircle {...circleProps} />}
+      {type === 'text' && <SkeletonText {...textProps} />}
+      {type === 'Button' && <SkeletonButton {...buttonProps} />}
+      {type === 'Tag' && <SkeletonTag {...tagProps} />}
     </>
   );
 };
