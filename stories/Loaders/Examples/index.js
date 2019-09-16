@@ -1,6 +1,4 @@
 import ProgressBarExample from './ProgressBar';
+import CircularLoaderExample from './CircularLoader';
 
-export {
-  // eslint-disable-next-line import/prefer-default-export
-  ProgressBarExample,
-};
+export { ProgressBarExample, CircularLoaderExample };
