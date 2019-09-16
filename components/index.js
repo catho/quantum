@@ -22,6 +22,7 @@ import Toggle from './Toggle';
 import Tooltip from './Tooltip';
 import Modal from './Modal';
 import Skeleton from './Skeleton';
+import CircularLoader from './CircularLoader';
 import Pagination from './Pagination';
 
 export {
@@ -43,6 +44,7 @@ export {
   IconFont,
   Input,
   Skeleton,
+  CircularLoader,
   Popover,
   RadioGroup,
   Row,

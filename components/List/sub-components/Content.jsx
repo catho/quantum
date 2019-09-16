@@ -13,35 +13,42 @@ const ContentBox = styled.div`
 ContentBox.displayName = 'Content';
 
 class Content extends React.Component {
-  _renderContent = content => {
-    const { header: propsHeader, subheader: propsSubHeader } = this.props;
+  _renderContent = ({ content, header, subheader }) => {
+    const renderHeader =
+      typeof content !== 'string' && content.header ? content.header : header;
+    const renderSubHeader =
+      typeof content !== 'string' && content.subheader
+        ? content.subheader
+        : subheader;
 
-    if (typeof content === 'string') {
+    if (typeof content === 'string' && content.length > 0) {
       return <Header>{content}</Header>;
     }
 
-    const { header = propsHeader, subheader = propsSubHeader } = content;
-
     return (
       <React.Fragment>
-        <Header>{header}</Header>
+        <Header>{renderHeader}</Header>
 
-        {subheader && <SubHeader>{subheader}</SubHeader>}
+        {renderSubHeader && <SubHeader>{renderSubHeader}</SubHeader>}
       </React.Fragment>
     );
   };
 
   render() {
-    const { content, children } = this.props;
+    const { content, children, header, subheader } = this.props;
 
-    return <ContentBox>{children || this._renderContent(content)}</ContentBox>;
+    return (
+      <ContentBox>
+        {children || this._renderContent({ content, header, subheader })}
+      </ContentBox>
+    );
   }
 }
 
 Content.defaultProps = {
   subheader: '',
   header: '',
-  content: {},
+  content: '',
   children: null,
 };
 
