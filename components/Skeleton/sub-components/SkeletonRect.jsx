@@ -5,8 +5,4 @@ const SkeletonRect = styled(SkeletonBase)``;
 
 SkeletonRect.displayName = 'SkeletonRect';
 
-SkeletonRect.propTypes = {};
-
-SkeletonRect.defaultProps = {};
-
 export default SkeletonRect;

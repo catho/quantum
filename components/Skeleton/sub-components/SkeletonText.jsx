@@ -7,8 +7,4 @@ const SkeletonText = styled(SkeletonBase)`
 
 SkeletonText.displayName = 'SkeletonText';
 
-SkeletonText.propTypes = {};
-
-SkeletonText.defaultProps = {};
-
 export default SkeletonText;

@@ -6,6 +6,5 @@ const SkeletonCircle = styled(SkeletonBase)`
 `;
 
 SkeletonCircle.displayName = 'SkeletonCircle';
-SkeletonCircle.propTypes = {};
 
 export default SkeletonCircle;
