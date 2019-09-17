@@ -44,8 +44,8 @@ const Skeleton = props => {
       {type === 'rect' && <SkeletonRect {...rectProps} />}
       {type === 'circle' && <SkeletonCircle {...circleProps} />}
       {type === 'text' && <SkeletonText {...textProps} />}
-      {type === 'Button' && <SkeletonButton {...buttonProps} />}
-      {type === 'Tag' && <SkeletonTag {...tagProps} />}
+      {type === 'button' && <SkeletonButton {...buttonProps} />}
+      {type === 'tag' && <SkeletonTag {...tagProps} />}
     </>
   );
 };
@@ -62,10 +62,14 @@ Skeleton.defaultProps = {
 };
 
 Skeleton.propTypes = {
-  type: PropTypes.oneOf(['rect', 'circle', 'text', 'Button', 'Tag']),
+  /* * Sets the component behavior */
+  type: PropTypes.oneOf(['rect', 'circle', 'text', 'button', 'tag']),
   width: PropTypes.string,
+  /* * Will affect only types that not uses `type` */
   height: PropTypes.string,
+  /* * Will affect only `Tag` and `Button` types.  */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
+  /* * Used only for themification.  */
   theme: PropTypes.shape({
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
