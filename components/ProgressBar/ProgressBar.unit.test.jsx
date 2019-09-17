@@ -7,7 +7,11 @@ describe('ProgressBar component', () => {
     const simpleProgressBar = <ProgressBar />;
     expect(renderer.create(simpleProgressBar).toJSON()).toMatchSnapshot();
   });
-  it('Should match the snapshot of a progressbar in progress', () => {
+  it('Should match the snapshot of a progress bar in progress with same progressText', () => {
+    const simpleProgressBar = <ProgressBar progressPercent={30} />;
+    expect(renderer.create(simpleProgressBar).toJSON()).toMatchSnapshot();
+  });
+  it('Should match the snapshot of a progress bar in progress with same progressText', () => {
     const simpleProgressBar = (
       <ProgressBar progressPercent={30} progressText={30} />
     );

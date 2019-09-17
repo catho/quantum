@@ -16,10 +16,10 @@ const descriptions = {
   circularLoader: `CircularLoaders are used to give the user the impression of loading while a component is not ready to be displayed.`,
 };
 
-const renderExampleTab = examples => (
+const renderExampleTab = componentExamples => (
   <Tab title="Example">
     <Container>
-      {examples.map(example => (
+      {componentExamples.map(example => (
         <Row key={example.code}>
           <Col xsmall={2} small={4} medium={6}>
             <SimpleHighlight>{example.code}</SimpleHighlight>
