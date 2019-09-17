@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 import ProgressBar from './ProgressBar';
 
 describe('ProgressBar component', () => {
@@ -36,5 +37,13 @@ describe('ProgressBar component', () => {
       />
     );
     expect(renderer.create(simpleProgressBar).toJSON()).toMatchSnapshot();
+  });
+
+  it('should the label match with de props and shows correctly', () => {
+    const label = ' percent processed';
+    const component = mount(<ProgressBar progressPercent={30} label={label} />);
+    const progressBarLabel = component.find('ProgressLabel').text();
+    const labelShouldBe = `30${label}`;
+    expect(progressBarLabel).toBe(labelShouldBe);
   });
 });

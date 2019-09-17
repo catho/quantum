@@ -48,6 +48,8 @@ const ProgressLabel = styled.span`
   `}
 `;
 
+ProgressLabel.displayName = 'ProgressLabel';
+
 const ProgressBar = props => {
   const {
     width,
