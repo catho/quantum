@@ -29,9 +29,6 @@ export default [
   'Slider',
   'TextArea',
 
-  // Skeletons
-  'Skeleton',
-
   // Loaders
   'Loaders',
 
