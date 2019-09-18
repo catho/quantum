@@ -62,14 +62,14 @@ Skeleton.defaultProps = {
 };
 
 Skeleton.propTypes = {
-  /* * Sets the component behavior */
+  /** Sets the component behavior */
   type: PropTypes.oneOf(['rect', 'circle', 'text', 'button', 'tag']),
   width: PropTypes.string,
-  /* * Will affect only types that not uses `type` */
+  /** Will affect only types that not uses the prop `size` */
   height: PropTypes.string,
-  /* * Will affect only `Tag` and `Button` types.  */
+  /** Will affect only `Tag` and `Button` types.  */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
-  /* * Used only for themification.  */
+  /** Used only for themification.  */
   theme: PropTypes.shape({
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
