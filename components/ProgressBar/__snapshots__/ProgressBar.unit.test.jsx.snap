@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar component Should match the snapshot of a progress bar in progress with same progressText 1`] = `
+.c1 {
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
+  height: 8px;
+  width: 250px;
+}
+
+.c2 {
+  border-radius: 8px;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  background-color: #1355d0;
+  width: 30%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: 0.18px;
+  -moz-letter-spacing: 0.18px;
+  -ms-letter-spacing: 0.18px;
+  letter-spacing: 0.18px;
+  line-height: 1.5;
+}
+
+.c3 {
+  color: #4c4c4c;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    height="8px"
+    role="progressbar"
+    width="250px"
+  >
+    <div
+      className="c2"
+    />
+  </div>
+  <span
+    className="c3"
+  >
+    30
+    %
+  </span>
+</div>
+`;
+
+exports[`ProgressBar component Should match the snapshot of a progress bar in progress with same progressText 2`] = `
+.c1 {
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
+  height: 8px;
+  width: 250px;
+}
+
+.c2 {
+  border-radius: 8px;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  background-color: #1355d0;
+  width: 30%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: 0.18px;
+  -moz-letter-spacing: 0.18px;
+  -ms-letter-spacing: 0.18px;
+  letter-spacing: 0.18px;
+  line-height: 1.5;
+}
+
+.c3 {
+  color: #4c4c4c;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    height="8px"
+    role="progressbar"
+    width="250px"
+  >
+    <div
+      className="c2"
+    />
+  </div>
+  <span
+    className="c3"
+  >
+    30
+    %
+  </span>
+</div>
+`;
+
+exports[`ProgressBar component Should match the snapshot of a progressbar in progress with custom label 1`] = `
+.c1 {
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
+  height: 8px;
+  width: 250px;
+}
+
+.c2 {
+  border-radius: 8px;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  background-color: #1355d0;
+  width: 30%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: 0.18px;
+  -moz-letter-spacing: 0.18px;
+  -ms-letter-spacing: 0.18px;
+  letter-spacing: 0.18px;
+  line-height: 1.5;
+}
+
+.c3 {
+  color: #4c4c4c;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    height="8px"
+    role="progressbar"
+    width="250px"
+  >
+    <div
+      className="c2"
+    />
+  </div>
+  <span
+    className="c3"
+  >
+    30
+     percent loaded
+  </span>
+</div>
+`;
+
+exports[`ProgressBar component Should match the snapshot of a progressbar in progress with custom label and progress text 1`] = `
+.c1 {
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
+  height: 8px;
+  width: 250px;
+}
+
+.c2 {
+  border-radius: 8px;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  background-color: #1355d0;
+  width: 30%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: 0.18px;
+  -moz-letter-spacing: 0.18px;
+  -ms-letter-spacing: 0.18px;
+  letter-spacing: 0.18px;
+  line-height: 1.5;
+}
+
+.c3 {
+  color: #4c4c4c;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    height="8px"
+    role="progressbar"
+    width="250px"
+  >
+    <div
+      className="c2"
+    />
+  </div>
+  <span
+    className="c3"
+  >
+    300
+     files loaded from 1000
+  </span>
+</div>
+`;
+
+exports[`ProgressBar component Should match the snapshot of a simple progress bar 1`] = `
+.c1 {
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(19,85,208,0.39);
+  height: 8px;
+  width: 250px;
+}
+
+.c2 {
+  border-radius: 8px;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  background-color: #1355d0;
+  width: 0%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: 0.18px;
+  -moz-letter-spacing: 0.18px;
+  -ms-letter-spacing: 0.18px;
+  letter-spacing: 0.18px;
+  line-height: 1.5;
+}
+
+.c3 {
+  color: #4c4c4c;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    height="8px"
+    role="progressbar"
+    width="250px"
+  >
+    <div
+      className="c2"
+    />
+  </div>
+  <span
+    className="c3"
+  >
+    0
+    %
+  </span>
+</div>
+`;
