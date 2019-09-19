@@ -1,13 +1,8 @@
-## Changelog
-- change a
-- change b
-
 ## Description
 Put the description of the task here.
 
 ## Setup
 to view the component behavior, run `yarn storybook`
-
 
 ## Review guide
 - [] Coverage (coverage status should not regress)\
