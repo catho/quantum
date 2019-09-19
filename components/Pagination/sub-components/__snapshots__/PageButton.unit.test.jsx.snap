@@ -39,9 +39,9 @@ exports[`<PageButton /> Snapshot should match snapshot 1`] = `
 
 .c0:hover,
 .c0:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 <a
@@ -80,8 +80,8 @@ exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;

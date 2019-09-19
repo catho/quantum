@@ -35,7 +35,7 @@ const TextInput = styled.input`
   }) => {
     const {
       colors: {
-        primary: { 500: primaryColor },
+        primary: { 700: primaryColor },
         error: { 100: error100, 500: error500 },
         neutral: {
           0: neutral0,

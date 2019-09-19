@@ -50,15 +50,15 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
 }
 
 .c4 .rc-slider-handle {
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c4 .rc-slider-rail {
-  background-color: #e5edfc;
+  background-color: #E5EDFC;
 }
 
 .c4 .rc-slider-track {
-  background-color: rgba(14,68,196,0.5);
+  background-color: rgba(137,170,231,0.5);
 }
 
 .c4 .rc-slider-handle:active,
@@ -276,15 +276,15 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 }
 
 .c4 .rc-slider-handle {
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c4 .rc-slider-rail {
-  background-color: #e5edfc;
+  background-color: #E5EDFC;
 }
 
 .c4 .rc-slider-track {
-  background-color: rgba(14,68,196,0.5);
+  background-color: rgba(137,170,231,0.5);
 }
 
 .c4 .rc-slider-handle:active,
@@ -502,15 +502,15 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
 }
 
 .c4 .rc-slider-handle {
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c4 .rc-slider-rail {
-  background-color: #e5edfc;
+  background-color: #E5EDFC;
 }
 
 .c4 .rc-slider-track {
-  background-color: rgba(14,68,196,0.5);
+  background-color: rgba(137,170,231,0.5);
 }
 
 .c4 .rc-slider-handle:active,

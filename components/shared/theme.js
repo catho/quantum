@@ -22,10 +22,10 @@ const breakpoints = {
 
 const colors = {
   primary: {
-    100: '#e5edfc',
-    300: '#5a88de',
-    500: '#1355d0',
-    700: '#0e44c4',
+    100: '#E5EDFC',
+    300: '#89AAE7',
+    500: '#0CC0EA',
+    700: '#1250C4',
     900: '#002F7B',
   },
   secondary: {
@@ -118,7 +118,7 @@ const components = {
         text: colors.neutral[700],
       },
       primary: {
-        background: colors.primary[500],
+        background: colors.primary[700],
         text: colors.neutral[100],
       },
       error: {
@@ -140,7 +140,7 @@ const components = {
       },
       primary: {
         background: colors.primary[100],
-        text: colors.primary[500],
+        text: colors.primary[700],
       },
       success: {
         background: colors.success[100],
@@ -185,7 +185,7 @@ const components = {
         text: colors.neutral[100],
       },
       primary: {
-        background: colors.primary[700],
+        background: colors.primary[900],
         text: colors.neutral[100],
       },
       success: {
@@ -211,7 +211,7 @@ const components = {
         text: colors.neutral[900],
       },
       primary: {
-        icon: colors.primary[500],
+        icon: colors.primary[700],
         background: colors.primary[100],
         text: colors.primary[900],
       },
@@ -242,7 +242,7 @@ const components = {
       },
       primary: {
         titleColor: colors.neutral[1000],
-        background: colors.primary[500],
+        background: colors.primary[700],
         textColor: colors.neutral[700],
       },
       secondary: {

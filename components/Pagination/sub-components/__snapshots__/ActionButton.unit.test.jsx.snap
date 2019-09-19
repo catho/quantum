@@ -28,9 +28,9 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 
 .c0[aria-disabled=false]:hover,
 .c0[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 <a
@@ -69,9 +69,9 @@ exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop
 
 .c0[aria-disabled=false]:hover,
 .c0[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 <a

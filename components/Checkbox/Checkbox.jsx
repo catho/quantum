@@ -79,7 +79,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
       ${({
         theme: {
           colors: {
-            primary: { 500: primaryColor },
+            primary: { 700: primaryColor },
             neutral: { 100: neutralColor },
           },
         },
@@ -94,7 +94,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     ${({ theme }) => {
       const {
         colors: {
-          primary: { 500: primaryColor },
+          primary: { 700: primaryColor },
         },
       } = theme;
 

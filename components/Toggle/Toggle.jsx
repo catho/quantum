@@ -124,10 +124,10 @@ const HiddenCheckbox = styled.input.attrs({
     ${({
       theme: {
         colors: {
-          primary: { 500: primary500 },
+          primary: { 700: primary700 },
         },
       },
-    }) => `background-color: ${primary500};`};
+    }) => `background-color: ${primary700};`};
   }
 
   &:checked:hover + ${Switch}:before {
@@ -144,12 +144,12 @@ const HiddenCheckbox = styled.input.attrs({
     ${({
       theme: {
         colors: {
-          primary: { 100: primary100, 500: primary500 },
+          primary: { 100: primary100, 700: primary700 },
         },
       },
     }) =>
       `background-color: ${primary100};
-     color: ${primary500};`};
+     color: ${primary700};`};
     transform: translateX(18px);
   }
 `;

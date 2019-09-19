@@ -9,7 +9,7 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  color: #1355d0;
+  color: #1250C4;
 }
 
 .c2 {
@@ -24,7 +24,7 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
   stroke-dashoffset: 0px;
   stroke-width: 3.6;
   stroke: currentColor;
-  color: #1355d0;
+  color: #1250C4;
 }
 
 .c0 {
@@ -42,12 +42,12 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
 >
   <svg
     className="c1"
-    color="#1355d0"
+    color="#1250C4"
     viewBox="22 22 44 44"
   >
     <circle
       className="c2"
-      color="#1355d0"
+      color="#1250C4"
     />
   </svg>
 </div>

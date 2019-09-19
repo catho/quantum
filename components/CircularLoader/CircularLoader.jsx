@@ -81,7 +81,7 @@ const CircularLoader = props => {
     skin,
     theme: {
       colors: {
-        [skin]: { 500: color },
+        [skin]: { 700: color },
       },
       gutter,
     },

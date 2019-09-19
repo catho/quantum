@@ -6,7 +6,7 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
   margin-top: 8px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(19,85,208,0.39);
+  background-color: rgba(18,80,196,0.39);
   height: 8px;
   width: 250px;
 }
@@ -20,7 +20,7 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
   top: 0;
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
-  background-color: #1355d0;
+  background-color: #1250C4;
   width: 30%;
 }
 
@@ -74,7 +74,7 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
   margin-top: 8px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(19,85,208,0.39);
+  background-color: rgba(18,80,196,0.39);
   height: 8px;
   width: 250px;
 }
@@ -88,7 +88,7 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
   top: 0;
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
-  background-color: #1355d0;
+  background-color: #1250C4;
   width: 30%;
 }
 
@@ -142,7 +142,7 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
   margin-top: 8px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(19,85,208,0.39);
+  background-color: rgba(18,80,196,0.39);
   height: 8px;
   width: 250px;
 }
@@ -156,7 +156,7 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
   top: 0;
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
-  background-color: #1355d0;
+  background-color: #1250C4;
   width: 30%;
 }
 
@@ -210,7 +210,7 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
   margin-top: 8px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(19,85,208,0.39);
+  background-color: rgba(18,80,196,0.39);
   height: 8px;
   width: 250px;
 }
@@ -224,7 +224,7 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
   top: 0;
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
-  background-color: #1355d0;
+  background-color: #1250C4;
   width: 30%;
 }
 
@@ -278,7 +278,7 @@ exports[`ProgressBar component Should match the snapshot of a simple progress ba
   margin-top: 8px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(19,85,208,0.39);
+  background-color: rgba(18,80,196,0.39);
   height: 8px;
   width: 250px;
 }
@@ -292,7 +292,7 @@ exports[`ProgressBar component Should match the snapshot of a simple progress ba
   top: 0;
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
-  background-color: #1355d0;
+  background-color: #1250C4;
   width: 0%;
 }
 

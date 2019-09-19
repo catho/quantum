@@ -107,10 +107,10 @@ exports[`Input component should match snapshots 2`] = `
               "900": "#191919",
             },
             "primary": Object {
-              "100": "#e5edfc",
-              "300": "#5a88de",
-              "500": "#1355d0",
-              "700": "#0e44c4",
+              "100": "#E5EDFC",
+              "300": "#89AAE7",
+              "500": "#0CC0EA",
+              "700": "#1250C4",
               "900": "#002F7B",
             },
             "secondary": Object {
@@ -284,10 +284,10 @@ exports[`Input component should match snapshots 4`] = `
               "900": "#191919",
             },
             "primary": Object {
-              "100": "#e5edfc",
-              "300": "#5a88de",
-              "500": "#1355d0",
-              "700": "#0e44c4",
+              "100": "#E5EDFC",
+              "300": "#89AAE7",
+              "500": "#0CC0EA",
+              "700": "#1250C4",
               "900": "#002F7B",
             },
             "secondary": Object {
@@ -436,10 +436,10 @@ exports[`Input component should match snapshots 6`] = `
               "900": "#191919",
             },
             "primary": Object {
-              "100": "#e5edfc",
-              "300": "#5a88de",
-              "500": "#1355d0",
-              "700": "#0e44c4",
+              "100": "#E5EDFC",
+              "300": "#89AAE7",
+              "500": "#0CC0EA",
+              "700": "#1250C4",
               "900": "#002F7B",
             },
             "secondary": Object {
@@ -709,10 +709,10 @@ exports[`Input component should match snapshots 10`] = `
               "900": "#191919",
             },
             "primary": Object {
-              "100": "#e5edfc",
-              "300": "#5a88de",
-              "500": "#1355d0",
-              "700": "#0e44c4",
+              "100": "#E5EDFC",
+              "300": "#89AAE7",
+              "500": "#0CC0EA",
+              "700": "#1250C4",
               "900": "#002F7B",
             },
             "secondary": Object {
@@ -1131,10 +1131,10 @@ exports[`Input component should match snapshots 17`] = `
               "900": "#191919",
             },
             "primary": Object {
-              "100": "#e5edfc",
-              "300": "#5a88de",
-              "500": "#1355d0",
-              "700": "#0e44c4",
+              "100": "#E5EDFC",
+              "300": "#89AAE7",
+              "500": "#0CC0EA",
+              "700": "#1250C4",
               "900": "#002F7B",
             },
             "secondary": Object {

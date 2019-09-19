@@ -115,8 +115,8 @@ const StyledButton = styled.button`
             [skin]: {
               mainColor: {
                 100: mainColor100,
-                500: mainColor500,
                 700: mainColor700,
+                900: mainColor900,
               },
               text: { 0: text0 },
             },
@@ -136,12 +136,12 @@ const StyledButton = styled.button`
       textColor = neutral500;
     } else if (stroked) {
       bgColor = neutral0;
-      textColor = mainColor500;
+      textColor = mainColor700;
     } else if (disabled) {
       bgColor = neutral500;
       textColor = neutral0;
     } else {
-      bgColor = mainColor500;
+      bgColor = mainColor700;
       textColor = text0;
     }
 
@@ -149,7 +149,7 @@ const StyledButton = styled.button`
       background-color: ${bgColor};
       color: ${textColor};
 
-      border: 2px solid ${disabled ? neutral500 : mainColor500};
+      border: 2px solid ${disabled ? neutral500 : mainColor700};
 
       ${shadow(2, neutral500)({ theme })}
 
@@ -157,9 +157,9 @@ const StyledButton = styled.button`
         ${
           !disabled
             ? `
-              ${shadow(4, mainColor700)({ theme })}
-              background-color: ${stroked ? mainColor100 : mainColor700};
-              border-color: ${mainColor700};
+              ${shadow(4, mainColor900)({ theme })}
+              background-color: ${stroked ? mainColor100 : mainColor900};
+              border-color: ${mainColor900};
             `
             : ''
         }
@@ -167,15 +167,15 @@ const StyledButton = styled.button`
 
       :focus,
       :focus-within {
-        ${!disabled ? shadow(4, mainColor500)({ theme }) : ''}
+        ${!disabled ? shadow(4, mainColor700)({ theme }) : ''}
       }
 
       :active {
         ${
           !disabled
             ? `
-              ${shadow(8, mainColor700)({ theme })}
-              background-color: ${stroked ? mainColor100 : mainColor700};
+              ${shadow(8, mainColor900)({ theme })}
+              background-color: ${stroked ? mainColor100 : mainColor900};
             `
             : ''
         }

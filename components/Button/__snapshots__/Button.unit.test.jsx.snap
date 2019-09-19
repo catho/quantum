@@ -27,26 +27,26 @@ exports[`Button component Should match the snapshot 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -102,26 +102,26 @@ exports[`Button component when center prop is set 1`] = `
   margin-right: auto;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -176,26 +176,26 @@ exports[`Button component when full prop is set 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -249,26 +249,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #4c4c4c;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #4c4c4c;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c0 .c1 function (_ref5) {
@@ -322,26 +322,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -395,26 +395,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #7ed321;
+  background-color: #6bc818;
   color: #ffffff;
-  border: 2px solid #7ed321;
+  border: 2px solid #6bc818;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(107,200,24,0.2),0px 4px 5px 0px rgba(107,200,24,0.14),0px 1px 10px 0px rgba(107,200,24,0.12);
-  background-color: #6bc818;
-  border-color: #6bc818;
+  box-shadow: 0px 2px 4px -1px rgba(60,101,16,0.2),0px 4px 5px 0px rgba(60,101,16,0.14),0px 1px 10px 0px rgba(60,101,16,0.12);
+  background-color: #3c6510;
+  border-color: #3c6510;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(126,211,33,0.2),0px 4px 5px 0px rgba(126,211,33,0.14),0px 1px 10px 0px rgba(126,211,33,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(107,200,24,0.2),0px 4px 5px 0px rgba(107,200,24,0.14),0px 1px 10px 0px rgba(107,200,24,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(107,200,24,0.2),0px 8px 10px 1px rgba(107,200,24,0.14),0px 3px 14px 2px rgba(107,200,24,0.12);
-  background-color: #6bc818;
+  box-shadow: 0px 5px 5px -3px rgba(60,101,16,0.2),0px 8px 10px 1px rgba(60,101,16,0.14),0px 3px 14px 2px rgba(60,101,16,0.12);
+  background-color: #3c6510;
 }
 
 .c0 .c1 function (_ref5) {
@@ -468,26 +468,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f09100;
+  background-color: #ec7e00;
   color: #ffffff;
-  border: 2px solid #f09100;
+  border: 2px solid #ec7e00;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(236,126,0,0.2),0px 4px 5px 0px rgba(236,126,0,0.14),0px 1px 10px 0px rgba(236,126,0,0.12);
-  background-color: #ec7e00;
-  border-color: #ec7e00;
+  box-shadow: 0px 2px 4px -1px rgba(163,99,0,0.2),0px 4px 5px 0px rgba(163,99,0,0.14),0px 1px 10px 0px rgba(163,99,0,0.12);
+  background-color: #a36300;
+  border-color: #a36300;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(240,145,0,0.2),0px 4px 5px 0px rgba(240,145,0,0.14),0px 1px 10px 0px rgba(240,145,0,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(236,126,0,0.2),0px 4px 5px 0px rgba(236,126,0,0.14),0px 1px 10px 0px rgba(236,126,0,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(236,126,0,0.2),0px 8px 10px 1px rgba(236,126,0,0.14),0px 3px 14px 2px rgba(236,126,0,0.12);
-  background-color: #ec7e00;
+  box-shadow: 0px 5px 5px -3px rgba(163,99,0,0.2),0px 8px 10px 1px rgba(163,99,0,0.14),0px 3px 14px 2px rgba(163,99,0,0.12);
+  background-color: #a36300;
 }
 
 .c0 .c1 function (_ref5) {
@@ -541,26 +541,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #ff2d4d;
+  background-color: #ff223d;
   color: #ffffff;
-  border: 2px solid #ff2d4d;
+  border: 2px solid #ff223d;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(255,34,61,0.2),0px 4px 5px 0px rgba(255,34,61,0.14),0px 1px 10px 0px rgba(255,34,61,0.12);
-  background-color: #ff223d;
-  border-color: #ff223d;
+  box-shadow: 0px 2px 4px -1px rgba(172,0,26,0.2),0px 4px 5px 0px rgba(172,0,26,0.14),0px 1px 10px 0px rgba(172,0,26,0.12);
+  background-color: #ac001a;
+  border-color: #ac001a;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(255,45,77,0.2),0px 4px 5px 0px rgba(255,45,77,0.14),0px 1px 10px 0px rgba(255,45,77,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(255,34,61,0.2),0px 4px 5px 0px rgba(255,34,61,0.14),0px 1px 10px 0px rgba(255,34,61,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(255,34,61,0.2),0px 8px 10px 1px rgba(255,34,61,0.14),0px 3px 14px 2px rgba(255,34,61,0.12);
-  background-color: #ff223d;
+  box-shadow: 0px 5px 5px -3px rgba(172,0,26,0.2),0px 8px 10px 1px rgba(172,0,26,0.14),0px 3px 14px 2px rgba(172,0,26,0.12);
+  background-color: #ac001a;
 }
 
 .c0 .c1 function (_ref5) {
@@ -614,26 +614,26 @@ exports[`Button component when there is a type set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -687,26 +687,26 @@ exports[`Button component when there is a type set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -760,26 +760,26 @@ exports[`Button component when there is a type set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -837,26 +837,26 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -1031,10 +1031,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
             "900": "#191919",
           },
           "primary": Object {
-            "100": "#e5edfc",
-            "300": "#5a88de",
-            "500": "#1355d0",
-            "700": "#0e44c4",
+            "100": "#E5EDFC",
+            "300": "#89AAE7",
+            "500": "#0CC0EA",
+            "700": "#1250C4",
             "900": "#002F7B",
           },
           "secondary": Object {
@@ -1102,10 +1102,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
               },
               "primary": Object {
                 "mainColor": Object {
-                  "100": "#e5edfc",
-                  "300": "#5a88de",
-                  "500": "#1355d0",
-                  "700": "#0e44c4",
+                  "100": "#E5EDFC",
+                  "300": "#89AAE7",
+                  "500": "#0CC0EA",
+                  "700": "#1250C4",
                   "900": "#002F7B",
                 },
                 "text": Object {
@@ -1226,26 +1226,26 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -1420,10 +1420,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
             "900": "#191919",
           },
           "primary": Object {
-            "100": "#e5edfc",
-            "300": "#5a88de",
-            "500": "#1355d0",
-            "700": "#0e44c4",
+            "100": "#E5EDFC",
+            "300": "#89AAE7",
+            "500": "#0CC0EA",
+            "700": "#1250C4",
             "900": "#002F7B",
           },
           "secondary": Object {
@@ -1491,10 +1491,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
               },
               "primary": Object {
                 "mainColor": Object {
-                  "100": "#e5edfc",
-                  "300": "#5a88de",
-                  "500": "#1355d0",
-                  "700": "#0e44c4",
+                  "100": "#E5EDFC",
+                  "300": "#89AAE7",
+                  "500": "#0CC0EA",
+                  "700": "#1250C4",
                   "900": "#002F7B",
                 },
                 "text": Object {
@@ -1615,26 +1615,26 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -1809,10 +1809,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
             "900": "#191919",
           },
           "primary": Object {
-            "100": "#e5edfc",
-            "300": "#5a88de",
-            "500": "#1355d0",
-            "700": "#0e44c4",
+            "100": "#E5EDFC",
+            "300": "#89AAE7",
+            "500": "#0CC0EA",
+            "700": "#1250C4",
             "900": "#002F7B",
           },
           "secondary": Object {
@@ -1880,10 +1880,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
               },
               "primary": Object {
                 "mainColor": Object {
-                  "100": "#e5edfc",
-                  "300": "#5a88de",
-                  "500": "#1355d0",
-                  "700": "#0e44c4",
+                  "100": "#E5EDFC",
+                  "300": "#89AAE7",
+                  "500": "#0CC0EA",
+                  "700": "#1250C4",
                   "900": "#002F7B",
                 },
                 "text": Object {
@@ -2004,26 +2004,26 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c0 .c1 function (_ref5) {
@@ -2198,10 +2198,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
             "900": "#191919",
           },
           "primary": Object {
-            "100": "#e5edfc",
-            "300": "#5a88de",
-            "500": "#1355d0",
-            "700": "#0e44c4",
+            "100": "#E5EDFC",
+            "300": "#89AAE7",
+            "500": "#0CC0EA",
+            "700": "#1250C4",
             "900": "#002F7B",
           },
           "secondary": Object {
@@ -2269,10 +2269,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
               },
               "primary": Object {
                 "mainColor": Object {
-                  "100": "#e5edfc",
-                  "300": "#5a88de",
-                  "500": "#1355d0",
-                  "700": "#0e44c4",
+                  "100": "#E5EDFC",
+                  "300": "#89AAE7",
+                  "500": "#0CC0EA",
+                  "700": "#1250C4",
                   "900": "#002F7B",
                 },
                 "text": Object {

@@ -65,26 +65,26 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #4c4c4c;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #4c4c4c;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c11:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c11:focus,
 .c11:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
 }
 
 .c11:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c11 .c12 function (_ref5) {
@@ -283,10 +283,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "900": "#191919",
         },
         "primary": Object {
-          "100": "#e5edfc",
-          "300": "#5a88de",
-          "500": "#1355d0",
-          "700": "#0e44c4",
+          "100": "#E5EDFC",
+          "300": "#89AAE7",
+          "500": "#0CC0EA",
+          "700": "#1250C4",
           "900": "#002F7B",
         },
         "secondary": Object {
@@ -354,10 +354,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             },
             "primary": Object {
               "mainColor": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
                 "900": "#002F7B",
               },
               "text": Object {
@@ -507,26 +507,26 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #4c4c4c;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #4c4c4c;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c11:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c11:focus,
 .c11:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
 }
 
 .c11:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c11 .c12 function (_ref5) {
@@ -774,10 +774,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "900": "#191919",
             },
             "primary": Object {
-              "100": "#e5edfc",
-              "300": "#5a88de",
-              "500": "#1355d0",
-              "700": "#0e44c4",
+              "100": "#E5EDFC",
+              "300": "#89AAE7",
+              "500": "#0CC0EA",
+              "700": "#1250C4",
               "900": "#002F7B",
             },
             "secondary": Object {
@@ -845,10 +845,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 },
                 "primary": Object {
                   "mainColor": Object {
-                    "100": "#e5edfc",
-                    "300": "#5a88de",
-                    "500": "#1355d0",
-                    "700": "#0e44c4",
+                    "100": "#E5EDFC",
+                    "300": "#89AAE7",
+                    "500": "#0CC0EA",
+                    "700": "#1250C4",
                     "900": "#002F7B",
                   },
                   "text": Object {
@@ -1049,10 +1049,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
                 "900": "#002F7B",
               },
               "secondary": Object {
@@ -1120,10 +1120,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
                       "900": "#002F7B",
                     },
                     "text": Object {
@@ -1254,10 +1254,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "900": "#191919",
                   },
                   "primary": Object {
-                    "100": "#e5edfc",
-                    "300": "#5a88de",
-                    "500": "#1355d0",
-                    "700": "#0e44c4",
+                    "100": "#E5EDFC",
+                    "300": "#89AAE7",
+                    "500": "#0CC0EA",
+                    "700": "#1250C4",
                     "900": "#002F7B",
                   },
                   "secondary": Object {
@@ -1325,10 +1325,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       },
                       "primary": Object {
                         "mainColor": Object {
-                          "100": "#e5edfc",
-                          "300": "#5a88de",
-                          "500": "#1355d0",
-                          "700": "#0e44c4",
+                          "100": "#E5EDFC",
+                          "300": "#89AAE7",
+                          "500": "#0CC0EA",
+                          "700": "#1250C4",
                           "900": "#002F7B",
                         },
                         "text": Object {
@@ -1622,10 +1622,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "900": "#191919",
                     },
                     "primary": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
                       "900": "#002F7B",
                     },
                     "secondary": Object {
@@ -1693,10 +1693,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         },
                         "primary": Object {
                           "mainColor": Object {
-                            "100": "#e5edfc",
-                            "300": "#5a88de",
-                            "500": "#1355d0",
-                            "700": "#0e44c4",
+                            "100": "#E5EDFC",
+                            "300": "#89AAE7",
+                            "500": "#0CC0EA",
+                            "700": "#1250C4",
                             "900": "#002F7B",
                           },
                           "text": Object {
@@ -1823,10 +1823,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "900": "#191919",
                       },
                       "primary": Object {
-                        "100": "#e5edfc",
-                        "300": "#5a88de",
-                        "500": "#1355d0",
-                        "700": "#0e44c4",
+                        "100": "#E5EDFC",
+                        "300": "#89AAE7",
+                        "500": "#0CC0EA",
+                        "700": "#1250C4",
                         "900": "#002F7B",
                       },
                       "secondary": Object {
@@ -1894,10 +1894,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           },
                           "primary": Object {
                             "mainColor": Object {
-                              "100": "#e5edfc",
-                              "300": "#5a88de",
-                              "500": "#1355d0",
-                              "700": "#0e44c4",
+                              "100": "#E5EDFC",
+                              "300": "#89AAE7",
+                              "500": "#0CC0EA",
+                              "700": "#1250C4",
                               "900": "#002F7B",
                             },
                             "text": Object {
@@ -2024,10 +2024,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "900": "#191919",
                         },
                         "primary": Object {
-                          "100": "#e5edfc",
-                          "300": "#5a88de",
-                          "500": "#1355d0",
-                          "700": "#0e44c4",
+                          "100": "#E5EDFC",
+                          "300": "#89AAE7",
+                          "500": "#0CC0EA",
+                          "700": "#1250C4",
                           "900": "#002F7B",
                         },
                         "secondary": Object {
@@ -2095,10 +2095,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             },
                             "primary": Object {
                               "mainColor": Object {
-                                "100": "#e5edfc",
-                                "300": "#5a88de",
-                                "500": "#1355d0",
-                                "700": "#0e44c4",
+                                "100": "#E5EDFC",
+                                "300": "#89AAE7",
+                                "500": "#0CC0EA",
+                                "700": "#1250C4",
                                 "900": "#002F7B",
                               },
                               "text": Object {
@@ -2251,10 +2251,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "900": "#191919",
                           },
                           "primary": Object {
-                            "100": "#e5edfc",
-                            "300": "#5a88de",
-                            "500": "#1355d0",
-                            "700": "#0e44c4",
+                            "100": "#E5EDFC",
+                            "300": "#89AAE7",
+                            "500": "#0CC0EA",
+                            "700": "#1250C4",
                             "900": "#002F7B",
                           },
                           "secondary": Object {
@@ -2322,10 +2322,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               },
                               "primary": Object {
                                 "mainColor": Object {
-                                  "100": "#e5edfc",
-                                  "300": "#5a88de",
-                                  "500": "#1355d0",
-                                  "700": "#0e44c4",
+                                  "100": "#E5EDFC",
+                                  "300": "#89AAE7",
+                                  "500": "#0CC0EA",
+                                  "700": "#1250C4",
                                   "900": "#002F7B",
                                 },
                                 "text": Object {
@@ -2837,10 +2837,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "900": "#191919",
                               },
                               "primary": Object {
-                                "100": "#e5edfc",
-                                "300": "#5a88de",
-                                "500": "#1355d0",
-                                "700": "#0e44c4",
+                                "100": "#E5EDFC",
+                                "300": "#89AAE7",
+                                "500": "#0CC0EA",
+                                "700": "#1250C4",
                                 "900": "#002F7B",
                               },
                               "secondary": Object {
@@ -2908,10 +2908,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   },
                                   "primary": Object {
                                     "mainColor": Object {
-                                      "100": "#e5edfc",
-                                      "300": "#5a88de",
-                                      "500": "#1355d0",
-                                      "700": "#0e44c4",
+                                      "100": "#E5EDFC",
+                                      "300": "#89AAE7",
+                                      "500": "#0CC0EA",
+                                      "700": "#1250C4",
                                       "900": "#002F7B",
                                     },
                                     "text": Object {
@@ -3085,10 +3085,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "primary": Object {
                                           "mainColor": Object {
-                                            "100": "#e5edfc",
-                                            "300": "#5a88de",
-                                            "500": "#1355d0",
-                                            "700": "#0e44c4",
+                                            "100": "#E5EDFC",
+                                            "300": "#89AAE7",
+                                            "500": "#0CC0EA",
+                                            "700": "#1250C4",
                                             "900": "#002F7B",
                                           },
                                           "text": Object {
@@ -3234,10 +3234,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "900": "#191919",
                                 },
                                 "primary": Object {
-                                  "100": "#e5edfc",
-                                  "300": "#5a88de",
-                                  "500": "#1355d0",
-                                  "700": "#0e44c4",
+                                  "100": "#E5EDFC",
+                                  "300": "#89AAE7",
+                                  "500": "#0CC0EA",
+                                  "700": "#1250C4",
                                   "900": "#002F7B",
                                 },
                                 "secondary": Object {
@@ -3305,10 +3305,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     },
                                     "primary": Object {
                                       "mainColor": Object {
-                                        "100": "#e5edfc",
-                                        "300": "#5a88de",
-                                        "500": "#1355d0",
-                                        "700": "#0e44c4",
+                                        "100": "#E5EDFC",
+                                        "300": "#89AAE7",
+                                        "500": "#0CC0EA",
+                                        "700": "#1250C4",
                                         "900": "#002F7B",
                                       },
                                       "text": Object {
@@ -3444,10 +3444,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "900": "#191919",
                                   },
                                   "primary": Object {
-                                    "100": "#e5edfc",
-                                    "300": "#5a88de",
-                                    "500": "#1355d0",
-                                    "700": "#0e44c4",
+                                    "100": "#E5EDFC",
+                                    "300": "#89AAE7",
+                                    "500": "#0CC0EA",
+                                    "700": "#1250C4",
                                     "900": "#002F7B",
                                   },
                                   "secondary": Object {
@@ -3515,10 +3515,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       },
                                       "primary": Object {
                                         "mainColor": Object {
-                                          "100": "#e5edfc",
-                                          "300": "#5a88de",
-                                          "500": "#1355d0",
-                                          "700": "#0e44c4",
+                                          "100": "#E5EDFC",
+                                          "300": "#89AAE7",
+                                          "500": "#0CC0EA",
+                                          "700": "#1250C4",
                                           "900": "#002F7B",
                                         },
                                         "text": Object {
@@ -3654,10 +3654,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "900": "#191919",
                                     },
                                     "primary": Object {
-                                      "100": "#e5edfc",
-                                      "300": "#5a88de",
-                                      "500": "#1355d0",
-                                      "700": "#0e44c4",
+                                      "100": "#E5EDFC",
+                                      "300": "#89AAE7",
+                                      "500": "#0CC0EA",
+                                      "700": "#1250C4",
                                       "900": "#002F7B",
                                     },
                                     "secondary": Object {
@@ -3725,10 +3725,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         },
                                         "primary": Object {
                                           "mainColor": Object {
-                                            "100": "#e5edfc",
-                                            "300": "#5a88de",
-                                            "500": "#1355d0",
-                                            "700": "#0e44c4",
+                                            "100": "#E5EDFC",
+                                            "300": "#89AAE7",
+                                            "500": "#0CC0EA",
+                                            "700": "#1250C4",
                                             "900": "#002F7B",
                                           },
                                           "text": Object {
@@ -3900,10 +3900,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "900": "#191919",
                                       },
                                       "primary": Object {
-                                        "100": "#e5edfc",
-                                        "300": "#5a88de",
-                                        "500": "#1355d0",
-                                        "700": "#0e44c4",
+                                        "100": "#E5EDFC",
+                                        "300": "#89AAE7",
+                                        "500": "#0CC0EA",
+                                        "700": "#1250C4",
                                         "900": "#002F7B",
                                       },
                                       "secondary": Object {
@@ -3971,10 +3971,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           },
                                           "primary": Object {
                                             "mainColor": Object {
-                                              "100": "#e5edfc",
-                                              "300": "#5a88de",
-                                              "500": "#1355d0",
-                                              "700": "#0e44c4",
+                                              "100": "#E5EDFC",
+                                              "300": "#89AAE7",
+                                              "500": "#0CC0EA",
+                                              "700": "#1250C4",
                                               "900": "#002F7B",
                                             },
                                             "text": Object {
@@ -4111,10 +4111,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "900": "#191919",
                                           },
                                           "primary": Object {
-                                            "100": "#e5edfc",
-                                            "300": "#5a88de",
-                                            "500": "#1355d0",
-                                            "700": "#0e44c4",
+                                            "100": "#E5EDFC",
+                                            "300": "#89AAE7",
+                                            "500": "#0CC0EA",
+                                            "700": "#1250C4",
                                             "900": "#002F7B",
                                           },
                                           "secondary": Object {
@@ -4182,10 +4182,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               },
                                               "primary": Object {
                                                 "mainColor": Object {
-                                                  "100": "#e5edfc",
-                                                  "300": "#5a88de",
-                                                  "500": "#1355d0",
-                                                  "700": "#0e44c4",
+                                                  "100": "#E5EDFC",
+                                                  "300": "#89AAE7",
+                                                  "500": "#0CC0EA",
+                                                  "700": "#1250C4",
                                                   "900": "#002F7B",
                                                 },
                                                 "text": Object {
@@ -4337,10 +4337,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "900": "#191919",
                                             },
                                             "primary": Object {
-                                              "100": "#e5edfc",
-                                              "300": "#5a88de",
-                                              "500": "#1355d0",
-                                              "700": "#0e44c4",
+                                              "100": "#E5EDFC",
+                                              "300": "#89AAE7",
+                                              "500": "#0CC0EA",
+                                              "700": "#1250C4",
                                               "900": "#002F7B",
                                             },
                                             "secondary": Object {
@@ -4408,10 +4408,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                 },
                                                 "primary": Object {
                                                   "mainColor": Object {
-                                                    "100": "#e5edfc",
-                                                    "300": "#5a88de",
-                                                    "500": "#1355d0",
-                                                    "700": "#0e44c4",
+                                                    "100": "#E5EDFC",
+                                                    "300": "#89AAE7",
+                                                    "500": "#0CC0EA",
+                                                    "700": "#1250C4",
                                                     "900": "#002F7B",
                                                   },
                                                   "text": Object {
@@ -4542,10 +4542,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                 "900": "#191919",
                                               },
                                               "primary": Object {
-                                                "100": "#e5edfc",
-                                                "300": "#5a88de",
-                                                "500": "#1355d0",
-                                                "700": "#0e44c4",
+                                                "100": "#E5EDFC",
+                                                "300": "#89AAE7",
+                                                "500": "#0CC0EA",
+                                                "700": "#1250C4",
                                                 "900": "#002F7B",
                                               },
                                               "secondary": Object {
@@ -4613,10 +4613,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   },
                                                   "primary": Object {
                                                     "mainColor": Object {
-                                                      "100": "#e5edfc",
-                                                      "300": "#5a88de",
-                                                      "500": "#1355d0",
-                                                      "700": "#0e44c4",
+                                                      "100": "#E5EDFC",
+                                                      "300": "#89AAE7",
+                                                      "500": "#0CC0EA",
+                                                      "700": "#1250C4",
                                                       "900": "#002F7B",
                                                     },
                                                     "text": Object {
@@ -4749,10 +4749,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "900": "#191919",
                                                 },
                                                 "primary": Object {
-                                                  "100": "#e5edfc",
-                                                  "300": "#5a88de",
-                                                  "500": "#1355d0",
-                                                  "700": "#0e44c4",
+                                                  "100": "#E5EDFC",
+                                                  "300": "#89AAE7",
+                                                  "500": "#0CC0EA",
+                                                  "700": "#1250C4",
                                                   "900": "#002F7B",
                                                 },
                                                 "secondary": Object {
@@ -4820,10 +4820,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     },
                                                     "primary": Object {
                                                       "mainColor": Object {
-                                                        "100": "#e5edfc",
-                                                        "300": "#5a88de",
-                                                        "500": "#1355d0",
-                                                        "700": "#0e44c4",
+                                                        "100": "#E5EDFC",
+                                                        "300": "#89AAE7",
+                                                        "500": "#0CC0EA",
+                                                        "700": "#1250C4",
                                                         "900": "#002F7B",
                                                       },
                                                       "text": Object {
@@ -4972,10 +4972,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "900": "#191919",
                                                   },
                                                   "primary": Object {
-                                                    "100": "#e5edfc",
-                                                    "300": "#5a88de",
-                                                    "500": "#1355d0",
-                                                    "700": "#0e44c4",
+                                                    "100": "#E5EDFC",
+                                                    "300": "#89AAE7",
+                                                    "500": "#0CC0EA",
+                                                    "700": "#1250C4",
                                                     "900": "#002F7B",
                                                   },
                                                   "secondary": Object {
@@ -5043,10 +5043,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       },
                                                       "primary": Object {
                                                         "mainColor": Object {
-                                                          "100": "#e5edfc",
-                                                          "300": "#5a88de",
-                                                          "500": "#1355d0",
-                                                          "700": "#0e44c4",
+                                                          "100": "#E5EDFC",
+                                                          "300": "#89AAE7",
+                                                          "500": "#0CC0EA",
+                                                          "700": "#1250C4",
                                                           "900": "#002F7B",
                                                         },
                                                         "text": Object {
@@ -5180,10 +5180,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "900": "#191919",
                                                     },
                                                     "primary": Object {
-                                                      "100": "#e5edfc",
-                                                      "300": "#5a88de",
-                                                      "500": "#1355d0",
-                                                      "700": "#0e44c4",
+                                                      "100": "#E5EDFC",
+                                                      "300": "#89AAE7",
+                                                      "500": "#0CC0EA",
+                                                      "700": "#1250C4",
                                                       "900": "#002F7B",
                                                     },
                                                     "secondary": Object {
@@ -5251,10 +5251,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         },
                                                         "primary": Object {
                                                           "mainColor": Object {
-                                                            "100": "#e5edfc",
-                                                            "300": "#5a88de",
-                                                            "500": "#1355d0",
-                                                            "700": "#0e44c4",
+                                                            "100": "#E5EDFC",
+                                                            "300": "#89AAE7",
+                                                            "500": "#0CC0EA",
+                                                            "700": "#1250C4",
                                                             "900": "#002F7B",
                                                           },
                                                           "text": Object {
