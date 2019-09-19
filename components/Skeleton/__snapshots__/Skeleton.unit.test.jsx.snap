@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skeleton component Should match the snapshot of a Button component skeleton 1`] = `
+.c0 {
+  background-color: rgba(0,0,0,0.08);
+  -webkit-animation: bzcbYv 1.5s ease-in-out infinite;
+  animation: bzcbYv 1.5s ease-in-out infinite;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  border-radius: 4px;
+  height: 40px;
+}
+
+<div
+  className="c0"
+  height={null}
+  size="medium"
+  width="100px"
+/>
+`;
+
+exports[`Skeleton component Should match the snapshot of a Tag component loader 1`] = `
+.c0 {
+  background-color: rgba(0,0,0,0.08);
+  -webkit-animation: bzcbYv 1.5s ease-in-out infinite;
+  animation: bzcbYv 1.5s ease-in-out infinite;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  border-radius: 8px;
+  margin-right: 8px;
+  height: 26px;
+}
+
+<div
+  className="c0"
+  height={null}
+  size="medium"
+  width="100px"
+/>
+`;
+
+exports[`Skeleton component Should match the snapshot of a circular skeleton 1`] = `
+.c0 {
+  background-color: rgba(0,0,0,0.08);
+  -webkit-animation: bzcbYv 1.5s ease-in-out infinite;
+  animation: bzcbYv 1.5s ease-in-out infinite;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+<div
+  className="c0"
+  height="56px"
+  width="56px"
+/>
+`;
+
+exports[`Skeleton component Should match the snapshot of a simple skeleton 1`] = `
+.c0 {
+  background-color: rgba(0,0,0,0.08);
+  -webkit-animation: bzcbYv 1.5s ease-in-out infinite;
+  animation: bzcbYv 1.5s ease-in-out infinite;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 14px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+  height="14px"
+  width="100%"
+/>
+`;
+
+exports[`Skeleton component Should match the snapshot of a text skeleton 1`] = `
+.c0 {
+  background-color: rgba(0,0,0,0.08);
+  -webkit-animation: bzcbYv 1.5s ease-in-out infinite;
+  animation: bzcbYv 1.5s ease-in-out infinite;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 14px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+<div
+  className="c0"
+  height="14px"
+  width="100%"
+/>
+`;
