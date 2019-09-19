@@ -72,7 +72,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
 }
 
 .c1:focus + .c2:before {
-  box-shadow: 0px 2px 4px -1px rgba(6,42,179,0.2),0px 4px 5px 0px rgba(6,42,179,0.14),0px 1px 10px 0px rgba(6,42,179,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
 }
 
 .c1:hover + .c2:before {
@@ -95,7 +95,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
 }
 
 .c1:checked:hover + .c2:before {
-  background-color: #062ab3;
+  background-color: #002F7B;
 }
 
 .c1:checked + .c2 .c5 {
@@ -216,7 +216,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
 }
 
 .c1:focus + .c2:before {
-  box-shadow: 0px 2px 4px -1px rgba(6,42,179,0.2),0px 4px 5px 0px rgba(6,42,179,0.14),0px 1px 10px 0px rgba(6,42,179,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
 }
 
 .c1:hover + .c2:before {
@@ -239,7 +239,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
 }
 
 .c1:checked:hover + .c2:before {
-  background-color: #062ab3;
+  background-color: #002F7B;
 }
 
 .c1:checked + .c2 .c5 {

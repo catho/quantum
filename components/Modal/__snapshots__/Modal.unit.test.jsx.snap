@@ -287,7 +287,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "300": "#5a88de",
           "500": "#1355d0",
           "700": "#0e44c4",
-          "900": "#062ab3",
+          "900": "#002F7B",
         },
         "secondary": Object {
           "100": "#f5b3cd",
@@ -358,7 +358,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "text": Object {
                 "0": "#ffffff",
@@ -778,7 +778,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "300": "#5a88de",
               "500": "#1355d0",
               "700": "#0e44c4",
-              "900": "#062ab3",
+              "900": "#002F7B",
             },
             "secondary": Object {
               "100": "#f5b3cd",
@@ -849,7 +849,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "300": "#5a88de",
                     "500": "#1355d0",
                     "700": "#0e44c4",
-                    "900": "#062ab3",
+                    "900": "#002F7B",
                   },
                   "text": Object {
                     "0": "#ffffff",
@@ -1053,7 +1053,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -1124,7 +1124,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
@@ -1258,7 +1258,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "300": "#5a88de",
                     "500": "#1355d0",
                     "700": "#0e44c4",
-                    "900": "#062ab3",
+                    "900": "#002F7B",
                   },
                   "secondary": Object {
                     "100": "#f5b3cd",
@@ -1329,7 +1329,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "300": "#5a88de",
                           "500": "#1355d0",
                           "700": "#0e44c4",
-                          "900": "#062ab3",
+                          "900": "#002F7B",
                         },
                         "text": Object {
                           "0": "#ffffff",
@@ -1626,7 +1626,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "secondary": Object {
                       "100": "#f5b3cd",
@@ -1697,7 +1697,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "300": "#5a88de",
                             "500": "#1355d0",
                             "700": "#0e44c4",
-                            "900": "#062ab3",
+                            "900": "#002F7B",
                           },
                           "text": Object {
                             "0": "#ffffff",
@@ -1827,7 +1827,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         "300": "#5a88de",
                         "500": "#1355d0",
                         "700": "#0e44c4",
-                        "900": "#062ab3",
+                        "900": "#002F7B",
                       },
                       "secondary": Object {
                         "100": "#f5b3cd",
@@ -1898,7 +1898,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               "300": "#5a88de",
                               "500": "#1355d0",
                               "700": "#0e44c4",
-                              "900": "#062ab3",
+                              "900": "#002F7B",
                             },
                             "text": Object {
                               "0": "#ffffff",
@@ -2028,7 +2028,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "300": "#5a88de",
                           "500": "#1355d0",
                           "700": "#0e44c4",
-                          "900": "#062ab3",
+                          "900": "#002F7B",
                         },
                         "secondary": Object {
                           "100": "#f5b3cd",
@@ -2099,7 +2099,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "300": "#5a88de",
                                 "500": "#1355d0",
                                 "700": "#0e44c4",
-                                "900": "#062ab3",
+                                "900": "#002F7B",
                               },
                               "text": Object {
                                 "0": "#ffffff",
@@ -2255,7 +2255,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "300": "#5a88de",
                             "500": "#1355d0",
                             "700": "#0e44c4",
-                            "900": "#062ab3",
+                            "900": "#002F7B",
                           },
                           "secondary": Object {
                             "100": "#f5b3cd",
@@ -2326,7 +2326,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "300": "#5a88de",
                                   "500": "#1355d0",
                                   "700": "#0e44c4",
-                                  "900": "#062ab3",
+                                  "900": "#002F7B",
                                 },
                                 "text": Object {
                                   "0": "#ffffff",
@@ -2841,7 +2841,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 "300": "#5a88de",
                                 "500": "#1355d0",
                                 "700": "#0e44c4",
-                                "900": "#062ab3",
+                                "900": "#002F7B",
                               },
                               "secondary": Object {
                                 "100": "#f5b3cd",
@@ -2912,7 +2912,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "300": "#5a88de",
                                       "500": "#1355d0",
                                       "700": "#0e44c4",
-                                      "900": "#062ab3",
+                                      "900": "#002F7B",
                                     },
                                     "text": Object {
                                       "0": "#ffffff",
@@ -3089,7 +3089,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "300": "#5a88de",
                                             "500": "#1355d0",
                                             "700": "#0e44c4",
-                                            "900": "#062ab3",
+                                            "900": "#002F7B",
                                           },
                                           "text": Object {
                                             "0": "#ffffff",
@@ -3238,7 +3238,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "300": "#5a88de",
                                   "500": "#1355d0",
                                   "700": "#0e44c4",
-                                  "900": "#062ab3",
+                                  "900": "#002F7B",
                                 },
                                 "secondary": Object {
                                   "100": "#f5b3cd",
@@ -3309,7 +3309,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "300": "#5a88de",
                                         "500": "#1355d0",
                                         "700": "#0e44c4",
-                                        "900": "#062ab3",
+                                        "900": "#002F7B",
                                       },
                                       "text": Object {
                                         "0": "#ffffff",
@@ -3448,7 +3448,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "300": "#5a88de",
                                     "500": "#1355d0",
                                     "700": "#0e44c4",
-                                    "900": "#062ab3",
+                                    "900": "#002F7B",
                                   },
                                   "secondary": Object {
                                     "100": "#f5b3cd",
@@ -3519,7 +3519,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "300": "#5a88de",
                                           "500": "#1355d0",
                                           "700": "#0e44c4",
-                                          "900": "#062ab3",
+                                          "900": "#002F7B",
                                         },
                                         "text": Object {
                                           "0": "#ffffff",
@@ -3658,7 +3658,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "300": "#5a88de",
                                       "500": "#1355d0",
                                       "700": "#0e44c4",
-                                      "900": "#062ab3",
+                                      "900": "#002F7B",
                                     },
                                     "secondary": Object {
                                       "100": "#f5b3cd",
@@ -3729,7 +3729,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "300": "#5a88de",
                                             "500": "#1355d0",
                                             "700": "#0e44c4",
-                                            "900": "#062ab3",
+                                            "900": "#002F7B",
                                           },
                                           "text": Object {
                                             "0": "#ffffff",
@@ -3904,7 +3904,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         "300": "#5a88de",
                                         "500": "#1355d0",
                                         "700": "#0e44c4",
-                                        "900": "#062ab3",
+                                        "900": "#002F7B",
                                       },
                                       "secondary": Object {
                                         "100": "#f5b3cd",
@@ -3975,7 +3975,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "300": "#5a88de",
                                               "500": "#1355d0",
                                               "700": "#0e44c4",
-                                              "900": "#062ab3",
+                                              "900": "#002F7B",
                                             },
                                             "text": Object {
                                               "0": "#ffffff",
@@ -4115,7 +4115,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "300": "#5a88de",
                                             "500": "#1355d0",
                                             "700": "#0e44c4",
-                                            "900": "#062ab3",
+                                            "900": "#002F7B",
                                           },
                                           "secondary": Object {
                                             "100": "#f5b3cd",
@@ -4186,7 +4186,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "300": "#5a88de",
                                                   "500": "#1355d0",
                                                   "700": "#0e44c4",
-                                                  "900": "#062ab3",
+                                                  "900": "#002F7B",
                                                 },
                                                 "text": Object {
                                                   "0": "#ffffff",
@@ -4341,7 +4341,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                               "300": "#5a88de",
                                               "500": "#1355d0",
                                               "700": "#0e44c4",
-                                              "900": "#062ab3",
+                                              "900": "#002F7B",
                                             },
                                             "secondary": Object {
                                               "100": "#f5b3cd",
@@ -4412,7 +4412,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "300": "#5a88de",
                                                     "500": "#1355d0",
                                                     "700": "#0e44c4",
-                                                    "900": "#062ab3",
+                                                    "900": "#002F7B",
                                                   },
                                                   "text": Object {
                                                     "0": "#ffffff",
@@ -4546,7 +4546,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                 "300": "#5a88de",
                                                 "500": "#1355d0",
                                                 "700": "#0e44c4",
-                                                "900": "#062ab3",
+                                                "900": "#002F7B",
                                               },
                                               "secondary": Object {
                                                 "100": "#f5b3cd",
@@ -4617,7 +4617,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "300": "#5a88de",
                                                       "500": "#1355d0",
                                                       "700": "#0e44c4",
-                                                      "900": "#062ab3",
+                                                      "900": "#002F7B",
                                                     },
                                                     "text": Object {
                                                       "0": "#ffffff",
@@ -4753,7 +4753,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "300": "#5a88de",
                                                   "500": "#1355d0",
                                                   "700": "#0e44c4",
-                                                  "900": "#062ab3",
+                                                  "900": "#002F7B",
                                                 },
                                                 "secondary": Object {
                                                   "100": "#f5b3cd",
@@ -4824,7 +4824,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                         "300": "#5a88de",
                                                         "500": "#1355d0",
                                                         "700": "#0e44c4",
-                                                        "900": "#062ab3",
+                                                        "900": "#002F7B",
                                                       },
                                                       "text": Object {
                                                         "0": "#ffffff",
@@ -4976,7 +4976,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                     "300": "#5a88de",
                                                     "500": "#1355d0",
                                                     "700": "#0e44c4",
-                                                    "900": "#062ab3",
+                                                    "900": "#002F7B",
                                                   },
                                                   "secondary": Object {
                                                     "100": "#f5b3cd",
@@ -5047,7 +5047,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                           "300": "#5a88de",
                                                           "500": "#1355d0",
                                                           "700": "#0e44c4",
-                                                          "900": "#062ab3",
+                                                          "900": "#002F7B",
                                                         },
                                                         "text": Object {
                                                           "0": "#ffffff",
@@ -5184,7 +5184,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                       "300": "#5a88de",
                                                       "500": "#1355d0",
                                                       "700": "#0e44c4",
-                                                      "900": "#062ab3",
+                                                      "900": "#002F7B",
                                                     },
                                                     "secondary": Object {
                                                       "100": "#f5b3cd",
@@ -5255,7 +5255,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                             "300": "#5a88de",
                                                             "500": "#1355d0",
                                                             "700": "#0e44c4",
-                                                            "900": "#062ab3",
+                                                            "900": "#002F7B",
                                                           },
                                                           "text": Object {
                                                             "0": "#ffffff",

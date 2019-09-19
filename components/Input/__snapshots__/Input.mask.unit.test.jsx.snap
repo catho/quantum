@@ -111,7 +111,7 @@ exports[`Input component should match snapshots 2`] = `
               "300": "#5a88de",
               "500": "#1355d0",
               "700": "#0e44c4",
-              "900": "#062ab3",
+              "900": "#002F7B",
             },
             "secondary": Object {
               "100": "#f5b3cd",
@@ -288,7 +288,7 @@ exports[`Input component should match snapshots 4`] = `
               "300": "#5a88de",
               "500": "#1355d0",
               "700": "#0e44c4",
-              "900": "#062ab3",
+              "900": "#002F7B",
             },
             "secondary": Object {
               "100": "#f5b3cd",
@@ -440,7 +440,7 @@ exports[`Input component should match snapshots 6`] = `
               "300": "#5a88de",
               "500": "#1355d0",
               "700": "#0e44c4",
-              "900": "#062ab3",
+              "900": "#002F7B",
             },
             "secondary": Object {
               "100": "#f5b3cd",
@@ -713,7 +713,7 @@ exports[`Input component should match snapshots 10`] = `
               "300": "#5a88de",
               "500": "#1355d0",
               "700": "#0e44c4",
-              "900": "#062ab3",
+              "900": "#002F7B",
             },
             "secondary": Object {
               "100": "#f5b3cd",
@@ -1135,7 +1135,7 @@ exports[`Input component should match snapshots 17`] = `
               "300": "#5a88de",
               "500": "#1355d0",
               "700": "#0e44c4",
-              "900": "#062ab3",
+              "900": "#002F7B",
             },
             "secondary": Object {
               "100": "#f5b3cd",

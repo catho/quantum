@@ -244,7 +244,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -284,7 +284,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                   "primary": Object {
                     "background": "#e5edfc",
                     "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "text": "#002F7B",
                   },
                   "success": Object {
                     "background": "#edfadf",
@@ -344,7 +344,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
@@ -689,7 +689,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -729,7 +729,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                   "primary": Object {
                     "background": "#e5edfc",
                     "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "text": "#002F7B",
                   },
                   "success": Object {
                     "background": "#edfadf",
@@ -789,7 +789,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
@@ -1123,7 +1123,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -1163,7 +1163,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "primary": Object {
                     "background": "#e5edfc",
                     "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "text": "#002F7B",
                   },
                   "success": Object {
                     "background": "#edfadf",
@@ -1223,7 +1223,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
@@ -1450,7 +1450,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   font-size: 16px;
   background-color: #e5edfc;
   border: 1.5px solid #1355d0;
-  color: #062ab3;
+  color: #002F7B;
   padding: 12px 16px;
 }
 
@@ -1574,7 +1574,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -1614,7 +1614,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "primary": Object {
                     "background": "#e5edfc",
                     "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "text": "#002F7B",
                   },
                   "success": Object {
                     "background": "#edfadf",
@@ -1674,7 +1674,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
@@ -2042,7 +2042,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -2082,7 +2082,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "primary": Object {
                     "background": "#e5edfc",
                     "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "text": "#002F7B",
                   },
                   "success": Object {
                     "background": "#edfadf",
@@ -2142,7 +2142,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
@@ -2527,7 +2527,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -2567,7 +2567,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "primary": Object {
                     "background": "#e5edfc",
                     "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "text": "#002F7B",
                   },
                   "success": Object {
                     "background": "#edfadf",
@@ -2627,7 +2627,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
@@ -3029,7 +3029,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "300": "#5a88de",
                 "500": "#1355d0",
                 "700": "#0e44c4",
-                "900": "#062ab3",
+                "900": "#002F7B",
               },
               "secondary": Object {
                 "100": "#f5b3cd",
@@ -3069,7 +3069,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "primary": Object {
                     "background": "#e5edfc",
                     "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "text": "#002F7B",
                   },
                   "success": Object {
                     "background": "#edfadf",
@@ -3129,7 +3129,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "300": "#5a88de",
                       "500": "#1355d0",
                       "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",

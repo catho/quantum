@@ -205,8 +205,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -407,8 +407,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -653,8 +653,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -862,8 +862,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c3:hover,
 .c3:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -1117,8 +1117,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c5:hover,
 .c5:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -1361,8 +1361,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c5:hover,
 .c5:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -1605,8 +1605,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 
 .c5:hover,
 .c5:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -1821,8 +1821,8 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
