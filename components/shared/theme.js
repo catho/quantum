@@ -252,6 +252,23 @@ const components = {
       },
     },
   },
+
+  tabbedView: {
+    skins: {
+      neutral: {
+        activeText: colors.primary[700],
+        background: 'transparent',
+        hoverBackground: colors.primary[100],
+        text: 'inherit',
+      },
+      primary: {
+        activeText: colors.neutral[0],
+        background: colors.primary[700],
+        hoverBackground: colors.primary[900],
+        text: colors.neutral[0],
+      },
+    },
+  },
 };
 
 const theme = {

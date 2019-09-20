@@ -1,27 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import Colors from '../Colors';
+import { components } from '../shared/theme';
 import Tab from './Tab';
 
-const getColors = skin => {
-  const skins = {
-    default: {
-      activeText: Colors.BLUE[500],
-      background: 'transparent',
-      hoverBackground: Colors.BLUE[200],
-      text: 'inherit',
-    },
-    blue: {
-      activeText: Colors.WHITE,
-      background: Colors.BLUE[500],
-      hoverBackground: Colors.COBALT[500],
-      text: Colors.WHITE,
-    },
-  };
-
-  return skins[skin] || skins.default;
-};
+const getSkinByThemeColor = (skin, themeSkins) => themeSkins[skin];
 
 const Navbar = styled.nav.attrs({
   role: 'tablist',
@@ -53,8 +36,20 @@ const NavItem = styled.button.attrs({
   text-align: center;
   text-transform: uppercase;
 
-  ${({ skin }) => {
-    const { background, text, activeText, hoverBackground } = getColors(skin);
+  ${({
+    skin,
+    theme: {
+      components: {
+        tabbedView: { skins },
+      },
+    },
+  }) => {
+    const {
+      background,
+      text,
+      activeText,
+      hoverBackground,
+    } = getSkinByThemeColor(skin, skins);
     return css`
       background-color: ${background};
       color: ${text};
@@ -109,7 +104,7 @@ class TabbedView extends React.Component {
       .toLowerCase();
 
   render() {
-    const { children, skin } = this.props;
+    const { children, skin, theme } = this.props;
     const { activeTab } = this.state;
 
     return (
@@ -120,6 +115,7 @@ class TabbedView extends React.Component {
               key={title}
               onClick={() => this.onTabClick(title)}
               skin={skin}
+              theme={theme}
               id={`${this.sanitize(title)}-tab`}
               aria-controls={`${this.sanitize(title)}-panel`}
               aria-selected={title === activeTab}
@@ -154,12 +150,20 @@ TabbedView.propTypes = {
     PropTypes.node,
   ]).isRequired,
   activeTab: PropTypes.string,
-  skin: PropTypes.oneOf(['default', 'blue']),
+  skin: PropTypes.oneOf(['neutral', 'primary']),
+  theme: PropTypes.shape({
+    components: PropTypes.shape({
+      tabbedView: PropTypes.object,
+    }),
+  }),
 };
 
 TabbedView.defaultProps = {
   activeTab: undefined,
-  skin: 'default',
+  skin: 'neutral',
+  theme: {
+    components,
+  },
 };
 
 TabbedView.displayName = 'TabbedView';
