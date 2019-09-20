@@ -1,7 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { AutoExample, Tab, SimpleHighlight } from '@catho/quantum-storybook-ui';
-import { ProgressBarExample, CircularLoaderExample } from './Examples';
+import {
+  ProgressBarExample,
+  CircularLoaderExample,
+  SkeletonExample,
+} from './Examples';
 
 import {
   ProgressBar,
@@ -9,11 +13,14 @@ import {
   Container,
   Row,
   Col,
+  Skeleton,
 } from '../../components';
 
 const descriptions = {
   progressBar: `Progress bars are used to give the user a feedback to the progress of a process or an action.`,
   circularLoader: `CircularLoaders are used to give the user the impression of loading while a component is not ready to be displayed.`,
+  skeleton:
+    'A component that replaces others while they are loading or not ready to render.',
 };
 
 const renderExampleTab = componentExamples => (
@@ -46,5 +53,12 @@ storiesOf('Loaders', module)
       description={descriptions.circularLoader}
       component={CircularLoader}
       additionalTabs={renderExampleTab(CircularLoaderExample)}
+    />
+  ))
+  .add('Skeleton', () => (
+    <AutoExample
+      description={descriptions.skeleton}
+      component={Skeleton}
+      additionalTabs={renderExampleTab(SkeletonExample)}
     />
   ));
