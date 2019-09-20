@@ -22,7 +22,7 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 }
 
 .c0[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -63,7 +63,7 @@ exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop
 }
 
 .c0[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 

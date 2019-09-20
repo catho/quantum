@@ -1067,27 +1067,27 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
 }
 
 .c1 .c2:checked ~ .c4 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c1 .c2:checked ~ .c4:after {
-  background-color: #ff2d4d;
+  background-color: #ec584e;
   display: block;
 }
 
 .c1 .c2:focus ~ .c4 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c1 .c4 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c1:hover .c4,
 .c1:focus .c4 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c1 .c2:checked:disabled ~ .c4 {

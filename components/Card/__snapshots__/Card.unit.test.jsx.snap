@@ -43,7 +43,7 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   display: inline-block;
   height: 72px;
   width: 72px;
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 4px;
 }
 
@@ -67,7 +67,7 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  box-shadow: 0px 2px 1px -1px rgba(76,76,76,0.2),0px 1px 1px 0px rgba(76,76,76,0.14),0px 1px 3px 0px rgba(76,76,76,0.12);
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
   background-color: #ffffff;
 }
 
@@ -116,7 +116,7 @@ exports[`<Card /> Snapshots should match snapshot with rounded Thumbnail 1`] = `
   display: inline-block;
   height: 72px;
   width: 72px;
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
 }
 

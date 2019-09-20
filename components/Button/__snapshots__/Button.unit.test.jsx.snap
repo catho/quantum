@@ -249,9 +249,9 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #4c4c4c;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #4c4c4c;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -263,7 +263,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c0:active {
@@ -395,26 +395,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #6bc818;
+  background-color: #3b610f;
   color: #ffffff;
-  border: 2px solid #6bc818;
+  border: 2px solid #3b610f;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(60,101,16,0.2),0px 4px 5px 0px rgba(60,101,16,0.14),0px 1px 10px 0px rgba(60,101,16,0.12);
-  background-color: #3c6510;
-  border-color: #3c6510;
+  box-shadow: 0px 2px 4px -1px rgba(0,77,64,0.2),0px 4px 5px 0px rgba(0,77,64,0.14),0px 1px 10px 0px rgba(0,77,64,0.12);
+  background-color: #004D40;
+  border-color: #004D40;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(107,200,24,0.2),0px 4px 5px 0px rgba(107,200,24,0.14),0px 1px 10px 0px rgba(107,200,24,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(59,97,15,0.2),0px 4px 5px 0px rgba(59,97,15,0.14),0px 1px 10px 0px rgba(59,97,15,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(60,101,16,0.2),0px 8px 10px 1px rgba(60,101,16,0.14),0px 3px 14px 2px rgba(60,101,16,0.12);
-  background-color: #3c6510;
+  box-shadow: 0px 5px 5px -3px rgba(0,77,64,0.2),0px 8px 10px 1px rgba(0,77,64,0.14),0px 3px 14px 2px rgba(0,77,64,0.12);
+  background-color: #004D40;
 }
 
 .c0 .c1 function (_ref5) {
@@ -468,26 +468,26 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #ec7e00;
+  background-color: #f09100;
   color: #ffffff;
-  border: 2px solid #ec7e00;
+  border: 2px solid #f09100;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(163,99,0,0.2),0px 4px 5px 0px rgba(163,99,0,0.14),0px 1px 10px 0px rgba(163,99,0,0.12);
-  background-color: #a36300;
-  border-color: #a36300;
+  box-shadow: 0px 2px 4px -1px rgba(209,73,0,0.2),0px 4px 5px 0px rgba(209,73,0,0.14),0px 1px 10px 0px rgba(209,73,0,0.12);
+  background-color: #d14900;
+  border-color: #d14900;
 }
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(236,126,0,0.2),0px 4px 5px 0px rgba(236,126,0,0.14),0px 1px 10px 0px rgba(236,126,0,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(240,145,0,0.2),0px 4px 5px 0px rgba(240,145,0,0.14),0px 1px 10px 0px rgba(240,145,0,0.12);
 }
 
 .c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(163,99,0,0.2),0px 8px 10px 1px rgba(163,99,0,0.14),0px 3px 14px 2px rgba(163,99,0,0.12);
-  background-color: #a36300;
+  box-shadow: 0px 5px 5px -3px rgba(209,73,0,0.2),0px 8px 10px 1px rgba(209,73,0,0.14),0px 3px 14px 2px rgba(209,73,0,0.12);
+  background-color: #d14900;
 }
 
 .c0 .c1 function (_ref5) {
@@ -541,9 +541,9 @@ exports[`Button component when there is a skin set should match secondary snapsh
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #ff223d;
+  background-color: #e91b0c;
   color: #ffffff;
-  border: 2px solid #ff223d;
+  border: 2px solid #e91b0c;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -555,7 +555,7 @@ exports[`Button component when there is a skin set should match secondary snapsh
 
 .c0:focus,
 .c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(255,34,61,0.2),0px 4px 5px 0px rgba(255,34,61,0.14),0px 1px 10px 0px rgba(255,34,61,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(233,27,12,0.2),0px 4px 5px 0px rgba(233,27,12,0.14),0px 1px 10px 0px rgba(233,27,12,0.12);
 }
 
 .c0:active {
@@ -1015,19 +1015,19 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
-            "300": "#ff6c82",
-            "500": "#ff2d4d",
-            "700": "#ff223d",
+            "100": "#ffa8a8",
+            "300": "#f88e86",
+            "500": "#ec584e",
+            "700": "#e91b0c",
             "900": "#ac001a",
           },
           "neutral": Object {
             "0": "#ffffff",
             "100": "#f2f2f2",
             "1000": "#000000",
-            "300": "#cccccc",
+            "300": "#e0e0e0",
             "500": "#999999",
-            "700": "#4c4c4c",
+            "700": "#424242",
             "900": "#191919",
           },
           "primary": Object {
@@ -1038,25 +1038,25 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
             "900": "#002F7B",
           },
           "secondary": Object {
-            "100": "#f5b3cd",
-            "300": "#e84d8b",
-            "500": "#de0059",
-            "700": "#d50048",
-            "900": "#c8002e",
+            "100": "#F7B0C8",
+            "300": "#F278A1",
+            "500": "#E91E63",
+            "700": "#DE0059",
+            "900": "#9E003F",
           },
           "success": Object {
-            "100": "#edfadf",
-            "300": "#a5e064",
+            "100": "#dcedc8",
+            "300": "#c9eda2",
             "500": "#7ed321",
-            "700": "#6bc818",
-            "900": "#3c6510",
+            "700": "#3b610f",
+            "900": "#004D40",
           },
           "warning": Object {
             "100": "#ffefd6",
-            "300": "#f5b24d",
-            "500": "#f09100",
-            "700": "#ec7e00",
-            "900": "#a36300",
+            "300": "#ffda6a",
+            "500": "#ffc107",
+            "700": "#f09100",
+            "900": "#d14900",
           },
         },
         "components": Object {
@@ -1064,19 +1064,19 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
-                  "300": "#ff6c82",
-                  "500": "#ff2d4d",
-                  "700": "#ff223d",
+                  "100": "#ffa8a8",
+                  "300": "#f88e86",
+                  "500": "#ec584e",
+                  "700": "#e91b0c",
                   "900": "#ac001a",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1085,18 +1085,18 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1112,63 +1112,63 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "secondary": Object {
                 "mainColor": Object {
-                  "100": "#f5b3cd",
-                  "300": "#e84d8b",
-                  "500": "#de0059",
-                  "700": "#d50048",
-                  "900": "#c8002e",
+                  "100": "#F7B0C8",
+                  "300": "#F278A1",
+                  "500": "#E91E63",
+                  "700": "#DE0059",
+                  "900": "#9E003F",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "success": Object {
                 "mainColor": Object {
-                  "100": "#edfadf",
-                  "300": "#a5e064",
+                  "100": "#dcedc8",
+                  "300": "#c9eda2",
                   "500": "#7ed321",
-                  "700": "#6bc818",
-                  "900": "#3c6510",
+                  "700": "#3b610f",
+                  "900": "#004D40",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "warning": Object {
                 "mainColor": Object {
                   "100": "#ffefd6",
-                  "300": "#f5b24d",
-                  "500": "#f09100",
-                  "700": "#ec7e00",
-                  "900": "#a36300",
+                  "300": "#ffda6a",
+                  "500": "#ffc107",
+                  "700": "#f09100",
+                  "900": "#d14900",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1404,19 +1404,19 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
-            "300": "#ff6c82",
-            "500": "#ff2d4d",
-            "700": "#ff223d",
+            "100": "#ffa8a8",
+            "300": "#f88e86",
+            "500": "#ec584e",
+            "700": "#e91b0c",
             "900": "#ac001a",
           },
           "neutral": Object {
             "0": "#ffffff",
             "100": "#f2f2f2",
             "1000": "#000000",
-            "300": "#cccccc",
+            "300": "#e0e0e0",
             "500": "#999999",
-            "700": "#4c4c4c",
+            "700": "#424242",
             "900": "#191919",
           },
           "primary": Object {
@@ -1427,25 +1427,25 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
             "900": "#002F7B",
           },
           "secondary": Object {
-            "100": "#f5b3cd",
-            "300": "#e84d8b",
-            "500": "#de0059",
-            "700": "#d50048",
-            "900": "#c8002e",
+            "100": "#F7B0C8",
+            "300": "#F278A1",
+            "500": "#E91E63",
+            "700": "#DE0059",
+            "900": "#9E003F",
           },
           "success": Object {
-            "100": "#edfadf",
-            "300": "#a5e064",
+            "100": "#dcedc8",
+            "300": "#c9eda2",
             "500": "#7ed321",
-            "700": "#6bc818",
-            "900": "#3c6510",
+            "700": "#3b610f",
+            "900": "#004D40",
           },
           "warning": Object {
             "100": "#ffefd6",
-            "300": "#f5b24d",
-            "500": "#f09100",
-            "700": "#ec7e00",
-            "900": "#a36300",
+            "300": "#ffda6a",
+            "500": "#ffc107",
+            "700": "#f09100",
+            "900": "#d14900",
           },
         },
         "components": Object {
@@ -1453,19 +1453,19 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
-                  "300": "#ff6c82",
-                  "500": "#ff2d4d",
-                  "700": "#ff223d",
+                  "100": "#ffa8a8",
+                  "300": "#f88e86",
+                  "500": "#ec584e",
+                  "700": "#e91b0c",
                   "900": "#ac001a",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1474,18 +1474,18 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1501,63 +1501,63 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "secondary": Object {
                 "mainColor": Object {
-                  "100": "#f5b3cd",
-                  "300": "#e84d8b",
-                  "500": "#de0059",
-                  "700": "#d50048",
-                  "900": "#c8002e",
+                  "100": "#F7B0C8",
+                  "300": "#F278A1",
+                  "500": "#E91E63",
+                  "700": "#DE0059",
+                  "900": "#9E003F",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "success": Object {
                 "mainColor": Object {
-                  "100": "#edfadf",
-                  "300": "#a5e064",
+                  "100": "#dcedc8",
+                  "300": "#c9eda2",
                   "500": "#7ed321",
-                  "700": "#6bc818",
-                  "900": "#3c6510",
+                  "700": "#3b610f",
+                  "900": "#004D40",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "warning": Object {
                 "mainColor": Object {
                   "100": "#ffefd6",
-                  "300": "#f5b24d",
-                  "500": "#f09100",
-                  "700": "#ec7e00",
-                  "900": "#a36300",
+                  "300": "#ffda6a",
+                  "500": "#ffc107",
+                  "700": "#f09100",
+                  "900": "#d14900",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1793,19 +1793,19 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
-            "300": "#ff6c82",
-            "500": "#ff2d4d",
-            "700": "#ff223d",
+            "100": "#ffa8a8",
+            "300": "#f88e86",
+            "500": "#ec584e",
+            "700": "#e91b0c",
             "900": "#ac001a",
           },
           "neutral": Object {
             "0": "#ffffff",
             "100": "#f2f2f2",
             "1000": "#000000",
-            "300": "#cccccc",
+            "300": "#e0e0e0",
             "500": "#999999",
-            "700": "#4c4c4c",
+            "700": "#424242",
             "900": "#191919",
           },
           "primary": Object {
@@ -1816,25 +1816,25 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
             "900": "#002F7B",
           },
           "secondary": Object {
-            "100": "#f5b3cd",
-            "300": "#e84d8b",
-            "500": "#de0059",
-            "700": "#d50048",
-            "900": "#c8002e",
+            "100": "#F7B0C8",
+            "300": "#F278A1",
+            "500": "#E91E63",
+            "700": "#DE0059",
+            "900": "#9E003F",
           },
           "success": Object {
-            "100": "#edfadf",
-            "300": "#a5e064",
+            "100": "#dcedc8",
+            "300": "#c9eda2",
             "500": "#7ed321",
-            "700": "#6bc818",
-            "900": "#3c6510",
+            "700": "#3b610f",
+            "900": "#004D40",
           },
           "warning": Object {
             "100": "#ffefd6",
-            "300": "#f5b24d",
-            "500": "#f09100",
-            "700": "#ec7e00",
-            "900": "#a36300",
+            "300": "#ffda6a",
+            "500": "#ffc107",
+            "700": "#f09100",
+            "900": "#d14900",
           },
         },
         "components": Object {
@@ -1842,19 +1842,19 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
-                  "300": "#ff6c82",
-                  "500": "#ff2d4d",
-                  "700": "#ff223d",
+                  "100": "#ffa8a8",
+                  "300": "#f88e86",
+                  "500": "#ec584e",
+                  "700": "#e91b0c",
                   "900": "#ac001a",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1863,18 +1863,18 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -1890,63 +1890,63 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "secondary": Object {
                 "mainColor": Object {
-                  "100": "#f5b3cd",
-                  "300": "#e84d8b",
-                  "500": "#de0059",
-                  "700": "#d50048",
-                  "900": "#c8002e",
+                  "100": "#F7B0C8",
+                  "300": "#F278A1",
+                  "500": "#E91E63",
+                  "700": "#DE0059",
+                  "900": "#9E003F",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "success": Object {
                 "mainColor": Object {
-                  "100": "#edfadf",
-                  "300": "#a5e064",
+                  "100": "#dcedc8",
+                  "300": "#c9eda2",
                   "500": "#7ed321",
-                  "700": "#6bc818",
-                  "900": "#3c6510",
+                  "700": "#3b610f",
+                  "900": "#004D40",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "warning": Object {
                 "mainColor": Object {
                   "100": "#ffefd6",
-                  "300": "#f5b24d",
-                  "500": "#f09100",
-                  "700": "#ec7e00",
-                  "900": "#a36300",
+                  "300": "#ffda6a",
+                  "500": "#ffc107",
+                  "700": "#f09100",
+                  "900": "#d14900",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -2182,19 +2182,19 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
-            "300": "#ff6c82",
-            "500": "#ff2d4d",
-            "700": "#ff223d",
+            "100": "#ffa8a8",
+            "300": "#f88e86",
+            "500": "#ec584e",
+            "700": "#e91b0c",
             "900": "#ac001a",
           },
           "neutral": Object {
             "0": "#ffffff",
             "100": "#f2f2f2",
             "1000": "#000000",
-            "300": "#cccccc",
+            "300": "#e0e0e0",
             "500": "#999999",
-            "700": "#4c4c4c",
+            "700": "#424242",
             "900": "#191919",
           },
           "primary": Object {
@@ -2205,25 +2205,25 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
             "900": "#002F7B",
           },
           "secondary": Object {
-            "100": "#f5b3cd",
-            "300": "#e84d8b",
-            "500": "#de0059",
-            "700": "#d50048",
-            "900": "#c8002e",
+            "100": "#F7B0C8",
+            "300": "#F278A1",
+            "500": "#E91E63",
+            "700": "#DE0059",
+            "900": "#9E003F",
           },
           "success": Object {
-            "100": "#edfadf",
-            "300": "#a5e064",
+            "100": "#dcedc8",
+            "300": "#c9eda2",
             "500": "#7ed321",
-            "700": "#6bc818",
-            "900": "#3c6510",
+            "700": "#3b610f",
+            "900": "#004D40",
           },
           "warning": Object {
             "100": "#ffefd6",
-            "300": "#f5b24d",
-            "500": "#f09100",
-            "700": "#ec7e00",
-            "900": "#a36300",
+            "300": "#ffda6a",
+            "500": "#ffc107",
+            "700": "#f09100",
+            "900": "#d14900",
           },
         },
         "components": Object {
@@ -2231,19 +2231,19 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
-                  "300": "#ff6c82",
-                  "500": "#ff2d4d",
-                  "700": "#ff223d",
+                  "100": "#ffa8a8",
+                  "300": "#f88e86",
+                  "500": "#ec584e",
+                  "700": "#e91b0c",
                   "900": "#ac001a",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -2252,18 +2252,18 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
@@ -2279,63 +2279,63 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "secondary": Object {
                 "mainColor": Object {
-                  "100": "#f5b3cd",
-                  "300": "#e84d8b",
-                  "500": "#de0059",
-                  "700": "#d50048",
-                  "900": "#c8002e",
+                  "100": "#F7B0C8",
+                  "300": "#F278A1",
+                  "500": "#E91E63",
+                  "700": "#DE0059",
+                  "900": "#9E003F",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "success": Object {
                 "mainColor": Object {
-                  "100": "#edfadf",
-                  "300": "#a5e064",
+                  "100": "#dcedc8",
+                  "300": "#c9eda2",
                   "500": "#7ed321",
-                  "700": "#6bc818",
-                  "900": "#3c6510",
+                  "700": "#3b610f",
+                  "900": "#004D40",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },
               "warning": Object {
                 "mainColor": Object {
                   "100": "#ffefd6",
-                  "300": "#f5b24d",
-                  "500": "#f09100",
-                  "700": "#ec7e00",
-                  "900": "#a36300",
+                  "300": "#ffda6a",
+                  "500": "#ffc107",
+                  "700": "#f09100",
+                  "900": "#d14900",
                 },
                 "text": Object {
                   "0": "#ffffff",
                   "100": "#f2f2f2",
                   "1000": "#000000",
-                  "300": "#cccccc",
+                  "300": "#e0e0e0",
                   "500": "#999999",
-                  "700": "#4c4c4c",
+                  "700": "#424242",
                   "900": "#191919",
                 },
               },

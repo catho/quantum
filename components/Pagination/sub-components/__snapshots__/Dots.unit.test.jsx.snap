@@ -14,7 +14,7 @@ exports[`<Dots /> Snapshot should match snapshot 1`] = `
 .c1,
 .c1:after,
 .c1:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;

@@ -23,7 +23,7 @@ exports[`Input component  should match the snapshot 1`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -60,7 +60,7 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -68,12 +68,12 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -132,19 +132,19 @@ exports[`Input component  should match the snapshot 1`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -155,25 +155,25 @@ exports[`Input component  should match the snapshot 1`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -221,7 +221,7 @@ exports[`Input component  should match the snapshot 2`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -258,7 +258,7 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -266,12 +266,12 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -330,19 +330,19 @@ exports[`Input component  should match the snapshot 2`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -353,25 +353,25 @@ exports[`Input component  should match the snapshot 2`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -419,7 +419,7 @@ exports[`Input component  should match the snapshot 3`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -459,7 +459,7 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -467,12 +467,12 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -531,19 +531,19 @@ exports[`Input component  should match the snapshot 3`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -554,25 +554,25 @@ exports[`Input component  should match the snapshot 3`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -630,10 +630,10 @@ exports[`Input component  should match the snapshot 4`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
-  border-color: #ff2d4d;
+  border-color: #ec584e;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -663,12 +663,12 @@ exports[`Input component  should match the snapshot 4`] = `
 
 .c2:hover,
 .c2:focus {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -676,12 +676,12 @@ exports[`Input component  should match the snapshot 4`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -740,19 +740,19 @@ exports[`Input component  should match the snapshot 4`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -763,25 +763,25 @@ exports[`Input component  should match the snapshot 4`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -833,7 +833,7 @@ exports[`Input component  should match the snapshot 5`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -870,7 +870,7 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -878,12 +878,12 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -942,19 +942,19 @@ exports[`Input component  should match the snapshot 5`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -965,25 +965,25 @@ exports[`Input component  should match the snapshot 5`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -1037,7 +1037,7 @@ exports[`Input component  should match the snapshot 6`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -1074,7 +1074,7 @@ exports[`Input component  should match the snapshot 6`] = `
 }
 
 .c3[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -1082,12 +1082,12 @@ exports[`Input component  should match the snapshot 6`] = `
 }
 
 .c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c4 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -1153,19 +1153,19 @@ exports[`Input component  should match the snapshot 6`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -1176,25 +1176,25 @@ exports[`Input component  should match the snapshot 6`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -1234,7 +1234,7 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c3 {
-  color: #ff2d4d;
+  color: #ec584e;
 }
 
 .c4 {
@@ -1252,7 +1252,7 @@ exports[`Input component  should match the snapshot 7`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -1289,7 +1289,7 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c4[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -1297,12 +1297,12 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c4:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c5 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -1373,19 +1373,19 @@ exports[`Input component  should match the snapshot 7`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -1396,25 +1396,25 @@ exports[`Input component  should match the snapshot 7`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -1462,7 +1462,7 @@ exports[`Input component  should match the snapshot 8`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   color: #999999;
@@ -1500,7 +1500,7 @@ exports[`Input component  should match the snapshot 8`] = `
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -1508,12 +1508,12 @@ exports[`Input component  should match the snapshot 8`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
   position: absolute;
   top: 12px;
   right: 14px;
@@ -1584,19 +1584,19 @@ exports[`Input component  should match the snapshot 8`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -1607,25 +1607,25 @@ exports[`Input component  should match the snapshot 8`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -1673,7 +1673,7 @@ exports[`Input component  should match the snapshot 9`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -1710,7 +1710,7 @@ exports[`Input component  should match the snapshot 9`] = `
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -1718,12 +1718,12 @@ exports[`Input component  should match the snapshot 9`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -1782,19 +1782,19 @@ exports[`Input component  should match the snapshot 9`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -1805,25 +1805,25 @@ exports[`Input component  should match the snapshot 9`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {
@@ -1871,7 +1871,7 @@ exports[`Input component  should match the snapshot 10`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   -webkit-align-items: center;
@@ -1907,7 +1907,7 @@ exports[`Input component  should match the snapshot 10`] = `
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -1915,12 +1915,12 @@ exports[`Input component  should match the snapshot 10`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #ffa8a8 inset;
 }
 
 .c3 {
   pointer-events: none;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -1979,19 +1979,19 @@ exports[`Input component  should match the snapshot 10`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
@@ -2002,25 +2002,25 @@ exports[`Input component  should match the snapshot 10`] = `
                 "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "spacing": Object {

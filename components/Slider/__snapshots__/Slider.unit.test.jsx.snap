@@ -11,8 +11,8 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  background-color: #424242;
+  border-color: #424242;
   color: #f2f2f2;
   font-size: 16px;
   padding: 4px 8px;
@@ -80,7 +80,7 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
 }
 
 .c4.rc-slider-disabled .rc-slider-track {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
 }
 
 .c4.rc-slider-disabled .rc-slider-handle:active,
@@ -237,8 +237,8 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  background-color: #424242;
+  border-color: #424242;
   color: #f2f2f2;
   font-size: 16px;
   padding: 4px 8px;
@@ -306,7 +306,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
 }
 
 .c4.rc-slider-disabled .rc-slider-track {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
 }
 
 .c4.rc-slider-disabled .rc-slider-handle:active,
@@ -463,8 +463,8 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  background-color: #424242;
+  border-color: #424242;
   color: #f2f2f2;
   font-size: 16px;
   padding: 4px 8px;
@@ -532,7 +532,7 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
 }
 
 .c4.rc-slider-disabled .rc-slider-track {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
 }
 
 .c4.rc-slider-disabled .rc-slider-handle:active,

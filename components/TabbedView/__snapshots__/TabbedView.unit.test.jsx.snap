@@ -58,13 +58,13 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "alert": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffe5e9",
-              "icon": "#ff2d4d",
+              "background": "#ffa8a8",
+              "icon": "#e91b0c",
               "text": "#ac001a",
             },
             "neutral": Object {
               "background": "#f2f2f2",
-              "icon": "#999999",
+              "icon": "#424242",
               "text": "#191919",
             },
             "primary": Object {
@@ -73,34 +73,34 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
               "text": "#002F7B",
             },
             "success": Object {
-              "background": "#edfadf",
-              "icon": "#7ed321",
-              "text": "#3c6510",
+              "background": "#dcedc8",
+              "icon": "#3b610f",
+              "text": "#004D40",
             },
             "warning": Object {
               "background": "#ffefd6",
               "icon": "#f09100",
-              "text": "#a36300",
+              "text": "#d14900",
             },
           },
         },
         "badge": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ff2d4d",
+              "background": "#ec584e",
               "text": "#f2f2f2",
             },
             "neutral": Object {
               "background": "#f2f2f2",
-              "text": "#4c4c4c",
+              "text": "#424242",
             },
             "primary": Object {
               "background": "#1250C4",
               "text": "#f2f2f2",
             },
             "success": Object {
-              "background": "#edfadf",
-              "text": "#3c6510",
+              "background": "#dcedc8",
+              "text": "#004D40",
             },
           },
         },
@@ -108,19 +108,19 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
           "skins": Object {
             "error": Object {
               "mainColor": Object {
-                "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "100": "#ffa8a8",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "text": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
             },
@@ -129,18 +129,18 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "text": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
             },
@@ -156,63 +156,63 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
             },
             "secondary": Object {
               "mainColor": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "text": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
             },
             "success": Object {
               "mainColor": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "text": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
             },
             "warning": Object {
               "mainColor": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
               "text": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
             },
@@ -221,20 +221,20 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "popover": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffe5e9",
+              "background": "#ffa8a8",
               "text": "#ac001a",
             },
             "neutral": Object {
               "background": "#ffffff",
-              "text": "#4c4c4c",
+              "text": "#424242",
             },
             "success": Object {
-              "background": "#edfadf",
-              "text": "#3c6510",
+              "background": "#dcedc8",
+              "text": "#004D40",
             },
             "warning": Object {
               "background": "#ffefd6",
-              "text": "#a36300",
+              "text": "#d14900",
             },
           },
         },
@@ -242,17 +242,17 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
           "skins": Object {
             "neutral": Object {
               "background": "#999999",
-              "textColor": "#4c4c4c",
+              "textColor": "#424242",
               "titleColor": "#000000",
             },
             "primary": Object {
               "background": "#1250C4",
-              "textColor": "#4c4c4c",
+              "textColor": "#424242",
               "titleColor": "#000000",
             },
             "secondary": Object {
-              "background": "#de0059",
-              "textColor": "#4c4c4c",
+              "background": "#E91E63",
+              "textColor": "#424242",
               "titleColor": "#000000",
             },
           },
@@ -260,11 +260,11 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "snackbar": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffe5e9",
+              "background": "#ffa8a8",
               "text": "#ac001a",
             },
             "neutral": Object {
-              "background": "#4c4c4c",
+              "background": "#424242",
               "text": "#f2f2f2",
             },
             "primary": Object {
@@ -272,12 +272,12 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
               "text": "#f2f2f2",
             },
             "success": Object {
-              "background": "#edfadf",
-              "text": "#3c6510",
+              "background": "#dcedc8",
+              "text": "#004D40",
             },
             "warning": Object {
               "background": "#ffefd6",
-              "text": "#a36300",
+              "text": "#d14900",
             },
           },
         },
@@ -300,24 +300,24 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "tag": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffe5e9",
+              "background": "#ffa8a8",
               "text": "#ac001a",
             },
             "neutral": Object {
               "background": "#f2f2f2",
-              "text": "#4c4c4c",
+              "text": "#424242",
             },
             "primary": Object {
               "background": "#E5EDFC",
               "text": "#1250C4",
             },
             "success": Object {
-              "background": "#edfadf",
-              "text": "#3c6510",
+              "background": "#dcedc8",
+              "text": "#004D40",
             },
             "warning": Object {
               "background": "#ffefd6",
-              "text": "#a36300",
+              "text": "#d14900",
             },
           },
         },
@@ -372,13 +372,13 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "alert": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffe5e9",
-                      "icon": "#ff2d4d",
+                      "background": "#ffa8a8",
+                      "icon": "#e91b0c",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
                       "background": "#f2f2f2",
-                      "icon": "#999999",
+                      "icon": "#424242",
                       "text": "#191919",
                     },
                     "primary": Object {
@@ -387,34 +387,34 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                       "text": "#002F7B",
                     },
                     "success": Object {
-                      "background": "#edfadf",
-                      "icon": "#7ed321",
-                      "text": "#3c6510",
+                      "background": "#dcedc8",
+                      "icon": "#3b610f",
+                      "text": "#004D40",
                     },
                     "warning": Object {
                       "background": "#ffefd6",
                       "icon": "#f09100",
-                      "text": "#a36300",
+                      "text": "#d14900",
                     },
                   },
                 },
                 "badge": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ff2d4d",
+                      "background": "#ec584e",
                       "text": "#f2f2f2",
                     },
                     "neutral": Object {
                       "background": "#f2f2f2",
-                      "text": "#4c4c4c",
+                      "text": "#424242",
                     },
                     "primary": Object {
                       "background": "#1250C4",
                       "text": "#f2f2f2",
                     },
                     "success": Object {
-                      "background": "#edfadf",
-                      "text": "#3c6510",
+                      "background": "#dcedc8",
+                      "text": "#004D40",
                     },
                   },
                 },
@@ -422,19 +422,19 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffe5e9",
-                        "300": "#ff6c82",
-                        "500": "#ff2d4d",
-                        "700": "#ff223d",
+                        "100": "#ffa8a8",
+                        "300": "#f88e86",
+                        "500": "#ec584e",
+                        "700": "#e91b0c",
                         "900": "#ac001a",
                       },
                       "text": Object {
                         "0": "#ffffff",
                         "100": "#f2f2f2",
                         "1000": "#000000",
-                        "300": "#cccccc",
+                        "300": "#e0e0e0",
                         "500": "#999999",
-                        "700": "#4c4c4c",
+                        "700": "#424242",
                         "900": "#191919",
                       },
                     },
@@ -443,18 +443,18 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                         "0": "#ffffff",
                         "100": "#f2f2f2",
                         "1000": "#000000",
-                        "300": "#cccccc",
+                        "300": "#e0e0e0",
                         "500": "#999999",
-                        "700": "#4c4c4c",
+                        "700": "#424242",
                         "900": "#191919",
                       },
                       "text": Object {
                         "0": "#ffffff",
                         "100": "#f2f2f2",
                         "1000": "#000000",
-                        "300": "#cccccc",
+                        "300": "#e0e0e0",
                         "500": "#999999",
-                        "700": "#4c4c4c",
+                        "700": "#424242",
                         "900": "#191919",
                       },
                     },
@@ -470,63 +470,63 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                         "0": "#ffffff",
                         "100": "#f2f2f2",
                         "1000": "#000000",
-                        "300": "#cccccc",
+                        "300": "#e0e0e0",
                         "500": "#999999",
-                        "700": "#4c4c4c",
+                        "700": "#424242",
                         "900": "#191919",
                       },
                     },
                     "secondary": Object {
                       "mainColor": Object {
-                        "100": "#f5b3cd",
-                        "300": "#e84d8b",
-                        "500": "#de0059",
-                        "700": "#d50048",
-                        "900": "#c8002e",
+                        "100": "#F7B0C8",
+                        "300": "#F278A1",
+                        "500": "#E91E63",
+                        "700": "#DE0059",
+                        "900": "#9E003F",
                       },
                       "text": Object {
                         "0": "#ffffff",
                         "100": "#f2f2f2",
                         "1000": "#000000",
-                        "300": "#cccccc",
+                        "300": "#e0e0e0",
                         "500": "#999999",
-                        "700": "#4c4c4c",
+                        "700": "#424242",
                         "900": "#191919",
                       },
                     },
                     "success": Object {
                       "mainColor": Object {
-                        "100": "#edfadf",
-                        "300": "#a5e064",
+                        "100": "#dcedc8",
+                        "300": "#c9eda2",
                         "500": "#7ed321",
-                        "700": "#6bc818",
-                        "900": "#3c6510",
+                        "700": "#3b610f",
+                        "900": "#004D40",
                       },
                       "text": Object {
                         "0": "#ffffff",
                         "100": "#f2f2f2",
                         "1000": "#000000",
-                        "300": "#cccccc",
+                        "300": "#e0e0e0",
                         "500": "#999999",
-                        "700": "#4c4c4c",
+                        "700": "#424242",
                         "900": "#191919",
                       },
                     },
                     "warning": Object {
                       "mainColor": Object {
                         "100": "#ffefd6",
-                        "300": "#f5b24d",
-                        "500": "#f09100",
-                        "700": "#ec7e00",
-                        "900": "#a36300",
+                        "300": "#ffda6a",
+                        "500": "#ffc107",
+                        "700": "#f09100",
+                        "900": "#d14900",
                       },
                       "text": Object {
                         "0": "#ffffff",
                         "100": "#f2f2f2",
                         "1000": "#000000",
-                        "300": "#cccccc",
+                        "300": "#e0e0e0",
                         "500": "#999999",
-                        "700": "#4c4c4c",
+                        "700": "#424242",
                         "900": "#191919",
                       },
                     },
@@ -535,20 +535,20 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffe5e9",
+                      "background": "#ffa8a8",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
                       "background": "#ffffff",
-                      "text": "#4c4c4c",
+                      "text": "#424242",
                     },
                     "success": Object {
-                      "background": "#edfadf",
-                      "text": "#3c6510",
+                      "background": "#dcedc8",
+                      "text": "#004D40",
                     },
                     "warning": Object {
                       "background": "#ffefd6",
-                      "text": "#a36300",
+                      "text": "#d14900",
                     },
                   },
                 },
@@ -556,17 +556,17 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "skins": Object {
                     "neutral": Object {
                       "background": "#999999",
-                      "textColor": "#4c4c4c",
+                      "textColor": "#424242",
                       "titleColor": "#000000",
                     },
                     "primary": Object {
                       "background": "#1250C4",
-                      "textColor": "#4c4c4c",
+                      "textColor": "#424242",
                       "titleColor": "#000000",
                     },
                     "secondary": Object {
-                      "background": "#de0059",
-                      "textColor": "#4c4c4c",
+                      "background": "#E91E63",
+                      "textColor": "#424242",
                       "titleColor": "#000000",
                     },
                   },
@@ -574,11 +574,11 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "snackbar": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffe5e9",
+                      "background": "#ffa8a8",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
-                      "background": "#4c4c4c",
+                      "background": "#424242",
                       "text": "#f2f2f2",
                     },
                     "primary": Object {
@@ -586,12 +586,12 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                       "text": "#f2f2f2",
                     },
                     "success": Object {
-                      "background": "#edfadf",
-                      "text": "#3c6510",
+                      "background": "#dcedc8",
+                      "text": "#004D40",
                     },
                     "warning": Object {
                       "background": "#ffefd6",
-                      "text": "#a36300",
+                      "text": "#d14900",
                     },
                   },
                 },
@@ -614,24 +614,24 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "tag": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffe5e9",
+                      "background": "#ffa8a8",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
                       "background": "#f2f2f2",
-                      "text": "#4c4c4c",
+                      "text": "#424242",
                     },
                     "primary": Object {
                       "background": "#E5EDFC",
                       "text": "#1250C4",
                     },
                     "success": Object {
-                      "background": "#edfadf",
-                      "text": "#3c6510",
+                      "background": "#dcedc8",
+                      "text": "#004D40",
                     },
                     "warning": Object {
                       "background": "#ffefd6",
-                      "text": "#a36300",
+                      "text": "#d14900",
                     },
                   },
                 },
@@ -679,13 +679,13 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "alert": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffe5e9",
-                        "icon": "#ff2d4d",
+                        "background": "#ffa8a8",
+                        "icon": "#e91b0c",
                         "text": "#ac001a",
                       },
                       "neutral": Object {
                         "background": "#f2f2f2",
-                        "icon": "#999999",
+                        "icon": "#424242",
                         "text": "#191919",
                       },
                       "primary": Object {
@@ -694,34 +694,34 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                         "text": "#002F7B",
                       },
                       "success": Object {
-                        "background": "#edfadf",
-                        "icon": "#7ed321",
-                        "text": "#3c6510",
+                        "background": "#dcedc8",
+                        "icon": "#3b610f",
+                        "text": "#004D40",
                       },
                       "warning": Object {
                         "background": "#ffefd6",
                         "icon": "#f09100",
-                        "text": "#a36300",
+                        "text": "#d14900",
                       },
                     },
                   },
                   "badge": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ff2d4d",
+                        "background": "#ec584e",
                         "text": "#f2f2f2",
                       },
                       "neutral": Object {
                         "background": "#f2f2f2",
-                        "text": "#4c4c4c",
+                        "text": "#424242",
                       },
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
                       },
                       "success": Object {
-                        "background": "#edfadf",
-                        "text": "#3c6510",
+                        "background": "#dcedc8",
+                        "text": "#004D40",
                       },
                     },
                   },
@@ -729,19 +729,19 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                     "skins": Object {
                       "error": Object {
                         "mainColor": Object {
-                          "100": "#ffe5e9",
-                          "300": "#ff6c82",
-                          "500": "#ff2d4d",
-                          "700": "#ff223d",
+                          "100": "#ffa8a8",
+                          "300": "#f88e86",
+                          "500": "#ec584e",
+                          "700": "#e91b0c",
                           "900": "#ac001a",
                         },
                         "text": Object {
                           "0": "#ffffff",
                           "100": "#f2f2f2",
                           "1000": "#000000",
-                          "300": "#cccccc",
+                          "300": "#e0e0e0",
                           "500": "#999999",
-                          "700": "#4c4c4c",
+                          "700": "#424242",
                           "900": "#191919",
                         },
                       },
@@ -750,18 +750,18 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                           "0": "#ffffff",
                           "100": "#f2f2f2",
                           "1000": "#000000",
-                          "300": "#cccccc",
+                          "300": "#e0e0e0",
                           "500": "#999999",
-                          "700": "#4c4c4c",
+                          "700": "#424242",
                           "900": "#191919",
                         },
                         "text": Object {
                           "0": "#ffffff",
                           "100": "#f2f2f2",
                           "1000": "#000000",
-                          "300": "#cccccc",
+                          "300": "#e0e0e0",
                           "500": "#999999",
-                          "700": "#4c4c4c",
+                          "700": "#424242",
                           "900": "#191919",
                         },
                       },
@@ -777,63 +777,63 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                           "0": "#ffffff",
                           "100": "#f2f2f2",
                           "1000": "#000000",
-                          "300": "#cccccc",
+                          "300": "#e0e0e0",
                           "500": "#999999",
-                          "700": "#4c4c4c",
+                          "700": "#424242",
                           "900": "#191919",
                         },
                       },
                       "secondary": Object {
                         "mainColor": Object {
-                          "100": "#f5b3cd",
-                          "300": "#e84d8b",
-                          "500": "#de0059",
-                          "700": "#d50048",
-                          "900": "#c8002e",
+                          "100": "#F7B0C8",
+                          "300": "#F278A1",
+                          "500": "#E91E63",
+                          "700": "#DE0059",
+                          "900": "#9E003F",
                         },
                         "text": Object {
                           "0": "#ffffff",
                           "100": "#f2f2f2",
                           "1000": "#000000",
-                          "300": "#cccccc",
+                          "300": "#e0e0e0",
                           "500": "#999999",
-                          "700": "#4c4c4c",
+                          "700": "#424242",
                           "900": "#191919",
                         },
                       },
                       "success": Object {
                         "mainColor": Object {
-                          "100": "#edfadf",
-                          "300": "#a5e064",
+                          "100": "#dcedc8",
+                          "300": "#c9eda2",
                           "500": "#7ed321",
-                          "700": "#6bc818",
-                          "900": "#3c6510",
+                          "700": "#3b610f",
+                          "900": "#004D40",
                         },
                         "text": Object {
                           "0": "#ffffff",
                           "100": "#f2f2f2",
                           "1000": "#000000",
-                          "300": "#cccccc",
+                          "300": "#e0e0e0",
                           "500": "#999999",
-                          "700": "#4c4c4c",
+                          "700": "#424242",
                           "900": "#191919",
                         },
                       },
                       "warning": Object {
                         "mainColor": Object {
                           "100": "#ffefd6",
-                          "300": "#f5b24d",
-                          "500": "#f09100",
-                          "700": "#ec7e00",
-                          "900": "#a36300",
+                          "300": "#ffda6a",
+                          "500": "#ffc107",
+                          "700": "#f09100",
+                          "900": "#d14900",
                         },
                         "text": Object {
                           "0": "#ffffff",
                           "100": "#f2f2f2",
                           "1000": "#000000",
-                          "300": "#cccccc",
+                          "300": "#e0e0e0",
                           "500": "#999999",
-                          "700": "#4c4c4c",
+                          "700": "#424242",
                           "900": "#191919",
                         },
                       },
@@ -842,20 +842,20 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "popover": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffe5e9",
+                        "background": "#ffa8a8",
                         "text": "#ac001a",
                       },
                       "neutral": Object {
                         "background": "#ffffff",
-                        "text": "#4c4c4c",
+                        "text": "#424242",
                       },
                       "success": Object {
-                        "background": "#edfadf",
-                        "text": "#3c6510",
+                        "background": "#dcedc8",
+                        "text": "#004D40",
                       },
                       "warning": Object {
                         "background": "#ffefd6",
-                        "text": "#a36300",
+                        "text": "#d14900",
                       },
                     },
                   },
@@ -863,17 +863,17 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                     "skins": Object {
                       "neutral": Object {
                         "background": "#999999",
-                        "textColor": "#4c4c4c",
+                        "textColor": "#424242",
                         "titleColor": "#000000",
                       },
                       "primary": Object {
                         "background": "#1250C4",
-                        "textColor": "#4c4c4c",
+                        "textColor": "#424242",
                         "titleColor": "#000000",
                       },
                       "secondary": Object {
-                        "background": "#de0059",
-                        "textColor": "#4c4c4c",
+                        "background": "#E91E63",
+                        "textColor": "#424242",
                         "titleColor": "#000000",
                       },
                     },
@@ -881,11 +881,11 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "snackbar": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffe5e9",
+                        "background": "#ffa8a8",
                         "text": "#ac001a",
                       },
                       "neutral": Object {
-                        "background": "#4c4c4c",
+                        "background": "#424242",
                         "text": "#f2f2f2",
                       },
                       "primary": Object {
@@ -893,12 +893,12 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                         "text": "#f2f2f2",
                       },
                       "success": Object {
-                        "background": "#edfadf",
-                        "text": "#3c6510",
+                        "background": "#dcedc8",
+                        "text": "#004D40",
                       },
                       "warning": Object {
                         "background": "#ffefd6",
-                        "text": "#a36300",
+                        "text": "#d14900",
                       },
                     },
                   },
@@ -921,24 +921,24 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "tag": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffe5e9",
+                        "background": "#ffa8a8",
                         "text": "#ac001a",
                       },
                       "neutral": Object {
                         "background": "#f2f2f2",
-                        "text": "#4c4c4c",
+                        "text": "#424242",
                       },
                       "primary": Object {
                         "background": "#E5EDFC",
                         "text": "#1250C4",
                       },
                       "success": Object {
-                        "background": "#edfadf",
-                        "text": "#3c6510",
+                        "background": "#dcedc8",
+                        "text": "#004D40",
                       },
                       "warning": Object {
                         "background": "#ffefd6",
-                        "text": "#a36300",
+                        "text": "#d14900",
                       },
                     },
                   },

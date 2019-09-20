@@ -37,7 +37,7 @@ const wrapperColors = props => {
   } = props;
 
   return css`
-    background-color: ${stroked ? neutral[100] : background};
+    background-color: ${stroked ? neutral[0] : background};
     border: ${stroked ? `1px solid ${text}` : 'none'};
     color: ${text};
   `;

@@ -6,8 +6,8 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #cccccc;
-  color: #4c4c4c;
+  border-color: #e0e0e0;
+  color: #424242;
   padding: 8px 16px;
 }
 
@@ -37,14 +37,14 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   white-space: nowrap;
   margin: 0 4px;
   padding: 8px;
-  border-color: #cccccc;
+  border-color: #e0e0e0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin: 0;
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -73,14 +73,14 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   white-space: nowrap;
   margin: 0 4px;
   padding: 8px;
-  border-color: #cccccc;
+  border-color: #e0e0e0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin: 0;
 }
 
 .c3[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -156,7 +156,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -238,8 +238,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -358,7 +358,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -440,8 +440,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -569,7 +569,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -593,7 +593,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 .c5,
 .c5:after,
 .c5:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -686,8 +686,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -813,7 +813,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -895,8 +895,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -1033,7 +1033,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -1057,7 +1057,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 .c4,
 .c4:after,
 .c4:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -1150,8 +1150,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -1277,7 +1277,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -1301,7 +1301,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 .c4,
 .c4:after,
 .c4:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -1394,8 +1394,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -1521,7 +1521,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -1545,7 +1545,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 .c4,
 .c4:after,
 .c4:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -1638,8 +1638,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -1772,7 +1772,7 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 

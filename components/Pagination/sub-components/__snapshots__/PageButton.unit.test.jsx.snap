@@ -29,8 +29,8 @@ exports[`<PageButton /> Snapshot should match snapshot 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;

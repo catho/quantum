@@ -43,7 +43,7 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
 }
 
 .c3 {
-  color: #4c4c4c;
+  color: #424242;
 }
 
 <div
@@ -111,7 +111,7 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
 }
 
 .c3 {
-  color: #4c4c4c;
+  color: #424242;
 }
 
 <div
@@ -179,7 +179,7 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
 }
 
 .c3 {
-  color: #4c4c4c;
+  color: #424242;
 }
 
 <div
@@ -247,7 +247,7 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
 }
 
 .c3 {
-  color: #4c4c4c;
+  color: #424242;
 }
 
 <div
@@ -315,7 +315,7 @@ exports[`ProgressBar component Should match the snapshot of a simple progress ba
 }
 
 .c3 {
-  color: #4c4c4c;
+  color: #424242;
 }
 
 <div

@@ -20,7 +20,7 @@ exports[`<Badge /> Should match snapshot With number 1`] = `
   padding-left: 2px;
   padding-right: 2px;
   background-color: #f2f2f2;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 <div
@@ -59,7 +59,7 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   right: -10px;
   top: -10px;
   background-color: #f2f2f2;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c2 {
