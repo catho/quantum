@@ -12,7 +12,12 @@ import {
 
 import { Row, Col } from '../../components';
 import SnackBar from '../../components/SnackBar';
-import SnackBarExample from './examples/SnackBarExample';
+import {
+  SnackBarExample,
+  SnackBarExamplePrimary,
+  SnackBarExampleSuccess,
+  SnackBarExampleError,
+} from './examples';
 
 storiesOf('SnackBar', module).add('SnackBar', () => (
   <>
@@ -29,6 +34,21 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
           <Row>
             <Col style={{ marginTop: '20px' }}>
               <SnackBarExample />
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{ marginTop: '20px' }}>
+              <SnackBarExamplePrimary />
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{ marginTop: '20px' }}>
+              <SnackBarExampleSuccess />
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{ marginTop: '20px' }}>
+              <SnackBarExampleError />
             </Col>
           </Row>
         </StoryContainer>
