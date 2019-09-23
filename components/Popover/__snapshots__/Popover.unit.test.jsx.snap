@@ -1228,7 +1228,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -1277,7 +1277,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -1390,7 +1390,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -1652,7 +1652,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -1701,7 +1701,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -1814,7 +1814,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -1906,7 +1906,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -1955,7 +1955,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -2068,7 +2068,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -2166,7 +2166,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -2215,7 +2215,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -2328,7 +2328,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -2414,7 +2414,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -2586,7 +2586,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -2635,7 +2635,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -2748,7 +2748,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -2816,7 +2816,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -2865,7 +2865,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -2978,7 +2978,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -3046,7 +3046,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -3095,7 +3095,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -3208,7 +3208,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -3312,7 +3312,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -3361,7 +3361,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -3474,7 +3474,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -3542,7 +3542,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -3591,7 +3591,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -3704,7 +3704,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -3788,7 +3788,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -3837,7 +3837,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -3950,7 +3950,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -4013,7 +4013,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -4062,7 +4062,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -4175,7 +4175,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -4240,7 +4240,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -4289,7 +4289,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -4402,7 +4402,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -4483,7 +4483,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -4532,7 +4532,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -4645,7 +4645,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -4711,7 +4711,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -4760,7 +4760,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -4873,7 +4873,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {
@@ -5244,7 +5244,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -5293,7 +5293,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -5406,7 +5406,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -5668,7 +5668,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -5717,7 +5717,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -5830,7 +5830,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -5922,7 +5922,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -5971,7 +5971,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -6084,7 +6084,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -6182,7 +6182,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -6231,7 +6231,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -6344,7 +6344,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -6430,7 +6430,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -6602,7 +6602,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -6651,7 +6651,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -6764,7 +6764,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -6832,7 +6832,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -6881,7 +6881,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -6994,7 +6994,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -7062,7 +7062,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -7111,7 +7111,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -7224,7 +7224,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -7328,7 +7328,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -7377,7 +7377,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -7490,7 +7490,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -7558,7 +7558,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -7607,7 +7607,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -7720,7 +7720,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -7804,7 +7804,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -7853,7 +7853,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -7966,7 +7966,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -8029,7 +8029,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -8078,7 +8078,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -8191,7 +8191,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -8256,7 +8256,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -8305,7 +8305,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -8418,7 +8418,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -8499,7 +8499,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -8548,7 +8548,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -8661,7 +8661,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -8727,7 +8727,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -8776,7 +8776,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -8889,7 +8889,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {
@@ -9276,7 +9276,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -9325,7 +9325,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -9438,7 +9438,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -9716,7 +9716,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -9765,7 +9765,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -9878,7 +9878,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -9970,7 +9970,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -10019,7 +10019,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -10132,7 +10132,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -10230,7 +10230,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -10279,7 +10279,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -10392,7 +10392,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -10478,7 +10478,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -10650,7 +10650,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -10699,7 +10699,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -10812,7 +10812,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -10880,7 +10880,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -10929,7 +10929,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -11042,7 +11042,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -11110,7 +11110,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -11159,7 +11159,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -11272,7 +11272,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -11376,7 +11376,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -11425,7 +11425,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -11538,7 +11538,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -11606,7 +11606,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -11655,7 +11655,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -11768,7 +11768,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -11852,7 +11852,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -11901,7 +11901,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -12014,7 +12014,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -12077,7 +12077,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -12126,7 +12126,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -12239,7 +12239,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -12304,7 +12304,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -12353,7 +12353,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -12466,7 +12466,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -12547,7 +12547,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -12596,7 +12596,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -12709,7 +12709,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -12775,7 +12775,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -12824,7 +12824,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -12937,7 +12937,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {
@@ -13340,7 +13340,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -13389,7 +13389,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -13502,7 +13502,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -13796,7 +13796,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -13845,7 +13845,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -13958,7 +13958,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -14050,7 +14050,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -14099,7 +14099,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -14212,7 +14212,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -14310,7 +14310,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -14359,7 +14359,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -14472,7 +14472,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -14558,7 +14558,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -14730,7 +14730,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -14779,7 +14779,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -14892,7 +14892,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -14960,7 +14960,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -15009,7 +15009,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -15122,7 +15122,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -15190,7 +15190,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -15239,7 +15239,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -15352,7 +15352,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -15456,7 +15456,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -15505,7 +15505,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -15618,7 +15618,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -15686,7 +15686,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -15735,7 +15735,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -15848,7 +15848,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -15932,7 +15932,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -15981,7 +15981,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -16094,7 +16094,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -16157,7 +16157,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -16206,7 +16206,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -16319,7 +16319,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -16384,7 +16384,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -16433,7 +16433,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -16546,7 +16546,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -16627,7 +16627,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -16676,7 +16676,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -16789,7 +16789,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -16855,7 +16855,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -16904,7 +16904,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -17017,7 +17017,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {
@@ -17231,12 +17231,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffa8a8;
+  background-color: #ffe5e9;
   color: #ac001a;
 }
 
 .c1:before {
-  color: #ffa8a8;
+  color: #ffe5e9;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -17436,7 +17436,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -17485,7 +17485,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -17598,7 +17598,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -17751,12 +17751,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffa8a8;
+  background-color: #ffe5e9;
   color: #ac001a;
 }
 
 .c0:before {
-  color: #ffa8a8;
+  color: #ffe5e9;
   font-size: 16px;
   position: absolute;
   content: '▼';
@@ -17908,7 +17908,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -17957,7 +17957,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -18070,7 +18070,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -18162,7 +18162,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -18211,7 +18211,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -18324,7 +18324,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -18422,7 +18422,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -18471,7 +18471,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -18584,7 +18584,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -18670,7 +18670,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -18842,7 +18842,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -18891,7 +18891,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -19004,7 +19004,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -19072,7 +19072,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -19121,7 +19121,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -19234,7 +19234,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -19302,7 +19302,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -19351,7 +19351,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -19464,7 +19464,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -19568,7 +19568,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -19617,7 +19617,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -19730,7 +19730,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -19798,7 +19798,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -19847,7 +19847,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -19960,7 +19960,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -20044,7 +20044,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -20093,7 +20093,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -20206,7 +20206,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -20269,7 +20269,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -20318,7 +20318,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -20431,7 +20431,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -20496,7 +20496,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -20545,7 +20545,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -20658,7 +20658,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -20739,7 +20739,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -20788,7 +20788,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -20901,7 +20901,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -20967,7 +20967,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -21016,7 +21016,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -21129,7 +21129,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {
@@ -21548,7 +21548,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -21597,7 +21597,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -21710,7 +21710,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -22020,7 +22020,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -22069,7 +22069,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -22182,7 +22182,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -22274,7 +22274,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -22323,7 +22323,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -22436,7 +22436,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -22534,7 +22534,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -22583,7 +22583,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -22696,7 +22696,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -22782,7 +22782,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -22954,7 +22954,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -23003,7 +23003,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -23116,7 +23116,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -23184,7 +23184,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -23233,7 +23233,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -23346,7 +23346,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -23414,7 +23414,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -23463,7 +23463,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -23576,7 +23576,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -23680,7 +23680,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -23729,7 +23729,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -23842,7 +23842,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -23910,7 +23910,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -23959,7 +23959,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -24072,7 +24072,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -24156,7 +24156,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -24205,7 +24205,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -24318,7 +24318,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -24381,7 +24381,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -24430,7 +24430,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -24543,7 +24543,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -24608,7 +24608,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -24657,7 +24657,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -24770,7 +24770,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -24851,7 +24851,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -24900,7 +24900,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -25013,7 +25013,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -25079,7 +25079,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -25128,7 +25128,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -25241,7 +25241,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {
@@ -25657,7 +25657,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -25706,7 +25706,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -25819,7 +25819,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -26126,7 +26126,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -26175,7 +26175,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -26288,7 +26288,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -26380,7 +26380,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -26429,7 +26429,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -26542,7 +26542,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -26640,7 +26640,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -26689,7 +26689,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -26802,7 +26802,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -26888,7 +26888,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -27060,7 +27060,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -27109,7 +27109,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -27222,7 +27222,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -27290,7 +27290,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -27339,7 +27339,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -27452,7 +27452,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -27520,7 +27520,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -27569,7 +27569,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -27682,7 +27682,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -27786,7 +27786,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -27835,7 +27835,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -27948,7 +27948,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -28016,7 +28016,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -28065,7 +28065,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -28178,7 +28178,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -28262,7 +28262,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -28311,7 +28311,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -28424,7 +28424,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -28487,7 +28487,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -28536,7 +28536,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -28649,7 +28649,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -28714,7 +28714,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -28763,7 +28763,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -28876,7 +28876,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -28957,7 +28957,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -29006,7 +29006,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -29119,7 +29119,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -29185,7 +29185,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -29234,7 +29234,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -29347,7 +29347,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {
@@ -29763,7 +29763,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
               },
               "colors": Object {
                 "error": Object {
-                  "100": "#ffa8a8",
+                  "100": "#ffe5e9",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -29812,7 +29812,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -29925,7 +29925,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -30232,7 +30232,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   },
                   "colors": Object {
                     "error": Object {
-                      "100": "#ffa8a8",
+                      "100": "#ffe5e9",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -30281,7 +30281,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "skins": Object {
                         "error": Object {
                           "mainColor": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -30394,7 +30394,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "popover": Object {
                       "skins": Object {
                         "error": Object {
-                          "background": "#ffa8a8",
+                          "background": "#ffe5e9",
                           "text": "#ac001a",
                         },
                         "neutral": Object {
@@ -30486,7 +30486,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     },
                     "colors": Object {
                       "error": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -30535,7 +30535,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "skins": Object {
                           "error": Object {
                             "mainColor": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -30648,7 +30648,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "popover": Object {
                         "skins": Object {
                           "error": Object {
-                            "background": "#ffa8a8",
+                            "background": "#ffe5e9",
                             "text": "#ac001a",
                           },
                           "neutral": Object {
@@ -30746,7 +30746,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         },
                         "colors": Object {
                           "error": Object {
-                            "100": "#ffa8a8",
+                            "100": "#ffe5e9",
                             "300": "#f88e86",
                             "500": "#ec584e",
                             "700": "#e91b0c",
@@ -30795,7 +30795,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "skins": Object {
                               "error": Object {
                                 "mainColor": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -30908,7 +30908,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "popover": Object {
                             "skins": Object {
                               "error": Object {
-                                "background": "#ffa8a8",
+                                "background": "#ffe5e9",
                                 "text": "#ac001a",
                               },
                               "neutral": Object {
@@ -30994,7 +30994,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -31166,7 +31166,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           },
                           "colors": Object {
                             "error": Object {
-                              "100": "#ffa8a8",
+                              "100": "#ffe5e9",
                               "300": "#f88e86",
                               "500": "#ec584e",
                               "700": "#e91b0c",
@@ -31215,7 +31215,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "skins": Object {
                                 "error": Object {
                                   "mainColor": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -31328,7 +31328,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "popover": Object {
                               "skins": Object {
                                 "error": Object {
-                                  "background": "#ffa8a8",
+                                  "background": "#ffe5e9",
                                   "text": "#ac001a",
                                 },
                                 "neutral": Object {
@@ -31396,7 +31396,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             },
                             "colors": Object {
                               "error": Object {
-                                "100": "#ffa8a8",
+                                "100": "#ffe5e9",
                                 "300": "#f88e86",
                                 "500": "#ec584e",
                                 "700": "#e91b0c",
@@ -31445,7 +31445,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "skins": Object {
                                   "error": Object {
                                     "mainColor": Object {
-                                      "100": "#ffa8a8",
+                                      "100": "#ffe5e9",
                                       "300": "#f88e86",
                                       "500": "#ec584e",
                                       "700": "#e91b0c",
@@ -31558,7 +31558,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "popover": Object {
                                 "skins": Object {
                                   "error": Object {
-                                    "background": "#ffa8a8",
+                                    "background": "#ffe5e9",
                                     "text": "#ac001a",
                                   },
                                   "neutral": Object {
@@ -31626,7 +31626,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               },
                               "colors": Object {
                                 "error": Object {
-                                  "100": "#ffa8a8",
+                                  "100": "#ffe5e9",
                                   "300": "#f88e86",
                                   "500": "#ec584e",
                                   "700": "#e91b0c",
@@ -31675,7 +31675,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "skins": Object {
                                     "error": Object {
                                       "mainColor": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -31788,7 +31788,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "popover": Object {
                                   "skins": Object {
                                     "error": Object {
-                                      "background": "#ffa8a8",
+                                      "background": "#ffe5e9",
                                       "text": "#ac001a",
                                     },
                                     "neutral": Object {
@@ -31892,7 +31892,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 },
                                 "colors": Object {
                                   "error": Object {
-                                    "100": "#ffa8a8",
+                                    "100": "#ffe5e9",
                                     "300": "#f88e86",
                                     "500": "#ec584e",
                                     "700": "#e91b0c",
@@ -31941,7 +31941,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "skins": Object {
                                       "error": Object {
                                         "mainColor": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -32054,7 +32054,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "popover": Object {
                                     "skins": Object {
                                       "error": Object {
-                                        "background": "#ffa8a8",
+                                        "background": "#ffe5e9",
                                         "text": "#ac001a",
                                       },
                                       "neutral": Object {
@@ -32122,7 +32122,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     },
                                     "colors": Object {
                                       "error": Object {
-                                        "100": "#ffa8a8",
+                                        "100": "#ffe5e9",
                                         "300": "#f88e86",
                                         "500": "#ec584e",
                                         "700": "#e91b0c",
@@ -32171,7 +32171,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "skins": Object {
                                           "error": Object {
                                             "mainColor": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -32284,7 +32284,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "popover": Object {
                                         "skins": Object {
                                           "error": Object {
-                                            "background": "#ffa8a8",
+                                            "background": "#ffe5e9",
                                             "text": "#ac001a",
                                           },
                                           "neutral": Object {
@@ -32368,7 +32368,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       },
                                       "colors": Object {
                                         "error": Object {
-                                          "100": "#ffa8a8",
+                                          "100": "#ffe5e9",
                                           "300": "#f88e86",
                                           "500": "#ec584e",
                                           "700": "#e91b0c",
@@ -32417,7 +32417,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "skins": Object {
                                             "error": Object {
                                               "mainColor": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -32530,7 +32530,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "popover": Object {
                                           "skins": Object {
                                             "error": Object {
-                                              "background": "#ffa8a8",
+                                              "background": "#ffe5e9",
                                               "text": "#ac001a",
                                             },
                                             "neutral": Object {
@@ -32593,7 +32593,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         },
                                         "colors": Object {
                                           "error": Object {
-                                            "100": "#ffa8a8",
+                                            "100": "#ffe5e9",
                                             "300": "#f88e86",
                                             "500": "#ec584e",
                                             "700": "#e91b0c",
@@ -32642,7 +32642,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "skins": Object {
                                               "error": Object {
                                                 "mainColor": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -32755,7 +32755,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "popover": Object {
                                             "skins": Object {
                                               "error": Object {
-                                                "background": "#ffa8a8",
+                                                "background": "#ffe5e9",
                                                 "text": "#ac001a",
                                               },
                                               "neutral": Object {
@@ -32820,7 +32820,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           },
                                           "colors": Object {
                                             "error": Object {
-                                              "100": "#ffa8a8",
+                                              "100": "#ffe5e9",
                                               "300": "#f88e86",
                                               "500": "#ec584e",
                                               "700": "#e91b0c",
@@ -32869,7 +32869,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "skins": Object {
                                                 "error": Object {
                                                   "mainColor": Object {
-                                                    "100": "#ffa8a8",
+                                                    "100": "#ffe5e9",
                                                     "300": "#f88e86",
                                                     "500": "#ec584e",
                                                     "700": "#e91b0c",
@@ -32982,7 +32982,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "popover": Object {
                                               "skins": Object {
                                                 "error": Object {
-                                                  "background": "#ffa8a8",
+                                                  "background": "#ffe5e9",
                                                   "text": "#ac001a",
                                                 },
                                                 "neutral": Object {
@@ -33063,7 +33063,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             },
                                             "colors": Object {
                                               "error": Object {
-                                                "100": "#ffa8a8",
+                                                "100": "#ffe5e9",
                                                 "300": "#f88e86",
                                                 "500": "#ec584e",
                                                 "700": "#e91b0c",
@@ -33112,7 +33112,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "skins": Object {
                                                   "error": Object {
                                                     "mainColor": Object {
-                                                      "100": "#ffa8a8",
+                                                      "100": "#ffe5e9",
                                                       "300": "#f88e86",
                                                       "500": "#ec584e",
                                                       "700": "#e91b0c",
@@ -33225,7 +33225,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "popover": Object {
                                                 "skins": Object {
                                                   "error": Object {
-                                                    "background": "#ffa8a8",
+                                                    "background": "#ffe5e9",
                                                     "text": "#ac001a",
                                                   },
                                                   "neutral": Object {
@@ -33291,7 +33291,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               },
                                               "colors": Object {
                                                 "error": Object {
-                                                  "100": "#ffa8a8",
+                                                  "100": "#ffe5e9",
                                                   "300": "#f88e86",
                                                   "500": "#ec584e",
                                                   "700": "#e91b0c",
@@ -33340,7 +33340,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                   "skins": Object {
                                                     "error": Object {
                                                       "mainColor": Object {
-                                                        "100": "#ffa8a8",
+                                                        "100": "#ffe5e9",
                                                         "300": "#f88e86",
                                                         "500": "#ec584e",
                                                         "700": "#e91b0c",
@@ -33453,7 +33453,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "popover": Object {
                                                   "skins": Object {
                                                     "error": Object {
-                                                      "background": "#ffa8a8",
+                                                      "background": "#ffe5e9",
                                                       "text": "#ac001a",
                                                     },
                                                     "neutral": Object {

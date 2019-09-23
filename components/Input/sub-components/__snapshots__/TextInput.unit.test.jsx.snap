@@ -47,7 +47,7 @@ exports[`Input component should match snapshots 1`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -103,7 +103,7 @@ exports[`Input component should match snapshots 2`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -158,7 +158,7 @@ exports[`Input component should match snapshots 3`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -214,7 +214,7 @@ exports[`Input component should match snapshots 4`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -270,7 +270,7 @@ exports[`Input component should match snapshots 5`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -326,7 +326,7 @@ exports[`Input component should match snapshots 6`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -382,7 +382,7 @@ exports[`Input component should match snapshots 7`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -438,7 +438,7 @@ exports[`Input component should match snapshots 8`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input
@@ -496,7 +496,7 @@ exports[`Input component should match snapshots 9`] = `
 }
 
 .c0:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffa8a8 inset;
+  box-shadow: 0 0 0 1000px #ffe5e9 inset;
 }
 
 <input

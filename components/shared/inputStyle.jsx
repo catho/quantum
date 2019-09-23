@@ -1,12 +1,12 @@
 import { css } from 'styled-components';
-import Colors from '../Colors';
+import { colors } from './theme';
 
 const DEFAULT_STYLE = css`
-  background-color: ${Colors.WHITE};
+  background-color: ${colors.neutral[0]};
   border-radius: 4px;
-  border: 1.5px solid ${Colors.BLACK['400']};
+  border: 1.5px solid ${colors.neutral['500']};
   box-sizing: border-box;
-  color: ${Colors.BLACK['700']};
+  color: ${colors.neutral['700']};
   font-size: initial;
   height: 44px;
   min-height: 44px;
@@ -18,24 +18,24 @@ const DEFAULT_STYLE = css`
 `;
 
 const HOVER_STYLE = css`
-  border-color: ${Colors.BLUE['500']};
-  box-shadow: 0 2px 6px 0 ${Colors.BLUE['50']};
+  border-color: ${colors.primary['700']};
+  box-shadow: 0 2px 6px 0 ${colors.primary['700']};
 `;
 
 const ERROR_STYLE = css`
-  border-color: ${Colors.ERROR['500']};
+  border-color: ${colors.error['700']};
 `;
 
 const ERROR_HOVER_STYLE = css`
-  border-color: ${Colors.ERROR['500']};
-  box-shadow: 0 2px 6px 0 ${Colors.ERROR['500']};
+  border-color: ${colors.error['700']};
+  box-shadow: 0 2px 6px 0 ${colors.error['700']};
 `;
 
 const DISABLED_STYLE = css`
-  background-color: ${Colors.BLACK['100']};
-  border-color: ${Colors.BLACK['400']};
+  background-color: ${colors.neutral['100']};
+  border-color: ${colors.neutral['500']};
   box-shadow: none;
-  color: ${Colors.BLACK['400']};
+  color: ${colors.neutral['500']};
   cursor: not-allowed;
 `;
 
@@ -55,7 +55,7 @@ const HELPER_TEXT_STYLE = css`
 `;
 
 const REQUIRED_MARK_STYLE = css`
-  color: ${Colors.ERROR['500']};
+  color: ${colors.error['700']};
 `;
 
 const ERROR_MESSAGE_STYLE = css`
@@ -63,7 +63,7 @@ const ERROR_MESSAGE_STYLE = css`
 `;
 
 const AUTO_FILL_STYLE = css`
-  box-shadow: 0 0 0px 1000px ${Colors.BLUE['200']} inset;
+  box-shadow: 0 0 0px 1000px ${colors.primary['100']} inset;
 `;
 
 const INPUT_STYLE = css`
@@ -93,7 +93,7 @@ const INPUT_STYLE = css`
     !defaultValue &&
     !value &&
     `
-    color: ${Colors.BLACK['400']};
+    color: ${colors.neutral['500']};
   `}
 `;
 

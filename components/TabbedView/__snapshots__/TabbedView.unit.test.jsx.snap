@@ -58,7 +58,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "alert": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffa8a8",
+              "background": "#ffe5e9",
               "icon": "#e91b0c",
               "text": "#ac001a",
             },
@@ -108,7 +108,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
           "skins": Object {
             "error": Object {
               "mainColor": Object {
-                "100": "#ffa8a8",
+                "100": "#ffe5e9",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -221,7 +221,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "popover": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffa8a8",
+              "background": "#ffe5e9",
               "text": "#ac001a",
             },
             "neutral": Object {
@@ -260,7 +260,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "snackbar": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffa8a8",
+              "background": "#ffe5e9",
               "text": "#ac001a",
             },
             "neutral": Object {
@@ -300,7 +300,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "tag": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffa8a8",
+              "background": "#ffe5e9",
               "text": "#ac001a",
             },
             "neutral": Object {
@@ -372,7 +372,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "alert": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "icon": "#e91b0c",
                       "text": "#ac001a",
                     },
@@ -422,7 +422,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "skins": Object {
                     "error": Object {
                       "mainColor": Object {
-                        "100": "#ffa8a8",
+                        "100": "#ffe5e9",
                         "300": "#f88e86",
                         "500": "#ec584e",
                         "700": "#e91b0c",
@@ -535,7 +535,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -574,7 +574,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "snackbar": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -614,7 +614,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "tag": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffa8a8",
+                      "background": "#ffe5e9",
                       "text": "#ac001a",
                     },
                     "neutral": Object {
@@ -679,7 +679,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "alert": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffa8a8",
+                        "background": "#ffe5e9",
                         "icon": "#e91b0c",
                         "text": "#ac001a",
                       },
@@ -729,7 +729,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                     "skins": Object {
                       "error": Object {
                         "mainColor": Object {
-                          "100": "#ffa8a8",
+                          "100": "#ffe5e9",
                           "300": "#f88e86",
                           "500": "#ec584e",
                           "700": "#e91b0c",
@@ -842,7 +842,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "popover": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffa8a8",
+                        "background": "#ffe5e9",
                         "text": "#ac001a",
                       },
                       "neutral": Object {
@@ -881,7 +881,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "snackbar": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffa8a8",
+                        "background": "#ffe5e9",
                         "text": "#ac001a",
                       },
                       "neutral": Object {
@@ -921,7 +921,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "tag": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffa8a8",
+                        "background": "#ffe5e9",
                         "text": "#ac001a",
                       },
                       "neutral": Object {

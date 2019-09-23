@@ -13,7 +13,7 @@ import {
 } from '@catho/quantum-storybook-ui';
 
 import Icon from '../../components/Icon';
-import Colors from '../../components/Colors';
+import { colors } from '../../components/shared/theme';
 import Catalogue from './Catalogue';
 
 const IconWrapper = styled.div`
@@ -30,11 +30,11 @@ const exampleIcons = [
   <Icon name="access_alarm" />,
   <Icon name="audiotrack" />,
   <Icon name="attach_money" />,
-  <Icon name="autorenew" skin={Colors.COBALT['500']} />,
-  <Icon name="check_circle" skin={Colors.PINK['900']} />,
-  <Icon name="clear" skin={Colors.BLUE['500']} />,
-  <Icon name="directions_bike" skin={Colors.WARNING['900']} />,
-  <Icon name="event" skin={Colors.ERROR['200']} />,
+  <Icon name="autorenew" skin={colors.primary['900']} />,
+  <Icon name="check_circle" skin={colors.secondary['900']} />,
+  <Icon name="clear" skin={colors.primary['700']} />,
+  <Icon name="directions_bike" skin={colors.warning['900']} />,
+  <Icon name="event" skin={colors.error['100']} />,
 ];
 
 const exampleCode = `<Icon name="thumb_up" />
@@ -45,11 +45,11 @@ const exampleCode = `<Icon name="thumb_up" />
 <Icon name="access_alarm" />
 <Icon name="audiotrack" />
 <Icon name="attach_money" />
-<Icon name="autorenew" skin={Colors.COBALT['500']} />
-<Icon name="check_circle" skin={Colors.PINK['900']} />
-<Icon name="clear" skin={Colors.BLUE['500']} />
-<Icon name="directions_bike" skin={Colors.WARNING['900']} />
-<Icon name="event" skin={Colors.ERROR['200']} />
+<Icon name="autorenew" skin={colors.primary['900']} />
+<Icon name="check_circle" skin={colors.secondary['900']} />
+<Icon name="clear" skin={colors.primary['700']} />
+<Icon name="directions_bike" skin={colors.warning['900']} />
+<Icon name="event" skin={colors.error['100']} />
 `;
 
 const importIcon = `import { Icon } from '@catho/quantum';`;
