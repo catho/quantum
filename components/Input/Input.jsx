@@ -106,7 +106,7 @@ class Input extends React.Component {
       currentValue: inputValue,
     });
 
-    onChange();
+    onChange(ev);
   };
 
   _changeType = type => {
