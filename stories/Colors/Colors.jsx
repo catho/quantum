@@ -79,124 +79,20 @@ ColorSample.defaultProps = {
 
 export default () => (
   <StoryContainer>
-    <Title as="h3" style={{ paddingTop: 0 }}>
-      Primary
-    </Title>
-
-    <ColorSample hex={colors.primary['900']} number={900} name="primary" />
-    <ColorSample hex={colors.primary['700']} number={700} name="primary" />
-    <ColorSample
-      hex={colors.primary['500']}
-      number={500}
-      fontColor="black"
-      name="primary"
-    />
-    <ColorSample
-      hex={colors.primary['300']}
-      number={300}
-      fontColor="black"
-      name="primary"
-    />
-    <ColorSample
-      hex={colors.primary['100']}
-      number={100}
-      fontColor="black"
-      name="primary"
-    />
-
-    <Title as="h3">Secondary</Title>
-
-    <ColorSample hex={colors.secondary['900']} number={900} name="secondary" />
-    <ColorSample hex={colors.secondary['700']} number={700} name="secondary" />
-    <ColorSample hex={colors.secondary['500']} number={500} name="secondary" />
-    <ColorSample hex={colors.secondary['300']} number={300} name="secondary" />
-    <ColorSample hex={colors.secondary['100']} number={100} name="secondary" />
-
-    <Title as="h3">Success</Title>
-
-    <ColorSample hex={colors.success['900']} number={900} name="success" />
-    <ColorSample hex={colors.success['700']} number={700} name="success" />
-    <ColorSample hex={colors.success['500']} number={500} name="success" />
-    <ColorSample
-      hex={colors.success['300']}
-      number={300}
-      fontColor="black"
-      name="success"
-    />
-    <ColorSample
-      hex={colors.success['100']}
-      number={100}
-      fontColor="black"
-      name="success"
-    />
-
-    <Title as="h3">Warning</Title>
-
-    <ColorSample hex={colors.warning['900']} number={900} name="warning" />
-    <ColorSample hex={colors.warning['700']} number={700} name="warning" />
-    <ColorSample
-      hex={colors.warning['500']}
-      number={500}
-      fontColor="black"
-      name="warning"
-    />
-    <ColorSample
-      hex={colors.warning['300']}
-      number={300}
-      fontColor="black"
-      name="warning"
-    />
-    <ColorSample
-      hex={colors.warning['100']}
-      number={100}
-      fontColor="black"
-      name="warning"
-    />
-
-    <Title as="h3">error</Title>
-
-    <ColorSample hex={colors.error['900']} number={900} name="error" />
-    <ColorSample hex={colors.error['700']} number={700} name="error" />
-    <ColorSample
-      hex={colors.error['500']}
-      number={500}
-      fontColor="black"
-      name="error"
-    />
-    <ColorSample
-      hex={colors.error['300']}
-      number={300}
-      fontColor="black"
-      name="error"
-    />
-    <ColorSample
-      hex={colors.error['100']}
-      number={100}
-      fontColor="black"
-      name="error"
-    />
-
-    <Title as="h3">Neutral</Title>
-
-    <ColorSample hex={colors.neutral['900']} number={900} name="neutral" />
-    <ColorSample hex={colors.neutral['700']} number={700} name="neutral" />
-    <ColorSample
-      hex={colors.neutral['500']}
-      number={500}
-      fontColor="black"
-      name="neutral"
-    />
-    <ColorSample
-      hex={colors.neutral['300']}
-      number={300}
-      fontColor="black"
-      name="neutral"
-    />
-    <ColorSample
-      hex={colors.neutral['100']}
-      number={100}
-      fontColor="black"
-      name="neutral"
-    />
+    {Object.entries(colors).map(([colorSKin, objColor]) => (
+      <>
+        <Title as="h3">{colorSKin}</Title>
+        {Object.entries(objColor).map(([index, hex]) => (
+          <>
+            <ColorSample
+              hex={hex}
+              number={index}
+              fontColor={index < 500 ? '#000' : '#FFF'}
+              name={colorSKin}
+            />
+          </>
+        ))}
+      </>
+    ))}
   </StoryContainer>
 );
