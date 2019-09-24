@@ -30,7 +30,7 @@ class SnackBarExamplePrimary extends React.Component {
         <Button onClick={this.openSnackBar}>Open SnackBar Primary</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar text content"
+            text="SnackBar primary text content"
             onClose={this.closeSnackBar}
             actionTrigger={actions}
             skin="primary"
@@ -74,7 +74,7 @@ class SnackBarExamplePrimary extends React.Component {
         <Button onClick={this.openSnackBar}>Open SnackBar Primary</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar text content"
+            text="SnackBar primary text content"
             onClose={this.closeSnackBar}
             actionTrigger={actions}
             skin="primary"

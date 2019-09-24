@@ -30,7 +30,7 @@ class SnackBarExampleSuccess extends React.Component {
         <Button onClick={this.openSnackBar}>Open SnackBar Success</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar text content"
+            text="SnackBar success text content"
             onClose={this.closeSnackBar}
             actionTrigger={actions}
             skin="success"
@@ -74,7 +74,7 @@ class SnackBarExampleSuccess extends React.Component {
         <Button onClick={this.openSnackBar}>Open SnackBar Success</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar text content"
+            text="SnackBar success text content"
             onClose={this.closeSnackBar}
             actionTrigger={actions}
             skin="success"

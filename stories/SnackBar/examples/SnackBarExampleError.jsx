@@ -30,7 +30,7 @@ class SnackBarExampleError extends React.Component {
         <Button onClick={this.openSnackBar}>Open SnackBar Error</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar text content"
+            text="SnackBar error text content"
             onClose={this.closeSnackBar}
             actionTrigger={actions}
             skin="error"
@@ -74,7 +74,7 @@ class SnackBarExampleError extends React.Component {
         <Button onClick={this.openSnackBar}>Open SnackBar Error</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar text content"
+            text="SnackBar error text content"
             onClose={this.closeSnackBar}
             actionTrigger={actions}
             skin="error"

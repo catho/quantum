@@ -36,21 +36,6 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
               <SnackBarExample />
             </Col>
           </Row>
-          <Row>
-            <Col style={{ marginTop: '20px' }}>
-              <SnackBarExamplePrimary />
-            </Col>
-          </Row>
-          <Row>
-            <Col style={{ marginTop: '20px' }}>
-              <SnackBarExampleSuccess />
-            </Col>
-          </Row>
-          <Row>
-            <Col style={{ marginTop: '20px' }}>
-              <SnackBarExampleError />
-            </Col>
-          </Row>
         </StoryContainer>
       </Tab>
 
@@ -64,13 +49,36 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
           <p>
             Here you can check a simple implamentation using SnackBar component.
           </p>
-
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>{SnackBarExample.code}</SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              <SnackBarExample text="SnackBar text content" />
+              <SnackBarExample />
+            </Col>
+          </Row>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{SnackBarExamplePrimary.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SnackBarExamplePrimary />
+            </Col>
+          </Row>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{SnackBarExampleSuccess.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SnackBarExampleSuccess />
+            </Col>
+          </Row>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{SnackBarExampleError.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SnackBarExampleError />
             </Col>
           </Row>
         </StoryContainer>
