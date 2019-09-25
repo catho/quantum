@@ -8,7 +8,6 @@ import BREAKPOINTS from './breakpoints';
 import uniqId from './uniqId';
 import * as INPUT_STYLE from './inputStyle';
 import hexToRgba from './hexToRgba';
-import hexToRgb from './hexToRgb';
 import shadow from './shadow';
 import HiddenInput from './HiddenInput';
 
@@ -23,7 +22,6 @@ export {
   INPUT_STYLE,
   uniqId,
   hexToRgba,
-  hexToRgb,
   shadow,
   HiddenInput,
 };
