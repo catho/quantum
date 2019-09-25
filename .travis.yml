@@ -5,19 +5,25 @@ node_js:
 
 # branches:
 #   only:
-#     - feat/regression-tests-on-ci
+#     - master
 
 jobs:
   include:
-    - stage: release
-      if: branch = feat/regression-tests-on-ci
-
+    - stage: unit tests
       node_js: lts/*
-
       skip_cleanup: true
       script:
-        - echo "RODOU SOMENTE SELECIONADA"
+        - yarn test:components
 
-      #   skip_cleanup: true
-      #   script:
-      #     - yarn semantic-release
+    - stage: regression tests
+      node_js: lts/*
+      skip_cleanup: true
+      script:
+        - yarn build:regression
+
+    - stage: release
+      if: branch = master
+      node_js: lts/*
+      skip_cleanup: true
+      script:
+        - yarn semantic-release
