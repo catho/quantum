@@ -3,19 +3,21 @@ language: node_js
 node_js:
   - 8
 
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - feat/regression-tests-on-ci
 
 jobs:
   include:
     - stage: release
+      if: branch = feat/regression-tests-on-ci
+
       node_js: lts/*
 
-      script: yarn build
+      skip_cleanup: true
+      script:
+        - echo "RODOU SOMENTE SELECIONADA"
 
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - yarn semantic-release
+      #   skip_cleanup: true
+      #   script:
+      #     - yarn semantic-release
