@@ -197,10 +197,14 @@
     var oldLogo = document.querySelector('.Pane.vertical.Pane1 > div > div > div > div');
     var componentsFrame = document.querySelector('.Pane.vertical.Pane1 > div > div');
     var searchField = document.querySelector('.Pane.vertical.Pane1 > div > div > div > div:nth-child(2)');
+    if (oldLogo !== null) {
+      oldLogo.remove();
+      oldLogo.setAttribute('id', 'logo');
+      componentsFrame.parentNode.append(oldLogo);
+    }
 
-    oldLogo.remove();
-    oldLogo.setAttribute('id', 'logo');
-    searchField.remove();
-    componentsFrame.parentNode.append(oldLogo);
+    if (searchField !== null) {
+      searchField.remove();
+    }
   });
 </script>
