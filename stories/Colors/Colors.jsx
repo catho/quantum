@@ -80,19 +80,18 @@ ColorSample.defaultProps = {
 export default () => (
   <StoryContainer>
     {Object.entries(colors).map(([colorSKin, objColor]) => (
-      <>
+      <div key={colorSKin}>
         <Title as="h3">{colorSKin}</Title>
         {Object.entries(objColor).map(([index, hex]) => (
-          <>
-            <ColorSample
-              hex={hex}
-              number={index}
-              fontColor={index < 500 ? '#000' : '#FFF'}
-              name={colorSKin}
-            />
-          </>
+          <ColorSample
+            key={index}
+            hex={hex}
+            number={parseInt(index, 10)}
+            fontColor={index < 500 ? '#000' : '#FFF'}
+            name={colorSKin}
+          />
         ))}
-      </>
+      </div>
     ))}
   </StoryContainer>
 );
