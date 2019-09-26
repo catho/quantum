@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { components } from '../shared/theme';
-import { hexToRgba } from '../../shared/helpers';
+import { hexToRgba } from '../shared';
 
 const Bar = styled.div`
   border-radius: 8px;
