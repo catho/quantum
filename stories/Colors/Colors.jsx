@@ -1,8 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Title, StoryContainer } from '@catho/quantum-storybook-ui';
-import { colors } from '../../components/shared/theme';
+import {
+  Title,
+  StoryContainer,
+  SimpleHighlight,
+} from '@catho/quantum-storybook-ui';
+import colors from '../../components/Colors';
+
+const importColors = `import { Colors } from '@catho/quantum';`;
+
+const exampleCode = `console.log(Colors.primary['500']);	
+/*returns: #0CC0EA;*/	
+
+console.log(Colors.secondary['500'])	
+/*returns: #E91E63/*	
+`;
 
 const ColorBackground = styled.div`
   background-color: ${({ hex }) => hex};
@@ -79,6 +92,16 @@ ColorSample.defaultProps = {
 
 export default () => (
   <StoryContainer>
+    <Title as="h2">Importing colors</Title>
+    <SimpleHighlight>{importColors}</SimpleHighlight>
+
+    <Title as="h3">Usage</Title>
+    <p>
+      Colors is a object that expose the pallete and can be used in multiple
+      places
+    </p>
+    <SimpleHighlight>{exampleCode}</SimpleHighlight>
+
     {Object.entries(colors).map(([colorSKin, objColor]) => (
       <div key={colorSKin}>
         <Title as="h3">{colorSKin}</Title>
