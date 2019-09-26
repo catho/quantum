@@ -633,7 +633,7 @@ exports[`Input component  should match the snapshot 4`] = `
   color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
-  border-color: #ec584e;
+  border-color: #e91b0c;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -663,8 +663,8 @@ exports[`Input component  should match the snapshot 4`] = `
 
 .c2:hover,
 .c2:focus {
-  border-color: #ec584e;
-  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
+  border-color: #e91b0c;
+  box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
 .c2[disabled] {

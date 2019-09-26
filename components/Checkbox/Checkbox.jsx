@@ -108,7 +108,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
   ${({ error, theme }) => {
     const {
       colors: {
-        error: { 500: errorColor },
+        error: { 700: errorColor },
       },
     } = theme;
 

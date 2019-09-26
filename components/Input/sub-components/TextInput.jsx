@@ -36,7 +36,7 @@ const TextInput = styled.input`
     const {
       colors: {
         primary: { 700: primaryColor },
-        error: { 100: error100, 500: error500 },
+        error: { 100: error100, 700: error700 },
         neutral: {
           0: neutral0,
           300: neutral300,
@@ -47,7 +47,7 @@ const TextInput = styled.input`
       spacing: { xsmall, small, xxlarge },
     } = theme;
 
-    const mainColor = error ? error500 : primaryColor;
+    const mainColor = error ? error700 : primaryColor;
 
     return `
       background-color: ${neutral0};
