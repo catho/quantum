@@ -34,7 +34,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c0 {
@@ -48,23 +48,23 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 .c0 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c0 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c0 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0 .c1:checked:disabled ~ .c3 {
@@ -74,35 +74,35 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 .c5 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c5 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c5 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5:hover .c3,
 .c5:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5 .c1:disabled ~ .c3 {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
 }
 
 .c5 .c1:checked ~ .c3 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c5 .c1:checked ~ .c3:after {
-  background-color: #ff2d4d;
+  background-color: #ec584e;
   display: block;
 }
 
@@ -133,47 +133,47 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 .c6 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c6 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c6 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c6:hover .c3,
 .c6:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c6 .c1:checked ~ .c3 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c6 .c1:checked ~ .c3:after {
-  background-color: #ff2d4d;
+  background-color: #ec584e;
   display: block;
 }
 
 .c6 .c1:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c6 .c3 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c6:hover .c3,
 .c6:focus .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c6 .c1:checked:disabled ~ .c3 {
@@ -234,27 +234,27 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c5 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c5 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c5 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5:hover .c3,
 .c5:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5 .c1:checked:disabled ~ .c3 {
@@ -275,23 +275,23 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 .c0 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c0 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c0 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0:hover {
@@ -299,15 +299,15 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 .c0 .c1:disabled ~ .c3 {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
 }
 
 .c0 .c1:checked ~ .c3 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c0 .c1:checked ~ .c3:after {
-  background-color: #ff2d4d;
+  background-color: #ec584e;
   display: block;
 }
 
@@ -389,27 +389,27 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c5 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c5 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c5 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5:hover .c3,
 .c5:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5 .c1:checked:disabled ~ .c3 {
@@ -419,35 +419,35 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 }
 
 .c6 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c6 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c6 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c6:hover .c3,
 .c6:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c6 .c1:disabled ~ .c3 {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
 }
 
 .c6 .c1:checked ~ .c3 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c6 .c1:checked ~ .c3:after {
-  background-color: #ff2d4d;
+  background-color: #ec584e;
   display: block;
 }
 
@@ -488,47 +488,47 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 }
 
 .c0 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c0 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c0 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0 .c1:checked ~ .c3 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c0 .c1:checked ~ .c3:after {
-  background-color: #ff2d4d;
+  background-color: #ec584e;
   display: block;
 }
 
 .c0 .c1:focus ~ .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c0 .c3 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c0 .c1:checked:disabled ~ .c3 {
@@ -589,7 +589,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c0 {
@@ -603,23 +603,23 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 }
 
 .c0 .c1:checked ~ .c3 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c0 .c1:checked ~ .c3:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c0 .c1:focus ~ .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0:hover .c3,
 .c0:focus .c3 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c0 .c1:checked:disabled ~ .c3 {

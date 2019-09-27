@@ -44,26 +44,26 @@ exports[`Form component  should match the snapshot 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c3:focus,
 .c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c3 .c4 function (_ref5) {

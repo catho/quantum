@@ -38,26 +38,26 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1355d0;
+  background-color: #1250C4;
   color: #ffffff;
-  border: 2px solid #1355d0;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
 }
 
 .c1:focus,
 .c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #0e44c4;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
 }
 
 .c1 .c3 function (_ref5) {
@@ -146,25 +146,25 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #1355d0;
-  border: 2px solid #1355d0;
+  color: #1250C4;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
 }
 
 .c1:focus,
 .c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
 }
 
 .c1 .c3 function (_ref5) {
@@ -467,24 +467,24 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #ff2d4d;
-  border: 2px solid #ff2d4d;
+  color: #e91b0c;
+  border: 2px solid #e91b0c;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(255,34,61,0.2),0px 4px 5px 0px rgba(255,34,61,0.14),0px 1px 10px 0px rgba(255,34,61,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(172,0,26,0.2),0px 4px 5px 0px rgba(172,0,26,0.14),0px 1px 10px 0px rgba(172,0,26,0.12);
   background-color: #ffe5e9;
-  border-color: #ff223d;
+  border-color: #ac001a;
 }
 
 .c1:focus,
 .c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(255,45,77,0.2),0px 4px 5px 0px rgba(255,45,77,0.14),0px 1px 10px 0px rgba(255,45,77,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(233,27,12,0.2),0px 4px 5px 0px rgba(233,27,12,0.14),0px 1px 10px 0px rgba(233,27,12,0.12);
 }
 
 .c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(255,34,61,0.2),0px 8px 10px 1px rgba(255,34,61,0.14),0px 3px 14px 2px rgba(255,34,61,0.12);
+  box-shadow: 0px 5px 5px -3px rgba(172,0,26,0.2),0px 8px 10px 1px rgba(172,0,26,0.14),0px 3px 14px 2px rgba(172,0,26,0.12);
   background-color: #ffe5e9;
 }
 
@@ -574,25 +574,25 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #1355d0;
-  border: 2px solid #1355d0;
+  color: #1250C4;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
 }
 
 .c1:focus,
 .c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
 }
 
 .c1 .c4 function (_ref5) {
@@ -696,25 +696,25 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #1355d0;
-  border: 2px solid #1355d0;
+  color: #1250C4;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
 }
 
 .c2:focus,
 .c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
 }
 
 .c2 .c4 function (_ref5) {
@@ -818,25 +818,25 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #1355d0;
-  border: 2px solid #1355d0;
+  color: #1250C4;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
 }
 
 .c1:focus,
 .c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
 }
 
 .c1 .c3 function (_ref5) {

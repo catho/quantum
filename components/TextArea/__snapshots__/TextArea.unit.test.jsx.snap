@@ -23,7 +23,7 @@ exports[`TextArea component should match snapshots 1`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   display: block;
@@ -46,12 +46,12 @@ exports[`TextArea component should match snapshots 1`] = `
 
 .c1:hover,
 .c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -102,7 +102,7 @@ exports[`TextArea component should match snapshots 2`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   display: block;
@@ -125,12 +125,12 @@ exports[`TextArea component should match snapshots 2`] = `
 
 .c1:hover,
 .c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -187,7 +187,7 @@ exports[`TextArea component should match snapshots 3`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   display: block;
@@ -210,12 +210,12 @@ exports[`TextArea component should match snapshots 3`] = `
 
 .c2:hover,
 .c2:focus {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c2[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -264,7 +264,7 @@ exports[`TextArea component should match snapshots 4`] = `
 }
 
 .c2 {
-  color: #ff2d4d;
+  color: #ec584e;
 }
 
 .c3 {
@@ -282,7 +282,7 @@ exports[`TextArea component should match snapshots 4`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   display: block;
@@ -305,12 +305,12 @@ exports[`TextArea component should match snapshots 4`] = `
 
 .c3:hover,
 .c3:focus {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c3[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -372,7 +372,7 @@ exports[`TextArea component should match snapshots 5`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   display: block;
@@ -395,12 +395,12 @@ exports[`TextArea component should match snapshots 5`] = `
 
 .c1:hover,
 .c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -451,7 +451,7 @@ exports[`TextArea component should match snapshots 6`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   color: #999999;
@@ -475,12 +475,12 @@ exports[`TextArea component should match snapshots 6`] = `
 
 .c1:hover,
 .c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -524,7 +524,7 @@ exports[`TextArea component should match snapshots 7`] = `
   font-weight: 600;
   display: block;
   margin: 8px 12px 0;
-  color: #4c4c4c;
+  color: #424242;
 }
 
 .c1 {
@@ -542,7 +542,7 @@ exports[`TextArea component should match snapshots 7`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
   display: block;
@@ -565,12 +565,12 @@ exports[`TextArea component should match snapshots 7`] = `
 
 .c1:hover,
 .c1:focus {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -635,10 +635,10 @@ exports[`TextArea component should match snapshots 8`] = `
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #999999;
-  color: #4c4c4c;
+  color: #424242;
   margin-top: 8px;
   padding: 8px 12px;
-  border-color: #ff2d4d;
+  border-color: #e91b0c;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -659,12 +659,12 @@ exports[`TextArea component should match snapshots 8`] = `
 
 .c1:hover,
 .c1:focus {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #e91b0c;
+  box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
 .c1[disabled] {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-color: #999999;
   box-shadow: none;
   color: #999999;

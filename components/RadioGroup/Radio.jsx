@@ -39,7 +39,7 @@ const RadioMark = styled.span`
     background-color: ${({
       theme: {
         colors: {
-          primary: { 500: primary },
+          primary: { 700: primary },
         },
       },
     }) => primary};
@@ -56,7 +56,7 @@ const RadioLabel = styled(Label)`
         ${({
           theme: {
             colors: {
-              primary: { 500: primary },
+              primary: { 700: primary },
             },
           },
         }) => `
@@ -74,7 +74,7 @@ const RadioLabel = styled(Label)`
         ${({ theme }) => {
           const {
             colors: {
-              primary: { 500: primary },
+              primary: { 700: primary },
             },
           } = theme;
 
@@ -93,7 +93,7 @@ const RadioLabel = styled(Label)`
       ${({ theme }) => {
         const {
           colors: {
-            primary: { 500: primary },
+            primary: { 700: primary },
           },
         } = theme;
 

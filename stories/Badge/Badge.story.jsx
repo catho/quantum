@@ -10,7 +10,7 @@ import {
 
 import Badge from '../../components/Badge';
 import Button from '../../components/Button';
-import Colors from '../../components/Colors';
+import { colors } from '../../components/shared/theme';
 import { Container } from '../../components/Grid';
 
 const TabExample = (
@@ -48,10 +48,10 @@ const TabExample = (
           component={
             <div
               style={{
-                backgroundColor: Colors.BLUE[500],
+                backgroundColor: colors.primary['700'],
                 display: 'inline-block',
                 padding: 10,
-                color: Colors.WHITE,
+                color: colors.neutral['0'],
               }}
             >
               <Badge number={10} skin="primary" inverted />
@@ -59,7 +59,7 @@ const TabExample = (
             </div>
           }
           code={`<div style={{
-  backgroundColor: Colors.BLUE[500],
+  backgroundColor: colors.primary['700'],
   display: 'inline-block',
   padding: 10,
   color: Colors.WHITE

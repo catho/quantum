@@ -5,8 +5,7 @@ import Item from './sub-components/Item';
 import Content from './sub-components/Content';
 import Header from './sub-components/Header';
 import SubHeader from './sub-components/SubHeader';
-
-import Colors from '../Colors/deprecated';
+import { colors } from '../shared/theme';
 
 const bullets = ({ bullet }) =>
   bullet
@@ -30,12 +29,19 @@ const inlineList = ({ inline }) => css`
   }
 `;
 
-const dividedList = ({ divided, inline }) =>
+const dividedList = ({
+  divided,
+  inline,
+  theme: {
+    colors: {
+      neutral: { 100: neutral100 },
+    },
+  },
+}) =>
   divided &&
   css`
     li {
-      ${inline ? 'border-right' : 'border-bottom'}: 1px solid
-        ${Colors.SECONDARY['50']};
+      ${inline ? 'border-right' : 'border-bottom'}: 1px solid ${neutral100};
 
       &:last-child {
         border: none;
@@ -103,7 +109,15 @@ class List extends React.Component {
   _listType = ordered => (ordered ? this.types.ol : this.types.ul);
 
   render() {
-    const { ordered, items, children, inline, divided, bullet } = this.props;
+    const {
+      ordered,
+      items,
+      children,
+      inline,
+      divided,
+      bullet,
+      theme,
+    } = this.props;
 
     const listItems = children || items.map(Item.create);
 
@@ -113,6 +127,7 @@ class List extends React.Component {
         inline,
         divided,
         bullet,
+        theme,
         ...this.props,
       },
       listItems,
@@ -127,6 +142,9 @@ List.defaultProps = {
   inline: false,
   divided: false,
   children: null,
+  theme: {
+    colors,
+  },
 };
 
 List.propTypes = {
@@ -153,6 +171,9 @@ List.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+  }),
 };
 
 export default List;

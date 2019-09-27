@@ -48,7 +48,7 @@ const customStyle = css`
     theme: {
       colors: {
         primary: {
-          500: primary500,
+          300: primary300,
           100: primary100,
           700: primary700,
           900: primary900,
@@ -58,7 +58,7 @@ const customStyle = css`
     },
   }) => css`
     .rc-slider-handle {
-      background-color: ${primary500};
+      background-color: ${primary700};
     }
 
     .rc-slider-rail {
@@ -66,7 +66,7 @@ const customStyle = css`
     }
 
     .rc-slider-track {
-      background-color: ${hexToRgba(primary700, 0.5)};
+      background-color: ${hexToRgba(primary300, 0.5)};
     }
 
     .rc-slider-handle:active,

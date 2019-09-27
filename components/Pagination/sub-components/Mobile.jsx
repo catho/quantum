@@ -14,7 +14,7 @@ const Info = styled.span`
     theme: {
       colors: {
         neutral: { 300: neutral300, 700: neutral700 },
-        primary: { 100: primary100, 500: primary500 },
+        primary: { 100: primary100, 700: primary700 },
       },
       spacing: { xsmall, medium },
     },
@@ -26,7 +26,7 @@ const Info = styled.span`
     :hover {
       background-color: ${primary100};
       strong {
-        color: ${primary500};
+        color: ${primary700};
       }
     }
   `}

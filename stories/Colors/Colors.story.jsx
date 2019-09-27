@@ -7,7 +7,7 @@ storiesOf('Foundation', module).add('Color Palette', () => (
   <>
     <Heading title="Colors">
       Catho&apos;s color palette consists of brand, support and neutral accents.
-      Blue, Sky should be used as primary colors and Pink as secondary color.
+      All colors are imported by the default theme.
     </Heading>
 
     <Colors />

@@ -39,7 +39,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
               <SimpleHighlight>{`import { TabbedView, Tab } from '@catho/quantum';
 
 <TabbedView
-  skin="blue" // optional
+  skin="primary" // optional
   activeTab="Companies"> // optional
   <TabbedView.Tab title="Candidates">
     Candidates content
@@ -67,7 +67,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
                 </QuantumTabbedView>
               </Container>
               <Container>
-                <QuantumTabbedView skin="blue" activeTab="Companies">
+                <QuantumTabbedView skin="primary" activeTab="Companies">
                   <QuantumTabbedView.Tab title="Candidates">
                     Candidates content
                   </QuantumTabbedView.Tab>

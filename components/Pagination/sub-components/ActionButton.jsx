@@ -20,7 +20,7 @@ const ActionButton = styled.a`
     theme: {
       colors: {
         neutral: { 300: neutral300 },
-        primary: { 100: primary100, 500: primary500 },
+        primary: { 100: primary100, 700: primary700 },
       },
       spacing: { xsmall, xxsmall },
     },
@@ -37,8 +37,8 @@ const ActionButton = styled.a`
         :hover,
         :focus {
           background-color: ${primary100};
-          border: 1px solid ${primary500};
-          color: ${primary500};
+          border: 1px solid ${primary700};
+          color: ${primary700};
         }
       }
     }

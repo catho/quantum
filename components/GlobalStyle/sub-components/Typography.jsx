@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Colors from '../../Colors';
+import { colors } from '../../shared/theme';
 
 const Style = createGlobalStyle`
 * {
@@ -11,7 +11,7 @@ const Style = createGlobalStyle`
 body {
   font-size: 16px;
   letter-spacing: 0.2px;
-  color: ${Colors.BLACK[700]};
+  color: ${colors.neutral['700']};
 }
 
 h1, h2, h3, h4, h5, h6 {

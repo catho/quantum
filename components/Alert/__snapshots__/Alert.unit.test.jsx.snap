@@ -31,26 +31,26 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c6:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c6:focus,
 .c6:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c6:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c6 .c7 function (_ref5) {
@@ -99,14 +99,14 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c5:hover,
 .c5:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
 }
 
 .c5:active {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
 }
 
 .c5:hover {
@@ -119,25 +119,25 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   box-sizing: border-box;
   font-size: 16px;
   background-color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 1.5px solid #424242;
   color: #191919;
   padding: 12px 16px;
 }
 
 .c0 .c1 .c9 {
-  color: #999999;
+  color: #424242;
   margin-right: 16px;
 }
 
 .c0 .c1 > .c4 {
-  color: #999999;
+  color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
-  color: #999999;
+  color: #424242;
   margin-left: 0;
 }
 
@@ -225,47 +225,47 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
-                "900": "#062ab3",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "components": Object {
@@ -273,28 +273,28 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                 "skins": Object {
                   "error": Object {
                     "background": "#ffe5e9",
-                    "icon": "#ff2d4d",
+                    "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
                   "neutral": Object {
                     "background": "#f2f2f2",
-                    "icon": "#999999",
+                    "icon": "#424242",
                     "text": "#191919",
                   },
                   "primary": Object {
-                    "background": "#e5edfc",
-                    "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "background": "#E5EDFC",
+                    "icon": "#1250C4",
+                    "text": "#002F7B",
                   },
                   "success": Object {
-                    "background": "#edfadf",
-                    "icon": "#7ed321",
-                    "text": "#3c6510",
+                    "background": "#dcedc8",
+                    "icon": "#3b610f",
+                    "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#a36300",
+                    "text": "#d14900",
                   },
                 },
               },
@@ -303,18 +303,18 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                   "error": Object {
                     "mainColor": Object {
                       "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
+                      "300": "#f88e86",
+                      "500": "#ec584e",
+                      "700": "#e91b0c",
                       "900": "#ac001a",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -323,90 +323,90 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "secondary": Object {
                     "mainColor": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
+                      "100": "#F7B0C8",
+                      "300": "#F278A1",
+                      "500": "#E91E63",
+                      "700": "#DE0059",
+                      "900": "#9E003F",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "success": Object {
                     "mainColor": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
+                      "100": "#dcedc8",
+                      "300": "#c9eda2",
                       "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
+                      "700": "#3b610f",
+                      "900": "#004D40",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "warning": Object {
                     "mainColor": Object {
                       "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
+                      "300": "#ffda6a",
+                      "500": "#ffc107",
+                      "700": "#f09100",
+                      "900": "#d14900",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -465,26 +465,26 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c7:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c7:focus,
 .c7:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c7:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c7 .c8 function (_ref5) {
@@ -533,14 +533,14 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 .c6:hover,
 .c6:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
 }
 
 .c6:active {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
 }
 
 .c6:hover {
@@ -553,25 +553,25 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   box-sizing: border-box;
   font-size: 16px;
   background-color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 1.5px solid #424242;
   color: #191919;
   padding: 12px 16px;
 }
 
 .c0 .c1 .c3 {
-  color: #999999;
+  color: #424242;
   margin-right: 16px;
 }
 
 .c0 .c1 > .c5 {
-  color: #999999;
+  color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c0 .c1 > .c5 .c4 {
-  color: #999999;
+  color: #424242;
   margin-left: 0;
 }
 
@@ -670,47 +670,47 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
-                "900": "#062ab3",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "components": Object {
@@ -718,28 +718,28 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                 "skins": Object {
                   "error": Object {
                     "background": "#ffe5e9",
-                    "icon": "#ff2d4d",
+                    "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
                   "neutral": Object {
                     "background": "#f2f2f2",
-                    "icon": "#999999",
+                    "icon": "#424242",
                     "text": "#191919",
                   },
                   "primary": Object {
-                    "background": "#e5edfc",
-                    "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "background": "#E5EDFC",
+                    "icon": "#1250C4",
+                    "text": "#002F7B",
                   },
                   "success": Object {
-                    "background": "#edfadf",
-                    "icon": "#7ed321",
-                    "text": "#3c6510",
+                    "background": "#dcedc8",
+                    "icon": "#3b610f",
+                    "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#a36300",
+                    "text": "#d14900",
                   },
                 },
               },
@@ -748,18 +748,18 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                   "error": Object {
                     "mainColor": Object {
                       "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
+                      "300": "#f88e86",
+                      "500": "#ec584e",
+                      "700": "#e91b0c",
                       "900": "#ac001a",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -768,90 +768,90 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "secondary": Object {
                     "mainColor": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
+                      "100": "#F7B0C8",
+                      "300": "#F278A1",
+                      "500": "#E91E63",
+                      "700": "#DE0059",
+                      "900": "#9E003F",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "success": Object {
                     "mainColor": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
+                      "100": "#dcedc8",
+                      "300": "#c9eda2",
                       "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
+                      "700": "#3b610f",
+                      "900": "#004D40",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "warning": Object {
                     "mainColor": Object {
                       "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
+                      "300": "#ffda6a",
+                      "500": "#ffc107",
+                      "700": "#f09100",
+                      "900": "#d14900",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -910,26 +910,26 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c6:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c6:focus,
 .c6:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c6:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c6 .c7 function (_ref5) {
@@ -978,14 +978,14 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c5:hover,
 .c5:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
 }
 
 .c5:active {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
 }
 
 .c5:hover {
@@ -998,25 +998,25 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-sizing: border-box;
   font-size: 16px;
   background-color: #f2f2f2;
-  border: 1.5px solid #999999;
+  border: 1.5px solid #424242;
   color: #191919;
   padding: 12px 16px;
 }
 
 .c0 .c1 .c9 {
-  color: #999999;
+  color: #424242;
   margin-right: 16px;
 }
 
 .c0 .c1 > .c4 {
-  color: #999999;
+  color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
-  color: #999999;
+  color: #424242;
   margin-left: 0;
 }
 
@@ -1104,47 +1104,47 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
-                "900": "#062ab3",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "components": Object {
@@ -1152,28 +1152,28 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "background": "#ffe5e9",
-                    "icon": "#ff2d4d",
+                    "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
                   "neutral": Object {
                     "background": "#f2f2f2",
-                    "icon": "#999999",
+                    "icon": "#424242",
                     "text": "#191919",
                   },
                   "primary": Object {
-                    "background": "#e5edfc",
-                    "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "background": "#E5EDFC",
+                    "icon": "#1250C4",
+                    "text": "#002F7B",
                   },
                   "success": Object {
-                    "background": "#edfadf",
-                    "icon": "#7ed321",
-                    "text": "#3c6510",
+                    "background": "#dcedc8",
+                    "icon": "#3b610f",
+                    "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#a36300",
+                    "text": "#d14900",
                   },
                 },
               },
@@ -1182,18 +1182,18 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "error": Object {
                     "mainColor": Object {
                       "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
+                      "300": "#f88e86",
+                      "500": "#ec584e",
+                      "700": "#e91b0c",
                       "900": "#ac001a",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -1202,90 +1202,90 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "secondary": Object {
                     "mainColor": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
+                      "100": "#F7B0C8",
+                      "300": "#F278A1",
+                      "500": "#E91E63",
+                      "700": "#DE0059",
+                      "900": "#9E003F",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "success": Object {
                     "mainColor": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
+                      "100": "#dcedc8",
+                      "300": "#c9eda2",
                       "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
+                      "700": "#3b610f",
+                      "900": "#004D40",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "warning": Object {
                     "mainColor": Object {
                       "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
+                      "300": "#ffda6a",
+                      "500": "#ffc107",
+                      "700": "#f09100",
+                      "900": "#d14900",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -1344,26 +1344,26 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c6:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c6:focus,
 .c6:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c6:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c6 .c7 function (_ref5) {
@@ -1412,14 +1412,14 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c5:hover,
 .c5:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
 }
 
 .c5:active {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
 }
 
 .c5:hover {
@@ -1428,19 +1428,19 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c9 .c1 .c10 {
-  color: #999999;
+  color: #424242;
   margin-right: 16px;
 }
 
 .c9 .c1 > .c4 {
-  color: #999999;
+  color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
-  color: #999999;
+  color: #424242;
   margin-left: 0;
 }
 
@@ -1448,26 +1448,26 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #e5edfc;
-  border: 1.5px solid #1355d0;
-  color: #062ab3;
+  background-color: #E5EDFC;
+  border: 1.5px solid #1250C4;
+  color: #002F7B;
   padding: 12px 16px;
 }
 
 .c0 .c1 .c10 {
-  color: #1355d0;
+  color: #1250C4;
   margin-right: 16px;
 }
 
 .c0 .c1 > .c4 {
-  color: #1355d0;
+  color: #1250C4;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
-  color: #1355d0;
+  color: #1250C4;
   margin-left: 0;
 }
 
@@ -1555,47 +1555,47 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
-                "900": "#062ab3",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "components": Object {
@@ -1603,28 +1603,28 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "background": "#ffe5e9",
-                    "icon": "#ff2d4d",
+                    "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
                   "neutral": Object {
                     "background": "#f2f2f2",
-                    "icon": "#999999",
+                    "icon": "#424242",
                     "text": "#191919",
                   },
                   "primary": Object {
-                    "background": "#e5edfc",
-                    "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "background": "#E5EDFC",
+                    "icon": "#1250C4",
+                    "text": "#002F7B",
                   },
                   "success": Object {
-                    "background": "#edfadf",
-                    "icon": "#7ed321",
-                    "text": "#3c6510",
+                    "background": "#dcedc8",
+                    "icon": "#3b610f",
+                    "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#a36300",
+                    "text": "#d14900",
                   },
                 },
               },
@@ -1633,18 +1633,18 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "error": Object {
                     "mainColor": Object {
                       "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
+                      "300": "#f88e86",
+                      "500": "#ec584e",
+                      "700": "#e91b0c",
                       "900": "#ac001a",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -1653,90 +1653,90 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "secondary": Object {
                     "mainColor": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
+                      "100": "#F7B0C8",
+                      "300": "#F278A1",
+                      "500": "#E91E63",
+                      "700": "#DE0059",
+                      "900": "#9E003F",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "success": Object {
                     "mainColor": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
+                      "100": "#dcedc8",
+                      "300": "#c9eda2",
                       "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
+                      "700": "#3b610f",
+                      "900": "#004D40",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "warning": Object {
                     "mainColor": Object {
                       "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
+                      "300": "#ffda6a",
+                      "500": "#ffc107",
+                      "700": "#f09100",
+                      "900": "#d14900",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -1795,26 +1795,26 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c6:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c6:focus,
 .c6:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c6:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c6 .c7 function (_ref5) {
@@ -1863,14 +1863,14 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c5:hover,
 .c5:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
 }
 
 .c5:active {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
 }
 
 .c5:hover {
@@ -1879,36 +1879,36 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c9 .c1 .c11 {
-  color: #999999;
+  color: #424242;
   margin-right: 16px;
 }
 
 .c9 .c1 > .c4 {
-  color: #999999;
+  color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
-  color: #999999;
+  color: #424242;
   margin-left: 0;
 }
 
 .c10 .c1 .c11 {
-  color: #1355d0;
+  color: #1250C4;
   margin-right: 16px;
 }
 
 .c10 .c1 > .c4 {
-  color: #1355d0;
+  color: #1250C4;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
-  color: #1355d0;
+  color: #1250C4;
   margin-left: 0;
 }
 
@@ -1916,26 +1916,26 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #edfadf;
-  border: 1.5px solid #7ed321;
-  color: #3c6510;
+  background-color: #dcedc8;
+  border: 1.5px solid #3b610f;
+  color: #004D40;
   padding: 12px 16px;
 }
 
 .c0 .c1 .c11 {
-  color: #7ed321;
+  color: #3b610f;
   margin-right: 16px;
 }
 
 .c0 .c1 > .c4 {
-  color: #7ed321;
+  color: #3b610f;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
-  color: #7ed321;
+  color: #3b610f;
   margin-left: 0;
 }
 
@@ -2023,47 +2023,47 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
-                "900": "#062ab3",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "components": Object {
@@ -2071,28 +2071,28 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "background": "#ffe5e9",
-                    "icon": "#ff2d4d",
+                    "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
                   "neutral": Object {
                     "background": "#f2f2f2",
-                    "icon": "#999999",
+                    "icon": "#424242",
                     "text": "#191919",
                   },
                   "primary": Object {
-                    "background": "#e5edfc",
-                    "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "background": "#E5EDFC",
+                    "icon": "#1250C4",
+                    "text": "#002F7B",
                   },
                   "success": Object {
-                    "background": "#edfadf",
-                    "icon": "#7ed321",
-                    "text": "#3c6510",
+                    "background": "#dcedc8",
+                    "icon": "#3b610f",
+                    "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#a36300",
+                    "text": "#d14900",
                   },
                 },
               },
@@ -2101,18 +2101,18 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "error": Object {
                     "mainColor": Object {
                       "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
+                      "300": "#f88e86",
+                      "500": "#ec584e",
+                      "700": "#e91b0c",
                       "900": "#ac001a",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -2121,90 +2121,90 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "secondary": Object {
                     "mainColor": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
+                      "100": "#F7B0C8",
+                      "300": "#F278A1",
+                      "500": "#E91E63",
+                      "700": "#DE0059",
+                      "900": "#9E003F",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "success": Object {
                     "mainColor": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
+                      "100": "#dcedc8",
+                      "300": "#c9eda2",
                       "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
+                      "700": "#3b610f",
+                      "900": "#004D40",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "warning": Object {
                     "mainColor": Object {
                       "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
+                      "300": "#ffda6a",
+                      "500": "#ffc107",
+                      "700": "#f09100",
+                      "900": "#d14900",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -2263,26 +2263,26 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c6:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c6:focus,
 .c6:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c6:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c6 .c7 function (_ref5) {
@@ -2331,14 +2331,14 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c5:hover,
 .c5:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
 }
 
 .c5:active {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
 }
 
 .c5:hover {
@@ -2347,53 +2347,53 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c9 .c1 .c12 {
-  color: #999999;
+  color: #424242;
   margin-right: 16px;
 }
 
 .c9 .c1 > .c4 {
-  color: #999999;
+  color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
-  color: #999999;
+  color: #424242;
   margin-left: 0;
 }
 
 .c10 .c1 .c12 {
-  color: #1355d0;
+  color: #1250C4;
   margin-right: 16px;
 }
 
 .c10 .c1 > .c4 {
-  color: #1355d0;
+  color: #1250C4;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
-  color: #1355d0;
+  color: #1250C4;
   margin-left: 0;
 }
 
 .c11 .c1 .c12 {
-  color: #7ed321;
+  color: #3b610f;
   margin-right: 16px;
 }
 
 .c11 .c1 > .c4 {
-  color: #7ed321;
+  color: #3b610f;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c11 .c1 > .c4 .c3 {
-  color: #7ed321;
+  color: #3b610f;
   margin-left: 0;
 }
 
@@ -2403,7 +2403,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   font-size: 16px;
   background-color: #ffefd6;
   border: 1.5px solid #f09100;
-  color: #a36300;
+  color: #d14900;
   padding: 12px 16px;
 }
 
@@ -2508,47 +2508,47 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
-                "900": "#062ab3",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "components": Object {
@@ -2556,28 +2556,28 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "background": "#ffe5e9",
-                    "icon": "#ff2d4d",
+                    "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
                   "neutral": Object {
                     "background": "#f2f2f2",
-                    "icon": "#999999",
+                    "icon": "#424242",
                     "text": "#191919",
                   },
                   "primary": Object {
-                    "background": "#e5edfc",
-                    "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "background": "#E5EDFC",
+                    "icon": "#1250C4",
+                    "text": "#002F7B",
                   },
                   "success": Object {
-                    "background": "#edfadf",
-                    "icon": "#7ed321",
-                    "text": "#3c6510",
+                    "background": "#dcedc8",
+                    "icon": "#3b610f",
+                    "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#a36300",
+                    "text": "#d14900",
                   },
                 },
               },
@@ -2586,18 +2586,18 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "error": Object {
                     "mainColor": Object {
                       "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
+                      "300": "#f88e86",
+                      "500": "#ec584e",
+                      "700": "#e91b0c",
                       "900": "#ac001a",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -2606,90 +2606,90 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "secondary": Object {
                     "mainColor": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
+                      "100": "#F7B0C8",
+                      "300": "#F278A1",
+                      "500": "#E91E63",
+                      "700": "#DE0059",
+                      "900": "#9E003F",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "success": Object {
                     "mainColor": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
+                      "100": "#dcedc8",
+                      "300": "#c9eda2",
                       "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
+                      "700": "#3b610f",
+                      "900": "#004D40",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "warning": Object {
                     "mainColor": Object {
                       "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
+                      "300": "#ffda6a",
+                      "500": "#ffc107",
+                      "700": "#f09100",
+                      "900": "#d14900",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -2748,26 +2748,26 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 8px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
+  background-color: #424242;
   color: #ffffff;
-  border: 2px solid #999999;
+  border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c6:hover {
-  box-shadow: 0px 2px 4px -1px rgba(76,76,76,0.2),0px 4px 5px 0px rgba(76,76,76,0.14),0px 1px 10px 0px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
-  border-color: #4c4c4c;
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .c6:focus,
 .c6:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(153,153,153,0.2),0px 4px 5px 0px rgba(153,153,153,0.14),0px 1px 10px 0px rgba(153,153,153,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
 .c6:active {
-  box-shadow: 0px 5px 5px -3px rgba(76,76,76,0.2),0px 8px 10px 1px rgba(76,76,76,0.14),0px 3px 14px 2px rgba(76,76,76,0.12);
-  background-color: #4c4c4c;
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
 }
 
 .c6 .c7 function (_ref5) {
@@ -2816,14 +2816,14 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c5:hover,
 .c5:focus {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.4);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
 }
 
 .c5:active {
   box-shadow: none;
-  background-color: rgba(204,204,204,0.5);
-  color: #4c4c4c;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
 }
 
 .c5:hover {
@@ -2832,53 +2832,53 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c9 .c1 .c13 {
-  color: #999999;
+  color: #424242;
   margin-right: 16px;
 }
 
 .c9 .c1 > .c4 {
-  color: #999999;
+  color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c9 .c1 > .c4 .c3 {
-  color: #999999;
+  color: #424242;
   margin-left: 0;
 }
 
 .c10 .c1 .c13 {
-  color: #1355d0;
+  color: #1250C4;
   margin-right: 16px;
 }
 
 .c10 .c1 > .c4 {
-  color: #1355d0;
+  color: #1250C4;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
-  color: #1355d0;
+  color: #1250C4;
   margin-left: 0;
 }
 
 .c11 .c1 .c13 {
-  color: #7ed321;
+  color: #3b610f;
   margin-right: 16px;
 }
 
 .c11 .c1 > .c4 {
-  color: #7ed321;
+  color: #3b610f;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c11 .c1 > .c4 .c3 {
-  color: #7ed321;
+  color: #3b610f;
   margin-left: 0;
 }
 
@@ -2904,25 +2904,25 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-sizing: border-box;
   font-size: 16px;
   background-color: #ffe5e9;
-  border: 1.5px solid #ff2d4d;
+  border: 1.5px solid #e91b0c;
   color: #ac001a;
   padding: 12px 16px;
 }
 
 .c0 .c1 .c13 {
-  color: #ff2d4d;
+  color: #e91b0c;
   margin-right: 16px;
 }
 
 .c0 .c1 > .c4 {
-  color: #ff2d4d;
+  color: #e91b0c;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c0 .c1 > .c4 .c3 {
-  color: #ff2d4d;
+  color: #e91b0c;
   margin-left: 0;
 }
 
@@ -3010,47 +3010,47 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
-                "300": "#ff6c82",
-                "500": "#ff2d4d",
-                "700": "#ff223d",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
                 "900": "#ac001a",
               },
               "neutral": Object {
                 "0": "#ffffff",
                 "100": "#f2f2f2",
                 "1000": "#000000",
-                "300": "#cccccc",
+                "300": "#e0e0e0",
                 "500": "#999999",
-                "700": "#4c4c4c",
+                "700": "#424242",
                 "900": "#191919",
               },
               "primary": Object {
-                "100": "#e5edfc",
-                "300": "#5a88de",
-                "500": "#1355d0",
-                "700": "#0e44c4",
-                "900": "#062ab3",
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
               },
               "secondary": Object {
-                "100": "#f5b3cd",
-                "300": "#e84d8b",
-                "500": "#de0059",
-                "700": "#d50048",
-                "900": "#c8002e",
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
               },
               "success": Object {
-                "100": "#edfadf",
-                "300": "#a5e064",
+                "100": "#dcedc8",
+                "300": "#c9eda2",
                 "500": "#7ed321",
-                "700": "#6bc818",
-                "900": "#3c6510",
+                "700": "#3b610f",
+                "900": "#004D40",
               },
               "warning": Object {
                 "100": "#ffefd6",
-                "300": "#f5b24d",
-                "500": "#f09100",
-                "700": "#ec7e00",
-                "900": "#a36300",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
               },
             },
             "components": Object {
@@ -3058,28 +3058,28 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "background": "#ffe5e9",
-                    "icon": "#ff2d4d",
+                    "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
                   "neutral": Object {
                     "background": "#f2f2f2",
-                    "icon": "#999999",
+                    "icon": "#424242",
                     "text": "#191919",
                   },
                   "primary": Object {
-                    "background": "#e5edfc",
-                    "icon": "#1355d0",
-                    "text": "#062ab3",
+                    "background": "#E5EDFC",
+                    "icon": "#1250C4",
+                    "text": "#002F7B",
                   },
                   "success": Object {
-                    "background": "#edfadf",
-                    "icon": "#7ed321",
-                    "text": "#3c6510",
+                    "background": "#dcedc8",
+                    "icon": "#3b610f",
+                    "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#a36300",
+                    "text": "#d14900",
                   },
                 },
               },
@@ -3088,18 +3088,18 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                   "error": Object {
                     "mainColor": Object {
                       "100": "#ffe5e9",
-                      "300": "#ff6c82",
-                      "500": "#ff2d4d",
-                      "700": "#ff223d",
+                      "300": "#f88e86",
+                      "500": "#ec584e",
+                      "700": "#e91b0c",
                       "900": "#ac001a",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
@@ -3108,90 +3108,90 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "primary": Object {
                     "mainColor": Object {
-                      "100": "#e5edfc",
-                      "300": "#5a88de",
-                      "500": "#1355d0",
-                      "700": "#0e44c4",
-                      "900": "#062ab3",
+                      "100": "#E5EDFC",
+                      "300": "#89AAE7",
+                      "500": "#0CC0EA",
+                      "700": "#1250C4",
+                      "900": "#002F7B",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "secondary": Object {
                     "mainColor": Object {
-                      "100": "#f5b3cd",
-                      "300": "#e84d8b",
-                      "500": "#de0059",
-                      "700": "#d50048",
-                      "900": "#c8002e",
+                      "100": "#F7B0C8",
+                      "300": "#F278A1",
+                      "500": "#E91E63",
+                      "700": "#DE0059",
+                      "900": "#9E003F",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "success": Object {
                     "mainColor": Object {
-                      "100": "#edfadf",
-                      "300": "#a5e064",
+                      "100": "#dcedc8",
+                      "300": "#c9eda2",
                       "500": "#7ed321",
-                      "700": "#6bc818",
-                      "900": "#3c6510",
+                      "700": "#3b610f",
+                      "900": "#004D40",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },
                   "warning": Object {
                     "mainColor": Object {
                       "100": "#ffefd6",
-                      "300": "#f5b24d",
-                      "500": "#f09100",
-                      "700": "#ec7e00",
-                      "900": "#a36300",
+                      "300": "#ffda6a",
+                      "500": "#ffc107",
+                      "700": "#f09100",
+                      "900": "#d14900",
                     },
                     "text": Object {
                       "0": "#ffffff",
                       "100": "#f2f2f2",
                       "1000": "#000000",
-                      "300": "#cccccc",
+                      "300": "#e0e0e0",
                       "500": "#999999",
-                      "700": "#4c4c4c",
+                      "700": "#424242",
                       "900": "#191919",
                     },
                   },

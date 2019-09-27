@@ -6,17 +6,17 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #cccccc;
-  color: #4c4c4c;
+  border-color: #e0e0e0;
+  color: #424242;
   padding: 8px 16px;
 }
 
 .c2:hover {
-  background-color: #e5edfc;
+  background-color: #E5EDFC;
 }
 
 .c2:hover strong {
-  color: #1355d0;
+  color: #1250C4;
 }
 
 .c1 {
@@ -37,22 +37,22 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   white-space: nowrap;
   margin: 0 4px;
   padding: 8px;
-  border-color: #cccccc;
+  border-color: #e0e0e0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin: 0;
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c3 {
@@ -73,22 +73,22 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   white-space: nowrap;
   margin: 0 4px;
   padding: 8px;
-  border-color: #cccccc;
+  border-color: #e0e0e0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin: 0;
 }
 
 .c3[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c3[aria-disabled=false]:hover,
 .c3[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -156,15 +156,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c2 {
@@ -194,8 +194,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -205,8 +205,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -238,8 +238,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -248,9 +248,9 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 
 .c3:hover,
 .c3:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -358,15 +358,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c2 {
@@ -396,8 +396,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -407,8 +407,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -440,8 +440,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -450,9 +450,9 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 
 .c3:hover,
 .c3:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -569,15 +569,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c4 {
@@ -593,7 +593,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 .c5,
 .c5:after,
 .c5:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -642,8 +642,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -653,8 +653,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -686,8 +686,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -696,9 +696,9 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 
 .c3:hover,
 .c3:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -813,15 +813,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c3 {
@@ -851,8 +851,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -862,8 +862,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c3:hover,
 .c3:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -895,8 +895,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -905,9 +905,9 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c2:hover,
 .c2:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -1033,15 +1033,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c3 {
@@ -1057,7 +1057,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 .c4,
 .c4:after,
 .c4:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -1106,8 +1106,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -1117,8 +1117,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c5:hover,
 .c5:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -1150,8 +1150,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -1160,9 +1160,9 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c2:hover,
 .c2:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -1277,15 +1277,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c3 {
@@ -1301,7 +1301,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 .c4,
 .c4:after,
 .c4:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -1350,8 +1350,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -1361,8 +1361,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c5:hover,
 .c5:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -1394,8 +1394,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -1404,9 +1404,9 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 .c2:hover,
 .c2:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -1521,15 +1521,15 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c3 {
@@ -1545,7 +1545,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 .c4,
 .c4:after,
 .c4:before {
-  background-color: #cccccc;
+  background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
   height: 5px;
@@ -1594,8 +1594,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -1605,8 +1605,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 
 .c5:hover,
 .c5:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 
@@ -1638,8 +1638,8 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  color: #4c4c4c;
+  border: 1px solid #e0e0e0;
+  color: #424242;
   font-size: 16px;
   font-weight: normal;
   margin: 0 4px;
@@ -1648,9 +1648,9 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 
 .c2:hover,
 .c2:focus {
-  background-color: #e5edfc;
-  border-color: #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
 }
 
 .c0 {
@@ -1772,15 +1772,15 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
 }
 
 .c1[aria-disabled=true] {
-  color: #cccccc;
+  color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c1[aria-disabled=false]:hover,
 .c1[aria-disabled=false]:focus {
-  background-color: #e5edfc;
-  border: 1px solid #1355d0;
-  color: #1355d0;
+  background-color: #E5EDFC;
+  border: 1px solid #1250C4;
+  color: #1250C4;
 }
 
 .c2 {
@@ -1810,8 +1810,8 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1355d0;
-  border: 1px solid #1355d0;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -1821,8 +1821,8 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #062ab3;
-  border-color: #062ab3;
+  background-color: #002F7B;
+  border-color: #002F7B;
   color: #ffffff;
 }
 

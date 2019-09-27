@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Col } from '../../components/Grid';
-import Colors from '../../components/Colors/deprecated';
+import { colors } from '../../components/shared/theme';
 import Icon from '../../components/Icon';
 
 const IconName = styled.div`
@@ -23,8 +23,8 @@ const IconWrapper = styled(Col)`
   overflow: hidden;
 
   &:hover {
-    background-color: ${Colors.PRIMARY['500']};
-    color: ${Colors.WHITE};
+    background-color: ${colors.primary['700']};
+    color: ${colors.neutral['0']};
   }
 `;
 

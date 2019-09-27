@@ -22,46 +22,46 @@ const breakpoints = {
 
 const colors = {
   primary: {
-    100: '#e5edfc',
-    300: '#5a88de',
-    500: '#1355d0',
-    700: '#0e44c4',
-    900: '#062ab3',
+    100: '#E5EDFC',
+    300: '#89AAE7',
+    500: '#0CC0EA',
+    700: '#1250C4',
+    900: '#002F7B',
   },
   secondary: {
-    100: '#f5b3cd',
-    300: '#e84d8b',
-    500: '#de0059',
-    700: '#d50048',
-    900: '#c8002e',
+    100: '#F7B0C8',
+    300: '#F278A1',
+    500: '#E91E63',
+    700: '#DE0059',
+    900: '#9E003F',
   },
   success: {
-    100: '#edfadf',
-    300: '#a5e064',
+    100: '#dcedc8',
+    300: '#c9eda2',
     500: '#7ed321',
-    700: '#6bc818',
-    900: '#3c6510',
+    700: '#3b610f',
+    900: '#004D40',
   },
   warning: {
     100: '#ffefd6',
-    300: '#f5b24d',
-    500: '#f09100',
-    700: '#ec7e00',
-    900: '#a36300',
+    300: '#ffda6a',
+    500: '#ffc107',
+    700: '#f09100',
+    900: '#d14900',
   },
   error: {
     100: '#ffe5e9',
-    300: '#ff6c82',
-    500: '#ff2d4d',
-    700: '#ff223d',
+    300: '#f88e86',
+    500: '#ec584e',
+    700: '#e91b0c',
     900: '#ac001a',
   },
   neutral: {
     0: '#ffffff',
     100: '#f2f2f2',
-    300: '#cccccc',
+    300: '#e0e0e0',
     500: '#999999',
-    700: '#4c4c4c',
+    700: '#424242',
     900: '#191919',
     1000: '#000000',
   },
@@ -118,7 +118,7 @@ const components = {
         text: colors.neutral[700],
       },
       primary: {
-        background: colors.primary[500],
+        background: colors.primary[700],
         text: colors.neutral[100],
       },
       error: {
@@ -140,7 +140,7 @@ const components = {
       },
       primary: {
         background: colors.primary[100],
-        text: colors.primary[500],
+        text: colors.primary[700],
       },
       success: {
         background: colors.success[100],
@@ -185,7 +185,7 @@ const components = {
         text: colors.neutral[100],
       },
       primary: {
-        background: colors.primary[700],
+        background: colors.primary[900],
         text: colors.neutral[100],
       },
       success: {
@@ -206,27 +206,27 @@ const components = {
   alert: {
     skins: {
       neutral: {
-        icon: colors.neutral[500],
+        icon: colors.neutral[700],
         background: colors.neutral[100],
         text: colors.neutral[900],
       },
       primary: {
-        icon: colors.primary[500],
+        icon: colors.primary[700],
         background: colors.primary[100],
         text: colors.primary[900],
       },
       success: {
-        icon: colors.success[500],
+        icon: colors.success[700],
         background: colors.success[100],
         text: colors.success[900],
       },
       warning: {
-        icon: colors.warning[500],
+        icon: colors.warning[700],
         background: colors.warning[100],
         text: colors.warning[900],
       },
       error: {
-        icon: colors.error[500],
+        icon: colors.error[700],
         background: colors.error[100],
         text: colors.error[900],
       },
@@ -242,13 +242,30 @@ const components = {
       },
       primary: {
         titleColor: colors.neutral[1000],
-        background: colors.primary[500],
+        background: colors.primary[700],
         textColor: colors.neutral[700],
       },
       secondary: {
         titleColor: colors.neutral[1000],
         background: colors.secondary[500],
         textColor: colors.neutral[700],
+      },
+    },
+  },
+
+  tabbedView: {
+    skins: {
+      neutral: {
+        activeText: colors.primary[700],
+        background: 'transparent',
+        hoverBackground: colors.primary[100],
+        text: 'inherit',
+      },
+      primary: {
+        activeText: colors.neutral[0],
+        background: colors.primary[700],
+        hoverBackground: colors.primary[900],
+        text: colors.neutral[0],
       },
     },
   },

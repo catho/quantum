@@ -19,7 +19,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 gsGCuq\\"
         disabled={false}
 -       htmlFor=\\"radio-button-9\\"
 +       htmlFor=\\"radio-button-12\\"
@@ -47,7 +47,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 gsGCuq\\"
         disabled={false}
 -       htmlFor=\\"radio-button-10\\"
 +       htmlFor=\\"radio-button-13\\"
@@ -75,7 +75,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bCLrwz\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 gsGCuq\\"
         disabled={false}
 -       htmlFor=\\"radio-button-11\\"
 +       htmlFor=\\"radio-button-14\\"
@@ -114,17 +114,17 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
 }
 
 .c5 .c3:checked ~ .c6 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c5 .c3:checked ~ .c6:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c5 .c3:focus ~ .c6 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5 .c3:checked:disabled ~ .c6 {
@@ -160,25 +160,25 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #1355d0;
-  border: 2px solid #1355d0;
+  color: #1250C4;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
 }
 
 .c2:focus,
 .c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
 }
 
 .c2 .c7 function (_ref5) {
@@ -307,17 +307,17 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
 }
 
 .c6 .c4:checked ~ .c7 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c6 .c4:checked ~ .c7:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c6 .c4:focus ~ .c7 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c6 .c4:checked:disabled ~ .c7 {
@@ -353,25 +353,25 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #1355d0;
-  border: 2px solid #1355d0;
+  color: #1250C4;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
 }
 
 .c3:focus,
 .c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
 }
 
 .c3 .c8 function (_ref5) {
@@ -536,7 +536,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c1 {
@@ -550,23 +550,23 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 }
 
 .c1 .c2:checked ~ .c4 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c1 .c2:checked ~ .c4:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c1 .c2:focus ~ .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1:hover .c4,
 .c1:focus .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1 .c2:checked:disabled ~ .c4 {
@@ -654,17 +654,17 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
 }
 
 .c5 .c3:checked ~ .c6 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c5 .c3:checked ~ .c6:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c5 .c3:focus ~ .c6 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c5 .c3:checked:disabled ~ .c6 {
@@ -700,25 +700,25 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #1355d0;
-  border: 2px solid #1355d0;
+  color: #1250C4;
+  border: 2px solid #1250C4;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
 .c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(14,68,196,0.2),0px 4px 5px 0px rgba(14,68,196,0.14),0px 1px 10px 0px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
-  border-color: #0e44c4;
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
 }
 
 .c2:focus,
 .c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(19,85,208,0.2),0px 4px 5px 0px rgba(19,85,208,0.14),0px 1px 10px 0px rgba(19,85,208,0.12);
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
 .c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(14,68,196,0.2),0px 8px 10px 1px rgba(14,68,196,0.14),0px 3px 14px 2px rgba(14,68,196,0.12);
-  background-color: #e5edfc;
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
 }
 
 .c2 .c7 function (_ref5) {
@@ -868,7 +868,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c1 {
@@ -882,23 +882,23 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 }
 
 .c1 .c2:checked ~ .c4 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c1 .c2:checked ~ .c4:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c1 .c2:focus ~ .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1:hover .c4,
 .c1:focus .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1 .c2:checked:disabled ~ .c4 {
@@ -1007,27 +1007,27 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   position: absolute;
   top: 25%;
   width: 50%;
-  background-color: #1355d0;
+  background-color: #1250C4;
 }
 
 .c7 .c2:checked ~ .c4 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c7 .c2:checked ~ .c4:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c7 .c2:focus ~ .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c7:hover .c4,
 .c7:focus .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c7 .c2:checked:disabled ~ .c4 {
@@ -1047,47 +1047,47 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
 }
 
 .c1 .c2:checked ~ .c4 {
-  border-color: #1355d0;
+  border-color: #1250C4;
 }
 
 .c1 .c2:checked ~ .c4:after {
-  background-color: #1355d0;
+  background-color: #1250C4;
   display: block;
 }
 
 .c1 .c2:focus ~ .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1:hover .c4,
 .c1:focus .c4 {
-  border-color: #1355d0;
-  box-shadow: 0px 3px 5px -1px rgba(19,85,208,0.2),0px 5px 8px 0px rgba(19,85,208,0.14),0px 1px 14px 0px rgba(19,85,208,0.12);
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
 .c1 .c2:checked ~ .c4 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c1 .c2:checked ~ .c4:after {
-  background-color: #ff2d4d;
+  background-color: #ec584e;
   display: block;
 }
 
 .c1 .c2:focus ~ .c4 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c1 .c4 {
-  border-color: #ff2d4d;
+  border-color: #ec584e;
 }
 
 .c1:hover .c4,
 .c1:focus .c4 {
-  border-color: #ff2d4d;
-  box-shadow: 0px 3px 5px -1px rgba(255,45,77,0.2),0px 5px 8px 0px rgba(255,45,77,0.14),0px 1px 14px 0px rgba(255,45,77,0.12);
+  border-color: #ec584e;
+  box-shadow: 0px 3px 5px -1px rgba(236,88,78,0.2),0px 5px 8px 0px rgba(236,88,78,0.14),0px 1px 14px 0px rgba(236,88,78,0.12);
 }
 
 .c1 .c2:checked:disabled ~ .c4 {
