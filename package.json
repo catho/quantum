@@ -29,7 +29,7 @@
     "lint:js": "yarn lint ./*.js",
     "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
     "lint": "eslint --ext js,jsx --quiet",
-    "prepush": "yarn lint:all && yarn test:components && yarn build:regression",
+    "prepush": "yarn lint:all && yarn test:components",
     "storybook": "start-storybook -s static",
     "format": "prettier --write ./**/*.{js,jsx,json}",
     "deploy-storybook": "storybook-to-ghpages",

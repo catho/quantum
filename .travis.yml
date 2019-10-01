@@ -3,19 +3,27 @@ language: node_js
 node_js:
   - 8
 
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - master
 
 jobs:
   include:
-    - stage: release
+    - stage: unit tests
       node_js: lts/*
+      skip_cleanup: true
+      script:
+        - yarn test:components
 
-      script: yarn build
+    - stage: regression tests
+      node_js: lts/*
+      skip_cleanup: true
+      script:
+        - yarn build:regression
 
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - yarn semantic-release
+    - stage: release
+      if: branch = master
+      node_js: lts/*
+      skip_cleanup: true
+      script:
+        - yarn semantic-release
