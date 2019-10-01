@@ -24,6 +24,6 @@ jobs:
     - stage: release
       if: branch = master
       node_js: lts/*
-      skip_cleanup: true
+      skip_cleanup: false
       script:
         - yarn semantic-release
