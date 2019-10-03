@@ -85,7 +85,6 @@ class Input extends React.Component {
     super(props);
 
     const { type, id, value } = props;
-    console.log('prop', value);
 
     this.state = {
       type,

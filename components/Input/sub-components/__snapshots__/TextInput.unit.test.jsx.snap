@@ -32,6 +32,10 @@ exports[`Input component should match snapshots 1`] = `
   display: none;
 }
 
+.c0::-ms-clear {
+  display: none;
+}
+
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
@@ -88,6 +92,10 @@ exports[`Input component should match snapshots 2`] = `
   display: none;
 }
 
+.c0::-ms-clear {
+  display: none;
+}
+
 .c0:hover,
 .c0:focus {
   border-color: #e91b0c;
@@ -140,6 +148,10 @@ exports[`Input component should match snapshots 3`] = `
 
 .c0::-webkit-calendar-picker-indicator,
 .c0::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0::-ms-clear {
   display: none;
 }
 
@@ -199,6 +211,10 @@ exports[`Input component should match snapshots 4`] = `
   display: none;
 }
 
+.c0::-ms-clear {
+  display: none;
+}
+
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
@@ -255,6 +271,10 @@ exports[`Input component should match snapshots 5`] = `
   display: none;
 }
 
+.c0::-ms-clear {
+  display: none;
+}
+
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
@@ -308,6 +328,10 @@ exports[`Input component should match snapshots 6`] = `
 
 .c0::-webkit-calendar-picker-indicator,
 .c0::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0::-ms-clear {
   display: none;
 }
 
@@ -368,6 +392,10 @@ exports[`Input component should match snapshots 7`] = `
   display: none;
 }
 
+.c0::-ms-clear {
+  display: none;
+}
+
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
@@ -421,6 +449,10 @@ exports[`Input component should match snapshots 8`] = `
 
 .c0::-webkit-calendar-picker-indicator,
 .c0::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0::-ms-clear {
   display: none;
 }
 
@@ -479,6 +511,10 @@ exports[`Input component should match snapshots 9`] = `
 
 .c0::-webkit-calendar-picker-indicator,
 .c0::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0::-ms-clear {
   display: none;
 }
 

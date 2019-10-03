@@ -23,6 +23,9 @@ const TextInput = styled.input`
   &::-webkit-search-cancel-button {
     display: none;
   }
+  &::-ms-clear {
+    display: none;
+  }
 
   ${({
     defaultValue,

@@ -53,6 +53,10 @@ exports[`Input component  should match the snapshot 1`] = `
   display: none;
 }
 
+.c2::-ms-clear {
+  display: none;
+}
+
 .c2:hover,
 .c2:focus {
   border-color: #1250C4;
@@ -248,6 +252,10 @@ exports[`Input component  should match the snapshot 2`] = `
 
 .c2::-webkit-calendar-picker-indicator,
 .c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
   display: none;
 }
 
@@ -449,6 +457,10 @@ exports[`Input component  should match the snapshot 3`] = `
 
 .c2::-webkit-calendar-picker-indicator,
 .c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
   display: none;
 }
 
@@ -661,6 +673,10 @@ exports[`Input component  should match the snapshot 4`] = `
   display: none;
 }
 
+.c2::-ms-clear {
+  display: none;
+}
+
 .c2:hover,
 .c2:focus {
   border-color: #e91b0c;
@@ -860,6 +876,10 @@ exports[`Input component  should match the snapshot 5`] = `
 
 .c2::-webkit-calendar-picker-indicator,
 .c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
   display: none;
 }
 
@@ -1064,6 +1084,10 @@ exports[`Input component  should match the snapshot 6`] = `
 
 .c3::-webkit-calendar-picker-indicator,
 .c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3::-ms-clear {
   display: none;
 }
 
@@ -1282,6 +1306,10 @@ exports[`Input component  should match the snapshot 7`] = `
   display: none;
 }
 
+.c4::-ms-clear {
+  display: none;
+}
+
 .c4:hover,
 .c4:focus {
   border-color: #1250C4;
@@ -1490,6 +1518,10 @@ exports[`Input component  should match the snapshot 8`] = `
 
 .c2::-webkit-calendar-picker-indicator,
 .c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
   display: none;
 }
 
@@ -1703,6 +1735,10 @@ exports[`Input component  should match the snapshot 9`] = `
   display: none;
 }
 
+.c2::-ms-clear {
+  display: none;
+}
+
 .c2:hover,
 .c2:focus {
   border-color: #1250C4;
@@ -1897,6 +1933,10 @@ exports[`Input component  should match the snapshot 10`] = `
 
 .c2::-webkit-calendar-picker-indicator,
 .c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
   display: none;
 }
 
