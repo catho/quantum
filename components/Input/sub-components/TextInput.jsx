@@ -35,39 +35,40 @@ const TextInput = styled.input`
   }) => {
     const {
       colors: {
-        primary: { 700: primaryColor },
+        primary: { 100: primary100, 700: primary700 },
         error: { 100: error100, 700: error700 },
         neutral: {
           0: neutral0,
-          300: neutral300,
+          100: neutral100,
           500: neutral500,
           700: neutral700,
         },
       },
-      spacing: { xsmall, small, xxlarge },
+      spacing: { xsmall, medium, xxlarge },
     } = theme;
 
-    const mainColor = error ? error700 : primaryColor;
+    const mainColor = error ? error700 : primary700;
 
     return `
       background-color: ${neutral0};
       border: 2px solid ${neutral500};
       color: ${neutral700};
       margin-top: ${xsmall}px;
-      padding: ${xsmall}px ${small}px;
+      padding: ${xsmall}px ${medium}px;
 
       ${hasRightIcon ? `padding-right: ${xxlarge}px;` : ''}
       ${hasLeftIcon ? `padding-left: ${xxlarge}px;` : ''}
       ${error ? `border-color: ${mainColor};` : ''}
       ${placeholder && !defaultValue && !value ? `color: ${neutral500};` : ''}
+      ${defaultValue ? `background-color: ${primary100};` : ''}
 
       :hover, :focus {
         border-color: ${mainColor};
-        ${shadow(5, mainColor)({ theme })}
+        ${shadow(2, mainColor)({ theme })}
       }
 
       &[disabled] {
-        background-color: ${neutral300};
+        background-color: ${neutral100};
         border-color: ${neutral500};
         box-shadow: none;
         color: ${neutral500};

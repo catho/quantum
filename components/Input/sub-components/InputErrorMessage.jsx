@@ -6,10 +6,10 @@ import { spacing, colors } from '../../shared/theme';
 const InputErrorMessage = styled(ErrorMessage)`
   ${({
     theme: {
-      spacing: { xsmall, small },
+      spacing: { xsmall },
     },
   }) => `
-    margin: ${xsmall}px ${small}px 0;
+    margin: ${xsmall}px 0 0;
   `}
 `;
 

@@ -18,7 +18,7 @@ exports[`Input component should match snapshots 1`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -35,11 +35,11 @@ exports[`Input component should match snapshots 1`] = `
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -73,7 +73,7 @@ exports[`Input component should match snapshots 2`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-color: #e91b0c;
 }
 
@@ -91,11 +91,11 @@ exports[`Input component should match snapshots 2`] = `
 .c0:hover,
 .c0:focus {
   border-color: #e91b0c;
-  box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(233,27,12,0.2),0px 2px 2px 0px rgba(233,27,12,0.14),0px 1px 5px 0px rgba(233,27,12,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -129,7 +129,7 @@ exports[`Input component should match snapshots 3`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -146,11 +146,11 @@ exports[`Input component should match snapshots 3`] = `
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -185,7 +185,7 @@ exports[`Input component should match snapshots 4`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -202,11 +202,11 @@ exports[`Input component should match snapshots 4`] = `
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -240,7 +240,7 @@ exports[`Input component should match snapshots 5`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
   color: #999999;
 }
 
@@ -258,11 +258,11 @@ exports[`Input component should match snapshots 5`] = `
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -297,7 +297,7 @@ exports[`Input component should match snapshots 6`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -314,11 +314,11 @@ exports[`Input component should match snapshots 6`] = `
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -353,7 +353,8 @@ exports[`Input component should match snapshots 7`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
+  background-color: #E5EDFC;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -370,11 +371,11 @@ exports[`Input component should match snapshots 7`] = `
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -409,7 +410,7 @@ exports[`Input component should match snapshots 8`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 
 .c0::-webkit-inner-spin-button,
@@ -426,11 +427,11 @@ exports[`Input component should match snapshots 8`] = `
 .c0:hover,
 .c0:focus {
   border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;
@@ -466,7 +467,7 @@ exports[`Input component should match snapshots 9`] = `
   border: 2px solid #999999;
   color: #424242;
   margin-top: 8px;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-color: #e91b0c;
 }
 
@@ -484,11 +485,11 @@ exports[`Input component should match snapshots 9`] = `
 .c0:hover,
 .c0:focus {
   border-color: #e91b0c;
-  box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
+  box-shadow: 0px 3px 1px -2px rgba(233,27,12,0.2),0px 2px 2px 0px rgba(233,27,12,0.14),0px 1px 5px 0px rgba(233,27,12,0.12);
 }
 
 .c0[disabled] {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-color: #999999;
   box-shadow: none;
   color: #999999;

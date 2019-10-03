@@ -22,10 +22,10 @@ const InputIcon = styled(Icon)`
   position: absolute;
   ${({
     theme: {
-      spacing: { xsmall, small },
+      spacing: { xsmall, medium },
     },
   }) => `
-    right: ${small}px;
+    right: ${medium}px;
     bottom: ${xsmall * 1.25}px;
   `}
 `;
@@ -34,32 +34,27 @@ const InputSearchIcon = styled(InputIcon).attrs({ name: 'search' })`
   pointer-events: none;
   ${({
     theme: {
-      spacing: { small },
+      spacing: { medium },
     },
-  }) => `left: ${small}px;`}
+  }) => `left: ${medium}px;`}
 `;
 
 const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
   ${({
     theme: {
       colors: {
-        error: { 500: error500 },
+        error: { 700: error700 },
       },
     },
-  }) => `color: ${error500};`}
+  }) => `color: ${error700};`}
 `;
 
 const DescriptionLabel = styled.span`
   cursor: text;
   display: block;
-  ${({
-    theme: {
-      spacing: { small },
-      baseFontSize: fontSize,
-    },
-  }) => `
+  ${({ theme: { baseFontSize: fontSize } }) => `
     font-size: ${fontSize * 0.875}px;
-    padding: 0 ${small}px;
+    padding: 0;
   `}
 `;
 
@@ -90,10 +85,12 @@ class Input extends React.Component {
     super(props);
 
     const { type, id, value } = props;
+    console.log('prop', value);
 
     this.state = {
       type,
       currentValue: value,
+      defaultValue: value,
     };
 
     this._id = id || ID_GENERATOR.next().value;
@@ -104,6 +101,7 @@ class Input extends React.Component {
     const inputValue = ev.currentTarget.value;
     this.setState({
       currentValue: inputValue,
+      defaultValue: null,
     });
 
     onChange(ev);
@@ -130,7 +128,7 @@ class Input extends React.Component {
       theme,
       ...rest
     } = this.props;
-    const { currentValue } = this.state;
+    const { currentValue, defaultValue } = this.state;
     const { type: typeState } = this.state;
 
     const _isSearchType = typeProp === 'search';
@@ -140,6 +138,7 @@ class Input extends React.Component {
     const onCleanClick = e => {
       this.setState({
         currentValue: '',
+        defaultValue: null,
       });
       onClean(e);
     };
@@ -168,18 +167,19 @@ class Input extends React.Component {
             onChange={this.onChangeInput}
             render={(ref, props) => (
               <TextInput
+                {...props}
                 ref={ref}
                 error={error}
                 hasRightIcon={_hasIcon}
                 hasLeftIcon={_isSearchType}
-                {...props}
+                defaultValue={defaultValue}
               />
             )}
           />
-          {error && (
+          {error && !_isPassword && (
             <InputErrorIcon description={descriptionLabel} theme={theme} />
           )}
-          {_isPassword && !error && (
+          {_isPassword && (
             <InputIcon
               theme={theme}
               name={typeState === 'password' ? 'visibility' : 'visibility_off'}
@@ -190,7 +190,7 @@ class Input extends React.Component {
           {hasValue && !_isPassword && !error && (
             <InputIcon
               theme={theme}
-              name="cancel"
+              name="clear"
               description={descriptionLabel}
               onClick={onCleanClick}
             />
