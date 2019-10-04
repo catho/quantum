@@ -71,6 +71,7 @@ exports[`TextArea component should match snapshots 1`] = `
 >
   <textarea
     className="c1"
+    defaultValue=""
     disabled={false}
     id="textarea-0"
     onChange={[Function]}
@@ -109,6 +110,7 @@ exports[`TextArea component should match snapshots 2`] = `
   color: #424242;
   margin-top: 8px;
   padding: 8px 16px;
+  background-color: #E5EDFC;
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -154,6 +156,7 @@ exports[`TextArea component should match snapshots 2`] = `
 >
   <textarea
     className="c1"
+    defaultValue="foo"
     disabled={false}
     id="textarea-1"
     onChange={[Function]}
@@ -249,6 +252,7 @@ exports[`TextArea component should match snapshots 3`] = `
   </label>
   <textarea
     className="c2"
+    defaultValue=""
     disabled={false}
     id="textarea-2"
     onChange={[Function]}
@@ -353,6 +357,7 @@ exports[`TextArea component should match snapshots 4`] = `
   </label>
   <textarea
     className="c3"
+    defaultValue=""
     disabled={false}
     id="textarea-3"
     onChange={[Function]}
@@ -436,6 +441,7 @@ exports[`TextArea component should match snapshots 5`] = `
 >
   <textarea
     className="c1"
+    defaultValue=""
     disabled={true}
     id="textarea-4"
     onChange={[Function]}
@@ -520,6 +526,7 @@ exports[`TextArea component should match snapshots 6`] = `
 >
   <textarea
     className="c1"
+    defaultValue=""
     disabled={false}
     id="textarea-5"
     onChange={[Function]}
@@ -614,6 +621,7 @@ exports[`TextArea component should match snapshots 7`] = `
 >
   <textarea
     className="c1"
+    defaultValue=""
     disabled={false}
     id="textarea-6"
     onChange={[Function]}
@@ -712,6 +720,7 @@ exports[`TextArea component should match snapshots 8`] = `
 >
   <textarea
     className="c1"
+    defaultValue=""
     disabled={false}
     id="textarea-7"
     onChange={[Function]}

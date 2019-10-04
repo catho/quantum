@@ -23,13 +23,30 @@ class TextArea extends React.Component {
   constructor(props) {
     super(props);
 
-    const { id } = props;
+    const { id, value } = props;
+
+    this.state = {
+      defaultValue: value,
+      currentValue: value,
+    };
 
     this._id = id || ID_GENERATOR.next().value;
   }
 
+  onChangeTextArea = ev => {
+    const { onChange } = this.props;
+    const inputValue = ev.currentTarget.value;
+    this.setState({
+      currentValue: inputValue,
+      defaultValue: null,
+    });
+
+    onChange(ev);
+  };
+
   render() {
     const { label, required, helperText, error, id, ...rest } = this.props;
+    const { defaultValue, currentValue } = this.state;
 
     return (
       <FieldGroup>
@@ -40,11 +57,14 @@ class TextArea extends React.Component {
           </InputLabel>
         )}
         <TextAreaTag
+          {...rest}
+          defaultValue={defaultValue}
+          value={currentValue}
           error={error}
           id={this._id}
           required={required}
           as="textarea"
-          {...rest}
+          onChange={this.onChangeTextArea}
         />
         {helperText && <HelperText>{helperText}</HelperText>}
         {error && (
