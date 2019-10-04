@@ -31,22 +31,25 @@ const ButtonIcon = styled(Icon)`
 `;
 
 const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
-  const sizes = {
+  const fontSizes = {
     xsmall: `${baseFontSize * 0.75}px`,
     small: `${baseFontSize * 0.75}px`,
     medium: `${baseFontSize}px`,
     large: `${baseFontSize * 1.25}px`,
     xlarge: `${baseFontSize * 1.5}px`,
   };
+
   const lineHeights = {
-    xsmall: `${baseFontSize * 0.75 * 1.5}px`,
+    xsmall: `${baseFontSize}px`,
     small: `${baseFontSize * 0.75 * 1.5}px`,
     medium: `${baseFontSize * 1.5}px`,
-    large: `${baseFontSize * 1.25 * 1.5}px`,
-    xlarge: `${baseFontSize * 1.5 * 1.5}px`,
+    large: `${baseFontSize * 1.75}px`,
+    xlarge: `${baseFontSize * 2}px`,
   };
+  console.log('lineHeights', lineHeights);
+
   return `
-    font-size: ${sizes[size]};
+    font-size: ${fontSizes[size]};
     line-height: ${lineHeights[size]};
   `;
 };
@@ -56,7 +59,7 @@ const StyledButton = styled.button`
   display: flex;
   font-weight: bold;
   justify-content: center;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
 
   ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
@@ -82,13 +85,13 @@ const StyledButton = styled.button`
   ${({
     size,
     theme: {
-      spacing: { small, medium, xsmall, xxsmall, large },
+      spacing: { small, xsmall, xxsmall, medium, large, xlarge },
     },
   }) => {
     const paddings = {
       xsmall: `${xxsmall}px ${small}px`,
-      small: `${small / 2}px ${small}px`,
-      medium: `${xsmall}px ${medium}px`,
+      small: `${small / 2}px ${medium}px`,
+      medium: `${xsmall}px ${xlarge}px`,
       large: `${xsmall * 1.25}px ${medium}px`,
       xlarge: `${large / 2}px ${medium}px`,
     };
@@ -149,7 +152,8 @@ const StyledButton = styled.button`
       background-color: ${bgColor};
       color: ${textColor};
 
-      border: 2px solid ${disabled ? neutral500 : mainColor700};
+      // border: 2px solid ${disabled ? neutral500 : mainColor700};
+      border: none;
 
       ${shadow(2, neutral500)({ theme })}
 
@@ -188,7 +192,7 @@ const StyledButton = styled.button`
           spacing: { xxsmall, medium, large },
         },
       }) => {
-        const sizes = {
+        const fontSizes = {
           xsmall: `${medium}px`,
           small: `${medium}px`,
           medium: `${large}px`,
@@ -197,7 +201,7 @@ const StyledButton = styled.button`
         };
 
         return `
-          font-size: ${sizes[size]};
+          font-size: ${fontSizes[size]};
           margin-right: ${xxsmall}px;
         `;
       }}
