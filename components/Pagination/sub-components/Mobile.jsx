@@ -14,7 +14,6 @@ const Info = styled.span`
     theme: {
       colors: {
         neutral: { 300: neutral300, 700: neutral700 },
-        primary: { 100: primary100, 700: primary700 },
       },
       spacing: { xsmall, medium },
     },
@@ -22,13 +21,6 @@ const Info = styled.span`
     border-color: ${neutral300};
     color: ${neutral700};
     padding: ${xsmall}px ${medium}px;
-
-    :hover {
-      background-color: ${primary100};
-      strong {
-        color: ${primary700};
-      }
-    }
   `}
 `;
 const StyledActionButton = styled(ActionButton)`
@@ -40,6 +32,20 @@ const StyledActionButton = styled(ActionButton)`
     },
   }) => `
     border-color: ${neutral300};
+    border-radius: 10px;
+    border-width: 1px;
+
+    &[aria-disabled=true] {
+      color: ${neutral300};
+      cursor: not-allowed;
+      display: block;
+    }
+
+    &[aria-disabled=false] {
+      :focus {
+        border-width: 1px;
+      }
+    }
   `}
 
   ${({ rightSquared }) =>
