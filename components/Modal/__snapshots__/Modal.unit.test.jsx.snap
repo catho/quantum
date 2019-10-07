@@ -115,7 +115,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   display: -ms-flexbox;
   display: flex;
   padding: 16px 16px 0;
-  padding: 24px 24px 0;
+  padding: 16px 16px 0;
 }
 
 .c4 > * {
@@ -132,7 +132,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c1 .c3 {
-  padding-right: 48px;
+  padding-right: 64px;
 }
 
 .c10 {
@@ -144,7 +144,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   box-shadow: none;
   outline: none;
   position: absolute;
-  top: 16px;
+  top: 12px;
   right: 16px;
 }
 
@@ -557,7 +557,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   display: -ms-flexbox;
   display: flex;
   padding: 16px 16px 0;
-  padding: 24px 24px 0;
+  padding: 16px 16px 0;
 }
 
 .c4 > * {
@@ -574,7 +574,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c1 .c3 {
-  padding-right: 48px;
+  padding-right: 64px;
 }
 
 .c10 {
@@ -586,7 +586,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   box-shadow: none;
   outline: none;
   position: absolute;
-  top: 16px;
+  top: 12px;
   right: 16px;
 }
 
