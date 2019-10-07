@@ -127,7 +127,12 @@ const StyledButton = styled.button`
         },
       },
       colors: {
-        neutral: { 0: neutral0, 500: neutral500 },
+        neutral: {
+          0: neutral0,
+          300: neutral300,
+          500: neutral500,
+          700: neutral700,
+        },
       },
     } = theme;
 
@@ -141,8 +146,8 @@ const StyledButton = styled.button`
       bgColor = neutral0;
       textColor = mainColor700;
     } else if (disabled) {
-      bgColor = neutral500;
-      textColor = neutral0;
+      bgColor = neutral300;
+      textColor = neutral700;
     } else {
       bgColor = mainColor700;
       textColor = text0;
@@ -151,8 +156,6 @@ const StyledButton = styled.button`
     return `
       background-color: ${bgColor};
       color: ${textColor};
-
-      // border: 2px solid ${disabled ? neutral500 : mainColor700};
       border: none;
 
       ${shadow(2, neutral500)({ theme })}
