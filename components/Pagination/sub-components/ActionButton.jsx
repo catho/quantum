@@ -15,11 +15,12 @@ const ActionButton = styled.a`
     border 0.2s ease-in-out;
   user-select: none;
   white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
 
   ${({
     theme: {
       colors: {
-        neutral: { 300: neutral300 },
         primary: { 100: primary100, 700: primary700 },
       },
       spacing: { xsmall, xxsmall },
@@ -27,19 +28,17 @@ const ActionButton = styled.a`
   }) => `
     margin: 0 ${xxsmall}px;
     padding: ${xsmall}px;
+    color: ${primary700};
 
-      &[aria-disabled=true] {
-        color: ${neutral300};
-        cursor: not-allowed;
-      }
+    &[aria-disabled=true] {
+      display: none;
+    }
 
-      &[aria-disabled=false] {
-        :hover,
-        :focus {
-          background-color: ${primary100};
-          border: 1px solid ${primary700};
-          color: ${primary700};
-        }
+    &[aria-disabled=false] {
+      :hover,
+      :focus {
+        background-color: ${primary100};
+        border: 2px solid ${primary700};
       }
     }
   `}

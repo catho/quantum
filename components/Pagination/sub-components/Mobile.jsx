@@ -40,6 +40,21 @@ const StyledActionButton = styled(ActionButton)`
     },
   }) => `
     border-color: ${neutral300};
+    border-radius: 10px;
+    border-width: 1px;
+
+    &[aria-disabled=true] {
+      color: ${neutral300};
+      cursor: not-allowed;
+      display: block;
+    }
+
+    &[aria-disabled=false] {
+      :hover,
+      :focus {
+        border-width: 1px;
+      }
+    }
   `}
 
   ${({ rightSquared }) =>
