@@ -9,6 +9,7 @@ exports[`TextArea component should match snapshots 1`] = `
 }
 
 .c1 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -92,6 +93,7 @@ exports[`TextArea component should match snapshots 2`] = `
 }
 
 .c1 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -181,6 +183,7 @@ exports[`TextArea component should match snapshots 3`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -280,6 +283,7 @@ exports[`TextArea component should match snapshots 4`] = `
 }
 
 .c3 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -374,6 +378,7 @@ exports[`TextArea component should match snapshots 5`] = `
 }
 
 .c1 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -457,6 +462,7 @@ exports[`TextArea component should match snapshots 6`] = `
 }
 
 .c1 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -552,6 +558,7 @@ exports[`TextArea component should match snapshots 7`] = `
 }
 
 .c1 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -649,6 +656,7 @@ exports[`TextArea component should match snapshots 8`] = `
 }
 
 .c1 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
