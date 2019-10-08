@@ -29,7 +29,7 @@ const TextInput = styled.input`
   }
 
   ${({
-    defaultValue,
+    hasDefaultValue,
     error,
     hasRightIcon,
     hasLeftIcon,
@@ -65,8 +65,10 @@ const TextInput = styled.input`
       ${hasRightIcon ? `padding-right: ${horizontalPadding}px;` : ''}
       ${hasLeftIcon ? `padding-left: ${horizontalPadding}px;` : ''}
       ${error ? `border-color: ${mainColor};` : ''}
-      ${placeholder && !defaultValue && !value ? `color: ${neutral500};` : ''}
-      ${defaultValue ? `background-color: ${primary100};` : ''}
+      ${
+        placeholder && !hasDefaultValue && !value ? `color: ${neutral500};` : ''
+      }
+      ${hasDefaultValue ? `background-color: ${primary100};` : ''}
 
       :hover, :focus {
         border-color: ${mainColor};

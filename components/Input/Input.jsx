@@ -89,7 +89,7 @@ class Input extends React.Component {
     this.state = {
       type,
       currentValue: value,
-      defaultValue: value,
+      hasDefaultValue: value !== null && value[0],
     };
 
     this._id = id || ID_GENERATOR.next().value;
@@ -100,7 +100,7 @@ class Input extends React.Component {
     const inputValue = ev.currentTarget.value;
     this.setState({
       currentValue: inputValue,
-      defaultValue: null,
+      hasDefaultValue: false,
     });
 
     onChange(ev);
@@ -127,7 +127,7 @@ class Input extends React.Component {
       theme,
       ...rest
     } = this.props;
-    const { currentValue, defaultValue } = this.state;
+    const { currentValue, hasDefaultValue } = this.state;
     const { type: typeState } = this.state;
 
     const _isSearchType = typeProp === 'search';
@@ -137,7 +137,7 @@ class Input extends React.Component {
     const onCleanClick = e => {
       this.setState({
         currentValue: '',
-        defaultValue: null,
+        hasDefaultValue: false,
       });
       onClean(e);
     };
@@ -171,7 +171,7 @@ class Input extends React.Component {
                 error={error}
                 hasRightIcon={_hasIcon}
                 hasLeftIcon={_isSearchType}
-                defaultValue={defaultValue}
+                hasDefaultValue={hasDefaultValue}
               />
             )}
           />
