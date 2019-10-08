@@ -169,4 +169,14 @@ describe('Input component', () => {
       expect(wrapper.state('type')).toEqual('password');
     });
   });
+
+  it('should onChange props be called', () => {
+    const onChangeEventMock = jest.fn();
+    const wrapper = mount(
+      <Input label="Text label" value="foo" onChange={onChangeEventMock} />,
+    );
+    const componentInput = wrapper.find('TextInput');
+    componentInput.simulate('change');
+    expect(onChangeEventMock).toHaveBeenCalled();
+  });
 });

@@ -4,6 +4,7 @@ import { spacing, colors } from '../../shared/theme';
 import { shadow } from '../../shared';
 
 const TextInput = styled.input`
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -47,10 +48,12 @@ const TextInput = styled.input`
           700: neutral700,
         },
       },
-      spacing: { xsmall, medium, xxlarge },
+      spacing: { xsmall, medium, large },
     } = theme;
 
     const mainColor = error ? error700 : primary700;
+    const iconSize = large;
+    const horizontalPadding = medium + iconSize + xsmall;
 
     return `
       background-color: ${neutral0};
@@ -59,8 +62,8 @@ const TextInput = styled.input`
       margin-top: ${xsmall}px;
       padding: ${xsmall}px ${medium}px;
 
-      ${hasRightIcon ? `padding-right: ${xxlarge}px;` : ''}
-      ${hasLeftIcon ? `padding-left: ${xxlarge}px;` : ''}
+      ${hasRightIcon ? `padding-right: ${horizontalPadding}px;` : ''}
+      ${hasLeftIcon ? `padding-left: ${horizontalPadding}px;` : ''}
       ${error ? `border-color: ${mainColor};` : ''}
       ${
         placeholder && !hasDefaultValue && !value ? `color: ${neutral500};` : ''

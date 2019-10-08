@@ -9,6 +9,7 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -211,6 +212,7 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -413,6 +415,7 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -628,6 +631,7 @@ exports[`Input component  should match the snapshot 4`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -835,6 +839,7 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -1043,6 +1048,7 @@ exports[`Input component  should match the snapshot 6`] = `
 }
 
 .c3 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -1262,6 +1268,7 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c4 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -1476,6 +1483,7 @@ exports[`Input component  should match the snapshot 8`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -1691,6 +1699,7 @@ exports[`Input component  should match the snapshot 9`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -1893,6 +1902,7 @@ exports[`Input component  should match the snapshot 10`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
   box-sizing: border-box;
