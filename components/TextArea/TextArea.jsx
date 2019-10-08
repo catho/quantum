@@ -26,7 +26,7 @@ class TextArea extends React.Component {
     const { id, value } = props;
 
     this.state = {
-      defaultValue: value,
+      hasDefaultValue: value !== null && value[0],
       currentValue: value,
     };
 
@@ -38,7 +38,7 @@ class TextArea extends React.Component {
     const inputValue = ev.currentTarget.value;
     this.setState({
       currentValue: inputValue,
-      defaultValue: null,
+      hasDefaultValue: null,
     });
 
     onChange(ev);
@@ -46,7 +46,7 @@ class TextArea extends React.Component {
 
   render() {
     const { label, required, helperText, error, id, ...rest } = this.props;
-    const { defaultValue, currentValue } = this.state;
+    const { hasDefaultValue, currentValue } = this.state;
 
     return (
       <FieldGroup>
@@ -58,7 +58,7 @@ class TextArea extends React.Component {
         )}
         <TextAreaTag
           {...rest}
-          defaultValue={defaultValue}
+          hasDefaultValue={hasDefaultValue}
           value={currentValue}
           error={error}
           id={this._id}
