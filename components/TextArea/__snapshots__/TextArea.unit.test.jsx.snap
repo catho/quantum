@@ -111,6 +111,7 @@ exports[`TextArea component should match snapshots 2`] = `
   color: #424242;
   margin-top: 8px;
   padding: 8px 16px;
+  background-color: #E5EDFC;
   display: block;
   min-height: 108px;
   margin-top: 8px;
