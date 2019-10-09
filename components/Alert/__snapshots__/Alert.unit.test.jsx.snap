@@ -19,16 +19,16 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  -webkit-letter-spacing: 0.24px;
+  -moz-letter-spacing: 0.24px;
+  -ms-letter-spacing: 0.24px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -58,10 +58,10 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c7 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -423,6 +423,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
+              "xxxxlarge": 56,
             },
           }
         }
@@ -453,16 +454,16 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  -webkit-letter-spacing: 0.24px;
+  -moz-letter-spacing: 0.24px;
+  -ms-letter-spacing: 0.24px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -492,10 +493,10 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c8 function (_ref5) var sizes = {
+.c7 .c8 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -868,6 +869,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
+              "xxxxlarge": 56,
             },
           }
         }
@@ -898,16 +900,16 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  -webkit-letter-spacing: 0.24px;
+  -moz-letter-spacing: 0.24px;
+  -ms-letter-spacing: 0.24px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -937,10 +939,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c7 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1302,6 +1304,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
+              "xxxxlarge": 56,
             },
           }
         }
@@ -1332,16 +1335,16 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  -webkit-letter-spacing: 0.24px;
+  -moz-letter-spacing: 0.24px;
+  -ms-letter-spacing: 0.24px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -1371,10 +1374,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c7 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1753,6 +1756,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
+              "xxxxlarge": 56,
             },
           }
         }
@@ -1783,16 +1787,16 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  -webkit-letter-spacing: 0.24px;
+  -moz-letter-spacing: 0.24px;
+  -ms-letter-spacing: 0.24px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -1822,10 +1826,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c7 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2221,6 +2225,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
+              "xxxxlarge": 56,
             },
           }
         }
@@ -2251,16 +2256,16 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  -webkit-letter-spacing: 0.24px;
+  -moz-letter-spacing: 0.24px;
+  -ms-letter-spacing: 0.24px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -2290,10 +2295,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c7 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2706,6 +2711,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
+              "xxxxlarge": 56,
             },
           }
         }
@@ -2736,16 +2742,16 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  -webkit-letter-spacing: 0.24px;
+  -moz-letter-spacing: 0.24px;
+  -ms-letter-spacing: 0.24px;
+  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -2775,10 +2781,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c7 function (_ref5) var sizes = {
+.c6 .c7 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -3208,6 +3214,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
+              "xxxxlarge": 56,
             },
           }
         }

@@ -145,6 +145,7 @@ exports[`Input component should match snapshots 2`] = `
             "xxsmall": 4,
             "xxxlarge": 48,
             "xxxsmall": 2,
+            "xxxxlarge": 56,
           },
         }
       }
@@ -322,6 +323,7 @@ exports[`Input component should match snapshots 4`] = `
             "xxsmall": 4,
             "xxxlarge": 48,
             "xxxsmall": 2,
+            "xxxxlarge": 56,
           },
         }
       }
@@ -474,6 +476,7 @@ exports[`Input component should match snapshots 6`] = `
             "xxsmall": 4,
             "xxxlarge": 48,
             "xxxsmall": 2,
+            "xxxxlarge": 56,
           },
         }
       }
@@ -747,6 +750,7 @@ exports[`Input component should match snapshots 10`] = `
             "xxsmall": 4,
             "xxxlarge": 48,
             "xxxsmall": 2,
+            "xxxxlarge": 56,
           },
         }
       }
@@ -1169,6 +1173,7 @@ exports[`Input component should match snapshots 17`] = `
             "xxsmall": 4,
             "xxxlarge": 48,
             "xxxsmall": 2,
+            "xxxxlarge": 56,
           },
         }
       }
