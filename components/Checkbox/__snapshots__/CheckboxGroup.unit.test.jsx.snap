@@ -12,11 +12,11 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       className=\\"Checkbox__Wrapper-sc-1ca5whm-0 lhYXdT\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hHJVhY\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hYbOJN\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dncdkS\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 hfBncO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -48,11 +48,11 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       className=\\"Checkbox__Wrapper-sc-1ca5whm-0 lhYXdT\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hHJVhY\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hYbOJN\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dncdkS\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 hfBncO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -84,11 +84,11 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       className=\\"Checkbox__Wrapper-sc-1ca5whm-0 lhYXdT\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hHJVhY\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hYbOJN\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dncdkS\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 hfBncO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -401,6 +401,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-top: 4px;
 }
 
 .c5 {
@@ -437,18 +438,17 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  height: 18px;
+  height: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 18px;
+  width: 24px;
   background-color: #ffffff;
   border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 20px;
 }
 
 .c2:checked + .c3 {
@@ -610,6 +610,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-top: 4px;
 }
 
 .c5 {
@@ -646,18 +647,17 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  height: 18px;
+  height: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 18px;
+  width: 24px;
   background-color: #ffffff;
   border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 20px;
 }
 
 .c2:checked + .c3 {
@@ -2142,6 +2142,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-top: 4px;
 }
 
 .c5 {
@@ -2164,18 +2165,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  height: 18px;
+  height: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 18px;
+  width: 24px;
   background-color: #ffffff;
   border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 20px;
 }
 
 .c7:checked + .c3 {
@@ -2234,18 +2234,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  height: 18px;
+  height: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 18px;
+  width: 24px;
   background-color: #ffffff;
   border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 20px;
 }
 
 .c2:checked + .c3 {
@@ -2436,6 +2435,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-top: 4px;
 }
 
 .c5 {
@@ -2472,18 +2472,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  height: 18px;
+  height: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 18px;
+  width: 24px;
   background-color: #ffffff;
   border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 20px;
 }
 
 .c2:checked + .c3 {
@@ -2532,18 +2531,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  height: 18px;
+  height: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 18px;
+  width: 24px;
   background-color: #ffffff;
   border: 2px solid #999999;
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 20px;
 }
 
 .c6:checked + .c3 {
