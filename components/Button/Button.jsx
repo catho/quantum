@@ -46,7 +46,6 @@ const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
     large: `${baseFontSize * 1.75}px`,
     xlarge: `${baseFontSize * 2}px`,
   };
-  console.log('lineHeights', lineHeights);
 
   return `
     font-size: ${fontSizes[size]};
@@ -69,7 +68,7 @@ const StyledButton = styled.button`
   ${({
     size,
     theme: {
-      spacing: { large, xlarge, xxlarge, xxxlarge },
+      spacing: { large, xlarge, xxlarge, xxxlarge, xxxxlarge },
     },
   }) => {
     const heights = {
@@ -77,6 +76,7 @@ const StyledButton = styled.button`
       small: `${xlarge}px`,
       medium: `${xxlarge}px`,
       large: `${xxxlarge}px`,
+      xlarge: `${xxxxlarge}px`,
     };
 
     return `min-height: ${heights[size]};`;
@@ -88,12 +88,13 @@ const StyledButton = styled.button`
       spacing: { small, xsmall, xxsmall, medium, large, xlarge },
     },
   }) => {
+    const borderSize = 2;
     const paddings = {
-      xsmall: `${xxsmall}px ${small}px`,
-      small: `${small / 2}px ${medium}px`,
-      medium: `${xsmall}px ${xlarge}px`,
-      large: `${xsmall * 1.25}px ${medium}px`,
-      xlarge: `${large / 2}px ${medium}px`,
+      xsmall: `${xxsmall - borderSize * 2}px ${xsmall}px`,
+      small: `${xsmall - borderSize * 2}px ${medium}px`,
+      medium: `${xsmall - borderSize * 2}px ${medium}px`,
+      large: `${xsmall - borderSize * 2}px ${medium}px`,
+      xlarge: `${xsmall - borderSize * 2}px ${medium}px`,
     };
 
     return `padding: ${paddings[size]};`;
@@ -138,25 +139,30 @@ const StyledButton = styled.button`
 
     let bgColor;
     let textColor;
+    let borderColor;
 
     if (disabled && stroked) {
-      bgColor = neutral0;
-      textColor = neutral500;
+      bgColor = neutral300;
+      borderColor = neutral500;
+      textColor = neutral700;
     } else if (stroked) {
       bgColor = neutral0;
+      borderColor = mainColor700;
       textColor = mainColor700;
     } else if (disabled) {
       bgColor = neutral300;
+      borderColor = bgColor;
       textColor = neutral700;
     } else {
       bgColor = mainColor700;
+      borderColor = bgColor;
       textColor = text0;
     }
 
     return `
       background-color: ${bgColor};
       color: ${textColor};
-      border: none;
+      border: 2px solid ${borderColor};
 
       ${shadow(2, neutral500)({ theme })}
 
