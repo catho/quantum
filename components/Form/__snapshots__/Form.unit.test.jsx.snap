@@ -11,7 +11,7 @@ exports[`Form component  should match the snapshot 1`] = `
 .c1 {
   display: block;
   font-weight: bold;
-  margin: 8px 12px 0;
+  margin: 8px 0 0;
 }
 
 .c2 {
