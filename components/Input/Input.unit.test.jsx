@@ -81,13 +81,13 @@ describe('Input component', () => {
     expect(placeholderProp).toEqual(placeholderContent);
   });
 
-  it('should has a cancel icon when input value is not empty', () => {
+  it('should has a clear icon when input value is not empty', () => {
     const component = mount(<Input value="foo" label="label of input" />);
     const hasIcon = component.find('span.material-icons');
     expect(hasIcon).toBeTruthy();
 
-    const cancelIcon = hasIcon.text();
-    expect(cancelIcon).toEqual('cancel');
+    const clearIcon = hasIcon.text();
+    expect(clearIcon).toEqual('clear');
   });
 
   it('should generate a new id for it instance, when "id" prop is not set', () => {
@@ -168,5 +168,15 @@ describe('Input component', () => {
       expect(visibilityIcon()).toBeTruthy();
       expect(wrapper.state('type')).toEqual('password');
     });
+  });
+
+  it('should onChange props be called', () => {
+    const onChangeEventMock = jest.fn();
+    const wrapper = mount(
+      <Input label="Text label" value="foo" onChange={onChangeEventMock} />,
+    );
+    const componentInput = wrapper.find('TextInput');
+    componentInput.simulate('change');
+    expect(onChangeEventMock).toHaveBeenCalled();
   });
 });

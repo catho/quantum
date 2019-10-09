@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import TextArea from './TextArea';
 
 describe('TextArea component', () => {
@@ -49,6 +49,16 @@ describe('TextArea component', () => {
     const component = shallow(<TextArea error={errorMessageContent} />);
     const errorMessage = component.find('InputErrorMessage').text();
     expect(errorMessage).toMatch(errorMessageContent);
+  });
+
+  it('should onChange props be called', () => {
+    const onChangeEventMock = jest.fn();
+    const wrapper = mount(
+      <TextArea label="Text label" value="foo" onChange={onChangeEventMock} />,
+    );
+    const componentText = wrapper.find('TextAreaTag');
+    componentText.simulate('change');
+    expect(onChangeEventMock).toHaveBeenCalled();
   });
 
   describe('with a label', () => {
