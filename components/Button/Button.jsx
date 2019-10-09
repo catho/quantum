@@ -85,7 +85,7 @@ const StyledButton = styled.button`
   ${({
     size,
     theme: {
-      spacing: { small, xsmall, xxsmall, medium, large, xlarge },
+      spacing: { xsmall, xxsmall, medium },
     },
   }) => {
     const borderSize = 2;
