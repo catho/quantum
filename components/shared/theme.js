@@ -1,3 +1,5 @@
+import hexToRgba from './hexToRgba';
+
 const breakpoints = {
   xsmall: {
     columns: 4,
@@ -256,15 +258,17 @@ const components = {
   tabbedView: {
     skins: {
       neutral: {
+        border: colors.neutral[300],
         activeText: colors.primary[700],
         background: 'transparent',
         hoverBackground: colors.primary[100],
         text: 'inherit',
       },
       primary: {
+        border: colors.neutral[100],
         activeText: colors.neutral[0],
         background: colors.primary[700],
-        hoverBackground: colors.primary[900],
+        hoverBackground: hexToRgba(colors.neutral[0], 0.2),
         text: colors.neutral[0],
       },
     },
