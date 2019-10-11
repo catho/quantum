@@ -233,7 +233,7 @@ TabbedView.propTypes = {
       tabbedView: PropTypes.object,
     }),
     baseFontSize: PropTypes.number,
-    breakpoints: PropTypes.array,
+    breakpoints: PropTypes.object,
   }),
 };
 

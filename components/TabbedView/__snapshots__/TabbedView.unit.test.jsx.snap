@@ -54,7 +54,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
 }
 
 .c1[aria-selected='true']::after {
-  content: " ";
+  content: ' ';
   background-color: #1250C4;
   position: absolute;
   left: 0px;
@@ -1765,7 +1765,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
 }
 
 .c1[aria-selected='true']::after {
-  content: " ";
+  content: ' ';
   background-color: #1250C4;
   position: absolute;
   left: 0px;
