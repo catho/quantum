@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import { colors, spacing } from '../../shared/theme';
 
 const ActionButton = styled.a`
-  border: 1px solid transparent;
-  border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -16,18 +14,18 @@ const ActionButton = styled.a`
   user-select: none;
   white-space: nowrap;
   border-radius: 4px;
-  border: 2px solid transparent;
 
   ${({
     theme: {
       colors: {
         primary: { 100: primary100, 700: primary700 },
       },
-      spacing: { xsmall, xxsmall },
+      spacing: { xxxsmall, xsmall, xxsmall, medium },
     },
   }) => `
+    border: ${xxxsmall}px solid transparent;
     margin: 0 ${xxsmall}px;
-    padding: ${xsmall}px;
+    padding: ${xsmall - xxxsmall}px ${medium}px;
     color: ${primary700};
 
     &[aria-disabled=true] {
