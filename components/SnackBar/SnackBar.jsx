@@ -93,7 +93,7 @@ const TextContainer = styled.strong`
   }
 `;
 
-const CloseIconLeft = styled(Button.Icon).attrs({
+const CloseIconRight = styled(Button.Icon).attrs({
   icon: 'close',
 })`
   ${props => {
@@ -113,45 +113,27 @@ const CloseIconLeft = styled(Button.Icon).attrs({
   }}
 `;
 
-const CloseIconRight = styled(CloseIconLeft)``;
-
-const ActionButton = styled(Button)`
-  ${props => {
-    const { text } = getBackgroundAndTextColorBySkin(props);
-
-    return `
-      border: 1px solid ${text};
-      color: ${text};
-
-      :hover,
-      :focus {
-        border: 1px solid ${text};
-        color: ${text};
-        text-decoration: none;
-        background-color: transparent;
-      }
-    `;
-  }};
-
-  background-color: transparent;
-  font-weight: bold;
-  text-transform: uppercase;
-  white-space: nowrap;
-
-  :hover,
-  :focus {
-    text-decoration: none;
-    background-color: transparent;
-  }
-
-  :focus {
-    ${a11yFocusTab}
-  }
+const CloseIconLeft = styled(CloseIconRight)`
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+    margin-right: ${xsmall}px;
+  `}
 `;
+
+const WrapperLeft = styled.div`
+  display: inherit;
+  align-items: center;
+`;
+
+const ActionButton = styled(Button)``;
 
 const ActionsSection = styled.div`
   align-items: center;
   display: flex;
+  flex: none;
 `;
 
 const DialogBlock = styled.section`
@@ -232,32 +214,34 @@ class SnackBar extends React.Component {
               aria-describedby={this._id}
               tabIndex="0"
             >
-              {actionTrigger && actionTrigger.title !== 'ACTION' && (
-                <CloseIconLeft
-                  theme={theme}
-                  inverted={inverted}
-                  skin={skin}
-                  onClick={onClose}
-                  aria-label={closeButtonAriaLabel}
-                  onKeyPress={this.handleKeyPress}
-                />
-              )}
+              <WrapperLeft>
+                {actionTrigger && actionTrigger.title !== 'ACTION' && (
+                  <CloseIconLeft
+                    theme={theme}
+                    inverted={inverted}
+                    skin={skin}
+                    onClick={onClose}
+                    aria-label={closeButtonAriaLabel}
+                    onKeyPress={this.handleKeyPress}
+                  />
+                )}
 
-              <TextContainer
-                id={this._id}
-                inverted={inverted}
-                theme={theme}
-                skin={skin}
-              >
-                {text}
-              </TextContainer>
+                <TextContainer
+                  id={this._id}
+                  inverted={inverted}
+                  theme={theme}
+                  skin={skin}
+                >
+                  {text}
+                </TextContainer>
+              </WrapperLeft>
               <ActionsSection>
                 {actionTrigger && actionTrigger.title !== 'ACTION' ? (
                   <ActionButton
                     className="action-button"
                     inverted={inverted}
                     theme={theme}
-                    skin={skin}
+                    skin="secondary"
                     onClick={actionTrigger.callbackFn}
                   >
                     {actionTrigger.title}
