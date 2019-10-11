@@ -93,7 +93,7 @@ const TextContainer = styled.strong`
   }
 `;
 
-const CloseIcon = styled(Button.Icon).attrs({
+const CloseIconLeft = styled(Button.Icon).attrs({
   icon: 'close',
 })`
   ${props => {
@@ -112,6 +112,8 @@ const CloseIcon = styled(Button.Icon).attrs({
     `;
   }}
 `;
+
+const CloseIconRight = styled(CloseIconLeft)``;
 
 const ActionButton = styled(Button)`
   ${props => {
@@ -190,7 +192,7 @@ class SnackBar extends React.Component {
   };
 
   objectFocus = element => {
-    element.focus();
+    if (element && element !== null) element.focus();
   };
 
   closeOnTime = (secondsToClose, callback) => {
@@ -230,6 +232,17 @@ class SnackBar extends React.Component {
               aria-describedby={this._id}
               tabIndex="0"
             >
+              {actionTrigger && actionTrigger.title !== 'ACTION' && (
+                <CloseIconLeft
+                  theme={theme}
+                  inverted={inverted}
+                  skin={skin}
+                  onClick={onClose}
+                  aria-label={closeButtonAriaLabel}
+                  onKeyPress={this.handleKeyPress}
+                />
+              )}
+
               <TextContainer
                 id={this._id}
                 inverted={inverted}
@@ -238,8 +251,8 @@ class SnackBar extends React.Component {
               >
                 {text}
               </TextContainer>
-              {actionTrigger && (
-                <ActionsSection>
+              <ActionsSection>
+                {actionTrigger && actionTrigger.title !== 'ACTION' ? (
                   <ActionButton
                     className="action-button"
                     inverted={inverted}
@@ -249,8 +262,9 @@ class SnackBar extends React.Component {
                   >
                     {actionTrigger.title}
                   </ActionButton>
-                  {onClose && (
-                    <CloseIcon
+                ) : (
+                  onClose && (
+                    <CloseIconRight
                       theme={theme}
                       inverted={inverted}
                       skin={skin}
@@ -258,9 +272,9 @@ class SnackBar extends React.Component {
                       aria-label={closeButtonAriaLabel}
                       onKeyPress={this.handleKeyPress}
                     />
-                  )}
-                </ActionsSection>
-              )}
+                  )
+                )}
+              </ActionsSection>
             </SnackBarDialog>
           </Col>
         </Row>
@@ -270,7 +284,8 @@ class SnackBar extends React.Component {
   }
 }
 
-CloseIcon.displayName = 'CloseIcon';
+CloseIconLeft.displayName = 'CloseIconLeft';
+CloseIconRight.displayName = 'CloseIconRight';
 ActionButton.displayName = 'ActionButton';
 SnackBarDialog.displayName = 'SnackBarDialog';
 TextContainer.displayName = 'TextContainer';

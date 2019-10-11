@@ -10,7 +10,7 @@ describe('<SnackBar />', () => {
   const secondsToClose = 1;
 
   const actionTrigger = {
-    title: 'ACTION',
+    title: 'HIDE',
     callbackFn: actionTriggerEventMock,
   };
 
@@ -22,6 +22,15 @@ describe('<SnackBar />', () => {
       onClose={onCloseEventMock}
       closeButtonAriaLabel={CloseButtonAriaLabel}
       actionTrigger={actionTrigger}
+    />
+  );
+
+  const SnackBarComponentWithoutActionTriggers = (
+    <SnackBar
+      text="SnackBar message content"
+      secondsToClose={secondsToClose}
+      onClose={onCloseEventMock}
+      closeButtonAriaLabel={CloseButtonAriaLabel}
     />
   );
 
@@ -57,9 +66,15 @@ describe('<SnackBar />', () => {
     }
   });
 
-  it('should call on close event callback', () => {
+  it('should call on close event callback with action triggers (call close icon in the left)', () => {
     component = mount(SnackBarComponent);
-    component.find('CloseIcon').simulate('click');
+    component.find('CloseIconLeft').simulate('click');
+    expect(onCloseEventMock).toHaveBeenCalled();
+  });
+
+  it('should call on close event callback without action triggers (call close icon in the right)', () => {
+    component = mount(SnackBarComponentWithoutActionTriggers);
+    component.find('CloseIconRight').simulate('click');
     expect(onCloseEventMock).toHaveBeenCalled();
   });
 
@@ -77,13 +92,13 @@ describe('<SnackBar />', () => {
 
   it('should have a close icon when its props is set', () => {
     component = mount(SnackBarComponent);
-    const closeIconContent = component.find('CloseIcon').text();
+    const closeIconContent = component.find('CloseIconLeft').text();
     expect(closeIconContent).toMatch('close');
   });
 
-  it('should the arial label os close button prop be the same of the props setted', () => {
+  it('should the arial label of close button prop be the same of the props setted', () => {
     component = mount(SnackBarComponent);
-    const ariaLabelContent = component.find('CloseIcon').prop('aria-label');
+    const ariaLabelContent = component.find('CloseIconLeft').prop('aria-label');
     expect(CloseButtonAriaLabel).toMatch(ariaLabelContent);
   });
 
@@ -102,7 +117,7 @@ describe('<SnackBar />', () => {
 
   it('(a11y) should close component when the close button was confirmed by keyboard', () => {
     component = mount(SnackBarComponent);
-    component.find('CloseIcon').simulate('keypress', { key: 'Enter' });
+    component.find('CloseIconLeft').simulate('keypress', { key: 'Enter' });
     expect(onCloseEventMock).toHaveBeenCalled();
   });
 
