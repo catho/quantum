@@ -54,7 +54,6 @@ const NavItem = styled.button.attrs({
   cursor: pointer;
   flex-shrink: 0;
   height: 56px;
-  letter-spacing: 0.24px;
   line-height: 1.5;
   min-width: 90px;
   outline: none;

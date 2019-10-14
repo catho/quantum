@@ -28,10 +28,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 56px;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   line-height: 1.5;
   min-width: 90px;
   outline: none;
@@ -1332,7 +1328,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;letter-spacing:0.24px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
+                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
                     [Function],
                   ],
                 },
@@ -1739,10 +1735,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 56px;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   line-height: 1.5;
   min-width: 90px;
   outline: none;
@@ -3080,7 +3072,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;letter-spacing:0.24px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
+                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
                     [Function],
                   ],
                 },
@@ -4000,7 +3992,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;letter-spacing:0.24px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
+                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
                     [Function],
                   ],
                 },
@@ -4762,7 +4754,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;letter-spacing:0.24px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
+                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
                     [Function],
                   ],
                 },
@@ -5763,7 +5755,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;letter-spacing:0.24px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
+                    "border:none;box-sizing:border-box;cursor:pointer;flex-shrink:0;height:56px;line-height:1.5;min-width:90px;outline:none;overflow:hidden;padding:16px;position:relative;text-align:center;transition:all 0.2s ease-in-out;",
                     [Function],
                   ],
                 },
