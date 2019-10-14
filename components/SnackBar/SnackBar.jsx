@@ -12,6 +12,14 @@ import {
   baseFontSize as defaultBaseFontSize,
   breakpoints,
 } from '../shared/theme';
+import Icon from '../Icon/Icon';
+
+const skinIcons = {
+  primary: 'info',
+  error: 'error',
+  success: 'done',
+  warning: 'warning',
+};
 
 const ID_GENERATOR = uniqId('snackbar-dialog-');
 
@@ -91,6 +99,25 @@ const TextContainer = styled.strong`
   :focus {
     ${a11yFocusTab}
   }
+`;
+
+const SkinIcon = styled(Icon)`
+  ${({
+    skin,
+    theme: {
+      components: {
+        snackbar: {
+          skins: {
+            [skin]: { iconColor },
+          },
+        },
+      },
+      spacing: { small },
+    },
+  }) => `
+    color: ${iconColor};
+    margin-right: ${small}px;
+  `}
 `;
 
 const CloseIconRight = styled(Button.Icon).attrs({
@@ -183,6 +210,12 @@ class SnackBar extends React.Component {
     }, secondsToClose * 1000);
   };
 
+  setIconType = skin => skinIcons[skin];
+
+  handleSkinIcon = (theme, skin) => (
+    <SkinIcon theme={theme} name={this.setIconType(skin)} skin={skin} />
+  );
+
   render() {
     const {
       text,
@@ -215,16 +248,19 @@ class SnackBar extends React.Component {
               tabIndex="0"
             >
               <WrapperLeft>
-                {actionTrigger && actionTrigger.title !== 'ACTION' && (
-                  <CloseIconLeft
-                    theme={theme}
-                    inverted={inverted}
-                    skin={skin}
-                    onClick={onClose}
-                    aria-label={closeButtonAriaLabel}
-                    onKeyPress={this.handleKeyPress}
-                  />
-                )}
+                {skin !== 'neutral' && this.handleSkinIcon(theme, skin)}
+                {actionTrigger &&
+                  actionTrigger.title !== 'ACTION' &&
+                  skin === 'neutral' && (
+                    <CloseIconLeft
+                      theme={theme}
+                      inverted={inverted}
+                      skin={skin}
+                      onClick={onClose}
+                      aria-label={closeButtonAriaLabel}
+                      onKeyPress={this.handleKeyPress}
+                    />
+                  )}
 
                 <TextContainer
                   id={this._id}
@@ -236,7 +272,9 @@ class SnackBar extends React.Component {
                 </TextContainer>
               </WrapperLeft>
               <ActionsSection>
-                {actionTrigger && actionTrigger.title !== 'ACTION' ? (
+                {actionTrigger &&
+                actionTrigger.title !== 'ACTION' &&
+                skin === 'neutral' ? (
                   <ActionButton
                     className="action-button"
                     inverted={inverted}
@@ -270,11 +308,13 @@ class SnackBar extends React.Component {
 
 CloseIconLeft.displayName = 'CloseIconLeft';
 CloseIconRight.displayName = 'CloseIconRight';
+SkinIcon.displayName = 'SkinIcon';
 ActionButton.displayName = 'ActionButton';
 SnackBarDialog.displayName = 'SnackBarDialog';
 TextContainer.displayName = 'TextContainer';
 
 SnackBar.propTypes = {
+  /** This prop works only on neutral skin */
   actionTrigger: PropTypes.shape({
     title: PropTypes.string,
     callback: PropTypes.func,

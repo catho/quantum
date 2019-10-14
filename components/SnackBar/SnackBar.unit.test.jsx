@@ -1,7 +1,14 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import SnackBar from './SnackBar';
+
+const skinIcons = {
+  primary: 'info',
+  error: 'error',
+  success: 'done',
+  warning: 'warning',
+};
 
 describe('<SnackBar />', () => {
   const actionTriggerEventMock = jest.fn();
@@ -31,6 +38,27 @@ describe('<SnackBar />', () => {
       secondsToClose={secondsToClose}
       onClose={onCloseEventMock}
       closeButtonAriaLabel={CloseButtonAriaLabel}
+    />
+  );
+
+  const SnackBarComponentWithNeutralSkin = (
+    <SnackBar
+      text="SnackBar message content"
+      secondsToClose={secondsToClose}
+      onClose={onCloseEventMock}
+      closeButtonAriaLabel={CloseButtonAriaLabel}
+      actionTrigger={actionTrigger}
+      skin="neutral"
+    />
+  );
+
+  const SnackBarComponentWithSuccessSkin = (
+    <SnackBar
+      text="SnackBar message content"
+      secondsToClose={secondsToClose}
+      onClose={onCloseEventMock}
+      closeButtonAriaLabel={CloseButtonAriaLabel}
+      skin="success"
     />
   );
 
@@ -64,6 +92,38 @@ describe('<SnackBar />', () => {
     if (component && component.length) {
       component.unmount();
     }
+  });
+
+  it('should show the correct skin icon on the mathed skin', () => {
+    Object.entries(skinIcons).forEach(([skin, skinIconName]) => {
+      component = mount(
+        <SnackBar
+          text="SnackBar message content"
+          onClose={onCloseEventMock}
+          closeButtonAriaLabel={CloseButtonAriaLabel}
+          skin={skin}
+        />,
+      );
+      const iconName = component.find('SkinIcon').text();
+      expect(iconName).toMatch(skinIconName);
+      component.unmount();
+    });
+  });
+
+  it('should not show the close left icon when the skin is different of neutral', () => {
+    component = mount(SnackBarComponentWithSuccessSkin);
+    expect(component.find('CloseIconLeft').exists()).toBe(false);
+  });
+
+  it('should not show the action button when the skin is different of neutral', () => {
+    component = mount(SnackBarComponentWithSuccessSkin);
+    expect(component.find('ActionButton').exists()).toBe(false);
+  });
+
+  it('should call the action button when the skin is neutral and have a action trigger', () => {
+    component = mount(SnackBarComponentWithNeutralSkin);
+    component.find('ActionButton').simulate('click');
+    expect(actionTriggerEventMock).toHaveBeenCalled();
   });
 
   it('should call on close event callback with action triggers (call close icon in the left)', () => {
