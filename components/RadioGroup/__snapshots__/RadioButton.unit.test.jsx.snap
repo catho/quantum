@@ -26,10 +26,6 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -133,10 +129,6 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -240,10 +232,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
@@ -347,10 +335,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
@@ -454,10 +438,6 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -561,10 +541,6 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -683,10 +659,6 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -805,10 +777,6 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;

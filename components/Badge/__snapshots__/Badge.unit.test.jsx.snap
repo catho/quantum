@@ -76,10 +76,6 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;

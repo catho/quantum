@@ -19,7 +19,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bWiiHg\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 eEwHTW\\"
         disabled={false}
 -       htmlFor=\\"radio-button-9\\"
 +       htmlFor=\\"radio-button-12\\"
@@ -47,7 +47,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bWiiHg\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 eEwHTW\\"
         disabled={false}
 -       htmlFor=\\"radio-button-10\\"
 +       htmlFor=\\"radio-button-13\\"
@@ -75,7 +75,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 bWiiHg\\"
+        className=\\"RadioButton-sc-1q7g63p-3 qJiHq Button__StyledButton-sc-1ovnfsw-1 eEwHTW\\"
         disabled={false}
 -       htmlFor=\\"radio-button-11\\"
 +       htmlFor=\\"radio-button-14\\"
@@ -147,10 +147,6 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -340,10 +336,6 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -687,10 +679,6 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;

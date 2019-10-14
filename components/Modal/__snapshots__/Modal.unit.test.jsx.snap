@@ -37,6 +37,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 
 .c13 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c11 {
@@ -53,10 +54,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
@@ -183,36 +180,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   position: fixed;
   top: 0;
   width: 100vw;
-}
-
-@media (min-width:0px) {
-  .c13 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c13 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c13 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c13 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c13 {
-    margin-right: 16px;
-  }
 }
 
 @media (min-width:0px) {
@@ -480,6 +447,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 
 .c13 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c11 {
@@ -496,10 +464,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.24px;
-  -moz-letter-spacing: 0.24px;
-  -ms-letter-spacing: 0.24px;
-  letter-spacing: 0.24px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
@@ -626,36 +590,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   position: fixed;
   top: 0;
   width: 100vw;
-}
-
-@media (min-width:0px) {
-  .c13 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c13 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c13 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c13 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c13 {
-    margin-right: 16px;
-  }
 }
 
 @media (min-width:0px) {
@@ -3852,7 +3786,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "isStatic": false,
                                       "lastClassName": "c11",
                                       "rules": Array [
-                                        "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.24px;border-radius:4px;",
+                                        "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                         [Function],
                                         " ",
                                         [Function],
@@ -4303,11 +4237,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
                                             "componentId": "c12",
-                                            "isStatic": false,
+                                            "isStatic": true,
                                             "lastClassName": "c13",
                                             "rules": Array [
-                                              "pointer-events:none;",
-                                              [Function],
+                                              "pointer-events:none;margin-right:8px;",
                                             ],
                                           },
                                           "displayName": "Button__ButtonIcon",
