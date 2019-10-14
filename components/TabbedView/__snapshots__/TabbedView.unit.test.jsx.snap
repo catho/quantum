@@ -260,24 +260,29 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         "snackbar": Object {
           "skins": Object {
             "error": Object {
-              "background": "#ffe5e9",
-              "text": "#ac001a",
+              "background": "#ac001a",
+              "iconColor": "#ffffff",
+              "text": "#ffffff",
             },
             "neutral": Object {
               "background": "#424242",
+              "iconColor": "#f2f2f2",
               "text": "#f2f2f2",
             },
             "primary": Object {
               "background": "#002F7B",
-              "text": "#f2f2f2",
+              "iconColor": "#ffffff",
+              "text": "#ffffff",
             },
             "success": Object {
-              "background": "#dcedc8",
-              "text": "#004D40",
+              "background": "#004D40",
+              "iconColor": "#ffffff",
+              "text": "#ffffff",
             },
             "warning": Object {
-              "background": "#ffefd6",
-              "text": "#d14900",
+              "background": "#d14900",
+              "iconColor": "#191919",
+              "text": "#191919",
             },
           },
         },
@@ -574,24 +579,29 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "snackbar": Object {
                   "skins": Object {
                     "error": Object {
-                      "background": "#ffe5e9",
-                      "text": "#ac001a",
+                      "background": "#ac001a",
+                      "iconColor": "#ffffff",
+                      "text": "#ffffff",
                     },
                     "neutral": Object {
                       "background": "#424242",
+                      "iconColor": "#f2f2f2",
                       "text": "#f2f2f2",
                     },
                     "primary": Object {
                       "background": "#002F7B",
-                      "text": "#f2f2f2",
+                      "iconColor": "#ffffff",
+                      "text": "#ffffff",
                     },
                     "success": Object {
-                      "background": "#dcedc8",
-                      "text": "#004D40",
+                      "background": "#004D40",
+                      "iconColor": "#ffffff",
+                      "text": "#ffffff",
                     },
                     "warning": Object {
-                      "background": "#ffefd6",
-                      "text": "#d14900",
+                      "background": "#d14900",
+                      "iconColor": "#191919",
+                      "text": "#191919",
                     },
                   },
                 },
@@ -881,24 +891,29 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "snackbar": Object {
                     "skins": Object {
                       "error": Object {
-                        "background": "#ffe5e9",
-                        "text": "#ac001a",
+                        "background": "#ac001a",
+                        "iconColor": "#ffffff",
+                        "text": "#ffffff",
                       },
                       "neutral": Object {
                         "background": "#424242",
+                        "iconColor": "#f2f2f2",
                         "text": "#f2f2f2",
                       },
                       "primary": Object {
                         "background": "#002F7B",
-                        "text": "#f2f2f2",
+                        "iconColor": "#ffffff",
+                        "text": "#ffffff",
                       },
                       "success": Object {
-                        "background": "#dcedc8",
-                        "text": "#004D40",
+                        "background": "#004D40",
+                        "iconColor": "#ffffff",
+                        "text": "#ffffff",
                       },
                       "warning": Object {
-                        "background": "#ffefd6",
-                        "text": "#d14900",
+                        "background": "#d14900",
+                        "iconColor": "#191919",
+                        "text": "#191919",
                       },
                     },
                   },
