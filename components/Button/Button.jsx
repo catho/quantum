@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { shadow, hexToRgba, theme as defaultTheme } from '../shared';
-import { query } from '../Grid/sub-components/shared';
 
 import {
   components,
@@ -13,21 +12,9 @@ import {
 
 import Icon from '../Icon/Icon';
 
-const buttonIconBreakpoints = (props, breakpoint) => {
-  const q = query(props.theme.breakpoints)[breakpoint];
-
-  return q`
-    margin-right: ${props.theme.spacing[breakpoint] / 2}px;
-  `;
-};
-
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
-
-  ${props =>
-    Object.keys(props.theme.breakpoints).map(breakpoint =>
-      buttonIconBreakpoints(props, breakpoint),
-    )}
+  margin-right: 8px;
 `;
 
 const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
@@ -58,7 +45,6 @@ const StyledButton = styled.button`
   display: flex;
   font-weight: bold;
   justify-content: center;
-  letter-spacing: 0.24px;
   border-radius: 4px;
 
   ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
@@ -88,13 +74,14 @@ const StyledButton = styled.button`
       spacing: { xsmall, xxsmall, medium },
     },
   }) => {
-    const borderSize = 2;
+    const borderWidth = 2;
+    const borderSize = borderWidth * 2;
     const paddings = {
-      xsmall: `${xxsmall - borderSize * 2}px ${xsmall}px`,
-      small: `${xsmall - borderSize * 2}px ${medium}px`,
-      medium: `${xsmall - borderSize * 2}px ${medium}px`,
-      large: `${xsmall - borderSize * 2}px ${medium}px`,
-      xlarge: `${xsmall - borderSize * 2}px ${medium}px`,
+      xsmall: `${xxsmall - borderSize}px ${xsmall}px`,
+      small: `${xsmall - borderSize}px ${medium}px`,
+      medium: `${xsmall - borderSize}px ${medium}px`,
+      large: `${xsmall - borderSize}px ${medium}px`,
+      xlarge: `${xsmall - borderSize}px ${medium}px`,
     };
 
     return `padding: ${paddings[size]};`;
