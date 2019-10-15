@@ -181,7 +181,7 @@ class SnackBar extends React.Component {
 
     const { onClose, secondsToClose } = this.props;
 
-    // this.closeOnTime(secondsToClose, onClose);
+    this.closeOnTime(secondsToClose, onClose);
   }
 
   componentWillUnmount() {
