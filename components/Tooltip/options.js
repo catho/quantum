@@ -1,6 +1,7 @@
 const ARROW_SIZE = 6;
-const PERCENTAGE_Y = 130;
+const PERCENTAGE_Y = 100;
 const PERCENTAGE_X = 50;
+const BOX_MARGIN = 6;
 
 const upDownBorders = `
   border-left: ${ARROW_SIZE}px solid transparent;
@@ -46,22 +47,22 @@ const placementConfig = {
   tipPosition: {
     top: `
       left: ${PERCENTAGE_X}%;
-      bottom: ${PERCENTAGE_Y}%;
+      bottom: calc(${PERCENTAGE_Y}% + ${ARROW_SIZE + BOX_MARGIN}px);
       transform: translateX(-${PERCENTAGE_X}%);
     `,
     right: `
-      left: ${PERCENTAGE_Y}%;
+      left: calc(${PERCENTAGE_Y}% + ${ARROW_SIZE + BOX_MARGIN}px);
       top: ${PERCENTAGE_X}%;
       transform: translateY(-${PERCENTAGE_X}%);
   `,
     left: `
-      right: ${PERCENTAGE_Y}%;
+      right: calc(${PERCENTAGE_Y}% + ${ARROW_SIZE + BOX_MARGIN}px);
       top: ${PERCENTAGE_X}%;
       transform: translateY(-${PERCENTAGE_X}%);
     `,
     bottom: `
       left: ${PERCENTAGE_X}%;
-      top: ${PERCENTAGE_Y}%;
+      top: calc(${PERCENTAGE_Y}% + ${ARROW_SIZE + BOX_MARGIN}px);
       transform: translateX(-${PERCENTAGE_X}%);
     `,
   },
