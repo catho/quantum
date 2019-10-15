@@ -61,10 +61,11 @@ const SnackBarDialog = styled.div`
   min-height: 48px;
   ${({
     theme: {
-      spacing: { small, medium },
+      spacing: { xsmall, small, medium },
     },
   }) => `
     padding: ${small}px ${medium}px;
+    margin: 0 ${xsmall}px;
   `}
 
   ${props => {
@@ -180,7 +181,7 @@ class SnackBar extends React.Component {
 
     const { onClose, secondsToClose } = this.props;
 
-    this.closeOnTime(secondsToClose, onClose);
+    // this.closeOnTime(secondsToClose, onClose);
   }
 
   componentWillUnmount() {
