@@ -13,13 +13,7 @@ import {
   breakpoints,
 } from '../shared/theme';
 import Icon from '../Icon/Icon';
-
-const skinIcons = {
-  primary: 'info',
-  error: 'error',
-  success: 'done',
-  warning: 'warning',
-};
+import { GetSkinIcon } from './IconTypes';
 
 const ID_GENERATOR = uniqId('snackbar-dialog-');
 
@@ -210,11 +204,11 @@ class SnackBar extends React.Component {
     }, secondsToClose * 1000);
   };
 
-  setIconType = skin => skinIcons[skin];
+  handleSkinIcon = (theme, skin) => {
+    if (skin === 'neutral') return false;
 
-  handleSkinIcon = (theme, skin) => (
-    <SkinIcon theme={theme} name={this.setIconType(skin)} skin={skin} />
-  );
+    return <SkinIcon theme={theme} name={GetSkinIcon(skin)} skin={skin} />;
+  };
 
   render() {
     const {
@@ -248,20 +242,20 @@ class SnackBar extends React.Component {
               tabIndex="0"
             >
               <WrapperLeft>
-                {skin !== 'neutral' && this.handleSkinIcon(theme, skin)}
                 {actionTrigger &&
-                  actionTrigger.title !== 'ACTION' &&
-                  skin === 'neutral' && (
-                    <CloseIconLeft
-                      theme={theme}
-                      inverted={inverted}
-                      skin={skin}
-                      onClick={onClose}
-                      aria-label={closeButtonAriaLabel}
-                      onKeyPress={this.handleKeyPress}
-                    />
-                  )}
-
+                actionTrigger.title !== 'ACTION' &&
+                skin === 'neutral' ? (
+                  <CloseIconLeft
+                    theme={theme}
+                    inverted={inverted}
+                    skin={skin}
+                    onClick={onClose}
+                    aria-label={closeButtonAriaLabel}
+                    onKeyPress={this.handleKeyPress}
+                  />
+                ) : (
+                  this.handleSkinIcon(theme, skin)
+                )}
                 <TextContainer
                   id={this._id}
                   inverted={inverted}

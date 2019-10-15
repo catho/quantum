@@ -261,26 +261,31 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
           "skins": Object {
             "error": Object {
               "background": "#ac001a",
+              "icon": "error",
               "iconColor": "#ffffff",
               "text": "#ffffff",
             },
             "neutral": Object {
               "background": "#424242",
+              "icon": "",
               "iconColor": "#f2f2f2",
               "text": "#f2f2f2",
             },
             "primary": Object {
               "background": "#002F7B",
+              "icon": "info",
               "iconColor": "#ffffff",
               "text": "#ffffff",
             },
             "success": Object {
               "background": "#004D40",
+              "icon": "done",
               "iconColor": "#ffffff",
               "text": "#ffffff",
             },
             "warning": Object {
               "background": "#d14900",
+              "icon": "warning",
               "iconColor": "#191919",
               "text": "#191919",
             },
@@ -580,26 +585,31 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "skins": Object {
                     "error": Object {
                       "background": "#ac001a",
+                      "icon": "error",
                       "iconColor": "#ffffff",
                       "text": "#ffffff",
                     },
                     "neutral": Object {
                       "background": "#424242",
+                      "icon": "",
                       "iconColor": "#f2f2f2",
                       "text": "#f2f2f2",
                     },
                     "primary": Object {
                       "background": "#002F7B",
+                      "icon": "info",
                       "iconColor": "#ffffff",
                       "text": "#ffffff",
                     },
                     "success": Object {
                       "background": "#004D40",
+                      "icon": "done",
                       "iconColor": "#ffffff",
                       "text": "#ffffff",
                     },
                     "warning": Object {
                       "background": "#d14900",
+                      "icon": "warning",
                       "iconColor": "#191919",
                       "text": "#191919",
                     },
@@ -892,26 +902,31 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                     "skins": Object {
                       "error": Object {
                         "background": "#ac001a",
+                        "icon": "error",
                         "iconColor": "#ffffff",
                         "text": "#ffffff",
                       },
                       "neutral": Object {
                         "background": "#424242",
+                        "icon": "",
                         "iconColor": "#f2f2f2",
                         "text": "#f2f2f2",
                       },
                       "primary": Object {
                         "background": "#002F7B",
+                        "icon": "info",
                         "iconColor": "#ffffff",
                         "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#004D40",
+                        "icon": "done",
                         "iconColor": "#ffffff",
                         "text": "#ffffff",
                       },
                       "warning": Object {
                         "background": "#d14900",
+                        "icon": "warning",
                         "iconColor": "#191919",
                         "text": "#191919",
                       },

@@ -2,13 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import SnackBar from './SnackBar';
-
-const skinIcons = {
-  primary: 'info',
-  error: 'error',
-  success: 'done',
-  warning: 'warning',
-};
+import { GetAllSkinsIcons } from './IconTypes';
 
 describe('<SnackBar />', () => {
   const actionTriggerEventMock = jest.fn();
@@ -94,8 +88,8 @@ describe('<SnackBar />', () => {
     }
   });
 
-  it('should show the correct skin icon on the mathed skin', () => {
-    Object.entries(skinIcons).forEach(([skin, skinIconName]) => {
+  it('should show the correct skin icon on the matched skin', () => {
+    Object.entries(GetAllSkinsIcons()).forEach(([skin, skinIconName]) => {
       component = mount(
         <SnackBar
           text="SnackBar message content"
