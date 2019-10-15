@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../../components/Button';
 import SnackBar from '../../../components/SnackBar';
 
-class SnackBarExamplePrimary extends React.Component {
+class SnackBarExampleWarning extends React.Component {
   constructor() {
     super();
 
@@ -22,12 +22,12 @@ class SnackBarExamplePrimary extends React.Component {
 
     return (
       <>
-        <Button onClick={this.openSnackBar}>Open SnackBar Primary</Button>
+        <Button onClick={this.openSnackBar}>Open SnackBar Warning</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar primary text content"
+            text="SnackBar warning text content"
             onClose={this.closeSnackBar}
-            skin="primary"
+            skin="warning"
           />
         )}
       </>
@@ -35,12 +35,12 @@ class SnackBarExamplePrimary extends React.Component {
   }
 }
 
-SnackBarExamplePrimary.code = `
+SnackBarExampleWarning.code = `
 import React from 'react';
 import Button from '../../../components/Button';
 import SnackBar from '../../../components/SnackBar';
 
-class SnackBarExamplePrimary extends React.Component {
+class SnackBarExampleWarning extends React.Component {
   constructor() {
     super();
 
@@ -60,12 +60,12 @@ class SnackBarExamplePrimary extends React.Component {
 
     return (
       <>
-        <Button onClick={this.openSnackBar}>Open SnackBar Primary</Button>
+        <Button onClick={this.openSnackBar}>Open SnackBar Success</Button>
         {showSnackBar && (
           <SnackBar
-            text="SnackBar primary text content"
+            text="SnackBar success text content"
             onClose={this.closeSnackBar}
-            skin="primary"
+            skin="success"
           />
         )}
       </>
@@ -74,4 +74,4 @@ class SnackBarExamplePrimary extends React.Component {
 }
 `;
 
-export default SnackBarExamplePrimary;
+export default SnackBarExampleWarning;

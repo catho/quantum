@@ -199,7 +199,7 @@ const components = {
         icon: 'done',
       },
       warning: {
-        background: colors.warning[900],
+        background: colors.warning[700],
         text: colors.neutral[900],
         iconColor: colors.neutral[900],
         icon: 'warning',
