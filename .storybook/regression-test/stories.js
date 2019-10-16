@@ -22,5 +22,4 @@ export default [
   'Skeleton',
   'ProgressBar',
   'CircularLoader',
-  'SnackBar',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);
