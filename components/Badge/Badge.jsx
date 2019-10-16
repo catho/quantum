@@ -42,13 +42,15 @@ const BadgeWrapper = styled.div`
 
 const StyledBadge = styled.span`
   border-radius: 8px;
-  display: inline-block;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px;
-  min-width: 20px;
-  text-align: center;
   box-sizing: border-box;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+  min-width: 32px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
   ${({
     value,
