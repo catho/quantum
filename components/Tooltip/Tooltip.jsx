@@ -52,7 +52,8 @@ const TipText = styled.span`
 
 const Wrapper = styled.div`
   position: relative;
-  width: fit-content;
+  float: left;
+  clear: left;
 `;
 
 class Tooltip extends Component {

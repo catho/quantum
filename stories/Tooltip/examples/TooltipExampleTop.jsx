@@ -4,7 +4,7 @@ import Button from '../../../components/Button';
 
 const TooltipExampleTop = () => (
   <Tooltip placement="top" text="This is a hint.">
-    <Button full="true">Hover me</Button>
+    <Button>Hover me</Button>
   </Tooltip>
 );
 
