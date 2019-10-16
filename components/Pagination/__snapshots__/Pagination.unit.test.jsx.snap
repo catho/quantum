@@ -50,7 +50,6 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
 
 .c1[aria-disabled=true] {
   color: #e0e0e0;
-  cursor: not-allowed;
   display: block;
 }
 
@@ -97,7 +96,6 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
 
 .c3[aria-disabled=true] {
   color: #e0e0e0;
-  cursor: not-allowed;
   display: block;
 }
 

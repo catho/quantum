@@ -37,7 +37,6 @@ const StyledActionButton = styled(ActionButton)`
 
     &[aria-disabled=true] {
       color: ${neutral300};
-      cursor: not-allowed;
       display: block;
     }
 
