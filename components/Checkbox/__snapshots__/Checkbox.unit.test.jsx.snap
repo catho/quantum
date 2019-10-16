@@ -14,7 +14,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c1 {
@@ -131,11 +131,13 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 exports[`<Checkbox /> should match the snapshot 2`] = `
 .c5 {
   color: #ac001a;
-  font-size: 14px;
+  margin-top: 8px;
   cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  display: block;
 }
 
 .c0 {
@@ -151,7 +153,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c6 + .c2 {
@@ -341,11 +343,13 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 exports[`<Checkbox /> should match the snapshot 3`] = `
 .c5 {
   color: #ac001a;
-  font-size: 14px;
+  margin-top: 8px;
   cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  display: block;
 }
 
 .c0 {
@@ -361,7 +365,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c6 + .c2 {
@@ -562,7 +566,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c1 {
@@ -759,7 +763,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c1 {
@@ -956,7 +960,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c1 {
@@ -1153,7 +1157,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c1 {

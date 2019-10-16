@@ -36,7 +36,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 llIlgY\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
         >
 -         Foo label
@@ -72,7 +72,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 llIlgY\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
         >
 -         Bar label
@@ -108,7 +108,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           check
         </span>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 llIlgY\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
         >
 -         Baz label
@@ -408,7 +408,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c2 {
@@ -617,7 +617,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c2 {
@@ -1657,6 +1657,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 1`] = `
+.c5 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
 .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1747,16 +1758,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-.c5 {
-  color: #ac001a;
-  font-size: 14px;
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
-  display: block;
-  margin-left: -2px;
 }
 
 <div
@@ -2136,6 +2137,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an error 1`] = `
+.c6 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2149,7 +2161,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c7 + .c3 {
@@ -2302,16 +2314,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   position: relative;
 }
 
-.c6 {
-  color: #ac001a;
-  font-size: 14px;
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
-  display: block;
-  margin-left: -2px;
-}
-
 <div
   className="c0"
 >
@@ -2442,7 +2444,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   display: block;
   margin-bottom: 5px;
   color: #424242;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 12px;
 }
 
 .c2 {

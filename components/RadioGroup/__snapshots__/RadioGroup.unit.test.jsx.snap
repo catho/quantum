@@ -974,6 +974,17 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 `;
 
 exports[`<RadioGroup /> snapshot with an error 1`] = `
+.c6 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
 .c3 {
   border: 0;
   height: 0;
@@ -1102,16 +1113,6 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-.c6 {
-  color: #ac001a;
-  font-size: 14px;
-  cursor: text;
-  font-style: italic;
-  font-weight: 600;
-  display: block;
-  margin-left: -4px;
 }
 
 <div
