@@ -23,4 +23,5 @@ export default [
   'ProgressBar',
   'CircularLoader',
   'TabbedView',
+  'Modal',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);
