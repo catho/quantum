@@ -20,12 +20,12 @@ const ActionButton = styled.a`
       colors: {
         primary: { 100: primary100, 700: primary700 },
       },
-      spacing: { xxxsmall, xsmall, xxsmall, medium },
+      spacing: { xxxsmall, xxsmall, xsmall, medium },
     },
   }) => `
     border: ${xxxsmall}px solid transparent;
     margin: 0 ${xxsmall}px;
-    padding: ${xsmall - xxxsmall}px ${medium}px;
+    padding: ${xsmall}px ${medium}px;
     color: ${primary700};
 
     &[aria-disabled=true] {
