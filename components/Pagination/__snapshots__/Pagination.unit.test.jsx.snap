@@ -28,7 +28,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
   border-color: #e0e0e0;
   border-radius: 10px;
@@ -74,7 +74,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
   border-color: #e0e0e0;
   border-radius: 10px;
@@ -164,7 +164,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
@@ -365,7 +365,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
@@ -575,7 +575,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
@@ -818,7 +818,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
@@ -1037,7 +1037,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
@@ -1280,7 +1280,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
@@ -1523,7 +1523,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
@@ -1773,7 +1773,7 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   border-radius: 4px;
   border: 2px solid transparent;
   margin: 0 4px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   color: #1250C4;
 }
 
