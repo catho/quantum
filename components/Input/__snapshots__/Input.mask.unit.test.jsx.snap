@@ -49,7 +49,7 @@ exports[`Input component should match snapshots 2`] = `
 .c2 {
   cursor: pointer;
   position: absolute;
-  right: 12px;
+  right: 16px;
   bottom: 10px;
 }
 
@@ -149,7 +149,7 @@ exports[`Input component should match snapshots 2`] = `
         }
       }
     >
-      cancel
+      clear
     </span>
   </div>
   
@@ -168,7 +168,7 @@ exports[`Input component should match snapshots 3`] = `
 .c1 {
   display: block;
   font-weight: bold;
-  margin: 8px 12px 0;
+  margin: 8px 0 0;
 }
 
 .c2 {
@@ -221,15 +221,15 @@ exports[`Input component should match snapshots 4`] = `
   font-style: italic;
   font-weight: 600;
   display: block;
-  margin: 8px 12px 0;
+  margin: 8px 0 0;
 }
 
 .c2 {
   cursor: pointer;
   position: absolute;
-  right: 12px;
+  right: 16px;
   bottom: 10px;
-  color: #ec584e;
+  color: #e91b0c;
 }
 
 .c1 {
@@ -388,10 +388,10 @@ exports[`Input component should match snapshots 6`] = `
 .c2 {
   cursor: pointer;
   position: absolute;
-  right: 12px;
+  right: 16px;
   bottom: 10px;
   pointer-events: none;
-  left: 12px;
+  left: 16px;
 }
 
 .c1 {
@@ -552,7 +552,7 @@ exports[`Input component should match snapshots 8`] = `
   font-style: italic;
   font-weight: 600;
   display: block;
-  margin: 8px 12px 0;
+  margin: 8px 0 0;
   color: #424242;
 }
 
@@ -602,7 +602,7 @@ exports[`Input component should match snapshots 9`] = `
   cursor: text;
   display: block;
   font-size: 14px;
-  padding: 0 12px;
+  padding: 0;
 }
 
 .c2 {
@@ -650,17 +650,17 @@ exports[`Input component should match snapshots 10`] = `
 .c3 {
   cursor: pointer;
   position: absolute;
-  right: 12px;
+  right: 16px;
   bottom: 10px;
   pointer-events: none;
-  left: 12px;
+  left: 16px;
 }
 
 .c1 {
   cursor: text;
   display: block;
   font-size: 14px;
-  padding: 0 12px;
+  padding: 0;
 }
 
 .c2 {
@@ -1073,7 +1073,7 @@ exports[`Input component should match snapshots 17`] = `
 .c2 {
   cursor: pointer;
   position: absolute;
-  right: 12px;
+  right: 16px;
   bottom: 10px;
 }
 
