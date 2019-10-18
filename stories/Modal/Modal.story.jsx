@@ -12,6 +12,7 @@ import {
 } from '@catho/quantum-storybook-ui';
 import { Modal, Row, Col } from '../../components';
 import ModalExample from './examples/ModalExample';
+import ModalSmallTitleExample from './examples/ModalSmallTitleExample';
 
 storiesOf('Modal', module).add('Modal', () => (
   <>
@@ -63,7 +64,11 @@ storiesOf('Modal', module).add('Modal', () => (
                     <td>
                       <code>{'<Modal.Title />'}</code>
                     </td>
-                    <td>The Modal main title.</td>
+                    <td>
+                      The Modal main title. You can set a boolean prop{' '}
+                      <strong>small</strong> to set titles with 20px of size (
+                      the default is 24px)
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -102,6 +107,14 @@ storiesOf('Modal', module).add('Modal', () => (
             </Col>
             <Col xsmall={4} small={4} medium={6}>
               <ModalExample />
+            </Col>
+          </Row>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{ModalSmallTitleExample.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <ModalSmallTitleExample />
             </Col>
           </Row>
         </StoryContainer>

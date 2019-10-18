@@ -10,6 +10,8 @@ import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import { hexToRgba } from '../shared';
 import { breakpoints, colors, spacing, components } from '../shared/theme';
 
+const closeButtonPadding = spacing.medium;
+
 function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   const sizes = {
     xsmall: '90%',
@@ -29,7 +31,7 @@ const ModalCard = styled(Card)`
       theme: {
         spacing: { xxxlarge },
       },
-    }) => `${xxxlarge}px`};
+    }) => `${xxxlarge + closeButtonPadding}px`};
   }
 
   ${getBreakpoint}
@@ -42,10 +44,10 @@ const CloseIcon = styled(Button.Icon).attrs({
 
   ${({
     theme: {
-      spacing: { medium },
+      spacing: { medium, small },
     },
   }) => `
-    top: ${medium}px;
+    top: ${small}px;
     right: ${medium}px;
   `};
 `;

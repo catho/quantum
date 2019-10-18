@@ -9,9 +9,9 @@ const Content = styled(Card.Content)`
   overflow-y: auto;
   padding: ${({
     theme: {
-      spacing: { medium, large },
+      spacing: { medium },
     },
-  }) => `${medium}px ${large}px`};
+  }) => `${medium}px`};
 `;
 
 Content.propTypes = {
