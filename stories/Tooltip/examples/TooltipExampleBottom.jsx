@@ -4,7 +4,7 @@ import Button from '../../../components/Button';
 
 const TooltipExampleBottom = () => (
   <Tooltip placement="bottom" text="This is a hint.">
-    <Button full="true">Hover me</Button>
+    <Button full>Hover me</Button>
   </Tooltip>
 );
 
@@ -14,7 +14,7 @@ TooltipExampleBottom.code = `import { Tooltip, Button } from '@catho/quantum';
   placement="bottom"
   text="This is a hint."
 >
-  <Button full="true">Hover me</Button>
+  <Button full>Hover me</Button>
 </Tooltip>
 `;
 
