@@ -6,9 +6,9 @@ import { spacing } from '../../shared/theme';
 const Header = styled(Card.Header)`
   padding: ${({
     theme: {
-      spacing: { large },
+      spacing: { medium },
     },
-  }) => `${large}px ${large}px 0`};
+  }) => `${medium}px ${medium}px 0`};
 `;
 
 Header.propTypes = {

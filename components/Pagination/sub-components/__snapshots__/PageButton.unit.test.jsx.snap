@@ -2,6 +2,7 @@
 
 exports[`<PageButton /> Snapshot should match snapshot 1`] = `
 .c0 {
+  font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -22,8 +23,8 @@ exports[`<PageButton /> Snapshot should match snapshot 1`] = `
   outline: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -32,7 +33,6 @@ exports[`<PageButton /> Snapshot should match snapshot 1`] = `
   border: 1px solid #e0e0e0;
   color: #424242;
   font-size: 16px;
-  font-weight: normal;
   margin: 0 4px;
   padding: 4px 8px;
 }
@@ -54,6 +54,7 @@ exports[`<PageButton /> Snapshot should match snapshot 1`] = `
 
 exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
 .c0 {
+  font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -74,8 +75,8 @@ exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
   outline: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out,font-weight 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -84,7 +85,6 @@ exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
   border: 1px solid #1250C4;
   color: #ffffff;
   font-size: 16px;
-  font-weight: 700;
   margin: 0 4px;
   padding: 4px 8px;
 }
