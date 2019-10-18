@@ -955,6 +955,7 @@ exports[`Popover component  Snapshots should match snapshots 8`] = `
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 1`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -971,16 +972,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -1010,10 +1007,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1101,36 +1098,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -1427,6 +1394,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c2 {
@@ -1443,16 +1411,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -1482,10 +1446,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1564,36 +1528,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #424242;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -3254,7 +3188,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -3743,11 +3677,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
@@ -4971,6 +4904,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 2`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -4987,16 +4921,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -5026,10 +4956,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -5117,36 +5047,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -5443,6 +5343,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c2 {
@@ -5459,16 +5360,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -5498,10 +5395,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -5580,36 +5477,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #424242;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -7270,7 +7137,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -7759,11 +7626,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
@@ -8987,6 +8853,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 3`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c7 .c4 function (_ref5) {
@@ -8994,10 +8861,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var sizes = {
+.c7 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -9015,16 +8882,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #3b610f;
@@ -9054,10 +8917,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -9149,36 +9012,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -9475,6 +9308,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c5 .c3 function (_ref5) {
@@ -9482,10 +9316,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c3 function (_ref5) var sizes = {
+.c5 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -9503,16 +9337,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #3b610f;
@@ -9542,10 +9372,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -9628,36 +9458,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #004D40;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -11318,7 +11118,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -11807,11 +11607,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
@@ -13035,6 +12834,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 4`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c7 .c4 function (_ref5) {
@@ -13042,10 +12842,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var sizes = {
+.c7 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -13054,10 +12854,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .c4 function (_ref5) var sizes = {
+.c8 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -13075,16 +12875,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f09100;
@@ -13114,10 +12910,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -13213,36 +13009,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -13539,6 +13305,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c5 .c3 function (_ref5) {
@@ -13546,10 +13313,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c3 function (_ref5) var sizes = {
+.c5 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -13558,10 +13325,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c3 function (_ref5) var sizes = {
+.c6 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -13579,16 +13346,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f09100;
@@ -13618,10 +13381,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -13708,36 +13471,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #d14900;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -15398,7 +15131,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -15887,11 +15620,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
@@ -17115,6 +16847,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 5`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c7 .c4 function (_ref5) {
@@ -17122,10 +16855,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var sizes = {
+.c7 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17134,10 +16867,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .c4 function (_ref5) var sizes = {
+.c8 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17146,10 +16879,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c4 function (_ref5) var sizes = {
+.c9 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17167,16 +16900,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #e91b0c;
@@ -17206,10 +16935,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17309,36 +17038,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -17635,6 +17334,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c5 .c3 function (_ref5) {
@@ -17642,10 +17342,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c3 function (_ref5) var sizes = {
+.c5 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17654,10 +17354,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c3 function (_ref5) var sizes = {
+.c6 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17666,10 +17366,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c3 function (_ref5) var sizes = {
+.c7 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17687,16 +17387,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #e91b0c;
@@ -17726,10 +17422,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -17820,36 +17516,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   background: none;
   opacity: 1;
   color: #ac001a;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -19510,7 +19176,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -19999,11 +19665,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
@@ -21227,6 +20892,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 6`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -21243,16 +20909,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -21282,10 +20944,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21294,10 +20956,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var sizes = {
+.c7 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21306,10 +20968,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .c4 function (_ref5) var sizes = {
+.c8 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21318,10 +20980,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c4 function (_ref5) var sizes = {
+.c9 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21421,36 +21083,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -21747,6 +21379,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c2 {
@@ -21763,16 +21396,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -21802,10 +21431,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21814,10 +21443,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c3 function (_ref5) var sizes = {
+.c5 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21826,10 +21455,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c3 function (_ref5) var sizes = {
+.c6 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21838,10 +21467,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c3 function (_ref5) var sizes = {
+.c7 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -21932,36 +21561,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c10 .c3 {
   margin-right: 0;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -23622,7 +23221,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -24111,11 +23710,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
@@ -25339,6 +24937,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 7`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -25355,16 +24954,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -25394,10 +24989,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -25406,10 +25001,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var sizes = {
+.c7 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -25418,10 +25013,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .c4 function (_ref5) var sizes = {
+.c8 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -25430,10 +25025,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c4 function (_ref5) var sizes = {
+.c9 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -25530,36 +25125,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -25856,6 +25421,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c2 {
@@ -25872,16 +25438,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -25911,10 +25473,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -25923,10 +25485,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c3 function (_ref5) var sizes = {
+.c5 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -25935,10 +25497,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c3 function (_ref5) var sizes = {
+.c6 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -25947,10 +25509,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c3 function (_ref5) var sizes = {
+.c7 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -26038,36 +25600,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c10 .c3 {
   margin-right: 0;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -27728,7 +27260,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -28217,11 +27749,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
@@ -29445,6 +28976,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 8`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -29461,16 +28993,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -29500,10 +29028,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -29512,10 +29040,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var sizes = {
+.c7 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -29524,10 +29052,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .c4 function (_ref5) var sizes = {
+.c8 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -29536,10 +29064,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c4 function (_ref5) var sizes = {
+.c9 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -29636,36 +29164,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c6 {
   cursor: pointer;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <Popover
@@ -29962,6 +29460,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             containerInfo={
               .c4 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c2 {
@@ -29978,16 +29477,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: undefinedpx;
   line-height: NaNpx;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #424242;
@@ -30017,10 +29512,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref5) var sizes = {
+.c2 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -30029,10 +29524,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c5 .c3 function (_ref5) var sizes = {
+.c5 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -30041,10 +29536,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c3 function (_ref5) var sizes = {
+.c6 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -30053,10 +29548,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c3 function (_ref5) var sizes = {
+.c7 .c3 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -30144,36 +29639,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 .c10 .c3 {
   margin-right: 0;
-}
-
-@media (min-width:0px) {
-  .c4 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c4 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c4 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c4 {
-    margin-right: 16px;
-  }
 }
 
 <section>
@@ -31834,7 +31299,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
-                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;letter-spacing:0.2px;border-radius:4px;",
+                                    "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                     [Function],
                                     " ",
                                     [Function],
@@ -32323,11 +31788,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
                                         "componentId": "c4",
-                                        "isStatic": false,
+                                        "isStatic": true,
                                         "lastClassName": "c5",
                                         "rules": Array [
-                                          "pointer-events:none;",
-                                          [Function],
+                                          "pointer-events:none;margin-right:8px;",
                                         ],
                                       },
                                       "displayName": "Button__ButtonIcon",
