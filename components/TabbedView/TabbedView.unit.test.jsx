@@ -21,6 +21,17 @@ describe('<TabbedView /> ', () => {
 
       expect(toJson(component)).toMatchSnapshot();
     });
+    it('should match snapshot with fluid option', () => {
+      const component = mount(
+        <TabbedView fluid>
+          <Tab title="Candidates">Candidates content</Tab>
+          <Tab title="Companies">Companies content</Tab>
+          <Tab title="Education">Education content</Tab>
+        </TabbedView>,
+      );
+
+      expect(toJson(component)).toMatchSnapshot();
+    });
     it('should match snapshot with badges and icons', () => {
       const component = mount(
         <TabbedView>

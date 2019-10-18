@@ -5,6 +5,7 @@ import {
   components,
   baseFontSize as defaultBaseFontSize,
   breakpoints as defaultBreakpoints,
+  spacing as defaultSpacing,
 } from '../shared/theme';
 import Tab from './Tab';
 import { query } from '../Grid/sub-components/shared';
@@ -21,6 +22,8 @@ const Navbar = styled.nav.attrs({
   padding: 0;
   overflow-x: scroll;
   max-width: 100%;
+  clear: left;
+  float: left;
 
   ${({
     skin,
@@ -30,14 +33,16 @@ const Navbar = styled.nav.attrs({
       },
       breakpoints,
     },
+    fluid,
   }) => {
     const { background } = getSkinByThemeColor(skin, skins);
-    const q = query(breakpoints).medium;
+    const mediumQuery = query(breakpoints).medium;
 
     return css`
       background-color: ${background};
+      ${fluid ? 'width: 100%;' : null}
 
-      ${q`
+      ${mediumQuery`
         overflow-x: auto;
       `}
     `;
@@ -58,10 +63,9 @@ const NavItem = styled.button.attrs({
   min-width: 90px;
   outline: none;
   overflow: hidden;
-  padding: 16px;
   position: relative;
   text-align: center;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
   ${({
     skin,
@@ -71,6 +75,7 @@ const NavItem = styled.button.attrs({
         tabbedView: { skins },
       },
       baseFontSize,
+      spacing: { medium },
     },
     fluid,
   }) => {
@@ -86,6 +91,7 @@ const NavItem = styled.button.attrs({
       background-color: ${background};
       font-size: ${baseFontSize}px;
       color: ${text};
+      padding: ${medium}px;
 
       ${fluid
         ? `
@@ -117,6 +123,13 @@ const NavItem = styled.button.attrs({
         border-bottom: 1px solid ${activeText};
         background-color: ${hoverBackground};
       }
+
+      &:focus {
+        color: ${activeText};
+        border: 1px solid ${activeText};
+        background-color: ${hoverBackground};
+        padding: ${medium - 1}px;
+      }
     `;
   }}
 `;
@@ -140,6 +153,10 @@ const IconContainer = styled.div`
   margin-left: 0px;
   margin-right: 8px;
   width: 24px;
+`;
+
+const TabPanel = styled.div`
+  clear: left;
 `;
 
 const RenderIf = ({ conditional, children }) => conditional && children;
@@ -181,7 +198,7 @@ class TabbedView extends React.Component {
 
     return (
       <>
-        <Navbar theme={theme} skin={skin}>
+        <Navbar theme={theme} skin={skin} fluid={fluid}>
           {React.Children.map(children, ({ props: { title, badge, icon } }) => (
             <NavItem
               fluid={fluid}
@@ -193,9 +210,9 @@ class TabbedView extends React.Component {
               aria-controls={`${this.sanitize(title)}-panel`}
               aria-selected={title === activeTab}
             >
-              {icon ? <IconContainer>{icon}</IconContainer> : null}
-              {title ? <TitleContainer>{title}</TitleContainer> : null}
-              {badge ? <BadgeContainer>{badge}</BadgeContainer> : null}
+              {icon && <IconContainer>{icon}</IconContainer>}
+              {title && <TitleContainer>{title}</TitleContainer>}
+              {badge && <BadgeContainer>{badge}</BadgeContainer>}
             </NavItem>
           ))}
         </Navbar>
@@ -204,13 +221,14 @@ class TabbedView extends React.Component {
           children,
           ({ props: { title, children: tabContent } }) => (
             <RenderIf conditional={title === activeTab}>
-              <div
+              <TabPanel
                 role="tabpanel"
+                key={`${this.sanitize(title)}-panel-key`}
                 id={`${this.sanitize(title)}-panel`}
                 aria-labelledby={`${this.sanitize(title)}-tab`}
               >
                 {tabContent}
-              </div>
+              </TabPanel>
             </RenderIf>
           ),
         )}
@@ -220,6 +238,7 @@ class TabbedView extends React.Component {
 }
 
 TabbedView.propTypes = {
+  /** Used to expand all tabs along all the parent width */
   fluid: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -233,6 +252,7 @@ TabbedView.propTypes = {
     }),
     baseFontSize: PropTypes.number,
     breakpoints: PropTypes.object,
+    spacing: PropTypes.object,
   }),
 };
 
@@ -244,6 +264,7 @@ TabbedView.defaultProps = {
     components,
     baseFontSize: defaultBaseFontSize,
     breakpoints: defaultBreakpoints,
+    spacing: defaultSpacing,
   },
 };
 

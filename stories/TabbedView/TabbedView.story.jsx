@@ -46,7 +46,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
           </Row>
 
           <Row>
-            <Col xsmall={2} small={4} medium={6}>
+            <Col key="col-1" xsmall={2} small={4} medium={6}>
               <SimpleHighlight>{`import { TabbedView, Tab } from '@catho/quantum';
 
 <TabbedView
@@ -63,7 +63,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
   </Tab>
 </TabbedView>`}</SimpleHighlight>
             </Col>
-            <Col xsmall={2} small={4} medium={6}>
+            <Col key="col-2" xsmall={2} small={4} medium={6}>
               <Container>
                 <QuantumTabbedView>
                   <QuantumTabbedView.Tab title="Candidates">
@@ -100,7 +100,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
             </Col>
           </Row>
           <Row>
-            <Col xsmall={2} small={4} medium={6}>
+            <Col key="col-1" xsmall={2} small={4} medium={6}>
               <SimpleHighlight>
                 {`
   import { TabbedView, Tab, Icon, Badge } from '@catho/quantum';
@@ -126,7 +126,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
                 `}
               </SimpleHighlight>
             </Col>
-            <Col xsmall={2} small={4} medium={6}>
+            <Col key="col-2" xsmall={2} small={4} medium={6}>
               <QuantumTabbedView>
                 <QuantumTabbedView.Tab title="With badge" badge={badge}>
                   With badge content
@@ -155,7 +155,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
             </Col>
           </Row>
           <Row>
-            <Col xsmall={2} small={4} medium={6}>
+            <Col key="col-1" xsmall={2} small={4} medium={6}>
               <SimpleHighlight>
                 {`
   import { TabbedView, Tab, Icon, Badge } from '@catho/quantum';
@@ -178,7 +178,7 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
                 `}
               </SimpleHighlight>
             </Col>
-            <Col xsmall={2} small={4} medium={6}>
+            <Col key="col-2" xsmall={2} small={4} medium={6}>
               <QuantumTabbedView fluid>
                 <QuantumTabbedView.Tab title="Candidates lorem ipsum dolor sit amet consectur">
                   Candidates content fluid
