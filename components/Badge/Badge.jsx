@@ -48,7 +48,6 @@ const StyledBadge = styled.span`
   height: 24px;
   line-height: 24px;
   min-width: 32px;
-  text-align: center;
   align-items: center;
   justify-content: center;
 
