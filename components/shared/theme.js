@@ -80,7 +80,6 @@ const spacing = {
   xlarge: gutter * 4, // 32
   xxlarge: gutter * 5, // 40
   xxxlarge: gutter * 6, // 48
-  xxxxlarge: gutter * 7, // 56
 };
 
 const components = {

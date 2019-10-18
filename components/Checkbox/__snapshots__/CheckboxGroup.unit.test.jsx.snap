@@ -1331,7 +1331,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }
@@ -1594,7 +1593,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }

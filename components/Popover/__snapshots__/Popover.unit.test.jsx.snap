@@ -1385,7 +1385,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -1777,7 +1776,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -2032,7 +2030,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -2293,7 +2290,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -2474,7 +2470,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -2715,7 +2710,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -2946,7 +2940,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -3177,7 +3170,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -3444,7 +3436,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -3675,7 +3666,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -3921,7 +3911,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -4147,7 +4136,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -4375,7 +4363,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -4619,7 +4606,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -4848,7 +4834,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }
@@ -5349,7 +5334,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -5741,7 +5725,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -5996,7 +5979,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -6257,7 +6239,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -6438,7 +6419,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -6679,7 +6659,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -6910,7 +6889,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -7141,7 +7119,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -7408,7 +7385,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -7639,7 +7615,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -7885,7 +7860,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -8111,7 +8085,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -8339,7 +8312,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -8583,7 +8555,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -8812,7 +8783,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }
@@ -9329,7 +9299,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -9737,7 +9706,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -9992,7 +9960,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -10253,7 +10220,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -10434,7 +10400,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -10675,7 +10640,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -10906,7 +10870,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -11137,7 +11100,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -11404,7 +11366,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -11635,7 +11596,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -11881,7 +11841,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -12107,7 +12066,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -12335,7 +12293,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -12579,7 +12536,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -12808,7 +12764,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }
@@ -13341,7 +13296,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -13765,7 +13719,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -14020,7 +13973,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -14281,7 +14233,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -14462,7 +14413,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -14703,7 +14653,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -14934,7 +14883,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -15165,7 +15113,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -15432,7 +15379,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -15663,7 +15609,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -15909,7 +15854,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -16135,7 +16079,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -16363,7 +16306,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -16607,7 +16549,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -16836,7 +16777,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }
@@ -17385,7 +17325,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -17825,7 +17764,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -18080,7 +18018,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -18341,7 +18278,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -18522,7 +18458,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -18763,7 +18698,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -18994,7 +18928,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -19225,7 +19158,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -19492,7 +19424,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -19723,7 +19654,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -19969,7 +19899,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -20195,7 +20124,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -20423,7 +20351,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -20667,7 +20594,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -20896,7 +20822,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }
@@ -21445,7 +21370,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -21885,7 +21809,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -22140,7 +22063,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -22401,7 +22323,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -22582,7 +22503,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -22823,7 +22743,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -23054,7 +22973,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -23285,7 +23203,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -23552,7 +23469,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -23783,7 +23699,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -24029,7 +23944,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -24255,7 +24169,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -24483,7 +24396,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -24727,7 +24639,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -24956,7 +24867,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }
@@ -25502,7 +25412,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -25939,7 +25848,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -26194,7 +26102,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -26455,7 +26362,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -26636,7 +26542,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -26877,7 +26782,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -27108,7 +27012,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -27339,7 +27242,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -27606,7 +27508,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -27837,7 +27738,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -28083,7 +27983,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -28309,7 +28208,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -28537,7 +28435,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -28781,7 +28678,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -29010,7 +28906,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }
@@ -29556,7 +29451,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "xxsmall": 4,
                 "xxxlarge": 48,
                 "xxxsmall": 2,
-                "xxxxlarge": 56,
               },
             }
           }
@@ -29993,7 +29887,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "xxsmall": 4,
                     "xxxlarge": 48,
                     "xxxsmall": 2,
-                    "xxxxlarge": 56,
                   },
                 }
               }
@@ -30248,7 +30141,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       "xxsmall": 4,
                       "xxxlarge": 48,
                       "xxxsmall": 2,
-                      "xxxxlarge": 56,
                     },
                   }
                 }
@@ -30509,7 +30401,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "xxsmall": 4,
                           "xxxlarge": 48,
                           "xxxsmall": 2,
-                          "xxxxlarge": 56,
                         },
                       }
                     }
@@ -30690,7 +30581,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             },
                           },
@@ -30931,7 +30821,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             "xxsmall": 4,
                             "xxxlarge": 48,
                             "xxxsmall": 2,
-                            "xxxxlarge": 56,
                           },
                         }
                       }
@@ -31162,7 +31051,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               "xxsmall": 4,
                               "xxxlarge": 48,
                               "xxxsmall": 2,
-                              "xxxxlarge": 56,
                             },
                           }
                         }
@@ -31393,7 +31281,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "xxsmall": 4,
                                 "xxxlarge": 48,
                                 "xxxsmall": 2,
-                                "xxxxlarge": 56,
                               },
                             }
                           }
@@ -31660,7 +31547,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   "xxsmall": 4,
                                   "xxxlarge": 48,
                                   "xxxsmall": 2,
-                                  "xxxxlarge": 56,
                                 },
                               }
                             }
@@ -31891,7 +31777,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       "xxsmall": 4,
                                       "xxxlarge": 48,
                                       "xxxsmall": 2,
-                                      "xxxxlarge": 56,
                                     },
                                   }
                                 }
@@ -32137,7 +32022,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "xxsmall": 4,
                                         "xxxlarge": 48,
                                         "xxxsmall": 2,
-                                        "xxxxlarge": 56,
                                       },
                                     }
                                   }
@@ -32363,7 +32247,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                           "xxsmall": 4,
                                           "xxxlarge": 48,
                                           "xxxsmall": 2,
-                                          "xxxxlarge": 56,
                                         },
                                       }
                                     }
@@ -32591,7 +32474,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             "xxsmall": 4,
                                             "xxxlarge": 48,
                                             "xxxsmall": 2,
-                                            "xxxxlarge": 56,
                                           },
                                         }
                                       }
@@ -32835,7 +32717,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "xxsmall": 4,
                                               "xxxlarge": 48,
                                               "xxxsmall": 2,
-                                              "xxxxlarge": 56,
                                             },
                                           }
                                         }
@@ -33064,7 +32945,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                                 "xxsmall": 4,
                                                 "xxxlarge": 48,
                                                 "xxxsmall": 2,
-                                                "xxxxlarge": 56,
                                               },
                                             }
                                           }

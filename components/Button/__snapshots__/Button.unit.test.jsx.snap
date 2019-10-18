@@ -1108,7 +1108,6 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
           "xxsmall": 4,
           "xxxlarge": 48,
           "xxxsmall": 2,
-          "xxxxlarge": 56,
         },
       }
     }
@@ -1465,7 +1464,6 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
           "xxsmall": 4,
           "xxxlarge": 48,
           "xxxsmall": 2,
-          "xxxxlarge": 56,
         },
       }
     }
@@ -1822,7 +1820,6 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
           "xxsmall": 4,
           "xxxlarge": 48,
           "xxxsmall": 2,
-          "xxxxlarge": 56,
         },
       }
     }
@@ -2179,7 +2176,6 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
           "xxsmall": 4,
           "xxxlarge": 48,
           "xxxsmall": 2,
-          "xxxxlarge": 56,
         },
       }
     }

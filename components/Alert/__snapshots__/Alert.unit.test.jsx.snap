@@ -390,7 +390,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }
@@ -803,7 +802,6 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }
@@ -1205,7 +1203,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }
@@ -1624,7 +1621,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }
@@ -2060,7 +2056,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }
@@ -2513,7 +2508,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }
@@ -2983,7 +2977,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "xxsmall": 4,
               "xxxlarge": 48,
               "xxxsmall": 2,
-              "xxxxlarge": 56,
             },
           }
         }

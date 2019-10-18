@@ -54,7 +54,7 @@ const StyledButton = styled.button`
   ${({
     size,
     theme: {
-      spacing: { large, xlarge, xxlarge, xxxlarge, xxxxlarge },
+      spacing: { xsmall, large, xlarge, xxlarge, xxxlarge },
     },
   }) => {
     const heights = {
@@ -62,7 +62,7 @@ const StyledButton = styled.button`
       small: `${xlarge}px`,
       medium: `${xxlarge}px`,
       large: `${xxxlarge}px`,
-      xlarge: `${xxxxlarge}px`,
+      xlarge: `${xxxlarge + xsmall}px`,
     };
 
     return `min-height: ${heights[size]};`;
