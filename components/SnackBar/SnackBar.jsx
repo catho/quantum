@@ -205,11 +205,12 @@ class SnackBar extends React.Component {
     }, secondsToClose * 1000);
   };
 
-  handleSkinIcon = (theme, skin) => {
-    if (skin === 'neutral') return false;
-
-    return <SkinIcon theme={theme} name={GetSkinIcon(skin)} skin={skin} />;
-  };
+  handleSkinIcon = (theme, skin) =>
+    skin !== 'neutral' ? (
+      <SkinIcon theme={theme} name={GetSkinIcon(skin)} skin={skin} />
+    ) : (
+      false
+    );
 
   render() {
     const {
@@ -222,6 +223,10 @@ class SnackBar extends React.Component {
       inverted,
       ...rest
     } = this.props;
+
+    const isActionTriggerDiffAction =
+      actionTrigger && actionTrigger.title !== 'ACTION' && skin === 'neutral';
+
     return ReactDOM.createPortal(
       <DialogBlock>
         <Row>
@@ -243,9 +248,7 @@ class SnackBar extends React.Component {
               tabIndex="0"
             >
               <WrapperLeft>
-                {actionTrigger &&
-                actionTrigger.title !== 'ACTION' &&
-                skin === 'neutral' ? (
+                {isActionTriggerDiffAction ? (
                   <CloseIconLeft
                     theme={theme}
                     inverted={inverted}
@@ -267,9 +270,7 @@ class SnackBar extends React.Component {
                 </TextContainer>
               </WrapperLeft>
               <ActionsSection>
-                {actionTrigger &&
-                actionTrigger.title !== 'ACTION' &&
-                skin === 'neutral' ? (
+                {isActionTriggerDiffAction ? (
                   <ActionButton
                     className="action-button"
                     inverted={inverted}
