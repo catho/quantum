@@ -2,8 +2,6 @@
 
 exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 .c0 {
-  border: 1px solid transparent;
-  border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -17,20 +15,21 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
   margin: 0 4px;
-  padding: 8px;
+  padding: 8px 16px;
+  color: #1250C4;
 }
 
 .c0[aria-disabled=true] {
-  color: #e0e0e0;
-  cursor: not-allowed;
+  display: none;
 }
 
 .c0[aria-disabled=false]:hover,
 .c0[aria-disabled=false]:focus {
   background-color: #E5EDFC;
-  border: 1px solid #1250C4;
-  color: #1250C4;
+  border: 2px solid #1250C4;
 }
 
 <a
@@ -43,8 +42,6 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 
 exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop 1`] = `
 .c0 {
-  border: 1px solid transparent;
-  border-radius: 10px;
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -58,20 +55,21 @@ exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
   margin: 0 4px;
-  padding: 8px;
+  padding: 8px 16px;
+  color: #1250C4;
 }
 
 .c0[aria-disabled=true] {
-  color: #e0e0e0;
-  cursor: not-allowed;
+  display: none;
 }
 
 .c0[aria-disabled=false]:hover,
 .c0[aria-disabled=false]:focus {
   background-color: #E5EDFC;
-  border: 1px solid #1250C4;
-  color: #1250C4;
+  border: 2px solid #1250C4;
 }
 
 <a

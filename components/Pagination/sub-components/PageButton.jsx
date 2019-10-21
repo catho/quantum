@@ -8,6 +8,7 @@ import {
 } from '../../shared/theme';
 
 const PageButton = styled.a`
+  font-weight: bold;
   align-items: center;
   border-radius: 10px;
   box-sizing: border-box;
@@ -19,7 +20,7 @@ const PageButton = styled.a`
   outline: none;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
-    color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+    color 0.2s ease-in-out;
   user-select: none;
 
   ${({
@@ -37,7 +38,6 @@ const PageButton = styled.a`
     border: 1px solid ${active ? primary700 : neutral300};
     color: ${active ? neutral0 : neutral700};
     font-size: ${baseFontSize}px;
-    font-weight: ${active ? '700' : 'normal'};
     margin: 0 ${xxsmall}px;
     padding: ${xxsmall}px ${xsmall}px;
 
