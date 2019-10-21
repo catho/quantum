@@ -653,7 +653,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             >
               <span
                 aria-hidden="true"
-                class="material-icons MuiIcon-root c12 c13"
+                class="material-icons MuiIcon-root-1 c12 c13"
                 theme="[object Object]"
               >
                 close
@@ -930,7 +930,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 >
                   <span
                     aria-hidden="true"
-                    class="material-icons MuiIcon-root c12 c13"
+                    class="material-icons MuiIcon-root-1 c12 c13"
                     theme="[object Object]"
                   >
                     close
@@ -4633,7 +4633,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           }
                                         }
                                       >
-                                        <WithStyles(ForwardRef(Icon))
+                                        <WithStyles(Icon)
                                           className="c12 c13"
                                           size="medium"
                                           style={
@@ -4840,21 +4840,24 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             }
                                           }
                                         >
-                                          <ForwardRef(Icon)
+                                          <Icon
                                             className="c12 c13"
                                             classes={
                                               Object {
-                                                "colorAction": "MuiIcon-colorAction",
-                                                "colorDisabled": "MuiIcon-colorDisabled",
-                                                "colorError": "MuiIcon-colorError",
-                                                "colorPrimary": "MuiIcon-colorPrimary",
-                                                "colorSecondary": "MuiIcon-colorSecondary",
-                                                "fontSizeInherit": "MuiIcon-fontSizeInherit",
-                                                "fontSizeLarge": "MuiIcon-fontSizeLarge",
-                                                "fontSizeSmall": "MuiIcon-fontSizeSmall",
-                                                "root": "MuiIcon-root",
+                                                "colorAction": "MuiIcon-colorAction-4",
+                                                "colorDisabled": "MuiIcon-colorDisabled-6",
+                                                "colorError": "MuiIcon-colorError-5",
+                                                "colorPrimary": "MuiIcon-colorPrimary-2",
+                                                "colorSecondary": "MuiIcon-colorSecondary-3",
+                                                "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                                "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                                "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                                "root": "MuiIcon-root-1",
                                               }
                                             }
+                                            color="inherit"
+                                            component="span"
+                                            fontSize="default"
                                             size="medium"
                                             style={
                                               Object {
@@ -5061,8 +5064,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             }
                                           >
                                             <span
-                                              aria-hidden={true}
-                                              className="material-icons MuiIcon-root c12 c13"
+                                              aria-hidden="true"
+                                              className="material-icons MuiIcon-root-1 c12 c13"
                                               size="medium"
                                               style={
                                                 Object {
@@ -5270,8 +5273,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             >
                                               close
                                             </span>
-                                          </ForwardRef(Icon)>
-                                        </WithStyles(ForwardRef(Icon))>
+                                          </Icon>
+                                        </WithStyles(Icon)>
                                       </Icon>
                                     </StyledComponent>
                                   </Button__ButtonIcon>

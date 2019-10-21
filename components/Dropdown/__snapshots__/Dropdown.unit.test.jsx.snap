@@ -126,8 +126,8 @@ exports[`Input component  should match the snapshot 1`] = `
     >
       Select an option
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -329,8 +329,8 @@ exports[`Input component  should match the snapshot 2`] = `
     >
       Dropdown placeholder
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -535,8 +535,8 @@ exports[`Input component  should match the snapshot 3`] = `
     >
       
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -749,8 +749,8 @@ exports[`Input component  should match the snapshot 4`] = `
     >
       Select an option
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -956,8 +956,8 @@ exports[`Input component  should match the snapshot 5`] = `
     >
       Select an option
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -1172,8 +1172,8 @@ exports[`Input component  should match the snapshot 6`] = `
     >
       Select an option
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c4"
         style={
           Object {
             "color": "",
@@ -1397,8 +1397,8 @@ exports[`Input component  should match the snapshot 7`] = `
     >
       Select an option
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c5"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c5"
         style={
           Object {
             "color": "",
@@ -1613,8 +1613,8 @@ exports[`Input component  should match the snapshot 8`] = `
         value=""
       />
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -1816,8 +1816,8 @@ exports[`Input component  should match the snapshot 9`] = `
     >
       Select an option
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",
@@ -2018,8 +2018,8 @@ exports[`Input component  should match the snapshot 10`] = `
     >
       baz
       <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 c3"
         style={
           Object {
             "color": "",

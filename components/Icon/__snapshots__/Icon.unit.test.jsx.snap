@@ -2,8 +2,8 @@
 
 exports[`<Icon /> Should match the snapshot 1`] = `
 <span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
   style={
     Object {
       "color": "",
@@ -16,8 +16,8 @@ exports[`<Icon /> Should match the snapshot 1`] = `
 
 exports[`<Icon /> Should match the snapshot 2`] = `
 <span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
   style={
     Object {
       "color": "",
@@ -30,8 +30,8 @@ exports[`<Icon /> Should match the snapshot 2`] = `
 
 exports[`<Icon /> Should match the snapshot 3`] = `
 <span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
   style={
     Object {
       "color": "",
@@ -44,8 +44,8 @@ exports[`<Icon /> Should match the snapshot 3`] = `
 
 exports[`<Icon /> Should match the snapshot 4`] = `
 <span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+  aria-hidden="true"
+  className="material-icons MuiIcon-root-1"
   style={
     Object {
       "color": "tomato",
