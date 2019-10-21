@@ -21,7 +21,7 @@ const Tip = styled.div`
   ${({
     theme: {
       colors: { neutral },
-      spacing: { xxsmall, xsmall },
+      spacing: { xsmall },
       baseFontSize,
     },
   }) => `
@@ -29,7 +29,7 @@ const Tip = styled.div`
     border-color: ${neutral[700]};
     color: ${neutral[100]};
     font-size: ${baseFontSize}px;
-    padding: ${xxsmall}px ${xsmall}px;
+    padding: ${xsmall}px;
   `}
 
   ${({ placement }) => placementConfig.tipPosition[placement]};
@@ -47,10 +47,13 @@ const TipText = styled.span`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 20px;
 `;
 
 const Wrapper = styled.div`
   position: relative;
+  float: left;
+  clear: left;
 `;
 
 class Tooltip extends Component {

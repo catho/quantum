@@ -15,9 +15,9 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   border-color: #424242;
   color: #f2f2f2;
   font-size: 16px;
-  padding: 4px 8px;
+  padding: 8px;
   left: 50%;
-  bottom: 130%;
+  bottom: calc(100% + 12px);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -43,10 +43,13 @@ exports[`<Slider /> Snapshots should match the snapshot when <Slider /> is disab
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 20px;
 }
 
 .c1 {
   position: relative;
+  float: left;
+  clear: left;
 }
 
 .c4 .rc-slider-handle {
@@ -241,9 +244,9 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   border-color: #424242;
   color: #f2f2f2;
   font-size: 16px;
-  padding: 4px 8px;
+  padding: 8px;
   left: 50%;
-  bottom: 130%;
+  bottom: calc(100% + 12px);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -269,10 +272,13 @@ exports[`<Slider /> Snapshots should match the snapshot when have just one handl
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 20px;
 }
 
 .c1 {
   position: relative;
+  float: left;
+  clear: left;
 }
 
 .c4 .rc-slider-handle {
@@ -467,9 +473,9 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   border-color: #424242;
   color: #f2f2f2;
   font-size: 16px;
-  padding: 4px 8px;
+  padding: 8px;
   left: 50%;
-  bottom: 130%;
+  bottom: calc(100% + 12px);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -495,10 +501,13 @@ exports[`<Slider /> Snapshots should match the snapshot when have two handles 1`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 20px;
 }
 
 .c1 {
   position: relative;
+  float: left;
+  clear: left;
 }
 
 .c4 .rc-slider-handle {
