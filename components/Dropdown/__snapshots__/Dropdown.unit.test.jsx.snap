@@ -622,12 +622,13 @@ exports[`Input component  should match the snapshot 4`] = `
 
 .c4 {
   color: #ac001a;
-  font-size: 14px;
+  margin-top: 8px;
   cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  display: block;
-  margin: 8px 0 0;
 }
 
 .c2 {
