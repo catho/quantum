@@ -119,8 +119,8 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
     className="c2 c3"
   >
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c4 "
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c4 "
       style={
         Object {
           "color": "",
@@ -130,8 +130,8 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
       close
     </span>
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c5 "
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c5 "
       style={
         Object {
           "color": "",
@@ -263,8 +263,8 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
     className="c2 c3"
   >
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c4 "
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c4 "
       style={
         Object {
           "color": "",
@@ -274,8 +274,8 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
       close
     </span>
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c5 "
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c5 "
       style={
         Object {
           "color": "",
