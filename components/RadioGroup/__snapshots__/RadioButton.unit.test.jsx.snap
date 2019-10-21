@@ -295,8 +295,8 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     />
     Foo
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 "
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c3 "
       style={
         Object {
           "color": "",
@@ -398,8 +398,8 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
     />
     Foo
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 "
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c3 "
       style={
         Object {
           "color": "",
@@ -618,8 +618,8 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
       value="Foo"
     />
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3"
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c3"
       style={
         Object {
           "color": "",
