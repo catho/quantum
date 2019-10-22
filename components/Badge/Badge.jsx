@@ -106,7 +106,13 @@ Badge.displayName = 'Badge';
 
 Badge.propTypes = {
   /** Define background and text color */
-  skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral']),
+  skin: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'success',
+    'error',
+    'neutral',
+  ]),
   /** When passed a children to <Badge />, the badge will be displayed at top-right corner of the children. */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
