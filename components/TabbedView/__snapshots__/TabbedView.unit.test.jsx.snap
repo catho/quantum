@@ -13,12 +13,12 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
-  margin: 0 0 25px 0;
   padding: 0;
   max-width: 100%;
   clear: left;
   float: left;
   background-color: transparent;
+  margin: 0 0 24px 0;
 }
 
 .c1 {
@@ -745,7 +745,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;max-width:100%;clear:left;float:left;",
+              "display:flex;flex-grow:1;flex-shrink:1;padding:0;max-width:100%;clear:left;float:left;",
               [Function],
             ],
           },
@@ -1876,12 +1876,12 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
-  margin: 0 0 25px 0;
   padding: 0;
   max-width: 100%;
   clear: left;
   float: left;
   background-color: transparent;
+  margin: 0 0 24px 0;
 }
 
 .c1 {
@@ -2645,7 +2645,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;max-width:100%;clear:left;float:left;",
+              "display:flex;flex-grow:1;flex-shrink:1;padding:0;max-width:100%;clear:left;float:left;",
               [Function],
             ],
           },
@@ -6589,12 +6589,12 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
-  margin: 0 0 25px 0;
   padding: 0;
   max-width: 100%;
   clear: left;
   float: left;
   background-color: transparent;
+  margin: 0 0 24px 0;
   width: 100%;
   overflow-x: scroll;
 }
@@ -7327,7 +7327,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;max-width:100%;clear:left;float:left;",
+              "display:flex;flex-grow:1;flex-shrink:1;padding:0;max-width:100%;clear:left;float:left;",
               [Function],
             ],
           },

@@ -18,7 +18,6 @@ const Navbar = styled.nav.attrs({
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
-  margin: 0 0 25px 0;
   padding: 0;
   max-width: 100%;
   clear: left;
@@ -31,6 +30,7 @@ const Navbar = styled.nav.attrs({
         tabbedView: { skins },
       },
       breakpoints,
+      spacing: { large },
     },
     fluid,
   }) => {
@@ -39,6 +39,8 @@ const Navbar = styled.nav.attrs({
 
     return css`
       background-color: ${background};
+      margin: 0 0 ${large}px 0;
+
       ${fluid ? 'width: 100%; overflow-x: scroll;' : null}
 
       ${mediumQuery`
