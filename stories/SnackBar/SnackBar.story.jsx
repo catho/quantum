@@ -17,6 +17,7 @@ import {
   SnackBarExamplePrimary,
   SnackBarExampleSuccess,
   SnackBarExampleError,
+  SnackBarExampleWarning,
 } from './examples';
 
 storiesOf('SnackBar', module).add('SnackBar', () => (
@@ -45,10 +46,11 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
 
       <Tab title="Example">
         <StoryContainer>
-          <Title as="h3">SnackBar</Title>
+          <Title as="h1">SnackBar</Title>
           <p>
             Here you can check a simple implamentation using SnackBar component.
           </p>
+          <Title as="h3">Simple SnackBar (with action triggers)</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>{SnackBarExample.code}</SimpleHighlight>
@@ -57,6 +59,7 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
               <SnackBarExample />
             </Col>
           </Row>
+          <Title as="h3">Primary SnackBar</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>{SnackBarExamplePrimary.code}</SimpleHighlight>
@@ -65,6 +68,7 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
               <SnackBarExamplePrimary />
             </Col>
           </Row>
+          <Title as="h3">Success SnackBar</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>{SnackBarExampleSuccess.code}</SimpleHighlight>
@@ -73,12 +77,22 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
               <SnackBarExampleSuccess />
             </Col>
           </Row>
+          <Title as="h3">Error SnackBar</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>{SnackBarExampleError.code}</SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
               <SnackBarExampleError />
+            </Col>
+          </Row>
+          <Title as="h3">Warning SnackBar</Title>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{SnackBarExampleWarning.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SnackBarExampleWarning />
             </Col>
           </Row>
         </StoryContainer>

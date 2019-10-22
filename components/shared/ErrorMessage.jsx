@@ -1,30 +1,37 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { colors } from './theme';
+import { colors, spacing } from './theme';
 
 const ErrorMessage = styled.span`
-  color: ${({
+  ${({
     theme: {
       colors: {
         error: { 900: errorColor },
       },
+      spacing: { xsmall },
     },
-  }) => errorColor};
-  font-size: 14px;
+  }) => `
+    color: ${errorColor};
+    margin-top: ${xsmall}px;
+  `};
+
   cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  display: block;
 `;
 
 ErrorMessage.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
+    spacing: PropTypes.object,
   }),
 };
 
 ErrorMessage.defaultProps = {
-  theme: { colors },
+  theme: { colors, spacing },
 };
 
 export default ErrorMessage;

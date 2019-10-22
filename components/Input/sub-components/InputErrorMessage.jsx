@@ -3,15 +3,7 @@ import styled from 'styled-components';
 import { ErrorMessage } from '../../shared';
 import { spacing, colors } from '../../shared/theme';
 
-const InputErrorMessage = styled(ErrorMessage)`
-  ${({
-    theme: {
-      spacing: { xsmall },
-    },
-  }) => `
-    margin: ${xsmall}px 0 0;
-  `}
-`;
+const InputErrorMessage = styled(ErrorMessage)``;
 
 InputErrorMessage.displayName = 'InputErrorMessage';
 

@@ -11,16 +11,6 @@ const Group = styled(FieldGroup)`
   position: relative;
 `;
 
-const ErrorLabel = styled(ErrorMessage)`
-  margin-left: ${({
-    theme: {
-      spacing: { xxxsmall },
-    },
-  }) => `-${xxxsmall}px`};
-`;
-
-ErrorLabel.displayName = 'ErrorLabel';
-
 class CheckboxGroup extends React.Component {
   _onChange = event => {
     const {
@@ -56,7 +46,7 @@ class CheckboxGroup extends React.Component {
         >
           {checkboxes}
         </CheckboxGroupContext.Provider>
-        {error && <ErrorLabel theme={theme}>{error}</ErrorLabel>}
+        {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
       </Group>
     );
   }

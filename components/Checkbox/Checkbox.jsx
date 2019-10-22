@@ -8,13 +8,20 @@ import Icon from '../Icon';
 import CheckboxGroupContext from './CheckboxGroupContext';
 import { colors, spacing, baseFontSize } from '../shared/theme';
 
-const CHECKBOX_SIZE = '18px';
+const CHECKBOX_SIZE = '24px';
 
 const Wrapper = styled.div``;
 
 const CheckboxWrapper = styled.div`
+  ${({
+    theme: {
+      spacing: { xxsmall },
+    },
+  }) => `
   display: flex;
   position: relative;
+  margin-top: ${xxsmall}px;
+`}
 `;
 
 const CheckboxLabel = styled(Label)`
@@ -23,11 +30,11 @@ const CheckboxLabel = styled(Label)`
       colors: {
         neutral: { 700: neutralColor },
       },
-      spacing: { xsmall },
+      spacing: { small },
     },
   }) => `
     color: ${neutralColor};
-    margin: 0 0 0 ${xsmall}px;
+    margin: 0 0 0 ${small}px;
   `}
 `;
 
@@ -61,14 +68,12 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
         colors: {
           neutral: { 0: neutral0, 500: neutral500 },
         },
-        spacing: { xxxsmall },
         baseFontSize: fontSize,
       },
     }) => `
       background-color: ${neutral0};
       border: 2px solid  ${neutral500};
-      font-size: ${fontSize}px;
-      margin-top: ${xxxsmall}px;
+      font-size: ${fontSize * 1.25}px;
     `}
   }
 
@@ -179,7 +184,7 @@ const Checkbox = ({
 
   return (
     <Wrapper>
-      <CheckboxWrapper>
+      <CheckboxWrapper theme={theme}>
         <HiddenCheckbox
           {...props}
           id={id}
