@@ -123,6 +123,10 @@ const components = {
         background: colors.primary[700],
         text: colors.neutral[100],
       },
+      secondary: {
+        background: colors.secondary[500],
+        text: colors.neutral[0],
+      },
       error: {
         background: colors.error[500],
         text: colors.neutral[100],

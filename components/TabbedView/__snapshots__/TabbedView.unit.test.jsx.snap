@@ -159,6 +159,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
               "background": "#1250C4",
               "text": "#f2f2f2",
             },
+            "secondary": Object {
+              "background": "#E91E63",
+              "text": "#ffffff",
+            },
             "success": Object {
               "background": "#dcedc8",
               "text": "#004D40",
@@ -1159,6 +1163,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                       "background": "#1250C4",
                       "text": "#f2f2f2",
                     },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
+                    },
                     "success": Object {
                       "background": "#dcedc8",
                       "text": "#004D40",
@@ -1511,6 +1519,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
+                      },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#dcedc8",
