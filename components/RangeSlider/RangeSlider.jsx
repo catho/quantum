@@ -2,10 +2,46 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import MaterialSlider from '@material-ui/core/Slider';
+import withStyles from '@material-ui/core/styles/withStyles';
 import { colors, spacing, baseFontSize } from '../shared/theme';
 import { shadow, hexToRgba } from '../shared';
 import Tooltip from '../Tooltip';
 import valueValidator from './valueValidator';
+import CustomThumb from './CustomThumb';
+
+const PrettoSlider = withStyles({
+  root: {
+    color: '#52af77',
+    height: 8,
+  },
+  // thumb: {
+  //   height: 24,
+  //   width: 24,
+  //   backgroundColor: '#fff',
+  //   border: '2px solid currentColor',
+  //   marginTop: -8,
+  //   marginLeft: -12,
+  //   '&:focus,&:hover,&$active': {
+  //     boxShadow: 'inherit',
+  //   },
+  // },
+  active: {},
+  // valueLabel: {
+  //   left: 'calc(-50% + 4px)',
+  // },
+  track: {
+    height: 8,
+    borderRadius: 4,
+  },
+  rail: {
+    height: 8,
+    borderRadius: 4,
+  },
+})(MaterialSlider);
+
+const SliderWrapper = styled.div`
+  width: auto;
+`;
 
 class RangeSlider extends React.Component {
   constructor(props) {
@@ -14,7 +50,25 @@ class RangeSlider extends React.Component {
     this.state = { visible: null };
   }
 
-  render() {}
+  render() {
+    const valuetext = value => `${value}°C`;
+
+    return (
+      <SliderWrapper>
+        <PrettoSlider
+          ThumbComponent={CustomThumb}
+          defaultValue={30}
+          getAriaValueText={valuetext}
+          aria-labelledby="discrete-slider"
+          valueLabelDisplay="auto"
+          step={10}
+          marks
+          min={10}
+          max={110}
+        />
+      </SliderWrapper>
+    );
+  }
 }
 
 RangeSlider.defaultProps = {

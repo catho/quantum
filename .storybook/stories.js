@@ -27,6 +27,7 @@ export default [
   'Toggle',
   'Form',
   'Slider',
+  'RangeSlider',
   'TextArea',
 
   // Loaders
