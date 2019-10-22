@@ -4,10 +4,17 @@ const Tab = ({ children, title }) => title && children;
 
 Tab.propTypes = {
   title: PropTypes.string.isRequired,
+  badge: PropTypes.node,
+  icon: PropTypes.node,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+};
+
+Tab.defaultProps = {
+  badge: null,
+  icon: null,
 };
 
 Tab.displayName = 'Tab';

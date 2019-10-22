@@ -22,6 +22,7 @@ export default [
   'Skeleton',
   'ProgressBar',
   'CircularLoader',
+  'TabbedView',
   'Tooltip',
   'Modal',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);

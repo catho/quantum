@@ -3,6 +3,10 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import TabbedView from './TabbedView';
 import Tab from './Tab';
+import { Badge, Icon } from '..';
+
+const badge = <Badge number={4} />;
+const icon = <Icon name="star" />;
 
 describe('<TabbedView /> ', () => {
   describe('Snapshot', () => {
@@ -12,6 +16,35 @@ describe('<TabbedView /> ', () => {
           <TabbedView.Tab title="example">
             <p>Example text</p>
           </TabbedView.Tab>
+        </TabbedView>,
+      );
+
+      expect(toJson(component)).toMatchSnapshot();
+    });
+    it('should match snapshot with fluid option', () => {
+      const component = mount(
+        <TabbedView fluid>
+          <Tab title="Candidates">Candidates content</Tab>
+          <Tab title="Companies">Companies content</Tab>
+          <Tab title="Education">Education content</Tab>
+        </TabbedView>,
+      );
+
+      expect(toJson(component)).toMatchSnapshot();
+    });
+    it('should match snapshot with badges and icons', () => {
+      const component = mount(
+        <TabbedView>
+          <Tab title="With badge" badge={badge}>
+            With badge content
+          </Tab>
+          <Tab title="With icon" icon={icon}>
+            With icon content
+          </Tab>
+          <Tab title="With icon and badge" icon={icon} badge={badge}>
+            With icon and badge content
+          </Tab>
+          <Tab title="With only text">With only text content</Tab>
         </TabbedView>,
       );
 
