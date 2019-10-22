@@ -20,7 +20,6 @@ const Navbar = styled.nav.attrs({
   flex-shrink: 1;
   margin: 0 0 25px 0;
   padding: 0;
-  overflow-x: scroll;
   max-width: 100%;
   clear: left;
   float: left;
@@ -40,7 +39,7 @@ const Navbar = styled.nav.attrs({
 
     return css`
       background-color: ${background};
-      ${fluid ? 'width: 100%;' : null}
+      ${fluid ? 'width: 100%; overflow-x: scroll;' : null}
 
       ${mediumQuery`
         overflow-x: auto;

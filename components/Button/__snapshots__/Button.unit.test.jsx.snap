@@ -981,8 +981,8 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   type="button"
 >
   <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    aria-hidden={true}
+    className="material-icons MuiIcon-root c1 c2"
     size="medium"
     style={
       Object {
@@ -1370,8 +1370,8 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   type="button"
 >
   <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    aria-hidden={true}
+    className="material-icons MuiIcon-root c1 c2"
     size="medium"
     style={
       Object {
@@ -1759,8 +1759,8 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   type="button"
 >
   <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    aria-hidden={true}
+    className="material-icons MuiIcon-root c1 c2"
     size="medium"
     style={
       Object {
@@ -2148,8 +2148,8 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   type="button"
 >
   <span
-    aria-hidden="true"
-    className="material-icons MuiIcon-root-1 c1 c2"
+    aria-hidden={true}
+    className="material-icons MuiIcon-root c1 c2"
     size="medium"
     style={
       Object {

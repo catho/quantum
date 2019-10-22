@@ -15,7 +15,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
   flex-shrink: 1;
   margin: 0 0 25px 0;
   padding: 0;
-  overflow-x: scroll;
   max-width: 100%;
   clear: left;
   float: left;
@@ -726,7 +725,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;overflow-x:scroll;max-width:100%;clear:left;float:left;",
+              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;max-width:100%;clear:left;float:left;",
               [Function],
             ],
           },
@@ -1829,7 +1828,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   flex-shrink: 1;
   margin: 0 0 25px 0;
   padding: 0;
-  overflow-x: scroll;
   max-width: 100%;
   clear: left;
   float: left;
@@ -2577,7 +2575,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;overflow-x:scroll;max-width:100%;clear:left;float:left;",
+              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;max-width:100%;clear:left;float:left;",
               [Function],
             ],
           },
@@ -4548,30 +4546,27 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <WithStyles(Icon)
+                      <WithStyles(ForwardRef(Icon))
                         style={
                           Object {
                             "color": "",
                           }
                         }
                       >
-                        <Icon
+                        <ForwardRef(Icon)
                           classes={
                             Object {
-                              "colorAction": "MuiIcon-colorAction-4",
-                              "colorDisabled": "MuiIcon-colorDisabled-6",
-                              "colorError": "MuiIcon-colorError-5",
-                              "colorPrimary": "MuiIcon-colorPrimary-2",
-                              "colorSecondary": "MuiIcon-colorSecondary-3",
-                              "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                              "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                              "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                              "root": "MuiIcon-root-1",
+                              "colorAction": "MuiIcon-colorAction",
+                              "colorDisabled": "MuiIcon-colorDisabled",
+                              "colorError": "MuiIcon-colorError",
+                              "colorPrimary": "MuiIcon-colorPrimary",
+                              "colorSecondary": "MuiIcon-colorSecondary",
+                              "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                              "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                              "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                              "root": "MuiIcon-root",
                             }
                           }
-                          color="inherit"
-                          component="span"
-                          fontSize="default"
                           style={
                             Object {
                               "color": "",
@@ -4579,8 +4574,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           }
                         >
                           <span
-                            aria-hidden="true"
-                            className="material-icons MuiIcon-root-1"
+                            aria-hidden={true}
+                            className="material-icons MuiIcon-root"
                             style={
                               Object {
                                 "color": "",
@@ -4589,8 +4584,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           >
                             star
                           </span>
-                        </Icon>
-                      </WithStyles(Icon)>
+                        </ForwardRef(Icon)>
+                      </WithStyles(ForwardRef(Icon))>
                     </Icon>
                   </div>
                 </StyledComponent>
@@ -5332,30 +5327,27 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <WithStyles(Icon)
+                      <WithStyles(ForwardRef(Icon))
                         style={
                           Object {
                             "color": "",
                           }
                         }
                       >
-                        <Icon
+                        <ForwardRef(Icon)
                           classes={
                             Object {
-                              "colorAction": "MuiIcon-colorAction-4",
-                              "colorDisabled": "MuiIcon-colorDisabled-6",
-                              "colorError": "MuiIcon-colorError-5",
-                              "colorPrimary": "MuiIcon-colorPrimary-2",
-                              "colorSecondary": "MuiIcon-colorSecondary-3",
-                              "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                              "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                              "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                              "root": "MuiIcon-root-1",
+                              "colorAction": "MuiIcon-colorAction",
+                              "colorDisabled": "MuiIcon-colorDisabled",
+                              "colorError": "MuiIcon-colorError",
+                              "colorPrimary": "MuiIcon-colorPrimary",
+                              "colorSecondary": "MuiIcon-colorSecondary",
+                              "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                              "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                              "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                              "root": "MuiIcon-root",
                             }
                           }
-                          color="inherit"
-                          component="span"
-                          fontSize="default"
                           style={
                             Object {
                               "color": "",
@@ -5363,8 +5355,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           }
                         >
                           <span
-                            aria-hidden="true"
-                            className="material-icons MuiIcon-root-1"
+                            aria-hidden={true}
+                            className="material-icons MuiIcon-root"
                             style={
                               Object {
                                 "color": "",
@@ -5373,8 +5365,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           >
                             star
                           </span>
-                        </Icon>
-                      </WithStyles(Icon)>
+                        </ForwardRef(Icon)>
+                      </WithStyles(ForwardRef(Icon))>
                     </Icon>
                   </div>
                 </StyledComponent>
@@ -6439,12 +6431,12 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
   flex-shrink: 1;
   margin: 0 0 25px 0;
   padding: 0;
-  overflow-x: scroll;
   max-width: 100%;
   clear: left;
   float: left;
   background-color: transparent;
   width: 100%;
+  overflow-x: scroll;
 }
 
 .c1 {
@@ -7155,7 +7147,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;overflow-x:scroll;max-width:100%;clear:left;float:left;",
+              "display:flex;flex-grow:1;flex-shrink:1;margin:0 0 25px 0;padding:0;max-width:100%;clear:left;float:left;",
               [Function],
             ],
           },

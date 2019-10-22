@@ -190,8 +190,8 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c7 c8"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c7 c8"
         size="medium"
         style={
           Object {
@@ -614,8 +614,8 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
     onClose={[Function]}
   >
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3 "
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c3 "
       style={
         Object {
           "color": "",
@@ -635,8 +635,8 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c8 c9"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c8 c9"
         size="medium"
         style={
           Object {
@@ -1069,8 +1069,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c7 c8"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c7 c8"
         size="medium"
         style={
           Object {
@@ -1520,8 +1520,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c7 c8"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c7 c8"
         size="medium"
         style={
           Object {
@@ -1988,8 +1988,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c7 c8"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c7 c8"
         size="medium"
         style={
           Object {
@@ -2473,8 +2473,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c7 c8"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c7 c8"
         size="medium"
         style={
           Object {
@@ -2975,8 +2975,8 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c7 c8"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c7 c8"
         size="medium"
         style={
           Object {

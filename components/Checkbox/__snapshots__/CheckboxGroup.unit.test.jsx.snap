@@ -25,8 +25,8 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           value=\\"\\"
         />
         <span
-          aria-hidden=\\"true\\"
-          className=\\"material-icons MuiIcon-root-1 Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+          aria-hidden={true}
+          className=\\"material-icons MuiIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
           style={
             Object {
               \\"color\\": \\"\\",
@@ -61,8 +61,8 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           value=\\"\\"
         />
         <span
-          aria-hidden=\\"true\\"
-          className=\\"material-icons MuiIcon-root-1 Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+          aria-hidden={true}
+          className=\\"material-icons MuiIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
           style={
             Object {
               \\"color\\": \\"\\",
@@ -97,8 +97,8 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           value=\\"\\"
         />
         <span
-          aria-hidden=\\"true\\"
-          className=\\"material-icons MuiIcon-root-1 Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+          aria-hidden={true}
+          className=\\"material-icons MuiIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
           style={
             Object {
               \\"color\\": \\"\\",
@@ -512,8 +512,8 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -547,8 +547,8 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -582,8 +582,8 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -721,8 +721,8 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -756,8 +756,8 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -791,8 +791,8 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1168,8 +1168,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4 c5"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c4 c5"
         size="medium"
         style={
           Object {
@@ -1430,8 +1430,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       type="button"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4 c5"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c4 c5"
         size="medium"
         style={
           Object {
@@ -2057,8 +2057,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
       />
       Foo
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c5 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c5 "
         style={
           Object {
             "color": "",
@@ -2120,8 +2120,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
       />
       Baz
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c5 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c5 "
         style={
           Object {
             "color": "",
@@ -2333,8 +2333,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -2368,8 +2368,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -2403,8 +2403,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -2617,8 +2617,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -2652,8 +2652,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -2687,8 +2687,8 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
