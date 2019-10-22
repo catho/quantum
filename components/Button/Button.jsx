@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { shadow, hexToRgba, theme as defaultTheme } from '../shared';
-import { query } from '../Grid/sub-components/shared';
 
 import {
   components,
@@ -13,40 +12,30 @@ import {
 
 import Icon from '../Icon/Icon';
 
-const buttonIconBreakpoints = (props, breakpoint) => {
-  const q = query(props.theme.breakpoints)[breakpoint];
-
-  return q`
-    margin-right: ${props.theme.spacing[breakpoint] / 2}px;
-  `;
-};
-
 const ButtonIcon = styled(Icon)`
   pointer-events: none;
-
-  ${props =>
-    Object.keys(props.theme.breakpoints).map(breakpoint =>
-      buttonIconBreakpoints(props, breakpoint),
-    )}
+  margin-right: 8px;
 `;
 
 const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
-  const sizes = {
+  const fontSizes = {
     xsmall: `${baseFontSize * 0.75}px`,
     small: `${baseFontSize * 0.75}px`,
     medium: `${baseFontSize}px`,
     large: `${baseFontSize * 1.25}px`,
     xlarge: `${baseFontSize * 1.5}px`,
   };
+
   const lineHeights = {
-    xsmall: `${baseFontSize * 0.75 * 1.5}px`,
+    xsmall: `${baseFontSize}px`,
     small: `${baseFontSize * 0.75 * 1.5}px`,
     medium: `${baseFontSize * 1.5}px`,
-    large: `${baseFontSize * 1.25 * 1.5}px`,
-    xlarge: `${baseFontSize * 1.5 * 1.5}px`,
+    large: `${baseFontSize * 1.75}px`,
+    xlarge: `${baseFontSize * 2}px`,
   };
+
   return `
-    font-size: ${sizes[size]};
+    font-size: ${fontSizes[size]};
     line-height: ${lineHeights[size]};
   `;
 };
@@ -56,7 +45,6 @@ const StyledButton = styled.button`
   display: flex;
   font-weight: bold;
   justify-content: center;
-  letter-spacing: 0.2px;
   border-radius: 4px;
 
   ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
@@ -66,7 +54,7 @@ const StyledButton = styled.button`
   ${({
     size,
     theme: {
-      spacing: { large, xlarge, xxlarge, xxxlarge },
+      spacing: { xsmall, large, xlarge, xxlarge, xxxlarge },
     },
   }) => {
     const heights = {
@@ -74,6 +62,7 @@ const StyledButton = styled.button`
       small: `${xlarge}px`,
       medium: `${xxlarge}px`,
       large: `${xxxlarge}px`,
+      xlarge: `${xxxlarge + xsmall}px`,
     };
 
     return `min-height: ${heights[size]};`;
@@ -82,15 +71,17 @@ const StyledButton = styled.button`
   ${({
     size,
     theme: {
-      spacing: { small, medium, xsmall, xxsmall, large },
+      spacing: { xsmall, xxsmall, medium },
     },
   }) => {
+    const borderWidth = 2;
+    const borderSize = borderWidth * 2;
     const paddings = {
-      xsmall: `${xxsmall}px ${small}px`,
-      small: `${small / 2}px ${small}px`,
-      medium: `${xsmall}px ${medium}px`,
-      large: `${xsmall * 1.25}px ${medium}px`,
-      xlarge: `${large / 2}px ${medium}px`,
+      xsmall: `${xxsmall - borderSize}px ${xsmall}px`,
+      small: `${xsmall - borderSize}px ${medium}px`,
+      medium: `${xsmall - borderSize}px ${medium}px`,
+      large: `${xsmall - borderSize}px ${medium}px`,
+      xlarge: `${xsmall - borderSize}px ${medium}px`,
     };
 
     return `padding: ${paddings[size]};`;
@@ -124,32 +115,41 @@ const StyledButton = styled.button`
         },
       },
       colors: {
-        neutral: { 0: neutral0, 500: neutral500 },
+        neutral: {
+          0: neutral0,
+          300: neutral300,
+          500: neutral500,
+          700: neutral700,
+        },
       },
     } = theme;
 
     let bgColor;
     let textColor;
+    let borderColor;
 
     if (disabled && stroked) {
-      bgColor = neutral0;
-      textColor = neutral500;
+      bgColor = neutral300;
+      borderColor = neutral500;
+      textColor = neutral700;
     } else if (stroked) {
       bgColor = neutral0;
+      borderColor = mainColor700;
       textColor = mainColor700;
     } else if (disabled) {
-      bgColor = neutral500;
-      textColor = neutral0;
+      bgColor = neutral300;
+      borderColor = bgColor;
+      textColor = neutral700;
     } else {
       bgColor = mainColor700;
+      borderColor = bgColor;
       textColor = text0;
     }
 
     return `
       background-color: ${bgColor};
       color: ${textColor};
-
-      border: 2px solid ${disabled ? neutral500 : mainColor700};
+      border: 2px solid ${borderColor};
 
       ${shadow(2, neutral500)({ theme })}
 
@@ -188,7 +188,7 @@ const StyledButton = styled.button`
           spacing: { xxsmall, medium, large },
         },
       }) => {
-        const sizes = {
+        const fontSizes = {
           xsmall: `${medium}px`,
           small: `${medium}px`,
           medium: `${large}px`,
@@ -197,7 +197,7 @@ const StyledButton = styled.button`
         };
 
         return `
-          font-size: ${sizes[size]};
+          font-size: ${fontSizes[size]};
           margin-right: ${xxsmall}px;
         `;
       }}

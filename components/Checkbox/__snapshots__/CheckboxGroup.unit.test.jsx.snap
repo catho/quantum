@@ -132,7 +132,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 gsGCuq\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 eEwHTW\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-12\\"
 +       htmlFor=\\"checkbox-button-15\\"
@@ -161,7 +161,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 gsGCuq\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 eEwHTW\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-13\\"
 +       htmlFor=\\"checkbox-button-16\\"
@@ -190,7 +190,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 gsGCuq\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 eEwHTW\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-14\\"
 +       htmlFor=\\"checkbox-button-17\\"
@@ -232,16 +232,12 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
@@ -271,10 +267,10 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c5 function (_ref5) var sizes = {
+.c3 .c5 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -827,16 +823,12 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
@@ -866,10 +858,10 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c5 function (_ref5) var sizes = {
+.c3 .c5 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -992,6 +984,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] = `
 .c5 {
   pointer-events: none;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -1008,16 +1001,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
@@ -1047,10 +1036,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var sizes = {
+.c3 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1059,10 +1048,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var sizes = {
+.c7 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1071,10 +1060,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .c4 function (_ref5) var sizes = {
+.c8 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1083,10 +1072,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c4 function (_ref5) var sizes = {
+.c9 .c4 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1120,36 +1109,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-@media (min-width:0px) {
-  .c5 {
-    margin-right: 4px;
-  }
-}
-
-@media (min-width:600px) {
-  .c5 {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-right: 8px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c5 {
-    margin-right: 12px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c5 {
-    margin-right: 16px;
-  }
 }
 
 <div
@@ -1671,16 +1630,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
@@ -1710,10 +1665,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c6 function (_ref5) var sizes = {
+.c3 .c6 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1863,16 +1818,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
@@ -1902,10 +1853,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c8 function (_ref5) var sizes = {
+.c6 .c8 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1923,20 +1874,16 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
-  color: #999999;
+  background-color: #e0e0e0;
+  color: #424242;
   border: 2px solid #999999;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
@@ -1946,10 +1893,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c8 function (_ref5) var sizes = {
+.c3 .c8 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1967,21 +1914,17 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: not-allowed;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #999999;
-  color: #ffffff;
-  border: 2px solid #999999;
+  background-color: #e0e0e0;
+  color: #424242;
+  border: 2px solid #e0e0e0;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
@@ -1990,10 +1933,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c8 function (_ref5) var sizes = {
+.c7 .c8 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2723,16 +2666,12 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #ffffff;
@@ -2762,10 +2701,10 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
   var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(sizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c5 function (_ref5) var sizes = {
+.c3 .c5 function (_ref5) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
