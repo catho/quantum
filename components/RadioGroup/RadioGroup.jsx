@@ -13,16 +13,6 @@ const Group = styled(FieldGroup).attrs({
   position: relative;
 `;
 
-const ErrorLabel = styled(ErrorMessage)`
-  margin-left: ${({
-    theme: {
-      spacing: { xxsmall },
-    },
-  }) => -xxsmall}px;
-`;
-
-ErrorLabel.displayName = 'ErrorLabel';
-
 const RadioGroup = ({
   type,
   children,
@@ -63,7 +53,7 @@ const RadioGroup = ({
   return (
     <Group {...rest}>
       {items}
-      {error && <ErrorLabel theme={theme}>{error}</ErrorLabel>}
+      {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
     </Group>
   );
 };

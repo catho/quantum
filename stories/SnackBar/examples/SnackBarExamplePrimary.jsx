@@ -20,11 +20,6 @@ class SnackBarExamplePrimary extends React.Component {
   render() {
     const { showSnackBar } = this.state;
 
-    const actions = {
-      title: 'HIDE',
-      callbackFn: this.actionCallback,
-    };
-
     return (
       <>
         <Button onClick={this.openSnackBar}>Open SnackBar Primary</Button>
@@ -32,7 +27,6 @@ class SnackBarExamplePrimary extends React.Component {
           <SnackBar
             text="SnackBar primary text content"
             onClose={this.closeSnackBar}
-            actionTrigger={actions}
             skin="primary"
           />
         )}
@@ -64,11 +58,6 @@ class SnackBarExamplePrimary extends React.Component {
   render() {
     const { showSnackBar } = this.state;
 
-    const actions = {
-      title: 'HIDE',
-      callbackFn: this.actionCallback,
-    };
-
     return (
       <>
         <Button onClick={this.openSnackBar}>Open SnackBar Primary</Button>
@@ -76,7 +65,6 @@ class SnackBarExamplePrimary extends React.Component {
           <SnackBar
             text="SnackBar primary text content"
             onClose={this.closeSnackBar}
-            actionTrigger={actions}
             skin="primary"
           />
         )}
