@@ -484,6 +484,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "background": "#1250C4",
                 "text": "#f2f2f2",
               },
+              "secondary": Object {
+                "background": "#E91E63",
+                "text": "#ffffff",
+              },
               "success": Object {
                 "background": "#dcedc8",
                 "text": "#004D40",
@@ -832,6 +836,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 "primary": Object {
                   "background": "#1250C4",
                   "text": "#f2f2f2",
+                },
+                "secondary": Object {
+                  "background": "#E91E63",
+                  "text": "#ffffff",
                 },
                 "success": Object {
                   "background": "#dcedc8",
@@ -1980,13 +1988,23 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
 
 .c5 {
   border-radius: 8px;
-  display: inline-block;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px;
-  min-width: 20px;
-  text-align: center;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+  min-width: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 12px;
   padding-left: 2px;
   padding-right: 2px;
@@ -2070,6 +2088,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             "primary": Object {
               "background": "#1250C4",
               "text": "#f2f2f2",
+            },
+            "secondary": Object {
+              "background": "#E91E63",
+              "text": "#ffffff",
             },
             "success": Object {
               "background": "#dcedc8",
@@ -2391,6 +2413,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
               "primary": Object {
                 "background": "#1250C4",
                 "text": "#f2f2f2",
+              },
+              "secondary": Object {
+                "background": "#E91E63",
+                "text": "#ffffff",
               },
               "success": Object {
                 "background": "#dcedc8",
@@ -2741,6 +2767,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "background": "#1250C4",
                   "text": "#f2f2f2",
                 },
+                "secondary": Object {
+                  "background": "#E91E63",
+                  "text": "#ffffff",
+                },
                 "success": Object {
                   "background": "#dcedc8",
                   "text": "#004D40",
@@ -3070,6 +3100,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     "primary": Object {
                       "background": "#1250C4",
                       "text": "#f2f2f2",
+                    },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
                     },
                     "success": Object {
                       "background": "#dcedc8",
@@ -3424,6 +3458,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                         "background": "#1250C4",
                         "text": "#f2f2f2",
                       },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
+                      },
                       "success": Object {
                         "background": "#dcedc8",
                         "text": "#004D40",
@@ -3766,6 +3804,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                   "background": "#1250C4",
                                   "text": "#f2f2f2",
                                 },
+                                "secondary": Object {
+                                  "background": "#E91E63",
+                                  "text": "#ffffff",
+                                },
                                 "success": Object {
                                   "background": "#dcedc8",
                                   "text": "#004D40",
@@ -3845,6 +3887,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                           "background": "#1250C4",
                                           "text": "#f2f2f2",
                                         },
+                                        "secondary": Object {
+                                          "background": "#E91E63",
+                                          "text": "#ffffff",
+                                        },
                                         "success": Object {
                                           "background": "#dcedc8",
                                           "text": "#004D40",
@@ -3877,7 +3923,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                       "isStatic": false,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "border-radius:8px;display:inline-block;font-weight:bold;height:20px;line-height:20px;min-width:20px;text-align:center;box-sizing:border-box;",
+                                        "border-radius:8px;box-sizing:border-box;display:flex;font-weight:bold;height:24px;line-height:24px;min-width:32px;align-items:center;justify-content:center;",
                                         [Function],
                                         " ",
                                         [Function],
@@ -3916,6 +3962,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                           "primary": Object {
                                             "background": "#1250C4",
                                             "text": "#f2f2f2",
+                                          },
+                                          "secondary": Object {
+                                            "background": "#E91E63",
+                                            "text": "#ffffff",
                                           },
                                           "success": Object {
                                             "background": "#dcedc8",
@@ -4032,6 +4082,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     "primary": Object {
                       "background": "#1250C4",
                       "text": "#f2f2f2",
+                    },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
                     },
                     "success": Object {
                       "background": "#dcedc8",
@@ -4385,6 +4439,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
+                      },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#dcedc8",
@@ -4837,6 +4895,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       "background": "#1250C4",
                       "text": "#f2f2f2",
                     },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
+                    },
                     "success": Object {
                       "background": "#dcedc8",
                       "text": "#004D40",
@@ -5189,6 +5251,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
+                      },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#dcedc8",
@@ -5613,6 +5679,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                   "background": "#1250C4",
                                   "text": "#f2f2f2",
                                 },
+                                "secondary": Object {
+                                  "background": "#E91E63",
+                                  "text": "#ffffff",
+                                },
                                 "success": Object {
                                   "background": "#dcedc8",
                                   "text": "#004D40",
@@ -5692,6 +5762,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                           "background": "#1250C4",
                                           "text": "#f2f2f2",
                                         },
+                                        "secondary": Object {
+                                          "background": "#E91E63",
+                                          "text": "#ffffff",
+                                        },
                                         "success": Object {
                                           "background": "#dcedc8",
                                           "text": "#004D40",
@@ -5724,7 +5798,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                       "isStatic": false,
                                       "lastClassName": "c5",
                                       "rules": Array [
-                                        "border-radius:8px;display:inline-block;font-weight:bold;height:20px;line-height:20px;min-width:20px;text-align:center;box-sizing:border-box;",
+                                        "border-radius:8px;box-sizing:border-box;display:flex;font-weight:bold;height:24px;line-height:24px;min-width:32px;align-items:center;justify-content:center;",
                                         [Function],
                                         " ",
                                         [Function],
@@ -5763,6 +5837,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                           "primary": Object {
                                             "background": "#1250C4",
                                             "text": "#f2f2f2",
+                                          },
+                                          "secondary": Object {
+                                            "background": "#E91E63",
+                                            "text": "#ffffff",
                                           },
                                           "success": Object {
                                             "background": "#dcedc8",
@@ -5879,6 +5957,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     "primary": Object {
                       "background": "#1250C4",
                       "text": "#f2f2f2",
+                    },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
                     },
                     "success": Object {
                       "background": "#dcedc8",
@@ -6232,6 +6314,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
+                      },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#dcedc8",
@@ -6759,6 +6845,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
               "background": "#1250C4",
               "text": "#f2f2f2",
             },
+            "secondary": Object {
+              "background": "#E91E63",
+              "text": "#ffffff",
+            },
             "success": Object {
               "background": "#dcedc8",
               "text": "#004D40",
@@ -7079,6 +7169,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
               "primary": Object {
                 "background": "#1250C4",
                 "text": "#f2f2f2",
+              },
+              "secondary": Object {
+                "background": "#E91E63",
+                "text": "#ffffff",
               },
               "success": Object {
                 "background": "#dcedc8",
@@ -7429,6 +7523,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   "background": "#1250C4",
                   "text": "#f2f2f2",
                 },
+                "secondary": Object {
+                  "background": "#E91E63",
+                  "text": "#ffffff",
+                },
                 "success": Object {
                   "background": "#dcedc8",
                   "text": "#004D40",
@@ -7758,6 +7856,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                     "primary": Object {
                       "background": "#1250C4",
                       "text": "#f2f2f2",
+                    },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
                     },
                     "success": Object {
                       "background": "#dcedc8",
@@ -8111,6 +8213,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
+                      },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#dcedc8",
@@ -8482,6 +8588,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                       "background": "#1250C4",
                       "text": "#f2f2f2",
                     },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
+                    },
                     "success": Object {
                       "background": "#dcedc8",
                       "text": "#004D40",
@@ -8834,6 +8944,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
+                      },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#dcedc8",
@@ -9205,6 +9319,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                       "background": "#1250C4",
                       "text": "#f2f2f2",
                     },
+                    "secondary": Object {
+                      "background": "#E91E63",
+                      "text": "#ffffff",
+                    },
                     "success": Object {
                       "background": "#dcedc8",
                       "text": "#004D40",
@@ -9557,6 +9675,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                       "primary": Object {
                         "background": "#1250C4",
                         "text": "#f2f2f2",
+                      },
+                      "secondary": Object {
+                        "background": "#E91E63",
+                        "text": "#ffffff",
                       },
                       "success": Object {
                         "background": "#dcedc8",
