@@ -1,19 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Tooltip from '../Tooltip';
+import { Tip, TipText } from '../Tooltip/styles';
+import {
+  colors,
+  spacing,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 
 const CustomThumb = props => {
   console.log(props);
+  const { children, value, theme } = props;
   return (
-    <div>
-      <Tooltip text={props['aria-valuenow']}>{props.children}</Tooltip>
-    </div>
+    <Tip theme={theme}>
+      <TipText>{value}</TipText>
+      {children}
+    </Tip>
   );
 };
 
 CustomThumb.propTypes = {
-  ['aria-valuenow']: PropTypes.number.isRequired,
-  children: PropTypes.node.isRequired,
+  value: PropTypes.number.isRequired,
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    colors: PropTypes.object,
+    baseFontSize: PropTypes.number,
+  }),
+};
+
+CustomThumb.defaultProps = {
+  theme: {
+    spacing,
+    colors,
+    baseFontSize: defaultBaseFontSize,
+  },
 };
 
 export default CustomThumb;
