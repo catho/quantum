@@ -9,7 +9,7 @@ exports[`<Tag /> Inverted prop error 1`] = `
   padding: 4px 12px;
   background-color: #ac001a;
   border: none;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 <div
@@ -203,7 +203,7 @@ exports[`<Tag /> Skins error 1`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  background-color: #ffe5e9;
+  background-color: #fff5f5;
   border: none;
   color: #ac001a;
 }
@@ -717,7 +717,7 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
   display: inline-block;
   margin-right: 8px;
   padding: 4px 12px;
-  background-color: #ffe5e9;
+  background-color: #fff5f5;
   border: none;
   color: #ac001a;
 }
@@ -1204,7 +1204,7 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
   padding: 4px 12px;
   background-color: #ac001a;
   border: none;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 .c1 {
@@ -1274,7 +1274,7 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
 
 .c2 .c3 {
   font-size: 18px;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 <div
@@ -1386,7 +1386,7 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
 
 .c12 .c3 {
   font-size: 18px;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 <div
@@ -1498,7 +1498,7 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
 
 .c12 .c3 {
   font-size: 18px;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 <div
@@ -1610,7 +1610,7 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
 
 .c12 .c3 {
   font-size: 18px;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 <div
@@ -1722,7 +1722,7 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
 
 .c12 .c3 {
   font-size: 18px;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 <div
@@ -1834,7 +1834,7 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
 
 .c12 .c3 {
   font-size: 18px;
-  color: #ffe5e9;
+  color: #fff5f5;
 }
 
 <div
