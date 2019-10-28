@@ -154,6 +154,18 @@ const DropContainer = styled.div`
   position: relative;
 `;
 
+const SelectedItemLabel = styled.span`
+  ${({
+    theme: {
+      colors: {
+        primary: { 700: primary700 },
+      },
+    },
+  }) => `
+    color: ${primary700}
+  `}
+`;
+
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
@@ -177,8 +189,16 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
           key: _getValue(item),
         })}
       >
-        {_getLabel(item)}
-        {_isEqual(selectedItem, item) && <CheckIcon theme={theme} />}
+        {_isEqual(selectedItem, item) ? (
+          <>
+            <SelectedItemLabel theme={theme}>
+              {_getLabel(item)}
+            </SelectedItemLabel>
+            <CheckIcon theme={theme} />
+          </>
+        ) : (
+          _getLabel(item)
+        )}
       </DropItem>
     ))}
   </DropList>
