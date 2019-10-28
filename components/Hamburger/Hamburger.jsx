@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Hamburger from '@material-ui/icons/Menu';
+import HamburgerIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+
 import styled, { css } from 'styled-components';
 import {
   components,
@@ -35,6 +37,9 @@ const getColors = ({
 const HamburgerWrapper = styled.div`
   display: inline-block;
   position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: black;
 
   ${props =>
     props.originalChildren
@@ -53,8 +58,12 @@ const NotificationIcon = styled.span`
   border-radius: 7px;
 `;
 
-const HamburgerIcon = styled(Hamburger)`
-  color: red;
+const HamburgerIconWrapper = styled(HamburgerIcon)`
+  color: #fff;
+`;
+
+const CloseIconWrapper = styled(CloseIcon)`
+  color: #fff;
 `;
 
 const StyledBadge = styled.span`
@@ -98,34 +107,28 @@ const StyledBadge = styled.span`
 `;
 
 /** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
-const Badge = ({ children, number, skin, inverted, theme }) => {
-  const value = number > 99 ? '99+' : number;
+const Hamburger = ({ showNotification, isOpened }) => {
+  const HamburgerBlock = (
+    <>
+      {showNotification && <NotificationIcon />}
+      <HamburgerIconWrapper />
+    </>
+  );
+
+  // const HamburgerTogheter
 
   return (
-    // <BadgeWrapper value={value} originalChildren={children}>
-    //   <StyledBadge
-    //     skin={skin}
-    //     inverted={inverted}
-    //     theme={theme}
-    //     value={value}
-    //     originalChildren={children}
-    //   >
-    //     {value}
-    //   </StyledBadge>
-    //   {children}
-    // </BadgeWrapper>
     <HamburgerWrapper>
-      <NotificationIcon />
-      <HamburgerIcon />
+      {!isOpened ? HamburgerBlock : <CloseIconWrapper />}
     </HamburgerWrapper>
   );
 };
 
 HamburgerWrapper.displayName = 'HamburgerWrapper';
 StyledBadge.displayName = 'StyledBadge';
-Badge.displayName = 'Badge';
+Hamburger.displayName = 'Badge';
 
-Badge.propTypes = {
+Hamburger.propTypes = {
   /** Define background and text color */
   skin: PropTypes.oneOf([
     'primary',
@@ -134,13 +137,8 @@ Badge.propTypes = {
     'error',
     'neutral',
   ]),
-  /** When passed a children to <Badge />, the badge will be displayed at top-right corner of the children. */
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
-  /** Number to be displayed inside badge. When number is higher than 99 will be displayed "99+" instead of number value */
-  number: PropTypes.number,
+  showNotification: PropTypes.bool,
+  isOpened: PropTypes.bool,
   /** Swap background and text color */
   inverted: PropTypes.bool,
   theme: PropTypes.shape({
@@ -152,11 +150,11 @@ Badge.propTypes = {
   }),
 };
 
-Badge.defaultProps = {
+Hamburger.defaultProps = {
   skin: 'neutral',
   inverted: false,
-  children: '',
-  number: 0,
+  showNotification: false,
+  isOpened: false,
   theme: {
     baseFontSize: defaultBaseFontSize,
     spacing,
@@ -166,4 +164,4 @@ Badge.defaultProps = {
   },
 };
 
-export default Badge;
+export default Hamburger;
