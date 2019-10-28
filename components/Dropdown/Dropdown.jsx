@@ -25,7 +25,6 @@ const DropInput = styled(TextInput)`
   justify-content: space-between;
 
   ${({
-    selectedItem,
     text,
     theme,
     theme: {
@@ -308,7 +307,6 @@ const Dropdown = ({
                     disabled={disabled}
                     error={error}
                     text={_buttonLabel}
-                    selectedItem={selectedItem}
                     theme={theme}
                     id={_id}
                   >
