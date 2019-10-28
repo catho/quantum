@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import { FieldGroup, shadow, uniqId } from '../shared';
-import { colors, spacing } from '../shared/theme';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 
 import {
   InputLabel,
@@ -16,6 +16,7 @@ import {
 const ID_GENERATOR = uniqId('dropdown-');
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
+const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
 
 const DropInput = styled(TextInput)`
   align-items: center;
@@ -26,14 +27,16 @@ const DropInput = styled(TextInput)`
   ${({
     selectedItem,
     text,
+    theme,
     theme: {
       colors: {
-        neutral: { 500: neutral500 },
+        neutral: { 900: neutral900, 500: neutral500 },
       },
     },
   }) => `
     ${!text ? 'flex-direction: row-reverse;' : ''}
-    ${!selectedItem ? `color: ${neutral500};` : ''}
+    color: ${neutral900};
+    ${shadow(5, neutral500)({ theme })};
   `};
 `;
 
@@ -90,7 +93,6 @@ const DropList = styled.ul`
 
     return `
       background-color: ${neutral0};
-      border: solid 1.5px ${neutral0};
       margin-top: ${xxsmall}px;
       ${shadow(5, neutral300)({ theme })};
     `;
@@ -104,46 +106,40 @@ const CheckIcon = styled(Icon).attrs({
     selectedItem,
     theme: {
       colors: {
-        primary: { 500: primary },
+        primary: { 700: primary700 },
       },
     },
   }) =>
     !selectedItem &&
     `
-    color: ${primary};
+    color: ${primary700};
   `}
 `;
 
 const DropItem = styled.li`
   box-sizing: border-box;
   cursor: pointer;
-
   ${({
     theme: {
-      spacing: { xsmall, small },
+      spacing: { xsmall, medium },
       colors: {
-        neutral: { 0: neutral0, 300: neutral300 },
+        neutral: { 0: neutral0 },
       },
     },
   }) => `
+    font-size: ${DROPITEM_FONT_SIZE}px;
     background-color: ${neutral0};
-    border-bottom: solid 1.5px ${neutral300};
-    padding: ${xsmall * 1.125}px ${small}px;
+    padding: ${xsmall}px ${medium}px;
   `}
-
-  :last-child {
-    border-bottom-width: 0;
-  }
-
-  &[aria-selected='true'] {
+  &[aria-selected= 'true' ] {
     ${({
       theme: {
         colors: {
-          primary: { 100: primary },
+          neutral: { 100: neutral100 },
         },
       },
     }) => `
-      background-color: ${primary};
+      background-color: ${neutral100};
     `}
   }
 
@@ -262,7 +258,7 @@ const Dropdown = ({
           const filteredInput = isOpen ? inputFilter(inputValue) : [];
 
           return (
-            <DropContainer {...getRootProps()}>
+            <DropContainer theme={theme} {...getRootProps()}>
               {label && (
                 <InputLabel
                   {...getLabelProps()}
@@ -277,7 +273,7 @@ const Dropdown = ({
               <input type="hidden" {...getInputProps()} />
               {autocomplete ? (
                 <>
-                  <DropContainer>
+                  <DropContainer theme={theme}>
                     <DropInput
                       {...getInputProps({
                         isOpen,
@@ -351,7 +347,7 @@ Dropdown.defaultProps = {
   selectedItem: '',
   items: [],
   onChange: () => {},
-  theme: { colors, spacing },
+  theme: { colors, spacing, baseFontSize },
 };
 
 Dropdown.propTypes = {
@@ -369,6 +365,7 @@ Dropdown.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
 };
 

@@ -40,7 +40,8 @@ exports[`Input component  should match the snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -135,6 +136,7 @@ exports[`Input component  should match the snapshot 1`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -243,7 +245,8 @@ exports[`Input component  should match the snapshot 2`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -338,6 +341,7 @@ exports[`Input component  should match the snapshot 2`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -449,7 +453,8 @@ exports[`Input component  should match the snapshot 3`] = `
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -544,6 +549,7 @@ exports[`Input component  should match the snapshot 3`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -664,7 +670,8 @@ exports[`Input component  should match the snapshot 4`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -759,6 +766,7 @@ exports[`Input component  should match the snapshot 4`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -871,7 +879,8 @@ exports[`Input component  should match the snapshot 5`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -966,6 +975,7 @@ exports[`Input component  should match the snapshot 5`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -1080,7 +1090,8 @@ exports[`Input component  should match the snapshot 6`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c3::-webkit-inner-spin-button,
@@ -1182,6 +1193,7 @@ exports[`Input component  should match the snapshot 6`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -1300,7 +1312,8 @@ exports[`Input component  should match the snapshot 7`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c4::-webkit-inner-spin-button,
@@ -1407,6 +1420,7 @@ exports[`Input component  should match the snapshot 7`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -1516,7 +1530,8 @@ exports[`Input component  should match the snapshot 8`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1623,6 +1638,7 @@ exports[`Input component  should match the snapshot 8`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -1731,7 +1747,8 @@ exports[`Input component  should match the snapshot 9`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1826,6 +1843,7 @@ exports[`Input component  should match the snapshot 9`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
@@ -1934,6 +1952,8 @@ exports[`Input component  should match the snapshot 10`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -2028,6 +2048,7 @@ exports[`Input component  should match the snapshot 10`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#ffe5e9",
