@@ -20,7 +20,7 @@ const valueValidator = (props, propName, componentName) => {
     return null;
   }
 
-  if (!isNumber(value)) {
+  if (!isNumber(value) && value !== undefined) {
     return new Error(`${propName} prop must be a Number.`);
   }
 

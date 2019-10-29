@@ -25,18 +25,20 @@ const SliderWrapper = styled.div`
 
 const RangeSlider = props => {
   const {
-    step,
-    min,
-    max,
-    marks,
-    onChange,
-    value,
+    'aria-labelledby': ariaLabelledby,
     defaultValue,
     disabled,
-    tipFormatter,
+    marks,
+    max,
+    min,
+    onChange,
+    onChangeCommitted,
+    step,
     theme,
+    tipFormatter,
     track,
-    'aria-labelledby': ariaLabelledby,
+    value,
+    valueLabelDisplay,
   } = props;
 
   const {
@@ -47,7 +49,7 @@ const RangeSlider = props => {
 
   const arrowSize = xsmall - 1;
 
-  const PrettoSlider = withStyles({
+  const StyledSlider = withStyles({
     root: {
       color: primary[600],
       height: 8,
@@ -59,17 +61,17 @@ const RangeSlider = props => {
       width: `${large}px !important`,
       marginTop: `-${xsmall}px !important`,
       marginLeft: `-${large / 2}px !important`,
-      '&:focus,&:hover,&$active': {
+      '&:focus,&:hover': {
         '& > *': {
           transform: 'scale(1) translateX(-50%) !important',
         },
       },
     },
     valueLabel: {
+      width: 'auto',
       top: '-50px',
       left: '50%',
-      transform: 'scale(0) translateX(-50%) !important',
-      '&:focus,&:hover,&$active': {
+      '&:focus,&:hover': {
         transform: 'scale(1) translateX(-50%) !important',
       },
       '&::after': {
@@ -92,8 +94,11 @@ const RangeSlider = props => {
         borderRadius: '4px',
         height: `${large}px`,
         transform: 'none',
+        width: 'auto',
+        whiteSpace: 'nowrap',
 
         '& > *': {
+          width: 'auto',
           transform: 'none',
         },
       },
@@ -115,28 +120,40 @@ const RangeSlider = props => {
     },
   })(MaterialSlider);
 
+  StyledSlider.displayName = 'SliderComponent';
+
+  const formatedValue =
+    typeof value === 'object' ? [value.from, value.to] : value;
+  const formatedDefaultValue =
+    typeof defaultValue === 'object'
+      ? [defaultValue.from, defaultValue.to]
+      : defaultValue;
+
   return (
     <SliderWrapper theme={theme}>
-      <PrettoSlider
+      <StyledSlider
+        aria-labelledby={ariaLabelledby}
+        defaultValue={formatedDefaultValue}
+        disabled={disabled}
         getAriaLabel={tipFormatter}
         getAriaValueText={tipFormatter}
-        valueLabelFormat={tipFormatter}
-        defaultValue={defaultValue}
-        valueLabelDisplay="auto"
-        aria-valuetext={tipFormatter}
-        step={step}
-        min={min}
-        max={max}
         marks={marks}
+        max={max}
+        min={min}
         onChange={onChange}
-        value={value}
-        disabled={disabled}
+        onChangeCommitted={onChangeCommitted}
+        ref={React.createRef()}
+        step={step}
         track={track}
-        aria-labelledby={ariaLabelledby}
+        value={formatedValue}
+        valueLabelDisplay={valueLabelDisplay}
+        valueLabelFormat={tipFormatter}
       />
     </SliderWrapper>
   );
 };
+
+SliderWrapper.displayName = 'RangeSliderWrapper';
 
 RangeSlider.defaultProps = {
   step: 1,
@@ -147,10 +164,11 @@ RangeSlider.defaultProps = {
   marks: undefined,
   disabled: false,
   onChange: () => {},
-  tipFormatter: value =>
-    typeof value === 'object' ? `${value.from} to ${value.to}` : value,
+  onChangeCommitted: () => {},
+  tipFormatter: value => value.toString(),
   track: 'normal',
   'aria-labelledby': undefined,
+  valueLabelDisplay: 'auto',
   theme: {
     spacing,
     colors,
@@ -159,31 +177,34 @@ RangeSlider.defaultProps = {
 };
 
 RangeSlider.propTypes = {
+  /** The number that the slider will use as interval of each value */
   step: PropTypes.number,
+  /** The max value possible in slider */
   max: PropTypes.number,
+  /** The min value possible in slider */
   min: PropTypes.number,
   disabled: PropTypes.bool,
+  /** Trigger a function on value change, evict to use controlled values, because the component will re-render before change the value */
   onChange: PropTypes.func,
+  /** Trigger a function after value completely changes */
+  onChangeCommitted: PropTypes.func,
+  /** The min value possible in slider */
   marks: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       label: PropTypes.string,
     }),
   ),
+  /* *Set if the tooltip label is by default visible. 'auto' the value label will display when the thumb is hovered or focused. 'on' will display persistently. 'off' will never display. */
+  valueLabelDisplay: PropTypes.oneOf(['auto', 'on', 'off']),
   /** The track presentation:- normal the track will render a bar representing the slider value. - inverted the track will render a bar representing the remaining slider value. - false the track will render without a bar. */
   track: PropTypes.oneOf(['normal', false, 'inverted']),
   'aria-labelledby': PropTypes.string,
   /** RangeSlider will pass its value to tipFormatter, display its value in Tooltip */
   tipFormatter: PropTypes.func,
   /** It receives a Number to display a slider or an Object with from and to properties to display a range. Example: `value={10}` or `value={{ from: 20, to: 40 }}` */
-  value: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.arrayOf(valueValidator),
-  ]),
-  defaultValue: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.arrayOf(valueValidator),
-  ]),
+  value: valueValidator,
+  defaultValue: valueValidator,
   theme: PropTypes.shape({
     spacing: PropTypes.object,
     colors: PropTypes.object,
