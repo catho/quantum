@@ -1,31 +1,33 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Dropdown from './Dropdown';
 
-describe('Input component ', () => {
+const selectedItemObject = { value: 'bazKey', label: 'baz' };
+
+describe('Dropdown component ', () => {
+  const withItems = (
+    <Dropdown
+      items={[
+        { value: 'fooKey', label: 'foo' },
+        { value: 'barKey', label: 'bar' },
+        { value: 'bazKey', label: 'baz' },
+      ]}
+    />
+  );
+
+  const withSelectedItem = (
+    <Dropdown
+      items={[
+        { value: 'fooKey', label: 'foo' },
+        { value: 'barKey', label: 'bar' },
+        { value: 'bazKey', label: 'baz' },
+      ]}
+      selectedItem={selectedItemObject}
+    />
+  );
+
   it('should match the snapshot', () => {
-    const withItems = (
-      <Dropdown
-        items={[
-          { value: 'fooKey', label: 'foo' },
-          { value: 'barKey', label: 'bar' },
-          { value: 'bazKey', label: 'baz' },
-        ]}
-      />
-    );
-
-    const withSelectedItem = (
-      <Dropdown
-        items={[
-          { value: 'fooKey', label: 'foo' },
-          { value: 'barKey', label: 'bar' },
-          { value: 'bazKey', label: 'baz' },
-        ]}
-        selectedItem={{ value: 'bazKey', label: 'baz' }}
-      />
-    );
-
     expect(renderer.create(<Dropdown />).toJSON()).toMatchSnapshot();
     expect(
       renderer.create(<Dropdown placeholder="Dropdown placeholder" />).toJSON(),
@@ -48,6 +50,15 @@ describe('Input component ', () => {
     ).toMatchSnapshot();
     expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
     expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
+  });
+
+  it('should find the selected item label when its is selected', () => {
+    const selectedLabel = selectedItemObject.label;
+
+    const component = mount(withSelectedItem);
+    component.find('DropInput').simulate('click');
+    const selectedItemLabel = component.find('SelectedItemLabel').text();
+    expect(selectedItemLabel).toMatch(selectedLabel);
   });
 });
 

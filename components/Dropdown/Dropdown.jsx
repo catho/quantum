@@ -166,6 +166,10 @@ const SelectedItemLabel = styled.span`
   `}
 `;
 
+DropInput.displayName = 'DropInput';
+DropItem.displayName = 'DropItem';
+SelectedItemLabel.displayName = 'SelectedItemLabel';
+
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
@@ -204,8 +208,12 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
   </DropList>
 );
 
+List.defaultProps = {
+  selectedItem: '',
+};
+
 List.propTypes = {
-  selectedItem: PropTypes.shape(itemPropType).isRequired,
+  selectedItem: PropTypes.shape(itemPropType),
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,

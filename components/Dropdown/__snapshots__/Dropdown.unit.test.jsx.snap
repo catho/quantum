@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component  should match the snapshot 1`] = `
+exports[`Dropdown component  should match the snapshot 1`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -205,7 +205,7 @@ exports[`Input component  should match the snapshot 1`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 2`] = `
+exports[`Dropdown component  should match the snapshot 2`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -410,7 +410,7 @@ exports[`Input component  should match the snapshot 2`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 3`] = `
+exports[`Dropdown component  should match the snapshot 3`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -618,7 +618,7 @@ exports[`Input component  should match the snapshot 3`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 4`] = `
+exports[`Dropdown component  should match the snapshot 4`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -839,7 +839,7 @@ exports[`Input component  should match the snapshot 4`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 5`] = `
+exports[`Dropdown component  should match the snapshot 5`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1044,7 +1044,7 @@ exports[`Input component  should match the snapshot 5`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 6`] = `
+exports[`Dropdown component  should match the snapshot 6`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1262,7 +1262,7 @@ exports[`Input component  should match the snapshot 6`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 7`] = `
+exports[`Dropdown component  should match the snapshot 7`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1489,7 +1489,7 @@ exports[`Input component  should match the snapshot 7`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 8`] = `
+exports[`Dropdown component  should match the snapshot 8`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1707,7 +1707,7 @@ exports[`Input component  should match the snapshot 8`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 9`] = `
+exports[`Dropdown component  should match the snapshot 9`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1912,7 +1912,7 @@ exports[`Input component  should match the snapshot 9`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 10`] = `
+exports[`Dropdown component  should match the snapshot 10`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
