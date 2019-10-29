@@ -156,6 +156,44 @@ AutoComplete.CODE = `<Dropdown
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
 />`;
 
+const WithImages = () => (
+  <Dropdown
+    placeholder="What credit card do you prefer?"
+    label="choose a credit card"
+    items={[
+      {
+        label: 'Master card',
+        value: 'master_0',
+        img: 'https://dummyimage.com/24x24',
+        alt: 'descrição da imagem',
+      },
+      {
+        label: 'Master card',
+        value: 'master_1',
+        img: 'https://ca.slack-edge.com/T04S23U24-UL9UMHYNM-760c576f6716-72',
+        alt: 'descrição da imagem',
+      },
+      {
+        label: 'Master card',
+        value: 'master_2',
+        img: 'https://ca.slack-edge.com/T04S23U24-UL9UMHYNM-760c576f6716-72',
+        alt: 'descrição da imagem',
+      },
+    ]}
+  />
+);
+WithImages.CODE = `
+<Dropdown
+placeholder="What credit card do you prefer?"
+label="choose a credit card"
+items={[
+  { label: 'Master card', value: 'master', img: '' },
+  { label: 'Master card', value: 'master', img: '' },
+  { label: 'Master card', value: 'master', img: '' },
+]}
+/>
+`;
+
 export {
   Simple,
   CustomLabel,
@@ -164,4 +202,5 @@ export {
   Disabled,
   Controlled,
   AutoComplete,
+  WithImages,
 };

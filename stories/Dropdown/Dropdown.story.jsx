@@ -22,6 +22,7 @@ import {
   Disabled,
   Controlled,
   AutoComplete,
+  WithImages,
 } from './examples';
 
 const DropdownExample = ({ component: Component }) => (
@@ -80,6 +81,7 @@ storiesOf('Forms', module).add('Dropdown', () => (
           <DropdownExample component={WithError} />
           <DropdownExample component={Disabled} />
           <DropdownExample component={Controlled} />
+          <DropdownExample component={WithImages} />
         </StoryContainer>
       </Tab>
       <Tab title="API">

@@ -198,6 +198,12 @@ const SelectedItemLabel = styled.span`
   `}
 `;
 
+const DropItemImage = styled.img`
+  float: right;
+  width: 24px;
+  height: 24px;
+`;
+
 DropInput.displayName = 'DropInput';
 DropItem.displayName = 'DropItem';
 SelectedItemLabel.displayName = 'SelectedItemLabel';
@@ -206,6 +212,8 @@ ArrowUp.displayName = 'ArrowUp';
 
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
+const _getImage = item => (item ? item.img : null);
+const _getImageAlt = item => (item ? item.alt : null);
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
 
 const itemPropType = PropTypes.oneOfType([
@@ -232,10 +240,20 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
             <SelectedItemLabel theme={theme}>
               {_getLabel(item)}
             </SelectedItemLabel>
-            <CheckIcon theme={theme} />
+
+            {_getImage(item) ? (
+              <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
+            ) : (
+              <CheckIcon theme={theme} />
+            )}
           </>
         ) : (
-          _getLabel(item)
+          <>
+            <span>{_getLabel(item)}</span>
+            {_getImage(item) && (
+              <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
+            )}
+          </>
         )}
       </DropItem>
     ))}
