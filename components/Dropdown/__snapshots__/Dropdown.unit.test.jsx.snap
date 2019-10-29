@@ -197,7 +197,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -402,7 +402,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -610,7 +610,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -827,7 +827,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -1036,7 +1036,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -1254,7 +1254,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -1481,7 +1481,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -1699,7 +1699,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </div>
   </div>
@@ -1904,7 +1904,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
@@ -2109,7 +2109,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>

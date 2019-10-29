@@ -54,11 +54,25 @@ describe('Dropdown component ', () => {
 
   it('should find the selected item label when its is selected', () => {
     const selectedLabel = selectedItemObject.label;
-
     const component = mount(withSelectedItem);
     component.find('DropInput').simulate('click');
     const selectedItemLabel = component.find('SelectedItemLabel').text();
     expect(selectedItemLabel).toMatch(selectedLabel);
+  });
+
+  it('should change the position of arrow icon when click open list', () => {
+    const component = mount(withItems);
+    expect(component.find('ArrowDown').text()).toEqual('arrow_drop_down');
+    component.find('DropInput').simulate('click');
+    expect(component.find('ArrowUp').text()).toEqual('arrow_drop_up');
+  });
+
+  it('should change the position of arrow icon when click to close list', () => {
+    const component = mount(withItems);
+    component.find('DropInput').simulate('click');
+    expect(component.find('ArrowUp').text()).toEqual('arrow_drop_up');
+    component.find('DropInput').simulate('click');
+    expect(component.find('ArrowDown').text()).toEqual('arrow_drop_down');
   });
 });
 

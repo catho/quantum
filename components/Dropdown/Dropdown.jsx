@@ -40,7 +40,26 @@ const DropInput = styled(TextInput)`
 `;
 
 const ArrowDown = styled(Icon).attrs({
-  name: 'keyboard_arrow_down',
+  name: 'arrow_drop_down',
+})`
+  pointer-events: none;
+
+  ${({
+    selectedItem,
+    theme: {
+      colors: {
+        neutral: { 700: neutral700 },
+      },
+    },
+  }) =>
+    !selectedItem &&
+    `
+    color: ${neutral700};
+  `}
+`;
+
+const ArrowUp = styled(Icon).attrs({
+  name: 'arrow_drop_up',
 })`
   pointer-events: none;
 
@@ -59,6 +78,19 @@ const ArrowDown = styled(Icon).attrs({
 `;
 
 const InputArrowDown = styled(ArrowDown)`
+  position: absolute;
+
+  ${({
+    theme: {
+      spacing: { small, medium },
+    },
+  }) => `
+    top: ${small}px;
+    right: ${medium * 0.875}px;
+  `}
+`;
+
+const InputArrowUp = styled(ArrowUp)`
   position: absolute;
 
   ${({
@@ -169,6 +201,8 @@ const SelectedItemLabel = styled.span`
 DropInput.displayName = 'DropInput';
 DropItem.displayName = 'DropItem';
 SelectedItemLabel.displayName = 'SelectedItemLabel';
+ArrowDown.displayName = 'ArrowDown';
+ArrowUp.displayName = 'ArrowUp';
 
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
@@ -314,7 +348,11 @@ const Dropdown = ({
                       theme={theme}
                       id={_id}
                     />
-                    <InputArrowDown theme={theme} />
+                    {isOpen ? (
+                      <InputArrowUp theme={theme} />
+                    ) : (
+                      <InputArrowDown theme={theme} />
+                    )}
                   </DropContainer>
 
                   {filteredInput.length > 0 && (
@@ -339,7 +377,11 @@ const Dropdown = ({
                     id={_id}
                   >
                     {_buttonLabel}
-                    <ArrowDown theme={theme} />
+                    {isOpen ? (
+                      <ArrowUp theme={theme} />
+                    ) : (
+                      <ArrowDown theme={theme} />
+                    )}
                   </DropInput>
 
                   {isOpen && (
