@@ -4,37 +4,39 @@ import styled from 'styled-components';
 import { Label, HiddenInput, shadow } from '../shared';
 import { colors, spacing } from '../shared/theme';
 
+const radioSize = '24px';
+
 const RadioMark = styled.span`
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
-  height: 16px;
+  height: ${radioSize};
   position: relative;
-  top: 4px;
-  width: 16px;
+  top: 6px;
+  width: ${radioSize};
 
   ${({
     theme: {
       colors: {
         neutral: { 0: white, 500: gray },
       },
-      spacing: { xxsmall },
+      spacing: { xsmall },
     },
   }) => `
     background-color: ${white};
-    border: 1.5px solid ${gray};
-    margin-right: ${xxsmall}px;
+    border: 2px solid ${gray};
+    margin-right: ${xsmall}px;
   `}
 
   :after {
     border-radius: 50%;
     content: '';
     display: none;
-    height: 50%;
-    left: 25%;
+    height: 60%;
+    left: 20%;
     position: absolute;
-    top: 25%;
-    width: 50%;
+    top: 20%;
+    width: 60%;
 
     background-color: ${({
       theme: {
@@ -108,7 +110,7 @@ const RadioLabel = styled(Label)`
   ${({ theme, error }) => {
     const {
       colors: {
-        error: { 500: errorColor },
+        error: { 700: errorColor },
       },
     } = theme;
 

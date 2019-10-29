@@ -16,10 +16,24 @@ const ID_GENERATOR = uniqId('radio-button-');
 
 const LockIcon = styled(Icon).attrs({
   name: 'lock',
-})``;
+})`
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+  margin-left: ${xsmall}px;
+`}
+`;
 
 const ButtonIcon = styled(Icon)`
-  margin-right: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+  margin-right: ${xsmall}px;
+`}
 `;
 
 const Wrapper = styled.div`
@@ -107,9 +121,9 @@ class Radio extends React.Component {
             error={error}
             {...rest}
           />
-          {icon && <ButtonIcon name={icon} />}
+          {icon && <ButtonIcon theme={theme} name={icon} />}
           {children || label}
-          {disabled && <LockIcon />}
+          {disabled && <LockIcon theme={theme} />}
         </RadioButton>
       </Wrapper>
     );
