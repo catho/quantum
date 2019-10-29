@@ -42,13 +42,14 @@ const BadgeWrapper = styled.div`
 
 const StyledBadge = styled.span`
   border-radius: 8px;
-  display: inline-block;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px;
-  min-width: 20px;
-  text-align: center;
   box-sizing: border-box;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+  min-width: 32px;
+  align-items: center;
+  justify-content: center;
 
   ${({
     value,
@@ -105,7 +106,13 @@ Badge.displayName = 'Badge';
 
 Badge.propTypes = {
   /** Define background and text color */
-  skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral']),
+  skin: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'success',
+    'error',
+    'neutral',
+  ]),
   /** When passed a children to <Badge />, the badge will be displayed at top-right corner of the children. */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),

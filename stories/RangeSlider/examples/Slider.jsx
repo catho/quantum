@@ -2,7 +2,7 @@ import React from 'react';
 import RangeSlider from '../../../components/RangeSlider';
 
 const BasicSlider = aditionalProps => (
-  <RangeSlider defaultValue={50} valueLabelDisplay="on" />
+  <RangeSlider defaultValue={50} {...aditionalProps} />
 );
 
 BasicSlider.code = '<RangeSlider defaultValue={50} />';

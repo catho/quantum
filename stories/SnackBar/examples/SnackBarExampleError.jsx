@@ -20,11 +20,6 @@ class SnackBarExampleError extends React.Component {
   render() {
     const { showSnackBar } = this.state;
 
-    const actions = {
-      title: 'HIDE',
-      callbackFn: this.actionCallback,
-    };
-
     return (
       <>
         <Button onClick={this.openSnackBar}>Open SnackBar Error</Button>
@@ -32,7 +27,6 @@ class SnackBarExampleError extends React.Component {
           <SnackBar
             text="SnackBar error text content"
             onClose={this.closeSnackBar}
-            actionTrigger={actions}
             skin="error"
           />
         )}
@@ -64,11 +58,6 @@ class SnackBarExampleError extends React.Component {
   render() {
     const { showSnackBar } = this.state;
 
-    const actions = {
-      title: 'HIDE',
-      callbackFn: this.actionCallback,
-    };
-
     return (
       <>
         <Button onClick={this.openSnackBar}>Open SnackBar Error</Button>
@@ -76,7 +65,6 @@ class SnackBarExampleError extends React.Component {
           <SnackBar
             text="SnackBar error text content"
             onClose={this.closeSnackBar}
-            actionTrigger={actions}
             skin="error"
           />
         )}

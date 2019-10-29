@@ -1,3 +1,5 @@
+import hexToRgba from './hexToRgba';
+
 const breakpoints = {
   xsmall: {
     columns: 4,
@@ -121,6 +123,10 @@ const components = {
         background: colors.primary[700],
         text: colors.neutral[100],
       },
+      secondary: {
+        background: colors.secondary[500],
+        text: colors.neutral[0],
+      },
       error: {
         background: colors.error[500],
         text: colors.neutral[100],
@@ -183,22 +189,32 @@ const components = {
       neutral: {
         background: colors.neutral[700],
         text: colors.neutral[100],
+        iconColor: colors.neutral[100],
+        icon: '',
       },
       primary: {
         background: colors.primary[900],
-        text: colors.neutral[100],
+        text: colors.neutral[0],
+        iconColor: colors.neutral[0],
+        icon: 'info',
       },
       success: {
-        background: colors.success[100],
-        text: colors.success[900],
+        background: colors.success[900],
+        text: colors.neutral[0],
+        iconColor: colors.neutral[0],
+        icon: 'done',
       },
       warning: {
-        background: colors.warning[100],
-        text: colors.warning[900],
+        background: colors.warning[700],
+        text: colors.neutral[900],
+        iconColor: colors.neutral[900],
+        icon: 'warning',
       },
       error: {
-        background: colors.error[100],
-        text: colors.error[900],
+        background: colors.error[900],
+        text: colors.neutral[0],
+        iconColor: colors.neutral[0],
+        icon: 'error',
       },
     },
   },
@@ -256,15 +272,17 @@ const components = {
   tabbedView: {
     skins: {
       neutral: {
+        border: colors.neutral[300],
         activeText: colors.primary[700],
         background: 'transparent',
         hoverBackground: colors.primary[100],
         text: 'inherit',
       },
       primary: {
+        border: colors.neutral[100],
         activeText: colors.neutral[0],
         background: colors.primary[700],
-        hoverBackground: colors.primary[900],
+        hoverBackground: hexToRgba(colors.neutral[0], 0.2),
         text: colors.neutral[0],
       },
     },

@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { components } from '../shared/theme';
+import {
+  components,
+  baseFontSize as defaultBaseFontSize,
+  breakpoints as defaultBreakpoints,
+  spacing as defaultSpacing,
+} from '../shared/theme';
 import Tab from './Tab';
+import { query } from '../Grid/sub-components/shared';
 
 const getSkinByThemeColor = (skin, themeSkins) => themeSkins[skin];
 
@@ -12,8 +18,36 @@ const Navbar = styled.nav.attrs({
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
-  margin: 0 0 25px 0;
   padding: 0;
+  max-width: 100%;
+  clear: left;
+  float: left;
+
+  ${({
+    skin,
+    theme: {
+      components: {
+        tabbedView: { skins },
+      },
+      breakpoints,
+      spacing: { large },
+    },
+    fluid,
+  }) => {
+    const { background } = getSkinByThemeColor(skin, skins);
+    const mediumQuery = query(breakpoints).medium;
+
+    return css`
+      background-color: ${background};
+      margin: 0 0 ${large}px 0;
+
+      ${fluid ? 'width: 100%; overflow-x: scroll;' : null}
+
+      ${mediumQuery`
+        overflow-x: auto;
+      `}
+    `;
+  }}
 `;
 
 Navbar.displayName = 'Navbar';
@@ -25,50 +59,106 @@ const NavItem = styled.button.attrs({
   box-sizing: border-box;
   cursor: pointer;
   flex-shrink: 0;
-  font-size: 20px;
-  height: 48px;
+  height: 56px;
   line-height: 1.5;
   min-width: 90px;
   outline: none;
   overflow: hidden;
-  padding: 9px 16px;
-  transition: all 0.2s ease-in-out;
+  position: relative;
   text-align: center;
-  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
   ${({
     skin,
+    children,
     theme: {
       components: {
         tabbedView: { skins },
       },
+      baseFontSize,
+      spacing: { medium },
     },
+    fluid,
   }) => {
     const {
       background,
       text,
       activeText,
       hoverBackground,
+      border,
     } = getSkinByThemeColor(skin, skins);
     return css`
+      border-bottom: 1px solid ${border};
       background-color: ${background};
+      font-size: ${baseFontSize}px;
       color: ${text};
+      padding: ${medium}px;
+
+      ${fluid
+        ? `
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: ${(100 / children.length).toFixed(2)}%;
+      `
+        : null}
 
       &[aria-selected='true'] {
-        border-bottom: 4px solid ${activeText};
+        &::after {
+          content: ' ';
+          background-color: ${activeText};
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          height: 3px;
+          border-radius: 4px 4px 0 0;
+          width: 100%;
+        }
+        border-bottom: 1px solid ${activeText};
         color: ${activeText};
         cursor: default;
-        font-weight: bold;
       }
 
       &:hover {
+        color: ${activeText};
+        border-bottom: 1px solid ${activeText};
         background-color: ${hoverBackground};
+      }
+
+      &:focus {
+        color: ${activeText};
+        border: 1px solid ${activeText};
+        background-color: ${hoverBackground};
+        padding: ${medium - 1}px;
       }
     `;
   }}
 `;
 
 NavItem.displayName = 'NavItem';
+
+const TitleContainer = styled.span`
+  vertical-align: top;
+`;
+
+const BadgeContainer = styled.div`
+  margin-left: 0px;
+  margin-right: -8px;
+  display: inline-block;
+  vertical-align: top;
+`;
+
+const IconContainer = styled.div`
+  display: inline-block;
+  height: 24px;
+  margin-left: 0px;
+  margin-right: 8px;
+  width: 24px;
+`;
+
+const TabPanel = styled.div`
+  clear: left;
+`;
 
 const RenderIf = ({ conditional, children }) => conditional && children;
 
@@ -104,14 +194,15 @@ class TabbedView extends React.Component {
       .toLowerCase();
 
   render() {
-    const { children, skin, theme } = this.props;
+    const { children, skin, theme, fluid } = this.props;
     const { activeTab } = this.state;
 
     return (
       <>
-        <Navbar>
-          {React.Children.map(children, ({ props: { title } }) => (
+        <Navbar theme={theme} skin={skin} fluid={fluid}>
+          {React.Children.map(children, ({ props: { title, badge, icon } }) => (
             <NavItem
+              fluid={fluid}
               key={title}
               onClick={() => this.onTabClick(title)}
               skin={skin}
@@ -120,7 +211,9 @@ class TabbedView extends React.Component {
               aria-controls={`${this.sanitize(title)}-panel`}
               aria-selected={title === activeTab}
             >
-              {title}
+              {icon && <IconContainer>{icon}</IconContainer>}
+              {title && <TitleContainer>{title}</TitleContainer>}
+              {badge && <BadgeContainer>{badge}</BadgeContainer>}
             </NavItem>
           ))}
         </Navbar>
@@ -129,13 +222,14 @@ class TabbedView extends React.Component {
           children,
           ({ props: { title, children: tabContent } }) => (
             <RenderIf conditional={title === activeTab}>
-              <div
+              <TabPanel
                 role="tabpanel"
+                key={`${this.sanitize(title)}-panel-key`}
                 id={`${this.sanitize(title)}-panel`}
                 aria-labelledby={`${this.sanitize(title)}-tab`}
               >
                 {tabContent}
-              </div>
+              </TabPanel>
             </RenderIf>
           ),
         )}
@@ -145,6 +239,8 @@ class TabbedView extends React.Component {
 }
 
 TabbedView.propTypes = {
+  /** Used to expand all tabs along all the parent width */
+  fluid: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -155,14 +251,21 @@ TabbedView.propTypes = {
     components: PropTypes.shape({
       tabbedView: PropTypes.object,
     }),
+    baseFontSize: PropTypes.number,
+    breakpoints: PropTypes.object,
+    spacing: PropTypes.object,
   }),
 };
 
 TabbedView.defaultProps = {
+  fluid: false,
   activeTab: undefined,
   skin: 'neutral',
   theme: {
     components,
+    baseFontSize: defaultBaseFontSize,
+    breakpoints: defaultBreakpoints,
+    spacing: defaultSpacing,
   },
 };
 

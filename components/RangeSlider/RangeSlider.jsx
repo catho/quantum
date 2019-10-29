@@ -55,7 +55,7 @@ const RangeSlider = props => {
       height: 8,
     },
     thumb: {
-      backgroundColor: primary[700],
+      backgroundColor: disabled ? neutral[500] : primary[700],
       border: 'none',
       height: `${large}px !important`,
       width: `${large}px !important`,
@@ -71,6 +71,10 @@ const RangeSlider = props => {
       width: 'auto',
       top: '-50px',
       left: '50%',
+      transform:
+        valueLabelDisplay === 'on'
+          ? 'scale(1) translateX(-50%) !important'
+          : 'scale(0)',
       '&:focus,&:hover': {
         transform: 'scale(1) translateX(-50%) !important',
       },
@@ -133,7 +137,7 @@ const RangeSlider = props => {
     <SliderWrapper theme={theme}>
       <StyledSlider
         aria-labelledby={ariaLabelledby}
-        defaultValue={formatedDefaultValue}
+        defaultValue={disabled ? 0 : formatedDefaultValue}
         disabled={disabled}
         getAriaLabel={tipFormatter}
         getAriaValueText={tipFormatter}
@@ -145,8 +149,8 @@ const RangeSlider = props => {
         ref={React.createRef()}
         step={step}
         track={track}
-        value={formatedValue}
-        valueLabelDisplay={valueLabelDisplay}
+        value={disabled ? 0 : formatedValue}
+        valueLabelDisplay={disabled ? 'off' : valueLabelDisplay}
         valueLabelFormat={tipFormatter}
       />
     </SliderWrapper>

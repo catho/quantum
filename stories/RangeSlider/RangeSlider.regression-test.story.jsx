@@ -14,9 +14,28 @@ const sliderProps = {
   valueLabelDisplay: 'on',
 };
 
+const mountMarksByArray = (values, labelFunction) =>
+  values.map(value => ({
+    value,
+    label: labelFunction ? labelFunction(value) : value,
+  }));
+
 const components = [
   { name: 'default', el: <Slider {...sliderProps} /> },
+  {
+    name: 'with marks',
+    el: <Slider marks={mountMarksByArray([0, 100])} {...sliderProps} />,
+  },
   { name: 'TipFormatter', el: <TipFormatter {...sliderProps} /> },
+  {
+    name: 'TipFormatter with marks',
+    el: (
+      <TipFormatter
+        {...sliderProps}
+        marks={mountMarksByArray([0, 50, 100], v => `R$ ${v}`)}
+      />
+    ),
+  },
   { name: 'Range', el: <Range {...sliderProps} /> },
   { name: 'MinMax', el: <MinMax {...sliderProps} /> },
   { name: 'BasicDisabledSlider', el: <BasicDisabledSlider {...sliderProps} /> },
