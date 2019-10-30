@@ -162,21 +162,21 @@ const WithImages = () => (
     label="choose a credit card"
     items={[
       {
-        label: 'Master card',
-        value: 'master_0',
+        label: 'Master Card',
+        value: 'creditcard_0',
         img: 'https://dummyimage.com/24x24',
         alt: 'descrição da imagem',
       },
       {
-        label: 'Master card',
-        value: 'master_1',
-        img: 'https://ca.slack-edge.com/T04S23U24-UL9UMHYNM-760c576f6716-72',
+        label: 'American Express Card',
+        value: 'creditcard_1',
+        img: 'https://dummyimage.com/24x24',
         alt: 'descrição da imagem',
       },
       {
-        label: 'Master card',
-        value: 'master_2',
-        img: 'https://ca.slack-edge.com/T04S23U24-UL9UMHYNM-760c576f6716-72',
+        label: 'Visa',
+        value: 'creditcard_2',
+        img: 'https://dummyimage.com/24x24',
         alt: 'descrição da imagem',
       },
     ]}
@@ -187,9 +187,24 @@ WithImages.CODE = `
 placeholder="What credit card do you prefer?"
 label="choose a credit card"
 items={[
-  { label: 'Master card', value: 'master', img: '' },
-  { label: 'Master card', value: 'master', img: '' },
-  { label: 'Master card', value: 'master', img: '' },
+  {
+    label: 'Master Card',
+    value: 'creditcard_0',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'descrição da imagem',
+  },
+  {
+    label: 'American Express Card',
+    value: 'creditcard_1',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'descrição da imagem',
+  },
+  {
+    label: 'Visa',
+    value: 'creditcard_2',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'descrição da imagem',
+  },
 ]}
 />
 `;

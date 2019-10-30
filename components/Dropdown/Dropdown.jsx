@@ -150,6 +150,7 @@ const CheckIcon = styled(Icon).attrs({
 const DropItem = styled.li`
   box-sizing: border-box;
   cursor: pointer;
+  height: 42px;
   ${({
     theme: {
       spacing: { xsmall, medium },
@@ -204,6 +205,10 @@ const DropItemImage = styled.img`
   height: 24px;
 `;
 
+const DropItemLabel = styled.span`
+  vertical-align: middle;
+`;
+
 DropInput.displayName = 'DropInput';
 DropItem.displayName = 'DropItem';
 SelectedItemLabel.displayName = 'SelectedItemLabel';
@@ -249,7 +254,7 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
           </>
         ) : (
           <>
-            <span>{_getLabel(item)}</span>
+            <DropItemLabel>{_getLabel(item)}</DropItemLabel>
             {_getImage(item) && (
               <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
             )}
