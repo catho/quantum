@@ -21,50 +21,55 @@ const TabExample = (
         <Example
           component={
             <div>
-              <span>Here is a Hamburger</span>
-              <Hamburger number={10} />
+              <span>
+                Here is a Hamburger: (default / showNotification / opened)
+              </span>
+              <br />
+              <div style={{ backgroundColor: '#000' }}>
+                <Hamburger />
+                <Hamburger showNotification />
+                <Hamburger isOpened />
+              </div>
             </div>
           }
           code={`<div>
-  <span>Here is a Hamburger</span>
-  <Hamburger number={10} />
+  <span>
+    Here is a Hamburger: (default / showNotification / opened)
+  </span>
+  <br />
+  <div style={{ backgroundColor: '#000' }}>
+    <Hamburger />
+    <Hamburger showNotification />
+    <Hamburger isOpened />
+  </div>
 </div>`}
         />
 
-        <Title as="h2">With children</Title>
+        <Title as="h2">Inverted</Title>
         <Example
           component={
-            <Hamburger number={10} skin="primary">
-              <Button skin="secondary" size="large" />
-            </Hamburger>
-          }
-          code={`<Hamburger number={10} skin="primary">
-  <Button skin="secondary" size="large"/>
-</Hamburger>`}
-        />
-
-        <Title as="h2">In a colour background</Title>
-        <Example
-          component={
-            <div
-              style={{
-                backgroundColor: colors.primary['700'],
-                display: 'inline-block',
-                padding: 10,
-                color: colors.neutral['0'],
-              }}
-            >
-              <Hamburger number={10} skin="primary" inverted />
-              This is a Hamburger
+            <div>
+              <span>
+                Here is a Hamburger: (default / showNotification / opened)
+              </span>
+              <br />
+              <div>
+                <Hamburger inverted />
+                <Hamburger inverted showNotification />
+                <Hamburger inverted isOpened />
+              </div>
             </div>
           }
-          code={`<div style={{
-  backgroundColor: colors.primary['700'],
-  display: 'inline-block',
-  padding: 10,
-  color: Colors.WHITE
-}}>
-  <Hamburger number={10} skin="white" />This is a Hamburger
+          code={`<div>
+  <span>
+    Here is a Hamburger: (default / showNotification / opened)
+  </span>
+  <br />
+  <div style={{ backgroundColor: '#000' }}>
+    <Hamburger />
+    <Hamburger showNotification />
+    <Hamburger isOpened />
+  </div>
 </div>`}
         />
       </Container>
@@ -82,6 +87,6 @@ storiesOf('Hamburger', module).add('Hamburger', () => (
     componentProps={{
       number: 10,
     }}
-    // additionalTabs={TabExample}
+    additionalTabs={TabExample}
   />
 ));
