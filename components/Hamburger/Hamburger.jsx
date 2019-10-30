@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import HamburgerIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { colors } from '../shared/theme';
 
 const getColors = ({ inverted }) => {
@@ -38,7 +38,6 @@ const CloseIconWrapper = styled(CloseIcon)`
   color: ${getColors};
 `;
 
-/** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
 const Hamburger = ({ showNotification, isOpened, inverted }) => {
   const HamburgerBlock = (
     <>

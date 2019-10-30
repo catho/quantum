@@ -9,8 +9,6 @@ import {
 } from '@catho/quantum-storybook-ui';
 
 import Hamburger from '../../components/Hamburger';
-import Button from '../../components/Button';
-import { colors } from '../../components/shared/theme';
 import { Container } from '../../components/Grid';
 
 const TabExample = (
