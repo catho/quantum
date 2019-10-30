@@ -11,9 +11,16 @@ const {
 const directions = ['top', 'bottom', 'left', 'right'];
 const skins = Object.keys(popoverSkins);
 
+const handleDirectionPosition = direction => {
+  if (direction === 'right') return { paddingTop: '80px', paddingLeft: '20px' };
+  if (direction === 'bottom')
+    return { paddingTop: '20px', paddingLeft: '160px' };
+  return { paddingTop: '80px', paddingLeft: '160px' };
+};
+
 const popoverExample = (direction, skin) => (
   <div>
-    <Row style={{ paddingTop: '100px', paddingLeft: '420px' }}>
+    <Row style={handleDirectionPosition(direction)}>
       <Col>
         <Popover
           placement={direction}
@@ -21,7 +28,7 @@ const popoverExample = (direction, skin) => (
           trigger={<Button>Popover trigger</Button>}
           visible
         >
-          Here comes a new Popover example
+          Some text
         </Popover>
       </Col>
     </Row>

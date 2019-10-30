@@ -75,6 +75,7 @@ const CloseButton = styled(Button.Icon).attrs({
     },
   }) => `margin-left: ${medium}px;`}
 
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   transition: opacity 0.4s ease;

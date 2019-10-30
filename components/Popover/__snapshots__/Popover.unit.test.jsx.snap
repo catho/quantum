@@ -1061,6 +1061,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -1504,6 +1505,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -2328,7 +2330,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
@@ -5066,6 +5068,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -5509,6 +5512,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -6333,7 +6337,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
@@ -9087,6 +9091,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -9546,6 +9551,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -10370,7 +10376,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
@@ -13140,6 +13146,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -13615,6 +13622,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -14439,7 +14447,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
@@ -17225,6 +17233,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -17716,6 +17725,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -18540,7 +18550,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
@@ -21314,6 +21324,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -21805,6 +21816,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -22641,7 +22653,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
@@ -25412,6 +25424,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -25900,6 +25913,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -26736,7 +26750,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
@@ -29507,6 +29521,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -29995,6 +30010,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   display: inherit;
   height: auto;
   margin-left: 16px;
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   -webkit-transition: opacity 0.4s ease;
@@ -30831,7 +30847,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                               [Function],
                               " display:inherit;height:auto;",
                               [Function],
-                              " opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
+                              " min-height:auto;opacity:0.8;padding:0;transition:opacity 0.4s ease;width:auto;:hover{background:none;opacity:1;",
                               [Function],
                               "}",
                             ],
