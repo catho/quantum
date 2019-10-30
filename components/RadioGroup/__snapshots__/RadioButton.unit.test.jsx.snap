@@ -311,7 +311,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -360,7 +360,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
               "skins": Object {
                 "error": Object {
                   "mainColor": Object {
-                    "100": "#ffe5e9",
+                    "100": "#fff5f5",
                     "300": "#f88e86",
                     "500": "#ec584e",
                     "700": "#e91b0c",
@@ -596,7 +596,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -645,7 +645,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
               "skins": Object {
                 "error": Object {
                   "mainColor": Object {
-                    "100": "#ffe5e9",
+                    "100": "#fff5f5",
                     "300": "#f88e86",
                     "500": "#ec584e",
                     "700": "#e91b0c",
@@ -994,7 +994,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -1043,7 +1043,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
               "skins": Object {
                 "error": Object {
                   "mainColor": Object {
-                    "100": "#ffe5e9",
+                    "100": "#fff5f5",
                     "300": "#f88e86",
                     "500": "#ec584e",
                     "700": "#e91b0c",
