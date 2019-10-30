@@ -11,6 +11,7 @@ export default [
   'Card',
   'Checkbox',
   'Dropdown',
+  'Hamburger',
   'Input',
   'RadioGroup',
   'Toggle',
