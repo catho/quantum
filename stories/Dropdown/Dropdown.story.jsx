@@ -80,8 +80,8 @@ storiesOf('Forms', module).add('Dropdown', () => (
           <DropdownExample component={RequiredMark} />
           <DropdownExample component={WithError} />
           <DropdownExample component={Disabled} />
-          <DropdownExample component={Controlled} />
           <DropdownExample component={WithImages} />
+          <DropdownExample component={Controlled} />
         </StoryContainer>
       </Tab>
       <Tab title="API">
