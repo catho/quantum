@@ -6,5 +6,6 @@ const BasicSlider = aditionalProps => (
 );
 
 BasicSlider.code = '<RangeSlider defaultValue={50} />';
+BasicSlider.codeWithMarks = '<RangeSlider marks={marks} defaultValue={50} />';
 
 export default BasicSlider;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Row, Col } from '../../components';
+import rangeSliderUtils from '../../components/RangeSlider/utils';
 
 import {
   Slider,
@@ -14,11 +15,7 @@ const sliderProps = {
   valueLabelDisplay: 'on',
 };
 
-const mountMarksByArray = (values, labelFunction) =>
-  values.map(value => ({
-    value,
-    label: labelFunction ? labelFunction(value) : value,
-  }));
+const { mountMarksByArray } = rangeSliderUtils;
 
 const components = [
   { name: 'default', el: <Slider {...sliderProps} /> },

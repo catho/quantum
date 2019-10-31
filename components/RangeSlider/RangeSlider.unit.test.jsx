@@ -68,6 +68,39 @@ describe('<RangeSlider />', () => {
     });
   });
 
+  describe('onChangeCommited prop', () => {
+    it('should call it with currently slider value', () => {
+      const onChangeCommitedMock = jest.fn();
+      const range = shallow(
+        <RangeSlider value={10} onChangeCommited={onChangeCommitedMock} />,
+      );
+      const slider = range.find('SliderComponent');
+
+      slider.simulate('change', 20);
+
+      setTimeout(() => {
+        expect(onChangeCommitedMock).toBeCalledWith(20);
+      }, 1000);
+    });
+
+    it('should call it with currently range value', () => {
+      const onChangeCommitedMock = jest.fn();
+      const range = shallow(
+        <RangeSlider
+          value={{ from: 0, to: 100 }}
+          onChangeCommited={onChangeCommitedMock}
+        />,
+      );
+      const slider = range.find('SliderComponent');
+
+      slider.simulate('change', { from: 20, to: 80 });
+
+      setTimeout(() => {
+        expect(onChangeCommitedMock.mock.calls.length).toBe(1);
+      }, 1000);
+    });
+  });
+
   describe('Value prop validator', () => {
     global.console = {
       error: jest.fn(),

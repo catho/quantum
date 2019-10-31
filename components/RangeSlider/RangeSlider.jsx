@@ -49,6 +49,8 @@ const RangeSlider = props => {
 
   const arrowSize = xsmall - 1;
 
+  const halfMeasure = '50%';
+
   const StyledSlider = withStyles({
     root: {
       color: primary[600],
@@ -63,20 +65,20 @@ const RangeSlider = props => {
       marginLeft: `-${large / 2}px !important`,
       '&:focus,&:hover': {
         '& > *': {
-          transform: 'scale(1) translateX(-50%) !important',
+          transform: `scale(1) translateX(-${halfMeasure}) !important`,
         },
       },
     },
     valueLabel: {
       width: 'auto',
       top: '-50px',
-      left: '50%',
+      left: halfMeasure,
       transform:
         valueLabelDisplay === 'on'
-          ? 'scale(1) translateX(-50%) !important'
+          ? `scale(1) translateX(-${halfMeasure}) !important`
           : 'scale(0)',
       '&:focus,&:hover': {
-        transform: 'scale(1) translateX(-50%) !important',
+        transform: `scale(1) translateX(-${halfMeasure}) !important`,
       },
       '&::after': {
         borderLeft: `${arrowSize}px solid transparent`,
@@ -85,9 +87,9 @@ const RangeSlider = props => {
         bottom: `-${arrowSize}px`,
         content: `" "`,
         height: 0,
-        left: '50%',
+        left: halfMeasure,
         position: 'absolute',
-        transform: 'translateX(-50%) !important',
+        transform: `translateX(-${halfMeasure}) !important`,
         width: 0,
       },
       '& > *': {

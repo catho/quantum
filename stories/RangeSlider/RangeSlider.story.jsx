@@ -16,7 +16,39 @@ import RangeSlider from '../../components/RangeSlider';
 import List from '../../components/List';
 import * as Samples from './examples';
 
-const importSlider = `import { Slider } from '@catho/quantum';`;
+const importSlider = `
+  import { Slider } from '@catho/quantum';
+
+  const marks = [
+    {
+      value: 10,
+      label: '10 km',
+    },
+    {
+      value: 50,
+      label: '50 km',
+    },
+    {
+      value: 100,
+      label: '100 km',
+    }
+  ]
+`;
+
+const marks = [
+  {
+    value: 0,
+    label: '0 km',
+  },
+  {
+    value: 50,
+    label: '50 km',
+  },
+  {
+    value: 100,
+    label: '100 km',
+  },
+];
 
 const ColSample = styled(Col)`
   padding-top: 15px;
@@ -61,9 +93,13 @@ storiesOf('Forms', module).add('RangeSlider', () => (
           <Row>
             <Col xsmall={2} small={4} medium={6}>
               <CodeExample code={Samples.Slider.code} showTitle={false} />
+              <p>With marks</p>
+              <CodeExample code={Samples.Slider.code} showTitle={false} />
             </Col>
             <ColSample xsmall={2} small={4} medium={6}>
               <Samples.Slider />
+              <p>With marks</p>
+              <Samples.Slider marks={marks} />
             </ColSample>
           </Row>
           <Title as="h2">Disable</Title>

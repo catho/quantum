@@ -14,7 +14,6 @@ export default [
   'Input',
   'RadioGroup',
   'Toggle',
-  'Slider',
   'TextArea',
   'Tag',
   'Pagination',
