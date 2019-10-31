@@ -4,6 +4,26 @@ import { shallow, mount } from 'enzyme';
 import Dropdown from './Dropdown';
 
 const selectedItemObject = { value: 'bazKey', label: 'baz' };
+const itemsWithImage = [
+  {
+    label: 'Master Card',
+    value: 'creditcard_0',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'descrição da imagem',
+  },
+  {
+    label: 'American Express Card',
+    value: 'creditcard_1',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'descrição da imagem',
+  },
+  {
+    label: 'Visa',
+    value: 'creditcard_2',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'descrição da imagem',
+  },
+];
 
 describe('Dropdown component ', () => {
   const withItems = (
@@ -24,6 +44,14 @@ describe('Dropdown component ', () => {
         { value: 'bazKey', label: 'baz' },
       ]}
       selectedItem={selectedItemObject}
+    />
+  );
+
+  const withImage = (
+    <Dropdown
+      placeholder="What credit card do you prefer?"
+      label="choose a credit card"
+      items={itemsWithImage}
     />
   );
 
@@ -50,6 +78,7 @@ describe('Dropdown component ', () => {
     ).toMatchSnapshot();
     expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
     expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
+    expect(renderer.create(withImage).toJSON()).toMatchSnapshot();
   });
 
   it('should find the selected item label when its is selected', () => {
@@ -73,6 +102,20 @@ describe('Dropdown component ', () => {
     expect(component.find('ArrowUp').text()).toEqual('arrow_drop_up');
     component.find('DropInput').simulate('click');
     expect(component.find('ArrowDown').text()).toEqual('arrow_drop_down');
+  });
+
+  it('should show image in dropdown item when its passed on items prop', () => {
+    const firstItemWithImage = itemsWithImage[0];
+    const component = mount(withImage);
+    component.find('DropInput').simulate('click');
+
+    const firstDropItemImage = component
+      .find('DropItemImage')
+      .first()
+      .props();
+
+    expect(firstDropItemImage.src).toMatch(firstItemWithImage.img);
+    expect(firstDropItemImage.alt).toMatch(firstItemWithImage.alt);
   });
 });
 

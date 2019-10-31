@@ -17,6 +17,7 @@ const ID_GENERATOR = uniqId('dropdown-');
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
+const DROPITEM_IMAGE_SIZE = '24px';
 
 const DropInput = styled(TextInput)`
   align-items: center;
@@ -201,8 +202,8 @@ const SelectedItemLabel = styled.span`
 
 const DropItemImage = styled.img`
   float: right;
-  width: 24px;
-  height: 24px;
+  width: ${DROPITEM_IMAGE_SIZE};
+  height: ${DROPITEM_IMAGE_SIZE};
 `;
 
 const DropItemLabel = styled.span`
@@ -214,6 +215,7 @@ DropItem.displayName = 'DropItem';
 SelectedItemLabel.displayName = 'SelectedItemLabel';
 ArrowDown.displayName = 'ArrowDown';
 ArrowUp.displayName = 'ArrowUp';
+DropItemImage.displayName = 'DropItemImage';
 
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
