@@ -115,6 +115,7 @@ RequiredMark.CODE = `<Dropdown
 
 const WithError = () => (
   <Dropdown
+    helperText="this is a example of error"
     error="Don't worry, this is just a message error example ;)"
     label="With an error"
     items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
@@ -158,6 +159,7 @@ AutoComplete.CODE = `<Dropdown
 
 const WithImages = () => (
   <Dropdown
+    helperText="this dropdown has images in the list"
     placeholder="What credit card do you prefer?"
     label="choose a credit card"
     items={[

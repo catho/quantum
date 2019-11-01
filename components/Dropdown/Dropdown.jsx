@@ -11,6 +11,7 @@ import {
   InputErrorMessage,
   RequiredMark,
   TextInput,
+  HelperText,
 } from '../Input/sub-components';
 
 const ID_GENERATOR = uniqId('dropdown-');
@@ -284,6 +285,7 @@ List.propTypes = {
 const Dropdown = ({
   label,
   error,
+  helperText,
   required,
   disabled,
   items,
@@ -397,6 +399,7 @@ const Dropdown = ({
                     isOpen={isOpen}
                     disabled={disabled}
                     error={error}
+                    helperText={helperText}
                     text={_buttonLabel}
                     theme={theme}
                     id={_id}
@@ -423,7 +426,7 @@ const Dropdown = ({
           );
         }}
       </Downshift>
-
+      {helperText && <HelperText>{helperText}</HelperText>}
       {error && <InputErrorMessage>{error}</InputErrorMessage>}
     </FieldGroup>
   );
@@ -438,20 +441,29 @@ Dropdown.defaultProps = {
   label: '',
   placeholder: 'Select an option',
   selectedItem: '',
+  helperText: '',
   items: [],
   onChange: () => {},
   theme: { colors, spacing, baseFontSize },
 };
 
 Dropdown.propTypes = {
+  /** Displays the list with start typing */
   autocomplete: PropTypes.bool,
+  /** Disables component */
   disabled: PropTypes.bool,
+  /** Displays a mark to shows thats component is required */
   required: PropTypes.bool,
+  /** Displays an error message and changes border color to error color */
   error: PropTypes.string,
   id: PropTypes.string,
+  /** Displays a label text that describes the field */
   label: PropTypes.string,
   placeholder: PropTypes.string,
+  /** Receives the item of the list to be selected */
   selectedItem: itemPropType,
+  /** Displays a helper text below the dropdown */
+  helperText: PropTypes.string,
   onChange: PropTypes.func,
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
