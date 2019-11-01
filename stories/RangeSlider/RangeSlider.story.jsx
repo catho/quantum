@@ -94,7 +94,10 @@ storiesOf('Forms', module).add('RangeSlider', () => (
             <Col xsmall={2} small={4} medium={6}>
               <CodeExample code={Samples.Slider.code} showTitle={false} />
               <p>With marks</p>
-              <CodeExample code={Samples.Slider.code} showTitle={false} />
+              <CodeExample
+                code={Samples.Slider.codeWithMarks}
+                showTitle={false}
+              />
             </Col>
             <ColSample xsmall={2} small={4} medium={6}>
               <Samples.Slider />
