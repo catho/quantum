@@ -91,7 +91,7 @@ exports[`Input component should match snapshots 2`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -269,7 +269,7 @@ exports[`Input component should match snapshots 4`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -421,7 +421,7 @@ exports[`Input component should match snapshots 6`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -695,7 +695,7 @@ exports[`Input component should match snapshots 10`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -1117,7 +1117,7 @@ exports[`Input component should match snapshots 17`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",

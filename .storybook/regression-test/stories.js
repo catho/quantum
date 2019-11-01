@@ -25,4 +25,5 @@ export default [
   'TabbedView',
   'Tooltip',
   'Modal',
+  'Popover',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);

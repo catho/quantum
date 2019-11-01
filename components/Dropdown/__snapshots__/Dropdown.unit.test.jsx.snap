@@ -73,7 +73,7 @@ exports[`Input component  should match the snapshot 1`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -137,7 +137,7 @@ exports[`Input component  should match the snapshot 1`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -276,7 +276,7 @@ exports[`Input component  should match the snapshot 2`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -340,7 +340,7 @@ exports[`Input component  should match the snapshot 2`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -482,7 +482,7 @@ exports[`Input component  should match the snapshot 3`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -546,7 +546,7 @@ exports[`Input component  should match the snapshot 3`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -697,7 +697,7 @@ exports[`Input component  should match the snapshot 4`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -761,7 +761,7 @@ exports[`Input component  should match the snapshot 4`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -904,7 +904,7 @@ exports[`Input component  should match the snapshot 5`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -968,7 +968,7 @@ exports[`Input component  should match the snapshot 5`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1113,7 +1113,7 @@ exports[`Input component  should match the snapshot 6`] = `
 }
 
 .c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c4 {
@@ -1184,7 +1184,7 @@ exports[`Input component  should match the snapshot 6`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1333,7 +1333,7 @@ exports[`Input component  should match the snapshot 7`] = `
 }
 
 .c4:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c5 {
@@ -1409,7 +1409,7 @@ exports[`Input component  should match the snapshot 7`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1549,7 +1549,7 @@ exports[`Input component  should match the snapshot 8`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -1625,7 +1625,7 @@ exports[`Input component  should match the snapshot 8`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1764,7 +1764,7 @@ exports[`Input component  should match the snapshot 9`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -1828,7 +1828,7 @@ exports[`Input component  should match the snapshot 9`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1966,7 +1966,7 @@ exports[`Input component  should match the snapshot 10`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -2030,7 +2030,7 @@ exports[`Input component  should match the snapshot 10`] = `
           Object {
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",

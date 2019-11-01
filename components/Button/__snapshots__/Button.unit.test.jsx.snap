@@ -938,7 +938,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
+            "100": "#fff5f5",
             "300": "#f88e86",
             "500": "#ec584e",
             "700": "#e91b0c",
@@ -987,7 +987,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
+                  "100": "#fff5f5",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -1294,7 +1294,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
+            "100": "#fff5f5",
             "300": "#f88e86",
             "500": "#ec584e",
             "700": "#e91b0c",
@@ -1343,7 +1343,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
+                  "100": "#fff5f5",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -1650,7 +1650,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
+            "100": "#fff5f5",
             "300": "#f88e86",
             "500": "#ec584e",
             "700": "#e91b0c",
@@ -1699,7 +1699,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
+                  "100": "#fff5f5",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",
@@ -2006,7 +2006,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
         },
         "colors": Object {
           "error": Object {
-            "100": "#ffe5e9",
+            "100": "#fff5f5",
             "300": "#f88e86",
             "500": "#ec584e",
             "700": "#e91b0c",
@@ -2055,7 +2055,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
             "skins": Object {
               "error": Object {
                 "mainColor": Object {
-                  "100": "#ffe5e9",
+                  "100": "#fff5f5",
                   "300": "#f88e86",
                   "500": "#ec584e",
                   "700": "#e91b0c",

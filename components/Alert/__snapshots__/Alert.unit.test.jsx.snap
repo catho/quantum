@@ -191,7 +191,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
             },
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -239,7 +239,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
               "alert": Object {
                 "skins": Object {
                   "error": Object {
-                    "background": "#ffe5e9",
+                    "background": "#fff5f5",
                     "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
@@ -269,7 +269,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
-                      "100": "#ffe5e9",
+                      "100": "#fff5f5",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -603,7 +603,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
             },
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -651,7 +651,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
               "alert": Object {
                 "skins": Object {
                   "error": Object {
-                    "background": "#ffe5e9",
+                    "background": "#fff5f5",
                     "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
@@ -681,7 +681,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
-                      "100": "#ffe5e9",
+                      "100": "#fff5f5",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -1004,7 +1004,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1052,7 +1052,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "alert": Object {
                 "skins": Object {
                   "error": Object {
-                    "background": "#ffe5e9",
+                    "background": "#fff5f5",
                     "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
@@ -1082,7 +1082,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
-                      "100": "#ffe5e9",
+                      "100": "#fff5f5",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -1422,7 +1422,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1470,7 +1470,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "alert": Object {
                 "skins": Object {
                   "error": Object {
-                    "background": "#ffe5e9",
+                    "background": "#fff5f5",
                     "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
@@ -1500,7 +1500,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
-                      "100": "#ffe5e9",
+                      "100": "#fff5f5",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -1857,7 +1857,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1905,7 +1905,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "alert": Object {
                 "skins": Object {
                   "error": Object {
-                    "background": "#ffe5e9",
+                    "background": "#fff5f5",
                     "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
@@ -1935,7 +1935,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
-                      "100": "#ffe5e9",
+                      "100": "#fff5f5",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -2309,7 +2309,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -2357,7 +2357,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "alert": Object {
                 "skins": Object {
                   "error": Object {
-                    "background": "#ffe5e9",
+                    "background": "#fff5f5",
                     "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
@@ -2387,7 +2387,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
-                      "100": "#ffe5e9",
+                      "100": "#fff5f5",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
@@ -2702,7 +2702,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #ffe5e9;
+  background-color: #fff5f5;
   border: 1.5px solid #e91b0c;
   color: #ac001a;
   padding: 12px 16px;
@@ -2778,7 +2778,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
             },
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -2826,7 +2826,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "alert": Object {
                 "skins": Object {
                   "error": Object {
-                    "background": "#ffe5e9",
+                    "background": "#fff5f5",
                     "icon": "#e91b0c",
                     "text": "#ac001a",
                   },
@@ -2856,7 +2856,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                 "skins": Object {
                   "error": Object {
                     "mainColor": Object {
-                      "100": "#ffe5e9",
+                      "100": "#fff5f5",
                       "300": "#f88e86",
                       "500": "#ec584e",
                       "700": "#e91b0c",
