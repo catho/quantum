@@ -129,7 +129,7 @@ Popover.propTypes = {
     PropTypes.node,
   ]).isRequired,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-  skin: oneOf(['neutral', 'success', 'warning', 'error']),
+  skin: oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   trigger: PropTypes.node.isRequired,
   onClose: PropTypes.func,
 };

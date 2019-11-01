@@ -3,6 +3,7 @@ import PopoverExampleTop from './PopoverExampleTop';
 import PopoverExampleRight from './PopoverExampleRight';
 import PopoverExampleBottom from './PopoverExampleBottom';
 import PopoverExampleLeft from './PopoverExampleLeft';
+import PopoverExampleChildren from './PopoverExampleChildren';
 
 export default [
   {
@@ -20,5 +21,9 @@ export default [
   {
     code: PopoverExampleLeft.code,
     component: <PopoverExampleLeft />,
+  },
+  {
+    code: PopoverExampleChildren.code,
+    component: <PopoverExampleChildren />,
   },
 ];
