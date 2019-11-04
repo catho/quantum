@@ -269,11 +269,14 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
 );
 
 List.defaultProps = {
-  selectedItem: '',
+  selectedItem: null,
 };
 
 List.propTypes = {
-  selectedItem: PropTypes.shape(itemPropType),
+  selectedItem: PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  }),
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
@@ -440,7 +443,7 @@ Dropdown.defaultProps = {
   id: '',
   label: '',
   placeholder: 'Select an option',
-  selectedItem: '',
+  selectedItem: null,
   helperText: '',
   items: [],
   onChange: () => {},
