@@ -4736,27 +4736,30 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <WithStyles(ForwardRef(Icon))
+                      <WithStyles(Icon)
                         style={
                           Object {
                             "color": "",
                           }
                         }
                       >
-                        <ForwardRef(Icon)
+                        <Icon
                           classes={
                             Object {
-                              "colorAction": "MuiIcon-colorAction",
-                              "colorDisabled": "MuiIcon-colorDisabled",
-                              "colorError": "MuiIcon-colorError",
-                              "colorPrimary": "MuiIcon-colorPrimary",
-                              "colorSecondary": "MuiIcon-colorSecondary",
-                              "fontSizeInherit": "MuiIcon-fontSizeInherit",
-                              "fontSizeLarge": "MuiIcon-fontSizeLarge",
-                              "fontSizeSmall": "MuiIcon-fontSizeSmall",
-                              "root": "MuiIcon-root",
+                              "colorAction": "MuiIcon-colorAction-4",
+                              "colorDisabled": "MuiIcon-colorDisabled-6",
+                              "colorError": "MuiIcon-colorError-5",
+                              "colorPrimary": "MuiIcon-colorPrimary-2",
+                              "colorSecondary": "MuiIcon-colorSecondary-3",
+                              "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                              "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                              "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                              "root": "MuiIcon-root-1",
                             }
                           }
+                          color="inherit"
+                          component="span"
+                          fontSize="default"
                           style={
                             Object {
                               "color": "",
@@ -4764,8 +4767,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           }
                         >
                           <span
-                            aria-hidden={true}
-                            className="material-icons MuiIcon-root"
+                            aria-hidden="true"
+                            className="material-icons MuiIcon-root-1"
                             style={
                               Object {
                                 "color": "",
@@ -4774,8 +4777,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           >
                             star
                           </span>
-                        </ForwardRef(Icon)>
-                      </WithStyles(ForwardRef(Icon))>
+                        </Icon>
+                      </WithStyles(Icon)>
                     </Icon>
                   </div>
                 </StyledComponent>
@@ -5545,27 +5548,30 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <WithStyles(ForwardRef(Icon))
+                      <WithStyles(Icon)
                         style={
                           Object {
                             "color": "",
                           }
                         }
                       >
-                        <ForwardRef(Icon)
+                        <Icon
                           classes={
                             Object {
-                              "colorAction": "MuiIcon-colorAction",
-                              "colorDisabled": "MuiIcon-colorDisabled",
-                              "colorError": "MuiIcon-colorError",
-                              "colorPrimary": "MuiIcon-colorPrimary",
-                              "colorSecondary": "MuiIcon-colorSecondary",
-                              "fontSizeInherit": "MuiIcon-fontSizeInherit",
-                              "fontSizeLarge": "MuiIcon-fontSizeLarge",
-                              "fontSizeSmall": "MuiIcon-fontSizeSmall",
-                              "root": "MuiIcon-root",
+                              "colorAction": "MuiIcon-colorAction-4",
+                              "colorDisabled": "MuiIcon-colorDisabled-6",
+                              "colorError": "MuiIcon-colorError-5",
+                              "colorPrimary": "MuiIcon-colorPrimary-2",
+                              "colorSecondary": "MuiIcon-colorSecondary-3",
+                              "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                              "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                              "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                              "root": "MuiIcon-root-1",
                             }
                           }
+                          color="inherit"
+                          component="span"
+                          fontSize="default"
                           style={
                             Object {
                               "color": "",
@@ -5573,8 +5579,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           }
                         >
                           <span
-                            aria-hidden={true}
-                            className="material-icons MuiIcon-root"
+                            aria-hidden="true"
+                            className="material-icons MuiIcon-root-1"
                             style={
                               Object {
                                 "color": "",
@@ -5583,8 +5589,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           >
                             star
                           </span>
-                        </ForwardRef(Icon)>
-                      </WithStyles(ForwardRef(Icon))>
+                        </Icon>
+                      </WithStyles(Icon)>
                     </Icon>
                   </div>
                 </StyledComponent>
