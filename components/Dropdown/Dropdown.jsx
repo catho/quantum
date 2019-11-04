@@ -28,13 +28,20 @@ const DropInput = styled(TextInput)`
 
   ${({
     text,
+    autocomplete,
     theme,
     theme: {
       colors: {
         neutral: { 900: neutral900, 500: neutral500 },
       },
+      spacing: { xsmall, medium, xxxlarge },
     },
   }) => `
+    ${
+      autocomplete
+        ? `padding: ${xsmall}px ${xxxlarge}px ${xsmall}px ${medium}px;`
+        : ''
+    }
     ${!text ? 'flex-direction: row-reverse;' : ''}
     color: ${neutral900};
     ${shadow(5, neutral500)({ theme })};
@@ -335,6 +342,7 @@ const Dropdown = ({
         onChange={onChange}
         itemToString={_getValue}
         stateReducer={_highlightedReducer}
+        autocomplete={autocomplete}
       >
         {({
           getRootProps,
@@ -377,6 +385,7 @@ const Dropdown = ({
                       text={_buttonLabel}
                       theme={theme}
                       id={_id}
+                      autocomplete={autocomplete}
                     />
                     {isOpen ? (
                       <InputArrowUp theme={theme} />
