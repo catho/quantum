@@ -2207,7 +2207,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
 }
 
 .c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c4 {
@@ -2267,8 +2267,8 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     >
       What credit card do you prefer?
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c4"
         style={
           Object {
             "color": "",
@@ -2279,7 +2279,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
