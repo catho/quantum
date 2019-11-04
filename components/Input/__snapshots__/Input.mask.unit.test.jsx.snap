@@ -77,8 +77,8 @@ exports[`Input component should match snapshots 2`] = `
     />
     
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c2"
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c2"
       description=""
       onClick={[Function]}
       style={
@@ -91,7 +91,7 @@ exports[`Input component should match snapshots 2`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -256,8 +256,8 @@ exports[`Input component should match snapshots 4`] = `
       value=""
     />
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c2"
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c2"
       description=""
       style={
         Object {
@@ -269,7 +269,7 @@ exports[`Input component should match snapshots 4`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -408,8 +408,8 @@ exports[`Input component should match snapshots 6`] = `
     className="c1"
   >
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c2"
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c2"
       description=""
       style={
         Object {
@@ -421,7 +421,7 @@ exports[`Input component should match snapshots 6`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -682,8 +682,8 @@ exports[`Input component should match snapshots 10`] = `
     className="c2"
   >
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c3"
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c3"
       description="this is a description label"
       style={
         Object {
@@ -695,7 +695,7 @@ exports[`Input component should match snapshots 10`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",
@@ -1103,8 +1103,8 @@ exports[`Input component should match snapshots 17`] = `
     />
     
     <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-1 c2"
+      aria-hidden={true}
+      className="material-icons MuiIcon-root c2"
       description=""
       onClick={[Function]}
       style={
@@ -1117,7 +1117,7 @@ exports[`Input component should match snapshots 17`] = `
           "baseFontSize": 16,
           "colors": Object {
             "error": Object {
-              "100": "#ffe5e9",
+              "100": "#fff5f5",
               "300": "#f88e86",
               "500": "#ec584e",
               "700": "#e91b0c",

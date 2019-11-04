@@ -14,7 +14,6 @@ export default [
   'Input',
   'RadioGroup',
   'Toggle',
-  'Slider',
   'TextArea',
   'Tag',
   'Pagination',
@@ -22,7 +21,9 @@ export default [
   'Skeleton',
   'ProgressBar',
   'CircularLoader',
+  'RangeSlider',
   'TabbedView',
   'Tooltip',
   'Modal',
+  'Popover',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);

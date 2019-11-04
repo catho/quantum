@@ -26,7 +26,7 @@ export default [
   'RadioGroup',
   'Toggle',
   'Form',
-  'Slider',
+  'RangeSlider',
   'TextArea',
 
   // Loaders

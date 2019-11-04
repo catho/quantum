@@ -74,7 +74,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -127,8 +127,8 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     >
       Select an option
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -139,7 +139,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -280,7 +280,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -333,8 +333,8 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     >
       Dropdown placeholder
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -345,7 +345,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -489,7 +489,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -542,8 +542,8 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     >
       
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -554,7 +554,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -707,7 +707,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -760,8 +760,8 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     >
       Select an option
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -772,7 +772,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -917,7 +917,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -970,8 +970,8 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     >
       Select an option
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -982,7 +982,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1129,7 +1129,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
 }
 
 .c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c4 {
@@ -1189,8 +1189,8 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     >
       Select an option
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c4"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c4"
         style={
           Object {
             "color": "",
@@ -1201,7 +1201,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1352,7 +1352,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
 }
 
 .c4:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c5 {
@@ -1417,8 +1417,8 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     >
       Select an option
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c5"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c5"
         style={
           Object {
             "color": "",
@@ -1429,7 +1429,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1571,7 +1571,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -1636,8 +1636,8 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         value=""
       />
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -1648,7 +1648,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1789,7 +1789,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -1842,8 +1842,8 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     >
       Select an option
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -1854,7 +1854,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
@@ -1995,7 +1995,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 .c3 {
@@ -2048,8 +2048,8 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     >
       baz
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3"
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3"
         style={
           Object {
             "color": "",
@@ -2060,7 +2060,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
             "baseFontSize": 16,
             "colors": Object {
               "error": Object {
-                "100": "#ffe5e9",
+                "100": "#fff5f5",
                 "300": "#f88e86",
                 "500": "#ec584e",
                 "700": "#e91b0c",
