@@ -13,6 +13,7 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <svg
@@ -47,6 +48,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <svg
@@ -81,6 +83,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and isOpened 1
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <svg
@@ -114,7 +117,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
   position: absolute;
   width: 7px;
   height: 7px;
-  border: solid 2px #000000;
+  border: solid 2px #ffffff;
   top: 0;
   right: 0;
   border-radius: 7px;
@@ -126,9 +129,11 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <span
+    aria-label="There are new notifications"
     className="c1"
   />
   <svg
@@ -163,6 +168,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted, showNotificat
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <svg
@@ -197,6 +203,7 @@ exports[`<Hamburger /> Should match snapshot with props: isOpened 1`] = `
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <svg
@@ -242,9 +249,11 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <span
+    aria-label="There are new notifications"
     className="c1"
   />
   <svg
@@ -279,6 +288,7 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification and is
 }
 
 <div
+  aria-live="polite"
   className="c0"
 >
   <svg
