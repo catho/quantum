@@ -26,7 +26,7 @@ const NotificationIcon = styled.span`
   position: absolute;
   width: ${NOTIFICATION_SIZE}px;
   height: ${NOTIFICATION_SIZE}px;
-  border: solid 2px ${colors.neutral[1000]};
+  border: solid 2px ${props => colors.neutral[!props.inverted ? 1000 : 0]}}};
   top: 0;
   right: 0;
   border-radius: ${NOTIFICATION_SIZE}px;
@@ -41,16 +41,26 @@ const CloseIconWrapper = styled(CloseIcon)`
   color: ${getColors};
 `;
 
-const Hamburger = ({ showNotification, isOpened, inverted }) => {
+const Hamburger = ({
+  showNotification,
+  isOpened,
+  inverted,
+  ariaLabelDescription,
+}) => {
   const HamburgerBlock = (
     <>
-      {showNotification && <NotificationIcon />}
+      {showNotification && (
+        <NotificationIcon
+          aria-label={ariaLabelDescription}
+          inverted={inverted}
+        />
+      )}
       <HamburgerIconWrapper inverted={inverted} />
     </>
   );
 
   return (
-    <HamburgerWrapper inverted={inverted}>
+    <HamburgerWrapper inverted={inverted} aria-live="polite">
       {!isOpened ? HamburgerBlock : <CloseIconWrapper inverted={inverted} />}
     </HamburgerWrapper>
   );
@@ -64,12 +74,14 @@ Hamburger.propTypes = {
   isOpened: PropTypes.bool,
   /** Swap background and text color */
   inverted: PropTypes.bool,
+  ariaLabelDescription: PropTypes.string,
 };
 
 Hamburger.defaultProps = {
   inverted: false,
   showNotification: false,
   isOpened: false,
+  ariaLabelDescription: 'There are new notifications',
 };
 
 export default Hamburger;

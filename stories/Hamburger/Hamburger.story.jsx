@@ -75,16 +75,12 @@ const TabExample = (
   </Tab>
 );
 
-const description = `Hamburgers are used for showing quantity of something, as
-warnings, inbox messages and others.`;
+const description = `Hamburger is used for opening mobile menu. You can also pass a aria-label description to inform screen readers that there are new notifications`;
 
 storiesOf('Hamburger', module).add('Hamburger', () => (
   <AutoExample
     description={description}
     component={Hamburger}
-    componentProps={{
-      number: 10,
-    }}
     additionalTabs={TabExample}
   />
 ));
