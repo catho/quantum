@@ -9,19 +9,19 @@ const itemsWithImage = [
     label: 'Master Card',
     value: 'creditcard_0',
     img: 'https://dummyimage.com/24x24',
-    alt: 'descrição da imagem',
+    alt: 'image description',
   },
   {
     label: 'American Express Card',
     value: 'creditcard_1',
     img: 'https://dummyimage.com/24x24',
-    alt: 'descrição da imagem',
+    alt: 'image description',
   },
   {
     label: 'Visa',
     value: 'creditcard_2',
     img: 'https://dummyimage.com/24x24',
-    alt: 'descrição da imagem',
+    alt: 'image description',
   },
 ];
 
