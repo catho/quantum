@@ -14,13 +14,13 @@ import Icon from './Icon';
 import Input from './Input';
 import Popover from './Popover';
 import RadioGroup from './RadioGroup';
-import Slider from './Slider';
 import SnackBar from './SnackBar';
 import Tag from './Tag';
 import TextArea from './TextArea';
 import Toggle from './Toggle';
 import Tooltip from './Tooltip';
 import Modal from './Modal';
+import RangeSlider from './RangeSlider';
 import Skeleton from './Skeleton';
 import ProgressBar from './ProgressBar';
 import CircularLoader from './CircularLoader';
@@ -48,9 +48,9 @@ export {
   ProgressBar,
   CircularLoader,
   Popover,
+  RangeSlider,
   RadioGroup,
   Row,
-  Slider,
   SnackBar,
   Tag,
   TextArea,

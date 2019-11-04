@@ -464,8 +464,8 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -536,8 +536,8 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -613,8 +613,8 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -695,8 +695,8 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -782,8 +782,8 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -874,8 +874,8 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -971,8 +971,8 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1073,8 +1073,8 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1180,8 +1180,8 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1292,8 +1292,8 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1404,8 +1404,8 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1516,8 +1516,8 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1628,8 +1628,8 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1740,8 +1740,8 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",
@@ -1852,8 +1852,8 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
       size="medium"
     >
       <span
-        aria-hidden="true"
-        className="material-icons MuiIcon-root-1 c3 "
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c3 "
         style={
           Object {
             "color": "",

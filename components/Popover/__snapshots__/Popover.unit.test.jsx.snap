@@ -1552,7 +1552,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-1 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -4186,7 +4186,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -4417,24 +4417,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-4",
-                                            "colorDisabled": "MuiIcon-colorDisabled-6",
-                                            "colorError": "MuiIcon-colorError-5",
-                                            "colorPrimary": "MuiIcon-colorPrimary-2",
-                                            "colorSecondary": "MuiIcon-colorSecondary-3",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
-                                            "root": "MuiIcon-root-1",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -4665,8 +4662,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-1 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -4898,8 +4895,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
@@ -5559,7 +5556,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-10 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -8193,7 +8190,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -8424,24 +8421,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-13",
-                                            "colorDisabled": "MuiIcon-colorDisabled-15",
-                                            "colorError": "MuiIcon-colorError-14",
-                                            "colorPrimary": "MuiIcon-colorPrimary-11",
-                                            "colorSecondary": "MuiIcon-colorSecondary-12",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-16",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-18",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-17",
-                                            "root": "MuiIcon-root-10",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -8672,8 +8666,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-10 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -8905,8 +8899,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
@@ -9598,7 +9592,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-19 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -12232,7 +12226,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -12463,24 +12457,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-22",
-                                            "colorDisabled": "MuiIcon-colorDisabled-24",
-                                            "colorError": "MuiIcon-colorError-23",
-                                            "colorPrimary": "MuiIcon-colorPrimary-20",
-                                            "colorSecondary": "MuiIcon-colorSecondary-21",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-25",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-27",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-26",
-                                            "root": "MuiIcon-root-19",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -12711,8 +12702,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-19 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -12944,8 +12935,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
@@ -13669,7 +13660,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-28 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -16303,7 +16294,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -16534,24 +16525,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-31",
-                                            "colorDisabled": "MuiIcon-colorDisabled-33",
-                                            "colorError": "MuiIcon-colorError-32",
-                                            "colorPrimary": "MuiIcon-colorPrimary-29",
-                                            "colorSecondary": "MuiIcon-colorSecondary-30",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-34",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-36",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-35",
-                                            "root": "MuiIcon-root-28",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -16782,8 +16770,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-28 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -17015,8 +17003,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
@@ -17772,7 +17760,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-37 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -20406,7 +20394,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -20637,24 +20625,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-40",
-                                            "colorDisabled": "MuiIcon-colorDisabled-42",
-                                            "colorError": "MuiIcon-colorError-41",
-                                            "colorPrimary": "MuiIcon-colorPrimary-38",
-                                            "colorSecondary": "MuiIcon-colorSecondary-39",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-43",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-45",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-44",
-                                            "root": "MuiIcon-root-37",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -20885,8 +20870,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-37 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -21118,8 +21103,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
@@ -21875,7 +21860,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-46 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -24509,7 +24494,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -24740,24 +24725,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-49",
-                                            "colorDisabled": "MuiIcon-colorDisabled-51",
-                                            "colorError": "MuiIcon-colorError-50",
-                                            "colorPrimary": "MuiIcon-colorPrimary-47",
-                                            "colorSecondary": "MuiIcon-colorSecondary-48",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-52",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-54",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-53",
-                                            "root": "MuiIcon-root-46",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -24988,8 +24970,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-46 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -25221,8 +25203,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
@@ -25972,7 +25954,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-55 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -28606,7 +28588,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -28837,24 +28819,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-58",
-                                            "colorDisabled": "MuiIcon-colorDisabled-60",
-                                            "colorError": "MuiIcon-colorError-59",
-                                            "colorPrimary": "MuiIcon-colorPrimary-56",
-                                            "colorSecondary": "MuiIcon-colorSecondary-57",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-61",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-63",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-62",
-                                            "root": "MuiIcon-root-55",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -29085,8 +29064,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-55 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -29318,8 +29297,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
@@ -30069,7 +30048,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   >
                     <span
                       aria-hidden="true"
-                      class="material-icons MuiIcon-root-64 c3 c4"
+                      class="material-icons MuiIcon-root c3 c4"
                       theme="[object Object]"
                     >
                       close
@@ -32703,7 +32682,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                       }
                                     }
                                   >
-                                    <WithStyles(Icon)
+                                    <WithStyles(ForwardRef(Icon))
                                       className="c4 c5"
                                       size="medium"
                                       style={
@@ -32934,24 +32913,21 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       }
                                     >
-                                      <Icon
+                                      <ForwardRef(Icon)
                                         className="c4 c5"
                                         classes={
                                           Object {
-                                            "colorAction": "MuiIcon-colorAction-67",
-                                            "colorDisabled": "MuiIcon-colorDisabled-69",
-                                            "colorError": "MuiIcon-colorError-68",
-                                            "colorPrimary": "MuiIcon-colorPrimary-65",
-                                            "colorSecondary": "MuiIcon-colorSecondary-66",
-                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-70",
-                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-72",
-                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-71",
-                                            "root": "MuiIcon-root-64",
+                                            "colorAction": "MuiIcon-colorAction",
+                                            "colorDisabled": "MuiIcon-colorDisabled",
+                                            "colorError": "MuiIcon-colorError",
+                                            "colorPrimary": "MuiIcon-colorPrimary",
+                                            "colorSecondary": "MuiIcon-colorSecondary",
+                                            "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                                            "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                                            "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                                            "root": "MuiIcon-root",
                                           }
                                         }
-                                        color="inherit"
-                                        component="span"
-                                        fontSize="default"
                                         size="medium"
                                         style={
                                           Object {
@@ -33182,8 +33158,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         }
                                       >
                                         <span
-                                          aria-hidden="true"
-                                          className="material-icons MuiIcon-root-64 c4 c5"
+                                          aria-hidden={true}
+                                          className="material-icons MuiIcon-root c4 c5"
                                           size="medium"
                                           style={
                                             Object {
@@ -33415,8 +33391,8 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         >
                                           close
                                         </span>
-                                      </Icon>
-                                    </WithStyles(Icon)>
+                                      </ForwardRef(Icon)>
+                                    </WithStyles(ForwardRef(Icon))>
                                   </Icon>
                                 </StyledComponent>
                               </Button__ButtonIcon>
