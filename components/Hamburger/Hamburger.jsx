@@ -6,6 +6,9 @@ import CloseIcon from '@material-ui/icons/Close';
 import styled from 'styled-components';
 import { colors } from '../shared/theme';
 
+const HAMBURGER_SIZE = 24;
+const NOTIFICATION_SIZE = 7;
+
 const getColors = ({ inverted }) => {
   const weight = !inverted ? 0 : 900;
 
@@ -15,18 +18,18 @@ const getColors = ({ inverted }) => {
 const HamburgerWrapper = styled.div`
   display: inline-block;
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: ${HAMBURGER_SIZE}px;
+  height: ${HAMBURGER_SIZE}px;
 `;
 
 const NotificationIcon = styled.span`
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: ${NOTIFICATION_SIZE}px;
+  height: ${NOTIFICATION_SIZE}px;
   border: solid 2px ${colors.neutral[1000]};
   top: 0;
   right: 0;
-  border-radius: 7px;
+  border-radius: ${NOTIFICATION_SIZE}px;
   background-color: ${colors.error[700]};
 `;
 
