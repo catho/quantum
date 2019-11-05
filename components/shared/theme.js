@@ -52,7 +52,7 @@ const colors = {
     900: '#d14900',
   },
   error: {
-    100: '#ffe5e9',
+    100: '#fff5f5',
     300: '#f88e86',
     500: '#ec584e',
     700: '#e91b0c',
@@ -169,17 +169,21 @@ const components = {
         background: colors.neutral[0],
         text: colors.neutral[700],
       },
+      primary: {
+        background: colors.primary[100],
+        text: colors.neutral[700],
+      },
       success: {
         background: colors.success[100],
         text: colors.success[900],
       },
       warning: {
         background: colors.warning[100],
-        text: colors.warning[900],
+        text: colors.neutral[700],
       },
       error: {
         background: colors.error[100],
-        text: colors.error[900],
+        text: colors.neutral[700],
       },
     },
   },

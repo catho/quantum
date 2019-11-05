@@ -41,7 +41,7 @@ const _getTextColor = ({
 
 const PopoverContent = styled.div`
   ${shadow(5)};
-  align-items: start;
+  align-items: center;
   display: flex;
   border-radius: 4px;
   font-size: 16px;
@@ -75,6 +75,7 @@ const CloseButton = styled(Button.Icon).attrs({
     },
   }) => `margin-left: ${medium}px;`}
 
+  min-height: auto;
   opacity: 0.8;
   padding: 0;
   transition: opacity 0.4s ease;
@@ -150,7 +151,7 @@ Content.propTypes = {
   inverted: PropTypes.bool,
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   onPopoverClose: PropTypes.func,
-  skin: PropTypes.oneOf(['neutral', 'success', 'warning', 'error']),
+  skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,

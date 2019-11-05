@@ -64,7 +64,7 @@ exports[`TextArea component should match snapshots 1`] = `
 }
 
 .c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
@@ -149,7 +149,7 @@ exports[`TextArea component should match snapshots 2`] = `
 }
 
 .c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
@@ -239,7 +239,7 @@ exports[`TextArea component should match snapshots 3`] = `
 }
 
 .c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
@@ -339,7 +339,7 @@ exports[`TextArea component should match snapshots 4`] = `
 }
 
 .c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
@@ -434,7 +434,7 @@ exports[`TextArea component should match snapshots 5`] = `
 }
 
 .c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
@@ -519,7 +519,7 @@ exports[`TextArea component should match snapshots 6`] = `
 }
 
 .c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
@@ -615,7 +615,7 @@ exports[`TextArea component should match snapshots 7`] = `
 }
 
 .c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
@@ -715,7 +715,7 @@ exports[`TextArea component should match snapshots 8`] = `
 }
 
 .c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #ffe5e9 inset;
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
 <div
