@@ -1,38 +1,29 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 
 import Hamburger from '../../components/Hamburger';
 
+const InvertedBackground = styled.span`
+  background-color: #000;
+  display: inline-block;
+`;
+
 storiesOf('Hamburger', module)
   .add('default', () => (
-    <span
-      style={{
-        backgroundColor: '#000',
-        display: 'inline-block',
-      }}
-    >
+    <InvertedBackground>
       <Hamburger />
-    </span>
+    </InvertedBackground>
   ))
   .add('showNotification', () => (
-    <span
-      style={{
-        backgroundColor: '#000',
-        display: 'inline-block',
-      }}
-    >
+    <InvertedBackground>
       <Hamburger showNotification />
-    </span>
+    </InvertedBackground>
   ))
   .add('isOpened', () => (
-    <span
-      style={{
-        backgroundColor: '#000',
-        display: 'inline-block',
-      }}
-    >
+    <InvertedBackground>
       <Hamburger isOpened />
-    </span>
+    </InvertedBackground>
   ))
   .add('inverted', () => <Hamburger inverted />)
   .add('inverted showNotification', () => (
