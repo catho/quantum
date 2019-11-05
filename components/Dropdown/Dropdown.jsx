@@ -280,10 +280,7 @@ List.defaultProps = {
 };
 
 List.propTypes = {
-  selectedItem: PropTypes.shape({
-    label: PropTypes.string,
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  }),
+  selectedItem: itemPropType,
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
