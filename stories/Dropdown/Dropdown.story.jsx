@@ -25,12 +25,12 @@ import {
   WithImages,
 } from './examples';
 
-const DropdownExample = ({ component: Component }) => (
+const DropdownExample = ({ component: Component, position }) => (
   <Row>
-    <Col xsmall={2} small={4} medium={6}>
+    <Col xsmall={2} small={4} medium={6} key={position}>
       <SimpleHighlight>{Component.CODE}</SimpleHighlight>
     </Col>
-    <Col xsmall={2} small={4} medium={6}>
+    <Col xsmall={2} small={4} medium={6} key={position + 1}>
       <Component />
     </Col>
   </Row>
@@ -38,6 +38,7 @@ const DropdownExample = ({ component: Component }) => (
 
 DropdownExample.propTypes = {
   component: PropTypes.func.isRequired,
+  position: PropTypes.string.isRequired,
 };
 
 const importCode = "import { Dropdown } from '@catho/quantum';";
@@ -74,14 +75,14 @@ storiesOf('Forms', module).add('Dropdown', () => (
               values and labels.
             </p>
           </div>
-          <DropdownExample component={Simple} />
-          <DropdownExample component={CustomLabel} />
-          <DropdownExample component={AutoComplete} />
-          <DropdownExample component={RequiredMark} />
-          <DropdownExample component={WithError} />
-          <DropdownExample component={Disabled} />
-          <DropdownExample component={WithImages} />
-          <DropdownExample component={Controlled} />
+          <DropdownExample component={Simple} position="1" />
+          <DropdownExample component={CustomLabel} position="2" />
+          <DropdownExample component={AutoComplete} position="3" />
+          <DropdownExample component={RequiredMark} position="4" />
+          <DropdownExample component={WithError} position="5" />
+          <DropdownExample component={Disabled} position="6" />
+          <DropdownExample component={WithImages} position="7" />
+          <DropdownExample component={Controlled} position="8" />
         </StoryContainer>
       </Tab>
       <Tab title="API">
