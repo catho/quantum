@@ -18,7 +18,7 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c1"
+    className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={false}
     role="presentation"
@@ -53,7 +53,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c1"
+    className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={true}
     role="presentation"
@@ -88,7 +88,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and isOpened 1
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c1"
+    className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={true}
     role="presentation"
@@ -138,7 +138,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
   />
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c2"
+    className="MuiSvgIcon-root c2"
     focusable="false"
     inverted={true}
     role="presentation"
@@ -173,7 +173,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted, showNotificat
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c1"
+    className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={true}
     role="presentation"
@@ -208,7 +208,7 @@ exports[`<Hamburger /> Should match snapshot with props: isOpened 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c1"
+    className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={false}
     role="presentation"
@@ -258,7 +258,7 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
   />
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c2"
+    className="MuiSvgIcon-root c2"
     focusable="false"
     inverted={false}
     role="presentation"
@@ -293,7 +293,7 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification and is
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root-1 c1"
+    className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={false}
     role="presentation"
