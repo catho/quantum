@@ -20,7 +20,7 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
     aria-hidden="true"
     className="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={false}
+    inverted={0}
     role="presentation"
     viewBox="0 0 24 24"
   >
@@ -55,7 +55,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
     aria-hidden="true"
     className="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={true}
+    inverted={1}
     role="presentation"
     viewBox="0 0 24 24"
   >
@@ -140,7 +140,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
     aria-hidden="true"
     className="MuiSvgIcon-root c2"
     focusable="false"
-    inverted={true}
+    inverted={1}
     role="presentation"
     viewBox="0 0 24 24"
   >
@@ -260,7 +260,7 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
     aria-hidden="true"
     className="MuiSvgIcon-root c2"
     focusable="false"
-    inverted={false}
+    inverted={0}
     role="presentation"
     viewBox="0 0 24 24"
   >

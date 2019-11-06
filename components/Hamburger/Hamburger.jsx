@@ -10,6 +10,8 @@ const HAMBURGER_SIZE = 24;
 const NOTIFICATION_SIZE = 7;
 
 const getColors = ({ inverted }) => {
+  console.log('inverted', inverted);
+
   const weight = !inverted ? 0 : 900;
 
   return colors.neutral[weight];
@@ -26,7 +28,7 @@ const NotificationIcon = styled.span`
   position: absolute;
   width: ${NOTIFICATION_SIZE}px;
   height: ${NOTIFICATION_SIZE}px;
-  border: solid 2px ${props => colors.neutral[!props.inverted ? 1000 : 0]}}};
+  border: solid 2px ${props => colors.neutral[props.inverted ? 0 : 1000]}}};
   top: 0;
   right: 0;
   border-radius: ${NOTIFICATION_SIZE}px;
@@ -55,12 +57,12 @@ const Hamburger = ({
           inverted={inverted}
         />
       )}
-      <HamburgerIconWrapper inverted={inverted} />
+      <HamburgerIconWrapper inverted={inverted ? 1 : 0} />
     </>
   );
 
   return (
-    <HamburgerWrapper inverted={inverted} aria-live="polite">
+    <HamburgerWrapper aria-live="polite">
       {!isOpened ? HamburgerBlock : <CloseIconWrapper inverted={inverted} />}
     </HamburgerWrapper>
   );
