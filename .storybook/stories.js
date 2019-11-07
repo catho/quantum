@@ -58,4 +58,7 @@ export default [
 
   // SnackBar
   'SnackBar',
+
+  // Hamburger
+  'Hamburger',
 ].map(s => `./${s}/${s}.story.jsx`);
