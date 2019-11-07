@@ -37,6 +37,16 @@ describe('<Container />', () => {
     });
   });
 
+  describe('with withBreakpoints prop', () => {
+    it('should have a fixed width', () => {
+      expect(
+        renderer
+          .create(<Container withBreakpoints>Content</Container>)
+          .toJSON(),
+      ).toMatchSnapshot();
+    });
+  });
+
   describe('with "no-gutters" prop', () => {
     it('should not have gutters', () => {
       expect(
