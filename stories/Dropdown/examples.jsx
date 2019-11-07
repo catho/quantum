@@ -115,6 +115,7 @@ RequiredMark.CODE = `<Dropdown
 
 const WithError = () => (
   <Dropdown
+    helperText="this is a example of error"
     error="Don't worry, this is just a message error example ;)"
     label="With an error"
     items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
@@ -156,6 +157,60 @@ AutoComplete.CODE = `<Dropdown
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
 />`;
 
+const WithImages = () => (
+  <Dropdown
+    helperText="this dropdown has images in the list"
+    placeholder="What credit card do you prefer?"
+    label="choose a credit card"
+    items={[
+      {
+        label: 'Master Card',
+        value: 'creditcard_0',
+        img: 'https://dummyimage.com/24x24',
+        alt: 'image description',
+      },
+      {
+        label: 'American Express Card',
+        value: 'creditcard_1',
+        img: 'https://dummyimage.com/24x24',
+        alt: 'image description',
+      },
+      {
+        label: 'Visa',
+        value: 'creditcard_2',
+        img: 'https://dummyimage.com/24x24',
+        alt: 'image description',
+      },
+    ]}
+  />
+);
+WithImages.CODE = `
+<Dropdown
+placeholder="What credit card do you prefer?"
+label="choose a credit card"
+items={[
+  {
+    label: 'Master Card',
+    value: 'creditcard_0',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'image description',
+  },
+  {
+    label: 'American Express Card',
+    value: 'creditcard_1',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'image description',
+  },
+  {
+    label: 'Visa',
+    value: 'creditcard_2',
+    img: 'https://dummyimage.com/24x24',
+    alt: 'image description',
+  },
+]}
+/>
+`;
+
 export {
   Simple,
   CustomLabel,
@@ -164,4 +219,5 @@ export {
   Disabled,
   Controlled,
   AutoComplete,
+  WithImages,
 };

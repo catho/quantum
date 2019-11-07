@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component  should match the snapshot 1`] = `
+exports[`Dropdown component  should match the snapshot 1`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -40,7 +40,8 @@ exports[`Input component  should match the snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -135,6 +136,7 @@ exports[`Input component  should match the snapshot 1`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -195,15 +197,16 @@ exports[`Input component  should match the snapshot 1`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 2`] = `
+exports[`Dropdown component  should match the snapshot 2`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -243,7 +246,8 @@ exports[`Input component  should match the snapshot 2`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -338,6 +342,7 @@ exports[`Input component  should match the snapshot 2`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -398,15 +403,16 @@ exports[`Input component  should match the snapshot 2`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 3`] = `
+exports[`Dropdown component  should match the snapshot 3`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -449,7 +455,8 @@ exports[`Input component  should match the snapshot 3`] = `
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -544,6 +551,7 @@ exports[`Input component  should match the snapshot 3`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -604,15 +612,16 @@ exports[`Input component  should match the snapshot 3`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 4`] = `
+exports[`Dropdown component  should match the snapshot 4`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -664,7 +673,8 @@ exports[`Input component  should match the snapshot 4`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -759,6 +769,7 @@ exports[`Input component  should match the snapshot 4`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -819,10 +830,11 @@ exports[`Input component  should match the snapshot 4`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
+  
   <span
     className="c4"
   >
@@ -831,7 +843,7 @@ exports[`Input component  should match the snapshot 4`] = `
 </div>
 `;
 
-exports[`Input component  should match the snapshot 5`] = `
+exports[`Dropdown component  should match the snapshot 5`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -871,7 +883,8 @@ exports[`Input component  should match the snapshot 5`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -966,6 +979,7 @@ exports[`Input component  should match the snapshot 5`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -1026,15 +1040,16 @@ exports[`Input component  should match the snapshot 5`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 6`] = `
+exports[`Dropdown component  should match the snapshot 6`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1080,7 +1095,8 @@ exports[`Input component  should match the snapshot 6`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c3::-webkit-inner-spin-button,
@@ -1182,6 +1198,7 @@ exports[`Input component  should match the snapshot 6`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -1242,15 +1259,16 @@ exports[`Input component  should match the snapshot 6`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 7`] = `
+exports[`Dropdown component  should match the snapshot 7`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1300,7 +1318,8 @@ exports[`Input component  should match the snapshot 7`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c4::-webkit-inner-spin-button,
@@ -1407,6 +1426,7 @@ exports[`Input component  should match the snapshot 7`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -1467,15 +1487,16 @@ exports[`Input component  should match the snapshot 7`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 8`] = `
+exports[`Dropdown component  should match the snapshot 8`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1516,7 +1537,9 @@ exports[`Input component  should match the snapshot 8`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  padding: 8px 48px 8px 16px;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1623,6 +1646,7 @@ exports[`Input component  should match the snapshot 8`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -1683,15 +1707,16 @@ exports[`Input component  should match the snapshot 8`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </div>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 9`] = `
+exports[`Dropdown component  should match the snapshot 9`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1731,7 +1756,8 @@ exports[`Input component  should match the snapshot 9`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #999999;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1826,6 +1852,7 @@ exports[`Input component  should match the snapshot 9`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -1886,15 +1913,16 @@ exports[`Input component  should match the snapshot 9`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
   
+  
 </div>
 `;
 
-exports[`Input component  should match the snapshot 10`] = `
+exports[`Dropdown component  should match the snapshot 10`] = `
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1934,6 +1962,8 @@ exports[`Input component  should match the snapshot 10`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -2028,6 +2058,7 @@ exports[`Input component  should match the snapshot 10`] = `
         }
         theme={
           Object {
+            "baseFontSize": 16,
             "colors": Object {
               "error": Object {
                 "100": "#fff5f5",
@@ -2088,10 +2119,230 @@ exports[`Input component  should match the snapshot 10`] = `
           }
         }
       >
-        keyboard_arrow_down
+        arrow_drop_down
       </span>
     </button>
   </div>
+  
+  
+</div>
+`;
+
+exports[`Dropdown component  should match the snapshot 11`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+}
+
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+  margin-top: 8px;
+  padding: 8px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c4 {
+  pointer-events: none;
+  color: #424242;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-10-label"
+    aria-owns={null}
+    className="c1"
+    role="combobox"
+  >
+    <label
+      className="c2"
+      disabled={false}
+      htmlFor="dropdown-10"
+      id="downshift-10-label"
+    >
+      choose a credit card
+    </label>
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls={null}
+      aria-labelledby="downshift-10-label"
+      autoComplete="off"
+      id="downshift-10-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="hidden"
+      value=""
+    />
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="c3"
+      data-toggle={true}
+      disabled={false}
+      id="dropdown-10"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      What credit card do you prefer?
+      <span
+        aria-hidden={true}
+        className="material-icons MuiIcon-root c4"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "colors": Object {
+              "error": Object {
+                "100": "#fff5f5",
+                "300": "#f88e86",
+                "500": "#ec584e",
+                "700": "#e91b0c",
+                "900": "#ac001a",
+              },
+              "neutral": Object {
+                "0": "#ffffff",
+                "100": "#f2f2f2",
+                "1000": "#000000",
+                "300": "#e0e0e0",
+                "500": "#999999",
+                "700": "#424242",
+                "900": "#191919",
+              },
+              "primary": Object {
+                "100": "#E5EDFC",
+                "300": "#89AAE7",
+                "500": "#0CC0EA",
+                "700": "#1250C4",
+                "900": "#002F7B",
+              },
+              "secondary": Object {
+                "100": "#F7B0C8",
+                "300": "#F278A1",
+                "500": "#E91E63",
+                "700": "#DE0059",
+                "900": "#9E003F",
+              },
+              "success": Object {
+                "100": "#dcedc8",
+                "300": "#c9eda2",
+                "500": "#7ed321",
+                "700": "#3b610f",
+                "900": "#004D40",
+              },
+              "warning": Object {
+                "100": "#ffefd6",
+                "300": "#ffda6a",
+                "500": "#ffc107",
+                "700": "#f09100",
+                "900": "#d14900",
+              },
+            },
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
+      >
+        arrow_drop_down
+      </span>
+    </button>
+  </div>
+  
   
 </div>
 `;
