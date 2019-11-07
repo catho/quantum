@@ -25,6 +25,7 @@ import Skeleton from './Skeleton';
 import ProgressBar from './ProgressBar';
 import CircularLoader from './CircularLoader';
 import Pagination from './Pagination';
+import Hamburger from './Hamburger';
 
 export {
   Alert,
@@ -62,4 +63,5 @@ export {
   Validations,
   Modal,
   Pagination,
+  Hamburger,
 };
