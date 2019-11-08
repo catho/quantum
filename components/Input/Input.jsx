@@ -134,6 +134,7 @@ class Input extends React.Component {
     const _isPassword = typeProp === 'password';
     const hasValue = currentValue && currentValue[0];
     const _hasIcon = error || _isPassword || hasValue;
+    const hasLabel = !!label;
     const onCleanClick = e => {
       this.setState({
         currentValue: '',
@@ -169,6 +170,7 @@ class Input extends React.Component {
                 {...props}
                 ref={ref}
                 error={error}
+                hasLabel={hasLabel}
                 hasRightIcon={_hasIcon}
                 hasLeftIcon={_isSearchType}
                 hasDefaultValue={hasDefaultValue}

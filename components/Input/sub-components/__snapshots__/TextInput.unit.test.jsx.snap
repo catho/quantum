@@ -18,7 +18,7 @@ exports[`Input component should match snapshots 1`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
 }
 
@@ -78,7 +78,7 @@ exports[`Input component should match snapshots 2`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   border-color: #e91b0c;
 }
@@ -139,7 +139,7 @@ exports[`Input component should match snapshots 3`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
 }
 
@@ -200,7 +200,7 @@ exports[`Input component should match snapshots 4`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
 }
 
@@ -260,7 +260,7 @@ exports[`Input component should match snapshots 5`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   color: #999999;
 }
@@ -322,7 +322,7 @@ exports[`Input component should match snapshots 6`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
 }
 
@@ -383,7 +383,7 @@ exports[`Input component should match snapshots 7`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
 }
 
@@ -444,7 +444,7 @@ exports[`Input component should match snapshots 8`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
 }
 
@@ -506,7 +506,7 @@ exports[`Input component should match snapshots 9`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   border-color: #e91b0c;
 }

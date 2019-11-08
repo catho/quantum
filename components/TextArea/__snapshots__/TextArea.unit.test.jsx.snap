@@ -25,7 +25,7 @@ exports[`TextArea component should match snapshots 1`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   display: block;
   min-height: 108px;
@@ -109,7 +109,7 @@ exports[`TextArea component should match snapshots 2`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   background-color: #E5EDFC;
   display: block;
@@ -200,7 +200,7 @@ exports[`TextArea component should match snapshots 3`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   display: block;
   min-height: 108px;
@@ -300,7 +300,7 @@ exports[`TextArea component should match snapshots 4`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   display: block;
   min-height: 108px;
@@ -395,7 +395,7 @@ exports[`TextArea component should match snapshots 5`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   display: block;
   min-height: 108px;
@@ -479,7 +479,7 @@ exports[`TextArea component should match snapshots 6`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   color: #999999;
   display: block;
@@ -576,7 +576,7 @@ exports[`TextArea component should match snapshots 7`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   display: block;
   min-height: 108px;
@@ -675,7 +675,7 @@ exports[`TextArea component should match snapshots 8`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   border-color: #e91b0c;
   display: block;

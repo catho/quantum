@@ -381,6 +381,7 @@ const Dropdown = ({
                       disabled={disabled}
                       text={_buttonLabel}
                       theme={theme}
+                      hasLabel
                       id={_id}
                       autocomplete={autocomplete}
                     />
@@ -411,6 +412,7 @@ const Dropdown = ({
                     helperText={helperText}
                     text={_buttonLabel}
                     theme={theme}
+                    hasLabel
                     id={_id}
                   >
                     {_buttonLabel}

@@ -30,6 +30,7 @@ const TextInput = styled.input`
 
   ${({
     hasDefaultValue,
+    hasLabel,
     error,
     hasRightIcon,
     hasLeftIcon,
@@ -59,7 +60,7 @@ const TextInput = styled.input`
       background-color: ${neutral0};
       border: 2px solid ${neutral500};
       color: ${neutral700};
-      margin-top: ${xsmall}px;
+      margin-top: ${hasLabel ? xsmall : '0'}px;
       padding: ${xsmall}px ${medium}px;
 
       ${hasRightIcon ? `padding-right: ${horizontalPadding}px;` : ''}
