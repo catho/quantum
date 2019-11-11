@@ -5,7 +5,11 @@ import { theme as defaultTheme } from '../../shared';
 import { CSSVariables } from '../../GlobalStyle';
 
 const renderBreakpoint = (
-  { theme: { gutter, breakpoints }, 'no-gutters': noGutters },
+  {
+    theme: { gutter, breakpoints, components },
+    'no-gutters': noGutters,
+    withBreakpoints,
+  },
   breakpoint,
 ) => {
   const calculedGutter = CSSVariables({
@@ -15,14 +19,18 @@ const renderBreakpoint = (
   }).gutter[breakpoint];
   const q = query(breakpoints)[breakpoint];
 
+  const calculedWidth = components.container.breakpoints[breakpoint];
+
   return q`
+    ${withBreakpoints ? `width: ${calculedWidth};` : ''}
     padding: ${calculedGutter};
   `;
 };
 
 const renderResponsives = ({
-  theme: { breakpoints, gutter },
+  theme: { breakpoints, gutter, components },
   'no-gutters': noGutters,
+  withBreakpoints,
 }) =>
   Object.keys(breakpoints).map(breakpoint =>
     renderBreakpoint(
@@ -30,8 +38,10 @@ const renderResponsives = ({
         theme: {
           breakpoints,
           gutter,
+          components,
         },
         'no-gutters': noGutters,
+        withBreakpoints,
       },
       breakpoint,
     ),
@@ -52,6 +62,7 @@ const Container = styled.div`
 `;
 
 Container.propTypes = {
+  withBreakpoints: PropTypes.bool,
   fluid: PropTypes.bool,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
@@ -59,12 +70,14 @@ Container.propTypes = {
   ]),
   theme: PropTypes.shape({
     breakpoints: PropTypes.object,
+    components: PropTypes.object,
   }),
   'no-gutters': PropTypes.bool,
 };
 
 Container.defaultProps = {
   fluid: false,
+  withBreakpoints: false,
   'no-gutters': false,
   theme: defaultTheme,
 };

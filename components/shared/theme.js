@@ -137,7 +137,15 @@ const components = {
       },
     },
   },
-
+  container: {
+    breakpoints: {
+      xsmall: '100%,',
+      small: '100%',
+      medium: '980px',
+      large: '1180px',
+      xlarge: '1180px',
+    },
+  },
   tag: {
     skins: {
       neutral: {
