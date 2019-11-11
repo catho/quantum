@@ -283,6 +283,15 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
             },
           },
         },
+        "container": Object {
+          "breakpoints": Object {
+            "large": "1180px",
+            "medium": "980px",
+            "small": "100%",
+            "xlarge": "1180px",
+            "xsmall": "100%,",
+          },
+        },
         "popover": Object {
           "skins": Object {
             "error": Object {
@@ -610,6 +619,15 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "900": "#191919",
                 },
               },
+            },
+          },
+          "container": Object {
+            "breakpoints": Object {
+              "large": "1180px",
+              "medium": "980px",
+              "small": "100%",
+              "xlarge": "1180px",
+              "xsmall": "100%,",
             },
           },
           "popover": Object {
@@ -969,6 +987,15 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 },
               },
             },
+            "container": Object {
+              "breakpoints": Object {
+                "large": "1180px",
+                "medium": "980px",
+                "small": "100%",
+                "xlarge": "1180px",
+                "xsmall": "100%,",
+              },
+            },
             "popover": Object {
               "skins": Object {
                 "error": Object {
@@ -1305,6 +1332,15 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                         "900": "#191919",
                       },
                     },
+                  },
+                },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
                   },
                 },
                 "popover": Object {
@@ -1666,6 +1702,15 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
@@ -2233,6 +2278,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             },
           },
         },
+        "container": Object {
+          "breakpoints": Object {
+            "large": "1180px",
+            "medium": "980px",
+            "small": "100%",
+            "xlarge": "1180px",
+            "xsmall": "100%,",
+          },
+        },
         "popover": Object {
           "skins": Object {
             "error": Object {
@@ -2560,6 +2614,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "900": "#191919",
                 },
               },
+            },
+          },
+          "container": Object {
+            "breakpoints": Object {
+              "large": "1180px",
+              "medium": "980px",
+              "small": "100%",
+              "xlarge": "1180px",
+              "xsmall": "100%,",
             },
           },
           "popover": Object {
@@ -2919,6 +2982,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 },
               },
             },
+            "container": Object {
+              "breakpoints": Object {
+                "large": "1180px",
+                "medium": "980px",
+                "small": "100%",
+                "xlarge": "1180px",
+                "xsmall": "100%,",
+              },
+            },
             "popover": Object {
               "skins": Object {
                 "error": Object {
@@ -3255,6 +3327,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                         "900": "#191919",
                       },
                     },
+                  },
+                },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
                   },
                 },
                 "popover": Object {
@@ -3616,6 +3697,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
@@ -4247,6 +4337,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     },
                   },
                 },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
+                  },
+                },
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
@@ -4606,6 +4705,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
@@ -5064,6 +5172,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     },
                   },
                 },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
+                  },
+                },
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
@@ -5423,6 +5540,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
@@ -6132,6 +6258,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     },
                   },
                 },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
+                  },
+                },
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
@@ -6491,6 +6626,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
@@ -7027,6 +7171,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
             },
           },
         },
+        "container": Object {
+          "breakpoints": Object {
+            "large": "1180px",
+            "medium": "980px",
+            "small": "100%",
+            "xlarge": "1180px",
+            "xsmall": "100%,",
+          },
+        },
         "popover": Object {
           "skins": Object {
             "error": Object {
@@ -7354,6 +7507,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   "900": "#191919",
                 },
               },
+            },
+          },
+          "container": Object {
+            "breakpoints": Object {
+              "large": "1180px",
+              "medium": "980px",
+              "small": "100%",
+              "xlarge": "1180px",
+              "xsmall": "100%,",
             },
           },
           "popover": Object {
@@ -7713,6 +7875,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                 },
               },
             },
+            "container": Object {
+              "breakpoints": Object {
+                "large": "1180px",
+                "medium": "980px",
+                "small": "100%",
+                "xlarge": "1180px",
+                "xsmall": "100%,",
+              },
+            },
             "popover": Object {
               "skins": Object {
                 "error": Object {
@@ -8049,6 +8220,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                         "900": "#191919",
                       },
                     },
+                  },
+                },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
                   },
                 },
                 "popover": Object {
@@ -8410,6 +8590,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
@@ -8790,6 +8979,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                     },
                   },
                 },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
+                  },
+                },
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
@@ -9149,6 +9347,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
@@ -9529,6 +9736,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                     },
                   },
                 },
+                "container": Object {
+                  "breakpoints": Object {
+                    "large": "1180px",
+                    "medium": "980px",
+                    "small": "100%",
+                    "xlarge": "1180px",
+                    "xsmall": "100%,",
+                  },
+                },
                 "popover": Object {
                   "skins": Object {
                     "error": Object {
@@ -9888,6 +10104,15 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                           "900": "#191919",
                         },
                       },
+                    },
+                  },
+                  "container": Object {
+                    "breakpoints": Object {
+                      "large": "1180px",
+                      "medium": "980px",
+                      "small": "100%",
+                      "xlarge": "1180px",
+                      "xsmall": "100%,",
                     },
                   },
                   "popover": Object {
