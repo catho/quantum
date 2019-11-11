@@ -25,7 +25,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -231,7 +231,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -437,7 +437,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -657,7 +657,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   border-color: #e91b0c;
   -webkit-align-items: center;
@@ -868,7 +868,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1521,7 +1521,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   color: #999999;
   -webkit-align-items: center;
@@ -1741,7 +1741,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1947,7 +1947,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
+  margin-top: 0px;
   padding: 8px 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
