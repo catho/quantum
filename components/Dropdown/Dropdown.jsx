@@ -321,6 +321,8 @@ const Dropdown = ({
     return changes;
   };
 
+  const hasLabel = !!label;
+
   const [_id] = useState(id || ID_GENERATOR.next().value);
 
   const inputFilter = value =>
@@ -381,6 +383,7 @@ const Dropdown = ({
                       disabled={disabled}
                       text={_buttonLabel}
                       theme={theme}
+                      hasLabel={hasLabel}
                       id={_id}
                       autocomplete={autocomplete}
                     />
@@ -411,6 +414,7 @@ const Dropdown = ({
                     helperText={helperText}
                     text={_buttonLabel}
                     theme={theme}
+                    hasLabel={hasLabel}
                     id={_id}
                   >
                     {_buttonLabel}
