@@ -47,8 +47,8 @@ storiesOf('Foundation', module).add('Breakpoints', () => (
       <Title as="h2">How to use</Title>
 
       <p>
-        First import `BREAKPOINTS` from `shared`. Second import `query` function
-        from `Grid` shared.
+        First import <code>BREAKPOINTS</code> from <code>shared</code>. Second
+        import <code>query</code> function from <code>Grid</code> shared.
       </p>
       <CodeExample
         code={`import { BREAKPOINTS } from '@catho/quantum/shared';
@@ -56,31 +56,36 @@ import { query } from '@catho/quantum/Grid/sub-components/shared';
 `}
       />
       <p>
-        Create a constant variable calling `query` with `BREAKPOINTS` as
-        parameter. After, create a styled component and introce the variable. In
-        this example we will use a `div`.
+        Create a constant variable calling <code>query</code> with{' '}
+        <code>BREAKPOINTS</code> as parameter. After, create a styled component
+        and introduce the variable. In this example we will use a{' '}
+        <code>div</code>.
       </p>
       <p>
-        The variable provides `min-widths` media queries with the following
-        sizes:
+        The variable provides <code>min-widths</code> media queries with the
+        following sizes:
       </p>
-      <p>
-        <ul>
-          <li>small: 600px</li>
-          <li>medium: 1024px</li>
-          <li>large: 1440px</li>
-          <li>xlarge: 1920px</li>
-        </ul>
-      </p>
+      <ul>
+        <li>small: 600px</li>
+        <li>medium: 1024px</li>
+        <li>large: 1440px</li>
+        <li>xlarge: 1920px</li>
+      </ul>
       <p>In each resolution we will change the div background color:</p>
-      <p>
-        <ul>
-          <li>Blue color for `small` resolution.</li>
-          <li>Green color for `medium` resolution.</li>
-          <li>Black color for `large` resolution.</li>
-          <li>Orange color for `xlarge` resolution.</li>
-        </ul>
-      </p>
+      <ul>
+        <li>
+          Blue color for <code>small</code> resolution.
+        </li>
+        <li>
+          Green color for <code>medium</code> resolution.
+        </li>
+        <li>
+          Black color for <code>large</code> resolution.
+        </li>
+        <li>
+          Orange color for <code>xlarge</code> resolution.
+        </li>
+      </ul>
       <CodeExample
         code={`const mediaQueries = query(BREAKPOINTS);
 
