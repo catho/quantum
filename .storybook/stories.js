@@ -13,6 +13,7 @@ export default [
   'Typography',
   'Theme',
   'Icon',
+  'Breakpoints',
 
   'Alert',
 
