@@ -10,8 +10,6 @@ const HAMBURGER_SIZE = 24;
 const NOTIFICATION_SIZE = 7;
 
 const getColors = ({ inverted }) => {
-  console.log('inverted', inverted);
-
   const weight = !inverted ? 0 : 900;
 
   return colors.neutral[weight];
