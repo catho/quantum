@@ -24,7 +24,7 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
   r: 20.2px;
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0px;
-  stroke-width: 3.6;
+  stroke-width: 3.6px;
   stroke: currentColor;
   color: #1250C4;
 }
@@ -50,6 +50,9 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
     <circle
       className="c2"
       color="#1250C4"
+      cx={44}
+      cy={44}
+      r={20.2}
     />
   </svg>
 </div>
