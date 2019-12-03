@@ -21,6 +21,8 @@ const Content = styled.svg`
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 
   ${({ color }) => `
     color: ${color};
@@ -50,11 +52,11 @@ const circularDash = keyframes`
 
 const Circle = styled.circle`
   animation: ${circularDash} 1.4s ease-in-out infinite;
-  cx: 44;
-  cy: 44;
+  cx: 44px;
+  cy: 44px;
   fill: none;
   line-height: 1;
-  r: 20.2;
+  r: 20.2px;
   stroke-dasharray: 80px, 200px;
   stroke-dashoffset: 0px;
   stroke-width: 3.6;
