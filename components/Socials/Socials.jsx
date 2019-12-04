@@ -1,23 +1,34 @@
 import React from 'react';
 import Proptypes from 'prop-types';
+import SocialType from './sub-components/SocialType';
 
-const Socials = ({ facebook, twitter, youtube }) => (
-  <>
-    <div>teste</div>
-    <div>teste</div>
-  </>
+const Socials = ({ items, size }) => (
+  <section>
+    {items.map(item => (
+      <SocialType
+        key={`social-${item.name}`}
+        url={item.url}
+        type={item.name}
+        size={size}
+        description={item.description}
+      />
+    ))}
+  </section>
 );
 
 Socials.defaultProps = {
-  facebook: 'http://url.com',
-  youtube: 'http://url.com',
-  twitter: 'http://url.com',
+  size: '48',
 };
 
 Socials.propTypes = {
-  facebook: Proptypes.string,
-  youtube: Proptypes.string,
-  twitter: Proptypes.string,
+  size: Proptypes.string,
+  items: Proptypes.arrayOf(
+    Proptypes.shape({
+      name: Proptypes.string,
+      url: Proptypes.string,
+      description: Proptypes.string,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default Socials;

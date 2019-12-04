@@ -14,6 +14,25 @@ import { Row, Col } from '../../components';
 
 import Socials from '../../components/Socials';
 
+const facebook = {
+  label: 'facebook',
+  url: 'http://facebook.com',
+  description: 'descricao do facebook',
+};
+
+const socialItems = [
+  {
+    name: 'facebook',
+    url: 'http://facebook.com',
+    description: 'descricao do facebook',
+  },
+  {
+    name: 'twitter',
+    url: 'http://twitter.com',
+    description: 'descricao do twitter',
+  },
+];
+
 storiesOf('Socials', module).add('Socials', () => (
   <>
     <Heading name="Socials">Socials description here</Heading>
@@ -38,13 +57,13 @@ storiesOf('Socials', module).add('Socials', () => (
           <p>
             Here you can check a simple implamentation using Socials component.
           </p>
-          <Title as="h3">Simple Socials (with action triggers)</Title>
+          <Title as="h3">Simple Socials</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>{/* code */}</SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              {/* exemplo de componente */}
+              <Socials items={socialItems} />
             </Col>
           </Row>
         </StoryContainer>
