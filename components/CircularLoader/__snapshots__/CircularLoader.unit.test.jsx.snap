@@ -53,6 +53,7 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
       cx={44}
       cy={44}
       r={20.2}
+      strokeWidth={3.6}
     />
   </svg>
 </div>

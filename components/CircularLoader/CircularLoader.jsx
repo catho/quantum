@@ -101,13 +101,7 @@ const CircularLoader = props => {
   return (
     <Wrapper size={size} gutter={gutter} role="progressbar">
       <Content color={color} viewBox="22 22 44 44">
-        <Circle
-          STROKE-WIDTH={strokeWidth}
-          cx={cx}
-          cy={cy}
-          r={r}
-          color={color}
-        />
+        <Circle strokeWidth={strokeWidth} cx={cx} cy={cy} r={r} color={color} />
       </Content>
     </Wrapper>
   );
