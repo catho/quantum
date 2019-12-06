@@ -82,7 +82,7 @@ exports[`<Socials /> should match snapshots 1`] = `
         <ul
           className="c0"
         >
-          <Socials__ListItem
+          <ListItem
             key="social-item-facebook"
             theme={
               Object {
@@ -115,7 +115,7 @@ exports[`<Socials /> should match snapshots 1`] = `
                       " &:last-child{margin-right:0;}",
                     ],
                   },
-                  "displayName": "Socials__ListItem",
+                  "displayName": "ListItem",
                   "foldedComponentIds": Array [],
                   "render": [Function],
                   "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
@@ -200,8 +200,8 @@ exports[`<Socials /> should match snapshots 1`] = `
                 </SocialType>
               </li>
             </StyledComponent>
-          </Socials__ListItem>
-          <Socials__ListItem
+          </ListItem>
+          <ListItem
             key="social-item-twitter"
             theme={
               Object {
@@ -234,7 +234,7 @@ exports[`<Socials /> should match snapshots 1`] = `
                       " &:last-child{margin-right:0;}",
                     ],
                   },
-                  "displayName": "Socials__ListItem",
+                  "displayName": "ListItem",
                   "foldedComponentIds": Array [],
                   "render": [Function],
                   "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
@@ -318,8 +318,8 @@ exports[`<Socials /> should match snapshots 1`] = `
                 </SocialType>
               </li>
             </StyledComponent>
-          </Socials__ListItem>
-          <Socials__ListItem
+          </ListItem>
+          <ListItem
             key="social-item-youtube"
             theme={
               Object {
@@ -352,7 +352,7 @@ exports[`<Socials /> should match snapshots 1`] = `
                       " &:last-child{margin-right:0;}",
                     ],
                   },
-                  "displayName": "Socials__ListItem",
+                  "displayName": "ListItem",
                   "foldedComponentIds": Array [],
                   "render": [Function],
                   "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
@@ -445,7 +445,7 @@ exports[`<Socials /> should match snapshots 1`] = `
                 </SocialType>
               </li>
             </StyledComponent>
-          </Socials__ListItem>
+          </ListItem>
         </ul>
       </StyledComponent>
     </Socials__List>
@@ -525,7 +525,7 @@ exports[`<Socials /> should match snapshots 2`] = `
         <ul
           className="c0"
         >
-          <Socials__ListItem
+          <ListItem
             key="social-item-facebook"
             theme={
               Object {
@@ -558,7 +558,7 @@ exports[`<Socials /> should match snapshots 2`] = `
                       " &:last-child{margin-right:0;}",
                     ],
                   },
-                  "displayName": "Socials__ListItem",
+                  "displayName": "ListItem",
                   "foldedComponentIds": Array [],
                   "render": [Function],
                   "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
@@ -643,7 +643,7 @@ exports[`<Socials /> should match snapshots 2`] = `
                 </SocialType>
               </li>
             </StyledComponent>
-          </Socials__ListItem>
+          </ListItem>
         </ul>
       </StyledComponent>
     </Socials__List>
@@ -733,7 +733,7 @@ exports[`<Socials /> should match snapshots 3`] = `
         <ul
           className="c0"
         >
-          <Socials__ListItem
+          <ListItem
             key="social-item-facebook"
             theme={
               Object {
@@ -766,7 +766,7 @@ exports[`<Socials /> should match snapshots 3`] = `
                       " &:last-child{margin-right:0;}",
                     ],
                   },
-                  "displayName": "Socials__ListItem",
+                  "displayName": "ListItem",
                   "foldedComponentIds": Array [],
                   "render": [Function],
                   "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
@@ -851,8 +851,8 @@ exports[`<Socials /> should match snapshots 3`] = `
                 </SocialType>
               </li>
             </StyledComponent>
-          </Socials__ListItem>
-          <Socials__ListItem
+          </ListItem>
+          <ListItem
             key="social-item-twitter"
             theme={
               Object {
@@ -885,7 +885,7 @@ exports[`<Socials /> should match snapshots 3`] = `
                       " &:last-child{margin-right:0;}",
                     ],
                   },
-                  "displayName": "Socials__ListItem",
+                  "displayName": "ListItem",
                   "foldedComponentIds": Array [],
                   "render": [Function],
                   "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
@@ -969,8 +969,8 @@ exports[`<Socials /> should match snapshots 3`] = `
                 </SocialType>
               </li>
             </StyledComponent>
-          </Socials__ListItem>
-          <Socials__ListItem
+          </ListItem>
+          <ListItem
             key="social-item-youtube"
             theme={
               Object {
@@ -1003,7 +1003,7 @@ exports[`<Socials /> should match snapshots 3`] = `
                       " &:last-child{margin-right:0;}",
                     ],
                   },
-                  "displayName": "Socials__ListItem",
+                  "displayName": "ListItem",
                   "foldedComponentIds": Array [],
                   "render": [Function],
                   "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
@@ -1096,7 +1096,7 @@ exports[`<Socials /> should match snapshots 3`] = `
                 </SocialType>
               </li>
             </StyledComponent>
-          </Socials__ListItem>
+          </ListItem>
         </ul>
       </StyledComponent>
     </Socials__List>

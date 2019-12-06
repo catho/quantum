@@ -35,4 +35,14 @@ describe('<Socials />', () => {
       SocialComponent.unmount();
     });
   });
+
+  it('should pass description to <Title /> on SVG ', () => {
+    const component = mount(<Socials items={[allSocialsList[0]]} />);
+    expect(component.find('title').text()).toBe(allSocialsList[0].description);
+  });
+
+  it('should have the same number of social types passed in object items ', () => {
+    const wrapper = mount(<Socials items={allSocialsList} />);
+    expect(wrapper.find('ListItem').length).toBe(allSocialsList.length);
+  });
 });

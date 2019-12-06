@@ -22,6 +22,8 @@ const ListItem = styled.li`
   }
 `;
 
+ListItem.displayName = 'ListItem';
+
 const Socials = ({ items, size, theme }) => (
   <section>
     <List>
