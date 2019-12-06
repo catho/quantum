@@ -26,7 +26,7 @@ const Socials = ({ items, size, theme }) => (
   <section>
     <List>
       {items.map(item => (
-        <ListItem theme={theme}>
+        <ListItem theme={theme} key={`social-item-${item.name}`}>
           <SocialType
             key={`social-${item.name}`}
             url={item.url}
