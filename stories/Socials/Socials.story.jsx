@@ -17,19 +17,6 @@ import SocialExampleAll from './examples/SocialExampleAll';
 import SocialExampleChangingSize from './examples/SocialExampleChangingSize';
 import SocialExampleFacebook from './examples/SocialExampleFacebook';
 
-const socialItems = [
-  {
-    name: 'facebook',
-    url: 'http://facebook.com',
-    description: 'facebook description of the purpose of this icon',
-  },
-  {
-    name: 'twitter',
-    url: 'http://twitter.com',
-    description: 'twitter description of the purpose of this icon',
-  },
-];
-
 storiesOf('Socials', module).add('Socials', () => (
   <>
     <Heading name="Socials">
