@@ -13,29 +13,28 @@ import {
 import { Row, Col } from '../../components';
 
 import Socials from '../../components/Socials';
-
-const facebook = {
-  label: 'facebook',
-  url: 'http://facebook.com',
-  description: 'descricao do facebook',
-};
+import SocialExampleAll from './examples/SocialExampleAll';
+import SocialExampleChangingSize from './examples/SocialExampleChangingSize';
+import SocialExampleFacebook from './examples/SocialExampleFacebook';
 
 const socialItems = [
   {
     name: 'facebook',
     url: 'http://facebook.com',
-    description: 'descricao do facebook',
+    description: 'facebook description of the purpose of this icon',
   },
   {
     name: 'twitter',
     url: 'http://twitter.com',
-    description: 'descricao do twitter',
+    description: 'twitter description of the purpose of this icon',
   },
 ];
 
 storiesOf('Socials', module).add('Socials', () => (
   <>
-    <Heading name="Socials">Socials description here</Heading>
+    <Heading name="Socials">
+      Socials component is used to share the social media in application.
+    </Heading>
     <TabbedView>
       <Tab title="Usage">
         <StoryContainer>
@@ -57,13 +56,33 @@ storiesOf('Socials', module).add('Socials', () => (
           <p>
             Here you can check a simple implamentation using Socials component.
           </p>
-          <Title as="h3">Simple Socials</Title>
+          <Title as="h3">All socials</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
-              <SimpleHighlight>{/* code */}</SimpleHighlight>
+              <SimpleHighlight>{SocialExampleAll.code}</SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              <Socials items={socialItems} />
+              <SocialExampleAll />
+            </Col>
+          </Row>
+          <Title as="h3">All socials (24px)</Title>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>
+                {SocialExampleChangingSize.code}
+              </SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SocialExampleChangingSize />
+            </Col>
+          </Row>
+          <Title as="h3">With only facebook</Title>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{SocialExampleFacebook.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SocialExampleFacebook />
             </Col>
           </Row>
         </StoryContainer>

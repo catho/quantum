@@ -1,30 +1,58 @@
 import React from 'react';
 import Proptypes from 'prop-types';
+import styled from 'styled-components';
 import SocialType from './sub-components/SocialType';
+import { spacing } from '../shared/theme';
 
-const Socials = ({ items, size }) => (
+const List = styled.ul`
+  padding: 0;
+`;
+
+const ListItem = styled.li`
+  display: inline-block;
+  list-style: none;
+  ${({
+    theme: {
+      spacing: { medium },
+    },
+  }) => `margin-right: ${medium}px;`}
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+const Socials = ({ items, size, theme }) => (
   <section>
-    {items.map(item => (
-      <SocialType
-        key={`social-${item.name}`}
-        url={item.url}
-        type={item.name}
-        size={size}
-        description={item.description}
-      />
-    ))}
+    <List>
+      {items.map(item => (
+        <ListItem theme={theme}>
+          <SocialType
+            key={`social-${item.name}`}
+            url={item.url}
+            type={item.name}
+            size={size}
+            description={item.description}
+          />
+        </ListItem>
+      ))}
+    </List>
   </section>
 );
 
 Socials.defaultProps = {
   size: '48',
+  theme: { spacing },
 };
 
 Socials.propTypes = {
   size: Proptypes.string,
+  theme: Proptypes.shape({
+    spacing: Proptypes.object,
+  }),
   items: Proptypes.arrayOf(
     Proptypes.shape({
-      name: Proptypes.string,
+      name: Proptypes.oneOf(['facebook', 'twitter', 'youtube']),
       url: Proptypes.string,
       description: Proptypes.string,
     }).isRequired,
