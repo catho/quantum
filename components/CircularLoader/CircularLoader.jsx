@@ -21,6 +21,8 @@ const Content = styled.svg`
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 
   ${({ color }) => `
     color: ${color};
@@ -48,16 +50,23 @@ const circularDash = keyframes`
   }
 `;
 
+const circleProps = {
+  cx: 44,
+  cy: 44,
+  r: 20.2,
+  strokeWidth: 3.6,
+};
+
 const Circle = styled.circle`
   animation: ${circularDash} 1.4s ease-in-out infinite;
-  cx: 44;
-  cy: 44;
+  cx: ${circleProps.cx}px;
+  cy: ${circleProps.cy}px;
   fill: none;
   line-height: 1;
-  r: 20.2;
+  r: ${circleProps.r}px;
   stroke-dasharray: 80px, 200px;
   stroke-dashoffset: 0px;
-  stroke-width: 3.6;
+  stroke-width: ${circleProps.strokeWidth}px;
   stroke: currentColor;
 
   ${({ color }) => `
@@ -87,10 +96,12 @@ const CircularLoader = props => {
     },
   } = props;
 
+  const { cx, cy, r, strokeWidth } = circleProps;
+
   return (
     <Wrapper size={size} gutter={gutter} role="progressbar">
       <Content color={color} viewBox="22 22 44 44">
-        <Circle color={color} />
+        <Circle strokeWidth={strokeWidth} cx={cx} cy={cy} r={r} color={color} />
       </Content>
     </Wrapper>
   );
