@@ -6,10 +6,11 @@ import { spacing } from '../shared/theme';
 
 const List = styled.ul`
   padding: 0;
+  display: inline-flex;
 `;
 
 const ListItem = styled.li`
-  display: inline-block;
+  display: inline-flex;
   list-style: none;
   ${({
     theme: {
@@ -22,10 +23,14 @@ const ListItem = styled.li`
   }
 `;
 
+const SocialWrapper = styled.section`
+  display: inline-flex;
+`;
+
 ListItem.displayName = 'ListItem';
 
 const Socials = ({ items, size, theme }) => (
-  <section>
+  <SocialWrapper>
     <List>
       {items.map(item => (
         <ListItem theme={theme} key={`social-item-${item.name}`}>
@@ -39,7 +44,7 @@ const Socials = ({ items, size, theme }) => (
         </ListItem>
       ))}
     </List>
-  </section>
+  </SocialWrapper>
 );
 
 Socials.defaultProps = {

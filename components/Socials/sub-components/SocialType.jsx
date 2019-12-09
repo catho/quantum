@@ -1,18 +1,23 @@
 import React from 'react';
 import Proptypes from 'prop-types';
+import styled from 'styled-components';
+
+const SocialWrapper = styled.a`
+  display: inline-flex;
+`;
+
+const StyledSvg = styled.svg`
+  display: inline-block;
+`;
 
 const SocialType = ({ type, url, size, description }) => {
   const SVGOriginalSize = 48;
   const SVGOriginalSizeWithBorder = 50;
-  const style = {
-    display: 'inline-block',
-  };
 
   return (
-    <a href={url}>
+    <SocialWrapper href={url}>
       {type === 'twitter' && (
-        <svg
-          style={style}
+        <StyledSvg
           role="img"
           aria-labelledby="twitter-title"
           xmlns="http://www.w3.org/2000/svg"
@@ -39,12 +44,11 @@ const SocialType = ({ type, url, size, description }) => {
               fill="#fff"
             />
           </g>
-        </svg>
+        </StyledSvg>
       )}
 
       {type === 'youtube' && (
-        <svg
-          style={style}
+        <StyledSvg
           role="img"
           aria-labelledby="youtube-title"
           xmlns="http://www.w3.org/2000/svg"
@@ -80,12 +84,11 @@ const SocialType = ({ type, url, size, description }) => {
               fill="#fff"
             />
           </g>
-        </svg>
+        </StyledSvg>
       )}
 
       {type === 'facebook' && (
-        <svg
-          style={style}
+        <StyledSvg
           role="img"
           aria-labelledby="facebook-title"
           xmlns="http://www.w3.org/2000/svg"
@@ -113,9 +116,9 @@ const SocialType = ({ type, url, size, description }) => {
               fillRule="evenodd"
             />
           </g>
-        </svg>
+        </StyledSvg>
       )}
-    </a>
+    </SocialWrapper>
   );
 };
 

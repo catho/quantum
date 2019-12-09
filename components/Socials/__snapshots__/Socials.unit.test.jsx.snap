@@ -1,18 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Socials /> should match snapshots 1`] = `
-.c0 {
-  padding: 0;
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 {
+  display: inline-block;
 }
 
 .c1 {
-  display: inline-block;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   list-style: none;
   margin-right: 16px;
 }
 
-.c1:last-child {
+.c2:last-child {
   margin-right: 0;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 <Socials
@@ -52,420 +77,682 @@ exports[`<Socials /> should match snapshots 1`] = `
     }
   }
 >
-  <section>
-    <Socials__List>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "Socials__List-sc-191ggvn-0",
-              "isStatic": true,
-              "lastClassName": "c0",
-              "rules": Array [
-                "padding:0;",
-              ],
-            },
-            "displayName": "Socials__List",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "Socials__List-sc-191ggvn-0",
-            "target": "ul",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
+  <Socials__SocialWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Socials__SocialWrapper-sc-191ggvn-2",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-flex;",
+            ],
+          },
+          "displayName": "Socials__SocialWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Socials__SocialWrapper-sc-191ggvn-2",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         }
-        forwardedRef={null}
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="c0"
       >
-        <ul
-          className="c0"
-        >
-          <ListItem
-            key="social-item-facebook"
-            theme={
+        <Socials__List>
+          <StyledComponent
+            forwardedComponent={
               Object {
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Socials__List-sc-191ggvn-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "padding:0;display:inline-flex;",
+                  ],
                 },
+                "displayName": "Socials__List",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Socials__List-sc-191ggvn-0",
+                "target": "ul",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
               }
             }
+            forwardedRef={null}
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Socials__ListItem-sc-191ggvn-1",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;list-style:none;",
-                      [Function],
-                      " &:last-child{margin-right:0;}",
-                    ],
-                  },
-                  "displayName": "ListItem",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
-                  "target": "li",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              theme={
-                Object {
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                }
-              }
+            <ul
+              className="c1"
             >
-              <li
-                className="c1"
+              <ListItem
+                key="social-item-facebook"
+                theme={
+                  Object {
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
-                <SocialType
-                  description="facebook description of the purpose of this icon"
-                  key="social-facebook"
-                  size="48"
-                  type="facebook"
-                  url="http://facebook.com"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Socials__ListItem-sc-191ggvn-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:inline-flex;list-style:none;",
+                          [Function],
+                          " &:last-child{margin-right:0;}",
+                        ],
+                      },
+                      "displayName": "ListItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
+                    }
+                  }
                 >
-                  <a
-                    href="http://facebook.com"
+                  <li
+                    className="c2"
                   >
-                    <svg
-                      aria-labelledby="facebook-title"
-                      height="48"
-                      role="img"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
-                      viewBox="0 0 48 48"
-                      width="48"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <SocialType
+                      description="facebook description of the purpose of this icon"
+                      key="social-facebook"
+                      size="48"
+                      type="facebook"
+                      url="http://facebook.com"
                     >
-                      <title
-                        id="facebook-title"
+                      <SocialType__SocialWrapper
+                        href="http://facebook.com"
                       >
-                        facebook description of the purpose of this icon
-                      </title>
-                      <g
-                        id="Box_Facebook"
-                        transform="translate(606 -35)"
-                      >
-                        <rect
-                          data-name="Rectangle 1"
-                          fill="#3c5193"
-                          height={48}
-                          id="Rectangle_1"
-                          rx="9"
-                          transform="translate(-606 35)"
-                          width={48}
-                        />
-                        <path
-                          d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
-                          data-name="Path 4"
-                          fill="#fff"
-                          fillRule="evenodd"
-                          id="Path_4"
-                          transform="translate(-734 -45)"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </SocialType>
-              </li>
-            </StyledComponent>
-          </ListItem>
-          <ListItem
-            key="social-item-twitter"
-            theme={
-              Object {
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Socials__ListItem-sc-191ggvn-1",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;list-style:none;",
-                      [Function],
-                      " &:last-child{margin-right:0;}",
-                    ],
-                  },
-                  "displayName": "ListItem",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
-                  "target": "li",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SocialType__SocialWrapper-rgcx9k-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:inline-flex;",
+                                ],
+                              },
+                              "displayName": "SocialType__SocialWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
+                              "target": "a",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          href="http://facebook.com"
+                        >
+                          <a
+                            className="c3"
+                            href="http://facebook.com"
+                          >
+                            <SocialType__StyledSvg
+                              aria-labelledby="facebook-title"
+                              height="48"
+                              role="img"
+                              viewBox="0 0 48 48"
+                              width="48"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <StyledComponent
+                                aria-labelledby="facebook-title"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "SocialType__StyledSvg-rgcx9k-1",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "display:inline-block;",
+                                      ],
+                                    },
+                                    "displayName": "SocialType__StyledSvg",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "SocialType__StyledSvg-rgcx9k-1",
+                                    "target": "svg",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                height="48"
+                                role="img"
+                                viewBox="0 0 48 48"
+                                width="48"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  aria-labelledby="facebook-title"
+                                  className="c4"
+                                  height="48"
+                                  role="img"
+                                  viewBox="0 0 48 48"
+                                  width="48"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title
+                                    id="facebook-title"
+                                  >
+                                    facebook description of the purpose of this icon
+                                  </title>
+                                  <g
+                                    id="Box_Facebook"
+                                    transform="translate(606 -35)"
+                                  >
+                                    <rect
+                                      data-name="Rectangle 1"
+                                      fill="#3c5193"
+                                      height={48}
+                                      id="Rectangle_1"
+                                      rx="9"
+                                      transform="translate(-606 35)"
+                                      width={48}
+                                    />
+                                    <path
+                                      d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
+                                      data-name="Path 4"
+                                      fill="#fff"
+                                      fillRule="evenodd"
+                                      id="Path_4"
+                                      transform="translate(-734 -45)"
+                                    />
+                                  </g>
+                                </svg>
+                              </StyledComponent>
+                            </SocialType__StyledSvg>
+                          </a>
+                        </StyledComponent>
+                      </SocialType__SocialWrapper>
+                    </SocialType>
+                  </li>
+                </StyledComponent>
+              </ListItem>
+              <ListItem
+                key="social-item-twitter"
+                theme={
+                  Object {
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
                 }
-              }
-              forwardedRef={null}
-              theme={
-                Object {
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                }
-              }
-            >
-              <li
-                className="c1"
               >
-                <SocialType
-                  description="twitter description of the purpose of this icon"
-                  key="social-twitter"
-                  size="48"
-                  type="twitter"
-                  url="http://twitter.com"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Socials__ListItem-sc-191ggvn-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:inline-flex;list-style:none;",
+                          [Function],
+                          " &:last-child{margin-right:0;}",
+                        ],
+                      },
+                      "displayName": "ListItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
+                    }
+                  }
                 >
-                  <a
-                    href="http://twitter.com"
+                  <li
+                    className="c2"
                   >
-                    <svg
-                      aria-labelledby="twitter-title"
-                      height="48"
-                      role="img"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
-                      viewBox="0 0 48 48"
-                      width="48"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <SocialType
+                      description="twitter description of the purpose of this icon"
+                      key="social-twitter"
+                      size="48"
+                      type="twitter"
+                      url="http://twitter.com"
                     >
-                      <title
-                        id="twitter-title"
+                      <SocialType__SocialWrapper
+                        href="http://twitter.com"
                       >
-                        twitter description of the purpose of this icon
-                      </title>
-                      <g
-                        id="Box_Twitter"
-                        transform="translate(606 -203)"
-                      >
-                        <rect
-                          data-name="twitter-name"
-                          fill="#2caae1"
-                          height={48}
-                          id="twitterID"
-                          rx="9"
-                          transform="translate(-606 203)"
-                          width={48}
-                        />
-                        <path
-                          d="M166.667,262.829a11.931,11.931,0,0,1-3.457.955,6.067,6.067,0,0,0,2.64-3.355,11.977,11.977,0,0,1-3.821,1.478,6.007,6.007,0,0,0-9.872,1.655,6.107,6.107,0,0,0-.383,3.876,17.046,17.046,0,0,1-12.4-6.347,6.1,6.1,0,0,0,1.862,8.092,5.957,5.957,0,0,1-2.731-.755v.077a6.089,6.089,0,0,0,1.367,3.843,6.01,6.01,0,0,0,3.474,2.1,6.017,6.017,0,0,1-2.718.1,6.068,6.068,0,0,0,2.141,3.013,6,6,0,0,0,3.481,1.2,12.071,12.071,0,0,1-8.917,2.51A16.943,16.943,0,0,0,146.559,284c11.07,0,17.123-9.239,17.123-17.252,0-.263,0-.525-.016-.785a12.288,12.288,0,0,0,3-3.134Z"
-                          data-name="Path 27"
-                          fill="#fff"
-                          id="twitterID-path"
-                          transform="translate(-734 -45)"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </SocialType>
-              </li>
-            </StyledComponent>
-          </ListItem>
-          <ListItem
-            key="social-item-youtube"
-            theme={
-              Object {
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Socials__ListItem-sc-191ggvn-1",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;list-style:none;",
-                      [Function],
-                      " &:last-child{margin-right:0;}",
-                    ],
-                  },
-                  "displayName": "ListItem",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
-                  "target": "li",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SocialType__SocialWrapper-rgcx9k-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:inline-flex;",
+                                ],
+                              },
+                              "displayName": "SocialType__SocialWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
+                              "target": "a",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          href="http://twitter.com"
+                        >
+                          <a
+                            className="c3"
+                            href="http://twitter.com"
+                          >
+                            <SocialType__StyledSvg
+                              aria-labelledby="twitter-title"
+                              height="48"
+                              role="img"
+                              viewBox="0 0 48 48"
+                              width="48"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <StyledComponent
+                                aria-labelledby="twitter-title"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "SocialType__StyledSvg-rgcx9k-1",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "display:inline-block;",
+                                      ],
+                                    },
+                                    "displayName": "SocialType__StyledSvg",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "SocialType__StyledSvg-rgcx9k-1",
+                                    "target": "svg",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                height="48"
+                                role="img"
+                                viewBox="0 0 48 48"
+                                width="48"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  aria-labelledby="twitter-title"
+                                  className="c4"
+                                  height="48"
+                                  role="img"
+                                  viewBox="0 0 48 48"
+                                  width="48"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title
+                                    id="twitter-title"
+                                  >
+                                    twitter description of the purpose of this icon
+                                  </title>
+                                  <g
+                                    id="Box_Twitter"
+                                    transform="translate(606 -203)"
+                                  >
+                                    <rect
+                                      data-name="twitter-name"
+                                      fill="#2caae1"
+                                      height={48}
+                                      id="twitterID"
+                                      rx="9"
+                                      transform="translate(-606 203)"
+                                      width={48}
+                                    />
+                                    <path
+                                      d="M166.667,262.829a11.931,11.931,0,0,1-3.457.955,6.067,6.067,0,0,0,2.64-3.355,11.977,11.977,0,0,1-3.821,1.478,6.007,6.007,0,0,0-9.872,1.655,6.107,6.107,0,0,0-.383,3.876,17.046,17.046,0,0,1-12.4-6.347,6.1,6.1,0,0,0,1.862,8.092,5.957,5.957,0,0,1-2.731-.755v.077a6.089,6.089,0,0,0,1.367,3.843,6.01,6.01,0,0,0,3.474,2.1,6.017,6.017,0,0,1-2.718.1,6.068,6.068,0,0,0,2.141,3.013,6,6,0,0,0,3.481,1.2,12.071,12.071,0,0,1-8.917,2.51A16.943,16.943,0,0,0,146.559,284c11.07,0,17.123-9.239,17.123-17.252,0-.263,0-.525-.016-.785a12.288,12.288,0,0,0,3-3.134Z"
+                                      data-name="Path 27"
+                                      fill="#fff"
+                                      id="twitterID-path"
+                                      transform="translate(-734 -45)"
+                                    />
+                                  </g>
+                                </svg>
+                              </StyledComponent>
+                            </SocialType__StyledSvg>
+                          </a>
+                        </StyledComponent>
+                      </SocialType__SocialWrapper>
+                    </SocialType>
+                  </li>
+                </StyledComponent>
+              </ListItem>
+              <ListItem
+                key="social-item-youtube"
+                theme={
+                  Object {
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
                 }
-              }
-              forwardedRef={null}
-              theme={
-                Object {
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                }
-              }
-            >
-              <li
-                className="c1"
               >
-                <SocialType
-                  description="youtube description of the purpose of this icon"
-                  key="social-youtube"
-                  size="48"
-                  type="youtube"
-                  url="http://youtube.com"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Socials__ListItem-sc-191ggvn-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:inline-flex;list-style:none;",
+                          [Function],
+                          " &:last-child{margin-right:0;}",
+                        ],
+                      },
+                      "displayName": "ListItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
+                    }
+                  }
                 >
-                  <a
-                    href="http://youtube.com"
+                  <li
+                    className="c2"
                   >
-                    <svg
-                      aria-labelledby="youtube-title"
-                      height="48"
-                      role="img"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
-                      viewBox="0 0 50 50"
-                      width="48"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <SocialType
+                      description="youtube description of the purpose of this icon"
+                      key="social-youtube"
+                      size="48"
+                      type="youtube"
+                      url="http://youtube.com"
                     >
-                      <title
-                        id="youtube-title"
+                      <SocialType__SocialWrapper
+                        href="http://youtube.com"
                       >
-                        youtube description of the purpose of this icon
-                      </title>
-                      <g
-                        id="Box_Youtube"
-                        transform="translate(350 -35)"
-                      >
-                        <rect
-                          data-name="Rectangle 3"
-                          fill="#fff"
-                          height={48}
-                          id="Rectangle_3"
-                          rx="8"
-                          stroke="#424242"
-                          strokeWidth="2"
-                          transform="translate(-349 36)"
-                          width={48}
-                        />
-                        <path
-                          d="M422.05,96.9a3.711,3.711,0,0,0-2.6-2.617c-2.283-.617-11.45-.617-11.45-.617s-9.167,0-11.467.617a3.685,3.685,0,0,0-2.6,2.617,39.409,39.409,0,0,0-.6,7.1,38.348,38.348,0,0,0,.617,7.1,3.711,3.711,0,0,0,2.6,2.617c2.283.616,11.45.616,11.45.616s9.167,0,11.467-.616a3.687,3.687,0,0,0,2.6-2.617,39.409,39.409,0,0,0,.6-7.1A38.348,38.348,0,0,0,422.05,96.9Z"
-                          data-name="Path 20"
-                          fill="#ee3124"
-                          id="Path_20"
-                          transform="translate(-734 -45)"
-                        />
-                        <path
-                          d="M405,108.367V99.633L412.667,104Z"
-                          data-name="Path 21"
-                          fill="#fff"
-                          id="Path_21"
-                          transform="translate(-734 -45)"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </SocialType>
-              </li>
-            </StyledComponent>
-          </ListItem>
-        </ul>
-      </StyledComponent>
-    </Socials__List>
-  </section>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SocialType__SocialWrapper-rgcx9k-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:inline-flex;",
+                                ],
+                              },
+                              "displayName": "SocialType__SocialWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
+                              "target": "a",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          href="http://youtube.com"
+                        >
+                          <a
+                            className="c3"
+                            href="http://youtube.com"
+                          >
+                            <SocialType__StyledSvg
+                              aria-labelledby="youtube-title"
+                              height="48"
+                              role="img"
+                              viewBox="0 0 50 50"
+                              width="48"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <StyledComponent
+                                aria-labelledby="youtube-title"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "SocialType__StyledSvg-rgcx9k-1",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "display:inline-block;",
+                                      ],
+                                    },
+                                    "displayName": "SocialType__StyledSvg",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "SocialType__StyledSvg-rgcx9k-1",
+                                    "target": "svg",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                height="48"
+                                role="img"
+                                viewBox="0 0 50 50"
+                                width="48"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  aria-labelledby="youtube-title"
+                                  className="c4"
+                                  height="48"
+                                  role="img"
+                                  viewBox="0 0 50 50"
+                                  width="48"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title
+                                    id="youtube-title"
+                                  >
+                                    youtube description of the purpose of this icon
+                                  </title>
+                                  <g
+                                    id="Box_Youtube"
+                                    transform="translate(350 -35)"
+                                  >
+                                    <rect
+                                      data-name="Rectangle 3"
+                                      fill="#fff"
+                                      height={48}
+                                      id="Rectangle_3"
+                                      rx="8"
+                                      stroke="#424242"
+                                      strokeWidth="2"
+                                      transform="translate(-349 36)"
+                                      width={48}
+                                    />
+                                    <path
+                                      d="M422.05,96.9a3.711,3.711,0,0,0-2.6-2.617c-2.283-.617-11.45-.617-11.45-.617s-9.167,0-11.467.617a3.685,3.685,0,0,0-2.6,2.617,39.409,39.409,0,0,0-.6,7.1,38.348,38.348,0,0,0,.617,7.1,3.711,3.711,0,0,0,2.6,2.617c2.283.616,11.45.616,11.45.616s9.167,0,11.467-.616a3.687,3.687,0,0,0,2.6-2.617,39.409,39.409,0,0,0,.6-7.1A38.348,38.348,0,0,0,422.05,96.9Z"
+                                      data-name="Path 20"
+                                      fill="#ee3124"
+                                      id="Path_20"
+                                      transform="translate(-734 -45)"
+                                    />
+                                    <path
+                                      d="M405,108.367V99.633L412.667,104Z"
+                                      data-name="Path 21"
+                                      fill="#fff"
+                                      id="Path_21"
+                                      transform="translate(-734 -45)"
+                                    />
+                                  </g>
+                                </svg>
+                              </StyledComponent>
+                            </SocialType__StyledSvg>
+                          </a>
+                        </StyledComponent>
+                      </SocialType__SocialWrapper>
+                    </SocialType>
+                  </li>
+                </StyledComponent>
+              </ListItem>
+            </ul>
+          </StyledComponent>
+        </Socials__List>
+      </section>
+    </StyledComponent>
+  </Socials__SocialWrapper>
 </Socials>
 `;
 
 exports[`<Socials /> should match snapshots 2`] = `
-.c0 {
-  padding: 0;
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 {
+  display: inline-block;
 }
 
 .c1 {
-  display: inline-block;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   list-style: none;
   margin-right: 16px;
 }
 
-.c1:last-child {
+.c2:last-child {
   margin-right: 0;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 <Socials
@@ -495,175 +782,299 @@ exports[`<Socials /> should match snapshots 2`] = `
     }
   }
 >
-  <section>
-    <Socials__List>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "Socials__List-sc-191ggvn-0",
-              "isStatic": true,
-              "lastClassName": "c0",
-              "rules": Array [
-                "padding:0;",
-              ],
-            },
-            "displayName": "Socials__List",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "Socials__List-sc-191ggvn-0",
-            "target": "ul",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
+  <Socials__SocialWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Socials__SocialWrapper-sc-191ggvn-2",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-flex;",
+            ],
+          },
+          "displayName": "Socials__SocialWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Socials__SocialWrapper-sc-191ggvn-2",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         }
-        forwardedRef={null}
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="c0"
       >
-        <ul
-          className="c0"
-        >
-          <ListItem
-            key="social-item-facebook"
-            theme={
+        <Socials__List>
+          <StyledComponent
+            forwardedComponent={
               Object {
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Socials__List-sc-191ggvn-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "padding:0;display:inline-flex;",
+                  ],
                 },
+                "displayName": "Socials__List",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Socials__List-sc-191ggvn-0",
+                "target": "ul",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
               }
             }
+            forwardedRef={null}
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Socials__ListItem-sc-191ggvn-1",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;list-style:none;",
-                      [Function],
-                      " &:last-child{margin-right:0;}",
-                    ],
-                  },
-                  "displayName": "ListItem",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
-                  "target": "li",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              theme={
-                Object {
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                }
-              }
+            <ul
+              className="c1"
             >
-              <li
-                className="c1"
+              <ListItem
+                key="social-item-facebook"
+                theme={
+                  Object {
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
-                <SocialType
-                  description="facebook description of the purpose of this icon"
-                  key="social-facebook"
-                  size="48"
-                  type="facebook"
-                  url="http://facebook.com"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Socials__ListItem-sc-191ggvn-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:inline-flex;list-style:none;",
+                          [Function],
+                          " &:last-child{margin-right:0;}",
+                        ],
+                      },
+                      "displayName": "ListItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
+                    }
+                  }
                 >
-                  <a
-                    href="http://facebook.com"
+                  <li
+                    className="c2"
                   >
-                    <svg
-                      aria-labelledby="facebook-title"
-                      height="48"
-                      role="img"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
-                      viewBox="0 0 48 48"
-                      width="48"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <SocialType
+                      description="facebook description of the purpose of this icon"
+                      key="social-facebook"
+                      size="48"
+                      type="facebook"
+                      url="http://facebook.com"
                     >
-                      <title
-                        id="facebook-title"
+                      <SocialType__SocialWrapper
+                        href="http://facebook.com"
                       >
-                        facebook description of the purpose of this icon
-                      </title>
-                      <g
-                        id="Box_Facebook"
-                        transform="translate(606 -35)"
-                      >
-                        <rect
-                          data-name="Rectangle 1"
-                          fill="#3c5193"
-                          height={48}
-                          id="Rectangle_1"
-                          rx="9"
-                          transform="translate(-606 35)"
-                          width={48}
-                        />
-                        <path
-                          d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
-                          data-name="Path 4"
-                          fill="#fff"
-                          fillRule="evenodd"
-                          id="Path_4"
-                          transform="translate(-734 -45)"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </SocialType>
-              </li>
-            </StyledComponent>
-          </ListItem>
-        </ul>
-      </StyledComponent>
-    </Socials__List>
-  </section>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SocialType__SocialWrapper-rgcx9k-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:inline-flex;",
+                                ],
+                              },
+                              "displayName": "SocialType__SocialWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
+                              "target": "a",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          href="http://facebook.com"
+                        >
+                          <a
+                            className="c3"
+                            href="http://facebook.com"
+                          >
+                            <SocialType__StyledSvg
+                              aria-labelledby="facebook-title"
+                              height="48"
+                              role="img"
+                              viewBox="0 0 48 48"
+                              width="48"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <StyledComponent
+                                aria-labelledby="facebook-title"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "SocialType__StyledSvg-rgcx9k-1",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "display:inline-block;",
+                                      ],
+                                    },
+                                    "displayName": "SocialType__StyledSvg",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "SocialType__StyledSvg-rgcx9k-1",
+                                    "target": "svg",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                height="48"
+                                role="img"
+                                viewBox="0 0 48 48"
+                                width="48"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  aria-labelledby="facebook-title"
+                                  className="c4"
+                                  height="48"
+                                  role="img"
+                                  viewBox="0 0 48 48"
+                                  width="48"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title
+                                    id="facebook-title"
+                                  >
+                                    facebook description of the purpose of this icon
+                                  </title>
+                                  <g
+                                    id="Box_Facebook"
+                                    transform="translate(606 -35)"
+                                  >
+                                    <rect
+                                      data-name="Rectangle 1"
+                                      fill="#3c5193"
+                                      height={48}
+                                      id="Rectangle_1"
+                                      rx="9"
+                                      transform="translate(-606 35)"
+                                      width={48}
+                                    />
+                                    <path
+                                      d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
+                                      data-name="Path 4"
+                                      fill="#fff"
+                                      fillRule="evenodd"
+                                      id="Path_4"
+                                      transform="translate(-734 -45)"
+                                    />
+                                  </g>
+                                </svg>
+                              </StyledComponent>
+                            </SocialType__StyledSvg>
+                          </a>
+                        </StyledComponent>
+                      </SocialType__SocialWrapper>
+                    </SocialType>
+                  </li>
+                </StyledComponent>
+              </ListItem>
+            </ul>
+          </StyledComponent>
+        </Socials__List>
+      </section>
+    </StyledComponent>
+  </Socials__SocialWrapper>
 </Socials>
 `;
 
 exports[`<Socials /> should match snapshots 3`] = `
-.c0 {
-  padding: 0;
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 {
+  display: inline-block;
 }
 
 .c1 {
-  display: inline-block;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   list-style: none;
   margin-right: 16px;
 }
 
-.c1:last-child {
+.c2:last-child {
   margin-right: 0;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 <Socials
@@ -703,403 +1114,640 @@ exports[`<Socials /> should match snapshots 3`] = `
     }
   }
 >
-  <section>
-    <Socials__List>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "Socials__List-sc-191ggvn-0",
-              "isStatic": true,
-              "lastClassName": "c0",
-              "rules": Array [
-                "padding:0;",
-              ],
-            },
-            "displayName": "Socials__List",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "Socials__List-sc-191ggvn-0",
-            "target": "ul",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
+  <Socials__SocialWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Socials__SocialWrapper-sc-191ggvn-2",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-flex;",
+            ],
+          },
+          "displayName": "Socials__SocialWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Socials__SocialWrapper-sc-191ggvn-2",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         }
-        forwardedRef={null}
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="c0"
       >
-        <ul
-          className="c0"
-        >
-          <ListItem
-            key="social-item-facebook"
-            theme={
+        <Socials__List>
+          <StyledComponent
+            forwardedComponent={
               Object {
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Socials__List-sc-191ggvn-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "padding:0;display:inline-flex;",
+                  ],
                 },
+                "displayName": "Socials__List",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Socials__List-sc-191ggvn-0",
+                "target": "ul",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
               }
             }
+            forwardedRef={null}
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Socials__ListItem-sc-191ggvn-1",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;list-style:none;",
-                      [Function],
-                      " &:last-child{margin-right:0;}",
-                    ],
-                  },
-                  "displayName": "ListItem",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
-                  "target": "li",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              theme={
-                Object {
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                }
-              }
+            <ul
+              className="c1"
             >
-              <li
-                className="c1"
+              <ListItem
+                key="social-item-facebook"
+                theme={
+                  Object {
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
-                <SocialType
-                  description="facebook description of the purpose of this icon"
-                  key="social-facebook"
-                  size="24"
-                  type="facebook"
-                  url="http://facebook.com"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Socials__ListItem-sc-191ggvn-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:inline-flex;list-style:none;",
+                          [Function],
+                          " &:last-child{margin-right:0;}",
+                        ],
+                      },
+                      "displayName": "ListItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
+                    }
+                  }
                 >
-                  <a
-                    href="http://facebook.com"
+                  <li
+                    className="c2"
                   >
-                    <svg
-                      aria-labelledby="facebook-title"
-                      height="24"
-                      role="img"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
-                      viewBox="0 0 48 48"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <SocialType
+                      description="facebook description of the purpose of this icon"
+                      key="social-facebook"
+                      size="24"
+                      type="facebook"
+                      url="http://facebook.com"
                     >
-                      <title
-                        id="facebook-title"
+                      <SocialType__SocialWrapper
+                        href="http://facebook.com"
                       >
-                        facebook description of the purpose of this icon
-                      </title>
-                      <g
-                        id="Box_Facebook"
-                        transform="translate(606 -35)"
-                      >
-                        <rect
-                          data-name="Rectangle 1"
-                          fill="#3c5193"
-                          height={48}
-                          id="Rectangle_1"
-                          rx="9"
-                          transform="translate(-606 35)"
-                          width={48}
-                        />
-                        <path
-                          d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
-                          data-name="Path 4"
-                          fill="#fff"
-                          fillRule="evenodd"
-                          id="Path_4"
-                          transform="translate(-734 -45)"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </SocialType>
-              </li>
-            </StyledComponent>
-          </ListItem>
-          <ListItem
-            key="social-item-twitter"
-            theme={
-              Object {
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Socials__ListItem-sc-191ggvn-1",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;list-style:none;",
-                      [Function],
-                      " &:last-child{margin-right:0;}",
-                    ],
-                  },
-                  "displayName": "ListItem",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
-                  "target": "li",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SocialType__SocialWrapper-rgcx9k-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:inline-flex;",
+                                ],
+                              },
+                              "displayName": "SocialType__SocialWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
+                              "target": "a",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          href="http://facebook.com"
+                        >
+                          <a
+                            className="c3"
+                            href="http://facebook.com"
+                          >
+                            <SocialType__StyledSvg
+                              aria-labelledby="facebook-title"
+                              height="24"
+                              role="img"
+                              viewBox="0 0 48 48"
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <StyledComponent
+                                aria-labelledby="facebook-title"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "SocialType__StyledSvg-rgcx9k-1",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "display:inline-block;",
+                                      ],
+                                    },
+                                    "displayName": "SocialType__StyledSvg",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "SocialType__StyledSvg-rgcx9k-1",
+                                    "target": "svg",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                height="24"
+                                role="img"
+                                viewBox="0 0 48 48"
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  aria-labelledby="facebook-title"
+                                  className="c4"
+                                  height="24"
+                                  role="img"
+                                  viewBox="0 0 48 48"
+                                  width="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title
+                                    id="facebook-title"
+                                  >
+                                    facebook description of the purpose of this icon
+                                  </title>
+                                  <g
+                                    id="Box_Facebook"
+                                    transform="translate(606 -35)"
+                                  >
+                                    <rect
+                                      data-name="Rectangle 1"
+                                      fill="#3c5193"
+                                      height={48}
+                                      id="Rectangle_1"
+                                      rx="9"
+                                      transform="translate(-606 35)"
+                                      width={48}
+                                    />
+                                    <path
+                                      d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
+                                      data-name="Path 4"
+                                      fill="#fff"
+                                      fillRule="evenodd"
+                                      id="Path_4"
+                                      transform="translate(-734 -45)"
+                                    />
+                                  </g>
+                                </svg>
+                              </StyledComponent>
+                            </SocialType__StyledSvg>
+                          </a>
+                        </StyledComponent>
+                      </SocialType__SocialWrapper>
+                    </SocialType>
+                  </li>
+                </StyledComponent>
+              </ListItem>
+              <ListItem
+                key="social-item-twitter"
+                theme={
+                  Object {
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
                 }
-              }
-              forwardedRef={null}
-              theme={
-                Object {
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                }
-              }
-            >
-              <li
-                className="c1"
               >
-                <SocialType
-                  description="twitter description of the purpose of this icon"
-                  key="social-twitter"
-                  size="24"
-                  type="twitter"
-                  url="http://twitter.com"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Socials__ListItem-sc-191ggvn-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:inline-flex;list-style:none;",
+                          [Function],
+                          " &:last-child{margin-right:0;}",
+                        ],
+                      },
+                      "displayName": "ListItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
+                    }
+                  }
                 >
-                  <a
-                    href="http://twitter.com"
+                  <li
+                    className="c2"
                   >
-                    <svg
-                      aria-labelledby="twitter-title"
-                      height="24"
-                      role="img"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
-                      viewBox="0 0 48 48"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <SocialType
+                      description="twitter description of the purpose of this icon"
+                      key="social-twitter"
+                      size="24"
+                      type="twitter"
+                      url="http://twitter.com"
                     >
-                      <title
-                        id="twitter-title"
+                      <SocialType__SocialWrapper
+                        href="http://twitter.com"
                       >
-                        twitter description of the purpose of this icon
-                      </title>
-                      <g
-                        id="Box_Twitter"
-                        transform="translate(606 -203)"
-                      >
-                        <rect
-                          data-name="twitter-name"
-                          fill="#2caae1"
-                          height={48}
-                          id="twitterID"
-                          rx="9"
-                          transform="translate(-606 203)"
-                          width={48}
-                        />
-                        <path
-                          d="M166.667,262.829a11.931,11.931,0,0,1-3.457.955,6.067,6.067,0,0,0,2.64-3.355,11.977,11.977,0,0,1-3.821,1.478,6.007,6.007,0,0,0-9.872,1.655,6.107,6.107,0,0,0-.383,3.876,17.046,17.046,0,0,1-12.4-6.347,6.1,6.1,0,0,0,1.862,8.092,5.957,5.957,0,0,1-2.731-.755v.077a6.089,6.089,0,0,0,1.367,3.843,6.01,6.01,0,0,0,3.474,2.1,6.017,6.017,0,0,1-2.718.1,6.068,6.068,0,0,0,2.141,3.013,6,6,0,0,0,3.481,1.2,12.071,12.071,0,0,1-8.917,2.51A16.943,16.943,0,0,0,146.559,284c11.07,0,17.123-9.239,17.123-17.252,0-.263,0-.525-.016-.785a12.288,12.288,0,0,0,3-3.134Z"
-                          data-name="Path 27"
-                          fill="#fff"
-                          id="twitterID-path"
-                          transform="translate(-734 -45)"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </SocialType>
-              </li>
-            </StyledComponent>
-          </ListItem>
-          <ListItem
-            key="social-item-youtube"
-            theme={
-              Object {
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Socials__ListItem-sc-191ggvn-1",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;list-style:none;",
-                      [Function],
-                      " &:last-child{margin-right:0;}",
-                    ],
-                  },
-                  "displayName": "ListItem",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
-                  "target": "li",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SocialType__SocialWrapper-rgcx9k-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:inline-flex;",
+                                ],
+                              },
+                              "displayName": "SocialType__SocialWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
+                              "target": "a",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          href="http://twitter.com"
+                        >
+                          <a
+                            className="c3"
+                            href="http://twitter.com"
+                          >
+                            <SocialType__StyledSvg
+                              aria-labelledby="twitter-title"
+                              height="24"
+                              role="img"
+                              viewBox="0 0 48 48"
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <StyledComponent
+                                aria-labelledby="twitter-title"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "SocialType__StyledSvg-rgcx9k-1",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "display:inline-block;",
+                                      ],
+                                    },
+                                    "displayName": "SocialType__StyledSvg",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "SocialType__StyledSvg-rgcx9k-1",
+                                    "target": "svg",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                height="24"
+                                role="img"
+                                viewBox="0 0 48 48"
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  aria-labelledby="twitter-title"
+                                  className="c4"
+                                  height="24"
+                                  role="img"
+                                  viewBox="0 0 48 48"
+                                  width="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title
+                                    id="twitter-title"
+                                  >
+                                    twitter description of the purpose of this icon
+                                  </title>
+                                  <g
+                                    id="Box_Twitter"
+                                    transform="translate(606 -203)"
+                                  >
+                                    <rect
+                                      data-name="twitter-name"
+                                      fill="#2caae1"
+                                      height={48}
+                                      id="twitterID"
+                                      rx="9"
+                                      transform="translate(-606 203)"
+                                      width={48}
+                                    />
+                                    <path
+                                      d="M166.667,262.829a11.931,11.931,0,0,1-3.457.955,6.067,6.067,0,0,0,2.64-3.355,11.977,11.977,0,0,1-3.821,1.478,6.007,6.007,0,0,0-9.872,1.655,6.107,6.107,0,0,0-.383,3.876,17.046,17.046,0,0,1-12.4-6.347,6.1,6.1,0,0,0,1.862,8.092,5.957,5.957,0,0,1-2.731-.755v.077a6.089,6.089,0,0,0,1.367,3.843,6.01,6.01,0,0,0,3.474,2.1,6.017,6.017,0,0,1-2.718.1,6.068,6.068,0,0,0,2.141,3.013,6,6,0,0,0,3.481,1.2,12.071,12.071,0,0,1-8.917,2.51A16.943,16.943,0,0,0,146.559,284c11.07,0,17.123-9.239,17.123-17.252,0-.263,0-.525-.016-.785a12.288,12.288,0,0,0,3-3.134Z"
+                                      data-name="Path 27"
+                                      fill="#fff"
+                                      id="twitterID-path"
+                                      transform="translate(-734 -45)"
+                                    />
+                                  </g>
+                                </svg>
+                              </StyledComponent>
+                            </SocialType__StyledSvg>
+                          </a>
+                        </StyledComponent>
+                      </SocialType__SocialWrapper>
+                    </SocialType>
+                  </li>
+                </StyledComponent>
+              </ListItem>
+              <ListItem
+                key="social-item-youtube"
+                theme={
+                  Object {
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
                 }
-              }
-              forwardedRef={null}
-              theme={
-                Object {
-                  "spacing": Object {
-                    "large": 24,
-                    "medium": 16,
-                    "small": 12,
-                    "xlarge": 32,
-                    "xsmall": 8,
-                    "xxlarge": 40,
-                    "xxsmall": 4,
-                    "xxxlarge": 48,
-                    "xxxsmall": 2,
-                  },
-                }
-              }
-            >
-              <li
-                className="c1"
               >
-                <SocialType
-                  description="youtube description of the purpose of this icon"
-                  key="social-youtube"
-                  size="24"
-                  type="youtube"
-                  url="http://youtube.com"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Socials__ListItem-sc-191ggvn-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:inline-flex;list-style:none;",
+                          [Function],
+                          " &:last-child{margin-right:0;}",
+                        ],
+                      },
+                      "displayName": "ListItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Socials__ListItem-sc-191ggvn-1",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "spacing": Object {
+                        "large": 24,
+                        "medium": 16,
+                        "small": 12,
+                        "xlarge": 32,
+                        "xsmall": 8,
+                        "xxlarge": 40,
+                        "xxsmall": 4,
+                        "xxxlarge": 48,
+                        "xxxsmall": 2,
+                      },
+                    }
+                  }
                 >
-                  <a
-                    href="http://youtube.com"
+                  <li
+                    className="c2"
                   >
-                    <svg
-                      aria-labelledby="youtube-title"
-                      height="24"
-                      role="img"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
-                      viewBox="0 0 50 50"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <SocialType
+                      description="youtube description of the purpose of this icon"
+                      key="social-youtube"
+                      size="24"
+                      type="youtube"
+                      url="http://youtube.com"
                     >
-                      <title
-                        id="youtube-title"
+                      <SocialType__SocialWrapper
+                        href="http://youtube.com"
                       >
-                        youtube description of the purpose of this icon
-                      </title>
-                      <g
-                        id="Box_Youtube"
-                        transform="translate(350 -35)"
-                      >
-                        <rect
-                          data-name="Rectangle 3"
-                          fill="#fff"
-                          height={48}
-                          id="Rectangle_3"
-                          rx="8"
-                          stroke="#424242"
-                          strokeWidth="2"
-                          transform="translate(-349 36)"
-                          width={48}
-                        />
-                        <path
-                          d="M422.05,96.9a3.711,3.711,0,0,0-2.6-2.617c-2.283-.617-11.45-.617-11.45-.617s-9.167,0-11.467.617a3.685,3.685,0,0,0-2.6,2.617,39.409,39.409,0,0,0-.6,7.1,38.348,38.348,0,0,0,.617,7.1,3.711,3.711,0,0,0,2.6,2.617c2.283.616,11.45.616,11.45.616s9.167,0,11.467-.616a3.687,3.687,0,0,0,2.6-2.617,39.409,39.409,0,0,0,.6-7.1A38.348,38.348,0,0,0,422.05,96.9Z"
-                          data-name="Path 20"
-                          fill="#ee3124"
-                          id="Path_20"
-                          transform="translate(-734 -45)"
-                        />
-                        <path
-                          d="M405,108.367V99.633L412.667,104Z"
-                          data-name="Path 21"
-                          fill="#fff"
-                          id="Path_21"
-                          transform="translate(-734 -45)"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </SocialType>
-              </li>
-            </StyledComponent>
-          </ListItem>
-        </ul>
-      </StyledComponent>
-    </Socials__List>
-  </section>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SocialType__SocialWrapper-rgcx9k-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:inline-flex;",
+                                ],
+                              },
+                              "displayName": "SocialType__SocialWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
+                              "target": "a",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          href="http://youtube.com"
+                        >
+                          <a
+                            className="c3"
+                            href="http://youtube.com"
+                          >
+                            <SocialType__StyledSvg
+                              aria-labelledby="youtube-title"
+                              height="24"
+                              role="img"
+                              viewBox="0 0 50 50"
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <StyledComponent
+                                aria-labelledby="youtube-title"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "SocialType__StyledSvg-rgcx9k-1",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "display:inline-block;",
+                                      ],
+                                    },
+                                    "displayName": "SocialType__StyledSvg",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "SocialType__StyledSvg-rgcx9k-1",
+                                    "target": "svg",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                height="24"
+                                role="img"
+                                viewBox="0 0 50 50"
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  aria-labelledby="youtube-title"
+                                  className="c4"
+                                  height="24"
+                                  role="img"
+                                  viewBox="0 0 50 50"
+                                  width="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title
+                                    id="youtube-title"
+                                  >
+                                    youtube description of the purpose of this icon
+                                  </title>
+                                  <g
+                                    id="Box_Youtube"
+                                    transform="translate(350 -35)"
+                                  >
+                                    <rect
+                                      data-name="Rectangle 3"
+                                      fill="#fff"
+                                      height={48}
+                                      id="Rectangle_3"
+                                      rx="8"
+                                      stroke="#424242"
+                                      strokeWidth="2"
+                                      transform="translate(-349 36)"
+                                      width={48}
+                                    />
+                                    <path
+                                      d="M422.05,96.9a3.711,3.711,0,0,0-2.6-2.617c-2.283-.617-11.45-.617-11.45-.617s-9.167,0-11.467.617a3.685,3.685,0,0,0-2.6,2.617,39.409,39.409,0,0,0-.6,7.1,38.348,38.348,0,0,0,.617,7.1,3.711,3.711,0,0,0,2.6,2.617c2.283.616,11.45.616,11.45.616s9.167,0,11.467-.616a3.687,3.687,0,0,0,2.6-2.617,39.409,39.409,0,0,0,.6-7.1A38.348,38.348,0,0,0,422.05,96.9Z"
+                                      data-name="Path 20"
+                                      fill="#ee3124"
+                                      id="Path_20"
+                                      transform="translate(-734 -45)"
+                                    />
+                                    <path
+                                      d="M405,108.367V99.633L412.667,104Z"
+                                      data-name="Path 21"
+                                      fill="#fff"
+                                      id="Path_21"
+                                      transform="translate(-734 -45)"
+                                    />
+                                  </g>
+                                </svg>
+                              </StyledComponent>
+                            </SocialType__StyledSvg>
+                          </a>
+                        </StyledComponent>
+                      </SocialType__SocialWrapper>
+                    </SocialType>
+                  </li>
+                </StyledComponent>
+              </ListItem>
+            </ul>
+          </StyledComponent>
+        </Socials__List>
+      </section>
+    </StyledComponent>
+  </Socials__SocialWrapper>
 </Socials>
 `;
