@@ -86,6 +86,7 @@ const Mobile = ({
       href={handleHref(activePage - 1)}
       rightSquared
       theme={theme}
+      rel={activePage > 2 ? 'nofollow' : ''}
     >
       {prevButtonText}
     </StyledActionButton>
@@ -99,6 +100,7 @@ const Mobile = ({
       href={handleHref(activePage + 1)}
       leftSquared
       theme={theme}
+      rel="nofollow"
     >
       {nextButtonText}
     </StyledActionButton>

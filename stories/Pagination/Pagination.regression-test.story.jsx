@@ -14,7 +14,7 @@ storiesOf('Pagination', module)
       prevButtonText="Previous Page"
       nextButtonText="Next Page"
       totalPages={10}
-      activePage={5}
+      activePage={1}
     />
   ))
   .add('helperText', () => (

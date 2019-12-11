@@ -19,16 +19,6 @@ class Pagination extends React.Component {
     this.props = props;
   }
 
-  componentDidMount() {
-    window.addEventListener('resize', this.resize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.resize);
-  }
-
-  resize = () => this.forceUpdate();
-
   render() {
     const {
       ariaLabel,
