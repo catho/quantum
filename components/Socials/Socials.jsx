@@ -29,7 +29,7 @@ const SocialWrapper = styled.section`
 
 ListItem.displayName = 'ListItem';
 
-const Socials = ({ items, size, theme }) => (
+const Socials = ({ items, size, theme, withBox }) => (
   <SocialWrapper>
     <List>
       {items.map(item => (
@@ -40,6 +40,7 @@ const Socials = ({ items, size, theme }) => (
             type={item.name}
             size={size}
             title={item.title}
+            withBox={withBox}
           />
         </ListItem>
       ))}
@@ -50,6 +51,7 @@ const Socials = ({ items, size, theme }) => (
 Socials.defaultProps = {
   size: '48',
   theme: { spacing },
+  withBox: true,
 };
 
 Socials.propTypes = {
@@ -64,6 +66,7 @@ Socials.propTypes = {
       title: Proptypes.string,
     }).isRequired,
   ).isRequired,
+  withBox: Proptypes.bool,
 };
 
 export default Socials;

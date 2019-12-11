@@ -13,9 +13,13 @@ import {
 import { Row, Col } from '../../components';
 
 import Socials from '../../components/Socials';
-import SocialExampleAll from './examples/SocialExampleAll';
-import SocialExampleChangingSize from './examples/SocialExampleChangingSize';
-import SocialExampleFacebook from './examples/SocialExampleFacebook';
+import {
+  SocialExampleAll,
+  SocialExampleChangingSize,
+  SocialExampleFacebook,
+  SocialExampleWithoutBox,
+  SocialExampleWithoutBoxChangingSize,
+} from './examples/SocialExamples';
 
 storiesOf('Socials', module).add('Socials', () => (
   <>
@@ -70,6 +74,26 @@ storiesOf('Socials', module).add('Socials', () => (
             </Col>
             <Col xsmall={4} small={4} medium={6}>
               <SocialExampleFacebook />
+            </Col>
+          </Row>
+          <Title as="h3">Socials without boxes</Title>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{SocialExampleWithoutBox.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SocialExampleWithoutBox />
+            </Col>
+          </Row>
+          <Title as="h3">Socials without boxes (24px)</Title>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>
+                {SocialExampleWithoutBoxChangingSize.code}
+              </SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SocialExampleWithoutBoxChangingSize />
             </Col>
           </Row>
         </StoryContainer>

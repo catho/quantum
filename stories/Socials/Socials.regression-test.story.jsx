@@ -28,7 +28,7 @@ storiesOf('Socials', module)
     </div>
   ))
 
-  .add('All items (24px)', () => (
+  .add('all items (24px)', () => (
     <div>
       <Socials items={allItems} size="24" />
     </div>
@@ -46,5 +46,15 @@ storiesOf('Socials', module)
   .add('only Youtube', () => (
     <div>
       <Socials items={[allItems[2]]} />
+    </div>
+  ))
+  .add('all items without box (24px)', () => (
+    <div>
+      <Socials items={allItems} withBox={false} size="24" />
+    </div>
+  ))
+  .add('all items without box', () => (
+    <div>
+      <Socials items={allItems} withBox={false} />
     </div>
   ));
