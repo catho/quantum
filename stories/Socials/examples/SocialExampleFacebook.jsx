@@ -5,7 +5,7 @@ const socialList = [
   {
     name: 'facebook',
     url: 'http://facebook.com',
-    description: 'facebook description of the purpose of this icon',
+    title: 'facebook title of the purpose of this icon',
   },
 ];
 
@@ -19,7 +19,7 @@ const socialList = [
   {
     name: 'facebook',
     url: 'http://facebook.com',
-    description: 'facebook description of the purpose of this icon',
+    title: 'facebook title of the purpose of this icon',
   },
 ];
 

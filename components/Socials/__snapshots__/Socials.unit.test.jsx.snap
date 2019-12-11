@@ -44,19 +44,19 @@ exports[`<Socials /> should match snapshots 1`] = `
   items={
     Array [
       Object {
-        "description": "facebook description of the purpose of this icon",
         "name": "facebook",
-        "url": "http://facebook.com",
+        "title": "facebook title of the purpose of this icon",
+        "url": "https://facebook.com",
       },
       Object {
-        "description": "twitter description of the purpose of this icon",
         "name": "twitter",
-        "url": "http://twitter.com",
+        "title": "twitter title of the purpose of this icon",
+        "url": "https://twitter.com",
       },
       Object {
-        "description": "youtube description of the purpose of this icon",
         "name": "youtube",
-        "url": "http://youtube.com",
+        "title": "youtube title of the purpose of this icon",
+        "url": "https://youtube.com",
       },
     ]
   }
@@ -199,14 +199,14 @@ exports[`<Socials /> should match snapshots 1`] = `
                     className="c2"
                   >
                     <SocialType
-                      description="facebook description of the purpose of this icon"
                       key="social-facebook"
                       size="48"
+                      title="facebook title of the purpose of this icon"
                       type="facebook"
-                      url="http://facebook.com"
+                      url="https://facebook.com"
                     >
                       <SocialType__SocialWrapper
-                        href="http://facebook.com"
+                        href="https://facebook.com"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -232,11 +232,11 @@ exports[`<Socials /> should match snapshots 1`] = `
                             }
                           }
                           forwardedRef={null}
-                          href="http://facebook.com"
+                          href="https://facebook.com"
                         >
                           <a
                             className="c3"
-                            href="http://facebook.com"
+                            href="https://facebook.com"
                           >
                             <SocialType__StyledSvg
                               aria-labelledby="facebook-title"
@@ -289,7 +289,7 @@ exports[`<Socials /> should match snapshots 1`] = `
                                   <title
                                     id="facebook-title"
                                   >
-                                    facebook description of the purpose of this icon
+                                    facebook title of the purpose of this icon
                                   </title>
                                   <g
                                     id="Box_Facebook"
@@ -387,14 +387,14 @@ exports[`<Socials /> should match snapshots 1`] = `
                     className="c2"
                   >
                     <SocialType
-                      description="twitter description of the purpose of this icon"
                       key="social-twitter"
                       size="48"
+                      title="twitter title of the purpose of this icon"
                       type="twitter"
-                      url="http://twitter.com"
+                      url="https://twitter.com"
                     >
                       <SocialType__SocialWrapper
-                        href="http://twitter.com"
+                        href="https://twitter.com"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -420,11 +420,11 @@ exports[`<Socials /> should match snapshots 1`] = `
                             }
                           }
                           forwardedRef={null}
-                          href="http://twitter.com"
+                          href="https://twitter.com"
                         >
                           <a
                             className="c3"
-                            href="http://twitter.com"
+                            href="https://twitter.com"
                           >
                             <SocialType__StyledSvg
                               aria-labelledby="twitter-title"
@@ -477,7 +477,7 @@ exports[`<Socials /> should match snapshots 1`] = `
                                   <title
                                     id="twitter-title"
                                   >
-                                    twitter description of the purpose of this icon
+                                    twitter title of the purpose of this icon
                                   </title>
                                   <g
                                     id="Box_Twitter"
@@ -574,14 +574,14 @@ exports[`<Socials /> should match snapshots 1`] = `
                     className="c2"
                   >
                     <SocialType
-                      description="youtube description of the purpose of this icon"
                       key="social-youtube"
                       size="48"
+                      title="youtube title of the purpose of this icon"
                       type="youtube"
-                      url="http://youtube.com"
+                      url="https://youtube.com"
                     >
                       <SocialType__SocialWrapper
-                        href="http://youtube.com"
+                        href="https://youtube.com"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -607,11 +607,11 @@ exports[`<Socials /> should match snapshots 1`] = `
                             }
                           }
                           forwardedRef={null}
-                          href="http://youtube.com"
+                          href="https://youtube.com"
                         >
                           <a
                             className="c3"
-                            href="http://youtube.com"
+                            href="https://youtube.com"
                           >
                             <SocialType__StyledSvg
                               aria-labelledby="youtube-title"
@@ -664,7 +664,7 @@ exports[`<Socials /> should match snapshots 1`] = `
                                   <title
                                     id="youtube-title"
                                   >
-                                    youtube description of the purpose of this icon
+                                    youtube title of the purpose of this icon
                                   </title>
                                   <g
                                     id="Box_Youtube"
@@ -686,14 +686,14 @@ exports[`<Socials /> should match snapshots 1`] = `
                                       data-name="Path 20"
                                       fill="#ee3124"
                                       id="Path_20"
-                                      transform="translate(-734 -45)"
+                                      transform="translate(-733 -44)"
                                     />
                                     <path
                                       d="M405,108.367V99.633L412.667,104Z"
                                       data-name="Path 21"
                                       fill="#fff"
                                       id="Path_21"
-                                      transform="translate(-734 -45)"
+                                      transform="translate(-733 -44)"
                                     />
                                   </g>
                                 </svg>
@@ -759,9 +759,9 @@ exports[`<Socials /> should match snapshots 2`] = `
   items={
     Array [
       Object {
-        "description": "facebook description of the purpose of this icon",
         "name": "facebook",
-        "url": "http://facebook.com",
+        "title": "facebook title of the purpose of this icon",
+        "url": "https://facebook.com",
       },
     ]
   }
@@ -904,14 +904,14 @@ exports[`<Socials /> should match snapshots 2`] = `
                     className="c2"
                   >
                     <SocialType
-                      description="facebook description of the purpose of this icon"
                       key="social-facebook"
                       size="48"
+                      title="facebook title of the purpose of this icon"
                       type="facebook"
-                      url="http://facebook.com"
+                      url="https://facebook.com"
                     >
                       <SocialType__SocialWrapper
-                        href="http://facebook.com"
+                        href="https://facebook.com"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -937,11 +937,11 @@ exports[`<Socials /> should match snapshots 2`] = `
                             }
                           }
                           forwardedRef={null}
-                          href="http://facebook.com"
+                          href="https://facebook.com"
                         >
                           <a
                             className="c3"
-                            href="http://facebook.com"
+                            href="https://facebook.com"
                           >
                             <SocialType__StyledSvg
                               aria-labelledby="facebook-title"
@@ -994,7 +994,7 @@ exports[`<Socials /> should match snapshots 2`] = `
                                   <title
                                     id="facebook-title"
                                   >
-                                    facebook description of the purpose of this icon
+                                    facebook title of the purpose of this icon
                                   </title>
                                   <g
                                     id="Box_Facebook"
@@ -1081,19 +1081,19 @@ exports[`<Socials /> should match snapshots 3`] = `
   items={
     Array [
       Object {
-        "description": "facebook description of the purpose of this icon",
         "name": "facebook",
-        "url": "http://facebook.com",
+        "title": "facebook title of the purpose of this icon",
+        "url": "https://facebook.com",
       },
       Object {
-        "description": "twitter description of the purpose of this icon",
         "name": "twitter",
-        "url": "http://twitter.com",
+        "title": "twitter title of the purpose of this icon",
+        "url": "https://twitter.com",
       },
       Object {
-        "description": "youtube description of the purpose of this icon",
         "name": "youtube",
-        "url": "http://youtube.com",
+        "title": "youtube title of the purpose of this icon",
+        "url": "https://youtube.com",
       },
     ]
   }
@@ -1236,14 +1236,14 @@ exports[`<Socials /> should match snapshots 3`] = `
                     className="c2"
                   >
                     <SocialType
-                      description="facebook description of the purpose of this icon"
                       key="social-facebook"
                       size="24"
+                      title="facebook title of the purpose of this icon"
                       type="facebook"
-                      url="http://facebook.com"
+                      url="https://facebook.com"
                     >
                       <SocialType__SocialWrapper
-                        href="http://facebook.com"
+                        href="https://facebook.com"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -1269,11 +1269,11 @@ exports[`<Socials /> should match snapshots 3`] = `
                             }
                           }
                           forwardedRef={null}
-                          href="http://facebook.com"
+                          href="https://facebook.com"
                         >
                           <a
                             className="c3"
-                            href="http://facebook.com"
+                            href="https://facebook.com"
                           >
                             <SocialType__StyledSvg
                               aria-labelledby="facebook-title"
@@ -1326,7 +1326,7 @@ exports[`<Socials /> should match snapshots 3`] = `
                                   <title
                                     id="facebook-title"
                                   >
-                                    facebook description of the purpose of this icon
+                                    facebook title of the purpose of this icon
                                   </title>
                                   <g
                                     id="Box_Facebook"
@@ -1424,14 +1424,14 @@ exports[`<Socials /> should match snapshots 3`] = `
                     className="c2"
                   >
                     <SocialType
-                      description="twitter description of the purpose of this icon"
                       key="social-twitter"
                       size="24"
+                      title="twitter title of the purpose of this icon"
                       type="twitter"
-                      url="http://twitter.com"
+                      url="https://twitter.com"
                     >
                       <SocialType__SocialWrapper
-                        href="http://twitter.com"
+                        href="https://twitter.com"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -1457,11 +1457,11 @@ exports[`<Socials /> should match snapshots 3`] = `
                             }
                           }
                           forwardedRef={null}
-                          href="http://twitter.com"
+                          href="https://twitter.com"
                         >
                           <a
                             className="c3"
-                            href="http://twitter.com"
+                            href="https://twitter.com"
                           >
                             <SocialType__StyledSvg
                               aria-labelledby="twitter-title"
@@ -1514,7 +1514,7 @@ exports[`<Socials /> should match snapshots 3`] = `
                                   <title
                                     id="twitter-title"
                                   >
-                                    twitter description of the purpose of this icon
+                                    twitter title of the purpose of this icon
                                   </title>
                                   <g
                                     id="Box_Twitter"
@@ -1611,14 +1611,14 @@ exports[`<Socials /> should match snapshots 3`] = `
                     className="c2"
                   >
                     <SocialType
-                      description="youtube description of the purpose of this icon"
                       key="social-youtube"
                       size="24"
+                      title="youtube title of the purpose of this icon"
                       type="youtube"
-                      url="http://youtube.com"
+                      url="https://youtube.com"
                     >
                       <SocialType__SocialWrapper
-                        href="http://youtube.com"
+                        href="https://youtube.com"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -1644,11 +1644,11 @@ exports[`<Socials /> should match snapshots 3`] = `
                             }
                           }
                           forwardedRef={null}
-                          href="http://youtube.com"
+                          href="https://youtube.com"
                         >
                           <a
                             className="c3"
-                            href="http://youtube.com"
+                            href="https://youtube.com"
                           >
                             <SocialType__StyledSvg
                               aria-labelledby="youtube-title"
@@ -1701,7 +1701,7 @@ exports[`<Socials /> should match snapshots 3`] = `
                                   <title
                                     id="youtube-title"
                                   >
-                                    youtube description of the purpose of this icon
+                                    youtube title of the purpose of this icon
                                   </title>
                                   <g
                                     id="Box_Youtube"
@@ -1723,14 +1723,14 @@ exports[`<Socials /> should match snapshots 3`] = `
                                       data-name="Path 20"
                                       fill="#ee3124"
                                       id="Path_20"
-                                      transform="translate(-734 -45)"
+                                      transform="translate(-733 -44)"
                                     />
                                     <path
                                       d="M405,108.367V99.633L412.667,104Z"
                                       data-name="Path 21"
                                       fill="#fff"
                                       id="Path_21"
-                                      transform="translate(-734 -45)"
+                                      transform="translate(-733 -44)"
                                     />
                                   </g>
                                 </svg>

@@ -39,7 +39,7 @@ const Socials = ({ items, size, theme }) => (
             url={item.url}
             type={item.name}
             size={size}
-            description={item.description}
+            title={item.title}
           />
         </ListItem>
       ))}
@@ -61,7 +61,7 @@ Socials.propTypes = {
     Proptypes.shape({
       name: Proptypes.oneOf(['facebook', 'twitter', 'youtube']),
       url: Proptypes.string,
-      description: Proptypes.string,
+      title: Proptypes.string,
     }).isRequired,
   ).isRequired,
 };

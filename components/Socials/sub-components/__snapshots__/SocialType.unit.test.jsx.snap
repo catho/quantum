@@ -13,8 +13,8 @@ exports[`<SocialType /> should match snapshots 1`] = `
 }
 
 <SocialType
-  description="facebook description"
   size="48"
+  title="facebook title"
   type="facebook"
   url="http://facebook.com"
 >
@@ -102,7 +102,7 @@ exports[`<SocialType /> should match snapshots 1`] = `
               <title
                 id="facebook-title"
               >
-                facebook description
+                facebook title
               </title>
               <g
                 id="Box_Facebook"
@@ -148,8 +148,8 @@ exports[`<SocialType /> should match snapshots 2`] = `
 }
 
 <SocialType
-  description="twitter description"
   size="48"
+  title="twitter title"
   type="twitter"
   url="http://twitter.com"
 >
@@ -237,7 +237,7 @@ exports[`<SocialType /> should match snapshots 2`] = `
               <title
                 id="twitter-title"
               >
-                twitter description
+                twitter title
               </title>
               <g
                 id="Box_Twitter"
@@ -282,8 +282,8 @@ exports[`<SocialType /> should match snapshots 3`] = `
 }
 
 <SocialType
-  description="youtube description"
   size="48"
+  title="youtube title"
   type="youtube"
   url="http://youtube.com"
 >
@@ -371,7 +371,7 @@ exports[`<SocialType /> should match snapshots 3`] = `
               <title
                 id="youtube-title"
               >
-                youtube description
+                youtube title
               </title>
               <g
                 id="Box_Youtube"
@@ -393,14 +393,14 @@ exports[`<SocialType /> should match snapshots 3`] = `
                   data-name="Path 20"
                   fill="#ee3124"
                   id="Path_20"
-                  transform="translate(-734 -45)"
+                  transform="translate(-733 -44)"
                 />
                 <path
                   d="M405,108.367V99.633L412.667,104Z"
                   data-name="Path 21"
                   fill="#fff"
                   id="Path_21"
-                  transform="translate(-734 -45)"
+                  transform="translate(-733 -44)"
                 />
               </g>
             </svg>

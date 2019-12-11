@@ -9,17 +9,17 @@ describe('<SocialType />', () => {
       <SocialType
         type="facebook"
         url="http://facebook.com"
-        description="facebook description"
+        title="facebook title"
       />,
       <SocialType
         type="twitter"
         url="http://twitter.com"
-        description="twitter description"
+        title="twitter title"
       />,
       <SocialType
         type="youtube"
         url="http://youtube.com"
-        description="youtube description"
+        title="youtube title"
       />,
     ];
 

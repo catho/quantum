@@ -10,7 +10,7 @@ const StyledSvg = styled.svg`
   display: inline-block;
 `;
 
-const SocialType = ({ type, url, size, description }) => {
+const SocialType = ({ type, url, size, title }) => {
   const SVGOriginalSize = 48;
   const SVGOriginalSizeWithBorder = 50;
 
@@ -25,7 +25,7 @@ const SocialType = ({ type, url, size, description }) => {
           height={size}
           viewBox={`0 0 ${SVGOriginalSize} ${SVGOriginalSize}`}
         >
-          <title id="twitter-title">{description}</title>
+          <title id="twitter-title">{title}</title>
           <g id="Box_Twitter" transform="translate(606 -203)">
             <rect
               id="twitterID"
@@ -56,7 +56,7 @@ const SocialType = ({ type, url, size, description }) => {
           height={size}
           viewBox={`0 0 ${SVGOriginalSizeWithBorder} ${SVGOriginalSizeWithBorder}`}
         >
-          <title id="youtube-title">{description}</title>
+          <title id="youtube-title">{title}</title>
           <g id="Box_Youtube" transform="translate(350 -35)">
             <rect
               id="Rectangle_3"
@@ -73,14 +73,14 @@ const SocialType = ({ type, url, size, description }) => {
               id="Path_20"
               data-name="Path 20"
               d="M422.05,96.9a3.711,3.711,0,0,0-2.6-2.617c-2.283-.617-11.45-.617-11.45-.617s-9.167,0-11.467.617a3.685,3.685,0,0,0-2.6,2.617,39.409,39.409,0,0,0-.6,7.1,38.348,38.348,0,0,0,.617,7.1,3.711,3.711,0,0,0,2.6,2.617c2.283.616,11.45.616,11.45.616s9.167,0,11.467-.616a3.687,3.687,0,0,0,2.6-2.617,39.409,39.409,0,0,0,.6-7.1A38.348,38.348,0,0,0,422.05,96.9Z"
-              transform="translate(-734 -45)"
+              transform="translate(-733 -44)"
               fill="#ee3124"
             />
             <path
               id="Path_21"
               data-name="Path 21"
               d="M405,108.367V99.633L412.667,104Z"
-              transform="translate(-734 -45)"
+              transform="translate(-733 -44)"
               fill="#fff"
             />
           </g>
@@ -96,7 +96,7 @@ const SocialType = ({ type, url, size, description }) => {
           height={size}
           viewBox={`0 0 ${SVGOriginalSize} ${SVGOriginalSize}`}
         >
-          <title id="facebook-title">{description}</title>
+          <title id="facebook-title">{title}</title>
           <g id="Box_Facebook" transform="translate(606 -35)">
             <rect
               id="Rectangle_1"
@@ -124,14 +124,13 @@ const SocialType = ({ type, url, size, description }) => {
 
 SocialType.defaultProps = {
   size: '48',
-  description: 'Social description',
 };
 
 SocialType.propTypes = {
   type: Proptypes.string.isRequired,
   url: Proptypes.string.isRequired,
   size: Proptypes.string,
-  description: Proptypes.string,
+  title: Proptypes.string.isRequired,
 };
 
 export default SocialType;

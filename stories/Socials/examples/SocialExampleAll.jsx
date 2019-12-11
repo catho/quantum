@@ -5,17 +5,17 @@ const socialList = [
   {
     name: 'facebook',
     url: 'http://facebook.com',
-    description: 'facebook description of the purpose of this icon',
+    title: 'facebook title of the purpose of this icon',
   },
   {
     name: 'twitter',
     url: 'http://twitter.com',
-    description: 'twitter description of the purpose of this icon',
+    title: 'twitter title of the purpose of this icon',
   },
   {
     name: 'youtube',
     url: 'http://youtube.com',
-    description: 'youtube description of the purpose of this icon',
+    title: 'youtube title of the purpose of this icon',
   },
 ];
 
@@ -29,17 +29,17 @@ const socialList = [
   {
     name: 'facebook',
     url: 'http://facebook.com',
-    description: 'facebook description of the purpose of this icon',
+    title: 'facebook title of the purpose of this icon',
   },
   {
     name: 'twitter',
     url: 'http://twitter.com',
-    description: 'twitter description of the purpose of this icon',
+    title: 'twitter title of the purpose of this icon',
   },
   {
     name: 'youtube',
     url: 'http://youtube.com',
-    description: 'youtube description of the purpose of this icon',
+    title: 'youtube title of the purpose of this icon',
   },
 ];
 
