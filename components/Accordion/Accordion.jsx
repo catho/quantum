@@ -1,15 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { colors, spacing as defaultSpacing } from '../shared/theme';
+import {
+  colors,
+  spacing as defaultSpacing,
+  baseFontSize as defaultBaseFontSize,
+} from '../shared/theme';
 import Icon from '../Icon';
 
 const Wrapper = styled.ul`
-  max-width: 300px;
-  padding: 0 20px;
+  ${({
+    theme: {
+      spacing: { xxsmall, large },
+      baseFontSize,
+      colors: {
+        neutral: { 900: color },
+      },
+    },
+  }) => `
+    font-size: ${baseFontSize}px;
+    padding: 0 ${large - xxsmall}px;
+    color: ${color};
+  `}
   list-style-type: none;
-  font-size: 16px;
-  color: #191919;
   background-color: inherit;
 `;
 
@@ -28,11 +41,13 @@ const AccordionTitle = styled.span`
 `;
 
 const AccordionHeader = styled.div`
+  ${({ spacing: { xlarge, medium } }) => `
+    line-height: ${xlarge}px;
+    height: ${xlarge}px;
+    padding: ${medium}px 0;
+  `}
   display: inline-flex;
-  line-height: 32px;
-  height: 32px;
   justify-content: space-between;
-  padding: 16px 0;
   width: 100%;
   background: inherit;
   border: none;
@@ -53,7 +68,9 @@ const IconWrapper = styled.div`
   line-height: inherit;
 
   .material-icons {
-    font-size: 24px;
+    ${({ baseFontSize }) => `
+      font-size: ${baseFontSize * 1.5}px;
+    `}
     line-height: inherit;
   }
 `;
@@ -64,12 +81,16 @@ const InlineContenWrapper = styled.div`
   overflow-y: hidden;
 `;
 
+AccordionItem.displayName = 'AccordionItem';
+AccordionHeader.displayName = 'AccordionHeader';
+
 class Accordion extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       items: props.items,
     };
+    this.setAccordionItems = this.setAccordionItems.bind(this);
   }
 
   setAccordionItems(items) {
@@ -92,7 +113,15 @@ class Accordion extends React.Component {
 
   renderItem(item, itemIndex) {
     const { title, content, inlineContent, opened, onItemClick } = item;
-
+    const {
+      theme: {
+        colors: {
+          neutral: { 900: color },
+        },
+        spacing,
+        baseFontSize,
+      },
+    } = this.props;
     const headerProps = inlineContent
       ? { as: 'div' }
       : {
@@ -101,25 +130,12 @@ class Accordion extends React.Component {
           onClick: () => onItemClick(itemIndex),
         };
 
-    const {
-      theme: {
-        colors: {
-          neutral: { 900: color },
-        },
-        spacing: {
-          xxsmall: xxsmallSpacing,
-          large: largeSpacing,
-          xlarge: xlargeSpacing,
-        },
-      },
-    } = this.props;
-
     return (
       <AccordionItem key={title} opened={opened} color={color}>
-        <AccordionHeader {...headerProps}>
+        <AccordionHeader {...headerProps} spacing={spacing}>
           <AccordionTitle>{title}</AccordionTitle>
           {!inlineContent && (
-            <IconWrapper>
+            <IconWrapper baseFontSize={baseFontSize}>
               <Icon name={opened ? 'expand_less' : 'expand_more'} />
             </IconWrapper>
           )}
@@ -163,6 +179,7 @@ Accordion.defaultProps = {
   theme: {
     colors,
     spacing: defaultSpacing,
+    baseFontSize: defaultBaseFontSize,
   },
   keepOnlyOneOpen: false,
 };
@@ -172,17 +189,20 @@ Accordion.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
   /** Set true to keep only one item open and close the remainings on click */
   keepOnlyOneOpen: PropTypes.bool,
   /** Items to render in accordion, if you put a inlineContent, the content will not be rendered */
-  items: PropTypes.shape({
-    title: PropTypes.string,
-    content: PropTypes.node,
-    inlineContent: PropTypes.node,
-    opened: PropTypes.bool,
-    onClick: PropTypes.func,
-  }).isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      content: PropTypes.node,
+      inlineContent: PropTypes.node,
+      opened: PropTypes.bool,
+      onClick: PropTypes.func,
+    }),
+  ).isRequired,
 };
 
 export default Accordion;

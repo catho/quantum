@@ -1,9 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { AutoExample, Tab, SimpleHighlight } from '@catho/quantum-storybook-ui';
-import mockedProps from './mock';
+import mockedProps from '../../components/Accordion/mock';
 
-import { Accordion, Container, Row, Col, Skeleton } from '../../components';
+import { Accordion, Container, Row, Col } from '../../components';
+import accordionExamples from './examples';
 
 const description = 'Accordion';
 const renderExampleTab = componentExamples => (
@@ -23,13 +24,11 @@ const renderExampleTab = componentExamples => (
   </Tab>
 );
 
-storiesOf('Accordion', module)
-  .add('Accordion', () => (
-    <AutoExample
-      description={description}
-      component={Accordion}
-      componentProps={mockedProps}
-      // additionalTabs={renderExampleTab(ProgressBarExample)}
-    />
-  ))
-  .add('Accordion 2', () => <Accordion {...mockedProps} />);
+storiesOf('Accordion', module).add('Accordion', () => (
+  <AutoExample
+    description={description}
+    component={Accordion}
+    componentProps={mockedProps}
+    additionalTabs={renderExampleTab(accordionExamples)}
+  />
+));
