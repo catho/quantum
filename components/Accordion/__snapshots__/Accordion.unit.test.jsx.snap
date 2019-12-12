@@ -18,13 +18,14 @@ exports[`Accordion component Should match the snapshot of a simple circular load
 }
 
 .c3 {
+  font-size: 16px;
   font-weight: bold;
   line-height: inherit;
 }
 
 .c2 {
-  line-height: 32px;
-  height: 32px;
+  line-height: 24px;
+  height: 24px;
   padding: 16px 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -42,8 +43,8 @@ exports[`Accordion component Should match the snapshot of a simple circular load
 }
 
 .c6 {
-  line-height: 32px;
-  height: 32px;
+  line-height: 24px;
+  height: 24px;
   padding: 16px 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -84,7 +85,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
 
 .c7 {
   display: inline-block;
-  max-height: 32px;
+  max-height: 24px;
   overflow-y: hidden;
 }
 

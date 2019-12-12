@@ -36,14 +36,17 @@ const AccordionItem = styled.li`
 `;
 
 const AccordionTitle = styled.span`
+  ${({ baseFontSize }) => `
+    font-size: ${baseFontSize}px;
+  `}
   font-weight: bold;
   line-height: inherit;
 `;
 
 const AccordionHeader = styled.div`
-  ${({ spacing: { xlarge, medium } }) => `
-    line-height: ${xlarge}px;
-    height: ${xlarge}px;
+  ${({ spacing: { large, medium } }) => `
+    line-height: ${large}px;
+    height: ${large}px;
     padding: ${medium}px 0;
   `}
   display: inline-flex;
@@ -77,7 +80,7 @@ const IconWrapper = styled.div`
 
 const InlineContenWrapper = styled.div`
   display: inline-block;
-  max-height: 32px;
+  max-height: 24px;
   overflow-y: hidden;
 `;
 
@@ -133,7 +136,7 @@ class Accordion extends React.Component {
     return (
       <AccordionItem key={title} opened={opened} color={color}>
         <AccordionHeader {...headerProps} spacing={spacing}>
-          <AccordionTitle>{title}</AccordionTitle>
+          <AccordionTitle baseFontSize={baseFontSize}>{title}</AccordionTitle>
           {!inlineContent && (
             <IconWrapper baseFontSize={baseFontSize}>
               <Icon name={opened ? 'expand_less' : 'expand_more'} />
