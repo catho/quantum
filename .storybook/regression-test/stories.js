@@ -27,4 +27,5 @@ export default [
   'Tooltip',
   'Modal',
   'Popover',
+  'Socials',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);
