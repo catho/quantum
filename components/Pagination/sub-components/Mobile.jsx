@@ -86,7 +86,7 @@ const Mobile = ({
       href={handleHref(activePage - 1)}
       rightSquared
       theme={theme}
-      rel={activePage > 2 ? 'nofollow' : ''}
+      rel={activePage > 2 ? 'nofollow' : undefined}
     >
       {prevButtonText}
     </StyledActionButton>

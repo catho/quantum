@@ -26,7 +26,7 @@ const Desktop = ({
       aria-disabled={activePage === 1}
       onClick={handlePageClick(activePage - 1)}
       href={handleHref(activePage - 1)}
-      rel={activePage > 2 ? 'nofollow' : ''}
+      rel={activePage > 2 ? 'nofollow' : undefined}
     >
       {prevButtonText}
     </ActionButton>
@@ -47,7 +47,7 @@ const Desktop = ({
           active={activePage === page}
           onClick={handlePageClick(page)}
           href={handleHref(page)}
-          rel={page > 1 ? 'nofollow' : ''}
+          rel={page > 1 ? 'nofollow' : undefined}
         >
           {page}
         </PageButton>
