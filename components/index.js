@@ -27,6 +27,7 @@ import ProgressBar from './ProgressBar';
 import CircularLoader from './CircularLoader';
 import Pagination from './Pagination';
 import Hamburger from './Hamburger';
+import Socials from './Socials';
 
 export {
   Accordion,
@@ -66,4 +67,5 @@ export {
   Modal,
   Pagination,
   Hamburger,
+  Socials,
 };

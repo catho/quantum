@@ -66,4 +66,7 @@ export default [
 
   // Hamburger
   'Hamburger',
+
+  // Socials
+  'Socials',
 ].map(s => `./${s}/${s}.story.jsx`);

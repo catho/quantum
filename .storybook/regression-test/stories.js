@@ -23,6 +23,7 @@ export default [
   'RadioGroup',
   'RangeSlider',
   'Skeleton',
+  'Socials',
   'TabbedView',
   'Tag',
   'TextArea',
