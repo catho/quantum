@@ -1,43 +1,46 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import styled from 'styled-components';
-
-const Square = styled.div`
-  background: black;
-  height: 32px;
-  width: 32px;
-  display: inline-block;
-  margin-right: 8px;
-`;
 
 export default {
   items: [
     {
       title: 'Institucional',
       content: (
-        <div>
-          Blog <br />
-          Contatos
-          <br />
-          Certificação
-          <br />
-          Imprensa
-          <br />
-          Mapa do site
-        </div>
+        <ul>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contatos</a>
+          </li>
+          <li>
+            <a href="#">Certificação</a>
+          </li>
+          <li>
+            <a href="#">Imprensa</a>
+          </li>
+          <li>
+            <a href="#">Mapa do site</a>
+          </li>
+        </ul>
       ),
     },
     {
       title: 'Para candidato',
       content: (
         <div>
-          Blog <br />
-          Contatos
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br />
-          Certificação
+          Ut orci metus, auctor et viverra nec, consectetur vel diam.
           <br />
-          Imprensa
+          Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
           <br />
-          Mapa do site
+          Aenean sit amet velit est.Aliquam erat volutpat.
+          <br />
+          In eu luctus ipsum. Etiam nibh neque, posuere sit amet euismod sit
+          amet,
+          <br />
+          fringilla non nisi. Proin in pharetra tellus.
         </div>
       ),
       opened: true,
@@ -46,14 +49,18 @@ export default {
       title: 'Para Empresa',
       content: (
         <div>
-          Blog <br />
-          Contatos
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br />
-          Certificação
+          Ut orci metus, auctor et viverra nec, consectetur vel diam.
           <br />
-          Imprensa
+          Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
           <br />
-          Mapa do site
+          Aenean sit amet velit est.Aliquam erat volutpat.
+          <br />
+          In eu luctus ipsum. Etiam nibh neque, posuere sit amet euismod sit
+          amet,
+          <br />
+          fringilla non nisi. Proin in pharetra tellus.
         </div>
       ),
     },
@@ -61,25 +68,19 @@ export default {
       title: 'Educação',
       content: (
         <div>
-          Blog <br />
-          Contatos
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br />
-          Certificação
+          Ut orci metus, auctor et viverra nec, consectetur vel diam.
           <br />
-          Imprensa
+          Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
           <br />
-          Mapa do site
+          Aenean sit amet velit est.Aliquam erat volutpat.
+          <br />
+          In eu luctus ipsum. Etiam nibh neque, posuere sit amet euismod sit
+          amet,
+          <br />
+          fringilla non nisi. Proin in pharetra tellus.
         </div>
-      ),
-    },
-    {
-      title: 'Redes Sociais',
-      inlineContent: (
-        <>
-          <Square />
-          <Square />
-          <Square />
-        </>
       ),
     },
   ],

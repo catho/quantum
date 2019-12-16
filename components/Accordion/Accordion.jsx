@@ -60,11 +60,34 @@ const AccordionHeader = styled.div`
 `;
 
 const AccordionContent = styled.div`
-  height: ${({ opened }) => (opened ? 'auto' : '0')};
-  transform: scaleY(${({ opened }) => (opened ? '1' : '0')});
-  transform-origin: top;
-  overflow: hidden;
-  transition: height, transform 0.4s ease;
+  ${({
+    theme: {
+      spacing: { xsmall },
+      baseFontSize,
+    },
+    opened,
+  }) => `
+    height: ${opened ? 'auto' : '0'};
+    transform: scaleY(${opened ? '1' : '0'});
+    transform-origin: top;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    font-size: ${baseFontSize - 2}px;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      & > li {
+        padding: ${xsmall}px 0;
+      }
+    }
+  `}
 `;
 
 const IconWrapper = styled.div`
@@ -76,12 +99,6 @@ const IconWrapper = styled.div`
     `}
     line-height: inherit;
   }
-`;
-
-const InlineContenWrapper = styled.div`
-  display: inline-block;
-  max-height: 24px;
-  overflow-y: hidden;
 `;
 
 AccordionItem.displayName = 'AccordionItem';
@@ -116,15 +133,14 @@ class Accordion extends React.Component {
 
   renderItem(item, itemIndex) {
     const { title, content, inlineContent, opened, onItemClick } = item;
+    const { theme } = this.props;
     const {
-      theme: {
-        colors: {
-          neutral: { 900: color },
-        },
-        spacing,
-        baseFontSize,
+      colors: {
+        neutral: { 900: color },
       },
-    } = this.props;
+      spacing,
+      baseFontSize,
+    } = theme;
     const headerProps = inlineContent
       ? { as: 'div' }
       : {
@@ -137,17 +153,14 @@ class Accordion extends React.Component {
       <AccordionItem key={title} opened={opened} color={color}>
         <AccordionHeader {...headerProps} spacing={spacing}>
           <AccordionTitle baseFontSize={baseFontSize}>{title}</AccordionTitle>
-          {!inlineContent && (
-            <IconWrapper baseFontSize={baseFontSize}>
-              <Icon name={opened ? 'expand_less' : 'expand_more'} />
-            </IconWrapper>
-          )}
-          {inlineContent && (
-            <InlineContenWrapper>{inlineContent}</InlineContenWrapper>
-          )}
+          <IconWrapper baseFontSize={baseFontSize}>
+            <Icon name={opened ? 'expand_less' : 'expand_more'} />
+          </IconWrapper>
         </AccordionHeader>
         {content && (
-          <AccordionContent opened={opened}>{content}</AccordionContent>
+          <AccordionContent opened={opened} theme={theme}>
+            {content}
+          </AccordionContent>
         )}
       </AccordionItem>
     );
@@ -196,12 +209,11 @@ Accordion.propTypes = {
   }),
   /** Set true to keep only one item open and close the remainings on click */
   keepOnlyOneOpen: PropTypes.bool,
-  /** Items to render in accordion, if you put a inlineContent, the content will not be rendered */
+  /** Items to render in accordion */
   items: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       content: PropTypes.node,
-      inlineContent: PropTypes.node,
       opened: PropTypes.bool,
       onClick: PropTypes.func,
     }),

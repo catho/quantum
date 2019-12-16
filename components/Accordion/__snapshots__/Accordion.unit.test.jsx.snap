@@ -42,24 +42,6 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   cursor: pointer;
 }
 
-.c6 {
-  line-height: 24px;
-  height: 24px;
-  padding: 16px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  background: inherit;
-  border: none;
-  box-sizing: content-box;
-}
-
 .c5 {
   height: 0;
   -webkit-transform: scaleY(0);
@@ -69,9 +51,25 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   -ms-transform-origin: top;
   transform-origin: top;
   overflow: hidden;
-  -webkit-transition: height,-webkit-transform 0.4s ease;
-  -webkit-transition: height,transform 0.4s ease;
-  transition: height,transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+  font-size: 14px;
+}
+
+.c5 a {
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.c5 ul > li {
+  padding: 8px 0;
 }
 
 .c4 {
@@ -81,20 +79,6 @@ exports[`Accordion component Should match the snapshot of a simple circular load
 .c4 .material-icons {
   font-size: 24px;
   line-height: inherit;
-}
-
-.c7 {
-  display: inline-block;
-  max-height: 24px;
-  overflow-y: hidden;
-}
-
-.c8 {
-  background: black;
-  height: 32px;
-  width: 32px;
-  display: inline-block;
-  margin-right: 8px;
 }
 
 <ul
@@ -146,17 +130,43 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       className="c5"
     >
-      <div>
-        Blog 
-        <br />
-        Contatos
-        <br />
-        Certificação
-        <br />
-        Imprensa
-        <br />
-        Mapa do site
-      </div>
+      <ul>
+        <li>
+          <a
+            href="#"
+          >
+            Blog
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Contatos
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Certificação
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Imprensa
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Mapa do site
+          </a>
+        </li>
+      </ul>
     </div>
   </li>
   <li
@@ -206,15 +216,17 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       className="c5"
     >
       <div>
-        Blog 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <br />
-        Contatos
+        Ut orci metus, auctor et viverra nec, consectetur vel diam.
         <br />
-        Certificação
+        Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
         <br />
-        Imprensa
+        Aenean sit amet velit est.Aliquam erat volutpat.
         <br />
-        Mapa do site
+        In eu luctus ipsum. Etiam nibh neque, posuere sit amet euismod sit amet,
+        <br />
+        fringilla non nisi. Proin in pharetra tellus.
       </div>
     </div>
   </li>
@@ -265,15 +277,17 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       className="c5"
     >
       <div>
-        Blog 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <br />
-        Contatos
+        Ut orci metus, auctor et viverra nec, consectetur vel diam.
         <br />
-        Certificação
+        Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
         <br />
-        Imprensa
+        Aenean sit amet velit est.Aliquam erat volutpat.
         <br />
-        Mapa do site
+        In eu luctus ipsum. Etiam nibh neque, posuere sit amet euismod sit amet,
+        <br />
+        fringilla non nisi. Proin in pharetra tellus.
       </div>
     </div>
   </li>
@@ -324,55 +338,17 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       className="c5"
     >
       <div>
-        Blog 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <br />
-        Contatos
+        Ut orci metus, auctor et viverra nec, consectetur vel diam.
         <br />
-        Certificação
+        Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
         <br />
-        Imprensa
+        Aenean sit amet velit est.Aliquam erat volutpat.
         <br />
-        Mapa do site
-      </div>
-    </div>
-  </li>
-  <li
-    className="c1"
-    color="#191919"
-  >
-    <div
-      className="c6"
-      spacing={
-        Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        }
-      }
-    >
-      <span
-        className="c3"
-      >
-        Redes Sociais
-      </span>
-      <div
-        className="c7"
-      >
-        <div
-          className="c8"
-        />
-        <div
-          className="c8"
-        />
-        <div
-          className="c8"
-        />
+        In eu luctus ipsum. Etiam nibh neque, posuere sit amet euismod sit amet,
+        <br />
+        fringilla non nisi. Proin in pharetra tellus.
       </div>
     </div>
   </li>
