@@ -15,7 +15,11 @@ export default [
   'Icon',
   'Breakpoints',
 
+  // Alert
   'Alert',
+
+  // Accordion
+  'Accordion',
 
   // Buttons
   'Button',
