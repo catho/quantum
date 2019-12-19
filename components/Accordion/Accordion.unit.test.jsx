@@ -10,47 +10,64 @@ const closeMock = m => {
   return newMock;
 };
 
+const getAccordionItemByPosition = (index, el) =>
+  el.find('AccordionItem').at(index);
+
 describe('Accordion component', () => {
   it('Should match the snapshot of a simple circular loader', () => {
     const simpleAccordion = <Accordion {...closeMock(mock)} />;
     expect(renderer.create(simpleAccordion).toJSON()).toMatchSnapshot();
   });
 
-  it('Should open and close items', () => {
+  it('Should open and close items and change area-hidden property', () => {
     const wrapper = shallow(<Accordion {...closeMock(mock)} />);
-    const getFirstItem = () => wrapper.find('AccordionItem').at(0);
-    expect(getFirstItem().props().opened).toEqual(false);
+    const getFirstItem = () => wrapper.find('AccordionItem').first();
+    const getFirstItemContentAriaHidden = () =>
+      getFirstItem()
+        .find('AccordionContent')
+        .prop('aria-hidden');
+    expect(getFirstItem().prop('opened')).toEqual(false);
+    expect(getFirstItemContentAriaHidden()).toEqual(true);
     getFirstItem()
       .find('AccordionHeader')
       .simulate('click');
-    expect(getFirstItem().props().opened).toEqual(true);
+    expect(getFirstItem().prop('opened')).toEqual(true);
+    expect(getFirstItemContentAriaHidden()).toEqual(false);
   });
 
   it('Should open more than one item', () => {
     const wrapper = shallow(<Accordion {...closeMock(mock)} />);
     for (let i = 0; i < 2; i += 1) {
-      const getItem = () => wrapper.find('AccordionItem').at(i);
-      expect(getItem().props().opened).toEqual(false);
-      getItem()
+      expect(getAccordionItemByPosition(i, wrapper).prop('opened')).toEqual(
+        false,
+      );
+      getAccordionItemByPosition(i, wrapper)
         .find('AccordionHeader')
         .simulate('click');
-      expect(getItem().props().opened).toEqual(true);
+      expect(getAccordionItemByPosition(i, wrapper).prop('opened')).toEqual(
+        true,
+      );
     }
   });
 
   it('Should close another items when `keepOnlyOneOpen` is true ', () => {
     const wrapper = shallow(<Accordion keepOnlyOneOpen {...closeMock(mock)} />);
     for (let i = 0; i < 2; i += 1) {
-      const getItem = index => wrapper.find('AccordionItem').at(index);
-      expect(getItem(i).props().opened).toEqual(false);
-      getItem(i)
+      expect(getAccordionItemByPosition(i, wrapper).prop('opened')).toEqual(
+        false,
+      );
+      getAccordionItemByPosition(i, wrapper)
         .find('AccordionHeader')
         .simulate('click');
-      expect(getItem(i).props().opened).toEqual(true);
+      expect(getAccordionItemByPosition(i, wrapper).prop('opened')).toEqual(
+        true,
+      );
 
       if (i > 0) {
         const j = i - 1;
-        expect(getItem(j).props().opened).toEqual(false);
+        expect(getAccordionItemByPosition(j, wrapper).prop('opened')).toEqual(
+          false,
+        );
       }
     }
   });
@@ -60,7 +77,7 @@ describe('Accordion component', () => {
     const onCloseMock = closeMock(mock);
     onCloseMock.items[0].onClick = onClickMock;
     const wrapper = shallow(<Accordion {...onCloseMock} />);
-    const getFirstItem = () => wrapper.find('AccordionItem').at(0);
+    const getFirstItem = () => wrapper.find('AccordionItem').first();
     getFirstItem()
       .find('AccordionHeader')
       .simulate('click');

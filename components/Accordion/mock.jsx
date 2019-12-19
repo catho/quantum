@@ -28,7 +28,7 @@ export default {
     {
       title: 'Para candidato',
       content: (
-        <div>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br />
           Ut orci metus, auctor et viverra nec, consectetur vel diam.
@@ -41,14 +41,14 @@ export default {
           amet,
           <br />
           fringilla non nisi. Proin in pharetra tellus.
-        </div>
+        </p>
       ),
       opened: true,
     },
     {
       title: 'Para Empresa',
       content: (
-        <div>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br />
           Ut orci metus, auctor et viverra nec, consectetur vel diam.
@@ -61,13 +61,13 @@ export default {
           amet,
           <br />
           fringilla non nisi. Proin in pharetra tellus.
-        </div>
+        </p>
       ),
     },
     {
       title: 'Educação',
       content: (
-        <div>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br />
           Ut orci metus, auctor et viverra nec, consectetur vel diam.
@@ -80,7 +80,7 @@ export default {
           amet,
           <br />
           fringilla non nisi. Proin in pharetra tellus.
-        </div>
+        </p>
       ),
     },
   ],
