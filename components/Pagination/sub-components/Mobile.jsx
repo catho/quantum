@@ -77,6 +77,7 @@ const Mobile = ({
   totalPages,
   infoFormatter,
   theme,
+  followOnlyFirstPage,
 }) => (
   <>
     <StyledActionButton
@@ -86,7 +87,7 @@ const Mobile = ({
       href={handleHref(activePage - 1)}
       rightSquared
       theme={theme}
-      rel={activePage > 2 ? 'nofollow' : undefined}
+      rel={followOnlyFirstPage && activePage > 2 ? 'nofollow' : undefined}
     >
       {prevButtonText}
     </StyledActionButton>
@@ -100,7 +101,7 @@ const Mobile = ({
       href={handleHref(activePage + 1)}
       leftSquared
       theme={theme}
-      rel="nofollow"
+      rel={followOnlyFirstPage ? 'nofollow' : undefined}
     >
       {nextButtonText}
     </StyledActionButton>
@@ -119,6 +120,7 @@ Mobile.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
+  followOnlyFirstPage: PropTypes.bool,
 };
 
 Mobile.defaultProps = {
@@ -132,6 +134,7 @@ Mobile.defaultProps = {
     colors,
     spacing,
   },
+  followOnlyFirstPage: false,
 };
 
 export default Mobile;
