@@ -207,17 +207,17 @@ storiesOf('Pagination', module).add('Pagination', () => (
                 rel=nofollow: (<code>{`<a rel="nofollow">`}</code>).
               </p>
               <p>
-                For SEO purposes, sometimes it may be necessary to prevent
-                search engines following the other pages except the first. This
-                feature can be activated by adding{' '}
+                For SEO purposes, sometimes it will be necessary to allow search
+                engines following only the first page and ignore the others.
+                This feature can be activated by adding{' '}
                 <code>followOnlyFirstPage</code> property.
               </p>
 
               <SimpleHighlight>
                 {`<Pagination
-  followOnlyFirstPage
   totalPages={10}
   pageHref={page => \`/?page=\${page}\`}
+  followOnlyFirstPage
 />` // eslint-disable-line
                 }
               </SimpleHighlight>
