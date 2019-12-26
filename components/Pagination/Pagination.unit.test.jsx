@@ -217,4 +217,68 @@ describe('<Pagination />', () => {
       });
     });
   });
+
+  describe('Follow only first page', () => {
+    const wrapper = mount(
+      <Pagination
+        activePage={2}
+        totalPages={10}
+        pageHref={page => `/?page=${page}`}
+        followOnlyFirstPage
+      />,
+    );
+
+    it('should not add rel="nofollow" to page 1 button', () => {
+      expect(
+        wrapper
+          .find('ActionButton')
+          .at(0)
+          .prop('rel'),
+      ).toBeUndefined();
+
+      expect(
+        wrapper
+          .find('PageButton')
+          .at(0)
+          .prop('rel'),
+      ).toBeUndefined();
+    });
+
+    it('should add rel="nofollow" to all pagination buttons except the first one', () => {
+      expect(
+        wrapper
+          .find('PageButton')
+          .at(1)
+          .prop('rel'),
+      ).toBe('nofollow');
+
+      expect(
+        wrapper
+          .find('PageButton')
+          .at(2)
+          .prop('rel'),
+      ).toBe('nofollow');
+
+      expect(
+        wrapper
+          .find('PageButton')
+          .at(3)
+          .prop('rel'),
+      ).toBe('nofollow');
+
+      expect(
+        wrapper
+          .find('PageButton')
+          .at(4)
+          .prop('rel'),
+      ).toBe('nofollow');
+
+      expect(
+        wrapper
+          .find('ActionButton')
+          .at(1)
+          .prop('rel'),
+      ).toBe('nofollow');
+    });
+  });
 });
