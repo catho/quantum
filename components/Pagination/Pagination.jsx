@@ -19,16 +19,6 @@ class Pagination extends React.Component {
     this.props = props;
   }
 
-  componentDidMount() {
-    window.addEventListener('resize', this.resize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.resize);
-  }
-
-  resize = () => this.forceUpdate();
-
   render() {
     const {
       ariaLabel,
@@ -42,6 +32,7 @@ class Pagination extends React.Component {
       totalPages,
       infoFormatter,
       tabIndex,
+      followOnlyFirstPage,
       ...props
     } = this.props;
 
@@ -84,6 +75,7 @@ class Pagination extends React.Component {
           activePageAriaLabel={activePageAriaLabel}
           pageAriaLabel={pageAriaLabel}
           infoFormatter={infoFormatter}
+          followOnlyFirstPage={followOnlyFirstPage}
         />
       </Wrapper>
     );
@@ -112,6 +104,8 @@ Pagination.propTypes = {
   onPageClick: PropTypes.func,
   /** When viewport is less than 600px (small breakpoint) the pagination will show the mobile layout, this function can be used to format the current and last page information. */
   infoFormatter: PropTypes.func,
+  /** If true, add rel="nofollow" property to all pagination buttons except page 1. */
+  followOnlyFirstPage: PropTypes.bool,
 };
 
 Pagination.defaultProps = {
@@ -125,6 +119,7 @@ Pagination.defaultProps = {
   prevButtonText: 'Previous',
   onPageClick: undefined,
   infoFormatter: undefined,
+  followOnlyFirstPage: false,
 };
 
 export default Pagination;

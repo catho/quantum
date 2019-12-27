@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react';
 import { Pagination } from '../../components';
 
 storiesOf('Pagination', module)
-  .add('default', () => <Pagination />)
   .add('basic', () => <Pagination totalPages={6} />)
   .add('several pages and active', () => (
     <Pagination totalPages={10} activePage={5} />

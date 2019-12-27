@@ -197,6 +197,40 @@ storiesOf('Pagination', module).add('Pagination', () => (
             </Col>
           </Row>
 
+          <Title as="h3">
+            Adding nofollow to all pagination buttons except the first one
+          </Title>
+          <Row>
+            <Col medium={5}>
+              <p>
+                Page elements greater than 1 are rendered with attribute
+                rel=nofollow: (<code>{`<a rel="nofollow">`}</code>).
+              </p>
+              <p>
+                For SEO purposes, sometimes it will be necessary to allow search
+                engines following only the first page and ignore the others.
+                This feature can be activated by adding{' '}
+                <code>followOnlyFirstPage</code> property.
+              </p>
+
+              <SimpleHighlight>
+                {`<Pagination
+  totalPages={10}
+  pageHref={page => \`/?page=\${page}\`}
+  followOnlyFirstPage
+/>` // eslint-disable-line
+                }
+              </SimpleHighlight>
+            </Col>
+            <Col medium={7}>
+              <Pagination
+                totalPages={10}
+                pageHref={page => `/?page=${page}`}
+                followOnlyFirstPage
+              />
+            </Col>
+          </Row>
+
           <Title as="h3">onClickPage prop</Title>
           <p>
             Through <code>onClickPage</code> prop is possible to get the page
