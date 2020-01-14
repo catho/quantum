@@ -3,6 +3,7 @@ import { BREAKPOINTS } from './shared';
 import { Container, Row, Col, Hide } from './Grid';
 import { Form, Validations } from './Form';
 import { TabbedView, Tab } from './TabbedView';
+import Accordion from './Accordion';
 import Badge from './Badge';
 import Button from './Button';
 import { Checkbox, CheckboxGroup } from './Checkbox';
@@ -29,6 +30,7 @@ import Hamburger from './Hamburger';
 import Socials from './Socials';
 
 export {
+  Accordion,
   Alert,
   Badge,
   BREAKPOINTS,

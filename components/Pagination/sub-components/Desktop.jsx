@@ -19,6 +19,7 @@ const Desktop = ({
   activePageAriaLabel,
   pageAriaLabel,
   tabIndex,
+  followOnlyFirstPage,
 }) => (
   <>
     <ActionButton
@@ -26,6 +27,7 @@ const Desktop = ({
       aria-disabled={activePage === 1}
       onClick={handlePageClick(activePage - 1)}
       href={handleHref(activePage - 1)}
+      rel={followOnlyFirstPage && activePage > 2 ? 'nofollow' : undefined}
     >
       {prevButtonText}
     </ActionButton>
@@ -46,6 +48,7 @@ const Desktop = ({
           active={activePage === page}
           onClick={handlePageClick(page)}
           href={handleHref(page)}
+          rel={followOnlyFirstPage && page > 1 ? 'nofollow' : undefined}
         >
           {page}
         </PageButton>
@@ -57,6 +60,7 @@ const Desktop = ({
       aria-disabled={activePage === totalPages}
       onClick={handlePageClick(activePage + 1)}
       href={handleHref(activePage + 1)}
+      rel={followOnlyFirstPage ? 'nofollow' : undefined}
     >
       {nextButtonText}
     </ActionButton>
@@ -73,6 +77,7 @@ Desktop.propTypes = {
   prevButtonText: PropTypes.string,
   nextButtonText: PropTypes.string,
   pageAriaLabel: PropTypes.string,
+  followOnlyFirstPage: PropTypes.bool,
 };
 
 Desktop.defaultProps = {
@@ -84,6 +89,7 @@ Desktop.defaultProps = {
   handleHref: undefined,
   prevButtonText: 'Previous',
   handlePageClick: undefined,
+  followOnlyFirstPage: false,
 };
 
 export default Desktop;
