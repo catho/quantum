@@ -80,6 +80,7 @@ const AccordionContent = styled.div`
     a {
       color: inherit;
       text-decoration: none;
+      font-size: ${baseFontSize - 2}px;
     }
 
     ul {
