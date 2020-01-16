@@ -61,6 +61,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .c5 ul {
