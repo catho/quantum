@@ -3,7 +3,7 @@
 exports[`Accordion component Should match the snapshot of a simple circular loader 1`] = `
 .c0 {
   font-size: 16px;
-  padding: 0 20px;
+  padding: 0 16px;
   color: #191919;
   list-style-type: none;
   background-color: inherit;
