@@ -13,7 +13,7 @@ import Icon from '../Icon';
 const Wrapper = styled.ul`
   ${({
     theme: {
-      spacing: { xxsmall, large },
+      spacing: { medium },
       baseFontSize,
       colors: {
         neutral: { 900: color },
@@ -21,7 +21,7 @@ const Wrapper = styled.ul`
     },
   }) => `
     font-size: ${baseFontSize}px;
-    padding: 0 ${large - xxsmall}px;
+    padding: 0 ${medium}px;
     color: ${color};
   `}
   list-style-type: none;
