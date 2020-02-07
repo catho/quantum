@@ -25,6 +25,8 @@ import { Button } from '@catho/quantum';
 import Button from '@catho/quantum/Button';
 ```
 
+You can find a list of all available components and full documentation on how to use them at our [Storybook](https://catho.github.io/quantum/)
+
 ## Using with Typescript
 
 If you are intending to use **Quantum** in a **Typescript** project, you might want to use its **types definitions** to get the benefits from your IDE intellisense. To use it, you simply need to add it to your dev dependencies.
@@ -32,8 +34,6 @@ If you are intending to use **Quantum** in a **Typescript** project, you might w
 ```sh
 yarn add -D @types/catho__quantum
 ```
-
-You can find a list of all available components and full documentation on how to use them at our [Storybook](https://catho.github.io/quantum/)
 
 ## Contributing
 
