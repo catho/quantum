@@ -1,4 +1,5 @@
 # Quantum
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 
 This is the default pack of components and layout principles that dictates Catho Frontend applications.
@@ -22,6 +23,14 @@ To use a component, it need to be imported in your project:
 import { Button } from '@catho/quantum';
 // or
 import Button from '@catho/quantum/Button';
+```
+
+## Using with Typescript
+
+If you are intending to use **Quantum** in a **Typescript** project, you might want to use its **types definitions** to get the benefits from your IDE intellisense. To use it, you simply need to add it to your dev dependencies.
+
+```sh
+yarn add -D @types/catho__quantum
 ```
 
 You can find a list of all available components and full documentation on how to use them at our [Storybook](https://catho.github.io/quantum/)
@@ -50,6 +59,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
