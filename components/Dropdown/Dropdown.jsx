@@ -302,6 +302,7 @@ const Dropdown = ({
   autocomplete,
   theme,
   id,
+  ignoreSpecialChars,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -325,13 +326,30 @@ const Dropdown = ({
 
   const [_id] = useState(id || ID_GENERATOR.next().value);
 
-  const inputFilter = value =>
-    items.filter(
-      item =>
-        _getValue(item)
-          .toLowerCase()
-          .indexOf(value.toLowerCase()) > -1,
+  const normalizeChars = value =>
+    value.replace(
+      /([àáâãäå])|([çčć])|([èéêë])|([ìíîï])|([òóôõöø])|([ùúûü])|([-_])/g,
+      (str, a, c, e, i, o, u, hifen) => {
+        if (a) return 'a';
+        if (c) return 'c';
+        if (e) return 'e';
+        if (i) return 'i';
+        if (o) return 'o';
+        if (u) return 'u';
+        if (hifen) return ' ';
+        return '';
+      },
     );
+
+  const inputFilter = value =>
+    items.filter(item => {
+      let itemValue = _getValue(item).toLowerCase();
+      if (ignoreSpecialChars) {
+        itemValue = normalizeChars(itemValue);
+        return itemValue.indexOf(normalizeChars(value.toLowerCase())) > -1;
+      }
+      return itemValue.indexOf(value.toLowerCase()) > -1;
+    });
 
   return (
     <FieldGroup>
@@ -458,6 +476,7 @@ Dropdown.defaultProps = {
   items: [],
   onChange: () => {},
   theme: { colors, spacing, baseFontSize },
+  ignoreSpecialChars: false,
 };
 
 Dropdown.propTypes = {
@@ -485,6 +504,7 @@ Dropdown.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
+  ignoreSpecialChars: PropTypes.bool,
 };
 
 export default Dropdown;
