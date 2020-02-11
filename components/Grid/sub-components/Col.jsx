@@ -10,9 +10,16 @@ const columnGrid = ({ size, offset }) => {
   return `grid-column: ${offsetStyle} span ${size || 12};`;
 };
 
-const columnGridLess = ({ size, offset, breakpoint, noGutters, gutter }) => {
-  const calculedWidth = size ? (100 / 12) * size : 100;
-  const calculedOffset = offset ? (100 / 12) * offset : 100;
+const columnGridLess = ({
+  size,
+  offset,
+  breakpoint,
+  noGutters,
+  gutter,
+  maxColumns,
+}) => {
+  const calculedWidth = size ? (100 / maxColumns) * size : 100;
+  const calculedOffset = offset ? (100 / maxColumns) * offset : 100;
   const calculedGutter = calcGutter(
     CSSVariables({
       theme: {
@@ -26,23 +33,21 @@ const columnGridLess = ({ size, offset, breakpoint, noGutters, gutter }) => {
   const offsetStyle = offset
     ? `
     margin-left: calc(${calculedOffset.toFixed(3)}% + ${
-        calculedGutter > 0 ? `(${calculedGutter}px / (12 / ${offset})` : `0px`
+        calculedGutter > 0
+          ? `(${calculedGutter}px / (${maxColumns} / ${offset})`
+          : `0px`
       } ) );
 
     &:first-child {
-      margin-left: calc(${calculedOffset.toFixed(3)}% + ${
-        calculedGutter > 0 ? `(${calculedGutter}px / (12 / ${offset})` : `0px`
-      } ) );
+      margin-left: 0px;
     }
+
     &:last-child {
       margin-right: 0;
     }
   
   `
     : `
-    margin-left: ${
-      calculedGutter > 0 ? `calc(${calculedGutter}px / 2)` : '0px'
-    };
     margin-right: ${
       calculedGutter > 0 ? `calc(${calculedGutter}px / 2)` : '0px'
     };
@@ -59,8 +64,8 @@ const columnGridLess = ({ size, offset, breakpoint, noGutters, gutter }) => {
     calculedGutter > 0
       ? `calc(${calculedWidth.toFixed(
           3,
-        )}% - ${calculedGutter}px + (${calculedGutter}px / (12 / ${size ||
-          12}) ) )`
+        )}% - ${calculedGutter}px + (${calculedGutter}px / (${maxColumns} / ${size ||
+          maxColumns}) ) )`
       : `${calculedWidth.toFixed(3)}%`;
 
   return `
@@ -114,7 +119,7 @@ const columnPosition = (
   };
 
   const { size, offset } = screenDefinitions[breakpoint];
-
+  const maxColumns = breakpoints[breakpoint].columns;
   return q`
     @supports ( display: grid ) {
       ${columnGrid({
@@ -131,6 +136,7 @@ const columnPosition = (
         breakpoint,
         noGutters,
         gutter,
+        maxColumns,
       })}
     }
   `;
