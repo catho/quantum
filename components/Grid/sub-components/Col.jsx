@@ -29,14 +29,15 @@ const columnGridLess = ({
     noGutters,
     true,
   );
-
+  console.log('calculedOffset:: ', calculedOffset)
+  console.log('offset:: ', offset)
   const offsetStyle = offset
     ? `
     margin-left: calc(${calculedOffset.toFixed(3)}% + ${
-        calculedGutter > 0
-          ? `(${calculedGutter}px / (${maxColumns} / ${offset})`
-          : `0px`
-      } ) );
+    calculedGutter > 0
+      ? `(${calculedGutter}px / (${maxColumns} / ${offset})`
+      : `0px`
+    } ) );
 
     &:first-child {
       margin-left: 0px;
@@ -49,7 +50,7 @@ const columnGridLess = ({
   `
     : `
     margin-right: ${
-      calculedGutter > 0 ? `calc(${calculedGutter}px / 2)` : '0px'
+    calculedGutter > 0 ? `calc(${calculedGutter}px / 2)` : '0px'
     };
     
     &:first-child {
@@ -63,9 +64,9 @@ const columnGridLess = ({
   const colWidth =
     calculedGutter > 0
       ? `calc(${calculedWidth.toFixed(
-          3,
-        )}% - ${calculedGutter}px + (${calculedGutter}px / (${maxColumns} / ${size ||
-          maxColumns}) ) )`
+        3,
+      )}% - ${calculedGutter}px + (${calculedGutter}px / (${maxColumns} / ${size ||
+      maxColumns}) ) )`
       : `${calculedWidth.toFixed(3)}%`;
 
   return `
@@ -123,21 +124,21 @@ const columnPosition = (
   return q`
     @supports ( display: grid ) {
       ${columnGrid({
-        size,
-        offset,
-        breakpoint,
-      })}
+    size,
+    offset,
+    breakpoint,
+  })}
     }
 
     @supports not ( display: grid ) {
       ${columnGridLess({
-        size,
-        offset,
-        breakpoint,
-        noGutters,
-        gutter,
-        maxColumns,
-      })}
+    size,
+    offset,
+    breakpoint,
+    noGutters,
+    gutter,
+    maxColumns,
+  })}
     }
   `;
 };
