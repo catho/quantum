@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 export interface IconButtonProps {
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
