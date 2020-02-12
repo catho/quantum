@@ -163,6 +163,7 @@ describe('with autocomplete property', () => {
       label: 'Belém - PA',
     },
   ];
+
   it('should display items ignoring special chars', () => {
     const component = mount(
       <Dropdown
@@ -177,7 +178,50 @@ describe('with autocomplete property', () => {
       .find('DropInput')
       .find('input')
       .simulate('change', { target: { value: 'sao' } });
-    // console.log('=====!!!', component.find('DropItem').find('span').text());
-    // console.log('=====', component.find('DropItem').find('span').debug());
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .text(),
+    ).toEqual(items[0].label);
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'rio-de-' } });
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .text(),
+    ).toEqual(items[1].label);
+  });
+
+  it('should not display items with special chars', () => {
+    const component = mount(
+      <Dropdown autocomplete onChange={mockFn} items={items} />,
+    );
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'sao' } });
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .exists(),
+    ).toEqual(false);
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'São' } });
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .text(),
+    ).toEqual(items[0].label);
   });
 });
