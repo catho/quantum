@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 import Content from './Content';
 import Description from './Description';
 import Footer from './Footer';
