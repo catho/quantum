@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
-import { FieldGroup, shadow, uniqId } from '../shared';
+import { FieldGroup, shadow, uniqId, normalizeChars } from '../shared';
 import { colors, spacing, baseFontSize } from '../shared/theme';
 
 import {
@@ -325,21 +325,6 @@ const Dropdown = ({
   const hasLabel = !!label;
 
   const [_id] = useState(id || ID_GENERATOR.next().value);
-
-  const normalizeChars = value =>
-    value.replace(
-      /([àáâãäå])|([çčć])|([èéêë])|([ìíîï])|([òóôõöø])|([ùúûü])|([-_])/g,
-      (str, a, c, e, i, o, u, hifen) => {
-        if (a) return 'a';
-        if (c) return 'c';
-        if (e) return 'e';
-        if (i) return 'i';
-        if (o) return 'o';
-        if (u) return 'u';
-        if (hifen) return ' ';
-        return '';
-      },
-    );
 
   const inputFilter = value =>
     items.filter(item => {

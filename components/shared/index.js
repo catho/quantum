@@ -10,6 +10,7 @@ import * as INPUT_STYLE from './inputStyle';
 import hexToRgba from './hexToRgba';
 import shadow from './shadow';
 import HiddenInput from './HiddenInput';
+import normalizeChars from './normalizeChars';
 
 export {
   ErrorMessage,
@@ -24,4 +25,5 @@ export {
   hexToRgba,
   shadow,
   HiddenInput,
+  normalizeChars,
 };
