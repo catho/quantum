@@ -22,6 +22,7 @@ import {
   Disabled,
   Controlled,
   AutoComplete,
+  AutoCompleteWithSpecialChars,
   WithImages,
 } from './examples';
 
@@ -78,11 +79,15 @@ storiesOf('Forms', module).add('Dropdown', () => (
           <DropdownExample component={Simple} position="1" />
           <DropdownExample component={CustomLabel} position="2" />
           <DropdownExample component={AutoComplete} position="3" />
-          <DropdownExample component={RequiredMark} position="4" />
-          <DropdownExample component={WithError} position="5" />
-          <DropdownExample component={Disabled} position="6" />
-          <DropdownExample component={WithImages} position="7" />
-          <DropdownExample component={Controlled} position="8" />
+          <DropdownExample
+            component={AutoCompleteWithSpecialChars}
+            position="4"
+          />
+          <DropdownExample component={RequiredMark} position="5" />
+          <DropdownExample component={WithError} position="6" />
+          <DropdownExample component={Disabled} position="7" />
+          <DropdownExample component={WithImages} position="8" />
+          <DropdownExample component={Controlled} position="9" />
         </StoryContainer>
       </Tab>
       <Tab title="API">
