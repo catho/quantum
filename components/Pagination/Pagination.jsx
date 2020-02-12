@@ -58,7 +58,9 @@ class Pagination extends React.Component {
       return pageHref(page);
     };
 
-    const width = (window && window.innerWidth) || BREAKPOINTS.small.width;
+    const width =
+      (typeof window !== 'undefined' && window.innerWidth) ||
+      BREAKPOINTS.small.width;
 
     const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
 
