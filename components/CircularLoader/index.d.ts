@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 export interface CircularLoaderProps {
     size?: 'medium' | 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge';
