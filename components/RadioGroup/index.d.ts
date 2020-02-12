@@ -47,7 +47,7 @@ export interface RadioGroupProps<T> {
         disabled?: boolean;
     }>;
 
-    children?: JSX.Element[] | JSX.Element;
+    children?: React.ReactNode[] | React.ReactNode;
     inline?: boolean;
     onChange?: React.ChangeEventHandler<T>;
     value?: string;
