@@ -157,6 +157,29 @@ AutoComplete.CODE = `<Dropdown
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
 />`;
 
+const AutoCompleteWithSpecialChars = () => (
+  <Dropdown
+    autocomplete
+    ignoreSpecialChars
+    helperText="Try to type: sao-paulo"
+    label="Autocomplete ignoring special characters"
+    placeholder="Start typing..."
+    items={[
+      'São Paulo - SP',
+      'Rio de Janeiro - RJ',
+      'Florianópolis - SC',
+      'Salvador - BA',
+    ]}
+  />
+);
+AutoCompleteWithSpecialChars.CODE = `<Dropdown
+  autocomplete
+  ignoreSpecialChars
+  label="Autocomplete ignoring special characters"
+  placeholder="Start typing..."
+  items={['São Paulo - SP', 'Rio de Janeiro - RJ', 'Florianópolis - SC', 'Salvador - BA']}
+/>`;
+
 const WithImages = () => (
   <Dropdown
     helperText="this dropdown has images in the list"
@@ -219,5 +242,6 @@ export {
   Disabled,
   Controlled,
   AutoComplete,
+  AutoCompleteWithSpecialChars,
   WithImages,
 };
