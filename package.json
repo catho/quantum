@@ -4,6 +4,7 @@
   "description": "Catho react components",
   "private": false,
   "sideEffects": false,
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest",
     "test:components": "yarn test ./components",
