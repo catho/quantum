@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 export interface FormProps {
     children: React.ReactNode[] | React.ReactNode;
