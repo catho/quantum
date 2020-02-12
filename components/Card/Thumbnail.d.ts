@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 type Thumbnail = React.ComponentType<{
     src: string;
