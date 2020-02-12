@@ -146,3 +146,38 @@ describe('with an "onChange" callback set', () => {
     expect(mockFn).toBeCalledWith(selectedItem);
   });
 });
+
+describe('with autocomplete property', () => {
+  const mockFn = jest.fn();
+  const items = [
+    {
+      value: 'São Paulo',
+      label: 'São Paulo - SP',
+    },
+    {
+      value: 'Rio de Janeiro',
+      label: 'Rio de Janeiro - RJ',
+    },
+    {
+      value: 'Belém',
+      label: 'Belém - PA',
+    },
+  ];
+  it('should display items ignoring special chars', () => {
+    const component = mount(
+      <Dropdown
+        autocomplete
+        ignoreSpecialChars
+        onChange={mockFn}
+        items={items}
+      />,
+    );
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'sao' } });
+    // console.log('=====!!!', component.find('DropItem').find('span').text());
+    // console.log('=====', component.find('DropItem').find('span').debug());
+  });
+});
