@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 export type ItemPropType = string | { value: string | number; label: string };
 

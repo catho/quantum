@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 type Title = React.ComponentType<{
     small?: boolean;

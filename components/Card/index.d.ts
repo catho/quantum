@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 import Content from './Content';
 import Description from './Description';
 import Footer from './Footer';
@@ -8,7 +8,12 @@ import Media from './Media';
 import Thumbnail from './Thumbnail';
 import Title from './Title';
 
-export default class Card extends React.Component<{ theme?: { colors?: object } }> {
+type Props = {
+	theme?: {
+		colors?: object
+	}
+}
+export default class Card extends React.Component<Props> {
     static Content: Content;
 
     static Description: Description;

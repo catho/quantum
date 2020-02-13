@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 type Header = React.ComponentType<{
     theme?: { spacing?: object };
