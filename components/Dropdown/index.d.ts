@@ -6,6 +6,7 @@ export interface DropdownProps {
     autocomplete?: boolean;
     disabled?: boolean;
     required?: boolean;
+    ignoreSpecialChars?: boolean;
     error?: string;
     id?: string;
     label?: string;
@@ -22,4 +23,4 @@ export interface DropdownProps {
     };
 }
 
-export default class Dropdown extends React.Component<DropdownProps> {}
+export default class Dropdown extends React.Component<DropdownProps> { }
