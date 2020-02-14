@@ -74,7 +74,80 @@
         "test",
         "ideas"
       ]
+    },
+    {
+      "login": "renatogalvones",
+      "name": "Renato Galvão",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/302819?s=400&v=4",
+      "profile": "https://github.com/renatogalvones",
+      "contributions": [
+        "doc",
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "pedrohmorais",
+      "name": "Pedro Morais",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/16689908?s=400&v=4",
+      "profile": "https://github.com/pedrohmorais",
+      "contributions": [
+        "doc",
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "rodrigoclemente",
+      "name": "Rodrigo Clemente",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/45388027?s=400&v=4",
+      "profile": "https://github.com/rodrigoclemente",
+      "contributions": [
+        "doc",
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "tcelestino",
+      "name": "Tiago Celestino",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/190265?s=400&v=4",
+      "profile": "https://github.com/tcelestino",
+      "contributions": [
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "luizjaccao",
+      "name": "Luiz Jacção",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/36733015?s=400&v=4",
+      "profile": "https://github.com/luizjaccao",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "alisson-suzigan",
+      "name": "Alisson Suzigan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5255042?s=400&v=4",
+      "profile": "https://github.com/alisson-suzigan",
+      "contributions": [
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 6
 }
