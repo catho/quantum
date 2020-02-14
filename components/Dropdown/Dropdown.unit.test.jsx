@@ -146,3 +146,82 @@ describe('with an "onChange" callback set', () => {
     expect(mockFn).toBeCalledWith(selectedItem);
   });
 });
+
+describe('with autocomplete property', () => {
+  const mockFn = jest.fn();
+  const items = [
+    {
+      value: 'São Paulo',
+      label: 'São Paulo - SP',
+    },
+    {
+      value: 'Rio de Janeiro',
+      label: 'Rio de Janeiro - RJ',
+    },
+    {
+      value: 'Belém',
+      label: 'Belém - PA',
+    },
+  ];
+
+  it('should display items ignoring special chars', () => {
+    const component = mount(
+      <Dropdown
+        autocomplete
+        ignoreSpecialChars
+        onChange={mockFn}
+        items={items}
+      />,
+    );
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'sao' } });
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .text(),
+    ).toEqual(items[0].label);
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'rio-de-' } });
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .text(),
+    ).toEqual(items[1].label);
+  });
+
+  it('should not display items with special chars', () => {
+    const component = mount(
+      <Dropdown autocomplete onChange={mockFn} items={items} />,
+    );
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'sao' } });
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .exists(),
+    ).toEqual(false);
+
+    component
+      .find('DropInput')
+      .find('input')
+      .simulate('change', { target: { value: 'São' } });
+    expect(
+      component
+        .find('DropItem')
+        .find('span')
+        .text(),
+    ).toEqual(items[0].label);
+  });
+});
