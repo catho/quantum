@@ -342,7 +342,7 @@ const Dropdown = ({
         {...rest}
         selectedItem={selectedItem}
         onChange={onChange}
-        itemToString={_getValue}
+        itemToString={_getLabel}
         stateReducer={_highlightedReducer}
         autocomplete={autocomplete}
       >
