@@ -15,7 +15,7 @@ export type Validate =
     | typeof Validations.Email;
 export type CustomValidate = ((param?: { value: string }) => string) | { validate: Validate; error: string };
 
-export interface InputProps<T> {
+export interface InputProps {
     value?: string;
     label?: string;
     helperText?: string;
@@ -28,8 +28,8 @@ export interface InputProps<T> {
     name?: string;
     validate?: Validate | CustomValidate | Array<Validate | CustomValidate>;
     mask?: Mask | Mask[];
-    onClean?: React.MouseEventHandler<T>;
-    onChange?: React.ChangeEventHandler<T>;
+    onClean?: React.MouseEventHandler<HTMLInputElement>;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
     theme?: {
         spacing?: object;
         colors?: object;
@@ -37,4 +37,4 @@ export interface InputProps<T> {
     };
 }
 
-export default class Input<T = HTMLInputElement> extends React.Component<InputProps<T>> {}
+export default class Input extends React.Component<InputProps> {}

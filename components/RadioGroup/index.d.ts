@@ -1,11 +1,11 @@
 import React = require('react');
 
-export interface RadioProps<T> {
+export interface RadioProps {
     disabled?: boolean;
     error?: boolean;
     children?: string;
     label?: string;
-    onChange?: React.ChangeEventHandler<T>;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
     theme?: {
         colors?: object;
         spacing?: object;
@@ -13,9 +13,9 @@ export interface RadioProps<T> {
     value: string;
 }
 
-export type Radio = React.ComponentType<RadioProps<HTMLInputElement>>;
+export type Radio = React.ComponentType<RadioProps>;
 
-export interface RadioButtonProps<T> {
+export interface RadioButtonProps {
     checked?: boolean;
     children?: string;
     skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
@@ -25,7 +25,7 @@ export interface RadioButtonProps<T> {
     id?: string;
     inline?: boolean;
     label?: string;
-    onChange?: React.ChangeEventHandler<T>;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
     theme?: {
         baseFontSize?: number;
         spacing?: object;
@@ -37,9 +37,9 @@ export interface RadioButtonProps<T> {
     value: string;
 }
 
-export type RadioButton = React.ComponentType<RadioButtonProps<HTMLInputElement>>;
+export type RadioButton = React.ComponentType<RadioButtonProps>;
 
-export interface RadioGroupProps<T> {
+export interface RadioGroupProps {
     type?: 'radio' | 'button';
     options?: Array<{
         label?: React.ReactNode;
@@ -49,7 +49,7 @@ export interface RadioGroupProps<T> {
 
     children?: React.ReactNode[] | React.ReactNode;
     inline?: boolean;
-    onChange?: React.ChangeEventHandler<T>;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
     value?: string;
     error?: string;
     theme?: {
@@ -59,7 +59,7 @@ export interface RadioGroupProps<T> {
     name: string;
 }
 
-export default class RadioGroup<T = HTMLInputElement> extends React.Component<RadioGroupProps<T>> {
+export default class RadioGroup extends React.Component<RadioGroupProps> {
     static Radio: Radio;
 
     static Button: RadioButton;

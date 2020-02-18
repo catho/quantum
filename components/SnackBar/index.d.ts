@@ -1,9 +1,9 @@
 import React = require('react');
 
-export interface SnackBarProps<T> {
+export interface SnackBarProps {
     actionTrigger?: {
         title?: string;
-        callback?: React.MouseEventHandler<T>;
+        callback?: React.MouseEventHandler<HTMLButtonElement>;
     };
     theme?: {
         baseFontSize?: number;
@@ -16,7 +16,7 @@ export interface SnackBarProps<T> {
         };
     };
     closeButtonAriaLabel?: string;
-    onClose?: React.MouseEventHandler<T>;
+    onClose?: React.MouseEventHandler<HTMLButtonElement>;
     secondsToClose?: number;
     skin?: 'primary' | 'success' | 'error' | 'neutral' | 'warning';
     text?: string;
@@ -24,4 +24,4 @@ export interface SnackBarProps<T> {
     id?: string;
 }
 
-export default class SnackBar<T = HTMLButtonElement> extends React.Component<SnackBarProps<T>> {}
+export default class SnackBar extends React.Component<SnackBarProps> {}

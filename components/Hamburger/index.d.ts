@@ -1,10 +1,10 @@
 import React = require('react');
 
-export interface HamburguerProps {
+export interface HamburgerProps {
     showNotification?: boolean;
     isOpened?: boolean;
     inverted?: boolean;
     ariaLabelDescription?: string;
 }
 
-export default class Hamburguer extends React.Component<HamburguerProps> {}
+export default class Hamburger extends React.Component<HamburgerProps> {}
