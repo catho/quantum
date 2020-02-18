@@ -328,7 +328,7 @@ const Dropdown = ({
 
   const inputFilter = value =>
     items.filter(item => {
-      let itemValue = _getValue(item).toLowerCase();
+      let itemValue = _getLabel(item).toLowerCase();
       if (ignoreSpecialChars) {
         itemValue = normalizeChars(itemValue);
         return itemValue.indexOf(normalizeChars(value.toLowerCase())) > -1;
