@@ -2031,7 +2031,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
       onChange={[Function]}
       onKeyDown={[Function]}
       type="hidden"
-      value="bazKey"
+      value="baz"
     />
     <button
       aria-haspopup={true}
