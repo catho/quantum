@@ -1,9 +1,9 @@
-import React = require('react');
+import React from 'react';
 
 export interface TagProps {
     bold?: boolean;
     inverted?: boolean;
-    onClose?: React.MouseEventHandler<THTMLButtonElement>;
+    onClose?: React.MouseEventHandler<HTMLButtonElement>;
     size?: 'small' | 'medium' | 'large';
     skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
     stroked?: boolean;

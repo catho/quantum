@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 export interface ModalProps {
     children?: React.ReactNode[] | React.ReactNode;

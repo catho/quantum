@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 import { Validations } from '../Form';
 import { string } from 'prop-types';
