@@ -325,6 +325,7 @@ const Dropdown = ({
   const hasLabel = !!label;
 
   const [_id] = useState(id || ID_GENERATOR.next().value);
+  const DROPDOWN_INPUT_NAME = `name-${_id}`;
 
   const inputFilter = value =>
     items.filter(item => {
@@ -371,7 +372,12 @@ const Dropdown = ({
                   {required && <RequiredMark>*</RequiredMark>}
                 </InputLabel>
               )}
-              <input type="hidden" {...getInputProps()} />
+              <input
+                {...getInputProps({
+                  name: DROPDOWN_INPUT_NAME,
+                  type: 'hidden',
+                })}
+              />
               {autocomplete ? (
                 <>
                   <DropContainer theme={theme}>
