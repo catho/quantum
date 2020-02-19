@@ -9,6 +9,7 @@ import {
   StoryContainer,
 } from '@catho/quantum-storybook-ui';
 import Button from '../../components/Button';
+import SocialButton from '../../components/SocialButton';
 import { Container, Row, Col } from '../../components/Grid';
 
 const exampleTab = (
@@ -105,20 +106,56 @@ const exampleTab = (
   </Tab>
 );
 
+const socialExampleTab = (
+  <Tab title="Example">
+    <StoryContainer>
+      <Container fluid>
+        <Title as="h2">Google button</Title>
+        <Example
+          component={<SocialButton provider="google" title="google-button" />}
+          code="<SocialButton provider='google' title='google-button'/>"
+        />
+
+        <Title as="h2">Facebook button</Title>
+        <Example
+          component={
+            <SocialButton provider="facebook" title="facebook-button" />
+          }
+          code={"<SocialButton provider='facebook' title='facebook-button'/>"}
+        />
+      </Container>
+    </StoryContainer>
+  </Tab>
+);
+
 const description = `Buttons express what action will occur when the user clicks
 or touches it. Buttons are used to initialize an action, either in the
 background or foreground of an experience.
 `;
 
-storiesOf('Buttons', module).add('Button', () => (
-  <>
-    <AutoExample
-      description={description}
-      component={Button}
-      componentProps={{
-        children: 'Catho',
-      }}
-      additionalTabs={exampleTab}
-    />
-  </>
-));
+storiesOf('Buttons', module)
+  .add('Button', () => (
+    <>
+      <AutoExample
+        description={description}
+        component={Button}
+        componentProps={{
+          children: 'Catho',
+        }}
+        additionalTabs={exampleTab}
+      />
+    </>
+  ))
+  .add('SocialButton', () => (
+    <>
+      <AutoExample
+        description={description}
+        component={SocialButton}
+        componentProps={{
+          provider: 'google',
+          title: 'storybook-social-button',
+        }}
+        additionalTabs={socialExampleTab}
+      />
+    </>
+  ));
