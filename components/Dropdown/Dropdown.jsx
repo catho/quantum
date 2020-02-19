@@ -325,7 +325,7 @@ const Dropdown = ({
   const hasLabel = !!label;
 
   const [_id] = useState(id || ID_GENERATOR.next().value);
-  const DROPDOWN_INPUT_NAME = `name-${_id}`;
+  const DROPDOWN_INPUT_NAME = `input-name-${_id}`;
 
   const inputFilter = value =>
     items.filter(item => {
