@@ -5,5 +5,6 @@ describe('normalizeChars function', () => {
     expect(normalizeChars('São Paulo')).toBe('Sao Paulo');
     expect(normalizeChars('río-de-Jâneiro')).toBe('rio de Janeiro');
     expect(normalizeChars('ãçí_-aâsd')).toBe('aci  aasd');
+    expect(normalizeChars("santa clara D'Oeste")).toBe('santa clara DOeste');
   });
 });
