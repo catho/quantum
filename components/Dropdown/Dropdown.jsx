@@ -224,6 +224,7 @@ SelectedItemLabel.displayName = 'SelectedItemLabel';
 ArrowDown.displayName = 'ArrowDown';
 ArrowUp.displayName = 'ArrowUp';
 DropItemImage.displayName = 'DropItemImage';
+DropContainer.displayName = 'DropContainer';
 
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
@@ -302,6 +303,7 @@ const Dropdown = ({
   autocomplete,
   theme,
   id,
+  name,
   ignoreSpecialChars,
   ...rest
 }) => {
@@ -371,7 +373,12 @@ const Dropdown = ({
                   {required && <RequiredMark>*</RequiredMark>}
                 </InputLabel>
               )}
-              <input type="hidden" {...getInputProps()} />
+              <input
+                {...getInputProps({
+                  name,
+                  type: 'hidden',
+                })}
+              />
               {autocomplete ? (
                 <>
                   <DropContainer theme={theme}>
@@ -454,6 +461,7 @@ Dropdown.defaultProps = {
   required: false,
   error: '',
   id: '',
+  name: '',
   label: '',
   placeholder: 'Select an option',
   selectedItem: null,
@@ -474,6 +482,7 @@ Dropdown.propTypes = {
   /** Displays an error message and changes border color to error color */
   error: PropTypes.string,
   id: PropTypes.string,
+  name: PropTypes.string,
   /** Displays a label text that describes the field */
   label: PropTypes.string,
   placeholder: PropTypes.string,
