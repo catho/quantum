@@ -1,98 +1,99 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import MaterialIcon from '@material-ui/core/Icon';
 import icons from '../shared/icons';
-import Close from '@material-ui/icons/Close';
-import Clear from '@material-ui/icons/Clear';
-import Search from '@material-ui/icons/Search';
-import Info from '@material-ui/icons/Info';
-import Error from '@material-ui/icons/Error';
-import VisibilityOff from '@material-ui/icons/VisibilityOff';
-import Visibility from '@material-ui/icons/Visibility';
-import CheckBox from '@material-ui/icons/CheckBox';
-import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
-import RadioButtonChecked from '@material-ui/icons/RadioButtonChecked';
-import RadioButtonUnchecked from '@material-ui/icons/RadioButtonUnchecked';
-import Done from '@material-ui/icons/Done';
-import Share from '@material-ui/icons/Share';
-import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
-import CreditCard from '@material-ui/icons/CreditCard';
-import Star from '@material-ui/icons/Star';
-import StarHalf from '@material-ui/icons/StarHalf';
-import StarBorder from '@material-ui/icons/StarBorder';
-import Warning from '@material-ui/icons/Warning';
-import CheckCircle from '@material-ui/icons/CheckCircle';
+import AccessibleForward from '@material-ui/icons/AccessibleForward';
 import Add from '@material-ui/icons/Add';
-import Lock from '@material-ui/icons/Lock';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
-import Menu from '@material-ui/icons/Menu';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import KeyboardArrowUp from '@material-ui/icons/KeyboardArrowUp';
+import Assessment from '@material-ui/icons/Assessment';
+import Check from '@material-ui/icons/Check';
+import CheckBox from '@material-ui/icons/CheckBox';
+import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
+import CheckCircle from '@material-ui/icons/CheckCircle';
+import Clear from '@material-ui/icons/Clear';
+import Close from '@material-ui/icons/Close';
+import ContactPhone from '@material-ui/icons/ContactPhone';
+import CreditCard from '@material-ui/icons/CreditCard';
+import DateRange from '@material-ui/icons/DateRange';
+import Done from '@material-ui/icons/Done';
+import EmojiPeople from '@material-ui/icons/EmojiPeople';
+import Error from '@material-ui/icons/Error';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
+import ExitToApp from '@material-ui/icons/ExitToApp';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import Info from '@material-ui/icons/Info';
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-import DateRange from '@material-ui/icons/DateRange';
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import KeyboardArrowUp from '@material-ui/icons/KeyboardArrowUp';
+import Lock from '@material-ui/icons/Lock';
 import Markunread from '@material-ui/icons/Markunread';
-import Person from '@material-ui/icons/Person';
-import PermDeviceInformation from '@material-ui/icons/PermDeviceInformation';
-import EmojiPeople from '@material-ui/icons/EmojiPeople';
-import ContactPhone from '@material-ui/icons/ContactPhone';
-import VerifiedUser from '@material-ui/icons/VerifiedUser';
+import Menu from '@material-ui/icons/Menu';
+import MenuBook from '@material-ui/icons/MenuBook';
 import Payment from '@material-ui/icons/Payment';
-import Assessment from '@material-ui/icons/Assessment';
+import PermDeviceInformation from '@material-ui/icons/PermDeviceInformation';
+import Person from '@material-ui/icons/Person';
+import RadioButtonChecked from '@material-ui/icons/RadioButtonChecked';
+import RadioButtonUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import Receipt from '@material-ui/icons/Receipt';
-// import MenuBook from '@material-ui/icons/MenuBook';
-import ExitToApp from '@material-ui/icons/ExitToApp';
-import AccessibleForward from '@material-ui/icons/AccessibleForward';
+import Search from '@material-ui/icons/Search';
+import Share from '@material-ui/icons/Share';
+import Star from '@material-ui/icons/Star';
+import StarBorder from '@material-ui/icons/StarBorder';
+import StarHalf from '@material-ui/icons/StarHalf';
+import VerifiedUser from '@material-ui/icons/VerifiedUser';
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import Warning from '@material-ui/icons/Warning';
 
 const Icon = ({ name, skin, ...props }) => {
-  console.log('name', name);
-
   const components = {
-    close: Close,
-    clear: Clear,
-    search: Search,
-    info: Info,
-    error: Error,
-    visibility_off: VisibilityOff,
-    visibility: Visibility,
-    check_box: CheckBox,
-    check_box_outline_blank: CheckBoxOutlineBlank,
-    radio_button_checked: RadioButtonChecked,
-    radio_button_unchecked: RadioButtonUnchecked,
-    done: Done,
-    share: Share,
-    favorite_border: FavoriteBorder,
-    credit_card: CreditCard,
-    star: Star,
-    star_half: StarHalf,
-    star_border: StarBorder,
-    warning: Warning,
-    check_circle: CheckCircle,
+    accessible_forward: AccessibleForward,
     add: Add,
-    lock: Lock,
     arrow_drop_down: ArrowDropDown,
     arrow_drop_up: ArrowDropUp,
-    menu: Menu,
-    keyboard_arrow_right: KeyboardArrowRight,
-    keyboard_arrow_up: KeyboardArrowUp,
+    assessment: Assessment,
+    check: Check,
+    check_box: CheckBox,
+    check_box_outline_blank: CheckBoxOutlineBlank,
+    check_circle: CheckCircle,
+    clear: Clear,
+    close: Close,
+    contact_phone: ContactPhone,
+    credit_card: CreditCard,
+    date_range: DateRange,
+    done: Done,
+    emoji_people: EmojiPeople,
+    error: Error,
+    expand_less: ExpandLess,
+    expand_more: ExpandMore,
+    exit_to_app: ExitToApp,
+    favorite_border: FavoriteBorder,
+    info: Info,
     keyboard_arrow_down: KeyboardArrowDown,
     keyboard_arrow_left: KeyboardArrowLeft,
-    date_range: DateRange,
-    markunread: Markunread,
-    person: Person,
+    keyboard_arrow_right: KeyboardArrowRight,
+    keyboard_arrow_up: KeyboardArrowUp,
     lock: Lock,
-    perm_device_information: PermDeviceInformation,
-    emoji_people: EmojiPeople,
-    contact_phone: ContactPhone,
-    verified_user: VerifiedUser,
+    markunread: Markunread,
+    menu: Menu,
+    menu_book: MenuBook,
     payment: Payment,
-    verified_user: VerifiedUser,
-    assessment: Assessment,
+    perm_device_information: PermDeviceInformation,
+    person: Person,
+    radio_button_checked: RadioButtonChecked,
+    radio_button_unchecked: RadioButtonUnchecked,
     receipt: Receipt,
-    // menu_book: MenuBook,
-    exit_to_app: ExitToApp,
-    accessible_forward: AccessibleForward,
+    search: Search,
+    share: Share,
+    star_border: StarBorder,
+    star_half: StarHalf,
+    star: Star,
+    verified_user: VerifiedUser,
+    visibility_off: VisibilityOff,
+    visibility: Visibility,
+    warning: Warning,
   };
 
   const SelectedIcon = components[name];
