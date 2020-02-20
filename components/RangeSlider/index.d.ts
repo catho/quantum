@@ -1,12 +1,12 @@
-import React = require('react');
+import React from 'react';
 
-export interface RangeSliderProps<T> {
+export interface RangeSliderProps {
     step?: number;
     max?: number;
     min?: number;
     disabled?: boolean;
-    onChange?: React.ChangeEventHandler<T>;
-    onChangeCommitted?: React.ChangeEventHandler<T>;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
+    onChangeCommitted?: React.ChangeEventHandler<HTMLInputElement>;
     marks?: Array<{
         value?: string | number;
         label?: string;
@@ -24,4 +24,4 @@ export interface RangeSliderProps<T> {
     };
 }
 
-export default class RangeSlider<T = HTMLInputElement> extends React.Component<RangeSliderProps<T>> {}
+export default class RangeSlider extends React.Component<RangeSliderProps> {}

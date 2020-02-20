@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 
 export type IconNames =
     | 'access_alarm'
