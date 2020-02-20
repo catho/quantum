@@ -4,6 +4,11 @@ import { shallow, mount } from 'enzyme';
 import Dropdown from './Dropdown';
 
 const INPUT_NAME = 'dropdown-name';
+const ITEMS = [
+  { value: 'fooKey', label: 'foo' },
+  { value: 'barKey', label: 'bar' },
+  { value: 'bazKey', label: 'baz' },
+];
 const selectedItemObject = { value: 'bazKey', label: 'baz' };
 const itemsWithImage = [
   {
@@ -27,25 +32,10 @@ const itemsWithImage = [
 ];
 
 describe('Dropdown component ', () => {
-  const withItems = (
-    <Dropdown
-      items={[
-        { value: 'fooKey', label: 'foo' },
-        { value: 'barKey', label: 'bar' },
-        { value: 'bazKey', label: 'baz' },
-      ]}
-    />
-  );
+  const withItems = <Dropdown items={ITEMS} />;
 
   const withSelectedItem = (
-    <Dropdown
-      items={[
-        { value: 'fooKey', label: 'foo' },
-        { value: 'barKey', label: 'bar' },
-        { value: 'bazKey', label: 'baz' },
-      ]}
-      selectedItem={selectedItemObject}
-    />
+    <Dropdown items={ITEMS} selectedItem={selectedItemObject} />
   );
 
   const withImage = (
@@ -56,16 +46,7 @@ describe('Dropdown component ', () => {
     />
   );
 
-  const withName = (
-    <Dropdown
-      name={INPUT_NAME}
-      items={[
-        { value: 'fooKey', label: 'foo' },
-        { value: 'barKey', label: 'bar' },
-        { value: 'bazKey', label: 'baz' },
-      ]}
-    />
-  );
+  const withName = <Dropdown name={INPUT_NAME} items={ITEMS} />;
 
   it('should match the snapshot', () => {
     expect(renderer.create(<Dropdown />).toJSON()).toMatchSnapshot();
