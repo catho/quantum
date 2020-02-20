@@ -1,9 +1,9 @@
-import React = require('react');
+import React from 'react';
 
-export interface TagProps<T> {
+export interface TagProps {
     bold?: boolean;
     inverted?: boolean;
-    onClose?: React.MouseEventHandler<T>;
+    onClose?: React.MouseEventHandler<HTMLButtonElement>;
     size?: 'small' | 'medium' | 'large';
     skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
     stroked?: boolean;
@@ -17,4 +17,4 @@ export interface TagProps<T> {
     };
 }
 
-export default class Tag<T = HTMLButtonElement> extends React.Component<TagProps<T>> {}
+export default class Tag extends React.Component<TagProps> {}

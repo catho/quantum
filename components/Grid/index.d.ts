@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 import Breakpoints from '../Breakpoints';
 
 export type BreakpointsType = keyof typeof Breakpoints;
