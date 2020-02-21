@@ -206,12 +206,16 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, $as, theme, ...rest }) => (
-  <StyledButton as={$as} {...rest} size={size} theme={theme}>
-    {icon && <ButtonIcon size={size} name={icon} theme={theme} />}
-    {children}
-  </StyledButton>
-);
+const Button = ({ children, icon, size, $as, theme, ...rest }) => {
+  console.log('icon', icon);
+
+  return (
+    <StyledButton as={$as} {...rest} size={size} theme={theme}>
+      {icon && <ButtonIcon size={size} name={icon} theme={theme} />}
+      {children}
+    </StyledButton>
+  );
+};
 
 Button.defaultProps = {
   center: false,
