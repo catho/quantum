@@ -20,7 +20,9 @@ exports[`GoogleIcon component Should match the snapshot 1`] = `
 >
   <title
     id="google-title"
-  />
+  >
+    test
+  </title>
   <g
     id="_x31__stroke"
   >
@@ -83,7 +85,9 @@ exports[`GoogleIcon component when size prop is set to 120 1`] = `
 >
   <title
     id="google-title"
-  />
+  >
+    test
+  </title>
   <g
     id="_x31__stroke"
   >

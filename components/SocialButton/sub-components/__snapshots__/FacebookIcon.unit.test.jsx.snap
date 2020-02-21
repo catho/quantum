@@ -15,7 +15,9 @@ exports[`FacebookIcon component Should match the snapshot 1`] = `
 >
   <title
     id="facebook-title"
-  />
+  >
+    test
+  </title>
   <g>
     <rect
       fill="none"
@@ -51,7 +53,9 @@ exports[`FacebookIcon component when size prop is set to 120 1`] = `
 >
   <title
     id="facebook-title"
-  />
+  >
+    test
+  </title>
   <g>
     <rect
       fill="none"
