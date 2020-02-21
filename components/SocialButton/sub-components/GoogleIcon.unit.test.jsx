@@ -11,7 +11,7 @@ describe('GoogleIcon component', () => {
 
   it('when size prop is set to 120', () => {
     expect(
-      renderer.create(<GoogleIcon title="test" size={120} />).toJSON(),
+      renderer.create(<GoogleIcon title="test" size="120" />).toJSON(),
     ).toMatchSnapshot();
   });
 });

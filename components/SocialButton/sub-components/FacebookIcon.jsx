@@ -20,7 +20,6 @@ const FacebookIcon = ({ size, title }) => {
     >
       <title id="facebook-title">{title}</title>
       <g>
-        <title>background</title>
         <rect
           fill="none"
           id="canvas_background"
@@ -31,7 +30,6 @@ const FacebookIcon = ({ size, title }) => {
         />
       </g>
       <g>
-        <title>Layer 1</title>
         <path
           fill="#ffffff"
           id="svg_2"

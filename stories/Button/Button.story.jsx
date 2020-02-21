@@ -112,16 +112,14 @@ const socialExampleTab = (
       <Container fluid>
         <Title as="h2">Google button</Title>
         <Example
-          component={<SocialButton provider="google" title="google-button" />}
-          code="<SocialButton provider='google' title='google-button'/>"
+          component={<SocialButton provider="google" />}
+          code="<SocialButton provider='google' />"
         />
 
         <Title as="h2">Facebook button</Title>
         <Example
-          component={
-            <SocialButton provider="facebook" title="facebook-button" />
-          }
-          code={"<SocialButton provider='facebook' title='facebook-button'/>"}
+          component={<SocialButton provider="facebook" />}
+          code={"<SocialButton provider='facebook' />"}
         />
       </Container>
     </StoryContainer>
@@ -152,8 +150,7 @@ storiesOf('Buttons', module)
         description={description}
         component={SocialButton}
         componentProps={{
-          provider: 'google',
-          title: 'storybook-social-button',
+          provider: 'facebook',
         }}
         additionalTabs={socialExampleTab}
       />

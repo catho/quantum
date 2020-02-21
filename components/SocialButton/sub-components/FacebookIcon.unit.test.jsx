@@ -11,7 +11,7 @@ describe('FacebookIcon component', () => {
 
   it('when size prop is set to 120', () => {
     expect(
-      renderer.create(<FacebookIcon title="test" size={120} />).toJSON(),
+      renderer.create(<FacebookIcon title="test" size="120" />).toJSON(),
     ).toMatchSnapshot();
   });
 });

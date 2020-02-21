@@ -6,39 +6,40 @@ import FacebookIcon from './sub-components/FacebookIcon';
 import GoogleIcon from './sub-components/GoogleIcon';
 import { theme as defaultTheme } from '../shared';
 
-const GoogleButton = styled(Button)`
-  width: 40px;
-  height: 40px;
+const BUTTON_SIZE = '40px';
+const BUTTON_PADDING = defaultTheme.spacing.xsmall;
+
+const BaseButton = styled(Button)`
+  width: ${BUTTON_SIZE};
+  height: ${BUTTON_SIZE};
   border-radius: 9px;
   cursor: pointer;
-  padding: ${defaultTheme.spacing.xsmall - 1}px;
-  overflow: hidden;
-  outline: none;
-`;
-const FacebookButton = styled(Button)`
-  width: 40px;
-  height: 40px;
-  border-radius: 9px;
-  background-color: #3c5193;
-  cursor: pointer;
-  padding: ${defaultTheme.spacing.xsmall}px;
-  border: none;
   overflow: hidden;
   outline: none;
 `;
 
-const SocialButton = ({ provider, title, ...props }) => {
+const GoogleButton = styled(BaseButton)`
+  padding: ${BUTTON_PADDING - 1}px;
+`;
+
+const FacebookButton = styled(BaseButton)`
+  border: none;
+  background-color: #3c5193;
+  padding: ${BUTTON_PADDING}px;
+`;
+
+const SocialButton = ({ provider, ...props }) => {
   switch (provider) {
     case 'facebook':
       return (
         <FacebookButton {...props}>
-          <FacebookIcon title={title} />
+          <FacebookIcon title="facebook-button" size="24" />
         </FacebookButton>
       );
     case 'google':
       return (
         <GoogleButton {...props} stroked skin="neutral">
-          <GoogleIcon title={title} size={24} />
+          <GoogleIcon title="google-button" size="24" />
         </GoogleButton>
       );
     default:
@@ -48,7 +49,6 @@ const SocialButton = ({ provider, title, ...props }) => {
 
 SocialButton.propTypes = {
   provider: PropTypes.oneOf(['facebook', 'google']).isRequired,
-  title: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 
