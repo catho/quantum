@@ -13,7 +13,7 @@ export { default as CircularLoader } from "./CircularLoader"
 export { default as Colors } from "./Colors"
 export { default as Dropdown } from "./Dropdown"
 export { Form, Validations } from './Form';
-export { default as GlobalStyle, IconFont, Typography } from "./GlobalStyle"
+export { default as GlobalStyle, Typography } from "./GlobalStyle"
 export { Col, Container, Hide, Row } from './Grid';
 export { default as Hamburguer } from "./Hamburguer"
 export { default as Icon } from "./Icon"

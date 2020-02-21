@@ -4892,46 +4892,59 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <WithStyles(ForwardRef(Icon))
+                      <ForwardRef
                         style={
                           Object {
                             "color": "",
                           }
                         }
                       >
-                        <ForwardRef(Icon)
-                          classes={
-                            Object {
-                              "colorAction": "MuiIcon-colorAction",
-                              "colorDisabled": "MuiIcon-colorDisabled",
-                              "colorError": "MuiIcon-colorError",
-                              "colorPrimary": "MuiIcon-colorPrimary",
-                              "colorSecondary": "MuiIcon-colorSecondary",
-                              "fontSizeInherit": "MuiIcon-fontSizeInherit",
-                              "fontSizeLarge": "MuiIcon-fontSizeLarge",
-                              "fontSizeSmall": "MuiIcon-fontSizeSmall",
-                              "root": "MuiIcon-root",
-                            }
-                          }
+                        <WithStyles(ForwardRef(SvgIcon))
                           style={
                             Object {
                               "color": "",
                             }
                           }
                         >
-                          <span
-                            aria-hidden={true}
-                            className="material-icons MuiIcon-root"
+                          <ForwardRef(SvgIcon)
+                            classes={
+                              Object {
+                                "colorAction": "MuiSvgIcon-colorAction",
+                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                "colorError": "MuiSvgIcon-colorError",
+                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                "root": "MuiSvgIcon-root",
+                              }
+                            }
                             style={
                               Object {
                                 "color": "",
                               }
                             }
                           >
-                            star
-                          </span>
-                        </ForwardRef(Icon)>
-                      </WithStyles(ForwardRef(Icon))>
+                            <svg
+                              aria-hidden="true"
+                              className="MuiSvgIcon-root"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "color": "",
+                                }
+                              }
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                              />
+                            </svg>
+                          </ForwardRef(SvgIcon)>
+                        </WithStyles(ForwardRef(SvgIcon))>
+                      </ForwardRef>
                     </Icon>
                   </div>
                 </StyledComponent>
@@ -5727,46 +5740,59 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <WithStyles(ForwardRef(Icon))
+                      <ForwardRef
                         style={
                           Object {
                             "color": "",
                           }
                         }
                       >
-                        <ForwardRef(Icon)
-                          classes={
-                            Object {
-                              "colorAction": "MuiIcon-colorAction",
-                              "colorDisabled": "MuiIcon-colorDisabled",
-                              "colorError": "MuiIcon-colorError",
-                              "colorPrimary": "MuiIcon-colorPrimary",
-                              "colorSecondary": "MuiIcon-colorSecondary",
-                              "fontSizeInherit": "MuiIcon-fontSizeInherit",
-                              "fontSizeLarge": "MuiIcon-fontSizeLarge",
-                              "fontSizeSmall": "MuiIcon-fontSizeSmall",
-                              "root": "MuiIcon-root",
-                            }
-                          }
+                        <WithStyles(ForwardRef(SvgIcon))
                           style={
                             Object {
                               "color": "",
                             }
                           }
                         >
-                          <span
-                            aria-hidden={true}
-                            className="material-icons MuiIcon-root"
+                          <ForwardRef(SvgIcon)
+                            classes={
+                              Object {
+                                "colorAction": "MuiSvgIcon-colorAction",
+                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                "colorError": "MuiSvgIcon-colorError",
+                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                "root": "MuiSvgIcon-root",
+                              }
+                            }
                             style={
                               Object {
                                 "color": "",
                               }
                             }
                           >
-                            star
-                          </span>
-                        </ForwardRef(Icon)>
-                      </WithStyles(ForwardRef(Icon))>
+                            <svg
+                              aria-hidden="true"
+                              className="MuiSvgIcon-root"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "color": "",
+                                }
+                              }
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                              />
+                            </svg>
+                          </ForwardRef(SvgIcon)>
+                        </WithStyles(ForwardRef(SvgIcon))>
+                      </ForwardRef>
                     </Icon>
                   </div>
                 </StyledComponent>

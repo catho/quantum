@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import icons from '../shared/icons';
 import AccessibleForward from '@material-ui/icons/AccessibleForward';
 import Add from '@material-ui/icons/Add';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
@@ -46,6 +45,8 @@ import VerifiedUser from '@material-ui/icons/VerifiedUser';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
+
+import icons from '../shared/icons';
 
 const Icon = ({ name, skin, ...props }) => {
   const components = {
@@ -97,6 +98,7 @@ const Icon = ({ name, skin, ...props }) => {
   };
 
   const SelectedIcon = components[name];
+
   return (
     <SelectedIcon {...props} style={{ color: skin }}>
       {name}

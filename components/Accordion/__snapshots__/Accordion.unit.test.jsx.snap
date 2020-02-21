@@ -114,9 +114,11 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       >
         Institucional
       </span>
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -184,9 +186,12 @@ exports[`Accordion component Should match the snapshot of a simple circular load
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        expand_more
-      </span>
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
     </button>
     <div
       aria-hidden={true}
@@ -262,9 +267,11 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       >
         Para candidato
       </span>
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -332,9 +339,12 @@ exports[`Accordion component Should match the snapshot of a simple circular load
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        expand_more
-      </span>
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
     </button>
     <div
       aria-hidden={true}
@@ -386,9 +396,11 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       >
         Para Empresa
       </span>
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -456,9 +468,12 @@ exports[`Accordion component Should match the snapshot of a simple circular load
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        expand_more
-      </span>
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
     </button>
     <div
       aria-hidden={true}
@@ -510,9 +525,11 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       >
         Educação
       </span>
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -580,9 +597,12 @@ exports[`Accordion component Should match the snapshot of a simple circular load
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        expand_more
-      </span>
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
     </button>
     <div
       aria-hidden={true}

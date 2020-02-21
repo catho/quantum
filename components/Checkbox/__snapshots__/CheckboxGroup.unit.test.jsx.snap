@@ -24,17 +24,22 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           type=\\"checkbox\\"
           value=\\"\\"
         />
-        <span
-          aria-hidden={true}
-          className=\\"material-icons MuiIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+        <svg
+          aria-hidden=\\"true\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+          focusable=\\"false\\"
+          role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
             }
           }
+          viewBox=\\"0 0 24 24\\"
         >
-          check
-        </span>
+          <path
+            d=\\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\\"
+          />
+        </svg>
         <label
           className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
@@ -60,17 +65,22 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           type=\\"checkbox\\"
           value=\\"\\"
         />
-        <span
-          aria-hidden={true}
-          className=\\"material-icons MuiIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+        <svg
+          aria-hidden=\\"true\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+          focusable=\\"false\\"
+          role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
             }
           }
+          viewBox=\\"0 0 24 24\\"
         >
-          check
-        </span>
+          <path
+            d=\\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\\"
+          />
+        </svg>
         <label
           className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
@@ -96,17 +106,22 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           type=\\"checkbox\\"
           value=\\"\\"
         />
-        <span
-          aria-hidden={true}
-          className=\\"material-icons MuiIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+        <svg
+          aria-hidden=\\"true\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
+          focusable=\\"false\\"
+          role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
             }
           }
+          viewBox=\\"0 0 24 24\\"
         >
-          check
-        </span>
+          <path
+            d=\\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\\"
+          />
+        </svg>
         <label
           className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
@@ -507,17 +522,22 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -542,17 +562,22 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -577,17 +602,22 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -716,17 +746,22 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -751,17 +786,22 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -786,17 +826,22 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -1126,9 +1171,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       size="medium"
       type="button"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4 c5"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4 c5"
+        focusable="false"
+        role="presentation"
         size="medium"
         style={
           Object {
@@ -1334,9 +1381,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        print
-      </span>
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
       <input
         checked={false}
         className="c6"
@@ -1388,9 +1438,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       size="medium"
       type="button"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4 c5"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4 c5"
+        focusable="false"
+        role="presentation"
         size="medium"
         style={
           Object {
@@ -1596,9 +1648,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        face
-      </span>
+        <path
+          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+        />
+      </svg>
       <input
         checked={false}
         className="c6"
@@ -2000,17 +2055,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
         value=""
       />
       Foo
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c5 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c5 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        lock
-      </span>
+        <path
+          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+        />
+      </svg>
     </label>
   </div>
   <div
@@ -2063,17 +2123,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
         value=""
       />
       Baz
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c5 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c5 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        lock
-      </span>
+        <path
+          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+        />
+      </svg>
     </label>
   </div>
 </div>
@@ -2276,17 +2341,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -2311,17 +2381,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -2346,17 +2421,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -2559,17 +2639,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -2594,17 +2679,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""
@@ -2629,17 +2719,22 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         type="checkbox"
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        check
-      </span>
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
       <label
         className="c4 c5"
         htmlFor=""

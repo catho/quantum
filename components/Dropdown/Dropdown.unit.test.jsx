@@ -91,6 +91,8 @@ describe('Dropdown component ', () => {
 
   it('should change the position of arrow icon when click open list', () => {
     const component = mount(withItems);
+    console.log('xxxxxxx', component.find('ArrowDown').text());
+
     expect(component.find('ArrowDown').text()).toEqual('arrow_drop_down');
     component.find('DropInput').simulate('click');
     expect(component.find('ArrowUp').text()).toEqual('arrow_drop_up');
