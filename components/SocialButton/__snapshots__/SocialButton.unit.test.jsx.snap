@@ -66,9 +66,9 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   height: 40px;
   border-radius: 9px;
   cursor: pointer;
-  padding: 7px;
   overflow: hidden;
   outline: none;
+  padding: 7px;
 }
 
 <button
@@ -82,12 +82,12 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   <svg
     aria-labelledby="google-title"
     className="c2"
-    height={24}
+    height="24"
     id="Google_Icon"
     role="img"
     version="1.1"
     viewBox="0 0 128 128"
-    width={24}
+    width="24"
     xmlSpace="preserve"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -95,7 +95,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
     <title
       id="google-title"
     >
-      test
+      google-button
     </title>
     <g
       id="_x31__stroke"
@@ -205,12 +205,12 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   width: 40px;
   height: 40px;
   border-radius: 9px;
-  background-color: #3c5193;
   cursor: pointer;
-  padding: 8px;
-  border: none;
   overflow: hidden;
   outline: none;
+  border: none;
+  background-color: #3c5193;
+  padding: 8px;
 }
 
 <button
@@ -224,20 +224,17 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   <svg
     aria-labelledby="facebook-title"
     className="c2"
-    height="48"
+    height="24"
     role="img"
-    width="48"
+    width="24"
     xmlns="http://www.w3.org/2000/svg"
   >
     <title
       id="facebook-title"
     >
-      test
+      facebook-button
     </title>
     <g>
-      <title>
-        background
-      </title>
       <rect
         fill="none"
         height={402}
@@ -248,9 +245,6 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
       />
     </g>
     <g>
-      <title>
-        Layer 1
-      </title>
       <path
         d="m13,10l3,0l0,3l-3,0l0,7l-3,0l0,-7l-3,0l0,-3l3,0l0,-1.255c0,-1.189 0.374,-2.691 1.118,-3.512c0.744,-0.823 1.673,-1.233 2.786,-1.233l2.096,0l0,3l-2.1,0c-0.498,0 -0.9,0.402 -0.9,0.899l0,2.101z"
         fill="#ffffff"

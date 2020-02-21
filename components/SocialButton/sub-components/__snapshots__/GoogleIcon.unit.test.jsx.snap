@@ -20,9 +20,7 @@ exports[`GoogleIcon component Should match the snapshot 1`] = `
 >
   <title
     id="google-title"
-  >
-    test
-  </title>
+  />
   <g
     id="_x31__stroke"
   >
@@ -73,21 +71,19 @@ exports[`GoogleIcon component when size prop is set to 120 1`] = `
 <svg
   aria-labelledby="google-title"
   className="c0"
-  height={120}
+  height="120"
   id="Google_Icon"
   role="img"
   version="1.1"
   viewBox="0 0 128 128"
-  width={120}
+  width="120"
   xmlSpace="preserve"
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
 >
   <title
     id="google-title"
-  >
-    test
-  </title>
+  />
   <g
     id="_x31__stroke"
   >

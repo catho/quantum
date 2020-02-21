@@ -15,13 +15,8 @@ exports[`FacebookIcon component Should match the snapshot 1`] = `
 >
   <title
     id="facebook-title"
-  >
-    test
-  </title>
+  />
   <g>
-    <title>
-      background
-    </title>
     <rect
       fill="none"
       height={402}
@@ -32,9 +27,6 @@ exports[`FacebookIcon component Should match the snapshot 1`] = `
     />
   </g>
   <g>
-    <title>
-      Layer 1
-    </title>
     <path
       d="m13,10l3,0l0,3l-3,0l0,7l-3,0l0,-7l-3,0l0,-3l3,0l0,-1.255c0,-1.189 0.374,-2.691 1.118,-3.512c0.744,-0.823 1.673,-1.233 2.786,-1.233l2.096,0l0,3l-2.1,0c-0.498,0 -0.9,0.402 -0.9,0.899l0,2.101z"
       fill="#ffffff"
@@ -52,20 +44,15 @@ exports[`FacebookIcon component when size prop is set to 120 1`] = `
 <svg
   aria-labelledby="facebook-title"
   className="c0"
-  height={120}
+  height="120"
   role="img"
-  width={120}
+  width="120"
   xmlns="http://www.w3.org/2000/svg"
 >
   <title
     id="facebook-title"
-  >
-    test
-  </title>
+  />
   <g>
-    <title>
-      background
-    </title>
     <rect
       fill="none"
       height={402}
@@ -76,9 +63,6 @@ exports[`FacebookIcon component when size prop is set to 120 1`] = `
     />
   </g>
   <g>
-    <title>
-      Layer 1
-    </title>
     <path
       d="m13,10l3,0l0,3l-3,0l0,7l-3,0l0,-7l-3,0l0,-3l3,0l0,-1.255c0,-1.189 0.374,-2.691 1.118,-3.512c0.744,-0.823 1.673,-1.233 2.786,-1.233l2.096,0l0,3l-2.1,0c-0.498,0 -0.9,0.402 -0.9,0.899l0,2.101z"
       fill="#ffffff"

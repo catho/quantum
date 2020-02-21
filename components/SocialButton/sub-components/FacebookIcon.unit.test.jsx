@@ -4,14 +4,12 @@ import FacebookIcon from './FacebookIcon';
 
 describe('FacebookIcon component', () => {
   it('Should match the snapshot', () => {
-    expect(
-      renderer.create(<FacebookIcon title="test" />).toJSON(),
-    ).toMatchSnapshot();
+    expect(renderer.create(<FacebookIcon />).toJSON()).toMatchSnapshot();
   });
 
   it('when size prop is set to 120', () => {
     expect(
-      renderer.create(<FacebookIcon title="test" size="120" />).toJSON(),
+      renderer.create(<FacebookIcon size="120" />).toJSON(),
     ).toMatchSnapshot();
   });
 });
