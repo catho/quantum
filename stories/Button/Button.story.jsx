@@ -130,6 +130,9 @@ const description = `Buttons express what action will occur when the user clicks
 or touches it. Buttons are used to initialize an action, either in the
 background or foreground of an experience.
 `;
+const socialDescription = `These buttons are used to realize action related to their
+respective social media. It could be for example: realizing a login using the OAuth 
+API from Google`;
 
 storiesOf('Buttons', module)
   .add('Button', () => (
@@ -147,7 +150,7 @@ storiesOf('Buttons', module)
   .add('SocialButton', () => (
     <>
       <AutoExample
-        description={description}
+        description={socialDescription}
         component={SocialButton}
         componentProps={{
           provider: 'facebook',
