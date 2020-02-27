@@ -95,6 +95,17 @@ class Input extends React.Component {
     this._id = id || ID_GENERATOR.next().value;
   }
 
+  componentWillReceiveProps(newProps) {
+    const { value } = newProps;
+
+    this.setState({ currentValue: value });
+
+    this.state = {
+      currentValue: value,
+      hasDefaultValue: value !== null && value[0],
+    };
+  }
+
   onChangeInput = ev => {
     const { onChange } = this.props;
     const inputValue = ev.currentTarget.value;
