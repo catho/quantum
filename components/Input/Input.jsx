@@ -99,11 +99,6 @@ class Input extends React.Component {
     const { value } = newProps;
 
     this.setState({ currentValue: value });
-
-    this.state = {
-      currentValue: value,
-      hasDefaultValue: value !== null && value[0],
-    };
   }
 
   onChangeInput = ev => {
