@@ -17,24 +17,19 @@ describe('Input component', () => {
     const component = shallow(
       <Input value="foo" label="label of input" type="search" />,
     );
-    const InputSearchIconElement = component
-      .find('InputSearchIcon')
-      .html()
-      .includes('search');
 
-    expect(InputSearchIconElement).toBeTruthy();
+    const InputSearchIconElement = component.find('InputSearchIcon');
+
+    expect(InputSearchIconElement).toHaveLength(1);
   });
 
   it('should has an error icon when "error" prop is set', () => {
     const component = shallow(
       <Input value="foo" label="label of input" error="error text" />,
     );
-    const InputErrorIconElement = component
-      .find('InputErrorIcon')
-      .html()
-      .includes('error');
+    const InputErrorIconElement = component.find('InputErrorIcon');
 
-    expect(InputErrorIconElement).toBeTruthy();
+    expect(InputErrorIconElement).toHaveLength(1);
   });
 
   it('should has a helper text when "helperText" prop is set ', () => {
