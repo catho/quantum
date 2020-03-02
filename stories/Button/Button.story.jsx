@@ -9,6 +9,7 @@ import {
   StoryContainer,
 } from '@catho/quantum-storybook-ui';
 import Button from '../../components/Button';
+import SocialButton from '../../components/SocialButton';
 import { Container, Row, Col } from '../../components/Grid';
 
 const exampleTab = (
@@ -105,20 +106,56 @@ const exampleTab = (
   </Tab>
 );
 
+const socialExampleTab = (
+  <Tab title="Example">
+    <StoryContainer>
+      <Container fluid>
+        <Title as="h2">Google button</Title>
+        <Example
+          component={<SocialButton provider="google" />}
+          code="<SocialButton provider='google' />"
+        />
+
+        <Title as="h2">Facebook button</Title>
+        <Example
+          component={<SocialButton provider="facebook" />}
+          code={"<SocialButton provider='facebook' />"}
+        />
+      </Container>
+    </StoryContainer>
+  </Tab>
+);
+
 const description = `Buttons express what action will occur when the user clicks
 or touches it. Buttons are used to initialize an action, either in the
 background or foreground of an experience.
 `;
+const socialDescription = `These buttons are used to realize action related to their
+respective social media. It could be for example: realizing a login using the OAuth 
+API from Google`;
 
-storiesOf('Buttons', module).add('Button', () => (
-  <>
-    <AutoExample
-      description={description}
-      component={Button}
-      componentProps={{
-        children: 'Catho',
-      }}
-      additionalTabs={exampleTab}
-    />
-  </>
-));
+storiesOf('Buttons', module)
+  .add('Button', () => (
+    <>
+      <AutoExample
+        description={description}
+        component={Button}
+        componentProps={{
+          children: 'Catho',
+        }}
+        additionalTabs={exampleTab}
+      />
+    </>
+  ))
+  .add('SocialButton', () => (
+    <>
+      <AutoExample
+        description={socialDescription}
+        component={SocialButton}
+        componentProps={{
+          provider: 'facebook',
+        }}
+        additionalTabs={socialExampleTab}
+      />
+    </>
+  ));
