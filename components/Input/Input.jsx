@@ -95,10 +95,10 @@ class Input extends React.Component {
     this._id = id || ID_GENERATOR.next().value;
   }
 
-  componentWillReceiveProps(newProps) {
-    const { value } = newProps;
+  static getDerivedStateFromProps(nextProps) {
+    const { value } = nextProps;
 
-    this.setState({ currentValue: value });
+    return { currentValue: value };
   }
 
   onChangeInput = ev => {
