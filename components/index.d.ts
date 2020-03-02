@@ -6,6 +6,7 @@ import { default as AccordionComponent, AccordionProps } from "./Accordion"
 import { default as AlertComponent, AlertProps } from "./Alert"
 import { default as BadgeComponent, BadgeProps } from "./Badge"
 import { default as ButtonComponent, ButtonProps } from "./Button"
+import { default as SocialButtonComponent, SocialButtonProps } from "./SocialButton"
 import { default as CardComponent, Props as CardProps } from "./Card"
 import { Checkbox as CheckboxComponent, CheckboxGroup as CheckboxGroupComponent, CheckboxProps, CheckboxGroupProps } from './Checkbox';
 import { default as CircularLoaderComponent, CircularLoaderProps } from "./CircularLoader"
@@ -64,3 +65,4 @@ export const Tag: StyledComponent<typeof TagComponent, TagProps>;
 export const TextArea: StyledComponent<typeof TextAreaComponent, TextAreaProps>;
 export const Toggle: StyledComponent<typeof ToggleComponent, ToggleProps>;
 export const Tooltip: StyledComponent<typeof TooltipComponent, TooltipProps>;
+export const SocialButton: StyledComponent<typeof SocialButtonComponent, SocialButtonProps>;
