@@ -2540,9 +2540,11 @@ exports[`Dropdown component  should match the snapshot 12`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -2610,9 +2612,12 @@ exports[`Dropdown component  should match the snapshot 12`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
