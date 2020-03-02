@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Button from '../../components/Button';
+import SocialButton from '../../components/SocialButton';
 
 storiesOf('Buttons', module)
   .add('primary default', () => <Button>Catho</Button>)
@@ -72,4 +73,12 @@ storiesOf('Buttons', module)
     <Button skin="error" stroked>
       Catho
     </Button>
+  ));
+
+storiesOf('SocialButtons', module)
+  .add('provider google', () => (
+    <SocialButton provider="google" title="google-btn" />
+  ))
+  .add('provider facebook', () => (
+    <SocialButton provider="facebook" title="facebook-btn" />
   ));

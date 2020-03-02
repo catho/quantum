@@ -3,6 +3,12 @@ import renderer from 'react-test-renderer';
 import { shallow, mount } from 'enzyme';
 import Dropdown from './Dropdown';
 
+const INPUT_NAME = 'dropdown-name';
+const ITEMS = [
+  { value: 'fooKey', label: 'foo' },
+  { value: 'barKey', label: 'bar' },
+  { value: 'bazKey', label: 'baz' },
+];
 const selectedItemObject = { value: 'bazKey', label: 'baz' };
 const itemsWithImage = [
   {
@@ -26,25 +32,10 @@ const itemsWithImage = [
 ];
 
 describe('Dropdown component ', () => {
-  const withItems = (
-    <Dropdown
-      items={[
-        { value: 'fooKey', label: 'foo' },
-        { value: 'barKey', label: 'bar' },
-        { value: 'bazKey', label: 'baz' },
-      ]}
-    />
-  );
+  const withItems = <Dropdown items={ITEMS} />;
 
   const withSelectedItem = (
-    <Dropdown
-      items={[
-        { value: 'fooKey', label: 'foo' },
-        { value: 'barKey', label: 'bar' },
-        { value: 'bazKey', label: 'baz' },
-      ]}
-      selectedItem={selectedItemObject}
-    />
+    <Dropdown items={ITEMS} selectedItem={selectedItemObject} />
   );
 
   const withImage = (
@@ -54,6 +45,8 @@ describe('Dropdown component ', () => {
       items={itemsWithImage}
     />
   );
+
+  const withName = <Dropdown name={INPUT_NAME} items={ITEMS} />;
 
   it('should match the snapshot', () => {
     expect(renderer.create(<Dropdown />).toJSON()).toMatchSnapshot();
@@ -79,6 +72,7 @@ describe('Dropdown component ', () => {
     expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
     expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
     expect(renderer.create(withImage).toJSON()).toMatchSnapshot();
+    expect(renderer.create(withName).toJSON()).toMatchSnapshot();
   });
 
   it('should find the selected item label when its is selected', () => {
@@ -125,6 +119,16 @@ describe('Dropdown component ', () => {
 
     expect(firstDropItemImage.src).toMatch(firstItemWithImage.img);
     expect(firstDropItemImage.alt).toMatch(firstItemWithImage.alt);
+  });
+
+  it('should pass correctly the name prop to input hidden', () => {
+    const component = mount(withName);
+    const input = component
+      .find('DropContainer')
+      .find('input[type="hidden"]')
+      .first();
+
+    expect(input.prop('name')).toMatch(INPUT_NAME);
   });
 });
 
