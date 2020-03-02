@@ -18,6 +18,7 @@ import {
   SnackBarExampleSuccess,
   SnackBarExampleError,
   SnackBarExampleWarning,
+  SnackBarExampleCallback,
 } from './examples';
 
 storiesOf('SnackBar', module).add('SnackBar', () => (
@@ -93,6 +94,19 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
             </Col>
             <Col xsmall={4} small={4} medium={6}>
               <SnackBarExampleWarning />
+            </Col>
+          </Row>
+          <Title as="h3">SnackBar with callback</Title>
+          <p>
+            Open the browsers console to see de log when the CALLBACK ACTION
+            button is pressed
+          </p>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>{SnackBarExampleCallback.code}</SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <SnackBarExampleCallback />
             </Col>
           </Row>
         </StoryContainer>

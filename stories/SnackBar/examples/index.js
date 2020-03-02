@@ -3,6 +3,7 @@ import SnackBarExamplePrimary from './SnackBarExamplePrimary';
 import SnackBarExampleSuccess from './SnackBarExampleSuccess';
 import SnackBarExampleError from './SnackBarExampleError';
 import SnackBarExampleWarning from './SnackBarExampleWarning';
+import SnackBarExampleCallback from './SnackBarExampleCallback';
 
 export {
   SnackBarExample,
@@ -10,4 +11,5 @@ export {
   SnackBarExampleSuccess,
   SnackBarExampleError,
   SnackBarExampleWarning,
+  SnackBarExampleCallback,
 };
