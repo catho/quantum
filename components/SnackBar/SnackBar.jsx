@@ -313,7 +313,7 @@ SnackBar.propTypes = {
   /** This prop works only on neutral skin */
   actionTrigger: PropTypes.shape({
     title: PropTypes.string,
-    callback: PropTypes.func,
+    callbackFn: PropTypes.func,
   }),
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
