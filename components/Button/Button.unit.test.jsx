@@ -50,14 +50,14 @@ describe('Button component', () => {
   describe('with an icon', () => {
     it('should match secondary snapshot', () => {
       const search = <Button icon="search">Search</Button>;
-      const sync = <Button icon="sync">Sync</Button>;
-      const sms = <Button icon="sms">Message</Button>;
-      const camera = <Button icon="camera">Screenshot</Button>;
+      const payment = <Button icon="payment">Payment</Button>;
+      const lock = <Button icon="lock">Lock</Button>;
+      const star = <Button icon="star">Star</Button>;
 
       expect(renderer.create(search).toJSON()).toMatchSnapshot();
-      expect(renderer.create(sync).toJSON()).toMatchSnapshot();
-      expect(renderer.create(sms).toJSON()).toMatchSnapshot();
-      expect(renderer.create(camera).toJSON()).toMatchSnapshot();
+      expect(renderer.create(payment).toJSON()).toMatchSnapshot();
+      expect(renderer.create(lock).toJSON()).toMatchSnapshot();
+      expect(renderer.create(star).toJSON()).toMatchSnapshot();
     });
   });
 });

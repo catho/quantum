@@ -78,10 +78,11 @@ describe('Input component', () => {
 
   it('should has a clear icon when input value is not empty', () => {
     const component = mount(<Input value="foo" label="label of input" />);
-    const hasIcon = component.find('span.material-icons');
+    const hasIcon = component.find('InputIcon Icon');
+
     expect(hasIcon).toBeTruthy();
 
-    const clearIcon = hasIcon.text();
+    const clearIcon = hasIcon.prop('name');
     expect(clearIcon).toEqual('clear');
   });
 
@@ -135,32 +136,29 @@ describe('Input component', () => {
   });
 
   describe('with password type', () => {
-    const wrapper = shallow(<Input type="password" />);
+    const wrapper = mount(<Input type="password" />);
 
-    const icon = () => wrapper.find('InputIcon');
+    const icon = () => wrapper.find('InputIcon Icon');
 
-    const visibilityIcon = () =>
-      icon()
-        .html()
-        .includes('visibility');
+    const visibilityIcon = () => icon().prop('name');
 
     it('should has "password" as default input type', () => {
       expect(visibilityIcon()).toBeTruthy();
+      expect(visibilityIcon()).toEqual('visibility');
       expect(wrapper.state('type')).toEqual('password');
     });
 
     it('should toggle input type, when password icon is clicked', () => {
-      const visibilityOffIcon = () =>
-        icon()
-          .html()
-          .includes('visibility_off');
+      const visibilityOffIcon = () => icon().prop('name');
 
       icon().simulate('click');
       expect(visibilityOffIcon()).toBeTruthy();
+      expect(visibilityOffIcon()).toEqual('visibility_off');
       expect(wrapper.state('type')).toEqual('text');
 
       icon().simulate('click');
       expect(visibilityIcon()).toBeTruthy();
+      expect(visibilityIcon()).toEqual('visibility');
       expect(wrapper.state('type')).toEqual('password');
     });
   });
