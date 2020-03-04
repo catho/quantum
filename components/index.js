@@ -28,6 +28,7 @@ import CircularLoader from './CircularLoader';
 import Pagination from './Pagination';
 import Hamburger from './Hamburger';
 import Socials from './Socials';
+import SocialButton from './SocialButton';
 
 export {
   Accordion,
@@ -67,4 +68,5 @@ export {
   Pagination,
   Hamburger,
   Socials,
+  SocialButton,
 };
