@@ -97,7 +97,9 @@ const Icon = ({ name, skin, ...props }) => {
     warning: Warning,
   };
 
-  const SelectedIcon = components[name] || name;
+  if (!components[name]) return <span>{name}</span>;
+
+  const SelectedIcon = components[name];
 
   return (
     <SelectedIcon {...props} style={{ color: skin }}>
