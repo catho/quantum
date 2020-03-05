@@ -33,7 +33,7 @@ const AdvancedCard = () => (
           </Button>
         </div>
         <div>
-          <Icon name="favorite" />
+          <Icon name="favorite_border" />
           <Icon name="share" />
         </div>
       </Card.Footer>
@@ -77,7 +77,7 @@ const AdvancedCard = () => (
         </Button>
       </div>
       <div>
-        <Icon name="favorite" />
+        <Icon name="favorite_border" />
         <Icon name="share" />
       </div>
     </Card.Footer>

@@ -22,34 +22,35 @@ const IconWrapper = styled.div`
 `;
 
 const exampleIcons = [
-  <Icon name="thumb_up" />,
   <Icon name="info" />,
-  <Icon name="motorcycle" />,
-  <Icon name="directions_car" />,
-  <Icon name="airplanemode_active" />,
-  <Icon name="access_alarm" />,
-  <Icon name="audiotrack" />,
-  <Icon name="attach_money" />,
-  <Icon name="autorenew" skin={colors.primary['900']} />,
-  <Icon name="check_circle" skin={colors.secondary['900']} />,
-  <Icon name="clear" skin={colors.primary['700']} />,
-  <Icon name="directions_bike" skin={colors.warning['900']} />,
-  <Icon name="event" skin={colors.error['100']} />,
+  <Icon name="clear" />,
+  <Icon name="search" />,
+  <Icon name="info" />,
+  <Icon name="error" />,
+  <Icon name="visibility_off" />,
+  <Icon name="visibility" />,
+  <Icon name="check_box" />,
+  <Icon name="emoji_people" skin={colors.primary['900']} />,
+  <Icon name="emoji_people" skin={colors.secondary['900']} />,
+  <Icon name="emoji_people" skin={colors.primary['700']} />,
+  <Icon name="emoji_people" skin={colors.warning['900']} />,
+  <Icon name="emoji_people" skin={colors.error['300']} />,
 ];
 
-const exampleCode = `<Icon name="thumb_up" />
-<Icon name="info" />
-<Icon name="motorcycle" />
-<Icon name="directions_car" />
-<Icon name="airplanemode_active" />
-<Icon name="access_alarm" />
-<Icon name="audiotrack" />
-<Icon name="attach_money" />
-<Icon name="autorenew" skin={colors.primary['900']} />
-<Icon name="check_circle" skin={colors.secondary['900']} />
-<Icon name="clear" skin={colors.primary['700']} />
-<Icon name="directions_bike" skin={colors.warning['900']} />
-<Icon name="event" skin={colors.error['100']} />
+const exampleCode = `  <Icon name="info" />
+  <Icon name="clear" />
+  <Icon name="search" />
+  <Icon name="info" />
+  <Icon name="error" />
+  <Icon name="visibility_off" />
+  <Icon name="visibility" />
+  <Icon name="check_box" />
+  <Icon name="emoji_people" skin={colors.primary['900']} />
+  <Icon name="emoji_people" skin={colors.secondary['900']} />
+  <Icon name="emoji_people" skin={colors.primary['700']} />
+  <Icon name="emoji_people" skin={colors.warning['900']} />
+  <Icon name="emoji_people" skin={colors.error['300']} />
+];
 `;
 
 const importIcon = `import { Icon } from '@catho/quantum';`;

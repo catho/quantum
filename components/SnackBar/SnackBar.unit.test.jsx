@@ -98,7 +98,7 @@ describe('<SnackBar />', () => {
           skin={skin}
         />,
       );
-      const iconName = component.find('SkinIcon').text();
+      const iconName = component.find('SkinIcon Icon').prop('name');
       expect(iconName).toMatch(skinIconName);
       component.unmount();
     });
@@ -146,7 +146,7 @@ describe('<SnackBar />', () => {
 
   it('should have a close icon when its props is set', () => {
     component = mount(SnackBarComponent);
-    const closeIconContent = component.find('CloseIconLeft').text();
+    const closeIconContent = component.find('CloseIconLeft Icon').prop('name');
     expect(closeIconContent).toMatch('close');
   });
 

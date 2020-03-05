@@ -1,57 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Icon /> Should match the snapshot 1`] = `
-<span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+<svg
+  aria-hidden="true"
+  className="MuiSvgIcon-root"
+  focusable="false"
+  role="presentation"
   style={
     Object {
       "color": "",
     }
   }
+  viewBox="0 0 24 24"
 >
-  3d_rotation
-</span>
+  <circle
+    cx="17"
+    cy="4.54"
+    r="2"
+  />
+  <path
+    d="M14 17h-2c0 1.65-1.35 3-3 3s-3-1.35-3-3 1.35-3 3-3v-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5zm3-3.5h-1.86l1.67-3.67C17.42 8.5 16.44 7 14.96 7h-5.2c-.81 0-1.54.47-1.87 1.2L7.22 10l1.92.53L9.79 9H12l-1.83 4.1c-.6 1.33.39 2.9 1.85 2.9H17v5h2v-5.5c0-1.1-.9-2-2-2z"
+  />
+</svg>
 `;
 
 exports[`<Icon /> Should match the snapshot 2`] = `
-<span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+<svg
+  aria-hidden="true"
+  className="MuiSvgIcon-root"
+  focusable="false"
+  role="presentation"
   style={
     Object {
       "color": "",
     }
   }
+  viewBox="0 0 24 24"
 >
-  filter_4
-</span>
+  <path
+    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+  />
+</svg>
 `;
 
 exports[`<Icon /> Should match the snapshot 3`] = `
-<span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+<svg
+  aria-hidden="true"
+  className="MuiSvgIcon-root"
+  focusable="false"
+  role="presentation"
   style={
     Object {
       "color": "",
     }
   }
+  viewBox="0 0 24 24"
 >
-  arrow_forward
-</span>
+  <path
+    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+  />
+</svg>
 `;
 
 exports[`<Icon /> Should match the snapshot 4`] = `
-<span
-  aria-hidden={true}
-  className="material-icons MuiIcon-root"
+<svg
+  aria-hidden="true"
+  className="MuiSvgIcon-root"
+  focusable="false"
+  role="presentation"
   style={
     Object {
       "color": "tomato",
     }
   }
+  viewBox="0 0 24 24"
 >
-  face
-</span>
+  <path
+    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+  />
+</svg>
 `;

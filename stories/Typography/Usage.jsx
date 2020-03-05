@@ -17,7 +17,7 @@ ReactDOM
   ), document.getElementById('root'));
 `;
 
-const typographyAndIconImport = `import { Typography, IconFont } from '@catho/quantum';`;
+const typographyAndIconImport = `import { Typography } from '@catho/quantum';`;
 const codeBackgroundColor = '#e8f2fc';
 const codefontColor = '#1a82e2';
 

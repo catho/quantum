@@ -106,17 +106,22 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       type="checkbox"
       value=""
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c2 "
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c2 "
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     <label
       className="c3 c4"
       htmlFor=""
@@ -314,17 +319,22 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       type="checkbox"
       value=""
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c2 "
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c2 "
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     <label
       className="c3 c4"
       htmlFor=""
@@ -526,17 +536,22 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       type="checkbox"
       value=""
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c2 "
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c2 "
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     <label
       className="c3 c4"
       htmlFor=""
@@ -727,17 +742,22 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       type="checkbox"
       value=""
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c2 "
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c2 "
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     <label
       className="c3 c4"
       htmlFor=""
@@ -924,17 +944,22 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       type="checkbox"
       value=""
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c2 "
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c2 "
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     <label
       className="c3 c4"
       htmlFor=""
@@ -1121,17 +1146,22 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
       type="checkbox"
       value=""
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c2 "
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c2 "
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     <label
       className="c3 c4"
       htmlFor=""
@@ -1318,17 +1348,22 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       type="checkbox"
       value=""
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c2 "
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c2 "
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     <label
       className="c3 c4"
       htmlFor=""

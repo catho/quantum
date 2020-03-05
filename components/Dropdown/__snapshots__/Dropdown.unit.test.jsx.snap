@@ -127,9 +127,11 @@ exports[`Dropdown component  should match the snapshot 1`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -197,9 +199,12 @@ exports[`Dropdown component  should match the snapshot 1`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -334,9 +339,11 @@ exports[`Dropdown component  should match the snapshot 2`] = `
       type="button"
     >
       Dropdown placeholder
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -404,9 +411,12 @@ exports[`Dropdown component  should match the snapshot 2`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -544,9 +554,11 @@ exports[`Dropdown component  should match the snapshot 3`] = `
       type="button"
     >
       
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -614,9 +626,12 @@ exports[`Dropdown component  should match the snapshot 3`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -763,9 +778,11 @@ exports[`Dropdown component  should match the snapshot 4`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -833,9 +850,12 @@ exports[`Dropdown component  should match the snapshot 4`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -974,9 +994,11 @@ exports[`Dropdown component  should match the snapshot 5`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -1044,9 +1066,12 @@ exports[`Dropdown component  should match the snapshot 5`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -1194,9 +1219,11 @@ exports[`Dropdown component  should match the snapshot 6`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -1264,9 +1291,12 @@ exports[`Dropdown component  should match the snapshot 6`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -1423,9 +1453,11 @@ exports[`Dropdown component  should match the snapshot 7`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c5"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c5"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -1493,9 +1525,12 @@ exports[`Dropdown component  should match the snapshot 7`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -1644,9 +1679,11 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         }
         value=""
       />
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -1714,9 +1751,12 @@ exports[`Dropdown component  should match the snapshot 8`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </div>
   </div>
   
@@ -1851,9 +1891,11 @@ exports[`Dropdown component  should match the snapshot 9`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -1921,9 +1963,12 @@ exports[`Dropdown component  should match the snapshot 9`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -2058,9 +2103,11 @@ exports[`Dropdown component  should match the snapshot 10`] = `
       type="button"
     >
       baz
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -2128,9 +2175,12 @@ exports[`Dropdown component  should match the snapshot 10`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -2278,9 +2328,11 @@ exports[`Dropdown component  should match the snapshot 11`] = `
       type="button"
     >
       What credit card do you prefer?
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c4"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c4"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -2348,9 +2400,12 @@ exports[`Dropdown component  should match the snapshot 11`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
@@ -2485,9 +2540,11 @@ exports[`Dropdown component  should match the snapshot 12`] = `
       type="button"
     >
       Select an option
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3"
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3"
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
@@ -2555,9 +2612,12 @@ exports[`Dropdown component  should match the snapshot 12`] = `
             },
           }
         }
+        viewBox="0 0 24 24"
       >
-        arrow_drop_down
-      </span>
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
     </button>
   </div>
   
