@@ -94,6 +94,8 @@ exports[`Form component  should match the snapshot 1`] = `
       <input
         id="input-0"
         mask={[Function]}
+        maxLength={255}
+        minLength={0}
         name="required"
         onChange={[Function]}
         placeholder=""
@@ -125,6 +127,8 @@ exports[`Form component  should match the snapshot 1`] = `
       <input
         id="input-1"
         mask={[Function]}
+        maxLength={255}
+        minLength={0}
         name="cpf"
         onChange={[Function]}
         placeholder=""
@@ -156,6 +160,8 @@ exports[`Form component  should match the snapshot 1`] = `
       <input
         id="input-2"
         mask={[Function]}
+        maxLength={255}
+        minLength={0}
         name="cep"
         onChange={[Function]}
         placeholder=""
@@ -187,6 +193,8 @@ exports[`Form component  should match the snapshot 1`] = `
       <input
         id="input-3"
         mask={[Function]}
+        maxLength={255}
+        minLength={0}
         name="birthday"
         onChange={[Function]}
         placeholder=""
@@ -218,6 +226,8 @@ exports[`Form component  should match the snapshot 1`] = `
       <input
         id="input-4"
         mask={[Function]}
+        maxLength={255}
+        minLength={0}
         name="email"
         onChange={[Function]}
         placeholder=""
@@ -249,6 +259,7 @@ exports[`Form component  should match the snapshot 1`] = `
       <input
         id="input-5"
         mask={[Function]}
+        maxLength={255}
         minLength="8"
         name="address"
         onChange={[Function]}
@@ -282,6 +293,7 @@ exports[`Form component  should match the snapshot 1`] = `
         id="input-6"
         mask={[Function]}
         maxLength="3"
+        minLength={0}
         name="country"
         onChange={[Function]}
         placeholder=""
