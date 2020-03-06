@@ -167,6 +167,7 @@ const Toggle = ({ checked, theme, ...rest }) => (
 );
 
 Toggle.propTypes = {
+  onChange: PropTypes.func,
   checked: PropTypes.bool,
   theme: PropTypes.shape({
     colors: PropTypes.object,
@@ -176,6 +177,7 @@ Toggle.propTypes = {
 };
 
 Toggle.defaultProps = {
+  onChange: () => {},
   checked: null,
   theme: {
     colors,

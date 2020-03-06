@@ -32,8 +32,8 @@ export interface InputProps {
   mask?: Mask | Mask[];
   onClean?: React.MouseEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  minLength?: number;
-  maxLength?: number;
+  minLength?: number | string;
+  maxLength?: number | string;
   theme?: {
     spacing?: object;
     colors?: object;

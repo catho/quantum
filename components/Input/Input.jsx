@@ -242,8 +242,8 @@ Input.propTypes = {
     colors: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
-  minLength: PropTypes.number,
-  maxLength: PropTypes.number,
+  minLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  maxLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 Input.defaultProps = {
