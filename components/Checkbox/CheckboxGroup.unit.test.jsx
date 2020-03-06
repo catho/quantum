@@ -241,11 +241,11 @@ describe('<CheckboxGroup />', () => {
     it('with <CheckboxGroup.Button /> and icons', () => {
       const component = (
         <CheckboxGroup>
-          <CheckboxGroup.Button name="Foo" icon="print">
+          <CheckboxGroup.Button name="Foo" icon="menu">
             Foo
           </CheckboxGroup.Button>
           <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Baz" icon="face">
+          <CheckboxGroup.Button name="Baz" icon="lock">
             Baz
           </CheckboxGroup.Button>
         </CheckboxGroup>

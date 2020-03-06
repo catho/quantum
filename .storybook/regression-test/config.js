@@ -4,15 +4,9 @@ import 'loki/configure-react';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
 import { UiStyle } from '@catho/quantum-storybook-ui';
-import { IconFont } from '../../components/GlobalStyle';
 import stories from './stories';
 
-const CSSDecorator = storyFn => (
-  <>
-    <IconFont />
-    {storyFn()}
-  </>
-);
+const CSSDecorator = storyFn => <>{storyFn()}</>;
 
 addDecorator(UiStyle);
 addDecorator(CSSDecorator);

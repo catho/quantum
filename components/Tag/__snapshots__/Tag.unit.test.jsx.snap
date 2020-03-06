@@ -463,17 +463,22 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -535,17 +540,22 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -612,17 +622,22 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -694,17 +709,22 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -781,17 +801,22 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -873,17 +898,22 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -970,17 +1000,22 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1072,17 +1107,22 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1179,17 +1219,22 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1291,17 +1336,22 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1403,17 +1453,22 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1515,17 +1570,22 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1627,17 +1687,22 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1739,17 +1804,22 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
@@ -1851,17 +1921,22 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
       onClick={[Function]}
       size="medium"
     >
-      <span
-        aria-hidden={true}
-        className="material-icons MuiIcon-root c3 "
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root c3 "
+        focusable="false"
+        role="presentation"
         style={
           Object {
             "color": "",
           }
         }
+        viewBox="0 0 24 24"
       >
-        close
-      </span>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </button>
   </div>
 </div>
