@@ -10,7 +10,7 @@ import { Checkbox, CheckboxGroup } from './Checkbox';
 import Card from './Card';
 import Colors from './Colors';
 import Dropdown from './Dropdown';
-import GlobalStyle, { Typography, IconFont } from './GlobalStyle';
+import GlobalStyle, { Typography } from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
 import Popover from './Popover';
@@ -47,7 +47,6 @@ export {
   GlobalStyle,
   Hide,
   Icon,
-  IconFont,
   Input,
   Skeleton,
   ProgressBar,

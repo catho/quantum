@@ -298,9 +298,11 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
       value="Foo"
     />
     Foo
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c3 c4"
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c3 c4"
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
@@ -484,9 +486,12 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
           },
         }
       }
+      viewBox="0 0 24 24"
     >
-      lock
-    </span>
+      <path
+        d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+      />
+    </svg>
   </label>
 </div>
 `;
@@ -583,9 +588,11 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
       value="Foo"
     />
     Foo
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c3 c4"
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c3 c4"
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
@@ -769,9 +776,12 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
           },
         }
       }
+      viewBox="0 0 24 24"
     >
-      lock
-    </span>
+      <path
+        d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+      />
+    </svg>
   </label>
 </div>
 `;
@@ -981,9 +991,11 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
       type="radio"
       value="Foo"
     />
-    <span
-      aria-hidden={true}
-      className="material-icons MuiIcon-root c3"
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root c3"
+      focusable="false"
+      role="presentation"
       style={
         Object {
           "color": "",
@@ -1167,9 +1179,12 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
           },
         }
       }
+      viewBox="0 0 24 24"
     >
-      check
-    </span>
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
     Foo
   </label>
 </div>
