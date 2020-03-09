@@ -242,6 +242,8 @@ Input.propTypes = {
     colors: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
+  minLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  maxLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 Input.defaultProps = {
@@ -258,6 +260,8 @@ Input.defaultProps = {
   onClean: () => {},
   onChange: () => {},
   theme: { spacing, colors, baseFontSize },
+  minLength: 0,
+  maxLength: 255,
 };
 
 Input.displayName = 'Input';

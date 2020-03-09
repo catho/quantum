@@ -112,6 +112,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   <input
     checked={true}
     className="c1"
+    onChange={[Function]}
     role="switch"
     type="checkbox"
   />
@@ -266,6 +267,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   <input
     checked={null}
     className="c1"
+    onChange={[Function]}
     role="switch"
     type="checkbox"
   />

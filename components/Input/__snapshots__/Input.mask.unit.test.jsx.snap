@@ -23,6 +23,8 @@ exports[`Input component should match snapshots 1`] = `
     <input
       id="input-0"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -68,6 +70,8 @@ exports[`Input component should match snapshots 2`] = `
     <input
       id="input-1"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -196,6 +200,8 @@ exports[`Input component should match snapshots 3`] = `
     <input
       id="input-2"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -253,6 +259,8 @@ exports[`Input component should match snapshots 4`] = `
     <input
       id="input-3"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -373,6 +381,8 @@ exports[`Input component should match snapshots 5`] = `
     <input
       id="input-4"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -499,6 +509,8 @@ exports[`Input component should match snapshots 6`] = `
     <input
       id="input-5"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -538,6 +550,8 @@ exports[`Input component should match snapshots 7`] = `
       disabled={true}
       id="input-6"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -588,6 +602,8 @@ exports[`Input component should match snapshots 8`] = `
     <input
       id="input-7"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -641,6 +657,8 @@ exports[`Input component should match snapshots 9`] = `
     <input
       id="input-8"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -778,6 +796,8 @@ exports[`Input component should match snapshots 10`] = `
     <input
       id="input-9"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -816,6 +836,8 @@ exports[`Input component should match snapshots 11`] = `
     <input
       id="input-10"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder="this input has a placeholder"
       render={[Function]}
@@ -866,6 +888,8 @@ exports[`Input component should match snapshots 12`] = `
           /\\\\d/,
         ]
       }
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -925,6 +949,8 @@ exports[`Input component should match snapshots 13`] = `
           /\\\\d/,
         ]
       }
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -980,6 +1006,8 @@ exports[`Input component should match snapshots 14`] = `
           /\\\\d/,
         ]
       }
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -1031,6 +1059,8 @@ exports[`Input component should match snapshots 15`] = `
           /\\\\d/,
         ]
       }
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -1069,6 +1099,8 @@ exports[`Input component should match snapshots 16`] = `
     <input
       id="input-15"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
@@ -1114,6 +1146,8 @@ exports[`Input component should match snapshots 17`] = `
     <input
       id="input-16"
       mask={[Function]}
+      maxLength={255}
+      minLength={0}
       onChange={[Function]}
       placeholder=""
       render={[Function]}
