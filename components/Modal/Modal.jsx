@@ -95,8 +95,8 @@ class Modal extends React.Component {
 
   componentDidMount() {
     const { body } = document;
-
     body.appendChild(this.modalOverlay);
+    this.setBodyOverflow('hidden');
 
     this.focusableElements = this.modalOverlay.querySelectorAll(
       `a[href],
@@ -120,11 +120,17 @@ class Modal extends React.Component {
   componentWillUnmount() {
     const { body } = document;
     this.focusedElementBeforeOpen.focus();
+    this.setBodyOverflow('auto');
 
     body.removeChild(this.modalOverlay);
     window.removeEventListener('keydown', this.handleKeyDown);
     window.removeEventListener('keydown', this.handleEscKey);
   }
+
+  setBodyOverflow = value => {
+    const { body } = document;
+    body.style.overflow = value;
+  };
 
   handleClickOutside = ({ target }) => {
     const { onClose } = this.props;
