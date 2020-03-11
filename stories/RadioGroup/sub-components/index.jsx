@@ -5,6 +5,7 @@ import buttonGroup from './buttonGroup';
 import buttonGroupInline from './buttonGroupInline';
 import buttonGroupError from './buttonGroupError';
 import buttonGroupDisabled from './buttonGroupDisabled';
+import buttonGroupSizes from './buttonGroupSizes';
 
 export {
   simpleRadioGroup,
@@ -14,4 +15,5 @@ export {
   buttonGroupInline,
   buttonGroupError,
   buttonGroupDisabled,
+  buttonGroupSizes,
 };

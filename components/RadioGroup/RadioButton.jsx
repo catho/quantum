@@ -95,6 +95,7 @@ class Radio extends React.Component {
       inline,
       skin,
       theme,
+      size,
       ...rest
     } = this.props;
 
@@ -108,6 +109,7 @@ class Radio extends React.Component {
           skin={error ? 'error' : skin}
           stroked={!checked}
           theme={theme}
+          size={size}
           $as="label"
         >
           <HiddenInput
