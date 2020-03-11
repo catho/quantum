@@ -50,7 +50,16 @@ const exampleCode = `  <Icon name="info" />
   <Icon name="emoji_people" skin={colors.primary['700']} />
   <Icon name="emoji_people" skin={colors.warning['900']} />
   <Icon name="emoji_people" skin={colors.error['300']} />
+`;
+
+const exampleIncorrectIcons = [
+  <Icon name="bike" />,
+  <Icon name="emoji_smile" skin={colors.primary['900']} />,
 ];
+
+const exampleIncorrectCode = `
+  <Icon name="bike" />
+  <Icon name="emoji_smile" skin={colors.primary['900']} />
 `;
 
 const importIcon = `import { Icon } from '@catho/quantum';`;
@@ -84,6 +93,20 @@ storiesOf('Foundation', module).add('Icons', () => (
           </small>
 
           <CodeExample code={exampleCode} />
+
+          <Title as="h2">Unavailable Icons</Title>
+
+          <p>
+            If you try to use an icon that is unavailable in the catalogue it is
+            going to display only the string:
+          </p>
+          <small>
+            {exampleIncorrectIcons.map(icon => (
+              <IconWrapper key={icon.props.name}>{icon}</IconWrapper>
+            ))}
+          </small>
+
+          <CodeExample code={exampleIncorrectCode} />
         </StoryContainer>
       </Tab>
 
