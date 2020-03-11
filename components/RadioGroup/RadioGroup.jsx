@@ -94,6 +94,7 @@ RadioGroup.propTypes = {
  */
 RadioGroup.defaultProps = {
   type: 'radio',
+  size: 'medium',
   children: undefined,
   error: undefined,
   inline: false,
