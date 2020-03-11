@@ -97,8 +97,9 @@ storiesOf('Foundation', module).add('Icons', () => (
           <Title as="h2">Unavailable Icons</Title>
 
           <p>
-            If you try to use an icon that is unavailable in the catalogue it is
-            going to display only the string:
+            If if the string passed in the `Icon` is unavailable in the
+            catalogue it is going to display only the string wrapped in a `span`
+            element and no icon will render.
           </p>
           <small>
             {exampleIncorrectIcons.map(icon => (
