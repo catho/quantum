@@ -24,6 +24,7 @@ import {
   AutoComplete,
   AutoCompleteWithSpecialChars,
   WithImages,
+  CustomLabelWithDescription,
 } from './examples';
 
 const DropdownExample = ({ component: Component, position }) => (
@@ -78,16 +79,20 @@ storiesOf('Forms', module).add('Dropdown', () => (
           </div>
           <DropdownExample component={Simple} position="1" />
           <DropdownExample component={CustomLabel} position="2" />
-          <DropdownExample component={AutoComplete} position="3" />
+          <DropdownExample
+            component={CustomLabelWithDescription}
+            position="3"
+          />
+          <DropdownExample component={AutoComplete} position="4" />
           <DropdownExample
             component={AutoCompleteWithSpecialChars}
-            position="4"
+            position="5"
           />
-          <DropdownExample component={RequiredMark} position="5" />
-          <DropdownExample component={WithError} position="6" />
-          <DropdownExample component={Disabled} position="7" />
-          <DropdownExample component={WithImages} position="8" />
-          <DropdownExample component={Controlled} position="9" />
+          <DropdownExample component={RequiredMark} position="6" />
+          <DropdownExample component={WithError} position="7" />
+          <DropdownExample component={Disabled} position="8" />
+          <DropdownExample component={WithImages} position="9" />
+          <DropdownExample component={Controlled} position="10" />
         </StoryContainer>
       </Tab>
       <Tab title="API">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import { FieldGroup, shadow, uniqId, normalizeChars } from '../shared';
@@ -159,7 +159,6 @@ const CheckIcon = styled(Icon).attrs({
 const DropItem = styled.li`
   box-sizing: border-box;
   cursor: pointer;
-  height: 42px;
   ${({
     theme: {
       spacing: { xsmall, medium },
@@ -216,6 +215,15 @@ const DropItemImage = styled.img`
 
 const DropItemLabel = styled.span`
   vertical-align: middle;
+
+  ${props =>
+    props.showDesc &&
+    css`
+      font-weight: 700;
+    `}
+`;
+const DropItemDescription = styled.span`
+  display: block;
 `;
 
 DropInput.displayName = 'DropInput';
@@ -228,6 +236,7 @@ DropContainer.displayName = 'DropContainer';
 
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
+const _getLabelDescription = item => (item ? item.description : null);
 const _getImage = item => (item ? item.img : null);
 const _getImageAlt = item => (item ? item.alt : null);
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
@@ -237,6 +246,7 @@ const itemPropType = PropTypes.oneOfType([
   PropTypes.shape({
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     label: PropTypes.string,
+    subLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   }),
 ]);
 
@@ -265,7 +275,17 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
           </>
         ) : (
           <>
-            <DropItemLabel>{_getLabel(item)}</DropItemLabel>
+            {_getLabelDescription(item) ? (
+              <>
+                <DropItemLabel showDesc>{_getLabel(item)}</DropItemLabel>
+                <DropItemDescription>
+                  {_getLabelDescription(item)}
+                </DropItemDescription>
+              </>
+            ) : (
+              <DropItemLabel>{_getLabel(item)}</DropItemLabel>
+            )}
+
             {_getImage(item) && (
               <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
             )}

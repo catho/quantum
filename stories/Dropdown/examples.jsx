@@ -100,6 +100,40 @@ CustomLabel.CODE = `<Dropdown
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
 />`;
 
+const CustomLabelWithDescription = () => (
+  <Dropdown
+    label="With a description"
+    items={[
+      {
+        label: 'Foo',
+        description: 'Bar',
+        value: 'foo',
+      },
+      {
+        label: 'Bar',
+        description: 'Foo',
+        value: 'bar',
+      },
+    ]}
+  />
+);
+
+CustomLabelWithDescription.CODE = `<Dropdown
+  label="With a description"
+  items={[
+    {
+      label: 'Foo',
+      description: 'Bar',
+      value: 'foo',
+    },
+          {
+      label: 'Bar',
+      description: 'Foo',
+      value: 'bar',
+    },
+  ]}
+/>`;
+
 const RequiredMark = () => (
   <Dropdown
     required
@@ -237,6 +271,7 @@ items={[
 export {
   Simple,
   CustomLabel,
+  CustomLabelWithDescription,
   RequiredMark,
   WithError,
   Disabled,

@@ -10,6 +10,18 @@ const ITEMS = [
   { value: 'bazKey', label: 'baz' },
 ];
 const selectedItemObject = { value: 'bazKey', label: 'baz' };
+const itemsWithDescription = [
+  {
+    label: 'foo',
+    description: 'fooDesc',
+    value: 'fooKey',
+  },
+  {
+    label: 'baz',
+    description: 'bazDesc',
+    value: 'bazKey',
+  },
+];
 const itemsWithImage = [
   {
     label: 'Master Card',
@@ -37,6 +49,8 @@ describe('Dropdown component ', () => {
   const withSelectedItem = (
     <Dropdown items={ITEMS} selectedItem={selectedItemObject} />
   );
+
+  const withItemsDescription = <Dropdown items={itemsWithDescription} />;
 
   const withImage = (
     <Dropdown
@@ -70,6 +84,7 @@ describe('Dropdown component ', () => {
       renderer.create(<Dropdown autocomplete />).toJSON(),
     ).toMatchSnapshot();
     expect(renderer.create(withItems).toJSON()).toMatchSnapshot();
+    expect(renderer.create(withItemsDescription).toJSON()).toMatchSnapshot();
     expect(renderer.create(withSelectedItem).toJSON()).toMatchSnapshot();
     expect(renderer.create(withImage).toJSON()).toMatchSnapshot();
     expect(renderer.create(withName).toJSON()).toMatchSnapshot();
@@ -104,6 +119,18 @@ describe('Dropdown component ', () => {
     component.find('DropInput').simulate('click');
     expect(component.find('ArrowDown Icon').prop('name')).toEqual(
       'arrow_drop_down',
+    );
+  });
+
+  it('should show description in dropdown item when its passed on items prop', () => {
+    const firstItemWithDescription = itemsWithDescription[1];
+    const component = mount(withItemsDescription);
+    component.find('DropInput').simulate('click');
+
+    const firstDropItemDescription = component.find('span').last();
+
+    expect(firstDropItemDescription.text()).toEqual(
+      firstItemWithDescription.description,
     );
   });
 
