@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from '../shared';
 import Desktop from './sub-components/Desktop';
 import Mobile from './sub-components/Mobile';
+import isSSRRender from '../shared/isSSRRender';
 
 const Wrapper = styled.nav`
   align-items: center;
@@ -59,8 +60,7 @@ class Pagination extends React.Component {
     };
 
     const width =
-      (typeof window !== 'undefined' && window.innerWidth) ||
-      BREAKPOINTS.small.width;
+      (!isSSRRender() && window.innerWidth) || BREAKPOINTS.small.width;
 
     const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
 

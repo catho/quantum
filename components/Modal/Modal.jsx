@@ -9,6 +9,7 @@ import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import { hexToRgba } from '../shared';
 import { breakpoints, colors, spacing, components } from '../shared/theme';
+import isSSRRender from '../shared/isSSRRender';
 
 const closeButtonPadding = spacing.medium;
 
@@ -128,6 +129,8 @@ class Modal extends React.Component {
   }
 
   setBodyOverflow = value => {
+    if (isSSRRender()) return;
+
     const { body } = document;
     body.style.overflow = value;
   };
