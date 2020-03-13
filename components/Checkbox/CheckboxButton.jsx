@@ -57,10 +57,12 @@ const CheckboxButton = ({
   onChange: onChangeProp,
   ...props
 }) => {
-  const { error = errorProp, onChange = onChangeProp, inline } = useContext(
-    CheckboxGroupContext,
-  );
-
+  const {
+    error = errorProp,
+    onChange = onChangeProp,
+    inline,
+    size,
+  } = useContext(CheckboxGroupContext);
   const [_id] = useState(id || ID_GENERATOR.next().value);
 
   let checkSkin;
@@ -83,6 +85,7 @@ const CheckboxButton = ({
         skin={checkSkin}
         icon={icon}
         stroked={!checked}
+        size={size}
         $as="label"
       >
         <HiddenCheckbox

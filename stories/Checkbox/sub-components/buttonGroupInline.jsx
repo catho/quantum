@@ -2,7 +2,7 @@ import React from 'react';
 import CheckboxGroup from '../../../components/Checkbox/CheckboxGroup';
 
 const options = [
-  { name: 'with-icon', label: 'With an Icon', icon: 'thumb_up' },
+  { name: 'with-icon', label: 'With an Icon', icon: 'info' },
   { name: 'default', label: 'Default' },
   { name: 'checked', label: 'Checked', checked: true },
 ];
