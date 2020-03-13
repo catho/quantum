@@ -251,7 +251,7 @@ Radio.displayName = 'RadioGroup.Radio';
 Radio.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   label: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
