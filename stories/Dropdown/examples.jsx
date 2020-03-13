@@ -22,17 +22,33 @@ class Controlled extends React.Component {
         selectedItem={selectedItem}
         onChange={(item) => this.setState({ selectedItem: item })}
         items={[
-          { label: 'Amazonas', value: 'AM' },
-          { label: 'Bahia', value: 'BA' },
-          { label: 'Ceará', value: 'CE' },
-          { label: 'Goiás', value: 'GO' },
-          { label: 'Minas Gerais', value: 'MG' },
-          { label: 'Paraná', value: 'PR' },
-          { label: 'Pernambuco', value: 'PE' },
-          { label: 'Rio de Janeiro', value: 'RJ' },
-          { label: 'Rio Grande do Sul', value: 'RS' },
-          { label: 'Santa Catarina', value: 'SC' },
-          { label: 'São Paulo', value: 'SP' },
+          { label: 'Amazonas', value: 'AM', description: 'optional description' },
+          { label: 'Bahia', value: 'BA', description: 'optional description' },
+          { label: 'Ceará', value: 'CE', description: 'optional description' },
+          { label: 'Goiás', value: 'GO', description: 'optional description' },
+          {
+            label: 'Minas Gerais',
+            value: 'MG',
+            description: 'optional description',
+          },
+          { label: 'Paraná', value: 'PR', description: 'optional description' },
+          { label: 'Pernambuco', value: 'PE', description: 'optional description' },
+          {
+            label: 'Rio de Janeiro',
+            value: 'RJ',
+            description: 'optional description',
+          },
+          {
+            label: 'Rio Grande do Sul',
+            value: 'RS',
+            description: 'optional description',
+          },
+          {
+            label: 'Santa Catarina',
+            value: 'SC',
+            description: 'optional description',
+          },
+          { label: 'São Paulo', value: 'SP', description: 'optional description' },
         ]}
       />
     )
@@ -57,17 +73,45 @@ class Controlled extends React.Component {
         selectedItem={selectedItem}
         onChange={item => this.setState({ selectedItem: item })}
         items={[
-          { label: 'Amazonas', value: 'AM' },
-          { label: 'Bahia', value: 'BA' },
-          { label: 'Ceará', value: 'CE' },
-          { label: 'Goiás', value: 'GO' },
-          { label: 'Minas Gerais', value: 'MG' },
-          { label: 'Paraná', value: 'PR' },
-          { label: 'Pernambuco', value: 'PE' },
-          { label: 'Rio de Janeiro', value: 'RJ' },
-          { label: 'Rio Grande do Sul', value: 'RS' },
-          { label: 'Santa Catarina', value: 'SC' },
-          { label: 'São Paulo', value: 'SP' },
+          {
+            label: 'Amazonas',
+            value: 'AM',
+            description: 'optional description',
+          },
+          { label: 'Bahia', value: 'BA', description: 'optional description' },
+          { label: 'Ceará', value: 'CE', description: 'optional description' },
+          { label: 'Goiás', value: 'GO', description: 'optional description' },
+          {
+            label: 'Minas Gerais',
+            value: 'MG',
+            description: 'optional description',
+          },
+          { label: 'Paraná', value: 'PR', description: 'optional description' },
+          {
+            label: 'Pernambuco',
+            value: 'PE',
+            description: 'optional description',
+          },
+          {
+            label: 'Rio de Janeiro',
+            value: 'RJ',
+            description: 'optional description',
+          },
+          {
+            label: 'Rio Grande do Sul',
+            value: 'RS',
+            description: 'optional description',
+          },
+          {
+            label: 'Santa Catarina',
+            value: 'SC',
+            description: 'optional description',
+          },
+          {
+            label: 'São Paulo',
+            value: 'SP',
+            description: 'optional description',
+          },
         ]}
       />
     );

@@ -265,6 +265,11 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
           <>
             <SelectedItemLabel theme={theme}>
               {_getLabel(item)}
+              {_getLabelDescription(item) && (
+                <DropItemDescription>
+                  {_getLabelDescription(item)}
+                </DropItemDescription>
+              )}
             </SelectedItemLabel>
 
             {_getImage(item) ? (
