@@ -42,6 +42,7 @@ const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
 
 const StyledButton = styled.button`
   align-items: center;
+  box-sizing: border-box;
   display: flex;
   font-weight: bold;
   justify-content: center;

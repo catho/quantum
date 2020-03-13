@@ -45,6 +45,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -454,6 +455,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3771,7 +3773,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "isStatic": false,
                                       "lastClassName": "c11",
                                       "rules": Array [
-                                        "align-items:center;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
+                                        "align-items:center;box-sizing:border-box;display:flex;font-weight:bold;justify-content:center;border-radius:4px;",
                                         [Function],
                                         " ",
                                         [Function],

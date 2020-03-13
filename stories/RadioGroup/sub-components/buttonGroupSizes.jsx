@@ -18,12 +18,13 @@ class Group extends React.Component {
 
     return (
       <RadioGroup
-        name="error-example"
+        name="size-example"
         value={value}
         onChange={({ value: opValue }) => this.setState({ value: opValue })}
         options={options}
         type="button"
-        error="Example error message"
+        inline
+        size="large"
       />
     );
   }
@@ -34,7 +35,8 @@ const buttonGroup = {
   name="groceries"
   type="button"
   options={options}
-  error="Example error message"
+  inline
+  size="large"
 >
 ...
 </RadioGroup>`,
