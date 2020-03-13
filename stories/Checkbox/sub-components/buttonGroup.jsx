@@ -2,7 +2,7 @@ import React from 'react';
 import { CheckboxGroup } from '../../../components/Checkbox';
 
 const options = [
-  { name: 'with-icon', label: 'With an Icon', icon: 'thumb_up' },
+  { name: 'with-icon', label: 'With an Icon', icon: 'info' },
   { name: 'default', label: 'Default' },
   { name: 'checked', label: 'Checked', checked: true },
 ];
@@ -15,7 +15,7 @@ export default {
 /* or */
 
 <CheckboxGroup>
-  <CheckboxGroup.Button value="with-icon" icon="thumb_up">
+  <CheckboxGroup.Button value="with-icon" icon="info">
     With an Icon
   </CheckboxGroup.Button>
   <CheckboxGroup.Button value="default">
