@@ -1,7 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { colors } from '../../shared/theme';
-import isSSRRender from '../../shared/isSSRRender';
+import isSSR from '../../shared/isSSR';
 
 const Style = createGlobalStyle`
 * {
@@ -62,7 +62,7 @@ const NunitoFontFamily = createGlobalStyle`
 const Typography = () => (
   <>
     <Style />
-    {isSSRRender() ? (
+    {isSSR() ? (
       <link
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap"
         rel="stylesheet"
