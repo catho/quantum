@@ -1,3 +1,3 @@
-const isSSRRender = () => typeof window === 'undefined';
+const isSSR = () => typeof window === 'undefined';
 
 export default isSSRRender;
