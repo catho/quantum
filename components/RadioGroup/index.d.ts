@@ -1,16 +1,16 @@
 import React from 'react';
 
 export interface RadioProps {
-    disabled?: boolean;
-    error?: boolean;
-    children?: string;
-    label?: string;
-    onChange?: React.ChangeEventHandler<HTMLInputElement>;
-    theme?: {
-        colors?: object;
-        spacing?: object;
-    };
-    value: string;
+  disabled?: boolean;
+  error?: boolean;
+  children?: string | React.ReactNode[] | React.ReactNode;
+  label?: string;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  theme?: {
+    colors?: object;
+    spacing?: object;
+  };
+  value: string;
 }
 
 export type Radio = React.ComponentType<RadioProps>;
@@ -62,7 +62,7 @@ export interface RadioGroupProps {
 }
 
 export default class RadioGroup extends React.Component<RadioGroupProps> {
-    static Radio: Radio;
+  static Radio: Radio;
 
-    static Button: RadioButton;
+  static Button: RadioButton;
 }
