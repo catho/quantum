@@ -2936,3 +2936,177 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   </div>
 </div>
 `;
+
+exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
+  min-height: 48px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff;
+  color: #1250C4;
+  border: 2px solid #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c3:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+  border-color: #002F7B;
+}
+
+.c3:focus,
+.c3:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+}
+
+.c3:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #E5EDFC;
+}
+
+.c3 .c5 function (_ref5) {
+  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c3 .c5 function (_ref5) var fontSizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c4 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1 .c6 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <label
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      htmlFor="checkbox-button-24"
+      onClick={[Function]}
+      size="large"
+      type="button"
+    >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-24"
+        name="Foo"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      Foo
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <label
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      htmlFor="checkbox-button-25"
+      onClick={[Function]}
+      size="large"
+      type="button"
+    >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-25"
+        name="Bar"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      Bar
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <label
+      checked={false}
+      className="c2 c3"
+      disabled={false}
+      htmlFor="checkbox-button-26"
+      onClick={[Function]}
+      size="large"
+      type="button"
+    >
+      
+      <input
+        checked={false}
+        className="c4"
+        disabled={false}
+        id="checkbox-button-26"
+        name="Baz"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+      Baz
+    </label>
+  </div>
+</div>
+`;

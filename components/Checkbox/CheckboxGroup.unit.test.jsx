@@ -263,6 +263,17 @@ describe('<CheckboxGroup />', () => {
       );
       expect(renderer.create(component)).toMatchSnapshot();
     });
+
+    it('with size <CheckboxGroup.Button />', () => {
+      const component = (
+        <CheckboxGroup size="large">
+          <CheckboxGroup.Button name="Foo">Foo</CheckboxGroup.Button>
+          <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
+          <CheckboxGroup.Button name="Baz">Baz</CheckboxGroup.Button>
+        </CheckboxGroup>
+      );
+      expect(renderer.create(component)).toMatchSnapshot();
+    });
   });
 
   _childrenTest(CheckboxGroup.Checkbox);
