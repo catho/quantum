@@ -66,6 +66,13 @@ stories.add('Radio group', () => (
             <RadioGroupExample {...samples.simpleRadioGroup} />
           </Row>
           <br />
+          <p>... and can use with children </p>
+          <br />
+
+          <Row>
+            <RadioGroupExample {...samples.childrenRadio} />
+          </Row>
+          <br />
 
           <p>
             Also, you can set some properties to <code>RadioGroup</code>, such
