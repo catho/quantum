@@ -23,5 +23,14 @@ describe('<RadioGroup.Radio />', () => {
       const component = <Radio value="Foo">Foo</Radio>;
       expect(renderer.create(component).toJSON()).toMatchSnapshot();
     });
+
+    it('children with element', () => {
+      const component = (
+        <Radio value="Foo">
+          <span>Foo</span>
+        </Radio>
+      );
+      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+    });
   });
 });
