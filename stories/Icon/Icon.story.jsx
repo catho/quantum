@@ -25,7 +25,6 @@ const exampleIcons = [
   <Icon name="info" />,
   <Icon name="clear" />,
   <Icon name="search" />,
-  <Icon name="info" />,
   <Icon name="error" />,
   <Icon name="visibility_off" />,
   <Icon name="visibility" />,
@@ -40,7 +39,6 @@ const exampleIcons = [
 const exampleCode = `  <Icon name="info" />
   <Icon name="clear" />
   <Icon name="search" />
-  <Icon name="info" />
   <Icon name="error" />
   <Icon name="visibility_off" />
   <Icon name="visibility" />
@@ -50,7 +48,15 @@ const exampleCode = `  <Icon name="info" />
   <Icon name="emoji_people" skin={colors.primary['700']} />
   <Icon name="emoji_people" skin={colors.warning['900']} />
   <Icon name="emoji_people" skin={colors.error['300']} />
+`;
+
+const exampleIncorrectIcons = [
+  <Icon name="bike" />,
+  <Icon name="emoji_smile" skin={colors.primary['900']} />,
 ];
+
+const exampleIncorrectCode = `  <Icon name="bike" />
+  <Icon name="emoji_smile" skin={colors.primary['900']} />
 `;
 
 const importIcon = `import { Icon } from '@catho/quantum';`;
@@ -78,12 +84,33 @@ storiesOf('Foundation', module).add('Icons', () => (
             to include icon fonts.
           </p>
           <small>
-            {exampleIcons.map(icon => (
-              <IconWrapper key={icon.props.name}>{icon}</IconWrapper>
+            {exampleIcons.map((icon, index) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <IconWrapper key={`${icon.props.name}_${index}`}>
+                {icon}
+              </IconWrapper>
             ))}
           </small>
 
           <CodeExample code={exampleCode} />
+
+          <Title as="h2">Unavailable Icons</Title>
+
+          <p>
+            If the string passed in the `Icon` is unavailable in the style guide
+            catalog, it is going to display only the string wrapped in a `span`
+            element and no icon will render.
+          </p>
+          <small>
+            {exampleIncorrectIcons.map((icon, index) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <IconWrapper key={`${icon.props.name}_${index}`}>
+                {icon}
+              </IconWrapper>
+            ))}
+          </small>
+
+          <CodeExample code={exampleIncorrectCode} />
         </StoryContainer>
       </Tab>
 
