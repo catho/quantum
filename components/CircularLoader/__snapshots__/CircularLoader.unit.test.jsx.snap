@@ -15,8 +15,8 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
 }
 
 .c2 {
-  -webkit-animation: dPEoa 1.4s ease-in-out infinite;
-  animation: dPEoa 1.4s ease-in-out infinite;
+  -webkit-animation: fRiixh 1.4s ease-in-out infinite;
+  animation: fRiixh 1.4s ease-in-out infinite;
   cx: 44px;
   cy: 44px;
   fill: none;
@@ -30,8 +30,8 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
 }
 
 .c0 {
-  -webkit-animation: cZxgpV 1.4s linear infinite;
-  animation: cZxgpV 1.4s linear infinite;
+  -webkit-animation: GLFYz 1.4s linear infinite;
+  animation: GLFYz 1.4s linear infinite;
   position: relative;
   height: 16px;
   width: 16px;

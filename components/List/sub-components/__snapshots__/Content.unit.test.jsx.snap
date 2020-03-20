@@ -22,69 +22,17 @@ exports[`<Content /> Should match the snapshot 1`] = `
   subheader=""
 >
   <Content>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Content__ContentBox-sc-1fmj11p-0",
-            "isStatic": true,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:flex;flex-direction:column;",
-            ],
-          },
-          "displayName": "Content",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Content__ContentBox-sc-1fmj11p-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
-      >
-        <List.Header>
-          <Header>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Header__Title-e8ruju-0",
-                    "isStatic": true,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "margin-top:4px;margin-bottom:4px;",
-                    ],
-                  },
-                  "displayName": "Header",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Header__Title-e8ruju-0",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c1"
-              />
-            </StyledComponent>
-          </Header>
-        </List.Header>
-      </div>
-    </StyledComponent>
+      <List.Header>
+        <Header>
+          <span
+            className="c1"
+          />
+        </Header>
+      </List.Header>
+    </div>
   </Content>
 </List.Content>
 `;

@@ -115,7 +115,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-0"
@@ -327,7 +327,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-1"
@@ -542,7 +542,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-2"
@@ -766,7 +766,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-3"
@@ -860,7 +860,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   </div>
   
   <span
-    className="c4"
+    className="ErrorMessage-sc-19jcdrm-0 c4"
   >
     Error message
   </span>
@@ -982,7 +982,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={true}
       id="dropdown-4"
@@ -1207,7 +1207,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c3"
+      className="TextInput-ado1el-0 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-5"
@@ -1441,7 +1441,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c4"
+      className="TextInput-ado1el-0 c4"
       data-toggle={true}
       disabled={false}
       id="dropdown-6"
@@ -1664,7 +1664,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         aria-controls={null}
         aria-labelledby="downshift-7-label"
         autoComplete="off"
-        className="c2"
+        className="TextInput-ado1el-0 c2"
         disabled={false}
         id="dropdown-7"
         onBlur={[Function]}
@@ -1879,7 +1879,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-8"
@@ -2091,7 +2091,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-9"
@@ -2316,7 +2316,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c3"
+      className="TextInput-ado1el-0 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-10"
@@ -2528,7 +2528,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="c2"
+      className="TextInput-ado1el-0 c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-11"
