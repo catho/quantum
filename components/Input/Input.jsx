@@ -27,6 +27,7 @@ const InputIcon = styled(Icon)`
   }) => `
     right: ${medium}px;
     bottom: ${xsmall * 1.25}px;
+    width: ${baseFontSize * 1.5}px;
   `}
 `;
 

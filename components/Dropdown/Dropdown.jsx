@@ -19,6 +19,7 @@ const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
 const DROPITEM_IMAGE_SIZE = '24px';
+const ICON_DEFAULT_SIZE = `${baseFontSize * 1.5}px`;
 
 const DropInput = styled(TextInput)`
   align-items: center;
@@ -52,6 +53,7 @@ const ArrowDown = styled(Icon).attrs({
   name: 'arrow_drop_down',
 })`
   pointer-events: none;
+  width: ${ICON_DEFAULT_SIZE};
 
   ${({
     selectedItem,
@@ -71,6 +73,7 @@ const ArrowUp = styled(Icon).attrs({
   name: 'arrow_drop_up',
 })`
   pointer-events: none;
+  width: ${ICON_DEFAULT_SIZE};
 
   ${({
     selectedItem,
