@@ -137,6 +137,15 @@ stories.add('Radio group', () => (
           <Row>
             <RadioGroupExample {...samples.buttonGroupDisabled} />
           </Row>
+
+          <br />
+
+          <p>With size selected.</p>
+          <br />
+
+          <Row>
+            <RadioGroupExample {...samples.buttonGroupSizes} />
+          </Row>
         </StoryContainer>
       </Tab>
       <Tab title="API">

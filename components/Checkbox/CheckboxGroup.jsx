@@ -28,7 +28,7 @@ class CheckboxGroup extends React.Component {
   };
 
   render() {
-    const { children, error, options, type, inline, theme } = this.props;
+    const { children, error, options, type, inline, theme, size } = this.props;
     const ItemType = type === 'checkbox' ? Checkbox : CheckboxButton;
 
     const checkboxes =
@@ -42,6 +42,7 @@ class CheckboxGroup extends React.Component {
             error: Boolean(error),
             onChange: this._onChange,
             inline,
+            size,
           }}
         >
           {checkboxes}
@@ -73,6 +74,7 @@ CheckboxGroup.propTypes = {
       value: PropTypes.string,
     }),
   ),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   type: PropTypes.oneOf(['checkbox', 'button']),
   theme: PropTypes.shape({
     colors: PropTypes.object,
@@ -89,6 +91,7 @@ CheckboxGroup.defaultProps = {
   inline: false,
   onChange: () => {},
   options: [],
+  size: 'medium',
   type: 'checkbox',
   theme: {
     colors,

@@ -95,6 +95,7 @@ class Radio extends React.Component {
       inline,
       skin,
       theme,
+      size,
       ...rest
     } = this.props;
 
@@ -108,6 +109,7 @@ class Radio extends React.Component {
           skin={error ? 'error' : skin}
           stroked={!checked}
           theme={theme}
+          size={size}
           $as="label"
         >
           <HiddenInput
@@ -136,6 +138,7 @@ Radio.defaultProps = {
   checked: false,
   children: undefined,
   skin: 'primary',
+  size: 'medium',
   disabled: false,
   error: false,
   icon: undefined,
@@ -157,6 +160,7 @@ Radio.propTypes = {
   checked: PropTypes.bool,
   children: PropTypes.string,
   skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   icon: PropTypes.string,

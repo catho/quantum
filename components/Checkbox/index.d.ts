@@ -21,17 +21,18 @@ export class Checkbox extends React.Component<CheckboxProps> {}
 export type CheckboxType = React.ComponentType<CheckboxProps>;
 
 export interface CheckboxButtonProps {
-    children?: React.ReactNode[] | React.ReactNode;
-    skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
-    checked?: boolean;
-    disabled?: boolean;
-    error?: string;
-    id?: string;
-    icon?: string;
-    label?: string;
-    name: string;
-    onChange?: React.ChangeEventHandler<HTMLInputElement>;
-    value?: string;
+  children?: React.ReactNode[] | React.ReactNode;
+  skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
+  size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
+  checked?: boolean;
+  disabled?: boolean;
+  error?: string;
+  id?: string;
+  icon?: string;
+  label?: string;
+  name: string;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  value?: string;
 }
 
 export type CheckboxButton = React.ComponentType<CheckboxButtonProps>;
@@ -49,6 +50,7 @@ export interface CheckboxGroupProps {
     inline?: boolean;
     onChange?: (items?: Options, event?: React.ChangeEvent<HTMLInputElement>) => void;
     options?: Options;
+    size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
     type: 'checkbox' | 'button';
     theme?: {
         colors?: object;

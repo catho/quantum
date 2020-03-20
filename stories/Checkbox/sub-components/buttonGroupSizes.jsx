@@ -7,19 +7,23 @@ const options = [
   { name: 'checked', label: 'Checked', checked: true },
 ];
 
-export default {
+const buttonGroup = {
   code: `<CheckboxGroup
-  name="groceries"
+  name="sizes-example"
   options={options}
   type="button"
-  error="Example error message"
+  size="large"
+  inline
 />`,
   component: (
     <CheckboxGroup
-      name="error-example"
+      name="sizes-example"
       options={options}
       type="button"
-      error="Example error message"
+      size="large"
+      inline
     />
   ),
 };
+
+export default buttonGroup;

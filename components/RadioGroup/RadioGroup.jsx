@@ -15,6 +15,7 @@ const Group = styled(FieldGroup).attrs({
 
 const RadioGroup = ({
   type,
+  size,
   children,
   error,
   inline,
@@ -27,6 +28,7 @@ const RadioGroup = ({
 }) => {
   const commonProps = {
     name,
+    size,
     error: Boolean(error),
     onChange,
     inline,
@@ -63,6 +65,7 @@ RadioGroup.Button = RadioButton;
 
 RadioGroup.propTypes = {
   type: PropTypes.oneOf(['radio', 'button']),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
@@ -91,6 +94,7 @@ RadioGroup.propTypes = {
  */
 RadioGroup.defaultProps = {
   type: 'radio',
+  size: 'medium',
   children: undefined,
   error: undefined,
   inline: false,

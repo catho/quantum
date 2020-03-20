@@ -7,7 +7,7 @@ class ControledGroup extends React.Component {
 
     this.state = {
       options: [
-        { name: 'with-icon', label: 'With an Icon', icon: 'thumb_up' },
+        { name: 'with-icon', label: 'With an Icon', icon: 'info' },
         { name: 'default', label: 'Default' },
         { name: 'checked', label: 'Checked', checked: true },
       ],
@@ -37,7 +37,7 @@ export default {
 
       this.state = {
         options: [
-          { name: 'with-icon', label: 'With an Icon', icon: 'thumb_up' },
+          { name: 'with-icon', label: 'With an Icon', icon: 'info' },
           { name: 'default', label: 'Default' },
           { name: 'checked', label: 'Checked', checked: true },
         ]
