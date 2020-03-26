@@ -1557,6 +1557,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -4195,10 +4196,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -4426,10 +4427,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -4670,10 +4671,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -4904,10 +4905,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -5805,6 +5806,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -8443,10 +8445,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -8674,10 +8676,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -8918,10 +8920,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -9152,10 +9154,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -10085,6 +10087,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -12723,10 +12726,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -12954,10 +12957,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -13198,10 +13201,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -13432,10 +13435,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -14397,6 +14400,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -17035,10 +17039,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -17266,10 +17270,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -17510,10 +17514,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -17744,10 +17748,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -18741,6 +18745,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -21379,10 +21384,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -21610,10 +21615,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -21854,10 +21859,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -22088,10 +22093,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -23085,6 +23090,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -25723,10 +25729,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -25954,10 +25960,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -26198,10 +26204,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -26432,10 +26438,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -27423,6 +27429,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -30061,10 +30068,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -30292,10 +30299,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -30536,10 +30543,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -30770,10 +30777,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -31761,6 +31768,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       class="MuiSvgIcon-root c3 c4"
                       focusable="false"
                       role="presentation"
+                      style="font-size: 24px;"
                       theme="[object Object]"
                       viewBox="0 0 24 24"
                     >
@@ -34399,10 +34407,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                   >
                                     <ForwardRef
                                       className="c4 c5"
-                                      size="medium"
                                       style={
                                         Object {
                                           "color": "",
+                                          "fontSize": 24,
                                         }
                                       }
                                       theme={
@@ -34630,10 +34638,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     >
                                       <WithStyles(ForwardRef(SvgIcon))
                                         className="c4 c5"
-                                        size="medium"
                                         style={
                                           Object {
                                             "color": "",
+                                            "fontSize": 24,
                                           }
                                         }
                                         theme={
@@ -34874,10 +34882,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "root": "MuiSvgIcon-root",
                                             }
                                           }
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -35108,10 +35116,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                             className="MuiSvgIcon-root c4 c5"
                                             focusable="false"
                                             role="presentation"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={

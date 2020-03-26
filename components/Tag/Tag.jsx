@@ -103,7 +103,7 @@ const CloseButton = styled.button`
   }) => `margin-left: ${xxsmall}px;`}
 
   ${CloseIcon} {
-    font-size: ${iconSize};
+    font-size: ${iconSize} !important;
     color: ${props => _colors(props).text};
   }
 `;

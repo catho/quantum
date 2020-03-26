@@ -10,10 +10,14 @@ describe('<Icon />', () => {
     const withColor = renderer
       .create(<Icon name="star" skin="tomato" />)
       .toJSON();
+    const withSize = renderer
+      .create(<Icon name="search" size="large" />)
+      .toJSON();
 
     expect(tree3D).toMatchSnapshot();
     expect(treeFilter).toMatchSnapshot();
     expect(treeArrow).toMatchSnapshot();
     expect(withColor).toMatchSnapshot();
+    expect(withSize).toMatchSnapshot();
   });
 });

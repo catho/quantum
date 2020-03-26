@@ -32,6 +32,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           style={
             Object {
               \\"color\\": \\"\\",
+              \\"fontSize\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -73,6 +74,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           style={
             Object {
               \\"color\\": \\"\\",
+              \\"fontSize\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -114,6 +116,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           style={
             Object {
               \\"color\\": \\"\\",
+              \\"fontSize\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -531,6 +534,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -571,6 +575,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -611,6 +616,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -755,6 +761,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -795,6 +802,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -835,6 +843,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1179,10 +1188,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
         className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1446,10 +1455,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
         className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2070,6 +2079,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2138,6 +2148,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2356,6 +2367,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2396,6 +2408,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2436,6 +2449,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2654,6 +2668,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2694,6 +2709,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2734,6 +2750,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"

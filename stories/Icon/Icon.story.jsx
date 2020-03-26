@@ -22,7 +22,9 @@ const IconWrapper = styled.div`
 `;
 
 const exampleIcons = [
+  <Icon name="info" size="small" />,
   <Icon name="info" />,
+  <Icon name="info" size="large" />,
   <Icon name="clear" />,
   <Icon name="search" />,
   <Icon name="error" />,
@@ -34,9 +36,13 @@ const exampleIcons = [
   <Icon name="emoji_people" skin={colors.primary['700']} />,
   <Icon name="emoji_people" skin={colors.warning['900']} />,
   <Icon name="emoji_people" skin={colors.error['300']} />,
+  <Icon name="emoji_people" skin={colors.error['300']} size="large" />,
 ];
 
-const exampleCode = `  <Icon name="info" />
+const exampleCode = `  
+  <Icon name="info" size="small" />,
+  <Icon name="info" />,
+  <Icon name="info" size="large" />,
   <Icon name="clear" />
   <Icon name="search" />
   <Icon name="error" />
@@ -48,6 +54,7 @@ const exampleCode = `  <Icon name="info" />
   <Icon name="emoji_people" skin={colors.primary['700']} />
   <Icon name="emoji_people" skin={colors.warning['900']} />
   <Icon name="emoji_people" skin={colors.error['300']} />
+  <Icon name="emoji_people" skin={colors.error['300']} size="large" />,
 `;
 
 const exampleIncorrectIcons = [

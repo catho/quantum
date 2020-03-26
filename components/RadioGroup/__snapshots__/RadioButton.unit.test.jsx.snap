@@ -309,6 +309,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -600,6 +601,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -1005,6 +1007,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={

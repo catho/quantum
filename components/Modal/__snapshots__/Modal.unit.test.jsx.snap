@@ -658,6 +658,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 class="MuiSvgIcon-root c12 c13"
                 focusable="false"
                 role="presentation"
+                style="font-size: 24px;"
                 theme="[object Object]"
                 viewBox="0 0 24 24"
               >
@@ -940,6 +941,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     class="MuiSvgIcon-root c12 c13"
                     focusable="false"
                     role="presentation"
+                    style="font-size: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
                   >
@@ -4647,10 +4649,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       >
                                         <ForwardRef
                                           className="c12 c13"
-                                          size="medium"
                                           style={
                                             Object {
                                               "color": "",
+                                              "fontSize": 24,
                                             }
                                           }
                                           theme={
@@ -4854,10 +4856,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                         >
                                           <WithStyles(ForwardRef(SvgIcon))
                                             className="c12 c13"
-                                            size="medium"
                                             style={
                                               Object {
                                                 "color": "",
+                                                "fontSize": 24,
                                               }
                                             }
                                             theme={
@@ -5074,10 +5076,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "root": "MuiSvgIcon-root",
                                                 }
                                               }
-                                              size="medium"
                                               style={
                                                 Object {
                                                   "color": "",
+                                                  "fontSize": 24,
                                                 }
                                               }
                                               theme={
@@ -5284,10 +5286,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                 className="MuiSvgIcon-root c12 c13"
                                                 focusable="false"
                                                 role="presentation"
-                                                size="medium"
                                                 style={
                                                   Object {
                                                     "color": "",
+                                                    "fontSize": 24,
                                                   }
                                                 }
                                                 theme={

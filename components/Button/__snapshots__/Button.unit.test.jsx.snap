@@ -920,10 +920,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
     className="MuiSvgIcon-root c1 c2"
     focusable="false"
     role="presentation"
-    size="medium"
     style={
       Object {
         "color": "",
+        "fontSize": 24,
       }
     }
     theme={
@@ -1282,10 +1282,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
     className="MuiSvgIcon-root c1 c2"
     focusable="false"
     role="presentation"
-    size="medium"
     style={
       Object {
         "color": "",
+        "fontSize": 24,
       }
     }
     theme={
@@ -1644,10 +1644,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
     className="MuiSvgIcon-root c1 c2"
     focusable="false"
     role="presentation"
-    size="medium"
     style={
       Object {
         "color": "",
+        "fontSize": 24,
       }
     }
     theme={
@@ -2006,10 +2006,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
     className="MuiSvgIcon-root c1 c2"
     focusable="false"
     role="presentation"
-    size="medium"
     style={
       Object {
         "color": "",
+        "fontSize": 24,
       }
     }
     theme={

@@ -162,10 +162,10 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
         className="MuiSvgIcon-root c7 c8"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -562,6 +562,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -585,10 +586,10 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
         className="MuiSvgIcon-root c8 c9"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -992,10 +993,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         className="MuiSvgIcon-root c7 c8"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1416,10 +1417,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         className="MuiSvgIcon-root c7 c8"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1857,10 +1858,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         className="MuiSvgIcon-root c7 c8"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2315,10 +2316,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         className="MuiSvgIcon-root c7 c8"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2790,10 +2791,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
         className="MuiSvgIcon-root c7 c8"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
