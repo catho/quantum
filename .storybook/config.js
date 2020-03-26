@@ -4,6 +4,7 @@ import 'loki/configure-react';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
 import { UiStyle } from '@catho/quantum-storybook-ui';
+import GlobalStyle from '../components/GlobalStyle';
 import stories from './stories';
 
 addDecorator(
@@ -16,9 +17,16 @@ addDecorator(
 );
 
 const CSSDecorator = storyFn => <>{storyFn()}</>;
+const FontDecorator = storyFn => (
+  <>
+    <GlobalStyle />
+    {storyFn()}
+  </>
+);
 
 addDecorator(UiStyle);
 addDecorator(CSSDecorator);
+addDecorator(FontDecorator);
 
 const reqStories = require.context('../stories', true, /.story.jsx?$/);
 
