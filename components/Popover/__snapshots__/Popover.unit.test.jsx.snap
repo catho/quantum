@@ -424,11 +424,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c1:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -818,11 +820,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c0:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -3361,11 +3365,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c1:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -3755,11 +3761,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c0:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -6310,11 +6318,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #dcedc8 color:#004D40;
+  background-color: #dcedc8;
+  color: #004D40;
 }
 
 .c1:before {
-  color: #dcedc8 font-size:16px;
+  color: #dcedc8;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -6720,11 +6730,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #dcedc8 color:#004D40;
+  background-color: #dcedc8;
+  color: #004D40;
 }
 
 .c0:before {
-  color: #dcedc8 font-size:16px;
+  color: #dcedc8;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -9291,11 +9303,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffefd6 color:#424242;
+  background-color: #ffefd6;
+  color: #424242;
 }
 
 .c1:before {
-  color: #ffefd6 font-size:16px;
+  color: #ffefd6;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -9717,11 +9731,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffefd6 color:#424242;
+  background-color: #ffefd6;
+  color: #424242;
 }
 
 .c0:before {
-  color: #ffefd6 font-size:16px;
+  color: #ffefd6;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -12304,11 +12320,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #fff5f5 color:#424242;
+  background-color: #fff5f5;
+  color: #424242;
 }
 
 .c1:before {
-  color: #fff5f5 font-size:16px;
+  color: #fff5f5;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -12746,11 +12764,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #fff5f5 color:#424242;
+  background-color: #fff5f5;
+  color: #424242;
 }
 
 .c0:before {
-  color: #fff5f5 font-size:16px;
+  color: #fff5f5;
+  font-size: 16px;
   position: absolute;
   content: '▼';
   left: 50%;
@@ -15337,11 +15357,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c1:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   top: -4px;
   content: '▲';
@@ -15779,11 +15801,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c0:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   top: -4px;
   content: '▲';
@@ -18370,11 +18394,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c1:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   bottom: 50%;
   content: '▶';
@@ -18809,11 +18835,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c0:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   bottom: 50%;
   content: '▶';
@@ -21397,11 +21425,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c1:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   bottom: 50%;
   content: '◀';
@@ -21836,11 +21866,13 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   z-index: 100;
-  background-color: #ffffff color:#424242;
+  background-color: #ffffff;
+  color: #424242;
 }
 
 .c0:before {
-  color: #ffffff font-size:16px;
+  color: #ffffff;
+  font-size: 16px;
   position: absolute;
   bottom: 50%;
   content: '◀';
