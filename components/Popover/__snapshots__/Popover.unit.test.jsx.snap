@@ -355,6 +355,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -751,6 +752,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3296,6 +3298,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3692,6 +3695,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6249,6 +6253,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6661,6 +6666,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9234,6 +9240,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9662,6 +9669,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12251,6 +12259,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12695,6 +12704,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15252,6 +15262,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15696,6 +15707,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18289,6 +18301,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18730,6 +18743,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21320,6 +21334,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21761,6 +21776,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

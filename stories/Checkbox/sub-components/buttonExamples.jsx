@@ -11,6 +11,7 @@ import buttonGroupError from './buttonGroupError';
 import buttonGroupDisabled from './buttonGroupDisabled';
 import buttonGroupInline from './buttonGroupInline';
 import buttonGroupControlled from './buttonGroupControlled';
+import buttonGroupSizes from './buttonGroupSizes';
 
 const GroupExample = ({ code, component }) => (
   <>
@@ -75,6 +76,14 @@ export default (
 
     <Row>
       <GroupExample {...buttonGroupDisabled} />
+    </Row>
+    <br />
+
+    <p>With size selected.</p>
+    <br />
+
+    <Row>
+      <GroupExample {...buttonGroupSizes} />
     </Row>
   </StoryContainer>
 );

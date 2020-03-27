@@ -25,7 +25,7 @@ const exampleTab = (
         <Title as="h2">Centered button</Title>
         <Example
           component={
-            <Button icon="face" center skin="success">
+            <Button center skin="success">
               Centered
             </Button>
           }
@@ -55,8 +55,8 @@ const exampleTab = (
           <Col tablet={3}>
             <Example
               component={
-                <Button skin="secondary" icon="sync">
-                  Sync
+                <Button skin="secondary" icon="accessible_forward">
+                  Accessible
                 </Button>
               }
             />
@@ -64,8 +64,8 @@ const exampleTab = (
           <Col tablet={3}>
             <Example
               component={
-                <Button skin="error" icon="camera">
-                  Screenshot
+                <Button skin="error" icon="error">
+                  Error
                 </Button>
               }
             />
@@ -76,8 +76,8 @@ const exampleTab = (
           <Col tablet={3}>
             <Example
               component={
-                <Button size="large" icon="card_giftcard">
-                  Gift
+                <Button size="large" icon="credit_card">
+                  Credit Card
                 </Button>
               }
             />
@@ -85,8 +85,8 @@ const exampleTab = (
           <Col tablet={3}>
             <Example
               component={
-                <Button size="large" skin="secondary" icon="block" disabled>
-                  Not allowed
+                <Button size="large" skin="secondary" icon="lock" disabled>
+                  Locked
                 </Button>
               }
             />
@@ -94,8 +94,8 @@ const exampleTab = (
           <Col tablet={3}>
             <Example
               component={
-                <Button size="large" skin="warning" icon="play_arrow">
-                  Play
+                <Button size="large" skin="warning" icon="done">
+                  Done
                 </Button>
               }
             />

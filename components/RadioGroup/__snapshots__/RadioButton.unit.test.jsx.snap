@@ -17,6 +17,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,6 +121,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -223,6 +225,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -508,6 +511,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -793,6 +797,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -896,6 +901,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1197,6 +1203,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1315,6 +1322,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

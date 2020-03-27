@@ -2,7 +2,7 @@ import React from 'react';
 import RadioGroup from '../../../components/RadioGroup';
 
 const options = [
-  { value: 'with-icon', label: 'With an Icon', icon: 'thumb_up' },
+  { value: 'with-icon', label: 'With an Icon', icon: 'info' },
   { value: 'default', label: 'Default' },
 ];
 
@@ -40,7 +40,7 @@ const buttonGroup = {
 /* or */
 
 <RadioGroup name="groceries">
-  <RadioGroup.Button value="with-icon" icon="thumb_up">
+  <RadioGroup.Button value="with-icon" icon="info">
     With an Icon
   </RadioGroup.Button>
   <RadioGroup.Button value="default">

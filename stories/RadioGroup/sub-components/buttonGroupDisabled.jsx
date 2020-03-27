@@ -5,7 +5,7 @@ const options = [
   {
     value: 'with-icon',
     label: 'With an Icon',
-    icon: 'thumb_up',
+    icon: 'info',
     disabled: true,
   },
   { value: 'default-option', label: 'Default', disabled: true },

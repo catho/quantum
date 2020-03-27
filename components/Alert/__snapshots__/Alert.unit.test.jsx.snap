@@ -11,6 +11,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -417,6 +418,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -839,6 +841,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1245,6 +1248,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1668,6 +1672,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2108,6 +2113,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2565,6 +2571,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

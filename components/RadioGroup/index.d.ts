@@ -19,6 +19,7 @@ export interface RadioButtonProps {
   checked?: boolean;
   children?: string;
   skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
+  size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
   disabled?: boolean;
   error?: boolean;
   icon?: string;
@@ -41,6 +42,7 @@ export type RadioButton = React.ComponentType<RadioButtonProps>;
 
 export interface RadioGroupProps {
   type?: 'radio' | 'button';
+  size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
   options?: Array<{
     label?: React.ReactNode;
     value: string;

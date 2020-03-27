@@ -19,7 +19,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"Button__StyledButton-sc-1ovnfsw-1 bWGtZA RadioButton-sc-1q7g63p-3 eKLvGD\\"
+        className=\\"Button__StyledButton-sc-1ovnfsw-1 ktCRst RadioButton-sc-1q7g63p-3 eKLvGD\\"
         disabled={false}
 -       htmlFor=\\"radio-button-9\\"
 +       htmlFor=\\"radio-button-12\\"
@@ -47,7 +47,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"Button__StyledButton-sc-1ovnfsw-1 bWGtZA RadioButton-sc-1q7g63p-3 eKLvGD\\"
+        className=\\"Button__StyledButton-sc-1ovnfsw-1 ktCRst RadioButton-sc-1q7g63p-3 eKLvGD\\"
         disabled={false}
 -       htmlFor=\\"radio-button-10\\"
 +       htmlFor=\\"radio-button-13\\"
@@ -75,7 +75,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"Button__StyledButton-sc-1ovnfsw-1 bWGtZA RadioButton-sc-1q7g63p-3 eKLvGD\\"
+        className=\\"Button__StyledButton-sc-1ovnfsw-1 ktCRst RadioButton-sc-1q7g63p-3 eKLvGD\\"
         disabled={false}
 -       htmlFor=\\"radio-button-11\\"
 +       htmlFor=\\"radio-button-14\\"
@@ -118,6 +118,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -287,6 +288,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -548,6 +550,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      size="medium"
       type="radio"
       value="Foo"
     />
@@ -565,6 +568,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      size="medium"
       type="radio"
       value="Bar"
     />
@@ -582,6 +586,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      size="medium"
       type="radio"
       value="Baz"
     />
@@ -610,6 +615,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -856,6 +862,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       disabled={false}
       name="foo"
       onChange={[Function]}
+      size="medium"
       type="radio"
       value="Foo"
     />
@@ -873,6 +880,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       disabled={false}
       name="foo"
       onChange={[Function]}
+      size="medium"
       type="radio"
       value="Bar"
     />
@@ -890,6 +898,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       disabled={false}
       name="foo"
       onChange={[Function]}
+      size="medium"
       type="radio"
       value="Baz"
     />
@@ -1030,6 +1039,7 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      size="medium"
       type="radio"
       value="Foo"
     />

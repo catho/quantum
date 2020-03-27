@@ -2,7 +2,7 @@ import React from 'react';
 import RadioGroup from '../../../components/RadioGroup';
 
 const options = [
-  { value: 'with-icon', label: 'With an Icon', icon: 'thumb_up' },
+  { value: 'with-icon', label: 'With an Icon', icon: 'info' },
   { value: 'default', label: 'Default' },
 ];
 
