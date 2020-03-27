@@ -45,6 +45,7 @@ import VerifiedUser from '@material-ui/icons/VerifiedUser';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
+import Home from '@material-ui/icons/Home';
 
 import icons from '../shared/icons';
 
@@ -95,6 +96,7 @@ const Icon = ({ name, skin, ...props }) => {
     visibility_off: VisibilityOff,
     visibility: Visibility,
     warning: Warning,
+    home: Home,
   };
 
   if (!components[name]) return <span>{name}</span>;
