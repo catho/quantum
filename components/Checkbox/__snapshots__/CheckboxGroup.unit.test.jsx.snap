@@ -150,7 +150,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 gsAeiM\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 FExFu\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-12\\"
 +       htmlFor=\\"checkbox-button-15\\"
@@ -179,7 +179,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 gsAeiM\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 FExFu\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-13\\"
 +       htmlFor=\\"checkbox-button-16\\"
@@ -208,7 +208,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 gsAeiM\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 FExFu\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-14\\"
 +       htmlFor=\\"checkbox-button-17\\"
@@ -281,15 +281,15 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   background-color: #E5EDFC;
 }
 
-.c3 .c5 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c5 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -909,15 +909,15 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   background-color: #E5EDFC;
 }
 
-.c3 .c5 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c5 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1039,8 +1039,9 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] = `
 .c5 {
-  pointer-events: none;
   margin-right: 8px;
+  pointer-events: none;
+  width: 24px;
 }
 
 .c3 {
@@ -1088,51 +1089,51 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   background-color: #E5EDFC;
 }
 
-.c3 .c4 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c4 function (_ref5) var fontSizes = {
+.c3 .c4 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c7 .c4 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c7 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c4 function (_ref5) var fontSizes = {
+.c7 .c4 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c8 .c4 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c8 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .c4 function (_ref5) var fontSizes = {
+.c8 .c4 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c9 .c4 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c9 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c4 function (_ref5) var fontSizes = {
+.c9 .c4 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1739,15 +1740,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   background-color: #fff5f5;
 }
 
-.c3 .c6 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c6 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c6 function (_ref5) var fontSizes = {
+.c3 .c6 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1918,15 +1919,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   background-color: #E5EDFC;
 }
 
-.c6 .c8 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c6 .c8 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .c8 function (_ref5) var fontSizes = {
+.c6 .c8 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1959,15 +1960,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c3 .c8 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c8 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c8 function (_ref5) var fontSizes = {
+.c3 .c8 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2000,15 +2001,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c7 .c8 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c7 .c8 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .c8 function (_ref5) var fontSizes = {
+.c7 .c8 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2816,15 +2817,15 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   background-color: #E5EDFC;
 }
 
-.c3 .c5 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c5 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -3000,15 +3001,15 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
   background-color: #E5EDFC;
 }
 
-.c3 .c5 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c3 .c5 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
