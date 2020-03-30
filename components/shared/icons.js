@@ -44,6 +44,7 @@ const icons = [
   'visibility_off',
   'visibility',
   'warning',
+  'home',
 ];
 
 export default icons;
