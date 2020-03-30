@@ -4889,6 +4889,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   >
                     <Icon
                       name="star"
+                      size="medium"
                       skin=""
                       style={Object {}}
                     >
@@ -4896,6 +4897,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                         style={
                           Object {
                             "color": "",
+                            "fontSize": 24,
                           }
                         }
                       >
@@ -4903,6 +4905,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           style={
                             Object {
                               "color": "",
+                              "fontSize": 24,
                             }
                           }
                         >
@@ -4923,6 +4926,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                             style={
                               Object {
                                 "color": "",
+                                "fontSize": 24,
                               }
                             }
                           >
@@ -4934,6 +4938,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                               style={
                                 Object {
                                   "color": "",
+                                  "fontSize": 24,
                                 }
                               }
                               viewBox="0 0 24 24"
@@ -5737,6 +5742,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   >
                     <Icon
                       name="star"
+                      size="medium"
                       skin=""
                       style={Object {}}
                     >
@@ -5744,6 +5750,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                         style={
                           Object {
                             "color": "",
+                            "fontSize": 24,
                           }
                         }
                       >
@@ -5751,6 +5758,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                           style={
                             Object {
                               "color": "",
+                              "fontSize": 24,
                             }
                           }
                         >
@@ -5771,6 +5779,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                             style={
                               Object {
                                 "color": "",
+                                "fontSize": 24,
                               }
                             }
                           >
@@ -5782,6 +5791,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                               style={
                                 Object {
                                   "color": "",
+                                  "fontSize": 24,
                                 }
                               }
                               viewBox="0 0 24 24"

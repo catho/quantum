@@ -88,7 +88,9 @@ const iconSize = ({ size, theme: { baseFontSize } }) =>
     large: `${baseFontSize * 1.25}px`,
   }[size]);
 
-const CloseIcon = styled(Icon)``;
+const CloseIcon = styled(Icon)`
+  width: ${defaultBaseFontSize * 1.125}px;
+`;
 
 const CloseButton = styled.button`
   background: none;
@@ -103,7 +105,7 @@ const CloseButton = styled.button`
   }) => `margin-left: ${xxsmall}px;`}
 
   ${CloseIcon} {
-    font-size: ${iconSize};
+    font-size: ${iconSize} !important;
     color: ${props => _colors(props).text};
   }
 `;

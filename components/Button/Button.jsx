@@ -13,8 +13,15 @@ import {
 import Icon from '../Icon/Icon';
 
 const ButtonIcon = styled(Icon)`
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+    margin-right: ${xsmall}px;
+  `}
   pointer-events: none;
-  margin-right: 8px;
+  width: ${defaultBaseFontSize * 1.5}px;
 `;
 
 const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {

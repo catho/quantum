@@ -79,6 +79,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -135,6 +136,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -291,6 +293,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -347,6 +350,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -506,6 +510,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -562,6 +567,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -730,6 +736,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -786,6 +793,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -946,6 +954,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -1002,6 +1011,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1164,6 +1174,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
 
 .c4 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -1227,6 +1238,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1393,6 +1405,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
 
 .c5 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -1461,6 +1474,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1619,6 +1633,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
   position: absolute;
   top: 12px;
@@ -1687,6 +1702,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1843,6 +1859,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -1899,6 +1916,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2055,6 +2073,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -2111,6 +2130,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2273,6 +2293,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
 
 .c4 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -2336,6 +2357,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2492,6 +2514,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -2548,6 +2571,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
