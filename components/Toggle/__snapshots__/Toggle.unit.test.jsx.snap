@@ -127,6 +127,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -143,6 +144,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -282,6 +284,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -298,6 +301,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"

@@ -449,7 +449,7 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
@@ -475,6 +475,7 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -516,7 +517,7 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
@@ -530,7 +531,7 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
@@ -556,6 +557,7 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -597,12 +599,12 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
@@ -616,7 +618,7 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
@@ -642,6 +644,7 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -683,17 +686,17 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
@@ -707,7 +710,7 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
@@ -733,6 +736,7 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -774,22 +778,22 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
@@ -803,7 +807,7 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
@@ -829,6 +833,7 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -870,27 +875,27 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
@@ -904,7 +909,7 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
@@ -930,6 +935,7 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -971,32 +977,32 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
@@ -1010,7 +1016,7 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
@@ -1036,6 +1042,7 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1077,37 +1084,37 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
@@ -1121,7 +1128,7 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
@@ -1147,6 +1154,7 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1188,42 +1196,42 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
 .c12 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
@@ -1237,7 +1245,7 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ffefd6;
 }
 
@@ -1263,6 +1271,7 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1304,47 +1313,47 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
 .c12 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
 .c13 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ffefd6;
 }
 
@@ -1358,7 +1367,7 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #fff5f5;
 }
 
@@ -1384,6 +1393,7 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1434,52 +1444,52 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
 .c12 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ffefd6;
 }
 
 .c13 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #fff5f5;
 }
 
@@ -1505,6 +1515,7 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1546,7 +1557,7 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
@@ -1560,47 +1571,47 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
 .c12 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ffefd6;
 }
 
 .c13 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #fff5f5;
 }
 
@@ -1626,6 +1637,7 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1667,12 +1679,12 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
@@ -1686,42 +1698,42 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
 .c12 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ffefd6;
 }
 
 .c13 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #fff5f5;
 }
 
@@ -1747,6 +1759,7 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1788,17 +1801,17 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
@@ -1812,37 +1825,37 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
 .c12 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ffefd6;
 }
 
 .c13 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #fff5f5;
 }
 
@@ -1868,6 +1881,7 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1909,22 +1923,22 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
 }
 
 .c5 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #424242;
 }
 
 .c6 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #1250C4;
 }
 
 .c7 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #004D40;
 }
 
 .c8 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #d14900;
 }
 
@@ -1938,32 +1952,32 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
 }
 
 .c2 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ac001a;
 }
 
 .c9 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #f2f2f2;
 }
 
 .c10 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #E5EDFC;
 }
 
 .c11 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #dcedc8;
 }
 
 .c12 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #ffefd6;
 }
 
 .c13 .c3 {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #fff5f5;
 }
 
@@ -1989,6 +2003,7 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
