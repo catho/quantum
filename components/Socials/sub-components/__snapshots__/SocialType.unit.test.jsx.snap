@@ -22,122 +22,63 @@ exports[`<SocialType /> should match snapshots 1`] = `
   <SocialType__SocialWrapper
     href="http://facebook.com"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "SocialType__SocialWrapper-rgcx9k-0",
-            "isStatic": true,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:inline-flex;",
-            ],
-          },
-          "displayName": "SocialType__SocialWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
-          "target": "a",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <a
+      className="c0"
       href="http://facebook.com"
     >
-      <a
-        className="c0"
-        href="http://facebook.com"
+      <SocialFacebookIcon
+        size="48"
+        title="facebook title"
+        withBox={true}
       >
-        <SocialFacebookIcon
-          size="48"
-          title="facebook title"
-          withBox={true}
+        <SocialFacebookIcon__StyledSvg
+          aria-labelledby="facebook-title"
+          height="48"
+          role="img"
+          viewBox="0 0 48 48"
+          width="48"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <SocialFacebookIcon__StyledSvg
+          <svg
             aria-labelledby="facebook-title"
+            className="c1"
             height="48"
             role="img"
             viewBox="0 0 48 48"
             width="48"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <StyledComponent
-              aria-labelledby="facebook-title"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "SocialFacebookIcon__StyledSvg-jgqkn4-0",
-                    "isStatic": true,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;",
-                    ],
-                  },
-                  "displayName": "SocialFacebookIcon__StyledSvg",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "SocialFacebookIcon__StyledSvg-jgqkn4-0",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              height="48"
-              role="img"
-              viewBox="0 0 48 48"
-              width="48"
-              xmlns="http://www.w3.org/2000/svg"
+            <title
+              id="facebook-title"
             >
-              <svg
-                aria-labelledby="facebook-title"
-                className="c1"
-                height="48"
-                role="img"
-                viewBox="0 0 48 48"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title
-                  id="facebook-title"
-                >
-                  facebook title
-                </title>
-                <g
-                  id="Box_Facebook"
-                  transform="translate(606 -35)"
-                >
-                  <rect
-                    data-name="Rectangle 1"
-                    fill="#3c5193"
-                    height={48}
-                    id="Rectangle_1"
-                    rx="9"
-                    transform="translate(-606 35)"
-                    width={48}
-                  />
-                  <path
-                    d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
-                    data-name="Path 4"
-                    fill="#fff"
-                    fillRule="evenodd"
-                    id="Path_4"
-                    transform="translate(-734 -45)"
-                  />
-                </g>
-              </svg>
-            </StyledComponent>
-          </SocialFacebookIcon__StyledSvg>
-        </SocialFacebookIcon>
-      </a>
-    </StyledComponent>
+              facebook title
+            </title>
+            <g
+              id="Box_Facebook"
+              transform="translate(606 -35)"
+            >
+              <rect
+                data-name="Rectangle 1"
+                fill="#3c5193"
+                height={48}
+                id="Rectangle_1"
+                rx="9"
+                transform="translate(-606 35)"
+                width={48}
+              />
+              <path
+                d="M146.667,100.389h2.285V98.246a5.551,5.551,0,0,1,.737-3.306,4.115,4.115,0,0,1,3.547-1.606,14.874,14.874,0,0,1,4.1.4L156.763,97a7.945,7.945,0,0,0-1.842-.267c-.888,0-1.685.309-1.685,1.165v2.493h3.645l-.254,3.192h-3.391v11.086h-4.284V103.581h-2.285Z"
+                data-name="Path 4"
+                fill="#fff"
+                fillRule="evenodd"
+                id="Path_4"
+                transform="translate(-734 -45)"
+              />
+            </g>
+          </svg>
+        </SocialFacebookIcon__StyledSvg>
+      </SocialFacebookIcon>
+    </a>
   </SocialType__SocialWrapper>
 </SocialType>
 `;
@@ -164,121 +105,62 @@ exports[`<SocialType /> should match snapshots 2`] = `
   <SocialType__SocialWrapper
     href="http://twitter.com"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "SocialType__SocialWrapper-rgcx9k-0",
-            "isStatic": true,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:inline-flex;",
-            ],
-          },
-          "displayName": "SocialType__SocialWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
-          "target": "a",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <a
+      className="c0"
       href="http://twitter.com"
     >
-      <a
-        className="c0"
-        href="http://twitter.com"
+      <SocialTwitterIcon
+        size="48"
+        title="twitter title"
+        withBox={true}
       >
-        <SocialTwitterIcon
-          size="48"
-          title="twitter title"
-          withBox={true}
+        <SocialTwitterIcon__StyledSvg
+          aria-labelledby="twitter-title"
+          height="48"
+          role="img"
+          viewBox="0 0 48 48"
+          width="48"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <SocialTwitterIcon__StyledSvg
+          <svg
             aria-labelledby="twitter-title"
+            className="c1"
             height="48"
             role="img"
             viewBox="0 0 48 48"
             width="48"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <StyledComponent
-              aria-labelledby="twitter-title"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "SocialTwitterIcon__StyledSvg-jqaeac-0",
-                    "isStatic": true,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;",
-                    ],
-                  },
-                  "displayName": "SocialTwitterIcon__StyledSvg",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "SocialTwitterIcon__StyledSvg-jqaeac-0",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              height="48"
-              role="img"
-              viewBox="0 0 48 48"
-              width="48"
-              xmlns="http://www.w3.org/2000/svg"
+            <title
+              id="twitter-title"
             >
-              <svg
-                aria-labelledby="twitter-title"
-                className="c1"
-                height="48"
-                role="img"
-                viewBox="0 0 48 48"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title
-                  id="twitter-title"
-                >
-                  twitter title
-                </title>
-                <g
-                  id="box_twitter"
-                  transform="translate(606 -203)"
-                >
-                  <rect
-                    data-name="twitter-name"
-                    fill="#2caae1"
-                    height={48}
-                    id="twitterID"
-                    rx="9"
-                    transform="translate(-606 203)"
-                    width={48}
-                  />
-                  <path
-                    d="M166.667,262.829a11.931,11.931,0,0,1-3.457.955,6.067,6.067,0,0,0,2.64-3.355,11.977,11.977,0,0,1-3.821,1.478,6.007,6.007,0,0,0-9.872,1.655,6.107,6.107,0,0,0-.383,3.876,17.046,17.046,0,0,1-12.4-6.347,6.1,6.1,0,0,0,1.862,8.092,5.957,5.957,0,0,1-2.731-.755v.077a6.089,6.089,0,0,0,1.367,3.843,6.01,6.01,0,0,0,3.474,2.1,6.017,6.017,0,0,1-2.718.1,6.068,6.068,0,0,0,2.141,3.013,6,6,0,0,0,3.481,1.2,12.071,12.071,0,0,1-8.917,2.51A16.943,16.943,0,0,0,146.559,284c11.07,0,17.123-9.239,17.123-17.252,0-.263,0-.525-.016-.785a12.288,12.288,0,0,0,3-3.134Z"
-                    data-name="Path 27"
-                    fill="#fff"
-                    id="twitterID-path"
-                    transform="translate(-734 -45)"
-                  />
-                </g>
-              </svg>
-            </StyledComponent>
-          </SocialTwitterIcon__StyledSvg>
-        </SocialTwitterIcon>
-      </a>
-    </StyledComponent>
+              twitter title
+            </title>
+            <g
+              id="box_twitter"
+              transform="translate(606 -203)"
+            >
+              <rect
+                data-name="twitter-name"
+                fill="#2caae1"
+                height={48}
+                id="twitterID"
+                rx="9"
+                transform="translate(-606 203)"
+                width={48}
+              />
+              <path
+                d="M166.667,262.829a11.931,11.931,0,0,1-3.457.955,6.067,6.067,0,0,0,2.64-3.355,11.977,11.977,0,0,1-3.821,1.478,6.007,6.007,0,0,0-9.872,1.655,6.107,6.107,0,0,0-.383,3.876,17.046,17.046,0,0,1-12.4-6.347,6.1,6.1,0,0,0,1.862,8.092,5.957,5.957,0,0,1-2.731-.755v.077a6.089,6.089,0,0,0,1.367,3.843,6.01,6.01,0,0,0,3.474,2.1,6.017,6.017,0,0,1-2.718.1,6.068,6.068,0,0,0,2.141,3.013,6,6,0,0,0,3.481,1.2,12.071,12.071,0,0,1-8.917,2.51A16.943,16.943,0,0,0,146.559,284c11.07,0,17.123-9.239,17.123-17.252,0-.263,0-.525-.016-.785a12.288,12.288,0,0,0,3-3.134Z"
+                data-name="Path 27"
+                fill="#fff"
+                id="twitterID-path"
+                transform="translate(-734 -45)"
+              />
+            </g>
+          </svg>
+        </SocialTwitterIcon__StyledSvg>
+      </SocialTwitterIcon>
+    </a>
   </SocialType__SocialWrapper>
 </SocialType>
 `;
@@ -305,130 +187,71 @@ exports[`<SocialType /> should match snapshots 3`] = `
   <SocialType__SocialWrapper
     href="http://youtube.com"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "SocialType__SocialWrapper-rgcx9k-0",
-            "isStatic": true,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:inline-flex;",
-            ],
-          },
-          "displayName": "SocialType__SocialWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "SocialType__SocialWrapper-rgcx9k-0",
-          "target": "a",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <a
+      className="c0"
       href="http://youtube.com"
     >
-      <a
-        className="c0"
-        href="http://youtube.com"
+      <SocialYoutubeIcon
+        size="48"
+        title="youtube title"
+        withBox={true}
       >
-        <SocialYoutubeIcon
-          size="48"
-          title="youtube title"
-          withBox={true}
+        <SocialYoutubeIcon__StyledSvg
+          aria-labelledby="youtube-title"
+          height="48"
+          role="img"
+          viewBox="0 0 50 50"
+          width="48"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <SocialYoutubeIcon__StyledSvg
+          <svg
             aria-labelledby="youtube-title"
+            className="c1"
             height="48"
             role="img"
             viewBox="0 0 50 50"
             width="48"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <StyledComponent
-              aria-labelledby="youtube-title"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "SocialYoutubeIcon__StyledSvg-sc-1klk40e-0",
-                    "isStatic": true,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "display:inline-block;",
-                    ],
-                  },
-                  "displayName": "SocialYoutubeIcon__StyledSvg",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "SocialYoutubeIcon__StyledSvg-sc-1klk40e-0",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              height="48"
-              role="img"
-              viewBox="0 0 50 50"
-              width="48"
-              xmlns="http://www.w3.org/2000/svg"
+            <title
+              id="youtube-title"
             >
-              <svg
-                aria-labelledby="youtube-title"
-                className="c1"
-                height="48"
-                role="img"
-                viewBox="0 0 50 50"
-                width="48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title
-                  id="youtube-title"
-                >
-                  youtube title
-                </title>
-                <g
-                  id="Box_Youtube"
-                  transform="translate(350 -35)"
-                >
-                  <rect
-                    data-name="Rectangle 3"
-                    fill="#fff"
-                    height={48}
-                    id="Rectangle_3"
-                    rx="8"
-                    stroke="#424242"
-                    strokeWidth="2"
-                    transform="translate(-349 36)"
-                    width={48}
-                  />
-                  <path
-                    d="M422.05,96.9a3.711,3.711,0,0,0-2.6-2.617c-2.283-.617-11.45-.617-11.45-.617s-9.167,0-11.467.617a3.685,3.685,0,0,0-2.6,2.617,39.409,39.409,0,0,0-.6,7.1,38.348,38.348,0,0,0,.617,7.1,3.711,3.711,0,0,0,2.6,2.617c2.283.616,11.45.616,11.45.616s9.167,0,11.467-.616a3.687,3.687,0,0,0,2.6-2.617,39.409,39.409,0,0,0,.6-7.1A38.348,38.348,0,0,0,422.05,96.9Z"
-                    data-name="Path 20"
-                    fill="#ee3124"
-                    id="Path_20"
-                    transform="translate(-733 -44)"
-                  />
-                  <path
-                    d="M405,108.367V99.633L412.667,104Z"
-                    data-name="Path 21"
-                    fill="#fff"
-                    id="Path_21"
-                    transform="translate(-733 -44)"
-                  />
-                </g>
-              </svg>
-            </StyledComponent>
-          </SocialYoutubeIcon__StyledSvg>
-        </SocialYoutubeIcon>
-      </a>
-    </StyledComponent>
+              youtube title
+            </title>
+            <g
+              id="Box_Youtube"
+              transform="translate(350 -35)"
+            >
+              <rect
+                data-name="Rectangle 3"
+                fill="#fff"
+                height={48}
+                id="Rectangle_3"
+                rx="8"
+                stroke="#424242"
+                strokeWidth="2"
+                transform="translate(-349 36)"
+                width={48}
+              />
+              <path
+                d="M422.05,96.9a3.711,3.711,0,0,0-2.6-2.617c-2.283-.617-11.45-.617-11.45-.617s-9.167,0-11.467.617a3.685,3.685,0,0,0-2.6,2.617,39.409,39.409,0,0,0-.6,7.1,38.348,38.348,0,0,0,.617,7.1,3.711,3.711,0,0,0,2.6,2.617c2.283.616,11.45.616,11.45.616s9.167,0,11.467-.616a3.687,3.687,0,0,0,2.6-2.617,39.409,39.409,0,0,0,.6-7.1A38.348,38.348,0,0,0,422.05,96.9Z"
+                data-name="Path 20"
+                fill="#ee3124"
+                id="Path_20"
+                transform="translate(-733 -44)"
+              />
+              <path
+                d="M405,108.367V99.633L412.667,104Z"
+                data-name="Path 21"
+                fill="#fff"
+                id="Path_21"
+                transform="translate(-733 -44)"
+              />
+            </g>
+          </svg>
+        </SocialYoutubeIcon__StyledSvg>
+      </SocialYoutubeIcon>
+    </a>
   </SocialType__SocialWrapper>
 </SocialType>
 `;

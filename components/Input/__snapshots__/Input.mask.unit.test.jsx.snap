@@ -355,7 +355,7 @@ exports[`Input component should match snapshots 4`] = `
   </div>
   
   <span
-    className="c3"
+    className="ErrorMessage-sc-19jcdrm-0 c3"
   >
     Error message
   </span>
@@ -621,7 +621,7 @@ exports[`Input component should match snapshots 8`] = `
     
   </div>
   <span
-    className="c2"
+    className="ErrorMessage-sc-19jcdrm-0 c2"
   >
     this is a helper text
   </span>

@@ -7,37 +7,11 @@ exports[`<SubHeader /> Should match the snapshot 1`] = `
 
 <List.SubHeader>
   <SubHeader>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "SubHeader__Description-gatzne-0",
-            "isStatic": true,
-            "lastClassName": "c0",
-            "rules": Array [
-              "font-size:12px;",
-            ],
-          },
-          "displayName": "SubHeader",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "SubHeader__Description-gatzne-0",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <span
+      className="c0"
     >
-      <span
-        className="c0"
-      >
-        SubHeader
-      </span>
-    </StyledComponent>
+      SubHeader
+    </span>
   </SubHeader>
 </List.SubHeader>
 `;

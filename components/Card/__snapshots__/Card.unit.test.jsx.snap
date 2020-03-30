@@ -94,6 +94,7 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
     <img
       alt="Thumbnail"
       className="c5"
+      loading="lazy"
       src="#"
     />
   </header>
@@ -123,6 +124,7 @@ exports[`<Card /> Snapshots should match snapshot with rounded Thumbnail 1`] = `
 <img
   alt=""
   className="c0"
+  loading="lazy"
   src=""
 />
 `;
