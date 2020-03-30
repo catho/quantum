@@ -98,7 +98,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   >
     <input
       checked={false}
-      className="HiddenInput-sc-14w753s-0 c1"
+      className="c1"
       disabled={false}
       id=""
       name="foo"
@@ -114,6 +114,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -123,7 +124,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="c3 c4"
       htmlFor=""
     >
       
@@ -311,7 +312,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   >
     <input
       checked={false}
-      className="HiddenInput-sc-14w753s-0 c1"
+      className="c1"
       disabled={false}
       id=""
       name="foo"
@@ -327,6 +328,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -336,7 +338,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="c3 c4"
       htmlFor=""
     >
       
@@ -528,7 +530,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   >
     <input
       checked={true}
-      className="HiddenInput-sc-14w753s-0 c1"
+      className="c1"
       disabled={false}
       id=""
       name="foo"
@@ -544,6 +546,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -553,7 +556,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="c3 c4"
       htmlFor=""
     >
       
@@ -734,7 +737,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   >
     <input
       checked={true}
-      className="HiddenInput-sc-14w753s-0 c1"
+      className="c1"
       disabled={false}
       id=""
       name="foo"
@@ -750,6 +753,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -759,7 +763,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="c3 c4"
       htmlFor=""
     >
       
@@ -936,7 +940,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   >
     <input
       checked={false}
-      className="HiddenInput-sc-14w753s-0 c1"
+      className="c1"
       disabled={true}
       id=""
       name="foo"
@@ -952,6 +956,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -961,7 +966,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="c3 c4"
       htmlFor=""
     >
       
@@ -1138,7 +1143,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   >
     <input
       checked={false}
-      className="HiddenInput-sc-14w753s-0 c1"
+      className="c1"
       disabled={false}
       id=""
       name="foo"
@@ -1154,6 +1159,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -1163,7 +1169,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="c3 c4"
       htmlFor=""
     >
       Some text
@@ -1340,7 +1346,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   >
     <input
       checked={true}
-      className="HiddenInput-sc-14w753s-0 c1"
+      className="c1"
       disabled={true}
       id=""
       name="foo"
@@ -1356,6 +1362,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -1365,7 +1372,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="c3 c4"
       htmlFor=""
     >
       

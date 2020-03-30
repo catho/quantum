@@ -8,11 +8,37 @@ exports[`<Header /> Should match the snapshot 1`] = `
 
 <List.Header>
   <Header>
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Header__Title-e8ruju-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "margin-top:4px;margin-bottom:4px;",
+            ],
+          },
+          "displayName": "Header",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Header__Title-e8ruju-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      Header
-    </span>
+      <span
+        className="c0"
+      >
+        Header
+      </span>
+    </StyledComponent>
   </Header>
 </List.Header>
 `;

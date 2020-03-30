@@ -6,17 +6,17 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 eYHnCp\\"
+    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 brfAPx\\"
   >
     <div
-      className=\\"Checkbox__Wrapper-sc-1ca5whm-0 hugfTy\\"
+      className=\\"Checkbox__Wrapper-sc-1ca5whm-0 lhYXdT\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 efcaAt\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hYbOJN\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 UBdDk\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 hfBncO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -26,12 +26,13 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
         />
         <svg
           aria-hidden=\\"true\\"
-          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
           focusable=\\"false\\"
           role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
+              \\"fontSize\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -41,7 +42,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           />
         </svg>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 fJewoe\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
         >
 -         Foo label
@@ -50,14 +51,14 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       </div>
     </div>
     <div
-      className=\\"Checkbox__Wrapper-sc-1ca5whm-0 hugfTy\\"
+      className=\\"Checkbox__Wrapper-sc-1ca5whm-0 lhYXdT\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 efcaAt\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hYbOJN\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 UBdDk\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 hfBncO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -67,12 +68,13 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
         />
         <svg
           aria-hidden=\\"true\\"
-          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
           focusable=\\"false\\"
           role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
+              \\"fontSize\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -82,7 +84,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           />
         </svg>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 fJewoe\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
         >
 -         Bar label
@@ -91,14 +93,14 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       </div>
     </div>
     <div
-      className=\\"Checkbox__Wrapper-sc-1ca5whm-0 hugfTy\\"
+      className=\\"Checkbox__Wrapper-sc-1ca5whm-0 lhYXdT\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 efcaAt\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 hYbOJN\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 UBdDk\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 hfBncO\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -108,12 +110,13 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
         />
         <svg
           aria-hidden=\\"true\\"
-          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 cYUJOR\\"
           focusable=\\"false\\"
           role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
+              \\"fontSize\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -123,7 +126,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           />
         </svg>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 fJewoe\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kuCnhs\\"
           htmlFor=\\"\\"
         >
 -         Baz label
@@ -140,14 +143,14 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 eYHnCp\\"
+    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 brfAPx\\"
   >
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 fvryxK\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 cMijjU\\"
     >
       <label
         checked={false}
-        className=\\"Button__StyledButton-sc-1ovnfsw-1 ktCRst CheckboxButton__CheckButton-sc-1rvg70v-3 kHCjUp\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 FExFu\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-12\\"
 +       htmlFor=\\"checkbox-button-15\\"
@@ -158,7 +161,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
         
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 gWGOtr\\"
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 cvUSAl\\"
           disabled={false}
 -         id=\\"checkbox-button-12\\"
 +         id=\\"checkbox-button-15\\"
@@ -172,11 +175,11 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 fvryxK\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 cMijjU\\"
     >
       <label
         checked={false}
-        className=\\"Button__StyledButton-sc-1ovnfsw-1 ktCRst CheckboxButton__CheckButton-sc-1rvg70v-3 kHCjUp\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 FExFu\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-13\\"
 +       htmlFor=\\"checkbox-button-16\\"
@@ -187,7 +190,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
         
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 gWGOtr\\"
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 cvUSAl\\"
           disabled={false}
 -         id=\\"checkbox-button-13\\"
 +         id=\\"checkbox-button-16\\"
@@ -201,11 +204,11 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 fvryxK\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 cMijjU\\"
     >
       <label
         checked={false}
-        className=\\"Button__StyledButton-sc-1ovnfsw-1 ktCRst CheckboxButton__CheckButton-sc-1rvg70v-3 kHCjUp\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 fMOUUC Button__StyledButton-sc-1ovnfsw-1 FExFu\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-14\\"
 +       htmlFor=\\"checkbox-button-17\\"
@@ -216,7 +219,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
         
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 gWGOtr\\"
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 cvUSAl\\"
           disabled={false}
 -         id=\\"checkbox-button-14\\"
 +         id=\\"checkbox-button-17\\"
@@ -233,7 +236,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
 `;
 
 exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -262,31 +265,31 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c2:hover {
+.c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c2:focus,
-.c2:focus-within {
+.c3:focus,
+.c3:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c2:active {
+.c3:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -301,12 +304,12 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   width: 0;
 }
 
-.c1 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+.c1 .c6 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -323,7 +326,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className="c1"
@@ -340,7 +343,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-3"
         name="Foo"
@@ -366,7 +369,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-4"
         name="Bar"
@@ -392,7 +395,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-5"
         name="Baz"
@@ -505,7 +508,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className=""
@@ -515,7 +518,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Foo"
@@ -531,6 +534,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -540,7 +544,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Foo
@@ -555,7 +559,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Bar"
@@ -571,6 +575,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -580,7 +585,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Bar
@@ -595,7 +600,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Baz"
@@ -611,6 +616,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -620,7 +626,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Baz
@@ -729,7 +735,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className=""
@@ -739,7 +745,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Foo"
@@ -755,6 +761,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -764,7 +771,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Foo
@@ -779,7 +786,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Bar"
@@ -795,6 +802,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -804,7 +812,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Bar
@@ -819,7 +827,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Baz"
@@ -835,6 +843,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -844,7 +853,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Baz
@@ -855,7 +864,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
 `;
 
 exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button" 1`] = `
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -884,31 +893,31 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c2:hover {
+.c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c2:focus,
-.c2:focus-within {
+.c3:focus,
+.c3:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c2:active {
+.c3:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -923,12 +932,12 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   width: 0;
 }
 
-.c1 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+.c1 .c6 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -945,7 +954,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className="c1"
@@ -962,7 +971,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-0"
         name="Foo"
@@ -988,7 +997,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-1"
         name="Bar"
@@ -1014,7 +1023,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-2"
         name="Baz"
@@ -1030,11 +1039,12 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] = `
 .c5 {
-  pointer-events: none;
   margin-right: 8px;
+  pointer-events: none;
+  width: 24px;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1063,31 +1073,67 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c2:hover {
+.c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c2:focus,
-.c2:focus-within {
+.c3:focus,
+.c3:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c2:active {
+.c3:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c2 .c4 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c4 function (_ref5) var fontSizes = {
+.c3 .c4 function (_ref6) var fontSizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c7 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c7 .c4 function (_ref6) var fontSizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c8 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c8 .c4 function (_ref6) var fontSizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c9 .c4 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c9 .c4 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1102,12 +1148,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   width: 0;
 }
 
-.c1 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+.c1 .c10 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1124,7 +1170,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className="c1"
@@ -1143,10 +1189,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
         className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1356,7 +1402,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       </svg>
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c6"
+        className="c6"
         disabled={false}
         id="checkbox-button-18"
         name="Foo"
@@ -1382,7 +1428,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c6"
+        className="c6"
         disabled={false}
         id="checkbox-button-19"
         name="Bar"
@@ -1410,10 +1456,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
         className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
-        size="medium"
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1623,7 +1669,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       </svg>
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c6"
+        className="c6"
         disabled={false}
         id="checkbox-button-20"
         name="Baz"
@@ -1649,7 +1695,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   font-weight: 600;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1678,31 +1724,31 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c2:hover {
+.c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(172,0,26,0.2),0px 4px 5px 0px rgba(172,0,26,0.14),0px 1px 10px 0px rgba(172,0,26,0.12);
   background-color: #fff5f5;
   border-color: #ac001a;
 }
 
-.c2:focus,
-.c2:focus-within {
+.c3:focus,
+.c3:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(233,27,12,0.2),0px 4px 5px 0px rgba(233,27,12,0.14),0px 1px 10px 0px rgba(233,27,12,0.12);
 }
 
-.c2:active {
+.c3:active {
   box-shadow: 0px 5px 5px -3px rgba(172,0,26,0.2),0px 8px 10px 1px rgba(172,0,26,0.14),0px 3px 14px 2px rgba(172,0,26,0.12);
   background-color: #fff5f5;
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c6 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
+.c3 .c6 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1717,12 +1763,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   width: 0;
 }
 
-.c1 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+.c1 .c7 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1739,7 +1785,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className="c1"
@@ -1756,7 +1802,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-6"
         name="Foo"
@@ -1782,7 +1828,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-7"
         name="Bar"
@@ -1808,7 +1854,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-8"
         name="Baz"
@@ -1828,47 +1874,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled options 1`] = `
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: not-allowed;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #e0e0e0;
-  color: #424242;
-  border: 2px solid #999999;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 .c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1914,15 +1919,56 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   background-color: #E5EDFC;
 }
 
-.c6 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c6 .c8 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c6 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
+.c6 .c8 function (_ref6) var fontSizes = {
+  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: not-allowed;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #e0e0e0;
+  color: #424242;
+  border: 2px solid #999999;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c3 .c8 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
+}
+
+.c3 .c8 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1955,15 +2001,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c7 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c7 .c8 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
+.c7 .c8 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -1983,7 +2029,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   margin-left: 8px;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2000,7 +2046,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className="c1"
@@ -2017,7 +2063,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={true}
         id="checkbox-button-9"
         name="Foo"
@@ -2034,6 +2080,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2049,7 +2096,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   >
     <label
       checked={false}
-      className="c6 c3"
+      className="c2 c6"
       disabled={false}
       htmlFor="checkbox-button-10"
       onClick={[Function]}
@@ -2059,7 +2106,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-10"
         name="Bar"
@@ -2075,7 +2122,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   >
     <label
       checked={true}
-      className="c7 c3"
+      className="c2 c7"
       disabled={true}
       htmlFor="checkbox-button-11"
       onClick={[Function]}
@@ -2085,7 +2132,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
       
       <input
         checked={true}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={true}
         id="checkbox-button-11"
         name="Baz"
@@ -2102,6 +2149,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2141,6 +2189,61 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   margin-bottom: 5px;
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c7 + .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 24px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  font-size: 20px;
+}
+
+.c7:checked + .c3 {
+  border-width: 0;
+  background-color: #1250C4;
+  color: #f2f2f2;
+}
+
+.c7:hover + .c3,
+.c7:focus + .c3 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
+.c7[disabled] ~ .c4 {
+  color: #999999;
+}
+
+.c7[disabled] + .c3 {
+  border-color: #999999;
+  background-color: #e0e0e0;
+}
+
+.c7[disabled]:checked + .c3 {
+  background-color: #999999;
+}
+
+.c7[disabled]:hover + .c3 {
+  box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
 .c2 {
@@ -2239,7 +2342,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className=""
@@ -2249,7 +2352,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Foo"
@@ -2265,6 +2368,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2274,7 +2378,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Foo
@@ -2289,7 +2393,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Bar"
@@ -2305,6 +2409,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2314,7 +2419,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Bar
@@ -2329,7 +2434,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Baz"
@@ -2345,6 +2450,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2354,7 +2460,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Baz
@@ -2459,6 +2565,75 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
+.c6 + .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 24px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  font-size: 20px;
+}
+
+.c6:checked + .c3 {
+  border-width: 0;
+  background-color: #1250C4;
+  color: #f2f2f2;
+}
+
+.c6:hover + .c3,
+.c6:focus + .c3 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
+.c6 + .c3 {
+  border-color: #e91b0c;
+}
+
+.c6:checked + .c3 {
+  background-color: #e91b0c;
+}
+
+.c6:hover + .c3,
+.c6:focus + .c3 {
+  border-color: #e91b0c;
+  box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
+}
+
+.c6[disabled] ~ .c4 {
+  color: #999999;
+}
+
+.c6[disabled] + .c3 {
+  border-color: #999999;
+  background-color: #e0e0e0;
+}
+
+.c6[disabled]:checked + .c3 {
+  background-color: #999999;
+}
+
+.c6[disabled]:hover + .c3 {
+  box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -2468,7 +2643,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className=""
@@ -2478,7 +2653,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={true}
         id=""
         name="Foo"
@@ -2494,6 +2669,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2503,7 +2679,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Foo
@@ -2518,7 +2694,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
     >
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={false}
         id=""
         name="Bar"
@@ -2534,6 +2710,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2543,7 +2720,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Bar
@@ -2558,7 +2735,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
     >
       <input
         checked={true}
-        className="HiddenInput-sc-14w753s-0 c2"
+        className="c2"
         disabled={true}
         id=""
         name="Baz"
@@ -2574,6 +2751,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2583,7 +2761,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c4 c5"
+        className="c4 c5"
         htmlFor=""
       >
         Baz
@@ -2594,7 +2772,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 `;
 
 exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2623,31 +2801,31 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c2:hover {
+.c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c2:focus,
-.c2:focus-within {
+.c3:focus,
+.c3:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c2:active {
+.c3:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2672,12 +2850,12 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   margin-right: 0;
 }
 
-.c1 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+.c1 .c6 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2694,7 +2872,7 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className="c1"
@@ -2711,7 +2889,7 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-21"
         name="Foo"
@@ -2737,7 +2915,7 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-22"
         name="Bar"
@@ -2763,7 +2941,7 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-23"
         name="Baz"
@@ -2778,7 +2956,7 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
 `;
 
 exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2807,31 +2985,31 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c2:hover {
+.c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c2:focus,
-.c2:focus-within {
+.c3:focus,
+.c3:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c2:active {
+.c3:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) {
-  -webkit-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -moz-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  -ms-var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
-  var: size = _ref5.size, _ref5$theme$spacing = _ref5.theme.spacing, xxsmall = _ref5$theme$spacing.xxsmall, medium = _ref5$theme$spacing.medium, large = _ref5$theme$spacing.large;
+.c3 .c5 function (_ref6) {
+  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
+  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref5) var fontSizes = {
+.c3 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2846,12 +3024,12 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
   width: 0;
 }
 
-.c1 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+.c1 .c6 {
   font-size: 17px;
   margin-left: 8px;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2868,7 +3046,7 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
 }
 
 <div
-  className="FieldGroup-sc-18uoi37-0 c0"
+  className="c0"
 >
   <div
     className="c1"
@@ -2885,7 +3063,7 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-24"
         name="Foo"
@@ -2911,7 +3089,7 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-25"
         name="Bar"
@@ -2937,7 +3115,7 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c4"
+        className="c4"
         disabled={false}
         id="checkbox-button-26"
         name="Baz"

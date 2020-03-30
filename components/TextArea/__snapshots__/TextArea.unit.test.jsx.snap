@@ -71,7 +71,7 @@ exports[`TextArea component should match snapshots 1`] = `
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1"
     disabled={false}
     id="textarea-0"
     onChange={[Function]}
@@ -156,7 +156,7 @@ exports[`TextArea component should match snapshots 2`] = `
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1"
     disabled={false}
     id="textarea-1"
     onChange={[Function]}
@@ -252,7 +252,7 @@ exports[`TextArea component should match snapshots 3`] = `
     Text label
   </label>
   <textarea
-    className="TextInput-ado1el-0 c2"
+    className="c2"
     disabled={false}
     id="textarea-2"
     onChange={[Function]}
@@ -357,7 +357,7 @@ exports[`TextArea component should match snapshots 4`] = `
     </em>
   </label>
   <textarea
-    className="TextInput-ado1el-0 c3"
+    className="c3"
     disabled={false}
     id="textarea-3"
     onChange={[Function]}
@@ -441,7 +441,7 @@ exports[`TextArea component should match snapshots 5`] = `
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1"
     disabled={true}
     id="textarea-4"
     onChange={[Function]}
@@ -526,7 +526,7 @@ exports[`TextArea component should match snapshots 6`] = `
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1"
     disabled={false}
     id="textarea-5"
     onChange={[Function]}
@@ -622,7 +622,7 @@ exports[`TextArea component should match snapshots 7`] = `
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1"
     disabled={false}
     id="textarea-6"
     onChange={[Function]}
@@ -631,7 +631,7 @@ exports[`TextArea component should match snapshots 7`] = `
     value=""
   />
   <span
-    className="ErrorMessage-sc-19jcdrm-0 InputErrorMessage-s0eyav-0 c2"
+    className="c2"
   >
     this is a helper text
   </span>
@@ -722,7 +722,7 @@ exports[`TextArea component should match snapshots 8`] = `
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1"
     disabled={false}
     id="textarea-7"
     onChange={[Function]}
@@ -732,7 +732,7 @@ exports[`TextArea component should match snapshots 8`] = `
   />
   
   <span
-    className="ErrorMessage-sc-19jcdrm-0 c2"
+    className="c2"
   >
     Error message
   </span>

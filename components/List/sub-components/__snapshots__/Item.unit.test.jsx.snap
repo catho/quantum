@@ -40,29 +40,110 @@ exports[`<Item /> Should match the snapshot 1`] = `
     <ListItem
       bullet=""
     >
-      <div
-        className="c0"
+      <StyledComponent
+        bullet=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Item__ListItem-culzzj-1",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "display:flex;flex-direction:row;align-items:center;padding:10px 16px;",
+                [Function],
+                ";",
+              ],
+            },
+            "displayName": "ListItem",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Item__ListItem-culzzj-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
       >
-        <List.Content
-          content=""
-          header=""
-          subheader=""
+        <div
+          className="c0"
         >
-          <Content>
-            <div
-              className="c1"
-            >
-              <List.Header>
-                <Header>
-                  <span
-                    className="c2"
-                  />
-                </Header>
-              </List.Header>
-            </div>
-          </Content>
-        </List.Content>
-      </div>
+          <List.Content
+            content=""
+            header=""
+            subheader=""
+          >
+            <Content>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Content__ContentBox-sc-1fmj11p-0",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "display:flex;flex-direction:column;",
+                      ],
+                    },
+                    "displayName": "Content",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Content__ContentBox-sc-1fmj11p-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c1"
+                >
+                  <List.Header>
+                    <Header>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Header__Title-e8ruju-0",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "margin-top:4px;margin-bottom:4px;",
+                              ],
+                            },
+                            "displayName": "Header",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Header__Title-e8ruju-0",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="c2"
+                        />
+                      </StyledComponent>
+                    </Header>
+                  </List.Header>
+                </div>
+              </StyledComponent>
+            </Content>
+          </List.Content>
+        </div>
+      </StyledComponent>
     </ListItem>
   </li>
 </List.Item>

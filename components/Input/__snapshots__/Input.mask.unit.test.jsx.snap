@@ -53,6 +53,7 @@ exports[`Input component should match snapshots 2`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
 }
 
 .c1 {
@@ -90,6 +91,7 @@ exports[`Input component should match snapshots 2`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -241,6 +243,7 @@ exports[`Input component should match snapshots 4`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
   color: #e91b0c;
 }
 
@@ -277,6 +280,7 @@ exports[`Input component should match snapshots 4`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -351,7 +355,7 @@ exports[`Input component should match snapshots 4`] = `
   </div>
   
   <span
-    className="ErrorMessage-sc-19jcdrm-0 c3"
+    className="c3"
   >
     Error message
   </span>
@@ -411,6 +415,7 @@ exports[`Input component should match snapshots 6`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
   pointer-events: none;
   left: 16px;
 }
@@ -436,6 +441,7 @@ exports[`Input component should match snapshots 6`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -615,7 +621,7 @@ exports[`Input component should match snapshots 8`] = `
     
   </div>
   <span
-    className="ErrorMessage-sc-19jcdrm-0 c2"
+    className="c2"
   >
     this is a helper text
   </span>
@@ -687,6 +693,7 @@ exports[`Input component should match snapshots 10`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
   pointer-events: none;
   left: 16px;
 }
@@ -723,6 +730,7 @@ exports[`Input component should match snapshots 10`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -1129,6 +1137,7 @@ exports[`Input component should match snapshots 17`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
 }
 
 .c1 {
@@ -1166,6 +1175,7 @@ exports[`Input component should match snapshots 17`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={

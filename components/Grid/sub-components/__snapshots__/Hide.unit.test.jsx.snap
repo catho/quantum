@@ -15,10 +15,6 @@ exports[`<Hide /> should hide it's children according to screen size 1`] = `
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 2`] = `
-@media (max-width:599px) {
-
-}
-
 @media (min-width:600px) and (max-width:1023px) {
   .c0 {
     display: none !important;
@@ -33,14 +29,6 @@ exports[`<Hide /> should hide it's children according to screen size 2`] = `
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 3`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
 @media (min-width:1024px) and (max-width:1439px) {
   .c0 {
     display: none !important;
@@ -55,18 +43,6 @@ exports[`<Hide /> should hide it's children according to screen size 3`] = `
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 4`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
 @media (min-width:1440px) and (max-width:1919px) {
   .c0 {
     display: none !important;
@@ -81,22 +57,6 @@ exports[`<Hide /> should hide it's children according to screen size 4`] = `
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 5`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) and (max-width:1919px) {
-
-}
-
 @media (min-width:1920px) {
   .c0 {
     display: none !important;
@@ -111,26 +71,6 @@ exports[`<Hide /> should hide it's children according to screen size 5`] = `
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 6`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) and (max-width:1919px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
 @media (min-width:1920px) {
   .c0 {
     display: none !important;
@@ -152,34 +92,6 @@ exports[`<Hide /> should hide it's children according to screen size 6`] = `
 
 exports[`<Hide /> should hide it's children according to screen size 7`] = `
 @media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) and (max-width:1919px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (max-width:599px) {
   .c0 {
     display: none !important;
   }
@@ -199,42 +111,6 @@ exports[`<Hide /> should hide it's children according to screen size 7`] = `
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 8`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) and (max-width:1919px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
 @media (min-width:600px) and (max-width:1023px) {
   .c0 {
     display: none !important;

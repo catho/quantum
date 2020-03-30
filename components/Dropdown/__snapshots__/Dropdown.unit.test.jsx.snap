@@ -79,6 +79,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -115,7 +116,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-0"
@@ -135,6 +136,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -291,6 +293,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -327,7 +330,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-1"
@@ -347,6 +350,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -506,6 +510,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -542,7 +547,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-2"
@@ -562,6 +567,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -730,6 +736,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -766,7 +773,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-3"
@@ -786,6 +793,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -860,7 +868,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   </div>
   
   <span
-    className="ErrorMessage-sc-19jcdrm-0 c4"
+    className="c4"
   >
     Error message
   </span>
@@ -946,6 +954,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -982,7 +991,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={true}
       id="dropdown-4"
@@ -1002,6 +1011,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1164,6 +1174,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
 
 .c4 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -1207,7 +1218,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c3"
+      className="c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-5"
@@ -1227,6 +1238,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1393,6 +1405,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
 
 .c5 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -1441,7 +1454,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c4"
+      className="c4"
       data-toggle={true}
       disabled={false}
       id="dropdown-6"
@@ -1461,6 +1474,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1619,6 +1633,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
   position: absolute;
   top: 12px;
@@ -1664,7 +1679,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         aria-controls={null}
         aria-labelledby="downshift-7-label"
         autoComplete="off"
-        className="TextInput-ado1el-0 c2"
+        className="c2"
         disabled={false}
         id="dropdown-7"
         onBlur={[Function]}
@@ -1687,6 +1702,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1843,6 +1859,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -1879,7 +1896,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-8"
@@ -1899,6 +1916,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2055,6 +2073,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -2091,7 +2110,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-9"
@@ -2111,6 +2130,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2273,6 +2293,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
 
 .c4 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -2316,7 +2337,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c3"
+      className="c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-10"
@@ -2336,6 +2357,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2492,6 +2514,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
 
 .c3 {
   pointer-events: none;
+  width: 24px;
   color: #424242;
 }
 
@@ -2528,7 +2551,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2"
       data-toggle={true}
       disabled={false}
       id="dropdown-11"
@@ -2548,6 +2571,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={

@@ -5,6 +5,7 @@
  */
 
 export default [
+  'Icon',
   'Accordion',
   'Alert',
   'Badge',
