@@ -16,7 +16,9 @@ const Content = styled.div`
   display: flex;
 `;
 
-const AlertIcon = styled(Icon)``;
+const AlertIcon = styled(Icon)`
+  width: ${defaultBaseFontSize * 1.5}px;
+`;
 
 const CloseButton = styled(Button.Icon).attrs({
   icon: 'close',

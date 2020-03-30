@@ -53,6 +53,7 @@ exports[`Input component should match snapshots 2`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
 }
 
 .c1 {
@@ -241,6 +242,7 @@ exports[`Input component should match snapshots 4`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
   color: #e91b0c;
 }
 
@@ -411,6 +413,7 @@ exports[`Input component should match snapshots 6`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
   pointer-events: none;
   left: 16px;
 }
@@ -687,6 +690,7 @@ exports[`Input component should match snapshots 10`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
   pointer-events: none;
   left: 16px;
 }
@@ -1129,6 +1133,7 @@ exports[`Input component should match snapshots 17`] = `
   position: absolute;
   right: 16px;
   bottom: 10px;
+  width: 24px;
 }
 
 .c1 {
