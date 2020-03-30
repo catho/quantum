@@ -91,6 +91,7 @@ exports[`Input component should match snapshots 2`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -279,6 +280,7 @@ exports[`Input component should match snapshots 4`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -439,6 +441,7 @@ exports[`Input component should match snapshots 6`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -727,6 +730,7 @@ exports[`Input component should match snapshots 10`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={
@@ -1171,6 +1175,7 @@ exports[`Input component should match snapshots 17`] = `
       style={
         Object {
           "color": "",
+          "fontSize": 24,
         }
       }
       theme={

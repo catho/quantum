@@ -136,6 +136,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -349,6 +350,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -565,6 +567,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -790,6 +793,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1007,6 +1011,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1233,6 +1238,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1468,6 +1474,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1695,6 +1702,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -1908,6 +1916,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2121,6 +2130,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2347,6 +2357,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={
@@ -2560,6 +2571,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
         style={
           Object {
             "color": "",
+            "fontSize": 24,
           }
         }
         theme={

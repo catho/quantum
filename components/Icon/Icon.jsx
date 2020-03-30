@@ -46,9 +46,18 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
 
+import { theme } from '../shared';
 import icons from '../shared/icons';
 
-const Icon = ({ name, skin, ...props }) => {
+const { baseFontSize } = theme;
+
+const sizes = {
+  small: baseFontSize, // 16
+  medium: baseFontSize * 1.5, // 24
+  large: baseFontSize * 2, // 32
+};
+
+const Icon = ({ name, skin, size, ...props }) => {
   const components = {
     accessible_forward: AccessibleForward,
     add: Add,
@@ -102,7 +111,7 @@ const Icon = ({ name, skin, ...props }) => {
   const SelectedIcon = components[name];
 
   return (
-    <SelectedIcon {...props} style={{ color: skin }}>
+    <SelectedIcon {...props} style={{ color: skin, fontSize: sizes[size] }}>
       {name}
     </SelectedIcon>
   );
@@ -111,12 +120,14 @@ const Icon = ({ name, skin, ...props }) => {
 Icon.defaultProps = {
   style: {},
   skin: '',
+  size: 'medium',
 };
 
 Icon.propTypes = {
   name: PropTypes.oneOf(icons).isRequired,
   style: PropTypes.instanceOf(Object),
   skin: PropTypes.string,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
 };
 
 export default Icon;
