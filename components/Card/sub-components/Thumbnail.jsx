@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { colors } from '../../shared/theme';
 
-const Image = styled.img`
+const Image = styled.img.attrs({ loading: 'lazy' })`
   border-radius: ${({ rounded }) => (rounded ? '50%' : '4px')};
   display: inline-block;
   height: 72px;
