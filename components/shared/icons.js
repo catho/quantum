@@ -45,6 +45,9 @@ const icons = [
   'visibility',
   'warning',
   'home',
+  'accessible',
+  'access_time',
+  'swap_vert',
 ];
 
 export default icons;

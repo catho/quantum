@@ -46,6 +46,9 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
 import Home from '@material-ui/icons/Home';
+import Accessible from '@material-ui/icons/Accessible';
+import AccessTime from '@material-ui/icons/AccessTime';
+import SwapVert from '@material-ui/icons/SwapVert';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -106,6 +109,9 @@ const Icon = ({ name, skin, size, ...props }) => {
     visibility: Visibility,
     warning: Warning,
     home: Home,
+    accessible: Accessible,
+    access_time: AccessTime,
+    swap_vert: SwapVert,
   };
 
   if (!components[name]) return <span>{name}</span>;
