@@ -46,6 +46,9 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
 import Home from '@material-ui/icons/Home';
+import Accessible from '@material-ui/icons/Accessible';
+import AccessTime from '@material-ui/icons/AccessTime';
+import SwapVert from '@material-ui/icons/SwapVert';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -60,15 +63,17 @@ const sizes = {
 
 const Icon = ({ name, skin, size, ...props }) => {
   const components = {
+    access_time: AccessTime,
     accessible_forward: AccessibleForward,
+    accessible: Accessible,
     add: Add,
     arrow_drop_down: ArrowDropDown,
     arrow_drop_up: ArrowDropUp,
     assessment: Assessment,
-    check: Check,
-    check_box: CheckBox,
     check_box_outline_blank: CheckBoxOutlineBlank,
+    check_box: CheckBox,
     check_circle: CheckCircle,
+    check: Check,
     clear: Clear,
     close: Close,
     contact_phone: ContactPhone,
@@ -77,10 +82,11 @@ const Icon = ({ name, skin, size, ...props }) => {
     done: Done,
     emoji_people: EmojiPeople,
     error: Error,
+    exit_to_app: ExitToApp,
     expand_less: ExpandLess,
     expand_more: ExpandMore,
-    exit_to_app: ExitToApp,
     favorite_border: FavoriteBorder,
+    home: Home,
     info: Info,
     keyboard_arrow_down: KeyboardArrowDown,
     keyboard_arrow_left: KeyboardArrowLeft,
@@ -88,8 +94,8 @@ const Icon = ({ name, skin, size, ...props }) => {
     keyboard_arrow_up: KeyboardArrowUp,
     lock: Lock,
     markunread: Markunread,
-    menu: Menu,
     menu_book: MenuBook,
+    menu: Menu,
     payment: Payment,
     perm_device_information: PermDeviceInformation,
     person: Person,
@@ -101,11 +107,11 @@ const Icon = ({ name, skin, size, ...props }) => {
     star_border: StarBorder,
     star_half: StarHalf,
     star: Star,
+    swap_vert: SwapVert,
     verified_user: VerifiedUser,
     visibility_off: VisibilityOff,
     visibility: Visibility,
     warning: Warning,
-    home: Home,
   };
 
   if (!components[name]) return <span>{name}</span>;
