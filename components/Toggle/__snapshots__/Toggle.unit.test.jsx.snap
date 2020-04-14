@@ -29,7 +29,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
 }
 
 .c3 .c4,
-.c3 .c5 {
+.c3 .c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -86,7 +86,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   transform: translateX(18px);
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .c6 {
   visibility: visible;
 }
 
@@ -98,12 +98,16 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   background-color: #002F7B;
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .c6 {
   background-color: #E5EDFC;
   color: #1250C4;
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
+}
+
+.c5 {
+  width: 24px;
 }
 
 <div
@@ -121,7 +125,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c4 "
+      className="MuiSvgIcon-root c4 c5"
       focusable="false"
       role="presentation"
       style={
@@ -138,7 +142,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c5 "
+      className="MuiSvgIcon-root c6 c5"
       focusable="false"
       role="presentation"
       style={
@@ -186,7 +190,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
 }
 
 .c3 .c4,
-.c3 .c5 {
+.c3 .c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -243,7 +247,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   transform: translateX(18px);
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .c6 {
   visibility: visible;
 }
 
@@ -255,12 +259,16 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   background-color: #002F7B;
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .c6 {
   background-color: #E5EDFC;
   color: #1250C4;
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
+}
+
+.c5 {
+  width: 24px;
 }
 
 <div
@@ -278,7 +286,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c4 "
+      className="MuiSvgIcon-root c4 c5"
       focusable="false"
       role="presentation"
       style={
@@ -295,7 +303,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c5 "
+      className="MuiSvgIcon-root c6 c5"
       focusable="false"
       role="presentation"
       style={
