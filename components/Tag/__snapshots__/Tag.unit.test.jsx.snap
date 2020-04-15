@@ -454,7 +454,7 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -540,7 +540,7 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -631,7 +631,7 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -727,7 +727,7 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -828,7 +828,7 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -934,7 +934,7 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1045,7 +1045,7 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1161,7 +1161,7 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1282,7 +1282,7 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1408,7 +1408,7 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1534,7 +1534,7 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1660,7 +1660,7 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1786,7 +1786,7 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1912,7 +1912,7 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -2038,7 +2038,7 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div

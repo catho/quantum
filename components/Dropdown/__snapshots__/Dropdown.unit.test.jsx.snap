@@ -88,7 +88,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -306,7 +306,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -527,7 +527,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -757,7 +757,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -979,7 +979,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1203,7 +1203,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1438,7 +1438,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1673,7 +1673,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1900,7 +1900,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -2118,7 +2118,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -2342,7 +2342,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -2567,7 +2567,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div

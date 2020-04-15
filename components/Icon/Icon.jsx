@@ -118,7 +118,7 @@ const Icon = ({ name, skin, size, ...props }) => {
   if (!components[name]) return <span>{name}</span>;
 
   const SelectedIcon = styled(components[name])`
-    width: 24px;
+    width: 0px;
   `;
 
   return (

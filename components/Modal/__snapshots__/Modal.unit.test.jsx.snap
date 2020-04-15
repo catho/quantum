@@ -185,7 +185,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c14 {
-  width: 24px;
+  width: 0px;
 }
 
 @media (min-width:0px) {
@@ -600,7 +600,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c14 {
-  width: 24px;
+  width: 0px;
 }
 
 @media (min-width:0px) {
@@ -4879,7 +4879,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                                   "isStatic": true,
                                                   "lastClassName": "c14",
                                                   "rules": Array [
-                                                    "width:24px;",
+                                                    "width:0px;",
                                                   ],
                                                 },
                                                 "displayName": "Icon__SelectedIcon",

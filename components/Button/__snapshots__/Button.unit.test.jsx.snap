@@ -910,7 +910,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <button
@@ -1277,7 +1277,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <button
@@ -1644,7 +1644,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <button
@@ -2011,7 +2011,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <button

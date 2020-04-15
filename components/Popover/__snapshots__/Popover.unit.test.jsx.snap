@@ -1104,7 +1104,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -1545,7 +1545,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -4450,7 +4450,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",
@@ -5864,7 +5864,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -6305,7 +6305,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -9210,7 +9210,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",
@@ -10640,7 +10640,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -11097,7 +11097,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -14002,7 +14002,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",
@@ -15448,7 +15448,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -15921,7 +15921,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -18826,7 +18826,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",
@@ -20288,7 +20288,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -20777,7 +20777,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -23682,7 +23682,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",
@@ -25144,7 +25144,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -25633,7 +25633,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -28538,7 +28538,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",
@@ -29997,7 +29997,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -30483,7 +30483,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -33388,7 +33388,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",
@@ -34847,7 +34847,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c6 {
-  width: 24px;
+  width: 0px;
 }
 
 <Popover
@@ -35333,7 +35333,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <section>
@@ -38238,7 +38238,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                               "isStatic": true,
                                               "lastClassName": "c6",
                                               "rules": Array [
-                                                "width:24px;",
+                                                "width:0px;",
                                               ],
                                             },
                                             "displayName": "Icon__SelectedIcon",

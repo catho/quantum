@@ -2078,7 +2078,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
 }
 
 .c7 {
-  width: 24px;
+  width: 0px;
 }
 
 @media (min-width:1024px) {
@@ -4916,7 +4916,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                 "isStatic": true,
                                 "lastClassName": "c7",
                                 "rules": Array [
-                                  "width:24px;",
+                                  "width:0px;",
                                 ],
                               },
                               "displayName": "Icon__SelectedIcon",
@@ -5824,7 +5824,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                                 "isStatic": true,
                                 "lastClassName": "c7",
                                 "rules": Array [
-                                  "width:24px;",
+                                  "width:0px;",
                                 ],
                               },
                               "displayName": "Icon__SelectedIcon",

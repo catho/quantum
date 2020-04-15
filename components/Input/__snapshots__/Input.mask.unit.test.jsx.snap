@@ -61,7 +61,7 @@ exports[`Input component should match snapshots 2`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -256,7 +256,7 @@ exports[`Input component should match snapshots 4`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -433,7 +433,7 @@ exports[`Input component should match snapshots 6`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -722,7 +722,7 @@ exports[`Input component should match snapshots 10`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1161,7 +1161,7 @@ exports[`Input component should match snapshots 17`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div

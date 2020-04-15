@@ -83,7 +83,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <ul

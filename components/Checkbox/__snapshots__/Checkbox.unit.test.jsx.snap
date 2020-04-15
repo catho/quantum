@@ -91,7 +91,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -309,7 +309,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -531,7 +531,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -742,7 +742,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -949,7 +949,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1156,7 +1156,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -1363,7 +1363,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 }
 
 .c3 {
-  width: 24px;
+  width: 0px;
 }
 
 <div

@@ -279,7 +279,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -575,7 +575,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 }
 
 .c5 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
@@ -986,7 +986,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 }
 
 .c4 {
-  width: 24px;
+  width: 0px;
 }
 
 <div
