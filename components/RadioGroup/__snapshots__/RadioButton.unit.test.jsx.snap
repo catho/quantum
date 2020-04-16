@@ -249,7 +249,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c1 .c6 function (_ref6) {
+.c1 .c7 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -257,7 +257,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c1 .c6 function (_ref6) var fontSizes = {
+.c1 .c7 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -265,7 +265,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   margin-left: 8px;
 }
 
-.c5 .c3 {
+.c6 .c3 {
   font-size: 16px;
   margin-left: 8px;
 }
@@ -276,6 +276,10 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c5 {
+  width: 0px;
 }
 
 <div
@@ -303,7 +307,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3 c4"
+      className="MuiSvgIcon-root c3 c4 c5"
       focusable="false"
       role="presentation"
       style={
@@ -541,7 +545,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c1 .c6 function (_ref6) {
+.c1 .c7 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -549,7 +553,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c1 .c6 function (_ref6) var fontSizes = {
+.c1 .c7 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -557,7 +561,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   margin-left: 8px;
 }
 
-.c5 .c3 {
+.c6 .c3 {
   font-size: 16px;
   margin-left: 8px;
 }
@@ -568,6 +572,10 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c5 {
+  width: 0px;
 }
 
 <div
@@ -595,7 +603,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3 c4"
+      className="MuiSvgIcon-root c3 c4 c5"
       focusable="false"
       role="presentation"
       style={
@@ -953,7 +961,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   background-color: #E5EDFC;
 }
 
-.c1 .c4 function (_ref6) {
+.c1 .c5 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -961,7 +969,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c1 .c4 function (_ref6) var fontSizes = {
+.c1 .c5 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -975,6 +983,10 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c4 {
+  width: 0px;
 }
 
 <div
@@ -1001,7 +1013,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3"
+      className="MuiSvgIcon-root c3 c4"
       focusable="false"
       role="presentation"
       style={

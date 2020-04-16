@@ -60,6 +60,10 @@ exports[`Input component should match snapshots 2`] = `
   position: relative;
 }
 
+.c3 {
+  width: 0px;
+}
+
 <div
   className="c0"
 >
@@ -83,7 +87,7 @@ exports[`Input component should match snapshots 2`] = `
     
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2"
+      className="MuiSvgIcon-root c2 c3"
       description=""
       focusable="false"
       onClick={[Function]}
@@ -227,7 +231,7 @@ exports[`Input component should match snapshots 4`] = `
   width: 100%;
 }
 
-.c3 {
+.c4 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -249,6 +253,10 @@ exports[`Input component should match snapshots 4`] = `
 
 .c1 {
   position: relative;
+}
+
+.c3 {
+  width: 0px;
 }
 
 <div
@@ -273,7 +281,7 @@ exports[`Input component should match snapshots 4`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2"
+      className="MuiSvgIcon-root c2 c3"
       description=""
       focusable="false"
       role="presentation"
@@ -355,7 +363,7 @@ exports[`Input component should match snapshots 4`] = `
   </div>
   
   <span
-    className="c3"
+    className="c4"
   >
     Error message
   </span>
@@ -424,6 +432,10 @@ exports[`Input component should match snapshots 6`] = `
   position: relative;
 }
 
+.c3 {
+  width: 0px;
+}
+
 <div
   className="c0"
 >
@@ -434,7 +446,7 @@ exports[`Input component should match snapshots 6`] = `
   >
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2"
+      className="MuiSvgIcon-root c2 c3"
       description=""
       focusable="false"
       role="presentation"
@@ -709,6 +721,10 @@ exports[`Input component should match snapshots 10`] = `
   position: relative;
 }
 
+.c4 {
+  width: 0px;
+}
+
 <div
   className="c0"
 >
@@ -723,7 +739,7 @@ exports[`Input component should match snapshots 10`] = `
   >
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3"
+      className="MuiSvgIcon-root c3 c4"
       description="this is a description label"
       focusable="false"
       role="presentation"
@@ -1144,6 +1160,10 @@ exports[`Input component should match snapshots 17`] = `
   position: relative;
 }
 
+.c3 {
+  width: 0px;
+}
+
 <div
   className="c0"
 >
@@ -1167,7 +1187,7 @@ exports[`Input component should match snapshots 17`] = `
     
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2"
+      className="MuiSvgIcon-root c2 c3"
       description=""
       focusable="false"
       onClick={[Function]}
