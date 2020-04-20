@@ -10,7 +10,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   margin-top: 4px;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -31,7 +31,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   width: 100%;
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -57,14 +57,14 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   font-size: 20px;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -73,21 +73,25 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   cursor: not-allowed;
 }
 
-.c1[disabled] ~ .c3 {
+.c1[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1[disabled] + .c2 {
+.c1[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c1[disabled]:checked + .c2 {
+.c1[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c1[disabled]:hover + .c2 {
+.c1[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
+.c2 {
+  width: 0px;
 }
 
 <div
@@ -108,7 +112,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2 "
+      className="MuiSvgIcon-root c2 c3 "
       focusable="false"
       role="presentation"
       style={
@@ -124,7 +128,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="Label-sc-1ny5bqy-0 c4 c5"
       htmlFor=""
     >
       
@@ -135,7 +139,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 `;
 
 exports[`<Checkbox /> should match the snapshot 2`] = `
-.c5 {
+.c6 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -155,14 +159,14 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   margin-top: 4px;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c6 + .c2 {
+.c7 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -188,32 +192,32 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   font-size: 20px;
 }
 
-.c6:checked + .c2 {
+.c7:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c6:hover + .c2,
-.c6:focus + .c2 {
+.c7:hover + .c3,
+.c7:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c6[disabled] ~ .c3 {
+.c7[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c6[disabled] + .c2 {
+.c7[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c6[disabled]:checked + .c2 {
+.c7[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c6[disabled]:hover + .c2 {
+.c7[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
@@ -231,7 +235,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   width: 100%;
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -257,28 +261,28 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   font-size: 20px;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   border-color: #e91b0c;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   background-color: #e91b0c;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
@@ -287,21 +291,25 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   cursor: not-allowed;
 }
 
-.c1[disabled] ~ .c3 {
+.c1[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1[disabled] + .c2 {
+.c1[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c1[disabled]:checked + .c2 {
+.c1[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c1[disabled]:hover + .c2 {
+.c1[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
+.c2 {
+  width: 0px;
 }
 
 <div
@@ -322,7 +330,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2 "
+      className="MuiSvgIcon-root c2 c3 "
       focusable="false"
       role="presentation"
       style={
@@ -338,14 +346,14 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="Label-sc-1ny5bqy-0 c4 c5"
       htmlFor=""
     >
       
     </label>
   </div>
   <span
-    className="c5"
+    className="c6"
   >
     error message
   </span>
@@ -353,7 +361,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 `;
 
 exports[`<Checkbox /> should match the snapshot 3`] = `
-.c5 {
+.c6 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -373,14 +381,14 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   margin-top: 4px;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c6 + .c2 {
+.c7 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -406,32 +414,32 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   font-size: 20px;
 }
 
-.c6:checked + .c2 {
+.c7:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c6:hover + .c2,
-.c6:focus + .c2 {
+.c7:hover + .c3,
+.c7:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c6[disabled] ~ .c3 {
+.c7[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c6[disabled] + .c2 {
+.c7[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c6[disabled]:checked + .c2 {
+.c7[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c6[disabled]:hover + .c2 {
+.c7[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
@@ -449,7 +457,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   width: 100%;
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -475,28 +483,28 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   font-size: 20px;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   border-color: #e91b0c;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   background-color: #e91b0c;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
@@ -505,21 +513,25 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   cursor: not-allowed;
 }
 
-.c1[disabled] ~ .c3 {
+.c1[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1[disabled] + .c2 {
+.c1[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c1[disabled]:checked + .c2 {
+.c1[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c1[disabled]:hover + .c2 {
+.c1[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
+.c2 {
+  width: 0px;
 }
 
 <div
@@ -540,7 +552,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2 "
+      className="MuiSvgIcon-root c2 c3 "
       focusable="false"
       role="presentation"
       style={
@@ -556,14 +568,14 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="Label-sc-1ny5bqy-0 c4 c5"
       htmlFor=""
     >
       
     </label>
   </div>
   <span
-    className="c5"
+    className="c6"
   >
     error message
   </span>
@@ -580,7 +592,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   margin-top: 4px;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -601,7 +613,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   width: 100%;
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -627,14 +639,14 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   font-size: 20px;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -643,24 +655,24 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   cursor: not-allowed;
 }
 
-.c1[disabled] ~ .c3 {
+.c1[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1[disabled] + .c2 {
+.c1[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c1[disabled]:checked + .c2 {
+.c1[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c1[disabled]:hover + .c2 {
+.c1[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -686,47 +698,51 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   font-size: 20px;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   border-color: #e91b0c;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   background-color: #e91b0c;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c5[disabled] ~ .c3 {
+.c6[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c5[disabled] + .c2 {
+.c6[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c5[disabled]:checked + .c2 {
+.c6[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c5[disabled]:hover + .c2 {
+.c6[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
+.c2 {
+  width: 0px;
 }
 
 <div
@@ -747,7 +763,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2 "
+      className="MuiSvgIcon-root c2 c3 "
       focusable="false"
       role="presentation"
       style={
@@ -763,7 +779,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="Label-sc-1ny5bqy-0 c4 c5"
       htmlFor=""
     >
       
@@ -783,7 +799,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   margin-top: 4px;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -804,7 +820,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   width: 100%;
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -830,14 +846,14 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   font-size: 20px;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -846,24 +862,24 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   cursor: not-allowed;
 }
 
-.c1[disabled] ~ .c3 {
+.c1[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1[disabled] + .c2 {
+.c1[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c1[disabled]:checked + .c2 {
+.c1[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c1[disabled]:hover + .c2 {
+.c1[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -889,47 +905,51 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   font-size: 20px;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   border-color: #e91b0c;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   background-color: #e91b0c;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c5[disabled] ~ .c3 {
+.c6[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c5[disabled] + .c2 {
+.c6[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c5[disabled]:checked + .c2 {
+.c6[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c5[disabled]:hover + .c2 {
+.c6[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
+.c2 {
+  width: 0px;
 }
 
 <div
@@ -950,7 +970,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2 "
+      className="MuiSvgIcon-root c2 c3 "
       focusable="false"
       role="presentation"
       style={
@@ -966,7 +986,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="Label-sc-1ny5bqy-0 c4 c5"
       htmlFor=""
     >
       
@@ -986,7 +1006,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   margin-top: 4px;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -1007,7 +1027,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   width: 100%;
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1033,14 +1053,14 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   font-size: 20px;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -1049,24 +1069,24 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   cursor: not-allowed;
 }
 
-.c1[disabled] ~ .c3 {
+.c1[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1[disabled] + .c2 {
+.c1[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c1[disabled]:checked + .c2 {
+.c1[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c1[disabled]:hover + .c2 {
+.c1[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1092,47 +1112,51 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   font-size: 20px;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   border-color: #e91b0c;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   background-color: #e91b0c;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c5[disabled] ~ .c3 {
+.c6[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c5[disabled] + .c2 {
+.c6[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c5[disabled]:checked + .c2 {
+.c6[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c5[disabled]:hover + .c2 {
+.c6[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
+.c2 {
+  width: 0px;
 }
 
 <div
@@ -1153,7 +1177,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2 "
+      className="MuiSvgIcon-root c2 c3 "
       focusable="false"
       role="presentation"
       style={
@@ -1169,7 +1193,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="Label-sc-1ny5bqy-0 c4 c5"
       htmlFor=""
     >
       Some text
@@ -1189,7 +1213,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   margin-top: 4px;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -1210,7 +1234,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   width: 100%;
 }
 
-.c1 + .c2 {
+.c1 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1236,14 +1260,14 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   font-size: 20px;
 }
 
-.c1:checked + .c2 {
+.c1:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + .c3,
+.c1:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -1252,24 +1276,24 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   cursor: not-allowed;
 }
 
-.c1[disabled] ~ .c3 {
+.c1[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1[disabled] + .c2 {
+.c1[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c1[disabled]:checked + .c2 {
+.c1[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c1[disabled]:hover + .c2 {
+.c1[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1295,47 +1319,51 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   font-size: 20px;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c5 + .c2 {
+.c6 + .c3 {
   border-color: #e91b0c;
 }
 
-.c5:checked + .c2 {
+.c6:checked + .c3 {
   background-color: #e91b0c;
 }
 
-.c5:hover + .c2,
-.c5:focus + .c2 {
+.c6:hover + .c3,
+.c6:focus + .c3 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c5[disabled] ~ .c3 {
+.c6[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c5[disabled] + .c2 {
+.c6[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c5[disabled]:checked + .c2 {
+.c6[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c5[disabled]:hover + .c2 {
+.c6[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
+}
+
+.c2 {
+  width: 0px;
 }
 
 <div
@@ -1356,7 +1384,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c2 "
+      className="MuiSvgIcon-root c2 c3 "
       focusable="false"
       role="presentation"
       style={
@@ -1372,7 +1400,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       />
     </svg>
     <label
-      className="Label-sc-1ny5bqy-0 c3 c4"
+      className="Label-sc-1ny5bqy-0 c4 c5"
       htmlFor=""
     >
       

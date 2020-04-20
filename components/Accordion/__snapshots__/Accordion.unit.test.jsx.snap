@@ -42,7 +42,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   box-sizing: content-box;
 }
 
-.c5 {
+.c6 {
   height: 0;
   -webkit-transform: scaleY(0);
   -ms-transform: scaleY(0);
@@ -57,29 +57,33 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   font-size: 14px;
 }
 
-.c5 a {
+.c6 a {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 14px;
 }
 
-.c5 ul {
+.c6 ul {
   list-style-type: none;
   padding: 0;
 }
 
-.c5 ul > li {
+.c6 ul > li {
   padding: 8px 0;
 }
 
-.c5 p {
+.c6 p {
   margin: 0;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   line-height: inherit;
+}
+
+.c4 {
+  width: 0px;
 }
 
 <ul
@@ -116,7 +120,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4"
+        className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
         style={
@@ -197,7 +201,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Institucional-0-header"
-      className="c5"
+      className="c6"
       id="Institucional-0-content"
     >
       <ul>
@@ -270,7 +274,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4"
+        className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
         style={
@@ -351,7 +355,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Para-candidato-1-header"
-      className="c5"
+      className="c6"
       id="Para-candidato-1-content"
     >
       <p>
@@ -400,7 +404,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4"
+        className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
         style={
@@ -481,7 +485,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Para-Empresa-2-header"
-      className="c5"
+      className="c6"
       id="Para-Empresa-2-content"
     >
       <p>
@@ -530,7 +534,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4"
+        className="MuiSvgIcon-root c4 c5"
         focusable="false"
         role="presentation"
         style={
@@ -611,7 +615,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Educacao-3-header"
-      className="c5"
+      className="c6"
       id="Educacao-3-content"
     >
       <p>

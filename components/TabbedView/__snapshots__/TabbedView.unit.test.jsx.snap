@@ -1248,7 +1248,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   width: 24px;
 }
 
-.c7 {
+.c8 {
   clear: left;
 }
 
@@ -1282,6 +1282,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   padding-right: 2px;
   background-color: #f2f2f2;
   color: #424242;
+}
+
+.c7 {
+  width: 0px;
 }
 
 @media (min-width:1024px) {
@@ -2810,7 +2814,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 skin=""
                 style={Object {}}
               >
-                <ForwardRef
+                <Icon__SelectedIcon
                   style={
                     Object {
                       "color": "",
@@ -2818,7 +2822,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     }
                   }
                 >
-                  <WithStyles(ForwardRef(SvgIcon))
+                  <ForwardRef
+                    className="c7"
                     style={
                       Object {
                         "color": "",
@@ -2826,20 +2831,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       }
                     }
                   >
-                    <ForwardRef(SvgIcon)
-                      classes={
-                        Object {
-                          "colorAction": "MuiSvgIcon-colorAction",
-                          "colorDisabled": "MuiSvgIcon-colorDisabled",
-                          "colorError": "MuiSvgIcon-colorError",
-                          "colorPrimary": "MuiSvgIcon-colorPrimary",
-                          "colorSecondary": "MuiSvgIcon-colorSecondary",
-                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                          "root": "MuiSvgIcon-root",
-                        }
-                      }
+                    <WithStyles(ForwardRef(SvgIcon))
+                      className="c7"
                       style={
                         Object {
                           "color": "",
@@ -2847,26 +2840,49 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                         }
                       }
                     >
-                      <svg
-                        aria-hidden="true"
-                        className="MuiSvgIcon-root"
-                        focusable="false"
-                        role="presentation"
+                      <ForwardRef(SvgIcon)
+                        className="c7"
+                        classes={
+                          Object {
+                            "colorAction": "MuiSvgIcon-colorAction",
+                            "colorDisabled": "MuiSvgIcon-colorDisabled",
+                            "colorError": "MuiSvgIcon-colorError",
+                            "colorPrimary": "MuiSvgIcon-colorPrimary",
+                            "colorSecondary": "MuiSvgIcon-colorSecondary",
+                            "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                            "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                            "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                            "root": "MuiSvgIcon-root",
+                          }
+                        }
                         style={
                           Object {
                             "color": "",
                             "fontSize": 24,
                           }
                         }
-                        viewBox="0 0 24 24"
                       >
-                        <path
-                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                        />
-                      </svg>
-                    </ForwardRef(SvgIcon)>
-                  </WithStyles(ForwardRef(SvgIcon))>
-                </ForwardRef>
+                        <svg
+                          aria-hidden="true"
+                          className="MuiSvgIcon-root c7"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "color": "",
+                              "fontSize": 24,
+                            }
+                          }
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </ForwardRef(SvgIcon)>
+                    </WithStyles(ForwardRef(SvgIcon))>
+                  </ForwardRef>
+                </Icon__SelectedIcon>
               </Icon>
             </div>
           </TabbedView__IconContainer>
@@ -3240,7 +3256,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 skin=""
                 style={Object {}}
               >
-                <ForwardRef
+                <Icon__SelectedIcon
                   style={
                     Object {
                       "color": "",
@@ -3248,7 +3264,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     }
                   }
                 >
-                  <WithStyles(ForwardRef(SvgIcon))
+                  <ForwardRef
+                    className="c7"
                     style={
                       Object {
                         "color": "",
@@ -3256,20 +3273,8 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       }
                     }
                   >
-                    <ForwardRef(SvgIcon)
-                      classes={
-                        Object {
-                          "colorAction": "MuiSvgIcon-colorAction",
-                          "colorDisabled": "MuiSvgIcon-colorDisabled",
-                          "colorError": "MuiSvgIcon-colorError",
-                          "colorPrimary": "MuiSvgIcon-colorPrimary",
-                          "colorSecondary": "MuiSvgIcon-colorSecondary",
-                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                          "root": "MuiSvgIcon-root",
-                        }
-                      }
+                    <WithStyles(ForwardRef(SvgIcon))
+                      className="c7"
                       style={
                         Object {
                           "color": "",
@@ -3277,26 +3282,49 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                         }
                       }
                     >
-                      <svg
-                        aria-hidden="true"
-                        className="MuiSvgIcon-root"
-                        focusable="false"
-                        role="presentation"
+                      <ForwardRef(SvgIcon)
+                        className="c7"
+                        classes={
+                          Object {
+                            "colorAction": "MuiSvgIcon-colorAction",
+                            "colorDisabled": "MuiSvgIcon-colorDisabled",
+                            "colorError": "MuiSvgIcon-colorError",
+                            "colorPrimary": "MuiSvgIcon-colorPrimary",
+                            "colorSecondary": "MuiSvgIcon-colorSecondary",
+                            "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                            "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                            "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                            "root": "MuiSvgIcon-root",
+                          }
+                        }
                         style={
                           Object {
                             "color": "",
                             "fontSize": 24,
                           }
                         }
-                        viewBox="0 0 24 24"
                       >
-                        <path
-                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                        />
-                      </svg>
-                    </ForwardRef(SvgIcon)>
-                  </WithStyles(ForwardRef(SvgIcon))>
-                </ForwardRef>
+                        <svg
+                          aria-hidden="true"
+                          className="MuiSvgIcon-root c7"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "color": "",
+                              "fontSize": 24,
+                            }
+                          }
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </ForwardRef(SvgIcon)>
+                    </WithStyles(ForwardRef(SvgIcon))>
+                  </ForwardRef>
+                </Icon__SelectedIcon>
               </Icon>
             </div>
           </TabbedView__IconContainer>
@@ -3802,7 +3830,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
     >
       <div
         aria-labelledby="with-badge-tab"
-        className="c7"
+        className="c8"
         id="with-badge-panel"
         role="tabpanel"
       >

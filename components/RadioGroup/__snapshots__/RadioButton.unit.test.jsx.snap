@@ -261,7 +261,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c3 {
+.c4 {
   margin-left: 8px;
 }
 
@@ -271,6 +271,10 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c3 {
+  width: 0px;
 }
 
 <div
@@ -298,7 +302,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3"
+      className="MuiSvgIcon-root c3 c4"
       focusable="false"
       role="presentation"
       style={
@@ -548,7 +552,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c3 {
+.c4 {
   margin-left: 8px;
 }
 
@@ -558,6 +562,10 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c3 {
+  width: 0px;
 }
 
 <div
@@ -585,7 +593,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3"
+      className="MuiSvgIcon-root c3 c4"
       focusable="false"
       role="presentation"
       style={
@@ -955,7 +963,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c3 {
+.c4 {
   margin-right: 8px;
 }
 
@@ -965,6 +973,10 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c3 {
+  width: 0px;
 }
 
 <div
@@ -991,7 +1003,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3"
+      className="MuiSvgIcon-root c3 c4"
       focusable="false"
       role="presentation"
       style={
