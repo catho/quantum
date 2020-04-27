@@ -91,4 +91,23 @@ describe('<TabbedView /> ', () => {
       expect(wrapper.html()).toContain('Educação content');
     });
   });
+
+  describe('events', () => {
+    const onTabClickEventMock = jest.fn();
+
+    it('should trigger the callback when the tab is clicked', () => {
+      const component = mount(
+        <TabbedView onTabClick={onTabClickEventMock}>
+          <Tab title="Candidates">Candidates content</Tab>
+          <Tab title="Companies">Companies content</Tab>
+          <Tab title="Education">Education content</Tab>
+        </TabbedView>,
+      );
+
+      const secondNavItem = component.find('NavItem').at(1);
+      secondNavItem.simulate('click');
+
+      expect(onTabClickEventMock).toHaveBeenCalled();
+    });
+  });
 });
