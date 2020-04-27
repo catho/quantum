@@ -143,7 +143,7 @@ const components = {
       small: '100%',
       medium: '980px',
       large: '1180px',
-      xlarge: '1180px',
+      xlarge: '1440px',
     },
   },
   tag: {
