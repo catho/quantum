@@ -90,6 +90,7 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
 
 <TabbedView
   fluid={false}
+  onTabClick={[Function]}
   skin="neutral"
   theme={
     Object {
@@ -2089,6 +2090,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
 
 <TabbedView
   fluid={false}
+  onTabClick={[Function]}
   skin="neutral"
   theme={
     Object {
@@ -7128,6 +7130,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
 
 <TabbedView
   fluid={true}
+  onTabClick={[Function]}
   skin="neutral"
   theme={
     Object {

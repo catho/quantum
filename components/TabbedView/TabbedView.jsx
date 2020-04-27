@@ -182,8 +182,9 @@ class TabbedView extends React.Component {
     }
   }
 
-  onTabClick = tab => {
+  onTabClick = (tab, onTabClick) => {
     this.setState({ activeTab: tab });
+    onTabClick();
   };
 
   sanitize = str =>
@@ -194,7 +195,7 @@ class TabbedView extends React.Component {
       .toLowerCase();
 
   render() {
-    const { children, skin, theme, fluid } = this.props;
+    const { children, skin, theme, fluid, onTabClick } = this.props;
     const { activeTab } = this.state;
 
     return (
@@ -204,7 +205,7 @@ class TabbedView extends React.Component {
             <NavItem
               fluid={fluid}
               key={title}
-              onClick={() => this.onTabClick(title)}
+              onClick={() => this.onTabClick(title, onTabClick)}
               skin={skin}
               theme={theme}
               id={`${this.sanitize(title)}-tab`}
@@ -255,6 +256,7 @@ TabbedView.propTypes = {
     breakpoints: PropTypes.object,
     spacing: PropTypes.object,
   }),
+  onTabClick: PropTypes.func,
 };
 
 TabbedView.defaultProps = {
@@ -267,6 +269,7 @@ TabbedView.defaultProps = {
     breakpoints: defaultBreakpoints,
     spacing: defaultSpacing,
   },
+  onTabClick: () => {},
 };
 
 TabbedView.displayName = 'TabbedView';
