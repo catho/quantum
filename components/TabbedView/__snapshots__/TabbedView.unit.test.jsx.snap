@@ -285,10 +285,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
         },
         "container": Object {
           "breakpoints": Object {
-            "large": "1180px",
-            "medium": "980px",
+            "large": "1440px",
+            "medium": "1024px",
             "small": "100%",
-            "xlarge": "1440px",
+            "xlarge": "1920px",
             "xsmall": "100%,",
           },
         },
@@ -623,10 +623,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
           },
           "container": Object {
             "breakpoints": Object {
-              "large": "1180px",
-              "medium": "980px",
+              "large": "1440px",
+              "medium": "1024px",
               "small": "100%",
-              "xlarge": "1440px",
+              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -989,10 +989,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
             },
             "container": Object {
               "breakpoints": Object {
-                "large": "1180px",
-                "medium": "980px",
+                "large": "1440px",
+                "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1440px",
+                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -1336,10 +1336,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -1706,10 +1706,10 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -2284,10 +2284,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
         },
         "container": Object {
           "breakpoints": Object {
-            "large": "1180px",
-            "medium": "980px",
+            "large": "1440px",
+            "medium": "1024px",
             "small": "100%",
-            "xlarge": "1440px",
+            "xlarge": "1920px",
             "xsmall": "100%,",
           },
         },
@@ -2622,10 +2622,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
           },
           "container": Object {
             "breakpoints": Object {
-              "large": "1180px",
-              "medium": "980px",
+              "large": "1440px",
+              "medium": "1024px",
               "small": "100%",
-              "xlarge": "1440px",
+              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -2988,10 +2988,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             },
             "container": Object {
               "breakpoints": Object {
-                "large": "1180px",
-                "medium": "980px",
+                "large": "1440px",
+                "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1440px",
+                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -3335,10 +3335,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -3705,10 +3705,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -4343,10 +4343,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -4713,10 +4713,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -5251,10 +5251,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -5621,10 +5621,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -6410,10 +6410,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -6780,10 +6780,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -7323,10 +7323,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
         },
         "container": Object {
           "breakpoints": Object {
-            "large": "1180px",
-            "medium": "980px",
+            "large": "1440px",
+            "medium": "1024px",
             "small": "100%",
-            "xlarge": "1440px",
+            "xlarge": "1920px",
             "xsmall": "100%,",
           },
         },
@@ -7661,10 +7661,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
           },
           "container": Object {
             "breakpoints": Object {
-              "large": "1180px",
-              "medium": "980px",
+              "large": "1440px",
+              "medium": "1024px",
               "small": "100%",
-              "xlarge": "1440px",
+              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -8027,10 +8027,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
             },
             "container": Object {
               "breakpoints": Object {
-                "large": "1180px",
-                "medium": "980px",
+                "large": "1440px",
+                "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1440px",
+                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -8374,10 +8374,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -8744,10 +8744,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -9131,10 +9131,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -9501,10 +9501,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -9888,10 +9888,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                 },
                 "container": Object {
                   "breakpoints": Object {
-                    "large": "1180px",
-                    "medium": "980px",
+                    "large": "1440px",
+                    "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1440px",
+                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -10258,10 +10258,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   },
                   "container": Object {
                     "breakpoints": Object {
-                      "large": "1180px",
-                      "medium": "980px",
+                      "large": "1440px",
+                      "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1440px",
+                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },

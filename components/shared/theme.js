@@ -141,9 +141,9 @@ const components = {
     breakpoints: {
       xsmall: '100%,',
       small: '100%',
-      medium: '980px',
-      large: '1180px',
-      xlarge: '1440px',
+      medium: '1024px',
+      large: '1440px',
+      xlarge: '1920px',
     },
   },
   tag: {

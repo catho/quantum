@@ -605,21 +605,21 @@ exports[`<Container /> with withBreakpoints prop should have a fixed width 1`] =
 
 @media (min-width:1024px) {
   .c1 {
-    width: 980px;
+    width: 1024px;
     padding: 24px;
   }
 }
 
 @media (min-width:1440px) {
   .c1 {
-    width: 1180px;
+    width: 1440px;
     padding: 24px;
   }
 }
 
 @media (min-width:1920px) {
   .c1 {
-    width: 1440px;
+    width: 1920px;
     padding: 24px;
   }
 }
