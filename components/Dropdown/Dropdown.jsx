@@ -399,6 +399,7 @@ const Dropdown = ({
                       hasLabel={hasLabel}
                       id={_id}
                       autocomplete={autocomplete}
+                      {...rest}
                     />
                     {isOpen ? (
                       <InputArrowUp theme={theme} />
