@@ -130,6 +130,20 @@ describe('Dropdown component ', () => {
 
     expect(input.prop('name')).toMatch(INPUT_NAME);
   });
+
+  it('should have all the properties passed to input (autocomplete)', () => {
+    const component = mount(
+      <Dropdown
+        autocomplete
+        id="input-autocomplete"
+        data-gtm-event-category="some-value"
+      />,
+    );
+    const input = component.find('DropInput').find('input');
+
+    expect(input.prop('id')).toEqual('input-autocomplete');
+    expect(input.prop('data-gtm-event-category')).toEqual('some-value');
+  });
 });
 
 describe('with an "onChange" callback set', () => {
