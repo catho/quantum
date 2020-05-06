@@ -13,9 +13,10 @@ export interface TabbedViewProps {
         breakpoints?: object;
         spacing?: object;
     };
+    onClick?: () => void;
 }
 
-export class TabbedView extends React.Component<TabbedViewProps> {}
+export class TabbedView extends React.Component<TabbedViewProps> { }
 
 export interface TabProps {
     title: string;
@@ -24,4 +25,4 @@ export interface TabProps {
     children: React.ReactNode[] | React.ReactNode;
 }
 
-export class Tab extends React.Component<TabProps> {}
+export class Tab extends React.Component<TabProps> { }
