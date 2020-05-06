@@ -97,7 +97,7 @@ describe('<Pagination />', () => {
           .at(2)
           .simulate('click');
 
-        expect(onPageClickMock).toHaveBeenCalledWith(3);
+        expect(onPageClickMock).toHaveBeenCalledWith(3, expect.any(Object));
       });
     });
 
@@ -145,7 +145,7 @@ describe('<Pagination />', () => {
           .at(0)
           .simulate('click');
 
-        expect(onPageClickMock).toHaveBeenCalledWith(1);
+        expect(onPageClickMock).toHaveBeenCalledWith(1, expect.any(Object));
       });
 
       it('should receive next page as onClick parameter when next button is clicked', () => {
@@ -163,7 +163,7 @@ describe('<Pagination />', () => {
           .at(1)
           .simulate('click');
 
-        expect(onPageClickMock).toHaveBeenCalledWith(3);
+        expect(onPageClickMock).toHaveBeenCalledWith(3, expect.any(Object));
       });
     });
   });
