@@ -231,17 +231,18 @@ storiesOf('Pagination', module).add('Pagination', () => (
             </Col>
           </Row>
 
-          <Title as="h3">onClickPage prop</Title>
+          <Title as="h3">onPageClick prop</Title>
           <p>
-            Through <code>onClickPage</code> prop is possible to get the page
+            Through <code>onPageClick</code> prop is possible to get the page
             clicked.
           </p>
           <p>
             This prop must be a function and it{' '}
-            <strong>receives the page clicked number</strong>.
+            <strong>receives the page clicked number and a event</strong> (open
+            console, click in the pages and see).
           </p>
           <p>
-            If you set <code>onClickPage</code> prop the <code>pageHref</code>{' '}
+            If you set <code>onPageClick</code> prop the <code>pageHref</code>{' '}
             prop will be ignored.
           </p>
           <p>

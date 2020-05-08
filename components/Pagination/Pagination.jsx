@@ -48,7 +48,7 @@ class Pagination extends React.Component {
         return false;
       }
 
-      return onPageClick(page);
+      return onPageClick(page, e);
     };
 
     const handleHref = page => {
