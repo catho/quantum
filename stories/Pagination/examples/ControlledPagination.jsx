@@ -11,7 +11,8 @@ class ControlledPagination extends Component {
     };
   }
 
-  handleClick = nextPage => {
+  handleClick = (nextPage, event) => {
+    console.log(event.target);
     this.setState({ activePage: nextPage });
   };
 
@@ -40,7 +41,8 @@ class ControlledPagination extends Component {
     };
   }
 
-  handleClick = nextPage => {
+  handleClick = (nextPage, event) => {
+    console.log(event);
     this.setState({ activePage: nextPage });
   };
 

@@ -193,6 +193,55 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
             </Col>
           </Row>
         </StoryContainer>
+        <StoryContainer>
+          <Row>
+            <Col>
+              <h2>Example with callback prop in tabs</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col key="col-1" xsmall={2} small={4} medium={6}>
+              <SimpleHighlight>
+                {`
+  import { TabbedView, Tab, Icon, Badge } from '@catho/quantum';
+  
+  <TabbedView
+    fluid // optional
+    skin="primary" // optional
+    activeTab="With badge" // optional
+    onTabClick={() => console.log('onTabClick callback called!')} //optional
+  >
+    <TabbedView.Tab title="Candidates lorem ipsum dolor sit amet consectur">
+        Candidates content fluid
+    </TabbedView.Tab>
+    <TabbedView.Tab title="Companies">
+      Companies content fluid
+    </TabbedView.Tab>
+    <TabbedView.Tab title="Education">
+      Education content fluid
+    </TabbedView.Tab>
+  </TabbedView>
+                `}
+              </SimpleHighlight>
+            </Col>
+            <Col key="col-2" xsmall={2} small={4} medium={6}>
+              <QuantumTabbedView
+                fluid
+                onTabClick={() => console.log('onTabClick callback called!')}
+              >
+                <QuantumTabbedView.Tab title="Candidates lorem ipsum dolor sit amet consectur">
+                  Candidates content fluid
+                </QuantumTabbedView.Tab>
+                <QuantumTabbedView.Tab title="Companies">
+                  Companies content fluid
+                </QuantumTabbedView.Tab>
+                <QuantumTabbedView.Tab title="Education">
+                  Education content fluid
+                </QuantumTabbedView.Tab>
+              </QuantumTabbedView>
+            </Col>
+          </Row>
+        </StoryContainer>
       </Tab>
       <Tab title="API">
         <AutoPropsApi component={QuantumTabbedView} title="TabbedView" />
