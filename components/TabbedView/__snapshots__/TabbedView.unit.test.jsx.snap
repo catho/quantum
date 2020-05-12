@@ -2042,7 +2042,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   width: 24px;
 }
 
-.c8 {
+.c7 {
   clear: left;
 }
 
@@ -2076,10 +2076,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   padding-right: 2px;
   background-color: #f2f2f2;
   color: #424242;
-}
-
-.c7 {
-  width: 0px;
 }
 
 @media (min-width:1024px) {
@@ -4899,118 +4895,71 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <Icon__SelectedIcon
+                      <ForwardRef
+                        data-qtm-preloader="icon"
                         style={
                           Object {
                             "color": "",
                             "fontSize": 24,
+                            "maxWidth": 24,
                           }
                         }
                       >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "compare": null,
-                              "componentStyle": ComponentStyle {
-                                "componentId": "Icon__SelectedIcon-mfzsxw-0",
-                                "isStatic": true,
-                                "lastClassName": "c7",
-                                "rules": Array [
-                                  "width:0px;",
-                                ],
-                              },
-                              "displayName": "Icon__SelectedIcon",
-                              "foldedComponentIds": Array [],
-                              "muiName": "SvgIcon",
-                              "render": [Function],
-                              "styledComponentId": "Icon__SelectedIcon-mfzsxw-0",
-                              "target": Object {
-                                "$$typeof": Symbol(react.memo),
-                                "compare": null,
-                                "displayName": "StarIcon",
-                                "muiName": "SvgIcon",
-                                "type": Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "render": [Function],
-                                },
-                              },
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
+                        <WithStyles(ForwardRef(SvgIcon))
+                          data-qtm-preloader="icon"
                           style={
                             Object {
                               "color": "",
                               "fontSize": 24,
+                              "maxWidth": 24,
                             }
                           }
                         >
-                          <ForwardRef
-                            className="c7"
+                          <ForwardRef(SvgIcon)
+                            classes={
+                              Object {
+                                "colorAction": "MuiSvgIcon-colorAction",
+                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                "colorError": "MuiSvgIcon-colorError",
+                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                "root": "MuiSvgIcon-root",
+                              }
+                            }
+                            data-qtm-preloader="icon"
                             style={
                               Object {
                                 "color": "",
                                 "fontSize": 24,
+                                "maxWidth": 24,
                               }
                             }
                           >
-                            <WithStyles(ForwardRef(SvgIcon))
-                              className="c7"
+                            <svg
+                              aria-hidden="true"
+                              className="MuiSvgIcon-root"
+                              data-qtm-preloader="icon"
+                              focusable="false"
+                              role="presentation"
                               style={
                                 Object {
                                   "color": "",
                                   "fontSize": 24,
+                                  "maxWidth": 24,
                                 }
                               }
+                              viewBox="0 0 24 24"
                             >
-                              <ForwardRef(SvgIcon)
-                                className="c7"
-                                classes={
-                                  Object {
-                                    "colorAction": "MuiSvgIcon-colorAction",
-                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                    "colorError": "MuiSvgIcon-colorError",
-                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                    "root": "MuiSvgIcon-root",
-                                  }
-                                }
-                                style={
-                                  Object {
-                                    "color": "",
-                                    "fontSize": 24,
-                                  }
-                                }
-                              >
-                                <svg
-                                  aria-hidden="true"
-                                  className="MuiSvgIcon-root c7"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "color": "",
-                                      "fontSize": 24,
-                                    }
-                                  }
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                                  />
-                                </svg>
-                              </ForwardRef(SvgIcon)>
-                            </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
-                        </StyledComponent>
-                      </Icon__SelectedIcon>
+                              <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                              />
+                            </svg>
+                          </ForwardRef(SvgIcon)>
+                        </WithStyles(ForwardRef(SvgIcon))>
+                      </ForwardRef>
                     </Icon>
                   </div>
                 </StyledComponent>
@@ -5807,118 +5756,71 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       skin=""
                       style={Object {}}
                     >
-                      <Icon__SelectedIcon
+                      <ForwardRef
+                        data-qtm-preloader="icon"
                         style={
                           Object {
                             "color": "",
                             "fontSize": 24,
+                            "maxWidth": 24,
                           }
                         }
                       >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "compare": null,
-                              "componentStyle": ComponentStyle {
-                                "componentId": "Icon__SelectedIcon-mfzsxw-0",
-                                "isStatic": true,
-                                "lastClassName": "c7",
-                                "rules": Array [
-                                  "width:0px;",
-                                ],
-                              },
-                              "displayName": "Icon__SelectedIcon",
-                              "foldedComponentIds": Array [],
-                              "muiName": "SvgIcon",
-                              "render": [Function],
-                              "styledComponentId": "Icon__SelectedIcon-mfzsxw-0",
-                              "target": Object {
-                                "$$typeof": Symbol(react.memo),
-                                "compare": null,
-                                "displayName": "StarIcon",
-                                "muiName": "SvgIcon",
-                                "type": Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "render": [Function],
-                                },
-                              },
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
+                        <WithStyles(ForwardRef(SvgIcon))
+                          data-qtm-preloader="icon"
                           style={
                             Object {
                               "color": "",
                               "fontSize": 24,
+                              "maxWidth": 24,
                             }
                           }
                         >
-                          <ForwardRef
-                            className="c7"
+                          <ForwardRef(SvgIcon)
+                            classes={
+                              Object {
+                                "colorAction": "MuiSvgIcon-colorAction",
+                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                "colorError": "MuiSvgIcon-colorError",
+                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                "root": "MuiSvgIcon-root",
+                              }
+                            }
+                            data-qtm-preloader="icon"
                             style={
                               Object {
                                 "color": "",
                                 "fontSize": 24,
+                                "maxWidth": 24,
                               }
                             }
                           >
-                            <WithStyles(ForwardRef(SvgIcon))
-                              className="c7"
+                            <svg
+                              aria-hidden="true"
+                              className="MuiSvgIcon-root"
+                              data-qtm-preloader="icon"
+                              focusable="false"
+                              role="presentation"
                               style={
                                 Object {
                                   "color": "",
                                   "fontSize": 24,
+                                  "maxWidth": 24,
                                 }
                               }
+                              viewBox="0 0 24 24"
                             >
-                              <ForwardRef(SvgIcon)
-                                className="c7"
-                                classes={
-                                  Object {
-                                    "colorAction": "MuiSvgIcon-colorAction",
-                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                    "colorError": "MuiSvgIcon-colorError",
-                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                    "root": "MuiSvgIcon-root",
-                                  }
-                                }
-                                style={
-                                  Object {
-                                    "color": "",
-                                    "fontSize": 24,
-                                  }
-                                }
-                              >
-                                <svg
-                                  aria-hidden="true"
-                                  className="MuiSvgIcon-root c7"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "color": "",
-                                      "fontSize": 24,
-                                    }
-                                  }
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                                  />
-                                </svg>
-                              </ForwardRef(SvgIcon)>
-                            </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
-                        </StyledComponent>
-                      </Icon__SelectedIcon>
+                              <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                              />
+                            </svg>
+                          </ForwardRef(SvgIcon)>
+                        </WithStyles(ForwardRef(SvgIcon))>
+                      </ForwardRef>
                     </Icon>
                   </div>
                 </StyledComponent>
@@ -6989,7 +6891,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             "componentStyle": ComponentStyle {
               "componentId": "TabbedView__TabPanel-sc-131sgnr-5",
               "isStatic": true,
-              "lastClassName": "c8",
+              "lastClassName": "c7",
               "rules": Array [
                 "clear:left;",
               ],
@@ -7010,7 +6912,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
       >
         <div
           aria-labelledby="with-badge-tab"
-          className="c8"
+          className="c7"
           id="with-badge-panel"
           role="tabpanel"
         >

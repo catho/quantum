@@ -87,10 +87,6 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -134,13 +130,15 @@ exports[`Dropdown component  should match the snapshot 1`] = `
       Select an option
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -305,10 +303,6 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -352,13 +346,15 @@ exports[`Dropdown component  should match the snapshot 2`] = `
       Dropdown placeholder
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -526,10 +522,6 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -573,13 +565,15 @@ exports[`Dropdown component  should match the snapshot 3`] = `
       
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -665,7 +659,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   width: 100%;
 }
 
-.c5 {
+.c4 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -756,10 +750,6 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -803,13 +793,15 @@ exports[`Dropdown component  should match the snapshot 4`] = `
       Select an option
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -884,7 +876,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   </div>
   
   <span
-    className="c5"
+    className="c4"
   >
     Error message
   </span>
@@ -978,10 +970,6 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -1025,13 +1013,15 @@ exports[`Dropdown component  should match the snapshot 5`] = `
       Select an option
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1202,10 +1192,6 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   position: relative;
 }
 
-.c5 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -1256,13 +1242,15 @@ exports[`Dropdown component  should match the snapshot 6`] = `
       Select an option
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5"
+        className="MuiSvgIcon-root c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1437,10 +1425,6 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   position: relative;
 }
 
-.c6 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -1496,13 +1480,15 @@ exports[`Dropdown component  should match the snapshot 7`] = `
       Select an option
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c5 c6"
+        className="MuiSvgIcon-root c5"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1672,10 +1658,6 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -1728,13 +1710,15 @@ exports[`Dropdown component  should match the snapshot 8`] = `
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1899,10 +1883,6 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -1946,13 +1926,15 @@ exports[`Dropdown component  should match the snapshot 9`] = `
       Select an option
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -2117,10 +2099,6 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -2164,13 +2142,15 @@ exports[`Dropdown component  should match the snapshot 10`] = `
       baz
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -2341,10 +2321,6 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   position: relative;
 }
 
-.c5 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -2395,13 +2371,15 @@ exports[`Dropdown component  should match the snapshot 11`] = `
       What credit card do you prefer?
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5"
+        className="MuiSvgIcon-root c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -2566,10 +2544,6 @@ exports[`Dropdown component  should match the snapshot 12`] = `
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="c0"
 >
@@ -2613,13 +2587,15 @@ exports[`Dropdown component  should match the snapshot 12`] = `
       Select an option
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4"
+        className="MuiSvgIcon-root c3"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={

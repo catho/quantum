@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import AccessibleForward from '@material-ui/icons/AccessibleForward';
 import Add from '@material-ui/icons/Add';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
@@ -117,12 +116,14 @@ const Icon = ({ name, skin, size, ...props }) => {
 
   if (!components[name]) return <span>{name}</span>;
 
-  const SelectedIcon = styled(components[name])`
-    width: 0px;
-  `;
+  const SelectedIcon = components[name];
 
   return (
-    <SelectedIcon {...props} style={{ color: skin, fontSize: sizes[size] }}>
+    <SelectedIcon
+      {...props}
+      style={{ color: skin, fontSize: sizes[size], maxWidth: sizes[size] }}
+      data-qtm-preloader="icon"
+    >
       {name}
     </SelectedIcon>
   );

@@ -42,7 +42,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   box-sizing: content-box;
 }
 
-.c6 {
+.c5 {
   height: 0;
   -webkit-transform: scaleY(0);
   -ms-transform: scaleY(0);
@@ -57,33 +57,29 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   font-size: 14px;
 }
 
-.c6 a {
+.c5 a {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 14px;
 }
 
-.c6 ul {
+.c5 ul {
   list-style-type: none;
   padding: 0;
 }
 
-.c6 ul > li {
+.c5 ul > li {
   padding: 8px 0;
 }
 
-.c6 p {
+.c5 p {
   margin: 0;
 }
 
 .c4 {
   font-size: 24px;
   line-height: inherit;
-}
-
-.c5 {
-  width: 0px;
 }
 
 <ul
@@ -120,13 +116,15 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5"
+        className="MuiSvgIcon-root c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -201,7 +199,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Institucional-0-header"
-      className="c6"
+      className="c5"
       id="Institucional-0-content"
     >
       <ul>
@@ -274,13 +272,15 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5"
+        className="MuiSvgIcon-root c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -355,7 +355,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Para-candidato-1-header"
-      className="c6"
+      className="c5"
       id="Para-candidato-1-content"
     >
       <p>
@@ -404,13 +404,15 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5"
+        className="MuiSvgIcon-root c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -485,7 +487,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Para-Empresa-2-header"
-      className="c6"
+      className="c5"
       id="Para-Empresa-2-content"
     >
       <p>
@@ -534,13 +536,15 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       </span>
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5"
+        className="MuiSvgIcon-root c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -615,7 +619,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Educacao-3-header"
-      className="c6"
+      className="c5"
       id="Educacao-3-content"
     >
       <p>
