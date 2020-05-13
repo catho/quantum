@@ -26,13 +26,15 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
         />
         <svg
           aria-hidden=\\"true\\"
-          className=\\"MuiSvgIcon-root Icon__SelectedIcon-mfzsxw-0 CbjdY Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          data-qtm-preloader=\\"icon\\"
           focusable=\\"false\\"
           role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
               \\"fontSize\\": 24,
+              \\"maxWidth\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -68,13 +70,15 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
         />
         <svg
           aria-hidden=\\"true\\"
-          className=\\"MuiSvgIcon-root Icon__SelectedIcon-mfzsxw-0 CbjdY Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          data-qtm-preloader=\\"icon\\"
           focusable=\\"false\\"
           role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
               \\"fontSize\\": 24,
+              \\"maxWidth\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -110,13 +114,15 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
         />
         <svg
           aria-hidden=\\"true\\"
-          className=\\"MuiSvgIcon-root Icon__SelectedIcon-mfzsxw-0 CbjdY Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3 kecMHD\\"
+          data-qtm-preloader=\\"icon\\"
           focusable=\\"false\\"
           role=\\"presentation\\"
           style={
             Object {
               \\"color\\": \\"\\",
               \\"fontSize\\": 24,
+              \\"maxWidth\\": 24,
             }
           }
           viewBox=\\"0 0 24 24\\"
@@ -419,7 +425,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -440,7 +446,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   width: 100%;
 }
 
-.c2 + .c4 {
+.c2 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -466,14 +472,14 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   font-size: 20px;
 }
 
-.c2:checked + .c4 {
+.c2:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c2:hover + .c4,
-.c2:focus + .c4 {
+.c2:hover + .c3,
+.c2:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -482,20 +488,20 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c5 {
+.c2[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c2[disabled] + .c4 {
+.c2[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c2[disabled]:checked + .c4 {
+.c2[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c2[disabled]:hover + .c4 {
+.c2[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
@@ -505,10 +511,6 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -532,13 +534,15 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -548,7 +552,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Foo
@@ -573,13 +577,15 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -589,7 +595,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Bar
@@ -614,13 +620,15 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -630,7 +638,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Baz
@@ -650,7 +658,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -671,7 +679,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   width: 100%;
 }
 
-.c2 + .c4 {
+.c2 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -697,14 +705,14 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   font-size: 20px;
 }
 
-.c2:checked + .c4 {
+.c2:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c2:hover + .c4,
-.c2:focus + .c4 {
+.c2:hover + .c3,
+.c2:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -713,20 +721,20 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c5 {
+.c2[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c2[disabled] + .c4 {
+.c2[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c2[disabled]:checked + .c4 {
+.c2[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c2[disabled]:hover + .c4 {
+.c2[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
@@ -736,10 +744,6 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -763,13 +767,15 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -779,7 +785,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Foo
@@ -804,13 +810,15 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -820,7 +828,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Bar
@@ -845,13 +853,15 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -861,7 +871,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Baz
@@ -1046,7 +1056,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] = `
-.c6 {
+.c5 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -1097,7 +1107,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   background-color: #E5EDFC;
 }
 
-.c2 .c5 function (_ref6) {
+.c2 .c4 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -1105,11 +1115,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c5 function (_ref6) var fontSizes = {
+.c2 .c4 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c7 {
+.c6 {
   border: 0;
   height: 0;
   margin: 0;
@@ -1141,10 +1151,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   position: relative;
 }
 
-.c4 {
-  width: 0px;
-}
-
 <div
   className="FieldGroup-sc-18uoi37-0 c0"
 >
@@ -1162,13 +1168,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5 c6"
+        className="MuiSvgIcon-root c4 c5"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1378,7 +1386,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       </svg>
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c7"
+        className="HiddenInput-sc-14w753s-0 c6"
         disabled={false}
         id="checkbox-button-18"
         name="Foo"
@@ -1404,7 +1412,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c7"
+        className="HiddenInput-sc-14w753s-0 c6"
         disabled={false}
         id="checkbox-button-19"
         name="Bar"
@@ -1429,13 +1437,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c4 c5 c6"
+        className="MuiSvgIcon-root c4 c5"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1645,7 +1655,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
       </svg>
       <input
         checked={false}
-        className="HiddenInput-sc-14w753s-0 c7"
+        className="HiddenInput-sc-14w753s-0 c6"
         disabled={false}
         id="checkbox-button-20"
         name="Baz"
@@ -1891,7 +1901,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c7 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1920,23 +1930,23 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c7:hover {
+.c6:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c7:focus,
-.c7:focus-within {
+.c6:focus,
+.c6:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c7:active {
+.c6:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c7 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
+.c6 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -1944,11 +1954,11 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c7 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
+.c6 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c8 {
+.c7 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1977,7 +1987,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c8 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
+.c7 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -1985,7 +1995,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c8 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
+.c7 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -2000,7 +2010,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   width: 0;
 }
 
-.c1 .c6 {
+.c1 .c5 {
   font-size: 17px;
   margin-left: 8px;
 }
@@ -2019,10 +2029,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-.c5 {
-  width: 0px;
 }
 
 <div
@@ -2054,13 +2060,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
       Foo
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c5 c6 "
+        className="MuiSvgIcon-root c5 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2076,7 +2084,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   >
     <label
       checked={false}
-      className="c7 c3"
+      className="c6 c3"
       disabled={false}
       htmlFor="checkbox-button-10"
       onClick={[Function]}
@@ -2102,7 +2110,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   >
     <label
       checked={true}
-      className="c8 c3"
+      className="c7 c3"
       disabled={true}
       htmlFor="checkbox-button-11"
       onClick={[Function]}
@@ -2123,13 +2131,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
       Baz
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c5 c6 "
+        className="MuiSvgIcon-root c5 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2144,7 +2154,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an error 1`] = `
-.c7 {
+.c6 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -2164,7 +2174,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -2185,7 +2195,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   width: 100%;
 }
 
-.c2 + .c4 {
+.c2 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2211,28 +2221,28 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   font-size: 20px;
 }
 
-.c2:checked + .c4 {
+.c2:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c2:hover + .c4,
-.c2:focus + .c4 {
+.c2:hover + .c3,
+.c2:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c2 + .c4 {
+.c2 + .c3 {
   border-color: #e91b0c;
 }
 
-.c2:checked + .c4 {
+.c2:checked + .c3 {
   background-color: #e91b0c;
 }
 
-.c2:hover + .c4,
-.c2:focus + .c4 {
+.c2:hover + .c3,
+.c2:focus + .c3 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
@@ -2241,20 +2251,20 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c5 {
+.c2[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c2[disabled] + .c4 {
+.c2[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c2[disabled]:checked + .c4 {
+.c2[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c2[disabled]:hover + .c4 {
+.c2[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
@@ -2264,10 +2274,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -2291,13 +2297,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2307,7 +2315,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Foo
@@ -2332,13 +2340,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2348,7 +2358,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Bar
@@ -2373,13 +2383,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2389,7 +2401,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Baz
@@ -2397,7 +2409,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
     </div>
   </div>
   <span
-    className="c7"
+    className="c6"
   >
     Error Message
   </span>
@@ -2414,7 +2426,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   display: block;
   margin-bottom: 5px;
   color: #424242;
@@ -2435,7 +2447,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   width: 100%;
 }
 
-.c2 + .c4 {
+.c2 + .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2461,14 +2473,14 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   font-size: 20px;
 }
 
-.c2:checked + .c4 {
+.c2:checked + .c3 {
   border-width: 0;
   background-color: #1250C4;
   color: #f2f2f2;
 }
 
-.c2:hover + .c4,
-.c2:focus + .c4 {
+.c2:hover + .c3,
+.c2:focus + .c3 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
@@ -2477,20 +2489,20 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c5 {
+.c2[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c2[disabled] + .c4 {
+.c2[disabled] + .c3 {
   border-color: #999999;
   background-color: #e0e0e0;
 }
 
-.c2[disabled]:checked + .c4 {
+.c2[disabled]:checked + .c3 {
   background-color: #999999;
 }
 
-.c2[disabled]:hover + .c4 {
+.c2[disabled]:hover + .c3 {
   box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
@@ -2500,10 +2512,6 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   min-width: 250px;
   width: 100%;
   position: relative;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -2527,13 +2535,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2543,7 +2553,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Foo
@@ -2568,13 +2578,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2584,7 +2596,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Bar
@@ -2609,13 +2621,15 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
       />
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 "
+        className="MuiSvgIcon-root c3 "
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -2625,7 +2639,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
         />
       </svg>
       <label
-        className="Label-sc-1ny5bqy-0 c5 c6"
+        className="Label-sc-1ny5bqy-0 c4 c5"
         htmlFor=""
       >
         Baz

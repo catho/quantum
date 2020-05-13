@@ -435,7 +435,7 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
@@ -448,13 +448,9 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #424242;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -473,13 +469,15 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -516,11 +514,11 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
@@ -534,13 +532,9 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #1250C4;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -559,13 +553,15 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -602,16 +598,16 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
@@ -625,13 +621,9 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #004D40;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -650,13 +642,15 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -693,21 +687,21 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
@@ -721,13 +715,9 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #d14900;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -746,13 +736,15 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -789,26 +781,26 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
@@ -822,13 +814,9 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #ac001a;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -847,13 +835,15 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -890,31 +880,31 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
@@ -928,13 +918,9 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -953,13 +939,15 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -996,36 +984,36 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
@@ -1039,13 +1027,9 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1064,13 +1048,15 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1107,41 +1093,41 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
@@ -1155,13 +1141,9 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1180,13 +1162,15 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1223,46 +1207,46 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
 
-.c13 .c4 {
+.c12 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
 }
@@ -1276,13 +1260,9 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #ffefd6;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1301,13 +1281,15 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1344,51 +1326,51 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
 
-.c13 .c4 {
+.c12 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
 }
 
-.c14 .c4 {
+.c13 .c3 {
   font-size: 18px !important;
   color: #ffefd6;
 }
@@ -1402,13 +1384,9 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #fff5f5;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1427,13 +1405,15 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1470,7 +1450,7 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
@@ -1483,58 +1463,54 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
 }
 
-.c13 .c4 {
+.c12 .c3 {
   font-size: 18px !important;
   color: #ffefd6;
 }
 
-.c14 .c4 {
+.c13 .c3 {
   font-size: 18px !important;
   color: #fff5f5;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1553,13 +1529,15 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1596,11 +1574,11 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
@@ -1614,53 +1592,49 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
 }
 
-.c13 .c4 {
+.c12 .c3 {
   font-size: 18px !important;
   color: #ffefd6;
 }
 
-.c14 .c4 {
+.c13 .c3 {
   font-size: 18px !important;
   color: #fff5f5;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1679,13 +1653,15 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1722,16 +1698,16 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
@@ -1745,48 +1721,44 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
 }
 
-.c13 .c4 {
+.c12 .c3 {
   font-size: 18px !important;
   color: #ffefd6;
 }
 
-.c14 .c4 {
+.c13 .c3 {
   font-size: 18px !important;
   color: #fff5f5;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1805,13 +1777,15 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1848,21 +1822,21 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
@@ -1876,43 +1850,39 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
 }
 
-.c13 .c4 {
+.c12 .c3 {
   font-size: 18px !important;
   color: #ffefd6;
 }
 
-.c14 .c4 {
+.c13 .c3 {
   font-size: 18px !important;
   color: #fff5f5;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1931,13 +1901,15 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"
@@ -1974,26 +1946,26 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   width: 18px;
 }
 
-.c6 .c4 {
+.c5 .c3 {
   font-size: 18px !important;
   color: #424242;
 }
 
-.c7 .c4 {
+.c6 .c3 {
   font-size: 18px !important;
   color: #1250C4;
 }
 
-.c8 .c4 {
+.c7 .c3 {
   font-size: 18px !important;
   color: #004D40;
 }
 
-.c9 .c4 {
+.c8 .c3 {
   font-size: 18px !important;
   color: #d14900;
 }
@@ -2007,38 +1979,34 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
   margin-left: 4px;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   font-size: 18px !important;
   color: #ac001a;
 }
 
-.c10 .c4 {
+.c9 .c3 {
   font-size: 18px !important;
   color: #f2f2f2;
 }
 
-.c11 .c4 {
+.c10 .c3 {
   font-size: 18px !important;
   color: #E5EDFC;
 }
 
-.c12 .c4 {
+.c11 .c3 {
   font-size: 18px !important;
   color: #dcedc8;
 }
 
-.c13 .c4 {
+.c12 .c3 {
   font-size: 18px !important;
   color: #ffefd6;
 }
 
-.c14 .c4 {
+.c13 .c3 {
   font-size: 18px !important;
   color: #fff5f5;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -2057,13 +2025,15 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c3 c4 c5"
+        className="MuiSvgIcon-root c3 c4"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         viewBox="0 0 24 24"

@@ -261,7 +261,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c4 {
+.c3 {
   margin-left: 8px;
 }
 
@@ -271,10 +271,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -302,13 +298,15 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3 c4"
+      className="MuiSvgIcon-root c3"
+      data-qtm-preloader="icon"
       focusable="false"
       role="presentation"
       style={
         Object {
           "color": "",
           "fontSize": 24,
+          "maxWidth": 24,
         }
       }
       theme={
@@ -552,7 +550,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c4 {
+.c3 {
   margin-left: 8px;
 }
 
@@ -562,10 +560,6 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -593,13 +587,15 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3 c4"
+      className="MuiSvgIcon-root c3"
+      data-qtm-preloader="icon"
       focusable="false"
       role="presentation"
       style={
         Object {
           "color": "",
           "fontSize": 24,
+          "maxWidth": 24,
         }
       }
       theme={
@@ -963,7 +959,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c4 {
+.c3 {
   margin-right: 8px;
 }
 
@@ -973,10 +969,6 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-.c3 {
-  width: 0px;
 }
 
 <div
@@ -1003,13 +995,15 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3 c4"
+      className="MuiSvgIcon-root c3"
+      data-qtm-preloader="icon"
       focusable="false"
       role="presentation"
       style={
         Object {
           "color": "",
           "fontSize": 24,
+          "maxWidth": 24,
         }
       }
       theme={

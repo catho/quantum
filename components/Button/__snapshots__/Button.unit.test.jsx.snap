@@ -774,7 +774,7 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component with an icon should match secondary snapshot 1`] = `
-.c3 {
+.c2 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -825,7 +825,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   background-color: #002F7B;
 }
 
-.c0 .c2 function (_ref6) {
+.c0 .c1 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -833,12 +833,8 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c0 .c2 function (_ref6) var fontSizes = {
+.c0 .c1 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c1 {
-  width: 0px;
 }
 
 <button
@@ -850,13 +846,15 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root c1 c2 c3"
+    className="MuiSvgIcon-root c1 c2"
+    data-qtm-preloader="icon"
     focusable="false"
     role="presentation"
     style={
       Object {
         "color": "",
         "fontSize": 24,
+        "maxWidth": 24,
       }
     }
     theme={
@@ -1069,7 +1067,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 2`] = `
-.c3 {
+.c2 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -1120,7 +1118,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   background-color: #002F7B;
 }
 
-.c0 .c2 function (_ref6) {
+.c0 .c1 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -1128,12 +1126,8 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c0 .c2 function (_ref6) var fontSizes = {
+.c0 .c1 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c1 {
-  width: 0px;
 }
 
 <button
@@ -1145,13 +1139,15 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root c1 c2 c3"
+    className="MuiSvgIcon-root c1 c2"
+    data-qtm-preloader="icon"
     focusable="false"
     role="presentation"
     style={
       Object {
         "color": "",
         "fontSize": 24,
+        "maxWidth": 24,
       }
     }
     theme={
@@ -1364,7 +1360,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 3`] = `
-.c3 {
+.c2 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -1415,7 +1411,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   background-color: #002F7B;
 }
 
-.c0 .c2 function (_ref6) {
+.c0 .c1 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -1423,12 +1419,8 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c0 .c2 function (_ref6) var fontSizes = {
+.c0 .c1 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c1 {
-  width: 0px;
 }
 
 <button
@@ -1440,13 +1432,15 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root c1 c2 c3"
+    className="MuiSvgIcon-root c1 c2"
+    data-qtm-preloader="icon"
     focusable="false"
     role="presentation"
     style={
       Object {
         "color": "",
         "fontSize": 24,
+        "maxWidth": 24,
       }
     }
     theme={
@@ -1659,7 +1653,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 4`] = `
-.c3 {
+.c2 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -1710,7 +1704,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   background-color: #002F7B;
 }
 
-.c0 .c2 function (_ref6) {
+.c0 .c1 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -1718,12 +1712,8 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c0 .c2 function (_ref6) var fontSizes = {
+.c0 .c1 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
-.c1 {
-  width: 0px;
 }
 
 <button
@@ -1735,13 +1725,15 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <svg
     aria-hidden="true"
-    className="MuiSvgIcon-root c1 c2 c3"
+    className="MuiSvgIcon-root c1 c2"
+    data-qtm-preloader="icon"
     focusable="false"
     role="presentation"
     style={
       Object {
         "color": "",
         "fontSize": 24,
+        "maxWidth": 24,
       }
     }
     theme={

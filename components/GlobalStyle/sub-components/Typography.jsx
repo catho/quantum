@@ -14,6 +14,10 @@ body {
   color: ${colors.neutral['700']};
 }
 
+svg[data-qtm-preloader="icon"] {
+  max-width: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
