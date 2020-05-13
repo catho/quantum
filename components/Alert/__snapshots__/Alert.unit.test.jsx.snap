@@ -123,7 +123,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 .c10 {
+.c0 .c1 .c9 {
   color: #424242;
   margin-right: 16px;
 }
@@ -138,10 +138,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c0 .c1 > .c4 .c3 {
   color: #424242;
   margin-left: 0;
-}
-
-.c9 {
-  width: 0px;
 }
 
 <div
@@ -164,13 +160,15 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c7 c8 c9"
+        className="MuiSvgIcon-root c7 c8"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -413,13 +411,13 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 `;
 
 exports[`Alert component When you set a alert custom icon Should match the snapshot with an icon 1`] = `
-.c11 {
+.c10 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c9 {
+.c8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -448,23 +446,23 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c9:hover {
+.c8:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
   border-color: #191919;
 }
 
-.c9:focus,
-.c9:focus-within {
+.c8:focus,
+.c8:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
-.c9:active {
+.c8:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
 }
 
-.c9 .c10 function (_ref6) {
+.c8 .c9 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -472,7 +470,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c10 function (_ref6) var fontSizes = {
+.c8 .c9 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -491,7 +489,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   width: 24px;
 }
 
-.c8 {
+.c7 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -507,24 +505,24 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   width: auto;
 }
 
-.c8 .c10 {
+.c7 .c9 {
   margin-right: 0;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   box-shadow: none;
   background-color: rgba(224,224,224,0.4);
   color: #424242;
 }
 
-.c8:active {
+.c7:active {
   box-shadow: none;
   background-color: rgba(224,224,224,0.5);
   color: #424242;
 }
 
-.c8:hover {
+.c7:hover {
   background: none;
   opacity: 1;
 }
@@ -544,20 +542,16 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   margin-right: 16px;
 }
 
-.c0 .c1 > .c7 {
+.c0 .c1 > .c6 {
   color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c7 .c6 {
+.c0 .c1 > .c6 .c5 {
   color: #424242;
   margin-left: 0;
-}
-
-.c5 {
-  width: 0px;
 }
 
 <div
@@ -570,13 +564,15 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   >
     <svg
       aria-hidden="true"
-      className="MuiSvgIcon-root c3 c4 c5"
+      className="MuiSvgIcon-root c3 c4"
+      data-qtm-preloader="icon"
       focusable="false"
       role="presentation"
       style={
         Object {
           "color": "",
           "fontSize": 24,
+          "maxWidth": 24,
         }
       }
       viewBox="0 0 24 24"
@@ -589,7 +585,7 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
       Sample alert
     </span>
     <button
-      className="c6 c7 c8 c9"
+      className="c5 c6 c7 c8"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -597,13 +593,15 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c10 c11 c5"
+        className="MuiSvgIcon-root c9 c10"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -968,7 +966,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c10 {
+.c0 .c1 .c9 {
   color: #424242;
   margin-right: 16px;
 }
@@ -983,10 +981,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c0 .c1 > .c4 .c3 {
   color: #424242;
   margin-left: 0;
-}
-
-.c9 {
-  width: 0px;
 }
 
 <div
@@ -1009,13 +1003,15 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c7 c8 c9"
+        className="MuiSvgIcon-root c7 c8"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1370,19 +1366,19 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .c11 {
+.c9 .c1 .c10 {
   color: #424242;
   margin-right: 16px;
 }
 
-.c10 .c1 > .c4 {
+.c9 .c1 > .c4 {
   color: #424242;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
-.c10 .c1 > .c4 .c3 {
+.c9 .c1 > .c4 .c3 {
   color: #424242;
   margin-left: 0;
 }
@@ -1397,7 +1393,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c11 {
+.c0 .c1 .c10 {
   color: #1250C4;
   margin-right: 16px;
 }
@@ -1412,10 +1408,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c0 .c1 > .c4 .c3 {
   color: #1250C4;
   margin-left: 0;
-}
-
-.c9 {
-  width: 0px;
 }
 
 <div
@@ -1438,13 +1430,15 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c7 c8 c9"
+        className="MuiSvgIcon-root c7 c8"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -1799,36 +1793,36 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .c12 {
+.c9 .c1 .c11 {
   color: #424242;
   margin-right: 16px;
 }
 
-.c10 .c1 > .c4 {
+.c9 .c1 > .c4 {
   color: #424242;
+  margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c9 .c1 > .c4 .c3 {
+  color: #424242;
+  margin-left: 0;
+}
+
+.c10 .c1 .c11 {
+  color: #1250C4;
+  margin-right: 16px;
+}
+
+.c10 .c1 > .c4 {
+  color: #1250C4;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
-  color: #424242;
-  margin-left: 0;
-}
-
-.c11 .c1 .c12 {
-  color: #1250C4;
-  margin-right: 16px;
-}
-
-.c11 .c1 > .c4 {
-  color: #1250C4;
-  margin: 0 0 0 16px;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c11 .c1 > .c4 .c3 {
   color: #1250C4;
   margin-left: 0;
 }
@@ -1843,7 +1837,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c12 {
+.c0 .c1 .c11 {
   color: #3b610f;
   margin-right: 16px;
 }
@@ -1858,10 +1852,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c0 .c1 > .c4 .c3 {
   color: #3b610f;
   margin-left: 0;
-}
-
-.c9 {
-  width: 0px;
 }
 
 <div
@@ -1884,13 +1874,15 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c7 c8 c9"
+        className="MuiSvgIcon-root c7 c8"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -2245,53 +2237,53 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .c13 {
+.c9 .c1 .c12 {
   color: #424242;
   margin-right: 16px;
 }
 
-.c10 .c1 > .c4 {
+.c9 .c1 > .c4 {
   color: #424242;
+  margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c9 .c1 > .c4 .c3 {
+  color: #424242;
+  margin-left: 0;
+}
+
+.c10 .c1 .c12 {
+  color: #1250C4;
+  margin-right: 16px;
+}
+
+.c10 .c1 > .c4 {
+  color: #1250C4;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
-  color: #424242;
+  color: #1250C4;
   margin-left: 0;
 }
 
-.c11 .c1 .c13 {
-  color: #1250C4;
+.c11 .c1 .c12 {
+  color: #3b610f;
   margin-right: 16px;
 }
 
 .c11 .c1 > .c4 {
-  color: #1250C4;
+  color: #3b610f;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c11 .c1 > .c4 .c3 {
-  color: #1250C4;
-  margin-left: 0;
-}
-
-.c12 .c1 .c13 {
-  color: #3b610f;
-  margin-right: 16px;
-}
-
-.c12 .c1 > .c4 {
-  color: #3b610f;
-  margin: 0 0 0 16px;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c12 .c1 > .c4 .c3 {
   color: #3b610f;
   margin-left: 0;
 }
@@ -2306,7 +2298,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c13 {
+.c0 .c1 .c12 {
   color: #f09100;
   margin-right: 16px;
 }
@@ -2321,10 +2313,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c0 .c1 > .c4 .c3 {
   color: #f09100;
   margin-left: 0;
-}
-
-.c9 {
-  width: 0px;
 }
 
 <div
@@ -2347,13 +2335,15 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c7 c8 c9"
+        className="MuiSvgIcon-root c7 c8"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={
@@ -2708,70 +2698,70 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .c14 {
+.c9 .c1 .c13 {
   color: #424242;
   margin-right: 16px;
 }
 
-.c10 .c1 > .c4 {
+.c9 .c1 > .c4 {
   color: #424242;
+  margin: 0 0 0 16px;
+  min-height: 0;
+  opacity: 1;
+}
+
+.c9 .c1 > .c4 .c3 {
+  color: #424242;
+  margin-left: 0;
+}
+
+.c10 .c1 .c13 {
+  color: #1250C4;
+  margin-right: 16px;
+}
+
+.c10 .c1 > .c4 {
+  color: #1250C4;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c10 .c1 > .c4 .c3 {
-  color: #424242;
+  color: #1250C4;
   margin-left: 0;
 }
 
-.c11 .c1 .c14 {
-  color: #1250C4;
+.c11 .c1 .c13 {
+  color: #3b610f;
   margin-right: 16px;
 }
 
 .c11 .c1 > .c4 {
-  color: #1250C4;
+  color: #3b610f;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c11 .c1 > .c4 .c3 {
-  color: #1250C4;
+  color: #3b610f;
   margin-left: 0;
 }
 
-.c12 .c1 .c14 {
-  color: #3b610f;
+.c12 .c1 .c13 {
+  color: #f09100;
   margin-right: 16px;
 }
 
 .c12 .c1 > .c4 {
-  color: #3b610f;
+  color: #f09100;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c12 .c1 > .c4 .c3 {
-  color: #3b610f;
-  margin-left: 0;
-}
-
-.c13 .c1 .c14 {
-  color: #f09100;
-  margin-right: 16px;
-}
-
-.c13 .c1 > .c4 {
-  color: #f09100;
-  margin: 0 0 0 16px;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c13 .c1 > .c4 .c3 {
   color: #f09100;
   margin-left: 0;
 }
@@ -2786,7 +2776,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .c14 {
+.c0 .c1 .c13 {
   color: #e91b0c;
   margin-right: 16px;
 }
@@ -2801,10 +2791,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c0 .c1 > .c4 .c3 {
   color: #e91b0c;
   margin-left: 0;
-}
-
-.c9 {
-  width: 0px;
 }
 
 <div
@@ -2827,13 +2813,15 @@ exports[`Alert component When you set a different skin Should match a skin snaps
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root c7 c8 c9"
+        className="MuiSvgIcon-root c7 c8"
+        data-qtm-preloader="icon"
         focusable="false"
         role="presentation"
         style={
           Object {
             "color": "",
             "fontSize": 24,
+            "maxWidth": 24,
           }
         }
         theme={

@@ -1,19 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Icon /> Should match the snapshot 1`] = `
-.c0 {
-  width: 0px;
-}
-
 <svg
   aria-hidden="true"
-  className="MuiSvgIcon-root c0"
+  className="MuiSvgIcon-root"
+  data-qtm-preloader="icon"
   focusable="false"
   role="presentation"
   style={
     Object {
       "color": "",
       "fontSize": 24,
+      "maxWidth": 24,
     }
   }
   viewBox="0 0 24 24"
@@ -30,19 +28,17 @@ exports[`<Icon /> Should match the snapshot 1`] = `
 `;
 
 exports[`<Icon /> Should match the snapshot 2`] = `
-.c0 {
-  width: 0px;
-}
-
 <svg
   aria-hidden="true"
-  className="MuiSvgIcon-root c0"
+  className="MuiSvgIcon-root"
+  data-qtm-preloader="icon"
   focusable="false"
   role="presentation"
   style={
     Object {
       "color": "",
       "fontSize": 24,
+      "maxWidth": 24,
     }
   }
   viewBox="0 0 24 24"
@@ -54,19 +50,17 @@ exports[`<Icon /> Should match the snapshot 2`] = `
 `;
 
 exports[`<Icon /> Should match the snapshot 3`] = `
-.c0 {
-  width: 0px;
-}
-
 <svg
   aria-hidden="true"
-  className="MuiSvgIcon-root c0"
+  className="MuiSvgIcon-root"
+  data-qtm-preloader="icon"
   focusable="false"
   role="presentation"
   style={
     Object {
       "color": "",
       "fontSize": 24,
+      "maxWidth": 24,
     }
   }
   viewBox="0 0 24 24"
@@ -78,19 +72,17 @@ exports[`<Icon /> Should match the snapshot 3`] = `
 `;
 
 exports[`<Icon /> Should match the snapshot 4`] = `
-.c0 {
-  width: 0px;
-}
-
 <svg
   aria-hidden="true"
-  className="MuiSvgIcon-root c0"
+  className="MuiSvgIcon-root"
+  data-qtm-preloader="icon"
   focusable="false"
   role="presentation"
   style={
     Object {
       "color": "tomato",
       "fontSize": 24,
+      "maxWidth": 24,
     }
   }
   viewBox="0 0 24 24"
@@ -102,19 +94,17 @@ exports[`<Icon /> Should match the snapshot 4`] = `
 `;
 
 exports[`<Icon /> Should match the snapshot 5`] = `
-.c0 {
-  width: 0px;
-}
-
 <svg
   aria-hidden="true"
-  className="MuiSvgIcon-root c0"
+  className="MuiSvgIcon-root"
+  data-qtm-preloader="icon"
   focusable="false"
   role="presentation"
   style={
     Object {
       "color": "",
       "fontSize": 16,
+      "maxWidth": 16,
     }
   }
   viewBox="0 0 24 24"
@@ -126,19 +116,17 @@ exports[`<Icon /> Should match the snapshot 5`] = `
 `;
 
 exports[`<Icon /> Should match the snapshot 6`] = `
-.c0 {
-  width: 0px;
-}
-
 <svg
   aria-hidden="true"
-  className="MuiSvgIcon-root c0"
+  className="MuiSvgIcon-root"
+  data-qtm-preloader="icon"
   focusable="false"
   role="presentation"
   style={
     Object {
       "color": "",
       "fontSize": 24,
+      "maxWidth": 24,
     }
   }
   viewBox="0 0 24 24"
@@ -150,19 +138,17 @@ exports[`<Icon /> Should match the snapshot 6`] = `
 `;
 
 exports[`<Icon /> Should match the snapshot 7`] = `
-.c0 {
-  width: 0px;
-}
-
 <svg
   aria-hidden="true"
-  className="MuiSvgIcon-root c0"
+  className="MuiSvgIcon-root"
+  data-qtm-preloader="icon"
   focusable="false"
   role="presentation"
   style={
     Object {
       "color": "",
       "fontSize": 32,
+      "maxWidth": 32,
     }
   }
   viewBox="0 0 24 24"
