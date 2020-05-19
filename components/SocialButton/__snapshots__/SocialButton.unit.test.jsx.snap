@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SocialButton component Should match the snapshot 1`] = `
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -30,23 +30,23 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #f2f2f2;
   border-color: #191919;
 }
 
-.c1:focus,
-.c1:focus-within {
+.c0:focus,
+.c0:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
-.c1:active {
+.c0:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #f2f2f2;
 }
 
-.c1 .c3 function (_ref6) {
+.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -54,7 +54,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c1 .c3 function (_ref6) var fontSizes = {
+.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -62,7 +62,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   display: inline-block;
 }
 
-.c0 {
+.c1 {
   width: 40px;
   height: 40px;
   border-radius: 9px;
@@ -73,7 +73,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
 }
 
 <button
-  className="c0 c1"
+  className="c0 SocialButton__BaseButton-sc-17dubal-0 c1"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -142,7 +142,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
 `;
 
 exports[`SocialButton component when provider prop is set to facebook 1`] = `
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -171,23 +171,23 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
   border-color: #002F7B;
 }
 
-.c1:focus,
-.c1:focus-within {
+.c0:focus,
+.c0:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c1:active {
+.c0:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
 }
 
-.c1 .c3 function (_ref6) {
+.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -195,7 +195,7 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c1 .c3 function (_ref6) var fontSizes = {
+.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -203,7 +203,7 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   display: inline-block;
 }
 
-.c0 {
+.c1 {
   width: 40px;
   height: 40px;
   border-radius: 9px;
@@ -216,7 +216,7 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
 }
 
 <button
-  className="c0 c1"
+  className="c0 SocialButton__BaseButton-sc-17dubal-0 c1"
   disabled={false}
   onClick={[Function]}
   size="medium"

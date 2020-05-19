@@ -5,12 +5,10 @@ import Typography from './Typography';
 import { expectCSSMatches } from '../test.utils';
 
 describe('Typography component', () => {
-  it('Should add standart typeface on CSR via @import', () => {
-    renderer.create(<Typography />);
+  it('Should match snapshot', () => {
+    const typography = renderer.create(<Typography />);
 
-    expectCSSMatches(
-      `@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap');`,
-    );
+    expect(typography).toMatchSnapshot();
   });
 
   it('Should set standard typeface', () => {

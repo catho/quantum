@@ -127,7 +127,7 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   background-color: #002F7B;
 }
 
-.c2 .c3 function (_ref6) {
+.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -135,7 +135,7 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c2 .c3 function (_ref6) var fontSizes = {
+.c2 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
@@ -158,5 +158,52 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   >
     
   </button>
+</div>
+`;
+
+exports[`<Badge /> Should match snapshot with skin 1`] = `
+.c0 {
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.c1 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+  min-width: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #dcedc8;
+  color: #004D40;
+}
+
+<div
+  className="c0"
+  value={10}
+>
+  <span
+    className="c1"
+    value={10}
+  >
+    10
+  </span>
+  
 </div>
 `;

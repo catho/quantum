@@ -47,7 +47,7 @@ const getArrow = ({
     colors,
   },
   inverted,
-}) => ` color: ${inverted ? text : background}
+}) => ` color: ${inverted ? text : background};
   font-size: ${ARROW_SIZE};
   position: absolute;
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { colors } from '../../shared/theme';
-import isSSR from '../../shared/isSSR';
 
 const Style = createGlobalStyle`
 * {
@@ -59,21 +58,13 @@ ul, ol {
   padding-left: 18px;
 }`;
 
-const NunitoFontFamily = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap');
-`;
-
 const Typography = () => (
   <>
     <Style />
-    {isSSR() ? (
-      <link
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap"
-        rel="stylesheet"
-      />
-    ) : (
-      <NunitoFontFamily />
-    )}
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap"
+      rel="stylesheet"
+    />
   </>
 );
 

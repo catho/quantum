@@ -21,7 +21,7 @@ const _getColors = ({
   },
   inverted,
 }) => `
-  background-color: ${inverted ? text : background}
+  background-color: ${inverted ? text : background};
   color: ${inverted ? background : text}
 `;
 

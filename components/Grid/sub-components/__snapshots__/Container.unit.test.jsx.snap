@@ -1,38 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Container /> with "no-gutters" prop should not have gutters 1`] = `
-.c2 .c0 {
-  max-width: 100%;
-}
-
-.c3 .c0 {
-  max-width: 100%;
-}
-
-.c4 .c0 {
-  max-width: 100%;
-}
-
-.c5 .c0 {
-  max-width: 100%;
-}
-
-.c6 .c0 {
-  max-width: 100%;
-}
-
-.c7 .c0 {
-  max-width: 100%;
-}
-
-.c8 .c0 {
-  max-width: 100%;
-}
-
-.c9 .c0 {
-  max-width: 100%;
-}
-
 .c1 {
   box-sizing: border-box;
   margin-left: auto;
@@ -82,30 +50,6 @@ exports[`<Container /> with "no-gutters" prop should not have gutters 1`] = `
 `;
 
 exports[`<Container /> with fluid prop should have a fluid width 1`] = `
-.c2 .c0 {
-  max-width: 100%;
-}
-
-.c3 .c0 {
-  max-width: 100%;
-}
-
-.c4 .c0 {
-  max-width: 100%;
-}
-
-.c5 .c0 {
-  max-width: 100%;
-}
-
-.c6 .c0 {
-  max-width: 100%;
-}
-
-.c7 .c0 {
-  max-width: 100%;
-}
-
 .c1 {
   box-sizing: border-box;
   margin-left: auto;
@@ -225,6 +169,30 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:0px) {
   .c1 {
     padding: 16px;
   }
@@ -285,6 +253,54 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 .c1 .c0 {
   max-width: 100%;
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
 }
 
 @media (min-width:0px) {
@@ -352,6 +368,78 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 .c1 .c0 {
   max-width: 100%;
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
 }
 
 @media (min-width:0px) {
@@ -423,6 +511,102 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 .c1 .c0 {
   max-width: 100%;
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
 }
 
 @media (min-width:0px) {
@@ -501,6 +685,126 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+@media (min-width:0px) {
+
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:0px) {
   .c1 {
     padding: 16px;
   }
@@ -550,34 +854,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 `;
 
 exports[`<Container /> with withBreakpoints prop should have a fixed width 1`] = `
-.c2 .c0 {
-  max-width: 100%;
-}
-
-.c3 .c0 {
-  max-width: 100%;
-}
-
-.c4 .c0 {
-  max-width: 100%;
-}
-
-.c5 .c0 {
-  max-width: 100%;
-}
-
-.c6 .c0 {
-  max-width: 100%;
-}
-
-.c7 .c0 {
-  max-width: 100%;
-}
-
-.c8 .c0 {
-  max-width: 100%;
-}
-
 .c1 {
   box-sizing: border-box;
   margin-left: auto;
