@@ -43,17 +43,18 @@ const Tip = styled.div`
 
 const TipText = styled.span`
   display: inline-block;
-  max-width: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: pre;
   line-height: 20px;
+  text-align: left;
 `;
 
 const Wrapper = styled.div`
   position: relative;
   float: left;
   clear: left;
+  width: max-content;
 `;
 
 class Tooltip extends Component {
