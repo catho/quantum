@@ -82,13 +82,12 @@ exports[`Input component should match snapshots 2`] = `
     />
     
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2"
       data-qtm-preloader="icon"
       description=""
       focusable="false"
       onClick={[Function]}
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -274,12 +273,11 @@ exports[`Input component should match snapshots 4`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2"
       data-qtm-preloader="icon"
       description=""
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -437,12 +435,11 @@ exports[`Input component should match snapshots 6`] = `
     className="c1"
   >
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2"
       data-qtm-preloader="icon"
       description=""
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -728,12 +725,11 @@ exports[`Input component should match snapshots 10`] = `
     className="c2"
   >
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c3"
       data-qtm-preloader="icon"
       description="this is a description label"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -1174,13 +1170,12 @@ exports[`Input component should match snapshots 17`] = `
     />
     
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2"
       data-qtm-preloader="icon"
       description=""
       focusable="false"
       onClick={[Function]}
-      role="presentation"
       style={
         Object {
           "color": "",

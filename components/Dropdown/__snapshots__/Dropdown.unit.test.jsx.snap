@@ -129,11 +129,10 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -345,11 +344,10 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     >
       Dropdown placeholder
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -564,11 +562,10 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     >
       
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -792,11 +789,10 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1012,11 +1008,10 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1241,11 +1236,10 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1479,11 +1473,10 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c5"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1709,11 +1702,10 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         value=""
       />
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1925,11 +1917,10 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2141,11 +2132,10 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     >
       baz
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2370,11 +2360,10 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     >
       What credit card do you prefer?
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2586,11 +2575,10 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",

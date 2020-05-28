@@ -2,11 +2,10 @@
 
 exports[`<Icon /> Should match the snapshot 1`] = `
 <svg
-  aria-hidden="true"
+  aria-hidden={true}
   className="MuiSvgIcon-root"
   data-qtm-preloader="icon"
   focusable="false"
-  role="presentation"
   style={
     Object {
       "color": "",
@@ -29,11 +28,10 @@ exports[`<Icon /> Should match the snapshot 1`] = `
 
 exports[`<Icon /> Should match the snapshot 2`] = `
 <svg
-  aria-hidden="true"
+  aria-hidden={true}
   className="MuiSvgIcon-root"
   data-qtm-preloader="icon"
   focusable="false"
-  role="presentation"
   style={
     Object {
       "color": "",
@@ -51,11 +49,10 @@ exports[`<Icon /> Should match the snapshot 2`] = `
 
 exports[`<Icon /> Should match the snapshot 3`] = `
 <svg
-  aria-hidden="true"
+  aria-hidden={true}
   className="MuiSvgIcon-root"
   data-qtm-preloader="icon"
   focusable="false"
-  role="presentation"
   style={
     Object {
       "color": "",
@@ -73,11 +70,10 @@ exports[`<Icon /> Should match the snapshot 3`] = `
 
 exports[`<Icon /> Should match the snapshot 4`] = `
 <svg
-  aria-hidden="true"
+  aria-hidden={true}
   className="MuiSvgIcon-root"
   data-qtm-preloader="icon"
   focusable="false"
-  role="presentation"
   style={
     Object {
       "color": "tomato",
@@ -95,11 +91,10 @@ exports[`<Icon /> Should match the snapshot 4`] = `
 
 exports[`<Icon /> Should match the snapshot 5`] = `
 <svg
-  aria-hidden="true"
+  aria-hidden={true}
   className="MuiSvgIcon-root"
   data-qtm-preloader="icon"
   focusable="false"
-  role="presentation"
   style={
     Object {
       "color": "",
@@ -117,11 +112,10 @@ exports[`<Icon /> Should match the snapshot 5`] = `
 
 exports[`<Icon /> Should match the snapshot 6`] = `
 <svg
-  aria-hidden="true"
+  aria-hidden={true}
   className="MuiSvgIcon-root"
   data-qtm-preloader="icon"
   focusable="false"
-  role="presentation"
   style={
     Object {
       "color": "",
@@ -139,11 +133,10 @@ exports[`<Icon /> Should match the snapshot 6`] = `
 
 exports[`<Icon /> Should match the snapshot 7`] = `
 <svg
-  aria-hidden="true"
+  aria-hidden={true}
   className="MuiSvgIcon-root"
   data-qtm-preloader="icon"
   focusable="false"
-  role="presentation"
   style={
     Object {
       "color": "",

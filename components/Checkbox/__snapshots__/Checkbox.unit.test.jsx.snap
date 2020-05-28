@@ -107,11 +107,10 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -323,11 +322,10 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -543,11 +541,10 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -752,11 +749,10 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -957,11 +953,10 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -1162,11 +1157,10 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -1367,11 +1361,10 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
       value=""
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c2 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",

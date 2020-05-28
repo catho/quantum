@@ -660,7 +660,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                 class="MuiSvgIcon-root c11 c12"
                 data-qtm-preloader="icon"
                 focusable="false"
-                role="presentation"
                 style="font-size: 24px; max-width: 24px;"
                 theme="[object Object]"
                 viewBox="0 0 24 24"
@@ -3270,11 +3269,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   }
                                 >
                                   <svg
-                                    aria-hidden="true"
+                                    aria-hidden={true}
                                     className="MuiSvgIcon-root c11 c12"
                                     data-qtm-preloader="icon"
                                     focusable="false"
-                                    role="presentation"
                                     style={
                                       Object {
                                         "color": "",

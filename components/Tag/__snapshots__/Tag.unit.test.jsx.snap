@@ -468,11 +468,10 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -552,11 +551,10 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -641,11 +639,10 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -735,11 +732,10 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -834,11 +830,10 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -938,11 +933,10 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1047,11 +1041,10 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1161,11 +1154,10 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1280,11 +1272,10 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1404,11 +1395,10 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1528,11 +1518,10 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1652,11 +1641,10 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1776,11 +1764,10 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1900,11 +1887,10 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2024,11 +2010,10 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
