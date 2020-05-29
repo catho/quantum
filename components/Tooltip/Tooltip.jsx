@@ -12,6 +12,7 @@ const Tip = styled.div`
   border-radius: 4px;
   font-weight: bold;
   opacity: ${({ visible }) => (visible ? '1' : '0')};
+  visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};
   position: absolute;
   line-height: 0;
   text-align: center;
