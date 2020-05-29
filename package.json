@@ -51,10 +51,10 @@
   "author": "Catho",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.9.0",
     "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.0.0",
     "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/exec": "^3.3.2",
