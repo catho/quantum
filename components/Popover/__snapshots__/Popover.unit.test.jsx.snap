@@ -903,7 +903,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -3029,11 +3028,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",
@@ -3858,7 +3856,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -5984,11 +5981,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",
@@ -6845,7 +6841,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -8971,11 +8966,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",
@@ -9864,7 +9858,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -11990,11 +11983,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",
@@ -12915,7 +12907,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -15041,11 +15032,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",
@@ -15966,7 +15956,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -18092,11 +18081,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",
@@ -19011,7 +18999,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -21137,11 +21124,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",
@@ -22056,7 +22042,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     class="MuiSvgIcon-root c3 c4"
                     data-qtm-preloader="icon"
                     focusable="false"
-                    role="presentation"
                     style="font-size: 24px; max-width: 24px;"
                     theme="[object Object]"
                     viewBox="0 0 24 24"
@@ -24182,11 +24167,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 }
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="MuiSvgIcon-root c4 c5"
                                   data-qtm-preloader="icon"
                                   focusable="false"
-                                  role="presentation"
                                   style={
                                     Object {
                                       "color": "",

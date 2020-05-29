@@ -120,11 +120,10 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
     className="c2 c3"
   >
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c4 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -139,11 +138,10 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
       />
     </svg>
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c5 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -281,11 +279,10 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
     className="c2 c3"
   >
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c4 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -300,11 +297,10 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
       />
     </svg>
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c5 "
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",

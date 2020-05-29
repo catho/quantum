@@ -159,11 +159,10 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
       type="button"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c6 c7"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -563,11 +562,10 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
     onClose={[Function]}
   >
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="MuiSvgIcon-root c3 c4"
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -592,11 +590,10 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
       type="button"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c8 c9"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1002,11 +999,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c6 c7"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1429,11 +1425,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c6 c7"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1873,11 +1868,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c6 c7"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2334,11 +2328,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c6 c7"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2812,11 +2805,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
       type="button"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c6 c7"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
