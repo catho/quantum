@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 8
+  - 10
 
 # branches:
 #   only:
@@ -10,20 +10,17 @@ node_js:
 jobs:
   include:
     - stage: unit tests
-      node_js: lts/*
       skip_cleanup: true
       script:
         - yarn test:components
 
     - stage: regression tests
-      node_js: lts/*
       skip_cleanup: true
       script:
         - yarn build:regression
 
     - stage: release
       if: branch = master
-      node_js: lts/*
       script: yarn build
       deploy:
         provider: script
