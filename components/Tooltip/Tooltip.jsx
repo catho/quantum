@@ -44,18 +44,19 @@ const Tip = styled.div`
 
 const TipText = styled.span`
   display: inline-block;
+  max-width: ${({ multiline }) => (multiline ? 'unset' : '250px')};
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: pre;
+  white-space: ${({ multiline }) => (multiline ? 'pre' : 'nowrap')};
   line-height: 20px;
-  text-align: left;
+  text-align: ${({ multiline }) => (multiline ? 'left' : 'center')};
 `;
 
 const Wrapper = styled.div`
   position: relative;
   float: left;
   clear: left;
-  width: max-content;
+  width: ${({ multiline }) => (multiline ? 'max-content' : 'unset')};
 `;
 
 class Tooltip extends Component {
@@ -105,6 +106,7 @@ Tooltip.propTypes = {
   /** Define tooltip positioning */
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   visible: PropTypes.bool,
+  multiline: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -119,6 +121,7 @@ Tooltip.propTypes = {
 Tooltip.defaultProps = {
   placement: 'top',
   visible: false,
+  multiline: false,
   theme: {
     spacing,
     colors,
