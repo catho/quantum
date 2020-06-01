@@ -75,6 +75,7 @@ class Tooltip extends Component {
       text,
       visible: visibleProp,
       theme,
+      multiline,
       ...rest
     } = this.props;
     const { visible: visibleState } = this.state;
@@ -90,7 +91,7 @@ class Tooltip extends Component {
           visible={visibleProp || visibleState}
           theme={theme}
         >
-          <TipText>{text}</TipText>
+          <TipText multiline={multiline}>{text}</TipText>
         </Tip>
         {children}
       </Wrapper>
