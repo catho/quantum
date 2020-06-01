@@ -49,7 +49,7 @@ const TipText = styled.span`
   text-overflow: ellipsis;
   white-space: ${({ multiline }) => (multiline ? 'pre' : 'nowrap')};
   line-height: 20px;
-  text-align: ${({ multiline }) => (multiline ? 'left' : 'center')};
+  text-align: ${({ multiline }) => (multiline ? 'left' : 'unset')};
 `;
 
 const Wrapper = styled.div`
