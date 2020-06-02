@@ -4,6 +4,7 @@ export interface TooltipProps {
     text: string;
     placement?: 'top' | 'right' | 'bottom' | 'left';
     visible?: boolean;
+    multiline?: boolean;
     children: React.ReactNode[] | React.ReactNode;
     theme?: {
         spacing?: object;

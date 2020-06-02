@@ -20,3 +20,18 @@ directions.forEach(direction => {
     tooltipExampleButton(direction),
   );
 });
+
+storiesOf('Tooltip', module).add('multiline', () => (
+  <Row style={{ padding: '50px 180px' }}>
+    <Col>
+      <Tooltip
+        placement="left"
+        multiline
+        text={`This is a hint\nin multiline\nmode.`}
+        visible
+      >
+        <Button>Hover me</Button>
+      </Tooltip>
+    </Col>
+  </Row>
+));

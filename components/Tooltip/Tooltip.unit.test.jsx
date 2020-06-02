@@ -3,6 +3,10 @@ import { mount } from 'enzyme';
 import Tooltip from './Tooltip';
 
 const TOOLTIP_TEXT = 'This is a hint';
+const MULTILINE_TOOLTIP_TEXT = `Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Aenean bibendum facilisis sem viverra fringilla. 
+Suspendisse finibus libero nec justo semper.`;
 
 describe('Tooltip component ', () => {
   describe('All positions', () => {
@@ -38,6 +42,22 @@ describe('Tooltip component ', () => {
         <Tooltip place="left" text={TOOLTIP_TEXT}>
           Hover Me
         </Tooltip>,
+      );
+      expect(tooltip.html()).toMatchSnapshot();
+    });
+  });
+  describe('Multiline', () => {
+    it('Should match the snapshot when is multiline', () => {
+      const tooltip = mount(
+        <Tooltip text={MULTILINE_TOOLTIP_TEXT} multiline>
+          Hover Me
+        </Tooltip>,
+      );
+      expect(tooltip.html()).toMatchSnapshot();
+    });
+    it('Should match the snapshot when is not multiline', () => {
+      const tooltip = mount(
+        <Tooltip text={MULTILINE_TOOLTIP_TEXT}>Hover Me</Tooltip>,
       );
       expect(tooltip.html()).toMatchSnapshot();
     });
