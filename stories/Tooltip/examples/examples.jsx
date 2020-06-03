@@ -3,6 +3,7 @@ import TooltipExampleTop from './TooltipExampleTop';
 import TooltipExampleRight from './TooltipExampleRight';
 import TooltipExampleBottom from './TooltipExampleBottom';
 import TooltipExampleLeft from './TooltipExampleLeft';
+import TooltipExampleMultiline from './TooltipExampleMultiline';
 
 export default [
   {
@@ -20,5 +21,9 @@ export default [
   {
     code: TooltipExampleLeft.code,
     component: <TooltipExampleLeft />,
+  },
+  {
+    code: TooltipExampleMultiline.code,
+    component: <TooltipExampleMultiline />,
   },
 ];

@@ -12,6 +12,7 @@ const Tip = styled.div`
   border-radius: 4px;
   font-weight: bold;
   opacity: ${({ visible }) => (visible ? '1' : '0')};
+  visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};
   position: absolute;
   line-height: 0;
   text-align: center;
@@ -43,17 +44,19 @@ const Tip = styled.div`
 
 const TipText = styled.span`
   display: inline-block;
-  max-width: 250px;
+  max-width: ${({ multiline }) => (multiline ? 'unset' : '250px')};
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: ${({ multiline }) => (multiline ? 'pre' : 'nowrap')};
   line-height: 20px;
+  text-align: ${({ multiline }) => (multiline ? 'left' : 'unset')};
 `;
 
 const Wrapper = styled.div`
   position: relative;
   float: left;
   clear: left;
+  width: ${({ multiline }) => (multiline ? 'max-content' : 'unset')};
 `;
 
 class Tooltip extends Component {
@@ -72,6 +75,7 @@ class Tooltip extends Component {
       text,
       visible: visibleProp,
       theme,
+      multiline,
       ...rest
     } = this.props;
     const { visible: visibleState } = this.state;
@@ -87,7 +91,7 @@ class Tooltip extends Component {
           visible={visibleProp || visibleState}
           theme={theme}
         >
-          <TipText>{text}</TipText>
+          <TipText multiline={multiline}>{text}</TipText>
         </Tip>
         {children}
       </Wrapper>
@@ -103,6 +107,7 @@ Tooltip.propTypes = {
   /** Define tooltip positioning */
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   visible: PropTypes.bool,
+  multiline: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -117,6 +122,7 @@ Tooltip.propTypes = {
 Tooltip.defaultProps = {
   placement: 'top',
   visible: false,
+  multiline: false,
   theme: {
     spacing,
     colors,
