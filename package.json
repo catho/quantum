@@ -105,7 +105,7 @@
     "semantic-release": "^15.13.3",
     "strip-ansi": "^5.0.0",
     "styled-components": "^5.0.1",
-    "@catho/quantum-storybook-ui": "^1.2.3"
+    "@catho/quantum-storybook-ui": "^1.2.4"
   },
   "dependencies": {
     "@material-ui/core": "^4.5.1",
