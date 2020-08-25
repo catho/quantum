@@ -9,7 +9,7 @@ const radioSize = '24px';
 const RadioMark = styled.span`
   border-radius: 50%;
   box-sizing: border-box;
-  display: inline-block;
+  flex: 0 0 auto;
   height: ${radioSize};
   position: relative;
   top: 6px;
@@ -49,9 +49,11 @@ const RadioMark = styled.span`
 `;
 
 const RadioLabel = styled(Label)`
+  align-items: baseline;
+  display: flex;
   cursor: pointer;
   user-select: none;
-
+  
   ${HiddenInput} {
     :checked {
       ~ ${RadioMark} {
@@ -242,7 +244,7 @@ const Radio = ({
       {...rest}
     />
     <RadioMark theme={theme} />
-    {children || label}
+    <span>{children || label}</span>
   </RadioLabel>
 );
 

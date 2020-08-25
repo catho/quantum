@@ -471,7 +471,9 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 .c5 {
   border-radius: 50%;
   box-sizing: border-box;
-  display: inline-block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 24px;
   position: relative;
   top: 6px;
@@ -496,6 +498,14 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 .c1 {
   display: block;
   margin-bottom: 5px;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -557,7 +567,9 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
     <span
       className="c4 c5"
     />
-    Foo
+    <span>
+      Foo
+    </span>
   </label>
   <label
     className="Label-sc-1ny5bqy-0 c1"
@@ -575,7 +587,9 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
     <span
       className="c4 c5"
     />
-    Bar
+    <span>
+      Bar
+    </span>
   </label>
   <label
     className="Label-sc-1ny5bqy-0 c1"
@@ -593,7 +607,9 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
     <span
       className="c4 c5"
     />
-    Baz
+    <span>
+      Baz
+    </span>
   </label>
 </div>
 `;
@@ -783,7 +799,9 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 .c5 {
   border-radius: 50%;
   box-sizing: border-box;
-  display: inline-block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 24px;
   position: relative;
   top: 6px;
@@ -808,6 +826,14 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 .c1 {
   display: block;
   margin-bottom: 5px;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -869,7 +895,9 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
     <span
       className="c4 c5"
     />
-    Foo
+    <span>
+      Foo
+    </span>
   </label>
   <label
     className="Label-sc-1ny5bqy-0 c1"
@@ -887,7 +915,9 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
     <span
       className="c4 c5"
     />
-    Bar
+    <span>
+      Bar
+    </span>
   </label>
   <label
     className="Label-sc-1ny5bqy-0 c1"
@@ -905,7 +935,9 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
     <span
       className="c4 c5"
     />
-    Baz
+    <span>
+      Baz
+    </span>
   </label>
 </div>
 `;
@@ -936,7 +968,9 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
 .c5 {
   border-radius: 50%;
   box-sizing: border-box;
-  display: inline-block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 24px;
   position: relative;
   top: 6px;
@@ -961,6 +995,14 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
 .c1 {
   display: block;
   margin-bottom: 5px;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1046,7 +1088,9 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
     <span
       className="c4 c5"
     />
-    Foo
+    <span>
+      Foo
+    </span>
   </label>
   <span
     className="c6"
