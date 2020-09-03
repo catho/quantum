@@ -93,6 +93,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
+        disabled={false}
         id="input-0"
         mask={[Function]}
         maxLength={255}
@@ -126,6 +127,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
+        disabled={false}
         id="input-1"
         mask={[Function]}
         maxLength={255}
@@ -159,6 +161,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
+        disabled={false}
         id="input-2"
         mask={[Function]}
         maxLength={255}
@@ -192,6 +195,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
+        disabled={false}
         id="input-3"
         mask={[Function]}
         maxLength={255}
@@ -225,6 +229,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
+        disabled={false}
         id="input-4"
         mask={[Function]}
         maxLength={255}
@@ -258,6 +263,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
+        disabled={false}
         id="input-5"
         mask={[Function]}
         maxLength={255}
@@ -291,6 +297,7 @@ exports[`Form component  should match the snapshot 1`] = `
       className="c2"
     >
       <input
+        disabled={false}
         id="input-6"
         mask={[Function]}
         maxLength="3"

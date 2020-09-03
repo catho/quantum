@@ -126,6 +126,7 @@ class Input extends React.Component {
       required,
       onClean,
       theme,
+      disabled,
       ...rest
     } = this.props;
     const { currentValue, hasDefaultValue } = this.state;
@@ -161,6 +162,7 @@ class Input extends React.Component {
           )}
           <MaskedInput
             {...rest}
+            disabled={disabled}
             id={this._id}
             required={required}
             type={typeState}
@@ -189,7 +191,7 @@ class Input extends React.Component {
               onClick={this._toggleInputType}
             />
           )}
-          {hasValue && !_isPassword && !error && (
+          {hasValue && !_isPassword && !error && !disabled && (
             <InputIcon
               theme={theme}
               name="clear"
@@ -225,6 +227,7 @@ Input.propTypes = {
   ]),
   /** Displays an error message and changes border color to error color */
   error: PropTypes.string,
+  disabled: PropTypes.bool,
   id: PropTypes.string,
   /**
    * Mask must follow this [rules](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
@@ -249,6 +252,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   error: '',
+  disabled: false,
   id: '',
   label: '',
   mask: val => Array(val.length).fill(/./),
