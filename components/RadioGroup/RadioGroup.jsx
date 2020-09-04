@@ -22,7 +22,7 @@ const RadioGroup = ({
   name,
   onChange,
   options,
-  value,
+  defaultValue,
   theme,
   ...rest
 }) => {
@@ -33,10 +33,11 @@ const RadioGroup = ({
     onChange,
     inline,
   };
+
   const radioOptions = options.map(option =>
     Object.assign({}, option, {
       key: option.value,
-      checked: option.value === value ? true : undefined,
+      defaultChecked: option.value === defaultValue ? true : undefined,
       ...commonProps,
     }),
   );
@@ -44,7 +45,7 @@ const RadioGroup = ({
   const items =
     React.Children.map(children, child =>
       React.cloneElement(child, {
-        checked: child.props.value === value ? true : undefined,
+        defaultChecked: child.props.value === defaultValue ? true : undefined,
         ...commonProps,
       }),
     ) ||
@@ -80,7 +81,7 @@ RadioGroup.propTypes = {
   inline: PropTypes.bool,
   onChange: PropTypes.func,
   /** Initialize RadioGroup with a value */
-  value: PropTypes.string,
+  defaultValue: PropTypes.string,
   name: PropTypes.string.isRequired,
   error: PropTypes.string,
   theme: PropTypes.shape({
@@ -100,7 +101,7 @@ RadioGroup.defaultProps = {
   inline: false,
   onChange: () => {},
   options: [],
-  value: undefined,
+  defaultValue: undefined,
   theme: { colors, spacing },
 };
 

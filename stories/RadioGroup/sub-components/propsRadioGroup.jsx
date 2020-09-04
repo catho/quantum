@@ -10,14 +10,14 @@ const options = [
 const propsRadioGroup = {
   code: `<RadioGroup 
   name="groceries" 
-  value="Barbecue sauce"> 
+  defaultValue="Barbecue sauce"> 
   ... 
 </RadioGroup>
 
 <RadioGroup 
   name="groceries" 
   error="Required"> 
-    ...
+  ...
 </RadioGroup>
 
 <RadioGroup 
@@ -30,9 +30,10 @@ const propsRadioGroup = {
     <>
       <RadioGroup
         name="groceries_selected"
-        value="Barbecue sauce"
+        defaultValue="Barbecue sauce"
         options={options}
       />
+
       <RadioGroup name="groceries_error" error="Required" options={options} />
 
       <RadioGroup

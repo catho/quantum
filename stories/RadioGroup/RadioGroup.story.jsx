@@ -76,7 +76,7 @@ stories.add('Radio group', () => (
 
           <p>
             Also, you can set some properties to <code>RadioGroup</code>, such
-            as the selected <code>value</code>, <code>error</code> and{' '}
+            as the selected <code>defaultValue</code>, <code>error</code> and{' '}
             <code>onChange</code> function
           </p>
           <br />
