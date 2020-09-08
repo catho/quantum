@@ -21,6 +21,7 @@ exports[`Input component should match snapshots 1`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-0"
       mask={[Function]}
       maxLength={255}
@@ -69,6 +70,7 @@ exports[`Input component should match snapshots 2`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-1"
       mask={[Function]}
       maxLength={255}
@@ -202,6 +204,7 @@ exports[`Input component should match snapshots 3`] = `
     className="c2"
   >
     <input
+      disabled={false}
       id="input-2"
       mask={[Function]}
       maxLength={255}
@@ -262,6 +265,7 @@ exports[`Input component should match snapshots 4`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-3"
       mask={[Function]}
       maxLength={255}
@@ -387,6 +391,7 @@ exports[`Input component should match snapshots 5`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-4"
       mask={[Function]}
       maxLength={255}
@@ -519,6 +524,7 @@ exports[`Input component should match snapshots 6`] = `
       />
     </svg>
     <input
+      disabled={false}
       id="input-5"
       mask={[Function]}
       maxLength={255}
@@ -612,6 +618,7 @@ exports[`Input component should match snapshots 8`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-7"
       mask={[Function]}
       maxLength={255}
@@ -667,6 +674,7 @@ exports[`Input component should match snapshots 9`] = `
     className="c2"
   >
     <input
+      disabled={false}
       id="input-8"
       mask={[Function]}
       maxLength={255}
@@ -810,6 +818,7 @@ exports[`Input component should match snapshots 10`] = `
       />
     </svg>
     <input
+      disabled={false}
       id="input-9"
       mask={[Function]}
       maxLength={255}
@@ -850,6 +859,7 @@ exports[`Input component should match snapshots 11`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-10"
       mask={[Function]}
       maxLength={255}
@@ -890,6 +900,7 @@ exports[`Input component should match snapshots 12`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-11"
       mask={
         Array [
@@ -942,6 +953,7 @@ exports[`Input component should match snapshots 13`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-12"
       mask={
         Array [
@@ -1003,6 +1015,7 @@ exports[`Input component should match snapshots 14`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-13"
       mask={
         Array [
@@ -1060,6 +1073,7 @@ exports[`Input component should match snapshots 15`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-14"
       mask={
         Array [
@@ -1113,6 +1127,7 @@ exports[`Input component should match snapshots 16`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-15"
       mask={[Function]}
       maxLength={255}
@@ -1161,6 +1176,7 @@ exports[`Input component should match snapshots 17`] = `
     className="c1"
   >
     <input
+      disabled={false}
       id="input-16"
       mask={[Function]}
       maxLength={255}

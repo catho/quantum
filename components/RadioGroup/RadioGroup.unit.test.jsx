@@ -41,9 +41,9 @@ const _childrenTest = RadioItem => {
 
     it(`should have <${
       RadioItem.displayName
-    } /> checked matching <RadioGroup /> value`, () => {
+    } /> defaultChecked matching <RadioGroup /> defaultValue`, () => {
       const component = (
-        <RadioGroup name="foo" value="Bar">
+        <RadioGroup name="foo" defaultValue="Bar">
           <RadioItem value="Foo">Foo</RadioItem>
           <RadioItem value="Bar">Bar</RadioItem>
           <RadioItem value="Baz">Baz</RadioItem>
@@ -53,7 +53,7 @@ const _childrenTest = RadioItem => {
       const radios = wrapper.find(RadioItem);
 
       const radioBar = radios.at(1);
-      expect(radioBar.prop('checked')).toBe(true);
+      expect(radioBar.prop('defaultChecked')).toBe(true);
     });
 
     it(`should call onChange on every <${RadioItem.displayName} />`, () => {

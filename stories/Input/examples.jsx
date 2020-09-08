@@ -36,8 +36,8 @@ export default [
     component: <Input label="With an error" error="Error here" />,
   },
   {
-    code: '<Input label="Disabled" disabled />',
-    component: <Input label="Disabled" disabled />,
+    code: '<Input label="Disabled" disabled value="some text" />',
+    component: <Input label="Disabled" disabled value="some text" />,
   },
   {
     code: `<Input
