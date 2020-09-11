@@ -262,7 +262,6 @@ exports[`Input component should match snapshots 5`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  color: #999999;
 }
 
 .c0::-webkit-inner-spin-button,
