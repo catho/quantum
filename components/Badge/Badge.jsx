@@ -63,10 +63,10 @@ const StyledBadge = styled.span`
       !Number.isInteger(value) || number >= 10 ? xxsmall : xxxsmall;
 
     return `
-      font-size: ${baseFontSize * 0.75}px;
-      padding-left: ${padding}px;
-      padding-right: ${padding}px;
-    `;
+        font-size: ${baseFontSize * 0.75}px;
+        padding-left: ${padding}px;
+        padding-right: ${padding}px;
+      `;
   }}
 
   ${props =>
@@ -77,11 +77,24 @@ const StyledBadge = styled.span`
     top: -10px;
   `}
 
+  ${props =>
+    props.dot &&
+    `
+    right: 0px;
+    top: 0px;
+    height: 12px;
+    width: 12px;
+    min-width: 12px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  `}
+
   ${getColors}
 `;
 
 /** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
-const Badge = ({ children, number, skin, inverted, theme }) => {
+const Badge = ({ children, number, skin, inverted, dot, theme }) => {
   const value = number > 99 ? '99+' : number;
 
   return (
@@ -92,6 +105,7 @@ const Badge = ({ children, number, skin, inverted, theme }) => {
         theme={theme}
         value={value}
         originalChildren={children}
+        dot={dot}
       >
         {value}
       </StyledBadge>
@@ -122,6 +136,7 @@ Badge.propTypes = {
   number: PropTypes.number,
   /** Swap background and text color */
   inverted: PropTypes.bool,
+  dot: PropTypes.bool,
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
@@ -136,6 +151,7 @@ Badge.defaultProps = {
   inverted: false,
   children: '',
   number: 0,
+  dot: false,
   theme: {
     baseFontSize: defaultBaseFontSize,
     spacing,
