@@ -163,7 +163,7 @@ const CheckIcon = styled(Icon).attrs({
 const DropItem = styled.li`
   box-sizing: border-box;
   cursor: pointer;
-  height: 42px;
+  min-height: 42px;
   ${({
     theme: {
       spacing: { xsmall, medium },
