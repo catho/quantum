@@ -161,6 +161,9 @@ const CheckIcon = styled(Icon).attrs({
 `;
 
 const DropItem = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
   cursor: pointer;
   min-height: 42px;
@@ -213,7 +216,6 @@ const SelectedItemLabel = styled.span`
 `;
 
 const DropItemImage = styled.img`
-  float: right;
   width: ${DROPITEM_IMAGE_SIZE};
   height: ${DROPITEM_IMAGE_SIZE};
 `;
