@@ -40,6 +40,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -256,6 +257,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -472,6 +474,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
@@ -703,6 +706,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -923,6 +927,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -1145,6 +1150,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -1378,6 +1384,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -1607,6 +1614,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   padding: 8px 48px 8px 16px;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
@@ -1836,6 +1844,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -2052,6 +2061,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -2274,6 +2284,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
@@ -2497,6 +2508,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: left;
   color: #191919;
   box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
