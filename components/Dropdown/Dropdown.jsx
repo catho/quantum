@@ -26,6 +26,7 @@ const DropInput = styled(TextInput)`
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  text-align: left;
 
   ${({
     text,
