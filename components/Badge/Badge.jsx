@@ -80,14 +80,11 @@ const StyledBadge = styled.span`
   ${props =>
     props.dot &&
     `
-    right: 0px;
-    top: 0px;
+    right: -2px;
+    top: 0;
     height: 12px;
     width: 12px;
     min-width: 12px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
   `}
 
   ${getColors}
@@ -107,7 +104,7 @@ const Badge = ({ children, number, skin, inverted, dot, theme }) => {
         originalChildren={children}
         dot={dot}
       >
-        {value}
+        {dot || value}
       </StyledBadge>
       {children}
     </BadgeWrapper>
