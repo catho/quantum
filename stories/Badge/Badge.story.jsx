@@ -51,7 +51,7 @@ const TabExample = (
               <Icon name="date_range" />
             </Badge>
           }
-          code={`<Badge skin="primary dot">
+          code={`<Badge skin="primary" dot>
   <Icon name="date_range" />
 </Badge>`}
         />
