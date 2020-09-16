@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Accessible from '@material-ui/icons/Accessible';
 import AccessibleForward from '@material-ui/icons/AccessibleForward';
+import AccessTime from '@material-ui/icons/AccessTime';
 import Add from '@material-ui/icons/Add';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 import Assessment from '@material-ui/icons/Assessment';
+import Block from '@material-ui/icons/Block';
 import Check from '@material-ui/icons/Check';
 import CheckBox from '@material-ui/icons/CheckBox';
 import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
@@ -17,10 +20,11 @@ import DateRange from '@material-ui/icons/DateRange';
 import Done from '@material-ui/icons/Done';
 import EmojiPeople from '@material-ui/icons/EmojiPeople';
 import Error from '@material-ui/icons/Error';
+import ExitToApp from '@material-ui/icons/ExitToApp';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import ExitToApp from '@material-ui/icons/ExitToApp';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import Home from '@material-ui/icons/Home';
 import Info from '@material-ui/icons/Info';
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
@@ -41,14 +45,11 @@ import Share from '@material-ui/icons/Share';
 import Star from '@material-ui/icons/Star';
 import StarBorder from '@material-ui/icons/StarBorder';
 import StarHalf from '@material-ui/icons/StarHalf';
+import SwapVert from '@material-ui/icons/SwapVert';
 import VerifiedUser from '@material-ui/icons/VerifiedUser';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
-import Home from '@material-ui/icons/Home';
-import Accessible from '@material-ui/icons/Accessible';
-import AccessTime from '@material-ui/icons/AccessTime';
-import SwapVert from '@material-ui/icons/SwapVert';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -70,6 +71,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     arrow_drop_down: ArrowDropDown,
     arrow_drop_up: ArrowDropUp,
     assessment: Assessment,
+    block: Block,
     check_box_outline_blank: CheckBoxOutlineBlank,
     check_box: CheckBox,
     check_circle: CheckCircle,
