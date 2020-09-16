@@ -218,6 +218,7 @@ const SelectedItemLabel = styled.span`
 const DropItemImage = styled.img`
   width: ${DROPITEM_IMAGE_SIZE};
   height: ${DROPITEM_IMAGE_SIZE};
+  margin-left: ${spacing.xsmall}px;
 `;
 
 const DropItemLabel = styled.span`
