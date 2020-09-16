@@ -221,9 +221,7 @@ const DropItemImage = styled.img`
   margin-left: ${spacing.xsmall}px;
 `;
 
-const DropItemLabel = styled.span`
-  vertical-align: middle;
-`;
+const DropItemLabel = styled.span``;
 
 DropInput.displayName = 'DropInput';
 DropItem.displayName = 'DropItem';
