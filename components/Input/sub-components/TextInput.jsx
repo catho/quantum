@@ -34,9 +34,7 @@ const TextInput = styled.input`
     error,
     hasRightIcon,
     hasLeftIcon,
-    placeholder,
     theme,
-    value,
   }) => {
     const {
       colors: {
@@ -66,9 +64,6 @@ const TextInput = styled.input`
       ${hasRightIcon ? `padding-right: ${horizontalPadding}px;` : ''}
       ${hasLeftIcon ? `padding-left: ${horizontalPadding}px;` : ''}
       ${error ? `border-color: ${mainColor};` : ''}
-      ${
-        placeholder && !hasDefaultValue && !value ? `color: ${neutral500};` : ''
-      }
       ${hasDefaultValue ? `background-color: ${primary100};` : ''}
 
       :hover, :focus {
