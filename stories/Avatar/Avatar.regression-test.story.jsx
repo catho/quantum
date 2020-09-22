@@ -9,4 +9,5 @@ const encodedPicture =
 storiesOf('Avatar', module)
   .add('default', () => <Avatar />)
   .add('with notification', () => <Avatar hasNotification />)
-  .add('with picture', () => <Avatar picture={encodedPicture} />);
+  .add('with picture', () => <Avatar picture={encodedPicture} />)
+  .add('with text', () => <Avatar text="User Profile" />);

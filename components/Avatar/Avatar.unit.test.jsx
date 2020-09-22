@@ -23,5 +23,11 @@ describe('<Avatar />', () => {
         renderer.create(<Avatar hasNotification />).toJSON(),
       ).toMatchSnapshot();
     });
+
+    it('With text', () => {
+      expect(
+        renderer.create(<Avatar text="Profile" />).toJSON(),
+      ).toMatchSnapshot();
+    });
   });
 });
