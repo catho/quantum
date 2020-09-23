@@ -10,4 +10,13 @@ storiesOf('Avatar', module)
   .add('default', () => <Avatar />)
   .add('with notification', () => <Avatar hasNotification />)
   .add('with picture', () => <Avatar picture={encodedPicture} />)
-  .add('with text and toggle', () => <Avatar text="User Profile" hasToggle />);
+  .add('with text and toggle', () => <Avatar text="User Profile" hasToggle />)
+  .add('with all props', () => (
+    <Avatar
+      picture={encodedPicture}
+      text="Profile"
+      href="#profile"
+      hasNotification
+      hasToggle
+    />
+  ));
