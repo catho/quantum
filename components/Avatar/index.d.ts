@@ -4,6 +4,8 @@ export interface AvatarProps {
     picture?: string;
     hasNotification?: boolean;
     text?: string;
+    hasToggle?: boolean;
+    href?: string;
     size?: string;
     onClick?: () => {};
 }

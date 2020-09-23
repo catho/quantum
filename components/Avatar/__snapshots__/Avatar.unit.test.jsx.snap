@@ -7,7 +7,6 @@ exports[`<Avatar /> Should match snapshot With notification 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
-  cursor: pointer;
   height: 24px;
   -webkit-text-decoration: unset;
   text-decoration: unset;
@@ -15,16 +14,16 @@ exports[`<Avatar /> Should match snapshot With notification 1`] = `
 }
 
 .c1 {
-  border-radius: 50% !important;
+  border-radius: 50%;
   background: #424242;
   padding: 3px;
 }
 
 .c2 {
-  border-radius: 50% !important;
+  border-radius: 50%;
   background-color: #DE0059;
   position: absolute;
-  left: 16px;
+  left: 17px;
   top: 0;
   width: 12px;
   height: 12px;
@@ -32,6 +31,7 @@ exports[`<Avatar /> Should match snapshot With notification 1`] = `
 
 <a
   className="c0"
+  href=""
 >
   <svg
     aria-hidden="true"
@@ -64,7 +64,6 @@ exports[`<Avatar /> Should match snapshot With picture 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
-  cursor: pointer;
   height: 24px;
   -webkit-text-decoration: unset;
   text-decoration: unset;
@@ -72,13 +71,15 @@ exports[`<Avatar /> Should match snapshot With picture 1`] = `
 }
 
 .c1 {
-  border-radius: 50% !important;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
+  overflow: hidden;
 }
 
 <a
   className="c0"
+  href=""
 >
   <img
     alt="user picture"
@@ -96,7 +97,6 @@ exports[`<Avatar /> Should match snapshot With text 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
-  cursor: pointer;
   height: 24px;
   -webkit-text-decoration: unset;
   text-decoration: unset;
@@ -104,7 +104,7 @@ exports[`<Avatar /> Should match snapshot With text 1`] = `
 }
 
 .c1 {
-  border-radius: 50% !important;
+  border-radius: 50%;
   background: #424242;
   padding: 3px;
 }
@@ -119,6 +119,7 @@ exports[`<Avatar /> Should match snapshot With text 1`] = `
 
 <a
   className="c0"
+  href=""
 >
   <svg
     aria-hidden="true"
@@ -141,26 +142,6 @@ exports[`<Avatar /> Should match snapshot With text 1`] = `
     className="c2"
   >
     Profile
-     
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root"
-      data-qtm-preloader="icon"
-      focusable="false"
-      role="presentation"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-      />
-    </svg>
   </span>
 </a>
 `;
@@ -172,7 +153,6 @@ exports[`<Avatar /> Should match snapshot Without picture 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
-  cursor: pointer;
   height: 24px;
   -webkit-text-decoration: unset;
   text-decoration: unset;
@@ -180,13 +160,14 @@ exports[`<Avatar /> Should match snapshot Without picture 1`] = `
 }
 
 .c1 {
-  border-radius: 50% !important;
+  border-radius: 50%;
   background: #424242;
   padding: 3px;
 }
 
 <a
   className="c0"
+  href=""
 >
   <svg
     aria-hidden="true"

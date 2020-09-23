@@ -39,10 +39,10 @@ const TabExample = (
           code={`<Avatar hasNotification text={'User Name'}/>`}
         />
 
-        <Title as="h2">With href</Title>
+        <Title as="h2">With href and toggle icon</Title>
         <Example
-          component={<Avatar text="User Name" href="#user-profile" />}
-          code={`<Avatar href={'#user-profile'} text={'User Name'}/>`}
+          component={<Avatar href="#user-profile" text="User Name" hasToggle />}
+          code={`<Avatar href={'#user-profile'} text={'User Name'} hasToggle />`}
         />
 
         <Title as="h2">Combined with popover</Title>
@@ -78,8 +78,10 @@ storiesOf('Avatar', module).add('Avatar', () => (
     component={Avatar}
     componentProps={{
       picture: '',
-      hasNotification: true,
       text: 'Profile',
+      href: '#user-profile',
+      hasNotification: true,
+      hasToggle: true,
     }}
     additionalTabs={TabExample}
   />
