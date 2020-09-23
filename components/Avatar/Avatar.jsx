@@ -7,7 +7,7 @@ import { colors } from '../shared/theme';
 
 const borderStyle = 'border-radius: 50%;';
 
-const AvatarWrapper = styled.a`
+const AvatarWrapper = styled.span`
   display: inline-flex;
   position: relative;
   height: 24px;
@@ -60,7 +60,7 @@ const Avatar = ({
   href,
   ...rest
 }) => (
-  <AvatarWrapper href={href} {...rest}>
+  <AvatarWrapper as={'href' && 'a'} href={href} {...rest}>
     {picture ? <AvatarImage src={picture} /> : <AvatarIcon />}
     {hasNotification && <AvatarNotification />}
     {text && <AvatarText>{text}</AvatarText>}
