@@ -29,5 +29,13 @@ describe('<Avatar />', () => {
         renderer.create(<Avatar text="Profile" />).toJSON(),
       ).toMatchSnapshot();
     });
+
+    it('With href', () => {
+      expect(renderer.create(<Avatar href="#" />).toJSON()).toMatchSnapshot();
+    });
+
+    it('With toggle icon', () => {
+      expect(renderer.create(<Avatar hasToggle />).toJSON()).toMatchSnapshot();
+    });
   });
 });

@@ -60,7 +60,7 @@ const Avatar = ({
   href,
   ...rest
 }) => (
-  <AvatarWrapper as={'href' && 'a'} href={href} {...rest}>
+  <AvatarWrapper as={href && 'a'} href={href || undefined} {...rest}>
     {picture ? <AvatarImage src={picture} /> : <AvatarIcon />}
     {hasNotification && <AvatarNotification />}
     {text && <AvatarText>{text}</AvatarText>}
