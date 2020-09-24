@@ -21,6 +21,9 @@ export default [
   // Accordion
   'Accordion',
 
+  // Avatar
+  'Avatar',
+
   // Buttons
   'Button',
 
