@@ -8,6 +8,7 @@ import {
   StoryContainer,
 } from '@catho/quantum-storybook-ui';
 
+import Icon from '../../components/Icon';
 import Badge from '../../components/Badge';
 import Button from '../../components/Button';
 import { colors } from '../../components/shared/theme';
@@ -40,6 +41,18 @@ const TabExample = (
           }
           code={`<Badge number={10} skin="primary">
   <Button skin="secondary" size="large"/>
+</Badge>`}
+        />
+
+        <Title as="h2">As a dot</Title>
+        <Example
+          component={
+            <Badge skin="primary" dot>
+              <Icon name="date_range" />
+            </Badge>
+          }
+          code={`<Badge skin="primary" dot>
+  <Icon name="date_range" />
 </Badge>`}
         />
 
@@ -80,7 +93,8 @@ storiesOf('Badge', module).add('Badge', () => (
     description={description}
     component={Badge}
     componentProps={{
-      number: 10,
+      number: 11,
+      skin: 'secondary',
     }}
     additionalTabs={TabExample}
   />

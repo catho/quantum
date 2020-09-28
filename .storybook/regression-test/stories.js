@@ -5,6 +5,7 @@
  */
 
 export default [
+  'Avatar',
   'Icon',
   'Accordion',
   'Alert',
