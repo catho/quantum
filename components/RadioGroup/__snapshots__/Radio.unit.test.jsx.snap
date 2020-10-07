@@ -91,6 +91,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
     className="c1 c2"
     disabled={false}
     onChange={[Function]}
+    required={false}
     type="radio"
     value="Foo"
   />
@@ -194,6 +195,7 @@ exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
     className="c1 c2"
     disabled={false}
     onChange={[Function]}
+    required={false}
     type="radio"
     value="Foo"
   />
@@ -337,6 +339,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     className="c1 c2"
     disabled={true}
     onChange={[Function]}
+    required={false}
     type="radio"
     value="Foo"
   />
@@ -464,6 +467,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
     className="c1 c2"
     disabled={false}
     onChange={[Function]}
+    required={false}
     type="radio"
     value="Foo"
   />
@@ -671,6 +675,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
     className="c1 c2"
     disabled={false}
     onChange={[Function]}
+    required={false}
     type="radio"
     value="Foo"
   />

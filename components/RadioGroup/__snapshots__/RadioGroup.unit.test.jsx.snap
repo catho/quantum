@@ -36,6 +36,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 +         id=\\"radio-button-12\\"
           name=\\"foo\\"
           onChange={[Function onChange]}
+          required={false}
           type=\\"radio\\"
           value=\\"Foo\\"
         />
@@ -64,6 +65,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 +         id=\\"radio-button-13\\"
           name=\\"foo\\"
           onChange={[Function onChange]}
+          required={false}
           type=\\"radio\\"
           value=\\"Bar\\"
         />
@@ -92,6 +94,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 +         id=\\"radio-button-14\\"
           name=\\"foo\\"
           onChange={[Function onChange]}
+          required={false}
           type=\\"radio\\"
           value=\\"Baz\\"
         />
@@ -210,6 +213,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
         id="radio-button-3"
         name="groceries"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Foo"
       />
@@ -236,6 +240,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
         id="radio-button-4"
         name="groceries"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Bar"
       />
@@ -262,6 +267,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
         id="radio-button-5"
         name="groceries"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Baz"
       />
@@ -395,6 +401,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
         id="radio-button-6"
         name="groceries"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Foo"
       />
@@ -421,6 +428,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
         id="radio-button-7"
         name="groceries"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Bar"
       />
@@ -447,6 +455,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
         id="radio-button-8"
         name="groceries"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Baz"
       />
@@ -560,6 +569,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      required={false}
       size="medium"
       type="radio"
       value="Foo"
@@ -580,6 +590,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      required={false}
       size="medium"
       type="radio"
       value="Bar"
@@ -600,6 +611,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      required={false}
       size="medium"
       type="radio"
       value="Baz"
@@ -723,6 +735,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
         id="radio-button-0"
         name="foo"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Foo"
       />
@@ -749,6 +762,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
         id="radio-button-1"
         name="foo"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Bar"
       />
@@ -775,6 +789,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
         id="radio-button-2"
         name="foo"
         onChange={[Function]}
+        required={false}
         type="radio"
         value="Baz"
       />
@@ -888,6 +903,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       disabled={false}
       name="foo"
       onChange={[Function]}
+      required={false}
       size="medium"
       type="radio"
       value="Foo"
@@ -908,6 +924,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       disabled={false}
       name="foo"
       onChange={[Function]}
+      required={false}
       size="medium"
       type="radio"
       value="Bar"
@@ -928,6 +945,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
       disabled={false}
       name="foo"
       onChange={[Function]}
+      required={false}
       size="medium"
       type="radio"
       value="Baz"
@@ -1081,6 +1099,7 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
       disabled={false}
       name="groceries"
       onChange={[Function]}
+      required={false}
       size="medium"
       type="radio"
       value="Foo"
