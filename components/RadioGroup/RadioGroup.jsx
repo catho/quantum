@@ -106,6 +106,7 @@ RadioGroup.defaultProps = {
   options: [],
   defaultValue: undefined,
   theme: { colors, spacing },
+  required: false,
 };
 
 export default RadioGroup;

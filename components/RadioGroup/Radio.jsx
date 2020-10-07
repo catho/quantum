@@ -273,6 +273,7 @@ Radio.defaultProps = {
   label: undefined,
   onChange: () => {},
   theme: { colors, spacing },
+  required: false,
 };
 
 export default Radio;
