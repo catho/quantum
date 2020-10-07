@@ -233,6 +233,7 @@ const Radio = ({
   onChange,
   value,
   theme,
+  required,
   ...rest
 }) => (
   <RadioLabel error={error} disabled={disabled} theme={theme}>
@@ -241,6 +242,7 @@ const Radio = ({
       disabled={disabled}
       onChange={e => onChange({ value, label }, e)}
       value={value}
+      required={required}
       {...rest}
     />
     <RadioMark theme={theme} />
