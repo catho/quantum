@@ -90,6 +90,7 @@ RadioGroup.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
+  required: PropTypes.bool,
 };
 
 /**

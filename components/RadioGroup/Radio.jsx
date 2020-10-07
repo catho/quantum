@@ -263,6 +263,7 @@ Radio.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
+  required: PropTypes.bool,
 };
 
 Radio.defaultProps = {
