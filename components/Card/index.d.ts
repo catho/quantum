@@ -9,10 +9,12 @@ import Thumbnail from './Thumbnail';
 import Title from './Title';
 
 type Props = {
-	theme?: {
-		colors?: object
-	}
+    onClick?: (e: React.MouseEvent) => void;
+    theme?: {
+        colors?: object
+    }
 }
+
 export default class Card extends React.Component<Props> {
     static Content: Content;
 
