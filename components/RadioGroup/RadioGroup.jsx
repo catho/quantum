@@ -24,6 +24,7 @@ const RadioGroup = ({
   options,
   defaultValue,
   theme,
+  required,
   ...rest
 }) => {
   const commonProps = {
@@ -32,6 +33,7 @@ const RadioGroup = ({
     error: Boolean(error),
     onChange,
     inline,
+    required,
   };
 
   const radioOptions = options.map(option =>
@@ -88,6 +90,7 @@ RadioGroup.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
+  required: PropTypes.bool,
 };
 
 /**
@@ -103,6 +106,7 @@ RadioGroup.defaultProps = {
   options: [],
   defaultValue: undefined,
   theme: { colors, spacing },
+  required: false,
 };
 
 export default RadioGroup;

@@ -233,6 +233,7 @@ const Radio = ({
   onChange,
   value,
   theme,
+  required,
   ...rest
 }) => (
   <RadioLabel error={error} disabled={disabled} theme={theme}>
@@ -241,6 +242,7 @@ const Radio = ({
       disabled={disabled}
       onChange={e => onChange({ value, label }, e)}
       value={value}
+      required={required}
       {...rest}
     />
     <RadioMark theme={theme} />
@@ -261,6 +263,7 @@ Radio.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
+  required: PropTypes.bool,
 };
 
 Radio.defaultProps = {
@@ -270,6 +273,7 @@ Radio.defaultProps = {
   label: undefined,
   onChange: () => {},
   theme: { colors, spacing },
+  required: false,
 };
 
 export default Radio;
