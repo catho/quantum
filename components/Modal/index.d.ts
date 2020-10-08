@@ -13,6 +13,7 @@ export type ModalContent = React.ComponentType<StaticProps>;
 
 export interface ModalProps {
   children?: React.ReactNode[] | React.ReactNode;
+  onClick?: (e: React.MouseEvent) => void;
   onClose?: React.MouseEventHandler<HTMLButtonElement>;
   closeButtonAriaLabel?: string;
   theme?: {
