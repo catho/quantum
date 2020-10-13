@@ -2335,6 +2335,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
               className="c3"
             >
               <Badge
+                dot={false}
                 inverted={false}
                 number={4}
                 skin="neutral"
@@ -2390,6 +2391,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     value={4}
                   >
                     <StyledBadge
+                      dot={false}
                       inverted={false}
                       originalChildren=""
                       skin="neutral"
@@ -3330,6 +3332,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
               className="c3"
             >
               <Badge
+                dot={false}
                 inverted={false}
                 number={4}
                 skin="neutral"
@@ -3385,6 +3388,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                     value={4}
                   >
                     <StyledBadge
+                      dot={false}
                       inverted={false}
                       originalChildren=""
                       skin="neutral"

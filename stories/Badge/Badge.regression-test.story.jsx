@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import Badge from '../../components/Badge';
+import Icon from '../../components/Icon';
 
 storiesOf('Badge', module)
   .add('default', () => <Badge number={10} />)
@@ -10,4 +11,9 @@ storiesOf('Badge', module)
   .add('skin secondary', () => <Badge number={10} skin="secondary" />)
   .add('skin success', () => <Badge number={10} skin="success" />)
   .add('skin error', () => <Badge number={10} skin="error" />)
-  .add('inverted', () => <Badge number={10} inverted />);
+  .add('inverted', () => <Badge number={10} inverted />)
+  .add('dot', () => (
+    <Badge skin="secondary" number={9999} dot>
+      <Icon name="date_range" />
+    </Badge>
+  ));

@@ -32,5 +32,14 @@ describe('<RadioGroup.Radio />', () => {
       );
       expect(renderer.create(component).toJSON()).toMatchSnapshot();
     });
+
+    it('required', () => {
+      const component = (
+        <Radio value="Foo" required>
+          Foo
+        </Radio>
+      );
+      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+    });
   });
 });

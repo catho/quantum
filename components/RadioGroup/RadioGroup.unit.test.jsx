@@ -196,6 +196,15 @@ describe('<RadioGroup />', () => {
         `Snapshot Diff:\n ${stripAnsi(diff(snapOptions, snapComposable))}`,
       ).toMatchSnapshot();
     });
+
+    it('with required', () => {
+      const component = (
+        <RadioGroup name="groceries" required>
+          <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
+        </RadioGroup>
+      );
+      expect(renderer.create(component)).toMatchSnapshot();
+    });
   });
 
   _childrenTest(RadioGroup.Radio);

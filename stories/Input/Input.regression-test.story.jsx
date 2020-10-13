@@ -11,4 +11,5 @@ storiesOf('Input', module)
   .add('error', () => <Input error="message" />)
   .add('disabled', () => <Input disabled />)
   .add('disabled with text', () => <Input disabled value="some text" />)
-  .add('helper', () => <Input helper="message" />);
+  .add('helper', () => <Input helperText="message" />)
+  .add('with placeholder', () => <Input placeholder="message" />);
