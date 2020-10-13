@@ -221,8 +221,6 @@ const DropItemImage = styled.img`
   margin-left: ${spacing.xsmall}px;
 `;
 
-const DropItemLabel = styled.span``;
-
 DropInput.displayName = 'DropInput';
 DropItem.displayName = 'DropItem';
 SelectedItemLabel.displayName = 'SelectedItemLabel';
@@ -270,7 +268,7 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
           </>
         ) : (
           <>
-            <DropItemLabel>{_getLabel(item)}</DropItemLabel>
+            <span>{_getLabel(item)}</span>
             {_getImage(item) && (
               <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
             )}
