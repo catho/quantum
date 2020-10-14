@@ -26,6 +26,7 @@ const DropInput = styled(TextInput)`
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  text-align: left;
 
   ${({
     text,
@@ -160,9 +161,12 @@ const CheckIcon = styled(Icon).attrs({
 `;
 
 const DropItem = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
   cursor: pointer;
-  height: 42px;
+  min-height: 42px;
   ${({
     theme: {
       spacing: { xsmall, medium },
@@ -212,13 +216,9 @@ const SelectedItemLabel = styled.span`
 `;
 
 const DropItemImage = styled.img`
-  float: right;
   width: ${DROPITEM_IMAGE_SIZE};
   height: ${DROPITEM_IMAGE_SIZE};
-`;
-
-const DropItemLabel = styled.span`
-  vertical-align: middle;
+  margin-left: ${spacing.xsmall}px;
 `;
 
 DropInput.displayName = 'DropInput';
@@ -268,7 +268,7 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
           </>
         ) : (
           <>
-            <DropItemLabel>{_getLabel(item)}</DropItemLabel>
+            <span>{_getLabel(item)}</span>
             {_getImage(item) && (
               <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
             )}
