@@ -29,6 +29,7 @@ import Pagination from './Pagination';
 import Hamburger from './Hamburger';
 import Socials from './Socials';
 import SocialButton from './SocialButton';
+import Avatar from './Avatar';
 
 export {
   Accordion,
@@ -69,4 +70,5 @@ export {
   Hamburger,
   Socials,
   SocialButton,
+  Avatar,
 };
