@@ -63,6 +63,8 @@ class Pagination extends React.Component {
 
     const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
 
+    console.log('teste');
+
     return (
       <Wrapper aria-label={ariaLabel} {...props}>
         <Component
