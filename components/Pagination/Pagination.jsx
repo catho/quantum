@@ -59,17 +59,17 @@ class Pagination extends React.Component {
     };
 
     const attributes = {
-      tabIndex: tabIndex,
-      activePage: activePage,
-      handlePageClick: handlePageClick,
-      handleHref: handleHref,
-      prevButtonText: prevButtonText,
-      nextButtonText: nextButtonText,
-      totalPages: totalPages,
-      activePageAriaLabel: activePageAriaLabel,
-      pageAriaLabel: pageAriaLabel,
-      infoFormatter: infoFormatter,
-      followOnlyFirstPage: followOnlyFirstPage,
+      tabIndex,
+      activePage,
+      handlePageClick,
+      handleHref,
+      prevButtonText,
+      nextButtonText,
+      totalPages,
+      activePageAriaLabel,
+      pageAriaLabel,
+      infoFormatter,
+      followOnlyFirstPage,
     };
     return (
       <>
