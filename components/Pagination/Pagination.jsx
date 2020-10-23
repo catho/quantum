@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { BREAKPOINTS } from '../shared';
+import { Hide } from '../Grid';
 import Desktop from './sub-components/Desktop';
 import Mobile from './sub-components/Mobile';
-import isSSR from '../shared/isSSR';
 
 const Wrapper = styled.nav`
   align-items: center;
@@ -59,26 +58,33 @@ class Pagination extends React.Component {
       return pageHref(page);
     };
 
-    const width = (!isSSR() && window.innerWidth) || BREAKPOINTS.small.width;
-
-    const Component = width > BREAKPOINTS.small.width ? Desktop : Mobile;
-
+    const attributes = {
+      tabIndex: tabIndex,
+      activePage: activePage,
+      handlePageClick: handlePageClick,
+      handleHref: handleHref,
+      prevButtonText: prevButtonText,
+      nextButtonText: nextButtonText,
+      totalPages: totalPages,
+      activePageAriaLabel: activePageAriaLabel,
+      pageAriaLabel: pageAriaLabel,
+      infoFormatter: infoFormatter,
+      followOnlyFirstPage: followOnlyFirstPage,
+    };
     return (
-      <Wrapper aria-label={ariaLabel} {...props}>
-        <Component
-          tabIndex={tabIndex}
-          activePage={activePage}
-          handlePageClick={handlePageClick}
-          handleHref={handleHref}
-          prevButtonText={prevButtonText}
-          nextButtonText={nextButtonText}
-          totalPages={totalPages}
-          activePageAriaLabel={activePageAriaLabel}
-          pageAriaLabel={pageAriaLabel}
-          infoFormatter={infoFormatter}
-          followOnlyFirstPage={followOnlyFirstPage}
-        />
-      </Wrapper>
+      <>
+        <Hide xsmall small>
+          <Wrapper aria-label={ariaLabel} {...props}>
+            <Desktop {...attributes} />
+          </Wrapper>
+        </Hide>
+
+        <Hide medium large xlarge>
+          <Wrapper aria-label={ariaLabel} {...props}>
+            <Mobile {...attributes} />
+          </Wrapper>
+        </Hide>
+      </>
     );
   }
 }
