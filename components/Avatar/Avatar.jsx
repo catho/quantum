@@ -23,6 +23,7 @@ const AvatarImage = styled.img.attrs({
   width: 24px;
   height: 24px;
   overflow: hidden;
+  pointer-events: none;
 `;
 
 const AvatarIcon = styled(Person).attrs({
@@ -34,6 +35,7 @@ const AvatarIcon = styled(Person).attrs({
   ${borderStyle}
   background: ${colors.neutral[700]};
   padding: 3px;
+  pointer-events: none;
 `;
 
 const AvatarNotification = styled.span`
@@ -49,6 +51,11 @@ const AvatarNotification = styled.span`
 const AvatarText = styled.span`
   display: inline-flex;
   margin-left: 12px;
+  pointer-events: none;
+`;
+
+const IconToggle = styled(Icon)`
+  pointer-events: none;
 `;
 
 /** This components is used to display the user picture. */
@@ -64,7 +71,7 @@ const Avatar = ({
     {picture ? <AvatarImage src={picture} /> : <AvatarIcon />}
     {hasNotification && <AvatarNotification />}
     {text && <AvatarText>{text}</AvatarText>}
-    {hasToggle && <Icon name="keyboard_arrow_down" />}
+    {hasToggle && <IconToggle name="keyboard_arrow_down" />}
   </AvatarWrapper>
 );
 
