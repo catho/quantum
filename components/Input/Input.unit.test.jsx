@@ -113,14 +113,6 @@ describe('Input component', () => {
     expect(onCleanMock).toHaveBeenCalled();
   });
 
-  it('should update state when value property is changed', () => {
-    const component = mount(<Input value="foo" />);
-    expect(component.state('currentValue')).toBe('foo');
-
-    component.setProps({ value: 'bar' }).update();
-    expect(component.state('currentValue')).toBe('bar');
-  });
-
   describe('with a label', () => {
     it('should match label "htmlFor" label param with "id" input param', () => {
       const id = 'input-id';
