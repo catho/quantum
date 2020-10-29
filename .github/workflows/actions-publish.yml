@@ -17,47 +17,47 @@ jobs:
         node-version: [12.16.1]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install the dependencies
-      run: yarn
-      
-    - name: run unit tests
-      run: yarn test:components
+      - name: Install the dependencies
+        run: yarn
 
-    - name: run the regression tests
-      run: yarn build:regression
+      - name: run unit tests
+        run: yarn test:components
+
+      - name: run the regression tests
+        run: yarn build:regression
 
   publish:
     needs: tests
     runs-on: ubuntu-16.04
-    
+
     strategy:
       matrix:
-        node-version: [12.x]
-    
-    steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+        node-version: [12.16.1]
 
-    - name: Install the dependencies
-      run: yarn
-    - name: Build
-      run: yarn build
-    - name: setting npm token
-      run: ./scripts/publish.sh
-      env:
-        NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-    - name: Publish package
-      run: yarn semantic-release
-      env:
-        NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GH_URL: "https://api.github.com/"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install the dependencies
+        run: yarn
+      - name: Build
+        run: yarn build
+      - name: setting npm token
+        run: ./scripts/publish.sh
+        env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Publish package
+        run: yarn semantic-release
+        env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_URL: 'https://api.github.com/'
