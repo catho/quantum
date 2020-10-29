@@ -58,3 +58,7 @@ jobs:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_URL: 'https://api.github.com/'
+      - name: Deploy storybook to Github Pages
+          run: yarn deploy-storybook -- --ci
+          env:
+            GH_TOKEN: catho:${{ secrets.GITHUB_TOKEN }}
