@@ -33,7 +33,8 @@
     "prepush": "yarn lint:all && yarn test:components",
     "storybook": "start-storybook -s static",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
