@@ -1,0 +1,27 @@
+name: Quantum CI - development
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-16.04
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Read .nvmrc
+        run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+        id: nvm
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
+
+      - name: Install the dependencies
+        run: yarn
+
+      - name: run unit tests
+        run: yarn test:components
+
+      - name: run the regression tests
+        run: yarn build:regression
