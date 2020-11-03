@@ -70,7 +70,7 @@ const TabExample = (
   </Tab>
 );
 
-const description = `Avatar components are used for showing a thumbnail of the user picture or an user icon if the picture is done defined, also it can display a dot to alert that there is some notification.`;
+const description = `Avatars are used for showing a thumbnail of the user picture or an user icon if the picture is done defined, also it can display a dot to alert that there is some notification.`;
 
 storiesOf('Avatar', module).add('Avatar', () => (
   <AutoExample
