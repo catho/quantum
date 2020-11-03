@@ -62,3 +62,4 @@ jobs:
         run: yarn deploy-storybook -- --ci
         env:
           GH_TOKEN: catho:${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
