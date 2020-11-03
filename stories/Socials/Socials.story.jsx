@@ -24,7 +24,7 @@ import {
 storiesOf('Socials', module).add('Socials', () => (
   <>
     <Heading name="Socials">
-      Socials component is used to share the social media in application.
+      Socials component is used to share the social media in applications.
     </Heading>
     <TabbedView>
       <Tab title="Usage">
