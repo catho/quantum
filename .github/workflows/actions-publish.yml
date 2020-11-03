@@ -61,4 +61,4 @@ jobs:
       - name: Deploy storybook to Github Pages
         run: yarn deploy-storybook -- --ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
