@@ -27,7 +27,7 @@ Description.displayName = 'Card.Description';
 Description.propTypes = {
   /** default `font-size` is `14px`, with `small` prop defined the `font-size` is changed to `12px`. */
   small: PropTypes.bool,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
   }),

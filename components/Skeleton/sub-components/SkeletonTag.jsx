@@ -29,7 +29,7 @@ SkeletonTag.displayName = 'SkeletonTag';
 
 SkeletonTag.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
   }).isRequired,

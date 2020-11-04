@@ -57,7 +57,7 @@ PageButton.propTypes = {
   tabIndex: PropTypes.number,
   children: PropTypes.number.isRequired,
   onClick: PropTypes.func,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,

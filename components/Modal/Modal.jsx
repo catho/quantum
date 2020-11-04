@@ -222,11 +222,11 @@ Modal.propTypes = {
   onClose: PropTypes.func,
   /** aria-label property value for the close button icon. */
   closeButtonAriaLabel: PropTypes.string,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     breakpoints: PropTypes.object,
     colors: PropTypes.object,
     spacing: PropTypes.object,
-    components: PropTypes.objectOf({
+    components: PropTypes.shape({
       button: PropTypes.object,
     }),
   }),

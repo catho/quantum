@@ -27,7 +27,7 @@ Hide.propTypes = {
   medium: PropTypes.bool,
   small: PropTypes.bool,
   xsmall: PropTypes.bool,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     breakpoints: PropTypes.object,
   }),
 };

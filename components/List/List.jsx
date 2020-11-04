@@ -171,7 +171,7 @@ List.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
   }),
 };

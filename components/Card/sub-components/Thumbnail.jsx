@@ -32,7 +32,7 @@ Thumbnail.propTypes = {
   alt: PropTypes.string.isRequired,
   /** Display a rounded Thumbnail. */
   rounded: PropTypes.bool,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
   }),
 };

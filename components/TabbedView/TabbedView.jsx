@@ -248,8 +248,8 @@ TabbedView.propTypes = {
   ]).isRequired,
   activeTab: PropTypes.string,
   skin: PropTypes.oneOf(['neutral', 'primary']),
-  theme: PropTypes.objectOf({
-    components: PropTypes.objectOf({
+  theme: PropTypes.shape({
+    components: PropTypes.shape({
       tabbedView: PropTypes.object,
     }),
     baseFontSize: PropTypes.number,

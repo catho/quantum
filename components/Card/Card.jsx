@@ -56,7 +56,7 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
   }),
 };

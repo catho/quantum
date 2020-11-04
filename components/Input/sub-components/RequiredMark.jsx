@@ -13,7 +13,7 @@ const RequiredMark = styled.em`
 `;
 
 RequiredMark.propTypes = {
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
   }),
 };

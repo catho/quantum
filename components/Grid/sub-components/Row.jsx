@@ -139,7 +139,7 @@ Row.propTypes = {
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
   ]),
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     breakpoints: PropTypes.object,
   }),
 };

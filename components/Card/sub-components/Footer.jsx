@@ -11,7 +11,7 @@ const Footer = styled.footer`
 `;
 
 Footer.propTypes = {
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     spacing: PropTypes.object,
   }),
 };

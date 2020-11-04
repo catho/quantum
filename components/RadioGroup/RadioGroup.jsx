@@ -86,7 +86,7 @@ RadioGroup.propTypes = {
   defaultValue: PropTypes.string,
   name: PropTypes.string.isRequired,
   error: PropTypes.string,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

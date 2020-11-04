@@ -21,7 +21,7 @@ const Content = styled.div`
 `;
 
 Content.propTypes = {
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
   }),

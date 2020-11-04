@@ -56,7 +56,7 @@ Socials.defaultProps = {
 
 Socials.propTypes = {
   size: Proptypes.string,
-  theme: Proptypes.objectOf({
+  theme: Proptypes.shape({
     spacing: Proptypes.object,
   }),
   items: Proptypes.arrayOf(

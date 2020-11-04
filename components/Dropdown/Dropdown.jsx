@@ -285,7 +285,7 @@ List.defaultProps = {
 
 List.propTypes = {
   selectedItem: itemPropType,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }).isRequired,
@@ -497,7 +497,7 @@ Dropdown.propTypes = {
   onChange: PropTypes.func,
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,

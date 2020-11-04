@@ -24,7 +24,7 @@ const Header = styled.header`
 `;
 
 Header.propTypes = {
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     spacing: PropTypes.object,
   }),
 };

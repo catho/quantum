@@ -120,7 +120,7 @@ CircularLoader.propTypes = {
   size: PropTypes.oneOf(['medium', 'large', 'xlarge', 'xxlarge', 'xxxlarge']),
   skin: PropTypes.oneOf(['primary', 'secondary']),
   /** Edit only for themification */
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
     gutter: PropTypes.number,
   }),

@@ -71,7 +71,7 @@ Skeleton.propTypes = {
   /** Will affect only `Tag` and `Button` types.  */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
   /** Used only for themification.  */
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),

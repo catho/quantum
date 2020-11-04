@@ -242,7 +242,7 @@ Input.propTypes = {
   ]),
   onClean: PropTypes.func,
   onChange: PropTypes.func,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     spacing: PropTypes.object,
     colors: PropTypes.object,
     baseFontSize: PropTypes.number,

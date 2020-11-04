@@ -27,7 +27,7 @@ SkeletonButton.displayName = 'SkeletonButton';
 
 SkeletonButton.propTypes = {
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']).isRequired,
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     spacing: PropTypes.object,
   }).isRequired,
 };

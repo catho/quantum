@@ -152,11 +152,11 @@ Content.propTypes = {
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   onPopoverClose: PropTypes.func,
   skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
     breakpoints: PropTypes.object,
-    components: PropTypes.objectOf({
+    components: PropTypes.shape({
       popover: PropTypes.object,
       button: PropTypes.object,
     }),

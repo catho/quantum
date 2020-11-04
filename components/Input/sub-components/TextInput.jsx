@@ -89,7 +89,7 @@ const TextInput = styled.input`
 TextInput.displayName = 'TextInput';
 
 TextInput.propTypes = {
-  theme: PropTypes.objectOf({
+  theme: PropTypes.shape({
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),
