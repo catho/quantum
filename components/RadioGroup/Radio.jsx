@@ -16,19 +16,18 @@ const RadioMark = styled.span`
   width: ${radioSize};
 
   ${({
-    theme: {
-      colors: {
-        neutral: { 0: white, 500: gray },
+      theme: {
+        colors: {
+          neutral: { 0: white, 500: gray },
+        },
+        spacing: { xsmall },
       },
-      spacing: { xsmall },
-    },
-  }) => `
+    }) => `
     background-color: ${white};
     border: 2px solid ${gray};
     margin-right: ${xsmall}px;
   `}
-
-  :after {
+    :after {
     border-radius: 50%;
     content: '';
     display: none;
