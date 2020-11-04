@@ -8,12 +8,15 @@ exports[`Skeleton component Should match the snapshot of a Button component skel
   display: inline-block;
   box-sizing: border-box;
   width: 100px;
+}
+
+.c1 {
   border-radius: 4px;
   height: 40px;
 }
 
 <div
-  className="SkeletonBase-sc-17r2okr-0 c0"
+  className="c0 c1"
   height={null}
   size="medium"
   width="100px"
@@ -28,13 +31,16 @@ exports[`Skeleton component Should match the snapshot of a Tag component loader 
   display: inline-block;
   box-sizing: border-box;
   width: 100px;
+}
+
+.c1 {
   border-radius: 8px;
   margin-right: 8px;
   height: 26px;
 }
 
 <div
-  className="SkeletonBase-sc-17r2okr-0 c0"
+  className="c0 c1"
   height={null}
   size="medium"
   width="100px"
@@ -50,11 +56,14 @@ exports[`Skeleton component Should match the snapshot of a circular skeleton 1`]
   box-sizing: border-box;
   height: 56px;
   width: 56px;
+}
+
+.c1 {
   border-radius: 50%;
 }
 
 <div
-  className="SkeletonBase-sc-17r2okr-0 c0"
+  className="c0 c1"
   height="56px"
   width="56px"
 />
@@ -72,7 +81,7 @@ exports[`Skeleton component Should match the snapshot of a simple skeleton 1`] =
 }
 
 <div
-  className="SkeletonBase-sc-17r2okr-0 c0"
+  className="SkeletonRect-sc-65m7h4-0 c0"
   height="14px"
   width="100%"
 />
@@ -87,11 +96,14 @@ exports[`Skeleton component Should match the snapshot of a text skeleton 1`] = `
   box-sizing: border-box;
   height: 14px;
   width: 100%;
+}
+
+.c1 {
   border-radius: 4px;
 }
 
 <div
-  className="SkeletonBase-sc-17r2okr-0 c0"
+  className="c0 c1"
   height="14px"
   width="100%"
 />

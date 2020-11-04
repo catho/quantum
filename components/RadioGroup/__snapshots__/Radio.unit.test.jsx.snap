@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup.Radio /> snapshot children 1`] = `
-.c2 {
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -12,7 +17,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   width: 0;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -27,7 +32,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   margin-right: 8px;
 }
 
-.c4:after {
+.c5:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -39,9 +44,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   background-color: #1250C4;
 }
 
-.c0 {
-  display: block;
-  margin-bottom: 5px;
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -57,38 +60,38 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
   user-select: none;
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #1250C4;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0 .c1:checked:disabled ~ .c3 {
+.c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
-  className="Label-sc-1ny5bqy-0 c0"
+  className="c0 c1"
   disabled={false}
 >
   <input
-    className="c1 c2"
+    className="c2 c3"
     disabled={false}
     onChange={[Function]}
     required={false}
@@ -96,7 +99,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
     value="Foo"
   />
   <span
-    className="c3 c4"
+    className="c4 c5"
   />
   <span>
     Foo
@@ -105,7 +108,12 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
-.c2 {
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -116,7 +124,7 @@ exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
   width: 0;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -131,7 +139,7 @@ exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
   margin-right: 8px;
 }
 
-.c4:after {
+.c5:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -143,9 +151,7 @@ exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
   background-color: #1250C4;
 }
 
-.c0 {
-  display: block;
-  margin-bottom: 5px;
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -161,38 +167,38 @@ exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
   user-select: none;
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #1250C4;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0 .c1:checked:disabled ~ .c3 {
+.c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
-  className="Label-sc-1ny5bqy-0 c0"
+  className="c0 c1"
   disabled={false}
 >
   <input
-    className="c1 c2"
+    className="c2 c3"
     disabled={false}
     onChange={[Function]}
     required={false}
@@ -200,7 +206,7 @@ exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
     value="Foo"
   />
   <span
-    className="c3 c4"
+    className="c4 c5"
   />
   <span>
     <span>
@@ -211,7 +217,12 @@ exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
-.c2 {
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -222,7 +233,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   width: 0;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -237,7 +248,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   margin-right: 8px;
 }
 
-.c4:after {
+.c5:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -249,9 +260,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   background-color: #1250C4;
 }
 
-.c0 {
-  display: block;
-  margin-bottom: 5px;
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -268,75 +277,75 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   color: #999999;
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #1250C4;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0:hover {
+.c1:hover {
   cursor: not-allowed;
 }
 
-.c0 .c1:disabled ~ .c3 {
+.c1 .c2:disabled ~ .c4 {
   background-color: #e0e0e0;
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #ec584e;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #ec584e;
   display: block;
 }
 
-.c0 .c1:checked:disabled {
+.c1 .c2:checked:disabled {
   background-color: #999999;
   border-color: #999999;
 }
 
-.c0 .c1:checked:disabled ~ .c3:after {
+.c1 .c2:checked:disabled ~ .c4:after {
   background-color: #999999;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #999999;
   box-shadow: none;
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #999999;
   box-shadow: none;
 }
 
-.c0 .c1:checked:disabled ~ .c3 {
+.c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
-  className="Label-sc-1ny5bqy-0 c0"
+  className="c0 c1"
   disabled={true}
 >
   <input
-    className="c1 c2"
+    className="c2 c3"
     disabled={true}
     onChange={[Function]}
     required={false}
@@ -344,7 +353,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     value="Foo"
   />
   <span
-    className="c3 c4"
+    className="c4 c5"
   />
   <span>
     Foo
@@ -353,7 +362,12 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
-.c2 {
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -364,7 +378,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   width: 0;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -379,7 +393,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   margin-right: 8px;
 }
 
-.c4:after {
+.c5:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -391,9 +405,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   background-color: #1250C4;
 }
 
-.c0 {
-  display: block;
-  margin-bottom: 5px;
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -409,62 +421,62 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
   user-select: none;
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #1250C4;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #e91b0c;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #e91b0c;
   display: block;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c0 .c3 {
+.c1 .c4 {
   border-color: #e91b0c;
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c0 .c1:checked:disabled ~ .c3 {
+.c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
-  className="Label-sc-1ny5bqy-0 c0"
+  className="c0 c1"
   disabled={false}
 >
   <input
-    className="c1 c2"
+    className="c2 c3"
     disabled={false}
     onChange={[Function]}
     required={false}
@@ -472,7 +484,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
     value="Foo"
   />
   <span
-    className="c3 c4"
+    className="c4 c5"
   />
   <span>
     Foo
@@ -481,7 +493,12 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot required 1`] = `
-.c2 {
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -492,7 +509,7 @@ exports[`<RadioGroup.Radio /> snapshot required 1`] = `
   width: 0;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -507,7 +524,7 @@ exports[`<RadioGroup.Radio /> snapshot required 1`] = `
   margin-right: 8px;
 }
 
-.c4:after {
+.c5:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -519,9 +536,7 @@ exports[`<RadioGroup.Radio /> snapshot required 1`] = `
   background-color: #1250C4;
 }
 
-.c0 {
-  display: block;
-  margin-bottom: 5px;
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -537,38 +552,38 @@ exports[`<RadioGroup.Radio /> snapshot required 1`] = `
   user-select: none;
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #1250C4;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0 .c1:checked:disabled ~ .c3 {
+.c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
-  className="Label-sc-1ny5bqy-0 c0"
+  className="c0 c1"
   disabled={false}
 >
   <input
-    className="c1 c2"
+    className="c2 c3"
     disabled={false}
     onChange={[Function]}
     required={true}
@@ -576,7 +591,7 @@ exports[`<RadioGroup.Radio /> snapshot required 1`] = `
     value="Foo"
   />
   <span
-    className="c3 c4"
+    className="c4 c5"
   />
   <span>
     Foo
@@ -585,7 +600,12 @@ exports[`<RadioGroup.Radio /> snapshot required 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
-.c2 {
+.c0 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -596,7 +616,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   width: 0;
 }
 
-.c4 {
+.c5 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -611,7 +631,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   margin-right: 8px;
 }
 
-.c4:after {
+.c5:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -623,9 +643,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   background-color: #1250C4;
 }
 
-.c0 {
-  display: block;
-  margin-bottom: 5px;
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -641,38 +659,38 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
   user-select: none;
 }
 
-.c0 .c1:checked ~ .c3 {
+.c1 .c2:checked ~ .c4 {
   border-color: #1250C4;
 }
 
-.c0 .c1:checked ~ .c3:after {
+.c1 .c2:checked ~ .c4:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c0 .c1:focus ~ .c3 {
+.c1 .c2:focus ~ .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0:hover .c3,
-.c0:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c0 .c1:checked:disabled ~ .c3 {
+.c1 .c2:checked:disabled ~ .c4 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
 <label
-  className="Label-sc-1ny5bqy-0 c0"
+  className="c0 c1"
   disabled={false}
 >
   <input
-    className="c1 c2"
+    className="c2 c3"
     disabled={false}
     onChange={[Function]}
     required={false}
@@ -680,7 +698,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
     value="Foo"
   />
   <span
-    className="c3 c4"
+    className="c4 c5"
   />
   <span>
     Foo

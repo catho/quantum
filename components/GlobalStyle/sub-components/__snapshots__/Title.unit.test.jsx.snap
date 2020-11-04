@@ -2,6 +2,6 @@
 
 exports[`<Title /> Should match the snapshot 1`] = `
 <h1
-  className=""
+  className="Title-sc-1vnr32k-0"
 />
 `;

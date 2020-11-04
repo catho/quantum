@@ -8,7 +8,7 @@ exports[`<Container /> with "no-gutters" prop should not have gutters 1`] = `
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -56,7 +56,7 @@ exports[`<Container /> with fluid prop should have a fluid width 1`] = `
   margin-right: auto;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -105,7 +105,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -153,7 +153,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 `;
 
 exports[`<Container /> with hide prop should hide it's children according to screen size 2`] = `
-.c2 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -164,7 +164,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -236,11 +236,11 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 `;
 
 exports[`<Container /> with hide prop should hide it's children according to screen size 3`] = `
-.c2 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c3 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -251,7 +251,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -347,15 +347,15 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 `;
 
 exports[`<Container /> with hide prop should hide it's children according to screen size 4`] = `
-.c2 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c3 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c4 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -366,7 +366,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -486,19 +486,19 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 `;
 
 exports[`<Container /> with hide prop should hide it's children according to screen size 5`] = `
-.c2 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c3 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c4 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c5 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -509,7 +509,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -653,23 +653,23 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 `;
 
 exports[`<Container /> with hide prop should hide it's children according to screen size 6`] = `
-.c2 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c3 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c4 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c5 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
-.c6 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -680,7 +680,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
@@ -861,7 +861,7 @@ exports[`<Container /> with withBreakpoints prop should have a fixed width 1`] =
   max-width: 95%;
 }
 
-.c1 .c0 {
+.c0 .c0 {
   max-width: 100%;
 }
 
