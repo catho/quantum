@@ -106,7 +106,7 @@ ProgressBar.defaultProps = {
 ProgressBar.propTypes = {
   skin: PropTypes.oneOf(['neutral', 'primary', 'secondary']),
   theme: PropTypes.shape({
-    components: PropTypes.shape({
+    components: PropTypes.objectOf({
       progressBar: PropTypes.object,
     }),
   }),

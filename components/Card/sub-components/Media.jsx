@@ -40,7 +40,7 @@ Media.displayName = 'Card.Media';
 Media.propTypes = {
   className: PropTypes.string,
   style: PropTypes.objectOf(PropTypes.string),
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

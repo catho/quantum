@@ -213,7 +213,7 @@ Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,

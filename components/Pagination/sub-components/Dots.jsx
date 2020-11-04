@@ -56,7 +56,7 @@ const Dots = ({ theme, ...props }) => (
 );
 
 Dots.propTypes = {
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

@@ -269,12 +269,12 @@ Button.propTypes = {
   /** https://www.styled-components.com/docs/api#as-polymorphic-prop */
   $as: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   onClick: PropTypes.func,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,
     breakpoints: PropTypes.object,
-    components: PropTypes.shape({
+    components: PropTypes.objectOf({
       button: PropTypes.object,
     }),
   }),
@@ -338,11 +338,11 @@ IconButton.propTypes = {
     'warning',
     'error',
   ]),
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,
-    components: PropTypes.shape({
+    components: PropTypes.objectOf({
       button: PropTypes.object,
     }),
   }),

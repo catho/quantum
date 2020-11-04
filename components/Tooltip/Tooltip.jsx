@@ -112,7 +112,7 @@ Tooltip.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     spacing: PropTypes.object,
     colors: PropTypes.object,
     baseFontSize: PropTypes.number,

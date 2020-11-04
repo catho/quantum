@@ -114,11 +114,11 @@ Alert.propTypes = {
   /** You must pass a callback that is called when close button is clicked */
   onClose: PropTypes.func.isRequired,
   skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     spacing: PropTypes.object,
-    components: PropTypes.shape({
+    components: PropTypes.objectOf({
       alert: PropTypes.object,
       button: PropTypes.object,
     }),

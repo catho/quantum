@@ -12,7 +12,7 @@ const Header = styled(Card.Header)`
 `;
 
 Header.propTypes = {
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     spacing: PropTypes.object,
   }),
 };

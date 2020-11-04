@@ -258,7 +258,7 @@ Radio.propTypes = {
   label: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

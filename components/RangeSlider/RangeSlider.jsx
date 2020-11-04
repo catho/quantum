@@ -211,7 +211,7 @@ RangeSlider.propTypes = {
   /** It receives a Number to display a slider or an Object with from and to properties to display a range. Example: `value={10}` or `value={{ from: 20, to: 40 }}` */
   value: valueValidator,
   defaultValue: valueValidator,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     spacing: PropTypes.object,
     colors: PropTypes.object,
     baseFontSize: PropTypes.number,

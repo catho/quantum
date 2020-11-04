@@ -24,7 +24,7 @@ const ErrorMessage = styled.span`
 `;
 
 ErrorMessage.propTypes = {
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

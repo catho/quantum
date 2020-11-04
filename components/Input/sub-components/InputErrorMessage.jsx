@@ -8,7 +8,7 @@ const InputErrorMessage = styled(ErrorMessage)``;
 InputErrorMessage.displayName = 'InputErrorMessage';
 
 InputErrorMessage.propTypes = {
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),

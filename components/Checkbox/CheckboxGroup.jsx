@@ -76,7 +76,7 @@ CheckboxGroup.propTypes = {
   ),
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   type: PropTypes.oneOf(['checkbox', 'button']),
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

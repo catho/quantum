@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// eslint-disable-next-line import/no-cycle
 import SkeletonTypes from './SkeletonTypes';
 import { spacing, baseFontSize as defaultBaseFontSize } from '../shared/theme';
 import {
@@ -70,7 +71,7 @@ Skeleton.propTypes = {
   /** Will affect only `Tag` and `Button` types.  */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
   /** Used only for themification.  */
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),

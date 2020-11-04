@@ -17,7 +17,7 @@ const InputLabel = styled.label`
 InputLabel.displayName = 'InputLabel';
 
 InputLabel.propTypes = {
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     spacing: PropTypes.object,
   }),
 };

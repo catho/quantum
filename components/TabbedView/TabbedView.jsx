@@ -163,8 +163,6 @@ const TabPanel = styled.div`
 const RenderIf = ({ conditional, children }) => conditional && children;
 
 class TabbedView extends React.Component {
-  static Tab = Tab;
-
   constructor(props) {
     super(props);
 
@@ -193,6 +191,8 @@ class TabbedView extends React.Component {
       .replace(/[\u0300-\u036f]/g, '')
       .replace(' ', '-')
       .toLowerCase();
+
+  static Tab = Tab;
 
   render() {
     const { children, skin, theme, fluid, onTabClick } = this.props;
@@ -248,8 +248,8 @@ TabbedView.propTypes = {
   ]).isRequired,
   activeTab: PropTypes.string,
   skin: PropTypes.oneOf(['neutral', 'primary']),
-  theme: PropTypes.shape({
-    components: PropTypes.shape({
+  theme: PropTypes.objectOf({
+    components: PropTypes.objectOf({
       tabbedView: PropTypes.object,
     }),
     baseFontSize: PropTypes.number,

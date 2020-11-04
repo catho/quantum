@@ -45,7 +45,7 @@ const ActionButton = styled.a`
 ActionButton.propTypes = {
   onClick: PropTypes.func,
   tabIndex: PropTypes.number,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

@@ -314,12 +314,12 @@ SnackBar.propTypes = {
     title: PropTypes.string,
     callbackFn: PropTypes.func,
   }),
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     baseFontSize: PropTypes.number,
     colors: PropTypes.object,
     breakpoints: PropTypes.object,
     spacing: PropTypes.object,
-    components: PropTypes.shape({
+    components: PropTypes.objectOf({
       snackbar: PropTypes.object,
       button: PropTypes.object,
     }),

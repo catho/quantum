@@ -223,7 +223,7 @@ Accordion.defaultProps = {
 
 Accordion.propTypes = {
   /** Edit only for themification */
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,

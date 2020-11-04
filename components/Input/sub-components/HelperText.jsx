@@ -14,7 +14,7 @@ const HelperText = styled(InputErrorMessage)`
 `;
 
 HelperText.propTypes = {
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

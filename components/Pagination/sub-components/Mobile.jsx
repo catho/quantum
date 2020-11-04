@@ -116,7 +116,7 @@ Mobile.propTypes = {
   prevButtonText: PropTypes.string,
   handleHref: PropTypes.func,
   handlePageClick: PropTypes.func,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),

@@ -135,9 +135,9 @@ Tag.propTypes = {
   skin: PropTypes.oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   stroked: PropTypes.bool,
   text: PropTypes.string,
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
-    components: PropTypes.shape({
+    components: PropTypes.objectOf({
       tag: PropTypes.object,
     }),
     spacing: PropTypes.object,

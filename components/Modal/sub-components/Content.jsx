@@ -15,7 +15,7 @@ const Content = styled(Card.Content)`
 `;
 
 Content.propTypes = {
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     spacing: PropTypes.object,
   }),
 };

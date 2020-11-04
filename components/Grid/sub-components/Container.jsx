@@ -68,7 +68,7 @@ Container.propTypes = {
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.string),
   ]),
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     breakpoints: PropTypes.object,
     components: PropTypes.object,
   }),

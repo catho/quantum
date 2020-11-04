@@ -89,14 +89,6 @@ const Ordered = styled.ol`
 Ordered.displayName = 'OrderedList';
 
 class List extends React.Component {
-  static Item = Item;
-
-  static Content = Content;
-
-  static Header = Header;
-
-  static SubHeader = SubHeader;
-
   constructor(props) {
     super(props);
 
@@ -107,6 +99,14 @@ class List extends React.Component {
   }
 
   _listType = ordered => (ordered ? this.types.ol : this.types.ul);
+
+  static Item = Item;
+
+  static Content = Content;
+
+  static Header = Header;
+
+  static SubHeader = SubHeader;
 
   render() {
     const {
@@ -171,7 +171,7 @@ List.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  theme: PropTypes.shape({
+  theme: PropTypes.objectOf({
     colors: PropTypes.object,
   }),
 };
