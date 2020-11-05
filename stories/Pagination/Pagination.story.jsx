@@ -253,7 +253,9 @@ storiesOf('Pagination', module).add('Pagination', () => (
             <Col medium={5}>
               <SimpleHighlight>{ControlledPagination.code}</SimpleHighlight>
             </Col>
-            <Col medium={7}>{<ControlledPagination />}</Col>
+            <Col medium={7}>
+              <ControlledPagination />
+            </Col>
           </Row>
 
           <Title as="h2">Aria attributes</Title>
