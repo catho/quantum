@@ -35,7 +35,7 @@ class Form extends React.Component {
     const { children } = this.props;
     const { values } = this.state;
 
-    React.Children.map(children, child => {
+    this._recursiveMap(children, child => {
       if (!Form._isValidElement(child)) return;
 
       const {
@@ -48,11 +48,10 @@ class Form extends React.Component {
   _createClones = children => {
     const { values, errors } = this.state;
 
-    return React.Children.map(children, child => {
+    const generatedClones = this._recursiveMap(children, child => {
       if (!Form._isValidElement(child)) {
         return child;
       }
-
       const { name, error, onChange = () => {} } = child.props;
       return React.cloneElement(child, {
         value: values[name],
@@ -63,7 +62,24 @@ class Form extends React.Component {
         },
       });
     });
+    return generatedClones;
   };
+
+  _recursiveMap = (children, fn) =>
+    React.Children.map(children, child => {
+      if (!React.isValidElement(child)) {
+        return child;
+      }
+
+      if (child.props.children) {
+        return fn(
+          React.cloneElement(child, {
+            children: this._recursiveMap(child.props.children, fn),
+          }),
+        );
+      }
+      return fn(child);
+    });
 
   _findError = child => {
     const { props } = child;
@@ -97,7 +113,8 @@ class Form extends React.Component {
 
   _validateError = children => {
     const { errors } = this.state;
-    return React.Children.map(children, child => {
+
+    return this._recursiveMap(children, child => {
       const { name } = child.props;
 
       const _error = this._findError(child);
@@ -105,6 +122,9 @@ class Form extends React.Component {
       const newError = errors;
       newError[name] = _error;
 
+      console.log({ newError, _error });
+
+      // this.setState({ errors: { ...errors, name: _error } });
       this.setState({ errors: newError });
     });
   };
