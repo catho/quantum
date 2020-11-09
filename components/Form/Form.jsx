@@ -122,9 +122,6 @@ class Form extends React.Component {
       const newError = errors;
       newError[name] = _error;
 
-      console.log({ newError, _error });
-
-      // this.setState({ errors: { ...errors, name: _error } });
       this.setState({ errors: newError });
     });
   };
