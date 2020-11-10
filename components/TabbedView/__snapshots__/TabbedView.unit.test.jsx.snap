@@ -2858,11 +2858,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       }
                     >
                       <svg
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="MuiSvgIcon-root"
                         data-qtm-preloader="icon"
                         focusable="false"
-                        role="presentation"
                         style={
                           Object {
                             "color": "",
@@ -3296,11 +3295,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       }
                     >
                       <svg
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="MuiSvgIcon-root"
                         data-qtm-preloader="icon"
                         focusable="false"
-                        role="presentation"
                         style={
                           Object {
                             "color": "",

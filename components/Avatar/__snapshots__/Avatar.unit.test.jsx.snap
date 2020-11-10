@@ -25,10 +25,9 @@ exports[`<Avatar /> Should match snapshot With href 1`] = `
   href="#"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "#e0e0e0",
@@ -79,10 +78,9 @@ exports[`<Avatar /> Should match snapshot With notification 1`] = `
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "#e0e0e0",
@@ -168,10 +166,9 @@ exports[`<Avatar /> Should match snapshot With text 1`] = `
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "#e0e0e0",
@@ -220,10 +217,9 @@ exports[`<Avatar /> Should match snapshot With toggle icon 1`] = `
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "#e0e0e0",
@@ -238,11 +234,10 @@ exports[`<Avatar /> Should match snapshot With toggle icon 1`] = `
   </svg>
   
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c2"
     data-qtm-preloader="icon"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "",
@@ -283,10 +278,9 @@ exports[`<Avatar /> Should match snapshot Without picture 1`] = `
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "#e0e0e0",

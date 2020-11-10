@@ -58,7 +58,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c2 {
+.c3 {
   display: inline-block;
 }
 
@@ -69,11 +69,14 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   cursor: pointer;
   overflow: hidden;
   outline: none;
+}
+
+.c2 {
   padding: 7px;
 }
 
 <button
-  className="c0 SocialButton__BaseButton-sc-17dubal-0 c1"
+  className="c0 c1 c2"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -82,7 +85,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   
   <svg
     aria-labelledby="google-title"
-    className="c2"
+    className="c3"
     height="24"
     id="Google_Icon"
     role="img"
@@ -199,7 +202,7 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c2 {
+.c3 {
   display: inline-block;
 }
 
@@ -210,13 +213,16 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   cursor: pointer;
   overflow: hidden;
   outline: none;
+}
+
+.c2 {
   border: none;
   background-color: #3c5193;
   padding: 8px;
 }
 
 <button
-  className="c0 SocialButton__BaseButton-sc-17dubal-0 c1"
+  className="c0 c1 c2"
   disabled={false}
   onClick={[Function]}
   size="medium"
@@ -225,7 +231,7 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   
   <svg
     aria-labelledby="facebook-title"
-    className="c2"
+    className="c3"
     height="24"
     role="img"
     width="24"

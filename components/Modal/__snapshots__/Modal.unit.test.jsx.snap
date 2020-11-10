@@ -2,6 +2,22 @@
 
 exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 16px 0;
+}
+
+.c4 > * {
+  margin-right: 16px;
+}
+
+.c4 > *:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -11,13 +27,19 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   flex-basis: 0;
 }
 
-.c6 {
+.c8 {
   font-size: 24px;
   font-weight: 600;
   margin: 0;
 }
 
-.c8 {
+.c9 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.c11 {
   padding: 0 16px 16px;
 }
 
@@ -35,13 +57,13 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   background-color: #ffffff;
 }
 
-.c12 {
+.c16 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c10 {
+.c14 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -70,23 +92,23 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c10:hover {
+.c14:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
   border-color: #191919;
 }
 
-.c10:focus,
-.c10:focus-within {
+.c14:focus,
+.c14:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
-.c10:active {
+.c14:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
 }
 
-.c10 .c11 function (_ref6) {
+.c14 .c15 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -94,47 +116,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c10 .c11 function (_ref6) var fontSizes = {
+.c14 .c15 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c7 {
-  margin: 0;
-  padding: 12px 16px;
-  font-size: 14px;
-  font-size: 16px;
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: 16px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px 16px 0;
-  padding: 16px 16px 0;
-}
-
-.c3 > * {
-  margin-right: 16px;
-}
-
-.c3 > *:last-child {
-  margin-right: 0;
-}
-
-.c5 {
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c1 .Header-sc-1u94v40-0 {
-  padding-right: 64px;
-}
-
-.c9 {
+.c12 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -142,26 +128,49 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  position: absolute;
-  top: 12px;
-  right: 16px;
 }
 
-.c9 .c11 {
+.c12 .c15 {
   margin-right: 0;
 }
 
-.c9:hover,
-.c9:focus {
+.c12:hover,
+.c12:focus {
   box-shadow: none;
   background-color: rgba(224,224,224,0.4);
   color: #424242;
 }
 
-.c9:active {
+.c12:active {
   box-shadow: none;
   background-color: rgba(224,224,224,0.5);
   color: #424242;
+}
+
+.c10 {
+  font-size: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.c5 {
+  padding: 16px 16px 0;
+}
+
+.c7 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.c1 .c3 {
+  padding-right: 64px;
+}
+
+.c13 {
+  position: absolute;
+  top: 12px;
+  right: 16px;
 }
 
 .c0 {
@@ -413,6 +422,22 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   <Portal
     containerInfo={
       .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 16px 0;
+}
+
+.c4 > * {
+  margin-right: 16px;
+}
+
+.c4 > *:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -422,13 +447,19 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   flex-basis: 0;
 }
 
-.c5 {
+.c7 {
   font-size: 24px;
   font-weight: 600;
   margin: 0;
 }
 
-.c8 {
+.c9 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.c11 {
   padding: 0 16px 16px;
 }
 
@@ -446,13 +477,13 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   background-color: #ffffff;
 }
 
-.c12 {
+.c16 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c9 {
+.c12 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -481,23 +512,23 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c9:hover {
+.c12:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
   border-color: #191919;
 }
 
-.c9:focus,
-.c9:focus-within {
+.c12:focus,
+.c12:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
-.c9:active {
+.c12:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
 }
 
-.c9 .c11 function (_ref6) {
+.c12 .c15 function (_ref6) {
   -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
   -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
@@ -505,47 +536,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
 }
 
-.c9 .c11 function (_ref6) var fontSizes = {
+.c12 .c15 function (_ref6) var fontSizes = {
   xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
-.c7 {
-  margin: 0;
-  padding: 12px 16px;
-  font-size: 14px;
-  font-size: 16px;
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: 16px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px 16px 0;
-  padding: 16px 16px 0;
-}
-
-.c3 > * {
-  margin-right: 16px;
-}
-
-.c3 > *:last-child {
-  margin-right: 0;
-}
-
-.c6 {
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c2 .Header-sc-1u94v40-0 {
-  padding-right: 64px;
-}
-
-.c10 {
+.c13 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -553,26 +548,49 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  position: absolute;
-  top: 12px;
-  right: 16px;
 }
 
-.c10 .c11 {
+.c13 .c15 {
   margin-right: 0;
 }
 
-.c10:hover,
-.c10:focus {
+.c13:hover,
+.c13:focus {
   box-shadow: none;
   background-color: rgba(224,224,224,0.4);
   color: #424242;
 }
 
-.c10:active {
+.c13:active {
   box-shadow: none;
   background-color: rgba(224,224,224,0.5);
   color: #424242;
+}
+
+.c10 {
+  font-size: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.c5 {
+  padding: 16px 16px 0;
+}
+
+.c8 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.c2 .c3 {
+  padding-right: 64px;
+}
+
+.c14 {
+  position: absolute;
+  top: 12px;
+  right: 16px;
 }
 
 .c0 {
@@ -628,39 +646,38 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             class="c1 c2"
           >
             <header
-              class="Header-sc-1u94v40-0 c3"
+              class="c3 c4 c5"
             >
               <div
-                class="c4"
+                class="c6"
               >
                 <h2
-                  class="c5 c6"
+                  class="c7 c8"
                 >
                   Modal title
                 </h2>
               </div>
             </header>
             <div
-              class="Content-sc-6vzg5x-0 c7"
+              class="c9 c10"
             >
               Modal Content
             </div>
             <footer
-              class="c8"
+              class="c11"
             >
               ModalFooter
             </footer>
             <button
               aria-label="close dialog"
-              class="c9 Button__IconButton-sc-1ovnfsw-2 c10"
+              class="c12 c13 c14"
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root c11 c12"
+                class="MuiSvgIcon-root c15 c16"
                 data-qtm-preloader="icon"
                 focusable="false"
-                role="presentation"
                 style="font-size: 24px; max-width: 24px;"
                 theme="[object Object]"
                 viewBox="0 0 24 24"
@@ -1505,15 +1522,15 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   }
                 >
                   <header
-                    className="Header-sc-1u94v40-0 c3"
+                    className="c3 c4 c5"
                   >
                     <Card.HeaderText>
                       <div
-                        className="c4"
+                        className="c6"
                       >
                         <Title>
                           <Card.Title
-                            className="c5"
+                            className="c7"
                             small={false}
                             theme={
                               Object {
@@ -1522,7 +1539,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             }
                           >
                             <Title__Heading
-                              className="c5"
+                              className="c7"
                               small={false}
                               theme={
                                 Object {
@@ -1531,7 +1548,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               }
                             >
                               <h2
-                                className="c6 c5"
+                                className="c8 c7"
                               >
                                 Modal title
                               </h2>
@@ -1561,7 +1578,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   }
                 >
                   <div
-                    className="Content-sc-6vzg5x-0 c7"
+                    className="c9 c10"
                   >
                     Modal Content
                   </div>
@@ -1584,7 +1601,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   }
                 >
                   <footer
-                    className="c8"
+                    className="c11"
                   >
                     ModalFooter
                   </footer>
@@ -1796,7 +1813,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   <Button
                     aria-label="close dialog"
                     center={false}
-                    className="Button__IconButton-sc-1ovnfsw-2 c9"
+                    className="c12 c13"
                     disabled={false}
                     full={false}
                     icon="close"
@@ -2007,7 +2024,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     <Button__StyledButton
                       aria-label="close dialog"
                       center={false}
-                      className="Button__IconButton-sc-1ovnfsw-2 c9"
+                      className="c12 c13"
                       disabled={false}
                       full={false}
                       onClick={[Function]}
@@ -2216,7 +2233,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     >
                       <button
                         aria-label="close dialog"
-                        className="c10 Button__IconButton-sc-1ovnfsw-2 c9"
+                        className="c14 c12 c13"
                         disabled={false}
                         onClick={[Function]}
                         size="medium"
@@ -2425,7 +2442,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           }
                         >
                           <Icon
-                            className="c11 c12"
+                            className="c15 c16"
                             name="close"
                             size="medium"
                             skin=""
@@ -2630,7 +2647,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             }
                           >
                             <ForwardRef
-                              className="c11 c12"
+                              className="c15 c16"
                               data-qtm-preloader="icon"
                               style={
                                 Object {
@@ -2839,7 +2856,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               }
                             >
                               <WithStyles(ForwardRef(SvgIcon))
-                                className="c11 c12"
+                                className="c15 c16"
                                 data-qtm-preloader="icon"
                                 style={
                                   Object {
@@ -3048,7 +3065,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                 }
                               >
                                 <ForwardRef(SvgIcon)
-                                  className="c11 c12"
+                                  className="c15 c16"
                                   classes={
                                     Object {
                                       "colorAction": "MuiSvgIcon-colorAction",
@@ -3270,11 +3287,10 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   }
                                 >
                                   <svg
-                                    aria-hidden="true"
-                                    className="MuiSvgIcon-root c11 c12"
+                                    aria-hidden={true}
+                                    className="MuiSvgIcon-root c15 c16"
                                     data-qtm-preloader="icon"
                                     focusable="false"
-                                    role="presentation"
                                     style={
                                       Object {
                                         "color": "",

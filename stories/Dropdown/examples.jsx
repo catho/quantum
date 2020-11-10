@@ -3,6 +3,14 @@ import PropTypes from 'prop-types';
 import Dropdown from '../../components/Dropdown';
 
 class Controlled extends React.Component {
+  constructor(props) {
+    super(props);
+
+    const { selectedItem = '' } = props;
+
+    this.state = { selectedItem };
+  }
+
   static CODE = `class ControlledDropdown extends React.Component {
   constructor(props) {
     super(props);
@@ -38,14 +46,6 @@ class Controlled extends React.Component {
     )
   }
 }`;
-
-  constructor(props) {
-    super(props);
-
-    const { selectedItem = '' } = props;
-
-    this.state = { selectedItem };
-  }
 
   render() {
     const { selectedItem } = this.state;

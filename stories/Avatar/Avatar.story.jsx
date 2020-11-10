@@ -19,7 +19,7 @@ const TabExample = (
     <StoryContainer>
       <Container fluid>
         <Title as="h2">Default</Title>
-        <Example component={<Avatar />} code={`<Avatar />`} />
+        <Example component={<Avatar />} code="<Avatar />" />
 
         <Title as="h2">With picture</Title>
         <Example
@@ -30,7 +30,7 @@ const TabExample = (
         <Title as="h2">With notification</Title>
         <Example
           component={<Avatar hasNotification />}
-          code={`<Avatar hasNotification />`}
+          code="<Avatar hasNotification />"
         />
 
         <Title as="h2">With Text</Title>

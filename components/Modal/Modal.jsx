@@ -73,16 +73,6 @@ const ModalWrapper = styled.div`
 ModalWrapper.displayName = 'ModalWrapper';
 
 class Modal extends React.Component {
-  static Header = Header;
-
-  static HeaderText = HeaderText;
-
-  static Content = Content;
-
-  static Title = Title;
-
-  static Footer = Footer;
-
   constructor(props) {
     super(props);
 
@@ -181,6 +171,16 @@ class Modal extends React.Component {
 
     return false;
   };
+
+  static Header = Header;
+
+  static HeaderText = HeaderText;
+
+  static Content = Content;
+
+  static Title = Title;
+
+  static Footer = Footer;
 
   render() {
     const {

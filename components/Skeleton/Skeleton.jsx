@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// eslint-disable-next-line import/no-cycle
 import SkeletonTypes from './SkeletonTypes';
 import { spacing, baseFontSize as defaultBaseFontSize } from '../shared/theme';
 import {

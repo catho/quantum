@@ -27,11 +27,6 @@ exports[`TextArea component should match snapshots 1`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -67,11 +62,19 @@ exports[`TextArea component should match snapshots 1`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1 c2"
     disabled={false}
     id="textarea-0"
     onChange={[Function]}
@@ -112,11 +115,6 @@ exports[`TextArea component should match snapshots 2`] = `
   margin-top: 0px;
   padding: 8px 16px;
   background-color: #E5EDFC;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -152,11 +150,19 @@ exports[`TextArea component should match snapshots 2`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1 c2"
     disabled={false}
     id="textarea-1"
     onChange={[Function]}
@@ -175,12 +181,6 @@ exports[`TextArea component should match snapshots 3`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
-}
-
-.c1 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
 }
 
 .c2 {
@@ -202,11 +202,6 @@ exports[`TextArea component should match snapshots 3`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -242,6 +237,20 @@ exports[`TextArea component should match snapshots 3`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c1 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+.c3 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
@@ -252,7 +261,7 @@ exports[`TextArea component should match snapshots 3`] = `
     Text label
   </label>
   <textarea
-    className="TextInput-ado1el-0 c2"
+    className="c2 c3"
     disabled={false}
     id="textarea-2"
     onChange={[Function]}
@@ -271,16 +280,6 @@ exports[`TextArea component should match snapshots 4`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
-}
-
-.c1 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-}
-
-.c2 {
-  color: #ec584e;
 }
 
 .c3 {
@@ -302,11 +301,6 @@ exports[`TextArea component should match snapshots 4`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c3::-webkit-inner-spin-button,
@@ -342,6 +336,24 @@ exports[`TextArea component should match snapshots 4`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c1 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+.c2 {
+  color: #ec584e;
+}
+
+.c4 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
@@ -357,7 +369,7 @@ exports[`TextArea component should match snapshots 4`] = `
     </em>
   </label>
   <textarea
-    className="TextInput-ado1el-0 c3"
+    className="c3 c4"
     disabled={false}
     id="textarea-3"
     onChange={[Function]}
@@ -397,11 +409,6 @@ exports[`TextArea component should match snapshots 5`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -437,11 +444,19 @@ exports[`TextArea component should match snapshots 5`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1 c2"
     disabled={true}
     id="textarea-4"
     onChange={[Function]}
@@ -481,11 +496,6 @@ exports[`TextArea component should match snapshots 6`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -521,11 +531,19 @@ exports[`TextArea component should match snapshots 6`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1 c2"
     disabled={false}
     id="textarea-5"
     onChange={[Function]}
@@ -539,14 +557,7 @@ exports[`TextArea component should match snapshots 6`] = `
 `;
 
 exports[`TextArea component should match snapshots 7`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c2 {
+.c3 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -555,7 +566,13 @@ exports[`TextArea component should match snapshots 7`] = `
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  color: #424242;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
 }
 
 .c1 {
@@ -577,11 +594,6 @@ exports[`TextArea component should match snapshots 7`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -617,11 +629,23 @@ exports[`TextArea component should match snapshots 7`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c4 {
+  color: #424242;
+}
+
+.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1 c2"
     disabled={false}
     id="textarea-6"
     onChange={[Function]}
@@ -630,7 +654,7 @@ exports[`TextArea component should match snapshots 7`] = `
     value=""
   />
   <span
-    className="ErrorMessage-sc-19jcdrm-0 InputErrorMessage-s0eyav-0 c2"
+    className="InputErrorMessage-s0eyav-0 c3 c4"
   >
     this is a helper text
   </span>
@@ -639,14 +663,7 @@ exports[`TextArea component should match snapshots 7`] = `
 `;
 
 exports[`TextArea component should match snapshots 8`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c2 {
+.c3 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -655,6 +672,13 @@ exports[`TextArea component should match snapshots 8`] = `
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
 }
 
 .c1 {
@@ -677,11 +701,6 @@ exports[`TextArea component should match snapshots 8`] = `
   margin-top: 0px;
   padding: 8px 16px;
   border-color: #e91b0c;
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -717,11 +736,19 @@ exports[`TextArea component should match snapshots 8`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
 <div
   className="c0"
 >
   <textarea
-    className="TextInput-ado1el-0 c1"
+    className="c1 c2"
     disabled={false}
     id="textarea-7"
     onChange={[Function]}
@@ -731,7 +758,7 @@ exports[`TextArea component should match snapshots 8`] = `
   />
   
   <span
-    className="ErrorMessage-sc-19jcdrm-0 c2"
+    className="InputErrorMessage-s0eyav-0 c3"
   >
     Error message
   </span>
