@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import validations from './validations';
 import Form from './Form';
 import Input from '../Input';
@@ -177,6 +177,54 @@ describe('Form component ', () => {
 
       wrapper.simulate('submit', mockEvent);
 
+      expect(onValidSubmitCallback).toHaveBeenCalled();
+    });
+
+    it('Should exec validation in nested input ', () => {
+      const errorMsg = 'Valor mínimo de caracteres não alcançado';
+      const formNested = (
+        <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
+          <div>
+            <div>
+              <Input
+                name="name"
+                label="Name"
+                minLength="20"
+                validate={[
+                  validations.Required,
+                  {
+                    validate: validations.MinLength,
+                    error: errorMsg,
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </Form>
+      );
+
+      const wrapper = shallow(formNested);
+      wrapper.simulate('submit', mockEvent);
+
+      expect(onSubmitCallback).toHaveBeenCalled();
+
+      const input = wrapper.find(Input);
+
+      input.simulate('change', {
+        target: { name: input.prop('name'), value: 'Some value' },
+      });
+
+      wrapper.simulate('submit', mockEvent);
+      expect(onValidSubmitCallback).not.toHaveBeenCalled();
+
+      input.simulate('change', {
+        target: {
+          name: input.prop('name'),
+          value: 'Some value bigger than other one',
+        },
+      });
+
+      wrapper.simulate('submit', mockEvent);
       expect(onValidSubmitCallback).toHaveBeenCalled();
     });
   });
