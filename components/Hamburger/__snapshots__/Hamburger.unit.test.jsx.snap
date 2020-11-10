@@ -17,11 +17,10 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={0}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -48,11 +47,10 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={1}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -79,11 +77,10 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and isOpened 1
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={true}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -125,11 +122,10 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
     className="c1"
   />
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c2"
     focusable="false"
     inverted={1}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -156,11 +152,10 @@ exports[`<Hamburger /> Should match snapshot with props: inverted, showNotificat
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={true}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -187,11 +182,10 @@ exports[`<Hamburger /> Should match snapshot with props: isOpened 1`] = `
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={false}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -233,11 +227,10 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
     className="c1"
   />
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c2"
     focusable="false"
     inverted={0}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -264,11 +257,10 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification and is
   className="c0"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1"
     focusable="false"
     inverted={false}
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path

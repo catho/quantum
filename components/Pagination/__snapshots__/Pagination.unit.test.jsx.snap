@@ -270,17 +270,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -299,12 +289,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -317,34 +301,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -353,22 +338,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -422,20 +397,20 @@ Array [
     >
       <a
         aria-disabled={true}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         1 of 10
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -674,17 +649,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -703,12 +668,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -721,34 +680,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -757,22 +717,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -826,20 +776,20 @@ Array [
     >
       <a
         aria-disabled={true}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         1 of 5
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -1087,17 +1037,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1116,12 +1056,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -1134,34 +1068,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1170,22 +1105,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -1239,20 +1164,20 @@ Array [
     >
       <a
         aria-disabled={true}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         1 of 6
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -1533,17 +1458,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1562,12 +1477,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -1580,34 +1489,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1616,22 +1526,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -1685,20 +1585,20 @@ Array [
     >
       <a
         aria-disabled={true}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         1 of 7
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -1955,17 +1855,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1984,12 +1874,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -2002,34 +1886,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -2038,22 +1923,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -2107,20 +1982,20 @@ Array [
     >
       <a
         aria-disabled={false}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         4 of 7
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -2401,17 +2276,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -2430,12 +2295,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -2448,34 +2307,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -2484,22 +2344,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -2553,20 +2403,20 @@ Array [
     >
       <a
         aria-disabled={false}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         5 of 7
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -2847,17 +2697,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -2876,12 +2716,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -2894,34 +2728,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -2930,22 +2765,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -2999,20 +2824,20 @@ Array [
     >
       <a
         aria-disabled={false}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         5 of 7
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -3300,17 +3125,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -3329,12 +3144,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -3347,34 +3156,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3383,22 +3193,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -3452,20 +3252,20 @@ Array [
     >
       <a
         aria-disabled={false}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         50 of 100
       </span>
       <a
         aria-disabled={false}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >
@@ -3625,17 +3425,7 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -3654,12 +3444,6 @@ Array [
   margin: 0 4px;
   padding: 8px 16px;
   color: #1250C4;
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
 }
 
 .c2[aria-disabled=true] {
@@ -3672,34 +3456,35 @@ Array [
   border: 2px solid #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3708,22 +3493,12 @@ Array [
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
-  display: none;
-}
-
-.c4[aria-disabled=false]:hover,
-.c4[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
@@ -3777,20 +3552,20 @@ Array [
     >
       <a
         aria-disabled={true}
-        className="c2"
+        className="c2 c3"
         onClick={[Function]}
         tabIndex={0}
       >
         Previous
       </a>
       <span
-        className="c3"
+        className="c4"
       >
         1 of 1
       </span>
       <a
         aria-disabled={true}
-        className="c4"
+        className="c2 c5"
         onClick={[Function]}
         tabIndex={0}
       >

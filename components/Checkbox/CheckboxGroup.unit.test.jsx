@@ -42,9 +42,7 @@ const _childrenTest = CheckboxItem => {
       expect(withChildren.find(CheckboxItem)).toHaveLength(3);
     });
 
-    it(`should call onChange on every <${
-      CheckboxItem.displayName
-    } /> change`, () => {
+    it(`should call onChange on every <${CheckboxItem.displayName} /> change`, () => {
       const onChildrenChangeMock = jest.fn();
       const onOptionsChangeMock = jest.fn();
 

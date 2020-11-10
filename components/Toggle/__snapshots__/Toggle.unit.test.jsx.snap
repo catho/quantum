@@ -28,8 +28,8 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,transform 0.2s ease-in-out;
 }
 
-.c3 .c4,
-.c3 .c5 {
+.c3 .Toggle__CloseIcon-sc-17b9usn-1,
+.c3 .Toggle__CheckIcon-sc-17b9usn-0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -57,7 +57,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   transition: transform 0.2s ease-in-out;
 }
 
-.c3 .c4 {
+.c3 .Toggle__CloseIcon-sc-17b9usn-1 {
   visibility: visible;
 }
 
@@ -79,14 +79,14 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   background-color: #424242;
 }
 
-.c1:checked + .c2 .c4 {
+.c1:checked + .c2 .Toggle__CloseIcon-sc-17b9usn-1 {
   visibility: hidden;
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
   visibility: visible;
 }
 
@@ -98,7 +98,7 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   background-color: #002F7B;
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
   background-color: #E5EDFC;
   color: #1250C4;
   -webkit-transform: translateX(18px);
@@ -120,11 +120,10 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
     className="c2 c3"
   >
     <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root c4 "
+      aria-hidden={true}
+      className="MuiSvgIcon-root Toggle__CloseIcon-sc-17b9usn-1"
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -139,11 +138,10 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
       />
     </svg>
     <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root c5 "
+      aria-hidden={true}
+      className="MuiSvgIcon-root Toggle__CheckIcon-sc-17b9usn-0"
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -189,8 +187,8 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,transform 0.2s ease-in-out;
 }
 
-.c3 .c4,
-.c3 .c5 {
+.c3 .Toggle__CloseIcon-sc-17b9usn-1,
+.c3 .Toggle__CheckIcon-sc-17b9usn-0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -218,7 +216,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   transition: transform 0.2s ease-in-out;
 }
 
-.c3 .c4 {
+.c3 .Toggle__CloseIcon-sc-17b9usn-1 {
   visibility: visible;
 }
 
@@ -240,14 +238,14 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   background-color: #424242;
 }
 
-.c1:checked + .c2 .c4 {
+.c1:checked + .c2 .Toggle__CloseIcon-sc-17b9usn-1 {
   visibility: hidden;
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
   visibility: visible;
 }
 
@@ -259,7 +257,7 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   background-color: #002F7B;
 }
 
-.c1:checked + .c2 .c5 {
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
   background-color: #E5EDFC;
   color: #1250C4;
   -webkit-transform: translateX(18px);
@@ -281,11 +279,10 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
     className="c2 c3"
   >
     <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root c4 "
+      aria-hidden={true}
+      className="MuiSvgIcon-root Toggle__CloseIcon-sc-17b9usn-1"
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",
@@ -300,11 +297,10 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
       />
     </svg>
     <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root c5 "
+      aria-hidden={true}
+      className="MuiSvgIcon-root Toggle__CheckIcon-sc-17b9usn-0"
       data-qtm-preloader="icon"
       focusable="false"
-      role="presentation"
       style={
         Object {
           "color": "",

@@ -115,11 +115,10 @@ exports[`Accordion component Should match the snapshot of a simple circular load
         Institucional
       </span>
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -271,11 +270,10 @@ exports[`Accordion component Should match the snapshot of a simple circular load
         Para candidato
       </span>
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -403,11 +401,10 @@ exports[`Accordion component Should match the snapshot of a simple circular load
         Para Empresa
       </span>
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -535,11 +532,10 @@ exports[`Accordion component Should match the snapshot of a simple circular load
         Educação
       </span>
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",

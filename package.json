@@ -33,8 +33,8 @@
     "prepush": "yarn lint:all && yarn test:components",
     "storybook": "start-storybook -s static",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "deploy-storybook": "storybook-to-ghpages",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -75,7 +75,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-modern-regexp": "^0.0.6",
-    "commitizen": "^3.0.7",
+    "commitizen": "^4.2.2",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "2.1.0",
     "dotenv-webpack": "^1.6.0",
@@ -159,13 +159,7 @@
           "pkgRoot": "./dist"
         }
       ],
-      "@semantic-release/github",
-      [
-        "@semantic-release/exec",
-        {
-          "successCmd": "yarn deploy-storybook --ci"
-        }
-      ]
+      "@semantic-release/github"
     ]
   },
   "loki": {

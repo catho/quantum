@@ -19,7 +19,7 @@ const TabExample = (
     <StoryContainer>
       <Container fluid>
         <Title as="h2">Default</Title>
-        <Example component={<Avatar />} code={`<Avatar />`} />
+        <Example component={<Avatar />} code="<Avatar />" />
 
         <Title as="h2">With picture</Title>
         <Example
@@ -30,7 +30,7 @@ const TabExample = (
         <Title as="h2">With notification</Title>
         <Example
           component={<Avatar hasNotification />}
-          code={`<Avatar hasNotification />`}
+          code="<Avatar hasNotification />"
         />
 
         <Title as="h2">With Text</Title>
@@ -70,7 +70,7 @@ const TabExample = (
   </Tab>
 );
 
-const description = `Avatar are used for showing a thumbnail of the user picture or an user icon if the picture is done defined, also it can display a dot to alert that there is some notification.`;
+const description = `Avatars are used for showing a thumbnail of the user picture or an user icon if the picture is done defined, also it can display a dot to alert that there is some notification.`;
 
 storiesOf('Avatar', module).add('Avatar', () => (
   <AutoExample

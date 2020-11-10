@@ -845,11 +845,10 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   type="button"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1 c2"
     data-qtm-preloader="icon"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "",
@@ -1138,11 +1137,10 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   type="button"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1 c2"
     data-qtm-preloader="icon"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "",
@@ -1431,11 +1429,10 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   type="button"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1 c2"
     data-qtm-preloader="icon"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "",
@@ -1724,11 +1721,10 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   type="button"
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="MuiSvgIcon-root c1 c2"
     data-qtm-preloader="icon"
     focusable="false"
-    role="presentation"
     style={
       Object {
         "color": "",

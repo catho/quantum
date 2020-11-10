@@ -21,9 +21,7 @@ const _childrenTest = RadioItem => {
       expect(radios).toHaveLength(3);
     });
 
-    it(`every <${
-      RadioItem.displayName
-    } /> should have the <RadioGroup /> name`, () => {
+    it(`every <${RadioItem.displayName} /> should have the <RadioGroup /> name`, () => {
       const component = (
         <RadioGroup name="foo">
           <RadioItem value="Foo">Foo</RadioItem>
@@ -39,9 +37,7 @@ const _childrenTest = RadioItem => {
       );
     });
 
-    it(`should have <${
-      RadioItem.displayName
-    } /> defaultChecked matching <RadioGroup /> defaultValue`, () => {
+    it(`should have <${RadioItem.displayName} /> defaultChecked matching <RadioGroup /> defaultValue`, () => {
       const component = (
         <RadioGroup name="foo" defaultValue="Bar">
           <RadioItem value="Foo">Foo</RadioItem>

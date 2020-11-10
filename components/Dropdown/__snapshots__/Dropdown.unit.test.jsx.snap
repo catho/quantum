@@ -27,22 +27,6 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -79,6 +63,25 @@ exports[`Dropdown component  should match the snapshot 1`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -117,7 +120,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-0"
@@ -130,11 +133,10 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -244,22 +246,6 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -296,6 +282,25 @@ exports[`Dropdown component  should match the snapshot 2`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -334,7 +339,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-1"
@@ -347,11 +352,10 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     >
       Dropdown placeholder
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -461,25 +465,6 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -516,6 +501,28 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -554,7 +561,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-2"
@@ -567,11 +574,10 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     >
       
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -655,14 +661,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 4`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.c4 {
+.c5 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -671,6 +670,13 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
 }
 
 .c2 {
@@ -693,22 +699,6 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   margin-top: 0px;
   padding: 8px 16px;
   border-color: #e91b0c;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -745,6 +735,25 @@ exports[`Dropdown component  should match the snapshot 4`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -783,7 +792,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-3"
@@ -796,11 +805,10 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -880,7 +888,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   </div>
   
   <span
-    className="ErrorMessage-sc-19jcdrm-0 c4"
+    className="InputErrorMessage-s0eyav-0 c5"
   >
     Error message
   </span>
@@ -914,22 +922,6 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -966,6 +958,25 @@ exports[`Dropdown component  should match the snapshot 5`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -1004,7 +1015,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={true}
       id="dropdown-4"
@@ -1017,11 +1028,10 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1112,12 +1122,6 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   width: 100%;
 }
 
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-}
-
 .c3 {
   -webkit-appearance: none;
   border-radius: 4px;
@@ -1137,22 +1141,6 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   color: #424242;
   margin-top: 8px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c3::-webkit-inner-spin-button,
@@ -1188,7 +1176,32 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
 .c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c5 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -1234,7 +1247,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c3"
+      className="c3 c4"
       data-toggle={true}
       disabled={false}
       id="dropdown-5"
@@ -1247,11 +1260,10 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c4"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c5"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1342,16 +1354,6 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   width: 100%;
 }
 
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-}
-
-.c3 {
-  color: #ec584e;
-}
-
 .c4 {
   -webkit-appearance: none;
   border-radius: 4px;
@@ -1371,22 +1373,6 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   color: #424242;
   margin-top: 8px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c4::-webkit-inner-spin-button,
@@ -1422,7 +1408,36 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+.c3 {
+  color: #ec584e;
+}
+
 .c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c6 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -1473,7 +1488,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c4"
+      className="c4 c5"
       data-toggle={true}
       disabled={false}
       id="dropdown-6"
@@ -1486,11 +1501,10 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c5"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c6"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1600,23 +1614,6 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  padding: 8px 48px 8px 16px;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1653,9 +1650,32 @@ exports[`Dropdown component  should match the snapshot 8`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  padding: 8px 48px 8px 16px;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
+}
+
+.c5 {
   position: absolute;
   top: 12px;
   right: 14px;
@@ -1700,7 +1720,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         aria-controls={null}
         aria-labelledby="downshift-7-label"
         autoComplete="off"
-        className="TextInput-ado1el-0 c2"
+        className="c2 c3"
         disabled={false}
         id="dropdown-7"
         onBlur={[Function]}
@@ -1716,11 +1736,10 @@ exports[`Dropdown component  should match the snapshot 8`] = `
         value=""
       />
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4 c5"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1830,22 +1849,6 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1882,6 +1885,25 @@ exports[`Dropdown component  should match the snapshot 9`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -1920,7 +1942,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-8"
@@ -1933,11 +1955,10 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2047,22 +2068,6 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -2099,6 +2104,25 @@ exports[`Dropdown component  should match the snapshot 10`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -2137,7 +2161,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-9"
@@ -2150,11 +2174,10 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     >
       baz
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2245,12 +2268,6 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   width: 100%;
 }
 
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-}
-
 .c3 {
   -webkit-appearance: none;
   border-radius: 4px;
@@ -2270,22 +2287,6 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   color: #424242;
   margin-top: 8px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c3::-webkit-inner-spin-button,
@@ -2321,7 +2322,32 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
 .c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c5 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -2367,7 +2393,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c3"
+      className="c3 c4"
       data-toggle={true}
       disabled={false}
       id="dropdown-10"
@@ -2380,11 +2406,10 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     >
       What credit card do you prefer?
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c4"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c5"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2494,22 +2519,6 @@ exports[`Dropdown component  should match the snapshot 12`] = `
   color: #424242;
   margin-top: 0px;
   padding: 8px 16px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-  color: #191919;
-  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
 }
 
 .c2::-webkit-inner-spin-button,
@@ -2546,6 +2555,25 @@ exports[`Dropdown component  should match the snapshot 12`] = `
 }
 
 .c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  box-shadow: 0px 3px 5px -1px rgba(153,153,153,0.2),0px 5px 8px 0px rgba(153,153,153,0.14),0px 1px 14px 0px rgba(153,153,153,0.12);
+}
+
+.c4 {
   pointer-events: none;
   width: 24px;
   color: #424242;
@@ -2584,7 +2612,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="TextInput-ado1el-0 c2"
+      className="c2 c3"
       data-toggle={true}
       disabled={false}
       id="dropdown-11"
@@ -2597,11 +2625,10 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     >
       Select an option
       <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root c3"
+        aria-hidden={true}
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",

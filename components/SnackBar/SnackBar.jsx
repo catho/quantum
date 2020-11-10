@@ -84,14 +84,13 @@ const SnackBarDialog = styled.div`
 const TextContainer = styled.strong`
   font-weight: normal;
   ${({
-    theme: {
-      spacing: { xsmall },
-    },
-  }) => `
+      theme: {
+        spacing: { xsmall },
+      },
+    }) => `
     padding-right: ${xsmall}px;
   `}
-
-  :focus {
+    :focus {
     ${a11yFocusTab}
   }
 `;

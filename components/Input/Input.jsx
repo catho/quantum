@@ -5,6 +5,7 @@ import MaskedInput from 'react-text-mask';
 
 import { FieldGroup, uniqId } from '../shared';
 import Icon from '../Icon';
+// eslint-disable-next-line import/no-cycle
 import InputTypes from './InputTypes';
 import {
   TextInput,
@@ -70,18 +71,6 @@ DescriptionLabel.displayName = 'DescriptionLabel';
 
 /** A text field component to get user text data */
 class Input extends React.Component {
-  static CEP = InputTypes.CEP;
-
-  static CNPJ = InputTypes.CNPJ;
-
-  static CPF = InputTypes.CPF;
-
-  static Date = InputTypes.Date;
-
-  static Phone = InputTypes.Phone;
-
-  static Password = InputTypes.Password;
-
   constructor(props) {
     super(props);
 
@@ -115,6 +104,18 @@ class Input extends React.Component {
     const { type } = this.state;
     this._changeType(type === 'text' ? 'password' : 'text');
   };
+
+  static CEP = InputTypes.CEP;
+
+  static CNPJ = InputTypes.CNPJ;
+
+  static CPF = InputTypes.CPF;
+
+  static Date = InputTypes.Date;
+
+  static Phone = InputTypes.Phone;
+
+  static Password = InputTypes.Password;
 
   render() {
     const {

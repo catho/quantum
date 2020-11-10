@@ -58,8 +58,8 @@ storiesOf('Forms', module).add('Dropdown', () => (
           <SimpleHighlight>{importCode}</SimpleHighlight>
           <div>
             <p>
-              Its options are described by {'"'}items{'"'} prop, which can be
-              either array of string or objects, within the following structure:
+              Its options are described by `items` prop, which can be either
+              array of string or objects, within the following structure:
             </p>
             <List>
               <List.Item>

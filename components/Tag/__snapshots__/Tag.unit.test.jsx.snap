@@ -17,7 +17,7 @@ exports[`<Tag /> Inverted prop error 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -41,7 +41,7 @@ exports[`<Tag /> Inverted prop neutral 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -65,7 +65,7 @@ exports[`<Tag /> Inverted prop primary 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -89,7 +89,7 @@ exports[`<Tag /> Inverted prop success 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -113,7 +113,7 @@ exports[`<Tag /> Inverted prop warning 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -138,7 +138,7 @@ exports[`<Tag /> Sizes large 1`] = `
   size="large"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -162,7 +162,7 @@ exports[`<Tag /> Sizes medium 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -189,7 +189,7 @@ exports[`<Tag /> Sizes small 1`] = `
   size="small"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -213,7 +213,7 @@ exports[`<Tag /> Skins error 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -237,7 +237,7 @@ exports[`<Tag /> Skins primary 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -261,7 +261,7 @@ exports[`<Tag /> Skins success 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -285,7 +285,7 @@ exports[`<Tag /> Skins warning 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -309,7 +309,7 @@ exports[`<Tag /> Stroked prop error 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -333,7 +333,7 @@ exports[`<Tag /> Stroked prop neutral 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -357,7 +357,7 @@ exports[`<Tag /> Stroked prop primary 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -381,7 +381,7 @@ exports[`<Tag /> Stroked prop success 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -405,7 +405,7 @@ exports[`<Tag /> Stroked prop warning 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -468,11 +468,10 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -552,11 +551,10 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -641,11 +639,10 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -735,11 +732,10 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -834,11 +830,10 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -938,11 +933,10 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1047,11 +1041,10 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1161,11 +1154,10 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1280,11 +1272,10 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1404,11 +1395,10 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1528,11 +1518,10 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1652,11 +1641,10 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1776,11 +1764,10 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -1900,11 +1887,10 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2024,11 +2010,10 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
       size="medium"
     >
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "color": "",
@@ -2065,7 +2050,7 @@ exports[`<Tag /> with bold prop 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -2089,7 +2074,7 @@ exports[`<Tag /> with only text prop / children 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     example
   </div>
@@ -2113,7 +2098,7 @@ exports[`<Tag /> with only text prop / children 2`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     example
   </div>
@@ -2137,7 +2122,7 @@ exports[`<Tag /> without props 1`] = `
   size="medium"
 >
   <div
-    className=""
+    className="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
