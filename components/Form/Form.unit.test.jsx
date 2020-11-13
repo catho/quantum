@@ -184,9 +184,23 @@ describe('Form component ', () => {
       const errorMsg = 'Valor mínimo de caracteres não alcançado';
       const formNested = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
+          <Input
+            className="parent"
+            name="lastname"
+            label="Lastname"
+            minLength="20"
+            validate={[
+              validations.Required,
+              {
+                validate: validations.MinLength,
+                error: errorMsg,
+              },
+            ]}
+          />
           <div>
             <div>
               <Input
+                className="nested"
                 name="name"
                 label="Name"
                 minLength="20"
@@ -208,19 +222,31 @@ describe('Form component ', () => {
 
       expect(onSubmitCallback).toHaveBeenCalled();
 
-      const input = wrapper.find(Input);
+      const parentInput = wrapper.find('.parent');
+      const nestedInput = wrapper.find('.nested');
 
-      input.simulate('change', {
-        target: { name: input.prop('name'), value: 'Some value' },
+      parentInput.simulate('change', {
+        target: { name: parentInput.prop('name'), value: 'Some value' },
+      });
+
+      nestedInput.simulate('change', {
+        target: { name: nestedInput.prop('name'), value: 'Some value' },
       });
 
       wrapper.simulate('submit', mockEvent);
       expect(onValidSubmitCallback).not.toHaveBeenCalled();
 
-      input.simulate('change', {
+      parentInput.simulate('change', {
         target: {
-          name: input.prop('name'),
+          name: parentInput.prop('name'),
           value: 'Some value bigger than other one',
+        },
+      });
+
+      nestedInput.simulate('change', {
+        target: {
+          name: nestedInput.prop('name'),
+          value: 'Some value d bigger than other one',
         },
       });
 
