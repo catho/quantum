@@ -179,6 +179,80 @@ describe('Form component ', () => {
 
       expect(onValidSubmitCallback).toHaveBeenCalled();
     });
+
+    it('Should exec validation in nested input ', () => {
+      const errorMsg = 'Valor mínimo de caracteres não alcançado';
+      const formNested = (
+        <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
+          <Input
+            className="parent"
+            name="lastname"
+            label="Lastname"
+            minLength="20"
+            validate={[
+              validations.Required,
+              {
+                validate: validations.MinLength,
+                error: errorMsg,
+              },
+            ]}
+          />
+          <div>
+            <div>
+              <Input
+                className="nested"
+                name="name"
+                label="Name"
+                minLength="20"
+                validate={[
+                  validations.Required,
+                  {
+                    validate: validations.MinLength,
+                    error: errorMsg,
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </Form>
+      );
+
+      const wrapper = shallow(formNested);
+      wrapper.simulate('submit', mockEvent);
+
+      expect(onSubmitCallback).toHaveBeenCalled();
+
+      const parentInput = wrapper.find('.parent');
+      const nestedInput = wrapper.find('.nested');
+
+      parentInput.simulate('change', {
+        target: { name: parentInput.prop('name'), value: 'Some value' },
+      });
+
+      nestedInput.simulate('change', {
+        target: { name: nestedInput.prop('name'), value: 'Some value' },
+      });
+
+      wrapper.simulate('submit', mockEvent);
+      expect(onValidSubmitCallback).not.toHaveBeenCalled();
+
+      parentInput.simulate('change', {
+        target: {
+          name: parentInput.prop('name'),
+          value: 'Some value bigger than other one',
+        },
+      });
+
+      nestedInput.simulate('change', {
+        target: {
+          name: nestedInput.prop('name'),
+          value: 'Some value d bigger than other one',
+        },
+      });
+
+      wrapper.simulate('submit', mockEvent);
+      expect(onValidSubmitCallback).toHaveBeenCalled();
+    });
   });
 
   describe('Valid state', () => {
