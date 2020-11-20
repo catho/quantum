@@ -1,7 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import {
-  AutoExample,
+  AutoPropsApi,
+  Heading,
+  TabbedView,
   Tab,
   Title,
   StoryContainer,
@@ -12,36 +14,46 @@ import { Row, Col } from '../../components/Grid';
 import Popover from '../../components/Popover';
 import examples from './examples/examples';
 
-const TabExample = (
-  <Tab title="Examples">
-    <StoryContainer>
-      <Title as="h2">Examples</Title>
-      {examples.map(example => (
-        <Row key={example.code}>
-          <Col xsmall={4} small={8} medium={6}>
-            <SimpleHighlight>{example.code}</SimpleHighlight>
-          </Col>
-          <Col xsmall={4} small={8} medium={6}>
-            {example.component}
-          </Col>
-        </Row>
-      ))}
-    </StoryContainer>
-  </Tab>
-);
-
-const description = `Popovers are used for showing quantity of something, as
-warnings, inbox messages and others.`;
-
 storiesOf('Popover', module).add('Popover', () => (
-  <AutoExample
-    description={description}
-    component={Popover}
-    componentProps={{
-      trigger: <span>Click me!</span>,
-      children:
-        'Lorem ipsum dolor avec Lorem ipsum dolor avec Lorem ipsum dolor avec Lorem ipsum dolor avec.',
-    }}
-    additionalTabs={TabExample}
-  />
+  <>
+    <Heading name="Popover">
+      Popovers are used for showing quantity of something, as warnings, inbox
+      messages and others.
+    </Heading>
+    <TabbedView>
+      <Tab title="Usage">
+        <StoryContainer>
+          <Title as="h2">Importing and using</Title>
+          <SimpleHighlight>{`
+          import { Popover, Button } from '@catho/quantum';
+
+          <Popover
+            trigger={<Button>This is a Popover top example</Button>}
+            onClose={() => console.log('onClose prop triggered')}
+          >
+            Here comes a new Popover Top example
+          </Popover>
+        `}</SimpleHighlight>
+        </StoryContainer>
+      </Tab>
+      <Tab title="API">
+        <AutoPropsApi component={Popover} />
+      </Tab>
+      <Tab title="Examples">
+        <StoryContainer>
+          <Title as="h2">Examples</Title>
+          {examples.map(example => (
+            <Row key={example.code}>
+              <Col xsmall={4} small={8} medium={6}>
+                <SimpleHighlight>{example.code}</SimpleHighlight>
+              </Col>
+              <Col xsmall={4} small={8} medium={6}>
+                {example.component}
+              </Col>
+            </Row>
+          ))}
+        </StoryContainer>
+      </Tab>
+    </TabbedView>
+  </>
 ));
