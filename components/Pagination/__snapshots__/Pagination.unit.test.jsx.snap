@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Pagination /> Snapshots should match snapshot when viewport is below then small breakpoint 1`] = `
-.c1 {
+Array [
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -22,17 +23,285 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
+.c5 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c6 {
+  position: relative;
+}
+
+.c6,
+.c6:after,
+.c6:before {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c6:after,
+.c6:before {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.c6:after {
+  left: 8px;
+}
+
+.c6:before {
+  left: 16px;
+}
+
 .c3 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #002F7B;
+  border-color: #002F7B;
+  color: #ffffff;
+}
+
+.c4 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #424242;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 2"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        2
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 3"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        3
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 4"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        4
+      </a>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        />
+      </div>
+      <a
+        aria-current={false}
+        aria-label="Page 10"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        10
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -42,7 +311,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   padding: 8px 16px;
 }
 
-.c2 {
+.c3 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -51,16 +320,16 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   margin: 0;
 }
 
-.c2[aria-disabled=true] {
+.c3[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c2[aria-disabled=false]:focus {
+.c3[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c4 {
+.c5 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -69,16 +338,16 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   margin: 0;
 }
 
-.c4[aria-disabled=true] {
+.c5[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c4[aria-disabled=false]:focus {
+.c5[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c0 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -93,36 +362,68 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={true}
-    className="c1 c2"
-    onClick={[Function]}
-    tabIndex={0}
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
   >
-    Previous
-  </a>
-  <span
-    className="c3"
-  >
-    1 of 10
-  </span>
-  <a
-    aria-disabled={false}
-    className="c1 c4"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        1 of 10
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
-.c1 {
+Array [
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -143,17 +444,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c2 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -189,14 +490,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c3 {
+.c4 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -232,14 +533,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c4:hover,
+.c4:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c0 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -254,76 +555,254 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={true}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
   >
-    Previous
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 2"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        2
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 3"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        3
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 4"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        4
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 5"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        5
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
   >
-    1
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 2"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    2
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 3"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    3
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 4"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    4
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 5"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    5
-  </a>
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        1 of 5
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
-.c1 {
+Array [
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -344,17 +823,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c2 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -390,11 +869,777 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
+}
+
+.c4 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #424242;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 2"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        2
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 3"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        3
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 4"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        4
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 5"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        5
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 6"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        6
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        1 of 6
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
+Array [
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c5 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c6 {
+  position: relative;
+}
+
+.c6,
+.c6:after,
+.c6:before {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c6:after,
+.c6:before {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.c6:after {
+  left: 8px;
+}
+
+.c6:before {
+  left: 16px;
+}
+
+.c3 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #002F7B;
+  border-color: #002F7B;
+  color: #ffffff;
+}
+
+.c4 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #424242;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 2"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        2
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 3"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        3
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 4"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        4
+      </a>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        />
+      </div>
+      <a
+        aria-current={false}
+        aria-label="Page 7"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        7
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        1 of 7
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
+Array [
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
 }
 
 .c3 {
@@ -440,7 +1685,50 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   color: #1250C4;
 }
 
-.c0 {
+.c4 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #002F7B;
+  border-color: #002F7B;
+  color: #ffffff;
+}
+
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -455,85 +1743,119 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={true}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Previous
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    1
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 2"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    2
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 3"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    3
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 4"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    4
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 5"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    5
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 6"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    6
-  </a>
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
-`;
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
 
-exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
-.c1 {
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 2"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        2
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 3"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        3
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 4"
+        className="c4"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        4
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 5"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        5
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 6"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        6
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 7"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        7
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -554,12 +1876,165 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        4 of 7
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
+Array [
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
@@ -599,49 +2074,6 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   left: 16px;
 }
 
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
 .c3 {
   font-weight: bold;
   -webkit-align-items: center;
@@ -685,172 +2117,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   color: #1250C4;
 }
 
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={true}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Previous
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    1
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 2"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    2
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 3"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    3
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 4"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    4
-  </a>
-  <div
-    className="c4"
-  >
-    <span
-      className="c5"
-    />
-  </div>
-  <a
-    aria-current={false}
-    aria-label="Page 7"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    7
-  </a>
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
-`;
-
-exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c3 {
+.c6 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -886,14 +2153,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c6:hover,
+.c6:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c0 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -908,94 +2175,108 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Previous
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    1
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 2"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    2
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 3"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    3
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 4"
-    className="c3"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    4
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 5"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    5
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 6"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    6
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 7"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    7
-  </a>
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
-`;
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
 
-exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
-.c1 {
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <div
+        className="c4"
+      >
+        <span
+          className="c5"
+        />
+      </div>
+      <a
+        aria-current={false}
+        aria-label="Page 4"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        4
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 5"
+        className="c6"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        5
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 6"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        6
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 7"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        7
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1016,138 +2297,63 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
-}
-
-.c3 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
 }
 
 .c4 {
-  position: relative;
-}
-
-.c4,
-.c4:after,
-.c4:before {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:after,
-.c4:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c4:after {
-  left: 8px;
-}
-
-.c4:before {
-  left: 16px;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
   color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
+  padding: 8px 16px;
 }
 
-.c2:hover,
-.c2:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
 }
 
 .c5 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  border-color: #e0e0e0;
   border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
 }
 
-.c5:hover,
-.c5:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
 }
 
-.c0 {
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1162,83 +2368,68 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
   >
-    Previous
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    1
-  </a>
-  <div
-    className="c3"
-  >
-    <span
-      className="c4"
-    />
-  </div>
-  <a
-    aria-current={false}
-    aria-label="Page 4"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    4
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 5"
-    className="c5"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    5
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 6"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    6
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 7"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    7
-  </a>
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        5 of 7
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
-.c1 {
+Array [
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1259,29 +2450,29 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c4 {
+.c5 {
   position: relative;
 }
 
-.c4,
-.c4:after,
-.c4:before {
+.c5,
+.c5:after,
+.c5:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -1289,22 +2480,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   width: 5px;
 }
 
-.c4:after,
-.c4:before {
+.c5:after,
+.c5:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c4:after {
+.c5:after {
   left: 8px;
 }
 
-.c4:before {
+.c5:before {
   left: 16px;
 }
 
-.c2 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1340,14 +2531,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c5 {
+.c6 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1383,14 +2574,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c5:hover,
-.c5:focus {
+.c6:hover,
+.c6:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c0 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1405,83 +2596,261 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
   >
-    Previous
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <div
+        className="c4"
+      >
+        <span
+          className="c5"
+        />
+      </div>
+      <a
+        aria-current={false}
+        aria-label="Page 4"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        4
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 5"
+        className="c6"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        5
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 6"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        6
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 7"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        7
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
   >
-    1
-  </a>
-  <div
-    className="c3"
-  >
-    <span
-      className="c4"
-    />
-  </div>
-  <a
-    aria-current={false}
-    aria-label="Page 4"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    4
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 5"
-    className="c5"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    5
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 6"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    6
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 7"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    7
-  </a>
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        5 of 7
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
-.c1 {
+Array [
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1502,29 +2871,29 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c4 {
+.c5 {
   position: relative;
 }
 
-.c4,
-.c4:after,
-.c4:before {
+.c5,
+.c5:after,
+.c5:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -1532,22 +2901,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   width: 5px;
 }
 
-.c4:after,
-.c4:before {
+.c5:after,
+.c5:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c4:after {
+.c5:after {
   left: 8px;
 }
 
-.c4:before {
+.c5:before {
   left: 16px;
 }
 
-.c2 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1583,14 +2952,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   padding: 4px 8px;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c5 {
+.c6 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1626,14 +2995,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   padding: 4px 8px;
 }
 
-.c5:hover,
-.c5:focus {
+.c6:hover,
+.c6:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c0 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1648,90 +3017,115 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Previous
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    1
-  </a>
-  <div
-    className="c3"
-  >
-    <span
-      className="c4"
-    />
-  </div>
-  <a
-    aria-current={false}
-    aria-label="Page 49"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    49
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 50"
-    className="c5"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    50
-  </a>
-  <a
-    aria-current={false}
-    aria-label="Page 51"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    51
-  </a>
-  <div
-    className="c3"
-  >
-    <span
-      className="c4"
-    />
-  </div>
-  <a
-    aria-current={false}
-    aria-label="Page 100"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    100
-  </a>
-  <a
-    aria-disabled={false}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
-`;
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
 
-exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
-.c1 {
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <div
+        className="c4"
+      >
+        <span
+          className="c5"
+        />
+      </div>
+      <a
+        aria-current={false}
+        aria-label="Page 49"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        49
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 50"
+        className="c6"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        50
+      </a>
+      <a
+        aria-current={false}
+        aria-label="Page 51"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        51
+      </a>
+      <div
+        className="c4"
+      >
+        <span
+          className="c5"
+        />
+      </div>
+      <a
+        aria-current={false}
+        aria-label="Page 100"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        100
+      </a>
+      <a
+        aria-disabled={false}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1752,17 +3146,170 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   color: #1250C4;
 }
 
-.c1[aria-disabled=true] {
+.c2[aria-disabled=true] {
   display: none;
 }
 
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c2 {
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={false}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        50 of 100
+      </span>
+      <a
+        aria-disabled={false}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
+`;
+
+exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
+Array [
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1798,14 +3345,14 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   padding: 4px 8px;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c0 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1820,34 +3367,211 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   justify-content: center;
 }
 
-<nav
-  aria-label="pagination"
-  className="c0"
->
-  <a
-    aria-disabled={true}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1920px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+
+}
+
+<div
+    className="c0"
   >
-    Previous
-  </a>
-  <a
-    aria-current="page"
-    aria-label="Current Page, Page 1"
-    className="c2"
-    onClick={[Function]}
-    tabIndex={0}
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 1"
+        className="c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        1
+      </a>
+      <a
+        aria-disabled={true}
+        className="c2"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1920px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    className="c0"
   >
-    1
-  </a>
-  <a
-    aria-disabled={true}
-    className="c1"
-    onClick={[Function]}
-    tabIndex={0}
-  >
-    Next
-  </a>
-</nav>
+    <nav
+      aria-label="pagination"
+      className="c1"
+    >
+      <a
+        aria-disabled={true}
+        className="c2 c3"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Previous
+      </a>
+      <span
+        className="c4"
+      >
+        1 of 1
+      </span>
+      <a
+        aria-disabled={true}
+        className="c2 c5"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        Next
+      </a>
+    </nav>
+  </div>,
+]
 `;
