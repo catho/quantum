@@ -67,9 +67,14 @@ const Avatar = ({
   href,
   ...rest
 }) => (
-  <AvatarWrapper as={href && 'a'} href={href || undefined} {...rest}>
+  <AvatarWrapper
+    as={href && 'a'}
+    href={href || undefined}
+    {...rest}
+    aria-live="polite"
+  >
     {picture ? <AvatarImage src={picture} /> : <AvatarIcon />}
-    {hasNotification && <AvatarNotification />}
+    {hasNotification && <AvatarNotification role="alert" />}
     {text && <AvatarText>{text}</AvatarText>}
     {hasToggle && <IconToggle name="keyboard_arrow_down" />}
   </AvatarWrapper>
@@ -77,6 +82,7 @@ const Avatar = ({
 
 AvatarWrapper.displayName = 'AvatarWrapper';
 Avatar.displayName = 'Avatar';
+AvatarNotification.displayName = 'AvatarNotification';
 
 Avatar.propTypes = {
   picture: PropTypes.string,
