@@ -73,5 +73,5 @@ export default [
   // Socials
   'Socials',
 
-  'Step',
+  'Stepper',
 ].map(s => `./${s}/${s}.story.jsx`);
