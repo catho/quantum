@@ -13,6 +13,7 @@ import {
 import { Row, Col } from '../../components';
 
 import Socials from '../../components/Socials';
+import Step from '../../components/Step';
 import {
   SocialExampleAll,
   SocialExampleChangingSize,
@@ -95,6 +96,9 @@ storiesOf('Socials', module).add('Socials', () => (
             <Col xsmall={4} small={4} medium={6}>
               <SocialExampleWithoutBoxChangingSize />
             </Col>
+          </Row>
+          <Row>
+            <Step />
           </Row>
         </StoryContainer>
       </Tab>
