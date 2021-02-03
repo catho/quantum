@@ -53,7 +53,7 @@ storiesOf('Stepper', module).add('Stepper', () => (
             <Col xsmall={4} small={4} medium={6}>
               <Stepper
                 index={1}
-                total={6}
+                total={3}
                 title="Stepper title"
                 description="Stepper description"
               />
@@ -67,7 +67,18 @@ storiesOf('Stepper', module).add('Stepper', () => (
               </SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              <Stepper index={3} total={6} title="Stepper title" />
+              <Stepper index={5} total={6} title="Stepper title" />
+            </Col>
+          </Row>
+          <Title as="h3">Stepper of (3 of 5) without description</Title>
+          <Row>
+            <Col xsmall={4} small={4} medium={6}>
+              <SimpleHighlight>
+                {"<Stepper index={3} total={5} title='Stepper title' />"}
+              </SimpleHighlight>
+            </Col>
+            <Col xsmall={4} small={4} medium={6}>
+              <Stepper index={1} total={4} title="Stepper title" />
             </Col>
           </Row>
         </StoryContainer>
