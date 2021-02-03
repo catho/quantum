@@ -41,7 +41,7 @@ storiesOf('Stepper', module).add('Stepper', () => (
           <p>
             Here you can check a simple implamentation using Stepper component.
           </p>
-          <Title as="h3">Stepper of (1 of 3)</Title>
+          <Title as="h3">Stepper of (1 of 6)</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>
@@ -59,15 +59,15 @@ storiesOf('Stepper', module).add('Stepper', () => (
               />
             </Col>
           </Row>
-          <Title as="h3">Stepper of (2 of 3) without description</Title>
+          <Title as="h3">Stepper of (3 of 6) without description</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>
-                {"<Stepper index={2} total={6} title='Stepper title' />"}
+                {"<Stepper index={3} total={6} title='Stepper title' />"}
               </SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              <Stepper index={2} total={6} title="Stepper title" />
+              <Stepper index={3} total={6} title="Stepper title" />
             </Col>
           </Row>
         </StoryContainer>
