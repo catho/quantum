@@ -46,7 +46,7 @@ storiesOf('Stepper', module).add('Stepper', () => (
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>
                 {
-                  "<Stepper index={1} total={6} title='Stepper title' description='Stepper description' />"
+                  "<Stepper index={1} total={6} currentStepText='Stepper title' nextStepText='Stepper description' />"
                 }
               </SimpleHighlight>
             </Col>
@@ -54,31 +54,41 @@ storiesOf('Stepper', module).add('Stepper', () => (
               <Stepper
                 index={1}
                 total={3}
-                title="Stepper title"
-                description="Stepper description"
+                currentStepText="Stepper title"
+                nextStepText="Stepper description"
+                skin="secondary"
               />
             </Col>
           </Row>
-          <Title as="h3">Stepper of (3 of 6) without description</Title>
+          <Title as="h3">MOBILE: Stepper of (3 of 6) without description</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>
-                {"<Stepper index={3} total={6} title='Stepper title' />"}
+                {
+                  "<Stepper index={3} total={6} currentStepText='Stepper title' />"
+                }
               </SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              <Stepper index={5} total={6} title="Stepper title" />
+              <Stepper
+                index={5}
+                total={6}
+                currentStepText="Stepper title"
+                isMobile
+              />
             </Col>
           </Row>
           <Title as="h3">Stepper of (3 of 5) without description</Title>
           <Row>
             <Col xsmall={4} small={4} medium={6}>
               <SimpleHighlight>
-                {"<Stepper index={3} total={5} title='Stepper title' />"}
+                {
+                  "<Stepper index={3} total={5} currentStepText='Stepper title' />"
+                }
               </SimpleHighlight>
             </Col>
             <Col xsmall={4} small={4} medium={6}>
-              <Stepper index={1} total={4} title="Stepper title" />
+              <Stepper index={3} total={6} currentStepText="Stepper title" />
             </Col>
           </Row>
         </StoryContainer>
