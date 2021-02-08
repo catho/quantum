@@ -31,4 +31,5 @@ export default [
   'TextArea',
   'Toggle',
   'Tooltip',
+  'Stepper',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);

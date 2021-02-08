@@ -1,7 +1,15 @@
+/* eslint-disable no-console */
 import React from 'react';
 import Proptypes from 'prop-types';
 import styled from 'styled-components';
 import { colors, baseFontSize, spacing } from '../shared/theme';
+
+const limitChars = {
+  desktopCurrent: 20,
+  desktopNext: 50,
+  mobileCurrent: 35,
+  mobileNext: 50,
+};
 
 const MOBILE_CIRCLE_SIZE = 64;
 const DESKTOP_CIRCLE_SIZE = 72;
@@ -10,7 +18,10 @@ const DESKTOP_OVERLAY_HEIGHT = 40;
 const MOBILE_OVERLAY_WIDTH = 52;
 const MOBILE_OVERLAY_HEIGHT = 34;
 
-const Wrapper = styled.section`
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+
   .progress {
     background-image: ${({
       degrees: { 0: reference, 1: position },
@@ -29,7 +40,6 @@ const Wrapper = styled.section`
 
 const RadialProgressBar = styled.div`
   border-radius: 50%;
-  transform: translate(50%, 50%);
   display: flex;
   background: #ddd;
   float: left;
@@ -56,6 +66,56 @@ const RadialProgressOverlay = styled.div`
   height: ${isMobile ? MOBILE_OVERLAY_HEIGHT : DESKTOP_OVERLAY_HEIGHT}px;
 `}
 `;
+
+const TextWrapper = styled.div`
+  display: inline-block;
+  margin-left: 16px;
+  width: 300px;
+
+  strong,
+  small {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+`;
+
+const CurrentText = styled.strong`
+  display: block;
+  ${({ isMobile }) => `
+      font-size: ${isMobile ? 20 : 28}px;
+      height: ${isMobile ? 26 : 36}px;
+    `};
+`;
+
+const NextStep = styled.small`
+  display: block;
+  ${({ isMobile }) => `
+      font-size: ${isMobile ? 14 : 16}px;
+    `};
+`;
+
+const limitCharsWarning = (isMobile, currentText, nextText) => {
+  if (isMobile) {
+    if (currentText.length > limitChars.mobileCurrent)
+      console.warn(
+        `Stepper component: ${currentText} text was exceeded the limit of ${limitChars.mobileCurrent} chars. This problem may affect the user experience.`,
+      );
+    if (nextText.length > limitChars.mobileNext)
+      console.warn(
+        `Stepper component: ${nextText} text was exceeded the limit of ${limitChars.mobileNext} chars. This problem may affect the user experience.`,
+      );
+  } else {
+    if (currentText.length > limitChars.desktopCurrent)
+      console.warn(
+        `Stepper component: ${currentText} text was exceeded the limit of ${limitChars.desktopCurrent} chars. This problem may affect the user experience.`,
+      );
+    if (nextText.length > limitChars.desktopNext)
+      console.warn(
+        `Stepper component: ${nextText} text was exceeded the limit of ${limitChars.desktopNext} chars. This problem may affect the user experience.`,
+      );
+  }
+};
 
 const percentToDegrees = progressPercent => {
   const degrees = {
@@ -84,7 +144,9 @@ const Stepper = ({
   isMobile,
   ...rest
 }) => {
+  const isLastStep = total === index;
   const progressPercent = Math.round((index / total) * 100);
+  limitCharsWarning(isMobile, currentStepText, nextStepText);
 
   return (
     <Wrapper degrees={percentToDegrees(progressPercent)} {...rest}>
@@ -93,8 +155,13 @@ const Stepper = ({
           {index} de {total}
         </RadialProgressOverlay>
       </RadialProgressBar>
-      {currentStepText}
-      {nextStepText}
+      <TextWrapper>
+        <CurrentText isMobile={isMobile}>{currentStepText}</CurrentText>
+        <NextStep isMobile={isMobile}>
+          {' '}
+          {!isLastStep && 'próximo: '} {nextStepText}
+        </NextStep>
+      </TextWrapper>
     </Wrapper>
   );
 };
