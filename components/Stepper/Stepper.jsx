@@ -117,6 +117,25 @@ const limitCharsWarning = (isMobile, currentText, nextText) => {
   }
 };
 
+const handlerValuePrepare = total => {
+  if (total > 6 && total > 0) return 6;
+  if (total < 1) return 1;
+
+  return total;
+};
+
+const handlerStepPrepare = (index, total) => {
+  if (index <= total) {
+    const _index = handlerValuePrepare(index);
+    return _index;
+  }
+
+  console.warn(
+    'Stepper component: the "index" prop can not be bigger than "total" prop. The index value was settled now to 1.',
+  );
+  return 1;
+};
+
 const percentToDegrees = progressPercent => {
   const degrees = {
     17: [90, -50],
@@ -144,22 +163,24 @@ const Stepper = ({
   isMobile,
   ...rest
 }) => {
-  const isLastStep = total === index;
-  const progressPercent = Math.round((index / total) * 100);
+  const _totalPrepared = handlerValuePrepare(total);
+  const _indexPrepared = handlerStepPrepare(index, total);
+  const _isLastStep = _totalPrepared === _indexPrepared;
+  const _progressPercent = Math.round((_indexPrepared / _totalPrepared) * 100);
   limitCharsWarning(isMobile, currentStepText, nextStepText);
 
   return (
-    <Wrapper degrees={percentToDegrees(progressPercent)} {...rest}>
+    <Wrapper degrees={percentToDegrees(_progressPercent)} {...rest}>
       <RadialProgressBar className="progress" isMobile={isMobile} {...rest}>
         <RadialProgressOverlay isMobile={isMobile}>
-          {index} de {total}
+          {_indexPrepared} de {_totalPrepared}
         </RadialProgressOverlay>
       </RadialProgressBar>
       <TextWrapper>
         <CurrentText isMobile={isMobile}>{currentStepText}</CurrentText>
         <NextStep isMobile={isMobile}>
           {' '}
-          {!isLastStep && 'próximo: '} {nextStepText}
+          {!_isLastStep && 'próximo: '} {nextStepText}
         </NextStep>
       </TextWrapper>
     </Wrapper>

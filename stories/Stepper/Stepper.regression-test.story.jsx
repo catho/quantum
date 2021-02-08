@@ -7,22 +7,22 @@ storiesOf('Stepper', module).add('1 of 6: primary', () => (
   <div>
     <Stepper
       isMobile
-      index={1}
-      total={6}
+      index={3}
+      total={8}
       currentStepText="Salários / benefícios "
-      nextStepText="Contrato / Local Local Local Local Local"
+      nextStepText="Contrato / Local"
     />
     <Stepper
-      index={1}
-      total={6}
+      index={3}
+      total={4}
       currentStepText="Salários / benefícios "
-      nextStepText="Contrato / Local Local Local Local Local"
+      nextStepText="Contrato / Local "
     />
     <Stepper
-      index={6}
-      total={6}
+      index={7}
+      total={7}
       currentStepText="Salários / benefícios "
-      nextStepText="Contrato / Local Local Local Local Local"
+      nextStepText="Contrato / Local "
     />
   </div>
 ));
