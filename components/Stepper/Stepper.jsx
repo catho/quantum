@@ -39,7 +39,7 @@ const Stepper = ({
           {_indexPrepared} de {_totalPrepared}
         </RadialProgressOverlay>
       </RadialProgressBar>
-      <TextWrapper {...rest}>
+      <TextWrapper isMobile={isMobile} {...rest}>
         <CurrentText isMobile={isMobile}>{currentStepText}</CurrentText>
         <NextStep isMobile={isMobile}>
           {!_isLastStep && 'próximo: '} {nextStepText}

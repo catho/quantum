@@ -68,14 +68,15 @@ const RadialProgressOverlay = styled.div`
 
 const TextWrapper = styled.div`
   ${({
+    isMobile,
     theme: {
       spacing: { medium },
     },
   }) => `
       margin-left: ${medium}px;
+      width: ${isMobile ? 210 : 300}px;
   `}
   display: inline-block;
-  width: 300px;
 
   strong,
   small {
