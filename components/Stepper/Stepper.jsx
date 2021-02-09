@@ -16,6 +16,8 @@ import {
   NextStep,
 } from './style';
 
+RadialProgressOverlay.displayName = 'RadialProgressOverlay';
+
 const Stepper = ({
   total,
   index,
