@@ -54,6 +54,7 @@ describe('<Stepper />', () => {
   it('should ensure that total prop always be 6 if the prop was bigger than 6', () => {
     const component = mount(
       <Stepper
+        isPtBR
         index={3}
         total={8}
         currentStepText="Salários / benefícios"
@@ -67,6 +68,7 @@ describe('<Stepper />', () => {
   it('should ensure that index prop always be 1 if the prop was minor of 1', () => {
     const component = mount(
       <Stepper
+        isPtBR
         index={0}
         total={6}
         currentStepText="Salários / benefícios"
@@ -78,6 +80,7 @@ describe('<Stepper />', () => {
 
     const component2 = mount(
       <Stepper
+        isPtBR
         index={-5}
         total={8}
         currentStepText="Salários / benefícios"
@@ -93,6 +96,7 @@ describe('<Stepper />', () => {
 
     const component = mount(
       <Stepper
+        isPtBR
         index={9}
         total={6}
         currentStepText="Salários / benefícios"
@@ -107,6 +111,7 @@ describe('<Stepper />', () => {
   it('should have "proximo" word when it is not the last step', () => {
     const component = mount(
       <Stepper
+        isPtBR
         index={5}
         total={6}
         currentStepText="Salários / benefícios"
@@ -118,6 +123,7 @@ describe('<Stepper />', () => {
 
     const componentLastStep = mount(
       <Stepper
+        isPtBR
         index={6}
         total={6}
         currentStepText="Salários / benefícios"

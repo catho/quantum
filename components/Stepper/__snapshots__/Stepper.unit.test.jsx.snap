@@ -107,6 +107,7 @@ exports[`<Stepper /> should match snapshots 1`] = `
 <Stepper
   currentStepText="Salários / benefícios"
   index={1}
+  isPtBR={false}
   nextStepText="Contrato / Local"
   skin="primary"
   theme={
@@ -385,7 +386,9 @@ exports[`<Stepper /> should match snapshots 1`] = `
               className="c2"
             >
               1
-               de 
+               
+              of
+               
               6
             </div>
           </RadialProgressOverlay>
@@ -598,7 +601,7 @@ exports[`<Stepper /> should match snapshots 1`] = `
             <small
               className="c5"
             >
-              próximo: 
+              next: 
                
               Contrato / Local
             </small>
@@ -717,6 +720,7 @@ exports[`<Stepper /> should match snapshots 2`] = `
 <Stepper
   currentStepText="Salários / benefícios"
   index={2}
+  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -995,7 +999,9 @@ exports[`<Stepper /> should match snapshots 2`] = `
               className="c2"
             >
               2
-               de 
+               
+              of
+               
               6
             </div>
           </RadialProgressOverlay>
@@ -1208,7 +1214,7 @@ exports[`<Stepper /> should match snapshots 2`] = `
             <small
               className="c5"
             >
-              próximo: 
+              next: 
                
               Contrato / Local 
             </small>
@@ -1327,6 +1333,7 @@ exports[`<Stepper /> should match snapshots 3`] = `
 <Stepper
   currentStepText="Salários / benefícios"
   index={3}
+  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -1605,7 +1612,9 @@ exports[`<Stepper /> should match snapshots 3`] = `
               className="c2"
             >
               3
-               de 
+               
+              of
+               
               6
             </div>
           </RadialProgressOverlay>
@@ -1818,7 +1827,7 @@ exports[`<Stepper /> should match snapshots 3`] = `
             <small
               className="c5"
             >
-              próximo: 
+              next: 
                
               Contrato / Local 
             </small>
@@ -1937,6 +1946,7 @@ exports[`<Stepper /> should match snapshots 4`] = `
 <Stepper
   currentStepText="Salários / benefícios"
   index={4}
+  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -2215,7 +2225,9 @@ exports[`<Stepper /> should match snapshots 4`] = `
               className="c2"
             >
               4
-               de 
+               
+              of
+               
               6
             </div>
           </RadialProgressOverlay>
@@ -2428,7 +2440,7 @@ exports[`<Stepper /> should match snapshots 4`] = `
             <small
               className="c5"
             >
-              próximo: 
+              next: 
                
               Contrato / Local 
             </small>
@@ -2547,6 +2559,7 @@ exports[`<Stepper /> should match snapshots 5`] = `
 <Stepper
   currentStepText="Salários / benefícios"
   index={5}
+  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -2825,7 +2838,9 @@ exports[`<Stepper /> should match snapshots 5`] = `
               className="c2"
             >
               5
-               de 
+               
+              of
+               
               6
             </div>
           </RadialProgressOverlay>
@@ -3038,7 +3053,7 @@ exports[`<Stepper /> should match snapshots 5`] = `
             <small
               className="c5"
             >
-              próximo: 
+              next: 
                
               Contrato / Local 
             </small>
@@ -3157,6 +3172,7 @@ exports[`<Stepper /> should match snapshots 6`] = `
 <Stepper
   currentStepText="Salários / benefícios"
   index={6}
+  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -3435,7 +3451,9 @@ exports[`<Stepper /> should match snapshots 6`] = `
               className="c2"
             >
               6
-               de 
+               
+              of
+               
               6
             </div>
           </RadialProgressOverlay>
