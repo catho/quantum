@@ -1,15 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  Tab,
-  StoryContainer,
-  Title,
-  SimpleHighlight,
-  AutoExample,
-} from '@catho/quantum-storybook-ui';
-
+import { AutoExample } from '@catho/quantum-storybook-ui';
 import { colors, baseFontSize, spacing } from '../../components/shared/theme';
-
 import Stepper from '../../components/Stepper';
 
 storiesOf('Stepper', module).add('Stepper', () => (
