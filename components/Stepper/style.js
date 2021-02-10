@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../shared';
+import { query } from '../Grid/sub-components/shared';
 
 const MOBILE_CIRCLE_SIZE = 64;
 const DESKTOP_CIRCLE_SIZE = 72;
@@ -7,9 +9,13 @@ const DESKTOP_OVERLAY_HEIGHT = 40;
 const MOBILE_OVERLAY_WIDTH = 52;
 const MOBILE_OVERLAY_HEIGHT = 34;
 
+const mediaQueries = query(BREAKPOINTS);
+const desktopBreakpoint = mediaQueries.medium;
+
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  min-width: 300px;
 
   .progress {
     background-image: ${({
@@ -33,12 +39,20 @@ const RadialProgressBar = styled.div`
   float: left;
   font-weight: 700;
 
-  ${({ isMobile, theme: { baseFontSize: defaultBaseFontSize } }) => `
-    width: ${isMobile ? MOBILE_CIRCLE_SIZE : DESKTOP_CIRCLE_SIZE}px;
-    height: ${isMobile ? MOBILE_CIRCLE_SIZE : DESKTOP_CIRCLE_SIZE}px;
-    font-size: ${
-      isMobile ? defaultBaseFontSize * 0.75 : defaultBaseFontSize * 0.875
-    }px; 
+  width: ${MOBILE_CIRCLE_SIZE}px;
+  height: ${MOBILE_CIRCLE_SIZE}px;
+
+  ${({ theme: { baseFontSize } }) => `
+    font-size: ${baseFontSize * 0.75}px; 
+  `}
+
+  ${desktopBreakpoint`
+    width: ${DESKTOP_CIRCLE_SIZE}px;
+    height: ${DESKTOP_CIRCLE_SIZE}px;
+
+    ${({ theme: { baseFontSize } }) => `
+    font-size: ${baseFontSize * 0.875}px; 
+    `}
   `}
 `;
 
@@ -55,27 +69,47 @@ const RadialProgressOverlay = styled.div`
   text-align: center;
 
   ${({
-    isMobile,
     theme: {
       spacing: { medium },
     },
   }) => `
-  padding-top: ${isMobile ? medium : medium * 1.125}px;
-  width: ${isMobile ? MOBILE_OVERLAY_WIDTH : DESKTOP_OVERLAY_WIDTH}px;
-  height: ${isMobile ? MOBILE_OVERLAY_HEIGHT : DESKTOP_OVERLAY_HEIGHT}px;
+  padding-top: ${medium}px;
 `}
+
+  ${desktopBreakpoint`
+    ${({
+      theme: {
+        spacing: { medium },
+      },
+    }) => `
+    padding-top: ${medium * 1.125}px;
+  `}
+`}
+
+  width: ${MOBILE_OVERLAY_WIDTH}px;
+  height: ${MOBILE_OVERLAY_HEIGHT}px;
+
+  ${desktopBreakpoint`
+    width: ${DESKTOP_OVERLAY_WIDTH}px;
+    height: ${DESKTOP_OVERLAY_HEIGHT}px;
+  `};
+
 `;
 
 const TextWrapper = styled.div`
   ${({
-    isMobile,
     theme: {
       spacing: { medium },
     },
   }) => `
       margin-left: ${medium}px;
-      width: ${isMobile ? 210 : 300}px;
   `}
+
+  width: 210px;
+  ${desktopBreakpoint`
+    width: 300px;
+  `}
+
   display: inline-block;
 
   strong,
@@ -88,17 +122,29 @@ const TextWrapper = styled.div`
 
 const CurrentText = styled.strong`
   display: block;
-  ${({ isMobile }) => `
-      font-size: ${isMobile ? 20 : 28}px;
-      height: ${isMobile ? 26 : 36}px;
+  height: 26px;
+  ${({ theme: { baseFontSize } }) => `
+    font-size: ${baseFontSize * 1.25}px;
+  `};
+
+  ${desktopBreakpoint`
+    ${({ theme: { baseFontSize } }) => `
+      font-size: ${baseFontSize * 1.75}px;
     `};
+    height: 36px;
+  `}
 `;
 
 const NextStep = styled.small`
   display: block;
-  ${({ isMobile }) => `
-      font-size: ${isMobile ? 14 : 16}px;
-    `};
+  ${({ theme: { baseFontSize } }) => `
+    font-size: ${baseFontSize * 0.875}px;
+  `};
+  ${desktopBreakpoint`
+    ${({ theme: { baseFontSize } }) => `
+      font-size: ${baseFontSize}px;
+  `};
+  `}
 `;
 
 export {

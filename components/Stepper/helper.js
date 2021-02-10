@@ -1,32 +1,4 @@
 /* eslint-disable no-console */
-
-const limitChars = {
-  desktopCurrent: 25,
-  desktopNext: 50,
-  mobileCurrent: 35,
-  mobileNext: 50,
-};
-
-const warning = (prop, propNumberOfChars) => {
-  console.warn(
-    `Stepper component: '${prop}' text was exceeded the limit of ${propNumberOfChars} chars. This problem may affect the user experience.`,
-  );
-};
-
-const limitCharsWarning = (isMobile, currentText, nextText) => {
-  if (isMobile) {
-    if (currentText.length > limitChars.mobileCurrent)
-      warning(currentText, limitChars.mobileCurrent);
-    if (nextText.length > limitChars.mobileNext)
-      warning(nextText, limitChars.mobileNext);
-  } else {
-    if (currentText.length > limitChars.desktopCurrent)
-      warning(currentText, limitChars.desktopCurrent);
-    if (nextText.length > limitChars.desktopNext)
-      warning(nextText, limitChars.desktopNext);
-  }
-};
-
 const handlerValuePrepare = total => {
   if (total > 6 && total > 0) return 6;
   if (total < 1) return 1;
@@ -65,9 +37,4 @@ const percentToDegrees = progressPercent => {
   return degrees[progressPercent];
 };
 
-export {
-  limitCharsWarning,
-  handlerValuePrepare,
-  handlerStepPrepare,
-  percentToDegrees,
-};
+export { handlerValuePrepare, handlerStepPrepare, percentToDegrees };

@@ -2,7 +2,6 @@ import React from 'react';
 import Proptypes from 'prop-types';
 import { colors, baseFontSize, spacing } from '../shared/theme';
 import {
-  limitCharsWarning,
   handlerValuePrepare,
   handlerStepPrepare,
   percentToDegrees,
@@ -17,31 +16,24 @@ import {
 } from './style';
 
 RadialProgressOverlay.displayName = 'RadialProgressOverlay';
+NextStep.displayName = 'NextStep';
 
-const Stepper = ({
-  total,
-  index,
-  currentStepText,
-  nextStepText,
-  isMobile,
-  ...rest
-}) => {
+const Stepper = ({ total, index, currentStepText, nextStepText, ...rest }) => {
   const _totalPrepared = handlerValuePrepare(total);
   const _indexPrepared = handlerStepPrepare(index, total);
   const _isLastStep = _totalPrepared === _indexPrepared;
   const _progressPercent = Math.round((_indexPrepared / _totalPrepared) * 100);
-  limitCharsWarning(isMobile, currentStepText, nextStepText);
 
   return (
     <Wrapper degrees={percentToDegrees(_progressPercent)} {...rest}>
-      <RadialProgressBar className="progress" isMobile={isMobile} {...rest}>
-        <RadialProgressOverlay isMobile={isMobile} {...rest}>
+      <RadialProgressBar className="progress" {...rest}>
+        <RadialProgressOverlay {...rest}>
           {_indexPrepared} de {_totalPrepared}
         </RadialProgressOverlay>
       </RadialProgressBar>
-      <TextWrapper isMobile={isMobile} {...rest}>
-        <CurrentText isMobile={isMobile}>{currentStepText}</CurrentText>
-        <NextStep isMobile={isMobile}>
+      <TextWrapper {...rest}>
+        <CurrentText {...rest}>{currentStepText}</CurrentText>
+        <NextStep {...rest}>
           {!_isLastStep && 'próximo: '} {nextStepText}
         </NextStep>
       </TextWrapper>
@@ -58,7 +50,6 @@ Stepper.defaultProps = {
     baseFontSize,
     spacing,
   },
-  isMobile: false,
 };
 
 Stepper.propTypes = {
@@ -72,7 +63,6 @@ Stepper.propTypes = {
     baseFontSize: Proptypes.number,
     spacing: Proptypes.object,
   }),
-  isMobile: Proptypes.bool,
 };
 
 export default Stepper;

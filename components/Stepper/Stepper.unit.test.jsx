@@ -42,48 +42,6 @@ describe('<Stepper />', () => {
         currentStepText="Salários / benefícios"
         nextStepText="Contrato / Local "
       />,
-      <Stepper
-        isMobile
-        index={1}
-        total={6}
-        currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local"
-      />,
-      <Stepper
-        isMobile
-        index={2}
-        total={6}
-        currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local "
-      />,
-      <Stepper
-        isMobile
-        index={3}
-        total={6}
-        currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local "
-      />,
-      <Stepper
-        isMobile
-        index={4}
-        total={6}
-        currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local "
-      />,
-      <Stepper
-        isMobile
-        index={5}
-        total={6}
-        currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local "
-      />,
-      <Stepper
-        isMobile
-        index={6}
-        total={6}
-        currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local "
-      />,
     ];
 
     Steppers.forEach(stepper => {
@@ -96,7 +54,6 @@ describe('<Stepper />', () => {
   it('should ensure that total prop always be 6 if the prop was bigger than 6', () => {
     const component = mount(
       <Stepper
-        isMobile
         index={3}
         total={8}
         currentStepText="Salários / benefícios"
@@ -110,7 +67,6 @@ describe('<Stepper />', () => {
   it('should ensure that index prop always be 1 if the prop was minor of 1', () => {
     const component = mount(
       <Stepper
-        isMobile
         index={0}
         total={6}
         currentStepText="Salários / benefícios"
@@ -122,7 +78,6 @@ describe('<Stepper />', () => {
 
     const component2 = mount(
       <Stepper
-        isMobile
         index={-5}
         total={8}
         currentStepText="Salários / benefícios"
@@ -138,7 +93,6 @@ describe('<Stepper />', () => {
 
     const component = mount(
       <Stepper
-        isMobile
         index={9}
         total={6}
         currentStepText="Salários / benefícios"
@@ -148,5 +102,29 @@ describe('<Stepper />', () => {
 
     expect(component.find('RadialProgressOverlay').text()).toEqual('1 de 6');
     jest.spyOn(console, 'warn').mockRestore();
+  });
+
+  it('should have "proximo" word when it is not the last step', () => {
+    const component = mount(
+      <Stepper
+        index={5}
+        total={6}
+        currentStepText="Salários / benefícios"
+        nextStepText="Contrato / Local "
+      />,
+    );
+
+    expect(component.find('NextStep').text()).toContain('próximo');
+
+    const componentLastStep = mount(
+      <Stepper
+        index={6}
+        total={6}
+        currentStepText="Salários / benefícios"
+        nextStepText="Contrato / Local "
+      />,
+    );
+
+    expect(componentLastStep.find('NextStep').text()).not.toContain('próximo');
   });
 });
