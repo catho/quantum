@@ -105,8 +105,13 @@ exports[`<Stepper /> should match snapshots 1`] = `
 
 <Stepper
   currentStepText="Salários / benefícios"
+  i18n={
+    Object {
+      "nextWord": "next",
+      "paginationPreposition": "of",
+    }
+  }
   index={1}
-  isPtBR={false}
   nextStepText="Contrato / Local"
   skin="primary"
   theme={
@@ -717,8 +722,13 @@ exports[`<Stepper /> should match snapshots 2`] = `
 
 <Stepper
   currentStepText="Salários / benefícios"
+  i18n={
+    Object {
+      "nextWord": "next",
+      "paginationPreposition": "of",
+    }
+  }
   index={2}
-  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -1329,8 +1339,13 @@ exports[`<Stepper /> should match snapshots 3`] = `
 
 <Stepper
   currentStepText="Salários / benefícios"
+  i18n={
+    Object {
+      "nextWord": "next",
+      "paginationPreposition": "of",
+    }
+  }
   index={3}
-  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -1941,8 +1956,13 @@ exports[`<Stepper /> should match snapshots 4`] = `
 
 <Stepper
   currentStepText="Salários / benefícios"
+  i18n={
+    Object {
+      "nextWord": "next",
+      "paginationPreposition": "of",
+    }
+  }
   index={4}
-  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -2553,8 +2573,13 @@ exports[`<Stepper /> should match snapshots 5`] = `
 
 <Stepper
   currentStepText="Salários / benefícios"
+  i18n={
+    Object {
+      "nextWord": "next",
+      "paginationPreposition": "of",
+    }
+  }
   index={5}
-  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
@@ -3165,8 +3190,13 @@ exports[`<Stepper /> should match snapshots 6`] = `
 
 <Stepper
   currentStepText="Salários / benefícios"
+  i18n={
+    Object {
+      "nextWord": "next",
+      "paginationPreposition": "of",
+    }
+  }
   index={6}
-  isPtBR={false}
   nextStepText="Contrato / Local "
   skin="primary"
   theme={
