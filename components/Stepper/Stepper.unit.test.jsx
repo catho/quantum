@@ -133,4 +133,18 @@ describe('<Stepper />', () => {
 
     expect(componentLastStep.find('NextStep').text()).not.toContain('próximo');
   });
+
+  it('should ensure that total and index prop always be 1 if the prop was settled 0', () => {
+    const component = mount(
+      <Stepper
+        isPtBR
+        index={0}
+        total={0}
+        currentStepText="Salários / benefícios"
+        nextStepText="Contrato / Local "
+      />,
+    );
+
+    expect(component.find('RadialProgressOverlay').text()).toEqual('1 de 1');
+  });
 });
