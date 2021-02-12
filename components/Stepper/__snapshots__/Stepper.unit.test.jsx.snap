@@ -14,7 +14,7 @@ exports[`<Stepper /> should match snapshots 1`] = `
 }
 
 .c0 .progress {
-  background-image: linear-gradient(90deg,#e0e0e0 50%,transparent 50%), linear-gradient(-50deg,#e0e0e0 50%,#0CC0EA 50%);
+  background-image: linear-gradient(90deg,#e0e0e0 50%,transparent 50%), linear-gradient(-29deg,#e0e0e0 50%,#0CC0EA 50%);
 }
 
 .c1 {
@@ -182,7 +182,7 @@ exports[`<Stepper /> should match snapshots 1`] = `
     degrees={
       Array [
         90,
-        -50,
+        -29,
       ]
     }
     skin="primary"
@@ -631,7 +631,7 @@ exports[`<Stepper /> should match snapshots 2`] = `
 }
 
 .c0 .progress {
-  background-image: linear-gradient(90deg,#e0e0e0 50%,transparent 50%), linear-gradient(20deg,#e0e0e0 50%,#0CC0EA 50%);
+  background-image: linear-gradient(90deg,#e0e0e0 50%,transparent 50%), linear-gradient(29deg,#e0e0e0 50%,#0CC0EA 50%);
 }
 
 .c1 {
@@ -799,7 +799,7 @@ exports[`<Stepper /> should match snapshots 2`] = `
     degrees={
       Array [
         90,
-        20,
+        29,
       ]
     }
     skin="primary"
@@ -1865,7 +1865,7 @@ exports[`<Stepper /> should match snapshots 4`] = `
 }
 
 .c0 .progress {
-  background-image: linear-gradient(-90deg,#0CC0EA 50%,transparent 50%), linear-gradient(-22deg,#0CC0EA 50%,#e0e0e0 50%);
+  background-image: linear-gradient(-90deg,#0CC0EA 50%,transparent 50%), linear-gradient(-29deg,#0CC0EA 50%,#e0e0e0 50%);
 }
 
 .c1 {
@@ -2033,7 +2033,7 @@ exports[`<Stepper /> should match snapshots 4`] = `
     degrees={
       Array [
         -90,
-        -22,
+        -29,
       ]
     }
     skin="primary"
@@ -2482,7 +2482,7 @@ exports[`<Stepper /> should match snapshots 5`] = `
 }
 
 .c0 .progress {
-  background-image: linear-gradient(-90deg,#0CC0EA 50%,transparent 50%), linear-gradient(20deg,#0CC0EA 50%,#e0e0e0 50%);
+  background-image: linear-gradient(-90deg,#0CC0EA 50%,transparent 50%), linear-gradient(29deg,#0CC0EA 50%,#e0e0e0 50%);
 }
 
 .c1 {
@@ -2650,7 +2650,7 @@ exports[`<Stepper /> should match snapshots 5`] = `
     degrees={
       Array [
         -90,
-        20,
+        29,
       ]
     }
     skin="primary"

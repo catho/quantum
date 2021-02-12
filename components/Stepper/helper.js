@@ -19,22 +19,12 @@ const handlerStepPrepare = (index, total) => {
 };
 
 const percentToDegrees = progressPercent => {
-  const degrees = {
-    17: [90, -50],
-    20: [90, -45],
-    25: [90, 0],
-    33: [90, 20],
-    40: [90, 40],
-    50: [90, 90],
-    60: [-90, -54],
-    67: [-90, -22],
-    75: [-90, 0],
-    80: [-90, 18],
-    83: [-90, 20],
-    100: [-90, 90],
-  };
-
-  return degrees[progressPercent];
+  const firstDegree = progressPercent > 50 ? -90 : 90;
+  let secondDegree = Math.round((progressPercent * 180) / 50) - 90;
+  if (progressPercent > 50) {
+    secondDegree = Math.round(((progressPercent - 50) * 180) / 50) - 90;
+  }
+  return [firstDegree, secondDegree];
 };
 
 export { handlerValuePrepare, handlerStepPrepare, percentToDegrees };
