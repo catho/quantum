@@ -1,7 +1,10 @@
 /* eslint-disable no-console */
+const MAXIMUM_STEPS = 6;
+const MINIMUM_STEPS = 1;
+
 const handlerValuePrepare = total => {
-  if (total > 6 && total > 0) return 6;
-  if (total < 1) return 1;
+  if (total > MAXIMUM_STEPS && total > 0) return MAXIMUM_STEPS;
+  if (total < MINIMUM_STEPS) return MINIMUM_STEPS;
 
   return total;
 };
@@ -18,12 +21,15 @@ const handlerStepPrepare = (index, total) => {
   return 1;
 };
 
+const handleProgressPosition = (progressPercent, isOverHalf) => {
+  const position = isOverHalf ? progressPercent - 50 : progressPercent;
+  return Math.round((position * 180) / 50) - 90;
+};
+
 const percentToDegrees = progressPercent => {
-  const firstDegree = progressPercent > 50 ? -90 : 90;
-  let secondDegree = Math.round((progressPercent * 180) / 50) - 90;
-  if (progressPercent > 50) {
-    secondDegree = Math.round(((progressPercent - 50) * 180) / 50) - 90;
-  }
+  const isOverHalf = progressPercent > 50;
+  const firstDegree = isOverHalf ? -90 : 90;
+  const secondDegree = handleProgressPosition(progressPercent, isOverHalf);
   return [firstDegree, secondDegree];
 };
 
