@@ -17,6 +17,10 @@ const Wrapper = styled.div`
   align-items: center;
   min-width: 300px;
 
+  ${desktopBreakpoint`
+    min-width: auto;
+  `}
+
   .progress {
     background-image: ${({
       degrees: { 0: reference, 1: position },

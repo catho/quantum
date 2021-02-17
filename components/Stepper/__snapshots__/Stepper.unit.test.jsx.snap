@@ -64,6 +64,12 @@ exports[`<Stepper /> should match snapshots 1`] = `
 }
 
 @media (min-width:1024px) {
+  .c0 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:1024px) {
   .c1 {
     width: 72px;
     height: 72px;
@@ -678,6 +684,16 @@ exports[`<Stepper /> should match snapshots 2`] = `
 .c5 {
   display: block;
   font-size: 14px;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    min-width: auto;
+  }
 }
 
 @media (min-width:1024px) {
@@ -1298,6 +1314,20 @@ exports[`<Stepper /> should match snapshots 3`] = `
 }
 
 @media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:1024px) {
   .c1 {
     width: 72px;
     height: 72px;
@@ -1912,6 +1942,24 @@ exports[`<Stepper /> should match snapshots 4`] = `
 .c5 {
   display: block;
   font-size: 14px;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    min-width: auto;
+  }
 }
 
 @media (min-width:1024px) {
@@ -2532,6 +2580,28 @@ exports[`<Stepper /> should match snapshots 5`] = `
 }
 
 @media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:1024px) {
   .c1 {
     width: 72px;
     height: 72px;
@@ -3146,6 +3216,32 @@ exports[`<Stepper /> should match snapshots 6`] = `
 .c5 {
   display: block;
   font-size: 14px;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    min-width: auto;
+  }
 }
 
 @media (min-width:1024px) {
