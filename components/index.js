@@ -30,6 +30,7 @@ import Hamburger from './Hamburger';
 import Socials from './Socials';
 import SocialButton from './SocialButton';
 import Avatar from './Avatar';
+import Stepper from './Stepper';
 
 export {
   Accordion,
@@ -71,4 +72,5 @@ export {
   Socials,
   SocialButton,
   Avatar,
+  Stepper,
 };
