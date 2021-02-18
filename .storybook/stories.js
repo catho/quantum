@@ -24,6 +24,8 @@ export default [
   // Avatar
   'Avatar',
 
+  'Carousel',
+
   // Buttons
   'Button',
 
@@ -74,4 +76,5 @@ export default [
   'Socials',
 
   'Stepper',
+  
 ].map(s => `./${s}/${s}.story.jsx`);
