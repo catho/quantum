@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const SlickSliderWrapper = styled.section`
-
   padding: 16px;
 
   .slick-loading .slick-list {
@@ -9,7 +8,8 @@ const SlickSliderWrapper = styled.section`
   }
 
   /* Arrows */
-  .slick-prev, .slick-next {
+  .slick-prev,
+  .slick-next {
     font-size: 0;
     line-height: 0;
     position: absolute;
@@ -42,14 +42,14 @@ const SlickSliderWrapper = styled.section`
   }
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
-    opacity: .25;
+    opacity: 0.25;
   }
 
   .slick-prev:before,
   .slick-next:before {
     font-size: 20px;
     line-height: 1;
-    opacity: .75;
+    opacity: 0.75;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -100,8 +100,8 @@ const SlickSliderWrapper = styled.section`
   }
 
   .slick-dots li {
-    position: relative;\
-    display: inline-block;
+    position: relative;
+    \display: inline-block;
     width: 20px;
     height: 20px;
     margin: 0 5px;
@@ -140,35 +140,29 @@ const SlickSliderWrapper = styled.section`
     height: 20px;
     content: '•';
     text-align: center;
-    opacity: .25;
+    opacity: 0.25;
     color: black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   .slick-dots li.slick-active button:before {
-    opacity: .75;
+    opacity: 0.75;
     color: black;
   }
-
-
-
-
-
-
 
   .slick-slider {
     position: relative;
     display: block;
     box-sizing: border-box;
     -webkit-user-select: none;
-      -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
-        touch-action: pan-y;
+    touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -190,24 +184,24 @@ const SlickSliderWrapper = styled.section`
   .slick-slider .slick-track,
   .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   .slick-track {
     position: relative;
     top: 0;
     left: 0;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
   }
   .slick-track:before,
   .slick-track:after {
-      display: table;
-      content: '';
+    display: table;
+    content: '';
   }
 
   .slick-track:after {
@@ -251,7 +245,4 @@ const SlickSliderWrapper = styled.section`
   }
 `;
 
-
-export {
-    SlickSliderWrapper,
-}
+export { SlickSliderWrapper };
