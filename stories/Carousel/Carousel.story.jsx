@@ -40,7 +40,6 @@ import { Container } from '../../components/Grid';
 //   </Tab>
 // );
 
-
 const content = [
   {
     imagePath: 'https://picsum.photos/192/104',
@@ -90,7 +89,7 @@ const content = [
     title: 'carousel title',
     description: '8 Lorem ipsum dolor avec celestium of soterum',
   },
-]
+];
 
 storiesOf('Carousel', module).add('Carousel', () => (
   <>
