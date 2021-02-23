@@ -40,8 +40,8 @@ const SlickSliderWrapper = styled.section`
   .slick-next:focus:before {
     opacity: 1;
   }
-  .slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before {
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
     opacity: 0.25;
   }
 

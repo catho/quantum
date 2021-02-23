@@ -15,15 +15,16 @@ const Content = styled(Card.Content)`
   padding: 8px;
 `;
 
+const Thumb = styled.img`
+  width: 64px;
+  height: 64px;
+`;
+
 const ThumbCard = ({ card }) => (
   <>
     <AdaptedCard>
       <Content>
-        <img
-          src={card.imagePath}
-          alt={card.imageDescription}
-          style={{ width: 64, height: 64 }}
-        />
+        <Thumb src={card.imagePath} alt={card.imageDescription} />
       </Content>
     </AdaptedCard>
   </>
