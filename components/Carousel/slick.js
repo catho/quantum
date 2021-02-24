@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SlickSliderWrapper = styled.section`
-  padding: 16px;
+  padding: 8px;
 
   .slick-loading .slick-list {
     background: #fff url('./ajax-loader.gif') center center no-repeat;
