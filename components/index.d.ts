@@ -23,6 +23,7 @@ import { default as RadioGroupComponent, RadioGroupProps } from "./RadioGroup"
 import { default as RangeSliderComponent, RangeSliderProps } from "./RangeSlider"
 import { default as SnackBarComponent, SnackBarProps } from "./SnackBar"
 import { default as SocialsComponent, SocialsProps } from "./Socials"
+import { default as StepperComponent, StepperProps } from "./Stepper"
 import { TabbedView as TabbedViewComponent, TabbedViewProps } from './TabbedView';
 import { default as TagComponent, TagProps } from "./Tag"
 import { default as TextAreaComponent, TextAreaProps } from "./TextArea"
@@ -60,6 +61,7 @@ export const RadioGroup: StyledComponent<typeof RadioGroupComponent, RadioGroupP
 export const RangeSlider: StyledComponent<typeof RangeSliderComponent, RangeSliderProps>;
 export const SnackBar: StyledComponent<typeof SnackBarComponent, SnackBarProps>;
 export const Socials: StyledComponent<typeof SocialsComponent, SocialsProps>;
+export const Stepper: StyledComponent<typeof StepperComponent, StepperProps>;
 export const TabbedView: StyledComponent<typeof TabbedViewComponent, TabbedViewProps>;
 export const Tag: StyledComponent<typeof TagComponent, TagProps>;
 export const TextArea: StyledComponent<typeof TextAreaComponent, TextAreaProps>;
