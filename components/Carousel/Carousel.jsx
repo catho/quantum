@@ -10,7 +10,7 @@ const Carousel = props => {
   const { theme, dotsPagination, cards, cardSize } = props;
 
   const settings = {
-    dots: dotsPagination,
+    dots: cardSize !== 'small' ? dotsPagination : false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -56,7 +56,7 @@ Carousel.defaultProps = {
 };
 
 Carousel.propTypes = {
-  /** this prop enable dots pagination */
+  /** this prop enable dots pagination (only for 'medium' and 'large' card sizes) */
   dotsPagination: Proptypes.bool,
   /** this prop sets what size of card will render */
   cardSize: Proptypes.oneOf(['small', 'medium', 'large']),
