@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Proptypes from 'prop-types';
-import { SlickSliderWrapper } from './slick';
+import SlickSliderWrapper from './slick';
 import { colors } from '../shared/theme';
 import Arrow from './sub-components/Arrow';
 import CarouselCard from './sub-components/CarouselCard';
@@ -29,7 +29,7 @@ const Carousel = props => {
   };
 
   return (
-    <SlickSliderWrapper>
+    <SlickSliderWrapper theme={theme}>
       <Slider {...settings}>
         {cards.map(card => (
           <CarouselCard key={card.title} card={card} cardSize={cardSize} />
@@ -41,7 +41,7 @@ const Carousel = props => {
 
 Carousel.defaultProps = {
   dotsPagination: true,
-  cardSize: 'small',
+  cardSize: 'medium',
   cards: [
     {
       imagePath: 'dddd',

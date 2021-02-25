@@ -131,7 +131,7 @@ const SlickSliderWrapper = styled.section`
     opacity: 1;
   }
   .slick-dots li button:before {
-    font-size: 6px;
+    font-size: 8px;
     line-height: 20px;
     position: absolute;
     top: 0;
@@ -141,14 +141,31 @@ const SlickSliderWrapper = styled.section`
     content: '•';
     text-align: center;
     opacity: 0.25;
-    color: black;
+    ${({
+      theme: {
+        colors: {
+          secondary: { 700: secondary700 },
+        },
+      },
+    }) => `
+      color: ${secondary700};
+    `};
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   .slick-dots li.slick-active button:before {
     opacity: 0.75;
-    color: black;
+    ${({
+      theme: {
+        colors: {
+          secondary: { 700: secondary700 },
+        },
+      },
+    }) => `
+      color: ${secondary700};
+    `};
   }
 
   .slick-slider {
@@ -245,4 +262,4 @@ const SlickSliderWrapper = styled.section`
   }
 `;
 
-export { SlickSliderWrapper };
+export default SlickSliderWrapper;
