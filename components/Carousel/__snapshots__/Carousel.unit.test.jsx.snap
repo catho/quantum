@@ -1,0 +1,1570 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Carousel /> should match the snapshot 1`] = `
+.c0 {
+  padding: 8px;
+}
+
+.c0 .slick-loading .slick-list {
+  background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+.c0 .slick-prev,
+.c0 .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  -webkit-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -webkit-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.c0 .slick-prev:hover,
+.c0 .slick-prev:focus,
+.c0 .slick-next:hover,
+.c0 .slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.c0 .slick-prev:hover:before,
+.c0 .slick-prev:focus:before,
+.c0 .slick-next:hover:before,
+.c0 .slick-next:focus:before {
+  opacity: 1;
+}
+
+.c0 .slick-prev.slick-disabled,
+.c0 .slick-next.slick-disabled {
+  opacity: 0.25;
+}
+
+.c0 .slick-prev:before,
+.c0 .slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c0 .slick-prev {
+  left: -25px;
+}
+
+.c0 [dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+.c0 .slick-prev:before {
+  content: '←';
+}
+
+.c0 [dir='rtl'] .slick-prev:before {
+  content: '→';
+}
+
+.c0 .slick-next {
+  right: -25px;
+}
+
+.c0 [dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+.c0 .slick-next:before {
+  content: '→';
+}
+
+.c0 [dir='rtl'] .slick-next:before {
+  content: '←';
+}
+
+.c0 .slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.c0 .slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.c0 .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c0 .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.c0 .slick-dots li button:hover,
+.c0 .slick-dots li button:focus {
+  outline: none;
+}
+
+.c0 .slick-dots li button:hover:before,
+.c0 .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.c0 .slick-dots li button:before {
+  font-size: 8px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
+  color: #DE0059;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c0 .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #DE0059;
+}
+
+.c0 .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c0 .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.c0 .slick-list:focus {
+  outline: none;
+}
+
+.c0 .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.c0 .slick-slider .slick-track,
+.c0 .slick-slider .slick-list {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c0 .slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c0 .slick-track:before,
+.c0 .slick-track:after {
+  display: table;
+  content: '';
+}
+
+.c0 .slick-track:after {
+  clear: both;
+}
+
+.c0 .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.c0 .slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.c0 [dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.c0 .slick-slide img {
+  display: block;
+}
+
+.c0 .slick-slide.slick-loading img {
+  display: none;
+}
+
+.c0 .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.c0 .slick-initialized .slick-slide {
+  display: block;
+}
+
+.c0 .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.c0 .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.c0 .slick-arrow.slick-hidden {
+  display: none;
+}
+
+.c5 {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+  background-color: #e0e0e0;
+}
+
+.c7 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.c8 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c10 {
+  font-size: 14px;
+  margin: 8px 0 0 0;
+}
+
+.c3 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.c1 {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
+  background-color: #ffffff;
+}
+
+.c2 {
+  margin: 2px 8px;
+  text-align: center;
+  width: 224px;
+  height: 240px;
+}
+
+.c4 {
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.c6 {
+  width: 192px;
+  height: 104px;
+  padding-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.c9 {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c11 {
+  font-size: 14px;
+  margin: 0 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<section
+  className="c0"
+>
+  <div
+    className="slick-slider slick-initialized"
+    dir="ltr"
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root slick-arrow slick-prev"
+      data-qtm-preloader="icon"
+      focusable="false"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#DE0059",
+          "fontSize": 24,
+          "maxWidth": 24,
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+      />
+    </svg>
+    <div
+      className="slick-list"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={null}
+      onMouseMove={null}
+      onMouseUp={[Function]}
+      onTouchCancel={null}
+      onTouchEnd={[Function]}
+      onTouchMove={null}
+      onTouchStart={[Function]}
+      style={Object {}}
+    >
+      <div
+        className="slick-track"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        style={
+          Object {
+            "WebkitTransform": "translate3d(0px, 0px, 0px)",
+            "WebkitTransition": "",
+            "msTransform": "translateX(0px)",
+            "opacity": 1,
+            "transform": "translate3d(0px, 0px, 0px)",
+            "transition": "",
+          }
+        }
+      >
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-8}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  1 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-7}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  2 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-6}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  3 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-5}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  4 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-4}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  5 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-3}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  6 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-2}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  7 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={-1}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  8 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={false}
+          className="slick-slide slick-active slick-current"
+          data-index={0}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  1 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={false}
+          className="slick-slide slick-active"
+          data-index={1}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  2 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={false}
+          className="slick-slide slick-active"
+          data-index={2}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  3 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={false}
+          className="slick-slide slick-active"
+          data-index={3}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  4 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={false}
+          className="slick-slide slick-active"
+          data-index={4}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  5 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide"
+          data-index={5}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  6 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide"
+          data-index={6}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  7 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide"
+          data-index={7}
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  8 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={8}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  1 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={9}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  2 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={10}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  3 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={11}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  4 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={12}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  5 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={13}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  6 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={14}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  7 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          aria-hidden={true}
+          className="slick-slide slick-cloned"
+          data-index={15}
+          onClick={[Function]}
+          style={
+            Object {
+              "width": null,
+            }
+          }
+          tabIndex="-1"
+        >
+          <div>
+            <article
+              className="c1 c2"
+            >
+              <div
+                className="c3 c4"
+              >
+                <div
+                  className="c5 c6"
+                >
+                  <img
+                    alt="a11y image description"
+                    className="c7"
+                    src="https://picsum.photos/192/104"
+                  />
+                </div>
+                <h2
+                  className="c8 c9"
+                >
+                  carousel title
+                </h2>
+                <div
+                  className="c10 c11"
+                >
+                  8 Lorem ipsum dolor avec celestium of soterum
+                   
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root slick-arrow slick-next"
+      data-qtm-preloader="icon"
+      focusable="false"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#DE0059",
+          "fontSize": 24,
+          "maxWidth": 24,
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+      />
+    </svg>
+    <ul
+      className="slick-dots"
+      onMouseEnter={null}
+      onMouseLeave={null}
+      onMouseOver={null}
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      <li
+        className="slick-active"
+      >
+        <button
+          onClick={[Function]}
+        >
+          1
+        </button>
+      </li>
+      <li
+        className=""
+      >
+        <button
+          onClick={[Function]}
+        >
+          2
+        </button>
+      </li>
+      <li
+        className=""
+      >
+        <button
+          onClick={[Function]}
+        >
+          3
+        </button>
+      </li>
+      <li
+        className=""
+      >
+        <button
+          onClick={[Function]}
+        >
+          4
+        </button>
+      </li>
+      <li
+        className=""
+      >
+        <button
+          onClick={[Function]}
+        >
+          5
+        </button>
+      </li>
+      <li
+        className=""
+      >
+        <button
+          onClick={[Function]}
+        >
+          6
+        </button>
+      </li>
+      <li
+        className=""
+      >
+        <button
+          onClick={[Function]}
+        >
+          7
+        </button>
+      </li>
+      <li
+        className=""
+      >
+        <button
+          onClick={[Function]}
+        >
+          8
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+`;

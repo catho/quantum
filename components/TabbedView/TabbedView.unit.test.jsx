@@ -3,7 +3,8 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import TabbedView from './TabbedView';
 import Tab from './Tab';
-import { Badge, Icon } from '..';
+import Badge from '../Badge';
+import Icon from '../Icon';
 
 const badge = <Badge number={4} />;
 const icon = <Icon name="star" />;
