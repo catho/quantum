@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Proptypes from 'prop-types';
 import Card from '../../Card';
+import { colors, spacing, baseFontSize } from '../../shared/theme';
 
 const cardMeasures = {
   medium: {
@@ -10,12 +11,18 @@ const cardMeasures = {
   },
   large: {
     height: 264,
-    thumbMargin: 8,
+    thumbMargin: spacing.xsmall,
   },
 };
 
 const AdaptedCard = styled(Card)`
-  margin: 2px;
+  ${({
+    theme: {
+      spacing: { xxxsmall, xsmall },
+    },
+  }) => `
+    margin: ${xxxsmall}px ${xsmall}px;
+  `};
   text-align: center;
   width: 224px;
   ${({ cardMeasure: { height } }) => `height: ${height}px;`}
@@ -23,7 +30,13 @@ const AdaptedCard = styled(Card)`
 
 const Content = styled(Card.Content)`
   height: 100%;
-  padding: 16px;
+  ${({
+    theme: {
+      spacing: { medium },
+    },
+  }) => `
+    padding: ${medium}px;
+  `};
   box-sizing: border-box;
 `;
 
@@ -38,17 +51,33 @@ const Media = styled(Card.Media)`
 `;
 
 const Title = styled(Card.Title)`
-  font-size: 16px;
-  margin: 16px;
-  line-height: 16px;
+  ${({
+    theme: {
+      baseFontSize: baseFont,
+      spacing: { medium },
+    },
+  }) => `
+    font-size: ${baseFont}px;
+    line-height: ${baseFont}px;
+    margin: ${medium}px;
+  `};
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
 
 const Description = styled(Card.Description)`
-  font-size: 14px;
-  margin: 0 16px;
+  ${({
+    theme: {
+      baseFontSize: baseFont,
+      spacing: { medium },
+    },
+  }) => `
+    font-size: ${baseFont * 0.875}px;
+    margin: 0 ${medium}px;
+  `};
+
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -58,20 +87,22 @@ const Description = styled(Card.Description)`
 
 const handleCardMeasures = cardSize => cardMeasures[cardSize];
 
-const DescriptionCard = ({ card, cardSize }) => {
+const DescriptionCard = ({ card, cardSize, theme }) => {
   const cardMeasure = handleCardMeasures(cardSize);
 
   return (
     <>
-      <AdaptedCard cardMeasure={cardMeasure}>
+      <AdaptedCard cardMeasure={cardMeasure} theme={theme}>
         <Content>
           <Media
             cardMeasure={cardMeasure}
             src={card.imagePath}
             alt={card.imageDescription}
           />
-          <Title small>{card.title}</Title>
-          <Description>{card.description} </Description>
+          <Title theme={theme} small>
+            {card.title}
+          </Title>
+          <Description theme={theme}>{card.description} </Description>
         </Content>
       </AdaptedCard>
     </>
@@ -85,6 +116,11 @@ DescriptionCard.defaultProps = {
     title: 'card title',
     description: 'card description',
   },
+  theme: {
+    colors,
+    spacing,
+    baseFontSize,
+  },
 };
 
 DescriptionCard.propTypes = {
@@ -95,6 +131,11 @@ DescriptionCard.propTypes = {
     description: Proptypes.string,
   }),
   cardSize: Proptypes.oneOf(['medium', 'large']).isRequired,
+  theme: Proptypes.shape({
+    colors: Proptypes.object,
+    spacing: Proptypes.object,
+    baseFontSize: Proptypes.number,
+  }),
 };
 
 export default DescriptionCard;

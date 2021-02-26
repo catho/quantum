@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import Proptypes from 'prop-types';
 import SlickSliderWrapper from './slick';
-import { colors } from '../shared/theme';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 import Arrow from './sub-components/Arrow';
 import CarouselCard from './sub-components/CarouselCard';
 
@@ -32,7 +32,12 @@ const Carousel = props => {
     <SlickSliderWrapper theme={theme}>
       <Slider {...settings}>
         {cards.map(card => (
-          <CarouselCard key={card.title} card={card} cardSize={cardSize} />
+          <CarouselCard
+            key={card.title}
+            card={card}
+            cardSize={cardSize}
+            theme={theme}
+          />
         ))}
       </Slider>
     </SlickSliderWrapper>
@@ -52,6 +57,8 @@ Carousel.defaultProps = {
   ],
   theme: {
     colors,
+    spacing,
+    baseFontSize,
   },
 };
 
@@ -71,6 +78,8 @@ Carousel.propTypes = {
   ),
   theme: Proptypes.shape({
     colors: Proptypes.object,
+    spacing: Proptypes.object,
+    baseFontSize: Proptypes.number,
   }),
 };
 

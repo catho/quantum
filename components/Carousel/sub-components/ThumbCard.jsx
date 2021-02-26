@@ -2,27 +2,44 @@ import React from 'react';
 import styled from 'styled-components';
 import Proptypes from 'prop-types';
 import Card from '../../Card';
+import { colors, spacing, baseFontSize } from '../../shared/theme';
+
+const SQUARE_CARD_SIZE = 80;
+const SQUARE_THUMB_SIZE = 64;
 
 const AdaptedCard = styled(Card)`
-  margin: 2px;
+  ${({
+    theme: {
+      spacing: { xxxsmall, xxsmall },
+    },
+  }) => `
+    margin: ${xxxsmall}px ${xxsmall}px;
+  `};
+
   text-align: center;
-  height: 80px;
-  width: 80px;
+  height: ${SQUARE_CARD_SIZE}px;
+  width: ${SQUARE_CARD_SIZE}px;
 `;
 
 const Content = styled(Card.Content)`
   height: 100%;
-  padding: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+    padding: ${xsmall}px;
+  `};
 `;
 
 const Thumb = styled.img`
-  width: 64px;
-  height: 64px;
+  width: ${SQUARE_THUMB_SIZE}px;
+  height: ${SQUARE_THUMB_SIZE}px;
 `;
 
-const ThumbCard = ({ card }) => (
+const ThumbCard = ({ card, theme }) => (
   <>
-    <AdaptedCard>
+    <AdaptedCard theme={theme}>
       <Content>
         <Thumb src={card.imagePath} alt={card.imageDescription} />
       </Content>
@@ -37,6 +54,11 @@ ThumbCard.defaultProps = {
     title: 'card title',
     description: 'card description',
   },
+  theme: {
+    colors,
+    spacing,
+    baseFontSize,
+  },
 };
 
 ThumbCard.propTypes = {
@@ -45,6 +67,11 @@ ThumbCard.propTypes = {
     imageDescription: Proptypes.string,
     title: Proptypes.string,
     description: Proptypes.string,
+  }),
+  theme: Proptypes.shape({
+    colors: Proptypes.object,
+    spacing: Proptypes.object,
+    baseFontSize: Proptypes.number,
   }),
 };
 
