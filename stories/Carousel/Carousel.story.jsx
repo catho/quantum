@@ -1,15 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  Tab,
-  Example,
-  AutoExample,
-  Title,
-  StoryContainer,
-} from '@catho/quantum-storybook-ui';
-import { colors, baseFontSize, spacing } from '../../components/shared/theme';
+// import {
+//   Tab,
+//   Example,
+//   AutoExample,
+//   Title,
+//   StoryContainer,
+// } from '@catho/quantum-storybook-ui';
+// import { colors, baseFontSize, spacing } from '../../components/shared/theme';
 import Carousel from '../../components/Carousel';
-import { Container } from '../../components/Grid';
+// import { Container } from '../../components/Grid';
 
 // const i18nEsp = {
 //   paginationPreposition: 'en',
