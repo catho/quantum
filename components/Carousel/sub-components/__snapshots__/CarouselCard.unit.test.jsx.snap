@@ -47,7 +47,6 @@ exports[`<CarouselCard /> should match the snapshots 1`] = `
     <img
       alt="a11y image description"
       className="c4"
-      onError={[Function]}
       src="https://picsum.photos/192/104"
     />
   </div>
