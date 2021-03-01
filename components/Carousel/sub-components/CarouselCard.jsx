@@ -15,12 +15,6 @@ const CarouselCard = ({ card, cardSize, theme }) => (
 );
 
 CarouselCard.defaultProps = {
-  card: {
-    imagePath: 'http://',
-    imageDescription: 'card image a11y description',
-    title: 'card title',
-    description: 'card description',
-  },
   theme: {
     colors,
     spacing,
@@ -34,7 +28,7 @@ CarouselCard.propTypes = {
     imageDescription: Proptypes.string,
     title: Proptypes.string,
     description: Proptypes.string,
-  }),
+  }).isRequired,
   cardSize: Proptypes.oneOf(['small', 'medium', 'large']).isRequired,
   theme: Proptypes.shape({
     colors: Proptypes.object,

@@ -60,4 +60,12 @@ describe('<Carousel />', () => {
       renderer.create(<Carousel cards={content} />).toJSON(),
     ).toMatchSnapshot();
   });
+
+  // snapthos medium size
+
+  // snapsthos large sizes
+
+  // no dots and when small type
+
+  // com ou sem dots no medium e large
 });

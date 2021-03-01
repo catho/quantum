@@ -85,6 +85,9 @@ const Description = styled(Card.Description)`
   text-overflow: ellipsis;
 `;
 
+Title.displayName = 'Title';
+Description.displayName = 'Description';
+
 const handleCardMeasures = cardSize => cardMeasures[cardSize];
 
 const DescriptionCard = ({ card, cardSize, theme }) => {
@@ -102,7 +105,7 @@ const DescriptionCard = ({ card, cardSize, theme }) => {
           <Title theme={theme} small>
             {card.title}
           </Title>
-          <Description theme={theme}>{card.description} </Description>
+          <Description theme={theme}>{card.description}</Description>
         </Content>
       </AdaptedCard>
     </>
@@ -110,12 +113,6 @@ const DescriptionCard = ({ card, cardSize, theme }) => {
 };
 
 DescriptionCard.defaultProps = {
-  card: {
-    imagePath: 'http://',
-    imageDescription: 'card image a11y description',
-    title: 'card title',
-    description: 'card description',
-  },
   theme: {
     colors,
     spacing,
@@ -129,7 +126,7 @@ DescriptionCard.propTypes = {
     imageDescription: Proptypes.string,
     title: Proptypes.string,
     description: Proptypes.string,
-  }),
+  }).isRequired,
   cardSize: Proptypes.oneOf(['medium', 'large']).isRequired,
   theme: Proptypes.shape({
     colors: Proptypes.object,

@@ -47,14 +47,6 @@ const Carousel = props => {
 Carousel.defaultProps = {
   dotsPagination: true,
   cardSize: 'medium',
-  cards: [
-    {
-      imagePath: 'dddd',
-      imageDescription: 'dddd',
-      title: 'sfdsf',
-      description: 'htrhtrghtr',
-    },
-  ],
   theme: {
     colors,
     spacing,
@@ -75,7 +67,7 @@ Carousel.propTypes = {
       title: Proptypes.string,
       description: Proptypes.string,
     }),
-  ),
+  ).isRequired,
   theme: Proptypes.shape({
     colors: Proptypes.object,
     spacing: Proptypes.object,

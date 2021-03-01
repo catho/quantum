@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarouselCard /> should match the snapshots 1`] = `
+.c2 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.c0 {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
+  background-color: #ffffff;
+}
+
+.c1 {
+  margin: 2px 4px;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+}
+
+.c3 {
+  height: 100%;
+  padding: 8px;
+}
+
+.c4 {
+  width: 64px;
+  height: 64px;
+}
+
+<article
+  className="c0 c1"
+>
+  <div
+    className="c2 c3"
+  >
+    <img
+      alt="a11y image description"
+      className="c4"
+      onError={[Function]}
+      src="https://picsum.photos/192/104"
+    />
+  </div>
+</article>
+`;
+
+exports[`<CarouselCard /> should match the snapshots 2`] = `
+.c4 {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+  background-color: #e0e0e0;
+}
+
+.c6 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.c7 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c9 {
+  font-size: 14px;
+  margin: 8px 0 0 0;
+}
+
+.c2 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.c0 {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
+  background-color: #ffffff;
+}
+
+.c1 {
+  margin: 2px 8px;
+  text-align: center;
+  width: 224px;
+  height: 240px;
+}
+
+.c3 {
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.c5 {
+  width: 192px;
+  height: 104px;
+  padding-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.c8 {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c10 {
+  font-size: 14px;
+  margin: 0 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<article
+  className="c0 c1"
+>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <img
+        alt="a11y image description"
+        className="c6"
+        src="https://picsum.photos/192/104"
+      />
+    </div>
+    <h2
+      className="c7 c8"
+    >
+      Card title
+    </h2>
+    <div
+      className="c9 c10"
+    >
+      Lorem ipsum dolor avec
+    </div>
+  </div>
+</article>
+`;
+
+exports[`<CarouselCard /> should match the snapshots 3`] = `
+.c4 {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+  background-color: #e0e0e0;
+}
+
+.c6 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.c7 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c9 {
+  font-size: 14px;
+  margin: 8px 0 0 0;
+}
+
+.c2 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.c0 {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
+  background-color: #ffffff;
+}
+
+.c1 {
+  margin: 2px 8px;
+  text-align: center;
+  width: 224px;
+  height: 264px;
+}
+
+.c3 {
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.c5 {
+  width: 192px;
+  height: 104px;
+  padding-bottom: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c8 {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c10 {
+  font-size: 14px;
+  margin: 0 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<article
+  className="c0 c1"
+>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <img
+        alt="a11y image description"
+        className="c6"
+        src="https://picsum.photos/192/104"
+      />
+    </div>
+    <h2
+      className="c7 c8"
+    >
+      Card title
+    </h2>
+    <div
+      className="c9 c10"
+    >
+      Lorem ipsum dolor avec
+    </div>
+  </div>
+</article>
+`;
