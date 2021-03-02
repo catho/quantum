@@ -7,7 +7,7 @@ const CARD_TITLE = 'Card title';
 const CARD_DESCRIPTION = 'Lorem ipsum dolor avec';
 
 const content = {
-  imagePath: 'https://picsum.photos/192/104',
+  imagePath: 'https://assets.catho.com.br/logo/svg/blue.svg',
   imageDescription: 'a11y image description',
   title: CARD_TITLE,
   description: CARD_DESCRIPTION,

@@ -47,7 +47,7 @@ exports[`<CarouselCard /> should match the snapshots 1`] = `
     <img
       alt="a11y image description"
       className="c4"
-      src="https://picsum.photos/192/104"
+      src="https://assets.catho.com.br/logo/svg/blue.svg"
     />
   </div>
 </article>
@@ -154,7 +154,7 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
       <img
         alt="a11y image description"
         className="c6"
-        src="https://picsum.photos/192/104"
+        src="https://assets.catho.com.br/logo/svg/blue.svg"
       />
     </div>
     <h2
@@ -272,7 +272,7 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
       <img
         alt="a11y image description"
         className="c6"
-        src="https://picsum.photos/192/104"
+        src="https://assets.catho.com.br/logo/svg/blue.svg"
       />
     </div>
     <h2
