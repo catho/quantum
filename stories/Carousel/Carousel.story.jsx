@@ -1,48 +1,68 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { content } from './Content';
-// import {
-//   Tab,
-//   Example,
-//   AutoExample,
-//   Title,
-//   StoryContainer,
-// } from '@catho/quantum-storybook-ui';
-// import { colors, baseFontSize, spacing } from '../../components/shared/theme';
+import {
+  Tab,
+  TabbedView,
+  Heading,
+  Title,
+  StoryContainer,
+  SimpleHighlight,
+  AutoPropsApi,
+} from '@catho/quantum-storybook-ui';
 import Carousel from '../../components/Carousel';
-// import { Container } from '../../components/Grid';
-
-// const i18nEsp = {
-//   paginationPreposition: 'en',
-//   nextWord: 'Siguiente',
-// };
-
-// const exampleTab = (
-//   <Tab title="Example">
-//     <StoryContainer>
-//       <Container fluid>
-//         <Title as="h2">using i18n with spanish</Title>
-//         <Example
-//           component={
-//             <Stepper
-//               i18n={i18nEsp}
-//               index={2}
-//               total={6}
-//               currentStepText="Salarios / beneficios"
-//               nextStepText="Contrato / sitio"
-//             />
-//           }
-//           code={
-//             "<Stepper i18n={{ paginationPreposition: 'en', nextWord: 'Siguiente' }} index={2} total={6} currentStepText='Salarios / beneficios' nextStepText='Contrato / sitio' />}"
-//           }
-//         />
-//       </Container>
-//     </StoryContainer>
-//   </Tab>
-// );
+import Alert from '../../components/Alert';
+import { content, contentWithLongTexts } from './Content';
 
 storiesOf('Carousel', module).add('Carousel', () => (
   <>
-    <Carousel cards={content} />
+    <Heading name="Carousel">
+      Carousel is a component that presents cards to go through a series of
+      content. Works with a series of image, text, or custom markup. Also
+      includes support for indicator and previous / next controls.
+    </Heading>
+    <TabbedView>
+      <Tab title="Usage">
+        <StoryContainer>
+          <Title as="h2">Importing Carousel</Title>
+          <SimpleHighlight>{`import { Carousel } from '@catho/quantum';`}</SimpleHighlight>
+          <p>
+            The Carousel component will render cards with thumbs and its
+            informations or only thumbs. There are 3 types of cards for this
+            Carousel component: <br />
+            - Small ( only thumbs ); <br />
+            - Medium ( thumbs, title and description ); <br />
+            - Large ( thumbs, title and description ); <br />
+          </p>
+
+          <br />
+          <Alert icon="info" skin="neutral">
+            The carousel controls (arrows) hides on screen smaller than 1024px.
+          </Alert>
+
+          <Title as="h3">Carousel with medium cards (default)</Title>
+          <SimpleHighlight>
+            {content.code}
+            {`<Carousel cards={content} />`}
+          </SimpleHighlight>
+          <br />
+          <Carousel cards={content} />
+
+          <Title as="h3">Carousel with small cards</Title>
+          <SimpleHighlight>
+            {`<Carousel cards={content} cardSize="small" />`}
+          </SimpleHighlight>
+          <br />
+          <Carousel cards={content} cardSize="small" />
+
+          <Title as="h3">Carousel with ellipsis for long texts</Title>
+          <Carousel cards={contentWithLongTexts} />
+        </StoryContainer>
+      </Tab>
+      <Tab title="API">
+        <StoryContainer>
+          <AutoPropsApi component={Carousel} />
+        </StoryContainer>
+      </Tab>
+    </TabbedView>
   </>
 ));
