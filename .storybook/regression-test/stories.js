@@ -11,6 +11,7 @@ export default [
   'Alert',
   'Badge',
   'Button',
+  'Carousel',
   'Card',
   'Checkbox',
   'CircularLoader',
