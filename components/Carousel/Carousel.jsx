@@ -7,15 +7,23 @@ import Arrow from './sub-components/Arrow';
 import CarouselCard from './sub-components/CarouselCard';
 
 const Carousel = props => {
-  const { theme, dotsPagination, cards, cardSize } = props;
+  const {
+    theme,
+    dotsPagination,
+    cards,
+    cardSize,
+    speed,
+    slidesToScroll,
+  } = props;
 
   const settings = {
     dots: cardSize !== 'small' ? dotsPagination : false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
     variableWidth: true,
+    slidesToShow: 5,
+    speed,
+    slidesToScroll,
+
     nextArrow: <Arrow theme={theme} targeting="right" />,
     prevArrow: <Arrow theme={theme} targeting="left" />,
     responsive: [
@@ -46,6 +54,8 @@ const Carousel = props => {
 
 Carousel.defaultProps = {
   dotsPagination: true,
+  speed: 500,
+  slidesToScroll: 1,
   cardSize: 'medium',
   theme: {
     colors,
@@ -57,6 +67,10 @@ Carousel.defaultProps = {
 Carousel.propTypes = {
   /** this prop enable dots pagination (only for 'medium' and 'large' card sizes) */
   dotsPagination: Proptypes.bool,
+  /** receives a number (miliseconds) to controle de speed of carousel drags */
+  speed: Proptypes.number,
+  /** receives a number of cards to drag simultaneously */
+  slidesToScroll: Proptypes.number,
   /** this prop sets what size of card will render */
   cardSize: Proptypes.oneOf(['small', 'medium', 'large']),
   /** this prop receives a object with all content to render in component */
