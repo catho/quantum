@@ -40,7 +40,13 @@ describe('<CarouselCard />', () => {
     expect(component.find('Description').exists()).toBeFalsy();
   });
 
-  it('medium or large cards should have title and description', () => {
+  it('medium cards should have title and description', () => {
+    const component = mount(<CarouselCard card={content} cardSize="medium" />);
+    expect(component.find('Title').text()).toEqual(CARD_TITLE);
+    expect(component.find('Description').text()).toEqual(CARD_DESCRIPTION);
+  });
+
+  it('large cards should have title and description', () => {
     const component = mount(<CarouselCard card={content} cardSize="large" />);
     expect(component.find('Title').text()).toEqual(CARD_TITLE);
     expect(component.find('Description').text()).toEqual(CARD_DESCRIPTION);

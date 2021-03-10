@@ -1,10 +1,24 @@
 import styled from 'styled-components';
 
 const SlickSliderWrapper = styled.section`
-  padding: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+    padding: ${xsmall}px;
+  `};
 
   .slick-loading .slick-list {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    ${({
+      theme: {
+        colors: {
+          neutral: { 0: neutral0 },
+        },
+      },
+    }) => `
+      background-color: ${neutral0};
+    `}
   }
 
   /* Arrows */
@@ -101,7 +115,7 @@ const SlickSliderWrapper = styled.section`
 
   .slick-dots li {
     position: relative;
-    \display: inline-block;
+    display: inline-block;
     width: 20px;
     height: 20px;
     margin: 0 5px;

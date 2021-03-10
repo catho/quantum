@@ -9,8 +9,6 @@ const Arrow = props => {
   const setColor = (allThemeColors, arrowColor) =>
     allThemeColors[arrowColor][700];
 
-  // console.log(setColor(themeColors, color));
-
   return (
     <Icon
       name={`keyboard_arrow_${targeting}`}
@@ -22,7 +20,7 @@ const Arrow = props => {
 };
 
 Arrow.defaultProps = {
-  className: undefined,
+  className: '',
   onClick: () => {},
 };
 

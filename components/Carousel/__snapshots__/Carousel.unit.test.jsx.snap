@@ -6,7 +6,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
 }
 
 .c0 .slick-loading .slick-list {
-  background: #fff url('./ajax-loader.gif') center center no-repeat;
+  background-color: #ffffff;
 }
 
 .c0 .slick-prev,
@@ -1551,7 +1551,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
 }
 
 .c0 .slick-loading .slick-list {
-  background: #fff url('./ajax-loader.gif') center center no-repeat;
+  background-color: #ffffff;
 }
 
 .c0 .slick-prev,
@@ -2625,7 +2625,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
 }
 
 .c0 .slick-loading .slick-list {
-  background: #fff url('./ajax-loader.gif') center center no-repeat;
+  background-color: #ffffff;
 }
 
 .c0 .slick-prev,

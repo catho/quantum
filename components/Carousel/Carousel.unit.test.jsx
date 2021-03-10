@@ -72,12 +72,7 @@ describe('<Carousel />', () => {
     expect(component.find('.slick-slider .slick-dots').exists()).toBeFalsy();
   });
 
-  it('should hide dots when the props is false for medium or large card sizes', () => {
-    const componentMediumDotsThruthy = mount(<Carousel cards={content} />);
-    expect(
-      componentMediumDotsThruthy.find('.slick-slider .slick-dots').exists(),
-    ).toBeTruthy();
-
+  it('should hide dots when dotsPagination is false', () => {
     const componentMediumDotsFalse = mount(
       <Carousel cards={content} dotsPagination={false} />,
     );
@@ -85,18 +80,25 @@ describe('<Carousel />', () => {
       componentMediumDotsFalse.find('.slick-slider .slick-dots').exists(),
     ).toBeFalsy();
 
-    const componentLargeDotsThruthy = mount(
-      <Carousel cards={content} cardSize="large" />,
-    );
-    expect(
-      componentLargeDotsThruthy.find('.slick-slider .slick-dots').exists(),
-    ).toBeTruthy();
-
     const componentLargeDotsFalse = mount(
       <Carousel cards={content} cardSize="large" dotsPagination={false} />,
     );
     expect(
       componentLargeDotsFalse.find('.slick-slider .slick-dots').exists(),
     ).toBeFalsy();
+  });
+
+  it('should show dots', () => {
+    const componentMediumDotsThruthy = mount(<Carousel cards={content} />);
+    expect(
+      componentMediumDotsThruthy.find('.slick-slider .slick-dots').exists(),
+    ).toBeTruthy();
+
+    const componentLargeDotsThruthy = mount(
+      <Carousel cards={content} cardSize="large" />,
+    );
+    expect(
+      componentLargeDotsThruthy.find('.slick-slider .slick-dots').exists(),
+    ).toBeTruthy();
   });
 });
