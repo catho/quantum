@@ -65,6 +65,13 @@ describe('<Carousel />', () => {
     expect(
       renderer.create(<Carousel cards={content} cardSize="large" />).toJSON(),
     ).toMatchSnapshot();
+    expect(
+      renderer
+        .create(
+          <Carousel cards={content} cardSize="large" arrowColor="primary" />,
+        )
+        .toJSON(),
+    ).toMatchSnapshot();
   });
 
   it('should not have dots when the card size is small', () => {
