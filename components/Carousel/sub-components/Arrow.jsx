@@ -3,12 +3,18 @@ import Proptypes from 'prop-types';
 import Icon from '../../Icon';
 
 const Arrow = props => {
-  const { className, onClick, theme, targeting } = props;
+  const { className, onClick, theme, targeting, color } = props;
   const { colors: themeColors } = theme;
+
+  const setColor = (allThemeColors, arrowColor) =>
+    allThemeColors[arrowColor][700];
+
+  // console.log(setColor(themeColors, color));
+
   return (
     <Icon
       name={`keyboard_arrow_${targeting}`}
-      skin={themeColors.secondary[700]}
+      skin={setColor(themeColors, color)}
       className={className}
       onClick={onClick}
     />
@@ -24,6 +30,14 @@ Arrow.propTypes = {
   className: Proptypes.string,
   onClick: Proptypes.func,
   targeting: Proptypes.string.isRequired,
+  color: Proptypes.oneOf([
+    'primary',
+    'secondary',
+    'warning',
+    'success',
+    'error',
+    'neutral',
+  ]).isRequired,
   theme: Proptypes.shape({
     colors: Proptypes.object,
   }).isRequired,

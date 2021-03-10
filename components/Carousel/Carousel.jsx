@@ -14,6 +14,7 @@ const Carousel = props => {
     cardSize,
     speed,
     slidesToScroll,
+    arrowColor,
   } = props;
 
   const settings = {
@@ -24,8 +25,8 @@ const Carousel = props => {
     speed,
     slidesToScroll,
 
-    nextArrow: <Arrow theme={theme} targeting="right" />,
-    prevArrow: <Arrow theme={theme} targeting="left" />,
+    nextArrow: <Arrow theme={theme} targeting="right" color={arrowColor} />,
+    prevArrow: <Arrow theme={theme} targeting="left" color={arrowColor} />,
     responsive: [
       {
         breakpoint: 1024,
@@ -56,6 +57,7 @@ Carousel.defaultProps = {
   dotsPagination: true,
   speed: 500,
   slidesToScroll: 1,
+  arrowColor: 'secondary',
   cardSize: 'medium',
   theme: {
     colors,
@@ -71,6 +73,15 @@ Carousel.propTypes = {
   speed: Proptypes.number,
   /** receives a number of cards to drag simultaneously */
   slidesToScroll: Proptypes.number,
+  /** sets the color of next/previous arrow */
+  arrowColor: Proptypes.oneOf([
+    'primary',
+    'secondary',
+    'warning',
+    'success',
+    'error',
+    'neutral',
+  ]),
   /** this prop sets what size of card will render */
   cardSize: Proptypes.oneOf(['small', 'medium', 'large']),
   /** this prop receives a object with all content to render in component */
