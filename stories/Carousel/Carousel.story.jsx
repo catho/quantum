@@ -56,6 +56,19 @@ storiesOf('Carousel', module).add('Carousel', () => (
 
           <Title as="h3">Carousel with ellipsis for long texts</Title>
           <Carousel cards={contentWithLongTexts} />
+
+          <br />
+          <Alert icon="info" skin="neutral">
+            This component is based on the open source{' '}
+            <a
+              href="https://react-slick.neostack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              react-slick lib
+            </a>
+            .
+          </Alert>
         </StoryContainer>
       </Tab>
       <Tab title="API">
