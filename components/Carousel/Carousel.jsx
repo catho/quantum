@@ -2,9 +2,11 @@ import React from 'react';
 import Slider from 'react-slick';
 import Proptypes from 'prop-types';
 import SlickSliderWrapper from './slick';
-import { colors, spacing, baseFontSize } from '../shared/theme';
+import { colors, spacing, baseFontSize, breakpoints } from '../shared/theme';
 import Arrow from './sub-components/Arrow';
 import CarouselCard from './sub-components/CarouselCard';
+
+const MOBILE_BREAKPOINT = breakpoints.medium.width;
 
 const Carousel = props => {
   const {
@@ -29,7 +31,7 @@ const Carousel = props => {
     prevArrow: <Arrow theme={theme} targeting="left" color={arrowColor} />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: MOBILE_BREAKPOINT,
         settings: {
           arrows: false,
         },
