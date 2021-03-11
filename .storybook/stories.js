@@ -74,4 +74,6 @@ export default [
   'Socials',
 
   'Stepper',
+
+  'SegmentedControl',
 ].map(s => `./${s}/${s}.story.jsx`);
