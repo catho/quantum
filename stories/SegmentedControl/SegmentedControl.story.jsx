@@ -14,6 +14,22 @@ import { Row, Col } from '../../components';
 
 import SegmentedControl from '../../components/SegmentedControl';
 
+const content = [
+  {
+    label: 'Profissional',
+    value: 'profissional',
+    checked: true,
+  },
+  {
+    label: 'Operacional',
+    value: 'operacional',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+  },
+];
+
 storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
   <>
     <Heading name="SegmentedControl">
@@ -28,7 +44,7 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
             <Col style={{ marginTop: '20px' }} />
           </Row>
           <Title as="h3">Segmented control</Title>
-          <SegmentedControl />
+          <SegmentedControl items={content} />
         </StoryContainer>
       </Tab>
 
