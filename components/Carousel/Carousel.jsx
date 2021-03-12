@@ -36,6 +36,12 @@ const Carousel = props => {
           arrows: false,
         },
       },
+      {
+        breakpoint: 320,
+        settings: {
+          dots: false,
+        },
+      },
     ],
   };
 
