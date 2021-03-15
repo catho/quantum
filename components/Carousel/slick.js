@@ -69,10 +69,10 @@ const SlickSliderWrapper = styled.section`
   }
 
   .slick-prev {
-    left: -25px;
+    left: -24px;
   }
   [dir='rtl'] .slick-prev {
-    right: -25px;
+    right: -24px;
     left: auto;
   }
   .slick-prev:before {
@@ -83,11 +83,11 @@ const SlickSliderWrapper = styled.section`
   }
 
   .slick-next {
-    right: -25px;
+    right: -24px;
   }
   [dir='rtl'] .slick-next {
     right: auto;
-    left: -25px;
+    left: -24px;
   }
   .slick-next:before {
     content: '→';

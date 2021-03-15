@@ -61,11 +61,11 @@ exports[`<Carousel /> should match the snapshot 1`] = `
 }
 
 .c0 .slick-prev {
-  left: -25px;
+  left: -24px;
 }
 
 .c0 [dir='rtl'] .slick-prev {
-  right: -25px;
+  right: -24px;
   left: auto;
 }
 
@@ -78,12 +78,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
 }
 
 .c0 .slick-next {
-  right: -25px;
+  right: -24px;
 }
 
 .c0 [dir='rtl'] .slick-next {
   right: auto;
-  left: -25px;
+  left: -24px;
 }
 
 .c0 .slick-next:before {
@@ -757,8 +757,8 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active slick-current"
+          aria-hidden={true}
+          className="slick-slide slick-current"
           data-index={0}
           onClick={[Function]}
           style={
@@ -800,8 +800,8 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={1}
           onClick={[Function]}
           style={
@@ -843,8 +843,8 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={2}
           onClick={[Function]}
           style={
@@ -886,8 +886,8 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={3}
           onClick={[Function]}
           style={
@@ -929,8 +929,8 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={4}
           onClick={[Function]}
           style={
@@ -1606,11 +1606,11 @@ exports[`<Carousel /> should match the snapshot 2`] = `
 }
 
 .c0 .slick-prev {
-  left: -25px;
+  left: -24px;
 }
 
 .c0 [dir='rtl'] .slick-prev {
-  right: -25px;
+  right: -24px;
   left: auto;
 }
 
@@ -1623,12 +1623,12 @@ exports[`<Carousel /> should match the snapshot 2`] = `
 }
 
 .c0 .slick-next {
-  right: -25px;
+  right: -24px;
 }
 
 .c0 [dir='rtl'] .slick-next {
   right: auto;
-  left: -25px;
+  left: -24px;
 }
 
 .c0 .slick-next:before {
@@ -2139,8 +2139,8 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active slick-current"
+          aria-hidden={true}
+          className="slick-slide slick-current"
           data-index={0}
           onClick={[Function]}
           style={
@@ -2168,8 +2168,8 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={1}
           onClick={[Function]}
           style={
@@ -2197,8 +2197,8 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={2}
           onClick={[Function]}
           style={
@@ -2226,8 +2226,8 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={3}
           onClick={[Function]}
           style={
@@ -2255,8 +2255,8 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={4}
           onClick={[Function]}
           style={
@@ -2680,11 +2680,11 @@ exports[`<Carousel /> should match the snapshot 3`] = `
 }
 
 .c0 .slick-prev {
-  left: -25px;
+  left: -24px;
 }
 
 .c0 [dir='rtl'] .slick-prev {
-  right: -25px;
+  right: -24px;
   left: auto;
 }
 
@@ -2697,12 +2697,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
 }
 
 .c0 .slick-next {
-  right: -25px;
+  right: -24px;
 }
 
 .c0 [dir='rtl'] .slick-next {
   right: auto;
-  left: -25px;
+  left: -24px;
 }
 
 .c0 .slick-next:before {
@@ -3376,8 +3376,8 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active slick-current"
+          aria-hidden={true}
+          className="slick-slide slick-current"
           data-index={0}
           onClick={[Function]}
           style={
@@ -3419,8 +3419,8 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={1}
           onClick={[Function]}
           style={
@@ -3462,8 +3462,8 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={2}
           onClick={[Function]}
           style={
@@ -3505,8 +3505,8 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={3}
           onClick={[Function]}
           style={
@@ -3548,8 +3548,8 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={4}
           onClick={[Function]}
           style={
@@ -4225,11 +4225,11 @@ exports[`<Carousel /> should match the snapshot 4`] = `
 }
 
 .c0 .slick-prev {
-  left: -25px;
+  left: -24px;
 }
 
 .c0 [dir='rtl'] .slick-prev {
-  right: -25px;
+  right: -24px;
   left: auto;
 }
 
@@ -4242,12 +4242,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
 }
 
 .c0 .slick-next {
-  right: -25px;
+  right: -24px;
 }
 
 .c0 [dir='rtl'] .slick-next {
   right: auto;
-  left: -25px;
+  left: -24px;
 }
 
 .c0 .slick-next:before {
@@ -4921,8 +4921,8 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active slick-current"
+          aria-hidden={true}
+          className="slick-slide slick-current"
           data-index={0}
           onClick={[Function]}
           style={
@@ -4964,8 +4964,8 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={1}
           onClick={[Function]}
           style={
@@ -5007,8 +5007,8 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={2}
           onClick={[Function]}
           style={
@@ -5050,8 +5050,8 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={3}
           onClick={[Function]}
           style={
@@ -5093,8 +5093,8 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           </div>
         </div>
         <div
-          aria-hidden={false}
-          className="slick-slide slick-active"
+          aria-hidden={true}
+          className="slick-slide"
           data-index={4}
           onClick={[Function]}
           style={

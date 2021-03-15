@@ -23,7 +23,7 @@ const Carousel = props => {
     dots: cardSize !== 'small' ? dotsPagination : false,
     infinite: true,
     variableWidth: true,
-    slidesToShow: 5,
+    slidesToShow: -1,
     speed,
     slidesToScroll,
 
