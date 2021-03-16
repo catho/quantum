@@ -9,7 +9,7 @@ const SegmentedWrapper = styled.div`
   justify-content: space-around;
 `;
 
-const SegmentedControl = ({ items, name }) => (
+const SegmentedControl = ({ items, name, onChange }) => (
   <Row withBreakpoints>
     <Col small={6} medium={4}>
       <SegmentedWrapper>
@@ -20,6 +20,7 @@ const SegmentedControl = ({ items, name }) => (
             value={item.value}
             checked={item.checked}
             name={name}
+            onChange={onChange}
           />
         ))}
       </SegmentedWrapper>
@@ -29,6 +30,7 @@ const SegmentedControl = ({ items, name }) => (
 
 SegmentedControl.defaultProps = {
   name: 'segmented-control',
+  onChange: () => {},
 };
 
 SegmentedControl.propTypes = {
@@ -40,6 +42,7 @@ SegmentedControl.propTypes = {
     }),
   ).isRequired,
   name: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 export default SegmentedControl;

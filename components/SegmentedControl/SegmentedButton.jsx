@@ -12,7 +12,7 @@ const LabelButton = styled(Button).attrs({ forwardedAs: 'label' })`
 
 const ID_GENERATOR = uniqId('segmented-button-');
 
-const SegmentedButton = ({ label, value, checked, name }) => {
+const SegmentedButton = ({ label, value, checked, name, onChange }) => {
   const ID = ID_GENERATOR.next().value;
 
   return (
@@ -22,12 +22,25 @@ const SegmentedButton = ({ label, value, checked, name }) => {
         type="radio"
         name={name}
         value={value}
-        onChange={e => e}
         checked={checked}
+        onChange={e => onChange({ value, label }, e)}
       />
       {label}
     </LabelButton>
   );
+};
+
+SegmentedButton.defaultProps = {
+  checked: undefined,
+  onChange: () => {},
+};
+
+SegmentedButton.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  checked: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 
 export default SegmentedButton;

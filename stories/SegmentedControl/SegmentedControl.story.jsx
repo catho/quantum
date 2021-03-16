@@ -18,11 +18,11 @@ const content = [
   {
     label: 'Profissional',
     value: 'profissional',
-    checked: true,
   },
   {
     label: 'Operacional',
     value: 'operacional',
+    checked: true,
   },
   {
     label: 'Estagiário',
@@ -44,7 +44,10 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
             <Col style={{ marginTop: '20px' }} />
           </Row>
           <Title as="h3">Segmented control</Title>
-          <SegmentedControl items={content} />
+          <SegmentedControl
+            items={content}
+            onChange={console.log} /* eslint-disable-line */
+          />
         </StoryContainer>
       </Tab>
 
