@@ -48,13 +48,13 @@ const contentWithIcons = [
     icon: 'date_range',
   },
   {
-    label: 'Estagiário',
-    value: 'estagiário',
+    label: 'Maquinário',
+    value: 'maquinário',
     icon: 'error',
   },
   {
-    label: 'Estagiário',
-    value: 'estagiário',
+    label: 'Favorito',
+    value: 'favorito',
     icon: 'favorite_border',
   },
 ];
