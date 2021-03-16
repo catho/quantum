@@ -9,13 +9,16 @@ const SegmentedWrapper = styled.div`
   justify-content: space-around;
 `;
 
+const MAX_NUM_BUTTONS = 5;
+
 const SegmentedControl = ({ items, name, onChange }) => (
   <Row withBreakpoints>
     <Col small={6} medium={4}>
       <SegmentedWrapper>
-        {items.map(item => (
+        {items.slice(0, MAX_NUM_BUTTONS).map(item => (
           <SegmentedButton
             key={item.value}
+            icon={item.icon}
             label={item.label}
             value={item.value}
             checked={item.checked}

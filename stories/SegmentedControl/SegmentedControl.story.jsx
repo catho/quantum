@@ -30,6 +30,54 @@ const content = [
   },
 ];
 
+const contentWithIcons = [
+  {
+    label: 'Profissional',
+    value: 'profissional',
+    icon: 'info',
+  },
+  {
+    label: 'Operacional',
+    value: 'operacional',
+    checked: true,
+    icon: 'block',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+    icon: 'date_range',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+    icon: 'error',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+    icon: 'favorite_border',
+  },
+];
+
+const contentWithThreeIcons = [
+  {
+    label: 'Profissional',
+    value: 'profissional',
+    icon: 'info',
+  },
+  {
+    label: 'Operacional',
+    value: 'operacional',
+    checked: true,
+    icon: 'block',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+    icon: 'date_range',
+  },
+];
+
 storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
   <>
     <Heading name="SegmentedControl">
@@ -46,6 +94,14 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
           <Title as="h3">Segmented control</Title>
           <SegmentedControl
             items={content}
+            onChange={console.log} /* eslint-disable-line */
+          />
+          <SegmentedControl
+            items={contentWithIcons}
+            onChange={console.log} /* eslint-disable-line */
+          />
+          <SegmentedControl
+            items={contentWithThreeIcons}
             onChange={console.log} /* eslint-disable-line */
           />
         </StoryContainer>
