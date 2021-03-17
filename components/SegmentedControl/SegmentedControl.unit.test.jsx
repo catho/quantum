@@ -30,7 +30,7 @@ describe('<SegmentedControl />', () => {
 
   it('should render icon instead text label if icon is setted', () => {
     const component = mount(<SegmentedControl items={thresContentsWithIcon} />);
-    expect(component.find('IconButton').exists()).toBeTruthy();
+    expect(component.find('Icon').exists()).toBeTruthy();
   });
 
   it('should render a maximum of 5 buttons', () => {

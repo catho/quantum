@@ -7310,7 +7310,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               value="profissional"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Profissional"
                             name="info"
                             size="medium"
@@ -7385,7 +7385,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>
@@ -7864,7 +7864,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               value="operacional"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Operacional"
                             name="block"
                             size="medium"
@@ -7939,7 +7939,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>
@@ -8414,7 +8414,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               value="estagiário"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Estagiário"
                             name="date_range"
                             size="medium"
@@ -8489,7 +8489,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>
@@ -8964,7 +8964,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               value="maquinário"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Maquinário"
                             name="error"
                             size="medium"
@@ -9039,7 +9039,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>
@@ -9514,7 +9514,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               value="favorito"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Favorito"
                             name="favorite_border"
                             size="medium"
@@ -9589,7 +9589,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>
@@ -12773,7 +12773,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               value="profissional"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Profissional"
                             name="info"
                             size="medium"
@@ -12848,7 +12848,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>
@@ -13327,7 +13327,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               value="operacional"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Operacional"
                             name="block"
                             size="medium"
@@ -13402,7 +13402,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>
@@ -13877,7 +13877,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               value="estagiário"
                             />
                           </HiddenInput>
-                          <IconButton
+                          <Icon
                             aria-label="Estagiário"
                             name="date_range"
                             size="medium"
@@ -13952,7 +13952,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
                             </ForwardRef>
-                          </IconButton>
+                          </Icon>
                         </label>
                       </Button__StyledButton>
                     </Button>

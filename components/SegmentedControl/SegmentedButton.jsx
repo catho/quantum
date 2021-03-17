@@ -17,7 +17,6 @@ const LabelButton = styled(Button).attrs({ forwardedAs: 'label' })`
 `;
 
 LabelButton.displayName = 'LabelButton';
-Icon.displayName = 'IconButton';
 HiddenInput.displayName = 'HiddenInput';
 
 const ID_GENERATOR = uniqId('segmented-button-');
