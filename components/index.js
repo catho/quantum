@@ -31,6 +31,7 @@ import Socials from './Socials';
 import SocialButton from './SocialButton';
 import Avatar from './Avatar';
 import Stepper from './Stepper';
+import Carousel from './Carousel';
 
 export {
   Accordion,
@@ -73,4 +74,5 @@ export {
   SocialButton,
   Avatar,
   Stepper,
+  Carousel,
 };

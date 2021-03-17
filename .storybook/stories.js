@@ -24,6 +24,8 @@ export default [
   // Avatar
   'Avatar',
 
+  'Carousel',
+
   // Buttons
   'Button',
 
