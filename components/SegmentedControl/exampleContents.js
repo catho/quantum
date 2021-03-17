@@ -14,6 +14,47 @@ const defaultContent = [
   },
 ];
 
+const twoContents = [
+  {
+    label: 'Profissional',
+    value: 'profissional',
+  },
+  {
+    label: 'Operacional',
+    value: 'operacional',
+    checked: true,
+  },
+];
+
+const fiveContentsWithFirstChecked = [
+  {
+    label: 'Profissional',
+    value: 'profissional',
+    icon: 'info',
+    checked: true,
+  },
+  {
+    label: 'Operacional',
+    value: 'operacional',
+    icon: 'block',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+    icon: 'date_range',
+  },
+  {
+    label: 'Maquinário',
+    value: 'maquinário',
+    icon: 'error',
+  },
+  {
+    label: 'Favorito',
+    value: 'favorito',
+    icon: 'favorite_border',
+  },
+];
+
 const FiveContentsWithIcon = [
   {
     label: 'Profissional',
@@ -96,7 +137,9 @@ const nContents = [
 
 export {
   defaultContent,
+  twoContents,
   FiveContentsWithIcon,
+  fiveContentsWithFirstChecked,
   thresContentsWithIcon,
   nContents,
 };

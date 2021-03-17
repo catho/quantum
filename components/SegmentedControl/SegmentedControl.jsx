@@ -34,7 +34,15 @@ const SegmentedWrapper = styled.div`
 
     &:last-child {
       border-radius: 0px 4px 4px 0px;
-      border: 1px solid;
+      ${({
+        theme: {
+          colors: {
+            primary: { 700: primaryColor700 },
+          },
+        },
+      }) => `
+        border: 1px solid ${primaryColor700};
+      `}
     }
   }
 `;

@@ -171,7 +171,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
 
 .c2 label:last-child {
   border-radius: 0px 4px 4px 0px;
-  border: 1px solid;
+  border: 1px solid #1250C4;
 }
 
 @media (min-width:0px) {
@@ -4303,7 +4303,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
 
 .c2 label:last-child {
   border-radius: 0px 4px 4px 0px;
-  border: 1px solid;
+  border: 1px solid #1250C4;
 }
 
 @media (min-width:0px) {
@@ -9776,7 +9776,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
 
 .c2 label:last-child {
   border-radius: 0px 4px 4px 0px;
-  border: 1px solid;
+  border: 1px solid #1250C4;
 }
 
 @media (min-width:0px) {
