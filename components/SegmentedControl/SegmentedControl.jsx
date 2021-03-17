@@ -54,7 +54,6 @@ const SegmentedControl = ({ items, name, onChange, theme }) => (
             checked={item.checked}
             name={name}
             onChange={onChange}
-            theme={theme}
           />
         ))}
       </SegmentedWrapper>
