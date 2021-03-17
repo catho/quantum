@@ -43,7 +43,7 @@ const MAX_NUM_BUTTONS = 5;
 
 const SegmentedControl = ({ items, name, onChange, theme }) => (
   <Row withBreakpoints>
-    <Col small={6} medium={4}>
+    <Col small={6} medium={5}>
       <SegmentedWrapper theme={theme}>
         {items.slice(0, MAX_NUM_BUTTONS).map(item => (
           <SegmentedButton
