@@ -39,8 +39,8 @@ const SegmentedButton = ({ label, value, checked, name, onChange, icon }) => {
         type="radio"
         name={name}
         value={value}
-        checked={checked}
-        onChange={e => onChange({ value, label }, e)}
+        checked={!!checked}
+        onChange={e => onChange(e, { value, label })}
       />
       {icon ? <Icon name={icon} aria-label={label} /> : label}
     </LabelButton>

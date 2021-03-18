@@ -22,7 +22,6 @@ const content = [
   {
     label: 'Operacional',
     value: 'operacional',
-    checked: true,
   },
   {
     label: 'Estagiário',
@@ -93,14 +92,17 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
           </Row>
           <Title as="h3">Segmented control</Title>
           <SegmentedControl
+            name="simple"
             items={content}
             onChange={console.log} /* eslint-disable-line */
           />
           <SegmentedControl
+            name="with-icons"
             items={contentWithIcons}
             onChange={console.log} /* eslint-disable-line */
           />
           <SegmentedControl
+            name="with-three-icons"
             items={contentWithThreeIcons}
             onChange={console.log} /* eslint-disable-line */
           />

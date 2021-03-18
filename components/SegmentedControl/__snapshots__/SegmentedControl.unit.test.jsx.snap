@@ -3149,6 +3149,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-0"
                             name="segmented-control"
                             onChange={[Function]}
@@ -3156,6 +3157,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                             value="profissional"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-0"
                               name="segmented-control"
@@ -4101,6 +4103,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-2"
                             name="segmented-control"
                             onChange={[Function]}
@@ -4108,6 +4111,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                             value="estagiário"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-2"
                               name="segmented-control"
@@ -7295,6 +7299,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-3"
                             name="segmented-control"
                             onChange={[Function]}
@@ -7302,6 +7307,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                             value="profissional"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-3"
                               name="segmented-control"
@@ -8399,6 +8405,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-5"
                             name="segmented-control"
                             onChange={[Function]}
@@ -8406,6 +8413,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                             value="estagiário"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-5"
                               name="segmented-control"
@@ -8949,6 +8957,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-6"
                             name="segmented-control"
                             onChange={[Function]}
@@ -8956,6 +8965,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                             value="maquinário"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-6"
                               name="segmented-control"
@@ -9499,6 +9509,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-7"
                             name="segmented-control"
                             onChange={[Function]}
@@ -9506,6 +9517,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                             value="favorito"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-7"
                               name="segmented-control"
@@ -12758,6 +12770,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-8"
                             name="segmented-control"
                             onChange={[Function]}
@@ -12765,6 +12778,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                             value="profissional"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-8"
                               name="segmented-control"
@@ -13862,6 +13876,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                           type="button"
                         >
                           <HiddenInput
+                            checked={false}
                             id="segmented-button-10"
                             name="segmented-control"
                             onChange={[Function]}
@@ -13869,6 +13884,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                             value="estagiário"
                           >
                             <input
+                              checked={false}
                               className="c5"
                               id="segmented-button-10"
                               name="segmented-control"
@@ -13967,5 +13983,3 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   </Row>
 </SegmentedControl>
 `;
-
-exports[`<SegmentedControl /> should match the snapshots 4`] = `undefined`;

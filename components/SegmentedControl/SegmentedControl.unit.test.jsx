@@ -22,27 +22,29 @@ describe('<SegmentedControl />', () => {
       expect(toJson(segmentedComponent)).toMatchSnapshot();
       segmentedComponent.unmount();
     });
-
-    expect(
-      toJson(<SegmentedControl items={defaultContent} />),
-    ).toMatchSnapshot();
   });
 
   it('should render icon instead text label if icon is setted', () => {
-    const component = mount(<SegmentedControl items={thresContentsWithIcon} />);
+    const component = mount(
+      <SegmentedControl items={thresContentsWithIcon} name="unit-test" />,
+    );
     expect(component.find('Icon').exists()).toBeTruthy();
   });
 
   it('should render a maximum of 5 buttons', () => {
-    const component = mount(<SegmentedControl items={nContents} />);
+    const component = mount(
+      <SegmentedControl items={nContents} name="unit-test" />,
+    );
     expect(component.find('LabelButton').length).toEqual(5);
   });
 
   it('should input radio be checked when props contains item checked', () => {
-    const component = mount(<SegmentedControl items={defaultContent} />);
+    const component = mount(
+      <SegmentedControl items={defaultContent} name="unit-test" />,
+    );
     const firstItemValue = defaultContent[0].value;
     const itemValueChecked = defaultContent[1].value;
-    expect(component.find('input[checked]').prop('value')).toEqual(
+    expect(component.find('input[checked=true]').prop('value')).toEqual(
       itemValueChecked,
     );
     expect(
@@ -54,7 +56,9 @@ describe('<SegmentedControl />', () => {
   });
 
   it('(a11y) should contains aria-label corresponding the label of items', () => {
-    const component = mount(<SegmentedControl items={defaultContent} />);
+    const component = mount(
+      <SegmentedControl items={defaultContent} name="unit-test" />,
+    );
     const firstItemLabel = defaultContent[0].label;
     expect(
       component
@@ -65,7 +69,9 @@ describe('<SegmentedControl />', () => {
   });
 
   it('(a11y) should render the correct tabindex in each item', () => {
-    const component = mount(<SegmentedControl items={defaultContent} />);
+    const component = mount(
+      <SegmentedControl items={defaultContent} name="unit-test" />,
+    );
     expect(
       component
         .find('LabelButton')

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Row, Col } from '../Grid';
@@ -49,25 +49,44 @@ const SegmentedWrapper = styled.div`
 
 const MAX_NUM_BUTTONS = 5;
 
-const SegmentedControl = ({ items, name, onChange, theme }) => (
-  <Row withBreakpoints>
-    <Col small={6} medium={5}>
-      <SegmentedWrapper theme={theme}>
-        {items.slice(0, MAX_NUM_BUTTONS).map(item => (
-          <SegmentedButton
-            key={item.value}
-            icon={item.icon}
-            label={item.label}
-            value={item.value}
-            checked={item.checked}
-            name={name}
-            onChange={onChange}
-          />
-        ))}
-      </SegmentedWrapper>
-    </Col>
-  </Row>
-);
+const SegmentedControl = ({ items, name, onChange, theme }) => {
+  const ButtonDefaultChecked = allItems => {
+    const itemChecked = allItems.filter(item => item.checked);
+    if (typeof itemChecked !== 'undefined' && itemChecked.length > 0)
+      return itemChecked[0].value;
+
+    return undefined;
+  };
+
+  const [itemChecked, setItemChecked] = useState(ButtonDefaultChecked(items));
+
+  const onValueChange = (event, value, label) => {
+    setItemChecked(value);
+    onChange({ value, label }, event);
+  };
+
+  const isChecked = itemValue => (itemValue === itemChecked ? true : undefined);
+
+  return (
+    <Row withBreakpoints>
+      <Col small={6} medium={5}>
+        <SegmentedWrapper theme={theme}>
+          {items.slice(0, MAX_NUM_BUTTONS).map(item => (
+            <SegmentedButton
+              key={item.value}
+              icon={item.icon}
+              label={item.label}
+              value={item.value}
+              checked={isChecked(item.value)}
+              name={name}
+              onChange={e => onValueChange(e, item.value, item.label)}
+            />
+          ))}
+        </SegmentedWrapper>
+      </Col>
+    </Row>
+  );
+};
 
 SegmentedControl.defaultProps = {
   name: 'segmented-control',
