@@ -55,6 +55,34 @@ describe('<SegmentedControl />', () => {
     ).toEqual(firstItemValue);
   });
 
+  it('should change the button when its clicked', () => {
+    const onChangeMock = jest.fn();
+    const component = mount(
+      <SegmentedControl
+        items={defaultContent}
+        name="unit-test"
+        onChange={onChangeMock}
+      />,
+    );
+    const firstRadio = component.find('LabelButton input').first();
+
+    expect(onChangeMock).not.toHaveBeenCalled();
+    expect(
+      component
+        .find('LabelButton')
+        .first()
+        .hasClass('input-checked'),
+    ).toBeFalsy();
+    firstRadio.simulate('change');
+    expect(
+      component
+        .find('LabelButton')
+        .first()
+        .hasClass('input-checked'),
+    ).toBeTruthy();
+    expect(onChangeMock).toHaveBeenCalled();
+  });
+
   it('(a11y) should contains aria-label corresponding the label of items', () => {
     const component = mount(
       <SegmentedControl items={defaultContent} name="unit-test" />,
