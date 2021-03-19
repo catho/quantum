@@ -29,6 +29,7 @@ import { default as TagComponent, TagProps } from "./Tag"
 import { default as TextAreaComponent, TextAreaProps } from "./TextArea"
 import { default as ToggleComponent, ToggleProps } from "./Toggle"
 import { default as TooltipComponent, TooltipProps } from "./Tooltip"
+import { default as SegmentedControlComponent, SegmentedControlProps } from "./SegmentedControl"
 
 export { default as BREAKPOINTS } from './Breakpoints';
 export { default as Colors } from "./Colors"
@@ -68,3 +69,4 @@ export const TextArea: StyledComponent<typeof TextAreaComponent, TextAreaProps>;
 export const Toggle: StyledComponent<typeof ToggleComponent, ToggleProps>;
 export const Tooltip: StyledComponent<typeof TooltipComponent, TooltipProps>;
 export const SocialButton: StyledComponent<typeof SocialButtonComponent, SocialButtonProps>;
+export const SegmentedControl: StyledComponent<typeof SegmentedControlComponent, SegmentedControlProps>;

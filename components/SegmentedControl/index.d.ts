@@ -16,4 +16,4 @@ export interface SegmentedControlProps {
     }];
 }
 
-declare const SegmentdControl: React.FC<SegmentedControlProps>;
+declare const SegmentedControl: React.FC<SegmentedControlProps>;
