@@ -14,6 +14,23 @@ const defaultContent = [
   },
 ];
 
+defaultContent.code = `
+  const defaultContent = [
+    {
+      label: 'Profissional',
+      value: 'profissional',
+    },
+    {
+      label: 'Operacional',
+      value: 'operacional',
+      checked: true,
+    },
+    {
+      label: 'Estagiário',
+      value: 'estagiário',
+    },
+  ];
+`;
 const defaultContentWithoutCheckedItems = [
   {
     label: 'Profissional',
@@ -145,6 +162,26 @@ const thresContentsWithIcon = [
     icon: 'date_range',
   },
 ];
+
+thresContentsWithIcon.code = `
+  const thresContentsWithIcon = [
+    {
+      label: 'Profissional',
+      value: 'profissional',
+      icon: 'info',
+    },
+    {
+      label: 'Operacional',
+      value: 'operacional',
+      checked: true,
+      icon: 'block',
+    },
+    {
+      label: 'Estagiário',
+      value: 'estagiário',
+      icon: 'date_range',
+    },
+  ];`;
 
 const nContents = [
   {

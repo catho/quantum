@@ -101,6 +101,7 @@ SegmentedControl.defaultProps = {
 };
 
 SegmentedControl.propTypes = {
+  /** this prop receives a array of object with all the content */
   items: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string,
@@ -108,13 +109,16 @@ SegmentedControl.propTypes = {
       checked: PropTypes.bool,
     }),
   ).isRequired,
+  /** sets the name of component */
   name: PropTypes.string,
+  /** receives a callback function */
   onChange: PropTypes.func,
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),
+  /** this prop changes the layout to dark mode */
   darkMode: PropTypes.bool,
 };
 
