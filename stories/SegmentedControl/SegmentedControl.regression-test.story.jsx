@@ -32,4 +32,29 @@ storiesOf('Segmented control', module)
   ))
   .add('Segmented control[icon]: with 5 items and no item checked ', () => (
     <SegmentedControl items={FiveContentsWithIconAndWithoutCheckedItems} />
-  ));
+  ))
+  .add('Segmented control[Dark theme]: with 3 items', () => (
+    <SegmentedControl items={defaultContent} darkMode />
+  ))
+  .add('Segmented control[Dark theme]: with 5 items ', () => (
+    <SegmentedControl items={FiveContentsWithIcon} darkMode />
+  ))
+  .add(
+    'Segmented control[Dark theme]: with 5 items and first one checked ',
+    () => <SegmentedControl items={fiveContentsWithFirstChecked} darkMode />,
+  )
+  .add(
+    'Segmented control[Dark theme]: with 3 items and no item checked ',
+    () => (
+      <SegmentedControl items={defaultContentWithoutCheckedItems} darkMode />
+    ),
+  )
+  .add(
+    'Segmented control[Dark theme]: with 5 items and no item checked ',
+    () => (
+      <SegmentedControl
+        items={FiveContentsWithIconAndWithoutCheckedItems}
+        darkMode
+      />
+    ),
+  );

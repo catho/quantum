@@ -24,13 +24,23 @@ const ID_GENERATOR = uniqId('segmented-button-');
 const a11yCheckedIndex = checked =>
   checked ? { tabIndex: -1, className: 'input-checked' } : { tabIndex: 0 };
 
-const SegmentedButton = ({ label, value, checked, name, onChange, icon }) => {
+const SegmentedButton = ({
+  label,
+  value,
+  checked,
+  name,
+  onChange,
+  icon,
+  darkMode,
+}) => {
   const ID = ID_GENERATOR.next().value;
+
+  const handleStroke = () => (darkMode ? checked : !checked);
 
   return (
     <LabelButton
       aria-label={label}
-      stroked={!checked}
+      stroked={handleStroke()}
       htmlFor={ID}
       {...a11yCheckedIndex(checked)}
     >
@@ -60,6 +70,7 @@ SegmentedButton.propTypes = {
   value: PropTypes.string.isRequired,
   checked: PropTypes.bool,
   onChange: PropTypes.func,
+  darkMode: PropTypes.bool.isRequired,
 };
 
 export default SegmentedButton;

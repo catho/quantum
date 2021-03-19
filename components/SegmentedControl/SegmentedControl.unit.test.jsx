@@ -15,6 +15,7 @@ describe('<SegmentedControl />', () => {
       <SegmentedControl items={defaultContent} />,
       <SegmentedControl items={FiveContentsWithIcon} />,
       <SegmentedControl items={thresContentsWithIcon} />,
+      <SegmentedControl items={thresContentsWithIcon} darkmode />,
     ];
 
     SegmentedControls.forEach(segmentedControl => {

@@ -49,7 +49,7 @@ const SegmentedWrapper = styled.div`
 
 const MAX_NUM_BUTTONS = 5;
 
-const SegmentedControl = ({ items, name, onChange, theme }) => {
+const SegmentedControl = ({ items, name, onChange, theme, darkMode }) => {
   const ButtonDefaultChecked = allItems => {
     const itemChecked = allItems.filter(item => item.checked);
     if (typeof itemChecked !== 'undefined' && itemChecked.length > 0)
@@ -80,6 +80,7 @@ const SegmentedControl = ({ items, name, onChange, theme }) => {
               checked={isChecked(item.value)}
               name={name}
               onChange={e => onValueChange(e, item.value, item.label)}
+              darkMode={darkMode}
             />
           ))}
         </SegmentedWrapper>
@@ -96,6 +97,7 @@ SegmentedControl.defaultProps = {
     spacing,
     colors,
   },
+  darkMode: false,
 };
 
 SegmentedControl.propTypes = {
@@ -113,6 +115,7 @@ SegmentedControl.propTypes = {
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),
+  darkMode: PropTypes.bool,
 };
 
 export default SegmentedControl;
