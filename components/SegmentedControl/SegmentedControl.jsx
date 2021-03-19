@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Row, Col } from '../Grid';
-import {
-  colors,
-  spacing,
-  baseFontSize as defaultBaseFontSize,
-} from '../shared/theme';
+import { colors, spacing } from '../shared/theme';
 import SegmentedButton from './SegmentedButton';
 
 const SegmentedWrapper = styled.div`
@@ -93,7 +89,6 @@ SegmentedControl.defaultProps = {
   name: 'segmented-control',
   onChange: () => {},
   theme: {
-    baseFontSize: defaultBaseFontSize,
     spacing,
     colors,
   },
@@ -106,6 +101,7 @@ SegmentedControl.propTypes = {
     PropTypes.shape({
       label: PropTypes.string,
       value: PropTypes.string,
+      icon: PropTypes.string,
       checked: PropTypes.bool,
     }),
   ).isRequired,
@@ -114,7 +110,6 @@ SegmentedControl.propTypes = {
   /** receives a callback function */
   onChange: PropTypes.func,
   theme: PropTypes.shape({
-    baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),
