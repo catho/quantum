@@ -15,8 +15,6 @@ import {
   defaultContent,
   thresContentsWithIcon,
 } from '../../components/SegmentedControl/exampleContents';
-
-import { Row, Col } from '../../components';
 import SegmentedControl from '../../components/SegmentedControl';
 
 storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
