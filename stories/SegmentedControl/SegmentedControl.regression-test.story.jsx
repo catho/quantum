@@ -3,9 +3,11 @@ import { storiesOf } from '@storybook/react';
 import SegmentedControl from '../../components/SegmentedControl';
 import {
   defaultContent,
+  defaultContentWithoutCheckedItems,
   twoContents,
   FiveContentsWithIcon,
   fiveContentsWithFirstChecked,
+  FiveContentsWithIconAndWithoutCheckedItems,
   thresContentsWithIcon,
 } from '../../components/SegmentedControl/exampleContents';
 
@@ -24,4 +26,10 @@ storiesOf('Segmented control', module)
   ))
   .add('Segmented control[icon]: with 3 items ', () => (
     <SegmentedControl items={thresContentsWithIcon} />
+  ))
+  .add('Segmented control[text]: with 3 items and no item checked ', () => (
+    <SegmentedControl items={defaultContentWithoutCheckedItems} />
+  ))
+  .add('Segmented control[icon]: with 5 items and no item checked ', () => (
+    <SegmentedControl items={FiveContentsWithIconAndWithoutCheckedItems} />
   ));

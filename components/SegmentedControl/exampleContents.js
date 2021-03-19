@@ -14,6 +14,21 @@ const defaultContent = [
   },
 ];
 
+const defaultContentWithoutCheckedItems = [
+  {
+    label: 'Profissional',
+    value: 'profissional',
+  },
+  {
+    label: 'Operacional',
+    value: 'operacional',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+  },
+];
+
 const twoContents = [
   {
     label: 'Profissional',
@@ -65,6 +80,34 @@ const FiveContentsWithIcon = [
     label: 'Operacional',
     value: 'operacional',
     checked: true,
+    icon: 'block',
+  },
+  {
+    label: 'Estagiário',
+    value: 'estagiário',
+    icon: 'date_range',
+  },
+  {
+    label: 'Maquinário',
+    value: 'maquinário',
+    icon: 'error',
+  },
+  {
+    label: 'Favorito',
+    value: 'favorito',
+    icon: 'favorite_border',
+  },
+];
+
+const FiveContentsWithIconAndWithoutCheckedItems = [
+  {
+    label: 'Profissional',
+    value: 'profissional',
+    icon: 'info',
+  },
+  {
+    label: 'Operacional',
+    value: 'operacional',
     icon: 'block',
   },
   {
@@ -137,9 +180,11 @@ const nContents = [
 
 export {
   defaultContent,
+  defaultContentWithoutCheckedItems,
   twoContents,
   FiveContentsWithIcon,
   fiveContentsWithFirstChecked,
+  FiveContentsWithIconAndWithoutCheckedItems,
   thresContentsWithIcon,
   nContents,
 };

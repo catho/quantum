@@ -9,73 +9,14 @@ import {
   Title,
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
+import {
+  defaultContent,
+  FiveContentsWithIcon,
+  thresContentsWithIcon,
+} from '../../components/SegmentedControl/exampleContents';
 
 import { Row, Col } from '../../components';
-
 import SegmentedControl from '../../components/SegmentedControl';
-
-const content = [
-  {
-    label: 'Profissional',
-    value: 'profissional',
-  },
-  {
-    label: 'Operacional',
-    value: 'operacional',
-  },
-  {
-    label: 'Estagiário',
-    value: 'estagiário',
-  },
-];
-
-const contentWithIcons = [
-  {
-    label: 'Profissional',
-    value: 'profissional',
-    icon: 'info',
-  },
-  {
-    label: 'Operacional',
-    value: 'operacional',
-    checked: true,
-    icon: 'block',
-  },
-  {
-    label: 'Estagiário',
-    value: 'estagiário',
-    icon: 'date_range',
-  },
-  {
-    label: 'Maquinário',
-    value: 'maquinário',
-    icon: 'error',
-  },
-  {
-    label: 'Favorito',
-    value: 'favorito',
-    icon: 'favorite_border',
-  },
-];
-
-const contentWithThreeIcons = [
-  {
-    label: 'Profissional',
-    value: 'profissional',
-    icon: 'info',
-  },
-  {
-    label: 'Operacional',
-    value: 'operacional',
-    checked: true,
-    icon: 'block',
-  },
-  {
-    label: 'Estagiário',
-    value: 'estagiário',
-    icon: 'date_range',
-  },
-];
 
 storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
   <>
@@ -93,17 +34,17 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
           <Title as="h3">Segmented control</Title>
           <SegmentedControl
             name="simple"
-            items={content}
+            items={defaultContent}
             onChange={console.log} /* eslint-disable-line */
           />
           <SegmentedControl
             name="with-icons"
-            items={contentWithIcons}
+            items={FiveContentsWithIcon}
             onChange={console.log} /* eslint-disable-line */
           />
           <SegmentedControl
             name="with-three-icons"
-            items={contentWithThreeIcons}
+            items={thresContentsWithIcon}
             onChange={console.log} /* eslint-disable-line */
           />
         </StoryContainer>
