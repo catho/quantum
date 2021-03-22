@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Row, Col } from '../Grid';
 import { colors, spacing } from '../shared/theme';
-import SegmentedButton from './SegmentedButton';
+import SegmentedButtons from './SegmentedButtons';
 
 const SegmentedWrapper = styled.div`
   display: flex;
@@ -43,47 +43,20 @@ const SegmentedWrapper = styled.div`
   }
 `;
 
-const MAX_NUM_BUTTONS = 5;
-
-const SegmentedControl = ({ items, name, onChange, theme, darkMode }) => {
-  const ButtonDefaultChecked = allItems => {
-    const itemChecked = allItems.filter(item => item.checked);
-    if (typeof itemChecked !== 'undefined' && itemChecked.length > 0)
-      return itemChecked[0].value;
-
-    return undefined;
-  };
-
-  const [itemChecked, setItemChecked] = useState(ButtonDefaultChecked(items));
-
-  const onValueChange = (event, value, label) => {
-    setItemChecked(value);
-    onChange({ value, label }, event);
-  };
-
-  const isChecked = itemValue => (itemValue === itemChecked ? true : undefined);
-
-  return (
-    <Row withBreakpoints>
-      <Col small={6} medium={5}>
-        <SegmentedWrapper theme={theme}>
-          {items.slice(0, MAX_NUM_BUTTONS).map(item => (
-            <SegmentedButton
-              key={item.value}
-              icon={item.icon}
-              label={item.label}
-              value={item.value}
-              checked={isChecked(item.value)}
-              name={name}
-              onChange={e => onValueChange(e, item.value, item.label)}
-              darkMode={darkMode}
-            />
-          ))}
-        </SegmentedWrapper>
-      </Col>
-    </Row>
-  );
-};
+const SegmentedControl = ({ items, name, onChange, theme, darkMode }) => (
+  <Row withBreakpoints>
+    <Col small={6} medium={5}>
+      <SegmentedWrapper theme={theme}>
+        <SegmentedButtons
+          items={items}
+          name={name}
+          darkMode={darkMode}
+          onChange={onChange}
+        />
+      </SegmentedWrapper>
+    </Col>
+  </Row>
+);
 
 SegmentedControl.defaultProps = {
   name: 'segmented-control',
