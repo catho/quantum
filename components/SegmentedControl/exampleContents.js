@@ -144,7 +144,7 @@ const fiveContentsWithIconAndWithoutCheckedItems = [
   },
 ];
 
-const thresContentsWithIcon = [
+const threeContentsWithIcon = [
   {
     label: 'Profissional',
     value: 'profissional',
@@ -163,8 +163,8 @@ const thresContentsWithIcon = [
   },
 ];
 
-thresContentsWithIcon.code = `
-  const thresContentsWithIcon = [
+threeContentsWithIcon.code = `
+  const threeContentsWithIcon = [
     {
       label: 'Profissional',
       value: 'profissional',
@@ -222,6 +222,6 @@ export {
   fiveContentsWithIcon,
   fiveContentsWithFirstChecked,
   fiveContentsWithIconAndWithoutCheckedItems,
-  thresContentsWithIcon,
+  threeContentsWithIcon,
   nContents,
 };

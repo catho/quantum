@@ -5,7 +5,7 @@ import SegmentedControl from './SegmentedControl';
 import {
   defaultContent,
   fiveContentsWithIcon,
-  thresContentsWithIcon,
+  threeContentsWithIcon,
   nContents,
 } from './exampleContents';
 
@@ -14,8 +14,8 @@ describe('<SegmentedControl />', () => {
     const SegmentedControls = [
       <SegmentedControl items={defaultContent} />,
       <SegmentedControl items={fiveContentsWithIcon} />,
-      <SegmentedControl items={thresContentsWithIcon} />,
-      <SegmentedControl items={thresContentsWithIcon} darkmode />,
+      <SegmentedControl items={threeContentsWithIcon} />,
+      <SegmentedControl items={threeContentsWithIcon} darkmode />,
     ];
 
     SegmentedControls.forEach(segmentedControl => {
@@ -27,7 +27,7 @@ describe('<SegmentedControl />', () => {
 
   it('should render icon instead text label if icon is setted', () => {
     const component = mount(
-      <SegmentedControl items={thresContentsWithIcon} name="unit-test" />,
+      <SegmentedControl items={threeContentsWithIcon} name="unit-test" />,
     );
     expect(component.find('Icon').exists()).toBeTruthy();
   });
@@ -82,6 +82,7 @@ describe('<SegmentedControl />', () => {
         .hasClass('input-checked'),
     ).toBeTruthy();
     expect(onChangeMock).toHaveBeenCalled();
+    expect(onChangeMock).toBeCalledTimes(1);
   });
 
   it('(a11y) should contains aria-label corresponding the label of items', () => {

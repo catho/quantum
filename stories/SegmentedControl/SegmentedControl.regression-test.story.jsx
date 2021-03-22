@@ -8,7 +8,7 @@ import {
   fiveContentsWithIcon,
   fiveContentsWithFirstChecked,
   fiveContentsWithIconAndWithoutCheckedItems,
-  thresContentsWithIcon,
+  threeContentsWithIcon,
 } from '../../components/SegmentedControl/exampleContents';
 
 storiesOf('Segmented control', module)
@@ -25,7 +25,7 @@ storiesOf('Segmented control', module)
     <SegmentedControl items={fiveContentsWithFirstChecked} />
   ))
   .add('Segmented control[icon]: with 3 items ', () => (
-    <SegmentedControl items={thresContentsWithIcon} />
+    <SegmentedControl items={threeContentsWithIcon} />
   ))
   .add('Segmented control[text]: with 3 items and no item checked ', () => (
     <SegmentedControl items={defaultContentWithoutCheckedItems} />

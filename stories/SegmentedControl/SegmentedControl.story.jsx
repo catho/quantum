@@ -13,7 +13,7 @@ import {
 import Alert from '../../components/Alert';
 import {
   defaultContent,
-  thresContentsWithIcon,
+  threeContentsWithIcon,
 } from '../../components/SegmentedControl/exampleContents';
 import SegmentedControl from '../../components/SegmentedControl';
 
@@ -53,21 +53,21 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
           />
 
           <Title as="h3">segmented control with icons</Title>
-          <SimpleHighlight>{thresContentsWithIcon.code}</SimpleHighlight>
-          <SimpleHighlight>{`<SegmentedControl name="simple-with-icon" items={thresContentsWithIcon} onChange={console.log} />`}</SimpleHighlight>
+          <SimpleHighlight>{threeContentsWithIcon.code}</SimpleHighlight>
+          <SimpleHighlight>{`<SegmentedControl name="simple-with-icon" items={threeContentsWithIcon} onChange={console.log} />`}</SimpleHighlight>
           <br />
           <SegmentedControl
             name="simple-with-icon"
-            items={thresContentsWithIcon}
+            items={threeContentsWithIcon}
             onChange={console.log} /* eslint-disable-line */
           />
 
           <Title as="h3">segmented control with icons (dark mode)</Title>
-          <SimpleHighlight>{`<SegmentedControl name="with-three-icons" items={thresContentsWithIcon} darkMode onChange={console.log} />`}</SimpleHighlight>
+          <SimpleHighlight>{`<SegmentedControl name="with-three-icons" items={threeContentsWithIcon} darkMode onChange={console.log} />`}</SimpleHighlight>
           <br />
           <SegmentedControl
             name="with-three-icons"
-            items={thresContentsWithIcon}
+            items={threeContentsWithIcon}
             onChange={console.log} /* eslint-disable-line */
             darkMode
           />
