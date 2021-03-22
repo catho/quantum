@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json';
 import SegmentedControl from './SegmentedControl';
 import {
   defaultContent,
-  FiveContentsWithIcon,
+  fiveContentsWithIcon,
   thresContentsWithIcon,
   nContents,
 } from './exampleContents';
@@ -13,7 +13,7 @@ describe('<SegmentedControl />', () => {
   it('should match the snapshots', () => {
     const SegmentedControls = [
       <SegmentedControl items={defaultContent} />,
-      <SegmentedControl items={FiveContentsWithIcon} />,
+      <SegmentedControl items={fiveContentsWithIcon} />,
       <SegmentedControl items={thresContentsWithIcon} />,
       <SegmentedControl items={thresContentsWithIcon} darkmode />,
     ];

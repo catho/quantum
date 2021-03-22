@@ -5,9 +5,9 @@ import {
   defaultContent,
   defaultContentWithoutCheckedItems,
   twoContents,
-  FiveContentsWithIcon,
+  fiveContentsWithIcon,
   fiveContentsWithFirstChecked,
-  FiveContentsWithIconAndWithoutCheckedItems,
+  fiveContentsWithIconAndWithoutCheckedItems,
   thresContentsWithIcon,
 } from '../../components/SegmentedControl/exampleContents';
 
@@ -19,7 +19,7 @@ storiesOf('Segmented control', module)
     <SegmentedControl items={twoContents} />
   ))
   .add('Segmented control[icon]: with 5 items ', () => (
-    <SegmentedControl items={FiveContentsWithIcon} />
+    <SegmentedControl items={fiveContentsWithIcon} />
   ))
   .add('Segmented control[icon]: with 5 items and first one checked ', () => (
     <SegmentedControl items={fiveContentsWithFirstChecked} />
@@ -31,13 +31,13 @@ storiesOf('Segmented control', module)
     <SegmentedControl items={defaultContentWithoutCheckedItems} />
   ))
   .add('Segmented control[icon]: with 5 items and no item checked ', () => (
-    <SegmentedControl items={FiveContentsWithIconAndWithoutCheckedItems} />
+    <SegmentedControl items={fiveContentsWithIconAndWithoutCheckedItems} />
   ))
   .add('Segmented control[Dark theme]: with 3 items', () => (
     <SegmentedControl items={defaultContent} darkMode />
   ))
   .add('Segmented control[Dark theme]: with 5 items ', () => (
-    <SegmentedControl items={FiveContentsWithIcon} darkMode />
+    <SegmentedControl items={fiveContentsWithIcon} darkMode />
   ))
   .add(
     'Segmented control[Dark theme]: with 5 items and first one checked ',
@@ -53,7 +53,7 @@ storiesOf('Segmented control', module)
     'Segmented control[Dark theme]: with 5 items and no item checked ',
     () => (
       <SegmentedControl
-        items={FiveContentsWithIconAndWithoutCheckedItems}
+        items={fiveContentsWithIconAndWithoutCheckedItems}
         darkMode
       />
     ),

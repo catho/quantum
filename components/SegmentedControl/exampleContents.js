@@ -87,7 +87,7 @@ const fiveContentsWithFirstChecked = [
   },
 ];
 
-const FiveContentsWithIcon = [
+const fiveContentsWithIcon = [
   {
     label: 'Profissional',
     value: 'profissional',
@@ -116,7 +116,7 @@ const FiveContentsWithIcon = [
   },
 ];
 
-const FiveContentsWithIconAndWithoutCheckedItems = [
+const fiveContentsWithIconAndWithoutCheckedItems = [
   {
     label: 'Profissional',
     value: 'profissional',
@@ -219,9 +219,9 @@ export {
   defaultContent,
   defaultContentWithoutCheckedItems,
   twoContents,
-  FiveContentsWithIcon,
+  fiveContentsWithIcon,
   fiveContentsWithFirstChecked,
-  FiveContentsWithIconAndWithoutCheckedItems,
+  fiveContentsWithIconAndWithoutCheckedItems,
   thresContentsWithIcon,
   nContents,
 };
