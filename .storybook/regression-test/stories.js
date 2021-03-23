@@ -33,4 +33,5 @@ export default [
   'Toggle',
   'Tooltip',
   'Stepper',
+  'SegmentedControl',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);

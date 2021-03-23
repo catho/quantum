@@ -31,6 +31,7 @@ import Socials from './Socials';
 import SocialButton from './SocialButton';
 import Avatar from './Avatar';
 import Stepper from './Stepper';
+import SegmentedControl from './SegmentedControl';
 import Carousel from './Carousel';
 
 export {
@@ -74,5 +75,6 @@ export {
   SocialButton,
   Avatar,
   Stepper,
+  SegmentedControl,
   Carousel,
 };
