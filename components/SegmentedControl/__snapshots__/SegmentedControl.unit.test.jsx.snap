@@ -2695,7 +2695,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
               <div
                 className="c2"
               >
-                <SegementedButtons
+                <SegmentedButtons
                   darkMode={false}
                   items={
                     Array [
@@ -4152,7 +4152,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                       </Button>
                     </LabelButton>
                   </SegmentedButton>
-                </SegementedButtons>
+                </SegmentedButtons>
               </div>
             </SegmentedControl__SegmentedWrapper>
           </div>
@@ -6871,7 +6871,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
               <div
                 className="c2"
               >
-                <SegementedButtons
+                <SegmentedButtons
                   darkMode={false}
                   items={
                     Array [
@@ -9677,7 +9677,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                       </Button>
                     </LabelButton>
                   </SegmentedButton>
-                </SegementedButtons>
+                </SegmentedButtons>
               </div>
             </SegmentedControl__SegmentedWrapper>
           </div>
@@ -12386,7 +12386,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
               <div
                 className="c2"
               >
-                <SegementedButtons
+                <SegmentedButtons
                   darkMode={false}
                   items={
                     Array [
@@ -14074,7 +14074,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                       </Button>
                     </LabelButton>
                   </SegmentedButton>
-                </SegementedButtons>
+                </SegmentedButtons>
               </div>
             </SegmentedControl__SegmentedWrapper>
           </div>
@@ -16784,7 +16784,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
               <div
                 className="c2"
               >
-                <SegementedButtons
+                <SegmentedButtons
                   darkMode={false}
                   items={
                     Array [
@@ -18472,7 +18472,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                       </Button>
                     </LabelButton>
                   </SegmentedButton>
-                </SegementedButtons>
+                </SegmentedButtons>
               </div>
             </SegmentedControl__SegmentedWrapper>
           </div>

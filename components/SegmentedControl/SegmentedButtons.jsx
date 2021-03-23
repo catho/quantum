@@ -4,7 +4,7 @@ import SegmentedButton from './SegmentedButton';
 
 const MAX_NUM_BUTTONS = 5;
 
-const SegementedButtons = ({ items, darkMode, name, onChange }) => {
+const SegmentedButtons = ({ items, darkMode, name, onChange }) => {
   const ButtonDefaultChecked = allItems => {
     const itemChecked = allItems.filter(item => item.checked);
     if (itemChecked.length > 0) return itemChecked[0].value;
@@ -39,7 +39,7 @@ const SegementedButtons = ({ items, darkMode, name, onChange }) => {
   );
 };
 
-SegementedButtons.propTypes = {
+SegmentedButtons.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string,
@@ -52,4 +52,4 @@ SegementedButtons.propTypes = {
   onChange: PropTypes.func.isRequired,
   darkMode: PropTypes.bool.isRequired,
 };
-export default SegementedButtons;
+export default SegmentedButtons;
