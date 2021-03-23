@@ -74,7 +74,7 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
           />
 
           <Title as="h3">segmented control (without checked item)</Title>
-          <SimpleHighlight>{`<SegmentedControl name="with-three-icons" items={defaultContentWithoutCheckedItems} darkMode onChange={console.log} />`}</SimpleHighlight>
+          <SimpleHighlight>{`<SegmentedControl name="with-three" items={defaultContentWithoutCheckedItems} darkMode onChange={console.log} />`}</SimpleHighlight>
           <br />
           <SegmentedControl
             name="with-three"
