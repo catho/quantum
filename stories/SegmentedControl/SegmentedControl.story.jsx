@@ -14,6 +14,7 @@ import Alert from '../../components/Alert';
 import {
   defaultContent,
   threeContentsWithIcon,
+  defaultContentWithoutCheckedItems,
 } from '../../components/SegmentedControl/exampleContents';
 import SegmentedControl from '../../components/SegmentedControl';
 
@@ -70,6 +71,15 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
             items={threeContentsWithIcon}
             onChange={console.log} /* eslint-disable-line */
             darkMode
+          />
+
+          <Title as="h3">segmented control (without checked item)</Title>
+          <SimpleHighlight>{`<SegmentedControl name="with-three" items={defaultContentWithoutCheckedItems} darkMode onChange={console.log} />`}</SimpleHighlight>
+          <br />
+          <SegmentedControl
+            name="with-three"
+            items={defaultContentWithoutCheckedItems}
+            onChange={console.log} /* eslint-disable-line */
           />
         </StoryContainer>
       </Tab>
