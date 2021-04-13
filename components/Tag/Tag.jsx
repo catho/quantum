@@ -127,7 +127,7 @@ const Tag = ({ children, text, onClose, ...rest }) => (
 
 Tag.propTypes = {
   bold: PropTypes.bool,
-  children: PropTypes.string,
+  children: PropTypes.node,
   inverted: PropTypes.bool,
   /** A callback that is called when close button is clicked */
   onClose: PropTypes.func,
