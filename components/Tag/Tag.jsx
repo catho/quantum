@@ -127,7 +127,10 @@ const Tag = ({ children, text, onClose, ...rest }) => (
 
 Tag.propTypes = {
   bold: PropTypes.bool,
-  children: PropTypes.node,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
   inverted: PropTypes.bool,
   /** A callback that is called when close button is clicked */
   onClose: PropTypes.func,

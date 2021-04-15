@@ -3,7 +3,7 @@ import React from 'react';
 export interface TagProps {
     bold?: boolean;
     inverted?: boolean;
-    children?: React.ReactNode;
+    children?: React.ReactNode[] | React.ReactNode;
     onClose?: React.MouseEventHandler<HTMLButtonElement>;
     size?: 'small' | 'medium' | 'large';
     skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
