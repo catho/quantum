@@ -24,7 +24,39 @@ storiesOf('Carousel', module).add('Carousel', () => (
       <Tab title="Usage">
         <StoryContainer>
           <Title as="h2">Importing Carousel</Title>
-          <SimpleHighlight>{`import { Carousel } from '@catho/quantum';`}</SimpleHighlight>
+          <SimpleHighlight>
+            import Carousel from &apos;@catho/quantum/Carousel&apos;
+          </SimpleHighlight>
+          <br />
+          <Alert icon="warning" skin="warning">
+            <strong>Important:</strong>
+            <p>
+              The Carousel component uses{' '}
+              <a
+                href="https://react-slick.neostack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                react-slick lib
+              </a>{' '}
+              as dependency, Because of that, is necessary to implement the code
+              of source url bellow. it should be implemented before the imports,
+              in unit tests, that will use Carousel component.
+            </p>
+            <p>
+              source:{' '}
+              <a
+                href="https://github.com/akiran/react-slick/issues/742#issuecomment-460281987"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Issue in react-slick
+              </a>
+            </p>
+            <p>
+              <strong>Without this code, the unit tests will break. </strong>
+            </p>
+          </Alert>
           <p>
             The Carousel component will render cards with thumbs and its
             informations or only thumbs. There are 3 types of cards for this
@@ -56,19 +88,6 @@ storiesOf('Carousel', module).add('Carousel', () => (
 
           <Title as="h3">Carousel with ellipsis for long texts</Title>
           <Carousel cards={contentWithLongTexts} />
-
-          <br />
-          <Alert icon="info" skin="neutral">
-            This component is based on the open source{' '}
-            <a
-              href="https://react-slick.neostack.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              react-slick lib
-            </a>
-            .
-          </Alert>
         </StoryContainer>
       </Tab>
       <Tab title="API">
