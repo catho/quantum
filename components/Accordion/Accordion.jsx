@@ -248,7 +248,7 @@ Accordion.defaultProps = {
 };
 
 Accordion.propTypes = {
-  /** Edit only for themification */
+  /** Theme natively passed by Quantum theme. Don't change this prop */
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
@@ -256,7 +256,12 @@ Accordion.propTypes = {
   }),
   /** Set true to keep only one item open and close the remainings on click */
   keepOnlyOneOpen: PropTypes.bool,
-  /** Items to render in accordion */
+  /**
+   * this prop receives an array of objects to render the content of component.
+   *
+   * Ps 1: The content item should receive HTML elements
+   *
+   * Ps 2: onClick item receives a callback function its will trigger when the respective item of Accordion is clicked */
   items: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-export default {
+const mock = {
   items: [
     {
       title: 'Institucional',
@@ -82,6 +82,66 @@ export default {
           fringilla non nisi. Proin in pharetra tellus.
         </p>
       ),
+      onClick: () => {
+        console.log('Educação event triggered');
+      },
     },
   ],
 };
+
+const mockCode = `
+  items: [
+    {
+      title: 'Institucional',
+      content: (
+        <ul>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contatos</a>
+          </li>
+          ...
+        </ul>
+      ),
+    },
+    {
+      title: 'Para candidato',
+      content: (
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <br />
+          Ut orci metus, auctor et viverra nec, consectetur vel diam.
+          ...
+        </p>
+      ),
+      opened: true,
+    },
+    {
+      title: 'Para Empresa',
+      content: (
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <br />
+          Ut orci metus, auctor et viverra nec, consectetur vel diam.
+          <br />
+          Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
+          ...
+        </p>
+      ),
+    },
+    {
+      title: 'Educação',
+      content: (
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <br />
+          Ut orci metus, auctor et viverra nec, consectetur vel diam.
+          ...
+        </p>
+      ),
+    },
+  ];
+`;
+
+export { mock as default, mockCode };
