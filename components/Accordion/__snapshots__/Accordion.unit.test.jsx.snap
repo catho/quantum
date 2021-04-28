@@ -85,8 +85,9 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   className="c0"
 >
   <li
-    className="Accordion__AccordionItem-xw8wcl-1"
+    className="accordion-item"
     color="#191919"
+    opened={false}
   >
     <button
       aria-controls="Institucional-0-content"
@@ -240,8 +241,9 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     </div>
   </li>
   <li
-    className="Accordion__AccordionItem-xw8wcl-1"
+    className="accordion-item"
     color="#191919"
+    opened={false}
   >
     <button
       aria-controls="Para-candidato-1-content"
@@ -371,8 +373,9 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     </div>
   </li>
   <li
-    className="Accordion__AccordionItem-xw8wcl-1"
+    className="accordion-item"
     color="#191919"
+    opened={false}
   >
     <button
       aria-controls="Para-Empresa-2-content"
@@ -502,8 +505,9 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     </div>
   </li>
   <li
-    className="Accordion__AccordionItem-xw8wcl-1"
+    className="accordion-item"
     color="#191919"
+    opened={false}
   >
     <button
       aria-controls="Educacao-3-content"

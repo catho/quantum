@@ -11,7 +11,7 @@ const closeMock = m => {
 };
 
 const getAccordionItemByPosition = (index, el) =>
-  el.find('AccordionItem').at(index);
+  el.find('.accordion-item').at(index);
 
 describe('Accordion component', () => {
   it('Should match the snapshot of a simple circular loader', () => {
@@ -21,7 +21,7 @@ describe('Accordion component', () => {
 
   it('Should open and close items and change area-hidden property', () => {
     const wrapper = shallow(<Accordion {...closeMock(mock)} />);
-    const getFirstItem = () => wrapper.find('AccordionItem').first();
+    const getFirstItem = () => wrapper.find('.accordion-item').first();
     const getFirstItemContentAriaHidden = () =>
       getFirstItem()
         .find('AccordionContent')
@@ -77,7 +77,7 @@ describe('Accordion component', () => {
     const onCloseMock = closeMock(mock);
     onCloseMock.items[0].onClick = onClickMock;
     const wrapper = shallow(<Accordion {...onCloseMock} />);
-    const getFirstItem = () => wrapper.find('AccordionItem').first();
+    const getFirstItem = () => wrapper.find('.accordion-item').first();
     getFirstItem()
       .find('AccordionHeader')
       .simulate('click');

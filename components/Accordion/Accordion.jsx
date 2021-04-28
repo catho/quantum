@@ -29,8 +29,6 @@ const Wrapper = styled.ul`
   list-style-type: none;
 `;
 
-const AccordionItem = styled.li``;
-
 const AccordionTitle = styled.span`
   ${({
     theme: {
@@ -130,7 +128,6 @@ const StyledIcon = styled(Icon)`
   line-height: inherit;
 `;
 
-AccordionItem.displayName = 'AccordionItem';
 AccordionHeader.displayName = 'AccordionHeader';
 AccordionContent.displayName = 'AccordionContent';
 
@@ -201,7 +198,7 @@ class Accordion extends React.Component {
     const headerId = `${itemId}-header`;
 
     return (
-      <AccordionItem key={title} opened={opened} color={color}>
+      <li className="accordion-item" key={title} opened={opened} color={color}>
         <AccordionHeader
           spacing={spacing}
           onClick={() => onItemClick(itemIndex)}
@@ -226,7 +223,7 @@ class Accordion extends React.Component {
             {content}
           </AccordionContent>
         )}
-      </AccordionItem>
+      </li>
     );
   }
 
