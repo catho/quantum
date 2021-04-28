@@ -7,10 +7,11 @@ import {
   Title,
   StoryContainer,
   AutoPropsApi,
+  TabbedView,
 } from '@catho/quantum-storybook-ui';
 import mockedProps, { mockCode } from '../../components/Accordion/mock';
 
-import { Container, Row, Col, TabbedView, Accordion } from '../../components';
+import { Container, Row, Col, Accordion } from '../../components';
 import accordionExamples from './examples';
 
 const description =
