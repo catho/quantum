@@ -76,7 +76,7 @@ const AccordionContent = styled.div`
     font-size: ${baseFontSize - 2}px;
     height: ${opened ? 'auto' : '0'};
     overflow: hidden;
-    padding: ${medium}px;
+    padding: ${xsmall}px ${medium}px ${medium}px ${medium}px;
     
 
     a {
