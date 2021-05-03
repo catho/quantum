@@ -53,7 +53,6 @@ const AccordionHeader = styled.button.attrs({ type: 'button' })`
     padding: ${medium}px 0;
   `}
   background: inherit;
-  border-radius: 4px;
   border: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -61,14 +60,10 @@ const AccordionHeader = styled.button.attrs({ type: 'button' })`
   justify-content: space-between;
   width: 100%;
 
-  ${shadow(1)}
-
   ${({ as }) => (as === 'button' ? `cursor: pointer;` : null)}
 `;
 
 const AccordionContent = styled.div`
-  ${shadow(1)}
-
   ${({
     theme: {
       spacing: { xsmall, medium },
@@ -77,12 +72,9 @@ const AccordionContent = styled.div`
     },
     opened,
   }) => `
-    border-left: 4px solid ${primary[700]};
-    border-radius: 4px;
     display: ${opened ? 'block' : 'none'}; 
     font-size: ${baseFontSize - 2}px;
     height: ${opened ? 'auto' : '0'};
-    margin: ${medium}px 0;
     overflow: hidden;
     padding: ${medium}px;
     
@@ -100,7 +92,7 @@ const AccordionContent = styled.div`
     ul {
       list-style-type: none;
       padding: 0;
-
+      
       & > li {
         padding: ${xsmall}px 0;
       }
@@ -126,6 +118,31 @@ const StyledIcon = styled(Icon)`
   `}
 
   line-height: inherit;
+`;
+
+const AccordionItem = styled.li`
+  ${({
+    theme: {
+      colors: { primary },
+      spacing: { medium },
+    },
+    opened,
+  }) => `
+  &:first-child {
+    border-radius: ${opened ? '4px' : '4px 4px 0px 0px'};
+  }
+
+  &:last-child {
+    border-radius: ${opened ? '4px' : '0px 0px 4px 4px'};
+    border-bottom: none;
+  }
+
+  border-left: ${opened ? `4px solid ${primary[700]}` : `inherit`};
+  border-radius: ${opened ? '4px' : 'inherit'};
+  margin: ${opened ? `${medium}px 0px` : 'inherit'};
+  `}
+
+  ${shadow(1)}
 `;
 
 AccordionHeader.displayName = 'AccordionHeader';
@@ -198,7 +215,13 @@ class Accordion extends React.Component {
     const headerId = `${itemId}-header`;
 
     return (
-      <li className="accordion-item" key={title} opened={opened} color={color}>
+      <AccordionItem
+        className="accordion-item"
+        key={title}
+        opened={opened}
+        color={color}
+        theme={theme}
+      >
         <AccordionHeader
           spacing={spacing}
           onClick={() => onItemClick(itemIndex)}
@@ -223,7 +246,7 @@ class Accordion extends React.Component {
             {content}
           </AccordionContent>
         )}
-      </li>
+      </AccordionItem>
     );
   }
 

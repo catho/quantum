@@ -9,7 +9,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   list-style-type: none;
 }
 
-.c2 {
+.c3 {
   color: #424242;
   font-size: 16px;
   margin-left: 16px;
@@ -17,12 +17,11 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   line-height: inherit;
 }
 
-.c1 {
+.c2 {
   height: 24px;
   line-height: 24px;
   padding: 16px 0;
   background: inherit;
-  border-radius: 4px;
   border: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -35,63 +34,73 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
 }
 
-.c4 {
-  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
-  border-left: 4px solid #1250C4;
-  border-radius: 4px;
+.c5 {
   display: none;
   font-size: 14px;
   height: 0;
-  margin: 16px 0;
   overflow: hidden;
   padding: 16px;
 }
 
-.c4 a {
+.c5 a {
   color: #1250C4;
   font-size: 14px;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c4 a:hover {
+.c5 a:hover {
   color: #DE0059;
 }
 
-.c4 ul {
+.c5 ul {
   list-style-type: none;
   padding: 0;
 }
 
-.c4 ul > li {
+.c5 ul > li {
   padding: 8px 0;
 }
 
-.c4 p {
+.c5 p {
   margin: 0;
 }
 
-.c3 {
+.c4 {
   font-size: 24px;
   margin-right: 24px;
   color: #1250C4;
   line-height: inherit;
 }
 
+.c1 {
+  border-left: inherit;
+  border-radius: inherit;
+  margin: inherit;
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
+}
+
+.c1:first-child {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.c1:last-child {
+  border-radius: 0px 0px 4px 4px;
+  border-bottom: none;
+}
+
 <ul
   className="c0"
 >
   <li
-    className="accordion-item"
+    className="c1 accordion-item"
     color="#191919"
-    opened={false}
   >
     <button
       aria-controls="Institucional-0-content"
-      className="c1"
+      className="c2"
       id="Institucional-0-header"
       onClick={[Function]}
       spacing={
@@ -110,13 +119,13 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       type="button"
     >
       <span
-        className="c2"
+        className="c3"
       >
         Institucional
       </span>
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root c3"
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
         style={
@@ -198,7 +207,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Institucional-0-header"
-      className="c4"
+      className="c5"
       id="Institucional-0-content"
     >
       <ul>
@@ -241,13 +250,12 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     </div>
   </li>
   <li
-    className="accordion-item"
+    className="c1 accordion-item"
     color="#191919"
-    opened={false}
   >
     <button
       aria-controls="Para-candidato-1-content"
-      className="c1"
+      className="c2"
       id="Para-candidato-1-header"
       onClick={[Function]}
       spacing={
@@ -266,13 +274,13 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       type="button"
     >
       <span
-        className="c2"
+        className="c3"
       >
         Para candidato
       </span>
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root c3"
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
         style={
@@ -354,7 +362,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Para-candidato-1-header"
-      className="c4"
+      className="c5"
       id="Para-candidato-1-content"
     >
       <p>
@@ -373,13 +381,12 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     </div>
   </li>
   <li
-    className="accordion-item"
+    className="c1 accordion-item"
     color="#191919"
-    opened={false}
   >
     <button
       aria-controls="Para-Empresa-2-content"
-      className="c1"
+      className="c2"
       id="Para-Empresa-2-header"
       onClick={[Function]}
       spacing={
@@ -398,13 +405,13 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       type="button"
     >
       <span
-        className="c2"
+        className="c3"
       >
         Para Empresa
       </span>
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root c3"
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
         style={
@@ -486,7 +493,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Para-Empresa-2-header"
-      className="c4"
+      className="c5"
       id="Para-Empresa-2-content"
     >
       <p>
@@ -505,13 +512,12 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     </div>
   </li>
   <li
-    className="accordion-item"
+    className="c1 accordion-item"
     color="#191919"
-    opened={false}
   >
     <button
       aria-controls="Educacao-3-content"
-      className="c1"
+      className="c2"
       id="Educacao-3-header"
       onClick={[Function]}
       spacing={
@@ -530,13 +536,13 @@ exports[`Accordion component Should match the snapshot of a simple circular load
       type="button"
     >
       <span
-        className="c2"
+        className="c3"
       >
         Educação
       </span>
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root c3"
+        className="MuiSvgIcon-root c4"
         data-qtm-preloader="icon"
         focusable="false"
         style={
@@ -618,7 +624,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
     <div
       aria-hidden={true}
       aria-labelledby="Educacao-3-header"
-      className="c4"
+      className="c5"
       id="Educacao-3-content"
     >
       <p>
