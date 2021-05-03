@@ -41,7 +41,7 @@ exports[`Accordion component Should match the snapshot of a simple circular load
   font-size: 14px;
   height: 0;
   overflow: hidden;
-  padding: 16px;
+  padding: 8px 16px 16px 16px;
 }
 
 .c5 a {
