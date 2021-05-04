@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Accordion component Should match the snapshot of a simple circular loader 1`] = `
+exports[`Accordion component Should match the snapshot 1`] = `
 .c0 {
   color: #191919;
   font-size: 16px;

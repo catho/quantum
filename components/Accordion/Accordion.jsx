@@ -36,10 +36,11 @@ const AccordionTitle = styled.span`
       spacing: { medium },
       colors: { neutral },
     },
+    opened,
   }) => `
     color: ${neutral[700]};
     font-size: ${baseFontSize}px;
-    margin-left: ${medium}px;
+    margin-left: ${opened ? medium - 4 : medium}px;
   `}
 
   font-weight: bold;
@@ -229,7 +230,9 @@ class Accordion extends React.Component {
           id={headerId}
           theme={theme}
         >
-          <AccordionTitle theme={theme}>{title}</AccordionTitle>
+          <AccordionTitle opened={opened} theme={theme}>
+            {title}
+          </AccordionTitle>
           <StyledIcon
             theme={theme}
             name={opened ? 'expand_less' : 'expand_more'}
