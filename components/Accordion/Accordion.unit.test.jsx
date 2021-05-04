@@ -14,7 +14,7 @@ const getAccordionItemByPosition = (index, el) =>
   el.find('.accordion-item').at(index);
 
 describe('Accordion component', () => {
-  it('Should match the snapshot of a simple circular loader', () => {
+  it('Should match the snapshot', () => {
     const simpleAccordion = <Accordion {...closeMock(mock)} />;
     expect(renderer.create(simpleAccordion).toJSON()).toMatchSnapshot();
   });
