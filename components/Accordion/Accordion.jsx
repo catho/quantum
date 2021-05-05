@@ -33,14 +33,11 @@ const AccordionTitle = styled.span`
   ${({
     theme: {
       baseFontSize,
-      spacing: { medium },
       colors: { neutral },
     },
-    opened,
   }) => `
     color: ${neutral[700]};
     font-size: ${baseFontSize}px;
-    margin-left: ${opened ? medium - 4 : medium}px;
   `}
 
   font-weight: bold;
@@ -67,17 +64,17 @@ const AccordionHeader = styled.button.attrs({ type: 'button' })`
 const AccordionContent = styled.div`
   ${({
     theme: {
-      spacing: { xsmall, medium },
+      spacing: { xsmall, large },
       baseFontSize,
       colors: { primary, secondary },
     },
     opened,
   }) => `
-    display: ${opened ? 'block' : 'none'}; 
     font-size: ${baseFontSize - 2}px;
-    height: ${opened ? 'auto' : '0'};
+    max-height: ${opened ? '2000px' : '0'};
     overflow: hidden;
-    padding: ${xsmall}px ${medium}px ${medium}px ${medium}px;
+    ${opened ? `padding: ${xsmall}px 0 ${large}px 0` : 'padding: 0px'};
+    transition: max-height 0.2s ease;
     
 
     a {
@@ -122,10 +119,11 @@ const StyledIcon = styled(Icon)`
 `;
 
 const AccordionItem = styled.li`
+  transition: border 0.2s ease;
   ${({
     theme: {
       colors: { primary },
-      spacing: { medium },
+      spacing: { medium, small },
     },
     opened,
   }) => `
@@ -137,8 +135,10 @@ const AccordionItem = styled.li`
     border-radius: ${opened ? '4px' : '0px 0px 4px 4px'};
     border-bottom: none;
   }
-
-  border-left: ${opened ? `4px solid ${primary[700]}` : `inherit`};
+  padding-left: ${small}px;
+  border-left: ${
+    opened ? `4px solid ${primary[700]}` : `4px solid transparent`
+  };
   border-radius: ${opened ? '4px' : 'inherit'};
   margin: ${opened ? `${medium}px 0px` : 'inherit'};
   `}
