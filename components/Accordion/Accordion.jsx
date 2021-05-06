@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import slugify from 'slugify';
 
 import {
@@ -64,7 +64,7 @@ const AccordionHeader = styled.button.attrs({ type: 'button' })`
 const AccordionContent = styled.div`
   ${({
     theme: {
-      spacing: { xsmall, large },
+      spacing: { xsmall },
       baseFontSize,
       colors: { primary, secondary },
     },
@@ -73,10 +73,9 @@ const AccordionContent = styled.div`
     font-size: ${baseFontSize - 2}px;
     max-height: ${opened ? '2000px' : '0'};
     overflow: hidden;
-    ${opened ? `padding: ${xsmall}px 0 ${large}px 0` : 'padding: 0px'};
+    padding: 0px;
     transition: max-height 0.2s ease;
     
-
     a {
       color: ${primary[700]};
       font-size: ${baseFontSize - 2}px;
@@ -100,6 +99,17 @@ const AccordionContent = styled.div`
       margin: 0;
     }
   `}
+
+  ${({
+    opened,
+    theme: {
+      spacing: { xsmall, large },
+    },
+  }) =>
+    opened &&
+    css`
+      padding: ${xsmall}px 0 ${large}px 0;
+    `}
 `;
 
 const StyledIcon = styled(Icon)`
@@ -122,26 +132,45 @@ const AccordionItem = styled.li`
   transition: border 0.2s ease;
   ${({
     theme: {
+      spacing: { small },
+    },
+  }) => `
+    &:first-child {
+      border-radius: 4px 4px 0px 0px;
+    }
+
+    &:last-child {
+      border-radius: 0px 0px 4px 4px;
+      border-bottom: none;
+    }
+    padding-left: ${small}px;
+    border-left: 4px solid transparent;
+    border-radius: inherit;
+    margin: inherit;
+  `}
+
+  ${({
+    theme: {
       colors: { primary },
-      spacing: { medium, small },
+      spacing: { medium },
     },
     opened,
-  }) => `
-  &:first-child {
-    border-radius: ${opened ? '4px' : '4px 4px 0px 0px'};
-  }
+  }) =>
+    opened &&
+    css`
+      border-radius: 4px;
 
-  &:last-child {
-    border-radius: ${opened ? '4px' : '0px 0px 4px 4px'};
-    border-bottom: none;
-  }
-  padding-left: ${small}px;
-  border-left: ${
-    opened ? `4px solid ${primary[700]}` : `4px solid transparent`
-  };
-  border-radius: ${opened ? '4px' : 'inherit'};
-  margin: ${opened ? `${medium}px 0px` : 'inherit'};
-  `}
+      &:first-child {
+        border-radius: 4px;
+      }
+
+      &:last-child {
+        border-radius: 4px;
+      }
+
+      border-left: 4px solid ${primary[700]};
+      margin: ${medium}px 0px;
+    `}
 
   ${shadow(1)}
 `;
