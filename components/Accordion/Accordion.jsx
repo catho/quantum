@@ -74,7 +74,8 @@ const AccordionContent = styled.div`
     max-height: ${opened ? '2000px' : '0'};
     overflow: hidden;
     padding: 0px;
-    transition: max-height 0.2s ease;
+    transition: max-height 0.2s ease-in-out;
+    will-change: transform;
     
     a {
       color: ${primary[700]};
@@ -129,7 +130,7 @@ const StyledIcon = styled(Icon)`
 `;
 
 const AccordionItem = styled.li`
-  transition: border 0.2s ease;
+  transition: border 0.2s ease-in-out;
   ${({
     theme: {
       spacing: { small },
