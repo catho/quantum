@@ -10,6 +10,7 @@ export interface DropdownProps {
   ignoreSpecialChars?: boolean;
   error?: string;
   id?: string;
+  name?: string;
   label?: string;
   placeholder?: string;
   selectedItem?: ItemPropType;
