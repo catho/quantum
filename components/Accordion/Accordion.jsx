@@ -68,13 +68,12 @@ const AccordionContent = styled.div`
       baseFontSize,
       colors: { primary, secondary },
     },
-    opened,
   }) => `
     font-size: ${baseFontSize - 2}px;
-    max-height: ${opened ? '2000px' : '0'};
+    max-height: 0;
     overflow: hidden;
     padding: 0px;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.2s linear;
     will-change: transform;
     
     a {
@@ -110,6 +109,7 @@ const AccordionContent = styled.div`
     opened &&
     css`
       padding: ${xsmall}px 0 ${large}px 0;
+      max-height: 2000px;
     `}
 `;
 
@@ -130,7 +130,7 @@ const StyledIcon = styled(Icon)`
 `;
 
 const AccordionItem = styled.li`
-  transition: border 0.2s ease-in-out;
+  transition: border 0.2s linear, margin 0.2s linear;
   ${({
     theme: {
       spacing: { small },
