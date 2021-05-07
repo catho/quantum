@@ -40,8 +40,8 @@ exports[`Accordion component Should match the snapshot 1`] = `
   max-height: 0;
   overflow: hidden;
   padding: 0px;
-  -webkit-transition: max-height 0.2s ease-in-out;
-  transition: max-height 0.2s ease-in-out;
+  -webkit-transition: max-height 0.2s linear;
+  transition: max-height 0.2s linear;
   will-change: transform;
 }
 
@@ -77,8 +77,8 @@ exports[`Accordion component Should match the snapshot 1`] = `
 }
 
 .c1 {
-  -webkit-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+  -webkit-transition: border 0.2s linear,margin 0.2s linear;
+  transition: border 0.2s linear,margin 0.2s linear;
   padding-left: 12px;
   border-left: 4px solid transparent;
   border-radius: inherit;
