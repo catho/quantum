@@ -129,11 +129,11 @@ const StyledIcon = styled(Icon)`
 
 const AccordionItem = styled.li`
   transition: border 0.2s linear, margin 0.2s linear;
-  background-color: #FFF;
   overflow: hidden;
   ${({
     theme: {
       spacing: { small },
+      colors: { neutral },
     },
   }) => `
     &:first-child {
@@ -144,6 +144,7 @@ const AccordionItem = styled.li`
       border-radius: 0px 0px 4px 4px;
       border-bottom: none;
     }
+    background-color: ${neutral[0]};
     padding-left: ${small}px;
     border-left: 4px solid transparent;
     border-radius: inherit;

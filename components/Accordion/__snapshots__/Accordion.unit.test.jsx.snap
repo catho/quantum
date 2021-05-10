@@ -78,8 +78,8 @@ exports[`Accordion component Should match the snapshot 1`] = `
 .c1 {
   -webkit-transition: border 0.2s linear,margin 0.2s linear;
   transition: border 0.2s linear,margin 0.2s linear;
-  background-color: #FFF;
   overflow: hidden;
+  background-color: #ffffff;
   padding-left: 12px;
   border-left: 4px solid transparent;
   border-radius: inherit;
