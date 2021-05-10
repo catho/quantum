@@ -14,7 +14,6 @@ import Icon from '../Icon';
 const Wrapper = styled.ul`
   ${({
     theme: {
-      spacing: { medium },
       baseFontSize,
       colors: {
         neutral: { 900: color },
@@ -23,9 +22,8 @@ const Wrapper = styled.ul`
   }) => `
     color: ${color};
     font-size: ${baseFontSize}px;
-    padding: 0 ${medium}px;
   `}
-  background-color: inherit;
+  padding: 0px;
   list-style-type: none;
 `;
 
@@ -131,6 +129,8 @@ const StyledIcon = styled(Icon)`
 
 const AccordionItem = styled.li`
   transition: border 0.2s linear, margin 0.2s linear;
+  background-color: #FFF;
+  overflow: hidden;
   ${({
     theme: {
       spacing: { small },
@@ -147,7 +147,7 @@ const AccordionItem = styled.li`
     padding-left: ${small}px;
     border-left: 4px solid transparent;
     border-radius: inherit;
-    margin: inherit;
+    margin: 1px 0;
   `}
 
   ${({
