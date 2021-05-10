@@ -4,8 +4,7 @@ exports[`Accordion component Should match the snapshot 1`] = `
 .c0 {
   color: #191919;
   font-size: 16px;
-  padding: 0 16px;
-  background-color: inherit;
+  padding: 0px;
   list-style-type: none;
 }
 
@@ -79,10 +78,12 @@ exports[`Accordion component Should match the snapshot 1`] = `
 .c1 {
   -webkit-transition: border 0.2s linear,margin 0.2s linear;
   transition: border 0.2s linear,margin 0.2s linear;
+  background-color: #FFF;
+  overflow: hidden;
   padding-left: 12px;
   border-left: 4px solid transparent;
   border-radius: inherit;
-  margin: inherit;
+  margin: 1px 0;
   box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
 }
 
