@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FormHTMLAttributes } from 'react';
 
-export interface FormProps {
+export interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
     children: React.ReactNode[] | React.ReactNode;
     onSubmit?: ({ valid }?: { valid: boolean }) => void;
     onValidSubmit?: (values?: { [name: string]: string | undefined }) => void;
