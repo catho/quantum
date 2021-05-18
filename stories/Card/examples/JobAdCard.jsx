@@ -14,7 +14,11 @@ const JobAdCard = () => (
             <Tag skin="primary" text="R$ 1.200" />
           </Card.Description>
         </Card.HeaderText>
-        <Card.Thumbnail rounded src="#" alt="" />
+        <Card.Thumbnail
+          rounded
+          src="https://assets.catho.com.br/quantum/card/thumb-72x72.png"
+          alt="Avatar"
+        />
       </Card.Header>
       <Card.Content>
         Irá atuar com Atendimento e recepção de clientes para reuniões e eventos
