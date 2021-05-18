@@ -90,32 +90,6 @@ const ArrowUp = styled(Icon).attrs({
   `}
 `;
 
-const InputArrowDown = styled(ArrowDown)`
-  position: absolute;
-
-  ${({
-    theme: {
-      spacing: { small, medium },
-    },
-  }) => `
-    top: ${small}px;
-    right: ${medium * 0.875}px;
-  `}
-`;
-
-const InputArrowUp = styled(ArrowUp)`
-  position: absolute;
-
-  ${({
-    theme: {
-      spacing: { small, medium },
-    },
-  }) => `
-    top: ${small}px;
-    right: ${medium * 0.875}px;
-  `}
-`;
-
 const DropList = styled.ul`
   border-radius: 4px;
   box-sizing: border-box;
@@ -401,11 +375,6 @@ const Dropdown = ({
                       autocomplete={autocomplete}
                       {...rest}
                     />
-                    {isOpen ? (
-                      <InputArrowUp theme={theme} />
-                    ) : (
-                      <InputArrowDown theme={theme} />
-                    )}
                   </DropContainer>
 
                   {filteredInput.length > 0 && (
