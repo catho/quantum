@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import {
   Simple,
+  AutoComplete,
   RequiredMark,
   WithError,
   Disabled,
@@ -11,6 +12,7 @@ import {
 
 storiesOf('Dropdown', module)
   .add('default', () => <Simple />)
+  .add('autocomplete', () => <AutoComplete />)
   .add('required', () => <RequiredMark />)
   .add('error', () => <WithError />)
   .add('disabled', () => <Disabled />)
