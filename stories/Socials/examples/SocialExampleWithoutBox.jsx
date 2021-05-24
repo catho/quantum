@@ -46,7 +46,7 @@ const socialList = [
 ];
 
 const SocialExampleWithoutBox = () => (
-  <Socials items={socialList} />
+  <Socials items={socialList} withBox={false} />
 )
 `;
 
