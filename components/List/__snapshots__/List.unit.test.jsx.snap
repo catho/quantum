@@ -28,7 +28,7 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 16px;
+  padding: 4px;
 }
 
 .c0 {
@@ -49,7 +49,6 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
   position: absolute;
   right: 100%;
   margin-top: 8px;
-  margin-right: 8px;
 }
 
 <List
@@ -114,6 +113,17 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
           "700": "#f09100",
           "900": "#d14900",
         },
+      },
+      "spacing": Object {
+        "large": 24,
+        "medium": 16,
+        "small": 12,
+        "xlarge": 32,
+        "xsmall": 8,
+        "xxlarge": 40,
+        "xxsmall": 4,
+        "xxxlarge": 48,
+        "xxxsmall": 2,
       },
     }
   }
@@ -180,6 +190,17 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
             "700": "#f09100",
             "900": "#d14900",
           },
+        },
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
         },
       }
     }
@@ -481,6 +502,17 @@ exports[`<List /> Should match the default snapshot 1`] = `
           "900": "#d14900",
         },
       },
+      "spacing": Object {
+        "large": 24,
+        "medium": 16,
+        "small": 12,
+        "xlarge": 32,
+        "xsmall": 8,
+        "xxlarge": 40,
+        "xxsmall": 4,
+        "xxxlarge": 48,
+        "xxxsmall": 2,
+      },
     }
   }
 >
@@ -538,6 +570,17 @@ exports[`<List /> Should match the default snapshot 1`] = `
             "900": "#d14900",
           },
         },
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        },
       }
     }
   >
@@ -576,7 +619,7 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 16px;
+  padding: 4px;
 }
 
 .c0 {
@@ -656,6 +699,17 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
           "900": "#d14900",
         },
       },
+      "spacing": Object {
+        "large": 24,
+        "medium": 16,
+        "small": 12,
+        "xlarge": 32,
+        "xsmall": 8,
+        "xxlarge": 40,
+        "xxsmall": 4,
+        "xxxlarge": 48,
+        "xxxsmall": 2,
+      },
     }
   }
 >
@@ -721,6 +775,17 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
             "700": "#f09100",
             "900": "#d14900",
           },
+        },
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
         },
       }
     }

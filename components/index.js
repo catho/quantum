@@ -32,6 +32,7 @@ import SocialButton from './SocialButton';
 import Avatar from './Avatar';
 import Stepper from './Stepper';
 import SegmentedControl from './SegmentedControl';
+import List from './List';
 
 export {
   Accordion,
@@ -75,4 +76,5 @@ export {
   Avatar,
   Stepper,
   SegmentedControl,
+  List,
 };

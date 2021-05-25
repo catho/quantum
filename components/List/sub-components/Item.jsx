@@ -27,7 +27,7 @@ const ListItem = styled.div`
   flex-direction: row;
   align-items: center;
 
-  padding: 10px 16px;
+  padding: 4px;
 
   ${bulletValue};
 `;
@@ -58,7 +58,7 @@ class Item extends React.Component {
       <li {...rest}>
         <ListItem bullet={bullet}>
           {icon && this._renderIcon(icon)}
-          {children || <Content content={content} />}
+          {children || <Content content={content} {...rest} />}
         </ListItem>
       </li>
     );

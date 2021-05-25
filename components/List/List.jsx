@@ -5,7 +5,7 @@ import Item from './sub-components/Item';
 import Content from './sub-components/Content';
 import Header from './sub-components/Header';
 import SubHeader from './sub-components/SubHeader';
-import { colors } from '../shared/theme';
+import { colors, spacing } from '../shared/theme';
 
 const bullets = ({ bullet }) =>
   bullet
@@ -17,9 +17,15 @@ const bullets = ({ bullet }) =>
           content: '${bullet}';
           position: absolute;
           top: 12%;
-          right: 102%;
+          right: 100%;
         }
-        padding-left: 26px;
+        ${({
+          theme: {
+            spacing: { large },
+          },
+        }) => `
+          padding-left: ${large}px;
+        `}
       `
     : 'padding-left: 0;';
 
@@ -54,7 +60,9 @@ const Unordered = styled.ul`
   margin: 0;
 
   ${inlineList}
+  
   ${bullets}
+  
   ${dividedList}
 `;
 
@@ -68,19 +76,22 @@ const Ordered = styled.ol`
   counter-reset: count;
 
   li {
-    margin-left: 24px;
-    position: relative;
+    ${({
+      theme: {
+        spacing: { xsmall, large },
+      },
+    }) => css`
+      margin-left: ${large}px;
+      position: relative;
 
-    &:before {
-      content: counter(count) '.';
-      counter-increment: count;
-      position: absolute;
-
-      right: 100%;
-
-      margin-top: 8px;
-      margin-right: 8px;
-    }
+      &:before {
+        content: counter(count) '.';
+        counter-increment: count;
+        position: absolute;
+        right: 100%;
+        margin-top: ${xsmall}px;
+      }
+    `};
   }
 
   ${inlineList} ${dividedList};
@@ -144,6 +155,7 @@ List.defaultProps = {
   children: null,
   theme: {
     colors,
+    spacing,
   },
 };
 
@@ -173,6 +185,7 @@ List.propTypes = {
   ]),
   theme: PropTypes.shape({
     colors: PropTypes.object,
+    spacing: PropTypes.object,
   }),
 };
 

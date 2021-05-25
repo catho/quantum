@@ -14,6 +14,7 @@ export default [
   'Theme',
   'Icon',
   'Breakpoints',
+  'List',
 
   // Alert
   'Alert',
