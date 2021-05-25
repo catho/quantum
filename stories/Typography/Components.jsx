@@ -1,14 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import LinkTo from '@storybook/addon-links/react';
 
-import { Title, StoryContainer, Table } from '@catho/quantum-storybook-ui';
+import {
+  Title,
+  StoryContainer,
+  Table,
+  SimpleHighlight,
+} from '@catho/quantum-storybook-ui';
 
 import {
   Title as QuantumTitle,
   Subtitle,
   Blockquote,
 } from '../../components/GlobalStyle';
+
+import List from '../../components/List';
+import {
+  exampleItemsDefault,
+  exampleItemsWithHeaderAndSubHeader,
+} from '../List/objectReference';
 
 const Small = styled.small`
   font-size: 10px;
@@ -157,43 +167,58 @@ const Components = () => (
     <Table>
       <tbody>
         <tr>
+          <td colSpan="3">
+            <SimpleHighlight>{`import { List } from '@catho/quantum';`}</SimpleHighlight>
+            <br />
+
+            <SimpleHighlight>{exampleItemsDefault.code}</SimpleHighlight>
+          </td>
+        </tr>
+        <tr>
           <td>
             ul {'>'} li <Small>16px</Small>
           </td>
+          <td>{'<List items={exampleItemsDefault} bullet="&bull;" />'}</td>
           <td>
-            <LinkTo kind="10. List" story="List">
-              {'<List />'}
-            </LinkTo>
-          </td>
-          <td>
-            <ul>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>
-                Sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua
-              </li>
-              <li>Consectetur adipiscing elit</li>
-            </ul>
+            <List items={exampleItemsDefault} bullet="&bull;" />
           </td>
         </tr>
         <tr>
           <td>
             ol {'>'} li <Small>16px</Small>
           </td>
+          <td>{'<List items={exampleItemsDefault} ordered />`'}</td>
           <td>
-            <LinkTo kind="10. List" story="List">
-              {'<List />'}
-            </LinkTo>
+            <List items={exampleItemsDefault} ordered />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            ol {'>'} li <Small>16px</Small>
+          </td>
+          <td>{'<List items={exampleItemsDefault} ordered divided/>`'}</td>
+          <td>
+            <List items={exampleItemsDefault} ordered divided />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="3">
+            <SimpleHighlight>
+              {exampleItemsWithHeaderAndSubHeader.code}
+            </SimpleHighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            ul {'>'} li <Small>16px</Small>
           </td>
           <td>
-            <ol>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>
-                Sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua
-              </li>
-              <li>Consectetur adipiscing elit</li>
-            </ol>
+            {
+              '<List items={exampleItemsWithHeaderAndSubHeader} bullet="&bull;" />`'
+            }
+          </td>
+          <td>
+            <List items={exampleItemsWithHeaderAndSubHeader} bullet="&bull;" />
           </td>
         </tr>
       </tbody>
