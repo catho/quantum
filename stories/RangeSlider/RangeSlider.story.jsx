@@ -17,7 +17,7 @@ import List from '../../components/List';
 import * as Samples from './examples';
 
 const importSlider = `
-  import { Slider } from '@catho/quantum';
+  import { RangeSlider } from '@catho/quantum';
 
   const marks = [
     {
@@ -56,17 +56,17 @@ const ColSample = styled(Col)`
 
 storiesOf('Forms', module).add('RangeSlider', () => (
   <>
-    <Heading name="Slider">
-      Slider is a component to select a value from a predefined range. Through
-      component props it&apos;s possible to set the minimum and maximum values
-      to be selected, format tooltip and label texts or disable the component
-      itself.
+    <Heading name="RangeSlider">
+      RangeSlider is a component to select a value from a predefined range.
+      Through component props it&apos;s possible to set the minimum and maximum
+      values to be selected, format tooltip and label texts or disable the
+      component itself.
     </Heading>
 
     <TabbedView>
       <Tab title="Usage">
         <StoryContainer>
-          <Title as="h2">Importing Slider</Title>
+          <Title as="h2">Importing RangeSlider</Title>
           <SimpleHighlight>{importSlider}</SimpleHighlight>
 
           <Row>
@@ -88,33 +88,36 @@ storiesOf('Forms', module).add('RangeSlider', () => (
               </List>
             </Col>
           </Row>
-          <Title as="h2">Slider usage</Title>
+          <Title as="h2">RangeSlider usage</Title>
           <p>Just set value prop with a Number value.</p>
           <Row>
             <Col xsmall={2} small={4} medium={6}>
-              <CodeExample code={Samples.Slider.code} showTitle={false} />
+              <CodeExample
+                code={Samples.BasicRangeSlider.code}
+                showTitle={false}
+              />
               <p>With marks</p>
               <CodeExample
-                code={Samples.Slider.codeWithMarks}
+                code={Samples.BasicRangeSlider.codeWithMarks}
                 showTitle={false}
               />
             </Col>
             <ColSample xsmall={2} small={4} medium={6}>
-              <Samples.Slider />
+              <Samples.BasicRangeSlider />
               <p>With marks</p>
-              <Samples.Slider marks={marks} />
+              <Samples.BasicRangeSlider marks={marks} />
             </ColSample>
           </Row>
           <Title as="h2">Disable</Title>
           <Row>
             <Col xsmall={2} small={4} medium={6}>
               <CodeExample
-                code={Samples.BasicDisabledSlider.code}
+                code={Samples.BasicDisabledRangeSlider.code}
                 showTitle={false}
               />
             </Col>
             <ColSample xsmall={2} small={4} medium={6}>
-              <Samples.BasicDisabledSlider />
+              <Samples.BasicDisabledRangeSlider />
             </ColSample>
           </Row>
           <Title as="h2">Min & Max props</Title>
@@ -156,13 +159,13 @@ storiesOf('Forms', module).add('RangeSlider', () => (
               <CodeExample code={Samples.TipFormatter.code} showTitle={false} />
             </Col>
             <ColSample xsmall={2} small={4} medium={6}>
-              <Samples.TipFormatter />.
+              <Samples.TipFormatter />
             </ColSample>
           </Row>
 
-          <Title as="h2">Controlled Slider</Title>
+          <Title as="h2">Controlled RangeSlider</Title>
           <p>
-            it&apos;s needed an{' '}
+            it&apos;s needed an
             <a
               href="https://reactjs.org/docs/forms.html#controlled-components"
               rel="noopener noreferrer"
@@ -170,19 +173,19 @@ storiesOf('Forms', module).add('RangeSlider', () => (
               title="controlled component"
             >
               controlled component
-            </a>{' '}
+            </a>
             to change the {'<RangeSlider />'} value.
           </p>
           <p>The same is applied when is passed an object to value prop.</p>
           <Row>
             <Col xsmall={2} small={4} medium={6}>
               <CodeExample
-                code={Samples.ControlledSlider.code}
+                code={Samples.ControlledRangeSlider.code}
                 showTitle={false}
               />
             </Col>
             <ColSample xsmall={2} small={4} medium={6}>
-              <Samples.ControlledSlider />.
+              <Samples.ControlledRangeSlider />
             </ColSample>
           </Row>
         </StoryContainer>

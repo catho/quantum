@@ -4,11 +4,11 @@ import { Row, Col } from '../../components';
 import rangeSliderUtils from '../../components/RangeSlider/utils';
 
 import {
-  Slider,
+  BasicRangeSlider,
   TipFormatter,
   Range,
   MinMax,
-  BasicDisabledSlider,
+  BasicDisabledRangeSlider,
 } from './examples';
 
 const sliderProps = {
@@ -18,10 +18,12 @@ const sliderProps = {
 const { mountMarksByArray } = rangeSliderUtils;
 
 const components = [
-  { name: 'default', el: <Slider {...sliderProps} /> },
+  { name: 'default', el: <BasicRangeSlider {...sliderProps} /> },
   {
     name: 'with marks',
-    el: <Slider marks={mountMarksByArray([0, 100])} {...sliderProps} />,
+    el: (
+      <BasicRangeSlider marks={mountMarksByArray([0, 100])} {...sliderProps} />
+    ),
   },
   { name: 'TipFormatter', el: <TipFormatter {...sliderProps} /> },
   {
@@ -34,8 +36,14 @@ const components = [
     ),
   },
   { name: 'Range', el: <Range {...sliderProps} /> },
-  { name: 'MinMax', el: <MinMax {...sliderProps} /> },
-  { name: 'BasicDisabledSlider', el: <BasicDisabledSlider {...sliderProps} /> },
+  {
+    name: 'MinMax',
+    el: <MinMax min={30} max={50} value={40} {...sliderProps} />,
+  },
+  {
+    name: 'BasicDisabledSlider',
+    el: <BasicDisabledRangeSlider {...sliderProps} />,
+  },
 ];
 
 const renderComponents = component => (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RangeSlider from '../../../components/RangeSlider';
 
-class ControlledSlider extends Component {
+class ControlledRangeSlider extends Component {
   constructor(props) {
     super(props);
 
@@ -27,11 +27,11 @@ class ControlledSlider extends Component {
   }
 }
 
-ControlledSlider.code = `
+ControlledRangeSlider.code = `
 import React, { Component } from 'react';
 import { RangeSlider } from '@catho/quantum';
 
-class ControlledSlider extends Component {
+class ControlledRangeSlider extends Component {
   constructor(props) {
     super(props);
 
@@ -55,4 +55,4 @@ class ControlledSlider extends Component {
 }
 `;
 
-export default ControlledSlider;
+export default ControlledRangeSlider;
