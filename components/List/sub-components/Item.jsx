@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-
+import { spacing, baseFontSize } from '../../shared/theme';
 import Icon from '../../Icon';
 import Content from './Content';
 
@@ -9,7 +9,13 @@ const ItemIcon = styled(Icon)`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => `
+    margin-right: ${xsmall}px;
+  `}
 `;
 
 ItemIcon.displayName = 'ItemIcon';
@@ -27,7 +33,13 @@ const ListItem = styled.div`
   flex-direction: row;
   align-items: center;
 
-  padding: 4px;
+  ${({
+    theme: {
+      spacing: { xxsmall },
+    },
+  }) => `
+    padding: ${xxsmall}px;
+  `}
 
   ${bulletValue};
 `;
@@ -43,22 +55,22 @@ class Item extends React.Component {
     return <Item {...item} key={item.content} />;
   };
 
-  _renderIcon = icon => {
+  _renderIcon = (icon, theme) => {
     if (typeof icon === 'string') {
-      return <ItemIcon name={icon} />;
+      return <ItemIcon theme={theme} name={icon} />;
     }
 
-    return <ItemIcon {...icon} />;
+    return <ItemIcon theme={theme} {...icon} />;
   };
 
   render() {
-    const { icon, children, content, bullet, ...rest } = this.props;
+    const { icon, children, content, bullet, theme, ...rest } = this.props;
 
     return (
       <li {...rest}>
-        <ListItem bullet={bullet}>
-          {icon && this._renderIcon(icon)}
-          {children || <Content content={content} {...rest} />}
+        <ListItem theme={theme} bullet={bullet}>
+          {icon && this._renderIcon(icon, theme)}
+          {children || <Content theme={theme} content={content} {...rest} />}
         </ListItem>
       </li>
     );
@@ -70,6 +82,10 @@ Item.defaultProps = {
   bullet: '',
   children: null,
   content: '',
+  theme: {
+    spacing,
+    baseFontSize,
+  },
 };
 
 Item.propTypes = {
@@ -86,6 +102,10 @@ Item.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
+  }),
 };
 
 Item.displayName = 'List.Item';
