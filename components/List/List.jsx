@@ -5,7 +5,7 @@ import Item from './sub-components/Item';
 import Content from './sub-components/Content';
 import Header from './sub-components/Header';
 import SubHeader from './sub-components/SubHeader';
-import { colors, spacing } from '../shared/theme';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 
 const bullets = ({ bullet }) =>
   bullet
@@ -156,6 +156,7 @@ List.defaultProps = {
   theme: {
     colors,
     spacing,
+    baseFontSize,
   },
 };
 
@@ -194,6 +195,7 @@ List.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
 };
 

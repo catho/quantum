@@ -5,8 +5,24 @@ exports[`<SubHeader /> Should match the snapshot 1`] = `
   font-size: 12px;
 }
 
-<List.SubHeader>
-  <SubHeader>
+.c0 theme {
+  base-font-size: 16px;
+}
+
+<List.SubHeader
+  theme={
+    Object {
+      "baseFontSize": 16,
+    }
+  }
+>
+  <SubHeader
+    theme={
+      Object {
+        "baseFontSize": 16,
+      }
+    }
+  >
     <span
       className="c0"
     >

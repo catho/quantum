@@ -2,12 +2,43 @@
 
 exports[`<Header /> Should match the snapshot 1`] = `
 .c0 {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin: 4px 0;
 }
 
-<List.Header>
-  <Header>
+<List.Header
+  theme={
+    Object {
+      "spacing": Object {
+        "large": 24,
+        "medium": 16,
+        "small": 12,
+        "xlarge": 32,
+        "xsmall": 8,
+        "xxlarge": 40,
+        "xxsmall": 4,
+        "xxxlarge": 48,
+        "xxxsmall": 2,
+      },
+    }
+  }
+>
+  <Header
+    theme={
+      Object {
+        "spacing": Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        },
+      }
+    }
+  >
     <span
       className="c0"
     >

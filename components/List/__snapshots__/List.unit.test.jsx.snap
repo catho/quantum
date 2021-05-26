@@ -2,8 +2,7 @@
 
 exports[`<List /> Should match the bullet list snapshot 1`] = `
 .c3 {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin: 4px 0;
 }
 
 .c2 {
@@ -68,6 +67,7 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
   ordered={true}
   theme={
     Object {
+      "baseFontSize": 16,
       "colors": Object {
         "error": Object {
           "100": "#fff5f5",
@@ -145,6 +145,7 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
     ordered={true}
     theme={
       Object {
+        "baseFontSize": 16,
         "colors": Object {
           "error": Object {
             "100": "#fff5f5",
@@ -213,10 +214,42 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
         content="Tomato sauce"
         icon=""
         key="Tomato sauce"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -225,13 +258,61 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
                 content="Tomato sauce"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -251,10 +332,42 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
         content="Mustard"
         icon=""
         key="Mustard"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -263,13 +376,61 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
                 content="Mustard"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -289,10 +450,42 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
         content="Barbecue sauce"
         icon=""
         key="Barbecue sauce"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -301,13 +494,61 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
                 content="Barbecue sauce"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -327,10 +568,42 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
         content="Red-wine vinegar"
         icon=""
         key="Red-wine vinegar"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -339,13 +612,61 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
                 content="Red-wine vinegar"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -365,10 +686,42 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
         content="Salsa"
         icon=""
         key="Salsa"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -377,13 +730,61 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
                 content="Salsa"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -403,10 +804,42 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
         content="Hot pepper sauce"
         icon=""
         key="Hot pepper sauce"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -415,13 +848,61 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
                 content="Hot pepper sauce"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -456,6 +937,7 @@ exports[`<List /> Should match the default snapshot 1`] = `
   ordered={false}
   theme={
     Object {
+      "baseFontSize": 16,
       "colors": Object {
         "error": Object {
           "100": "#fff5f5",
@@ -524,6 +1006,7 @@ exports[`<List /> Should match the default snapshot 1`] = `
     ordered={false}
     theme={
       Object {
+        "baseFontSize": 16,
         "colors": Object {
           "error": Object {
             "100": "#fff5f5",
@@ -593,8 +1076,7 @@ exports[`<List /> Should match the default snapshot 1`] = `
 
 exports[`<List /> Should match the divided list snapshot 1`] = `
 .c3 {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin: 4px 0;
 }
 
 .c2 {
@@ -653,6 +1135,7 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
   ordered={false}
   theme={
     Object {
+      "baseFontSize": 16,
       "colors": Object {
         "error": Object {
           "100": "#fff5f5",
@@ -730,6 +1213,7 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
     ordered={false}
     theme={
       Object {
+        "baseFontSize": 16,
         "colors": Object {
           "error": Object {
             "100": "#fff5f5",
@@ -798,10 +1282,42 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
         content="Tomato sauce"
         icon=""
         key="Tomato sauce"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -810,13 +1326,61 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
                 content="Tomato sauce"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -836,10 +1400,42 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
         content="Mustard"
         icon=""
         key="Mustard"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -848,13 +1444,61 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
                 content="Mustard"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -874,10 +1518,42 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
         content="Barbecue sauce"
         icon=""
         key="Barbecue sauce"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -886,13 +1562,61 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
                 content="Barbecue sauce"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -912,10 +1636,42 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
         content="Red-wine vinegar"
         icon=""
         key="Red-wine vinegar"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -924,13 +1680,61 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
                 content="Red-wine vinegar"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -950,10 +1754,42 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
         content="Salsa"
         icon=""
         key="Salsa"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -962,13 +1798,61 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
                 content="Salsa"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
@@ -988,10 +1872,42 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
         content="Hot pepper sauce"
         icon=""
         key="Hot pepper sauce"
+        theme={
+          Object {
+            "baseFontSize": 16,
+            "spacing": Object {
+              "large": 24,
+              "medium": 16,
+              "small": 12,
+              "xlarge": 32,
+              "xsmall": 8,
+              "xxlarge": 40,
+              "xxsmall": 4,
+              "xxxlarge": 48,
+              "xxxsmall": 2,
+            },
+          }
+        }
       >
         <li>
           <ListItem
             bullet=""
+            theme={
+              Object {
+                "baseFontSize": 16,
+                "spacing": Object {
+                  "large": 24,
+                  "medium": 16,
+                  "small": 12,
+                  "xlarge": 32,
+                  "xsmall": 8,
+                  "xxlarge": 40,
+                  "xxsmall": 4,
+                  "xxxlarge": 48,
+                  "xxxsmall": 2,
+                },
+              }
+            }
           >
             <div
               className="c1"
@@ -1000,13 +1916,61 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
                 content="Hot pepper sauce"
                 header=""
                 subheader=""
+                theme={
+                  Object {
+                    "baseFontSize": 16,
+                    "spacing": Object {
+                      "large": 24,
+                      "medium": 16,
+                      "small": 12,
+                      "xlarge": 32,
+                      "xsmall": 8,
+                      "xxlarge": 40,
+                      "xxsmall": 4,
+                      "xxxlarge": 48,
+                      "xxxsmall": 2,
+                    },
+                  }
+                }
               >
                 <Content>
                   <div
                     className="c2"
                   >
-                    <List.Header>
-                      <Header>
+                    <List.Header
+                      theme={
+                        Object {
+                          "spacing": Object {
+                            "large": 24,
+                            "medium": 16,
+                            "small": 12,
+                            "xlarge": 32,
+                            "xsmall": 8,
+                            "xxlarge": 40,
+                            "xxsmall": 4,
+                            "xxxlarge": 48,
+                            "xxxsmall": 2,
+                          },
+                        }
+                      }
+                    >
+                      <Header
+                        theme={
+                          Object {
+                            "spacing": Object {
+                              "large": 24,
+                              "medium": 16,
+                              "small": 12,
+                              "xlarge": 32,
+                              "xsmall": 8,
+                              "xxlarge": 40,
+                              "xxsmall": 4,
+                              "xxxlarge": 48,
+                              "xxxsmall": 2,
+                            },
+                          }
+                        }
+                      >
                         <span
                           className="c3"
                         >
