@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import LinkTo from '@storybook/addon-links/react';
 
 import {
   Title,
@@ -15,10 +16,7 @@ import {
 } from '../../components/GlobalStyle';
 
 import List from '../../components/List';
-import {
-  exampleItemsDefault,
-  exampleItemsWithHeaderAndSubHeader,
-} from '../List/objectReference';
+import { exampleItemsDefault } from '../List/objectReference';
 
 const Small = styled.small`
   font-size: 10px;
@@ -113,32 +111,6 @@ const Components = () => (
 
     <Table>
       <tbody>
-        {/* // TODO: waiting spec
-        <tr>
-          <td>
-            a <Small>inherit</Small>
-          </td>
-          <td>
-            <Link href="/">Lorem ipsum dolor sit amet.</Link>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            p <Small>16px</Small>
-          </td>
-          <td>
-            <P>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              lorem magna, molestie at pretium non, consequat sit amet ante.
-              Aenean et ultrices elit. Suspendisse quis urna consequat,
-              condimentum tortor ut, laoreet magna. Praesent accumsan massa
-              pellentesque felis tempus, at semper lacus ullamcorper. Vestibulum
-              maximus est est, sed ullamcorper mi pellentesque at. Nunc
-              facilisis blandit felis sed sollicitudin. Proin rutrum consectetur
-              gravida.
-            </P>
-          </td>
-        </tr> */}
         <tr>
           <td>
             blockquote <Small>12px</Small>
@@ -163,6 +135,9 @@ const Components = () => (
     </Table>
 
     <Title as="h2">Lists</Title>
+    <p>
+      more info about List component, click <LinkTo story="List">here</LinkTo>
+    </p>
 
     <Table>
       <tbody>
@@ -190,35 +165,6 @@ const Components = () => (
           <td>{'<List items={exampleItemsDefault} ordered />`'}</td>
           <td>
             <List items={exampleItemsDefault} ordered />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            ol {'>'} li <Small>16px</Small>
-          </td>
-          <td>{'<List items={exampleItemsDefault} ordered divided/>`'}</td>
-          <td>
-            <List items={exampleItemsDefault} ordered divided />
-          </td>
-        </tr>
-        <tr>
-          <td colSpan="3">
-            <SimpleHighlight>
-              {exampleItemsWithHeaderAndSubHeader.code}
-            </SimpleHighlight>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            ul {'>'} li <Small>16px</Small>
-          </td>
-          <td>
-            {
-              '<List items={exampleItemsWithHeaderAndSubHeader} bullet="&bull;" />`'
-            }
-          </td>
-          <td>
-            <List items={exampleItemsWithHeaderAndSubHeader} bullet="&bull;" />
           </td>
         </tr>
       </tbody>

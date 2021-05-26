@@ -160,6 +160,8 @@ List.defaultProps = {
 };
 
 List.propTypes = {
+  /** this props receives a object with all contents that render in component */
+
   items: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.arrayOf(
@@ -175,14 +177,20 @@ List.propTypes = {
       }),
     ),
   ]),
+  /** this boolean prop indicates if items will show ordered or not (showing a sequencial number if true) */
   ordered: PropTypes.bool,
+  /** sets all items in same line */
   inline: PropTypes.bool,
+  /** shows a border line between items */
   divided: PropTypes.bool,
+  /** shows a bullet for each item */
   bullet: PropTypes.string,
+  /** render any html element its passed as children */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  /** Quantum theme (do not change this prop without a provider) */
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
