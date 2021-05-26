@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 import {
   Heading,
   Tab,
@@ -8,12 +9,23 @@ import {
   StoryContainer,
   AutoPropsApi,
   TabbedView,
+  Table,
 } from '@catho/quantum-storybook-ui';
 
-import { Container, Row, Col, List } from '../../components';
+import { List } from '../../components';
+
+import {
+  exampleItemsDefault,
+  exampleItemsWithHeaderAndSubHeader,
+  exampleItemsWithIcon,
+} from './objectReference';
+
+const Small = styled.small`
+  font-size: 10px;
+`;
 
 const description =
-  "An List is a vertical stack of interactive headings used to toggle the display of further information; each item can be 'collapsed', with just a short label visible, or 'expanded' to show the complete content.";
+  'List is a component with continuous, vertical indexes of text or icons.';
 
 storiesOf('Foundation', module).add('List', () => (
   <>
@@ -22,36 +34,94 @@ storiesOf('Foundation', module).add('List', () => (
       <Tab title="Usage">
         <StoryContainer>
           <Title as="h2">Importing List</Title>
-          <SimpleHighlight>
-            {`import { List } from '@catho/quantum';`}
-          </SimpleHighlight>
-          <br />
-          <List />
+          <Table>
+            <tbody>
+              <tr>
+                <td colSpan="3">
+                  <SimpleHighlight>{`import { List } from '@catho/quantum';`}</SimpleHighlight>
+                  <br />
+
+                  <SimpleHighlight>{exampleItemsDefault.code}</SimpleHighlight>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  ul {'>'} li <Small>16px</Small>
+                </td>
+                <td>
+                  {'<List items={exampleItemsDefault} bullet="&bull;" />'}
+                </td>
+                <td>
+                  <List items={exampleItemsDefault} bullet="&bull;" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  ol {'>'} li <Small>16px</Small>
+                </td>
+                <td>{'<List items={exampleItemsDefault} ordered />`'}</td>
+                <td>
+                  <List items={exampleItemsDefault} ordered />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  ol {'>'} li <Small>16px</Small>
+                </td>
+                <td>
+                  {'<List items={exampleItemsDefault} ordered divided/>`'}
+                </td>
+                <td>
+                  <List items={exampleItemsDefault} ordered divided />
+                </td>
+              </tr>
+              <tr>
+                <td colSpan="3">
+                  <SimpleHighlight>
+                    {exampleItemsWithHeaderAndSubHeader.code}
+                  </SimpleHighlight>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  ul {'>'} li <Small>16px</Small>
+                </td>
+                <td>
+                  {
+                    '<List items={exampleItemsWithHeaderAndSubHeader} bullet="&bull;" />`'
+                  }
+                </td>
+                <td>
+                  <List
+                    items={exampleItemsWithHeaderAndSubHeader}
+                    bullet="&bull;"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colSpan="3">
+                  <SimpleHighlight>{exampleItemsWithIcon.code}</SimpleHighlight>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  ul {'>'} li <Small>16px</Small>
+                </td>
+                <td>
+                  {'<List items={exampleItemsWithIcon} bullet="&bull;" />`'}
+                </td>
+                <td>
+                  <List items={exampleItemsWithIcon} bullet="&bull;" />
+                </td>
+              </tr>
+            </tbody>
+          </Table>
         </StoryContainer>
       </Tab>
       <Tab title="API">
         <StoryContainer>
           <AutoPropsApi component={List} />
         </StoryContainer>
-      </Tab>
-      <Tab title="Examples">
-        <Container no-gutters>
-          <Row key="code-example">
-            <Col xsmall={2} small={4} medium={6}>
-              <SimpleHighlight>{'código '}</SimpleHighlight>
-            </Col>
-            <Col xsmall={2} small={4} medium={6}>
-              <h3>Example of Object passed in Items</h3>
-              <p> This is a sample of object items passed by Items prop</p>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <h4>
-            passing this object to the items prop, the component will render
-            this way:
-          </h4>
-        </Container>
       </Tab>
     </TabbedView>
   </>

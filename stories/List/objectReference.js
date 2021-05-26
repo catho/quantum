@@ -25,4 +25,22 @@ exampleItemsWithHeaderAndSubHeader.code = `
     { header: "Consectetur", subheader: "adipiscing elit" },
   ];
   `;
-export { exampleItemsDefault, exampleItemsWithHeaderAndSubHeader };
+
+const exampleItemsWithIcon = [
+  { icon: 'close' },
+  { icon: 'accessible' },
+  { icon: 'block' },
+];
+
+exampleItemsWithIcon.code = `
+  const exampleItemsWithIcon = [
+    { icon: 'close' },
+    { icon: 'accessible' },
+    { icon: 'block' },
+  ];`;
+
+export {
+  exampleItemsDefault,
+  exampleItemsWithHeaderAndSubHeader,
+  exampleItemsWithIcon,
+};

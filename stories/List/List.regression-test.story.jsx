@@ -1,39 +1,37 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import List from '../../components/List';
-
-const items = [
-  { content: 'Lorem ipsum dolor sit amet' },
-  { content: 'Sed do eiusmod tempor ' },
-  { content: 'Consectetur adipiscing elit' },
-];
-
-const itemsWithHeaderAndSubHeader = [
-  { header: 'Lorem ipsum ', subheader: 'dolor sit amet' },
-  { header: 'Sed', subheader: 'do eiusmod tempor ' },
-  { header: 'Consectetur', subheader: 'adipiscing elit' },
-];
+import {
+  exampleItemsDefault,
+  exampleItemsWithHeaderAndSubHeader,
+  exampleItemsWithIcon,
+} from './objectReference';
 
 storiesOf('List', module)
-  .add('default', () => <List items={items} />)
-  .add('default inline', () => <List items={items} inline />)
-  .add('default with bullets', () => <List items={items} bullet="&bull;" />)
-  .add('default with bullets inline', () => (
-    <List items={items} bullet="&bull;" inline />
+  .add('Unordered', () => <List items={exampleItemsDefault} />)
+  .add('Unordered inline', () => <List items={exampleItemsDefault} inline />)
+  .add('Unordered with bullets', () => (
+    <List items={exampleItemsDefault} bullet="&bull;" />
   ))
-  .add('ordered', () => <List items={items} ordered />)
-  .add('ordered inline', () => <List items={items} ordered inline />)
-  .add('default with bullets divided', () => (
-    <List items={items} bullet="&bull;" divided />
+  .add('Unordered with bullets inline', () => (
+    <List items={exampleItemsDefault} bullet="&bull;" inline />
   ))
-  .add('default with header and subheader', () => (
-    <List items={itemsWithHeaderAndSubHeader} bullet="&bull;" />
+  .add('Unordered with bullets divided', () => (
+    <List items={exampleItemsDefault} bullet="&bull;" divided />
   ))
-  .add('ordered with header and subheader', () => (
-    <List items={itemsWithHeaderAndSubHeader} bullet="&bull;" ordered />
+  .add('Unordered with bullets with icons', () => (
+    <List items={exampleItemsWithIcon} bullet="&bull;" />
+  ))
+  .add('Unordered with header and subheader', () => (
+    <List items={exampleItemsWithHeaderAndSubHeader} bullet="&bull;" />
+  ))
+  .add('Ordered', () => <List items={exampleItemsDefault} ordered />)
+  .add('Ordered inline', () => (
+    <List items={exampleItemsDefault} ordered inline />
+  ))
+  .add('Ordered with icons', () => (
+    <List items={exampleItemsWithIcon} ordered />
+  ))
+  .add('Ordered with header and subheader', () => (
+    <List items={exampleItemsWithHeaderAndSubHeader} ordered />
   ));
-// .add('with skin (color)', () => (
-//   <Icon name="info" skin={colors.error['300']} />
-// ))
-// .add('with large size', () => <Icon name="info" size="large" />)
-// .add('with small size', () => <Icon name="info" size="small" />)
