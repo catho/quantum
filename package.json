@@ -103,7 +103,7 @@
     "react-dom": "^16.7.0",
     "react-test-renderer": "^16.7.0",
     "regenerator-runtime": "^0.13.1",
-    "semantic-release": "^17.2.3",
+    "semantic-release": "^17.4.3",
     "strip-ansi": "^5.0.0",
     "styled-components": "^5.0.1"
   },
