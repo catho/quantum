@@ -1,15 +1,15 @@
-import ControlledSlider from './ControlledSlider';
-import Slider from './Slider';
-import BasicDisabledSlider from './BasicDisabled';
+import ControlledRangeSlider from './ControlledRangeSlider';
+import BasicRangeSlider from './BasicRangeSlider';
+import BasicDisabledRangeSlider from './BasicDisabledRangeSlider';
 import TipFormatter from './TipFormatter';
 import Range from './Range';
 import MinMax from './MinMax';
 
 export {
-  ControlledSlider,
-  Slider,
+  ControlledRangeSlider,
+  BasicRangeSlider,
   TipFormatter,
   Range,
   MinMax,
-  BasicDisabledSlider,
+  BasicDisabledRangeSlider,
 };

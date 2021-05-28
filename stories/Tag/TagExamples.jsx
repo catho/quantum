@@ -127,9 +127,10 @@ const closableExample = (
   </>
 );
 
-const sizesCode = `<Tag skin="small">Small</Tag>
+const sizesCode = `
+<Tag size="small">Small</Tag>
 <Tag>Medium (Default)</Tag>
-<Tag skin="large">Large</Tag>`;
+<Tag size="large">Large</Tag>`;
 
 const sizesExample = (
   <>

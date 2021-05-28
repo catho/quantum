@@ -12,11 +12,12 @@ to view the components behavior, run `yarn storybook`
       - first start the storybook for regression tests(and keep it open): ` yarn test:regression:storybook`; \
       - then run the regression tests: `yarn test:regression`
 - [ ] Code review
+- [ ] TypeScript updated
+- [ ] a11y
 
 ### Browsers review
 - [ ] Layout review
   - [ ] Edge
-  - [ ] IE 11
   - [ ] Firefox
   - [ ] Chrome
   - [ ] Safari

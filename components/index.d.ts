@@ -23,11 +23,14 @@ import { default as RadioGroupComponent, RadioGroupProps } from "./RadioGroup"
 import { default as RangeSliderComponent, RangeSliderProps } from "./RangeSlider"
 import { default as SnackBarComponent, SnackBarProps } from "./SnackBar"
 import { default as SocialsComponent, SocialsProps } from "./Socials"
+import { default as StepperComponent, StepperProps } from "./Stepper"
 import { TabbedView as TabbedViewComponent, TabbedViewProps } from './TabbedView';
 import { default as TagComponent, TagProps } from "./Tag"
 import { default as TextAreaComponent, TextAreaProps } from "./TextArea"
 import { default as ToggleComponent, ToggleProps } from "./Toggle"
 import { default as TooltipComponent, TooltipProps } from "./Tooltip"
+import { default as SegmentedControlComponent, SegmentedControlProps } from "./SegmentedControl"
+import { default as CarouselComponent, CarouselProps } from "./Carousel"
 
 export { default as BREAKPOINTS } from './Breakpoints';
 export { default as Colors } from "./Colors"
@@ -60,9 +63,13 @@ export const RadioGroup: StyledComponent<typeof RadioGroupComponent, RadioGroupP
 export const RangeSlider: StyledComponent<typeof RangeSliderComponent, RangeSliderProps>;
 export const SnackBar: StyledComponent<typeof SnackBarComponent, SnackBarProps>;
 export const Socials: StyledComponent<typeof SocialsComponent, SocialsProps>;
+export const Stepper: StyledComponent<typeof StepperComponent, StepperProps>;
 export const TabbedView: StyledComponent<typeof TabbedViewComponent, TabbedViewProps>;
 export const Tag: StyledComponent<typeof TagComponent, TagProps>;
 export const TextArea: StyledComponent<typeof TextAreaComponent, TextAreaProps>;
 export const Toggle: StyledComponent<typeof ToggleComponent, ToggleProps>;
 export const Tooltip: StyledComponent<typeof TooltipComponent, TooltipProps>;
 export const SocialButton: StyledComponent<typeof SocialButtonComponent, SocialButtonProps>;
+export const SegmentedControl: StyledComponent<typeof SegmentedControlComponent, SegmentedControlProps>;
+export const Carousel: StyledComponent<typeof CarouselComponent, CarouselProps>;
+

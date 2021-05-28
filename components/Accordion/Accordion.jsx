@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import slugify from 'slugify';
 
 import {
@@ -8,56 +8,53 @@ import {
   spacing as defaultSpacing,
   baseFontSize as defaultBaseFontSize,
 } from '../shared/theme';
+import { shadow } from '../shared';
 import Icon from '../Icon';
 
 const Wrapper = styled.ul`
   ${({
     theme: {
-      spacing: { medium },
       baseFontSize,
       colors: {
         neutral: { 900: color },
       },
     },
   }) => `
-    font-size: ${baseFontSize}px;
-    padding: 0 ${medium}px;
     color: ${color};
+    font-size: ${baseFontSize}px;
   `}
+  padding: 0px;
   list-style-type: none;
-  background-color: inherit;
-`;
-
-const AccordionItem = styled.li`
-  border-bottom: 1px solid
-    ${({ opened, color }) => (opened ? 'transparent' : color)};
-
-  &:last-child {
-    border-bottom: 1px solid transparent;
-  }
 `;
 
 const AccordionTitle = styled.span`
-  ${({ theme: { baseFontSize } }) => `
+  ${({
+    theme: {
+      baseFontSize,
+      colors: { neutral },
+    },
+  }) => `
+    color: ${neutral[700]};
     font-size: ${baseFontSize}px;
   `}
+
   font-weight: bold;
   line-height: inherit;
 `;
 
 const AccordionHeader = styled.button.attrs({ type: 'button' })`
   ${({ spacing: { large, medium } }) => `
-    line-height: ${large}px;
     height: ${large}px;
+    line-height: ${large}px;
     padding: ${medium}px 0;
   `}
+  background: inherit;
+  border: none;
+  box-sizing: content-box;
   cursor: pointer;
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
-  background: inherit;
-  border: none;
-  box-sizing: content-box;
 
   ${({ as }) => (as === 'button' ? `cursor: pointer;` : null)}
 `;
@@ -67,26 +64,30 @@ const AccordionContent = styled.div`
     theme: {
       spacing: { xsmall },
       baseFontSize,
+      colors: { primary, secondary },
     },
-    opened,
   }) => `
-    height: ${opened ? 'auto' : '0'};
-    transform: scaleY(${opened ? '1' : '0'});
-    transform-origin: top;
-    overflow: hidden;
-    transition: transform 0.2s ease;
     font-size: ${baseFontSize - 2}px;
-
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px;
+    transition: max-height 0.2s linear;
+    will-change: transform;
+    
     a {
-      color: inherit;
-      text-decoration: none;
+      color: ${primary[700]};
       font-size: ${baseFontSize - 2}px;
+      text-decoration: underline;
+
+      &:hover {
+        color: ${secondary[700]};
+      }
     }
 
     ul {
       list-style-type: none;
       padding: 0;
-
+      
       & > li {
         padding: ${xsmall}px 0;
       }
@@ -96,16 +97,86 @@ const AccordionContent = styled.div`
       margin: 0;
     }
   `}
+
+  ${({
+    opened,
+    theme: {
+      spacing: { xsmall, large },
+    },
+  }) =>
+    opened &&
+    css`
+      padding: ${xsmall}px 0 ${large}px 0;
+      max-height: 2000px;
+    `}
 `;
 
 const StyledIcon = styled(Icon)`
-  ${({ theme: { baseFontSize } }) => `
+  ${({
+    theme: {
+      baseFontSize,
+      spacing: { large },
+      colors: { primary },
+    },
+  }) => `
     font-size: ${baseFontSize * 1.5}px;
+    margin-right: ${large}px;
+    color: ${primary[700]};
   `}
+
   line-height: inherit;
 `;
 
-AccordionItem.displayName = 'AccordionItem';
+const AccordionItem = styled.li`
+  transition: border 0.2s linear, margin 0.2s linear;
+  overflow: hidden;
+  ${({
+    theme: {
+      spacing: { small },
+      colors: { neutral },
+    },
+  }) => `
+    &:first-child {
+      border-radius: 4px 4px 0px 0px;
+    }
+
+    &:last-child {
+      border-radius: 0px 0px 4px 4px;
+      border-bottom: none;
+    }
+    background-color: ${neutral[0]};
+    padding-left: ${small}px;
+    border-left: 4px solid transparent;
+    border-radius: inherit;
+    margin: 1px 0;
+  `}
+
+  ${({
+    theme: {
+      colors: { primary },
+      spacing: { medium },
+    },
+    opened,
+  }) =>
+    opened &&
+    css`
+      border-radius: 4px;
+
+      &:first-child {
+        border-radius: 4px;
+      }
+
+      &:last-child {
+        border-radius: 4px;
+      }
+
+      border-left: 4px solid ${primary[700]};
+      margin: ${medium}px 0px;
+    `}
+
+  ${shadow(1)}
+`;
+
 AccordionHeader.displayName = 'AccordionHeader';
 AccordionContent.displayName = 'AccordionContent';
 
@@ -176,14 +247,23 @@ class Accordion extends React.Component {
     const headerId = `${itemId}-header`;
 
     return (
-      <AccordionItem key={title} opened={opened} color={color}>
+      <AccordionItem
+        className="accordion-item"
+        key={title}
+        opened={opened}
+        color={color}
+        theme={theme}
+      >
         <AccordionHeader
           spacing={spacing}
           onClick={() => onItemClick(itemIndex)}
           aria-controls={contentId}
           id={headerId}
+          theme={theme}
         >
-          <AccordionTitle theme={theme}>{title}</AccordionTitle>
+          <AccordionTitle opened={opened} theme={theme}>
+            {title}
+          </AccordionTitle>
           <StyledIcon
             theme={theme}
             name={opened ? 'expand_less' : 'expand_more'}
@@ -222,7 +302,7 @@ Accordion.defaultProps = {
 };
 
 Accordion.propTypes = {
-  /** Edit only for themification */
+  /** Theme natively passed by Quantum theme. Don't change this prop */
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
@@ -230,7 +310,12 @@ Accordion.propTypes = {
   }),
   /** Set true to keep only one item open and close the remainings on click */
   keepOnlyOneOpen: PropTypes.bool,
-  /** Items to render in accordion */
+  /**
+   * this prop receives an array of objects to render the content of component.
+   *
+   * Ps 1: The content item should receive HTML elements
+   *
+   * Ps 2: onClick item receives a callback function its will trigger when the respective item of Accordion is clicked */
   items: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,

@@ -11,6 +11,7 @@ export default [
   'Alert',
   'Badge',
   'Button',
+  'Carousel',
   'Card',
   'Checkbox',
   'CircularLoader',
@@ -31,4 +32,6 @@ export default [
   'TextArea',
   'Toggle',
   'Tooltip',
+  'Stepper',
+  'SegmentedControl',
 ].map(s => `./${s}/${s}.regression-test.story.jsx`);

@@ -24,6 +24,8 @@ export default [
   // Avatar
   'Avatar',
 
+  'Carousel',
+
   // Buttons
   'Button',
 
@@ -72,4 +74,8 @@ export default [
 
   // Socials
   'Socials',
+
+  'Stepper',
+
+  'SegmentedControl',
 ].map(s => `./${s}/${s}.story.jsx`);
