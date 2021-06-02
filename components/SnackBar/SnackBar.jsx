@@ -162,6 +162,7 @@ const DialogBlock = styled.section`
   left: 0;
   position: fixed;
   width: 100%;
+  z-index: 999;
 `;
 
 class SnackBar extends React.Component {
