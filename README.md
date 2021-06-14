@@ -1,6 +1,6 @@
 # Quantum
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
 
 This is the default pack of components and layout principles that dictates Catho Frontend applications.
 
@@ -54,7 +54,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/tcelestino"><img src="https://avatars3.githubusercontent.com/u/190265?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Tiago Celestino</b></sub></a><br /><a href="https://github.com/catho/quantum/commits?author=tcelestino" title="Code">💻</a> <a href="#ideas-tcelestino" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/catho/quantum/pulls?q=is%3Apr+reviewed-by%3Atcelestino" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/catho/quantum/commits?author=tcelestino" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/luizjaccao"><img src="https://avatars2.githubusercontent.com/u/36733015?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Luiz Jacção</b></sub></a><br /><a href="https://github.com/catho/quantum/commits?author=luizjaccao" title="Code">💻</a> <a href="https://github.com/catho/quantum/pulls?q=is%3Apr+reviewed-by%3Aluizjaccao" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/alisson-suzigan"><img src="https://avatars2.githubusercontent.com/u/5255042?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Alisson Suzigan</b></sub></a><br /><a href="https://github.com/catho/quantum/commits?author=alisson-suzigan" title="Code">💻</a> <a href="#ideas-alisson-suzigan" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/catho/quantum/pulls?q=is%3Apr+reviewed-by%3Aalisson-suzigan" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/catho/quantum/commits?author=alisson-suzigan" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/toncabral88"><img src="https://avatars.githubusercontent.com/u/82893321?v=4" width="100px;" alt=""/><br /><sub><b>Ton Cabral</b></sub></a><br /><a href="https://github.com/catho/quantum/commits?author=toncabral88" title="Code">💻</a>
+    <a href="https://github.com/catho/quantum/commits?author=toncabral88" title="Documentation">📖</a> <a href="#ideas-toncabral88" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/catho/quantum/pulls?q=is%3Apr+reviewed-by%3Atoncabral88" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/catho/quantum/commits?author=toncabral88" title="Tests">⚠️</a></td>
   </tr>
+  <tr>
+  <td align="center"><a href="https://github.com/matheusrpp"><img src="https://avatars.githubusercontent.com/u/85566581?v=4" width="100px;" alt=""/><br /><sub><b>Matheus Rodrigues</b></sub></a><br /><a href="https://github.com/catho/quantum/commits?author=toncabral88" title="Code">💻</a>
+    <a href="https://github.com/catho/quantum/commits?author=matheusrpp" title="Documentation">📖</a> <a href="#ideas-matheusrpp" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/catho/quantum/pulls?q=is%3Apr+reviewed-by%3Amatheusrpp" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/catho/quantum/commits?author=matheusrpp" title="Tests">⚠️</a></td></tr>
 </table>
 
 <!-- markdownlint-enable -->

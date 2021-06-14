@@ -2,10 +2,15 @@
 
 You can contribute in many ways: openning or participating of a issue, reporting a bug, sending a [pull request](#submitting-a-pull-request).
 
+## Contribution Prerequisites
+
+- Node installed at v12.16.1 and Yarn.
+- Docker for the visual tests.
+
 ## Getting Started
 1.  Fork the project, [Help Guide to Fork a repository](https://docs.gitlab.com/ce/gitlab-basics/fork-project.html/).
 2.  Clone the project.
-3.  Create a branch specific to the issue you are working on.
+3. Create a branch specific to the issue you are working on.
     ```sh
     git checkout -b update-readme-file
     ```
@@ -25,17 +30,27 @@ You can contribute in many ways: openning or participating of a issue, reporting
 
     Note, using a `git add .` will automatically add all files. You can do a `git status` to see your changes, but do it before `git add`.
 
-6.  Commit your changes using a descriptive commit message.
-
+6.  Commit your changes using [commitizen](http://commitizen.github.io/cz-cli/).
     ```sh
-    git commit -m "Brief Description of Commit"
+    yarn commitizen
     ```
-7.  Push your commits to your Fork:
+
+7.  You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards defined by project.
+    
+    - Select the type of change that you're commiting (required)
+    - What is the scope of this change (e.g. component or file name)?
+    - Write a short, imperative tense description of the change (required)
+    - Provide a longer description of the change
+    - Are they any breaking changes? (y/N)
+    - Does this change affect any open issues? (y/N)
+
+
+8.  Push your commits to your Fork:
 
     ```sh
     git push -u origin branch-name
     ```
-8.  Submit a pull request.
+9.  Submit a pull request.
 
 ## Submitting a Merge Request
 
