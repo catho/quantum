@@ -12,7 +12,7 @@ class Catalogue extends Component {
     this.state = { icons: Icons, filtered: Icons };
   }
 
-  filterIcons = (e, { value }) => {
+  filterIcons = ({ target: { value } }) => {
     const { icons } = this.state;
     const filtered = value
       ? icons.filter(name => name.indexOf(value) >= 0)
