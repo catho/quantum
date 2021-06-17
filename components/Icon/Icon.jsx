@@ -11,6 +11,7 @@ import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 import Assessment from '@material-ui/icons/Assessment';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import Block from '@material-ui/icons/Block';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
@@ -29,6 +30,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import Done from '@material-ui/icons/Done';
 import EditIcon from '@material-ui/icons/Edit';
 import EmojiPeople from '@material-ui/icons/EmojiPeople';
+import EqualizerIcon from '@material-ui/icons/Equalizer';
 import Error from '@material-ui/icons/Error';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import ExitToApp from '@material-ui/icons/ExitToApp';
@@ -92,6 +94,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     arrow_drop_up: ArrowDropUp,
     assessment: Assessment,
     assignment: AssignmentIcon,
+    assignment_ind: AssignmentIndIcon,
     attach_money: AttachMoneyIcon,
     block: Block,
     camera: CameraAltIcon,
@@ -110,6 +113,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     done: Done,
     edit: EditIcon,
     emoji_people: EmojiPeople,
+    equalizer: EqualizerIcon,
     error: Error,
     event_available: EventAvailableIcon,
     exit_to_app: ExitToApp,
