@@ -4,7 +4,7 @@
  * order is reflected in storybook sidebar
  */
 
-export default [
+module.exports = [
   'Avatar',
   'Icon',
   'Accordion',
@@ -34,4 +34,4 @@ export default [
   'Tooltip',
   'Stepper',
   'SegmentedControl',
-].map(s => `./${s}/${s}.regression-test.story.jsx`);
+].map(s => `../../stories/${s}/${s}.regression-test.story.jsx`);

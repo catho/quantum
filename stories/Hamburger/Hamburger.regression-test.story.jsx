@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
 
 import Hamburger from '../../components/Hamburger';
 
@@ -9,24 +8,56 @@ const InvertedBackground = styled.span`
   display: inline-block;
 `;
 
-storiesOf('Hamburger', module)
-  .add('default', () => (
-    <InvertedBackground>
-      <Hamburger />
-    </InvertedBackground>
-  ))
-  .add('showNotification', () => (
-    <InvertedBackground>
-      <Hamburger showNotification />
-    </InvertedBackground>
-  ))
-  .add('isOpened', () => (
-    <InvertedBackground>
-      <Hamburger isOpened />
-    </InvertedBackground>
-  ))
-  .add('inverted', () => <Hamburger inverted />)
-  .add('inverted showNotification', () => (
-    <Hamburger inverted showNotification />
-  ))
-  .add('inverted isOpened', () => <Hamburger inverted isOpened />);
+export default {
+  title: 'Hamburger',
+};
+
+export const Default = () => (
+  <InvertedBackground>
+    <Hamburger />
+  </InvertedBackground>
+);
+
+Default.story = {
+  name: 'default',
+};
+
+export const ShowNotification = () => (
+  <InvertedBackground>
+    <Hamburger showNotification />
+  </InvertedBackground>
+);
+
+ShowNotification.story = {
+  name: 'showNotification',
+};
+
+export const IsOpened = () => (
+  <InvertedBackground>
+    <Hamburger isOpened />
+  </InvertedBackground>
+);
+
+IsOpened.story = {
+  name: 'isOpened',
+};
+
+export const Inverted = () => <Hamburger inverted />;
+
+Inverted.story = {
+  name: 'inverted',
+};
+
+export const InvertedShowNotification = () => (
+  <Hamburger inverted showNotification />
+);
+
+InvertedShowNotification.story = {
+  name: 'inverted showNotification',
+};
+
+export const InvertedIsOpened = () => <Hamburger inverted isOpened />;
+
+InvertedIsOpened.story = {
+  name: 'inverted isOpened',
+};

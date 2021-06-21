@@ -1,11 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Heading, TabbedView, Tab } from '@catho/quantum-storybook-ui';
 
 import Usage from './Usage';
 import Components from './Components';
 
-storiesOf('Foundation', module).add('Typography', () => (
+export default {
+  title: 'Foundation',
+};
+
+export const Typography = () => (
   <>
     <Heading title="Typography">
       Typography - Quantum uses Nunito Sans as the standard typeface to present
@@ -21,4 +24,4 @@ storiesOf('Foundation', module).add('Typography', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

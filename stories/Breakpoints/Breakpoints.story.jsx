@@ -6,7 +6,6 @@ import {
   Title,
   StoryContainer,
 } from '@catho/quantum-storybook-ui';
-import { storiesOf } from '@storybook/react';
 import { BREAKPOINTS } from '../../components/shared';
 import { query } from '../../components/Grid/sub-components/shared';
 
@@ -34,7 +33,11 @@ const StyledDivExample = styled.div`
   `}
 `;
 
-storiesOf('Foundation', module).add('Breakpoints', () => (
+export default {
+  title: 'Foundation',
+};
+
+export const Breakpoints = () => (
   <>
     <Heading title="Breakpoints">
       Breakpoints - Quantum provides a breakpoints object that you can use with
@@ -118,4 +121,4 @@ const StyledDiv = styled.div\`
       <StyledDivExample>Test me in different sizes =)</StyledDivExample>
     </StoryContainer>
   </>
-));
+);

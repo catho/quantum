@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   AutoPropsApi,
   Heading,
@@ -14,7 +13,11 @@ import { Row, Col } from '../../components/Grid';
 import Popover from '../../components/Popover';
 import examples from './examples/examples';
 
-storiesOf('Popover', module).add('Popover', () => (
+export default {
+  title: 'Popover',
+};
+
+export const _Popover = () => (
   <>
     <Heading name="Popover">
       Popovers are used for showing quantity of something, as warnings, inbox
@@ -56,4 +59,4 @@ storiesOf('Popover', module).add('Popover', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

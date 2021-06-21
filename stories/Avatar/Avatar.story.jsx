@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   AutoExample,
   Tab,
@@ -72,7 +71,11 @@ const TabExample = (
 
 const description = `Avatars are used for showing a thumbnail of the user picture or an user icon if the picture is done defined, also it can display a dot to alert that there is some notification.`;
 
-storiesOf('Avatar', module).add('Avatar', () => (
+export default {
+  title: 'Avatar',
+};
+
+export const _Avavtar = () => (
   <AutoExample
     description={description}
     component={Avatar}
@@ -85,4 +88,4 @@ storiesOf('Avatar', module).add('Avatar', () => (
     }}
     additionalTabs={TabExample}
   />
-));
+);

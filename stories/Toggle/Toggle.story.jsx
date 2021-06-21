@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   Tab,
   Example,
@@ -55,10 +54,14 @@ const exampleTab = (
 const description = `Toggle is a control that is used to quickly switch
 between two possible states.`;
 
-storiesOf('Forms', module).add('Toggle', () => (
+export default {
+  title: 'Forms',
+};
+
+export const _Toggle = () => (
   <AutoExample
     description={description}
     component={Toggle}
     additionalTabs={exampleTab}
   />
-));
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   AutoExample,
   Tab,
@@ -36,7 +35,11 @@ const TabExample = (
 const description = `Tooltips provide additional information upon hover or focus.
 They often contain helper text that is contextual to an element.`;
 
-storiesOf('Tooltip', module).add('Basic', () => (
+export default {
+  title: 'Tooltip',
+};
+
+export const Basic = () => (
   <AutoExample
     description={description}
     component={Tooltip}
@@ -46,4 +49,4 @@ storiesOf('Tooltip', module).add('Basic', () => (
     }}
     additionalTabs={TabExample}
   />
-));
+);

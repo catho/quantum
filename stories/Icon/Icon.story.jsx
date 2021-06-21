@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
 import styled from 'styled-components';
 import {
@@ -68,7 +67,11 @@ const exampleIncorrectCode = `  <Icon name="bike" />
 
 const importIcon = `import { Icon } from '@catho/quantum';`;
 
-storiesOf('Foundation', module).add('Icons', () => (
+export default {
+  title: 'Foundation',
+};
+
+export const Icons = () => (
   <React.Fragment>
     <Heading name="Icons">
       Quantum use Material icons, beautifully crafted symbols for common actions
@@ -128,4 +131,4 @@ storiesOf('Foundation', module).add('Icons', () => (
       </Tab>
     </TabbedView>
   </React.Fragment>
-));
+);

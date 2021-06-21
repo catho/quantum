@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { AutoExample, Tab, SimpleHighlight } from '@catho/quantum-storybook-ui';
 import { Container, Row, Col } from '../../components/Grid';
 import examples from './examples';
@@ -23,7 +22,11 @@ const tabExample = (
   </Tab>
 );
 
-storiesOf('Forms', module).add('Input', () => (
+export default {
+  title: 'Forms',
+};
+
+export const _Input = () => (
   <>
     <AutoExample
       component={Input}
@@ -35,4 +38,4 @@ storiesOf('Forms', module).add('Input', () => (
       additionalTabs={tabExample}
     />
   </>
-));
+);

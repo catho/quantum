@@ -1,11 +1,8 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import { Tooltip, Button, Row, Col } from '../../components';
 
-const directions = ['top', 'bottom', 'left', 'right'];
-
-const tooltipExampleButton = direction => (
+const tooltipExampleButton = ({ direction }) => (
   <Row style={{ padding: '50px 180px' }}>
     <Col>
       <Tooltip placement={direction} text="This is a hint." visible>
@@ -15,13 +12,31 @@ const tooltipExampleButton = direction => (
   </Row>
 );
 
-directions.forEach(direction => {
-  storiesOf('Tooltip', module).add(`${direction}`, () =>
-    tooltipExampleButton(direction),
-  );
-});
+export default {
+  title: 'Tooltip',
+};
 
-storiesOf('Tooltip', module).add('multiline', () => (
+export const Top = tooltipExampleButton.bind(null);
+Top.args = {
+  direction: 'top',
+};
+
+export const Bottom = tooltipExampleButton.bind(null);
+Bottom.args = {
+  direction: 'bottom',
+};
+
+export const Left = tooltipExampleButton.bind(null);
+Left.args = {
+  direction: 'left',
+};
+
+export const Right = tooltipExampleButton.bind(null);
+Right.args = {
+  direction: 'right',
+};
+
+export const Multiline = () => (
   <Row style={{ padding: '50px 180px' }}>
     <Col>
       <Tooltip
@@ -34,4 +49,8 @@ storiesOf('Tooltip', module).add('multiline', () => (
       </Tooltip>
     </Col>
   </Row>
-));
+);
+
+Multiline.story = {
+  name: 'multiline',
+};

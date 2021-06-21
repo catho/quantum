@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   TabbedView,
   Tab,
@@ -20,7 +19,11 @@ import Button from '../../components/Button';
 import { Container, Col, Row } from '../../components/Grid';
 import { Typography } from '../../components/GlobalStyle';
 
-storiesOf('Card', module).add('Card', () => (
+export default {
+  title: 'card',
+};
+
+export const Card = () => (
   <>
     <Typography />
     <Heading name="Card">
@@ -198,4 +201,4 @@ storiesOf('Card', module).add('Card', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import LinkTo from '@storybook/addon-links/react';
 import {
   Tab,
@@ -134,28 +133,32 @@ const socialDescription = `These buttons are used to realize action related to t
 respective social media. It could be for example: realizing a login using the OAuth 
 API from Google`;
 
-storiesOf('Buttons', module)
-  .add('Button', () => (
-    <>
-      <AutoExample
-        description={description}
-        component={Button}
-        componentProps={{
-          children: 'Catho',
-        }}
-        additionalTabs={exampleTab}
-      />
-    </>
-  ))
-  .add('SocialButton', () => (
-    <>
-      <AutoExample
-        description={socialDescription}
-        component={SocialButton}
-        componentProps={{
-          provider: 'facebook',
-        }}
-        additionalTabs={socialExampleTab}
-      />
-    </>
-  ));
+export default {
+  title: 'Buttons',
+};
+
+export const _Button = () => (
+  <>
+    <AutoExample
+      description={description}
+      component={Button}
+      componentProps={{
+        children: 'Catho',
+      }}
+      additionalTabs={exampleTab}
+    />
+  </>
+);
+
+export const _SocialButton = () => (
+  <>
+    <AutoExample
+      description={socialDescription}
+      component={SocialButton}
+      componentProps={{
+        provider: 'facebook',
+      }}
+      additionalTabs={socialExampleTab}
+    />
+  </>
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import {
   TabbedView,
@@ -23,7 +22,11 @@ const MobileWrapper = styled.div`
   justify-content: center;
 `;
 
-storiesOf('Pagination', module).add('Pagination', () => (
+export default {
+  title: 'Pagination',
+};
+
+export const _Pagination = () => (
   <>
     <Heading name="Pagination">
       Add pagination buttons to help split up your long content into shorter,
@@ -322,4 +325,4 @@ storiesOf('Pagination', module).add('Pagination', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
 import {
   Title,
   Heading,
@@ -54,7 +53,11 @@ const ColSample = styled(Col)`
   padding-top: 15px;
 `;
 
-storiesOf('Forms', module).add('RangeSlider', () => (
+export default {
+  title: 'Forms',
+};
+
+export const _RangeSlider = () => (
   <>
     <Heading name="RangeSlider">
       RangeSlider is a component to select a value from a predefined range.
@@ -195,4 +198,4 @@ storiesOf('Forms', module).add('RangeSlider', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

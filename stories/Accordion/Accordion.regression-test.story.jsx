@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import mockedProps, {
   mockWithFirstItemOpened,
   mockWithLastItemOpened,
@@ -8,14 +7,36 @@ import mockedProps, {
 
 import { Accordion } from '../../components';
 
-storiesOf('Accordion', module)
-  .add('Accordion default', () => <Accordion {...mockedProps} />)
-  .add('Accordion with first item opened', () => (
-    <Accordion {...mockWithFirstItemOpened} />
-  ))
-  .add('Accordion with last item opened', () => (
-    <Accordion {...mockWithLastItemOpened} />
-  ))
-  .add('Accordion with all items closed', () => (
-    <Accordion {...mockWithAllItemsClosed} />
-  ));
+export default {
+  title: 'Accordion',
+};
+
+export const AccordionDefault = () => <Accordion {...mockedProps} />;
+
+AccordionDefault.story = {
+  name: 'Accordion default',
+};
+
+export const AccordionWithFirstItemOpened = () => (
+  <Accordion {...mockWithFirstItemOpened} />
+);
+
+AccordionWithFirstItemOpened.story = {
+  name: 'Accordion with first item opened',
+};
+
+export const AccordionWithLastItemOpened = () => (
+  <Accordion {...mockWithLastItemOpened} />
+);
+
+AccordionWithLastItemOpened.story = {
+  name: 'Accordion with last item opened',
+};
+
+export const AccordionWithAllItemsClosed = () => (
+  <Accordion {...mockWithAllItemsClosed} />
+);
+
+AccordionWithAllItemsClosed.story = {
+  name: 'Accordion with all items closed',
+};

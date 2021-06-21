@@ -1,12 +1,33 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import Icon from '../../components/Icon';
 import { colors } from '../../components/shared/theme';
 
-storiesOf('Icon', module)
-  .add('default', () => <Icon name="info" />)
-  .add('with skin (color)', () => (
-    <Icon name="info" skin={colors.error['300']} />
-  ))
-  .add('with large size', () => <Icon name="info" size="large" />)
-  .add('with small size', () => <Icon name="info" size="small" />);
+export default {
+  title: 'Icon',
+};
+
+export const Default = () => <Icon name="info" />;
+
+Default.story = {
+  name: 'default',
+};
+
+export const WithSkinColor = () => (
+  <Icon name="info" skin={colors.error['300']} />
+);
+
+WithSkinColor.story = {
+  name: 'with skin (color)',
+};
+
+export const WithLargeSize = () => <Icon name="info" size="large" />;
+
+WithLargeSize.story = {
+  name: 'with large size',
+};
+
+export const WithSmallSize = () => <Icon name="info" size="small" />;
+
+WithSmallSize.story = {
+  name: 'with small size',
+};

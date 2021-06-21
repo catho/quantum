@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Tab, AutoExample, StoryContainer } from '@catho/quantum-storybook-ui';
 import { Tag } from '../../components';
 import {
@@ -25,10 +24,14 @@ const exampleTab = (
 const description = `Tags are used for items that need to be labeled,
 categorized, or organized using keywords that describe them.`;
 
-storiesOf('Tag', module).add('Tag', () => (
+export default {
+  title: 'Tag',
+};
+
+export const _Tag = () => (
   <AutoExample
     description={description}
     component={Tag}
     additionalTabs={exampleTab}
   />
-));
+);

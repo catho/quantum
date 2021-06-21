@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import Socials from '../../components/Socials';
 
@@ -21,40 +20,76 @@ const allItems = [
   },
 ];
 
-storiesOf('Socials', module)
-  .add('All items', () => (
-    <div>
-      <Socials items={allItems} />
-    </div>
-  ))
+export default {
+  title: 'Socials',
+};
 
-  .add('all items (24px)', () => (
-    <div>
-      <Socials items={allItems} size="24" />
-    </div>
-  ))
-  .add('only Facebook', () => (
-    <div>
-      <Socials items={[allItems[0]]} />
-    </div>
-  ))
-  .add('only Twitter', () => (
-    <div>
-      <Socials items={[allItems[1]]} />
-    </div>
-  ))
-  .add('only Youtube', () => (
-    <div>
-      <Socials items={[allItems[2]]} />
-    </div>
-  ))
-  .add('all items without box (24px)', () => (
-    <div>
-      <Socials items={allItems} withBox={false} size="24" />
-    </div>
-  ))
-  .add('all items without box', () => (
-    <div>
-      <Socials items={allItems} withBox={false} />
-    </div>
-  ));
+export const AllItems = () => (
+  <div>
+    <Socials items={allItems} />
+  </div>
+);
+
+AllItems.story = {
+  name: 'All items',
+};
+
+export const AllItems24Px = () => (
+  <div>
+    <Socials items={allItems} size="24" />
+  </div>
+);
+
+AllItems24Px.story = {
+  name: 'all items (24px)',
+};
+
+export const OnlyFacebook = () => (
+  <div>
+    <Socials items={[allItems[0]]} />
+  </div>
+);
+
+OnlyFacebook.story = {
+  name: 'only Facebook',
+};
+
+export const OnlyTwitter = () => (
+  <div>
+    <Socials items={[allItems[1]]} />
+  </div>
+);
+
+OnlyTwitter.story = {
+  name: 'only Twitter',
+};
+
+export const OnlyYoutube = () => (
+  <div>
+    <Socials items={[allItems[2]]} />
+  </div>
+);
+
+OnlyYoutube.story = {
+  name: 'only Youtube',
+};
+
+export const AllItemsWithoutBox24Px = () => (
+  <div>
+    <Socials items={allItems} withBox={false} size="24" />
+  </div>
+);
+
+AllItemsWithoutBox24Px.story = {
+  name: 'all items without box (24px)',
+};
+
+export const AllItemsWithoutBox = () => (
+  <div>
+    <Socials items={allItems} withBox={false} />
+  </div>
+);
+
+AllItemsWithoutBox.story = {
+  name: 'all items without box',
+};

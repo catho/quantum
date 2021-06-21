@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   Heading,
   CodeExample,
@@ -20,7 +19,11 @@ import * as AdvancedValidation from './AdvancedValidation';
 
 const importForm = `import { Form } from '@catho/quantum';`;
 
-storiesOf('Forms', module).add('Form', () => (
+export default {
+  title: 'Forms',
+};
+
+export const _Form = () => (
   <>
     <Heading name="Forms">
       A Form displays a set of related user input fields in a structured way,
@@ -109,4 +112,4 @@ storiesOf('Forms', module).add('Form', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

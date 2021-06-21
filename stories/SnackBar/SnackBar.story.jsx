@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   TabbedView,
   Tab,
@@ -21,7 +20,11 @@ import {
   SnackBarExampleCallback,
 } from './examples';
 
-storiesOf('SnackBar', module).add('SnackBar', () => (
+export default {
+  title: 'SnackBar',
+};
+
+export const _SnackBar = () => (
   <>
     <Heading name="SnackBar">
       SnackBars are used to give a actions support that have just been maded:
@@ -113,4 +116,4 @@ storiesOf('SnackBar', module).add('SnackBar', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

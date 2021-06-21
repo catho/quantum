@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Row, Col, Hide } from '../../components/Grid';
@@ -114,9 +113,36 @@ const OffsetExample = () => (
   </>
 );
 
-storiesOf('Grid', module)
-  .add('HorizontalExample', () => <HorizontalExample />)
-  .add('MobileDesktopExample', () => <MobileDesktopExample />)
-  .add('HideExample', () => <HideExample />)
-  .add('NoGuttersExample', () => <NoGuttersExample />)
-  .add('OffsetExample', () => <OffsetExample />);
+export default {
+  title: 'Grid',
+};
+
+export const _HorizontalExample = () => <HorizontalExample />;
+
+_HorizontalExample.story = {
+  name: 'HorizontalExample',
+};
+
+export const _MobileDesktopExample = () => <MobileDesktopExample />;
+
+_MobileDesktopExample.story = {
+  name: 'MobileDesktopExample',
+};
+
+export const _HideExample = () => <HideExample />;
+
+_HideExample.story = {
+  name: 'HideExample',
+};
+
+export const _NoGuttersExample = () => <NoGuttersExample />;
+
+_NoGuttersExample.story = {
+  name: 'NoGuttersExample',
+};
+
+export const _OffsetExample = () => <OffsetExample />;
+
+_OffsetExample.story = {
+  name: 'OffsetExample',
+};

@@ -1,9 +1,12 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Heading } from '@catho/quantum-storybook-ui';
 import Grid from './Grid';
 
-storiesOf('Foundation', module).add('Grid System', () => (
+export default {
+  title: 'Foundation',
+};
+
+export const GridSystem = () => (
   <>
     <Heading title="Grid">
       This Grid is based on{' '}
@@ -16,4 +19,4 @@ storiesOf('Foundation', module).add('Grid System', () => (
 
     <Grid />
   </>
-));
+);

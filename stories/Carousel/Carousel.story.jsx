@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   Tab,
   TabbedView,
@@ -13,7 +12,11 @@ import Carousel from '../../components/Carousel';
 import Alert from '../../components/Alert';
 import { content, contentWithLongTexts } from './Content';
 
-storiesOf('Carousel', module).add('Carousel', () => (
+export default {
+  title: 'Carousel',
+};
+
+export const _Carousel = () => (
   <>
     <Heading name="Carousel">
       Carousel is a component that presents cards to go through a series of
@@ -97,4 +100,4 @@ storiesOf('Carousel', module).add('Carousel', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

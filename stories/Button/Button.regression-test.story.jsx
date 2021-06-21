@@ -1,84 +1,190 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import Button from '../../components/Button';
-import SocialButton from '../../components/SocialButton';
 
-storiesOf('Buttons', module)
-  .add('primary default', () => <Button>Catho</Button>)
-  .add('primary disabled', () => <Button disabled>Catho</Button>)
-  .add('primary stroked', () => <Button stroked>Catho</Button>)
+export default {
+  title: 'Buttons',
+};
 
-  .add('primary full', () => <Button full>Catho</Button>)
-  .add('primary icon info', () => <Button icon="info">Catho</Button>)
-  .add('primary size xsmall', () => <Button size="xsmall">Catho</Button>)
-  .add('primary size small', () => <Button size="small">Catho</Button>)
-  .add('primary size large', () => <Button size="large">Catho</Button>)
-  .add('primary size xlarge', () => <Button size="xlarge">Catho</Button>)
+export const PrimaryDefault = () => <Button>Catho</Button>;
 
-  .add('secondary default', () => <Button skin="secondary">Catho</Button>)
-  .add('secondary disabled', () => (
-    <Button skin="secondary" disabled>
-      Catho
-    </Button>
-  ))
-  .add('secondary stroked', () => (
-    <Button skin="secondary" stroked>
-      Catho
-    </Button>
-  ))
+PrimaryDefault.story = {
+  name: 'primary default',
+};
 
-  .add('neutral default', () => <Button skin="neutral">Catho</Button>)
-  .add('neutral disabled', () => (
-    <Button skin="neutral" disabled>
-      Catho
-    </Button>
-  ))
-  .add('neutral stroked', () => (
-    <Button skin="neutral" stroked>
-      Catho
-    </Button>
-  ))
+export const PrimaryDisabled = () => <Button disabled>Catho</Button>;
 
-  .add('success default', () => <Button skin="success">Catho</Button>)
-  .add('success disabled', () => (
-    <Button skin="success" disabled>
-      Catho
-    </Button>
-  ))
-  .add('success stroked', () => (
-    <Button skin="success" stroked>
-      Catho
-    </Button>
-  ))
+PrimaryDisabled.story = {
+  name: 'primary disabled',
+};
 
-  .add('warning default', () => <Button skin="warning">Catho</Button>)
-  .add('warning disabled', () => (
-    <Button skin="warning" disabled>
-      Catho
-    </Button>
-  ))
-  .add('warning stroked', () => (
-    <Button skin="warning" stroked>
-      Catho
-    </Button>
-  ))
+export const PrimaryStroked = () => <Button stroked>Catho</Button>;
 
-  .add('error default', () => <Button skin="error">Catho</Button>)
-  .add('error disabled', () => (
-    <Button skin="error" disabled>
-      Catho
-    </Button>
-  ))
-  .add('error stroked', () => (
-    <Button skin="error" stroked>
-      Catho
-    </Button>
-  ));
+PrimaryStroked.story = {
+  name: 'primary stroked',
+};
 
-storiesOf('SocialButtons', module)
-  .add('provider google', () => (
-    <SocialButton provider="google" title="google-btn" />
-  ))
-  .add('provider facebook', () => (
-    <SocialButton provider="facebook" title="facebook-btn" />
-  ));
+export const PrimaryFull = () => <Button full>Catho</Button>;
+
+PrimaryFull.story = {
+  name: 'primary full',
+};
+
+export const PrimaryIconInfo = () => <Button icon="info">Catho</Button>;
+
+PrimaryIconInfo.story = {
+  name: 'primary icon info',
+};
+
+export const PrimarySizeXsmall = () => <Button size="xsmall">Catho</Button>;
+
+PrimarySizeXsmall.story = {
+  name: 'primary size xsmall',
+};
+
+export const PrimarySizeSmall = () => <Button size="small">Catho</Button>;
+
+PrimarySizeSmall.story = {
+  name: 'primary size small',
+};
+
+export const PrimarySizeLarge = () => <Button size="large">Catho</Button>;
+
+PrimarySizeLarge.story = {
+  name: 'primary size large',
+};
+
+export const PrimarySizeXlarge = () => <Button size="xlarge">Catho</Button>;
+
+PrimarySizeXlarge.story = {
+  name: 'primary size xlarge',
+};
+
+export const SecondaryDefault = () => <Button skin="secondary">Catho</Button>;
+
+SecondaryDefault.story = {
+  name: 'secondary default',
+};
+
+export const SecondaryDisabled = () => (
+  <Button skin="secondary" disabled>
+    Catho
+  </Button>
+);
+
+SecondaryDisabled.story = {
+  name: 'secondary disabled',
+};
+
+export const SecondaryStroked = () => (
+  <Button skin="secondary" stroked>
+    Catho
+  </Button>
+);
+
+SecondaryStroked.story = {
+  name: 'secondary stroked',
+};
+
+export const NeutralDefault = () => <Button skin="neutral">Catho</Button>;
+
+NeutralDefault.story = {
+  name: 'neutral default',
+};
+
+export const NeutralDisabled = () => (
+  <Button skin="neutral" disabled>
+    Catho
+  </Button>
+);
+
+NeutralDisabled.story = {
+  name: 'neutral disabled',
+};
+
+export const NeutralStroked = () => (
+  <Button skin="neutral" stroked>
+    Catho
+  </Button>
+);
+
+NeutralStroked.story = {
+  name: 'neutral stroked',
+};
+
+export const SuccessDefault = () => <Button skin="success">Catho</Button>;
+
+SuccessDefault.story = {
+  name: 'success default',
+};
+
+export const SuccessDisabled = () => (
+  <Button skin="success" disabled>
+    Catho
+  </Button>
+);
+
+SuccessDisabled.story = {
+  name: 'success disabled',
+};
+
+export const SuccessStroked = () => (
+  <Button skin="success" stroked>
+    Catho
+  </Button>
+);
+
+SuccessStroked.story = {
+  name: 'success stroked',
+};
+
+export const WarningDefault = () => <Button skin="warning">Catho</Button>;
+
+WarningDefault.story = {
+  name: 'warning default',
+};
+
+export const WarningDisabled = () => (
+  <Button skin="warning" disabled>
+    Catho
+  </Button>
+);
+
+WarningDisabled.story = {
+  name: 'warning disabled',
+};
+
+export const WarningStroked = () => (
+  <Button skin="warning" stroked>
+    Catho
+  </Button>
+);
+
+WarningStroked.story = {
+  name: 'warning stroked',
+};
+
+export const ErrorDefault = () => <Button skin="error">Catho</Button>;
+
+ErrorDefault.story = {
+  name: 'error default',
+};
+
+export const ErrorDisabled = () => (
+  <Button skin="error" disabled>
+    Catho
+  </Button>
+);
+
+ErrorDisabled.story = {
+  name: 'error disabled',
+};
+
+export const ErrorStroked = () => (
+  <Button skin="error" stroked>
+    Catho
+  </Button>
+);
+
+ErrorStroked.story = {
+  name: 'error stroked',
+};

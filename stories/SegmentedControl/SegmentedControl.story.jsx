@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   TabbedView,
   Tab,
@@ -18,7 +17,11 @@ import {
 } from '../../components/SegmentedControl/exampleContents';
 import SegmentedControl from '../../components/SegmentedControl';
 
-storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
+export default {
+  title: 'SegmentedControl',
+};
+
+export const _SegmentedControl = () => (
   <>
     <Heading name="SegmentedControl">
       The Segmented control component is a linear set of two or more alternation
@@ -85,4 +88,4 @@ storiesOf('SegmentedControl', module).add('SegmentedControl', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

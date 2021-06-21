@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
 import {
   Heading,
   StoryContainer,
@@ -69,7 +68,11 @@ const ColorSquare = styled.span`
   }
 `;
 
-storiesOf('Foundation', module).add('Theme', () => (
+export default {
+  title: 'Foundation',
+};
+
+export const Theme = () => (
   <>
     <Heading title="Theme">
       All Quantum components are initialized with the default Quantum theme.
@@ -258,4 +261,4 @@ storiesOf('Foundation', module).add('Theme', () => (
       </Details>
     </StoryContainer>
   </>
-));
+);

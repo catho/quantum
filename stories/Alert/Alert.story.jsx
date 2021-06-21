@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { AutoExample } from '@catho/quantum-storybook-ui';
 import { Alert } from '../../components';
 
@@ -17,7 +16,11 @@ const sampleChildren = (
   </span>
 );
 
-storiesOf('Alert', module).add('Alert', () => (
+export default {
+  title: 'Alert',
+};
+
+export const _Alert = () => (
   <AutoExample
     description={description}
     component={Alert}
@@ -27,4 +30,4 @@ storiesOf('Alert', module).add('Alert', () => (
       icon: 'info',
     }}
   />
-));
+);
