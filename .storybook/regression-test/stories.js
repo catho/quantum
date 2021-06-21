@@ -34,4 +34,5 @@ module.exports = [
   'Tooltip',
   'Stepper',
   'SegmentedControl',
+  'List',
 ].map(s => `../../stories/${s}/${s}.regression-test.story.jsx`);

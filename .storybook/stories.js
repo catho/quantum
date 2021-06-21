@@ -14,6 +14,7 @@ module.exports = [
   'Theme',
   'Icon',
   'Breakpoints',
+  'List',
 
   // Alert
   'Alert',
