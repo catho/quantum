@@ -20,7 +20,7 @@ export default {
   title: 'Accordion',
 };
 
-export const AccordionStory = () => (
+export const _Accordion = () => (
   <>
     <Heading name="Accordion">{description}</Heading>
     <TabbedView>

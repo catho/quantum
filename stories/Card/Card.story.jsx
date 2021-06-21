@@ -23,7 +23,7 @@ export default {
   title: 'card',
 };
 
-export const Card = () => (
+export const _Card = () => (
   <>
     <Typography />
     <Heading name="Card">
