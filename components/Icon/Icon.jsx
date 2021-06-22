@@ -3,27 +3,41 @@ import PropTypes from 'prop-types';
 import Accessible from '@material-ui/icons/Accessible';
 import AccessibleForward from '@material-ui/icons/AccessibleForward';
 import AccessTime from '@material-ui/icons/AccessTime';
+import AccountCircle from '@material-ui/icons/AccountCircle';
 import Add from '@material-ui/icons/Add';
+import AddCircle from '@material-ui/icons/AddCircle';
+import Apps from '@material-ui/icons/Apps';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 import Assessment from '@material-ui/icons/Assessment';
+import Assignment from '@material-ui/icons/Assignment';
+import AssignmentInd from '@material-ui/icons/AssignmentInd';
+import AttachMoney from '@material-ui/icons/AttachMoney';
 import Block from '@material-ui/icons/Block';
+import CameraAlt from '@material-ui/icons/CameraAlt';
 import Check from '@material-ui/icons/Check';
 import CheckBox from '@material-ui/icons/CheckBox';
 import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckCircle from '@material-ui/icons/CheckCircle';
 import Clear from '@material-ui/icons/Clear';
 import Close from '@material-ui/icons/Close';
+import Collections from '@material-ui/icons/Collections';
+import Contacts from '@material-ui/icons/Contacts';
 import ContactPhone from '@material-ui/icons/ContactPhone';
 import CreditCard from '@material-ui/icons/CreditCard';
 import DateRange from '@material-ui/icons/DateRange';
+import Delete from '@material-ui/icons/Delete';
 import Done from '@material-ui/icons/Done';
+import Edit from '@material-ui/icons/Edit';
 import EmojiPeople from '@material-ui/icons/EmojiPeople';
+import Equalizer from '@material-ui/icons/Equalizer';
 import Error from '@material-ui/icons/Error';
+import EventAvailable from '@material-ui/icons/EventAvailable';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import FilterList from '@material-ui/icons/FilterList';
 import Home from '@material-ui/icons/Home';
 import Info from '@material-ui/icons/Info';
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
@@ -34,22 +48,28 @@ import Lock from '@material-ui/icons/Lock';
 import Markunread from '@material-ui/icons/Markunread';
 import Menu from '@material-ui/icons/Menu';
 import MenuBook from '@material-ui/icons/MenuBook';
+import Notifications from '@material-ui/icons/Notifications';
 import Payment from '@material-ui/icons/Payment';
 import PermDeviceInformation from '@material-ui/icons/PermDeviceInformation';
 import Person from '@material-ui/icons/Person';
+import PhoneAndroid from '@material-ui/icons/PhoneAndroid';
 import RadioButtonChecked from '@material-ui/icons/RadioButtonChecked';
 import RadioButtonUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import Receipt from '@material-ui/icons/Receipt';
 import Search from '@material-ui/icons/Search';
+import Send from '@material-ui/icons/Send';
+import School from '@material-ui/icons/School';
 import Share from '@material-ui/icons/Share';
 import Star from '@material-ui/icons/Star';
 import StarBorder from '@material-ui/icons/StarBorder';
 import StarHalf from '@material-ui/icons/StarHalf';
 import SwapVert from '@material-ui/icons/SwapVert';
+import Tune from '@material-ui/icons/Tune';
 import VerifiedUser from '@material-ui/icons/VerifiedUser';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
+import Whatshot from '@material-ui/icons/Whatshot';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -68,26 +88,39 @@ const Icon = ({ name, skin, size, ...props }) => {
     accessible_forward: AccessibleForward,
     accessible: Accessible,
     add: Add,
+    add_circle: AddCircle,
+    apps: Apps,
     arrow_drop_down: ArrowDropDown,
     arrow_drop_up: ArrowDropUp,
     assessment: Assessment,
+    assignment: Assignment,
+    assignment_ind: AssignmentInd,
+    attach_money: AttachMoney,
     block: Block,
+    camera: CameraAlt,
     check_box_outline_blank: CheckBoxOutlineBlank,
     check_box: CheckBox,
     check_circle: CheckCircle,
     check: Check,
     clear: Clear,
     close: Close,
+    collections: Collections,
+    contacts: Contacts,
     contact_phone: ContactPhone,
     credit_card: CreditCard,
     date_range: DateRange,
+    delete: Delete,
     done: Done,
+    edit: Edit,
     emoji_people: EmojiPeople,
+    equalizer: Equalizer,
     error: Error,
+    event_available: EventAvailable,
     exit_to_app: ExitToApp,
     expand_less: ExpandLess,
     expand_more: ExpandMore,
     favorite_border: FavoriteBorder,
+    filter_list: FilterList,
     home: Home,
     info: Info,
     keyboard_arrow_down: KeyboardArrowDown,
@@ -98,22 +131,29 @@ const Icon = ({ name, skin, size, ...props }) => {
     markunread: Markunread,
     menu_book: MenuBook,
     menu: Menu,
+    notification: Notifications,
     payment: Payment,
     perm_device_information: PermDeviceInformation,
     person: Person,
+    person_circle: AccountCircle,
+    phone_android: PhoneAndroid,
     radio_button_checked: RadioButtonChecked,
     radio_button_unchecked: RadioButtonUnchecked,
     receipt: Receipt,
     search: Search,
+    send: Send,
+    school: School,
     share: Share,
     star_border: StarBorder,
     star_half: StarHalf,
     star: Star,
     swap_vert: SwapVert,
+    tune: Tune,
     verified_user: VerifiedUser,
     visibility_off: VisibilityOff,
     visibility: Visibility,
     warning: Warning,
+    whatshot: Whatshot,
   };
 
   if (!components[name]) return <span>{name}</span>;
