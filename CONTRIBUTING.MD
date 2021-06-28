@@ -57,9 +57,4 @@ nvm use
 
 ## Submitting a Pull Request
 
-Open your pull request, if you don't know how do it, check this [tutorial](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html/)
-
-## Code Style
-
-For the good manutance of the project, follow all the code styles:
-- [Editorconfig](http://gitlab.devel/frontend-platform/quantum/blob/master/.editorconfig)
+Open your pull request, if you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
