@@ -1,15 +1,13 @@
 import React from 'react';
 import 'loki/configure-react';
-import { addDecorator } from '@storybook/react';
 import { UiStyle } from '@catho/quantum-storybook-ui';
 import GlobalStyle from '../../components/GlobalStyle';
 
-const CSSDecorator = storyFn => <>{storyFn()}</>;
-const FontDecorator = storyFn => (
+const CSSDecorator = (Story, context) => (
   <>
+    <Story {...context} />
     <GlobalStyle />
-    {storyFn()}
   </>
 );
 
-export const decorators = [UiStyle, CSSDecorator, FontDecorator];
+export const decorators = [UiStyle, CSSDecorator];

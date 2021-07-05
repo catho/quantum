@@ -4,13 +4,16 @@ import { withOptions } from '@storybook/addon-options';
 import { UiStyle } from '@catho/quantum-storybook-ui';
 import GlobalStyle from '../components/GlobalStyle';
 
-const CSSDecorator = storyFn => <>{storyFn()}</>;
-const FontDecorator = storyFn => (
+const CSSDecorator = (Story, context) => (
   <>
+    <Story {...context} />
     <GlobalStyle />
-    {storyFn()}
   </>
 );
+
+export const parameters = {
+  layout: 'fullscreen',
+};
 
 export const decorators = [
   withOptions({
@@ -21,5 +24,4 @@ export const decorators = [
   }),
   UiStyle,
   CSSDecorator,
-  FontDecorator,
 ];
