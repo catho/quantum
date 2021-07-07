@@ -1,4 +1,4 @@
-// import 'babel-polyfill';
+import 'babel-polyfill';
 
 export default function*(prefix = '') {
   let _counter = -1;
