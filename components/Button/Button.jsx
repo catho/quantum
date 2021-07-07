@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { shadow, hexToRgba, theme as defaultTheme } from '../shared';
 
 import {
@@ -17,7 +17,7 @@ const ButtonIcon = styled(Icon)`
     theme: {
       spacing: { xsmall },
     },
-  }) => `
+  }) => css`
     margin-right: ${xsmall}px;
   `}
   pointer-events: none;
@@ -41,7 +41,7 @@ const buttonFontAndLineProps = ({ size, theme: { baseFontSize } }) => {
     xlarge: `${baseFontSize * 2}px`,
   };
 
-  return `
+  return css`
     font-size: ${fontSizes[size]};
     line-height: ${lineHeights[size]};
   `;
@@ -55,7 +55,10 @@ const StyledButton = styled.button`
   justify-content: center;
   border-radius: 4px;
 
-  ${props => `cursor: ${props.disabled ? 'not-allowed' : 'pointer'};`}
+  ${props =>
+    css`
+      cursor: ${props.disabled ? 'not-allowed' : 'pointer'};
+    `}
 
   ${buttonFontAndLineProps}
 
@@ -73,7 +76,9 @@ const StyledButton = styled.button`
       xlarge: `${xxxlarge + xsmall}px`,
     };
 
-    return `min-height: ${heights[size]};`;
+    return css`
+      min-height: ${heights[size]};
+    `;
   }}
 
   ${({
@@ -92,15 +97,17 @@ const StyledButton = styled.button`
       xlarge: `${xsmall - borderSize}px ${medium}px`,
     };
 
-    return `padding: ${paddings[size]};`;
+    return css`
+      padding: ${paddings[size]};
+    `;
   }}
 
   ${props =>
     props.center &&
-    `
-    margin-left: auto;
-    margin-right: auto;
-  `}
+    css`
+      margin-left: auto;
+      margin-right: auto;
+    `}
 
   transition: all 0.2s ease-in-out;
 
@@ -154,23 +161,19 @@ const StyledButton = styled.button`
       textColor = text0;
     }
 
-    return `
+    return css`
       background-color: ${bgColor};
       color: ${textColor};
       border: 2px solid ${borderColor};
 
-      ${shadow(2, neutral500)({ theme })}
-
-      :hover {
-        ${
-          !disabled
-            ? `
+      ${shadow(2, neutral500)({ theme })} :hover {
+        ${!disabled
+          ? css`
               ${shadow(4, mainColor900)({ theme })}
               background-color: ${stroked ? mainColor100 : mainColor900};
               border-color: ${mainColor900};
             `
-            : ''
-        }
+          : ''}
       }
 
       :focus,
@@ -179,37 +182,13 @@ const StyledButton = styled.button`
       }
 
       :active {
-        ${
-          !disabled
-            ? `
+        ${!disabled
+          ? css`
               ${shadow(8, mainColor900)({ theme })}
               background-color: ${stroked ? mainColor100 : mainColor900};
             `
-            : ''
-        }
+          : ''}
       }
-
-    ${ButtonIcon} {
-      ${({
-        size,
-        theme: {
-          spacing: { xxsmall, medium, large },
-        },
-      }) => {
-        const fontSizes = {
-          xsmall: `${medium}px`,
-          small: `${medium}px`,
-          medium: `${large}px`,
-          large: `${large}px`,
-          xlarge: `${large}px`,
-        };
-
-        return `
-          font-size: ${fontSizes[size]};
-          margin-right: ${xxsmall}px;
-        `;
-      }}
-    }
     `;
   }}
 `;
@@ -298,32 +277,32 @@ const IconButton = styled(Button)`
       },
     } = theme;
 
-    return `
-    border-radius: 50%;
-    border: none;
-    color: ${hexToRgba(mainColor500, 0.5)};
-    width: 40px;
+    return css`
+      border-radius: 50%;
+      border: none;
+      color: ${hexToRgba(mainColor500, 0.5)};
+      width: 40px;
 
-    background-color: transparent;
-    box-shadow: none;
-    outline: none;
-
-    ${ButtonIcon} {
-      margin-right: 0;
-    }
-
-    :hover,
-    :focus {
+      background-color: transparent;
       box-shadow: none;
-      background-color: ${hexToRgba(mainColor300, 0.4)};
-      color: ${mainColor700};
-    }
+      outline: none;
 
-    :active {
-      box-shadow: none;
-      background-color: ${hexToRgba(mainColor300, 0.5)};
-      color: ${mainColor700};
-    }
+      ${ButtonIcon} {
+        margin-right: 0;
+      }
+
+      :hover,
+      :focus {
+        box-shadow: none;
+        background-color: ${hexToRgba(mainColor300, 0.4)};
+        color: ${mainColor700};
+      }
+
+      :active {
+        box-shadow: none;
+        background-color: ${hexToRgba(mainColor300, 0.5)};
+        color: ${mainColor700};
+      }
     `;
   }}
 `;

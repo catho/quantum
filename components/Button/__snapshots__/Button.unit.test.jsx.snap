@@ -46,18 +46,6 @@ exports[`Button component Should match the snapshot 1`] = `
   background-color: #002F7B;
 }
 
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -116,18 +104,6 @@ exports[`Button component when center prop is set 1`] = `
 .c0:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 <button
@@ -189,18 +165,6 @@ exports[`Button component when full prop is set 1`] = `
   background-color: #002F7B;
 }
 
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -257,18 +221,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
 .c0:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 <button
@@ -329,18 +281,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
   background-color: #002F7B;
 }
 
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -397,18 +337,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
 .c0:active {
   box-shadow: 0px 5px 5px -3px rgba(0,77,64,0.2),0px 8px 10px 1px rgba(0,77,64,0.14),0px 3px 14px 2px rgba(0,77,64,0.12);
   background-color: #004D40;
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 <button
@@ -469,18 +397,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
   background-color: #d14900;
 }
 
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -537,18 +453,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
 .c0:active {
   box-shadow: 0px 5px 5px -3px rgba(172,0,26,0.2),0px 8px 10px 1px rgba(172,0,26,0.14),0px 3px 14px 2px rgba(172,0,26,0.12);
   background-color: #ac001a;
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 <button
@@ -609,18 +513,6 @@ exports[`Button component when there is a type set should match secondary snapsh
   background-color: #002F7B;
 }
 
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -677,18 +569,6 @@ exports[`Button component when there is a type set should match secondary snapsh
 .c0:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
 }
 
 <button
@@ -749,18 +629,6 @@ exports[`Button component when there is a type set should match secondary snapsh
   background-color: #002F7B;
 }
 
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .Button__ButtonIcon-sc-1ovnfsw-0 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -774,7 +642,7 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component with an icon should match secondary snapshot 1`] = `
-.c2 {
+.c1 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -825,18 +693,6 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
   background-color: #002F7B;
 }
 
-.c0 .c1 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .c1 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -846,7 +702,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -1066,7 +922,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 2`] = `
-.c2 {
+.c1 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -1117,18 +973,6 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
   background-color: #002F7B;
 }
 
-.c0 .c1 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .c1 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -1138,7 +982,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -1358,7 +1202,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 3`] = `
-.c2 {
+.c1 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -1409,18 +1253,6 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
   background-color: #002F7B;
 }
 
-.c0 .c1 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .c1 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -1430,7 +1262,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -1650,7 +1482,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 4`] = `
-.c2 {
+.c1 {
   margin-right: 8px;
   pointer-events: none;
   width: 24px;
@@ -1701,18 +1533,6 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
   background-color: #002F7B;
 }
 
-.c0 .c1 function (_ref6) {
-  -webkit-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -moz-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  -ms-var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  var: size = _ref6.size, _ref6$theme$spacing = _ref6.theme.spacing, xxsmall = _ref6$theme$spacing.xxsmall, medium = _ref6$theme$spacing.medium, large = _ref6$theme$spacing.large;
-  return: "\\n          font-size: ".concat(fontSizes[size],";\\n          margin-right: ").concat(xxsmall,"px;\\n        ");
-}
-
-.c0 .c1 function (_ref6) var fontSizes = {
-  xsmall: "".concat(medium,"px"), small:"".concat(medium,"px"), medium:"".concat(large,"px"), large:"".concat(large,"px"), xlarge:"".concat(large,"px");
-}
-
 <button
   className="c0"
   disabled={false}
@@ -1722,7 +1542,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
