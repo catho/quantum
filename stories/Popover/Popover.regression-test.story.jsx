@@ -133,7 +133,7 @@ ErrorTop.args = {
 };
 
 export const ErrorBottom = popoverExample.bind(null);
-WarningBottom.args = {
+ErrorBottom.args = {
   direction: 'bottom',
   skin: 'error',
 };

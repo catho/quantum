@@ -74,8 +74,8 @@ export const OrderedInline = () => (
   <List items={exampleItemsDefault} ordered inline />
 );
 
-Ordered.story = {
-  name: 'Ordered',
+OrderedInline.story = {
+  name: 'Ordered inline',
 };
 
 export const OrderedWithIcons = () => (
