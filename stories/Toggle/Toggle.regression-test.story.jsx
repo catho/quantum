@@ -1,8 +1,20 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import Toggle from '../../components/Toggle';
 
-storiesOf('Toggle', module)
-  .add('default', () => <Toggle />)
-  .add('checked', () => <Toggle checked />);
+export default {
+  title: 'Toggle',
+  component: Toggle,
+};
+
+export const Default = () => <Toggle />;
+
+Default.story = {
+  name: 'default',
+};
+
+export const Checked = () => <Toggle checked />;
+
+Checked.story = {
+  name: 'checked',
+};

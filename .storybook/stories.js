@@ -4,7 +4,7 @@
  * order is reflected in storybook sidebar
  */
 
-export default [
+module.exports = [
   'Introduction',
 
   // Foundations
@@ -79,4 +79,4 @@ export default [
   'Stepper',
 
   'SegmentedControl',
-].map(s => `./${s}/${s}.story.jsx`);
+].map(s => `../stories/${s}/${s}.story.jsx`);

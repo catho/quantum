@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   TabbedView,
   Tab,
@@ -14,7 +13,11 @@ import { Modal, Row, Col } from '../../components';
 import ModalExample from './examples/ModalExample';
 import ModalSmallTitleExample from './examples/ModalSmallTitleExample';
 
-storiesOf('Modal', module).add('Modal', () => (
+export default {
+  title: 'Modal',
+};
+
+export const _Modal = () => (
   <>
     <Heading name="Modal">
       Modals inform users about a task and can contain critical information,
@@ -121,4 +124,4 @@ storiesOf('Modal', module).add('Modal', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

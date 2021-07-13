@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   TabbedView,
   Tab,
@@ -21,7 +20,11 @@ import {
   SocialExampleWithoutBoxChangingSize,
 } from './examples/SocialExamples';
 
-storiesOf('Socials', module).add('Socials', () => (
+export default {
+  title: 'Socials',
+};
+
+export const _Socials = () => (
   <>
     <Heading name="Socials">
       Socials component is used to share the social media in applications.
@@ -100,4 +103,4 @@ storiesOf('Socials', module).add('Socials', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

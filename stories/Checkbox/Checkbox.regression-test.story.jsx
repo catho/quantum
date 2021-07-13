@@ -1,11 +1,42 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Checkbox } from '../../components';
 
-storiesOf('Checkbox', module)
-  .add('default', () => <Checkbox />)
-  .add('disabled', () => <Checkbox disabled />)
-  .add('checked', () => <Checkbox checked />)
-  .add('error', () => <Checkbox error="message" />)
-  .add('label', () => <Checkbox label="example" />)
-  .add('value', () => <Checkbox value="example" />);
+export default {
+  title: 'Checkbox',
+};
+
+export const Default = () => <Checkbox />;
+
+Default.story = {
+  name: 'default',
+};
+
+export const Disabled = () => <Checkbox disabled />;
+
+Disabled.story = {
+  name: 'disabled',
+};
+
+export const Checked = () => <Checkbox checked />;
+
+Checked.story = {
+  name: 'checked',
+};
+
+export const Error = () => <Checkbox error="message" />;
+
+Error.story = {
+  name: 'error',
+};
+
+export const Label = () => <Checkbox label="example" />;
+
+Label.story = {
+  name: 'label',
+};
+
+export const Value = () => <Checkbox value="example" />;
+
+Value.story = {
+  name: 'value',
+};

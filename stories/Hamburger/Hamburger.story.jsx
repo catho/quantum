@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   AutoExample,
   Tab,
@@ -77,10 +76,14 @@ const TabExample = (
 
 const description = `Hamburger is used for opening mobile menu. You can also pass a aria-label description to inform screen readers that there are new notifications`;
 
-storiesOf('Hamburger', module).add('Hamburger', () => (
+export default {
+  title: 'Hamburger',
+};
+
+export const _Hamburger = () => (
   <AutoExample
     description={description}
     component={Hamburger}
     additionalTabs={TabExample}
   />
-));
+);

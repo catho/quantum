@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Alert } from '../../components';
 
 const sampleChildren = (
@@ -18,25 +17,52 @@ const props = {
   icon: 'info',
 };
 
-storiesOf('Alert', module)
-  .add('default', () => <Alert {...props}>{sampleChildren}</Alert>)
-  .add('skin primary', () => (
-    <Alert {...props} skin="primary">
-      {sampleChildren}
-    </Alert>
-  ))
-  .add('skin success', () => (
-    <Alert {...props} skin="success">
-      {sampleChildren}
-    </Alert>
-  ))
-  .add('skin error', () => (
-    <Alert {...props} skin="error">
-      {sampleChildren}
-    </Alert>
-  ))
-  .add('skin warning', () => (
-    <Alert {...props} skin="warning">
-      {sampleChildren}
-    </Alert>
-  ));
+export default {
+  title: 'Alert',
+};
+
+export const Default = () => <Alert {...props}>{sampleChildren}</Alert>;
+
+Default.story = {
+  name: 'default',
+};
+
+export const SkinPrimary = () => (
+  <Alert {...props} skin="primary">
+    {sampleChildren}
+  </Alert>
+);
+
+SkinPrimary.story = {
+  name: 'skin primary',
+};
+
+export const SkinSuccess = () => (
+  <Alert {...props} skin="success">
+    {sampleChildren}
+  </Alert>
+);
+
+SkinSuccess.story = {
+  name: 'skin success',
+};
+
+export const SkinError = () => (
+  <Alert {...props} skin="error">
+    {sampleChildren}
+  </Alert>
+);
+
+SkinError.story = {
+  name: 'skin error',
+};
+
+export const SkinWarning = () => (
+  <Alert {...props} skin="warning">
+    {sampleChildren}
+  </Alert>
+);
+
+SkinWarning.story = {
+  name: 'skin warning',
+};

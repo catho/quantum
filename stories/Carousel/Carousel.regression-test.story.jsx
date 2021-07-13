@@ -1,18 +1,43 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import Carousel from '../../components/Carousel';
 import { content, contentWithLongTexts } from './Content';
 
-storiesOf('Carousel', module)
-  .add('Small cards', () => <Carousel cards={content} cardSize="small" />)
-  .add('Medium cards', () => <Carousel cards={content} cardSize="medium" />)
-  .add('Medium cards with ellipsis', () => (
-    <Carousel cards={contentWithLongTexts} cardSize="medium" />
-  ))
-  .add('Medium cards without dots', () => (
-    <Carousel cards={content} cardSize="medium" dotsPagination={false} />
-  ))
-  .add('Large cards', () => <Carousel cards={content} cardSize="large" />)
-  .add('Large cards with ellipsis', () => (
-    <Carousel cards={contentWithLongTexts} cardSize="large" />
-  ));
+export default {
+  title: 'Carousel',
+};
+
+export const SmallCards = () => <Carousel cards={content} cardSize="small" />;
+SmallCards.story = {
+  name: 'Small cards',
+};
+
+export const MediumCards = () => <Carousel cards={content} cardSize="medium" />;
+MediumCards.story = {
+  name: 'Medium cards',
+};
+
+export const MediumCardsWithEllipsis = () => (
+  <Carousel cards={contentWithLongTexts} cardSize="medium" />
+);
+MediumCardsWithEllipsis.story = {
+  name: 'Medium cards with ellipsis',
+};
+
+export const MediumCardsWithoutDots = () => (
+  <Carousel cards={content} cardSize="medium" dotsPagination={false} />
+);
+MediumCardsWithoutDots.story = {
+  name: 'Medium cards without dots',
+};
+
+export const LargeCards = () => <Carousel cards={content} cardSize="large" />;
+LargeCards.story = {
+  name: 'Large cards',
+};
+
+export const LargeCardsWithEllipsis = () => (
+  <Carousel cards={contentWithLongTexts} cardSize="large" />
+);
+LargeCardsWithEllipsis.story = {
+  name: 'Large cards with ellipsis',
+};

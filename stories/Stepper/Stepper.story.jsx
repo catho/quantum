@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   Tab,
   Example,
@@ -40,7 +39,11 @@ const exampleTab = (
   </Tab>
 );
 
-storiesOf('Stepper', module).add('Stepper', () => (
+export default {
+  title: 'Stepper',
+};
+
+export const _Stepper = () => (
   <>
     <AutoExample
       description="The stepper component is used to update the progress status using logical
@@ -61,4 +64,4 @@ storiesOf('Stepper', module).add('Stepper', () => (
       additionalTabs={exampleTab}
     />
   </>
-));
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import RadioGroup from '../../components/RadioGroup';
 
@@ -25,11 +24,28 @@ disabledOptions[1] = {
   disabled: true,
 };
 
-storiesOf('RadioGroup', module)
-  .add('default', () => <RadioGroup name="groceries" options={options} />)
-  .add('error', () => (
-    <RadioGroup name="groceries" options={options} error="message" />
-  ))
-  .add('disabled', () => (
-    <RadioGroup name="groceries" options={disabledOptions} />
-  ));
+export default {
+  title: 'RadioGroup',
+};
+
+export const Default = () => <RadioGroup name="groceries" options={options} />;
+
+Default.story = {
+  name: 'default',
+};
+
+export const Error = () => (
+  <RadioGroup name="groceries" options={options} error="message" />
+);
+
+Error.story = {
+  name: 'error',
+};
+
+export const Disabled = () => (
+  <RadioGroup name="groceries" options={disabledOptions} />
+);
+
+Disabled.story = {
+  name: 'disabled',
+};

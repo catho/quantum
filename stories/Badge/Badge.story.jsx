@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   AutoExample,
   Tab,
@@ -88,7 +87,11 @@ const TabExample = (
 const description = `Badges are used for showing quantity of something, as
 warnings, inbox messages and others.`;
 
-storiesOf('Badge', module).add('Badge', () => (
+export default {
+  title: 'Badge',
+};
+
+export const _Badge = () => (
   <AutoExample
     description={description}
     component={Badge}
@@ -98,4 +101,4 @@ storiesOf('Badge', module).add('Badge', () => (
     }}
     additionalTabs={TabExample}
   />
-));
+);

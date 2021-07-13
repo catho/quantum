@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
 import {
   AutoPropsApi,
   CodeExample,
@@ -33,7 +32,11 @@ CheckboxGroupExample.propTypes = {
   component: PropTypes.node.isRequired,
 };
 
-storiesOf('Forms', module).add('Checkbox', () => (
+export default {
+  title: 'Forms',
+};
+
+export const _Checkbox = () => (
   <>
     <Heading name="Checkbox">
       Checkboxes are used when there is a list of options and the user may
@@ -90,4 +93,4 @@ storiesOf('Forms', module).add('Checkbox', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

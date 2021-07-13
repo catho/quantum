@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
 import {
   AutoPropsApi,
   Heading,
@@ -44,7 +43,11 @@ DropdownExample.propTypes = {
 
 const importCode = "import { Dropdown } from '@catho/quantum';";
 
-storiesOf('Forms', module).add('Dropdown', () => (
+export default {
+  title: 'Forms',
+};
+
+export const _Dropdown = () => (
   <>
     <Heading name="Dropdown">
       A dropdown receives user input, allowing it to choose one of several
@@ -95,4 +98,4 @@ storiesOf('Forms', module).add('Dropdown', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

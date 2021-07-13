@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, useRef, useState, createRef } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 
@@ -15,51 +15,20 @@ const TriggerBlock = styled.div`
   cursor: pointer;
 `;
 
-class Popover extends Component {
-  constructor(props) {
-    super(props);
+const Popover = ({
+  visible,
+  onClose,
+  placement,
+  trigger,
+  children,
+  ...rest
+}) => {
+  const [isVisible, setIsVisible] = useState(visible);
 
-    this.wrapperRef = React.createRef();
-    this.state = {
-      visible: undefined,
-    };
-  }
+  const wrapperRef = createRef();
+  let contentRef = useRef(null);
 
-  componentDidMount() {
-    if (this.isVisible) {
-      this.setPopoverPosition();
-    }
-  }
-
-  componentDidUpdate() {
-    if (this.isVisible) {
-      this.setPopoverPosition();
-    }
-  }
-
-  get isVisible() {
-    const { visible: visibleState } = this.state;
-    const { visible } = this.props;
-
-    return visibleState !== undefined ? visibleState : visible;
-  }
-
-  handleVisible = visible => {
-    const { onClose } = this.props;
-    if (!visible) {
-      onClose();
-    }
-    this.setState({ visible }, () => {
-      const { visible: newVisibleValue } = this.state;
-
-      if (newVisibleValue) {
-        this.setPopoverPosition();
-      }
-    });
-  };
-
-  setPopoverPosition = () => {
-    const { placement } = this.props;
+  const setPopoverPosition = () => {
     const {
       current: {
         offsetTop: popoverWrapperTopValue,
@@ -67,14 +36,14 @@ class Popover extends Component {
         offsetWidth: triggerWidthValue,
         offsetHeight: triggerHeightValue,
       },
-    } = this.wrapperRef;
+    } = wrapperRef;
     const {
       innerContentRef,
       innerContentRef: {
         offsetWidth: popoverContentWidth,
         offsetHeight: popoverContentHeight,
       },
-    } = this.contentRef;
+    } = contentRef;
 
     const position = popoverPosition({
       popoverWrapperTopValue,
@@ -93,31 +62,43 @@ class Popover extends Component {
     }
   };
 
-  render() {
-    const { children, trigger, placement, visible, ...rest } = this.props;
+  useEffect(() => {
+    if (isVisible) {
+      setPopoverPosition();
+    }
+  }, [isVisible]);
 
-    return (
-      <Wrapper ref={this.wrapperRef}>
-        {this.isVisible && (
-          <Content
-            placement={placement}
-            visible={visible}
-            onPopoverClose={() => this.handleVisible(false)}
-            ref={element => {
-              this.contentRef = element;
-            }}
-            {...rest}
-          >
-            {children}
-          </Content>
-        )}
-        <TriggerBlock onClick={() => this.handleVisible(true)}>
-          {trigger}
-        </TriggerBlock>
-      </Wrapper>
-    );
-  }
-}
+  const handleVisible = newVisibleValue => {
+    if (isVisible === newVisibleValue) {
+      return;
+    }
+
+    setIsVisible(newVisibleValue);
+
+    if (!isVisible) {
+      onClose();
+    }
+  };
+
+  return (
+    <Wrapper ref={wrapperRef}>
+      {isVisible && (
+        <Content
+          placement={placement}
+          visible={isVisible}
+          onPopoverClose={() => handleVisible(false)}
+          ref={element => {
+            contentRef = element;
+          }}
+          {...rest}
+        >
+          {children}
+        </Content>
+      )}
+      <TriggerBlock onClick={() => handleVisible(true)}>{trigger}</TriggerBlock>
+    </Wrapper>
+  );
+};
 
 TriggerBlock.displayName = 'TriggerBlock';
 

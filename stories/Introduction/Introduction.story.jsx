@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Heading } from '@catho/quantum-storybook-ui';
 import styled from 'styled-components';
 import Introduction from './Introduction';
@@ -18,7 +17,11 @@ const StyledHeading = styled(Heading)`
   }
 `;
 
-storiesOf('Introduction', module).add('Getting started', () => (
+export default {
+  title: 'Introduction',
+};
+
+export const GettingStarted = () => (
   <>
     <StyledHeading title="Quantum">
       CSS in JS based reusable components, are the core of Quantum
@@ -27,4 +30,8 @@ storiesOf('Introduction', module).add('Getting started', () => (
 
     <Introduction />
   </>
-));
+);
+
+GettingStarted.story = {
+  name: 'Getting started',
+};

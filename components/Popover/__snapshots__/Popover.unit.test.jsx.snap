@@ -504,7 +504,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="top"
         skin="neutral"
@@ -730,7 +729,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -900,7 +899,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="top"
             skin="neutral"
             theme={
@@ -1125,11 +1123,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div
@@ -3439,7 +3436,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="top"
         skin="neutral"
@@ -3665,7 +3661,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -3835,7 +3831,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="top"
             skin="neutral"
             theme={
@@ -4060,11 +4055,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div
@@ -6378,7 +6372,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="top"
         skin="success"
@@ -6604,7 +6597,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -6778,7 +6771,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="top"
             skin="success"
             theme={
@@ -7003,11 +6995,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div
@@ -9325,7 +9316,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="top"
         skin="warning"
@@ -9551,7 +9541,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -9729,7 +9719,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="top"
             skin="warning"
             theme={
@@ -9954,11 +9943,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div
@@ -12280,7 +12268,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="top"
         skin="error"
@@ -12506,7 +12493,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -12688,7 +12675,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="top"
             skin="error"
             theme={
@@ -12913,11 +12899,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div
@@ -15239,7 +15224,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="bottom"
         skin="neutral"
@@ -15465,7 +15449,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -15647,7 +15631,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="bottom"
             skin="neutral"
             theme={
@@ -15872,11 +15855,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div
@@ -18195,7 +18177,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="left"
         skin="neutral"
@@ -18421,7 +18402,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -18600,7 +18581,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="left"
             skin="neutral"
             theme={
@@ -18825,11 +18805,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div
@@ -21148,7 +21127,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
     >
       <Content
         inverted={false}
-        onClose={[Function]}
         onPopoverClose={[Function]}
         placement="right"
         skin="neutral"
@@ -21374,7 +21352,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
             },
           }
         }
-        visible={false}
+        visible={true}
       >
         <Portal
           containerInfo={
@@ -21553,7 +21531,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         >
           <Content__PopoverContent
             inverted={false}
-            onClose={[Function]}
             placement="right"
             skin="neutral"
             theme={
@@ -21778,11 +21755,10 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 },
               }
             }
-            visible={false}
+            visible={true}
           >
             <div
               className="c1"
-              onClose={[Function]}
             >
               <PopoverChildren>
                 <div

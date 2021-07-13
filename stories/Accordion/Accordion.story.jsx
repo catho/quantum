@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   Heading,
   Tab,
@@ -17,7 +16,11 @@ import accordionExamples from './examples';
 const description =
   "An accordion is a vertical stack of interactive headings used to toggle the display of further information; each item can be 'collapsed', with just a short label visible, or 'expanded' to show the complete content.";
 
-storiesOf('Accordion', module).add('Accordion', () => (
+export default {
+  title: 'Accordion',
+};
+
+export const _Accordion = () => (
   <>
     <Heading name="Accordion">{description}</Heading>
     <TabbedView>
@@ -72,4 +75,4 @@ storiesOf('Accordion', module).add('Accordion', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import {
   Heading,
@@ -27,7 +26,11 @@ const Small = styled.small`
 const description =
   'List is a component with continuous, vertical indexes of text or icons.';
 
-storiesOf('Foundation', module).add('List', () => (
+export default {
+  title: 'Foundation',
+};
+
+export const _List = () => (
   <>
     <Heading name="List">{description}</Heading>
     <TabbedView>
@@ -125,4 +128,4 @@ storiesOf('Foundation', module).add('List', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   Heading,
   TabbedView,
@@ -20,7 +19,11 @@ import {
 const badge = <Badge number={4} />;
 const icon = <Icon name="star" />;
 
-storiesOf('TabbedView', module).add('TabbedView', () => (
+export default {
+  title: 'TabbedView',
+};
+
+export const _TabbedView = () => (
   <>
     <Heading name="TabbedView">
       TabbedView and Tab are components created to organize content into
@@ -252,4 +255,4 @@ storiesOf('TabbedView', module).add('TabbedView', () => (
       </Tab>
     </TabbedView>
   </>
-));
+);
