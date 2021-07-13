@@ -1,6 +1,6 @@
 ## Maintainers
 
-- Alan Oliveira ([alan.oliveira@catho.com](mailto:alan.oliveira@catho.com?Subject=Candidate%20Home%20Page%20Issue))
-- Allysson dos Santos ([allysson.santos@catho.com](mailto:allysson.santos@catho.com?Subject=Candidate%20Home%20Page%20Issue))
-- Daniel da Silva ([daniel.silva@catho.com](mailto:daniel.silva@catho.com?Subject=Candidate%20Home%20Page%20Issue))
-- Gabriel Gonçalves Daltoso ([gabriel.daltoso@catho.com](mailto:gabriel.daltoso@catho.com?Subject=Candidate%20Home%20Page%20Issue))
+- Rodrigo Clemente ([rodrigo.clemente@catho.com](mailto:rodrigo.clemente@catho.com?Subject=Candidate%20Home%20Page%20Issue))
+- Raphael Oliveira ([raphael.oliveira@catho.com](mailto:raphael.oliveira@catho.com?Subject=Candidate%20Home%20Page%20Issue))
+- Ton Cabral do Nascimento ([washington.cabral@catho.com](mailto:washington.cabral@catho.com?Subject=Candidate%20Home%20Page%20Issue))
+- Matheus Rodrigues Pires ([matheus.pires@catho.com](mailto:matheus.pires@catho.com?Subject=Candidate%20Home%20Page%20Issue))
