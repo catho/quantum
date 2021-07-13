@@ -7,14 +7,11 @@ export default {
   component: Toggle,
 };
 
-export const Default = () => <Toggle />;
+const Template = args => <Toggle {...args} />;
 
-Default.story = {
-  name: 'default',
-};
+export const Default = Template.bind({});
 
-export const Checked = () => <Toggle checked />;
-
-Checked.story = {
-  name: 'checked',
+export const Checked = Template.bind({});
+Checked.args = {
+  checked: true,
 };

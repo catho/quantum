@@ -137,7 +137,7 @@ export default {
   title: 'Buttons',
 };
 
-export const _Button = () => (
+export const ButtonStory = () => (
   <>
     <AutoExample
       description={description}
@@ -150,7 +150,7 @@ export const _Button = () => (
   </>
 );
 
-export const _SocialButton = () => (
+export const SocialButtonStory = () => (
   <>
     <AutoExample
       description={socialDescription}

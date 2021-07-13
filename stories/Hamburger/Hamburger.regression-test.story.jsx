@@ -10,54 +10,41 @@ const InvertedBackground = styled.span`
 
 export default {
   title: 'Hamburger',
+  component: Hamburger,
 };
 
-export const Default = () => (
+const Template = args => <Hamburger {...args} />;
+const TemplateInverted = args => (
   <InvertedBackground>
-    <Hamburger />
+    <Hamburger {...args} />
   </InvertedBackground>
 );
 
-Default.story = {
-  name: 'default',
+export const Default = TemplateInverted.bind({});
+
+export const ShowNotification = TemplateInverted.bind({});
+ShowNotification.args = {
+  showNotification: true,
 };
 
-export const ShowNotification = () => (
-  <InvertedBackground>
-    <Hamburger showNotification />
-  </InvertedBackground>
-);
-
-ShowNotification.story = {
-  name: 'showNotification',
+export const IsOpened = TemplateInverted.bind({});
+IsOpened.args = {
+  isOpened: true,
 };
 
-export const IsOpened = () => (
-  <InvertedBackground>
-    <Hamburger isOpened />
-  </InvertedBackground>
-);
-
-IsOpened.story = {
-  name: 'isOpened',
+export const Inverted = Template.bind({});
+Inverted.args = {
+  inverted: true,
 };
 
-export const Inverted = () => <Hamburger inverted />;
-
-Inverted.story = {
-  name: 'inverted',
+export const InvertedShowNotification = Template.bind({});
+InvertedShowNotification.args = {
+  ...Inverted.args,
+  ...ShowNotification.args,
 };
 
-export const InvertedShowNotification = () => (
-  <Hamburger inverted showNotification />
-);
-
-InvertedShowNotification.story = {
-  name: 'inverted showNotification',
-};
-
-export const InvertedIsOpened = () => <Hamburger inverted isOpened />;
-
-InvertedIsOpened.story = {
-  name: 'inverted isOpened',
+export const InvertedIsOpened = Template.bind({});
+InvertedIsOpened.args = {
+  ...Inverted.args,
+  ...IsOpened.args,
 };

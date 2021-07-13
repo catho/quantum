@@ -4,40 +4,41 @@ import { content, contentWithLongTexts } from './Content';
 
 export default {
   title: 'Carousel',
+  component: Carousel,
 };
 
-export const SmallCards = () => <Carousel cards={content} cardSize="small" />;
-SmallCards.story = {
-  name: 'Small cards',
-};
-
-export const MediumCards = () => <Carousel cards={content} cardSize="medium" />;
-MediumCards.story = {
-  name: 'Medium cards',
-};
-
-export const MediumCardsWithEllipsis = () => (
-  <Carousel cards={contentWithLongTexts} cardSize="medium" />
+const Template = args => <Carousel cards={content} {...args} />;
+const TemplateWithLongText = args => (
+  <Carousel cards={contentWithLongTexts} {...args} />
 );
-MediumCardsWithEllipsis.story = {
-  name: 'Medium cards with ellipsis',
+
+export const SmallCards = Template.bind({});
+SmallCards.args = {
+  cardSize: 'small',
 };
 
-export const MediumCardsWithoutDots = () => (
-  <Carousel cards={content} cardSize="medium" dotsPagination={false} />
-);
-MediumCardsWithoutDots.story = {
-  name: 'Medium cards without dots',
+export const MediumCards = Template.bind({});
+MediumCards.args = {
+  cardSize: 'medium',
 };
 
-export const LargeCards = () => <Carousel cards={content} cardSize="large" />;
-LargeCards.story = {
-  name: 'Large cards',
+export const MediumCardsWithEllipsis = TemplateWithLongText.bind({});
+MediumCardsWithEllipsis.args = {
+  ...MediumCards.args,
 };
 
-export const LargeCardsWithEllipsis = () => (
-  <Carousel cards={contentWithLongTexts} cardSize="large" />
-);
-LargeCardsWithEllipsis.story = {
-  name: 'Large cards with ellipsis',
+export const MediumCardsWithoutDots = Template.bind({});
+MediumCardsWithoutDots.args = {
+  ...MediumCards.args,
+  dotsPagination: false,
+};
+
+export const LargeCards = Template.bind({});
+LargeCards.args = {
+  cardSize: 'large',
+};
+
+export const LargeCardsWithEllipsis = TemplateWithLongText.bind({});
+LargeCardsWithEllipsis.args = {
+  ...LargeCards.args,
 };

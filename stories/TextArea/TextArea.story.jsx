@@ -7,8 +7,8 @@ export default {
   title: 'Forms',
 };
 
-export const _TextArea = () => <AutoExample component={TextArea} />;
+export const TextAreaStory = () => <AutoExample component={TextArea} />;
 
-_TextArea.story = {
+TextAreaStory.story = {
   name: 'Text area',
 };

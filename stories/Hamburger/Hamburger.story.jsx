@@ -80,7 +80,7 @@ export default {
   title: 'Hamburger',
 };
 
-export const _Hamburger = () => (
+export const HamburgerStory = () => (
   <AutoExample
     description={description}
     component={Hamburger}

@@ -7,68 +7,43 @@ const label = '% percent to finish';
 
 export default {
   title: 'ProgressBar',
+  component: ProgressBar,
 };
 
-export const NeutralDefault = () => (
+const Template = args => (
   <ProgressBar
-    skin="neutral"
     progressPercent={progressPercent}
     progressText={progressText}
+    {...args}
   />
 );
 
-NeutralDefault.story = {
-  name: 'neutral default',
+export const Neutral = Template.bind({});
+Neutral.args = {
+  skin: 'neutral',
 };
 
-export const NeutralWithLabel = () => (
-  <ProgressBar
-    skin="neutral"
-    progressPercent={progressPercent}
-    progressText={progressText}
-    label={label}
-  />
-);
-
-NeutralWithLabel.story = {
-  name: 'neutral with label',
+export const NeutralWithLabel = Template.bind({});
+NeutralWithLabel.args = {
+  ...Neutral.args,
+  label,
 };
 
-export const PrimaryWithLabel = () => (
-  <ProgressBar
-    skin="primary"
-    progressPercent={progressPercent}
-    progressText={progressText}
-    label={label}
-  />
-);
-
-PrimaryWithLabel.story = {
-  name: 'primary with label',
+export const PrimaryWithLabel = Template.bind({});
+PrimaryWithLabel.args = {
+  skin: 'primary',
+  label,
 };
 
-export const SecondaryWithLabel = () => (
-  <ProgressBar
-    skin="secondary"
-    progressPercent={progressPercent}
-    progressText={progressText}
-    label={label}
-  />
-);
-
-SecondaryWithLabel.story = {
-  name: 'secondary with label',
+export const SecondaryWithLabel = Template.bind({});
+SecondaryWithLabel.args = {
+  skin: 'secondary',
+  label,
 };
 
-export const PrimaryWithDifferentsValuesAndPercent = () => (
-  <ProgressBar
-    skin="primary"
-    progressPercent={progressPercent}
-    progressText={305}
-    label=" files loaded from 1220 total"
-  />
-);
-
-PrimaryWithDifferentsValuesAndPercent.story = {
-  name: 'primary with differents values and percent',
+export const PrimaryWithDifferentValuesAndPercent = Template.bind({});
+PrimaryWithDifferentValuesAndPercent.args = {
+  skin: 'primary',
+  progressText: 305,
+  label: ' files loaded from 1220 total',
 };

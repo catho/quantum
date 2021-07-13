@@ -26,7 +26,7 @@ export default {
   title: 'Forms',
 };
 
-export const _Input = () => (
+export const InputStory = () => (
   <>
     <AutoExample
       component={Input}

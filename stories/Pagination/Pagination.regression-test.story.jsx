@@ -4,42 +4,33 @@ import { Pagination } from '../../components';
 
 export default {
   title: 'Pagination',
+  component: Pagination,
 };
 
-export const Basic = () => <Pagination totalPages={6} />;
+const Template = args => {
+  const { totalPages = 10, ...otherArgs } = args;
 
-Basic.story = {
-  name: 'basic',
+  return <Pagination totalPages={totalPages} {...otherArgs} />;
 };
 
-export const SeveralPagesAndActive = () => (
-  <Pagination totalPages={10} activePage={5} />
-);
-
-SeveralPagesAndActive.story = {
-  name: 'several pages and active',
+export const Basic = Template.bind({});
+Basic.args = {
+  totalPages: 6,
 };
 
-export const CustomNextPrevButtons = () => (
-  <Pagination
-    prevButtonText="Previous Page"
-    nextButtonText="Next Page"
-    totalPages={10}
-    activePage={5}
-  />
-);
-
-CustomNextPrevButtons.story = {
-  name: 'custom next prev buttons',
+export const SeveralPagesAndActive = Template.bind({});
+SeveralPagesAndActive.args = {
+  activePage: 5,
 };
 
-export const HelperText = () => (
-  <Pagination
-    totalPages={10}
-    infoFormatter={(activePage, totalPage) => `${activePage} of ${totalPage}`}
-  />
-);
+export const CustomPreviousAndNextButtons = Template.bind({});
+CustomPreviousAndNextButtons.args = {
+  ...SeveralPagesAndActive.args,
+  prevButtonText: 'Previous Page',
+  nextButtonText: 'Next Page',
+};
 
-HelperText.story = {
-  name: 'helperText',
+export const HelperText = Template.bind({});
+HelperText.args = {
+  infoFormatter: (activePage, totalPage) => `${activePage} of ${totalPage}`,
 };

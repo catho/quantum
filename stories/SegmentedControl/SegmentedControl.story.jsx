@@ -21,7 +21,7 @@ export default {
   title: 'SegmentedControl',
 };
 
-export const _SegmentedControl = () => (
+export const SegmentedControlStory = () => (
   <>
     <Heading name="SegmentedControl">
       The Segmented control component is a linear set of two or more alternation

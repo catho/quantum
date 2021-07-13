@@ -5,56 +5,54 @@ import Icon from '../../components/Icon';
 
 export default {
   title: 'Badge',
+  component: Badge,
 };
 
-export const Default = () => <Badge number={10} />;
-
-Default.story = {
-  name: 'default',
+const Template = args => {
+  const { children, number = 10, ...otherArgs } = args;
+  return (
+    <Badge number={number} {...otherArgs}>
+      {children}
+    </Badge>
+  );
 };
 
-export const HighNumber = () => <Badge number={110} />;
+export const Default = Template.bind({});
 
-HighNumber.story = {
-  name: 'high number',
+export const HighNumber = Template.bind({});
+HighNumber.args = {
+  number: 110,
 };
 
-export const SkinPrimary = () => <Badge number={10} skin="primary" />;
-
-SkinPrimary.story = {
-  name: 'skin primary',
+export const SkinPrimary = Template.bind({});
+SkinPrimary.args = {
+  skin: 'primary',
 };
 
-export const SkinSecondary = () => <Badge number={10} skin="secondary" />;
-
-SkinSecondary.story = {
-  name: 'skin secondary',
+export const SkinSecondary = Template.bind({});
+SkinSecondary.args = {
+  skin: 'secondary',
 };
 
-export const SkinSuccess = () => <Badge number={10} skin="success" />;
-
-SkinSuccess.story = {
-  name: 'skin success',
+export const SkinSuccess = Template.bind({});
+SkinSuccess.args = {
+  skin: 'success',
 };
 
-export const SkinError = () => <Badge number={10} skin="error" />;
-
-SkinError.story = {
-  name: 'skin error',
+export const SkinError = Template.bind({});
+SkinError.args = {
+  skin: 'error',
 };
 
-export const Inverted = () => <Badge number={10} inverted />;
-
-Inverted.story = {
-  name: 'inverted',
+export const Inverted = Template.bind({});
+Inverted.args = {
+  inverted: true,
 };
 
-export const Dot = () => (
-  <Badge skin="secondary" number={9999} dot>
-    <Icon name="date_range" />
-  </Badge>
-);
-
-Dot.story = {
-  name: 'dot',
+export const Dot = Template.bind({});
+Dot.args = {
+  skin: 'secondary',
+  number: 9999,
+  dot: true,
+  children: <Icon name="date_range" />,
 };

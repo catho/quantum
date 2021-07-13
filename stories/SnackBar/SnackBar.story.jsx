@@ -24,7 +24,7 @@ export default {
   title: 'SnackBar',
 };
 
-export const _SnackBar = () => (
+export const SnackBarStory = () => (
   <>
     <Heading name="SnackBar">
       SnackBars are used to give a actions support that have just been maded:

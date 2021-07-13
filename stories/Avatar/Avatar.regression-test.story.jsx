@@ -7,42 +7,34 @@ const encodedPicture =
 
 export default {
   title: 'Avatar',
+  component: Avatar,
 };
 
-export const Default = () => <Avatar />;
+const Template = args => <Avatar {...args} />;
 
-Default.story = {
-  name: 'default',
+export const Default = Template.bind({});
+
+export const Notification = Template.bind({});
+Notification.args = {
+  hasNotification: true,
 };
 
-export const WithNotification = () => <Avatar hasNotification />;
-
-WithNotification.story = {
-  name: 'with notification',
+export const Picture = Template.bind({});
+Picture.args = {
+  picture: encodedPicture,
 };
 
-export const WithPicture = () => <Avatar picture={encodedPicture} />;
-
-WithPicture.story = {
-  name: 'with picture',
+export const TextAndToggle = Template.bind({});
+TextAndToggle.args = {
+  text: 'User Profile',
+  hasToggle: true,
 };
 
-export const WithTextAndToggle = () => <Avatar text="User Profile" hasToggle />;
-
-WithTextAndToggle.story = {
-  name: 'with text and toggle',
-};
-
-export const WithAllProps = () => (
-  <Avatar
-    picture={encodedPicture}
-    text="Profile"
-    href="#profile"
-    hasNotification
-    hasToggle
-  />
-);
-
-WithAllProps.story = {
-  name: 'with all props',
+export const AllProps = Template.bind({});
+AllProps.args = {
+  ...Picture.args,
+  ...Notification.args,
+  ...TextAndToggle.args,
+  text: 'Profile',
+  href: '#profile',
 };

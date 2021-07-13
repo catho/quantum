@@ -28,7 +28,7 @@ export default {
   title: 'Tag',
 };
 
-export const _Tag = () => (
+export const TagStory = () => (
   <AutoExample
     description={description}
     component={Tag}

@@ -17,35 +17,34 @@ const options = [
   },
 ];
 
-const disabledOptions = [...options];
-disabledOptions[1] = {
-  value: 'Mustard',
-  label: 'Mustard',
-  disabled: true,
-};
+const disabledOptions = [
+  {
+    value: 'Mustard',
+    label: 'Mustard',
+    disabled: true,
+  },
+  ...options,
+];
 
 export default {
   title: 'RadioGroup',
+  component: RadioGroup,
 };
 
-export const Default = () => <RadioGroup name="groceries" options={options} />;
-
-Default.story = {
-  name: 'default',
-};
-
-export const Error = () => (
-  <RadioGroup name="groceries" options={options} error="message" />
+const Template = args => (
+  <RadioGroup name="groceries" options={options} {...args} />
 );
 
-Error.story = {
-  name: 'error',
+export const Default = Template.bind({});
+
+export const Error = Template.bind({});
+Error.args = {
+  error: 'message',
 };
 
 export const Disabled = () => (
   <RadioGroup name="groceries" options={disabledOptions} />
 );
-
-Disabled.story = {
-  name: 'disabled',
+Disabled.args = {
+  options: disabledOptions,
 };

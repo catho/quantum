@@ -1,17 +1,6 @@
 import React from 'react';
 import { Alert } from '../../components';
 
-const sampleChildren = (
-  <span>
-    This is a <strong>sample</strong> message, a much bigger text could fit in
-    here
-    <br />
-    and a buch of other lines too, just to demonstrate
-    <br />
-    how this component behaves ❤
-  </span>
-);
-
 const props = {
   onClose: () => {},
   icon: 'info',
@@ -19,50 +8,45 @@ const props = {
 
 export default {
   title: 'Alert',
+  component: Alert,
 };
 
-export const Default = () => <Alert {...props}>{sampleChildren}</Alert>;
-
-Default.story = {
-  name: 'default',
-};
-
-export const SkinPrimary = () => (
-  <Alert {...props} skin="primary">
-    {sampleChildren}
+const Template = args => (
+  <Alert {...args}>
+    <span>
+      This is a <strong>sample</strong> message, a much bigger text could fit in
+      here
+      <br />
+      and a buch of other lines too, just to demonstrate
+      <br />
+      how this component behaves ❤
+    </span>
   </Alert>
 );
 
-SkinPrimary.story = {
-  name: 'skin primary',
+export const Default = Template.bind({});
+Default.args = { ...props };
+
+export const SkinPrimary = Template.bind({});
+SkinPrimary.args = {
+  ...Default.args,
+  skin: 'primary',
 };
 
-export const SkinSuccess = () => (
-  <Alert {...props} skin="success">
-    {sampleChildren}
-  </Alert>
-);
-
-SkinSuccess.story = {
-  name: 'skin success',
+export const SkinSuccess = Template.bind({});
+SkinSuccess.args = {
+  ...Default.args,
+  skin: 'success',
 };
 
-export const SkinError = () => (
-  <Alert {...props} skin="error">
-    {sampleChildren}
-  </Alert>
-);
-
-SkinError.story = {
-  name: 'skin error',
+export const SkinWarning = Template.bind({});
+SkinWarning.args = {
+  ...Default.args,
+  skin: 'warning',
 };
 
-export const SkinWarning = () => (
-  <Alert {...props} skin="warning">
-    {sampleChildren}
-  </Alert>
-);
-
-SkinWarning.story = {
-  name: 'skin warning',
+export const SkinError = Template.bind({});
+SkinError.args = {
+  ...Default.args,
+  skin: 'error',
 };

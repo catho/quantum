@@ -16,7 +16,7 @@ export default {
   title: 'Carousel',
 };
 
-export const _Carousel = () => (
+export const CarouselStory = () => (
   <>
     <Heading name="Carousel">
       Carousel is a component that presents cards to go through a series of

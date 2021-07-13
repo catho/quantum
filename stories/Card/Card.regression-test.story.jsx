@@ -3,25 +3,15 @@ import React from 'react';
 import SimpleCard from './examples/SimpleCard';
 import JobAdCard from './examples/JobAdCard';
 import AdvancedCard from './examples/AdvancedCard';
+import Card from '../../components/Card';
 
 export default {
   title: 'Card',
+  component: Card,
 };
 
-export const _SimpleCard = () => <SimpleCard />;
+export const Simple = () => <SimpleCard />;
 
-_SimpleCard.story = {
-  name: 'SimpleCard',
-};
+export const JobAd = () => <JobAdCard />;
 
-export const _JobAdCard = () => <JobAdCard />;
-
-_JobAdCard.story = {
-  name: 'JobAd Card',
-};
-
-export const _AdvancedCard = () => <AdvancedCard />;
-
-_AdvancedCard.story = {
-  name: 'AdvancedCard',
-};
+export const Advanced = () => <AdvancedCard />;

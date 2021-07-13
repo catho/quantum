@@ -3,40 +3,34 @@ import { Checkbox } from '../../components';
 
 export default {
   title: 'Checkbox',
+  component: Checkbox,
 };
 
-export const Default = () => <Checkbox />;
+const Template = args => <Checkbox {...args} />;
 
-Default.story = {
-  name: 'default',
+export const Default = Template.bind({});
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
 };
 
-export const Disabled = () => <Checkbox disabled />;
-
-Disabled.story = {
-  name: 'disabled',
+export const Checked = Template.bind({});
+Checked.args = {
+  checked: true,
 };
 
-export const Checked = () => <Checkbox checked />;
-
-Checked.story = {
-  name: 'checked',
+export const Error = Template.bind({});
+Error.args = {
+  error: 'message',
 };
 
-export const Error = () => <Checkbox error="message" />;
-
-Error.story = {
-  name: 'error',
+export const Label = Template.bind({});
+Label.args = {
+  label: 'example',
 };
 
-export const Label = () => <Checkbox label="example" />;
-
-Label.story = {
-  name: 'label',
-};
-
-export const Value = () => <Checkbox value="example" />;
-
-Value.story = {
-  name: 'value',
+export const Value = Template.bind({});
+Value.args = {
+  value: 'example',
 };
