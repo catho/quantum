@@ -26,9 +26,13 @@ export default {
   title: 'Forms',
 };
 
+const description =
+  'The Input component is used to create interactive controls for web-based forms in order to accept data from the user.';
+
 export const InputStory = () => (
   <>
     <AutoExample
+      description={description}
       component={Input}
       componentProps={{
         id: 'example',
