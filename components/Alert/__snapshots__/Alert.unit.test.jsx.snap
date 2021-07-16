@@ -114,11 +114,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #424242;
-  margin-right: 16px;
-}
-
 .c0 .c1 > .c5 {
   color: #424242;
   margin: 0 0 0 16px;
@@ -936,11 +931,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   padding: 12px 16px;
 }
 
-.c0 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #424242;
-  margin-right: 16px;
-}
-
 .c0 .c1 > .c5 {
   color: #424242;
   margin: 0 0 0 16px;
@@ -1326,11 +1316,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #424242;
-  margin-right: 16px;
-}
-
 .c10 .c1 > .c5 {
   color: #424242;
   margin: 0 0 0 16px;
@@ -1351,11 +1336,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border: 1.5px solid #1250C4;
   color: #002F7B;
   padding: 12px 16px;
-}
-
-.c0 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #1250C4;
-  margin-right: 16px;
 }
 
 .c0 .c1 > .c5 {
@@ -1743,11 +1723,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #424242;
-  margin-right: 16px;
-}
-
 .c10 .c1 > .c5 {
   color: #424242;
   margin: 0 0 0 16px;
@@ -1758,11 +1733,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c10 .c1 > .c5 .c4 {
   color: #424242;
   margin-left: 0;
-}
-
-.c11 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #1250C4;
-  margin-right: 16px;
 }
 
 .c11 .c1 > .c5 {
@@ -1785,11 +1755,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border: 1.5px solid #3b610f;
   color: #004D40;
   padding: 12px 16px;
-}
-
-.c0 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #3b610f;
-  margin-right: 16px;
 }
 
 .c0 .c1 > .c5 {
@@ -2177,11 +2142,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #424242;
-  margin-right: 16px;
-}
-
 .c10 .c1 > .c5 {
   color: #424242;
   margin: 0 0 0 16px;
@@ -2194,11 +2154,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   margin-left: 0;
 }
 
-.c11 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #1250C4;
-  margin-right: 16px;
-}
-
 .c11 .c1 > .c5 {
   color: #1250C4;
   margin: 0 0 0 16px;
@@ -2209,11 +2164,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c11 .c1 > .c5 .c4 {
   color: #1250C4;
   margin-left: 0;
-}
-
-.c12 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #3b610f;
-  margin-right: 16px;
 }
 
 .c12 .c1 > .c5 {
@@ -2236,11 +2186,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border: 1.5px solid #f09100;
   color: #d14900;
   padding: 12px 16px;
-}
-
-.c0 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #f09100;
-  margin-right: 16px;
 }
 
 .c0 .c1 > .c5 {
@@ -2628,11 +2573,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   opacity: 1;
 }
 
-.c10 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #424242;
-  margin-right: 16px;
-}
-
 .c10 .c1 > .c5 {
   color: #424242;
   margin: 0 0 0 16px;
@@ -2643,11 +2583,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c10 .c1 > .c5 .c4 {
   color: #424242;
   margin-left: 0;
-}
-
-.c11 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #1250C4;
-  margin-right: 16px;
 }
 
 .c11 .c1 > .c5 {
@@ -2662,11 +2597,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   margin-left: 0;
 }
 
-.c12 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #3b610f;
-  margin-right: 16px;
-}
-
 .c12 .c1 > .c5 {
   color: #3b610f;
   margin: 0 0 0 16px;
@@ -2677,11 +2607,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 .c12 .c1 > .c5 .c4 {
   color: #3b610f;
   margin-left: 0;
-}
-
-.c13 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #f09100;
-  margin-right: 16px;
 }
 
 .c13 .c1 > .c5 {
@@ -2704,11 +2629,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border: 1.5px solid #e91b0c;
   color: #ac001a;
   padding: 12px 16px;
-}
-
-.c0 .c1 .Alert__AlertIcon-sc-17a2h08-1 {
-  color: #e91b0c;
-  margin-right: 16px;
 }
 
 .c0 .c1 > .c5 {

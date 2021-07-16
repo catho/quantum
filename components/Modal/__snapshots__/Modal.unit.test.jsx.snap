@@ -2622,7 +2622,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               }
                             }
                           >
-                            <ForwardRef
+                            <ForwardRef(CloseIcon)
                               className="c15 c16"
                               data-qtm-preloader="icon"
                               style={
@@ -3480,7 +3480,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   </svg>
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
-                            </ForwardRef>
+                            </ForwardRef(CloseIcon)>
                           </Icon>
                         </Button__ButtonIcon>
                       </button>
