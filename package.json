@@ -171,6 +171,7 @@
     ]
   },
   "loki": {
+    "chromeSelector": "#regression-tests > *",
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.docker",
