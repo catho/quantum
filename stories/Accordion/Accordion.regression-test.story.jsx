@@ -20,7 +20,7 @@ Default.args = { ...mockedProps };
 export const FirstItemOpened = Template.bind({});
 FirstItemOpened.args = { ...mockWithFirstItemOpened };
 
-export const LastItemOpened = () => <Accordion {...mockWithLastItemOpened} />;
+export const LastItemOpened = Template.bind({});
 LastItemOpened.args = { ...mockWithLastItemOpened };
 
 export const AllItemsClosed = Template.bind({});
