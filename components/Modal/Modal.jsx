@@ -8,6 +8,7 @@ import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import { hexToRgba } from '../shared';
+import regressionTestContainer from '../shared/regressionTestContainer';
 import { breakpoints, colors, spacing, components } from '../shared/theme';
 import isSSR from '../shared/isSSR';
 
@@ -88,9 +89,8 @@ class Modal extends React.Component {
   }
 
   componentDidMount() {
-    if (document.querySelector('#regression-tests')) {
-      this.parent = document.querySelector('#regression-tests');
-    }
+    this.parent = regressionTestContainer() ?? this.parent;
+
     this.parent.appendChild(this.modalOverlay);
     this.setBodyOverflow('hidden');
 
