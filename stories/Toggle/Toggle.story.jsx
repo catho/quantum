@@ -58,7 +58,7 @@ export default {
   title: 'Forms',
 };
 
-export const _Toggle = () => (
+export const ToggleStory = () => (
   <AutoExample
     description={description}
     component={Toggle}

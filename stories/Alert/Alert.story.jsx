@@ -20,7 +20,7 @@ export default {
   title: 'Alert',
 };
 
-export const _Alert = () => (
+export const AlertStory = () => (
   <AutoExample
     description={description}
     component={Alert}
@@ -31,3 +31,4 @@ export const _Alert = () => (
     }}
   />
 );
+AlertStory.storyName = 'Alert';

@@ -75,7 +75,7 @@ export default {
   title: 'Avatar',
 };
 
-export const _Avavtar = () => (
+export const AvatarStory = () => (
   <AutoExample
     description={description}
     component={Avatar}

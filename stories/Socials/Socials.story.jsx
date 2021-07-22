@@ -24,7 +24,7 @@ export default {
   title: 'Socials',
 };
 
-export const _Socials = () => (
+export const SocialsStory = () => (
   <>
     <Heading name="Socials">
       Socials component is used to share the social media in applications.

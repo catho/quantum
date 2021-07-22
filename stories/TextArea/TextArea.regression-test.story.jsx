@@ -4,46 +4,40 @@ import TextArea from '../../components/TextArea';
 
 export default {
   title: 'TextArea',
+  component: TextArea,
 };
 
-export const Default = () => <TextArea />;
+const Template = args => <TextArea {...args} />;
 
-Default.story = {
-  name: 'default',
+export const Default = Template.bind({});
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
 };
 
-export const Disabled = () => <TextArea disabled />;
-
-Disabled.story = {
-  name: 'disabled',
+export const PreValued = Template.bind({});
+PreValued.args = {
+  value: 'text value',
 };
 
-export const PreValued = () => <TextArea value="text value" />;
-
-PreValued.story = {
-  name: 'pre valued',
+export const Label = Template.bind({});
+Label.args = {
+  label: 'label',
 };
 
-export const Label = () => <TextArea label="label" />;
-
-Label.story = {
-  name: 'label',
+export const Required = Template.bind({});
+Required.args = {
+  ...Label.args,
+  required: true,
 };
 
-export const Required = () => <TextArea label="label" required />;
-
-Required.story = {
-  name: 'required',
+export const HelperText = Template.bind({});
+HelperText.args = {
+  helperText: 'helperText',
 };
 
-export const HelperText = () => <TextArea helperText="helperText" />;
-
-HelperText.story = {
-  name: 'helperText',
-};
-
-export const Placeholder = () => <TextArea placeholder="placeholder" />;
-
-Placeholder.story = {
-  name: 'placeholder',
+export const Placeholder = Template.bind({});
+Placeholder.args = {
+  placeholder: 'placeholder',
 };

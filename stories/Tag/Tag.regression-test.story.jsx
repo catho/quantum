@@ -3,86 +3,42 @@ import { Tag } from '../../components';
 
 export default {
   title: 'Tag',
+  component: Tag,
 };
 
-export const Skin = () => (
+const Template = args => (
   <>
-    <Tag>Neutral (Default)</Tag>
-    <Tag skin="primary">Primary</Tag>
-    <Tag skin="success">Success</Tag>
-    <Tag skin="warning">Warning</Tag>
-    <Tag skin="error">Error</Tag>
-  </>
-);
-
-Skin.story = {
-  name: 'skin',
-};
-
-export const Inverted = () => (
-  <>
-    <Tag inverted>Neutral (Default)</Tag>
-    <Tag inverted skin="primary">
+    <Tag {...args}>Neutral (Default)</Tag>
+    <Tag skin="primary" {...args}>
       Primary
     </Tag>
-    <Tag inverted skin="success">
+    <Tag skin="success" {...args}>
       Success
     </Tag>
-    <Tag inverted skin="warning">
+    <Tag skin="warning" {...args}>
       Warning
     </Tag>
-    <Tag inverted skin="error">
+    <Tag skin="error" {...args}>
       Error
     </Tag>
   </>
 );
 
-Inverted.story = {
-  name: 'inverted',
+export const Skin = Template.bind({});
+
+export const Inverted = Template.bind({});
+Inverted.args = {
+  inverted: true,
 };
 
-export const Stroked = () => (
-  <>
-    <Tag stroked>Neutral (Default)</Tag>
-    <Tag stroked skin="primary">
-      Primary
-    </Tag>
-    <Tag stroked skin="success">
-      Success
-    </Tag>
-    <Tag stroked skin="warning">
-      Warning
-    </Tag>
-    <Tag stroked skin="error">
-      Error
-    </Tag>
-  </>
-);
-
-Stroked.story = {
-  name: 'stroked',
+export const Stroked = Template.bind({});
+Stroked.args = {
+  stroked: true,
 };
 
-export const Closables = () => (
-  <>
-    <Tag onClose={() => {}}>Neutral (Default)</Tag>
-    <Tag onClose={() => {}} skin="primary">
-      Primary
-    </Tag>
-    <Tag onClose={() => {}} skin="success">
-      Success
-    </Tag>
-    <Tag onClose={() => {}} skin="warning">
-      Warning
-    </Tag>
-    <Tag onClose={() => {}} skin="error">
-      Error
-    </Tag>
-  </>
-);
-
-Closables.story = {
-  name: 'closables',
+export const Closable = Template.bind({});
+Closable.args = {
+  onClose: () => {},
 };
 
 export const Sizes = () => (
@@ -92,7 +48,3 @@ export const Sizes = () => (
     <Tag size="large">Large</Tag>
   </>
 );
-
-Sizes.story = {
-  name: 'sizes',
-};

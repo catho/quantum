@@ -30,7 +30,7 @@ export default {
   title: 'Foundation',
 };
 
-export const _List = () => (
+export const ListStory = () => (
   <>
     <Heading name="List">{description}</Heading>
     <TabbedView>

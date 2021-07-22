@@ -9,6 +9,7 @@ const i18n = {
 
 export default {
   title: 'Stepper',
+  component: Stepper,
 };
 
 export const StepperWithTotal2 = () => (
@@ -30,10 +31,6 @@ export const StepperWithTotal2 = () => (
     />
   </div>
 );
-
-StepperWithTotal2.story = {
-  name: 'Stepper with total 2',
-};
 
 export const StepperWithTotal3 = () => (
   <div>
@@ -60,10 +57,6 @@ export const StepperWithTotal3 = () => (
     />
   </div>
 );
-
-StepperWithTotal3.story = {
-  name: 'Stepper with total 3',
-};
 
 export const StepperWithTotal4 = () => (
   <div>
@@ -97,10 +90,6 @@ export const StepperWithTotal4 = () => (
     />
   </div>
 );
-
-StepperWithTotal4.story = {
-  name: 'Stepper with total 4',
-};
 
 export const StepperWithTotal5 = () => (
   <div>
@@ -141,10 +130,6 @@ export const StepperWithTotal5 = () => (
     />
   </div>
 );
-
-StepperWithTotal5.story = {
-  name: 'Stepper with total 5',
-};
 
 export const StepperWithTotal6 = () => (
   <div>
@@ -192,7 +177,3 @@ export const StepperWithTotal6 = () => (
     />
   </div>
 );
-
-StepperWithTotal6.story = {
-  name: 'Stepper with total 6',
-};

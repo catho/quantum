@@ -3,9 +3,10 @@ import { Skeleton } from '../../components';
 
 export default {
   title: 'Skeleton',
+  component: Skeleton,
 };
 
-export const RectAsDefault = () => (
+export const Default = () => (
   <>
     <Skeleton />
     <br />
@@ -15,11 +16,7 @@ export const RectAsDefault = () => (
   </>
 );
 
-RectAsDefault.story = {
-  name: 'rect as default',
-};
-
-export const _Text = () => (
+export const Text = () => (
   <>
     <Skeleton.Text />
     <br />
@@ -29,17 +26,9 @@ export const _Text = () => (
   </>
 );
 
-_Text.story = {
-  name: 'text',
-};
+export const Circle = () => <Skeleton.Circle height="56px" width="56px" />;
 
-export const _Circle = () => <Skeleton.Circle height="56px" width="56px" />;
-
-_Circle.story = {
-  name: 'circle',
-};
-
-export const _Button = () => (
+export const Button = () => (
   <>
     <Skeleton.Button width="100px" />
     <br />
@@ -55,7 +44,7 @@ export const _Button = () => (
   </>
 );
 
-export const _Tag = () => (
+export const Tag = () => (
   <>
     <Skeleton.Tag width="100px" />
     <Skeleton.Tag width="100px" />

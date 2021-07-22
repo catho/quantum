@@ -43,7 +43,7 @@ export default {
   title: 'Stepper',
 };
 
-export const _Stepper = () => (
+export const StepperStory = () => (
   <>
     <AutoExample
       description="The stepper component is used to update the progress status using logical

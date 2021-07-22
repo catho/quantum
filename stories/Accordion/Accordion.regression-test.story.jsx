@@ -9,34 +9,19 @@ import { Accordion } from '../../components';
 
 export default {
   title: 'Accordion',
+  component: Accordion,
 };
 
-export const AccordionDefault = () => <Accordion {...mockedProps} />;
+const Template = args => <Accordion {...args} />;
 
-AccordionDefault.story = {
-  name: 'Accordion default',
-};
+export const Default = Template.bind({});
+Default.args = { ...mockedProps };
 
-export const AccordionWithFirstItemOpened = () => (
-  <Accordion {...mockWithFirstItemOpened} />
-);
+export const FirstItemOpened = Template.bind({});
+FirstItemOpened.args = { ...mockWithFirstItemOpened };
 
-AccordionWithFirstItemOpened.story = {
-  name: 'Accordion with first item opened',
-};
+export const LastItemOpened = Template.bind({});
+LastItemOpened.args = { ...mockWithLastItemOpened };
 
-export const AccordionWithLastItemOpened = () => (
-  <Accordion {...mockWithLastItemOpened} />
-);
-
-AccordionWithLastItemOpened.story = {
-  name: 'Accordion with last item opened',
-};
-
-export const AccordionWithAllItemsClosed = () => (
-  <Accordion {...mockWithAllItemsClosed} />
-);
-
-AccordionWithAllItemsClosed.story = {
-  name: 'Accordion with all items closed',
-};
+export const AllItemsClosed = Template.bind({});
+AllItemsClosed.args = { ...mockWithAllItemsClosed };

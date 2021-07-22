@@ -4,58 +4,50 @@ import Input from '../../components/Input';
 
 export default {
   title: 'Input',
+  component: Input,
 };
 
-export const Default = () => <Input />;
+const Template = args => <Input {...args} />;
 
-Default.story = {
-  name: 'default',
+export const Default = Template.bind({});
+
+export const WithLabel = Template.bind({});
+WithLabel.args = {
+  label: 'this is a label',
 };
 
-export const WithLabel = () => <Input label="this is a label" />;
-
-WithLabel.story = {
-  name: 'with label',
+export const WithDefaultValue = Template.bind({});
+WithDefaultValue.args = {
+  value: 'a default value',
 };
 
-export const WithDefaultValue = () => <Input value="a default value" />;
-
-WithDefaultValue.story = {
-  name: 'with default value',
+export const Search = Template.bind({});
+Search.args = {
+  type: 'search',
 };
 
-export const Search = () => <Input type="search" />;
-
-Search.story = {
-  name: 'search',
+export const Error = Template.bind({});
+Error.args = {
+  error: 'message',
 };
 
-export const Error = () => <Input error="message" />;
-
-Error.story = {
-  name: 'error',
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
 };
 
-export const Disabled = () => <Input disabled />;
-
-Disabled.story = {
-  name: 'disabled',
+export const DisabledWithText = Template.bind({});
+DisabledWithText.args = {
+  ...Disabled.args,
+  value: 'some text',
 };
 
-export const DisabledWithText = () => <Input disabled value="some text" />;
-
-DisabledWithText.story = {
-  name: 'disabled with text',
+export const Helper = Template.bind({});
+Helper.args = {
+  helperText: 'message',
 };
 
-export const Helper = () => <Input helperText="message" />;
-
-Helper.story = {
-  name: 'helper',
-};
-
-export const WithPlaceholder = () => <Input placeholder="message" />;
-
-WithPlaceholder.story = {
-  name: 'with placeholder',
+export const WithPlaceholder = Template.bind({});
+WithPlaceholder.args = {
+  placeholder: 'message',
 };

@@ -23,7 +23,7 @@ export default {
   title: 'TabbedView',
 };
 
-export const _TabbedView = () => (
+export const TabbedViewStory = () => (
   <>
     <Heading name="TabbedView">
       TabbedView and Tab are components created to organize content into

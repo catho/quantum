@@ -12,103 +12,68 @@ import {
 
 export default {
   title: 'Segmented control',
+  component: SegmentedControl,
 };
 
-export const SegmentedControlTextWith3Items = () => (
-  <SegmentedControl items={defaultContent} />
-);
+const Template = args => <SegmentedControl items={defaultContent} {...args} />;
 
-SegmentedControlTextWith3Items.story = {
-  name: 'Segmented control[text]: with 3 items ',
+export const TextWith3Items = Template.bind({});
+
+export const TextWith2Items = Template.bind({});
+TextWith2Items.args = {
+  items: twoContents,
 };
 
-export const SegmentedControlTextWith2Items = () => (
-  <SegmentedControl items={twoContents} />
-);
-
-SegmentedControlTextWith2Items.story = {
-  name: 'Segmented control[text]: with 2 items ',
+export const IconWith5Items = Template.bind({});
+IconWith5Items.args = {
+  items: fiveContentsWithIcon,
 };
 
-export const SegmentedControlIconWith5Items = () => (
-  <SegmentedControl items={fiveContentsWithIcon} />
-);
-
-SegmentedControlIconWith5Items.story = {
-  name: 'Segmented control[icon]: with 5 items ',
+export const IconWith5ItemsAndFirstOneChecked = Template.bind({});
+IconWith5ItemsAndFirstOneChecked.args = {
+  items: fiveContentsWithFirstChecked,
 };
 
-export const SegmentedControlIconWith5ItemsAndFirstOneChecked = () => (
-  <SegmentedControl items={fiveContentsWithFirstChecked} />
-);
-
-SegmentedControlIconWith5ItemsAndFirstOneChecked.story = {
-  name: 'Segmented control[icon]: with 5 items and first one checked ',
+export const IconWith3Items = Template.bind({});
+IconWith3Items.args = {
+  items: threeContentsWithIcon,
 };
 
-export const SegmentedControlIconWith3Items = () => (
-  <SegmentedControl items={threeContentsWithIcon} />
-);
-
-SegmentedControlIconWith3Items.story = {
-  name: 'Segmented control[icon]: with 3 items ',
+export const TextWith3ItemsAndNoItemChecked = Template.bind({});
+TextWith3ItemsAndNoItemChecked.args = {
+  items: defaultContentWithoutCheckedItems,
 };
 
-export const SegmentedControlTextWith3ItemsAndNoItemChecked = () => (
-  <SegmentedControl items={defaultContentWithoutCheckedItems} />
-);
-
-SegmentedControlTextWith3ItemsAndNoItemChecked.story = {
-  name: 'Segmented control[text]: with 3 items and no item checked ',
+export const IconWith5ItemsAndNoItemChecked = Template.bind({});
+IconWith5ItemsAndNoItemChecked.args = {
+  items: fiveContentsWithIconAndWithoutCheckedItems,
 };
 
-export const SegmentedControlIconWith5ItemsAndNoItemChecked = () => (
-  <SegmentedControl items={fiveContentsWithIconAndWithoutCheckedItems} />
-);
-
-SegmentedControlIconWith5ItemsAndNoItemChecked.story = {
-  name: 'Segmented control[icon]: with 5 items and no item checked ',
+export const DarkThemeWith3Items = Template.bind({});
+DarkThemeWith3Items.args = {
+  darkMode: true,
 };
 
-export const SegmentedControlDarkThemeWith3Items = () => (
-  <SegmentedControl items={defaultContent} darkMode />
-);
-
-SegmentedControlDarkThemeWith3Items.story = {
-  name: 'Segmented control[Dark theme]: with 3 items',
+export const DarkThemeWith5Items = Template.bind({});
+DarkThemeWith5Items.args = {
+  items: fiveContentsWithIcon,
+  darkMode: true,
 };
 
-export const SegmentedControlDarkThemeWith5Items = () => (
-  <SegmentedControl items={fiveContentsWithIcon} darkMode />
-);
-
-SegmentedControlDarkThemeWith5Items.story = {
-  name: 'Segmented control[Dark theme]: with 5 items ',
+export const DarkThemeWith5ItemsAndFirstOneChecked = Template.bind({});
+DarkThemeWith5ItemsAndFirstOneChecked.args = {
+  items: fiveContentsWithFirstChecked,
+  darkMode: true,
 };
 
-export const SegmentedControlDarkThemeWith5ItemsAndFirstOneChecked = () => (
-  <SegmentedControl items={fiveContentsWithFirstChecked} darkMode />
-);
-
-SegmentedControlDarkThemeWith5ItemsAndFirstOneChecked.story = {
-  name: 'Segmented control[Dark theme]: with 5 items and first one checked ',
+export const DarkThemeWith3ItemsAndNoItemChecked = Template.bind({});
+DarkThemeWith3ItemsAndNoItemChecked.args = {
+  items: defaultContentWithoutCheckedItems,
+  darkMode: true,
 };
 
-export const SegmentedControlDarkThemeWith3ItemsAndNoItemChecked = () => (
-  <SegmentedControl items={defaultContentWithoutCheckedItems} darkMode />
-);
-
-SegmentedControlDarkThemeWith3ItemsAndNoItemChecked.story = {
-  name: 'Segmented control[Dark theme]: with 3 items and no item checked ',
-};
-
-export const SegmentedControlDarkThemeWith5ItemsAndNoItemChecked = () => (
-  <SegmentedControl
-    items={fiveContentsWithIconAndWithoutCheckedItems}
-    darkMode
-  />
-);
-
-SegmentedControlDarkThemeWith5ItemsAndNoItemChecked.story = {
-  name: 'Segmented control[Dark theme]: with 5 items and no item checked ',
+export const DarkThemeWith5ItemsAndNoItemChecked = Template.bind({});
+DarkThemeWith5ItemsAndNoItemChecked.args = {
+  items: fiveContentsWithIconAndWithoutCheckedItems,
+  darkMode: true,
 };

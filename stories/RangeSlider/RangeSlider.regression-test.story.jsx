@@ -1,12 +1,12 @@
 import React from 'react';
-import { Row, Col } from '../../components';
+import { Row, Col, RangeSlider } from '../../components';
 import rangeSliderUtils from '../../components/RangeSlider/utils';
 
 import {
   BasicRangeSlider,
-  TipFormatter,
-  Range,
-  MinMax,
+  TipFormatter as TipFormatterExample,
+  Range as RangeExample,
+  MinMax as MinMaxExample,
   BasicDisabledRangeSlider,
 } from './examples';
 
@@ -26,35 +26,32 @@ const decorator = Story => (
 
 export default {
   title: 'RangeSlider',
+  component: RangeSlider,
   decorators: [decorator],
 };
 
-export const Default = () => <BasicRangeSlider {...sliderProps} />;
+const Template = args => <BasicRangeSlider {...args} {...sliderProps} />;
 
-export const WithMarks = () => (
-  <BasicRangeSlider marks={mountMarksByArray([0, 100])} {...sliderProps} />
-);
+export const Default = Template.bind({});
 
-export const TipFormatterStory = () => <TipFormatter {...sliderProps} />;
-TipFormatterStory.storyName = 'TipFormatter';
+export const Disabled = () => <BasicDisabledRangeSlider {...sliderProps} />;
+
+export const WithMarks = Template.bind({});
+WithMarks.args = {
+  marks: mountMarksByArray([0, 100]),
+};
+
+export const TipFormatter = () => <TipFormatterExample {...sliderProps} />;
 
 export const TipFormatterWithMarks = () => (
-  <TipFormatter
+  <TipFormatterExample
     {...sliderProps}
     marks={mountMarksByArray([0, 50, 100], v => `R$ ${v}`)}
   />
 );
-TipFormatterWithMarks.storyName = 'TipFormatter with Marks';
 
-export const RangeStory = () => <Range {...sliderProps} />;
-RangeStory.storyName = 'Range';
+export const Range = () => <RangeExample {...sliderProps} />;
 
-export const MinMaxStory = () => (
-  <MinMax min={30} max={50} value={40} {...sliderProps} />
+export const MinMax = () => (
+  <MinMaxExample min={30} max={50} value={40} {...sliderProps} />
 );
-MinMaxStory.storyName = 'MinMax';
-
-export const BasicDisabledSliderStory = () => (
-  <BasicDisabledRangeSlider {...sliderProps} />
-);
-BasicDisabledSliderStory.storyName = 'BasicDisabledSlider';

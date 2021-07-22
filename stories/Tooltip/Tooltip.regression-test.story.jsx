@@ -2,55 +2,49 @@ import React from 'react';
 
 import { Tooltip, Button, Row, Col } from '../../components';
 
-const tooltipExampleButton = ({ direction }) => (
+const decorator = Story => (
   <Row style={{ padding: '50px 180px' }}>
     <Col>
-      <Tooltip placement={direction} text="This is a hint." visible>
-        <Button>Hover me</Button>
-      </Tooltip>
+      <Story />
     </Col>
   </Row>
 );
 
 export default {
   title: 'Tooltip',
+  component: Tooltip,
+  decorators: [decorator],
 };
 
-export const Top = tooltipExampleButton.bind(null);
-Top.args = {
-  direction: 'top',
-};
-
-export const Bottom = tooltipExampleButton.bind(null);
-Bottom.args = {
-  direction: 'bottom',
-};
-
-export const Left = tooltipExampleButton.bind(null);
-Left.args = {
-  direction: 'left',
-};
-
-export const Right = tooltipExampleButton.bind(null);
-Right.args = {
-  direction: 'right',
-};
-
-export const Multiline = () => (
-  <Row style={{ padding: '50px 180px' }}>
-    <Col>
-      <Tooltip
-        placement="left"
-        multiline
-        text={`This is a hint\nin multiline\nmode.`}
-        visible
-      >
-        <Button>Hover me</Button>
-      </Tooltip>
-    </Col>
-  </Row>
+const Template = args => (
+  <Tooltip text="This is a hint." visible {...args}>
+    <Button>Hover me</Button>
+  </Tooltip>
 );
 
-Multiline.story = {
-  name: 'multiline',
+export const Top = Template.bind(null);
+Top.args = {
+  placement: 'top',
+};
+
+export const Bottom = Template.bind(null);
+Bottom.args = {
+  placement: 'bottom',
+};
+
+export const Left = Template.bind(null);
+Left.args = {
+  placement: 'left',
+};
+
+export const Right = Template.bind(null);
+Right.args = {
+  placement: 'right',
+};
+
+export const Multiline = Template.bind({});
+Multiline.args = {
+  placement: 'left',
+  multiline: true,
+  text: `This is a hint\nin multiline\nmode.`,
 };

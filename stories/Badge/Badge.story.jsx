@@ -91,7 +91,7 @@ export default {
   title: 'Badge',
 };
 
-export const _Badge = () => (
+export const BadgeStory = () => (
   <AutoExample
     description={description}
     component={Badge}

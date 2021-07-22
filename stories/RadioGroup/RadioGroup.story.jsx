@@ -39,7 +39,7 @@ export default {
   title: 'Forms',
 };
 
-export const _RadioGroup = () => (
+export const RadioGroupStory = () => (
   <>
     <Heading title="RadioGroup">
       Radio group is a list of radio buttons that are used when a list of two or

@@ -7,30 +7,22 @@ const icon = <Icon name="star" />;
 
 export default {
   title: 'TabbedView',
+  component: TabbedView,
 };
 
-export const Default = () => (
-  <TabbedView>
+const Template = args => (
+  <TabbedView {...args}>
     <Tab title="Candidates">Candidates content</Tab>
     <Tab title="Companies">Companies content</Tab>
     <Tab title="Education">Education content</Tab>
   </TabbedView>
 );
 
-Default.story = {
-  name: 'default',
-};
+export const Default = Template.bind({});
 
-export const Fluid = () => (
-  <TabbedView fluid>
-    <Tab title="Candidates">Candidates content</Tab>
-    <Tab title="Companies">Companies content</Tab>
-    <Tab title="Education">Education content</Tab>
-  </TabbedView>
-);
-
-Fluid.story = {
-  name: 'fluid',
+export const Fluid = Template.bind({});
+Fluid.args = {
+  fluid: true,
 };
 
 export const Primary = () => (
@@ -47,7 +39,3 @@ export const Primary = () => (
     <Tab title="With only text">With only text content</Tab>
   </TabbedView>
 );
-
-Primary.story = {
-  name: 'primary',
-};
