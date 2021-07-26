@@ -21,13 +21,13 @@ export default {
 const Template = args => {
   const { header = modalHeader(), footer = modalFooterSimple } = args;
   return (
-    <>
+    <Modal>
       {header}
       <Modal.Content>
         You will not be able to recover this item later.
       </Modal.Content>
       {footer}
-    </>
+    </Modal>
   );
 };
 

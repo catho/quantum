@@ -171,14 +171,15 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width:0px) {
@@ -579,14 +580,15 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width:0px) {

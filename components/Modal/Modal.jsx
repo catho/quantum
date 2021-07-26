@@ -8,6 +8,7 @@ import Button from '../Button';
 import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import { hexToRgba } from '../shared';
+import regressionTestContainer from '../shared/regressionTestContainer';
 import { breakpoints, colors, spacing, components } from '../shared/theme';
 import isSSR from '../shared/isSSR';
 
@@ -63,16 +64,19 @@ const ModalWrapper = styled.div`
     },
   }) => hexToRgba(neutral[700], 0.5)};
   display: flex;
-  height: 100vh;
   justify-content: center;
   position: fixed;
   top: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 
 ModalWrapper.displayName = 'ModalWrapper';
 
 class Modal extends React.Component {
+  parent = document.body;
+
   constructor(props) {
     super(props);
 
@@ -85,8 +89,9 @@ class Modal extends React.Component {
   }
 
   componentDidMount() {
-    const { body } = document;
-    body.appendChild(this.modalOverlay);
+    this.parent = regressionTestContainer() ?? this.parent;
+
+    this.parent.appendChild(this.modalOverlay);
     this.setBodyOverflow('hidden');
 
     this.focusableElements = this.modalOverlay.querySelectorAll(
@@ -109,18 +114,16 @@ class Modal extends React.Component {
   }
 
   componentWillUnmount() {
-    const { body } = document;
     this.focusedElementBeforeOpen.focus();
     this.setBodyOverflow('auto');
 
-    body.removeChild(this.modalOverlay);
+    this.parent.removeChild(this.modalOverlay);
     window.removeEventListener('keydown', this.handleKeyDown);
     window.removeEventListener('keydown', this.handleEscKey);
   }
 
   setBodyOverflow = value => {
     if (isSSR()) return;
-
     const { body } = document;
     body.style.overflow = value;
   };
