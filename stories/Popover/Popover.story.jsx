@@ -17,7 +17,7 @@ export default {
   title: 'Popover',
 };
 
-export const _Popover = () => (
+export const PopoverStory = () => (
   <>
     <Heading name="Popover">
       Popovers are used for showing quantity of something, as warnings, inbox

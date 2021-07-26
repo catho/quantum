@@ -57,7 +57,7 @@ export default {
   title: 'Forms',
 };
 
-export const _RangeSlider = () => (
+export const RangeSliderStory = () => (
   <>
     <Heading name="RangeSlider">
       RangeSlider is a component to select a value from a predefined range.

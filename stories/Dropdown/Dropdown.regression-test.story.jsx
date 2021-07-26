@@ -1,50 +1,28 @@
 import React from 'react';
+import Dropdown from '../../components/Dropdown';
 
 import {
   Simple,
   AutoComplete,
   RequiredMark,
   WithError,
-  Disabled,
-  WithImages,
+  Disabled as DisabledExample,
+  WithImages as WithImagesExample,
 } from './examples';
 
 export default {
   title: 'Dropdown',
+  component: Dropdown,
 };
 
 export const Default = () => <Simple />;
 
-Default.story = {
-  name: 'default',
-};
-
 export const Autocomplete = () => <AutoComplete />;
-
-Autocomplete.story = {
-  name: 'autocomplete',
-};
 
 export const Required = () => <RequiredMark />;
 
-Required.story = {
-  name: 'required',
-};
-
 export const Error = () => <WithError />;
 
-Error.story = {
-  name: 'error',
-};
+export const Disabled = () => <DisabledExample />;
 
-export const _Disabled = () => <Disabled />;
-
-_Disabled.story = {
-  name: 'disabled',
-};
-
-export const _WithImages = () => <WithImages />;
-
-_WithImages.story = {
-  name: 'with images',
-};
+export const WithImages = () => <WithImagesExample />;

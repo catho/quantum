@@ -3,46 +3,39 @@ import { CircularLoader } from '../../components';
 
 export default {
   title: 'CircularLoader',
+  component: CircularLoader,
 };
 
-export const Default = () => <CircularLoader />;
+const Template = args => <CircularLoader {...args} />;
 
-Default.story = {
-  name: 'default',
+export const Default = Template.bind({});
+
+export const SecondarySkin = Template.bind({});
+SecondarySkin.args = {
+  skin: 'secondary',
 };
 
-export const WithSecondaryTheme = () => <CircularLoader skin="secondary" />;
-
-WithSecondaryTheme.story = {
-  name: 'with secondary theme',
+export const MediumSize = Template.bind({});
+MediumSize.args = {
+  size: 'medium',
 };
 
-export const WithMediumSize = () => <CircularLoader size="medium" />;
-
-WithMediumSize.story = {
-  name: 'with medium size',
+export const LargeSize = Template.bind({});
+LargeSize.args = {
+  size: 'large',
 };
 
-export const WithLargeSize = () => <CircularLoader size="large" />;
-
-WithLargeSize.story = {
-  name: 'with large size',
+export const XLargeSize = Template.bind({});
+XLargeSize.args = {
+  size: 'xlarge',
 };
 
-export const WithXlargeSize = () => <CircularLoader size="xlarge" />;
-
-WithXlargeSize.story = {
-  name: 'with xlarge size',
+export const XXLargeSize = Template.bind({});
+XXLargeSize.args = {
+  size: 'xxlarge',
 };
 
-export const WithXxlargeSize = () => <CircularLoader size="xxlarge" />;
-
-WithXxlargeSize.story = {
-  name: 'with xxlarge size',
-};
-
-export const WithXxxlargeSize = () => <CircularLoader size="xxxlarge" />;
-
-WithXxxlargeSize.story = {
-  name: 'with xxxlarge size',
+export const XXXLargeSize = Template.bind({});
+XXXLargeSize.args = {
+  size: 'xxxlarge',
 };

@@ -43,7 +43,7 @@ export default {
   title: 'Loaders',
 };
 
-export const _ProgressBar = () => (
+export const ProgressBarStory = () => (
   <AutoExample
     description={descriptions.progressBar}
     component={ProgressBar}
@@ -51,7 +51,7 @@ export const _ProgressBar = () => (
   />
 );
 
-export const _CircularLoader = () => (
+export const CircularLoaderStory = () => (
   <AutoExample
     description={descriptions.circularLoader}
     component={CircularLoader}
@@ -59,7 +59,7 @@ export const _CircularLoader = () => (
   />
 );
 
-export const _Skeleton = () => (
+export const SkeletonStory = () => (
   <AutoExample
     description={descriptions.skeleton}
     component={Skeleton}

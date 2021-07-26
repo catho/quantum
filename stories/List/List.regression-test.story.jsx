@@ -8,88 +8,72 @@ import {
 
 export default {
   title: 'List',
+  component: List,
 };
 
-export const Unordered = () => <List items={exampleItemsDefault} />;
-
-Unordered.story = {
-  name: 'Unordered',
-};
-
-export const UnorderedInline = () => (
-  <List items={exampleItemsDefault} inline />
+const Template = args => <List items={exampleItemsDefault} {...args} />;
+const TemplateWithIcon = args => (
+  <List items={exampleItemsWithIcon} {...args} />
+);
+const TemplateWithHeaderAndSubHeader = args => (
+  <List items={exampleItemsWithHeaderAndSubHeader} {...args} />
 );
 
-UnorderedInline.story = {
-  name: 'Unordered inline',
+export const Unordered = Template.bind({});
+
+export const UnorderedInline = Template.bind({});
+UnorderedInline.args = {
+  inline: true,
 };
 
-export const UnorderedWithBullets = () => (
-  <List items={exampleItemsDefault} bullet="&bull;" />
+export const UnorderedWithBullets = Template.bind({});
+UnorderedWithBullets.args = {
+  bullet: '•',
+};
+
+export const UnorderedWithBulletsInline = Template.bind({});
+UnorderedWithBulletsInline.args = {
+  ...UnorderedWithBullets.args,
+  ...UnorderedInline.args,
+};
+
+export const UnorderedWithBulletsDivided = Template.bind({});
+UnorderedWithBulletsDivided.args = {
+  ...UnorderedWithBullets.args,
+  divided: true,
+};
+
+export const UnorderedWithBulletsAndIcons = TemplateWithIcon.bind({});
+UnorderedWithBulletsAndIcons.args = {
+  ...UnorderedWithBullets.args,
+};
+
+export const UnorderedWithHeaderAndSubheader = TemplateWithHeaderAndSubHeader.bind(
+  {},
 );
-
-UnorderedWithBullets.story = {
-  name: 'Unordered with bullets',
+UnorderedWithHeaderAndSubheader.args = {
+  ...UnorderedWithBullets.args,
 };
 
-export const UnorderedWithBulletsInline = () => (
-  <List items={exampleItemsDefault} bullet="&bull;" inline />
+export const Ordered = Template.bind({});
+Ordered.args = {
+  ordered: true,
+};
+
+export const OrderedInline = Template.bind({});
+OrderedInline.args = {
+  ...Ordered.args,
+  inline: true,
+};
+
+export const OrderedWithIcons = TemplateWithIcon.bind({});
+OrderedWithIcons.args = {
+  ...Ordered.args,
+};
+
+export const OrderedWithHeaderAndSubheader = TemplateWithHeaderAndSubHeader.bind(
+  {},
 );
-
-UnorderedWithBulletsInline.story = {
-  name: 'Unordered with bullets inline',
-};
-
-export const UnorderedWithBulletsDivided = () => (
-  <List items={exampleItemsDefault} bullet="&bull;" divided />
-);
-
-UnorderedWithBulletsDivided.story = {
-  name: 'Unordered with bullets divided',
-};
-
-export const UnorderedWithBulletsAndIcons = () => (
-  <List items={exampleItemsWithIcon} bullet="&bull;" />
-);
-
-UnorderedWithBulletsAndIcons.story = {
-  name: 'Unordered with bullets and icons',
-};
-
-export const UnorderedWithHeaderAndSubheader = () => (
-  <List items={exampleItemsWithHeaderAndSubHeader} bullet="&bull;" />
-);
-
-UnorderedWithHeaderAndSubheader.story = {
-  name: 'Unordered with header and subheader',
-};
-
-export const Ordered = () => <List items={exampleItemsDefault} ordered />;
-
-Ordered.story = {
-  name: 'Ordered',
-};
-
-export const OrderedInline = () => (
-  <List items={exampleItemsDefault} ordered inline />
-);
-
-OrderedInline.story = {
-  name: 'Ordered inline',
-};
-
-export const OrderedWithIcons = () => (
-  <List items={exampleItemsWithIcon} ordered />
-);
-
-OrderedWithIcons.story = {
-  name: 'Ordered with icons',
-};
-
-export const OrderedWithHeaderAndSubheader = () => (
-  <List items={exampleItemsWithHeaderAndSubHeader} ordered />
-);
-
-OrderedWithHeaderAndSubheader.story = {
-  name: 'Ordered with header and subheader',
+OrderedWithHeaderAndSubheader.args = {
+  ...Ordered.args,
 };

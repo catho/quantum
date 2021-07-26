@@ -9,142 +9,147 @@ const handleDirectionPosition = direction => {
   return { paddingTop: '80px', paddingLeft: '160px' };
 };
 
-const popoverExample = ({ direction, skin }) => (
-  <div>
-    <Row style={handleDirectionPosition(direction)}>
-      <Col>
-        <Popover
-          placement={direction}
-          skin={skin}
-          trigger={<Button>Popover trigger</Button>}
-          visible
-        >
-          Some text
-        </Popover>
-      </Col>
-    </Row>
-  </div>
-);
+const Template = args => {
+  const { direction, skin } = args;
+
+  return (
+    <div>
+      <Row style={handleDirectionPosition(direction)}>
+        <Col>
+          <Popover
+            placement={direction}
+            skin={skin}
+            trigger={<Button>Popover trigger</Button>}
+            visible
+          >
+            Some text
+          </Popover>
+        </Col>
+      </Row>
+    </div>
+  );
+};
 
 export default {
   title: 'Popover',
+  component: Popover,
 };
 
-export const NeutralTop = popoverExample.bind(null);
+export const NeutralTop = Template.bind(null);
 NeutralTop.args = {
   direction: 'top',
   skin: 'neutral',
 };
 
-export const NeutralBottom = popoverExample.bind(null);
+export const NeutralBottom = Template.bind(null);
 NeutralBottom.args = {
   direction: 'bottom',
   skin: 'neutral',
 };
 
-export const NeutralLeft = popoverExample.bind(null);
+export const NeutralLeft = Template.bind(null);
 NeutralLeft.args = {
   direction: 'left',
   skin: 'neutral',
 };
 
-export const NeutralRight = popoverExample.bind(null);
+export const NeutralRight = Template.bind(null);
 NeutralRight.args = {
   direction: 'right',
   skin: 'neutral',
 };
 
-export const PrimaryTop = popoverExample.bind(null);
+export const PrimaryTop = Template.bind(null);
 PrimaryTop.args = {
   direction: 'top',
   skin: 'primary',
 };
 
-export const PrimaryBottom = popoverExample.bind(null);
+export const PrimaryBottom = Template.bind(null);
 PrimaryBottom.args = {
   direction: 'bottom',
   skin: 'primary',
 };
 
-export const PrimaryLeft = popoverExample.bind(null);
+export const PrimaryLeft = Template.bind(null);
 PrimaryLeft.args = {
   direction: 'left',
   skin: 'primary',
 };
 
-export const PrimaryRight = popoverExample.bind(null);
+export const PrimaryRight = Template.bind(null);
 PrimaryRight.args = {
   direction: 'right',
   skin: 'primary',
 };
 
-export const SuccessTop = popoverExample.bind(null);
+export const SuccessTop = Template.bind(null);
 SuccessTop.args = {
   direction: 'top',
   skin: 'success',
 };
 
-export const SuccessBottom = popoverExample.bind(null);
+export const SuccessBottom = Template.bind(null);
 SuccessBottom.args = {
   direction: 'bottom',
   skin: 'success',
 };
 
-export const SuccessLeft = popoverExample.bind(null);
+export const SuccessLeft = Template.bind(null);
 SuccessLeft.args = {
   direction: 'left',
   skin: 'success',
 };
 
-export const SuccessRight = popoverExample.bind(null);
+export const SuccessRight = Template.bind(null);
 SuccessRight.args = {
   direction: 'right',
   skin: 'success',
 };
 
-export const WarningTop = popoverExample.bind(null);
+export const WarningTop = Template.bind(null);
 WarningTop.args = {
   direction: 'top',
   skin: 'warning',
 };
 
-export const WarningBottom = popoverExample.bind(null);
+export const WarningBottom = Template.bind(null);
 WarningBottom.args = {
   direction: 'bottom',
   skin: 'warning',
 };
 
-export const WarningLeft = popoverExample.bind(null);
+export const WarningLeft = Template.bind(null);
 WarningLeft.args = {
   direction: 'left',
   skin: 'warning',
 };
 
-export const WarningRight = popoverExample.bind(null);
+export const WarningRight = Template.bind(null);
 WarningRight.args = {
   direction: 'right',
   skin: 'warning',
 };
 
-export const ErrorTop = popoverExample.bind(null);
+export const ErrorTop = Template.bind(null);
 ErrorTop.args = {
   direction: 'top',
   skin: 'error',
 };
 
-export const ErrorBottom = popoverExample.bind(null);
+export const ErrorBottom = Template.bind(null);
 ErrorBottom.args = {
   direction: 'bottom',
   skin: 'error',
 };
 
-export const ErrorLeft = popoverExample.bind(null);
+export const ErrorLeft = Template.bind(null);
 ErrorLeft.args = {
   direction: 'left',
   skin: 'error',
 };
 
-export const ErrorRight = popoverExample.bind(null);
+export const ErrorRight = Template.bind(null);
 ErrorRight.args = {
   direction: 'right',
   skin: 'error',

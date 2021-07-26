@@ -26,7 +26,7 @@ export default {
   title: 'Pagination',
 };
 
-export const _Pagination = () => (
+export const PaginationStory = () => (
   <>
     <Heading name="Pagination">
       Add pagination buttons to help split up your long content into shorter,

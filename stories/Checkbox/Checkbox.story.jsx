@@ -36,7 +36,7 @@ export default {
   title: 'Forms',
 };
 
-export const _Checkbox = () => (
+export const CheckboxStory = () => (
   <>
     <Heading name="Checkbox">
       Checkboxes are used when there is a list of options and the user may

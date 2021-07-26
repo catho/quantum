@@ -47,7 +47,7 @@ export default {
   title: 'Forms',
 };
 
-export const _Dropdown = () => (
+export const DropdownStory = () => (
   <>
     <Heading name="Dropdown">
       A dropdown receives user input, allowing it to choose one of several

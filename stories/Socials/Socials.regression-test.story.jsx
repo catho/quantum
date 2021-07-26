@@ -20,76 +20,55 @@ const allItems = [
   },
 ];
 
+const decorator = Story => (
+  <div>
+    <Story />
+  </div>
+);
+
 export default {
   title: 'Socials',
+  component: Socials,
+  decorators: [decorator],
 };
 
-export const AllItems = () => (
-  <div>
-    <Socials items={allItems} />
-  </div>
-);
+const Template = args => <Socials {...args} />;
 
-AllItems.story = {
-  name: 'All items',
+export const AllItems = Template.bind({});
+AllItems.args = {
+  items: allItems,
 };
 
-export const AllItems24Px = () => (
-  <div>
-    <Socials items={allItems} size="24" />
-  </div>
-);
-
-AllItems24Px.story = {
-  name: 'all items (24px)',
+export const AllItems24px = Template.bind({});
+AllItems24px.args = {
+  ...AllItems.args,
+  size: '24',
 };
 
-export const OnlyFacebook = () => (
-  <div>
-    <Socials items={[allItems[0]]} />
-  </div>
-);
-
-OnlyFacebook.story = {
-  name: 'only Facebook',
+export const Facebook = Template.bind({});
+Facebook.args = {
+  items: [allItems[0]],
 };
 
-export const OnlyTwitter = () => (
-  <div>
-    <Socials items={[allItems[1]]} />
-  </div>
-);
-
-OnlyTwitter.story = {
-  name: 'only Twitter',
+export const Twitter = Template.bind({});
+Twitter.args = {
+  items: [allItems[1]],
 };
 
-export const OnlyYoutube = () => (
-  <div>
-    <Socials items={[allItems[2]]} />
-  </div>
-);
-
-OnlyYoutube.story = {
-  name: 'only Youtube',
+export const Youtube = Template.bind({});
+Youtube.args = {
+  items: [allItems[2]],
 };
 
-export const AllItemsWithoutBox24Px = () => (
-  <div>
-    <Socials items={allItems} withBox={false} size="24" />
-  </div>
-);
-
-AllItemsWithoutBox24Px.story = {
-  name: 'all items without box (24px)',
+export const AllItemsWithoutBox24Px = Template.bind({});
+AllItemsWithoutBox24Px.args = {
+  ...AllItems24px.args,
+  withBox: false,
 };
 
-export const AllItemsWithoutBox = () => (
-  <div>
-    <Socials items={allItems} withBox={false} />
-  </div>
-);
+export const AllItemsWithoutBox = Template.bind({});
 
-AllItemsWithoutBox.story = {
-  name: 'all items without box',
+AllItemsWithoutBox.args = {
+  ...AllItems.args,
+  withBox: false,
 };

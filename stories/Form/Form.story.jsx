@@ -14,7 +14,7 @@ import { Col, Row } from '../../components/Grid';
 import { Validations, Form } from '../../components/Form';
 
 import * as SimpleForm from './SimpleForm';
-import * as SimpleValidation from './SimpleValidation';
+import * as SimpleValidation from './examples';
 import * as AdvancedValidation from './AdvancedValidation';
 
 const importForm = `import { Form } from '@catho/quantum';`;
@@ -23,7 +23,7 @@ export default {
   title: 'Forms',
 };
 
-export const _Form = () => (
+export const FormStory = () => (
   <>
     <Heading name="Forms">
       A Form displays a set of related user input fields in a structured way,

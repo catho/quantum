@@ -17,7 +17,7 @@ export default {
   title: 'Modal',
 };
 
-export const _Modal = () => (
+export const ModalStory = () => (
   <>
     <Heading name="Modal">
       Modals inform users about a task and can contain critical information,

@@ -11,46 +11,36 @@ const modalHeader = (titleProps = {}) => (
   </Modal.Header>
 );
 
-const modalContent = (
-  <Modal.Content>
-    You will not be able to recover this item later.
-  </Modal.Content>
-);
-
 const modalFooterSimple = <Modal.Footer>this is a modal footer</Modal.Footer>;
 
 export default {
   title: 'Modal',
+  component: Modal,
 };
 
-export const SimpleModal = () => (
-  <>
-    {modalHeader()}
-    {modalContent}
-    {modalFooterSimple}
-  </>
-);
-
-SimpleModal.story = {
-  name: 'simple modal',
+const Template = args => {
+  const { header = modalHeader(), footer = modalFooterSimple } = args;
+  return (
+    <Modal>
+      {header}
+      <Modal.Content>
+        You will not be able to recover this item later.
+      </Modal.Content>
+      {footer}
+    </Modal>
+  );
 };
 
-export const SimpleModalWithSmallTextTitle = () => (
-  <>
-    {modalHeader({ small: true })}
-    {modalContent}
-    {modalFooterSimple}
-  </>
-);
+export const Simple = Template.bind({});
 
-SimpleModalWithSmallTextTitle.story = {
-  name: 'simple modal with small text title',
+export const SimpleWithSmallTitle = Template.bind({});
+SimpleWithSmallTitle.args = {
+  header: modalHeader({ small: true }),
 };
 
-export const ModalWithButtonActions = () => (
-  <>
-    {modalHeader()}
-    {modalContent}
+export const WithButtonActions = Template.bind({});
+WithButtonActions.args = {
+  footer: (
     <Modal.Footer>
       <div
         style={{
@@ -64,9 +54,5 @@ export const ModalWithButtonActions = () => (
         <Button>Delete</Button>
       </div>
     </Modal.Footer>
-  </>
-);
-
-ModalWithButtonActions.story = {
-  name: 'modal with button actions',
+  ),
 };

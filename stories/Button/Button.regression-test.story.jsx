@@ -1,190 +1,140 @@
 import React from 'react';
 import Button from '../../components/Button';
 
+const disabled = true;
+const stroked = true;
+const full = true;
+
 export default {
-  title: 'Buttons',
+  title: 'Button',
+  component: Button,
 };
 
-export const PrimaryDefault = () => <Button>Catho</Button>;
+const Template = args => <Button {...args}>Catho</Button>;
 
-PrimaryDefault.story = {
-  name: 'primary default',
+export const PrimaryDefault = Template.bind({});
+
+export const PrimaryDisabled = Template.bind({});
+PrimaryDisabled.args = {
+  disabled,
 };
 
-export const PrimaryDisabled = () => <Button disabled>Catho</Button>;
-
-PrimaryDisabled.story = {
-  name: 'primary disabled',
+export const PrimaryStroked = Template.bind({});
+PrimaryStroked.args = {
+  stroked,
 };
 
-export const PrimaryStroked = () => <Button stroked>Catho</Button>;
-
-PrimaryStroked.story = {
-  name: 'primary stroked',
+export const PrimaryFull = Template.bind({});
+PrimaryFull.args = {
+  full,
 };
 
-export const PrimaryFull = () => <Button full>Catho</Button>;
-
-PrimaryFull.story = {
-  name: 'primary full',
+export const PrimaryIconInfo = Template.bind({});
+PrimaryIconInfo.args = {
+  icon: 'info',
 };
 
-export const PrimaryIconInfo = () => <Button icon="info">Catho</Button>;
-
-PrimaryIconInfo.story = {
-  name: 'primary icon info',
+export const PrimarySizeXSmall = Template.bind({});
+PrimarySizeXSmall.args = {
+  size: 'xsmall',
 };
 
-export const PrimarySizeXsmall = () => <Button size="xsmall">Catho</Button>;
-
-PrimarySizeXsmall.story = {
-  name: 'primary size xsmall',
+export const PrimarySizeSmall = Template.bind({});
+PrimarySizeSmall.args = {
+  size: 'small',
 };
 
-export const PrimarySizeSmall = () => <Button size="small">Catho</Button>;
-
-PrimarySizeSmall.story = {
-  name: 'primary size small',
+export const PrimarySizeLarge = Template.bind({});
+PrimarySizeLarge.args = {
+  size: 'large',
 };
 
-export const PrimarySizeLarge = () => <Button size="large">Catho</Button>;
-
-PrimarySizeLarge.story = {
-  name: 'primary size large',
+export const PrimarySizeXLarge = Template.bind({});
+PrimarySizeXLarge.args = {
+  size: 'xlarge',
 };
 
-export const PrimarySizeXlarge = () => <Button size="xlarge">Catho</Button>;
-
-PrimarySizeXlarge.story = {
-  name: 'primary size xlarge',
+export const SecondaryDefault = Template.bind({});
+SecondaryDefault.args = {
+  skin: 'secondary',
 };
 
-export const SecondaryDefault = () => <Button skin="secondary">Catho</Button>;
-
-SecondaryDefault.story = {
-  name: 'secondary default',
+export const SecondaryDisabled = Template.bind({});
+SecondaryDisabled.args = {
+  ...SecondaryDefault.args,
+  disabled,
 };
 
-export const SecondaryDisabled = () => (
-  <Button skin="secondary" disabled>
-    Catho
-  </Button>
-);
-
-SecondaryDisabled.story = {
-  name: 'secondary disabled',
+export const SecondaryStroked = Template.bind({});
+SecondaryStroked.args = {
+  ...SecondaryDefault.args,
+  stroked,
 };
 
-export const SecondaryStroked = () => (
-  <Button skin="secondary" stroked>
-    Catho
-  </Button>
-);
-
-SecondaryStroked.story = {
-  name: 'secondary stroked',
+export const NeutralDefault = Template.bind({});
+NeutralDefault.args = {
+  skin: 'neutral',
 };
 
-export const NeutralDefault = () => <Button skin="neutral">Catho</Button>;
-
-NeutralDefault.story = {
-  name: 'neutral default',
+export const NeutralDisabled = Template.bind({});
+NeutralDisabled.args = {
+  ...NeutralDefault.args,
+  disabled,
 };
 
-export const NeutralDisabled = () => (
-  <Button skin="neutral" disabled>
-    Catho
-  </Button>
-);
-
-NeutralDisabled.story = {
-  name: 'neutral disabled',
+export const NeutralStroked = Template.bind({});
+NeutralStroked.args = {
+  ...NeutralDefault.args,
+  stroked,
 };
 
-export const NeutralStroked = () => (
-  <Button skin="neutral" stroked>
-    Catho
-  </Button>
-);
-
-NeutralStroked.story = {
-  name: 'neutral stroked',
+export const SuccessDefault = Template.bind({});
+SuccessDefault.args = {
+  skin: 'success',
 };
 
-export const SuccessDefault = () => <Button skin="success">Catho</Button>;
-
-SuccessDefault.story = {
-  name: 'success default',
+export const SuccessDisabled = Template.bind({});
+SuccessDisabled.args = {
+  ...SuccessDefault.args,
+  disabled,
 };
 
-export const SuccessDisabled = () => (
-  <Button skin="success" disabled>
-    Catho
-  </Button>
-);
-
-SuccessDisabled.story = {
-  name: 'success disabled',
+export const SuccessStroked = Template.bind({});
+SuccessStroked.args = {
+  ...SuccessDefault.args,
+  stroked,
 };
 
-export const SuccessStroked = () => (
-  <Button skin="success" stroked>
-    Catho
-  </Button>
-);
-
-SuccessStroked.story = {
-  name: 'success stroked',
+export const WarningDefault = Template.bind({});
+WarningDefault.args = {
+  skin: 'warning',
 };
 
-export const WarningDefault = () => <Button skin="warning">Catho</Button>;
-
-WarningDefault.story = {
-  name: 'warning default',
+export const WarningDisabled = Template.bind({});
+WarningDisabled.args = {
+  ...WarningDefault.args,
+  disabled,
 };
 
-export const WarningDisabled = () => (
-  <Button skin="warning" disabled>
-    Catho
-  </Button>
-);
-
-WarningDisabled.story = {
-  name: 'warning disabled',
+export const WarningStroked = Template.bind({});
+WarningStroked.args = {
+  ...WarningDefault.args,
+  stroked,
 };
 
-export const WarningStroked = () => (
-  <Button skin="warning" stroked>
-    Catho
-  </Button>
-);
-
-WarningStroked.story = {
-  name: 'warning stroked',
+export const ErrorDefault = Template.bind({});
+ErrorDefault.args = {
+  skin: 'error',
 };
 
-export const ErrorDefault = () => <Button skin="error">Catho</Button>;
-
-ErrorDefault.story = {
-  name: 'error default',
+export const ErrorDisabled = Template.bind({});
+ErrorDisabled.args = {
+  ...ErrorDefault.args,
+  disabled,
 };
 
-export const ErrorDisabled = () => (
-  <Button skin="error" disabled>
-    Catho
-  </Button>
-);
-
-ErrorDisabled.story = {
-  name: 'error disabled',
-};
-
-export const ErrorStroked = () => (
-  <Button skin="error" stroked>
-    Catho
-  </Button>
-);
-
-ErrorStroked.story = {
-  name: 'error stroked',
+export const ErrorStroked = Template.bind({});
+ErrorStroked.args = {
+  ...ErrorDefault.args,
+  stroked,
 };
