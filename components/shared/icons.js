@@ -10,6 +10,7 @@ const icons = [
   'assessment',
   'assignment',
   'assignment_ind',
+  'assignment_turned_in',
   'attach_money',
   'block',
   'camera',
@@ -36,6 +37,8 @@ const icons = [
   'expand_more',
   'favorite_border',
   'filter_list',
+  'folder',
+  'group',
   'home',
   'info',
   'keyboard_arrow_down',
@@ -54,6 +57,7 @@ const icons = [
   'phone_android',
   'radio_button_checked',
   'radio_button_unchecked',
+  'refresh',
   'receipt',
   'search',
   'send',
@@ -69,6 +73,7 @@ const icons = [
   'visibility',
   'warning',
   'whatshot',
+  'work',
 ];
 
 export default icons;
