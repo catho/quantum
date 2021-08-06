@@ -9,6 +9,7 @@ import AddCircle from '@material-ui/icons/AddCircle';
 import Apps from '@material-ui/icons/Apps';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
+import ArrowRight from '@material-ui/icons/ArrowRight';
 import Assessment from '@material-ui/icons/Assessment';
 import Assignment from '@material-ui/icons/Assignment';
 import AssignmentInd from '@material-ui/icons/AssignmentInd';
@@ -97,6 +98,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     apps: Apps,
     arrow_drop_down: ArrowDropDown,
     arrow_drop_up: ArrowDropUp,
+    arrow_right: ArrowRight,
     assessment: Assessment,
     assignment: Assignment,
     assignment_ind: AssignmentInd,
