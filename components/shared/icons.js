@@ -8,6 +8,7 @@ const icons = [
   'arrow_drop_down',
   'arrow_drop_up',
   'arrow_right',
+  'arrow_left',
   'assessment',
   'assignment',
   'assignment_ind',
