@@ -36,6 +36,10 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
+.c3 .c8 {
+  margin-right: 0;
+}
+
 .c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -434,6 +438,10 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c5 .c10 {
+  margin-right: 0;
 }
 
 .c5:hover {
@@ -858,6 +866,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
+.c3 .c8 {
+  margin-right: 0;
+}
+
 .c3:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -1256,6 +1268,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c3 .c8 {
+  margin-right: 0;
 }
 
 .c3:hover {
@@ -1673,6 +1689,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c3 .c8 {
+  margin-right: 0;
 }
 
 .c3:hover {
@@ -2107,6 +2127,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c3 .c8 {
+  margin-right: 0;
 }
 
 .c3:hover {
@@ -2558,6 +2582,10 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c3 .c8 {
+  margin-right: 0;
 }
 
 .c3:hover {

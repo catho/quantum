@@ -19,6 +19,12 @@ describe('<Icon />', () => {
     const withLargeSize = renderer
       .create(<Icon name="search" size="large" />)
       .toJSON();
+    const withXSmallSize = renderer
+      .create(<Icon name="search" size="xlarge" />)
+      .toJSON();
+    const withXLargeSize = renderer
+      .create(<Icon name="search" size="xlarge" />)
+      .toJSON();
 
     expect(tree3D).toMatchSnapshot();
     expect(treeFilter).toMatchSnapshot();
@@ -27,5 +33,7 @@ describe('<Icon />', () => {
     expect(withSmallSize).toMatchSnapshot();
     expect(withMediumSize).toMatchSnapshot();
     expect(withLargeSize).toMatchSnapshot();
+    expect(withXSmallSize).toMatchSnapshot();
+    expect(withXLargeSize).toMatchSnapshot();
   });
 });

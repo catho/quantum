@@ -47,7 +47,11 @@ const exampleTab = (
           </LinkTo>
           .
         </p>
+
         <Row>
+          <Col tablet={3}>
+            <Example component={<Button icon="info" />} />
+          </Col>
           <Col tablet={3}>
             <Example component={<Button icon="search">Search</Button>} />
           </Col>

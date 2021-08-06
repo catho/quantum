@@ -138,3 +138,32 @@ ErrorStroked.args = {
   ...ErrorDefault.args,
   stroked,
 };
+
+export const WithIcon = Template.bind({});
+WithIcon.args = {
+  icon: 'info',
+};
+
+const TemplateIconOnly = args => <Button icon="info" {...args} />;
+
+export const IconOnly = TemplateIconOnly.bind({});
+
+export const IconOnlySmall = TemplateIconOnly.bind({});
+IconOnlySmall.args = {
+  size: 'small',
+};
+
+export const IconOnlyXSmall = TemplateIconOnly.bind({});
+IconOnlyXSmall.args = {
+  size: 'xsmall',
+};
+
+export const IconOnlyLarge = TemplateIconOnly.bind({});
+IconOnlyLarge.args = {
+  size: 'large',
+};
+
+export const IconOnlyXLarge = TemplateIconOnly.bind({});
+IconOnlyXLarge.args = {
+  size: 'xlarge',
+};

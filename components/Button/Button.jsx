@@ -17,9 +17,11 @@ const ButtonIcon = styled(Icon)`
     theme: {
       spacing: { xsmall },
     },
-  }) => css`
-    margin-right: ${xsmall}px;
-  `}
+  }) =>
+    css`
+      margin-right: ${xsmall}px;
+    `}
+
   pointer-events: none;
   width: ${defaultBaseFontSize * 1.5}px;
 `;
@@ -55,9 +57,17 @@ const StyledButton = styled.button`
   justify-content: center;
   border-radius: 4px;
 
-  ${props =>
+  ${({ iconOnly }) =>
+    iconOnly &&
     css`
-      cursor: ${props.disabled ? 'not-allowed' : 'pointer'};
+      ${ButtonIcon} {
+        margin-right: 0;
+      }
+    `}  
+
+  ${({ disabled }) =>
+    css`
+      cursor: ${disabled ? 'not-allowed' : 'pointer'};
     `}
 
   ${buttonFontAndLineProps}
@@ -193,12 +203,22 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, $as, theme, ...rest }) => (
-  <StyledButton as={$as} {...rest} size={size} theme={theme}>
-    {icon && <ButtonIcon size={size} name={icon} theme={theme} />}
-    {children}
-  </StyledButton>
-);
+const Button = ({ children, icon, size, $as, theme, ...rest }) => {
+  const iconOnly = icon && !children;
+
+  return (
+    <StyledButton
+      as={$as}
+      {...rest}
+      size={size}
+      iconOnly={iconOnly}
+      theme={theme}
+    >
+      {icon && <ButtonIcon size={size} name={icon} theme={theme} />}
+      {children}
+    </StyledButton>
+  );
+};
 
 Button.defaultProps = {
   center: false,

@@ -77,9 +77,11 @@ import icons from '../shared/icons';
 const { baseFontSize } = theme;
 
 const sizes = {
+  xsmall: baseFontSize * 0.5, // 8
   small: baseFontSize, // 16
   medium: baseFontSize * 1.5, // 24
   large: baseFontSize * 2, // 32
+  xlarge: baseFontSize * 2.5, // 40
 };
 
 const Icon = ({ name, skin, size, ...props }) => {
@@ -181,7 +183,7 @@ Icon.propTypes = {
   name: PropTypes.oneOf(icons).isRequired,
   style: PropTypes.instanceOf(Object),
   skin: PropTypes.string,
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
 };
 
 export default Icon;

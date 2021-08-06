@@ -19,6 +19,22 @@ describe('Button component', () => {
     ).toMatchSnapshot();
   });
 
+  it('should render a button only icon state ', () => {
+    expect(renderer.create(<Button icon="info" />).toJSON()).toMatchSnapshot();
+    expect(
+      renderer.create(<Button icon="info" size="xsmall" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Button icon="info" size="small" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Button icon="info" size="large" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Button icon="info" size="xlarge" />).toJSON(),
+    ).toMatchSnapshot();
+  });
+
   describe('when there is a skin set', () => {
     it('should match secondary snapshot', () => {
       const neutral = <Button skin="neutral">neutral</Button>;
