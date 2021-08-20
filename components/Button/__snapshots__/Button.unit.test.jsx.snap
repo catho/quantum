@@ -59,10 +59,13 @@ exports[`Button component Should match the snapshot 1`] = `
 `;
 
 exports[`Button component should render a button only icon state  1`] = `
-.c2 {
-  margin-right: 8px;
+.c1 {
   pointer-events: none;
   width: 24px;
+}
+
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -94,10 +97,6 @@ exports[`Button component should render a button only icon state  1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 .c1 {
-  margin-right: 0;
-}
-
 .c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
@@ -123,7 +122,7 @@ exports[`Button component should render a button only icon state  1`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -342,14 +341,13 @@ exports[`Button component should render a button only icon state  1`] = `
 `;
 
 exports[`Button component should render a button only icon state  2`] = `
-.c2 {
-  margin-right: 8px;
+.c1 {
   pointer-events: none;
   width: 24px;
 }
 
-.c3 .c1 {
-  margin-right: 0;
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -381,10 +379,6 @@ exports[`Button component should render a button only icon state  2`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 .c1 {
-  margin-right: 0;
-}
-
 .c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
@@ -410,7 +404,7 @@ exports[`Button component should render a button only icon state  2`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -629,18 +623,13 @@ exports[`Button component should render a button only icon state  2`] = `
 `;
 
 exports[`Button component should render a button only icon state  3`] = `
-.c2 {
-  margin-right: 8px;
+.c1 {
   pointer-events: none;
   width: 24px;
 }
 
-.c3 .c1 {
-  margin-right: 0;
-}
-
-.c4 .c1 {
-  margin-right: 0;
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -672,10 +661,6 @@ exports[`Button component should render a button only icon state  3`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 .c1 {
-  margin-right: 0;
-}
-
 .c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
@@ -701,7 +686,7 @@ exports[`Button component should render a button only icon state  3`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -920,22 +905,13 @@ exports[`Button component should render a button only icon state  3`] = `
 `;
 
 exports[`Button component should render a button only icon state  4`] = `
-.c2 {
-  margin-right: 8px;
+.c1 {
   pointer-events: none;
   width: 24px;
 }
 
-.c3 .c1 {
-  margin-right: 0;
-}
-
-.c4 .c1 {
-  margin-right: 0;
-}
-
-.c5 .c1 {
-  margin-right: 0;
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -967,10 +943,6 @@ exports[`Button component should render a button only icon state  4`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 .c1 {
-  margin-right: 0;
-}
-
 .c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
@@ -996,7 +968,7 @@ exports[`Button component should render a button only icon state  4`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -1215,26 +1187,13 @@ exports[`Button component should render a button only icon state  4`] = `
 `;
 
 exports[`Button component should render a button only icon state  5`] = `
-.c2 {
-  margin-right: 8px;
+.c1 {
   pointer-events: none;
   width: 24px;
 }
 
-.c3 .c1 {
-  margin-right: 0;
-}
-
-.c4 .c1 {
-  margin-right: 0;
-}
-
-.c5 .c1 {
-  margin-right: 0;
-}
-
-.c6 .c1 {
-  margin-right: 0;
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -1266,10 +1225,6 @@ exports[`Button component should render a button only icon state  5`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0 .c1 {
-  margin-right: 0;
-}
-
 .c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
@@ -1295,7 +1250,7 @@ exports[`Button component should render a button only icon state  5`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1 c2"
+    className="MuiSvgIcon-root c1"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -2098,9 +2053,12 @@ exports[`Button component when there is a type set should match secondary snapsh
 
 exports[`Button component with an icon should match secondary snapshot 1`] = `
 .c1 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -2157,7 +2115,7 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    className="MuiSvgIcon-root c1 with-children"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -2378,9 +2336,12 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 
 exports[`Button component with an icon should match secondary snapshot 2`] = `
 .c1 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -2437,7 +2398,7 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    className="MuiSvgIcon-root c1 with-children"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -2658,9 +2619,12 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 
 exports[`Button component with an icon should match secondary snapshot 3`] = `
 .c1 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -2717,7 +2681,7 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    className="MuiSvgIcon-root c1 with-children"
     data-qtm-preloader="icon"
     focusable="false"
     style={
@@ -2938,9 +2902,12 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 
 exports[`Button component with an icon should match secondary snapshot 4`] = `
 .c1 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c1.with-children {
+  margin-right: 8px;
 }
 
 .c0 {
@@ -2997,7 +2964,7 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    className="MuiSvgIcon-root c1 with-children"
     data-qtm-preloader="icon"
     focusable="false"
     style={

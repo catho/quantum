@@ -13,16 +13,19 @@ import {
 import Icon from '../Icon/Icon';
 
 const ButtonIcon = styled(Icon)`
+  pointer-events: none;
+
   ${({
     theme: {
       spacing: { xsmall },
     },
   }) =>
     css`
-      margin-right: ${xsmall}px;
+      &.with-children {
+        margin-right: ${xsmall}px;
+      }
     `}
 
-  pointer-events: none;
   width: ${defaultBaseFontSize * 1.5}px;
 `;
 
@@ -55,15 +58,7 @@ const StyledButton = styled.button`
   display: flex;
   font-weight: bold;
   justify-content: center;
-  border-radius: 4px;
-
-  ${({ iconOnly }) =>
-    iconOnly &&
-    css`
-      ${ButtonIcon} {
-        margin-right: 0;
-      }
-    `}  
+  border-radius: 4px; 
 
   ${({ disabled }) =>
     css`
@@ -203,22 +198,19 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, $as, theme, ...rest }) => {
-  const iconOnly = icon && !children;
-
-  return (
-    <StyledButton
-      as={$as}
-      {...rest}
-      size={size}
-      iconOnly={iconOnly}
-      theme={theme}
-    >
-      {icon && <ButtonIcon size={size} name={icon} theme={theme} />}
-      {children}
-    </StyledButton>
-  );
-};
+const Button = ({ children, icon, size, $as, theme, ...rest }) => (
+  <StyledButton as={$as} {...rest} size={size} theme={theme}>
+    {icon && (
+      <ButtonIcon
+        className={children ? 'with-children' : ''}
+        size={size}
+        name={icon}
+        theme={theme}
+      />
+    )}
+    {children}
+  </StyledButton>
+);
 
 Button.defaultProps = {
   center: false,
@@ -264,6 +256,7 @@ Button.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
+    PropTypes.string,
   ]),
   /** https://www.styled-components.com/docs/api#as-polymorphic-prop */
   $as: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),

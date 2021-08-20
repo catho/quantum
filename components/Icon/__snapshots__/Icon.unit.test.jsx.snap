@@ -161,8 +161,8 @@ exports[`<Icon /> Should match the snapshot 8`] = `
   style={
     Object {
       "color": "",
-      "fontSize": 40,
-      "maxWidth": 40,
+      "fontSize": 8,
+      "maxWidth": 8,
     }
   }
   viewBox="0 0 24 24"

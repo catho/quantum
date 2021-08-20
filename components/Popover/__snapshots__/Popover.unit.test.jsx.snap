@@ -346,9 +346,12 @@ exports[`Popover component  Snapshots should match snapshots 8`] = `
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 1`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -378,10 +381,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4 .c5 {
-  margin-right: 0;
 }
 
 .c4:hover {
@@ -738,9 +737,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -770,10 +772,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1 .c4 {
-  margin-right: 0;
 }
 
 .c1:hover {
@@ -1611,7 +1609,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -1849,6 +1846,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -3287,9 +3285,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 2`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -3319,10 +3320,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4 .c5 {
-  margin-right: 0;
 }
 
 .c4:hover {
@@ -3679,9 +3676,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -3711,10 +3711,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1 .c4 {
-  margin-right: 0;
 }
 
 .c1:hover {
@@ -4552,7 +4548,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -4790,6 +4785,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -6228,13 +6224,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 3`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c9 .c5 {
-  margin-right: 0;
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -6264,10 +6259,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #3b610f;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4 .c5 {
-  margin-right: 0;
 }
 
 .c4:hover {
@@ -6628,13 +6619,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c7 .c4 {
-  margin-right: 0;
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -6664,10 +6654,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #3b610f;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1 .c4 {
-  margin-right: 0;
 }
 
 .c1:hover {
@@ -7509,7 +7495,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -7747,6 +7732,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -9185,17 +9171,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 4`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c10 .c5 {
-  margin-right: 0;
-}
-
-.c11 .c5 {
-  margin-right: 0;
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -9225,10 +9206,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #f09100;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4 .c5 {
-  margin-right: 0;
 }
 
 .c4:hover {
@@ -9593,17 +9570,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c8 .c4 {
-  margin-right: 0;
-}
-
-.c9 .c4 {
-  margin-right: 0;
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -9633,10 +9605,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #f09100;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1 .c4 {
-  margin-right: 0;
 }
 
 .c1:hover {
@@ -10482,7 +10450,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -10720,6 +10687,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -12158,21 +12126,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 5`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c11 .c5 {
-  margin-right: 0;
-}
-
-.c12 .c5 {
-  margin-right: 0;
-}
-
-.c13 .c5 {
-  margin-right: 0;
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -12202,10 +12161,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #e91b0c;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4 .c5 {
-  margin-right: 0;
 }
 
 .c4:hover {
@@ -12574,21 +12529,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
 }
 
-.c9 .c4 {
-  margin-right: 0;
-}
-
-.c10 .c4 {
-  margin-right: 0;
-}
-
-.c11 .c4 {
-  margin-right: 0;
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -12618,10 +12564,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   color: #ffffff;
   border: 2px solid #e91b0c;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1 .c4 {
-  margin-right: 0;
 }
 
 .c1:hover {
@@ -13471,7 +13413,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -13709,6 +13650,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -15147,9 +15089,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 6`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -15181,10 +15126,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 .c5 {
-  margin-right: 0;
-}
-
 .c4:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -15199,18 +15140,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c4:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
-}
-
-.c11 .c5 {
-  margin-right: 0;
-}
-
-.c12 .c5 {
-  margin-right: 0;
-}
-
-.c13 .c5 {
-  margin-right: 0;
 }
 
 .c2 {
@@ -15563,9 +15492,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -15597,10 +15529,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c1 .c4 {
-  margin-right: 0;
-}
-
 .c1:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -15615,18 +15543,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
-}
-
-.c9 .c4 {
-  margin-right: 0;
-}
-
-.c10 .c4 {
-  margin-right: 0;
-}
-
-.c11 .c4 {
-  margin-right: 0;
 }
 
 .c2 {
@@ -16460,7 +16376,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -16698,6 +16613,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -18136,9 +18052,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 7`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -18170,10 +18089,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 .c5 {
-  margin-right: 0;
-}
-
 .c4:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -18188,18 +18103,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c4:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
-}
-
-.c11 .c5 {
-  margin-right: 0;
-}
-
-.c12 .c5 {
-  margin-right: 0;
-}
-
-.c13 .c5 {
-  margin-right: 0;
 }
 
 .c2 {
@@ -18549,9 +18452,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -18583,10 +18489,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c1 .c4 {
-  margin-right: 0;
-}
-
 .c1:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -18601,18 +18503,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
-}
-
-.c9 .c4 {
-  margin-right: 0;
-}
-
-.c10 .c4 {
-  margin-right: 0;
-}
-
-.c11 .c4 {
-  margin-right: 0;
 }
 
 .c2 {
@@ -19443,7 +19333,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -19681,6 +19570,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -21119,9 +21009,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 8`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -21153,10 +21046,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4 .c5 {
-  margin-right: 0;
-}
-
 .c4:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -21171,18 +21060,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c4:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
-}
-
-.c11 .c5 {
-  margin-right: 0;
-}
-
-.c12 .c5 {
-  margin-right: 0;
-}
-
-.c13 .c5 {
-  margin-right: 0;
 }
 
 .c2 {
@@ -21532,9 +21409,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -21566,10 +21446,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c1 .c4 {
-  margin-right: 0;
-}
-
 .c1:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
@@ -21584,18 +21460,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 .c1:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
-}
-
-.c9 .c4 {
-  margin-right: 0;
-}
-
-.c10 .c4 {
-  margin-right: 0;
-}
-
-.c11 .c4 {
-  margin-right: 0;
 }
 
 .c2 {
@@ -22426,7 +22290,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     className="c2 c3"
                     disabled={false}
                     full={false}
-                    iconOnly={true}
                     inverted={false}
                     onClick={[Function]}
                     size="medium"
@@ -22664,6 +22527,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={

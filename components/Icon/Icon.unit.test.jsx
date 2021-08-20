@@ -20,7 +20,7 @@ describe('<Icon />', () => {
       .create(<Icon name="search" size="large" />)
       .toJSON();
     const withXSmallSize = renderer
-      .create(<Icon name="search" size="xlarge" />)
+      .create(<Icon name="search" size="xsmall" />)
       .toJSON();
     const withXLargeSize = renderer
       .create(<Icon name="search" size="xlarge" />)

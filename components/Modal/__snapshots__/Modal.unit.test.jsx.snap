@@ -58,9 +58,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c16 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c16.with-children {
+  margin-right: 8px;
 }
 
 .c14 {
@@ -90,10 +93,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c14 .c15 {
-  margin-right: 0;
 }
 
 .c14:hover {
@@ -471,9 +470,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c16 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c16.with-children {
+  margin-right: 8px;
 }
 
 .c12 {
@@ -503,10 +505,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   color: #ffffff;
   border: 2px solid #424242;
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c12 .c15 {
-  margin-right: 0;
 }
 
 .c12:hover {
@@ -2013,7 +2011,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                       className="c12 c13"
                       disabled={false}
                       full={false}
-                      iconOnly={true}
                       onClick={[Function]}
                       size="medium"
                       skin="neutral"
@@ -2227,6 +2224,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         type="button"
                       >
                         <Button__ButtonIcon
+                          className=""
                           name="close"
                           size="medium"
                           theme={
