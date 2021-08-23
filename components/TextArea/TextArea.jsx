@@ -13,10 +13,12 @@ import {
 const ID_GENERATOR = uniqId('textarea-');
 
 const TextAreaTag = styled(TextInput)`
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  && {
+    display: block;
+    min-height: 108px;
+    margin-top: 8px;
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
 `;
 
 class TextArea extends React.Component {
