@@ -346,9 +346,12 @@ exports[`Popover component  Snapshots should match snapshots 8`] = `
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 1`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -734,9 +737,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -1840,6 +1846,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -3278,9 +3285,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 2`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -3666,9 +3676,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -4772,6 +4785,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -6210,9 +6224,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 3`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -6602,9 +6619,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -7712,6 +7732,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -9150,9 +9171,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 4`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -9546,9 +9570,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -10660,6 +10687,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -12098,9 +12126,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 5`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -12498,9 +12529,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -13616,6 +13650,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -15054,9 +15089,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 6`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -15454,9 +15492,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -16572,6 +16613,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -18010,9 +18052,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 7`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -18407,9 +18452,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -19522,6 +19570,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={
@@ -20960,9 +21009,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
 
 exports[`Popover component  Snapshots should match the snapshots after click on trigger to show Popover Balloon 8`] = `
 .c6 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
 }
 
 .c4 {
@@ -21357,9 +21409,12 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
         <Portal
           containerInfo={
             .c5 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c5.with-children {
+  margin-right: 8px;
 }
 
 .c1 {
@@ -22472,6 +22527,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                       type="button"
                     >
                       <Button__ButtonIcon
+                        className=""
                         name="close"
                         size="medium"
                         theme={

@@ -58,9 +58,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c16 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c16.with-children {
+  margin-right: 8px;
 }
 
 .c14 {
@@ -467,9 +470,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 }
 
 .c16 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c16.with-children {
+  margin-right: 8px;
 }
 
 .c12 {
@@ -2218,6 +2224,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                         type="button"
                       >
                         <Button__ButtonIcon
+                          className=""
                           name="close"
                           size="medium"
                           theme={

@@ -2,9 +2,12 @@
 
 exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 .c9 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c9.with-children {
+  margin-right: 8px;
 }
 
 .c3 {
@@ -397,9 +400,12 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 
 exports[`Alert component When you set a alert custom icon Should match the snapshot with an icon 1`] = `
 .c11 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c11.with-children {
+  margin-right: 8px;
 }
 
 .c5 {
@@ -819,9 +825,12 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 1`] = `
 .c9 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c9.with-children {
+  margin-right: 8px;
 }
 
 .c3 {
@@ -1214,9 +1223,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 2`] = `
 .c9 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c9.with-children {
+  margin-right: 8px;
 }
 
 .c3 {
@@ -1621,9 +1633,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 3`] = `
 .c9 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c9.with-children {
+  margin-right: 8px;
 }
 
 .c3 {
@@ -2040,9 +2055,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 4`] = `
 .c9 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c9.with-children {
+  margin-right: 8px;
 }
 
 .c3 {
@@ -2471,9 +2489,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 
 exports[`Alert component When you set a different skin Should match a skin snapshot 5`] = `
 .c9 {
-  margin-right: 8px;
   pointer-events: none;
   width: 24px;
+}
+
+.c9.with-children {
+  margin-right: 8px;
 }
 
 .c3 {

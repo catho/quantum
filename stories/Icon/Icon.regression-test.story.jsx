@@ -25,3 +25,13 @@ export const Small = Template.bind({});
 Small.args = {
   size: 'small',
 };
+
+export const XSmall = Template.bind({});
+XSmall.args = {
+  size: 'xsmall',
+};
+
+export const XLarge = Template.bind({});
+XLarge.args = {
+  size: 'xlarge',
+};
