@@ -47,6 +47,7 @@ const icons = [
   'keyboard_arrow_left',
   'keyboard_arrow_right',
   'keyboard_arrow_up',
+  'launch',
   'lock',
   'markunread',
   'menu_book',
