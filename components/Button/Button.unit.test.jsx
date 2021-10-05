@@ -19,6 +19,12 @@ describe('Button component', () => {
     ).toMatchSnapshot();
   });
 
+  it('when rounded prop is set', () => {
+    expect(
+      renderer.create(<Button rounded>Rounded</Button>).toJSON(),
+    ).toMatchSnapshot();
+  });
+
   it('should render a button only icon state ', () => {
     expect(renderer.create(<Button icon="info" />).toJSON()).toMatchSnapshot();
     expect(

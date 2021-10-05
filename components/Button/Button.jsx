@@ -58,7 +58,17 @@ const StyledButton = styled.button`
   display: flex;
   font-weight: bold;
   justify-content: center;
-  border-radius: 4px; 
+
+  ${({ rounded }) => {
+    if (rounded) {
+      return css`
+        border-radius: 50%;
+      `;
+    }
+    return css`
+      border-radius: 4px;
+    `;
+  }}
 
   ${({ disabled }) =>
     css`
@@ -213,6 +223,7 @@ const Button = ({ children, icon, size, $as, theme, ...rest }) => (
 );
 
 Button.defaultProps = {
+  rounded: false,
   center: false,
   disabled: false,
   stroked: false,
@@ -236,6 +247,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
+  rounded: PropTypes.bool,
   center: PropTypes.bool,
   disabled: PropTypes.bool,
   stroked: PropTypes.bool,

@@ -2,6 +2,7 @@ import React from 'react';
 import IconButton from './IconButton';
 
 export interface ButtonProps {
+    rounded?: boolean;
     center?: boolean;
     disabled?: boolean;
     stroked?: boolean;

@@ -1587,6 +1587,64 @@ exports[`Button component when full prop is set 1`] = `
 </button>
 `;
 
+exports[`Button component when rounded prop is set 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1250C4;
+  color: #ffffff;
+  border: 2px solid #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c0:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+  border-color: #002F7B;
+}
+
+.c0:focus,
+.c0:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+}
+
+.c0:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
+  background-color: #002F7B;
+}
+
+<button
+  className="c0"
+  disabled={false}
+  onClick={[Function]}
+  size="medium"
+  type="button"
+>
+  
+  Rounded
+</button>
+`;
+
 exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
 .c0 {
   -webkit-align-items: center;

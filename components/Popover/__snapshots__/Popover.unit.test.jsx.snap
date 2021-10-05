@@ -1377,6 +1377,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="neutral"
                   stroked={false}
@@ -1611,6 +1612,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="neutral"
                     stroked={false}
@@ -4316,6 +4318,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="neutral"
                   stroked={false}
@@ -4550,6 +4553,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="neutral"
                     stroked={false}
@@ -7263,6 +7267,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="success"
                   stroked={false}
@@ -7497,6 +7502,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="success"
                     stroked={false}
@@ -10218,6 +10224,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="warning"
                   stroked={false}
@@ -10452,6 +10459,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="warning"
                     stroked={false}
@@ -13181,6 +13189,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="error"
                   stroked={false}
@@ -13415,6 +13424,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="error"
                     stroked={false}
@@ -16144,6 +16154,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="neutral"
                   stroked={false}
@@ -16378,6 +16389,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="neutral"
                     stroked={false}
@@ -19101,6 +19113,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="neutral"
                   stroked={false}
@@ -19335,6 +19348,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="neutral"
                     stroked={false}
@@ -22058,6 +22072,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                   icon="close"
                   inverted={false}
                   onClick={[Function]}
+                  rounded={false}
                   size="medium"
                   skin="neutral"
                   stroked={false}
@@ -22292,6 +22307,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     full={false}
                     inverted={false}
                     onClick={[Function]}
+                    rounded={false}
                     size="medium"
                     skin="neutral"
                     stroked={false}
