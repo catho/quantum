@@ -49,6 +49,8 @@ exports[`Accordion component Should match the snapshot 1`] = `
   font-size: 14px;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  display: block;
+  padding: 8px 0;
 }
 
 .c5 a:hover {
@@ -58,10 +60,6 @@ exports[`Accordion component Should match the snapshot 1`] = `
 .c5 ul {
   list-style-type: none;
   padding: 0;
-}
-
-.c5 ul > li {
-  padding: 8px 0;
 }
 
 .c5 p {

@@ -9,14 +9,22 @@ import {
   RequiredMark,
   TextInput,
 } from '../Input/sub-components';
+import { spacing, colors, baseFontSize } from '../shared/theme';
 
 const ID_GENERATOR = uniqId('textarea-');
 
 const TextAreaTag = styled(TextInput)`
-  display: block;
-  min-height: 108px;
-  margin-top: 8px;
-  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  && {
+    display: block;
+    min-height: 108px;
+    ${({
+      theme: {
+        spacing: { xsmall },
+      },
+    }) => `
+      margin-top: ${xsmall}px;`}
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
 `;
 
 class TextArea extends React.Component {
@@ -45,7 +53,15 @@ class TextArea extends React.Component {
   };
 
   render() {
-    const { label, required, helperText, error, id, ...rest } = this.props;
+    const {
+      label,
+      required,
+      helperText,
+      error,
+      id,
+      theme,
+      ...rest
+    } = this.props;
     const { hasDefaultValue, currentValue } = this.state;
 
     return (
@@ -65,6 +81,7 @@ class TextArea extends React.Component {
           required={required}
           as="textarea"
           onChange={this.onChangeTextArea}
+          theme={theme}
         />
         {helperText && <HelperText>{helperText}</HelperText>}
         {error && (
@@ -85,6 +102,7 @@ TextArea.defaultProps = {
   required: false,
   value: '',
   id: undefined,
+  theme: { spacing, colors, baseFontSize },
 };
 
 TextArea.propTypes = {
@@ -97,6 +115,11 @@ TextArea.propTypes = {
   required: PropTypes.bool,
   value: PropTypes.string,
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  theme: PropTypes.shape({
+    spacing: PropTypes.object,
+    colors: PropTypes.object,
+    baseFontSize: PropTypes.number,
+  }),
 };
 
 TextAreaTag.displayName = 'TextAreaTag';

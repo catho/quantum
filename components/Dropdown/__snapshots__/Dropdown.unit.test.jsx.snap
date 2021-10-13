@@ -888,7 +888,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   </div>
   
   <span
-    className="InputErrorMessage-s0eyav-0 c5"
+    className="InputErrorMessage-sc-s0eyav-0 c5"
   >
     Error message
   </span>

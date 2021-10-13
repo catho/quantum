@@ -78,6 +78,8 @@ const AccordionContent = styled.div`
       color: ${primary[700]};
       font-size: ${baseFontSize - 2}px;
       text-decoration: underline;
+      display: block;
+      padding: ${xsmall}px 0;
 
       &:hover {
         color: ${secondary[700]};
@@ -87,10 +89,6 @@ const AccordionContent = styled.div`
     ul {
       list-style-type: none;
       padding: 0;
-      
-      & > li {
-        padding: ${xsmall}px 0;
-      }
     }
 
     p {

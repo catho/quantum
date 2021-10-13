@@ -62,7 +62,7 @@ exports[`TextArea component should match snapshots 1`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
-.c2 {
+.c2.c2 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -150,7 +150,7 @@ exports[`TextArea component should match snapshots 2`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
-.c2 {
+.c2.c2 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -243,7 +243,7 @@ exports[`TextArea component should match snapshots 3`] = `
   margin: 8px 0 0;
 }
 
-.c3 {
+.c3.c3 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -346,7 +346,7 @@ exports[`TextArea component should match snapshots 4`] = `
   color: #ec584e;
 }
 
-.c4 {
+.c4.c4 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -444,7 +444,7 @@ exports[`TextArea component should match snapshots 5`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
-.c2 {
+.c2.c2 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -531,7 +531,7 @@ exports[`TextArea component should match snapshots 6`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
-.c2 {
+.c2.c2 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -633,7 +633,7 @@ exports[`TextArea component should match snapshots 7`] = `
   color: #424242;
 }
 
-.c2 {
+.c2.c2 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -654,7 +654,7 @@ exports[`TextArea component should match snapshots 7`] = `
     value=""
   />
   <span
-    className="InputErrorMessage-s0eyav-0 c3 c4"
+    className="InputErrorMessage-sc-s0eyav-0 c3 c4"
   >
     this is a helper text
   </span>
@@ -736,7 +736,7 @@ exports[`TextArea component should match snapshots 8`] = `
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
-.c2 {
+.c2.c2 {
   display: block;
   min-height: 108px;
   margin-top: 8px;
@@ -758,7 +758,7 @@ exports[`TextArea component should match snapshots 8`] = `
   />
   
   <span
-    className="InputErrorMessage-s0eyav-0 c3"
+    className="InputErrorMessage-sc-s0eyav-0 c3"
   >
     Error message
   </span>

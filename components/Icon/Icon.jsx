@@ -9,9 +9,12 @@ import AddCircle from '@material-ui/icons/AddCircle';
 import Apps from '@material-ui/icons/Apps';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
+import ArrowLeft from '@material-ui/icons/ArrowLeft';
+import ArrowRight from '@material-ui/icons/ArrowRight';
 import Assessment from '@material-ui/icons/Assessment';
 import Assignment from '@material-ui/icons/Assignment';
 import AssignmentInd from '@material-ui/icons/AssignmentInd';
+import AssignmentTurnedIn from '@material-ui/icons/AssignmentTurnedIn';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 import Block from '@material-ui/icons/Block';
 import CameraAlt from '@material-ui/icons/CameraAlt';
@@ -38,12 +41,15 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 import FilterList from '@material-ui/icons/FilterList';
+import Folder from '@material-ui/icons/Folder';
+import Group from '@material-ui/icons/Group';
 import Home from '@material-ui/icons/Home';
 import Info from '@material-ui/icons/Info';
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowUp from '@material-ui/icons/KeyboardArrowUp';
+import Launch from '@material-ui/icons/Launch';
 import Lock from '@material-ui/icons/Lock';
 import Markunread from '@material-ui/icons/Markunread';
 import Menu from '@material-ui/icons/Menu';
@@ -55,6 +61,7 @@ import Person from '@material-ui/icons/Person';
 import PhoneAndroid from '@material-ui/icons/PhoneAndroid';
 import RadioButtonChecked from '@material-ui/icons/RadioButtonChecked';
 import RadioButtonUnchecked from '@material-ui/icons/RadioButtonUnchecked';
+import Refresh from '@material-ui/icons/Refresh';
 import Receipt from '@material-ui/icons/Receipt';
 import Search from '@material-ui/icons/Search';
 import Send from '@material-ui/icons/Send';
@@ -70,6 +77,7 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
 import Whatshot from '@material-ui/icons/Whatshot';
+import Work from '@material-ui/icons/Work';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -94,9 +102,12 @@ const Icon = ({ name, skin, size, ...props }) => {
     apps: Apps,
     arrow_drop_down: ArrowDropDown,
     arrow_drop_up: ArrowDropUp,
+    arrow_left: ArrowLeft,
+    arrow_right: ArrowRight,
     assessment: Assessment,
     assignment: Assignment,
     assignment_ind: AssignmentInd,
+    assignment_turned_in: AssignmentTurnedIn,
     attach_money: AttachMoney,
     block: Block,
     camera: CameraAlt,
@@ -123,12 +134,15 @@ const Icon = ({ name, skin, size, ...props }) => {
     expand_more: ExpandMore,
     favorite_border: FavoriteBorder,
     filter_list: FilterList,
+    folder: Folder,
+    group: Group,
     home: Home,
     info: Info,
     keyboard_arrow_down: KeyboardArrowDown,
     keyboard_arrow_left: KeyboardArrowLeft,
     keyboard_arrow_right: KeyboardArrowRight,
     keyboard_arrow_up: KeyboardArrowUp,
+    launch: Launch,
     lock: Lock,
     markunread: Markunread,
     menu_book: MenuBook,
@@ -141,6 +155,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     phone_android: PhoneAndroid,
     radio_button_checked: RadioButtonChecked,
     radio_button_unchecked: RadioButtonUnchecked,
+    refresh: Refresh,
     receipt: Receipt,
     search: Search,
     send: Send,
@@ -156,6 +171,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     visibility: Visibility,
     warning: Warning,
     whatshot: Whatshot,
+    work: Work,
   };
 
   if (!components[name]) return <span>{name}</span>;
