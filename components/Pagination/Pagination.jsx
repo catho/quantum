@@ -79,7 +79,7 @@ class Pagination extends React.Component {
           </Wrapper>
         </Hide>
 
-        <Hide medium large xlarge>
+        <Hide medium large>
           <Wrapper aria-label={ariaLabel} {...props}>
             <Mobile {...attributes} />
           </Wrapper>

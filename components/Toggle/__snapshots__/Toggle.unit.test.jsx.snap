@@ -28,6 +28,39 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,transform 0.2s ease-in-out;
 }
 
+.c3 .Toggle__CloseIcon-sc-17b9usn-1,
+.c3 .Toggle__CheckIcon-sc-17b9usn-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #999999;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  visibility: hidden;
+  width: 20px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.c3 .Toggle__CloseIcon-sc-17b9usn-1 {
+  visibility: visible;
+}
+
 .c1 {
   cursor: pointer;
   height: 24px;
@@ -46,12 +79,31 @@ exports[`<Toggle />  Snapshots should match snapshot with checked prop 1`] = `
   background-color: #424242;
 }
 
+.c1:checked + .c2 .Toggle__CloseIcon-sc-17b9usn-1 {
+  visibility: hidden;
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
+  visibility: visible;
+}
+
 .c1:checked + .c2:before {
   background-color: #1250C4;
 }
 
 .c1:checked:hover + .c2:before {
   background-color: #002F7B;
+}
+
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
+  background-color: #E5EDFC;
+  color: #1250C4;
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
 }
 
 <div
@@ -135,6 +187,39 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,transform 0.2s ease-in-out;
 }
 
+.c3 .Toggle__CloseIcon-sc-17b9usn-1,
+.c3 .Toggle__CheckIcon-sc-17b9usn-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #999999;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  visibility: hidden;
+  width: 20px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.c3 .Toggle__CloseIcon-sc-17b9usn-1 {
+  visibility: visible;
+}
+
 .c1 {
   cursor: pointer;
   height: 24px;
@@ -153,12 +238,31 @@ exports[`<Toggle />  Snapshots should match snapshot without props 1`] = `
   background-color: #424242;
 }
 
+.c1:checked + .c2 .Toggle__CloseIcon-sc-17b9usn-1 {
+  visibility: hidden;
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
+  visibility: visible;
+}
+
 .c1:checked + .c2:before {
   background-color: #1250C4;
 }
 
 .c1:checked:hover + .c2:before {
   background-color: #002F7B;
+}
+
+.c1:checked + .c2 .Toggle__CheckIcon-sc-17b9usn-0 {
+  background-color: #E5EDFC;
+  color: #1250C4;
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
 }
 
 <div

@@ -11,7 +11,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 RadioGroup__Group-sc-1l7wvp0-0 jHvmCQ eCksJC\\"
+    className=\\"FieldGroup-sc-18uoi37-0 RadioGroup__Group-sc-1l7wvp0-0 bGVwQY eGpFsa\\"
     role=\\"radiogroup\\"
   >
     <div
@@ -19,7 +19,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+        className=\\"RadioButton-sc-1q7g63p-3 fBLCTx\\"
         disabled={false}
 -       htmlFor=\\"radio-button-9\\"
 +       htmlFor=\\"radio-button-12\\"
@@ -27,7 +27,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+          className=\\"HiddenInput-sc-14w753s-0 dVGkMH\\"
           disabled={false}
 -         id=\\"radio-button-9\\"
 +         id=\\"radio-button-12\\"
@@ -45,7 +45,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+        className=\\"RadioButton-sc-1q7g63p-3 fBLCTx\\"
         disabled={false}
 -       htmlFor=\\"radio-button-10\\"
 +       htmlFor=\\"radio-button-13\\"
@@ -53,7 +53,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+          className=\\"HiddenInput-sc-14w753s-0 dVGkMH\\"
           disabled={false}
 -         id=\\"radio-button-10\\"
 +         id=\\"radio-button-13\\"
@@ -71,7 +71,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
     >
       <label
         checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+        className=\\"RadioButton-sc-1q7g63p-3 fBLCTx\\"
         disabled={false}
 -       htmlFor=\\"radio-button-11\\"
 +       htmlFor=\\"radio-button-14\\"
@@ -79,7 +79,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+          className=\\"HiddenInput-sc-14w753s-0 dVGkMH\\"
           disabled={false}
 -         id=\\"radio-button-11\\"
 +         id=\\"radio-button-14\\"
@@ -232,6 +232,11 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
 
 .c2:last-child {
   margin-right: 0;
+}
+
+.c2 .RadioButton__LockIcon-sc-1q7g63p-0 {
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 .c3 {

@@ -14,7 +14,6 @@ const hideQueries = ({
   small: { width: smallWidth },
   medium: { width: mediumWidth },
   large: { width: largeWidth },
-  xlarge: { width: xlargeWidth },
 }) => ({
   xsmall: () => `
     @media (max-width: ${smallWidth - 1}px) {
@@ -32,12 +31,7 @@ const hideQueries = ({
     }
   `,
   large: () => `
-    @media (min-width: ${largeWidth}px) and (max-width: ${xlargeWidth - 1}px) {
-      display: none !important;
-    }
-  `,
-  xlarge: () => `
-    @media (min-width: ${xlargeWidth}px) {
+    @media (min-width: ${largeWidth}px) {
       display: none !important;
     }
   `,

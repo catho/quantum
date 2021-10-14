@@ -182,14 +182,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   }
 }
 
-@media (min-width:1920px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
 @supports (display:grid ) {
 
 }
@@ -214,10 +206,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
 }
 
 @media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
 
 }
 
@@ -322,10 +310,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -550,7 +534,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
               "large": "1440px",
               "medium": "1024px",
               "small": "100%",
-              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -688,10 +671,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
             "small": Object {
               "columns": 8,
               "width": 600,
-            },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
             },
             "xsmall": Object {
               "columns": 4,
@@ -916,7 +895,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -1088,10 +1066,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
               "columns": 8,
               "width": 600,
             },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
-            },
             "xsmall": Object {
               "columns": 4,
             },
@@ -1315,7 +1289,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -1453,10 +1426,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -1681,7 +1650,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -1856,10 +1824,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                 "small": Object {
                   "columns": 8,
                   "width": 600,
-                },
-                "xlarge": Object {
-                  "columns": 12,
-                  "width": 1920,
                 },
                 "xsmall": Object {
                   "columns": 4,
@@ -2084,7 +2048,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                     "large": "1440px",
                     "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -2222,10 +2185,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                   "small": Object {
                     "columns": 8,
                     "width": 600,
-                  },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
                   },
                   "xsmall": Object {
                     "columns": 4,
@@ -2450,7 +2409,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                       "large": "1440px",
                       "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -2738,10 +2696,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -2951,10 +2905,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -3217,10 +3167,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -3430,10 +3376,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -3695,10 +3637,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -3908,10 +3846,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -4321,14 +4255,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   }
 }
 
-@media (min-width:1920px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
 @supports (display:grid ) {
 
 }
@@ -4353,10 +4279,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
 }
 
 @media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
 
 }
 
@@ -4474,10 +4396,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -4702,7 +4620,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
               "large": "1440px",
               "medium": "1024px",
               "small": "100%",
-              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -4840,10 +4757,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
             "small": Object {
               "columns": 8,
               "width": 600,
-            },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
             },
             "xsmall": Object {
               "columns": 4,
@@ -5068,7 +4981,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -5240,10 +5152,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
               "columns": 8,
               "width": 600,
             },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
-            },
             "xsmall": Object {
               "columns": 4,
             },
@@ -5467,7 +5375,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -5605,10 +5512,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -5833,7 +5736,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -6008,10 +5910,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                 "small": Object {
                   "columns": 8,
                   "width": 600,
-                },
-                "xlarge": Object {
-                  "columns": 12,
-                  "width": 1920,
                 },
                 "xsmall": Object {
                   "columns": 4,
@@ -6236,7 +6134,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                     "large": "1440px",
                     "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -6374,10 +6271,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                   "small": Object {
                     "columns": 8,
                     "width": 600,
-                  },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
                   },
                   "xsmall": Object {
                     "columns": 4,
@@ -6602,7 +6495,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                       "large": "1440px",
                       "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -6904,10 +6796,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -7117,10 +7005,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -7338,7 +7222,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(InfoIcon)
+                              <ForwardRef
                                 aria-label="Profissional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -7405,7 +7289,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(InfoIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -7458,10 +7342,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -7672,10 +7552,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -7893,7 +7769,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(BlockIcon)
+                              <ForwardRef
                                 aria-label="Operacional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -7960,7 +7836,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(BlockIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -8012,10 +7888,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -8226,10 +8098,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -8447,7 +8315,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(DateRangeIcon)
+                              <ForwardRef
                                 aria-label="Estagiário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -8514,7 +8382,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(DateRangeIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -8566,10 +8434,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -8780,10 +8644,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -9001,7 +8861,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(ErrorIcon)
+                              <ForwardRef
                                 aria-label="Maquinário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -9068,7 +8928,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(ErrorIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -9120,10 +8980,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -9334,10 +9190,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -9555,7 +9407,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(FavoriteBorderIcon)
+                              <ForwardRef
                                 aria-label="Favorito"
                                 data-qtm-preloader="icon"
                                 style={
@@ -9622,7 +9474,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(FavoriteBorderIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -9822,14 +9674,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   }
 }
 
-@media (min-width:1920px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
 @supports (display:grid ) {
 
 }
@@ -9854,10 +9698,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
 }
 
 @media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
 
 }
 
@@ -9965,10 +9805,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -10193,7 +10029,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
               "large": "1440px",
               "medium": "1024px",
               "small": "100%",
-              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -10331,10 +10166,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
             "small": Object {
               "columns": 8,
               "width": 600,
-            },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
             },
             "xsmall": Object {
               "columns": 4,
@@ -10559,7 +10390,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -10731,10 +10561,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
               "columns": 8,
               "width": 600,
             },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
-            },
             "xsmall": Object {
               "columns": 4,
             },
@@ -10958,7 +10784,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -11096,10 +10921,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -11324,7 +11145,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -11499,10 +11319,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                 "small": Object {
                   "columns": 8,
                   "width": 600,
-                },
-                "xlarge": Object {
-                  "columns": 12,
-                  "width": 1920,
                 },
                 "xsmall": Object {
                   "columns": 4,
@@ -11727,7 +11543,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                     "large": "1440px",
                     "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -11865,10 +11680,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                   "small": Object {
                     "columns": 8,
                     "width": 600,
-                  },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
                   },
                   "xsmall": Object {
                     "columns": 4,
@@ -12093,7 +11904,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                       "large": "1440px",
                       "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -12385,10 +12195,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -12598,10 +12404,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -12819,7 +12621,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(InfoIcon)
+                              <ForwardRef
                                 aria-label="Profissional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -12886,7 +12688,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(InfoIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -12939,10 +12741,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -13153,10 +12951,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -13374,7 +13168,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(BlockIcon)
+                              <ForwardRef
                                 aria-label="Operacional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -13441,7 +13235,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(BlockIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -13493,10 +13287,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -13707,10 +13497,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -13928,7 +13714,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(DateRangeIcon)
+                              <ForwardRef
                                 aria-label="Estagiário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -13995,7 +13781,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(DateRangeIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -14195,14 +13981,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   }
 }
 
-@media (min-width:1920px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
 @supports (display:grid ) {
 
 }
@@ -14227,10 +14005,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
 }
 
 @media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
 
 }
 
@@ -14339,10 +14113,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -14567,7 +14337,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
               "large": "1440px",
               "medium": "1024px",
               "small": "100%",
-              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -14705,10 +14474,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
             "small": Object {
               "columns": 8,
               "width": 600,
-            },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
             },
             "xsmall": Object {
               "columns": 4,
@@ -14933,7 +14698,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -15105,10 +14869,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
               "columns": 8,
               "width": 600,
             },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
-            },
             "xsmall": Object {
               "columns": 4,
             },
@@ -15332,7 +15092,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                 "large": "1440px",
                 "medium": "1024px",
                 "small": "100%",
-                "xlarge": "1920px",
                 "xsmall": "100%,",
               },
             },
@@ -15470,10 +15229,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -15698,7 +15453,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -15873,10 +15627,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                 "small": Object {
                   "columns": 8,
                   "width": 600,
-                },
-                "xlarge": Object {
-                  "columns": 12,
-                  "width": 1920,
                 },
                 "xsmall": Object {
                   "columns": 4,
@@ -16101,7 +15851,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                     "large": "1440px",
                     "medium": "1024px",
                     "small": "100%",
-                    "xlarge": "1920px",
                     "xsmall": "100%,",
                   },
                 },
@@ -16239,10 +15988,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                   "small": Object {
                     "columns": 8,
                     "width": 600,
-                  },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
                   },
                   "xsmall": Object {
                     "columns": 4,
@@ -16467,7 +16212,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                       "large": "1440px",
                       "medium": "1024px",
                       "small": "100%",
-                      "xlarge": "1920px",
                       "xsmall": "100%,",
                     },
                   },
@@ -16759,10 +16503,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -16972,10 +16712,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -17193,7 +16929,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(InfoIcon)
+                              <ForwardRef
                                 aria-label="Profissional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -17260,7 +16996,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(InfoIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -17313,10 +17049,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -17527,10 +17259,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -17748,7 +17476,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(BlockIcon)
+                              <ForwardRef
                                 aria-label="Operacional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -17815,7 +17543,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(BlockIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -17867,10 +17595,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               "small": Object {
                                 "columns": 8,
                                 "width": 600,
-                              },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
                               },
                               "xsmall": Object {
                                 "columns": 4,
@@ -18081,10 +17805,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -18302,7 +18022,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef(DateRangeIcon)
+                              <ForwardRef
                                 aria-label="Estagiário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -18369,7 +18089,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef(DateRangeIcon)>
+                              </ForwardRef>
                             </Icon>
                           </label>
                         </Button__StyledButton>

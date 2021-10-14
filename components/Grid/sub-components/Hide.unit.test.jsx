@@ -17,14 +17,11 @@ describe('<Hide />', () => {
     expect(
       renderer.create(<Hide large>Content</Hide>).toJSON(),
     ).toMatchSnapshot();
-    expect(
-      renderer.create(<Hide xlarge>Content</Hide>).toJSON(),
-    ).toMatchSnapshot();
 
     expect(
       renderer
         .create(
-          <Hide small xlarge>
+          <Hide small large>
             Content
           </Hide>,
         )

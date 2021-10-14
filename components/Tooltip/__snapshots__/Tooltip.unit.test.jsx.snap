@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip component  All positions Should match the snapshot when place is bottom 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is bottom 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 lgxayj\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 fPtNyH\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fKmjKM\\">This is a hint</span></div>Hover Me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is left 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is left 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 lgxayj\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 fPtNyH\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fKmjKM\\">This is a hint</span></div>Hover Me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 lgxayj\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 fPtNyH\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fKmjKM\\">This is a hint</span></div>Hover Me</div>"`;
 
-exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 lgxayj\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 fPtNyH\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fKmjKM\\">This is a hint</span></div>Hover Me</div>"`;
 
 exports[`Tooltip component  Multiline Should match the snapshot when is multiline 1`] = `
-"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 dwZvoO\\">Lorem ipsum dolor sit amet, 
+"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 lgxayj\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 fPtNyH\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 bRmYvS\\">Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
 Aenean bibendum facilisis sem viverra fringilla. 
 Suspendisse finibus libero nec justo semper.</span></div>Hover Me</div>"
 `;
 
 exports[`Tooltip component  Multiline Should match the snapshot when is not multiline 1`] = `
-"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">Lorem ipsum dolor sit amet, 
+"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 lgxayj\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 fPtNyH\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fKmjKM\\">Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
 Aenean bibendum facilisis sem viverra fringilla. 
 Suspendisse finibus libero nec justo semper.</span></div>Hover Me</div>"

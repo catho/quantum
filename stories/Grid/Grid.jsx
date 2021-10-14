@@ -232,44 +232,12 @@ const SizesTable = () => (
       </tr>
       <tr>
         <td colSpan="1" rowSpan="1">
-          <p>1440 – 1599</p>
+          <p>1440 +</p>
         </td>
         <td colSpan="1" rowSpan="1" />
         <td colSpan="1" rowSpan="1" />
         <td colSpan="1" rowSpan="1">
           <p>large</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>12</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>24</p>
-        </td>
-      </tr>
-      <tr>
-        <td colSpan="1" rowSpan="1">
-          <p>1600 – 1919</p>
-        </td>
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1">
-          <p>large</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>12</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>24</p>
-        </td>
-      </tr>
-      <tr>
-        <td colSpan="1" rowSpan="1">
-          <p>1920 +</p>
-        </td>
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1">
-          <p>xlarge</p>
         </td>
         <td colSpan="1" rowSpan="1">
           <p>12</p>
@@ -552,7 +520,6 @@ const Grid = () => (
       <li>small</li>
       <li>medium</li>
       <li>large</li>
-      <li>xlarge</li>
     </ul>
 
     <Title as="h3">Example: Stacked-to-horizontal</Title>
@@ -595,7 +562,6 @@ const Grid = () => (
       <li>small</li>
       <li>medium</li>
       <li>large</li>
-      <li>xlarge</li>
     </ul>
 
     <Title as="h3">Example: Hiding elements in xsmall devices</Title>
@@ -615,7 +581,6 @@ const Grid = () => (
       <li>small-offset</li>
       <li>medium-offset</li>
       <li>large-offset</li>
-      <li>xlarge-offset</li>
     </ul>
   </StoryContainer>
 );

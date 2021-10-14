@@ -82,12 +82,10 @@ const columnPosition = (
     small = xsmall,
     medium = small,
     large = medium,
-    xlarge = large,
     'xsmall-offset': xsmallOffset,
     'small-offset': smallOffset = xsmallOffset,
     'medium-offset': mediumOffset = smallOffset,
     'large-offset': largeOffset = mediumOffset,
-    'xlarge-offset': xlargeOffset = largeOffset,
     theme: { breakpoints, gutter },
     'no-gutters': noGutters,
   },
@@ -111,10 +109,6 @@ const columnPosition = (
     large: {
       size: large,
       offset: largeOffset,
-    },
-    xlarge: {
-      size: xlarge,
-      offset: xlargeOffset,
     },
   };
 
@@ -146,7 +140,7 @@ const Col = styled.div`
   ${props =>
     Object.keys(props.theme.breakpoints).map(breakpoint =>
       columnPosition(props, breakpoint),
-    )}
+    )};
 
   word-break: break-word;
   -webkit-box-sizing: border-box;
@@ -164,12 +158,10 @@ Col.propTypes = {
   small: PropTypes.number,
   medium: PropTypes.number,
   large: PropTypes.number,
-  xlarge: PropTypes.number,
   'xsmall-offset': PropTypes.number,
   'small-offset': PropTypes.number,
   'medium-offset': PropTypes.number,
   'large-offset': PropTypes.number,
-  'xlarge-offset': PropTypes.number,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),

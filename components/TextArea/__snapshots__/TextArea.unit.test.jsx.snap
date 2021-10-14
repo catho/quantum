@@ -654,7 +654,7 @@ exports[`TextArea component should match snapshots 7`] = `
     value=""
   />
   <span
-    className="InputErrorMessage-sc-s0eyav-0 c3 c4"
+    className="InputErrorMessage-s0eyav-0 c3 c4"
   >
     this is a helper text
   </span>
@@ -758,7 +758,7 @@ exports[`TextArea component should match snapshots 8`] = `
   />
   
   <span
-    className="InputErrorMessage-sc-s0eyav-0 c3"
+    className="InputErrorMessage-s0eyav-0 c3"
   >
     Error message
   </span>

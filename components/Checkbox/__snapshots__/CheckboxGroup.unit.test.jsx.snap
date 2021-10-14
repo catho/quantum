@@ -6,17 +6,17 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 jHvmCQ nTJFd\\"
+    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 bGVwQY klvoaF\\"
   >
     <div
       className=\\"Checkbox__Wrapper-sc-1ca5whm-0\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 gzVUdr\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 dDzDsv\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dAMkUb jbbOOw\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dVGkMH guvTKw\\"
           disabled={false}
           id=\\"\\"
           name=\\"Foo\\"
@@ -43,7 +43,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           />
         </svg>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 duEDAR gaSCQH\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kkyYSZ hZkRVT\\"
           htmlFor=\\"\\"
         >
 -         Foo label
@@ -55,11 +55,11 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       className=\\"Checkbox__Wrapper-sc-1ca5whm-0\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 gzVUdr\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 dDzDsv\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dAMkUb jbbOOw\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dVGkMH guvTKw\\"
           disabled={false}
           id=\\"\\"
           name=\\"Bar\\"
@@ -86,7 +86,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           />
         </svg>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 duEDAR gaSCQH\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kkyYSZ hZkRVT\\"
           htmlFor=\\"\\"
         >
 -         Bar label
@@ -98,11 +98,11 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
       className=\\"Checkbox__Wrapper-sc-1ca5whm-0\\"
     >
       <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 gzVUdr\\"
+        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 dDzDsv\\"
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dAMkUb jbbOOw\\"
+          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dVGkMH guvTKw\\"
           disabled={false}
           id=\\"\\"
           name=\\"Baz\\"
@@ -129,7 +129,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
           />
         </svg>
         <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 duEDAR gaSCQH\\"
+          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 kkyYSZ hZkRVT\\"
           htmlFor=\\"\\"
         >
 -         Baz label
@@ -146,14 +146,14 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 jHvmCQ nTJFd\\"
+    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 bGVwQY klvoaF\\"
   >
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 dHjBBA\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 fTLjdA\\"
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 eFlpEz\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 bdaJQP\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-12\\"
 +       htmlFor=\\"checkbox-button-15\\"
@@ -161,7 +161,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dAMkUb\\"
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dVGkMH\\"
           disabled={false}
 -         id=\\"checkbox-button-12\\"
 +         id=\\"checkbox-button-15\\"
@@ -175,11 +175,11 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 dHjBBA\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 fTLjdA\\"
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 eFlpEz\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 bdaJQP\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-13\\"
 +       htmlFor=\\"checkbox-button-16\\"
@@ -187,7 +187,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dAMkUb\\"
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dVGkMH\\"
           disabled={false}
 -         id=\\"checkbox-button-13\\"
 +         id=\\"checkbox-button-16\\"
@@ -201,11 +201,11 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       </label>
     </div>
     <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 dHjBBA\\"
+      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 fTLjdA\\"
     >
       <label
         checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 eFlpEz\\"
+        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 bdaJQP\\"
         disabled={false}
 -       htmlFor=\\"checkbox-button-14\\"
 +       htmlFor=\\"checkbox-button-17\\"
@@ -213,7 +213,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
       >
         <input
           checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dAMkUb\\"
+          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dVGkMH\\"
           disabled={false}
 -         id=\\"checkbox-button-14\\"
 +         id=\\"checkbox-button-17\\"
@@ -237,7 +237,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -248,7 +248,12 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   width: 0;
 }
 
-.c2 {
+.c2 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c3 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -264,18 +269,18 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   className="c0 c1"
 >
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-3"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-3"
         name="Foo"
@@ -287,18 +292,18 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-4"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-4"
         name="Bar"
@@ -310,18 +315,18 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-5"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-5"
         name="Baz"
@@ -379,12 +384,63 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   width: 100%;
 }
 
+.c4 + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 24px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  font-size: 20px;
+}
+
+.c4:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-width: 0;
+  background-color: #1250C4;
+  color: #f2f2f2;
+}
+
+.c4:hover + .Checkbox__CheckIcon-sc-1ca5whm-3,
+.c4:focus + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
 .c4[disabled] {
   cursor: not-allowed;
 }
 
 .c4[disabled] ~ .c5 {
   color: #999999;
+}
+
+.c4[disabled] + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #999999;
+  background-color: #e0e0e0;
+}
+
+.c4[disabled]:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  background-color: #999999;
+}
+
+.c4[disabled]:hover + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
 .c1 {
@@ -567,12 +623,63 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   width: 100%;
 }
 
+.c4 + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 24px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  font-size: 20px;
+}
+
+.c4:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-width: 0;
+  background-color: #1250C4;
+  color: #f2f2f2;
+}
+
+.c4:hover + .Checkbox__CheckIcon-sc-1ca5whm-3,
+.c4:focus + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
 .c4[disabled] {
   cursor: not-allowed;
 }
 
 .c4[disabled] ~ .c5 {
   color: #999999;
+}
+
+.c4[disabled] + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #999999;
+  background-color: #e0e0e0;
+}
+
+.c4[disabled]:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  background-color: #999999;
+}
+
+.c4[disabled]:hover + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
 .c1 {
@@ -719,7 +826,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   width: 100%;
 }
 
-.c3 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -730,7 +837,12 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   width: 0;
 }
 
-.c2 {
+.c2 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c3 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -746,18 +858,18 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   className="c0 c1"
 >
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-0"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-0"
         name="Foo"
@@ -769,18 +881,18 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-1"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-1"
         name="Bar"
@@ -792,18 +904,18 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-2"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-2"
         name="Baz"
@@ -825,7 +937,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   width: 100%;
 }
 
-.c3 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -836,7 +948,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   width: 0;
 }
 
-.c2 {
+.c2 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c3 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -852,18 +969,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   className="c0 c1"
 >
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-18"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-18"
         name="Foo"
@@ -875,18 +992,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-19"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-19"
         name="Bar"
@@ -898,18 +1015,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-20"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-20"
         name="Baz"
@@ -924,7 +1041,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
 `;
 
 exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 1`] = `
-.c4 {
+.c5 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -942,7 +1059,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   width: 100%;
 }
 
-.c3 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -953,7 +1070,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   width: 0;
 }
 
-.c2 {
+.c2 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c3 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -969,18 +1091,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   className="c0 c1"
 >
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-6"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-6"
         name="Foo"
@@ -992,18 +1114,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-7"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-7"
         name="Bar"
@@ -1015,18 +1137,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-8"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-8"
         name="Baz"
@@ -1038,7 +1160,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
     </label>
   </div>
   <span
-    className="c4"
+    className="c5"
   >
     Error Message
   </span>
@@ -1053,7 +1175,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   width: 100%;
 }
 
-.c3 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -1064,7 +1186,12 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   width: 0;
 }
 
-.c2 {
+.c2 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c3 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1080,18 +1207,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   className="c0 c1"
 >
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={true}
       htmlFor="checkbox-button-9"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={true}
         id="checkbox-button-9"
         name="Foo"
@@ -1121,18 +1248,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-10"
       size="medium"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-10"
         name="Bar"
@@ -1144,18 +1271,18 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={true}
-      className="c2"
+      className="c3"
       disabled={true}
       htmlFor="checkbox-button-11"
       size="medium"
     >
       <input
         checked={true}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={true}
         id="checkbox-button-11"
         name="Baz"
@@ -1242,12 +1369,77 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   width: 100%;
 }
 
+.c4 + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 24px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  font-size: 20px;
+}
+
+.c4:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-width: 0;
+  background-color: #1250C4;
+  color: #f2f2f2;
+}
+
+.c4:hover + .Checkbox__CheckIcon-sc-1ca5whm-3,
+.c4:focus + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
+.c4 + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #e91b0c;
+}
+
+.c4:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  background-color: #e91b0c;
+}
+
+.c4:hover + .Checkbox__CheckIcon-sc-1ca5whm-3,
+.c4:focus + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #e91b0c;
+  box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
+}
+
 .c4[disabled] {
   cursor: not-allowed;
 }
 
 .c4[disabled] ~ .c5 {
   color: #999999;
+}
+
+.c4[disabled] + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #999999;
+  background-color: #e0e0e0;
+}
+
+.c4[disabled]:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  background-color: #999999;
+}
+
+.c4[disabled]:hover + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
 .c1 {
@@ -1435,12 +1627,63 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   width: 100%;
 }
 
+.c4 + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 24px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  font-size: 20px;
+}
+
+.c4:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-width: 0;
+  background-color: #1250C4;
+  color: #f2f2f2;
+}
+
+.c4:hover + .Checkbox__CheckIcon-sc-1ca5whm-3,
+.c4:focus + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
 .c4[disabled] {
   cursor: not-allowed;
 }
 
 .c4[disabled] ~ .c5 {
   color: #999999;
+}
+
+.c4[disabled] + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  border-color: #999999;
+  background-color: #e0e0e0;
+}
+
+.c4[disabled]:checked + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  background-color: #999999;
+}
+
+.c4[disabled]:hover + .Checkbox__CheckIcon-sc-1ca5whm-3 {
+  box-shadow: 0px 0px 0px 0px rgba(66,66,66,0.2),0px 0px 0px 0px rgba(66,66,66,0.14),0px 0px 0px 0px rgba(66,66,66,0.12);
 }
 
 .c1 {
@@ -1608,6 +1851,11 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   margin-right: 0;
 }
 
+.c2 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
 .c3 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
@@ -1703,7 +1951,7 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c4 {
   border: 0;
   height: 0;
   margin: 0;
@@ -1714,7 +1962,12 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
   width: 0;
 }
 
-.c2 {
+.c2 .CheckboxButton__LockIcon-sc-1rvg70v-1 {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.c3 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1730,18 +1983,18 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
   className="c0 c1"
 >
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-24"
       size="large"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-24"
         name="Foo"
@@ -1753,18 +2006,18 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-25"
       size="large"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-25"
         name="Bar"
@@ -1776,18 +2029,18 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    className=""
+    className="c2"
   >
     <label
       checked={false}
-      className="c2"
+      className="c3"
       disabled={false}
       htmlFor="checkbox-button-26"
       size="large"
     >
       <input
         checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
         disabled={false}
         id="checkbox-button-26"
         name="Baz"

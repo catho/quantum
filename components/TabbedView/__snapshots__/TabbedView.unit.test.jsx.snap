@@ -108,10 +108,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
           "columns": 8,
           "width": 600,
         },
-        "xlarge": Object {
-          "columns": 12,
-          "width": 1920,
-        },
         "xsmall": Object {
           "columns": 4,
         },
@@ -289,7 +285,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
             "large": "1440px",
             "medium": "1024px",
             "small": "100%",
-            "xlarge": "1920px",
             "xsmall": "100%,",
           },
         },
@@ -445,10 +440,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -627,7 +618,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
               "large": "1440px",
               "medium": "1024px",
               "small": "100%",
-              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -792,10 +782,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -974,7 +960,6 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -1311,10 +1296,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
           "columns": 8,
           "width": 600,
         },
-        "xlarge": Object {
-          "columns": 12,
-          "width": 1920,
-        },
         "xsmall": Object {
           "columns": 4,
         },
@@ -1492,7 +1473,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             "large": "1440px",
             "medium": "1024px",
             "small": "100%",
-            "xlarge": "1920px",
             "xsmall": "100%,",
           },
         },
@@ -1648,10 +1628,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -1830,7 +1806,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
               "large": "1440px",
               "medium": "1024px",
               "small": "100%",
-              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -1995,10 +1970,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -2177,7 +2148,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -2477,10 +2447,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -2658,7 +2624,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -2814,7 +2779,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 skin=""
                 style={Object {}}
               >
-                <ForwardRef(StarIcon)
+                <ForwardRef
                   data-qtm-preloader="icon"
                   style={
                     Object {
@@ -2877,7 +2842,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       </svg>
                     </ForwardRef(SvgIcon)>
                   </WithStyles(ForwardRef(SvgIcon))>
-                </ForwardRef(StarIcon)>
+                </ForwardRef>
               </Icon>
             </div>
           </TabbedView__IconContainer>
@@ -2913,10 +2878,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -3095,7 +3056,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -3251,7 +3211,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 skin=""
                 style={Object {}}
               >
-                <ForwardRef(StarIcon)
+                <ForwardRef
                   data-qtm-preloader="icon"
                   style={
                     Object {
@@ -3314,7 +3274,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       </svg>
                     </ForwardRef(SvgIcon)>
                   </WithStyles(ForwardRef(SvgIcon))>
-                </ForwardRef(StarIcon)>
+                </ForwardRef>
               </Icon>
             </div>
           </TabbedView__IconContainer>
@@ -3472,10 +3432,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -3653,7 +3609,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -3959,10 +3914,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
           "columns": 8,
           "width": 600,
         },
-        "xlarge": Object {
-          "columns": 12,
-          "width": 1920,
-        },
         "xsmall": Object {
           "columns": 4,
         },
@@ -4140,7 +4091,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
             "large": "1440px",
             "medium": "1024px",
             "small": "100%",
-            "xlarge": "1920px",
             "xsmall": "100%,",
           },
         },
@@ -4296,10 +4246,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -4478,7 +4424,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
               "large": "1440px",
               "medium": "1024px",
               "small": "100%",
-              "xlarge": "1920px",
               "xsmall": "100%,",
             },
           },
@@ -4643,10 +4588,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -4825,7 +4766,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -5004,10 +4944,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -5185,7 +5121,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },
@@ -5364,10 +5299,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -5545,7 +5476,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   "large": "1440px",
                   "medium": "1024px",
                   "small": "100%",
-                  "xlarge": "1920px",
                   "xsmall": "100%,",
                 },
               },

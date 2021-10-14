@@ -227,10 +227,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           "columns": 8,
           "width": 600,
         },
-        "xlarge": Object {
-          "columns": 12,
-          "width": 1920,
-        },
         "xsmall": Object {
           "columns": 4,
         },
@@ -694,10 +690,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
               "columns": 8,
               "width": 600,
             },
-            "xlarge": Object {
-              "columns": 12,
-              "width": 1920,
-            },
             "xsmall": Object {
               "columns": 4,
             },
@@ -899,10 +891,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                   "columns": 8,
                   "width": 600,
                 },
-                "xlarge": Object {
-                  "columns": 12,
-                  "width": 1920,
-                },
                 "xsmall": Object {
                   "columns": 4,
                 },
@@ -1100,10 +1088,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -1300,10 +1284,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                     "small": Object {
                       "columns": 8,
                       "width": 600,
-                    },
-                    "xlarge": Object {
-                      "columns": 12,
-                      "width": 1920,
                     },
                     "xsmall": Object {
                       "columns": 4,
@@ -1610,10 +1590,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -1820,10 +1796,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "columns": 8,
                             "width": 600,
                           },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
-                          },
                           "xsmall": Object {
                             "columns": 4,
                           },
@@ -2029,10 +2001,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                             "small": Object {
                               "columns": 8,
                               "width": 600,
-                            },
-                            "xlarge": Object {
-                              "columns": 12,
-                              "width": 1920,
                             },
                             "xsmall": Object {
                               "columns": 4,
@@ -2242,10 +2210,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   "columns": 8,
                                   "width": 600,
                                 },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
-                                },
                                 "xsmall": Object {
                                   "columns": 4,
                                 },
@@ -2447,10 +2411,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -2631,7 +2591,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                               }
                             }
                           >
-                            <ForwardRef(CloseIcon)
+                            <ForwardRef
                               className="c15 c16"
                               data-qtm-preloader="icon"
                               style={
@@ -2655,10 +2615,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -2864,10 +2820,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                       "small": Object {
                                         "columns": 8,
                                         "width": 600,
-                                      },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
                                       },
                                       "xsmall": Object {
                                         "columns": 4,
@@ -3087,10 +3039,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                           "columns": 8,
                                           "width": 600,
                                         },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
-                                        },
                                         "xsmall": Object {
                                           "columns": 4,
                                         },
@@ -3298,10 +3246,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                             "columns": 8,
                                             "width": 600,
                                           },
-                                          "xlarge": Object {
-                                            "columns": 12,
-                                            "width": 1920,
-                                          },
                                           "xsmall": Object {
                                             "columns": 4,
                                           },
@@ -3489,7 +3433,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
                                   </svg>
                                 </ForwardRef(SvgIcon)>
                               </WithStyles(ForwardRef(SvgIcon))>
-                            </ForwardRef(CloseIcon)>
+                            </ForwardRef>
                           </Icon>
                         </Button__ButtonIcon>
                       </button>

@@ -886,6 +886,11 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
   margin-right: 0;
 }
 
+.c0 .RadioButton__LockIcon-sc-1q7g63p-0 {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
 .c1 {
   margin-bottom: 8px;
   display: -webkit-inline-box;
