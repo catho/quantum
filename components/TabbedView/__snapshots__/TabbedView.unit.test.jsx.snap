@@ -2779,7 +2779,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 skin=""
                 style={Object {}}
               >
-                <ForwardRef
+                <ForwardRef(StarIcon)
                   data-qtm-preloader="icon"
                   style={
                     Object {
@@ -2842,7 +2842,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       </svg>
                     </ForwardRef(SvgIcon)>
                   </WithStyles(ForwardRef(SvgIcon))>
-                </ForwardRef>
+                </ForwardRef(StarIcon)>
               </Icon>
             </div>
           </TabbedView__IconContainer>
@@ -3211,7 +3211,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                 skin=""
                 style={Object {}}
               >
-                <ForwardRef
+                <ForwardRef(StarIcon)
                   data-qtm-preloader="icon"
                   style={
                     Object {
@@ -3274,7 +3274,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       </svg>
                     </ForwardRef(SvgIcon)>
                   </WithStyles(ForwardRef(SvgIcon))>
-                </ForwardRef>
+                </ForwardRef(StarIcon)>
               </Icon>
             </div>
           </TabbedView__IconContainer>

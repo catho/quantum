@@ -2273,7 +2273,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -3211,7 +3211,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>
@@ -5168,7 +5168,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -6106,7 +6106,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>
@@ -8071,7 +8071,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -9009,7 +9009,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>
@@ -10982,7 +10982,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -11920,7 +11920,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>
@@ -13901,7 +13901,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -14839,7 +14839,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>
@@ -16820,7 +16820,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -17758,7 +17758,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>
@@ -19733,7 +19733,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -20671,7 +20671,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>
@@ -22646,7 +22646,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                             }
                           }
                         >
-                          <ForwardRef
+                          <ForwardRef(CloseIcon)
                             className="c5 c6"
                             data-qtm-preloader="icon"
                             style={
@@ -23584,7 +23584,7 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 </svg>
                               </ForwardRef(SvgIcon)>
                             </WithStyles(ForwardRef(SvgIcon))>
-                          </ForwardRef>
+                          </ForwardRef(CloseIcon)>
                         </Icon>
                       </Button__ButtonIcon>
                     </button>

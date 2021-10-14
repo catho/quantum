@@ -7222,7 +7222,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(InfoIcon)
                                 aria-label="Profissional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -7289,7 +7289,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(InfoIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -7769,7 +7769,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(BlockIcon)
                                 aria-label="Operacional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -7836,7 +7836,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(BlockIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -8315,7 +8315,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(DateRangeIcon)
                                 aria-label="Estagiário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -8382,7 +8382,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(DateRangeIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -8861,7 +8861,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(ErrorIcon)
                                 aria-label="Maquinário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -8928,7 +8928,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(ErrorIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -9407,7 +9407,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(FavoriteBorderIcon)
                                 aria-label="Favorito"
                                 data-qtm-preloader="icon"
                                 style={
@@ -9474,7 +9474,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(FavoriteBorderIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -12621,7 +12621,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(InfoIcon)
                                 aria-label="Profissional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -12688,7 +12688,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(InfoIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -13168,7 +13168,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(BlockIcon)
                                 aria-label="Operacional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -13235,7 +13235,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(BlockIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -13714,7 +13714,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(DateRangeIcon)
                                 aria-label="Estagiário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -13781,7 +13781,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(DateRangeIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -16929,7 +16929,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(InfoIcon)
                                 aria-label="Profissional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -16996,7 +16996,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(InfoIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -17476,7 +17476,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(BlockIcon)
                                 aria-label="Operacional"
                                 data-qtm-preloader="icon"
                                 style={
@@ -17543,7 +17543,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(BlockIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
@@ -18022,7 +18022,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                               skin=""
                               style={Object {}}
                             >
-                              <ForwardRef
+                              <ForwardRef(DateRangeIcon)
                                 aria-label="Estagiário"
                                 data-qtm-preloader="icon"
                                 style={
@@ -18089,7 +18089,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                                     </svg>
                                   </ForwardRef(SvgIcon)>
                                 </WithStyles(ForwardRef(SvgIcon))>
-                              </ForwardRef>
+                              </ForwardRef(DateRangeIcon)>
                             </Icon>
                           </label>
                         </Button__StyledButton>
