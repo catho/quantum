@@ -461,9 +461,24 @@ const Grid = () => (
     </Title>
 
     <p>
-      You may choose one of two containers or both to use in your projects. Note
-      that, due to padding and more, neither container is nestable.
-      <br />
+      You may choose one of three containers or all to use in your projects.
+      Note that, due to padding and more, neither container is nestable.
+    </p>
+    <p>
+      Use <code>{'<Container withBreakpoints></Container>'}</code>
+      for a container with quantum breakpoints.
+    </p>
+
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {`<Container withBreakpoints>
+    ...
+ </Container>`}
+    </SimpleHighlight>
+
+    <p>
       Use <code>{'<Container></Container>'}</code> for a responsive fixed width
       container.
     </p>
