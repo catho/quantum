@@ -15,8 +15,4 @@ export default {
     width: 1440,
     columns: 12,
   },
-  xlarge: {
-    width: 1920,
-    columns: 12,
-  },
 };

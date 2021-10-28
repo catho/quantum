@@ -232,44 +232,12 @@ const SizesTable = () => (
       </tr>
       <tr>
         <td colSpan="1" rowSpan="1">
-          <p>1440 – 1599</p>
+          <p>1440 +</p>
         </td>
         <td colSpan="1" rowSpan="1" />
         <td colSpan="1" rowSpan="1" />
         <td colSpan="1" rowSpan="1">
           <p>large</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>12</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>24</p>
-        </td>
-      </tr>
-      <tr>
-        <td colSpan="1" rowSpan="1">
-          <p>1600 – 1919</p>
-        </td>
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1">
-          <p>large</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>12</p>
-        </td>
-        <td colSpan="1" rowSpan="1">
-          <p>24</p>
-        </td>
-      </tr>
-      <tr>
-        <td colSpan="1" rowSpan="1">
-          <p>1920 +</p>
-        </td>
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1" />
-        <td colSpan="1" rowSpan="1">
-          <p>xlarge</p>
         </td>
         <td colSpan="1" rowSpan="1">
           <p>12</p>
@@ -493,9 +461,24 @@ const Grid = () => (
     </Title>
 
     <p>
-      You may choose one of two containers or both to use in your projects. Note
-      that, due to padding and more, neither container is nestable.
-      <br />
+      You may choose one of three containers or all to use in your projects.
+      Note that, due to padding and more, neither container is nestable.
+    </p>
+    <p>
+      Use <code>{'<Container withBreakpoints></Container>'}</code>
+      for a container with quantum breakpoints.
+    </p>
+
+    <SimpleHighlight
+      backgroundColor={codeBackgroundColor}
+      fontColor={codefontColor}
+    >
+      {`<Container withBreakpoints>
+    ...
+ </Container>`}
+    </SimpleHighlight>
+
+    <p>
       Use <code>{'<Container></Container>'}</code> for a responsive fixed width
       container.
     </p>
@@ -552,7 +535,6 @@ const Grid = () => (
       <li>small</li>
       <li>medium</li>
       <li>large</li>
-      <li>xlarge</li>
     </ul>
 
     <Title as="h3">Example: Stacked-to-horizontal</Title>
@@ -595,7 +577,6 @@ const Grid = () => (
       <li>small</li>
       <li>medium</li>
       <li>large</li>
-      <li>xlarge</li>
     </ul>
 
     <Title as="h3">Example: Hiding elements in xsmall devices</Title>
@@ -615,7 +596,6 @@ const Grid = () => (
       <li>small-offset</li>
       <li>medium-offset</li>
       <li>large-offset</li>
-      <li>xlarge-offset</li>
     </ul>
   </StoryContainer>
 );

@@ -27,10 +27,6 @@ const StyledDivExample = styled.div`
   ${mediaQueries.large`
     background-color: black;
   `}
-
-  ${mediaQueries.xlarge`
-    background-color: orange;
-  `}
 `;
 
 export default {
@@ -72,7 +68,6 @@ import { query } from '@catho/quantum/Grid/sub-components/shared';
         <li>small: 600px</li>
         <li>medium: 1024px</li>
         <li>large: 1440px</li>
-        <li>xlarge: 1920px</li>
       </ul>
       <p>In each resolution we will change the div background color:</p>
       <ul>
@@ -85,13 +80,9 @@ import { query } from '@catho/quantum/Grid/sub-components/shared';
         <li>
           Black color for <code>large</code> resolution.
         </li>
-        <li>
-          Orange color for <code>xlarge</code> resolution.
-        </li>
       </ul>
       <CodeExample
         code={`const mediaQueries = query(BREAKPOINTS);
-
 const StyledDiv = styled.div\`
   padding: 15px 20px;
   color: white;
@@ -107,10 +98,6 @@ const StyledDiv = styled.div\`
 
   \${mediaQueries.large\`
     background-color: black;
-  \`}
-
-  \${mediaQueries.xlarge\`
-    background-color: orange;
   \`}
 \`;
       `}

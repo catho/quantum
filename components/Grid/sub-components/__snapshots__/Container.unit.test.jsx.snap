@@ -36,12 +36,6 @@ exports[`<Container /> with "no-gutters" prop should not have gutters 1`] = `
   }
 }
 
-@media (min-width:1920px) {
-  .c1 {
-    padding: 0px;
-  }
-}
-
 <div
   className="c0 c1"
 >
@@ -79,12 +73,6 @@ exports[`<Container /> with fluid prop should have a fluid width 1`] = `
 }
 
 @media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1920px) {
   .c1 {
     padding: 24px;
   }
@@ -128,12 +116,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1920px) {
   .c1 {
     padding: 24px;
   }
@@ -184,10 +166,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 }
 
-@media (min-width:1920px) {
-
-}
-
 @media (max-width:599px) {
 
 }
@@ -211,12 +189,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1920px) {
   .c1 {
     padding: 24px;
   }
@@ -271,10 +243,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 }
 
-@media (min-width:1920px) {
-
-}
-
 @media (max-width:599px) {
 
 }
@@ -292,10 +260,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
 
 }
 
@@ -322,12 +286,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1920px) {
   .c1 {
     padding: 24px;
   }
@@ -386,10 +344,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 }
 
-@media (min-width:1920px) {
-
-}
-
 @media (max-width:599px) {
 
 }
@@ -410,10 +364,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 }
 
-@media (min-width:1920px) {
-
-}
-
 @media (min-width:600px) and (max-width:1023px) {
 
 }
@@ -431,10 +381,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
 
 }
 
@@ -466,13 +412,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   }
 }
 
-@media (min-width:1920px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) and (max-width:1919px) {
+@media (min-width:1440px) {
   .c1 {
     display: none !important;
   }
@@ -529,10 +469,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 }
 
-@media (min-width:1920px) {
-
-}
-
 @media (max-width:599px) {
 
 }
@@ -550,10 +486,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 }
 
 @media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
 
 }
 
@@ -577,10 +509,6 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 }
 
-@media (min-width:1920px) {
-
-}
-
 @media (min-width:1024px) and (max-width:1439px) {
 
 }
@@ -601,11 +529,7 @@ exports[`<Container /> with hide prop should hide it's children according to scr
 
 }
 
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:1440px) and (max-width:1919px) {
+@media (min-width:1440px) {
 
 }
 
@@ -633,214 +557,13 @@ exports[`<Container /> with hide prop should hide it's children according to scr
   }
 }
 
-@media (min-width:1920px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c1 {
-    display: none !important;
-  }
-}
-
-<div
-  className="c0 c1"
->
-  Content
-</div>
-`;
-
-exports[`<Container /> with hide prop should hide it's children according to screen size 6`] = `
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 95%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:1440px) and (max-width:1919px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:1920px) {
-
-}
-
-@media (min-width:0px) {
-  .c1 {
-    padding: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
 @media (min-width:1024px) and (max-width:1439px) {
   .c1 {
     display: none !important;
   }
 }
 
-@media (min-width:1920px) {
+@media (min-width:1440px) {
   .c1 {
     display: none !important;
   }
@@ -889,13 +612,6 @@ exports[`<Container /> with withBreakpoints prop should have a fixed width 1`] =
 @media (min-width:1440px) {
   .c1 {
     width: 1440px;
-    padding: 24px;
-  }
-}
-
-@media (min-width:1920px) {
-  .c1 {
-    width: 1920px;
     padding: 24px;
   }
 }

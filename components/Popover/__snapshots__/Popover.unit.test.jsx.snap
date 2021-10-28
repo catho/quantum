@@ -525,10 +525,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -922,10 +918,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -1161,10 +1153,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -1395,10 +1383,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -1628,10 +1612,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -1864,10 +1844,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -2092,10 +2068,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -2326,10 +2298,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -2558,10 +2526,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -2805,10 +2769,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -3039,10 +2999,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,
@@ -3464,10 +3420,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -3861,10 +3813,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -4100,10 +4048,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -4334,10 +4278,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -4567,10 +4507,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -4803,10 +4739,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -5031,10 +4963,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -5265,10 +5193,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -5497,10 +5421,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -5744,10 +5664,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -5978,10 +5894,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,
@@ -6407,10 +6319,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -6808,10 +6716,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -7047,10 +6951,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -7281,10 +7181,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -7514,10 +7410,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -7750,10 +7642,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -7978,10 +7866,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -8212,10 +8096,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -8444,10 +8324,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -8691,10 +8567,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -8925,10 +8797,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,
@@ -9358,10 +9226,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -9763,10 +9627,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -10002,10 +9862,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -10236,10 +10092,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -10469,10 +10321,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -10705,10 +10553,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -10933,10 +10777,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -11167,10 +11007,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -11399,10 +11235,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -11646,10 +11478,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -11880,10 +11708,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,
@@ -12317,10 +12141,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -12726,10 +12546,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -12965,10 +12781,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -13199,10 +13011,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -13432,10 +13240,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -13668,10 +13472,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -13896,10 +13696,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -14130,10 +13926,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -14362,10 +14154,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -14609,10 +14397,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -14843,10 +14627,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,
@@ -15280,10 +15060,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -15689,10 +15465,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -15928,10 +15700,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -16162,10 +15930,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -16395,10 +16159,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -16631,10 +16391,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -16859,10 +16615,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -17093,10 +16845,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -17325,10 +17073,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -17572,10 +17316,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -17806,10 +17546,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,
@@ -18240,10 +17976,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -18646,10 +18378,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -18885,10 +18613,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -19119,10 +18843,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -19352,10 +19072,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -19588,10 +19304,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -19816,10 +19528,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -20050,10 +19758,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -20282,10 +19986,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -20529,10 +20229,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -20763,10 +20459,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,
@@ -21197,10 +20889,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -21603,10 +21291,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                     "columns": 8,
                     "width": 600,
                   },
-                  "xlarge": Object {
-                    "columns": 12,
-                    "width": 1920,
-                  },
                   "xsmall": Object {
                     "columns": 4,
                   },
@@ -21842,10 +21526,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                         "columns": 8,
                         "width": 600,
                       },
-                      "xlarge": Object {
-                        "columns": 12,
-                        "width": 1920,
-                      },
                       "xsmall": Object {
                         "columns": 4,
                       },
@@ -22076,10 +21756,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "columns": 8,
                           "width": 600,
                         },
-                        "xlarge": Object {
-                          "columns": 12,
-                          "width": 1920,
-                        },
                         "xsmall": Object {
                           "columns": 4,
                         },
@@ -22309,10 +21985,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                           "small": Object {
                             "columns": 8,
                             "width": 600,
-                          },
-                          "xlarge": Object {
-                            "columns": 12,
-                            "width": 1920,
                           },
                           "xsmall": Object {
                             "columns": 4,
@@ -22545,10 +22217,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "columns": 8,
                                 "width": 600,
                               },
-                              "xlarge": Object {
-                                "columns": 12,
-                                "width": 1920,
-                              },
                               "xsmall": Object {
                                 "columns": 4,
                               },
@@ -22773,10 +22441,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                 "small": Object {
                                   "columns": 8,
                                   "width": 600,
-                                },
-                                "xlarge": Object {
-                                  "columns": 12,
-                                  "width": 1920,
                                 },
                                 "xsmall": Object {
                                   "columns": 4,
@@ -23007,10 +22671,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "columns": 8,
                                     "width": 600,
                                   },
-                                  "xlarge": Object {
-                                    "columns": 12,
-                                    "width": 1920,
-                                  },
                                   "xsmall": Object {
                                     "columns": 4,
                                   },
@@ -23239,10 +22899,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                     "small": Object {
                                       "columns": 8,
                                       "width": 600,
-                                    },
-                                    "xlarge": Object {
-                                      "columns": 12,
-                                      "width": 1920,
                                     },
                                     "xsmall": Object {
                                       "columns": 4,
@@ -23486,10 +23142,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "columns": 8,
                                         "width": 600,
                                       },
-                                      "xlarge": Object {
-                                        "columns": 12,
-                                        "width": 1920,
-                                      },
                                       "xsmall": Object {
                                         "columns": 4,
                                       },
@@ -23720,10 +23372,6 @@ exports[`Popover component  Snapshots should match the snapshots after click on 
                                         "small": Object {
                                           "columns": 8,
                                           "width": 600,
-                                        },
-                                        "xlarge": Object {
-                                          "columns": 12,
-                                          "width": 1920,
                                         },
                                         "xsmall": Object {
                                           "columns": 4,

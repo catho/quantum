@@ -9,12 +9,10 @@ export interface ColProps {
     small?: number;
     medium?: number;
     large?: number;
-    xlarge?: number;
     'xsmall-offset'?: number;
     'small-offset'?: number;
     'medium-offset'?: number;
     'large-offset'?: number;
-    'xlarge-offset'?: number;
     hide?: BreakpointsType | BreakpointsType[];
 }
 
@@ -34,7 +32,6 @@ export interface ContainerProps {
 export class Container extends React.Component<ContainerProps> {}
 
 export interface HideProps {
-    xlarge?: boolean;
     large?: boolean;
     medium?: boolean;
     small?: boolean;

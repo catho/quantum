@@ -16,10 +16,6 @@ const breakpoints = {
     width: 1440,
     columns: 12,
   },
-  xlarge: {
-    width: 1920,
-    columns: 12,
-  },
 };
 
 const colors = {
@@ -143,7 +139,6 @@ const components = {
       small: '100%',
       medium: '1024px',
       large: '1440px',
-      xlarge: '1920px',
     },
   },
   tag: {

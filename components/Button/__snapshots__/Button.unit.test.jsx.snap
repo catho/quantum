@@ -148,10 +148,6 @@ exports[`Button component should render a button only icon state  1`] = `
             "columns": 8,
             "width": 600,
           },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
-          },
           "xsmall": Object {
             "columns": 4,
           },
@@ -429,10 +425,6 @@ exports[`Button component should render a button only icon state  2`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -712,10 +704,6 @@ exports[`Button component should render a button only icon state  3`] = `
             "columns": 8,
             "width": 600,
           },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
-          },
           "xsmall": Object {
             "columns": 4,
           },
@@ -994,10 +982,6 @@ exports[`Button component should render a button only icon state  4`] = `
             "columns": 8,
             "width": 600,
           },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
-          },
           "xsmall": Object {
             "columns": 4,
           },
@@ -1275,10 +1259,6 @@ exports[`Button component should render a button only icon state  5`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -2141,10 +2121,6 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
             "columns": 8,
             "width": 600,
           },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
-          },
           "xsmall": Object {
             "columns": 4,
           },
@@ -2423,10 +2399,6 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,
@@ -2707,10 +2679,6 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
             "columns": 8,
             "width": 600,
           },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
-          },
           "xsmall": Object {
             "columns": 4,
           },
@@ -2989,10 +2957,6 @@ exports[`Button component with an icon should match secondary snapshot 4`] = `
           "small": Object {
             "columns": 8,
             "width": 600,
-          },
-          "xlarge": Object {
-            "columns": 12,
-            "width": 1920,
           },
           "xsmall": Object {
             "columns": 4,

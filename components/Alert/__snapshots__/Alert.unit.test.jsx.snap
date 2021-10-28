@@ -175,10 +175,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -600,10 +596,6 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                 "columns": 8,
                 "width": 600,
               },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
-              },
               "xsmall": Object {
                 "columns": 4,
               },
@@ -997,10 +989,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -1407,10 +1395,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -1829,10 +1813,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -2263,10 +2243,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,
@@ -2709,10 +2685,6 @@ exports[`Alert component When you set a different skin Should match a skin snaps
               "small": Object {
                 "columns": 8,
                 "width": 600,
-              },
-              "xlarge": Object {
-                "columns": 12,
-                "width": 1920,
               },
               "xsmall": Object {
                 "columns": 4,

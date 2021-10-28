@@ -95,8 +95,8 @@ export const Theme = () => (
         <p>
           Used at <code>{'<Grid />'}</code> to generate and manage the grid
           system behavior in all defined screen sizes named as{' '}
-          <code>xsmall</code>, <code>small</code>, <code>medium</code>,{' '}
-          <code>large</code>, and <code>xlarge</code>.
+          <code>xsmall</code>, <code>small</code>, <code>medium</code>, and{' '}
+          <code>large</code>.
         </p>
         <p>
           Each breakpoint is defined by an object which contains 2 properties:{' '}

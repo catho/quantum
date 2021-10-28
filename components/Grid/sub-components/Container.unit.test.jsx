@@ -19,11 +19,8 @@ describe('<Container />', () => {
         renderer.create(<Container hide="large">Content</Container>).toJSON(),
       ).toMatchSnapshot();
       expect(
-        renderer.create(<Container hide="xlarge">Content</Container>).toJSON(),
-      ).toMatchSnapshot();
-      expect(
         renderer
-          .create(<Container hide={['medium', 'xlarge']}>Content</Container>)
+          .create(<Container hide={['medium', 'large']}>Content</Container>)
           .toJSON(),
       ).toMatchSnapshot();
     });

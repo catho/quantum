@@ -15,10 +15,6 @@ export interface Breakpoints {
         width: number;
         columns: number;
     };
-    xlarge: {
-        width: number;
-        columns: number;
-    };
 }
 declare const breakPoints: Breakpoints;
 
