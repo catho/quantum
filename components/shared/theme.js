@@ -276,6 +276,27 @@ const components = {
     },
   },
 
+  chargeBar: {
+    skins: {
+      neutral: {
+        titleColor: colors.neutral[1000],
+        background: colors.neutral[700],
+      },
+      primary: {
+        titleColor: colors.neutral[1000],
+        background: colors.primary[700],
+      },
+      secondary: {
+        titleColor: colors.neutral[1000],
+        background: colors.secondary[700],
+      },
+      success: {
+        titleColor: colors.neutral[1000],
+        background: colors.success[700],
+      },
+    },
+  },
+
   tabbedView: {
     skins: {
       neutral: {

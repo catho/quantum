@@ -33,6 +33,7 @@ import Avatar from './Avatar';
 import Stepper from './Stepper';
 import SegmentedControl from './SegmentedControl';
 import List from './List';
+import ChargeBar from './ChargeBar';
 
 export {
   Accordion,
@@ -77,4 +78,5 @@ export {
   Stepper,
   SegmentedControl,
   List,
+  ChargeBar,
 };
