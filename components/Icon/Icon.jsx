@@ -17,7 +17,7 @@ import AssignmentInd from '@material-ui/icons/AssignmentInd';
 import AssignmentTurnedIn from '@material-ui/icons/AssignmentTurnedIn';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 import Block from '@material-ui/icons/Block';
-import CachedIcon from '@material-ui/icons/Cached';
+import Cached from '@material-ui/icons/Cached';
 import CameraAlt from '@material-ui/icons/CameraAlt';
 import Check from '@material-ui/icons/Check';
 import CheckBox from '@material-ui/icons/CheckBox';
@@ -111,7 +111,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     assignment_turned_in: AssignmentTurnedIn,
     attach_money: AttachMoney,
     block: Block,
-    cached: CachedIcon,
+    cached: Cached,
     camera: CameraAlt,
     check_box_outline_blank: CheckBoxOutlineBlank,
     check_box: CheckBox,
