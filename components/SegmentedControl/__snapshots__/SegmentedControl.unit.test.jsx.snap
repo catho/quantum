@@ -529,6 +529,26 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
               },
             },
           },
+          "chargeBar": Object {
+            "skins": Object {
+              "neutral": Object {
+                "background": "#424242",
+                "titleColor": "#000000",
+              },
+              "primary": Object {
+                "background": "#1250C4",
+                "titleColor": "#000000",
+              },
+              "secondary": Object {
+                "background": "#DE0059",
+                "titleColor": "#000000",
+              },
+              "success": Object {
+                "background": "#3b610f",
+                "titleColor": "#000000",
+              },
+            },
+          },
           "container": Object {
             "breakpoints": Object {
               "large": "1440px",
@@ -887,6 +907,26 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                     "700": "#424242",
                     "900": "#191919",
                   },
+                },
+              },
+            },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
                 },
               },
             },
@@ -1284,6 +1324,26 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                 },
               },
             },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
+                },
+              },
+            },
             "container": Object {
               "breakpoints": Object {
                 "large": "1440px",
@@ -1642,6 +1702,26 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -2043,6 +2123,26 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                     },
                   },
                 },
+                "chargeBar": Object {
+                  "skins": Object {
+                    "neutral": Object {
+                      "background": "#424242",
+                      "titleColor": "#000000",
+                    },
+                    "primary": Object {
+                      "background": "#1250C4",
+                      "titleColor": "#000000",
+                    },
+                    "secondary": Object {
+                      "background": "#DE0059",
+                      "titleColor": "#000000",
+                    },
+                    "success": Object {
+                      "background": "#3b610f",
+                      "titleColor": "#000000",
+                    },
+                  },
+                },
                 "container": Object {
                   "breakpoints": Object {
                     "large": "1440px",
@@ -2401,6 +2501,26 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
                           "700": "#424242",
                           "900": "#191919",
                         },
+                      },
+                    },
+                  },
+                  "chargeBar": Object {
+                    "skins": Object {
+                      "neutral": Object {
+                        "background": "#424242",
+                        "titleColor": "#000000",
+                      },
+                      "primary": Object {
+                        "background": "#1250C4",
+                        "titleColor": "#000000",
+                      },
+                      "secondary": Object {
+                        "background": "#DE0059",
+                        "titleColor": "#000000",
+                      },
+                      "success": Object {
+                        "background": "#3b610f",
+                        "titleColor": "#000000",
                       },
                     },
                   },
@@ -4615,6 +4735,26 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
               },
             },
           },
+          "chargeBar": Object {
+            "skins": Object {
+              "neutral": Object {
+                "background": "#424242",
+                "titleColor": "#000000",
+              },
+              "primary": Object {
+                "background": "#1250C4",
+                "titleColor": "#000000",
+              },
+              "secondary": Object {
+                "background": "#DE0059",
+                "titleColor": "#000000",
+              },
+              "success": Object {
+                "background": "#3b610f",
+                "titleColor": "#000000",
+              },
+            },
+          },
           "container": Object {
             "breakpoints": Object {
               "large": "1440px",
@@ -4973,6 +5113,26 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                     "700": "#424242",
                     "900": "#191919",
                   },
+                },
+              },
+            },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
                 },
               },
             },
@@ -5370,6 +5530,26 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                 },
               },
             },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
+                },
+              },
+            },
             "container": Object {
               "breakpoints": Object {
                 "large": "1440px",
@@ -5728,6 +5908,26 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -6129,6 +6329,26 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                     },
                   },
                 },
+                "chargeBar": Object {
+                  "skins": Object {
+                    "neutral": Object {
+                      "background": "#424242",
+                      "titleColor": "#000000",
+                    },
+                    "primary": Object {
+                      "background": "#1250C4",
+                      "titleColor": "#000000",
+                    },
+                    "secondary": Object {
+                      "background": "#DE0059",
+                      "titleColor": "#000000",
+                    },
+                    "success": Object {
+                      "background": "#3b610f",
+                      "titleColor": "#000000",
+                    },
+                  },
+                },
                 "container": Object {
                   "breakpoints": Object {
                     "large": "1440px",
@@ -6487,6 +6707,26 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
                           "700": "#424242",
                           "900": "#191919",
                         },
+                      },
+                    },
+                  },
+                  "chargeBar": Object {
+                    "skins": Object {
+                      "neutral": Object {
+                        "background": "#424242",
+                        "titleColor": "#000000",
+                      },
+                      "primary": Object {
+                        "background": "#1250C4",
+                        "titleColor": "#000000",
+                      },
+                      "secondary": Object {
+                        "background": "#DE0059",
+                        "titleColor": "#000000",
+                      },
+                      "success": Object {
+                        "background": "#3b610f",
+                        "titleColor": "#000000",
                       },
                     },
                   },
@@ -10024,6 +10264,26 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
               },
             },
           },
+          "chargeBar": Object {
+            "skins": Object {
+              "neutral": Object {
+                "background": "#424242",
+                "titleColor": "#000000",
+              },
+              "primary": Object {
+                "background": "#1250C4",
+                "titleColor": "#000000",
+              },
+              "secondary": Object {
+                "background": "#DE0059",
+                "titleColor": "#000000",
+              },
+              "success": Object {
+                "background": "#3b610f",
+                "titleColor": "#000000",
+              },
+            },
+          },
           "container": Object {
             "breakpoints": Object {
               "large": "1440px",
@@ -10382,6 +10642,26 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                     "700": "#424242",
                     "900": "#191919",
                   },
+                },
+              },
+            },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
                 },
               },
             },
@@ -10779,6 +11059,26 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                 },
               },
             },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
+                },
+              },
+            },
             "container": Object {
               "breakpoints": Object {
                 "large": "1440px",
@@ -11137,6 +11437,26 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -11538,6 +11858,26 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                     },
                   },
                 },
+                "chargeBar": Object {
+                  "skins": Object {
+                    "neutral": Object {
+                      "background": "#424242",
+                      "titleColor": "#000000",
+                    },
+                    "primary": Object {
+                      "background": "#1250C4",
+                      "titleColor": "#000000",
+                    },
+                    "secondary": Object {
+                      "background": "#DE0059",
+                      "titleColor": "#000000",
+                    },
+                    "success": Object {
+                      "background": "#3b610f",
+                      "titleColor": "#000000",
+                    },
+                  },
+                },
                 "container": Object {
                   "breakpoints": Object {
                     "large": "1440px",
@@ -11896,6 +12236,26 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
                           "700": "#424242",
                           "900": "#191919",
                         },
+                      },
+                    },
+                  },
+                  "chargeBar": Object {
+                    "skins": Object {
+                      "neutral": Object {
+                        "background": "#424242",
+                        "titleColor": "#000000",
+                      },
+                      "primary": Object {
+                        "background": "#1250C4",
+                        "titleColor": "#000000",
+                      },
+                      "secondary": Object {
+                        "background": "#DE0059",
+                        "titleColor": "#000000",
+                      },
+                      "success": Object {
+                        "background": "#3b610f",
+                        "titleColor": "#000000",
                       },
                     },
                   },
@@ -14332,6 +14692,26 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
               },
             },
           },
+          "chargeBar": Object {
+            "skins": Object {
+              "neutral": Object {
+                "background": "#424242",
+                "titleColor": "#000000",
+              },
+              "primary": Object {
+                "background": "#1250C4",
+                "titleColor": "#000000",
+              },
+              "secondary": Object {
+                "background": "#DE0059",
+                "titleColor": "#000000",
+              },
+              "success": Object {
+                "background": "#3b610f",
+                "titleColor": "#000000",
+              },
+            },
+          },
           "container": Object {
             "breakpoints": Object {
               "large": "1440px",
@@ -14690,6 +15070,26 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                     "700": "#424242",
                     "900": "#191919",
                   },
+                },
+              },
+            },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
                 },
               },
             },
@@ -15087,6 +15487,26 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                 },
               },
             },
+            "chargeBar": Object {
+              "skins": Object {
+                "neutral": Object {
+                  "background": "#424242",
+                  "titleColor": "#000000",
+                },
+                "primary": Object {
+                  "background": "#1250C4",
+                  "titleColor": "#000000",
+                },
+                "secondary": Object {
+                  "background": "#DE0059",
+                  "titleColor": "#000000",
+                },
+                "success": Object {
+                  "background": "#3b610f",
+                  "titleColor": "#000000",
+                },
+              },
+            },
             "container": Object {
               "breakpoints": Object {
                 "large": "1440px",
@@ -15445,6 +15865,26 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -15846,6 +16286,26 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                     },
                   },
                 },
+                "chargeBar": Object {
+                  "skins": Object {
+                    "neutral": Object {
+                      "background": "#424242",
+                      "titleColor": "#000000",
+                    },
+                    "primary": Object {
+                      "background": "#1250C4",
+                      "titleColor": "#000000",
+                    },
+                    "secondary": Object {
+                      "background": "#DE0059",
+                      "titleColor": "#000000",
+                    },
+                    "success": Object {
+                      "background": "#3b610f",
+                      "titleColor": "#000000",
+                    },
+                  },
+                },
                 "container": Object {
                   "breakpoints": Object {
                     "large": "1440px",
@@ -16204,6 +16664,26 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
                           "700": "#424242",
                           "900": "#191919",
                         },
+                      },
+                    },
+                  },
+                  "chargeBar": Object {
+                    "skins": Object {
+                      "neutral": Object {
+                        "background": "#424242",
+                        "titleColor": "#000000",
+                      },
+                      "primary": Object {
+                        "background": "#1250C4",
+                        "titleColor": "#000000",
+                      },
+                      "secondary": Object {
+                        "background": "#DE0059",
+                        "titleColor": "#000000",
+                      },
+                      "success": Object {
+                        "background": "#3b610f",
+                        "titleColor": "#000000",
                       },
                     },
                   },
