@@ -1,3 +1,3 @@
-import ChargeBar from "./ChargeBar";
+import ChargeBar from './ChargeBar';
 
 export default ChargeBar;
