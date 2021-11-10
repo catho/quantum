@@ -2,7 +2,7 @@ import React from 'react';
 import { AutoExample } from '@catho/quantum-storybook-ui';
 import { ChargeBar } from '../../components';
 
-const ChargeBarDescription = `Progress bars are used to give the user a feedback to the progress of a process or an action.`;
+const ChargeBarDescription = `ChargeBar shows the level the user is to be able to complete their stats to the maximum.`;
 
 export default {
   title: 'ChargeBar',
