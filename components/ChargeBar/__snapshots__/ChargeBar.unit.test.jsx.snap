@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
-.c5 {
+.c4 {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -11,7 +11,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   border-radius: 8px;
   display: inline-block;
   height: 100%;
@@ -40,9 +40,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
+  width: 250px;
+  color: #1250C4;
+  font-size: 14px;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
 }
 
@@ -55,83 +58,75 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 250px;
-  color: #1250C4;
-  font-size: 14px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c1 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
   margin-left: 8px;
   height: 17px;
 }
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
-    width="250px"
   >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      data-qtm-preloader="icon"
+      focusable="false"
+      style={
+        Object {
+          "color": "#1250C4",
+          "fontSize": 16,
+          "maxWidth": 16,
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+      />
+    </svg>
     <span
       className="c2"
+      spacing={
+        Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        }
+      }
     >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "#1250C4",
-            "fontSize": 16,
-            "maxWidth": 16,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-        />
-      </svg>
-      <span
-        className="c3"
-        spacing={
-          Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          }
-        }
-      >
-        Força do meu currículo
-      </span>
+      default informative text
     </span>
     <span
-      className="c4"
+      className="c3"
     >
       0
       %
     </span>
   </div>
   <div
-    className="c5"
+    className="c4"
     role="progressbar"
     spacing={
       Object {
@@ -149,14 +144,14 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
     width="250px"
   >
     <div
-      className="c6"
+      className="c5"
     />
   </div>
 </div>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
-.c5 {
+.c4 {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -166,7 +161,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   border-radius: 8px;
   display: inline-block;
   height: 100%;
@@ -195,9 +190,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
+  width: 250px;
+  color: #DE0059;
+  font-size: 14px;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
 }
 
@@ -210,83 +208,75 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 250px;
-  color: #DE0059;
-  font-size: 14px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c1 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
   margin-left: 8px;
   height: 17px;
 }
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
-    width="250px"
   >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      data-qtm-preloader="icon"
+      focusable="false"
+      style={
+        Object {
+          "color": "#DE0059",
+          "fontSize": 16,
+          "maxWidth": 16,
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+      />
+    </svg>
     <span
       className="c2"
+      spacing={
+        Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        }
+      }
     >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "#DE0059",
-            "fontSize": 16,
-            "maxWidth": 16,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-        />
-      </svg>
-      <span
-        className="c3"
-        spacing={
-          Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          }
-        }
-      >
-        Força do meu currículo
-      </span>
+      default informative text
     </span>
     <span
-      className="c4"
+      className="c3"
     >
       0
       %
     </span>
   </div>
   <div
-    className="c5"
+    className="c4"
     role="progressbar"
     spacing={
       Object {
@@ -304,14 +294,14 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
     width="250px"
   >
     <div
-      className="c6"
+      className="c5"
     />
   </div>
 </div>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
-.c5 {
+.c4 {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -321,7 +311,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   border-radius: 8px;
   display: inline-block;
   height: 100%;
@@ -350,9 +340,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
+  width: 250px;
+  color: #3b610f;
+  font-size: 14px;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
 }
 
@@ -365,83 +358,75 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 250px;
-  color: #3b610f;
-  font-size: 14px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c1 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
   margin-left: 8px;
   height: 17px;
 }
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
-    width="250px"
   >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      data-qtm-preloader="icon"
+      focusable="false"
+      style={
+        Object {
+          "color": "#3b610f",
+          "fontSize": 16,
+          "maxWidth": 16,
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+      />
+    </svg>
     <span
       className="c2"
+      spacing={
+        Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        }
+      }
     >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "#3b610f",
-            "fontSize": 16,
-            "maxWidth": 16,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-        />
-      </svg>
-      <span
-        className="c3"
-        spacing={
-          Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          }
-        }
-      >
-        Força do meu currículo
-      </span>
+      default informative text
     </span>
     <span
-      className="c4"
+      className="c3"
     >
       0
       %
     </span>
   </div>
   <div
-    className="c5"
+    className="c4"
     role="progressbar"
     spacing={
       Object {
@@ -459,14 +444,14 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
     width="250px"
   >
     <div
-      className="c6"
+      className="c5"
     />
   </div>
 </div>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
-.c5 {
+.c4 {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -476,7 +461,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   border-radius: 8px;
   display: inline-block;
   height: 100%;
@@ -505,9 +490,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
+  width: 250px;
+  color: #424242;
+  font-size: 14px;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
 }
 
@@ -520,83 +508,75 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 250px;
-  color: #424242;
-  font-size: 14px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c1 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
   margin-left: 8px;
   height: 17px;
 }
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
-    width="250px"
   >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      data-qtm-preloader="icon"
+      focusable="false"
+      style={
+        Object {
+          "color": "#424242",
+          "fontSize": 16,
+          "maxWidth": 16,
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+      />
+    </svg>
     <span
       className="c2"
+      spacing={
+        Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        }
+      }
     >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "#424242",
-            "fontSize": 16,
-            "maxWidth": 16,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-        />
-      </svg>
-      <span
-        className="c3"
-        spacing={
-          Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          }
-        }
-      >
-        Força do meu currículo
-      </span>
+      default informative text
     </span>
     <span
-      className="c4"
+      className="c3"
     >
       0
       %
     </span>
   </div>
   <div
-    className="c5"
+    className="c4"
     role="progressbar"
     spacing={
       Object {
@@ -614,14 +594,14 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
     width="250px"
   >
     <div
-      className="c6"
+      className="c5"
     />
   </div>
 </div>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
-.c5 {
+.c4 {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -631,7 +611,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
   margin-top: 4px;
 }
 
-.c6 {
+.c5 {
   border-radius: 8px;
   display: inline-block;
   height: 100%;
@@ -660,9 +640,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
+  width: 250px;
+  color: #1250C4;
+  font-size: 14px;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
 }
 
@@ -675,83 +658,75 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 250px;
-  color: #1250C4;
-  font-size: 14px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c1 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
   margin-left: 8px;
   height: 17px;
 }
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
-    width="250px"
   >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      data-qtm-preloader="icon"
+      focusable="false"
+      style={
+        Object {
+          "color": "#1250C4",
+          "fontSize": 16,
+          "maxWidth": 16,
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+      />
+    </svg>
     <span
       className="c2"
+      spacing={
+        Object {
+          "large": 24,
+          "medium": 16,
+          "small": 12,
+          "xlarge": 32,
+          "xsmall": 8,
+          "xxlarge": 40,
+          "xxsmall": 4,
+          "xxxlarge": 48,
+          "xxxsmall": 2,
+        }
+      }
     >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "#1250C4",
-            "fontSize": 16,
-            "maxWidth": 16,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-        />
-      </svg>
-      <span
-        className="c3"
-        spacing={
-          Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          }
-        }
-      >
-        curriculum force
-      </span>
+      curriculum force
     </span>
     <span
-      className="c4"
+      className="c3"
     >
       75
       %
     </span>
   </div>
   <div
-    className="c5"
+    className="c4"
     role="progressbar"
     spacing={
       Object {
@@ -769,7 +744,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
     width="250px"
   >
     <div
-      className="c6"
+      className="c5"
     />
   </div>
 </div>

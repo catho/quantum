@@ -45,6 +45,12 @@ const Wrapper = styled.div`
   font-weight: normal;
   letter-spacing: 0.18px;
   line-height: 1.5;
+
+  ${({ width, background, baseFontSize }) => `
+  width: ${width};
+  color: ${background};
+  font-size: ${baseFontSize * 0.875}px;
+`}
 `;
 
 const ProgressLabel = styled.span`
@@ -54,16 +60,11 @@ const ProgressLabel = styled.span`
 const InfoBlock = styled.div`
   display: flex;
   justify-content: space-between;
-  ${({ width, background, baseFontSize }) => `
-    width: ${width};
-    color: ${background};
-    font-size: ${baseFontSize * 0.875}px;
-  `}
-`;
-
-const TextBlock = styled.span`
-  display: flex;
   align-items: center;
+
+  svg + span {
+    flex: 1;
+  }
 `;
 
 const LabelInfo = styled.span`
@@ -96,16 +97,10 @@ const ChargeBar = props => {
   } = props;
 
   return (
-    <Wrapper>
-      <InfoBlock
-        width={width}
-        background={background}
-        baseFontSize={baseFontSize}
-      >
-        <TextBlock>
-          <Icon name="whatshot" size="small" skin={background} />
-          <LabelInfo spacing={spacing}>{label}</LabelInfo>
-        </TextBlock>
+    <Wrapper width={width} background={background} baseFontSize={baseFontSize}>
+      <InfoBlock>
+        <Icon name="whatshot" size="small" skin={background} />
+        <LabelInfo spacing={spacing}>{label}</LabelInfo>
         <ProgressLabel>{progressPercent}%</ProgressLabel>
       </InfoBlock>
       <Bar
@@ -131,7 +126,7 @@ ChargeBar.defaultProps = {
     spacing: themeSpacing,
     baseFontSize: defaultBaseFontSize,
   },
-  label: 'Força do meu currículo',
+  label: 'default informative text',
 };
 
 ChargeBar.propTypes = {
@@ -144,7 +139,12 @@ ChargeBar.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   width: PropTypes.string,
-  progressPercent: PropTypes.number,
+  progressPercent(props, propName) {
+    const percentRange = props[propName];
+    return percentRange >= 0 && percentRange <= 100
+      ? null
+      : new Error('Must be within range of 0 to 100');
+  },
   label: PropTypes.string,
 };
 
