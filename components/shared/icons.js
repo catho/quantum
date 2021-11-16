@@ -15,6 +15,7 @@ const icons = [
   'assignment_turned_in',
   'attach_money',
   'block',
+  'cached',
   'camera',
   'check_box_outline_blank',
   'check_box',
