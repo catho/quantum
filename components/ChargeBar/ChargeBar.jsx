@@ -1,22 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Icon from '../Icon';
+import { query } from '../Grid/sub-components/shared';
 import {
   components,
   spacing as themeSpacing,
   baseFontSize as defaultBaseFontSize,
 } from '../shared/theme';
-import { hexToRgba } from '../shared';
-import Icon from '../Icon';
+import { hexToRgba, BREAKPOINTS } from '../shared';
+
+const mediaQueries = query(BREAKPOINTS);
 
 const Bar = styled.div`
-  border-radius: 4px;
   overflow: hidden;
   position: relative;
+  border-radius: 4px;
+  height: 4px;
+
+  ${mediaQueries.medium`
+    border-radius: 8px;
+    height: 8px;
+  `};
 
   ${({ width, background, spacing: { xxsmall } }) => `
     background-color: ${hexToRgba(background, 0.39)};
-    height: 4px;
     width: ${width}; 
     margin-top: ${xxsmall}px;
   `}

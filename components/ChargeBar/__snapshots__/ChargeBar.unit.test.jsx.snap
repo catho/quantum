@@ -2,11 +2,11 @@
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
 .c4 {
-  border-radius: 4px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(18,80,196,0.39);
+  border-radius: 4px;
   height: 4px;
+  background-color: rgba(18,80,196,0.39);
   width: 250px;
   margin-top: 4px;
 }
@@ -73,6 +73,13 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
 .c2 {
   margin-left: 8px;
   height: 17px;
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    border-radius: 8px;
+    height: 8px;
+  }
 }
 
 <div
@@ -152,11 +159,11 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
 .c4 {
-  border-radius: 4px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(222,0,89,0.39);
+  border-radius: 4px;
   height: 4px;
+  background-color: rgba(222,0,89,0.39);
   width: 250px;
   margin-top: 4px;
 }
@@ -223,6 +230,17 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
 .c2 {
   margin-left: 8px;
   height: 17px;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    border-radius: 8px;
+    height: 8px;
+  }
 }
 
 <div
@@ -302,11 +320,11 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
 .c4 {
-  border-radius: 4px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(59,97,15,0.39);
+  border-radius: 4px;
   height: 4px;
+  background-color: rgba(59,97,15,0.39);
   width: 250px;
   margin-top: 4px;
 }
@@ -373,6 +391,21 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
 .c2 {
   margin-left: 8px;
   height: 17px;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    border-radius: 8px;
+    height: 8px;
+  }
 }
 
 <div
@@ -452,11 +485,11 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
 .c4 {
-  border-radius: 4px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(66,66,66,0.39);
+  border-radius: 4px;
   height: 4px;
+  background-color: rgba(66,66,66,0.39);
   width: 250px;
   margin-top: 4px;
 }
@@ -523,6 +556,25 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
 .c2 {
   margin-left: 8px;
   height: 17px;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    border-radius: 8px;
+    height: 8px;
+  }
 }
 
 <div
@@ -602,11 +654,11 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
 .c4 {
-  border-radius: 4px;
   overflow: hidden;
   position: relative;
-  background-color: rgba(18,80,196,0.39);
+  border-radius: 4px;
   height: 4px;
+  background-color: rgba(18,80,196,0.39);
   width: 250px;
   margin-top: 4px;
 }
@@ -673,6 +725,25 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
 .c2 {
   margin-left: 8px;
   height: 17px;
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    border-radius: 8px;
+    height: 8px;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
 }
 
 <div
