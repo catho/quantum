@@ -23,9 +23,9 @@ const Bar = styled.div`
     height: 8px;
   `};
 
-  ${({ width, background, spacing: { xxsmall } }) => `
+  ${({ maxWidth, background, spacing: { xxsmall } }) => `
     background-color: ${hexToRgba(background, 0.39)};
-    width: ${width}; 
+    max-width: ${maxWidth}; 
     margin-top: ${xxsmall}px;
   `}
 `;
@@ -54,8 +54,8 @@ const Wrapper = styled.div`
   letter-spacing: 0.18px;
   line-height: 1.5;
 
-  ${({ width, background, baseFontSize }) => `
-  width: ${width};
+  ${({ maxWidth, background, baseFontSize }) => `
+  max-width: ${maxWidth};
   color: ${background};
   font-size: ${baseFontSize * 0.875}px;
 `}
@@ -87,7 +87,7 @@ LabelInfo.displayName = 'LabelInfo';
 
 const ChargeBar = props => {
   const {
-    width,
+    maxWidth,
     progressPercent,
     label,
     skin,
@@ -105,7 +105,11 @@ const ChargeBar = props => {
   } = props;
 
   return (
-    <Wrapper width={width} background={background} baseFontSize={baseFontSize}>
+    <Wrapper
+      maxWidth={maxWidth}
+      background={background}
+      baseFontSize={baseFontSize}
+    >
       <InfoBlock>
         <Icon name="whatshot" size="small" skin={background} />
         <LabelInfo spacing={spacing}>{label}</LabelInfo>
@@ -113,7 +117,7 @@ const ChargeBar = props => {
       </InfoBlock>
       <Bar
         background={background}
-        width={width}
+        maxWidth={maxWidth}
         spacing={spacing}
         role="progressbar"
       >
@@ -124,7 +128,7 @@ const ChargeBar = props => {
 };
 
 ChargeBar.defaultProps = {
-  width: '250px',
+  maxWidth: '250px',
   progressPercent: 50,
   skin: 'primary',
   theme: {
@@ -147,8 +151,8 @@ ChargeBar.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
-  /** This prop sets the width of component, its can be in px or %  */
-  width: PropTypes.string,
+  /** This prop sets the max width of component, its can be in px or %  */
+  maxWidth: PropTypes.string,
   /** This prop receives a number of 1 until 100. Its the progress bar in component  */
   progressPercent(props, propName) {
     const percentRange = props[propName];
