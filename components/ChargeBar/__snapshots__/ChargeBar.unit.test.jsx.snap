@@ -21,7 +21,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
   background-color: #1250C4;
-  width: 0%;
+  width: 50%;
 }
 
 .c0 {
@@ -128,7 +128,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
     <span
       className="c3"
     >
-      0
+      50
       %
     </span>
   </div>
@@ -178,7 +178,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
   background-color: #DE0059;
-  width: 0%;
+  width: 50%;
 }
 
 .c0 {
@@ -289,7 +289,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
     <span
       className="c3"
     >
-      0
+      50
       %
     </span>
   </div>
@@ -339,7 +339,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
   background-color: #3b610f;
-  width: 0%;
+  width: 50%;
 }
 
 .c0 {
@@ -454,7 +454,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
     <span
       className="c3"
     >
-      0
+      50
       %
     </span>
   </div>
@@ -504,7 +504,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
   -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
   background-color: #424242;
-  width: 0%;
+  width: 50%;
 }
 
 .c0 {
@@ -623,7 +623,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
     <span
       className="c3"
     >
-      0
+      50
       %
     </span>
   </div>

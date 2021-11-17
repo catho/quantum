@@ -125,7 +125,7 @@ const ChargeBar = props => {
 
 ChargeBar.defaultProps = {
   width: '250px',
-  progressPercent: 0,
+  progressPercent: 50,
   skin: 'primary',
   theme: {
     components: {
@@ -138,6 +138,7 @@ ChargeBar.defaultProps = {
 };
 
 ChargeBar.propTypes = {
+  /** This prop sets the color of bar and text.  */
   skin: PropTypes.oneOf(['neutral', 'primary', 'secondary', 'success']),
   theme: PropTypes.shape({
     components: PropTypes.shape({
@@ -146,13 +147,16 @@ ChargeBar.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
+  /** This prop sets the width of component, its can be in px or %  */
   width: PropTypes.string,
+  /** This prop receives a number of 1 until 100. Its the progress bar in component  */
   progressPercent(props, propName) {
     const percentRange = props[propName];
     return percentRange >= 0 && percentRange <= 100
       ? null
       : new Error('Must be within range of 0 to 100');
   },
+  /** This prop receives the text that describe the progress bar */
   label: PropTypes.string,
 };
 
