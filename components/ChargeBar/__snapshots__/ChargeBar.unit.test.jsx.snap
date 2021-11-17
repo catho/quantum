@@ -88,6 +88,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
 >
   <div
     className="c1"
+    id="chargebar-label"
   >
     <svg
       aria-hidden={true}
@@ -133,6 +134,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
     </span>
   </div>
   <div
+    aria-labelledby="chargebar-label"
     className="c4"
     role="progressbar"
     spacing={
@@ -148,6 +150,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
         "xxxsmall": 2,
       }
     }
+    tabIndex="0"
     width="250px"
   >
     <div
@@ -249,6 +252,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
 >
   <div
     className="c1"
+    id="chargebar-label"
   >
     <svg
       aria-hidden={true}
@@ -294,6 +298,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
     </span>
   </div>
   <div
+    aria-labelledby="chargebar-label"
     className="c4"
     role="progressbar"
     spacing={
@@ -309,6 +314,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
         "xxxsmall": 2,
       }
     }
+    tabIndex="0"
     width="250px"
   >
     <div
@@ -414,6 +420,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
 >
   <div
     className="c1"
+    id="chargebar-label"
   >
     <svg
       aria-hidden={true}
@@ -459,6 +466,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
     </span>
   </div>
   <div
+    aria-labelledby="chargebar-label"
     className="c4"
     role="progressbar"
     spacing={
@@ -474,6 +482,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
         "xxxsmall": 2,
       }
     }
+    tabIndex="0"
     width="250px"
   >
     <div
@@ -583,6 +592,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
 >
   <div
     className="c1"
+    id="chargebar-label"
   >
     <svg
       aria-hidden={true}
@@ -628,6 +638,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
     </span>
   </div>
   <div
+    aria-labelledby="chargebar-label"
     className="c4"
     role="progressbar"
     spacing={
@@ -643,6 +654,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
         "xxxsmall": 2,
       }
     }
+    tabIndex="0"
     width="250px"
   >
     <div
@@ -752,6 +764,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
 >
   <div
     className="c1"
+    id="chargebar-label"
   >
     <svg
       aria-hidden={true}
@@ -797,6 +810,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
     </span>
   </div>
   <div
+    aria-labelledby="chargebar-label"
     className="c4"
     role="progressbar"
     spacing={
@@ -812,6 +826,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
         "xxxsmall": 2,
       }
     }
+    tabIndex="0"
     width="250px"
   >
     <div
