@@ -7,7 +7,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
   border-radius: 4px;
   height: 4px;
   background-color: rgba(18,80,196,0.39);
-  max-width: 250px;
+  width: 250px;
   margin-top: 4px;
 }
 
@@ -40,7 +40,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
-  max-width: 250px;
+  width: 250px;
   color: #1250C4;
   font-size: 14px;
 }
@@ -84,6 +84,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
@@ -147,6 +148,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
         "xxxsmall": 2,
       }
     }
+    width="250px"
   >
     <div
       className="c5"
@@ -162,7 +164,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
   border-radius: 4px;
   height: 4px;
   background-color: rgba(222,0,89,0.39);
-  max-width: 250px;
+  width: 250px;
   margin-top: 4px;
 }
 
@@ -195,7 +197,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
-  max-width: 250px;
+  width: 250px;
   color: #DE0059;
   font-size: 14px;
 }
@@ -243,6 +245,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
@@ -306,6 +309,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
         "xxxsmall": 2,
       }
     }
+    width="250px"
   >
     <div
       className="c5"
@@ -321,7 +325,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
   border-radius: 4px;
   height: 4px;
   background-color: rgba(59,97,15,0.39);
-  max-width: 250px;
+  width: 250px;
   margin-top: 4px;
 }
 
@@ -354,7 +358,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
-  max-width: 250px;
+  width: 250px;
   color: #3b610f;
   font-size: 14px;
 }
@@ -406,6 +410,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
@@ -469,6 +474,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
         "xxxsmall": 2,
       }
     }
+    width="250px"
   >
     <div
       className="c5"
@@ -484,7 +490,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
   border-radius: 4px;
   height: 4px;
   background-color: rgba(66,66,66,0.39);
-  max-width: 250px;
+  width: 250px;
   margin-top: 4px;
 }
 
@@ -517,7 +523,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
-  max-width: 250px;
+  width: 250px;
   color: #424242;
   font-size: 14px;
 }
@@ -573,6 +579,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
@@ -636,6 +643,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
         "xxxsmall": 2,
       }
     }
+    width="250px"
   >
     <div
       className="c5"
@@ -651,7 +659,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
   border-radius: 4px;
   height: 4px;
   background-color: rgba(18,80,196,0.39);
-  max-width: 250px;
+  width: 250px;
   margin-top: 4px;
 }
 
@@ -684,7 +692,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
   -ms-letter-spacing: 0.18px;
   letter-spacing: 0.18px;
   line-height: 1.5;
-  max-width: 250px;
+  width: 250px;
   color: #1250C4;
   font-size: 14px;
 }
@@ -740,6 +748,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
 
 <div
   className="c0"
+  width="250px"
 >
   <div
     className="c1"
@@ -803,6 +812,7 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
         "xxxsmall": 2,
       }
     }
+    width="250px"
   >
     <div
       className="c5"
