@@ -280,6 +280,26 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
             },
           },
         },
+        "chargeBar": Object {
+          "skins": Object {
+            "neutral": Object {
+              "background": "#424242",
+              "titleColor": "#000000",
+            },
+            "primary": Object {
+              "background": "#1250C4",
+              "titleColor": "#000000",
+            },
+            "secondary": Object {
+              "background": "#DE0059",
+              "titleColor": "#000000",
+            },
+            "success": Object {
+              "background": "#3b610f",
+              "titleColor": "#000000",
+            },
+          },
+        },
         "container": Object {
           "breakpoints": Object {
             "large": "1440px",
@@ -610,6 +630,26 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                   "700": "#424242",
                   "900": "#191919",
                 },
+              },
+            },
+          },
+          "chargeBar": Object {
+            "skins": Object {
+              "neutral": Object {
+                "background": "#424242",
+                "titleColor": "#000000",
+              },
+              "primary": Object {
+                "background": "#1250C4",
+                "titleColor": "#000000",
+              },
+              "secondary": Object {
+                "background": "#DE0059",
+                "titleColor": "#000000",
+              },
+              "success": Object {
+                "background": "#3b610f",
+                "titleColor": "#000000",
               },
             },
           },
@@ -952,6 +992,26 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -1468,6 +1528,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
             },
           },
         },
+        "chargeBar": Object {
+          "skins": Object {
+            "neutral": Object {
+              "background": "#424242",
+              "titleColor": "#000000",
+            },
+            "primary": Object {
+              "background": "#1250C4",
+              "titleColor": "#000000",
+            },
+            "secondary": Object {
+              "background": "#DE0059",
+              "titleColor": "#000000",
+            },
+            "success": Object {
+              "background": "#3b610f",
+              "titleColor": "#000000",
+            },
+          },
+        },
         "container": Object {
           "breakpoints": Object {
             "large": "1440px",
@@ -1798,6 +1878,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   "700": "#424242",
                   "900": "#191919",
                 },
+              },
+            },
+          },
+          "chargeBar": Object {
+            "skins": Object {
+              "neutral": Object {
+                "background": "#424242",
+                "titleColor": "#000000",
+              },
+              "primary": Object {
+                "background": "#1250C4",
+                "titleColor": "#000000",
+              },
+              "secondary": Object {
+                "background": "#DE0059",
+                "titleColor": "#000000",
+              },
+              "success": Object {
+                "background": "#3b610f",
+                "titleColor": "#000000",
               },
             },
           },
@@ -2140,6 +2240,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -2619,6 +2739,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   },
                 },
               },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
+                  },
+                },
+              },
               "container": Object {
                 "breakpoints": Object {
                   "large": "1440px",
@@ -3048,6 +3188,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -3604,6 +3764,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
                   },
                 },
               },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
+                  },
+                },
+              },
               "container": Object {
                 "breakpoints": Object {
                   "large": "1440px",
@@ -4086,6 +4266,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
             },
           },
         },
+        "chargeBar": Object {
+          "skins": Object {
+            "neutral": Object {
+              "background": "#424242",
+              "titleColor": "#000000",
+            },
+            "primary": Object {
+              "background": "#1250C4",
+              "titleColor": "#000000",
+            },
+            "secondary": Object {
+              "background": "#DE0059",
+              "titleColor": "#000000",
+            },
+            "success": Object {
+              "background": "#3b610f",
+              "titleColor": "#000000",
+            },
+          },
+        },
         "container": Object {
           "breakpoints": Object {
             "large": "1440px",
@@ -4416,6 +4616,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   "700": "#424242",
                   "900": "#191919",
                 },
+              },
+            },
+          },
+          "chargeBar": Object {
+            "skins": Object {
+              "neutral": Object {
+                "background": "#424242",
+                "titleColor": "#000000",
+              },
+              "primary": Object {
+                "background": "#1250C4",
+                "titleColor": "#000000",
+              },
+              "secondary": Object {
+                "background": "#DE0059",
+                "titleColor": "#000000",
+              },
+              "success": Object {
+                "background": "#3b610f",
+                "titleColor": "#000000",
               },
             },
           },
@@ -4758,6 +4978,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },
@@ -5116,6 +5356,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                   },
                 },
               },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
+                  },
+                },
+              },
               "container": Object {
                 "breakpoints": Object {
                   "large": "1440px",
@@ -5468,6 +5728,26 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
                       "700": "#424242",
                       "900": "#191919",
                     },
+                  },
+                },
+              },
+              "chargeBar": Object {
+                "skins": Object {
+                  "neutral": Object {
+                    "background": "#424242",
+                    "titleColor": "#000000",
+                  },
+                  "primary": Object {
+                    "background": "#1250C4",
+                    "titleColor": "#000000",
+                  },
+                  "secondary": Object {
+                    "background": "#DE0059",
+                    "titleColor": "#000000",
+                  },
+                  "success": Object {
+                    "background": "#3b610f",
+                    "titleColor": "#000000",
                   },
                 },
               },

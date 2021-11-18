@@ -43,6 +43,9 @@ module.exports = [
   // Loaders
   'Loaders',
 
+  // ChargeBar
+  'ChargeBar',
+
   // Tooltip
   'Tooltip',
 
