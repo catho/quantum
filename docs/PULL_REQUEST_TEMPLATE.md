@@ -17,7 +17,7 @@ to view the components behavior, run `yarn storybook`
 ### A11y review
 - [ ] A11y checks
   - [ ] accessible via keyboard?
-  - [ ] Identifiable through assistive technology (scree-reader chrome extension)?
+  - [ ] Identifiable through assistive technology (screen-reader chrome extension)?
   - [ ] Semantically correct html elements (or if necessary identified by WAI-ARIA)?
   - [ ] Is there a deficiency in color contrast?
 
