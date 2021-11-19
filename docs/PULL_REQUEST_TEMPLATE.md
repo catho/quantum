@@ -13,7 +13,13 @@ to view the components behavior, run `yarn storybook`
       - then run the regression tests: `yarn test:regression`
 - [ ] Code review
 - [ ] TypeScript updated
-- [ ] a11y
+
+### A11y review
+- [ ] A11y checks
+  - [ ] accessible via keyboard?
+  - [ ] Identifiable through assistive technology (screen-reader chrome extension)?
+  - [ ] Semantically correct html elements (or if necessary identified by WAI-ARIA)?
+  - [ ] Is there a deficiency in color contrast?
 
 ### Browsers review
 - [ ] Layout review
