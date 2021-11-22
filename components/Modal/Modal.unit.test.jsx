@@ -92,12 +92,34 @@ describe('<Modal />', () => {
       );
 
       const focusedElement = document.activeElement;
+
       expect(
         modal
           .find('button')
           .at(0)
           .getDOMNode(),
-      ).not.toBe(focusedElement);
+      ).toBe(focusedElement);
+    });
+
+    it('should not focus first element when Modal is opened', () => {
+      mount(
+        <Modal>
+          <Modal.Content>
+            <p>
+              Some text<a href="catho.com">Some link</a>
+            </p>
+          </Modal.Content>
+          <Modal.Footer>
+            <button type="button">Cancel</button>
+            <button type="button">Ok</button>
+          </Modal.Footer>
+        </Modal>,
+      );
+
+      const focusedElement = document.activeElement;
+
+      expect(focusedElement.nodeName).not.toBe('A');
+      expect(focusedElement.nodeName).toBe('BUTTON');
     });
   });
 });
