@@ -81,7 +81,7 @@ describe('<Modal />', () => {
   });
 
   describe('Tab events', () => {
-    it('should focus first element when Modal is opened', () => {
+    it('should not focus first element when Modal is opened', () => {
       const modal = mount(
         <Modal>
           <Modal.Footer>
@@ -97,7 +97,7 @@ describe('<Modal />', () => {
           .find('button')
           .at(0)
           .getDOMNode(),
-      ).toBe(focusedElement);
+      ).not.toBe(focusedElement);
     });
   });
 });

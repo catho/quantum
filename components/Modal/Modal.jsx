@@ -107,7 +107,6 @@ class Modal extends React.Component {
     this.lastFocusableElement = this.focusableElements[
       this.focusableElements.length - 1
     ];
-    this.firstFocusableElement.focus();
 
     window.addEventListener('keydown', this.handleKeyDown);
     window.addEventListener('keydown', this.handleEscKey);
