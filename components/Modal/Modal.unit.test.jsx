@@ -81,28 +81,8 @@ describe('<Modal />', () => {
   });
 
   describe('Tab events', () => {
-    it('should not focus first element when Modal is opened', () => {
+    it('should focus first element different from a link when Modal is opened', () => {
       const modal = mount(
-        <Modal>
-          <Modal.Footer>
-            <button type="button">Cancel</button>
-            <button type="button">Ok</button>
-          </Modal.Footer>
-        </Modal>,
-      );
-
-      const focusedElement = document.activeElement;
-
-      expect(
-        modal
-          .find('button')
-          .at(0)
-          .getDOMNode(),
-      ).toBe(focusedElement);
-    });
-
-    it('should not focus first element when Modal is opened', () => {
-      mount(
         <Modal>
           <Modal.Content>
             <p>
@@ -119,7 +99,13 @@ describe('<Modal />', () => {
       const focusedElement = document.activeElement;
 
       expect(focusedElement.nodeName).not.toBe('A');
-      expect(focusedElement.nodeName).toBe('BUTTON');
+
+      expect(
+        modal
+          .find('button')
+          .at(0)
+          .getDOMNode(),
+      ).toBe(focusedElement);
     });
   });
 });
