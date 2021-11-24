@@ -103,7 +103,10 @@ class Modal extends React.Component {
       button:not([disabled]),
       [tabindex="0"]`,
     );
-    this.firstFocusableElement = this.focusableElements[0]; // eslint-disable-line
+    const firstFocusableIndex = [...this.focusableElements].findIndex(
+      f => f.nodeName !== 'A',
+    ); // eslint-disable-line
+    this.firstFocusableElement = this.focusableElements[firstFocusableIndex];
     this.lastFocusableElement = this.focusableElements[
       this.focusableElements.length - 1
     ];
