@@ -230,23 +230,23 @@ const components = {
     skins: {
       neutral: {
         icon: colors.neutral[700],
-        background: colors.neutral[100],
-        text: colors.neutral[900],
+        background: colors.neutral[300],
+        text: colors.neutral[700],
       },
       primary: {
         icon: colors.primary[700],
         background: colors.primary[100],
-        text: colors.primary[900],
+        text: colors.neutral[700],
       },
       success: {
-        icon: colors.success[700],
+        icon: colors.success[900],
         background: colors.success[100],
         text: colors.success[900],
       },
       warning: {
         icon: colors.warning[700],
         background: colors.warning[100],
-        text: colors.warning[900],
+        text: colors.neutral[700],
       },
       error: {
         icon: colors.error[700],

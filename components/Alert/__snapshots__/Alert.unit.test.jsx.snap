@@ -93,6 +93,12 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   display: flex;
 }
 
+.c2 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c7 {
   height: auto;
   opacity: 0.8;
@@ -111,9 +117,9 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #f2f2f2;
+  background-color: #e0e0e0;
   border: 1.5px solid #424242;
-  color: #191919;
+  color: #424242;
   padding: 12px 16px;
 }
 
@@ -234,24 +240,24 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
                     "text": "#ac001a",
                   },
                   "neutral": Object {
-                    "background": "#f2f2f2",
+                    "background": "#e0e0e0",
                     "icon": "#424242",
-                    "text": "#191919",
+                    "text": "#424242",
                   },
                   "primary": Object {
                     "background": "#E5EDFC",
                     "icon": "#1250C4",
-                    "text": "#002F7B",
+                    "text": "#424242",
                   },
                   "success": Object {
                     "background": "#dcedc8",
-                    "icon": "#3b610f",
+                    "icon": "#004D40",
                     "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#d14900",
+                    "text": "#424242",
                   },
                 },
               },
@@ -487,6 +493,12 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   display: flex;
 }
 
+.c2 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c4 {
   width: 24px;
 }
@@ -509,9 +521,9 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #f2f2f2;
+  background-color: #e0e0e0;
   border: 1.5px solid #424242;
-  color: #191919;
+  color: #424242;
   padding: 12px 16px;
 }
 
@@ -655,24 +667,24 @@ exports[`Alert component When you set a alert custom icon Should match the snaps
                     "text": "#ac001a",
                   },
                   "neutral": Object {
-                    "background": "#f2f2f2",
+                    "background": "#e0e0e0",
                     "icon": "#424242",
-                    "text": "#191919",
+                    "text": "#424242",
                   },
                   "primary": Object {
                     "background": "#E5EDFC",
                     "icon": "#1250C4",
-                    "text": "#002F7B",
+                    "text": "#424242",
                   },
                   "success": Object {
                     "background": "#dcedc8",
-                    "icon": "#3b610f",
+                    "icon": "#004D40",
                     "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#d14900",
+                    "text": "#424242",
                   },
                 },
               },
@@ -908,6 +920,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
+.c2 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c7 {
   height: auto;
   opacity: 0.8;
@@ -926,9 +944,9 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #f2f2f2;
+  background-color: #e0e0e0;
   border: 1.5px solid #424242;
-  color: #191919;
+  color: #424242;
   padding: 12px 16px;
 }
 
@@ -1049,24 +1067,24 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                     "text": "#ac001a",
                   },
                   "neutral": Object {
-                    "background": "#f2f2f2",
+                    "background": "#e0e0e0",
                     "icon": "#424242",
-                    "text": "#191919",
+                    "text": "#424242",
                   },
                   "primary": Object {
                     "background": "#E5EDFC",
                     "icon": "#1250C4",
-                    "text": "#002F7B",
+                    "text": "#424242",
                   },
                   "success": Object {
                     "background": "#dcedc8",
-                    "icon": "#3b610f",
+                    "icon": "#004D40",
                     "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#d14900",
+                    "text": "#424242",
                   },
                 },
               },
@@ -1302,6 +1320,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
+.c2 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c7 {
   height: auto;
   opacity: 0.8;
@@ -1334,7 +1358,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   font-size: 16px;
   background-color: #E5EDFC;
   border: 1.5px solid #1250C4;
-  color: #002F7B;
+  color: #424242;
   padding: 12px 16px;
 }
 
@@ -1455,24 +1479,24 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                     "text": "#ac001a",
                   },
                   "neutral": Object {
-                    "background": "#f2f2f2",
+                    "background": "#e0e0e0",
                     "icon": "#424242",
-                    "text": "#191919",
+                    "text": "#424242",
                   },
                   "primary": Object {
                     "background": "#E5EDFC",
                     "icon": "#1250C4",
-                    "text": "#002F7B",
+                    "text": "#424242",
                   },
                   "success": Object {
                     "background": "#dcedc8",
-                    "icon": "#3b610f",
+                    "icon": "#004D40",
                     "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#d14900",
+                    "text": "#424242",
                   },
                 },
               },
@@ -1708,6 +1732,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
+.c2 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c7 {
   height: auto;
   opacity: 0.8;
@@ -1751,20 +1781,20 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   box-sizing: border-box;
   font-size: 16px;
   background-color: #dcedc8;
-  border: 1.5px solid #3b610f;
+  border: 1.5px solid #004D40;
   color: #004D40;
   padding: 12px 16px;
 }
 
 .c0 .c1 > .c5 {
-  color: #3b610f;
+  color: #004D40;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c0 .c1 > .c5 .c4 {
-  color: #3b610f;
+  color: #004D40;
   margin-left: 0;
 }
 
@@ -1873,24 +1903,24 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                     "text": "#ac001a",
                   },
                   "neutral": Object {
-                    "background": "#f2f2f2",
+                    "background": "#e0e0e0",
                     "icon": "#424242",
-                    "text": "#191919",
+                    "text": "#424242",
                   },
                   "primary": Object {
                     "background": "#E5EDFC",
                     "icon": "#1250C4",
-                    "text": "#002F7B",
+                    "text": "#424242",
                   },
                   "success": Object {
                     "background": "#dcedc8",
-                    "icon": "#3b610f",
+                    "icon": "#004D40",
                     "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#d14900",
+                    "text": "#424242",
                   },
                 },
               },
@@ -2126,6 +2156,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
+.c2 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c7 {
   height: auto;
   opacity: 0.8;
@@ -2165,14 +2201,14 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c12 .c1 > .c5 {
-  color: #3b610f;
+  color: #004D40;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c12 .c1 > .c5 .c4 {
-  color: #3b610f;
+  color: #004D40;
   margin-left: 0;
 }
 
@@ -2182,7 +2218,7 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   font-size: 16px;
   background-color: #ffefd6;
   border: 1.5px solid #f09100;
-  color: #d14900;
+  color: #424242;
   padding: 12px 16px;
 }
 
@@ -2303,24 +2339,24 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                     "text": "#ac001a",
                   },
                   "neutral": Object {
-                    "background": "#f2f2f2",
+                    "background": "#e0e0e0",
                     "icon": "#424242",
-                    "text": "#191919",
+                    "text": "#424242",
                   },
                   "primary": Object {
                     "background": "#E5EDFC",
                     "icon": "#1250C4",
-                    "text": "#002F7B",
+                    "text": "#424242",
                   },
                   "success": Object {
                     "background": "#dcedc8",
-                    "icon": "#3b610f",
+                    "icon": "#004D40",
                     "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#d14900",
+                    "text": "#424242",
                   },
                 },
               },
@@ -2556,6 +2592,12 @@ exports[`Alert component When you set a different skin Should match a skin snaps
   display: flex;
 }
 
+.c2 svg + span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c7 {
   height: auto;
   opacity: 0.8;
@@ -2595,14 +2637,14 @@ exports[`Alert component When you set a different skin Should match a skin snaps
 }
 
 .c12 .c1 > .c5 {
-  color: #3b610f;
+  color: #004D40;
   margin: 0 0 0 16px;
   min-height: 0;
   opacity: 1;
 }
 
 .c12 .c1 > .c5 .c4 {
-  color: #3b610f;
+  color: #004D40;
   margin-left: 0;
 }
 
@@ -2745,24 +2787,24 @@ exports[`Alert component When you set a different skin Should match a skin snaps
                     "text": "#ac001a",
                   },
                   "neutral": Object {
-                    "background": "#f2f2f2",
+                    "background": "#e0e0e0",
                     "icon": "#424242",
-                    "text": "#191919",
+                    "text": "#424242",
                   },
                   "primary": Object {
                     "background": "#E5EDFC",
                     "icon": "#1250C4",
-                    "text": "#002F7B",
+                    "text": "#424242",
                   },
                   "success": Object {
                     "background": "#dcedc8",
-                    "icon": "#3b610f",
+                    "icon": "#004D40",
                     "text": "#004D40",
                   },
                   "warning": Object {
                     "background": "#ffefd6",
                     "icon": "#f09100",
-                    "text": "#d14900",
+                    "text": "#424242",
                   },
                 },
               },

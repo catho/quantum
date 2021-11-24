@@ -14,6 +14,10 @@ import {
 const Content = styled.div`
   align-items: start;
   display: flex;
+
+  svg + span {
+    flex: 1;
+  }
 `;
 
 const AlertIcon = styled(Icon)`
