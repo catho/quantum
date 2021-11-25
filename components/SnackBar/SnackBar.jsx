@@ -329,7 +329,7 @@ SnackBar.propTypes = {
   onClose: PropTypes.func,
   secondsToClose: PropTypes.number,
   skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
-  text: PropTypes.string,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   /** Swap background and text color */
   inverted: PropTypes.bool,
   id: PropTypes.string,
