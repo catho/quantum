@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog should render the dialog with content 1`] = `
+.c0 {
+  -webkit-animation: fadeIn ease-out 0.3s;
+  animation: fadeIn ease-out 0.3s;
+  background-color: rgba(66,66,66,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+<div
+  className="c0"
+  onClick={[Function]}
+  role="dialog"
+  tabIndex="-1"
+/>
+`;
