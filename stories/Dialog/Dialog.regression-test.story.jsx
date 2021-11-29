@@ -11,11 +11,12 @@ const Template = args => <Dialog {...args} />;
 
 export const Simple = Template.bind({});
 Simple.args = {
-  shouldOpen: true,
+  selector: '#regression-test',
 };
 
 export const WithContent = Template.bind({});
 WithContent.args = {
+  ...Simple.args,
   children: (
     <Example>
       <h3>Some text</h3>

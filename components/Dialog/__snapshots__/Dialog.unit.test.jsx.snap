@@ -17,10 +17,152 @@ exports[`Dialog should render the dialog with content 1`] = `
   z-index: 99;
 }
 
-<div
-  className="c0"
-  onClick={[Function]}
-  role="dialog"
-  tabIndex="-1"
-/>
+<Dialog
+  disableClickOutside={false}
+  onClose={[Function]}
+  selector="body"
+  theme={
+    Object {
+      "colors": Object {
+        "error": Object {
+          "100": "#fff5f5",
+          "300": "#f88e86",
+          "500": "#ec584e",
+          "700": "#e91b0c",
+          "900": "#ac001a",
+        },
+        "neutral": Object {
+          "0": "#ffffff",
+          "100": "#f2f2f2",
+          "1000": "#000000",
+          "300": "#e0e0e0",
+          "500": "#999999",
+          "700": "#424242",
+          "900": "#191919",
+        },
+        "primary": Object {
+          "100": "#E5EDFC",
+          "300": "#89AAE7",
+          "500": "#0CC0EA",
+          "700": "#1250C4",
+          "900": "#002F7B",
+        },
+        "secondary": Object {
+          "100": "#F7B0C8",
+          "300": "#F278A1",
+          "500": "#E91E63",
+          "700": "#DE0059",
+          "900": "#9E003F",
+        },
+        "success": Object {
+          "100": "#dcedc8",
+          "300": "#c9eda2",
+          "500": "#7ed321",
+          "700": "#3b610f",
+          "900": "#004D40",
+        },
+        "warning": Object {
+          "100": "#ffefd6",
+          "300": "#ffda6a",
+          "500": "#ffc107",
+          "700": "#f09100",
+          "900": "#d14900",
+        },
+      },
+    }
+  }
+>
+  <Portal
+    containerInfo={
+      .c0 {
+  -webkit-animation: fadeIn ease-out 0.3s;
+  animation: fadeIn ease-out 0.3s;
+  background-color: rgba(66,66,66,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+<body
+        style="overflow: hidden;"
+      >
+        <div
+          class="c0"
+          role="dialog"
+          tabindex="-1"
+        />
+      </body>
+    }
+  >
+    <Dialog__Wrapper
+      onClick={[Function]}
+      role="dialog"
+      tabIndex="-1"
+      theme={
+        Object {
+          "colors": Object {
+            "error": Object {
+              "100": "#fff5f5",
+              "300": "#f88e86",
+              "500": "#ec584e",
+              "700": "#e91b0c",
+              "900": "#ac001a",
+            },
+            "neutral": Object {
+              "0": "#ffffff",
+              "100": "#f2f2f2",
+              "1000": "#000000",
+              "300": "#e0e0e0",
+              "500": "#999999",
+              "700": "#424242",
+              "900": "#191919",
+            },
+            "primary": Object {
+              "100": "#E5EDFC",
+              "300": "#89AAE7",
+              "500": "#0CC0EA",
+              "700": "#1250C4",
+              "900": "#002F7B",
+            },
+            "secondary": Object {
+              "100": "#F7B0C8",
+              "300": "#F278A1",
+              "500": "#E91E63",
+              "700": "#DE0059",
+              "900": "#9E003F",
+            },
+            "success": Object {
+              "100": "#dcedc8",
+              "300": "#c9eda2",
+              "500": "#7ed321",
+              "700": "#3b610f",
+              "900": "#004D40",
+            },
+            "warning": Object {
+              "100": "#ffefd6",
+              "300": "#ffda6a",
+              "500": "#ffc107",
+              "700": "#f09100",
+              "900": "#d14900",
+            },
+          },
+        }
+      }
+    >
+      <div
+        className="c0"
+        onClick={[Function]}
+        role="dialog"
+        tabIndex="-1"
+      />
+    </Dialog__Wrapper>
+  </Portal>
+</Dialog>
 `;

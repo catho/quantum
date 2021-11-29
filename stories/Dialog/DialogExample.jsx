@@ -12,11 +12,13 @@ const DialogExample = () => {
   return (
     <>
       <Button onClick={() => setOpenDialog(true)}>Open Dialog</Button>
-      <Dialog shouldOpen={openDialog} onClose={closeDialog}>
-        <Example>
-          <h1>Example text</h1>
-        </Example>
-      </Dialog>
+      {openDialog && (
+        <Dialog onClose={closeDialog}>
+          <Example>
+            <h1>Example text</h1>
+          </Example>
+        </Dialog>
+      )}
     </>
   );
 };
@@ -47,11 +49,11 @@ const DialogExample = () => {
   return (
     <>
       <Button onClick={() => setOpenDialog(true)}>Open Dialog</Button>
-      <Dialog shouldOpen={openDialog} onClose={handleDialog}>
+      {openDialog <Dialog onClose={handleDialog}>
         <Example>
           <h1>Some text</h1>
         </Example>
-      </Dialog>
+      </Dialog>}
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { shallow, mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import { mount } from 'enzyme';
 import Dialog from './Dialog';
 import Example from '../../stories/Dialog/ExampleStyle';
 
@@ -8,12 +8,12 @@ describe('Dialog', () => {
   let component;
 
   it('should render the dialog with content', () => {
-    expect(renderer.create(<Dialog shouldOpen />).toJSON()).toMatchSnapshot();
+    expect(toJson(mount(<Dialog />))).toMatchSnapshot();
   });
 
   it('should render the Dialog with children', () => {
-    component = shallow(
-      <Dialog shouldOpen>
+    component = mount(
+      <Dialog>
         <Example>
           <h3>Some text</h3>
         </Example>
@@ -25,7 +25,7 @@ describe('Dialog', () => {
 
   it('should call onClose when clicked outside content', () => {
     const onCloseFunc = jest.fn();
-    component = mount(<Dialog shouldOpen onClose={onCloseFunc} />);
+    component = mount(<Dialog onClose={onCloseFunc} />);
 
     component.find('div').simulate('click');
 
@@ -43,7 +43,7 @@ describe('Dialog', () => {
     });
 
     const onCloseMock = jest.fn();
-    mount(<Dialog shouldOpen onClose={onCloseMock} />);
+    mount(<Dialog onClose={onCloseMock} />);
 
     eventMap.keydown({ key: 'Escape' });
 
@@ -52,7 +52,7 @@ describe('Dialog', () => {
 
   it('should call onClose after 1 second', async () => {
     const onCloseTimeout = jest.fn();
-    mount(<Dialog shouldOpen onClose={onCloseTimeout} closeOnTime={1} />);
+    mount(<Dialog onClose={onCloseTimeout} closeOnTime={1} />);
 
     await new Promise(r => setTimeout(r, 1000));
 
